@@ -1,0 +1,13 @@
+#!/bin/sh
+
+lb config noauto \
+    --clean \
+    --architectures amd64 \
+    --linux-flavours amd64 \
+    --compression bzip2 \
+    --distribution jessie \
+    --mirror-bootstrap http://ftp.ch.debian.org/debian/ \
+    --mirror-binary http://ftp.ch.debian.org/debian/ \
+    --archive-areas "main non-free contrib" \
+    "${@}"
+  
