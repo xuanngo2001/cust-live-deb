@@ -2,7 +2,7 @@
 Set of scripts to create custom Live Debian System.
 
 # Requirements
-* `apt-get -y install live-build`
+* `apt-get -y --force-yes install live-build squashfs-tools syslinux`
 
 # References
 * http://live.debian.net/manual/git/html/live-manual.en.html (Manual)

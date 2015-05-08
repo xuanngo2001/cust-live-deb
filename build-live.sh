@@ -1,9 +1,16 @@
 # https://l3net.wordpress.com/2013/09/21/how-to-build-a-debian-livecd/
 # http://willhaley.com/blog/create-a-custom-debian-live-environment/
 
-aptitude -y install live-build squashfs-tools syslinux 
 
-debootstrap --arch=amd64 jessie chroot file:/media/sf_shared/debian-apt-cache/Debian-8.0-jessie-64bit/ ./
+
+LIVE_SYSTEM_DIR=chroot
+# http://http.debian.net/debian/
+# file:///x/master/debian-repo/
+debootstrap --no-check-gpg --arch=amd64 jessie ${LIVE_SYSTEM_DIR} file:///x/master/debian-repo/
+
+echo "deb http://localhost/debian-repo/ jessie main" >> ${LIVE_SYSTEM_DIR}/etc/apt/sources.list
+
+cp -R scripts ${LIVE_SYSTEM_DIR}/root
 
 chroot chroot
 mount none -t proc /proc
@@ -14,14 +21,10 @@ export LC_ALL=C
 export PS1="\e[01;31m(live):\W \$ \e[00m"
 
 
-apt-get -y install dialog dbus
-dbus-uuidgen > /var/lib/dbus/machine-id
-apt-get -y install linux-image-amd64 live-boot
+
 
 ### Clean up before creating ISO.
-# apt-get clean
-rm /var/lib/dbus/machine-id && rm -rf /tmp/*
-umount /proc /sys /dev/pts
+
 # exit
 
 mkdir -p binary/live && mkdir -p binary/isolinux
