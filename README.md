@@ -7,6 +7,7 @@ Set of scripts to create custom Live Debian System.
 # References
 * http://live.debian.net/manual/git/html/live-manual.en.html (Manual)
 * http://manpages.ubuntu.com/manpages/natty/de/man1/lb_config.1.html
+* http://askubuntu.com/questions/551195/scripting-chroot-how-to
 
 
 # Dump
