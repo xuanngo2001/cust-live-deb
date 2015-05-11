@@ -15,9 +15,9 @@ cp -R scripts ${LIVE_SYSTEM_DIR}/root
 
 echo "======================"
 echo "To log in the live system, run:"
-echo "\t chroot chroot"
+echo "    chroot chroot"
 echo "Then, run"
-echo "\t cd /root/scripts"
-echo "\t sh install.sh"
+echo "    cd /root/scripts"
+echo "    sh install.sh"
 
 
