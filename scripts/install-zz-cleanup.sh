@@ -11,6 +11,6 @@ umount -lf /proc
 
 # Reinstate default debian repository
 DEB_REPO_URL=http://http.debian.net/debian/
-#echo "deb ${DEB_REPO_URL} jessie main" > /etc/apt/sources.list
+echo "deb ${DEB_REPO_URL} jessie main" > /etc/apt/sources.list
 
 exit
