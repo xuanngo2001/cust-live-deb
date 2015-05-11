@@ -17,7 +17,7 @@ echo "deb ${DEB_REPO_URL} jessie main" > ${LIVE_SYSTEM_DIR}/etc/apt/sources.list
 cp -R scripts ${LIVE_SYSTEM_DIR}/root
 
 # Add temporary default coloring of live command prompt.
-echo 'export PS1="\e[01;31m(live):\W \$ \e[00m"' > /root/.bashrc
+echo 'export PS1="\e[01;31m(live):\W \$ \e[00m"' > ${LIVE_SYSTEM_DIR}/root/.bashrc
 
 # What to do next.
 echo "======================"
