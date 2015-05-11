@@ -9,17 +9,15 @@ DEB_REPO_URL=http://localhost/debian-repo/
 rm -rf ${LIVE_SYSTEM_DIR}
 debootstrap --no-check-gpg --arch=amd64 jessie ${LIVE_SYSTEM_DIR} ${DEB_REPO_URL}
 
-echo "deb ${DEB_REPO_URL} jessie main" >> ${LIVE_SYSTEM_DIR}/etc/apt/sources.list
+echo "deb ${DEB_REPO_URL} jessie main" > ${LIVE_SYSTEM_DIR}/etc/apt/sources.list
 
 cp -R scripts ${LIVE_SYSTEM_DIR}/root
 
-echo " \
-chroot chroot \
-mount none -t proc /proc \ 
-mount none -t sysfs /sys \
-mount none -t devpts /dev/pts \
-export HOME=/root \
-export LC_ALL=C \
-export PS1="\e[01;31m(live):\W \$ \e[00m" \
-"
+echo "======================"
+echo "To log in the live system, run:"
+echo "\t chroot chroot"
+echo "Then, run"
+echo "\t cd /root/scripts"
+echo "\t sh install.sh"
+
 
