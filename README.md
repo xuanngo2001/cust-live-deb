@@ -17,3 +17,4 @@ Set of scripts to create custom Live Debian System.
 # Dump
 * Add proxy settings in  `/etc/apt/apt.conf.d/08proxy`
 * Add `deb http://ftp.debian.org/debian/ jessie main` in sources.list
+* /init: line 224: can't open /tmp/custom_mounts.list: no such file
