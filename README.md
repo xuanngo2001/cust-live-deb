@@ -12,9 +12,12 @@ Set of scripts to create custom Live Debian System.
 * http://manpages.ubuntu.com/manpages/natty/de/man1/lb_config.1.html
 * http://askubuntu.com/questions/551195/scripting-chroot-how-to
 * https://help.ubuntu.com/community/LiveCDCustomizationFromScratch
+* https://wiki.debian.org/Openbox/
 
+# Release checklist
+* /etc/sources.list has correct URL.
 
 # Dump
 * Add proxy settings in  `/etc/apt/apt.conf.d/08proxy`
 * Add `deb http://ftp.debian.org/debian/ jessie main` in sources.list
-* /init: line 224: can't open /tmp/custom_mounts.list: no such file
+* To fix on boot: /init: line 224: can't open /tmp/custom_mounts.list: no such file
