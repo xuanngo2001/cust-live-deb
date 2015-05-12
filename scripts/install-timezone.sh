@@ -15,7 +15,7 @@ debconf-set-selections ${SETTINGS_DIR}/tzdata-config.seed
 dpkg-reconfigure tzdata
 
 # Log
-echo "${LOG} * Set time zone to UTC."
+echo "${LOG} * Set time zone to EST (America/Montreal)."
 
 # Debug
 # cat /etc/timezone
