@@ -6,11 +6,9 @@ Set of scripts to create custom Live Debian System.
 1. Run `./build-live.sh`
 1. Run `chroot chroot`
 1. You are now in the live system(chroot), run the followings:
-```
-cd /root/scripts
-sh install.sh
-exit
-```
+1. `cd /root/scripts`
+1. `sh install.sh`
+1. `exit`
 1. You are now out of the live system, run `./mkiso.sh` to create ISO image.
 
 # Requirements
