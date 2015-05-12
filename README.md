@@ -2,7 +2,7 @@
 Set of scripts to create custom Live Debian System.
 
 # Usage
-1. Change `DEB_REPO_URL` in `build-live.sh` to the Debian repository URL.
+1. Change `DEB_REPO_URL` variable in `build-live.sh` to point to the Debian repository URL.
 1. Run `./build-live.sh`
 1. Run `chroot chroot`
 1. You are now in the live system(chroot), run the followings:
