@@ -11,9 +11,9 @@ sed "/${PLACEHOLDER}/,/ISO/d" ${README}.bck > ${README}
 
 echo ${PLACEHOLDER} >> ${README}
 grep "CLDS:" chroot/root/scripts/install.log.ran | \
-   sed 's/^CLDS: \*/CLDS:    */' |
-   sed 's/^CLDS://' | \
-   sed 's/^>/  * /' >> ${README}
+   sed 's/^CLDS: \*/CLDS:    */' |\
+   sed 's/^CLDS://' |\
+   sed -r 's/^>+ /  * /' >> ${README}
    
 rm -f ${README}.bck
 
