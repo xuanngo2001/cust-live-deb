@@ -16,7 +16,7 @@ echo "deb ${DEB_REPO_URL} jessie main" > /etc/apt/sources.list
 # Log
 echo "CLDS: * Clean apt-get cache."
 echo "CLDS: * rm -rf /tmp/*."
-echo "CLDS: * Umount /sys /dev/pts /proc."
+echo "CLDS: * Umount /sys, /dev/pts and /proc."
 echo "CLDS: * Add ${DEB_REPO_URL} in sources.list."
 
 
