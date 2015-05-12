@@ -17,3 +17,4 @@ cat ${SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
 # Log
 echo "CLDS: * Setup keyboard to use US international."
 echo "CLDS: * Install xorg and openbox."
+echo "CLDS: * Add auto login in openbox."
