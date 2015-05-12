@@ -31,6 +31,11 @@ apt-get -y --force-yes install localepurge
 debconf-set-selections ${SETTINGS_DIR}/localepurge-config.seed
 dpkg-reconfigure localepurge
 
+
+# Log
+echo "CLDS: * Setup locale to use en_US.UTF-8."
+echo "CLDS: * Install localepurge to purge non-UTF-8."
+
 ### Test
 
 # Debug

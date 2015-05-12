@@ -13,3 +13,8 @@ apt-get update
 apt-get -y --force-yes install dialog dbus
 dbus-uuidgen > /var/lib/dbus/machine-id
 apt-get -y --force-yes install linux-image-amd64 live-boot
+
+
+echo "CLDS: * Mount /proc, /sys and /dev/pts."
+echo "CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id."
+echo "CLDS: * Install Linux image."

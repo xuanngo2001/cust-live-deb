@@ -10,4 +10,4 @@ for scriptfile in $( ls install-[aA-zZ]*.sh ); do
   sh ${scriptfile} 2>&1 | tee -a ${INSTALL_LOG}
 done
 
-grep "Running install" ${INSTALL_LOG} > ${INSTALL_LOG}.ran
+grep "CLDS:" ${INSTALL_LOG} > ${INSTALL_LOG}.ran

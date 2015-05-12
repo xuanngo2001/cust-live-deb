@@ -13,6 +13,9 @@ echo "America/Montreal"> /etc/timezone
 debconf-set-selections ${SETTINGS_DIR}/tzdata-config.seed
 dpkg-reconfigure tzdata
 
+# Log
+echo "CLDS: * Set time zone to UTC."
+
 # Debug
 # cat /etc/timezone
 # ls /etc/localtime
