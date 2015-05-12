@@ -8,5 +8,6 @@ apt-get -y --force-yes install chromium
 
 # Resource:
 # https://wiki.debian.org/Chromium
-# apt-get install chromium chromium-l10n
-# Viewing PDF: pdfium 
+#   apt-get install chromium chromium-l10n
+#   Viewing PDF: pdfium 
+# https://wiki.debian.org/FlashPlayer
