@@ -20,6 +20,3 @@ echo "${LOG} * rm -rf /tmp/*."
 echo "${LOG} * Umount /sys, /dev/pts and /proc."
 echo "${LOG} * Add ${DEB_REPO_URL} in sources.list."
 
-
-
-exit
