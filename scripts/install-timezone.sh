@@ -1,5 +1,6 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
-echo "CLDS:>>>>>>>>> Running ${SCRIPT_NAME} ..."
+LOG="CLDS:" 
+echo "${LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 SETTINGS_DIR=settings
 
@@ -14,7 +15,7 @@ debconf-set-selections ${SETTINGS_DIR}/tzdata-config.seed
 dpkg-reconfigure tzdata
 
 # Log
-echo "CLDS: * Set time zone to UTC."
+echo "${LOG} * Set time zone to UTC."
 
 # Debug
 # cat /etc/timezone

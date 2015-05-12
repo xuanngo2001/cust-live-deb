@@ -1,5 +1,6 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
-echo "CLDS:>>>>>>>>> Running ${SCRIPT_NAME} ..."
+LOG="CLDS:" 
+echo "${LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 SETTINGS_DIR=settings
 
@@ -33,8 +34,8 @@ dpkg-reconfigure localepurge
 
 
 # Log
-echo "CLDS: * Setup locale to use en_US.UTF-8."
-echo "CLDS: * Install localepurge to purge non-UTF-8."
+echo "${LOG} * Setup locale to use en_US.UTF-8."
+echo "${LOG} * Install localepurge to purge non-UTF-8."
 
 ### Test
 
