@@ -26,5 +26,6 @@ echo "    chroot chroot"
 echo "Then, run"
 echo "    cd /root/scripts"
 echo "    sh install.sh"
+echo "    exit"
 
 
