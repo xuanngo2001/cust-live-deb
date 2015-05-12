@@ -18,4 +18,4 @@ cat ${SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
 # Log
 echo "${LOG} * Setup keyboard to use US international."
 echo "${LOG} * Install xorg and openbox."
-echo "${LOG} * Add auto start openbox on login."
+echo "${LOG} * Add auto start openbox on boot."
