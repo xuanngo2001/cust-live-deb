@@ -6,12 +6,14 @@
 LIVE_SYSTEM_DIR=chroot
 DEB_REPO_URL=http://localhost/debian-repo/
 #DEB_REPO_URL=http://http.debian.net/debian/
+# Forward slash at the end of $DEB_REPO_URL is needed for SED in install-zz-cleanup.sh
 
 rm -rf ${LIVE_SYSTEM_DIR}
 debootstrap --no-check-gpg --arch=amd64 jessie ${LIVE_SYSTEM_DIR} ${DEB_REPO_URL}
 
-# Add local repository.
-echo "deb ${DEB_REPO_URL} jessie main" > ${LIVE_SYSTEM_DIR}/etc/apt/sources.list
+# Add repository components(i.e. contrib, non-free)
+sed -i 's/ main/ main contrib/' ${LIVE_SYSTEM_DIR}/etc/apt/sources.list
+
 
 # Copy all scripts to live system.
 cp -R scripts ${LIVE_SYSTEM_DIR}/root
