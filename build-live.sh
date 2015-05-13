@@ -6,7 +6,6 @@
 LIVE_SYSTEM_DIR=chroot
 DEB_REPO_URL=http://localhost/debian-repo/
 #DEB_REPO_URL=http://http.debian.net/debian/
-# Forward slash at the end of $DEB_REPO_URL is needed for SED in install-zz-cleanup.sh
 
 rm -rf ${LIVE_SYSTEM_DIR}
 debootstrap --no-check-gpg --arch=amd64 jessie ${LIVE_SYSTEM_DIR} ${DEB_REPO_URL}
@@ -28,7 +27,8 @@ echo "Run the following tolog in the live system:"
 echo "    chroot chroot"
 echo "Then, run"
 echo "    cd /root/scripts"
-echo "    sh install.sh"
+echo "    chmod +x install.sh"
+echo "    ./install.sh"
 echo "    exit"
 
 
