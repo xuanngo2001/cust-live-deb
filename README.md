@@ -25,11 +25,6 @@ Set of scripts to create custom Live Debian System.
 # Release checklist
 * /etc/sources.list has correct URL.
 
-# Dump
-* Add proxy settings in  `/etc/apt/apt.conf.d/08proxy`
-* Add `deb http://ftp.debian.org/debian/ jessie main` in sources.list
-* To fix on boot: /init: line 224: can't open /tmp/custom_mounts.list: no such file
-
 # What are in ISO
   * Running install-00-00.sh ...
   * Running install-00-base.sh ...
