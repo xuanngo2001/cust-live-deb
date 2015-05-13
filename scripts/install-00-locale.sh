@@ -1,6 +1,5 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
-LOG="CLDS:" 
-echo "${LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
+echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 SETTINGS_DIR=settings
 
@@ -34,8 +33,8 @@ dpkg-reconfigure localepurge
 
 
 # Log
-echo "${LOG} * Setup locale to use en_US.UTF-8."
-echo "${LOG} * Install localepurge to purge non-UTF-8."
+echo "${GV_LOG} * Setup locale to use en_US.UTF-8."
+echo "${GV_LOG} * Install localepurge to purge non-UTF-8."
 
 ### Test
 

@@ -1,5 +1,5 @@
+# Prefix this variable in echo to log echoed string. CLDS stands for Custom Live Debian System.
 export GV_LOG="CLDS:" 
-LOG="CLDS:" 
 INSTALL_LOG=/root/scripts/install.log
 
 chmod +x  *.sh
@@ -12,4 +12,4 @@ for scriptfile in $( ls install-[aA-zZ]*.sh ); do
   sh ${scriptfile} 2>&1 | tee -a ${INSTALL_LOG}
 done
 
-grep "${LOG}" ${INSTALL_LOG} > "${INSTALL_LOG##*/}.ran"
+grep "${GV_LOG}" ${INSTALL_LOG} > "${INSTALL_LOG##*/}.ran"

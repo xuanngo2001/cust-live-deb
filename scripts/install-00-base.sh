@@ -1,6 +1,5 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
-LOG="CLDS:" 
-echo "${LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
+echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 mount none -t proc /proc
@@ -16,6 +15,6 @@ dbus-uuidgen > /var/lib/dbus/machine-id
 apt-get -y --force-yes install linux-image-amd64 live-boot
 
 
-echo "${LOG} * Mount /proc, /sys and /dev/pts."
-echo "${LOG} * Generate dbus-uuidgen to /var/lib/dbus/machine-id."
-echo "${LOG} * Install Linux image."
+echo "${GV_LOG} * Mount /proc, /sys and /dev/pts."
+echo "${GV_LOG} * Generate dbus-uuidgen to /var/lib/dbus/machine-id."
+echo "${GV_LOG} * Install Linux image."

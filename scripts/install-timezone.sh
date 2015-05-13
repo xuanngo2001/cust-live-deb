@@ -1,6 +1,5 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
-LOG="CLDS:" 
-echo "${LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
+echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 SETTINGS_DIR=settings
 
@@ -15,7 +14,7 @@ debconf-set-selections ${SETTINGS_DIR}/tzdata-config.seed
 dpkg-reconfigure tzdata
 
 # Log
-echo "${LOG} * Set time zone to EST (America/Montreal)."
+echo "${GV_LOG} * Set time zone to EST (America/Montreal)."
 
 # Debug
 # cat /etc/timezone
