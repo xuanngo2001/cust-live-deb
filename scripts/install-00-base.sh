@@ -21,4 +21,4 @@ echo 'APT::Install-Recommends "false"; APT::Install-Suggests "false";' >> ${APT_
 echo "${GV_LOG} * Mount /proc, /sys and /dev/pts."
 echo "${GV_LOG} * Generate dbus-uuidgen to /var/lib/dbus/machine-id."
 echo "${GV_LOG} * Install Linux image."
-echo "${GV_LOG} * Set ${APT_CONF_SKIP_REC_PKG} to skip installing recommended packages."
+echo "${GV_LOG} * Set APT to skip installing recommended packages."
