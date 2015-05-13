@@ -38,8 +38,7 @@ echo "${GV_LOG} * Install localepurge to purge non-UTF-8."
 
 
 # Log total size at the end of script.
-echo "${GV_LOG} * Total size = $(du -s / | head -n 1 | cut -f1)"
-
+GF_LOG_TOTAL_SIZE
 
 ### Test
 
