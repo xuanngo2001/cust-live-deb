@@ -1,3 +1,4 @@
+export GV_LOG="CLDS:" 
 LOG="CLDS:" 
 INSTALL_LOG=/root/scripts/install.log
 
