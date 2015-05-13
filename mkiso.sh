@@ -1,3 +1,4 @@
+# Create ISO
 rm -f binary/live/filesystem.squashfs
 mksquashfs chroot binary/live/filesystem.squashfs -comp xz -e boot
 
@@ -6,6 +7,8 @@ DATE_STRING=`date +"%Y-%m-%d_%0k.%M.%S"`
 ISO_FILENAME="${CD_LABEL}-64_${DATE_STRING}.iso"
 genisoimage  -r -V ${CD_LABEL} -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ${ISO_FILENAME} binary/
 
+# Update README.md
+sh update-readme.sh
 
 # Log sizes
 SIZE_LOG=sizes.log
