@@ -6,4 +6,5 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # These packages are in contrib repository.
+# Size = 50 MB
 apt-get -y --force-yes install virtualbox-guest-dkms virtualbox-guest-x11
