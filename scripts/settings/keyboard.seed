@@ -1,3 +1,7 @@
+# Do interactively.
+# debconf-get-selections | grep "^keyboard" > keyboard.seed
+
+
 keyboard-configuration  keyboard-configuration/unsupported_options  boolean true
 keyboard-configuration  keyboard-configuration/toggle select  No toggling
 keyboard-configuration  keyboard-configuration/xkb-keymap select  us
