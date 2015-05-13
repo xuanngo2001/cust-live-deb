@@ -9,3 +9,6 @@ Otherwise, there will be lock issues with Eclipse.
     * File and Folder Attributes: Name | matches | chroot
     * OK
 1. Apply
+
+# Packages
+* To use debconf-set-selections, `apt-get -y --force-yes install debconf-utils`
