@@ -25,10 +25,8 @@ Set of scripts to create custom Live Debian System.
 # Release checklist
 * /etc/sources.list has correct URL.
 
-TODO: Change section below to
-Customization Performed
 
-# What are in ISO
+# Customizations Performed
   * Running install-00-00.sh ...
   * Running install-00-base.sh ...
     * Mount /proc, /sys and /dev/pts.

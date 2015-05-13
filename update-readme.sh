@@ -6,7 +6,7 @@
 README=README.md
 cp ${README} ${README}.bck
 
-PLACEHOLDER="# What are in ISO"
+PLACEHOLDER="# Customizations Performed"
 sed "/${PLACEHOLDER}/,/ISO/d" ${README}.bck > ${README}
 
 echo ${PLACEHOLDER} >> ${README}
