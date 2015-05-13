@@ -37,34 +37,32 @@ Set of scripts to create custom Live Debian System.
     * Setup locale to use en_US.UTF-8.
     * Install localepurge to purge non-UTF-8.
   * Running install-auto-login-root.sh ...
-    * Total size = 574820
+    * Total size = 574824
   * Running install-bashrc.sh ...
-    * Total size = 574820
+    * Total size = 574824
   * Running install-dev-tools.sh ...
-    * Total size = 574948
+    * Total size = 574952
   * Running install-proxy.sh ...
     * Add proxy to /etc/environment and /etc/apt/apt.conf.d/proxy.
-    * Total size = 574956
+    * Total size = 574960
   * Running install-timezone.sh ...
     * Set time zone to EST (America/Montreal).
-    * Total size = 574956
+    * Total size = 574960
   * Running install-xwin-00-openbox.sh ...
     * Set keyboard to use US international.
     * Install xorg and openbox.
     * Add auto start openbox on boot.
-    * Total size = 783228
-  * Running install-xwin-chromium.sh ...
-    * Total size = 996896
+    * Total size = 783236
   * Running install-xwin-iceweasel.sh ...
-    * Total size = 1105264
+    * Total size = 917764
   * Running install-xwin-virtualbox-guest.sh ...
-    * Total size = 1176728
+    * Total size = 989408
   * Running install-zz-00-zerosizing-docs.sh ...
-    * Zero size all documents in /usr/share/. Saved ~50MB
-    * Total size = 1125272
+    * Zero size all documents in /usr/share/.
+    * Total size = 940056
   * Running install-zz-cleanup.sh ...
     * Clean apt-get cache.
     * rm -rf /tmp/*.
     * Umount /sys, /dev/pts and /proc.
     * Add http://http.debian.net/debian/ in sources.list.
-    * Total size = 868820
+    * Total size = 721956
