@@ -8,7 +8,9 @@ export DEBCONF_DEBUG=developer
 
 # Install X-Windows=xorg, Window Manager=openbox
 debconf-set-selections ${SETTINGS_DIR}/keyboard.seed
-apt-get -y --force-yes install xorg openbox
+#apt-get -y --force-yes install xorg
+
+apt-get -y --force-yes install xserver-xorg-core xserver-xorg-input-all xserver-xorg-video-all 
 
 # Auto startx
 cat ${SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
