@@ -20,8 +20,9 @@ cp -R scripts ${LIVE_SYSTEM_DIR}/root
 echo 'export PS1="\e[01;31m(live):\W \$ \e[00m"' > ${LIVE_SYSTEM_DIR}/root/.bashrc
 
 # What to do next.
-echo "===================================="
-echo "Log in the live system and run:"
+echo "============================================"
+echo "What to do next?"
+echo "Run the following tolog in the live system:"
 echo "    chroot chroot"
 echo "Then, run"
 echo "    cd /root/scripts"
