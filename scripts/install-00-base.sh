@@ -22,3 +22,6 @@ echo "${GV_LOG} * Mount /proc, /sys and /dev/pts."
 echo "${GV_LOG} * Generate dbus-uuidgen to /var/lib/dbus/machine-id."
 echo "${GV_LOG} * Install Linux image."
 echo "${GV_LOG} * Set APT to skip installing recommended packages."
+
+# Log total size at the end of script.
+echo "${GV_LOG} * Total size = $(du -s / | head -n 1 | cut -f1)"

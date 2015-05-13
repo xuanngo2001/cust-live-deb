@@ -36,6 +36,11 @@ dpkg-reconfigure localepurge
 echo "${GV_LOG} * Setup locale to use en_US.UTF-8."
 echo "${GV_LOG} * Install localepurge to purge non-UTF-8."
 
+
+# Log total size at the end of script.
+echo "${GV_LOG} * Total size = $(du -s / | head -n 1 | cut -f1)"
+
+
 ### Test
 
 # Debug
