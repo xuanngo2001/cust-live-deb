@@ -4,7 +4,7 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-echo "${GV_LOG} * Zero size all documents in /usr/share/. Saved ~50MB"
+echo "${GV_LOG} * Zero size all documents in /usr/share/."
 ##########################################################
 # Credit: written from Jbv for FoxyRoxyLinux
 #         http://murga-linux.com/puppy/viewtopic.php?p=845275#845275
