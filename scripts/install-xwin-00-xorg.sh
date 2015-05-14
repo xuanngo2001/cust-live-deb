@@ -15,6 +15,9 @@ apt-get -y --force-yes install xorg
 # --no-install-recommends
 # apt-get install --no-install-recommends xinit xserver-xorg-video-intel xserver-xorg-input-synaptics xserver-xorg-input-kbd xserver-xorg-input-mouse xfonts-base openbox
 # https://lists.debian.org/debian-user/2014/05/msg00708.html
+# http://linuxforcynics.com/how-to/minimal-debian-install
+
+
 
 # Auto startx
 cat ${SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
