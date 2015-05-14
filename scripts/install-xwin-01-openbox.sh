@@ -9,6 +9,4 @@ apt-get -y --force-yes install openbox
 cat ${SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
 
 # Log
-echo "${GV_LOG} * Set keyboard to use US international."
-echo "${GV_LOG} * Install xorg and openbox."
-echo "${GV_LOG} * Add auto start openbox on boot."
+echo "${GV_LOG} * Install Openbox."
