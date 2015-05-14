@@ -13,3 +13,8 @@ cat ${SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
 # Log
 echo "${GV_LOG} * Install Openbox window manager."
 echo "${GV_LOG} * Add auto start window manager(i.e startx)."
+
+
+# Note:
+# Openbox does not come with a panel of any sort, a system tray, a dock, window icons, etc.
+# Most distributions choose to bundle tint2 or other similar, lightweight panel with Openbox to fill that role.
