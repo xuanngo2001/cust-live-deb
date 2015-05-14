@@ -24,7 +24,7 @@ Set of scripts to create custom Live Debian System.
 * https://wiki.debian.org/Openbox/
 
 # Release checklist
-* /etc/sources.list has correct URL.
+* Can you watch youtube video over wireless connection?
 
 # Dump
 
@@ -40,39 +40,39 @@ Set of scripts to create custom Live Debian System.
   * Running install-00-locale.sh ...
     * Setup locale to use en_US.UTF-8.
     * Install localepurge to purge non-UTF-8.
-    * Total size = 574824K.
+    * Total size = 574828K.
   * Running install-auto-login-root.sh ...
-    * Total size = 574832K.
+    * Total size = 574836K.
   * Running install-bashrc.sh ...
-    * Total size = 574832K.
+    * Total size = 574836K.
   * Running install-dev-tools.sh ...
-    * Total size = 574960K.
+    * Total size = 574964K.
   * Running install-proxy.sh ...
     * Add proxy to /etc/environment and /etc/apt/apt.conf.d/proxy.
-    * Total size = 574968K.
+    * Total size = 574972K.
   * Running install-timezone.sh ...
     * Set time zone to EST (America/Montreal).
-    * Total size = 574968K.
+    * Total size = 574972K.
   * Running install-xwin-00-xorg.sh ...
     * Set keyboard to use US international.
     * Install Xorg X server.
     * Add auto start window manager(i.e startx).
-    * Total size = 675016K.
+    * Total size = 675024K.
   * Running install-xwin-01-openbox.sh ...
     * Install Openbox window manager.
-    * Total size = 696772K.
+    * Total size = 696784K.
   * Running install-xwin-iceweasel.sh ...
-    * Total size = 831556K.
+    * Total size = 831564K.
   * Running install-xwin-menu.sh ...
-    * Total size = 831556K.
+    * Total size = 831564K.
   * Running install-xwin-virtualbox-guest.sh ...
-    * Total size = 928328K.
+    * Total size = 928336K.
   * Running install-zz-00-zerosizing-docs.sh ...
     * Zero size all documents in /usr/share/.
-    * Total size = 881168K.
+    * Total size = 881176K.
   * Running install-zz-cleanup.sh ...
     * Clean apt-get cache.
     * rm -rf /tmp/*.
     * Umount /sys, /dev/pts and /proc.
     * Add http://http.debian.net/debian/ in sources.list.
-    * Total size = 682772K.
+    * Total size = 682780K.

@@ -12,11 +12,7 @@ export DEBCONF_DEBUG=developer
 debconf-set-selections ${SETTINGS_DIR}/keyboard.seed
 apt-get -y --force-yes install xserver-xorg-core xserver-xorg-input-all xserver-xorg-video-all 
 
-# Auto startx
-cat ${SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
-
-
 # Log
 echo "${GV_LOG} * Set keyboard to use US international."
 echo "${GV_LOG} * Install Xorg X server."
-echo "${GV_LOG} * Add auto start window manager(i.e startx)."
+
