@@ -9,4 +9,4 @@ apt-get -y --force-yes install openbox
 cat ${SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
 
 # Log
-echo "${GV_LOG} * Install Openbox."
+echo "${GV_LOG} * Install Openbox window manager."
