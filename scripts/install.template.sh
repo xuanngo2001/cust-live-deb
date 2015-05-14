@@ -8,4 +8,4 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # SETTINGS_DIR=settings
-# echo with 'CLDS: * Installing ...' 
+# echo "${GV_LOG} * Doing this customization."
