@@ -11,7 +11,7 @@ export GV_LOG="CLDS:"
 # Log total size
 GF_LOG_TOTAL_SIZE ()
 {
-  echo "${GV_LOG} * Total size = $(du -s --exclude=/proc / | head -n 1 | cut -f1) bytes."
+  echo "${GV_LOG} * Total size = $(du -s -BK --exclude=/proc / | head -n 1 | cut -f1)."
 }
 
 export -f GF_LOG_TOTAL_SIZE
