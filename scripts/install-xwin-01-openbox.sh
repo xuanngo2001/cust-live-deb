@@ -7,12 +7,11 @@ SETTINGS_DIR=settings
 
 apt-get -y --force-yes install openbox
 
-# Auto startx
-cat ${SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
+
 
 # Log
 echo "${GV_LOG} * Install Openbox window manager."
-echo "${GV_LOG} * Add auto start window manager(i.e startx)."
+
 
 
 # Note:
