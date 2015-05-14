@@ -36,7 +36,7 @@ dpkg-reconfigure localepurge
 
 
 # Log
-echo "${GV_LOG} * Setup locale to use en_US.UTF-8."
+echo "${GV_LOG} * Install locale and set it to use en_US.UTF-8."
 echo "${GV_LOG} * Install localepurge to purge non-UTF-8."
 
 
