@@ -14,7 +14,7 @@ apt-get -y --force-yes install xorg
 # Give up on stripping xorg: apt-get -y --force-yes install xserver-xorg-core xserver-xorg-input-all xserver-xorg-video-all xauth xinit
 # --no-install-recommends
 # apt-get install --no-install-recommends xinit xserver-xorg-video-intel xserver-xorg-input-synaptics xserver-xorg-input-kbd xserver-xorg-input-mouse xfonts-base openbox
-
+# https://lists.debian.org/debian-user/2014/05/msg00708.html
 
 # Auto startx
 cat ${SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
