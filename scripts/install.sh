@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Load global variables and functions.
 . ./load-global-vars-funcs.sh
 

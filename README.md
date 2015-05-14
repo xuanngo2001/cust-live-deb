@@ -25,47 +25,43 @@ Set of scripts to create custom Live Debian System.
 # Release checklist
 * /etc/sources.list has correct URL.
 
+# Dump
+export: Illegal option -f
 
 # Customizations Performed
   * Running install-00-00.sh ...
   * Running install-00-base.sh ...
-    * Mount /proc, /sys and /dev/pts.
-    * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
-    * Install Linux image.
-    * Set APT to skip installing recommended packages.
   * Running install-00-locale.sh ...
-    * Setup locale to use en_US.UTF-8.
-    * Install localepurge to purge non-UTF-8.
   * Running install-auto-login-root.sh ...
-    * Total size = 574836
+    * Total size = 260588K.
   * Running install-bashrc.sh ...
-    * Total size = 574836
+    * Total size = 260588K.
   * Running install-dev-tools.sh ...
-    * Total size = 574964
+    * Total size = 261756K.
   * Running install-proxy.sh ...
     * Add proxy to /etc/environment and /etc/apt/apt.conf.d/proxy.
-    * Total size = 574972
+    * Total size = 261764K.
   * Running install-timezone.sh ...
     * Set time zone to EST (America/Montreal).
-    * Total size = 574972
+    * Total size = 261816K.
   * Running install-xwin-00-xorg.sh ...
     * Set keyboard to use US international.
-    * Install xorg and openbox.
-    * Add auto start openbox on boot.
-    * Total size = 675024
+    * Install Xorg X server.
+    * Add auto start window manager(i.e startx).
+    * Total size = 411460K.
   * Running install-xwin-01-openbox.sh ...
-    * Install Openbox.
-    * Total size = 696784
+    * Install Openbox window manager.
+    * Total size = 596848K.
   * Running install-xwin-iceweasel.sh ...
-    * Total size = 831568
+    * Total size = 715380K.
   * Running install-xwin-virtualbox-guest.sh ...
-    * Total size = 928336
+    * Total size = 715380K.
   * Running install-zz-00-zerosizing-docs.sh ...
     * Zero size all documents in /usr/share/.
-    * Total size = 881176
+    * Total size = 666504K.
   * Running install-zz-cleanup.sh ...
     * Clean apt-get cache.
     * rm -rf /tmp/*.
     * Umount /sys, /dev/pts and /proc.
     * Add http://http.debian.net/debian/ in sources.list.
-    * Total size = 682780
+    * Total size = 505608K.

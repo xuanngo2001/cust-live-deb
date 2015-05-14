@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #########################################################
 # All export variables and functions
 # NOTE: Exporting a variable doesn't make it available to parent processes. Use source.

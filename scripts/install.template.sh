@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Global variables:
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
 

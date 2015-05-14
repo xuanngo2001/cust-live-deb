@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # https://l3net.wordpress.com/2013/09/21/how-to-build-a-debian-livecd/
 # http://willhaley.com/blog/create-a-custom-debian-live-environment/
 
