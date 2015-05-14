@@ -6,7 +6,6 @@ cd /
 
 # Clean APT.
 apt-get clean
-rm -f /var/cache/apt/*.bin
 
 rm /var/lib/dbus/machine-id
 
