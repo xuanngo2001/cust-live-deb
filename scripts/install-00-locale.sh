@@ -3,9 +3,6 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Reload global variables and functions. Don't know why export function doesn't here but variables do.
-. ./load-global-vars-funcs.sh
-
 
 SETTINGS_DIR=settings
 
