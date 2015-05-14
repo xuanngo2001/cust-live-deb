@@ -1,10 +1,19 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Back to the root path.
 cd /
+
+# Clean APT.
 apt-get clean
+rm -f /var/cache/apt/*.bin
+
 rm /var/lib/dbus/machine-id
+
+# Delete tmp/.
 rm -rf /tmp/*
+
+# Unmount
 umount /sys /dev/pts
 umount -lf /proc
 
