@@ -31,50 +31,50 @@ Set of scripts to create custom Live Debian System.
 
 # Customizations Performed
   * Running install-00-00.sh ...
-    * Total size = 260604K.
+    * Total size = 260596K.
   * Running install-00-base.sh ...
     * Mount /proc, /sys and /dev/pts.
     * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
     * Install Linux image.
     * Set APT to skip installing recommended packages.
-    * Total size = 551280K.
+    * Total size = 551276K.
   * Running install-00-locale.sh ...
     * Install locale and set it to use en_US.UTF-8.
     * Install localepurge to purge non-UTF-8.
-    * Total size = 574836K.
+    * Total size = 574828K.
   * Running install-auto-login-root.sh ...
-    * Total size = 574844K.
+    * Total size = 574836K.
   * Running install-bashrc.sh ...
-    * Total size = 574844K.
+    * Total size = 574836K.
   * Running install-dev-tools.sh ...
-    * Total size = 574972K.
+    * Total size = 574964K.
   * Running install-proxy.sh ...
     * Add proxy to /etc/environment and /etc/apt/apt.conf.d/proxy.
-    * Total size = 574980K.
+    * Total size = 574972K.
   * Running install-timezone.sh ...
     * Set time zone to EST (America/Montreal).
-    * Total size = 574980K.
+    * Total size = 574972K.
   * Running install-xwin-00-xorg.sh ...
     * Set keyboard to use US international.
     * Install minimum Xorg X server.
     * Install xauth and xinit so you can run startx.
     * Add auto start window manager(i.e startx).
-    * Total size = 766732K.
+    * Total size = 675936K.
   * Running install-xwin-01-jwm.sh ...
-    * Total size = 767396K.
+    * Total size = 685600K.
   * Running install-xwin-iceweasel.sh ...
-    * Total size = 913716K.
+    * Total size = 831312K.
   * Running install-xwin-menu.sh ...
     * Install menu, an easy way to get installed programs in the menu quickly.
-    * Total size = 914992K.
+    * Total size = 832580K.
   * Running install-xwin-virtualbox-guest.sh ...
-    * Total size = 986628K.
+    * Total size = 929360K.
   * Running install-zz-00-zerosizing-docs.sh ...
     * Zero size all documents in /usr/share/.
-    * Total size = 937640K.
+    * Total size = 881180K.
   * Running install-zz-cleanup.sh ...
     * Clean apt-get cache.
     * rm -rf /tmp/*.
     * Umount /sys, /dev/pts and /proc.
     * Add http://http.debian.net/debian/ in sources.list.
-    * Total size = 720248K.
+    * Total size = 682644K.
