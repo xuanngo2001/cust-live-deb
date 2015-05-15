@@ -6,6 +6,3 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-
-# SETTINGS_DIR=settings
-# echo "${GV_LOG} * Doing this customization."

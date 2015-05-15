@@ -6,6 +6,9 @@
 # Reference: http://stackoverflow.com/a/1158231
 #########################################################
 
+# Folder containing settings data.
+export GV_SETTINGS_DIR=./settings
+
 # Prefix this variable in echo to log echoed string. CLDS stands for Custom Live Debian System.
 export GV_LOG="CLDS:"
 

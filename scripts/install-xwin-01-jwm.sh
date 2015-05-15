@@ -8,5 +8,3 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y --force-yes install jwm
 
-# SETTINGS_DIR=settings
-# echo with 'CLDS: * Installing ...' 

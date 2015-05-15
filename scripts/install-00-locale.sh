@@ -4,8 +4,6 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
-SETTINGS_DIR=settings
-
 ### Setup debconf parameters
 export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBCONF_DEBUG=developer
 
@@ -22,16 +20,16 @@ echo "en_US.UTF-8 UTF-8" >> ${LOCALE_GEN}
 update-locale LANG=en_US.UTF-8
 
 # Add locale environment variables
-cat ${SETTINGS_DIR}/locale-env-vars.txt >> /root/.bashrc
+cat ${GV_SETTINGS_DIR}/locale-env-vars.txt >> /root/.bashrc
 source /root/.bashrc
 
 ### Gave up on these:
-# debconf-set-selections ${SETTINGS_DIR}/locale-config.seed
+# debconf-set-selections ${GV_SETTINGS_DIR}/locale-config.seed
 # dpkg-reconfigure locales
 
 ### Install localepurge to keep locale small
 apt-get -y --force-yes install localepurge
-debconf-set-selections ${SETTINGS_DIR}/localepurge-config.seed
+debconf-set-selections ${GV_SETTINGS_DIR}/localepurge-config.seed
 dpkg-reconfigure localepurge
 
 

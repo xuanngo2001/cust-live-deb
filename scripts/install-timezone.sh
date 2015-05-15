@@ -3,8 +3,6 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-SETTINGS_DIR=settings
-
 # Setup debconf parameters
 export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBCONF_DEBUG=developer
 
@@ -12,7 +10,7 @@ export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBCONF_D
 echo "America/Montreal"> /etc/timezone
 
 # Set timezone
-debconf-set-selections ${SETTINGS_DIR}/tzdata-config.seed
+debconf-set-selections ${GV_SETTINGS_DIR}/tzdata-config.seed
 dpkg-reconfigure tzdata
 
 # Log
