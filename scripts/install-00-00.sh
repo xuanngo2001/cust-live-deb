@@ -6,13 +6,13 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Log default total size.
 # Don't know why GF_LOG_TOTAL_SIZE doesn't work.
 	  # Load previous total size.
-	  . ${G_VALUES_FILE}
+	  . ./${G_VALUES_FILE}
 	  
 	  # Get current total size.
 	  CURRENT_TOTAL_SIZE=$(du -s --exclude=/proc / | head -n 1 | cut -f1)
 	  
 	  # Calculate space used.
-	  if [[ -z "${PREV_TOTAL_SIZE}" ]]; then PREV_TOTAL_SIZE=0; fi
+	  if [ -z "${PREV_TOTAL_SIZE}" ]; then PREV_TOTAL_SIZE=0; fi
 	  SPACE_USED=$((${CURRENT_TOTAL_SIZE}-${PREV_TOTAL_SIZE}))
 	  
 	  # Log total size.
