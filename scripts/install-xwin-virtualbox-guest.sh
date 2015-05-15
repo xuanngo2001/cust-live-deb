@@ -13,7 +13,7 @@ apt-get -y --force-yes install virtualbox-guest-dkms virtualbox-guest-x11
 # Install VBoxGuestAdditions
 VBOX_GUEST_ADD_ISO=${GV_SETTINGS_DIR}/VBoxGuestAdditions.iso
 VBOX_GUEST_ADD_MNT_DIR=/tmp/VBoxGuestAdditions
-if [ -f ${VBOX_GUEST_ADD_ISO}/VBoxGuestAdditions.iso ]
+if [ -f ${VBOX_GUEST_ADD_ISO} ]
 then
   rm -rf ${VBOX_GUEST_ADD_MNT_DIR}
   mkdir ${VBOX_GUEST_ADD_MNT_DIR}
