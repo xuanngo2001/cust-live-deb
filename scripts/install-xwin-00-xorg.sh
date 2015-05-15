@@ -10,14 +10,7 @@ export DEBCONF_DEBUG=developer
 
 # Install X-Windows=xorg, Window Manager=openbox
 debconf-set-selections ${SETTINGS_DIR}/keyboard.seed
-apt-get -y --force-yes install xorg
-# Give up on stripping xorg: apt-get -y --force-yes install xserver-xorg-core xserver-xorg-input-all xserver-xorg-video-all xauth xinit
-# --no-install-recommends
-# apt-get install --no-install-recommends xinit xserver-xorg-video-intel xserver-xorg-input-synaptics xserver-xorg-input-kbd xserver-xorg-input-mouse xfonts-base openbox
-# https://lists.debian.org/debian-user/2014/05/msg00708.html
-# http://linuxforcynics.com/how-to/minimal-debian-install
-
-
+apt-get -y --force-yes install xinit xserver-xorg
 
 # Auto startx
 cat ${SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
@@ -29,4 +22,5 @@ echo "${GV_LOG} * Install xauth and xinit so you can run startx."
 echo "${GV_LOG} * Add auto start window manager(i.e startx)."
 
 # Note:
-# xinit for startx.
+# "apt-get -y --force-yes install xorg" uses too much space(~200MB).
+# xinit & xauth are needed for startx to run.
