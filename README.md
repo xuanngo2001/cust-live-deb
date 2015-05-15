@@ -31,48 +31,50 @@ Set of scripts to create custom Live Debian System.
 
 # Customizations Performed
   * Running install-00-00.sh ...
+    * Total size = 260604K.
   * Running install-00-base.sh ...
     * Mount /proc, /sys and /dev/pts.
     * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
     * Install Linux image.
     * Set APT to skip installing recommended packages.
-    * Total size = 551272K.
+    * Total size = 551280K.
   * Running install-00-locale.sh ...
-    * Setup locale to use en_US.UTF-8.
+    * Install locale and set it to use en_US.UTF-8.
     * Install localepurge to purge non-UTF-8.
-    * Total size = 574828K.
+    * Total size = 574836K.
   * Running install-auto-login-root.sh ...
-    * Total size = 574836K.
+    * Total size = 574844K.
   * Running install-bashrc.sh ...
-    * Total size = 574836K.
+    * Total size = 574844K.
   * Running install-dev-tools.sh ...
-    * Total size = 574964K.
+    * Total size = 574972K.
   * Running install-proxy.sh ...
     * Add proxy to /etc/environment and /etc/apt/apt.conf.d/proxy.
-    * Total size = 574972K.
+    * Total size = 574980K.
   * Running install-timezone.sh ...
     * Set time zone to EST (America/Montreal).
-    * Total size = 574972K.
+    * Total size = 574980K.
   * Running install-xwin-00-xorg.sh ...
     * Set keyboard to use US international.
-    * Install Xorg X server.
+    * Install minimum Xorg X server.
+    * Install xauth and xinit so you can run startx.
     * Add auto start window manager(i.e startx).
-    * Total size = 675024K.
-  * Running install-xwin-01-openbox.sh ...
-    * Install Openbox window manager.
-    * Total size = 696784K.
+    * Total size = 766732K.
+  * Running install-xwin-01-jwm.sh ...
+    * Total size = 767396K.
   * Running install-xwin-iceweasel.sh ...
-    * Total size = 831564K.
+    * Total size = 913716K.
   * Running install-xwin-menu.sh ...
-    * Total size = 831564K.
+    * Install menu, an easy way to get installed programs in the menu quickly.
+    * Total size = 914992K.
   * Running install-xwin-virtualbox-guest.sh ...
-    * Total size = 928336K.
+    * Total size = 986628K.
   * Running install-zz-00-zerosizing-docs.sh ...
     * Zero size all documents in /usr/share/.
-    * Total size = 881176K.
+    * Total size = 937640K.
   * Running install-zz-cleanup.sh ...
     * Clean apt-get cache.
     * rm -rf /tmp/*.
     * Umount /sys, /dev/pts and /proc.
     * Add http://http.debian.net/debian/ in sources.list.
-    * Total size = 682780K.
+    * Total size = 720248K.
