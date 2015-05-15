@@ -9,3 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # To use debconf-set-selections
 apt-get -y --force-yes install debconf-utils
+
+
+# Log
+echo "${GV_LOG} * Install debconf-utils so you can use debconf-set-selections."
