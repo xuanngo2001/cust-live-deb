@@ -1,5 +1,6 @@
 # Custom Live Debian System
 Set of scripts to create custom Live Debian System.
+* Automatically calculate space used of each script. 
 
 # Usage
 1. Change `DEB_REPO_URL` variable in `build-live.sh` to point to the Debian repository URL.
