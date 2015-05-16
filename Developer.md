@@ -30,11 +30,11 @@ touch inst-min-win-00-xorg.sh
 touch inst-min-win-01-wm-jwm.sh
 touch inst-min-win-menu.sh
 touch inst-std-app-browser-iceweseal.sh
-touch inst-std-app-diskmgr-diskmanager.sh
-touch inst-std-app-diskmgr-gparted.sh
 touch inst-std-app-graphic-gimp.sh
 touch inst-std-app-multimedia-mpv.sh
 touch inst-std-app-office-libreoffice.sh
+touch inst-std-app-system-diskmanager.sh
+touch inst-std-app-system-gparted.sh
 touch inst-xtra-dev-tools.sh
 touch inst-xtra-filesystem-zfs.sh
 touch inst-xtra-virtualbox-guest.sh
