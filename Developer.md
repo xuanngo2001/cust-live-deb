@@ -35,9 +35,9 @@ touch inst-std-app-diskmgr-gparted.sh
 touch inst-std-app-graphic-gimp.sh
 touch inst-std-app-multimedia-mpv.sh
 touch inst-std-app-office-libreoffice.sh
-touch inst-std-xtra-dev-tools.sh
-touch inst-std-xtra-filesystem-zfs.sh
-touch inst-std-xtra-virtualbox-guest.sh
+touch inst-xtra-dev-tools.sh
+touch inst-xtra-filesystem-zfs.sh
+touch inst-xtra-virtualbox-guest.sh
 touch inst-zzz-clean-00-zerosizing-docs.sh
 touch inst-zzz-clean-99-end-cleanup.sh
 
