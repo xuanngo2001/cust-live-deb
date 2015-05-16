@@ -30,6 +30,7 @@ touch inst-min-win-00-xorg.sh
 touch inst-min-win-01-wm-jwm.sh
 touch inst-min-win-menu.sh
 touch inst-std-accessories-evince.sh
+touch inst-std-accessories-fileroller.sh
 touch inst-std-accessories-galculator.sh
 touch inst-std-accessories-scite.sh
 touch inst-std-accessories-thunar.sh
