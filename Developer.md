@@ -29,22 +29,37 @@ touch inst-min-con-timezone.sh
 touch inst-min-win-00-xorg.sh
 touch inst-min-win-01-wm-jwm.sh
 touch inst-min-win-menu.sh
-touch inst-std-browser-iceweseal.sh
-touch inst-std-filemanager-tunar.sh
-touch inst-std-graphic-gimp.sh
-touch inst-std-multimedia-audacious.sh
-touch inst-std-multimedia-bomi.sh
+touch inst-std-accessories-evince.sh
+touch inst-std-accessories-galculator.sh
+touch inst-std-accessories-scite.sh
+touch inst-std-accessories-thunar.sh
+touch inst-std-graphic-gpicview.sh
+touch inst-std-graphic-pinta.sh
+touch inst-std-internet-iceweseal.sh
 touch inst-std-multimedia-mpv.sh
-touch inst-std-multimedia-SMPlayer.sh
 touch inst-std-office-libreoffice.sh
-touch inst-std-system-diskmanager.sh
+touch inst-std-system-disk-manager.sh
+touch inst-std-system-display.sh
 touch inst-std-system-gparted.sh
 touch inst-std-system-netconfig.sh
+touch inst-std-system-sound.sh
 touch inst-xtra-dev-tools.sh
 touch inst-xtra-filesystem-zfs.sh
+touch inst-xtra-gimp.sh
 touch inst-xtra-virtualbox-guest.sh
 touch inst-zzz-clean-00-zerosizing-docs.sh
 touch inst-zzz-clean-99-end-cleanup.sh
 
+
 ls -1 *.sh | sed "s/^/touch /"
+
+::gpicview, geeqie
+::Fotoxx  
+::https://wiki.ubuntu.com/Lubuntu/Applications
+
+:: touch inst-std-multimedia-audacious.sh
+:: touch inst-std-multimedia-bomi.sh
+:: touch inst-std-multimedia-mpv.sh
+:: touch inst-std-multimedia-SMPlayer.sh
+
 ```
