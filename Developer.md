@@ -31,6 +31,7 @@ touch inst-min-win-01-wm-jwm.sh
 touch inst-min-win-menu.sh
 touch inst-std-browser-iceweseal.sh
 touch inst-std-graphic-gimp.sh
+touch inst-std-multimedia-audacious.sh
 touch inst-std-multimedia-mpv.sh
 touch inst-std-office-libreoffice.sh
 touch inst-std-system-diskmanager.sh
