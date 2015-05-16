@@ -35,6 +35,7 @@ touch inst-std-accessories-galculator.sh
 touch inst-std-accessories-gpicview.sh
 touch inst-std-accessories-scite.sh
 touch inst-std-accessories-thunar.sh
+touch inst-std-accessories-xscreensaver.sh
 touch inst-std-graphic-pinta.sh
 touch inst-std-internet-iceweseal.sh
 touch inst-std-multimedia-mpv.sh
