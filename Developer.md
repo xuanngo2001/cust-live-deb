@@ -16,7 +16,7 @@ Otherwise, there will be lock issues with Eclipse.
 * 
 
 # Script Structure
-```
+```bash
 rm -f *.sh
 touch inst-min-con-00-linux-image.sh
 touch inst-min-con-auto-log-root.sh
