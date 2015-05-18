@@ -15,6 +15,7 @@ apt-get -y --force-yes install ${PKGS_LIST}
 
 # Install VBoxGuestAdditions
 VBOX_GUEST_ADD_ISO=${GV_BINARY_DIR}/VBoxGuestAdditions.iso
+VBOX_GUEST_ADD_ISO_SIZE=$(GF_SIZE_OF ${VBOX_GUEST_ADD_ISO})
 VBOX_GUEST_ADD_MNT_DIR=/tmp/VBoxGuestAdditions
 if [ -f ${VBOX_GUEST_ADD_ISO} ]
 then
@@ -42,5 +43,5 @@ echo "${GV_LOG} * Assumed packages installed: bzip2 & Xserver installed."
 echo "${GV_LOG} * Install ${PKGS_LIST} to compile VirtualBox guest additions."
 VBOX_GUEST_ADD_VER=$(lsmod | grep -io vboxguest | xargs modinfo | grep -iw version)
 echo "${GV_LOG} * VirtualBox guest additions ${VBOX_GUEST_ADD_VER} installed."
-echo "${GV_LOG} * Delete ${VBOX_GUEST_ADD_ISO}. Space used could be negative due to this deletion."
+echo "${GV_LOG} * Delete ${VBOX_GUEST_ADD_ISO}[${VBOX_GUEST_ADD_ISO_SIZE}K]. Space used could be negative due to this deletion."
 
