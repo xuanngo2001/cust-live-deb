@@ -9,10 +9,11 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install lsb-release
 dpkg -i ${GV_BINARY_DIR}/zfsonlinux_6_all.deb
 apt-get -y --force-yes install debian-zfs
-
+rm -f ${GV_BINARY_DIR}/zfsonlinux_6_all.deb
 
 # Log
 echo "${GV_LOG} * Install lsb-release."
 echo "${GV_LOG} * Add zfsonlinux repository to /etc/apt/sources.list.d/zfsonlinux.list."
 echo "${GV_LOG} * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg."
 echo "${GV_LOG} * Install debian-zfs."
+echo "${GV_LOG} * Delete ${GV_BINARY_DIR}/zfsonlinux_6_all.deb."
