@@ -13,6 +13,11 @@ Set of scripts to create custom Live Debian System.
 1. `exit`
 1. You are now out of the live system, run `./mkiso.sh` to create ISO image.
 
+# Transferring the iso image to USB stick
+```
+dd if=remaster.iso of=/dev/sdg
+```
+
 # Requirements
 * `apt-get -y --force-yes install live-build squashfs-tools syslinux`
 * `apt-get -y --force-yes install genisoimage` 
