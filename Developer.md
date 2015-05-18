@@ -48,9 +48,10 @@ touch inst-std-system-sound.sh
 touch inst-xtra-dev-tools.sh
 touch inst-xtra-filesystem-zfs.sh
 touch inst-xtra-gimp.sh
+touch inst-xtra-proxy.sh
 touch inst-xtra-virtualbox-guest.sh
-touch inst-zzz-clean-00-zerosizing-docs.sh
-touch inst-zzz-clean-99-end-cleanup.sh
+touch inst-zclean-00-zerosizing-docs.sh
+touch inst-zclean-99-end-cleanup.sh
 
 
 ls -1 *.sh | sed "s/^/touch /"
