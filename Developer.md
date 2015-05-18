@@ -15,6 +15,9 @@ Otherwise, there will be lock issues with Eclipse.
 * To use debconf-set-selections, `apt-get -y --force-yes install debconf-utils`
 * 
 
+# Bash
+*  http://www.davidpashley.com/articles/writing-robust-shell-scripts/
+
 # Script Structure
 ```bash
 rm -f *.sh
