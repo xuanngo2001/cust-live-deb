@@ -19,6 +19,8 @@ export GV_LOG="CLDS:"
 # Use to exchange value variables between different script.
 export G_VALUES_FILE=load-global-values.txt
 
+# Log size of scripts.
+export GV_INSTALL_SIZE=/root/scripts/install.size
 
 ###### FUNCTIONS ######
 
