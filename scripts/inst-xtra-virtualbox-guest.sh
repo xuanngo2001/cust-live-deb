@@ -14,7 +14,7 @@ apt-get -y --force-yes install ${PKGS_LIST}
 
 
 # Install VBoxGuestAdditions
-VBOX_GUEST_ADD_ISO=${GV_SETTINGS_DIR}/VBoxGuestAdditions.iso
+VBOX_GUEST_ADD_ISO=${GV_BINARY_DIR}/VBoxGuestAdditions.iso
 VBOX_GUEST_ADD_MNT_DIR=/tmp/VBoxGuestAdditions
 if [ -f ${VBOX_GUEST_ADD_ISO} ]
 then
