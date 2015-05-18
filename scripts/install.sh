@@ -1,4 +1,5 @@
 #!/bin/bash
+SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 
 # Ensure *.sh are executable.
 chmod +x *.sh
@@ -6,13 +7,15 @@ chmod +x *.sh
 # Load global variables and functions.
 . ./load-global-vars-funcs.sh
 
+
 INSTALL_LOG=/root/scripts/install.log
 
-# Execute base scripts
-sh install-00-00.sh 2>&1 | tee -a ${INSTALL_LOG}
+# Log default size.
+echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..." 2>&1 | tee -a ${INSTALL_LOG}
+GF_LOG_TOTAL_SIZE 2>&1 | tee -a ${INSTALL_LOG}
 
 # Execute script with install-<letter>*.sh
-for scriptfile in $( ls install-[aA-zZ]*.sh ); do
+for scriptfile in $( ls inst-*.sh ); do
   sh ${scriptfile} 2>&1 | tee -a ${INSTALL_LOG}
   # Log total size at the end of script.
   GF_LOG_TOTAL_SIZE 2>&1 | tee -a ${INSTALL_LOG}

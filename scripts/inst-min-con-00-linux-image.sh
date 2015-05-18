@@ -24,5 +24,3 @@ echo "${GV_LOG} * Generate dbus-uuidgen to /var/lib/dbus/machine-id."
 echo "${GV_LOG} * Install Linux image."
 echo "${GV_LOG} * Set APT to skip installing recommended packages."
 
-# Log total size at the end of script.
-GF_LOG_TOTAL_SIZE

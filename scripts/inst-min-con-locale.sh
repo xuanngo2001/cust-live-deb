@@ -38,9 +38,6 @@ echo "${GV_LOG} * Install locale and set it to use en_US.UTF-8."
 echo "${GV_LOG} * Install localepurge to purge non-UTF-8."
 
 
-# Log total size at the end of script.
-GF_LOG_TOTAL_SIZE
-
 ### Test
 
 # Debug

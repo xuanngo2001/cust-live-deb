@@ -11,5 +11,3 @@ apt-get -y --force-yes install bzip2
 # Log
 echo "${GV_LOG} * Install bzip2 compressor."
 
-# Log total size at the end of script.
-GF_LOG_TOTAL_SIZE
