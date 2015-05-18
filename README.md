@@ -38,11 +38,11 @@ Set of scripts to create custom Live Debian System.
     * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
     * Install Linux image.
     * Set APT to skip installing recommended packages.
-    * Total size = 608292K. Space Used = 290688K.
+    * Total size = 608296K. Space Used = 290692K.
   * Running install-00-locale.sh ...
     * Install locale and set it to use en_US.UTF-8.
     * Install localepurge to purge non-UTF-8.
-    * Total size = 631852K. Space Used = 23560K.
+    * Total size = 631852K. Space Used = 23556K.
   * Running install-00-compressors.sh ...
     * Install bzip2 compressor.
     * Total size = 632048K. Space Used = 196K.
@@ -77,18 +77,18 @@ Set of scripts to create custom Live Debian System.
     * Install menu, an easy way to get installed programs in the menu automatically.
     * Total size = 895328K. Space Used = 1264K.
   * Running install-xwin-virtualbox-guest.sh ...
-    * Install VirtualBox guest additions to Shared folder, Shared Clipboard, Auto window scaling, etc.
+    * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
     * Assumed packages installed: bzip2 & Xserver installed.
-    * Install dkms, build-essential and linux-headers to compile VirtualBox guest additions.
+    * Install dkms build-essential linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
     * VirtualBox guest additions version:        4.3.20 installed.
-    * Delete ./settings/VBoxGuestAdditions.iso. Used space could be negative due to this deletion.
-    * Total size = 1135404K. Space Used = 240076K.
+    * Delete ./settings/VBoxGuestAdditions.iso. Space used could be negative due to this deletion.
+    * Total size = 1043300K. Space Used = 147972K.
   * Running install-zz-00-zerosizing-docs.sh ...
     * Zero size all documents in /usr/share/.
-    * Total size = 1067844K. Space Used = -67560K.
+    * Total size = 992132K. Space Used = -51168K.
   * Running install-zz-cleanup.sh ...
     * Clean apt-get cache.
     * rm -rf /tmp/*.
     * Umount /sys, /dev/pts and /proc.
     * Add http://http.debian.net/debian/ in sources.list.
-    * Total size = 825380K. Space Used = -242464K.
+    * Total size = 749668K. Space Used = -242464K.
