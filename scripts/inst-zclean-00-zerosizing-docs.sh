@@ -35,3 +35,5 @@ zerosize() {
     zerosize /usr/share/gtk-doc -type l 
 
     chown -R man:root /usr/share/man
+    
+    echo ""
