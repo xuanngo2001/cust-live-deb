@@ -13,7 +13,7 @@ Otherwise, there will be lock issues with Eclipse.
 
 # Packages
 * To use debconf-set-selections, `apt-get -y --force-yes install debconf-utils`
-* 
+* debtree 
 
 # Bash
 *  http://www.davidpashley.com/articles/writing-robust-shell-scripts/
