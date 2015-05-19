@@ -32,6 +32,7 @@ The `sync` bit is important as `dd` can return before the write operation finish
 * https://wiki.debian.org/Openbox/
 * http://willhaley.com/willhaley/blog/create-a-custom-debian-live-environment/
 * https://l3net.wordpress.com/2013/09/21/how-to-build-a-debian-livecd/
+* http://www.opengeeks.me/2015/04/building-an-hybrid-debian-live-iso-with-xorriso/
 
 # Release checklist
 * Can you watch youtube video over wireless connection?
