@@ -80,4 +80,5 @@ ls -1 *.sh | sed "s/^/touch /"
 :: conky
 :: Calibre
 
+lspci 
 ```
