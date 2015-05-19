@@ -16,7 +16,9 @@ Set of scripts to create custom Live Debian System.
 # Transferring the iso image to USB stick
 ```
 dd if=remaster.iso of=/dev/sdg
+sync
 ```
+The `sync` bit is important as `dd` can return before the write operation finishes.
 
 # Requirements
 * `apt-get -y --force-yes install live-build squashfs-tools syslinux`
