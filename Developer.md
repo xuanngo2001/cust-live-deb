@@ -14,6 +14,8 @@ Otherwise, there will be lock issues with Eclipse.
 # Packages
 * To use debconf-set-selections, `apt-get -y --force-yes install debconf-utils`
 * debtree 
+* http://ubuntuforums.org/archive/index.php/t-174188.html
+* 
 
 # Bash
 *  http://www.davidpashley.com/articles/writing-robust-shell-scripts/
