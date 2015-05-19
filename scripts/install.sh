@@ -40,8 +40,8 @@ echo "${SCRIPT_NAME}: ${DATE_STRING}: ${TOTAL_SIZE}" > ${INSTALL_LOG_SIZE}
 
 ###################### Main
 # Run scripts as per COMPONENT selected.
-CLEAN_SCRIPTNAME_PATTERN="inst-zclean-*.sh"
-for scriptfile in $( ls inst-${COMPONENT}.sh | grep -v ${CLEAN_SCRIPTNAME_PATTERN} ); do
+CLEAN_SCRIPTNAME_PREFIX="inst-zclean-"
+for scriptfile in $( ls inst-${COMPONENT}.sh | grep -v "${CLEAN_SCRIPTNAME_PREFIX}" ); do
   ./${scriptfile} 2>&1 | tee -a ${INSTALL_LOG}
   # Log total size at the end of script.
   total_size_tmp=$(GF_LOG_TOTAL_SIZE)
@@ -50,7 +50,7 @@ for scriptfile in $( ls inst-${COMPONENT}.sh | grep -v ${CLEAN_SCRIPTNAME_PATTER
 done
 
 # Run clean up scripts.
-for scriptfile in $( ls ${CLEAN_SCRIPTNAME_PATTERN} ); do
+for scriptfile in $( ls ${CLEAN_SCRIPTNAME_PREFIX}*.sh ); do
   ./${scriptfile} 2>&1 | tee -a ${INSTALL_LOG}
   # Log total size at the end of script.
   total_size_tmp=$(GF_LOG_TOTAL_SIZE)
