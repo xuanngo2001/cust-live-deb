@@ -18,3 +18,5 @@ grep "CLDS:" chroot/root/scripts/install.ran | \
 rm -f ${README}.bck
 
 echo "${README} updated."
+
+./log-package-sizes.sh
