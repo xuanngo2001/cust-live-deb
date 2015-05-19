@@ -22,7 +22,7 @@ echo "${SCRIPT_NAME}: ${DATE_STRING}: ${TOTAL_SIZE}" > ${INSTALL_LOG_SIZE}
 for scriptfile in $( ls inst-*.sh ); do
   ./${scriptfile} 2>&1 | tee -a ${INSTALL_LOG}
   # Log total size at the end of script.
-  local TOTAL_SIZE_TMP=$(GF_LOG_TOTAL_SIZE)
+  TOTAL_SIZE_TMP=$(GF_LOG_TOTAL_SIZE)
   echo ${TOTAL_SIZE_TMP} 2>&1 | tee -a ${INSTALL_LOG}
   echo "${SCRIPT_NAME}: ${DATE_STRING}: ${TOTAL_SIZE_TMP}" >> ${INSTALL_LOG_SIZE}
 done
