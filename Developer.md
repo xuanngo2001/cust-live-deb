@@ -20,6 +20,13 @@ Otherwise, there will be lock issues with Eclipse.
 # Bash
 *  http://www.davidpashley.com/articles/writing-robust-shell-scripts/
 
+```
+# -e  Exit immediately if a command exits with a non-zero status
+set -e
+# -x  Print commands and their arguments as they are executed
+set -x
+```
+
 # Script Structure
 ```bash
 rm -f *.sh
