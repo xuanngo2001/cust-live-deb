@@ -27,4 +27,5 @@ for scriptfile in $( ls inst-*.sh ); do
   echo "${SCRIPT_NAME}: ${DATE_STRING}: ${TOTAL_SIZE}" >> ${INSTALL_LOG_SIZE}
 done
 
+# Retried the log.
 grep "${GV_LOG}" ${INSTALL_LOG} > "${INSTALL_LOG%.*}.ran"
