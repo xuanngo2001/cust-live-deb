@@ -15,17 +15,29 @@ INSTALL_LOG_SIZE=/root/scripts/install.size
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..." 2>&1 | tee -a ${INSTALL_LOG}
 echo "${GV_LOG} * Running on SHELL=$SHELL VER=$BASH_VERSION" 2>&1 | tee -a ${INSTALL_LOG}
 TOTAL_SIZE=$(GF_LOG_TOTAL_SIZE)
-echo ${TOTAL_SIZE} 2>&1 | tee -a ${INSTALL_LOG}
+echo "${TOTAL_SIZE}" 2>&1 | tee -a ${INSTALL_LOG}
 echo "${SCRIPT_NAME}: ${DATE_STRING}: ${TOTAL_SIZE}" > ${INSTALL_LOG_SIZE}
 
 # Execute script with install-<letter>*.sh
-for scriptfile in $( ls inst-*.sh ); do
+COMPONENT=$1
+
+if [ -z "${COMPONENT}" ]; then
+  exit 0
+fi
+
+if [ "${COMPONENT}" = "min" ]; then
+  COMPONENT="min-*"
+else
+  COMPONENT="*"
+fi
+  
+for scriptfile in $( ls inst-${COMPONENT}.sh ); do
   ./${scriptfile} 2>&1 | tee -a ${INSTALL_LOG}
   # Log total size at the end of script.
   total_size_tmp=$(GF_LOG_TOTAL_SIZE)
-  echo ${total_size_tmp} 2>&1 | tee -a ${INSTALL_LOG}
+  echo "${total_size_tmp}" 2>&1 | tee -a ${INSTALL_LOG}
   echo "${scriptfile}: ${DATE_STRING}: ${total_size_tmp}" >> ${INSTALL_LOG_SIZE}
 done
 
-# Retried the log.
+# Retrieved the log.
 grep "${GV_LOG}" ${INSTALL_LOG} > "${INSTALL_LOG%.*}.ran"
