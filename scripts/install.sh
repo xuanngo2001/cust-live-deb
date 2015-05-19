@@ -16,7 +16,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..." 2>&1 | tee -a ${INSTALL_LOG
 echo "${GV_LOG} * Running on SHELL=$SHELL VER=$BASH_VERSION" 2>&1 | tee -a ${INSTALL_LOG}
 TOTAL_SIZE=$(GF_LOG_TOTAL_SIZE)
 echo ${TOTAL_SIZE} 2>&1 | tee -a ${INSTALL_LOG}
-echo "${SCRIPT_NAME}: ${DATE_STRING}: $(TOTAL_SIZE)" >> ${INSTALL_LOG_SIZE}
+echo "${SCRIPT_NAME}: ${DATE_STRING}: ${TOTAL_SIZE}" >> ${INSTALL_LOG_SIZE}
 
 # Execute script with install-<letter>*.sh
 for scriptfile in $( ls inst-*.sh ); do
@@ -24,7 +24,7 @@ for scriptfile in $( ls inst-*.sh ); do
   # Log total size at the end of script.
   local TOTAL_SIZE=$(GF_LOG_TOTAL_SIZE)
   echo ${TOTAL_SIZE} 2>&1 | tee -a ${INSTALL_LOG}
-  echo "${SCRIPT_NAME}: ${DATE_STRING}: $(TOTAL_SIZE)" >> ${INSTALL_LOG_SIZE}
+  echo "${SCRIPT_NAME}: ${DATE_STRING}: ${TOTAL_SIZE}" >> ${INSTALL_LOG_SIZE}
 done
 
 grep "${GV_LOG}" ${INSTALL_LOG} > "${INSTALL_LOG%.*}.ran"
