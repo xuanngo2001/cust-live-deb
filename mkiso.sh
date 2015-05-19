@@ -20,3 +20,4 @@ echo "" >> ${SIZE_LOG}
 #TODO:
 # Auto architecture.
 # Add distribution name.
+# Create Hybrid ISO. https://wiki.archlinux.org/index.php/Remastering_the_Install_ISO
