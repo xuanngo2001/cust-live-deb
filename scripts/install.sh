@@ -30,8 +30,19 @@ if [ "${COMPONENT}" = "min" ]; then
 else
   COMPONENT="*"
 fi
-  
-for scriptfile in $( ls inst-${COMPONENT}.sh ); do
+
+# Run scripts as per COMPONENT selected.
+CLEAN_SCRIPTNAME_PATTERN="inst-zclean-*.sh"
+for scriptfile in $( ls inst-${COMPONENT}.sh --ignore="${CLEAN_SCRIPTNAME_PATTERN}" ); do
+  ./${scriptfile} 2>&1 | tee -a ${INSTALL_LOG}
+  # Log total size at the end of script.
+  total_size_tmp=$(GF_LOG_TOTAL_SIZE)
+  echo "${total_size_tmp}" 2>&1 | tee -a ${INSTALL_LOG}
+  echo "${scriptfile}: ${DATE_STRING}: ${total_size_tmp}" >> ${INSTALL_LOG_SIZE}
+done
+
+# Run clean up scripts.
+for scriptfile in $( ls ${CLEAN_SCRIPTNAME_PATTERN} ); do
   ./${scriptfile} 2>&1 | tee -a ${INSTALL_LOG}
   # Log total size at the end of script.
   total_size_tmp=$(GF_LOG_TOTAL_SIZE)
