@@ -13,6 +13,16 @@ Set of scripts to create custom Live Debian System.
 1. `exit`
 1. You are now out of the live system, run `./mkiso.sh` to create ISO image.
 
+# Quickies
+```
+# Run these in 1 shot as ROOT to build ALL.
+./build-live.sh
+chroot chroot/ /bin/bash -c "cd /root/scripts; chmod +x install.sh; ./install.sh all"
+./mkiso.sh
+
+```
+http://stackoverflow.com/a/8157973
+
 # Transferring the iso image to USB stick
 ```
 dd if=remaster.iso of=/dev/sdg
@@ -60,31 +70,98 @@ The `sync` bit is important as `dd` can return before the write operation finish
   * Running inst-min-con-locale.sh ...
     * Install locale and set it to use en_US.UTF-8.
     * Install localepurge to purge non-UTF-8.
-    * Total size = 634764K. Space Used = 23536K.
+    * Total size = 634772K. Space Used = 23544K.
   * Running inst-min-con-snd-alsa.sh ...
     * Install ALSA sound.
     * Test sound: aplay /usr/share/sounds/alsa/*.
-    * Total size = 642604K. Space Used = 7840K.
+    * Total size = 642612K. Space Used = 7840K.
   * Running inst-min-con-timezone.sh ...
     * Set time zone to EST (America/Montreal).
-    * Total size = 642604K. Space Used = 0K.
+    * Total size = 642612K. Space Used = 0K.
   * Running inst-min-win-00-xorg.sh ...
     * Set keyboard to use US international.
     * Install minimum Xorg X server.
     * Install xinit so you can run startx.
     * Add auto start window manager(i.e startx).
-    * Total size = 743572K. Space Used = 100968K.
+    * Total size = 743572K. Space Used = 100960K.
   * Running inst-min-win-01-wm-jwm.sh ...
-    * Total size = 753236K. Space Used = 9664K.
+    * Total size = 753232K. Space Used = 9660K.
   * Running inst-min-win-menu.sh ...
     * Install menu, an easy way to get installed programs in the menu automatically.
-    * Total size = 754508K. Space Used = 1272K.
+    * Total size = 754504K. Space Used = 1272K.
+  * Running inst-std-accessories-fileroller.sh ...
+    * Install Archive Manager: File Roller.
+    * Total size = 844660K. Space Used = 90156K.
+  * Running inst-std-accessories-galculator.sh ...
+    * Install Calculator: galculator.
+    * Total size = 846180K. Space Used = 1520K.
+  * Running inst-std-accessories-gpicview.sh ...
+    * Install Image Viewer: gpicview.
+    * Total size = 858904K. Space Used = 12724K.
+  * Running inst-std-accessories-mupdf.sh ...
+    * Install PDF reader: Mupdf.
+    * Total size = 874256K. Space Used = 15352K.
+  * Running inst-std-accessories-scite.sh ...
+    * Install Text Editor: SCite.
+    * Total size = 880508K. Space Used = 6252K.
+  * Running inst-std-accessories-thunar.sh ...
+    * Install File Manger: thunar.
+    * Total size = 889820K. Space Used = 9312K.
+  * Running inst-std-accessories-xscreensaver.sh ...
+    * Install Screensaver: xscreensaver.
+    * Total size = 903492K. Space Used = 13672K.
+  * Running inst-std-graphic-pinta.sh ...
+    * Install Image Editor: Pinta.
+    * Total size = 965140K. Space Used = 61648K.
+  * Running inst-std-internet-iceweseal.sh ...
+    * Total size = 1078272K. Space Used = 113132K.
+  * Running inst-std-multimedia-mpv.sh ...
+    * Install Media Player: MPV.
+    * Total size = 1126172K. Space Used = 47900K.
+  * Running inst-std-office-libreoffice.sh ...
+    * Install Office Suite: Word processor - libreoffice-writer.
+    * Install Office Suite: Spreadsheet - libreoffice-calc.
+    * Install Office Suite: Presentation - libreoffice-impress.
+    * Install Office Suite: Drawing - libreoffice-draw.
+    * NOT install Office Suite: Database - libreoffice-base.
+    * NOT install Office Suite: Equation - libreoffice-math.
+    * Total size = 1558812K. Space Used = 432640K.
+  * Running inst-std-system-disk-manager.sh ...
+    * Install Auto Mount Partition Manager: Disk Manager.
+    * Total size = 1613200K. Space Used = 54388K.
+  * Running inst-std-system-gparted.sh ...
+    * Install Partition Manager: gparted.
+    * Total size = 1629908K. Space Used = 16708K.
+  * Running inst-xtra-dev-tools.sh ...
+    * Install debconf-utils to use debconf-set-selections.
+    * Install xorriso to create isohybrid.
+    * Install isolinux to get isohdpfx.bin and isolinux.bin in order to create isohybrid.
+    * Note: boot.cat is automatically created.
+    * Install debtree to view dependencies of packages. Better package selections.
+    * Total size = 1631164K. Space Used = 1256K.
+  * Running inst-xtra-proxy.sh ...
+    * Add proxy to /etc/environment and /etc/apt/apt.conf.d/proxy.
+    * Total size = 1631172K. Space Used = 8K.
+  * Running inst-xtra-virtualbox-guest.sh ...
+    * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
+    * Assumed packages installed: bzip2 & Xserver installed.
+    * Install dkms,build-essential,linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
+    * VirtualBox guest additions version:        4.3.20 installed.
+    * Delete ./settings/binary/VBoxGuestAdditions.iso[56976K]. Space used could be negative due to this deletion.
+    * Total size = 1778456K. Space Used = 147284K.
+  * Running inst-xtra-zfs.sh ...
+    * Install lsb-release.
+    * Add zfsonlinux repository to /etc/apt/sources.list.d/zfsonlinux.list.
+    * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
+    * Install debian-zfs.
+    * Delete ./settings/binary/zfsonlinux_6_all.deb[1992K].
+    * Total size = 1861384K. Space Used = 82928K.
   * Running inst-zclean-00-zerosizing-docs.sh ...
     * Zero size all documents in /usr/share/.
-    * Total size = 712836K. Space Used = -41672K.
+    * Total size = 1789464K. Space Used = -71920K.
   * Running inst-zclean-99-end-cleanup.sh ...
     * Clean apt-get cache.
     * rm -rf /tmp/*.
     * Umount /sys, /dev/pts and /proc.
     * Add http://http.debian.net/debian/ in sources.list.
-    * Total size = 575852K. Space Used = -136984K.
+    * Total size = 1383076K. Space Used = -406388K.
