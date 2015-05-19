@@ -1,4 +1,6 @@
 #!/bin/bash
+
+###################### ERROR Handling
 COMPONENT=$1
 
 if [ -z "${COMPONENT}" ]; then
