@@ -81,4 +81,6 @@ ls -1 *.sh | sed "s/^/touch /"
 :: Calibre
 
 lspci 
+aplay -l
+alsamixer->Analog Output=Stereo Headphones
 ```
