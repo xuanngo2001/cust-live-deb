@@ -1,4 +1,22 @@
 #!/bin/bash
+COMPONENT=$1
+
+if [ -z "${COMPONENT}" ]; then
+  echo "ERROR: Argument missing:"
+  echo "./install.sh  min"
+  echo "   or"
+  echo "./install.sh  all"
+  exit 0
+fi
+
+if [ "${COMPONENT}" = "min" ]; then
+  COMPONENT="min-*"
+else
+  COMPONENT="*"
+fi
+
+######################
+
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 
 # Ensure *.sh are executable.
@@ -18,22 +36,10 @@ TOTAL_SIZE=$(GF_LOG_TOTAL_SIZE)
 echo "${TOTAL_SIZE}" 2>&1 | tee -a ${INSTALL_LOG}
 echo "${SCRIPT_NAME}: ${DATE_STRING}: ${TOTAL_SIZE}" > ${INSTALL_LOG_SIZE}
 
-# Execute script with install-<letter>*.sh
-COMPONENT=$1
-
-if [ -z "${COMPONENT}" ]; then
-  exit 0
-fi
-
-if [ "${COMPONENT}" = "min" ]; then
-  COMPONENT="min-*"
-else
-  COMPONENT="*"
-fi
-
+###################### Main
 # Run scripts as per COMPONENT selected.
 CLEAN_SCRIPTNAME_PATTERN="inst-zclean-*.sh"
-for scriptfile in $( ls inst-${COMPONENT}.sh --ignore="${CLEAN_SCRIPTNAME_PATTERN}" ); do
+for scriptfile in $( ls inst-${COMPONENT}.sh | grep -v ${CLEAN_SCRIPTNAME_PATTERN} ); do
   ./${scriptfile} 2>&1 | tee -a ${INSTALL_LOG}
   # Log total size at the end of script.
   total_size_tmp=$(GF_LOG_TOTAL_SIZE)
