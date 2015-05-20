@@ -84,4 +84,7 @@ lspci
 aplay -l
 alsamixer->Analog Output=Stereo Headphones
 gnome-disks
+unicode
+numlock
+
 ```
