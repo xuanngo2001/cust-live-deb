@@ -21,10 +21,10 @@ if [ ! -f ${SCITE_CONFIG_FILE}.bck ]; then
   sed -i "s/open.filter=\\\/open.filter=\\\\\n\$(all.files)\\\/" /etc/scite/SciTEGlobal.properties
 
 else
-  echo "Error: ${SCRIPT_NAME} failed!"
-  echo "${SCITE_CONFIG_FILE}.bck already exists."
+  echo "${GV_LOG} * ERROR: ${SCRIPT_NAME} failed!"
+  echo "${GV_LOG} * ${SCITE_CONFIG_FILE}.bck already exists."
 fi
 
 
 # Log
-echo "${GV_LOG} * Install Text Editor: SCite."
+echo "${GV_LOG} * Install Text Editor: SciTE."
