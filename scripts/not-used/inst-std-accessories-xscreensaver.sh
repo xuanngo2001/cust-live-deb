@@ -14,6 +14,7 @@ apt-get -y --force-yes install xscreensaver
 echo "${GV_LOG} * Install Screensaver: xscreensaver."
 
 # REJECTION
+# Do you really need screensaver?
 #  * Running inst-std-accessories-xscreensaver.sh ...
 #    * After this operation, 9,363 kB of additional disk space will be used.
 #    * Install Screensaver: xscreensaver.
