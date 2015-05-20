@@ -13,8 +13,8 @@ apt-get -y --force-yes install libreoffice-writer
 apt-get -y --force-yes install libreoffice-calc
 apt-get -y --force-yes install libreoffice-impress
 apt-get -y --force-yes install libreoffice-draw
-apt-get -y --force-yes install libreoffice-base
-apt-get -y --force-yes install libreoffice-math
+#apt-get -y --force-yes install libreoffice-base
+#apt-get -y --force-yes install libreoffice-math
  
 # Log
 echo "${GV_LOG} * Install Office Suite: Word processor - libreoffice-writer."
