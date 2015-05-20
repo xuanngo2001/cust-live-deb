@@ -74,13 +74,9 @@ ls -1 *.sh | sed "s/^/touch /"
 
 :: touch inst-std-multimedia-audacious.sh
 :: touch inst-std-multimedia-bomi.sh
-:: touch inst-std-multimedia-mpv.sh
 :: touch inst-std-multimedia-SMPlayer.sh
 :: ImageMagick, NetPBM
 :: conky
 :: Calibre
-
-
-fusermount
 
 ```

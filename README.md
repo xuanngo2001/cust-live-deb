@@ -60,137 +60,191 @@ sort install-size-history.txt | uniq | grep <script-name>
 # Customizations Performed
   * Running install.sh ...
     * Running on SHELL=/bin/bash VER=4.3.30(1)-release
-    * Total size = 320024K. Space Used = 320024K.
+    * Total size = 320056K. Space Used = 320056K.
   * Running inst-min-con-00-linux-image.sh ...
+    * After this operation, 3145 kB of additional disk space will be used.
+    * After this operation, 224 MB of additional disk space will be used.
     * Mount /proc, /sys and /dev/pts.
     * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
     * Install Linux image.
     * Set APT to skip installing recommended packages.
-    * Total size = 611180K. Space Used = 291156K.
+    * Total size = 611260K. Space Used = 291204K.
   * Running inst-min-con-auto-log-root.sh ...
-    * Total size = 611188K. Space Used = 8K.
+    * Total size = 611268K. Space Used = 8K.
   * Running inst-min-con-bashrc.sh ...
-    * Total size = 611188K. Space Used = 0K.
+    * Total size = 611268K. Space Used = 0K.
   * Running inst-min-con-compressors.sh ...
+    * After this operation, 122 kB of additional disk space will be used.
     * Install bzip2 compressor.
-    * Total size = 611400K. Space Used = 212K.
+    * Total size = 611484K. Space Used = 216K.
   * Running inst-min-con-locale.sh ...
+    * After this operation, 16.3 MB of additional disk space will be used.
+    * After this operation, 334 kB of additional disk space will be used.
     * Install locale and set it to use en_US.UTF-8.
     * Install localepurge to purge non-UTF-8.
-    * Total size = 634936K. Space Used = 23536K.
+    * Total size = 635020K. Space Used = 23536K.
   * Running inst-min-con-numlock.sh ...
+    * After this operation, 4,381 kB of additional disk space will be used.
     * Install numlockx to turn on NumLock on boot.
-    * Total size = 641460K. Space Used = 6524K.
+    * Total size = 641540K. Space Used = 6520K.
   * Running inst-min-con-pciutils.sh ...
+    * After this operation, 1,181 kB of additional disk space will be used.
     * Install pciutils to troubleshoot pci devices(i.e. lspci).
-    * Total size = 643040K. Space Used = 1580K.
+    * Total size = 643116K. Space Used = 1576K.
   * Running inst-min-con-snd-alsa.sh ...
+    * After this operation, 5,270 kB of additional disk space will be used.
     * Install ALSA sound.
     * Test sound: aplay /usr/share/sounds/alsa/*.
-    * Total size = 650884K. Space Used = 7844K.
+    * Total size = 650964K. Space Used = 7848K.
   * Running inst-min-con-xtra-fonts-asian.sh ...
+    * After this operation, 48.2 MB of additional disk space will be used.
     * Install fonts-hanazono to display Asian characters correctly.
     * Test it by opening website http://ctext.org/zh.
-    * Total size = 716856K. Space Used = 65972K.
+    * Total size = 716936K. Space Used = 65972K.
   * Running inst-min-con-xtra-timezone.sh ...
     * Set time zone to EST (America/Montreal).
-    * Total size = 716856K. Space Used = 0K.
+    * Total size = 716936K. Space Used = 0K.
   * Running inst-min-win-00-xorg.sh ...
+    * After this operation, 73.0 MB of additional disk space will be used.
     * Set keyboard to use US international.
     * Install minimum Xorg X server.
     * Install xinit so you can run startx.
     * Add auto start window manager(i.e startx).
-    * Total size = 811364K. Space Used = 94508K.
+    * Total size = 811452K. Space Used = 94516K.
   * Running inst-min-win-01-wm-jwm.sh ...
-    * Total size = 821004K. Space Used = 9640K.
+    * After this operation, 6,665 kB of additional disk space will be used.
+    * Total size = 821092K. Space Used = 9640K.
+  * Running inst-min-win-01-wm-openbox.sh ...
+    * After this operation, 13.1 MB of additional disk space will be used.
+    * Install Openbox window manager.
+    * Total size = 836776K. Space Used = 15684K.
   * Running inst-min-win-menu.sh ...
+    * After this operation, 1,829 kB of additional disk space will be used.
     * Install menu, an easy way to get installed programs in the menu automatically.
-    * Total size = 822288K. Space Used = 1284K.
+    * Total size = 838048K. Space Used = 1272K.
+  * Running inst-std-accessories-evince.sh ...
+    * After this operation, 125 MB of additional disk space will be used.
+    * Install PDF reader: Evince.
+    * Total size = 993048K. Space Used = 155000K.
   * Running inst-std-accessories-fileroller.sh ...
+    * After this operation, 28.3 MB of additional disk space will be used.
     * Install Archive Manager: File Roller.
-    * Total size = 912468K. Space Used = 90180K.
+    * Total size = 1009140K. Space Used = 16092K.
   * Running inst-std-accessories-galculator.sh ...
+    * After this operation, 1,424 kB of additional disk space will be used.
     * Install Calculator: galculator.
-    * Total size = 913992K. Space Used = 1524K.
+    * Total size = 1010648K. Space Used = 1508K.
+  * Running inst-std-accessories-geeqie.sh ...
+    * After this operation, 35.1 MB of additional disk space will be used.
+    * Install Image Viewer: geeqie.
+    * Total size = 1031764K. Space Used = 21116K.
   * Running inst-std-accessories-gpicview.sh ...
+    * After this operation, 876 kB of additional disk space will be used.
     * Install Image Viewer: gpicview.
-    * Total size = 926712K. Space Used = 12720K.
+    * Total size = 1032112K. Space Used = 348K.
   * Running inst-std-accessories-mupdf.sh ...
+    * After this operation, 11.9 MB of additional disk space will be used.
     * Install PDF reader: Mupdf.
-    * Total size = 942060K. Space Used = 15348K.
+    * Total size = 1047260K. Space Used = 15148K.
   * Running inst-std-accessories-scite.sh ...
+    * After this operation, 4,829 kB of additional disk space will be used.
     * Install Text Editor: SciTE.
-    * Total size = 948340K. Space Used = 6280K.
+    * Total size = 1053532K. Space Used = 6272K.
   * Running inst-std-accessories-thunar.sh ...
+    * After this operation, 15.2 MB of additional disk space will be used.
     * Install File Manger: thunar.
-    * Total size = 957640K. Space Used = 9300K.
+    * Total size = 1062712K. Space Used = 9180K.
   * Running inst-std-accessories-xarchiver.sh ...
+    * After this operation, 1,211 kB of additional disk space will be used.
     * Install Archive Manager: xarchiver.
-    * Total size = 958868K. Space Used = 1228K.
+    * Total size = 1063948K. Space Used = 1236K.
   * Running inst-std-accessories-xscreensaver.sh ...
+    * After this operation, 9,363 kB of additional disk space will be used.
     * Install Screensaver: xscreensaver.
-    * Total size = 972552K. Space Used = 13684K.
+    * Total size = 1077628K. Space Used = 13680K.
   * Running inst-std-graphic-pinta.sh ...
+    * After this operation, 25.5 MB of additional disk space will be used.
     * Install Image Editor: Pinta.
-    * Total size = 1034200K. Space Used = 61648K.
+    * Total size = 1112820K. Space Used = 35192K.
+  * Running inst-std-internet-chromium.sh ...
+    * After this operation, 157 MB of additional disk space will be used.
+    * Total size = 1306428K. Space Used = 193608K.
   * Running inst-std-internet-iceweseal.sh ...
-    * Total size = 1147332K. Space Used = 113132K.
+    * After this operation, 78.2 MB of additional disk space will be used.
+    * Total size = 1414228K. Space Used = 107800K.
   * Running inst-std-multimedia-mpv.sh ...
+    * After this operation, 34.7 MB of additional disk space will be used.
     * Install Media Player: MPV.
-    * Total size = 1195220K. Space Used = 47888K.
+    * Total size = 1461240K. Space Used = 47012K.
   * Running inst-std-office-libreoffice.sh ...
+    * After this operation, 271 MB of additional disk space will be used.
+    * After this operation, 42.3 MB of additional disk space will be used.
+    * After this operation, 17.8 MB of additional disk space will be used.
     * Install Office Suite: Word processor - libreoffice-writer.
     * Install Office Suite: Spreadsheet - libreoffice-calc.
     * Install Office Suite: Presentation - libreoffice-impress.
     * Install Office Suite: Drawing - libreoffice-draw.
     * NOT install Office Suite: Database - libreoffice-base.
     * NOT install Office Suite: Equation - libreoffice-math.
-    * Total size = 1614100K. Space Used = 418880K.
+    * Total size = 1879208K. Space Used = 417968K.
   * Running inst-std-system-disk-manager.sh ...
+    * After this operation, 30.4 MB of additional disk space will be used.
     * Install Auto Mount Partition Manager: Disk Manager.
-    * Total size = 1668480K. Space Used = 54380K.
+    * Total size = 1933616K. Space Used = 54408K.
   * Running inst-std-system-gnome-disk-utility.sh ...
+    * After this operation, 10.6 MB of additional disk space will be used.
     * Install Partition Manager: gnome-disk-utility.
-    * Total size = 1675300K. Space Used = 6820K.
+    * Total size = 1939920K. Space Used = 6304K.
   * Running inst-std-system-gparted.sh ...
+    * After this operation, 17.3 MB of additional disk space will be used.
     * Install Partition Manager: gparted.
-    * Total size = 1691244K. Space Used = 15944K.
+    * Total size = 1955860K. Space Used = 15940K.
   * Running inst-xtra-dev-tools.sh ...
+    * After this operation, 157 kB of additional disk space will be used.
+    * After this operation, 151 kB of additional disk space will be used.
+    * After this operation, 884 kB of additional disk space will be used.
     * Install debconf-utils to use debconf-set-selections.
     * Install xorriso to create isohybrid.
     * Install isolinux to get isohdpfx.bin and isolinux.bin in order to create isohybrid.
     * Note: boot.cat is automatically created.
     * Install debtree to view dependencies of packages. Better package selections.
-    * Total size = 1692500K. Space Used = 1256K.
+    * Total size = 1957112K. Space Used = 1252K.
   * Running inst-xtra-fuse.sh ...
+    * After this operation, 567 kB of additional disk space will be used.
     * Install fuse(fusermount) to run TMSU.
-    * Total size = 1693276K. Space Used = 776K.
+    * Total size = 1957896K. Space Used = 784K.
   * Running inst-xtra-proxy.sh ...
     * Add proxy to /etc/environment and /etc/apt/apt.conf.d/proxy.
-    * Total size = 1693288K. Space Used = 12K.
+    * Total size = 1957904K. Space Used = 8K.
   * Running inst-xtra-sqlite.sh ...
+    * After this operation, 143 kB of additional disk space will be used.
     * Install Database: sqlite3.
-    * Total size = 1693288K. Space Used = 0K.
+    * Total size = 1958168K. Space Used = 264K.
   * Running inst-xtra-virtualbox-guest.sh ...
+    * After this operation, 201 MB of additional disk space will be used.
+    * After this operation, 2,696 kB disk space will be freed.
+    * After this operation, 69.3 MB disk space will be freed.
     * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
     * Assumed packages installed: bzip2 & Xserver installed.
     * Install dkms,build-essential,linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
     * VirtualBox guest additions version:        4.3.20 installed.
     * Delete ./settings/binary/VBoxGuestAdditions.iso[56976K]. Space used could be negative due to this deletion.
-    * Total size = 1840600K. Space Used = 147312K.
+    * Total size = 2105448K. Space Used = 147280K.
   * Running inst-xtra-zfs.sh ...
+    * After this operation, 99.3 kB of additional disk space will be used.
+    * After this operation, 39.7 MB of additional disk space will be used.
     * Install lsb-release.
     * Add zfsonlinux repository to /etc/apt/sources.list.d/zfsonlinux.list.
     * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
     * Install debian-zfs.
     * Delete ./settings/binary/zfsonlinux_6_all.deb[1992K].
-    * Total size = 1923524K. Space Used = 82924K.
+    * Total size = 2188384K. Space Used = 82936K.
   * Running inst-zclean-00-zerosizing-docs.sh ...
     * Zero size all documents in /usr/share/.
-    * Total size = 1850736K. Space Used = -72788K.
+    * Total size = 2107224K. Space Used = -81160K.
   * Running inst-zclean-99-end-cleanup.sh ...
     * Clean apt-get cache.
     * rm -rf /tmp/*.
     * Umount /sys, /dev/pts and /proc.
     * Add http://http.debian.net/debian/ in sources.list.
-    * Total size = 1425152K. Space Used = -425584K.
+    * Total size = 1628200K. Space Used = -479024K.
