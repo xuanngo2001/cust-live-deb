@@ -16,6 +16,7 @@ apt-get -y --force-yes install fonts-hanazono
 
 # Log
 echo "${GV_LOG} * Install fonts-hanazono to display Asian characters correctly."
+echo "${GV_LOG} * Test it by opening website http://ctext.org/zh."
 
 ### Test
 # Open http://ctext.org/zh
