@@ -59,4 +59,5 @@ for scriptfile in $( ls ${CLEAN_SCRIPTNAME_PREFIX}*.sh ); do
 done
 
 # Retrieved the log.
-grep "${GV_LOG}" ${INSTALL_LOG} > "${INSTALL_LOG%.*}.ran"
+sed "s/After this operation, /${GV_LOG} * After this operation, /" ${INSTALL_LOG} |\
+  grep "${GV_LOG}" ${INSTALL_LOG} > "${INSTALL_LOG%.*}.ran"
