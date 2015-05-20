@@ -11,4 +11,4 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install fuse
 
 # Log
-echo "${GV_LOG} * Install fuse to run TMSU."
+echo "${GV_LOG} * Install fuse(fusermount) to run TMSU."
