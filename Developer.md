@@ -83,4 +83,5 @@ ls -1 *.sh | sed "s/^/touch /"
 lspci 
 aplay -l
 alsamixer->Analog Output=Stereo Headphones
+gnome-disks
 ```
