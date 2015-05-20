@@ -88,4 +88,5 @@ unicode
 numlock
 fusermount
 sqlite
+Xarchiver 
 ```
