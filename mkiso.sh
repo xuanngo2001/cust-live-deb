@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Create squashfs
 rm -f binary/live/filesystem.squashfs
 mksquashfs chroot binary/live/filesystem.squashfs -comp xz -e boot
