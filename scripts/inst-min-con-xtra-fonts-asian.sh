@@ -9,7 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 ### Install Chinese fonts so that it display correctly in Iceweseal/Firefox and in the console.
-apt-get -y install fonts-hanazono 
+apt-get -y --force-yes install fonts-hanazono
 # fonts-arphic-ukai fonts-arphic-uming
 # fonts-hanazono
 
