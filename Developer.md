@@ -80,13 +80,7 @@ ls -1 *.sh | sed "s/^/touch /"
 :: conky
 :: Calibre
 
-lspci 
-aplay -l
-alsamixer->Analog Output=Stereo Headphones
-gnome-disks
-unicode
-numlock
+
 fusermount
-sqlite
-Xarchiver 
+
 ```
