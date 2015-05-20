@@ -87,4 +87,5 @@ gnome-disks
 unicode
 numlock
 fusermount
+sqlite
 ```
