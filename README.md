@@ -27,7 +27,7 @@ http://stackoverflow.com/a/8157973
 
 # Transferring the iso image to USB stick
 ```
-dd if=remaster.iso of=/dev/sdg
+dd if=remaster.iso of=/dev/sdX
 sync
 ```
 The `sync` bit is important as `dd` can return before the write operation finishes.
