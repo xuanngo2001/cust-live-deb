@@ -60,4 +60,4 @@ done
 
 # Retrieved the log.
 sed "s/After this operation, /${GV_LOG} * After this operation, /" ${INSTALL_LOG} |\
-  grep "${GV_LOG}" ${INSTALL_LOG} > "${INSTALL_LOG%.*}.ran"
+  grep "${GV_LOG}" > "${INSTALL_LOG%.*}.ran"
