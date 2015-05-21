@@ -35,15 +35,14 @@ fi
 ####################################
 echo ">>>>>>>>>> Delete all partitions of ${USB_DEVICE}."
 dd if=/dev/zero of=${USB_DEVICE} bs=1k count=2048
-sync; partprobe ${USB_DEVICE}
+sync
+
 
 # Transfer iso-hybrid to USD device.
 ####################################
 echo ">>>>>>>>>> Transfer iso-hybrid to ${USB_DEVICE}."
 dd if="${ISOHYBRID}" of="${USB_DEVICE}" bs=4M
-
-# Flush write operations.
-sync; partprobe ${USB_DEVICE}
+sync
 
 # Create a new partition in the USB.
 ####################################
@@ -52,7 +51,7 @@ echo ">>>>>>>>>> Create an extended partition for the remaining ${USB_DEVICE}."
 (echo m; echo n; echo e; echo; echo; echo; echo w) | sudo fdisk "${USB_DEVICE}"
 
 # Refresh partition table. 
-sync; partprobe ${USB_DEVICE}
+partprobe ${USB_DEVICE}
 
 # Create a logical partition of X MiB.
 LOGICAL_PARTITION_SIZE_MB=200
@@ -60,7 +59,7 @@ echo ">>>>>>>>>> Create a logical partition of ${LOGICAL_PARTITION_SIZE_MB}MB in
 (echo m; echo n; echo l; echo; echo "+${LOGICAL_PARTITION_SIZE_MB}M"; echo w) | sudo fdisk "${USB_DEVICE}"
 
 # Refresh partition table. 
-sync; partprobe ${USB_DEVICE}
+partprobe ${USB_DEVICE}
 
 # Create persistent file in the USB
 ####################################
@@ -87,7 +86,6 @@ rm -rf ${PERSISTENCE_IMG_MNT_DIR}
 mkdir -p ${PERSISTENCE_IMG_MNT_DIR}
 mount -t ext4 ${PERSISTENCE_IMG_FILE} ${PERSISTENCE_IMG_MNT_DIR}
 echo "/ union" > ${PERSISTENCE_IMG_MNT_DIR}/persistence.conf
-sync
 umount ${PERSISTENCE_IMG_MNT_DIR}
 rm -rf ${PERSISTENCE_IMG_MNT_DIR}
 
@@ -97,7 +95,6 @@ rm -rf ${NEW_LOGICAL_PARTITION_MNT_DIR}
 mkdir -p ${NEW_LOGICAL_PARTITION_MNT_DIR}
 mount -t ext4 "${NEW_LOGICAL_PARTITION}" "${NEW_LOGICAL_PARTITION_MNT_DIR}"
 cp ${PERSISTENCE_IMG_FILE} ${NEW_LOGICAL_PARTITION_MNT_DIR}
-sync
 umount ${NEW_LOGICAL_PARTITION_MNT_DIR}
 rm -rf ${NEW_LOGICAL_PARTITION_MNT_DIR}
 
