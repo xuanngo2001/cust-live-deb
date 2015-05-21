@@ -41,3 +41,8 @@ sync
 
 # Create persistent file in the USB
 ####################################
+
+
+# Done
+####################################
+echo "Done!"
