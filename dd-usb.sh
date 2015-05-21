@@ -36,7 +36,7 @@ fi
 echo ">>>>>>>>>> Delete all partitions of ${USB_DEVICE}."
 dd if=/dev/zero of=${USB_DEVICE} bs=1k count=2048
 sync
-
+partprobe ${USB_DEVICE}
 
 # Transfer iso-hybrid to USD device.
 ####################################
@@ -48,15 +48,15 @@ sync
 ####################################
 # Create an extended partition for the remaining USB.
 echo ">>>>>>>>>> Create an extended partition for the remaining ${USB_DEVICE}."
-(echo m; echo n; echo e; echo; echo; echo; echo w) | sudo fdisk "${USB_DEVICE}"
+(echo n; echo e; echo; echo; echo; echo w) | fdisk "${USB_DEVICE}"
 
-# Refresh partition table. 
+# Refresh partition table.
 partprobe ${USB_DEVICE}
 
 # Create a logical partition of X MiB.
 LOGICAL_PARTITION_SIZE_MB=200
 echo ">>>>>>>>>> Create a logical partition of ${LOGICAL_PARTITION_SIZE_MB}MB in ${USB_DEVICE}."
-(echo m; echo n; echo l; echo; echo "+${LOGICAL_PARTITION_SIZE_MB}M"; echo w) | sudo fdisk "${USB_DEVICE}"
+(echo n; echo l; echo; echo "+${LOGICAL_PARTITION_SIZE_MB}M"; echo w) | fdisk "${USB_DEVICE}"
 
 # Refresh partition table. 
 partprobe ${USB_DEVICE}
@@ -67,8 +67,8 @@ partprobe ${USB_DEVICE}
 NEW_LOGICAL_PARTITION=$(fdisk -l "${USB_DEVICE}" | grep "^/dev/" | grep " 83 " | cut -d' ' -f1)
 
 # Format logical parition
-echo ">>>>>>>>>> Format ${NEW_LOGICAL_PARTITION} logical parition."
-mkfs.ext4 -F "${NEW_LOGICAL_PARTITION}"
+#echo ">>>>>>>>>> Format ${NEW_LOGICAL_PARTITION} logical parition."
+#mkfs.ext4 -F "${NEW_LOGICAL_PARTITION}"
 
 # Create an ext4-based image file to be used for persistence
 echo ">>>>>>>>>> Create an ext4-based image file to be used for persistence."
