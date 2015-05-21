@@ -31,29 +31,32 @@ then
   fi
 fi
 
+# Delete all partitions on USD device.
+####################################
+dd if=/dev/zero of=${USB_DEVICE} bs=1k count=2048
+sync; partprobe
 
 # Transfer iso-hybrid to USD device.
 ####################################
 dd if="${ISOHYBRID}" of="${USB_DEVICE}" bs=4M
 
 # Flush write operations.
-sync
+sync; partprobe
 
 # Create a new partition in the USB.
 ####################################
-partprobe
 # Create extended partition for the remaining USB.
 (echo m; echo n; echo e; echo; echo; echo; echo w) | sudo fdisk "${USB_DEVICE}"
 
 # Refresh partition table. 
-partprobe
+sync; partprobe
 
 # Create a logical partition of X MiB.
 LOGICAL_PARTITION_SIZE_MB=200
 (echo m; echo n; echo l; echo; echo "+${LOGICAL_PARTITION_SIZE_MB}M"; echo w) | sudo fdisk "${USB_DEVICE}"
 
 # Refresh partition table. 
-partprobe
+sync; partprobe
 
 # Create persistent file in the USB
 ####################################
@@ -64,7 +67,8 @@ PERSISTENCE_IMG_FILE=persistence
 mkfs.ext4 -F "${NEW_LOGICAL_PARTITION}"
 
 # Create an ext4-based image file to be used for persistence
-dd if=/dev/null of=${PERSISTENCE_IMG_FILE} bs=1 count=0 seek="${LOGICAL_PARTITION_SIZE_MB}M"
+PERSISTENCE_IMG_SIZE=$((${LOGICAL_PARTITION_SIZE_MB}-1))
+dd if=/dev/null of=${PERSISTENCE_IMG_FILE} bs=1 count=0 seek="${PERSISTENCE_IMG_SIZE}M"
 sync
 mkfs.ext4 -F ${PERSISTENCE_IMG_FILE}
 
@@ -79,13 +83,14 @@ umount ${PERSISTENCE_IMG_MNT_DIR}
 rm -rf ${PERSISTENCE_IMG_MNT_DIR}
 
 # Copy persistence image file to new logical partition
-NEW_LOGICAL_PARTITION_MNT=/tmp/new-logical-partition-mnt
-rm -rf ${NEW_LOGICAL_PARTITION_MNT}
-mkdir -p ${NEW_LOGICAL_PARTITION_MNT}
-mount -t ext4 "${NEW_LOGICAL_PARTITION}" "${NEW_LOGICAL_PARTITION_MNT}"
-cp ${PERSISTENCE_IMG_FILE} ${NEW_LOGICAL_PARTITION_MNT}
+NEW_LOGICAL_PARTITION_MNT_DIR=/tmp/new-logical-partition-mnt
+rm -rf ${NEW_LOGICAL_PARTITION_MNT_DIR}
+mkdir -p ${NEW_LOGICAL_PARTITION_MNT_DIR}
+mount -t ext4 "${NEW_LOGICAL_PARTITION}" "${NEW_LOGICAL_PARTITION_MNT_DIR}"
+cp ${PERSISTENCE_IMG_FILE} ${NEW_LOGICAL_PARTITION_MNT_DIR}
 sync
-umount ${NEW_LOGICAL_PARTITION_MNT}
+umount ${NEW_LOGICAL_PARTITION_MNT_DIR}
+rm -rf ${NEW_LOGICAL_PARTITION_MNT_DIR}
 
 
 # Done
