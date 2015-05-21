@@ -8,6 +8,13 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+#export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBCONF_DEBUG=developer
+export DEBCONF_DEBUG=developer
+
+# Preseed firmware licence agreements.
+debconf-set-selections ${GV_SETTINGS_DIR}/firmware.seed
+
+# These packages are part of non-free repository.
 FIRMWARES_LIST="atmel-firmware bluez-firmware firmware-atheros firmware-bnx2 firmware-bnx2x firmware-brcm80211 firmware-intelwimax firmware-ipw2x00 firmware-ivtv firmware-iwlwifi firmware-libertas firmware-linux firmware-linux-free firmware-linux-nonfree firmware-qlogic firmware-ralink firmware-realtek zd1211-firmware"
 apt-get -y --force-yes install ${FIRMWARES_LIST} 
 
