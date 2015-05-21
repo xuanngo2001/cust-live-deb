@@ -5,7 +5,7 @@
 ISOHYBRID=$1
 USB_DEVICE=$2
 
-# Arguments error handling
+# Arguments error handling.
 ###########################
 if [ "${#}" -ne "2" ]; then
   echo "ERROR: Arguments missing. Please provide <ISOHYBRID> and <USB_DEVICE>."
@@ -32,17 +32,55 @@ then
 fi
 
 
-# Transfer iso-hybrid to USD device
+# Transfer iso-hybrid to USD device.
 ####################################
 dd if="${ISOHYBRID}" of="${USB_DEVICE}" bs=4M
 
 # Flush write operations.
 sync
 
+# Create a new partition in the USB.
+####################################
+# Create extended partition for the remaining USB.
+(echo m; echo n; echo e; echo; echo; echo; echo w) | sudo fdisk "${USB_DEVICE}"
+# Flush write operations.
+sync
+
+# Create a logical partition of X MiB.
+LOGICAL_PARTITION_SIZE_MB=200
+(echo m; echo n; echo l; echo; echo "+${LOGICAL_PARTITION_SIZE_MB}M"; echo w) | sudo fdisk "${USB_DEVICE}"
+# Flush write operations.
+sync
+
 # Create persistent file in the USB
 ####################################
+# Get logical partition name
+NEW_LOGICAL_PARTITION=$(fdisk -l "${USB_DEVICE}" | grep "^/dev/" | grep " 83 " | cut -d' ' -f1)
+PERSISTENCE_IMG_FILE=persistence
+# Format logical parition
+mkfs.ext4 "${NEW_LOGICAL_PARTITION}"
+sync
 
+# Create an ext4-based image file to be used for persistence
+dd if=/dev/null of=${PERSISTENCE_IMG_FILE} bs=1 count=0 seek="${LOGICAL_PARTITION_SIZE_MB}M"
+sync
+mkfs.ext4 -F ${PERSISTENCE_IMG_FILE}
+sync
+
+# Add persistence.conf to the image file.
+PERSISTENCE_IMG_MNT_DIR=/tmp/persistence_img_mnt
+rm -rf ${PERSISTENCE_IMG_MNT_DIR}
+mkdir -p ${PERSISTENCE_IMG_MNT_DIR}
+mount -t ext4 ${PERSISTENCE_IMG_FILE} ${PERSISTENCE_IMG_MNT_DIR}
+echo "/ union" >> ${PERSISTENCE_IMG_MNT_DIR}/persistence.conf
+sync
+umount ${PERSISTENCE_IMG_MNT_DIR}
+rm -rf ${PERSISTENCE_IMG_MNT_DIR}
 
 # Done
 ####################################
 echo "Done!"
+
+
+# Test
+# cat /proc/partitions
