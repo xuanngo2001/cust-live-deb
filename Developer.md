@@ -79,5 +79,6 @@ ls -1 *.sh | sed "s/^/touch /"
 :: conky
 :: Calibre
 https://launchpad.net/jwm-settings-manager
+/usr/share/icons/
 
 ```
