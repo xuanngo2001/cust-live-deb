@@ -78,5 +78,6 @@ ls -1 *.sh | sed "s/^/touch /"
 :: ImageMagick, NetPBM
 :: conky
 :: Calibre
+https://launchpad.net/jwm-settings-manager
 
 ```
