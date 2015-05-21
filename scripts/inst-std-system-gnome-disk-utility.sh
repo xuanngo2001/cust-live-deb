@@ -12,3 +12,6 @@ apt-get -y --force-yes install gnome-disk-utility
 
 # Log
 echo "${GV_LOG} * Install Partition Manager: gnome-disk-utility."
+
+# Reference
+# Tutorial: http://askubuntu.com/a/185827
