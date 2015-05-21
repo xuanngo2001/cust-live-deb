@@ -81,5 +81,7 @@ ls -1 *.sh | sed "s/^/touch /"
 https://launchpad.net/jwm-settings-manager
 /usr/share/icons/
  /usr/share/pixmaps 
-
+ 
+ip link set wlan0 up
+https://wiki.archlinux.org/index.php/Wireless_network_configuration#Check_the_driver_status
 ```
