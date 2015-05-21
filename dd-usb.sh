@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 # Description: Transfer ISOHYBRID to USB.
 
 ISOHYBRID=$1
