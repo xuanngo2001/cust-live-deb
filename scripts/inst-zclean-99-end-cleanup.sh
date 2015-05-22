@@ -7,6 +7,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 cd /
 
 # Clean APT.
+apt-get -y --force-yes autoremove
 apt-get clean
 
 rm /var/lib/dbus/machine-id
