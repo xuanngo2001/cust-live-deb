@@ -86,4 +86,6 @@ ip link set wlan0 up
 https://wiki.archlinux.org/index.php/Wireless_network_configuration#Check_the_driver_status
 Need iw
 https://packages.debian.org/jessie/iw
+
+iwlist wlan0 scan
 ```
