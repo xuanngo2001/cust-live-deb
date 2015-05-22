@@ -43,6 +43,9 @@ partprobe ${USB_DEVICE}
 echo ">>>>>>>>>> Transfer iso-hybrid to ${USB_DEVICE}."
 dd if="${ISOHYBRID}" of="${USB_DEVICE}" bs=4M
 sync; sleep 3s
+partprobe ${USB_DEVICE}
+
+exit 0
 
 # Create a new partition in the USB.
 ####################################
