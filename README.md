@@ -92,35 +92,35 @@ sort install-size-history.txt | uniq | grep <script-name>
     * After this operation, 334 kB of additional disk space will be used.
     * Install locale and set it to use en_US.UTF-8.
     * Install localepurge to purge non-UTF-8.
-    * Total size = 689000K. Space Used = 23548K.
+    * Total size = 688992K. Space Used = 23540K.
   * Running inst-min-con-numlock.sh ...
     * After this operation, 4,381 kB of additional disk space will be used.
     * Install numlockx to turn on NumLock on boot.
-    * Total size = 695516K. Space Used = 6516K.
+    * Total size = 695508K. Space Used = 6516K.
   * Running inst-min-con-pciutils.sh ...
     * After this operation, 1,181 kB of additional disk space will be used.
     * Install pciutils to troubleshoot pci devices(i.e. lspci).
-    * Total size = 697088K. Space Used = 1572K.
+    * Total size = 697080K. Space Used = 1572K.
   * Running inst-min-con-snd-alsa.sh ...
     * After this operation, 5,270 kB of additional disk space will be used.
     * Install ALSA sound.
     * Test sound: aplay /usr/share/sounds/alsa/*.
-    * Total size = 704932K. Space Used = 7844K.
+    * Total size = 704928K. Space Used = 7848K.
   * Running inst-min-con-xtra-fonts-asian.sh ...
     * After this operation, 48.2 MB of additional disk space will be used.
     * Install fonts-hanazono to display Asian characters correctly.
     * Test it by opening website http://ctext.org/zh.
-    * Total size = 770908K. Space Used = 65976K.
+    * Total size = 770904K. Space Used = 65976K.
   * Running inst-min-con-xtra-timezone.sh ...
     * Set time zone to EST (America/Montreal).
-    * Total size = 770908K. Space Used = 0K.
+    * Total size = 770904K. Space Used = 0K.
   * Running inst-min-win-00-xorg.sh ...
     * After this operation, 73.0 MB of additional disk space will be used.
     * Set keyboard to use US international.
     * Install minimum Xorg X server.
     * Install xinit so you can run startx.
     * Add auto start window manager(i.e startx).
-    * Total size = 865416K. Space Used = 94508K.
+    * Total size = 865416K. Space Used = 94512K.
   * Running inst-min-win-01-wm-jwm.sh ...
     * After this operation, 6,665 kB of additional disk space will be used.
     * Total size = 875060K. Space Used = 9644K.
@@ -159,14 +159,14 @@ sort install-size-history.txt | uniq | grep <script-name>
   * Running inst-std-graphic-pinta.sh ...
     * After this operation, 36.5 MB of additional disk space will be used.
     * Install Image Editor: Pinta.
-    * Total size = 1082060K. Space Used = 61648K.
+    * Total size = 1082064K. Space Used = 61652K.
   * Running inst-std-internet-iceweseal.sh ...
     * After this operation, 82.4 MB of additional disk space will be used.
-    * Total size = 1195192K. Space Used = 113132K.
+    * Total size = 1195196K. Space Used = 113132K.
   * Running inst-std-multimedia-mpv.sh ...
     * After this operation, 35.3 MB of additional disk space will be used.
     * Install Media Player: MPV.
-    * Total size = 1242980K. Space Used = 47788K.
+    * Total size = 1242980K. Space Used = 47784K.
   * Running inst-std-office-libreoffice.sh ...
     * After this operation, 272 MB of additional disk space will be used.
     * After this operation, 42.3 MB of additional disk space will be used.
@@ -185,23 +185,19 @@ sort install-size-history.txt | uniq | grep <script-name>
   * Running inst-std-system-disk-manager.sh ...
     * After this operation, 30.6 MB of additional disk space will be used.
     * Install Auto Mount Partition Manager: Disk Manager.
-    * Total size = 1717836K. Space Used = 54672K.
+    * Total size = 1717840K. Space Used = 54676K.
   * Running inst-std-system-gnome-disk-utility.sh ...
     * After this operation, 11.4 MB of additional disk space will be used.
     * Install Partition Manager: gnome-disk-utility.
-    * Total size = 1724656K. Space Used = 6820K.
+    * Total size = 1724660K. Space Used = 6820K.
   * Running inst-std-system-gparted.sh ...
     * After this operation, 17.3 MB of additional disk space will be used.
     * Install Partition Manager: gparted.
-    * Total size = 1740588K. Space Used = 15932K.
+    * Total size = 1740592K. Space Used = 15932K.
   * Running inst-std-system-network-network-manager-gnome.sh ...
     * After this operation, 29.4 MB of additional disk space will be used.
     * Install Network Manager: network-manager-gnome.
-    * Total size = 1761400K. Space Used = 20812K.
-  * Running inst-std-system-network-wicd.sh ...
-    * After this operation, 5,573 kB of additional disk space will be used.
-    * Install Network Manager: wicd.
-    * Total size = 1770452K. Space Used = 9052K.
+    * Total size = 1761404K. Space Used = 20812K.
   * Running inst-xtra-dev-tools.sh ...
     * After this operation, 157 kB of additional disk space will be used.
     * After this operation, 151 kB of additional disk space will be used.
@@ -211,18 +207,18 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Install isolinux to get isohdpfx.bin and isolinux.bin in order to create isohybrid.
     * Note: boot.cat is automatically created.
     * Install debtree to view dependencies of packages. Better package selections.
-    * Total size = 1771712K. Space Used = 1260K.
+    * Total size = 1762676K. Space Used = 1272K.
   * Running inst-xtra-fuse.sh ...
     * After this operation, 567 kB of additional disk space will be used.
     * Install fuse(fusermount) to run TMSU.
-    * Total size = 1772500K. Space Used = 788K.
+    * Total size = 1763460K. Space Used = 784K.
   * Running inst-xtra-proxy.sh ...
     * Add proxy to /etc/environment and /etc/apt/apt.conf.d/proxy.
-    * Total size = 1772508K. Space Used = 8K.
+    * Total size = 1763468K. Space Used = 8K.
   * Running inst-xtra-sqlite.sh ...
     * After this operation, 143 kB of additional disk space will be used.
     * Install Database: sqlite3.
-    * Total size = 1772772K. Space Used = 264K.
+    * Total size = 1763736K. Space Used = 268K.
   * Running inst-xtra-virtualbox-guest-from-scratch.sh ...
     * After this operation, 201 MB of additional disk space will be used.
     * After this operation, 2,696 kB disk space will be freed.
@@ -232,11 +228,11 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Install dkms,build-essential,linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
     * VirtualBox guest additions version:        4.3.20 installed.
     * Delete ./settings/binary/VBoxGuestAdditions.iso[56976K]. Space used could be negative due to this deletion.
-    * Total size = 1920352K. Space Used = 147580K.
+    * Total size = 1911308K. Space Used = 147572K.
   * Running inst-xtra-wifite.sh ...
-    * After this operation, 80.3 MB of additional disk space will be used.
+    * After this operation, 80.6 MB of additional disk space will be used.
     * Install wifite.
-    * Total size = 2013688K. Space Used = 93336K.
+    * Total size = 2005052K. Space Used = 93744K.
   * Running inst-xtra-zfs.sh ...
     * After this operation, 99.3 kB of additional disk space will be used.
     * After this operation, 39.7 MB of additional disk space will be used.
@@ -245,13 +241,13 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
     * Install debian-zfs.
     * Delete ./settings/binary/zfsonlinux_6_all.deb[1992K].
-    * Total size = 2096640K. Space Used = 82952K.
+    * Total size = 2087992K. Space Used = 82940K.
   * Running inst-zclean-00-zerosizing-docs.sh ...
     * Zero size all documents in /usr/share/.
-    * Total size = 2018220K. Space Used = -78420K.
+    * Total size = 2010720K. Space Used = -77272K.
   * Running inst-zclean-99-end-cleanup.sh ...
     * Clean apt-get cache.
     * rm -rf /tmp/*.
     * Umount /sys, /dev/pts and /proc.
     * Add http://http.debian.net/debian/ in sources.list.
-    * Total size = 1558592K. Space Used = -459628K.
+    * Total size = 1552940K. Space Used = -457780K.
