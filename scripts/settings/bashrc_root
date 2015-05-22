@@ -19,6 +19,8 @@
 # alias cp='cp -i'
 # alias mv='mv -i'
 
+eval "`dircolors -b ~/.dircolors.256dark`"
+
 # Some shortcuts for different directory listings
 alias ls='ls -hFA --color=tty'                  # classify files in colour
 alias dir='ls -A --color=auto --format=vertical'
