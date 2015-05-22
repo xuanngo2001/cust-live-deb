@@ -12,6 +12,7 @@ apt-get -y --force-yes install network-manager-gnome
 
 # Log
 echo "${GV_LOG} * Install Network Manager: network-manager-gnome."
+echo "${GV_LOG} * Run nm-applet to load it in the system tray."
 
 # REJECTION
 # After this operation, 26.5 MB of additional disk space will be used.
