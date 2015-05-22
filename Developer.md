@@ -91,4 +91,5 @@ iwlist wlan0 scan
 autofs
 https://bitbucket.org/mgorny/uam
 ivman, pmount, gnome-mount, PCManFM
+http://unix.stackexchange.com/a/134906
 ```
