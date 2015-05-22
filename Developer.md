@@ -90,4 +90,5 @@ https://packages.debian.org/jessie/iw
 iwlist wlan0 scan
 autofs
 https://bitbucket.org/mgorny/uam
+ivman, pmount, gnome-mount, PCManFM
 ```
