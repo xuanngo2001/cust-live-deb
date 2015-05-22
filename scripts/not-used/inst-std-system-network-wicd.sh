@@ -12,3 +12,5 @@ apt-get -y --force-yes install wicd
 
 # Log
 echo "${GV_LOG} * Install Network Manager: wicd."
+
+# I have typed "wlan0" in the "Wireless interface:" box under "Preferences" and clicked "Refesh" - but still no luck.
