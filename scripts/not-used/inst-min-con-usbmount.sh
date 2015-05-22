@@ -13,7 +13,8 @@ apt-get -y --force-yes install usbmount
 # Log
 echo "${GV_LOG} * Install usbmount to auto mount USB devices."
 
-#
+# REJECTION:
+# Can use udev rules to do the same.
 #  * Running inst-min-con-usbmount.sh ...
 #    * After this operation, 323 kB of additional disk space will be used.
 #    * Install usbmount to auto mount USB devices.
