@@ -13,3 +13,8 @@ apt-get -y --force-yes install usbmount
 # Log
 echo "${GV_LOG} * Install usbmount to auto mount USB devices."
 
+#
+#  * Running inst-min-con-usbmount.sh ...
+#    * After this operation, 323 kB of additional disk space will be used.
+#    * Install usbmount to auto mount USB devices.
+#    * Total size = 705244K. Space Used = 360K.
