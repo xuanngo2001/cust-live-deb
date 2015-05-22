@@ -92,4 +92,6 @@ autofs
 https://bitbucket.org/mgorny/uam
 ivman, pmount, gnome-mount, PCManFM
 http://unix.stackexchange.com/a/134906
+
+Check http://debiania.in.ua/posts/2013-03-24-automounting-with-udev-and-pmount.html
 ```
