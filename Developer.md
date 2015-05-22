@@ -88,4 +88,5 @@ Need iw
 https://packages.debian.org/jessie/iw
 
 iwlist wlan0 scan
+autofs
 ```
