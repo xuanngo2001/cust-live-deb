@@ -8,13 +8,12 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-apt-get -y --force-yes install xarchiver
+apt-get -y --force-yes install file-roller
 
 # Log
-echo "${GV_LOG} * Install Archive Manager: xarchiver."
+echo "${GV_LOG} * Install Archive Manager: File Roller."
 
 # REJECTION
-# Small but not intuitive: How to add multiple files in archive? Tried for 3 minutes.
 #  * Running inst-std-accessories-xarchiver.sh ...
 #    * After this operation, 1,211 kB of additional disk space will be used.
 #    * Install Archive Manager: xarchiver.
