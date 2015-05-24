@@ -14,3 +14,7 @@ apt-get -y --force-yes install wicd
 echo "${GV_LOG} * Install Network Manager: wicd."
 echo "${GV_LOG} * For wireless, you have to type in the wireless interface(e.g. wlan0) in the Preferences."
 
+# Note:
+# Command Line:
+#   ip link set wlan0 up
+#   iwlist wlan0 scan
