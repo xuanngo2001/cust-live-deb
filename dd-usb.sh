@@ -35,14 +35,14 @@ fi
 ####################################
 echo ">>>>>>>>>> Delete all partitions of ${USB_DEVICE}."
 dd if=/dev/zero of=${USB_DEVICE} bs=1k count=2048
-sync; sleep 3s
+sync
 partprobe ${USB_DEVICE}
 
 # Transfer iso-hybrid to USD device.
 ####################################
 echo ">>>>>>>>>> Transfer iso-hybrid to ${USB_DEVICE}."
 dd if="${ISOHYBRID}" of="${USB_DEVICE}" bs=4M
-sync; sleep 3s
+sync
 partprobe ${USB_DEVICE}
 
 exit 0
