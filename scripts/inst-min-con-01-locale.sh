@@ -58,7 +58,7 @@ echo "${GV_LOG} * Install localepurge to purge non-UTF-8."
 
 # update-locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8 LC_TIME=en_US.UTF-8 LC_CTYPE=en_US.UTF-8
 #   Explained: https://wiki.gentoo.org/wiki/Localization/HOWTO#Environment_variables_for_locales
-
+# https://wiki.archlinux.org/index.php/Locale
 
 # Note: Locales warning message:
 #perl: warning: Setting locale failed.
