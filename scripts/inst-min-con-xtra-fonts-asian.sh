@@ -27,18 +27,6 @@ echo "${GV_LOG} * Test it by opening website http://ctext.org/zh."
 # http://fonts.jp/hanazono/
 # Other languages: http://meta.wikimedia.org/wiki/List_of_Wikipedias
 
-# REJECTION
-#  * Running inst-min-con-xtra-fonts-unifont.sh ...
-#    * After this operation, 44.5 MB of additional disk space will be used.
-#    * Install font: unifont.
-#    * Total size = 759632K. Space Used = 54256K.
-#  * Running inst-min-con-xtra-fonts-asian.sh ...
-#    * After this operation, 48.2 MB of additional disk space will be used.
-#    * Install fonts-hanazono to display Asian characters correctly.
-#    * Test it by opening website http://ctext.org/zh.
-#    * Total size = 771284K. Space Used = 65972K.
-    
-    
     
 ### LinuxMing fonts:
 #apt-get -y --force-yes install fonts-beng
