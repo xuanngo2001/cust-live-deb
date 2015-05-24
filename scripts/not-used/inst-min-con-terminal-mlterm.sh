@@ -15,6 +15,7 @@ apt-get -y --force-yes install mlterm
 echo "${GV_LOG} * Install terminal: mlterm."
 
 # REJECTION
+# Doesn't display chinese characters.
 #  * Running inst-min-con-terminal-mlterm.sh ...
 #    * After this operation, 25.4 MB of additional disk space will be used.
 #    * Install terminal: mlterm.
