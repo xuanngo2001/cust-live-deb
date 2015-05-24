@@ -16,3 +16,4 @@ echo "${GV_LOG} * Install font: unifont."
 
 # Reference:
 # http://unifoundry.com/unifont.html
+# https://wiki.archlinux.org/index.php/Fonts#International_users
