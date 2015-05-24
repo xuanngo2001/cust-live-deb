@@ -9,7 +9,10 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-apt-get -y --force-yes install thunar
+PKGS_LIST="thunar thunar-media-tags-plugin thunar-archive-plugin thunar-volman"
+apt-get -y --force-yes install ${PKGS_LIST}
 
 # Log
-echo "${GV_LOG} * Install File Manger: thunar."
+echo "${GV_LOG} * Install File Manger: ${PKGS_LIST// /, }."
+
+
