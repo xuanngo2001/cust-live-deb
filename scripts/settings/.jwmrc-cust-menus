@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<JWM>
+
+    <Menu label="Accessories">
+      <Program label="Geeqie" confirm="false">/usr/bin/geeqie</Program>
+      <Program label="Calculator" confirm="false">/usr/bin/galculator</Program>
+      <Program label="Image Viewer" confirm="false">/usr/bin/gpicview</Program>
+      <Program label="MuPDF" confirm="false">/usr/bin/mupdf</Program>
+      <Program label="SciTE" confirm="false">/usr/bin/scite</Program>
+      <Program label="Thunar" confirm="false">/usr/bin/thunar</Program>
+    </Menu>
+    
+    <Menu label="Internet">
+      <Program label="Iceweasel" confirm="false">iceweasel</Program>
+    </Menu>
+
+    <Menu label="Graphics">
+      <Program label="Pinta" confirm="false">/usr/bin/pinta</Program>
+    </Menu>
+      
+    <!--
+    <Menu label="Multimedia">
+      
+    </Menu>
+    -->
+    
+    <Menu label="Office">
+      <Program label="LibreOffice Calc" confirm="false">/usr/bin/libreoffice --calc</Program>
+      <Program label="LibreOffice Impress" confirm="false">/usr/bin/libreoffice --impress</Program>
+      <Program label="LibreOffice Writer" confirm="false">/usr/bin/libreoffice --writer</Program>
+    </Menu>
+    
+    
+    <Menu label="Network">
+      <Program label="WICD" confirm="false">/usr/bin/wicd-gtk</Program>
+    </Menu>
+
+    
+    <Menu label="Administration">
+      <Program label="Debian Task selector" confirm="false">x-terminal-emulator  -T "Debian Task selector" -e sh -c "su-to-root -c tasksel"</Program>
+      <Program label="Disk Manager" confirm="false">/usr/sbin/disk-manager</Program>
+      <Program label="GNOME partition editor" confirm="false">su-to-root -X -c /usr/sbin/gparted</Program>
+    </Menu>
+    
+</JWM>
