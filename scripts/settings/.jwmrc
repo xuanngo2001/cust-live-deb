@@ -2,7 +2,7 @@
 <JWM>
   <StartupCommand>~/.jwmrc-startup.sh</StartupCommand>
   
-  <RootMenu label="Start" height="15" onroot="12">
+  <RootMenu label="XUAN" height="15" onroot="12">
     <Program icon="terminal.png" label="Terminal">x-terminal-emulator</Program>
     <Separator/>
     
@@ -14,11 +14,19 @@
     <Include>/etc/jwm/debian-menu</Include>
     <Separator/>
     
-    <Program icon="lock.png" label="Lock">xscreensaver-command -activate</Program>
+    <!--<Program icon="lock.png" label="Lock">xscreensaver-command -activate</Program>
     <Separator/>
+    -->
     
-    <Restart label="Restart" icon="restart.png"/>
-    <Exit label="Exit" confirm="true" icon="quit.png"/>
+    <Menu label="Shutdown">
+      <Restart label="Restart JWM" icon="restart.png"/>
+      <Exit label="Exit JWM" confirm="true" icon="quit.png"/>
+      <Separator/>
+      <Program label="Reboot" confirm="false">/sbin/reboot</Program>
+      <Separator/>
+      <Program label="Shutdown" confirm="false">/sbin/halt -p</Program>
+    </Menu>
+
   </RootMenu>
 
  
