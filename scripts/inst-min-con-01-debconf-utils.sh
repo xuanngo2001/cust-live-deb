@@ -9,9 +9,9 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-
-# To view dependencies of packages. Better package selections.
-apt-get -y --force-yes install debtree
+# To use debconf-set-selections.
+apt-get -y --force-yes install debconf-utils
 
 # Log
-echo "${GV_LOG} * Install debtree to view dependencies of packages. Better package selections."
+echo "${GV_LOG} * Install debconf-utils to use debconf-set-selections."
+
