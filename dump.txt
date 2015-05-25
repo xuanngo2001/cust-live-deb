@@ -1,3 +1,52 @@
+jwm -restart
+jwm -exit
+
+http://puppylinux.org/wikka/Configure_PuppyMenu
+
+/etc/jwm/debian-menu
+
+http://www.damnsmalllinux.org/f/topic-3-34-19504-0.html
+
+http://murga-linux.com/puppy/viewtopic.php?t=23260&start=285
+    http://murga-linux.com/puppy/viewtopic.php?p=588276#588276
+    
+http://murga-linux.com/puppy/viewtopic.php?t=23260&start=300
+    http://murga-linux.com/puppy/viewtopic.php?p=833615#833615
+    
+http://www.techtimejourney.net/wp-content/uploads/2013/06/easy-jwm.pdf
+
+cp /usr/share/menu/*
+/etc/menu/
+cd /etc/menu/
+Change...
+update-menus
+
+    
+=============
+http://www.techtimejourney.net/?p=622
+
+volumeicon → An applet taking care of keyboard multimedia keys
+pulseaudio → Pulseaudio volume daemon
+setxkbmap fi → Set the keymap correctly. You may want to change fi to en, for example, depending on
+your locale
+feh --bg-scale '/home/tester/test/background.jpg' → Feh is a prorgam which serves both as an image
+viewer and background setter. In the above example you would set a background found at
+/home/tester/test/background.jpg to be scaled as a desktop image.
+pcmanfm → A lightweight file-manager for Linux.
+firefox\iceweasel → A web browser. You can of course replace this with chromium or midori or any
+other you choose.
+pavucontrol → A volume manager for pulseaudio
+gnome-terminal → A terminal client. You might want to replace this with the lxterminal, rox-term,
+aterm or some other. Remember to tweak the terminal entry if you change the client.
+vlc → A multimedia client to play sound and video files. If you want a more lightweight program take
+a look at parole: http://goodies.xfce.org/projects/applications/parole
+gimp → An image manipulation program which may be omitted if not desired.
+libreoffice → An office suite for Linux. Depending on your needs you might also consider abiword
+and gnumeric combination instead of libreoffice.
+I3lock → Desktop lockdown utility.
+The programs mentioned above are just a group of examples and you might consider adding and
+removing some depending on your needs.
+
 apt-get -y --force-yes install fonts-beng
 apt-get -y --force-yes install fonts-beng-extra
 apt-get -y --force-yes install fonts-cantarell
