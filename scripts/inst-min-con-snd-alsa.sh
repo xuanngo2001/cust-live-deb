@@ -11,3 +11,6 @@ apt-get -y --force-yes install alsa-base alsa-utils
 # Log
 echo "${GV_LOG} * Install ALSA sound."
 echo "${GV_LOG} * Test sound: aplay /usr/share/sounds/alsa/*."
+
+# Notes:
+# http://superuser.com/questions/713387/enabling-5-1-with-a-xonar-ds-soundcard-on-debian-jessie
