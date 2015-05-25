@@ -1,4 +1,8 @@
 #!/bin/bash
+set -e
+
+# Description: Create an iso-hybrid.
+# Requirements:
 
 # Create squashfs
 rm -f binary/live/filesystem.squashfs
