@@ -7,7 +7,7 @@
 # /etc/udev/rules.d/10-my-media-automount.rules
 
 # start at sdb to ignore the system hard drive
-KERNEL!="sd[b-z]*", GOTO="my_media_automount_end"
+KERNEL!="sd[a-z]*", GOTO="my_media_automount_end"
 ACTION=="add", PROGRAM!="/sbin/blkid %N", GOTO="my_media_automount_end"
 
 # import some useful filesystem info as variables
