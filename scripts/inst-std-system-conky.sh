@@ -22,4 +22,5 @@ echo "${GV_LOG} * Set ${CONKYRC}."
 # http://www.techdrivein.com/2010/12/13-breathtaking-conky-configurations.html
 # http://custom-linux.deviantart.com/gallery/39357745/Conky-Themes
 # http://conky.sourceforge.net/variables.html
+# (HDD) https://www.kubuntuforums.net/showthread.php?62493-How-can-I-summarize-free-used-disk-space-in-Conky&s=a7f2cef65f87565cfde045ae0be22bf5&p=345208&viewfull=1#post345208
 
