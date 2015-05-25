@@ -43,7 +43,7 @@ ${color DimGray}
 ${font}
 ${font Arial:bold:size=10}${color Tan1}SYSTEM ${color DarkSlateGray} ${hr 2}
 $font${color DimGray}$sysname $kernel $alignr $machine
-${pre_exec cat /proc/cpuinfo | grep "model name" | cut -d':' -f2 | cut -c 2-}
+${pre_exec cat /proc/cpuinfo | grep "model name" | uniq | cut -d':' -f2 | cut -c 2-}
 Uptime $alignr${uptime}
 File System $alignr${fs_type}
 
