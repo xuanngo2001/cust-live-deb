@@ -13,3 +13,6 @@ apt-get -y --force-yes install menu
 
 # Log
 echo "${GV_LOG} * Install menu, an easy way to get installed programs in the menu automatically."
+
+# Note:
+# Check menu-xdg
