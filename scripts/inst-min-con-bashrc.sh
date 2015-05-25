@@ -5,9 +5,11 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 cp ${GV_SETTINGS_DIR}/bashrc_root /root/.bashrc
 
-cp ${GV_SETTINGS_DIR}/dircolors.256dark /root/.dircolors.256dark
+# Set dircolors
+DIR_COLORS_FILE=dircolors-gnu-ls-colors.txt
+cp ${GV_SETTINGS_DIR}/${DIR_COLORS_FILE} /root/.dircolors
 
 
 # Log
 echo "${GV_LOG} * Set common settings for /root/.bashrc."
-echo "${GV_LOG} * Set to use dircolors-solarized(i.e dircolors.256dark) to make ls more beautiful."
+echo "${GV_LOG} * Set dircolors to use ${DIR_COLORS_FILE} to make ls more beautiful."
