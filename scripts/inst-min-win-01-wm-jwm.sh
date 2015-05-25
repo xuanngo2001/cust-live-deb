@@ -10,12 +10,16 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y --force-yes install jwm
-yes | cp ${GV_SETTINGS_DIR}/.jwmrc* /root/
+
+# Set JWM.
+JWMRC=jwmrc
+yes | cp ${GV_SETTINGS_DIR}/${JWMRC} /root/.${JWMRC}
+yes | cp ${GV_SETTINGS_DIR}/${JWMRC}-* /root/
 
 
 # Log
 echo "${GV_LOG} * Install Window Manager: JWM."
-echo "${GV_LOG} * Customize JWM."
+echo "${GV_LOG} * Set ${JWMRC}."
 
 
 # Reference:
