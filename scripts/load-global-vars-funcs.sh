@@ -16,11 +16,11 @@ export GV_BINARY_DIR=${GV_SETTINGS_DIR}/binary
 # Prefix this variable in echo to log echoed string. CLDS stands for Custom Live Debian System.
 export GV_LOG="CLDS:"
 
-# Use to exchange value variables between different script.
-export GV_VALUES_FILE=load-global-values.txt
-
 # Log size of scripts.
 export GV_INSTALL_SIZE=/root/scripts/install.size
+
+# APT sources list file
+export GV_SOURCES_LIST=/etc/apt/sources.list
 
 ###### FUNCTIONS ######
 
@@ -36,11 +36,15 @@ GF_SIZE_OF()
 }
 export -f GF_SIZE_OF
 
+
+# Use to exchange value variables between different script.
+export GP_VALUES_FILE=load-global-values.txt
+
 # Log total size in kilobytes.
 GF_LOG_TOTAL_SIZE ()
 {
   # Load previous total size.
-  . ./${GV_VALUES_FILE}
+  . ./${GP_VALUES_FILE}
   
   # Get current total size.
   CURRENT_TOTAL_SIZE=$(GF_SIZE_OF /)
@@ -53,7 +57,7 @@ GF_LOG_TOTAL_SIZE ()
   echo "${GV_LOG} * Total size = ${CURRENT_TOTAL_SIZE}K. Space Used = ${SPACE_USED}K."
   
   # Update previous total size.
-  echo "PREV_TOTAL_SIZE=${CURRENT_TOTAL_SIZE}" > ${GV_VALUES_FILE}
+  echo "PREV_TOTAL_SIZE=${CURRENT_TOTAL_SIZE}" > ${GP_VALUES_FILE}
 }
 export -f GF_LOG_TOTAL_SIZE
 
