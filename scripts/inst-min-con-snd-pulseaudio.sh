@@ -18,7 +18,7 @@ apt-get -y --force-yes install pulseaudio-utils
 
 # Startup pulseaudio from /root/.bashrc
 ROOT_BASHRC=/root/.bashrc
-echo "pulseaudio --start --log-target=syslog >> ${ROOT_BASHRC}"
+echo "pulseaudio --start --log-target=syslog" >> ${ROOT_BASHRC}
 
 # Log
 echo "${GV_LOG} * Install PulseAudio."
