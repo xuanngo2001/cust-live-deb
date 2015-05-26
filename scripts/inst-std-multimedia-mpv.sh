@@ -10,5 +10,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y --force-yes install mpv
 
+# Add multiple aliases for MPV
+cat ${GV_SETTINGS_DIR}/bashrc-alias-mpv >> /root/.bashrc
+
 # Log
 echo "${GV_LOG} * Install Media Player: MPV."
+echo "${GV_LOG} * Add multiple aliases for MPV."

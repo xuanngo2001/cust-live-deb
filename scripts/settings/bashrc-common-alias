@@ -1,5 +1,5 @@
 
-# Some shortcuts for different directory listings
+# LS: Some shortcuts for different directory listings
 alias ls='ls -hFA --color=tty'                  # classify files in colour
 alias dir='ls -A --color=auto --format=vertical'
 alias vdir='ls -A --color=auto --format=long'
@@ -7,7 +7,7 @@ alias ll='ls -lA'                               # long list
 alias la='ls -A'                                # all but . and ..
 alias l='ls -CFA'                               #
  
-# Default to human readable figures
+# DF: Default to human readable figures
 alias df='df -h'
 alias du='du -ch'
 alias du1='du --max-depth=1'

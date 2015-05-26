@@ -10,5 +10,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y --force-yes install geeqie
 
+# Add alias for geeqie: g
+cat ${GV_SETTINGS_DIR}/bashrc-alias-geeqie >> /root/.bashrc
+
 # Log
 echo "${GV_LOG} * Install Image Viewer: geeqie."
+echo "${GV_LOG} * Add alias for geeqie: g."
