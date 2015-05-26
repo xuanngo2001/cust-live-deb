@@ -20,7 +20,9 @@ sed -i 's/ main/ main contrib non-free/' ${LIVE_SYSTEM_DIR}/etc/apt/sources.list
 cp -R scripts ${LIVE_SYSTEM_DIR}/root
 
 # Add temporary default coloring of live command prompt.
-echo 'export PS1="\e[01;31m(live):\W \$ \e[00m"' > ${LIVE_SYSTEM_DIR}/root/.bashrc
+echo '' >> ${LIVE_SYSTEM_DIR}/root/.bashrc
+echo 'export PS1="\e[01;31m(live):\W \$ \e[00m"' >> ${LIVE_SYSTEM_DIR}/root/.bashrc
+echo '' >> ${LIVE_SYSTEM_DIR}/root/.bashrc
 
 # What to do next.
 echo "============================================"
