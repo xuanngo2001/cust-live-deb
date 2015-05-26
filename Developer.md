@@ -27,6 +27,14 @@ set -e
 set -x
 ```
 
+# Run script individually from scripts/
+```
+./in-chroot.sh
+cd /root/scripts/
+source ./load-global-vars-funcs.sh
+./your_script_here.sh
+```
+
 # Script Structure
 ```bash
 rm -f *.sh
