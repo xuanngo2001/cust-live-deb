@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install pavucontrol
 
 # Log
-echo "${GV_LOG} * Install PulseAudio Volume Control: pavucontrol."
+echo "${GV_LOG} * Install PulseAudio Volume Controller: pavucontrol."
 
 # Reference
 # Tutorial: http://askubuntu.com/a/185827
