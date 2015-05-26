@@ -19,9 +19,13 @@ rm -rf /tmp/*
 umount /sys /dev/pts
 umount -lf /proc
 
+## Modify sources.list
 # Reinstate default debian repository
+# Delete local repository.
 DEB_REPO_URL=http://http.debian.net/debian/
-echo "deb ${DEB_REPO_URL} jessie main contrib non-free" > /etc/apt/sources.list
+SOURCES_LIST=/etc/apt/sources.list
+echo "deb ${DEB_REPO_URL} jessie main contrib non-free" >> ${SOURCES_LIST}
+sed -i '/localhost/d' ${SOURCES_LIST}
 
 
 # Log
