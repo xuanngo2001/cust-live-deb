@@ -14,7 +14,13 @@ apt-get -y --force-yes install pulseaudio-utils
 
 # Log
 echo "${GV_LOG} * Install PulseAudio."
+echo "${GV_LOG} * PulseAudio doesn't run automatically."
+echo "${GV_LOG}   * pulseaudio --start --log-target=syslog"
+echo "${GV_LOG} * When running alsamixer, it should show that it is using PulseAudio card."
+echo "${GV_LOG} * Test sound: paplay /usr/share/sounds/alsa/*"
+echo "${GV_LOG} * More settings at https://wiki.debian.org/PulseAudio."
 
 
 # Notes:
-# http://superuser.com/questions/713387/enabling-5-1-with-a-xonar-ds-soundcard-on-debian-jessie
+# For surround sound, see https://wiki.debian.org/PulseAudio
+# Run for all users: https://rudd-o.com/linux-and-free-software/how-to-make-pulseaudio-run-once-at-boot-for-all-your-users
