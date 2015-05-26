@@ -24,7 +24,11 @@ umount -lf /proc
 # Delete local repository.
 DEB_REPO_URL=http://http.debian.net/debian/
 SOURCES_LIST=/etc/apt/sources.list
+echo "" >> ${SOURCES_LIST}
 echo "deb ${DEB_REPO_URL} jessie main contrib non-free" >> ${SOURCES_LIST}
+echo "deb http://security.debian.org/ jessie/updates main contrib non-free" >> ${SOURCES_LIST}
+echo "" >> ${SOURCES_LIST}
+
 sed -i '/localhost/d' ${SOURCES_LIST}
 
 
