@@ -12,7 +12,7 @@ debconf-set-selections ${GV_SETTINGS_DIR}/keyboard.seed
 apt-get -y --force-yes install xinit xserver-xorg
 
 # Auto startx
-cat ${GV_SETTINGS_DIR}/bash_profile_auto_startx >> /root/.bash_profile
+cat ${GV_SETTINGS_DIR}/bash_profile-auto-startx >> /root/.bash_profile
 
 # Log
 echo "${GV_LOG} * Set keyboard to use US international."
