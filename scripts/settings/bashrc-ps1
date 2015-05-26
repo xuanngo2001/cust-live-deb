@@ -1,0 +1,7 @@
+
+# Define what to display on the command line.
+red='\e[0;31m'
+brown='\e[0;33m'
+no_color='\e[0m'
+export PS1="${brown}--=[\$(date +%Y-%m-%d) \t @${no_color}${red}\u${no_color}${brown}]=--${no_color}\n${red}(live)${no_color}\w>"
+

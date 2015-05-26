@@ -1,0 +1,24 @@
+
+# Some shortcuts for different directory listings
+alias ls='ls -hFA --color=tty'                  # classify files in colour
+alias dir='ls -A --color=auto --format=vertical'
+alias vdir='ls -A --color=auto --format=long'
+alias ll='ls -lA'                               # long list
+alias la='ls -A'                                # all but . and ..
+alias l='ls -CFA'                               #
+ 
+# Default to human readable figures
+alias df='df -h'
+alias du='du -ch'
+alias du1='du --max-depth=1'
+ 
+# Some more alias to avoid making mistakes:
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Shutdown
+alias halt='halt -p'
+
+# Color grep
+alias grep='grep --color'
