@@ -25,3 +25,5 @@ echo "${GV_LOG} * Set ${JWMRC}."
 # Reference:
 # http://puppylinux.org/wikka/Configure_PuppyMenu
 #
+# jwm -restart
+# jwm -exit
