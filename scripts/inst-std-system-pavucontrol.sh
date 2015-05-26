@@ -16,3 +16,4 @@ echo "${GV_LOG} * Install PulseAudio Volume Controller: pavucontrol."
 
 # Reference
 # Tutorial: http://askubuntu.com/a/185827
+# Alternative: xfce4-mixer
