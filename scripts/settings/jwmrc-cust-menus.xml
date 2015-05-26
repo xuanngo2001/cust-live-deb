@@ -36,6 +36,7 @@
 
     
     <Menu label="Administration">
+      <Program label="Sound">pavucontrol</Program> 
       <Program label="Debian Task selector" confirm="false">x-terminal-emulator  -T "Debian Task selector" -e sh -c "su-to-root -c tasksel"</Program>
       <Program label="Disk Manager" confirm="false">/usr/sbin/disk-manager</Program>
       <Program label="GNOME partition editor" confirm="false">su-to-root -X -c /usr/sbin/gparted</Program>
