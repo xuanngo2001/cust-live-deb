@@ -4,6 +4,7 @@ set -e
 # Note: 
 #   * All size values are in kilobytes.
 #   * Avoid using other applications than GNU coreutils applications: http://en.wikipedia.org/wiki/GNU_Core_Utilities.
+#   * Need: grep, xargs
 
 WORKING_DIR=$(realpath $1)
 
@@ -13,7 +14,7 @@ DATE_STRING=$(date +"%Y-%m-%d_%0k.%M.%S")
 
 
 # Error Handling
-##################
+##################################################################
 if [ -z ${WORKING_DIR} ] || [ ! -d ${WORKING_DIR} ]; then
   echo "ERROR: Please provide working directory path."
   echo " e.g.: $0 /tmp/"
@@ -21,9 +22,9 @@ if [ -z ${WORKING_DIR} ] || [ ! -d ${WORKING_DIR} ]; then
 fi
 
 # Check sizes
-##############
+##################################################################
 # Get total live system size in kilobytes.
-LIVE_SYS_SIZE=$(du -bcsk --exclude=/{dev,live,lib/live/mount,cdrom,mnt,proc,sys,media,run,tmp,initrd,var/cache/apt,var/lib/apt} / | head -n 1 | cut -f1)
+LIVE_SYS_SIZE=$(du -bcsk --exclude=/{dev,live,lib/live/mount,cdrom,mnt,proc,sys,media,run,tmp,initrd*,var/cache/apt,var/lib/apt} / | head -n 1 | cut -f1)
 
 # Get free space of WORKING.
 WORKING_FREE_SPACE=$(df -k ${WORKING_DIR} | tail -n1 | tr -s ' ' | cut -d ' ' -f4)
@@ -36,15 +37,47 @@ if [ "${LIVE_SYS_SIZE}" -gt "${WORKING_FREE_SPACE}" ]; then
   exit 0
 fi
 
-# Create new squashfs
-######################
-SQUASHFS_DIR=${WORKING_DIR}/lds-new-squashfs
 # Copy live system to working directory.
+##################################################################
+SQUASHFS_DIR=${WORKING_DIR}/lds-new-squashfs
 echo "Copy live system to ${SQUASHFS_DIR}/ ..."
-rsync -a / "${SQUASHFS_DIR}" --info=progress2 --exclude=/{dev,live,lib/live/mount,cdrom,mnt,proc,sys,media,run,tmp,initrd,var/cache/apt,var/lib/apt} --exclude=${WORKING_DIR} 2> /dev/null
+rsync -a / "${SQUASHFS_DIR}" --info=progress2 --update --exclude=/{dev,live,lib/live/mount,cdrom,mnt,proc,sys,media,run,tmp,initrd*,var/cache/apt,var/lib/apt} --exclude=${WORKING_DIR} 2> /dev/null
 
-exit 0
+# Shrink size of live system in the working directory.
+##################################################################
+echo "Shrink size of live system in ${SQUASHFS_DIR}."
+ls "${SQUASHFS_DIR}"/var/lib/apt/lists | grep -v "lock" | grep -v "partial" | xargs -i rm "${SQUASHFS_DIR}"/var/lib/apt/lists/{} ; 
+ls "${SQUASHFS_DIR}"/var/cache/apt/archives | grep -v "lock" | grep -v "partial" | xargs -i rm "${SQUASHFS_DIR}"/var/cache/apt/archives/{} ;
+ls "${SQUASHFS_DIR}"/var/cache/apt | grep -v "archives" | xargs -i rm "${SQUASHFS_DIR}"/var/cache/apt/{} ;
+
+zerosize() {
+  find $* | while read file; do
+    echo -n "."
+    rm -f $file
+    touch $file
+  done
+}
+
+    zerosize "${SQUASHFS_DIR}"/usr/share/doc -type f -size +1c
+    zerosize "${SQUASHFS_DIR}"/usr/share/doc -type l
+
+    zerosize "${SQUASHFS_DIR}"/usr/share/man -type f -size +1c
+    zerosize "${SQUASHFS_DIR}"/usr/share/man -type l
+
+
+    zerosize "${SQUASHFS_DIR}"/usr/share/info -type f -size +1c
+    zerosize "${SQUASHFS_DIR}"/usr/share/info -type l
+
+    zerosize "${SQUASHFS_DIR}"/usr/share/gnome/help -type f -size +1c
+    zerosize "${SQUASHFS_DIR}"/usr/share/gnome/help -type l
+
+    zerosize "${SQUASHFS_DIR}"/usr/share/gtk-doc -type f -size +1c
+    zerosize "${SQUASHFS_DIR}"/usr/share/gtk-doc -type l
+
+    chown -R man:root "${SQUASHFS_DIR}"/usr/share/man
+
 # Create new squash file
+##################################################################
 echo "Creating new squashfs..."
 SQUASHFS_FILE=${WORKING_DIR}/filesystem.squashfs_${DATE_STRING}
 mksquashfs ${SQUASHFS_DIR} ${SQUASHFS_FILE} -comp xz -e boot
