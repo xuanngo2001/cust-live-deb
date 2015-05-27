@@ -1,7 +1,7 @@
 
 # Define what to display on the command line: e.g. --=[2015-05-26 14:00:32 @root]=--
-red='\e[0;31m'
-brown='\e[0;33m'
-no_color='\e[0m'
-export PS1="${brown}--=[\$(date +%Y-%m-%d) \t @${no_color}${red}\u${no_color}${brown}]=--${no_color}\n${red}(live)${no_color}\w>"
-
+# http://askubuntu.com/a/24422
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+reset=$(tput sgr0)
+export PS1="\[$green\]--=[$(date +%Y-%m-%d) \t @\[$reset\]\[$red\]\u\[$reset\]\[$green\]]=--\[$reset\]\n\[$red\](live)\[$reset\]\w>"
