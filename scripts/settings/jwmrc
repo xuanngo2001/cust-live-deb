@@ -5,14 +5,14 @@ DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-
 -->
 
 <JWM>
-  <StartupCommand>~/jwmrc-startup.sh</StartupCommand>
+  <StartupCommand>/root/jwmrc-startup.sh</StartupCommand>
   
   <RootMenu label="Start" height="15" onroot="12">
     <Program icon="terminal.png" label="Terminal">x-terminal-emulator</Program>
     <Separator/>
     
     <!-- Include custom menu. -->
-    <Include>~/jwmrc-cust-menus.xml</Include>
+    <Include>/root/jwmrc-cust-menus.xml</Include>
     <Separator/>
     
     <!-- Include Debian default menu. -->
@@ -86,7 +86,7 @@ DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-
 	</MenuStyle>
 
   <!-- Tray at the bottom. -->
-  <Include>~/jwmrc-tray.xml</Include>
+  <Include>/root/jwmrc-tray.xml</Include>
   
   <!-- Double click speed (in milliseconds) -->
   <DoubleClickSpeed>400</DoubleClickSpeed>
