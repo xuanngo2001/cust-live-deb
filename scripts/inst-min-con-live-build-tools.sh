@@ -17,7 +17,15 @@ apt-get -y --force-yes install isolinux
 # To create isohybrid.
 apt-get -y --force-yes install xorriso
 
+# To copy directories.
+apt-get -y --force-yes install rsync
+
+# To create new squashfs.
+apt-get -y --force-yes install squashfs-tools
+
 # Log
 echo "${GV_LOG} * Install xorriso to create isohybrid."
 echo "${GV_LOG} * Install isolinux to get isohdpfx.bin and isolinux.bin in order to create isohybrid."
 echo "${GV_LOG} * Note: boot.cat is automatically created."
+echo "${GV_LOG} * Install rsync to copy directories."
+echo "${GV_LOG} * Install squashfs-tools to create new squashfs."
