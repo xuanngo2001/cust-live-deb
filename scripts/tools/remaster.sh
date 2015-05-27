@@ -46,9 +46,6 @@ rsync -a / "${SQUASHFS_DIR}" --info=progress2 --update --exclude=/{dev,live,lib/
 # Shrink size of live system in the working directory.
 ##################################################################
 echo "Shrink size of live system in ${SQUASHFS_DIR}."
-ls "${SQUASHFS_DIR}"/var/lib/apt/lists | grep -v "lock" | grep -v "partial" | xargs -i rm "${SQUASHFS_DIR}"/var/lib/apt/lists/{} ; 
-ls "${SQUASHFS_DIR}"/var/cache/apt/archives | grep -v "lock" | grep -v "partial" | xargs -i rm "${SQUASHFS_DIR}"/var/cache/apt/archives/{} ;
-ls "${SQUASHFS_DIR}"/var/cache/apt | grep -v "archives" | xargs -i rm "${SQUASHFS_DIR}"/var/cache/apt/{} ;
 
 zerosize() {
   find $* | while read file; do
@@ -82,4 +79,4 @@ echo "Creating new squashfs..."
 SQUASHFS_FILE=${WORKING_DIR}/filesystem.squashfs_${DATE_STRING}
 mksquashfs ${SQUASHFS_DIR} ${SQUASHFS_FILE} -comp xz -e boot
 
-echo "${SQUASHFS_FILE} created."
+echo ">>>>>>>>>>>>>>  ${SQUASHFS_FILE} created. <<<<<<<<<<<<<<<<<<<<<<"
