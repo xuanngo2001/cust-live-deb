@@ -18,3 +18,4 @@ echo "${GV_LOG} * Test sound: aplay /usr/share/sounds/alsa/*."
 # speaker-test -Dplug:surround40 -c4 -l1 -twav
 # speaker-test -Dplug:surround51 -c6 -l1 -twav
 # speaker-test -Dplug:surround71 -c8 -l1 -twav
+# http://ubuntuforums.org/showthread.php?t=795525
