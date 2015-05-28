@@ -14,3 +14,7 @@ echo "${GV_LOG} * Test sound: aplay /usr/share/sounds/alsa/*."
 
 # Notes:
 # http://superuser.com/questions/713387/enabling-5-1-with-a-xonar-ds-soundcard-on-debian-jessie
+# https://help.ubuntu.com/community/SurroundSound
+# speaker-test -Dplug:surround40 -c4 -l1 -twav
+# speaker-test -Dplug:surround51 -c6 -l1 -twav
+# speaker-test -Dplug:surround71 -c8 -l1 -twav
