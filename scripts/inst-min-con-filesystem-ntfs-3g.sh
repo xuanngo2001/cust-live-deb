@@ -9,5 +9,5 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install ntfs-3g
 
 # Log
-echo "${GV_LOG} * Install support for ntfs: ntfs-3g."
+echo "${GV_LOG} * Install support for NTFS: ntfs-3g."
 
