@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #cp ${GV_SETTINGS_DIR}/automount-udev-media.rules /etc/udev/rules.d/
 
 AUTOMOUNT_UDEV=${GV_SETTINGS_DIR}/udev-automounter
-cp ${AUTOMOUNT_UDEV}/automounter.rules /etc/udev/rules.d/
+cp ${AUTOMOUNT_UDEV}/udev-automounter.rules /etc/udev/rules.d/
 cp ${AUTOMOUNT_UDEV}/udev-auto*.sh /usr/local/sbin/
 
 # Log
