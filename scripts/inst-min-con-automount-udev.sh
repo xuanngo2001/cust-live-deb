@@ -21,3 +21,6 @@ echo "${GV_LOG} * Install udev to auto mount all devices."
 # http://www.reactivated.net/writing_udev_rules.html
 # https://wiki.archlinux.org/index.php/Udev#Mount_under_.2Fmedia.3B_use_partition_label_if_present.3B_support_user_un-mounting
 # https://bbs.archlinux.org/viewtopic.php?id=103890
+
+# Full script explained: http://superuser.com/a/64970
+
