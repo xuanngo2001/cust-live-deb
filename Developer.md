@@ -17,6 +17,19 @@ Otherwise, there will be lock issues with Eclipse.
 * http://ubuntuforums.org/archive/index.php/t-174188.html
 * http://forums.debian.net/viewtopic.php?f=6&t=48765
 
+# Apt-Cacher-NG
+
+* http://www.tecmint.com/apt-cache-server-in-ubuntu/
+* https://www.unix-ag.uni-kl.de/~bloch/acng/html/index.html
+
+1. `apt-get -y --force-yes install apt-cacher-ng`
+1. Open `/etc/apt-cacher-ng/acng.conf`.
+1. To run as service, uncomment `PidFile: /var/run/apt-cacher-ng/pid`.
+1. If you changed the cache directories, run `chown -R apt-cacher-ng:apt-cacher-ng /path/to/CacheDir`.
+1. Increase `ExTreshold` to 24.
+1. Restart `/etc/init.d/apt-cacher-ng restart`. If it doesn't work, try `/usr/sbin/apt-cacher-ng -c /etc/apt-cacher-ng`.
+
+
 # Bash
 *  http://www.davidpashley.com/articles/writing-robust-shell-scripts/
 
