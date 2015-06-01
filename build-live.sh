@@ -15,7 +15,6 @@ debootstrap --no-check-gpg --arch=amd64 jessie ${LIVE_SYSTEM_DIR} ${DEB_REPO_URL
 # Add repository components(i.e. contrib, non-free)
 sed -i 's/ main/ main contrib non-free/' ${LIVE_SYSTEM_DIR}/etc/apt/sources.list
 
-
 # Copy all scripts to live system.
 cp -R scripts ${LIVE_SYSTEM_DIR}/root
 
