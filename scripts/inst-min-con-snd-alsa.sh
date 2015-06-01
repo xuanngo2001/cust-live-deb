@@ -19,3 +19,4 @@ echo "${GV_LOG} * Test sound: aplay /usr/share/sounds/alsa/*."
 # speaker-test -Dplug:surround51 -c6 -l1 -twav
 # speaker-test -Dplug:surround71 -c8 -l1 -twav
 # http://ubuntuforums.org/showthread.php?t=795525
+# https://www.mythtv.org/wiki/Using_ALSA's_speaker-test_utility
