@@ -10,8 +10,9 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install required packages for open-terminals.sh
-apt-get -y --force-yes install x11-xserver-utils wmctrl x11-utils
-
+apt-get -y --force-yes install x11-xserver-utils
+apt-get -y --force-yes install wmctrl
+apt-get -y --force-yes install x11-utils
 
 # Make open-terminals.sh run when JWM start. 
 cp ${GV_SETTINGS_DIR}/open-terminals.sh /root/
