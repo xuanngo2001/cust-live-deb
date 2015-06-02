@@ -35,3 +35,4 @@ nohup xfce4-terminal --title="Bottom" --geometry=${COLUMNS}x${LINES_HALF2}+0+${H
 # Reference:
 #   Get terminal columns and lines: http://stackoverflow.com/a/263900
 #   Get screen geometry: http://superuser.com/a/487598
+#   Convert geometry, pixel to columns + font width: http://askubuntu.com/a/32940
