@@ -14,6 +14,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install debtree
 
 # To save bandwidth and faster download. Deb packages will be fetched locally.
+# http://askubuntu.com/questions/53443/how-do-i-ignore-a-proxy-if-not-available
+#https://help.ubuntu.com/community/Apt-Cacher-Server
 #apt-get -y --force-yes install apt-cacher-ng
 
 # sed 's/\//\/\/127.0.0.1:3142/' sources.list
