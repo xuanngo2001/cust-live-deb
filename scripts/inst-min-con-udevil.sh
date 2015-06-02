@@ -13,10 +13,10 @@ apt-get -y --force-yes install udevil
 
 
 # Auto start devmon on startup.
-cat ${GV_SETTINGS_DIR}/bashrc-devmon >> /root/.bashrc
+sed "/exit 0/ r ${GV_SETTINGS_DIR}/startup-devmon.sh" /etc/init.d/startup.sh
 
 # Log
 echo "${GV_LOG} * Install udevil to auto mount USB devices."
-echo "${GV_LOG} * You have to auto start devmon."
+echo "${GV_LOG} * Set devmon to auto start on startup."
 echo "${GV_LOG} * You need ntfs-3g driver to be able to write on ntfs partition."
 
