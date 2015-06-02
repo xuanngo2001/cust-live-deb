@@ -7,6 +7,11 @@ set -e
 #   -wmctrl
 #   -xfce4-terminal
 
+# Get column width of conky.
+# To make life easier, assume font width = 10pixels. Otherwise, use xprop to find out.
+CONKY_WIDTH_PIXELS=$(wmctrl -lG | grep Conky | tr -s ' ' | cut -d' ' -f5)
+CONKY_WIDTH_CHAR=$((${CONKY_WIDTH_PIXELS}/10))
+
 
 # Maximize the current terminal to get the maximum columns and lines.
 wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
@@ -16,6 +21,9 @@ resize
 # Get the maximum columns and lines availables.
 COLUMNS=$(tput cols)
 LINES=$(tput lines)
+
+# Adjust columns and lines values.
+COLUMNS=$((${COLUMNS}-${CONKY_WIDTH_CHAR}))
 LINES_HALF1=$((${LINES}/2-1))
 LINES_HALF2=$((${LINES_HALF1}-1))
 
