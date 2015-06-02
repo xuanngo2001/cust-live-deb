@@ -6,7 +6,7 @@
 # Required-Stop:     $local_fs
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: foobar
+# Short-Description: Startup scripts
 # Description:       more foo for your bars
 ### END INIT INFO
 
