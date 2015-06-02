@@ -18,7 +18,7 @@ set -e
 # insserv startup.sh
 
 
-### Insert your scripts here ###
+## Insert your scripts here ##
 
 
 exit 0

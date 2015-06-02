@@ -12,8 +12,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install udevil 
 
 
-# Insert devmon startup script before 'exit 0'.
-sed "/exit 0/ r ${GV_SETTINGS_DIR}/startup-devmon.sh" /etc/init.d/startup.sh
+# Insert devmon in startup script.
+sed -i "/## Insert your scripts here ##/ r ${GV_SETTINGS_DIR}/startup-devmon.sh" /etc/init.d/startup.sh
 
 # Log
 echo "${GV_LOG} * Install udevil to auto mount USB devices."
