@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install udevil 
 
 
-# Auto start devmon on startup.
+# Insert devmon startup script before 'exit 0'.
 sed "/exit 0/ r ${GV_SETTINGS_DIR}/startup-devmon.sh" /etc/init.d/startup.sh
 
 # Log
