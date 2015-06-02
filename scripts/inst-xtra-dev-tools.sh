@@ -14,7 +14,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install debtree
 
 # To save bandwidth and faster download. Deb packages will be fetched locally.
-apt-get -y --force-yes install apt-cacher-ng
+#apt-get -y --force-yes install apt-cacher-ng
+
+# sed 's/\//\/\/127.0.0.1:3142/' sources.list
 
 # Log
 echo "${GV_LOG} * Install debtree to view dependencies of packages. Better package selections."
