@@ -1,4 +1,5 @@
-#! /bin/sh
+#! /bin/bash
+set -e
 
 ### BEGIN INIT INFO
 # Provides:          Startup scripts
@@ -16,7 +17,8 @@
 # update-rc.d startup.sh defaults
 # insserv startup.sh
 
-/usr/bin/devmon 2>&1 | tee -a /dev/shm/devmon.log &
+
+### Insert your scripts here ###
 
 
 exit 0
