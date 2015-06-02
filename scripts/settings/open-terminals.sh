@@ -5,11 +5,13 @@ set -e
 # Requirements:
 #   -xrandr, part of x11-xserver-utils package.
 #   -wmctrl
+#   -xfce4-terminal
 
 
 # Maximize the current terminal to get the maximum columns and lines.
 wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
-sleep 2s
+# update $COLUMNS $LINES with new values.
+resize
 
 # Get the maximum columns and lines availables.
 COLUMNS=$(tput cols)
