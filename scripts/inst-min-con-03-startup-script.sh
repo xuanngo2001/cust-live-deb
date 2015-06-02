@@ -13,6 +13,7 @@ cp ${GV_SETTINGS_DIR}/startup.sh /etc/init.d/
 chmod +x /etc/init.d/startup.sh
 cd /etc/init.d/
 insserv startup.sh
+cd -
 
 # Log
 echo "${GV_LOG} * Copy startup.sh to /etc/init.d/."
