@@ -23,5 +23,5 @@ cat ${GV_SETTINGS_DIR}/jwmrc-startup-volumeicon.sh >> /root/jwmrc-startup.sh
 
 # Log
 echo "${GV_LOG} * Install volume controller in system tray."
-echo "${GV_LOG} * To change left-click to display volume slider. Set lmb_slider=true."
+echo "${GV_LOG} * Set left-click to display volume slider: lmb_slider=true."
 echo "${GV_LOG} * Set volumeicon to run on JWN startup."
