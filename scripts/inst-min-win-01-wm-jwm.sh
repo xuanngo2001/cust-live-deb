@@ -14,7 +14,7 @@ apt-get -y --force-yes install jwm
 # Set JWM.
 JWMRC=jwmrc
 yes | cp ${GV_SETTINGS_DIR}/${JWMRC} /root/.${JWMRC}
-yes | cp ${GV_SETTINGS_DIR}/${JWMRC}-cust-menus.xml /root/
+yes | cp ${GV_SETTINGS_DIR}/${JWMRC}-menus.xml /root/
 yes | cp ${GV_SETTINGS_DIR}/${JWMRC}-tray.xml /root/
 yes | cp ${GV_SETTINGS_DIR}/${JWMRC}-startup.sh /root/
 
