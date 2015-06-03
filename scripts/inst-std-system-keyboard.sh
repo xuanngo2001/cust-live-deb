@@ -10,7 +10,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Insert keyboard menu in Administration
-sed -i "/Administration\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-keyboard.xml" /root/jwmrc-menus.xml
+sed -i "/Administration\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-adm-keyboard.xml" /root/jwmrc-menus.xml
 
 
 # Log

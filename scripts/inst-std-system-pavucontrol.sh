@@ -13,7 +13,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install pavucontrol
 
 # Insert pavucontrol menu in Administration
-sed -i "/Administration\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-pavucontrol.xml" /root/jwmrc-menus.xml
+sed -i "/Administration\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-adm-pavucontrol.xml" /root/jwmrc-menus.xml
 
 # Log
 echo "${GV_LOG} * Install PulseAudio Volume Controller: pavucontrol."
