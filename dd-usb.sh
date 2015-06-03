@@ -16,13 +16,14 @@ fi
 # Prevent WRONG USB device.
 # Question if USB device is more than 16 gigabytes.
 ####################################################
-GIGABYTES=1
-MAX_BYTES_THRESHOLD=$((1073741824*${GIGABYTES}))
+MAX_GIGABYTES=1
+MAX_BYTES_THRESHOLD=$((1073741824*${MAX_GIGABYTES}))
 USB_DEVICE_SIZE_BYTES=$(blockdev --getsize64 "${USB_DEVICE}")
 if [ "${USB_DEVICE_SIZE_BYTES}" -gt "${MAX_BYTES_THRESHOLD}" ];
 then
-  echo "******************** WARNING ********************"
-  echo "${USB_DEVICE} is more than ${GIGABYTES} Gigabytes."
+  echo "****************************** WARNING ******************************"
+  echo "${USB_DEVICE} is more than ${MAX_GIGABYTES} GB."
+  printf "${USB_DEVICE} has a total of %'d GB.\n" $((${USB_DEVICE_SIZE_BYTES}/1073741824))
   echo -n "Are you sure that ${USB_DEVICE} is the right USB device? [Y/N] "
   read RIGHT_USB
   if [ "${RIGHT_USB}" != "Y" ]; then
