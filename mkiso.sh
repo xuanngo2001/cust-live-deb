@@ -24,7 +24,7 @@ VOLUME_ID="${CD_LABEL}-64_${YYYY_MM_DD}"
 xorriso -as mkisofs -r -J -joliet-long -l -cache-inodes \
 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
 				-A "${CD_LABEL}"  \
-				-V "#{VOLUME_ID}"
+				-V "#{VOLUME_ID}" \
 				-b isolinux/isolinux.bin \
 				-c isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
 				-boot-info-table \
