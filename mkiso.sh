@@ -18,12 +18,11 @@ YYYY_MM_DD=$(date +"%Y-%m-%d")
 HH_MM_SS=$(date +"%0k.%M.%S")
 DATE_STRING="${YYYY_MM_DD}_${HH_MM_SS}"
 APP_ID=cust-live-deb-64
-VOLUME_ID="${APP_ID}_${YYYY_MM_DD}"
 ISO_FILENAME="${APP_ID}_${DATE_STRING}.iso"
 xorriso -as mkisofs -r -J -joliet-long -l -cache-inodes \
 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
 				-A "${APP_ID}"  \
-				-V "${VOLUME_ID}" \
+				-V "${APP_ID}" \
 				-b isolinux/isolinux.bin \
 				-c isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
 				-boot-info-table \
