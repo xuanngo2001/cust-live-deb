@@ -119,7 +119,7 @@ echo ">>>>>>>>>> Create a logical partition of ${LOGICAL_PARTITION_SIZE_MB}MB in
 # Refresh partition table.
 reread_partition_table ${USB_DEVICE}
 
-# Create persistent file in the USB
+# Create persistent image file in the USB.
 ####################################
 # Get logical partition name
 NEW_LOGICAL_PARTITION=$(fdisk -l "${USB_DEVICE}" | grep "^/dev/" | grep " 83 " | cut -d' ' -f1)
