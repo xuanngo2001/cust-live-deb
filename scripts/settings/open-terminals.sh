@@ -9,7 +9,7 @@ set -e
 
 # Get column width of conky.
 # To make life easier, assume font width = 10pixels. Otherwise, use xprop to find out.
-CONKY_WIDTH_PIXELS=$(wmctrl -lG | grep Conky | tr -s ' ' | cut -d' ' -f5)
+CONKY_WIDTH_PIXELS=$(wmctrl -lG | grep -i Conky | tr -s ' ' | cut -d' ' -f5)
 CONKY_WIDTH_CHAR=$((${CONKY_WIDTH_PIXELS}/10))
 
 
