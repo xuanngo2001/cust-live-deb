@@ -14,7 +14,9 @@ apt-get -y --force-yes install mpv
 cat ${GV_SETTINGS_DIR}/bashrc-alias-mpv >> /root/.bashrc
 
 # Add useful mpv keybindings settings.
-cat ${GV_SETTINGS_DIR}/mpv-input.conf >> /root/.config/mpv/input.conf
+MPV_CONFIG_DIR=/root/.config/mpv/
+mkdir -p ${MPV_CONFIG_DIR} 
+cat ${GV_SETTINGS_DIR}/mpv-input.conf >> ${MPV_CONFIG_DIR}/input.conf
 
 # Log
 echo "${GV_LOG} * Install Media Player: MPV."
