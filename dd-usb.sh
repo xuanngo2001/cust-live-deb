@@ -68,7 +68,7 @@ then
   fi
 fi
 
-# Countdown
+# Countdown before deleting.
 ####################################
 echo ">>>>>>>>>> Delete all partitions of ${USB_DEVICE} [ ${ID_SERIAL} ] in"
 MAX=10
