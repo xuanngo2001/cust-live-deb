@@ -15,10 +15,11 @@ function unmount_all
   done
 }
 
-# NOTE: Be careful changing this function. Do it only if you can reliably and repeatedly force the kernel to reread the new partition table and without error.
+# NOTE: Be careful changing this function. Do it only if you can reliably and repeatedly 
+#         force the kernel to reread the new partition table and without error.
 #       Current combination is the most reliable but it ignores error from partx.
-#       Multiple changes in partition table will cause the kernel to NOT update the partition table.
-#       Solutions tried to re-read partition table but are not reliable:
+# Issue: Multiple changes in partition table will cause the kernel to NOT update the partition table.
+# Solutions tried to re-read partition table but are not reliable:
 #         -partprobe /dev/sdX
 #         -hdparm -z /dev/sdX
 #         -blockdev -rereadpt /dev/sdX
