@@ -7,6 +7,9 @@ set -e
 #   -wmctrl
 #   -xfce4-terminal
 
+# Before doing anything, wait for Conky process to start.
+timeout 5s /bin/bash -c "while ! pgrep conky; do sleep 1s; done"
+
 # Get column width of conky.
 # To make life easier, assume font width = 10pixels. Otherwise, use xprop to find out.
 CONKY_WIDTH_PIXELS=$(wmctrl -lG | grep -i Conky | tr -s ' ' | cut -d' ' -f5)
