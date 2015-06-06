@@ -1,4 +1,5 @@
 https://wiki.ubuntu.com/ReducingDiskFootprint#Documentation
+for logs in `find /var/log -type f`; do > $logs; done
 
 https://access.redhat.com/solutions/57542
   partx->util-linux
