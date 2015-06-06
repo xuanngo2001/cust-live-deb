@@ -64,6 +64,8 @@ $membar
 ${font Arial:bold:size=10}${color Tan1}HDD ${color DarkSlateGray}${hr 2}
 $font${color Gray}/home $alignc ${fs_used /home} / ${fs_size /home} $alignr ${fs_free_perc /home}%
 ${fs_bar /home}
+${diskiograph}
+${alignr}${diskio}
 
 ############ TOP PROCESSES ############
 ${font Arial:bold:size=10}${color Tan1}TOP PROCESSES ${color DarkSlateGray}${hr 2}
