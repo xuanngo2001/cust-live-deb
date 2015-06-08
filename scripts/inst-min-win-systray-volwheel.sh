@@ -51,3 +51,14 @@ echo "${GV_LOG} * Set VolWheel to run on JWN startup."
 
 # Reference:
 # How to install VolWheel: https://debmintux.wordpress.com/2012/04/06/howto-install-perl-volwheel-volume-controller/
+
+# REJECTION:
+#  * Running inst-min-win-systray-volumeicon-alsa.sh ...
+#    * After this operation, 41.8 MB of additional disk space will be used.
+#    * Install volume controller in system tray.
+#    * Set left-click to display volume slider: lmb_slider=true.
+#    * Set volumeicon to run on JWN startup.
+#    * Total size = 905296K. Space Used = 28672K.
+#  * Running inst-min-win-systray-volwheel.sh ...
+#    * After this operation, 4,858 kB of additional disk space will be used.
+#    * Total size = 939788K. Space Used = 34492K.
