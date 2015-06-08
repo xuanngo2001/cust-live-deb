@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Global variables:
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
@@ -8,21 +9,23 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Install conky.
 apt-get -y --force-yes install conky
 
-# Set conky.
+# Add conky config file.
 CONKYRC=conkyrc
-cp ${GV_SETTINGS_DIR}/${CONKYRC} /root/.${CONKYRC}
+yes | cp ${GV_SETTINGS_DIR}/${CONKYRC} /root/.${CONKYRC}
 
 # Set conky to run on JWM startup.
 cat ${GV_SETTINGS_DIR}/jwmrc-startup-conky.sh >> /root/jwmrc-startup.sh
 
-# Add on the fly settings to Conky. 
+# Add on the fly settings to Conky.
+yes | cp ${GV_SETTINGS_DIR}/startup-conky.sh /root/
 sed -i "/## Insert your scripts here ##/a /root/startup-conky.sh&" /etc/init.d/startup.sh
 
 # Log
 echo "${GV_LOG} * Install System Monitor: conky."
-echo "${GV_LOG} * Set ${CONKYRC}."
+echo "${GV_LOG} * Add conky config file: ${CONKYRC}."
 echo "${GV_LOG} * Set conky to run on JWM startup."
 echo "${GV_LOG} * Add on the fly settings to Conky."
 
