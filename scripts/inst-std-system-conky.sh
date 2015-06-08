@@ -17,10 +17,14 @@ cp ${GV_SETTINGS_DIR}/${CONKYRC} /root/.${CONKYRC}
 # Set conky to run on JWM startup.
 cat ${GV_SETTINGS_DIR}/jwmrc-startup-conky.sh >> /root/jwmrc-startup.sh
 
+# Add on the fly settings to Conky. 
+sed -i "/## Insert your scripts here ##/a /root/startup-conky.sh" /etc/init.d/startup.sh
+
 # Log
 echo "${GV_LOG} * Install System Monitor: conky."
 echo "${GV_LOG} * Set ${CONKYRC}."
 echo "${GV_LOG} * Set conky to run on JWM startup."
+echo "${GV_LOG} * Add on the fly settings to Conky."
 
 # Reference
 # http://www.techdrivein.com/2010/12/13-breathtaking-conky-configurations.html
