@@ -53,6 +53,8 @@ echo "${GV_LOG} * Set VolWheel to run on JWN startup."
 # How to install VolWheel: https://debmintux.wordpress.com/2012/04/06/howto-install-perl-volwheel-volume-controller/
 
 # REJECTION:
+# + Can't locate Alsa.pm
+#
 #  * Running inst-min-win-systray-volumeicon-alsa.sh ...
 #    * After this operation, 41.8 MB of additional disk space will be used.
 #    * Install volume controller in system tray.
