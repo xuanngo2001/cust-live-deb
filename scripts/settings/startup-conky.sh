@@ -7,7 +7,7 @@ CPU_NUM=$(grep -c ^processor /proc/cpuinfo)
 # Get out if less than 2 processors.
 if [ "${CPU_NUM}" -lt 2 ]; then
   exit 0
-if
+fi
 
 
 CONKY_CPU=/root/conky-cpus.txt
