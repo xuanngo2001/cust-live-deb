@@ -18,7 +18,7 @@ cp ${GV_SETTINGS_DIR}/${CONKYRC} /root/.${CONKYRC}
 cat ${GV_SETTINGS_DIR}/jwmrc-startup-conky.sh >> /root/jwmrc-startup.sh
 
 # Add on the fly settings to Conky. 
-sed -i "/## Insert your scripts here ##/a /root/startup-conky.sh" /etc/init.d/startup.sh
+sed -i "/## Insert your scripts here ##/a /root/startup-conky.sh&" /etc/init.d/startup.sh
 
 # Log
 echo "${GV_LOG} * Install System Monitor: conky."
