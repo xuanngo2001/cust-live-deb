@@ -28,3 +28,5 @@ sed  -i "/${CPU_START}/ r ${CONKY_CPU}" /root/.conkyrc
 
 # Clean up.
 rm -f ${CONKY_CPU}
+
+exit 0
