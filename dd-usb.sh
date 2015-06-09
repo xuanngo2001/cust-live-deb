@@ -68,16 +68,6 @@ then
   fi
 fi
 
-# Countdown before deleting.
-####################################
-echo ">>>>>>>>>> Delete all partitions of ${USB_DEVICE} [ ${ID_SERIAL} ] in"
-MAX=10
-for ((i=MAX; i > 0; i--))
-do
-  echo $i
-  sleep 1s
-done
-
 # Unmount all partitions on USB device.
 ####################################
 echo ">>>>>>>>>> Unmount all partitions of ${USB_DEVICE}."
