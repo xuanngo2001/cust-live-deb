@@ -5,9 +5,9 @@ alias dir='ls -A --color=auto --format=vertical'
 alias vdir='ls -A --color=auto --format=long'
 alias ll='ls -lA'                               # long list
 alias la='ls -A'                                # all but . and ..
-alias l='ls -CFA'                               #
+alias l='ls -CFA'                               # by column, suffix file-type indicator: */=>@| 
 alias ldir='ls -d */'                           # List only directories
-alias lss='ls -sh'                              # List with size.
+alias lss='ls -shCFA'                           # List with human readable size.
 
 # DF: Default to human readable figures
 alias df='df -h'
