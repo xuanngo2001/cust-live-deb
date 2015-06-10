@@ -5,6 +5,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 
 # Ensure *.sh are executable.
 chmod +x *.sh
+chmod +x ./repository/*.sh
 
 # Load global variables and functions.
 . ./load-global-vars-funcs.sh
