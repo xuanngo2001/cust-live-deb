@@ -22,7 +22,7 @@ SYSTEM=$(echo $1 | tr '[[:upper:]]' '[[:lower:]]')
 SCRIPT_LIST_ALL=scripts-ls.all
 SCRIPT_LIST=scripts-ls.lst
 # Put all scripts in script list file. Then filter later on.
-find ./ -type f -name "inst-*.sh" | sort > ${SCRIPT_LIST_ALL}
+find ./repository -type f -name "inst-*.sh" | sort > ${SCRIPT_LIST_ALL}
 # Remove not-used scripts
 sed -i '/not-used/d' ${SCRIPT_LIST_ALL}
 # Clear scripts-ls.lst
@@ -90,5 +90,4 @@ grep 'inst-zclean-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
 sort -u ${SCRIPT_LIST} -o ${SCRIPT_LIST}
 
 
-    
-echo "List of scripts generated in ${SCRIPT_LIST} for ${SYSTEM}."
+echo "Scripts name added in ${SCRIPT_LIST} for ${SYSTEM} system."
