@@ -12,13 +12,20 @@ mksquashfs chroot binary/live/filesystem.squashfs -comp xz -e boot
 INSTALL_LOG=chroot/root/scripts/install.log
 yes | cp ${INSTALL_LOG} binary/
 
+
+# Add system in the output file.
+SYSTEM=$1
+if [ ! -z "${SYSTEM}" ]; then
+  SYSTEM="-${SYSTEM}"
+fi
+
 # Create ISOHYBRID.
 # Note: boot.cat is automatically created
 YYYY_MM_DD=$(date +"%Y-%m-%d")
 HH_MM_SS=$(date +"%0k.%M.%S")
 DATE_STRING="${YYYY_MM_DD}_${HH_MM_SS}"
 APP_ID=cust-live-deb-64
-ISO_FILENAME="${APP_ID}_${DATE_STRING}.iso"
+ISO_FILENAME="${APP_ID}${SYSTEM}_${DATE_STRING}.iso"
 xorriso -as mkisofs -r -J -joliet-long -l -cache-inodes \
 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
 				-A "${APP_ID}"  \
