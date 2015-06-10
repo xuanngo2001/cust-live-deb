@@ -58,8 +58,8 @@ if [ "${USB_DEVICE_SIZE_BYTES}" -gt "${MAX_BYTES_THRESHOLD}" ];
 then
   echo "******************** WARNING ********************"
   echo "You are about to delete all partitions of ${USB_DEVICE} [ ${ID_SERIAL} ]"
-  echo "${USB_DEVICE} is more than ${GIGABYTES} GB."
   printf "${USB_DEVICE} has a total of %'d GB.\n" $((${USB_DEVICE_SIZE_BYTES}/1073741824))
+  lsblk ${USB_DEVICE}
   echo -n "Are you sure that ${USB_DEVICE} is the right USB device? [Y/N] "
   read RIGHT_USB
   if [ "${RIGHT_USB}" != "Y" ]; then
