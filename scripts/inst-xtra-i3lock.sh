@@ -18,3 +18,4 @@ sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-lockscreen-i3lock.xml
 # Log
 echo "${GV_LOG} * Install screen locker: i3lock."
 echo "${GV_LOG} * Insert lockscreen key binding."
+echo "${GV_LOG} * ERROR: Doesn't work yet."
