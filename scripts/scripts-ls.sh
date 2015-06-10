@@ -14,6 +14,9 @@ if [ -z "${SYSTEM}" ]; then
   exit 0
 fi
 
+# Convert input to lowercase
+SYSTEM=$(echo $1 | tr '[[:upper:]]' '[[:lower:]]')
+
 # Generate script-ls.lst
 ########################
 SCRIPT_LIST_ALL=scripts-ls.all
