@@ -13,13 +13,14 @@ INSTALL_LOG=chroot/root/scripts/install.log
 yes | cp ${INSTALL_LOG} binary/
 
 
-# Add system in the output file.
+# If system is not empty, do the followings.
 SYSTEM=$1
 if [ ! -z "${SYSTEM}" ]; then
-  SYSTEM="-${SYSTEM}"
-  
   # Prefix install.size with system name.
   sed -i 's/^/min: /' ./chroot/root/scripts/install.size
+  
+  # Add system in the output file.
+  SYSTEM="-${SYSTEM}"
 fi
 
 # Create ISOHYBRID.
