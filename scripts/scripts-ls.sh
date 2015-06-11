@@ -2,6 +2,7 @@
 set -e
 
 # Description: Generate a list of scripts to be executed.
+# TODO: Is home & work switch for public release?
 
 SYSTEM=$1
 
@@ -10,7 +11,8 @@ SYSTEM=$1
 if [ -z "${SYSTEM}" ]; then
   echo "ERROR: SYSTEM argument missing. e.g.:"
   echo "   $0  min"
-  echo "   $0  home"
+  echo "   $0  std"
+  echo "   $0  all"
   exit 0
 fi
 
@@ -21,10 +23,13 @@ SYSTEM=$(echo $1 | tr '[[:upper:]]' '[[:lower:]]')
 ########################
 SCRIPT_LIST_ALL=scripts-ls.all
 SCRIPT_LIST=scripts-ls.lst
-# Put all scripts in script list file. Then filter later on.
+
+# Put all scripts in ${SCRIPT_LIST_ALL}. Then filter later on as needed.
 find ./repository -type f -name "inst-*.sh" | sort > ${SCRIPT_LIST_ALL}
+
 # Remove not-used scripts
 sed -i '/not-used/d' ${SCRIPT_LIST_ALL}
+
 # Clear scripts-ls.lst
 cat /dev/null > ${SCRIPT_LIST}
 
@@ -49,7 +54,7 @@ case "${SYSTEM}" in
     # Add inst-std-
     grep 'inst-std-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
     
-    # No proxy
+    # No proxy settings
     sed -i '/proxy/d' ${SCRIPT_LIST}
     ;;
     
@@ -65,17 +70,22 @@ case "${SYSTEM}" in
     grep 'inst-min-xtra-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
     grep 'inst-xtra-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
 
-    # No proxy
+    # No proxy settings
     sed -i '/proxy/d' ${SCRIPT_LIST}
     # No virtualbox
     sed -i '/virtualbox/d' ${SCRIPT_LIST}
     ;;
 				
-  # All  
+  # Most of applications + proxy settings.  
 	work)
     grep -E 'inst-[min|std|xtra]' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
 	  ;;
-	  
+
+  # All scripts in the repository.  
+  all)
+    grep -v 'inst-zclean-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
+    ;;
+	  	  
 	*)
 	  echo "ERROR: Unknown SYSTEM=>${SYSTEM}"
 	  exit 1
