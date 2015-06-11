@@ -17,6 +17,9 @@ yes | cp ${INSTALL_LOG} binary/
 SYSTEM=$1
 if [ ! -z "${SYSTEM}" ]; then
   SYSTEM="-${SYSTEM}"
+  
+  # Prefix install.size with system name.
+  sed -i 's/^/min: /' ./chroot/root/scripts/install.size
 fi
 
 # Create ISOHYBRID.
