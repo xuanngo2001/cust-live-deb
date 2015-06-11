@@ -29,7 +29,7 @@ GF_SIZE_OF()
 {
   if [ -f $1 ] || [ -d $1 ]
   then
-    echo $(du -s --exclude=/proc $1 | head -n 1 | cut -f1)
+    echo $(du -sk --exclude=/proc $1 | head -n 1 | cut -f1)
   else
     echo "ERROR: $1 not found."
   fi
