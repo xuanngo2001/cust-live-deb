@@ -6,7 +6,7 @@ set -e
 
 # Create squashfs
 rm -f binary/live/filesystem.squashfs
-mksquashfs chroot binary/live/filesystem.squashfs -comp xz
+mksquashfs chroot binary/live/filesystem.squashfs -comp xz -e boot
 
 # Copy install.log in ISOHYBRID
 INSTALL_LOG=chroot/root/scripts/install.log
