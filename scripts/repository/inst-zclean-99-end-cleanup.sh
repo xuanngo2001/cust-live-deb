@@ -6,9 +6,6 @@ set -e
 # ${GV_SETTINGS_DIR}: Hold settings data.
 # ${GV_BINARY_DIR}: Hold settings binary data.
 
-# Back to the root path.
-cd /
-
 # Clean APT.
 apt-get -y --force-yes autoremove
 apt-get clean
@@ -19,8 +16,7 @@ rm -f /var/lib/dbus/machine-id
 rm -rf /tmp/*
 
 # Unmount
-umount /sys /dev/pts
-umount -lf /proc
+umount -lf /sys /dev/pts /proc || true
 
 ## Modify sources.list
 # Reinstate default debian repository
