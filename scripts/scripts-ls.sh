@@ -81,7 +81,7 @@ case "${SYSTEM}" in
     grep -E 'inst-[min|std|xtra]' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
 	  ;;
 
-  # All scripts in the repository.  
+  # All install scripts in the repository.  
   all)
     grep -v 'inst-zclean-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
     ;;
