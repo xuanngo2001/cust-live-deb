@@ -1,7 +1,10 @@
 #!/bin/bash
+set -e
 
-SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
-echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
+# Global variables:
+# ${GV_LOG}: Prefix this variable in echo to log echoed string.
+# ${GV_SETTINGS_DIR}: Hold settings data.
+# ${GV_BINARY_DIR}: Hold settings binary data.
 
 # Back to the root path.
 cd /
@@ -21,20 +24,16 @@ umount -lf /proc
 
 ## Modify sources.list
 # Reinstate default debian repository
-# Delete local repository.
-DEB_REPO_URL=http://http.debian.net/debian/
 SOURCES_LIST=/etc/apt/sources.list
-echo "" >> ${SOURCES_LIST}
-echo "deb ${DEB_REPO_URL} jessie main contrib non-free" >> ${SOURCES_LIST}
-echo "deb http://security.debian.org/ jessie/updates main contrib non-free" >> ${SOURCES_LIST}
-echo "" >> ${SOURCES_LIST}
+cat ${GV_SETTINGS_DIR}/sources.list >> ${SOURCES_LIST}
 
+# Delete local repository.
 sed -i '/localhost/d' ${SOURCES_LIST}
-
 
 # Log
 echo "${GV_LOG} * Clean apt-get cache."
 echo "${GV_LOG} * rm -rf /tmp/*."
 echo "${GV_LOG} * Umount /sys, /dev/pts and /proc."
-echo "${GV_LOG} * Add ${DEB_REPO_URL} in sources.list."
+echo "${GV_LOG} * Add Debian main repositories in sources.list."
+echo "${GV_LOG} * Delete local Debian repository from sources.list."
 
