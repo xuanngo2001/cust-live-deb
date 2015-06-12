@@ -11,10 +11,12 @@ echo "${GV_LOG} * Zero size all documents in /usr/share/."
 # Credit: written from Jbv for FoxyRoxyLinux
 #         http://murga-linux.com/puppy/viewtopic.php?p=845275#845275
 zerosize() { 
-  find $* | while read file; do 
-    echo -n "." 
-    rm -f $file 
-    touch $file 
+  find $* | while read file; do
+    if [ -e $file ]; then
+	    echo -n "."
+	    rm -f $file 
+	    touch $file
+    fi
   done 
 } 
 
