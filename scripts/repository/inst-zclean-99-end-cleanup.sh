@@ -13,7 +13,7 @@ cd /
 apt-get -y --force-yes autoremove
 apt-get clean
 
-rm /var/lib/dbus/machine-id
+rm -f /var/lib/dbus/machine-id
 
 # Delete tmp/.
 rm -rf /tmp/*
