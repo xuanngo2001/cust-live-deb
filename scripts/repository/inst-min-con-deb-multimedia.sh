@@ -18,7 +18,7 @@ rm -f ${DEB_MULTIMEDIA_KEYRING}
 # Add deb-multimedia sources list
 # Ensure that these sources list have priority over the official repositories.
 #   Put them below local repository but above official repository.
-DEB_MULTIMEDIA_SRC_LIST=${GV_SETTINGS_DIR}/deb-multimedia-sources.list
+DEB_MULTIMEDIA_SRC_LIST=${GV_SETTINGS_DIR}/sources-deb-multimedia.list
 cat ${DEB_MULTIMEDIA_SRC_LIST} >> ${GV_SOURCES_LIST}
 
 # Update packages.
