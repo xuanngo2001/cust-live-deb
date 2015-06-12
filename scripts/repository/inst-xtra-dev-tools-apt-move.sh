@@ -16,6 +16,10 @@ apt-get -y --force-yes install apt-move
 #yes | cp ${GV_SETTINGS_DIR}/apt-move-patch/move4 /usr/share/apt-move/move4
 #yes | cp ${GV_SETTINGS_DIR}/apt-move-patch/apt-move /usr/bin/apt-move
 
+patch -p1 /usr/bin/apt-move ${GV_SETTINGS_DIR}/apt-move-sha256issue-20130821.diff
+patch -p1 /usr/share/apt-move/move4 ${GV_SETTINGS_DIR}/apt-move-sha256issue-20130821.diff
+
+
 # Install apache 2 to turn apt-move into a webserver.
 apt-get -y --force-yes install apache2
 
