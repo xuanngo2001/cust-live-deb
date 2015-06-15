@@ -14,6 +14,10 @@ if [ ! -z "${SYSTEM}" ]; then
   SYSTEM="-${SYSTEM}"
 fi
 
+# Copy vmlinuz & initrd in binary/live
+yes | cp ./chroot/boot/vmlinuz-* binary/live/vmlinuz
+
+
 # Create squashfs
 rm -f binary/live/filesystem.squashfs
 mkdir -p binary/live/
