@@ -42,7 +42,7 @@ xorriso -as mkisofs -r -J -joliet-long -l -cache-inodes \
 				binary
 
 # Keep install.log in install-log/
-NEW_INSTALL_LOG_NAME="$(basename ${INSTALL_LOG})_${SYSTEM}_${DATE_STRING}"
+NEW_INSTALL_LOG_NAME="$(basename ${INSTALL_LOG})${SYSTEM}_${DATE_STRING}"
 yes | cp ${INSTALL_LOG} install-log/${NEW_INSTALL_LOG_NAME}
 
 # Update README.md
