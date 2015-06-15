@@ -4,15 +4,6 @@ set -e
 # Description: Create an iso-hybrid.
 # Requirements:
 
-# Create squashfs
-rm -f binary/live/filesystem.squashfs
-mksquashfs chroot binary/live/filesystem.squashfs -comp xz -e boot
-
-# Copy install.log in ISOHYBRID
-INSTALL_LOG=chroot/root/scripts/install.log
-yes | cp ${INSTALL_LOG} binary/
-
-
 # If system is not empty, do the followings.
 SYSTEM=$1
 if [ ! -z "${SYSTEM}" ]; then
@@ -22,6 +13,15 @@ if [ ! -z "${SYSTEM}" ]; then
   # Add system in the output file.
   SYSTEM="-${SYSTEM}"
 fi
+
+# Create squashfs
+rm -f binary/live/filesystem.squashfs
+mksquashfs chroot binary/live/filesystem.squashfs -comp xz -e boot
+
+# Copy install.log in ISOHYBRID
+INSTALL_LOG=chroot/root/scripts/install.log
+yes | cp ${INSTALL_LOG} binary/
+
 
 # Create ISOHYBRID.
 # Note: boot.cat is automatically created
@@ -39,6 +39,10 @@ xorriso -as mkisofs -r -J -joliet-long -l -cache-inodes \
 				-boot-info-table \
 				-o ${ISO_FILENAME} \
 				binary
+
+# Keep install.log in install-log/
+NEW_INSTALL_LOG_NAME="$(basename ${INSTALL_LOG})_${SYSTEM}_${DATE_STRING}"
+yes | cp ${INSTALL_LOG} install-log/${NEW_INSTALL_LOG_NAME}
 
 # Update README.md
 ./update-readme.sh
