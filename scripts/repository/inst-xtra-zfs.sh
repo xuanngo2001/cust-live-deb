@@ -8,7 +8,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 ZFS_REPO_KEY_DEB=${GV_BINARY_DIR}/zfsonlinux_6_all.deb
 ZFS_REPO_KEY_DEB_SIZE=$(GF_SIZE_OF ${ZFS_REPO_KEY_DEB})
-apt-get -y --force-yes install lsb-release
+
+# Install required packages.
+apt-get -y --force-yes install lsb-release linux-headers-$(uname -r)
+
 dpkg -i ${ZFS_REPO_KEY_DEB}
 apt-get update
 apt-get -y --force-yes install debian-zfs
