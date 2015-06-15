@@ -19,9 +19,11 @@ yes | cp ./chroot/boot/vmlinuz-* ./binary/live/vmlinuz
 # Check if vmlinuz & initrd exist in binary/live/.
 if [ ! -e ./binary/live/initrd ]; then
   echo "Error: ./binary/live/initrd is missing. ISO will not boot."
+  exit 1;
 fi
 if [ ! -e ./binary/live/vmlinuz ]; then
   echo "Error: ./binary/live/vmlinuz is missing. ISO will not boot."
+  exit 1;
 fi
 
 
