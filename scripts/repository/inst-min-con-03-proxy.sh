@@ -9,6 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 PROXY=your_proxy:8080
 
+
 ## Add proxy setting to /etc/enviroment.
 cat > /etc/environment <<EOF
 http_proxy="http://${PROXY}"
@@ -17,6 +18,8 @@ ftp_proxy="http://${PROXY}"
 HTTP_PROXY="http://${PROXY}"
 HTTPS_PROXY="http://${PROXY}"
 FTP_PROXY="http://${PROXY}"
+no_proxy="localhost,127.0.0.1"
+NO_PROXY="localhost,127.0.0.1"
 EOF
 
 ## Add proxy setting to /etc/apt/apt.conf.d/proxy.
