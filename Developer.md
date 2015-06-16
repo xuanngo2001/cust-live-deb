@@ -37,10 +37,9 @@ Otherwise, there will be lock issues with Eclipse.
 *  http://wiki.bash-hackers.org/scripting/debuggingtips
 
 ```
-# -e  Exit immediately if a command exits with a non-zero status
-set -e
 # -x  Print commands and their arguments as they are executed
 set -x
+export PS4='+(${BASH_SOURCE}:${LINENO}): ${FUNCNAME[0]:+${FUNCNAME[0]}(): }'
 ```
 
 # Run script individually from scripts/
