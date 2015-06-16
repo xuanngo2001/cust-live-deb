@@ -11,6 +11,8 @@ Otherwise, there will be lock issues with Eclipse.
     * OK
 1. Apply
 
+## Plug-ins
+
 # Packages
 * To use debconf-set-selections, `apt-get -y --force-yes install debconf-utils`
 * debtree 
