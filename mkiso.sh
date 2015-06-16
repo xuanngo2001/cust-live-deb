@@ -8,7 +8,7 @@ set -e
 SYSTEM=$1
 if [ ! -z "${SYSTEM}" ]; then
   # Prefix install.size with system name.
-  sed -i "s/^/${SYSTEM}: /" ./chroot/root/scripts/install.size
+  sed -i "s/^[^${SYSTEM}:]/${SYSTEM}: /" ./chroot/root/scripts/install.size
   
   # Add system in the output file.
   SYSTEM="-${SYSTEM}"
