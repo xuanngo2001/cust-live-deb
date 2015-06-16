@@ -1,6 +1,4 @@
 #!/bin/bash
-set -e
-
 # Note: 
 #   * All size values are in kilobytes.
 #   * Avoid using other applications than GNU coreutils applications: http://en.wikipedia.org/wiki/GNU_Core_Utilities.
