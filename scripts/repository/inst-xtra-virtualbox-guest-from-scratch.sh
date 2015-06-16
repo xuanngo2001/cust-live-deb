@@ -9,7 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install required packages to compile VirtualBox guest additions.
-PKGS_LIST="dkms build-essential linux-headers-$(uname -r)"
+PKGS_LIST="dkms libc6-dev linux-headers-$(uname -r)"
 apt-get -y --force-yes install ${PKGS_LIST}
 
 
@@ -51,5 +51,5 @@ echo "${GV_LOG} * Delete ${VBOXGUEST_ADD_ISO}[${VBOXGUEST_ADD_ISO_SIZE}K]. Space
 
 # Reference:
 # Tried packages from big to small:
-#	apt-get -y --force-yes install lsb-release build-essential
-#	apt-get -y --force-yes install lsb-release libc6-dev
+#	apt-get -y --force-yes install dkms build-essential linux-headers-$(uname -r)
+#	apt-get -y --force-yes install dkms libc6-dev linux-headers-$(uname -r)
