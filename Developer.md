@@ -34,6 +34,7 @@ Otherwise, there will be lock issues with Eclipse.
 
 # Bash
 *  http://www.davidpashley.com/articles/writing-robust-shell-scripts/
+*  http://wiki.bash-hackers.org/scripting/debuggingtips
 
 ```
 # -e  Exit immediately if a command exits with a non-zero status
