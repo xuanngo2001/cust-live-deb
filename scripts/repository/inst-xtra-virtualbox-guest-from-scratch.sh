@@ -48,3 +48,8 @@ echo "${GV_LOG} * Install ${PKGS_LIST// /, } to compile VirtualBox guest additio
 echo "${GV_LOG} * VirtualBox guest additions installed: ${VBOXGUEST_ADD_VERSION}."
 echo "${GV_LOG} * Delete ${VBOXGUEST_ADD_ISO}[${VBOXGUEST_ADD_ISO_SIZE}K]. Space used could be negative due to this deletion."
 
+
+# Reference:
+# Tried packages from big to small:
+#	apt-get -y --force-yes install lsb-release build-essential
+#	apt-get -y --force-yes install lsb-release libc6-dev
