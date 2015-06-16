@@ -38,10 +38,13 @@ apt-get -y --force-yes autoremove
 
 
 # Log
+VBOXGUEST_ADD_VERSION=$(modinfo vboxguest | grep ^version | tr -s ' ')
+if [ -z "${VBOXGUEST_ADD_VERSION}" ]; then
+	VBOXGUEST_ADD_VERSION="ERROR: VirtualBox guest additions installation failed!"
+fi
 echo "${GV_LOG} * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc."
 echo "${GV_LOG} * Assumed packages installed: bzip2 & Xserver installed."
 echo "${GV_LOG} * Install ${PKGS_LIST// /, } to compile VirtualBox guest additions."
-VBOX_GUEST_ADD_VER=$(lsmod | grep -io vboxguest | xargs modinfo | grep -iw version)
-echo "${GV_LOG} * VirtualBox guest additions ${VBOX_GUEST_ADD_VER} installed."
+echo "${GV_LOG} * VirtualBox guest additions installed: ${VBOXGUEST_ADD_VERSION}."
 echo "${GV_LOG} * Delete ${VBOX_GUEST_ADD_ISO}[${VBOX_GUEST_ADD_ISO_SIZE}K]. Space used could be negative due to this deletion."
 
