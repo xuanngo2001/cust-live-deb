@@ -7,7 +7,7 @@ WORKING_DIR=$(realpath $1)
 # Error Handling
 ##################################################################
 if [ -z ${WORKING_DIR} ] || [ ! -e ${WORKING_DIR} ]; then
-  echo "ERROR: Please provide working directory path."
+  echo "ERROR: Please provide a working directory path."
   echo " e.g.: $0 /tmp/"
   exit 1
 fi
