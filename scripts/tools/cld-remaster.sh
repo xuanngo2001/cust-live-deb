@@ -9,7 +9,7 @@ WORKING_DIR=$(realpath $1)
 
 # Error Handling
 ##################################################################
-if [ ! -e ${WORKING_DIR} ]; then
+if [ -z ${WORKING_DIR} ] || [ ! -e ${WORKING_DIR} ]; then
   echo "ERROR: Please provide working directory path."
   echo " e.g.: $0 /tmp/"
   exit 1
@@ -31,7 +31,7 @@ WORKING_FREE_SPACE=$(df -k ${WORKING_DIR} | tail -n1 | tr -s ' ' | cut -d ' ' -f
 # Stop if not enough space.
 if [ "${LIVE_SYS_SIZE}" -gt "${WORKING_FREE_SPACE}" ]; then
   echo "ERROR: Not enough free space."
-  printf "%25s = %'10dK\n" "Live System Size"             "${LIVE_SYS_SIZE}"
+  printf "%25s = %'10dK\n" "Live system size"             "${LIVE_SYS_SIZE}"
   printf "%25s = %'10dK\n" "Free space at $(basename $(realpath ${WORKING_DIR}))/" "${WORKING_FREE_SPACE}"
   exit 1
 fi
