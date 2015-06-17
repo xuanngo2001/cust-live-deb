@@ -45,7 +45,7 @@ HH_MM_SS=$(date +"%0k.%M.%S")
 DATE_STRING="${YYYY_MM_DD}_${HH_MM_SS}"
 APP_ID=cust-live-deb-64
 ISO_FILENAME="${APP_ID}${SYSTEM}_${DATE_STRING}.iso"
-xorriso -as mkisofs -r -J -joliet-long -l -cache-inodes \
+xorriso -as mkisofs -r -J -joliet-long -l \
 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
 				-A "${APP_ID}"  \
 				-V "${APP_ID}" \
