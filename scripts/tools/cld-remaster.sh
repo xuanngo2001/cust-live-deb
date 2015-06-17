@@ -9,14 +9,14 @@ WORKING_DIR=$(realpath $1)
 
 # Error Handling
 ##################################################################
-if [ -z ${WORKING_DIR} ] || [ ! -e ${WORKING_DIR} ]; then
+if [ -z ${WORKING_DIR} ]; then
   echo "ERROR: Please provide a working directory path."
   echo " e.g.: $0 /tmp/"
   exit 1
 fi
 
-if [ ! -d ${WORKING_DIR} ]; then
-  echo "ERROR: ${WORKING_DIR} is not a directory."
+if [ ! -d ${WORKING_DIR} ] || [ ! -e ${WORKING_DIR} ]; then
+  echo "ERROR: ${WORKING_DIR} : No such directory."
   exit 1
 fi
 
