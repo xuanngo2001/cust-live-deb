@@ -13,10 +13,15 @@ DATE_STRING=$(date +"%Y-%m-%d_%0k.%M.%S")
 
 # Error Handling
 ##################################################################
-if [ -z ${WORKING_DIR} ] || [ ! -d ${WORKING_DIR} ]; then
+if [ ! -e ${WORKING_DIR} ]; then
   echo "ERROR: Please provide working directory path."
   echo " e.g.: $0 /tmp/"
-  exit 0
+  exit 1
+fi
+
+if [ ! -d ${WORKING_DIR} ]; then
+  echo "ERROR: ${WORKING_DIR} is not a directory."
+  exit 1
 fi
 
 # Check sizes
