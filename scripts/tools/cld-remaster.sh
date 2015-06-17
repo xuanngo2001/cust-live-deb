@@ -37,7 +37,7 @@ if [ "${LIVE_SYS_SIZE}" -gt "${WORKING_FREE_SPACE}" ]; then
   echo "ERROR: Not enough free space."
   printf "%25s = %'10dK\n" "Live System Size"             "${LIVE_SYS_SIZE}"
   printf "%25s = %'10dK\n" "Free space at $(basename $(realpath ${WORKING_DIR}))/" "${WORKING_FREE_SPACE}"
-  exit 0
+  exit 1
 fi
 
 # Copy live system to working directory.
