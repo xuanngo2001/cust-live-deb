@@ -7,10 +7,6 @@
 WORKING_DIR=$(realpath $1)
 
 
-# Variables.
-DATE_STRING=$(date +"%Y-%m-%d_%0k.%M.%S")
-
-
 # Error Handling
 ##################################################################
 if [ ! -e ${WORKING_DIR} ]; then
@@ -27,7 +23,7 @@ fi
 # Check sizes
 ##################################################################
 # Get total live system size in kilobytes.
-LIVE_SYS_SIZE=$(du -bcsk --exclude=/{dev,live,lib/live/mount,cdrom,mnt,proc,sys,media,run,tmp,initrd*,var/cache/apt,var/lib/apt} / | head -n 1 | cut -f1)
+LIVE_SYS_SIZE=$(du -bcsk --exclude=/{dev,live,lib/live/mount,proc,sys,media,run,tmp,var/cache/apt,var/lib/apt} / | head -n 1 | cut -f1)
 
 # Get free space of WORKING.
 WORKING_FREE_SPACE=$(df -k ${WORKING_DIR} | tail -n1 | tr -s ' ' | cut -d ' ' -f4)
@@ -44,7 +40,21 @@ fi
 ##################################################################
 SQUASHFS_DIR=${WORKING_DIR}/lds-new-squashfs
 echo "Copy live system to ${SQUASHFS_DIR}/ ..."
-rsync -a / "${SQUASHFS_DIR}" --info=progress2 --update --exclude=/{dev,live,lib/live/mount,cdrom,mnt,proc,sys,media,run,tmp,initrd*,var/cache/apt,var/lib/apt} --exclude=${WORKING_DIR} 2> /dev/null
+rsync -a / "${SQUASHFS_DIR}" --info=progress2 --update --exclude=/{dev,live,lib/live/mount,proc,sys,media,run,tmp,var/cache/apt,var/lib/apt} --exclude=${WORKING_DIR} 2> /dev/null
+
+# Create empty directories of excluded directories. Otherwise, it will causes kernel panic.
+mkdir -p "${SQUASHFS_DIR}"/{dev,live,lib/live/mount,proc,run,sys,tmp}
+
+# Clear live system
+## Required:
+### If devices in /etc/fstab don't exit anymore, then it will fail to launch JWM.
+rm -f "${SQUASHFS_DIR}"/etc/fstab
+
+## Optional:
+rm -f "${SQUASHFS_DIR}"/etc/resolv.conf
+rm -f "${SQUASHFS_DIR}"/var/lib/dhcp/dhclient.leases
+rm -f "${SQUASHFS_DIR}"/root/.xsession-errors
+
 
 # Shrink size of live system in the working directory.
 ##################################################################
@@ -79,6 +89,7 @@ zerosize() {
 # Create new squash file
 ##################################################################
 echo "Creating new squashfs..."
+DATE_STRING=$(date +"%Y-%m-%d_%0k.%M.%S")
 SQUASHFS_FILE=${WORKING_DIR}/filesystem.squashfs_${DATE_STRING}
 mksquashfs ${SQUASHFS_DIR} ${SQUASHFS_FILE} -comp xz -e boot
 

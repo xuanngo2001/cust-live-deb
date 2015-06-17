@@ -6,7 +6,7 @@ WORKING_DIR=$(realpath $1)
 
 # Error Handling
 ##################################################################
-if [ ! -e ${WORKING_DIR} ]; then
+if [ -z ${WORKING_DIR} ] || [ ! -e ${WORKING_DIR} ]; then
   echo "ERROR: Please provide working directory path."
   echo " e.g.: $0 /tmp/"
   exit 1
@@ -17,20 +17,39 @@ if [ ! -d ${WORKING_DIR} ]; then
   exit 1
 fi
 
+# Select filesystem.squashfs
 ##################################################################
+options=( $(find ${WORKING_DIR}/filesystem.squashfs_* -maxdepth 1 -print0 | xargs -0) )
+FILESYSTEM_SQUASHFS=""
+prompt="Select filesystem.squashfs:"
+PS3="$prompt "
+select opt in "${options[@]}" "Quit" ; do 
+    if (( REPLY == 1 + ${#options[@]} )) ; then
+        exit
+
+    elif (( REPLY > 0 && REPLY <= ${#options[@]} )) ; then
+        FILESYSTEM_SQUASHFS=$opt
+        break
+
+    else
+        echo "Invalid option. Try another one."
+    fi
+done    
+
 # Create ./iso-binary
+##################################################################
 ISO_BINARY_DIR=${WORKING_DIR}/iso-binary
-mkdir ${ISO_BINARY_DIR}
+mkdir -p ${ISO_BINARY_DIR}
 yes | cp -R /lib/live/mount/medium/isolinux/ ${ISO_BINARY_DIR}
 
 # Copy vmlinuz & initrd to ./iso-binary/live/.
 ISO_LIVE_DIR=${ISO_BINARY_DIR}/live
-mkdir ${ISO_LIVE_DIR}
+mkdir -p ${ISO_LIVE_DIR}
 yes | cp -R /lib/live/mount/medium/live/initrd ${ISO_LIVE_DIR}
 yes | cp -R /lib/live/mount/medium/live/vmlinuz ${ISO_LIVE_DIR}
 
 # Copy squashfs to ./iso-binary/live/.
-yes | cp -R ${WORKING_DIR}/filesystem.squashfs_* ${ISO_LIVE_DIR}/filesystem.squashfs
+yes | cp -R ${FILESYSTEM_SQUASHFS} ${ISO_LIVE_DIR}/filesystem.squashfs
 
 
 # Check if vmlinuz & initrd exist in binary/live/.
