@@ -45,7 +45,9 @@ rsync -a / "${SQUASHFS_DIR}" --info=progress2 --update --exclude=/{dev,live,lib/
 # Create empty directories of excluded directories. Otherwise, it will causes kernel panic.
 mkdir -p "${SQUASHFS_DIR}"/{dev,live,lib/live/mount,proc,run,sys,tmp}
 
-# Clear live system
+# Cleaning live system
+##################################################################
+echo "Cleaning live system ..."
 ## Required:
 ### If devices in /etc/fstab don't exit anymore, then it will fail to launch JWM.
 rm -f "${SQUASHFS_DIR}"/etc/fstab
