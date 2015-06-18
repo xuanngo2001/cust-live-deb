@@ -4,7 +4,18 @@ set -e
 # Description: Create an iso-hybrid.
 # Requirements:
 
+# Stop if there is error in install.log
+##################################################################
+INSTALL_LOG=./chroot/root/scripts/install.log
+if grep "^E:" ${INSTALL_LOG} > /dev/null
+then
+  echo "Process stopped. There is error in ${INSTALL_LOG}."
+  grep "^E:" ${INSTALL_LOG} | sed 's/^/  /'
+  exit 1;
+fi
+
 # If system is not empty, do the followings.
+##################################################################
 SYSTEM=$1
 if [ ! -z "${SYSTEM}" ]; then
   # Prefix install.size with system name.
@@ -15,6 +26,7 @@ if [ ! -z "${SYSTEM}" ]; then
 fi
 
 # Copy vmlinuz & initrd in binary/live/.
+##################################################################
 yes | cp ./chroot/boot/vmlinuz-* ./binary/live/vmlinuz
 yes | cp /lib/live/mount/medium/live/initrd ./binary/live/initrd
 # Check if vmlinuz & initrd exist in binary/live/.
@@ -28,15 +40,16 @@ if [ ! -e ./binary/live/vmlinuz ]; then
 fi
 
 
-# Create squashfs
+# Create squashfs.
+##################################################################
 rm -f binary/live/filesystem.squashfs
 mkdir -p binary/live/
 mksquashfs chroot binary/live/filesystem.squashfs -comp xz -e boot
 
+# Create ISOHYBRID.
+##################################################################
 # Copy install.log in ISOHYBRID
-INSTALL_LOG=chroot/root/scripts/install.log
 yes | cp ${INSTALL_LOG} binary/
-
 
 # Create ISOHYBRID.
 # Note: boot.cat is automatically created
@@ -56,13 +69,17 @@ xorriso -as mkisofs -r -J -joliet-long -l \
 				binary
 
 # Keep install.log in install-log/
+##################################################################
 NEW_INSTALL_LOG_NAME="$(basename ${INSTALL_LOG})${SYSTEM}_${DATE_STRING}"
 yes | cp ${INSTALL_LOG} install-log/${NEW_INSTALL_LOG_NAME}
 
 # Update README.md
+##################################################################
 ./update-readme.sh
 
+
 # Log directories size.
+##################################################################
 SIZE_LOG=sizes.log
 echo "${ISO_FILENAME}" >> ${SIZE_LOG}
 du -h -c binary | sed 's/^/   /' >> ${SIZE_LOG}
