@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # To view dependencies of packages. Better package selections.
-apt-get -y --force-yes install debtree
+apt-get -y --force-yes install debtree graphviz
 
 # To save bandwidth and faster download. Deb packages will be fetched locally.
 # http://askubuntu.com/questions/53443/how-do-i-ignore-a-proxy-if-not-available
@@ -21,4 +21,4 @@ apt-get -y --force-yes install debtree
 # sed 's/\//\/\/127.0.0.1:3142/' sources.list
 
 # Log
-echo "${GV_LOG} * Install debtree to view dependencies of packages. Better package selections."
+echo "${GV_LOG} * Install debtree and graphviz to view dependencies of packages. Better package selections."
