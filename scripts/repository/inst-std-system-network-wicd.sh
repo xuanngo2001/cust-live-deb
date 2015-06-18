@@ -31,9 +31,11 @@ echo "${GV_LOG} * Set wicd to run on JWM startup."
 
 # Note:
 # wicd-client: virtual package provided by wicd-cli, wicd-curses, wicd-gtk, wicd-kde
+# https://wiki.archlinux.org/index.php/Wicd#Getting_started
 # Command Line:
 #   ip link set wlan0 up
 #   iwlist wlan0 scan
+#
 
 
 #  ifup wlan0
