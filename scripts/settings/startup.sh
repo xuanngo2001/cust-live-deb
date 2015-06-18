@@ -17,8 +17,8 @@ set -e
 # update-rc.d startup.sh defaults
 # insserv startup.sh
 
-
-## Insert your scripts here ##
+## Text below is used as placeholder:
+## Insert your script files here ##
 
 
 exit 0
