@@ -33,3 +33,7 @@ echo "${GV_LOG} * Delete ${ZFS_REPO_KEY_DEB}[${ZFS_REPO_KEY_DEB_SIZE}K]."
 # Tried packages from big to small:
 #	apt-get -y --force-yes install lsb-release build-essential
 #	apt-get -y --force-yes install lsb-release libc6-dev
+
+# Failed:
+# apt-get -y --force-yes install lsb-release linux-headers-$(uname -r)
+# apt-get -y --force-yes install lsb-release linux-libc-dev
