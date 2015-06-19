@@ -18,20 +18,18 @@ sed -i 's/ main/ main contrib non-free/' ${LIVE_SYSTEM_DIR}/etc/apt/sources.list
 # Copy all scripts to live system.
 cp -R scripts ${LIVE_SYSTEM_DIR}/root
 
-# Add temporary default coloring of live command prompt.
-echo '' >> ${LIVE_SYSTEM_DIR}/root/.bashrc
-echo 'export PS1="\e[01;31m(live):\W \$ \e[00m"' >> ${LIVE_SYSTEM_DIR}/root/.bashrc
-echo '' >> ${LIVE_SYSTEM_DIR}/root/.bashrc
 
 # What to do next.
-echo "============================================"
-echo "What to do next?"
-echo "Run the following tolog in the live system:"
-echo "    chroot chroot"
-echo "Then, run"
-echo "    cd /root/scripts"
-echo "    chmod +x install.sh"
-echo "    ./install.sh"
-echo "    exit"
-
+cat <<EOF
+============================================
+What to do next?
+Run the following tolog in the live system:
+    chroot chroot
+Then, run
+  cd /root/scripts
+  chmod +x scripts-ls.sh
+  ./scripts-ls.sh ${SYSTEM}
+  chmod +x install.sh
+  ./install.sh
+EOF
 
