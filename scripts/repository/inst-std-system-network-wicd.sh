@@ -25,6 +25,7 @@ cat ${GV_SETTINGS_DIR}/jwmrc-startup-wicd.sh >> /root/jwmrc-startup.sh
 echo "${GV_LOG} * Install Network Manager: wicd."
 echo "${GV_LOG} * For wireless, you have to type in the wireless interface(e.g. wlan0) in the Preferences."
 echo "${GV_LOG} * Set wicd to run on JWM startup."
+echo "${GV_LOG} * Log at /var/log/wicd/wicd.log." 
 
 # TODO:
 #   -How to run wicd in MIN system and in STD system?
@@ -50,3 +51,7 @@ echo "${GV_LOG} * Set wicd to run on JWM startup."
 #  sudo modprobe -r iwl4965 # unload your wifi driver
 #  sleep 5
 #  sudo modprobe iwl4965  # reload wifi driver
+
+# ifconfig -a 
+# iwconfig 
+# cat /etc/init.d/wicd 
