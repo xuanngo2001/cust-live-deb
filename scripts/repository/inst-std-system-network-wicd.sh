@@ -15,8 +15,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install wicd
 
 # Start wicd daemon on startup.
-yes | cp ${GV_SETTINGS_DIR}/startup-wicd.sh /root/
-sed -i "/## Insert your script files here ##/a /root/startup-wicd.sh&" /etc/init.d/startup.sh
+#yes | cp ${GV_SETTINGS_DIR}/startup-wicd.sh /root/
+#sed -i "/## Insert your script files here ##/a /root/startup-wicd.sh&" /etc/init.d/startup.sh
 
 # Set wicd to run on JWM startup.
 cat ${GV_SETTINGS_DIR}/jwmrc-startup-wicd.sh >> /root/jwmrc-startup.sh
