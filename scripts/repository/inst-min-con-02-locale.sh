@@ -68,3 +68,8 @@ echo "${GV_LOG} * Install localepurge to purge non-UTF-8."
 #  LANG = "en_US.UTF-8"
 #    are supported and installed on your system.
 #perl: warning: Falling back to the standard locale ("C").
+
+
+
+#sudo locale-gen en_US.UTF-8
+#sudo update-locale LANG=en_US.UTF-8
