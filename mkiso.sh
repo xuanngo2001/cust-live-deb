@@ -39,6 +39,9 @@ if [ ! -e ./binary/live/vmlinuz ]; then
   exit 1;
 fi
 
+# Delete chroot/root/scripts/.
+##################################################################
+rm -rf ./chroot/root/scripts
 
 # Create squashfs.
 ##################################################################
