@@ -15,6 +15,9 @@ apt-get -y --force-yes install dialog dbus
 dbus-uuidgen > /var/lib/dbus/machine-id
 apt-get -y --force-yes install linux-image-amd64 live-boot
 
+# Create /boot/initrd.img-*
+mkinitramfs -d /etc/initramfs-tools -o /boot/initrd.img-$(uname -r)  -r /
+
 # Set to skip installing recommended packages
 APT_CONF_SKIP_REC_PKG=/etc/apt/apt.conf.d/skip-recommended-packages
 echo 'APT::Install-Recommends "false"; APT::Install-Suggests "false";' >> ${APT_CONF_SKIP_REC_PKG}
