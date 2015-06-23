@@ -39,22 +39,35 @@ if [ ! -e ./binary/live/vmlinuz ]; then
   exit 1;
 fi
 
-# Delete chroot/root/scripts/.
+# Keep install.log in install-log/
 ##################################################################
-rm -rf ./chroot/root/scripts
+NEW_INSTALL_LOG_NAME="$(basename ${INSTALL_LOG})${SYSTEM}_${DATE_STRING}"
+yes | cp ${INSTALL_LOG} install-log/${NEW_INSTALL_LOG_NAME}
+
+# Update README.md
+##################################################################
+./update-readme.sh
+
+
+
+# Copy install.log in ISOHYBRID
+##################################################################
+yes | cp ${INSTALL_LOG} binary/
+
 
 # Create squashfs.
 ##################################################################
+# Delete chroot/root/scripts/.
+rm -rf ./chroot/root/scripts
 rm -f binary/live/filesystem.squashfs
 mkdir -p binary/live/
 mksquashfs chroot binary/live/filesystem.squashfs -comp xz
+# Note: Don't exclude /boot/. initrd.img & vmlinuz are needed for update-initramfs
+
+
 
 # Create ISOHYBRID.
 ##################################################################
-# Copy install.log in ISOHYBRID
-yes | cp ${INSTALL_LOG} binary/
-
-# Create ISOHYBRID.
 # Note: boot.cat is automatically created
 YYYY_MM_DD=$(date +"%Y-%m-%d")
 HH_MM_SS=$(date +"%0k.%M.%S")
@@ -71,14 +84,6 @@ xorriso -as mkisofs -r -J -joliet-long -l \
 				-o ${ISO_FILENAME} \
 				binary
 
-# Keep install.log in install-log/
-##################################################################
-NEW_INSTALL_LOG_NAME="$(basename ${INSTALL_LOG})${SYSTEM}_${DATE_STRING}"
-yes | cp ${INSTALL_LOG} install-log/${NEW_INSTALL_LOG_NAME}
-
-# Update README.md
-##################################################################
-./update-readme.sh
 
 
 # Log directories size.
