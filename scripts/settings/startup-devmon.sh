@@ -3,5 +3,7 @@ set -e
 
 # Start devmon on startup so that devices are automounted.
 #  Note: You need ntfs-3g driver to be able to write on ntfs partition.
-/usr/bin/devmon 2>&1 | tee -a /dev/shm/devmon.log &
+SHM_LOG=/dev/shm/log
+mkdir -p ${SHM_LOG}
+/usr/bin/devmon 2>&1 | tee -a ${SHM_LOG}/devmon.log &
 
