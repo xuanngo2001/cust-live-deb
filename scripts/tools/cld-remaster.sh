@@ -23,7 +23,9 @@ fi
 # Check sizes
 ##################################################################
 # Get total live system size in kilobytes.
-LIVE_SYS_SIZE=$(du -bcsk --exclude=/{dev,live,lib/live/mount,proc,sys,media,run,tmp,var/cache/apt,var/lib/apt,initrd.img,vmlinuz} / | head -n 1 | cut -f1)
+EXCLUDE_DIRS_LIST=(--exclude=/{dev,live,lib/live/mount,proc,sys,media,run,tmp,var/cache/apt,var/lib/apt})
+LIVE_SYS_SIZE=$(du -bcsk ${EXCLUDE_DIRS_LIST[*]} / | head -n 1 | cut -f1)
+
 
 # Get free space of WORKING.
 WORKING_FREE_SPACE=$(df -k ${WORKING_DIR} | tail -n1 | tr -s ' ' | cut -d ' ' -f4)
@@ -40,7 +42,7 @@ fi
 ##################################################################
 SQUASHFS_DIR=${WORKING_DIR}/lds-new-squashfs
 echo "Copy live system to ${SQUASHFS_DIR}/ ..."
-rsync -a / "${SQUASHFS_DIR}" --info=progress2 --update --exclude=/{dev,live,lib/live/mount,proc,sys,media,run,tmp,var/cache/apt,var/lib/apt,initrd.img,vmlinuz} --exclude=${WORKING_DIR} 2> /dev/null
+rsync -a / "${SQUASHFS_DIR}" --info=progress2 --update ${EXCLUDE_DIRS_LIST[*]} --exclude=${WORKING_DIR} 2> /dev/null
 
 # Create empty directories of excluded directories. Otherwise, it will causes kernel panic.
 mkdir -p "${SQUASHFS_DIR}"/{dev,live,lib/live/mount,proc,run,sys,tmp}
