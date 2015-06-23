@@ -47,7 +47,7 @@ rm -rf ./chroot/root/scripts
 ##################################################################
 rm -f binary/live/filesystem.squashfs
 mkdir -p binary/live/
-mksquashfs chroot binary/live/filesystem.squashfs -comp xz -e boot
+mksquashfs chroot binary/live/filesystem.squashfs -comp xz
 
 # Create ISOHYBRID.
 ##################################################################
