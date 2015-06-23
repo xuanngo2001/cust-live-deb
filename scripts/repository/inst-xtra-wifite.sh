@@ -15,3 +15,7 @@ apt-get -y --force-yes install wifite
 
 # Log
 echo "${GV_LOG} * Install wifite."
+
+
+# Reference:
+# http://bashbang.blogspot.ca/2013/04/wifiteinstaller-automation-script.html
