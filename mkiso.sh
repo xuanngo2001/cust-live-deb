@@ -39,6 +39,12 @@ if [ ! -e ./binary/live/vmlinuz ]; then
   exit 1;
 fi
 
+# Global variables.
+##################################################################
+YYYY_MM_DD=$(date +"%Y-%m-%d")
+HH_MM_SS=$(date +"%0k.%M.%S")
+DATE_STRING="${YYYY_MM_DD}_${HH_MM_SS}"
+
 # Keep install.log in install-log/
 ##################################################################
 NEW_INSTALL_LOG_NAME="$(basename ${INSTALL_LOG})${SYSTEM}_${DATE_STRING}"
@@ -69,9 +75,6 @@ mksquashfs chroot binary/live/filesystem.squashfs -comp xz
 # Create ISOHYBRID.
 ##################################################################
 # Note: boot.cat is automatically created
-YYYY_MM_DD=$(date +"%Y-%m-%d")
-HH_MM_SS=$(date +"%0k.%M.%S")
-DATE_STRING="${YYYY_MM_DD}_${HH_MM_SS}"
 APP_ID=cust-live-deb-64
 ISO_FILENAME="${APP_ID}${SYSTEM}_${DATE_STRING}.iso"
 xorriso -as mkisofs -r -J -joliet-long -l \
