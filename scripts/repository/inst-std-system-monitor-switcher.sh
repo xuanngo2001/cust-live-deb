@@ -21,3 +21,7 @@ echo "${GV_LOG} * Install Monitor Switcher: Don't know yet."
 # https://fitzcarraldoblog.wordpress.com/2013/04/03/switching-the-display-quickly-between-a-laptop-monitor-and-an-external-monitor-or-projector-in-linux/
 # https://wiki.archlinux.org/index.php/Multihead
 
+# Apps:
+#  http://willem.engen.nl/projects/disper/
+#  https://github.com/wertarbyte/autorandr
+
