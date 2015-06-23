@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Copy all scripts to live system.
+./update-scripts.sh
+
 # Mount
 MOUNT_CMD="mount none -t proc /proc; mount none -t sysfs /sys; mount none -t devpts /dev/pts"
 echo "${MOUNT_CMD}"
