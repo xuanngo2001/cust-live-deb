@@ -16,6 +16,7 @@ apt-get -y --force-yes install udevil
 
 # Insert devmon in startup script.
 yes | cp ${GV_SETTINGS_DIR}/startup-devmon.sh /root/
+chmod +x /root/startup-devmon.sh
 sed -i "/## Insert your script files here ##/a /root/startup-devmon.sh&" /etc/init.d/startup.sh
 
 # Log
