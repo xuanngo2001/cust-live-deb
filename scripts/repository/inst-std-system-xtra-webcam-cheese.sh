@@ -19,5 +19,6 @@ apt-get -y --force-yes install cheese
 # Log
 echo "${GV_LOG} * Install webcam: cheese."
 
+# Note: If cheese is opened but you get black screen, change to lower resolution(i.e. Cheese->Preference).
 
 # bumblebee package is not needed.
