@@ -10,8 +10,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install required packages.
-apt-get -y --force-yes install libegl*
-apt-get -y --force-yes install bumblebee
+apt-get -y --force-yes install libegl1-mesa-drivers
 
 # Install webcam: cheese.
 apt-get -y --force-yes install cheese
@@ -21,4 +20,4 @@ apt-get -y --force-yes install cheese
 echo "${GV_LOG} * Install webcam: cheese."
 
 
-# bumblebee-nvidia
+# bumblebee package is not needed.
