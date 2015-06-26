@@ -21,6 +21,7 @@ cat ${GV_SETTINGS_DIR}/jwmrc-startup-conky.sh >> /root/jwmrc-startup.sh
 
 # Add on the fly settings to Conky.
 yes | cp ${GV_SETTINGS_DIR}/startup-conky.sh /root/
+chmod +x /root/startup-conky.sh
 sed -i "/## Insert your script files here ##/a /root/startup-conky.sh&" /etc/init.d/startup.sh
 
 # Log
