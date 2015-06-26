@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # Global variables:
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
 # ${GV_SETTINGS_DIR}: Hold settings data.
