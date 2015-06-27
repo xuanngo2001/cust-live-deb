@@ -1,4 +1,6 @@
 #!/bin/bash
+# Description: Play slideshow of pictures and continue where I left off.
+
 FILELIST=$1
 if [ -e ${FILELIST}.last ];
 then
