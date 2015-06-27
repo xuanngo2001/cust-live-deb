@@ -1,5 +1,6 @@
 #!/bin/bash
-# Description: Play slideshow of pictures and continue where I left off.
+# Description: Play slideshow of pictures and continue where you left off.
+#              You have to press ENTER to mark your position.
 
 FILELIST=$1
 if [ -e ${FILELIST}.last ];
@@ -13,7 +14,7 @@ else
   fi
 fi
 
-# If you ENTER is not pressed, then ${FILELIST}.tmp will not shrink
+# If ENTER is not pressed, then ${FILELIST}.tmp will not shrink.
 rm -f ${FILELIST}.last
 
 
