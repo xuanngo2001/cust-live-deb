@@ -18,6 +18,7 @@ echo "${GV_LOG} * Install Monitor Switcher: arandr."
 
 
 # REJECTION:
+# Too advanced. lxrandr is simplier solution.
 #  * Running inst-std-system-monitor-switcher-arandr.sh ...
 #    * After this operation, 20.5 MB of additional disk space will be used.
 #    * Install Monitor Switcher: arandr.
