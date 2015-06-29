@@ -12,6 +12,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install lxrandr.
 apt-get -y --force-yes install lxrandr
 
+# Insert lxrandr menu in Administration
+sed -i "/Administration\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-adm-lxrandr.xml" /root/jwmrc-menus.xml
+
 
 # Log
 echo "${GV_LOG} * Install Monitor Switcher: lxrandr."
