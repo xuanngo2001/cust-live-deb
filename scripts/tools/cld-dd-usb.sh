@@ -101,10 +101,9 @@ echo ">>>>>>>>>> Create an extended partition for the remaining ${USB_DEVICE}."
 # Refresh partition table.
 reread_partition_table ${USB_DEVICE}
 
-# Create a logical partition of X MiB.
-LOGICAL_PARTITION_SIZE_MB=200
-echo ">>>>>>>>>> Create a logical partition of ${LOGICAL_PARTITION_SIZE_MB}MB in ${USB_DEVICE}."
-(echo n; echo l; echo; echo "+${LOGICAL_PARTITION_SIZE_MB}M"; echo w) | fdisk "${USB_DEVICE}"
+# Create a logical partition.
+echo ">>>>>>>>>> Create a logical partition in ${USB_DEVICE} for the remaining space."
+(echo n; echo l; echo; echo; echo w) | fdisk "${USB_DEVICE}"
 
 # Refresh partition table.
 reread_partition_table ${USB_DEVICE}
@@ -117,35 +116,6 @@ NEW_LOGICAL_PARTITION=$(fdisk -l "${USB_DEVICE}" | grep "^/dev/" | grep " 83 " |
 # Format logical parition
 echo ">>>>>>>>>> Format ${NEW_LOGICAL_PARTITION} logical parition."
 mkfs.ext4 -F "${NEW_LOGICAL_PARTITION}"
-
-# Create an ext4-based image file to be used for persistence
-echo ">>>>>>>>>> Create an ext4-based image file to be used for persistence."
-PERSISTENCE_IMG_FILE=persistence
-PERSISTENCE_IMG_SIZE=$((${LOGICAL_PARTITION_SIZE_MB}-1))
-rm -f ${PERSISTENCE_IMG_FILE}
-dd if=/dev/null of=${PERSISTENCE_IMG_FILE} bs=1 count=0 seek="${PERSISTENCE_IMG_SIZE}M"
-sync
-mkfs.ext4 -F ${PERSISTENCE_IMG_FILE}
-
-# Add persistence.conf to the image file.
-echo ">>>>>>>>>> Add persistence.conf to the image file."
-PERSISTENCE_IMG_MNT_DIR=/tmp/persistence_img_mnt
-rm -rf ${PERSISTENCE_IMG_MNT_DIR}
-mkdir -p ${PERSISTENCE_IMG_MNT_DIR}
-mount -t ext4 ${PERSISTENCE_IMG_FILE} ${PERSISTENCE_IMG_MNT_DIR}
-echo "/ union" > ${PERSISTENCE_IMG_MNT_DIR}/persistence.conf
-umount ${PERSISTENCE_IMG_MNT_DIR}
-rm -rf ${PERSISTENCE_IMG_MNT_DIR}
-
-# Copy persistence image file to new logical partition
-echo ">>>>>>>>>> Move persistence image file to new logical partition."
-NEW_LOGICAL_PARTITION_MNT_DIR=/tmp/new-logical-partition-mnt
-rm -rf ${NEW_LOGICAL_PARTITION_MNT_DIR}
-mkdir -p ${NEW_LOGICAL_PARTITION_MNT_DIR}
-mount -t ext4 "${NEW_LOGICAL_PARTITION}" "${NEW_LOGICAL_PARTITION_MNT_DIR}"
-mv ${PERSISTENCE_IMG_FILE} ${NEW_LOGICAL_PARTITION_MNT_DIR}
-umount ${NEW_LOGICAL_PARTITION_MNT_DIR}
-rm -rf ${NEW_LOGICAL_PARTITION_MNT_DIR}
 
 
 # Done
