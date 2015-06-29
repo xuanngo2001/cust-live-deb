@@ -1,6 +1,6 @@
 #!/bin/bash
 # Description: Play slideshow of pictures and continue where you left off.
-#              You have to press ENTER to mark your position.
+# Usage: You have to press ENTER to mark your position.
 
 FILELIST=$1
 if [ -e ${FILELIST}.last ];
@@ -18,4 +18,11 @@ fi
 rm -f ${FILELIST}.last
 
 
-feh -d -Y -F -D 1.5 -f ${FILELIST}.tmp -A "echo %u > ${FILELIST}.last"
+feh -d -Y -F -D 1.5 -f ${FILELIST}.tmp -G -A "echo %u > ${FILELIST}.last"
+# -d       : Draw the filename at the top-left of the image.
+# -Y       : Hide mouse pointer.
+# -F       : Fullscreen.
+# -D 1.5   : Delay 1.5 seconds before showing the next picture.
+# -f file  : Filelist 
+# -G       : Draw the defined actions and what they do at the top-left of the image.
+# -A action: Execute action.
