@@ -106,42 +106,8 @@ DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-
   <!-- The resize mode (outline or opaque) -->
   <ResizeMode>opaque</ResizeMode>
     
-  <!-- Standard key bindings -->
-  <Key key="Up">up</Key>
-  <Key key="Down">down</Key>
-  <Key key="Right">right</Key>
-  <Key key="Left">left</Key>
-  <Key key="h">left</Key>
-  <Key key="j">down</Key>
-  <Key key="k">up</Key>
-  <Key key="l">right</Key>
-  <Key key="Return">select</Key>
-  <Key key="Escape">escape</Key>
-
-  <Key mask="A" key="Tab">nextstacked</Key>
-  <Key mask="A" key="F4">close</Key>
-  <Key mask="A" key="#">desktop#</Key>
-  <Key mask="A" key="F1">root:1</Key>
-  <Key mask="A" key="F2">window</Key>
-  <Key mask="A" key="F10">maximize</Key>
-  <Key mask="A" key="Right">rdesktop</Key>
-  <Key mask="A" key="Left">ldesktop</Key>
-  <Key mask="A" key="Up">udesktop</Key>
-  <Key mask="A" key="Down">ddesktop</Key>
-  
-  <!-- Cltr+Alt+DEL = Reboot -->
-  <Key mask="CA" key="Delete">exec:reboot</Key>
-  
-  <!-- Mod4 (Windows key) is "4" -->
-  <Key mask="4" key="d">showdesktop</Key>
-  
-  <!-- Volume -->
-  <Key mask="4" key="Down">>exec:amixer set Master 6%- </Key> <!-- to lower volume -->
-  <Key mask="4" key="Up">exec:amixer set Master 6%+ </Key>    <!-- to increase volume -->
-  <Key mask="4" key="0">exec:amixer set Master 0</Key>        <!-- to mute sound -->
-  
-  <!-- Don't delete below. It is used as placeholder -->
-  <!-- NEW KEYS HERE -->
+  <!-- INCLUDE key bindings. -->
+  <Include>/root/jwmrc-key-bindings.xml</Include>
   
 </JWM>
 

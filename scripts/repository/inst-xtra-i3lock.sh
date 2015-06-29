@@ -12,8 +12,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install i3lock
 apt-get -y --force-yes install i3lock
 
-# Add lockscreen keybing
-sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-lockscreen-i3lock.xml" /root/.jwmrc
+# Add lockscreen key binding
+sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-lockscreen-i3lock.xml" /root/jwmrc-key.xml
 
 # Log
 echo "${GV_LOG} * Install screen locker: i3lock."
