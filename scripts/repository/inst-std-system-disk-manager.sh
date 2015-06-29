@@ -10,8 +10,14 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y --force-yes install disk-manager
 
+# Insert disk-manager menu in Administration
+sed -i "/Administration\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-adm-disk-manager.xml" /root/jwmrc-menus.xml
+
+
 # Log
 echo "${GV_LOG} * Install Auto Mount Partition Manager: Disk Manager."
+echo "${GV_LOG} * Insert disk-manager menu in Administration."
+
 
 # Reference:
 # * http://flomertens.free.fr/disk-manager/
