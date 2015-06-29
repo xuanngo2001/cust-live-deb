@@ -8,9 +8,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y --force-yes install alsa-base alsa-utils
 
-# Add key binding
-sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-alsa.xml" /root/jwmrc-key.xml
-
 # Log
 echo "${GV_LOG} * Install ALSA sound."
 echo "${GV_LOG} * Test sound: aplay /usr/share/sounds/alsa/*."

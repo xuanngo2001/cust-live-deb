@@ -19,6 +19,10 @@ yes | cp ${GV_SETTINGS_DIR}/${JWMRC}-tray.xml /root/
 yes | cp ${GV_SETTINGS_DIR}/${JWMRC}-key.xml /root/
 yes | cp ${GV_SETTINGS_DIR}/${JWMRC}-startup.sh /root/
 
+
+# Add key binding
+sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-alsa.xml" /root/jwmrc-key.xml
+
 # Log
 echo "${GV_LOG} * Install Window Manager: JWM."
 echo "${GV_LOG} * Set ${JWMRC}."
