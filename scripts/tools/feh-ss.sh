@@ -42,7 +42,7 @@ fi
 rm -f ${FILELIST}.last
 
 
-feh -d -Y -F -D 1.5 -f ${FILELIST}.tmp -G -A "echo %u > ${FILELIST}.last"
+feh -d -Y -F -D 1.5 -f ${FILELIST}.tmp -A "echo %u > ${FILELIST}.last"
 # -d       : Draw the filename at the top-left of the image.
 # -Y       : Hide mouse pointer.
 # -F       : Fullscreen.
