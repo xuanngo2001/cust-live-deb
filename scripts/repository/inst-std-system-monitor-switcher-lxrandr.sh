@@ -20,3 +20,11 @@ sed -i "/Administration\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-adm-lxrandr.xml" /r
 echo "${GV_LOG} * Install Monitor Switcher: lxrandr."
 
 
+# Reference
+# https://awesome.naquadah.org/wiki/Using_Multiple_Screens
+# https://fitzcarraldoblog.wordpress.com/2013/04/03/switching-the-display-quickly-between-a-laptop-monitor-and-an-external-monitor-or-projector-in-linux/
+# https://wiki.archlinux.org/index.php/Multihead
+
+# Apps:
+#  http://willem.engen.nl/projects/disper/
+#  https://github.com/wertarbyte/autorandr
