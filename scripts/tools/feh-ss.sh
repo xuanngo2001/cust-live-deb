@@ -1,6 +1,7 @@
 #!/bin/bash
-# Description: Play slideshow of pictures and continue where you left off.
-# Usage: You have to press ENTER to mark your position.
+# Description: Play photo slideshow and continue where you left off.
+# Usage: ./feh-ss.sh filelist.txt 
+#       You have to press ENTER to mark your position.
 
 FILELIST=$1
 
