@@ -3,6 +3,27 @@
 # Usage: You have to press ENTER to mark your position.
 
 FILELIST=$1
+
+# Error Handling
+##################################################################
+if [ -z ${FILELIST} ]; then
+  echo "ERROR: Please provide a filelist containing list of path to your pictures."
+  echo " e.g.: $0 my_file_list.txt"
+  exit 1
+fi
+
+if [ ! -e ${FILELIST} ] || [ ! -f ${FILELIST} ]; then
+  echo "ERROR: ${FILELIST} : No such file."
+  exit 1
+fi
+
+
+# Main logic here:
+#   -Make a temporary copy of filelist.(*.tmp)
+#   -Save the line number of current viewing file when ENTER is pressed.(*.last)
+#   -On the next run, remove all viewed files using the saved line number.(sed)
+##################################################################
+FILELIST="${FILELIST##*/}"
 if [ -e ${FILELIST}.last ];
 then
   LAST_LINE=$(tail -n 1 ${FILELIST}.last)
@@ -13,6 +34,8 @@ else
     cp ${FILELIST} ${FILELIST}.tmp
   fi
 fi
+
+
 
 # If ENTER is not pressed, then ${FILELIST}.tmp will not shrink.
 rm -f ${FILELIST}.last
