@@ -5,7 +5,7 @@ Set of scripts to create Custom Live Debian System.
 
 It comes in 2 flavors:
 * min: Strict minimum system with JWM light-weight window manager. From here, you can add your desired applications.
-* std: Standard system includes minimum system + commons applications.
+* std: Standard system includes minimum system + common applications.
 
 # Usage
 1. Change `DEB_REPO_URL` variable in `build-live.sh` to point to the Debian repository URL.
