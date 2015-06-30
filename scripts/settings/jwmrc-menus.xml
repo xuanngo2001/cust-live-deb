@@ -31,7 +31,8 @@
     
     
     <Menu label="Network">
-      <Program label="WICD" confirm="false">/usr/bin/wicd-gtk</Program>
+      <!-- No tray -->
+      <Program label="WICD" confirm="false">/usr/bin/wicd-client -n</Program>
     </Menu>
 
     
