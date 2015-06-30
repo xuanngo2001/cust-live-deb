@@ -15,9 +15,12 @@ apt-get -y --force-yes install lxrandr
 # Insert lxrandr menu in Administration
 sed -i "/Administration\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-adm-lxrandr.xml" /root/jwmrc-menus.xml
 
+# Add key binding
+sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-lxrandr.xml" /root/jwmrc-key.xml
 
 # Log
 echo "${GV_LOG} * Install Monitor Switcher: lxrandr."
+echo "${GV_LOG} * Add lxrandr key binding."
 
 
 # Reference
