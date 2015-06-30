@@ -26,6 +26,7 @@ sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-alsa.xml" /root/jwmrc
 # Log
 echo "${GV_LOG} * Install Window Manager: JWM."
 echo "${GV_LOG} * Set ${JWMRC}."
+echo "${GV_LOG} * Add alsa key binding."
 
 
 # Reference:
