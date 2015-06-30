@@ -1,5 +1,5 @@
 # Custom Live Debian System
-Set of scripts to create Custom Live Debian System.
+Set of scripts to create Custom Live Debian System:
 * Automatically calculate space used of each script.
 * It can remaster on top of itself.
 
