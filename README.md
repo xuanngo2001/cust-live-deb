@@ -4,7 +4,7 @@ Set of scripts to create Custom Live Debian System:
 * It can remaster on top of itself.
 
 It comes in 2 flavors:
-* min: Strict minimum system with JWM light-weight window manager. From here, you can add your desired applications.
+* min: Strict minimum system with JWM light-weight window manager. From there, you can add your desired applications.
 * std: Standard system includes minimum system + common applications.
 
 # Usage
