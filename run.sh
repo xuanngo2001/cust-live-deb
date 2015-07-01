@@ -9,3 +9,6 @@ SYSTEM=$1
                                chmod +x install.sh; \
                                ./install.sh" && \
   ./mkiso.sh ${SYSTEM}
+  
+  # Reference:
+  # chroot usage: http://stackoverflow.com/a/8157973
