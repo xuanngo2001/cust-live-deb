@@ -30,16 +30,6 @@ chroot chroot/ /bin/bash -c "cd /root/scripts; chmod +x install.sh; ./install.sh
 ```
 http://stackoverflow.com/a/8157973
 
-# Transferring the iso image to USB stick
-```
-dd if=remaster.iso of=/dev/sdX bs=4M
-sync
-```
-The `sync` bit is important as `dd` can return before the write operation finishes.
-
-# Requirements
-* `apt-get -y --force-yes install live-build squashfs-tools syslinux`
-* `apt-get -y --force-yes install xorriso` 
 
 # Analyze package sizes
 ```
