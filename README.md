@@ -18,18 +18,6 @@ It comes in 2 flavors:
 1. `exit`
 1. You are now out of the live system, run `./mkiso.sh` to create ISO image.
 
-# Quickies
-```
-# Run these in 1 shot as ROOT to build ALL.
-./build-live.sh
-chroot chroot/ /bin/bash -c "cd /root/scripts; chmod +x install.sh; ./install.sh all"
-./mkiso.sh
-
-# OR
-./build-live.sh && chroot chroot/ /bin/bash -c "cd /root/scripts; chmod +x install.sh; ./install.sh all" && ./mkiso.sh
-```
-http://stackoverflow.com/a/8157973
-
 
 # Analyze package sizes
 ```
