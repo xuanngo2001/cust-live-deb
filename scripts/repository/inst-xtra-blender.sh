@@ -9,9 +9,16 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Install dia to draw diagrams.
-apt-get -y --force-yes install blender
+# Install required packages.
+apt-get -y --force-yes install libgl1-mesa-dri libgl1-mesa-glx
+
+# Install blender.
+apt-get -y --force-yes install blender libgl1-mesa-dri libgl1-mesa-glx
 
 
 # Log
+echo "${GV_LOG} * Install required packages for blender."
 echo "${GV_LOG} * Install blender."
+
+# Note:
+# Worked on Intel graphic: apt-get -y --force-yes install libgl1-mesa-dri libgl1-mesa-glx
