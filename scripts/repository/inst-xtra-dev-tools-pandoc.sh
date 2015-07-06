@@ -20,7 +20,10 @@ yes | cp -R ${GV_SETTINGS_DIR}/doc ${DOC_DIR}
 # Insert documentation: user manual in Help.
 sed -i "/Help\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-help-user-std.xml" /root/jwmrc-menus.xml
 
+# Insert documentation: developer manual in Help.
+sed -i "/Help\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-help-dev.xml" /root/jwmrc-menus.xml
 
 # Log
 echo "${GV_LOG} * Install pandoc to generate user manual."
 echo "${GV_LOG} * Add documentation: user manual."
+echo "${GV_LOG} * Add documentation: developer manual."
