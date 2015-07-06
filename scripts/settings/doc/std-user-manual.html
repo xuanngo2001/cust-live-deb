@@ -1,0 +1,663 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>User manual - Standard system</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+  /*
+      Buttondown
+      A Markdown/MultiMarkdown/Pandoc HTML output CSS stylesheet
+      Author: Ryan Gray
+      Date: 15 Feb 2011
+      Revised: 21 Feb 2012
+     
+      General style is clean, with minimal re-definition of the defaults or 
+      overrides of user font settings. The body text and header styles are 
+      left alone except title, author and date classes are centered. A Pandoc TOC 
+      is not printed, URLs are printed after hyperlinks in parentheses. 
+      Block quotes are italicized. Tables are lightly styled with lines above 
+      and below the table and below the header with a boldface header. Code 
+      blocks are line wrapped. 
+  
+      All elements that Pandoc and MultiMarkdown use should be listed here, even 
+      if the style is empty so you can easily add styling to anything.
+      
+      There are some elements in here for HTML5 output of Pandoc, but I have not 
+      gotten around to testing that yet.
+  */
+  
+  /* NOTES:
+  
+      Stuff tried and failed:
+      
+      It seems that specifying font-family:serif in Safari will always use 
+      Times New Roman rather than the user's preferences setting.
+      
+      Making the font size different or a fixed value for print in case the screen 
+      font size is making the print font too big: Making font-size different for 
+      print than for screen causes horizontal lines to disappear in math when using 
+      MathJax under Safari.
+  */
+  
+  /* ---- Front Matter ---- */
+  
+  /* Pandoc header DIV. Contains .title, .author and .date. Comes before div#TOC. 
+     Only appears if one of those three are in the document.
+  */
+  
+  div#header, header
+      {
+      /* Put border on bottom. Separates it from TOC or body that comes after it. */
+      border-bottom: 1px solid #aaa;
+      margin-bottom: 0.5em;
+      }
+  
+  .title /* Pandoc title header (h1.title) */
+      {
+      text-align: center;
+      }
+  
+  .author, .date /* Pandoc author(s) and date headers (h2.author and h3.date) */
+      {
+      text-align: center;
+      }
+  
+  /* Pandoc table of contents DIV when using the --toc option.
+     NOTE: this doesn't support Pandoc's --id-prefix option for #TOC and #header. 
+     Probably would need to use div[id$='TOC'] and div[id$='header'] as selectors.
+  */
+  
+  div#TOC, nav#TOC
+      {
+      /* Put border on bottom to separate it from body. */
+      border-bottom: 1px solid #aaa;
+      margin-bottom: 0.5em;
+      }
+  
+  @media print
+      {
+      div#TOC, nav#TOC
+          {
+          /* Don't display TOC in print */
+          display: none;
+          }
+      }
+  
+  /* ---- Headers and sections ---- */
+  
+  h1, h2, h3, h4, h5, h6
+  {
+      font-family: "Helvetica Neue", Helvetica, "Liberation Sans", Calibri, Arial, sans-serif; /* Sans-serif headers */
+  
+      /* font-family: "Liberation Serif", "Georgia", "Times New Roman", serif; /* Serif headers */
+  
+      page-break-after: avoid; /* Firefox, Chrome, and Safari do not support the property value "avoid" */
+  }
+  
+  /* Pandoc with --section-divs option */
+  
+  div div, section section /* Nested sections */
+      {
+      margin-left: 2em; /* This will increasingly indent nested header sections */
+      }
+  
+  p {}
+  
+  blockquote
+      { 
+      font-style: italic;
+      }
+  
+  li /* All list items */
+      {
+      }
+  
+  li > p /* Loosely spaced list item */
+      {
+      margin-top: 1em; /* IE: lack of space above a <li> when the item is inside a <p> */
+      }
+  
+  ul /* Whole unordered list */
+      {
+      }
+  
+  ul li /* Unordered list item */
+      {
+      }
+  
+  ol /* Whole ordered list */
+      {
+      }
+  
+  ol li /* Ordered list item */
+      {
+      }
+  
+  hr {}
+  
+  /* ---- Some span elements --- */
+  
+  sub /* Subscripts. Pandoc: H~2~O */
+      {
+      }
+  
+  sup /* Superscripts. Pandoc: The 2^nd^ try. */
+      {
+      }
+      
+  em /* Emphasis. Markdown: *emphasis* or _emphasis_ */
+      {
+      }
+      
+  em > em /* Emphasis within emphasis: *This is all *emphasized* except that* */
+      {
+      font-style: normal;
+      }
+  
+  strong /* Markdown **strong** or __strong__ */
+      {
+      }
+  
+  /* ---- Links (anchors) ---- */
+  
+  a /* All links */
+      {
+      /* Keep links clean. On screen, they are colored; in print, they do nothing anyway. */
+      text-decoration: none;
+      }
+  
+  @media screen
+      {
+      a:hover
+          {
+          /* On hover, we indicate a bit more that it is a link. */
+          text-decoration: underline;
+          }
+      }
+  
+  @media print
+      {
+      a   {
+          /* In print, a colored link is useless, so un-style it. */
+          color: black;
+          background: transparent;
+          }
+          
+      a[href^="http://"]:after, a[href^="https://"]:after
+          {
+          /* However, links that go somewhere else, might be useful to the reader,
+             so for http and https links, print the URL after what was the link 
+             text in parens
+          */
+          content: " (" attr(href) ") ";
+          font-size: 90%;
+          }
+      }
+  
+  /* ---- Images ---- */
+  
+  img
+      {
+      /* Let it be inline left/right where it wants to be, but verticality make 
+         it in the middle to look nicer, but opinions differ, and if in a multi-line 
+         paragraph, it might not be so great. 
+      */
+      vertical-align: middle;
+      }
+  
+  div.figure /* Pandoc figure-style image */
+      {
+      /* Center the image and caption */
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-style: italic;
+      }
+  
+  p.caption /* Pandoc figure-style caption within div.figure */
+      {
+      /* Inherits div.figure props by default */
+      }
+  
+  /* ---- Code blocks and spans ---- */
+  
+  pre, code 
+      {
+      background-color: #fdf7ee;
+      /* BEGIN word wrap */
+      /* Need all the following to word wrap instead of scroll box */
+      /* This will override the overflow:auto if present */
+      white-space: pre-wrap; /* css-3 */
+      white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+      white-space: -pre-wrap; /* Opera 4-6 */
+      white-space: -o-pre-wrap; /* Opera 7 */
+      word-wrap: break-word; /* Internet Explorer 5.5+ */
+      /* END word wrap */
+      }
+  
+  pre /* Code blocks */
+      {
+      /* Distinguish pre blocks from other text by more than the font with a background tint. */
+      padding: 0.5em; /* Since we have a background color */
+      border-radius: 5px; /* Softens it */
+      /* Give it a some definition */
+      border: 1px solid #aaa;
+      /* Set it off left and right, seems to look a bit nicer when we have a background */
+      margin-left:  0.5em;
+      margin-right: 0.5em;
+      }
+  
+  @media screen
+      {
+      pre
+          {
+          /* On screen, use an auto scroll box for long lines, unless word-wrap is enabled */
+          white-space: pre;
+          overflow: auto;
+          /* Dotted looks better on screen and solid seems to print better. */
+          border: 1px dotted #777;
+          }
+      }
+  
+  code /* All inline code spans */
+      {
+      }
+  
+  p > code, li > code /* Code spans in paragraphs and tight lists */
+      {
+      /* Pad a little from adjacent text */
+      padding-left:  2px;
+      padding-right: 2px;
+      }
+      
+  li > p code /* Code span in a loose list */
+      {
+      /* We have room for some more background color above and below */
+      padding: 2px;
+      }
+  
+  /* ---- Math ---- */
+  
+  span.math /* Pandoc inline math default and --jsmath inline math */
+      {
+      /* Tried font-style:italic here, and it messed up MathJax rendering in some browsers. Maybe don't mess with at all. */
+      }
+      
+  div.math /* Pandoc --jsmath display math */
+      {
+      }
+      
+  span.LaTeX /* Pandoc --latexmathml math */
+      {
+      } 
+  
+  eq /* Pandoc --gladtex math */
+      {
+      } 
+  
+  /* ---- Tables ---- */
+  
+  /*  A clean textbook-like style with horizontal lines above and below and under 
+      the header. Rows highlight on hover to help scanning the table on screen.
+  */
+  
+  table
+      {
+      border-collapse: collapse;
+      border-spacing: 0; /* IE 6 */
+  
+      border-bottom: 2pt solid #000;
+      border-top: 2pt solid #000; /* The caption on top will not have a bottom-border */
+  
+      }
+      
+  thead /* Entire table header */
+      {
+      border-bottom: 1pt solid #000;
+      background-color: #eee; /* Does this BG print well? */
+      }
+  
+  tr.header /* Each header row */
+      {
+      } 
+  
+  tbody /* Entire table  body */
+      {
+      }
+  
+  /* Table body rows */
+  
+  tr  {
+      }
+  tr.odd:hover, tr.even:hover /* Use .odd and .even classes to avoid styling rows in other tables */
+      {
+      background-color: #eee;
+      }
+      
+  /* Odd and even rows */
+  tr.odd {}
+  tr.even {}
+  
+  td, th /* Table cells and table header cells */
+      { 
+      vertical-align: top; /* Word */
+      vertical-align: baseline; /* Others */
+      padding-left:   0.5em;
+      padding-right:  0.5em;
+      padding-top:    0.2em;
+      padding-bottom: 0.2em;
+      }
+      
+  /* Removes padding on left and right of table for a tight look. Good if thead has no background color*/
+  /*
+  tr td:last-child, tr th:last-child
+      {
+      padding-right: 0;
+      }
+  tr td:first-child, tr th:first-child 
+      {
+      padding-left: 0;
+      }
+  */
+  
+  th /* Table header cells */
+      {
+      font-weight: bold; 
+      }
+  
+  tfoot /* Table footer (what appears here if caption is on top?) */
+      {
+      }
+  
+  caption /* This is for a table caption tag, not the p.caption Pandoc uses in a div.figure */
+      {
+      caption-side: top;
+      border: none;
+      font-size: 0.9em;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 0.3em; /* Good for when on top */
+      padding-bottom: 0.2em;
+      }
+  
+  /* ---- Definition lists ---- */
+  
+  dl /* The whole list */
+      {
+      border-top: 2pt solid black;
+      padding-top: 0.5em;
+      border-bottom: 2pt solid black;
+      }
+  
+  dt /* Definition term */
+      {
+      font-weight: bold;
+      }
+  
+  dd+dt /* 2nd or greater term in the list */
+      {
+      border-top: 1pt solid black;
+      padding-top: 0.5em;
+      }
+      
+  dd /* A definition */
+      {
+      margin-bottom: 0.5em;
+      }
+  
+  dd+dd /* 2nd or greater definition of a term */
+      {
+      border-top: 1px solid black; /* To separate multiple definitions */
+      }
+      
+  /* ---- Footnotes ---- */
+  
+  a.footnote, a.footnoteRef { /* Pandoc, MultiMarkdown footnote links */
+      font-size: small; 
+      vertical-align: text-top;
+  }
+  
+  a[href^="#fnref"], a.reversefootnote /* Pandoc, MultiMarkdown, ?? footnote back links */
+      {
+      }
+  
+  @media print
+      {
+      a[href^="#fnref"], a.reversefootnote /* Pandoc, MultiMarkdown */
+          {
+          /* Don't display these at all in print since the arrow is only something to click on */
+          display: none;
+          }
+      }
+      
+  div.footnotes /* Pandoc footnotes div at end of the document */
+      {
+      }
+      
+  div.footnotes li[id^="fn"] /* A footnote item within that div */
+      {
+      }
+  
+  /* You can class stuff as "noprint" to not print. 
+     Useful since you can't set this media conditional inside an HTML element's 
+     style attribute (I think), and you don't want to make another stylesheet that 
+     imports this one and adds a class just to do this.
+  */
+  
+  @media print
+      {
+      .noprint
+          {
+          display:none;
+          }
+      }
+  
+  </style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">User manual - Standard system</h1>
+</div>
+<div id="TOC">
+<ul>
+<li><a href="#system-settings"><span class="toc-section-number">1</span> System settings</a></li>
+<li><a href="#applications"><span class="toc-section-number">2</span> Applications</a><ul>
+<li><a href="#application-on-the-menu"><span class="toc-section-number">2.1</span> Application on the Menu</a></li>
+<li><a href="#command-line-applications"><span class="toc-section-number">2.2</span> Command line applications</a></li>
+<li><a href="#hot-keys"><span class="toc-section-number">2.3</span> Hot keys</a></li>
+</ul></li>
+<li><a href="#persistence"><span class="toc-section-number">3</span> Persistence</a></li>
+<li><a href="#remaster-live-system"><span class="toc-section-number">4</span> Remaster live system</a><ul>
+<li><a href="#tips"><span class="toc-section-number">4.1</span> Tips</a></li>
+</ul></li>
+<li><a href="#limitations"><span class="toc-section-number">5</span> Limitations</a></li>
+</ul>
+</div>
+<div id="system-settings" class="section level1">
+<h1><span class="header-section-number">1</span> System settings</h1>
+<ul>
+<li>Change time zone:
+<ul>
+<li>Application: <code>dpkg-reconfigure tzdata</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;Time Zone</strong></li>
+</ul></li>
+<li>Change keyboard:
+<ul>
+<li>Application: <code>dpkg-reconfigure keyboard-configuration</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;Keyboard</strong></li>
+</ul></li>
+<li>Change screen resolution or switch monitors:
+<ul>
+<li>Shortcut: <code>⌘ + p</code></li>
+<li>Application: <code>lxrandr</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;LXRandR</strong></li>
+</ul></li>
+<li>Volume control:
+<ul>
+<li>Shortcut: <code>⌘ + UP</code> to increase volume.</li>
+<li>Shortcut: <code>⌘ + DOWN</code> to decrease volume.</li>
+<li>Shortcut: <code>⌘ + 0</code> to mute.</li>
+</ul></li>
+<li>Change sound card settings:
+<ul>
+<li>Application: <code>pavucontrol</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;Sound</strong></li>
+</ul></li>
+<li>Network settings:
+<ul>
+<li>Application: <code>wicd</code></li>
+<li>Menu path: <strong>Menu-&gt;Network-&gt;WICD</strong></li>
+</ul></li>
+<li>Hard drive management:
+<ul>
+<li>Application: <code>gparted</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;GNOME partition editor</strong></li>
+</ul></li>
+<li>Mount partitions:
+<ul>
+<li>Application: <code>disk-manager</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;Disk Manager</strong></li>
+</ul></li>
+<li>Run applications on startup:</li>
+<li>Add your scripts in <code>/root/jwmrc-startup.sh</code>.</li>
+</ul>
+</div>
+<div id="applications" class="section level1">
+<h1><span class="header-section-number">2</span> Applications</h1>
+<div id="application-on-the-menu" class="section level2">
+<h2><span class="header-section-number">2.1</span> Application on the Menu</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Name</th>
+<th align="left">Path</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">geeqie</td>
+<td align="left">Menu-&gt;Accessories-&gt;Geeqie</td>
+<td align="left">Image viewer</td>
+</tr>
+<tr class="even">
+<td align="left">galculator</td>
+<td align="left">Menu-&gt;Accessories-&gt;Calculator</td>
+<td align="left">Calculator</td>
+</tr>
+<tr class="odd">
+<td align="left">scite</td>
+<td align="left">Menu-&gt;Accessories-&gt;SciTE</td>
+<td align="left">Text editor</td>
+</tr>
+<tr class="even">
+<td align="left">thunar</td>
+<td align="left">Menu-&gt;Accessories-&gt;Thunar</td>
+<td align="left">File explorer</td>
+</tr>
+<tr class="odd">
+<td align="left">firefox</td>
+<td align="left">Menu-&gt;Internet-&gt;Iceweasel</td>
+<td align="left">Internet browser</td>
+</tr>
+<tr class="even">
+<td align="left">pinta</td>
+<td align="left">Menu-&gt;Graphics-&gt;Pinta</td>
+<td align="left">Image editor</td>
+</tr>
+<tr class="odd">
+<td align="left">libreoffice</td>
+<td align="left">Menu-&gt;Office-&gt;LibreOffice Calc</td>
+<td align="left">Excel spreadsheet</td>
+</tr>
+<tr class="even">
+<td align="left">libreoffice</td>
+<td align="left">Menu-&gt;Office-&gt;LibreOffice Impress</td>
+<td align="left">Powerpoint presentation</td>
+</tr>
+<tr class="odd">
+<td align="left">libreoffice</td>
+<td align="left">Menu-&gt;Office-&gt;LibreOffice Writer</td>
+<td align="left">Word editor</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="command-line-applications" class="section level2">
+<h2><span class="header-section-number">2.2</span> Command line applications</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Name</th>
+<th align="left">Description</th>
+<th align="left">Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">mpv</td>
+<td align="left">Video player</td>
+<td align="left">mpv videofile.avi</td>
+</tr>
+<tr class="even">
+<td align="left">feh-ss.sh</td>
+<td align="left">Photo slideshow</td>
+<td align="left">feh-ss.sh filelist.txt</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="hot-keys" class="section level2">
+<h2><span class="header-section-number">2.3</span> Hot keys</h2>
+<ul>
+<li><code>PrtScrn</code>: Take screenshot</li>
+<li><code>⌘ + d</code>: Minimize all applications.</li>
+<li><code>Alt + F4</code>: Close current application.</li>
+<li><code>Alt + Ctrl + Del</code>: Reboot.</li>
+</ul>
+</div>
+</div>
+<div id="persistence" class="section level1">
+<h1><span class="header-section-number">3</span> Persistence</h1>
+<p>By default, <code>Cust-Live-Deb</code> supports <a href="http://live.debian.net/manual/git/html/live-manual.en.html#557">persistence</a>. It allows your changes to persist after reboot, provided that you have a persistence image file in the root path of any partitions. That image file will hold all your changes.</p>
+<pre><code># Create a persistence image file(e.g. 2048 MB).
+cld-persistence.sh 2048
+
+# Copy persistence image file to the root path of any partitions.
+cp persistence /media/SomePartition/
+
+# Reboot for the persistence process to take effect.</code></pre>
+<ul>
+<li>Disable persistence:</li>
+<li>Ensure there is no <code>persistence</code> image file on the root path of any partitions. Or,</li>
+<li>On <strong>Boot Menu</strong>, press <code>TAB</code> and delete <code>persistence</code> word. Or,</li>
+<li>When you <a href="#remaster-live-system">remastered the whole live system</a>, remove <code>persistence</code> words from <code>../binary/isolinux/isolinux.cfg</code>.</li>
+</ul>
+</div>
+<div id="remaster-live-system" class="section level1">
+<h1><span class="header-section-number">4</span> Remaster live system</h1>
+<pre><code># Copy the whole live system to a WORKING directory.
+cld-remaster.sh /path/to/WORKING/
+
+# Create HYBRID-ISO
+cld-mkiso.sh /path/to/WORKING/
+
+# Burn HYBRID-ISO to USB key(e.g. /dev/sdX)
+cld-dd-usb.sh cust-live-deb_YYYY-MM-DD_HH.MM.SS.iso /dev/sdX</code></pre>
+<div id="tips" class="section level2">
+<h2><span class="header-section-number">4.1</span> Tips</h2>
+<pre><code># List USB key device available.
+ll /dev/disk/by-id/</code></pre>
+</div>
+</div>
+<div id="limitations" class="section level1">
+<h1><span class="header-section-number">5</span> Limitations</h1>
+<ul>
+<li>Can't upgrade kernel(not yet).</li>
+</ul>
+</div>
+</body>
+</html>
