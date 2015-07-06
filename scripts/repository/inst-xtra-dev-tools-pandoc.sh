@@ -13,6 +13,14 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install pandoc to generate user manual.
 apt-get -y --force-yes install pandoc
 
+# Copy all documentations to /root/doc.
+DOC_DIR=/root/doc
+yes | cp -R ${GV_SETTINGS_DIR}/doc ${DOC_DIR}
+
+# Insert documentation: user manual in Help.
+sed -i "/Help\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-help-user-std.xml" /root/jwmrc-menus.xml
+
 
 # Log
 echo "${GV_LOG} * Install pandoc to generate user manual."
+echo "${GV_LOG} * Add documentation: user manual."
