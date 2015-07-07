@@ -18,7 +18,7 @@ DOC_DIR=/root/doc
 yes | cp -R ${GV_SETTINGS_DIR}/doc/cust-live-deb.wiki/*.html ${DOC_DIR}
 
 # Insert documentation: user manual in Help.
-sed -i "/Help\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-help-user-std.xml" /root/jwmrc-menus.xml
+sed -i "/Help\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-help-user.xml" /root/jwmrc-menus.xml
 
 # Insert documentation: developer manual in Help.
 sed -i "/Help\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-help-dev.xml" /root/jwmrc-menus.xml
