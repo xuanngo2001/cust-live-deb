@@ -14,7 +14,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install pandoc
 
 # Copy all documentations to /root/doc.
-DOC_DIR=/root/doc
+DOC_DIR=/root/cld-doc
+mkdir -p ${DOC_DIR}
 yes | cp -R ${GV_SETTINGS_DIR}/doc/cust-live-deb.wiki/*.html ${DOC_DIR}
 
 # Insert documentation: user manual in Help.
