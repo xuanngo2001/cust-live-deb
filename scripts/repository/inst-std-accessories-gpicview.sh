@@ -8,10 +8,16 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Install gpicview
 apt-get -y --force-yes install gpicview
+
+# Insert gpicview in Accessories menu.
+sed -i "/Accessories\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-acc-gpicview.xml" /root/jwmrc-menus.xml
 
 # Log
 echo "${GV_LOG} * Install Image Viewer: gpicview."
+echo "${GV_LOG} * Insert gpicview in Accessories menu."
+
 
 # REJECTION:
 #  * Running inst-std-accessories-geeqie.sh ...
