@@ -18,11 +18,12 @@ DOC_DIR=/root/cld-doc
 mkdir -p ${DOC_DIR}
 yes | cp -R ${GV_SETTINGS_DIR}/doc/cust-live-deb.wiki/*.html ${DOC_DIR}
 
+# Insert documentation: developer manual in Help.
+sed -i "/Help\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-help-dev.xml" /root/jwmrc-menus.xml
+
 # Insert documentation: user manual in Help.
 sed -i "/Help\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-help-user.xml" /root/jwmrc-menus.xml
 
-# Insert documentation: developer manual in Help.
-sed -i "/Help\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-help-dev.xml" /root/jwmrc-menus.xml
 
 # Log
 echo "${GV_LOG} * Install pandoc to generate user manual."
