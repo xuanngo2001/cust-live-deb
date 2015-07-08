@@ -1,0 +1,22 @@
+#!/usr/bin/gnuplot
+reset
+set terminal png
+set datafile separator ","
+set size 1,1
+set size ratio 10.3
+
+set xdata time
+set timefmt "%Y-%m-%d"
+set format x "%Y-%m-%d"
+set xlabel "Date"
+
+set ylabel "Size"
+#set yrange [0:31]
+
+set title "Total Size"
+set key reverse Left outside
+set grid
+
+set style data linespoints
+
+plot "list-script-size-clean.txt" using 2:3 title "slot 1"
