@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Update manuals.
+./update-manual.sh
+
 SYSTEM=$1
 # All below is a one-liner.
 ./build-live.sh && \
