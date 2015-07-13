@@ -1,7 +1,7 @@
 # Custom Live Debian System
 Set of scripts to create Custom Live Debian System:
 * Automatically calculate space used of each script.
-* It can remaster on top of itself.
+* It can remaster itself while running.
 
 It comes in 2 flavors:
 * min: Strict minimum system with JWM light-weight window manager. From there, you can add your desired applications.
