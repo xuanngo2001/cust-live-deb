@@ -51,7 +51,7 @@ sort install-size-history.txt | uniq | grep <script-name>
 # Customizations Performed
   * Running install.sh ...
     * Running on SHELL=/bin/bash VER=4.3.30(1)-release
-    * Total size = 322208K. Space Used = 322208K.
+    * Total size = 322212K. Space Used = 322212K.
   * Running inst-min-con-00-linux-image.sh ...
     * After this operation, 3147 kB of additional disk space will be used.
     * After this operation, 224 MB of additional disk space will be used.
@@ -59,11 +59,11 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
     * Install Linux image.
     * Set APT to skip installing recommended packages.
-    * Total size = 642060K. Space Used = 319852K.
+    * Total size = 642064K. Space Used = 319852K.
   * Running inst-min-con-01-debconf-utils.sh ...
     * After this operation, 157 kB of additional disk space will be used.
     * Install debconf-utils to use debconf-set-selections.
-    * Total size = 642288K. Space Used = 228K.
+    * Total size = 642288K. Space Used = 224K.
   * Running inst-min-con-02-locale.sh ...
     * After this operation, 16.3 MB of additional disk space will be used.
     * After this operation, 334 kB of additional disk space will be used.
@@ -126,11 +126,11 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Note: boot.cat is automatically created.
     * Install rsync to copy directories.
     * Install squashfs-tools to create new squashfs.
-    * Total size = 728976K. Space Used = 3580K.
+    * Total size = 728980K. Space Used = 3584K.
   * Running inst-min-con-numlock.sh ...
     * After this operation, 4,381 kB of additional disk space will be used.
     * Install numlockx to turn on NumLock on boot.
-    * Total size = 735488K. Space Used = 6512K.
+    * Total size = 735488K. Space Used = 6508K.
   * Running inst-min-con-pciutils.sh ...
     * After this operation, 1,181 kB of additional disk space will be used.
     * Install pciutils to troubleshoot pci devices(i.e. lspci).
@@ -140,7 +140,7 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Install ALSA sound.
     * Test sound: aplay /usr/share/sounds/alsa/*.
     * Add key bindings.
-    * Total size = 744912K. Space Used = 7848K.
+    * Total size = 744908K. Space Used = 7844K.
   * Running inst-min-con-snd-pulseaudio.sh ...
     * After this operation, 37.8 MB of additional disk space will be used.
     * After this operation, 146 kB of additional disk space will be used.
@@ -153,26 +153,26 @@ sort install-size-history.txt | uniq | grep <script-name>
     * When running alsamixer, it should show that it is using PulseAudio card.
     * Test sound: paplay /usr/share/sounds/alsa/*
     * More settings at https://wiki.debian.org/PulseAudio.
-    * Total size = 800128K. Space Used = 55216K.
+    * Total size = 800120K. Space Used = 55212K.
   * Running inst-min-con-udevil.sh ...
     * After this operation, 500 kB of additional disk space will be used.
     * Install udevil to auto mount USB devices.
     * Set devmon to auto start on startup.
     * You need ntfs-3g driver to be able to write on ntfs partition.
-    * Total size = 800460K. Space Used = 332K.
+    * Total size = 800452K. Space Used = 332K.
   * Running inst-min-win-00-xorg.sh ...
     * After this operation, 72.3 MB of additional disk space will be used.
     * Set keyboard to use US international.
     * Install minimum Xorg X server.
     * Install xinit so you can run startx.
     * Add auto start window manager(i.e startx).
-    * Total size = 893736K. Space Used = 93276K.
+    * Total size = 893740K. Space Used = 93288K.
   * Running inst-min-win-01-wm-jwm.sh ...
     * After this operation, 6,665 kB of additional disk space will be used.
     * Install Window Manager: JWM.
     * Set jwmrc.
     * Add alsa key binding.
-    * Total size = 903420K. Space Used = 9684K.
+    * Total size = 903420K. Space Used = 9680K.
   * Running inst-min-win-menu.sh ...
     * After this operation, 1,829 kB of additional disk space will be used.
     * Install menu, an easy way to get installed programs in the menu automatically.
@@ -182,32 +182,32 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Install volume controller in system tray.
     * Set left-click to display volume slider: lmb_slider=true.
     * Set volumeicon to run on JWN startup.
-    * Total size = 933368K. Space Used = 28672K.
+    * Total size = 933372K. Space Used = 28676K.
   * Running inst-min-xtra-fonts-asian.sh ...
     * After this operation, 48.2 MB of additional disk space will be used.
     * Install fonts-hanazono to display Asian characters correctly.
     * Test it by opening website http://ctext.org/zh.
-    * Total size = 999364K. Space Used = 65996K.
+    * Total size = 999368K. Space Used = 65996K.
   * Running inst-min-xtra-gnuplot.sh ...
     * After this operation, 32.0 MB of additional disk space will be used.
     * Install gnuplot.
-    * Total size = 1040692K. Space Used = 41328K.
+    * Total size = 1040692K. Space Used = 41324K.
   * Running inst-min-xtra-java-jre.sh ...
     * After this operation, 66.5 MB of additional disk space will be used.
     * Install JAVA JRE: default-jre.
-    * Total size = 1176012K. Space Used = 135320K.
+    * Total size = 1176004K. Space Used = 135312K.
   * Running inst-min-xtra-locate.sh ...
     * After this operation, 324 kB of additional disk space will be used.
     * Install locate to generate an index of files and directories.
     * You can updatedb and then locate files faster.
-    * Total size = 1176572K. Space Used = 560K.
+    * Total size = 1176572K. Space Used = 568K.
   * Running inst-min-xtra-timezone.sh ...
     * Set time zone to EST (America/Montreal).
-    * Total size = 1176576K. Space Used = 4K.
+    * Total size = 1176580K. Space Used = 8K.
   * Running inst-std-accessories-feh.sh ...
     * After this operation, 5,106 kB of additional disk space will be used.
     * Install command line image viewer: feh.
-    * Total size = 1181620K. Space Used = 5044K.
+    * Total size = 1181620K. Space Used = 5040K.
   * Running inst-std-accessories-galculator.sh ...
     * After this operation, 58.9 MB of additional disk space will be used.
     * Install Calculator: galculator.
@@ -261,7 +261,7 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Install Media Player: MPV.
     * Add multiple aliases for MPV.
     * Add useful mpv keybindings settings.
-    * Total size = 1531304K. Space Used = 86620K.
+    * Total size = 1531300K. Space Used = 86616K.
   * Running inst-std-office-libreoffice.sh ...
     * After this operation, 273 MB of additional disk space will be used.
     * After this operation, 42.4 MB of additional disk space will be used.
@@ -272,99 +272,103 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Install Office Suite: Drawing - libreoffice-draw.
     * NOT install Office Suite: Database - libreoffice-base.
     * NOT install Office Suite: Equation - libreoffice-math.
-    * Total size = 1951588K. Space Used = 420284K.
+    * Total size = 1951580K. Space Used = 420280K.
   * Running inst-std-system-conky.sh ...
     * After this operation, 967 kB of additional disk space will be used.
     * Install System Monitor: conky.
     * Add conky config file: conkyrc.
     * Set conky to run on JWM startup.
     * Add on the fly settings to Conky.
-    * Total size = 1952904K. Space Used = 1316K.
+    * Total size = 1952896K. Space Used = 1316K.
   * Running inst-std-system-disk-manager.sh ...
     * After this operation, 14.3 MB of additional disk space will be used.
     * Install Auto Mount Partition Manager: Disk Manager.
     * Insert disk-manager menu in Administration.
-    * Total size = 1977448K. Space Used = 24544K.
+    * Total size = 1977440K. Space Used = 24544K.
   * Running inst-std-system-gnome-disk-utility.sh ...
     * After this operation, 11.0 MB of additional disk space will be used.
     * Install Partition Manager: gnome-disk-utility.
-    * Total size = 1983712K. Space Used = 6264K.
+    * Total size = 1983704K. Space Used = 6264K.
   * Running inst-std-system-gparted.sh ...
     * After this operation, 17.3 MB of additional disk space will be used.
     * Install Partition Manager: gparted.
     * Insert gparted menu in Administration.
-    * Total size = 1999652K. Space Used = 15940K.
+    * Total size = 1999644K. Space Used = 15940K.
   * Running inst-std-system-keyboard.sh ...
     * Insert keyboard menu in Administration.
-    * Total size = 1999652K. Space Used = 0K.
+    * Total size = 1999644K. Space Used = 0K.
   * Running inst-std-system-monitor-switcher-lxrandr.sh ...
     * After this operation, 779 kB of additional disk space will be used.
     * Install Monitor Switcher: lxrandr.
     * Add lxrandr key binding.
-    * Total size = 1999792K. Space Used = 140K.
+    * Total size = 1999784K. Space Used = 140K.
   * Running inst-std-system-network-wicd.sh ...
     * After this operation, 8,356 kB of additional disk space will be used.
     * Install Network Manager: wicd.
     * For wireless, you have to type in the wireless interface(e.g. wlan0) in the Preferences.
     * Set wicd to run on JWM startup.
     * Log at /var/log/wicd/wicd.log.
-    * Total size = 2012564K. Space Used = 12772K.
+    * Total size = 2012556K. Space Used = 12772K.
   * Running inst-std-system-pavucontrol.sh ...
     * After this operation, 7,067 kB of additional disk space will be used.
     * Install PulseAudio Volume Controller: pavucontrol.
     * Insert pavucontrol menu in Administration.
-    * Total size = 2020064K. Space Used = 7500K.
+    * Total size = 2020056K. Space Used = 7500K.
   * Running inst-std-system-time-zone.sh ...
     * Insert Time Zone menu in Administration.
-    * Total size = 2020064K. Space Used = 0K.
+    * Total size = 2020056K. Space Used = 0K.
   * Running inst-std-system-xtra-webcam-camorama.sh ...
     * After this operation, 41.1 MB of additional disk space will be used.
     * Install webcam: camorama.
-    * Total size = 2051480K. Space Used = 31416K.
+    * Total size = 2051472K. Space Used = 31416K.
   * Running inst-std-system-xtra-webcam-cheese.sh ...
     * After this operation, 8,686 kB of additional disk space will be used.
     * After this operation, 102 MB of additional disk space will be used.
     * Install webcam: cheese.
-    * Total size = 2180812K. Space Used = 129332K.
+    * Total size = 2180804K. Space Used = 129332K.
   * Running inst-xtra-blender.sh ...
     * After this operation, 13.8 MB of additional disk space will be used.
     * After this operation, 178 MB of additional disk space will be used.
     * Install required packages for blender.
     * Install blender.
-    * Total size = 2399552K. Space Used = 218740K.
-  * Running inst-xtra-dev-tools-apt-move.sh ...
+    * Total size = 2399544K. Space Used = 218740K.
+  * Running inst-xtra-cld-dev-tools-apt-move.sh ...
     * After this operation, 430 kB of additional disk space will be used.
     * After this operation, 196 kB of additional disk space will be used.
     * After this operation, 6,105 kB of additional disk space will be used.
     * Install apt-move to create debian local repository.
     * Patch apt-move to support SHA256..
     * Install apache 2 to turn apt-move into a webserver.
-    * Total size = 2410124K. Space Used = 10572K.
-  * Running inst-xtra-dev-tools-debootstrap.sh ...
+    * Total size = 2410120K. Space Used = 10576K.
+  * Running inst-xtra-cld-dev-tools-debootstrap.sh ...
     * After this operation, 234 kB of additional disk space will be used.
     * Install debootstrap allows the creation of a Debian base system int a directory.
-    * Total size = 2410448K. Space Used = 324K.
-  * Running inst-xtra-dev-tools-debtree.sh ...
+    * Total size = 2410444K. Space Used = 324K.
+  * Running inst-xtra-cld-dev-tools-debtree.sh ...
     * After this operation, 13.3 MB of additional disk space will be used.
     * Install debtree and graphviz to view dependencies of packages. Better package selections.
-    * Total size = 2425752K. Space Used = 15304K.
-  * Running inst-xtra-dev-tools-libxml2-utils.sh ...
+    * Total size = 2425752K. Space Used = 15308K.
+  * Running inst-xtra-cld-dev-tools-libxml2-utils.sh ...
     * After this operation, 152 kB of additional disk space will be used.
     * Install libxml2-utils to validate xml file.
     * Total size = 2426040K. Space Used = 288K.
-  * Running inst-xtra-dev-tools-pandoc.sh ...
+  * Running inst-xtra-cld-dev-tools-pandoc.sh ...
     * After this operation, 38.6 MB of additional disk space will be used.
     * Install pandoc to generate user manual.
     * Add documentation: user manual.
     * Add documentation: developer manual.
     * Total size = 2468560K. Space Used = 42520K.
+  * Running inst-xtra-dev-tools-ant.sh ...
+    * After this operation, 2,229 kB of additional disk space will be used.
+    * Install ant.
+    * Total size = 2472596K. Space Used = 4036K.
   * Running inst-xtra-dia.sh ...
     * After this operation, 21.2 MB of additional disk space will be used.
     * Install dia to draw diagrams.
-    * Total size = 2494128K. Space Used = 25568K.
+    * Total size = 2498164K. Space Used = 25568K.
   * Running inst-xtra-fuse.sh ...
     * Install fuse(fusermount) to run TMSU.
-    * Total size = 2494128K. Space Used = 0K.
+    * Total size = 2498164K. Space Used = 0K.
   * Running inst-xtra-open-terminals-on-startup.sh ...
     * After this operation, 19.9 MB of additional disk space will be used.
     * After this operation, 81.9 kB of additional disk space will be used.
@@ -374,11 +378,11 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Install x11-utils for xprop.
     * Copy open-terminal.sh in /root/.
     * Add open-terminal.sh in /root/jwmrc-startup.sh.
-    * Total size = 2521044K. Space Used = 26916K.
+    * Total size = 2525084K. Space Used = 26920K.
   * Running inst-xtra-sqlite.sh ...
     * After this operation, 143 kB of additional disk space will be used.
     * Install Database: sqlite3.
-    * Total size = 2521320K. Space Used = 276K.
+    * Total size = 2525348K. Space Used = 264K.
   * Running inst-xtra-virtualbox-guest-from-scratch.sh ...
     * After this operation, 131 MB of additional disk space will be used.
     * After this operation, 14.7 MB disk space will be freed.
@@ -388,14 +392,14 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
     * VirtualBox guest additions installed: version: 4.3.20.
     * Delete ./settings/binary/VBoxGuestAdditions.iso[56976K]. Space used could be negative due to this deletion.
-    * Total size = 2561220K. Space Used = 39900K.
+    * Total size = 2565256K. Space Used = 39908K.
   * Running inst-xtra-wifite.sh ...
     * After this operation, 80.3 MB of additional disk space will be used.
     * Install wifite.
-    * Total size = 2654620K. Space Used = 93400K.
+    * Total size = 2658656K. Space Used = 93400K.
   * Running inst-xtra-xmpv.sh ...
     * Install xmpv.
-    * Total size = 2654664K. Space Used = 44K.
+    * Total size = 2658700K. Space Used = 44K.
   * Running inst-xtra-zfs.sh ...
     * After this operation, 16.0 MB of additional disk space will be used.
     * After this operation, 79.0 MB of additional disk space will be used.
@@ -404,13 +408,13 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
     * Install debian-zfs: version: 0.6.4-1.2-1.
     * Delete ./settings/binary/zfsonlinux_6_all.deb[1992K].
-    * Total size = 2794944K. Space Used = 140280K.
+    * Total size = 2798976K. Space Used = 140276K.
   * Running inst-zclean-00-zerosizing-docs.sh ...
     * Zero size all documents in /usr/share/.
-    * Total size = 2691448K. Space Used = -103496K.
+    * Total size = 2695448K. Space Used = -103528K.
     * Clean apt-get cache.
     * rm -rf /tmp/*.
     * Umount /sys, /dev/pts and /proc.
     * Add Debian main repositories in sources.list.
     * Delete local Debian repository from sources.list.
-    * Total size = 2090340K. Space Used = -601108K.
+    * Total size = 2092496K. Space Used = -602952K.
