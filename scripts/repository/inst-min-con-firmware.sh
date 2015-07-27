@@ -34,7 +34,11 @@ FIRMWARES_LIST="atmel-firmware \
                 firmware-ralink \
                 firmware-realtek \
                 zd1211-firmware"
-apt-get -y --force-yes install ${FIRMWARES_LIST} 
+# Remove duplicate spaces.
+FIRMWARES_LIST=$(echo ${FIRMWARES_LIST} | tr -s '')
+
+# Install all listed firmwares.                                
+apt-get -y --force-yes install ${FIRMWARES_LIST}
 
 # Log
 echo "${GV_LOG} * Install firmwares: ${FIRMWARES_LIST// /, }."
