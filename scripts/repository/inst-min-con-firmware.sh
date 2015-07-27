@@ -15,11 +15,30 @@ export DEBCONF_DEBUG=developer
 debconf-set-selections ${GV_SETTINGS_DIR}/firmware.seed
 
 # These packages are part of non-free repository.
-FIRMWARES_LIST="atmel-firmware bluez-firmware firmware-atheros firmware-bnx2 firmware-bnx2x firmware-brcm80211 firmware-intelwimax firmware-ipw2x00 firmware-ivtv firmware-iwlwifi firmware-libertas firmware-linux firmware-linux-free firmware-linux-nonfree firmware-qlogic firmware-ralink firmware-realtek zd1211-firmware"
+FIRMWARES_LIST="atmel-firmware \
+                bluez-firmware \
+                firmware-atheros \
+                firmware-bnx2 \
+                firmware-bnx2x \
+                firmware-brcm80211 \
+                firmware-b43-installer \
+                firmware-intelwimax \
+                firmware-ipw2x00 \
+                firmware-ivtv \
+                firmware-iwlwifi \
+                firmware-libertas \
+                firmware-linux \
+                firmware-linux-free \
+                firmware-linux-nonfree \
+                firmware-qlogic \
+                firmware-ralink \
+                firmware-realtek \
+                zd1211-firmware"
 apt-get -y --force-yes install ${FIRMWARES_LIST} 
 
 # Log
 echo "${GV_LOG} * Install firmwares: ${FIRMWARES_LIST// /, }."
+echo "${GV_LOG} * Install b43 for Dell Wireless 1397 WLAN Mini-Card Driver."
 
 # Note:
 # Min: firmware-linux-free firmware-linux-nonfree firmware-atheros firmware-realtek firmware-ralink firmware-iwlwifi
