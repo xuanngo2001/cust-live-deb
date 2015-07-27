@@ -28,7 +28,7 @@ echo "${GV_LOG} * Test it by opening website http://ctext.org/zh."
 # Other languages: http://meta.wikimedia.org/wiki/List_of_Wikipedias
 
     
-### LinuxMing fonts:
+### LinuxMint fonts:
 #apt-get -y --force-yes install fonts-beng
 #apt-get -y --force-yes install fonts-beng-extra
 #apt-get -y --force-yes install fonts-cantarell
