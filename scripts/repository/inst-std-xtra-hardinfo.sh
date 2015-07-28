@@ -12,14 +12,11 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install hardware info apps: hardinfo
 apt-get -y --force-yes install hardinfo
 
+# Insert System Information menu in Administration
+sed -i "/Administration\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-adm-hardinfo.xml" /root/jwmrc-menus.xml
+
 
 # Log
 echo "${GV_LOG} * Install hardware info apps: hardinfo."
+echo "${GV_LOG} * Insert System Information menu in Administration."
 
-
-# REJECTION: hwinfo takes too much space.
-#  * Running inst-xtra-hwinfo.sh ...
-#    * After this operation, 2,357 kB of additional disk space will be used.  (hwinfo)
-#    * After this operation, 467 kB of additional disk space will be used.    (hardinfo)
-#    * Install hardware info apps: hwinfo & hardinfo.
-#    * Total size = 2504508K. Space Used = 3864K.
