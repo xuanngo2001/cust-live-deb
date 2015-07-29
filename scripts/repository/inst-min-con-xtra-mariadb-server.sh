@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 #export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBCONF_DEBUG=developer
-export DEBCONF_DEBUG=developer
+export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
 
 # Preseed mariadb-server password
 debconf-set-selections ${GV_SETTINGS_DIR}/mariadb-server.seed
@@ -21,5 +21,6 @@ apt-get -y --force-yes install mariadb-server
 
 # Log
 echo "${GV_LOG} * Install mariadb-server."
+echo "${GV_LOG} * Set root password to 'password'."
 
 
