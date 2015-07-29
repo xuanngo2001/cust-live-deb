@@ -9,7 +9,14 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Install gnuplot.
+
+#export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBCONF_DEBUG=developer
+export DEBCONF_DEBUG=developer
+
+# Preseed mariadb-server password
+debconf-set-selections ${GV_SETTINGS_DIR}/mariadb-server.seed
+
+# Install mariadb-server.
 apt-get -y --force-yes install mariadb-server
 
 # Log
