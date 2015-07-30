@@ -92,6 +92,13 @@ case "${SYSTEM}" in
 	  ;;
 esac
 
+# Exclude scripts
+cat scripts-ex.lst |     # Supply input from a file.
+while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
+  echo ${LINE}
+  sed -i "/${LINE}/d" ${SCRIPT_LIST}  
+done
+
 # Add clean up scripts.
 grep 'inst-zclean-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
 
