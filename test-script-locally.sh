@@ -1,5 +1,22 @@
 #!/bin/bash
+# Description: Test your installation script on your local system using your local repository.
 
+
+# Error Handling
+##################################################################
+if [ -z "$1" ]; then
+  echo "ERROR: Please provide your installation script that you would like to test."
+  echo " e.g.: $0 my_script.sh"
+  exit 1
+fi
+
+if [ ! -e "$1" ] || [ ! -f "$1" ]; then
+  echo "ERROR: "$1" : No such file."
+  exit 1
+fi
+
+# Main 
+##################################################################
 SCRIPT_NAME="$(basename "$(test -L "$1" && readlink "$1" || echo "$1")")"
 INITIAL_PATH=$(pwd)
 
