@@ -2,7 +2,7 @@
 reset
 set terminal png size 2900, 2300
 set datafile separator ","
-set output "list-script-size-clean.png"
+set output "list-script-size.png"
 
 set xdata time
 set timefmt "%Y-%m-%d"
@@ -25,5 +25,6 @@ set grid
 
 set style data linespoints
 
-plot "list-script-size-clean.txt" using 2:3 title "slot 1"
+# Plot commands will will be appended here.
+
 
