@@ -7,7 +7,8 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-PROXY=your_proxy:8080
+PROXY=proxy.wdf.sap.corp:8080
+#PROXY=your_proxy:8080
 
 
 ## Add proxy setting to /etc/enviroment.
@@ -18,8 +19,8 @@ ftp_proxy="http://${PROXY}"
 HTTP_PROXY="http://${PROXY}"
 HTTPS_PROXY="http://${PROXY}"
 FTP_PROXY="http://${PROXY}"
-no_proxy="localhost,127.0.0.1"
-NO_PROXY="localhost,127.0.0.1"
+no_proxy="localhost,127.0.0.1,qn"
+NO_PROXY="localhost,127.0.0.1,qn"
 EOF
 
 ## Add proxy setting to /etc/apt/apt.conf.d/proxy.
