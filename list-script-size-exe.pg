@@ -1,0 +1,154 @@
+#!/usr/bin/gnuplot
+reset
+
+set terminal png size 2900,2300
+set output "list-script-size.png"
+
+#set terminal svg size 2900,2300 dynamic
+#set output "list-script-size.svg"
+
+set datafile separator ","
+
+set xdata time
+set timefmt "%Y-%m-%d"
+
+set format y "%t"
+set format x "%m-%d"
+
+set xlabel "Date"
+set ylabel "Size in kilobytes"
+
+# Increment of each tic: 1 day = 86400 seconds.
+set xtics 86400
+
+# Set x label vertical.
+set xtics rotate
+
+set title "Size per script"
+set key reverse Left outside
+set grid
+
+set style data linespoints
+
+# Plot commands will will be appended here.
+
+
+plot "./script-size/data/install.sh" using 2:4 title "install.sh", \
+ "./script-size/data/inst-min-con-00-linux-image.sh" using 2:4 title "inst-min-con-00-linux-image.sh", \
+ "./script-size/data/inst-min-con-01-debconf-utils.sh" using 2:4 title "inst-min-con-01-debconf-utils.sh", \
+ "./script-size/data/inst-min-con-01-locale.sh" using 2:4 title "inst-min-con-01-locale.sh", \
+ "./script-size/data/inst-min-con-02-locale.sh" using 2:4 title "inst-min-con-02-locale.sh", \
+ "./script-size/data/inst-min-con-03-proxy.sh" using 2:4 title "inst-min-con-03-proxy.sh", \
+ "./script-size/data/inst-min-con-03-startup-script.sh" using 2:4 title "inst-min-con-03-startup-script.sh", \
+ "./script-size/data/inst-min-con-auto-log-root.sh" using 2:4 title "inst-min-con-auto-log-root.sh", \
+ "./script-size/data/inst-min-con-automount.sh" using 2:4 title "inst-min-con-automount.sh", \
+ "./script-size/data/inst-min-con-automount-udev.sh" using 2:4 title "inst-min-con-automount-udev.sh", \
+ "./script-size/data/inst-min-con-bashrc.sh" using 2:4 title "inst-min-con-bashrc.sh", \
+ "./script-size/data/inst-min-con-cld-tools.sh" using 2:4 title "inst-min-con-cld-tools.sh", \
+ "./script-size/data/inst-min-con-compressors.sh" using 2:4 title "inst-min-con-compressors.sh", \
+ "./script-size/data/inst-min-con-deb-multimedia.sh" using 2:4 title "inst-min-con-deb-multimedia.sh", \
+ "./script-size/data/inst-min-con-filesystem-ntfs-3g.sh" using 2:4 title "inst-min-con-filesystem-ntfs-3g.sh", \
+ "./script-size/data/inst-min-con-firmware-cpu.sh" using 2:4 title "inst-min-con-firmware-cpu.sh", \
+ "./script-size/data/inst-min-con-firmware.sh" using 2:4 title "inst-min-con-firmware.sh", \
+ "./script-size/data/inst-min-con-getpackages.sh" using 2:4 title "inst-min-con-getpackages.sh", \
+ "./script-size/data/inst-min-con-live-build-tools.sh" using 2:4 title "inst-min-con-live-build-tools.sh", \
+ "./script-size/data/inst-min-con-locale.sh" using 2:4 title "inst-min-con-locale.sh", \
+ "./script-size/data/inst-min-con-mariadb-server.sh" using 2:4 title "inst-min-con-mariadb-server.sh", \
+ "./script-size/data/inst-min-con-ntp.sh" using 2:4 title "inst-min-con-ntp.sh", \
+ "./script-size/data/inst-min-con-numlock.sh" using 2:4 title "inst-min-con-numlock.sh", \
+ "./script-size/data/inst-min-con-pciutils.sh" using 2:4 title "inst-min-con-pciutils.sh", \
+ "./script-size/data/inst-min-con-snd-alsa.sh" using 2:4 title "inst-min-con-snd-alsa.sh", \
+ "./script-size/data/inst-min-con-snd-pulseaudio.sh" using 2:4 title "inst-min-con-snd-pulseaudio.sh", \
+ "./script-size/data/inst-min-con-terminal-mlterm.sh" using 2:4 title "inst-min-con-terminal-mlterm.sh", \
+ "./script-size/data/inst-min-con-timezone.sh" using 2:4 title "inst-min-con-timezone.sh", \
+ "./script-size/data/inst-min-con-udevil.sh" using 2:4 title "inst-min-con-udevil.sh", \
+ "./script-size/data/inst-min-con-usbmount.sh" using 2:4 title "inst-min-con-usbmount.sh", \
+ "./script-size/data/inst-min-con-xtra-console-setup.sh" using 2:4 title "inst-min-con-xtra-console-setup.sh", \
+ "./script-size/data/inst-min-con-xtra-eject.sh" using 2:4 title "inst-min-con-xtra-eject.sh", \
+ "./script-size/data/inst-min-con-xtra-fonts-asian.sh" using 2:4 title "inst-min-con-xtra-fonts-asian.sh", \
+ "./script-size/data/inst-min-con-xtra-fonts-unifont.sh" using 2:4 title "inst-min-con-xtra-fonts-unifont.sh", \
+ "./script-size/data/inst-min-con-xtra-java-jre.sh" using 2:4 title "inst-min-con-xtra-java-jre.sh", \
+ "./script-size/data/inst-min-con-xtra-locate.sh" using 2:4 title "inst-min-con-xtra-locate.sh", \
+ "./script-size/data/inst-min-con-xtra-mariadb-server.sh" using 2:4 title "inst-min-con-xtra-mariadb-server.sh", \
+ "./script-size/data/inst-min-con-xtra-ncurses.sh" using 2:4 title "inst-min-con-xtra-ncurses.sh", \
+ "./script-size/data/inst-min-con-xtra-timezone.sh" using 2:4 title "inst-min-con-xtra-timezone.sh", \
+ "./script-size/data/inst-min-win-00-xorg.sh" using 2:4 title "inst-min-win-00-xorg.sh", \
+ "./script-size/data/inst-min-win-01-wm-jwm.sh" using 2:4 title "inst-min-win-01-wm-jwm.sh", \
+ "./script-size/data/inst-min-win-01-wm-openbox.sh" using 2:4 title "inst-min-win-01-wm-openbox.sh", \
+ "./script-size/data/inst-min-win-menu.sh" using 2:4 title "inst-min-win-menu.sh", \
+ "./script-size/data/inst-min-win-systray-volumeicon-alsa.sh" using 2:4 title "inst-min-win-systray-volumeicon-alsa.sh", \
+ "./script-size/data/inst-min-win-systray-volwheel.sh" using 2:4 title "inst-min-win-systray-volwheel.sh", \
+ "./script-size/data/inst-min-xtra-console-setup.sh" using 2:4 title "inst-min-xtra-console-setup.sh", \
+ "./script-size/data/inst-min-xtra-eject.sh" using 2:4 title "inst-min-xtra-eject.sh", \
+ "./script-size/data/inst-min-xtra-fonts-asian.sh" using 2:4 title "inst-min-xtra-fonts-asian.sh", \
+ "./script-size/data/inst-min-xtra-gnuplot.sh" using 2:4 title "inst-min-xtra-gnuplot.sh", \
+ "./script-size/data/inst-min-xtra-java-jre.sh" using 2:4 title "inst-min-xtra-java-jre.sh", \
+ "./script-size/data/inst-min-xtra-locate.sh" using 2:4 title "inst-min-xtra-locate.sh", \
+ "./script-size/data/inst-min-xtra-ncurses.sh" using 2:4 title "inst-min-xtra-ncurses.sh", \
+ "./script-size/data/inst-min-xtra-php5.sh" using 2:4 title "inst-min-xtra-php5.sh", \
+ "./script-size/data/inst-min-xtra-timezone.sh" using 2:4 title "inst-min-xtra-timezone.sh", \
+ "./script-size/data/inst-std-accessories-evince.sh" using 2:4 title "inst-std-accessories-evince.sh", \
+ "./script-size/data/inst-std-accessories-feh.sh" using 2:4 title "inst-std-accessories-feh.sh", \
+ "./script-size/data/inst-std-accessories-fileroller.sh" using 2:4 title "inst-std-accessories-fileroller.sh", \
+ "./script-size/data/inst-std-accessories-galculator.sh" using 2:4 title "inst-std-accessories-galculator.sh", \
+ "./script-size/data/inst-std-accessories-geeqie.sh" using 2:4 title "inst-std-accessories-geeqie.sh", \
+ "./script-size/data/inst-std-accessories-gpicview.sh" using 2:4 title "inst-std-accessories-gpicview.sh", \
+ "./script-size/data/inst-std-accessories-mupdf.sh" using 2:4 title "inst-std-accessories-mupdf.sh", \
+ "./script-size/data/inst-std-accessories-pcmanfm.sh" using 2:4 title "inst-std-accessories-pcmanfm.sh", \
+ "./script-size/data/inst-std-accessories-prtscr-gnome-screenshot.sh" using 2:4 title "inst-std-accessories-prtscr-gnome-screenshot.sh", \
+ "./script-size/data/inst-std-accessories-prtscr-scrot.sh" using 2:4 title "inst-std-accessories-prtscr-scrot.sh", \
+ "./script-size/data/inst-std-accessories-scite.sh" using 2:4 title "inst-std-accessories-scite.sh", \
+ "./script-size/data/inst-std-accessories-terminal-xfce.sh" using 2:4 title "inst-std-accessories-terminal-xfce.sh", \
+ "./script-size/data/inst-std-accessories-thunar.sh" using 2:4 title "inst-std-accessories-thunar.sh", \
+ "./script-size/data/inst-std-accessories-xarchiver.sh" using 2:4 title "inst-std-accessories-xarchiver.sh", \
+ "./script-size/data/inst-std-accessories-xfce-terminal.sh" using 2:4 title "inst-std-accessories-xfce-terminal.sh", \
+ "./script-size/data/inst-std-accessories-xscreensaver.sh" using 2:4 title "inst-std-accessories-xscreensaver.sh", \
+ "./script-size/data/inst-std-graphic-pinta.sh" using 2:4 title "inst-std-graphic-pinta.sh", \
+ "./script-size/data/inst-std-internet-chromium.sh" using 2:4 title "inst-std-internet-chromium.sh", \
+ "./script-size/data/inst-std-internet-iceweseal.sh" using 2:4 title "inst-std-internet-iceweseal.sh", \
+ "./script-size/data/inst-std-multimedia-mpv.sh" using 2:4 title "inst-std-multimedia-mpv.sh", \
+ "./script-size/data/inst-std-office-libreoffice.sh" using 2:4 title "inst-std-office-libreoffice.sh", \
+ "./script-size/data/inst-std-system-conky.sh" using 2:4 title "inst-std-system-conky.sh", \
+ "./script-size/data/inst-std-system-disk-manager.sh" using 2:4 title "inst-std-system-disk-manager.sh", \
+ "./script-size/data/inst-std-system-gkrellm.sh" using 2:4 title "inst-std-system-gkrellm.sh", \
+ "./script-size/data/inst-std-system-gnome-disk-utility.sh" using 2:4 title "inst-std-system-gnome-disk-utility.sh", \
+ "./script-size/data/inst-std-system-gparted.sh" using 2:4 title "inst-std-system-gparted.sh", \
+ "./script-size/data/inst-std-system-keyboard.sh" using 2:4 title "inst-std-system-keyboard.sh", \
+ "./script-size/data/inst-std-system-monitor-switcher-arandr.sh" using 2:4 title "inst-std-system-monitor-switcher-arandr.sh", \
+ "./script-size/data/inst-std-system-monitor-switcher-lxrandr.sh" using 2:4 title "inst-std-system-monitor-switcher-lxrandr.sh", \
+ "./script-size/data/inst-std-system-monitor-switcher.sh" using 2:4 title "inst-std-system-monitor-switcher.sh", \
+ "./script-size/data/inst-std-system-network-network-manager-gnome.sh" using 2:4 title "inst-std-system-network-network-manager-gnome.sh", \
+ "./script-size/data/inst-std-system-network-wicd.sh" using 2:4 title "inst-std-system-network-wicd.sh", \
+ "./script-size/data/inst-std-system-pavucontrol.sh" using 2:4 title "inst-std-system-pavucontrol.sh", \
+ "./script-size/data/inst-std-system-screenlets.sh" using 2:4 title "inst-std-system-screenlets.sh", \
+ "./script-size/data/inst-std-system-time-zone.sh" using 2:4 title "inst-std-system-time-zone.sh", \
+ "./script-size/data/inst-std-system-xtra-hardinfo.sh" using 2:4 title "inst-std-system-xtra-hardinfo.sh", \
+ "./script-size/data/inst-std-system-xtra-webcam-camorama.sh" using 2:4 title "inst-std-system-xtra-webcam-camorama.sh", \
+ "./script-size/data/inst-std-system-xtra-webcam-cheese.sh" using 2:4 title "inst-std-system-xtra-webcam-cheese.sh", \
+ "./script-size/data/inst-std-xtra-hardinfo.sh" using 2:4 title "inst-std-xtra-hardinfo.sh", \
+ "./script-size/data/inst-xtra-blender.sh" using 2:4 title "inst-xtra-blender.sh", \
+ "./script-size/data/inst-xtra-cld-dev-tools-apt-move.sh" using 2:4 title "inst-xtra-cld-dev-tools-apt-move.sh", \
+ "./script-size/data/inst-xtra-cld-dev-tools-debootstrap.sh" using 2:4 title "inst-xtra-cld-dev-tools-debootstrap.sh", \
+ "./script-size/data/inst-xtra-cld-dev-tools-debtree.sh" using 2:4 title "inst-xtra-cld-dev-tools-debtree.sh", \
+ "./script-size/data/inst-xtra-cld-dev-tools-libxml2-utils.sh" using 2:4 title "inst-xtra-cld-dev-tools-libxml2-utils.sh", \
+ "./script-size/data/inst-xtra-cld-dev-tools-pandoc.sh" using 2:4 title "inst-xtra-cld-dev-tools-pandoc.sh", \
+ "./script-size/data/inst-xtra-dev-tools-ant.sh" using 2:4 title "inst-xtra-dev-tools-ant.sh", \
+ "./script-size/data/inst-xtra-dev-tools-apt-move.sh" using 2:4 title "inst-xtra-dev-tools-apt-move.sh", \
+ "./script-size/data/inst-xtra-dev-tools-debootstrap.sh" using 2:4 title "inst-xtra-dev-tools-debootstrap.sh", \
+ "./script-size/data/inst-xtra-dev-tools-debtree.sh" using 2:4 title "inst-xtra-dev-tools-debtree.sh", \
+ "./script-size/data/inst-xtra-dev-tools-libxml2-utils.sh" using 2:4 title "inst-xtra-dev-tools-libxml2-utils.sh", \
+ "./script-size/data/inst-xtra-dev-tools-pandoc.sh" using 2:4 title "inst-xtra-dev-tools-pandoc.sh", \
+ "./script-size/data/inst-xtra-dev-tools.sh" using 2:4 title "inst-xtra-dev-tools.sh", \
+ "./script-size/data/inst-xtra-dia.sh" using 2:4 title "inst-xtra-dia.sh", \
+ "./script-size/data/inst-xtra-fuse.sh" using 2:4 title "inst-xtra-fuse.sh", \
+ "./script-size/data/inst-xtra-hwinfo.sh" using 2:4 title "inst-xtra-hwinfo.sh", \
+ "./script-size/data/inst-xtra-i3lock.sh" using 2:4 title "inst-xtra-i3lock.sh", \
+ "./script-size/data/inst-xtra-open-terminals-on-startup.sh" using 2:4 title "inst-xtra-open-terminals-on-startup.sh", \
+ "./script-size/data/inst-xtra-proxy.sh" using 2:4 title "inst-xtra-proxy.sh", \
+ "./script-size/data/inst-xtra-sqlite.sh" using 2:4 title "inst-xtra-sqlite.sh", \
+ "./script-size/data/inst-xtra-virtualbox-guest-from-scratch.sh" using 2:4 title "inst-xtra-virtualbox-guest-from-scratch.sh", \
+ "./script-size/data/inst-xtra-virtualbox-guest.sh" using 2:4 title "inst-xtra-virtualbox-guest.sh", \
+ "./script-size/data/inst-xtra-wifite.sh" using 2:4 title "inst-xtra-wifite.sh", \
+ "./script-size/data/inst-xtra-xfce4.sh" using 2:4 title "inst-xtra-xfce4.sh", \
+ "./script-size/data/inst-zclean-00-zerosizing-docs.sh" using 2:4 title "inst-zclean-00-zerosizing-docs.sh", \
+ "./script-size/data/inst-zclean-99-end-cleanup.sh" using 2:4 title "inst-zclean-99-end-cleanup.sh"
