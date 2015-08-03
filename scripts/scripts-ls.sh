@@ -95,7 +95,7 @@ esac
 # Exclude scripts
 cat scripts-ex.lst |     # Supply input from a file.
 while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
-  echo ${LINE}
+  echo "Exclude ${LINE}."
   sed -i "/${LINE}/d" ${SCRIPT_LIST}  
 done
 

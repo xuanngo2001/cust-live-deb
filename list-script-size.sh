@@ -4,6 +4,7 @@ cat install-size-history.txt | grep -vE 'zclean|end|Used = 0K' | \
 
 sort -t"," -k2n list-script-size.txt | uniq
 
+## Clean data
 # Ignore 'zclean|end|Used = 0K'
 # Add separate(,) after script name.
 # Add separate(,) after date. Don't retain time.
@@ -11,11 +12,19 @@ sort -t"," -k2n list-script-size.txt | uniq
 # Remove K. at the end.
 # Clean up scriptname: Remove up to repository/
 # Clean up scriptname: Remove up : install.sh/
+# Clean up scriptname: Remove ./
 cat install-size-history.txt | grep -vE 'zclean|end|Used = 0K' | \
   sed 's/\.sh: /.sh, /' | \
   sed 's/_........: CLDS: . Total size = /, /' | \
   sed 's/K. Space Used = /, /' | \
   sed 's/K.$//' | \
   sed 's/.*repository\///' | \
-  sed 's/.*: install.sh/install.sh/' > list-script-size-clean.txt
+  sed 's/.*: install.sh/install.sh/' |\
+  sed 's/^\.\///' > list-script-size-clean.txt
+  
+## Get script name.
+# Remove everything after comma(,).
+cat list-script-size-clean.txt | \
+  sed 's/,.*//g' | \
+  sort | uniq > list-script-size-uniq.txt
   
