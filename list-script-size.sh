@@ -6,11 +6,6 @@ BASE_DIR=./script-size
 ## Ensure required directories are created.
 mkdir -p ${BASE_DIR}/data
 
-#cat install-size-history.txt | grep -vE 'zclean|end|Used = 0K' | \
-#  sed 's/^.*repository\///' | sed 's/sh: .* Used = /sh,/' | sed 's/K.$//' | sed 's/.*: install/install/' | sed 's/\.\/inst-/inst-/' > list-script-size.txt
-
-#sort -t"," -k2n list-script-size.txt | uniq
-
 ## Clean data
 # Ignore 'zclean|end|Used = 0K'
 # Add separate(,) after script name.
@@ -38,8 +33,10 @@ cat ${BASE_DIR}/lss-clean.txt | \
 ## Exclude scripts
 cat list-script-size-ex.lst |     # Supply input from a file.
 while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
-  echo "Exclude ${LINE}."
-  sed -i "/${LINE}/d" ${BASE_DIR}/lss-uniq-names.txt  
+  if [ ! -z ${LINE} ]; then
+    echo "Exclude ${LINE}."
+    sed -i "/${LINE}/d" ${BASE_DIR}/lss-uniq-names.txt
+  fi  
 done
 
 ## Create data set per script and generate gnuplot script
