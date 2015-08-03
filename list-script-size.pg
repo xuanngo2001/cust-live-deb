@@ -12,7 +12,8 @@ set datafile separator ","
 set xdata time
 set timefmt "%Y-%m-%d"
 
-set format y "%t"
+set decimal locale
+set format y "%'8.2f"
 set format x "%m-%d"
 
 set xlabel "Date"
