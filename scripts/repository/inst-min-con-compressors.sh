@@ -8,8 +8,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y --force-yes install bzip2
 apt-get -y --force-yes install rar
+apt-get -y --force-yes install unzip
 
 # Log
-echo "${GV_LOG} * Install bzip2 compressor."
-echo "${GV_LOG} * Install rar compressor."
+echo "${GV_LOG} * Install de/compressor: bzip2."
+echo "${GV_LOG} * Install de/compressor: rar."
+echo "${GV_LOG} * Install de/compressor: unzip."
 
