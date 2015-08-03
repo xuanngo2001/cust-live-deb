@@ -9,8 +9,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 PROXY=your_proxy:8080
 
-
-
 ## Add proxy setting to /etc/enviroment.
 cat > /etc/environment <<EOF
 http_proxy="http://${PROXY}"
