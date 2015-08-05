@@ -19,4 +19,3 @@ a2enmod rewrite
 echo "${GV_LOG} * Install php5-mysql to enable the PDO_MYSQL database driver for PHP and to run Drupal."
 echo "${GV_LOG} * Enable mod_rewrite module."
 
-
