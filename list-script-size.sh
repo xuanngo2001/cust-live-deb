@@ -7,7 +7,6 @@ BASE_DIR=./script-size
 mkdir -p ${BASE_DIR}/data
 
 ## Clean data
-# Ignore 'zclean|end|Used = 0K'
 # Add separate(,) after script name.
 # Add separate(,) after date. Don't retain time.
 # Add separate(,) total size.
@@ -15,7 +14,7 @@ mkdir -p ${BASE_DIR}/data
 # Clean up scriptname: Remove up to repository/
 # Clean up scriptname: Remove up : install.sh/
 # Clean up scriptname: Remove ./
-cat install-size-history.txt | grep -vE 'zclean|end|Used = 0K' | \
+cat install-size-history.txt | \
   sed 's/\.sh: /.sh, /' | \
   sed 's/_........: CLDS: . Total size = /, /' | \
   sed 's/K. Space Used = /, /' | \
