@@ -41,8 +41,11 @@ case "${SYSTEM}" in
     grep 'inst-min-con-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
     grep 'inst-min-win-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
     
-    # No proxy
+    # No proxy settings
     sed -i '/proxy/d' ${SCRIPT_LIST}
+    
+    # No extra
+    sed -i '/-xtra-/d' ${SCRIPT_LIST}
 	  ;;
 
   # Standard system for the general public. Strict minimum with common applications.
@@ -56,6 +59,9 @@ case "${SYSTEM}" in
     
     # No proxy settings
     sed -i '/proxy/d' ${SCRIPT_LIST}
+
+    # No extra
+    sed -i '/-xtra-/d' ${SCRIPT_LIST}
     ;;
     
   home)
