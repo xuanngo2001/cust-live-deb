@@ -3,7 +3,7 @@ Set of scripts to create Custom Live Debian System:
 * Automatically calculate space used of each script.
 * It can remaster itself while running.
 
-# Download
+# Download( TODO )
 It comes in 2 flavors:
 * min: Strict minimum system with JWM light-weight window manager. From there, you can add your desired applications.
 * std: Standard system includes minimum system + common applications.
