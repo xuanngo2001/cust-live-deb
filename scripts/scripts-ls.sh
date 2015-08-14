@@ -63,18 +63,10 @@ case "${SYSTEM}" in
     # No extra
     sed -i '/-xtra-/d' ${SCRIPT_LIST}
     ;;
-    
-  home)
-    # Add inst-min-con- | Add inst-min-win-
-    grep 'inst-min-con-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-    grep 'inst-min-win-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-    
-    # Add inst-std-
-    grep 'inst-std-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
 
-    # Add inst-min-xtra- | Add inst-xtra-
-    grep 'inst-min-xtra-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-    grep 'inst-xtra-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
+  # Most of applications but no proxy settings and no virtualbox. 
+  home)
+    grep -E 'inst-[min|std|xtra]' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
 
     # No proxy settings
     sed -i '/proxy/d' ${SCRIPT_LIST}
