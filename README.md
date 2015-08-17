@@ -4,7 +4,7 @@ Set of scripts to create Custom Live Debian System:
 * It can remaster itself while running.
 
 # Screenshots
-![](https://github.com/limelime/cust-live-deb/blob/master/docs/screenshots/cld_screenshot_01_2015-08-17_16.52.05.jpg)
+![](https://github.com/limelime/cust-live-deb/blob/master/docs/screenshots/cld_screenshot_01.jpg)
 
 # Download( TODO )
 It comes in 2 flavors:
