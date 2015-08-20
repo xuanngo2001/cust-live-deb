@@ -6,7 +6,7 @@
 ##################################################################
 if [ -z "$1" ]; then
   echo "ERROR: Please provide your installation script that you would like to test."
-  echo " e.g.: $0 my_script.sh"
+  echo " e.g.: $0 scripts/repository/my_script.sh"
   exit 1
 fi
 
