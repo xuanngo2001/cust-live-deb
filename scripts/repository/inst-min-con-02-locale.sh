@@ -26,19 +26,9 @@ update-locale LANG=en_US.UTF-8
 cat ${GV_SETTINGS_DIR}/bashrc-locale >> /root/.bashrc
 source /root/.bashrc
 
-### Gave up on these:
-# debconf-set-selections ${GV_SETTINGS_DIR}/locale-config.seed
-# dpkg-reconfigure locales
-
-### Install localepurge to keep locale small
-apt-get -y --force-yes install localepurge
-debconf-set-selections ${GV_SETTINGS_DIR}/localepurge-config.seed
-dpkg-reconfigure localepurge
-
 
 # Log
 echo "${GV_LOG} * Install locale and set it to use en_US.UTF-8."
-echo "${GV_LOG} * Install localepurge to purge non-UTF-8."
 
 
 ### Test
