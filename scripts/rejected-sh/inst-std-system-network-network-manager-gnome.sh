@@ -18,9 +18,9 @@ echo "${GV_LOG} * Run nm-applet to load it in the system tray."
 #  * Running inst-std-system-network-wicd.sh ...
 #    * After this operation, 8,474 kB of additional disk space will be used.
 #    * Install Network Manager: wicd.
-#    * Total size = 1758676K. Space Used = 12960K.
+#    * Disk size = 1758676K. Space Used = 12960K.
 #  * Running inst-std-system-network-network-manager-gnome.sh ...
 #    * After this operation, 29.4 MB of additional disk space will be used.
 #    * Install Network Manager: network-manager-gnome.
 #    * Run nm-applet to load it in the system tray.
-#    * Total size = 1761432K. Space Used = 20816K.
+#    * Disk size = 1761432K. Space Used = 20816K.

@@ -14,7 +14,7 @@ apt-get -y --force-yes install chromium
 # REJECTION
 #  * Running inst-std-internet-chromium.sh ...
 #    * After this operation, 157 MB of additional disk space will be used.
-#    * Total size = 1306428K. Space Used = 193608K.
+#    * Disk size = 1306428K. Space Used = 193608K.
 #  * Running inst-std-internet-iceweseal.sh ...
 #    * After this operation, 78.2 MB of additional disk space will be used.
-#    * Total size = 1414228K. Space Used = 107800K.
+#    * Disk size = 1414228K. Space Used = 107800K.

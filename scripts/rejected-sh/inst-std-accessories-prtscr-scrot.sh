@@ -26,9 +26,9 @@ echo "${GV_LOG} * Insert PrintScreen key binding."
 #    * Install gnome-screenshot to be used for PrintScreen key.
 #    * Insert PrintScreen key binding.
 #    * By default, screenshots are saved under ~/Pictures/.
-#    * Total size = 1189132K. Space Used = 700K.
+#    * Disk size = 1189132K. Space Used = 700K.
 #  * Running inst-std-accessories-prtscr-scrot.sh ...
 #    * After this operation, 944 kB of additional disk space will be used.
 #    * Install scrot to be used for PrintScreen key.
 #    * Insert PrintScreen key binding.
-#    * Total size = 1190360K. Space Used = 1228K.
+#    * Disk size = 1190360K. Space Used = 1228K.

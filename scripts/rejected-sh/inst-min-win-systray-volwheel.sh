@@ -60,7 +60,7 @@ echo "${GV_LOG} * Set VolWheel to run on JWN startup."
 #    * Install volume controller in system tray.
 #    * Set left-click to display volume slider: lmb_slider=true.
 #    * Set volumeicon to run on JWN startup.
-#    * Total size = 905296K. Space Used = 28672K.
+#    * Disk size = 905296K. Space Used = 28672K.
 #  * Running inst-min-win-systray-volwheel.sh ...
 #    * After this operation, 4,858 kB of additional disk space will be used.
-#    * Total size = 939788K. Space Used = 34492K.
+#    * Disk size = 939788K. Space Used = 34492K.

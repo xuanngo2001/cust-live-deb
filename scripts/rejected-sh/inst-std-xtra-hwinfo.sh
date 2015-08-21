@@ -21,4 +21,4 @@ echo "${GV_LOG} * Install hardware info apps: hwinfo."
 #    * After this operation, 2,357 kB of additional disk space will be used.  (hwinfo)
 #    * After this operation, 467 kB of additional disk space will be used.    (hardinfo)
 #    * Install hardware info apps: hwinfo & hardinfo.
-#    * Total size = 2504508K. Space Used = 3864K.
+#    * Disk size = 2504508K. Space Used = 3864K.

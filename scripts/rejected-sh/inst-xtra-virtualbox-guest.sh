@@ -26,7 +26,7 @@ echo "${GV_LOG} * VirtualBox guest additions ${VBOX_GUEST_ADD_VER} installed."
 #    * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 #    * Assumed packages installed: bzip2 & Xserver installed.
 #    * VirtualBox guest additions  installed.
-#    * Total size = 1850644K. Space Used = 94804K.
+#    * Disk size = 1850644K. Space Used = 94804K.
 #
 #  * Running inst-xtra-zfs.sh ...
 #    * After this operation, 99.3 kB of additional disk space will be used.
@@ -36,4 +36,4 @@ echo "${GV_LOG} * VirtualBox guest additions ${VBOX_GUEST_ADD_VER} installed."
 #    * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
 #    * Install debian-zfs.
 #    * Delete ./settings/binary/zfsonlinux_6_all.deb[1992K].
-#    * Total size = 2001816K. Space Used = 151172K.
+#    * Disk size = 2001816K. Space Used = 151172K.

@@ -20,8 +20,8 @@ echo "${GV_LOG} * Install graphicsmagick to process image from command line."
 #  * Running inst-min-con-xtra-graphicsmagick.sh ...
 #    * After this operation, 8,770 kB of additional disk space will be used.
 #    * Install graphicsmagick to process image from command line.
-#    * Total size = 1542756K. Space Used = 10884K.
+#    * Disk size = 1542756K. Space Used = 10884K.
 #  * Running inst-min-con-xtra-imagemagick.sh ...
 #    * After this operation, 12.8 MB of additional disk space will be used.
 #    * Install imagemagick to process image from command line.
-#    * Total size = 1559792K. Space Used = 17036K.
+#    * Disk size = 1559792K. Space Used = 17036K.

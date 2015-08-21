@@ -17,8 +17,8 @@ echo "${GV_LOG} * Install File Manger: pcmanfm."
 #  * Running inst-std-accessories-pcmanfm.sh ...
 #    * After this operation, 6,607 kB of additional disk space will be used.
 #    * Install File Manger: pcmanfm.
-#    * Total size = 1009712K. Space Used = 4444K.
+#    * Disk size = 1009712K. Space Used = 4444K.
 #  * Running inst-std-accessories-thunar.sh ...
 #    * After this operation, 6,485 kB of additional disk space will be used.
 #    * Install File Manger: thunar.
-#    * Total size = 1028808K. Space Used = 4064K.
+#    * Disk size = 1028808K. Space Used = 4064K.

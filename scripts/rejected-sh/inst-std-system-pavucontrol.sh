@@ -28,4 +28,4 @@ echo "${GV_LOG} * Insert pavucontrol menu in Administration."
 #    * After this operation, 7,067 kB of additional disk space will be used.
 #    * Install PulseAudio Volume Controller: pavucontrol.
 #    * Insert pavucontrol menu in Administration.
-#    * Total size = 2922380K. Space Used = 7504K.
+#    * Disk size = 2922380K. Space Used = 7504K.

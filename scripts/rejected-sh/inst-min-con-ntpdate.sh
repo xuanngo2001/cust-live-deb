@@ -16,8 +16,8 @@ echo "${GV_LOG} * Install client for setting system time from NTP servers: ntpda
 #  * Running inst-min-con-ntp.sh ...
 #    * After this operation, 1,871 kB of additional disk space will be used.
 #    * Install Network Time Protocol: ntp.
-#    * Total size = 1207648K. Space Used = 2508K.
+#    * Disk size = 1207648K. Space Used = 2508K.
 #  * Running inst-min-con-ntpdate.sh ...
 #    * After this operation, 233 kB of additional disk space will be used.
 #    * Install client for setting system time from NTP servers: ntpdate.
-#    * Total size = 1207944K. Space Used = 296K.
+#    * Disk size = 1207944K. Space Used = 296K.

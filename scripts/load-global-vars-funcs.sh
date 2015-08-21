@@ -54,7 +54,7 @@ GF_LOG_TOTAL_SIZE ()
   SPACE_USED=$((${CURRENT_TOTAL_SIZE}-${PREV_TOTAL_SIZE}))
   
   # Log total size.
-  echo "${GV_LOG} * Total size = ${CURRENT_TOTAL_SIZE}K. Space Used = ${SPACE_USED}K."
+  echo "${GV_LOG} * Disk size = ${CURRENT_TOTAL_SIZE}K. Space Used = ${SPACE_USED}K."
   
   # Update previous total size.
   echo "PREV_TOTAL_SIZE=${CURRENT_TOTAL_SIZE}" > ${GP_VALUES_FILE}

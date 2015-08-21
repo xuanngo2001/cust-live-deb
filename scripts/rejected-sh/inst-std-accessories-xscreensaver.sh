@@ -18,4 +18,4 @@ echo "${GV_LOG} * Install Screensaver: xscreensaver."
 #  * Running inst-std-accessories-xscreensaver.sh ...
 #    * After this operation, 9,363 kB of additional disk space will be used.
 #    * Install Screensaver: xscreensaver.
-#    * Total size = 1077628K. Space Used = 13680K.
+#    * Disk size = 1077628K. Space Used = 13680K.

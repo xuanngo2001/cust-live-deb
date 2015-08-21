@@ -48,4 +48,4 @@ echo "${GV_LOG} * More settings at https://wiki.debian.org/PulseAudio."
 #    * When running alsamixer, it should show that it is using PulseAudio card.
 #    * Test sound: paplay /usr/share/sounds/alsa/*
 #    * More settings at https://wiki.debian.org/PulseAudio.
-#    * Total size = 1279180K. Space Used = 55256K.
+#    * Disk size = 1279180K. Space Used = 55256K.

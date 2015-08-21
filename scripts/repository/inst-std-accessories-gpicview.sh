@@ -24,8 +24,8 @@ echo "${GV_LOG} * Insert gpicview in Accessories menu."
 #    * After this operation, 8,414 kB of additional disk space will be used.
 #    * Install Image Viewer: geeqie.
 #    * Add alias for geeqie: g.
-#    * Total size = 1201732K. Space Used = 8732K.
+#    * Disk size = 1201732K. Space Used = 8732K.
 #  * Running inst-std-accessories-gpicview.sh ...
 #    * After this operation, 876 kB of additional disk space will be used.
 #    * Install Image Viewer: gpicview.
-#    * Total size = 1202076K. Space Used = 344K.
+#    * Disk size = 1202076K. Space Used = 344K.
