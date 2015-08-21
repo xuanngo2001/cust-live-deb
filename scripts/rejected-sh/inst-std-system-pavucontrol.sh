@@ -22,3 +22,10 @@ echo "${GV_LOG} * Insert pavucontrol menu in Administration."
 # Reference
 # Tutorial: http://askubuntu.com/a/185827
 # Alternative: xfce4-mixer
+
+# REJECTION: Too big. Alsamixer is enough.
+#  * Running inst-std-system-pavucontrol.sh ...
+#    * After this operation, 7,067 kB of additional disk space will be used.
+#    * Install PulseAudio Volume Controller: pavucontrol.
+#    * Insert pavucontrol menu in Administration.
+#    * Total size = 2922380K. Space Used = 7504K.

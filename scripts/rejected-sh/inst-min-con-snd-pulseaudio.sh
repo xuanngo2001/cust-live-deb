@@ -34,3 +34,18 @@ echo "${GV_LOG} * More settings at https://wiki.debian.org/PulseAudio."
 # For surround sound, see https://wiki.debian.org/PulseAudio
 # Run for all users: https://rudd-o.com/linux-and-free-software/how-to-make-pulseaudio-run-once-at-boot-for-all-your-users
 # Utilities & configurations: https://wiki.archlinux.org/index.php/PulseAudio/Configuration
+
+# REJECTION: Too big. Alsa is not as pretty as pulseaudio but it is enough.
+#  * Running inst-min-con-snd-pulseaudio.sh ...
+#    * After this operation, 37.8 MB of additional disk space will be used.
+#    * After this operation, 146 kB of additional disk space will be used.
+#    * After this operation, 5,587 kB of additional disk space will be used.
+#    * After this operation, 90.1 kB of additional disk space will be used.
+#    * Install PulseAudio.
+#    * As root, PulseAudio doesn't run automatically.
+#   * pulseaudio --start --log-target=syslog
+#    * Quick fix: Startup pulseaudio from /root/.bashrc.
+#    * When running alsamixer, it should show that it is using PulseAudio card.
+#    * Test sound: paplay /usr/share/sounds/alsa/*
+#    * More settings at https://wiki.debian.org/PulseAudio.
+#    * Total size = 1279180K. Space Used = 55256K.
