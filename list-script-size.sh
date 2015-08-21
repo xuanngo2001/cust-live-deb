@@ -16,7 +16,7 @@ mkdir -p ${BASE_DIR}/data
 # Clean up scriptname: Remove ./
 cat install-size-history.txt | \
   sed 's/\.sh: /.sh, /' | \
-  sed 's/_........: CLDS: . Total size = /, /' | \
+  sed 's/_........: CLDS: . Disk size = /, /' | \
   sed 's/K. Space Used = /, /' | \
   sed 's/K.$//' | \
   sed 's/.*repository\///' | \
