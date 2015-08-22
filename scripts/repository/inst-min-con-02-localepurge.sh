@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
 
 # Preseed localepurge to purge all, except en, en_US, en_US.UTF-8.
-debconf-set-selections ${GV_SETTINGS_DIR}/localepurge-config.seed
+debconf-set-selections ${GV_SETTINGS_DIR}/localepurge.seed
 
 
 # Install localepurge to keep documentation small.
