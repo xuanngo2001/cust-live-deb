@@ -9,7 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Disable interactive mode
-export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
+#export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
 
 # Preseed localepurge to purge all, except en, en_US, en_US.UTF-8.
 debconf-set-selections ${GV_SETTINGS_DIR}/localepurge.seed
