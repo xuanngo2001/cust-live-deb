@@ -1,7 +1,6 @@
 #!/bin/bash
-# Description: Move active window to the right, left, top, bottom half section of the screen.
+# resizes the window to full height and 50% width and moves into upper right corner
 # Reference: http://unix.stackexchange.com/a/53228
-#            http://ssokolow.com/quicktile/
 
 #define the height in px of the top system-bar:
 TOPMARGIN=0
@@ -41,14 +40,14 @@ case "${SECTION}" in
     X=0
     Y=0
     W=$(( $SCREEN_WIDTH ))
-    H=$(( $SCREEN_WIDTH / 2 ))
+    H=$(( $SCREEN_HEIGHT / 2 ))
     ;;
         
   bottom)
     X=0
-    Y=$(( $SCREEN_WIDTH / 2 ))
+    Y=$(( $SCREEN_HEIGHT / 2 ))
     W=$(( $SCREEN_WIDTH ))
-    H=$(( $SCREEN_WIDTH / 2 ))
+    H=$(( $SCREEN_HEIGHT / 2 ))
     ;;
 
   *)
