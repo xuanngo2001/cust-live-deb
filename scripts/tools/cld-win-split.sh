@@ -1,6 +1,7 @@
 #!/bin/bash
 # Description: Move active window to the right, left, top, bottom half section of the screen.
 # Reference: http://unix.stackexchange.com/a/53228
+#            http://ssokolow.com/quicktile/
 
 #define the height in px of the top system-bar:
 TOPMARGIN=0
