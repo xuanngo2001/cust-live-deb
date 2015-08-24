@@ -1,12 +1,15 @@
 #!/bin/bash
-# resizes the window to full height and 50% width and moves into upper right corner
+# Description: Move active window to the right, left, top, bottom half of the screen.
 # Reference: http://unix.stackexchange.com/a/53228
 
 #define the height in px of the top system-bar:
-TOPMARGIN=27
+TOPMARGIN=0
+
+#define the height in px of the bottom system-bar:
+BOTTOMMARGIN=55
 
 #sum in px of all horizontal borders:
-RIGHTMARGIN=10
+RIGHTMARGIN=7
 
 # get width of screen and height of screen
 SCREEN_WIDTH=$(xwininfo -root | awk '$1=="Width:" {print $2}')
@@ -14,7 +17,7 @@ SCREEN_HEIGHT=$(xwininfo -root | awk '$1=="Height:" {print $2}')
 
 # new width and height
 W=$(( $SCREEN_WIDTH / 2 - $RIGHTMARGIN ))
-H=$(( $SCREEN_HEIGHT - 2 * $TOPMARGIN ))
+H=$(( $SCREEN_HEIGHT - 2 * $TOPMARGIN - $BOTTOMMARGIN ))
 
 # X, change to move left or right:
 
