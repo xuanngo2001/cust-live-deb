@@ -1,30 +1,29 @@
 #!/bin/bash
-# resizes the window to full height and 50% width and moves into upper right corner
+# Description: Move active window to the right, left, top, bottom half section of the screen.
 # Reference: http://unix.stackexchange.com/a/53228
+#            http://ssokolow.com/quicktile/
 
-#define the height in px of the top system-bar:
-TOPMARGIN=0
 
-#define the height in px of the bottom system-bar:
-BOTTOMMARGIN=55
-
-#sum in px of all horizontal borders:
-RIGHTMARGIN=7
-
-# get width of screen and height of screen
+# Get width of screen and height of screen
 SCREEN_WIDTH=$(xwininfo -root | awk '$1=="Width:" {print $2}')
 SCREEN_HEIGHT=$(xwininfo -root | awk '$1=="Height:" {print $2}')
 
 
+#sum in px of all horizontal borders:
+RIGHTMARGIN=5
+
 ### Move window to the corresponding section of the screen.
+## Reduce the screen height due to the bottom system tray bar.
+BOTTOMMARGIN=55 # Define the height in px of the bottom system tray bar.
+SCREEN_HEIGHT=$(( $SCREEN_HEIGHT - $BOTTOMMARGIN ))
+
 SECTION=$(echo $1 | tr '[:upper:]' '[:lower:]')
-echo $SECTION
 case "${SECTION}" in
   
   left)
     X=0
     Y=0
-    W=$(( $SCREEN_WIDTH / 2 ))
+    W=$(( $SCREEN_WIDTH / 2 - $RIGHTMARGIN))
     H=$(( $SCREEN_HEIGHT ))
     
     ;;
@@ -32,7 +31,7 @@ case "${SECTION}" in
   right)
     X=$(( $SCREEN_WIDTH / 2 ))
     Y=0
-    W=$(( $SCREEN_WIDTH / 2 ))
+    W=$(( $SCREEN_WIDTH / 2 - $RIGHTMARGIN))
     H=$(( $SCREEN_HEIGHT ))
     ;;
 
