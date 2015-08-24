@@ -1,5 +1,5 @@
 #!/bin/bash
-# Description: Test your installation script on your local system using your local repository.
+# Description: Test your installation script on your local repository.
 
 
 # Error Handling
