@@ -2,7 +2,6 @@
 # Description: Move active window to the right, left, top, bottom half section of the screen.
 # Reference: http://unix.stackexchange.com/a/53228
 #            http://ssokolow.com/quicktile/
-# Required: wmctrl and xprop
 # Note: xprop FRAME_EXTENTS doesn't seem to give the right number.
 
 # Define menu bar height
@@ -23,6 +22,9 @@ LEFT_OFFSET=$(xprop -id ${ACTIVE_WIN_ID} | grep FRAME_EXTENTS | cut -d '=' -f 2 
 RIGHT_OFFSET=$(xprop -id ${ACTIVE_WIN_ID} | grep FRAME_EXTENTS | cut -d '=' -f 2 | tr -d ' ' | cut -d ',' -f 2)
 TOP_OFFSET=$(xprop -id ${ACTIVE_WIN_ID} | grep FRAME_EXTENTS | cut -d '=' -f 2 | tr -d ' ' | cut -d ',' -f 3)
 BOTTOM_OFFSET=$(xprop -id ${ACTIVE_WIN_ID} | grep FRAME_EXTENTS | cut -d '=' -f 2 | tr -d ' ' | cut -d ',' -f 4)
+
+echo "W x H: $SCREEN_WIDTH x $SCREEN_HEIGHT"
+echo "MENU_BAR_HEIGHT: $MENU_BAR_HEIGHT"
 
 ### Move window to the corresponding section of the screen.
 SECTION=$(echo $1 | tr '[:upper:]' '[:lower:]')
@@ -48,6 +50,8 @@ case "${SECTION}" in
     Y=$(( $TOP_OFFSET ))
     W=$(( $SCREEN_WIDTH - $LEFT_OFFSET - $RIGHT_OFFSET ))
     H=$(( ($SCREEN_HEIGHT-$MENU_BAR_HEIGHT) / 2 - $TOP_OFFSET - $BOTTOM_OFFSET ))
+    
+    echo "Y -> top + height + bottom: $Y -> $TOP_OFFSET + $H + $BOTTOM_OFFSET"
     ;;
         
   bottom)
@@ -55,6 +59,7 @@ case "${SECTION}" in
     Y=$(( ($SCREEN_HEIGHT-$MENU_BAR_HEIGHT) / 2 + $TOP_OFFSET ))
     W=$(( $SCREEN_WIDTH - $LEFT_OFFSET - $RIGHT_OFFSET ))
     H=$(( ($SCREEN_HEIGHT-$MENU_BAR_HEIGHT) / 2 - $TOP_OFFSET - $BOTTOM_OFFSET ))
+    echo "Y -> top + height + bottom: $Y -> $TOP_OFFSET + $H + $BOTTOM_OFFSET"
     ;;
 
   *)
