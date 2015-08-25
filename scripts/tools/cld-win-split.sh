@@ -23,10 +23,6 @@ RIGHT_OFFSET=$(xprop -id ${ACTIVE_WIN_ID} | grep FRAME_EXTENTS | cut -d '=' -f 2
 TOP_OFFSET=$(xprop -id ${ACTIVE_WIN_ID} | grep FRAME_EXTENTS | cut -d '=' -f 2 | tr -d ' ' | cut -d ',' -f 3)
 BOTTOM_OFFSET=$(xprop -id ${ACTIVE_WIN_ID} | grep FRAME_EXTENTS | cut -d '=' -f 2 | tr -d ' ' | cut -d ',' -f 4)
 
-echo $LEFT_OFFSET, $RIGHT_OFFSET, $TOP_OFFSET, $BOTTOM_OFFSET
-echo $VERTICAL_OFFSET, $HORIZONTAL_OFFSET
-
-
 ### Move window to the corresponding section of the screen.
 SECTION=$(echo $1 | tr '[:upper:]' '[:lower:]')
 case "${SECTION}" in
@@ -71,4 +67,3 @@ esac
 
 # When resizing a window, the window must not be in a maximized state.
 wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz && wmctrl -r :ACTIVE: -e 0,$X,$Y,$W,$H
-
