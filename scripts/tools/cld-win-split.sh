@@ -56,4 +56,5 @@ case "${SECTION}" in
     ;;
 esac
 
+# When resizing a window, the window must not be in a maximized state.
 wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz && wmctrl -r :ACTIVE: -e 0,$X,$Y,$W,$H
