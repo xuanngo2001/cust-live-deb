@@ -13,7 +13,7 @@ SCREEN_HEIGHT=$(xwininfo -root | awk '$1=="Height:" {print $2}')
 
 
 ### Calculate the window decorations(title bar height, borders)
-ACTIVE_WIN_ID=$(xprop -root 32x '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)
+ACTIVE_WIN_ID=$(xprop -root 32x '\t$0' _NET_ACTIVE_WINDOW | cut -f 2) # OR: xprop -root _NET_ACTIVE_WINDOW
 # xprop lists the sizes in this order: left, right, top, bottom
 #   Select FRAME_EXTENTS
 #   Get the values
@@ -45,7 +45,7 @@ case "${SECTION}" in
     H=$(( $SCREEN_HEIGHT - $MENU_BAR_HEIGHT ))
     ;;
 
-  top)
+  top|up)
     X=0
     Y=$(( $TOP_OFFSET ))
     W=$(( $SCREEN_WIDTH - $LEFT_OFFSET - $RIGHT_OFFSET ))
