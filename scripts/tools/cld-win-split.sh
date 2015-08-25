@@ -2,6 +2,7 @@
 # Description: Move active window to the right, left, top, bottom half section of the screen.
 # Reference: http://unix.stackexchange.com/a/53228
 #            http://ssokolow.com/quicktile/
+# Required: wmctrl and xprop
 # Note: xprop FRAME_EXTENTS doesn't seem to give the right number.
 
 # Define menu bar height
