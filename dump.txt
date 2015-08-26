@@ -5,6 +5,8 @@ Manually test script within chroot environment.
 -cp repository/YOUR_SCRIPT.sh .
 -source load-global-vars-funcs.sh
 
+/usr/bin/debconf-set-selections
+
 http://murga-linux.com/puppy/viewtopic.php?t=90629
 http://www.murga-linux.com/puppy/viewtopic.php?p=829186#829186
 
