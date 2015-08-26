@@ -10,7 +10,7 @@ export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBCONF_D
 echo "America/Montreal"> /etc/timezone
 
 # Set timezone
-debconf-set-selections ${GV_SETTINGS_DIR}/tzdata-config.seed
+debconf-set-selections -v ${GV_SETTINGS_DIR}/tzdata-config.seed
 dpkg-reconfigure tzdata
 
 # Log

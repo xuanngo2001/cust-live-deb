@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Set macchanger to change MAC address whenever network device is up or down.
-debconf-set-selections ${GV_SETTINGS_DIR}/macchanger.seed
+debconf-set-selections -v ${GV_SETTINGS_DIR}/macchanger.seed
 
 
 # Install macchanger.

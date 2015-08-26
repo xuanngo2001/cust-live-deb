@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 export DEBCONF_DEBUG=developer
 
 # Install wifite
-debconf-set-selections ${GV_SETTINGS_DIR}/wifite-wireshark.seed
+debconf-set-selections -v ${GV_SETTINGS_DIR}/wifite-wireshark.seed
 apt-get -y --force-yes install wifite
 
 # Update wifite to revision 87.

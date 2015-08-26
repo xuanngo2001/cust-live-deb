@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 export DEBCONF_DEBUG=developer
 
 # Preseed firmware licence agreements.
-debconf-set-selections ${GV_SETTINGS_DIR}/firmware.seed
+debconf-set-selections -v ${GV_SETTINGS_DIR}/firmware.seed
 
 # These packages are part of non-free repository.
 FIRMWARES_LIST="atmel-firmware \
