@@ -8,7 +8,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 ### Setup debconf parameters
-export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBCONF_DEBUG=developer
+#export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBCONF_DEBUG=developer
 
 #### Install locale
 # -http://stackoverflow.com/a/20693661
