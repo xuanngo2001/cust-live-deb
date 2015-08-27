@@ -54,7 +54,7 @@ case "${SECTION}" in
     echo "Y -> top + height + bottom: $Y -> $TOP_OFFSET + $H + $BOTTOM_OFFSET"
     ;;
         
-  bottom)
+  bottom|down)
     X=0
     Y=$(( ($SCREEN_HEIGHT-$MENU_BAR_HEIGHT) / 2 + $TOP_OFFSET ))
     W=$(( $SCREEN_WIDTH - $LEFT_OFFSET - $RIGHT_OFFSET ))
