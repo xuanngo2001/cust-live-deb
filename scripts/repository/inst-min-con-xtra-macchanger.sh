@@ -27,6 +27,7 @@ sed -i 's/ENABLE_ON_POST_UP_DOWN=.*/ENABLE_ON_POST_UP_DOWN=true/' /etc/default/m
 # Log
 echo "${GV_LOG} * Install macchanger."
 echo "${GV_LOG} * Set macchanger to change MAC address whenever network device is up or down."
-echo "${GV_LOG} * To configure macchanger: dpkg-reconfigure macchanger"
+echo "${GV_LOG} * To configure macchanger: dpkg-reconfigure macchanger."
+echo "${GV_LOG} * Check whether it is working: macchanger -p eth0."
 
 
