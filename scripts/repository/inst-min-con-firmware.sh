@@ -41,7 +41,6 @@ apt-get -y --force-yes install ${FIRMWARES_LIST}
 
 # Log
 echo "${GV_LOG} * Install firmwares: ${FIRMWARES_LIST// /, }."
-echo "${GV_LOG} * Install b43 for Dell Wireless 1397 WLAN Mini-Card Driver."
 
 # Note:
 # Min: firmware-linux-free firmware-linux-nonfree firmware-atheros firmware-realtek firmware-ralink firmware-iwlwifi
