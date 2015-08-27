@@ -21,7 +21,6 @@ FIRMWARES_LIST="atmel-firmware \
                 firmware-bnx2 \
                 firmware-bnx2x \
                 firmware-brcm80211 \
-                firmware-b43-installer \
                 firmware-intelwimax \
                 firmware-ipw2x00 \
                 firmware-ivtv \
