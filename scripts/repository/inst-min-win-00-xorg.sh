@@ -4,9 +4,6 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
-#export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBCONF_DEBUG=developer
-export DEBCONF_DEBUG=developer
-
 # Install X-Windows=xorg, Window Manager=openbox
 debconf-set-selections -v ${GV_SETTINGS_DIR}/keyboard.seed
 apt-get -y --force-yes install xinit xserver-xorg
