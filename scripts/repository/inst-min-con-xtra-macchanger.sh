@@ -24,8 +24,11 @@ apt-get -y --force-yes install macchanger
 sed -i 's/ENABLE_ON_POST_UP_DOWN=.*/ENABLE_ON_POST_UP_DOWN=true/' /etc/default/macchanger
 
 # Since macchanger's automatic run doesn't work, use systemd to run it.
+# https://wiki.archlinux.org/index.php/MAC_address_spoofing#Method_2:_macchanger
 cp ${GV_SETTINGS_DIR}/macspoof@eth0.service /etc/systemd/system/
+cp ${GV_SETTINGS_DIR}/macspoof@wlan0.service /etc/systemd/system/
 systemctl enable macspoof@eth0.service
+systemctl enable macspoof@wlan0.service
 
 # Log
 echo "${GV_LOG} * Install macchanger."
