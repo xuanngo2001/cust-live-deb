@@ -23,6 +23,9 @@ apt-get -y --force-yes install macchanger
 #   This step is needed because preseed doesn't work.
 sed -i 's/ENABLE_ON_POST_UP_DOWN=.*/ENABLE_ON_POST_UP_DOWN=true/' /etc/default/macchanger
 
+# Since macchanger's automatic run doesn't work, use systemd to run it.
+cp ${GV_SETTINGS_DIR}/macspoof@eth0.service /etc/systemd/system/
+systemctl enable macspoof@eth0.service
 
 # Log
 echo "${GV_LOG} * Install macchanger."
