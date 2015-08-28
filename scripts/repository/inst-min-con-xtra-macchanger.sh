@@ -29,6 +29,7 @@ cp ${GV_SETTINGS_DIR}/macspoof@eth0.service /etc/systemd/system/
 cp ${GV_SETTINGS_DIR}/macspoof@wlan0.service /etc/systemd/system/
 systemctl enable macspoof@eth0.service
 systemctl enable macspoof@wlan0.service
+# Check if the service is enabled correctly: systemctl --no-page -t service -a | grep macc
 
 # Log
 echo "${GV_LOG} * Install macchanger."
