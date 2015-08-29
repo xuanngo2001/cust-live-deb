@@ -1,4 +1,16 @@
-  <Key mask="4" key="Left">exec:/usr/local/bin/cld-win-split.sh left</Key>    <!-- `⌘ + Left` : Move active window to the left half section of the screen. -->
-  <Key mask="4" key="Right">exec:/usr/local/bin/cld-win-split.sh right</Key>  <!-- `⌘ + Right`: Move active window to the right half section of the screen. -->
-  <Key mask="4" key="Up">exec:/usr/local/bin/cld-win-split.sh top</Key>       <!-- `⌘ + Up`: Move active window to the top half section of the screen. -->
-  <Key mask="4" key="Down">exec:/usr/local/bin/cld-win-split.sh bottom</Key>  <!-- `⌘ + Down` : Move active window to the bottom half section of the screen. -->
+  <Key mask="CA" key="Left">exec:/usr/local/bin/cld-win-split.sh left</Key>    <!-- `⌘ + Left` : Move active window to the left half section of the screen. -->
+  <Key mask="CA" key="Right">exec:/usr/local/bin/cld-win-split.sh right</Key>  <!-- `⌘ + Right`: Move active window to the right half section of the screen. -->
+  <Key mask="CA" key="Up">exec:/usr/local/bin/cld-win-split.sh top</Key>       <!-- `⌘ + Up`: Move active window to the top half section of the screen. -->
+  <Key mask="CA" key="Down">exec:/usr/local/bin/cld-win-split.sh bottom</Key>  <!-- `⌘ + Down` : Move active window to the bottom half section of the screen. -->
+
+  <Key mask="CA" key="7">exec:/usr/local/bin/cld-win-split.sh 7</Key>    <!-- `Ctrl + Alt + 7` : Move active window to the top-left section of the screen. -->
+  <Key mask="CA" key="8">exec:/usr/local/bin/cld-win-split.sh 8</Key>    <!-- `Ctrl + Alt + 8` : Move active window to the top-center section of the screen. -->
+  <Key mask="CA" key="9">exec:/usr/local/bin/cld-win-split.sh 9</Key>    <!-- `Ctrl + Alt + 9` : Move active window to the top-right section of the screen. -->
+
+  <Key mask="CA" key="4">exec:/usr/local/bin/cld-win-split.sh 4</Key>    <!-- `Ctrl + Alt + 4` : Move active window to the middle-left section of the screen. -->
+  <Key mask="CA" key="5">exec:/usr/local/bin/cld-win-split.sh 5</Key>    <!-- `Ctrl + Alt + 5` : Move active window to the center of the screen. -->
+  <Key mask="CA" key="6">exec:/usr/local/bin/cld-win-split.sh 6</Key>    <!-- `Ctrl + Alt + 6` : Move active window to the middle-right section of the screen. -->
+
+  <Key mask="CA" key="1">exec:/usr/local/bin/cld-win-split.sh 1</Key>    <!-- `Ctrl + Alt + 1` : Move active window to the bottom-left section of the screen. -->
+  <Key mask="CA" key="2">exec:/usr/local/bin/cld-win-split.sh 2</Key>    <!-- `Ctrl + Alt + 2` : Move active window to the bottom-center of the screen. -->
+  <Key mask="CA" key="3">exec:/usr/local/bin/cld-win-split.sh 3</Key>    <!-- `Ctrl + Alt + 3` : Move active window to the bottom-right section of the screen. -->
