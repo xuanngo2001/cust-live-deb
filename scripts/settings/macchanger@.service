@@ -1,13 +1,16 @@
+# Manpage: http://www.freedesktop.org/software/systemd/man/systemd.unit.html
+
 [Unit]
-Description=macchanger on %I
+Description=Run macchanger on %i
 Wants=network-pre.target
 Before=network-pre.target
 BindsTo=sys-subsystem-net-devices-%i.device
 After=sys-subsystem-net-devices-%i.device
+ConditionPathIsSymbolicLink=/sys/class/net/%i
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/macchanger -e %I
+ExecStart=/usr/bin/macchanger -e %i
 
 [Install]
 WantedBy=multi-user.target
