@@ -26,8 +26,8 @@ sed -i 's/ENABLE_ON_POST_UP_DOWN=.*/ENABLE_ON_POST_UP_DOWN=true/' /etc/default/m
 # Since macchanger's automatic run doesn't work, use systemd to run it.
 # https://wiki.archlinux.org/index.php/MAC_address_spoofing#Method_2:_macchanger
 cp ${GV_SETTINGS_DIR}/macchanger@.service /etc/systemd/system/
-#systemctl enable macchanger@eth0.service
-#systemctl enable macchanger@wlan0.service
+systemctl enable macchanger@eth0.service
+systemctl enable macchanger@wlan0.service
 # Check if the service is enabled correctly: systemctl --no-page -t service -a | grep macc
 
 # Log
@@ -36,6 +36,11 @@ echo "${GV_LOG} * Set macchanger to change MAC address whenever network device i
 echo "${GV_LOG} * To configure macchanger: dpkg-reconfigure macchanger."
 echo "${GV_LOG} * Check whether it is working: macchanger -s eth0."
 echo "${GV_LOG} * systemctl status macchanger@wlan0.service"
+
+# Debug:
+#   systemctl --no-page list-unit-files
+#   systemctl --no-page --failed --all
+#   systemctl daemon-reload
 
 # Reference:
 #   -https://evilzone.org/tutorials/mac-spoofing-with-systemd/
