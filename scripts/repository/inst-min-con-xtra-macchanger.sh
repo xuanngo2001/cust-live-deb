@@ -41,8 +41,12 @@ echo "${GV_LOG} * systemctl status macchanger@wlan0.service"
 #   systemctl --no-page list-unit-files
 #   systemctl --no-page --failed --all
 #   systemctl daemon-reload
+#   systemctl list-units -t service --all --no-page | grep macc
 
 # Reference:
 #   -https://evilzone.org/tutorials/mac-spoofing-with-systemd/
 #   -https://wiki.archlinux.org/index.php/MAC_address_spoofing
 #   -https://wiki.archlinux.org/index.php/Wicd
+
+#   Alternative:
+#     -http://xmodulo.com/spoof-mac-address-network-interface-linux.html

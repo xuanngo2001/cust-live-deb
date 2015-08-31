@@ -12,3 +12,5 @@ apt-get -y --force-yes install mtp-tools
 echo "${GV_LOG} * Install mtp-tools to mount smartphones."
 
 
+# Reference: 
+#   -https://wiki.archlinux.org/index.php/MTP
