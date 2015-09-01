@@ -26,9 +26,12 @@ sed -i 's/ENABLE_ON_POST_UP_DOWN=.*/ENABLE_ON_POST_UP_DOWN=true/' /etc/default/m
 # Since macchanger's automatic run doesn't work, use systemd to run it.
 # https://wiki.archlinux.org/index.php/MAC_address_spoofing#Method_2:_macchanger
 cp ${GV_SETTINGS_DIR}/macchanger@.service /etc/systemd/system/
-systemctl enable macchanger@eth0.service
-systemctl enable macchanger@wlan0.service
+#systemctl enable macchanger@eth0.service
+#systemctl enable macchanger@wlan0.service
 # Check if the service is enabled correctly: systemctl --no-page -t service -a | grep macc
+
+
+cp ${GV_SETTINGS_DIR}/macchanger-udev.rules /etc/udev/rules.d/
 
 # Log
 echo "${GV_LOG} * Install macchanger."
