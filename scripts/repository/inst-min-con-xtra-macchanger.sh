@@ -9,9 +9,14 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# HORRIBLE: Auto run macchanger is a mess.
+#    - Debian's automatic/run seed doesn't work.
+#    - Using systemd service, change MAC on eth0 but not on wlan0 because if wlan0 doesn't exist, you have to wait for the 2 minutes timeout.
+#    - Using udev rule, change MAC on wlan0 but not on eth0 because I don't know why it doesn't work on eth0.
+
 
 # Preseed macchanger to change MAC address whenever network device is up or down.
-#   Note: It doesn't work but this prevents question being asked.
+#   Note: It doesn't work. It always set to false. But this prevents question being asked.
 debconf-set-selections -v ${GV_SETTINGS_DIR}/macchanger.seed
 
 
@@ -26,7 +31,7 @@ sed -i 's/ENABLE_ON_POST_UP_DOWN=.*/ENABLE_ON_POST_UP_DOWN=true/' /etc/default/m
 # Since macchanger's automatic run doesn't work, use systemd to run it.
 # https://wiki.archlinux.org/index.php/MAC_address_spoofing#Method_2:_macchanger
 cp ${GV_SETTINGS_DIR}/macchanger@.service /etc/systemd/system/
-#systemctl enable macchanger@eth0.service
+systemctl enable macchanger@eth0.service
 #systemctl enable macchanger@wlan0.service
 # Check if the service is enabled correctly: systemctl --no-page -t service -a | grep macc
 
