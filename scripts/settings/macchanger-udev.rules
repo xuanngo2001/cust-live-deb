@@ -1,3 +1,2 @@
 SUBSYSTEM=="net", ENV{DEVTYPE}=="wlan", RUN+="/usr/bin/macchanger -e $env{INTERFACE}"
-SUBSYSTEM=="net", ENV{DEVTYPE}=="eth", RUN+="/usr/bin/macchanger -e $env{INTERFACE}"
 

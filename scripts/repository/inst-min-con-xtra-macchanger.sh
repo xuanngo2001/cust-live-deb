@@ -35,7 +35,7 @@ systemctl enable macchanger@eth0.service
 #systemctl enable macchanger@wlan0.service
 # Check if the service is enabled correctly: systemctl --no-page -t service -a | grep macc
 
-
+# Use udev rule to change MAC address on wlan0. 
 cp ${GV_SETTINGS_DIR}/macchanger-udev.rules /etc/udev/rules.d/
 
 # Log
