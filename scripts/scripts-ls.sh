@@ -105,4 +105,4 @@ grep 'inst-zclean-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
 sort -u ${SCRIPT_LIST} -o ${SCRIPT_LIST}
 
 
-echo "Scripts name added in ${SCRIPT_LIST} for ${SYSTEM} system."
+echo "List of script names added in ${SCRIPT_LIST} for [${SYSTEM}] system."
