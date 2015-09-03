@@ -19,6 +19,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   Note: It doesn't work. It always set to false. But this prevents question being asked.
 debconf-set-selections -v ${GV_SETTINGS_DIR}/macchanger.seed
 
+echo "macchanger macchanger/automatically_run boolean true" | debconf-set-selections -v
 
 # Install macchanger.
 apt-get -y --force-yes install macchanger
