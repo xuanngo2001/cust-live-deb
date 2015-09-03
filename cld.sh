@@ -7,7 +7,7 @@ case "${ACTION}" in
         # Update manuals.
         ./update-manual.sh
 
-        SYSTEM=$1
+        SYSTEM=$(echo $2 | tr '[:upper:]' '[:lower:]')
         # All below is a one-liner.
         ./build-live.sh && \
           chroot chroot/ /bin/bash -c "cd /root/scripts; \
