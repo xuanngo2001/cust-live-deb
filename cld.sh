@@ -1,34 +1,33 @@
 #!/bin/bash
 set -e
-ACTION=$(echo $1 | tr '[:upper:]' '[:lower:]')
-case "${ACTION}" in
-  
-  build)
-        # Update manuals.
-        ./update-manual.sh
+# Description: Main script to create Cust-Live-Deb system.
 
-        SYSTEM=$(echo $2 | tr '[:upper:]' '[:lower:]')
-        # All below is a one-liner.
-        ./build-live.sh && \
-          chroot chroot/ /bin/bash -c "cd /root/scripts; \
-                                       chmod +x scripts-ls.sh; \
-                                       ./scripts-ls.sh ${SYSTEM}; \
-                                       chmod +x install.sh; \
-                                       ./install.sh" && \
-        ./mkiso.sh ${SYSTEM}
+SYSTEM=$(echo $1 | tr '[:upper:]' '[:lower:]')
+DEB_REPO_URL=$(echo $2 | tr '[:upper:]' '[:lower:]')
 
-        # Reference:
-        # chroot usage: http://stackoverflow.com/a/8157973
+## Error handling
+####################
+if [ "$#" -ne 2 ]; then
+  echo "Error: Illegal number of parameters."
+  echo "   e.g. $0 SYSTEM DEB_REPO_URL"
+fi
+
+
+### Main
+####################
+# Update manuals.
+./update-manual.sh
+
+
+# All below is a one-liner. Stop everything if failed.
+./build-live.sh ${DEB_REPO_URL} && \
+  chroot chroot/ /bin/bash -c "cd /root/scripts; \
+                               chmod +x scripts-ls.sh; \
+                               ./scripts-ls.sh ${SYSTEM}; \
+                               chmod +x install.sh; \
+                               ./install.sh" && \
+./mkiso.sh ${SYSTEM}
+
+# Reference:
+# chroot usage: http://stackoverflow.com/a/8157973
     
-    ;;
-
-  right)
- 
-    ;;
-
-  *)
-    echo "ERROR: Please provide ACTION(i.e. left, right, top or bottom)"
-    echo "   e.g. $0 right"
-    exit 1
-    ;;
-esac
