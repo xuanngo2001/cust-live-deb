@@ -3,19 +3,27 @@ set -e
 ACTION=$(echo $1 | tr '[:upper:]' '[:lower:]')
 case "${ACTION}" in
   
-  left)
-    X=$LEFT_OFFSET
-    Y=0
-    W=$(( $SCREEN_WIDTH / 2 - $LEFT_OFFSET - $RIGHT_OFFSET ))
-    H=$SCREEN_HEIGHT
+  build)
+        # Update manuals.
+        ./update-manual.sh
+
+        SYSTEM=$1
+        # All below is a one-liner.
+        ./build-live.sh && \
+          chroot chroot/ /bin/bash -c "cd /root/scripts; \
+                                       chmod +x scripts-ls.sh; \
+                                       ./scripts-ls.sh ${SYSTEM}; \
+                                       chmod +x install.sh; \
+                                       ./install.sh" && \
+        ./mkiso.sh ${SYSTEM}
+
+        # Reference:
+        # chroot usage: http://stackoverflow.com/a/8157973
     
     ;;
 
   right)
-    X=$(( $SCREEN_WIDTH / 2 + $LEFT_OFFSET ))
-    Y=0
-    W=$(( $SCREEN_WIDTH / 2 - $LEFT_OFFSET - $RIGHT_OFFSET ))
-    H=$SCREEN_HEIGHT  
+ 
     ;;
 
   *)
