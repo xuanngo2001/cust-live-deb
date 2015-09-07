@@ -1,8 +1,19 @@
 #!/bin/bash
-# Description: Move active window to the right, left, top, bottom half section of the screen.
+# Description: Tiling on JWM. Move active window to the right, left, top, bottom half section of the screen.
 # Reference: http://unix.stackexchange.com/a/53228
 #            http://ssokolow.com/quicktile/
+#            https://github.com/TheWanderer/stiler/tree/master
 # Note: xprop FRAME_EXTENTS doesn't seem to give the right number.
+#
+#    Screen section layout
+#    +-----------+
+#    | 7 | 8 | 9 |
+#    +-----------+
+#    | 4 | 5 | 6 |
+#    +-----------+
+#    | 1 | 2 | 3 |
+#    +-----------+
+
 
 # Define menu bar height
 MENU_BAR_HEIGHT=55
