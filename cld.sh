@@ -11,14 +11,15 @@ if [ "$#" -ne 2 ]; then
   echo "ERROR: Illegal number of parameters."
   echo "   e.g. $0 SYSTEM DEB_REPO_URL"
   echo "   e.g. $0 std http://ftp.debian.org/debian/"
+  echo "   e.g. $0 min http://localhost/debian-repo/"
   exit 1;
 fi
 
 
 ### Main
 ####################
-# Update manuals.
-./update-manual.sh
+# Create manuals.
+./cld-create-manuals.sh
 
 
 # All below is a one-liner. Stop everything if any failure.
