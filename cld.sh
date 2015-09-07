@@ -19,14 +19,14 @@ fi
 ./update-manual.sh
 
 
-# All below is a one-liner. Stop everything if failed.
-./build-live.sh ${DEB_REPO_URL} && \
+# All below is a one-liner. Stop everything if any failure.
+./cld-build-live.sh ${DEB_REPO_URL} && \
   chroot chroot/ /bin/bash -c "cd /root/scripts; \
                                chmod +x scripts-ls.sh; \
                                ./scripts-ls.sh ${SYSTEM}; \
                                chmod +x install.sh; \
                                ./install.sh" && \
-./mkiso.sh ${SYSTEM}
+./cld-mkiso.sh ${SYSTEM}
 
 # Reference:
 # chroot usage: http://stackoverflow.com/a/8157973
