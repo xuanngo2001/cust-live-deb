@@ -54,6 +54,6 @@ echo "${GV_LOG} * systemctl status macchanger@eth0.service"
 #   -https://evilzone.org/tutorials/mac-spoofing-with-systemd/
 #   -https://wiki.archlinux.org/index.php/MAC_address_spoofing
 #   -https://wiki.archlinux.org/index.php/Wicd
-
+#   -Script to auto run macchanger: http://comments.gmane.org/gmane.linux.distributions.tails.devel/3778
 #   Alternative:
 #     -http://xmodulo.com/spoof-mac-address-network-interface-linux.html
