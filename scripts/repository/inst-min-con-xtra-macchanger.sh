@@ -19,8 +19,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   Note: It doesn't work. It always set to false. But this prevents question being asked.
 debconf-set-selections -v ${GV_SETTINGS_DIR}/macchanger.seed
 
-echo "macchanger macchanger/automatically_run boolean true" | debconf-set-selections -v
-
 # Install macchanger.
 apt-get -y --force-yes install macchanger
 
@@ -44,7 +42,7 @@ echo "${GV_LOG} * Install macchanger."
 echo "${GV_LOG} * Set macchanger to change MAC address whenever network device is up or down."
 echo "${GV_LOG} * To configure macchanger: dpkg-reconfigure macchanger."
 echo "${GV_LOG} * Check whether it is working: macchanger -s eth0."
-echo "${GV_LOG} * systemctl status macchanger@wlan0.service"
+echo "${GV_LOG} * systemctl status macchanger@eth0.service"
 
 # Debug:
 #   systemctl --no-page list-unit-files
