@@ -57,7 +57,7 @@ yes | cp ${INSTALL_LOG} install-log/${NEW_INSTALL_LOG_NAME}
 
 # Update README.md
 ##################################################################
-./update-readme.sh
+./cld-update-readme.sh
 
 
 
