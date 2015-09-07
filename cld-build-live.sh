@@ -15,8 +15,7 @@ fi
 
 # Build live system.
 LIVE_SYSTEM_DIR=chroot
-DEB_REPO_URL=http://localhost/debian-repo/
-#DEB_REPO_URL=http://http.debian.net/debian/
+
 
 rm -rf ${LIVE_SYSTEM_DIR}
 debootstrap --no-check-gpg --arch=amd64 jessie ${LIVE_SYSTEM_DIR} ${DEB_REPO_URL}
