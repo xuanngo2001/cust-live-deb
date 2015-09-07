@@ -8,9 +8,10 @@ DEB_REPO_URL=$(echo $2 | tr '[:upper:]' '[:lower:]')
 ## Error handling
 ####################
 if [ "$#" -ne 2 ]; then
-  echo "Error: Illegal number of parameters."
+  echo "ERROR: Illegal number of parameters."
   echo "   e.g. $0 SYSTEM DEB_REPO_URL"
   echo "   e.g. $0 std http://ftp.debian.org/debian/"
+  exit 1;
 fi
 
 

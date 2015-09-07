@@ -9,7 +9,7 @@ if [ -z "${DEB_REPO_URL}" ]; then
   echo "ERROR: Please provide DEB_REPO_URL."
   echo "   e.g. $0 http://ftp.debian.org/debian/"
   echo "   e.g. $0 http://localhost/debian-repo/"
-  exit 1
+  exit 1;
 fi
 
 
