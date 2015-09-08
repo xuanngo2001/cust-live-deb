@@ -21,4 +21,4 @@ sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-win-split.xml" /root/
 
 # Log
 echo "${GV_LOG} * Install required applications for cld-win-split.sh: wmctrl and x11-utils for xprop."
-echo "${GV_LOG} * Add keybings: Ctrl+Alt+Left, Right, Up, Down, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+echo "${GV_LOG} * Add key bindings: Ctrl+Alt+Left, Right, Up, Down, 1, 2, 3, 4, 5, 6, 7, 8, 9.
