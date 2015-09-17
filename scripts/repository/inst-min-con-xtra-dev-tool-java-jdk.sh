@@ -12,6 +12,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install default-jdk
 
 # Log
-echo "${GV_LOG} * Install JAVA JRE: default-jdk."
+echo "${GV_LOG} * Install JAVA JDK: default-jdk."
 
 

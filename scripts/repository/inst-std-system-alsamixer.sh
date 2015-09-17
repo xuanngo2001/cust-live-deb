@@ -13,5 +13,5 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 sed -i "/Administration\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-adm-alsamixer.xml" /root/jwmrc-menus.xml
 
 # Log
-echo "${GV_LOG} * Insert Alsa Mixer menu in Administration."
+echo "${GV_LOG} * Insert Alsamixer menu in Administration."
 

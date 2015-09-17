@@ -21,7 +21,4 @@ sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-win-split.xml" /root/
 
 # Log
 echo "${GV_LOG} * Install required applications for cld-win-split.sh: wmctrl and x11-utils for xprop."
-echo "${GV_LOG} * Add ⌘ + Left : Move active window to the left half section of the screen."
-echo "${GV_LOG} * Add ⌘ + Right: Move active window to the right half section of the screen."
-echo "${GV_LOG} * Add ⌘ + Up: Move active window to the top half section of the screen."
-echo "${GV_LOG} * Add ⌘ + Down : Move active window to the bottom half section of the screen."
+echo "${GV_LOG} * Add key bindings: Ctrl+Alt+Left, Right, Up, Down, 1, 2, 3, 4, 5, 6, 7, 8, 9.
