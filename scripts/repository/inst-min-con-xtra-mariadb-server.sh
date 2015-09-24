@@ -17,9 +17,6 @@ echo "mariadb-server-10.0 mysql-server/root_password_again password ${ROOT_PASSW
 # Install mariadb-server.
 apt-get -y --force-yes install mariadb-server
 
-# Shutdown mariadb-server
-mysqladmin -u root -p${ROOT_PASSWORD} shutdown
-
 # Log
 echo "${GV_LOG} * Install mariadb-server."
 echo "${GV_LOG} * Set root password to ${ROOT_PASSWORD}."
