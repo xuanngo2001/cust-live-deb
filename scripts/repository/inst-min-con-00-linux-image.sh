@@ -10,10 +10,15 @@ mount none -t devpts /dev/pts
 export HOME=/root
 export LC_ALL=C
 
+# Always use the latest version of the repository.
 apt-get update
+apt-get -y --force-yes dist-upgrade 
+
+# Install basic packages.
 apt-get -y --force-yes install dialog dbus
 dbus-uuidgen > /var/lib/dbus/machine-id
 apt-get -y --force-yes install linux-image-amd64 live-boot
+
 
 # Create /boot/initrd.img-*
 mkinitramfs -d /etc/initramfs-tools -o /boot/initrd.img-$(uname -r)  -r /

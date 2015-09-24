@@ -6,17 +6,25 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Temporarily use the original update-initramfs.
+###rm -f /usr/sbin/update-initramfs
+###ln -s /usr/sbin/update-initramfs.orig.initramfs-tools /usr/sbin/update-initramfs
 
 # Install required packages.
 apt-get -y --force-yes install lsb-release libc6-dev
 
-# Instal ZFS
+# Install ZFS
 ZFS_REPO_KEY_DEB=${GV_BINARY_DIR}/zfsonlinux_6_all.deb
 ZFS_REPO_KEY_DEB_SIZE=$(GF_SIZE_OF ${ZFS_REPO_KEY_DEB})
 dpkg -i ${ZFS_REPO_KEY_DEB}
 apt-get update
 apt-get -y --force-yes install debian-zfs
 rm -f ${ZFS_REPO_KEY_DEB}
+
+
+# Revert back to use live-update-initramfs.
+###rm -f /usr/sbin/update-initramfs
+###ln -s /bin/live-update-initramfs /usr/sbin/update-initramfs
 
 # Log
 ZFS_VERSION=$(modinfo zfs | grep ^version | tr -s ' ')
