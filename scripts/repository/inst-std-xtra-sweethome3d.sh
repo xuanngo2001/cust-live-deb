@@ -24,5 +24,12 @@ SWEETHOME3D_LIST=$(echo ${SWEETHOME3D_LIST} | tr -s ' ')
 # Install all listed sweethome3d.                                
 apt-get -y --force-yes install ${SWEETHOME3D_LIST}
 
+# Install the latest version
+SWEETHOME3D_JAR=SweetHome3D-5.0.jar
+SWEETHOME3D_DIR=${GV_BINARY_DIR}/sweet-home-3d
+
+yes | cp ${SWEETHOME3D_DIR}/${SWEETHOME3D_JAR} /usr/share/sweethome3d/sweethome3d.jar
+
 # Log
 echo "${GV_LOG} * Install Sweet Home 3D: ${SWEETHOME3D_LIST// /, }."
+echo "${GV_LOG} * Update Sweet Home 3D to ${SWEETHOME3D_JAR}."
