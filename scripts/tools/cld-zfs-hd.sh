@@ -7,7 +7,7 @@ set -e
 #   -HD model     : ST3000DM001
 #   -Serial number: 1CH288_Z1F59ABC
 
-# Error handling: stop if zpool doesn't exit
+# Error handling: stop if zpool doesn't exist
 ZPOOL_CMD=zpool
 command -v ${ZPOOL_CMD} > /dev/null 2>&1 || { echo >&2 "ERROR: ${ZPOOL_CMD} not found."; exit 1; }
 
