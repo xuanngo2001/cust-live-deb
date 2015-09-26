@@ -3,6 +3,10 @@
 # Usage: ./feh-ss.sh filelist.txt 
 #       You have to press ENTER to mark your position.
 
+# Error handling: stop if feh doesn't exist
+FEH_CMD=feh
+command -v ${FEH_CMD} > /dev/null 2>&1 || { echo >&2 "ERROR: ${FEH_CMD} not found."; exit 1; }
+
 FILELIST=$1
 
 # Error Handling
