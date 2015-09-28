@@ -24,7 +24,7 @@ apt-get -y --force-yes install debian-zfs
 rm -f ${ZFS_REPO_KEY_DEB}
 
 # Change default behavior: Don't allow the last 1.6% of space in the pool instead of 3.2%.
-yes | cp -v ${GV_SETTINGS_DIR}/zfs.conf /etc/modprobe.d/ 
+yes | cp ${GV_SETTINGS_DIR}/zfs.conf /etc/modprobe.d/ 
 
 # Revert back to use live-update-initramfs.
 ###rm -f /usr/sbin/update-initramfs
