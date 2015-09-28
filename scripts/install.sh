@@ -7,6 +7,9 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 chmod +x *.sh
 chmod +x ./repository/*.sh
 
+# Make copy verbose.
+alias cp="cp -v"
+
 # Load global variables and functions.
 . ./load-global-vars-funcs.sh
 
