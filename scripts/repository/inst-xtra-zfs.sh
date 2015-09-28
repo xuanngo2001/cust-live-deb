@@ -2,6 +2,8 @@
 set -e
 # Global variables:
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
+# ${GV_SETTINGS_DIR}: Hold settings data.
+# ${GV_BINARY_DIR}: Hold settings binary data.
 
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
@@ -21,6 +23,8 @@ apt-get update
 apt-get -y --force-yes install debian-zfs
 rm -f ${ZFS_REPO_KEY_DEB}
 
+# Change default behavior: Don't allow the last 1.6% of space in the pool instead of 3.2%.
+yes | cp -v ${GV_SETTINGS_DIR}/zfs.conf /etc/modprobe.d/ 
 
 # Revert back to use live-update-initramfs.
 ###rm -f /usr/sbin/update-initramfs
@@ -36,6 +40,8 @@ echo "${GV_LOG} * Add zfsonlinux repository to /etc/apt/sources.list.d/zfsonlinu
 echo "${GV_LOG} * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg."
 echo "${GV_LOG} * Install debian-zfs: ${ZFS_VERSION}."
 echo "${GV_LOG} * Delete ${ZFS_REPO_KEY_DEB}[${ZFS_REPO_KEY_DEB_SIZE}K]."
+echo "${GV_LOG} * Change default behavior: Don't allow the last 1.6% of space in the pool instead of 3.2%."
+
 
 # Reference:
 # Tried packages from big to small:
