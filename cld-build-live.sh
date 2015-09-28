@@ -13,10 +13,8 @@ if [ -z "${DEB_REPO_URL}" ]; then
 fi
 
 
-# Build live system.
+# Boot strap the minimum live system.
 LIVE_SYSTEM_DIR=chroot
-
-
 rm -rf ${LIVE_SYSTEM_DIR}
 debootstrap --no-check-gpg --arch=amd64 jessie ${LIVE_SYSTEM_DIR} ${DEB_REPO_URL}
 
