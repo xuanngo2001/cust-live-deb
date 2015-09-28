@@ -11,25 +11,36 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install sweethome3d
-SWEETHOME3D_LIST="sweethome3d \
+SH3D_LIST="sweethome3d \
 									sweethome3d-furniture \
 									sweethome3d-furniture-nonfree \
 									sweethome3d-furniture-editor \
 									sweethome3d-textures-editor"
 									
 # Remove duplicate spaces.
-SWEETHOME3D_LIST=$(echo ${SWEETHOME3D_LIST} | tr -s ' ')
+SH3D_LIST=$(echo ${SH3D_LIST} | tr -s ' ')
 
 
 # Install all listed sweethome3d.                                
-apt-get -y --force-yes install ${SWEETHOME3D_LIST}
+apt-get -y --force-yes install ${SH3D_LIST}
 
 # Install the latest version
-SWEETHOME3D_JAR=SweetHome3D-5.0.jar
-SWEETHOME3D_DIR=${GV_BINARY_DIR}/sweet-home-3d
+SH3D_DIR=${GV_BINARY_DIR}/sweet-home-3d
 
-yes | cp ${SWEETHOME3D_DIR}/${SWEETHOME3D_JAR} /usr/share/sweethome3d/sweethome3d.jar
+SH3D_JAR=SweetHome3D-5.0.jar
+SH3D_TEXTURE_EDITOR_JAR=TexturesLibraryEditor-1.4.jar
+SH3D_FURNITURE_EDITOR_JAR=FurnitureLibraryEditor-1.17.jar
+
+yes | cp ${SH3D_DIR}/${SH3D_JAR}                  /usr/share/sweethome3d/sweethome3d.jar
+yes | cp ${SH3D_DIR}/${SH3D_TEXTURE_EDITOR_JAR}   /usr/share/sweethome3d/sweethome3d-textures-editor.jar
+yes | cp ${SH3D_DIR}/${SH3D_FURNITURE_EDITOR_JAR} /usr/share/sweethome3d/sweethome3d-furniture-editor.jar
+
 
 # Log
-echo "${GV_LOG} * Install Sweet Home 3D: ${SWEETHOME3D_LIST// /, }."
-echo "${GV_LOG} * Update Sweet Home 3D to ${SWEETHOME3D_JAR}."
+echo "${GV_LOG} * Install Sweet Home 3D: ${SH3D_LIST// /, }."
+echo "${GV_LOG} * Update to ${SH3D_JAR}."
+echo "${GV_LOG} * Update to ${SH3D_TEXTURE_EDITOR_JAR}."
+echo "${GV_LOG} * Update to ${SH3D_FURNITURE_EDITOR_JAR}."
+
+
+
