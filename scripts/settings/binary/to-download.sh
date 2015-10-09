@@ -14,5 +14,5 @@ echo "Manually download SweetHome3D-5.0.jar."
 echo "Manually download TexturesLibraryEditor-1.4.jar."
 echo "Manually download FurnitureLibraryEditor-1.17.jar."
 
-# DL GanttProject
-echo "Manually download http://www.ganttproject.biz/download"
+# DL ProjectLibre
+echo "Manually download http://www.projectlibre.org/"
