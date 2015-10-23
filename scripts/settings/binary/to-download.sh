@@ -16,3 +16,5 @@ echo "Manually download FurnitureLibraryEditor-1.17.jar."
 
 # DL ProjectLibre
 echo "Manually download http://www.projectlibre.org/"
+
+echo "Manually download https://github.com/drush-ops/drush/archive/master.zip"
