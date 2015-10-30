@@ -18,6 +18,20 @@ if ! [[ "${PERSISTENCE_IMG_SIZE}" =~ ${IS_NUMBER_RE} ]] ; then
 fi
 
 
+# Check for free space
+####################################
+function GET_FREE_SPACE_KB()
+{
+  local LOCATION=$1
+  local FREE_SPACE_MB=$(df -k --output=avail ${LOCATION} | tail -1 )
+  echo ${FREE_SPACE_MB}
+}
+FREE_SPACE_KB=$(GET_FREE_SPACE_KB $(realpath .))
+PERSISTENCE_IMG_SIZE_KB=$((PERSISTENCE_IMG_SIZE*1024))
+if [ "${PERSISTENCE_IMG_SIZE_KB}" -gt "${FREE_SPACE_KB}" ]; then
+  echo "Error: Not enough space. Wanted ${PERSISTENCE_IMG_SIZE}MB but only has $((${FREE_SPACE_KB}/1024))MB. Aborted!" >&2; exit 1
+fi
+
 # Create an ext4-based image file to be used for persistence
 ####################################
 PERSISTENCE_IMG_FILE=persistence
