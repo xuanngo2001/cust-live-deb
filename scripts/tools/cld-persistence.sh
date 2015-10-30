@@ -3,6 +3,21 @@ set -e
 # Description: Create a persistent image file.
 PERSISTENCE_IMG_SIZE=$1
 
+# Error handling
+####################################
+if [ -z "${PERSISTENCE_IMG_SIZE}" ]; then
+    echo "Error: Missing argument. Add size number in megabytes. Aborted!"
+    echo "   e.g.: $0 <SIZE_IN_MB> "
+    echo "   e.g.: $0 2048"
+    exit 1;
+fi
+
+IS_NUMBER_RE='^[0-9]+$'
+if ! [[ "${PERSISTENCE_IMG_SIZE}" =~ ${IS_NUMBER_RE} ]] ; then
+   echo "Error: ${PERSISTENCE_IMG_SIZE} is not a number. Aborted!" >&2; exit 1
+fi
+
+
 # Create an ext4-based image file to be used for persistence
 ####################################
 PERSISTENCE_IMG_FILE=persistence
