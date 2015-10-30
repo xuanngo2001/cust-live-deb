@@ -17,6 +17,11 @@ if ! [[ "${PERSISTENCE_IMG_SIZE}" =~ ${IS_NUMBER_RE} ]] ; then
    echo "Error: ${PERSISTENCE_IMG_SIZE} is not a number. Aborted!" >&2; exit 1
 fi
 
+MIN_SIZE_MB=16
+if [ "${PERSISTENCE_IMG_SIZE}" -lt "${MIN_SIZE_MB}" ]; then
+  echo "Error: Persistence image size(${PERSISTENCE_IMG_SIZE} MB) is too small, need more than ${MIN_SIZE_MB} MB. Aborted!" >&2; exit 1
+fi
+
 
 # Check for free space
 ####################################
@@ -29,7 +34,7 @@ function GET_FREE_SPACE_KB()
 FREE_SPACE_KB=$(GET_FREE_SPACE_KB $(realpath .))
 PERSISTENCE_IMG_SIZE_KB=$((PERSISTENCE_IMG_SIZE*1024))
 if [ "${PERSISTENCE_IMG_SIZE_KB}" -gt "${FREE_SPACE_KB}" ]; then
-  echo "Error: Not enough space. Wanted ${PERSISTENCE_IMG_SIZE}MB but only has $((${FREE_SPACE_KB}/1024))MB. Aborted!" >&2; exit 1
+  echo "Error: Not enough space. Wanted ${PERSISTENCE_IMG_SIZE} MB but only has $((${FREE_SPACE_KB}/1024)) MB. Aborted!" >&2; exit 1
 fi
 
 # Create an ext4-based image file to be used for persistence
