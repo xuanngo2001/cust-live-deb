@@ -5,6 +5,7 @@ set -e
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
 # ${GV_SETTINGS_DIR}: Hold settings data.
 # ${GV_BINARY_DIR}: Hold settings binary data.
+# ${GV_CLD_ROOT_DIR}: Hold settings and scripts files for Cust-Live-Deb.
 
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
@@ -15,13 +16,13 @@ apt-get -y --force-yes install wmctrl
 apt-get -y --force-yes install x11-utils
 
 # Make open-terminals.sh run when JWM start. 
-cp ${GV_SETTINGS_DIR}/open-terminals.sh /root/
-chmod +x /root/open-terminals.sh
-cat ${GV_SETTINGS_DIR}/jwmrc-startup-open-terminals.sh >> /root/jwmrc-startup.sh
+yes | cp ${GV_SETTINGS_DIR}/open-terminals.sh "${GV_CLD_ROOT_DIR}"
+chmod +x "${GV_CLD_ROOT_DIR}/open-terminals.sh"
+cat ${GV_SETTINGS_DIR}/jwmrc-startup-open-terminals.sh >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
 # Log
 echo "${GV_LOG} * Install x11-xserver-utils for xrandr."
 echo "${GV_LOG} * Install wmctrl."
 echo "${GV_LOG} * Install x11-utils for xprop."
-echo "${GV_LOG} * Copy open-terminal.sh in /root/."
-echo "${GV_LOG} * Add open-terminal.sh in /root/jwmrc-startup.sh."
+echo "${GV_LOG} * Copy open-terminal.sh in ${GV_CLD_ROOT_DIR}."
+echo "${GV_LOG} * Add open-terminal.sh in ${GV_CLD_ROOT_DIR}/jwmrc-startup.sh."
