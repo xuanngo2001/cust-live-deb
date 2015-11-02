@@ -5,6 +5,7 @@ set -e
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
 # ${GV_SETTINGS_DIR}: Hold settings data.
 # ${GV_BINARY_DIR}: Hold settings binary data.
+# ${GV_CLD_ROOT_DIR}: Hold settings and scripts files for Cust-Live-Deb.
 
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
@@ -14,7 +15,7 @@ apt-get -y --force-yes install gnome-screenshot
 
 
 # Insert gnome-screenshot to bind with PrintScreen key.
-sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-printscreen-gnome-screenshot.xml" /root/jwmrc-key.xml
+sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-printscreen-gnome-screenshot.xml" "${GV_CLD_ROOT_DIR}/jwmrc-key.xml"
 
 # Log
 echo "${GV_LOG} * Install gnome-screenshot to be used for PrintScreen key."
