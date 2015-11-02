@@ -22,7 +22,7 @@ export GV_INSTALL_SIZE=/root/scripts/install.size
 # APT sources list file
 export GV_SOURCES_LIST=/etc/apt/sources.list
 
-# Folder containing setting and scripts files for Cust-Live-Deb
+# Folder containing settings and scripts files for Cust-Live-Deb
 export GV_CLD_ROOT_DIR=/root/cld
 mkdir -p "${GV_CLD_ROOT_DIR}"
 
