@@ -56,7 +56,7 @@ sort install-size-history.txt | uniq | grep <script-name>
 # Customizations Performed
   * Running install.sh ...
     * Running on SHELL=/bin/bash VER=4.3.30(1)-release
-    * Disk size = 393028K. Space Used = 393028K.
+    * Disk size = 393072K. Space Used = 393072K.
   * Running inst-min-con-00-linux-image.sh ...
     * After this operation, 3111 kB of additional disk space will be used.
     * After this operation, 224 MB of additional disk space will be used.
@@ -64,38 +64,40 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
     * Install Linux image.
     * Set APT to skip installing recommended packages.
-    * Disk size = 713028K. Space Used = 320000K.
+    * Disk size = 713080K. Space Used = 320008K.
   * Running inst-min-con-01-debconf-utils.sh ...
     * After this operation, 157 kB of additional disk space will be used.
     * Install debconf-utils to use debconf-set-selections.
-    * Disk size = 713264K. Space Used = 236K.
+    * Disk size = 713304K. Space Used = 224K.
   * Running inst-min-con-02-locale.sh ...
     * After this operation, 16.3 MB of additional disk space will be used.
     * Install locale and set it to use en_US.UTF-8.
-    * Disk size = 735988K. Space Used = 22724K.
+    * Disk size = 736028K. Space Used = 22724K.
   * Running inst-min-con-02-localepurge.sh ...
     * After this operation, 334 kB of additional disk space will be used.
     * Install localepurge to purge documentation of all languages, except en, en_US, en_US.UTF-8.
     * Reconfigure localepurge: dpkg-reconfigure localepurge
-    * Disk size = 736728K. Space Used = 740K.
+    * Disk size = 736768K. Space Used = 740K.
+  * Running inst-min-con-03-proxy.sh ...
+    * Disk size = 736776K. Space Used = 8K.
   * Running inst-min-con-03-startup-script.sh ...
     * Copy startup.sh to /etc/init.d/.
     * Make it executable.
     * Register it in the boot sequence.
-    * Disk size = 736732K. Space Used = 4K.
+    * Disk size = 736780K. Space Used = 4K.
   * Running inst-min-con-04-block-services-start-postinstall.sh ...
     * Block services from starting after they are being installed.
-    * Disk size = 736736K. Space Used = 4K.
+    * Disk size = 736784K. Space Used = 4K.
   * Running inst-min-con-auto-log-root.sh ...
-    * Disk size = 736744K. Space Used = 8K.
+    * Disk size = 736792K. Space Used = 8K.
   * Running inst-min-con-bashrc.sh ...
     * Set common settings for /root/.bashrc.
     * Set dircolors to use dircolors-gnu-ls-colors.txt to make ls more beautiful.
-    * Disk size = 736752K. Space Used = 8K.
+    * Disk size = 736800K. Space Used = 8K.
   * Running inst-min-con-cld-dev-tools-debootstrap.sh ...
     * After this operation, 234 kB of additional disk space will be used.
     * Install debootstrap allows the creation of a Debian base system int a directory.
-    * Disk size = 737072K. Space Used = 320K.
+    * Disk size = 737120K. Space Used = 320K.
   * Running inst-min-con-cld-tools.sh ...
     * Copied tools/cld-bash-color-meaning.sh to /usr/local/bin/.
     * Copied tools/cld-dd-usb.sh to /usr/local/bin/.
@@ -109,11 +111,11 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Copied tools/feh-ss.sh to /usr/local/bin/.
     * Copied tools/fimg.sh to /usr/local/bin/.
     * Copied tools/lspace.sh to /usr/local/bin/.
-    * Disk size = 737124K. Space Used = 52K.
+    * Disk size = 737172K. Space Used = 52K.
   * Running inst-min-con-compressors.sh ...
     * After this operation, 122 kB of additional disk space will be used.
     * After this operation, 812 kB of additional disk space will be used.
-    * After this operation, 395 kB of additional disk space will be used.
+    * After this operation, 346 kB of additional disk space will be used.
     * After this operation, 607 kB of additional disk space will be used.
     * After this operation, 927 kB of additional disk space will be used.
     * Install de/compressor: bzip2.
@@ -121,31 +123,31 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Install de/compressor: unzip.
     * Install de/compressor: zip.
     * Install de/compressor: p7zip.
-    * Disk size = 741144K. Space Used = 4020K.
+    * Disk size = 741184K. Space Used = 4012K.
   * Running inst-min-con-deb-multimedia.sh ...
     * Install ./settings/binary/deb-multimedia-keyring_2015.6.1_all.deb.
     * Add deb-multimedia sources list.
     * Delete ./settings/binary/deb-multimedia-keyring_2015.6.1_all.deb[12K].
     * apt-get update
-    * Disk size = 742496K. Space Used = 1352K.
+    * Disk size = 742536K. Space Used = 1352K.
   * Running inst-min-con-filesystem-ntfs-3g.sh ...
     * After this operation, 2,087 kB of additional disk space will be used.
     * Install support for NTFS: ntfs-3g.
-    * Disk size = 745488K. Space Used = 2992K.
+    * Disk size = 745528K. Space Used = 2992K.
   * Running inst-min-con-firmware-cpu.sh ...
     * After this operation, 47.1 kB of additional disk space will be used.
     * After this operation, 655 kB of additional disk space will be used.
     * Install CPU firmware: amd64-microcode.
     * Install CPU firmware: intel-microcode.
-    * Disk size = 746812K. Space Used = 1324K.
+    * Disk size = 746852K. Space Used = 1324K.
   * Running inst-min-con-firmware-net-b43-installer.sh ...
     * After this operation, 158 kB of additional disk space will be used.
     * Install b43 for Dell Wireless 1397 WLAN Mini-Card Driver.
-    * Disk size = 748128K. Space Used = 1316K.
+    * Disk size = 748180K. Space Used = 1328K.
   * Running inst-min-con-firmware.sh ...
     * After this operation, 41.7 MB of additional disk space will be used.
     * Install firmwares: atmel-firmware, bluez-firmware, firmware-atheros, firmware-bnx2, firmware-bnx2x, firmware-brcm80211, firmware-intelwimax, firmware-ipw2x00, firmware-ivtv, firmware-iwlwifi, firmware-libertas, firmware-linux, firmware-linux-free, firmware-linux-nonfree, firmware-qlogic, firmware-ralink, firmware-realtek, zd1211-firmware.
-    * Disk size = 801824K. Space Used = 53696K.
+    * Disk size = 801876K. Space Used = 53696K.
   * Running inst-min-con-live-build-tools.sh ...
     * After this operation, 110 kB of additional disk space will be used.
     * After this operation, 1,789 kB of additional disk space will be used.
@@ -155,130 +157,173 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Note: boot.cat is automatically created.
     * Install rsync to copy directories.
     * Install squashfs-tools to create new squashfs.
-    * Disk size = 805388K. Space Used = 3564K.
+    * Disk size = 805444K. Space Used = 3568K.
   * Running inst-min-con-mtp-tools.sh ...
     * After this operation, 2,114 kB of additional disk space will be used.
     * Install mtp-tools to mount smartphones.
-    * Disk size = 807940K. Space Used = 2552K.
+    * Disk size = 807992K. Space Used = 2548K.
   * Running inst-min-con-ntp.sh ...
     * After this operation, 1,871 kB of additional disk space will be used.
     * Install Network Time Protocol: ntp.
-    * Disk size = 810444K. Space Used = 2504K.
+    * Disk size = 810504K. Space Used = 2512K.
   * Running inst-min-con-numlock.sh ...
     * After this operation, 4,381 kB of additional disk space will be used.
     * Install numlockx to turn on NumLock on boot.
-    * Disk size = 816952K. Space Used = 6508K.
+    * Disk size = 817016K. Space Used = 6512K.
   * Running inst-min-con-pciutils.sh ...
     * After this operation, 1,181 kB of additional disk space will be used.
     * Install pciutils to troubleshoot pci devices(i.e. lspci).
-    * Disk size = 818520K. Space Used = 1568K.
+    * Disk size = 818584K. Space Used = 1568K.
   * Running inst-min-con-snd-alsa.sh ...
     * After this operation, 5,270 kB of additional disk space will be used.
     * Install ALSA sound.
     * Test sound: aplay /usr/share/sounds/alsa/*.
     * Add key bindings.
-    * Disk size = 826368K. Space Used = 7848K.
+    * Disk size = 826428K. Space Used = 7844K.
   * Running inst-min-con-udevil.sh ...
     * After this operation, 500 kB of additional disk space will be used.
     * Install udevil to auto mount USB devices.
     * Set devmon to auto start on startup.
     * You need ntfs-3g driver to be able to write on ntfs partition.
-    * Disk size = 826696K. Space Used = 328K.
+    * Disk size = 826764K. Space Used = 336K.
+  * Running inst-min-con-xtra-dev-tool-java-jdk.sh ...
+    * After this operation, 141 MB of additional disk space will be used.
+    * Install JAVA JDK: default-jdk.
+    * Disk size = 1043996K. Space Used = 217232K.
+  * Running inst-min-con-xtra-dev-tool-tree.sh ...
+    * After this operation, 102 kB of additional disk space will be used.
+    * Install tree to display files and directories structure.
+    * Disk size = 1044168K. Space Used = 172K.
+  * Running inst-min-con-xtra-gnuplot.sh ...
+    * After this operation, 34.1 MB of additional disk space will be used.
+    * Install gnuplot.
+    * Disk size = 1088204K. Space Used = 44036K.
+  * Running inst-min-con-xtra-imagemagick.sh ...
+    * After this operation, 13.0 MB of additional disk space will be used.
+    * Install imagemagick to process image from command line.
+    * Disk size = 1105568K. Space Used = 17364K.
+  * Running inst-min-con-xtra-java-jre.sh ...
+    * Install JAVA JRE: default-jre.
+    * Disk size = 1105568K. Space Used = 0K.
+  * Running inst-min-con-xtra-locate.sh ...
+    * After this operation, 324 kB of additional disk space will be used.
+    * Install locate to generate an index of files and directories.
+    * You can updatedb and then locate files faster.
+    * Disk size = 1106124K. Space Used = 556K.
+  * Running inst-min-con-xtra-macchanger.sh ...
+    * After this operation, 622 kB of additional disk space will be used.
+    * Install macchanger.
+    * Set macchanger to change MAC address whenever network device is up or down.
+    * To configure macchanger: dpkg-reconfigure macchanger.
+    * Check whether it is working: macchanger -s eth0.
+    * systemctl status macchanger@eth0.service
+    * Disk size = 1107012K. Space Used = 888K.
+  * Running inst-min-con-xtra-mariadb-server.sh ...
+    * After this operation, 131 MB of additional disk space will be used.
+    * Disk size = 1359608K. Space Used = 252596K.
+  * Running inst-min-con-xtra-php5.sh ...
+    * After this operation, 32.0 MB of additional disk space will be used.
+    * Install php5.
+    * Disk size = 1401404K. Space Used = 41796K.
+  * Running inst-min-con-xtra-timezone.sh ...
+    * Set time zone to EST (America/Montreal) in /etc/timezone.
+    * Disk size = 1401404K. Space Used = 0K.
   * Running inst-min-win-00-xorg.sh ...
-    * After this operation, 72.5 MB of additional disk space will be used.
+    * After this operation, 67.7 MB of additional disk space will be used.
     * Set keyboard to use US international.
     * Install minimum Xorg X server.
     * Install xinit so you can run startx.
     * Add auto start window manager(i.e startx).
-    * Disk size = 920516K. Space Used = 93820K.
+    * Disk size = 1487944K. Space Used = 86540K.
   * Running inst-min-win-01-wm-jwm.sh ...
-    * After this operation, 6,665 kB of additional disk space will be used.
+    * After this operation, 2,639 kB of additional disk space will be used.
     * Install Window Manager: JWM.
     * Set jwmrc.
-    * Add alsa key binding.
-    * Disk size = 930192K. Space Used = 9676K.
+    * Disk size = 1491728K. Space Used = 3784K.
   * Running inst-min-win-cld-dev-tools-pandoc.sh ...
-    * After this operation, 39.0 MB of additional disk space will be used.
+    * After this operation, 38.6 MB of additional disk space will be used.
     * Install pandoc to generate user manual.
     * Add documentation: user manual.
     * Add documentation: developer manual.
-    * Disk size = 973244K. Space Used = 43052K.
+    * Disk size = 1534264K. Space Used = 42536K.
   * Running inst-min-win-cld-win-split.sh ...
     * After this operation, 81.9 kB of additional disk space will be used.
-    * After this operation, 777 kB of additional disk space will be used.
-    * Install required applications for cld-win-split.sh: wmctrl and x11-utils for xprop.
-    * Add key bindings: Ctrl+Alt+Left, Right, Up, Down, 1, 2, 3, 4, 5, 6, 7, 8, 9.
-    * Disk size = 974556K. Space Used = 1312K.
+    * After this operation, 654 kB of additional disk space will be used.
+    * Disk size = 1535328K. Space Used = 1064K.
+  * Running inst-min-win-jwm-keys-alsa.sh ...
+    * Add ALSA key binding.
+    * Add script to auto-detect ALSA controller on JWM startup.
+    * Disk size = 1535332K. Space Used = 4K.
   * Running inst-min-win-menu.sh ...
     * After this operation, 1,829 kB of additional disk space will be used.
     * Install menu, an easy way to get installed programs in the menu automatically.
-    * Disk size = 975824K. Space Used = 1268K.
+    * Disk size = 1536616K. Space Used = 1284K.
   * Running inst-min-win-systray-volumeicon-alsa.sh ...
-    * After this operation, 41.7 MB of additional disk space will be used.
+    * After this operation, 243 kB of additional disk space will be used.
     * Install volume controller in system tray.
     * Set left-click to display volume slider: lmb_slider=true.
     * Set volumeicon to run on JWN startup.
-    * Disk size = 1004292K. Space Used = 28468K.
+    * Disk size = 1537084K. Space Used = 468K.
+  * Running inst-min-xtra-fonts-asian.sh ...
+    * After this operation, 48.2 MB of additional disk space will be used.
+    * Install fonts-hanazono to display Asian characters correctly.
+    * Test it by opening website http://ctext.org/zh.
+    * Disk size = 1603068K. Space Used = 65984K.
   * Running inst-std-accessories-feh.sh ...
-    * After this operation, 5,145 kB of additional disk space will be used.
+    * After this operation, 4,308 kB of additional disk space will be used.
     * Install command line image viewer: feh.
-    * Disk size = 1009484K. Space Used = 5192K.
+    * Disk size = 1606884K. Space Used = 3816K.
   * Running inst-std-accessories-galculator.sh ...
-    * After this operation, 59.1 MB of additional disk space will be used.
+    * After this operation, 56.3 MB of additional disk space will be used.
     * Install Calculator: galculator.
     * Insert galculator in Accessories menu.
-    * Disk size = 1067756K. Space Used = 58272K.
+    * Disk size = 1661820K. Space Used = 54936K.
   * Running inst-std-accessories-gpicview.sh ...
     * After this operation, 876 kB of additional disk space will be used.
     * Install Image Viewer: gpicview.
     * Insert gpicview in Accessories menu.
-    * Disk size = 1068100K. Space Used = 344K.
+    * Disk size = 1662172K. Space Used = 352K.
   * Running inst-std-accessories-mupdf.sh ...
     * After this operation, 12.0 MB of additional disk space will be used.
     * Install PDF reader: Mupdf.
-    * Disk size = 1083452K. Space Used = 15352K.
+    * Disk size = 1677512K. Space Used = 15340K.
   * Running inst-std-accessories-prtscr-gnome-screenshot.sh ...
-    * After this operation, 1,576 kB of additional disk space will be used.
-    * Install gnome-screenshot to be used for PrintScreen key.
-    * Insert PrintScreen key binding.
-    * By default, screenshots are saved under ~/Pictures/.
-    * Disk size = 1084904K. Space Used = 1452K.
+    * After this operation, 1,158 kB of additional disk space will be used.
+    * Disk size = 1678392K. Space Used = 880K.
   * Running inst-std-accessories-scite.sh ...
     * After this operation, 4,829 kB of additional disk space will be used.
     * After this operation, 221 kB of additional disk space will be used.
     * Install Text Editor: SciTE.
     * Install at-spi2-core to shut up Accessibility warning message.
     * Insert SciTE in Accessories menu.
-    * Disk size = 1091444K. Space Used = 6540K.
+    * Disk size = 1684932K. Space Used = 6540K.
   * Running inst-std-accessories-terminal-xfce.sh ...
     * After this operation, 11.1 MB of additional disk space will be used.
     * Install terminal: xfce4-terminal.
-    * Disk size = 1100776K. Space Used = 9332K.
+    * Disk size = 1694260K. Space Used = 9328K.
   * Running inst-std-accessories-thunar.sh ...
     * After this operation, 10.0 MB of additional disk space will be used.
-    * Install File Manger: thunar, thunar-media-tags-plugin, thunar-archive-plugin, thunar-volman.
-    * Insert Thunar in Accessories menu.
-    * Disk size = 1107120K. Space Used = 6344K.
+    * Disk size = 1700612K. Space Used = 6352K.
   * Running inst-std-accessories-xarchiver.sh ...
     * After this operation, 1,211 kB of additional disk space will be used.
     * Install Archive Manager: xarchiver.
-    * Disk size = 1108356K. Space Used = 1236K.
+    * Disk size = 1701848K. Space Used = 1236K.
   * Running inst-std-graphic-pinta.sh ...
     * After this operation, 45.0 MB of additional disk space will be used.
     * Install Image Editor: Pinta.
-    * Disk size = 1179896K. Space Used = 71540K.
+    * Disk size = 1773384K. Space Used = 71536K.
   * Running inst-std-internet-iceweseal.sh ...
     * After this operation, 91.4 MB of additional disk space will be used.
     * Install web browser: iceweasel.
-    * Disk size = 1308028K. Space Used = 128132K.
+    * Disk size = 1901528K. Space Used = 128144K.
   * Running inst-std-multimedia-mpv.sh ...
-    * After this operation, 88.5 MB of additional disk space will be used.
+    * After this operation, 83.9 MB of additional disk space will be used.
     * Install Media Player: MPV.
     * Add multiple aliases for MPV.
     * Add useful mpv keybindings settings.
-    * Disk size = 1431624K. Space Used = 123596K.
+    * Disk size = 2019136K. Space Used = 117608K.
   * Running inst-std-office-libreoffice.sh ...
-    * After this operation, 277 MB of additional disk space will be used.
+    * After this operation, 273 MB of additional disk space will be used.
     * After this operation, 42.4 MB of additional disk space will be used.
     * After this operation, 18.0 MB of additional disk space will be used.
     * Install Office Suite: Word processor - libreoffice-writer.
@@ -287,60 +332,156 @@ sort install-size-history.txt | uniq | grep <script-name>
     * Install Office Suite: Drawing - libreoffice-draw.
     * NOT install Office Suite: Database - libreoffice-base.
     * NOT install Office Suite: Equation - libreoffice-math.
-    * Disk size = 1857224K. Space Used = 425600K.
+    * Disk size = 2439412K. Space Used = 420276K.
+  * Running inst-std-office-xtra-projectlibre.sh ...
+    * Install ProjectLibre.
+    * Disk size = 2457868K. Space Used = 18456K.
   * Running inst-std-system-alsamixer.sh ...
-    * Insert Alsamixer menu in Administration.
-    * Disk size = 1857224K. Space Used = 0K.
+    * Disk size = 2457868K. Space Used = 0K.
   * Running inst-std-system-conky.sh ...
     * After this operation, 967 kB of additional disk space will be used.
     * Install System Monitor: conky.
     * Add conky config file: conkyrc.
     * Set conky to run on JWM startup.
     * Add on the fly settings to Conky.
-    * Disk size = 1858536K. Space Used = 1312K.
+    * Disk size = 2459180K. Space Used = 1312K.
   * Running inst-std-system-disk-manager.sh ...
     * After this operation, 14.3 MB of additional disk space will be used.
     * Install Auto Mount Partition Manager: Disk Manager.
     * Insert disk-manager menu in Administration.
-    * Disk size = 1883088K. Space Used = 24552K.
+    * Disk size = 2483740K. Space Used = 24560K.
   * Running inst-std-system-gnome-disk-utility.sh ...
     * After this operation, 11.1 MB of additional disk space will be used.
     * Install Partition Manager: gnome-disk-utility.
-    * Disk size = 1889364K. Space Used = 6276K.
+    * Disk size = 2490004K. Space Used = 6264K.
   * Running inst-std-system-gparted.sh ...
     * After this operation, 17.3 MB of additional disk space will be used.
     * Install Partition Manager: gparted.
     * Insert gparted menu in Administration.
-    * Disk size = 1905300K. Space Used = 15936K.
+    * Disk size = 2505948K. Space Used = 15944K.
   * Running inst-std-system-keyboard.sh ...
-    * Insert keyboard menu in Administration.
-    * Disk size = 1905300K. Space Used = 0K.
+    * Disk size = 2505948K. Space Used = 0K.
   * Running inst-std-system-monitor-switcher-lxrandr.sh ...
     * After this operation, 19.9 MB of additional disk space will be used.
     * After this operation, 779 kB of additional disk space will be used.
-    * Install Monitor Switcher: lxrandr.
-    * Add lxrandr key binding.
-    * Disk size = 1931276K. Space Used = 25976K.
+    * Disk size = 2531928K. Space Used = 25980K.
   * Running inst-std-system-network-wicd.sh ...
-    * After this operation, 8,474 kB of additional disk space will be used.
+    * After this operation, 7,574 kB of additional disk space will be used.
     * Install Network Manager: wicd.
     * For wireless, you have to type in the wireless interface(e.g. wlan0) in the Preferences.
     * Set wicd to run on JWM startup.
     * Log at /var/log/wicd/wicd.log.
-    * Disk size = 1942788K. Space Used = 11512K.
+    * Disk size = 2542944K. Space Used = 11016K.
   * Running inst-std-system-time-zone.sh ...
-    * Insert Time Zone menu in Administration.
-    * Disk size = 1942788K. Space Used = 0K.
+    * Disk size = 2542944K. Space Used = 0K.
+  * Running inst-std-system-xtra-hardinfo.sh ...
+    * After this operation, 467 kB of additional disk space will be used.
+    * Disk size = 2543876K. Space Used = 932K.
+  * Running inst-std-system-xtra-webcam-camorama.sh ...
+    * After this operation, 41.1 MB of additional disk space will be used.
+    * Install webcam: camorama.
+    * Disk size = 2575300K. Space Used = 31424K.
+  * Running inst-std-xtra-blender.sh ...
+    * After this operation, 13.8 MB of additional disk space will be used.
+    * After this operation, 185 MB of additional disk space will be used.
+    * Install required packages for blender.
+    * Install blender.
+    * Disk size = 2803680K. Space Used = 228380K.
+  * Running inst-std-xtra-dia.sh ...
+    * After this operation, 21.2 MB of additional disk space will be used.
+    * Install dia to draw diagrams.
+    * Disk size = 2829264K. Space Used = 25584K.
+  * Running inst-std-xtra-opw-drush-latest.sh ...
+    * Install  Drush Version   :  8.0.0-rc1  to manage Drupal.
+    * See https://www.linode.com/docs/websites/cms/drush-drupal.
+    * Further setting is needed. See https://wiki.debian.org/drush.
+    * Disk size = 2849352K. Space Used = 20088K.
+  * Running inst-std-xtra-opw-php5-gd.sh ...
+    * After this operation, 118 kB of additional disk space will be used.
+    * Install php5-gd to run Drupal.
+    * Disk size = 2849564K. Space Used = 212K.
+  * Running inst-std-xtra-opw-php5-mysql.sh ...
+    * After this operation, 3,752 kB of additional disk space will be used.
+    * Install php5-mysql to enable the PDO_MYSQL database driver for PHP and to run Drupal.
+    * Enable mod_rewrite module.
+    * Disk size = 2854096K. Space Used = 4532K.
+  * Running inst-std-xtra-sweethome3d.sh ...
+    * After this operation, 181 MB of additional disk space will be used.
+    * Install Sweet Home 3D: sweethome3d, sweethome3d-furniture, sweethome3d-furniture-nonfree, sweethome3d-furniture-editor, sweethome3d-textures-editor.
+    * Update to SweetHome3D-5.0.jar.
+    * Update to TexturesLibraryEditor-1.4.jar.
+    * Update to FurnitureLibraryEditor-1.17.jar.
+    * Disk size = 3197128K. Space Used = 343032K.
+  * Running inst-xtra-cld-dev-tools-apt-move.sh ...
+    * After this operation, 430 kB of additional disk space will be used.
+    * After this operation, 196 kB of additional disk space will be used.
+    * Install apt-move to create debian local repository.
+    * Patch apt-move to support SHA256..
+    * Install apache 2 to turn apt-move into a webserver.
+    * Disk size = 3198156K. Space Used = 1028K.
+  * Running inst-xtra-cld-dev-tools-debtree.sh ...
+    * After this operation, 13.3 MB of additional disk space will be used.
+    * Install debtree and graphviz to view dependencies of packages. Better package selections.
+    * Disk size = 3213460K. Space Used = 15304K.
+  * Running inst-xtra-cld-dev-tools-libxml2-utils.sh ...
+    * After this operation, 152 kB of additional disk space will be used.
+    * Install libxml2-utils to validate xml file.
+    * Disk size = 3213744K. Space Used = 284K.
+  * Running inst-xtra-dev-tools-ant.sh ...
+    * After this operation, 2,229 kB of additional disk space will be used.
+    * Install ant.
+    * Disk size = 3217768K. Space Used = 4024K.
+  * Running inst-xtra-fuse.sh ...
+    * Install fuse(fusermount) to run TMSU.
+    * Disk size = 3217768K. Space Used = 0K.
+  * Running inst-xtra-open-terminals-on-startup.sh ...
+    * Install x11-xserver-utils for xrandr.
+    * Install wmctrl.
+    * Install x11-utils for xprop.
+    * Copy open-terminal.sh in /root/cld.
+    * Add open-terminal.sh in /root/cld/jwmrc-startup.sh.
+    * Disk size = 3217772K. Space Used = 4K.
+  * Running inst-xtra-sqlite.sh ...
+    * After this operation, 143 kB of additional disk space will be used.
+    * Install Database: sqlite3.
+    * Disk size = 3218044K. Space Used = 272K.
+  * Running inst-xtra-virtualbox-guest-from-scratch.sh ...
+    * After this operation, 131 MB of additional disk space will be used.
+    * After this operation, 14.6 MB disk space will be freed.
+    * After this operation, 63.1 MB disk space will be freed.
+    * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
+    * Assumed packages installed: bzip2 & Xserver installed.
+    * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
+    * VirtualBox guest additions installed: version: 4.3.20.
+    * Delete ./settings/binary/VBoxGuestAdditions.iso[56976K]. Space used could be negative due to this deletion.
+    * Disk size = 3257956K. Space Used = 39912K.
+  * Running inst-xtra-wifite.sh ...
+    * After this operation, 80.3 MB of additional disk space will be used.
+    * Install wifite.
+    * Disk size = 3351360K. Space Used = 93404K.
+  * Running inst-xtra-xmpv.sh ...
+    * Install xmpv.
+    * Disk size = 3351404K. Space Used = 44K.
+  * Running inst-xtra-zfs.sh ...
+    * After this operation, 15.8 MB of additional disk space will be used.
+    * After this operation, 77.9 MB of additional disk space will be used.
+    * Install lsb-release.
+    * Add zfsonlinux repository to /etc/apt/sources.list.d/zfsonlinux.list.
+    * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
+    * Install debian-zfs: version: 0.6.5.2-2.
+    * Delete ./settings/binary/zfsonlinux_6_all.deb[1992K].
+    * Change default behavior: Don't allow the last 1.6% of space in the pool instead of 3.2%.
+    * Disk size = 3490532K. Space Used = 139128K.
   * Running inst-zclean-00-zerosizing-docs.sh ...
     * Zero size all documents in /usr/share/.
-    * Disk size = 1870112K. Space Used = -72676K.
+    * Disk size = 3390208K. Space Used = -100324K.
   * Running inst-zclean-01-remove-block-services.sh ...
     * Remove block services from starting after they are being installed.
-    * Disk size = 1870108K. Space Used = -4K.
+    * Disk size = 3390204K. Space Used = -4K.
   * Running inst-zclean-99-end-cleanup.sh ...
     * Clean apt-get cache.
     * rm -rf /tmp/*.
     * Umount /sys, /dev/pts and /proc.
     * Add Debian main repositories in sources.list.
     * Delete local Debian repository from sources.list.
-    * Disk size = 1479472K. Space Used = -390636K.
+    * Disk size = 2632904K. Space Used = -757300K.
