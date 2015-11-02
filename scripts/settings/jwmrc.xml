@@ -1,20 +1,22 @@
 <?xml version="1.0"?>
 <!--
-NOTE: Always use absolute path so that you can run JWM from any path.
+NOTE: 
+  -Always use absolute path so that you can run JWM from any path.
+  -${GV_CLD_ROOT_DIR} = /root/cld/
 
 JWM Themes Exchange: http://www.murga-linux.com/puppy/viewtopic.php?t=23260&start=30
 DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-0.html
 -->
 
 <JWM>
-  <StartupCommand>/root/jwmrc-startup.sh</StartupCommand>
+  <StartupCommand>/root/cld/jwmrc-startup.sh</StartupCommand>
   
   <RootMenu height="15" onroot="12">
     <Program icon="terminal.png" label="Terminal">x-terminal-emulator</Program>
     <Separator/>
     
     <!-- Include custom menu. -->
-    <Include>/root/jwmrc-menus.xml</Include>
+    <Include>/root/cld/jwmrc-menus.xml</Include>
     <Separator/>
     
     <!-- Include Debian default menu. -->
@@ -85,7 +87,7 @@ DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-
 	</MenuStyle>
 
   <!-- Tray at the bottom. -->
-  <Include>/root/jwmrc-tray.xml</Include>
+  <Include>/root/cld/jwmrc-tray.xml</Include>
   
   <!-- Double click speed (in milliseconds) -->
   <DoubleClickSpeed>400</DoubleClickSpeed>
@@ -107,7 +109,7 @@ DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-
   <ResizeMode>opaque</ResizeMode>
     
   <!-- INCLUDE key bindings. -->
-  <Include>/root/jwmrc-key.xml</Include>
+  <Include>/root/cld/jwmrc-key.xml</Include>
   
 </JWM>
 
