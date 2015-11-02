@@ -5,6 +5,7 @@ set -e
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
 # ${GV_SETTINGS_DIR}: Hold settings data.
 # ${GV_BINARY_DIR}: Hold settings binary data.
+# ${GV_CLD_ROOT_DIR}: Hold settings and scripts files for Cust-Live-Deb.
 
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
@@ -19,7 +20,7 @@ apt-get -y --force-yes install wicd
 #sed -i "/## Insert your script files here ##/a /root/startup-wicd.sh&" /etc/init.d/startup.sh
 
 # Set wicd to run on JWM startup.
-cat ${GV_SETTINGS_DIR}/jwmrc-startup-wicd.sh >> /root/jwmrc-startup.sh
+cat ${GV_SETTINGS_DIR}/jwmrc-startup-wicd.sh >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
 # Log
 echo "${GV_LOG} * Install Network Manager: wicd."
