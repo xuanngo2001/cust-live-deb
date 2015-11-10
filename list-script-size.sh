@@ -41,7 +41,6 @@ done
 ## Create data set per script and generate gnuplot script
 DATASET_PLOT_CMD=${BASE_DIR}/gnuplot-dataset-cmd.pg
 echo -n "plot" > ${DATASET_PLOT_CMD}
-cat ${BASE_DIR}/lss-uniq-names.txt |     # Supply input from a file.
 while IFS='' read -r SCRIPT_NAME || [[ -n "$LINE" ]]; do
   if [ ! -z ${SCRIPT_NAME} ]; then
   
@@ -50,9 +49,8 @@ while IFS='' read -r SCRIPT_NAME || [[ -n "$LINE" ]]; do
     
     # Generate gnuplot script
     echo " \"${BASE_DIR}/data/${SCRIPT_NAME}\" using 2:4 title \"${SCRIPT_NAME}\", \\" >> ${DATASET_PLOT_CMD}
-  fi
-done
-
+  fi 
+done < <( cat ${BASE_DIR}/lss-uniq-names.txt )
 
 ## Plot the graph
 # Remove the last ', \'
