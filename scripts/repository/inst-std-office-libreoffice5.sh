@@ -36,3 +36,16 @@ echo "${GV_LOG} * Install Office Suite: Database."
 echo "${GV_LOG} * Install Office Suite: Equation."
 echo "${GV_LOG} * Create symbolic link so that libreoffice still execute."
 echo "${GV_LOG} * https://wiki.documentfoundation.org/ReleasePlan"
+
+# REJECTION:
+#  * Running inst-std-office-libreoffice5.sh ...
+#    * Install LibreOffice 5.0.3.2 e5f16313668ac592c1bfb310f4390624e3dbfb75.
+#    * Install Office Suite: Word processor.
+#    * Install Office Suite: Spreadsheet.
+#    * Install Office Suite: Presentation.
+#    * Install Office Suite: Drawing.
+#    * Install Office Suite: Database.
+#    * Install Office Suite: Equation.
+#    * Create symbolic link so that libreoffice still execute.
+#    * https://wiki.documentfoundation.org/ReleasePlan
+#    * Disk size = 2978364K. Space Used = 724604K.
