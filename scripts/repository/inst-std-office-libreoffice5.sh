@@ -22,6 +22,8 @@ cd -
 # Insert LibreOffice5 menu in Office
 sed -i "/Office\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-office-libreoffice5.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
+# Create symbolic link so that libreoffice still execute.
+ln -s /usr/local/bin/libreoffice5.0 /usr/local/bin/libreoffice
  
 # Log
 LO_VERSION=$(libreoffice5.0 --version | head -n1)
@@ -32,17 +34,5 @@ echo "${GV_LOG} * Install Office Suite: Presentation."
 echo "${GV_LOG} * Install Office Suite: Drawing."
 echo "${GV_LOG} * Install Office Suite: Database."
 echo "${GV_LOG} * Install Office Suite: Equation."
+echo "${GV_LOG} * Create symbolic link so that libreoffice still execute."
 echo "${GV_LOG} * https://wiki.documentfoundation.org/ReleasePlan"
-
-# REJECTION:
-#  * Running inst-std-office-libreoffice.sh ...
-#    * After this operation, 273 MB of additional disk space will be used.
-#    * After this operation, 42.4 MB of additional disk space will be used.
-#    * After this operation, 18.0 MB of additional disk space will be used.
-#    * Install Office Suite: Word processor - libreoffice-writer.
-#    * Install Office Suite: Spreadsheet - libreoffice-calc.
-#    * Install Office Suite: Presentation - libreoffice-impress.
-#    * Install Office Suite: Drawing - libreoffice-draw.
-#    * NOT install Office Suite: Database - libreoffice-base.
-#    * NOT install Office Suite: Equation - libreoffice-math.
-#    * Disk size = 2439400K. Space Used = 420276K.
