@@ -4,6 +4,7 @@
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
 # ${GV_SETTINGS_DIR}: Hold settings data.
 # ${GV_BINARY_DIR}: Hold settings binary data.
+# ${GV_CLD_ROOT_DIR}: Hold settings and scripts files for Cust-Live-Deb.
 
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
@@ -15,6 +16,9 @@ apt-get -y --force-yes install libreoffice-impress
 apt-get -y --force-yes install libreoffice-draw
 #apt-get -y --force-yes install libreoffice-base
 #apt-get -y --force-yes install libreoffice-math
+
+# Insert LibreOffice5 menu in Office
+sed -i "/Office\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-office-libreoffice.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
  
 # Log
 LO_VERSION=$(libreoffice --version | head -n1)
@@ -25,6 +29,7 @@ echo "${GV_LOG} * Install Office Suite: Presentation - libreoffice-impress."
 echo "${GV_LOG} * Install Office Suite: Drawing - libreoffice-draw."
 echo "${GV_LOG} * NOT install Office Suite: Database - libreoffice-base."
 echo "${GV_LOG} * NOT install Office Suite: Equation - libreoffice-math."
+echo "${GV_LOG} * https://wiki.documentfoundation.org/ReleasePlan"
 
 # REJECTION:
 #  * Running inst-std-office-libreoffice.sh ...
