@@ -26,7 +26,7 @@ sed -i "/Office\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-office-libreoffice5.xml" "$
 ln -s /usr/local/bin/libreoffice5.0 /usr/local/bin/libreoffice
  
 # Log
-LO_VERSION=$(libreoffice5.0 --version | head -n1)
+LO_VERSION=$(libreoffice --version | head -n1)
 echo "${GV_LOG} * Install ${LO_VERSION}."
 echo "${GV_LOG} * Install Office Suite: Word processor."
 echo "${GV_LOG} * Install Office Suite: Spreadsheet."
