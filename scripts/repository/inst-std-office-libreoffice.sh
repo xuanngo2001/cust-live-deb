@@ -14,8 +14,8 @@ apt-get -y --force-yes install libreoffice-writer
 apt-get -y --force-yes install libreoffice-calc
 apt-get -y --force-yes install libreoffice-impress
 apt-get -y --force-yes install libreoffice-draw
-#apt-get -y --force-yes install libreoffice-base
-#apt-get -y --force-yes install libreoffice-math
+apt-get -y --force-yes install libreoffice-base
+apt-get -y --force-yes install libreoffice-math
 
 # Insert LibreOffice5 menu in Office
 sed -i "/Office\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-office-libreoffice.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
@@ -23,12 +23,12 @@ sed -i "/Office\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-office-libreoffice.xml" "${
 # Log
 LO_VERSION=$(libreoffice --version | head -n1)
 echo "${GV_LOG} * Install ${LO_VERSION}."
-echo "${GV_LOG} * Install Office Suite: Word processor - libreoffice-writer."
-echo "${GV_LOG} * Install Office Suite: Spreadsheet - libreoffice-calc."
-echo "${GV_LOG} * Install Office Suite: Presentation - libreoffice-impress."
-echo "${GV_LOG} * Install Office Suite: Drawing - libreoffice-draw."
-echo "${GV_LOG} * NOT install Office Suite: Database - libreoffice-base."
-echo "${GV_LOG} * NOT install Office Suite: Equation - libreoffice-math."
+echo "${GV_LOG} * Install Office Suite: Word processor."
+echo "${GV_LOG} * Install Office Suite: Spreadsheet."
+echo "${GV_LOG} * Install Office Suite: Presentation."
+echo "${GV_LOG} * Install Office Suite: Drawing."
+echo "${GV_LOG} * Install Office Suite: Database."
+echo "${GV_LOG} * Install Office Suite: Equation."
 echo "${GV_LOG} * https://wiki.documentfoundation.org/ReleasePlan"
 
 # REJECTION:
