@@ -43,3 +43,20 @@ echo "${GV_LOG} * https://wiki.documentfoundation.org/ReleasePlan"
 #    * NOT install Office Suite: Database - libreoffice-base.
 #    * NOT install Office Suite: Equation - libreoffice-math.
 #    * Disk size = 2439400K. Space Used = 420276K.
+
+# REJECTION: All libreoffice applications.
+#  * Running inst-std-office-libreoffice.sh ...
+#    * After this operation, 273 MB of additional disk space will be used.
+#    * After this operation, 42.4 MB of additional disk space will be used.
+#    * After this operation, 18.0 MB of additional disk space will be used.
+#    * After this operation, 9,899 kB of additional disk space will be used.
+#    * After this operation, 1,497 kB of additional disk space will be used.
+#    * Install LibreOffice 4.3.3.2 430m0(Build:2).
+#    * Install Office Suite: Word processor.
+#    * Install Office Suite: Spreadsheet.
+#    * Install Office Suite: Presentation.
+#    * Install Office Suite: Drawing.
+#    * Install Office Suite: Database.
+#    * Install Office Suite: Equation.
+#    * https://wiki.documentfoundation.org/ReleasePlan
+#    * Disk size = 2687820K. Space Used = 434064K.

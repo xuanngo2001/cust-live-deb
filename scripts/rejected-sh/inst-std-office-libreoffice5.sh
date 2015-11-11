@@ -10,13 +10,14 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install LibreOffice5
-LO_NAME=LibreOffice_5.0.3_Linux_x86-64_deb
-mkdir -p "${LO_NAME}"
-LO_DIR=$(realpath "${LO_NAME}")
-tar -xvzf ${GV_BINARY_DIR}/LibreOffice_5.0.3_Linux_x86-64_deb.tar.gz --strip-components=1 -C "${LO_DIR}"
-cd "${LO_DIR}/DEBS"
+LO_GZ=${GV_BINARY_DIR}/LibreOffice_5.0.3_Linux_x86-64_deb.tar.gz
+LO_WORK_DIR=LibreOffice_work
+mkdir -p "${LO_WORK_DIR}"
+LO_WORK_DIR=$(realpath "${LO_WORK_DIR}")
+tar -xvzf "${LO_GZ}" --strip-components=1 -C "${LO_WORK_DIR}"
+cd "${LO_WORK_DIR}/DEBS"
 dpkg -i *.deb
-rm -rf "${LO_DIR}"
+rm -rf "${LO_WORK_DIR}"
 cd -
 
 # Insert LibreOffice5 menu in Office
