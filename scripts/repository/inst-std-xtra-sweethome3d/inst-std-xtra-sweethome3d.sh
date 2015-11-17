@@ -25,7 +25,7 @@ SH3D_LIST=$(echo ${SH3D_LIST} | tr -s ' ')
 apt-get -y --force-yes install ${SH3D_LIST}
 
 # Install the latest version
-SH3D_DIR=sweet-home-3d
+SH3D_DIR=sweethome3d
 
 SH3D_JAR=SweetHome3D-5.0.jar
 SH3D_TEXTURE_EDITOR_JAR=TexturesLibraryEditor-1.4.jar
