@@ -28,6 +28,9 @@ apt-get -y --force-yes install ${SH3D_LIST}
 # Log
 echo "${GV_LOG} * Install Sweet Home 3D: ${SH3D_LIST// /, }."
 
-
-
+# REJECTION: Too big
+#  * Running inst-std-xtra-sweethome3d.sh ...
+#    * After this operation, 181 MB of additional disk space will be used.
+#    * Install Sweet Home 3D: sweethome3d, sweethome3d-furniture, sweethome3d-furniture-nonfree, sweethome3d-furniture-editor, sweethome3d-textures-editor.
+#    * Disk size = 3441028K. Space Used = 320640K.
 
