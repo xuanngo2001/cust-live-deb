@@ -2,8 +2,6 @@
 set -e
 # Global variables:
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
-# ${GV_SETTINGS_DIR}: Hold settings data.
-# ${GV_BINARY_DIR}: Hold settings binary data.
 
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
@@ -23,7 +21,7 @@ umount -lf /sys /dev/pts /proc || true
 ## Modify sources.list
 # Reinstate default debian repository
 SOURCES_LIST=/etc/apt/sources.list
-cat ${GV_SETTINGS_DIR}/sources.list >> ${SOURCES_LIST}
+cat sources.list >> ${SOURCES_LIST}
 
 # Delete local repository.
 sed -i '/localhost/d' ${SOURCES_LIST}
