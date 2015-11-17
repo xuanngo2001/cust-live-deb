@@ -7,12 +7,6 @@
 #########################################################
 
 ###### VARIABLES ######
-# Folder containing settings data.
-export GV_SETTINGS_DIR=./settings
-
-# Folder containing settings binary data.
-export GV_BINARY_DIR=${GV_SETTINGS_DIR}/binary
-
 # Prefix this variable in echo to log echoed string. CLDS stands for Custom Live Debian System.
 export GV_LOG="CLDS:"
 
