@@ -9,7 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Add custom live debian tool to /usr/local/bin/.
 LOCAL_BIN=/usr/local/bin
-for FILE_PATH in $(find ../../tools/ -type f -name '*.sh')
+for FILE_PATH in $(find tools/ -type f -name '*.sh')
 do
   # Get the absolute path.
   FILE_PATH=$(realpath "${FILE_PATH}")
