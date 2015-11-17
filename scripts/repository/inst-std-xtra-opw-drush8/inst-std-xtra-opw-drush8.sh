@@ -3,12 +3,9 @@ set -e
 
 # Global variables:
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
-# ${GV_SETTINGS_DIR}: Hold settings data.
-# ${GV_BINARY_DIR}: Hold settings binary data.
 
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
-
 
 # Install composer.
 wget https://getcomposer.org/installer
@@ -21,7 +18,7 @@ ln -s /usr/local/bin/composer /usr/bin/composer
 
 # Install Drush
 mkdir -p /usr/local/src/drush
-tar -xvzf ${GV_BINARY_DIR}/drush-8.0.0-rc1.tar.gz --strip-components=1 -C /usr/local/src/drush
+tar -xvzf drush-8.0.0-rc1.tar.gz --strip-components=1 -C /usr/local/src/drush
 cd /usr/local/src/drush
 rm -f /usr/bin/drush
 ln -s /usr/local/src/drush/drush /usr/bin/drush
