@@ -2,8 +2,6 @@
 set -e
 # Global variables:
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
-# ${GV_SETTINGS_DIR}: Hold settings data.
-# ${GV_BINARY_DIR}: Hold settings binary data.
 
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
@@ -16,7 +14,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install lsb-release libc6-dev
 
 # Install ZFS
-ZFS_REPO_KEY_DEB=${GV_BINARY_DIR}/zfsonlinux_6_all.deb
+ZFS_REPO_KEY_DEB=zfsonlinux_6_all.deb
 ZFS_REPO_KEY_DEB_SIZE=$(GF_SIZE_OF ${ZFS_REPO_KEY_DEB})
 dpkg -i ${ZFS_REPO_KEY_DEB}
 apt-get update
@@ -24,7 +22,7 @@ apt-get -y --force-yes install debian-zfs
 rm -f ${ZFS_REPO_KEY_DEB}
 
 # Change default behavior: Don't allow the last 1.6% of space in the pool instead of 3.2%.
-yes | cp ${GV_SETTINGS_DIR}/zfs.conf /etc/modprobe.d/ 
+yes | cp zfs.conf /etc/modprobe.d/ 
 
 # Revert back to use live-update-initramfs.
 ###rm -f /usr/sbin/update-initramfs
