@@ -26,7 +26,7 @@ echo "${SCRIPT_NAME}: ${DATE_STRING}: ${TOTAL_SIZE}" > ${INSTALL_LOG_SIZE}
 INITIAL_DIR=$(pwd)
 # Run scripts.
 for SCRIPT_PATH in $( cat scripts-ls.lst ); do
-  PACKAGE_DIR=$(basename "${SCRIPT_PATH}")
+  PACKAGE_DIR=$(dirname "${SCRIPT_PATH}")
   cd "${PACKAGE_DIR}" # Go to the directory where the script resides.
   
   ${SCRIPT_PATH} 2>&1 | tee -a ${INSTALL_LOG}
