@@ -2,14 +2,12 @@
 
 # Global variables:
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
-# ${GV_SETTINGS_DIR}: Hold settings data.
-# ${GV_BINARY_DIR}: Hold settings binary data.
 
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Preseed firmware licence agreements.
-debconf-set-selections -v ${GV_SETTINGS_DIR}/firmware.seed
+debconf-set-selections -v firmware.seed
 
 # These packages are part of non-free repository.
 FIRMWARES_LIST="atmel-firmware \
