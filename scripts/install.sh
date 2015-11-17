@@ -23,13 +23,19 @@ echo "${TOTAL_SIZE}" 2>&1 | tee -a ${INSTALL_LOG}
 echo "${SCRIPT_NAME}: ${DATE_STRING}: ${TOTAL_SIZE}" > ${INSTALL_LOG_SIZE}
 
 ###################### Main
-# Run scripts as per COMPONENT selected.
-for scriptfile in $( cat scripts-ls.lst ); do
-  ${scriptfile} 2>&1 | tee -a ${INSTALL_LOG}
+INITIAL_DIR=$(pwd)
+# Run scripts.
+for SCRIPT_PATH in $( cat scripts-ls.lst ); do
+  PACKAGE_DIR=$(basename "${SCRIPT_PATH}")
+  cd "${PACKAGE_DIR}" # Go to the directory where the script resides.
+  
+  ${SCRIPT_PATH} 2>&1 | tee -a ${INSTALL_LOG}
   # Log total size at the end of script.
   total_size_tmp=$(GF_LOG_TOTAL_SIZE)
   echo "${total_size_tmp}" 2>&1 | tee -a ${INSTALL_LOG}
-  echo "${scriptfile}: ${DATE_STRING}: ${total_size_tmp}" >> ${INSTALL_LOG_SIZE}
+  echo "${SCRIPT_PATH}: ${DATE_STRING}: ${total_size_tmp}" >> ${INSTALL_LOG_SIZE}
+  
+  cd "${INITIAL_DIR}" # Back to initial directory.
 done
 
 # Retrieved the log.
