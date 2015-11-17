@@ -3,8 +3,6 @@ set -e
 
 # Global variables:
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
-# ${GV_SETTINGS_DIR}: Hold settings data.
-# ${GV_BINARY_DIR}: Hold settings binary data.
 # ${GV_CLD_ROOT_DIR}: Hold settings and scripts files for Cust-Live-Deb.
 
 
@@ -27,7 +25,7 @@ SH3D_LIST=$(echo ${SH3D_LIST} | tr -s ' ')
 apt-get -y --force-yes install ${SH3D_LIST}
 
 # Install the latest version
-SH3D_DIR=${GV_BINARY_DIR}/sweet-home-3d
+SH3D_DIR=sweet-home-3d
 
 SH3D_JAR=SweetHome3D-5.0.jar
 SH3D_TEXTURE_EDITOR_JAR=TexturesLibraryEditor-1.4.jar
