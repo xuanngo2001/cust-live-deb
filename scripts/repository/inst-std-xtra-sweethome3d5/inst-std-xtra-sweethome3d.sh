@@ -34,3 +34,6 @@ sed -i "/Graphics\">/ r jwmrc-menus-graphics-sweethome3d.xml" "${GV_CLD_ROOT_DIR
 echo "${GV_LOG} * Install ${SH3D_JAR}."
 echo "${GV_LOG} * Install ${SH3D_TEXTURE_EDITOR_JAR}."
 echo "${GV_LOG} * Install ${SH3D_FURNITURE_EDITOR_JAR}."
+
+#   * Running inst-std-xtra-sweethome3d.sh ...
+#    * Disk size = 3156512K. Space Used = 36104K.
