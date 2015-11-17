@@ -15,7 +15,7 @@ apt-get -y --force-yes install pandoc
 # Copy all documentations to /root/doc.
 DOC_DIR=/root/cld-doc
 mkdir -p ${DOC_DIR}
-yes | cp -R doc/cust-live-deb.wiki/*.html ${DOC_DIR}
+yes | cp -R ../../settings/doc/cust-live-deb.wiki/*.html ${DOC_DIR}
 
 # Insert documentation: developer manual in Help.
 sed -i "/Help\">/ r jwmrc-menus-help-dev.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
