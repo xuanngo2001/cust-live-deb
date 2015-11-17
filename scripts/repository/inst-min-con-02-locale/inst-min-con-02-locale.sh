@@ -23,7 +23,7 @@ echo "en_US.UTF-8 UTF-8" >> ${LOCALE_GEN}
 update-locale LANG=en_US.UTF-8
 
 # Add locale environment variables
-cat ${GV_SETTINGS_DIR}/bashrc-locale >> /root/.bashrc
+cat bashrc-locale >> /root/.bashrc
 source /root/.bashrc
 
 
