@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 #########################################################
 # All export variables and functions
@@ -36,13 +37,13 @@ export -f GF_SIZE_OF
 
 
 # Use to exchange value variables between different script.
-export GP_VALUES_FILE=load-global-values.txt
+export GP_VALUES_FILE=$(realpath load-global-values.txt)
 
 # Log total size in kilobytes.
 GF_LOG_TOTAL_SIZE ()
 {
   # Load previous total size.
-  . ./${GP_VALUES_FILE}
+  . ${GP_VALUES_FILE}
   
   # Get current total size.
   CURRENT_TOTAL_SIZE=$(GF_SIZE_OF /)
