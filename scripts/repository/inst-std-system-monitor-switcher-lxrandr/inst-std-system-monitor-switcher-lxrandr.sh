@@ -18,10 +18,10 @@ apt-get -y --force-yes install x11-xserver-utils
 apt-get -y --force-yes install lxrandr
 
 # Insert lxrandr menu in Administration
-sed -i "/Administration\">/ r ${GV_SETTINGS_DIR}/jwmrc-menus-adm-lxrandr.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Administration\">/ r jwmrc-menus-adm-lxrandr.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
 # Add key binding
-sed -i "/NEW KEYS HERE -->/ r ${GV_SETTINGS_DIR}/jwmrc-key-lxrandr.xml" "${GV_CLD_ROOT_DIR}/jwmrc-key.xml"
+sed -i "/NEW KEYS HERE -->/ r jwmrc-key-lxrandr.xml" "${GV_CLD_ROOT_DIR}/jwmrc-key.xml"
 
 # Log
 echo "${GV_LOG} * Install Monitor Switcher: lxrandr."
