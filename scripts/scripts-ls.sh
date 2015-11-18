@@ -25,7 +25,7 @@ SCRIPT_LIST_ALL=scripts-ls.all
 SCRIPT_LIST=scripts-ls.lst
 
 # Put all scripts in ${SCRIPT_LIST_ALL}. Then filter later on as needed.
-find $(realpath ./repository) -type f -name "inst-*.sh" | sort > ${SCRIPT_LIST_ALL}
+find $(realpath ./repository/inst-*) -type f -name "inst-*.sh" | sort > ${SCRIPT_LIST_ALL}
 
 # Remove not-used scripts
 sed -i '/not-used/d' ${SCRIPT_LIST_ALL}
