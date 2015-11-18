@@ -27,8 +27,9 @@ INITIAL_DIR=$(pwd)
 # Run scripts.
 for SCRIPT_PATH in $( cat scripts-ls.lst ); do
   PACKAGE_DIR=$(dirname "${SCRIPT_PATH}")
-  cd "${PACKAGE_DIR}" # Go to the directory where the script resides.
+  cd "${PACKAGE_DIR}"   # Go to the directory where the script resides.
   
+  chmod +x ${SCRIPT_PATH}
   ${SCRIPT_PATH} 2>&1 | tee -a ${INSTALL_LOG}
   # Log total size at the end of script.
   total_size_tmp=$(GF_LOG_TOTAL_SIZE)
