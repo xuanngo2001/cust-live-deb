@@ -58,3 +58,19 @@ echo "${GV_LOG} * https://wiki.documentfoundation.org/ReleasePlan"
 #    * Install Office Suite: Equation.
 #    * https://wiki.documentfoundation.org/ReleasePlan
 #    * Disk size = 2687820K. Space Used = 434064K.
+
+#   * Running inst-std-office-libreoffice.sh ...
+#     * After this operation, 287 MB of additional disk space will be used.
+#     * After this operation, 43.8 MB of additional disk space will be used.
+#     * After this operation, 17.0 MB of additional disk space will be used.
+#     * After this operation, 9,910 kB of additional disk space will be used.
+#     * After this operation, 1,610 kB of additional disk space will be used.
+#     * Install LibreOffice 5.0.2.2 00m0(Build:2).
+#     * Install Office Suite: Word processor.
+#     * Install Office Suite: Spreadsheet.
+#     * Install Office Suite: Presentation.
+#     * Install Office Suite: Drawing.
+#     * Install Office Suite: Database.
+#     * Install Office Suite: Equation.
+#     * https://wiki.documentfoundation.org/ReleasePlan
+#     * Disk size = 2705716K. Space Used = 451568K.
