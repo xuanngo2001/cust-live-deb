@@ -13,7 +13,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install sweethome3d
 
 # Copy all jars files to /usr/local/bin/.
-SH3D_DIR=sweethome3d
+SH3D_DIR=sh3d
 LOCAL_BIN=/usr/local/bin
 yes | cp -Rv ${SH3D_DIR} ${LOCAL_BIN} 
 
