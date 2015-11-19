@@ -1,0 +1,8 @@
+# http://askubuntu.com/a/153408
+# If I have package xapps with version 1.0 in my local repository, 
+#  and this same package xapps exists in Precise's repository with higher version, say 2.0, 
+#  apt-get will prefer the version from local repository, i.e version 1.0.
+
+Package: *
+Pin: origin ""  
+Pin-Priority: 1001
