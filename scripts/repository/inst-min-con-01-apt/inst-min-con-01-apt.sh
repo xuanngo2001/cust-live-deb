@@ -17,4 +17,5 @@ APT_CONF_SKIP_REC_PKG=/etc/apt/apt.conf.d/skip-recommended-packages
 echo 'APT::Install-Recommends "false"; APT::Install-Suggests "false";' >> ${APT_CONF_SKIP_REC_PKG}
 
 # Log
+echo "${GV_LOG} * Set APT to use local repository first."
 echo "${GV_LOG} * Set APT to skip installing recommended packages."
