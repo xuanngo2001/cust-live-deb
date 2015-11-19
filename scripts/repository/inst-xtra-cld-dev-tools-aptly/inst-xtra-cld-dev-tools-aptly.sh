@@ -8,7 +8,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install aptly
-cat sources-aptly.lst >> /etc/apt/sources.list
+cat sources-aptly.lst >> "${GV_SOURCES_LIST}"
 apt-key adv --keyserver keys.gnupg.net --recv-keys E083A3782A194991
 apt-get update
 apt-get -y --force-yes install aptly
