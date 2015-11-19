@@ -10,6 +10,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install dia to draw diagrams.
 apt-get -y --force-yes install dia
 
+# Insert Dia menu in Graphics
+sed -i "/Graphics\">/ r jwmrc-menus-graphics-dia.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
 # Log
-echo "${GV_LOG} * Install dia to draw diagrams."
+echo "${GV_LOG} * Install Dia to draw diagrams."
+echo "${GV_LOG} * Insert Dia menu in Graphics."
