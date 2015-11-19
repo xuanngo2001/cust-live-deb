@@ -11,7 +11,11 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install camorama
 
 
-# Log
-echo "${GV_LOG} * Install webcam: camorama."
+# Insert Camorama menu in Graphics
+sed -i "/Graphics\">/ r jwmrc-menus-graphics-camorama.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
+
+# Log
+echo "${GV_LOG} * Install webcam: Camorama."
+echo "${GV_LOG} * Insert Camorama menu in Graphics."
 
