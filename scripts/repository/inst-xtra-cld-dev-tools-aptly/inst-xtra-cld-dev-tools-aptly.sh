@@ -11,7 +11,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 cat sources-aptly.list >> "${GV_SOURCES_LIST}"
 apt-key adv --keyserver keys.gnupg.net --recv-keys E083A3782A194991
 apt-get update
-apt-get -y --force-yes install aptly
+apt-get -y --force-yes install xz-utils aptly
 
 # Log
 echo "${GV_LOG} * Install aptly to create local debian repository."
+echo "${GV_LOG} * Add xz-utils package because aptly snapshot merge needs it." 
