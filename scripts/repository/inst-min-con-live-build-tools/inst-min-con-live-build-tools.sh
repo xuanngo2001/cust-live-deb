@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # To get isohdpfx.bin and isolinux.bin in order to create isohybrid.
 # Note: boot.cat is automatically created
-apt-get -y --force-yes install isolinux 
+apt-get -y --force-yes install isolinux
 
 # To create isohybrid.
 apt-get -y --force-yes install xorriso
