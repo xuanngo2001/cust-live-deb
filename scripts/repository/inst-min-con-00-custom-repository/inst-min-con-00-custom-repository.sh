@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Add repository key.
-apt-key add aptly-repo.pub
+apt-key add aptly-master-key.pub
 
 # Insert local repository at the beginning of the sources.list file.
 cp /etc/apt/sources.list /etc/apt/sources.list.org
