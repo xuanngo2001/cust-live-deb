@@ -14,5 +14,5 @@ apt-key add aptly-master-key.pub
 
 # Insert local repository at the beginning of the sources.list file.
 cp /etc/apt/sources.list /etc/apt/sources.list.org
-echo "deb http://localhost/aptly-repo/ jessie main" > /etc/apt/sources.list
+echo "deb http://localhost/aptly-repo/ jessie main" > ${GV_SOURCES_LIST}
 cat /etc/apt/sources.list.org >> /etc/apt/sources.list
