@@ -28,3 +28,16 @@ echo "${GV_LOG} * Install apt-move to create debian local repository."
 echo "${GV_LOG} * Patch apt-move to support SHA256.."
 echo "${GV_LOG} * Install apache 2 to turn apt-move into a webserver."
 
+# REJECTION: Aptly is more powerful and versatile.
+#  * Running inst-xtra-cld-dev-tools-apt-move.sh ...
+#    * After this operation, 430 kB of additional disk space will be used.
+#    * After this operation, 196 kB of additional disk space will be used.
+#    * Install apt-move to create debian local repository.
+#    * Patch apt-move to support SHA256..
+#    * Install apache 2 to turn apt-move into a webserver.
+#    * Disk size = 3209132K. Space Used = 1016K.
+#  * Running inst-xtra-cld-dev-tools-aptly.sh ...
+#    * After this operation, 16.9 MB of additional disk space will be used.
+#    * Install aptly to create local debian repository.
+#    * Add xz-utils package because aptly snapshot merge needs it.
+#    * Disk size = 3230244K. Space Used = 21112K.
