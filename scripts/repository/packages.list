@@ -1,5 +1,5 @@
 # These are potential list of packages needed.
-# ./inst-min-con-00-custom-repository/inst-min-con-00-custom-repository.sh
+# ./inst-min-con-00-apt-custom-repository/inst-min-con-00-apt-custom-repository.sh
 
 # ./inst-min-con-00-linux-image/inst-min-con-00-linux-image.sh
 dialog
@@ -36,6 +36,9 @@ zip
 p7zip
 # ./inst-min-con-deb-multimedia/inst-min-con-deb-multimedia.sh
 
+# ./inst-min-con-filesystem-exfat/inst-min-con-filesystem-exfat.sh
+exfat-fuse
+exfat-utils
 # ./inst-min-con-filesystem-ntfs-3g/inst-min-con-filesystem-ntfs-3g.sh
 ntfs-3g
 # ./inst-min-con-firmware-cpu/inst-min-con-firmware-cpu.sh
@@ -126,7 +129,7 @@ pinta
 iceweasel
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
 mpv
-# ./inst-std-office-libreoffice/inst-std-office-libreoffice.sh
+# ./inst-std-office-libreoffice-bp/inst-std-office-libreoffice-bp.sh
 libreoffice-writer
 libreoffice-calc
 libreoffice-impress
@@ -175,10 +178,6 @@ php5-mysql
 # ./inst-xtra-cld-dev-tools-aptly/inst-xtra-cld-dev-tools-aptly.sh
 xz-utils
 aptly
-# ./inst-xtra-cld-dev-tools-apt-move/inst-xtra-cld-dev-tools-apt-move.sh
-apt-move
-patch
-apache2
 # ./inst-xtra-cld-dev-tools-debtree/inst-xtra-cld-dev-tools-debtree.sh
 debtree
 graphviz
@@ -205,9 +204,9 @@ wifite
 lsb-release
 libc6-dev
 debian-zfs
-# ./inst-zclean-00-zerosizing-docs/inst-zclean-00-zerosizing-docs.sh
+# ./inst-zclean-00-remove-block-services/inst-zclean-00-remove-block-services.sh
 
-# ./inst-zclean-01-remove-block-services/inst-zclean-01-remove-block-services.sh
+# ./inst-zclean-00-zerosizing-docs/inst-zclean-00-zerosizing-docs.sh
 
 # ./inst-zclean-99-end-cleanup/inst-zclean-99-end-cleanup.sh
 
