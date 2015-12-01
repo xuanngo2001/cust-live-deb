@@ -20,3 +20,9 @@ apt-get -y --force-yes install debtree graphviz
 
 # Log
 echo "${GV_LOG} * Install debtree and graphviz to view dependencies of packages. Better package selections."
+
+# REJECTION: Not needed.
+#  * Running inst-xtra-cld-dev-tools-debtree.sh ...
+#    * After this operation, 13.3 MB of additional disk space will be used.
+#    * Install debtree and graphviz to view dependencies of packages. Better package selections.
+#    * Disk size = 3253252K. Space Used = 15324K.
