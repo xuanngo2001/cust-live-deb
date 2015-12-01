@@ -8,10 +8,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install composer.
-wget https://getcomposer.org/installer
-php installer
-rm -f installer
-mv composer.phar /usr/local/bin/composer
+yes | cp -v composer.phar /usr/local/bin/composer
 rm -f /usr/bin/composer
 ln -s /usr/local/bin/composer /usr/bin/composer
 
