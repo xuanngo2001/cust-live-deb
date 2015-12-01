@@ -23,3 +23,10 @@ echo "${GV_LOG} * Install udevil to auto mount USB devices."
 echo "${GV_LOG} * Set devmon to auto start on startup."
 echo "${GV_LOG} * You need ntfs-3g driver to be able to write on ntfs partition."
 
+# REJECTION: Too old, doesn't support exfat. Need version 0.4.4 or later.
+#  * Running inst-min-con-udevil.sh ...
+#    * After this operation, 500 kB of additional disk space will be used.
+#    * Install udevil to auto mount USB devices.
+#    * Set devmon to auto start on startup.
+#    * You need ntfs-3g driver to be able to write on ntfs partition.
+#    * Disk size = 1117204K. Space Used = 328K.
