@@ -9,7 +9,9 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
-# Install udevil to get devmon. Need version 0.4.4 or later to support exfat. 
+# Install udevil to get devmon. Need version 0.4.4 or later to support exfat.
+echo "deb http://http.debian.net/debian jessie-backports main" >> ${GV_SOURCES_LIST}
+apt-get update
 apt-get -t jessie-backports -y --force-yes install udevil
 
 # Insert devmon in startup script.
