@@ -21,7 +21,8 @@ sed -i "/## Insert your script files here ##/a ${GV_CLD_ROOT_DIR}/startup-devmon
 # Log
 echo "${GV_LOG} * Install udevil to auto mount USB devices."
 echo "${GV_LOG} * Set devmon to auto start on startup."
-echo "${GV_LOG} * You need ntfs-3g driver to be able to write on ntfs partition."
+echo "${GV_LOG} * Need ntfs-3g driver to be able to read and write ntfs partition."
+echo "${GV_LOG} * Need exfat-fuse to be able to read and write exfat partition."
 
 # REJECTION: Too old, doesn't support exfat. Need version 0.4.4 or later.
 #  * Running inst-min-con-udevil.sh ...
