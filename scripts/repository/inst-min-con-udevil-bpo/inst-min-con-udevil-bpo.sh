@@ -10,7 +10,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install udevil to get devmon. Need version 0.4.4 or later to support exfat.
-echo "deb http://http.debian.net/debian jessie-backports main" >> ${GV_SOURCES_LIST}
+SOURCES_LINE="deb http://http.debian.net/debian jessie-backports main"
+if ! grep -qF "${SOURCES_LINE}" "${GV_SOURCES_LIST}"; then
+  echo "${SOURCES_LINE}" >> "${GV_SOURCES_LIST}"
+fi
 apt-get update
 apt-get -t jessie-backports -y --force-yes install udevil
 
