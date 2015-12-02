@@ -8,10 +8,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install Office Suite from jessie-backports.
-SOURCES_LINE="deb http://http.debian.net/debian jessie-backports main"
-if ! grep -qF "${SOURCES_LINE}" "${GV_SOURCES_LIST}"; then
-  echo "${SOURCES_LINE}" >> "${GV_SOURCES_LIST}"
-fi
+GF_ADD_SOURCE_LIST "deb http://http.debian.net/debian jessie-backports main"
 apt-get update
 
 apt-get -t jessie-backports -y --force-yes install libreoffice-writer
