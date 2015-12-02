@@ -63,6 +63,7 @@ export -f GF_LOG_TOTAL_SIZE
 # Add repository to sources.list
 GF_ADD_SOURCE_LIST()
 {
+  # Usage: GF_ADD_SOURCE_LIST "deb http://http.debian.net/debian jessie-backports main"
   local SOURCES_LINE=$1
   local SOURCES_LIST=/etc/apt/sources.list
   if ! grep -qF "${SOURCES_LINE}" "${SOURCES_LIST}"; then
