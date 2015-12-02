@@ -60,3 +60,13 @@ GF_LOG_TOTAL_SIZE ()
 }
 export -f GF_LOG_TOTAL_SIZE
 
+# Add repository to sources.list
+GF_ADD_SOURCE_LIST()
+{
+  local SOURCES_LINE=$1
+  local SOURCES_LIST=/etc/apt/sources.list
+  if ! grep -qF "${SOURCES_LINE}" "${SOURCES_LIST}"; then
+    echo "${SOURCES_LINE}" >> "${SOURCES_LIST}"
+  fi
+}
+export -f GF_ADD_SOURCE_LIST
