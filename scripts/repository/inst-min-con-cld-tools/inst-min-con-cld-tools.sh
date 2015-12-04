@@ -12,7 +12,7 @@ LOCAL_BIN=/usr/local/bin
 for FILE_PATH in $(find tools/ -type f -name '*.sh')
 do
   # Get the absolute path.
-  FILE_PATH=$(realpath "${FILE_PATH}")
+  FILE_PATH=$(readlink -e "${FILE_PATH}")
 
   # Prepare variable name.
   SCRIPT_NAME=$(basename "${FILE_PATH}")

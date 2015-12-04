@@ -4,7 +4,7 @@
 #   * Avoid using other applications than GNU coreutils applications: http://en.wikipedia.org/wiki/GNU_Core_Utilities.
 #   * Need: grep, xargs
 
-WORKING_DIR=$(realpath $1)
+WORKING_DIR=$(readlink -e $1)
 
 
 # Error Handling
@@ -34,7 +34,7 @@ WORKING_FREE_SPACE=$(df -k ${WORKING_DIR} | tail -n1 | tr -s ' ' | cut -d ' ' -f
 if [ "${LIVE_SYS_SIZE}" -gt "${WORKING_FREE_SPACE}" ]; then
   echo "ERROR: Not enough free space."
   printf "%25s = %'10dK\n" "Live system size"             "${LIVE_SYS_SIZE}"
-  printf "%25s = %'10dK\n" "Free space at $(basename $(realpath ${WORKING_DIR}))/" "${WORKING_FREE_SPACE}"
+  printf "%25s = %'10dK\n" "Free space at $(basename $(readlink -e ${WORKING_DIR}))/" "${WORKING_FREE_SPACE}"
   exit 1
 fi
 
