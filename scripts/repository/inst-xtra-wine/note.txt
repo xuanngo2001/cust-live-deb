@@ -26,5 +26,5 @@ winecfg
 wine winecfg
 Install mono.
 http://askubuntu.com/questions/74690/how-to-install-32-bit-wine-on-64-bit-ubuntu
-yes | cp -R /root/.wine64/ root/
-yes | cp -R root/.wine64/ /root/
+tar -zcvf .wine64.tar.gz -C /root/ .wine64/
+tar -zxvf .wine64.tar.gz -C /root
