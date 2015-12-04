@@ -37,7 +37,7 @@ export -f GF_SIZE_OF
 
 
 # Use to exchange value variables between different script.
-export GP_VALUES_FILE=$(realpath load-global-values.txt)
+export GP_VALUES_FILE=$(readlink -e load-global-values.txt)
 
 # Log total size in kilobytes.
 GF_LOG_TOTAL_SIZE ()
