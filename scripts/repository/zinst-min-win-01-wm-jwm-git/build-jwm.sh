@@ -9,6 +9,11 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Insert local repository at the beginning of the sources.list file.
+yes | cp /etc/apt/sources.list /etc/apt/sources.list.org
+echo "deb http://localhost/aptly-repo/ jessie main" > /etc/apt/sources.list
+cat /etc/apt/sources.list.org | sort | uniq >> /etc/apt/sources.list
+apt-get update
 
 # Install dependencies: dh-autoreconf.
 apt-get -y --force-yes install dh-autoreconf
@@ -20,7 +25,6 @@ INITIAL_LOCATION=$(readlink -e .)
 JWM_WORK_DIR=jwm
 rm -rf "${JWM_WORK_DIR}"
 mkdir -p "${JWM_WORK_DIR}"
-cd ${JWM_WORK_DIR}
 
 # Decompress.
 JWM_GZ=jwm-2.3.4.tar.gz
@@ -28,7 +32,8 @@ tar -xvzf "${JWM_GZ}" --strip-components=1 -C "${JWM_WORK_DIR}"
 
 # Build JWM
 cd ${JWM_WORK_DIR}
-autoreconf
+autoreconf || true
+automake -a || true
 ./configure
 make
 make install
