@@ -10,6 +10,7 @@ apt-get update
 # Install dependencies: dh-autoreconf.
 apt-get -y --force-yes install dh-autoreconf
 apt-get -y --force-yes install libx11-dev
+apt-get -y --force-yes install checkinstall
 
 INITIAL_LOCATION=$(readlink -e .)
 
@@ -29,6 +30,8 @@ automake -a || true
 ./configure
 make
 make install
+#checkinstall --install=no make
+#checkinstall
 cd ${INITIAL_LOCATION}
 
 
