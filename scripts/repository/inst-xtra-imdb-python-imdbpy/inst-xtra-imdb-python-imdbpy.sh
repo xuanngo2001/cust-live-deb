@@ -14,3 +14,8 @@ apt-get -y --force-yes install python-imdbpy
 
 # Log
 echo "${GV_LOG} * Install IMDbPY."
+
+#   * Running inst-xtra-imdb-python-imdbpy.sh ...
+#     * After this operation, 990 kB of additional disk space will be used.
+#     * Install IMDbPY.
+#     * Disk size = 4163692K. Space Used = 2152K.
