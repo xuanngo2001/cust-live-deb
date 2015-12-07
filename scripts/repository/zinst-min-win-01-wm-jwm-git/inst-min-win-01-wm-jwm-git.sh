@@ -18,6 +18,7 @@ yes | cp ${JWMRC}-tray.xml   "${GV_CLD_ROOT_DIR}"
 yes | cp ${JWMRC}-key.xml    "${GV_CLD_ROOT_DIR}"
 yes | cp ${JWMRC}-startup.sh "${GV_CLD_ROOT_DIR}"
 
+./build-jwm.sh
 
 # Log
 echo "${GV_LOG} * Install Window Manager: JWM."
