@@ -29,7 +29,6 @@ automake -a || true
 ./configure
 make
 make install
-
 cd ${INITIAL_LOCATION}
 
 
