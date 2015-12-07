@@ -29,3 +29,10 @@ echo "${GV_LOG} * Set ${JWMRC}."
 #
 # jwm -restart
 # jwm -exit
+
+# REJECTION: Too old.
+#  * Running inst-min-win-01-wm-jwm.sh ...
+#    * After this operation, 5,989 kB of additional disk space will be used.
+#    * Install Window Manager: JWM.
+#    * Set jwmrc.
+#    * Disk size = 2489948K. Space Used = 12572K.
