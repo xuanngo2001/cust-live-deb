@@ -11,7 +11,7 @@ if [ "$#" -ne 2 ]; then
   echo "ERROR: Illegal number of parameters."
   echo "   e.g. $0 SYSTEM DEB_REPO_URL"
   echo "   e.g. $0 std http://ftp.debian.org/debian/"
-  echo "   e.g. $0 min http://localhost/debian-repo/"
+  echo "   e.g. $0 min http://localhost/aptly-repo/"
   exit 1;
 fi
 
