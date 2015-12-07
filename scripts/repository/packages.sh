@@ -14,6 +14,6 @@ while IFS='' read -r SCRIPT_FILE || [[ -n "$SCRIPT_FILE" ]]; do
   APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | sed 's/.* install //' | tr ' ' '\n' )
   echo "${APT_GET_PACKAGES}" >> "${PACKAGE_LIST_FILE}"
  
-done < <( find . -type f -name "inst-*.sh" | sort )
+done < <( find ./inst-* -type f -name "inst-*.sh" | sort )
 
 
