@@ -21,9 +21,9 @@ yes | cp ${JWMRC}-startup.sh "${GV_CLD_ROOT_DIR}"
 ./build-jwm.sh
 
 # Log
-echo "${GV_LOG} * Install Window Manager: JWM."
+JWM_VERSION=$(jwm -v | head -n 1)
+echo "${GV_LOG} * Install Window Manager: ${JWM_VERSION}."
 echo "${GV_LOG} * Set ${JWMRC}."
-
 
 # Reference:
 # http://puppylinux.org/wikka/Configure_PuppyMenu
