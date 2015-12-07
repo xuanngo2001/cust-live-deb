@@ -29,3 +29,13 @@ yes | cp ./go-workspace/bin/goim /usr/local/bin
 # Log
 echo "${GV_LOG} * Install required packages for goim: golang-go."
 echo "${GV_LOG} * Install goim from github.com/BurntSushi/goim."
+
+# REJECTION: Too big.
+#   * Running inst-xtra-imdb-goim.sh ...
+#     * After this operation, 159 MB of additional disk space will be used.
+#     * After this operation, 23.2 MB of additional disk space will be used.
+#     * Disk size = 4161540K. Space Used = 215516K.
+#   * Running inst-xtra-imdb-python-imdbpy.sh ...
+#     * After this operation, 990 kB of additional disk space will be used.
+#     * Install IMDbPY.
+#     * Disk size = 4163692K. Space Used = 2152K.
