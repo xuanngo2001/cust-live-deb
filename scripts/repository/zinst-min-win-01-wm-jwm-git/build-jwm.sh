@@ -1,14 +1,6 @@
 #!/bin/bash
 set -e
 
-# Global variables:
-# ${GV_LOG}: Prefix this variable in echo to log echoed string.
-# ${GV_SETTINGS_DIR}: Hold settings data.
-# ${GV_BINARY_DIR}: Hold settings binary data.
-
-SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
-echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
-
 # Insert local repository at the beginning of the sources.list file.
 yes | cp /etc/apt/sources.list /etc/apt/sources.list.org
 echo "deb http://localhost/aptly-repo/ jessie main" > /etc/apt/sources.list
@@ -27,7 +19,7 @@ rm -rf "${JWM_WORK_DIR}"
 mkdir -p "${JWM_WORK_DIR}"
 
 # Decompress.
-JWM_GZ=jwm-2.3.4.tar.gz
+JWM_GZ=tarball/jwm-2.3.4.tar.gz
 tar -xvzf "${JWM_GZ}" --strip-components=1 -C "${JWM_WORK_DIR}"
 
 # Build JWM
@@ -39,9 +31,6 @@ make
 make install
 
 cd ${INITIAL_LOCATION}
-
-# Log
-echo "${GV_LOG} * Install dependencies: dh-autoreconf."
 
 
 # Reference:
