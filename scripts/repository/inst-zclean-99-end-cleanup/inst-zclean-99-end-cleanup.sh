@@ -29,7 +29,7 @@ cp ${GV_SOURCES_LIST} ${GV_SOURCES_LIST}.orig
 sort ${GV_SOURCES_LIST}.orig | uniq > ${GV_SOURCES_LIST}
 
 # Delete local repository.
-sed -i '/localhost/d' ${SOURCES_LIST}
+sed -i '/localhost/d' ${GV_SOURCES_LIST}
 
 # Log
 echo "${GV_LOG} * Clean apt-get cache."
