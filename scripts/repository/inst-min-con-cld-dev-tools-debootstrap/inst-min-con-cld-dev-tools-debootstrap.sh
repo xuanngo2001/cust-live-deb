@@ -11,5 +11,5 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install debootstrap
 
 # Log
-echo "${GV_LOG} * Install debootstrap allows the creation of a Debian base system int a directory."
+echo "${GV_LOG} * Install debootstrap allows the creation of a Debian base system in a directory."
 
