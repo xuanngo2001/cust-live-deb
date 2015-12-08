@@ -61,9 +61,11 @@ DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-
 		<Outline>grey</Outline>
 		<Foreground>#a8c5e9</Foreground>
 		<Background>#80a7d6</Background>
-		<ActiveForeground>#a8c5e9</ActiveForeground>
-		<ActiveBackground>#80a7d6</ActiveBackground>
-	<Active><Background>#80a7d6</Background><Foreground>#a8c5e9</Foreground></Active></PagerStyle>
+  	<Active>
+      <Background>#80a7d6</Background>
+      <Foreground>#a8c5e9</Foreground>
+    </Active>
+  </PagerStyle>
 
   <PopupStyle>
       <Font>Sans-9</Font>
@@ -76,9 +78,11 @@ DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-
 		<Font>Arial   -12</Font>
 		<Foreground>black</Foreground>
 		<Background>#F4F4F4</Background>
-		<ActiveForeground>white</ActiveForeground>
-		<ActiveBackground>#a8c5e9:#80a7d6</ActiveBackground>
-	<Active><Background>#a8c5e9:#80a7d6</Background><Foreground>white</Foreground></Active></MenuStyle>
+	 <Active>
+	   <Background>#a8c5e9:#80a7d6</Background>
+      <Foreground>white</Foreground>
+    </Active>
+  </MenuStyle>
 
   <!-- Tray at the bottom. -->
   <Include>/root/cld/jwmrc-tray.xml</Include>
