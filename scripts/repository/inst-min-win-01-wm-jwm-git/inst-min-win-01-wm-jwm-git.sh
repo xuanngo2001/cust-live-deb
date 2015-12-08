@@ -9,6 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y --force-yes install jwm
+dpkg -i jwm_2.3.4-1_amd64.deb
 
 # Set JWM.
 JWMRC=jwmrc
@@ -17,8 +18,6 @@ yes | cp ${JWMRC}-menus.xml  "${GV_CLD_ROOT_DIR}"
 yes | cp ${JWMRC}-tray.xml   "${GV_CLD_ROOT_DIR}"
 yes | cp ${JWMRC}-key.xml    "${GV_CLD_ROOT_DIR}"
 yes | cp ${JWMRC}-startup.sh "${GV_CLD_ROOT_DIR}"
-
-./build-jwm.sh
 
 # Log
 JWM_VERSION=$(jwm -v | head -n 1)
