@@ -9,7 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y --force-yes install jwm
-dpkg -i jwm_2.3.4-1_amd64.deb
+#dpkg -i jwm_2.3.4~bpo-1_amd64.deb
 
 # Set JWM.
 JWMRC=jwmrc
