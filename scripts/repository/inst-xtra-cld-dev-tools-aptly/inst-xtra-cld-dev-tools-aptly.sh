@@ -14,5 +14,5 @@ apt-get update
 apt-get -y --force-yes install xz-utils aptly
 
 # Log
-echo "${GV_LOG} * Install aptly to create local debian repository."
+echo "${GV_LOG} * Install $(aptly version) to create local debian repository."
 echo "${GV_LOG} * Add xz-utils package because aptly snapshot merge needs it." 
