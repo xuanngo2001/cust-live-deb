@@ -1,10 +1,10 @@
 CLDS:>>>>>>>>> Running install.sh ...
 CLDS: * Running on SHELL=/bin/bash VER=4.3.30(1)-release
-CLDS: * Disk size = 1312936K. Space Used = 1312936K.
+CLDS: * Disk size = 795280K. Space Used = 795280K.
 /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS:>>>>>>>>> Running inst-min-con-00-apt-custom-repository.sh ...
 OK
-CLDS: * Disk size = 1312948K. Space Used = 12K.
+CLDS: * Disk size = 795292K. Space Used = 12K.
 /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS:>>>>>>>>> Running inst-min-con-00-linux-image.sh ...
 Get:1 http://localhost jessie InRelease [1968 B]
@@ -19,7 +19,7 @@ Get:6 http://ftp.debian.org jessie/non-free amd64 Packages [83.6 kB]
 Get:7 http://ftp.debian.org jessie/contrib Translation-en [38.4 kB]
 Get:8 http://ftp.debian.org jessie/main Translation-en [4585 kB]
 Get:9 http://ftp.debian.org jessie/non-free Translation-en [72.2 kB]
-Fetched 12.1 MB in 30s (394 kB/s)
+Fetched 12.1 MB in 26s (459 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -36,8 +36,18 @@ Get:4 http://localhost/aptly-repo/ jessie/main libicu52 amd64 52.1-8+deb8u3 [678
 Get:5 http://localhost/aptly-repo/ jessie/main libisccfg-export90 amd64 1:9.9.5.dfsg-9+deb8u3 [40.1 kB]
 Get:6 http://localhost/aptly-repo/ jessie/main libirs-export91 amd64 1:9.9.5.dfsg-9+deb8u3 [37.8 kB]
 Get:7 http://localhost/aptly-repo/ jessie/main tzdata all 2015g-0+deb8u1 [184 kB]
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US.UTF-8",
+	LC_ALL = "en_US.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 10.6 MB in 0s (33.6 MB/s)
+Fetched 10.6 MB in 0s (33.2 MB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9726 files and directories currently installed.)
 Preparing to unpack .../dpkg_1.17.26_amd64.deb ...
 Unpacking dpkg (1.17.26) over (1.17.25) ...
@@ -59,8 +69,8 @@ Unpacking tzdata (2015g-0+deb8u1) over (2015f-0+deb8u1) ...
 Setting up tzdata (2015g-0+deb8u1) ...
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Thu Dec 10 16:25:08 UTC 2015.
-Universal Time is now:  Thu Dec 10 16:25:08 UTC 2015.
+Local time is now:      Thu Dec 10 21:56:37 UTC 2015.
+Universal Time is now:  Thu Dec 10 21:56:37 UTC 2015.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up libisc-export95 (1:9.9.5.dfsg-9+deb8u3) ...
@@ -86,7 +96,17 @@ Get:2 http://localhost/aptly-repo/ jessie/main libdbus-1-3 amd64 1.8.20-0+deb8u1
 Get:3 http://localhost/aptly-repo/ jessie/main libexpat1 amd64 2.1.0-6+deb8u1 [80.0 kB]
 Get:4 http://localhost/aptly-repo/ jessie/main dbus amd64 1.8.20-0+deb8u1 [291 kB]
 Get:5 http://localhost/aptly-repo/ jessie/main dialog amd64 1.2-20140911-1 [255 kB]
-Fetched 810 kB in 0s (18.1 MB/s)
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US.UTF-8",
+	LC_ALL = "en_US.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+Fetched 810 kB in 0s (20.6 MB/s)
 Selecting previously unselected package libcap-ng0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9729 files and directories currently installed.)
 Preparing to unpack .../libcap-ng0_0.7.4-2_amd64.deb ...
@@ -210,9 +230,19 @@ Get:51 http://localhost/aptly-repo/ jessie/main shared-mime-info amd64 1.3-1 [63
 Get:52 http://localhost/aptly-repo/ jessie/main xdg-user-dirs amd64 0.15-2 [52.1 kB]
 Get:53 http://localhost/aptly-repo/ jessie/main xml-core all 0.13+nmu2 [24.2 kB]
 Get:54 http://localhost/aptly-repo/ jessie/main irqbalance amd64 1.0.6-3 [31.1 kB]
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_US.UTF-8",
+	LC_ALL = "en_US.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
 Extracting templates from packages: 55%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 47.9 MB in 1s (34.7 MB/s)
+Fetched 47.9 MB in 1s (33.6 MB/s)
 Selecting previously unselected package libxml2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9950 files and directories currently installed.)
 Preparing to unpack .../libxml2_2.9.1+dfsg1-5_amd64.deb ...
@@ -249,6 +279,9 @@ Preparing to unpack .../initramfs-tools_0.120_all.deb ...
 Unpacking initramfs-tools (0.120) ...
 Selecting previously unselected package linux-image-3.16.0-4-amd64.
 Preparing to unpack .../linux-image-3.16.0-4-amd64_3.16.7-ckt11-1+deb8u6_amd64.deb ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
 Unpacking linux-image-3.16.0-4-amd64 (3.16.7-ckt11-1+deb8u6) ...
 Selecting previously unselected package sgml-base.
 Preparing to unpack .../sgml-base_1.26+nmu4_all.deb ...
@@ -391,12 +424,18 @@ No schema files found: doing nothing.
 Setting up libnuma1:amd64 (2.0.10-1) ...
 Setting up libuuid-perl (0.05-1+b1) ...
 Setting up linux-base (3.5) ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
 Setting up libklibc (2.0.4-2) ...
 Setting up klibc-utils (2.0.4-2) ...
 Setting up busybox (1:1.22.0-9+deb8u1) ...
 Setting up initramfs-tools (0.120) ...
 I: update-initramfs is disabled (live system is running on read-only media).
 Setting up linux-image-3.16.0-4-amd64 (3.16.7-ckt11-1+deb8u6) ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
 /etc/kernel/postinst.d/initramfs-tools:
 I: update-initramfs is disabled (live system is running on read-only media).
 Setting up sgml-base (1.26+nmu4) ...
@@ -453,6 +492,9 @@ Setting up shared-mime-info (1.3-1) ...
 Setting up xdg-user-dirs (0.15-2) ...
 Setting up xml-core (0.13+nmu2) ...
 Setting up irqbalance (1.0.6-3) ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
 [....] Starting SMP IRQ Balancer: irqbalance[?25l7[1G[[32m ok [39;49m8[?12l[?25h.
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Processing triggers for systemd (215-17+deb8u2) ...
@@ -462,13 +504,13 @@ CLDS: * Mount /proc, /sys and /dev/pts.
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Install Linux image.
 CLDS: * Set APT to skip installing recommended packages.
-CLDS: * Disk size = 1711964K. Space Used = 399016K.
+CLDS: * Disk size = 1194308K. Space Used = 399016K.
 /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS:>>>>>>>>> Running inst-min-con-01-apt.sh ...
 'preferences-local-repository' -> '/etc/apt/preferences.d/preferences-local-repository'
 CLDS: * Set APT to use local repository first.
 CLDS: * Set APT to skip installing recommended packages.
-CLDS: * Disk size = 1711968K. Space Used = 4K.
+CLDS: * Disk size = 1194312K. Space Used = 4K.
 /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS:>>>>>>>>> Running inst-min-con-01-debconf-utils.sh ...
 Reading package lists...
@@ -490,7 +532,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 57.6 kB in 0s (4654 kB/s)
+Fetched 57.6 kB in 0s (0 B/s)
 Selecting previously unselected package debconf-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16161 files and directories currently installed.)
 Preparing to unpack .../debconf-utils_1.5.56_all.deb ...
@@ -498,7 +540,7 @@ Unpacking debconf-utils (1.5.56) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up debconf-utils (1.5.56) ...
 CLDS: * Install debconf-utils to use debconf-set-selections.
-CLDS: * Disk size = 1712192K. Space Used = 224K.
+CLDS: * Disk size = 1194548K. Space Used = 236K.
 /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS:>>>>>>>>> Running inst-min-con-02-locale.sh ...
 Reading package lists...
@@ -521,7 +563,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 3908 kB in 0s (36.7 MB/s)
+Fetched 3908 kB in 0s (32.0 MB/s)
 Selecting previously unselected package locales.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16193 files and directories currently installed.)
 Preparing to unpack .../locales_2.19-18+deb8u1_all.deb ...
@@ -535,7 +577,7 @@ Generating locales (this might take a while)...
 Generation complete.
 /root/.bashrc: line 21: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS: * Install locale and set it to use en_US.UTF-8.
-CLDS: * Disk size = 1734928K. Space Used = 22736K.
+CLDS: * Disk size = 1217276K. Space Used = 22728K.
 CLDS:>>>>>>>>> Running inst-min-con-02-localepurge.sh ...
 info: Trying to set 'localepurge/remove_no' [note] to ''
 info: Loading answer for 'localepurge/remove_no'
@@ -570,7 +612,7 @@ After this operation, 334 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main ucf all 3.0030 [69.7 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main localepurge all 0.7.3.4 [52.4 kB]
 Preconfiguring packages ...
-Fetched 122 kB in 0s (11.9 MB/s)
+Fetched 122 kB in 0s (10.2 MB/s)
 Selecting previously unselected package ucf.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16814 files and directories currently installed.)
 Preparing to unpack .../archives/ucf_3.0030_all.deb ...
@@ -586,24 +628,24 @@ Setting up localepurge (0.7.3.4) ...
 Creating config file /etc/locale.nopurge with new version
 CLDS: * Install localepurge to purge documentation of all languages, except en, en_US, en_US.UTF-8.
 CLDS: * Reconfigure localepurge: dpkg-reconfigure localepurge
-CLDS: * Disk size = 1735668K. Space Used = 740K.
+CLDS: * Disk size = 1218016K. Space Used = 740K.
 CLDS:>>>>>>>>> Running inst-min-con-03-proxy.sh ...
-CLDS: * Disk size = 1735676K. Space Used = 8K.
+CLDS: * Disk size = 1218024K. Space Used = 8K.
 CLDS:>>>>>>>>> Running inst-min-con-03-startup-script.sh ...
 /root/scripts/repository/inst-min-con-03-startup-script
 CLDS: * Copy startup.sh to /etc/init.d/.
 CLDS: * Make it executable.
 CLDS: * Register it in the boot sequence.
-CLDS: * Disk size = 1735680K. Space Used = 4K.
+CLDS: * Disk size = 1218028K. Space Used = 4K.
 CLDS:>>>>>>>>> Running inst-min-con-04-block-services-start-postinstall.sh ...
 CLDS: * Block services from starting after they are being installed.
-CLDS: * Disk size = 1735684K. Space Used = 4K.
+CLDS: * Disk size = 1218032K. Space Used = 4K.
 CLDS:>>>>>>>>> Running inst-min-con-auto-log-root.sh ...
-CLDS: * Disk size = 1735692K. Space Used = 8K.
+CLDS: * Disk size = 1218040K. Space Used = 8K.
 CLDS:>>>>>>>>> Running inst-min-con-bashrc.sh ...
 CLDS: * Set common settings for /root/.bashrc.
 CLDS: * Set dircolors to use dircolors-gnu-ls-colors.txt to make ls more beautiful.
-CLDS: * Disk size = 1735700K. Space Used = 8K.
+CLDS: * Disk size = 1218048K. Space Used = 8K.
 CLDS:>>>>>>>>> Running inst-min-con-cld-dev-tools-debootstrap.sh ...
 Reading package lists...
 Building dependency tree...
@@ -622,7 +664,7 @@ Unpacking debootstrap (1.0.67) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up debootstrap (1.0.67) ...
 CLDS: * Install debootstrap allows the creation of a Debian base system in a directory.
-CLDS: * Disk size = 1736020K. Space Used = 320K.
+CLDS: * Disk size = 1218372K. Space Used = 324K.
 CLDS:>>>>>>>>> Running inst-min-con-cld-tools.sh ...
 CLDS: * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/fimg.sh to /usr/local/bin/.
 CLDS: * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/feh-ss.sh to /usr/local/bin/.
@@ -636,7 +678,7 @@ CLDS: * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-mkiso.s
 CLDS: * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-dd-usb.sh to /usr/local/bin/.
 CLDS: * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-dependency-graph.sh to /usr/local/bin/.
 CLDS: * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-win-split.sh to /usr/local/bin/.
-CLDS: * Disk size = 1736072K. Space Used = 52K.
+CLDS: * Disk size = 1218420K. Space Used = 48K.
 CLDS:>>>>>>>>> Running inst-min-con-compressors.sh ...
 Reading package lists...
 Building dependency tree...
@@ -667,7 +709,7 @@ The following NEW packages will be installed:
 Need to get 287 kB of archives.
 After this operation, 812 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main rar amd64 2:5.2.0-dmo1 [287 kB]
-Fetched 287 kB in 0s (23.0 MB/s)
+Fetched 287 kB in 0s (18.7 MB/s)
 Selecting previously unselected package rar.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16925 files and directories currently installed.)
 Preparing to unpack .../rar_2%3a5.2.0-dmo1_amd64.deb ...
@@ -685,7 +727,7 @@ The following NEW packages will be installed:
 Need to get 162 kB of archives.
 After this operation, 347 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main unzip amd64 6.0-16+deb8u2 [162 kB]
-Fetched 162 kB in 0s (0 B/s)
+Fetched 162 kB in 0s (13.7 MB/s)
 Selecting previously unselected package unzip.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16937 files and directories currently installed.)
 Preparing to unpack .../unzip_6.0-16+deb8u2_amd64.deb ...
@@ -701,7 +743,7 @@ The following NEW packages will be installed:
 Need to get 228 kB of archives.
 After this operation, 607 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main zip amd64 3.0-8 [228 kB]
-Fetched 228 kB in 0s (0 B/s)
+Fetched 228 kB in 0s (19.4 MB/s)
 Selecting previously unselected package zip.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16955 files and directories currently installed.)
 Preparing to unpack .../archives/zip_3.0-8_amd64.deb ...
@@ -719,7 +761,7 @@ The following NEW packages will be installed:
 Need to get 318 kB of archives.
 After this operation, 927 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main p7zip amd64 9.20.1~dfsg.1-4.1+deb8u1 [318 kB]
-Fetched 318 kB in 0s (21.3 MB/s)
+Fetched 318 kB in 0s (19.5 MB/s)
 Selecting previously unselected package p7zip.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16970 files and directories currently installed.)
 Preparing to unpack .../p7zip_9.20.1~dfsg.1-4.1+deb8u1_amd64.deb ...
@@ -731,7 +773,7 @@ CLDS: * Install de/compressor: rar.
 CLDS: * Install de/compressor: unzip.
 CLDS: * Install de/compressor: zip.
 CLDS: * Install de/compressor: p7zip.
-CLDS: * Disk size = 1740084K. Space Used = 4012K.
+CLDS: * Disk size = 1222428K. Space Used = 4008K.
 CLDS:>>>>>>>>> Running inst-min-con-deb-multimedia.sh ...
 Selecting previously unselected package deb-multimedia-keyring.
 (Reading database ... 17033 files and directories currently installed.)
@@ -745,10 +787,10 @@ Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://ftp.debian.org jessie InRelease
 Hit http://ftp.debian.org jessie Release.gpg
-Get:1 http://www.deb-multimedia.org jessie InRelease [22.3 kB]
 Hit http://ftp.debian.org jessie Release
-Get:2 http://www.deb-multimedia.org jessie/main amd64 Packages [156 kB]
+Get:1 http://www.deb-multimedia.org jessie InRelease [22.3 kB]
 Hit http://ftp.debian.org jessie/main amd64 Packages
+Get:2 http://www.deb-multimedia.org jessie/main amd64 Packages [156 kB]
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
 Get:3 http://www.deb-multimedia.org jessie/non-free amd64 Packages [3,109 B]
 Hit http://ftp.debian.org jessie/non-free amd64 Packages
@@ -761,13 +803,13 @@ Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Fetched 181 kB in 5s (33.8 kB/s)
+Fetched 181 kB in 4s (38.8 kB/s)
 Reading package lists...
 CLDS: * Install deb-multimedia-keyring_2015.6.1_all.deb.
 CLDS: * Add deb-multimedia sources list.
 CLDS: * Delete deb-multimedia-keyring_2015.6.1_all.deb[12K].
 CLDS: * apt-get update
-CLDS: * Disk size = 1741292K. Space Used = 1208K.
+CLDS: * Disk size = 1223640K. Space Used = 1212K.
 CLDS:>>>>>>>>> Running inst-min-con-filesystem-exfat.sh ...
 Reading package lists...
 Building dependency tree...
@@ -784,7 +826,7 @@ After this operation, 550 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libfuse2 amd64 2.9.3-15+deb8u1 [134 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main fuse amd64 2.9.3-15+deb8u1 [70.4 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main exfat-fuse amd64 1.1.0-2 [27.1 kB]
-Fetched 232 kB in 0s (12.1 MB/s)
+Fetched 232 kB in 0s (11.4 MB/s)
 Selecting previously unselected package libfuse2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17037 files and directories currently installed.)
 Preparing to unpack .../libfuse2_2.9.3-15+deb8u1_amd64.deb ...
@@ -819,7 +861,7 @@ Unpacking exfat-utils (1.1.0-2) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up exfat-utils (1.1.0-2) ...
 CLDS: * Install exfat-fuse so that you can read and write SD cards and USB keys.
-CLDS: * Disk size = 1742488K. Space Used = 1196K.
+CLDS: * Disk size = 1224836K. Space Used = 1196K.
 CLDS:>>>>>>>>> Running inst-min-con-filesystem-ntfs-3g.sh ...
 Reading package lists...
 Building dependency tree...
@@ -830,7 +872,7 @@ The following NEW packages will be installed:
 Need to get 488 kB of archives.
 After this operation, 1,632 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main ntfs-3g amd64 1:2014.2.15AR.2-1+deb8u2 [488 kB]
-Fetched 488 kB in 0s (21.7 MB/s)
+Fetched 488 kB in 0s (24.3 MB/s)
 Selecting previously unselected package ntfs-3g.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17092 files and directories currently installed.)
 Preparing to unpack .../ntfs-3g_1%3a2014.2.15AR.2-1+deb8u2_amd64.deb ...
@@ -844,7 +886,7 @@ Processing triggers for initramfs-tools (0.120) ...
 I: update-initramfs is disabled (live system is running on read-only media).
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install support for NTFS: ntfs-3g.
-CLDS: * Disk size = 1744644K. Space Used = 2156K.
+CLDS: * Disk size = 1226992K. Space Used = 2156K.
 CLDS:>>>>>>>>> Running inst-min-con-firmware-cpu.sh ...
 Reading package lists...
 Building dependency tree...
@@ -875,7 +917,7 @@ Need to get 476 kB of archives.
 After this operation, 655 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main iucode-tool amd64 1.1.1-1 [33.2 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main intel-microcode amd64 3.20150121.1 [443 kB]
-Fetched 476 kB in 0s (25.9 MB/s)
+Fetched 476 kB in 0s (23.2 MB/s)
 Selecting previously unselected package iucode-tool.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17180 files and directories currently installed.)
 Preparing to unpack .../iucode-tool_1.1.1-1_amd64.deb ...
@@ -890,7 +932,7 @@ I: update-initramfs is disabled (live system is running on read-only media).
 intel-microcode: microcode will be updated at next boot
 CLDS: * Install CPU firmware: amd64-microcode.
 CLDS: * Install CPU firmware: intel-microcode.
-CLDS: * Disk size = 1745984K. Space Used = 1340K.
+CLDS: * Disk size = 1228324K. Space Used = 1332K.
 CLDS:>>>>>>>>> Running inst-min-con-firmware-net-b43-installer.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1046,7 +1088,7 @@ Extracting b43/lcn1bsinitvals26.fw
 Extracting b43/n0initvals22.fw
 Extracting b43/ht0bsinitvals29.fw
 CLDS: * Install b43 for Dell Wireless 1397 WLAN Mini-Card Driver.
-CLDS: * Disk size = 1783680K. Space Used = 37696K.
+CLDS: * Disk size = 1266028K. Space Used = 37704K.
 CLDS:>>>>>>>>> Running inst-min-con-firmware.sh ...
 info: Trying to set 'firmware-ivtv/license/accepted' [boolean] to 'true'
 info: Loading answer for 'firmware-ivtv/license/accepted'
@@ -1087,7 +1129,7 @@ Get:16 http://localhost/aptly-repo/ jessie/main firmware-realtek all 0.43 [208 k
 Get:17 http://localhost/aptly-repo/ jessie/main firmware-zd1211 all 3.0.0.56-3 [14.0 kB]
 Get:18 http://localhost/aptly-repo/ jessie/main zd1211-firmware all 3.0.0.56-3 [4,102 B]
 Preconfiguring packages ...
-Fetched 12.4 MB in 0s (30.0 MB/s)
+Fetched 12.4 MB in 0s (29.3 MB/s)
 Selecting previously unselected package firmware-ipw2x00.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17254 files and directories currently installed.)
 Preparing to unpack .../firmware-ipw2x00_0.43_all.deb ...
@@ -1168,7 +1210,7 @@ I: update-initramfs is disabled (live system is running on read-only media).
 Setting up firmware-zd1211 (3.0.0.56-3) ...
 Setting up zd1211-firmware (3.0.0.56-3) ...
 CLDS: * Install firmwares: atmel-firmware, bluez-firmware, firmware-atheros, firmware-bnx2, firmware-bnx2x, firmware-brcm80211, firmware-intelwimax, firmware-ipw2x00, firmware-ivtv, firmware-iwlwifi, firmware-libertas, firmware-linux, firmware-linux-free, firmware-linux-nonfree, firmware-qlogic, firmware-ralink, firmware-realtek, zd1211-firmware.
-CLDS: * Disk size = 1837372K. Space Used = 53692K.
+CLDS: * Disk size = 1319720K. Space Used = 53692K.
 CLDS:>>>>>>>>> Running inst-min-con-live-build-tools.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1206,7 +1248,7 @@ Get:2 http://localhost/aptly-repo/ jessie/main libjte1 amd64 1.20-1 [27.9 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main libisofs6 amd64 1.3.2-1.1 [159 kB]
 Get:4 http://localhost/aptly-repo/ jessie/main libisoburn1 amd64 1.3.2-1.1 [335 kB]
 Get:5 http://localhost/aptly-repo/ jessie/main xorriso amd64 1.3.2-1.1 [135 kB]
-Fetched 800 kB in 0s (18.8 MB/s)
+Fetched 800 kB in 0s (19.4 MB/s)
 Selecting previously unselected package libburn4.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17883 files and directories currently installed.)
 Preparing to unpack .../libburn4_1.3.2-1.1_amd64.deb ...
@@ -1248,7 +1290,7 @@ Need to get 151 kB of archives.
 After this operation, 392 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main liblzo2-2 amd64 2.08-1.2 [54.6 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main squashfs-tools amd64 1:4.2+20130409-2 [96.1 kB]
-Fetched 151 kB in 0s (13.5 MB/s)
+Fetched 151 kB in 0s (8,617 kB/s)
 Selecting previously unselected package liblzo2-2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17934 files and directories currently installed.)
 Preparing to unpack .../liblzo2-2_2.08-1.2_amd64.deb ...
@@ -1265,7 +1307,7 @@ CLDS: * Install isolinux to get isohdpfx.bin and isolinux.bin in order to create
 CLDS: * Note: boot.cat is automatically created.
 CLDS: * Install rsync to copy directories.
 CLDS: * Install squashfs-tools to create new squashfs.
-CLDS: * Disk size = 1840940K. Space Used = 3568K.
+CLDS: * Disk size = 1323284K. Space Used = 3564K.
 CLDS:>>>>>>>>> Running inst-min-con-mtp-tools.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1304,7 +1346,7 @@ Setting up libmtp9:amd64 (1.1.8-1+b1) ...
 Setting up mtp-tools (1.1.8-1+b1) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install mtp-tools to mount smartphones.
-CLDS: * Disk size = 1843484K. Space Used = 2544K.
+CLDS: * Disk size = 1325836K. Space Used = 2552K.
 CLDS:>>>>>>>>> Running inst-min-con-ntp.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1322,7 +1364,7 @@ Get:1 http://localhost/aptly-repo/ jessie/main libbsd0 amd64 0.7.0-2 [67.9 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libedit2 amd64 3.1-20140620-2 [85.1 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main libopts25 amd64 1:5.18.4-3 [69.6 kB]
 Get:4 http://localhost/aptly-repo/ jessie/main ntp amd64 1:4.2.6.p5+dfsg-7+deb8u1 [394 kB]
-Fetched 616 kB in 0s (19.3 MB/s)
+Fetched 616 kB in 0s (19.7 MB/s)
 Selecting previously unselected package libbsd0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18028 files and directories currently installed.)
 Preparing to unpack .../libbsd0_0.7.0-2_amd64.deb ...
@@ -1347,7 +1389,7 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Processing triggers for systemd (215-17+deb8u2) ...
 CLDS: * Install Network Time Protocol: ntp.
-CLDS: * Disk size = 1845988K. Space Used = 2504K.
+CLDS: * Disk size = 1328336K. Space Used = 2500K.
 CLDS:>>>>>>>>> Running inst-min-con-numlock.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1374,7 +1416,7 @@ Get:8 http://localhost/aptly-repo/ jessie/main x11-common all 1:7.7+7 [287 kB]
 Get:9 http://localhost/aptly-repo/ jessie/main libxtst6 amd64 2:1.2.2-1+b1 [27.3 kB]
 Get:10 http://localhost/aptly-repo/ jessie/main numlockx amd64 1.2-7 [10.4 kB]
 Preconfiguring packages ...
-Fetched 1,402 kB in 0s (18.4 MB/s)
+Fetched 1,402 kB in 0s (18.0 MB/s)
 Selecting previously unselected package libxau6:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18082 files and directories currently installed.)
 Preparing to unpack .../libxau6_1%3a1.0.8-1_amd64.deb ...
@@ -1423,7 +1465,7 @@ Setting up numlockx (1.2-7) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Processing triggers for systemd (215-17+deb8u2) ...
 CLDS: * Install numlockx to turn on NumLock on boot.
-CLDS: * Disk size = 1852496K. Space Used = 6508K.
+CLDS: * Disk size = 1334844K. Space Used = 6508K.
 CLDS:>>>>>>>>> Running inst-min-con-pciutils.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1437,7 +1479,7 @@ Need to get 311 kB of archives.
 After this operation, 1,181 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libpci3 amd64 1:3.2.1-3 [53.9 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main pciutils amd64 1:3.2.1-3 [257 kB]
-Fetched 311 kB in 0s (18.9 MB/s)
+Fetched 311 kB in 0s (16.9 MB/s)
 Selecting previously unselected package libpci3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18420 files and directories currently installed.)
 Preparing to unpack .../libpci3_1%3a3.2.1-3_amd64.deb ...
@@ -1450,7 +1492,7 @@ Setting up libpci3:amd64 (1:3.2.1-3) ...
 Setting up pciutils (1:3.2.1-3) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install pciutils to troubleshoot pci devices(i.e. lspci).
-CLDS: * Disk size = 1854068K. Space Used = 1572K.
+CLDS: * Disk size = 1336412K. Space Used = 1568K.
 CLDS:>>>>>>>>> Running inst-min-con-snd-alsa.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1469,7 +1511,7 @@ Get:2 http://localhost/aptly-repo/ jessie/main libasound2-data all 1.0.28-1 [64.
 Get:3 http://localhost/aptly-repo/ jessie/main libasound2 amd64 1.0.28-1 [374 kB]
 Get:4 http://localhost/aptly-repo/ jessie/main libsamplerate0 amd64 0.1.8-8 [949 kB]
 Get:5 http://localhost/aptly-repo/ jessie/main alsa-utils amd64 1.0.28-1 [976 kB]
-Fetched 2,419 kB in 0s (31.1 MB/s)
+Fetched 2,419 kB in 0s (28.6 MB/s)
 Selecting previously unselected package alsa-base.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18444 files and directories currently installed.)
 Preparing to unpack .../alsa-base_1.0.27+1_all.deb ...
@@ -1498,7 +1540,7 @@ Processing triggers for systemd (215-17+deb8u2) ...
 CLDS: * Install ALSA sound.
 CLDS: * Test sound: aplay /usr/share/sounds/alsa/*.
 CLDS: * Add key bindings.
-CLDS: * Disk size = 1861900K. Space Used = 7832K.
+CLDS: * Disk size = 1344260K. Space Used = 7848K.
 CLDS:>>>>>>>>> Running inst-min-con-udevil-bpo.sh ...
 Hit http://localhost jessie InRelease
 Hit http://localhost jessie/main amd64 Packages
@@ -1506,27 +1548,27 @@ Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
 Hit http://www.deb-multimedia.org jessie InRelease
-Ign http://ftp.debian.org jessie InRelease
-Hit http://ftp.debian.org jessie Release.gpg
 Hit http://www.deb-multimedia.org jessie/main amd64 Packages
-Hit http://ftp.debian.org jessie Release
 Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
-Hit http://ftp.debian.org jessie/main amd64 Packages
-Get:1 http://http.debian.net jessie-backports InRelease [165 kB]
-Hit http://ftp.debian.org jessie/contrib amd64 Packages
-Hit http://ftp.debian.org jessie/non-free amd64 Packages
-Hit http://ftp.debian.org jessie/contrib Translation-en
-Hit http://ftp.debian.org jessie/main Translation-en
-Hit http://ftp.debian.org jessie/non-free Translation-en
-Get:2 http://http.debian.net jessie-backports/main Translation-en [194 kB]
-Get:3 http://http.debian.net jessie-backports/main amd64 Packages [288 kB]
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Fetched 647 kB in 4s (153 kB/s)
+Ign http://ftp.debian.org jessie InRelease
+Hit http://ftp.debian.org jessie Release.gpg
+Hit http://ftp.debian.org jessie Release
+Hit http://ftp.debian.org jessie/main amd64 Packages
+Get:1 http://http.debian.net jessie-backports InRelease [165 kB]
+Hit http://ftp.debian.org jessie/contrib amd64 Packages
+Hit http://ftp.debian.org jessie/non-free amd64 Packages
+Hit http://ftp.debian.org jessie/contrib Translation-en
+Get:2 http://http.debian.net jessie-backports/main Translation-en [194 kB]
+Hit http://ftp.debian.org jessie/main Translation-en
+Hit http://ftp.debian.org jessie/non-free Translation-en
+Get:3 http://http.debian.net jessie-backports/main amd64 Packages [288 kB]
+Fetched 647 kB in 7s (85.6 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -1553,7 +1595,7 @@ CLDS: * Install udevil to auto mount USB devices.
 CLDS: * Set devmon to auto start on startup.
 CLDS: * Need ntfs-3g driver to be able to read and write ntfs partition.
 CLDS: * Need exfat-fuse to be able to read and write exfat partition.
-CLDS: * Disk size = 1866492K. Space Used = 4592K.
+CLDS: * Disk size = 1348848K. Space Used = 4588K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-dev-tool-java-jdk.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1692,7 +1734,7 @@ Get:84 http://localhost/aptly-repo/ jessie/main openjdk-7-jdk amd64 7u91-2.6.3-1
 Get:85 http://localhost/aptly-repo/ jessie/main default-jdk amd64 2:1.7-52 [962 B]
 Extracting templates from packages: 35%Extracting templates from packages: 70%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 74.2 MB in 2s (33.4 MB/s)
+Fetched 74.2 MB in 2s (34.0 MB/s)
 Selecting previously unselected package libkeyutils1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18702 files and directories currently installed.)
 Preparing to unpack .../libkeyutils1_1.5.9-5+b1_amd64.deb ...
@@ -2256,7 +2298,7 @@ Adding debian:spi-cacert-2008.pem
 done.
 done.
 CLDS: * Install JAVA JDK: default-jdk.
-CLDS: * Disk size = 2085784K. Space Used = 219292K.
+CLDS: * Disk size = 1568128K. Space Used = 219280K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-dev-tool-tree.sh ...
 Reading package lists...
 Building dependency tree...
@@ -2267,7 +2309,7 @@ The following NEW packages will be installed:
 Need to get 45.9 kB of archives.
 After this operation, 102 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main tree amd64 1.7.0-3 [45.9 kB]
-Fetched 45.9 kB in 0s (2,747 kB/s)
+Fetched 45.9 kB in 0s (0 B/s)
 Selecting previously unselected package tree.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21064 files and directories currently installed.)
 Preparing to unpack .../tree_1.7.0-3_amd64.deb ...
@@ -2275,7 +2317,7 @@ Unpacking tree (1.7.0-3) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up tree (1.7.0-3) ...
 CLDS: * Install tree to display files and directories structure.
-CLDS: * Disk size = 2085960K. Space Used = 176K.
+CLDS: * Disk size = 1568304K. Space Used = 176K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-gnuplot.sh ...
 Reading package lists...
 Building dependency tree...
@@ -2313,7 +2355,7 @@ Get:16 http://localhost/aptly-repo/ jessie/main gnuplot-tex all 4.6.6-2 [103 kB]
 Get:17 http://localhost/aptly-repo/ jessie/main gnuplot-data all 4.6.6-2 [149 kB]
 Get:18 http://localhost/aptly-repo/ jessie/main gnuplot-qt amd64 4.6.6-2 [951 kB]
 Get:19 http://localhost/aptly-repo/ jessie/main gnuplot all 4.6.6-2 [100 kB]
-Fetched 10.3 MB in 0s (13.3 MB/s)
+Fetched 10.3 MB in 0s (27.2 MB/s)
 Selecting previously unselected package libxt6:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21072 files and directories currently installed.)
 Preparing to unpack .../libxt6_1%3a1.1.4-1+b1_amd64.deb ...
@@ -2396,7 +2438,7 @@ update-alternatives: using /usr/bin/gnuplot4-qt to provide /usr/bin/gnuplot4 (gn
 Setting up gnuplot (4.6.6-2) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install gnuplot.
-CLDS: * Disk size = 2129996K. Space Used = 44036K.
+CLDS: * Disk size = 1612340K. Space Used = 44036K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-imagemagick.sh ...
 Reading package lists...
 Building dependency tree...
@@ -2427,7 +2469,7 @@ Get:7 http://localhost/aptly-repo/ jessie/main libmagickwand-6.q16-2 amd64 8:6.8
 Get:8 http://localhost/aptly-repo/ jessie/main hicolor-icon-theme all 0.13-1 [8,600 B]
 Get:9 http://localhost/aptly-repo/ jessie/main imagemagick-6.q16 amd64 8:6.8.9.9-5 [512 kB]
 Get:10 http://localhost/aptly-repo/ jessie/main imagemagick amd64 8:6.8.9.9-5 [155 kB]
-Fetched 3,733 kB in 0s (20.6 MB/s)
+Fetched 3,733 kB in 0s (24.2 MB/s)
 Selecting previously unselected package imagemagick-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21342 files and directories currently installed.)
 Preparing to unpack .../imagemagick-common_8%3a6.8.9.9-5_all.deb ...
@@ -2483,7 +2525,7 @@ update-alternatives: using /usr/bin/montage-im6 to provide /usr/bin/montage (mon
 update-alternatives: using /usr/bin/mogrify-im6 to provide /usr/bin/mogrify (mogrify) in auto mode
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install imagemagick to process image from command line.
-CLDS: * Disk size = 2147356K. Space Used = 17360K.
+CLDS: * Disk size = 1629696K. Space Used = 17356K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-java-jre.sh ...
 Reading package lists...
 Building dependency tree...
@@ -2492,7 +2534,7 @@ default-jre is already the newest version.
 default-jre set to manually installed.
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 CLDS: * Install JAVA JRE: default-jre.
-CLDS: * Disk size = 2147356K. Space Used = 0K.
+CLDS: * Disk size = 1629696K. Space Used = 0K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-locate.sh ...
 Reading package lists...
 Building dependency tree...
@@ -2503,7 +2545,7 @@ The following NEW packages will be installed:
 Need to get 179 kB of archives.
 After this operation, 324 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main locate amd64 4.4.2-9+b1 [179 kB]
-Fetched 179 kB in 0s (8,168 kB/s)
+Fetched 179 kB in 0s (0 B/s)
 Selecting previously unselected package locate.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22050 files and directories currently installed.)
 Preparing to unpack .../locate_4.4.2-9+b1_amd64.deb ...
@@ -2512,7 +2554,7 @@ Processing triggers for man-db (2.7.0.2-5) ...
 Setting up locate (4.4.2-9+b1) ...
 CLDS: * Install locate to generate an index of files and directories.
 CLDS: * You can updatedb and then locate files faster.
-CLDS: * Disk size = 2147912K. Space Used = 556K.
+CLDS: * Disk size = 1630260K. Space Used = 564K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-macchanger.sh ...
 info: Trying to set 'macchanger/automatically_run' [boolean] to 'true'
 info: Loading answer for 'macchanger/automatically_run'
@@ -2526,7 +2568,7 @@ Need to get 192 kB of archives.
 After this operation, 622 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main macchanger amd64 1.7.0-5.3 [192 kB]
 Preconfiguring packages ...
-Fetched 192 kB in 0s (13.8 MB/s)
+Fetched 192 kB in 0s (17.0 MB/s)
 Selecting previously unselected package macchanger.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22067 files and directories currently installed.)
 Preparing to unpack .../macchanger_1.7.0-5.3_amd64.deb ...
@@ -2539,7 +2581,7 @@ CLDS: * Set macchanger to change MAC address whenever network device is up or do
 CLDS: * To configure macchanger: dpkg-reconfigure macchanger.
 CLDS: * Check whether it is working: macchanger -s eth0.
 CLDS: * systemctl status macchanger@eth0.service
-CLDS: * Disk size = 2148800K. Space Used = 888K.
+CLDS: * Disk size = 1631140K. Space Used = 880K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-mariadb-server.sh ...
 Reading package lists...
 Building dependency tree...
@@ -2573,7 +2615,7 @@ Get:10 http://localhost/aptly-repo/ jessie/main psmisc amd64 22.21-2 [119 kB]
 Get:11 http://localhost/aptly-repo/ jessie/main mariadb-server-10.0 amd64 10.0.22-0+deb8u1 [5,546 kB]
 Get:12 http://localhost/aptly-repo/ jessie/main mariadb-server all 10.0.22-0+deb8u1 [16.2 kB]
 Preconfiguring packages ...
-Fetched 13.0 MB in 0s (34.7 MB/s)
+Fetched 13.0 MB in 0s (34.6 MB/s)
 Selecting previously unselected package libaio1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22085 files and directories currently installed.)
 Preparing to unpack .../libaio1_0.3.110-1_amd64.deb ...
@@ -2627,7 +2669,7 @@ Setting up mariadb-server-core-10.0 (10.0.22-0+deb8u1) ...
 Setting up psmisc (22.21-2) ...
 Setting up mariadb-server-10.0 (10.0.22-0+deb8u1) ...
 invoke-rc.d: policy-rc.d denied execution of stop.
-151210 16:28:02 [Note] /usr/sbin/mysqld (mysqld 10.0.22-MariaDB-0+deb8u1) starting as process 26272 ...
+151210 21:59:37 [Note] /usr/sbin/mysqld (mysqld 10.0.22-MariaDB-0+deb8u1) starting as process 24466 ...
 invoke-rc.d: policy-rc.d denied execution of start.
 Setting up mariadb-server (10.0.22-0+deb8u1) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
@@ -2635,7 +2677,7 @@ Processing triggers for systemd (215-17+deb8u2) ...
 mysqladmin: connect to server at 'localhost' failed
 error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")'
 Check that mysqld is running and that the socket: '/var/run/mysqld/mysqld.sock' exists!
-CLDS: * Disk size = 2401404K. Space Used = 252604K.
+CLDS: * Disk size = 1883740K. Space Used = 252600K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-php5.sh ...
 Reading package lists...
 Building dependency tree...
@@ -2680,7 +2722,7 @@ Get:19 http://localhost/aptly-repo/ jessie/main php5-json amd64 1.3.6-1 [18.6 kB
 Get:20 http://localhost/aptly-repo/ jessie/main php5-cli amd64 5.6.14+dfsg-0+deb8u1 [2,173 kB]
 Get:21 http://localhost/aptly-repo/ jessie/main libapache2-mod-php5 amd64 5.6.14+dfsg-0+deb8u1 [2,214 kB]
 Get:22 http://localhost/aptly-repo/ jessie/main php5 all 5.6.14+dfsg-0+deb8u1 [1,312 B]
-Fetched 8,200 kB in 0s (23.6 MB/s)
+Fetched 8,200 kB in 0s (22.3 MB/s)
 Selecting previously unselected package libsasl2-modules-db:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22574 files and directories currently installed.)
 Preparing to unpack .../libsasl2-modules-db_2.1.26.dfsg1-13+deb8u1_amd64.deb ...
@@ -2821,15 +2863,15 @@ Setting up php5 (5.6.14+dfsg-0+deb8u1) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Processing triggers for systemd (215-17+deb8u2) ...
 CLDS: * Install php5.
-CLDS: * Disk size = 2443200K. Space Used = 41796K.
+CLDS: * Disk size = 1925536K. Space Used = 41796K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-timezone.sh ...
 
 Current default time zone: 'America/Montreal'
-Local time is now:      Thu Dec 10 11:28:21 EST 2015.
-Universal Time is now:  Thu Dec 10 16:28:21 UTC 2015.
+Local time is now:      Thu Dec 10 16:59:58 EST 2015.
+Universal Time is now:  Thu Dec 10 21:59:58 UTC 2015.
 
 CLDS: * Set time zone to EST (America/Montreal) in /etc/timezone.
-CLDS: * Disk size = 2443200K. Space Used = 0K.
+CLDS: * Disk size = 1925536K. Space Used = 0K.
 CLDS:>>>>>>>>> Running inst-min-win-00-xorg.sh ...
 info: Trying to set 'keyboard-configuration/unsupported_options' [boolean] to 'true'
 info: Loading answer for 'keyboard-configuration/unsupported_options'
@@ -2975,7 +3017,7 @@ Get:57 http://localhost/aptly-repo/ jessie/main xserver-xorg-input-all amd64 1:7
 Get:58 http://localhost/aptly-repo/ jessie/main xserver-xorg amd64 1:7.7+7 [110 kB]
 Extracting templates from packages: 51%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 21.9 MB in 1s (16.3 MB/s)
+Fetched 21.9 MB in 0s (23.7 MB/s)
 Selecting previously unselected package keyboard-configuration.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23478 files and directories currently installed.)
 Preparing to unpack .../keyboard-configuration_1.123_all.deb ...
@@ -3219,7 +3261,7 @@ CLDS: * Set keyboard to use US international.
 CLDS: * Install minimum Xorg X server.
 CLDS: * Install xinit so you can run startx.
 CLDS: * Add auto start window manager(i.e startx).
-CLDS: * Disk size = 2529732K. Space Used = 86532K.
+CLDS: * Disk size = 2012068K. Space Used = 86532K.
 CLDS:>>>>>>>>> Running inst-min-win-01-wm-jwm.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3244,7 +3286,7 @@ Get:4 http://localhost/aptly-repo/ jessie/main ncurses-term all 5.9+20140913-1 [
 Get:5 http://localhost/aptly-repo/ jessie/main libperl5.20 amd64 5.20.2-3+deb8u1 [1,352 B]
 Get:6 http://localhost/aptly-repo/ jessie/main rxvt-unicode-256color amd64 9.20-1+b1 [738 kB]
 Get:7 http://localhost/aptly-repo/ jessie/main jwm amd64 2.1.0+svn579-2 [126 kB]
-Fetched 1,440 kB in 0s (15.0 MB/s)
+Fetched 1,440 kB in 0s (13.5 MB/s)
 Selecting previously unselected package libfribidi0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24404 files and directories currently installed.)
 Preparing to unpack .../libfribidi0_0.19.6-3_amd64.deb ...
@@ -3282,7 +3324,7 @@ update-alternatives: using /usr/bin/jwm to provide /usr/bin/x-window-manager (x-
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install Window Manager: JWM vsvn-579 by Joe Wingbermuehle.
 CLDS: * Set jwmrc.
-CLDS: * Disk size = 2542304K. Space Used = 12572K.
+CLDS: * Disk size = 2024640K. Space Used = 12572K.
 CLDS:>>>>>>>>> Running inst-min-win-cld-dev-tools-pandoc.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3300,7 +3342,7 @@ After this operation, 38.6 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libyaml-0-2 amd64 0.1.6-3 [50.4 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main pandoc-data all 1.12.4.2~dfsg-1 [202 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main pandoc amd64 1.12.4.2~dfsg-1+b14 [4,453 kB]
-Fetched 4,706 kB in 0s (40.3 MB/s)
+Fetched 4,706 kB in 0s (30.4 MB/s)
 Selecting previously unselected package libyaml-0-2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27221 files and directories currently installed.)
 Preparing to unpack .../libyaml-0-2_0.1.6-3_amd64.deb ...
@@ -3319,7 +3361,7 @@ Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install pandoc to generate user manual.
 CLDS: * Add documentation: user manual.
 CLDS: * Add documentation: developer manual.
-CLDS: * Disk size = 2584840K. Space Used = 42536K.
+CLDS: * Disk size = 2067176K. Space Used = 42536K.
 CLDS:>>>>>>>>> Running inst-min-win-cld-win-split.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3330,7 +3372,7 @@ The following NEW packages will be installed:
 Need to get 23.1 kB of archives.
 After this operation, 81.9 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main wmctrl amd64 1.07-7 [23.1 kB]
-Fetched 23.1 kB in 0s (1,693 kB/s)
+Fetched 23.1 kB in 0s (0 B/s)
 Selecting previously unselected package wmctrl.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27288 files and directories currently installed.)
 Preparing to unpack .../wmctrl_1.07-7_amd64.deb ...
@@ -3351,7 +3393,7 @@ Need to get 214 kB of archives.
 After this operation, 654 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libxxf86dga1 amd64 2:1.1.4-1+b1 [22.3 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main x11-utils amd64 7.7+2 [191 kB]
-Fetched 214 kB in 0s (7,988 kB/s)
+Fetched 214 kB in 0s (13.0 MB/s)
 Selecting previously unselected package libxxf86dga1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27295 files and directories currently installed.)
 Preparing to unpack .../libxxf86dga1_2%3a1.1.4-1+b1_amd64.deb ...
@@ -3365,11 +3407,11 @@ Setting up x11-utils (7.7+2) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install required applications for cld-win-split.sh: wmctrl and x11-utils for xprop.
 CLDS: * Add key bindings: Ctrl+Alt+Left, Right, Up, Down, 1, 2, 3, 4, 5, 6, 7, 8, 9.
-CLDS: * Disk size = 2585908K. Space Used = 1068K.
+CLDS: * Disk size = 2068248K. Space Used = 1072K.
 CLDS:>>>>>>>>> Running inst-min-win-jwm-keys-alsa.sh ...
 CLDS: * Add ALSA key binding.
 CLDS: * Add script to auto-detect ALSA controller on JWM startup.
-CLDS: * Disk size = 2585912K. Space Used = 4K.
+CLDS: * Disk size = 2068252K. Space Used = 4K.
 CLDS:>>>>>>>>> Running inst-min-win-menu.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3382,7 +3424,7 @@ The following NEW packages will be installed:
 Need to get 381 kB of archives.
 After this operation, 1,829 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main menu amd64 2.1.47 [381 kB]
-Fetched 381 kB in 0s (21.7 MB/s)
+Fetched 381 kB in 0s (20.0 MB/s)
 Selecting previously unselected package menu.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27350 files and directories currently installed.)
 Preparing to unpack .../archives/menu_2.1.47_amd64.deb ...
@@ -3391,7 +3433,7 @@ Processing triggers for man-db (2.7.0.2-5) ...
 Setting up menu (2.1.47) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install menu, an easy way to get installed programs in the menu automatically.
-CLDS: * Disk size = 2587188K. Space Used = 1276K.
+CLDS: * Disk size = 2069520K. Space Used = 1268K.
 CLDS:>>>>>>>>> Running inst-min-win-systray-volumeicon-alsa.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3409,7 +3451,7 @@ Need to get 63.0 kB of archives.
 After this operation, 243 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libnotify4 amd64 0.7.6-2 [28.3 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main volumeicon-alsa amd64 0.4.6-2.1 [34.8 kB]
-Fetched 63.0 kB in 0s (2,260 kB/s)
+Fetched 63.0 kB in 0s (0 B/s)
 Selecting previously unselected package libnotify4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27533 files and directories currently installed.)
 Preparing to unpack .../libnotify4_0.7.6-2_amd64.deb ...
@@ -3426,7 +3468,7 @@ Processing triggers for menu (2.1.47) ...
 CLDS: * Install volume controller in system tray.
 CLDS: * Set left-click to display volume slider: lmb_slider=true.
 CLDS: * Set volumeicon to run on JWN startup.
-CLDS: * Disk size = 2587648K. Space Used = 460K.
+CLDS: * Disk size = 2069984K. Space Used = 464K.
 CLDS:>>>>>>>>> Running inst-min-xtra-encoding-libtext-iconv-perl.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3434,7 +3476,7 @@ Reading state information...
 libtext-iconv-perl is already the newest version.
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 CLDS: * Install libtext-iconv-perl so that you can use iconv to convert to other encoding.
-CLDS: * Disk size = 2587648K. Space Used = 0K.
+CLDS: * Disk size = 2069984K. Space Used = 0K.
 CLDS:>>>>>>>>> Running inst-min-xtra-fonts-asian.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3445,7 +3487,7 @@ The following NEW packages will be installed:
 Need to get 19.3 MB of archives.
 After this operation, 48.2 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main fonts-hanazono all 20141012-1 [19.3 MB]
-Fetched 19.3 MB in 0s (43.8 MB/s)
+Fetched 19.3 MB in 0s (44.3 MB/s)
 Selecting previously unselected package fonts-hanazono.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27589 files and directories currently installed.)
 Preparing to unpack .../fonts-hanazono_20141012-1_all.deb ...
@@ -3455,7 +3497,7 @@ Setting up fonts-hanazono (20141012-1) ...
 update-alternatives: using /usr/share/fonts/truetype/hanazono/HanaMinA.ttf to provide /usr/share/fonts/truetype/fonts-japanese-mincho.ttf (fonts-japanese-mincho.ttf) in auto mode
 CLDS: * Install fonts-hanazono to display Asian characters correctly.
 CLDS: * Test it by opening website http://ctext.org/zh.
-CLDS: * Disk size = 2653644K. Space Used = 65996K.
+CLDS: * Disk size = 2135976K. Space Used = 65992K.
 CLDS:>>>>>>>>> Running inst-std-accessories-feh.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3476,7 +3518,7 @@ Get:4 http://localhost/aptly-repo/ jessie/main libexif12 amd64 0.6.21-2 [324 kB]
 Get:5 http://localhost/aptly-repo/ jessie/main libid3tag0 amd64 0.15.1b-11 [35.3 kB]
 Get:6 http://localhost/aptly-repo/ jessie/main libimlib2 amd64 1.4.6-2+b3 [178 kB]
 Get:7 http://localhost/aptly-repo/ jessie/main feh amd64 2.12-1 [189 kB]
-Fetched 1,170 kB in 0s (13.3 MB/s)
+Fetched 1,170 kB in 0s (15.5 MB/s)
 Selecting previously unselected package librtmp1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27600 files and directories currently installed.)
 Preparing to unpack .../librtmp1_2%3a2.4~20150315.gita107cef9b-dmo1_amd64.deb ...
@@ -3510,7 +3552,7 @@ Setting up libimlib2 (1.4.6-2+b3) ...
 Setting up feh (2.12-1) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install command line image viewer: feh.
-CLDS: * Disk size = 2657452K. Space Used = 3808K.
+CLDS: * Disk size = 2139788K. Space Used = 3812K.
 CLDS:>>>>>>>>> Running inst-std-accessories-galculator.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3566,7 +3608,7 @@ Get:25 http://localhost/aptly-repo/ jessie/main librest-0.7-0 amd64 0.7.92-3 [33
 Get:26 http://localhost/aptly-repo/ jessie/main libgtk-3-0 amd64 3.14.5-1+deb8u1 [2,249 kB]
 Get:27 http://localhost/aptly-repo/ jessie/main libquadmath0 amd64 4.9.2-10 [129 kB]
 Get:28 http://localhost/aptly-repo/ jessie/main galculator amd64 2.1.3-1 [140 kB]
-Fetched 18.4 MB in 0s (29.2 MB/s)
+Fetched 18.4 MB in 0s (28.2 MB/s)
 Selecting previously unselected package libatspi2.0-0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27731 files and directories currently installed.)
 Preparing to unpack .../libatspi2.0-0_2.14.0-1_amd64.deb ...
@@ -3693,7 +3735,7 @@ Processing triggers for libgdk-pixbuf2.0-0:amd64 (2.31.1-2+deb8u3) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install Calculator: galculator.
 CLDS: * Insert galculator in Accessories menu.
-CLDS: * Disk size = 2712388K. Space Used = 54936K.
+CLDS: * Disk size = 2194724K. Space Used = 54936K.
 CLDS:>>>>>>>>> Running inst-std-accessories-gpicview.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3706,7 +3748,7 @@ The following NEW packages will be installed:
 Need to get 129 kB of archives.
 After this operation, 876 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main gpicview amd64 0.2.4-2+b2 [129 kB]
-Fetched 129 kB in 0s (11.5 MB/s)
+Fetched 129 kB in 0s (11.8 MB/s)
 Selecting previously unselected package gpicview.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 31110 files and directories currently installed.)
 Preparing to unpack .../gpicview_0.2.4-2+b2_amd64.deb ...
@@ -3717,7 +3759,7 @@ Processing triggers for hicolor-icon-theme (0.13-1) ...
 Setting up gpicview (0.2.4-2+b2) ...
 CLDS: * Install Image Viewer: gpicview.
 CLDS: * Insert gpicview in Accessories menu.
-CLDS: * Disk size = 2712732K. Space Used = 344K.
+CLDS: * Disk size = 2195072K. Space Used = 348K.
 CLDS:>>>>>>>>> Running inst-std-accessories-mupdf.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3734,7 +3776,7 @@ After this operation, 12.0 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libopenjp2-7 amd64 2.1.0-2 [116 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libjbig2dec0 amd64 0.11+20120125-1 [51.8 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main mupdf amd64 1.5-1+b2 [3,421 kB]
-Fetched 3,588 kB in 0s (29.8 MB/s)
+Fetched 3,588 kB in 0s (39.0 MB/s)
 Selecting previously unselected package libopenjp2-7:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 31182 files and directories currently installed.)
 Preparing to unpack .../libopenjp2-7_2.1.0-2_amd64.deb ...
@@ -3752,7 +3794,7 @@ Setting up libjbig2dec0 (0.11+20120125-1) ...
 Setting up mupdf (1.5-1+b2) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install PDF reader: Mupdf.
-CLDS: * Disk size = 2728084K. Space Used = 15352K.
+CLDS: * Disk size = 2210424K. Space Used = 15352K.
 CLDS:>>>>>>>>> Running inst-std-accessories-prtscr-gnome-screenshot.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3773,7 +3815,7 @@ Get:2 http://localhost/aptly-repo/ jessie/main libvorbisfile3 amd64 1.3.4-2 [23.
 Get:3 http://localhost/aptly-repo/ jessie/main libcanberra0 amd64 0.30-2.1 [36.8 kB]
 Get:4 http://localhost/aptly-repo/ jessie/main libcanberra-gtk3-0 amd64 0.30-2.1 [14.9 kB]
 Get:5 http://localhost/aptly-repo/ jessie/main gnome-screenshot amd64 3.14.0-1 [145 kB]
-Fetched 262 kB in 0s (6,341 kB/s)
+Fetched 262 kB in 0s (8,980 kB/s)
 Selecting previously unselected package libtdb1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 31211 files and directories currently installed.)
 Preparing to unpack .../libtdb1_1.3.1-1_amd64.deb ...
@@ -3802,7 +3844,7 @@ Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install gnome-screenshot to be used for PrintScreen key.
 CLDS: * Insert PrintScreen key binding.
 CLDS: * By default, screenshots are saved under ~/Pictures/.
-CLDS: * Disk size = 2728956K. Space Used = 872K.
+CLDS: * Disk size = 2211296K. Space Used = 872K.
 CLDS:>>>>>>>>> Running inst-std-accessories-scite.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3813,7 +3855,7 @@ The following NEW packages will be installed:
 Need to get 1,366 kB of archives.
 After this operation, 4,829 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main scite amd64 3.5.0-1 [1,366 kB]
-Fetched 1,366 kB in 0s (30.0 MB/s)
+Fetched 1,366 kB in 0s (25.4 MB/s)
 Selecting previously unselected package scite.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 31342 files and directories currently installed.)
 Preparing to unpack .../scite_3.5.0-1_amd64.deb ...
@@ -3841,7 +3883,7 @@ Setting up at-spi2-core (2.14.0-1) ...
 CLDS: * Install Text Editor: SciTE.
 CLDS: * Install at-spi2-core to shut up Accessibility warning message.
 CLDS: * Insert SciTE in Accessories menu.
-CLDS: * Disk size = 2735488K. Space Used = 6532K.
+CLDS: * Disk size = 2217828K. Space Used = 6532K.
 CLDS:>>>>>>>>> Running inst-std-accessories-terminal-xfce.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3879,7 +3921,7 @@ Get:15 http://localhost/aptly-repo/ jessie/main libvte-common all 1:0.28.2-5 [43
 Get:16 http://localhost/aptly-repo/ jessie/main libpango1.0-0 amd64 1.36.8-3 [183 kB]
 Get:17 http://localhost/aptly-repo/ jessie/main libvte9 amd64 1:0.28.2-5 [726 kB]
 Get:18 http://localhost/aptly-repo/ jessie/main xfce4-terminal amd64 0.6.3-1+b1 [459 kB]
-Fetched 3,731 kB in 0s (18.7 MB/s)
+Fetched 3,731 kB in 0s (20.3 MB/s)
 Selecting previously unselected package libdbus-glib-1-2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 31546 files and directories currently installed.)
 Preparing to unpack .../libdbus-glib-1-2_0.102-1_amd64.deb ...
@@ -3962,7 +4004,7 @@ update-alternatives: warning: skip creation of /usr/share/man/man1/x-terminal-em
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install terminal: xfce4-terminal.
-CLDS: * Disk size = 2744704K. Space Used = 9216K.
+CLDS: * Disk size = 2227044K. Space Used = 9216K.
 CLDS:>>>>>>>>> Running inst-std-accessories-thunar.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3990,7 +4032,7 @@ Get:8 http://localhost/aptly-repo/ jessie/main thunar amd64 1.6.3-2 [263 kB]
 Get:9 http://localhost/aptly-repo/ jessie/main thunar-archive-plugin amd64 0.3.1-3 [49.9 kB]
 Get:10 http://localhost/aptly-repo/ jessie/main thunar-media-tags-plugin amd64 0.2.1-1 [81.7 kB]
 Get:11 http://localhost/aptly-repo/ jessie/main thunar-volman amd64 0.8.0-4 [127 kB]
-Fetched 2,040 kB in 0s (14.9 MB/s)
+Fetched 2,040 kB in 0s (21.1 MB/s)
 Selecting previously unselected package libgudev-1.0-0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32166 files and directories currently installed.)
 Preparing to unpack .../libgudev-1.0-0_215-17+deb8u2_amd64.deb ...
@@ -4044,7 +4086,7 @@ Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install File Manger: thunar, thunar-media-tags-plugin, thunar-archive-plugin, thunar-volman.
 CLDS: * Insert Thunar in Accessories menu.
-CLDS: * Disk size = 2751052K. Space Used = 6348K.
+CLDS: * Disk size = 2233396K. Space Used = 6352K.
 CLDS:>>>>>>>>> Running inst-std-accessories-xarchiver.sh ...
 Reading package lists...
 Building dependency tree...
@@ -4059,7 +4101,7 @@ The following NEW packages will be installed:
 Need to get 445 kB of archives.
 After this operation, 1,211 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main xarchiver amd64 1:0.5.4-1 [445 kB]
-Fetched 445 kB in 0s (19.4 MB/s)
+Fetched 445 kB in 0s (22.0 MB/s)
 Selecting previously unselected package xarchiver.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32521 files and directories currently installed.)
 Preparing to unpack .../xarchiver_1%3a0.5.4-1_amd64.deb ...
@@ -4072,7 +4114,7 @@ Processing triggers for hicolor-icon-theme (0.13-1) ...
 Setting up xarchiver (1:0.5.4-1) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install Archive Manager: xarchiver.
-CLDS: * Disk size = 2752288K. Space Used = 1236K.
+CLDS: * Disk size = 2234628K. Space Used = 1232K.
 CLDS:>>>>>>>>> Running inst-std-graphic-pinta.sh ...
 Reading package lists...
 Building dependency tree...
@@ -4133,7 +4175,7 @@ Get:25 http://localhost/aptly-repo/ jessie/main libmono-security2.0-cil all 3.2.
 Get:26 http://localhost/aptly-repo/ jessie/main libmono-system2.0-cil all 3.2.8+dfsg-10 [1,185 kB]
 Get:27 http://localhost/aptly-repo/ jessie/main libmono-posix2.0-cil all 3.2.8+dfsg-10 [86.1 kB]
 Get:28 http://localhost/aptly-repo/ jessie/main pinta all 1.6-0ppa1~trusty1 [689 kB]
-Fetched 18.6 MB in 0s (29.6 MB/s)
+Fetched 18.6 MB in 0s (21.2 MB/s)
 Selecting previously unselected package cli-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32604 files and directories currently installed.)
 Preparing to unpack .../cli-common_0.9+nmu1_all.deb ...
@@ -4260,7 +4302,7 @@ Setting up libmono-addins-gui0.2-cil (1.0+git20130406.adcd75b-3) ...
 Setting up pinta (1.6-0ppa1~trusty1) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install Image Editor: Pinta.
-CLDS: * Disk size = 2823816K. Space Used = 71528K.
+CLDS: * Disk size = 2306156K. Space Used = 71528K.
 CLDS:>>>>>>>>> Running inst-std-internet-iceweasel.sh ...
 Reading package lists...
 Building dependency tree...
@@ -4281,7 +4323,7 @@ After this operation, 91.5 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libevent-2.0-5 amd64 2.0.21-stable-2 [152 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libhunspell-1.3-0 amd64 1.3.3-3 [139 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main iceweasel amd64 38.4.0esr-1~deb8u1 [39.3 MB]
-Fetched 39.6 MB in 0s (44.2 MB/s)
+Fetched 39.6 MB in 0s (48.5 MB/s)
 Selecting previously unselected package libevent-2.0-5:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39166 files and directories currently installed.)
 Preparing to unpack .../libevent-2.0-5_2.0.21-stable-2_amd64.deb ...
@@ -4306,7 +4348,7 @@ update-alternatives: using /usr/bin/iceweasel to provide /usr/bin/gnome-www-brow
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install web browser: iceweasel.
-CLDS: * Disk size = 2951984K. Space Used = 128168K.
+CLDS: * Disk size = 2434328K. Space Used = 128172K.
 CLDS:>>>>>>>>> Running inst-std-multimedia-mpv.sh ...
 Reading package lists...
 Building dependency tree...
@@ -4449,7 +4491,7 @@ Get:88 http://localhost/aptly-repo/ jessie/main liblircclient0 amd64 0.9.0~pre1-
 Get:89 http://localhost/aptly-repo/ jessie/main libbs2b0 amd64 3.1.0+dfsg-2.1 [11.7 kB]
 Get:90 http://localhost/aptly-repo/ jessie/main mpv amd64 1:0.8.3-dmo1 [720 kB]
 Extracting templates from packages: 33%Extracting templates from packages: 66%Extracting templates from packages: 100%
-Fetched 24.8 MB in 1s (17.2 MB/s)
+Fetched 24.8 MB in 1s (21.7 MB/s)
 Selecting previously unselected package libpython2.7-minimal:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39307 files and directories currently installed.)
 Preparing to unpack .../libpython2.7-minimal_2.7.9-2_amd64.deb ...
@@ -4826,7 +4868,7 @@ Processing triggers for menu (2.1.47) ...
 CLDS: * Install Media Player: MPV.
 CLDS: * Add multiple aliases for MPV.
 CLDS: * Add useful mpv keybindings settings.
-CLDS: * Disk size = 3069636K. Space Used = 117652K.
+CLDS: * Disk size = 2551976K. Space Used = 117648K.
 CLDS:>>>>>>>>> Running inst-std-office-libreoffice-bpo.sh ...
 Hit http://localhost jessie InRelease
 Hit http://localhost jessie/main amd64 Packages
@@ -4834,18 +4876,19 @@ Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://ftp.debian.org jessie InRelease
-Hit http://ftp.debian.org jessie Release.gpg
 Hit http://www.deb-multimedia.org jessie InRelease
-Hit http://ftp.debian.org jessie Release
-Hit http://ftp.debian.org jessie/main amd64 Packages
+Hit http://ftp.debian.org jessie Release.gpg
 Hit http://www.deb-multimedia.org jessie/main amd64 Packages
-Hit http://http.debian.net jessie-backports InRelease
-Hit http://ftp.debian.org jessie/contrib amd64 Packages
+Hit http://ftp.debian.org jessie Release
 Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
+Hit http://ftp.debian.org jessie/main amd64 Packages
+Get:1 http://http.debian.net jessie-backports InRelease [165 kB]
+Hit http://ftp.debian.org jessie/contrib amd64 Packages
 Hit http://ftp.debian.org jessie/non-free amd64 Packages
 Hit http://ftp.debian.org jessie/contrib Translation-en
+Get:2 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [8,326 B]
 Hit http://ftp.debian.org jessie/main Translation-en
-Get:1 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [5,059 B]
+Get:3 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [5,059 B]
 Hit http://ftp.debian.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
@@ -4853,8 +4896,7 @@ Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Get:2 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [8,326 B]
-Fetched 13.4 kB in 6s (2,053 B/s)
+Fetched 179 kB in 4s (43.7 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -4925,7 +4967,7 @@ Get:33 http://localhost/aptly-repo/ jessie/main libwpd-0.10-10 amd64 0.10.0-2+b1
 Get:34 http://localhost/aptly-repo/ jessie/main libwpg-0.3-3 amd64 0.3.0-3 [74.4 kB]
 Get:35 http://localhost/aptly-repo/ jessie/main libreoffice-writer amd64 1:5.0.2-1~bpo8+1 [7,760 kB]
 Extracting templates from packages: 85%Extracting templates from packages: 100%
-Fetched 74.5 MB in 2s (34.0 MB/s)
+Fetched 74.5 MB in 1s (39.1 MB/s)
 Selecting previously unselected package libboost-date-time1.55.0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40935 files and directories currently installed.)
 Preparing to unpack .../libboost-date-time1.55.0_1.55.0+dfsg-3_amd64.deb ...
@@ -5106,7 +5148,7 @@ Get:11 http://localhost/aptly-repo/ jessie/main coinor-libcgl1 amd64 0.58.9-1 [4
 Get:12 http://localhost/aptly-repo/ jessie/main coinor-libcbc3 amd64 2.8.12-1 [670 kB]
 Get:13 http://localhost/aptly-repo/ jessie/main coinor-libcoinmp1 amd64 1.7.6+dfsg1-1 [32.6 kB]
 Get:14 http://localhost/aptly-repo/ jessie/main libreoffice-calc amd64 1:5.0.2-1~bpo8+1 [6,941 kB]
-Fetched 12.2 MB in 0s (32.7 MB/s)
+Fetched 12.2 MB in 0s (36.0 MB/s)
 Selecting previously unselected package libboost-system1.55.0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45329 files and directories currently installed.)
 Preparing to unpack .../libboost-system1.55.0_1.55.0+dfsg-3_amd64.deb ...
@@ -5193,7 +5235,7 @@ Get:4 http://localhost/aptly-repo/ jessie/main libpagemaker-0.0-0 amd64 0.0.1-1 
 Get:5 http://localhost/aptly-repo/ jessie/main libvisio-0.1-1 amd64 0.1.0-2 [245 kB]
 Get:6 http://localhost/aptly-repo/ jessie/main libreoffice-draw amd64 1:5.0.2-1~bpo8+1 [2,532 kB]
 Get:7 http://localhost/aptly-repo/ jessie/main libreoffice-impress amd64 1:5.0.2-1~bpo8+1 [1,090 kB]
-Fetched 4,551 kB in 0s (22.8 MB/s)
+Fetched 4,551 kB in 0s (30.7 MB/s)
 Selecting previously unselected package libcdr-0.1-1.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45440 files and directories currently installed.)
 Preparing to unpack .../libcdr-0.1-1_0.1.0-3_amd64.deb ...
@@ -5252,7 +5294,7 @@ Need to get 2,266 kB of archives.
 After this operation, 9,910 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libreoffice-base-drivers amd64 1:5.0.2-1~bpo8+1 [598 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libreoffice-base amd64 1:5.0.2-1~bpo8+1 [1,668 kB]
-Fetched 2,266 kB in 0s (28.4 MB/s)
+Fetched 2,266 kB in 0s (35.3 MB/s)
 Selecting previously unselected package libreoffice-base-drivers.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45519 files and directories currently installed.)
 Preparing to unpack .../libreoffice-base-drivers_1%3a5.0.2-1~bpo8+1_amd64.deb ...
@@ -5276,7 +5318,7 @@ The following NEW packages will be installed:
 Need to get 435 kB of archives.
 After this operation, 1,610 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libreoffice-math amd64 1:5.0.2-1~bpo8+1 [435 kB]
-Fetched 435 kB in 0s (26.7 MB/s)
+Fetched 435 kB in 0s (22.7 MB/s)
 Selecting previously unselected package libreoffice-math.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45589 files and directories currently installed.)
 Preparing to unpack .../libreoffice-math_1%3a5.0.2-1~bpo8+1_amd64.deb ...
@@ -5293,7 +5335,7 @@ CLDS: * Install Office Suite: Drawing.
 CLDS: * Install Office Suite: Database.
 CLDS: * Install Office Suite: Equation.
 CLDS: * https://wiki.documentfoundation.org/ReleasePlan
-CLDS: * Disk size = 3521476K. Space Used = 451840K.
+CLDS: * Disk size = 3003804K. Space Used = 451828K.
 CLDS:>>>>>>>>> Running inst-std-office-xtra-projectlibre.sh ...
 Selecting previously unselected package projectlibre.
 (Reading database ... 45606 files and directories currently installed.)
@@ -5304,10 +5346,10 @@ Processing triggers for desktop-file-utils (0.22-1) ...
 Processing triggers for mime-support (3.58) ...
 Processing triggers for shared-mime-info (1.3-1) ...
 CLDS: * Install ProjectLibre.
-CLDS: * Disk size = 3539924K. Space Used = 18448K.
+CLDS: * Disk size = 3022256K. Space Used = 18452K.
 CLDS:>>>>>>>>> Running inst-std-system-alsamixer.sh ...
 CLDS: * Insert Alsamixer menu in Administration.
-CLDS: * Disk size = 3539924K. Space Used = 0K.
+CLDS: * Disk size = 3022256K. Space Used = 0K.
 CLDS:>>>>>>>>> Running inst-std-system-conky.sh ...
 Reading package lists...
 Building dependency tree...
@@ -5324,7 +5366,7 @@ After this operation, 967 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libiw30 amd64 30~pre9-8 [36.4 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main conky-std amd64 1.9.0-6 [249 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main conky all 1.9.0-6 [34.7 kB]
-Fetched 320 kB in 0s (12.5 MB/s)
+Fetched 320 kB in 0s (17.3 MB/s)
 Selecting previously unselected package libiw30:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45671 files and directories currently installed.)
 Preparing to unpack .../libiw30_30~pre9-8_amd64.deb ...
@@ -5346,7 +5388,7 @@ CLDS: * Install System Monitor: conky.
 CLDS: * Add conky config file: conkyrc.
 CLDS: * Set conky to run on JWM startup.
 CLDS: * Add on the fly settings to Conky.
-CLDS: * Disk size = 3541232K. Space Used = 1308K.
+CLDS: * Disk size = 3023564K. Space Used = 1308K.
 CLDS:>>>>>>>>> Running inst-std-system-gnome-disk-utility.sh ...
 Reading package lists...
 Building dependency tree...
@@ -5381,7 +5423,7 @@ Get:11 http://localhost/aptly-repo/ jessie/main libudisks2-0 amd64 2.1.3-5 [96.6
 Get:12 http://localhost/aptly-repo/ jessie/main parted amd64 3.2-7 [195 kB]
 Get:13 http://localhost/aptly-repo/ jessie/main udisks2 amd64 2.1.3-5 [263 kB]
 Get:14 http://localhost/aptly-repo/ jessie/main gnome-disk-utility amd64 3.12.1-1+b1 [834 kB]
-Fetched 2,056 kB in 0s (14.2 MB/s)
+Fetched 2,056 kB in 0s (16.9 MB/s)
 Selecting previously unselected package libatasmart4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45706 files and directories currently installed.)
 Preparing to unpack .../libatasmart4_0.19-3_amd64.deb ...
@@ -5450,10 +5492,10 @@ Processing triggers for dbus (1.8.20-0+deb8u1) ...
 CLDS: * Install Partition Manager: gnome-disk-utility.
 CLDS: * Run: gnome-disks.
 CLDS: * Insert gnome-disk-utility menu in Administration.
-CLDS: * Disk size = 3547504K. Space Used = 6272K.
+CLDS: * Disk size = 3029844K. Space Used = 6280K.
 CLDS:>>>>>>>>> Running inst-std-system-keyboard.sh ...
 CLDS: * Insert keyboard menu in Administration.
-CLDS: * Disk size = 3547504K. Space Used = 0K.
+CLDS: * Disk size = 3029844K. Space Used = 0K.
 CLDS:>>>>>>>>> Running inst-std-system-monitor-switcher-lxrandr.sh ...
 Reading package lists...
 Building dependency tree...
@@ -5474,7 +5516,7 @@ Get:4 http://localhost/aptly-repo/ jessie/main libmpc3 amd64 1.0.2-1 [39.3 kB]
 Get:5 http://localhost/aptly-repo/ jessie/main cpp-4.9 amd64 4.9.2-10 [5,169 kB]
 Get:6 http://localhost/aptly-repo/ jessie/main cpp amd64 4:4.9.2-2 [17.3 kB]
 Get:7 http://localhost/aptly-repo/ jessie/main x11-xserver-utils amd64 7.7+3+b1 [158 kB]
-Fetched 6,413 kB in 0s (31.1 MB/s)
+Fetched 6,413 kB in 0s (21.4 MB/s)
 Selecting previously unselected package libisl10:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46062 files and directories currently installed.)
 Preparing to unpack .../libisl10_0.12.2-2_amd64.deb ...
@@ -5517,7 +5559,7 @@ The following NEW packages will be installed:
 Need to get 49.5 kB of archives.
 After this operation, 779 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main lxrandr amd64 0.3.0-1 [49.5 kB]
-Fetched 49.5 kB in 0s (3,926 kB/s)
+Fetched 49.5 kB in 0s (0 B/s)
 Selecting previously unselected package lxrandr.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46143 files and directories currently installed.)
 Preparing to unpack .../lxrandr_0.3.0-1_amd64.deb ...
@@ -5530,7 +5572,7 @@ Setting up lxrandr (0.3.0-1) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install Monitor Switcher: lxrandr.
 CLDS: * Add lxrandr key binding.
-CLDS: * Disk size = 3573496K. Space Used = 25992K.
+CLDS: * Disk size = 3055832K. Space Used = 25988K.
 CLDS:>>>>>>>>> Running inst-std-system-network-wicd.sh ...
 Reading package lists...
 Building dependency tree...
@@ -5577,7 +5619,7 @@ Get:19 http://localhost/aptly-repo/ jessie/main python-glade2 amd64 2.24.0-4 [43
 Get:20 http://localhost/aptly-repo/ jessie/main wicd-gtk all 1.7.2.4-4.1 [122 kB]
 Get:21 http://localhost/aptly-repo/ jessie/main wicd all 1.7.2.4-4.1 [16.1 kB]
 Preconfiguring packages ...
-Fetched 5,743 kB in 0s (19.6 MB/s)
+Fetched 5,743 kB in 0s (22.7 MB/s)
 Selecting previously unselected package libglade2-0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46215 files and directories currently installed.)
 Preparing to unpack .../libglade2-0_1%3a2.6.4-2_amd64.deb ...
@@ -5682,10 +5724,10 @@ CLDS: * Install Network Manager: wicd.
 CLDS: * For wireless, you have to type in the wireless interface(e.g. wlan0) in the Preferences.
 CLDS: * Set wicd to run on JWM startup.
 CLDS: * Log at /var/log/wicd/wicd.log.
-CLDS: * Disk size = 3608184K. Space Used = 34688K.
+CLDS: * Disk size = 3090516K. Space Used = 34684K.
 CLDS:>>>>>>>>> Running inst-std-system-time-zone.sh ...
 CLDS: * Insert Time Zone menu in Administration.
-CLDS: * Disk size = 3608184K. Space Used = 0K.
+CLDS: * Disk size = 3090516K. Space Used = 0K.
 CLDS:>>>>>>>>> Running inst-std-system-xtra-hardinfo.sh ...
 Reading package lists...
 Building dependency tree...
@@ -5698,7 +5740,7 @@ The following NEW packages will be installed:
 Need to get 226 kB of archives.
 After this operation, 467 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main hardinfo amd64 0.5.1-1.4 [226 kB]
-Fetched 226 kB in 0s (15.1 MB/s)
+Fetched 226 kB in 0s (21.9 MB/s)
 Selecting previously unselected package hardinfo.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 47265 files and directories currently installed.)
 Preparing to unpack .../hardinfo_0.5.1-1.4_amd64.deb ...
@@ -5711,7 +5753,7 @@ Setting up hardinfo (0.5.1-1.4) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install hardware info apps: hardinfo.
 CLDS: * Insert System Information menu in Administration.
-CLDS: * Disk size = 3609100K. Space Used = 916K.
+CLDS: * Disk size = 3091436K. Space Used = 920K.
 CLDS:>>>>>>>>> Running inst-std-system-xtra-webcam-camorama.sh ...
 Reading package lists...
 Building dependency tree...
@@ -5764,7 +5806,7 @@ Get:23 http://localhost/aptly-repo/ jessie/main libgnome-keyring0 amd64 3.12.0-1
 Get:24 http://localhost/aptly-repo/ jessie/main libgnomeui-common all 2.24.5-3 [514 kB]
 Get:25 http://localhost/aptly-repo/ jessie/main libgnomeui-0 amd64 2.24.5-3 [321 kB]
 Get:26 http://localhost/aptly-repo/ jessie/main camorama amd64 0.19-3 [140 kB]
-Fetched 9,707 kB in 0s (21.1 MB/s)
+Fetched 9,707 kB in 0s (20.2 MB/s)
 Selecting previously unselected package libart-2.0-2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 47343 files and directories currently installed.)
 Preparing to unpack .../libart-2.0-2_2.3.21-2_amd64.deb ...
@@ -5880,7 +5922,7 @@ Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install webcam: Camorama.
 CLDS: * Insert Camorama menu in Graphics.
-CLDS: * Disk size = 3640516K. Space Used = 31416K.
+CLDS: * Disk size = 3122844K. Space Used = 31408K.
 CLDS:>>>>>>>>> Running inst-std-xtra-blender.sh ...
 Reading package lists...
 Building dependency tree...
@@ -5894,7 +5936,7 @@ Need to get 3,473 kB of archives.
 After this operation, 14.0 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libgl1-mesa-dri amd64 10.3.2-1+deb8u1 [3,384 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libjemalloc1 amd64 3.6.0-3 [89.1 kB]
-Fetched 3,473 kB in 0s (32.0 MB/s)
+Fetched 3,473 kB in 0s (33.0 MB/s)
 Selecting previously unselected package libgl1-mesa-dri:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48620 files and directories currently installed.)
 Preparing to unpack .../libgl1-mesa-dri_10.3.2-1+deb8u1_amd64.deb ...
@@ -5971,7 +6013,7 @@ Get:34 http://localhost/aptly-repo/ jessie/main libopenimageio1.4 amd64 1.4.14~d
 Get:35 http://localhost/aptly-repo/ jessie/main libspnav0 amd64 0.2.2-1 [8,130 B]
 Get:36 http://localhost/aptly-repo/ jessie/main blender amd64 2.72.b+dfsg0-3 [21.1 MB]
 Extracting templates from packages: 83%Extracting templates from packages: 100%
-Fetched 44.5 MB in 1s (31.9 MB/s)
+Fetched 44.5 MB in 1s (37.0 MB/s)
 Selecting previously unselected package fonts-droid.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48646 files and directories currently installed.)
 Preparing to unpack .../fonts-droid_1%3a4.4.4r2-6_all.deb ...
@@ -6130,7 +6172,7 @@ Processing triggers for menu (2.1.47) ...
 CLDS: * Install required packages for blender.
 CLDS: * Install blender3d.
 CLDS: * Insert Blender 3D menu in Graphics.
-CLDS: * Disk size = 3869316K. Space Used = 228800K.
+CLDS: * Disk size = 3351644K. Space Used = 228800K.
 CLDS:>>>>>>>>> Running inst-std-xtra-dia.sh ...
 Reading package lists...
 Building dependency tree...
@@ -6147,7 +6189,7 @@ After this operation, 21.2 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main dia-common all 0.97.3-1 [4,045 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main dia-libs amd64 0.97.3-1 [716 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main dia amd64 0.97.3-1 [198 kB]
-Fetched 4,958 kB in 0s (30.7 MB/s)
+Fetched 4,958 kB in 0s (35.7 MB/s)
 Selecting previously unselected package dia-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51097 files and directories currently installed.)
 Preparing to unpack .../dia-common_0.97.3-1_all.deb ...
@@ -6171,7 +6213,7 @@ update-alternatives: using /usr/bin/dia-normal-integrated to provide /usr/bin/di
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install Dia to draw diagrams.
 CLDS: * Insert Dia menu in Graphics.
-CLDS: * Disk size = 3894864K. Space Used = 25548K.
+CLDS: * Disk size = 3377200K. Space Used = 25556K.
 CLDS:>>>>>>>>> Running inst-std-xtra-opw-drush8.sh ...
 ‘composer.phar’ -> ‘/usr/local/bin/composer’
 drush-8.0.0-rc1/.gitignore
@@ -6560,22 +6602,22 @@ Installing dependencies (including require-dev) from lock file
     Downloading: Connecting...    Downloading: 0%               Downloading: 5%    Downloading: 10%    Downloading: 15%    Downloading: 20%    Downloading: 25%    Downloading: 30%    Downloading: 35%    Downloading: 40%    Downloading: 45%    Downloading: 50%    Downloading: 55%    Downloading: 60%    Downloading: 65%    Downloading: 70%    Downloading: 75%    Downloading: 80%    Downloading: 85%    Downloading: 90%    Downloading: 95%    Downloading: 100%    Downloading: 100%
 
   - Installing jakub-onderka/php-console-highlighter (v0.3.2)
-    Downloading: Connecting...    Downloading: 0%               Downloading: 65%    Downloading: 90%    Downloading: 100%
+    Downloading: Connecting...    Downloading: 100%         
 
   - Installing dnoegel/php-xdg-base-dir (0.1)
-    Downloading: Connecting...    Downloading: 0%               Downloading: 85%    Downloading: 100%
+    Downloading: Connecting...    Downloading: 100%         
 
   - Installing psy/psysh (v0.5.2)
     Downloading: Connecting...    Downloading: 100%         
 
   - Installing phpdocumentor/reflection-docblock (2.0.4)
-    Downloading: Connecting...    Downloading: 0%               Downloading: 15%    Downloading: 30%    Downloading: 35%    Downloading: 50%    Downloading: 65%    Downloading: 70%    Downloading: 85%    Downloading: 100%
+    Downloading: Connecting...    Downloading: 0%               Downloading: 15%    Downloading: 20%    Downloading: 35%    Downloading: 40%    Downloading: 55%    Downloading: 70%    Downloading: 80%    Downloading: 95%    Downloading: 100%
 
   - Installing phpunit/php-token-stream (1.4.8)
     Downloading: Connecting...    Downloading: 0%               Downloading: 5%    Downloading: 10%    Downloading: 15%    Downloading: 20%    Downloading: 25%    Downloading: 30%    Downloading: 35%    Downloading: 40%    Downloading: 45%    Downloading: 50%    Downloading: 55%    Downloading: 60%    Downloading: 100%
 
   - Installing symfony/yaml (v2.7.5)
-    Downloading: Connecting...    Downloading: 0%               Downloading: 5%    Downloading: 10%    Downloading: 60%    Downloading: 65%    Downloading: 70%    Downloading: 75%    Downloading: 80%    Downloading: 85%    Downloading: 100%
+    Downloading: Connecting...    Downloading: 0%               Downloading: 5%    Downloading: 10%    Downloading: 55%    Downloading: 60%    Downloading: 65%    Downloading: 70%    Downloading: 75%    Downloading: 100%
 
   - Installing sebastian/version (1.0.6)
     Downloading: Connecting...    Downloading: 0%               Downloading: 100%
@@ -6584,7 +6626,7 @@ Installing dependencies (including require-dev) from lock file
     Downloading: Connecting...    Downloading: 0%               Downloading: 20%    Downloading: 40%    Downloading: 60%    Downloading: 80%    Downloading: 100%
 
   - Installing sebastian/recursion-context (1.0.1)
-    Downloading: Connecting...    Downloading: 0%               Downloading: 35%    Downloading: 70%    Downloading: 90%    Downloading: 100%
+    Downloading: Connecting...    Downloading: 100%         
 
   - Installing sebastian/exporter (1.2.1)
     Downloading: Connecting...    Downloading: 0%               Downloading: 70%    Downloading: 100%
@@ -6596,16 +6638,16 @@ Installing dependencies (including require-dev) from lock file
     Downloading: Connecting...    Downloading: 0%               Downloading: 15%    Downloading: 100%
 
   - Installing sebastian/comparator (1.2.0)
-    Downloading: Connecting...    Downloading: 0%               Downloading: 10%    Downloading: 100%
+    Downloading: Connecting...    Downloading: 0%               Downloading: 10%    Downloading: 20%    Downloading: 30%    Downloading: 40%    Downloading: 50%    Downloading: 60%    Downloading: 100%
 
   - Installing phpunit/php-text-template (1.2.1)
     Downloading: Connecting...    Downloading: 0%               Downloading: 35%    Downloading: 100%
 
   - Installing doctrine/instantiator (1.0.5)
-    Downloading: Connecting...    Downloading: 0%               Downloading: 15%    Downloading: 30%    Downloading: 45%    Downloading: 60%    Downloading: 75%    Downloading: 90%    Downloading: 100%
+    Downloading: Connecting...    Downloading: 0%               Downloading: 15%    Downloading: 30%    Downloading: 45%    Downloading: 50%    Downloading: 65%    Downloading: 80%    Downloading: 95%    Downloading: 100%
 
   - Installing phpunit/phpunit-mock-objects (2.3.8)
-    Downloading: Connecting...    Downloading: 0%               Downloading: 5%    Downloading: 10%    Downloading: 15%    Downloading: 25%    Downloading: 30%    Downloading: 35%    Downloading: 40%    Downloading: 50%    Downloading: 55%    Downloading: 60%    Downloading: 65%    Downloading: 70%    Downloading: 80%    Downloading: 85%    Downloading: 90%    Downloading: 95%    Downloading: 100%
+    Downloading: Connecting...    Downloading: 0%               Downloading: 5%    Downloading: 20%    Downloading: 25%    Downloading: 30%    Downloading: 45%    Downloading: 50%    Downloading: 55%    Downloading: 70%    Downloading: 75%    Downloading: 80%    Downloading: 85%    Downloading: 95%    Downloading: 100%
 
   - Installing phpunit/php-timer (1.0.7)
     Downloading: Connecting...    Downloading: 0%               Downloading: 25%    Downloading: 100%
@@ -6641,7 +6683,7 @@ Generating autoload files
 CLDS: * Install  Drush Version   :  8.0.0-rc1  to manage Drupal.
 CLDS: * See https://www.linode.com/docs/websites/cms/drush-drupal.
 CLDS: * Further setting is needed. See https://wiki.debian.org/drush.
-CLDS: * Disk size = 3914980K. Space Used = 20116K.
+CLDS: * Disk size = 3397312K. Space Used = 20112K.
 CLDS:>>>>>>>>> Running inst-std-xtra-opw-php5-gd.sh ...
 Reading package lists...
 Building dependency tree...
@@ -6665,7 +6707,7 @@ php5_invoke: Enable module gd for cli SAPI
 php5_invoke: Enable module gd for apache2 SAPI
 Processing triggers for libapache2-mod-php5 (5.6.14+dfsg-0+deb8u1) ...
 CLDS: * Install php5-gd to run Drupal.
-CLDS: * Disk size = 3915196K. Space Used = 216K.
+CLDS: * Disk size = 3397532K. Space Used = 220K.
 CLDS:>>>>>>>>> Running inst-std-xtra-opw-php5-mysql.sh ...
 Reading package lists...
 Building dependency tree...
@@ -6679,7 +6721,7 @@ Need to get 743 kB of archives.
 After this operation, 3,752 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libmysqlclient18 amd64 5.5.46-0+deb8u1 [678 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main php5-mysql amd64 5.6.14+dfsg-0+deb8u1 [65.2 kB]
-Fetched 743 kB in 0s (19.1 MB/s)
+Fetched 743 kB in 0s (22.2 MB/s)
 Selecting previously unselected package libmysqlclient18:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53341 files and directories currently installed.)
 Preparing to unpack .../libmysqlclient18_5.5.46-0+deb8u1_amd64.deb ...
@@ -6709,7 +6751,7 @@ To activate the new configuration, you need to run:
   service apache2 restart
 CLDS: * Install php5-mysql to enable the PDO_MYSQL database driver for PHP and to run Drupal.
 CLDS: * Enable mod_rewrite module.
-CLDS: * Disk size = 3919736K. Space Used = 4540K.
+CLDS: * Disk size = 3402068K. Space Used = 4536K.
 CLDS:>>>>>>>>> Running inst-std-xtra-sweethome3d.sh ...
 ‘sh3d’ -> ‘/usr/local/bin/sh3d’
 ‘sh3d/FurnitureLibraryEditor-1.17.jar’ -> ‘/usr/local/bin/sh3d/FurnitureLibraryEditor-1.17.jar’
@@ -6719,9 +6761,9 @@ CLDS: * Install SweetHome3D-5.0.jar.
 CLDS: * Install TexturesLibraryEditor-1.4.jar.
 CLDS: * Install FurnitureLibraryEditor-1.17.jar.
 CLDS: * Insert SweetHome3D menus in Graphics.
-CLDS: * Disk size = 3955852K. Space Used = 36116K.
+CLDS: * Disk size = 3438184K. Space Used = 36116K.
 CLDS:>>>>>>>>> Running inst-xtra-cld-dev-tools-aptly.sh ...
-Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.gJyDbGEvEg --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d/deb-multimedia-keyring.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-security-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-stable.gpg --keyserver keys.gnupg.net --recv-keys E083A3782A194991
+Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.JnVNcGmw3n --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d/deb-multimedia-keyring.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-security-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-stable.gpg --keyserver keys.gnupg.net --recv-keys E083A3782A194991
 gpg: requesting key 2A194991 from hkp server keys.gnupg.net
 gpg: key 2A194991: public key "Andrey Smirnov <me@smira.ru>" imported
 gpg: Total number processed: 1
@@ -6734,30 +6776,30 @@ Ign http://localhost jessie/main Translation-en_US.UTF-8
 Hit http://www.deb-multimedia.org jessie InRelease
 Ign http://ftp.debian.org jessie InRelease
 Hit http://ftp.debian.org jessie Release.gpg
-Hit http://ftp.debian.org jessie Release
 Hit http://www.deb-multimedia.org jessie/main amd64 Packages
 Get:1 http://repo.aptly.info nightly InRelease [3,217 B]
-Hit http://ftp.debian.org jessie/main amd64 Packages
+Hit http://ftp.debian.org jessie Release
 Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
-Get:2 http://repo.aptly.info nightly/main amd64 Packages [4,078 B]
-Hit http://http.debian.net jessie-backports InRelease
+Get:2 http://http.debian.net jessie-backports InRelease [165 kB]
+Get:3 http://repo.aptly.info nightly/main amd64 Packages [4,078 B]
+Hit http://ftp.debian.org jessie/main amd64 Packages
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
 Hit http://ftp.debian.org jessie/non-free amd64 Packages
+Get:4 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [8,326 B]
 Hit http://ftp.debian.org jessie/contrib Translation-en
-Get:3 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [8,326 B]
+Get:5 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [5,059 B]
 Hit http://ftp.debian.org jessie/main Translation-en
-Get:4 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [5,059 B]
 Hit http://ftp.debian.org jessie/non-free Translation-en
 Ign http://repo.aptly.info nightly/main Translation-en_US
-Ign http://repo.aptly.info nightly/main Translation-en
-Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
+Ign http://repo.aptly.info nightly/main Translation-en
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
+Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Fetched 20.7 kB in 4s (4,306 B/s)
+Fetched 186 kB in 4s (45.8 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -6771,7 +6813,7 @@ Need to get 4,798 kB of archives.
 After this operation, 16.9 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main xz-utils amd64 5.1.1alpha+20120614-2+b3 [221 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main aptly amd64 0.9.6~dev+156+g339bf0a [4,578 kB]
-Fetched 4,798 kB in 0s (30.7 MB/s)
+Fetched 4,798 kB in 0s (42.4 MB/s)
 Selecting previously unselected package xz-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53361 files and directories currently installed.)
 Preparing to unpack .../xz-utils_5.1.1alpha+20120614-2+b3_amd64.deb ...
@@ -6785,7 +6827,7 @@ update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto m
 Setting up aptly (0.9.6~dev+156+g339bf0a) ...
 CLDS: * Install aptly version: 0.9.6~dev to create local debian repository.
 CLDS: * Add xz-utils package because aptly snapshot merge needs it.
-CLDS: * Disk size = 3976960K. Space Used = 21108K.
+CLDS: * Disk size = 3459292K. Space Used = 21108K.
 CLDS:>>>>>>>>> Running inst-xtra-cld-dev-tools-libxml2-utils.sh ...
 Reading package lists...
 Building dependency tree...
@@ -6796,7 +6838,7 @@ The following NEW packages will be installed:
 Need to get 90.5 kB of archives.
 After this operation, 152 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libxml2-utils amd64 2.9.1+dfsg1-5 [90.5 kB]
-Fetched 90.5 kB in 0s (8,831 kB/s)
+Fetched 90.5 kB in 0s (0 B/s)
 Selecting previously unselected package libxml2-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53409 files and directories currently installed.)
 Preparing to unpack .../libxml2-utils_2.9.1+dfsg1-5_amd64.deb ...
@@ -6804,7 +6846,7 @@ Unpacking libxml2-utils (2.9.1+dfsg1-5) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up libxml2-utils (2.9.1+dfsg1-5) ...
 CLDS: * Install libxml2-utils to validate xml file.
-CLDS: * Disk size = 3977248K. Space Used = 288K.
+CLDS: * Disk size = 3459592K. Space Used = 300K.
 CLDS:>>>>>>>>> Running inst-xtra-cld-dev-tools-xsltproc.sh ...
 Reading package lists...
 Building dependency tree...
@@ -6823,7 +6865,7 @@ Unpacking xsltproc (1.1.28-2+b2) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up xsltproc (1.1.28-2+b2) ...
 CLDS: * Install xsltproc to process xslt.
-CLDS: * Disk size = 3977544K. Space Used = 296K.
+CLDS: * Disk size = 3459880K. Space Used = 288K.
 CLDS:>>>>>>>>> Running inst-xtra-dev-tools-ant.sh ...
 Reading package lists...
 Building dependency tree...
@@ -6838,7 +6880,7 @@ The following NEW packages will be installed:
 Need to get 1,888 kB of archives.
 After this operation, 2,229 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main ant all 1.9.4-3 [1,888 kB]
-Fetched 1,888 kB in 0s (26.0 MB/s)
+Fetched 1,888 kB in 0s (28.1 MB/s)
 Selecting previously unselected package ant.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53432 files and directories currently installed.)
 Preparing to unpack .../archives/ant_1.9.4-3_all.deb ...
@@ -6846,7 +6888,7 @@ Unpacking ant (1.9.4-3) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up ant (1.9.4-3) ...
 CLDS: * Install ant.
-CLDS: * Disk size = 3981584K. Space Used = 4040K.
+CLDS: * Disk size = 3463920K. Space Used = 4040K.
 CLDS:>>>>>>>>> Running inst-xtra-fuse.sh ...
 Reading package lists...
 Building dependency tree...
@@ -6855,29 +6897,7 @@ fuse is already the newest version.
 fuse set to manually installed.
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 CLDS: * Install fuse(fusermount) to run TMSU.
-CLDS: * Disk size = 3981584K. Space Used = 0K.
-CLDS:>>>>>>>>> Running inst-xtra-imdb-python-imdbpy.sh ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-Suggested packages:
-  python-sqlobject python-sqlalchemy
-Recommended packages:
-  python-lxml
-The following NEW packages will be installed:
-  python-imdbpy
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-Need to get 255 kB of archives.
-After this operation, 990 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main python-imdbpy amd64 5.0-1 [255 kB]
-Fetched 255 kB in 0s (12.2 MB/s)
-Selecting previously unselected package python-imdbpy.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53478 files and directories currently installed.)
-Preparing to unpack .../python-imdbpy_5.0-1_amd64.deb ...
-Unpacking python-imdbpy (5.0-1) ...
-Setting up python-imdbpy (5.0-1) ...
-CLDS: * Install IMDbPY.
-CLDS: * Disk size = 3983740K. Space Used = 2156K.
+CLDS: * Disk size = 3463920K. Space Used = 0K.
 CLDS:>>>>>>>>> Running inst-xtra-open-terminals-on-startup.sh ...
 Reading package lists...
 Building dependency tree...
@@ -6909,9 +6929,9 @@ After this operation, 2,064 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libutempter0 amd64 1.1.5-4 [8,020 B]
 Get:2 http://localhost/aptly-repo/ jessie/main xbitmaps all 1.1.1-2 [32.1 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main xterm amd64 312-2 [605 kB]
-Fetched 645 kB in 0s (14.4 MB/s)
+Fetched 645 kB in 0s (22.8 MB/s)
 Selecting previously unselected package libutempter0.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53644 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53478 files and directories currently installed.)
 Preparing to unpack .../libutempter0_1.1.5-4_amd64.deb ...
 Unpacking libutempter0 (1.1.5-4) ...
 Selecting previously unselected package xbitmaps.
@@ -6937,7 +6957,7 @@ CLDS: * Install x11-utils for xprop.
 CLDS: * Install xterm for resize.
 CLDS: * Copy open-terminal.sh in /root/cld.
 CLDS: * Add open-terminal.sh in /root/cld/jwmrc-startup.sh.
-CLDS: * Disk size = 3986652K. Space Used = 2912K.
+CLDS: * Disk size = 3466832K. Space Used = 2912K.
 CLDS:>>>>>>>>> Running inst-xtra-sqlite3.sh ...
 Reading package lists...
 Building dependency tree...
@@ -6950,15 +6970,15 @@ The following NEW packages will be installed:
 Need to get 101 kB of archives.
 After this operation, 143 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main sqlite3 amd64 3.8.7.1-1+deb8u1 [101 kB]
-Fetched 101 kB in 0s (6,306 kB/s)
+Fetched 101 kB in 0s (0 B/s)
 Selecting previously unselected package sqlite3.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53773 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53607 files and directories currently installed.)
 Preparing to unpack .../sqlite3_3.8.7.1-1+deb8u1_amd64.deb ...
 Unpacking sqlite3 (3.8.7.1-1+deb8u1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up sqlite3 (3.8.7.1-1+deb8u1) ...
 CLDS: * Install Database: sqlite3.
-CLDS: * Disk size = 3986928K. Space Used = 276K.
+CLDS: * Disk size = 3467108K. Space Used = 276K.
 CLDS:>>>>>>>>> Running inst-xtra-virtualbox-guest-iso.sh ...
 Reading package lists...
 Building dependency tree...
@@ -7010,9 +7030,9 @@ Get:21 http://localhost/aptly-repo/ jessie/main linux-compiler-gcc-4.8-x86 amd64
 Get:22 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-common amd64 3.16.7-ckt11-1+deb8u6 [4,487 kB]
 Get:23 http://localhost/aptly-repo/ jessie/main linux-kbuild-3.16 amd64 3.16-3 [173 kB]
 Get:24 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-amd64 amd64 3.16.7-ckt11-1+deb8u6 [452 kB]
-Fetched 31.9 MB in 0s (34.1 MB/s)
+Fetched 31.9 MB in 1s (31.4 MB/s)
 Selecting previously unselected package libasan0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53780 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53614 files and directories currently installed.)
 Preparing to unpack .../libasan0_4.8.4-1_amd64.deb ...
 Unpacking libasan0:amd64 (4.8.4-1) ...
 Selecting previously unselected package libasan1:amd64.
@@ -7113,24 +7133,22 @@ Examining /etc/kernel/header_postinst.d.
 run-parts: executing /etc/kernel/header_postinst.d/dkms 3.16.0-4-amd64
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Verifying archive integrity... All good.
-Uncompressing VirtualBox 4.3.4 Guest Additions for Linux............
+Uncompressing VirtualBox 4.3.20 Guest Additions for Linux............
 VirtualBox Guest Additions installer
 Copying additional installer modules ...
 Installing additional modules ...
 Removing existing VirtualBox DKMS kernel modules ...done.
 Removing existing VirtualBox non-DKMS kernel modules ...done.
-Building the VirtualBox Guest Additions kernel modules
-The headers for the current running kernel were not found. If the following
-module compilation fails then this could be the reason.
-
-Building the main Guest Additions module ...done.
-Building the shared folder support module ...fail!
-(Look at /var/log/vboxadd-install.log to find out what went wrong)
+Building the VirtualBox Guest Additions kernel modules ...done.
 Doing non-kernel setup of the Guest Additions ...done.
+You should restart your guest to make sure the new modules are actually used
+
 Installing the Window System drivers
-Warning: unknown version of the X Window System installed.  Not installing
-X Window System drivers.
- ...done.
+Installing X.Org Server 1.16 modules ...done.
+Setting up the Window System to use the Guest Additions ...done.
+You may need to restart the hal service and the Window System (or just restart
+the guest system) to enable the Guest Additions.
+
 Installing graphics libraries and desktop services components ...done.
 /root/scripts/repository/inst-xtra-virtualbox-guest-iso
 Reading package lists...
@@ -7144,7 +7162,7 @@ The following packages will be REMOVED:
   dkms* libc6-dev* linux-headers-3.16.0-4-amd64*
 0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded.
 After this operation, 14.6 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66571 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66405 files and directories currently installed.)
 Removing dkms (2.2.0.3-2) ...
 Purging configuration files for dkms (2.2.0.3-2) ...
 dpkg: warning: while removing dkms, directory '/var/lib/dkms' not empty so not removed
@@ -7160,7 +7178,7 @@ The following packages will be REMOVED:
   linux-libc-dev patch
 0 upgraded, 0 newly installed, 10 to remove and 0 not upgraded.
 After this operation, 63.3 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59595 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59429 files and directories currently installed.)
 Removing linux-compiler-gcc-4.8-x86 (3.16.7-ckt11-1+deb8u6) ...
 Removing gcc-4.8 (4.8.4-1) ...
 Removing cpp-4.8 (4.8.4-1) ...
@@ -7176,9 +7194,9 @@ Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
-CLDS: * VirtualBox guest additions installed: version: 4.3.4.
+CLDS: * VirtualBox guest additions installed: version: 4.3.20.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 4112220K. Space Used = 125292K.
+CLDS: * Disk size = 3564096K. Space Used = 96988K.
 CLDS:>>>>>>>>> Running inst-xtra-wifite.sh ...
 info: Trying to set 'wireshark-common/install-setuid' [boolean] to 'true'
 info: Loading answer for 'wireshark-common/install-setuid'
@@ -7216,9 +7234,9 @@ Get:13 http://localhost/aptly-repo/ jessie/main reaver amd64 1.4-2 [229 kB]
 Get:14 http://localhost/aptly-repo/ jessie/main pyrit amd64 0.4.0-4 [136 kB]
 Get:15 http://localhost/aptly-repo/ jessie/main wifite all 2.0r85-1 [30.7 kB]
 Preconfiguring packages ...
-Fetched 14.0 MB in 0s (32.8 MB/s)
+Fetched 14.0 MB in 0s (32.9 MB/s)
 Selecting previously unselected package libgeoip1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54324 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54158 files and directories currently installed.)
 Preparing to unpack .../libgeoip1_1.6.2-4_amd64.deb ...
 Unpacking libgeoip1:amd64 (1.6.2-4) ...
 Selecting previously unselected package libpcap0.8:amd64.
@@ -7282,109 +7300,10 @@ Setting up pyrit (0.4.0-4) ...
 Setting up wifite (2.0r85-1) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install wifite.
-CLDS: * Disk size = 4205620K. Space Used = 93400K.
-CLDS:>>>>>>>>> Running inst-xtra-wine-diablo2.sh ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following extra packages will be installed:
-  libturbojpeg1
-The following NEW packages will be installed:
-  libjpeg-turbo-progs libturbojpeg1
-0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
-Need to get 209 kB of archives.
-After this operation, 631 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main libturbojpeg1 amd64 1:1.3.1-12 [127 kB]
-Get:2 http://localhost/aptly-repo/ jessie/main libjpeg-turbo-progs amd64 1:1.3.1-12 [82.7 kB]
-Fetched 209 kB in 0s (11.9 MB/s)
-Selecting previously unselected package libturbojpeg1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54777 files and directories currently installed.)
-Preparing to unpack .../libturbojpeg1_1%3a1.3.1-12_amd64.deb ...
-Unpacking libturbojpeg1:amd64 (1:1.3.1-12) ...
-Selecting previously unselected package libjpeg-turbo-progs.
-Preparing to unpack .../libjpeg-turbo-progs_1%3a1.3.1-12_amd64.deb ...
-Unpacking libjpeg-turbo-progs (1:1.3.1-12) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up libturbojpeg1:amd64 (1:1.3.1-12) ...
-Setting up libjpeg-turbo-progs (1:1.3.1-12) ...
-Processing triggers for libc-bin (2.19-18+deb8u1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-libldap-2.4-2 is already the newest version.
-libldap-2.4-2 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-CLDS: * Install libjpeg-turbo-progs & libldap-2.4-2 so that Blizzard Downloader will not fail.
-CLDS: * Disk size = 4206464K. Space Used = 844K.
-CLDS:>>>>>>>>> Running inst-xtra-wine.sh ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following extra packages will be installed:
-  file iso-codes libgstreamer-plugins-base0.10-0 libgstreamer0.10-0 libwine
-  libwine-gecko-2.21 wine64
-Suggested packages:
-  isoquery libvisual-0.4-plugins gstreamer-codec-install gnome-codec-install
-  gstreamer0.10-tools gstreamer0.10-plugins-base cups-bsd binfmt-support
-  ttf-mscorefonts-installer winbind avscan klamav clamav
-Recommended packages:
-  fonts-liberation libasound2-plugins wine32
-The following NEW packages will be installed:
-  file iso-codes libgstreamer-plugins-base0.10-0 libgstreamer0.10-0 libwine
-  libwine-gecko-2.21 wine wine64
-0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
-Need to get 62.9 MB of archives.
-After this operation, 190 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main libgstreamer0.10-0 amd64 0.10.36-1.5 [1,400 kB]
-Get:2 http://localhost/aptly-repo/ jessie/main iso-codes all 3.57-1 [2,265 kB]
-Get:3 http://localhost/aptly-repo/ jessie/main libgstreamer-plugins-base0.10-0 amd64 0.10.36-2 [1,030 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main libwine amd64 1.6.2-20 [15.9 MB]
-Get:5 http://localhost/aptly-repo/ jessie/main file amd64 1:5.22+15-2 [60.1 kB]
-Get:6 http://localhost/aptly-repo/ jessie/main libwine-gecko-2.21 all 2.21+dfsg2-1 [42.1 MB]
-Get:7 http://localhost/aptly-repo/ jessie/main wine64 amd64 1.6.2-20 [69.8 kB]
-Get:8 http://localhost/aptly-repo/ jessie/main wine amd64 1.6.2-20 [103 kB]
-Fetched 62.9 MB in 1s (44.3 MB/s)
-Selecting previously unselected package libgstreamer0.10-0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54805 files and directories currently installed.)
-Preparing to unpack .../libgstreamer0.10-0_0.10.36-1.5_amd64.deb ...
-Unpacking libgstreamer0.10-0:amd64 (0.10.36-1.5) ...
-Selecting previously unselected package iso-codes.
-Preparing to unpack .../iso-codes_3.57-1_all.deb ...
-Unpacking iso-codes (3.57-1) ...
-Selecting previously unselected package libgstreamer-plugins-base0.10-0:amd64.
-Preparing to unpack .../libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb ...
-Unpacking libgstreamer-plugins-base0.10-0:amd64 (0.10.36-2) ...
-Selecting previously unselected package libwine:amd64.
-Preparing to unpack .../libwine_1.6.2-20_amd64.deb ...
-Unpacking libwine:amd64 (1.6.2-20) ...
-Selecting previously unselected package file.
-Preparing to unpack .../file_1%3a5.22+15-2_amd64.deb ...
-Unpacking file (1:5.22+15-2) ...
-Selecting previously unselected package libwine-gecko-2.21.
-Preparing to unpack .../libwine-gecko-2.21_2.21+dfsg2-1_all.deb ...
-Unpacking libwine-gecko-2.21 (2.21+dfsg2-1) ...
-Selecting previously unselected package wine64.
-Preparing to unpack .../wine64_1.6.2-20_amd64.deb ...
-Unpacking wine64 (1.6.2-20) ...
-Selecting previously unselected package wine.
-Preparing to unpack .../wine_1.6.2-20_amd64.deb ...
-Unpacking wine (1.6.2-20) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up libgstreamer0.10-0:amd64 (0.10.36-1.5) ...
-Setting up iso-codes (3.57-1) ...
-Setting up libgstreamer-plugins-base0.10-0:amd64 (0.10.36-2) ...
-Setting up libwine:amd64 (1.6.2-20) ...
-Setting up file (1:5.22+15-2) ...
-Setting up libwine-gecko-2.21 (2.21+dfsg2-1) ...
-Setting up wine64 (1.6.2-20) ...
-Setting up wine (1.6.2-20) ...
-Processing triggers for libc-bin (2.19-18+deb8u1) ...
-CLDS: * Install wine so that you can run Windows applications.
-CLDS: * You need to run 'wine winecfg' before using wine. This is a workaround of a bug.
-CLDS: * Disk size = 4439984K. Space Used = 233520K.
+CLDS: * Disk size = 3657492K. Space Used = 93396K.
 CLDS:>>>>>>>>> Running inst-xtra-xmpv.sh ...
 CLDS: * Install xmpv.
-CLDS: * Disk size = 4440028K. Space Used = 44K.
+CLDS: * Disk size = 3657536K. Space Used = 44K.
 CLDS:>>>>>>>>> Running inst-xtra-zfs.sh ...
 Reading package lists...
 Building dependency tree...
@@ -7403,7 +7322,7 @@ After this operation, 15.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main lsb-release all 4.1+Debian13+nmu1 [26.5 kB]
 Fetched 26.5 kB in 0s (0 B/s)
 Selecting previously unselected package libc-dev-bin.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56465 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54611 files and directories currently installed.)
 Preparing to unpack .../libc-dev-bin_2.19-18+deb8u1_amd64.deb ...
 Unpacking libc-dev-bin (2.19-18+deb8u1) ...
 Selecting previously unselected package linux-libc-dev:amd64.
@@ -7421,7 +7340,7 @@ Setting up linux-libc-dev:amd64 (3.16.7-ckt11-1+deb8u6) ...
 Setting up libc6-dev:amd64 (2.19-18+deb8u1) ...
 Setting up lsb-release (4.1+Debian13+nmu1) ...
 Selecting previously unselected package zfsonlinux.
-(Reading database ... 57721 files and directories currently installed.)
+(Reading database ... 55867 files and directories currently installed.)
 Preparing to unpack zfsonlinux_6_all.deb ...
 Unpacking zfsonlinux (6) ...
 Setting up zfsonlinux (6) ...
@@ -7432,43 +7351,43 @@ Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
 Hit http://www.deb-multimedia.org jessie InRelease
 Ign http://ftp.debian.org jessie InRelease
-Hit http://ftp.debian.org jessie Release.gpg
-Hit http://repo.aptly.info nightly InRelease
-Get:1 http://archive.zfsonlinux.org jessie InRelease [3,066 B]
 Hit http://www.deb-multimedia.org jessie/main amd64 Packages
+Hit http://ftp.debian.org jessie Release.gpg
 Hit http://ftp.debian.org jessie Release
-Hit http://http.debian.net jessie-backports InRelease
-Hit http://ftp.debian.org jessie/main amd64 Packages
+Get:1 http://archive.zfsonlinux.org jessie InRelease [3,066 B]
 Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
-Hit http://repo.aptly.info nightly/main amd64 Packages
-Get:2 http://archive.zfsonlinux.org jessie/main amd64 Packages [10.3 kB]
+Get:2 http://http.debian.net jessie-backports InRelease [165 kB]
+Hit http://repo.aptly.info nightly InRelease
+Hit http://ftp.debian.org jessie/main amd64 Packages
+Get:3 http://archive.zfsonlinux.org jessie/main amd64 Packages [10.3 kB]
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
+Hit http://repo.aptly.info nightly/main amd64 Packages
 Hit http://ftp.debian.org jessie/non-free amd64 Packages
-Get:3 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [8,326 B]
-Get:4 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [5,059 B]
+Get:4 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [8,326 B]
 Hit http://ftp.debian.org jessie/contrib Translation-en
+Get:5 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [5,059 B]
 Hit http://ftp.debian.org jessie/main Translation-en
 Hit http://ftp.debian.org jessie/non-free Translation-en
-Ign http://archive.zfsonlinux.org jessie/main Translation-en_US
-Ign http://repo.aptly.info nightly/main Translation-en_US
-Ign http://archive.zfsonlinux.org jessie/main Translation-en
-Ign http://repo.aptly.info nightly/main Translation-en
-Ign http://archive.zfsonlinux.org jessie/main Translation-en_US.UTF-8
-Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
+Ign http://archive.zfsonlinux.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
+Ign http://repo.aptly.info nightly/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
+Ign http://archive.zfsonlinux.org jessie/main Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
+Ign http://repo.aptly.info nightly/main Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Fetched 26.8 kB in 5s (5,262 B/s)
+Ign http://archive.zfsonlinux.org jessie/main Translation-en_US.UTF-8
+Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
+Fetched 192 kB in 4s (46.8 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  cpp-4.8 dkms gcc-4.8 libasan0 libgcc-4.8-dev libnvpair1 libuutil1 libzfs2
-  libzpool2 linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-amd64
+  cpp-4.8 dkms file gcc-4.8 libasan0 libgcc-4.8-dev libnvpair1 libuutil1
+  libzfs2 libzpool2 linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-amd64
   linux-headers-3.16.0-4-common linux-headers-amd64 linux-kbuild-3.16 patch
   spl spl-dkms zfs-dkms zfsutils
 Suggested packages:
@@ -7479,27 +7398,28 @@ Suggested packages:
 Recommended packages:
   build-essential linux-headers fakeroot linux-image
 The following NEW packages will be installed:
-  cpp-4.8 debian-zfs dkms gcc-4.8 libasan0 libgcc-4.8-dev libnvpair1 libuutil1
-  libzfs2 libzpool2 linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-amd64
-  linux-headers-3.16.0-4-common linux-headers-amd64 linux-kbuild-3.16 patch
-  spl spl-dkms zfs-dkms zfsutils
-0 upgraded, 20 newly installed, 0 to remove and 0 not upgraded.
-Need to get 2,453 kB/19.2 MB of archives.
-After this operation, 78.0 MB of additional disk space will be used.
+  cpp-4.8 debian-zfs dkms file gcc-4.8 libasan0 libgcc-4.8-dev libnvpair1
+  libuutil1 libzfs2 libzpool2 linux-compiler-gcc-4.8-x86
+  linux-headers-3.16.0-4-amd64 linux-headers-3.16.0-4-common
+  linux-headers-amd64 linux-kbuild-3.16 patch spl spl-dkms zfs-dkms zfsutils
+0 upgraded, 21 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2,513 kB/19.2 MB of archives.
+After this operation, 78.1 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main linux-headers-amd64 amd64 3.16+63 [5,050 B]
-Get:2 http://localhost/aptly-repo/ jessie/main spl-dkms all 0.6.5-1 [346 kB]
-Get:3 http://localhost/aptly-repo/ jessie/main zfs-dkms all 0.6.5.2-2 [1,060 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main spl amd64 0.6.5-1 [15.3 kB]
-Get:5 http://localhost/aptly-repo/ jessie/main libuutil1 amd64 0.6.5.2-2 [44.7 kB]
-Get:6 http://localhost/aptly-repo/ jessie/main libnvpair1 amd64 0.6.5.2-2 [41.7 kB]
-Get:7 http://localhost/aptly-repo/ jessie/main libzpool2 amd64 0.6.5.2-2 [399 kB]
-Get:8 http://localhost/aptly-repo/ jessie/main libzfs2 amd64 0.6.5.2-2 [152 kB]
-Get:9 http://localhost/aptly-repo/ jessie/main zfsutils amd64 0.6.5.2-2 [383 kB]
-Get:10 http://localhost/aptly-repo/ jessie/main debian-zfs amd64 7~jessie [6,806 B]
+Get:2 http://localhost/aptly-repo/ jessie/main file amd64 1:5.22+15-2 [60.1 kB]
+Get:3 http://localhost/aptly-repo/ jessie/main spl-dkms all 0.6.5-1 [346 kB]
+Get:4 http://localhost/aptly-repo/ jessie/main zfs-dkms all 0.6.5.2-2 [1,060 kB]
+Get:5 http://localhost/aptly-repo/ jessie/main spl amd64 0.6.5-1 [15.3 kB]
+Get:6 http://localhost/aptly-repo/ jessie/main libuutil1 amd64 0.6.5.2-2 [44.7 kB]
+Get:7 http://localhost/aptly-repo/ jessie/main libnvpair1 amd64 0.6.5.2-2 [41.7 kB]
+Get:8 http://localhost/aptly-repo/ jessie/main libzpool2 amd64 0.6.5.2-2 [399 kB]
+Get:9 http://localhost/aptly-repo/ jessie/main libzfs2 amd64 0.6.5.2-2 [152 kB]
+Get:10 http://localhost/aptly-repo/ jessie/main zfsutils amd64 0.6.5.2-2 [383 kB]
+Get:11 http://localhost/aptly-repo/ jessie/main debian-zfs amd64 7~jessie [6,806 B]
 Preconfiguring packages ...
-Fetched 2,453 kB in 0s (18.8 MB/s)
+Fetched 2,513 kB in 0s (22.1 MB/s)
 Selecting previously unselected package libasan0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 57726 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55872 files and directories currently installed.)
 Preparing to unpack .../libasan0_4.8.4-1_amd64.deb ...
 Unpacking libasan0:amd64 (4.8.4-1) ...
 Selecting previously unselected package linux-headers-3.16.0-4-common.
@@ -7532,6 +7452,9 @@ Unpacking patch (2.7.5-1) ...
 Selecting previously unselected package dkms.
 Preparing to unpack .../dkms_2.2.0.3-2_all.deb ...
 Unpacking dkms (2.2.0.3-2) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.22+15-2_amd64.deb ...
+Unpacking file (1:5.22+15-2) ...
 Selecting previously unselected package spl-dkms.
 Preparing to unpack .../spl-dkms_0.6.5-1_all.deb ...
 Unpacking spl-dkms (0.6.5-1) ...
@@ -7548,6 +7471,7 @@ Examining /etc/kernel/header_postinst.d.
 Setting up linux-headers-amd64 (3.16+63) ...
 Setting up patch (2.7.5-1) ...
 Setting up dkms (2.2.0.3-2) ...
+Setting up file (1:5.22+15-2) ...
 Setting up spl-dkms (0.6.5-1) ...
 Loading new spl-0.6.5 DKMS files...
 First Installation: checking all kernels...
@@ -7571,12 +7495,12 @@ Running module version sanity check.
 
 Running the post_install script:
 
-depmod.......
+depmod....
 
 DKMS: install completed.
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Selecting previously unselected package zfs-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68972 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67129 files and directories currently installed.)
 Preparing to unpack .../zfs-dkms_0.6.5.2-2_all.deb ...
 Unpacking zfs-dkms (0.6.5.2-2) ...
 Selecting previously unselected package spl.
@@ -7677,14 +7601,14 @@ CLDS: * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
 CLDS: * Install debian-zfs: version: 0.6.5.2-2, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Delete zfsonlinux_6_all.deb[1992K].
 CLDS: * Change default behavior: Don't allow the last 1.6% of space in the pool instead of 3.2%.
-CLDS: * Disk size = 4579196K. Space Used = 139168K.
+CLDS: * Disk size = 3796880K. Space Used = 139344K.
 CLDS:>>>>>>>>> Running inst-zclean-00-remove-block-services.sh ...
 CLDS: * Remove block services from starting after they are being installed.
-CLDS: * Disk size = 4579192K. Space Used = -4K.
+CLDS: * Disk size = 3796876K. Space Used = -4K.
 CLDS:>>>>>>>>> Running inst-zclean-00-zerosizing-docs.sh ...
 CLDS: * Zero size all documents in /usr/share/.
-..............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
-CLDS: * Disk size = 4478960K. Space Used = -100232K.
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+CLDS: * Disk size = 3698712K. Space Used = -98164K.
 CLDS:>>>>>>>>> Running inst-zclean-99-end-cleanup.sh ...
 Reading package lists...
 Building dependency tree...
@@ -7695,4 +7619,4 @@ CLDS: * rm -rf /tmp/*.
 CLDS: * Umount /sys, /dev/pts and /proc.
 CLDS: * Add Debian main repositories in sources.list.
 CLDS: * Delete local Debian repository from sources.list.
-CLDS: * Disk size = 3742012K. Space Used = -736948K.
+CLDS: * Disk size = 3023636K. Space Used = -675076K.
