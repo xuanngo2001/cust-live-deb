@@ -93,8 +93,9 @@ esac
 # Exclude scripts
 cat scripts-ex.lst |     # Supply input from a file.
 while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
-  echo "Exclude ${LINE}."
-  sed -i "/${LINE}/d" ${SCRIPT_LIST}  
+  # Delete line match ${LINE}. Note: sed can't process string as literal.
+  grep -Fv "${LINE}" ${SCRIPT_LIST} > ${SCRIPT_LIST}.$$; mv ${SCRIPT_LIST}.$$ ${SCRIPT_LIST}
+  echo "Excluded ${LINE}."
 done
 
 # Add clean up scripts.
