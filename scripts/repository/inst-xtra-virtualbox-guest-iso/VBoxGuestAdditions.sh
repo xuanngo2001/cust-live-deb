@@ -7,6 +7,7 @@ set -e
 
 URL=http://download.virtualbox.org/virtualbox/4.3.4/VBoxGuestAdditions_4.3.4.iso
 URL=http://download.virtualbox.org/virtualbox/5.0.10/VBoxGuestAdditions_5.0.10.iso
+URL=http://download.virtualbox.org/virtualbox/4.3.20/VBoxGuestAdditions_4.3.20.iso
 
 
 # Download ISO if not already exists.
@@ -17,4 +18,4 @@ fi
 
 # Create symbolic link.
 rm -f VBoxGuestAdditions.iso
-ln -s VBoxGuestAdditions_4.3.4.iso VBoxGuestAdditions.iso
+ln -s "${ISO_FILE}" VBoxGuestAdditions.iso
