@@ -33,6 +33,8 @@ Run the following tolog in the live system:
     chroot chroot
 Then, run
   cd /root/scripts
+  chmod +x setup-chroot.sh
+  ./setup-chroot.sh
   chmod +x scripts-ls.sh
   ./scripts-ls.sh ${SYSTEM}
   chmod +x install.sh

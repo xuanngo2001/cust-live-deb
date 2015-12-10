@@ -24,11 +24,13 @@ fi
 
 # All below is a one-liner. Stop everything if any failure.
 ./cld-build-live.sh ${DEB_REPO_URL} && \
-  chroot chroot/ /bin/bash -c "cd /root/scripts; \
-                               chmod +x scripts-ls.sh; \
-                               ./scripts-ls.sh ${SYSTEM}; \
-                               chmod +x install.sh; \
-                               ./install.sh" && \
+chroot chroot/ /bin/bash -c "cd /root/scripts; \
+                                chmod +x setup-chroot.sh; \
+																./setup-chroot.sh; \
+																chmod +x scripts-ls.sh; \
+																./scripts-ls.sh ${SYSTEM}; \
+																chmod +x install.sh; \
+																./install.sh" && \
 ./cld-mkiso.sh ${SYSTEM}
 
 # Reference:
