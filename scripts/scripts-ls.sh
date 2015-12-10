@@ -92,7 +92,7 @@ esac
 
 # Exclude scripts
 while IFS='' read -r LINE || [[ -n "${LINE}" ]]; do
-  # Delete line match ${LINE}. Note: sed can't process string as literal.
+  # Delete line match ${LINE}. Note: sed can't process string as literal. https://bbs.archlinux.org/viewtopic.php?id=172968
   grep -Fv "${LINE}" ${SCRIPT_LIST} > ${SCRIPT_LIST}.$$; mv ${SCRIPT_LIST}.$$ ${SCRIPT_LIST}
   echo "Excluded ${LINE}."
 done < <( cat scripts-ex.lst )
