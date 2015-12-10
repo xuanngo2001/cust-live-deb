@@ -91,12 +91,12 @@ case "${SYSTEM}" in
 esac
 
 # Exclude scripts
-cat scripts-ex.lst |     # Supply input from a file.
-while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
+while IFS='' read -r LINE || [[ -n "${LINE}" ]]; do
   # Delete line match ${LINE}. Note: sed can't process string as literal.
   grep -Fv "${LINE}" ${SCRIPT_LIST} > ${SCRIPT_LIST}.$$; mv ${SCRIPT_LIST}.$$ ${SCRIPT_LIST}
   echo "Excluded ${LINE}."
-done
+done < <( cat scripts-ex.lst )
+
 
 # Add clean up scripts.
 grep 'inst-zclean-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
