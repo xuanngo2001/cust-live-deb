@@ -14,7 +14,7 @@ apt-get -y --force-yes install flashplugin-nonfree
 # Log
 echo "${GV_LOG} * Install web browser: iceweasel."
 echo "${GV_LOG} * To update Adobe Flash Player: update-flashplugin-nonfree --install."
-echo "${GV_LOG} * To test Adobe Flash Player: http://www.cmegroup.com/trading/interest-rates/countdown-to-fomc.html."
+echo "${GV_LOG} * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/."
 
 
 # Resource:
