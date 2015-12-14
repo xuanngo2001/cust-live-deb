@@ -19,3 +19,4 @@ echo "${GV_LOG} * To test Adobe Flash Player: http://www.adobe.com/software/flas
 
 # Resource:
 #   https://wiki.debian.org/Iceweasel
+#   https://fpdownload.adobe.com/get/flashplayer/pdc/11.2.202.548/install_flash_player_11_linux.x86_64.tar.gz
