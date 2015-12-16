@@ -71,7 +71,7 @@ case "${SYSTEM}" in
     # No proxy settings
     sed -i '/proxy/d' ${SCRIPT_LIST}
     # No virtualbox
-    sed -i '/virtualbox/d' ${SCRIPT_LIST}
+    #sed -i '/virtualbox/d' ${SCRIPT_LIST}
     ;;
 				
   # Most of applications + proxy settings.  
