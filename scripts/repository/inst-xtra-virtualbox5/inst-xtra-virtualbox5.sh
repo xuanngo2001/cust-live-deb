@@ -18,7 +18,7 @@ apt-get update
 PKGS_LIST="dkms libc6-dev linux-headers-$(uname -r)"
 apt-get -y --force-yes install ${PKGS_LIST}
 
-Install VirtualBox
+# Install VirtualBox
 apt-get -y --force-yes install virtualbox-5.0
 
 
