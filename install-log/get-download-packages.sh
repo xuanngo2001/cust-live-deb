@@ -26,6 +26,6 @@ while IFS='' read -r LINE || [[ -n "${LINE}" ]]; do
 
   PACKAGE_NAME=$(echo "${LINE}" | cut -d ' ' -f 4)
   PACKAGE_VERSION=$(echo "${LINE}" | cut -d ' ' -f 6)
-  echo "${PACKAGE_NAME}_${PACKAGE_VERSION}"
+  echo "apt-get download ${PACKAGE_NAME}=${PACKAGE_VERSION}"
 
 done < <( echo "${GET_LINE}" )
