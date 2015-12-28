@@ -29,3 +29,5 @@ while IFS='' read -r LINE || [[ -n "${LINE}" ]]; do
   echo "apt-get download ${PACKAGE_NAME}=${PACKAGE_VERSION}"
 
 done < <( echo "${GET_LINE}" )
+
+echo "mv *.deb /var/cache/apt/archives/"
