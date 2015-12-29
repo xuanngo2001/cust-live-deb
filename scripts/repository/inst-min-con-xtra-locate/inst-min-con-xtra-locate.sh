@@ -7,9 +7,13 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Install locate
 apt-get -y --force-yes install locate
 
-# Log
-echo "${GV_LOG} * Install locate to generate an index of files and directories."
-echo "${GV_LOG} * You can updatedb and then locate files faster."
+# Add locate alias.
+cat bashrc-locate >> /root/.bashrc
 
+# Log
+echo "${GV_LOG} * Install locate to generate an index of files and directories. Searching for files will be much faster."
+echo "${GV_LOG} * Add locate alias."
+echo "${GV_LOG} * Run updatedb to update the database."
