@@ -31,7 +31,7 @@ function GET_FREE_SPACE_KB()
   local FREE_SPACE_MB=$(df -k --output=avail ${LOCATION} | tail -1 )
   echo ${FREE_SPACE_MB}
 }
-FREE_SPACE_KB=$(GET_FREE_SPACE_KB $(readlink -e .))
+FREE_SPACE_KB=$(GET_FREE_SPACE_KB $(readlink -ev .))
 PERSISTENCE_IMG_SIZE_KB=$((PERSISTENCE_IMG_SIZE*1024))
 if [ "${PERSISTENCE_IMG_SIZE_KB}" -gt "${FREE_SPACE_KB}" ]; then
   echo "Error: Not enough space. Wanted ${PERSISTENCE_IMG_SIZE} MB but only has $((${FREE_SPACE_KB}/1024)) MB. Aborted!" >&2; exit 1
@@ -58,6 +58,6 @@ rm -rf ${PERSISTENCE_IMG_MNT_DIR}
 
 # Done
 ####################################
-echo ">>>>>>>>>> $(readlink -e ${PERSISTENCE_IMG_FILE}) created. <<<<<<<<<<"
+echo ">>>>>>>>>> $(readlink -ev ${PERSISTENCE_IMG_FILE}) created. <<<<<<<<<<"
 
 

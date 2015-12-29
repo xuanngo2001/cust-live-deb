@@ -17,7 +17,7 @@ if [ ! -f "${INSTALL_LOG}" ]; then
   exit 1; 
 fi
 
-INSTALL_LOG=$(readlink -e "${INSTALL_LOG}")
+INSTALL_LOG=$(readlink -ev "${INSTALL_LOG}")
 
 # echo | get line starting with 'Get:' | Exclude localhost | Exclude '/DiffIndex ' | Exclude 'InRelease [' | Exclude 'Packages [' | Exclude 'Translation-en [' | Exclude 'Release.gpg ['
 GET_LINE=$(cat "${INSTALL_LOG}" | grep "^Get:" | grep -vF 'http://localhost/' | grep -vF '/DiffIndex ' | grep -vF 'InRelease [' | grep -vF 'Packages [' | grep -vF 'Translation-en [' | grep -vF 'Release.gpg [')

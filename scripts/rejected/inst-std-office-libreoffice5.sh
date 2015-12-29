@@ -13,7 +13,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 LO_GZ=${GV_BINARY_DIR}/LibreOffice_5.0.3_Linux_x86-64_deb.tar.gz
 LO_WORK_DIR=LibreOffice_work
 mkdir -p "${LO_WORK_DIR}"
-LO_WORK_DIR=$(readlink -e "${LO_WORK_DIR}")
+LO_WORK_DIR=$(readlink -ev "${LO_WORK_DIR}")
 tar -xvzf "${LO_GZ}" --strip-components=1 -C "${LO_WORK_DIR}"
 cd "${LO_WORK_DIR}/DEBS"
 dpkg -i *.deb

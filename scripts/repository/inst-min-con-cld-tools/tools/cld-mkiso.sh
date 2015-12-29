@@ -2,7 +2,7 @@
 # Description: Create an iso-hybrid.
 # Requirements:
 
-WORKING_DIR=$(readlink -e $1)
+WORKING_DIR=$(readlink -ev $1)
 
 # Error Handling
 ##################################################################

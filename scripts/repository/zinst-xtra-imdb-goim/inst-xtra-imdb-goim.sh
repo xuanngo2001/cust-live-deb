@@ -22,7 +22,7 @@ if [ -d ./go-workspace ]; then
 else
   echo "${GV_LOG} * Warning: To save bandwidth, pre-download goim: go get github.com/BurntSushi/goim ."
 fi
-ln -s $(readlink -e ./go-workspace) /root/go-workspace
+ln -s $(readlink -ev ./go-workspace) /root/go-workspace
 go get github.com/BurntSushi/goim
 yes | cp ./go-workspace/bin/goim /usr/local/bin
 
