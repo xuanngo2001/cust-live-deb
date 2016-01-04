@@ -16,7 +16,7 @@ set ylabel "Space used in kilobytes"
 set xtics rotate
 set xtics font ", 8"
 
-set title SYSTEM." - ".strftime("%Y-%m-%d", time(0))
+set title sprintf('Space used in %s - %s.png', SYSTEM, strftime("%Y-%m-%d", time(0)))
 set style data linespoints
 set grid
 
