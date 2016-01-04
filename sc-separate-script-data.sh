@@ -19,5 +19,6 @@ while IFS='' read -r SCRIPT_NAME || [[ -n "$SCRIPT_NAME" ]]; do
   grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^std;'> "${WORK_DIR}/std_${SCRIPT_NAME}.log"
   grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^home;'> "${WORK_DIR}/home_${SCRIPT_NAME}.log"
   grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^work;'> "${WORK_DIR}/work_${SCRIPT_NAME}.log"
+  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^all;'> "${WORK_DIR}/all_${SCRIPT_NAME}.log"
  
 done < <( cut -d ';' -f 2 "${SCRIPT_LOG_PARSABLE}" | sort | uniq | tr -d ' ' )
