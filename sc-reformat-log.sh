@@ -4,6 +4,7 @@ set -e
 #             Legacy format to new format
 
 SCRIPT_LOG=install-size-history.txt
+SCRIPT_LOG=$(readlink -ev "${SCRIPT_LOG}")
 
 # Use ; as separator.
   sed -i 's/.sh: /.sh; /'     "${SCRIPT_LOG}"
