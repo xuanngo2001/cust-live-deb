@@ -10,23 +10,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y --force-yes install jwm
 
-  apt-get -y --force-yes install dh-autoreconf
-  apt-get -y --force-yes install libx11-dev
-  apt-get -y --force-yes install checkinstall
-  
-  # Specific to JWM.
-  apt-get -y --force-yes install libxext-dev
-  apt-get -y --force-yes install libpng-dev
-  apt-get -y --force-yes install libxpm-dev
-  apt-get -y --force-yes install libxinerama-dev
-  apt-get -y --force-yes install libxft-dev
-  apt-get -y --force-yes install libxrender-dev
-  apt-get -y --force-yes install libfontconfig1-dev
-  apt-get -y --force-yes install zlib1g-dev
-  apt-get -y --force-yes install libx11-6
-  apt-get -y --force-yes install libfribidi-dev
-  apt-get -y --force-yes install libxmu-dev
-
 # Set JWM.
 JWMRC=jwmrc
 yes | cp ${JWMRC}.xml        /root/.${JWMRC}
