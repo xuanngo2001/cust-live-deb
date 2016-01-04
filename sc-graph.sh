@@ -23,7 +23,7 @@ do
   # Build plot commands.
   PLOT_CMD="plot"
 	  # Find file | Duplicate file name | Reformat title | Remove '.log' from title | Delete newline.
-	  FILE_LINE=$(find "${WORK_DIR}" -type f -name "${SYSTEM}_inst*.log" | eval "${GREP_EXCLUDE_CMD}")
+	  FILE_LINE=$(find "${WORK_DIR}" -type f -name "${SYSTEM}_inst*.log" | sort | eval "${GREP_EXCLUDE_CMD}")
 	  FILE_LINE=$(echo "${FILE_LINE}" | sed 's/\(.*\)/"\1" using 0:5 title "\1", /' | sed "s/title \".*\/${SYSTEM}_/title \"/" | sed 's/\.log", $/", /' | tr -d '\n' | sed 's/, $//')
 	  PLOT_CMD="${PLOT_CMD} ${FILE_LINE}"
 
