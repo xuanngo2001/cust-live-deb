@@ -11,7 +11,9 @@ SCRIPT_LOG=$(readlink -ev "${SCRIPT_LOG}")
   sed -i 's/: CLDS:/; CLDS:/' "${SCRIPT_LOG}"
   
 # Remove script path
-  sed -i 's/\/.*\///'     "${SCRIPT_LOG}"
+  sed -i 's/\/.*\///'         "${SCRIPT_LOG}"
+  sed -i 's/^\.inst/inst/'    "${SCRIPT_LOG}"
+  sed -i 's/^\.\/inst/inst/'  "${SCRIPT_LOG}"
 
 # Prefix 'na' when the system is not logged.
   sed -i 's/^inst/na; inst/'     "${SCRIPT_LOG}"
@@ -20,3 +22,5 @@ SCRIPT_LOG=$(readlink -ev "${SCRIPT_LOG}")
   sed -i 's/: inst/; inst/'     "${SCRIPT_LOG}"
   sed -i 's/: .inst/; inst/'     "${SCRIPT_LOG}"
 
+# SPECIAL cases
+  sed -i 's/work-apt-move: //'     "${SCRIPT_LOG}"
