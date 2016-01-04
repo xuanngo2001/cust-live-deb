@@ -15,11 +15,16 @@ WORK_DIR=$(readlink -ev "${WORK_DIR}")
 SYSTEMS=( na min std home work all )
 for SYSTEM in "${SYSTEMS[@]}"
 do
+  
+  # Create Exclude command.
+  EXCLUDE_LIST=sc-graph-exclude.list
+  GREP_EXCLUDE_CMD=$(cat "${EXCLUDE_LIST}" | tr -d ' ' | sed "s/\(.*\)/grep -vF \'\1'|/" | tr -d '\n' | sed 's/|$//')
 
   # Build plot commands.
   PLOT_CMD="plot"
 	  # Find file | Duplicate file name | Reformat title | Remove '.log' from title | Delete newline.
-	  FILE_LINE=$(find "${WORK_DIR}" -type f -name "${SYSTEM}_inst*.log" | sed 's/\(.*\)/"\1" using 0:5 title "\1", /' | sed "s/title \".*\/${SYSTEM}_/title \"/" | sed 's/\.log", $/", /' | tr -d '\n' | sed 's/, $//')
+	  FILE_LINE=$(find "${WORK_DIR}" -type f -name "${SYSTEM}_inst*.log" | eval "${GREP_EXCLUDE_CMD}")
+	  FILE_LINE=$(echo "${FILE_LINE}" | sed 's/\(.*\)/"\1" using 0:5 title "\1", /' | sed "s/title \".*\/${SYSTEM}_/title \"/" | sed 's/\.log", $/", /' | tr -d '\n' | sed 's/, $//')
 	  PLOT_CMD="${PLOT_CMD} ${FILE_LINE}"
 
 	GNUPLOT_PG=sc-graph-gnuplot.pg
