@@ -14,11 +14,12 @@ WORK_DIR=$(readlink -ev "${WORK_DIR}")
 
 while IFS='' read -r SCRIPT_NAME || [[ -n "$SCRIPT_NAME" ]]; do
   
-  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^na;'> "${WORK_DIR}/na_${SCRIPT_NAME}.log"
-  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^min;'> "${WORK_DIR}/min_${SCRIPT_NAME}.log"
-  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^std;'> "${WORK_DIR}/std_${SCRIPT_NAME}.log"
-  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^home;'> "${WORK_DIR}/home_${SCRIPT_NAME}.log"
-  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^work;'> "${WORK_DIR}/work_${SCRIPT_NAME}.log"
-  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^all;'> "${WORK_DIR}/all_${SCRIPT_NAME}.log"
+  # Note: '|| true' to continue if pattern not found.
+  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^na;'> "${WORK_DIR}/na_${SCRIPT_NAME}.log" || true
+  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^min;'> "${WORK_DIR}/min_${SCRIPT_NAME}.log" || true
+  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^std;'> "${WORK_DIR}/std_${SCRIPT_NAME}.log" || true
+  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^home;'> "${WORK_DIR}/home_${SCRIPT_NAME}.log" || true
+  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^work;'> "${WORK_DIR}/work_${SCRIPT_NAME}.log" || true
+  grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^all;'> "${WORK_DIR}/all_${SCRIPT_NAME}.log" || true
  
 done < <( cut -d ';' -f 2 "${SCRIPT_LOG_PARSABLE}" | sort | uniq | tr -d ' ' )
