@@ -23,3 +23,6 @@ while IFS='' read -r SCRIPT_NAME || [[ -n "$SCRIPT_NAME" ]]; do
   grep -F "${SCRIPT_NAME}" "${SCRIPT_LOG_PARSABLE}" | grep -i '^all;'> "${WORK_DIR}/all_${SCRIPT_NAME}.log" || true
  
 done < <( cut -d ';' -f 2 "${SCRIPT_LOG_PARSABLE}" | sort | uniq | tr -d ' ' )
+
+# Delete empty files.
+find "${WORK_DIR}" -type f -name '*.sh.log' -size  0 -print0 |xargs -0 rm
