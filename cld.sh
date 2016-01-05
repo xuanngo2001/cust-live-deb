@@ -35,6 +35,11 @@ CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 ./cld-backup-logs.sh "${CHROOT_DIR}/root/scripts/logs" .
 ./cld-mkiso.sh ${SYSTEM}
 
+# Update README.md
+  ./cld-update-readme.sh
+
+./cld-log-package-sizes.sh
+
 # Reference:
 # chroot usage: http://stackoverflow.com/a/8157973
     
