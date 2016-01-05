@@ -18,7 +18,7 @@ DEB_REPO_URL=$2
 	fi
 
 	if [ -z "${DEB_REPO_URL}" ]; then
-	  echo "Error: Please provide the debian repository URL."
+	  echo "Error: Please provide the debian repository URL. Aborted!"
     echo "${CMD_EXAMPLES}"
 	  exit 1;
 	fi
