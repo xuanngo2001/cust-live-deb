@@ -18,13 +18,16 @@ fi
 
 ### Main
 ####################
+CHROOT_DIR=./chroot
+mkdir -p "${CHROOT_DIR}"
+CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 
 # Create manuals.
   ./cld-create-manuals.sh
 
 
 # All below is a one-liner. Stop everything if any failure.
-  ./cld-build-live.sh ${DEB_REPO_URL}
+  ./cld-debootstrap.sh "${CHROOT_DIR}" "${DEB_REPO_URL}"
 
 CHROOT_DIR=./chroot
 mkdir -p "${CHROOT_DIR}"
