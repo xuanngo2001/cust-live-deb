@@ -7,11 +7,15 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Install galculator
+# Install speedcrunch
 apt-get -y --force-yes install speedcrunch
+
+# Insert speedcrunch in Accessories menu.
+sed -i "/Accessories\">/ r jwmrc-menus-acc-speedcrunch.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
 # Log
 echo "${GV_LOG} * Install calculator: speedcrunch."
+echo "${GV_LOG} * Insert speedcrunch in Accessories menu."
 
 
 # REJECTION: 
