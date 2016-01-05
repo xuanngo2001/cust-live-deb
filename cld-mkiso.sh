@@ -55,10 +55,6 @@ DATE_STRING="${YYYY_MM_DD}_${HH_MM_SS}"
 NEW_INSTALL_LOG_NAME="$(basename ${INSTALL_LOG})${SYSTEM}_${DATE_STRING}"
 yes | cp ${INSTALL_LOG} install-log/${NEW_INSTALL_LOG_NAME}
 
-# Update README.md
-##################################################################
-./cld-update-readme.sh
-
 
 
 # Copy install.log in ISOHYBRID

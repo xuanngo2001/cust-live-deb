@@ -10,7 +10,7 @@ PLACEHOLDER="# Customizations Performed"
 sed "/${PLACEHOLDER}/,/ISO/d" ${README}.bck > ${README}
 
 echo ${PLACEHOLDER} >> ${README}
-grep "CLDS:" chroot/root/scripts/install.ran | \
+grep "CLDS:" ./logs/install.ran | \
    sed 's/^CLDS: \*/CLDS:    */' |\
    sed 's/^CLDS://' |\
    sed -r 's/^>+ /  * /' >> ${README}
