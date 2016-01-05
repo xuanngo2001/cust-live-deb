@@ -19,6 +19,7 @@ echo "${GV_LOG} * Insert speedcrunch in Accessories menu."
 
 
 # REJECTION: 
+#   speedcrunch is the winner. It is small and doesn't seem to need "gnome base packages".
 #   Note: Gnome has 52528K overhead.
 #
 #   * Running inst-std-accessories-calc-calcoo.sh ...
