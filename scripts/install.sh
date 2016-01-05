@@ -4,22 +4,28 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 
 # Ensure *.sh are executable.
-chmod +x *.sh
-chmod +x ./repository/*.sh
+	chmod +x *.sh
+	chmod +x ./repository/*.sh
 
 
 # Load global variables and functions.
-. ./load-global-vars-funcs.sh
+	. ./load-global-vars-funcs.sh
 
-DATE_STRING=$(date +"%Y-%m-%d_%0k.%M.%S")
-INSTALL_LOG=/root/scripts/install.log
-INSTALL_LOG_SIZE=/root/scripts/install.size
+# Create log directory.
+	LOG_DIR=logs
+	mkdir -p "${LOG_DIR}"
+	LOG_DIR=$(readlink -ev "${LOG_DIR}")
+
+# Define variables. 
+	DATE_STRING=$(date +"%Y-%m-%d_%0k.%M.%S")
+	INSTALL_LOG="${LOG_DIR}/install.log"
+	INSTALL_LOG_SIZE="${LOG_DIR}/install.size"
 
 # Log default size.
-echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..." 2>&1 | tee -a ${INSTALL_LOG}
-echo "${GV_LOG} * Running on SHELL=$SHELL VER=$BASH_VERSION" 2>&1 | tee -a ${INSTALL_LOG}
+echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."         2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${SCRIPT_NAME}.log"
+echo "${GV_LOG} * Running on SHELL=$SHELL VER=$BASH_VERSION" 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${SCRIPT_NAME}.log"
 TOTAL_SIZE=$(GF_LOG_TOTAL_SIZE)
-echo "${TOTAL_SIZE}" 2>&1 | tee -a ${INSTALL_LOG}
+echo "${TOTAL_SIZE}" 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${SCRIPT_NAME}.log"
 echo "${SCRIPT_NAME}: ${DATE_STRING}: ${TOTAL_SIZE}" > ${INSTALL_LOG_SIZE}
 
 ###################### Main
@@ -30,10 +36,11 @@ for SCRIPT_PATH in $( cat scripts-ls.lst ); do
   cd "${PACKAGE_DIR}"   # Go to the directory where the script resides.
   
   chmod +x ${SCRIPT_PATH}
-  ${SCRIPT_PATH} 2>&1 | tee -a ${INSTALL_LOG}
+  EXE_SCRIPT_NAME=$(basename "${SCRIPT_PATH}")
+  ${SCRIPT_PATH} 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${EXE_SCRIPT_NAME}.log"
   # Log total size at the end of script.
   total_size_tmp=$(GF_LOG_TOTAL_SIZE)
-  echo "${total_size_tmp}" 2>&1 | tee -a ${INSTALL_LOG}
+  echo "${total_size_tmp}" 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${EXE_SCRIPT_NAME}.log"
   echo "${SCRIPT_PATH}: ${DATE_STRING}: ${total_size_tmp}" >> ${INSTALL_LOG_SIZE}
   
   cd "${INITIAL_DIR}" # Back to initial directory.
