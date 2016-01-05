@@ -8,7 +8,7 @@ IGNORE_ERROR=$(echo $2 | tr '[:upper:]' '[:lower:]')
 
 # Stop if there is error in install.log
 ##################################################################
-INSTALL_LOG=./chroot/root/scripts/install.log
+INSTALL_LOG=./logs/install.log
 if [ "${IGNORE_ERROR}" != "ignore" ];
 then
 	if grep "^E:" ${INSTALL_LOG} > /dev/null
@@ -23,7 +23,7 @@ fi
 ##################################################################
 if [ ! -z "${SYSTEM}" ]; then
   # Prefix install.size with system name.
-  sed -i "/^${SYSTEM}:/b; s/^/${SYSTEM}: /" ./chroot/root/scripts/install.size
+  sed -i "/^${SYSTEM}:/b; s/^/${SYSTEM}: /" ./logs/install.size
   
   # Add system in the output file.
   SYSTEM="-${SYSTEM}"
