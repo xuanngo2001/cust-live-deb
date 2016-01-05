@@ -8,7 +8,7 @@ DEB_REPO_URL=$2
 # Error Handling
   CMD_EXAMPLES=$(printf "%s\n%s\n%s\n" \
                         "  e.g. $0 <CHROOT_DIR> <DEB_REPO_URL>"\
-                        "  e.g. $0 my-chroot-dir http://ftp.debian.org/debian/"\
+                        "  e.g. $0 chroot http://ftp.debian.org/debian/"\
                         "  e.g. $0 my-chroot-dir http://localhost/aptly-repo/"\
                 )
 	if [ "$#" -ne 2 ]; then
