@@ -4,3 +4,9 @@
   * Run: gnome-disks.
   * Insert gnome-disk-utility menu in Administration.
   * Disk size = 3652508K. Space Used = 6276K.
+  * The following NEW packages will be installed:
+  ```bash
+  gnome-disk-utility libatasmart4 libcrack2 libpam-systemd libparted2
+  libpolkit-agent-1-0 libpolkit-gobject-1-0 libpwquality-common libpwquality1
+  libsecret-1-0 libsecret-common libudisks2-0 parted udisks2
+  ```

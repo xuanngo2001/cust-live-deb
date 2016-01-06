@@ -3,3 +3,7 @@
   * Install localepurge to purge documentation of all languages, except en, en_US, en_US.UTF-8.
   * Reconfigure localepurge: dpkg-reconfigure localepurge
   * Disk size = 1796200K. Space Used = 740K.
+  * The following NEW packages will be installed:
+  ```bash
+  localepurge ucf
+  ```

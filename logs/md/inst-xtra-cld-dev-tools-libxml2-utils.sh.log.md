@@ -2,3 +2,7 @@
   * After this operation, 152 kB of additional disk space will be used.
   * Install libxml2-utils to validate xml file.
   * Disk size = 4082372K. Space Used = 304K.
+  * The following NEW packages will be installed:
+  ```bash
+  libxml2-utils
+  ```

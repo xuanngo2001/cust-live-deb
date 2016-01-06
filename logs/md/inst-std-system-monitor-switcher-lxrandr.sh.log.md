@@ -4,3 +4,8 @@
   * Install Monitor Switcher: lxrandr.
   * Add lxrandr key binding.
   * Disk size = 3678496K. Space Used = 25984K.
+  * The following NEW packages will be installed:
+  ```bash
+  cpp cpp-4.9 libcloog-isl4 libisl10 libmpc3 libmpfr4 x11-xserver-utils
+  lxrandr
+  ```

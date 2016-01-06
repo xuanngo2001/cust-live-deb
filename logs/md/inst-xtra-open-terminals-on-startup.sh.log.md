@@ -7,3 +7,7 @@
   * Copy open-terminal.sh in /root/cld.
   * Add open-terminal.sh in /root/cld/jwmrc-startup.sh.
   * Disk size = 4089632K. Space Used = 2920K.
+  * The following NEW packages will be installed:
+  ```bash
+  libutempter0 xbitmaps xterm
+  ```

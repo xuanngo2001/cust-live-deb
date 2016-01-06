@@ -4,3 +4,7 @@
   * Add documentation: user manual.
   * Add documentation: developer manual.
   * Disk size = 2646980K. Space Used = 42540K.
+  * The following NEW packages will be installed:
+  ```bash
+  libyaml-0-2 pandoc pandoc-data
+  ```

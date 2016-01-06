@@ -4,3 +4,8 @@
   * Install required applications for cld-win-split.sh: wmctrl and x11-utils for xprop.
   * Add key bindings: Ctrl+Alt+Left, Right, Up, Down, 1, 2, 3, 4, 5, 6, 7, 8, 9.
   * Disk size = 2648060K. Space Used = 1080K.
+  * The following NEW packages will be installed:
+  ```bash
+  wmctrl
+  libxxf86dga1 x11-utils
+  ```

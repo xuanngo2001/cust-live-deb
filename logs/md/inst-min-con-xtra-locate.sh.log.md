@@ -4,3 +4,7 @@
   * Add locate alias.
   * Run updatedb to update the database.
   * Disk size = 2209972K. Space Used = 576K.
+  * The following NEW packages will be installed:
+  ```bash
+  locate
+  ```

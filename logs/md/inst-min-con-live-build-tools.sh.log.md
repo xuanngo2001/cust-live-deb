@@ -8,3 +8,9 @@
   * Install rsync to copy directories.
   * Install squashfs-tools to create new squashfs.
   * Disk size = 1901576K. Space Used = 3576K.
+  * The following NEW packages will be installed:
+  ```bash
+  isolinux
+  libburn4 libisoburn1 libisofs6 libjte1 xorriso
+  liblzo2-2 squashfs-tools
+  ```

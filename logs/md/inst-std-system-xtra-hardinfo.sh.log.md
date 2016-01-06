@@ -3,3 +3,7 @@
   * Install hardware info apps: hardinfo.
   * Insert System Information menu in Administration.
   * Disk size = 3714132K. Space Used = 924K.
+  * The following NEW packages will be installed:
+  ```bash
+  hardinfo
+  ```

@@ -3,3 +3,8 @@
   * After this operation, 234 kB of additional disk space will be used.
   * Install exfat-fuse so that you can read and write SD cards and USB keys.
   * Disk size = 1803088K. Space Used = 1192K.
+  * The following NEW packages will be installed:
+  ```bash
+  exfat-fuse fuse libfuse2
+  exfat-utils
+  ```

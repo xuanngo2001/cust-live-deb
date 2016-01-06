@@ -4,3 +4,8 @@
   * Install CPU firmware: amd64-microcode.
   * Install CPU firmware: intel-microcode.
   * Disk size = 1806592K. Space Used = 1344K.
+  * The following NEW packages will be installed:
+  ```bash
+  amd64-microcode
+  intel-microcode iucode-tool
+  ```

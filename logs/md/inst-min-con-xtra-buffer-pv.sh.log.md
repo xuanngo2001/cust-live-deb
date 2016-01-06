@@ -2,3 +2,7 @@
   * After this operation, 166 kB of additional disk space will be used.
   * Install pv.
   * Disk size = 1928344K. Space Used = 156K.
+  * The following NEW packages will be installed:
+  ```bash
+  pv
+  ```

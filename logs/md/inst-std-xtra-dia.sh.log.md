@@ -3,3 +3,7 @@
   * Install Dia to draw diagrams.
   * Insert Dia menu in Graphics.
   * Disk size = 3999940K. Space Used = 25560K.
+  * The following NEW packages will be installed:
+  ```bash
+  dia dia-common dia-libs
+  ```

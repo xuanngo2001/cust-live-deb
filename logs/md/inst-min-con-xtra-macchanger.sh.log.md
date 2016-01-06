@@ -6,3 +6,7 @@
   * Check whether it is working: macchanger -s eth0.
   * systemctl status macchanger@eth0.service
   * Disk size = 2210860K. Space Used = 888K.
+  * The following NEW packages will be installed:
+  ```bash
+  macchanger
+  ```

@@ -3,3 +3,7 @@
   * Install calculator: speedcrunch.
   * Insert speedcrunch in Accessories menu.
   * Disk size = 2718964K. Space Used = 3148K.
+  * The following NEW packages will be installed:
+  ```bash
+  speedcrunch
+  ```

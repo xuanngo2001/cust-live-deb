@@ -3,3 +3,7 @@
   * Install aptly version: 0.9.6~dev to create local debian repository.
   * Add xz-utils package because aptly snapshot merge needs it.
   * Disk size = 4082068K. Space Used = 21104K.
+  * The following NEW packages will be installed:
+  ```bash
+  aptly xz-utils
+  ```

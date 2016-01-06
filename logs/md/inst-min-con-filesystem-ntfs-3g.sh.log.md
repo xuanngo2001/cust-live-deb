@@ -2,3 +2,7 @@
   * After this operation, 1,632 kB of additional disk space will be used.
   * Install support for NTFS: ntfs-3g.
   * Disk size = 1805248K. Space Used = 2160K.
+  * The following NEW packages will be installed:
+  ```bash
+  ntfs-3g
+  ```
