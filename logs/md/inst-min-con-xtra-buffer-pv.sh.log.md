@@ -1,4 +1,4 @@
 * >>>>>>>>> Running inst-min-con-xtra-buffer-pv.sh ...
   * After this operation, 166 kB of additional disk space will be used.
   * Install pv.
-  * Disk size = 1928364K. Space Used = 152K.
+  * Disk size = 1928344K. Space Used = 156K.

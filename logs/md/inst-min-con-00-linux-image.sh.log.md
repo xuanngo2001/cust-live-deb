@@ -6,4 +6,4 @@
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
   * Install Linux image.
   * Set APT to skip installing recommended packages.
-  * Disk size = 1772476K. Space Used = 400260K.
+  * Disk size = 1772480K. Space Used = 400260K.

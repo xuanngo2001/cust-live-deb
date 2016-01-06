@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-xtra-mariadb-server.sh ...
   * After this operation, 131 MB of additional disk space will be used.
-  * Disk size = 2463496K. Space Used = 252620K.
+  * Disk size = 2463480K. Space Used = 252620K.

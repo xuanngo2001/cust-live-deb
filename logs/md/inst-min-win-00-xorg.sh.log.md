@@ -4,4 +4,4 @@
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
-  * Disk size = 2591884K. Space Used = 86564K.
+  * Disk size = 2591876K. Space Used = 86572K.

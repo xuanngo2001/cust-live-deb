@@ -4,4 +4,4 @@
   * Install required packages for blender.
   * Install blender3d.
   * Insert Blender 3D menu in Graphics.
-  * Disk size = 3974412K. Space Used = 228816K.
+  * Disk size = 3974380K. Space Used = 228820K.

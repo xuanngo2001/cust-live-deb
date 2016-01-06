@@ -6,5 +6,4 @@
   * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
   * Install debian-zfs: version: 0.6.5.2-2, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
   * Delete zfsonlinux_6_all.deb[1992K].
-  * Change default behavior: Don't allow the last 1.6% of space in the pool instead of 3.2%.
-  * Disk size = 4869084K. Space Used = 139260K.
+  * Disk size = 4869012K. Space Used = 139248K.

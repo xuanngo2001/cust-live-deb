@@ -5,4 +5,4 @@
   * Set devmon to auto start on startup.
   * Need ntfs-3g driver to be able to read and write ntfs partition.
   * Need exfat-fuse to be able to read and write exfat partition.
-  * Disk size = 1928212K. Space Used = 5628K.
+  * Disk size = 1928188K. Space Used = 5616K.

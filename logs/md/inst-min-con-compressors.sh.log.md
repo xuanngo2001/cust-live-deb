@@ -9,4 +9,4 @@
   * Install de/compressor: unzip.
   * Install de/compressor: zip.
   * Install de/compressor: p7zip.
-  * Disk size = 1800652K. Space Used = 4020K.
+  * Disk size = 1800644K. Space Used = 4020K.

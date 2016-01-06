@@ -11,4 +11,4 @@
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-dd-usb.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-dependency-graph.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-win-split.sh to /usr/local/bin/.
-  * Disk size = 1796632K. Space Used = 52K.
+  * Disk size = 1796624K. Space Used = 52K.

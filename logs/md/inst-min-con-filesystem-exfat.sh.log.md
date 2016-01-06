@@ -2,4 +2,4 @@
   * After this operation, 550 kB of additional disk space will be used.
   * After this operation, 234 kB of additional disk space will be used.
   * Install exfat-fuse so that you can read and write SD cards and USB keys.
-  * Disk size = 1803100K. Space Used = 1196K.
+  * Disk size = 1803088K. Space Used = 1192K.

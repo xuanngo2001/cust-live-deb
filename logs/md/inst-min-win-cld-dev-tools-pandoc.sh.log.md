@@ -3,4 +3,4 @@
   * Install pandoc to generate user manual.
   * Add documentation: user manual.
   * Add documentation: developer manual.
-  * Disk size = 2646984K. Space Used = 42540K.
+  * Disk size = 2646980K. Space Used = 42540K.

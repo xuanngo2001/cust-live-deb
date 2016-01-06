@@ -3,4 +3,4 @@
   * After this operation, 779 kB of additional disk space will be used.
   * Install Monitor Switcher: lxrandr.
   * Add lxrandr key binding.
-  * Disk size = 3678528K. Space Used = 25984K.
+  * Disk size = 3678496K. Space Used = 25984K.

@@ -1,4 +1,4 @@
 * >>>>>>>>> Running inst-min-con-xtra-buffer.sh ...
   * After this operation, 71.7 kB of additional disk space will be used.
   * Install buffer.
-  * Disk size = 1928440K. Space Used = 76K.
+  * Disk size = 1928424K. Space Used = 80K.
