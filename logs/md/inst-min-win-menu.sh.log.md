@@ -1,0 +1,4 @@
+* >>>>>>>>> Running inst-min-win-menu.sh ...
+  * After this operation, 1,829 kB of additional disk space will be used.
+  * Install menu, an easy way to get installed programs in the menu automatically.
+  * Disk size = 2649360K. Space Used = 1288K.
