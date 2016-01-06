@@ -47,6 +47,3 @@ for SCRIPT_PATH in $( cat scripts-ls.lst ); do
   cd "${INITIAL_DIR}" # Back to initial directory.
 done
 
-# Retrieved the log.
-sed "s/After this operation, /${GV_LOG} * After this operation, /" ${INSTALL_LOG} |\
-  grep "${GV_LOG}" > "${INSTALL_LOG%.*}.ran"
