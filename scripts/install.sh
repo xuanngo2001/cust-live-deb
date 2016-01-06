@@ -12,7 +12,8 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 	. ./load-global-vars-funcs.sh
 
 # Create log directory.
-	LOG_DIR=logs
+	LOG_DIR=./logs
+	rm -rf "${LOG_DIR}"
 	mkdir -p "${LOG_DIR}"
 	LOG_DIR=$(readlink -ev "${LOG_DIR}")
 
