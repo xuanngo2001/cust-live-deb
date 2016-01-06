@@ -6,16 +6,20 @@ SYSTEM=$(echo $1 | tr '[:upper:]' '[:lower:]')
 DEB_REPO_URL=$(echo $2 | tr '[:upper:]' '[:lower:]')
 
 # Error handling
-if [ "$#" -ne 2 ]; then
-  echo "ERROR: Illegal number of parameters."
-  echo "   e.g. $0 SYSTEM DEB_REPO_URL"
-  echo "   e.g. $0 std http://ftp.debian.org/debian/"
-  echo "   e.g. $0 min http://localhost/aptly-repo/"
-  exit 1;
-fi
+  ARGS_REQUIRED=2
+  CMD_EXAMPLES=$(printf " %s\n %s\n %s\n" \
+                        " e.g. $0 <SYSTEM> <DEB_REPO_URL>"\
+                        " e.g. $0 std http://ftp.debian.org/debian/"\
+                        " e.g. $0 min http://localhost/aptly-repo/"\
+                )
+  if [ "$#" -ne "${ARGS_REQUIRED}" ]; then
+    echo "Error: ${ARGS_REQUIRED} arguments are required. Aborted!"
+    echo "${CMD_EXAMPLES}"
+    exit 1;
+  fi
 
 # Update manuals.
-./cld-create-manuals.sh
+  ./cld-create-manuals.sh
 
 # Build ISO
 	CHROOT_DIR=./chroot
