@@ -1,16 +1,8 @@
 * >>>>>>>>> Running install.sh ...
   * Running on SHELL=/bin/bash VER=4.3.30(1)-release
   * Disk size = 1372204K. Space Used = 1372204K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-00-apt-custom-repository.sh ...
   * Disk size = 1372220K. Space Used = 16K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-00-linux-image.sh ...
   * After this operation, 153 kB disk space will be freed.
   * After this operation, 3111 kB of additional disk space will be used.
@@ -41,10 +33,6 @@
   * Set APT to use local repository first.
   * Set APT to skip installing recommended packages.
   * Disk size = 1772492K. Space Used = 12K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-01-debconf-utils.sh ...
   * After this operation, 157 kB of additional disk space will be used.
   * Install debconf-utils to use debconf-set-selections.
@@ -72,40 +60,20 @@
   ```
 * >>>>>>>>> Running inst-min-con-03-proxy.sh ...
   * Disk size = 1796208K. Space Used = 12K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-03-startup-script.sh ...
   * Copy startup.sh to /etc/init.d/.
   * Make it executable.
   * Register it in the boot sequence.
   * Disk size = 1796208K. Space Used = 8K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-04-block-services-start-postinstall.sh ...
   * Block services from starting after they are being installed.
   * Disk size = 1796216K. Space Used = 8K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-auto-log-root.sh ...
   * Disk size = 1796228K. Space Used = 12K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-bashrc.sh ...
   * Set common settings for /root/.bashrc.
   * Set dircolors to use dircolors-gnu-ls-colors.txt to make ls more beautiful.
   * Disk size = 1796244K. Space Used = 16K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-cld-dev-tools-debootstrap.sh ...
   * After this operation, 234 kB of additional disk space will be used.
   * Install debootstrap allows the creation of a Debian base system in a directory.
@@ -128,10 +96,6 @@
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-dependency-graph.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-win-split.sh to /usr/local/bin/.
   * Disk size = 1796624K. Space Used = 52K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-compressors.sh ...
   * After this operation, 122 kB of additional disk space will be used.
   * After this operation, 812 kB of additional disk space will be used.
@@ -158,10 +122,6 @@
   * Delete deb-multimedia-keyring_2015.6.1_all.deb[12K].
   * apt-get update
   * Disk size = 1801896K. Space Used = 1252K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-filesystem-exfat.sh ...
   * After this operation, 550 kB of additional disk space will be used.
   * After this operation, 234 kB of additional disk space will be used.
@@ -361,10 +321,6 @@
 * >>>>>>>>> Running inst-min-con-xtra-java-jre.sh ...
   * Install JAVA JRE: default-jre.
   * Disk size = 2209396K. Space Used = 4K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-xtra-locate.sh ...
   * After this operation, 324 kB of additional disk space will be used.
   * Install locate to generate an index of files and directories. Searching for files will be much faster.
@@ -399,10 +355,6 @@
 * >>>>>>>>> Running inst-min-con-xtra-mtran.sh ...
   * Copied /root/scripts/repository/inst-min-con-xtra-mtran/mtran.sh to /usr/local/bin/.
   * Disk size = 2463488K. Space Used = 8K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-con-xtra-php5.sh ...
   * After this operation, 32.0 MB of additional disk space will be used.
   * Install php5.
@@ -417,10 +369,6 @@
 * >>>>>>>>> Running inst-min-con-xtra-timezone.sh ...
   * Set time zone to EST (America/Montreal) in /etc/timezone.
   * Disk size = 2505304K. Space Used = 4K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-win-00-xorg.sh ...
   * After this operation, 67.7 MB of additional disk space will be used.
   * Set keyboard to use US international.
@@ -483,10 +431,6 @@
   * Add ALSA key binding.
   * Add script to auto-detect ALSA controller on JWM startup.
   * Disk size = 2648068K. Space Used = 8K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-win-menu.sh ...
   * After this operation, 1,829 kB of additional disk space will be used.
   * Install menu, an easy way to get installed programs in the menu automatically.
@@ -508,10 +452,6 @@
 * >>>>>>>>> Running inst-min-xtra-encoding-libtext-iconv-perl.sh ...
   * Install libtext-iconv-perl so that you can use iconv to convert to other encoding.
   * Disk size = 2649824K. Space Used = 4K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-min-xtra-fonts-asian.sh ...
   * After this operation, 48.2 MB of additional disk space will be used.
   * Install fonts-hanazono to display Asian characters correctly.
@@ -705,17 +645,9 @@
 * >>>>>>>>> Running inst-std-office-xtra-projectlibre.sh ...
   * Install ProjectLibre.
   * Disk size = 3644904K. Space Used = 18452K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-std-system-alsamixer.sh ...
   * Insert Alsamixer menu in Administration.
   * Disk size = 3644908K. Space Used = 4K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-std-system-conky.sh ...
   * After this operation, 967 kB of additional disk space will be used.
   * Install System Monitor: conky.
@@ -742,10 +674,6 @@
 * >>>>>>>>> Running inst-std-system-keyboard.sh ...
   * Insert keyboard menu in Administration.
   * Disk size = 3652512K. Space Used = 4K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-std-system-monitor-switcher-lxrandr.sh ...
   * After this operation, 19.9 MB of additional disk space will be used.
   * After this operation, 779 kB of additional disk space will be used.
@@ -775,10 +703,6 @@
 * >>>>>>>>> Running inst-std-system-time-zone.sh ...
   * Insert Time Zone menu in Administration.
   * Disk size = 3713208K. Space Used = 4K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-std-system-xtra-hardinfo.sh ...
   * After this operation, 467 kB of additional disk space will be used.
   * Install hardware info apps: hardinfo.
@@ -835,10 +759,6 @@
   * See https://www.linode.com/docs/websites/cms/drush-drupal.
   * Further setting is needed. See https://wiki.debian.org/drush.
   * Disk size = 4020076K. Space Used = 20136K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-std-xtra-opw-php5-gd.sh ...
   * After this operation, 118 kB of additional disk space will be used.
   * Install php5-gd to run Drupal.
@@ -862,10 +782,6 @@
   * Install FurnitureLibraryEditor-1.17.jar.
   * Insert SweetHome3D menus in Graphics.
   * Disk size = 4060964K. Space Used = 36120K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-xtra-cld-dev-tools-aptly.sh ...
   * After this operation, 16.9 MB of additional disk space will be used.
   * Install aptly version: 0.9.6~dev to create local debian repository.
@@ -902,10 +818,6 @@
 * >>>>>>>>> Running inst-xtra-fuse.sh ...
   * Install fuse(fusermount) to run TMSU.
   * Disk size = 4086712K. Space Used = 4K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-xtra-open-terminals-on-startup.sh ...
   * After this operation, 2,064 kB of additional disk space will be used.
   * Install x11-xserver-utils for xrandr.
@@ -990,10 +902,6 @@
 * >>>>>>>>> Running inst-xtra-xmpv.sh ...
   * Install xmpv.
   * Disk size = 4729764K. Space Used = 48K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-xtra-zfs.sh ...
   * After this operation, 15.8 MB of additional disk space will be used.
   * After this operation, 78.0 MB of additional disk space will be used.
@@ -1014,17 +922,9 @@
 * >>>>>>>>> Running inst-zclean-00-remove-block-services.sh ...
   * Remove block services from starting after they are being installed.
   * Disk size = 4869012K. Space Used = 0K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-zclean-00-zerosizing-docs.sh ...
   * Zero size all documents in /usr/share/.
   * Disk size = 4764216K. Space Used = -104796K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
 * >>>>>>>>> Running inst-zclean-99-end-cleanup.sh ...
   * Clean apt-get cache.
   * rm -rf /tmp/*.
@@ -1032,7 +932,3 @@
   * Add Debian main repositories in sources.list.
   * Delete local Debian repository from sources.list.
   * Disk size = 3963556K. Space Used = -800660K.
-  * The following NEW packages will be installed:
-  ```bash
-
-  ```
