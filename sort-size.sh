@@ -15,7 +15,7 @@ ACTION=$(echo "${ACTION}" | tr '[:upper:]' '[:lower:]')  # Lowercase to avoid ca
 case "${ACTION}" in
 
   package)
-    sort -u -t ';' -k5,5n -k2,2 "${SCRIPT_LOG_PARSABLE}"
+    cut -d ';' -f 2,5 "${SCRIPT_LOG_PARSABLE}" | sort -u -t ';' -k2,2n | grep -v 'install\.sh'
     ;;
   
   *)
