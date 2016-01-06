@@ -29,7 +29,7 @@ DEB_REPO_URL=$(echo $2 | tr '[:upper:]' '[:lower:]')
 	./cld-debootstrap.sh "${CHROOT_DIR}" "${DEB_REPO_URL}"
 	./cld-chroot.sh "${SYSTEM}" "${CHROOT_DIR}"  "${DEB_REPO_URL}"
 	./cld-backup-logs.sh "${CHROOT_DIR}/root/scripts/logs" "${PWD}"
-	./cld-mkiso.sh "${SYSTEM}"
+	./cld-mkiso.sh "${SYSTEM}" "${CHROOT_DIR}"
 
 # Logs.
   LOG_DIR=./logs/

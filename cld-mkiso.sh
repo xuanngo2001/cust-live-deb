@@ -3,8 +3,30 @@ set -e
 
 # Description: Create an iso-hybrid using chroot/.
 # Requirements:
+
 SYSTEM=$1
-IGNORE_ERROR=$(echo $2 | tr '[:upper:]' '[:lower:]')
+CHROOT_DIR=$2
+IGNORE_ERROR=$3
+
+# Error Handling
+  CMD_EXAMPLES=$(printf "%s\n%s\n" \
+                        "  e.g. $0 <SYSTEM> <CHROOT_DIR> <IGNORE_ERROR_IS_OPTIONAL>"\
+                        "  e.g. $0 min /path/to/chroot/  ignore"\
+                )
+  if [ -z "${SYSTEM}" ]; then
+    echo "Error: Please provide the system name. Aborted!"
+    echo "${CMD_EXAMPLES}"
+    exit 1;
+  fi
+  
+  if [ ! -d "${CHROOT_DIR}" ]; then
+    echo "Error: Chroot directory: ${CHROOT_DIR}: no such directory. Aborted!"
+    echo "${CMD_EXAMPLES}"
+    exit 1;
+  fi
+  CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
+
+IGNORE_ERROR=$(echo "${IGNORE_ERROR}" | tr '[:upper:]' '[:lower:]')
 
 # Stop if there is error in install.log
 ##################################################################
