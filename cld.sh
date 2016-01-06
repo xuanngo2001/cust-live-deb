@@ -22,7 +22,7 @@ DEB_REPO_URL=$(echo $2 | tr '[:upper:]' '[:lower:]')
   ./cld-create-manuals.sh
 
 # Build ISO
-	CHROOT_DIR=./chroot
+	CHROOT_DIR=/media/imdb/chroot/
 	mkdir -p "${CHROOT_DIR}"
 	CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 	
