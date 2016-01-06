@@ -15,7 +15,7 @@ ACTION=$(echo "${ACTION}" | tr '[:upper:]' '[:lower:]')  # Lowercase to avoid ca
 case "${ACTION}" in
 
   package)
-    sort -t ';' -k5,5n "${SCRIPT_LOG_PARSABLE}"
+    sort -u -t ';' -k5,5n -k2,2 "${SCRIPT_LOG_PARSABLE}"
     ;;
   
   *)
