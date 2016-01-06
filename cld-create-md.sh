@@ -32,4 +32,4 @@ while IFS='' read -r SCRIPT_LOG || [[ -n "$SCRIPT_LOG" ]]; do
   # Create md files.
   echo "${MD_CONTENT}" > "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
  
-done < <( find "${LOG_DIR}" -type f -name "*.sh.log" )
+done < <( find "${LOG_DIR}" -type f -name "*.sh.log" | sort )
