@@ -32,8 +32,19 @@ while IFS='' read -r SCRIPT_LOG || [[ -n "$SCRIPT_LOG" ]]; do
   MD_CONTENT=$(echo "${MD_CONTENT}" | sed "s/${GV_LOG}>>>>>>>>>/* >>>>>>>>>/") # Turn script name as parent list.
   MD_CONTENT=$(echo "${MD_CONTENT}" | sed "s/${GV_LOG} \*/  */") # Turn list into sublist.
 
-  # Create md files.
+  # Create md file.
   echo "${MD_CONTENT}" > "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
+  
+  # Append packages installed if exist.
+  NEW_PACKAGES_MARKER="The following NEW packages will be installed:"
+  PKG_INSTALLED=$(echo "${LOG_CONTENT}" | sed -n "/${NEW_PACKAGES_MARKER}/,/^[^ *]/p" | grep '^  ') # Get package list.
+  if [ $(echo "${PKG_INSTALLED}"| tr -d ' '| wc -w) -gt 0 ]; then
+    echo "  * ${NEW_PACKAGES_MARKER}" >> "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
+    echo '  ```bash'                  >> "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
+    echo "${PKG_INSTALLED}"           >> "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
+    echo '  ```'                      >> "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
+  fi
+
   
   # Append to master md file.
   cat "${MD_DIR}/$(basename ${SCRIPT_LOG}).md" >> "${MASTER_MD}"
