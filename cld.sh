@@ -25,7 +25,7 @@ fi
 	./cld-debootstrap.sh "${CHROOT_DIR}" "${DEB_REPO_URL}"
 	./cld-chroot.sh "${SYSTEM}" "${CHROOT_DIR}"  "${DEB_REPO_URL}"
 	./cld-backup-logs.sh "${CHROOT_DIR}/root/scripts/logs" .
-	./cld-mkiso.sh ${SYSTEM}
+	./cld-mkiso.sh "${SYSTEM}"
 
 # Logs.
 	./cld-update-readme.sh
