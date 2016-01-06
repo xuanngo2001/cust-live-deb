@@ -32,7 +32,7 @@ DEB_REPO_URL=$(echo $2 | tr '[:upper:]' '[:lower:]')
 	./cld-mkiso.sh "${SYSTEM}"
 
 # Logs.
-	./cld-update-readme.sh
+	./cld-create-md.sh
 	./cld-log-package-sizes.sh
 
 
