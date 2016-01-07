@@ -7,7 +7,7 @@
   * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
   * VirtualBox guest additions installed: version: 5.0.12.
   * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-  * Disk size = 4172864K. Space Used = 82960K.
+  * Disk size = 4172752K. Space Used = 82944K.
   * The following NEW packages will be installed:
   ```bash
   cpp-4.8 dkms gcc gcc-4.8 gcc-4.9 libasan0 libasan1 libc-dev-bin libc6-dev
