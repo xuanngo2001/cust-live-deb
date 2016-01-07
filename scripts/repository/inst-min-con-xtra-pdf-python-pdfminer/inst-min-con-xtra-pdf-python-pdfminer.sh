@@ -14,7 +14,7 @@ apt-get -y --force-yes install python-pdfminer
 
 
 # Log
-echo "${GV_LOG} * Install python-pdfminer."
+echo "${GV_LOG} * Install python-pdfminer to extract text from pdf files."
 
 # * >>>>>>>>> Running inst-min-con-xtra-pdf-poppler-utils.sh ...
 #   * After this operation, 4,134 kB of additional disk space will be used.

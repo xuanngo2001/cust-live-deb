@@ -14,7 +14,7 @@ apt-get -y --force-yes install poppler-utils
 
 
 # Log
-echo "${GV_LOG} * Install poppler-utils."
+echo "${GV_LOG} * Install poppler-utils to extract text from pdf files."
 
 # * >>>>>>>>> Running inst-min-con-xtra-pdf-poppler-utils.sh ...
 #   * After this operation, 4,134 kB of additional disk space will be used.
