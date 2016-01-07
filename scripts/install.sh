@@ -30,20 +30,19 @@ echo "${TOTAL_SIZE}" 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${SCRIPT_NAME}.l
 echo "${SCRIPT_NAME}; ${DATE_STRING}; ${TOTAL_SIZE}" > ${INSTALL_LOG_SIZE}
 
 ###################### Main
-INITIAL_DIR=$(pwd)
 # Run scripts.
 for SCRIPT_PATH in $( cat scripts-ls.lst ); do
-  PACKAGE_DIR=$(dirname "${SCRIPT_PATH}")
-  cd "${PACKAGE_DIR}"   # Go to the directory where the script resides.
-  
-  chmod +x ${SCRIPT_PATH}
-  EXE_SCRIPT_NAME=$(basename "${SCRIPT_PATH}")
-  ${SCRIPT_PATH} 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${EXE_SCRIPT_NAME}.log"
-  # Log total size at the end of script.
-  total_size_tmp=$(GF_LOG_TOTAL_SIZE)
-  echo "${total_size_tmp}" 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${EXE_SCRIPT_NAME}.log"
-  echo "${SCRIPT_PATH}; ${DATE_STRING}; ${total_size_tmp}" >> ${INSTALL_LOG_SIZE}
-  
-  cd "${INITIAL_DIR}" # Back to initial directory.
+  ( # Execute the following from another path.
+	  PACKAGE_DIR=$(dirname "${SCRIPT_PATH}")
+	  cd "${PACKAGE_DIR}"   # Go to the directory where the script resides.
+	  
+	  chmod +x ${SCRIPT_PATH}
+	  EXE_SCRIPT_NAME=$(basename "${SCRIPT_PATH}")
+	  ${SCRIPT_PATH} 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${EXE_SCRIPT_NAME}.log"
+	  # Log total size at the end of script.
+	  total_size_tmp=$(GF_LOG_TOTAL_SIZE)
+	  echo "${total_size_tmp}" 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${EXE_SCRIPT_NAME}.log"
+	  echo "${SCRIPT_PATH}; ${DATE_STRING}; ${total_size_tmp}" >> ${INSTALL_LOG_SIZE}
+  )  
 done
 
