@@ -17,14 +17,20 @@ while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
   DIR_PREFIX=$(echo "${LINE}" | cut -f1)
   PKG_NAME=$(echo "${LINE}" | cut -f2)
 
-  # Create script repository directory.
   PKG_DIR="${DIR_PREFIX}-${PKG_NAME}"
-  mkdir "${PKG_DIR}"
   
-  # Create script.
-  cat create-script-repo-template.sh > "${PKG_DIR}/${PKG_DIR}.sh"
-  sed -i "s/PKG_NAME/${PKG_NAME}" "${PKG_DIR}/${PKG_DIR}.sh"
+  if [ -d "${PKG_DIR}" ]; then
+    echo "$0: Warning: ${PKG_DIR} already existed. Processing stop!"
+  else
   
-                                    # Ignore comment line | Remove empty line
+	  # Create script repository directory.
+	  mkdir "${PKG_DIR}"
+	  
+	  # Create script.
+	  cat create-script-repo-template.sh > "${PKG_DIR}/${PKG_DIR}.sh"
+	  sed -i "s/PKG_NAME/${PKG_NAME}" "${PKG_DIR}/${PKG_DIR}.sh"
+  
+  fi    
+                                # Ignore comment line | Remove empty line
 done < <( cat "${SCRIPT_REPO_LIST}" | grep -v '^#' | awk NF )
 
