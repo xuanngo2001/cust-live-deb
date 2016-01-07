@@ -1,7 +1,5 @@
 #!/bin/bash
-# Description: Extract chroot/root/scripts/install.log.ran and put logged info in README.md
-#   Script name will be the root level list.
-#   Logged line in script will be nested to the root level ist.
+# Description: Create md files from *.sh.log within ./logs/.
 
 LOG_DIR=$1
 
