@@ -34,7 +34,7 @@ DEB_REPO_URL=$(echo $2 | tr '[:upper:]' '[:lower:]')
 # Logs.
   LOG_DIR=./logs/
 	./cld-create-md.sh "${LOG_DIR}"
-	./cld-log-package-sizes.sh
+	./cld-log-package-sizes.sh "${LOG_DIR}"
 
 
     
