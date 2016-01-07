@@ -18,8 +18,6 @@ CHROOT_DIR=$1
   
 
 # Unmount everything.  
-UMOUNT_CMD="umount -lf ${CHROOT_DIR}/sys ${CHROOT_DIR}/dev/pts ${CHROOT_DIR}/proc"
-echo "${UMOUNT_CMD}"
-/bin/bash -c "${UMOUNT_CMD}" || true
+umount -lfv ${CHROOT_DIR}/sys ${CHROOT_DIR}/dev/pts ${CHROOT_DIR}/proc
 
 
