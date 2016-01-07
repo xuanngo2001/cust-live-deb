@@ -24,11 +24,6 @@ It comes in 2 flavors:
 1. `cust-live-deb-64-<SYSTEM>_YYYY-MM-DD_HH.MM.SS.iso` will be created.
 
 
-# Analyze package sizes
-```
-sort install-size-history.txt | uniq | grep <script-name>
-```
-
 # Packages
 * LinuxMint: http://paste.debian.net/182062/
 
