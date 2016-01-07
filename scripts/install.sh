@@ -46,3 +46,5 @@ for SCRIPT_PATH in $( cat scripts-ls.lst ); do
   )  
 done
 
+# Log all packages installed.
+dpkg -l > "${LOG_DIR}/dpkg.log"
