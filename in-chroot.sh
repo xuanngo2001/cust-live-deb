@@ -17,7 +17,7 @@ CHROOT_DIR=$1
   CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 
 # Copy all scripts to live system.
-./update-scripts.sh
+./update-scripts.sh "${CHROOT_DIR}"
 
 # Mount & load bashrc.
 MOUNT_CMD="mount none -t proc /proc; mount none -t sysfs /sys; mount none -t devpts /dev/pts"
