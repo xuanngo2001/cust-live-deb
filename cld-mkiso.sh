@@ -9,9 +9,10 @@ CHROOT_DIR=$2
 IGNORE_ERROR=$3
 
 # Error Handling
-  CMD_EXAMPLES=$(printf "%s\n%s\n" \
+  CMD_EXAMPLES=$(printf "%s\n%s\n%s\n" \
                         "  e.g. $0 <SYSTEM> <CHROOT_DIR> <IGNORE_ERROR_IS_OPTIONAL>"\
-                        "  e.g. $0 min /path/to/chroot/  ignore"\
+                        "  e.g. $0 std /path/to/chroot/"\
+                        "  e.g. $0 min /path/to/chroot/ ignore"\
                 )
   if [ -z "${SYSTEM}" ]; then
     echo "Error: Please provide the system name. Aborted!"
@@ -53,8 +54,8 @@ fi
 
 # Copy vmlinuz & initrd in binary/live/.
 ##################################################################
-yes | cp ./chroot/boot/vmlinuz-* ./binary/live/vmlinuz
-yes | cp ./chroot/boot/initrd.img-* ./binary/live/initrd
+yes | cp ${CHROOT_DIR}/boot/vmlinuz-* ./binary/live/vmlinuz
+yes | cp ${CHROOT_DIR}/boot/initrd.img-* ./binary/live/initrd
 #yes | cp /lib/live/mount/medium/live/initrd ./binary/live/initrd
 # Check if vmlinuz & initrd exist in binary/live/.
 if [ ! -e ./binary/live/initrd ]; then
@@ -87,10 +88,10 @@ yes | cp ${INSTALL_LOG} binary/
 # Create squashfs.
 ##################################################################
 # Delete chroot/root/scripts/.
-rm -rf ./chroot/root/scripts
-rm -f binary/live/filesystem.squashfs
+rm -rf ${CHROOT_DIR}/root/scripts
+rm -f ./binary/live/filesystem.squashfs
 mkdir -p binary/live/
-mksquashfs chroot binary/live/filesystem.squashfs -comp xz
+mksquashfs "${CHROOT_DIR}" ./binary/live/filesystem.squashfs -comp xz
 # Note: Don't exclude /boot/. initrd.img & vmlinuz are needed for update-initramfs
 
 
@@ -108,7 +109,7 @@ xorriso -as mkisofs -r -J -joliet-long -l \
 				-c isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
 				-boot-info-table \
 				-o ${ISO_FILENAME} \
-				binary
+				./binary
 
 
 
@@ -116,8 +117,8 @@ xorriso -as mkisofs -r -J -joliet-long -l \
 ##################################################################
 SIZE_LOG=sizes.log
 echo "${ISO_FILENAME}" >> ${SIZE_LOG}
-du -h -c binary | sed 's/^/   /' >> ${SIZE_LOG}
-du -h -c -d 1 chroot | sed 's/^/   /' >> ${SIZE_LOG}
+du -h -c ./binary | sed 's/^/   /' >> ${SIZE_LOG}
+du -h -c -d 1 "${CHROOT_DIR}" | sed 's/^/   /' >> ${SIZE_LOG}
 echo "" >> ${SIZE_LOG}
 
 #TODO:
