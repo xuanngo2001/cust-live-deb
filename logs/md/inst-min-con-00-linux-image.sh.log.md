@@ -6,7 +6,7 @@
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
   * Install Linux image.
   * Set APT to skip installing recommended packages.
-  * Disk size = 1772444K. Space Used = 400236K.
+  * Disk size = 1772440K. Space Used = 400236K.
   * The following NEW packages will be installed:
   ```bash
   dbus dialog libcap-ng0 libdbus-1-3 libexpat1

@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-pdf-poppler-utils.sh ...
   * After this operation, 4,134 kB of additional disk space will be used.
-  * Install poppler-utils.
-  * Disk size = 2468992K. Space Used = 5536K.
+  * Install poppler-utils to extract text from pdf files.
+  * Disk size = 2468996K. Space Used = 5532K.
   * The following NEW packages will be installed:
   ```bash
   libopenjpeg5 libpoppler46 poppler-utils
