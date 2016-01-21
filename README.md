@@ -16,7 +16,10 @@ It comes in 2 flavors:
 **WARNING**: Everything in your USB key will be **destroyed**.
 
     # On any unix system, run:
-    dd if="cust-live-deb-64-FFF_YYYY-MM-DD_HH.MM.SS.iso" of="/path/to/your/usb/device/" bs=4M; sync
+    dd if="cust-live-deb-64-FFF_YYYY-MM-DD_HH.MM.SS.iso" of="/path/to/your/usb/device" bs=4M; sync
+    
+    # Or, on cust-live-deb, run:
+    cld-dd-usb.sh cust-live-deb-64-FFF_YYYY-MM-DD_HH.MM.SS.iso /path/to/your/usb/device
 
 ## MS Windows
 On Microsoft Windows, you can use [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) to burn the ISO to your USB key.
