@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 # Description: Backup logs generated.
 
 LOG_DIR=$1
