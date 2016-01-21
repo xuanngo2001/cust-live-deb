@@ -1,9 +1,7 @@
 * >>>>>>>>> Running inst-min-win-cld-dev-tools-pandoc.sh ...
   * After this operation, 39.0 MB of additional disk space will be used.
   * Install pandoc to generate user manual.
-  * Add documentation: user manual.
-  * Add documentation: developer manual.
-  * Disk size = 2095788K. Space Used = 43064K.
+  * Disk size = 2095740K. Space Used = 43012K.
   * The following NEW packages will be installed:
   ```bash
   liblua5.1-0 libyaml-0-2 pandoc pandoc-data

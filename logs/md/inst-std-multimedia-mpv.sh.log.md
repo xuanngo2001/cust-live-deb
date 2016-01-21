@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-std-multimedia-mpv.sh ...
   * After this operation, 88.6 MB of additional disk space will be used.
-  * Install Media Player: MPV.
+  * Install Media Player: mpv 0.8.3 .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 2654456K. Space Used = 123652K.
+  * Disk size = 2654444K. Space Used = 123652K.
   * The following NEW packages will be installed:
   ```bash
   libaacplus2 libasn1-8-heimdal libass5 libasyncns0 libavc1394-0 libavcodec56
