@@ -27,8 +27,8 @@ On Microsoft Windows, you can use [Win32 Disk Imager](http://sourceforge.net/pro
 
 # Documentation
 
-* For users, see [User manual](https://github.com/limelime/cust-live-deb/wiki/001-User-manual). Or, from `cust-live-deb`, **Menu->User manual**.
-* For developers, see [Developer manual](https://github.com/limelime/cust-live-deb/wiki/100-Developer-manual). Or, from `cust-live-deb`, **Menu->Developer manual**.
+* For users, see [User manual](https://github.com/limelime/cust-live-deb/wiki/001-User-manual). Or, from `cust-live-deb`, **Menu->Help->User manual**.
+* For developers, see [Developer manual](https://github.com/limelime/cust-live-deb/wiki/100-Developer-manual). Or, from `cust-live-deb`, **Menu->Help->Developer manual**.
 
 # TODO
 ## Regenerate initrd
