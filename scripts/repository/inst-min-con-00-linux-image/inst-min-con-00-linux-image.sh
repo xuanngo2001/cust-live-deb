@@ -19,5 +19,5 @@ mkinitramfs -d /etc/initramfs-tools -o /boot/initrd.img-$(uname -r)  -r /
 
 echo "${GV_LOG} * Mount /proc, /sys and /dev/pts."
 echo "${GV_LOG} * Generate dbus-uuidgen to /var/lib/dbus/machine-id."
-echo "${GV_LOG} * Install Linux image."
+echo "${GV_LOG} * Install Linux image: $(uname -r)."
 
