@@ -4,9 +4,8 @@
   * After this operation, 225 MB of additional disk space will be used.
   * Mount /proc, /sys and /dev/pts.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
-  * Install Linux image.
-  * Set APT to skip installing recommended packages.
-  * Disk size = 1781292K. Space Used = 401932K.
+  * Install Linux image: 3.16.0-4-amd64.
+  * Disk size = 1781296K. Space Used = 401932K.
   * The following NEW packages will be installed:
   ```bash
   dbus dialog libcap-ng0 libdbus-1-3 libexpat1
