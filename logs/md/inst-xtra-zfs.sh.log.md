@@ -6,7 +6,7 @@
   * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
   * Install debian-zfs: version: 0.6.5.2-2, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
   * Delete zfsonlinux_6_all.deb[1992K].
-  * Disk size = 4879236K. Space Used = 139240K.
+  * Disk size = 4905704K. Space Used = 139256K.
   * The following NEW packages will be installed:
   ```bash
   libc-dev-bin libc6-dev linux-libc-dev lsb-release
