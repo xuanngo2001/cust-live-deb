@@ -1,8 +1,8 @@
 # Custom Live Debian System
 `cust-live-deb` will boot from USB key and load the whole 64-bit Debian operating system on RAM. Hence, everything is run from the memory.
 
-* It includes tools to remaster itself to include your changes. See [Menu->User Manual->Remaster live system](https://github.com/limelime/cust-live-deb/wiki/001-User-manual#remaster-live-system).
-* It also allows your changes to persist on your hard drives. See [Menu->User Manual->Persistence](https://github.com/limelime/cust-live-deb/wiki/001-User-manual#remaster-live-system).
+* It includes tools to remaster itself to include your changes. See [Menu->User manual->Remaster live system](https://github.com/limelime/cust-live-deb/wiki/001-User-manual#remaster-live-system).
+* It also allows your changes to persist on your hard drives. See [Menu->User manual->Persistence](https://github.com/limelime/cust-live-deb/wiki/001-User-manual#remaster-live-system).
 
 # Screenshots
 ![](https://github.com/limelime/cust-live-deb/blob/master/docs/screenshots/cld_screenshot_01.jpg)
@@ -27,8 +27,8 @@ On Microsoft Windows, you can use [Win32 Disk Imager](http://sourceforge.net/pro
 
 # Documentation
 
-* For users, see [User Manual](https://github.com/limelime/cust-live-deb/wiki/001-User-manual).
-* For developers, see [Developer Manual](https://github.com/limelime/cust-live-deb/wiki/100-Developer-manual).
+* For users, see [User manual](https://github.com/limelime/cust-live-deb/wiki/001-User-manual). Or, from `cust-live-dev`, **Menu->User manual**.
+* For developers, see [Developer manual](https://github.com/limelime/cust-live-deb/wiki/100-Developer-manual). Or, from `cust-live-dev`, **Menu->Developer manual**.
 
 # TODO
 ## Regenerate initrd
