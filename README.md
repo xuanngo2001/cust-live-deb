@@ -1,5 +1,5 @@
 # Custom Live Debian System
-`cust-live-deb` will boot from USB key and load the whole Debian operating system on RAM. Hence, everything is run from the memory.
+`cust-live-deb` will boot from USB key and load the whole 64-bit Debian operating system on RAM. Hence, everything is run from the memory.
 
 * It includes tools to remaster itself to include your changes. See [Menu->User Manual->Remaster live system](https://github.com/limelime/cust-live-deb/wiki/001-User-manual#remaster-live-system).
 * It also allows your changes to persist on your hard drives. See [Menu->User Manual->Persistence](https://github.com/limelime/cust-live-deb/wiki/001-User-manual#remaster-live-system).
@@ -8,7 +8,6 @@
 ![](https://github.com/limelime/cust-live-deb/blob/master/docs/screenshots/cld_screenshot_01.jpg)
 
 # Download
-For now, only 64-bit binaries are available.
 
 It comes in 2 flavors:
 * [min](https://github.com/limelime/cust-live-deb/releases): Strict minimum system with JWM light-weight window manager. From there, you can add your desired applications.
