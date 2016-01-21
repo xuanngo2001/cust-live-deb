@@ -7,10 +7,10 @@
 # Screenshots
 ![](https://github.com/limelime/cust-live-deb/blob/master/docs/screenshots/cld_screenshot_01.jpg)
 
-# Download( TODO )
+# Download
 It comes in 2 flavors:
-* min: Strict minimum system with JWM light-weight window manager. From there, you can add your desired applications.
-* std: Standard system includes minimum system + common applications.
+* [min](https://github.com/limelime/cust-live-deb/releases): Strict minimum system with JWM light-weight window manager. From there, you can add your desired applications.
+* [std](https://github.com/limelime/cust-live-deb/releases): Standard system includes minimum system + common applications.
 
 # Create hybrid ISO
 
