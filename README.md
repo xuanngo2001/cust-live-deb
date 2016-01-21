@@ -25,18 +25,10 @@ It comes in 2 flavors:
 ## MS Windows
 On Microsoft Windows, you can use [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) to burn the ISO to your USB key.
 
-# Create hybrid ISO
+# Documentation
 
-1. Clone the git repository(e.g. `git clone https://github.com/limelime/cust-live-deb.git`)
-1. Import the wiki to `./scripts/settings/doc/`.
-1. `./cld.sh <SYSTEM> <DEB_REPO_URL>`. 
-    * **SYSTEM** can be:
-        * min: Strict minimum system with JWM light-weight window manager. From there, you can add your desired applications.
-        * std: Standard system includes minimum system + common applications.
-        * all: Will execute all scripts in `./scripts/repository/`.
-    * **DEB_REPO_URL** is the URL to the Debian repository(e.g. http://ftp.debian.org/debian/).
-1. `cust-live-deb-64-<SYSTEM>_YYYY-MM-DD_HH.MM.SS.iso` will be created.
-
+* For users, see [User Manual](https://github.com/limelime/cust-live-deb/wiki/001-User-manual).
+* For developers, see [Developer Manual](https://github.com/limelime/cust-live-deb/wiki/100-Developer-manual).
 
 # TODO
 ## Regenerate initrd
