@@ -1,7 +1,8 @@
 # Custom Live Debian System
 `cust-live-deb` will boot from USB key and load the whole operating system on RAM. Hence, everything is run from memory.
 
-* It does include tools to customize(remaster) itself to add new applications.
+* It does include tools to customize(remaster) itself to add new applications. See [Menu->User Manua->Remaster live system](https://github.com/limelime/cust-live-deb/wiki/001-User-manual#remaster-live-system).
+* It also allows changes to persist on your hard drives.See [Menu->User Manua->Persistence](See [Menu->User Manua->Remaster live system](https://github.com/limelime/cust-live-deb/wiki/001-User-manual#remaster-live-system).
 
 # Screenshots
 ![](https://github.com/limelime/cust-live-deb/blob/master/docs/screenshots/cld_screenshot_01.jpg)
