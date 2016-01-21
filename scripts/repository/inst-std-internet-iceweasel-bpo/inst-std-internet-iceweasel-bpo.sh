@@ -16,11 +16,16 @@ apt-get update
 
 apt-get -t jessie-backports -y --force-yes install iceweasel
 
+# Insert Iceweasel in Internet menu.
+sed -i "/Internet\">/ r jwmrc-menus-inet-iceweasel.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+
+
 # Install flash plugin.
 apt-get -y --force-yes install flashplugin-nonfree
 
 # Log
 echo "${GV_LOG} * Install the latest Firefox from Debian Mozilla team: $(firefox --version | grep Mozilla)."
+echo "${GV_LOG} * Insert Iceweasel in Internet menu."
 echo "${GV_LOG} * To update Adobe Flash Player: update-flashplugin-nonfree --install."
 echo "${GV_LOG} * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/."
 
