@@ -14,7 +14,7 @@ It comes in 2 flavors:
 
 # Burn ISO to USB key
     # On any unix system, run:
-    dd if="cust-live-deb-64-std_YYYY-MM-DD_HH.MM.SS.iso" of="/dev/usb/device/" bs=4M; sync
+    dd if="cust-live-deb-64-FFF_YYYY-MM-DD_HH.MM.SS.iso" of="/dev/usb/device/" bs=4M; sync
 
 # Create hybrid ISO
 
