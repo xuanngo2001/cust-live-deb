@@ -34,9 +34,6 @@ On Microsoft Windows, you can use [Win32 Disk Imager](http://sourceforge.net/pro
 1. `cust-live-deb-64-<SYSTEM>_YYYY-MM-DD_HH.MM.SS.iso` will be created.
 
 
-# Packages
-* LinuxMint: http://paste.debian.net/182062/
-
 # TODO
 ## Regenerate initrd
 * https://kernel-handbook.alioth.debian.org/ch-initramfs.html#s-initramfs-regen
