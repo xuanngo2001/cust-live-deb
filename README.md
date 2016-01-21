@@ -19,7 +19,7 @@ It comes in 2 flavors:
     dd if="cust-live-deb-64-FFF_YYYY-MM-DD_HH.MM.SS.iso" of="/path/to/your/usb/device/" bs=4M; sync
 
 ## MS Windows
-On Microsoft Windows, you can use [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/).
+On Microsoft Windows, you can use [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/) to burn the ISO to your USB key.
 
 # Create hybrid ISO
 
