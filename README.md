@@ -52,8 +52,6 @@ On Microsoft Windows, you can use [Win32 Disk Imager](http://sourceforge.net/pro
 # Release checklist
 * Can you watch youtube video over wireless connection?
 
-# Dump
-
 # Customizations Performed
 
 * [List of changes](https://github.com/limelime/cust-live-deb/blob/master/logs/md/all-md-files.md)
