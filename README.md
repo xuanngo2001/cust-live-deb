@@ -18,6 +18,9 @@ It comes in 2 flavors:
     # On any unix system, run:
     dd if="cust-live-deb-64-FFF_YYYY-MM-DD_HH.MM.SS.iso" of="/path/to/your/usb/device/" bs=4M; sync
 
+## MS Windows
+On Microsoft Windows, you can use [Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/).
+
 # Create hybrid ISO
 
 1. Clone the git repository(e.g. `git clone https://github.com/limelime/cust-live-deb.git`)
