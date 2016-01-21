@@ -1,7 +1,7 @@
 # Custom Live Debian System
-Set of scripts to create Custom Live Debian System:
-* Automatically calculate space used of each script.
-* It can remaster itself while running.
+`cust-live-deb` will boot from USB key and load the whole operating system on RAM. Hence, everything is run from memory.
+
+* It does include tools to customize(remaster) itself to add new applications.
 
 # Screenshots
 ![](https://github.com/limelime/cust-live-deb/blob/master/docs/screenshots/cld_screenshot_01.jpg)
