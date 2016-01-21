@@ -12,6 +12,10 @@ It comes in 2 flavors:
 * [min](https://github.com/limelime/cust-live-deb/releases): Strict minimum system with JWM light-weight window manager. From there, you can add your desired applications.
 * [std](https://github.com/limelime/cust-live-deb/releases): Standard system includes minimum system + common applications.
 
+# Burn ISO to USB key
+    # On any unix system, run:
+    dd if="cust-live-deb-64-std_YYYY-MM-DD_HH.MM.SS.iso" of="/dev/usb/device/" bs=4M; sync
+
 # Create hybrid ISO
 
 1. Clone the git repository(e.g. `git clone https://github.com/limelime/cust-live-deb.git`)
