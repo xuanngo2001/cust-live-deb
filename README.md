@@ -13,8 +13,10 @@ It comes in 2 flavors:
 * [std](https://github.com/limelime/cust-live-deb/releases): Standard system includes minimum system + common applications.
 
 # Burn ISO to USB key
+**WARNING**: Everything in your USB key will be **destroyed**.
+
     # On any unix system, run:
-    dd if="cust-live-deb-64-FFF_YYYY-MM-DD_HH.MM.SS.iso" of="/dev/usb/device/" bs=4M; sync
+    dd if="cust-live-deb-64-FFF_YYYY-MM-DD_HH.MM.SS.iso" of="/path/to/your/usb/device/" bs=4M; sync
 
 # Create hybrid ISO
 
