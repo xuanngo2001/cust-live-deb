@@ -13,6 +13,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #  Note: network-manager needs to be removed before install wicd.
 apt-get -y --force-yes install wicd
 
+# Insert Wicd menu in Network
+sed -i "/Network\">/ r jwmrc-menus-network-wicd.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+
 # Start wicd daemon on startup.
 #yes | cp startup-wicd.sh "${GV_CLD_ROOT_DIR}"
 #sed -i "/## Insert your script files here ##/a ${GV_CLD_ROOT_DIR}/startup-wicd.sh&" /etc/init.d/startup.sh
@@ -20,8 +23,10 @@ apt-get -y --force-yes install wicd
 # Set wicd to run on JWM startup.
 cat jwmrc-startup-wicd.sh >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
+
 # Log
 echo "${GV_LOG} * Install Network Manager: wicd."
+echo "${GV_LOG} * Insert Wicd menu in Network."
 echo "${GV_LOG} * For wireless, you have to type in the wireless interface(e.g. wlan0) in the Preferences."
 echo "${GV_LOG} * Set wicd to run on JWM startup."
 echo "${GV_LOG} * Log at /var/log/wicd/wicd.log." 
