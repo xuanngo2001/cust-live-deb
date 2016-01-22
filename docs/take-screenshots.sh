@@ -11,6 +11,7 @@ set -o pipefail
 # TODO: Minimize all windows
 #   You need xdotool windowminimize "$ID"
 #   But for now, command key+d
+echo "You have 5 seconds to minimize all your applications."
 sleep 5s
 
 # Input file
@@ -26,7 +27,7 @@ while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
   
                                   # Ignore comment line | Remove empty line
 done < <(cat ${WIN_POS_SIZE_FILE} | grep -v "^#"  | awk NF)
-
+echo "All applications opened."
 
 
 # OFFSET due to decoration
@@ -38,9 +39,10 @@ WIN_IDS=()
 while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
   
   WIN_TITLE=$(echo ${LINE}|cut -d ',' -f 7 | sed -e 's/^[ \t]*//' | sed -e 's/[ \t]*$//')
+  echo "Position and resize ${WIN_TITLE}."
   
   # Wait until application is loaded
-  timeout 7s /bin/bash -c "while ! $(wmctrl -lG | grep -q ${WIN_TITLE}); do sleep 1s; done; sleep 1s"
+  timeout 7s /bin/bash -c 'while ! $(wmctrl -lG | grep -q "$0"); do sleep 1s; done;' "${WIN_TITLE}"
   
   # Extract window ID, position and size.
   WIN_ID=$(wmctrl -lG |grep "${WIN_TITLE}" | head -n 1 | cut -d ' ' -f 1)
@@ -61,12 +63,14 @@ while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
   
                                   # Ignore comment line | Remove empty line
 done < <(cat ${WIN_POS_SIZE_FILE} | grep -v "^#"  | awk NF)
-
+echo "All applications re-positioned."
 
 ## Take screenshots
 rm -f screenshots/cld_screenshot_01.jpg
 gnome-screenshot -f screenshots/cld_screenshot_01.jpg
+echo "Screenshot taken."
 
+exit
 
 ## Close all applications gracefully.
 for WIN_ID in "${WIN_IDS[@]}"
