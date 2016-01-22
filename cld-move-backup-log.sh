@@ -26,7 +26,7 @@ while IFS='' read -r LOG_FILE || [[ -n "$LOG_FILE" ]]; do
     LOG_FILENAME=$(basename "${LOG_FILE}")
     if [ -f "${SCRIPT_DIR}/${LOG_FILENAME}" ]; then
       
-      if ! cmp "${LOG_FILE}" "${SCRIPT_DIR}/${LOG_FILENAME}"; then
+      if ! cmp "${LOG_FILE}" "${SCRIPT_DIR}/${LOG_FILENAME}" >/dev/null 2>&1; then
         yes | mv "${LOG_FILE}" "${SCRIPT_DIR}"
       fi
       
