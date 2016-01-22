@@ -34,14 +34,15 @@ function F_MAIN()
 	 
 	done < <( find "${LOG_DIR}" -type f -name "inst-*.sh*" )
 	
-	# Processing install.log
+	# Processing install.sh.log
+    find "${LOG_DIR}" -type f -name 'install.sh.log*' -exec bash -c 'F_OVERWRITE_IF_DIFF "$0" "$1"' {} "${BASE_SCRIPT_DIR}" \;
+    
 	
 	# Processing dpkg.log
-	BINARY_DIR=./binary
-	BINARY_DIR=$(readlink -ev "${BINARY_DIR}")
-	DPKG_LOG=$(find "${LOG_DIR}" -type f -name 'dpkg.log')
-	F_OVERWRITE_IF_DIFF "${DPKG_LOG}" "${BINARY_DIR}"
-
+		BINARY_DIR=./binary
+		BINARY_DIR=$(readlink -ev "${BINARY_DIR}")
+    find "${LOG_DIR}" -type f -name 'dpkg.log' -exec bash -c 'F_OVERWRITE_IF_DIFF "$0" "$1"' {} "${BINARY_DIR}" \;
+    
 }
 
 # Copy file to destination directory.
@@ -69,5 +70,6 @@ function F_OVERWRITE_IF_DIFF()
     mv "${FILE_PATH}" "${DEST_DIR}"
   fi
 }
+export -f F_OVERWRITE_IF_DIFF
 
 F_MAIN "$@"
