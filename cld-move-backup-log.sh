@@ -64,6 +64,8 @@ function F_OVERWRITE_IF_DIFF()
     
     if ! cmp "${FILE_PATH}" "${DEST_DIR}/${FILENAME}" >/dev/null 2>&1; then
       yes | mv "${FILE_PATH}" "${DEST_DIR}"
+    else
+      rm -f "${FILE_PATH}"
     fi
     
   else
