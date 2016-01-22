@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-xtra-opw-drush8.sh ...
-  * Disk size = 4352128K. Space Used = 1180K.
+  * Disk size = 4352052K. Space Used = 1180K.

@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-accessories-xarchiver.sh ...
   * Install Archive Manager: xarchiver.
-  * Disk size = 3263280K. Space Used = 4K.
+  * Disk size = 3263312K. Space Used = 4K.

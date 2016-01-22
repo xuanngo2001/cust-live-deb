@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-accessories-terminal-xfce.sh ...
   * After this operation, 10.8 MB of additional disk space will be used.
   * Install terminal: xfce4-terminal.
-  * Disk size = 3241308K. Space Used = 8696K.
+  * Disk size = 3241344K. Space Used = 8696K.
   * The following NEW packages will be installed:
   ```bash
   exo-utils libexo-1-0 libexo-common libexo-helpers libpango1.0-0

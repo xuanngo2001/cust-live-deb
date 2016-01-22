@@ -45,46 +45,46 @@ Hit http://download.virtualbox.org jessie InRelease
 Hit http://www.deb-multimedia.org jessie InRelease
 Ign http://ftp.debian.org jessie InRelease
 Hit http://ftp.debian.org jessie Release.gpg
-Ign http://mozilla.debian.net jessie-backports InRelease
-Hit http://ftp.debian.org jessie Release
-Hit http://repo.aptly.info nightly InRelease
-Get:1 http://archive.zfsonlinux.org jessie InRelease [3,066 B]
 Hit http://www.deb-multimedia.org jessie/main amd64 Packages
+Hit http://ftp.debian.org jessie Release
 Hit http://download.virtualbox.org jessie/contrib amd64 Packages
+Get:1 http://archive.zfsonlinux.org jessie InRelease [3,066 B]
+Hit http://http.debian.net jessie-backports InRelease
+Hit http://repo.aptly.info nightly InRelease
 Hit http://ftp.debian.org jessie/main amd64 Packages
-Hit http://mozilla.debian.net jessie-backports Release.gpg
-Get:2 http://http.debian.net jessie-backports InRelease [166 kB]
 Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
+Get:2 http://archive.zfsonlinux.org jessie/main amd64 Packages [10.3 kB]
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
-Hit http://mozilla.debian.net jessie-backports Release
+Get:3 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
 Hit http://repo.aptly.info nightly/main amd64 Packages
 Hit http://ftp.debian.org jessie/non-free amd64 Packages
-Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
-Get:3 http://archive.zfsonlinux.org jessie/main amd64 Packages [10.3 kB]
+Get:4 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [15.8 kB]
+Ign http://mozilla.debian.net jessie-backports InRelease
+Hit http://mozilla.debian.net jessie-backports Release.gpg
 Hit http://ftp.debian.org jessie/contrib Translation-en
+Hit http://mozilla.debian.net jessie-backports Release
 Hit http://ftp.debian.org jessie/main Translation-en
-Get:4 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
-Get:5 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [15.8 kB]
+Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
 Hit http://ftp.debian.org jessie/non-free Translation-en
 Ign http://download.virtualbox.org jessie/contrib Translation-en_US
 Ign http://download.virtualbox.org jessie/contrib Translation-en
 Ign http://download.virtualbox.org jessie/contrib Translation-en_US.UTF-8
-Ign http://www.deb-multimedia.org jessie/main Translation-en_US
-Ign http://www.deb-multimedia.org jessie/main Translation-en
 Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
-Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
-Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
 Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
-Ign http://www.deb-multimedia.org jessie/non-free Translation-en
-Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
 Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
 Ign http://archive.zfsonlinux.org jessie/main Translation-en_US
+Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://archive.zfsonlinux.org jessie/main Translation-en
-Ign http://archive.zfsonlinux.org jessie/main Translation-en_US.UTF-8
 Ign http://repo.aptly.info nightly/main Translation-en_US
+Ign http://www.deb-multimedia.org jessie/main Translation-en
+Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
+Ign http://archive.zfsonlinux.org jessie/main Translation-en_US.UTF-8
 Ign http://repo.aptly.info nightly/main Translation-en
+Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
+Ign http://www.deb-multimedia.org jessie/non-free Translation-en
 Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
-Fetched 223 kB in 5s (38.3 kB/s)
+Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
+Fetched 57.0 kB in 4s (13.0 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -123,11 +123,11 @@ Get:4 http://ftp.debian.org/debian/ jessie/main libalgorithm-diff-xs-perl amd64 
 Get:5 http://ftp.debian.org/debian/ jessie/main libalgorithm-merge-perl all 0.08-2 [13.5 kB]
 Get:6 http://localhost/aptly-repo/ jessie/main g++ amd64 4:4.9.2-2 [1,530 B]
 Get:7 http://localhost/aptly-repo/ jessie/main libdpkg-perl all 1.17.26 [1,072 kB]
-Get:8 http://ftp.debian.org/debian/ jessie/main libfile-fcntllock-perl amd64 0.22-1+b1 [36.4 kB]
-Get:9 http://localhost/aptly-repo/ jessie/main dpkg-dev all 1.17.26 [1,545 kB]
-Get:10 http://localhost/aptly-repo/ jessie/main build-essential amd64 11.7 [7,114 B]
-Get:11 http://localhost/aptly-repo/ jessie/main spl-dkms all 0.6.5-1 [346 kB]
-Get:12 http://localhost/aptly-repo/ jessie/main zfs-dkms all 0.6.5.2-2 [1,060 kB]
+Get:8 http://localhost/aptly-repo/ jessie/main dpkg-dev all 1.17.26 [1,545 kB]
+Get:9 http://localhost/aptly-repo/ jessie/main build-essential amd64 11.7 [7,114 B]
+Get:10 http://localhost/aptly-repo/ jessie/main spl-dkms all 0.6.5-1 [346 kB]
+Get:11 http://localhost/aptly-repo/ jessie/main zfs-dkms all 0.6.5.2-2 [1,060 kB]
+Get:12 http://ftp.debian.org/debian/ jessie/main libfile-fcntllock-perl amd64 0.22-1+b1 [36.4 kB]
 Get:13 http://localhost/aptly-repo/ jessie/main spl amd64 0.6.5-1 [15.3 kB]
 Get:14 http://localhost/aptly-repo/ jessie/main libuutil1 amd64 0.6.5.2-2 [44.7 kB]
 Get:15 http://localhost/aptly-repo/ jessie/main libnvpair1 amd64 0.6.5.2-2 [41.7 kB]
@@ -137,7 +137,7 @@ Get:18 http://localhost/aptly-repo/ jessie/main zfsutils amd64 0.6.5.2-2 [383 kB
 Get:19 http://localhost/aptly-repo/ jessie/main debian-zfs amd64 7~jessie [6,806 B]
 Extracting templates from packages: 93%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 27.7 MB in 0s (34.3 MB/s)
+Fetched 27.7 MB in 0s (39.7 MB/s)
 Selecting previously unselected package libasan0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69794 files and directories currently installed.)
 Preparing to unpack .../libasan0_4.8.4-1_amd64.deb ...
@@ -372,4 +372,4 @@ CLDS: * Add zfsonlinux repository to /etc/apt/sources.list.d/zfsonlinux.list.
 CLDS: * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
 CLDS: * Install debian-zfs: version: 0.6.5.2-2, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Delete zfsonlinux_6_all.deb[1992K].
-CLDS: * Disk size = 5291092K. Space Used = 213844K.
+CLDS: * Disk size = 5290960K. Space Used = 213816K.

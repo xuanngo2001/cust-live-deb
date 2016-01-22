@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-std-system-network-wicd.sh ...
   * After this operation, 31.8 MB of additional disk space will be used.
-  * Disk size = 4162552K. Space Used = 43392K.
+  * Disk size = 4162492K. Space Used = 43388K.
   * The following NEW packages will be installed:
   ```bash
   gcr gir1.2-glib-2.0 gksu gnome-keyring libgck-1-0 libgcr-3-common

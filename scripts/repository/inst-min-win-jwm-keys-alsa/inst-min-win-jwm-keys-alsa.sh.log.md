@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-win-jwm-keys-alsa.sh ...
-  * Disk size = 3100152K. Space Used = 4K.
+  * Disk size = 3100172K. Space Used = 4K.

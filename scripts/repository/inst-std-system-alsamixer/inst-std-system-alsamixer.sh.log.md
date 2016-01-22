@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-system-alsamixer.sh ...
-  * Disk size = 4113224K. Space Used = 4K.
+  * Disk size = 4113176K. Space Used = 4K.

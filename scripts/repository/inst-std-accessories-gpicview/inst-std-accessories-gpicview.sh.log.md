@@ -2,7 +2,7 @@
   * After this operation, 28.7 MB of additional disk space will be used.
   * Install Image Viewer: gpicview.
   * Insert gpicview in Accessories menu.
-  * Disk size = 3210852K. Space Used = 37748K.
+  * Disk size = 3210888K. Space Used = 37764K.
   * The following NEW packages will be installed:
   ```bash
   cpp cpp-4.9 gpicview libauthen-sasl-perl libcloog-isl4 libencode-locale-perl

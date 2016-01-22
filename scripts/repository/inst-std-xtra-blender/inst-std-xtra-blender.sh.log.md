@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-xtra-blender.sh ...
   * After this operation, 243 kB of additional disk space will be used.
   * After this operation, 145 MB of additional disk space will be used.
-  * Disk size = 4320504K. Space Used = 151204K.
+  * Disk size = 4320440K. Space Used = 151204K.
   * The following NEW packages will be installed:
   ```bash
   libjemalloc1

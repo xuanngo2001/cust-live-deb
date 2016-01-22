@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-std-accessories-thunar.sh ...
   * After this operation, 30.3 MB of additional disk space will be used.
-  * Disk size = 3263276K. Space Used = 21968K.
+  * Disk size = 3263308K. Space Used = 21964K.
   * The following NEW packages will be installed:
   ```bash
   desktop-file-utils gvfs gvfs-common gvfs-daemons gvfs-libs libaacs0

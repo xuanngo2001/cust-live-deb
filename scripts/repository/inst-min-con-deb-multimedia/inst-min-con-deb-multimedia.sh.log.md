@@ -3,4 +3,4 @@
   * Add deb-multimedia sources list.
   * Delete deb-multimedia-keyring_2015.6.1_all.deb[12K].
   * apt-get update
-  * Disk size = 1811964K. Space Used = 1264K.
+  * Disk size = 1812004K. Space Used = 1264K.

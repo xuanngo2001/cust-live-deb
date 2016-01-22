@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-cld-tools.sh ...
-  * Disk size = 1806692K. Space Used = 52K.
+  * Disk size = 1806728K. Space Used = 48K.

@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-imagemagick.sh ...
   * After this operation, 67.6 MB of additional disk space will be used.
   * Install imagemagick to process image from command line.
-  * Disk size = 2679220K. Space Used = 88784K.
+  * Disk size = 2679240K. Space Used = 88784K.
   * The following NEW packages will be installed:
   ```bash
   fonts-droid ghostscript gsfonts imagemagick imagemagick-6.q16

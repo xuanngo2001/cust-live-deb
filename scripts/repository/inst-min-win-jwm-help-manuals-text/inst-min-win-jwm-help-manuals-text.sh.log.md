@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-win-jwm-help-manuals-text.sh ...
-  * Disk size = 3100148K. Space Used = 28K.
+  * Disk size = 3100168K. Space Used = 28K.

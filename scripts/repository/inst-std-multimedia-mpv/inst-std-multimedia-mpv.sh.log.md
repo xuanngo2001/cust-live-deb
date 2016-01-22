@@ -3,7 +3,7 @@
   * Install Media Player: mpv 0.8.3 .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 3581920K. Space Used = 88136K.
+  * Disk size = 3581896K. Space Used = 88136K.
   * The following NEW packages will be installed:
   ```bash
   i965-va-driver libaacplus2 libasn1-8-heimdal libass5 libavcodec56

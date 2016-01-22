@@ -4,35 +4,35 @@ Hit http://localhost jessie/main amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
-Hit http://www.deb-multimedia.org jessie InRelease
-Hit http://www.deb-multimedia.org jessie/main amd64 Packages
-Ign http://mozilla.debian.net jessie-backports InRelease
-Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
-Hit http://mozilla.debian.net jessie-backports Release.gpg
-Get:1 http://http.debian.net jessie-backports InRelease [166 kB]
-Hit http://mozilla.debian.net jessie-backports Release
-Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
 Ign http://ftp.debian.org jessie InRelease
+Hit http://www.deb-multimedia.org jessie InRelease
+Ign http://mozilla.debian.net jessie-backports InRelease
 Hit http://ftp.debian.org jessie Release.gpg
+Hit http://www.deb-multimedia.org jessie/main amd64 Packages
+Hit http://mozilla.debian.net jessie-backports Release.gpg
 Hit http://ftp.debian.org jessie Release
-Get:2 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
+Hit http://http.debian.net jessie-backports InRelease
+Hit http://mozilla.debian.net jessie-backports Release
+Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
 Hit http://ftp.debian.org jessie/main amd64 Packages
-Get:3 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [15.8 kB]
+Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
+Get:1 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
+Get:2 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [15.8 kB]
 Hit http://ftp.debian.org jessie/non-free amd64 Packages
 Hit http://ftp.debian.org jessie/contrib Translation-en
 Hit http://ftp.debian.org jessie/main Translation-en
 Hit http://ftp.debian.org jessie/non-free Translation-en
-Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
+Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Fetched 210 kB in 4s (49.9 kB/s)
+Fetched 43.6 kB in 4s (10.8 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -117,7 +117,7 @@ Get:42 http://localhost/aptly-repo/ jessie/main libwpd-0.10-10 amd64 0.10.0-2+b1
 Get:43 http://localhost/aptly-repo/ jessie/main libwpg-0.3-3 amd64 0.3.0-3 [74.4 kB]
 Get:44 http://localhost/aptly-repo/ jessie/main libreoffice-writer amd64 1:5.0.4~rc2-2~bpo8+1 [7,714 kB]
 Extracting templates from packages: 68%Extracting templates from packages: 100%
-Fetched 79.9 MB in 3s (26.3 MB/s)
+Fetched 79.9 MB in 1s (41.1 MB/s)
 Selecting previously unselected package libboost-date-time1.55.0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49416 files and directories currently installed.)
 Preparing to unpack .../libboost-date-time1.55.0_1.55.0+dfsg-3_amd64.deb ...
@@ -276,6 +276,7 @@ Setting up librdf0:amd64 (1.0.17-1+b1) ...
 Setting up uno-libs3 (5.0.4~rc2-2~bpo8+1) ...
 Setting up ure (5.0.4~rc2-2~bpo8+1) ...
 Setting up python3.4-minimal (3.4.2-1) ...
+update-binfmts: warning: found manually created entry for python3.4 in /proc/sys/fs/binfmt_misc; leaving it alone
 Setting up python3.4 (3.4.2-1) ...
 Setting up python3-minimal (3.4.2-2) ...
 Setting up libpython3-stdlib:amd64 (3.4.2-2) ...
@@ -340,7 +341,7 @@ Get:12 http://localhost/aptly-repo/ jessie/main coinor-libcgl1 amd64 0.58.9-1 [4
 Get:13 http://localhost/aptly-repo/ jessie/main coinor-libcbc3 amd64 2.8.12-1 [670 kB]
 Get:14 http://localhost/aptly-repo/ jessie/main coinor-libcoinmp1 amd64 1.7.6+dfsg1-1 [32.6 kB]
 Get:15 http://localhost/aptly-repo/ jessie/main libreoffice-calc amd64 1:5.0.4~rc2-2~bpo8+1 [6,851 kB]
-Fetched 12.3 MB in 0s (33.8 MB/s)
+Fetched 12.3 MB in 0s (36.4 MB/s)
 Selecting previously unselected package libboost-system1.55.0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54750 files and directories currently installed.)
 Preparing to unpack .../libboost-system1.55.0_1.55.0+dfsg-3_amd64.deb ...
@@ -431,7 +432,7 @@ Get:5 http://localhost/aptly-repo/ jessie/main libvisio-0.1-1 amd64 0.1.0-2 [245
 Get:6 http://localhost/aptly-repo/ jessie/main libreoffice-draw amd64 1:5.0.4~rc2-2~bpo8+1 [2,466 kB]
 Get:7 http://localhost/aptly-repo/ jessie/main libreoffice-impress amd64 1:5.0.4~rc2-2~bpo8+1 [1,026 kB]
 Get:8 http://http.debian.net/debian/ jessie-backports/main libreoffice-avmedia-backend-gstreamer amd64 1:5.0.4~rc2-2~bpo8+1 [24.1 kB]
-Fetched 4,444 kB in 1s (2,235 kB/s)
+Fetched 4,444 kB in 0s (8,638 kB/s)
 Selecting previously unselected package libcdr-0.1-1.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54861 files and directories currently installed.)
 Preparing to unpack .../libcdr-0.1-1_0.1.0-3_amd64.deb ...
@@ -505,10 +506,10 @@ Get:6 http://ftp.debian.org/debian/ jessie/main libfbclient2 amd64 2.5.3.26778.d
 Get:7 http://ftp.debian.org/debian/ jessie/main firebird2.5-server-common amd64 2.5.3.26778.ds4-5 [536 kB]
 Get:8 http://ftp.debian.org/debian/ jessie/main libfbembed2.5 amd64 2.5.3.26778.ds4-5 [1,530 kB]
 Get:9 http://http.debian.net/debian/ jessie-backports/main libreoffice-sdbc-firebird amd64 1:5.0.4~rc2-2~bpo8+1 [113 kB]
-Get:10 http://ftp.debian.org/debian/ jessie/main libservlet2.5-java all 6.0.41-3 [219 kB]
-Get:11 http://ftp.debian.org/debian/ jessie/main libhsqldb1.8.0-java all 1.8.0.10+dfsg-3 [915 kB]
-Get:12 http://http.debian.net/debian/ jessie-backports/main libreoffice-sdbc-hsqldb amd64 1:5.0.4~rc2-2~bpo8+1 [115 kB]
-Fetched 8,525 kB in 15s (537 kB/s)
+Get:10 http://http.debian.net/debian/ jessie-backports/main libreoffice-sdbc-hsqldb amd64 1:5.0.4~rc2-2~bpo8+1 [115 kB]
+Get:11 http://ftp.debian.org/debian/ jessie/main libservlet2.5-java all 6.0.41-3 [219 kB]
+Get:12 http://ftp.debian.org/debian/ jessie/main libhsqldb1.8.0-java all 1.8.0.10+dfsg-3 [915 kB]
+Fetched 8,525 kB in 7s (1,153 kB/s)
 Selecting previously unselected package firebird2.5-common-doc.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54938 files and directories currently installed.)
 Preparing to unpack .../firebird2.5-common-doc_2.5.3.26778.ds4-5_all.deb ...
@@ -579,4 +580,4 @@ CLDS: * Install Office Suite: Drawing.
 CLDS: * Install Office Suite: Database.
 CLDS: * Install Office Suite: Equation.
 CLDS: * https://wiki.documentfoundation.org/ReleasePlan
-CLDS: * Disk size = 4094768K. Space Used = 512848K.
+CLDS: * Disk size = 4094712K. Space Used = 512816K.
