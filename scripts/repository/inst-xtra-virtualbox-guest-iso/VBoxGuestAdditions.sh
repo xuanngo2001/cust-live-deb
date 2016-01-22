@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -o pipefail
 
 # Description: Download the VBoxGuestAdditions.iso.
 

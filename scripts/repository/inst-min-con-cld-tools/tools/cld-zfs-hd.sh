@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -o pipefail
 # Description: Show ZFS pool hard drive informations: 
 #   -pool name    : tank
 #   -ata          : ataX

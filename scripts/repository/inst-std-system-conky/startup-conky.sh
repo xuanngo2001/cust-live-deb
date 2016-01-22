@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -o pipefail
 # Description: Change conkyrc settings according to the hardware.
 #               - Adjust the number of CPUs.
 

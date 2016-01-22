@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -o pipefail
 
 # Description: Open 2 terminals on startup in X window
 # Requirements:

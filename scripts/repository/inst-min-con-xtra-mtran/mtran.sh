@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -o pipefail
 # Description: Mass copy and verify files integrity.
 #   Copy SOURCE_DIR to DESTINATION_DIR
 

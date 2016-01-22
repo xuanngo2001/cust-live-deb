@@ -1,6 +1,7 @@
 #!/bin/sh
 # Install the Gecko and Mono needed by modern wines
 set -e
+set -o pipefail
 set -x
 
 # Wine installs to /usr/local by default:

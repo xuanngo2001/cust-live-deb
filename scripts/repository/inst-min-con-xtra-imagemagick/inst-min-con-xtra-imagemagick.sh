@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -o pipefail
 
 # Global variables:
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.

@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -o pipefail
 # Description: Create a persistent image file.
 PERSISTENCE_IMG_SIZE=$1
 

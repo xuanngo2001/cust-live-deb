@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -o pipefail
 
 # Description: Show my own bash color meanings.
 # http://askubuntu.com/a/17300
