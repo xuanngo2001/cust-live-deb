@@ -70,7 +70,8 @@ rm -f screenshots/cld_screenshot_01.jpg
 gnome-screenshot -f screenshots/cld_screenshot_01.jpg
 echo "Screenshot taken."
 
-exit
+# DEBUG
+#exit
 
 ## Close all applications gracefully.
 for WIN_ID in "${WIN_IDS[@]}"
