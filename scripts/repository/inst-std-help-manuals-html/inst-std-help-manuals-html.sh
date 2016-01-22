@@ -9,6 +9,8 @@ set -o pipefail
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Remove Help manuals in text format before adding the HTML format.
+sed -i '/<Menu label="Help">/ , /<\/Menu>/{//!d}' "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
 # Copy all documentations to /root/doc.
 DOC_DIR=/root/cld-doc
