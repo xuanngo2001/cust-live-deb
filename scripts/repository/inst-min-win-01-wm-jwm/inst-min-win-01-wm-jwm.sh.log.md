@@ -2,7 +2,7 @@
   * After this operation, 15.1 MB of additional disk space will be used.
   * Install Window Manager: JWM vsvn-579 by Joe Wingbermuehle.
   * Set jwmrc.
-  * Disk size = 2053888K. Space Used = 21532K.
+  * Disk size = 2053892K. Space Used = 21536K.
   * The following NEW packages will be installed:
   ```bash
   fontconfig-config fonts-dejavu-core jwm libfontconfig1 libfribidi0
