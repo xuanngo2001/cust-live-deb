@@ -1,5 +1,5 @@
 * >>>>>>>>> Running inst-min-con-live-build-tools.sh ...
-  * After this operation, 110 kB of additional disk space will be used.
+  * After this operation, 3,632 kB of additional disk space will be used.
   * After this operation, 1,789 kB of additional disk space will be used.
   * After this operation, 392 kB of additional disk space will be used.
   * Install xorriso to create isohybrid.
@@ -7,10 +7,10 @@
   * Note: boot.cat is automatically created.
   * Install rsync to copy directories.
   * Install squashfs-tools to create new squashfs.
-  * Disk size = 1911628K. Space Used = 3580K.
+  * Disk size = 1916808K. Space Used = 8736K.
   * The following NEW packages will be installed:
   ```bash
-  isolinux
+  isolinux syslinux-common
   libburn4 libisoburn1 libisofs6 libjte1 xorriso
   liblzo2-2 squashfs-tools
   ```

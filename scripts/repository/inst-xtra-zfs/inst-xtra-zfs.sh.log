@@ -6,8 +6,6 @@ The following extra packages will be installed:
   libc-dev-bin linux-libc-dev
 Suggested packages:
   glibc-doc lsb
-Recommended packages:
-  manpages-dev
 The following NEW packages will be installed:
   libc-dev-bin libc6-dev linux-libc-dev lsb-release
 0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
@@ -16,7 +14,7 @@ After this operation, 15.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main lsb-release all 4.1+Debian13+nmu1 [26.5 kB]
 Fetched 26.5 kB in 0s (0 B/s)
 Selecting previously unselected package libc-dev-bin.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 57388 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68533 files and directories currently installed.)
 Preparing to unpack .../libc-dev-bin_2.19-18+deb8u1_amd64.deb ...
 Unpacking libc-dev-bin (2.19-18+deb8u1) ...
 Selecting previously unselected package linux-libc-dev:amd64.
@@ -34,7 +32,7 @@ Setting up linux-libc-dev:amd64 (3.16.7-ckt20-1+deb8u3) ...
 Setting up libc6-dev:amd64 (2.19-18+deb8u1) ...
 Setting up lsb-release (4.1+Debian13+nmu1) ...
 Selecting previously unselected package zfsonlinux.
-(Reading database ... 58644 files and directories currently installed.)
+(Reading database ... 69789 files and directories currently installed.)
 Preparing to unpack zfsonlinux_6_all.deb ...
 Unpacking zfsonlinux (6) ...
 Setting up zfsonlinux (6) ...
@@ -44,87 +42,104 @@ Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
 Hit http://download.virtualbox.org jessie InRelease
-Ign http://ftp.debian.org jessie InRelease
 Hit http://www.deb-multimedia.org jessie InRelease
+Ign http://ftp.debian.org jessie InRelease
 Hit http://ftp.debian.org jessie Release.gpg
-Hit http://www.deb-multimedia.org jessie/main amd64 Packages
-Hit http://download.virtualbox.org jessie/contrib amd64 Packages
+Ign http://mozilla.debian.net jessie-backports InRelease
 Hit http://ftp.debian.org jessie Release
-Hit http://http.debian.net jessie-backports InRelease
 Hit http://repo.aptly.info nightly InRelease
 Get:1 http://archive.zfsonlinux.org jessie InRelease [3,066 B]
-Ign http://mozilla.debian.net jessie-backports InRelease
+Hit http://www.deb-multimedia.org jessie/main amd64 Packages
+Hit http://download.virtualbox.org jessie/contrib amd64 Packages
 Hit http://ftp.debian.org jessie/main amd64 Packages
-Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
 Hit http://mozilla.debian.net jessie-backports Release.gpg
+Get:2 http://http.debian.net jessie-backports InRelease [166 kB]
+Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
-Get:2 http://archive.zfsonlinux.org jessie/main amd64 Packages [10.3 kB]
-Get:3 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
-Hit http://repo.aptly.info nightly/main amd64 Packages
-Get:4 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [15.8 kB]
-Hit http://ftp.debian.org jessie/non-free amd64 Packages
 Hit http://mozilla.debian.net jessie-backports Release
-Hit http://ftp.debian.org jessie/contrib Translation-en
+Hit http://repo.aptly.info nightly/main amd64 Packages
+Hit http://ftp.debian.org jessie/non-free amd64 Packages
 Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
+Get:3 http://archive.zfsonlinux.org jessie/main amd64 Packages [10.3 kB]
+Hit http://ftp.debian.org jessie/contrib Translation-en
 Hit http://ftp.debian.org jessie/main Translation-en
+Get:4 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
+Get:5 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [15.8 kB]
 Hit http://ftp.debian.org jessie/non-free Translation-en
 Ign http://download.virtualbox.org jessie/contrib Translation-en_US
 Ign http://download.virtualbox.org jessie/contrib Translation-en
 Ign http://download.virtualbox.org jessie/contrib Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
-Ign http://www.deb-multimedia.org jessie/non-free Translation-en
-Ign http://repo.aptly.info nightly/main Translation-en_US
-Ign http://archive.zfsonlinux.org jessie/main Translation-en_US
-Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Ign http://repo.aptly.info nightly/main Translation-en
-Ign http://archive.zfsonlinux.org jessie/main Translation-en
-Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
-Ign http://archive.zfsonlinux.org jessie/main Translation-en_US.UTF-8
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
 Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
+Ign http://www.deb-multimedia.org jessie/non-free Translation-en
+Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
 Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
-Fetched 57.0 kB in 5s (10.3 kB/s)
+Ign http://archive.zfsonlinux.org jessie/main Translation-en_US
+Ign http://archive.zfsonlinux.org jessie/main Translation-en
+Ign http://archive.zfsonlinux.org jessie/main Translation-en_US.UTF-8
+Ign http://repo.aptly.info nightly/main Translation-en_US
+Ign http://repo.aptly.info nightly/main Translation-en
+Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
+Fetched 223 kB in 5s (38.3 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  cpp-4.8 dkms gcc-4.8 libasan0 libgcc-4.8-dev libnvpair1 libuutil1 libzfs2
-  libzpool2 linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-amd64
+  build-essential cpp-4.8 dkms dpkg-dev fakeroot g++ g++-4.9 gcc-4.8
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libasan0 libdpkg-perl libfakeroot libfile-fcntllock-perl libgcc-4.8-dev
+  libnvpair1 libstdc++-4.9-dev libuutil1 libzfs2 libzpool2
+  linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-amd64
   linux-headers-3.16.0-4-common linux-headers-amd64 linux-kbuild-3.16 patch
   spl spl-dkms zfs-dkms zfsutils
 Suggested packages:
-  gcc-4.8-locales zfs-auto-snapshot gcc-4.8-multilib gcc-4.8-doc libgcc1-dbg
-  libgomp1-dbg libitm1-dbg libatomic1-dbg libasan0-dbg libtsan0-dbg
-  libquadmath0-dbg ed diffutils-doc nfs-kernel-server samba-common-bin
-  zfs-initramfs
+  gcc-4.8-locales zfs-auto-snapshot debian-keyring g++-multilib
+  g++-4.9-multilib gcc-4.9-doc libstdc++6-4.9-dbg gcc-4.8-multilib gcc-4.8-doc
+  libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg libasan0-dbg
+  libtsan0-dbg libquadmath0-dbg libstdc++-4.9-doc ed diffutils-doc
+  nfs-kernel-server samba-common-bin zfs-initramfs
 Recommended packages:
-  build-essential linux-headers fakeroot linux-image
+  linux-headers linux-image
 The following NEW packages will be installed:
-  cpp-4.8 debian-zfs dkms gcc-4.8 libasan0 libgcc-4.8-dev libnvpair1 libuutil1
+  build-essential cpp-4.8 debian-zfs dkms dpkg-dev fakeroot g++ g++-4.9
+  gcc-4.8 libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libasan0 libdpkg-perl libfakeroot
+  libfile-fcntllock-perl libgcc-4.8-dev libnvpair1 libstdc++-4.9-dev libuutil1
   libzfs2 libzpool2 linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-amd64
   linux-headers-3.16.0-4-common linux-headers-amd64 linux-kbuild-3.16 patch
   spl spl-dkms zfs-dkms zfsutils
-0 upgraded, 20 newly installed, 0 to remove and 0 not upgraded.
-Need to get 2,453 kB/19.2 MB of archives.
-After this operation, 78.0 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main linux-headers-amd64 amd64 3.16+63 [5,050 B]
-Get:2 http://localhost/aptly-repo/ jessie/main spl-dkms all 0.6.5-1 [346 kB]
-Get:3 http://localhost/aptly-repo/ jessie/main zfs-dkms all 0.6.5.2-2 [1,060 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main spl amd64 0.6.5-1 [15.3 kB]
-Get:5 http://localhost/aptly-repo/ jessie/main libuutil1 amd64 0.6.5.2-2 [44.7 kB]
-Get:6 http://localhost/aptly-repo/ jessie/main libnvpair1 amd64 0.6.5.2-2 [41.7 kB]
-Get:7 http://localhost/aptly-repo/ jessie/main libzpool2 amd64 0.6.5.2-2 [399 kB]
-Get:8 http://localhost/aptly-repo/ jessie/main libzfs2 amd64 0.6.5.2-2 [152 kB]
-Get:9 http://localhost/aptly-repo/ jessie/main zfsutils amd64 0.6.5.2-2 [383 kB]
-Get:10 http://localhost/aptly-repo/ jessie/main debian-zfs amd64 7~jessie [6,806 B]
+0 upgraded, 32 newly installed, 0 to remove and 0 not upgraded.
+Need to get 27.7 MB/44.5 MB of archives.
+After this operation, 129 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/ jessie/main libstdc++-4.9-dev amd64 4.9.2-10 [1,121 kB]
+Get:2 http://localhost/aptly-repo/ jessie/main g++-4.9 amd64 4.9.2-10 [21.4 MB]
+Get:3 http://ftp.debian.org/debian/ jessie/main libalgorithm-diff-perl all 1.19.02-3 [51.7 kB]
+Get:4 http://ftp.debian.org/debian/ jessie/main libalgorithm-diff-xs-perl amd64 0.04-3+b1 [12.2 kB]
+Get:5 http://ftp.debian.org/debian/ jessie/main libalgorithm-merge-perl all 0.08-2 [13.5 kB]
+Get:6 http://localhost/aptly-repo/ jessie/main g++ amd64 4:4.9.2-2 [1,530 B]
+Get:7 http://localhost/aptly-repo/ jessie/main libdpkg-perl all 1.17.26 [1,072 kB]
+Get:8 http://ftp.debian.org/debian/ jessie/main libfile-fcntllock-perl amd64 0.22-1+b1 [36.4 kB]
+Get:9 http://localhost/aptly-repo/ jessie/main dpkg-dev all 1.17.26 [1,545 kB]
+Get:10 http://localhost/aptly-repo/ jessie/main build-essential amd64 11.7 [7,114 B]
+Get:11 http://localhost/aptly-repo/ jessie/main spl-dkms all 0.6.5-1 [346 kB]
+Get:12 http://localhost/aptly-repo/ jessie/main zfs-dkms all 0.6.5.2-2 [1,060 kB]
+Get:13 http://localhost/aptly-repo/ jessie/main spl amd64 0.6.5-1 [15.3 kB]
+Get:14 http://localhost/aptly-repo/ jessie/main libuutil1 amd64 0.6.5.2-2 [44.7 kB]
+Get:15 http://localhost/aptly-repo/ jessie/main libnvpair1 amd64 0.6.5.2-2 [41.7 kB]
+Get:16 http://localhost/aptly-repo/ jessie/main libzpool2 amd64 0.6.5.2-2 [399 kB]
+Get:17 http://localhost/aptly-repo/ jessie/main libzfs2 amd64 0.6.5.2-2 [152 kB]
+Get:18 http://localhost/aptly-repo/ jessie/main zfsutils amd64 0.6.5.2-2 [383 kB]
+Get:19 http://localhost/aptly-repo/ jessie/main debian-zfs amd64 7~jessie [6,806 B]
+Extracting templates from packages: 93%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 2,453 kB in 0s (25.0 MB/s)
+Fetched 27.7 MB in 0s (34.3 MB/s)
 Selecting previously unselected package libasan0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58649 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69794 files and directories currently installed.)
 Preparing to unpack .../libasan0_4.8.4-1_amd64.deb ...
 Unpacking libasan0:amd64 (4.8.4-1) ...
 Selecting previously unselected package linux-headers-3.16.0-4-common.
@@ -151,9 +166,27 @@ Unpacking linux-headers-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
 Selecting previously unselected package linux-headers-amd64.
 Preparing to unpack .../linux-headers-amd64_3.16+63_amd64.deb ...
 Unpacking linux-headers-amd64 (3.16+63) ...
+Selecting previously unselected package libstdc++-4.9-dev:amd64.
+Preparing to unpack .../libstdc++-4.9-dev_4.9.2-10_amd64.deb ...
+Unpacking libstdc++-4.9-dev:amd64 (4.9.2-10) ...
+Selecting previously unselected package g++-4.9.
+Preparing to unpack .../g++-4.9_4.9.2-10_amd64.deb ...
+Unpacking g++-4.9 (4.9.2-10) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../g++_4%3a4.9.2-2_amd64.deb ...
+Unpacking g++ (4:4.9.2-2) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../libdpkg-perl_1.17.26_all.deb ...
+Unpacking libdpkg-perl (1.17.26) ...
 Selecting previously unselected package patch.
 Preparing to unpack .../patch_2.7.5-1_amd64.deb ...
 Unpacking patch (2.7.5-1) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../dpkg-dev_1.17.26_all.deb ...
+Unpacking dpkg-dev (1.17.26) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../build-essential_11.7_amd64.deb ...
+Unpacking build-essential (11.7) ...
 Selecting previously unselected package dkms.
 Preparing to unpack .../dkms_2.2.0.3-2_all.deb ...
 Unpacking dkms (2.2.0.3-2) ...
@@ -201,7 +234,7 @@ depmod....
 DKMS: install completed.
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Selecting previously unselected package zfs-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69900 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 82214 files and directories currently installed.)
 Preparing to unpack .../zfs-dkms_0.6.5.2-2_all.deb ...
 Unpacking zfs-dkms (0.6.5.2-2) ...
 Selecting previously unselected package spl.
@@ -225,10 +258,35 @@ Unpacking zfsutils (0.6.5.2-2) ...
 Selecting previously unselected package debian-zfs.
 Preparing to unpack .../debian-zfs_7~jessie_amd64.deb ...
 Unpacking debian-zfs (7~jessie) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../libfakeroot_1.20.2-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.20.2-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../fakeroot_1.20.2-1_amd64.deb ...
+Unpacking fakeroot (1.20.2-1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../libalgorithm-diff-perl_1.19.02-3_all.deb ...
+Unpacking libalgorithm-diff-perl (1.19.02-3) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Preparing to unpack .../libalgorithm-diff-xs-perl_0.04-3+b1_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl (0.04-3+b1) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../libalgorithm-merge-perl_0.08-2_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-2) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../libfile-fcntllock-perl_0.22-1+b1_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-1+b1) ...
 Processing triggers for initramfs-tools (0.120) ...
 I: update-initramfs is disabled (live system is running on read-only media).
 Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for systemd (215-17+deb8u2) ...
+Setting up libstdc++-4.9-dev:amd64 (4.9.2-10) ...
+Setting up g++-4.9 (4.9.2-10) ...
+Setting up g++ (4:4.9.2-2) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up libdpkg-perl (1.17.26) ...
+Setting up dpkg-dev (1.17.26) ...
+Setting up build-essential (11.7) ...
 Setting up zfs-dkms (0.6.5.2-2) ...
 Loading new zfs-0.6.5.2 DKMS files...
 First Installation: checking all kernels...
@@ -291,6 +349,19 @@ update-rc.d: warning: start and stop actions are no longer supported; falling ba
 update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
 update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
 update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+Setting up libfakeroot:amd64 (1.20.2-1) ...
+Setting up fakeroot (1.20.2-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/fakeroot.1.gz because associated file /usr/share/man/es/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/faked.1.gz because associated file /usr/share/man/es/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/fakeroot.1.gz because associated file /usr/share/man/fr/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/faked.1.gz because associated file /usr/share/man/fr/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/fakeroot.1.gz because associated file /usr/share/man/sv/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/faked.1.gz because associated file /usr/share/man/sv/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
+Setting up libalgorithm-diff-perl (1.19.02-3) ...
+Setting up libalgorithm-diff-xs-perl (0.04-3+b1) ...
+Setting up libalgorithm-merge-perl (0.08-2) ...
+Setting up libfile-fcntllock-perl (0.22-1+b1) ...
 Processing triggers for initramfs-tools (0.120) ...
 I: update-initramfs is disabled (live system is running on read-only media).
 Setting up debian-zfs (7~jessie) ...
@@ -301,4 +372,4 @@ CLDS: * Add zfsonlinux repository to /etc/apt/sources.list.d/zfsonlinux.list.
 CLDS: * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
 CLDS: * Install debian-zfs: version: 0.6.5.2-2, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Delete zfsonlinux_6_all.deb[1992K].
-CLDS: * Disk size = 4906928K. Space Used = 139256K.
+CLDS: * Disk size = 5291092K. Space Used = 213844K.

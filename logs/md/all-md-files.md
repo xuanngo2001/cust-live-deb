@@ -1,8 +1,8 @@
 * >>>>>>>>> Running install.sh ...
   * Running on SHELL=/bin/bash VER=4.3.30(1)-release
-  * Disk size = 1380576K. Space Used = 1380576K.
+  * Disk size = 1380588K. Space Used = 1380588K.
 * >>>>>>>>> Running inst-min-con-00-apt-custom-repository.sh ...
-  * Disk size = 1380592K. Space Used = 16K.
+  * Disk size = 1380604K. Space Used = 16K.
 * >>>>>>>>> Running inst-min-con-00-linux-image.sh ...
   * After this operation, 304 kB of additional disk space will be used.
   * After this operation, 3111 kB of additional disk space will be used.
@@ -10,7 +10,7 @@
   * Mount /proc, /sys and /dev/pts.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
   * Install Linux image: 3.16.0-4-amd64.
-  * Disk size = 1782524K. Space Used = 401932K.
+  * Disk size = 1782540K. Space Used = 401936K.
   * The following NEW packages will be installed:
   ```bash
   dbus dialog libcap-ng0 libdbus-1-3 libexpat1
@@ -29,13 +29,11 @@
   sgml-base shared-mime-info uuid-runtime xdg-user-dirs xml-core
   ```
 * >>>>>>>>> Running inst-min-con-01-apt.sh ...
-  * Set APT to use local repository first.
-  * Set APT to skip installing recommended packages.
-  * Disk size = 1782536K. Space Used = 12K.
+  * Disk size = 1782548K. Space Used = 8K.
 * >>>>>>>>> Running inst-min-con-01-debconf-utils.sh ...
   * After this operation, 157 kB of additional disk space will be used.
   * Install debconf-utils to use debconf-set-selections.
-  * Disk size = 1782768K. Space Used = 232K.
+  * Disk size = 1782784K. Space Used = 236K.
   * The following NEW packages will be installed:
   ```bash
   debconf-utils
@@ -44,7 +42,7 @@
   * After this operation, 334 kB of additional disk space will be used.
   * Install localepurge to purge documentation of all languages, except en, en_US, en_US.UTF-8.
   * Reconfigure localepurge: dpkg-reconfigure localepurge
-  * Disk size = 1806256K. Space Used = 752K.
+  * Disk size = 1806268K. Space Used = 752K.
   * The following NEW packages will be installed:
   ```bash
   localepurge ucf
@@ -52,46 +50,37 @@
 * >>>>>>>>> Running inst-min-con-02-locale.sh ...
   * After this operation, 16.3 MB of additional disk space will be used.
   * Install locale and set it to use en_US.UTF-8.
-  * Disk size = 1805504K. Space Used = 22736K.
+  * Disk size = 1805516K. Space Used = 22732K.
   * The following NEW packages will be installed:
   ```bash
   locales
   ```
+* >>>>>>>>> Running inst-min-con-03-proxy.sh ...
+  * Disk size = 1806280K. Space Used = 12K.
 * >>>>>>>>> Running inst-min-con-03-startup-script.sh ...
   * Copy startup.sh to /etc/init.d/.
   * Make it executable.
   * Register it in the boot sequence.
-  * Disk size = 1806264K. Space Used = 8K.
+  * Disk size = 1806288K. Space Used = 8K.
 * >>>>>>>>> Running inst-min-con-04-block-services-start-postinstall.sh ...
   * Block services from starting after they are being installed.
-  * Disk size = 1806272K. Space Used = 8K.
+  * Disk size = 1806296K. Space Used = 8K.
 * >>>>>>>>> Running inst-min-con-auto-log-root.sh ...
-  * Disk size = 1806284K. Space Used = 12K.
+  * Disk size = 1806308K. Space Used = 12K.
 * >>>>>>>>> Running inst-min-con-bashrc.sh ...
   * Set common settings for /root/.bashrc.
   * Set dircolors to use dircolors-gnu-ls-colors.txt to make ls more beautiful.
-  * Disk size = 1806296K. Space Used = 12K.
+  * Disk size = 1806320K. Space Used = 12K.
 * >>>>>>>>> Running inst-min-con-cld-dev-tools-debootstrap.sh ...
   * After this operation, 234 kB of additional disk space will be used.
   * Install debootstrap allows the creation of a Debian base system in a directory.
-  * Disk size = 1806616K. Space Used = 320K.
+  * Disk size = 1806640K. Space Used = 320K.
   * The following NEW packages will be installed:
   ```bash
   debootstrap
   ```
 * >>>>>>>>> Running inst-min-con-cld-tools.sh ...
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-bash-color-meaning.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/fimg.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-mkiso.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/lspace.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/feh-ss.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-win-split.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-dd-usb.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-remaster.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-zfs-hd.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-persistence.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-lsmodules.sh to /usr/local/bin/.
-  * Disk size = 1806668K. Space Used = 52K.
+  * Disk size = 1806692K. Space Used = 52K.
 * >>>>>>>>> Running inst-min-con-compressors.sh ...
   * After this operation, 122 kB of additional disk space will be used.
   * After this operation, 812 kB of additional disk space will be used.
@@ -103,7 +92,7 @@
   * Install de/compressor: unzip.
   * Install de/compressor: zip.
   * Install de/compressor: p7zip.
-  * Disk size = 1810676K. Space Used = 4008K.
+  * Disk size = 1810700K. Space Used = 4008K.
   * The following NEW packages will be installed:
   ```bash
   bzip2
@@ -117,21 +106,19 @@
   * Add deb-multimedia sources list.
   * Delete deb-multimedia-keyring_2015.6.1_all.deb[12K].
   * apt-get update
-  * Disk size = 1811940K. Space Used = 1264K.
+  * Disk size = 1811964K. Space Used = 1264K.
 * >>>>>>>>> Running inst-min-con-filesystem-exfat.sh ...
-  * After this operation, 550 kB of additional disk space will be used.
-  * After this operation, 234 kB of additional disk space will be used.
+  * After this operation, 784 kB of additional disk space will be used.
   * Install exfat-fuse so that you can read and write SD cards and USB keys.
-  * Disk size = 1813132K. Space Used = 1192K.
+  * Disk size = 1813148K. Space Used = 1184K.
   * The following NEW packages will be installed:
   ```bash
-  exfat-fuse fuse libfuse2
-  exfat-utils
+  exfat-fuse exfat-utils fuse libfuse2
   ```
 * >>>>>>>>> Running inst-min-con-filesystem-ntfs-3g.sh ...
   * After this operation, 1,632 kB of additional disk space will be used.
   * Install support for NTFS: ntfs-3g.
-  * Disk size = 1815288K. Space Used = 2156K.
+  * Disk size = 1815312K. Space Used = 2164K.
   * The following NEW packages will be installed:
   ```bash
   ntfs-3g
@@ -141,7 +128,7 @@
   * After this operation, 655 kB of additional disk space will be used.
   * Install CPU firmware: amd64-microcode.
   * Install CPU firmware: intel-microcode.
-  * Disk size = 1816636K. Space Used = 1348K.
+  * Disk size = 1816656K. Space Used = 1344K.
   * The following NEW packages will be installed:
   ```bash
   amd64-microcode
@@ -150,7 +137,7 @@
 * >>>>>>>>> Running inst-min-con-firmware-net-b43-installer.sh ...
   * After this operation, 100 kB of additional disk space will be used.
   * Install b43 for Dell Wireless 1397 WLAN Mini-Card Driver.
-  * Disk size = 1854348K. Space Used = 37712K.
+  * Disk size = 1854368K. Space Used = 37712K.
   * The following NEW packages will be installed:
   ```bash
   b43-fwcutter
@@ -158,7 +145,7 @@
 * >>>>>>>>> Running inst-min-con-firmware.sh ...
   * After this operation, 41.7 MB of additional disk space will be used.
   * Install firmwares: atmel-firmware, bluez-firmware, firmware-atheros, firmware-bnx2, firmware-bnx2x, firmware-brcm80211, firmware-intelwimax, firmware-ipw2x00, firmware-ivtv, firmware-iwlwifi, firmware-libertas, firmware-linux, firmware-linux-free, firmware-linux-nonfree, firmware-qlogic, firmware-ralink, firmware-realtek, zd1211-firmware.
-  * Disk size = 1908048K. Space Used = 53700K.
+  * Disk size = 1908072K. Space Used = 53704K.
   * The following NEW packages will be installed:
   ```bash
   atmel-firmware bluez-firmware firmware-atheros firmware-bnx2 firmware-bnx2x
@@ -168,7 +155,7 @@
   zd1211-firmware
   ```
 * >>>>>>>>> Running inst-min-con-live-build-tools.sh ...
-  * After this operation, 110 kB of additional disk space will be used.
+  * After this operation, 3,632 kB of additional disk space will be used.
   * After this operation, 1,789 kB of additional disk space will be used.
   * After this operation, 392 kB of additional disk space will be used.
   * Install xorriso to create isohybrid.
@@ -176,25 +163,25 @@
   * Note: boot.cat is automatically created.
   * Install rsync to copy directories.
   * Install squashfs-tools to create new squashfs.
-  * Disk size = 1911628K. Space Used = 3580K.
+  * Disk size = 1916808K. Space Used = 8736K.
   * The following NEW packages will be installed:
   ```bash
-  isolinux
+  isolinux syslinux-common
   libburn4 libisoburn1 libisofs6 libjte1 xorriso
   liblzo2-2 squashfs-tools
   ```
 * >>>>>>>>> Running inst-min-con-mtp-tools.sh ...
-  * After this operation, 2,114 kB of additional disk space will be used.
+  * After this operation, 2,168 kB of additional disk space will be used.
   * Install mtp-tools to mount smartphones.
-  * Disk size = 1914180K. Space Used = 2552K.
+  * Disk size = 1919484K. Space Used = 2676K.
   * The following NEW packages will be installed:
   ```bash
-  libmtp-common libmtp9 libusb-1.0-0 mtp-tools
+  libmtp-common libmtp-runtime libmtp9 libusb-1.0-0 mtp-tools
   ```
 * >>>>>>>>> Running inst-min-con-ntp.sh ...
   * After this operation, 1,871 kB of additional disk space will be used.
   * Install Network Time Protocol: ntp.
-  * Disk size = 1916692K. Space Used = 2512K.
+  * Disk size = 1921988K. Space Used = 2504K.
   * The following NEW packages will be installed:
   ```bash
   libbsd0 libedit2 libopts25 ntp
@@ -202,7 +189,7 @@
 * >>>>>>>>> Running inst-min-con-numlock.sh ...
   * After this operation, 4,381 kB of additional disk space will be used.
   * Install numlockx to turn on NumLock on boot.
-  * Disk size = 1923200K. Space Used = 6508K.
+  * Disk size = 1928504K. Space Used = 6516K.
   * The following NEW packages will be installed:
   ```bash
   libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxext6 libxi6 libxtst6
@@ -211,7 +198,7 @@
 * >>>>>>>>> Running inst-min-con-pciutils.sh ...
   * After this operation, 1,181 kB of additional disk space will be used.
   * Install pciutils to troubleshoot pci devices(i.e. lspci).
-  * Disk size = 1924780K. Space Used = 1580K.
+  * Disk size = 1930072K. Space Used = 1568K.
   * The following NEW packages will be installed:
   ```bash
   libpci3 pciutils
@@ -221,289 +208,435 @@
   * Install ALSA sound.
   * Test sound: aplay /usr/share/sounds/alsa/*.
   * Add key bindings.
-  * Disk size = 1932628K. Space Used = 7848K.
+  * Disk size = 1937924K. Space Used = 7852K.
   * The following NEW packages will be installed:
   ```bash
   alsa-base alsa-utils libasound2 libasound2-data libsamplerate0
   ```
 * >>>>>>>>> Running inst-min-con-udevil-bpo.sh ...
-  * After this operation, 503 kB of additional disk space will be used.
-  * Install udevil version 0.4.4.
-  * Install udevil to auto mount USB devices.
-  * Set devmon to auto start on startup.
-  * Need ntfs-3g driver to be able to read and write ntfs partition.
-  * Need exfat-fuse to be able to read and write exfat partition.
-  * Disk size = 1938548K. Space Used = 5920K.
+  * After this operation, 290 MB of additional disk space will be used.
+  * Disk size = 2262696K. Space Used = 324772K.
   * The following NEW packages will be installed:
   ```bash
-  udevil
+  adwaita-icon-theme aspell aspell-en at-spi2-core colord colord-data
+  dconf-gsettings-backend dconf-service dictionaries-common dosfstools eject
+  emacsen-common enchant fontconfig fontconfig-config fonts-dejavu-core gdisk
+  geoclue-2.0 glib-networking glib-networking-common glib-networking-services
+  gsettings-desktop-schemas gstreamer1.0-plugins-base
+  gstreamer1.0-plugins-good gstreamer1.0-x hicolor-icon-theme hunspell-en-us
+  iso-codes krb5-locales libaa1 libaspell15 libatasmart4 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatspi2.0-0 libavahi-client3
+  libavahi-common-data libavahi-common3 libavc1394-0 libcaca0
+  libcairo-gobject2 libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module
+  libcanberra0 libcdparanoia0 libcolord2 libcolorhug2 libcroco3 libcups2
+  libdatrie1 libdconf1 libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2
+  libdv4 libelf1 libenchant1c2a libexif12 libfile-copy-recursive-perl libflac8
+  libfontconfig1 libfreetype6 libgd3 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-common libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa
+  libglu1-mesa libgphoto2-6 libgphoto2-l10n libgphoto2-port10
+  libgphoto2-port12 libgpm2 libgraphite2-3 libgssapi-krb5-2
+  libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libgtk-3-0 libgtk-3-bin
+  libgtk-3-common libgudev-1.0-0 libgusb2 libharfbuzz-icu0 libharfbuzz0b
+  libhunspell-1.3-0 libice6 libiec61883-0 libieee1284-3 libjack-jackd2-0
+  libjasper1 libjavascriptcoregtk-3.0-0 libjbig0 libjim0.75 libjpeg62-turbo
+  libjson-glib-1.0-0 libjson-glib-1.0-common libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 liblcms2-2 libllvm3.5 libltdl7 libmbim-glib4
+  libmbim-proxy libmm-glib0 libnl-3-200 libnl-genl-3-200 libnotify4 libogg0
+  libopus0 liborc-0.4-0 libpam-systemd libpango-1.0-0 libpangocairo-1.0-0
+  libpangoft2-1.0-0 libparted2 libpciaccess0 libpcsclite1 libpixman-1-0
+  libpng12-0 libpolkit-agent-1-0 libpolkit-backend-1-0 libpolkit-gobject-1-0
+  libproxy1 libqmi-glib1 libqmi-proxy libraw1394-11 librest-0.7-0 librsvg2-2
+  librsvg2-common libsane libsane-common libsane-extras libsane-extras-common
+  libsecret-1-0 libsecret-common libshout3 libsm6 libsoup-gnome2.4-1
+  libsoup2.4-1 libspeex1 libsqlite3-0 libtag1-vanilla libtag1c2a libtdb1
+  libthai-data libthai0 libtheora0 libtiff5 libtxc-dxtn-s2tc0 libudisks2-0
+  libv4l-0 libv4lconvert0 libvisual-0.4-0 libvisual-0.4-plugins libvorbis0a
+  libvorbisenc2 libvorbisfile3 libvpx1 libwavpack1 libwayland-client0
+  libwayland-cursor0 libwebkitgtk-3.0-0 libwebkitgtk-3.0-common libwebp5
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+  libxcb-render0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxinerama1 libxkbcommon0 libxpm4 libxrandr2
+  libxrender1 libxshmfence1 libxslt1.1 libxt6 libxv1 libxxf86vm1 modemmanager
+  notification-daemon parted pmount policykit-1 sane-utils udevil udisks2
+  update-inetd usb-modeswitch usb-modeswitch-data wpasupplicant xkb-data
+  zenity zenity-common
   ```
+* >>>>>>>>> Running inst-min-con-xtra-buffer-pv.sh ...
+  * After this operation, 166 kB of additional disk space will be used.
+  * Install pv.
+  * Disk size = 2262844K. Space Used = 148K.
+  * The following NEW packages will be installed:
+  ```bash
+  pv
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-buffer.sh ...
+  * After this operation, 71.7 kB of additional disk space will be used.
+  * Install buffer.
+  * Disk size = 2262924K. Space Used = 80K.
+  * The following NEW packages will be installed:
+  ```bash
+  buffer
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-curl.sh ...
+  * After this operation, 3,664 kB of additional disk space will be used.
+  * Install curl.
+  * Disk size = 2270164K. Space Used = 7240K.
+  * The following NEW packages will be installed:
+  ```bash
+  ca-certificates curl libcurl3 libldap-2.4-2 librtmp1 libsasl2-2
+  libsasl2-modules-db libssh2-1 openssl
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-dev-tool-java-jdk.sh ...
+  * After this operation, 194 MB of additional disk space will be used.
+  * Install JAVA JDK: default-jdk.
+  * Disk size = 2550092K. Space Used = 279928K.
+  * The following NEW packages will be installed:
+  ```bash
+  ca-certificates-java dbus-x11 default-jdk default-jre default-jre-headless
+  file fonts-dejavu-extra gconf-service gconf2 gconf2-common gnome-mime-data
+  java-common libasyncns0 libatk-wrapper-java libatk-wrapper-java-jni
+  libavahi-glib1 libbonobo2-0 libbonobo2-common libdbus-glib-1-2 libgconf-2-4
+  libgconf2-4 libgif4 libgnome-2-0 libgnome2-0 libgnome2-bin libgnome2-common
+  libgnomevfs2-0 libgnomevfs2-common libgnomevfs2-extra libgtk2.0-0
+  libgtk2.0-bin libgtk2.0-common libice-dev libmagic1 libnspr4 libnss3
+  liborbit-2-0 libpthread-stubs0-dev libpulse0 libpython-stdlib
+  libpython2.7-minimal libpython2.7-stdlib libsctp1 libsm-dev libsndfile1
+  libwrap0 libx11-dev libx11-doc libxau-dev libxcb1-dev libxdmcp-dev libxt-dev
+  lksctp-tools mime-support openjdk-7-jdk openjdk-7-jre openjdk-7-jre-headless
+  psmisc python python-minimal python2.7 python2.7-minimal tcpd tzdata-java
+  x11proto-core-dev x11proto-input-dev x11proto-kb-dev xorg-sgml-doctools
+  xtrans-dev
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-dev-tool-tree.sh ...
+  * After this operation, 102 kB of additional disk space will be used.
+  * Install tree to display files and directories structure.
+  * Disk size = 2550308K. Space Used = 216K.
+  * The following NEW packages will be installed:
+  ```bash
+  tree
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-gnuplot.sh ...
+  * After this operation, 31.1 MB of additional disk space will be used.
+  * Install gnuplot.
+  * Disk size = 2590436K. Space Used = 40128K.
+  * The following NEW packages will be installed:
+  ```bash
+  aglfn gnuplot gnuplot-data gnuplot-qt gnuplot-tex libaudio2 liblua5.1-0
+  libmng1 libqt4-network libqt4-svg libqt4-xml libqtcore4 libqtdbus4 libqtgui4
+  qtcore4-l10n
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-imagemagick.sh ...
+  * After this operation, 67.6 MB of additional disk space will be used.
+  * Install imagemagick to process image from command line.
+  * Disk size = 2679220K. Space Used = 88784K.
+  * The following NEW packages will be installed:
+  ```bash
+  fonts-droid ghostscript gsfonts imagemagick imagemagick-6.q16
+  imagemagick-common libcupsfilters1 libcupsimage2 libdjvulibre-text
+  libdjvulibre21 libfftw3-double3 libgomp1 libgs9 libgs9-common libijs-0.35
+  libilmbase6 libjbig2dec0 liblqr-1-0 libmagickcore-6.q16-2
+  libmagickcore-6.q16-2-extra libmagickwand-6.q16-2 libnetpbm10 libopenexr6
+  libpaper-utils libpaper1 libwmf0.2-7 netpbm poppler-data
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-iso-iat.sh ...
+  * After this operation, 65.5 kB of additional disk space will be used.
+  * Install iat to convert BIN, MDF, PDI, CDI, NRG, and B5I into ISO-9660.
+  * Disk size = 2679284K. Space Used = 64K.
+  * The following NEW packages will be installed:
+  ```bash
+  iat
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-java-jre.sh ...
+  * Install JAVA JRE: default-jre.
+  * Disk size = 2679288K. Space Used = 4K.
+* >>>>>>>>> Running inst-min-con-xtra-locate.sh ...
+  * After this operation, 324 kB of additional disk space will be used.
+  * Install locate to generate an index of files and directories. Searching for files will be much faster.
+  * Add locate alias.
+  * Run updatedb to update the database.
+  * Disk size = 2679856K. Space Used = 568K.
+  * The following NEW packages will be installed:
+  ```bash
+  locate
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-macchanger.sh ...
+  * After this operation, 622 kB of additional disk space will be used.
+  * Install macchanger.
+  * Set macchanger to change MAC address whenever network device is up or down.
+  * To configure macchanger: dpkg-reconfigure macchanger.
+  * Check whether it is working: macchanger -s eth0.
+  * systemctl status macchanger@eth0.service
+  * Disk size = 2680740K. Space Used = 884K.
+  * The following NEW packages will be installed:
+  ```bash
+  macchanger
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-mariadb-server.sh ...
+  * After this operation, 134 MB of additional disk space will be used.
+  * Disk size = 2937900K. Space Used = 257160K.
+  * The following NEW packages will be installed:
+  ```bash
+  libaio1 libdbd-mysql-perl libdbi-perl libhtml-template-perl libmysqlclient18
+  libreadline5 libterm-readkey-perl mariadb-client-10.0
+  mariadb-client-core-10.0 mariadb-common mariadb-server mariadb-server-10.0
+  mariadb-server-core-10.0 mysql-common
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-mtran.sh ...
+  * Copied /root/scripts/repository/inst-min-con-xtra-mtran/mtran.sh to /usr/local/bin/.
+  * Disk size = 2937908K. Space Used = 8K.
+* >>>>>>>>> Running inst-min-con-xtra-pdf-poppler-utils.sh ...
+  * After this operation, 4,134 kB of additional disk space will be used.
+  * Install poppler-utils to extract text from pdf files.
+  * Disk size = 2943436K. Space Used = 5528K.
+  * The following NEW packages will be installed:
+  ```bash
+  libopenjpeg5 libpoppler46 poppler-utils
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-php5.sh ...
+  * After this operation, 27.9 MB of additional disk space will be used.
+  * Install php5.
+  * Disk size = 2980516K. Space Used = 37080K.
+  * The following NEW packages will be installed:
+  ```bash
+  apache2 apache2-bin apache2-data apache2-utils libapache2-mod-php5 libapr1
+  libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libonig2
+  libperl4-corelibs-perl libqdbm14 lsof php5 php5-cli php5-common php5-json
+  ssl-cert
+  ```
+* >>>>>>>>> Running inst-min-con-xtra-timezone.sh ...
+  * Set time zone to EST (America/Montreal) in /etc/timezone.
+  * Disk size = 2980520K. Space Used = 4K.
 * >>>>>>>>> Running inst-min-win-00-xorg.sh ...
-  * After this operation, 72.5 MB of additional disk space will be used.
+  * After this operation, 51.6 MB of additional disk space will be used.
   * Set keyboard to use US international.
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
-  * Disk size = 2032408K. Space Used = 93860K.
+  * Disk size = 3056864K. Space Used = 76344K.
   * The following NEW packages will be installed:
   ```bash
-  keyboard-configuration libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2
-  libegl1-mesa libelf1 libepoxy0 libevdev2 libfontenc1 libfreetype6 libgbm1
-  libgl1-mesa-glx libglapi-mesa libice6 libllvm3.5 libmtdev1 libpciaccess0
-  libpixman-1-0 libpng12-0 libsm6 libwayland-client0 libwayland-server0
-  libx11-xcb1 libxatracker2 libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0
-  libxcb-present0 libxcb-render0 libxcb-shape0 libxcb-sync1 libxcb-util0
-  libxcb-xfixes0 libxdamage1 libxfixes3 libxfont1 libxkbfile1 libxmu6 libxmuu1
-  libxpm4 libxshmfence1 libxt6 libxv1 libxvmc1 libxxf86vm1 x11-xkb-utils xauth
-  xinit xkb-data xserver-common xserver-xorg xserver-xorg-core
-  xserver-xorg-input-all xserver-xorg-input-evdev xserver-xorg-input-mouse
-  xserver-xorg-input-synaptics xserver-xorg-input-vmmouse
-  xserver-xorg-video-all xserver-xorg-video-ati xserver-xorg-video-cirrus
-  xserver-xorg-video-fbdev xserver-xorg-video-intel xserver-xorg-video-mach64
-  xserver-xorg-video-mga xserver-xorg-video-modesetting
-  xserver-xorg-video-neomagic xserver-xorg-video-nouveau
-  xserver-xorg-video-openchrome xserver-xorg-video-r128
-  xserver-xorg-video-radeon xserver-xorg-video-savage
-  xserver-xorg-video-siliconmotion xserver-xorg-video-sisusb
-  xserver-xorg-video-tdfx xserver-xorg-video-trident xserver-xorg-video-vesa
-  xserver-xorg-video-vmware
+  keyboard-configuration libegl1-mesa libegl1-mesa-drivers libepoxy0 libevdev2
+  libfontenc1 libgbm1 libmtdev1 libopenvg1-mesa libutempter0
+  libwayland-egl1-mesa libwayland-server0 libxatracker2 libxaw7 libxcb-shape0
+  libxcb-util0 libxcb-xfixes0 libxfont1 libxft2 libxkbfile1 libxmu6 libxmuu1
+  libxvmc1 libxxf86dga1 x11-utils x11-xkb-utils xauth xbitmaps xfonts-base
+  xfonts-encodings xfonts-utils xinit xserver-common xserver-xorg
+  xserver-xorg-core xserver-xorg-input-all xserver-xorg-input-evdev
+  xserver-xorg-input-mouse xserver-xorg-input-synaptics
+  xserver-xorg-input-vmmouse xserver-xorg-input-wacom xserver-xorg-video-all
+  xserver-xorg-video-ati xserver-xorg-video-cirrus xserver-xorg-video-fbdev
+  xserver-xorg-video-intel xserver-xorg-video-mach64 xserver-xorg-video-mga
+  xserver-xorg-video-modesetting xserver-xorg-video-neomagic
+  xserver-xorg-video-nouveau xserver-xorg-video-openchrome
+  xserver-xorg-video-qxl xserver-xorg-video-r128 xserver-xorg-video-radeon
+  xserver-xorg-video-savage xserver-xorg-video-siliconmotion
+  xserver-xorg-video-sisusb xserver-xorg-video-tdfx xserver-xorg-video-trident
+  xserver-xorg-video-vesa xserver-xorg-video-vmware xterm
   ```
 * >>>>>>>>> Running inst-min-win-01-wm-jwm.sh ...
-  * After this operation, 15.1 MB of additional disk space will be used.
-  * Install Window Manager: JWM vsvn-579 by Joe Wingbermuehle.
-  * Set jwmrc.
-  * Disk size = 2053944K. Space Used = 21536K.
+  * After this operation, 430 kB of additional disk space will be used.
+  * Disk size = 3057544K. Space Used = 680K.
   * The following NEW packages will be installed:
   ```bash
-  fontconfig-config fonts-dejavu-core jwm libfontconfig1 libfribidi0
-  libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libjasper1 libjbig0
-  libjpeg62-turbo libperl5.20 libstartup-notification0 libtiff5 libxft2
-  libxinerama1 libxrender1 ncurses-term rxvt-unicode-256color
+  jwm libfribidi0
   ```
 * >>>>>>>>> Running inst-min-win-cld-dev-tools-pandoc.sh ...
-  * After this operation, 39.0 MB of additional disk space will be used.
+  * After this operation, 38.6 MB of additional disk space will be used.
   * Install pandoc to generate user manual.
-  * Disk size = 2096952K. Space Used = 43008K.
+  * Disk size = 3100024K. Space Used = 42480K.
   * The following NEW packages will be installed:
   ```bash
-  liblua5.1-0 libyaml-0-2 pandoc pandoc-data
+  libyaml-0-2 pandoc pandoc-data
   ```
 * >>>>>>>>> Running inst-min-win-cld-win-split.sh ...
   * After this operation, 81.9 kB of additional disk space will be used.
-  * After this operation, 777 kB of additional disk space will be used.
-  * Install required applications for cld-win-split.sh: wmctrl and x11-utils for xprop.
-  * Add key bindings: Ctrl+Alt+Left, Right, Up, Down, 1, 2, 3, 4, 5, 6, 7, 8, 9.
-  * Disk size = 2098240K. Space Used = 1288K.
+  * Disk size = 3100120K. Space Used = 96K.
   * The following NEW packages will be installed:
   ```bash
   wmctrl
-  libxcomposite1 libxrandr2 libxxf86dga1 x11-utils
   ```
 * >>>>>>>>> Running inst-min-win-jwm-help-manuals-text.sh ...
-  * Add Help menu in JWM.
-  * Disk size = 2098268K. Space Used = 28K.
+  * Disk size = 3100148K. Space Used = 28K.
 * >>>>>>>>> Running inst-min-win-jwm-keys-alsa.sh ...
-  * Add ALSA key binding.
-  * Add script to auto-detect ALSA controller on JWM startup.
-  * Disk size = 2098276K. Space Used = 8K.
+  * Disk size = 3100152K. Space Used = 4K.
 * >>>>>>>>> Running inst-min-win-menu.sh ...
   * After this operation, 1,829 kB of additional disk space will be used.
   * Install menu, an easy way to get installed programs in the menu automatically.
-  * Disk size = 2099548K. Space Used = 1272K.
+  * Disk size = 3101428K. Space Used = 1276K.
   * The following NEW packages will be installed:
   ```bash
   menu
   ```
 * >>>>>>>>> Running inst-min-win-systray-volumeicon-alsa.sh ...
-  * After this operation, 36.6 MB of additional disk space will be used.
-  * Install volume controller in system tray.
-  * Set left-click to display volume slider: lmb_slider=true.
-  * Set volumeicon to run on JWN startup.
-  * Disk size = 2125008K. Space Used = 25460K.
+  * Disk size = 3101444K. Space Used = 16K.
+* >>>>>>>>> Running inst-min-xtra-encoding-libtext-iconv-perl.sh ...
+  * Install libtext-iconv-perl so that you can use iconv to convert to other encoding.
+  * Disk size = 3101448K. Space Used = 4K.
+* >>>>>>>>> Running inst-min-xtra-fonts-asian.sh ...
+  * After this operation, 48.2 MB of additional disk space will be used.
+  * Install fonts-hanazono to display Asian characters correctly.
+  * Test it by opening website http://ctext.org/zh.
+  * Disk size = 3167440K. Space Used = 65992K.
   * The following NEW packages will be installed:
   ```bash
-  fontconfig libatk1.0-0 libatk1.0-data libavahi-client3 libavahi-common-data
-  libavahi-common3 libcairo2 libcups2 libdatrie1 libgraphite2-3
-  libgssapi-krb5-2 libgtk2.0-0 libgtk2.0-common libharfbuzz0b libk5crypto3
-  libkeyutils1 libkrb5-3 libkrb5support0 libnotify4 libpango-1.0-0
-  libpangocairo-1.0-0 libpangoft2-1.0-0 libthai-data libthai0 libxcb-shm0
-  libxcursor1 volumeicon-alsa
+  fonts-hanazono
   ```
 * >>>>>>>>> Running inst-std-00-jwm.sh ...
-  * Add default standard menus in JWM.
-  * Disk size = 2125012K. Space Used = 4K.
+  * Disk size = 3167448K. Space Used = 8K.
 * >>>>>>>>> Running inst-std-accessories-calc-speedcrunch.sh ...
-  * After this operation, 26.3 MB of additional disk space will be used.
+  * After this operation, 1,830 kB of additional disk space will be used.
   * Install calculator: speedcrunch.
   * Insert speedcrunch in Accessories menu.
-  * Disk size = 2159204K. Space Used = 34192K.
+  * Disk size = 3170588K. Space Used = 3140K.
   * The following NEW packages will be installed:
   ```bash
-  libaudio2 liblcms2-2 libmng1 libqt4-xml libqtcore4 libqtgui4 qtcore4-l10n
   speedcrunch
   ```
 * >>>>>>>>> Running inst-std-accessories-feh.sh ...
-  * After this operation, 5,145 kB of additional disk space will be used.
+  * After this operation, 1,750 kB of additional disk space will be used.
   * Install command line image viewer: feh.
-  * Disk size = 2164392K. Space Used = 5188K.
+  * Disk size = 3173104K. Space Used = 2516K.
   * The following NEW packages will be installed:
   ```bash
-  feh libcurl3 libexif12 libgif4 libid3tag0 libimlib2 libldap-2.4-2 librtmp1
-  libsasl2-2 libsasl2-modules-db libssh2-1
+  feh libid3tag0 libimlib2 libjpeg-turbo-progs libturbojpeg1
   ```
 * >>>>>>>>> Running inst-std-accessories-gpicview.sh ...
-  * After this operation, 876 kB of additional disk space will be used.
+  * After this operation, 28.7 MB of additional disk space will be used.
   * Install Image Viewer: gpicview.
   * Insert gpicview in Accessories menu.
-  * Disk size = 2164744K. Space Used = 352K.
+  * Disk size = 3210852K. Space Used = 37748K.
   * The following NEW packages will be installed:
   ```bash
-  gpicview
+  cpp cpp-4.9 gpicview libauthen-sasl-perl libcloog-isl4 libencode-locale-perl
+  libfile-basedir-perl libfile-desktopentry-perl libfile-listing-perl
+  libfile-mimeinfo-perl libfont-afm-perl libhtml-form-perl libhtml-format-perl
+  libhtml-parser-perl libhtml-tagset-perl libhtml-tree-perl
+  libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl
+  libhttp-message-perl libhttp-negotiate-perl libio-html-perl
+  libio-socket-ssl-perl libisl10 liblwp-mediatypes-perl
+  liblwp-protocol-https-perl libmailtools-perl libmpc3 libmpfr4
+  libnet-dbus-perl libnet-http-perl libnet-smtp-ssl-perl libnet-ssleay-perl
+  libtie-ixhash-perl libtimedate-perl liburi-perl libwww-perl
+  libwww-robotrules-perl libx11-protocol-perl libxml-parser-perl
+  libxml-twig-perl libxml-xpathengine-perl x11-xserver-utils xdg-utils
   ```
 * >>>>>>>>> Running inst-std-accessories-mupdf.sh ...
-  * After this operation, 12.0 MB of additional disk space will be used.
+  * After this operation, 11.9 MB of additional disk space will be used.
   * Install PDF reader: Mupdf.
-  * Disk size = 2180092K. Space Used = 15348K.
+  * Disk size = 3226008K. Space Used = 15156K.
   * The following NEW packages will be installed:
   ```bash
-  libjbig2dec0 libopenjp2-7 mupdf
+  libopenjp2-7 mupdf
   ```
 * >>>>>>>>> Running inst-std-accessories-prtscr-gnome-screenshot.sh ...
-  * After this operation, 58.8 MB of additional disk space will be used.
-  * Install gnome-screenshot to be used for PrintScreen key.
-  * Insert PrintScreen key binding.
-  * By default, screenshots are saved under ~/Pictures/.
-  * Disk size = 2237772K. Space Used = 57680K.
+  * After this operation, 733 kB of additional disk space will be used.
+  * Disk size = 3226332K. Space Used = 324K.
   * The following NEW packages will be installed:
   ```bash
-  adwaita-icon-theme dconf-gsettings-backend dconf-service glib-networking
-  glib-networking-common glib-networking-services gnome-screenshot
-  gsettings-desktop-schemas hicolor-icon-theme libatk-bridge2.0-0
-  libatspi2.0-0 libcairo-gobject2 libcanberra-gtk3-0 libcanberra0 libcolord2
-  libcroco3 libdconf1 libgtk-3-0 libgtk-3-bin libgtk-3-common
-  libjson-glib-1.0-0 libjson-glib-1.0-common libltdl7 libogg0 libproxy1
-  librest-0.7-0 librsvg2-2 librsvg2-common libsoup-gnome2.4-1 libsoup2.4-1
-  libsqlite3-0 libtdb1 libvorbis0a libvorbisfile3 libwayland-cursor0
-  libxkbcommon0
+  gnome-screenshot
   ```
 * >>>>>>>>> Running inst-std-accessories-scite.sh ...
   * After this operation, 4,829 kB of additional disk space will be used.
-  * After this operation, 221 kB of additional disk space will be used.
   * Install Text Editor: SciTE.
   * Install at-spi2-core to shut up Accessibility warning message.
   * Insert SciTE in Accessories menu.
-  * Disk size = 2244308K. Space Used = 6536K.
+  * Disk size = 3232612K. Space Used = 6280K.
   * The following NEW packages will be installed:
   ```bash
   scite
-  at-spi2-core
   ```
 * >>>>>>>>> Running inst-std-accessories-terminal-xfce.sh ...
-  * After this operation, 11.1 MB of additional disk space will be used.
+  * After this operation, 10.8 MB of additional disk space will be used.
   * Install terminal: xfce4-terminal.
-  * Disk size = 2253528K. Space Used = 9220K.
+  * Disk size = 3241308K. Space Used = 8696K.
   * The following NEW packages will be installed:
   ```bash
-  dbus-x11 exo-utils libdbus-glib-1-2 libexo-1-0 libexo-common libexo-helpers
-  libpango1.0-0 libpangox-1.0-0 libpangoxft-1.0-0 libvte-common libvte9
-  libxfce4ui-1-0 libxfce4util-common libxfce4util6 libxfconf-0-2
-  xfce-keyboard-shortcuts xfce4-terminal xfconf
+  exo-utils libexo-1-0 libexo-common libexo-helpers libpango1.0-0
+  libpangox-1.0-0 libpangoxft-1.0-0 libstartup-notification0 libvte-common
+  libvte9 libxfce4ui-1-0 libxfce4util-bin libxfce4util-common libxfce4util6
+  libxfconf-0-2 xfce-keyboard-shortcuts xfce4-terminal xfconf
   ```
 * >>>>>>>>> Running inst-std-accessories-thunar.sh ...
-  * After this operation, 10.0 MB of additional disk space will be used.
-  * Install File Manger: thunar, thunar-media-tags-plugin, thunar-archive-plugin, thunar-volman.
-  * Insert Thunar in Accessories menu.
-  * Disk size = 2259876K. Space Used = 6348K.
+  * After this operation, 30.3 MB of additional disk space will be used.
+  * Disk size = 3263276K. Space Used = 21968K.
   * The following NEW packages will be installed:
   ```bash
-  desktop-file-utils libgudev-1.0-0 libtag1-vanilla libtag1c2a libtagc0
-  libthunarx-2-0 thunar thunar-archive-plugin thunar-data
-  thunar-media-tags-plugin thunar-volman
+  desktop-file-utils gvfs gvfs-common gvfs-daemons gvfs-libs libaacs0
+  libbluray1 libgarcon-1-0 libgarcon-common libpoppler-glib8 libtagc0
+  libthunarx-2-0 libtumbler-1-0 libwnck-common libwnck22 libxres1 p7zip-full
+  policykit-1-gnome thunar thunar-archive-plugin thunar-data
+  thunar-media-tags-plugin thunar-volman tumbler tumbler-common xarchiver
+  xfce4-panel xz-utils
   ```
 * >>>>>>>>> Running inst-std-accessories-xarchiver.sh ...
-  * After this operation, 1,211 kB of additional disk space will be used.
   * Install Archive Manager: xarchiver.
-  * Disk size = 2261120K. Space Used = 1244K.
-  * The following NEW packages will be installed:
-  ```bash
-  xarchiver
-  ```
+  * Disk size = 3263280K. Space Used = 4K.
 * >>>>>>>>> Running inst-std-font-fonts-liberation.sh ...
   * After this operation, 2,178 kB of additional disk space will be used.
   * Install fonts-liberation to get free variants of the Times, Arial and Courier fonts.
   * Otherwise, install ttf-mscorefonts-installer to get Microsoft TrueType core fonts.
-  * Disk size = 2264116K. Space Used = 2996K.
+  * Disk size = 3266292K. Space Used = 3012K.
   * The following NEW packages will be installed:
   ```bash
   fonts-liberation
   ```
 * >>>>>>>>> Running inst-std-graphic-pinta.sh ...
-  * After this operation, 45.0 MB of additional disk space will be used.
+  * After this operation, 45.8 MB of additional disk space will be used.
   * Install Image Editor: Pinta.
   * Insert Pinta menu in Graphics.
-  * Disk size = 2335668K. Space Used = 71552K.
+  * Disk size = 3338852K. Space Used = 72560K.
   * The following NEW packages will be installed:
   ```bash
-  cli-common gnome-icon-theme libgdiplus libglib2.0-cil libgtk2.0-cil
-  libmono-addins-gui0.2-cil libmono-addins0.2-cil libmono-cairo4.0-cil
-  libmono-corlib2.0-cil libmono-corlib4.5-cil libmono-posix2.0-cil
-  libmono-posix4.0-cil libmono-security2.0-cil libmono-security4.0-cil
-  libmono-sharpzip4.84-cil libmono-system-configuration4.0-cil
-  libmono-system-core4.0-cil libmono-system-drawing4.0-cil
-  libmono-system-security4.0-cil libmono-system-xml4.0-cil
-  libmono-system2.0-cil libmono-system4.0-cil mono-4.0-gac mono-gac
-  mono-runtime mono-runtime-common mono-runtime-sgen pinta
+  binfmt-support cli-common gnome-icon-theme libgdiplus libglib2.0-cil
+  libgtk2.0-cil libmono-addins-gui0.2-cil libmono-addins0.2-cil
+  libmono-cairo4.0-cil libmono-corlib2.0-cil libmono-corlib4.5-cil
+  libmono-i18n-west2.0-cil libmono-i18n-west4.0-cil libmono-i18n4.0-cil
+  libmono-posix2.0-cil libmono-posix4.0-cil libmono-security2.0-cil
+  libmono-security4.0-cil libmono-sharpzip4.84-cil
+  libmono-system-configuration4.0-cil libmono-system-core4.0-cil
+  libmono-system-drawing4.0-cil libmono-system-security4.0-cil
+  libmono-system-xml4.0-cil libmono-system2.0-cil libmono-system4.0-cil
+  mono-4.0-gac mono-gac mono-runtime mono-runtime-common mono-runtime-sgen
+  pinta
   ```
 * >>>>>>>>> Running inst-std-help-manuals-html.sh ...
-  * Add user & developer manuals in Help menu.
-  * Disk size = 2335724K. Space Used = 56K.
+  * Disk size = 3338908K. Space Used = 56K.
 * >>>>>>>>> Running inst-std-internet-iceweasel-bpo.sh ...
-  * After this operation, 101 MB of additional disk space will be used.
-  * After this operation, 27.5 MB of additional disk space will be used.
-  * Install the latest Firefox from Debian Mozilla team: Mozilla Iceweasel 43.0.4.
-  * Insert Iceweasel in Internet menu.
-  * To update Adobe Flash Player: update-flashplugin-nonfree --install.
-  * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/.
-  * Disk size = 2532044K. Space Used = 196320K.
+  * After this operation, 109 MB of additional disk space will be used.
+  * Disk size = 3493784K. Space Used = 154876K.
   * The following NEW packages will be installed:
   ```bash
-  iceweasel libevent-2.0-5 libhunspell-1.3-0
-  binutils ca-certificates flashplugin-nonfree libcurl3-gnutls libnspr4
-  libnss3 openssl
+  gstreamer1.0-libav iceweasel libevent-2.0-5
   ```
 * >>>>>>>>> Running inst-std-multimedia-mpv.sh ...
-  * After this operation, 88.6 MB of additional disk space will be used.
+  * After this operation, 68.4 MB of additional disk space will be used.
   * Install Media Player: mpv 0.8.3 .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 2655696K. Space Used = 123652K.
+  * Disk size = 3581920K. Space Used = 88136K.
   * The following NEW packages will be installed:
   ```bash
-  libaacplus2 libasn1-8-heimdal libass5 libasyncns0 libavc1394-0 libavcodec56
-  libavdevice56 libavfilter5 libavformat56 libavresample2 libavutil54
-  libbluray1 libbs2b0 libcaca0 libcdio-cdda1 libcdio-paranoia1 libcdio13
-  libcrystalhd3 libdc1394-22 libdirectfb-1.2-9 libdvdnav4 libdvdread4 libenca0
-  libfaac0 libfdk-aac1 libflac8 libgsm1 libgssapi3-heimdal libguess1
-  libhcrypto4-heimdal libheimbase1-heimdal libheimntlm0-heimdal
-  libhx509-5-heimdal libiec61883-0 libjack-jackd2-0 libkrb5-26-heimdal libldb1
-  liblircclient0 liblua5.2-0 libmowgli-2-0 libmp3lame0 libmpg123-0 libntdb1
-  libopenal-data libopenal1 libopencore-amrnb0 libopencore-amrwb0 libopenjpeg5
-  libopus0 liborc-0.4-0 libpostproc53 libpulse0 libpython-stdlib libpython2.7
-  libpython2.7-minimal libpython2.7-stdlib libraw1394-11 libroken18-heimdal
-  libschroedinger-1.0-0 libsdl1.2debian libsmbclient libsndfile1 libspeex1
-  libswresample1 libswscale3 libtalloc2 libtevent0 libtheora0 libutvideo15
-  libv4l-0 libv4lconvert0 libva-glx1 libva-x11-1 libva1 libvdpau1
-  libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0 libvorbisenc2 libvpx1
-  libwayland-egl1-mesa libwbclient0 libwind0-heimdal libwrap0 libx264-146
-  libx265-51 libxss1 libxvidcore4 libzvbi-common libzvbi0 mime-support mpv
-  python python-minimal python-talloc python2.7 python2.7-minimal samba-libs
+  i965-va-driver libaacplus2 libasn1-8-heimdal libass5 libavcodec56
+  libavdevice56 libavfilter5 libavformat56 libavresample2 libavutil54 libbs2b0
+  libcdio-cdda1 libcdio-paranoia1 libcdio13 libcrystalhd3 libdc1394-22
+  libdirectfb-1.2-9 libdvdnav4 libdvdread4 libenca0 libfaac0 libfdk-aac1
+  libgsm1 libgssapi3-heimdal libguess1 libhcrypto4-heimdal
+  libheimbase1-heimdal libheimntlm0-heimdal libhx509-5-heimdal
+  libkrb5-26-heimdal libldb1 liblircclient0 liblua5.2-0 libmowgli-2-0
+  libmp3lame0 libmpg123-0 libntdb1 libopenal-data libopenal1
+  libopencore-amrnb0 libopencore-amrwb0 libpostproc53 libpython2.7
+  libroken18-heimdal libschroedinger-1.0-0 libsdl1.2debian libsmbclient
+  libswresample1 libswscale3 libtalloc2 libtevent0 libutvideo15 libva-glx1
+  libva-x11-1 libva1 libvdpau1 libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0
+  libwbclient0 libwind0-heimdal libx264-146 libx265-51 libxss1 libxvidcore4
+  libzvbi-common libzvbi0 mesa-vdpau-drivers mpv python-talloc samba-libs
+  va-driver-all vdpau-va-driver
   ```
 * >>>>>>>>> Running inst-std-office-libreoffice-bpo.sh ...
-  * After this operation, 286 MB of additional disk space will be used.
+  * After this operation, 310 MB of additional disk space will be used.
   * After this operation, 43.9 MB of additional disk space will be used.
-  * After this operation, 16.6 MB of additional disk space will be used.
-  * After this operation, 9,520 kB of additional disk space will be used.
-  * After this operation, 1,405 kB of additional disk space will be used.
+  * After this operation, 16.7 MB of additional disk space will be used.
+  * After this operation, 26.7 MB of additional disk space will be used.
   * Install LibreOffice 5.0.4.2 00m0(Build:2).
   * Install Office Suite: Word processor.
   * Install Office Suite: Spreadsheet.
@@ -512,95 +645,265 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 3105572K. Space Used = 449876K.
+  * Disk size = 4094768K. Space Used = 512848K.
   * The following NEW packages will be installed:
   ```bash
-  fonts-opensymbol libabw-0.1-1 libboost-date-time1.55.0 libclucene-contribs1
-  libclucene-core1 libe-book-0.1-1 libeot0 libexttextcat-2.0-0
-  libexttextcat-data libglew1.10 libglu1-mesa libharfbuzz-icu0 libhyphen0
-  liblangtag-common liblangtag1 libmhash2 libmythes-1.2-0 libneon27-gnutls
-  libodfgen-0.1-1 libraptor2-0 librasqal3 librdf0 libreoffice-base-core
-  libreoffice-common libreoffice-core libreoffice-style-galaxy
-  libreoffice-writer librevenge-0.0-0 libwpd-0.10-10 libwpg-0.3-3 libxslt1.1
-  libyajl2 uno-libs3 ure
+  dh-python fonts-opensymbol libabw-0.1-1 libboost-date-time1.55.0
+  libclucene-contribs1 libclucene-core1 libcurl3-gnutls libe-book-0.1-1
+  libeot0 libexttextcat-2.0-0 libexttextcat-data libglew1.10 libhyphen0
+  liblangtag-common liblangtag1 libmhash2 libmpdec2 libmythes-1.2-0
+  libneon27-gnutls libodfgen-0.1-1 libpython3-stdlib libpython3.4
+  libpython3.4-minimal libpython3.4-stdlib libraptor2-0 librasqal3 librdf0
+  libreoffice-base-core libreoffice-common libreoffice-core libreoffice-math
+  libreoffice-style-galaxy libreoffice-writer librevenge-0.0-0 libwpd-0.10-10
+  libwpg-0.3-3 libyajl2 python3 python3-minimal python3-uno python3.4
+  python3.4-minimal uno-libs3 ure
   coinor-libcbc3 coinor-libcgl1 coinor-libclp1 coinor-libcoinmp1
   coinor-libcoinutils3 coinor-libosi1 libblas-common libblas3
   libboost-system1.55.0 libcolamd2.8.0 libgfortran3 liblapack3 libquadmath0
   libreoffice-calc lp-solve
   libcdr-0.1-1 libfreehand-0.1-1 libmspub-0.1-1 libpagemaker-0.0-0
-  libreoffice-draw libreoffice-impress libvisio-0.1-1
-  libreoffice-base libreoffice-base-drivers
-  libreoffice-math
+  libreoffice-avmedia-backend-gstreamer libreoffice-draw libreoffice-impress
+  libvisio-0.1-1
+  firebird2.5-common firebird2.5-common-doc firebird2.5-server-common
+  libfbclient2 libfbembed2.5 libhsqldb1.8.0-java libreoffice-base
+  libreoffice-base-drivers libreoffice-java-common libreoffice-sdbc-firebird
+  libreoffice-sdbc-hsqldb libservlet2.5-java
   ```
+* >>>>>>>>> Running inst-std-office-xtra-projectlibre.sh ...
+  * Install ProjectLibre.
+  * Disk size = 4113220K. Space Used = 18452K.
 * >>>>>>>>> Running inst-std-system-alsamixer.sh ...
-  * Insert Alsamixer menu in Administration.
-  * Disk size = 3105576K. Space Used = 4K.
+  * Disk size = 4113224K. Space Used = 4K.
 * >>>>>>>>> Running inst-std-system-conky.sh ...
   * After this operation, 967 kB of additional disk space will be used.
-  * Install System Monitor: conky.
-  * Add conky config file: conkyrc.
-  * Set conky to run on JWM startup.
-  * Add on the fly settings to Conky.
-  * Disk size = 3106884K. Space Used = 1308K.
+  * Disk size = 4114536K. Space Used = 1312K.
   * The following NEW packages will be installed:
   ```bash
   conky conky-std libiw30
   ```
 * >>>>>>>>> Running inst-std-system-gnome-disk-utility.sh ...
-  * After this operation, 11.1 MB of additional disk space will be used.
-  * Install Partition Manager: gnome-disk-utility.
-  * Run: gnome-disks.
-  * Insert gnome-disk-utility menu in Administration.
-  * Disk size = 3113180K. Space Used = 6296K.
+  * After this operation, 7,803 kB of additional disk space will be used.
+  * Disk size = 4119016K. Space Used = 4480K.
   * The following NEW packages will be installed:
   ```bash
-  gnome-disk-utility libatasmart4 libcrack2 libpam-systemd libparted2
-  libpolkit-agent-1-0 libpolkit-gobject-1-0 libpwquality-common libpwquality1
-  libsecret-1-0 libsecret-common libudisks2-0 parted udisks2
+  cracklib-runtime gnome-disk-utility libcrack2 libpwquality-common
+  libpwquality1 wamerican
   ```
 * >>>>>>>>> Running inst-std-system-keyboard.sh ...
-  * Insert keyboard menu in Administration.
-  * Disk size = 3113188K. Space Used = 8K.
+  * Disk size = 4119020K. Space Used = 4K.
 * >>>>>>>>> Running inst-std-system-monitor-switcher-lxrandr.sh ...
-  * After this operation, 19.9 MB of additional disk space will be used.
   * After this operation, 779 kB of additional disk space will be used.
-  * Install Monitor Switcher: lxrandr.
-  * Add lxrandr key binding.
-  * Disk size = 3139172K. Space Used = 25984K.
+  * Disk size = 4119160K. Space Used = 140K.
   * The following NEW packages will be installed:
   ```bash
-  cpp cpp-4.9 libcloog-isl4 libisl10 libmpc3 libmpfr4 x11-xserver-utils
   lxrandr
   ```
 * >>>>>>>>> Running inst-std-system-network-wicd.sh ...
-  * After this operation, 22.0 MB of additional disk space will be used.
-  * Install Network Manager: wicd.
-  * Insert Wicd menu in Network.
-  * For wireless, you have to type in the wireless interface(e.g. wlan0) in the Preferences.
-  * Set wicd to run on JWM startup.
-  * Log at /var/log/wicd/wicd.log.
-  * Disk size = 3174368K. Space Used = 35196K.
+  * After this operation, 31.8 MB of additional disk space will be used.
+  * Disk size = 4162552K. Space Used = 43392K.
   * The following NEW packages will be installed:
   ```bash
-  gir1.2-glib-2.0 libgirepository-1.0-1 libglade2-0 libnl-3-200
-  libnl-genl-3-200 libpcsclite1 psmisc python-cairo python-dbus
+  gcr gir1.2-glib-2.0 gksu gnome-keyring libgck-1-0 libgcr-3-common
+  libgcr-base-3-1 libgcr-ui-3-1 libgirepository-1.0-1 libgksu2-0 libglade2-0
+  libgnome-keyring-common libgnome-keyring0 libgtop2-7 libgtop2-common
+  libpam-gnome-keyring p11-kit p11-kit-modules python-cairo python-dbus
   python-dbus-dev python-gi python-glade2 python-gobject python-gobject-2
-  python-gtk2 python-numpy python-support python-wicd wicd wicd-daemon
-  wicd-gtk wireless-tools wpasupplicant
+  python-gtk2 python-notify python-numpy python-support python-wicd rfkill
+  sudo wicd wicd-daemon wicd-gtk wireless-tools
   ```
 * >>>>>>>>> Running inst-std-system-time-zone.sh ...
-  * Insert Time Zone menu in Administration.
-  * Disk size = 3174372K. Space Used = 4K.
+  * Disk size = 4162556K. Space Used = 4K.
+* >>>>>>>>> Running inst-std-system-xtra-hardinfo.sh ...
+  * After this operation, 467 kB of additional disk space will be used.
+  * Disk size = 4163500K. Space Used = 944K.
+  * The following NEW packages will be installed:
+  ```bash
+  hardinfo
+  ```
+* >>>>>>>>> Running inst-std-system-xtra-webcam-camorama.sh ...
+  * After this operation, 10.6 MB of additional disk space will be used.
+  * Disk size = 4169300K. Space Used = 5800K.
+  * The following NEW packages will be installed:
+  ```bash
+  camorama libart-2.0-2 libbonoboui2-0 libbonoboui2-common libgail18
+  libgnomecanvas2-0 libgnomecanvas2-common libgnomeui-0 libgnomeui-common
+  ```
+* >>>>>>>>> Running inst-std-xtra-blender.sh ...
+  * After this operation, 243 kB of additional disk space will be used.
+  * After this operation, 145 MB of additional disk space will be used.
+  * Disk size = 4320504K. Space Used = 151204K.
+  * The following NEW packages will be installed:
+  ```bash
+  libjemalloc1
+  blender blender-data javascript-common libatomic1 libavdevice55
+  libboost-chrono1.55.0 libboost-filesystem1.55.0 libboost-locale1.55.0
+  libboost-regex1.55.0 libboost-thread1.55.0 libgtkglext1 libjs-jquery
+  libjs-jquery-ui libopencolorio1 libopencv-core2.4 libopencv-highgui2.4
+  libopencv-imgproc2.4 libopenimageio1.4 libraw10 libspnav0 libtbb2
+  libtinyxml2.6.2 libyaml-cpp0.3
+  ```
+* >>>>>>>>> Running inst-std-xtra-dia.sh ...
+  * After this operation, 22.6 MB of additional disk space will be used.
+  * Disk size = 4350948K. Space Used = 30444K.
+  * The following NEW packages will be installed:
+  ```bash
+  dia dia-common dia-libs dia-shapes gsfonts-x11
+  ```
+* >>>>>>>>> Running inst-std-xtra-opw-drush8.sh ...
+  * Disk size = 4352128K. Space Used = 1180K.
+* >>>>>>>>> Running inst-std-xtra-opw-php5-gd.sh ...
+  * After this operation, 118 kB of additional disk space will be used.
+  * Install php5-gd to run Drupal.
+  * Disk size = 4352348K. Space Used = 220K.
+  * The following NEW packages will be installed:
+  ```bash
+  php5-gd
+  ```
+* >>>>>>>>> Running inst-std-xtra-opw-php5-mysql.sh ...
+  * After this operation, 253 kB of additional disk space will be used.
+  * Install php5-mysql to enable the PDO_MYSQL database driver for PHP and to run Drupal.
+  * Enable mod_rewrite module.
+  * Disk size = 4352768K. Space Used = 420K.
+  * The following NEW packages will be installed:
+  ```bash
+  php5-mysql
+  ```
+* >>>>>>>>> Running inst-xtra-cld-dev-tools-aptly.sh ...
+  * After this operation, 28.8 MB of additional disk space will be used.
+  * Install aptly version: 0.9.6~dev to create local debian repository.
+  * Add xz-utils package because aptly snapshot merge needs it.
+  * Disk size = 4387688K. Space Used = 34920K.
+  * The following NEW packages will be installed:
+  ```bash
+  aptly graphviz libcdt5 libcgraph6 libgvc6 libgvpr2 libpathplan4 libxdot4
+  ```
+* >>>>>>>>> Running inst-xtra-cld-dev-tools-libxml2-utils.sh ...
+  * After this operation, 152 kB of additional disk space will be used.
+  * Install libxml2-utils to validate xml file.
+  * Disk size = 4387984K. Space Used = 296K.
+  * The following NEW packages will be installed:
+  ```bash
+  libxml2-utils
+  ```
+* >>>>>>>>> Running inst-xtra-cld-dev-tools-xsltproc.sh ...
+  * After this operation, 140 kB of additional disk space will be used.
+  * Install xsltproc to process xslt.
+  * Disk size = 4388272K. Space Used = 288K.
+  * The following NEW packages will be installed:
+  ```bash
+  xsltproc
+  ```
+* >>>>>>>>> Running inst-xtra-dev-tools-ant.sh ...
+  * After this operation, 3,073 kB of additional disk space will be used.
+  * Install ant.
+  * Disk size = 4393536K. Space Used = 5264K.
+  * The following NEW packages will be installed:
+  ```bash
+  ant ant-optional
+  ```
+* >>>>>>>>> Running inst-xtra-fuse.sh ...
+  * Install fuse(fusermount) to run TMSU.
+  * Disk size = 4393540K. Space Used = 4K.
+* >>>>>>>>> Running inst-xtra-open-terminals-on-startup.sh ...
+  * Disk size = 4393548K. Space Used = 8K.
+* >>>>>>>>> Running inst-xtra-sqlite3.sh ...
+  * After this operation, 143 kB of additional disk space will be used.
+  * Install Database: sqlite3.
+  * Disk size = 4393816K. Space Used = 268K.
+  * The following NEW packages will be installed:
+  ```bash
+  sqlite3
+  ```
+* >>>>>>>>> Running inst-xtra-virtualbox5.sh ...
+  * After this operation, 78.4 MB of additional disk space will be used.
+  * After this operation, 159 MB of additional disk space will be used.
+  * After this operation, 14.6 MB disk space will be freed.
+  * After this operation, 63.8 MB disk space will be freed.
+  * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox.
+  * Install VirtualBox 5.0.14r105127.
+  * Disk size = 4730956K. Space Used = 232496K.
+  * The following NEW packages will be installed:
+  ```bash
+  cpp-4.8 dkms fakeroot gcc-4.8 libasan0 libc-dev-bin libc6-dev libfakeroot
+  libgcc-4.8-dev linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-amd64
+  linux-headers-3.16.0-4-common linux-headers-amd64 linux-kbuild-3.16
+  linux-libc-dev patch
+  libqt4-opengl libsdl-ttf2.0-0 virtualbox-5.0
+  ```
+* >>>>>>>>> Running inst-xtra-virtualbox-guest-iso.sh ...
+  * After this operation, 134 MB of additional disk space will be used.
+  * After this operation, 14.6 MB disk space will be freed.
+  * After this operation, 63.8 MB disk space will be freed.
+  * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
+  * Assumed packages installed: bzip2 & Xserver installed.
+  * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
+  * VirtualBox guest additions installed: version: 5.0.12.
+  * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
+  * Disk size = 4498460K. Space Used = 104644K.
+  * The following NEW packages will be installed:
+  ```bash
+  binutils cpp-4.8 dkms fakeroot gcc gcc-4.8 gcc-4.9 libasan0 libasan1
+  libc-dev-bin libc6-dev libcilkrts5 libfakeroot libgcc-4.8-dev libgcc-4.9-dev
+  libitm1 liblsan0 libtsan0 libubsan0 linux-compiler-gcc-4.8-x86
+  linux-headers-3.16.0-4-amd64 linux-headers-3.16.0-4-common
+  linux-headers-amd64 linux-kbuild-3.16 linux-libc-dev make manpages-dev patch
+  ```
+* >>>>>>>>> Running inst-xtra-wifite.sh ...
+  * After this operation, 94.9 MB of additional disk space will be used.
+  * Disk size = 4847332K. Space Used = 116376K.
+  * The following NEW packages will be installed:
+  ```bash
+  aircrack-ng crda geoip-database ieee-data iw libc-ares2 libgeoip1 libpcap0.8
+  libsmi2ldbl libwireshark-data libwireshark5 libwiretap4 libwsutil4 pyrit
+  python-scapy python-sqlalchemy python-sqlalchemy-ext reaver tshark wifite
+  wireless-regdb wireshark-common
+  ```
+* >>>>>>>>> Running inst-xtra-wine-diablo2.sh ...
+  * Install libjpeg-turbo-progs & libldap-2.4-2 so that Blizzard Downloader will not fail.
+  * Disk size = 4847336K. Space Used = 4K.
+* >>>>>>>>> Running inst-xtra-wine.sh ...
+  * After this operation, 174 MB of additional disk space will be used.
+  * Install wine so that you can run Windows applications.
+  * You need to run 'wine winecfg' before using wine. This is a workaround of a bug.
+  * Disk size = 5077200K. Space Used = 229864K.
+  * The following NEW packages will be installed:
+  ```bash
+  libasound2-plugins libgstreamer-plugins-base0.10-0 libgstreamer0.10-0
+  libspeexdsp1 libwine libwine-gecko-2.21 wine wine64
+  ```
+* >>>>>>>>> Running inst-xtra-xmpv.sh ...
+  * Disk size = 5077248K. Space Used = 48K.
+* >>>>>>>>> Running inst-xtra-zfs.sh ...
+  * After this operation, 15.8 MB of additional disk space will be used.
+  * After this operation, 129 MB of additional disk space will be used.
+  * Install lsb-release.
+  * Add zfsonlinux repository to /etc/apt/sources.list.d/zfsonlinux.list.
+  * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
+  * Install debian-zfs: version: 0.6.5.2-2, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
+  * Delete zfsonlinux_6_all.deb[1992K].
+  * Disk size = 5291092K. Space Used = 213844K.
+  * The following NEW packages will be installed:
+  ```bash
+  libc-dev-bin libc6-dev linux-libc-dev lsb-release
+  build-essential cpp-4.8 debian-zfs dkms dpkg-dev fakeroot g++ g++-4.9
+  gcc-4.8 libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libasan0 libdpkg-perl libfakeroot
+  libfile-fcntllock-perl libgcc-4.8-dev libnvpair1 libstdc++-4.9-dev libuutil1
+  libzfs2 libzpool2 linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-amd64
+  linux-headers-3.16.0-4-common linux-headers-amd64 linux-kbuild-3.16 patch
+  spl spl-dkms zfs-dkms zfsutils
+  ```
 * >>>>>>>>> Running inst-zclean-00-remove-block-services.sh ...
   * Remove block services from starting after they are being installed.
-  * Disk size = 3174372K. Space Used = 0K.
+  * Disk size = 5291096K. Space Used = 4K.
 * >>>>>>>>> Running inst-zclean-00-zerosizing-docs.sh ...
   * Zero size all documents in /usr/share/.
-  * Disk size = 3102484K. Space Used = -71888K.
+  * Disk size = 5124176K. Space Used = -166920K.
 * >>>>>>>>> Running inst-zclean-99-end-cleanup.sh ...
   * Clean apt-get cache.
   * rm -rf /tmp/*.
   * Umount /sys, /dev/pts and /proc.
   * Add Debian main repositories in sources.list.
   * Delete local Debian repository from sources.list.
-  * Disk size = 2632220K. Space Used = -470264K.
+  * Disk size = 4196072K. Space Used = -928104K.

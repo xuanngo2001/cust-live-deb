@@ -9,7 +9,7 @@
   * Install de/compressor: unzip.
   * Install de/compressor: zip.
   * Install de/compressor: p7zip.
-  * Disk size = 1810676K. Space Used = 4008K.
+  * Disk size = 1810700K. Space Used = 4008K.
   * The following NEW packages will be installed:
   ```bash
   bzip2

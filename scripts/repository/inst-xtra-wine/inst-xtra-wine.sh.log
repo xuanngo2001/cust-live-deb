@@ -3,45 +3,45 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  file iso-codes libgstreamer-plugins-base0.10-0 libgstreamer0.10-0 libwine
-  libwine-gecko-2.21 wine64
+  libasound2-plugins libgstreamer-plugins-base0.10-0 libgstreamer0.10-0
+  libspeexdsp1 libwine libwine-gecko-2.21 wine64
 Suggested packages:
-  isoquery libvisual-0.4-plugins gstreamer-codec-install gnome-codec-install
-  gstreamer0.10-tools gstreamer0.10-plugins-base cups-bsd binfmt-support
-  ttf-mscorefonts-installer winbind avscan klamav clamav
+  gstreamer-codec-install gnome-codec-install gstreamer0.10-tools
+  gstreamer0.10-plugins-base cups-bsd ttf-mscorefonts-installer winbind avscan
+  klamav clamav
 Recommended packages:
-  libasound2-plugins wine32
+  wine32
 The following NEW packages will be installed:
-  file iso-codes libgstreamer-plugins-base0.10-0 libgstreamer0.10-0 libwine
-  libwine-gecko-2.21 wine wine64
+  libasound2-plugins libgstreamer-plugins-base0.10-0 libgstreamer0.10-0
+  libspeexdsp1 libwine libwine-gecko-2.21 wine wine64
 0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
-Need to get 62.9 MB of archives.
-After this operation, 190 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main libgstreamer0.10-0 amd64 0.10.36-1.5 [1,400 kB]
-Get:2 http://localhost/aptly-repo/ jessie/main iso-codes all 3.57-1 [2,265 kB]
-Get:3 http://localhost/aptly-repo/ jessie/main libgstreamer-plugins-base0.10-0 amd64 0.10.36-2 [1,030 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main libwine amd64 1.6.2-20 [15.9 MB]
-Get:5 http://localhost/aptly-repo/ jessie/main file amd64 1:5.22+15-2 [60.1 kB]
+Need to get 60.7 MB of archives.
+After this operation, 174 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/ jessie/main libspeexdsp1 amd64 1.2~rc1.2-1 [43.4 kB]
+Get:2 http://localhost/aptly-repo/ jessie/main libasound2-plugins amd64 1.0.28-1+b1 [71.7 kB]
+Get:3 http://localhost/aptly-repo/ jessie/main libgstreamer0.10-0 amd64 0.10.36-1.5 [1,400 kB]
+Get:4 http://localhost/aptly-repo/ jessie/main libgstreamer-plugins-base0.10-0 amd64 0.10.36-2 [1,030 kB]
+Get:5 http://localhost/aptly-repo/ jessie/main libwine amd64 1.6.2-20 [15.9 MB]
 Get:6 http://localhost/aptly-repo/ jessie/main libwine-gecko-2.21 all 2.21+dfsg2-1 [42.1 MB]
 Get:7 http://localhost/aptly-repo/ jessie/main wine64 amd64 1.6.2-20 [69.8 kB]
 Get:8 http://localhost/aptly-repo/ jessie/main wine amd64 1.6.2-20 [103 kB]
-Fetched 62.9 MB in 1s (39.4 MB/s)
+Fetched 60.7 MB in 1s (42.0 MB/s)
+Selecting previously unselected package libspeexdsp1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67279 files and directories currently installed.)
+Preparing to unpack .../libspeexdsp1_1.2~rc1.2-1_amd64.deb ...
+Unpacking libspeexdsp1:amd64 (1.2~rc1.2-1) ...
+Selecting previously unselected package libasound2-plugins:amd64.
+Preparing to unpack .../libasound2-plugins_1.0.28-1+b1_amd64.deb ...
+Unpacking libasound2-plugins:amd64 (1.0.28-1+b1) ...
 Selecting previously unselected package libgstreamer0.10-0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55728 files and directories currently installed.)
 Preparing to unpack .../libgstreamer0.10-0_0.10.36-1.5_amd64.deb ...
 Unpacking libgstreamer0.10-0:amd64 (0.10.36-1.5) ...
-Selecting previously unselected package iso-codes.
-Preparing to unpack .../iso-codes_3.57-1_all.deb ...
-Unpacking iso-codes (3.57-1) ...
 Selecting previously unselected package libgstreamer-plugins-base0.10-0:amd64.
 Preparing to unpack .../libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb ...
 Unpacking libgstreamer-plugins-base0.10-0:amd64 (0.10.36-2) ...
 Selecting previously unselected package libwine:amd64.
 Preparing to unpack .../libwine_1.6.2-20_amd64.deb ...
 Unpacking libwine:amd64 (1.6.2-20) ...
-Selecting previously unselected package file.
-Preparing to unpack .../file_1%3a5.22+15-2_amd64.deb ...
-Unpacking file (1:5.22+15-2) ...
 Selecting previously unselected package libwine-gecko-2.21.
 Preparing to unpack .../libwine-gecko-2.21_2.21+dfsg2-1_all.deb ...
 Unpacking libwine-gecko-2.21 (2.21+dfsg2-1) ...
@@ -52,15 +52,15 @@ Selecting previously unselected package wine.
 Preparing to unpack .../wine_1.6.2-20_amd64.deb ...
 Unpacking wine (1.6.2-20) ...
 Processing triggers for man-db (2.7.0.2-5) ...
+Setting up libspeexdsp1:amd64 (1.2~rc1.2-1) ...
+Setting up libasound2-plugins:amd64 (1.0.28-1+b1) ...
 Setting up libgstreamer0.10-0:amd64 (0.10.36-1.5) ...
-Setting up iso-codes (3.57-1) ...
 Setting up libgstreamer-plugins-base0.10-0:amd64 (0.10.36-2) ...
 Setting up libwine:amd64 (1.6.2-20) ...
-Setting up file (1:5.22+15-2) ...
 Setting up libwine-gecko-2.21 (2.21+dfsg2-1) ...
 Setting up wine64 (1.6.2-20) ...
 Setting up wine (1.6.2-20) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install wine so that you can run Windows applications.
 CLDS: * You need to run 'wine winecfg' before using wine. This is a workaround of a bug.
-CLDS: * Disk size = 4767624K. Space Used = 233528K.
+CLDS: * Disk size = 5077200K. Space Used = 229864K.

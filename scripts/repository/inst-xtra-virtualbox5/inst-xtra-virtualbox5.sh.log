@@ -8,66 +8,66 @@ Ign http://localhost jessie/main Translation-en_US.UTF-8
 Hit http://www.deb-multimedia.org jessie InRelease
 Ign http://ftp.debian.org jessie InRelease
 Get:1 http://download.virtualbox.org jessie InRelease [7,152 B]
-Hit http://www.deb-multimedia.org jessie/main amd64 Packages
 Hit http://ftp.debian.org jessie Release.gpg
+Hit http://www.deb-multimedia.org jessie/main amd64 Packages
 Get:2 http://download.virtualbox.org jessie/contrib amd64 Packages [1,344 B]
-Hit http://repo.aptly.info nightly InRelease
-Hit http://ftp.debian.org jessie Release
 Ign http://mozilla.debian.net jessie-backports InRelease
+Hit http://ftp.debian.org jessie Release
+Hit http://repo.aptly.info nightly InRelease
 Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
 Hit http://ftp.debian.org jessie/main amd64 Packages
-Hit http://http.debian.net jessie-backports InRelease
 Hit http://mozilla.debian.net jessie-backports Release.gpg
+Get:3 http://http.debian.net jessie-backports InRelease [166 kB]
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
-Hit http://repo.aptly.info nightly/main amd64 Packages
-Hit http://ftp.debian.org jessie/non-free amd64 Packages
 Hit http://mozilla.debian.net jessie-backports Release
-Get:3 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
-Get:4 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [15.8 kB]
-Hit http://ftp.debian.org jessie/contrib Translation-en
+Hit http://ftp.debian.org jessie/non-free amd64 Packages
 Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
+Hit http://ftp.debian.org jessie/contrib Translation-en
+Get:4 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
 Hit http://ftp.debian.org jessie/main Translation-en
+Get:5 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [15.8 kB]
 Hit http://ftp.debian.org jessie/non-free Translation-en
 Ign http://download.virtualbox.org jessie/contrib Translation-en_US
 Ign http://download.virtualbox.org jessie/contrib Translation-en
 Ign http://download.virtualbox.org jessie/contrib Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
-Ign http://repo.aptly.info nightly/main Translation-en_US
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
-Ign http://repo.aptly.info nightly/main Translation-en
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
-Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
+Hit http://repo.aptly.info nightly/main amd64 Packages
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Fetched 52.1 kB in 5s (8,947 B/s)
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
+Ign http://repo.aptly.info nightly/main Translation-en_US
+Ign http://repo.aptly.info nightly/main Translation-en
+Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
+Fetched 218 kB in 7s (28.7 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  cpp-4.8 gcc-4.8 libasan0 libc-dev-bin libgcc-4.8-dev
-  linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-common linux-kbuild-3.16
-  linux-libc-dev patch
+  cpp-4.8 fakeroot gcc-4.8 libasan0 libc-dev-bin libfakeroot libgcc-4.8-dev
+  linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-common linux-headers-amd64
+  linux-kbuild-3.16 linux-libc-dev patch
 Suggested packages:
   gcc-4.8-locales gcc-4.8-multilib gcc-4.8-doc libgcc1-dbg libgomp1-dbg
   libitm1-dbg libatomic1-dbg libasan0-dbg libtsan0-dbg libquadmath0-dbg
   glibc-doc ed diffutils-doc
 Recommended packages:
-  fakeroot linux-headers-686-pae linux-headers-amd64 linux-headers-generic
-  linux-headers linux-image manpages-dev
+  linux-image
 The following NEW packages will be installed:
-  cpp-4.8 dkms gcc-4.8 libasan0 libc-dev-bin libc6-dev libgcc-4.8-dev
-  linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-amd64
-  linux-headers-3.16.0-4-common linux-kbuild-3.16 linux-libc-dev patch
-0 upgraded, 13 newly installed, 0 to remove and 0 not upgraded.
-Need to get 0 B/20.0 MB of archives.
-After this operation, 77.9 MB of additional disk space will be used.
+  cpp-4.8 dkms fakeroot gcc-4.8 libasan0 libc-dev-bin libc6-dev libfakeroot
+  libgcc-4.8-dev linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-amd64
+  linux-headers-3.16.0-4-common linux-headers-amd64 linux-kbuild-3.16
+  linux-libc-dev patch
+0 upgraded, 16 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/20.1 MB of archives.
+After this operation, 78.4 MB of additional disk space will be used.
 Selecting previously unselected package libasan0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54468 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 65493 files and directories currently installed.)
 Preparing to unpack .../libasan0_4.8.4-1_amd64.deb ...
 Unpacking libasan0:amd64 (4.8.4-1) ...
 Selecting previously unselected package patch.
@@ -79,6 +79,12 @@ Unpacking cpp-4.8 (4.8.4-1) ...
 Selecting previously unselected package dkms.
 Preparing to unpack .../dkms_2.2.0.3-2_all.deb ...
 Unpacking dkms (2.2.0.3-2) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../libfakeroot_1.20.2-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.20.2-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../fakeroot_1.20.2-1_amd64.deb ...
+Unpacking fakeroot (1.20.2-1) ...
 Selecting previously unselected package libgcc-4.8-dev:amd64.
 Preparing to unpack .../libgcc-4.8-dev_4.8.4-1_amd64.deb ...
 Unpacking libgcc-4.8-dev:amd64 (4.8.4-1) ...
@@ -106,11 +112,23 @@ Unpacking linux-kbuild-3.16 (3.16-3) ...
 Selecting previously unselected package linux-headers-3.16.0-4-amd64.
 Preparing to unpack .../linux-headers-3.16.0-4-amd64_3.16.7-ckt20-1+deb8u3_amd64.deb ...
 Unpacking linux-headers-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
+Selecting previously unselected package linux-headers-amd64.
+Preparing to unpack .../linux-headers-amd64_3.16+63_amd64.deb ...
+Unpacking linux-headers-amd64 (3.16+63) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up libasan0:amd64 (4.8.4-1) ...
 Setting up patch (2.7.5-1) ...
 Setting up cpp-4.8 (4.8.4-1) ...
 Setting up dkms (2.2.0.3-2) ...
+Setting up libfakeroot:amd64 (1.20.2-1) ...
+Setting up fakeroot (1.20.2-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/fakeroot.1.gz because associated file /usr/share/man/es/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/faked.1.gz because associated file /usr/share/man/es/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/fakeroot.1.gz because associated file /usr/share/man/fr/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/faked.1.gz because associated file /usr/share/man/fr/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/fakeroot.1.gz because associated file /usr/share/man/sv/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/faked.1.gz because associated file /usr/share/man/sv/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
 Setting up libgcc-4.8-dev:amd64 (4.8.4-1) ...
 Setting up gcc-4.8 (4.8.4-1) ...
 Setting up libc-dev-bin (2.19-18+deb8u1) ...
@@ -122,27 +140,32 @@ Setting up linux-kbuild-3.16 (3.16-3) ...
 Setting up linux-headers-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
 Examining /etc/kernel/header_postinst.d.
 run-parts: executing /etc/kernel/header_postinst.d/dkms 3.16.0-4-amd64
+Setting up linux-headers-amd64 (3.16+63) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  libqt4-opengl
+  libqt4-opengl libsdl-ttf2.0-0
 Recommended packages:
-  libsdl-ttf2.0-0 linux-headers
+  linux-headers
 The following NEW packages will be installed:
-  libqt4-opengl virtualbox-5.0
-0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+  libqt4-opengl libsdl-ttf2.0-0 virtualbox-5.0
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
 Need to get 64.4 MB of archives.
 After this operation, 159 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libqt4-opengl amd64 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1 [343 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main virtualbox-5.0 amd64 5.0.14-105127~Debian~jessie [64.1 MB]
+Get:3 http://ftp.debian.org/debian/ jessie/main libsdl-ttf2.0-0 amd64 2.0.11-3 [18.2 kB]
 Preconfiguring packages ...
-Fetched 64.4 MB in 1s (46.5 MB/s)
+Fetched 64.4 MB in 1s (36.0 MB/s)
 Selecting previously unselected package libqt4-opengl:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66720 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77794 files and directories currently installed.)
 Preparing to unpack .../libqt4-opengl_4%3a4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1_amd64.deb ...
 Unpacking libqt4-opengl:amd64 (4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) ...
+Selecting previously unselected package libsdl-ttf2.0-0:amd64.
+Preparing to unpack .../libsdl-ttf2.0-0_2.0.11-3_amd64.deb ...
+Unpacking libsdl-ttf2.0-0:amd64 (2.0.11-3) ...
 Selecting previously unselected package virtualbox-5.0.
 Preparing to unpack .../virtualbox-5.0_5.0.14-105127~Debian~jessie_amd64.deb ...
 Unpacking virtualbox-5.0 (5.0.14-105127~Debian~jessie) ...
@@ -152,8 +175,9 @@ Processing triggers for shared-mime-info (1.3-1) ...
 Processing triggers for desktop-file-utils (0.22-1) ...
 Processing triggers for mime-support (3.58) ...
 Setting up libqt4-opengl:amd64 (4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) ...
+Setting up libsdl-ttf2.0-0:amd64 (2.0.11-3) ...
 Setting up virtualbox-5.0 (5.0.14-105127~Debian~jessie) ...
-Adding group `vboxusers' (GID 114) ...
+Adding group `vboxusers' (GID 119) ...
 Done.
 Stopping VirtualBox kernel modules ...done.
 Uninstalling old VirtualBox DKMS kernel modules ...done.
@@ -171,37 +195,43 @@ Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following packages were automatically installed and are no longer required:
-  cpp-4.8 gcc-4.8 libasan0 libgcc-4.8-dev linux-compiler-gcc-4.8-x86
-  linux-headers-3.16.0-4-common linux-kbuild-3.16
-Use 'apt-get autoremove' to remove them.
 The following packages will be REMOVED:
-  dkms* libc6-dev* linux-headers-3.16.0-4-amd64*
-0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded.
+  dkms* libc6-dev* linux-headers-3.16.0-4-amd64* linux-headers-amd64*
+0 upgraded, 0 newly installed, 4 to remove and 0 not upgraded.
 After this operation, 14.6 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67499 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 78581 files and directories currently installed.)
 Removing dkms (2.2.0.3-2) ...
 Purging configuration files for dkms (2.2.0.3-2) ...
 dpkg: warning: while removing dkms, directory '/var/lib/dkms' not empty so not removed
 Removing libc6-dev:amd64 (2.19-18+deb8u1) ...
+Removing linux-headers-amd64 (3.16+63) ...
 Removing linux-headers-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following packages will be REMOVED:
-  cpp-4.8 gcc-4.8 libasan0 libc-dev-bin libgcc-4.8-dev
+  cpp-4.8 fakeroot gcc-4.8 libasan0 libc-dev-bin libfakeroot libgcc-4.8-dev
   linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-common linux-kbuild-3.16
   linux-libc-dev patch
-0 upgraded, 0 newly installed, 10 to remove and 0 not upgraded.
-After this operation, 63.3 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60518 files and directories currently installed.)
+0 upgraded, 0 newly installed, 12 to remove and 0 not upgraded.
+After this operation, 63.8 MB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71597 files and directories currently installed.)
 Removing linux-compiler-gcc-4.8-x86 (3.16.7-ckt20-1+deb8u3) ...
 Removing gcc-4.8 (4.8.4-1) ...
 Removing cpp-4.8 (4.8.4-1) ...
+Removing fakeroot (1.20.2-1) ...
+update-alternatives: using /usr/bin/fakeroot-tcp to provide /usr/bin/fakeroot (fakeroot) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/faked.1.gz because associated file /usr/share/man/es/man1/faked-tcp.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/faked.1.gz because associated file /usr/share/man/fr/man1/faked-tcp.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/faked.1.gz because associated file /usr/share/man/sv/man1/faked-tcp.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/fakeroot.1.gz because associated file /usr/share/man/es/man1/fakeroot-tcp.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/fakeroot.1.gz because associated file /usr/share/man/fr/man1/fakeroot-tcp.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/fakeroot.1.gz because associated file /usr/share/man/sv/man1/fakeroot-tcp.1.gz (of link group fakeroot) doesn't exist
 Removing libgcc-4.8-dev:amd64 (4.8.4-1) ...
 Removing libasan0:amd64 (4.8.4-1) ...
 Removing libc-dev-bin (2.19-18+deb8u1) ...
+Removing libfakeroot:amd64 (1.20.2-1) ...
 Removing linux-headers-3.16.0-4-common (3.16.7-ckt20-1+deb8u3) ...
 Removing linux-kbuild-3.16 (3.16-3) ...
 Removing linux-libc-dev:amd64 (3.16.7-ckt20-1+deb8u3) ...
@@ -210,4 +240,4 @@ Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 CLDS: * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox.
 CLDS: * Install VirtualBox 5.0.14r105127.
-CLDS: * Disk size = 4439832K. Space Used = 232380K.
+CLDS: * Disk size = 4730956K. Space Used = 232496K.

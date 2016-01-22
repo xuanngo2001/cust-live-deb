@@ -3,27 +3,27 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  cpp-4.8 gcc gcc-4.8 gcc-4.9 libasan0 libasan1 libc-dev-bin libcilkrts5
-  libgcc-4.8-dev libgcc-4.9-dev libitm1 liblsan0 libtsan0 libubsan0
-  linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-common linux-kbuild-3.16
-  linux-libc-dev make patch
+  binutils cpp-4.8 fakeroot gcc gcc-4.8 gcc-4.9 libasan0 libasan1 libc-dev-bin
+  libcilkrts5 libfakeroot libgcc-4.8-dev libgcc-4.9-dev libitm1 liblsan0
+  libtsan0 libubsan0 linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-common
+  linux-headers-amd64 linux-kbuild-3.16 linux-libc-dev make manpages-dev patch
 Suggested packages:
-  gcc-4.8-locales gcc-multilib manpages-dev autoconf automake libtool flex
+  binutils-doc gcc-4.8-locales gcc-multilib autoconf automake libtool flex
   bison gdb gcc-doc gcc-4.8-multilib gcc-4.8-doc libgcc1-dbg libgomp1-dbg
   libitm1-dbg libatomic1-dbg libasan0-dbg libtsan0-dbg libquadmath0-dbg
   gcc-4.9-multilib gcc-4.9-doc gcc-4.9-locales libasan1-dbg liblsan0-dbg
   libubsan0-dbg libcilkrts5-dbg glibc-doc make-doc ed diffutils-doc
 Recommended packages:
-  fakeroot linux-headers-686-pae linux-headers-amd64 linux-headers-generic
-  linux-headers linux-image
+  linux-image
 The following NEW packages will be installed:
-  cpp-4.8 dkms gcc gcc-4.8 gcc-4.9 libasan0 libasan1 libc-dev-bin libc6-dev
-  libcilkrts5 libgcc-4.8-dev libgcc-4.9-dev libitm1 liblsan0 libtsan0
-  libubsan0 linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-amd64
-  linux-headers-3.16.0-4-common linux-kbuild-3.16 linux-libc-dev make patch
-0 upgraded, 23 newly installed, 0 to remove and 0 not upgraded.
-Need to get 28.4 MB of archives.
-After this operation, 110 MB of additional disk space will be used.
+  binutils cpp-4.8 dkms fakeroot gcc gcc-4.8 gcc-4.9 libasan0 libasan1
+  libc-dev-bin libc6-dev libcilkrts5 libfakeroot libgcc-4.8-dev libgcc-4.9-dev
+  libitm1 liblsan0 libtsan0 libubsan0 linux-compiler-gcc-4.8-x86
+  linux-headers-3.16.0-4-amd64 linux-headers-3.16.0-4-common
+  linux-headers-amd64 linux-kbuild-3.16 linux-libc-dev make manpages-dev patch
+0 upgraded, 28 newly installed, 0 to remove and 0 not upgraded.
+Need to get 33.9 MB of archives.
+After this operation, 134 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libasan0 amd64 4.8.4-1 [63.3 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libasan1 amd64 4.9.2-10 [195 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main libcilkrts5 amd64 4.9.2-10 [40.1 kB]
@@ -33,23 +33,28 @@ Get:6 http://localhost/aptly-repo/ jessie/main libtsan0 amd64 4.9.2-10 [212 kB]
 Get:7 http://localhost/aptly-repo/ jessie/main libubsan0 amd64 4.9.2-10 [82.4 kB]
 Get:8 http://localhost/aptly-repo/ jessie/main make amd64 4.0-8.1 [349 kB]
 Get:9 http://localhost/aptly-repo/ jessie/main patch amd64 2.7.5-1 [109 kB]
-Get:10 http://localhost/aptly-repo/ jessie/main cpp-4.8 amd64 4.8.4-1 [4,577 kB]
-Get:11 http://localhost/aptly-repo/ jessie/main libgcc-4.9-dev amd64 4.9.2-10 [2,066 kB]
-Get:12 http://localhost/aptly-repo/ jessie/main gcc-4.9 amd64 4.9.2-10 [5,352 kB]
-Get:13 http://localhost/aptly-repo/ jessie/main gcc amd64 4:4.9.2-2 [5,136 B]
-Get:14 http://localhost/aptly-repo/ jessie/main dkms all 2.2.0.3-2 [70.9 kB]
-Get:15 http://localhost/aptly-repo/ jessie/main libgcc-4.8-dev amd64 4.8.4-1 [1,689 kB]
-Get:16 http://localhost/aptly-repo/ jessie/main gcc-4.8 amd64 4.8.4-1 [4,787 kB]
-Get:17 http://localhost/aptly-repo/ jessie/main libc-dev-bin amd64 2.19-18+deb8u1 [237 kB]
-Get:18 http://localhost/aptly-repo/ jessie/main linux-libc-dev amd64 3.16.7-ckt20-1+deb8u3 [1,008 kB]
-Get:19 http://localhost/aptly-repo/ jessie/main libc6-dev amd64 2.19-18+deb8u1 [1,998 kB]
-Get:20 http://localhost/aptly-repo/ jessie/main linux-compiler-gcc-4.8-x86 amd64 3.16.7-ckt20-1+deb8u3 [308 kB]
-Get:21 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-common amd64 3.16.7-ckt20-1+deb8u3 [4,502 kB]
-Get:22 http://localhost/aptly-repo/ jessie/main linux-kbuild-3.16 amd64 3.16-3 [173 kB]
-Get:23 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-amd64 amd64 3.16.7-ckt20-1+deb8u3 [450 kB]
-Fetched 28.4 MB in 0s (34.1 MB/s)
+Get:10 http://localhost/aptly-repo/ jessie/main binutils amd64 2.25-5 [3,516 kB]
+Get:11 http://localhost/aptly-repo/ jessie/main cpp-4.8 amd64 4.8.4-1 [4,577 kB]
+Get:12 http://localhost/aptly-repo/ jessie/main libgcc-4.9-dev amd64 4.9.2-10 [2,066 kB]
+Get:13 http://ftp.debian.org/debian/ jessie/main libfakeroot amd64 1.20.2-1 [44.7 kB]
+Get:14 http://localhost/aptly-repo/ jessie/main gcc-4.9 amd64 4.9.2-10 [5,352 kB]
+Get:15 http://ftp.debian.org/debian/ jessie/main fakeroot amd64 1.20.2-1 [84.7 kB]
+Get:16 http://localhost/aptly-repo/ jessie/main gcc amd64 4:4.9.2-2 [5,136 B]
+Get:17 http://localhost/aptly-repo/ jessie/main dkms all 2.2.0.3-2 [70.9 kB]
+Get:18 http://localhost/aptly-repo/ jessie/main libgcc-4.8-dev amd64 4.8.4-1 [1,689 kB]
+Get:19 http://localhost/aptly-repo/ jessie/main gcc-4.8 amd64 4.8.4-1 [4,787 kB]
+Get:20 http://localhost/aptly-repo/ jessie/main libc-dev-bin amd64 2.19-18+deb8u1 [237 kB]
+Get:21 http://localhost/aptly-repo/ jessie/main linux-libc-dev amd64 3.16.7-ckt20-1+deb8u3 [1,008 kB]
+Get:22 http://localhost/aptly-repo/ jessie/main libc6-dev amd64 2.19-18+deb8u1 [1,998 kB]
+Get:23 http://localhost/aptly-repo/ jessie/main linux-compiler-gcc-4.8-x86 amd64 3.16.7-ckt20-1+deb8u3 [308 kB]
+Get:24 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-common amd64 3.16.7-ckt20-1+deb8u3 [4,502 kB]
+Get:25 http://localhost/aptly-repo/ jessie/main linux-kbuild-3.16 amd64 3.16-3 [173 kB]
+Get:26 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-amd64 amd64 3.16.7-ckt20-1+deb8u3 [450 kB]
+Get:27 http://localhost/aptly-repo/ jessie/main linux-headers-amd64 amd64 3.16+63 [5,050 B]
+Get:28 http://ftp.debian.org/debian/ jessie/main manpages-dev all 3.74-1 [1,865 kB]
+Fetched 33.9 MB in 6s (4,956 kB/s)
 Selecting previously unselected package libasan0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54218 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62985 files and directories currently installed.)
 Preparing to unpack .../libasan0_4.8.4-1_amd64.deb ...
 Unpacking libasan0:amd64 (4.8.4-1) ...
 Selecting previously unselected package libasan1:amd64.
@@ -76,6 +81,9 @@ Unpacking make (4.0-8.1) ...
 Selecting previously unselected package patch.
 Preparing to unpack .../patch_2.7.5-1_amd64.deb ...
 Unpacking patch (2.7.5-1) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../binutils_2.25-5_amd64.deb ...
+Unpacking binutils (2.25-5) ...
 Selecting previously unselected package cpp-4.8.
 Preparing to unpack .../cpp-4.8_4.8.4-1_amd64.deb ...
 Unpacking cpp-4.8 (4.8.4-1) ...
@@ -91,6 +99,12 @@ Unpacking gcc (4:4.9.2-2) ...
 Selecting previously unselected package dkms.
 Preparing to unpack .../dkms_2.2.0.3-2_all.deb ...
 Unpacking dkms (2.2.0.3-2) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../libfakeroot_1.20.2-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.20.2-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../fakeroot_1.20.2-1_amd64.deb ...
+Unpacking fakeroot (1.20.2-1) ...
 Selecting previously unselected package libgcc-4.8-dev:amd64.
 Preparing to unpack .../libgcc-4.8-dev_4.8.4-1_amd64.deb ...
 Unpacking libgcc-4.8-dev:amd64 (4.8.4-1) ...
@@ -118,6 +132,12 @@ Unpacking linux-kbuild-3.16 (3.16-3) ...
 Selecting previously unselected package linux-headers-3.16.0-4-amd64.
 Preparing to unpack .../linux-headers-3.16.0-4-amd64_3.16.7-ckt20-1+deb8u3_amd64.deb ...
 Unpacking linux-headers-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
+Selecting previously unselected package linux-headers-amd64.
+Preparing to unpack .../linux-headers-amd64_3.16+63_amd64.deb ...
+Unpacking linux-headers-amd64 (3.16+63) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../manpages-dev_3.74-1_all.deb ...
+Unpacking manpages-dev (3.74-1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up libasan0:amd64 (4.8.4-1) ...
 Setting up libasan1:amd64 (4.9.2-10) ...
@@ -128,11 +148,21 @@ Setting up libtsan0:amd64 (4.9.2-10) ...
 Setting up libubsan0:amd64 (4.9.2-10) ...
 Setting up make (4.0-8.1) ...
 Setting up patch (2.7.5-1) ...
+Setting up binutils (2.25-5) ...
 Setting up cpp-4.8 (4.8.4-1) ...
 Setting up libgcc-4.9-dev:amd64 (4.9.2-10) ...
 Setting up gcc-4.9 (4.9.2-10) ...
 Setting up gcc (4:4.9.2-2) ...
 Setting up dkms (2.2.0.3-2) ...
+Setting up libfakeroot:amd64 (1.20.2-1) ...
+Setting up fakeroot (1.20.2-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/fakeroot.1.gz because associated file /usr/share/man/es/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/faked.1.gz because associated file /usr/share/man/es/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/fakeroot.1.gz because associated file /usr/share/man/fr/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/faked.1.gz because associated file /usr/share/man/fr/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/fakeroot.1.gz because associated file /usr/share/man/sv/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/faked.1.gz because associated file /usr/share/man/sv/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
 Setting up libgcc-4.8-dev:amd64 (4.8.4-1) ...
 Setting up gcc-4.8 (4.8.4-1) ...
 Setting up libc-dev-bin (2.19-18+deb8u1) ...
@@ -144,6 +174,8 @@ Setting up linux-kbuild-3.16 (3.16-3) ...
 Setting up linux-headers-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
 Examining /etc/kernel/header_postinst.d.
 run-parts: executing /etc/kernel/header_postinst.d/dkms 3.16.0-4-amd64
+Setting up linux-headers-amd64 (3.16+63) ...
+Setting up manpages-dev (3.74-1) ...
 Processing triggers for libc-bin (2.19-18+deb8u1) ...
 Verifying archive integrity... All good.
 Uncompressing VirtualBox 5.0.12 Guest Additions for Linux............
@@ -168,36 +200,47 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following packages were automatically installed and are no longer required:
-  cpp-4.8 gcc-4.8 libasan0 libgcc-4.8-dev linux-compiler-gcc-4.8-x86
-  linux-headers-3.16.0-4-common linux-kbuild-3.16 patch
+  cpp-4.8 fakeroot gcc-4.8 libasan0 libfakeroot libgcc-4.8-dev
+  linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-common linux-kbuild-3.16
+  patch
 Use 'apt-get autoremove' to remove them.
 The following packages will be REMOVED:
-  dkms* libc6-dev* linux-headers-3.16.0-4-amd64*
-0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded.
+  dkms* libc6-dev* linux-headers-3.16.0-4-amd64* linux-headers-amd64*
+0 upgraded, 0 newly installed, 4 to remove and 0 not upgraded.
 After this operation, 14.6 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66720 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77794 files and directories currently installed.)
 Removing dkms (2.2.0.3-2) ...
 Purging configuration files for dkms (2.2.0.3-2) ...
 dpkg: warning: while removing dkms, directory '/var/lib/dkms' not empty so not removed
 Removing libc6-dev:amd64 (2.19-18+deb8u1) ...
+Removing linux-headers-amd64 (3.16+63) ...
 Removing linux-headers-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following packages will be REMOVED:
-  cpp-4.8 gcc-4.8 libasan0 libc-dev-bin libgcc-4.8-dev
+  cpp-4.8 fakeroot gcc-4.8 libasan0 libc-dev-bin libfakeroot libgcc-4.8-dev
   linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-common linux-kbuild-3.16
   linux-libc-dev patch
-0 upgraded, 0 newly installed, 10 to remove and 0 not upgraded.
-After this operation, 63.3 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59739 files and directories currently installed.)
+0 upgraded, 0 newly installed, 12 to remove and 0 not upgraded.
+After this operation, 63.8 MB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 70810 files and directories currently installed.)
 Removing linux-compiler-gcc-4.8-x86 (3.16.7-ckt20-1+deb8u3) ...
 Removing gcc-4.8 (4.8.4-1) ...
 Removing cpp-4.8 (4.8.4-1) ...
+Removing fakeroot (1.20.2-1) ...
+update-alternatives: using /usr/bin/fakeroot-tcp to provide /usr/bin/fakeroot (fakeroot) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/faked.1.gz because associated file /usr/share/man/es/man1/faked-tcp.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/faked.1.gz because associated file /usr/share/man/fr/man1/faked-tcp.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/faked.1.gz because associated file /usr/share/man/sv/man1/faked-tcp.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/fakeroot.1.gz because associated file /usr/share/man/es/man1/fakeroot-tcp.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/fakeroot.1.gz because associated file /usr/share/man/fr/man1/fakeroot-tcp.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/fakeroot.1.gz because associated file /usr/share/man/sv/man1/fakeroot-tcp.1.gz (of link group fakeroot) doesn't exist
 Removing libgcc-4.8-dev:amd64 (4.8.4-1) ...
 Removing libasan0:amd64 (4.8.4-1) ...
 Removing libc-dev-bin (2.19-18+deb8u1) ...
+Removing libfakeroot:amd64 (1.20.2-1) ...
 Removing linux-headers-3.16.0-4-common (3.16.7-ckt20-1+deb8u3) ...
 Removing linux-kbuild-3.16 (3.16-3) ...
 Removing linux-libc-dev:amd64 (3.16.7-ckt20-1+deb8u3) ...
@@ -209,4 +252,4 @@ CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
 CLDS: * VirtualBox guest additions installed: version: 5.0.12.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 4207452K. Space Used = 82944K.
+CLDS: * Disk size = 4498460K. Space Used = 104644K.

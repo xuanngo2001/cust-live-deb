@@ -1,5 +1,5 @@
 CLDS:>>>>>>>>> Running inst-xtra-cld-dev-tools-aptly.sh ...
-Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.esNxfShdy5 --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d/deb-multimedia-keyring.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-security-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-stable.gpg --keyring /etc/apt/trusted.gpg.d/pkg-mozilla-archive-keyring.gpg --keyserver keys.gnupg.net --recv-keys E083A3782A194991
+Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.V1FhUfcpxq --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d/deb-multimedia-keyring.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-security-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-stable.gpg --keyring /etc/apt/trusted.gpg.d/pkg-mozilla-archive-keyring.gpg --keyserver keys.gnupg.net --recv-keys E083A3782A194991
 gpg: requesting key 2A194991 from hkp server keys.gnupg.net
 gpg: key 2A194991: public key "Andrey Smirnov <me@smira.ru>" imported
 gpg: Total number processed: 1
@@ -9,65 +9,101 @@ Hit http://localhost jessie/main amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
-Hit http://www.deb-multimedia.org jessie InRelease
 Ign http://ftp.debian.org jessie InRelease
-Ign http://mozilla.debian.net jessie-backports InRelease
+Hit http://www.deb-multimedia.org jessie InRelease
 Hit http://ftp.debian.org jessie Release.gpg
-Hit http://mozilla.debian.net jessie-backports Release.gpg
 Hit http://www.deb-multimedia.org jessie/main amd64 Packages
+Ign http://mozilla.debian.net jessie-backports InRelease
 Hit http://ftp.debian.org jessie Release
-Hit http://mozilla.debian.net jessie-backports Release
-Hit http://http.debian.net jessie-backports InRelease
-Get:1 http://repo.aptly.info nightly InRelease [3,217 B]
-Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
 Hit http://ftp.debian.org jessie/main amd64 Packages
-Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
+Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
+Hit http://mozilla.debian.net jessie-backports Release.gpg
+Get:1 http://http.debian.net jessie-backports InRelease [166 kB]
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
-Get:2 http://repo.aptly.info nightly/main amd64 Packages [4,078 B]
-Get:3 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
-Get:4 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [15.8 kB]
+Hit http://mozilla.debian.net jessie-backports Release
+Get:2 http://repo.aptly.info nightly InRelease [3,217 B]
 Hit http://ftp.debian.org jessie/non-free amd64 Packages
+Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
+Get:3 http://repo.aptly.info nightly/main amd64 Packages [4,078 B]
 Hit http://ftp.debian.org jessie/contrib Translation-en
 Hit http://ftp.debian.org jessie/main Translation-en
+Get:4 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
+Get:5 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [15.8 kB]
 Hit http://ftp.debian.org jessie/non-free Translation-en
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
-Ign http://repo.aptly.info nightly/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
+Ign http://repo.aptly.info nightly/main Translation-en_US
 Ign http://repo.aptly.info nightly/main Translation-en
 Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
-Fetched 50.9 kB in 4s (11.2 kB/s)
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
+Fetched 217 kB in 5s (41.5 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-Recommended packages:
-  graphviz
+xz-utils is already the newest version.
+xz-utils set to manually installed.
+The following extra packages will be installed:
+  graphviz libcdt5 libcgraph6 libgvc6 libgvpr2 libpathplan4 libxdot4
+Suggested packages:
+  graphviz-doc
 The following NEW packages will be installed:
-  aptly xz-utils
-0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
-Need to get 4,798 kB of archives.
-After this operation, 16.9 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main xz-utils amd64 5.1.1alpha+20120614-2+b3 [221 kB]
-Get:2 http://localhost/aptly-repo/ jessie/main aptly amd64 0.9.6~dev+156+g339bf0a [4,578 kB]
-Fetched 4,798 kB in 0s (38.2 MB/s)
-Selecting previously unselected package xz-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53965 files and directories currently installed.)
-Preparing to unpack .../xz-utils_5.1.1alpha+20120614-2+b3_amd64.deb ...
-Unpacking xz-utils (5.1.1alpha+20120614-2+b3) ...
+  aptly graphviz libcdt5 libcgraph6 libgvc6 libgvpr2 libpathplan4 libxdot4
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 6,417 kB of archives.
+After this operation, 28.8 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/ jessie/main libcdt5 amd64 2.38.0-7 [62.7 kB]
+Get:2 http://localhost/aptly-repo/ jessie/main libcgraph6 amd64 2.38.0-7 [85.2 kB]
+Get:3 http://localhost/aptly-repo/ jessie/main libpathplan4 amd64 2.38.0-7 [66.0 kB]
+Get:4 http://localhost/aptly-repo/ jessie/main libxdot4 amd64 2.38.0-7 [58.7 kB]
+Get:5 http://localhost/aptly-repo/ jessie/main libgvc6 amd64 2.38.0-7 [637 kB]
+Get:6 http://localhost/aptly-repo/ jessie/main libgvpr2 amd64 2.38.0-7 [212 kB]
+Get:7 http://localhost/aptly-repo/ jessie/main graphviz amd64 2.38.0-7 [717 kB]
+Get:8 http://localhost/aptly-repo/ jessie/main aptly amd64 0.9.6~dev+156+g339bf0a [4,578 kB]
+Fetched 6,417 kB in 0s (28.4 MB/s)
+Selecting previously unselected package libcdt5.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62564 files and directories currently installed.)
+Preparing to unpack .../libcdt5_2.38.0-7_amd64.deb ...
+Unpacking libcdt5 (2.38.0-7) ...
+Selecting previously unselected package libcgraph6.
+Preparing to unpack .../libcgraph6_2.38.0-7_amd64.deb ...
+Unpacking libcgraph6 (2.38.0-7) ...
+Selecting previously unselected package libpathplan4.
+Preparing to unpack .../libpathplan4_2.38.0-7_amd64.deb ...
+Unpacking libpathplan4 (2.38.0-7) ...
+Selecting previously unselected package libxdot4.
+Preparing to unpack .../libxdot4_2.38.0-7_amd64.deb ...
+Unpacking libxdot4 (2.38.0-7) ...
+Selecting previously unselected package libgvc6.
+Preparing to unpack .../libgvc6_2.38.0-7_amd64.deb ...
+Unpacking libgvc6 (2.38.0-7) ...
+Selecting previously unselected package libgvpr2.
+Preparing to unpack .../libgvpr2_2.38.0-7_amd64.deb ...
+Unpacking libgvpr2 (2.38.0-7) ...
+Selecting previously unselected package graphviz.
+Preparing to unpack .../graphviz_2.38.0-7_amd64.deb ...
+Unpacking graphviz (2.38.0-7) ...
 Selecting previously unselected package aptly.
 Preparing to unpack .../aptly_0.9.6~dev+156+g339bf0a_amd64.deb ...
 Unpacking aptly (0.9.6~dev+156+g339bf0a) ...
 Processing triggers for man-db (2.7.0.2-5) ...
-Setting up xz-utils (5.1.1alpha+20120614-2+b3) ...
-update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
+Processing triggers for menu (2.1.47) ...
+Setting up libcdt5 (2.38.0-7) ...
+Setting up libcgraph6 (2.38.0-7) ...
+Setting up libpathplan4 (2.38.0-7) ...
+Setting up libxdot4 (2.38.0-7) ...
+Setting up libgvc6 (2.38.0-7) ...
+Setting up libgvpr2 (2.38.0-7) ...
+Setting up graphviz (2.38.0-7) ...
 Setting up aptly (0.9.6~dev+156+g339bf0a) ...
+Processing triggers for libc-bin (2.19-18+deb8u1) ...
+Processing triggers for menu (2.1.47) ...
 CLDS: * Install aptly version: 0.9.6~dev to create local debian repository.
 CLDS: * Add xz-utils package because aptly snapshot merge needs it.
-CLDS: * Disk size = 4116688K. Space Used = 21116K.
+CLDS: * Disk size = 4387688K. Space Used = 34920K.

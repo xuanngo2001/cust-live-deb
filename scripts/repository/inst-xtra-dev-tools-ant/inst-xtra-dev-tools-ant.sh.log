@@ -2,22 +2,30 @@ CLDS:>>>>>>>>> Running inst-xtra-dev-tools-ant.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-Suggested packages:
-  ant-doc ant-gcj
-Recommended packages:
+The following extra packages will be installed:
   ant-optional
+Suggested packages:
+  ant-doc ant-gcj ant-optional-gcj antlr javacc junit jython libbcel-java
+  libbsf-java libcommons-logging-java libcommons-net-java libmail-java
+  libjaxp1.3-java libjdepend-java libjsch-java liblog4j1.2-java liboro-java
+  libregexp-java libxalan2-java libxml-commons-resolver1.1-java
 The following NEW packages will be installed:
-  ant
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-Need to get 1,888 kB of archives.
-After this operation, 2,229 kB of additional disk space will be used.
+  ant ant-optional
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2,204 kB of archives.
+After this operation, 3,073 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main ant all 1.9.4-3 [1,888 kB]
-Fetched 1,888 kB in 0s (32.1 MB/s)
+Get:2 http://ftp.debian.org/debian/ jessie/main ant-optional all 1.9.4-3 [316 kB]
+Fetched 2,204 kB in 0s (3,220 kB/s)
 Selecting previously unselected package ant.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54036 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62743 files and directories currently installed.)
 Preparing to unpack .../archives/ant_1.9.4-3_all.deb ...
 Unpacking ant (1.9.4-3) ...
+Selecting previously unselected package ant-optional.
+Preparing to unpack .../ant-optional_1.9.4-3_all.deb ...
+Unpacking ant-optional (1.9.4-3) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up ant (1.9.4-3) ...
+Setting up ant-optional (1.9.4-3) ...
 CLDS: * Install ant.
-CLDS: * Disk size = 4121312K. Space Used = 4040K.
+CLDS: * Disk size = 4393536K. Space Used = 5264K.
