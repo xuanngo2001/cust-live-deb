@@ -1,0 +1,51 @@
+CLDS:>>>>>>>>> Running inst-min-con-02-localepurge.sh ...
+info: Trying to set 'localepurge/remove_no' [note] to ''
+info: Loading answer for 'localepurge/remove_no'
+info: Trying to set 'localepurge/verbose' [boolean] to 'false'
+info: Loading answer for 'localepurge/verbose'
+info: Trying to set 'localepurge/dontbothernew' [boolean] to 'false'
+info: Loading answer for 'localepurge/dontbothernew'
+info: Trying to set 'localepurge/nopurge' [multiselect] to 'en, en_US, en_US.UTF-8'
+info: Loading answer for 'localepurge/nopurge'
+info: Trying to set 'localepurge/quickndirtycalc' [boolean] to 'true'
+info: Loading answer for 'localepurge/quickndirtycalc'
+info: Trying to set 'localepurge/mandelete' [boolean] to 'true'
+info: Loading answer for 'localepurge/mandelete'
+info: Trying to set 'localepurge/showfreedspace' [boolean] to 'true'
+info: Loading answer for 'localepurge/showfreedspace'
+info: Trying to set 'localepurge/none_selected' [boolean] to 'false'
+info: Loading answer for 'localepurge/none_selected'
+info: Trying to set 'localepurge/use-dpkg-feature' [boolean] to 'true'
+info: Loading answer for 'localepurge/use-dpkg-feature'
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  ucf
+Suggested packages:
+  debfoster deborphan bleachbit
+The following NEW packages will be installed:
+  localepurge ucf
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 122 kB of archives.
+After this operation, 334 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/ jessie/main ucf all 3.0030 [69.7 kB]
+Get:2 http://localhost/aptly-repo/ jessie/main localepurge all 0.7.3.4 [52.4 kB]
+Preconfiguring packages ...
+Fetched 122 kB in 0s (9,205 kB/s)
+Selecting previously unselected package ucf.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16815 files and directories currently installed.)
+Preparing to unpack .../archives/ucf_3.0030_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0030) ...
+Selecting previously unselected package localepurge.
+Preparing to unpack .../localepurge_0.7.3.4_all.deb ...
+Unpacking localepurge (0.7.3.4) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up ucf (3.0030) ...
+Setting up localepurge (0.7.3.4) ...
+
+Creating config file /etc/locale.nopurge with new version
+CLDS: * Install localepurge to purge documentation of all languages, except en, en_US, en_US.UTF-8.
+CLDS: * Reconfigure localepurge: dpkg-reconfigure localepurge
+CLDS: * Disk size = 1805028K. Space Used = 752K.
