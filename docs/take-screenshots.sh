@@ -23,7 +23,9 @@ while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
   APPLICATION=$(echo ${LINE}|cut -d ',' -f 1)
   $APPLICATION&
   APPS_PID[${#APPS_PID[@]}]=$!
-done < <(cat ${WIN_POS_SIZE_FILE} | grep -v "^#" )
+  
+                                  # Ignore comment line | Remove empty line
+done < <(cat ${WIN_POS_SIZE_FILE} | grep -v "^#"  | awk NF)
 
 
 
