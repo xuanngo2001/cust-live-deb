@@ -59,12 +59,14 @@ while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
   # Storing WIN_ID
   WIN_IDS[${#WIN_IDS[@]}]=$WIN_ID
   
-done < <(cat ${WIN_POS_SIZE_FILE} | grep -v "^#" )
+                                  # Ignore comment line | Remove empty line
+done < <(cat ${WIN_POS_SIZE_FILE} | grep -v "^#"  | awk NF)
 
 
 ## Take screenshots
 rm -f screenshots/cld_screenshot_01.jpg
 gnome-screenshot -f screenshots/cld_screenshot_01.jpg
+
 
 ## Close all applications gracefully.
 for WIN_ID in "${WIN_IDS[@]}"
