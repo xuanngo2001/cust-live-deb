@@ -39,11 +39,13 @@ function F_MAIN()
 	# Processing dpkg.log
 	BINARY_DIR=./binary
 	BINARY_DIR=$(readlink -ev "${BINARY_DIR}")
-	DPKG_LOG=$(find "${LOG_DIR}" -type f -name 'dpkg.log')	
+	DPKG_LOG=$(find "${LOG_DIR}" -type f -name 'dpkg.log')
+	F_OVERWRITE_IF_DIFF "${DPKG_LOG}" "${BINARY_DIR}"
 
 }
 
-
+# Copy file to destination directory.
+#  If file already existed and have different content, then overwrite it.
 function F_OVERWRITE_IF_DIFF()
 {
   local FILE_PATH=$1
