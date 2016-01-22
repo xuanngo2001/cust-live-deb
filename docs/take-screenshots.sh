@@ -1,5 +1,6 @@
 #!/bin/bash
-
+set -e
+set -o pipefail
 # Reference http://unix.stackexchange.com/a/14170
 # wmctrl column definitions: http://askubuntu.com/a/564432
 
