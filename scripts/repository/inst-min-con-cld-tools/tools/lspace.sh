@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-set -o pipefail
 # Description: List filenames with trailing spaces. This is to help renaming process.
 
 

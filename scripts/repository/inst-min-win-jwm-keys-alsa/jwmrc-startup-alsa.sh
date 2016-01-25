@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-set -o pipefail
 # Description: Set ALSA controller name. It is not always Master. It could be something else(e.g. Headphone).
 
 # CLD_ROOT_DIR should be equal to ${GV_CLD_ROOT_DIR}.

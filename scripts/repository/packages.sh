@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-set -o pipefail
 # Description: Get all package names from inst-*.sh scripts. Note: it is not definitive.
 
 PACKAGE_LIST_FILE=./packages.list

@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-set -o pipefail
 # Description: Create script repositories.
 
 SCRIPT_REPO_LIST=$1
