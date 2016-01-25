@@ -13,11 +13,11 @@ apt-get -y --force-yes install jwm
 
 # Set JWM.
 JWMRC=jwmrc
-yes | cp ${JWMRC}.xml        /root/.${JWMRC}
-yes | cp ${JWMRC}-menus.xml  "${GV_CLD_ROOT_DIR}"
-yes | cp ${JWMRC}-tray.xml   "${GV_CLD_ROOT_DIR}"
-yes | cp ${JWMRC}-key.xml    "${GV_CLD_ROOT_DIR}"
-yes | cp ${JWMRC}-startup.sh "${GV_CLD_ROOT_DIR}"
+yes | cp -av ${JWMRC}.xml        /root/.${JWMRC}
+yes | cp -av ${JWMRC}-menus.xml  "${GV_CLD_ROOT_DIR}"
+yes | cp -av ${JWMRC}-tray.xml   "${GV_CLD_ROOT_DIR}"
+yes | cp -av ${JWMRC}-key.xml    "${GV_CLD_ROOT_DIR}"
+yes | cp -av ${JWMRC}-startup.sh "${GV_CLD_ROOT_DIR}"
 
 
 # Log
