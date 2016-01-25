@@ -1,3 +1,8 @@
 * >>>>>>>>> Running inst-std-accessories-xarchiver.sh ...
+  * After this operation, 1,211 kB of additional disk space will be used.
   * Install Archive Manager: xarchiver.
-  * Disk size = 2538656K. Space Used = 8K.
+  * Disk size = 2248964K. Space Used = 1232K.
+  * The following NEW packages will be installed:
+  ```bash
+  xarchiver
+  ```

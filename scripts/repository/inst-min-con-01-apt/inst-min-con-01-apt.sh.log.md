@@ -1,2 +1,4 @@
 * >>>>>>>>> Running inst-min-con-01-apt.sh ...
-  * Disk size = 1770236K. Space Used = 8K.
+  * Set APT to use local repository first.
+  * Set APT to skip installing recommended packages.
+  * Disk size = 1770276K. Space Used = 12K.

@@ -4,4 +4,4 @@
   * Umount /sys, /dev/pts and /proc.
   * Add Debian main repositories in sources.list.
   * Delete local Debian repository from sources.list.
-  * Disk size = 2933008K. Space Used = -586020K.
+  * Disk size = 2632400K. Space Used = -457948K.
