@@ -1,14 +1,22 @@
-#!/bin/bash
+set -e
+set -o pipefail
 # Global variables:
 # ${GV_LOG}: Prefix this variable in echo to log echoed string.
-# ${GV_SETTINGS_DIR}: Hold settings data.
-# ${GV_BINARY_DIR}: Hold settings binary data.
+# ${GV_CLD_ROOT_DIR}: Hold settings and scripts files for Cust-Live-Deb.
+# ${GV_SOURCES_LIST}: APT sources list file
 
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+
 #PROXY=your_proxy:8080
 PROXY=proxy.wdf.sap.corp:8080
+
+# Get out if there is no proxy.
+if [ -z "${PROXY}" ]; then
+  echo "${GV_LOG} * Warning: There is no proxy."
+  exit 0; # Exit nicely.
+fi
 
 ## Add proxy setting to /etc/enviroment.
 cat > /etc/environment <<EOF
