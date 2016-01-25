@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-cld-dev-tools-xsltproc.sh ...
   * After this operation, 140 kB of additional disk space will be used.
   * Install xsltproc to process xslt.
-  * Disk size = 4388272K. Space Used = 288K.
+  * Disk size = 4069028K. Space Used = 288K.
   * The following NEW packages will be installed:
   ```bash
   xsltproc

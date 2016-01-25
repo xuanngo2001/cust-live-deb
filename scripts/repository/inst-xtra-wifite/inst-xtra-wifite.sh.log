@@ -5,23 +5,20 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  aircrack-ng crda geoip-database ieee-data iw libc-ares2 libgeoip1 libpcap0.8
-  libsmi2ldbl libwireshark-data libwireshark5 libwiretap4 libwsutil4 pyrit
-  python-scapy python-sqlalchemy python-sqlalchemy-ext reaver tshark
-  wireless-regdb wireshark-common
+  aircrack-ng iw libc-ares2 libgeoip1 libpcap0.8 libsmi2ldbl libwireshark-data
+  libwireshark5 libwiretap4 libwsutil4 pyrit reaver tshark wireshark-common
 Suggested packages:
   geoip-bin snmp-mibs-downloader wireshark-doc python-psycopg2 python-pymssql
-  python-mysqldb tcpdump tcpreplay wireshark python-gnuplot python-crypto
-  python-pyx ebtables python-visual sox xpdf gv hexer librsvg2-bin
-  python-pcapy python-sqlalchemy-doc python-kinterbasdb
+  python-mysqldb
+Recommended packages:
+  ieee-data crda geoip-database python-scapy python-sqlalchemy
 The following NEW packages will be installed:
-  aircrack-ng crda geoip-database ieee-data iw libc-ares2 libgeoip1 libpcap0.8
-  libsmi2ldbl libwireshark-data libwireshark5 libwiretap4 libwsutil4 pyrit
-  python-scapy python-sqlalchemy python-sqlalchemy-ext reaver tshark wifite
-  wireless-regdb wireshark-common
-0 upgraded, 22 newly installed, 0 to remove and 0 not upgraded.
-Need to get 17.3 MB of archives.
-After this operation, 94.9 MB of additional disk space will be used.
+  aircrack-ng iw libc-ares2 libgeoip1 libpcap0.8 libsmi2ldbl libwireshark-data
+  libwireshark5 libwiretap4 libwsutil4 pyrit reaver tshark wifite
+  wireshark-common
+0 upgraded, 15 newly installed, 0 to remove and 0 not upgraded.
+Need to get 14.0 MB of archives.
+After this operation, 80.3 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libgeoip1 amd64 1.6.2-4 [90.8 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libpcap0.8 amd64 1.6.2-2 [133 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main libsmi2ldbl amd64 0.4.8+dfsg2-10+b2 [122 kB]
@@ -30,24 +27,17 @@ Get:5 http://localhost/aptly-repo/ jessie/main libwsutil4 amd64 1.12.1+g01b65bf-
 Get:6 http://localhost/aptly-repo/ jessie/main libwiretap4 amd64 1.12.1+g01b65bf-4+deb8u3 [187 kB]
 Get:7 http://localhost/aptly-repo/ jessie/main libwireshark-data all 1.12.1+g01b65bf-4+deb8u3 [838 kB]
 Get:8 http://localhost/aptly-repo/ jessie/main libwireshark5 amd64 1.12.1+g01b65bf-4+deb8u3 [11.3 MB]
-Get:9 http://ftp.debian.org/debian/ jessie/main wireless-regdb all 2014.11.18-1 [7,324 B]
-Get:10 http://ftp.debian.org/debian/ jessie/main crda amd64 3.13-1 [60.0 kB]
-Get:11 http://localhost/aptly-repo/ jessie/main iw amd64 3.17-1 [63.0 kB]
-Get:12 http://ftp.debian.org/debian/ jessie/main geoip-database all 20150317-1 [1,517 kB]
-Get:13 http://localhost/aptly-repo/ jessie/main aircrack-ng amd64 1:1.2-0~beta3-4 [435 kB]
-Get:14 http://localhost/aptly-repo/ jessie/main wireshark-common amd64 1.12.1+g01b65bf-4+deb8u3 [181 kB]
-Get:15 http://localhost/aptly-repo/ jessie/main tshark amd64 1.12.1+g01b65bf-4+deb8u3 [161 kB]
-Get:16 http://localhost/aptly-repo/ jessie/main reaver amd64 1.4-2 [229 kB]
-Get:17 http://localhost/aptly-repo/ jessie/main pyrit amd64 0.4.0-4 [136 kB]
-Get:18 http://localhost/aptly-repo/ jessie/main wifite all 2.0r85-1 [30.7 kB]
-Get:19 http://ftp.debian.org/debian/ jessie/main ieee-data all 20141019.1 [809 kB]
-Get:20 http://ftp.debian.org/debian/ jessie/main python-scapy all 2.2.0-1 [238 kB]
-Get:21 http://ftp.debian.org/debian/ jessie/main python-sqlalchemy all 0.9.8+dfsg-0.1 [604 kB]
-Get:22 http://ftp.debian.org/debian/ jessie/main python-sqlalchemy-ext amd64 0.9.8+dfsg-0.1 [18.6 kB]
+Get:9 http://localhost/aptly-repo/ jessie/main iw amd64 3.17-1 [63.0 kB]
+Get:10 http://localhost/aptly-repo/ jessie/main aircrack-ng amd64 1:1.2-0~beta3-4 [435 kB]
+Get:11 http://localhost/aptly-repo/ jessie/main wireshark-common amd64 1.12.1+g01b65bf-4+deb8u3 [181 kB]
+Get:12 http://localhost/aptly-repo/ jessie/main tshark amd64 1.12.1+g01b65bf-4+deb8u3 [161 kB]
+Get:13 http://localhost/aptly-repo/ jessie/main reaver amd64 1.4-2 [229 kB]
+Get:14 http://localhost/aptly-repo/ jessie/main pyrit amd64 0.4.0-4 [136 kB]
+Get:15 http://localhost/aptly-repo/ jessie/main wifite all 2.0r85-1 [30.7 kB]
 Preconfiguring packages ...
-Fetched 17.3 MB in 5s (3,146 kB/s)
+Fetched 14.0 MB in 0s (39.7 MB/s)
 Selecting previously unselected package libgeoip1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66280 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55250 files and directories currently installed.)
 Preparing to unpack .../libgeoip1_1.6.2-4_amd64.deb ...
 Unpacking libgeoip1:amd64 (1.6.2-4) ...
 Selecting previously unselected package libpcap0.8:amd64.
@@ -77,27 +67,6 @@ Unpacking iw (3.17-1) ...
 Selecting previously unselected package aircrack-ng.
 Preparing to unpack .../aircrack-ng_1%3a1.2-0~beta3-4_amd64.deb ...
 Unpacking aircrack-ng (1:1.2-0~beta3-4) ...
-Selecting previously unselected package wireless-regdb.
-Preparing to unpack .../wireless-regdb_2014.11.18-1_all.deb ...
-Unpacking wireless-regdb (2014.11.18-1) ...
-Selecting previously unselected package crda.
-Preparing to unpack .../archives/crda_3.13-1_amd64.deb ...
-Unpacking crda (3.13-1) ...
-Selecting previously unselected package geoip-database.
-Preparing to unpack .../geoip-database_20150317-1_all.deb ...
-Unpacking geoip-database (20150317-1) ...
-Selecting previously unselected package ieee-data.
-Preparing to unpack .../ieee-data_20141019.1_all.deb ...
-Unpacking ieee-data (20141019.1) ...
-Selecting previously unselected package python-scapy.
-Preparing to unpack .../python-scapy_2.2.0-1_all.deb ...
-Unpacking python-scapy (2.2.0-1) ...
-Selecting previously unselected package python-sqlalchemy.
-Preparing to unpack .../python-sqlalchemy_0.9.8+dfsg-0.1_all.deb ...
-Unpacking python-sqlalchemy (0.9.8+dfsg-0.1) ...
-Selecting previously unselected package python-sqlalchemy-ext.
-Preparing to unpack .../python-sqlalchemy-ext_0.9.8+dfsg-0.1_amd64.deb ...
-Unpacking python-sqlalchemy-ext (0.9.8+dfsg-0.1) ...
 Selecting previously unselected package wireshark-common.
 Preparing to unpack .../wireshark-common_1.12.1+g01b65bf-4+deb8u3_amd64.deb ...
 Unpacking wireshark-common (1.12.1+g01b65bf-4+deb8u3) ...
@@ -125,17 +94,11 @@ Setting up libwireshark-data (1.12.1+g01b65bf-4+deb8u3) ...
 Setting up libwireshark5:amd64 (1.12.1+g01b65bf-4+deb8u3) ...
 Setting up iw (3.17-1) ...
 Setting up aircrack-ng (1:1.2-0~beta3-4) ...
-Setting up wireless-regdb (2014.11.18-1) ...
-Setting up crda (3.13-1) ...
-Setting up geoip-database (20150317-1) ...
-Setting up ieee-data (20141019.1) ...
-Setting up python-scapy (2.2.0-1) ...
-Setting up python-sqlalchemy (0.9.8+dfsg-0.1) ...
-Setting up python-sqlalchemy-ext (0.9.8+dfsg-0.1) ...
 Setting up wireshark-common (1.12.1+g01b65bf-4+deb8u3) ...
 Setting up tshark (1.12.1+g01b65bf-4+deb8u3) ...
 Setting up reaver (1.4-2) ...
 Setting up pyrit (0.4.0-4) ...
 Setting up wifite (2.0r85-1) ...
-Processing triggers for libc-bin (2.19-18+deb8u1) ...
-CLDS: * Disk size = 4847304K. Space Used = 116376K.
+Processing triggers for libc-bin (2.19-18+deb8u2) ...
+CLDS: * Install wifite.
+CLDS: * Disk size = 4485004K. Space Used = 93400K.

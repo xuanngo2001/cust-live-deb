@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-xtra-mtran.sh ...
   * Copied /root/scripts/repository/inst-min-con-xtra-mtran/mtran.sh to /usr/local/bin/.
-  * Disk size = 2938004K. Space Used = 8K.
+  * Disk size = 2464872K. Space Used = 8K.

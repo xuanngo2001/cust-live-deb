@@ -1,4 +1,4 @@
 * >>>>>>>>> Running inst-min-win-jwm-keys-alsa.sh ...
   * Add ALSA key binding.
   * Add script to auto-detect ALSA controller on JWM startup.
-  * Disk size = 2086044K. Space Used = 8K.
+  * Disk size = 2653728K. Space Used = 8K.
