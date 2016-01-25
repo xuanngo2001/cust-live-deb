@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-system-time-zone.sh ...
-  * Disk size = 4162496K. Space Used = 4K.
+  * Disk size = 3623236K. Space Used = 4K.

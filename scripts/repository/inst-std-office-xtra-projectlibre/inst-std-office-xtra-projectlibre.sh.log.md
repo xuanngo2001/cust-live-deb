@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-office-xtra-projectlibre.sh ...
   * Install ProjectLibre.
-  * Disk size = 4113172K. Space Used = 18460K.
+  * Disk size = 4113244K. Space Used = 18456K.

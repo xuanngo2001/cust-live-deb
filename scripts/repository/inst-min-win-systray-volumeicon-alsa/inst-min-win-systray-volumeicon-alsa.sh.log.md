@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-win-systray-volumeicon-alsa.sh ...
-  * Disk size = 3101464K. Space Used = 16K.
+  * Disk size = 2371924K. Space Used = 16K.

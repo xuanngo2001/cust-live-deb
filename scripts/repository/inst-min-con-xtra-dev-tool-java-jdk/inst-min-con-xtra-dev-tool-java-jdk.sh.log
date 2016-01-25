@@ -54,8 +54,8 @@ Get:9 http://localhost/aptly-repo/ jessie/main libpython-stdlib amd64 2.7.9-1 [1
 Get:10 http://localhost/aptly-repo/ jessie/main python amd64 2.7.9-1 [151 kB]
 Get:11 http://localhost/aptly-repo/ jessie/main libasyncns0 amd64 0.8-5 [12.5 kB]
 Get:12 http://localhost/aptly-repo/ jessie/main libgtk2.0-common all 2.24.25-3 [3,123 kB]
-Get:13 http://localhost/aptly-repo/ jessie/main libgtk2.0-0 amd64 2.24.25-3 [2,301 kB]
-Get:14 http://ftp.debian.org/debian/ jessie/main libgconf2-4 amd64 3.2.6-3 [358 kB]
+Get:13 http://ftp.debian.org/debian/ jessie/main libgconf2-4 amd64 3.2.6-3 [358 kB]
+Get:14 http://localhost/aptly-repo/ jessie/main libgtk2.0-0 amd64 2.24.25-3 [2,301 kB]
 Get:15 http://localhost/aptly-repo/ jessie/main libatk-wrapper-java all 0.30.5-1 [30.3 kB]
 Get:16 http://localhost/aptly-repo/ jessie/main libatk-wrapper-java-jni amd64 0.30.5-1 [24.8 kB]
 Get:17 http://localhost/aptly-repo/ jessie/main libavahi-glib1 amd64 0.6.31-5 [36.4 kB]
@@ -106,13 +106,13 @@ Get:61 http://localhost/aptly-repo/ jessie/main x11proto-input-dev all 2.3.1-1 [
 Get:62 http://localhost/aptly-repo/ jessie/main x11proto-kb-dev all 1.0.6-2 [269 kB]
 Get:63 http://localhost/aptly-repo/ jessie/main xtrans-dev all 1.3.4-1 [99.3 kB]
 Get:64 http://localhost/aptly-repo/ jessie/main libxcb1-dev amd64 1.10-3+b1 [83.8 kB]
-Get:65 http://localhost/aptly-repo/ jessie/main libx11-dev amd64 2:1.6.2-3 [800 kB]
-Get:66 http://ftp.debian.org/debian/ jessie/main libx11-doc all 2:1.6.2-3 [2,026 kB]
+Get:65 http://ftp.debian.org/debian/ jessie/main libx11-doc all 2:1.6.2-3 [2,026 kB]
+Get:66 http://localhost/aptly-repo/ jessie/main libx11-dev amd64 2:1.6.2-3 [800 kB]
 Get:67 http://localhost/aptly-repo/ jessie/main libxt-dev amd64 1:1.1.4-1+b1 [421 kB]
 Get:68 http://ftp.debian.org/debian/ jessie/main lksctp-tools amd64 1.0.16+dfsg-2 [62.6 kB]
 Get:69 http://ftp.debian.org/debian/ jessie/main tcpd amd64 7.6.q-25 [22.9 kB]
 Extracting templates from packages: 43%Extracting templates from packages: 86%Extracting templates from packages: 100%
-Fetched 83.8 MB in 6s (12.4 MB/s)
+Fetched 83.8 MB in 9s (8,680 kB/s)
 Selecting previously unselected package libmagic1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28597 files and directories currently installed.)
 Preparing to unpack .../libmagic1_1%3a5.22+15-2_amd64.deb ...
@@ -621,4 +621,4 @@ Running hooks in /etc/ca-certificates/update.d....
 done.
 done.
 CLDS: * Install JAVA JDK: default-jdk.
-CLDS: * Disk size = 2550124K. Space Used = 279928K.
+CLDS: * Disk size = 2550164K. Space Used = 279936K.

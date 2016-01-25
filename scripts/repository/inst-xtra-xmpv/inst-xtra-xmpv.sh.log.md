@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-xmpv.sh ...
-  * Disk size = 5077144K. Space Used = 48K.
+  * Disk size = 5077220K. Space Used = 48K.

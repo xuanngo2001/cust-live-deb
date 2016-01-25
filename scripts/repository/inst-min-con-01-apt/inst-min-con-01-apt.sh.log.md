@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-01-apt.sh ...
-  * Disk size = 1782596K. Space Used = 8K.
+  * Disk size = 1770236K. Space Used = 8K.

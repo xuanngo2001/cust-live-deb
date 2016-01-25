@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-help-manuals-html.sh ...
-  * Disk size = 3338884K. Space Used = 4K.
+  * Disk size = 2614216K. Space Used = 8K.

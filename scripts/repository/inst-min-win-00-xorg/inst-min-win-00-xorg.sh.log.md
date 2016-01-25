@@ -4,7 +4,7 @@
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
-  * Disk size = 3056884K. Space Used = 76348K.
+  * Disk size = 2326832K. Space Used = 76348K.
   * The following NEW packages will be installed:
   ```bash
   keyboard-configuration libegl1-mesa libegl1-mesa-drivers libepoxy0 libevdev2

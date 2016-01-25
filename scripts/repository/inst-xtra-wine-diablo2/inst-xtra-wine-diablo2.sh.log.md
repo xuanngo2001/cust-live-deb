@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-xtra-wine-diablo2.sh ...
   * Install libjpeg-turbo-progs & libldap-2.4-2 so that Blizzard Downloader will not fail.
-  * Disk size = 4847232K. Space Used = 4K.
+  * Disk size = 4847308K. Space Used = 4K.

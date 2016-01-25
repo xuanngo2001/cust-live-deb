@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-con-udevil-bpo.sh ...
   * After this operation, 290 MB of additional disk space will be used.
-  * Disk size = 2262728K. Space Used = 324772K.
+  * Disk size = 2250484K. Space Used = 324776K.
   * The following NEW packages will be installed:
   ```bash
   adwaita-icon-theme aspell aspell-en at-spi2-core colord colord-data

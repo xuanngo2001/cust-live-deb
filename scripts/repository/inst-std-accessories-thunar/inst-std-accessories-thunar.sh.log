@@ -4,54 +4,60 @@ Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
   desktop-file-utils gvfs gvfs-common gvfs-daemons gvfs-libs libaacs0
-  libbluray1 libgarcon-1-0 libgarcon-common libpoppler-glib8 libtagc0
-  libthunarx-2-0 libtumbler-1-0 libwnck-common libwnck22 libxres1 p7zip-full
-  policykit-1-gnome thunar-data tumbler tumbler-common xarchiver xfce4-panel
-  xz-utils
+  libbluray1 libgarcon-1-0 libgarcon-common libopenjpeg5 libpoppler-glib8
+  libpoppler46 libtagc0 libthunarx-2-0 libtumbler-1-0 libwnck-common libwnck22
+  libxres1 p7zip-full policykit-1-gnome poppler-data thunar-data tumbler
+  tumbler-common xarchiver xfce4-panel xz-utils
 Suggested packages:
-  gvfs-backends libbluray-bdj p7zip-rar tumbler-plugins-extra arj lhasa rpm
-  unar
+  gvfs-backends libbluray-bdj p7zip-rar poppler-utils ghostscript
+  fonts-japanese-mincho fonts-ipafont-mincho fonts-japanese-gothic
+  fonts-ipafont-gothic fonts-arphic-ukai fonts-arphic-uming fonts-nanum
+  tumbler-plugins-extra arj lhasa rpm unar
 The following NEW packages will be installed:
   desktop-file-utils gvfs gvfs-common gvfs-daemons gvfs-libs libaacs0
-  libbluray1 libgarcon-1-0 libgarcon-common libpoppler-glib8 libtagc0
-  libthunarx-2-0 libtumbler-1-0 libwnck-common libwnck22 libxres1 p7zip-full
-  policykit-1-gnome thunar thunar-archive-plugin thunar-data
-  thunar-media-tags-plugin thunar-volman tumbler tumbler-common xarchiver
-  xfce4-panel xz-utils
-0 upgraded, 28 newly installed, 0 to remove and 0 not upgraded.
-Need to get 7,300 kB of archives.
-After this operation, 30.3 MB of additional disk space will be used.
+  libbluray1 libgarcon-1-0 libgarcon-common libopenjpeg5 libpoppler-glib8
+  libpoppler46 libtagc0 libthunarx-2-0 libtumbler-1-0 libwnck-common libwnck22
+  libxres1 p7zip-full policykit-1-gnome poppler-data thunar
+  thunar-archive-plugin thunar-data thunar-media-tags-plugin thunar-volman
+  tumbler tumbler-common xarchiver xfce4-panel xz-utils
+0 upgraded, 31 newly installed, 0 to remove and 0 not upgraded.
+Need to get 10.1 MB of archives.
+After this operation, 46.0 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libbluray1 amd64 2:0.7.0-dmo1 [111 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libgarcon-common all 0.2.1-2 [83.5 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main libgarcon-1-0 amd64 0.2.1-2 [86.4 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main libpoppler-glib8 amd64 0.26.5-2 [121 kB]
-Get:5 http://localhost/aptly-repo/ jessie/main libtagc0 amd64 1.9.1-2.1 [22.5 kB]
-Get:6 http://localhost/aptly-repo/ jessie/main thunar-data all 1.6.3-2 [1,005 kB]
-Get:7 http://localhost/aptly-repo/ jessie/main libthunarx-2-0 amd64 1.6.3-2 [62.8 kB]
-Get:8 http://localhost/aptly-repo/ jessie/main libxres1 amd64 2:1.0.7-1+b1 [15.5 kB]
-Get:9 http://localhost/aptly-repo/ jessie/main libwnck-common all 2.30.7-2 [223 kB]
-Get:10 http://localhost/aptly-repo/ jessie/main libwnck22 amd64 2.30.7-2 [116 kB]
-Get:11 http://localhost/aptly-repo/ jessie/main xfce4-panel amd64 4.10.1-1 [1,078 kB]
-Get:12 http://localhost/aptly-repo/ jessie/main xz-utils amd64 5.1.1alpha+20120614-2+b3 [221 kB]
-Get:13 http://localhost/aptly-repo/ jessie/main desktop-file-utils amd64 0.22-1 [76.0 kB]
-Get:14 http://localhost/aptly-repo/ jessie/main policykit-1-gnome amd64 0.105-2 [89.1 kB]
-Get:15 http://localhost/aptly-repo/ jessie/main thunar amd64 1.6.3-2 [263 kB]
-Get:16 http://localhost/aptly-repo/ jessie/main thunar-archive-plugin amd64 0.3.1-3 [49.9 kB]
-Get:17 http://localhost/aptly-repo/ jessie/main thunar-media-tags-plugin amd64 0.2.1-1 [81.7 kB]
-Get:18 http://localhost/aptly-repo/ jessie/main thunar-volman amd64 0.8.0-4 [127 kB]
-Get:19 http://localhost/aptly-repo/ jessie/main xarchiver amd64 1:0.5.4-1 [445 kB]
-Get:20 http://www.deb-multimedia.org/ jessie/main libaacs0 amd64 0.8.1-dmo1 [48.0 kB]
-Get:21 http://ftp.debian.org/debian/ jessie/main libtumbler-1-0 amd64 0.1.30-1+b1 [70.1 kB]
-Get:22 http://ftp.debian.org/debian/ jessie/main gvfs-common all 1.22.2-1 [739 kB]
-Get:23 http://ftp.debian.org/debian/ jessie/main gvfs-libs amd64 1.22.2-1 [333 kB]
-Get:24 http://ftp.debian.org/debian/ jessie/main gvfs-daemons amd64 1.22.2-1 [353 kB]
-Get:25 http://ftp.debian.org/debian/ jessie/main gvfs amd64 1.22.2-1 [334 kB]
-Get:26 http://ftp.debian.org/debian/ jessie/main p7zip-full amd64 9.20.1~dfsg.1-4.1+deb8u1 [924 kB]
-Get:27 http://ftp.debian.org/debian/ jessie/main tumbler-common all 0.1.30-1 [111 kB]
-Get:28 http://ftp.debian.org/debian/ jessie/main tumbler amd64 0.1.30-1+b1 [112 kB]
-Fetched 7,300 kB in 5s (1,356 kB/s)
+Get:4 http://localhost/aptly-repo/ jessie/main libopenjpeg5 amd64 1:1.5.2-3 [111 kB]
+Get:5 http://localhost/aptly-repo/ jessie/main libpoppler46 amd64 0.26.5-2 [1,210 kB]
+Get:6 http://localhost/aptly-repo/ jessie/main libpoppler-glib8 amd64 0.26.5-2 [121 kB]
+Get:7 http://localhost/aptly-repo/ jessie/main libtagc0 amd64 1.9.1-2.1 [22.5 kB]
+Get:8 http://localhost/aptly-repo/ jessie/main thunar-data all 1.6.3-2 [1,005 kB]
+Get:9 http://localhost/aptly-repo/ jessie/main libthunarx-2-0 amd64 1.6.3-2 [62.8 kB]
+Get:10 http://localhost/aptly-repo/ jessie/main libxres1 amd64 2:1.0.7-1+b1 [15.5 kB]
+Get:11 http://localhost/aptly-repo/ jessie/main poppler-data all 0.4.7-1 [1,491 kB]
+Get:12 http://www.deb-multimedia.org/ jessie/main libaacs0 amd64 0.8.1-dmo1 [48.0 kB]
+Get:13 http://ftp.debian.org/debian/ jessie/main libtumbler-1-0 amd64 0.1.30-1+b1 [70.1 kB]
+Get:14 http://localhost/aptly-repo/ jessie/main libwnck-common all 2.30.7-2 [223 kB]
+Get:15 http://localhost/aptly-repo/ jessie/main libwnck22 amd64 2.30.7-2 [116 kB]
+Get:16 http://localhost/aptly-repo/ jessie/main xfce4-panel amd64 4.10.1-1 [1,078 kB]
+Get:17 http://localhost/aptly-repo/ jessie/main xz-utils amd64 5.1.1alpha+20120614-2+b3 [221 kB]
+Get:18 http://localhost/aptly-repo/ jessie/main desktop-file-utils amd64 0.22-1 [76.0 kB]
+Get:19 http://localhost/aptly-repo/ jessie/main policykit-1-gnome amd64 0.105-2 [89.1 kB]
+Get:20 http://localhost/aptly-repo/ jessie/main thunar amd64 1.6.3-2 [263 kB]
+Get:21 http://localhost/aptly-repo/ jessie/main thunar-archive-plugin amd64 0.3.1-3 [49.9 kB]
+Get:22 http://localhost/aptly-repo/ jessie/main thunar-media-tags-plugin amd64 0.2.1-1 [81.7 kB]
+Get:23 http://localhost/aptly-repo/ jessie/main thunar-volman amd64 0.8.0-4 [127 kB]
+Get:24 http://localhost/aptly-repo/ jessie/main xarchiver amd64 1:0.5.4-1 [445 kB]
+Get:25 http://ftp.debian.org/debian/ jessie/main gvfs-common all 1.22.2-1 [739 kB]
+Get:26 http://ftp.debian.org/debian/ jessie/main gvfs-libs amd64 1.22.2-1 [333 kB]
+Get:27 http://ftp.debian.org/debian/ jessie/main gvfs-daemons amd64 1.22.2-1 [353 kB]
+Get:28 http://ftp.debian.org/debian/ jessie/main gvfs amd64 1.22.2-1 [334 kB]
+Get:29 http://ftp.debian.org/debian/ jessie/main p7zip-full amd64 9.20.1~dfsg.1-4.1+deb8u1 [924 kB]
+Get:30 http://ftp.debian.org/debian/ jessie/main tumbler-common all 0.1.30-1 [111 kB]
+Get:31 http://ftp.debian.org/debian/ jessie/main tumbler amd64 0.1.30-1+b1 [112 kB]
+Extracting templates from packages: 96%Extracting templates from packages: 100%
+Fetched 10.1 MB in 9s (1,041 kB/s)
 Selecting previously unselected package libaacs0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40758 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33012 files and directories currently installed.)
 Preparing to unpack .../libaacs0_0.8.1-dmo1_amd64.deb ...
 Unpacking libaacs0:amd64 (0.8.1-dmo1) ...
 Selecting previously unselected package libbluray1:amd64.
@@ -63,6 +69,12 @@ Unpacking libgarcon-common (0.2.1-2) ...
 Selecting previously unselected package libgarcon-1-0.
 Preparing to unpack .../libgarcon-1-0_0.2.1-2_amd64.deb ...
 Unpacking libgarcon-1-0 (0.2.1-2) ...
+Selecting previously unselected package libopenjpeg5:amd64.
+Preparing to unpack .../libopenjpeg5_1%3a1.5.2-3_amd64.deb ...
+Unpacking libopenjpeg5:amd64 (1:1.5.2-3) ...
+Selecting previously unselected package libpoppler46:amd64.
+Preparing to unpack .../libpoppler46_0.26.5-2_amd64.deb ...
+Unpacking libpoppler46:amd64 (0.26.5-2) ...
 Selecting previously unselected package libpoppler-glib8:amd64.
 Preparing to unpack .../libpoppler-glib8_0.26.5-2_amd64.deb ...
 Unpacking libpoppler-glib8:amd64 (0.26.5-2) ...
@@ -81,6 +93,9 @@ Unpacking libtumbler-1-0 (0.1.30-1+b1) ...
 Selecting previously unselected package libxres1:amd64.
 Preparing to unpack .../libxres1_2%3a1.0.7-1+b1_amd64.deb ...
 Unpacking libxres1:amd64 (2:1.0.7-1+b1) ...
+Selecting previously unselected package poppler-data.
+Preparing to unpack .../poppler-data_0.4.7-1_all.deb ...
+Unpacking poppler-data (0.4.7-1) ...
 Selecting previously unselected package libwnck-common.
 Preparing to unpack .../libwnck-common_2.30.7-2_all.deb ...
 Unpacking libwnck-common (2.30.7-2) ...
@@ -136,20 +151,23 @@ Selecting previously unselected package xarchiver.
 Preparing to unpack .../xarchiver_1%3a0.5.4-1_amd64.deb ...
 Unpacking xarchiver (1:0.5.4-1) ...
 Processing triggers for hicolor-icon-theme (0.13-1) ...
+Processing triggers for fontconfig (2.11.0-6.3) ...
 Processing triggers for man-db (2.7.0.2-5) ...
-Processing triggers for mime-support (3.58) ...
 Processing triggers for libglib2.0-0:amd64 (2.42.1-1) ...
 Processing triggers for menu (2.1.47) ...
 Setting up libaacs0:amd64 (0.8.1-dmo1) ...
 Setting up libbluray1:amd64 (2:0.7.0-dmo1) ...
 Setting up libgarcon-common (0.2.1-2) ...
 Setting up libgarcon-1-0 (0.2.1-2) ...
+Setting up libopenjpeg5:amd64 (1:1.5.2-3) ...
+Setting up libpoppler46:amd64 (0.26.5-2) ...
 Setting up libpoppler-glib8:amd64 (0.26.5-2) ...
 Setting up libtagc0:amd64 (1.9.1-2.1) ...
 Setting up thunar-data (1.6.3-2) ...
 Setting up libthunarx-2-0 (1.6.3-2) ...
 Setting up libtumbler-1-0 (0.1.30-1+b1) ...
 Setting up libxres1:amd64 (2:1.0.7-1+b1) ...
+Setting up poppler-data (0.4.7-1) ...
 Setting up libwnck-common (2.30.7-2) ...
 Setting up libwnck22 (2.30.7-2) ...
 Setting up xfce4-panel (4.10.1-1) ...
@@ -169,7 +187,7 @@ Setting up thunar-volman (0.8.0-4) ...
 Setting up tumbler-common (0.1.30-1) ...
 Setting up tumbler (0.1.30-1+b1) ...
 Setting up xarchiver (1:0.5.4-1) ...
-Processing triggers for libc-bin (2.19-18+deb8u1) ...
+Processing triggers for libc-bin (2.19-18+deb8u2) ...
 Processing triggers for menu (2.1.47) ...
 sed: can't read /root/cld/jwmrc-menus.xml: No such file or directory
-CLDS: * Disk size = 3263308K. Space Used = 21964K.
+CLDS: * Disk size = 2538648K. Space Used = 40656K.

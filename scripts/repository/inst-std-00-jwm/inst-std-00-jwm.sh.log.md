@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-00-jwm.sh ...
-  * Disk size = 3167464K. Space Used = 4K.
+  * Disk size = 2371928K. Space Used = 4K.
