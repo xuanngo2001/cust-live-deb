@@ -12,7 +12,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 3648964K. Space Used = 449868K.
+  * Disk size = 3648968K. Space Used = 449872K.
   * The following NEW packages will be installed:
   ```bash
   fonts-opensymbol libabw-0.1-1 libboost-date-time1.55.0 libclucene-contribs1
