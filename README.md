@@ -10,8 +10,8 @@
 # Download
 
 It comes in 2 flavors:
-* [min](https://github.com/limelime/cust-live-deb/releases/tag/0.8.1): Strict minimum system with JWM light-weight window manager. From there, you can add your desired applications.
-* [std](https://github.com/limelime/cust-live-deb/releases/tag/0.8.1): Standard system includes minimum system + common applications.
+* [min](https://github.com/limelime/cust-live-deb/releases/latest): Strict minimum system with JWM light-weight window manager. From there, you can add your desired applications.
+* [std](https://github.com/limelime/cust-live-deb/releases/latest): Standard system includes minimum system + common applications.
 
 # Burn ISO to USB key
 **WARNING**: Everything in your USB key will be **destroyed**.
