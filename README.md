@@ -7,7 +7,7 @@
 # Screenshots
 ![](https://github.com/limelime/cust-live-deb/blob/master/docs/screenshots/cld_screenshot_01.jpg)
 
-# Download
+# [Download](https://github.com/limelime/cust-live-deb/releases/latest)
 
 It comes in 2 flavors:
 * [min](https://github.com/limelime/cust-live-deb/releases/latest): Strict minimum system with JWM light-weight window manager. From there, you can add your desired applications.
