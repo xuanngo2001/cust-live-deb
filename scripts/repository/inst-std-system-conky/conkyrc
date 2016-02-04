@@ -89,7 +89,8 @@ wlan0${color DarkSlateGray}${hr 1}
 
 ############ CALENDAR ############
 ${font Arial:bold:size=10}${color Tan2}CALENDAR ${color DarkSlateGray}${hr 2}
-$font${color Gray}${color}${font Bitstream Vera Sans Mono:size=8}${execpi 150 cal -h | grep -v b | grep -v J | grep -v Ma | grep -v A | sed s/" $(date +%e)"/\$\{"color tan1"}\&\$\{color}/ | sed s/"$(date +%e) "/\$\{"color cyan"}\&\$\{color}/ | sed s/"$(date +%a | cut -c1-2)"/\$\{"color tan1"}\&\$\{color}/}
-
-# http://sethjust.com/2009/08/03/a-useful-calendar-in-conky/
-# ${font Bitstream Vera Sans Mono:bold:size=09}${execpi 150 cal -h | grep -v b | grep -v J | grep -v Ma | grep -v A | sed s/" $(date +%e)"/\$\{"color tan1"}\&\$\{color}/ | sed s/"$(date +%e) "/\$\{"color cyan"}\&\$\{color}/ | sed s/"$(date +%a | cut -c1-2)"/\$\{"color tan1"}\&\$\{color}/}
+$font${color DimGray}${font Bitstream Vera Sans Mono:size=8}${execpi 150 cal $(date -d '1 month ago' +'%m %Y')}
+  ${color DarkSlateGray}${hr 1}
+${color}${font Bitstream Vera Sans Mono:size=8}${execpi 150 cal -h | grep -v b | grep -v J | grep -v Ma | grep -v A | sed s/" $(date +%e)"/\$\{"color tan1"}\&\$\{color}/ | sed s/"$(date +%e) "/\$\{"color cyan"}\&\$\{color}/ | sed s/"$(date +%a | cut -c1-2)"/\$\{"color tan1"}\&\$\{color}/}
+  ${color DarkSlateGray}${hr 1}
+$font${color DimGray}${font Bitstream Vera Sans Mono:size=8}${execpi 150 cal $(date -d 'next month' +'%m %Y')}
