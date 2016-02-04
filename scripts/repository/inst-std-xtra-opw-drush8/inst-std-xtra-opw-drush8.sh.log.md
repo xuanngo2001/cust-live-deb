@@ -2,4 +2,4 @@
   * Install  Drush Version   :  8.0.0-rc1  to manage Drupal.
   * See https://www.linode.com/docs/websites/cms/drush-drupal.
   * Further setting is needed. See https://wiki.debian.org/drush.
-  * Disk size = 4042564K. Space Used = 20136K.
+  * Disk size = 4094452K. Space Used = 20136K.
