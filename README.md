@@ -53,4 +53,4 @@ http://www.somsubhra.com/github-release-stats/?username=limelime&repository=cust
 
 # Customizations Performed
 
-* [List of changes](https://github.com/limelime/cust-live-deb/blob/master/logs/md/all-md-files.md)
+* [List of changes](https://github.com/limelime/cust-live-deb/blob/master/logs/md/master-install.md)
