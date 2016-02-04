@@ -1,5 +1,5 @@
 # Custom Live Debian System
-`cust-live-deb` will boot from USB key and load the whole 64-bit Debian operating system on RAM. Hence, everything is run from the memory.
+`cust-live-deb` is a 64-bit Debian operating system that runs from RAM. It can either boot from USB key or CD/DVD.
 
 * It includes tools to remaster itself to include your changes. See [Menu->User manual->Remaster live system](https://github.com/limelime/cust-live-deb/wiki/001-User-manual#remaster-live-system).
 * It also allows your changes to persist on your hard drives. See [Menu->User manual->Persistence](https://github.com/limelime/cust-live-deb/wiki/001-User-manual#remaster-live-system).
