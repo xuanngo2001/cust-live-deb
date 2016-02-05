@@ -29,5 +29,6 @@ echo "${GV_LOG} * See https://www.linode.com/docs/websites/cms/drush-drupal."
 echo "${GV_LOG} * Further setting is needed. See https://wiki.debian.org/drush."
 
 # Reference:
+#   -Download at https://github.com/drush-ops/drush/releases
 #   -https://www.linode.com/docs/websites/cms/drush-drupal
 
