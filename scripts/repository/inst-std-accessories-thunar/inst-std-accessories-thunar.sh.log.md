@@ -2,7 +2,7 @@
   * After this operation, 10.0 MB of additional disk space will be used.
   * Install File Manger: thunar, thunar-media-tags-plugin, thunar-archive-plugin, thunar-volman.
   * Insert Thunar in Accessories menu.
-  * Disk size = 2874880K. Space Used = 6356K.
+  * Disk size = 2879980K. Space Used = 6352K.
   * The following NEW packages will be installed:
   ```bash
   desktop-file-utils libgudev-1.0-0 libtag1-vanilla libtag1c2a libtagc0
