@@ -16,3 +16,4 @@ apt-get -t jessie-backports -y --force-yes install libmtp9
 
 # Log
 echo "${GV_LOG} * Install backport version of libmtp9 to support the most smartphones."
+

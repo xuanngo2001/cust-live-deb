@@ -8,42 +8,42 @@ Ign http://localhost jessie/main Translation-en_US.UTF-8
 Get:1 http://download.virtualbox.org jessie InRelease [7,152 B]
 Ign http://ftp.debian.org jessie InRelease
 Hit http://www.deb-multimedia.org jessie InRelease
-Ign http://mozilla.debian.net jessie-backports InRelease
 Hit http://ftp.debian.org jessie Release.gpg
-Hit http://mozilla.debian.net jessie-backports Release.gpg
-Hit http://www.deb-multimedia.org jessie/main amd64 Packages
 Get:2 http://download.virtualbox.org jessie/contrib amd64 Packages [1,344 B]
+Hit http://www.deb-multimedia.org jessie/main amd64 Packages
 Hit http://ftp.debian.org jessie Release
-Hit http://http.debian.net jessie-backports InRelease
-Hit http://mozilla.debian.net jessie-backports Release
+Hit http://repo.aptly.info nightly InRelease
 Hit http://ftp.debian.org jessie/main amd64 Packages
 Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
-Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
-Hit http://repo.aptly.info nightly InRelease
+Get:3 http://http.debian.net jessie-backports InRelease [166 kB]
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
-Get:3 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
-Get:4 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [17.9 kB]
-Hit http://ftp.debian.org jessie/non-free amd64 Packages
 Hit http://repo.aptly.info nightly/main amd64 Packages
+Hit http://ftp.debian.org jessie/non-free amd64 Packages
 Hit http://ftp.debian.org jessie/contrib Translation-en
+Ign http://mozilla.debian.net jessie-backports InRelease
 Hit http://ftp.debian.org jessie/main Translation-en
+Get:4 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
+Get:5 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [23.2 kB]
+Hit http://mozilla.debian.net jessie-backports Release.gpg
 Hit http://ftp.debian.org jessie/non-free Translation-en
 Ign http://download.virtualbox.org jessie/contrib Translation-en_US
+Hit http://mozilla.debian.net jessie-backports Release
 Ign http://download.virtualbox.org jessie/contrib Translation-en
 Ign http://download.virtualbox.org jessie/contrib Translation-en_US.UTF-8
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
+Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
 Ign http://repo.aptly.info nightly/main Translation-en_US
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
+Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
 Ign http://repo.aptly.info nightly/main Translation-en
 Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
-Fetched 54.2 kB in 5s (9,751 B/s)
+Fetched 226 kB in 5s (43.3 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -67,7 +67,7 @@ The following NEW packages will be installed:
 Need to get 0 B/20.0 MB of archives.
 After this operation, 77.9 MB of additional disk space will be used.
 Selecting previously unselected package libasan0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54472 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54477 files and directories currently installed.)
 Preparing to unpack .../libasan0_4.8.4-1_amd64.deb ...
 Unpacking libasan0:amd64 (4.8.4-1) ...
 Selecting previously unselected package patch.
@@ -86,14 +86,14 @@ Selecting previously unselected package gcc-4.8.
 Preparing to unpack .../gcc-4.8_4.8.4-1_amd64.deb ...
 Unpacking gcc-4.8 (4.8.4-1) ...
 Selecting previously unselected package libc-dev-bin.
-Preparing to unpack .../libc-dev-bin_2.19-18+deb8u2_amd64.deb ...
-Unpacking libc-dev-bin (2.19-18+deb8u2) ...
+Preparing to unpack .../libc-dev-bin_2.19-18+deb8u3_amd64.deb ...
+Unpacking libc-dev-bin (2.19-18+deb8u3) ...
 Selecting previously unselected package linux-libc-dev:amd64.
 Preparing to unpack .../linux-libc-dev_3.16.7-ckt20-1+deb8u3_amd64.deb ...
 Unpacking linux-libc-dev:amd64 (3.16.7-ckt20-1+deb8u3) ...
 Selecting previously unselected package libc6-dev:amd64.
-Preparing to unpack .../libc6-dev_2.19-18+deb8u2_amd64.deb ...
-Unpacking libc6-dev:amd64 (2.19-18+deb8u2) ...
+Preparing to unpack .../libc6-dev_2.19-18+deb8u3_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.19-18+deb8u3) ...
 Selecting previously unselected package linux-compiler-gcc-4.8-x86.
 Preparing to unpack .../linux-compiler-gcc-4.8-x86_3.16.7-ckt20-1+deb8u3_amd64.deb ...
 Unpacking linux-compiler-gcc-4.8-x86 (3.16.7-ckt20-1+deb8u3) ...
@@ -113,16 +113,16 @@ Setting up cpp-4.8 (4.8.4-1) ...
 Setting up dkms (2.2.0.3-2) ...
 Setting up libgcc-4.8-dev:amd64 (4.8.4-1) ...
 Setting up gcc-4.8 (4.8.4-1) ...
-Setting up libc-dev-bin (2.19-18+deb8u2) ...
+Setting up libc-dev-bin (2.19-18+deb8u3) ...
 Setting up linux-libc-dev:amd64 (3.16.7-ckt20-1+deb8u3) ...
-Setting up libc6-dev:amd64 (2.19-18+deb8u2) ...
+Setting up libc6-dev:amd64 (2.19-18+deb8u3) ...
 Setting up linux-compiler-gcc-4.8-x86 (3.16.7-ckt20-1+deb8u3) ...
 Setting up linux-headers-3.16.0-4-common (3.16.7-ckt20-1+deb8u3) ...
 Setting up linux-kbuild-3.16 (3.16.7-ckt20-1) ...
 Setting up linux-headers-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
 Examining /etc/kernel/header_postinst.d.
 run-parts: executing /etc/kernel/header_postinst.d/dkms 3.16.0-4-amd64
-Processing triggers for libc-bin (2.19-18+deb8u2) ...
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -138,9 +138,9 @@ After this operation, 159 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libqt4-opengl amd64 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1 [343 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main virtualbox-5.0 amd64 5.0.14-105127~Debian~jessie [64.1 MB]
 Preconfiguring packages ...
-Fetched 64.4 MB in 1s (45.3 MB/s)
+Fetched 64.4 MB in 2s (23.9 MB/s)
 Selecting previously unselected package libqt4-opengl:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66724 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66729 files and directories currently installed.)
 Preparing to unpack .../libqt4-opengl_4%3a4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1_amd64.deb ...
 Unpacking libqt4-opengl:amd64 (4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) ...
 Selecting previously unselected package virtualbox-5.0.
@@ -167,7 +167,7 @@ Running in chroot, ignoring request.
 Running in chroot, ignoring request.
 Running in chroot, ignoring request.
 Running in chroot, ignoring request.
-Processing triggers for libc-bin (2.19-18+deb8u2) ...
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -179,11 +179,11 @@ The following packages will be REMOVED:
   dkms* libc6-dev* linux-headers-3.16.0-4-amd64*
 0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded.
 After this operation, 14.6 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67503 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67508 files and directories currently installed.)
 Removing dkms (2.2.0.3-2) ...
 Purging configuration files for dkms (2.2.0.3-2) ...
 dpkg: warning: while removing dkms, directory '/var/lib/dkms' not empty so not removed
-Removing libc6-dev:amd64 (2.19-18+deb8u2) ...
+Removing libc6-dev:amd64 (2.19-18+deb8u3) ...
 Removing linux-headers-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Reading package lists...
@@ -195,19 +195,19 @@ The following packages will be REMOVED:
   linux-libc-dev patch
 0 upgraded, 0 newly installed, 10 to remove and 0 not upgraded.
 After this operation, 63.3 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60522 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60527 files and directories currently installed.)
 Removing linux-compiler-gcc-4.8-x86 (3.16.7-ckt20-1+deb8u3) ...
 Removing gcc-4.8 (4.8.4-1) ...
 Removing cpp-4.8 (4.8.4-1) ...
 Removing libgcc-4.8-dev:amd64 (4.8.4-1) ...
 Removing libasan0:amd64 (4.8.4-1) ...
-Removing libc-dev-bin (2.19-18+deb8u2) ...
+Removing libc-dev-bin (2.19-18+deb8u3) ...
 Removing linux-headers-3.16.0-4-common (3.16.7-ckt20-1+deb8u3) ...
 Removing linux-kbuild-3.16 (3.16.7-ckt20-1) ...
 Removing linux-libc-dev:amd64 (3.16.7-ckt20-1+deb8u3) ...
 Removing patch (2.7.5-1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
-Processing triggers for libc-bin (2.19-18+deb8u2) ...
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
 CLDS: * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox.
 CLDS: * Install VirtualBox 5.0.14r105127.
-CLDS: * Disk size = 4433644K. Space Used = 232388K.
+CLDS: * Disk size = 4443952K. Space Used = 232416K.

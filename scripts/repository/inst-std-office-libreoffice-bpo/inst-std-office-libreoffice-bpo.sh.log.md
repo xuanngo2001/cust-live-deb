@@ -4,7 +4,7 @@
   * After this operation, 16.6 MB of additional disk space will be used.
   * After this operation, 9,520 kB of additional disk space will be used.
   * After this operation, 1,405 kB of additional disk space will be used.
-  * Install LibreOffice 5.0.4.2 00m0(Build:2).
+  * Install LibreOffice 5.0.5.2 00m0(Build:2).
   * Install Office Suite: Word processor.
   * Install Office Suite: Spreadsheet.
   * Install Office Suite: Presentation.
@@ -12,7 +12,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 3706004K. Space Used = 449872K.
+  * Disk size = 3713756K. Space Used = 449992K.
   * The following NEW packages will be installed:
   ```bash
   fonts-opensymbol libabw-0.1-1 libboost-date-time1.55.0 libclucene-contribs1

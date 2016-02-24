@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-min-con-mtp-tools.sh ...
-  * After this operation, 2,114 kB of additional disk space will be used.
-  * Install mtp-tools to mount smartphones.
-  * Disk size = 1964828K. Space Used = 2548K.
+  * After this operation, 249 kB of additional disk space will be used.
+  * Install mtp-tools to access files on smartphones that use Media Transfer Protocol(MTP).
+  * Disk size = 1982164K. Space Used = 396K.
   * The following NEW packages will be installed:
   ```bash
-  libmtp-common libmtp9 libusb-1.0-0 mtp-tools
+  mtp-tools
   ```

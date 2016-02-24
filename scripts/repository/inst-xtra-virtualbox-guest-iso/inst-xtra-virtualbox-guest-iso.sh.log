@@ -34,22 +34,22 @@ Get:7 http://localhost/aptly-repo/ jessie/main libubsan0 amd64 4.9.2-10 [82.4 kB
 Get:8 http://localhost/aptly-repo/ jessie/main make amd64 4.0-8.1 [349 kB]
 Get:9 http://localhost/aptly-repo/ jessie/main patch amd64 2.7.5-1 [109 kB]
 Get:10 http://localhost/aptly-repo/ jessie/main cpp-4.8 amd64 4.8.4-1 [4,577 kB]
-Get:11 http://ftp.debian.org/debian/ jessie/main libc-dev-bin amd64 2.19-18+deb8u2 [237 kB]
+Get:11 http://ftp.debian.org/debian/ jessie/main linux-kbuild-3.16 amd64 3.16.7-ckt20-1 [174 kB]
 Get:12 http://localhost/aptly-repo/ jessie/main libgcc-4.9-dev amd64 4.9.2-10 [2,066 kB]
 Get:13 http://localhost/aptly-repo/ jessie/main gcc-4.9 amd64 4.9.2-10 [5,352 kB]
 Get:14 http://localhost/aptly-repo/ jessie/main gcc amd64 4:4.9.2-2 [5,136 B]
 Get:15 http://localhost/aptly-repo/ jessie/main dkms all 2.2.0.3-2 [70.9 kB]
 Get:16 http://localhost/aptly-repo/ jessie/main libgcc-4.8-dev amd64 4.8.4-1 [1,689 kB]
 Get:17 http://localhost/aptly-repo/ jessie/main gcc-4.8 amd64 4.8.4-1 [4,787 kB]
-Get:18 http://ftp.debian.org/debian/ jessie/main libc6-dev amd64 2.19-18+deb8u2 [2,002 kB]
+Get:18 http://localhost/aptly-repo/ jessie/main libc-dev-bin amd64 2.19-18+deb8u3 [237 kB]
 Get:19 http://localhost/aptly-repo/ jessie/main linux-libc-dev amd64 3.16.7-ckt20-1+deb8u3 [1,008 kB]
-Get:20 http://localhost/aptly-repo/ jessie/main linux-compiler-gcc-4.8-x86 amd64 3.16.7-ckt20-1+deb8u3 [308 kB]
-Get:21 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-common amd64 3.16.7-ckt20-1+deb8u3 [4,502 kB]
-Get:22 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-amd64 amd64 3.16.7-ckt20-1+deb8u3 [450 kB]
-Get:23 http://ftp.debian.org/debian/ jessie/main linux-kbuild-3.16 amd64 3.16.7-ckt20-1 [174 kB]
-Fetched 28.4 MB in 4s (5,924 kB/s)
+Get:20 http://localhost/aptly-repo/ jessie/main libc6-dev amd64 2.19-18+deb8u3 [2,003 kB]
+Get:21 http://localhost/aptly-repo/ jessie/main linux-compiler-gcc-4.8-x86 amd64 3.16.7-ckt20-1+deb8u3 [308 kB]
+Get:22 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-common amd64 3.16.7-ckt20-1+deb8u3 [4,502 kB]
+Get:23 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-amd64 amd64 3.16.7-ckt20-1+deb8u3 [450 kB]
+Fetched 28.4 MB in 1s (25.9 MB/s)
 Selecting previously unselected package libasan0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54222 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54227 files and directories currently installed.)
 Preparing to unpack .../libasan0_4.8.4-1_amd64.deb ...
 Unpacking libasan0:amd64 (4.8.4-1) ...
 Selecting previously unselected package libasan1:amd64.
@@ -98,14 +98,14 @@ Selecting previously unselected package gcc-4.8.
 Preparing to unpack .../gcc-4.8_4.8.4-1_amd64.deb ...
 Unpacking gcc-4.8 (4.8.4-1) ...
 Selecting previously unselected package libc-dev-bin.
-Preparing to unpack .../libc-dev-bin_2.19-18+deb8u2_amd64.deb ...
-Unpacking libc-dev-bin (2.19-18+deb8u2) ...
+Preparing to unpack .../libc-dev-bin_2.19-18+deb8u3_amd64.deb ...
+Unpacking libc-dev-bin (2.19-18+deb8u3) ...
 Selecting previously unselected package linux-libc-dev:amd64.
 Preparing to unpack .../linux-libc-dev_3.16.7-ckt20-1+deb8u3_amd64.deb ...
 Unpacking linux-libc-dev:amd64 (3.16.7-ckt20-1+deb8u3) ...
 Selecting previously unselected package libc6-dev:amd64.
-Preparing to unpack .../libc6-dev_2.19-18+deb8u2_amd64.deb ...
-Unpacking libc6-dev:amd64 (2.19-18+deb8u2) ...
+Preparing to unpack .../libc6-dev_2.19-18+deb8u3_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.19-18+deb8u3) ...
 Selecting previously unselected package linux-compiler-gcc-4.8-x86.
 Preparing to unpack .../linux-compiler-gcc-4.8-x86_3.16.7-ckt20-1+deb8u3_amd64.deb ...
 Unpacking linux-compiler-gcc-4.8-x86 (3.16.7-ckt20-1+deb8u3) ...
@@ -135,16 +135,16 @@ Setting up gcc (4:4.9.2-2) ...
 Setting up dkms (2.2.0.3-2) ...
 Setting up libgcc-4.8-dev:amd64 (4.8.4-1) ...
 Setting up gcc-4.8 (4.8.4-1) ...
-Setting up libc-dev-bin (2.19-18+deb8u2) ...
+Setting up libc-dev-bin (2.19-18+deb8u3) ...
 Setting up linux-libc-dev:amd64 (3.16.7-ckt20-1+deb8u3) ...
-Setting up libc6-dev:amd64 (2.19-18+deb8u2) ...
+Setting up libc6-dev:amd64 (2.19-18+deb8u3) ...
 Setting up linux-compiler-gcc-4.8-x86 (3.16.7-ckt20-1+deb8u3) ...
 Setting up linux-headers-3.16.0-4-common (3.16.7-ckt20-1+deb8u3) ...
 Setting up linux-kbuild-3.16 (3.16.7-ckt20-1) ...
 Setting up linux-headers-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
 Examining /etc/kernel/header_postinst.d.
 run-parts: executing /etc/kernel/header_postinst.d/dkms 3.16.0-4-amd64
-Processing triggers for libc-bin (2.19-18+deb8u2) ...
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
 Verifying archive integrity... All good.
 Uncompressing VirtualBox 5.0.14 Guest Additions for Linux............
 VirtualBox Guest Additions installer
@@ -175,11 +175,11 @@ The following packages will be REMOVED:
   dkms* libc6-dev* linux-headers-3.16.0-4-amd64*
 0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded.
 After this operation, 14.6 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66724 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66729 files and directories currently installed.)
 Removing dkms (2.2.0.3-2) ...
 Purging configuration files for dkms (2.2.0.3-2) ...
 dpkg: warning: while removing dkms, directory '/var/lib/dkms' not empty so not removed
-Removing libc6-dev:amd64 (2.19-18+deb8u2) ...
+Removing libc6-dev:amd64 (2.19-18+deb8u3) ...
 Removing linux-headers-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Reading package lists...
@@ -191,22 +191,22 @@ The following packages will be REMOVED:
   linux-libc-dev patch
 0 upgraded, 0 newly installed, 10 to remove and 0 not upgraded.
 After this operation, 63.3 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59743 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59748 files and directories currently installed.)
 Removing linux-compiler-gcc-4.8-x86 (3.16.7-ckt20-1+deb8u3) ...
 Removing gcc-4.8 (4.8.4-1) ...
 Removing cpp-4.8 (4.8.4-1) ...
 Removing libgcc-4.8-dev:amd64 (4.8.4-1) ...
 Removing libasan0:amd64 (4.8.4-1) ...
-Removing libc-dev-bin (2.19-18+deb8u2) ...
+Removing libc-dev-bin (2.19-18+deb8u3) ...
 Removing linux-headers-3.16.0-4-common (3.16.7-ckt20-1+deb8u3) ...
 Removing linux-kbuild-3.16 (3.16.7-ckt20-1) ...
 Removing linux-libc-dev:amd64 (3.16.7-ckt20-1+deb8u3) ...
 Removing patch (2.7.5-1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
-Processing triggers for libc-bin (2.19-18+deb8u2) ...
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
 CLDS: * VirtualBox guest additions installed: version: 5.0.14.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 4201256K. Space Used = 82960K.
+CLDS: * Disk size = 4211536K. Space Used = 82964K.

@@ -1,9 +1,9 @@
 /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS:>>>>>>>>> Running inst-min-con-00-linux-image.sh ...
-Get:1 http://localhost jessie InRelease [1967 B]
+Get:1 http://localhost jessie InRelease [1968 B]
 Get:2 http://localhost jessie/main amd64 Packages [480 kB]
-Ign http://localhost jessie/main Translation-en
 Ign http://ftp.debian.org jessie InRelease
+Ign http://localhost jessie/main Translation-en
 Get:3 http://ftp.debian.org jessie Release.gpg [2373 B]
 Hit http://ftp.debian.org jessie Release
 Get:4 http://ftp.debian.org jessie/main amd64 Packages [6763 kB]
@@ -12,19 +12,25 @@ Get:6 http://ftp.debian.org jessie/non-free amd64 Packages [83.6 kB]
 Get:7 http://ftp.debian.org jessie/contrib Translation-en [38.5 kB]
 Get:8 http://ftp.debian.org jessie/main Translation-en [4582 kB]
 Get:9 http://ftp.debian.org jessie/non-free Translation-en [72.5 kB]
-Fetched 12.1 MB in 20s (583 kB/s)
+Fetched 12.1 MB in 19s (611 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
 The following packages will be upgraded:
-  libdns-export100 libirs-export91 libisc-export95 libisccfg-export90
-4 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 675 kB of archives.
-After this operation, 2048 B of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main libisc-export95 amd64 1:9.9.5.dfsg-9+deb8u5 [140 kB]
-Get:2 http://localhost/aptly-repo/ jessie/main libdns-export100 amd64 1:9.9.5.dfsg-9+deb8u5 [456 kB]
-Get:3 http://localhost/aptly-repo/ jessie/main libisccfg-export90 amd64 1:9.9.5.dfsg-9+deb8u5 [40.3 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main libirs-export91 amd64 1:9.9.5.dfsg-9+deb8u5 [38.1 kB]
+  cpio libc-bin libc6 libdns-export100 libgcrypt20 libirs-export91
+  libisc-export95 libisccfg-export90 multiarch-support
+9 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 7373 kB of archives.
+After this operation, 240 kB disk space will be freed.
+Get:1 http://localhost/aptly-repo/ jessie/main libc-bin amd64 2.19-18+deb8u3 [1285 kB]
+Get:2 http://localhost/aptly-repo/ jessie/main libc6 amd64 2.19-18+deb8u3 [4666 kB]
+Get:3 http://localhost/aptly-repo/ jessie/main libgcrypt20 amd64 1.6.3-2+deb8u1 [391 kB]
+Get:4 http://localhost/aptly-repo/ jessie/main libisc-export95 amd64 1:9.9.5.dfsg-9+deb8u5 [140 kB]
+Get:5 http://localhost/aptly-repo/ jessie/main libdns-export100 amd64 1:9.9.5.dfsg-9+deb8u5 [456 kB]
+Get:6 http://localhost/aptly-repo/ jessie/main libisccfg-export90 amd64 1:9.9.5.dfsg-9+deb8u5 [40.3 kB]
+Get:7 http://localhost/aptly-repo/ jessie/main libirs-export91 amd64 1:9.9.5.dfsg-9+deb8u5 [38.1 kB]
+Get:8 http://localhost/aptly-repo/ jessie/main multiarch-support amd64 2.19-18+deb8u3 [179 kB]
+Get:9 http://localhost/aptly-repo/ jessie/main cpio amd64 2.11+dfsg-4.1+deb8u1 [177 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = "en_US.UTF-8",
@@ -35,7 +41,23 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 675 kB in 0s (12.6 MB/s)
+Preconfiguring packages ...
+Fetched 7373 kB in 0s (31.8 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9729 files and directories currently installed.)
+Preparing to unpack .../libc-bin_2.19-18+deb8u3_amd64.deb ...
+Unpacking libc-bin (2.19-18+deb8u3) over (2.19-18+deb8u2) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up libc-bin (2.19-18+deb8u3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9729 files and directories currently installed.)
+Preparing to unpack .../libc6_2.19-18+deb8u3_amd64.deb ...
+Unpacking libc6:amd64 (2.19-18+deb8u3) over (2.19-18+deb8u2) ...
+Setting up libc6:amd64 (2.19-18+deb8u3) ...
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9729 files and directories currently installed.)
+Preparing to unpack .../libgcrypt20_1.6.3-2+deb8u1_amd64.deb ...
+Unpacking libgcrypt20:amd64 (1.6.3-2+deb8u1) over (1.6.3-2) ...
+Setting up libgcrypt20:amd64 (1.6.3-2+deb8u1) ...
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9729 files and directories currently installed.)
 Preparing to unpack .../libisc-export95_1%3a9.9.5.dfsg-9+deb8u5_amd64.deb ...
 Unpacking libisc-export95 (1:9.9.5.dfsg-9+deb8u5) over (1:9.9.5.dfsg-9+deb8u4) ...
@@ -45,11 +67,19 @@ Preparing to unpack .../libisccfg-export90_1%3a9.9.5.dfsg-9+deb8u5_amd64.deb ...
 Unpacking libisccfg-export90 (1:9.9.5.dfsg-9+deb8u5) over (1:9.9.5.dfsg-9+deb8u4) ...
 Preparing to unpack .../libirs-export91_1%3a9.9.5.dfsg-9+deb8u5_amd64.deb ...
 Unpacking libirs-export91 (1:9.9.5.dfsg-9+deb8u5) over (1:9.9.5.dfsg-9+deb8u4) ...
+Preparing to unpack .../multiarch-support_2.19-18+deb8u3_amd64.deb ...
+Unpacking multiarch-support (2.19-18+deb8u3) over (2.19-18+deb8u2) ...
+Setting up multiarch-support (2.19-18+deb8u3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9729 files and directories currently installed.)
+Preparing to unpack .../cpio_2.11+dfsg-4.1+deb8u1_amd64.deb ...
+Unpacking cpio (2.11+dfsg-4.1+deb8u1) over (2.11+dfsg-4.1) ...
+Processing triggers for man-db (2.7.0.2-5) ...
 Setting up libisc-export95 (1:9.9.5.dfsg-9+deb8u5) ...
 Setting up libdns-export100 (1:9.9.5.dfsg-9+deb8u5) ...
 Setting up libisccfg-export90 (1:9.9.5.dfsg-9+deb8u5) ...
 Setting up libirs-export91 (1:9.9.5.dfsg-9+deb8u5) ...
-Processing triggers for libc-bin (2.19-18+deb8u2) ...
+Setting up cpio (2.11+dfsg-4.1+deb8u1) ...
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -77,7 +107,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 810 kB in 0s (11.5 MB/s)
+Fetched 810 kB in 0s (19.0 MB/s)
 Selecting previously unselected package libcap-ng0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9729 files and directories currently installed.)
 Preparing to unpack .../libcap-ng0_0.7.4-2_amd64.deb ...
@@ -102,7 +132,7 @@ Setting up libexpat1:amd64 (2.1.0-6+deb8u1) ...
 Setting up dbus (1.8.20-0+deb8u1) ...
 [....] Starting system message bus: dbus[?25l7[1G[[32m ok [39;49m8[?12l[?25h.
 Setting up dialog (1.2-20140911-1) ...
-Processing triggers for libc-bin (2.19-18+deb8u2) ...
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
 Processing triggers for systemd (215-17+deb8u3) ...
 Reading package lists...
 Building dependency tree...
@@ -213,7 +243,7 @@ locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Extracting templates from packages: 55%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 47.9 MB in 7s (6101 kB/s)
+Fetched 47.9 MB in 7s (6363 kB/s)
 Selecting previously unselected package libxml2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9950 files and directories currently installed.)
 Preparing to unpack .../libxml2_2.9.1+dfsg1-5+deb8u1_amd64.deb ...
@@ -467,11 +497,11 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 [....] Starting SMP IRQ Balancer: irqbalance[?25l7[1G[[32m ok [39;49m8[?12l[?25h.
-Processing triggers for libc-bin (2.19-18+deb8u2) ...
+Processing triggers for libc-bin (2.19-18+deb8u3) ...
 Processing triggers for systemd (215-17+deb8u3) ...
 Processing triggers for sgml-base (1.26+nmu4) ...
 live-boot: core filesystems devices utils udev wget blockdev.
 CLDS: * Mount /proc, /sys and /dev/pts.
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Install Linux image: 3.16.0-4-amd64.
-CLDS: * Disk size = 1833112K. Space Used = 389660K.
+CLDS: * Disk size = 1839760K. Space Used = 396280K.
