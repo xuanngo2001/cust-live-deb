@@ -9,7 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install mtp-tools
 
 # Log
-echo "${GV_LOG} * Install mtp-tools to access files on smartphones using Media Transfer Protocol(MTP)."
+echo "${GV_LOG} * Install mtp-tools to access files on smartphones that use Media Transfer Protocol(MTP)."
 
 
 # Reference: 
