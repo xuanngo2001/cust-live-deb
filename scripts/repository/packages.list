@@ -53,6 +53,10 @@ isolinux
 xorriso
 rsync
 squashfs-tools
+# ./inst-min-con-mtp-00-libmtp9-bpo/inst-min-con-mtp-00-libmtp9-bpo.sh
+libmtp9
+# ./inst-min-con-mtp-jmtpfs/inst-min-con-mtp-jmtpfs.sh
+jmtpfs
 # ./inst-min-con-mtp-tools/inst-min-con-mtp-tools.sh
 mtp-tools
 # ./inst-min-con-ntp/inst-min-con-ntp.sh
@@ -66,6 +70,12 @@ alsa-base
 alsa-utils
 # ./inst-min-con-udevil-bpo/inst-min-con-udevil-bpo.sh
 udevil
+# ./inst-min-con-xtra-buffer/inst-min-con-xtra-buffer.sh
+buffer
+# ./inst-min-con-xtra-buffer-pv/inst-min-con-xtra-buffer-pv.sh
+pv
+# ./inst-min-con-xtra-curl/inst-min-con-xtra-curl.sh
+curl
 # ./inst-min-con-xtra-dev-tool-java-jdk/inst-min-con-xtra-dev-tool-java-jdk.sh
 default-jdk
 # ./inst-min-con-xtra-dev-tool-tree/inst-min-con-xtra-dev-tool-tree.sh
@@ -74,6 +84,8 @@ tree
 gnuplot
 # ./inst-min-con-xtra-imagemagick/inst-min-con-xtra-imagemagick.sh
 imagemagick
+# ./inst-min-con-xtra-iso-iat/inst-min-con-xtra-iso-iat.sh
+iat
 # ./inst-min-con-xtra-java-jre/inst-min-con-xtra-java-jre.sh
 default-jre
 # ./inst-min-con-xtra-locate/inst-min-con-xtra-locate.sh
@@ -82,6 +94,10 @@ locate
 macchanger
 # ./inst-min-con-xtra-mariadb-server/inst-min-con-xtra-mariadb-server.sh
 mariadb-server
+# ./inst-min-con-xtra-mtran/inst-min-con-xtra-mtran.sh
+
+# ./inst-min-con-xtra-pdf-poppler-utils/inst-min-con-xtra-pdf-poppler-utils.sh
+poppler-utils
 # ./inst-min-con-xtra-php5/inst-min-con-xtra-php5.sh
 php5
 # ./inst-min-con-xtra-timezone/inst-min-con-xtra-timezone.sh
@@ -96,6 +112,8 @@ pandoc
 # ./inst-min-win-cld-win-split/inst-min-win-cld-win-split.sh
 wmctrl
 x11-utils
+# ./inst-min-win-jwm-help-manuals-text/inst-min-win-jwm-help-manuals-text.sh
+
 # ./inst-min-win-jwm-keys-alsa/inst-min-win-jwm-keys-alsa.sh
 
 # ./inst-min-win-menu/inst-min-win-menu.sh
@@ -106,10 +124,12 @@ volumeicon-alsa
 libtext-iconv-perl
 # ./inst-min-xtra-fonts-asian/inst-min-xtra-fonts-asian.sh
 fonts-hanazono
+# ./inst-std-00-jwm/inst-std-00-jwm.sh
+
+# ./inst-std-accessories-calc-speedcrunch/inst-std-accessories-calc-speedcrunch.sh
+speedcrunch
 # ./inst-std-accessories-feh/inst-std-accessories-feh.sh
 feh
-# ./inst-std-accessories-galculator/inst-std-accessories-galculator.sh
-galculator
 # ./inst-std-accessories-gpicview/inst-std-accessories-gpicview.sh
 gpicview
 # ./inst-std-accessories-mupdf/inst-std-accessories-mupdf.sh
@@ -125,10 +145,15 @@ xfce4-terminal
 ${PKGS_LIST}
 # ./inst-std-accessories-xarchiver/inst-std-accessories-xarchiver.sh
 xarchiver
+# ./inst-std-font-fonts-liberation/inst-std-font-fonts-liberation.sh
+fonts-liberation
 # ./inst-std-graphic-pinta/inst-std-graphic-pinta.sh
 pinta
-# ./inst-std-internet-iceweasel/inst-std-internet-iceweasel.sh
+# ./inst-std-help-manuals-html/inst-std-help-manuals-html.sh
+
+# ./inst-std-internet-iceweasel-bpo/inst-std-internet-iceweasel-bpo.sh
 iceweasel
+flashplugin-nonfree
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
 mpv
 # ./inst-std-office-libreoffice-bpo/inst-std-office-libreoffice-bpo.sh
@@ -165,14 +190,12 @@ libjemalloc1
 blender
 # ./inst-std-xtra-dia/inst-std-xtra-dia.sh
 dia
-# ./inst-std-xtra-opw-drush8/inst-std-xtra-opw-drush8.sh
+# ./inst-std-xtra-opw-drush8-phar/inst-std-xtra-opw-drush8-phar.sh
 
 # ./inst-std-xtra-opw-php5-gd/inst-std-xtra-opw-php5-gd.sh
 php5-gd
 # ./inst-std-xtra-opw-php5-mysql/inst-std-xtra-opw-php5-mysql.sh
 php5-mysql
-# ./inst-std-xtra-sweethome3d5/inst-std-xtra-sweethome3d.sh
-
 # ./inst-xtra-cld-dev-tools-aptly/inst-xtra-cld-dev-tools-aptly.sh
 xz-utils
 aptly
@@ -184,8 +207,6 @@ xsltproc
 ant
 # ./inst-xtra-fuse/inst-xtra-fuse.sh
 fuse
-# ./inst-xtra-imdb-python-imdbpy/inst-xtra-imdb-python-imdbpy.sh
-python-imdbpy
 # ./inst-xtra-open-terminals-on-startup/inst-xtra-open-terminals-on-startup.sh
 x11-xserver-utils
 wmctrl
@@ -193,6 +214,9 @@ x11-utils
 xterm
 # ./inst-xtra-sqlite3/inst-xtra-sqlite3.sh
 sqlite3
+# ./inst-xtra-virtualbox5/inst-xtra-virtualbox5.sh
+${PKGS_LIST}
+virtualbox-5.0
 # ./inst-xtra-virtualbox-guest-iso/inst-xtra-virtualbox-guest-iso.sh
 ${PKGS_LIST}
 # ./inst-xtra-wifite/inst-xtra-wifite.sh

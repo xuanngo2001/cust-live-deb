@@ -31,7 +31,7 @@ Get:10 http://localhost/aptly-repo/ jessie/main psmisc amd64 22.21-2 [119 kB]
 Get:11 http://localhost/aptly-repo/ jessie/main mariadb-server-10.0 amd64 10.0.23-0+deb8u1 [5,573 kB]
 Get:12 http://localhost/aptly-repo/ jessie/main mariadb-server all 10.0.23-0+deb8u1 [16.3 kB]
 Preconfiguring packages ...
-Fetched 13.0 MB in 0s (26.3 MB/s)
+Fetched 13.0 MB in 0s (31.5 MB/s)
 Selecting previously unselected package libaio1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22199 files and directories currently installed.)
 Preparing to unpack .../libaio1_0.3.110-1_amd64.deb ...
@@ -85,7 +85,7 @@ Setting up mariadb-server-core-10.0 (10.0.23-0+deb8u1) ...
 Setting up psmisc (22.21-2) ...
 Setting up mariadb-server-10.0 (10.0.23-0+deb8u1) ...
 invoke-rc.d: policy-rc.d denied execution of stop.
-160224 15:44:35 [Note] /usr/sbin/mysqld (mysqld 10.0.23-MariaDB-0+deb8u1) starting as process 8735 ...
+160224 17:37:25 [Note] /usr/sbin/mysqld (mysqld 10.0.23-MariaDB-0+deb8u1) starting as process 12836 ...
 invoke-rc.d: policy-rc.d denied execution of start.
 Setting up mariadb-server (10.0.23-0+deb8u1) ...
 Processing triggers for libc-bin (2.19-18+deb8u3) ...
@@ -93,4 +93,4 @@ Processing triggers for systemd (215-17+deb8u3) ...
 mysqladmin: connect to server at 'localhost' failed
 error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")'
 Check that mysqld is running and that the socket: '/var/run/mysqld/mysqld.sock' exists!
-CLDS: * Disk size = 2537024K. Space Used = 252756K.
+CLDS: * Disk size = 2537144K. Space Used = 252760K.
