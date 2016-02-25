@@ -15,4 +15,8 @@ apt-get -y --force-yes install jmtpfs
 
 # Log
 echo "${GV_LOG} * Install jmtpfs to mount smartphones that use Media Transfer Protocol(MTP)."
-
+echo "${GV_LOG} *     # Connect your smartphone."
+echo "${GV_LOG} *     mkdir /path/to/your/mount/directory/"
+echo "${GV_LOG} *     jmtpfs -o allow_other /path/to/your/mount/directory/"
+echo "${GV_LOG} *     # Enter your PIN to unlock your smartphone."
+echo "${GV_LOG} *     cd /path/to/your/mount/directory/"
