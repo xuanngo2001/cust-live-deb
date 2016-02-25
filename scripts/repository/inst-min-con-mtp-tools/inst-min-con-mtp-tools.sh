@@ -14,3 +14,12 @@ echo "${GV_LOG} * Install mtp-tools to access files on smartphones that use Medi
 
 # Reference: 
 #   -https://wiki.archlinux.org/index.php/MTP
+
+# REJECTION: Use jmtpfs instead of mtp-tools. 
+#     mtp-tools is not efficient and not stable. 
+#     You have to get a list of files from your smartphone and then
+#     get files using IDs.
+#       mtp-detect
+#       mtp-connect
+#       mtp-files > contents.txt    
+#       mtp-connect --getfile FILENUMBER FILENAME
