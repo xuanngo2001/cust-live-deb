@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-dev-tool-java-jdk.sh ...
   * After this operation, 138 MB of additional disk space will be used.
   * Install JAVA JDK: default-jdk.
-  * Disk size = 2220932K. Space Used = 214064K.
+  * Disk size = 2223120K. Space Used = 214060K.
   * The following NEW packages will be installed:
   ```bash
   ca-certificates ca-certificates-java default-jdk default-jre

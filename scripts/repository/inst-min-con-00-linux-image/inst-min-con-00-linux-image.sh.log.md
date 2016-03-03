@@ -1,11 +1,11 @@
 * >>>>>>>>> Running inst-min-con-00-linux-image.sh ...
-  * After this operation, 240 kB disk space will be freed.
+  * After this operation, 236 kB disk space will be freed.
   * After this operation, 3111 kB of additional disk space will be used.
   * After this operation, 225 MB of additional disk space will be used.
   * Mount /proc, /sys and /dev/pts.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
   * Install Linux image: 3.16.0-4-amd64.
-  * Disk size = 1839772K. Space Used = 396208K.
+  * Disk size = 1842012K. Space Used = 398456K.
   * The following NEW packages will be installed:
   ```bash
   dbus dialog libcap-ng0 libdbus-1-3 libexpat1
