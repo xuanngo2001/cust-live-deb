@@ -9,19 +9,22 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install conky.
-apt-get -y --force-yes install conky
+  apt-get -y --force-yes install conky
 
-# Add conky config file.
-CONKYRC=conkyrc
-yes | cp ${CONKYRC} /root/.${CONKYRC}
+# Add conky config files.
+	CONKYRC=conkyrc
+	yes | cp ${CONKYRC} /root/.${CONKYRC}
+	
+	CONKYRC_CALENDAR=conkyrc-calendar.txt
+	yes | cp ${CONKYRC_CALENDAR} "${GV_CLD_ROOT_DIR}"
 
 # Set conky to run on JWM startup.
-cat jwmrc-startup-conky.sh >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
+  cat jwmrc-startup-conky.sh >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
 # Add on the fly settings to Conky.
-yes | cp startup-conky.sh "${GV_CLD_ROOT_DIR}"
-chmod +x "${GV_CLD_ROOT_DIR}/startup-conky.sh"
-sed -i "/## Insert your script files here ##/a ${GV_CLD_ROOT_DIR}/startup-conky.sh&" /etc/init.d/startup.sh
+	yes | cp startup-conky.sh "${GV_CLD_ROOT_DIR}"
+	chmod +x "${GV_CLD_ROOT_DIR}/startup-conky.sh"
+	sed -i "/## Insert your script files here ##/a ${GV_CLD_ROOT_DIR}/startup-conky.sh&" /etc/init.d/startup.sh
 
 # Log
 echo "${GV_LOG} * Install System Monitor: conky."

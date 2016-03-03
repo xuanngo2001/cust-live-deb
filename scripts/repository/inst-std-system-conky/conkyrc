@@ -88,9 +88,5 @@ wlan0${color DarkSlateGray}${hr 1}
   Downloaded  ${totaldown wlan0}  $alignr Uploaded ${totalup wlan0}
 
 ############ CALENDAR ############
-${font Arial:bold:size=10}${color Tan2}CALENDAR ${color DarkSlateGray}${hr 2}
-$font${color DimGray}${font Bitstream Vera Sans Mono:size=8}${execpi 150 cal $(date -d '1 month ago' +'%m %Y')}
-  ${color DarkSlateGray}${hr 1}
-${color}${font Bitstream Vera Sans Mono:size=8}${execpi 150 cal -h | head -n -1 | sed s/" $(date +%e)"/\$\{"color tan1"}\&\$\{color}/ | sed s/"$(date +%e) "/\$\{"color cyan"}\&\$\{color}/ | sed s/"$(date +%a | cut -c1-2)"/\$\{"color tan1"}\&\$\{color}/}
-  ${color DarkSlateGray}${hr 1}
-$font${color DimGray}${font Bitstream Vera Sans Mono:size=8}${execpi 150 cal $(date -d 'next month' +'%m %Y')}
+### CALENDAR-START
+### CALENDAR-END
