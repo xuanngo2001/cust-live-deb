@@ -1,0 +1,6 @@
+############ IFACE_NAME ############
+IFACE_NAME${color DarkSlateGray}${hr 1}
+  $font${color Gray}IP address $alignr ${addr IFACE_NAME}
+
+  Down  ${downspeed IFACE_NAME}  $alignr Up ${upspeed IFACE_NAME}
+  Downloaded  ${totaldown IFACE_NAME}  $alignr Uploaded ${totalup IFACE_NAME}

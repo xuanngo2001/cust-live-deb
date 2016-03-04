@@ -74,18 +74,9 @@ $font${top_mem name 5}${alignr}${top mem 5} %
 
 ############ NETWORK ############
 ${font Arial:bold:size=10}${color Tan2}NETWORK ${color DarkSlateGray}${hr 2}
-$font${color Gray}eth0${color DarkSlateGray}${hr 1}
-  $font${color Gray}IP address $alignr ${addr eth0}
-
-  Down  ${downspeed eth0}  $alignr Up ${upspeed eth0}
-  Downloaded  ${totaldown eth0}  $alignr Uploaded ${totalup eth0}
-
-
-wlan0${color DarkSlateGray}${hr 1}
-  $font${color Gray}IP address $alignr ${addr wlan0}
-
-  Down  ${downspeed wlan0}  $alignr Up ${upspeed wlan0}
-  Downloaded  ${totaldown wlan0}  $alignr Uploaded ${totalup wlan0}
+$font${color Gray}
+### IFACE-START
+### IFACE-END
 
 ############ CALENDAR ############
 ### CALENDAR-START
