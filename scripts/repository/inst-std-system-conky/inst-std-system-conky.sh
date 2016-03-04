@@ -15,8 +15,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	CONKYRC=conkyrc
 	yes | cp ${CONKYRC} /root/.${CONKYRC}
 	
-	CONKYRC_CALENDAR=conkyrc-calendar.txt
-	yes | cp ${CONKYRC_CALENDAR} "${GV_CLD_ROOT_DIR}"
+	yes | cp -av conkyrc-*.txt "${GV_CLD_ROOT_DIR}"
 
 # Set conky to run on JWM startup.
   cat jwmrc-startup-conky.sh >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
