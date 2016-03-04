@@ -2,7 +2,7 @@
   * After this operation, 6,018 kB of additional disk space will be used.
   * Install Window Manager: JWM vsvn-579 by Joe Wingbermuehle.
   * Set jwmrc.
-  * Disk size = 2680804K. Space Used = 12584K.
+  * Disk size = 2680908K. Space Used = 12580K.
   * The following NEW packages will be installed:
   ```bash
   jwm libfribidi0 libperl5.20 libstartup-notification0 libxft2 ncurses-term
