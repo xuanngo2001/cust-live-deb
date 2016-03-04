@@ -13,7 +13,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Add conky config files.
 	CONKYRC=conkyrc
-	yes | cp ${CONKYRC} /root/.${CONKYRC}
+	yes | cp -av ${CONKYRC} /root/.${CONKYRC}
 	
 	yes | cp -av conkyrc-*.txt "${GV_CLD_ROOT_DIR}"
 
