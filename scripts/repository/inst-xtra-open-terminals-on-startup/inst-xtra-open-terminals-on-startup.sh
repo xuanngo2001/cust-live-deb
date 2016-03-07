@@ -15,9 +15,12 @@ apt-get -y --force-yes install x11-utils
 apt-get -y --force-yes install xterm
 
 # Make open-terminals.sh run when JWM start. 
-yes | cp open-terminals.sh "${GV_CLD_ROOT_DIR}"
+yes | cp -av open-terminals.sh "${GV_CLD_ROOT_DIR}"
 chmod +x "${GV_CLD_ROOT_DIR}/open-terminals.sh"
-cat jwmrc-startup-open-terminals.sh >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
+
+JWM_START_SCRIPT=jwmrc-startup-open-terminals.sh
+yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
+echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
 # Log
 echo "${GV_LOG} * Install x11-xserver-utils for xrandr."

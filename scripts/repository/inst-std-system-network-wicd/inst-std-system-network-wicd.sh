@@ -21,8 +21,9 @@ sed -i "/Network\">/ r jwmrc-menus-network-wicd.xml" "${GV_CLD_ROOT_DIR}/jwmrc-m
 #sed -i "/## Insert your script files here ##/a ${GV_CLD_ROOT_DIR}/startup-wicd.sh&" /etc/init.d/startup.sh
 
 # Set wicd to run on JWM startup.
-cat jwmrc-startup-wicd.sh >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
-
+JWM_START_SCRIPT=jwmrc-startup-wicd.sh
+yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
+echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
 # Log
 echo "${GV_LOG} * Install Network Manager: wicd."

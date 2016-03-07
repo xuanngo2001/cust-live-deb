@@ -21,7 +21,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   yes | cp -av jwmrc-startup-configure-conky.sh "${GV_CLD_ROOT_DIR}"
   
 # Set conky to run on JWM startup.
-  cat jwmrc-startup-conky.sh >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
+	JWM_START_SCRIPT=jwmrc-startup-conky.sh
+	yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
+	echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
 # Log
 echo "${GV_LOG} * Install System Monitor: conky."

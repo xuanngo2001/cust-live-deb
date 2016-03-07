@@ -18,7 +18,9 @@ apt-get -y --force-yes install volumeicon-alsa
 
 
 # Set volumeicon to run on JWN startup.
-cat jwmrc-startup-volumeicon.sh >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
+JWM_START_SCRIPT=jwmrc-startup-volumeicon.sh
+yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
+echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
 # Log
 echo "${GV_LOG} * Install volume controller in system tray."
