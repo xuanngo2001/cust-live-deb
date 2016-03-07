@@ -48,10 +48,9 @@ set -e
   sed  -i "/${IFACE_START}/,/${IFACE_END}/{//!d}" /root/.conkyrc
   
   # Add all available network interfaces.
+  IFACE_BASE_CONKY=/root/cld/conkyrc-network-iface.txt
 	while IFS='' read -r IFACE_NAME || [[ -n "$IFACE_NAME" ]]; do
 
-	  IFACE_BASE_CONKY=/root/cld/conkyrc-network-iface.txt
-	  
 	  # Dynamically generate network interface for conkyrc.
 	  IFACE_CONKY="/root/cld/conkyrc-network-${IFACE_NAME}.txt"
 	  sed "s/IFACE_NAME/${IFACE_NAME}/g" "${IFACE_BASE_CONKY}" > "${IFACE_CONKY}"
