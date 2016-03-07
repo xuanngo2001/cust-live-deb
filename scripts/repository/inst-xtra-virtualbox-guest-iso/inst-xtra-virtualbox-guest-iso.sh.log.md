@@ -5,9 +5,9 @@
   * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
   * Assumed packages installed: bzip2 & Xserver installed.
   * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
-  * VirtualBox guest additions installed: version: 5.0.14.
+  * VirtualBox guest additions installed: version: 5.0.16.
   * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-  * Disk size = 4213904K. Space Used = 82964K.
+  * Disk size = 4100408K. Space Used = 82972K.
   * The following NEW packages will be installed:
   ```bash
   cpp-4.8 dkms gcc gcc-4.8 gcc-4.9 libasan0 libasan1 libc-dev-bin libc6-dev

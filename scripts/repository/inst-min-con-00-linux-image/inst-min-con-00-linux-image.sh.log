@@ -1,7 +1,7 @@
 /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS:>>>>>>>>> Running inst-min-con-00-linux-image.sh ...
-Get:1 http://localhost jessie InRelease [1967 B]
-Get:2 http://localhost jessie/main amd64 Packages [480 kB]
+Get:1 http://localhost jessie InRelease [2807 B]
+Get:2 http://localhost jessie/main amd64 Packages [482 kB]
 Ign http://localhost jessie/main Translation-en
 Ign http://ftp.debian.org jessie InRelease
 Get:3 http://ftp.debian.org jessie Release.gpg [2373 B]
@@ -12,7 +12,7 @@ Get:6 http://ftp.debian.org jessie/non-free amd64 Packages [83.6 kB]
 Get:7 http://ftp.debian.org jessie/contrib Translation-en [38.5 kB]
 Get:8 http://ftp.debian.org jessie/main Translation-en [4582 kB]
 Get:9 http://ftp.debian.org jessie/non-free Translation-en [72.5 kB]
-Fetched 12.1 MB in 19s (628 kB/s)
+Fetched 12.1 MB in 18s (636 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -44,7 +44,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 9636 kB in 0s (34.2 MB/s)
+Fetched 9636 kB in 0s (29.5 MB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9729 files and directories currently installed.)
 Preparing to unpack .../perl-base_5.20.2-3+deb8u4_amd64.deb ...
 Unpacking perl-base (5.20.2-3+deb8u4) over (5.20.2-3+deb8u3) ...
@@ -120,7 +120,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 810 kB in 0s (20.9 MB/s)
+Fetched 810 kB in 0s (11.6 MB/s)
 Selecting previously unselected package libcap-ng0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9729 files and directories currently installed.)
 Preparing to unpack .../libcap-ng0_0.7.4-2_amd64.deb ...
@@ -201,7 +201,7 @@ Get:8 http://localhost/aptly-repo/ jessie/main libklibc amd64 2.0.4-2 [51.7 kB]
 Get:9 http://localhost/aptly-repo/ jessie/main klibc-utils amd64 2.0.4-2 [108 kB]
 Get:10 http://localhost/aptly-repo/ jessie/main busybox amd64 1:1.22.0-9+deb8u1 [391 kB]
 Get:11 http://localhost/aptly-repo/ jessie/main initramfs-tools all 0.120 [95.7 kB]
-Get:12 http://localhost/aptly-repo/ jessie/main linux-image-3.16.0-4-amd64 amd64 3.16.7-ckt20-1+deb8u3 [33.8 MB]
+Get:12 http://localhost/aptly-repo/ jessie/main linux-image-3.16.0-4-amd64 amd64 3.16.7-ckt20-1+deb8u4 [33.8 MB]
 Get:13 http://localhost/aptly-repo/ jessie/main sgml-base all 1.26+nmu4 [14.6 kB]
 Get:14 http://localhost/aptly-repo/ jessie/main uuid-runtime amd64 2.25.2-6 [74.3 kB]
 Get:15 http://localhost/aptly-repo/ jessie/main rename all 0.20-3 [12.4 kB]
@@ -256,7 +256,7 @@ locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Extracting templates from packages: 55%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 47.9 MB in 1s (37.2 MB/s)
+Fetched 47.9 MB in 1s (30.8 MB/s)
 Selecting previously unselected package libxml2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9950 files and directories currently installed.)
 Preparing to unpack .../libxml2_2.9.1+dfsg1-5+deb8u1_amd64.deb ...
@@ -292,11 +292,11 @@ Selecting previously unselected package initramfs-tools.
 Preparing to unpack .../initramfs-tools_0.120_all.deb ...
 Unpacking initramfs-tools (0.120) ...
 Selecting previously unselected package linux-image-3.16.0-4-amd64.
-Preparing to unpack .../linux-image-3.16.0-4-amd64_3.16.7-ckt20-1+deb8u3_amd64.deb ...
+Preparing to unpack .../linux-image-3.16.0-4-amd64_3.16.7-ckt20-1+deb8u4_amd64.deb ...
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Unpacking linux-image-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
+Unpacking linux-image-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u4) ...
 Selecting previously unselected package sgml-base.
 Preparing to unpack .../sgml-base_1.26+nmu4_all.deb ...
 Unpacking sgml-base (1.26+nmu4) ...
@@ -446,7 +446,7 @@ Setting up klibc-utils (2.0.4-2) ...
 Setting up busybox (1:1.22.0-9+deb8u1) ...
 Setting up initramfs-tools (0.120) ...
 I: update-initramfs is disabled (live system is running on read-only media).
-Setting up linux-image-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u3) ...
+Setting up linux-image-3.16.0-4-amd64 (3.16.7-ckt20-1+deb8u4) ...
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
@@ -517,4 +517,4 @@ live-boot: core filesystems devices utils udev wget blockdev.
 CLDS: * Mount /proc, /sys and /dev/pts.
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Install Linux image: 3.16.0-4-amd64.
-CLDS: * Disk size = 1842016K. Space Used = 398456K.
+CLDS: * Disk size = 1728476K. Space Used = 398460K.
