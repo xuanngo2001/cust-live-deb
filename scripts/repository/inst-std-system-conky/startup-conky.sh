@@ -8,7 +8,7 @@ set -e
 	### Get the number of cpu.
 	CPU_NUM=$(grep -c ^processor /proc/cpuinfo)
 	
-	### Write CPU settings to a temporary file.
+	### If more than 1 CPU, then write CPU settings to a temporary file.
 	CPU_CONKY=/root/cld/conkyrc-cpu.txt
 	cat /dev/null > ${CPU_CONKY}
 	for ((i=1; i<CPU_NUM; i+=2))
