@@ -18,7 +18,7 @@ set -e
 	  echo -e "CPU$((${i}+1))  \${cpu cpu$((${i}+1))}%" >> ${CPU_CONKY}
 	done
 	
-	### Add number of CPU to .conkyrc.
+	### Add number of CPU settings to .conkyrc.
 	CPU_START="### CPU-START"
 	CPU_END="### CPU-END"
 	# Clear content between patterns.
