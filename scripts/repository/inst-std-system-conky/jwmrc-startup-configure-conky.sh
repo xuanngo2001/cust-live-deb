@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-# Description: On system startup, change conkyrc settings according to the hardware.
+# Description: On JWM startup, change conkyrc settings according to the hardware.
 #               - Adjust the number of CPUs.
 #               - Add calendar if screen height > 1000 px.
 # Note: Temporary conkyrc needs a newline at the end of file because of sed.

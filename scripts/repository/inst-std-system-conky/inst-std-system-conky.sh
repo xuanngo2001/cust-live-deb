@@ -17,13 +17,11 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	
 	yes | cp -av conkyrc-*.txt "${GV_CLD_ROOT_DIR}"
 
+# Add conkyrc setting scripts to /root/cld/. 
+  yes | cp -av jwmrc-startup-configure-conky.sh "${GV_CLD_ROOT_DIR}"
+  
 # Set conky to run on JWM startup.
   cat jwmrc-startup-conky.sh >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
-
-# Add on the fly settings to Conky.
-	yes | cp startup-conky.sh "${GV_CLD_ROOT_DIR}"
-	chmod +x "${GV_CLD_ROOT_DIR}/startup-conky.sh"
-	sed -i "/## Insert your script files here ##/a ${GV_CLD_ROOT_DIR}/startup-conky.sh&" /etc/init.d/startup.sh
 
 # Log
 echo "${GV_LOG} * Install System Monitor: conky."
