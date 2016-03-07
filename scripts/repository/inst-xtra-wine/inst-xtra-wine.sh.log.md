@@ -2,7 +2,7 @@
   * After this operation, 190 MB of additional disk space will be used.
   * Install wine so that you can run Windows applications.
   * You need to run 'wine winecfg' before using wine. This is a workaround of a bug.
-  * Disk size = 4662868K. Space Used = 233528K.
+  * Disk size = 4662860K. Space Used = 233528K.
   * The following NEW packages will be installed:
   ```bash
   file iso-codes libgstreamer-plugins-base0.10-0 libgstreamer0.10-0 libwine

@@ -1,5 +1,5 @@
 CLDS:>>>>>>>>> Running inst-xtra-cld-dev-tools-aptly.sh ...
-Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.p7P7EqfNUE --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d/deb-multimedia-keyring.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-security-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-stable.gpg --keyring /etc/apt/trusted.gpg.d/pkg-mozilla-archive-keyring.gpg --keyserver keys.gnupg.net --recv-keys E083A3782A194991
+Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.oIKSVL5kTg --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d/deb-multimedia-keyring.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-security-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-stable.gpg --keyring /etc/apt/trusted.gpg.d/pkg-mozilla-archive-keyring.gpg --keyserver keys.gnupg.net --recv-keys E083A3782A194991
 gpg: requesting key 2A194991 from hkp server keys.gnupg.net
 gpg: key 2A194991: public key "Andrey Smirnov <me@smira.ru>" imported
 gpg: Total number processed: 1
@@ -10,39 +10,39 @@ Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
 Hit http://www.deb-multimedia.org jessie InRelease
-Ign http://ftp.debian.org jessie InRelease
-Hit http://ftp.debian.org jessie Release.gpg
-Hit http://ftp.debian.org jessie Release
-Get:1 http://repo.aptly.info nightly InRelease [4,884 B]
-Hit http://www.deb-multimedia.org jessie/main amd64 Packages
-Hit http://http.debian.net jessie-backports InRelease
 Ign http://mozilla.debian.net jessie-backports InRelease
-Hit http://ftp.debian.org jessie/main amd64 Packages
+Ign http://ftp.debian.org jessie InRelease
+Hit http://mozilla.debian.net jessie-backports Release.gpg
+Hit http://www.deb-multimedia.org jessie/main amd64 Packages
+Hit http://ftp.debian.org jessie Release.gpg
+Hit http://mozilla.debian.net jessie-backports Release
+Hit http://ftp.debian.org jessie Release
+Hit http://http.debian.net jessie-backports InRelease
+Get:1 http://repo.aptly.info nightly InRelease [4,884 B]
 Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
+Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
+Hit http://ftp.debian.org jessie/main amd64 Packages
 Get:2 http://repo.aptly.info nightly/main amd64 Packages [7,028 B]
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
-Hit http://mozilla.debian.net jessie-backports Release.gpg
 Get:3 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
-Hit http://ftp.debian.org jessie/non-free amd64 Packages
 Get:4 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [25.3 kB]
-Hit http://mozilla.debian.net jessie-backports Release
+Hit http://ftp.debian.org jessie/non-free amd64 Packages
 Hit http://ftp.debian.org jessie/contrib Translation-en
-Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
 Hit http://ftp.debian.org jessie/main Translation-en
 Hit http://ftp.debian.org jessie/non-free Translation-en
-Ign http://www.deb-multimedia.org jessie/main Translation-en_US
-Ign http://www.deb-multimedia.org jessie/main Translation-en
-Ign http://repo.aptly.info nightly/main Translation-en_US
-Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
-Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
-Ign http://repo.aptly.info nightly/main Translation-en
-Ign http://www.deb-multimedia.org jessie/non-free Translation-en
-Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
-Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
 Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
 Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
 Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
-Fetched 65.0 kB in 5s (12.6 kB/s)
+Ign http://www.deb-multimedia.org jessie/main Translation-en_US
+Ign http://www.deb-multimedia.org jessie/main Translation-en
+Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
+Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
+Ign http://www.deb-multimedia.org jessie/non-free Translation-en
+Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
+Ign http://repo.aptly.info nightly/main Translation-en_US
+Ign http://repo.aptly.info nightly/main Translation-en
+Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
+Fetched 65.0 kB in 4s (14.1 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -54,7 +54,7 @@ Need to get 5,233 kB of archives.
 After this operation, 483 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main xz-utils amd64 5.1.1alpha+20120614-2+b3 [221 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main aptly amd64 0.9.7~dev+25+g067d197 [5,013 kB]
-Fetched 5,233 kB in 0s (41.3 MB/s)
+Fetched 5,233 kB in 0s (39.6 MB/s)
 Selecting previously unselected package xz-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53924 files and directories currently installed.)
 Preparing to unpack .../xz-utils_5.1.1alpha+20120614-2+b3_amd64.deb ...
@@ -68,4 +68,4 @@ update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto m
 Setting up aptly (0.9.7~dev+25+g067d197) ...
 CLDS: * Install aptly version: 0.9.7~dev to create local debian repository.
 CLDS: * Add xz-utils package because aptly snapshot merge needs it.
-CLDS: * Disk size = 4009620K. Space Used = 23748K.
+CLDS: * Disk size = 4009616K. Space Used = 23744K.

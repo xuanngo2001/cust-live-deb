@@ -2,8 +2,8 @@
 CLDS:>>>>>>>>> Running inst-min-con-00-linux-image.sh ...
 Get:1 http://localhost jessie InRelease [2807 B]
 Get:2 http://localhost jessie/main amd64 Packages [482 kB]
-Ign http://ftp.debian.org jessie InRelease
 Ign http://localhost jessie/main Translation-en
+Ign http://ftp.debian.org jessie InRelease
 Get:3 http://ftp.debian.org jessie Release.gpg [2373 B]
 Hit http://ftp.debian.org jessie Release
 Get:4 http://ftp.debian.org jessie/main amd64 Packages [6763 kB]
@@ -12,7 +12,7 @@ Get:6 http://ftp.debian.org jessie/non-free amd64 Packages [83.6 kB]
 Get:7 http://ftp.debian.org jessie/contrib Translation-en [38.5 kB]
 Get:8 http://ftp.debian.org jessie/main Translation-en [4582 kB]
 Get:9 http://ftp.debian.org jessie/non-free Translation-en [72.5 kB]
-Fetched 12.1 MB in 22s (531 kB/s)
+Fetched 12.1 MB in 21s (563 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -44,7 +44,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 9636 kB in 0s (32.5 MB/s)
+Fetched 9636 kB in 0s (34.9 MB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9729 files and directories currently installed.)
 Preparing to unpack .../perl-base_5.20.2-3+deb8u4_amd64.deb ...
 Unpacking perl-base (5.20.2-3+deb8u4) over (5.20.2-3+deb8u3) ...
@@ -120,7 +120,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 810 kB in 0s (19.8 MB/s)
+Fetched 810 kB in 0s (14.8 MB/s)
 Selecting previously unselected package libcap-ng0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9729 files and directories currently installed.)
 Preparing to unpack .../libcap-ng0_0.7.4-2_amd64.deb ...
@@ -256,7 +256,7 @@ locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Extracting templates from packages: 55%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 47.9 MB in 1s (30.3 MB/s)
+Fetched 47.9 MB in 1s (36.6 MB/s)
 Selecting previously unselected package libxml2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9950 files and directories currently installed.)
 Preparing to unpack .../libxml2_2.9.1+dfsg1-5+deb8u1_amd64.deb ...
@@ -517,4 +517,4 @@ live-boot: core filesystems devices utils udev wget blockdev.
 CLDS: * Mount /proc, /sys and /dev/pts.
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Install Linux image: 3.16.0-4-amd64.
-CLDS: * Disk size = 1728476K. Space Used = 398460K.
+CLDS: * Disk size = 1728468K. Space Used = 398448K.
