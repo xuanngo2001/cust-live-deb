@@ -35,7 +35,7 @@ DEB_REPO_URL=$2
   sed -i 's/ main/ main contrib non-free/' ${CHROOT_DIR}/etc/apt/sources.list
 
 # Copy all scripts, setting files and binary to live system.
-  cp -R scripts ${CHROOT_DIR}/root
+  cp -a scripts ${CHROOT_DIR}/root
 
 
 # What to do next.
