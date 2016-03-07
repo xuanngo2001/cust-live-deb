@@ -11,14 +11,22 @@ set -e
 # Before doing anything, wait for Conky process to start.
 timeout 5s /bin/bash -c "while ! pgrep conky; do sleep 1s; done; sleep 1s"
 
+# Abort if multiple conky instances exist.
+CONKY_INSTANCES=$(wmctrl -lG | grep -i Conky | wc -l)
+if [ "${CONKY_INSTANCES}" -gt 1 ]; then
+  echo "$0: Error: There are ${CONKY_INSTANCES} Conky instances running. Aborted!"
+  exit 1;
+fi
+
+
 # Get column width of conky.
 # To make life easier, assume font width = 10pixels. Otherwise, use xprop to find out.
 CONKY_WIDTH_PIXELS=$(wmctrl -lG | grep -i Conky | tr -s ' ' | cut -d' ' -f5)
 CONKY_WIDTH_CHAR=$((${CONKY_WIDTH_PIXELS}/10))
 
+# Maximize the current terminal to get the maximum columns and lines. Note: Don't use :ACTIVE:, the active window might not be the terminal.
+wmctrl -r "open-2-terminals" -b toggle,maximized_vert,maximized_horz
 
-# Maximize the current terminal to get the maximum columns and lines.
-wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
 # update $COLUMNS $LINES with new values.
 resize
 
