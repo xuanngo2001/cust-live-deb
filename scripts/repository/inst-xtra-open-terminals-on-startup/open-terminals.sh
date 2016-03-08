@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-
 # Description: Open 2 terminals on startup in X window
 # Requirements:
 #   -xrandr, part of x11-xserver-utils package.
@@ -9,6 +8,7 @@ set -e
 #   -xterm for resize
 #
 # Usage: nohup x-terminal-emulator -T "open-2-terminals" -e /root/cld/open-terminals.sh
+
 
 # Before doing anything, wait for Conky process to start.
 timeout 5s /bin/bash -c "while ! pgrep conky; do sleep 1s; done; sleep 1s"
