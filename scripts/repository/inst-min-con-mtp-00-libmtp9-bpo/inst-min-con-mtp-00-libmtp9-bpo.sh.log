@@ -10,11 +10,13 @@ Hit http://ftp.debian.org jessie Release.gpg
 Hit http://www.deb-multimedia.org jessie/main amd64 Packages
 Hit http://ftp.debian.org jessie Release
 Get:1 http://http.debian.net jessie-backports InRelease [166 kB]
-Hit http://ftp.debian.org jessie/main amd64 Packages
 Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
+Hit http://ftp.debian.org jessie/main amd64 Packages
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
 Hit http://ftp.debian.org jessie/non-free amd64 Packages
 Get:2 http://http.debian.net jessie-backports/main Translation-en [302 kB]
+Err http://http.debian.net jessie-backports/main amd64 Packages
+  
 Hit http://ftp.debian.org jessie/contrib Translation-en
 Get:3 http://http.debian.net jessie-backports/main amd64 Packages [449 kB]
 Hit http://ftp.debian.org jessie/main Translation-en
@@ -25,7 +27,7 @@ Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Fetched 916 kB in 4s (225 kB/s)
+Fetched 916 kB in 3s (238 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -42,7 +44,7 @@ After this operation, 2,405 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libmtp-common all 1.1.10-1~bpo8+1 [77.1 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libusb-1.0-0 amd64 2:1.0.19-1 [48.1 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main libmtp9 amd64 1.1.10-1~bpo8+1 [186 kB]
-Fetched 312 kB in 0s (14.0 MB/s)
+Fetched 312 kB in 0s (11.0 MB/s)
 Selecting previously unselected package libmtp-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17953 files and directories currently installed.)
 Preparing to unpack .../libmtp-common_1.1.10-1~bpo8+1_all.deb ...
@@ -59,4 +61,4 @@ Setting up libusb-1.0-0:amd64 (2:1.0.19-1) ...
 Setting up libmtp9:amd64 (1.1.10-1~bpo8+1) ...
 Processing triggers for libc-bin (2.19-18+deb8u3) ...
 CLDS: * Install backport version of libmtp9 to support the most smartphones.
-CLDS: * Disk size = 1867016K. Space Used = 9356K.
+CLDS: * Disk size = 1867032K. Space Used = 9356K.
