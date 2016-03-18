@@ -96,7 +96,7 @@ while IFS='' read -r LINE || [[ -n "${LINE}" ]]; do
   # Delete line match ${LINE}. Note: sed can't process string as literal. https://bbs.archlinux.org/viewtopic.php?id=172968
   SCRIPT_LIST_CONTENT=$(echo "${SCRIPT_LIST_CONTENT}" | grep -Fv "${LINE}")
   echo "${SCRIPT_NAME}: Excluded ${LINE}."
-done < <( cat scripts-ex.lst )
+done < <(cat scripts-ex.lst | grep -v "^#"  | awk NF) # Ignore comment line | Remove empty line
 echo "${SCRIPT_LIST_CONTENT}" > "${SCRIPT_LIST}"
 
 # Add clean up scripts.
