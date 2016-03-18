@@ -1,18 +1,18 @@
 #!/bin/bash
 set -e
-
 # Description: Generate a list of scripts to be executed.
 # TODO: Is home & work switch for public release?
+SCRIPT_NAME=$(basename "$0")
 
 SYSTEM=$1
 
 # Error handling
 ###################
 if [ -z "${SYSTEM}" ]; then
-  echo "ERROR: SYSTEM argument missing. e.g.:"
-  echo "   $0  min"
-  echo "   $0  std"
-  echo "   $0  all"
+  echo "${SCRIPT_NAME}: Error: SYSTEM argument missing. e.g.:"
+  echo "   ${SCRIPT_NAME} min"
+  echo "   ${SCRIPT_NAME} std"
+  echo "   ${SCRIPT_NAME} all"
   exit 0
 fi
 
@@ -85,7 +85,7 @@ case "${SYSTEM}" in
     ;;
 	  	  
 	*)
-	  echo "ERROR: Unknown SYSTEM=>${SYSTEM}"
+	  echo "${SCRIPT_NAME}: Error: Unknown SYSTEM=>${SYSTEM}"
 	  exit 1
 	  ;;
 esac
@@ -94,7 +94,7 @@ esac
 while IFS='' read -r LINE || [[ -n "${LINE}" ]]; do
   # Delete line match ${LINE}. Note: sed can't process string as literal. https://bbs.archlinux.org/viewtopic.php?id=172968
   grep -Fv "${LINE}" ${SCRIPT_LIST} > ${SCRIPT_LIST}.$$; mv ${SCRIPT_LIST}.$$ ${SCRIPT_LIST}
-  echo "Excluded ${LINE}."
+  echo "${SCRIPT_NAME}: Excluded ${LINE}."
 done < <( cat scripts-ex.lst )
 
 
@@ -106,4 +106,4 @@ grep 'inst-zclean-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
 sort -u ${SCRIPT_LIST} -o ${SCRIPT_LIST}
 
 
-echo "List of script names added in ${SCRIPT_LIST} for [${SYSTEM}] system."
+echo "${SCRIPT_NAME}: List of script names added in ${SCRIPT_LIST} for [${SYSTEM}] system."
