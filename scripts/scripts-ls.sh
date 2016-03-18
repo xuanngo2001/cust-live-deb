@@ -91,6 +91,8 @@ case "${SYSTEM}" in
 esac
 
 # Exclude scripts
+#   scripts-ex.lst: Don't put absolute path because chroot/ path is different.
+#                   Put relative path to scripts/
 SCRIPT_LIST_CONTENT=$(cat "${SCRIPT_LIST}")
 while IFS='' read -r LINE || [[ -n "${LINE}" ]]; do
   # Delete line match ${LINE}. Note: sed can't process string as literal. https://bbs.archlinux.org/viewtopic.php?id=172968
