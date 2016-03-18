@@ -91,12 +91,13 @@ case "${SYSTEM}" in
 esac
 
 # Exclude scripts
+SCRIPT_LIST_CONTENT=$(cat "${SCRIPT_LIST}")
 while IFS='' read -r LINE || [[ -n "${LINE}" ]]; do
   # Delete line match ${LINE}. Note: sed can't process string as literal. https://bbs.archlinux.org/viewtopic.php?id=172968
-  grep -Fv "${LINE}" ${SCRIPT_LIST} > ${SCRIPT_LIST}.$$; mv ${SCRIPT_LIST}.$$ ${SCRIPT_LIST}
+  SCRIPT_LIST_CONTENT=$(echo "${SCRIPT_LIST_CONTENT}" | grep -Fv "${LINE}")
   echo "${SCRIPT_NAME}: Excluded ${LINE}."
 done < <( cat scripts-ex.lst )
-
+echo "${SCRIPT_LIST_CONTENT}" > "${SCRIPT_LIST}"
 
 # Add clean up scripts.
 grep 'inst-zclean-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
