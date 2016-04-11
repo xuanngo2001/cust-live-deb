@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-sqlite3.sh ...
   * After this operation, 143 kB of additional disk space will be used.
   * Install Database: sqlite3.
-  * Disk size = 3826124K. Space Used = 284K.
+  * Disk size = 4123008K. Space Used = 272K.
   * The following NEW packages will be installed:
   ```bash
   sqlite3
