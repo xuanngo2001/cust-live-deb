@@ -1,0 +1,386 @@
+jwm (2.1.0+svn579-2) unstable; urgency=low
+
+  * debian/control:
+    - (Depends): Remove iceweasel | www-browser to reduce depends (Closes: #93606).
+    - (Standards-Version): Update to 3.9.4.
+  * debian/patches
+    - (50): Comment out gnome-www-browser.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Tue, 20 Nov 2012 07:02:17 +0200
+
+jwm (2.1.0+svn579-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches
+    (02): Remove. Use destdir accepted upstream.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Sat, 07 Jul 2012 08:43:35 +0300
+
+jwm (2.1.0-3) unstable; urgency=low
+
+  * debian/control
+    - (Description): Adjust wording about memory usage (Closes: #663996).
+    - (Standards-Version): Update to 3.9.3.1.
+  * debian/rules
+    - Fortify code with all hardening flags enabled, including
+      CPPFLAGS (closes: #662802).
+
+ -- Jari Aalto <jari.aalto@cante.net>  Sat, 24 Mar 2012 06:44:32 -0400
+
+jwm (2.1.0-2) unstable; urgency=low
+
+  * Bug fixed in 2.1.0-1 but not closed
+    - Makefile.in -- add DESTDIR support (Closes: #560836).
+  * debian/compat
+    - Update to 9.
+  * debian/control
+    - (Build-Depends): Update to debhelper 9.
+      Change libpng12-dev to libpng-dev; libpng 1.5 transition
+      <http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=650601>.
+    - (Depends): Add x-terminal-emulator, www-browser.
+    - (Standards-Version): Update to 3.9.3.
+  * debian/copyright
+    - Update to Copyright Format 1.0.
+  * debian/menu-method
+    - Rewrite. Output to /etc/jwm/debian-menu (Closes: #588597, #470416).
+  * debian/patches
+    - (57): New. Include debian from dir /etc/jwm (Closes: #392838).
+  * debian/rules
+    - Install system.jwmrc (CloseS: #644625).
+    - Use hardened CFLAGS.
+      http://wiki.debian.org/ReleaseGoals/SecurityHardeningBuildFlags
+
+ -- Jari Aalto <jari.aalto@cante.net>  Mon, 05 Mar 2012 16:48:00 -0500
+
+jwm (2.1.0-1) unstable; urgency=low
+
+  * New upstream release
+    - Manual page fixes (Closes: #559166, #559167, #559169).
+    - EXEC: is not working from .jwmrc (Closes: #582841).
+      Upstream: "This should be fixed now. I just tested it and it works
+      for me".
+    - Iceweasel cannot be expanded fullscreen; works in other WMs
+      (Closes: #589376). Upstream: "I believe this has been fixed. I am
+      able to use Firefox in fullscreen mode without any problems".
+    - Multibytes characters title cannot be displayed (Closes: #458826).
+      Upstream: "This has been fixed (I don't know how to test it though)".
+    - Browser's javascript steals focus. Works in other WMs (Closes: #636842).
+      Upstream: "I'm not able to reproduce this with the current version."
+  * debian/*.mk
+    - Remove. No longer needed.
+  * debian/clean
+    - New file. Clean up temporary files (FTBFS; Closes: #643173).
+  * debian/compat
+    - Update to 8.
+  * debian/control
+    - (Build-Depends): debhelper 8.
+    - (Standards-Version): Update to 3.9.2.
+    - (Vcs-*): New headers.
+  * debian/copyright
+    - Update to DEP 5.
+  * debian/install
+    - New file.
+  * debian/jwm.examples
+    - Remove. Handled by newest debhelper.
+  * debian/jwm.*
+    - Rename all file to not include package prefix.
+  * debian/debian.menu-methods.sh
+    - Add final newline.
+  * debian/NEWS.Debian
+    - Delete extra whitespaces.
+  * debian/patches
+    - Refresh patches (FTBFS; Closes: #643173).
+    - (7x): Remove all manual page patches; accepted upstream.
+  * debian/rules
+    - Clean up code for minimalistic dh(1).
+    - (get-changelog): New.
+    - (override_dh_installchangelogs): New.
+  * debian/upstream.changelog
+    - New file.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Tue, 27 Sep 2011 18:54:47 +0300
+
+jwm (2.0.1-3) unstable; urgency=low
+
+  * debian/control
+    - (Build-Depends): update to debhelper 7.1. Add libfribidi-dev.
+    - (Standards-Version): update to 3.8.4.
+  * debian/rules
+    - Update to dh(1)
+    - (binary-arch): add dh_installwm.
+  * debian/patches
+    - (Number 77): Compile fix for libfribidi-dev 0.19.2-1. The
+      library's header files have changed.
+  * debian/rules:
+     - Remove rules handled by dh(1).
+
+ -- Jari Aalto <jari.aalto@cante.net>  Wed, 10 Mar 2010 09:09:11 +0200
+
+jwm (2.0.1-2) unstable; urgency=low
+
+  [ Jari Aalto ]
+  * Upgrade package to "3.0 (quilt)".
+  * debian/changelog
+    - Improve layout of all releases (canonical form).
+  * debian/compat:
+    - Update to 7
+  * debian/control
+    - (Build-Depends): update debhelper to 7. Remove dpatch.
+    - (Homepage): New field.
+    - (Standards-Version): update to 3.8.3.
+    - (Suggests): New. Add x11-apps (xload).
+    - (Uploaders): Remove; not applicable.
+  * debian/debian-autotools.mk
+    - New file
+  * debian/Jwm.desktop
+    - [Window Manager](Terminal, TryExec): New attributes. Thanks to
+      Stefan Pofahl <stefan@pofahl.de>. (Closes: Bug#508073, #546510).
+    - [Desktop Entry](Encoding): Remove, no longer needed.
+  * debian/jwm.examples
+    - New file.
+  * debian/jwm.manpages
+    - New file.
+  * debian/jwm.menu-method
+    - (postoutput): Add shutdown-menu. Thanks to Stefan Pofahl
+       <stefan@pofahl.de>
+    - Fix A-Tab keycode. Thanks to Frank Siebler <siebler@gmx.net>
+  * debian/jwm-poweroff.sh
+    - New script for the shutdown menu
+  * debian/patches
+    - Convert all dpatch files to quilt series.
+  * debian/README.Debian
+     - Remove duplicate compilation information that is in
+       README.Debian-source.
+  * debian/rules
+    - Clean rules and use debian-autools.mk.
+    - (install): Rewrite. Do not use upstream Makefile at all (too many
+      problems).
+    - (install): Correct location of *.desktop directory (Closes: #559599).
+  * debian/source/format
+    - New file
+  * debian/watch
+    - Tighten regexp.
+
+  [ Ricardo Mones ]
+  * debian/changelog
+    - Fix a couple of typos.
+  * debian/control
+    - (Description): more typos fixed.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Sat, 12 Dec 2009 22:28:59 +0200
+
+jwm (2.0.1-1) unstable; urgency=low
+
+  * New upstream release (Closes: #384553
+  * debian/control
+    - (Description): Reworded. Add 2 spaces in front of URL.
+    - (Build-Depands): Added dpatch.
+  * debian/copyright
+    - Update to latest template.
+    - Mention Debian source repository.
+  * debian/menu:
+    - Change output encoding from ISO-8859-1 to UTF-8
+      to work with C locales. (Closes: #392845)
+    - Change WindowManagers to 'Window Managers'
+  * debian/menu-method
+    - include menu.h without path component (Closes: #408519).
+  * debian/patches
+     - New. Convert package to dpatch format.
+  * debian/rules
+    - Change -$(MAKE) to fix lintian warning.
+  * debian/watch
+    - New file.
+  * src/Makefile.in
+    - Add patch 60 to comment out strip (Closes: #437244)
+
+ -- Jari Aalto <jari.aalto@cante.net>  Thu, 02 Aug 2007 10:45:54 +0300
+
+jwm (1.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/menu
+    - New file. Added jwm.menu-methods (initial
+      code sent by Paolo D'Emilio <kaysix AT olografix.org>; thanks).
+    - Add IconPath to include /usr/X11R6/include/X11/pixmaps.
+    - Update restart and exit icon *.xpm names.
+    - User menus do not yet work: added to TODO.
+    - Reduce tray size from 32 to 24 pixels to make more room under 1024x768
+      laptops (size comparable to e.g. fluxbox)
+  * debian/jwm.menu-method
+    - Correct menu path from
+      /usr/sbin/install-menu to /usr/bin/install-menu
+  * debian/jwm.menu
+    - Correct package name: pwm => jwm. Removed
+      commands: exit, restart.
+  * debian/control
+    - (Buil-depends): Add libxft-dev, libxrender-dev,
+      libfontconfig1-dev, zlib1g-dev. Removed libx11-dev, x-dev
+
+ -- Jari Aalto <jari.aalto@cante.net>  Wed, 29 Mar 2006 14:36:49 +0300
+
+jwm (1.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Sun, 26 Feb 2006 23:53:59 +0200
+
+jwm (1.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Sun,  5 Feb 2006 22:57:26 +0200
+
+jwm (1.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control
+    - (Build-Depends): Add libpng12-dev, libxpm-dev, libxinerama-dev
+    - (Description) format to fit in 80 characters.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Sat,  4 Feb 2006 13:08:37 +0200
+
+jwm (0.23-3.1) unstable; urgency=high
+
+  * Non-maintainer upload.
+  * High-urgency upload for RC bugfix.
+  * debian/control
+    - Build-depend on libxext-dev and libxpm-dev instead of on the obsolete
+      xlibs-dev; thanks to Justin Pryzby <justinpryzby@users.sf.net> for
+      testing. See <http://wiki.debian.org/DependsXlibsDev>.
+      Closes: #346625. (FTBFS: build-depends on removed xlibs-dev).
+  * Re-run autoconf to pull in a current version of AC_PATH_X, to avoid a
+    build-dep on libxt-dev.
+
+ -- Steve Langasek <vorlon@debian.org>  Tue, 17 Jan 2006 05:12:03 -0800
+
+jwm (0.23-3) unstable; urgency=medium
+
+  * debian/changelog
+    - (urgency): Set to medium. Restore /usr/bin/x-window-manager.
+  * debian/control
+    - (Homepage): more accurate location (wishlist; Closes #327013)
+    - (Description): Update wording.
+  * debian/jwm.postinst
+    - Accidental /usr/bin/x-window-manager link deletion.
+      (important; Closes: #327136).
+
+ -- Jari Aalto <jari.aalto@cante.net>  Fri,  9 Sep 2005 13:49:37 +0300
+
+jwm (0.23-2) unstable; urgency=low
+
+  * debian/control
+    - (Provides): Add "x-window-manager". See Debian Policy
+      Manual Chapter 11 - Customized programs: 11.8.3 Packages providing a
+      terminal emulator. See also 7.4 Virtual packages - Provides.
+  * debian/copyright
+    - Updated new FSF address
+  * debian/jwm.postinst
+    - Register /etc/alternatives with priority 20.
+  * debian/jwm.prerm
+    - New file. Unregister /etc/alternatives
+  * debian/patches
+    - Closes: #326420 (serious; amd64/unstable compile error fix).
+      src/hint.c::GetWindowAtom() arg: CARD32 *value => Window *value.
+      Patch thanks to Andreas Jochens <aj@andaco.de>
+  * debian/TODO.Debian
+    - Rename to debian/TODO due to dh_installdocs(1).
+  * Misc Notes
+    - Send notification to upstream about rest of the compiler warnings.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Sat,  3 Sep 2005 14:02:01 +0300
+
+jwm (0.23-1) unstable; urgency=low
+
+  * Initial Debian release (sponsored; David Moreno Garza).
+    Closes: #323353 (WNPP RFP; retitled ITP)
+  * debian/control
+    - (Build-Depends): Remove gcc. Unnecessary.
+  * debian/rules
+    - Remove non-used dh_* lines.
+  * Misc Notes
+    - All revision numbers changed due to Debian ftp-master
+      message that orig.tar was not uploaded. Started at N.N-1
+
+ -- Jari Aalto <jari.aalto@cante.net>  Mon, 29 Aug 2005 22:24:15 +0300
+
+jwm (0.23-0.11) unstable; urgency=low
+
+  * debian/Jwm.desktop
+    - New file for /usr/share/xsessions/
+
+ -- Jari Aalto <jari.aalto@cante.net>  Mon, 29 Aug 2005 09:06:32 +0300
+
+jwm (0.23-0.10) unstable; urgency=low
+
+  * debian/control
+    - (Depends): Remove debhelper(1) ${misc:Depends}. Unnecessary.
+    - (Suggests): Add 'menu'.
+  * debian/dirs
+    - Remove. Unnecessary
+  * debian/rule
+    - Change --sysconfig to /etc/jwm
+  * debian/jwm.postrm
+    - New file.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Sun, 21 Aug 2005 11:37:40 +0300
+
+jwm (0.23-0.9) unstable; urgency=low
+
+  * debian/compat
+    - New file.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Fri, 19 Aug 2005 11:07:40 +0300
+
+jwm (0.23-0.8) unstable; urgency=low
+
+  * debian/control
+    - Fix Build-Depends and tested with pbuilder(1)
+
+ -- Jari Aalto <jari.aalto@cante.net>  Thu, 18 Aug 2005 00:48:04 +0300
+
+jwm (0.23-0.7) unstable; urgency=low
+
+  * debian/control
+    - Fix missing newline. Updated policy to 3.6.2
+
+ -- Jari Aalto <jari.aalto@cante.net>  Wed, 17 Aug 2005 17:46:38 +0300
+
+jwm (0.23-0.6) unstable; urgency=low
+
+  * example.jwmrc
+    - Change border's width and height twice smaller.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Tue, 16 Aug 2005 13:41:03 +0300
+
+jwm (0.23-0.5) unstable; urgency=low
+
+  * example.jwmrc
+    - Remove non-existing programs.
+    - Change to use better default font.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Tue, 16 Aug 2005 13:41:03 +0300
+
+jwm (0.23-0.4) unstable; urgency=low
+
+  * debian/rules
+    - (configure): Add --sysconf option to put files in /etc
+
+ -- Jari Aalto <jari.aalto@cante.net>  Tue, 16 Aug 2005 12:24:10 +0300
+
+jwm (0.23-0.3) unstable; urgency=low
+
+  * Move /etc/system.jwmrc to /etc/jwmrc
+
+ -- Jari Aalto <jari.aalto@cante.net>  Tue, 16 Aug 2005 12:13:05 +0300
+
+jwm (0.23-0.2) unstable; urgency=low
+
+  * Move /usr/etc/system.jwmrc to /etc
+
+ -- Jari Aalto <jari.aalto@cante.net>  Tue, 16 Aug 2005 12:12:03 +0300
+
+jwm (0.23-0.1) unstable; urgency=low
+
+  * Initial private package.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Tue, 16 Aug 2005 11:00:32 +0300

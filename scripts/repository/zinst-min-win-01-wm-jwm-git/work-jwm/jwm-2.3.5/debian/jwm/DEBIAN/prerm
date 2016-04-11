@@ -1,0 +1,29 @@
+#!/bin/sh
+# jwm.prerm
+
+set -e
+
+PACKAGE="jwm"
+SECTION=x-window-manager
+BIN=/usr/bin/jwm
+
+Alternatives ()
+{
+    update-alternatives --remove $SECTION $BIN
+}
+
+Debhelper ()
+{
+    :
+    # Automatically generated
+    
+}
+
+Main ()
+{
+    Alternatives
+}
+
+Main "$@"
+
+# End of file

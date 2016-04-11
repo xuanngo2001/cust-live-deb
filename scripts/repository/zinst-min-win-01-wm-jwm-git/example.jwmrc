@@ -3,7 +3,8 @@
 
     <!-- The root menu. -->
     <RootMenu onroot="12">
-        <Program icon="terminal.png" label="Terminal">xterm</Program>
+        <Program icon="terminal.png" label="Terminal">x-terminal-emulator</Program>
+        <Include>/etc/jwm/debian-menu</Include>
         <Menu icon="folder.png" label="Applications">
             <Program icon="music.png" label="Audacious">audacious</Program>
             <Program icon="calculator.png" label="Calculator">xcalc</Program>
@@ -48,7 +49,7 @@
     <!-- Tray at the bottom. -->
     <Tray x="0" y="-1" autohide="off">
 
-        <TrayButton label="JWM">root:1</TrayButton>
+        <TrayButton icon="jwm-blue">root:1</TrayButton>
         <Spacer width="2"/>
         <TrayButton label="_">showdesktop</TrayButton>
         <Spacer width="2"/>
@@ -71,7 +72,7 @@
         <Foreground>#FFFFFF</Foreground>
         <Background>#555555</Background>
         <Outline>#000000</Outline>
-        <Opacity>0.5:0.9:0.1</Opacity>
+        <Opacity>0.5</Opacity>
         <Active>
             <Foreground>#FFFFFF</Foreground>
             <Background>#0077CC</Background>
@@ -93,7 +94,7 @@
         <Text>#FFFFFF</Text>
         <Active>
             <Foreground>#0077CC</Foreground>
-            <Background>#555555</Background>
+            <Background>#004488</Background>
         </Active>
     </PagerStyle>
     <MenuStyle>
@@ -119,6 +120,9 @@
       -->
     <IconPath>
         /usr/share/icons/wm-icons/32x32-aquafusion
+    </IconPath>
+    <IconPath>
+        /usr/local/share/jwm
     </IconPath>
 
     <!-- Virtual Desktops -->

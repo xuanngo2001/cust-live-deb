@@ -45,7 +45,7 @@ The following NEW packages will be installed:
   openssl tzdata-java
 0 upgraded, 80 newly installed, 0 to remove and 1 not upgraded.
 Need to get 73.1 MB of archives.
-After this operation, 138 MB of additional disk space will be used.
+After this operation, 139 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libsqlite3-0 amd64 3.8.7.1-1+deb8u1 [438 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libwrap0 amd64 7.6.q-25 [58.5 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main libpng12-0 amd64 1.2.50-2+deb8u2 [173 kB]
@@ -77,7 +77,7 @@ Get:28 http://localhost/aptly-repo/ jessie/main libthai-data all 0.1.21-1 [159 k
 Get:29 http://localhost/aptly-repo/ jessie/main libdatrie1 amd64 0.2.8-1 [32.6 kB]
 Get:30 http://localhost/aptly-repo/ jessie/main libthai0 amd64 0.1.21-1 [46.1 kB]
 Get:31 http://localhost/aptly-repo/ jessie/main libpango-1.0-0 amd64 1.36.8-3 [291 kB]
-Get:32 http://localhost/aptly-repo/ jessie/main libgraphite2-3 amd64 1.3.5-1~deb8u1 [76.9 kB]
+Get:32 http://localhost/aptly-repo/ jessie/main libgraphite2-3 amd64 1.3.6-1~deb8u1 [77.5 kB]
 Get:33 http://localhost/aptly-repo/ jessie/main libharfbuzz0b amd64 0.9.35-2 [485 kB]
 Get:34 http://localhost/aptly-repo/ jessie/main libpangoft2-1.0-0 amd64 1.36.8-3 [213 kB]
 Get:35 http://localhost/aptly-repo/ jessie/main libpangocairo-1.0-0 amd64 1.36.8-3 [200 kB]
@@ -120,7 +120,7 @@ Get:71 http://localhost/aptly-repo/ jessie/main ca-certificates all 20141019+deb
 Get:72 http://localhost/aptly-repo/ jessie/main java-common all 0.52 [136 kB]
 Get:73 http://localhost/aptly-repo/ jessie/main default-jre-headless amd64 2:1.7-52 [9,072 B]
 Get:74 http://localhost/aptly-repo/ jessie/main ca-certificates-java all 20140324 [13.7 kB]
-Get:75 http://localhost/aptly-repo/ jessie/main tzdata-java all 2015g-0+deb8u1 [80.3 kB]
+Get:75 http://localhost/aptly-repo/ jessie/main tzdata-java all 2016c-0+deb8u1 [81.6 kB]
 Get:76 http://localhost/aptly-repo/ jessie/main openjdk-7-jre-headless amd64 7u95-2.6.4-1~deb8u1 [45.4 MB]
 Get:77 http://localhost/aptly-repo/ jessie/main openjdk-7-jre amd64 7u95-2.6.4-1~deb8u1 [176 kB]
 Get:78 http://localhost/aptly-repo/ jessie/main default-jre amd64 2:1.7-52 [968 B]
@@ -128,9 +128,9 @@ Get:79 http://localhost/aptly-repo/ jessie/main openjdk-7-jdk amd64 7u95-2.6.4-1
 Get:80 http://localhost/aptly-repo/ jessie/main default-jdk amd64 2:1.7-52 [962 B]
 Extracting templates from packages: 37%Extracting templates from packages: 75%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 73.1 MB in 1s (37.2 MB/s)
+Fetched 73.1 MB in 2s (31.5 MB/s)
 Selecting previously unselected package libsqlite3-0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18798 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18807 files and directories currently installed.)
 Preparing to unpack .../libsqlite3-0_3.8.7.1-1+deb8u1_amd64.deb ...
 Unpacking libsqlite3-0:amd64 (3.8.7.1-1+deb8u1) ...
 Selecting previously unselected package libwrap0:amd64.
@@ -224,8 +224,8 @@ Selecting previously unselected package libpango-1.0-0:amd64.
 Preparing to unpack .../libpango-1.0-0_1.36.8-3_amd64.deb ...
 Unpacking libpango-1.0-0:amd64 (1.36.8-3) ...
 Selecting previously unselected package libgraphite2-3:amd64.
-Preparing to unpack .../libgraphite2-3_1.3.5-1~deb8u1_amd64.deb ...
-Unpacking libgraphite2-3:amd64 (1.3.5-1~deb8u1) ...
+Preparing to unpack .../libgraphite2-3_1.3.6-1~deb8u1_amd64.deb ...
+Unpacking libgraphite2-3:amd64 (1.3.6-1~deb8u1) ...
 Selecting previously unselected package libharfbuzz0b:amd64.
 Preparing to unpack .../libharfbuzz0b_0.9.35-2_amd64.deb ...
 Unpacking libharfbuzz0b:amd64 (0.9.35-2) ...
@@ -353,8 +353,8 @@ Selecting previously unselected package ca-certificates-java.
 Preparing to unpack .../ca-certificates-java_20140324_all.deb ...
 Unpacking ca-certificates-java (20140324) ...
 Selecting previously unselected package tzdata-java.
-Preparing to unpack .../tzdata-java_2015g-0+deb8u1_all.deb ...
-Unpacking tzdata-java (2015g-0+deb8u1) ...
+Preparing to unpack .../tzdata-java_2016c-0+deb8u1_all.deb ...
+Unpacking tzdata-java (2016c-0+deb8u1) ...
 Selecting previously unselected package openjdk-7-jre-headless:amd64.
 Preparing to unpack .../openjdk-7-jre-headless_7u95-2.6.4-1~deb8u1_amd64.deb ...
 Unpacking openjdk-7-jre-headless:amd64 (7u95-2.6.4-1~deb8u1) ...
@@ -403,7 +403,7 @@ Setting up libthai-data (0.1.21-1) ...
 Setting up libdatrie1:amd64 (0.2.8-1) ...
 Setting up libthai0:amd64 (0.1.21-1) ...
 Setting up libpango-1.0-0:amd64 (1.36.8-3) ...
-Setting up libgraphite2-3:amd64 (1.3.5-1~deb8u1) ...
+Setting up libgraphite2-3:amd64 (1.3.6-1~deb8u1) ...
 Setting up libharfbuzz0b:amd64 (0.9.35-2) ...
 Setting up libpangoft2-1.0-0:amd64 (1.36.8-3) ...
 Setting up libpangocairo-1.0-0:amd64 (1.36.8-3) ...
@@ -444,7 +444,7 @@ Setting up libsctp1:amd64 (1.0.16+dfsg-2) ...
 Setting up openssl (1.0.1k-3+deb8u4) ...
 Setting up ca-certificates (20141019+deb8u1) ...
 Setting up java-common (0.52) ...
-Setting up tzdata-java (2015g-0+deb8u1) ...
+Setting up tzdata-java (2016c-0+deb8u1) ...
 Setting up default-jre-headless (2:1.7-52) ...
 Setting up openjdk-7-jre-headless:amd64 (7u95-2.6.4-1~deb8u1) ...
 update-alternatives: using /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
@@ -673,4 +673,4 @@ Adding debian:spi-cacert-2008.pem
 done.
 done.
 CLDS: * Install JAVA JDK: default-jdk.
-CLDS: * Disk size = 2109728K. Space Used = 214076K.
+CLDS: * Disk size = 2110292K. Space Used = 214068K.

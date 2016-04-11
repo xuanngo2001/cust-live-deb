@@ -1,0 +1,29 @@
+From c3b4419e2910b237fbf053bbd7f66e3c5add1d65 Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Mon, 26 Sep 2011 11:42:31 +0300
+Subject: [PATCH] example.jwmrc: Lower menu height, use x-www-browser, add
+ gnome-www-browser
+Organization: Private
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ example.jwmrc |    5 +++--
+ 1 files changed, 3 insertions(+), 2 deletions(-)
+
+--- a/example.jwmrc
++++ b/example.jwmrc
+@@ -4,8 +4,9 @@
+ 
+    <!-- The root menu, if this is undefined you will not get a menu. -->
+    <!-- Additional RootMenu attributes: onroot, labeled, label -->
+-   <RootMenu height="32" onroot="12">
+-      <Program icon="terminal.png" label="Terminal">xterm</Program>
++   <RootMenu height="15" onroot="12">
++      <Program icon="terminal.png" label="Terminal">x-terminal-emulator</Program>
++      <Program icon="firefox.png" label="Www Browser">gnome-www-browser</Program>
+ 
+       <Menu icon="folder.png" label="Applications">
+          <Program icon="editor.png" label="Dia">dia</Program>

@@ -51,6 +51,10 @@ http://www.somsubhra.com/github-release-stats/?username=limelime&repository=cust
 # Release checklist
 * Can you watch youtube video over wireless connection?
 
+# Alternatives
+* http://porteus.org/
+* DebianDog
+
 # Customizations Performed
 
 * [List of changes](https://github.com/limelime/cust-live-deb/blob/master/logs/md/master-install.md)

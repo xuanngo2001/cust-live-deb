@@ -7,45 +7,43 @@ Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://ftp.debian.org jessie InRelease
 Hit http://www.deb-multimedia.org jessie InRelease
 Hit http://ftp.debian.org jessie Release.gpg
-Hit http://www.deb-multimedia.org jessie/main amd64 Packages
-Ign http://mozilla.debian.net jessie-backports InRelease
+Get:1 http://www.deb-multimedia.org jessie/main amd64 Packages [157 kB]
 Hit http://ftp.debian.org jessie Release
 Hit http://http.debian.net jessie-backports InRelease
-Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
-Hit http://ftp.debian.org jessie/main amd64 Packages
+Ign http://mozilla.debian.net jessie-backports InRelease
+Get:2 http://ftp.debian.org jessie/main amd64 Packages [6,763 kB]
+Get:3 http://www.deb-multimedia.org jessie/non-free amd64 Packages [3,103 B]
 Hit http://mozilla.debian.net jessie-backports Release.gpg
-Hit http://ftp.debian.org jessie/contrib amd64 Packages
+Get:4 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
 Hit http://mozilla.debian.net jessie-backports Release
-Get:1 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
-Hit http://ftp.debian.org jessie/non-free amd64 Packages
-Get:2 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [25.3 kB]
-Hit http://mozilla.debian.net jessie-backports/iceweasel-release amd64 Packages
-Hit http://ftp.debian.org jessie/contrib Translation-en
-Hit http://ftp.debian.org jessie/main Translation-en
-Hit http://ftp.debian.org jessie/non-free Translation-en
+Get:5 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [27.4 kB]
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Ign http://mozilla.debian.net jessie-backports/iceweasel-release Translation-en_US.UTF-8
-Fetched 53.1 kB in 3s (13.4 kB/s)
-Reading package lists...
+Get:6 http://ftp.debian.org jessie/contrib amd64 Packages [50.1 kB]
+Get:7 http://ftp.debian.org jessie/non-free amd64 Packages [83.6 kB]
+Get:8 http://ftp.debian.org jessie/contrib Translation-en [38.5 kB]
+Get:9 http://ftp.debian.org jessie/main Translation-en [4,582 kB]
+Get:10 http://ftp.debian.org jessie/non-free Translation-en [72.5 kB]
+Fetched 11.8 MB in 20s (583 kB/s)
+W: Failed to fetch http://mozilla.debian.net/dists/jessie-backports/Release  Unable to find expected entry 'iceweasel-release/binary-amd64/Packages' in Release file (Wrong sources.list entry or malformed file)
+
+E: Some index files failed to download. They have been ignored, or old ones used instead.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
   fonts-opensymbol libabw-0.1-1 libboost-date-time1.55.0 libclucene-contribs1
-  libclucene-core1 libe-book-0.1-1 libeot0 libexttextcat-2.0-0
-  libexttextcat-data libglew1.10 libglu1-mesa libharfbuzz-icu0 libhyphen0
-  liblangtag-common liblangtag1 libmhash2 libmythes-1.2-0 libneon27-gnutls
-  libodfgen-0.1-1 libraptor2-0 librasqal3 librdf0 libreoffice-base-core
-  libreoffice-common libreoffice-core libreoffice-style-galaxy
-  librevenge-0.0-0 libwpd-0.10-10 libwpg-0.3-3 libxslt1.1 libyajl2 uno-libs3
-  ure
+  libclucene-core1 libcurl3-gnutls libe-book-0.1-1 libeot0 libexttextcat-2.0-0
+  libexttextcat-data libglew1.10 libglu1-mesa libharfbuzz-icu0
+  libhunspell-1.3-0 libhyphen0 liblangtag-common liblangtag1 libmhash2
+  libmythes-1.2-0 libneon27-gnutls libodfgen-0.1-1 libraptor2-0 librasqal3
+  librdf0 libreoffice-base-core libreoffice-common libreoffice-core
+  libreoffice-style-galaxy librevenge-0.0-0 libwpd-0.10-10 libwpg-0.3-3
+  libxslt1.1 libyajl2 uno-libs3 ure
 Suggested packages:
   glew-utils raptor2-utils rasqal-utils librdf-storage-postgresql
   librdf-storage-mysql librdf-storage-sqlite librdf-storage-virtuoso
@@ -54,57 +52,60 @@ Suggested packages:
   libreoffice-style-tango fonts-crosextra-caladea fonts-crosextra-carlito
   libreoffice-gcj libreoffice-java-common
 Recommended packages:
-  xfonts-mathml python3-uno libreoffice-math
+  hunspell-en-us hunspell-dictionary myspell-dictionary xfonts-mathml
+  python3-uno libreoffice-math
 The following NEW packages will be installed:
   fonts-opensymbol libabw-0.1-1 libboost-date-time1.55.0 libclucene-contribs1
-  libclucene-core1 libe-book-0.1-1 libeot0 libexttextcat-2.0-0
-  libexttextcat-data libglew1.10 libglu1-mesa libharfbuzz-icu0 libhyphen0
-  liblangtag-common liblangtag1 libmhash2 libmythes-1.2-0 libneon27-gnutls
-  libodfgen-0.1-1 libraptor2-0 librasqal3 librdf0 libreoffice-base-core
-  libreoffice-common libreoffice-core libreoffice-style-galaxy
-  libreoffice-writer librevenge-0.0-0 libwpd-0.10-10 libwpg-0.3-3 libxslt1.1
-  libyajl2 uno-libs3 ure
-0 upgraded, 34 newly installed, 0 to remove and 22 not upgraded.
-Need to get 73.9 MB of archives.
-After this operation, 286 MB of additional disk space will be used.
+  libclucene-core1 libcurl3-gnutls libe-book-0.1-1 libeot0 libexttextcat-2.0-0
+  libexttextcat-data libglew1.10 libglu1-mesa libharfbuzz-icu0
+  libhunspell-1.3-0 libhyphen0 liblangtag-common liblangtag1 libmhash2
+  libmythes-1.2-0 libneon27-gnutls libodfgen-0.1-1 libraptor2-0 librasqal3
+  librdf0 libreoffice-base-core libreoffice-common libreoffice-core
+  libreoffice-style-galaxy libreoffice-writer librevenge-0.0-0 libwpd-0.10-10
+  libwpg-0.3-3 libxslt1.1 libyajl2 uno-libs3 ure
+0 upgraded, 36 newly installed, 0 to remove and 22 not upgraded.
+Need to get 74.3 MB of archives.
+After this operation, 287 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libboost-date-time1.55.0 amd64 1.55.0+dfsg-3 [41.5 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libclucene-core1 amd64 2.3.3.4-4 [456 kB]
 Get:3 http://localhost/aptly-repo/ jessie/main libclucene-contribs1 amd64 2.3.3.4-4 [83.6 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main libglew1.10 amd64 1.10.0-3 [139 kB]
-Get:5 http://localhost/aptly-repo/ jessie/main libglu1-mesa amd64 9.0.0-2 [163 kB]
-Get:6 http://localhost/aptly-repo/ jessie/main libharfbuzz-icu0 amd64 0.9.35-2 [360 kB]
-Get:7 http://localhost/aptly-repo/ jessie/main libmhash2 amd64 0.9.9.9-7 [91.8 kB]
-Get:8 http://localhost/aptly-repo/ jessie/main libxslt1.1 amd64 1.1.28-2+b2 [232 kB]
-Get:9 http://localhost/aptly-repo/ jessie/main libyajl2 amd64 2.1.0-2 [23.2 kB]
-Get:10 http://localhost/aptly-repo/ jessie/main libraptor2-0 amd64 2.0.14-1 [166 kB]
-Get:11 http://localhost/aptly-repo/ jessie/main librasqal3 amd64 0.9.32-1 [176 kB]
-Get:12 http://localhost/aptly-repo/ jessie/main librdf0 amd64 1.0.17-1+b1 [108 kB]
-Get:13 http://localhost/aptly-repo/ jessie/main libreoffice-style-galaxy all 1:5.0.5~rc2-1~bpo8+2 [1,651 kB]
-Get:14 http://localhost/aptly-repo/ jessie/main uno-libs3 amd64 5.0.5~rc2-1~bpo8+2 [875 kB]
-Get:15 http://localhost/aptly-repo/ jessie/main ure amd64 5.0.5~rc2-1~bpo8+2 [1,732 kB]
-Get:16 http://localhost/aptly-repo/ jessie/main libreoffice-common all 1:5.0.5~rc2-1~bpo8+2 [23.1 MB]
-Get:17 http://localhost/aptly-repo/ jessie/main fonts-opensymbol all 2:102.7+LibO5.0.5~rc2-1~bpo8+2 [263 kB]
-Get:18 http://localhost/aptly-repo/ jessie/main librevenge-0.0-0 amd64 0.0.1-3 [277 kB]
-Get:19 http://localhost/aptly-repo/ jessie/main libabw-0.1-1 amd64 0.1.0-2 [93.4 kB]
-Get:20 http://localhost/aptly-repo/ jessie/main libe-book-0.1-1 amd64 0.1.1-2 [180 kB]
-Get:21 http://localhost/aptly-repo/ jessie/main libeot0 amd64 0.01-3 [26.4 kB]
-Get:22 http://localhost/aptly-repo/ jessie/main libexttextcat-data all 3.4.4-1 [165 kB]
-Get:23 http://localhost/aptly-repo/ jessie/main libexttextcat-2.0-0 amd64 3.4.4-1 [15.9 kB]
-Get:24 http://localhost/aptly-repo/ jessie/main libhyphen0 amd64 2.8.8-1 [23.4 kB]
-Get:25 http://localhost/aptly-repo/ jessie/main liblangtag-common all 0.5.1-3 [127 kB]
-Get:26 http://localhost/aptly-repo/ jessie/main liblangtag1 amd64 0.5.1-3 [70.1 kB]
-Get:27 http://localhost/aptly-repo/ jessie/main libmythes-1.2-0 amd64 2:1.2.4-1 [8,020 B]
-Get:28 http://localhost/aptly-repo/ jessie/main libneon27-gnutls amd64 0.30.1-1 [133 kB]
-Get:29 http://localhost/aptly-repo/ jessie/main libodfgen-0.1-1 amd64 0.1.1-2 [223 kB]
-Get:30 http://localhost/aptly-repo/ jessie/main libreoffice-core amd64 1:5.0.5~rc2-1~bpo8+2 [34.1 MB]
-Get:31 http://localhost/aptly-repo/ jessie/main libreoffice-base-core amd64 1:5.0.5~rc2-1~bpo8+2 [765 kB]
-Get:32 http://localhost/aptly-repo/ jessie/main libwpd-0.10-10 amd64 0.10.0-2+b1 [267 kB]
-Get:33 http://localhost/aptly-repo/ jessie/main libwpg-0.3-3 amd64 0.3.0-3 [74.4 kB]
-Get:34 http://localhost/aptly-repo/ jessie/main libreoffice-writer amd64 1:5.0.5~rc2-1~bpo8+2 [7,727 kB]
-Extracting templates from packages: 88%Extracting templates from packages: 100%
-Fetched 73.9 MB in 1s (42.1 MB/s)
+Get:4 http://localhost/aptly-repo/ jessie/main libcurl3-gnutls amd64 7.38.0-4+deb8u3 [251 kB]
+Get:5 http://localhost/aptly-repo/ jessie/main libglew1.10 amd64 1.10.0-3 [139 kB]
+Get:6 http://localhost/aptly-repo/ jessie/main libglu1-mesa amd64 9.0.0-2 [163 kB]
+Get:7 http://localhost/aptly-repo/ jessie/main libharfbuzz-icu0 amd64 0.9.35-2 [360 kB]
+Get:8 http://localhost/aptly-repo/ jessie/main libhunspell-1.3-0 amd64 1.3.3-3 [139 kB]
+Get:9 http://localhost/aptly-repo/ jessie/main libmhash2 amd64 0.9.9.9-7 [91.8 kB]
+Get:10 http://localhost/aptly-repo/ jessie/main libxslt1.1 amd64 1.1.28-2+b2 [232 kB]
+Get:11 http://localhost/aptly-repo/ jessie/main libyajl2 amd64 2.1.0-2 [23.2 kB]
+Get:12 http://localhost/aptly-repo/ jessie/main libraptor2-0 amd64 2.0.14-1 [166 kB]
+Get:13 http://localhost/aptly-repo/ jessie/main librasqal3 amd64 0.9.32-1 [176 kB]
+Get:14 http://localhost/aptly-repo/ jessie/main librdf0 amd64 1.0.17-1+b1 [108 kB]
+Get:15 http://localhost/aptly-repo/ jessie/main libreoffice-style-galaxy all 1:5.0.5~rc2-1~bpo8+2 [1,651 kB]
+Get:16 http://localhost/aptly-repo/ jessie/main uno-libs3 amd64 5.0.5~rc2-1~bpo8+2 [875 kB]
+Get:17 http://localhost/aptly-repo/ jessie/main ure amd64 5.0.5~rc2-1~bpo8+2 [1,732 kB]
+Get:18 http://localhost/aptly-repo/ jessie/main libreoffice-common all 1:5.0.5~rc2-1~bpo8+2 [23.1 MB]
+Get:19 http://localhost/aptly-repo/ jessie/main fonts-opensymbol all 2:102.7+LibO5.0.5~rc2-1~bpo8+2 [263 kB]
+Get:20 http://localhost/aptly-repo/ jessie/main librevenge-0.0-0 amd64 0.0.1-3 [277 kB]
+Get:21 http://localhost/aptly-repo/ jessie/main libabw-0.1-1 amd64 0.1.0-2 [93.4 kB]
+Get:22 http://localhost/aptly-repo/ jessie/main libe-book-0.1-1 amd64 0.1.1-2 [180 kB]
+Get:23 http://localhost/aptly-repo/ jessie/main libeot0 amd64 0.01-3 [26.4 kB]
+Get:24 http://localhost/aptly-repo/ jessie/main libexttextcat-data all 3.4.4-1 [165 kB]
+Get:25 http://localhost/aptly-repo/ jessie/main libexttextcat-2.0-0 amd64 3.4.4-1 [15.9 kB]
+Get:26 http://localhost/aptly-repo/ jessie/main libhyphen0 amd64 2.8.8-1 [23.4 kB]
+Get:27 http://localhost/aptly-repo/ jessie/main liblangtag-common all 0.5.1-3 [127 kB]
+Get:28 http://localhost/aptly-repo/ jessie/main liblangtag1 amd64 0.5.1-3 [70.1 kB]
+Get:29 http://localhost/aptly-repo/ jessie/main libmythes-1.2-0 amd64 2:1.2.4-1 [8,020 B]
+Get:30 http://localhost/aptly-repo/ jessie/main libneon27-gnutls amd64 0.30.1-1 [133 kB]
+Get:31 http://localhost/aptly-repo/ jessie/main libodfgen-0.1-1 amd64 0.1.1-2 [223 kB]
+Get:32 http://localhost/aptly-repo/ jessie/main libreoffice-core amd64 1:5.0.5~rc2-1~bpo8+2 [34.1 MB]
+Get:33 http://localhost/aptly-repo/ jessie/main libreoffice-base-core amd64 1:5.0.5~rc2-1~bpo8+2 [765 kB]
+Get:34 http://localhost/aptly-repo/ jessie/main libwpd-0.10-10 amd64 0.10.0-2+b1 [267 kB]
+Get:35 http://localhost/aptly-repo/ jessie/main libwpg-0.3-3 amd64 0.3.0-3 [74.4 kB]
+Get:36 http://localhost/aptly-repo/ jessie/main libreoffice-writer amd64 1:5.0.5~rc2-1~bpo8+2 [7,727 kB]
+Extracting templates from packages: 83%Extracting templates from packages: 100%
+Fetched 74.3 MB in 1s (44.5 MB/s)
 Selecting previously unselected package libboost-date-time1.55.0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41526 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41080 files and directories currently installed.)
 Preparing to unpack .../libboost-date-time1.55.0_1.55.0+dfsg-3_amd64.deb ...
 Unpacking libboost-date-time1.55.0:amd64 (1.55.0+dfsg-3) ...
 Selecting previously unselected package libclucene-core1:amd64.
@@ -113,6 +114,9 @@ Unpacking libclucene-core1:amd64 (2.3.3.4-4) ...
 Selecting previously unselected package libclucene-contribs1:amd64.
 Preparing to unpack .../libclucene-contribs1_2.3.3.4-4_amd64.deb ...
 Unpacking libclucene-contribs1:amd64 (2.3.3.4-4) ...
+Selecting previously unselected package libcurl3-gnutls:amd64.
+Preparing to unpack .../libcurl3-gnutls_7.38.0-4+deb8u3_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.38.0-4+deb8u3) ...
 Selecting previously unselected package libglew1.10:amd64.
 Preparing to unpack .../libglew1.10_1.10.0-3_amd64.deb ...
 Unpacking libglew1.10:amd64 (1.10.0-3) ...
@@ -122,6 +126,9 @@ Unpacking libglu1-mesa:amd64 (9.0.0-2) ...
 Selecting previously unselected package libharfbuzz-icu0:amd64.
 Preparing to unpack .../libharfbuzz-icu0_0.9.35-2_amd64.deb ...
 Unpacking libharfbuzz-icu0:amd64 (0.9.35-2) ...
+Selecting previously unselected package libhunspell-1.3-0:amd64.
+Preparing to unpack .../libhunspell-1.3-0_1.3.3-3_amd64.deb ...
+Unpacking libhunspell-1.3-0:amd64 (1.3.3-3) ...
 Selecting previously unselected package libmhash2:amd64.
 Preparing to unpack .../libmhash2_0.9.9.9-7_amd64.deb ...
 Unpacking libmhash2:amd64 (0.9.9.9-7) ...
@@ -216,9 +223,11 @@ Processing triggers for fontconfig (2.11.0-6.3) ...
 Setting up libboost-date-time1.55.0:amd64 (1.55.0+dfsg-3) ...
 Setting up libclucene-core1:amd64 (2.3.3.4-4) ...
 Setting up libclucene-contribs1:amd64 (2.3.3.4-4) ...
+Setting up libcurl3-gnutls:amd64 (7.38.0-4+deb8u3) ...
 Setting up libglew1.10:amd64 (1.10.0-3) ...
 Setting up libglu1-mesa:amd64 (9.0.0-2) ...
 Setting up libharfbuzz-icu0:amd64 (0.9.35-2) ...
+Setting up libhunspell-1.3-0:amd64 (1.3.3-3) ...
 Setting up libmhash2:amd64 (0.9.9.9-7) ...
 Setting up libxslt1.1:amd64 (1.1.28-2+b2) ...
 Setting up libyajl2:amd64 (2.1.0-2) ...
@@ -281,9 +290,9 @@ Get:12 http://localhost/aptly-repo/ jessie/main coinor-libcgl1 amd64 0.58.9-1 [4
 Get:13 http://localhost/aptly-repo/ jessie/main coinor-libcbc3 amd64 2.8.12-1 [670 kB]
 Get:14 http://localhost/aptly-repo/ jessie/main coinor-libcoinmp1 amd64 1.7.6+dfsg1-1 [32.6 kB]
 Get:15 http://localhost/aptly-repo/ jessie/main libreoffice-calc amd64 1:5.0.5~rc2-1~bpo8+2 [6,858 kB]
-Fetched 12.3 MB in 0s (22.4 MB/s)
+Fetched 12.3 MB in 0s (39.6 MB/s)
 Selecting previously unselected package libboost-system1.55.0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45908 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45477 files and directories currently installed.)
 Preparing to unpack .../libboost-system1.55.0_1.55.0+dfsg-3_amd64.deb ...
 Unpacking libboost-system1.55.0:amd64 (1.55.0+dfsg-3) ...
 Selecting previously unselected package libcolamd2.8.0:amd64.
@@ -372,9 +381,9 @@ Get:4 http://localhost/aptly-repo/ jessie/main libpagemaker-0.0-0 amd64 0.0.1-1 
 Get:5 http://localhost/aptly-repo/ jessie/main libvisio-0.1-1 amd64 0.1.0-2 [245 kB]
 Get:6 http://localhost/aptly-repo/ jessie/main libreoffice-draw amd64 1:5.0.5~rc2-1~bpo8+2 [2,470 kB]
 Get:7 http://localhost/aptly-repo/ jessie/main libreoffice-impress amd64 1:5.0.5~rc2-1~bpo8+2 [1,028 kB]
-Fetched 4,426 kB in 0s (37.3 MB/s)
+Fetched 4,426 kB in 0s (37.7 MB/s)
 Selecting previously unselected package libcdr-0.1-1.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46019 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45588 files and directories currently installed.)
 Preparing to unpack .../libcdr-0.1-1_0.1.0-3_amd64.deb ...
 Unpacking libcdr-0.1-1 (0.1.0-3) ...
 Selecting previously unselected package libfreehand-0.1-1.
@@ -431,9 +440,9 @@ Need to get 2,133 kB of archives.
 After this operation, 9,520 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libreoffice-base-drivers amd64 1:5.0.5~rc2-1~bpo8+2 [533 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libreoffice-base amd64 1:5.0.5~rc2-1~bpo8+2 [1,600 kB]
-Fetched 2,133 kB in 0s (35.1 MB/s)
+Fetched 2,133 kB in 0s (34.9 MB/s)
 Selecting previously unselected package libreoffice-base-drivers.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46092 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45661 files and directories currently installed.)
 Preparing to unpack .../libreoffice-base-drivers_1%3a5.0.5~rc2-1~bpo8+2_amd64.deb ...
 Unpacking libreoffice-base-drivers (1:5.0.5~rc2-1~bpo8+2) ...
 Selecting previously unselected package libreoffice-base.
@@ -455,9 +464,9 @@ The following NEW packages will be installed:
 Need to get 371 kB of archives.
 After this operation, 1,405 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libreoffice-math amd64 1:5.0.5~rc2-1~bpo8+2 [371 kB]
-Fetched 371 kB in 0s (19.7 MB/s)
+Fetched 371 kB in 0s (26.2 MB/s)
 Selecting previously unselected package libreoffice-math.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46155 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45724 files and directories currently installed.)
 Preparing to unpack .../libreoffice-math_1%3a5.0.5~rc2-1~bpo8+2_amd64.deb ...
 Unpacking libreoffice-math (1:5.0.5~rc2-1~bpo8+2) ...
 Processing triggers for man-db (2.7.0.2-5) ...
@@ -472,4 +481,4 @@ CLDS: * Install Office Suite: Drawing.
 CLDS: * Install Office Suite: Database.
 CLDS: * Install Office Suite: Equation.
 CLDS: * https://wiki.documentfoundation.org/ReleasePlan
-CLDS: * Disk size = 3602536K. Space Used = 449984K.
+CLDS: * Disk size = 3434828K. Space Used = 406360K.

@@ -1,0 +1,23 @@
+Package: jwm
+Version: 2.1.0+svn579-2
+Architecture: amd64
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Installed-Size: 315
+Depends: libc6 (>= 2.15), libfribidi0 (>= 0.19.2), libpng12-0 (>= 1.2.13-4), libx11-6, libxext6, libxft2 (>> 2.1.1), libxinerama1, libxpm4, libxrender1, rxvt-unicode-256color | rxvt-unicode | rxvt-unicode-lite | gnome-terminal | konsole | x-terminal-emulator
+Suggests: menu, x11-apps
+Provides: x-window-manager
+Section: x11
+Priority: optional
+Homepage: http://www.joewing.net/programs/jwm
+Description: very small lightweight pure X11 window manager with tray and menus
+ Low resource Window manager ideal for older PCs. It uses a minimum of external
+ libraries, thus very little memory, includes virtual screens, menubar and
+ root-menu popup.
+ .
+ JWM is a window manager for the X11 Window System. JWM is written in
+ C and uses only Xlib and (optionally) the shape extension and libXpm.
+ It can support some MWM, GNOME, and WM Spec hints. The menu
+ configuration files are managed in XML format.
+ .
+ Compared to other light WM, like Fvwm95, the Jwm consumes considerably
+ less memory while providing the same functionality.

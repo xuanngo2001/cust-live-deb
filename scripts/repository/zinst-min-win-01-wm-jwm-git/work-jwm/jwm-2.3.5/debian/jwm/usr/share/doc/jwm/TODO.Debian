@@ -1,0 +1,16 @@
+User menus are not implemented yet
+----------------------------------
+
+Paolo D'Emilio <kaysix AT olografix.org> writes:
+
+    The only big difference is that I willingly avoided adding icons,
+    because I haven't found a way to select menu items outside the screen.
+
+    Another thing I couldn't replicate is the user menu generation;
+    userprefix expects a folder and uses the same filename used for the
+    global rc file; set as it is in my draft (userprefix="jwmrc") it would
+    create ~/jwmrc/jwmrc instead of ~/.jwmrc
+
+See Debian Menu System
+Chapter 5 - What packages with menu managers should do
+/usr/share/doc/menu/htmlch5.html

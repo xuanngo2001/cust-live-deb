@@ -1,0 +1,22 @@
+jwm for Debian
+--------------
+
+Upstream sources use /etc/system.jwmrc, but this has been changed to
+/etc/jwm/jwmrc in Debian.
+
+There is no automatic configuration which would add programs to the
+menus. Edit /etc/jwm/jwmrc or copy it to personal ~/.jwmrc startup file.
+
+Notes:
+
+  The AltGr-key (keycode 113) seems to be dead, so the
+  workaround was to to replace key bindings in jwm's
+  configuration /etc/jwm/jwmrc from
+
+        <Key mask="A" key="Tab">nextstacked</Key>
+
+  to
+
+        <Key mask="A" key="Tab">next</Key>
+
+ -- Jari Aalto <jari.aalto@cante.net>, Sat, 12 Dec 2009 18:36:38 +0200

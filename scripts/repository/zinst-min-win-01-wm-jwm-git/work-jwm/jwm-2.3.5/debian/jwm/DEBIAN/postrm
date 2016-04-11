@@ -1,0 +1,45 @@
+#!/bin/sh
+# jwm.postrm
+
+set -e
+
+PACKAGE="jwm"
+MENU="/etc/menu-methods/$PACKAGE"
+
+Debhelper ()
+{
+    :
+    # Automatically generated
+    # Automatically added by dh_installmenu
+inst=/etc/menu-methods/jwm
+if [ "$1" = "remove" ] && [ -f "$inst" ]; then chmod a-x $inst ; fi
+if [ -x "`which update-menus 2>/dev/null`" ]; then update-menus ; fi
+# End automatically added section
+
+}
+
+Main ()
+{
+    case "$1" in
+	remove)
+	    if [ -f $MENU ]; then
+		chmod a-x $MENU
+		[ -x /usr/bin/update-menus ] && update-menus
+	    fi
+	    ;;
+	purge)
+	    #  remove the files that install-menu creates:
+#	    ( cd /etc/X11/jwm/ && rm system.* menus.dat menudefs.hook )
+	    ;;
+	upgrade)
+	    ;;
+	*)  echo "$0: postrm called with unknown argument \`$1'" >&2
+	    ;;
+    esac
+
+    Debhelper
+}
+
+Main "$@"
+
+# End of file

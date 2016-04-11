@@ -1,0 +1,9 @@
+# Automatically added by dh_installmenu
+inst=/etc/menu-methods/jwm
+if [ -f $inst ]; then
+	chmod a+x $inst
+	if [ -x "`which update-menus 2>/dev/null`" ]; then
+		update-menus
+	fi
+fi
+# End automatically added section

@@ -1,0 +1,346 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc -b
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: source package jwm
+dpkg-buildpackage: source version 2.1.0+svn579-2
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Jari Aalto <jari.aalto@cante.net>
+ dpkg-source --before-build jwm-2.3.5
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+make[1]: Entering directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+(cd src && make clean)
+make[2]: Entering directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5/src'
+rm -f action.o background.o border.o button.o client.o clientlist.o clock.o color.o command.o confirm.o cursor.o debug.o desktop.o dock.o event.o error.o font.o grab.o gradient.o group.o help.o hint.o icon.o image.o key.o lex.o main.o match.o menu.o misc.o move.o outline.o pager.o parse.o place.o popup.o render.o resize.o root.o screen.o settings.o spacer.o status.o swallow.o taskbar.o timing.o tray.o traybutton.o winmenu.o jwm core
+make[2]: Leaving directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5/src'
+(cd po && make clean)
+make[2]: Entering directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5/po'
+rm -f *.insert-header
+rm -f remove-potcdate.sed
+rm -f stamp-poT
+rm -f core core.* jwm.po jwm.1po jwm.2po *.new.po
+rm -fr *.o
+make[2]: Leaving directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5/po'
+rm -rf doc
+rm -f *[~#] config.cache config.log config.status config.h
+rm -f Makefile src/Makefile jwm.1
+rm -fr autom4te.cache
+rm -f Makefile.bak src/Makefile.bak
+rm -fr .git .gitignore
+make[1]: Leaving directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+   dh_clean
+ debian/rules build
+dh build
+   dh_testdir
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+dh_auto_configure -- --sysconfdir=/etc/jwm
+checking for gcc... cc  -D_FORTIFY_SOURCE=2
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether cc  -D_FORTIFY_SOURCE=2 accepts -g... yes
+checking for cc  -D_FORTIFY_SOURCE=2 option to accept ISO C89... none needed
+checking how to run the C preprocessor... cc  -D_FORTIFY_SOURCE=2 -E
+checking for a BSD-compatible install... /usr/bin/install -c
+checking if _XOPEN_SOURCE should be defined... yes
+checking for X... libraries , headers 
+checking for XOpenDisplay in -lX11... yes
+checking for Xutf8TextPropertyToTextList in -lX11... yes
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for unistd.h... (cached) yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking alloca.h usability... yes
+checking alloca.h presence... yes
+checking for alloca.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking X11/Xlib.h usability... yes
+checking X11/Xlib.h presence... yes
+checking for X11/Xlib.h... yes
+checking for X11/Xutil.h... yes
+checking for X11/cursorfont.h... yes
+checking for X11/Xproto.h... yes
+checking for X11/Xatom.h... yes
+checking for X11/keysym.h... yes
+checking for X11/Xresource.h... yes
+checking for unsetenv... yes
+checking for putenv... yes
+checking for setlocale... yes
+checking for pkg-config... pkg-config
+checking if pkg-config knows about libpng... yes
+checking if pkg-config knows about libjpeg... no
+checking if pkg-config knows about xft... yes
+checking if pkg-config knows about xrender... yes
+checking if pkg-config knows about fribidi... yes
+checking for png_read_image in -lpng... yes
+checking for jpeg_start_decompress in -ljpeg... no
+configure: WARNING: unable to use libjpeg, JPEG support disabled
+checking for XftFontOpenName in -lXft... yes
+checking for ft2build.h... yes
+checking for X11/extensions/Xrender.h... yes
+checking for XRenderComposite in -lXrender... yes
+checking for fribidi_log2vis in -lfribidi... yes
+checking X11/xpm.h usability... yes
+checking X11/xpm.h presence... yes
+checking for X11/xpm.h... yes
+checking whether XpmAllocColor is declared... yes
+checking for XpmReadFileToImage in -lXpm... yes
+checking for XShapeCombineRectangles in -lXext... yes
+checking for XmuDrawRoundedRectangle in -lXmu... no
+configure: WARNING: unable to use Xmu
+checking for XineramaQueryExtension in -lXinerama... yes
+checking whether make sets $(MAKE)... yes
+./configure: line 6044: AM_PROG_MKDIR_P: command not found
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... /bin/bash: ./config.rpath: No such file or directory
+done
+./configure: line 7149: gt_INTL_MACOSX: command not found
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+configure: creating ./config.status
+config.status: creating po/Makefile.in
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating jwm.1
+config.status: creating config.h
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+Compiler:      cc  -D_FORTIFY_SOURCE=2
+Compile flags: -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\"
+Link flags:    -fPIE -pie -Wl,-z,relro -Wl,-z,now -lX11 -lpng12  -lXft  -lXrender -lX11  -lfribidi  -lXpm -lXext -lXinerama 
+
+Options
+
+    Confirm:  yes
+    Icon:     yes
+    PNG:      yes
+    JPEG:     no
+    XPM:      yes
+    XFT:      yes
+    XRender:  yes
+    FriBidi:  yes
+    Shape:    yes
+    Xmu:      no
+    Xinerama: yes
+    Debug:    no
+
+make[1]: Leaving directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+   dh_auto_build
+make[1]: Entering directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+make -C src all
+make[2]: Entering directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5/src'
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 action.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 background.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 border.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 button.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 client.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 clientlist.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 clock.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 color.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 command.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 confirm.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 cursor.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 debug.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 desktop.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 dock.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 event.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 error.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 font.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 grab.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 gradient.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 group.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 help.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 hint.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 icon.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 image.c
+image.c: In function ‘CreateImage’:
+image.c:610:4: warning: ISO C90 forbids mixed declarations and code [-Wpedantic]
+    ImageNode *image = Allocate(sizeof(ImageNode));
+    ^
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 key.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 lex.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 main.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 match.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 menu.c
+menu.c: In function ‘MenuCallback’:
+menu.c:459:4: warning: ISO C90 forbids mixed declarations and code [-Wpedantic]
+    const unsigned long diff = GetTimeDifference(now, &menu->lastTime);
+    ^
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 misc.c
+misc.c: In function ‘FindValue’:
+misc.c:251:7: warning: ISO C90 forbids mixed declarations and code [-Wpedantic]
+       const int rc = strcmp(key, mapping[x].key);
+       ^
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 move.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 outline.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 pager.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 parse.c
+parse.c: In function ‘TokenizeFile’:
+parse.c:1833:4: warning: ISO C90 forbids mixed declarations and code [-Wpedantic]
+    int fd = open(path, O_RDONLY);
+    ^
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 place.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 popup.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 render.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 resize.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 root.c
+root.c: In function ‘GetRootMenuIndexFromString’:
+root.c:109:4: warning: ISO C90 forbids mixed declarations and code [-Wpedantic]
+    const int result = GetRootMenuIndex(*str);
+    ^
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 screen.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 settings.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 spacer.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 status.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 swallow.c
+swallow.c: In function ‘Destroy’:
+swallow.c:192:7: warning: ISO C90 forbids mixed declarations and code [-Wpedantic]
+       ClientState state;
+       ^
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 taskbar.c
+taskbar.c: In function ‘Render’:
+taskbar.c:764:7: warning: ISO C90 forbids mixed declarations and code [-Wpedantic]
+       ClientEntry *cp;
+       ^
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 timing.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 tray.c
+tray.c: In function ‘HandleTrayButtonRelease’:
+tray.c:716:4: warning: C++ style comments are not allowed in ISO C90
+    // First inform any components that have a grab.
+    ^
+tray.c:716:4: warning: (this will be reported only once per input file)
+In file included from jwm.h:146:0,
+                 from tray.c:10:
+tray.c: In function ‘HideTray’:
+jxlib.h:252:21: warning: ‘y’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+    ( SetCheckpoint(), XMoveWindow( a, b, c, d ) )
+                     ^
+tray.c:576:11: note: ‘y’ was declared here
+    int x, y;
+           ^
+In file included from jwm.h:146:0,
+                 from tray.c:10:
+jxlib.h:252:21: warning: ‘x’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+    ( SetCheckpoint(), XMoveWindow( a, b, c, d ) )
+                     ^
+tray.c:576:8: note: ‘x’ was declared here
+    int x, y;
+        ^
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 traybutton.c
+cc  -D_FORTIFY_SOURCE=2 -c -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -Wall -pedantic -I/usr/include/libpng12  -I/usr/include/freetype2   -I/usr/include/fribidi  -DLOCALEDIR=\"/usr/share/locale\" -D_FORTIFY_SOURCE=2 winmenu.c
+cc  -D_FORTIFY_SOURCE=2 -o jwm action.o background.o border.o button.o client.o clientlist.o clock.o color.o command.o confirm.o cursor.o debug.o desktop.o dock.o event.o error.o font.o grab.o gradient.o group.o help.o hint.o icon.o image.o key.o lex.o main.o match.o menu.o misc.o move.o outline.o pager.o parse.o place.o popup.o render.o resize.o root.o screen.o settings.o spacer.o status.o swallow.o taskbar.o timing.o tray.o traybutton.o winmenu.o -fPIE -pie -Wl,-z,relro -Wl,-z,now -lX11 -lpng12  -lXft  -lXrender -lX11  -lfribidi  -lXpm -lXext -lXinerama 
+make[2]: Leaving directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5/src'
+make -C po all
+make[2]: Entering directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5/po'
+test ! -f ./jwm.pot || \
+  test -z "de.gmo es.gmo fr.gmo hu.gmo it.gmo nl.gmo pl.gmo pt.gmo pt_BR.gmo ru.gmo zh_CN.gmo" || make de.gmo es.gmo fr.gmo hu.gmo it.gmo nl.gmo pl.gmo pt.gmo pt_BR.gmo ru.gmo zh_CN.gmo
+make[3]: Entering directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5/po'
+make[3]: 'de.gmo' is up to date.
+make[3]: 'es.gmo' is up to date.
+make[3]: 'fr.gmo' is up to date.
+make[3]: 'hu.gmo' is up to date.
+make[3]: 'it.gmo' is up to date.
+make[3]: 'nl.gmo' is up to date.
+make[3]: 'pl.gmo' is up to date.
+make[3]: 'pt.gmo' is up to date.
+make[3]: 'pt_BR.gmo' is up to date.
+make[3]: 'ru.gmo' is up to date.
+make[3]: 'zh_CN.gmo' is up to date.
+make[3]: Leaving directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5/po'
+touch stamp-po
+make[2]: Leaving directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5/po'
+make[1]: Leaving directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+# Disable. See debian/install instead.
+make[1]: Leaving directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+   debian/rules override_dh_install
+make[1]: Entering directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+dh_install
+install -D -m 644 example.jwmrc /media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5/debian/jwm/etc/jwm/system.jwmrc
+make[1]: Leaving directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+   dh_installdocs
+   debian/rules override_dh_installchangelogs
+make[1]: Entering directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+dh_installchangelogs debian/upstream.changelog
+make[1]: Leaving directory '/media/master/github/cust-live-deb/scripts/repository/inst-min-win-01-wm-jwm-git/work-jwm/jwm-2.3.5'
+   dh_installman
+   dh_installmenu
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `jwm' in `../jwm_2.1.0+svn579-2_amd64.deb'.
+ dpkg-genchanges -b >../jwm_2.1.0+svn579-2_amd64.changes
+dpkg-genchanges: binary-only upload (no source code included)
+ dpkg-source --after-build jwm-2.3.5
+dpkg-buildpackage: binary-only upload (no source included)
