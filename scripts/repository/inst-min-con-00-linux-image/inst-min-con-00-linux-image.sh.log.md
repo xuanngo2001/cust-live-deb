@@ -4,7 +4,7 @@
   * Mount /proc, /sys and /dev/pts.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
   * Install Linux image: 3.16.0-4-amd64.
-  * Disk size = 1761892K. Space Used = 389360K.
+  * Disk size = 1761952K. Space Used = 389368K.
   * The following NEW packages will be installed:
   ```bash
   dbus dialog libcap-ng0 libdbus-1-3 libexpat1
