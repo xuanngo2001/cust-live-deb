@@ -24,15 +24,9 @@ DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-
     <Include>/etc/jwm/debian-menu</Include>
     <Separator/>
     
-    <Menu label="Shutdown">
-      <Restart label="Restart JWM" icon="restart.png"/>
-      <Exit label="Exit JWM" confirm="true" icon="quit.png"/>
-      <Separator/>
-      <Program label="Reboot" confirm="false">/sbin/reboot</Program>
-      <Separator/>
-      <Program label="Shutdown" confirm="false">/sbin/halt -p</Program>
-    </Menu>
-
+    <!-- Include shutdown menu. -->
+    <Include>/root/cld/jwmrc-menu-shutdown.xml</Include>
+    
   </RootMenu>
 
  
