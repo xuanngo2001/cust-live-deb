@@ -12,6 +12,7 @@ DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-
   <StartupCommand>/root/cld/jwmrc-startup.sh</StartupCommand>
   
   <RootMenu height="15" onroot="12">
+  
     <Program icon="terminal.png" label="Terminal">x-terminal-emulator</Program>
     <Separator/>
     
@@ -22,10 +23,6 @@ DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-
     <!-- Include Debian default menu. -->
     <Include>/etc/jwm/debian-menu</Include>
     <Separator/>
-    
-    <!--<Program icon="lock.png" label="Lock">xscreensaver-command -activate</Program>
-    <Separator/>
-    -->
     
     <Menu label="Shutdown">
       <Restart label="Restart JWM" icon="restart.png"/>
@@ -39,19 +36,19 @@ DamnSmall Linux Sample Themes: http://www.damnsmalllinux.org/f/topic-3-34-19504-
   </RootMenu>
 
  
-<WindowStyle>
-    <Font>Arial   -12</Font>
-    <Width>3</Width>
-    <Height>22</Height>     
-    <Active>
-       <Text>white</Text>
-       <Title>#a8c5e9:#80a7d6</Title>
-       <Outline>#97b8e2</Outline>
-    </Active>
-    <Inactive>
-       <Text>black</Text>
-    </Inactive>
-</WindowStyle> 
+  <WindowStyle>
+      <Font>Arial   -12</Font>
+      <Width>3</Width>
+      <Height>22</Height>     
+      <Active>
+         <Text>white</Text>
+         <Title>#a8c5e9:#80a7d6</Title>
+         <Outline>#97b8e2</Outline>
+      </Active>
+      <Inactive>
+         <Text>black</Text>
+      </Inactive>
+  </WindowStyle> 
   
   <!-- Behavior of tasklist/taskbar. -->
   <TaskListStyle>
