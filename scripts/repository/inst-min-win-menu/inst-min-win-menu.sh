@@ -13,6 +13,7 @@ apt-get -y --force-yes install menu
 
 # Log
 echo "${GV_LOG} * Install menu, an easy way to get installed programs in the menu automatically."
+echo "${GV_LOG} * For how to use Debian menu, see https://www.debian.org/doc/packaging-manuals/menu.html/ch3.html."
 
 # Note:
 # Check menu-xdg
