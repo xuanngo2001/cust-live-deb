@@ -6,13 +6,12 @@ set -e
 # Variables.
 	SYSTEM=$1
 	CHROOT_DIR=$2
-	DEB_REPO_URL=$3
-
+	
 # Error Handling
   CMD_EXAMPLES=$(printf "%s\n%s\n%s\n" \
-                        "  e.g. $0 <SYSTEM> <CHROOT_DIR> <DEB_REPO_URL>"\
-                        "  e.g. $0 min chroot http://ftp.debian.org/debian/"\
-                        "  e.g. $0 std my-chroot-dir http://localhost/aptly-repo/"\
+                        "  e.g. $0 <SYSTEM> <CHROOT_DIR>"\
+                        "  e.g. $0 min chroot"\
+                        "  e.g. $0 std my-chroot-dir"\
                 )
   if [ "$#" -ne 3 ]; then
     echo "Error: 3 arguments are required. Aborted!"
@@ -32,12 +31,6 @@ set -e
     exit 1;
   fi
     
-  if [ -z "${DEB_REPO_URL}" ]; then
-    echo "Error: Please provide the debian repository URL. Aborted!"
-    echo "${CMD_EXAMPLES}"
-    exit 1;
-  fi
-
   CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
   
 
