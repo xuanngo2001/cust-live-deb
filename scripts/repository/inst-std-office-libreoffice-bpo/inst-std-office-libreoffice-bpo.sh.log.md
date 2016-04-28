@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-std-office-libreoffice-bpo.sh ...
   * After this operation, 287 MB of additional disk space will be used.
-  * After this operation, 42.9 MB of additional disk space will be used.
+  * After this operation, 42.6 MB of additional disk space will be used.
   * After this operation, 16.8 MB of additional disk space will be used.
   * After this operation, 9,672 kB of additional disk space will be used.
   * After this operation, 1,484 kB of additional disk space will be used.
@@ -12,7 +12,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 3635932K. Space Used = 449224K.
+  * Disk size = 3823316K. Space Used = 448836K.
   * The following NEW packages will be installed:
   ```bash
   fonts-opensymbol libabw-0.1-1 libboost-date-time1.55.0 libboost-system1.55.0
@@ -26,7 +26,7 @@
   ure
   coinor-libcbc3 coinor-libcgl1 coinor-libclp1 coinor-libcoinmp1
   coinor-libcoinutils3 coinor-libosi1 libblas-common libblas3 libcolamd2.8.0
-  libgfortran3 liblapack3 libquadmath0 libreoffice-calc lp-solve
+  libgfortran3 liblapack3 libreoffice-calc lp-solve
   libcdr-0.1-1 libfreehand-0.1-1 libmspub-0.1-1 libpagemaker-0.0-0
   libreoffice-draw libreoffice-impress libvisio-0.1-1
   libreoffice-base libreoffice-base-drivers

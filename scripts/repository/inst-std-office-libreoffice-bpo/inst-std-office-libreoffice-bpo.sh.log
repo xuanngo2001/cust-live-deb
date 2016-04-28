@@ -5,34 +5,34 @@ Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://ftp.debian.org jessie InRelease
-Hit http://www.deb-multimedia.org jessie InRelease
 Hit http://ftp.debian.org jessie Release.gpg
-Hit http://www.deb-multimedia.org jessie/main amd64 Packages
-Ign http://mozilla.debian.net jessie-backports InRelease
-Hit http://http.debian.net jessie-backports InRelease
+Hit http://www.deb-multimedia.org jessie InRelease
 Hit http://ftp.debian.org jessie Release
-Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
-Hit http://mozilla.debian.net jessie-backports Release.gpg
+Hit http://www.deb-multimedia.org jessie/main amd64 Packages
+Hit http://http.debian.net jessie-backports InRelease
+Ign http://mozilla.debian.net jessie-backports InRelease
 Hit http://ftp.debian.org jessie/main amd64 Packages
-Hit http://mozilla.debian.net jessie-backports Release
-Get:1 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
+Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
 Hit http://ftp.debian.org jessie/contrib amd64 Packages
-Get:2 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [27.8 kB]
+Hit http://mozilla.debian.net jessie-backports Release.gpg
+Get:1 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
 Hit http://ftp.debian.org jessie/non-free amd64 Packages
-Hit http://mozilla.debian.net jessie-backports/firefox-release amd64 Packages
+Get:2 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [27.8 kB]
+Hit http://mozilla.debian.net jessie-backports Release
 Hit http://ftp.debian.org jessie/contrib Translation-en
+Hit http://mozilla.debian.net jessie-backports/firefox-release amd64 Packages
 Hit http://ftp.debian.org jessie/main Translation-en
 Hit http://ftp.debian.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
-Ign http://mozilla.debian.net jessie-backports/firefox-release Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
-Ign http://mozilla.debian.net jessie-backports/firefox-release Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
+Ign http://mozilla.debian.net jessie-backports/firefox-release Translation-en_US
+Ign http://mozilla.debian.net jessie-backports/firefox-release Translation-en
 Ign http://mozilla.debian.net jessie-backports/firefox-release Translation-en_US.UTF-8
-Fetched 55.6 kB in 3s (14.1 kB/s)
+Fetched 55.6 kB in 5s (10.5 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -65,7 +65,7 @@ The following NEW packages will be installed:
   libreoffice-core libreoffice-style-galaxy libreoffice-writer
   librevenge-0.0-0 libwpd-0.10-10 libwpg-0.3-3 libxslt1.1 libyajl2 uno-libs3
   ure
-0 upgraded, 37 newly installed, 0 to remove and 23 not upgraded.
+0 upgraded, 37 newly installed, 0 to remove and 26 not upgraded.
 Need to get 74.0 MB of archives.
 After this operation, 287 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libboost-date-time1.55.0 amd64 1.55.0+dfsg-3 [41.5 kB]
@@ -106,9 +106,9 @@ Get:35 http://localhost/aptly-repo/ jessie/main libwpd-0.10-10 amd64 0.10.0-2+b1
 Get:36 http://localhost/aptly-repo/ jessie/main libwpg-0.3-3 amd64 0.3.0-3 [74.4 kB]
 Get:37 http://localhost/aptly-repo/ jessie/main libreoffice-writer amd64 1:5.1.1-1~bpo8+1 [7,737 kB]
 Extracting templates from packages: 81%Extracting templates from packages: 100%
-Fetched 74.0 MB in 1s (41.8 MB/s)
+Fetched 74.0 MB in 1s (42.0 MB/s)
 Selecting previously unselected package libboost-date-time1.55.0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41539 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 44171 files and directories currently installed.)
 Preparing to unpack .../libboost-date-time1.55.0_1.55.0+dfsg-3_amd64.deb ...
 Unpacking libboost-date-time1.55.0:amd64 (1.55.0+dfsg-3) ...
 Selecting previously unselected package libboost-system1.55.0:amd64.
@@ -270,38 +270,34 @@ Reading state information...
 The following extra packages will be installed:
   coinor-libcbc3 coinor-libcgl1 coinor-libclp1 coinor-libcoinmp1
   coinor-libcoinutils3 coinor-libosi1 libblas-common libblas3 libcolamd2.8.0
-  libgfortran3 liblapack3 libquadmath0 lp-solve
+  libgfortran3 liblapack3 lp-solve
 Suggested packages:
   ocl-icd-libopencl1
 The following NEW packages will be installed:
   coinor-libcbc3 coinor-libcgl1 coinor-libclp1 coinor-libcoinmp1
   coinor-libcoinutils3 coinor-libosi1 libblas-common libblas3 libcolamd2.8.0
-  libgfortran3 liblapack3 libquadmath0 libreoffice-calc lp-solve
-0 upgraded, 14 newly installed, 0 to remove and 23 not upgraded.
-Need to get 12.0 MB of archives.
-After this operation, 42.9 MB of additional disk space will be used.
+  libgfortran3 liblapack3 libreoffice-calc lp-solve
+0 upgraded, 13 newly installed, 0 to remove and 26 not upgraded.
+Need to get 11.9 MB of archives.
+After this operation, 42.6 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libcolamd2.8.0 amd64 1:4.2.1-3 [20.4 kB]
-Get:2 http://localhost/aptly-repo/ jessie/main libquadmath0 amd64 4.9.2-10 [129 kB]
-Get:3 http://localhost/aptly-repo/ jessie/main libgfortran3 amd64 4.9.2-10 [255 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main libblas-common amd64 1.2.20110419-10 [8,496 B]
-Get:5 http://localhost/aptly-repo/ jessie/main libblas3 amd64 1.2.20110419-10 [167 kB]
-Get:6 http://localhost/aptly-repo/ jessie/main liblapack3 amd64 3.5.0-4 [1,852 kB]
-Get:7 http://localhost/aptly-repo/ jessie/main lp-solve amd64 5.5.0.13-7+b1 [273 kB]
-Get:8 http://localhost/aptly-repo/ jessie/main coinor-libcoinutils3 amd64 2.9.15-3 [477 kB]
-Get:9 http://localhost/aptly-repo/ jessie/main coinor-libosi1 amd64 0.106.9-1 [303 kB]
-Get:10 http://localhost/aptly-repo/ jessie/main coinor-libclp1 amd64 1.15.10-1 [747 kB]
-Get:11 http://localhost/aptly-repo/ jessie/main coinor-libcgl1 amd64 0.58.9-1 [438 kB]
-Get:12 http://localhost/aptly-repo/ jessie/main coinor-libcbc3 amd64 2.8.12-1 [670 kB]
-Get:13 http://localhost/aptly-repo/ jessie/main coinor-libcoinmp1 amd64 1.7.6+dfsg1-1 [32.6 kB]
-Get:14 http://localhost/aptly-repo/ jessie/main libreoffice-calc amd64 1:5.1.1-1~bpo8+1 [6,638 kB]
-Fetched 12.0 MB in 0s (35.4 MB/s)
+Get:2 http://localhost/aptly-repo/ jessie/main libgfortran3 amd64 4.9.2-10 [255 kB]
+Get:3 http://localhost/aptly-repo/ jessie/main libblas-common amd64 1.2.20110419-10 [8,496 B]
+Get:4 http://localhost/aptly-repo/ jessie/main libblas3 amd64 1.2.20110419-10 [167 kB]
+Get:5 http://localhost/aptly-repo/ jessie/main liblapack3 amd64 3.5.0-4 [1,852 kB]
+Get:6 http://localhost/aptly-repo/ jessie/main lp-solve amd64 5.5.0.13-7+b1 [273 kB]
+Get:7 http://localhost/aptly-repo/ jessie/main coinor-libcoinutils3 amd64 2.9.15-3 [477 kB]
+Get:8 http://localhost/aptly-repo/ jessie/main coinor-libosi1 amd64 0.106.9-1 [303 kB]
+Get:9 http://localhost/aptly-repo/ jessie/main coinor-libclp1 amd64 1.15.10-1 [747 kB]
+Get:10 http://localhost/aptly-repo/ jessie/main coinor-libcgl1 amd64 0.58.9-1 [438 kB]
+Get:11 http://localhost/aptly-repo/ jessie/main coinor-libcbc3 amd64 2.8.12-1 [670 kB]
+Get:12 http://localhost/aptly-repo/ jessie/main coinor-libcoinmp1 amd64 1.7.6+dfsg1-1 [32.6 kB]
+Get:13 http://localhost/aptly-repo/ jessie/main libreoffice-calc amd64 1:5.1.1-1~bpo8+1 [6,638 kB]
+Fetched 11.9 MB in 0s (39.4 MB/s)
 Selecting previously unselected package libcolamd2.8.0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45924 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48556 files and directories currently installed.)
 Preparing to unpack .../libcolamd2.8.0_1%3a4.2.1-3_amd64.deb ...
 Unpacking libcolamd2.8.0:amd64 (1:4.2.1-3) ...
-Selecting previously unselected package libquadmath0:amd64.
-Preparing to unpack .../libquadmath0_4.9.2-10_amd64.deb ...
-Unpacking libquadmath0:amd64 (4.9.2-10) ...
 Selecting previously unselected package libgfortran3:amd64.
 Preparing to unpack .../libgfortran3_4.9.2-10_amd64.deb ...
 Unpacking libgfortran3:amd64 (4.9.2-10) ...
@@ -342,7 +338,6 @@ Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for desktop-file-utils (0.22-1) ...
 Processing triggers for mime-support (3.58) ...
 Setting up libcolamd2.8.0:amd64 (1:4.2.1-3) ...
-Setting up libquadmath0:amd64 (4.9.2-10) ...
 Setting up libgfortran3:amd64 (4.9.2-10) ...
 Setting up libblas-common (1.2.20110419-10) ...
 Setting up libblas3 (1.2.20110419-10) ...
@@ -371,7 +366,7 @@ Recommended packages:
 The following NEW packages will be installed:
   libcdr-0.1-1 libfreehand-0.1-1 libmspub-0.1-1 libpagemaker-0.0-0
   libreoffice-draw libreoffice-impress libvisio-0.1-1
-0 upgraded, 7 newly installed, 0 to remove and 23 not upgraded.
+0 upgraded, 7 newly installed, 0 to remove and 26 not upgraded.
 Need to get 4,434 kB of archives.
 After this operation, 16.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libcdr-0.1-1 amd64 0.1.0-3 [388 kB]
@@ -381,9 +376,9 @@ Get:4 http://localhost/aptly-repo/ jessie/main libpagemaker-0.0-0 amd64 0.0.1-1 
 Get:5 http://localhost/aptly-repo/ jessie/main libvisio-0.1-1 amd64 0.1.0-2 [245 kB]
 Get:6 http://localhost/aptly-repo/ jessie/main libreoffice-draw amd64 1:5.1.1-1~bpo8+1 [2,502 kB]
 Get:7 http://localhost/aptly-repo/ jessie/main libreoffice-impress amd64 1:5.1.1-1~bpo8+1 [1,004 kB]
-Fetched 4,434 kB in 0s (28.2 MB/s)
+Fetched 4,434 kB in 0s (36.3 MB/s)
 Selecting previously unselected package libcdr-0.1-1.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46031 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48660 files and directories currently installed.)
 Preparing to unpack .../libcdr-0.1-1_0.1.0-3_amd64.deb ...
 Unpacking libcdr-0.1-1 (0.1.0-3) ...
 Selecting previously unselected package libfreehand-0.1-1.
@@ -420,7 +415,7 @@ Building dependency tree...
 Reading state information...
 libreoffice-draw is already the newest version.
 libreoffice-draw set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 23 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 26 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -435,14 +430,14 @@ Recommended packages:
   libreoffice-java-common libreoffice-sdbc-firebird libreoffice-sdbc-hsqldb
 The following NEW packages will be installed:
   libreoffice-base libreoffice-base-drivers
-0 upgraded, 2 newly installed, 0 to remove and 23 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 26 not upgraded.
 Need to get 2,139 kB of archives.
 After this operation, 9,672 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libreoffice-base-drivers amd64 1:5.1.1-1~bpo8+1 [532 kB]
 Get:2 http://localhost/aptly-repo/ jessie/main libreoffice-base amd64 1:5.1.1-1~bpo8+1 [1,607 kB]
-Fetched 2,139 kB in 0s (34.2 MB/s)
+Fetched 2,139 kB in 0s (34.8 MB/s)
 Selecting previously unselected package libreoffice-base-drivers.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46106 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48735 files and directories currently installed.)
 Preparing to unpack .../libreoffice-base-drivers_1%3a5.1.1-1~bpo8+1_amd64.deb ...
 Unpacking libreoffice-base-drivers (1:5.1.1-1~bpo8+1) ...
 Selecting previously unselected package libreoffice-base.
@@ -460,13 +455,13 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   libreoffice-math
-0 upgraded, 1 newly installed, 0 to remove and 23 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 26 not upgraded.
 Need to get 370 kB of archives.
 After this operation, 1,484 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/ jessie/main libreoffice-math amd64 1:5.1.1-1~bpo8+1 [370 kB]
-Fetched 370 kB in 0s (17.9 MB/s)
+Fetched 370 kB in 0s (23.8 MB/s)
 Selecting previously unselected package libreoffice-math.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46170 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48799 files and directories currently installed.)
 Preparing to unpack .../libreoffice-math_1%3a5.1.1-1~bpo8+1_amd64.deb ...
 Unpacking libreoffice-math (1:5.1.1-1~bpo8+1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
@@ -481,4 +476,4 @@ CLDS: * Install Office Suite: Drawing.
 CLDS: * Install Office Suite: Database.
 CLDS: * Install Office Suite: Equation.
 CLDS: * https://wiki.documentfoundation.org/ReleasePlan
-CLDS: * Disk size = 3635932K. Space Used = 449224K.
+CLDS: * Disk size = 3823316K. Space Used = 448836K.

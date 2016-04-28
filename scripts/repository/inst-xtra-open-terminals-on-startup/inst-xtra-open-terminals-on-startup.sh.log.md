@@ -6,7 +6,7 @@
   * Install xterm for resize.
   * Copy open-terminal.sh in /root/cld.
   * Add jwmrc-startup-open-terminals.sh in /root/cld/jwmrc-startup.sh.
-  * Disk size = 4122796K. Space Used = 2936K.
+  * Disk size = 4285024K. Space Used = 2924K.
   * The following NEW packages will be installed:
   ```bash
   libutempter0 xbitmaps xterm

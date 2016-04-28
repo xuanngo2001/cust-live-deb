@@ -1,55 +1,65 @@
 CLDS:>>>>>>>>> Running inst-min-con-udevil-bpo.sh ...
 Hit http://localhost jessie InRelease
+Hit http://localhost jessie/contrib amd64 Packages
+Hit http://localhost jessie/non-free amd64 Packages
 Hit http://localhost jessie/main amd64 Packages
+Ign http://localhost jessie/contrib Translation-en_US
+Ign http://localhost jessie/contrib Translation-en
+Ign http://localhost jessie/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
+Ign http://localhost jessie/non-free Translation-en_US
+Ign http://localhost jessie/non-free Translation-en
+Ign http://localhost jessie/non-free Translation-en_US.UTF-8
 Hit http://www.deb-multimedia.org jessie InRelease
-Ign http://ftp.debian.org jessie InRelease
-Hit http://ftp.debian.org jessie Release.gpg
 Hit http://www.deb-multimedia.org jessie/main amd64 Packages
-Hit http://ftp.debian.org jessie Release
-Hit http://ftp.debian.org jessie/main amd64 Packages
 Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
-Get:1 http://http.debian.net jessie-backports InRelease [166 kB]
-Hit http://ftp.debian.org jessie/contrib amd64 Packages
-Hit http://ftp.debian.org jessie/non-free amd64 Packages
-Get:2 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
-Hit http://ftp.debian.org jessie/contrib Translation-en
-Get:3 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [27.8 kB]
-Hit http://ftp.debian.org jessie/main Translation-en
-Hit http://ftp.debian.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en
 Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Fetched 222 kB in 4s (55.3 kB/s)
+Hit http://http.debian.net jessie-backports InRelease
+Get:1 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
+Get:2 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [27.8 kB]
+Fetched 55.6 kB in 5s (9,282 B/s)
 Reading package lists...
+W: Duplicate sources.list entry http://localhost/aptly-repo/ jessie/main amd64 Packages (/var/lib/apt/lists/localhost_aptly-repo_dists_jessie_main_binary-amd64_Packages)
+W: You may want to run apt-get update to correct these problems
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following extra packages will be installed:
+  libglib2.0-0
 Suggested packages:
   eject cifs-utils curlftpfs sshfs
 Recommended packages:
-  udisks2 zenity pmount
+  libglib2.0-data shared-mime-info xdg-user-dirs udisks2 zenity pmount
 The following NEW packages will be installed:
-  udevil
-0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
-Need to get 90.9 kB of archives.
-After this operation, 503 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main udevil amd64 0.4.4-1~bpo8+1 [90.9 kB]
-Fetched 90.9 kB in 0s (0 B/s)
+  libglib2.0-0 udevil
+0 upgraded, 2 newly installed, 0 to remove and 10 not upgraded.
+Need to get 2,796 kB of archives.
+After this operation, 5,539 kB of additional disk space will be used.
+Get:1 http://http.debian.net/debian/ jessie-backports/main libglib2.0-0 amd64 2.48.0-1~bpo8+1 [2,705 kB]
+Get:2 http://http.debian.net/debian/ jessie-backports/main udevil amd64 0.4.4-1~bpo8+1 [90.9 kB]
+Fetched 2,796 kB in 16s (170 kB/s)
+Selecting previously unselected package libglib2.0-0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16494 files and directories currently installed.)
+Preparing to unpack .../libglib2.0-0_2.48.0-1~bpo8+1_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.48.0-1~bpo8+1) ...
 Selecting previously unselected package udevil.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18668 files and directories currently installed.)
 Preparing to unpack .../udevil_0.4.4-1~bpo8+1_amd64.deb ...
 Unpacking udevil (0.4.4-1~bpo8+1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
+Setting up libglib2.0-0:amd64 (2.48.0-1~bpo8+1) ...
+No schema files found: doing nothing.
 Setting up udevil (0.4.4-1~bpo8+1) ...
+Processing triggers for libc-bin (2.19-18+deb8u4) ...
 CLDS: * Install udevil version 0.4.4.
 CLDS: * Install udevil to auto mount USB devices.
 CLDS: * Set devmon to auto start on startup.
 CLDS: * Need ntfs-3g driver to be able to read and write ntfs partition.
 CLDS: * Need exfat-fuse to be able to read and write exfat partition.
-CLDS: * Disk size = 1923468K. Space Used = 392K.
+CLDS: * Disk size = 1779220K. Space Used = 8048K.

@@ -5,7 +5,7 @@
   * After this operation, 63.4 MB disk space will be freed.
   * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox.
   * Install VirtualBox 5.0.16r105871.
-  * Disk size = 4438680K. Space Used = 232600K.
+  * Disk size = 4493916K. Space Used = 232608K.
   * The following NEW packages will be installed:
   ```bash
   cpp-4.8 dkms gcc-4.8 libasan0 libc-dev-bin libc6-dev libgcc-4.8-dev
