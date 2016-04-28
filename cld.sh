@@ -27,7 +27,7 @@ DEB_REPO_URL=$(echo $2 | tr '[:upper:]' '[:lower:]')
 	CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 	
 	./cld-debootstrap.sh "${CHROOT_DIR}" "${DEB_REPO_URL}"
-	./cld-chroot.sh "${SYSTEM}" "${CHROOT_DIR}"  "${DEB_REPO_URL}"
+	./cld-chroot.sh "${SYSTEM}" "${CHROOT_DIR}"
 	./cld-backup-logs.sh "${CHROOT_DIR}/root/scripts/logs" "${PWD}"
 	./cld-mkiso.sh "${SYSTEM}" "${CHROOT_DIR}"
 
