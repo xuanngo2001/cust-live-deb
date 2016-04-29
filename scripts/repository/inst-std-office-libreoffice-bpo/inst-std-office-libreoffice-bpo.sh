@@ -11,6 +11,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 GF_ADD_SOURCE_LIST "deb http://http.debian.net/debian jessie-backports main"
 apt-get update
 
+# Explicitly install dependent packages.
+apt-get -t jessie-backports -y --force-yes install libpagemaker-0.0-0
+
+# Install libreoffice.
 apt-get -t jessie-backports -y --force-yes install libreoffice-writer
 apt-get -t jessie-backports -y --force-yes install libreoffice-calc
 apt-get -t jessie-backports -y --force-yes install libreoffice-impress
