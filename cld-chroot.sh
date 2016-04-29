@@ -13,7 +13,7 @@ set -e
                         "  e.g. $0 min chroot"\
                         "  e.g. $0 std my-chroot-dir"\
                 )
-  if [ "$#" -ne 3 ]; then
+  if [ "$#" -ne 2 ]; then
     echo "Error: 3 arguments are required. Aborted!"
     echo "${CMD_EXAMPLES}"
     exit 1;
