@@ -33,6 +33,7 @@ DEB_REPO_URL=$2
 
 # Add repository components(i.e. contrib, non-free)
   sed -i 's/ main/ main contrib non-free/' ${CHROOT_DIR}/etc/apt/sources.list
+  cp -a ${CHROOT_DIR}/etc/apt/sources.list ${CHROOT_DIR}/etc/apt/sources.list.live
 
 # Copy all scripts, setting files and binary to live system.
   cp -a scripts ${CHROOT_DIR}/root
