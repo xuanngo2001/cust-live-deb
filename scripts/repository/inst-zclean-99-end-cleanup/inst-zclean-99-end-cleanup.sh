@@ -9,10 +9,6 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
-# Clean APT.
-apt-get -y --force-yes autoremove
-apt-get clean
-
 rm -f /var/lib/dbus/machine-id
 
 # Delete tmp/.
