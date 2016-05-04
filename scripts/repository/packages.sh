@@ -10,7 +10,7 @@ while IFS='' read -r SCRIPT_FILE || [[ -n "$SCRIPT_FILE" ]]; do
   echo "# ${SCRIPT_FILE}" >> "${PACKAGE_LIST_FILE}"
   
   # Extract package names from apt-get
-  APT_GET_PACKAGES=$(grep '^apt-get .* install ' "${SCRIPT_FILE}" || true) # If apt-get not found, still return true to prevent exiting this script.
+  APT_GET_PACKAGES=$(grep '^ *apt-get .* install ' "${SCRIPT_FILE}" || true) # If apt-get not found, still return true to prevent exiting this script.
   APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | sed 's/.* install //' | tr ' ' '\n' )
   echo "${APT_GET_PACKAGES}" >> "${PACKAGE_LIST_FILE}"
  
