@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install backport version of libmtp9 to support the most smartphones.
-GF_ADD_SOURCE_LIST "deb http://http.debian.net/debian jessie-backports main"
+GF_ADD_SOURCE_LIST live "deb http://http.debian.net/debian jessie-backports main"
 apt-get update
 apt-get -t jessie-backports -y --force-yes install libmtp9
 

@@ -63,11 +63,39 @@ export -f GF_LOG_TOTAL_SIZE
 # Add repository to sources.list
 GF_ADD_SOURCE_LIST()
 {
-  # Usage: GF_ADD_SOURCE_LIST "deb http://http.debian.net/debian jessie-backports main"
-  local SOURCES_LINE=$1
-  local SOURCES_LIST=/etc/apt/sources.list
-  if ! grep -qF "${SOURCES_LINE}" "${SOURCES_LIST}"; then
-    echo "${SOURCES_LINE}" >> "${SOURCES_LIST}"
-  fi
+  # Usage: GF_ADD_SOURCE_LIST tmp "deb http://http.debian.net/debian jessie-backports main"
+
+	TYPE=$(echo "$1" | tr '[:upper:]' '[:lower:]')
+	SOURCE_LINE=$2
+
+	# Which source list file to use?
+	  SOURCE_FILE=""
+	  case "${TYPE}" in
+	    
+	    tmp)
+	      SOURCE_FILE=/etc/apt/sources.list
+	      ;;
+	  
+	    live)
+	      SOURCE_FILE=/etc/apt/sources.list.live
+	      ;;
+	      
+	    *)
+	      echo "${SCRIPT_NAME}: Error: Unknown type=>${TYPE}"
+	      exit 1
+	      ;;
+	  esac
+
+
+	# Add source list to corresponding file.
+	  # If source list file doesn't, then create it.
+	  if [ ! -f "${SOURCE_FILE}" ]; then
+	    > "${SOURCE_FILE}"
+	  fi
+	  
+	  # Add entry in source list file.
+	  if ! grep -qF "${SOURCE_LINE}" "${SOURCE_FILE}"; then
+	    echo "${SOURCE_LINE}" >> "${SOURCE_FILE}"
+	  fi
 }
 export -f GF_ADD_SOURCE_LIST

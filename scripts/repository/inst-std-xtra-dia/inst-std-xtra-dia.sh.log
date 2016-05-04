@@ -2,40 +2,17 @@ CLDS:>>>>>>>>> Running inst-std-xtra-dia.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following extra packages will be installed:
-  dia-common dia-libs
-Recommended packages:
-  gsfonts-x11 dia-shapes
-The following NEW packages will be installed:
-  dia dia-common dia-libs
-0 upgraded, 3 newly installed, 0 to remove and 1 not upgraded.
-Need to get 4,958 kB of archives.
-After this operation, 21.2 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main dia-common all 0.97.3-1 [4,045 kB]
-Get:2 http://localhost/aptly-repo/ jessie/main dia-libs amd64 0.97.3-1 [716 kB]
-Get:3 http://localhost/aptly-repo/ jessie/main dia amd64 0.97.3-1 [198 kB]
-Fetched 4,958 kB in 0s (36.0 MB/s)
-Selecting previously unselected package dia-common.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54259 files and directories currently installed.)
-Preparing to unpack .../dia-common_0.97.3-1_all.deb ...
-Unpacking dia-common (0.97.3-1) ...
-Selecting previously unselected package dia-libs.
-Preparing to unpack .../dia-libs_0.97.3-1_amd64.deb ...
-Unpacking dia-libs (0.97.3-1) ...
-Selecting previously unselected package dia.
-Preparing to unpack .../dia_0.97.3-1_amd64.deb ...
-Unpacking dia (0.97.3-1) ...
-Processing triggers for desktop-file-utils (0.22-1) ...
-Processing triggers for mime-support (3.58) ...
-Processing triggers for hicolor-icon-theme (0.13-1) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Processing triggers for menu (2.1.47) ...
-Setting up dia-common (0.97.3-1) ...
-Setting up dia-libs (0.97.3-1) ...
-Setting up dia (0.97.3-1) ...
-update-alternatives: using /usr/bin/dia-normal to provide /usr/bin/dia (dia) in auto mode
-update-alternatives: using /usr/bin/dia-normal-integrated to provide /usr/bin/dia (dia) in auto mode
-Processing triggers for menu (2.1.47) ...
-CLDS: * Install Dia to draw diagrams.
-CLDS: * Insert Dia menu in Graphics.
-CLDS: * Disk size = 4171620K. Space Used = 25572K.
+You might want to run 'apt-get -f install' to correct these:
+The following packages have unmet dependencies:
+ dia : Depends: libart-2.0-2 (>= 2.3.17) but it is not going to be installed
+       Depends: dia-common (= 0.97.3-1) but it is not going to be installed
+       Depends: dia-libs (= 0.97.3-1) but it is not going to be installed
+ projectlibre : Depends: openjdk-7-jre but it is not going to be installed or
+                         openjdk-6-jre but it is not installable or
+                         openjdk-8-jre but it is not going to be installed or
+                         sun-java6-jre but it is not installable or
+                         java7-runtime or
+                         java6-runtime or
+                         java8-runtime
+E: Unmet dependencies. Try 'apt-get -f install' with no packages (or specify a solution).
+CLDS: * Disk size = 3547792K. Space Used = 4K.

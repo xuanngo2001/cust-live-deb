@@ -10,13 +10,16 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install Virtualbox source repository
-GF_ADD_SOURCE_LIST "deb http://download.virtualbox.org/virtualbox/debian jessie contrib"
+GF_ADD_SOURCE_LIST live "deb http://download.virtualbox.org/virtualbox/debian jessie contrib"
 apt-key add oracle_vbox.asc
 apt-get update
 
 # Install required packages to compile VirtualBox.
 PKGS_LIST="dkms libc6-dev linux-headers-$(uname -r)"
 apt-get -y --force-yes install ${PKGS_LIST}
+
+# Explicitly install dependent packages.
+apt-get -y --force-yes install libqt4-opengl
 
 # Install VirtualBox
 apt-get -y --force-yes install virtualbox-5.0

@@ -4,90 +4,33 @@ Building dependency tree...
 Reading state information...
 libc6-dev is already the newest version.
 libc6-dev set to manually installed.
-The following extra packages will be installed:
-  cpp-4.8 gcc-4.8 libasan0 libgcc-4.8-dev linux-compiler-gcc-4.8-x86
-  linux-headers-3.16.0-4-common linux-kbuild-3.16 patch
-Suggested packages:
-  gcc-4.8-locales gcc-4.8-multilib gcc-4.8-doc libgcc1-dbg libgomp1-dbg
-  libitm1-dbg libatomic1-dbg libasan0-dbg libtsan0-dbg libquadmath0-dbg ed
-  diffutils-doc
-Recommended packages:
-  fakeroot linux-headers-686-pae linux-headers-amd64 linux-headers-generic
-  linux-headers linux-image
-The following NEW packages will be installed:
-  cpp-4.8 dkms gcc-4.8 libasan0 libgcc-4.8-dev linux-compiler-gcc-4.8-x86
-  linux-headers-3.16.0-4-amd64 linux-headers-3.16.0-4-common linux-kbuild-3.16
-  patch
-0 upgraded, 10 newly installed, 0 to remove and 1 not upgraded.
-Need to get 16.8 MB of archives.
-After this operation, 62.2 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main libasan0 amd64 4.8.4-1 [63.3 kB]
-Get:2 http://localhost/aptly-repo/ jessie/main patch amd64 2.7.5-1 [109 kB]
-Get:3 http://localhost/aptly-repo/ jessie/main cpp-4.8 amd64 4.8.4-1 [4,577 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main dkms all 2.2.0.3-2 [70.9 kB]
-Get:5 http://localhost/aptly-repo/ jessie/main libgcc-4.8-dev amd64 4.8.4-1 [1,689 kB]
-Get:6 http://localhost/aptly-repo/ jessie/main gcc-4.8 amd64 4.8.4-1 [4,787 kB]
-Get:7 http://localhost/aptly-repo/ jessie/main linux-compiler-gcc-4.8-x86 amd64 3.16.7-ckt25-2 [323 kB]
-Get:8 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-common amd64 3.16.7-ckt25-2 [4,519 kB]
-Get:9 http://localhost/aptly-repo/ jessie/main linux-kbuild-3.16 amd64 3.16.7-ckt20-1 [174 kB]
-Get:10 http://localhost/aptly-repo/ jessie/main linux-headers-3.16.0-4-amd64 amd64 3.16.7-ckt25-2 [450 kB]
-Fetched 16.8 MB in 0s (41.1 MB/s)
-Selecting previously unselected package libasan0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56776 files and directories currently installed.)
-Preparing to unpack .../libasan0_4.8.4-1_amd64.deb ...
-Unpacking libasan0:amd64 (4.8.4-1) ...
-Selecting previously unselected package patch.
-Preparing to unpack .../patch_2.7.5-1_amd64.deb ...
-Unpacking patch (2.7.5-1) ...
-Selecting previously unselected package cpp-4.8.
-Preparing to unpack .../cpp-4.8_4.8.4-1_amd64.deb ...
-Unpacking cpp-4.8 (4.8.4-1) ...
-Selecting previously unselected package dkms.
-Preparing to unpack .../dkms_2.2.0.3-2_all.deb ...
-Unpacking dkms (2.2.0.3-2) ...
-Selecting previously unselected package libgcc-4.8-dev:amd64.
-Preparing to unpack .../libgcc-4.8-dev_4.8.4-1_amd64.deb ...
-Unpacking libgcc-4.8-dev:amd64 (4.8.4-1) ...
-Selecting previously unselected package gcc-4.8.
-Preparing to unpack .../gcc-4.8_4.8.4-1_amd64.deb ...
-Unpacking gcc-4.8 (4.8.4-1) ...
-Selecting previously unselected package linux-compiler-gcc-4.8-x86.
-Preparing to unpack .../linux-compiler-gcc-4.8-x86_3.16.7-ckt25-2_amd64.deb ...
-Unpacking linux-compiler-gcc-4.8-x86 (3.16.7-ckt25-2) ...
-Selecting previously unselected package linux-headers-3.16.0-4-common.
-Preparing to unpack .../linux-headers-3.16.0-4-common_3.16.7-ckt25-2_amd64.deb ...
-Unpacking linux-headers-3.16.0-4-common (3.16.7-ckt25-2) ...
-Selecting previously unselected package linux-kbuild-3.16.
-Preparing to unpack .../linux-kbuild-3.16_3.16.7-ckt20-1_amd64.deb ...
-Unpacking linux-kbuild-3.16 (3.16.7-ckt20-1) ...
-Selecting previously unselected package linux-headers-3.16.0-4-amd64.
-Preparing to unpack .../linux-headers-3.16.0-4-amd64_3.16.7-ckt25-2_amd64.deb ...
-Unpacking linux-headers-3.16.0-4-amd64 (3.16.7-ckt25-2) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up libasan0:amd64 (4.8.4-1) ...
-Setting up patch (2.7.5-1) ...
-Setting up cpp-4.8 (4.8.4-1) ...
-Setting up dkms (2.2.0.3-2) ...
-Setting up libgcc-4.8-dev:amd64 (4.8.4-1) ...
-Setting up gcc-4.8 (4.8.4-1) ...
-Setting up linux-compiler-gcc-4.8-x86 (3.16.7-ckt25-2) ...
-Setting up linux-headers-3.16.0-4-common (3.16.7-ckt25-2) ...
-Setting up linux-kbuild-3.16 (3.16.7-ckt20-1) ...
-Setting up linux-headers-3.16.0-4-amd64 (3.16.7-ckt25-2) ...
-Examining /etc/kernel/header_postinst.d.
-run-parts: executing /etc/kernel/header_postinst.d/dkms 3.16.0-4-amd64
-Processing triggers for libc-bin (2.19-18+deb8u4) ...
+You might want to run 'apt-get -f install' to correct these:
+The following packages have unmet dependencies:
+ dkms : Depends: patch but it is not going to be installed
+ linux-headers-3.16.0-4-amd64 : Depends: linux-headers-3.16.0-4-common (= 3.16.7-ckt25-2) but it is not going to be installed
+                                Depends: linux-kbuild-3.16 but it is not going to be installed
+                                Depends: linux-compiler-gcc-4.8-x86 but it is not going to be installed
+ projectlibre : Depends: openjdk-7-jre but it is not going to be installed or
+                         openjdk-6-jre but it is not installable or
+                         openjdk-8-jre but it is not going to be installed or
+                         sun-java6-jre but it is not installable or
+                         java7-runtime or
+                         java6-runtime or
+                         java8-runtime
+E: Unmet dependencies. Try 'apt-get -f install' with no packages (or specify a solution).
 Verifying archive integrity... All good.
 Uncompressing VirtualBox 5.0.16 Guest Additions for Linux............
 VirtualBox Guest Additions installer
 Copying additional installer modules ...
 Installing additional modules ...
-Removing existing VirtualBox DKMS kernel modules ...done.
 Removing existing VirtualBox non-DKMS kernel modules ...done.
-Building the VirtualBox Guest Additions kernel modules ...done.
-Doing non-kernel setup of the Guest Additions ...done.
-You should restart your guest to make sure the new modules are actually used
+Building the VirtualBox Guest Additions kernel modules
+The headers for the current running kernel were not found. If the following
+module compilation fails then this could be the reason.
 
+Building the main Guest Additions module ...fail!
+(Look at /var/log/vboxadd-install.log to find out what went wrong)
+Doing non-kernel setup of the Guest Additions ...done.
 Installing the Window System drivers
 Installing X.Org Server 1.16 modules ...done.
 Setting up the Window System to use the Guest Additions ...done.
@@ -99,50 +42,37 @@ Installing graphics libraries and desktop services components ...done.
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following packages were automatically installed and are no longer required:
-  cpp-4.8 gcc-4.8 libasan0 libgcc-4.8-dev linux-compiler-gcc-4.8-x86
-  linux-headers-3.16.0-4-common linux-kbuild-3.16 patch
-Use 'apt-get autoremove' to remove them.
-The following packages will be REMOVED:
-  dkms* g++* g++-4.9* libc6-dev* libstdc++-4.9-dev*
-  linux-headers-3.16.0-4-amd64*
-0 upgraded, 0 newly installed, 6 to remove and 1 not upgraded.
-After this operation, 60.5 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67781 files and directories currently installed.)
-Removing dkms (2.2.0.3-2) ...
-Purging configuration files for dkms (2.2.0.3-2) ...
-dpkg: warning: while removing dkms, directory '/var/lib/dkms' not empty so not removed
-Removing g++ (4:4.9.2-2) ...
-Removing g++-4.9 (4.9.2-10) ...
-Removing libstdc++-4.9-dev:amd64 (4.9.2-10) ...
-Removing libc6-dev:amd64 (2.19-18+deb8u4) ...
-Removing linux-headers-3.16.0-4-amd64 (3.16.7-ckt25-2) ...
-Processing triggers for man-db (2.7.0.2-5) ...
+Package 'dkms' is not installed, so not removed
+Package 'linux-headers-3.16.0-4-amd64' is not installed, so not removed
+You might want to run 'apt-get -f install' to correct these:
+The following packages have unmet dependencies:
+ libstdc++-4.9-dev : Depends: libc6-dev (>= 2.13-5) but it is not going to be installed
+ projectlibre : Depends: openjdk-7-jre but it is not going to be installed or
+                         openjdk-6-jre but it is not installable or
+                         openjdk-8-jre but it is not going to be installed or
+                         sun-java6-jre but it is not installable or
+                         java7-runtime or
+                         java6-runtime or
+                         java8-runtime
+E: Unmet dependencies. Try 'apt-get -f install' with no packages (or specify a solution).
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following packages will be REMOVED:
-  cpp-4.8 gcc-4.8 libasan0 libc-dev-bin libgcc-4.8-dev
-  linux-compiler-gcc-4.8-x86 linux-headers-3.16.0-4-common linux-kbuild-3.16
-  linux-libc-dev patch
-0 upgraded, 0 newly installed, 10 to remove and 1 not upgraded.
-After this operation, 63.4 MB disk space will be freed.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60010 files and directories currently installed.)
-Removing linux-compiler-gcc-4.8-x86 (3.16.7-ckt25-2) ...
-Removing gcc-4.8 (4.8.4-1) ...
-Removing cpp-4.8 (4.8.4-1) ...
-Removing libgcc-4.8-dev:amd64 (4.8.4-1) ...
-Removing libasan0:amd64 (4.8.4-1) ...
-Removing libc-dev-bin (2.19-18+deb8u4) ...
-Removing linux-headers-3.16.0-4-common (3.16.7-ckt25-2) ...
-Removing linux-kbuild-3.16 (3.16.7-ckt20-1) ...
-Removing linux-libc-dev:amd64 (3.16.7-ckt25-2) ...
-Removing patch (2.7.5-1) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Processing triggers for libc-bin (2.19-18+deb8u4) ...
+You might want to run 'apt-get -f install' to correct these.
+The following packages have unmet dependencies:
+ projectlibre : Depends: openjdk-7-jre but it is not installed or
+                         openjdk-6-jre but it is not installable or
+                         openjdk-8-jre but it is not installed or
+                         sun-java6-jre but it is not installable or
+                         java7-runtime or
+                         java6-runtime or
+                         java8-runtime
+E: Unmet dependencies. Try using -f.
+libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file '/lib/modules/3.16.0-4-amd64/modules.dep.bin'
+modinfo: ERROR: Module alias vboxguest not found.
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * Install dkms, libc6-dev, linux-headers-3.16.0-4-amd64 to compile VirtualBox guest additions.
-CLDS: * VirtualBox guest additions installed: version: 5.0.16.
+CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 4261308K. Space Used = -23996K.
+CLDS: * Disk size = 3641988K. Space Used = 16832K.

@@ -1,75 +1,87 @@
 CLDS:>>>>>>>>> Running inst-xtra-cld-dev-tools-aptly.sh ...
-Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.he403WLPiu --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d/deb-multimedia-keyring.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-security-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-stable.gpg --keyring /etc/apt/trusted.gpg.d/pkg-mozilla-archive-keyring.gpg --keyserver keys.gnupg.net --recv-keys E083A3782A194991
+Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.RqhmYU6SlW --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d/deb-multimedia-keyring.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-security-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-stable.gpg --keyring /etc/apt/trusted.gpg.d/pkg-mozilla-archive-keyring.gpg --keyserver keys.gnupg.net --recv-keys E083A3782A194991
 gpg: requesting key 2A194991 from hkp server keys.gnupg.net
 gpg: key 2A194991: public key "Andrey Smirnov <me@smira.ru>" imported
 gpg: Total number processed: 1
 gpg:               imported: 1  (RSA: 1)
 Hit http://localhost jessie InRelease
+Hit http://localhost jessie-backports InRelease
+Hit http://localhost jessie-updates InRelease
+Hit http://localhost nightly InRelease
 Hit http://localhost jessie/main amd64 Packages
+Hit http://localhost jessie/contrib amd64 Packages
+Hit http://localhost jessie/non-free amd64 Packages
+Hit http://localhost jessie-backports/main amd64 Packages
+Ign http://localhost jessie/contrib Translation-en_US
+Ign http://localhost jessie/contrib Translation-en
+Ign http://localhost jessie/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
+Ign http://localhost jessie/non-free Translation-en_US
+Ign http://localhost jessie/non-free Translation-en
+Ign http://localhost jessie/non-free Translation-en_US.UTF-8
+Ign http://localhost jessie-backports/main Translation-en_US
+Ign http://localhost jessie-backports/main Translation-en
+Ign http://localhost jessie-backports/main Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/main amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
+Hit http://localhost jessie-updates/non-free amd64 Packages
+Hit http://localhost nightly/main amd64 Packages
 Hit http://www.deb-multimedia.org jessie InRelease
-Ign http://ftp.debian.org jessie InRelease
-Hit http://ftp.debian.org jessie Release.gpg
+Ign http://localhost jessie-updates/contrib Translation-en_US
+Ign http://localhost jessie-updates/contrib Translation-en
+Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/main Translation-en_US
+Ign http://localhost jessie-updates/main Translation-en
+Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/non-free Translation-en_US
+Ign http://localhost jessie-updates/non-free Translation-en
+Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
+Ign http://localhost nightly/main Translation-en_US
+Ign http://localhost nightly/main Translation-en
+Ign http://localhost nightly/main Translation-en_US.UTF-8
 Hit http://www.deb-multimedia.org jessie/main amd64 Packages
-Hit http://ftp.debian.org jessie Release
-Hit http://http.debian.net jessie-backports InRelease
 Ign http://mozilla.debian.net jessie-backports InRelease
 Get:1 http://repo.aptly.info nightly InRelease [4,887 B]
-Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
-Hit http://ftp.debian.org jessie/main amd64 Packages
 Ign http://repo.aptly.info nightly InRelease
-Hit http://ftp.debian.org jessie/contrib amd64 Packages
+Hit http://www.deb-multimedia.org jessie/non-free amd64 Packages
 Hit http://mozilla.debian.net jessie-backports Release.gpg
-Get:2 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
-Get:3 http://repo.aptly.info nightly/main amd64 Packages [7,506 B]
-Hit http://ftp.debian.org jessie/non-free amd64 Packages
+Hit http://http.debian.net jessie-backports InRelease
+Get:2 http://repo.aptly.info nightly/main amd64 Packages [7,506 B]
 Hit http://mozilla.debian.net jessie-backports Release
-Get:4 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [27.8 kB]
-Hit http://ftp.debian.org jessie/contrib Translation-en
 Hit http://mozilla.debian.net jessie-backports/firefox-release amd64 Packages
-Hit http://ftp.debian.org jessie/main Translation-en
-Hit http://ftp.debian.org jessie/non-free Translation-en
+Get:3 http://http.debian.net jessie-backports/main amd64 Packages/DiffIndex [27.8 kB]
+Get:4 http://http.debian.net jessie-backports/main Translation-en/DiffIndex [27.8 kB]
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US
+Ign http://repo.aptly.info nightly/main Translation-en_US
 Ign http://www.deb-multimedia.org jessie/main Translation-en
 Ign http://www.deb-multimedia.org jessie/main Translation-en_US.UTF-8
-Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
-Ign http://repo.aptly.info nightly/main Translation-en_US
-Ign http://www.deb-multimedia.org jessie/non-free Translation-en
-Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
-Ign http://repo.aptly.info nightly/main Translation-en
-Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
 Ign http://mozilla.debian.net jessie-backports/firefox-release Translation-en_US
+Ign http://repo.aptly.info nightly/main Translation-en
+Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US
 Ign http://mozilla.debian.net jessie-backports/firefox-release Translation-en
+Ign http://www.deb-multimedia.org jessie/non-free Translation-en
+Ign http://repo.aptly.info nightly/main Translation-en_US.UTF-8
+Ign http://www.deb-multimedia.org jessie/non-free Translation-en_US.UTF-8
 Ign http://mozilla.debian.net jessie-backports/firefox-release Translation-en_US.UTF-8
-Fetched 68.0 kB in 5s (12.9 kB/s)
+Fetched 68.0 kB in 3s (17.2 kB/s)
 Reading package lists...
 W: GPG error: http://repo.aptly.info nightly InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 9E3E53F19C7DE460
+W: Duplicate sources.list entry http://localhost/aptly-repo/ jessie/main amd64 Packages (/var/lib/apt/lists/localhost_aptly-repo_dists_jessie_main_binary-amd64_Packages)
+W: Duplicate sources.list entry http://localhost/aptly-repo/ jessie/contrib amd64 Packages (/var/lib/apt/lists/localhost_aptly-repo_dists_jessie_contrib_binary-amd64_Packages)
+W: Duplicate sources.list entry http://localhost/aptly-repo/ jessie/non-free amd64 Packages (/var/lib/apt/lists/localhost_aptly-repo_dists_jessie_non-free_binary-amd64_Packages)
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following NEW packages will be installed:
-  aptly xz-utils
-0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.
-Need to get 5,250 kB of archives.
-After this operation, 483 kB of additional disk space will be used.
-WARNING: The following packages cannot be authenticated!
-  aptly
-Get:1 http://localhost/aptly-repo/ jessie/main xz-utils amd64 5.1.1alpha+20120614-2+b3 [221 kB]
-Get:2 http://repo.aptly.info/ nightly/main aptly amd64 0.9.7~dev+46+g2ecd933 [5,029 kB]
-Fetched 5,250 kB in 9s (580 kB/s)
-Selecting previously unselected package xz-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56523 files and directories currently installed.)
-Preparing to unpack .../xz-utils_5.1.1alpha+20120614-2+b3_amd64.deb ...
-Unpacking xz-utils (5.1.1alpha+20120614-2+b3) ...
-Selecting previously unselected package aptly.
-Preparing to unpack .../aptly_0.9.7~dev+46+g2ecd933_amd64.deb ...
-Unpacking aptly (0.9.7~dev+46+g2ecd933) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up xz-utils (5.1.1alpha+20120614-2+b3) ...
-update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
-Setting up aptly (0.9.7~dev+46+g2ecd933) ...
-CLDS: * Install aptly version: 0.9.7~dev to create local debian repository.
-CLDS: * Add xz-utils package because aptly snapshot merge needs it.
-CLDS: * Disk size = 4277464K. Space Used = 23812K.
+You might want to run 'apt-get -f install' to correct these:
+The following packages have unmet dependencies:
+ projectlibre : Depends: openjdk-7-jre but it is not going to be installed or
+                         openjdk-6-jre but it is not installable or
+                         openjdk-8-jre but it is not going to be installed or
+                         sun-java6-jre but it is not installable or
+                         java7-runtime or
+                         java6-runtime or
+                         java8-runtime
+E: Unmet dependencies. Try 'apt-get -f install' with no packages (or specify a solution).
+CLDS: * Disk size = 3625120K. Space Used = 36K.

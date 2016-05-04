@@ -1,4 +1,35 @@
 /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS:>>>>>>>>> Running inst-min-con-00-apt-custom-repository.sh ...
 OK
-CLDS: * Disk size = 1361844K. Space Used = 16K.
+==============cat==============
+deb http://localhost/aptly-repo jessie main
+deb http://localhost/aptly-repo/ jessie main contrib non-free
+deb http://localhost/aptly-repo/ jessie-backports main
+deb http://localhost/aptly-repo/ jessie-updates main contrib non-free
+deb http://localhost/aptly-repo/ nightly main
+==============end-cat==============
+Get:1 http://localhost jessie InRelease [7142 B]
+Get:2 http://localhost jessie-backports InRelease [2849 B]
+Get:3 http://localhost jessie-updates InRelease [6346 B]
+Get:4 http://localhost nightly InRelease [2813 B]
+Get:5 http://localhost jessie/main amd64 Packages [177 kB]
+Get:6 http://localhost jessie/contrib amd64 Packages [2110 B]
+Get:7 http://localhost jessie/non-free amd64 Packages [4625 B]
+Get:8 http://localhost jessie-backports/main amd64 Packages [14.7 kB]
+Ign http://localhost jessie/contrib Translation-en
+Ign http://localhost jessie/main Translation-en
+Ign http://localhost jessie/non-free Translation-en
+Ign http://localhost jessie-backports/main Translation-en
+Get:9 http://localhost jessie-updates/main amd64 Packages [1249 B]
+Get:10 http://localhost jessie-updates/contrib amd64 Packages [14 B]
+Get:11 http://localhost jessie-updates/non-free amd64 Packages [14 B]
+Ign http://localhost jessie-updates/contrib Translation-en
+Ign http://localhost jessie-updates/main Translation-en
+Ign http://localhost jessie-updates/non-free Translation-en
+Get:12 http://localhost nightly/main amd64 Packages [7490 B]
+Ign http://localhost nightly/main Translation-en
+Fetched 226 kB in 0s (702 kB/s)
+Reading package lists...
+W: Duplicate sources.list entry http://localhost/aptly-repo/ jessie/main amd64 Packages (/var/lib/apt/lists/localhost_aptly-repo_dists_jessie_main_binary-amd64_Packages)
+W: You may want to run apt-get update to correct these problems
+CLDS: * Disk size = 1363552K. Space Used = 1804K.

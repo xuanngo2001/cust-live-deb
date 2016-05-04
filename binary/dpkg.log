@@ -37,16 +37,16 @@ ii  debconf-i18n                     1.5.56                     all          ful
 ii  debconf-utils                    1.5.56                     all          debconf utilities
 ii  debian-archive-keyring           2014.3                     all          GnuPG archive keys of the Debian archive
 ii  debianutils                      4.4+b1                     amd64        Miscellaneous utilities specific to Debian
-ii  debootstrap                      1.0.67                     all          Bootstrap a basic Debian system
+ii  debootstrap                      1.0.73~bpo8+1              all          Bootstrap a basic Debian system
 ii  dialog                           1.2-20140911-1             amd64        Displays user-friendly dialog boxes from shell scripts
 ii  diffutils                        1:3.3-1+b1                 amd64        File comparison utilities
-ii  dmidecode                        2.12-3                     amd64        SMBIOS/DMI table decoder
+ii  dmidecode                        3.0-2~bpo8+1               amd64        SMBIOS/DMI table decoder
 ii  dmsetup                          2:1.02.90-2.2              amd64        Linux Kernel Device Mapper userspace library
 ii  dpkg                             1.17.26                    amd64        Debian package management system
 ii  e2fslibs:amd64                   1.42.12-1.1                amd64        ext2/ext3/ext4 file system libraries
 ii  e2fsprogs                        1.42.12-1.1                amd64        ext2/ext3/ext4 file system utilities
-ii  exfat-fuse                       1.1.0-2+deb8u1             amd64        read and write exFAT driver for FUSE
-ii  exfat-utils                      1.1.0-2+deb8u1             amd64        utilities to create, check, label and dump exFAT filesystem
+ii  exfat-fuse                       1.2.3-1~bpo8+1             amd64        read and write exFAT driver for FUSE
+ii  exfat-utils                      1.2.3-1~bpo8+1             amd64        utilities to create, check, label and dump exFAT filesystem
 ii  findutils                        4.4.2-9+b1                 amd64        utilities for finding files--find, xargs
 ii  firmware-atheros                 0.43                       all          Binary firmware for Atheros wireless cards
 ii  firmware-bnx2                    0.43                       all          Binary firmware for Broadcom NetXtremeII
@@ -95,7 +95,7 @@ ii  isc-dhcp-common                  4.3.1-6+deb8u2             amd64        com
 ii  isolinux                         3:6.03+dfsg-5+deb8u1       all          collection of bootloaders (ISO 9960 bootloader)
 ii  iucode-tool                      1.1.1-1                    amd64        Intel processor microcode tool
 ii  jmtpfs                           0.5-2                      amd64        FUSE based filesystem for accessing MTP devices
-ii  jwm                              2.1.0+svn579-2             amd64        very small lightweight pure X11 window manager with tray and menus
+ii  jwm                              2.3.5-2~bpo8+1             amd64        very small lightweight pure X11 window manager with tray and menus
 ii  keyboard-configuration           1.123                      all          system-wide keyboard preferences
 ii  klibc-utils                      2.0.4-2                    amd64        small utilities built with klibc for early boot
 ii  kmod                             18-3                       amd64        tools for managing Linux kernel modules
@@ -131,6 +131,7 @@ ii  libcap2-bin                      1:2.24-8                   amd64        POS
 ii  libcilkrts5:amd64                4.9.2-10                   amd64        Intel Cilk Plus language extensions (runtime)
 ii  libcloog-isl4:amd64              0.18.2-1+b2                amd64        Chunky Loop Generator (runtime library)
 ii  libcomerr2:amd64                 1.42.12-1.1                amd64        common error description library
+ii  libcroco3:amd64                  0.6.8-3+b1                 amd64        Cascading Style Sheet (CSS) parsing and manipulation toolkit
 ii  libcryptsetup4:amd64             2:1.6.6-5                  amd64        disk encryption support - shared library
 ii  libcups2:amd64                   1.7.5-11+deb8u1            amd64        Common UNIX Printing System(tm) - Core library
 ii  libdatrie1:amd64                 0.2.8-1                    amd64        Double-array trie library
@@ -139,10 +140,10 @@ ii  libdbus-1-3:amd64                1.8.20-0+deb8u1            amd64        sim
 ii  libdebconfclient0:amd64          0.192                      amd64        Debian Configuration Management System (C-implementation library)
 ii  libdevmapper1.02.1:amd64         2:1.02.90-2.2              amd64        Linux Kernel Device Mapper userspace library
 ii  libdns-export100                 1:9.9.5.dfsg-9+deb8u6      amd64        Exported DNS Shared Library
-ii  libdrm-intel1:amd64              2.4.58-2                   amd64        Userspace interface to intel-specific kernel DRM services -- runtime
-ii  libdrm-nouveau2:amd64            2.4.58-2                   amd64        Userspace interface to nouveau-specific kernel DRM services -- runtime
-ii  libdrm-radeon1:amd64             2.4.58-2                   amd64        Userspace interface to radeon-specific kernel DRM services -- runtime
-ii  libdrm2:amd64                    2.4.58-2                   amd64        Userspace interface to kernel DRM services -- runtime
+ii  libdrm-intel1:amd64              2.4.67-1~bpo8+1            amd64        Userspace interface to intel-specific kernel DRM services -- runtime
+ii  libdrm-nouveau2:amd64            2.4.67-1~bpo8+1            amd64        Userspace interface to nouveau-specific kernel DRM services -- runtime
+ii  libdrm-radeon1:amd64             2.4.67-1~bpo8+1            amd64        Userspace interface to radeon-specific kernel DRM services -- runtime
+ii  libdrm2:amd64                    2.4.67-1~bpo8+1            amd64        Userspace interface to kernel DRM services -- runtime
 ii  libedit2:amd64                   3.1-20140620-2             amd64        BSD editline and history libraries
 ii  libegl1-mesa:amd64               10.3.2-1+deb8u1            amd64        free implementation of the EGL API -- runtime
 ii  libelf1:amd64                    0.159-4.2                  amd64        library to read and write ELF files
@@ -163,8 +164,8 @@ ii  libgcrypt20:amd64                1.6.3-2+deb8u1             amd64        LGP
 ii  libgdbm3:amd64                   1.8.3-13.1                 amd64        GNU dbm database routines (runtime version)
 ii  libgdk-pixbuf2.0-0:amd64         2.31.1-2+deb8u4            amd64        GDK Pixbuf library
 ii  libgdk-pixbuf2.0-common          2.31.1-2+deb8u4            all          GDK Pixbuf library - data files
-ii  libgl1-mesa-glx:amd64            10.3.2-1+deb8u1            amd64        free implementation of the OpenGL API -- GLX runtime
-ii  libglapi-mesa:amd64              10.3.2-1+deb8u1            amd64        free implementation of the GL API -- shared library
+ii  libgl1-mesa-glx:amd64            11.1.3-1~bpo8+1            amd64        free implementation of the OpenGL API -- GLX runtime
+ii  libglapi-mesa:amd64              11.1.3-1~bpo8+1            amd64        free implementation of the GL API -- shared library
 ii  libglib2.0-0:amd64               2.48.0-1~bpo8+1            amd64        GLib library of C routines
 ii  libgmp10:amd64                   2:6.0.0+dfsg-6             amd64        Multiprecision arithmetic library
 ii  libgnutls-deb0-28:amd64          3.3.8-6+deb8u3             amd64        GNU TLS library - main runtime library
@@ -198,7 +199,7 @@ ii  libklibc                         2.0.4-2                    amd64        min
 ii  libkmod2:amd64                   18-3                       amd64        libkmod shared library
 ii  libkrb5-3:amd64                  1.12.1+dfsg-19+deb8u2      amd64        MIT Kerberos runtime libraries
 ii  libkrb5support0:amd64            1.12.1+dfsg-19+deb8u2      amd64        MIT Kerberos runtime libraries - Support library
-ii  libllvm3.5:amd64                 1:3.5-10                   amd64        Modular compiler and toolchain technologies, runtime library
+ii  libllvm3.5:amd64                 1:3.5.2-3~bpo8+2           amd64        Modular compiler and toolchain technologies, runtime library
 ii  liblocale-gettext-perl           1.05-8+b1                  amd64        module using libc functions for internationalization in Perl
 ii  liblogging-stdlog0:amd64         1.0.4-1                    amd64        easy to use and lightweight logging library
 ii  liblognorm1:amd64                1.0.1-3                    amd64        Log normalizing library
@@ -241,6 +242,7 @@ ii  libprocps3:amd64                 2:3.3.9-9                  amd64        lib
 ii  libpsl0:amd64                    0.5.1-1                    amd64        Library for Public Suffix List (shared libraries)
 ii  libquadmath0:amd64               4.9.2-10                   amd64        GCC Quad-Precision Math Library
 ii  libreadline6:amd64               6.3-8+b3                   amd64        GNU readline and history libraries, run-time libraries
+ii  librsvg2-2:amd64                 2.40.5-1+deb8u1            amd64        SAX-based renderer library for SVG files (runtime)
 ii  libsamplerate0:amd64             0.1.8-8                    amd64        Audio sample rate conversion library
 ii  libselinux1:amd64                2.3-2                      amd64        SELinux runtime shared libraries
 ii  libsemanage-common               2.3-1                      all          Common files for SELinux policy management libraries
@@ -271,7 +273,6 @@ ii  libusb-0.1-4:amd64               2:0.1.12-25                amd64        use
 ii  libusb-1.0-0:amd64               2:1.0.19-1                 amd64        userspace USB programming library
 ii  libustr-1.0-1:amd64              1.0.4-3+b2                 amd64        Micro string library: shared library
 ii  libutempter0                     1.1.5-4                    amd64        A privileged helper for utmp/wtmp updates (runtime)
-ii  libuuid-perl                     0.05-1+b1                  amd64        Perl extension for using UUID interfaces as defined in e2fsprogs
 ii  libuuid1:amd64                   2.25.2-6                   amd64        Universally Unique ID library
 ii  libwayland-client0:amd64         1.6.0-2                    amd64        wayland compositor infrastructure - client library
 ii  libwayland-server0:amd64         1.6.0-2                    amd64        wayland compositor infrastructure - server library
@@ -318,12 +319,12 @@ ii  libxvmc1:amd64                   2:1.0.8-2+b1               amd64        X11
 ii  libxxf86dga1:amd64               2:1.1.4-1+b1               amd64        X11 Direct Graphics Access extension library
 ii  libxxf86vm1:amd64                1:1.1.3-1+b1               amd64        X11 XFree86 video mode extension library
 ii  libyaml-0-2:amd64                0.1.6-3                    amd64        Fast YAML 1.1 parser and emitter library
-ii  linux-base                       3.5                        all          Linux image base package
-ii  linux-image-3.16.0-4-amd64       3.16.7-ckt25-1             amd64        Linux 3.16 for 64-bit PCs
-ii  linux-image-amd64                3.16+63                    amd64        Linux for 64-bit PCs (meta-package)
+ii  linux-base                       4.0~bpo8+1                 all          Linux image base package
+ii  linux-image-4.5.0-0.bpo.1-amd64  4.5.1-1~bpo8+1             amd64        Linux 4.5 for 64-bit PCs
+ii  linux-image-amd64                4.5+72~bpo8+1              amd64        Linux for 64-bit PCs (meta-package)
 ii  linux-libc-dev:amd64             3.16.7-ckt25-1             amd64        Linux support headers for userspace development
-ii  live-boot                        4.0.2-1                    all          Live System Boot Components
-ii  live-boot-initramfs-tools        4.0.2-1                    all          Live System Boot Components (initramfs-tools backend)
+ii  live-boot                        1:20151213~bpo8+1          all          Live System Boot Components
+ii  live-boot-initramfs-tools        1:20151213~bpo8+1          all          Live System Boot Components (initramfs-tools backend)
 ii  localepurge                      0.7.3.4                    all          reclaim disk space by removing unneeded localizations
 ii  locales                          2.19-18+deb8u4             all          GNU C Library: National Language (locale) data [support]
 ii  login                            1:4.2-3+deb8u1             amd64        system login tools
@@ -373,7 +374,7 @@ ii  tar                              1.27.1-2+b1                amd64        GNU
 ii  tasksel                          3.31+deb8u1                all          tool for selecting tasks for installation on Debian systems
 ii  tasksel-data                     3.31+deb8u1                all          official tasks used for installation of Debian systems
 ii  traceroute                       1:2.0.20-2+b1              amd64        Traces the route taken by packets over an IPv4/IPv6 network
-ii  tzdata                           2016c-0+deb8u1             all          time zone and daylight-saving time data
+ii  tzdata                           2016d-0+deb8u1             all          time zone and daylight-saving time data
 ii  ucf                              3.0030                     all          Update Configuration File(s): preserve user changes to config files
 ii  udev                             215-17+deb8u4              amd64        /dev/ and hotplug management daemon
 ii  udevil                           0.4.4-1~bpo8+1             amd64        Alternative storage media interface

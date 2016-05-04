@@ -1,10 +1,14 @@
 * >>>>>>>>> Running inst-min-win-01-wm-jwm.sh ...
-  * After this operation, 5,878 kB of additional disk space will be used.
-  * Install Window Manager: JWM vsvn-579 by Joe Wingbermuehle.
+  * After this operation, 18.7 MB of additional disk space will be used.
+  * Install Window Manager: JWM v2.3.5 by Joe Wingbermuehle.
   * Set jwmrc.
-  * Disk size = 1881760K. Space Used = 8696K.
+  * Disk size = 1905728K. Space Used = 23488K.
   * The following NEW packages will be installed:
   ```bash
-  fontconfig-config fonts-liberation jwm libfontconfig1 libfribidi0
-  libutempter0 libxft2 libxinerama1 libxrender1 xbitmaps xterm
+  fontconfig fontconfig-config fonts-liberation jwm libcairo2 libcroco3
+  libdatrie1 libfontconfig1 libfribidi0 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-common libgraphite2-3 libharfbuzz0b libjasper1 libjbig0
+  libjpeg62-turbo libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  librsvg2-2 libthai-data libthai0 libtiff5 libutempter0 libxcb-shm0 libxft2
+  libxinerama1 libxml2 libxrender1 xbitmaps xterm
   ```

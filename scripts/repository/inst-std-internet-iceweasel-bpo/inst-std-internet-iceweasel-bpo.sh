@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install the latest Firefox from Debian Mozilla team through jessie-backports: http://mozilla.debian.net
 dpkg -i pkg-mozilla-archive-keyring_1.1_all.deb
-GF_ADD_SOURCE_LIST "deb http://mozilla.debian.net/ jessie-backports firefox-release"
+GF_ADD_SOURCE_LIST live "deb http://mozilla.debian.net/ jessie-backports firefox-release"
 apt-get update
 
 apt-get -t jessie-backports -y --force-yes install iceweasel

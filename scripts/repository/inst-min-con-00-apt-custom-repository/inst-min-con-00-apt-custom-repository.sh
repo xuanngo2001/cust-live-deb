@@ -13,12 +13,14 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-key add aptly-master-key.pub
 
 # Insert local repository at the beginning of the sources.list file.
-cp /etc/apt/sources.list /etc/apt/sources.list.org
-echo "deb http://localhost/aptly-repo/ jessie main contrib non-free" > ${GV_SOURCES_LIST}
-echo "deb http://localhost/aptly-repo/ jessie-backports main" > ${GV_SOURCES_LIST}
-echo "deb http://localhost/aptly-repo/ jessie-updates main contrib non-free" > ${GV_SOURCES_LIST}
-echo "deb http://localhost/aptly-repo/ nightly main" > ${GV_SOURCES_LIST}
-cat /etc/apt/sources.list.org >> /etc/apt/sources.list
+GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/ jessie main contrib non-free"
+GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/ jessie-backports main"
+GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/ jessie-updates main contrib non-free"
+GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/ nightly main"
+
+echo "==============cat=============="
+cat ${GV_SOURCES_LIST}
+echo "==============end-cat=============="
 
 # Update source.list
 apt-get update

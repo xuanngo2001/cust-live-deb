@@ -1,11 +1,23 @@
 CLDS:>>>>>>>>> Running inst-std-office-xtra-projectlibre.sh ...
 Selecting previously unselected package projectlibre.
-(Reading database ... 48813 files and directories currently installed.)
+(Reading database ... 44631 files and directories currently installed.)
 Preparing to unpack projectlibre_1.6.2-1.deb ...
 Unpacking projectlibre (1.6.2-1) ...
-Setting up projectlibre (1.6.2-1) ...
+dpkg: dependency problems prevent configuration of projectlibre:
+ projectlibre depends on openjdk-7-jre | openjdk-6-jre | openjdk-8-jre | sun-java6-jre | java7-runtime | java6-runtime | java8-runtime; however:
+  Package openjdk-7-jre is not installed.
+  Package openjdk-6-jre is not installed.
+  Package openjdk-8-jre is not installed.
+  Package sun-java6-jre is not installed.
+  Package java7-runtime is not installed.
+  Package java6-runtime is not installed.
+  Package java8-runtime is not installed.
+
+dpkg: error processing package projectlibre (--install):
+ dependency problems - leaving unconfigured
 Processing triggers for desktop-file-utils (0.22-1) ...
 Processing triggers for mime-support (3.58) ...
 Processing triggers for shared-mime-info (1.3-1) ...
-CLDS: * Install ProjectLibre.
-CLDS: * Disk size = 3841768K. Space Used = 18452K.
+Errors were encountered while processing:
+ projectlibre
+CLDS: * Disk size = 3547732K. Space Used = 18456K.

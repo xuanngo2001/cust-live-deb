@@ -2,25 +2,14 @@ CLDS:>>>>>>>>> Running inst-std-system-xtra-hardinfo.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-Suggested packages:
-  mesa-utils
-The following NEW packages will be installed:
-  hardinfo
-0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
-Need to get 226 kB of archives.
-After this operation, 467 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main hardinfo amd64 0.5.1-1.4 [226 kB]
-Fetched 226 kB in 0s (10.5 MB/s)
-Selecting previously unselected package hardinfo.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 50430 files and directories currently installed.)
-Preparing to unpack .../hardinfo_0.5.1-1.4_amd64.deb ...
-Unpacking hardinfo (0.5.1-1.4) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Processing triggers for menu (2.1.47) ...
-Processing triggers for desktop-file-utils (0.22-1) ...
-Processing triggers for mime-support (3.58) ...
-Setting up hardinfo (0.5.1-1.4) ...
-Processing triggers for menu (2.1.47) ...
-CLDS: * Install hardware info apps: hardinfo.
-CLDS: * Insert System Information menu in Administration.
-CLDS: * Disk size = 3885900K. Space Used = 940K.
+You might want to run 'apt-get -f install' to correct these:
+The following packages have unmet dependencies:
+ projectlibre : Depends: openjdk-7-jre but it is not going to be installed or
+                         openjdk-6-jre but it is not installable or
+                         openjdk-8-jre but it is not going to be installed or
+                         sun-java6-jre but it is not installable or
+                         java7-runtime or
+                         java6-runtime or
+                         java8-runtime
+E: Unmet dependencies. Try 'apt-get -f install' with no packages (or specify a solution).
+CLDS: * Disk size = 3547776K. Space Used = 8K.

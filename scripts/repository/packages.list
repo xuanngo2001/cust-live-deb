@@ -44,6 +44,7 @@ ntfs-3g
 # ./inst-min-con-firmware-cpu/inst-min-con-firmware-cpu.sh
 amd64-microcode
 intel-microcode
+iucode-tool
 # ./inst-min-con-firmware/inst-min-con-firmware.sh
 ${FIRMWARES_LIST}
 # ./inst-min-con-firmware-net-b43-installer/inst-min-con-firmware-net-b43-installer.sh
@@ -158,8 +159,28 @@ pinta
 iceweasel
 flashplugin-nonfree
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
+libavc1394-0
+libavcodec56
+libavcodec56
+
+libavdevice56
+libavfilter5
+libavfilter5
+
+libavformat56
+libcrystalhd3
+libiec61883-0
+libopencore-amrnb0
+libopencore-amrwb0
+libsmbclient
+libsmbclient
+
+libvo-aacenc0
+libvo-amrwbenc0
+libzvbi0
 mpv
 # ./inst-std-office-libreoffice-bpo/inst-std-office-libreoffice-bpo.sh
+libpagemaker-0.0-0
 libreoffice-writer
 libreoffice-calc
 libreoffice-impress
@@ -221,6 +242,7 @@ xterm
 sqlite3
 # ./inst-xtra-virtualbox5/inst-xtra-virtualbox5.sh
 ${PKGS_LIST}
+libqt4-opengl
 virtualbox-5.0
 # ./inst-xtra-virtualbox-guest-iso/inst-xtra-virtualbox-guest-iso.sh
 ${PKGS_LIST}

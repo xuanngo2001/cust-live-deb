@@ -2,22 +2,18 @@ CLDS:>>>>>>>>> Running inst-xtra-dev-tools-ant.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-Suggested packages:
-  ant-doc ant-gcj
-Recommended packages:
-  ant-optional
-The following NEW packages will be installed:
-  ant
-0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
-Need to get 1,888 kB of archives.
-After this operation, 2,229 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main ant all 1.9.4-3 [1,888 kB]
-Fetched 1,888 kB in 0s (28.2 MB/s)
-Selecting previously unselected package ant.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56594 files and directories currently installed.)
-Preparing to unpack .../archives/ant_1.9.4-3_all.deb ...
-Unpacking ant (1.9.4-3) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up ant (1.9.4-3) ...
-CLDS: * Install ant.
-CLDS: * Disk size = 4282088K. Space Used = 4040K.
+You might want to run 'apt-get -f install' to correct these:
+The following packages have unmet dependencies:
+ ant : Depends: default-jre-headless but it is not going to be installed or
+                java5-runtime-headless or
+                java6-runtime-headless or
+                java7-runtime-headless
+ projectlibre : Depends: openjdk-7-jre but it is not going to be installed or
+                         openjdk-6-jre but it is not installable or
+                         openjdk-8-jre but it is not going to be installed or
+                         sun-java6-jre but it is not installable or
+                         java7-runtime or
+                         java6-runtime or
+                         java8-runtime
+E: Unmet dependencies. Try 'apt-get -f install' with no packages (or specify a solution).
+CLDS: * Disk size = 3625136K. Space Used = 8K.

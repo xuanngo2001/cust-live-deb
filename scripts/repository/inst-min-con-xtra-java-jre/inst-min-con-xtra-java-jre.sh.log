@@ -2,8 +2,14 @@ CLDS:>>>>>>>>> Running inst-min-con-xtra-java-jre.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-default-jre is already the newest version.
-default-jre set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
-CLDS: * Install JAVA JRE: default-jre.
-CLDS: * Disk size = 2227312K. Space Used = 4K.
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ default-jre : Depends: default-jre-headless (= 2:1.7-52) but it is not going to be installed
+               Depends: openjdk-7-jre (>= 7~u3-2.1.1) but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+CLDS: * Disk size = 1886040K. Space Used = 4K.

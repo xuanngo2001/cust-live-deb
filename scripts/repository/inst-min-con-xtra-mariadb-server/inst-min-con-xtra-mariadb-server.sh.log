@@ -5,37 +5,54 @@ Reading state information...
 The following extra packages will be installed:
   libaio1 libdbi-perl libreadline5 libterm-readkey-perl mariadb-client-10.0
   mariadb-client-core-10.0 mariadb-common mariadb-server-10.0
-  mariadb-server-core-10.0 mysql-common psmisc
+  mariadb-server-core-10.0 mysql-common perl perl-modules psmisc
 Suggested packages:
   libclone-perl libmldbm-perl libnet-daemon-perl libsql-statement-perl mailx
-  mariadb-test tinyca
+  mariadb-test tinyca perl-doc libterm-readline-gnu-perl
+  libterm-readline-perl-perl make libb-lint-perl libcpanplus-dist-build-perl
+  libcpanplus-perl libfile-checktree-perl liblog-message-simple-perl
+  liblog-message-perl libobject-accessor-perl
 Recommended packages:
-  libdbd-mysql-perl libhtml-template-perl
+  libdbd-mysql-perl libhtml-template-perl rename libarchive-extract-perl
+  libmodule-pluggable-perl libpod-latex-perl libterm-ui-perl
+  libtext-soundex-perl libcgi-pm-perl libmodule-build-perl
+  libpackage-constants-perl
 The following NEW packages will be installed:
   libaio1 libdbi-perl libreadline5 libterm-readkey-perl mariadb-client-10.0
   mariadb-client-core-10.0 mariadb-common mariadb-server mariadb-server-10.0
-  mariadb-server-core-10.0 mysql-common psmisc
-0 upgraded, 12 newly installed, 0 to remove and 1 not upgraded.
-Need to get 13.0 MB of archives.
-After this operation, 131 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main libaio1 amd64 0.3.110-1 [9,312 B]
-Get:2 http://localhost/aptly-repo/ jessie/main mysql-common all 5.5.47-0+deb8u1 [82.6 kB]
-Get:3 http://localhost/aptly-repo/ jessie/main mariadb-common all 10.0.23-0+deb8u1 [16.6 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main libdbi-perl amd64 1.631-3+b1 [816 kB]
-Get:5 http://localhost/aptly-repo/ jessie/main libterm-readkey-perl amd64 2.32-1+b1 [28.0 kB]
-Get:6 http://localhost/aptly-repo/ jessie/main libreadline5 amd64 5.2+dfsg-2 [151 kB]
-Get:7 http://localhost/aptly-repo/ jessie/main mariadb-client-core-10.0 amd64 10.0.23-0+deb8u1 [798 kB]
-Get:8 http://localhost/aptly-repo/ jessie/main mariadb-client-10.0 amd64 10.0.23-0+deb8u1 [1,144 kB]
-Get:9 http://localhost/aptly-repo/ jessie/main mariadb-server-core-10.0 amd64 10.0.23-0+deb8u1 [4,251 kB]
-Get:10 http://localhost/aptly-repo/ jessie/main psmisc amd64 22.21-2 [119 kB]
-Get:11 http://localhost/aptly-repo/ jessie/main mariadb-server-10.0 amd64 10.0.23-0+deb8u1 [5,573 kB]
-Get:12 http://localhost/aptly-repo/ jessie/main mariadb-server all 10.0.23-0+deb8u1 [16.3 kB]
+  mariadb-server-core-10.0 mysql-common perl perl-modules psmisc
+0 upgraded, 14 newly installed, 0 to remove and 2 not upgraded.
+Need to get 18.2 MB of archives.
+After this operation, 164 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/ jessie/main perl-modules all 5.20.2-3+deb8u4 [2,546 kB]
+Get:2 http://localhost/aptly-repo/ jessie/main perl amd64 5.20.2-3+deb8u4 [2,638 kB]
+Get:3 http://localhost/aptly-repo/ jessie/main libaio1 amd64 0.3.110-1 [9,312 B]
+Get:4 http://localhost/aptly-repo/ jessie/main libreadline5 amd64 5.2+dfsg-2 [151 kB]
+Get:5 http://localhost/aptly-repo/ jessie/main mysql-common all 5.5.47-0+deb8u1 [82.6 kB]
+Get:6 http://localhost/aptly-repo/ jessie/main mariadb-common all 10.0.23-0+deb8u1 [16.6 kB]
+Get:7 http://localhost/aptly-repo/ jessie/main libdbi-perl amd64 1.631-3+b1 [816 kB]
+Get:8 http://localhost/aptly-repo/ jessie/main libterm-readkey-perl amd64 2.32-1+b1 [28.0 kB]
+Get:9 http://localhost/aptly-repo/ jessie/main mariadb-client-core-10.0 amd64 10.0.23-0+deb8u1 [798 kB]
+Get:10 http://localhost/aptly-repo/ jessie/main mariadb-client-10.0 amd64 10.0.23-0+deb8u1 [1,144 kB]
+Get:11 http://localhost/aptly-repo/ jessie/main mariadb-server-core-10.0 amd64 10.0.23-0+deb8u1 [4,251 kB]
+Get:12 http://localhost/aptly-repo/ jessie/main psmisc amd64 22.21-2 [119 kB]
+Get:13 http://localhost/aptly-repo/ jessie/main mariadb-server-10.0 amd64 10.0.23-0+deb8u1 [5,573 kB]
+Get:14 http://localhost/aptly-repo/ jessie/main mariadb-server all 10.0.23-0+deb8u1 [16.3 kB]
 Preconfiguring packages ...
-Fetched 13.0 MB in 0s (41.7 MB/s)
+Fetched 18.2 MB in 0s (39.7 MB/s)
+Selecting previously unselected package perl-modules.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18239 files and directories currently installed.)
+Preparing to unpack .../perl-modules_5.20.2-3+deb8u4_all.deb ...
+Unpacking perl-modules (5.20.2-3+deb8u4) ...
+Selecting previously unselected package perl.
+Preparing to unpack .../perl_5.20.2-3+deb8u4_amd64.deb ...
+Unpacking perl (5.20.2-3+deb8u4) ...
 Selecting previously unselected package libaio1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22163 files and directories currently installed.)
 Preparing to unpack .../libaio1_0.3.110-1_amd64.deb ...
 Unpacking libaio1:amd64 (0.3.110-1) ...
+Selecting previously unselected package libreadline5:amd64.
+Preparing to unpack .../libreadline5_5.2+dfsg-2_amd64.deb ...
+Unpacking libreadline5:amd64 (5.2+dfsg-2) ...
 Selecting previously unselected package mysql-common.
 Preparing to unpack .../mysql-common_5.5.47-0+deb8u1_all.deb ...
 Unpacking mysql-common (5.5.47-0+deb8u1) ...
@@ -48,9 +65,6 @@ Unpacking libdbi-perl (1.631-3+b1) ...
 Selecting previously unselected package libterm-readkey-perl.
 Preparing to unpack .../libterm-readkey-perl_2.32-1+b1_amd64.deb ...
 Unpacking libterm-readkey-perl (2.32-1+b1) ...
-Selecting previously unselected package libreadline5:amd64.
-Preparing to unpack .../libreadline5_5.2+dfsg-2_amd64.deb ...
-Unpacking libreadline5:amd64 (5.2+dfsg-2) ...
 Selecting previously unselected package mariadb-client-core-10.0.
 Preparing to unpack .../mariadb-client-core-10.0_10.0.23-0+deb8u1_amd64.deb ...
 Unpacking mariadb-client-core-10.0 (10.0.23-0+deb8u1) ...
@@ -67,7 +81,7 @@ Processing triggers for man-db (2.7.0.2-5) ...
 Setting up mysql-common (5.5.47-0+deb8u1) ...
 Setting up mariadb-common (10.0.23-0+deb8u1) ...
 Selecting previously unselected package mariadb-server-10.0.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22543 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19814 files and directories currently installed.)
 Preparing to unpack .../mariadb-server-10.0_10.0.23-0+deb8u1_amd64.deb ...
 Unpacking mariadb-server-10.0 (10.0.23-0+deb8u1) ...
 Selecting previously unselected package mariadb-server.
@@ -75,17 +89,20 @@ Preparing to unpack .../mariadb-server_10.0.23-0+deb8u1_all.deb ...
 Unpacking mariadb-server (10.0.23-0+deb8u1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for systemd (215-17+deb8u4) ...
+Setting up perl-modules (5.20.2-3+deb8u4) ...
+Setting up perl (5.20.2-3+deb8u4) ...
+update-alternatives: using /usr/bin/prename to provide /usr/bin/rename (rename) in auto mode
 Setting up libaio1:amd64 (0.3.110-1) ...
+Setting up libreadline5:amd64 (5.2+dfsg-2) ...
 Setting up libdbi-perl (1.631-3+b1) ...
 Setting up libterm-readkey-perl (2.32-1+b1) ...
-Setting up libreadline5:amd64 (5.2+dfsg-2) ...
 Setting up mariadb-client-core-10.0 (10.0.23-0+deb8u1) ...
 Setting up mariadb-client-10.0 (10.0.23-0+deb8u1) ...
 Setting up mariadb-server-core-10.0 (10.0.23-0+deb8u1) ...
 Setting up psmisc (22.21-2) ...
 Setting up mariadb-server-10.0 (10.0.23-0+deb8u1) ...
 invoke-rc.d: policy-rc.d denied execution of stop.
-160414 15:17:32 [Note] /usr/sbin/mysqld (mysqld 10.0.23-MariaDB-0+deb8u1) starting as process 10849 ...
+160504 17:41:33 [Note] /usr/sbin/mysqld (mysqld 10.0.23-MariaDB-0+deb8u1) starting as process 753 ...
 invoke-rc.d: policy-rc.d denied execution of start.
 Setting up mariadb-server (10.0.23-0+deb8u1) ...
 Processing triggers for libc-bin (2.19-18+deb8u4) ...
@@ -93,4 +110,4 @@ Processing triggers for systemd (215-17+deb8u4) ...
 mysqladmin: connect to server at 'localhost' failed
 error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")'
 Check that mysqld is running and that the socket: '/var/run/mysqld/mysqld.sock' exists!
-CLDS: * Disk size = 2481532K. Space Used = 252760K.
+CLDS: * Disk size = 2180068K. Space Used = 292568K.
