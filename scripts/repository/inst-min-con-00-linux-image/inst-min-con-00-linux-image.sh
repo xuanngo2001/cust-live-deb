@@ -18,7 +18,6 @@ apt-get -y --force-yes install linux-image-amd64 live-boot
 #   Exclude this if current version is 3.16.0-4-amd64 and new version is 4.5.0-0.bpo.1-amd64.
 #mkinitramfs -d /etc/initramfs-tools -o /boot/initrd.img-$(uname -r)  -r /
 
-echo "${GV_LOG} * Mount /proc, /sys and /dev/pts."
 echo "${GV_LOG} * Generate dbus-uuidgen to /var/lib/dbus/machine-id."
 echo "${GV_LOG} * Install Linux image: $(uname -r)."
 
