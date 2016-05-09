@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-cld-dev-tools-aptly.sh ...
-  * Disk size = 3625120K. Space Used = 36K.
+  * Disk size = 3261260K. Space Used = -2068K.
