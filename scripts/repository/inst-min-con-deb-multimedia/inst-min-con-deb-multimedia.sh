@@ -16,10 +16,7 @@ rm -f ${DEB_MULTIMEDIA_KEYRING}
 #apt-get -y --force-yes install deb-multimedia-keyring
 
 # Add deb-multimedia sources list
-# Ensure that these sources list have priority over the official repositories.
-#   Put them below local repository but above official repository.
-DEB_MULTIMEDIA_SRC_LIST=sources-deb-multimedia.list
-cat ${DEB_MULTIMEDIA_SRC_LIST} >> ${GV_SOURCES_LIST}
+GF_ADD_SOURCE_LIST live "deb http://www.deb-multimedia.org jessie main non-free"
 
 # Update packages.
 apt-get update
