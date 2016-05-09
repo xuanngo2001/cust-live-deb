@@ -1,15 +1,10 @@
 * >>>>>>>>> Running inst-min-con-xtra-gnuplot.sh ...
-  * After this operation, 46.1 MB of additional disk space will be used.
+  * After this operation, 34.1 MB of additional disk space will be used.
   * Install gnuplot.
-  * Disk size = 1866008K. Space Used = 62392K.
+  * Disk size = 2060976K. Space Used = 44036K.
   * The following NEW packages will be installed:
   ```bash
-  aglfn fontconfig fontconfig-config fonts-liberation gnuplot gnuplot-data
-  gnuplot-qt gnuplot-tex libaudio2 libcairo2 libdatrie1 libfontconfig1
-  libfreetype6 libgd3 libgraphite2-3 libharfbuzz0b libice6 libjbig0
-  libjpeg62-turbo liblcms2-2 liblua5.1-0 libmng1 libpango-1.0-0
-  libpangocairo-1.0-0 libpangoft2-1.0-0 libpixman-1-0 libpng12-0
-  libqt4-network libqt4-svg libqt4-xml libqtcore4 libqtdbus4 libqtgui4 libsm6
-  libthai-data libthai0 libtiff5 libvpx1 libxcb-render0 libxcb-shm0 libxpm4
-  libxrender1 libxt6 qtcore4-l10n
+  aglfn gnuplot gnuplot-data gnuplot-qt gnuplot-tex libaudio2 libgd3
+  liblua5.1-0 libmng1 libqt4-network libqt4-svg libqt4-xml libqtcore4
+  libqtdbus4 libqtgui4 libvpx1 libxpm4 libxt6 qtcore4-l10n
   ```

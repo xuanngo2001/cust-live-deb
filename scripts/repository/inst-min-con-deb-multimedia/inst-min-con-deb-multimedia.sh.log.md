@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-con-deb-multimedia.sh ...
   * Install deb-multimedia-keyring_2015.6.1_all.deb.
-  * Add deb-multimedia sources list.
+  * Add deb-multimedia repository.
   * Delete deb-multimedia-keyring_2015.6.1_all.deb[12K].
   * apt-get update
-  * Disk size = 1654328K. Space Used = 1352K.
+  * Disk size = 1651508K. Space Used = 24K.

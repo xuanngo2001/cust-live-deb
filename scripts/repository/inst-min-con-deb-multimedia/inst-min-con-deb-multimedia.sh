@@ -23,7 +23,7 @@ apt-get update
 
 # Log
 echo "${GV_LOG} * Install ${DEB_MULTIMEDIA_KEYRING}."
-echo "${GV_LOG} * Add deb-multimedia sources list."
+echo "${GV_LOG} * Add deb-multimedia repository."
 echo "${GV_LOG} * Delete ${DEB_MULTIMEDIA_KEYRING}[${DEB_MULTIMEDIA_KEYRING_SIZE}K]."
 echo "${GV_LOG} * apt-get update"
 

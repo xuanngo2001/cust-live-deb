@@ -1,2 +1,3 @@
 * >>>>>>>>> Running inst-min-con-xtra-java-jre.sh ...
-  * Disk size = 1886040K. Space Used = 4K.
+  * Install JAVA JRE: default-jre.
+  * Disk size = 2078428K. Space Used = 4K.

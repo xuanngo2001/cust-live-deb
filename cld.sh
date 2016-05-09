@@ -36,5 +36,3 @@ DEB_REPO_URL=$(echo $2 | tr '[:upper:]' '[:lower:]')
 	./cld-create-md.sh "${LOG_DIR}"
 	./cld-log-package-sizes.sh "${LOG_DIR}"
   ./cld-move-backup-log.sh "${LOG_DIR}"
-
-    

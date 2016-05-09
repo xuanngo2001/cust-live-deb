@@ -11,6 +11,8 @@ apt-get -y --force-yes dist-upgrade
 # Install basic packages.
 apt-get -y --force-yes install dialog dbus
 dbus-uuidgen > /var/lib/dbus/machine-id
+
+# Install linux image.
 apt-get -y --force-yes install linux-image-amd64 live-boot
 
 

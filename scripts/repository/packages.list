@@ -192,7 +192,7 @@ libreoffice-math
 # ./inst-std-system-alsamixer/inst-std-system-alsamixer.sh
 
 # ./inst-std-system-conky/inst-std-system-conky.sh
-
+conky
 # ./inst-std-system-gnome-disk-utility/inst-std-system-gnome-disk-utility.sh
 gnome-disk-utility
 # ./inst-std-system-keyboard/inst-std-system-keyboard.sh
@@ -252,16 +252,27 @@ wifite
 libjpeg-turbo-progs
 libldap-2.4-2
 # ./inst-xtra-wine/inst-xtra-wine.sh
+wine64
+wine32
 wine
 # ./inst-xtra-xmpv/inst-xtra-xmpv.sh
 
 # ./inst-xtra-zfs/inst-xtra-zfs.sh
+spl-dkms
+zfs-dkms
+linux-headers-amd64
 lsb-release
 libc6-dev
 debian-zfs
-# ./inst-zclean-00-remove-block-services/inst-zclean-00-remove-block-services.sh
+# ./inst-zclean-00-apt-get-distro-upgrade/inst-zclean-00-apt-get-distro-upgrade.sh
 
-# ./inst-zclean-00-zerosizing-docs/inst-zclean-00-zerosizing-docs.sh
+# ./inst-zclean-01-apt-get-00-clean-up/inst-zclean-01-apt-get-00-clean-up.sh
+
+# ./inst-zclean-01-apt-get-01-source-list/inst-zclean-01-apt-get-01-source-list.sh
+
+# ./inst-zclean-02-remove-block-services/inst-zclean-02-remove-block-services.sh
+
+# ./inst-zclean-98-zerosizing-docs/inst-zclean-98-zerosizing-docs.sh
 
 # ./inst-zclean-99-end-cleanup/inst-zclean-99-end-cleanup.sh
 

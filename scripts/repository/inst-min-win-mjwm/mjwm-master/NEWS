@@ -1,0 +1,92 @@
+mjwm NEWS - User visible changes. 2014-11-15
+Please file mjwm bug reports at https://github.com/chiku/mjwm/issues
+
+version 4.0.1 - Chirantan Mitra, NA
+
+* Deprecate --summary in favour of --verbose & -v. --summary normal maps to a normal run and --summary long maps to a verbose run (--verbose). --summary short is an error.
+
+
+version 4.0.0 - Chirantan Mitra, 2014-11-15
+
+* Provide option to chose summary type from short, normal (default) and long
+* Fail the application if $HOME is not set [#38]
+* Handle .desktop files that contain multiple sections. Look for entries under "[Desktop Entry]"
+* Create puppet PET packages on drone.io (https://drone.io/github.com/chiku/mjwm/files)
+* Introduce an XDG compliant icon scan (based on http://standards.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html) [#33]
+* Read comments from .desktop files. These would be used as tooltips once JWM supports them [#41]
+* Allow the user to specify the name of the icon theme to use [#36]
+* Backup older output file if it exists [#39, #43]
+* Reduce the verbosity of summary output
+* Read environment variables LAMGUAGE, LC_ALL & LANG in that order to figure out the system language. This language is chosen for builing the menu [#42]
+* Accept the language to build menus from command line. This would override the system defaults [#40]
+* [BUG] Trailing whitespaces in a custom category file are ignored
+
+
+version 3.0.0 - Chirantan Mitra, 2014-04-16
+
+* Drop deprecated command-line arguments [-s, -h and -v]
+* Drop -a and --append-png command-line arguments
+* Default output file is $HOME/.jwmrc-mjwm
+* Recursively scan inside sub-directories of $XDG_DATA_HOME & $XDG_DATA_DIRS for desktop files [#29]
+* Search for icons (png, svg, xpm) in $HOME/.icons, $XDG_DATA_DIRS/icons & /usr/share/pixmaps when command-line option --iconize is specified [#35]
+* [BUG] Ignore desktop files that are marked NoDisplay=true [#31]
+* [BUG] Don't ignore desktop file entries in $XDG_DATA_HOME
+* [BUG] Desktop files that couldn't be open are reported as unparsed [#37]
+* [BUG] Suppress duplicate entries in a single subcategory [#14]
+
+
+version 2.4.0 - Chirantan Mitra, 2014-03-30
+
+* Accept user provided categories as a colon terminated file. Includes default.mjwm & a puppy linux specific puppy.mjwm files [#30]
+* Allow multiple user-specified catgories to be classified into a single subcategory [#26]
+* Install a man page
+* [BUG] Strip off field codes (%f, %U etc.) from executable names [#21]
+* [BUG] Ensure that same directory is not included twice for scanning desktop files [#28]
+* [DEPRECATE] Deprecate -h and -v in favour of --help and --version respectively
+
+
+version 2.3.0 - Chirantan Mitra, 2014-03-24
+
+* Include an XML comment in the generated output file telling that it is a generated file. [#24]
+* Display a summary at the end of operation [#15]
+* Allow multiple directories to be scanned. The directories are separated by a colon. The value defaults to applications directories under $XDG_DATA_DIRS and $XDG_DATA_HOME [#22]
+* [BUG] Trailing slash in the name of directory to scan is optional [#23]
+* [BUG] Display an error message if the output file couldn't be created [#27]
+* [DEPRECATE] Deprecate -s command line option in favour of -i. Retain -s, but display a deprecation message
+
+
+version 2.2.0 - Chirantan Mitra, 2014-03-21
+
+* Specify the order in which menu categories appear
+* Add icon extension .png to icon category names when given -a command-line option
+* [BUG] Ignore spaces around equals sign in Desktop file entries [#20]
+
+
+version 2.1.1 - Chirantan Mitra, 2014-03-16
+
+* [BUG] Don't encode executable, icon & categories
+* [BUG] Tolerate category entries that don't end in a semicolon
+
+
+version 2.1 - Chirantan Mitra, 2014-03-16
+
+* [BUG] Add missing bracket in menu entries
+
+
+version 2.0 - Chirantan Mitra, 2014-03-16
+
+* Put menus into subcategories based on FreDesktop standards
+
+
+version 1.1 - Chirantan Mitra, 2014-03-15
+
+* Sort entries based on their names
+* Provide long conmmand line options
+* [BUG] XML escape for characters
+* [BUG] Don't create entries with stale data
+
+
+version 1.0 - Chirantan Mitra, 2014-03-09
+
+* Initial release - C++ port of mjm by insmyic gminsm@gmail.com http://sourceforge.net/projects/mjm
+* [BUG] Fixed segmentation faults in mjm

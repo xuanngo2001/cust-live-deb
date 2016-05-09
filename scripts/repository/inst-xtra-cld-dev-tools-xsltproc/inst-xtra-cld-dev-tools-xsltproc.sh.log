@@ -2,14 +2,18 @@ CLDS:>>>>>>>>> Running inst-xtra-cld-dev-tools-xsltproc.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-You might want to run 'apt-get -f install' to correct these:
-The following packages have unmet dependencies:
- projectlibre : Depends: openjdk-7-jre but it is not going to be installed or
-                         openjdk-6-jre but it is not installable or
-                         openjdk-8-jre but it is not going to be installed or
-                         sun-java6-jre but it is not installable or
-                         java7-runtime or
-                         java6-runtime or
-                         java8-runtime
-E: Unmet dependencies. Try 'apt-get -f install' with no packages (or specify a solution).
-CLDS: * Disk size = 3625128K. Space Used = 4K.
+The following NEW packages will be installed:
+  xsltproc
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 118 kB of archives.
+After this operation, 140 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main xsltproc amd64 1.1.28-2+b2 [118 kB]
+Fetched 118 kB in 0s (7,615 kB/s)
+Selecting previously unselected package xsltproc.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53348 files and directories currently installed.)
+Preparing to unpack .../xsltproc_1.1.28-2+b2_amd64.deb ...
+Unpacking xsltproc (1.1.28-2+b2) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up xsltproc (1.1.28-2+b2) ...
+CLDS: * Install xsltproc to process xslt.
+CLDS: * Disk size = 4144624K. Space Used = 292K.

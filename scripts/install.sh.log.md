@@ -1,3 +1,3 @@
 * >>>>>>>>> Running install.sh ...
   * Running on SHELL=/bin/bash VER=4.3.30(1)-release
-  * Disk size = 1361748K. Space Used = 1361748K.
+  * Disk size = 1361820K. Space Used = 1361820K.

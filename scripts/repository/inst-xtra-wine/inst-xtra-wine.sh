@@ -8,6 +8,9 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Explicitly install dependent packages
+apt-get -y --force-yes install wine64
+
 # Install wine so that you can run Windows applications.
 apt-get -y --force-yes install wine
 #apt-get -y --force-yes install mono-vbnc

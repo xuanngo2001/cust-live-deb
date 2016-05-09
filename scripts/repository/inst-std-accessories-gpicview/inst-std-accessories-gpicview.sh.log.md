@@ -2,7 +2,7 @@
   * After this operation, 876 kB of additional disk space will be used.
   * Install Image Viewer: gpicview.
   * Insert gpicview in Accessories menu.
-  * Disk size = 2639748K. Space Used = 348K.
+  * Disk size = 2234136K. Space Used = 360K.
   * The following NEW packages will be installed:
   ```bash
   gpicview

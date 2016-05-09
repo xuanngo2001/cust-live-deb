@@ -10,6 +10,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 ###rm -f /usr/sbin/update-initramfs
 ###ln -s /usr/sbin/update-initramfs.orig.initramfs-tools /usr/sbin/update-initramfs
 
+# Explicitly install dependent packages
+apt-get -y --force-yes install spl-dkms zfs-dkms linux-headers-amd64
+
 # Install required packages.
 apt-get -y --force-yes install lsb-release libc6-dev
 

@@ -1,2 +1,10 @@
 * >>>>>>>>> Running inst-xtra-wifite.sh ...
-  * Disk size = 3642020K. Space Used = 4K.
+  * After this operation, 82.4 MB of additional disk space will be used.
+  * Install wifite.
+  * Disk size = 4448884K. Space Used = 95444K.
+  * The following NEW packages will be installed:
+  ```bash
+  aircrack-ng iw libc-ares2 libgeoip1 libpcap0.8 libsmi2ldbl libwireshark-data
+  libwireshark5 libwiretap4 libwsutil4 pyrit reaver tshark wifite
+  wireshark-common
+  ```

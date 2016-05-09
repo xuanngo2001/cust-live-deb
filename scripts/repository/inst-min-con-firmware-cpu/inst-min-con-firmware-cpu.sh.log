@@ -4,13 +4,13 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   amd64-microcode
-0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
 Need to get 29.6 kB of archives.
 After this operation, 48.1 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/non-free amd64-microcode amd64 2.20160316.1~deb8u1 [29.6 kB]
+Get:1 http://localhost/aptly-repo/jessie-non-free/ jessie/non-free amd64-microcode amd64 2.20160316.1~deb8u1 [29.6 kB]
 Fetched 29.6 kB in 0s (0 B/s)
 Selecting previously unselected package amd64-microcode.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15237 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15231 files and directories currently installed.)
 Preparing to unpack .../amd64-microcode_2.20160316.1~deb8u1_amd64.deb ...
 Unpacking amd64-microcode (2.20160316.1~deb8u1) ...
 Setting up amd64-microcode (2.20160316.1~deb8u1) ...
@@ -24,14 +24,14 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   intel-microcode iucode-tool
-0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.
 Need to get 506 kB of archives.
 After this operation, 623 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/contrib iucode-tool amd64 1.1.1-1 [33.2 kB]
-Get:2 http://localhost/aptly-repo/ jessie/non-free intel-microcode amd64 3.20151106.1~deb8u1 [473 kB]
-Fetched 506 kB in 0s (22.0 MB/s)
+Get:1 http://localhost/aptly-repo/jessie-contrib/ jessie/contrib iucode-tool amd64 1.1.1-1 [33.2 kB]
+Get:2 http://localhost/aptly-repo/jessie-non-free/ jessie/non-free intel-microcode amd64 3.20151106.1~deb8u1 [473 kB]
+Fetched 506 kB in 0s (21.6 MB/s)
 Selecting previously unselected package iucode-tool.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15254 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15248 files and directories currently installed.)
 Preparing to unpack .../iucode-tool_1.1.1-1_amd64.deb ...
 Unpacking iucode-tool (1.1.1-1) ...
 Selecting previously unselected package intel-microcode.
@@ -48,4 +48,4 @@ update-initramfs: Generating /boot/initrd.img-4.5.0-0.bpo.1-amd64
 live-boot: core filesystems devices utils udev wget blockdev.
 CLDS: * Install CPU firmware: amd64-microcode.
 CLDS: * Install CPU firmware: intel-microcode.
-CLDS: * Disk size = 1659232K. Space Used = 1920K.
+CLDS: * Disk size = 1657008K. Space Used = 1916K.

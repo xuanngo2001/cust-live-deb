@@ -1,39 +1,46 @@
 /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS:>>>>>>>>> Running inst-min-con-00-linux-image.sh ...
 Hit http://localhost jessie InRelease
-Hit http://localhost jessie-backports InRelease
-Hit http://localhost jessie-updates InRelease
 Hit http://localhost nightly InRelease
+Hit http://localhost jessie InRelease
+Hit http://localhost jessie InRelease
+Hit http://localhost jessie-backports InRelease
+Hit http://localhost jessie InRelease
+Hit http://localhost jessie InRelease
+Hit http://localhost jessie InRelease
+Hit http://localhost jessie InRelease
+Hit http://localhost jessie InRelease
+Hit http://localhost jessie/main amd64 Packages
+Hit http://localhost nightly/main amd64 Packages
+Ign http://localhost jessie/main Translation-en
+Ign http://localhost nightly/main Translation-en
+Hit http://localhost jessie/main amd64 Packages
+Ign http://localhost jessie/main Translation-en
+Hit http://localhost jessie/non-free amd64 Packages
+Ign http://localhost jessie/non-free Translation-en
+Hit http://localhost jessie-backports/main amd64 Packages
+Ign http://localhost jessie-backports/main Translation-en
 Hit http://localhost jessie/contrib amd64 Packages
 Hit http://localhost jessie/non-free amd64 Packages
 Hit http://localhost jessie/main amd64 Packages
-Hit http://localhost jessie-backports/main amd64 Packages
 Ign http://localhost jessie/contrib Translation-en
-Ign http://localhost jessie/main Translation-en
-Hit http://localhost jessie-updates/main amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
-Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie/non-free Translation-en
-Ign http://localhost jessie-backports/main Translation-en
-Ign http://localhost jessie-updates/contrib Translation-en
-Ign http://localhost jessie-updates/main Translation-en
-Ign http://localhost jessie-updates/non-free Translation-en
-Hit http://localhost nightly/main amd64 Packages
-Ign http://localhost nightly/main Translation-en
+Ign http://localhost jessie/main Translation-en
+Hit http://localhost jessie/contrib amd64 Packages
+Ign http://localhost jessie/contrib Translation-en
+Hit http://localhost jessie/main amd64 Packages
+Ign http://localhost jessie/main Translation-en
 Reading package lists...
-W: Duplicate sources.list entry http://localhost/aptly-repo/ jessie/main amd64 Packages (/var/lib/apt/lists/localhost_aptly-repo_dists_jessie_main_binary-amd64_Packages)
-W: You may want to run apt-get update to correct these problems
 Reading package lists...
 Building dependency tree...
 The following packages have been kept back:
   rsyslog
 The following packages will be upgraded:
-  dmidecode tzdata
-2 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
-Need to get 253 kB of archives.
-After this operation, 56.3 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie-updates/main tzdata all 2016d-0+deb8u1 [185 kB]
-Get:2 http://localhost/aptly-repo/ jessie-backports/main dmidecode amd64 3.0-2~bpo8+1 [68.3 kB]
+  dmidecode
+1 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Need to get 68.3 kB of archives.
+After this operation, 42.0 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main dmidecode amd64 3.0-2~bpo8+1 [68.3 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = "en_US.UTF-8",
@@ -44,19 +51,8 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Preconfiguring packages ...
-Fetched 253 kB in 0s (11.9 MB/s)
+Fetched 68.3 kB in 0s (0 B/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9740 files and directories currently installed.)
-Preparing to unpack .../tzdata_2016d-0+deb8u1_all.deb ...
-Unpacking tzdata (2016d-0+deb8u1) over (2016c-0+deb8u1) ...
-Setting up tzdata (2016d-0+deb8u1) ...
-
-Current default time zone: 'Etc/UTC'
-Local time is now:      Wed May  4 18:12:52 UTC 2016.
-Universal Time is now:  Wed May  4 18:12:52 UTC 2016.
-Run 'dpkg-reconfigure tzdata' if you wish to change it.
-
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9746 files and directories currently installed.)
 Preparing to unpack .../dmidecode_3.0-2~bpo8+1_amd64.deb ...
 Unpacking dmidecode (3.0-2~bpo8+1) over (2.12-3) ...
 Processing triggers for man-db (2.7.0.2-5) ...
@@ -73,11 +69,11 @@ The following NEW packages will be installed:
 0 upgraded, 5 newly installed, 0 to remove and 1 not upgraded.
 Need to get 810 kB of archives.
 After this operation, 3111 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main libcap-ng0 amd64 0.7.4-2 [13.2 kB]
-Get:2 http://localhost/aptly-repo/ jessie/main libdbus-1-3 amd64 1.8.20-0+deb8u1 [170 kB]
-Get:3 http://localhost/aptly-repo/ jessie/main libexpat1 amd64 2.1.0-6+deb8u1 [80.0 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main dbus amd64 1.8.20-0+deb8u1 [291 kB]
-Get:5 http://localhost/aptly-repo/ jessie/main dialog amd64 1.2-20140911-1 [255 kB]
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libcap-ng0 amd64 0.7.4-2 [13.2 kB]
+Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libdbus-1-3 amd64 1.8.20-0+deb8u1 [170 kB]
+Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main libexpat1 amd64 2.1.0-6+deb8u1 [80.0 kB]
+Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main dbus amd64 1.8.20-0+deb8u1 [291 kB]
+Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main dialog amd64 1.2-20140911-1 [255 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = "en_US.UTF-8",
@@ -88,9 +84,9 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 810 kB in 0s (10.9 MB/s)
+Fetched 810 kB in 0s (18.4 MB/s)
 Selecting previously unselected package libcap-ng0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9746 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9740 files and directories currently installed.)
 Preparing to unpack .../libcap-ng0_0.7.4-2_amd64.deb ...
 Unpacking libcap-ng0:amd64 (0.7.4-2) ...
 Selecting previously unselected package libdbus-1-3:amd64.
@@ -133,17 +129,17 @@ The following NEW packages will be installed:
 0 upgraded, 11 newly installed, 0 to remove and 1 not upgraded.
 Need to get 38.0 MB of archives.
 After this operation, 179 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/ jessie/main firmware-linux-free all 3.3 [19.1 kB]
-Get:2 http://localhost/aptly-repo/ jessie/main libklibc amd64 2.0.4-2 [51.7 kB]
-Get:3 http://localhost/aptly-repo/ jessie/main klibc-utils amd64 2.0.4-2 [108 kB]
-Get:4 http://localhost/aptly-repo/ jessie/main busybox-static amd64 1:1.22.0-9+deb8u1 [841 kB]
-Get:5 http://localhost/aptly-repo/ jessie/main initramfs-tools all 0.120+deb8u1 [96.2 kB]
-Get:6 http://localhost/aptly-repo/ jessie-backports/main linux-base all 4.0~bpo8+1 [7164 B]
-Get:7 http://localhost/aptly-repo/ jessie-backports/main linux-image-4.5.0-0.bpo.1-amd64 amd64 4.5.1-1~bpo8+1 [36.4 MB]
-Get:8 http://localhost/aptly-repo/ jessie-backports/main linux-image-amd64 amd64 4.5+72~bpo8+1 [6362 B]
-Get:9 http://localhost/aptly-repo/ jessie-backports/main live-boot-initramfs-tools all 1:20151213~bpo8+1 [30.2 kB]
-Get:10 http://localhost/aptly-repo/ jessie-backports/main live-boot all 1:20151213~bpo8+1 [52.7 kB]
-Get:11 http://localhost/aptly-repo/ jessie/main rsync amd64 3.1.1-3 [390 kB]
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main firmware-linux-free all 3.3 [19.1 kB]
+Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libklibc amd64 2.0.4-2 [51.7 kB]
+Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main klibc-utils amd64 2.0.4-2 [108 kB]
+Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main busybox-static amd64 1:1.22.0-9+deb8u1 [841 kB]
+Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main initramfs-tools all 0.120+deb8u1 [96.2 kB]
+Get:6 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-base all 4.0~bpo8+1 [7164 B]
+Get:7 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-image-4.5.0-0.bpo.1-amd64 amd64 4.5.1-1~bpo8+1 [36.4 MB]
+Get:8 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-image-amd64 amd64 4.5+72~bpo8+1 [6362 B]
+Get:9 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main live-boot-initramfs-tools all 1:20151213~bpo8+1 [30.2 kB]
+Get:10 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main live-boot all 1:20151213~bpo8+1 [52.7 kB]
+Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main rsync amd64 3.1.1-3 [390 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = "en_US.UTF-8",
@@ -155,9 +151,9 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 38.0 MB in 1s (26.8 MB/s)
+Fetched 38.0 MB in 0s (43.0 MB/s)
 Selecting previously unselected package firmware-linux-free.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9967 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9961 files and directories currently installed.)
 Preparing to unpack .../firmware-linux-free_3.3_all.deb ...
 Unpacking firmware-linux-free (3.3) ...
 Selecting previously unselected package libklibc.
@@ -212,7 +208,6 @@ Processing triggers for initramfs-tools (0.120+deb8u1) ...
 update-initramfs: Generating /boot/initrd.img-4.5.0-0.bpo.1-amd64
 live-boot: core filesystems devices utils udev wget blockdev.
 Processing triggers for systemd (215-17+deb8u4) ...
-CLDS: * Mount /proc, /sys and /dev/pts.
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Install Linux image: 3.16.0-4-amd64.
-CLDS: * Disk size = 1624144K. Space Used = 260592K.
+CLDS: * Disk size = 1623300K. Space Used = 259760K.

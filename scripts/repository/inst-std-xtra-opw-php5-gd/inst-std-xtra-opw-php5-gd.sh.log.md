@@ -1,2 +1,8 @@
 * >>>>>>>>> Running inst-std-xtra-opw-php5-gd.sh ...
-  * Disk size = 3552928K. Space Used = 4K.
+  * After this operation, 118 kB of additional disk space will be used.
+  * Install php5-gd to run Drupal.
+  * Disk size = 4043608K. Space Used = 220K.
+  * The following NEW packages will be installed:
+  ```bash
+  php5-gd
+  ```
