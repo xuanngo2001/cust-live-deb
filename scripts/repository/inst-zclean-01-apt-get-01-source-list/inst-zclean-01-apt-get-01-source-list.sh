@@ -17,5 +17,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 yes | cp -a /etc/apt/sources.list      /etc/apt/sources.list.tmp
 yes | cp -a /etc/apt/sources.list.live /etc/apt/sources.list
 
+# Remove localhost sources
+sed -i '/\/\/localhost\//d' /etc/apt/sources.list
+
 # Log
 echo "${GV_LOG} * Reinstate original Debian repositories back to source.list."
