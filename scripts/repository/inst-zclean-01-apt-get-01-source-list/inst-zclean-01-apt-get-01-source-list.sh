@@ -14,8 +14,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   3) Run this script to reinstate original Debian repositories to source.list.
 
 # Reinstate original Debian repositories to source.list.
-yes | cp -a /etc/apt/source.list      /etc/apt/source.list.tmp
-yes | cp -a /etc/apt/source.list.live /etc/apt/source.list
+yes | cp -a /etc/apt/sources.list      /etc/apt/sources.list.tmp
+yes | cp -a /etc/apt/sources.list.live /etc/apt/sources.list
 
 # Log
 echo "${GV_LOG} * Reinstate original Debian repositories back to source.list."
