@@ -8,17 +8,14 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly install dependent packages.
 apt-get -y --force-yes install libavc1394-0
-apt-get -y --force-yes install libavcodec56
 apt-get -y --force-yes install libavcodec56 
 apt-get -y --force-yes install libavdevice56
-apt-get -y --force-yes install libavfilter5
 apt-get -y --force-yes install libavfilter5 
 apt-get -y --force-yes install libavformat56
 apt-get -y --force-yes install libcrystalhd3
 apt-get -y --force-yes install libiec61883-0
 apt-get -y --force-yes install libopencore-amrnb0
 apt-get -y --force-yes install libopencore-amrwb0
-apt-get -y --force-yes install libsmbclient
 apt-get -y --force-yes install libsmbclient 
 apt-get -y --force-yes install libvo-aacenc0
 apt-get -y --force-yes install libvo-amrwbenc0
