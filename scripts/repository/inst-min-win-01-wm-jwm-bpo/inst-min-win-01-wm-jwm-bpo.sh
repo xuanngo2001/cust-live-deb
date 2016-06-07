@@ -8,7 +8,7 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Install Office Suite from jessie-backports.
+# Add jessie-backports source.
 GF_ADD_SOURCE_LIST live "deb http://http.debian.net/debian jessie-backports main"
 apt-get update
 
