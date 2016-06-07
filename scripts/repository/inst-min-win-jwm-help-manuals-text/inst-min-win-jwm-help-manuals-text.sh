@@ -13,8 +13,8 @@ DOC_DIR=/root/cld-doc
 mkdir -p ${DOC_DIR}
 yes | cp -R ../../settings/doc/cust-live-deb.wiki/*-manual.md ${DOC_DIR}
 
-# Add Help menu in JWM.
-sed -i "/Help\">/ r jwmrc-menus-help-manuals-text.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+# Overwrite manuals menu.
+yes | cp -av jwmrc-menus-help-manuals.xml ${GV_CLD_ROOT_DIR}
 
 # Log
 echo "${GV_LOG} * Add Help menu in JWM."
