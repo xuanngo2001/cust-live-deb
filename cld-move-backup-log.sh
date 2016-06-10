@@ -38,10 +38,11 @@ function F_MAIN()
     find "${LOG_DIR}" -type f -name 'install.sh.log*' -exec bash -c 'F_OVERWRITE_IF_DIFF "$0" "$1"' {} "${BASE_SCRIPT_DIR}" \;
     
 	
-	# Processing dpkg.log
+	# Processing dpkg.log & dpkg-version.log
 		BINARY_DIR=./binary
 		BINARY_DIR=$(readlink -ev "${BINARY_DIR}")
     find "${LOG_DIR}" -type f -name 'dpkg.log' -exec bash -c 'F_OVERWRITE_IF_DIFF "$0" "$1"' {} "${BINARY_DIR}" \;
+    find "${LOG_DIR}" -type f -name 'dpkg-version.log' -exec bash -c 'F_OVERWRITE_IF_DIFF "$0" "$1"' {} "${BINARY_DIR}" \;
     
 }
 
