@@ -12,9 +12,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Explicitly download dependent packages.
 apt-get -d -y --force-yes install linux-headers-amd64
 
-KERNEL_VERSION=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
 
 # Install required packages to compile VirtualBox guest additions.
+KERNEL_VERSION=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
 PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_VERSION}"
 apt-get -y --force-yes install ${PKGS_LIST}
 
