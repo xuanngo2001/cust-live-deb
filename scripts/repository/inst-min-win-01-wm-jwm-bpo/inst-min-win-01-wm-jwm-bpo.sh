@@ -9,7 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Add jessie-backports source.
-GF_ADD_SOURCE_LIST live "deb http://http.debian.net/debian jessie-backports main"
+GF_ADD_SOURCE_LIST live "deb http://http.debian.net/debian jessie-backports main contrib non-free"
 apt-get update
 
 # Install JWM.

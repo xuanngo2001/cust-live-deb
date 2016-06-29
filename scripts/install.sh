@@ -48,3 +48,4 @@ done
 
 # Log all packages installed.
 dpkg -l > "${LOG_DIR}/dpkg.log"
+cld-dpkg-list.sh > "${LOG_DIR}/dpkg-version.log"

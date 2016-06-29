@@ -1,11 +1,11 @@
 * >>>>>>>>> Running inst-min-con-xtra-dev-tool-java-jdk.sh ...
-  * After this operation, 147 MB of additional disk space will be used.
+  * After this operation, 143 MB of additional disk space will be used.
   * Install JAVA JDK: default-jdk.
-  * Disk size = 2016740K. Space Used = 224344K.
+  * Disk size = 2488064K. Space Used = 220532K.
   * The following NEW packages will be installed:
   ```bash
   ca-certificates ca-certificates-java default-jdk default-jre
-  default-jre-headless fontconfig fontconfig-config fonts-liberation
+  default-jre-headless fontconfig fontconfig-config fonts-dejavu-core
   java-common libasyncns0 libatk-wrapper-java libatk-wrapper-java-jni
   libatk1.0-0 libatk1.0-data libavahi-client3 libavahi-common-data
   libavahi-common3 libcairo2 libcups2 libdatrie1 libdrm2 libflac8

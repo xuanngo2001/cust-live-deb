@@ -37,7 +37,36 @@ http://www.somsubhra.com/github-release-stats/?username=limelime&repository=cust
 ## Regenerate initrd
 * https://kernel-handbook.alioth.debian.org/ch-initramfs.html#s-initramfs-regen
 
+# Upgrade to new kernel
 
+* Make sure that your repository contain the latest version and headers.
+
+From 3.16.0-4-amd64 to 4.5.0-0.bpo.1-amd64:
+
+    Processing triggers for man-db (2.7.0.2-5) ...
+    libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file '/lib/modules/3.16.0-4-amd64/modules.dep.bin'
+    modinfo: ERROR: Module alias vboxguest not found.
+    CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
+    CLDS: * Assumed packages installed: bzip2 & Xserver installed.
+    CLDS: * Install dkms, libc6-dev, linux-libc-dev, linux-headers-4.5.0-0.bpo.1-amd64 to compile VirtualBox guest additions.
+    CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
+
+    CLDS: * Install VirtualBox WARNING: The vboxdrv kernel module is not loaded. Either there is no module
+             available for the current kernel (3.16.0-4-amd64) or it failed to
+             load. Please recompile the kernel module and install it by
+    
+               sudo /sbin/rcvboxdrv setup
+    
+             You will not be able to start VMs until this problem is fixed.
+    5.0.20r106931.
+
+## ZFS
+1. Follow instructions from https://github.com/zfsonlinux/zfs/issues/3065#issuecomment-72376515.
+1. Manually run `cld-mkiso.sh`.
+
+* https://github.com/zfsonlinux/zfs/issues/3065
+* https://github.com/zfsonlinux/zfs/issues/1466
+* https://github.com/zfsonlinux/zfs/issues/1860
 
 # References
 * http://live.debian.net/manual/git/html/live-manual.en.html (Manual)

@@ -27,11 +27,11 @@ The following NEW packages will be installed:
   libgcc-4.9-dev libgomp1 libisl10 libitm1 liblsan0 libmpc3 libmpfr4
   libquadmath0 libsigsegv2 libstdc++-4.9-dev libtsan0 libubsan0 linux-libc-dev
   m4 make perl perl-modules
-0 upgraded, 33 newly installed, 0 to remove and 1 not upgraded.
-Need to get 50.7 MB of archives.
+0 upgraded, 33 newly installed, 0 to remove and 2 not upgraded.
+Need to get 50.9 MB of archives.
 After this operation, 173 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main perl-modules all 5.20.2-3+deb8u4 [2,546 kB]
-Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main perl amd64 5.20.2-3+deb8u4 [2,638 kB]
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main perl-modules all 5.20.2-3+deb8u5 [2,546 kB]
+Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main perl amd64 5.20.2-3+deb8u5 [2,655 kB]
 Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main libasan1 amd64 4.9.2-10 [195 kB]
 Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libatomic1 amd64 4.9.2-10 [8,992 B]
 Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main libcilkrts5 amd64 4.9.2-10 [40.1 kB]
@@ -57,21 +57,21 @@ Get:24 http://localhost/aptly-repo/jessie-main/ jessie/main libgcc-4.9-dev amd64
 Get:25 http://localhost/aptly-repo/jessie-main/ jessie/main gcc-4.9 amd64 4.9.2-10 [5,352 kB]
 Get:26 http://localhost/aptly-repo/jessie-main/ jessie/main gcc amd64 4:4.9.2-2 [5,136 B]
 Get:27 http://localhost/aptly-repo/jessie-main/ jessie/main libc-dev-bin amd64 2.19-18+deb8u4 [237 kB]
-Get:28 http://localhost/aptly-repo/jessie-main/ jessie/main linux-libc-dev amd64 3.16.7-ckt25-1 [1,023 kB]
+Get:28 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-libc-dev amd64 4.5.4-1~bpo8+1 [1,126 kB]
 Get:29 http://localhost/aptly-repo/jessie-main/ jessie/main libc6-dev amd64 2.19-18+deb8u4 [2,002 kB]
 Get:30 http://localhost/aptly-repo/jessie-main/ jessie/main libstdc++-4.9-dev amd64 4.9.2-10 [1,121 kB]
 Get:31 http://localhost/aptly-repo/jessie-main/ jessie/main g++-4.9 amd64 4.9.2-10 [21.4 MB]
 Get:32 http://localhost/aptly-repo/jessie-main/ jessie/main g++ amd64 4:4.9.2-2 [1,530 B]
 Get:33 http://localhost/aptly-repo/jessie-main/ jessie/main make amd64 4.0-8.1 [349 kB]
 Extracting templates from packages: 90%Extracting templates from packages: 100%
-Fetched 50.7 MB in 1s (37.9 MB/s)
+Fetched 50.9 MB in 2s (22.0 MB/s)
 Selecting previously unselected package perl-modules.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18834 files and directories currently installed.)
-Preparing to unpack .../perl-modules_5.20.2-3+deb8u4_all.deb ...
-Unpacking perl-modules (5.20.2-3+deb8u4) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18889 files and directories currently installed.)
+Preparing to unpack .../perl-modules_5.20.2-3+deb8u5_all.deb ...
+Unpacking perl-modules (5.20.2-3+deb8u5) ...
 Selecting previously unselected package perl.
-Preparing to unpack .../perl_5.20.2-3+deb8u4_amd64.deb ...
-Unpacking perl (5.20.2-3+deb8u4) ...
+Preparing to unpack .../perl_5.20.2-3+deb8u5_amd64.deb ...
+Unpacking perl (5.20.2-3+deb8u5) ...
 Selecting previously unselected package libasan1:amd64.
 Preparing to unpack .../libasan1_4.9.2-10_amd64.deb ...
 Unpacking libasan1:amd64 (4.9.2-10) ...
@@ -148,8 +148,8 @@ Selecting previously unselected package libc-dev-bin.
 Preparing to unpack .../libc-dev-bin_2.19-18+deb8u4_amd64.deb ...
 Unpacking libc-dev-bin (2.19-18+deb8u4) ...
 Selecting previously unselected package linux-libc-dev:amd64.
-Preparing to unpack .../linux-libc-dev_3.16.7-ckt25-1_amd64.deb ...
-Unpacking linux-libc-dev:amd64 (3.16.7-ckt25-1) ...
+Preparing to unpack .../linux-libc-dev_4.5.4-1~bpo8+1_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.5.4-1~bpo8+1) ...
 Selecting previously unselected package libc6-dev:amd64.
 Preparing to unpack .../libc6-dev_2.19-18+deb8u4_amd64.deb ...
 Unpacking libc6-dev:amd64 (2.19-18+deb8u4) ...
@@ -166,8 +166,8 @@ Selecting previously unselected package make.
 Preparing to unpack .../make_4.0-8.1_amd64.deb ...
 Unpacking make (4.0-8.1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
-Setting up perl-modules (5.20.2-3+deb8u4) ...
-Setting up perl (5.20.2-3+deb8u4) ...
+Setting up perl-modules (5.20.2-3+deb8u5) ...
+Setting up perl (5.20.2-3+deb8u5) ...
 update-alternatives: using /usr/bin/prename to provide /usr/bin/rename (rename) in auto mode
 Setting up libasan1:amd64 (4.9.2-10) ...
 Setting up libatomic1:amd64 (4.9.2-10) ...
@@ -195,7 +195,7 @@ Setting up libgcc-4.9-dev:amd64 (4.9.2-10) ...
 Setting up gcc-4.9 (4.9.2-10) ...
 Setting up gcc (4:4.9.2-2) ...
 Setting up libc-dev-bin (2.19-18+deb8u4) ...
-Setting up linux-libc-dev:amd64 (3.16.7-ckt25-1) ...
+Setting up linux-libc-dev:amd64 (4.5.4-1~bpo8+1) ...
 Setting up libc6-dev:amd64 (2.19-18+deb8u4) ...
 Setting up libstdc++-4.9-dev:amd64 (4.9.2-10) ...
 Setting up g++-4.9 (4.9.2-10) ...
@@ -371,6 +371,11 @@ config.status: creating config.h
 config.status: config.h is unchanged
 make  all-am
 make[1]: Entering directory '/root/scripts/repository/inst-min-win-mjwm/mjwm-master'
+  CXX      src/directoryx.o
+  CXX      src/desktop_entry_file_search.o
+  CXX      src/qualified_icon_theme.o
+  CXX      src/icon_search/xdg_search.o
+  CXXLD    mjwm
 make[1]: Leaving directory '/root/scripts/repository/inst-min-win-mjwm/mjwm-master'
 make[1]: Entering directory '/root/scripts/repository/inst-min-win-mjwm/mjwm-master'
  /bin/mkdir -p '/usr/bin'
@@ -381,4 +386,4 @@ make[1]: Entering directory '/root/scripts/repository/inst-min-win-mjwm/mjwm-mas
  /usr/bin/install -c -m 644 data/default.mjwm data/puppy.mjwm '/usr/share/mjwm'
 make[1]: Leaving directory '/root/scripts/repository/inst-min-win-mjwm/mjwm-master'
 CLDS: * Install mjwm.
-CLDS: * Disk size = 2170504K. Space Used = 221376K.
+CLDS: * Disk size = 2228448K. Space Used = 221900K.

@@ -8,11 +8,11 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install Office Suite from jessie-backports.
-GF_ADD_SOURCE_LIST live "deb http://http.debian.net/debian jessie-backports main"
+GF_ADD_SOURCE_LIST live "deb http://http.debian.net/debian jessie-backports main contrib non-free"
 apt-get update
 
-# Explicitly install dependent packages.
-apt-get -t jessie-backports -y --force-yes install libpagemaker-0.0-0
+# Explicitly download dependent packages
+apt-get -t jessie-backports -d -y --force-yes install libpagemaker-0.0-0
 
 # Install libreoffice.
 apt-get -t jessie-backports -y --force-yes install libreoffice-writer

@@ -73,6 +73,14 @@ udevil
 buffer
 # ./inst-min-con-xtra-buffer-pv/inst-min-con-xtra-buffer-pv.sh
 pv
+# ./inst-min-con-xtra-cld-dev-tools-aptly/inst-min-con-xtra-cld-dev-tools-aptly.sh
+xz-utils
+aptly
+# ./inst-min-con-xtra-cld-dev-virtualbox-guest-additions/inst-min-con-xtra-cld-dev-virtualbox-guest-additions.sh
+linux-headers-amd64
+${PKGS_LIST}
+virtualbox-guest-dkms
+virtualbox-guest-utils
 # ./inst-min-con-xtra-curl/inst-min-con-xtra-curl.sh
 curl
 # ./inst-min-con-xtra-dev-tool-java-jdk/inst-min-con-xtra-dev-tool-java-jdk.sh
@@ -104,7 +112,9 @@ php5
 # ./inst-min-win-00-xorg/inst-min-win-00-xorg.sh
 xinit
 xserver-xorg
-# ./inst-min-win-01-wm-jwm/inst-min-win-01-wm-jwm.sh
+# ./inst-min-win-01-basic-font/inst-min-win-01-basic-font.sh
+fonts-dejavu-core
+# ./inst-min-win-01-wm-jwm-bpo/inst-min-win-01-wm-jwm-bpo.sh
 jwm
 # ./inst-min-win-cld-dev-tools-pandoc/inst-min-win-cld-dev-tools-pandoc.sh
 pandoc
@@ -117,11 +127,6 @@ x11-utils
 
 # ./inst-min-win-menu/inst-min-win-menu.sh
 menu
-# ./inst-min-win-mjwm/inst-min-win-mjwm.sh
-make
-automake
-autoconf
-g++
 # ./inst-min-win-systray-volumeicon-alsa/inst-min-win-systray-volumeicon-alsa.sh
 volumeicon-alsa
 # ./inst-min-xtra-encoding-libtext-iconv-perl/inst-min-xtra-encoding-libtext-iconv-perl.sh
@@ -161,20 +166,14 @@ flashplugin-nonfree
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
 libavc1394-0
 libavcodec56
-libavcodec56
-
 libavdevice56
 libavfilter5
-libavfilter5
-
 libavformat56
 libcrystalhd3
 libiec61883-0
 libopencore-amrnb0
 libopencore-amrwb0
 libsmbclient
-libsmbclient
-
 libvo-aacenc0
 libvo-amrwbenc0
 libzvbi0
@@ -188,11 +187,11 @@ libreoffice-draw
 libreoffice-base
 libreoffice-math
 # ./inst-std-office-xtra-projectlibre/inst-std-office-xtra-projectlibre.sh
-
+default-jre
 # ./inst-std-system-alsamixer/inst-std-system-alsamixer.sh
 
 # ./inst-std-system-conky/inst-std-system-conky.sh
-conky
+conky=1.9.0-6
 # ./inst-std-system-gnome-disk-utility/inst-std-system-gnome-disk-utility.sh
 gnome-disk-utility
 # ./inst-std-system-keyboard/inst-std-system-keyboard.sh
@@ -222,13 +221,6 @@ php5-gd
 php5-mysql
 # ./inst-std-xtra-sweethome3d5/inst-std-xtra-sweethome3d5.sh
 
-# ./inst-xtra-cld-dev-tools-aptly/inst-xtra-cld-dev-tools-aptly.sh
-xz-utils
-aptly
-# ./inst-xtra-cld-dev-tools-libxml2-utils/inst-xtra-cld-dev-tools-libxml2-utils.sh
-libxml2-utils
-# ./inst-xtra-cld-dev-tools-xsltproc/inst-xtra-cld-dev-tools-xsltproc.sh
-xsltproc
 # ./inst-xtra-dev-tools-ant/inst-xtra-dev-tools-ant.sh
 ant
 # ./inst-xtra-fuse/inst-xtra-fuse.sh
@@ -240,32 +232,17 @@ x11-utils
 xterm
 # ./inst-xtra-sqlite3/inst-xtra-sqlite3.sh
 sqlite3
-# ./inst-xtra-virtualbox5/inst-xtra-virtualbox5.sh
-${PKGS_LIST}
-libqt4-opengl
-virtualbox-5.0
-# ./inst-xtra-virtualbox-guest-iso/inst-xtra-virtualbox-guest-iso.sh
-${PKGS_LIST}
 # ./inst-xtra-wifite/inst-xtra-wifite.sh
 wifite
-# ./inst-xtra-wine-diablo2/inst-xtra-wine-diablo2.sh
-libjpeg-turbo-progs
-libldap-2.4-2
-# ./inst-xtra-wine/inst-xtra-wine.sh
-wine64
-wine32
-wine
 # ./inst-xtra-xmpv/inst-xtra-xmpv.sh
 
 # ./inst-xtra-zfs/inst-xtra-zfs.sh
-spl-dkms
-zfs-dkms
+file
 linux-headers-amd64
+build-essential
 lsb-release
 libc6-dev
 debian-zfs
-# ./inst-zclean-00-apt-get-distro-upgrade/inst-zclean-00-apt-get-distro-upgrade.sh
-
 # ./inst-zclean-01-apt-get-00-clean-up/inst-zclean-01-apt-get-00-clean-up.sh
 
 # ./inst-zclean-01-apt-get-01-source-list/inst-zclean-01-apt-get-01-source-list.sh

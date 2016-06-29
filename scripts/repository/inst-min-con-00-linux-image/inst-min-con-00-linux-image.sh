@@ -6,7 +6,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Always use the latest version of the repository.
 apt-get update
-apt-get -y --force-yes dist-upgrade 
+#apt-get -y --force-yes dist-upgrade 
 
 # Install basic packages.
 apt-get -y --force-yes install dialog dbus
@@ -15,12 +15,9 @@ dbus-uuidgen > /var/lib/dbus/machine-id
 # Install linux image.
 apt-get -y --force-yes install linux-image-amd64 live-boot
 
-
+# Manually create /boot/initrd.img-* for a specific kernel.
 # Get _installed_ kernel version.
 KERNEL_VERSION=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
-
-
-# Manually create /boot/initrd.img-* for a specific kernel.
 mkinitramfs -d /etc/initramfs-tools -o /boot/initrd.img-${KERNEL_VERSION} ${KERNEL_VERSION} -r /
 
 echo "${GV_LOG} * Generate dbus-uuidgen to /var/lib/dbus/machine-id."

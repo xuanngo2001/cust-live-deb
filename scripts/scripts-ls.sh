@@ -12,6 +12,7 @@ if [ -z "${SYSTEM}" ]; then
   echo "${SCRIPT_NAME}: Error: SYSTEM argument missing. e.g.:"
   echo "   ${SCRIPT_NAME} min"
   echo "   ${SCRIPT_NAME} std"
+  echo "   ${SCRIPT_NAME} repo"
   echo "   ${SCRIPT_NAME} all"
   exit 0
 fi
@@ -62,6 +63,25 @@ case "${SYSTEM}" in
 
     # No extra
     sed -i '/-xtra-/d' ${SCRIPT_LIST}
+    ;;
+
+  # Minimum system + tools to rebuild Debian repository from scratch.
+  repo)
+    # Minimum system
+	    # Add inst-min-con- | Add inst-min-win-
+	    grep 'inst-min-con-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
+	    grep 'inst-min-win-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
+	    
+	    # No extra
+	    sed -i '/-xtra-/d' ${SCRIPT_LIST}
+    
+    # Tools to rebuild Debian repository.
+      grep -F 'inst-min-con-xtra-cld-dev-tools-aptly' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
+      grep -F 'inst-min-con-xtra-cld-dev-virtualbox-guest-additions' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
+#      grep -F 'inst-min-win-xtra-cld-dev-tools-virtualbox-guest-iso' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
+#      grep -F 'inst-xtra-virtualbox-guest-x11-bpo' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
+      grep -F 'inst-xtra-zfs' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
+    
     ;;
 
   # Most of applications but no proxy settings and no virtualbox. 

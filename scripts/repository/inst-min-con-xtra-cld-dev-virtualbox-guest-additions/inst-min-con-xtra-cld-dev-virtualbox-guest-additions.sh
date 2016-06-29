@@ -23,6 +23,10 @@ apt-get -y --force-yes install virtualbox-guest-dkms virtualbox-guest-utils
 
 
 # Log
+VBOXGUEST_ADD_VERSION=$(modinfo vboxguest | grep ^version | tr -s ' ')
+if [ -z "${VBOXGUEST_ADD_VERSION}" ]; then
+  VBOXGUEST_ADD_VERSION="ERROR: VirtualBox guest additions installation failed!"
+fi
 echo "${GV_LOG} * Install virtualbox-guest-utils to access shared folder. No need for x11. Less error prone."
 echo "${GV_LOG} * VirtualBox guest additions installed: ${VBOXGUEST_ADD_VERSION}."
 

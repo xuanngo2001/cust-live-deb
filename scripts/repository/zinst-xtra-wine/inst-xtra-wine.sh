@@ -8,8 +8,8 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Explicitly install dependent packages
-apt-get -y --force-yes install wine64
+# Explicitly download dependent packages
+apt-get install -d -y --force-yes  wine64 libwine ocl-icd-libopencl1 libopencl1 libopencl-1.1-1
 
 # Install wine so that you can run Windows applications.
 apt-get -y --force-yes install wine

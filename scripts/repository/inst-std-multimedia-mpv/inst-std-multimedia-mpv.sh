@@ -6,20 +6,20 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Explicitly install dependent packages.
-apt-get -y --force-yes install libavc1394-0
-apt-get -y --force-yes install libavcodec56 
-apt-get -y --force-yes install libavdevice56
-apt-get -y --force-yes install libavfilter5 
-apt-get -y --force-yes install libavformat56
-apt-get -y --force-yes install libcrystalhd3
-apt-get -y --force-yes install libiec61883-0
-apt-get -y --force-yes install libopencore-amrnb0
-apt-get -y --force-yes install libopencore-amrwb0
-apt-get -y --force-yes install libsmbclient 
-apt-get -y --force-yes install libvo-aacenc0
-apt-get -y --force-yes install libvo-amrwbenc0
-apt-get -y --force-yes install libzvbi0
+# Explicitly download dependent packages
+apt-get install -d -y --force-yes libavc1394-0
+apt-get install -d -y --force-yes libavcodec56 
+apt-get install -d -y --force-yes libavdevice56
+apt-get install -d -y --force-yes libavfilter5 
+apt-get install -d -y --force-yes libavformat56
+apt-get install -d -y --force-yes libcrystalhd3
+apt-get install -d -y --force-yes libiec61883-0
+apt-get install -d -y --force-yes libopencore-amrnb0
+apt-get install -d -y --force-yes libopencore-amrwb0
+apt-get install -d -y --force-yes libsmbclient 
+apt-get install -d -y --force-yes libvo-aacenc0
+apt-get install -d -y --force-yes libvo-amrwbenc0
+apt-get install -d -y --force-yes libzvbi0
 
 
 # Install MPV.

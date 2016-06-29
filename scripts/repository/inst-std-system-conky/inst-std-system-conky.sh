@@ -9,7 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install conky.
-  apt-get -y --force-yes install conky
+  apt-get -y --force-yes install conky-std=1.9.0-6
 
 # Add conky config files.
 	CONKYRC=conkyrc

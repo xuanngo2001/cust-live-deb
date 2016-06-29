@@ -7,14 +7,15 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+KERNEL_VERSION=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
 
 # Install required packages to compile VirtualBox guest additions.
-PKGS_LIST="dkms libc6-dev linux-headers-$(uname -r)"
+PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_VERSION} build-essential module-assistant"
 apt-get -y --force-yes install ${PKGS_LIST}
 
 
 # Install VBoxGuestAdditions
-VBOXGUEST_ADD_ISO=VBoxGuestAdditions.iso
+VBOXGUEST_ADD_ISO="VBoxGuestAdditions.iso"
 VBOXGUEST_ADD_ISO_SIZE=$(GF_SIZE_OF ${VBOXGUEST_ADD_ISO})
 VBOXGUEST_ADD_MNT_DIR=/tmp/VBoxGuestAdditions
 if [ -f ${VBOXGUEST_ADD_ISO} ]
@@ -36,6 +37,7 @@ fi
 apt-get -y --force-yes purge ${PKGS_LIST}
 apt-get -y --force-yes autoremove
 
+cp VBoxGuestAdditions_5.0.20.iso /root
 
 # Log
 VBOXGUEST_ADD_VERSION=$(modinfo vboxguest | grep ^version | tr -s ' ')
@@ -50,6 +52,7 @@ echo "${GV_LOG} * Delete ${VBOXGUEST_ADD_ISO}[${VBOXGUEST_ADD_ISO_SIZE}K]. Space
 
 
 # Reference:
+# https://forums.virtualbox.org/viewtopic.php?t=15679
 # Tried packages from big to small:
 #	apt-get -y --force-yes install dkms build-essential linux-headers-$(uname -r)
 #	apt-get -y --force-yes install dkms libc6-dev linux-headers-$(uname -r)

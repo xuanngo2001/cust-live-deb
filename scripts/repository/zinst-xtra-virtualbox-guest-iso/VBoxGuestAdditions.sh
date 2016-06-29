@@ -12,11 +12,13 @@ URL=http://download.virtualbox.org/virtualbox/5.0.10/VBoxGuestAdditions_5.0.10.i
 URL=http://download.virtualbox.org/virtualbox/5.0.12/VBoxGuestAdditions_5.0.12.iso
 URL=http://download.virtualbox.org/virtualbox/5.0.14/VBoxGuestAdditions_5.0.14.iso
 URL=http://download.virtualbox.org/virtualbox/5.0.16/VBoxGuestAdditions_5.0.16.iso
+URL=http://download.virtualbox.org/virtualbox/5.0.20/VBoxGuestAdditions_5.0.20.iso
 
 # Download ISO if not already exists.
 ISO_FILE=$(basename $URL)
 if [ ! -f "${ISO_FILE}" ]; then
   wget "${URL}"
+  md5sum "${ISO_FILE}" >> VBoxGuestAdditions.md5
 fi
 
 # Create symbolic link.

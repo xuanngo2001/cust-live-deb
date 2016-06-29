@@ -1,6 +1,6 @@
 CLDS:>>>>>>>>> Running inst-std-internet-iceweasel-bpo.sh ...
 Selecting previously unselected package pkg-mozilla-archive-keyring.
-(Reading database ... 35834 files and directories currently installed.)
+(Reading database ... 51421 files and directories currently installed.)
 Preparing to unpack pkg-mozilla-archive-keyring_1.1_all.deb ...
 Unpacking pkg-mozilla-archive-keyring (1.1) ...
 Setting up pkg-mozilla-archive-keyring (1.1) ...
@@ -9,9 +9,16 @@ Hit http://localhost nightly InRelease
 Hit http://localhost jessie InRelease
 Hit http://localhost jessie InRelease
 Hit http://localhost jessie-backports InRelease
+Hit http://localhost jessie-backports InRelease
+Hit http://localhost jessie-backports InRelease
 Hit http://localhost jessie InRelease
 Hit http://localhost jessie InRelease
-Hit http://localhost jessie InRelease
+Hit http://localhost jessie-updates InRelease
+Hit http://localhost jessie-updates InRelease
+Hit http://localhost jessie-updates InRelease
+Hit http://localhost jessie-updates InRelease
+Hit http://localhost jessie-updates InRelease
+Hit http://localhost jessie-updates InRelease
 Hit http://localhost jessie InRelease
 Hit http://localhost jessie InRelease
 Hit http://localhost jessie/main amd64 Packages
@@ -22,32 +29,60 @@ Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://localhost nightly/main Translation-en_US
 Ign http://localhost nightly/main Translation-en
-Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost jessie-backports/main amd64 Packages
-Hit http://localhost jessie/contrib amd64 Packages
 Ign http://localhost nightly/main Translation-en_US.UTF-8
-Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost jessie/main amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
-Hit http://localhost jessie/contrib amd64 Packages
-Hit http://localhost jessie/main amd64 Packages
+Hit http://localhost jessie/non-free amd64 Packages
+Hit http://localhost jessie-backports/contrib amd64 Packages
+Hit http://localhost jessie-backports/main amd64 Packages
+Hit http://localhost jessie-backports/non-free amd64 Packages
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
+Ign http://localhost jessie-backports/contrib Translation-en_US
+Ign http://localhost jessie-backports/contrib Translation-en
+Ign http://localhost jessie-backports/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie-backports/main Translation-en_US
 Ign http://localhost jessie-backports/main Translation-en
 Ign http://localhost jessie-backports/main Translation-en_US.UTF-8
+Ign http://localhost jessie-backports/non-free Translation-en_US
+Hit http://localhost jessie/contrib amd64 Packages
+Hit http://localhost jessie/non-free amd64 Packages
+Ign http://localhost jessie-backports/non-free Translation-en
+Ign http://localhost jessie-backports/non-free Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/contrib amd64 Packages
+Hit http://localhost jessie-updates/main amd64 Packages
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
 Ign http://localhost jessie/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
+Hit http://localhost jessie-updates/non-free amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
-Ign http://localhost jessie/main Translation-en_US
-Ign http://localhost jessie/main Translation-en
-Ign http://localhost jessie/main Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/main amd64 Packages
+Hit http://localhost jessie-updates/non-free amd64 Packages
+Ign http://localhost jessie-updates/contrib Translation-en_US
+Ign http://localhost jessie-updates/contrib Translation-en
+Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/main Translation-en_US
+Ign http://localhost jessie-updates/main Translation-en
+Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
+Hit http://localhost jessie/contrib amd64 Packages
+Hit http://localhost jessie/main amd64 Packages
+Ign http://localhost jessie-updates/non-free Translation-en_US
+Ign http://localhost jessie-updates/non-free Translation-en
+Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/contrib Translation-en_US
+Ign http://localhost jessie-updates/contrib Translation-en
+Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/main Translation-en_US
+Ign http://localhost jessie-updates/main Translation-en
+Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/non-free Translation-en_US
+Ign http://localhost jessie-updates/non-free Translation-en
+Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
 Ign http://localhost jessie/contrib Translation-en_US.UTF-8
@@ -59,256 +94,232 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  libevent-2.0-5 libhunspell-1.3-0
+  firefox-esr libevent-2.0-5 libhunspell-1.3-0
 Suggested packages:
-  fonts-stix otf-stix fonts-oflb-asana-math fonts-mathjax mozplugger
-  libgnomeui-0
+  fonts-stix otf-stix fonts-lmodern mozplugger libgnomeui-0
 Recommended packages:
   gstreamer1.0-libav gstreamer1.0-plugins-good hunspell-en-us
   hunspell-dictionary myspell-dictionary
 The following NEW packages will be installed:
-  iceweasel libevent-2.0-5 libhunspell-1.3-0
-0 upgraded, 3 newly installed, 0 to remove and 1 not upgraded.
-Need to get 39.6 MB of archives.
-After this operation, 91.6 MB of additional disk space will be used.
+  firefox-esr iceweasel libevent-2.0-5 libhunspell-1.3-0
+0 upgraded, 4 newly installed, 0 to remove and 6 not upgraded.
+Need to get 43.9 MB of archives.
+After this operation, 101 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libevent-2.0-5 amd64 2.0.21-stable-2 [152 kB]
 Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libhunspell-1.3-0 amd64 1.3.3-3 [139 kB]
-Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main iceweasel amd64 38.7.1esr-1~deb8u1 [39.3 MB]
-Fetched 39.6 MB in 0s (43.3 MB/s)
+Get:3 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main firefox-esr amd64 45.2.0esr-1~deb8u1 [43.5 MB]
+Get:4 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main iceweasel all 45.2.0esr-1~deb8u1 [118 kB]
+Fetched 43.9 MB in 1s (34.8 MB/s)
 Selecting previously unselected package libevent-2.0-5:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35838 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51425 files and directories currently installed.)
 Preparing to unpack .../libevent-2.0-5_2.0.21-stable-2_amd64.deb ...
 Unpacking libevent-2.0-5:amd64 (2.0.21-stable-2) ...
 Selecting previously unselected package libhunspell-1.3-0:amd64.
 Preparing to unpack .../libhunspell-1.3-0_1.3.3-3_amd64.deb ...
 Unpacking libhunspell-1.3-0:amd64 (1.3.3-3) ...
+Selecting previously unselected package firefox-esr.
+Preparing to unpack .../firefox-esr_45.2.0esr-1~deb8u1_amd64.deb ...
+Adding 'diversion of /usr/bin/firefox to /usr/bin/firefox.real by firefox-esr'
+Unpacking firefox-esr (45.2.0esr-1~deb8u1) ...
 Selecting previously unselected package iceweasel.
-Preparing to unpack .../iceweasel_38.7.1esr-1~deb8u1_amd64.deb ...
-Adding 'diversion of /usr/bin/firefox to /usr/bin/firefox.real by iceweasel'
-Unpacking iceweasel (38.7.1esr-1~deb8u1) ...
+Preparing to unpack .../iceweasel_45.2.0esr-1~deb8u1_all.deb ...
+Unpacking iceweasel (45.2.0esr-1~deb8u1) ...
+Processing triggers for mime-support (3.58) ...
 Processing triggers for desktop-file-utils (0.22-1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for hicolor-icon-theme (0.13-1) ...
-Processing triggers for menu (2.1.47) ...
 Setting up libevent-2.0-5:amd64 (2.0.21-stable-2) ...
 Setting up libhunspell-1.3-0:amd64 (1.3.3-3) ...
-Setting up iceweasel (38.7.1esr-1~deb8u1) ...
-update-alternatives: using /usr/bin/iceweasel to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
-update-alternatives: using /usr/bin/iceweasel to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
+Setting up firefox-esr (45.2.0esr-1~deb8u1) ...
+update-alternatives: using /usr/bin/firefox-esr to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
+update-alternatives: using /usr/bin/firefox-esr to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
+Setting up iceweasel (45.2.0esr-1~deb8u1) ...
 Processing triggers for libc-bin (2.19-18+deb8u4) ...
-Processing triggers for menu (2.1.47) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  ca-certificates libcurl3-gnutls libnspr4 libnss3 openssl
+  libcurl3-gnutls
 Suggested packages:
   konqueror-nsplugins ttf-mscorefonts-installer fonts-dejavu
   ttf-xfree86-nonfree hal
 The following NEW packages will be installed:
-  ca-certificates flashplugin-nonfree libcurl3-gnutls libnspr4 libnss3 openssl
-0 upgraded, 6 newly installed, 0 to remove and 1 not upgraded.
-Need to get 2,396 kB of archives.
-After this operation, 6,404 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main openssl amd64 1.0.1k-3+deb8u4 [677 kB]
-Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main ca-certificates all 20141019+deb8u1 [204 kB]
-Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main libnspr4 amd64 2:4.10.7-1+deb8u1 [117 kB]
-Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libnss3 amd64 2:3.17.2-1.1+deb8u2 [1,130 kB]
-Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main libcurl3-gnutls amd64 7.38.0-4+deb8u3 [251 kB]
-Get:6 http://localhost/aptly-repo/jessie-contrib/ jessie/contrib flashplugin-nonfree amd64 1:3.6.1 [17.9 kB]
-Preconfiguring packages ...
-Fetched 2,396 kB in 0s (24.7 MB/s)
-Selecting previously unselected package openssl.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35979 files and directories currently installed.)
-Preparing to unpack .../openssl_1.0.1k-3+deb8u4_amd64.deb ...
-Unpacking openssl (1.0.1k-3+deb8u4) ...
-Selecting previously unselected package ca-certificates.
-Preparing to unpack .../ca-certificates_20141019+deb8u1_all.deb ...
-Unpacking ca-certificates (20141019+deb8u1) ...
-Selecting previously unselected package libnspr4:amd64.
-Preparing to unpack .../libnspr4_2%3a4.10.7-1+deb8u1_amd64.deb ...
-Unpacking libnspr4:amd64 (2:4.10.7-1+deb8u1) ...
-Selecting previously unselected package libnss3:amd64.
-Preparing to unpack .../libnss3_2%3a3.17.2-1.1+deb8u2_amd64.deb ...
-Unpacking libnss3:amd64 (2:3.17.2-1.1+deb8u2) ...
+  flashplugin-nonfree libcurl3-gnutls
+0 upgraded, 2 newly installed, 0 to remove and 6 not upgraded.
+Need to get 269 kB of archives.
+After this operation, 752 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libcurl3-gnutls amd64 7.38.0-4+deb8u3 [251 kB]
+Get:2 http://localhost/aptly-repo/jessie-contrib/ jessie/contrib flashplugin-nonfree amd64 1:3.6.1 [17.9 kB]
+Fetched 269 kB in 0s (12.9 MB/s)
 Selecting previously unselected package libcurl3-gnutls:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51549 files and directories currently installed.)
 Preparing to unpack .../libcurl3-gnutls_7.38.0-4+deb8u3_amd64.deb ...
 Unpacking libcurl3-gnutls:amd64 (7.38.0-4+deb8u3) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up openssl (1.0.1k-3+deb8u4) ...
-Setting up ca-certificates (20141019+deb8u1) ...
-Processing triggers for ca-certificates (20141019+deb8u1) ...
-Updating certificates in /etc/ssl/certs... 174 added, 0 removed; done.
-Running hooks in /etc/ca-certificates/update.d....done.
 Selecting previously unselected package flashplugin-nonfree.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36311 files and directories currently installed.)
 Preparing to unpack .../flashplugin-nonfree_1%3a3.6.1_amd64.deb ...
 Unpacking flashplugin-nonfree (1:3.6.1) ...
 Processing triggers for desktop-file-utils (0.22-1) ...
+Processing triggers for mime-support (3.58) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for hicolor-icon-theme (0.13-1) ...
-Setting up libnspr4:amd64 (2:4.10.7-1+deb8u1) ...
-Setting up libnss3:amd64 (2:3.17.2-1.1+deb8u2) ...
 Setting up libcurl3-gnutls:amd64 (7.38.0-4+deb8u3) ...
 Setting up flashplugin-nonfree (1:3.6.1) ...
---2016-05-09 20:00:29--  https://fpdownload.adobe.com/get/flashplayer/pdc/11.2.202.616/install_flash_player_11_linux.x86_64.tar.gz
-Resolving proxy.wdf.sap.corp (proxy.wdf.sap.corp)... 147.204.6.136, 147.204.6.136
+--2016-06-29 15:29:27--  https://fpdownload.adobe.com/get/flashplayer/pdc/11.2.202.626/install_flash_player_11_linux.x86_64.tar.gz
+Resolving proxy.wdf.sap.corp (proxy.wdf.sap.corp)... 147.204.6.136
 Connecting to proxy.wdf.sap.corp (proxy.wdf.sap.corp)|147.204.6.136|:8080... connected.
 Proxy request sent, awaiting response... 200 OK
-Length: 7280774 (6.9M) [application/x-gzip]
-Saving to: ‘/tmp/flashplugin-nonfree.uRg7d5zzyE/install_flash_player_11_linux.x86_64.tar.gz’
+Length: 7295646 (7.0M) [application/x-gzip]
+Saving to: ‘/tmp/flashplugin-nonfree.ZMWrSLsax3/install_flash_player_11_linux.x86_64.tar.gz’
 
-     0K .......... .......... .......... .......... ..........  0% 9.84M 1s
-    50K .......... .......... .......... .......... ..........  1%  514K 7s
-   100K .......... .......... .......... .......... ..........  2%  539K 9s
-   150K .......... .......... .......... .......... ..........  2%  561K 10s
-   200K .......... .......... .......... .......... ..........  3%  565K 10s
-   250K .......... .......... .......... .......... ..........  4% 1.91M 9s
-   300K .......... .......... .......... .......... ..........  4%  594K 9s
-   350K .......... .......... .......... .......... ..........  5%  604K 9s
-   400K .......... .......... .......... .......... ..........  6%  565K 10s
-   450K .......... .......... .......... .......... ..........  7%  566K 10s
-   500K .......... .......... .......... .......... ..........  7% 2.05M 9s
-   550K .......... .......... .......... .......... ..........  8%  529K 9s
-   600K .......... .......... .......... .......... ..........  9%  646K 9s
-   650K .......... .......... .......... .......... ..........  9%  595K 9s
-   700K .......... .......... .......... .......... .......... 10%  664K 9s
-   750K .......... .......... .......... .......... .......... 11% 1.09M 9s
-   800K .......... .......... .......... .......... .......... 11%  556K 9s
-   850K .......... .......... .......... .......... .......... 12%  654K 9s
-   900K .......... .......... .......... .......... .......... 13%  644K 9s
-   950K .......... .......... .......... .......... .......... 14% 1.04M 9s
-  1000K .......... .......... .......... .......... .......... 14%  584K 9s
-  1050K .......... .......... .......... .......... .......... 15%  621K 9s
-  1100K .......... .......... .......... .......... .......... 16%  681K 9s
-  1150K .......... .......... .......... .......... .......... 16%  746K 9s
-  1200K .......... .......... .......... .......... .......... 17%  842K 8s
-  1250K .......... .......... .......... .......... .......... 18%  598K 8s
-  1300K .......... .......... .......... .......... .......... 18%  714K 8s
-  1350K .......... .......... .......... .......... .......... 19%  635K 8s
-  1400K .......... .......... .......... .......... .......... 20%  722K 8s
-  1450K .......... .......... .......... .......... .......... 21%  735K 8s
-  1500K .......... .......... .......... .......... .......... 21%  610K 8s
-  1550K .......... .......... .......... .......... .......... 22%  780K 8s
-  1600K .......... .......... .......... .......... .......... 23%  732K 8s
-  1650K .......... .......... .......... .......... .......... 23%  636K 8s
-  1700K .......... .......... .......... .......... .......... 24%  678K 8s
-  1750K .......... .......... .......... .......... .......... 25%  643K 8s
-  1800K .......... .......... .......... .......... .......... 26%  899K 8s
-  1850K .......... .......... .......... .......... .......... 26%  626K 8s
-  1900K .......... .......... .......... .......... .......... 27%  573K 8s
-  1950K .......... .......... .......... .......... .......... 28%  802K 7s
-  2000K .......... .......... .......... .......... .......... 28%  654K 7s
-  2050K .......... .......... .......... .......... .......... 29%  865K 7s
-  2100K .......... .......... .......... .......... .......... 30%  602K 7s
-  2150K .......... .......... .......... .......... .......... 30%  599K 7s
-  2200K .......... .......... .......... .......... .......... 31%  834K 7s
-  2250K .......... .......... .......... .......... .......... 32%  624K 7s
-  2300K .......... .......... .......... .......... .......... 33%  821K 7s
-  2350K .......... .......... .......... .......... .......... 33%  601K 7s
-  2400K .......... .......... .......... .......... .......... 34%  619K 7s
-  2450K .......... .......... .......... .......... .......... 35%  871K 7s
-  2500K .......... .......... .......... .......... .......... 35%  598K 7s
-  2550K .......... .......... .......... .......... .......... 36%  767K 7s
-  2600K .......... .......... .......... .......... .......... 37%  588K 6s
-  2650K .......... .......... .......... .......... .......... 37%  676K 6s
-  2700K .......... .......... .......... .......... .......... 38%  794K 6s
-  2750K .......... .......... .......... .......... .......... 39%  705K 6s
-  2800K .......... .......... .......... .......... .......... 40%  660K 6s
-  2850K .......... .......... .......... .......... .......... 40%  687K 6s
-  2900K .......... .......... .......... .......... .......... 41%  637K 6s
-  2950K .......... .......... .......... .......... .......... 42%  934K 6s
-  3000K .......... .......... .......... .......... .......... 42%  581K 6s
-  3050K .......... .......... .......... .......... .......... 43%  738K 6s
-  3100K .......... .......... .......... .......... .......... 44%  683K 6s
-  3150K .......... .......... .......... .......... .......... 45%  598K 6s
-  3200K .......... .......... .......... .......... .......... 45%  858K 6s
-  3250K .......... .......... .......... .......... .......... 46%  592K 6s
-  3300K .......... .......... .......... .......... .......... 47%  851K 5s
-  3350K .......... .......... .......... .......... .......... 47%  632K 5s
-  3400K .......... .......... .......... .......... .......... 48%  597K 5s
-  3450K .......... .......... .......... .......... .......... 49%  809K 5s
-  3500K .......... .......... .......... .......... .......... 49%  592K 5s
-  3550K .......... .......... .......... .......... .......... 50%  896K 5s
-  3600K .......... .......... .......... .......... .......... 51%  629K 5s
-  3650K .......... .......... .......... .......... .......... 52%  843K 5s
-  3700K .......... .......... .......... .......... .......... 52%  587K 5s
-  3750K .......... .......... .......... .......... .......... 53%  666K 5s
-  3800K .......... .......... .......... .......... .......... 54%  781K 5s
-  3850K .......... .......... .......... .......... .......... 54%  604K 5s
-  3900K .......... .......... .......... .......... .......... 55%  750K 5s
-  3950K .......... .......... .......... .......... .......... 56%  709K 5s
-  4000K .......... .......... .......... .......... .......... 56%  777K 4s
-  4050K .......... .......... .......... .......... .......... 57%  619K 4s
-  4100K .......... .......... .......... .......... .......... 58%  662K 4s
-  4150K .......... .......... .......... .......... .......... 59%  730K 4s
-  4200K .......... .......... .......... .......... .......... 59%  636K 4s
-  4250K .......... .......... .......... .......... .......... 60%  808K 4s
-  4300K .......... .......... .......... .......... .......... 61%  596K 4s
-  4350K .......... .......... .......... .......... .......... 61%  641K 4s
-  4400K .......... .......... .......... .......... .......... 62%  859K 4s
-  4450K .......... .......... .......... .......... .......... 63%  659K 4s
-  4500K .......... .......... .......... .......... .......... 63%  764K 4s
-  4550K .......... .......... .......... .......... .......... 64%  562K 4s
-  4600K .......... .......... .......... .......... .......... 65%  637K 4s
-  4650K .......... .......... .......... .......... .......... 66% 1000K 3s
-  4700K .......... .......... .......... .......... .......... 66%  550K 3s
-  4750K .......... .......... .......... .......... .......... 67%  764K 3s
-  4800K .......... .......... .......... .......... .......... 68%  619K 3s
-  4850K .......... .......... .......... .......... .......... 68%  638K 3s
-  4900K .......... .......... .......... .......... .......... 69%  917K 3s
-  4950K .......... .......... .......... .......... .......... 70%  615K 3s
-  5000K .......... .......... .......... .......... .......... 71%  715K 3s
-  5050K .......... .......... .......... .......... .......... 71%  671K 3s
-  5100K .......... .......... .......... .......... .......... 72%  640K 3s
-  5150K .......... .......... .......... .......... .......... 73%  817K 3s
-  5200K .......... .......... .......... .......... .......... 73%  608K 3s
-  5250K .......... .......... .......... .......... .......... 74%  748K 3s
-  5300K .......... .......... .......... .......... .......... 75%  663K 3s
-  5350K .......... .......... .......... .......... .......... 75%  597K 2s
-  5400K .......... .......... .......... .......... .......... 76%  878K 2s
-  5450K .......... .......... .......... .......... .......... 77%  613K 2s
-  5500K .......... .......... .......... .......... .......... 78%  828K 2s
-  5550K .......... .......... .......... .......... .......... 78%  591K 2s
-  5600K .......... .......... .......... .......... .......... 79%  665K 2s
-  5650K .......... .......... .......... .......... .......... 80%  820K 2s
-  5700K .......... .......... .......... .......... .......... 80%  615K 2s
-  5750K .......... .......... .......... .......... .......... 81%  758K 2s
-  5800K .......... .......... .......... .......... .......... 82%  669K 2s
-  5850K .......... .......... .......... .......... .......... 82%  582K 2s
-  5900K .......... .......... .......... .......... .......... 83%  926K 2s
-  5950K .......... .......... .......... .......... .......... 84%  595K 2s
-  6000K .......... .......... .......... .......... .......... 85%  828K 2s
-  6050K .......... .......... .......... .......... .......... 85%  595K 1s
-  6100K .......... .......... .......... .......... .......... 86%  624K 1s
-  6150K .......... .......... .......... .......... .......... 87%  900K 1s
-  6200K .......... .......... .......... .......... .......... 87%  585K 1s
-  6250K .......... .......... .......... .......... .......... 88%  876K 1s
-  6300K .......... .......... .......... .......... .......... 89%  602K 1s
-  6350K .......... .......... .......... .......... .......... 90%  800K 1s
-  6400K .......... .......... .......... .......... .......... 90%  620K 1s
-  6450K .......... .......... .......... .......... .......... 91%  598K 1s
-  6500K .......... .......... .......... .......... .......... 92%  753K 1s
-  6550K .......... .......... .......... .......... .......... 92%  662K 1s
-  6600K .......... .......... .......... .......... .......... 93%  793K 1s
-  6650K .......... .......... .......... .......... .......... 94%  655K 1s
-  6700K .......... .......... .......... .......... .......... 94%  774K 1s
-  6750K .......... .......... .......... .......... .......... 95%  497K 0s
-  6800K .......... .......... .......... .......... .......... 96%  591K 0s
-  6850K .......... .......... .......... .......... .......... 97%  661K 0s
-  6900K .......... .......... .......... .......... .......... 97%  573K 0s
-  6950K .......... .......... .......... .......... .......... 98% 1.29M 0s
-  7000K .......... .......... .......... .......... .......... 99%  595K 0s
-  7050K .......... .......... .......... .......... .......... 99%  557K 0s
-  7100K ..........                                            100% 15.2M=10s
+     0K .......... .......... .......... .......... ..........  0% 3.89M 2s
+    50K .......... .......... .......... .......... ..........  1%  501K 8s
+   100K .......... .......... .......... .......... ..........  2%  561K 9s
+   150K .......... .......... .......... .......... ..........  2%  562K 10s
+   200K .......... .......... .......... .......... ..........  3%  528K 11s
+   250K .......... .......... .......... .......... ..........  4%  780K 10s
+   300K .......... .......... .......... .......... ..........  4%  984K 10s
+   350K .......... .......... .......... .......... ..........  5%  528K 10s
+   400K .......... .......... .......... .......... ..........  6%  600K 10s
+   450K .......... .......... .......... .......... ..........  7%  691K 10s
+   500K .......... .......... .......... .......... ..........  7%  404K 10s
+   550K .......... .......... .......... .......... ..........  8%  107K 15s
+   600K .......... .......... .......... .......... ..........  9%  262K 15s
+   650K .......... .......... .......... .......... ..........  9%  496K 15s
+   700K .......... .......... .......... .......... .......... 10%  525K 15s
+   750K .......... .......... .......... .......... .......... 11%  286K 15s
+   800K .......... .......... .......... .......... .......... 11%  492K 15s
+   850K .......... .......... .......... .......... .......... 12%  256K 15s
+   900K .......... .......... .......... .......... .......... 13% 89.7K 18s
+   950K .......... .......... .......... .......... .......... 14%  493K 18s
+  1000K .......... .......... .......... .......... .......... 14%  176K 18s
+  1050K .......... .......... .......... .......... .......... 15%  483K 18s
+  1100K .......... .......... .......... .......... .......... 16%  262K 18s
+  1150K .......... .......... .......... .......... .......... 16%  285K 18s
+  1200K .......... .......... .......... .......... .......... 17%  473K 17s
+  1250K .......... .......... .......... .......... .......... 18%  495K 17s
+  1300K .......... .......... .......... .......... .......... 18%  511K 17s
+  1350K .......... .......... .......... .......... .......... 19%  282K 17s
+  1400K .......... .......... .......... .......... .......... 20%  419K 16s
+  1450K .......... .......... .......... .......... .......... 21%  623K 16s
+  1500K .......... .......... .......... .......... .......... 21%  466K 16s
+  1550K .......... .......... .......... .......... .......... 22%  566K 16s
+  1600K .......... .......... .......... .......... .......... 23%  378K 15s
+  1650K .......... .......... .......... .......... .......... 23%  423K 15s
+  1700K .......... .......... .......... .......... .......... 24% 1.25M 15s
+  1750K .......... .......... .......... .......... .......... 25%  402K 15s
+  1800K .......... .......... .......... .......... .......... 25%  678K 14s
+  1850K .......... .......... .......... .......... .......... 26%  525K 14s
+  1900K .......... .......... .......... .......... .......... 27%  521K 14s
+  1950K .......... .......... .......... .......... .......... 28%  623K 13s
+  2000K .......... .......... .......... .......... .......... 28%  658K 13s
+  2050K .......... .......... .......... .......... .......... 29%  861K 13s
+  2100K .......... .......... .......... .......... .......... 30%  445K 13s
+  2150K .......... .......... .......... .......... .......... 30% 76.4K 14s
+  2200K .......... .......... .......... .......... .......... 31%  522K 14s
+  2250K .......... .......... .......... .......... .......... 32%  456K 13s
+  2300K .......... .......... .......... .......... .......... 32%  499K 13s
+  2350K .......... .......... .......... .......... .......... 33%  309K 13s
+  2400K .......... .......... .......... .......... .......... 34%  462K 13s
+  2450K .......... .......... .......... .......... .......... 35%  559K 13s
+  2500K .......... .......... .......... .......... .......... 35%  486K 12s
+  2550K .......... .......... .......... .......... .......... 36%  543K 12s
+  2600K .......... .......... .......... .......... .......... 37%  505K 12s
+  2650K .......... .......... .......... .......... .......... 37%  525K 12s
+  2700K .......... .......... .......... .......... .......... 38%  578K 12s
+  2750K .......... .......... .......... .......... .......... 39%  530K 11s
+  2800K .......... .......... .......... .......... .......... 40%  593K 11s
+  2850K .......... .......... .......... .......... .......... 40%  566K 11s
+  2900K .......... .......... .......... .......... .......... 41%  946K 11s
+  2950K .......... .......... .......... .......... .......... 42%  712K 11s
+  3000K .......... .......... .......... .......... .......... 42%  563K 10s
+  3050K .......... .......... .......... .......... .......... 43%  603K 10s
+  3100K .......... .......... .......... .......... .......... 44%  660K 10s
+  3150K .......... .......... .......... .......... .......... 44%  676K 10s
+  3200K .......... .......... .......... .......... .......... 45%  879K 10s
+  3250K .......... .......... .......... .......... .......... 46%  591K 9s
+  3300K .......... .......... .......... .......... .......... 47%  634K 9s
+  3350K .......... .......... .......... .......... .......... 47%  990K 9s
+  3400K .......... .......... .......... .......... .......... 48%  722K 9s
+  3450K .......... .......... .......... .......... .......... 49%  561K 9s
+  3500K .......... .......... .......... .......... .......... 49%  570K 9s
+  3550K .......... .......... .......... .......... .......... 50% 1018K 8s
+  3600K .......... .......... .......... .......... .......... 51%  640K 8s
+  3650K .......... .......... .......... .......... .......... 51%  731K 8s
+  3700K .......... .......... .......... .......... .......... 52%  562K 8s
+  3750K .......... .......... .......... .......... .......... 53%  790K 8s
+  3800K .......... .......... .......... .......... .......... 54%  814K 8s
+  3850K .......... .......... .......... .......... .......... 54%  522K 7s
+  3900K .......... .......... .......... .......... .......... 55%  745K 7s
+  3950K .......... .......... .......... .......... .......... 56%  541K 7s
+  4000K .......... .......... .......... .......... .......... 56%  998K 7s
+  4050K .......... .......... .......... .......... .......... 57%  533K 7s
+  4100K .......... .......... .......... .......... .......... 58%  542K 7s
+  4150K .......... .......... .......... .......... .......... 58% 1.00M 7s
+  4200K .......... .......... .......... .......... .......... 59%  620K 6s
+  4250K .......... .......... .......... .......... .......... 60%  624K 6s
+  4300K .......... .......... .......... .......... .......... 61%  551K 6s
+  4350K .......... .......... .......... .......... .......... 61%  379K 6s
+  4400K .......... .......... .......... .......... .......... 62% 7.22M 6s
+  4450K .......... .......... .......... .......... .......... 63%  492K 6s
+  4500K .......... .......... .......... .......... .......... 63%  570K 6s
+  4550K .......... .......... .......... .......... .......... 64%  550K 6s
+  4600K .......... .......... .......... .......... .......... 65%  611K 5s
+  4650K .......... .......... .......... .......... .......... 65% 1.97M 5s
+  4700K .......... .......... .......... .......... .......... 66%  564K 5s
+  4750K .......... .......... .......... .......... .......... 67%  578K 5s
+  4800K .......... .......... .......... .......... .......... 68%  570K 5s
+  4850K .......... .......... .......... .......... .......... 68% 1.35M 5s
+  4900K .......... .......... .......... .......... .......... 69%  591K 5s
+  4950K .......... .......... .......... .......... .......... 70%  626K 5s
+  5000K .......... .......... .......... .......... .......... 70%  572K 4s
+  5050K .......... .......... .......... .......... .......... 71%  620K 4s
+  5100K .......... .......... .......... .......... .......... 72% 1.34M 4s
+  5150K .......... .......... .......... .......... .......... 72%  557K 4s
+  5200K .......... .......... .......... .......... .......... 73%  542K 4s
+  5250K .......... .......... .......... .......... .......... 74%  675K 4s
+  5300K .......... .......... .......... .......... .......... 75% 1.03M 4s
+  5350K .......... .......... .......... .......... .......... 75%  543K 4s
+  5400K .......... .......... .......... .......... .......... 76%  628K 3s
+  5450K .......... .......... .......... .......... .......... 77%  605K 3s
+  5500K .......... .......... .......... .......... .......... 77% 1.16M 3s
+  5550K .......... .......... .......... .......... .......... 78%  616K 3s
+  5600K .......... .......... .......... .......... .......... 79%  545K 3s
+  5650K .......... .......... .......... .......... .......... 80%  696K 3s
+  5700K .......... .......... .......... .......... .......... 80%  591K 3s
+  5750K .......... .......... .......... .......... .......... 81% 1.15M 3s
+  5800K .......... .......... .......... .......... .......... 82%  521K 3s
+  5850K .......... .......... .......... .......... .......... 82%  554K 3s
+  5900K .......... .......... .......... .......... .......... 83%  850K 2s
+  5950K .......... .......... .......... .......... .......... 84%  675K 2s
+  6000K .......... .......... .......... .......... .......... 84%  466K 2s
+  6050K .......... .......... .......... .......... .......... 85% 1.06M 2s
+  6100K .......... .......... .......... .......... .......... 86%  797K 2s
+  6150K .......... .......... .......... .......... .......... 87%  529K 2s
+  6200K .......... .......... .......... .......... .......... 87%  547K 2s
+  6250K .......... .......... .......... .......... .......... 88% 1.51M 2s
+  6300K .......... .......... .......... .......... .......... 89%  564K 2s
+  6350K .......... .......... .......... .......... .......... 89%  667K 1s
+  6400K .......... .......... .......... .......... .......... 90%  553K 1s
+  6450K .......... .......... .......... .......... .......... 91%  719K 1s
+  6500K .......... .......... .......... .......... .......... 91%  912K 1s
+  6550K .......... .......... .......... .......... .......... 92%  552K 1s
+  6600K .......... .......... .......... .......... .......... 93%  708K 1s
+  6650K .......... .......... .......... .......... .......... 94%  573K 1s
+  6700K .......... .......... .......... .......... .......... 94% 1.20M 1s
+  6750K .......... .......... .......... .......... .......... 95%  569K 1s
+  6800K .......... .......... .......... .......... .......... 96%  551K 1s
+  6850K .......... .......... .......... .......... .......... 96%  770K 0s
+  6900K .......... .......... .......... .......... .......... 97%  593K 0s
+  6950K .......... .......... .......... .......... .......... 98%  954K 0s
+  7000K .......... .......... .......... .......... .......... 98%  599K 0s
+  7050K .......... .......... .......... .......... .......... 99%  559K 0s
+  7100K .......... .......... ....                            100% 2.48M=14s
 
-2016-05-09 20:00:40 (686 KB/s) - ‘/tmp/flashplugin-nonfree.uRg7d5zzyE/install_flash_player_11_linux.x86_64.tar.gz’ saved [7280774/7280774]
+2016-06-29 15:29:41 (514 KB/s) - ‘/tmp/flashplugin-nonfree.ZMWrSLsax3/install_flash_player_11_linux.x86_64.tar.gz’ saved [7295646/7295646]
 
 Processing triggers for libc-bin (2.19-18+deb8u4) ...
-
-(process:30063): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
-CLDS: * Install the latest Firefox from Debian Mozilla team: Mozilla Iceweasel 38.7.1.
+CLDS: * Install the latest Firefox from Debian Mozilla team: Mozilla Firefox 45.2.0.
 CLDS: * Insert Iceweasel in Internet menu.
 CLDS: * To update Adobe Flash Player: update-flashplugin-nonfree --install.
 CLDS: * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/.
-CLDS: * Disk size = 2556180K. Space Used = 165144K.
+CLDS: * Disk size = 3420880K. Space Used = 169144K.

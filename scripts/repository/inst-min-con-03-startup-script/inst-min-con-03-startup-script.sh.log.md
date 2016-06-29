@@ -2,4 +2,4 @@
   * Copy startup.sh to /etc/init.d/.
   * Make it executable.
   * Register it in the boot sequence.
-  * Disk size = 1647052K. Space Used = 8K.
+  * Disk size = 1820968K. Space Used = 12K.

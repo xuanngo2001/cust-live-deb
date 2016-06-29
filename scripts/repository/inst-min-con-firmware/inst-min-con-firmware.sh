@@ -23,11 +23,14 @@ FIRMWARES_LIST="atmel-firmware \
                 firmware-libertas \
                 firmware-linux \
                 firmware-linux-free \
+                firmware-misc-nonfree \
                 firmware-linux-nonfree \
                 firmware-qlogic \
-                firmware-ralink \
                 firmware-realtek \
-                zd1211-firmware"
+                firmware-zd1211"
+
+#  firmware-misc-nonfree : Breaks: firmware-ralink
+
 # Remove duplicate spaces.
 FIRMWARES_LIST=$(echo ${FIRMWARES_LIST} | tr -s ' ')
 

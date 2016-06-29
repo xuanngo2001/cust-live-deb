@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-win-mjwm.sh ...
   * After this operation, 173 MB of additional disk space will be used.
   * Install mjwm.
-  * Disk size = 2170504K. Space Used = 221376K.
+  * Disk size = 2228448K. Space Used = 221900K.
   * The following NEW packages will be installed:
   ```bash
   autoconf automake autotools-dev binutils cpp cpp-4.9 g++ g++-4.9 gcc gcc-4.9

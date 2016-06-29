@@ -6,15 +6,18 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Temporarily use the original update-initramfs.
-###rm -f /usr/sbin/update-initramfs
-###ln -s /usr/sbin/update-initramfs.orig.initramfs-tools /usr/sbin/update-initramfs
-
 # Explicitly install dependent packages
-apt-get -y --force-yes install spl-dkms zfs-dkms linux-headers-amd64
+# Fix issue: https://github.com/zfsonlinux/zfs/issues/3065
+#            https://github.com/zfsonlinux/zfs/issues/1466
+#            https://github.com/zfsonlinux/zfs/issues/1860
+#dpkg --purge --force-depends spl-dkms 
+apt-get -d -y --force-yes install file
+apt-get -y --force-yes install linux-headers-amd64 build-essential
+
 
 # Install required packages.
-apt-get -y --force-yes install lsb-release libc6-dev
+apt-get -y --force-yes install lsb-release libc6-dev 
+
 
 # Install ZFS
 ZFS_REPO_KEY_DEB=zfsonlinux_6_all.deb
@@ -27,9 +30,6 @@ rm -f ${ZFS_REPO_KEY_DEB}
 # Change default behavior: Don't allow the last 1.6% of space in the pool instead of 3.2%.
 #yes | cp zfs.conf /etc/modprobe.d/ 
 
-# Revert back to use live-update-initramfs.
-###rm -f /usr/sbin/update-initramfs
-###ln -s /bin/live-update-initramfs /usr/sbin/update-initramfs
 
 # Log
 ZFS_VERSION=$(modinfo zfs | grep ^version | tr -s ' ')
@@ -52,3 +52,5 @@ echo "${GV_LOG} * Delete ${ZFS_REPO_KEY_DEB}[${ZFS_REPO_KEY_DEB_SIZE}K]."
 # Failed:
 # apt-get -y --force-yes install lsb-release linux-headers-$(uname -r)
 # apt-get -y --force-yes install lsb-release linux-libc-dev
+
+# Test: apt-get -y remove debian-zfs zfs-dkms zfsonlinux zfsutils
