@@ -10,7 +10,8 @@ set -e
 # Usage: nohup x-terminal-emulator -T "open-2-terminals" -e /root/cld/open-terminals.sh
 
 
-# Before doing anything, wait for Conky process to start.
+# Before doing anything, wait for Conky to start.
+#   'pgrep conky' will display Conky's PID.
 timeout 5s /bin/bash -c "while ! pgrep conky; do sleep 1s; echo 'Wait for Conky to run: 1s.'; done; sleep 1s"
 
 # Abort if multiple conky instances exist.
