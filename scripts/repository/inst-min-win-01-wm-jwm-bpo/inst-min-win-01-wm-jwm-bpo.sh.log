@@ -19,6 +19,11 @@ Hit http://localhost jessie InRelease
 Hit http://localhost jessie/main amd64 Packages
 Hit http://localhost nightly/main amd64 Packages
 Hit http://localhost jessie/main amd64 Packages
+Hit http://localhost jessie/non-free amd64 Packages
+Hit http://localhost jessie-backports/contrib amd64 Packages
+Hit http://localhost jessie-backports/main amd64 Packages
+Hit http://localhost jessie-backports/non-free amd64 Packages
+Hit http://localhost jessie/contrib amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
@@ -26,37 +31,32 @@ Ign http://localhost nightly/main Translation-en_US
 Ign http://localhost nightly/main Translation-en
 Ign http://localhost nightly/main Translation-en_US.UTF-8
 Ign http://localhost jessie/main Translation-en_US
+Hit http://localhost jessie/non-free amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
+Hit http://localhost jessie-updates/main amd64 Packages
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
-Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost jessie-backports/contrib amd64 Packages
-Hit http://localhost jessie-backports/main amd64 Packages
-Hit http://localhost jessie-backports/non-free amd64 Packages
-Hit http://localhost jessie/contrib amd64 Packages
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/non-free amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-backports/contrib Translation-en_US
 Ign http://localhost jessie-backports/contrib Translation-en
 Ign http://localhost jessie-backports/contrib Translation-en_US.UTF-8
-Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-backports/main Translation-en_US
 Ign http://localhost jessie-backports/main Translation-en
 Ign http://localhost jessie-backports/main Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/main amd64 Packages
+Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie-backports/non-free Translation-en_US
+Hit http://localhost jessie/contrib amd64 Packages
+Hit http://localhost jessie/main amd64 Packages
 Ign http://localhost jessie-backports/non-free Translation-en
 Ign http://localhost jessie-backports/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie/contrib Translation-en_US
-Hit http://localhost jessie-updates/main amd64 Packages
-Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie/contrib Translation-en
 Ign http://localhost jessie/contrib Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/contrib amd64 Packages
-Hit http://localhost jessie-updates/main amd64 Packages
-Hit http://localhost jessie-updates/non-free amd64 Packages
-Hit http://localhost jessie/contrib amd64 Packages
-Hit http://localhost jessie/main amd64 Packages
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
@@ -107,7 +107,7 @@ Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main xbitmaps all 1.1.1-2 
 Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main libutempter0 amd64 1.1.5-4 [8,020 B]
 Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main xterm amd64 312-2 [605 kB]
 Get:8 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main jwm amd64 2.3.5-2~bpo8+1 [221 kB]
-Fetched 1,350 kB in 0s (19.3 MB/s)
+Fetched 1,350 kB in 0s (7,632 kB/s)
 Selecting previously unselected package libcroco3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39126 files and directories currently installed.)
 Preparing to unpack .../libcroco3_0.6.8-3+b1_amd64.deb ...
@@ -158,4 +158,4 @@ Processing triggers for libc-bin (2.19-18+deb8u4) ...
 ‘jwmrc-startup.sh’ -> ‘/root/cld/jwmrc-startup.sh’
 CLDS: * Install Window Manager: JWM v2.3.5 by Joe Wingbermuehle.
 CLDS: * Set jwmrc.
-CLDS: * Disk size = 2977940K. Space Used = 5204K.
+CLDS: * Disk size = 2977944K. Space Used = 5208K.

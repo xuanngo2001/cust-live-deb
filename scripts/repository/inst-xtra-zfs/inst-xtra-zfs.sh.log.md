@@ -8,7 +8,7 @@
   * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
   * Install debian-zfs: ERROR: ZFS installation failed!, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
   * Delete zfsonlinux_6_all.deb[1992K].
-  * Disk size = 4641200K. Space Used = 112336K.
+  * Disk size = 4641072K. Space Used = 112336K.
   * The following NEW packages will be installed:
   ```bash
   file
