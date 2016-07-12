@@ -3,7 +3,7 @@
   * After this operation, 6,386 kB of additional disk space will be used.
   * Install virtualbox-guest-utils to access shared folder. No need for x11. Less error prone.
   * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
-  * Disk size = 4433252K. Space Used = 7408K.
+  * Disk size = 4433704K. Space Used = 7408K.
   * The following NEW packages will be installed:
   ```bash
   libnotify-bin linux-headers-amd64

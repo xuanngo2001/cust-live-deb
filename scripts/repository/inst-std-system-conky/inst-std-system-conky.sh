@@ -10,6 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install conky.
   apt-get -y --force-yes install conky-std=1.9.0-6
+###  apt-get -y --force-yes install conky-std
 
 # Add conky config files.
 	CONKYRC=conkyrc

@@ -2,7 +2,7 @@
   * After this operation, 3,660 kB of additional disk space will be used.
   * Install Window Manager: JWM v2.3.5 by Joe Wingbermuehle.
   * Set jwmrc.
-  * Disk size = 2977944K. Space Used = 5208K.
+  * Disk size = 2977936K. Space Used = 5208K.
   * The following NEW packages will be installed:
   ```bash
   jwm libcroco3 libfribidi0 librsvg2-2 libutempter0 libxft2 xbitmaps xterm
