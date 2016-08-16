@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-php5.sh ...
-  * After this operation, 27.9 MB of additional disk space will be used.
+  * After this operation, 28.0 MB of additional disk space will be used.
   * Install php5.
-  * Disk size = 2886112K. Space Used = 37136K.
+  * Disk size = 2888144K. Space Used = 37228K.
   * The following NEW packages will be installed:
   ```bash
   apache2 apache2-bin apache2-data apache2-utils libapache2-mod-php5 libapr1

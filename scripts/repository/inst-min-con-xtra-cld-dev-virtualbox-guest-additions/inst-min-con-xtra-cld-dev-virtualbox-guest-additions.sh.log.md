@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-con-xtra-cld-dev-virtualbox-guest-additions.sh ...
-  * After this operation, 102 MB of additional disk space will be used.
-  * After this operation, 133 MB of additional disk space will be used.
+  * After this operation, 112 MB of additional disk space will be used.
+  * After this operation, 143 MB of additional disk space will be used.
   * After this operation, 6,555 kB of additional disk space will be used.
   * Install virtualbox-guest-utils to access shared folder. No need for x11. Less error prone.
-  * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
-  * Disk size = 2261640K. Space Used = 223736K.
+  * VirtualBox guest additions installed: version: 5.0.24_Debian r108355.
+  * Disk size = 2262264K. Space Used = 223804K.
   * The following NEW packages will be installed:
   ```bash
   binutils cpp-4.9 gcc-4.9 libasan1 libatomic1 libcilkrts5 libcloog-isl4

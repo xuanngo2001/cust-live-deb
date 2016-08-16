@@ -5,7 +5,7 @@
   * After this operation, 16.8 MB of additional disk space will be used.
   * After this operation, 9,673 kB of additional disk space will be used.
   * After this operation, 1,484 kB of additional disk space will be used.
-  * Install LibreOffice 5.1.4.2 10m0(Build:2).
+  * Install LibreOffice 5.1.5.2 10m0(Build:2).
   * Install Office Suite: Word processor.
   * Install Office Suite: Spreadsheet.
   * Install Office Suite: Presentation.
@@ -13,7 +13,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 3983336K. Space Used = 447456K.
+  * Disk size = 3982800K. Space Used = 447564K.
   * The following NEW packages will be installed:
   ```bash
   libpagemaker-0.0-0 librevenge-0.0-0
