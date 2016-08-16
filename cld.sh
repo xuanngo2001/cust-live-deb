@@ -36,3 +36,7 @@ DEB_REPO_URL=$(echo $2 | tr '[:upper:]' '[:lower:]')
 	./cld-create-md.sh "${LOG_DIR}"
 	./cld-log-package-sizes.sh "${LOG_DIR}"
   ./cld-move-backup-log.sh "${LOG_DIR}"
+
+# Compare Debian package version: Built ISO vs Host
+#   Compare ./binary/dpkg-version.log against ./dpkg-version-host.log
+cld-dpkg-list.sh > dpkg-version-host.log
