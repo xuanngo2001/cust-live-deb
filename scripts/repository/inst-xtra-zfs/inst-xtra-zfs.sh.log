@@ -4,11 +4,11 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   file
-0 upgraded, 1 newly installed, 0 to remove and 15 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
 Need to get 60.4 kB of archives.
 After this operation, 77.8 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main file amd64 1:5.22+15-2+deb8u1 [60.4 kB]
-Fetched 60.4 kB in 0s (5,135 kB/s)
+Fetched 60.4 kB in 0s (0 B/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -23,7 +23,7 @@ Recommended packages:
 The following NEW packages will be installed:
   build-essential dpkg-dev g++ g++-4.9 libdpkg-perl libstdc++-4.9-dev
   libtimedate-perl linux-headers-amd64
-0 upgraded, 8 newly installed, 0 to remove and 15 not upgraded.
+0 upgraded, 8 newly installed, 0 to remove and 18 not upgraded.
 Need to get 25.2 MB/25.2 MB of archives.
 After this operation, 50.1 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libstdc++-4.9-dev amd64 4.9.2-10 [1,121 kB]
@@ -33,9 +33,9 @@ Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libtimedate-perl all 
 Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main libdpkg-perl all 1.17.27 [1,075 kB]
 Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main dpkg-dev all 1.17.27 [1,548 kB]
 Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main build-essential amd64 11.7 [7,114 B]
-Fetched 25.2 MB in 0s (35.3 MB/s)
+Fetched 25.2 MB in 0s (38.0 MB/s)
 Selecting previously unselected package libstdc++-4.9-dev:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66294 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71016 files and directories currently installed.)
 Preparing to unpack .../libstdc++-4.9-dev_4.9.2-10_amd64.deb ...
 Unpacking libstdc++-4.9-dev:amd64 (4.9.2-10) ...
 Selecting previously unselected package g++-4.9.
@@ -77,19 +77,19 @@ Suggested packages:
   lsb
 The following NEW packages will be installed:
   lsb-release
-0 upgraded, 1 newly installed, 0 to remove and 15 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
 Need to get 26.5 kB of archives.
 After this operation, 99.3 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main lsb-release all 4.1+Debian13+nmu1 [26.5 kB]
 Fetched 26.5 kB in 0s (0 B/s)
 Selecting previously unselected package lsb-release.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67516 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72238 files and directories currently installed.)
 Preparing to unpack .../lsb-release_4.1+Debian13+nmu1_all.deb ...
 Unpacking lsb-release (4.1+Debian13+nmu1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up lsb-release (4.1+Debian13+nmu1) ...
 Selecting previously unselected package zfsonlinux.
-(Reading database ... 67525 files and directories currently installed.)
+(Reading database ... 72247 files and directories currently installed.)
 Preparing to unpack zfsonlinux_6_all.deb ...
 Unpacking zfsonlinux (6) ...
 Setting up zfsonlinux (6) ...
@@ -113,6 +113,10 @@ Hit http://localhost jessie InRelease
 Hit http://localhost jessie/main amd64 Packages
 Hit http://localhost nightly/main amd64 Packages
 Hit http://localhost jessie/main amd64 Packages
+Hit http://localhost jessie/non-free amd64 Packages
+Hit http://localhost jessie-backports/contrib amd64 Packages
+Hit http://localhost jessie-backports/main amd64 Packages
+Hit http://localhost jessie-backports/non-free amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
@@ -122,68 +126,64 @@ Ign http://localhost nightly/main Translation-en_US.UTF-8
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
-Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost jessie-backports/contrib amd64 Packages
-Hit http://localhost jessie-backports/main amd64 Packages
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
+Hit http://localhost jessie/contrib amd64 Packages
+Hit http://localhost jessie/non-free amd64 Packages
 Ign http://localhost jessie-backports/contrib Translation-en_US
 Ign http://localhost jessie-backports/contrib Translation-en
 Ign http://localhost jessie-backports/contrib Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/contrib amd64 Packages
+Hit http://localhost jessie-updates/main amd64 Packages
 Ign http://localhost jessie-backports/main Translation-en_US
 Ign http://localhost jessie-backports/main Translation-en
 Ign http://localhost jessie-backports/main Translation-en_US.UTF-8
-Hit http://localhost jessie-backports/non-free amd64 Packages
-Hit http://localhost jessie/contrib amd64 Packages
 Ign http://localhost jessie-backports/non-free Translation-en_US
+Hit http://localhost jessie-updates/non-free amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-backports/non-free Translation-en
 Ign http://localhost jessie-backports/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
+Hit http://localhost jessie-updates/main amd64 Packages
+Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie/contrib Translation-en_US.UTF-8
-Hit http://localhost jessie/non-free amd64 Packages
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/contrib amd64 Packages
-Hit http://localhost jessie-updates/main amd64 Packages
-Ign http://localhost jessie-updates/contrib Translation-en_US
-Ign http://localhost jessie-updates/contrib Translation-en
-Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/non-free amd64 Packages
-Ign http://localhost jessie-updates/main Translation-en_US
-Ign http://localhost jessie-updates/main Translation-en
-Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
-Ign http://localhost jessie-updates/non-free Translation-en_US
-Ign http://localhost jessie-updates/non-free Translation-en
-Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/contrib amd64 Packages
-Get:1 http://archive.zfsonlinux.org jessie InRelease [3,066 B]
-Ign http://localhost jessie-updates/contrib Translation-en_US
-Ign http://localhost jessie-updates/contrib Translation-en
-Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/main amd64 Packages
-Ign http://localhost jessie-updates/main Translation-en_US
-Ign http://localhost jessie-updates/main Translation-en
-Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/non-free amd64 Packages
 Hit http://localhost jessie/contrib amd64 Packages
+Hit http://localhost jessie/main amd64 Packages
+Ign http://localhost jessie-updates/contrib Translation-en_US
+Ign http://localhost jessie-updates/contrib Translation-en
+Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/main Translation-en_US
+Ign http://localhost jessie-updates/main Translation-en
+Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
 Ign http://localhost jessie-updates/non-free Translation-en_US
 Ign http://localhost jessie-updates/non-free Translation-en
 Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
-Hit http://localhost jessie/main amd64 Packages
+Ign http://localhost jessie-updates/contrib Translation-en_US
+Ign http://localhost jessie-updates/contrib Translation-en
+Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/main Translation-en_US
+Ign http://localhost jessie-updates/main Translation-en
+Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/non-free Translation-en_US
+Ign http://localhost jessie-updates/non-free Translation-en
+Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
 Ign http://localhost jessie/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
+Get:1 http://archive.zfsonlinux.org jessie InRelease [3,066 B]
 Get:2 http://archive.zfsonlinux.org jessie/main amd64 Packages [10.6 kB]
 Ign http://archive.zfsonlinux.org jessie/main Translation-en_US
 Ign http://archive.zfsonlinux.org jessie/main Translation-en
 Ign http://archive.zfsonlinux.org jessie/main Translation-en_US.UTF-8
-Fetched 13.6 kB in 4s (3,006 B/s)
+Fetched 13.6 kB in 4s (3,243 B/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -197,7 +197,7 @@ Recommended packages:
 The following NEW packages will be installed:
   debian-zfs file libnvpair1 libuutil1 libzfs2 libzpool2 spl spl-dkms zfs-dkms
   zfsutils
-0 upgraded, 10 newly installed, 0 to remove and 16 not upgraded.
+0 upgraded, 10 newly installed, 0 to remove and 19 not upgraded.
 Need to get 2,466 kB/2,526 kB of archives.
 After this operation, 14.1 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main zfs-dkms all 0.6.5.7-8-jessie [1,073 kB]
@@ -210,9 +210,9 @@ Get:7 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main zfsutils amd64 0.
 Get:8 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main debian-zfs amd64 7~jessie [6,806 B]
 Get:9 http://archive.zfsonlinux.org/debian/ jessie/main spl-dkms all 0.6.5.7-5-jessie [352 kB]
 Preconfiguring packages ...
-Fetched 2,466 kB in 1s (1,236 kB/s)
+Fetched 2,466 kB in 1s (2,346 kB/s)
 Selecting previously unselected package file.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67530 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72252 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.22+15-2+deb8u1_amd64.deb ...
 Unpacking file (1:5.22+15-2+deb8u1) ...
 Selecting previously unselected package spl-dkms.
@@ -247,7 +247,7 @@ depmod.......
 
 DKMS: install completed.
 Selecting previously unselected package zfs-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67783 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72505 files and directories currently installed.)
 Preparing to unpack .../zfs-dkms_0.6.5.7-8-jessie_all.deb ...
 Unpacking zfs-dkms (0.6.5.7-8-jessie) ...
 Selecting previously unselected package spl.
@@ -350,4 +350,4 @@ CLDS: * Add zfsonlinux repository to /etc/apt/sources.list.d/zfsonlinux.list.
 CLDS: * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
 CLDS: * Install debian-zfs: version: 0.6.5.7-8-jessie, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Delete zfsonlinux_6_all.deb[1992K].
-CLDS: * Disk size = 4657976K. Space Used = 112272K.
+CLDS: * Disk size = 5167060K. Space Used = 112308K.

@@ -1,4 +1,4 @@
 * >>>>>>>>> Running inst-std-xtra-opw-drush8-phar.sh ...
   * Install  Drush Version : 8.0.3  to manage Drupal.
   * List of commands at http://drushcommands.com/.
-  * Disk size = 4344172K. Space Used = 5132K.
+  * Disk size = 4351716K. Space Used = 5132K.
