@@ -42,5 +42,10 @@ DEPENDENT_PACKAGES=$(apt-cache depends "${PACKAGE_NAME}")
 
 # Write command to download dependent packages.
 DEPENDENT_PACKAGES=$(echo "${DEPENDENT_PACKAGES}" | sed 's/^/apt-get -d -y --force-yes install /')  
-  
+
+# Add comment to commands.
+DEPENDENT_PACKAGES=$'# Explicitly download dependent packages.\n'${DEPENDENT_PACKAGES}
+
+
+# Display results.
 echo "${DEPENDENT_PACKAGES}"
