@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
-# Description: Directly reformat the install-size-history.txt
-#             Legacy format to new format
+# Description: Draw graph for each system.
 
 #gnuplot -e "SYSTEM='Traffic1'" sc-graph-gnuplot.pg
 
