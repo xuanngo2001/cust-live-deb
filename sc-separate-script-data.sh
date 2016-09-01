@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+# Description: Separate main log(install-size-history.data) to multiple log files for each system(min, std, etc).
 
 SCRIPT_LOG_PARSABLE=install-size-history.data
 
