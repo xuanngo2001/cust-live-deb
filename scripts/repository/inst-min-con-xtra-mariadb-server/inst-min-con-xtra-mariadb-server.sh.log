@@ -23,7 +23,7 @@ The following NEW packages will be installed:
   mariadb-server-core-10.0 mysql-common perl perl-modules psmisc
 The following packages will be upgraded:
   perl-base
-1 upgraded, 14 newly installed, 0 to remove and 17 not upgraded.
+1 upgraded, 14 newly installed, 0 to remove and 18 not upgraded.
 Need to get 19.5 MB of archives.
 After this operation, 164 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main perl-base amd64 5.20.2-3+deb8u6 [1,229 kB]
@@ -42,14 +42,14 @@ Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main psmisc amd64 22.21-2
 Get:14 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main mariadb-server-10.0 amd64 10.0.26-0+deb8u1 [5,598 kB]
 Get:15 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main mariadb-server all 10.0.26-0+deb8u1 [16.6 kB]
 Preconfiguring packages ...
-Fetched 19.5 MB in 0s (35.6 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35625 files and directories currently installed.)
+Fetched 19.5 MB in 0s (29.8 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35489 files and directories currently installed.)
 Preparing to unpack .../perl-base_5.20.2-3+deb8u6_amd64.deb ...
 Unpacking perl-base (5.20.2-3+deb8u6) over (5.20.2-3+deb8u5) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up perl-base (5.20.2-3+deb8u6) ...
 Selecting previously unselected package perl-modules.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35625 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35489 files and directories currently installed.)
 Preparing to unpack .../perl-modules_5.20.2-3+deb8u6_all.deb ...
 Unpacking perl-modules (5.20.2-3+deb8u6) ...
 Selecting previously unselected package perl.
@@ -89,7 +89,7 @@ Processing triggers for man-db (2.7.0.2-5) ...
 Setting up mysql-common (5.5.50-0+deb8u1) ...
 Setting up mariadb-common (10.0.26-0+deb8u1) ...
 Selecting previously unselected package mariadb-server-10.0.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37200 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37064 files and directories currently installed.)
 Preparing to unpack .../mariadb-server-10.0_10.0.26-0+deb8u1_amd64.deb ...
 Unpacking mariadb-server-10.0 (10.0.26-0+deb8u1) ...
 Selecting previously unselected package mariadb-server.
@@ -110,7 +110,7 @@ Setting up mariadb-server-core-10.0 (10.0.26-0+deb8u1) ...
 Setting up psmisc (22.21-2) ...
 Setting up mariadb-server-10.0 (10.0.26-0+deb8u1) ...
 invoke-rc.d: policy-rc.d denied execution of stop.
-160831 20:16:49 [Note] /usr/sbin/mysqld (mysqld 10.0.26-MariaDB-0+deb8u1) starting as process 18226 ...
+160902 15:43:43 [Note] /usr/sbin/mysqld (mysqld 10.0.26-MariaDB-0+deb8u1) starting as process 28724 ...
 invoke-rc.d: policy-rc.d denied execution of start.
 Setting up mariadb-server (10.0.26-0+deb8u1) ...
 Processing triggers for libc-bin (2.19-18+deb8u4) ...
@@ -118,4 +118,4 @@ Processing triggers for systemd (215-17+deb8u4) ...
 mysqladmin: connect to server at 'localhost' failed
 error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")'
 Check that mysqld is running and that the socket: '/var/run/mysqld/mysqld.sock' exists!
-CLDS: * Disk size = 2854948K. Space Used = 293880K.
+CLDS: * Disk size = 2780532K. Space Used = 293896K.
