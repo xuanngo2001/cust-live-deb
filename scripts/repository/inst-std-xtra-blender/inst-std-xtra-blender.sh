@@ -20,6 +20,7 @@ sed -i "/Graphics\">/ r jwmrc-menus-graphics-blender.xml" "${GV_CLD_ROOT_DIR}/jw
 echo "${GV_LOG} * Install required packages for blender."
 echo "${GV_LOG} * Install blender3d."
 echo "${GV_LOG} * Insert Blender 3D menu in Graphics."
+echo "${GV_LOG} * http://download.blender.org/release/"
 
 # Note:
 # Worked on Intel graphic: apt-get -y --force-yes install libgl1-mesa-dri libgl1-mesa-glx
