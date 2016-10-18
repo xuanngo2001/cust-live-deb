@@ -34,10 +34,10 @@ IGNORE_ERROR=$(echo "${IGNORE_ERROR}" | tr '[:upper:]' '[:lower:]')
 INSTALL_LOG=./logs/install.log
 if [ "${IGNORE_ERROR}" != "ignore" ];
 then
-	if grep "^E:" ${INSTALL_LOG} > /dev/null
+	if grep -E '^E:|ERROR:' ${INSTALL_LOG} > /dev/null
 	then
 	  echo "Process stopped. There is error in ${INSTALL_LOG}."
-	  grep "^E:" ${INSTALL_LOG} | sed 's/^/  /'
+	  grep -E '^E:|ERROR:' ${INSTALL_LOG} | sed 's/^/  /'
 	  exit 1;
 	fi
 fi
