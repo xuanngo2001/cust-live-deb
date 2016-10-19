@@ -1,13 +1,14 @@
 * >>>>>>>>> Running inst-std-xtra-blender.sh ...
-  * After this operation, 16.1 MB of additional disk space will be used.
+  * After this operation, 60.0 MB of additional disk space will be used.
   * After this operation, 190 MB of additional disk space will be used.
   * Install required packages for blender.
   * Install blender3d.
   * Insert Blender 3D menu in Graphics.
-  * Disk size = 4245964K. Space Used = 236116K.
+  * http://download.blender.org/release/
+  * Disk size = 4329884K. Space Used = 289508K.
   * The following NEW packages will be installed:
   ```bash
-  libdrm-amdgpu1 libgl1-mesa-dri libjemalloc1
+  libdrm-amdgpu1 libgl1-mesa-dri libjemalloc1 libllvm3.8
   blender blender-data dh-python fonts-droid libavdevice55
   libboost-chrono1.55.0 libboost-locale1.55.0 libboost-regex1.55.0
   libboost-thread1.55.0 libgtkglext1 libilmbase6 libjs-jquery libjs-jquery-ui

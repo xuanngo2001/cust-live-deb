@@ -8,15 +8,15 @@
   * After this operation, 224 kB of additional disk space will be used.
   * After this operation, 180 kB of additional disk space will be used.
   * After this operation, 86.0 kB of additional disk space will be used.
-  * After this operation, 43.2 MB of additional disk space will be used.
+  * After this operation, 43.5 MB of additional disk space will be used.
   * After this operation, 154 kB of additional disk space will be used.
   * After this operation, 143 kB of additional disk space will be used.
   * After this operation, 869 kB of additional disk space will be used.
-  * After this operation, 81.3 MB of additional disk space will be used.
+  * After this operation, 81.7 MB of additional disk space will be used.
   * Install Media Player: mpv 0.8.3 .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 3468372K. Space Used = 115000K.
+  * Disk size = 3501956K. Space Used = 115012K.
   * The following NEW packages will be installed:
   ```bash
   libavc1394-0 libraw1394-11

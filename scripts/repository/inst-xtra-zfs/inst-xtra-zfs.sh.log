@@ -7,8 +7,8 @@ The following NEW packages will be installed:
 0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
 Need to get 60.4 kB of archives.
 After this operation, 77.8 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main file amd64 1:5.22+15-2+deb8u1 [60.4 kB]
-Fetched 60.4 kB in 0s (5,397 kB/s)
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main file amd64 1:5.22+15-2+deb8u2 [60.4 kB]
+Fetched 60.4 kB in 0s (0 B/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -33,9 +33,9 @@ Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libtimedate-perl all 
 Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main libdpkg-perl all 1.17.27 [1,075 kB]
 Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main dpkg-dev all 1.17.27 [1,548 kB]
 Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main build-essential amd64 11.7 [7,114 B]
-Fetched 25.2 MB in 0s (37.3 MB/s)
+Fetched 25.2 MB in 0s (33.4 MB/s)
 Selecting previously unselected package libstdc++-4.9-dev:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 70880 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71249 files and directories currently installed.)
 Preparing to unpack .../libstdc++-4.9-dev_4.9.2-10_amd64.deb ...
 Unpacking libstdc++-4.9-dev:amd64 (4.9.2-10) ...
 Selecting previously unselected package g++-4.9.
@@ -57,8 +57,8 @@ Selecting previously unselected package build-essential.
 Preparing to unpack .../build-essential_11.7_amd64.deb ...
 Unpacking build-essential (11.7) ...
 Selecting previously unselected package linux-headers-amd64.
-Preparing to unpack .../linux-headers-amd64_4.6+74~bpo8+1_amd64.deb ...
-Unpacking linux-headers-amd64 (4.6+74~bpo8+1) ...
+Preparing to unpack .../linux-headers-amd64_4.7+75~bpo8+1_amd64.deb ...
+Unpacking linux-headers-amd64 (4.7+75~bpo8+1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up libstdc++-4.9-dev:amd64 (4.9.2-10) ...
 Setting up g++-4.9 (4.9.2-10) ...
@@ -68,7 +68,7 @@ Setting up libtimedate-perl (2.3000-2) ...
 Setting up libdpkg-perl (1.17.27) ...
 Setting up dpkg-dev (1.17.27) ...
 Setting up build-essential (11.7) ...
-Setting up linux-headers-amd64 (4.6+74~bpo8+1) ...
+Setting up linux-headers-amd64 (4.7+75~bpo8+1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -83,13 +83,13 @@ After this operation, 99.3 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main lsb-release all 4.1+Debian13+nmu1 [26.5 kB]
 Fetched 26.5 kB in 0s (0 B/s)
 Selecting previously unselected package lsb-release.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72102 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72471 files and directories currently installed.)
 Preparing to unpack .../lsb-release_4.1+Debian13+nmu1_all.deb ...
 Unpacking lsb-release (4.1+Debian13+nmu1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Setting up lsb-release (4.1+Debian13+nmu1) ...
 Selecting previously unselected package zfsonlinux.
-(Reading database ... 72111 files and directories currently installed.)
+(Reading database ... 72480 files and directories currently installed.)
 Preparing to unpack zfsonlinux_6_all.deb ...
 Unpacking zfsonlinux (6) ...
 Setting up zfsonlinux (6) ...
@@ -113,77 +113,77 @@ Hit http://localhost jessie InRelease
 Hit http://localhost jessie/main amd64 Packages
 Hit http://localhost nightly/main amd64 Packages
 Hit http://localhost jessie/main amd64 Packages
-Hit http://localhost jessie/non-free amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://localhost nightly/main Translation-en_US
 Ign http://localhost nightly/main Translation-en
-Hit http://localhost jessie-backports/contrib amd64 Packages
-Hit http://localhost jessie-backports/main amd64 Packages
-Hit http://localhost jessie-backports/non-free amd64 Packages
 Ign http://localhost nightly/main Translation-en_US.UTF-8
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
+Hit http://localhost jessie/non-free amd64 Packages
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
-Hit http://localhost jessie/contrib amd64 Packages
-Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
+Hit http://localhost jessie-backports/contrib amd64 Packages
+Hit http://localhost jessie-backports/main amd64 Packages
 Ign http://localhost jessie-backports/contrib Translation-en_US
 Ign http://localhost jessie-backports/contrib Translation-en
 Ign http://localhost jessie-backports/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie-backports/main Translation-en_US
 Ign http://localhost jessie-backports/main Translation-en
 Ign http://localhost jessie-backports/main Translation-en_US.UTF-8
+Hit http://localhost jessie-backports/non-free amd64 Packages
+Hit http://localhost jessie/contrib amd64 Packages
 Ign http://localhost jessie-backports/non-free Translation-en_US
 Ign http://localhost jessie-backports/non-free Translation-en
-Hit http://localhost jessie-updates/main amd64 Packages
-Get:1 http://archive.zfsonlinux.org jessie InRelease [3,066 B]
-Hit http://localhost jessie-updates/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-backports/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
 Ign http://localhost jessie/contrib Translation-en_US.UTF-8
+Hit http://localhost jessie/non-free amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
+Hit http://localhost jessie-updates/main amd64 Packages
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/contrib Translation-en_US
+Ign http://localhost jessie-updates/contrib Translation-en
+Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/non-free amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
+Ign http://localhost jessie-updates/main Translation-en_US
+Ign http://localhost jessie-updates/main Translation-en
+Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/non-free Translation-en_US
+Ign http://localhost jessie-updates/non-free Translation-en
+Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/contrib Translation-en_US
+Ign http://localhost jessie-updates/contrib Translation-en
+Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
 Hit http://localhost jessie-updates/main amd64 Packages
+Ign http://localhost jessie-updates/main Translation-en_US
+Ign http://localhost jessie-updates/main Translation-en
+Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
 Hit http://localhost jessie-updates/non-free amd64 Packages
 Hit http://localhost jessie/contrib amd64 Packages
-Ign http://localhost jessie-updates/contrib Translation-en_US
-Ign http://localhost jessie-updates/contrib Translation-en
-Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
+Ign http://localhost jessie-updates/non-free Translation-en_US
+Ign http://localhost jessie-updates/non-free Translation-en
+Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
 Hit http://localhost jessie/main amd64 Packages
-Ign http://localhost jessie-updates/main Translation-en_US
-Ign http://localhost jessie-updates/main Translation-en
-Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
-Ign http://localhost jessie-updates/non-free Translation-en_US
-Ign http://localhost jessie-updates/non-free Translation-en
-Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
-Ign http://localhost jessie-updates/contrib Translation-en_US
-Ign http://localhost jessie-updates/contrib Translation-en
-Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
-Ign http://localhost jessie-updates/main Translation-en_US
-Ign http://localhost jessie-updates/main Translation-en
-Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
-Ign http://localhost jessie-updates/non-free Translation-en_US
-Ign http://localhost jessie-updates/non-free Translation-en
-Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
 Ign http://localhost jessie/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
+Get:1 http://archive.zfsonlinux.org jessie InRelease [3,066 B]
 Get:2 http://archive.zfsonlinux.org jessie/main amd64 Packages [10.6 kB]
 Ign http://archive.zfsonlinux.org jessie/main Translation-en_US
 Ign http://archive.zfsonlinux.org jessie/main Translation-en
 Ign http://archive.zfsonlinux.org jessie/main Translation-en_US.UTF-8
-Fetched 13.6 kB in 4s (3,115 B/s)
+Fetched 13.6 kB in 6s (2,040 B/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -210,44 +210,25 @@ Get:7 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main zfsutils amd64 0.
 Get:8 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main debian-zfs amd64 7~jessie [6,806 B]
 Get:9 http://archive.zfsonlinux.org/debian/ jessie/main spl-dkms all 0.6.5.7-5-jessie [352 kB]
 Preconfiguring packages ...
-Fetched 2,466 kB in 0s (2,541 kB/s)
+Fetched 2,466 kB in 1s (1,992 kB/s)
 Selecting previously unselected package file.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72116 files and directories currently installed.)
-Preparing to unpack .../file_1%3a5.22+15-2+deb8u1_amd64.deb ...
-Unpacking file (1:5.22+15-2+deb8u1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72485 files and directories currently installed.)
+Preparing to unpack .../file_1%3a5.22+15-2+deb8u2_amd64.deb ...
+Unpacking file (1:5.22+15-2+deb8u2) ...
 Selecting previously unselected package spl-dkms.
 Preparing to unpack .../spl-dkms_0.6.5.7-5-jessie_all.deb ...
 Unpacking spl-dkms (0.6.5.7-5-jessie) ...
 Processing triggers for man-db (2.7.0.2-5) ...
-Setting up file (1:5.22+15-2+deb8u1) ...
+Setting up file (1:5.22+15-2+deb8u2) ...
 Setting up spl-dkms (0.6.5.7-5-jessie) ...
 Loading new spl-0.6.5.7 DKMS files...
 First Installation: checking all kernels...
-Building only for 4.6.0-0.bpo.1-amd64
-Building initial module for 4.6.0-0.bpo.1-amd64
-Done.
-
-spl:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.6.0-0.bpo.1-amd64/updates/dkms/
-
-splat.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.6.0-0.bpo.1-amd64/updates/dkms/
-
-Running the post_install script:
-
-depmod.......
-
-DKMS: install completed.
+It is likely that 4.6.0-0.bpo.1-amd64 belongs to a chroot's host
+Building initial module for 4.7.0-0.bpo.1-amd64
+Error! Bad return status for module build on kernel: 4.7.0-0.bpo.1-amd64 (x86_64)
+Consult /var/lib/dkms/spl/0.6.5.7/build/make.log for more information.
 Selecting previously unselected package zfs-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72369 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72738 files and directories currently installed.)
 Preparing to unpack .../zfs-dkms_0.6.5.7-8-jessie_all.deb ...
 Unpacking zfs-dkms (0.6.5.7-8-jessie) ...
 Selecting previously unselected package spl.
@@ -271,64 +252,24 @@ Unpacking zfsutils (0.6.5.7-8-jessie) ...
 Selecting previously unselected package debian-zfs.
 Preparing to unpack .../debian-zfs_7~jessie_amd64.deb ...
 Unpacking debian-zfs (7~jessie) ...
-Processing triggers for libc-bin (2.19-18+deb8u4) ...
+Processing triggers for libc-bin (2.19-18+deb8u6) ...
 Processing triggers for initramfs-tools (0.120+deb8u2) ...
-update-initramfs: /boot/initrd.img-4.6.0-0.bpo.1-amd64 has been altered.
+update-initramfs: /boot/initrd.img-4.7.0-0.bpo.1-amd64 has been altered.
 update-initramfs: Cannot update. Override with -t option.
 Processing triggers for man-db (2.7.0.2-5) ...
-Processing triggers for systemd (215-17+deb8u4) ...
+Processing triggers for systemd (215-17+deb8u5) ...
 Setting up zfs-dkms (0.6.5.7-8-jessie) ...
 Loading new zfs-0.6.5.7 DKMS files...
 First Installation: checking all kernels...
-Building only for 4.6.0-0.bpo.1-amd64
-Building initial module for 4.6.0-0.bpo.1-amd64
-Done.
-
-zavl:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.6.0-0.bpo.1-amd64/updates/dkms/
-
-zcommon.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.6.0-0.bpo.1-amd64/updates/dkms/
-
-znvpair.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.6.0-0.bpo.1-amd64/updates/dkms/
-
-zpios.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.6.0-0.bpo.1-amd64/updates/dkms/
-
-zunicode.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.6.0-0.bpo.1-amd64/updates/dkms/
-
-zfs.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.6.0-0.bpo.1-amd64/updates/dkms/
-
-depmod......
-
-DKMS: install completed.
+It is likely that 4.6.0-0.bpo.1-amd64 belongs to a chroot's host
+Building initial module for 4.7.0-0.bpo.1-amd64
+configure: error: 
+	*** Please make sure the kmod spl devel <kernel> package for your
+	*** distribution is installed then try again.  If that fails you
+	*** can specify the location of the spl objects with the
+	*** '--with-spl-obj=PATH' option.
+Error! Bad return status for module build on kernel: 4.7.0-0.bpo.1-amd64 (x86_64)
+Consult /var/lib/dkms/zfs/0.6.5.7/build/make.log for more information.
 Setting up spl (0.6.5.7-5-jessie) ...
 Setting up libuutil1 (0.6.5.7-8-jessie) ...
 Setting up libnvpair1 (0.6.5.7-8-jessie) ...
@@ -340,14 +281,16 @@ update-rc.d: warning: start and stop actions are no longer supported; falling ba
 update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
 update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
 Processing triggers for initramfs-tools (0.120+deb8u2) ...
-update-initramfs: /boot/initrd.img-4.6.0-0.bpo.1-amd64 has been altered.
+update-initramfs: /boot/initrd.img-4.7.0-0.bpo.1-amd64 has been altered.
 update-initramfs: Cannot update. Override with -t option.
 Setting up debian-zfs (7~jessie) ...
-Processing triggers for libc-bin (2.19-18+deb8u4) ...
-Processing triggers for systemd (215-17+deb8u4) ...
+Processing triggers for libc-bin (2.19-18+deb8u6) ...
+Processing triggers for systemd (215-17+deb8u5) ...
+libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file '/lib/modules/4.6.0-0.bpo.1-amd64/modules.dep.bin'
+modinfo: ERROR: Module alias zfs not found.
 CLDS: * Install lsb-release.
 CLDS: * Add zfsonlinux repository to /etc/apt/sources.list.d/zfsonlinux.list.
 CLDS: * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
-CLDS: * Install debian-zfs: version: 0.6.5.7-8-jessie, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
+CLDS: * Install debian-zfs: ERROR: ZFS installation failed!, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Delete zfsonlinux_6_all.deb[1992K].
-CLDS: * Disk size = 5056336K. Space Used = 112304K.
+CLDS: * Disk size = 5132236K. Space Used = 106280K.

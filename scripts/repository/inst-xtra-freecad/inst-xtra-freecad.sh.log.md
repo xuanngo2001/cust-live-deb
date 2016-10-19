@@ -26,20 +26,20 @@
   * After this operation, 157 kB of additional disk space will be used.
   * After this operation, 228 kB of additional disk space will be used.
   * After this operation, 6,192 kB of additional disk space will be used.
-  * After this operation, 6,122 kB of additional disk space will be used.
+  * After this operation, 6,136 kB of additional disk space will be used.
   * After this operation, 2,840 kB of additional disk space will be used.
   * After this operation, 310 kB of additional disk space will be used.
   * After this operation, 78.8 kB of additional disk space will be used.
   * After this operation, 79.2 MB of additional disk space will be used.
   * After this operation, 195 kB of additional disk space will be used.
   * After this operation, 12.0 MB of additional disk space will be used.
-  * After this operation, 341 kB of additional disk space will be used.
+  * After this operation, 354 kB of additional disk space will be used.
   * After this operation, 207 kB of additional disk space will be used.
   * After this operation, 343 kB of additional disk space will be used.
-  * After this operation, 71.7 MB of additional disk space will be used.
+  * After this operation, 71.6 MB of additional disk space will be used.
   * After this operation, 61.7 MB of additional disk space will be used.
   * After this operation, 110 kB of additional disk space will be used.
-  * After this operation, 1,532 kB of additional disk space will be used.
+  * After this operation, 1,495 kB of additional disk space will be used.
   * After this operation, 56.6 MB of additional disk space will be used.
   * After this operation, 50.2 MB of additional disk space will be used.
   * After this operation, 4,989 kB of additional disk space will be used.
@@ -106,7 +106,7 @@
   * After this operation, 735 kB of additional disk space will be used.
   * After this operation, 412 MB of additional disk space will be used.
   * Install freecad.
-  * Disk size = 4823508K. Space Used = 499264K.
+  * Disk size = 4907460K. Space Used = 499296K.
   * The following NEW packages will be installed:
   ```bash
   iso-codes libcoin80 libgstreamer-plugins-base1.0-0 libgstreamer1.0-0

@@ -1,11 +1,11 @@
 * >>>>>>>>> Running inst-std-office-libreoffice-bpo.sh ...
   * After this operation, 1,185 kB of additional disk space will be used.
-  * After this operation, 285 MB of additional disk space will be used.
-  * After this operation, 42.6 MB of additional disk space will be used.
-  * After this operation, 16.8 MB of additional disk space will be used.
-  * After this operation, 9,673 kB of additional disk space will be used.
-  * After this operation, 1,484 kB of additional disk space will be used.
-  * Install LibreOffice 5.1.5.2 10m0(Build:2).
+  * After this operation, 282 MB of additional disk space will be used.
+  * After this operation, 42.7 MB of additional disk space will be used.
+  * After this operation, 17.1 MB of additional disk space will be used.
+  * After this operation, 9,637 kB of additional disk space will be used.
+  * After this operation, 1,447 kB of additional disk space will be used.
+  * Install LibreOffice 5.2.2.2.0 20m0(Build:2).
   * Install Office Suite: Word processor.
   * Install Office Suite: Spreadsheet.
   * Install Office Suite: Presentation.
@@ -13,7 +13,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 3915920K. Space Used = 447548K.
+  * Disk size = 3946452K. Space Used = 444496K.
   * The following NEW packages will be installed:
   ```bash
   libpagemaker-0.0-0 librevenge-0.0-0
