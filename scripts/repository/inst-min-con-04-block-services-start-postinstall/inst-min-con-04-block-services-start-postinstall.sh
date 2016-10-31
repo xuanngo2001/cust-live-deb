@@ -19,3 +19,4 @@ echo "${GV_LOG} * Block services from starting after they are being installed."
 #   - https://jpetazzo.github.io/2013/10/06/policy-rc-d-do-not-start-services-automatically/
 #   - http://serverfault.com/questions/681588/prevent-apache-from-starting-after-apt-get-install
 #   - http://askubuntu.com/questions/74061/install-packages-without-starting-background-processes-and-services
+#   - https://wiki.debian.org/chroot
