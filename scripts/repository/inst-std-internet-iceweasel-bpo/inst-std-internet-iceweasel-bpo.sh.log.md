@@ -1,13 +1,13 @@
 * >>>>>>>>> Running inst-std-internet-iceweasel-bpo.sh ...
   * After this operation, 101 MB of additional disk space will be used.
-  * After this operation, 21.8 MB of additional disk space will be used.
+  * After this operation, 752 kB of additional disk space will be used.
   * Install the latest Firefox from Debian Mozilla team: Mozilla Firefox 45.4.0.
   * Insert Iceweasel in Internet menu.
   * To update Adobe Flash Player: update-flashplugin-nonfree --install.
   * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/.
-  * Disk size = 3180772K. Space Used = 184800K.
+  * Disk size = 3354324K. Space Used = 169296K.
   * The following NEW packages will be installed:
   ```bash
   firefox-esr iceweasel libevent-2.0-5 libhunspell-1.3-0
-  binutils flashplugin-nonfree libcurl3-gnutls
+  flashplugin-nonfree libcurl3-gnutls
   ```

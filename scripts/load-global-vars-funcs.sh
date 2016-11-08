@@ -12,7 +12,7 @@ set -e
 export GV_LOG="CLDS:"
 
 # Log size of scripts.
-export GV_INSTALL_SIZE=/root/scripts/install.size
+export GV_INSTALL_SIZE=/root/scripts/main.size
 
 # APT sources list file
 export GV_SOURCES_LIST=/etc/apt/sources.list

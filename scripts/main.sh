@@ -19,15 +19,15 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 
 # Define variables. 
 	DATE_STRING=$(date +"%Y-%m-%d_%0k.%M.%S")
-	INSTALL_LOG="${LOG_DIR}/install.log"
-	INSTALL_LOG_SIZE="${LOG_DIR}/install.size"
+	MAIN_LOG="${LOG_DIR}/main.log"
+	MAIN_LOG_SIZE="${LOG_DIR}/main.size"
 
 # Log default size.
-echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."         2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${SCRIPT_NAME}.log"
-echo "${GV_LOG} * Running on SHELL=$SHELL VER=$BASH_VERSION" 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${SCRIPT_NAME}.log"
+echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."         2>&1 | tee -a "${MAIN_LOG}" "${LOG_DIR}/${SCRIPT_NAME}.log"
+echo "${GV_LOG} * Running on SHELL=$SHELL VER=$BASH_VERSION" 2>&1 | tee -a "${MAIN_LOG}" "${LOG_DIR}/${SCRIPT_NAME}.log"
 TOTAL_SIZE=$(GF_LOG_TOTAL_SIZE)
-echo "${TOTAL_SIZE}" 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${SCRIPT_NAME}.log"
-echo "${SCRIPT_NAME}; ${DATE_STRING}; ${TOTAL_SIZE}" > ${INSTALL_LOG_SIZE}
+echo "${TOTAL_SIZE}" 2>&1 | tee -a "${MAIN_LOG}" "${LOG_DIR}/${SCRIPT_NAME}.log"
+echo "${SCRIPT_NAME}; ${DATE_STRING}; ${TOTAL_SIZE}" > ${MAIN_LOG_SIZE}
 
 ###################### Main
 # Run scripts.
@@ -38,11 +38,11 @@ for SCRIPT_PATH in $( cat scripts-ls.lst ); do
 	  
 	  chmod +x ${SCRIPT_PATH}
 	  EXE_SCRIPT_NAME=$(basename "${SCRIPT_PATH}")
-	  ${SCRIPT_PATH} 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${EXE_SCRIPT_NAME}.log"
+	  ${SCRIPT_PATH} 2>&1 | tee -a "${MAIN_LOG}" "${LOG_DIR}/${EXE_SCRIPT_NAME}.log"
 	  # Log total size at the end of script.
 	  total_size_tmp=$(GF_LOG_TOTAL_SIZE)
-	  echo "${total_size_tmp}" 2>&1 | tee -a "${INSTALL_LOG}" "${LOG_DIR}/${EXE_SCRIPT_NAME}.log"
-	  echo "${SCRIPT_PATH}; ${DATE_STRING}; ${total_size_tmp}" >> ${INSTALL_LOG_SIZE}
+	  echo "${total_size_tmp}" 2>&1 | tee -a "${MAIN_LOG}" "${LOG_DIR}/${EXE_SCRIPT_NAME}.log"
+	  echo "${SCRIPT_PATH}; ${DATE_STRING}; ${total_size_tmp}" >> ${MAIN_LOG_SIZE}
   )  
 done
 
