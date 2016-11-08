@@ -4,7 +4,7 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   file
-0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 20 not upgraded.
 Need to get 60.4 kB of archives.
 After this operation, 77.8 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main file amd64 1:5.22+15-2+deb8u2 [60.4 kB]
@@ -14,28 +14,111 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  dpkg-dev g++ g++-4.9 libdpkg-perl libstdc++-4.9-dev libtimedate-perl
+  dpkg-dev g++ g++-4.9 gcc gcc-4.9 guile-2.0-libs libasan1 libc-dev-bin
+  libc6-dev libcilkrts5 libdpkg-perl libgc1c2 libgcc-4.9-dev libitm1 liblsan0
+  libstdc++-4.9-dev libtimedate-perl libtsan0 libubsan0 libunistring0
+  linux-compiler-gcc-4.9-x86 linux-headers-4.7.0-0.bpo.1-amd64
+  linux-headers-4.7.0-0.bpo.1-common linux-kbuild-4.7 linux-libc-dev
+  make-guile patch
 Suggested packages:
   debian-keyring g++-multilib g++-4.9-multilib gcc-4.9-doc libstdc++6-4.9-dbg
-  libstdc++-4.9-doc
+  gcc-multilib make manpages-dev autoconf automake libtool flex bison gdb
+  gcc-doc gcc-4.9-multilib gcc-4.9-locales libgcc1-dbg libgomp1-dbg
+  libitm1-dbg libatomic1-dbg libasan1-dbg liblsan0-dbg libtsan0-dbg
+  libubsan0-dbg libcilkrts5-dbg libquadmath0-dbg glibc-doc libstdc++-4.9-doc
+  make-doc ed diffutils-doc
 Recommended packages:
   fakeroot libalgorithm-merge-perl libfile-fcntllock-perl
 The following NEW packages will be installed:
-  build-essential dpkg-dev g++ g++-4.9 libdpkg-perl libstdc++-4.9-dev
-  libtimedate-perl linux-headers-amd64
-0 upgraded, 8 newly installed, 0 to remove and 19 not upgraded.
-Need to get 25.2 MB/25.2 MB of archives.
-After this operation, 50.1 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libstdc++-4.9-dev amd64 4.9.2-10 [1,121 kB]
-Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main g++-4.9 amd64 4.9.2-10 [21.4 MB]
-Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main g++ amd64 4:4.9.2-2 [1,530 B]
-Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libtimedate-perl all 2.3000-2 [42.2 kB]
-Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main libdpkg-perl all 1.17.27 [1,075 kB]
-Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main dpkg-dev all 1.17.27 [1,548 kB]
-Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main build-essential amd64 11.7 [7,114 B]
-Fetched 25.2 MB in 0s (33.4 MB/s)
+  build-essential dpkg-dev g++ g++-4.9 gcc gcc-4.9 guile-2.0-libs libasan1
+  libc-dev-bin libc6-dev libcilkrts5 libdpkg-perl libgc1c2 libgcc-4.9-dev
+  libitm1 liblsan0 libstdc++-4.9-dev libtimedate-perl libtsan0 libubsan0
+  libunistring0 linux-compiler-gcc-4.9-x86 linux-headers-4.7.0-0.bpo.1-amd64
+  linux-headers-4.7.0-0.bpo.1-common linux-headers-amd64 linux-kbuild-4.7
+  linux-libc-dev make-guile patch
+0 upgraded, 29 newly installed, 0 to remove and 20 not upgraded.
+Need to get 46.4 MB of archives.
+After this operation, 142 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libgc1c2 amd64 1:7.2d-6.4 [132 kB]
+Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libunistring0 amd64 0.9.3-5.2+b1 [288 kB]
+Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main guile-2.0-libs amd64 2.0.11+1-9 [2,219 kB]
+Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libasan1 amd64 4.9.2-10 [195 kB]
+Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main libcilkrts5 amd64 4.9.2-10 [40.1 kB]
+Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main libitm1 amd64 4.9.2-10 [29.2 kB]
+Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main liblsan0 amd64 4.9.2-10 [92.8 kB]
+Get:8 http://localhost/aptly-repo/jessie-main/ jessie/main libtsan0 amd64 4.9.2-10 [212 kB]
+Get:9 http://localhost/aptly-repo/jessie-main/ jessie/main libubsan0 amd64 4.9.2-10 [82.4 kB]
+Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main patch amd64 2.7.5-1 [109 kB]
+Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main libc-dev-bin amd64 2.19-18+deb8u6 [238 kB]
+Get:12 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main linux-libc-dev amd64 3.16.36-1+deb8u2 [1,034 kB]
+Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libc6-dev amd64 2.19-18+deb8u6 [2,002 kB]
+Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main libgcc-4.9-dev amd64 4.9.2-10 [2,066 kB]
+Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main gcc-4.9 amd64 4.9.2-10 [5,352 kB]
+Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main gcc amd64 4:4.9.2-2 [5,136 B]
+Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libstdc++-4.9-dev amd64 4.9.2-10 [1,121 kB]
+Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main g++-4.9 amd64 4.9.2-10 [21.4 MB]
+Get:19 http://localhost/aptly-repo/jessie-main/ jessie/main g++ amd64 4:4.9.2-2 [1,530 B]
+Get:20 http://localhost/aptly-repo/jessie-main/ jessie/main make-guile amd64 4.0-8.1 [350 kB]
+Get:21 http://localhost/aptly-repo/jessie-main/ jessie/main libtimedate-perl all 2.3000-2 [42.2 kB]
+Get:22 http://localhost/aptly-repo/jessie-main/ jessie/main libdpkg-perl all 1.17.27 [1,075 kB]
+Get:23 http://localhost/aptly-repo/jessie-main/ jessie/main dpkg-dev all 1.17.27 [1,548 kB]
+Get:24 http://localhost/aptly-repo/jessie-main/ jessie/main build-essential amd64 11.7 [7,114 B]
+Get:25 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-compiler-gcc-4.9-x86 amd64 4.7.8-1~bpo8+1 [399 kB]
+Get:26 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-headers-4.7.0-0.bpo.1-common amd64 4.7.8-1~bpo8+1 [5,289 kB]
+Get:27 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-kbuild-4.7 amd64 4.7.8-1~bpo8+1 [589 kB]
+Get:28 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-headers-4.7.0-0.bpo.1-amd64 amd64 4.7.8-1~bpo8+1 [502 kB]
+Get:29 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-headers-amd64 amd64 4.7+75~bpo8+1 [5,726 B]
+Fetched 46.4 MB in 1s (34.1 MB/s)
+Selecting previously unselected package libgc1c2:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56637 files and directories currently installed.)
+Preparing to unpack .../libgc1c2_1%3a7.2d-6.4_amd64.deb ...
+Unpacking libgc1c2:amd64 (1:7.2d-6.4) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../libunistring0_0.9.3-5.2+b1_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.3-5.2+b1) ...
+Selecting previously unselected package guile-2.0-libs:amd64.
+Preparing to unpack .../guile-2.0-libs_2.0.11+1-9_amd64.deb ...
+Unpacking guile-2.0-libs:amd64 (2.0.11+1-9) ...
+Selecting previously unselected package libasan1:amd64.
+Preparing to unpack .../libasan1_4.9.2-10_amd64.deb ...
+Unpacking libasan1:amd64 (4.9.2-10) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../libcilkrts5_4.9.2-10_amd64.deb ...
+Unpacking libcilkrts5:amd64 (4.9.2-10) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../libitm1_4.9.2-10_amd64.deb ...
+Unpacking libitm1:amd64 (4.9.2-10) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../liblsan0_4.9.2-10_amd64.deb ...
+Unpacking liblsan0:amd64 (4.9.2-10) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../libtsan0_4.9.2-10_amd64.deb ...
+Unpacking libtsan0:amd64 (4.9.2-10) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../libubsan0_4.9.2-10_amd64.deb ...
+Unpacking libubsan0:amd64 (4.9.2-10) ...
+Selecting previously unselected package patch.
+Preparing to unpack .../patch_2.7.5-1_amd64.deb ...
+Unpacking patch (2.7.5-1) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../libc-dev-bin_2.19-18+deb8u6_amd64.deb ...
+Unpacking libc-dev-bin (2.19-18+deb8u6) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../linux-libc-dev_3.16.36-1+deb8u2_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (3.16.36-1+deb8u2) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../libc6-dev_2.19-18+deb8u6_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.19-18+deb8u6) ...
+Selecting previously unselected package libgcc-4.9-dev:amd64.
+Preparing to unpack .../libgcc-4.9-dev_4.9.2-10_amd64.deb ...
+Unpacking libgcc-4.9-dev:amd64 (4.9.2-10) ...
+Selecting previously unselected package gcc-4.9.
+Preparing to unpack .../gcc-4.9_4.9.2-10_amd64.deb ...
+Unpacking gcc-4.9 (4.9.2-10) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../gcc_4%3a4.9.2-2_amd64.deb ...
+Unpacking gcc (4:4.9.2-2) ...
 Selecting previously unselected package libstdc++-4.9-dev:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71249 files and directories currently installed.)
 Preparing to unpack .../libstdc++-4.9-dev_4.9.2-10_amd64.deb ...
 Unpacking libstdc++-4.9-dev:amd64 (4.9.2-10) ...
 Selecting previously unselected package g++-4.9.
@@ -44,6 +127,9 @@ Unpacking g++-4.9 (4.9.2-10) ...
 Selecting previously unselected package g++.
 Preparing to unpack .../g++_4%3a4.9.2-2_amd64.deb ...
 Unpacking g++ (4:4.9.2-2) ...
+Selecting previously unselected package make-guile.
+Preparing to unpack .../make-guile_4.0-8.1_amd64.deb ...
+Unpacking make-guile (4.0-8.1) ...
 Selecting previously unselected package libtimedate-perl.
 Preparing to unpack .../libtimedate-perl_2.3000-2_all.deb ...
 Unpacking libtimedate-perl (2.3000-2) ...
@@ -56,241 +142,65 @@ Unpacking dpkg-dev (1.17.27) ...
 Selecting previously unselected package build-essential.
 Preparing to unpack .../build-essential_11.7_amd64.deb ...
 Unpacking build-essential (11.7) ...
+Selecting previously unselected package linux-compiler-gcc-4.9-x86.
+Preparing to unpack .../linux-compiler-gcc-4.9-x86_4.7.8-1~bpo8+1_amd64.deb ...
+Unpacking linux-compiler-gcc-4.9-x86 (4.7.8-1~bpo8+1) ...
+Selecting previously unselected package linux-headers-4.7.0-0.bpo.1-common.
+Preparing to unpack .../linux-headers-4.7.0-0.bpo.1-common_4.7.8-1~bpo8+1_amd64.deb ...
+Unpacking linux-headers-4.7.0-0.bpo.1-common (4.7.8-1~bpo8+1) ...
+Selecting previously unselected package linux-kbuild-4.7.
+Preparing to unpack .../linux-kbuild-4.7_4.7.8-1~bpo8+1_amd64.deb ...
+Unpacking linux-kbuild-4.7 (4.7.8-1~bpo8+1) ...
+Selecting previously unselected package linux-headers-4.7.0-0.bpo.1-amd64.
+Preparing to unpack .../linux-headers-4.7.0-0.bpo.1-amd64_4.7.8-1~bpo8+1_amd64.deb ...
+Unpacking linux-headers-4.7.0-0.bpo.1-amd64 (4.7.8-1~bpo8+1) ...
 Selecting previously unselected package linux-headers-amd64.
 Preparing to unpack .../linux-headers-amd64_4.7+75~bpo8+1_amd64.deb ...
 Unpacking linux-headers-amd64 (4.7+75~bpo8+1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
+Setting up libgc1c2:amd64 (1:7.2d-6.4) ...
+Setting up libunistring0:amd64 (0.9.3-5.2+b1) ...
+Setting up guile-2.0-libs:amd64 (2.0.11+1-9) ...
+Setting up libasan1:amd64 (4.9.2-10) ...
+Setting up libcilkrts5:amd64 (4.9.2-10) ...
+Setting up libitm1:amd64 (4.9.2-10) ...
+Setting up liblsan0:amd64 (4.9.2-10) ...
+Setting up libtsan0:amd64 (4.9.2-10) ...
+Setting up libubsan0:amd64 (4.9.2-10) ...
+Setting up patch (2.7.5-1) ...
+Setting up libc-dev-bin (2.19-18+deb8u6) ...
+Setting up linux-libc-dev:amd64 (3.16.36-1+deb8u2) ...
+Setting up libc6-dev:amd64 (2.19-18+deb8u6) ...
+Setting up libgcc-4.9-dev:amd64 (4.9.2-10) ...
+Setting up gcc-4.9 (4.9.2-10) ...
+Setting up gcc (4:4.9.2-2) ...
 Setting up libstdc++-4.9-dev:amd64 (4.9.2-10) ...
 Setting up g++-4.9 (4.9.2-10) ...
 Setting up g++ (4:4.9.2-2) ...
 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up make-guile (4.0-8.1) ...
 Setting up libtimedate-perl (2.3000-2) ...
 Setting up libdpkg-perl (1.17.27) ...
 Setting up dpkg-dev (1.17.27) ...
 Setting up build-essential (11.7) ...
+Setting up linux-compiler-gcc-4.9-x86 (4.7.8-1~bpo8+1) ...
+Setting up linux-headers-4.7.0-0.bpo.1-common (4.7.8-1~bpo8+1) ...
+Setting up linux-kbuild-4.7 (4.7.8-1~bpo8+1) ...
+Setting up linux-headers-4.7.0-0.bpo.1-amd64 (4.7.8-1~bpo8+1) ...
 Setting up linux-headers-amd64 (4.7+75~bpo8+1) ...
+Processing triggers for libc-bin (2.19-18+deb8u6) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 libc6-dev is already the newest version.
-Suggested packages:
-  lsb
-The following NEW packages will be installed:
-  lsb-release
-0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
-Need to get 26.5 kB of archives.
-After this operation, 99.3 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main lsb-release all 4.1+Debian13+nmu1 [26.5 kB]
-Fetched 26.5 kB in 0s (0 B/s)
-Selecting previously unselected package lsb-release.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72471 files and directories currently installed.)
-Preparing to unpack .../lsb-release_4.1+Debian13+nmu1_all.deb ...
-Unpacking lsb-release (4.1+Debian13+nmu1) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up lsb-release (4.1+Debian13+nmu1) ...
-Selecting previously unselected package zfsonlinux.
-(Reading database ... 72480 files and directories currently installed.)
-Preparing to unpack zfsonlinux_6_all.deb ...
-Unpacking zfsonlinux (6) ...
-Setting up zfsonlinux (6) ...
-Hit http://localhost jessie InRelease
-Hit http://localhost nightly InRelease
-Hit http://localhost jessie InRelease
-Hit http://localhost jessie InRelease
-Hit http://localhost jessie-backports InRelease
-Hit http://localhost jessie-backports InRelease
-Hit http://localhost jessie-backports InRelease
-Hit http://localhost jessie InRelease
-Hit http://localhost jessie InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie InRelease
-Hit http://localhost jessie InRelease
-Hit http://localhost jessie/main amd64 Packages
-Hit http://localhost nightly/main amd64 Packages
-Hit http://localhost jessie/main amd64 Packages
-Ign http://localhost jessie/main Translation-en_US
-Ign http://localhost jessie/main Translation-en
-Ign http://localhost jessie/main Translation-en_US.UTF-8
-Ign http://localhost nightly/main Translation-en_US
-Ign http://localhost nightly/main Translation-en
-Ign http://localhost nightly/main Translation-en_US.UTF-8
-Ign http://localhost jessie/main Translation-en_US
-Ign http://localhost jessie/main Translation-en
-Ign http://localhost jessie/main Translation-en_US.UTF-8
-Hit http://localhost jessie/non-free amd64 Packages
-Ign http://localhost jessie/non-free Translation-en_US
-Ign http://localhost jessie/non-free Translation-en
-Ign http://localhost jessie/non-free Translation-en_US.UTF-8
-Hit http://localhost jessie-backports/contrib amd64 Packages
-Hit http://localhost jessie-backports/main amd64 Packages
-Ign http://localhost jessie-backports/contrib Translation-en_US
-Ign http://localhost jessie-backports/contrib Translation-en
-Ign http://localhost jessie-backports/contrib Translation-en_US.UTF-8
-Ign http://localhost jessie-backports/main Translation-en_US
-Ign http://localhost jessie-backports/main Translation-en
-Ign http://localhost jessie-backports/main Translation-en_US.UTF-8
-Hit http://localhost jessie-backports/non-free amd64 Packages
-Hit http://localhost jessie/contrib amd64 Packages
-Ign http://localhost jessie-backports/non-free Translation-en_US
-Ign http://localhost jessie-backports/non-free Translation-en
-Ign http://localhost jessie-backports/non-free Translation-en_US.UTF-8
-Ign http://localhost jessie/contrib Translation-en_US
-Ign http://localhost jessie/contrib Translation-en
-Ign http://localhost jessie/contrib Translation-en_US.UTF-8
-Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
-Hit http://localhost jessie-updates/main amd64 Packages
-Ign http://localhost jessie/non-free Translation-en_US
-Ign http://localhost jessie/non-free Translation-en
-Ign http://localhost jessie/non-free Translation-en_US.UTF-8
-Ign http://localhost jessie-updates/contrib Translation-en_US
-Ign http://localhost jessie-updates/contrib Translation-en
-Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
-Ign http://localhost jessie-updates/main Translation-en_US
-Ign http://localhost jessie-updates/main Translation-en
-Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
-Ign http://localhost jessie-updates/non-free Translation-en_US
-Ign http://localhost jessie-updates/non-free Translation-en
-Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
-Ign http://localhost jessie-updates/contrib Translation-en_US
-Ign http://localhost jessie-updates/contrib Translation-en
-Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/main amd64 Packages
-Ign http://localhost jessie-updates/main Translation-en_US
-Ign http://localhost jessie-updates/main Translation-en
-Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/non-free amd64 Packages
-Hit http://localhost jessie/contrib amd64 Packages
-Ign http://localhost jessie-updates/non-free Translation-en_US
-Ign http://localhost jessie-updates/non-free Translation-en
-Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
-Hit http://localhost jessie/main amd64 Packages
-Ign http://localhost jessie/contrib Translation-en_US
-Ign http://localhost jessie/contrib Translation-en
-Ign http://localhost jessie/contrib Translation-en_US.UTF-8
-Ign http://localhost jessie/main Translation-en_US
-Ign http://localhost jessie/main Translation-en
-Ign http://localhost jessie/main Translation-en_US.UTF-8
-Get:1 http://archive.zfsonlinux.org jessie InRelease [3,066 B]
-Get:2 http://archive.zfsonlinux.org jessie/main amd64 Packages [10.6 kB]
-Ign http://archive.zfsonlinux.org jessie/main Translation-en_US
-Ign http://archive.zfsonlinux.org jessie/main Translation-en
-Ign http://archive.zfsonlinux.org jessie/main Translation-en_US.UTF-8
-Fetched 13.6 kB in 6s (2,040 B/s)
-Reading package lists...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following extra packages will be installed:
-  file libnvpair1 libuutil1 libzfs2 libzpool2 spl spl-dkms zfs-dkms zfsutils
-Suggested packages:
-  zfs-auto-snapshot nfs-kernel-server samba-common-bin zfs-initramfs
-Recommended packages:
-  linux-headers
-The following NEW packages will be installed:
-  debian-zfs file libnvpair1 libuutil1 libzfs2 libzpool2 spl spl-dkms zfs-dkms
-  zfsutils
-0 upgraded, 10 newly installed, 0 to remove and 20 not upgraded.
-Need to get 2,466 kB/2,526 kB of archives.
-After this operation, 14.1 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main zfs-dkms all 0.6.5.7-8-jessie [1,073 kB]
-Get:2 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main spl amd64 0.6.5.7-5-jessie [16.4 kB]
-Get:3 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main libuutil1 amd64 0.6.5.7-8-jessie [44.8 kB]
-Get:4 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main libnvpair1 amd64 0.6.5.7-8-jessie [41.5 kB]
-Get:5 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main libzpool2 amd64 0.6.5.7-8-jessie [398 kB]
-Get:6 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main libzfs2 amd64 0.6.5.7-8-jessie [152 kB]
-Get:7 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main zfsutils amd64 0.6.5.7-8-jessie [381 kB]
-Get:8 http://localhost/aptly-repo/zfsonlinux-main/ jessie/main debian-zfs amd64 7~jessie [6,806 B]
-Get:9 http://archive.zfsonlinux.org/debian/ jessie/main spl-dkms all 0.6.5.7-5-jessie [352 kB]
-Preconfiguring packages ...
-Fetched 2,466 kB in 1s (1,992 kB/s)
-Selecting previously unselected package file.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72485 files and directories currently installed.)
-Preparing to unpack .../file_1%3a5.22+15-2+deb8u2_amd64.deb ...
-Unpacking file (1:5.22+15-2+deb8u2) ...
-Selecting previously unselected package spl-dkms.
-Preparing to unpack .../spl-dkms_0.6.5.7-5-jessie_all.deb ...
-Unpacking spl-dkms (0.6.5.7-5-jessie) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up file (1:5.22+15-2+deb8u2) ...
-Setting up spl-dkms (0.6.5.7-5-jessie) ...
-Loading new spl-0.6.5.7 DKMS files...
-First Installation: checking all kernels...
-It is likely that 4.6.0-0.bpo.1-amd64 belongs to a chroot's host
-Building initial module for 4.7.0-0.bpo.1-amd64
-Error! Bad return status for module build on kernel: 4.7.0-0.bpo.1-amd64 (x86_64)
-Consult /var/lib/dkms/spl/0.6.5.7/build/make.log for more information.
-Selecting previously unselected package zfs-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72738 files and directories currently installed.)
-Preparing to unpack .../zfs-dkms_0.6.5.7-8-jessie_all.deb ...
-Unpacking zfs-dkms (0.6.5.7-8-jessie) ...
-Selecting previously unselected package spl.
-Preparing to unpack .../spl_0.6.5.7-5-jessie_amd64.deb ...
-Unpacking spl (0.6.5.7-5-jessie) ...
-Selecting previously unselected package libuutil1.
-Preparing to unpack .../libuutil1_0.6.5.7-8-jessie_amd64.deb ...
-Unpacking libuutil1 (0.6.5.7-8-jessie) ...
-Selecting previously unselected package libnvpair1.
-Preparing to unpack .../libnvpair1_0.6.5.7-8-jessie_amd64.deb ...
-Unpacking libnvpair1 (0.6.5.7-8-jessie) ...
-Selecting previously unselected package libzpool2.
-Preparing to unpack .../libzpool2_0.6.5.7-8-jessie_amd64.deb ...
-Unpacking libzpool2 (0.6.5.7-8-jessie) ...
-Selecting previously unselected package libzfs2.
-Preparing to unpack .../libzfs2_0.6.5.7-8-jessie_amd64.deb ...
-Unpacking libzfs2 (0.6.5.7-8-jessie) ...
-Selecting previously unselected package zfsutils.
-Preparing to unpack .../zfsutils_0.6.5.7-8-jessie_amd64.deb ...
-Unpacking zfsutils (0.6.5.7-8-jessie) ...
-Selecting previously unselected package debian-zfs.
-Preparing to unpack .../debian-zfs_7~jessie_amd64.deb ...
-Unpacking debian-zfs (7~jessie) ...
-Processing triggers for libc-bin (2.19-18+deb8u6) ...
-Processing triggers for initramfs-tools (0.120+deb8u2) ...
-update-initramfs: /boot/initrd.img-4.7.0-0.bpo.1-amd64 has been altered.
-update-initramfs: Cannot update. Override with -t option.
-Processing triggers for man-db (2.7.0.2-5) ...
-Processing triggers for systemd (215-17+deb8u5) ...
-Setting up zfs-dkms (0.6.5.7-8-jessie) ...
-Loading new zfs-0.6.5.7 DKMS files...
-First Installation: checking all kernels...
-It is likely that 4.6.0-0.bpo.1-amd64 belongs to a chroot's host
-Building initial module for 4.7.0-0.bpo.1-amd64
-configure: error: 
-	*** Please make sure the kmod spl devel <kernel> package for your
-	*** distribution is installed then try again.  If that fails you
-	*** can specify the location of the spl objects with the
-	*** '--with-spl-obj=PATH' option.
-Error! Bad return status for module build on kernel: 4.7.0-0.bpo.1-amd64 (x86_64)
-Consult /var/lib/dkms/zfs/0.6.5.7/build/make.log for more information.
-Setting up spl (0.6.5.7-5-jessie) ...
-Setting up libuutil1 (0.6.5.7-8-jessie) ...
-Setting up libnvpair1 (0.6.5.7-8-jessie) ...
-Setting up libzpool2 (0.6.5.7-8-jessie) ...
-Setting up libzfs2 (0.6.5.7-8-jessie) ...
-Setting up zfsutils (0.6.5.7-8-jessie) ...
-update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
-update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
-update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
-update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
-Processing triggers for initramfs-tools (0.120+deb8u2) ...
-update-initramfs: /boot/initrd.img-4.7.0-0.bpo.1-amd64 has been altered.
-update-initramfs: Cannot update. Override with -t option.
-Setting up debian-zfs (7~jessie) ...
-Processing triggers for libc-bin (2.19-18+deb8u6) ...
-Processing triggers for systemd (215-17+deb8u5) ...
-libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file '/lib/modules/4.6.0-0.bpo.1-amd64/modules.dep.bin'
-modinfo: ERROR: Module alias zfs not found.
-CLDS: * Install lsb-release.
-CLDS: * Add zfsonlinux repository to /etc/apt/sources.list.d/zfsonlinux.list.
-CLDS: * Add GPG key to /etc/apt/trusted.gpg.d/zfsonlinux.gpg.
-CLDS: * Install debian-zfs: ERROR: ZFS installation failed!, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
-CLDS: * Delete zfsonlinux_6_all.deb[1992K].
-CLDS: * Disk size = 5132236K. Space Used = 106280K.
+libc6-dev set to manually installed.
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ spl-modules-3.16.0-4-amd64 : Depends: linux-image-3.16.0-4 (= 3.16.7-ckt25-1) but it is not installable
+E: Unable to correct problems, you have held broken packages.
+CLDS: * Disk size = 5049960K. Space Used = 211996K.

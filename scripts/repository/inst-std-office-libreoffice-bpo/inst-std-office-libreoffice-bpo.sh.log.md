@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-office-libreoffice-bpo.sh ...
   * After this operation, 1,185 kB of additional disk space will be used.
   * After this operation, 282 MB of additional disk space will be used.
-  * After this operation, 42.7 MB of additional disk space will be used.
+  * After this operation, 43.0 MB of additional disk space will be used.
   * After this operation, 17.1 MB of additional disk space will be used.
   * After this operation, 9,637 kB of additional disk space will be used.
   * After this operation, 1,447 kB of additional disk space will be used.
@@ -13,7 +13,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 3946452K. Space Used = 444496K.
+  * Disk size = 3740676K. Space Used = 444900K.
   * The following NEW packages will be installed:
   ```bash
   libpagemaker-0.0-0 librevenge-0.0-0
@@ -28,7 +28,7 @@
   libwpg-0.3-3 libxslt1.1 libyajl2 uno-libs3 ure
   coinor-libcbc3 coinor-libcgl1 coinor-libclp1 coinor-libcoinmp1
   coinor-libcoinutils3 coinor-libosi1 libblas-common libblas3 libcolamd2.8.0
-  libgfortran3 liblapack3 libreoffice-calc lp-solve
+  libgfortran3 liblapack3 libquadmath0 libreoffice-calc lp-solve
   libcdr-0.1-1 libfreehand-0.1-1 libmspub-0.1-1 libpagemaker-0.0-0
   libreoffice-draw libreoffice-impress libvisio-0.1-1
   libreoffice-base libreoffice-base-drivers

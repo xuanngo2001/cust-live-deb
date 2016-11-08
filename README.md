@@ -37,7 +37,15 @@ http://www.somsubhra.com/github-release-stats/?username=limelime&repository=cust
 ## Regenerate initrd
 * https://kernel-handbook.alioth.debian.org/ch-initramfs.html#s-initramfs-regen
 
+## Chroot
+* https://wiki.debian.org/chroot
+
 # Upgrade to new kernel
+
+1. ./cld.sh std http://localhost/aptly-repo/jessie-main
+1. Create a persistent partition: persistence 3072
+
+
 
 * Make sure that your repository contain the latest version and headers.
 

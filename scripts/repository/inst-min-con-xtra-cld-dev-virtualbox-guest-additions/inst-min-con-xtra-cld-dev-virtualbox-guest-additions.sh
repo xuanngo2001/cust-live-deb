@@ -14,8 +14,8 @@ apt-get -d -y --force-yes install linux-headers-amd64
 
 
 # Install required packages to compile VirtualBox guest additions.
-KERNEL_VERSION=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
-PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_VERSION}"
+KERNEL_HEADER=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
+PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_HEADER}"
 apt-get -y --force-yes install ${PKGS_LIST}
 
 # Install virtualbox-guest-utils.
@@ -31,17 +31,17 @@ echo "${GV_LOG} * Install virtualbox-guest-utils to access shared folder. No nee
 echo "${GV_LOG} * VirtualBox guest additions installed: ${VBOXGUEST_ADD_VERSION}."
 
 # 1) Working dependencies.
-###PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_VERSION} build-essential module-assistant"
+###PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_HEADER} build-essential module-assistant"
 ###apt-get -y --force-yes install ${PKGS_LIST}
 ###m-a -i prepare
 ###apt-get -y --force-yes install virtualbox-guest-dkms virtualbox-guest-source virtualbox-guest-utils
 
 # 2) Working dependencies.
-###PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_VERSION}"
+###PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_HEADER}"
 ###apt-get -y --force-yes install ${PKGS_LIST}
 ###apt-get -y --force-yes install virtualbox-guest-dkms virtualbox-guest-source virtualbox-guest-utils
 
 # 3) Working dependencies.
-###PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_VERSION}"
+###PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_HEADER}"
 ###apt-get -y --force-yes install ${PKGS_LIST}
 ###apt-get -y --force-yes install virtualbox-guest-dkms virtualbox-guest-utils

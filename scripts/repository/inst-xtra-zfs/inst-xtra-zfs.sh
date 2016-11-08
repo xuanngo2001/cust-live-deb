@@ -6,6 +6,9 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# NOTE:
+#   There is no need to add "deb http://archive.zfsonlinux.org/debian jessie main" in /etc/apt/sources.list. Already add by "dpkg -i ${ZFS_REPO_KEY_DEB}"
+
 # Explicitly install dependent packages
 # Fix issue: https://github.com/zfsonlinux/zfs/issues/3065
 #            https://github.com/zfsonlinux/zfs/issues/1466
@@ -16,7 +19,7 @@ apt-get -y --force-yes install linux-headers-amd64 build-essential
 
 
 # Install required packages.
-apt-get -y --force-yes install lsb-release libc6-dev 
+apt-get -y --force-yes install lsb-release libc6-dev spl-dkms
 
 
 # Install ZFS
@@ -27,9 +30,11 @@ apt-get update
 apt-get -y --force-yes install debian-zfs
 rm -f ${ZFS_REPO_KEY_DEB}
 
+# 0.6.4->0.6.5.1: https://github.com/zfsonlinux/zfs/issues/3841
 # Change default behavior: Don't allow the last 1.6% of space in the pool instead of 3.2%.
 #yes | cp zfs.conf /etc/modprobe.d/ 
 
+# v0.6.5.8: https://github.com/zfsonlinux/zfs/releases/tag/zfs-0.6.5.8
 
 # Log
 ZFS_VERSION=$(modinfo zfs | grep ^version | tr -s ' ')
@@ -54,3 +59,6 @@ echo "${GV_LOG} * Delete ${ZFS_REPO_KEY_DEB}[${ZFS_REPO_KEY_DEB_SIZE}K]."
 # apt-get -y --force-yes install lsb-release linux-libc-dev
 
 # Test: apt-get -y remove debian-zfs zfs-dkms zfsonlinux zfsutils
+
+# Uninstall:
+#   apt-get remove -y debian-zfs lsb-release libc6-dev; apt-get -y autoremove
