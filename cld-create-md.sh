@@ -15,7 +15,7 @@ mkdir -p "${MD_DIR}"
 MD_DIR=$(readlink -ev "${MD_DIR}")
 
 # Master md file.
-MASTER_MD="${MD_DIR}/master-install.md"
+MASTER_MD="${MD_DIR}/master-main.md"
 rm -f "${MASTER_MD}"
 
 # Processing log files.

@@ -50,8 +50,8 @@ Then, run
   ./setup-chroot.sh
   chmod +x scripts-ls.sh
   ./scripts-ls.sh ${SYSTEM}
-  chmod +x install.sh
-  ./install.sh
+  chmod +x main.sh
+  ./main.sh
 EOF
 
 

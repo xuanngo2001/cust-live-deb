@@ -10,5 +10,5 @@ LOG_DIR=$(readlink -ev "${LOG_DIR}")
 
 # Log install script sizes.
 INSTALL_SIZE_HISTORY=install-size-history.txt
-cat "${LOG_DIR}/install.size" >> ${INSTALL_SIZE_HISTORY}
+cat "${LOG_DIR}/main.size" >> ${INSTALL_SIZE_HISTORY}
 echo "${INSTALL_SIZE_HISTORY} updated."

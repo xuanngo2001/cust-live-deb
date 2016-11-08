@@ -34,8 +34,8 @@ function F_MAIN()
 	 
 	done < <( find "${LOG_DIR}" -type f -name "inst-*.sh*" )
 	
-	# Processing install.sh.log*
-    find "${LOG_DIR}" -type f -name 'install.sh.log*' -exec bash -c 'F_OVERWRITE_IF_DIFF "$0" "$1"' {} "${BASE_SCRIPT_DIR}" \;
+	# Processing main.sh.log*
+    find "${LOG_DIR}" -type f -name 'main.sh.log*' -exec bash -c 'F_OVERWRITE_IF_DIFF "$0" "$1"' {} "${BASE_SCRIPT_DIR}" \;
     
 	
 	# Processing dpkg.log & dpkg-version.log

@@ -29,15 +29,15 @@ IGNORE_ERROR=$3
 
 IGNORE_ERROR=$(echo "${IGNORE_ERROR}" | tr '[:upper:]' '[:lower:]')
 
-# Stop if there is error in install.log
+# Stop if there is error in main.log
 ##################################################################
-INSTALL_LOG=./logs/install.log
+MAIN_LOG=./logs/main.log
 if [ "${IGNORE_ERROR}" != "ignore" ];
 then
-	if grep -E '^E:|ERROR:' ${INSTALL_LOG} > /dev/null
+	if grep -E '^E:|ERROR:' ${MAIN_LOG} > /dev/null
 	then
-	  echo "Process stopped. There is error in ${INSTALL_LOG}."
-	  grep -E '^E:|ERROR:' ${INSTALL_LOG} | sed 's/^/  /'
+	  echo "Process stopped. There is error in ${MAIN_LOG}."
+	  grep -E '^E:|ERROR:' ${MAIN_LOG} | sed 's/^/  /'
 	  exit 1;
 	fi
 fi
@@ -45,8 +45,8 @@ fi
 # If system is not empty, do the followings.
 ##################################################################
 if [ ! -z "${SYSTEM}" ]; then
-  # Prefix install.size with system name.
-  sed -i "/^${SYSTEM}:/b; s/^/${SYSTEM}: /" ./logs/install.size
+  # Prefix main.size with system name.
+  sed -i "/^${SYSTEM}:/b; s/^/${SYSTEM}: /" ./logs/main.size
   
   # Add system in the output file.
   SYSTEM="-${SYSTEM}"
@@ -73,16 +73,16 @@ YYYY_MM_DD=$(date +"%Y-%m-%d")
 HH_MM_SS=$(date +"%0k.%M.%S")
 DATE_STRING="${YYYY_MM_DD}_${HH_MM_SS}"
 
-# Keep install.log in install-log/
+# Keep main.log in install-log/
 ##################################################################
-NEW_INSTALL_LOG_NAME="$(basename ${INSTALL_LOG})${SYSTEM}_${DATE_STRING}"
-yes | cp ${INSTALL_LOG} install-log/${NEW_INSTALL_LOG_NAME}
+NEW_MAIN_LOG_NAME="$(basename ${MAIN_LOG})${SYSTEM}_${DATE_STRING}"
+yes | cp ${MAIN_LOG} install-log/${NEW_MAIN_LOG_NAME}
 
 
 
-# Copy install.log in ISOHYBRID
+# Copy main.log in ISOHYBRID
 ##################################################################
-yes | cp ${INSTALL_LOG} binary/
+yes | cp ${MAIN_LOG} binary/
 
 
 # Create squashfs.
