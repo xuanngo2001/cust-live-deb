@@ -53,7 +53,7 @@ Get the version number doesn't always work: `modinfo vboxguest | grep ^version |
 
 ===================
 
-virtualbox guest addition is installed correctly even with error:
+Virtualbox guest addition might be installed correctly even it is showing error:
 
     Loading new virtualbox-guest-5.1.8 DKMS files...
     It is likely that 4.6.0-0.bpo.1-amd64 belongs to a chroot's host
