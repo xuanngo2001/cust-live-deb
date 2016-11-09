@@ -13,6 +13,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Fix issue: https://github.com/zfsonlinux/zfs/issues/3065
 #            https://github.com/zfsonlinux/zfs/issues/1466
 #            https://github.com/zfsonlinux/zfs/issues/1860
+#            https://github.com/zfsonlinux/zfs/issues/5325
+#                 apt-get -y remove zfs-dkms spl-dkms
+#                 apt-get -y install debian-zfs
 #dpkg --purge --force-depends spl-dkms 
 apt-get -d -y --force-yes install file
 apt-get -y --force-yes install linux-headers-amd64 build-essential
