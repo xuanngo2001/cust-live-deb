@@ -23,7 +23,7 @@ apt-get -y --force-yes install linux-image-amd64 live-boot
 # Get _installed_ kernel version.
 KERNEL_INSTALLED=$(dpkg-query -W -f='${binary:Package}; ${Status}\n' linux-image-* | grep 'install ok installed' | sed 's/;.*//' | head -n 1 | sed 's/linux-image-//')
 KERNEL_VERSION=$(echo "${KERNEL_INSTALLED}" | sed 's/-unsigned//')
-mkinitramfs -d /etc/initramfs-tools -o /boot/initrd.img-${KERNEL_VERSION} ${KERNEL_VERSION} -r /
+#mkinitramfs -d /etc/initramfs-tools -o /boot/initrd.img-${KERNEL_VERSION} ${KERNEL_VERSION} -r /
 #update-initramfs -u -t -k ${KERNEL_VERSION}
 
 echo "${GV_LOG} * Reconfigure linux-image-${KERNEL_INSTALLED}."

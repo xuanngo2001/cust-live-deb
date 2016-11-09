@@ -20,14 +20,14 @@ Hit http://localhost jessie InRelease
 Hit http://localhost jessie/main amd64 Packages
 Hit http://localhost nightly/main amd64 Packages
 Hit http://localhost jessie/main amd64 Packages
-Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost jessie-backports/contrib amd64 Packages
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost nightly/main Translation-en
-Hit http://localhost jessie-backports/main amd64 Packages
 Ign http://localhost jessie/main Translation-en
+Hit http://localhost jessie/non-free amd64 Packages
+Hit http://localhost jessie-backports/contrib amd64 Packages
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie-backports/contrib Translation-en
+Hit http://localhost jessie-backports/main amd64 Packages
 Ign http://localhost jessie-backports/main Translation-en
 Hit http://localhost jessie-backports/non-free amd64 Packages
 Ign http://localhost jessie-backports/non-free Translation-en
@@ -39,9 +39,9 @@ Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie-updates/contrib Translation-en
 Hit http://localhost jessie-updates/main amd64 Packages
 Hit http://localhost jessie-updates/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-updates/main Translation-en
 Ign http://localhost jessie-updates/non-free Translation-en
+Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-updates/contrib Translation-en
 Hit http://localhost jessie-updates/main amd64 Packages
 Ign http://localhost jessie-updates/main Translation-en
@@ -78,7 +78,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 810 kB in 0s (15.9 MB/s)
+Fetched 810 kB in 0s (16.2 MB/s)
 Selecting previously unselected package libcap-ng0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9745 files and directories currently installed.)
 Preparing to unpack .../libcap-ng0_0.7.4-2_amd64.deb ...
@@ -146,7 +146,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 38.5 MB in 0s (40.4 MB/s)
+Fetched 38.5 MB in 0s (39.5 MB/s)
 Selecting previously unselected package firmware-linux-free.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9966 files and directories currently installed.)
 Preparing to unpack .../firmware-linux-free_3.3_all.deb ...
@@ -210,7 +210,6 @@ Processing triggers for initramfs-tools (0.120+deb8u2) ...
 update-initramfs: Generating /boot/initrd.img-4.7.0-0.bpo.1-amd64
 live-boot: core filesystems devices utils udev wget blockdev dns.
 Processing triggers for systemd (215-17+deb8u5) ...
-live-boot: core filesystems devices utils udev wget blockdev dns.
 CLDS: * Reconfigure linux-image-4.7.0-0.bpo.1-amd64-unsigned.
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -234,4 +233,4 @@ update-initramfs: Generating /boot/initrd.img-4.7.0-0.bpo.1-amd64
 live-boot: core filesystems devices utils udev wget blockdev dns.
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: 4.7.0-0.bpo.1-amd64-unsigned.
-CLDS: * Disk size = 1767344K. Space Used = 263292K.
+CLDS: * Disk size = 1767292K. Space Used = 263280K.

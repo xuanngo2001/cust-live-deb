@@ -32,6 +32,7 @@ ii  bluez-firmware                           1.2-3                              
 ii  bsdmainutils                             9.0.6                                amd64        collection of more utilities from FreeBSD
 ii  bsdutils                                 1:2.25.2-6                           amd64        basic utilities from 4.4BSD-Lite
 ii  buffer                                   1.19-12                              amd64        Buffering/reblocking program for tape backups, printing, etc.
+ii  build-essential                          11.7                                 amd64        Informational list of build-essential packages
 ii  busybox-static                           1:1.22.0-9+deb8u1                    amd64        Standalone rescue shell with tons of builtin utilities
 ii  bzip2                                    1.0.6-7+b3                           amd64        high-quality block-sorting file compressor - utilities
 ii  ca-certificates                          20141019+deb8u1                      all          Common CA certificates
@@ -76,6 +77,7 @@ ii  dkms                                     2.2.1.0+git20160527-1~bpo8+1       
 ii  dmidecode                                2.12-3                               amd64        SMBIOS/DMI table decoder
 ii  dmsetup                                  2:1.02.90-2.2+deb8u1                 amd64        Linux Kernel Device Mapper userspace library
 ii  dpkg                                     1.17.27                              amd64        Debian package management system
+ii  dpkg-dev                                 1.17.27                              all          Debian package development tools
 ii  e2fslibs:amd64                           1.42.12-2                            amd64        ext2/ext3/ext4 file system libraries
 ii  e2fsprogs                                1.42.12-2                            amd64        ext2/ext3/ext4 file system utilities
 ii  exfat-fuse                               1.2.4-1~bpo8+1                       amd64        read and write exFAT driver for FUSE
@@ -112,6 +114,8 @@ ii  fonts-lyx                                2.1.2-2                            
 ii  fonts-opensymbol                         2:102.7+LibO5.2.3~rc1-4~bpo8+1       all          OpenSymbol TrueType font
 ii  freecad                                  0.16+dfsg2-1~bpo8+1                  amd64        Extensible Open Source CAx program (alpha)
 ii  fuse                                     2.9.3-15+deb8u2                      amd64        Filesystem in Userspace
+ii  g++                                      4:4.9.2-2                            amd64        GNU C++ compiler
+ii  g++-4.9                                  4.9.2-10                             amd64        GNU C++ compiler
 ii  gcc                                      4:4.9.2-2                            amd64        GNU C compiler
 ii  gcc-4.8-base:amd64                       4.8.4-1                              amd64        GCC, the GNU Compiler Collection (base package)
 ii  gcc-4.9                                  4.9.2-10                             amd64        GNU C compiler
@@ -285,6 +289,7 @@ ii  libdebconfclient0:amd64                  0.192                              
 ii  libdevmapper1.02.1:amd64                 2:1.02.90-2.2+deb8u1                 amd64        Linux Kernel Device Mapper userspace library
 ii  libdirectfb-1.2-9:amd64                  1.2.10.0-5.1                         amd64        direct frame buffer graphics - shared libraries
 ii  libdns-export100                         1:9.9.5.dfsg-9+deb8u6                amd64        Exported DNS Shared Library
+ii  libdpkg-perl                             1.17.27                              all          Dpkg perl modules
 ii  libdrm-amdgpu1:amd64                     2.4.71-1~bpo8+1                      amd64        Userspace interface to amdgpu-specific kernel DRM services -- runtime
 ii  libdrm-intel1:amd64                      2.4.71-1~bpo8+1                      amd64        Userspace interface to intel-specific kernel DRM services -- runtime
 ii  libdrm-nouveau2:amd64                    2.4.71-1~bpo8+1                      amd64        Userspace interface to nouveau-specific kernel DRM services -- runtime
@@ -647,6 +652,7 @@ ii  libss2:amd64                             1.42.12-2                          
 ii  libssh2-1:amd64                          1.4.3-4.1+deb8u1                     amd64        SSH2 client-side library
 ii  libssl1.0.0:amd64                        1.0.1t-1+deb8u3                      amd64        Secure Sockets Layer toolkit - shared libraries
 ii  libstartup-notification0:amd64           0.12-4                               amd64        library for program launch feedback (shared library)
+ii  libstdc++-4.9-dev:amd64                  4.9.2-10                             amd64        GNU Standard C++ Library v3 (development files)
 ii  libstdc++6:amd64                         4.9.2-10                             amd64        GNU Standard C++ Library v3
 ii  libswresample1:amd64                     10:2.6.9-dmo1                        amd64        FFmpeg audio rescaling library
 ii  libswscale3:amd64                        10:2.6.9-dmo1                        amd64        FFmpeg video scaling library
@@ -669,6 +675,7 @@ ii  libthai0:amd64                           0.1.21-1                           
 ii  libtheora0:amd64                         1.1.1+dfsg.1-6                       amd64        Theora Video Compression Codec
 ii  libthunarx-2-0                           1.6.3-2                              amd64        extension library for thunar
 ii  libtiff5:amd64                           4.0.3-12.3+deb8u1                    amd64        Tag Image File Format (TIFF) library
+ii  libtimedate-perl                         2.3000-2                             all          collection of modules to manipulate date/time information
 ii  libtinfo5:amd64                          5.9+20140913-1+b1                    amd64        shared low-level terminfo library for terminal handling
 ii  libtinyxml2.6.2:amd64                    2.6.2-2                              amd64        C++ XML parsing library
 ii  libtk8.6:amd64                           8.6.2-1                              amd64        Tk toolkit for Tcl and X11 v8.6 - run-time files
@@ -782,6 +789,7 @@ ii  linux-base                               4.3~bpo8+1                         
 ii  linux-compiler-gcc-4.9-x86               4.7.8-1~bpo8+1                       amd64        Compiler for Linux on x86 (meta-package)
 ii  linux-headers-4.7.0-0.bpo.1-amd64        4.7.8-1~bpo8+1                       amd64        Header files for Linux 4.7.0-0.bpo.1-amd64
 ii  linux-headers-4.7.0-0.bpo.1-common       4.7.8-1~bpo8+1                       amd64        Common header files for Linux 4.7.0-0.bpo.1
+ii  linux-headers-amd64                      4.7+75~bpo8+1                        amd64        Header files for Linux amd64 configuration (meta-package)
 ii  linux-image-4.7.0-0.bpo.1-amd64-unsigned 4.7.8-1~bpo8+1                       amd64        Linux 4.7 for 64-bit PCs
 ii  linux-image-amd64                        4.7+75~bpo8+1                        amd64        Linux for 64-bit PCs (meta-package)
 ii  linux-kbuild-4.7                         4.7.8-1~bpo8+1                       amd64        Kbuild infrastructure for Linux 4.7
