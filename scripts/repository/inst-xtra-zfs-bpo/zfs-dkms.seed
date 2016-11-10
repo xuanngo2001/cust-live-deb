@@ -1,4 +1,6 @@
 # 1-Manually configure interactively.
 # 2-debconf-get-selections | grep "zfs" > zfs-dkms.seed
 
-wireshark-common  wireshark-common/install-setuid boolean true
+zfs-dkms	zfs-dkms/note-incompatible-licenses	note	
+zfs-dkms	zfs-dkms/stop-build-for-32bit-kernel	boolean	true
+zfs-dkms	zfs-dkms/stop-build-for-unknown-kernel	boolean	true
