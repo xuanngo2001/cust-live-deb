@@ -1,57 +1,57 @@
 /bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS:>>>>>>>>> Running inst-min-con-00-apt-custom-repository.sh ...
 OK
-Get:1 http://localhost jessie InRelease [2829 B]
-Get:2 http://localhost nightly InRelease [2847 B]
-Get:3 http://localhost jessie InRelease [2845 B]
-Get:4 http://localhost jessie InRelease [2521 B]
-Get:5 http://localhost jessie-backports InRelease [2958 B]
-Get:6 http://localhost jessie-backports InRelease [2889 B]
-Get:7 http://localhost jessie-backports InRelease [2981 B]
-Get:8 http://localhost jessie InRelease [2898 B]
-Get:9 http://localhost jessie InRelease [2921 B]
-Get:10 http://localhost jessie-updates InRelease [2948 B]
-Get:11 http://localhost jessie-updates InRelease [2879 B]
-Get:12 http://localhost jessie-updates InRelease [2555 B]
-Get:13 http://localhost jessie-updates InRelease [2534 B]
-Get:14 http://localhost jessie-updates InRelease [2877 B]
-Get:15 http://localhost jessie-updates InRelease [2553 B]
-Get:16 http://localhost jessie InRelease [2494 B]
-Get:17 http://localhost jessie InRelease [2837 B]
-Get:18 http://localhost jessie/main amd64 Packages [194 kB]
-Get:19 http://localhost nightly/main amd64 Packages [7498 B]
+Hit http://localhost jessie InRelease
+Get:1 http://localhost nightly InRelease [2848 B]
+Get:2 http://localhost jessie InRelease [2846 B]
+Get:3 http://localhost jessie InRelease [2522 B]
+Get:4 http://localhost jessie-backports InRelease [2959 B]
+Get:5 http://localhost jessie-backports InRelease [2890 B]
+Get:6 http://localhost jessie-backports InRelease [2982 B]
+Get:7 http://localhost jessie InRelease [2899 B]
+Get:8 http://localhost jessie InRelease [2922 B]
+Get:9 http://localhost jessie-updates InRelease [2949 B]
+Get:10 http://localhost jessie-updates InRelease [2880 B]
+Get:11 http://localhost jessie-updates InRelease [2556 B]
+Get:12 http://localhost jessie-updates InRelease [2535 B]
+Get:13 http://localhost jessie-updates InRelease [2878 B]
+Get:14 http://localhost jessie-updates InRelease [2554 B]
+Get:15 http://localhost jessie InRelease [2495 B]
+Get:16 http://localhost jessie InRelease [2838 B]
+Hit http://localhost jessie/main amd64 Packages
+Get:17 http://localhost nightly/main amd64 Packages [7487 B]
+Get:18 http://localhost jessie/main amd64 Packages [12.2 kB]
+Get:19 http://localhost jessie/non-free amd64 Packages [14 B]
+Get:20 http://localhost jessie-backports/contrib amd64 Packages [2846 B]
+Get:21 http://localhost jessie-backports/main amd64 Packages [22.4 kB]
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost nightly/main Translation-en
-Get:20 http://localhost jessie/main amd64 Packages [12.2 kB]
 Ign http://localhost jessie/main Translation-en
-Get:21 http://localhost jessie/non-free amd64 Packages [14 B]
+Get:22 http://localhost jessie-backports/non-free amd64 Packages [3339 B]
+Get:23 http://localhost jessie/contrib amd64 Packages [2202 B]
 Ign http://localhost jessie/non-free Translation-en
-Get:22 http://localhost jessie-backports/contrib amd64 Packages [1418 B]
 Ign http://localhost jessie-backports/contrib Translation-en
-Get:23 http://localhost jessie-backports/main amd64 Packages [21.9 kB]
+Get:24 http://localhost jessie/non-free amd64 Packages [4175 B]
 Ign http://localhost jessie-backports/main Translation-en
-Get:24 http://localhost jessie-backports/non-free amd64 Packages [3327 B]
 Ign http://localhost jessie-backports/non-free Translation-en
-Get:25 http://localhost jessie/contrib amd64 Packages [2207 B]
+Get:25 http://localhost jessie-updates/contrib amd64 Packages [1117 B]
+Get:26 http://localhost jessie-updates/main amd64 Packages [31.8 kB]
+Get:27 http://localhost jessie-updates/non-free amd64 Packages [14 B]
 Ign http://localhost jessie/contrib Translation-en
-Get:26 http://localhost jessie/non-free amd64 Packages [4178 B]
-Get:27 http://localhost jessie-updates/contrib amd64 Packages [1119 B]
 Ign http://localhost jessie/non-free Translation-en
+Get:28 http://localhost jessie-updates/contrib amd64 Packages [14 B]
 Ign http://localhost jessie-updates/contrib Translation-en
-Get:28 http://localhost jessie-updates/main amd64 Packages [31.8 kB]
+Get:29 http://localhost jessie-updates/main amd64 Packages [567 B]
+Get:30 http://localhost jessie-updates/non-free amd64 Packages [14 B]
 Ign http://localhost jessie-updates/main Translation-en
-Get:29 http://localhost jessie-updates/non-free amd64 Packages [14 B]
 Ign http://localhost jessie-updates/non-free Translation-en
-Get:30 http://localhost jessie-updates/contrib amd64 Packages [14 B]
-Get:31 http://localhost jessie-updates/main amd64 Packages [567 B]
+Get:31 http://localhost jessie/contrib amd64 Packages [14 B]
 Ign http://localhost jessie-updates/contrib Translation-en
 Ign http://localhost jessie-updates/main Translation-en
-Get:32 http://localhost jessie-updates/non-free amd64 Packages [14 B]
 Ign http://localhost jessie-updates/non-free Translation-en
-Get:33 http://localhost jessie/contrib amd64 Packages [14 B]
 Ign http://localhost jessie/contrib Translation-en
-Get:34 http://localhost jessie/main amd64 Packages [3123 B]
+Get:32 http://localhost jessie/main amd64 Packages [3601 B]
 Ign http://localhost jessie/main Translation-en
-Fetched 331 kB in 0s (496 kB/s)
+Fetched 136 kB in 0s (254 kB/s)
 Reading package lists...
-CLDS: * Disk size = 1504020K. Space Used = 2296K.
+CLDS: * Disk size = 1504064K. Space Used = 2304K.

@@ -45,7 +45,7 @@ Get:19 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main 
 Get:20 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-kbuild-4.7 amd64 4.7.8-1~bpo8+1 [589 kB]
 Get:21 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-headers-4.7.0-0.bpo.1-amd64 amd64 4.7.8-1~bpo8+1 [502 kB]
 Get:22 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-headers-amd64 amd64 4.7+75~bpo8+1 [5,726 B]
-Fetched 24.8 MB in 0s (31.4 MB/s)
+Fetched 24.8 MB in 0s (39.6 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -89,7 +89,7 @@ Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main libc-dev-bin amd64 2
 Get:11 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main linux-libc-dev amd64 3.16.36-1+deb8u2 [1,034 kB]
 Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libc6-dev amd64 2.19-18+deb8u6 [2,002 kB]
 Extracting templates from packages: 90%Extracting templates from packages: 100%
-Fetched 6,514 kB in 0s (28.9 MB/s)
+Fetched 6,514 kB in 0s (30.6 MB/s)
 Selecting previously unselected package libgc1c2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17279 files and directories currently installed.)
 Preparing to unpack .../libgc1c2_1%3a7.2d-6.4_amd64.deb ...
@@ -237,7 +237,7 @@ Need to get 1,010 kB of archives.
 After this operation, 6,798 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-backports-contrib/ jessie-backports/contrib virtualbox-guest-utils amd64 5.1.8-dfsg-6~bpo8+2 [418 kB]
 Get:2 http://localhost/aptly-repo/jessie-backports-contrib/ jessie-backports/contrib virtualbox-guest-dkms all 5.1.8-dfsg-6~bpo8+2 [592 kB]
-Fetched 1,010 kB in 0s (27.5 MB/s)
+Fetched 1,010 kB in 0s (33.4 MB/s)
 Selecting previously unselected package virtualbox-guest-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 31948 files and directories currently installed.)
 Preparing to unpack .../virtualbox-guest-utils_5.1.8-dfsg-6~bpo8+2_amd64.deb ...
@@ -250,7 +250,6 @@ Processing triggers for man-db (2.7.0.2-5) ...
 Setting up virtualbox-guest-utils (5.1.8-dfsg-6~bpo8+2) ...
 Setting up virtualbox-guest-dkms (5.1.8-dfsg-6~bpo8+2) ...
 Loading new virtualbox-guest-5.1.8 DKMS files...
-It is likely that 3.16.0-4-amd64 belongs to a chroot's host
 Building for 4.7.0-0.bpo.1-amd64
 Building initial module for 4.7.0-0.bpo.1-amd64
 Done.
@@ -280,8 +279,6 @@ depmod...
 
 DKMS: install completed.
 Processing triggers for systemd (215-17+deb8u5) ...
-libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file '/lib/modules/3.16.0-4-amd64/modules.dep.bin'
-modinfo: ERROR: Module alias vboxguest not found.
 CLDS: * Install virtualbox-guest-utils to access shared folder. No need for x11. Less error prone.
-CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
-CLDS: * Disk size = 2234552K. Space Used = 189376K.
+CLDS: * VirtualBox guest additions installed: version: 5.1.8_Debian r111374.
+CLDS: * Disk size = 2234596K. Space Used = 189368K.

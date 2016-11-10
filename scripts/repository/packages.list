@@ -83,8 +83,6 @@ virtualbox-guest-dkms
 virtualbox-guest-utils
 # ./inst-min-con-xtra-curl/inst-min-con-xtra-curl.sh
 curl
-# ./inst-min-con-xtra-dev-tool-java-jdk/inst-min-con-xtra-dev-tool-java-jdk.sh
-default-jdk
 # ./inst-min-con-xtra-dev-tool-tree/inst-min-con-xtra-dev-tool-tree.sh
 tree
 # ./inst-min-con-xtra-gnuplot/inst-min-con-xtra-gnuplot.sh
@@ -351,12 +349,11 @@ wifite
 # ./inst-xtra-xmpv/inst-xtra-xmpv.sh
 
 # ./inst-xtra-zfs/inst-xtra-zfs.sh
-file
 linux-headers-amd64
-build-essential
-lsb-release
-libc6-dev
-debian-zfs
+jessie-backports
+zfs-dkms
+jessie-backports
+zfs-initramfs
 # ./inst-zclean-01-apt-get-00-clean-up/inst-zclean-01-apt-get-00-clean-up.sh
 
 # ./inst-zclean-01-apt-get-01-source-list/inst-zclean-01-apt-get-01-source-list.sh
