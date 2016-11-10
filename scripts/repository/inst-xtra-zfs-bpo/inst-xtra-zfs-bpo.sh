@@ -29,8 +29,8 @@ if [ -z "${ZFS_VERSION}" ]; then
 	ZFS_VERSION="ERROR: ZFS installation failed!"
 fi
 echo "${GV_LOG} * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian"
-echo "${GV_LOG} * Add zfsonlinux repository to /etc/apt/sources.list"
-echo "${GV_LOG} * Install debian-zfs: ${ZFS_VERSION}, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html"
+echo "${GV_LOG} * Install zfs-dkms: ${ZFS_VERSION}, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html"
+echo "${GV_LOG} * Install zfs-initramfs to be able to boot from ZFS."
 #echo "${GV_LOG} * Change default behavior: Don't allow the last 1.6% of space in the pool instead of 3.2%."
 
 # History:
