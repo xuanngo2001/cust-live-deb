@@ -78,7 +78,9 @@ xz-utils
 aptly
 # ./inst-min-con-xtra-cld-dev-virtualbox-guest-additions/inst-min-con-xtra-cld-dev-virtualbox-guest-additions.sh
 linux-headers-amd64
-${PKGS_LIST}
+dkms
+libc6-dev
+linux-headers-${KERNEL_HEADER}
 virtualbox-guest-dkms
 virtualbox-guest-utils
 # ./inst-min-con-xtra-curl/inst-min-con-xtra-curl.sh
@@ -342,17 +344,20 @@ sqlite3
 # ./inst-xtra-virtualbox-guest-additions-x11/inst-xtra-virtualbox-guest-additions-x11.sh
 linux-headers-amd64
 libnotify-bin
-${PKGS_LIST}
+dkms
+libc6-dev
+linux-headers-${KERNEL_HEADER}
 virtualbox-guest-x11
 # ./inst-xtra-wifite/inst-xtra-wifite.sh
 wifite
 # ./inst-xtra-xmpv/inst-xtra-xmpv.sh
 
-# ./inst-xtra-zfs/inst-xtra-zfs.sh
+# ./inst-xtra-zfs-bpo/inst-xtra-zfs-bpo.sh
+file
+lsb-release
 linux-headers-amd64
-jessie-backports
+spl-dkms
 zfs-dkms
-jessie-backports
 zfs-initramfs
 # ./inst-zclean-01-apt-get-00-clean-up/inst-zclean-01-apt-get-00-clean-up.sh
 

@@ -15,8 +15,8 @@ apt-get -d -y --force-yes install linux-headers-amd64
 
 # Install required packages to compile VirtualBox guest additions.
 KERNEL_HEADER=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
-PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_HEADER}"
-apt-get -y --force-yes install ${PKGS_LIST}
+apt-get -y --force-yes install dkms libc6-dev
+apt-get -y --force-yes install linux-headers-${KERNEL_HEADER}
 
 # Install virtualbox-guest-utils.
 apt-get -y --force-yes install virtualbox-guest-dkms virtualbox-guest-utils

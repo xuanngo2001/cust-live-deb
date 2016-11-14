@@ -12,15 +12,15 @@ GF_ADD_SOURCE_LIST live "deb http://http.debian.net/debian jessie-backports main
 apt-get update
 
 # Install required packages.
-apt-get install -y --force-yes linux-headers-amd64 
+apt-get install -y --force-yes file lsb-release linux-headers-amd64 
 
 
 # Install ZFS
 debconf-set-selections -v zfs-dkms.seed
-apt-get install -y --force-yes -t jessie-backports spl-dkms zfs-dkms
+apt-get -t jessie-backports -y --force-yes install spl-dkms zfs-dkms
 
 # If you want to boot from ZFS, you'll need zfs-initramfs package too:
-apt-get install -y --force-yes -t jessie-backports zfs-initramfs
+apt-get -t jessie-backports -y --force-yes install zfs-initramfs
 
 
 # Log

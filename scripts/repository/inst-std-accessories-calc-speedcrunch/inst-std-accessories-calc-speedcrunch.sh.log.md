@@ -2,7 +2,7 @@
   * After this operation, 1,830 kB of additional disk space will be used.
   * Install calculator: speedcrunch.
   * Insert speedcrunch in Accessories menu.
-  * Disk size = 3027796K. Space Used = 3140K.
+  * Disk size = 3026496K. Space Used = 3144K.
   * The following NEW packages will be installed:
   ```bash
   speedcrunch
