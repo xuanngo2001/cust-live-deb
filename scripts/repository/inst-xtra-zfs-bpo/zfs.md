@@ -1,14 +1,18 @@
 # Test
+    # Destroy current zfs partition
+    zpool destroy zfs-dkms-bpo
+    
     # Create partition.
     zpool create -f zfs-dkms-bpo /dev/sdX
     
     # Create file in partition.
-    echo $(date) > /zfs-dkms-bpo/file-in-zfs.txt
+    echo "ZFS $(modinfo zfs | grep ^version | tr -s ' ') -> $(date)" > /zfs-dkms-bpo/file-in-zfs.txt
     
     # Mount zfs partition
     zpool import -a
     
     # View file
+    modinfo zfs | grep ^version | tr -s ' '
     cat /zfs-dkms-bpo/file-in-zfs.txt
     
 # Upgrade to new kernel
