@@ -29,8 +29,11 @@ KERNEL_VERSION=$(echo "${KERNEL_INSTALLED}" | sed 's/-unsigned//')
 echo "${GV_LOG} * Reconfigure linux-image-${KERNEL_INSTALLED}."
 dpkg-reconfigure linux-image-${KERNEL_INSTALLED}
 
+# Remove /vmlinuz.old & /initrd.img.old symbolic links.
+rm -f /vmlinuz.old
+rm -f /initrd.img.old
 
-
+# Log
 echo "${GV_LOG} * Generate dbus-uuidgen to /var/lib/dbus/machine-id."
 echo "${GV_LOG} * Installed Linux image: ${KERNEL_INSTALLED}."
 
