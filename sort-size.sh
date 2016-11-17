@@ -17,7 +17,8 @@ case "${ACTION}" in
 
   # Display package(script name) space used size in kilobytes.
   package)
-    cut -d ';' -f 2,5 "${SCRIPT_LOG_PARSABLE}" | sort -u -t ';' -k2,2n | grep -v 'install\.sh'
+    # Discard numbers for install.sh & main.sh. They represent disk size only. 
+    cut -d ';' -f 2,5 "${SCRIPT_LOG_PARSABLE}" | sort -u -t ';' -k2,2n | grep -v 'install\.sh' | grep -v 'main\.sh'
     echo "<script-name>; <space-used-kb>"
     ;;
   
