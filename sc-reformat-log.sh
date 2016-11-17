@@ -21,6 +21,7 @@ SCRIPT_LOG=$(readlink -ev "${SCRIPT_LOG}")
 # Separate system and script name
   sed -i 's/: inst/; inst/'     "${SCRIPT_LOG}"
   sed -i 's/: .inst/; inst/'     "${SCRIPT_LOG}"
+  sed -i 's/: main/; main/'     "${SCRIPT_LOG}"
 
 # SPECIAL cases
   sed -i 's/work-apt-move: //'     "${SCRIPT_LOG}"
