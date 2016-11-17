@@ -6,3 +6,4 @@ timeout 5s /bin/bash -c "while ! pgrep Xorg; do sleep 1s; done; sleep 1s"
 #   Press Left Shift+NumLock."
 #   Press on numpad keys to move the mouse."
 setxkbmap -option keypad:pointerkeys
+
