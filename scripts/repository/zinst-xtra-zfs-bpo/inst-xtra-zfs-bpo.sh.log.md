@@ -5,7 +5,7 @@
   * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
   * Install zfs-dkms: version: 0.6.5.8-1~bpo8+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
   * Install zfs-initramfs to be able to boot from ZFS.
-  * Disk size = 5021140K. Space Used = 28904K.
+  * Disk size = 5021156K. Space Used = 28904K.
   * The following NEW packages will be installed:
   ```bash
   file linux-headers-amd64 lsb-release

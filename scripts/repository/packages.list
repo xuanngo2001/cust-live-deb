@@ -123,6 +123,8 @@ wmctrl
 x11-utils
 # ./inst-min-win-jwm-help-manuals-text/inst-min-win-jwm-help-manuals-text.sh
 
+# ./inst-min-win-jwm-keyboard-move-mouse/inst-min-win-jwm-keyboard-move-mouse.sh
+
 # ./inst-min-win-jwm-keys-alsa/inst-min-win-jwm-keys-alsa.sh
 
 # ./inst-min-win-menu/inst-min-win-menu.sh
@@ -352,13 +354,13 @@ virtualbox-guest-x11
 wifite
 # ./inst-xtra-xmpv/inst-xtra-xmpv.sh
 
-# ./inst-xtra-zfs-bpo/inst-xtra-zfs-bpo.sh
+# ./inst-xtra-zfs/inst-xtra-zfs.sh
 file
-lsb-release
 linux-headers-amd64
-spl-dkms
-zfs-dkms
-zfs-initramfs
+build-essential
+lsb-release
+libc6-dev
+debian-zfs
 # ./inst-zclean-01-apt-get-00-clean-up/inst-zclean-01-apt-get-00-clean-up.sh
 
 # ./inst-zclean-01-apt-get-01-source-list/inst-zclean-01-apt-get-01-source-list.sh

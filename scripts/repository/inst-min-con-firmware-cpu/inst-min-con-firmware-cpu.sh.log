@@ -8,7 +8,7 @@ The following NEW packages will be installed:
 Need to get 29.6 kB of archives.
 After this operation, 48.1 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-non-free/ jessie/non-free amd64-microcode amd64 2.20160316.1~deb8u1 [29.6 kB]
-Fetched 29.6 kB in 0s (0 B/s)
+Fetched 29.6 kB in 0s (2,431 kB/s)
 Selecting previously unselected package amd64-microcode.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15290 files and directories currently installed.)
 Preparing to unpack .../amd64-microcode_2.20160316.1~deb8u1_amd64.deb ...
@@ -25,21 +25,21 @@ Reading state information...
 The following NEW packages will be installed:
   intel-microcode iucode-tool
 0 upgraded, 2 newly installed, 0 to remove and 19 not upgraded.
-Need to get 709 kB of archives.
-After this operation, 900 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/jessie-backports-contrib/ jessie-backports/contrib iucode-tool amd64 2.0-1~bpo8+1 [48.5 kB]
-Get:2 http://localhost/aptly-repo/jessie-non-free/ jessie/non-free intel-microcode amd64 3.20160714.1~deb8u1 [660 kB]
-Fetched 709 kB in 0s (31.1 MB/s)
+Need to get 749 kB of archives.
+After this operation, 946 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/jessie-backports-contrib/ jessie-backports/contrib iucode-tool amd64 2.1-1~bpo8+1 [52.7 kB]
+Get:2 http://localhost/aptly-repo/jessie-backports-non-free/ jessie-backports/non-free intel-microcode amd64 3.20161104.1~bpo8+1 [696 kB]
+Fetched 749 kB in 0s (34.6 MB/s)
 Selecting previously unselected package iucode-tool.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15307 files and directories currently installed.)
-Preparing to unpack .../iucode-tool_2.0-1~bpo8+1_amd64.deb ...
-Unpacking iucode-tool (2.0-1~bpo8+1) ...
+Preparing to unpack .../iucode-tool_2.1-1~bpo8+1_amd64.deb ...
+Unpacking iucode-tool (2.1-1~bpo8+1) ...
 Selecting previously unselected package intel-microcode.
-Preparing to unpack .../intel-microcode_3.20160714.1~deb8u1_amd64.deb ...
-Unpacking intel-microcode (3.20160714.1~deb8u1) ...
+Preparing to unpack .../intel-microcode_3.20161104.1~bpo8+1_amd64.deb ...
+Unpacking intel-microcode (3.20161104.1~bpo8+1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
-Setting up iucode-tool (2.0-1~bpo8+1) ...
-Setting up intel-microcode (3.20160714.1~deb8u1) ...
+Setting up iucode-tool (2.1-1~bpo8+1) ...
+Setting up intel-microcode (3.20161104.1~bpo8+1) ...
 update-initramfs: deferring update (trigger activated)
 intel-microcode: microcode will be updated at next boot
 Processing triggers for initramfs-tools (0.120+deb8u2) ...
@@ -47,4 +47,4 @@ update-initramfs: Generating /boot/initrd.img-4.7.0-0.bpo.1-amd64
 live-boot: core filesystems devices utils udev wget blockdev dns.
 CLDS: * Install CPU firmware: amd64-microcode.
 CLDS: * Install CPU firmware: intel-microcode.
-CLDS: * Disk size = 1802164K. Space Used = 1884K.
+CLDS: * Disk size = 1802296K. Space Used = 1968K.
