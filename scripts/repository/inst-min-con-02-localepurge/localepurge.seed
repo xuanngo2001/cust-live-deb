@@ -1,4 +1,6 @@
-# localepurge will not take any action
+# 1-Manually configure interactively.
+# 2-debconf-get-selections | grep "localepurge" > localepurge.seed
+
 localepurge	localepurge/remove_no	note	
 localepurge	localepurge/verbose	boolean	false
 localepurge	localepurge/dontbothernew	boolean	false
