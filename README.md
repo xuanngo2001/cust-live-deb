@@ -41,14 +41,6 @@ http://www.somsubhra.com/github-release-stats/?username=limelime&repository=cust
 * https://wiki.debian.org/chroot
 
 
-## ZFS
-1. Follow instructions from https://github.com/zfsonlinux/zfs/issues/3065#issuecomment-72376515.
-1. Manually run `cld-mkiso.sh`.
-
-* https://github.com/zfsonlinux/zfs/issues/3065
-* https://github.com/zfsonlinux/zfs/issues/1466
-* https://github.com/zfsonlinux/zfs/issues/1860
-
 # References
 * http://live.debian.net/manual/git/html/live-manual.en.html (Manual)
 * http://manpages.ubuntu.com/manpages/natty/de/man1/lb_config.1.html
