@@ -40,33 +40,6 @@ http://www.somsubhra.com/github-release-stats/?username=limelime&repository=cust
 ## Chroot
 * https://wiki.debian.org/chroot
 
-# Upgrade to new kernel
-
-1. ./cld.sh std http://localhost/aptly-repo/jessie-main
-1. Create a persistent partition: persistence 3072
-
-
-
-* Make sure that your repository contain the latest version and headers.
-
-From 3.16.0-4-amd64 to 4.5.0-0.bpo.1-amd64:
-
-    Processing triggers for man-db (2.7.0.2-5) ...
-    libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file '/lib/modules/3.16.0-4-amd64/modules.dep.bin'
-    modinfo: ERROR: Module alias vboxguest not found.
-    CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
-    CLDS: * Assumed packages installed: bzip2 & Xserver installed.
-    CLDS: * Install dkms, libc6-dev, linux-libc-dev, linux-headers-4.5.0-0.bpo.1-amd64 to compile VirtualBox guest additions.
-    CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
-
-    CLDS: * Install VirtualBox WARNING: The vboxdrv kernel module is not loaded. Either there is no module
-             available for the current kernel (3.16.0-4-amd64) or it failed to
-             load. Please recompile the kernel module and install it by
-    
-               sudo /sbin/rcvboxdrv setup
-    
-             You will not be able to start VMs until this problem is fixed.
-    5.0.20r106931.
 
 ## ZFS
 1. Follow instructions from https://github.com/zfsonlinux/zfs/issues/3065#issuecomment-72376515.
