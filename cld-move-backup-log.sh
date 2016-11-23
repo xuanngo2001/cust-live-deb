@@ -20,7 +20,7 @@ function F_MAIN()
 	# Processing log of scripts.
 	while IFS='' read -r LOG_FILE || [[ -n "$LOG_FILE" ]]; do
 	
-	  SCRIPT_DIR_NAME=$(basename "${LOG_FILE}" | sed 's/.sh\..*//' )
+	  SCRIPT_DIR_NAME=$(basename "${LOG_FILE}" | sed 's/.sh\..*//')
 	  SCRIPT_DIR="${REPO_DIR}/${SCRIPT_DIR_NAME}"
 	  if [ -d "${SCRIPT_DIR}" ]; then
 	    SCRIPT_DIR=$(readlink -ev "${SCRIPT_DIR}")

@@ -46,7 +46,24 @@ amd64-microcode
 intel-microcode
 iucode-tool
 # ./inst-min-con-firmware/inst-min-con-firmware.sh
-${FIRMWARES_LIST}
+atmel-firmware
+bluez-firmware
+firmware-atheros
+firmware-bnx2
+firmware-bnx2x
+firmware-brcm80211
+firmware-intelwimax
+firmware-ipw2x00
+firmware-ivtv
+firmware-iwlwifi
+firmware-libertas
+firmware-linux
+firmware-linux-free
+firmware-misc-nonfree
+firmware-linux-nonfree
+firmware-qlogic
+firmware-realtek
+firmware-zd1211
 # ./inst-min-con-firmware-net-b43-installer/inst-min-con-firmware-net-b43-installer.sh
 b43-fwcutter
 # ./inst-min-con-live-build-tools/inst-min-con-live-build-tools.sh
@@ -80,7 +97,6 @@ aptly
 linux-headers-amd64
 dkms
 libc6-dev
-linux-headers-${KERNEL_HEADER}
 virtualbox-guest-dkms
 virtualbox-guest-utils
 # ./inst-min-con-xtra-curl/inst-min-con-xtra-curl.sh
@@ -108,6 +124,8 @@ poppler-utils
 # ./inst-min-con-xtra-php5/inst-min-con-xtra-php5.sh
 php5
 # ./inst-min-con-xtra-timezone/inst-min-con-xtra-timezone.sh
+
+# ./inst-min-con-xtra-youtube-dl/inst-min-con-xtra-youtube-dl.sh
 
 # ./inst-min-win-00-xorg/inst-min-win-00-xorg.sh
 xinit
@@ -153,7 +171,10 @@ at-spi2-core
 # ./inst-std-accessories-terminal-xfce/inst-std-accessories-terminal-xfce.sh
 xfce4-terminal
 # ./inst-std-accessories-thunar/inst-std-accessories-thunar.sh
-${PKGS_LIST}
+thunar
+thunar-media-tags-plugin
+thunar-archive-plugin
+thunar-volman
 # ./inst-std-accessories-xarchiver/inst-std-accessories-xarchiver.sh
 xarchiver
 # ./inst-std-font-fonts-liberation/inst-std-font-fonts-liberation.sh
@@ -348,19 +369,18 @@ linux-headers-amd64
 libnotify-bin
 dkms
 libc6-dev
-linux-headers-${KERNEL_HEADER}
 virtualbox-guest-x11
 # ./inst-xtra-wifite/inst-xtra-wifite.sh
 wifite
 # ./inst-xtra-xmpv/inst-xtra-xmpv.sh
 
-# ./inst-xtra-zfs/inst-xtra-zfs.sh
+# ./inst-xtra-zfs-bpo/inst-xtra-zfs-bpo.sh
 file
-linux-headers-amd64
-build-essential
 lsb-release
-libc6-dev
-debian-zfs
+linux-headers-amd64
+spl-dkms
+zfs-dkms
+zfs-initramfs
 # ./inst-zclean-01-apt-get-00-clean-up/inst-zclean-01-apt-get-00-clean-up.sh
 
 # ./inst-zclean-01-apt-get-01-source-list/inst-zclean-01-apt-get-01-source-list.sh

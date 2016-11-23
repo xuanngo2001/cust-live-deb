@@ -16,6 +16,7 @@ chmod a+rx /usr/local/bin/youtube-dl
 # Log
 echo "${GV_LOG} * Install youtube-dl to download video from playlist."
 echo "${GV_LOG} * https://github.com/rg3/youtube-dl/"
+echo "${GV_LOG} * https://www.quora.com/What-is-the-best-and-quickest-way-to-download-the-whole-playlist-of-videos-from-YouTube-all-at-once"
 
 # Install latest version:
 #   curl -L https://yt-dl.org/downloads/latest/youtube-dl -o youtube-dl

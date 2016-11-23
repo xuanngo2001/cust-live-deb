@@ -1,11 +1,15 @@
 * >>>>>>>>> Running inst-std-accessories-thunar.sh ...
-  * After this operation, 10.0 MB of additional disk space will be used.
-  * Install File Manger: thunar, thunar-media-tags-plugin, thunar-archive-plugin, thunar-volman.
+  * After this operation, 6,519 kB of additional disk space will be used.
+  * After this operation, 1,931 kB of additional disk space will be used.
+  * After this operation, 585 kB of additional disk space will be used.
+  * After this operation, 1,004 kB of additional disk space will be used.
+  * Install Thunar file manager.
   * Insert Thunar in Accessories menu.
-  * Disk size = 3118072K. Space Used = 6360K.
+  * Disk size = 3121136K. Space Used = 6372K.
   * The following NEW packages will be installed:
   ```bash
-  desktop-file-utils libgudev-1.0-0 libtag1-vanilla libtag1c2a libtagc0
-  libthunarx-2-0 thunar thunar-archive-plugin thunar-data
-  thunar-media-tags-plugin thunar-volman
+  desktop-file-utils libgudev-1.0-0 libthunarx-2-0 thunar thunar-data
+  libtag1-vanilla libtag1c2a libtagc0 thunar-media-tags-plugin
+  thunar-archive-plugin
+  thunar-volman
   ```
