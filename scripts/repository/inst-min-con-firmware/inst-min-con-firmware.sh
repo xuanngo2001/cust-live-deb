@@ -12,7 +12,6 @@ debconf-set-selections -v firmware.seed
 
 # Install all firmwares.
 #   These packages are part of non-free repository.
-#   firmware-misc-nonfree : Breaks: firmware-ralink                              
 apt-get -y --force-yes install atmel-firmware
 apt-get -y --force-yes install bluez-firmware
 apt-get -y --force-yes install firmware-atheros
@@ -31,6 +30,7 @@ apt-get -y --force-yes install firmware-linux-nonfree
 apt-get -y --force-yes install firmware-qlogic
 apt-get -y --force-yes install firmware-realtek
 apt-get -y --force-yes install firmware-zd1211
+#apt-get -y --force-yes install firmware-ralink # firmware-misc-nonfree breaks firmware-ralink.
 
 # Log
 echo "${GV_LOG} * Install firmwares."
