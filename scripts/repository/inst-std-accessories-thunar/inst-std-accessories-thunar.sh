@@ -8,16 +8,17 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-PKGS_LIST="thunar thunar-media-tags-plugin thunar-archive-plugin thunar-volman"
-apt-get -y --force-yes install ${PKGS_LIST}
-
+apt-get -y --force-yes install thunar
+apt-get -y --force-yes install thunar-media-tags-plugin
+apt-get -y --force-yes install thunar-archive-plugin
+apt-get -y --force-yes install thunar-volman
 
 # Insert Thunar in Accessories menu.
 sed -i "/Accessories\">/ r jwmrc-menus-acc-thunar.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
 
 # Log
-echo "${GV_LOG} * Install File Manger: ${PKGS_LIST// /, }."
+echo "${GV_LOG} * Install Thunar file manager."
 echo "${GV_LOG} * Insert Thunar in Accessories menu."
 
 
