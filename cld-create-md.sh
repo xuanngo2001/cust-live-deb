@@ -41,6 +41,9 @@ while IFS='' read -r SCRIPT_LOG || [[ -n "$SCRIPT_LOG" ]]; do
     echo '  ```bash'                  >> "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
     echo "${PKG_INSTALLED}"           >> "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
     echo '  ```'                      >> "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
+    
+    # Create a new file to hold a list packages installed.
+    echo "${PKG_INSTALLED}"           >> "${MD_DIR}/$(basename ${SCRIPT_LOG}).deb"
   fi
 
   
