@@ -9,36 +9,31 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Preseed firmware licence agreements.
 debconf-set-selections -v firmware.seed
 
-# These packages are part of non-free repository.
-FIRMWARES_LIST="atmel-firmware \
-                bluez-firmware \
-                firmware-atheros \
-                firmware-bnx2 \
-                firmware-bnx2x \
-                firmware-brcm80211 \
-                firmware-intelwimax \
-                firmware-ipw2x00 \
-                firmware-ivtv \
-                firmware-iwlwifi \
-                firmware-libertas \
-                firmware-linux \
-                firmware-linux-free \
-                firmware-misc-nonfree \
-                firmware-linux-nonfree \
-                firmware-qlogic \
-                firmware-realtek \
-                firmware-zd1211"
 
-#  firmware-misc-nonfree : Breaks: firmware-ralink
-
-# Remove duplicate spaces.
-FIRMWARES_LIST=$(echo ${FIRMWARES_LIST} | tr -s ' ')
-
-# Install all listed firmwares.                                
-apt-get -y --force-yes install ${FIRMWARES_LIST}
+# Install all firmwares.
+#   These packages are part of non-free repository.
+#   firmware-misc-nonfree : Breaks: firmware-ralink                              
+apt-get -y --force-yes install atmel-firmware
+apt-get -y --force-yes install bluez-firmware
+apt-get -y --force-yes install firmware-atheros
+apt-get -y --force-yes install firmware-bnx2
+apt-get -y --force-yes install firmware-bnx2x
+apt-get -y --force-yes install firmware-brcm80211
+apt-get -y --force-yes install firmware-intelwimax
+apt-get -y --force-yes install firmware-ipw2x00
+apt-get -y --force-yes install firmware-ivtv
+apt-get -y --force-yes install firmware-iwlwifi
+apt-get -y --force-yes install firmware-libertas
+apt-get -y --force-yes install firmware-linux
+apt-get -y --force-yes install firmware-linux-free
+apt-get -y --force-yes install firmware-misc-nonfree
+apt-get -y --force-yes install firmware-linux-nonfree
+apt-get -y --force-yes install firmware-qlogic
+apt-get -y --force-yes install firmware-realtek
+apt-get -y --force-yes install firmware-zd1211
 
 # Log
-echo "${GV_LOG} * Install firmwares: ${FIRMWARES_LIST// /, }."
+echo "${GV_LOG} * Install firmwares."
 
 # Note:
 # Min: firmware-linux-free firmware-linux-nonfree firmware-atheros firmware-realtek firmware-ralink firmware-iwlwifi
