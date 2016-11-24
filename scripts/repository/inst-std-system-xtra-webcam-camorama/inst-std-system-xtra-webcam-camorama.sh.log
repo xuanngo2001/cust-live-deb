@@ -2,6 +2,9 @@ CLDS:>>>>>>>>> Running inst-std-system-xtra-webcam-camorama.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following package was automatically installed and is no longer required:
+  firmware-amd-graphics
+Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   gconf-service gconf2 gconf2-common gnome-mime-data libart-2.0-2
   libavahi-glib1 libbonobo2-0 libbonobo2-common libbonoboui2-0
@@ -50,9 +53,9 @@ Get:23 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome-keyring0 am
 Get:24 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomeui-common all 2.24.5-3 [514 kB]
 Get:25 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomeui-0 amd64 2.24.5-3 [321 kB]
 Get:26 http://localhost/aptly-repo/jessie-main/ jessie/main camorama amd64 0.19-3 [140 kB]
-Fetched 9,708 kB in 0s (27.7 MB/s)
+Fetched 9,708 kB in 0s (20.5 MB/s)
 Selecting previously unselected package libart-2.0-2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59626 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59478 files and directories currently installed.)
 Preparing to unpack .../libart-2.0-2_2.3.21-2_amd64.deb ...
 Unpacking libart-2.0-2:amd64 (2.3.21-2) ...
 Selecting previously unselected package libavahi-glib1:amd64.
@@ -166,4 +169,4 @@ Processing triggers for libc-bin (2.19-18+deb8u6) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install webcam: Camorama.
 CLDS: * Insert Camorama menu in Graphics.
-CLDS: * Disk size = 4009840K. Space Used = 31432K.
+CLDS: * Disk size = 4003020K. Space Used = 31428K.

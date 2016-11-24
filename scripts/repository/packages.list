@@ -64,6 +64,7 @@ firmware-linux-nonfree
 firmware-qlogic
 firmware-realtek
 firmware-zd1211
+firmware-ralink
 # ./inst-min-con-firmware-net-b43-installer/inst-min-con-firmware-net-b43-installer.sh
 b43-fwcutter
 # ./inst-min-con-live-build-tools/inst-min-con-live-build-tools.sh
@@ -374,13 +375,13 @@ virtualbox-guest-x11
 wifite
 # ./inst-xtra-xmpv/inst-xtra-xmpv.sh
 
-# ./inst-xtra-zfs-bpo/inst-xtra-zfs-bpo.sh
+# ./inst-xtra-zfs/inst-xtra-zfs.sh
 file
-lsb-release
 linux-headers-amd64
-spl-dkms
-zfs-dkms
-zfs-initramfs
+build-essential
+lsb-release
+libc6-dev
+debian-zfs
 # ./inst-zclean-01-apt-get-00-clean-up/inst-zclean-01-apt-get-00-clean-up.sh
 
 # ./inst-zclean-01-apt-get-01-source-list/inst-zclean-01-apt-get-01-source-list.sh

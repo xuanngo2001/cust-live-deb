@@ -1,27 +1,26 @@
 --[[
 <readme>
-
 # DESCRIPTION
-`xmpv` is a set of Lua scripts for **MPV** media player that uses **TMSU** to provide the following extra features:
+`xmpv` is a set of Lua scripts for `mpv` media player that uses `TMSU` to provide the following extra features:
   
   * Tag files that you like.
   * Display your top favorite files.
-  * Mark time position.
-  * Play next marked time position.
-  * Play previous marked time position.
-  * Delete previous marked time position.
-  * Export marked time positions to a file.
+  * Mark play position.
+  * Play next marked position.
+  * Play previous marked position.
+  * Delete previous marked position.
+  * Export marked positions to a file.
 
 # INSTALL
 
 ## Requirements
-* MPV: A media player. 
+* `mpv`: A media player. 
   * http://mpv.io/
-* TMSU: A tool for tagging files. 
+* `TMSU`: A tool for tagging files. 
   * http://tmsu.org/
   
 ## Install
-Copy `xmpv.lua` and `xmpv-*.lua` to `scripts` directory of MPV:
+Copy `xmpv.lua` and `xmpv-*.lua` to `scripts` directory of `mpv`:
 
     # In Linux
     cp xmpv.lua   ~/.config/mpv/scripts/
@@ -33,7 +32,7 @@ Copy `xmpv.lua` and `xmpv-*.lua` to `scripts` directory of MPV:
 
 
 # USAGE
-* Run your **MPV** as usual but now you have the following extra hot keys:
+* Run your `mpv` as usual but now you have the following extra hot keys:
   * `Alt+l`: Increment likes.
   * `Alt+d`: Decrement likes.
   * `Alt+r`: Reset likes to zero.
@@ -45,10 +44,7 @@ Copy `xmpv.lua` and `xmpv-*.lua` to `scripts` directory of MPV:
   * `Alt+x`: Delete previous marked time position.
   * `Alt+e`: Export marked time positions to a file.
 
-* Alternate key bindings:
-  * `Alt+Shift+t`: Print top favorite files.
-  * `Alt+Shift+e`: Export marked time positions to a file.
-
+**Note**: If there is a conflict shortcut key, use the alternative binding key. Simply also press the `Shift` key. 
 
 # EXAMPLES:
 
@@ -68,7 +64,8 @@ Copy `xmpv.lua` and `xmpv-*.lua` to `scripts` directory of MPV:
     
     
 
-# REFERENCE: 
+# REFERENCE:
+* https://github.com/mpv-player/mpv/wiki/User-Scripts 
 * https://github.com/mpv-player/mpv/blob/master/DOCS/man/lua.rst
 * https://github.com/mpv-player/mpv/blob/master/DOCS/man/input.rst (also, search for 'osd-ass-cc')
 * `mpv --list-properties` lists all properties available.
@@ -120,6 +117,7 @@ function on_file_loaded_init()
   mark = Mark:new(nil, file_name_for_cmd)
   likes = Likes:new(nil, file_name_for_cmd)
   stats = Stats:new(nil, file_name_for_cmd)
+	msg = Msg:new()
 	
 	tmsu:exists()
 
@@ -142,7 +140,11 @@ function on_file_loaded_init()
   -- Stats
   function print_stats() stats:print() end
   
+  -- Msg
+  function print_help() msg:help() end
+  
   -- Set binding keys
+  mp.add_key_binding("Alt+h", "print_help", print_help)
   mp.add_key_binding("Alt+l", "increment_likes", increment_likes)
   mp.add_key_binding("Alt+d", "decrement_likes", decrement_likes)
   mp.add_key_binding("Alt+r", "reset_likes", reset_likes)
@@ -152,11 +154,20 @@ function on_file_loaded_init()
   mp.add_key_binding("Alt+n", "goto_next_mark_position", goto_next_mark_position)
   mp.add_key_binding("Alt+b", "goto_previous_mark_position", goto_previous_mark_position)
   mp.add_key_binding("Alt+x", "delete_previous_mark_position", delete_previous_mark_position) -- Key should be far away from the others to prevent accidental deletes.
-  mp.add_key_binding("Alt+e", "export_mark_position", export_mark_position) 
+  mp.add_key_binding("Alt+e", "export_mark_position", export_mark_position)
   
-  -- Alternative keys
-  mp.add_key_binding("Alt+Shift+e", "export_mark_position", export_mark_position)
+  -- Alternative binding keys provided due to conflicting shortcuts with other applications(e.g. xfce4-terminal)
+  mp.add_key_binding("Alt+Shift+h", "print_help", print_help)
+  mp.add_key_binding("Alt+Shift+l", "increment_likes", increment_likes)
+  mp.add_key_binding("Alt+Shift+d", "decrement_likes", decrement_likes)
+  mp.add_key_binding("Alt+Shift+r", "reset_likes", reset_likes)
   mp.add_key_binding("Alt+Shift+t", "top_favorites", print_top_favorites)
+  mp.add_key_binding("Alt+Shift+i", "show_statistics", print_stats)
+  mp.add_key_binding("Alt+Shift+m", "mark_position", mark_position)
+  mp.add_key_binding("Alt+Shift+n", "goto_next_mark_position", goto_next_mark_position)
+  mp.add_key_binding("Alt+Shift+b", "goto_previous_mark_position", goto_previous_mark_position)
+  mp.add_key_binding("Alt+Shift+x", "delete_previous_mark_position", delete_previous_mark_position) -- Key should be far away from the others to prevent accidental deletes.
+  mp.add_key_binding("Alt+Shift+e", "export_mark_position", export_mark_position)
   
 end
 

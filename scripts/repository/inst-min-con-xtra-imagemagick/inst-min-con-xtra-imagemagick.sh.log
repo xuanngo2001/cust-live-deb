@@ -2,6 +2,9 @@ CLDS:>>>>>>>>> Running inst-min-con-xtra-imagemagick.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following package was automatically installed and is no longer required:
+  firmware-amd-graphics
+Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   hicolor-icon-theme imagemagick-6.q16 imagemagick-common libfftw3-double3
   liblqr-1-0 libmagickcore-6.q16-2 libmagickwand-6.q16-2 libxml2
@@ -27,9 +30,9 @@ Get:6 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main libm
 Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main hicolor-icon-theme all 0.13-1 [8,600 B]
 Get:8 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main imagemagick-6.q16 amd64 8:6.8.9.9-5+deb8u5 [510 kB]
 Get:9 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main imagemagick amd64 8:6.8.9.9-5+deb8u5 [157 kB]
-Fetched 4,467 kB in 0s (32.1 MB/s)
+Fetched 4,467 kB in 0s (27.6 MB/s)
 Selecting previously unselected package libxml2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32920 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32772 files and directories currently installed.)
 Preparing to unpack .../libxml2_2.9.1+dfsg1-5+deb8u3_amd64.deb ...
 Unpacking libxml2:amd64 (2.9.1+dfsg1-5+deb8u3) ...
 Selecting previously unselected package imagemagick-common.
@@ -79,4 +82,4 @@ update-alternatives: using /usr/bin/montage-im6 to provide /usr/bin/montage (mon
 update-alternatives: using /usr/bin/mogrify-im6 to provide /usr/bin/mogrify (mogrify) in auto mode
 Processing triggers for libc-bin (2.19-18+deb8u6) ...
 CLDS: * Install imagemagick to process image from command line.
-CLDS: * Disk size = 2325636K. Space Used = 19696K.
+CLDS: * Disk size = 2318808K. Space Used = 19692K.

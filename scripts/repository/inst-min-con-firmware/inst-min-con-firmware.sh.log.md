@@ -14,8 +14,9 @@
   * After this operation, 6,606 kB of additional disk space will be used.
   * After this operation, 1,001 kB of additional disk space will be used.
   * After this operation, 52.2 kB of additional disk space will be used.
+  * After this operation, 7,071 kB disk space will be freed.
   * Install firmwares.
-  * Disk size = 1986668K. Space Used = 145032K.
+  * Disk size = 1979836K. Space Used = 137748K.
   * The following NEW packages will be installed:
   ```bash
   atmel-firmware
@@ -34,4 +35,5 @@
   firmware-qlogic
   firmware-realtek
   firmware-zd1211
+  firmware-ralink
   ```

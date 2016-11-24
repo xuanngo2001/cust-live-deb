@@ -2,6 +2,9 @@ CLDS:>>>>>>>>> Running inst-std-accessories-terminal-xfce.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following package was automatically installed and is no longer required:
+  firmware-amd-graphics
+Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   dbus-x11 exo-utils libdbus-glib-1-2 libexo-1-0 libexo-common libexo-helpers
   libpango1.0-0 libpangox-1.0-0 libpangoxft-1.0-0 libstartup-notification0
@@ -36,9 +39,9 @@ Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main libvte-common all 1:
 Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libpango1.0-0 amd64 1.36.8-3 [183 kB]
 Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main libvte9 amd64 1:0.28.2-5 [726 kB]
 Get:19 http://localhost/aptly-repo/jessie-main/ jessie/main xfce4-terminal amd64 0.6.3-1+b1 [459 kB]
-Fetched 3,754 kB in 0s (24.9 MB/s)
+Fetched 3,754 kB in 0s (15.8 MB/s)
 Selecting previously unselected package libdbus-glib-1-2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 43775 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 43627 files and directories currently installed.)
 Preparing to unpack .../libdbus-glib-1-2_0.102-1_amd64.deb ...
 Unpacking libdbus-glib-1-2:amd64 (0.102-1) ...
 Selecting previously unselected package libstartup-notification0:amd64.
@@ -123,4 +126,4 @@ update-alternatives: warning: skip creation of /usr/share/man/man1/x-terminal-em
 Processing triggers for libc-bin (2.19-18+deb8u6) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install terminal: xfce4-terminal.
-CLDS: * Disk size = 3114764K. Space Used = 9332K.
+CLDS: * Disk size = 3107940K. Space Used = 9332K.

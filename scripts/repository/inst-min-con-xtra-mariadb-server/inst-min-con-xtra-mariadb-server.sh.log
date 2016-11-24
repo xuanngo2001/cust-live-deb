@@ -2,6 +2,9 @@ CLDS:>>>>>>>>> Running inst-min-con-xtra-mariadb-server.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following package was automatically installed and is no longer required:
+  firmware-amd-graphics
+Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   libaio1 libdbi-perl libreadline5 libterm-readkey-perl mariadb-client-10.0
   mariadb-client-core-10.0 mariadb-common mariadb-server-10.0
@@ -39,9 +42,9 @@ Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main psmisc amd64 22.21-2
 Get:13 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main mariadb-server-10.0 amd64 10.0.28-0+deb8u1 [5,465 kB]
 Get:14 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main mariadb-server all 10.0.28-0+deb8u1 [16.8 kB]
 Preconfiguring packages ...
-Fetched 18.1 MB in 0s (38.1 MB/s)
+Fetched 18.1 MB in 0s (38.6 MB/s)
 Selecting previously unselected package perl-modules.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35665 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35517 files and directories currently installed.)
 Preparing to unpack .../perl-modules_5.20.2-3+deb8u6_all.deb ...
 Unpacking perl-modules (5.20.2-3+deb8u6) ...
 Selecting previously unselected package perl.
@@ -81,7 +84,7 @@ Processing triggers for man-db (2.7.0.2-5) ...
 Setting up mysql-common (5.5.53-0+deb8u1) ...
 Setting up mariadb-common (10.0.28-0+deb8u1) ...
 Selecting previously unselected package mariadb-server-10.0.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37240 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37092 files and directories currently installed.)
 Preparing to unpack .../mariadb-server-10.0_10.0.28-0+deb8u1_amd64.deb ...
 Unpacking mariadb-server-10.0 (10.0.28-0+deb8u1) ...
 Selecting previously unselected package mariadb-server.
@@ -102,7 +105,7 @@ Setting up mariadb-server-core-10.0 (10.0.28-0+deb8u1) ...
 Setting up psmisc (22.21-2) ...
 Setting up mariadb-server-10.0 (10.0.28-0+deb8u1) ...
 invoke-rc.d: policy-rc.d denied execution of stop.
-161123 17:54:39 [Note] /usr/sbin/mysqld (mysqld 10.0.28-MariaDB-0+deb8u1) starting as process 26283 ...
+161124 18:53:43 [Note] /usr/sbin/mysqld (mysqld 10.0.28-MariaDB-0+deb8u1) starting as process 11100 ...
 invoke-rc.d: policy-rc.d denied execution of start.
 Setting up mariadb-server (10.0.28-0+deb8u1) ...
 Processing triggers for libc-bin (2.19-18+deb8u6) ...
@@ -110,4 +113,4 @@ Processing triggers for systemd (215-17+deb8u5) ...
 mysqladmin: connect to server at 'localhost' failed
 error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")'
 Check that mysqld is running and that the socket: '/var/run/mysqld/mysqld.sock' exists!
-CLDS: * Disk size = 2781876K. Space Used = 292196K.
+CLDS: * Disk size = 2775052K. Space Used = 292204K.

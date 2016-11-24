@@ -2,6 +2,9 @@ CLDS:>>>>>>>>> Running inst-min-con-ntp.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following package was automatically installed and is no longer required:
+  firmware-amd-graphics
+Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   libbsd0 libedit2 libopts25
 Suggested packages:
@@ -17,9 +20,9 @@ Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libbsd0 amd64 0.7.0-2
 Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libedit2 amd64 3.1-20140620-2 [85.1 kB]
 Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main libopts25 amd64 1:5.18.4-3 [69.6 kB]
 Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main ntp amd64 1:4.2.6.p5+dfsg-7+deb8u2 [394 kB]
-Fetched 617 kB in 0s (21.6 MB/s)
+Fetched 617 kB in 0s (22.3 MB/s)
 Selecting previously unselected package libbsd0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16506 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16358 files and directories currently installed.)
 Preparing to unpack .../libbsd0_0.7.0-2_amd64.deb ...
 Unpacking libbsd0:amd64 (0.7.0-2) ...
 Selecting previously unselected package libedit2:amd64.
@@ -42,4 +45,4 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Processing triggers for libc-bin (2.19-18+deb8u6) ...
 Processing triggers for systemd (215-17+deb8u5) ...
 CLDS: * Install Network Time Protocol: ntp.
-CLDS: * Disk size = 1999200K. Space Used = 2512K.
+CLDS: * Disk size = 1992364K. Space Used = 2504K.

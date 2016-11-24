@@ -30,7 +30,9 @@ apt-get -y --force-yes install firmware-linux-nonfree
 apt-get -y --force-yes install firmware-qlogic
 apt-get -y --force-yes install firmware-realtek
 apt-get -y --force-yes install firmware-zd1211
-#apt-get -y --force-yes install firmware-ralink # firmware-misc-nonfree breaks firmware-ralink.
+
+# firmware-misc-nonfree breaks firmware-ralink.
+apt-get -y --force-yes install firmware-ralink
 
 # Log
 echo "${GV_LOG} * Install firmwares."

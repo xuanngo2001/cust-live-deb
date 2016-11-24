@@ -3,4 +3,4 @@
   * Install TexturesLibraryEditor-1.5.jar.
   * Install FurnitureLibraryEditor-1.19.jar.
   * Insert SweetHome3D menus in Graphics.
-  * Disk size = 4373544K. Space Used = 38280K.
+  * Disk size = 4366732K. Space Used = 38284K.
