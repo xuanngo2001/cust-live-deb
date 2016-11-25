@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-java-jre.sh ...
   * After this operation, 108 MB of additional disk space will be used.
   * Install JAVA JRE: default-jre.
-  * Disk size = 2481400K. Space Used = 162524K.
+  * Disk size = 2292344K. Space Used = 162536K.
   * The following NEW packages will be installed:
   ```bash
   ca-certificates ca-certificates-java default-jre default-jre-headless
