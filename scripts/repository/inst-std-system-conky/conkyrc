@@ -36,7 +36,7 @@ conky.config = {
   -- Settings available: http://conky.sourceforge.net/config_settings.html
 
     alignment = 'top_right',
-    --font = 'Arial:size=8',
+    font = 'Arial:size=8',
     
     -- Eliminate flicker
     double_buffer = true,
@@ -47,6 +47,9 @@ conky.config = {
     -- Borders: lower than 6 pixels has no effect.
     border_outer_margin = 6,
     
+    -- Activate font styling. Otherwise, font size and boldface will not take effect.
+    use_xft = true,
+    
     -- Expose running Conky as 'Conky': wmctrl -l
     own_window = true,
     own_window_class = 'Conky',
@@ -54,11 +57,9 @@ conky.config = {
 };
 
 conky.text = [[
-${font Arial:size=40:style=bold}$alignc CUST${color Tan1} LIVE${color Ivory} DEB
+${font Arial:size=16}$alignc CUST${color Tan1} LIVE${color Ivory} DEB
 ############ SYSTEM ############
---${voffset -90}
 ${color Gray}
-${font}
 ${font Arial:size=10:style=bold}${color Tan1}SYSTEM ${color DarkSlateGray} ${hr 2}
 $font${color Gray}$sysname $kernel $alignr $machine
 ${execpi 3600 cat /proc/cpuinfo | grep "model name" | uniq | cut -d':' -f2 | cut -c 2-}
