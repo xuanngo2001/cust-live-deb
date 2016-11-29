@@ -10,7 +10,10 @@
 # http://askubuntu.com/questions/778799/ubuntu-16-04-gnome-conky-does-not-work-right
 
 # Conkyrc structure (>= 1.10)
-Reference: https://github.com/brndnmtthws/conky/blob/master/data/conky.conf
+
+* https://github.com/brndnmtthws/conky/blob/master/data/conky.conf
+* https://github.com/brndnmtthws/conky/wiki/Convert-to-new-1.10-syntax
+
 
     conky.config = { 
                       -- settings here...
