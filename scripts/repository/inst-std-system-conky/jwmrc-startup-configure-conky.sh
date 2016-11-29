@@ -28,11 +28,11 @@ set -e
 	sed  -i "/${CPU_START}/ r ${CPU_CONKY}" /root/.conkyrc
 	
 
-#---- CALENDAR: Add calendar if screen height > 1000 px. ----#
+#---- CALENDAR: Add calendar if screen height > 900 px. ----#
 	SCREEN_RESOLUTION=$(xrandr | head -n1 | cut -d, -f2 | cut -d" " -f3-5)
 	HEIGHT=$(echo ${SCREEN_RESOLUTION}|sed 's/^.*x //') 
 
-  if [ "${HEIGHT}" -gt 1000 ]; then
+  if [ "${HEIGHT}" -gt 900 ]; then
     CALENDAR_CONKY=/root/cld/conkyrc-calendar.txt
     CALENDAR_START="### CALENDAR-START"
     CALENDAR_END="### CALENDAR-END"
