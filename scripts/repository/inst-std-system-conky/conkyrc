@@ -32,9 +32,9 @@
 
 ]]
 
-conky.config = {
-  -- Settings available: http://conky.sourceforge.net/config_settings.html
+-- Settings available: http://conky.sourceforge.net/config_settings.html
 
+conky.config = {
     alignment = 'top_right',
     font = 'Arial:size=8',
     
@@ -55,6 +55,9 @@ conky.config = {
     own_window_class = 'Conky',
     own_window_type = 'desktop',
 };
+
+
+-- Available variables: http://conky.sourceforge.net/variables.html
 
 conky.text = [[
 ${font Arial:size=16}$alignc CUST${color Tan1} LIVE${color Ivory} DEB
