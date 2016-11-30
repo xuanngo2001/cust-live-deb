@@ -20,14 +20,13 @@ Hit http://localhost jessie/main amd64 Packages
 Hit http://localhost nightly/main amd64 Packages
 Hit http://localhost jessie/main amd64 Packages
 Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost jessie-backports/contrib amd64 Packages
-Hit http://localhost jessie-backports/main amd64 Packages
-Hit http://localhost jessie-backports/non-free amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://localhost nightly/main Translation-en_US
 Ign http://localhost nightly/main Translation-en
+Hit http://localhost jessie-backports/contrib amd64 Packages
+Hit http://localhost jessie-backports/main amd64 Packages
 Ign http://localhost nightly/main Translation-en_US.UTF-8
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
@@ -35,34 +34,31 @@ Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
+Hit http://localhost jessie-backports/non-free amd64 Packages
 Hit http://localhost jessie/contrib amd64 Packages
 Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-backports/contrib Translation-en_US
 Ign http://localhost jessie-backports/contrib Translation-en
 Ign http://localhost jessie-backports/contrib Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/main amd64 Packages
-Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie-backports/main Translation-en_US
-Hit http://localhost jessie-updates/contrib amd64 Packages
-Hit http://localhost jessie-updates/main amd64 Packages
-Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie-backports/main Translation-en
 Ign http://localhost jessie-backports/main Translation-en_US.UTF-8
 Ign http://localhost jessie-backports/non-free Translation-en_US
 Ign http://localhost jessie-backports/non-free Translation-en
 Ign http://localhost jessie-backports/non-free Translation-en_US.UTF-8
-Hit http://localhost jessie/contrib amd64 Packages
-Hit http://localhost jessie/main amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
 Ign http://localhost jessie/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/main amd64 Packages
 Ign http://localhost jessie-updates/contrib Translation-en_US
 Ign http://localhost jessie-updates/contrib Translation-en
 Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/non-free amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-updates/main Translation-en_US
 Ign http://localhost jessie-updates/main Translation-en
 Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
@@ -72,12 +68,16 @@ Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie-updates/contrib Translation-en_US
 Ign http://localhost jessie-updates/contrib Translation-en
 Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/main amd64 Packages
 Ign http://localhost jessie-updates/main Translation-en_US
 Ign http://localhost jessie-updates/main Translation-en
 Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/non-free amd64 Packages
+Hit http://localhost jessie/contrib amd64 Packages
 Ign http://localhost jessie-updates/non-free Translation-en_US
 Ign http://localhost jessie-updates/non-free Translation-en
 Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
+Hit http://localhost jessie/main amd64 Packages
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
 Ign http://localhost jessie/contrib Translation-en_US.UTF-8
@@ -101,7 +101,7 @@ Need to get 2,796 kB of archives.
 After this operation, 5,539 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libglib2.0-0 amd64 2.48.0-1~bpo8+1 [2,705 kB]
 Get:2 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main udevil amd64 0.4.4-1~bpo8+1 [90.9 kB]
-Fetched 2,796 kB in 0s (40.4 MB/s)
+Fetched 2,796 kB in 0s (31.4 MB/s)
 Selecting previously unselected package libglib2.0-0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17158 files and directories currently installed.)
 Preparing to unpack .../libglib2.0-0_2.48.0-1~bpo8+1_amd64.deb ...
@@ -119,4 +119,4 @@ CLDS: * Install udevil to auto mount USB devices.
 CLDS: * Set devmon to auto start on startup.
 CLDS: * Need ntfs-3g driver to be able to read and write ntfs partition.
 CLDS: * Need exfat-fuse to be able to read and write exfat partition.
-CLDS: * Disk size = 2023336K. Space Used = 8000K.
+CLDS: * Disk size = 2023636K. Space Used = 8000K.
