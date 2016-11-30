@@ -34,7 +34,7 @@ while IFS='' read -r DEB_FILE || [[ -n "$DEB_FILE" ]]; do
   echo "${DOT_PACKAGES_LINK}" >> "${DOT_FILENAME}"
   echo "" >> "${DOT_FILENAME}"
   
-done < <( find "${SCRIPTS_DIR}" -type f -name "*.sh.log.deb" | sort )
+done < <( find "${SCRIPTS_DIR}" -type f -name "*.sh.log.deb.txt" | sort )
 
 # Add ending graph statement.
 cat pkg-graph-end.txt >> "${DOT_FILENAME}"
