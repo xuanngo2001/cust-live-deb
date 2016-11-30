@@ -5,7 +5,7 @@
   * For wireless, you have to type in the wireless interface(e.g. wlan0) in the Preferences.
   * Set wicd to run on JWM startup.
   * Log at /var/log/wicd/wicd.log.
-  * Disk size = 3546760K. Space Used = 44648K.
+  * Disk size = 3546416K. Space Used = 44648K.
   * The following NEW packages will be installed:
   ```bash
   gir1.2-glib-2.0 libblas-common libblas3 libgfortran3 libgirepository-1.0-1
