@@ -50,6 +50,9 @@ conky.config = {
     -- Activate font styling. Otherwise, font size and boldface will not take effect.
     use_xft = true,
     
+    -- Set to 0. Otherwise, conky will not start from the top.
+    gap_y = 0,    
+    
     -- Expose running Conky as 'Conky': wmctrl -l
     own_window = true,
     own_window_class = 'Conky',
@@ -60,6 +63,8 @@ conky.config = {
 -- Available variables: http://conky.sourceforge.net/variables.html
 
 conky.text = [[
+
+# 2 newlines before starting.
 ${font Arial:size=16}$alignc CUST${color Tan1} LIVE${color Ivory} DEB
 ############ SYSTEM ############
 ${color Gray}
