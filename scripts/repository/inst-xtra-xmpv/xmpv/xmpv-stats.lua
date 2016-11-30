@@ -41,7 +41,7 @@ function Stats:print()
   local indent = "   "
   local file   = string.format("%6s: %s\n", "File", self.asst:long_text(mp.get_property_osd("filename")))
   local likes  = string.format("%6s: %s\n", "Likes", self.likes:get_number())
-  local tags   = string.format("%6s: %s\n", "Tags", self:get_tags())
+  local tags   = string.format("%6s: %s\n", "Tags", self.asst:long_text(self:get_tags()))
   local marked = string.format("%6s\n%s%s\n", "Marked", indent, self.asst:long_text(self.mark:get_formatted_positions()))
   
   local stats = file .. likes .. tags .. marked
