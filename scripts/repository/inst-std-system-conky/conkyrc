@@ -67,8 +67,7 @@ conky.text = [[
 # 2 newlines before starting.
 ${font Arial:size=16}$alignc CUST${color Tan1} LIVE${color Ivory} DEB
 ############ SYSTEM ############
-${color Gray}
-${font Arial:size=10:style=bold}${color Tan1}SYSTEM ${color DarkSlateGray} ${hr 2}
+${color Gray}${font Arial:size=10:style=bold}${color Tan1}SYSTEM ${color DarkSlateGray} ${hr 2}
 $font${color Gray}$sysname $kernel $alignr $machine
 ${execpi 3600 cat /proc/cpuinfo | grep "model name" | uniq | cut -d':' -f2 | cut -c 2-}
 Uptime $alignr${uptime}
