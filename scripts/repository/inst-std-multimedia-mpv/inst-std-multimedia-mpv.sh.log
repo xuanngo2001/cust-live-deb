@@ -2,47 +2,41 @@ CLDS:>>>>>>>>> Running inst-std-multimedia-mpv.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   libraw1394-11
 Suggested packages:
   libraw1394-doc
 The following NEW packages will be installed:
   libavc1394-0 libraw1394-11
-0 upgraded, 2 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 22 not upgraded.
 Need to get 70.0 kB of archives.
 After this operation, 208 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libraw1394-11 amd64 2.1.0-3 [46.1 kB]
 Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libavc1394-0 amd64 0.5.4-2 [23.9 kB]
-Fetched 70.0 kB in 0s (0 B/s)
+Fetched 70.0 kB in 0s (5,798 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   libaacplus2 libavutil54 libcrystalhd3 libfaac0 libfdk-aac1 libgsm1
-  libmp3lame0 libopencore-amrnb0 libopencore-amrwb0 libopenjpeg5 libopus0
-  liborc-0.4-0 libschroedinger-1.0-0 libspeex1 libswresample1 libtheora0
-  libutvideo15 libva1 libvo-aacenc0 libvo-amrwbenc0 libvorbisenc2 libvpx1
-  libx264-146 libx265-51 libxvidcore4 libzvbi-common libzvbi0
+  libmp3lame0 libopencore-amrnb0 libopencore-amrwb0 libopus0 liborc-0.4-0
+  libschroedinger-1.0-0 libspeex1 libswresample1 libtheora0 libutvideo15
+  libva1 libvo-aacenc0 libvo-amrwbenc0 libx264-146 libx265-51 libxvidcore4
+  libzvbi-common libzvbi0
 Suggested packages:
   firmware-crystalhd opus-tools speex
 Recommended packages:
   va-driver-all va-driver
 The following NEW packages will be installed:
   libaacplus2 libavcodec56 libavutil54 libcrystalhd3 libfaac0 libfdk-aac1
-  libgsm1 libmp3lame0 libopencore-amrnb0 libopencore-amrwb0 libopenjpeg5
-  libopus0 liborc-0.4-0 libschroedinger-1.0-0 libspeex1 libswresample1
-  libtheora0 libutvideo15 libva1 libvo-aacenc0 libvo-amrwbenc0 libvorbisenc2
-  libvpx1 libx264-146 libx265-51 libxvidcore4 libzvbi-common libzvbi0
-0 upgraded, 28 newly installed, 0 to remove and 21 not upgraded.
-Need to get 8,584 kB of archives.
-After this operation, 25.7 MB of additional disk space will be used.
+  libgsm1 libmp3lame0 libopencore-amrnb0 libopencore-amrwb0 libopus0
+  liborc-0.4-0 libschroedinger-1.0-0 libspeex1 libswresample1 libtheora0
+  libutvideo15 libva1 libvo-aacenc0 libvo-amrwbenc0 libx264-146 libx265-51
+  libxvidcore4 libzvbi-common libzvbi0
+0 upgraded, 25 newly installed, 0 to remove and 22 not upgraded.
+Need to get 7,795 kB of archives.
+After this operation, 22.7 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libaacplus2 amd64 2.0.2-dmo2 [99.5 kB]
 Get:2 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libavutil54 amd64 10:2.6.9-dmo1 [190 kB]
 Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main libcrystalhd3 amd64 1:0.0~git20110715.fdd2f19-11 [45.8 kB]
@@ -52,103 +46,85 @@ Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main libgsm1 amd64 1.0.13-
 Get:7 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libmp3lame0 amd64 1:3.99.5-dmo4 [345 kB]
 Get:8 http://localhost/aptly-repo/jessie-main/ jessie/main libopencore-amrnb0 amd64 0.1.3-2.1 [92.4 kB]
 Get:9 http://localhost/aptly-repo/jessie-main/ jessie/main libopencore-amrwb0 amd64 0.1.3-2.1 [46.2 kB]
-Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main libopenjpeg5 amd64 1:1.5.2-3 [111 kB]
-Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main libopus0 amd64 1.1-2 [156 kB]
-Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main liborc-0.4-0 amd64 1:0.4.22-1 [141 kB]
-Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libschroedinger-1.0-0 amd64 1.0.11-2.1 [295 kB]
-Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main libspeex1 amd64 1.2~rc1.2-1 [54.9 kB]
-Get:15 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libswresample1 amd64 10:2.6.9-dmo1 [87.3 kB]
-Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main libtheora0 amd64 1.1.1+dfsg.1-6 [171 kB]
-Get:17 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libutvideo15 amd64 15.1.0-dmo2 [50.2 kB]
-Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main libva1 amd64 1.4.1-1 [43.8 kB]
-Get:19 http://localhost/aptly-repo/jessie-main/ jessie/main libvo-aacenc0 amd64 0.1.3-1 [62.6 kB]
-Get:20 http://localhost/aptly-repo/jessie-main/ jessie/main libvo-amrwbenc0 amd64 0.1.3-1 [59.4 kB]
-Get:21 http://localhost/aptly-repo/jessie-main/ jessie/main libvorbisenc2 amd64 1.3.4-2 [77.9 kB]
-Get:22 http://localhost/aptly-repo/jessie-main/ jessie/main libvpx1 amd64 1.3.0-3 [599 kB]
-Get:23 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libx264-146 amd64 3:0.146.2538+git121396c-dmo2 [599 kB]
-Get:24 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libx265-51 amd64 1.6-dmo1 [566 kB]
-Get:25 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libxvidcore4 amd64 3:1.3.3-dmo1 [239 kB]
-Get:26 http://localhost/aptly-repo/jessie-main/ jessie/main libzvbi-common all 0.2.35-3 [61.3 kB]
-Get:27 http://localhost/aptly-repo/jessie-main/ jessie/main libzvbi0 amd64 0.2.35-3 [266 kB]
-Get:28 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libavcodec56 amd64 10:2.6.9-dmo1 [3,708 kB]
-Fetched 8,584 kB in 0s (22.8 MB/s)
+Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main libopus0 amd64 1.1-2 [156 kB]
+Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main liborc-0.4-0 amd64 1:0.4.22-1 [141 kB]
+Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libschroedinger-1.0-0 amd64 1.0.11-2.1 [295 kB]
+Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libspeex1 amd64 1.2~rc1.2-1 [54.9 kB]
+Get:14 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libswresample1 amd64 10:2.6.9-dmo1 [87.3 kB]
+Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main libtheora0 amd64 1.1.1+dfsg.1-6 [171 kB]
+Get:16 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libutvideo15 amd64 15.1.0-dmo2 [50.2 kB]
+Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libva1 amd64 1.4.1-1 [43.8 kB]
+Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main libvo-aacenc0 amd64 0.1.3-1 [62.6 kB]
+Get:19 http://localhost/aptly-repo/jessie-main/ jessie/main libvo-amrwbenc0 amd64 0.1.3-1 [59.4 kB]
+Get:20 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libx264-146 amd64 3:0.146.2538+git121396c-dmo2 [599 kB]
+Get:21 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libx265-51 amd64 1.6-dmo1 [566 kB]
+Get:22 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libxvidcore4 amd64 3:1.3.3-dmo1 [239 kB]
+Get:23 http://localhost/aptly-repo/jessie-main/ jessie/main libzvbi-common all 0.2.35-3 [61.3 kB]
+Get:24 http://localhost/aptly-repo/jessie-main/ jessie/main libzvbi0 amd64 0.2.35-3 [266 kB]
+Get:25 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libavcodec56 amd64 10:2.6.9-dmo1 [3,708 kB]
+Fetched 7,795 kB in 0s (15.6 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
-  libaacplus2 libass5 libasyncns0 libavc1394-0 libavcodec56 libavfilter5
+  libaacplus2 libass5 libavc1394-0 libavcodec56 libavfilter5 libavformat56
+  libavresample2 libavutil54 libbluray1 libcaca0 libcdio-cdda1
+  libcdio-paranoia1 libcdio13 libcrystalhd3 libdc1394-22 libdirectfb-1.2-9
+  libenca0 libfaac0 libfdk-aac1 libgsm1 libiec61883-0 libjack-jackd2-0
+  libmp3lame0 libopencore-amrnb0 libopencore-amrwb0 libopus0 liborc-0.4-0
+  libpostproc53 libraw1394-11 libschroedinger-1.0-0 libsdl1.2debian libspeex1
+  libswresample1 libswscale3 libtheora0 libutvideo15 libva1 libvidstab1.0
+  libvo-aacenc0 libvo-amrwbenc0 libx264-146 libx265-51 libxvidcore4
+  libzvbi-common libzvbi0
+Suggested packages:
+  libbluray-bdj firmware-crystalhd jackd2 opus-tools libraw1394-doc speex
+Recommended packages:
+  libaacs0 va-driver-all va-driver
+The following NEW packages will be installed:
+  libaacplus2 libass5 libavc1394-0 libavcodec56 libavdevice56 libavfilter5
   libavformat56 libavresample2 libavutil54 libbluray1 libcaca0 libcdio-cdda1
   libcdio-paranoia1 libcdio13 libcrystalhd3 libdc1394-22 libdirectfb-1.2-9
-  libenca0 libfaac0 libfdk-aac1 libflac8 libgsm1 libiec61883-0
-  libjack-jackd2-0 libmp3lame0 libopencore-amrnb0 libopencore-amrwb0
-  libopenjpeg5 libopus0 liborc-0.4-0 libpostproc53 libpulse0 libraw1394-11
-  libschroedinger-1.0-0 libsdl1.2debian libsndfile1 libspeex1 libswresample1
-  libswscale3 libtheora0 libutvideo15 libva1 libvidstab1.0 libvo-aacenc0
-  libvo-amrwbenc0 libvorbisenc2 libvpx1 libwrap0 libx264-146 libx265-51
-  libxvidcore4 libzvbi-common libzvbi0
-Suggested packages:
-  libbluray-bdj firmware-crystalhd jackd2 opus-tools pulseaudio libraw1394-doc
-  speex
-Recommended packages:
-  libaacs0 va-driver-all va-driver tcpd
-The following NEW packages will be installed:
-  libaacplus2 libass5 libasyncns0 libavc1394-0 libavcodec56 libavdevice56
-  libavfilter5 libavformat56 libavresample2 libavutil54 libbluray1 libcaca0
-  libcdio-cdda1 libcdio-paranoia1 libcdio13 libcrystalhd3 libdc1394-22
-  libdirectfb-1.2-9 libenca0 libfaac0 libfdk-aac1 libflac8 libgsm1
-  libiec61883-0 libjack-jackd2-0 libmp3lame0 libopencore-amrnb0
-  libopencore-amrwb0 libopenjpeg5 libopus0 liborc-0.4-0 libpostproc53
-  libpulse0 libraw1394-11 libschroedinger-1.0-0 libsdl1.2debian libsndfile1
-  libspeex1 libswresample1 libswscale3 libtheora0 libutvideo15 libva1
-  libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0 libvorbisenc2 libvpx1 libwrap0
-  libx264-146 libx265-51 libxvidcore4 libzvbi-common libzvbi0
-0 upgraded, 54 newly installed, 0 to remove and 21 not upgraded.
-Need to get 4,923 kB/13.6 MB of archives.
-After this operation, 38.7 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libwrap0 amd64 7.6.q-25 [58.5 kB]
-Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libasyncns0 amd64 0.8-5 [12.5 kB]
-Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main libenca0 amd64 1.16-1 [62.3 kB]
-Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libass5 amd64 0.10.2-3 [59.9 kB]
-Get:5 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libbluray1 amd64 2:0.7.0-dmo1 [111 kB]
-Get:6 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libavformat56 amd64 10:2.6.9-dmo1 [776 kB]
-Get:7 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libavresample2 amd64 10:2.6.9-dmo1 [89.0 kB]
-Get:8 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libpostproc53 amd64 10:2.6.9-dmo1 [86.9 kB]
-Get:9 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libswscale3 amd64 10:2.6.9-dmo1 [163 kB]
-Get:10 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libvidstab1.0 amd64 2:0.98b-dmo1+deb8u1 [39.1 kB]
-Get:11 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libavfilter5 amd64 10:2.6.9-dmo1 [481 kB]
-Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libcdio13 amd64 0.83-4.2 [168 kB]
-Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libcdio-cdda1 amd64 0.83-4.2 [132 kB]
-Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main libcdio-paranoia1 amd64 0.83-4.2 [132 kB]
-Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main libdc1394-22 amd64 2.2.3-1 [104 kB]
-Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main libiec61883-0 amd64 1.2.0-0.2 [30.2 kB]
-Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libjack-jackd2-0 amd64 1.9.10+20140719git3eb0ae6a~dfsg-2 [172 kB]
-Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main libflac8 amd64 1.3.0-3 [89.3 kB]
-Get:19 http://localhost/aptly-repo/jessie-main/ jessie/main libsndfile1 amd64 1.0.25-9.1+deb8u1 [215 kB]
-Get:20 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libpulse0 amd64 7.1-2~bpo8+1 [268 kB]
-Get:21 http://localhost/aptly-repo/jessie-main/ jessie/main libcaca0 amd64 0.99.beta19-2 [346 kB]
-Get:22 http://localhost/aptly-repo/jessie-main/ jessie/main libdirectfb-1.2-9 amd64 1.2.10.0-5.1 [1,040 kB]
-Get:23 http://localhost/aptly-repo/jessie-main/ jessie/main libsdl1.2debian amd64 1.2.15-10+b1 [189 kB]
-Get:24 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libavdevice56 amd64 10:2.6.9-dmo1 [98.7 kB]
-Fetched 4,923 kB in 0s (22.9 MB/s)
+  libenca0 libfaac0 libfdk-aac1 libgsm1 libiec61883-0 libjack-jackd2-0
+  libmp3lame0 libopencore-amrnb0 libopencore-amrwb0 libopus0 liborc-0.4-0
+  libpostproc53 libraw1394-11 libschroedinger-1.0-0 libsdl1.2debian libspeex1
+  libswresample1 libswscale3 libtheora0 libutvideo15 libva1 libvidstab1.0
+  libvo-aacenc0 libvo-amrwbenc0 libx264-146 libx265-51 libxvidcore4
+  libzvbi-common libzvbi0
+0 upgraded, 46 newly installed, 0 to remove and 22 not upgraded.
+Need to get 4,280 kB/12.1 MB of archives.
+After this operation, 33.8 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libenca0 amd64 1.16-1 [62.3 kB]
+Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libass5 amd64 0.10.2-3 [59.9 kB]
+Get:3 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libbluray1 amd64 2:0.7.0-dmo1 [111 kB]
+Get:4 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libavformat56 amd64 10:2.6.9-dmo1 [776 kB]
+Get:5 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libavresample2 amd64 10:2.6.9-dmo1 [89.0 kB]
+Get:6 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libpostproc53 amd64 10:2.6.9-dmo1 [86.9 kB]
+Get:7 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libswscale3 amd64 10:2.6.9-dmo1 [163 kB]
+Get:8 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libvidstab1.0 amd64 2:0.98b-dmo1+deb8u1 [39.1 kB]
+Get:9 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libavfilter5 amd64 10:2.6.9-dmo1 [481 kB]
+Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main libcdio13 amd64 0.83-4.2 [168 kB]
+Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main libcdio-cdda1 amd64 0.83-4.2 [132 kB]
+Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libcdio-paranoia1 amd64 0.83-4.2 [132 kB]
+Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libdc1394-22 amd64 2.2.3-1 [104 kB]
+Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main libiec61883-0 amd64 1.2.0-0.2 [30.2 kB]
+Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main libjack-jackd2-0 amd64 1.9.10+20140719git3eb0ae6a~dfsg-2 [172 kB]
+Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main libcaca0 amd64 0.99.beta19-2 [346 kB]
+Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libdirectfb-1.2-9 amd64 1.2.10.0-5.1 [1,040 kB]
+Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main libsdl1.2debian amd64 1.2.15-10+b1 [189 kB]
+Get:19 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libavdevice56 amd64 10:2.6.9-dmo1 [98.7 kB]
+Fetched 4,280 kB in 0s (21.8 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   libaacplus2 libass5 libavcodec56 libavformat56 libavresample2 libavutil54
   libbluray1 libcrystalhd3 libenca0 libfaac0 libfdk-aac1 libgsm1 libmp3lame0
-  libopencore-amrnb0 libopencore-amrwb0 libopenjpeg5 libopus0 liborc-0.4-0
-  libpostproc53 libschroedinger-1.0-0 libspeex1 libswresample1 libswscale3
-  libtheora0 libutvideo15 libva1 libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0
-  libvorbisenc2 libvpx1 libx264-146 libx265-51 libxvidcore4 libzvbi-common
-  libzvbi0
+  libopencore-amrnb0 libopencore-amrwb0 libopus0 liborc-0.4-0 libpostproc53
+  libschroedinger-1.0-0 libspeex1 libswresample1 libswscale3 libtheora0
+  libutvideo15 libva1 libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0 libx264-146
+  libx265-51 libxvidcore4 libzvbi-common libzvbi0
 Suggested packages:
   libbluray-bdj firmware-crystalhd opus-tools speex
 Recommended packages:
@@ -156,28 +132,23 @@ Recommended packages:
 The following NEW packages will be installed:
   libaacplus2 libass5 libavcodec56 libavfilter5 libavformat56 libavresample2
   libavutil54 libbluray1 libcrystalhd3 libenca0 libfaac0 libfdk-aac1 libgsm1
-  libmp3lame0 libopencore-amrnb0 libopencore-amrwb0 libopenjpeg5 libopus0
-  liborc-0.4-0 libpostproc53 libschroedinger-1.0-0 libspeex1 libswresample1
-  libswscale3 libtheora0 libutvideo15 libva1 libvidstab1.0 libvo-aacenc0
-  libvo-amrwbenc0 libvorbisenc2 libvpx1 libx264-146 libx265-51 libxvidcore4
-  libzvbi-common libzvbi0
-0 upgraded, 37 newly installed, 0 to remove and 21 not upgraded.
-Need to get 0 B/10.5 MB of archives.
-After this operation, 31.0 MB of additional disk space will be used.
+  libmp3lame0 libopencore-amrnb0 libopencore-amrwb0 libopus0 liborc-0.4-0
+  libpostproc53 libschroedinger-1.0-0 libspeex1 libswresample1 libswscale3
+  libtheora0 libutvideo15 libva1 libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0
+  libx264-146 libx265-51 libxvidcore4 libzvbi-common libzvbi0
+0 upgraded, 34 newly installed, 0 to remove and 22 not upgraded.
+Need to get 0 B/9,663 kB of archives.
+After this operation, 27.9 MB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   libaacplus2 libavcodec56 libavutil54 libbluray1 libcrystalhd3 libfaac0
   libfdk-aac1 libgsm1 libmp3lame0 libopencore-amrnb0 libopencore-amrwb0
-  libopenjpeg5 libopus0 liborc-0.4-0 libschroedinger-1.0-0 libspeex1
-  libswresample1 libtheora0 libutvideo15 libva1 libvo-aacenc0 libvo-amrwbenc0
-  libvorbisenc2 libvpx1 libx264-146 libx265-51 libxvidcore4 libzvbi-common
-  libzvbi0
+  libopus0 liborc-0.4-0 libschroedinger-1.0-0 libspeex1 libswresample1
+  libtheora0 libutvideo15 libva1 libvo-aacenc0 libvo-amrwbenc0 libx264-146
+  libx265-51 libxvidcore4 libzvbi-common libzvbi0
 Suggested packages:
   libbluray-bdj firmware-crystalhd opus-tools speex
 Recommended packages:
@@ -185,196 +156,162 @@ Recommended packages:
 The following NEW packages will be installed:
   libaacplus2 libavcodec56 libavformat56 libavutil54 libbluray1 libcrystalhd3
   libfaac0 libfdk-aac1 libgsm1 libmp3lame0 libopencore-amrnb0
-  libopencore-amrwb0 libopenjpeg5 libopus0 liborc-0.4-0 libschroedinger-1.0-0
-  libspeex1 libswresample1 libtheora0 libutvideo15 libva1 libvo-aacenc0
-  libvo-amrwbenc0 libvorbisenc2 libvpx1 libx264-146 libx265-51 libxvidcore4
-  libzvbi-common libzvbi0
-0 upgraded, 30 newly installed, 0 to remove and 21 not upgraded.
-Need to get 0 B/9,471 kB of archives.
-After this operation, 28.0 MB of additional disk space will be used.
+  libopencore-amrwb0 libopus0 liborc-0.4-0 libschroedinger-1.0-0 libspeex1
+  libswresample1 libtheora0 libutvideo15 libva1 libvo-aacenc0 libvo-amrwbenc0
+  libx264-146 libx265-51 libxvidcore4 libzvbi-common libzvbi0
+0 upgraded, 27 newly installed, 0 to remove and 22 not upgraded.
+Need to get 0 B/8,683 kB of archives.
+After this operation, 24.9 MB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 Suggested packages:
   firmware-crystalhd
 The following NEW packages will be installed:
   libcrystalhd3
-0 upgraded, 1 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 22 not upgraded.
 Need to get 0 B/45.8 kB of archives.
 After this operation, 159 kB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   libraw1394-11
 Suggested packages:
   libraw1394-doc
 The following NEW packages will be installed:
   libiec61883-0 libraw1394-11
-0 upgraded, 2 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 22 not upgraded.
 Need to get 0 B/76.2 kB of archives.
 After this operation, 224 kB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following NEW packages will be installed:
   libopencore-amrnb0
-0 upgraded, 1 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 22 not upgraded.
 Need to get 0 B/92.4 kB of archives.
 After this operation, 180 kB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following NEW packages will be installed:
   libopencore-amrwb0
-0 upgraded, 1 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 22 not upgraded.
 Need to get 0 B/46.2 kB of archives.
 After this operation, 86.0 kB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   libldb1 libntdb1 libpython-stdlib libpython2.7 libpython2.7-minimal
-  libpython2.7-stdlib libtalloc2 libtevent0 libwbclient0 mime-support python
-  python-minimal python-talloc python2.7 python2.7-minimal samba-libs
+  libpython2.7-stdlib libtalloc2 libtevent0 libwbclient0 python python-minimal
+  python-talloc python2.7 python2.7-minimal samba-libs
 Suggested packages:
   python-doc python-tk python2.7-doc binfmt-support
-Recommended packages:
-  file
 The following NEW packages will be installed:
   libldb1 libntdb1 libpython-stdlib libpython2.7 libpython2.7-minimal
-  libpython2.7-stdlib libsmbclient libtalloc2 libtevent0 libwbclient0
-  mime-support python python-minimal python-talloc python2.7 python2.7-minimal
-  samba-libs
-0 upgraded, 17 newly installed, 0 to remove and 21 not upgraded.
+  libpython2.7-stdlib libsmbclient libtalloc2 libtevent0 libwbclient0 python
+  python-minimal python-talloc python2.7 python2.7-minimal samba-libs
+0 upgraded, 16 newly installed, 0 to remove and 22 not upgraded.
 Need to get 10.8 MB of archives.
-After this operation, 43.7 MB of additional disk space will be used.
+After this operation, 43.5 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libpython2.7-minimal amd64 2.7.9-2+deb8u1 [378 kB]
 Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main python2.7-minimal amd64 2.7.9-2+deb8u1 [1,401 kB]
 Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main python-minimal amd64 2.7.9-1 [40.3 kB]
-Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main mime-support all 3.58 [36.0 kB]
-Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main libpython2.7-stdlib amd64 2.7.9-2+deb8u1 [1,847 kB]
-Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main python2.7 amd64 2.7.9-2+deb8u1 [252 kB]
-Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main libpython-stdlib amd64 2.7.9-1 [19.5 kB]
-Get:8 http://localhost/aptly-repo/jessie-main/ jessie/main python amd64 2.7.9-1 [151 kB]
-Get:9 http://localhost/aptly-repo/jessie-main/ jessie/main libtalloc2 amd64 2.1.2-0+deb8u1 [37.0 kB]
-Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main libtevent0 amd64 0.9.25-0+deb8u1 [26.3 kB]
-Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main libldb1 amd64 2:1.1.20-0+deb8u1 [111 kB]
-Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libntdb1 amd64 1.0-5 [38.9 kB]
-Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libpython2.7 amd64 2.7.9-2+deb8u1 [1,081 kB]
-Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main libwbclient0 amd64 2:4.2.10+dfsg-0+deb8u3 [120 kB]
-Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main python-talloc amd64 2.1.2-0+deb8u1 [10.4 kB]
-Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main samba-libs amd64 2:4.2.10+dfsg-0+deb8u3 [5,105 kB]
-Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libsmbclient amd64 2:4.2.10+dfsg-0+deb8u3 [146 kB]
-Fetched 10.8 MB in 0s (33.3 MB/s)
+Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libpython2.7-stdlib amd64 2.7.9-2+deb8u1 [1,847 kB]
+Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main python2.7 amd64 2.7.9-2+deb8u1 [252 kB]
+Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main libpython-stdlib amd64 2.7.9-1 [19.5 kB]
+Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main python amd64 2.7.9-1 [151 kB]
+Get:8 http://localhost/aptly-repo/jessie-main/ jessie/main libtalloc2 amd64 2.1.2-0+deb8u1 [37.0 kB]
+Get:9 http://localhost/aptly-repo/jessie-main/ jessie/main libtevent0 amd64 0.9.25-0+deb8u1 [26.3 kB]
+Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main libldb1 amd64 2:1.1.20-0+deb8u1 [111 kB]
+Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main libntdb1 amd64 1.0-5 [38.9 kB]
+Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libpython2.7 amd64 2.7.9-2+deb8u1 [1,081 kB]
+Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libwbclient0 amd64 2:4.2.10+dfsg-0+deb8u3 [120 kB]
+Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main python-talloc amd64 2.1.2-0+deb8u1 [10.4 kB]
+Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main samba-libs amd64 2:4.2.10+dfsg-0+deb8u3 [5,105 kB]
+Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main libsmbclient amd64 2:4.2.10+dfsg-0+deb8u3 [146 kB]
+Fetched 10.8 MB in 0s (15.9 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following NEW packages will be installed:
   libvo-aacenc0
-0 upgraded, 1 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 22 not upgraded.
 Need to get 0 B/62.6 kB of archives.
 After this operation, 154 kB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following NEW packages will be installed:
   libvo-amrwbenc0
-0 upgraded, 1 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 22 not upgraded.
 Need to get 0 B/59.4 kB of archives.
 After this operation, 143 kB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   libzvbi-common
 The following NEW packages will be installed:
   libzvbi-common libzvbi0
-0 upgraded, 2 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 22 not upgraded.
 Need to get 0 B/328 kB of archives.
 After this operation, 869 kB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
-  libaacplus2 libass5 libasyncns0 libavc1394-0 libavcodec56 libavdevice56
-  libavfilter5 libavformat56 libavresample2 libavutil54 libbluray1 libbs2b0
-  libcaca0 libcdio-cdda1 libcdio-paranoia1 libcdio13 libcrystalhd3
-  libdc1394-22 libdirectfb-1.2-9 libdvdnav4 libdvdread4 libenca0 libfaac0
-  libfdk-aac1 libflac8 libgsm1 libguess1 libiec61883-0 libjack-jackd2-0
-  libldb1 liblircclient0 liblua5.2-0 libmowgli-2-0 libmp3lame0 libmpg123-0
-  libntdb1 libopenal-data libopenal1 libopencore-amrnb0 libopencore-amrwb0
-  libopenjpeg5 libopus0 liborc-0.4-0 libpostproc53 libpulse0 libpython-stdlib
-  libpython2.7 libpython2.7-minimal libpython2.7-stdlib libraw1394-11
-  libschroedinger-1.0-0 libsdl1.2debian libsmbclient libsndfile1 libspeex1
-  libswresample1 libswscale3 libtalloc2 libtevent0 libtheora0 libutvideo15
-  libv4l-0 libv4lconvert0 libva-glx1 libva-x11-1 libva1 libvdpau1
-  libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0 libvorbisenc2 libvpx1
-  libwayland-egl1-mesa libwbclient0 libwrap0 libx264-146 libx265-51 libxss1
-  libxvidcore4 libzvbi-common libzvbi0 mime-support python python-minimal
-  python-talloc python2.7 python2.7-minimal samba-libs
+  libaacplus2 libass5 libavc1394-0 libavcodec56 libavdevice56 libavfilter5
+  libavformat56 libavresample2 libavutil54 libbluray1 libbs2b0 libcaca0
+  libcdio-cdda1 libcdio-paranoia1 libcdio13 libcrystalhd3 libdc1394-22
+  libdirectfb-1.2-9 libdvdnav4 libdvdread4 libenca0 libfaac0 libfdk-aac1
+  libgsm1 libguess1 libiec61883-0 libjack-jackd2-0 libldb1 liblircclient0
+  liblua5.2-0 libmowgli-2-0 libmp3lame0 libmpg123-0 libntdb1 libopenal-data
+  libopenal1 libopencore-amrnb0 libopencore-amrwb0 libopus0 liborc-0.4-0
+  libpostproc53 libpython-stdlib libpython2.7 libpython2.7-minimal
+  libpython2.7-stdlib libraw1394-11 libschroedinger-1.0-0 libsdl1.2debian
+  libsmbclient libspeex1 libswresample1 libswscale3 libtalloc2 libtevent0
+  libtheora0 libutvideo15 libv4l-0 libv4lconvert0 libva-glx1 libva-x11-1
+  libva1 libvdpau1 libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0
+  libwayland-egl1-mesa libwbclient0 libx264-146 libx265-51 libxss1
+  libxvidcore4 libzvbi-common libzvbi0 python python-minimal python-talloc
+  python2.7 python2.7-minimal samba-libs
 Suggested packages:
   libbluray-bdj firmware-crystalhd libdvdcss2 jackd2 lirc libportaudio2
-  opus-tools pulseaudio libraw1394-doc speex nvidia-vdpau-driver vdpau-driver
-  youtube-dl python-doc python-tk python2.7-doc binfmt-support
+  opus-tools libraw1394-doc speex nvidia-vdpau-driver vdpau-driver youtube-dl
+  python-doc python-tk python2.7-doc binfmt-support
 Recommended packages:
-  libaacs0 va-driver-all va-driver libegl1-mesa-drivers tcpd file
+  libaacs0 va-driver-all va-driver libegl1-mesa-drivers
 The following NEW packages will be installed:
-  libaacplus2 libass5 libasyncns0 libavc1394-0 libavcodec56 libavdevice56
-  libavfilter5 libavformat56 libavresample2 libavutil54 libbluray1 libbs2b0
-  libcaca0 libcdio-cdda1 libcdio-paranoia1 libcdio13 libcrystalhd3
-  libdc1394-22 libdirectfb-1.2-9 libdvdnav4 libdvdread4 libenca0 libfaac0
-  libfdk-aac1 libflac8 libgsm1 libguess1 libiec61883-0 libjack-jackd2-0
-  libldb1 liblircclient0 liblua5.2-0 libmowgli-2-0 libmp3lame0 libmpg123-0
-  libntdb1 libopenal-data libopenal1 libopencore-amrnb0 libopencore-amrwb0
-  libopenjpeg5 libopus0 liborc-0.4-0 libpostproc53 libpulse0 libpython-stdlib
-  libpython2.7 libpython2.7-minimal libpython2.7-stdlib libraw1394-11
-  libschroedinger-1.0-0 libsdl1.2debian libsmbclient libsndfile1 libspeex1
-  libswresample1 libswscale3 libtalloc2 libtevent0 libtheora0 libutvideo15
-  libv4l-0 libv4lconvert0 libva-glx1 libva-x11-1 libva1 libvdpau1
-  libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0 libvorbisenc2 libvpx1
-  libwayland-egl1-mesa libwbclient0 libwrap0 libx264-146 libx265-51 libxss1
-  libxvidcore4 libzvbi-common libzvbi0 mime-support mpv python python-minimal
-  python-talloc python2.7 python2.7-minimal samba-libs
-0 upgraded, 89 newly installed, 0 to remove and 21 not upgraded.
-Need to get 1,647 kB/26.0 MB of archives.
-After this operation, 86.7 MB of additional disk space will be used.
+  libaacplus2 libass5 libavc1394-0 libavcodec56 libavdevice56 libavfilter5
+  libavformat56 libavresample2 libavutil54 libbluray1 libbs2b0 libcaca0
+  libcdio-cdda1 libcdio-paranoia1 libcdio13 libcrystalhd3 libdc1394-22
+  libdirectfb-1.2-9 libdvdnav4 libdvdread4 libenca0 libfaac0 libfdk-aac1
+  libgsm1 libguess1 libiec61883-0 libjack-jackd2-0 libldb1 liblircclient0
+  liblua5.2-0 libmowgli-2-0 libmp3lame0 libmpg123-0 libntdb1 libopenal-data
+  libopenal1 libopencore-amrnb0 libopencore-amrwb0 libopus0 liborc-0.4-0
+  libpostproc53 libpython-stdlib libpython2.7 libpython2.7-minimal
+  libpython2.7-stdlib libraw1394-11 libschroedinger-1.0-0 libsdl1.2debian
+  libsmbclient libspeex1 libswresample1 libswscale3 libtalloc2 libtevent0
+  libtheora0 libutvideo15 libv4l-0 libv4lconvert0 libva-glx1 libva-x11-1
+  libva1 libvdpau1 libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0
+  libwayland-egl1-mesa libwbclient0 libx264-146 libx265-51 libxss1
+  libxvidcore4 libzvbi-common libzvbi0 mpv python python-minimal python-talloc
+  python2.7 python2.7-minimal samba-libs
+0 upgraded, 80 newly installed, 0 to remove and 22 not upgraded.
+Need to get 1,647 kB/24.6 MB of archives.
+After this operation, 81.7 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libdvdread4 amd64 5.0.0-1 [77.3 kB]
 Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libdvdnav4 amd64 5.0.1-1 [43.5 kB]
 Get:3 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libmowgli-2-0 amd64 2.0.0-dmo1+deb8u1 [54.0 kB]
@@ -393,13 +330,10 @@ Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main libxss1 amd64 1:1.2.
 Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main liblircclient0 amd64 0.9.0~pre1-1.2 [34.4 kB]
 Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libbs2b0 amd64 3.1.0+dfsg-2.1 [11.7 kB]
 Get:18 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main mpv amd64 1:0.8.3-dmo1 [720 kB]
-Extracting templates from packages: 33%Extracting templates from packages: 67%Extracting templates from packages: 100%
-Fetched 1,647 kB in 0s (13.7 MB/s)
-Selecting previously unselected package libwrap0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33889 files and directories currently installed.)
-Preparing to unpack .../libwrap0_7.6.q-25_amd64.deb ...
-Unpacking libwrap0:amd64 (7.6.q-25) ...
+Extracting templates from packages: 37%Extracting templates from packages: 75%Extracting templates from packages: 100%
+Fetched 1,647 kB in 0s (10.2 MB/s)
 Selecting previously unselected package libpython2.7-minimal:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51507 files and directories currently installed.)
 Preparing to unpack .../libpython2.7-minimal_2.7.9-2+deb8u1_amd64.deb ...
 Unpacking libpython2.7-minimal:amd64 (2.7.9-2+deb8u1) ...
 Selecting previously unselected package python2.7-minimal.
@@ -408,9 +342,6 @@ Unpacking python2.7-minimal (2.7.9-2+deb8u1) ...
 Selecting previously unselected package python-minimal.
 Preparing to unpack .../python-minimal_2.7.9-1_amd64.deb ...
 Unpacking python-minimal (2.7.9-1) ...
-Selecting previously unselected package mime-support.
-Preparing to unpack .../mime-support_3.58_all.deb ...
-Unpacking mime-support (3.58) ...
 Selecting previously unselected package libpython2.7-stdlib:amd64.
 Preparing to unpack .../libpython2.7-stdlib_2.7.9-2+deb8u1_amd64.deb ...
 Unpacking libpython2.7-stdlib:amd64 (2.7.9-2+deb8u1) ...
@@ -422,18 +353,16 @@ Preparing to unpack .../libpython-stdlib_2.7.9-1_amd64.deb ...
 Unpacking libpython-stdlib:amd64 (2.7.9-1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for desktop-file-utils (0.22-1) ...
+Processing triggers for mime-support (3.58) ...
 Processing triggers for menu (2.1.47) ...
 Setting up libpython2.7-minimal:amd64 (2.7.9-2+deb8u1) ...
 Setting up python2.7-minimal (2.7.9-2+deb8u1) ...
 Linking and byte-compiling packages for runtime python2.7...
 Setting up python-minimal (2.7.9-1) ...
 Selecting previously unselected package python.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 34673 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52255 files and directories currently installed.)
 Preparing to unpack .../python_2.7.9-1_amd64.deb ...
 Unpacking python (2.7.9-1) ...
-Selecting previously unselected package libasyncns0:amd64.
-Preparing to unpack .../libasyncns0_0.8-5_amd64.deb ...
-Unpacking libasyncns0:amd64 (0.8-5) ...
 Selecting previously unselected package libaacplus2:amd64.
 Preparing to unpack .../libaacplus2_2.0.2-dmo2_amd64.deb ...
 Unpacking libaacplus2:amd64 (2.0.2-dmo2) ...
@@ -461,9 +390,6 @@ Unpacking libopencore-amrnb0:amd64 (0.1.3-2.1) ...
 Selecting previously unselected package libopencore-amrwb0:amd64.
 Preparing to unpack .../libopencore-amrwb0_0.1.3-2.1_amd64.deb ...
 Unpacking libopencore-amrwb0:amd64 (0.1.3-2.1) ...
-Selecting previously unselected package libopenjpeg5:amd64.
-Preparing to unpack .../libopenjpeg5_1%3a1.5.2-3_amd64.deb ...
-Unpacking libopenjpeg5:amd64 (1:1.5.2-3) ...
 Selecting previously unselected package libopus0:amd64.
 Preparing to unpack .../libopus0_1.1-2_amd64.deb ...
 Unpacking libopus0:amd64 (1.1-2) ...
@@ -494,12 +420,6 @@ Unpacking libvo-aacenc0:amd64 (0.1.3-1) ...
 Selecting previously unselected package libvo-amrwbenc0:amd64.
 Preparing to unpack .../libvo-amrwbenc0_0.1.3-1_amd64.deb ...
 Unpacking libvo-amrwbenc0:amd64 (0.1.3-1) ...
-Selecting previously unselected package libvorbisenc2:amd64.
-Preparing to unpack .../libvorbisenc2_1.3.4-2_amd64.deb ...
-Unpacking libvorbisenc2:amd64 (1.3.4-2) ...
-Selecting previously unselected package libvpx1:amd64.
-Preparing to unpack .../libvpx1_1.3.0-3_amd64.deb ...
-Unpacking libvpx1:amd64 (1.3.0-3) ...
 Selecting previously unselected package libx264-146:amd64.
 Preparing to unpack .../libx264-146_3%3a0.146.2538+git121396c-dmo2_amd64.deb ...
 Unpacking libx264-146:amd64 (3:0.146.2538+git121396c-dmo2) ...
@@ -569,15 +489,6 @@ Unpacking libiec61883-0:amd64 (1.2.0-0.2) ...
 Selecting previously unselected package libjack-jackd2-0:amd64.
 Preparing to unpack .../libjack-jackd2-0_1.9.10+20140719git3eb0ae6a~dfsg-2_amd64.deb ...
 Unpacking libjack-jackd2-0:amd64 (1.9.10+20140719git3eb0ae6a~dfsg-2) ...
-Selecting previously unselected package libflac8:amd64.
-Preparing to unpack .../libflac8_1.3.0-3_amd64.deb ...
-Unpacking libflac8:amd64 (1.3.0-3) ...
-Selecting previously unselected package libsndfile1:amd64.
-Preparing to unpack .../libsndfile1_1.0.25-9.1+deb8u1_amd64.deb ...
-Unpacking libsndfile1:amd64 (1.0.25-9.1+deb8u1) ...
-Selecting previously unselected package libpulse0:amd64.
-Preparing to unpack .../libpulse0_7.1-2~bpo8+1_amd64.deb ...
-Unpacking libpulse0:amd64 (7.1-2~bpo8+1) ...
 Selecting previously unselected package libcaca0:amd64.
 Preparing to unpack .../libcaca0_0.99.beta19-2_amd64.deb ...
 Unpacking libcaca0:amd64 (0.99.beta19-2) ...
@@ -674,13 +585,11 @@ Unpacking mpv (1:0.8.3-dmo1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for hicolor-icon-theme (0.13-1) ...
 Processing triggers for desktop-file-utils (0.22-1) ...
-Setting up libwrap0:amd64 (7.6.q-25) ...
-Setting up mime-support (3.58) ...
+Processing triggers for mime-support (3.58) ...
 Setting up libpython2.7-stdlib:amd64 (2.7.9-2+deb8u1) ...
 Setting up python2.7 (2.7.9-2+deb8u1) ...
 Setting up libpython-stdlib:amd64 (2.7.9-1) ...
 Setting up python (2.7.9-1) ...
-Setting up libasyncns0:amd64 (0.8-5) ...
 Setting up libaacplus2:amd64 (2.0.2-dmo2) ...
 Setting up libavutil54:amd64 (10:2.6.9-dmo1) ...
 Setting up libcrystalhd3:amd64 (1:0.0~git20110715.fdd2f19-11) ...
@@ -690,7 +599,6 @@ Setting up libgsm1:amd64 (1.0.13-4) ...
 Setting up libmp3lame0:amd64 (1:3.99.5-dmo4) ...
 Setting up libopencore-amrnb0:amd64 (0.1.3-2.1) ...
 Setting up libopencore-amrwb0:amd64 (0.1.3-2.1) ...
-Setting up libopenjpeg5:amd64 (1:1.5.2-3) ...
 Setting up libopus0:amd64 (1.1-2) ...
 Setting up liborc-0.4-0:amd64 (1:0.4.22-1) ...
 Setting up libschroedinger-1.0-0:amd64 (1.0.11-2.1) ...
@@ -701,8 +609,6 @@ Setting up libutvideo15:amd64 (15.1.0-dmo2) ...
 Setting up libva1:amd64 (1.4.1-1) ...
 Setting up libvo-aacenc0:amd64 (0.1.3-1) ...
 Setting up libvo-amrwbenc0:amd64 (0.1.3-1) ...
-Setting up libvorbisenc2:amd64 (1.3.4-2) ...
-Setting up libvpx1:amd64 (1.3.0-3) ...
 Setting up libx264-146:amd64 (3:0.146.2538+git121396c-dmo2) ...
 Setting up libx265-51:amd64 (1.6-dmo1) ...
 Setting up libxvidcore4:amd64 (3:1.3.3-dmo1) ...
@@ -726,9 +632,6 @@ Setting up libcdio-paranoia1 (0.83-4.2) ...
 Setting up libdc1394-22:amd64 (2.2.3-1) ...
 Setting up libiec61883-0:amd64 (1.2.0-0.2) ...
 Setting up libjack-jackd2-0:amd64 (1.9.10+20140719git3eb0ae6a~dfsg-2) ...
-Setting up libflac8:amd64 (1.3.0-3) ...
-Setting up libsndfile1:amd64 (1.0.25-9.1+deb8u1) ...
-Setting up libpulse0:amd64 (7.1-2~bpo8+1) ...
 Setting up libcaca0:amd64 (0.99.beta19-2) ...
 Setting up libdirectfb-1.2-9:amd64 (1.2.10.0-5.1) ...
 Setting up libsdl1.2debian:amd64 (1.2.15-10+b1) ...
@@ -760,9 +663,9 @@ Setting up libxss1:amd64 (1:1.2.2-1) ...
 Setting up liblircclient0 (0.9.0~pre1-1.2) ...
 Setting up libbs2b0 (3.1.0+dfsg-2.1) ...
 Setting up mpv (1:0.8.3-dmo1) ...
-Processing triggers for libc-bin (2.19-18+deb8u6) ...
 Processing triggers for menu (2.1.47) ...
+Processing triggers for libc-bin (2.19-18+deb8u6) ...
 CLDS: * Install Media Player: mpv 0.8.3 .
 CLDS: * Add multiple aliases for MPV.
 CLDS: * Add useful mpv keybindings settings.
-CLDS: * Disk size = 2754824K. Space Used = 121540K.
+CLDS: * Disk size = 3474284K. Space Used = 115008K.

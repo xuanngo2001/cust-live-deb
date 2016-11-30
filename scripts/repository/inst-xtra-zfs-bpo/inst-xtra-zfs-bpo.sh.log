@@ -23,6 +23,7 @@ Hit http://localhost jessie/non-free amd64 Packages
 Hit http://localhost jessie-backports/contrib amd64 Packages
 Hit http://localhost jessie-backports/main amd64 Packages
 Hit http://localhost jessie-backports/non-free amd64 Packages
+Hit http://localhost jessie/contrib amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
@@ -35,34 +36,33 @@ Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
-Hit http://localhost jessie/contrib amd64 Packages
 Hit http://localhost jessie/non-free amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-backports/contrib Translation-en_US
+Hit http://localhost jessie-updates/main amd64 Packages
+Hit http://localhost jessie-updates/non-free amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-backports/contrib Translation-en
 Ign http://localhost jessie-backports/contrib Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/contrib amd64 Packages
 Hit http://localhost jessie-updates/main amd64 Packages
+Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie-backports/main Translation-en_US
 Ign http://localhost jessie-backports/main Translation-en
 Ign http://localhost jessie-backports/main Translation-en_US.UTF-8
 Ign http://localhost jessie-backports/non-free Translation-en_US
-Hit http://localhost jessie-updates/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
+Hit http://localhost jessie/contrib amd64 Packages
+Hit http://localhost jessie/main amd64 Packages
 Ign http://localhost jessie-backports/non-free Translation-en
 Ign http://localhost jessie-backports/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
-Hit http://localhost jessie-updates/main amd64 Packages
-Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
-Hit http://localhost jessie/contrib amd64 Packages
 Ign http://localhost jessie-updates/contrib Translation-en_US
 Ign http://localhost jessie-updates/contrib Translation-en
 Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
-Hit http://localhost jessie/main amd64 Packages
 Ign http://localhost jessie-updates/main Translation-en_US
 Ign http://localhost jessie-updates/main Translation-en
 Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
@@ -88,9 +88,6 @@ Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 Suggested packages:
   lsb
 The following NEW packages will be installed:
@@ -100,9 +97,9 @@ Need to get 86.9 kB/92.6 kB of archives.
 After this operation, 183 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main file amd64 1:5.22+15-2+deb8u2 [60.4 kB]
 Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main lsb-release all 4.1+Debian13+nmu1 [26.5 kB]
-Fetched 86.9 kB in 0s (5,940 kB/s)
+Fetched 86.9 kB in 0s (7,471 kB/s)
 Selecting previously unselected package file.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71112 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66490 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.22+15-2+deb8u2_amd64.deb ...
 Unpacking file (1:5.22+15-2+deb8u2) ...
 Selecting previously unselected package linux-headers-amd64.
@@ -124,9 +121,6 @@ info: Loading answer for 'zfs-dkms/stop-build-for-unknown-kernel'
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 Recommended packages:
   spl zfsutils-linux zfs-zed
 The following NEW packages will be installed:
@@ -137,9 +131,9 @@ After this operation, 10.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main spl-dkms all 0.6.5.8-2~bpo8+2 [374 kB]
 Get:2 http://localhost/aptly-repo/jessie-backports-contrib/ jessie-backports/contrib zfs-dkms all 0.6.5.8-1~bpo8+1 [1,077 kB]
 Preconfiguring packages ...
-Fetched 1,451 kB in 0s (25.5 MB/s)
+Fetched 1,451 kB in 0s (22.2 MB/s)
 Selecting previously unselected package spl-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71135 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66513 files and directories currently installed.)
 Preparing to unpack .../spl-dkms_0.6.5.8-2~bpo8+2_all.deb ...
 Unpacking spl-dkms (0.6.5.8-2~bpo8+2) ...
 Setting up spl-dkms (0.6.5.8-2~bpo8+2) ...
@@ -162,11 +156,11 @@ Running module version sanity check.
  - Installation
    - Installing to /lib/modules/4.7.0-0.bpo.1-amd64/updates/dkms/
 
-depmod......
+depmod...
 
 DKMS: install completed.
 Selecting previously unselected package zfs-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71422 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66800 files and directories currently installed.)
 Preparing to unpack .../zfs-dkms_0.6.5.8-1~bpo8+1_all.deb ...
 Unpacking zfs-dkms (0.6.5.8-1~bpo8+1) ...
 Setting up zfs-dkms (0.6.5.8-1~bpo8+1) ...
@@ -223,9 +217,6 @@ DKMS: install completed.
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  firmware-amd-graphics
-Use 'apt-get autoremove' to remove it.
 The following extra packages will be installed:
   libnvpair1linux libuutil1linux libzfs2linux libzpool2linux zfsutils-linux
 Suggested packages:
@@ -244,9 +235,9 @@ Get:3 http://localhost/aptly-repo/jessie-backports-contrib/ jessie-backports/con
 Get:4 http://localhost/aptly-repo/jessie-backports-contrib/ jessie-backports/contrib libzfs2linux amd64 0.6.5.8-1~bpo8+1 [127 kB]
 Get:5 http://localhost/aptly-repo/jessie-backports-contrib/ jessie-backports/contrib zfsutils-linux amd64 0.6.5.8-1~bpo8+1 [338 kB]
 Get:6 http://localhost/aptly-repo/jessie-backports-contrib/ jessie-backports/contrib zfs-initramfs all 0.6.5.8-1~bpo8+1 [22.7 kB]
-Fetched 984 kB in 0s (14.6 MB/s)
+Fetched 984 kB in 0s (15.4 MB/s)
 Selecting previously unselected package libuutil1linux.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71818 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67196 files and directories currently installed.)
 Preparing to unpack .../libuutil1linux_0.6.5.8-1~bpo8+1_amd64.deb ...
 Unpacking libuutil1linux (0.6.5.8-1~bpo8+1) ...
 Selecting previously unselected package libnvpair1linux.
@@ -281,4 +272,4 @@ live-boot: core filesystems devices utils udev wget blockdev dns.
 CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
 CLDS: * Install zfs-dkms: version: 0.6.5.8-1~bpo8+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Install zfs-initramfs to be able to boot from ZFS.
-CLDS: * Disk size = 5017016K. Space Used = 28088K.
+CLDS: * Disk size = 4596476K. Space Used = 28900K.

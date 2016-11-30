@@ -1,3 +1,3 @@
 * >>>>>>>>> Running main.sh ...
   * Running on SHELL=/bin/bash VER=4.3.30(1)-release
-  * Disk size = 1504008K. Space Used = 1504008K.
+  * Disk size = 1504044K. Space Used = 1504044K.

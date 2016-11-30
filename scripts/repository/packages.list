@@ -64,7 +64,6 @@ firmware-linux-nonfree
 firmware-qlogic
 firmware-realtek
 firmware-zd1211
-firmware-ralink
 # ./inst-min-con-firmware-net-b43-installer/inst-min-con-firmware-net-b43-installer.sh
 b43-fwcutter
 # ./inst-min-con-live-build-tools/inst-min-con-live-build-tools.sh
@@ -215,7 +214,7 @@ default-jre
 # ./inst-std-system-alsamixer/inst-std-system-alsamixer.sh
 
 # ./inst-std-system-conky/inst-std-system-conky.sh
-conky-std=1.9.0-6
+conky
 # ./inst-std-system-gnome-disk-utility/inst-std-system-gnome-disk-utility.sh
 gnome-disk-utility
 # ./inst-std-system-keyboard/inst-std-system-keyboard.sh
@@ -375,13 +374,13 @@ virtualbox-guest-x11
 wifite
 # ./inst-xtra-xmpv/inst-xtra-xmpv.sh
 
-# ./inst-xtra-zfs/inst-xtra-zfs.sh
+# ./inst-xtra-zfs-bpo/inst-xtra-zfs-bpo.sh
 file
-linux-headers-amd64
-build-essential
 lsb-release
-libc6-dev
-debian-zfs
+linux-headers-amd64
+spl-dkms
+zfs-dkms
+zfs-initramfs
 # ./inst-zclean-01-apt-get-00-clean-up/inst-zclean-01-apt-get-00-clean-up.sh
 
 # ./inst-zclean-01-apt-get-01-source-list/inst-zclean-01-apt-get-01-source-list.sh
