@@ -13,5 +13,6 @@ if [ -z "${VERSION}"]; then
 else if [ "${VERSION}" = "no-version" ]; then
   dpkg-query -W -f='${binary:Package}\n'  
 else
-  echo "$0 [,no-version]"
+  echo "Error: Invalid argument!"
+  echo "   e.g.: $0 [,no-version]"
 fi
