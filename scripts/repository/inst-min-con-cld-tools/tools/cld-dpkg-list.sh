@@ -5,7 +5,6 @@ set -e
 
 VERSION="$1"
 
-
 # Error handling.
 
 # Main
