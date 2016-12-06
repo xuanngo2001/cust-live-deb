@@ -8,11 +8,11 @@ VERSION="$1"
 # Error handling.
 
 # Main
-if [ -z "${VERSION}"]; then
+if [ -z "${VERSION}" ]; then
   dpkg-query -W -f='${binary:Package} (=${Version})\n'
 elif [ "${VERSION}" = "no-version" ]; then
   dpkg-query -W -f='${binary:Package}\n'  
 else
-  echo "Error: Invalid argument!"
+  echo "Error: ${VERSION}: Invalid argument!"
   echo "   e.g.: $0 [,no-version]"
 fi
