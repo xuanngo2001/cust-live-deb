@@ -5,9 +5,9 @@ set -e
 
 VERSION="$1"
 
-# Error handling.
+# Convert input to lowercase: Make option value case insensitive.
+VERSION=$(echo "${VERSION}" | tr '[[:upper:]]' '[[:lower:]]')
 
-# Main
 if [ -z "${VERSION}" ]; then
   dpkg-query -W -f='${binary:Package} (=${Version})\n'
 elif [ "${VERSION}" = "no-version" ]; then
