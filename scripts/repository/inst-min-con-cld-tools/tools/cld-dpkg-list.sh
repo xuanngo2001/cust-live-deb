@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # Description: List Debian packages with its version number.
-#     Return values can be feed to packages.list
+# Output: Return values can be feed to packages.list
 
 VERSION="$1"
 
