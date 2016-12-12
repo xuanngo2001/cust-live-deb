@@ -1,0 +1,96 @@
+CLDS:>>>>>>>>> Running inst-std-internet-xtra-google-chrome.sh ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libdbusmenu-glib4 libdbusmenu-gtk4 libindicator7
+Recommended packages:
+  indicator-application
+The following NEW packages will be installed:
+  libappindicator1 libdbusmenu-glib4 libdbusmenu-gtk4 libindicator7
+0 upgraded, 4 newly installed, 0 to remove and 22 not upgraded.
+Need to get 299 kB of archives.
+After this operation, 638 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libdbusmenu-glib4 amd64 12.10.2-1 [104 kB]
+Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libdbusmenu-gtk4 amd64 12.10.2-1 [90.8 kB]
+Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main libindicator7 amd64 0.5.0-2 [52.2 kB]
+Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libappindicator1 amd64 0.4.92-3.1 [52.5 kB]
+Fetched 299 kB in 0s (7,355 kB/s)
+Selecting previously unselected package libdbusmenu-glib4:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51507 files and directories currently installed.)
+Preparing to unpack .../libdbusmenu-glib4_12.10.2-1_amd64.deb ...
+Unpacking libdbusmenu-glib4:amd64 (12.10.2-1) ...
+Selecting previously unselected package libdbusmenu-gtk4:amd64.
+Preparing to unpack .../libdbusmenu-gtk4_12.10.2-1_amd64.deb ...
+Unpacking libdbusmenu-gtk4:amd64 (12.10.2-1) ...
+Selecting previously unselected package libindicator7.
+Preparing to unpack .../libindicator7_0.5.0-2_amd64.deb ...
+Unpacking libindicator7 (0.5.0-2) ...
+Selecting previously unselected package libappindicator1.
+Preparing to unpack .../libappindicator1_0.4.92-3.1_amd64.deb ...
+Unpacking libappindicator1 (0.4.92-3.1) ...
+Setting up libdbusmenu-glib4:amd64 (12.10.2-1) ...
+Setting up libdbusmenu-gtk4:amd64 (12.10.2-1) ...
+Setting up libindicator7 (0.5.0-2) ...
+Setting up libappindicator1 (0.4.92-3.1) ...
+Processing triggers for libc-bin (2.19-18+deb8u6) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libdbusmenu-glib4 is already the newest version.
+libdbusmenu-glib4 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 22 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libdbusmenu-gtk4 is already the newest version.
+libdbusmenu-gtk4 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 22 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libindicator7 is already the newest version.
+libindicator7 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 22 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  gvfs-bin
+Recommended packages:
+  libfile-mimeinfo-perl libnet-dbus-perl libx11-protocol-perl
+  x11-xserver-utils
+The following NEW packages will be installed:
+  xdg-utils
+0 upgraded, 1 newly installed, 0 to remove and 22 not upgraded.
+Need to get 65.0 kB of archives.
+After this operation, 308 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main xdg-utils all 1.1.0~rc1+git20111210-7.4 [65.0 kB]
+Fetched 65.0 kB in 0s (5,289 kB/s)
+Selecting previously unselected package xdg-utils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51540 files and directories currently installed.)
+Preparing to unpack .../xdg-utils_1.1.0~rc1+git20111210-7.4_all.deb ...
+Unpacking xdg-utils (1.1.0~rc1+git20111210-7.4) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up xdg-utils (1.1.0~rc1+git20111210-7.4) ...
+Selecting previously unselected package google-chrome-stable.
+(Reading database ... 51564 files and directories currently installed.)
+Preparing to unpack google-chrome-stable_current_amd64.deb ...
+Unpacking google-chrome-stable (55.0.2883.75-1) ...
+dpkg: dependency problems prevent configuration of google-chrome-stable:
+ google-chrome-stable depends on gconf-service; however:
+  Package gconf-service is not installed.
+ google-chrome-stable depends on libgconf-2-4 (>= 2.31.1); however:
+  Package libgconf-2-4 is not installed.
+ google-chrome-stable depends on libxss1; however:
+  Package libxss1 is not installed.
+
+dpkg: error processing package google-chrome-stable (--install):
+ dependency problems - leaving unconfigured
+Processing triggers for man-db (2.7.0.2-5) ...
+Processing triggers for menu (2.1.47) ...
+Processing triggers for desktop-file-utils (0.22-1) ...
+Processing triggers for mime-support (3.58) ...
+Errors were encountered while processing:
+ google-chrome-stable
+CLDS: * Disk size = 3581476K. Space Used = 177104K.
