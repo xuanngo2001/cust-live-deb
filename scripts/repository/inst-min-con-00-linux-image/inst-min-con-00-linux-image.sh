@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Always use the latest version of the repository.
 apt-get update
-#apt-get -y --force-yes dist-upgrade 
+#apt-get -y --force-yes dist-upgrade # Will cause boot issues.
 
 # Install basic packages.
 apt-get -y --force-yes install dialog dbus
