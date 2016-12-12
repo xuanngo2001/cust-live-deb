@@ -31,7 +31,11 @@ apt-get -y --force-yes install firmware-qlogic
 apt-get -y --force-yes install firmware-realtek
 apt-get -y --force-yes install firmware-zd1211
 
-# Install firmware-ralink will remove firmware-linux, firmware-linux-nonfree, firmware-misc-nonfree.
+# Install firmware-ralink will remove the following packages:
+#   firmware-linux
+#   firmware-linux-nonfree
+#   firmware-misc-nonfree
+#   firmware-amd-graphics
 #apt-get -y --force-yes install firmware-ralink
 
 # Log
