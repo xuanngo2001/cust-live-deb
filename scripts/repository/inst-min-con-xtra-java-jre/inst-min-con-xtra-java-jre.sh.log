@@ -60,7 +60,7 @@ Get:20 http://localhost/aptly-repo/jessie-main/ jessie/main shared-mime-info amd
 Get:21 http://localhost/aptly-repo/jessie-main/ jessie/main libgtk2.0-0 amd64 2.24.25-3+deb8u1 [2,306 kB]
 Get:22 http://localhost/aptly-repo/jessie-main/ jessie/main libatk-wrapper-java all 0.30.5-1 [30.3 kB]
 Get:23 http://localhost/aptly-repo/jessie-main/ jessie/main libatk-wrapper-java-jni amd64 0.30.5-1 [24.8 kB]
-Get:24 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libdrm2 amd64 2.4.71-1~bpo8+1 [36.1 kB]
+Get:24 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libdrm2 amd64 2.4.73-1~bpo8+1 [36.1 kB]
 Get:25 http://localhost/aptly-repo/jessie-main/ jessie/main libogg0 amd64 1.3.2-1 [19.9 kB]
 Get:26 http://localhost/aptly-repo/jessie-main/ jessie/main libflac8 amd64 1.3.0-3 [89.3 kB]
 Get:27 http://localhost/aptly-repo/jessie-main/ jessie/main libgif4 amd64 4.1.6-11+deb8u1 [40.0 kB]
@@ -93,7 +93,7 @@ Get:53 http://localhost/aptly-repo/jessie-main/ jessie/main openjdk-7-jre amd64 
 Get:54 http://localhost/aptly-repo/jessie-main/ jessie/main default-jre amd64 2:1.7-52 [968 B]
 Extracting templates from packages: 55%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 51.5 MB in 1s (26.2 MB/s)
+Fetched 51.5 MB in 2s (21.9 MB/s)
 Selecting previously unselected package libsqlite3-0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33637 files and directories currently installed.)
 Preparing to unpack .../libsqlite3-0_3.8.7.1-1+deb8u2_amd64.deb ...
@@ -165,8 +165,8 @@ Selecting previously unselected package libatk-wrapper-java-jni:amd64.
 Preparing to unpack .../libatk-wrapper-java-jni_0.30.5-1_amd64.deb ...
 Unpacking libatk-wrapper-java-jni:amd64 (0.30.5-1) ...
 Selecting previously unselected package libdrm2:amd64.
-Preparing to unpack .../libdrm2_2.4.71-1~bpo8+1_amd64.deb ...
-Unpacking libdrm2:amd64 (2.4.71-1~bpo8+1) ...
+Preparing to unpack .../libdrm2_2.4.73-1~bpo8+1_amd64.deb ...
+Unpacking libdrm2:amd64 (2.4.73-1~bpo8+1) ...
 Selecting previously unselected package libogg0:amd64.
 Preparing to unpack .../libogg0_1.3.2-1_amd64.deb ...
 Unpacking libogg0:amd64 (1.3.2-1) ...
@@ -282,7 +282,7 @@ Setting up shared-mime-info (1.3-1) ...
 Setting up libgtk2.0-0:amd64 (2.24.25-3+deb8u1) ...
 Setting up libatk-wrapper-java (0.30.5-1) ...
 Setting up libatk-wrapper-java-jni:amd64 (0.30.5-1) ...
-Setting up libdrm2:amd64 (2.4.71-1~bpo8+1) ...
+Setting up libdrm2:amd64 (2.4.73-1~bpo8+1) ...
 Setting up libogg0:amd64 (1.3.2-1) ...
 Setting up libflac8:amd64 (1.3.0-3) ...
 Setting up libgif4:amd64 (4.1.6-11+deb8u1) ...
@@ -506,4 +506,4 @@ Adding debian:spi-cacert-2008.pem
 done.
 done.
 CLDS: * Install JAVA JRE: default-jre.
-CLDS: * Disk size = 2491104K. Space Used = 162532K.
+CLDS: * Disk size = 2491168K. Space Used = 162528K.
