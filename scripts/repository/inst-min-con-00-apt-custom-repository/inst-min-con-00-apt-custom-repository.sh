@@ -28,8 +28,8 @@ GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/jessie-security-non-free
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/jessie-updates-contrib jessie-updates contrib"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/jessie-updates-main jessie-updates main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/jessie-updates-non-free jessie-updates non-free"
-GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/virtualbox-contrib jessie contrib"
-GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/zfsonlinux-main jessie main"
+#GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/virtualbox-contrib jessie contrib"
+#GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/zfsonlinux-main jessie main"
 
 
 
