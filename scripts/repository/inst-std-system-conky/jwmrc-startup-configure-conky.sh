@@ -28,20 +28,6 @@ set -e
 	sed  -i "/${CPU_START}/ r ${CPU_CONKY}" /root/.conkyrc
 	
 
-#---- CALENDAR: Add calendar if screen height > 900 px. ----#
-	SCREEN_RESOLUTION=$(xrandr | head -n1 | cut -d, -f2 | cut -d" " -f3-5)
-	HEIGHT=$(echo ${SCREEN_RESOLUTION}|sed 's/^.*x //') 
-
-  if [ "${HEIGHT}" -gt 900 ]; then
-    CALENDAR_CONKY=/root/cld/conkyrc-calendar.txt
-    CALENDAR_START="### CALENDAR-START"
-    CALENDAR_END="### CALENDAR-END"
-    # Clear content between patterns.
-    sed  -i "/${CALENDAR_START}/,/${CALENDAR_END}/{//!d}" /root/.conkyrc
-    # Insert content between patterns.
-    sed  -i "/${CALENDAR_START}/ r ${CALENDAR_CONKY}" /root/.conkyrc
-  fi
-
 #---- NETWORK: Add available network interfaces ----#
   IFACE_START="### IFACE-START"
   IFACE_END="### IFACE-END"
@@ -60,6 +46,25 @@ set -e
     sed  -i "/${IFACE_START}/ r ${IFACE_CONKY}" /root/.conkyrc
     	 
 	done < <( ifconfig -a | grep -v '^ ' | awk NF | cut -d ' ' -f 1 | grep -v 'lo' )
-  
+
+
+#---- CALENDAR: Add calendar if screen height is available(Watch out for multiple network interfaces(81px) or CPUs). ----#
+#----         'wmctrl -lG  to check Conky px heights:  ----#
+#----             No calendar = 523 px                 ----#
+#----             1  calendar = 654 px                 ----#
+#----             2  calendar = 758 px                 ----#
+#----             3  calendar = 875 px                 ----#
+  SCREEN_RESOLUTION=$(xrandr | head -n1 | cut -d, -f2 | cut -d" " -f3-5)
+  HEIGHT=$(echo ${SCREEN_RESOLUTION}|sed 's/^.*x //') 
+
+  if [ "${HEIGHT}" -gt 900 ]; then
+    CALENDAR_CONKY=/root/cld/conkyrc-calendar.txt
+    CALENDAR_START="### CALENDAR-START"
+    CALENDAR_END="### CALENDAR-END"
+    # Clear content between patterns.
+    sed  -i "/${CALENDAR_START}/,/${CALENDAR_END}/{//!d}" /root/.conkyrc
+    # Insert content between patterns.
+    sed  -i "/${CALENDAR_START}/ r ${CALENDAR_CONKY}" /root/.conkyrc
+  fi  
 
 exit 0
