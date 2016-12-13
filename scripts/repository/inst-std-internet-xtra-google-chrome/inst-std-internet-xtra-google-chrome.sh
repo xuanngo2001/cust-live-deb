@@ -7,8 +7,6 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Hope all dependencies are downloaded.
-#apt-get install -d -y --force-yes libwebpdemux1 chromium
 
 # Install dependencies
 apt-get -y --force-yes install libappindicator1
@@ -20,13 +18,6 @@ apt-get -y --force-yes install xdg-utils
 apt-get -y --force-yes install gconf-service
 apt-get -y --force-yes install libgconf-2-4
 apt-get -y --force-yes install libxss1
-
-# Recommended:
-#apt-get -y --force-yes install indicator-application #obsolete.
-#apt-get -y --force-yes install libfile-mimeinfo-perl
-#apt-get -y --force-yes install libnet-dbus-perl
-#apt-get -y --force-yes install libx11-protocol-perl
-#apt-get -y --force-yes install x11-xserver-utils
 
 # Install google-chrome.
 dpkg -i google-chrome-stable_current_amd64.deb
