@@ -57,14 +57,16 @@ set -e
   SCREEN_RESOLUTION=$(xrandr | head -n1 | cut -d, -f2 | cut -d" " -f3-5)
   HEIGHT=$(echo ${SCREEN_RESOLUTION}|sed 's/^.*x //') 
 
+  CALENDAR_CONKY=/root/cld/conkyrc-calendar-current.txt
   if [ "${HEIGHT}" -gt 900 ]; then
-    CALENDAR_CONKY=/root/cld/conkyrc-calendar.txt
-    CALENDAR_START="### CALENDAR-START"
-    CALENDAR_END="### CALENDAR-END"
-    # Clear content between patterns.
-    sed  -i "/${CALENDAR_START}/,/${CALENDAR_END}/{//!d}" /root/.conkyrc
-    # Insert content between patterns.
-    sed  -i "/${CALENDAR_START}/ r ${CALENDAR_CONKY}" /root/.conkyrc
-  fi  
+    CALENDAR_CONKY=/root/cld/conkyrc-calendar-3months.txt
+  fi
+  CALENDAR_START="### CALENDAR-START"
+  CALENDAR_END="### CALENDAR-END"
+  # Clear content between patterns.
+  sed  -i "/${CALENDAR_START}/,/${CALENDAR_END}/{//!d}" /root/.conkyrc
+  # Insert content between patterns.
+  sed  -i "/${CALENDAR_START}/ r ${CALENDAR_CONKY}" /root/.conkyrc
 
+  
 exit 0
