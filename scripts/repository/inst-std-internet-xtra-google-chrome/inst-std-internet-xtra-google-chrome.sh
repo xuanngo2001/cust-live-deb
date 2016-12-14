@@ -41,3 +41,4 @@ sed -i "/Internet\">/ r jwmrc-menus-inet-google-chrome.xml" "${GV_CLD_ROOT_DIR}/
 echo "${GV_LOG} * Install ${GOOGLE_CHROME_VERSION}."
 echo "${GV_LOG} * Create an alias to run google-chrome as root."
 echo "${GV_LOG} * Insert Google Chrome in Internet menu."
+echo "${GV_LOG} * Set default browser: update-alternatives --config x-www-browser."
