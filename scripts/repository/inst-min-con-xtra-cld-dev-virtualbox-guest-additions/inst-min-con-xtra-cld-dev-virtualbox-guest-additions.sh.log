@@ -20,7 +20,7 @@ The following NEW packages will be installed:
   libquadmath0 libtsan0 libubsan0 linux-compiler-gcc-4.9-x86
   linux-headers-4.7.0-0.bpo.1-amd64 linux-headers-4.7.0-0.bpo.1-common
   linux-headers-amd64 linux-kbuild-4.7
-0 upgraded, 22 newly installed, 0 to remove and 22 not upgraded.
+0 upgraded, 22 newly installed, 0 to remove and 26 not upgraded.
 Need to get 24.8 MB of archives.
 After this operation, 103 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libasan1 amd64 4.9.2-10 [195 kB]
@@ -45,7 +45,7 @@ Get:19 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main 
 Get:20 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-kbuild-4.7 amd64 4.7.8-1~bpo8+1 [589 kB]
 Get:21 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-headers-4.7.0-0.bpo.1-amd64 amd64 4.7.8-1~bpo8+1 [502 kB]
 Get:22 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main linux-headers-amd64 amd64 4.7+75~bpo8+1 [5,726 B]
-Fetched 24.8 MB in 0s (28.5 MB/s)
+Fetched 24.8 MB in 0s (29.0 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -69,7 +69,7 @@ The following NEW packages will be installed:
   libc-dev-bin libc6-dev libcilkrts5 libcloog-isl4 libgc1c2 libgcc-4.9-dev
   libgomp1 libisl10 libitm1 liblsan0 libltdl7 libmpc3 libmpfr4 libquadmath0
   libtsan0 libubsan0 libunistring0 linux-libc-dev make-guile patch
-0 upgraded, 29 newly installed, 0 to remove and 22 not upgraded.
+0 upgraded, 29 newly installed, 0 to remove and 26 not upgraded.
 Need to get 6,514 kB/24.5 MB of archives.
 After this operation, 103 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libgc1c2 amd64 1:7.2d-6.4 [132 kB]
@@ -84,7 +84,7 @@ Get:9 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main d
 Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main libc-dev-bin amd64 2.19-18+deb8u6 [238 kB]
 Get:11 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main linux-libc-dev amd64 3.16.36-1+deb8u2 [1,034 kB]
 Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libc6-dev amd64 2.19-18+deb8u6 [2,002 kB]
-Fetched 6,514 kB in 0s (13.5 MB/s)
+Fetched 6,514 kB in 0s (22.8 MB/s)
 Selecting previously unselected package libgc1c2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17280 files and directories currently installed.)
 Preparing to unpack .../libgc1c2_1%3a7.2d-6.4_amd64.deb ...
@@ -213,7 +213,7 @@ The following extra packages will be installed:
 The following NEW packages will be installed:
   linux-compiler-gcc-4.9-x86 linux-headers-4.7.0-0.bpo.1-amd64
   linux-headers-4.7.0-0.bpo.1-common linux-kbuild-4.7
-0 upgraded, 4 newly installed, 0 to remove and 22 not upgraded.
+0 upgraded, 4 newly installed, 0 to remove and 26 not upgraded.
 Need to get 0 B/6,779 kB of archives.
 After this operation, 31.0 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-4.9-x86.
@@ -240,12 +240,12 @@ Suggested packages:
   virtualbox-guest-x11
 The following NEW packages will be installed:
   virtualbox-guest-dkms virtualbox-guest-utils
-0 upgraded, 2 newly installed, 0 to remove and 22 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 26 not upgraded.
 Need to get 1,010 kB of archives.
 After this operation, 6,798 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-backports-contrib/ jessie-backports/contrib virtualbox-guest-utils amd64 5.1.8-dfsg-6~bpo8+2 [418 kB]
 Get:2 http://localhost/aptly-repo/jessie-backports-contrib/ jessie-backports/contrib virtualbox-guest-dkms all 5.1.8-dfsg-6~bpo8+2 [592 kB]
-Fetched 1,010 kB in 0s (23.9 MB/s)
+Fetched 1,010 kB in 0s (19.6 MB/s)
 Selecting previously unselected package virtualbox-guest-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 31949 files and directories currently installed.)
 Preparing to unpack .../virtualbox-guest-utils_5.1.8-dfsg-6~bpo8+2_amd64.deb ...
@@ -258,7 +258,6 @@ Processing triggers for man-db (2.7.0.2-5) ...
 Setting up virtualbox-guest-utils (5.1.8-dfsg-6~bpo8+2) ...
 Setting up virtualbox-guest-dkms (5.1.8-dfsg-6~bpo8+2) ...
 Loading new virtualbox-guest-5.1.8 DKMS files...
-It is likely that 3.16.0-4-amd64 belongs to a chroot's host
 Building for 4.7.0-0.bpo.1-amd64
 Building initial module for 4.7.0-0.bpo.1-amd64
 Done.
@@ -288,8 +287,6 @@ depmod...
 
 DKMS: install completed.
 Processing triggers for systemd (215-17+deb8u5) ...
-libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file '/lib/modules/3.16.0-4-amd64/modules.dep.bin'
-modinfo: ERROR: Module alias vboxguest not found.
 CLDS: * Install virtualbox-guest-utils to access shared folder. No need for x11. Less error prone.
-CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
-CLDS: * Disk size = 2235320K. Space Used = 189372K.
+CLDS: * VirtualBox guest additions installed: version: 5.1.8_Debian r111374.
+CLDS: * Disk size = 2280572K. Space Used = 189368K.

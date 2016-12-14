@@ -12,11 +12,11 @@
   * After this operation, 154 kB of additional disk space will be used.
   * After this operation, 143 kB of additional disk space will be used.
   * After this operation, 869 kB of additional disk space will be used.
-  * After this operation, 81.7 MB of additional disk space will be used.
+  * After this operation, 81.6 MB of additional disk space will be used.
   * Install Media Player: mpv 0.8.3 .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 3474376K. Space Used = 115008K.
+  * Disk size = 3530956K. Space Used = 114912K.
   * The following NEW packages will be installed:
   ```bash
   libavc1394-0 libraw1394-11
@@ -67,7 +67,7 @@
   libsmbclient libspeex1 libswresample1 libswscale3 libtalloc2 libtevent0
   libtheora0 libutvideo15 libv4l-0 libv4lconvert0 libva-glx1 libva-x11-1
   libva1 libvdpau1 libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0
-  libwayland-egl1-mesa libwbclient0 libx264-146 libx265-51 libxss1
-  libxvidcore4 libzvbi-common libzvbi0 mpv python python-minimal python-talloc
-  python2.7 python2.7-minimal samba-libs
+  libwayland-egl1-mesa libwbclient0 libx264-146 libx265-51 libxvidcore4
+  libzvbi-common libzvbi0 mpv python python-minimal python-talloc python2.7
+  python2.7-minimal samba-libs
   ```

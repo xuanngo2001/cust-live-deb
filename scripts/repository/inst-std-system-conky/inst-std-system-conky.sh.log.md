@@ -1,2 +1,11 @@
 * >>>>>>>>> Running inst-std-system-conky.sh ...
-  * Disk size = 3635780K. Space Used = 4K.
+  * After this operation, 1,331 kB of additional disk space will be used.
+  * Install System Monitor: conky.
+  * Add conky config file: conkyrc.
+  * Set conky to run on JWM startup.
+  * Add on the fly settings to Conky.
+  * Disk size = 3997224K. Space Used = 1824K.
+  * The following NEW packages will be installed:
+  ```bash
+  conky conky-std libiw30
+  ```
