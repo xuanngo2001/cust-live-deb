@@ -28,13 +28,14 @@ if [ -z "${GOOGLE_CHROME_VERSION}" ]; then
   GOOGLE_CHROME_VERSION="ERROR: google-chrome installation failed!"
 fi
 
-# Run Chromium as root.
-cat bashrc-google-chrome-alias.txt >> /root/.bashrc
-
+# Run Google Chrome as root.
+sed -i.original "s/exec -a \"\$0\" \"\$HERE\/chrome\"  \"\$@\"$/exec -a \"\$0\" \"\$HERE\/chrome\"  \"\$@\" --no-sandbox/" /opt/google/chrome/google-chrome
 
 # Insert Google Chrome in Internet menu.
 sed -i "/Internet\">/ r jwmrc-menus-inet-google-chrome.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
+# Add alias.
+cat bashrc-google-chrome-alias.txt >> /root/.bashrc
 
 
 # Log
