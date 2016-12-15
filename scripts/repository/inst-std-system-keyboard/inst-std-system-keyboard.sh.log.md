@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-system-keyboard.sh ...
   * Insert keyboard menu in Administration.
-  * Disk size = 4003524K. Space Used = 8K.
+  * Disk size = 4086096K. Space Used = 4K.

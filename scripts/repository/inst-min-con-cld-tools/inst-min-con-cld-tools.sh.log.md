@@ -11,5 +11,6 @@
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-zfs-hd.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-persistence.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-lsmodules.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-show-icons.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-apt-dependency.sh to /usr/local/bin/.
-  * Disk size = 1839076K. Space Used = 56K.
+  * Disk size = 1830556K. Space Used = 64K.

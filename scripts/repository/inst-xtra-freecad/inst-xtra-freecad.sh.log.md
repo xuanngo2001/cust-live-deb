@@ -18,18 +18,15 @@
   * After this operation, 95.5 MB of additional disk space will be used.
   * After this operation, 15.5 MB of additional disk space will be used.
   * After this operation, 3,519 kB of additional disk space will be used.
-  * After this operation, 292 kB of additional disk space will be used.
-  * After this operation, 28.5 MB of additional disk space will be used.
-  * After this operation, 1,066 kB of additional disk space will be used.
-  * After this operation, 481 kB of additional disk space will be used.
-  * After this operation, 1,258 kB of additional disk space will be used.
+  * After this operation, 27.9 MB of additional disk space will be used.
+  * After this operation, 585 kB of additional disk space will be used.
+  * After this operation, 698 kB of additional disk space will be used.
   * After this operation, 157 kB of additional disk space will be used.
   * After this operation, 228 kB of additional disk space will be used.
   * After this operation, 6,192 kB of additional disk space will be used.
-  * After this operation, 6,136 kB of additional disk space will be used.
+  * After this operation, 6,057 kB of additional disk space will be used.
   * After this operation, 2,840 kB of additional disk space will be used.
-  * After this operation, 310 kB of additional disk space will be used.
-  * After this operation, 78.8 kB of additional disk space will be used.
+  * After this operation, 231 kB of additional disk space will be used.
   * After this operation, 79.2 MB of additional disk space will be used.
   * After this operation, 195 kB of additional disk space will be used.
   * After this operation, 12.0 MB of additional disk space will be used.
@@ -50,7 +47,7 @@
   * After this operation, 213 kB of additional disk space will be used.
   * After this operation, 334 kB of additional disk space will be used.
   * After this operation, 129 kB of additional disk space will be used.
-  * After this operation, 373 kB of additional disk space will be used.
+  * After this operation, 424 kB of additional disk space will be used.
   * After this operation, 135 kB of additional disk space will be used.
   * After this operation, 81.9 kB of additional disk space will be used.
   * After this operation, 413 kB of additional disk space will be used.
@@ -71,8 +68,8 @@
   * After this operation, 378 kB of additional disk space will be used.
   * After this operation, 2,874 kB of additional disk space will be used.
   * After this operation, 712 kB of additional disk space will be used.
-  * After this operation, 79.1 MB of additional disk space will be used.
-  * After this operation, 77.7 MB of additional disk space will be used.
+  * After this operation, 79.2 MB of additional disk space will be used.
+  * After this operation, 77.8 MB of additional disk space will be used.
   * After this operation, 401 kB of additional disk space will be used.
   * After this operation, 1,018 kB of additional disk space will be used.
   * After this operation, 333 kB of additional disk space will be used.
@@ -103,10 +100,9 @@
   * After this operation, 563 kB of additional disk space will be used.
   * After this operation, 173 kB of additional disk space will be used.
   * After this operation, 3,914 kB of additional disk space will be used.
-  * After this operation, 735 kB of additional disk space will be used.
-  * After this operation, 412 MB of additional disk space will be used.
+  * After this operation, 411 MB of additional disk space will be used.
   * Install freecad.
-  * Disk size = 4935044K. Space Used = 499272K.
+  * Disk size = 4990352K. Space Used = 496784K.
   * The following NEW packages will be installed:
   ```bash
   iso-codes libcoin80 libgstreamer-plugins-base1.0-0 libgstreamer1.0-0
@@ -175,21 +171,17 @@
   python-pyside.qtcore python-pyside.qtgui qdbus qtchooser vlc-data vlc-nox
   libpyside1.2 libshiboken1.2 python-pyside.qtcore python-pyside.qtgui
   libpyside1.2 libshiboken1.2 python-pyside.qtcore
-  python-ply
   fonts-lyx libtcl8.6 libtk8.6 python-dateutil python-funcsigs
   python-matplotlib python-matplotlib-data python-mock python-nose python-pbr
-  python-pkg-resources python-pyparsing python-six python-tz
-  python-nose python-pkg-resources
-  python-pkg-resources
-  python-funcsigs python-mock python-pbr python-pkg-resources python-six
+  python-pyparsing python-tz
+  python-nose
+  python-funcsigs python-mock python-pbr
   python-tz
   python-pyparsing
   fonts-lyx python-matplotlib-data
   libjs-sphinxdoc libjs-underscore python-collada python-dateutil python-lxml
-  python-six
   python-lxml
-  python-dateutil python-six
-  python-six
+  python-dateutil
   iso-codes liba52-0.7.4 libbasicusageenvironment0 libcddb2 libchromaprint0
   libdca0 libdvbpsi9 libebml4 libfaad2 libgme0 libgroupsock4
   libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libiso9660-8 libkate1
@@ -286,11 +278,10 @@
   libboost-program-options1.55.0
   libbasicusageenvironment0
   libpyside1.2 libshiboken1.2 pyside-tools python-pyside.qtcore
-  libboost-python1.55.0
   fonts-lyx freecad iso-codes liba52-0.7.4 libbasicusageenvironment0
-  libboost-program-options1.55.0 libboost-python1.55.0 libboost-signals1.55.0
-  libcddb2 libchromaprint0 libcoin80 libdca0 libdvbpsi9 libebml4 libfaad2
-  libfreeimage3 libgl2ps0 libgme0 libgroupsock4 libgstreamer-plugins-base1.0-0
+  libboost-program-options1.55.0 libboost-signals1.55.0 libcddb2
+  libchromaprint0 libcoin80 libdca0 libdvbpsi9 libebml4 libfaad2 libfreeimage3
+  libgl2ps0 libgme0 libgroupsock4 libgstreamer-plugins-base1.0-0
   libgstreamer1.0-0 libiso9660-8 libjs-sphinxdoc libjs-underscore libkate1
   liblivemedia42 libmad0 libmatroska6 libmodplug1 libmpcdec6 libmpeg2-4
   liboce-foundation10 liboce-modeling10 liboce-ocaf-lite10 liboce-ocaf10
@@ -303,11 +294,11 @@
   libxerces-c3.1 libzipios++0c2a phonon phonon-backend-vlc pyside-tools
   python-collada python-dateutil python-funcsigs python-lxml python-matplotlib
   python-matplotlib-data python-mock python-nose python-pbr python-pivy
-  python-pkg-resources python-ply python-pyparsing python-pyside
-  python-pyside.phonon python-pyside.qtcore python-pyside.qtdeclarative
-  python-pyside.qtgui python-pyside.qthelp python-pyside.qtnetwork
-  python-pyside.qtopengl python-pyside.qtscript python-pyside.qtsql
-  python-pyside.qtsvg python-pyside.qttest python-pyside.qtuitools
-  python-pyside.qtwebkit python-pyside.qtxml python-qt4 python-qt4-gl
-  python-sip python-six python-tz qdbus qtchooser vlc-data vlc-nox
+  python-pyparsing python-pyside python-pyside.phonon python-pyside.qtcore
+  python-pyside.qtdeclarative python-pyside.qtgui python-pyside.qthelp
+  python-pyside.qtnetwork python-pyside.qtopengl python-pyside.qtscript
+  python-pyside.qtsql python-pyside.qtsvg python-pyside.qttest
+  python-pyside.qtuitools python-pyside.qtwebkit python-pyside.qtxml
+  python-qt4 python-qt4-gl python-sip python-tz qdbus qtchooser vlc-data
+  vlc-nox
   ```

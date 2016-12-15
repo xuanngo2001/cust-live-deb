@@ -8,15 +8,15 @@
   * After this operation, 224 kB of additional disk space will be used.
   * After this operation, 180 kB of additional disk space will be used.
   * After this operation, 86.0 kB of additional disk space will be used.
-  * After this operation, 43.5 MB of additional disk space will be used.
+  * After this operation, 27.0 MB of additional disk space will be used.
   * After this operation, 154 kB of additional disk space will be used.
   * After this operation, 143 kB of additional disk space will be used.
   * After this operation, 869 kB of additional disk space will be used.
-  * After this operation, 81.6 MB of additional disk space will be used.
+  * After this operation, 65.1 MB of additional disk space will be used.
   * Install Media Player: mpv 0.8.3 .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 3530956K. Space Used = 114912K.
+  * Disk size = 3624368K. Space Used = 85004K.
   * The following NEW packages will be installed:
   ```bash
   libavc1394-0 libraw1394-11
@@ -49,9 +49,8 @@
   libiec61883-0 libraw1394-11
   libopencore-amrnb0
   libopencore-amrwb0
-  libldb1 libntdb1 libpython-stdlib libpython2.7 libpython2.7-minimal
-  libpython2.7-stdlib libsmbclient libtalloc2 libtevent0 libwbclient0 python
-  python-minimal python-talloc python2.7 python2.7-minimal samba-libs
+  libldb1 libntdb1 libpython2.7 libsmbclient libtalloc2 libtevent0
+  libwbclient0 python-talloc samba-libs
   libvo-aacenc0
   libvo-amrwbenc0
   libzvbi-common libzvbi0
@@ -62,12 +61,10 @@
   libgsm1 libguess1 libiec61883-0 libjack-jackd2-0 libldb1 liblircclient0
   liblua5.2-0 libmowgli-2-0 libmp3lame0 libmpg123-0 libntdb1 libopenal-data
   libopenal1 libopencore-amrnb0 libopencore-amrwb0 libopus0 liborc-0.4-0
-  libpostproc53 libpython-stdlib libpython2.7 libpython2.7-minimal
-  libpython2.7-stdlib libraw1394-11 libschroedinger-1.0-0 libsdl1.2debian
-  libsmbclient libspeex1 libswresample1 libswscale3 libtalloc2 libtevent0
-  libtheora0 libutvideo15 libv4l-0 libv4lconvert0 libva-glx1 libva-x11-1
-  libva1 libvdpau1 libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0
+  libpostproc53 libpython2.7 libraw1394-11 libschroedinger-1.0-0
+  libsdl1.2debian libsmbclient libspeex1 libswresample1 libswscale3 libtalloc2
+  libtevent0 libtheora0 libutvideo15 libv4l-0 libv4lconvert0 libva-glx1
+  libva-x11-1 libva1 libvdpau1 libvidstab1.0 libvo-aacenc0 libvo-amrwbenc0
   libwayland-egl1-mesa libwbclient0 libx264-146 libx265-51 libxvidcore4
-  libzvbi-common libzvbi0 mpv python python-minimal python-talloc python2.7
-  python2.7-minimal samba-libs
+  libzvbi-common libzvbi0 mpv python-talloc samba-libs
   ```
