@@ -42,4 +42,5 @@ cat bashrc-google-chrome-alias.txt >> /root/.bashrc
 echo "${GV_LOG} * Install ${GOOGLE_CHROME_VERSION}."
 echo "${GV_LOG} * Modify ${GOOGLE_CHROME_BIN} to run google-chrome as root."
 echo "${GV_LOG} * Insert Google Chrome in Internet menu."
+echo "${GV_LOG} * Add google chrome alias, chrome."
 echo "${GV_LOG} * Set default browser: update-alternatives --config x-www-browser."
