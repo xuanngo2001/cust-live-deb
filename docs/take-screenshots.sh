@@ -11,7 +11,8 @@ set -o pipefail
 # TODO: Minimize all windows
 #   You need xdotool windowminimize "$ID"
 #   But for now, command key+d
-echo "You have 5 seconds to minimize all your applications."
+echo "You have 5 seconds to minimize all your applications:"
+echo "   command key+d"
 sleep 5s
 
 # Input file
