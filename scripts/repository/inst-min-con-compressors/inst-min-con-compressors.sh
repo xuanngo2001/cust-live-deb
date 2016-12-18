@@ -9,8 +9,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install bzip2
 apt-get -y --force-yes install rar
 apt-get -y --force-yes install unrar
-apt-get -y --force-yes install unzip
 apt-get -y --force-yes install zip
+apt-get -y --force-yes install unzip
 apt-get -y --force-yes install p7zip
 
 # Log
