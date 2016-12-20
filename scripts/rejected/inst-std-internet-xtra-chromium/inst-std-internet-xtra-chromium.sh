@@ -20,15 +20,15 @@ if [ -z "${CHROMIUM_VERSION}" ]; then
   CHROMIUM_VERSION="ERROR: chromium installation failed!"
 fi
 
-# Run Chromium as root.
-cat bashrc-chromium-alias.txt >> /root/.bashrc
-
 
 # Insert Chromium in Internet menu.
 sed -i "/Internet\">/ r jwmrc-menus-inet-chromium.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
+# Run Chromium as root.
+#sed -i.original "s/exec -a \"\$0\" \"\$HERE\/chrome\"  \"\$@\"$/exec -a \"\$0\" \"\$HERE\/chrome\"  \"\$@\" --no-sandbox/" /opt/google/chrome/google-chrome
+
 
 # Log
 echo "${GV_LOG} * Install ${CHROMIUM_VERSION}."
-echo "${GV_LOG} * Create an alias to run chromium as root."
+echo "${GV_LOG} * Modify to ${CHROMIUM_BIN} to run chromium as root."
 echo "${GV_LOG} * Insert Chromium in Internet menu."

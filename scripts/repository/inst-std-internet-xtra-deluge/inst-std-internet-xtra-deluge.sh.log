@@ -6,21 +6,21 @@ The following extra packages will be installed:
   deluge-common deluge-gtk geoip-database libblas-common libblas3
   libboost-python1.55.0 libboost-system1.55.0 libgeoip1 libgfortran3
   libglade2-0 liblapack3 libpython-stdlib libpython2.7-minimal
-  libpython2.7-stdlib libtorrent-rasterbar7 libwnck-3-0 libwnck-3-common
-  libxres1 notify-osd python python-cairo python-cffi python-characteristic
-  python-chardet python-cryptography python-glade2 python-gobject-2
-  python-gtk2 python-libtorrent python-minimal python-notify python-numpy
-  python-openssl python-pkg-resources python-ply python-pyasn1
+  libpython2.7-stdlib libquadmath0 libtorrent-rasterbar7 libwnck-3-0
+  libwnck-3-common libxres1 notify-osd python python-cairo python-cffi
+  python-characteristic python-chardet python-cryptography python-glade2
+  python-gobject-2 python-gtk2 python-libtorrent python-minimal python-notify
+  python-numpy python-openssl python-pkg-resources python-ply python-pyasn1
   python-pyasn1-modules python-pycparser python-service-identity python-six
   python-support python-twisted-bin python-twisted-core python-twisted-web
   python-xdg python-zope.interface python2.7 python2.7-minimal xdg-utils
 Suggested packages:
   python3 geoip-bin libtorrent-rasterbar-dbg python-doc python-tk python-dev
   python-cryptography-doc python-cryptography-vectors python-gtk2-doc
-  python-gobject-2-dbg gfortran python-nose python-numpy-dbg python-numpy-doc
-  python-openssl-doc python-openssl-dbg python-setuptools python-ply-doc
-  doc-base python-twisted-bin-dbg python-qt3 python-wxgtk3.0 python2.7-doc
-  binfmt-support gvfs-bin
+  python-gobject-2-dbg gcc gfortran python-nose python-numpy-dbg
+  python-numpy-doc python-openssl-doc python-openssl-dbg python-setuptools
+  python-ply-doc doc-base cpp python-twisted-bin-dbg python-qt3
+  python-wxgtk3.0 python2.7-doc binutils binfmt-support gvfs-bin
 Recommended packages:
   python-pygame python-idna python-pam python-serial libfile-mimeinfo-perl
   libnet-dbus-perl libx11-protocol-perl x11-xserver-utils
@@ -28,17 +28,17 @@ The following NEW packages will be installed:
   deluge deluge-common deluge-gtk geoip-database libblas-common libblas3
   libboost-python1.55.0 libboost-system1.55.0 libgeoip1 libgfortran3
   libglade2-0 liblapack3 libpython-stdlib libpython2.7-minimal
-  libpython2.7-stdlib libtorrent-rasterbar7 libwnck-3-0 libwnck-3-common
-  libxres1 notify-osd python python-cairo python-cffi python-characteristic
-  python-chardet python-cryptography python-glade2 python-gobject-2
-  python-gtk2 python-libtorrent python-minimal python-notify python-numpy
-  python-openssl python-pkg-resources python-ply python-pyasn1
+  libpython2.7-stdlib libquadmath0 libtorrent-rasterbar7 libwnck-3-0
+  libwnck-3-common libxres1 notify-osd python python-cairo python-cffi
+  python-characteristic python-chardet python-cryptography python-glade2
+  python-gobject-2 python-gtk2 python-libtorrent python-minimal python-notify
+  python-numpy python-openssl python-pkg-resources python-ply python-pyasn1
   python-pyasn1-modules python-pycparser python-service-identity python-six
   python-support python-twisted-bin python-twisted-core python-twisted-web
   python-xdg python-zope.interface python2.7 python2.7-minimal xdg-utils
-0 upgraded, 50 newly installed, 0 to remove and 26 not upgraded.
-Need to get 16.4 MB of archives.
-After this operation, 73.4 MB of additional disk space will be used.
+0 upgraded, 51 newly installed, 0 to remove and 26 not upgraded.
+Need to get 16.5 MB of archives.
+After this operation, 73.6 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libpython2.7-minimal amd64 2.7.9-2+deb8u1 [378 kB]
 Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main python2.7-minimal amd64 2.7.9-2+deb8u1 [1,401 kB]
 Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main python-minimal amd64 2.7.9-1 [40.3 kB]
@@ -49,50 +49,51 @@ Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main python amd64 2.7.9-1 
 Get:8 http://localhost/aptly-repo/jessie-main/ jessie/main libboost-python1.55.0 amd64 1.55.0+dfsg-3 [146 kB]
 Get:9 http://localhost/aptly-repo/jessie-main/ jessie/main libboost-system1.55.0 amd64 1.55.0+dfsg-3 [30.2 kB]
 Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main libgeoip1 amd64 1.6.2-4 [90.8 kB]
-Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main libgfortran3 amd64 4.9.2-10 [255 kB]
-Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libglade2-0 amd64 1:2.6.4-2 [81.8 kB]
-Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libtorrent-rasterbar7 amd64 0.16.18-1 [1,066 kB]
-Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main libxres1 amd64 2:1.0.7-1+b1 [15.5 kB]
-Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main libwnck-3-common all 3.4.9-3 [263 kB]
-Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main libwnck-3-0 amd64 3.4.9-3 [147 kB]
-Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main python-libtorrent amd64 0.16.18-1 [294 kB]
-Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main python-support all 1.0.15 [33.6 kB]
-Get:19 http://localhost/aptly-repo/jessie-main/ jessie/main python-twisted-bin amd64 14.0.2-3 [17.8 kB]
-Get:20 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-pkg-resources all 20.10.1-1.1~bpo8+1 [141 kB]
-Get:21 http://localhost/aptly-repo/jessie-main/ jessie/main python-zope.interface amd64 4.1.1-3.1 [85.6 kB]
-Get:22 http://localhost/aptly-repo/jessie-main/ jessie/main python-ply all 3.4-5 [62.9 kB]
-Get:23 http://localhost/aptly-repo/jessie-main/ jessie/main python-pycparser all 2.10+dfsg-3 [58.8 kB]
-Get:24 http://localhost/aptly-repo/jessie-main/ jessie/main python-cffi amd64 0.8.6-1 [67.2 kB]
-Get:25 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-six all 1.9.0-3~bpo8+1 [13.7 kB]
-Get:26 http://localhost/aptly-repo/jessie-main/ jessie/main python-cryptography amd64 0.6.1-1 [165 kB]
-Get:27 http://localhost/aptly-repo/jessie-main/ jessie/main python-openssl all 0.14-1 [81.1 kB]
-Get:28 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyasn1 all 0.1.7-1 [49.3 kB]
-Get:29 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyasn1-modules all 0.0.5-0.1 [21.5 kB]
-Get:30 http://localhost/aptly-repo/jessie-main/ jessie/main python-characteristic all 0.1.0-1 [6,134 B]
-Get:31 http://localhost/aptly-repo/jessie-main/ jessie/main python-service-identity all 1.0.0-3 [8,430 B]
-Get:32 http://localhost/aptly-repo/jessie-main/ jessie/main python-twisted-core all 14.0.2-3 [1,026 kB]
-Get:33 http://localhost/aptly-repo/jessie-main/ jessie/main python-twisted-web all 14.0.2-3 [302 kB]
-Get:34 http://localhost/aptly-repo/jessie-main/ jessie/main python-chardet all 2.3.0-1 [96.2 kB]
-Get:35 http://localhost/aptly-repo/jessie-main/ jessie/main python-xdg all 0.25-4 [35.8 kB]
-Get:36 http://localhost/aptly-repo/jessie-main/ jessie/main geoip-database all 20150317-1 [1,517 kB]
-Get:37 http://localhost/aptly-repo/jessie-main/ jessie/main deluge-common all 1.3.10-3 [751 kB]
-Get:38 http://localhost/aptly-repo/jessie-main/ jessie/main libblas-common amd64 1.2.20110419-10 [8,496 B]
-Get:39 http://localhost/aptly-repo/jessie-main/ jessie/main libblas3 amd64 1.2.20110419-10 [167 kB]
-Get:40 http://localhost/aptly-repo/jessie-main/ jessie/main liblapack3 amd64 3.5.0-4 [1,852 kB]
-Get:41 http://localhost/aptly-repo/jessie-main/ jessie/main python-numpy amd64 1:1.8.2-2 [1,630 kB]
-Get:42 http://localhost/aptly-repo/jessie-main/ jessie/main python-cairo amd64 1.8.8-1+b2 [84.2 kB]
-Get:43 http://localhost/aptly-repo/jessie-main/ jessie/main python-gobject-2 amd64 2.28.6-12+b1 [348 kB]
-Get:44 http://localhost/aptly-repo/jessie-main/ jessie/main python-gtk2 amd64 2.24.0-4 [637 kB]
-Get:45 http://localhost/aptly-repo/jessie-main/ jessie/main python-glade2 amd64 2.24.0-4 [43.3 kB]
-Get:46 http://localhost/aptly-repo/jessie-main/ jessie/main python-notify amd64 0.1.1-4 [16.6 kB]
-Get:47 http://localhost/aptly-repo/jessie-main/ jessie/main notify-osd amd64 0.9.34-2 [207 kB]
-Get:48 http://localhost/aptly-repo/jessie-main/ jessie/main xdg-utils all 1.1.0~rc1+git20111210-7.4 [65.0 kB]
-Get:49 http://localhost/aptly-repo/jessie-main/ jessie/main deluge-gtk all 1.3.10-3 [244 kB]
-Get:50 http://localhost/aptly-repo/jessie-main/ jessie/main deluge all 1.3.10-3 [40.8 kB]
-Extracting templates from packages: 60%Extracting templates from packages: 100%
-Fetched 16.4 MB in 0s (22.0 MB/s)
+Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main libquadmath0 amd64 4.9.2-10 [129 kB]
+Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libgfortran3 amd64 4.9.2-10 [255 kB]
+Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libglade2-0 amd64 1:2.6.4-2 [81.8 kB]
+Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main libtorrent-rasterbar7 amd64 0.16.18-1 [1,066 kB]
+Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main libxres1 amd64 2:1.0.7-1+b1 [15.5 kB]
+Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main libwnck-3-common all 3.4.9-3 [263 kB]
+Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libwnck-3-0 amd64 3.4.9-3 [147 kB]
+Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main python-libtorrent amd64 0.16.18-1 [294 kB]
+Get:19 http://localhost/aptly-repo/jessie-main/ jessie/main python-support all 1.0.15 [33.6 kB]
+Get:20 http://localhost/aptly-repo/jessie-main/ jessie/main python-twisted-bin amd64 14.0.2-3 [17.8 kB]
+Get:21 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-pkg-resources all 20.10.1-1.1~bpo8+1 [141 kB]
+Get:22 http://localhost/aptly-repo/jessie-main/ jessie/main python-zope.interface amd64 4.1.1-3.1 [85.6 kB]
+Get:23 http://localhost/aptly-repo/jessie-main/ jessie/main python-ply all 3.4-5 [62.9 kB]
+Get:24 http://localhost/aptly-repo/jessie-main/ jessie/main python-pycparser all 2.10+dfsg-3 [58.8 kB]
+Get:25 http://localhost/aptly-repo/jessie-main/ jessie/main python-cffi amd64 0.8.6-1 [67.2 kB]
+Get:26 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-six all 1.9.0-3~bpo8+1 [13.7 kB]
+Get:27 http://localhost/aptly-repo/jessie-main/ jessie/main python-cryptography amd64 0.6.1-1 [165 kB]
+Get:28 http://localhost/aptly-repo/jessie-main/ jessie/main python-openssl all 0.14-1 [81.1 kB]
+Get:29 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyasn1 all 0.1.7-1 [49.3 kB]
+Get:30 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyasn1-modules all 0.0.5-0.1 [21.5 kB]
+Get:31 http://localhost/aptly-repo/jessie-main/ jessie/main python-characteristic all 0.1.0-1 [6,134 B]
+Get:32 http://localhost/aptly-repo/jessie-main/ jessie/main python-service-identity all 1.0.0-3 [8,430 B]
+Get:33 http://localhost/aptly-repo/jessie-main/ jessie/main python-twisted-core all 14.0.2-3 [1,026 kB]
+Get:34 http://localhost/aptly-repo/jessie-main/ jessie/main python-twisted-web all 14.0.2-3 [302 kB]
+Get:35 http://localhost/aptly-repo/jessie-main/ jessie/main python-chardet all 2.3.0-1 [96.2 kB]
+Get:36 http://localhost/aptly-repo/jessie-main/ jessie/main python-xdg all 0.25-4 [35.8 kB]
+Get:37 http://localhost/aptly-repo/jessie-main/ jessie/main geoip-database all 20150317-1 [1,517 kB]
+Get:38 http://localhost/aptly-repo/jessie-main/ jessie/main deluge-common all 1.3.10-3 [751 kB]
+Get:39 http://localhost/aptly-repo/jessie-main/ jessie/main libblas-common amd64 1.2.20110419-10 [8,496 B]
+Get:40 http://localhost/aptly-repo/jessie-main/ jessie/main libblas3 amd64 1.2.20110419-10 [167 kB]
+Get:41 http://localhost/aptly-repo/jessie-main/ jessie/main liblapack3 amd64 3.5.0-4 [1,852 kB]
+Get:42 http://localhost/aptly-repo/jessie-main/ jessie/main python-numpy amd64 1:1.8.2-2 [1,630 kB]
+Get:43 http://localhost/aptly-repo/jessie-main/ jessie/main python-cairo amd64 1.8.8-1+b2 [84.2 kB]
+Get:44 http://localhost/aptly-repo/jessie-main/ jessie/main python-gobject-2 amd64 2.28.6-12+b1 [348 kB]
+Get:45 http://localhost/aptly-repo/jessie-main/ jessie/main python-gtk2 amd64 2.24.0-4 [637 kB]
+Get:46 http://localhost/aptly-repo/jessie-main/ jessie/main python-glade2 amd64 2.24.0-4 [43.3 kB]
+Get:47 http://localhost/aptly-repo/jessie-main/ jessie/main python-notify amd64 0.1.1-4 [16.6 kB]
+Get:48 http://localhost/aptly-repo/jessie-main/ jessie/main notify-osd amd64 0.9.34-2 [207 kB]
+Get:49 http://localhost/aptly-repo/jessie-main/ jessie/main xdg-utils all 1.1.0~rc1+git20111210-7.4 [65.0 kB]
+Get:50 http://localhost/aptly-repo/jessie-main/ jessie/main deluge-gtk all 1.3.10-3 [244 kB]
+Get:51 http://localhost/aptly-repo/jessie-main/ jessie/main deluge all 1.3.10-3 [40.8 kB]
+Extracting templates from packages: 58%Extracting templates from packages: 100%
+Fetched 16.5 MB in 0s (24.2 MB/s)
 Selecting previously unselected package libpython2.7-minimal:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51357 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36421 files and directories currently installed.)
 Preparing to unpack .../libpython2.7-minimal_2.7.9-2+deb8u1_amd64.deb ...
 Unpacking libpython2.7-minimal:amd64 (2.7.9-2+deb8u1) ...
 Selecting previously unselected package python2.7-minimal.
@@ -119,7 +120,7 @@ Setting up python2.7-minimal (2.7.9-2+deb8u1) ...
 Linking and byte-compiling packages for runtime python2.7...
 Setting up python-minimal (2.7.9-1) ...
 Selecting previously unselected package python.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52105 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37169 files and directories currently installed.)
 Preparing to unpack .../python_2.7.9-1_amd64.deb ...
 Unpacking python (2.7.9-1) ...
 Selecting previously unselected package libboost-python1.55.0.
@@ -131,6 +132,9 @@ Unpacking libboost-system1.55.0:amd64 (1.55.0+dfsg-3) ...
 Selecting previously unselected package libgeoip1:amd64.
 Preparing to unpack .../libgeoip1_1.6.2-4_amd64.deb ...
 Unpacking libgeoip1:amd64 (1.6.2-4) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../libquadmath0_4.9.2-10_amd64.deb ...
+Unpacking libquadmath0:amd64 (4.9.2-10) ...
 Selecting previously unselected package libgfortran3:amd64.
 Preparing to unpack .../libgfortran3_4.9.2-10_amd64.deb ...
 Unpacking libgfortran3:amd64 (4.9.2-10) ...
@@ -264,6 +268,7 @@ Setting up python (2.7.9-1) ...
 Setting up libboost-python1.55.0 (1.55.0+dfsg-3) ...
 Setting up libboost-system1.55.0:amd64 (1.55.0+dfsg-3) ...
 Setting up libgeoip1:amd64 (1.6.2-4) ...
+Setting up libquadmath0:amd64 (4.9.2-10) ...
 Setting up libgfortran3:amd64 (4.9.2-10) ...
 Setting up libglade2-0:amd64 (1:2.6.4-2) ...
 Setting up libtorrent-rasterbar7 (0.16.18-1) ...
@@ -310,4 +315,4 @@ Processing triggers for menu (2.1.47) ...
 Processing triggers for libc-bin (2.19-18+deb8u6) ...
 Processing triggers for python-support (1.0.15) ...
 CLDS: * Install deluge.
-CLDS: * Disk size = 3349224K. Space Used = 122524K.
+CLDS: * Disk size = 3160624K. Space Used = 122920K.

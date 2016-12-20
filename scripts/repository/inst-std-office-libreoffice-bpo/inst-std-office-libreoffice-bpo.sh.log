@@ -16,48 +16,47 @@ Hit http://localhost jessie-updates InRelease
 Hit http://localhost jessie-updates InRelease
 Hit http://localhost jessie/main amd64 Packages
 Hit http://localhost nightly/main amd64 Packages
+Hit http://localhost jessie/main amd64 Packages
+Hit http://localhost jessie/non-free amd64 Packages
+Hit http://localhost jessie-backports/contrib amd64 Packages
+Hit http://localhost jessie-backports/main amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://localhost nightly/main Translation-en_US
+Hit http://localhost jessie-backports/non-free amd64 Packages
+Ign http://dl.google.com stable InRelease
+Hit http://localhost jessie/contrib amd64 Packages
+Hit http://localhost jessie/non-free amd64 Packages
 Ign http://localhost nightly/main Translation-en
 Ign http://localhost nightly/main Translation-en_US.UTF-8
-Hit http://localhost jessie/main amd64 Packages
-Hit http://localhost jessie/non-free amd64 Packages
-Ign http://dl.google.com stable InRelease
-Hit http://localhost jessie-backports/contrib amd64 Packages
-Hit http://localhost jessie-backports/main amd64 Packages
-Hit http://localhost jessie-backports/non-free amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost jessie/main Translation-en_US.UTF-8
-Ign http://localhost jessie/non-free Translation-en_US
-Hit http://localhost jessie/contrib amd64 Packages
-Hit http://localhost jessie/non-free amd64 Packages
-Ign http://localhost jessie/non-free Translation-en
-Ign http://localhost jessie/non-free Translation-en_US.UTF-8
 Hit http://localhost jessie-updates/contrib amd64 Packages
 Hit http://localhost jessie-updates/main amd64 Packages
+Hit http://localhost jessie-updates/non-free amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
+Hit http://localhost jessie-updates/main amd64 Packages
+Ign http://localhost jessie/non-free Translation-en_US
+Ign http://localhost jessie/non-free Translation-en
 Get:1 http://dl.google.com stable Release.gpg [916 B]
+Ign http://localhost jessie/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie-backports/contrib Translation-en_US
 Ign http://localhost jessie-backports/contrib Translation-en
 Ign http://localhost jessie-backports/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie-backports/main Translation-en_US
 Ign http://localhost jessie-backports/main Translation-en
 Ign http://localhost jessie-backports/main Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie-backports/non-free Translation-en_US
 Ign http://localhost jessie-backports/non-free Translation-en
 Ign http://localhost jessie-backports/non-free Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
-Hit http://localhost jessie-updates/main amd64 Packages
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
 Ign http://localhost jessie/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
-Hit http://localhost jessie-updates/non-free amd64 Packages
-Get:2 http://dl.google.com stable Release [1,189 B]
 Ign http://localhost jessie/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie-updates/contrib Translation-en_US
 Ign http://localhost jessie-updates/contrib Translation-en
@@ -68,6 +67,7 @@ Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
 Ign http://localhost jessie-updates/non-free Translation-en_US
 Ign http://localhost jessie-updates/non-free Translation-en
 Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
+Get:2 http://dl.google.com stable Release [1,189 B]
 Ign http://localhost jessie-updates/contrib Translation-en_US
 Ign http://localhost jessie-updates/contrib Translation-en
 Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
@@ -81,7 +81,7 @@ Get:3 http://dl.google.com stable/main amd64 Packages [1,440 B]
 Ign http://dl.google.com stable/main Translation-en_US
 Ign http://dl.google.com stable/main Translation-en
 Ign http://dl.google.com stable/main Translation-en_US.UTF-8
-Fetched 3,545 B in 2s (1,340 B/s)
+Fetched 3,545 B in 2s (1,359 B/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -171,9 +171,9 @@ Get:35 http://localhost/aptly-repo/jessie-main/ jessie/main libwpd-0.10-10 amd64
 Get:36 http://localhost/aptly-repo/jessie-main/ jessie/main libwpg-0.3-3 amd64 0.3.0-3 [74.4 kB]
 Get:37 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libreoffice-writer amd64 1:5.2.3-2~bpo8+1 [7,754 kB]
 Extracting templates from packages: 78%Extracting templates from packages: 100%
-Fetched 73.6 MB in 2s (34.6 MB/s)
+Fetched 73.6 MB in 1s (40.3 MB/s)
 Selecting previously unselected package libboost-date-time1.55.0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56488 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41557 files and directories currently installed.)
 Preparing to unpack .../libboost-date-time1.55.0_1.55.0+dfsg-3_amd64.deb ...
 Unpacking libboost-date-time1.55.0:amd64 (1.55.0+dfsg-3) ...
 Selecting previously unselected package libboost-filesystem1.55.0:amd64.
@@ -356,9 +356,9 @@ Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main coinor-libcgl1 amd64 
 Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main coinor-libcbc3 amd64 2.8.12-1 [670 kB]
 Get:8 http://localhost/aptly-repo/jessie-main/ jessie/main coinor-libcoinmp1 amd64 1.7.6+dfsg1-1 [32.6 kB]
 Get:9 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libreoffice-calc amd64 1:5.2.3-2~bpo8+1 [6,676 kB]
-Fetched 9,637 kB in 0s (31.9 MB/s)
+Fetched 9,637 kB in 0s (33.5 MB/s)
 Selecting previously unselected package libcolamd2.8.0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61076 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46145 files and directories currently installed.)
 Preparing to unpack .../libcolamd2.8.0_1%3a4.2.1-3_amd64.deb ...
 Unpacking libcolamd2.8.0:amd64 (1:4.2.1-3) ...
 Selecting previously unselected package lp-solve.
@@ -420,9 +420,9 @@ Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main libmspub-0.1-1 amd64 
 Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libvisio-0.1-1 amd64 0.1.0-2 [245 kB]
 Get:5 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libreoffice-draw amd64 1:5.2.3-2~bpo8+1 [2,529 kB]
 Get:6 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libreoffice-impress amd64 1:5.2.3-2~bpo8+1 [1,012 kB]
-Fetched 4,385 kB in 0s (29.0 MB/s)
+Fetched 4,385 kB in 0s (39.1 MB/s)
 Selecting previously unselected package libcdr-0.1-1.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61158 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46227 files and directories currently installed.)
 Preparing to unpack .../libcdr-0.1-1_0.1.0-3_amd64.deb ...
 Unpacking libcdr-0.1-1 (0.1.0-3) ...
 Selecting previously unselected package libfreehand-0.1-1.
@@ -479,9 +479,9 @@ Need to get 2,115 kB of archives.
 After this operation, 9,637 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libreoffice-base-drivers amd64 1:5.2.3-2~bpo8+1 [531 kB]
 Get:2 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libreoffice-base amd64 1:5.2.3-2~bpo8+1 [1,583 kB]
-Fetched 2,115 kB in 0s (34.1 MB/s)
+Fetched 2,115 kB in 0s (37.0 MB/s)
 Selecting previously unselected package libreoffice-base-drivers.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61233 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46302 files and directories currently installed.)
 Preparing to unpack .../libreoffice-base-drivers_1%3a5.2.3-2~bpo8+1_amd64.deb ...
 Unpacking libreoffice-base-drivers (1:5.2.3-2~bpo8+1) ...
 Selecting previously unselected package libreoffice-base.
@@ -503,9 +503,9 @@ The following NEW packages will be installed:
 Need to get 358 kB of archives.
 After this operation, 1,447 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libreoffice-math amd64 1:5.2.3-2~bpo8+1 [358 kB]
-Fetched 358 kB in 0s (25.5 MB/s)
+Fetched 358 kB in 0s (20.5 MB/s)
 Selecting previously unselected package libreoffice-math.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61297 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46366 files and directories currently installed.)
 Preparing to unpack .../libreoffice-math_1%3a5.2.3-2~bpo8+1_amd64.deb ...
 Unpacking libreoffice-math (1:5.2.3-2~bpo8+1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
@@ -520,4 +520,4 @@ CLDS: * Install Office Suite: Drawing.
 CLDS: * Install Office Suite: Database.
 CLDS: * Install Office Suite: Equation.
 CLDS: * https://wiki.documentfoundation.org/ReleasePlan
-CLDS: * Disk size = 4059492K. Space Used = 435124K.
+CLDS: * Disk size = 3870860K. Space Used = 435092K.

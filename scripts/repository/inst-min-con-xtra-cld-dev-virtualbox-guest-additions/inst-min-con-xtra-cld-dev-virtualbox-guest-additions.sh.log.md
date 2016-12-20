@@ -5,7 +5,7 @@
   * After this operation, 6,798 kB of additional disk space will be used.
   * Install virtualbox-guest-utils to access shared folder. No need for x11. Less error prone.
   * VirtualBox guest additions installed: version: 5.1.8_Debian r111374.
-  * Disk size = 2272048K. Space Used = 189364K.
+  * Disk size = 2272076K. Space Used = 189368K.
   * The following NEW packages will be installed:
   ```bash
   binutils cpp-4.9 gcc-4.9 libasan1 libatomic1 libcilkrts5 libcloog-isl4

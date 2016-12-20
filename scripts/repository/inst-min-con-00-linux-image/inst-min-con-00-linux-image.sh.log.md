@@ -4,7 +4,7 @@
   * Reconfigure linux-image-4.7.0-0.bpo.1-amd64-unsigned.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
   * Installed Linux image: 4.7.0-0.bpo.1-amd64-unsigned.
-  * Disk size = 1806372K. Space Used = 263304K.
+  * Disk size = 1806400K. Space Used = 263308K.
   * The following NEW packages will be installed:
   ```bash
   dbus dialog libcap-ng0 libdbus-1-3 libexpat1
