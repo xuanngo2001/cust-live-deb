@@ -16,10 +16,15 @@ apt-get -y --force-yes install xfe
 # Insert xfe in Accessories menu.
 sed -i "/Accessories\">/ r jwmrc-menus-acc-xfe.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
+# Disable root warning popup.
+mkdir -p ~/.config/xfe/
+\cp -a xferc ~/.config/xfe/
 
 # Log
 echo "${GV_LOG} * Install xfe."
 echo "${GV_LOG} * Insert xfe in Accessories menu."
+echo "${GV_LOG} * Disable root warning popup: Edit->Preferences->Dialogs."
 
 # Feature: 
 #   -Can compress by its own.
+#   -Similar to MS Windows File Explorer.
