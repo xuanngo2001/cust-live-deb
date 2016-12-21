@@ -23,4 +23,4 @@ echo "${GV_LOG} * Insert pcmanfm in Accessories menu."
 
 # Feature: 
 #   -Open super fast.
-#   -Can't compresson its own. Need other plugins?
+#   -Can't compress by its own. Need other plugins?

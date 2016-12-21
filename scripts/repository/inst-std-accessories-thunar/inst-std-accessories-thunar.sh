@@ -22,4 +22,4 @@ echo "${GV_LOG} * Install Thunar file manager."
 echo "${GV_LOG} * Insert Thunar in Accessories menu."
 
 # Feature: 
-#   -Can't compress its own. Need other plugins: xarchiver(crap), try file-roller(?).
+#   -Can't compress by its own. Need other plugins: xarchiver(crap), try file-roller(?).
