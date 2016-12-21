@@ -20,3 +20,6 @@ sed -i "/Accessories\">/ r jwmrc-menus-acc-mc.xml" "${GV_CLD_ROOT_DIR}/jwmrc-men
 # Log
 echo "${GV_LOG} * Install Midnight Commander."
 echo "${GV_LOG} * Insert Midnight Commander in Accessories menu."
+
+# Feature:
+#   -Huge learning curve due to command oriented application.
