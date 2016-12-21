@@ -26,5 +26,5 @@ echo "${GV_LOG} * Insert xfe in Accessories menu."
 echo "${GV_LOG} * Disable root warning popup: Edit->Preferences->Dialogs."
 
 # Feature: 
-#   -Can compress by its own.
+#   -Can compress by its own but need archive manager to view files.(e.g. file-roller).
 #   -Similar to MS Windows File Explorer.
