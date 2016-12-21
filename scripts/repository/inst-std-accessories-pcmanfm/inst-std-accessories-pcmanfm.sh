@@ -21,4 +21,6 @@ sed -i "/Accessories\">/ r jwmrc-menus-acc-pcmanfm.xml" "${GV_CLD_ROOT_DIR}/jwmr
 echo "${GV_LOG} * Install pcmanfm."
 echo "${GV_LOG} * Insert pcmanfm in Accessories menu."
 
-# Feature: Open super fast.
+# Feature: 
+#   -Open super fast.
+#   -Can't compresson its own. Need other plugins?
