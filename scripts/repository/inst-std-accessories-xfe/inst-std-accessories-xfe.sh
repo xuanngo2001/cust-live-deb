@@ -20,3 +20,6 @@ sed -i "/Accessories\">/ r jwmrc-menus-acc-xfe.xml" "${GV_CLD_ROOT_DIR}/jwmrc-me
 # Log
 echo "${GV_LOG} * Install xfe."
 echo "${GV_LOG} * Insert xfe in Accessories menu."
+
+# Feature: 
+#   -Can compress by its own.
