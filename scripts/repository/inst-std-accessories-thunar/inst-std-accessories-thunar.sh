@@ -21,4 +21,5 @@ sed -i "/Accessories\">/ r jwmrc-menus-acc-thunar.xml" "${GV_CLD_ROOT_DIR}/jwmrc
 echo "${GV_LOG} * Install Thunar file manager."
 echo "${GV_LOG} * Insert Thunar in Accessories menu."
 
-
+# Feature: 
+#   -Can't compress its own. Need other plugins: xarchiver(crap), try file-roller(?).
