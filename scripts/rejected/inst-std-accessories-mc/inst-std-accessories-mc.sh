@@ -23,3 +23,6 @@ echo "${GV_LOG} * Insert Midnight Commander in Accessories menu."
 
 # Feature:
 #   -Huge learning curve due to command oriented application.
+
+# REJECTION:
+#   -GUI is user friendlier than Ncurse.
