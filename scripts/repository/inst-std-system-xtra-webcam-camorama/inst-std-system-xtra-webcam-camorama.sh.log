@@ -3,49 +3,51 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  gnome-mime-data libart-2.0-2 libavahi-glib1 libbonobo2-0 libbonobo2-common
-  libbonoboui2-0 libbonoboui2-common libgail18 libgnome-2-0
-  libgnome-keyring-common libgnome-keyring0 libgnome2-0 libgnome2-bin
-  libgnome2-common libgnomecanvas2-0 libgnomecanvas2-common libgnomeui-0
-  libgnomeui-common libgnomevfs2-0 libgnomevfs2-common liborbit-2-0
-Suggested packages:
-  libbonobo2-bin gnome-keyring desktop-base libgnomevfs2-bin
-Recommended packages:
-  libgnomevfs2-extra
-The following NEW packages will be installed:
-  camorama gnome-mime-data libart-2.0-2 libavahi-glib1 libbonobo2-0
+  gconf2 gnome-mime-data libart-2.0-2 libavahi-glib1 libbonobo2-0
   libbonobo2-common libbonoboui2-0 libbonoboui2-common libgail18 libgnome-2-0
   libgnome-keyring-common libgnome-keyring0 libgnome2-0 libgnome2-bin
   libgnome2-common libgnomecanvas2-0 libgnomecanvas2-common libgnomeui-0
   libgnomeui-common libgnomevfs2-0 libgnomevfs2-common liborbit-2-0
-0 upgraded, 22 newly installed, 0 to remove and 27 not upgraded.
-Need to get 7,405 kB of archives.
-After this operation, 33.1 MB of additional disk space will be used.
+Suggested packages:
+  gconf-defaults-service libbonobo2-bin gnome-keyring desktop-base
+  libgnomevfs2-bin
+Recommended packages:
+  libgnomevfs2-extra
+The following NEW packages will be installed:
+  camorama gconf2 gnome-mime-data libart-2.0-2 libavahi-glib1 libbonobo2-0
+  libbonobo2-common libbonoboui2-0 libbonoboui2-common libgail18 libgnome-2-0
+  libgnome-keyring-common libgnome-keyring0 libgnome2-0 libgnome2-bin
+  libgnome2-common libgnomecanvas2-0 libgnomecanvas2-common libgnomeui-0
+  libgnomeui-common libgnomevfs2-0 libgnomevfs2-common liborbit-2-0
+0 upgraded, 23 newly installed, 0 to remove and 26 not upgraded.
+Need to get 7,828 kB of archives.
+After this operation, 33.7 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libart-2.0-2 amd64 2.3.21-2 [72.7 kB]
 Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libavahi-glib1 amd64 0.6.31-5 [36.4 kB]
 Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main libbonobo2-common all 2.32.1-3 [243 kB]
 Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main liborbit-2-0 amd64 1:2.14.19-0.3 [223 kB]
 Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main libbonobo2-0 amd64 2.32.1-3 [274 kB]
-Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main gnome-mime-data all 2.18.0-1 [725 kB]
-Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomevfs2-common all 1:2.24.4-6 [763 kB]
-Get:8 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomevfs2-0 amd64 1:2.24.4-6+b1 [493 kB]
-Get:9 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome2-common all 2.32.1-5 [936 kB]
-Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome-2-0 amd64 2.32.1-5 [471 kB]
-Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome2-bin amd64 2.32.1-5 [434 kB]
-Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome2-0 amd64 2.32.1-5 [430 kB]
-Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libgail18 amd64 2.24.25-3+deb8u1 [539 kB]
-Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomecanvas2-common all 2.30.3-2 [132 kB]
-Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomecanvas2-0 amd64 2.30.3-2 [109 kB]
-Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main libbonoboui2-common all 2.24.5-2 [192 kB]
-Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libbonoboui2-0 amd64 2.24.5-2 [208 kB]
-Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome-keyring-common all 3.12.0-1 [59.5 kB]
-Get:19 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome-keyring0 amd64 3.12.0-1+b1 [87.4 kB]
-Get:20 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomeui-common all 2.24.5-3 [514 kB]
-Get:21 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomeui-0 amd64 2.24.5-3 [321 kB]
-Get:22 http://localhost/aptly-repo/jessie-main/ jessie/main camorama amd64 0.19-3 [140 kB]
-Fetched 7,405 kB in 0s (25.7 MB/s)
+Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main gconf2 amd64 3.2.6-3 [423 kB]
+Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main gnome-mime-data all 2.18.0-1 [725 kB]
+Get:8 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomevfs2-common all 1:2.24.4-6 [763 kB]
+Get:9 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomevfs2-0 amd64 1:2.24.4-6+b1 [493 kB]
+Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome2-common all 2.32.1-5 [936 kB]
+Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome-2-0 amd64 2.32.1-5 [471 kB]
+Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome2-bin amd64 2.32.1-5 [434 kB]
+Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome2-0 amd64 2.32.1-5 [430 kB]
+Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main libgail18 amd64 2.24.25-3+deb8u1 [539 kB]
+Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomecanvas2-common all 2.30.3-2 [132 kB]
+Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomecanvas2-0 amd64 2.30.3-2 [109 kB]
+Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libbonoboui2-common all 2.24.5-2 [192 kB]
+Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main libbonoboui2-0 amd64 2.24.5-2 [208 kB]
+Get:19 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome-keyring-common all 3.12.0-1 [59.5 kB]
+Get:20 http://localhost/aptly-repo/jessie-main/ jessie/main libgnome-keyring0 amd64 3.12.0-1+b1 [87.4 kB]
+Get:21 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomeui-common all 2.24.5-3 [514 kB]
+Get:22 http://localhost/aptly-repo/jessie-main/ jessie/main libgnomeui-0 amd64 2.24.5-3 [321 kB]
+Get:23 http://localhost/aptly-repo/jessie-main/ jessie/main camorama amd64 0.19-3 [140 kB]
+Fetched 7,828 kB in 0s (22.1 MB/s)
 Selecting previously unselected package libart-2.0-2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 47522 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66523 files and directories currently installed.)
 Preparing to unpack .../libart-2.0-2_2.3.21-2_amd64.deb ...
 Unpacking libart-2.0-2:amd64 (2.3.21-2) ...
 Selecting previously unselected package libavahi-glib1:amd64.
@@ -60,6 +62,9 @@ Unpacking liborbit-2-0:amd64 (1:2.14.19-0.3) ...
 Selecting previously unselected package libbonobo2-0:amd64.
 Preparing to unpack .../libbonobo2-0_2.32.1-3_amd64.deb ...
 Unpacking libbonobo2-0:amd64 (2.32.1-3) ...
+Selecting previously unselected package gconf2.
+Preparing to unpack .../gconf2_3.2.6-3_amd64.deb ...
+Unpacking gconf2 (3.2.6-3) ...
 Selecting previously unselected package gnome-mime-data.
 Preparing to unpack .../gnome-mime-data_2.18.0-1_all.deb ...
 Unpacking gnome-mime-data (2.18.0-1) ...
@@ -112,7 +117,6 @@ Selecting previously unselected package camorama.
 Preparing to unpack .../camorama_0.19-3_amd64.deb ...
 Unpacking camorama (0.19-3) ...
 Processing triggers for man-db (2.7.0.2-5) ...
-Processing triggers for gconf2 (3.2.6-3) ...
 Processing triggers for menu (2.1.47) ...
 Processing triggers for desktop-file-utils (0.22-1) ...
 Processing triggers for mime-support (3.58) ...
@@ -121,6 +125,7 @@ Setting up libavahi-glib1:amd64 (0.6.31-5) ...
 Setting up libbonobo2-common (2.32.1-3) ...
 Setting up liborbit-2-0:amd64 (1:2.14.19-0.3) ...
 Setting up libbonobo2-0:amd64 (2.32.1-3) ...
+Setting up gconf2 (3.2.6-3) ...
 Setting up gnome-mime-data (2.18.0-1) ...
 Setting up libgnomevfs2-common (1:2.24.4-6) ...
 Setting up libgnomevfs2-0:amd64 (1:2.24.4-6+b1) ...
@@ -142,4 +147,4 @@ Processing triggers for libc-bin (2.19-18+deb8u6) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install webcam: Camorama.
 CLDS: * Insert Camorama menu in Graphics.
-CLDS: * Disk size = 3962288K. Space Used = 26864K.
+CLDS: * Disk size = 4335376K. Space Used = 27916K.
