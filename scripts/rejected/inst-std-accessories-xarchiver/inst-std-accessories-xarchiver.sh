@@ -14,3 +14,7 @@ echo "${GV_LOG} * Install Archive Manager: xarchiver."
 # Note:
 # Small but not intuitive: How to add multiple files in archive? Tried for 3 minutes.
 # This is none issue if used with Thunar archive plugin.
+
+# REJECTED:
+#  - Not intuitive, use file-roller even if it requires more space(66MB).
+#  - Better, use xfe that includes archiving and extraction.
