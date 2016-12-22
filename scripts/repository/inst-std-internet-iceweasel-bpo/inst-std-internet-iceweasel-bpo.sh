@@ -28,6 +28,7 @@ echo "${GV_LOG} * Install the latest Firefox from Debian Mozilla team: $(firefox
 echo "${GV_LOG} * Insert Iceweasel in Internet menu."
 echo "${GV_LOG} * To update Adobe Flash Player: update-flashplugin-nonfree --install."
 echo "${GV_LOG} * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/."
+echo "${GV_LOG} * Supported browsers by flashplugin-nonfree: https://wiki.debian.org/FlashPlayer."
 
 
 # Resource:
