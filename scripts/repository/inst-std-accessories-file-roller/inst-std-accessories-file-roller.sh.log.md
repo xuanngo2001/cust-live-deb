@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-accessories-file-roller.sh ...
   * After this operation, 79.8 MB of additional disk space will be used.
   * Install file-roller.
-  * Disk size = 3144868K. Space Used = 66028K.
+  * Disk size = 3144560K. Space Used = 66028K.
   * The following NEW packages will be installed:
   ```bash
   adwaita-icon-theme dconf-gsettings-backend dconf-service file-roller

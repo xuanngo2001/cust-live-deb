@@ -50,7 +50,7 @@
   * After this operation, 424 kB of additional disk space will be used.
   * After this operation, 135 kB of additional disk space will be used.
   * After this operation, 81.9 kB of additional disk space will be used.
-  * After this operation, 413 kB of additional disk space will be used.
+  * After this operation, 373 kB of additional disk space will be used.
   * After this operation, 6,290 kB of additional disk space will be used.
   * After this operation, 3,949 kB of additional disk space will be used.
   * After this operation, 118 kB of additional disk space will be used.
@@ -68,8 +68,8 @@
   * After this operation, 378 kB of additional disk space will be used.
   * After this operation, 2,874 kB of additional disk space will be used.
   * After this operation, 712 kB of additional disk space will be used.
-  * After this operation, 79.2 MB of additional disk space will be used.
-  * After this operation, 77.8 MB of additional disk space will be used.
+  * After this operation, 79.1 MB of additional disk space will be used.
+  * After this operation, 77.7 MB of additional disk space will be used.
   * After this operation, 401 kB of additional disk space will be used.
   * After this operation, 1,018 kB of additional disk space will be used.
   * After this operation, 333 kB of additional disk space will be used.
@@ -102,7 +102,7 @@
   * After this operation, 3,914 kB of additional disk space will be used.
   * After this operation, 411 MB of additional disk space will be used.
   * Install freecad.
-  * Disk size = 4826936K. Space Used = 496780K.
+  * Disk size = 5199960K. Space Used = 496792K.
   * The following NEW packages will be installed:
   ```bash
   iso-codes libcoin80 libgstreamer-plugins-base1.0-0 libgstreamer1.0-0
