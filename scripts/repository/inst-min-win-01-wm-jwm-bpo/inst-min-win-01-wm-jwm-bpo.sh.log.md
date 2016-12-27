@@ -2,7 +2,7 @@
   * After this operation, 14.5 MB of additional disk space will be used.
   * Install Window Manager: JWM v2.3.6 by Joe Wingbermuehle.
   * Set jwmrc.
-  * Disk size = 2177520K. Space Used = 17820K.
+  * Disk size = 2202772K. Space Used = 17836K.
   * The following NEW packages will be installed:
   ```bash
   fontconfig fontconfig-config jwm libcairo2 libcroco3 libdatrie1

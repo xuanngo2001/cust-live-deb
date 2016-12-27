@@ -3,7 +3,7 @@
   * Install volume controller in system tray.
   * Set left-click to display volume slider: lmb_slider=true.
   * Set volumeicon to run on JWN startup.
-  * Disk size = 2247004K. Space Used = 23860K.
+  * Disk size = 2272252K. Space Used = 23860K.
   * The following NEW packages will be installed:
   ```bash
   libatk1.0-0 libatk1.0-data libavahi-client3 libavahi-common-data
