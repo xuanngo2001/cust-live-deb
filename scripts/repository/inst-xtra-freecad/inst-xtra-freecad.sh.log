@@ -49,7 +49,7 @@ Get:20 http://localhost/aptly-repo/jessie-main/ jessie/main python-sip amd64 4.1
 Get:21 http://localhost/aptly-repo/jessie-main/ jessie/main python-qt4 amd64 4.11.2+dfsg-1 [2,313 kB]
 Get:22 http://localhost/aptly-repo/jessie-main/ jessie/main python-qt4-gl amd64 4.11.2+dfsg-1 [80.0 kB]
 Get:23 http://localhost/aptly-repo/jessie-main/ jessie/main python-pivy amd64 0.5.0~v609hg-3 [2,309 kB]
-Fetched 29.7 MB in 0s (31.3 MB/s)
+Fetched 29.7 MB in 1s (25.5 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -123,13 +123,14 @@ The following extra packages will be installed:
   libqt4-declarative libqt4-designer libqt4-help libqt4-opengl libqt4-script
   libqt4-scripttools libqt4-sql libqt4-test libqt4-xmlpatterns libqtwebkit4
   libresid-builder0c2a libshiboken1.2 libshine3 libshout3 libsidplay2
-  libspeexdsp1 libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5
-  libvlccore8 phonon phonon-backend-vlc python-pyside.phonon
-  python-pyside.qtcore python-pyside.qtdeclarative python-pyside.qtgui
-  python-pyside.qthelp python-pyside.qtnetwork python-pyside.qtopengl
-  python-pyside.qtscript python-pyside.qtsql python-pyside.qtsvg
-  python-pyside.qttest python-pyside.qtuitools python-pyside.qtwebkit
-  python-pyside.qtxml qdbus qtchooser vlc-data vlc-nox
+  libspeexdsp1 libtag1-vanilla libtag1c2a libtwolame0 libupnp6
+  libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8 phonon
+  phonon-backend-vlc python-pyside.phonon python-pyside.qtcore
+  python-pyside.qtdeclarative python-pyside.qtgui python-pyside.qthelp
+  python-pyside.qtnetwork python-pyside.qtopengl python-pyside.qtscript
+  python-pyside.qtsql python-pyside.qtsvg python-pyside.qttest
+  python-pyside.qtuitools python-pyside.qtwebkit python-pyside.qtxml qdbus
+  qtchooser vlc-data vlc-nox
 Suggested packages:
   isoquery libchromaprint-tools python-acoustid libvisual-0.4-plugins
   gstreamer-codec-install gnome-codec-install gstreamer1.0-tools
@@ -148,16 +149,17 @@ The following NEW packages will be installed:
   libqt4-declarative libqt4-designer libqt4-help libqt4-opengl libqt4-script
   libqt4-scripttools libqt4-sql libqt4-test libqt4-xmlpatterns libqtwebkit4
   libresid-builder0c2a libshiboken1.2 libshine3 libshout3 libsidplay2
-  libspeexdsp1 libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5
-  libvlccore8 phonon phonon-backend-vlc python-pyside python-pyside.phonon
-  python-pyside.qtcore python-pyside.qtdeclarative python-pyside.qtgui
-  python-pyside.qthelp python-pyside.qtnetwork python-pyside.qtopengl
-  python-pyside.qtscript python-pyside.qtsql python-pyside.qtsvg
-  python-pyside.qttest python-pyside.qtuitools python-pyside.qtwebkit
-  python-pyside.qtxml qdbus qtchooser vlc-data vlc-nox
-0 upgraded, 68 newly installed, 0 to remove and 26 not upgraded.
-Need to get 15.6 MB/37.9 MB of archives.
-After this operation, 162 MB of additional disk space will be used.
+  libspeexdsp1 libtag1-vanilla libtag1c2a libtwolame0 libupnp6
+  libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8 phonon
+  phonon-backend-vlc python-pyside python-pyside.phonon python-pyside.qtcore
+  python-pyside.qtdeclarative python-pyside.qtgui python-pyside.qthelp
+  python-pyside.qtnetwork python-pyside.qtopengl python-pyside.qtscript
+  python-pyside.qtsql python-pyside.qtsvg python-pyside.qttest
+  python-pyside.qtuitools python-pyside.qtwebkit python-pyside.qtxml qdbus
+  qtchooser vlc-data vlc-nox
+0 upgraded, 70 newly installed, 0 to remove and 26 not upgraded.
+Need to get 15.9 MB/38.2 MB of archives.
+After this operation, 164 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libbasicusageenvironment0 amd64 2:2015.03.19-dmo1 [111 kB]
 Get:2 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libchromaprint0 amd64 1.2-dmo2 [34.6 kB]
 Get:3 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libdca0 amd64 0.0.5-dmo2+deb8u1 [98.2 kB]
@@ -177,40 +179,42 @@ Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main libpyside1.2 amd64 1
 Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libshine3 amd64 3.1.0-2.1 [25.5 kB]
 Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main libshout3 amd64 2.3.1-3 [46.1 kB]
 Get:19 http://localhost/aptly-repo/jessie-main/ jessie/main libspeexdsp1 amd64 1.2~rc1.2-1 [43.4 kB]
-Get:20 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libusageenvironment2 amd64 2:2015.03.19-dmo1 [102 kB]
-Get:21 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main vlc-data all 1:2.2.1-dmo3+deb8u1 [5,475 kB]
-Get:22 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libvlccore8 amd64 1:2.2.1-dmo3+deb8u1 [385 kB]
-Get:23 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libvlc5 amd64 1:2.2.1-dmo3+deb8u1 [45.0 kB]
-Get:24 http://localhost/aptly-repo/jessie-main/ jessie/main liba52-0.7.4 amd64 0.7.4-17 [35.0 kB]
-Get:25 http://localhost/aptly-repo/jessie-main/ jessie/main libcddb2 amd64 1.3.2-5 [48.5 kB]
-Get:26 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main libgme0 amd64 0.5.5-2+deb8u1 [106 kB]
-Get:27 http://localhost/aptly-repo/jessie-main/ jessie/main libkate1 amd64 0.4.1-4 [42.2 kB]
-Get:28 http://localhost/aptly-repo/jessie-main/ jessie/main libmodplug1 amd64 1:0.8.8.4-4.1+b1 [161 kB]
-Get:29 http://localhost/aptly-repo/jessie-main/ jessie/main libresid-builder0c2a amd64 2.1.1-14 [39.8 kB]
-Get:30 http://localhost/aptly-repo/jessie-main/ jessie/main libsidplay2 amd64 2.1.1-14 [113 kB]
-Get:31 http://localhost/aptly-repo/jessie-main/ jessie/main libtwolame0 amd64 0.3.13-1.1 [51.7 kB]
-Get:32 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main libupnp6 amd64 1:1.6.19+git20141001-1+deb8u1 [163 kB]
-Get:33 http://localhost/aptly-repo/jessie-main/ jessie/main libiso9660-8 amd64 0.83-4.2 [135 kB]
-Get:34 http://localhost/aptly-repo/jessie-main/ jessie/main libvcdinfo0 amd64 0.7.24+dfsg-0.2 [123 kB]
-Get:35 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main vlc-nox amd64 1:2.2.1-dmo3+deb8u1 [2,431 kB]
-Get:36 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main phonon-backend-vlc amd64 1:0.8.2-dmo1+deb8u1 [91.7 kB]
-Get:37 http://localhost/aptly-repo/jessie-main/ jessie/main phonon amd64 4:4.8.0-4 [16.7 kB]
-Get:38 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtcore amd64 1.2.2-1+b1 [548 kB]
-Get:39 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtgui amd64 1.2.2-1+b1 [1,912 kB]
-Get:40 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.phonon amd64 1.2.2-1+b1 [161 kB]
-Get:41 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtnetwork amd64 1.2.2-1+b1 [191 kB]
-Get:42 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtdeclarative amd64 1.2.2-1+b1 [87.7 kB]
-Get:43 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qthelp amd64 1.2.2-1+b1 [80.4 kB]
-Get:44 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtopengl amd64 1.2.2-1+b1 [85.2 kB]
-Get:45 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtscript amd64 1.2.2-1+b1 [77.3 kB]
-Get:46 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtsql amd64 1.2.2-1+b1 [114 kB]
-Get:47 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtsvg amd64 1.2.2-1+b1 [37.5 kB]
-Get:48 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qttest amd64 1.2.2-1+b1 [31.5 kB]
-Get:49 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtxml amd64 1.2.2-1+b1 [143 kB]
-Get:50 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtuitools amd64 1.2.2-1+b1 [206 kB]
-Get:51 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtwebkit amd64 1.2.2-1+b1 [128 kB]
-Get:52 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside all 1.2.2-1 [130 kB]
-Fetched 15.6 MB in 0s (19.4 MB/s)
+Get:20 http://localhost/aptly-repo/jessie-main/ jessie/main libtag1-vanilla amd64 1.9.1-2.1 [294 kB]
+Get:21 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libusageenvironment2 amd64 2:2015.03.19-dmo1 [102 kB]
+Get:22 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main vlc-data all 1:2.2.1-dmo3+deb8u1 [5,475 kB]
+Get:23 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libvlccore8 amd64 1:2.2.1-dmo3+deb8u1 [385 kB]
+Get:24 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main libvlc5 amd64 1:2.2.1-dmo3+deb8u1 [45.0 kB]
+Get:25 http://localhost/aptly-repo/jessie-main/ jessie/main liba52-0.7.4 amd64 0.7.4-17 [35.0 kB]
+Get:26 http://localhost/aptly-repo/jessie-main/ jessie/main libcddb2 amd64 1.3.2-5 [48.5 kB]
+Get:27 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main libgme0 amd64 0.5.5-2+deb8u1 [106 kB]
+Get:28 http://localhost/aptly-repo/jessie-main/ jessie/main libkate1 amd64 0.4.1-4 [42.2 kB]
+Get:29 http://localhost/aptly-repo/jessie-main/ jessie/main libmodplug1 amd64 1:0.8.8.4-4.1+b1 [161 kB]
+Get:30 http://localhost/aptly-repo/jessie-main/ jessie/main libresid-builder0c2a amd64 2.1.1-14 [39.8 kB]
+Get:31 http://localhost/aptly-repo/jessie-main/ jessie/main libsidplay2 amd64 2.1.1-14 [113 kB]
+Get:32 http://localhost/aptly-repo/jessie-main/ jessie/main libtag1c2a amd64 1.9.1-2.1 [17.5 kB]
+Get:33 http://localhost/aptly-repo/jessie-main/ jessie/main libtwolame0 amd64 0.3.13-1.1 [51.7 kB]
+Get:34 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main libupnp6 amd64 1:1.6.19+git20141001-1+deb8u1 [163 kB]
+Get:35 http://localhost/aptly-repo/jessie-main/ jessie/main libiso9660-8 amd64 0.83-4.2 [135 kB]
+Get:36 http://localhost/aptly-repo/jessie-main/ jessie/main libvcdinfo0 amd64 0.7.24+dfsg-0.2 [123 kB]
+Get:37 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main vlc-nox amd64 1:2.2.1-dmo3+deb8u1 [2,431 kB]
+Get:38 http://localhost/aptly-repo/deb-multimedia-main/ jessie/main phonon-backend-vlc amd64 1:0.8.2-dmo1+deb8u1 [91.7 kB]
+Get:39 http://localhost/aptly-repo/jessie-main/ jessie/main phonon amd64 4:4.8.0-4 [16.7 kB]
+Get:40 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtcore amd64 1.2.2-1+b1 [548 kB]
+Get:41 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtgui amd64 1.2.2-1+b1 [1,912 kB]
+Get:42 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.phonon amd64 1.2.2-1+b1 [161 kB]
+Get:43 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtnetwork amd64 1.2.2-1+b1 [191 kB]
+Get:44 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtdeclarative amd64 1.2.2-1+b1 [87.7 kB]
+Get:45 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qthelp amd64 1.2.2-1+b1 [80.4 kB]
+Get:46 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtopengl amd64 1.2.2-1+b1 [85.2 kB]
+Get:47 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtscript amd64 1.2.2-1+b1 [77.3 kB]
+Get:48 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtsql amd64 1.2.2-1+b1 [114 kB]
+Get:49 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtsvg amd64 1.2.2-1+b1 [37.5 kB]
+Get:50 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qttest amd64 1.2.2-1+b1 [31.5 kB]
+Get:51 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtxml amd64 1.2.2-1+b1 [143 kB]
+Get:52 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtuitools amd64 1.2.2-1+b1 [206 kB]
+Get:53 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside.qtwebkit amd64 1.2.2-1+b1 [128 kB]
+Get:54 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyside all 1.2.2-1 [130 kB]
+Fetched 15.9 MB in 1s (15.1 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -389,9 +393,10 @@ The following extra packages will be installed:
   liblivemedia42 libmad0 libmatroska6 libmodplug1 libmpcdec6 libmpeg2-4
   libphonon4 libpulse-mainloop-glib0 libpyside1.2 libqt4-dbus
   libresid-builder0c2a libshiboken1.2 libshine3 libshout3 libsidplay2
-  libspeexdsp1 libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5
-  libvlccore8 phonon phonon-backend-vlc python-pyside.qtcore
-  python-pyside.qtgui qdbus qtchooser vlc-data vlc-nox
+  libspeexdsp1 libtag1-vanilla libtag1c2a libtwolame0 libupnp6
+  libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8 phonon
+  phonon-backend-vlc python-pyside.qtcore python-pyside.qtgui qdbus qtchooser
+  vlc-data vlc-nox
 Suggested packages:
   isoquery libchromaprint-tools python-acoustid libvisual-0.4-plugins
   gstreamer-codec-install gnome-codec-install gstreamer1.0-tools
@@ -405,12 +410,13 @@ The following NEW packages will be installed:
   liblivemedia42 libmad0 libmatroska6 libmodplug1 libmpcdec6 libmpeg2-4
   libphonon4 libpulse-mainloop-glib0 libpyside1.2 libqt4-dbus
   libresid-builder0c2a libshiboken1.2 libshine3 libshout3 libsidplay2
-  libspeexdsp1 libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5
-  libvlccore8 phonon phonon-backend-vlc python-pyside.phonon
-  python-pyside.qtcore python-pyside.qtgui qdbus qtchooser vlc-data vlc-nox
-0 upgraded, 46 newly installed, 0 to remove and 26 not upgraded.
-Need to get 0 B/19.6 MB of archives.
-After this operation, 95.5 MB of additional disk space will be used.
+  libspeexdsp1 libtag1-vanilla libtag1c2a libtwolame0 libupnp6
+  libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8 phonon
+  phonon-backend-vlc python-pyside.phonon python-pyside.qtcore
+  python-pyside.qtgui qdbus qtchooser vlc-data vlc-nox
+0 upgraded, 48 newly installed, 0 to remove and 26 not upgraded.
+Need to get 0 B/20.0 MB of archives.
+After this operation, 96.7 MB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -437,72 +443,91 @@ Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-python-ply is already the newest version.
-0 upgraded, 0 newly installed, 0 to remove and 26 not upgraded.
+Suggested packages:
+  python-ply-doc python-pkg-resources
+The following NEW packages will be installed:
+  python-ply
+0 upgraded, 1 newly installed, 0 to remove and 26 not upgraded.
+Need to get 62.9 kB of archives.
+After this operation, 292 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main python-ply all 3.4-5 [62.9 kB]
+Fetched 62.9 kB in 0s (0 B/s)
+Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
   fonts-lyx libtcl8.6 libtk8.6 python-dateutil python-funcsigs
-  python-matplotlib-data python-mock python-nose python-pbr python-pyparsing
-  python-tz
+  python-matplotlib-data python-mock python-nose python-pbr
+  python-pkg-resources python-pyparsing python-six python-tz
 Suggested packages:
   tcl8.6 tk8.6 python-funcsigs-doc dvipng gir1.2-gtk-3.0 ghostscript inkscape
   ipython python-cairocffi python-configobj python-excelerator
   python-matplotlib-doc python-qt4 python-scipy python-sip python-tornado
   python-traits python-wxgtk3.0 texlive-extra-utils texlive-latex-extra
   ttf-staypuft python-mock-doc python-coverage python-nose-doc
+  python-setuptools
 Recommended packages:
   python-imaging python-tk
 The following NEW packages will be installed:
   fonts-lyx libtcl8.6 libtk8.6 python-dateutil python-funcsigs
   python-matplotlib python-matplotlib-data python-mock python-nose python-pbr
-  python-pyparsing python-tz
-0 upgraded, 12 newly installed, 0 to remove and 26 not upgraded.
-Need to get 9,138 kB of archives.
-After this operation, 27.9 MB of additional disk space will be used.
+  python-pkg-resources python-pyparsing python-six python-tz
+0 upgraded, 14 newly installed, 0 to remove and 26 not upgraded.
+Need to get 9,293 kB of archives.
+After this operation, 28.5 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libtcl8.6 amd64 8.6.2+dfsg-2 [978 kB]
 Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libtk8.6 amd64 8.6.2-1 [771 kB]
 Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main fonts-lyx all 2.1.2-2 [176 kB]
-Get:4 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-dateutil all 2.4.2-1~bpo8+1 [42.7 kB]
-Get:5 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-funcsigs all 1.0.2-3~bpo8+1 [13.5 kB]
-Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main python-matplotlib-data all 1.4.2-3.1 [3,041 kB]
-Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyparsing all 2.0.3+dfsg1-1 [64.0 kB]
-Get:8 http://localhost/aptly-repo/jessie-main/ jessie/main python-tz all 2012c+dfsg-0.1 [31.9 kB]
-Get:9 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-pbr all 1.8.0-4.1~bpo8+1 [47.3 kB]
-Get:10 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-mock all 2.0.0-3~bpo8+1 [60.2 kB]
-Get:11 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-nose all 1.3.7-1~bpo8+1 [132 kB]
-Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main python-matplotlib amd64 1.4.2-3.1 [3,780 kB]
-Fetched 9,138 kB in 0s (29.4 MB/s)
+Get:4 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-six all 1.9.0-3~bpo8+1 [13.7 kB]
+Get:5 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-dateutil all 2.4.2-1~bpo8+1 [42.7 kB]
+Get:6 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-funcsigs all 1.0.2-3~bpo8+1 [13.5 kB]
+Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main python-matplotlib-data all 1.4.2-3.1 [3,041 kB]
+Get:8 http://localhost/aptly-repo/jessie-main/ jessie/main python-pyparsing all 2.0.3+dfsg1-1 [64.0 kB]
+Get:9 http://localhost/aptly-repo/jessie-main/ jessie/main python-tz all 2012c+dfsg-0.1 [31.9 kB]
+Get:10 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-pkg-resources all 20.10.1-1.1~bpo8+1 [141 kB]
+Get:11 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-pbr all 1.8.0-4.1~bpo8+1 [47.3 kB]
+Get:12 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-mock all 2.0.0-3~bpo8+1 [60.2 kB]
+Get:13 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main python-nose all 1.3.7-1~bpo8+1 [132 kB]
+Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main python-matplotlib amd64 1.4.2-3.1 [3,780 kB]
+Fetched 9,293 kB in 0s (18.9 MB/s)
 Download complete and in download only mode
-Reading package lists...
-Building dependency tree...
-Reading state information...
-Suggested packages:
-  python-coverage python-nose-doc
-The following NEW packages will be installed:
-  python-nose
-0 upgraded, 1 newly installed, 0 to remove and 26 not upgraded.
-Need to get 0 B/132 kB of archives.
-After this operation, 585 kB of additional disk space will be used.
-Download complete and in download only mode
-Reading package lists...
-Building dependency tree...
-Reading state information...
-python-pkg-resources is already the newest version.
-0 upgraded, 0 newly installed, 0 to remove and 26 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  python-funcsigs python-pbr
+  python-pkg-resources
 Suggested packages:
-  python-funcsigs-doc python-mock-doc
+  python-coverage python-nose-doc python-setuptools
 The following NEW packages will be installed:
-  python-funcsigs python-mock python-pbr
-0 upgraded, 3 newly installed, 0 to remove and 26 not upgraded.
-Need to get 0 B/121 kB of archives.
-After this operation, 698 kB of additional disk space will be used.
+  python-nose python-pkg-resources
+0 upgraded, 2 newly installed, 0 to remove and 26 not upgraded.
+Need to get 0 B/274 kB of archives.
+After this operation, 1,066 kB of additional disk space will be used.
+Download complete and in download only mode
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  python-setuptools
+The following NEW packages will be installed:
+  python-pkg-resources
+0 upgraded, 1 newly installed, 0 to remove and 26 not upgraded.
+Need to get 0 B/141 kB of archives.
+After this operation, 481 kB of additional disk space will be used.
+Download complete and in download only mode
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  python-funcsigs python-pbr python-pkg-resources python-six
+Suggested packages:
+  python-funcsigs-doc python-mock-doc python-setuptools
+The following NEW packages will be installed:
+  python-funcsigs python-mock python-pbr python-pkg-resources python-six
+0 upgraded, 5 newly installed, 0 to remove and 26 not upgraded.
+Need to get 0 B/276 kB of archives.
+After this operation, 1,258 kB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -537,21 +562,22 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  libjs-sphinxdoc libjs-underscore python-dateutil python-lxml
+  libjs-sphinxdoc libjs-underscore python-dateutil python-lxml python-six
 Suggested packages:
   python-lxml-dbg
 Recommended packages:
   javascript-common
 The following NEW packages will be installed:
   libjs-sphinxdoc libjs-underscore python-collada python-dateutil python-lxml
-0 upgraded, 5 newly installed, 0 to remove and 26 not upgraded.
-Need to get 1,066 kB/1,108 kB of archives.
-After this operation, 6,057 kB of additional disk space will be used.
+  python-six
+0 upgraded, 6 newly installed, 0 to remove and 26 not upgraded.
+Need to get 1,066 kB/1,122 kB of archives.
+After this operation, 6,136 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libjs-underscore all 1.7.0~dfsg-1 [49.9 kB]
 Get:2 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libjs-sphinxdoc all 1.4.6-1~bpo8+1 [67.0 kB]
 Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main python-lxml amd64 3.4.0-1 [754 kB]
 Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main python-collada all 0.4-2 [194 kB]
-Fetched 1,066 kB in 0s (21.1 MB/s)
+Fetched 1,066 kB in 0s (13.8 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -567,17 +593,23 @@ Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following extra packages will be installed:
+  python-six
 The following NEW packages will be installed:
-  python-dateutil
-0 upgraded, 1 newly installed, 0 to remove and 26 not upgraded.
-Need to get 0 B/42.7 kB of archives.
-After this operation, 231 kB of additional disk space will be used.
+  python-dateutil python-six
+0 upgraded, 2 newly installed, 0 to remove and 26 not upgraded.
+Need to get 0 B/56.4 kB of archives.
+After this operation, 310 kB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-python-six is already the newest version.
-0 upgraded, 0 newly installed, 0 to remove and 26 not upgraded.
+The following NEW packages will be installed:
+  python-six
+0 upgraded, 1 newly installed, 0 to remove and 26 not upgraded.
+Need to get 0 B/13.7 kB of archives.
+After this operation, 78.8 kB of additional disk space will be used.
+Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -587,9 +619,9 @@ The following extra packages will be installed:
   libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libiso9660-8 libkate1
   liblivemedia42 libmad0 libmatroska6 libmodplug1 libmpcdec6 libmpeg2-4
   libphonon4 libpulse-mainloop-glib0 libqt4-dbus libresid-builder0c2a
-  libshine3 libshout3 libsidplay2 libspeexdsp1 libtwolame0 libupnp6
-  libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8 phonon-backend-vlc
-  qdbus qtchooser vlc-data vlc-nox
+  libshine3 libshout3 libsidplay2 libspeexdsp1 libtag1-vanilla libtag1c2a
+  libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8
+  phonon-backend-vlc qdbus qtchooser vlc-data vlc-nox
 Suggested packages:
   isoquery libchromaprint-tools python-acoustid libvisual-0.4-plugins
   gstreamer-codec-install gnome-codec-install gstreamer1.0-tools
@@ -602,12 +634,12 @@ The following NEW packages will be installed:
   libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libiso9660-8 libkate1
   liblivemedia42 libmad0 libmatroska6 libmodplug1 libmpcdec6 libmpeg2-4
   libphonon4 libpulse-mainloop-glib0 libqt4-dbus libresid-builder0c2a
-  libshine3 libshout3 libsidplay2 libspeexdsp1 libtwolame0 libupnp6
-  libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8 phonon
-  phonon-backend-vlc qdbus qtchooser vlc-data vlc-nox
-0 upgraded, 41 newly installed, 0 to remove and 26 not upgraded.
-Need to get 0 B/16.6 MB of archives.
-After this operation, 79.2 MB of additional disk space will be used.
+  libshine3 libshout3 libsidplay2 libspeexdsp1 libtag1-vanilla libtag1c2a
+  libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8
+  phonon phonon-backend-vlc qdbus qtchooser vlc-data vlc-nox
+0 upgraded, 43 newly installed, 0 to remove and 26 not upgraded.
+Need to get 0 B/16.9 MB of archives.
+After this operation, 80.4 MB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -618,7 +650,7 @@ The following NEW packages will be installed:
 Need to get 70.6 kB of archives.
 After this operation, 195 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libzipios++0c2a amd64 0.1.5.9+cvs.2007.04.28-5.1 [70.6 kB]
-Fetched 70.6 kB in 0s (0 B/s)
+Fetched 70.6 kB in 0s (3,589 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -685,7 +717,7 @@ Get:4 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main libf
 Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main libgl2ps0 amd64 1.3.8-1.2 [35.4 kB]
 Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main liboce-visualization8 amd64 0.15-5 [3,112 kB]
 Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main liboce-ocaf8 amd64 0.15-5 [756 kB]
-Fetched 18.7 MB in 0s (26.6 MB/s)
+Fetched 18.7 MB in 0s (31.6 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -1053,9 +1085,9 @@ The following extra packages will be installed:
   libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libiso9660-8 libkate1
   liblivemedia42 libmad0 libmatroska6 libmodplug1 libmpcdec6 libmpeg2-4
   libphonon4 libpulse-mainloop-glib0 libqt4-dbus libresid-builder0c2a
-  libshine3 libshout3 libsidplay2 libspeexdsp1 libtwolame0 libupnp6
-  libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8 qdbus qtchooser
-  vlc-data vlc-nox
+  libshine3 libshout3 libsidplay2 libspeexdsp1 libtag1-vanilla libtag1c2a
+  libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8
+  qdbus qtchooser vlc-data vlc-nox
 Suggested packages:
   isoquery libchromaprint-tools python-acoustid libvisual-0.4-plugins
   gstreamer-codec-install gnome-codec-install gstreamer1.0-tools libdvdcss2
@@ -1067,12 +1099,12 @@ The following NEW packages will be installed:
   libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libiso9660-8 libkate1
   liblivemedia42 libmad0 libmatroska6 libmodplug1 libmpcdec6 libmpeg2-4
   libphonon4 libpulse-mainloop-glib0 libqt4-dbus libresid-builder0c2a
-  libshine3 libshout3 libsidplay2 libspeexdsp1 libtwolame0 libupnp6
-  libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8 phonon-backend-vlc
-  qdbus qtchooser vlc-data vlc-nox
-0 upgraded, 40 newly installed, 0 to remove and 26 not upgraded.
-Need to get 0 B/16.6 MB of archives.
-After this operation, 79.1 MB of additional disk space will be used.
+  libshine3 libshout3 libsidplay2 libspeexdsp1 libtag1-vanilla libtag1c2a
+  libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8
+  phonon-backend-vlc qdbus qtchooser vlc-data vlc-nox
+0 upgraded, 42 newly installed, 0 to remove and 26 not upgraded.
+Need to get 0 B/16.9 MB of archives.
+After this operation, 80.3 MB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -1083,8 +1115,8 @@ The following extra packages will be installed:
   libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libiso9660-8 libkate1
   liblivemedia42 libmad0 libmatroska6 libmodplug1 libmpcdec6 libmpeg2-4
   libresid-builder0c2a libshine3 libshout3 libsidplay2 libspeexdsp1
-  libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8
-  vlc-data
+  libtag1-vanilla libtag1c2a libtwolame0 libupnp6 libusageenvironment2
+  libvcdinfo0 libvlc5 libvlccore8 vlc-data
 Suggested packages:
   isoquery libchromaprint-tools python-acoustid libvisual-0.4-plugins
   gstreamer-codec-install gnome-codec-install gstreamer1.0-tools libdvdcss2
@@ -1096,11 +1128,11 @@ The following NEW packages will be installed:
   libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libiso9660-8 libkate1
   liblivemedia42 libmad0 libmatroska6 libmodplug1 libmpcdec6 libmpeg2-4
   libresid-builder0c2a libshine3 libshout3 libsidplay2 libspeexdsp1
-  libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8
-  vlc-data vlc-nox
-0 upgraded, 34 newly installed, 0 to remove and 26 not upgraded.
-Need to get 0 B/16.1 MB of archives.
-After this operation, 77.7 MB of additional disk space will be used.
+  libtag1-vanilla libtag1c2a libtwolame0 libupnp6 libusageenvironment2
+  libvcdinfo0 libvlc5 libvlccore8 vlc-data vlc-nox
+0 upgraded, 36 newly installed, 0 to remove and 26 not upgraded.
+Need to get 0 B/16.4 MB of archives.
+After this operation, 78.9 MB of additional disk space will be used.
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -1316,7 +1348,7 @@ The following NEW packages will be installed:
 Need to get 865 kB of archives.
 After this operation, 3,874 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libxerces-c3.1 amd64 3.1.1-5.1+deb8u3 [865 kB]
-Fetched 865 kB in 0s (20.2 MB/s)
+Fetched 865 kB in 0s (20.7 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -1363,7 +1395,7 @@ The following NEW packages will be installed:
 Need to get 53.5 kB of archives.
 After this operation, 168 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libboost-signals1.55.0 amd64 1.55.0+dfsg-3 [53.5 kB]
-Fetched 53.5 kB in 0s (2,852 kB/s)
+Fetched 53.5 kB in 0s (5,251 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -1385,7 +1417,7 @@ The following NEW packages will be installed:
 Need to get 143 kB of archives.
 After this operation, 563 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libboost-program-options1.55.0 amd64 1.55.0+dfsg-3 [143 kB]
-Fetched 143 kB in 0s (0 B/s)
+Fetched 143 kB in 0s (12.5 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -1409,21 +1441,27 @@ The following NEW packages will be installed:
 Need to get 116 kB/1,119 kB of archives.
 After this operation, 3,914 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main pyside-tools amd64 0.2.15-1 [116 kB]
-Fetched 116 kB in 0s (6,399 kB/s)
+Fetched 116 kB in 0s (9,134 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-libboost-python1.55.0 is already the newest version.
-0 upgraded, 0 newly installed, 0 to remove and 26 not upgraded.
+The following NEW packages will be installed:
+  libboost-python1.55.0
+0 upgraded, 1 newly installed, 0 to remove and 26 not upgraded.
+Need to get 146 kB of archives.
+After this operation, 735 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libboost-python1.55.0 amd64 1.55.0+dfsg-3 [146 kB]
+Fetched 146 kB in 0s (8,267 kB/s)
+Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
   fonts-lyx iso-codes liba52-0.7.4 libbasicusageenvironment0
-  libboost-program-options1.55.0 libboost-signals1.55.0 libcddb2
-  libchromaprint0 libcoin80 libdca0 libdvbpsi9 libebml4 libfaad2 libfreeimage3
-  libgl2ps0 libgme0 libgroupsock4 libgstreamer-plugins-base1.0-0
+  libboost-program-options1.55.0 libboost-python1.55.0 libboost-signals1.55.0
+  libcddb2 libchromaprint0 libcoin80 libdca0 libdvbpsi9 libebml4 libfaad2
+  libfreeimage3 libgl2ps0 libgme0 libgroupsock4 libgstreamer-plugins-base1.0-0
   libgstreamer1.0-0 libiso9660-8 libjs-sphinxdoc libjs-underscore libkate1
   liblivemedia42 libmad0 libmatroska6 libmodplug1 libmpcdec6 libmpeg2-4
   liboce-foundation10 liboce-modeling10 liboce-ocaf-lite10 liboce-ocaf10
@@ -1431,18 +1469,19 @@ The following extra packages will be installed:
   libqt4-dbus libqt4-declarative libqt4-designer libqt4-help libqt4-opengl
   libqt4-script libqt4-scripttools libqt4-sql libqt4-test libqt4-xmlpatterns
   libqtassistantclient4 libqtwebkit4 libresid-builder0c2a libshiboken1.2
-  libshine3 libshout3 libsidplay2 libsoqt4-20 libspeexdsp1 libtcl8.6 libtk8.6
-  libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8
-  libxerces-c3.1 libzipios++0c2a phonon phonon-backend-vlc pyside-tools
-  python-collada python-dateutil python-funcsigs python-lxml python-matplotlib
-  python-matplotlib-data python-mock python-nose python-pbr python-pivy
-  python-pyparsing python-pyside python-pyside.phonon python-pyside.qtcore
-  python-pyside.qtdeclarative python-pyside.qtgui python-pyside.qthelp
-  python-pyside.qtnetwork python-pyside.qtopengl python-pyside.qtscript
-  python-pyside.qtsql python-pyside.qtsvg python-pyside.qttest
-  python-pyside.qtuitools python-pyside.qtwebkit python-pyside.qtxml
-  python-qt4 python-qt4-gl python-sip python-tz qdbus qtchooser vlc-data
-  vlc-nox
+  libshine3 libshout3 libsidplay2 libsoqt4-20 libspeexdsp1 libtag1-vanilla
+  libtag1c2a libtcl8.6 libtk8.6 libtwolame0 libupnp6 libusageenvironment2
+  libvcdinfo0 libvlc5 libvlccore8 libxerces-c3.1 libzipios++0c2a phonon
+  phonon-backend-vlc pyside-tools python-collada python-dateutil
+  python-funcsigs python-lxml python-matplotlib python-matplotlib-data
+  python-mock python-nose python-pbr python-pivy python-pkg-resources
+  python-ply python-pyparsing python-pyside python-pyside.phonon
+  python-pyside.qtcore python-pyside.qtdeclarative python-pyside.qtgui
+  python-pyside.qthelp python-pyside.qtnetwork python-pyside.qtopengl
+  python-pyside.qtscript python-pyside.qtsql python-pyside.qtsvg
+  python-pyside.qttest python-pyside.qtuitools python-pyside.qtwebkit
+  python-pyside.qtxml python-qt4 python-qt4-gl python-sip python-six python-tz
+  qdbus qtchooser vlc-data vlc-nox
 Suggested packages:
   freecad-doc isoquery libchromaprint-tools python-acoustid libopenal0a
   libsimage-dev libvisual-0.4-plugins gstreamer-codec-install
@@ -1454,16 +1493,17 @@ Suggested packages:
   python-cairocffi python-configobj python-excelerator python-matplotlib-doc
   python-scipy python-tornado python-traits python-wxgtk3.0
   texlive-extra-utils texlive-latex-extra ttf-staypuft python-mock-doc
-  python-coverage python-nose-doc python-qt4-dbg libdvdcss2
+  python-coverage python-nose-doc python-setuptools python-ply-doc
+  python-qt4-dbg libdvdcss2
 Recommended packages:
   gstreamer1.0-plugins-base javascript-common libqt4-sql-mysql libqt4-sql-odbc
   libqt4-sql-psql libqt4-sql-sqlite libqt4-sql-sqlite2 libqt4-sql-ibase vlc
   python-imaging python-tk
 The following NEW packages will be installed:
   fonts-lyx freecad iso-codes liba52-0.7.4 libbasicusageenvironment0
-  libboost-program-options1.55.0 libboost-signals1.55.0 libcddb2
-  libchromaprint0 libcoin80 libdca0 libdvbpsi9 libebml4 libfaad2 libfreeimage3
-  libgl2ps0 libgme0 libgroupsock4 libgstreamer-plugins-base1.0-0
+  libboost-program-options1.55.0 libboost-python1.55.0 libboost-signals1.55.0
+  libcddb2 libchromaprint0 libcoin80 libdca0 libdvbpsi9 libebml4 libfaad2
+  libfreeimage3 libgl2ps0 libgme0 libgroupsock4 libgstreamer-plugins-base1.0-0
   libgstreamer1.0-0 libiso9660-8 libjs-sphinxdoc libjs-underscore libkate1
   liblivemedia42 libmad0 libmatroska6 libmodplug1 libmpcdec6 libmpeg2-4
   liboce-foundation10 liboce-modeling10 liboce-ocaf-lite10 liboce-ocaf10
@@ -1471,37 +1511,41 @@ The following NEW packages will be installed:
   libqt4-dbus libqt4-declarative libqt4-designer libqt4-help libqt4-opengl
   libqt4-script libqt4-scripttools libqt4-sql libqt4-test libqt4-xmlpatterns
   libqtassistantclient4 libqtwebkit4 libresid-builder0c2a libshiboken1.2
-  libshine3 libshout3 libsidplay2 libsoqt4-20 libspeexdsp1 libtcl8.6 libtk8.6
-  libtwolame0 libupnp6 libusageenvironment2 libvcdinfo0 libvlc5 libvlccore8
-  libxerces-c3.1 libzipios++0c2a phonon phonon-backend-vlc pyside-tools
-  python-collada python-dateutil python-funcsigs python-lxml python-matplotlib
-  python-matplotlib-data python-mock python-nose python-pbr python-pivy
-  python-pyparsing python-pyside python-pyside.phonon python-pyside.qtcore
-  python-pyside.qtdeclarative python-pyside.qtgui python-pyside.qthelp
-  python-pyside.qtnetwork python-pyside.qtopengl python-pyside.qtscript
-  python-pyside.qtsql python-pyside.qtsvg python-pyside.qttest
-  python-pyside.qtuitools python-pyside.qtwebkit python-pyside.qtxml
-  python-qt4 python-qt4-gl python-sip python-tz qdbus qtchooser vlc-data
-  vlc-nox
-0 upgraded, 104 newly installed, 0 to remove and 26 not upgraded.
-Need to get 38.2 MB/95.3 MB of archives.
-After this operation, 411 MB of additional disk space will be used.
+  libshine3 libshout3 libsidplay2 libsoqt4-20 libspeexdsp1 libtag1-vanilla
+  libtag1c2a libtcl8.6 libtk8.6 libtwolame0 libupnp6 libusageenvironment2
+  libvcdinfo0 libvlc5 libvlccore8 libxerces-c3.1 libzipios++0c2a phonon
+  phonon-backend-vlc pyside-tools python-collada python-dateutil
+  python-funcsigs python-lxml python-matplotlib python-matplotlib-data
+  python-mock python-nose python-pbr python-pivy python-pkg-resources
+  python-ply python-pyparsing python-pyside python-pyside.phonon
+  python-pyside.qtcore python-pyside.qtdeclarative python-pyside.qtgui
+  python-pyside.qthelp python-pyside.qtnetwork python-pyside.qtopengl
+  python-pyside.qtscript python-pyside.qtsql python-pyside.qtsvg
+  python-pyside.qttest python-pyside.qtuitools python-pyside.qtwebkit
+  python-pyside.qtxml python-qt4 python-qt4-gl python-sip python-six python-tz
+  qdbus qtchooser vlc-data vlc-nox
+0 upgraded, 110 newly installed, 0 to remove and 26 not upgraded.
+Need to get 38.2 MB/95.9 MB of archives.
+After this operation, 414 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main liboce-foundation10 amd64 0.17.1-1~bpo8+1 [1,217 kB]
 Get:2 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main liboce-modeling10 amd64 0.17.1-1~bpo8+1 [11.8 MB]
 Get:3 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main liboce-ocaf-lite10 amd64 0.17.1-1~bpo8+1 [1,057 kB]
 Get:4 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main liboce-visualization10 amd64 0.17.1-1~bpo8+1 [3,042 kB]
 Get:5 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main liboce-ocaf10 amd64 0.17.1-1~bpo8+1 [728 kB]
 Get:6 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main freecad amd64 0.16+dfsg2-1~bpo8+1 [20.4 MB]
-Extracting templates from packages: 28%Extracting templates from packages: 57%Extracting templates from packages: 86%Extracting templates from packages: 100%
+Extracting templates from packages: 27%Extracting templates from packages: 54%Extracting templates from packages: 81%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 38.2 MB in 1s (21.6 MB/s)
+Fetched 38.2 MB in 1s (33.6 MB/s)
 Selecting previously unselected package libbasicusageenvironment0.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72526 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67015 files and directories currently installed.)
 Preparing to unpack .../libbasicusageenvironment0_2%3a2015.03.19-dmo1_amd64.deb ...
 Unpacking libbasicusageenvironment0 (2:2015.03.19-dmo1) ...
 Selecting previously unselected package libboost-program-options1.55.0:amd64.
 Preparing to unpack .../libboost-program-options1.55.0_1.55.0+dfsg-3_amd64.deb ...
 Unpacking libboost-program-options1.55.0:amd64 (1.55.0+dfsg-3) ...
+Selecting previously unselected package libboost-python1.55.0.
+Preparing to unpack .../libboost-python1.55.0_1.55.0+dfsg-3_amd64.deb ...
+Unpacking libboost-python1.55.0 (1.55.0+dfsg-3) ...
 Selecting previously unselected package libboost-signals1.55.0:amd64.
 Preparing to unpack .../libboost-signals1.55.0_1.55.0+dfsg-3_amd64.deb ...
 Unpacking libboost-signals1.55.0:amd64 (1.55.0+dfsg-3) ...
@@ -1613,6 +1657,9 @@ Unpacking libshout3:amd64 (2.3.1-3) ...
 Selecting previously unselected package libspeexdsp1:amd64.
 Preparing to unpack .../libspeexdsp1_1.2~rc1.2-1_amd64.deb ...
 Unpacking libspeexdsp1:amd64 (1.2~rc1.2-1) ...
+Selecting previously unselected package libtag1-vanilla:amd64.
+Preparing to unpack .../libtag1-vanilla_1.9.1-2.1_amd64.deb ...
+Unpacking libtag1-vanilla:amd64 (1.9.1-2.1) ...
 Selecting previously unselected package libtcl8.6:amd64.
 Preparing to unpack .../libtcl8.6_8.6.2+dfsg-2_amd64.deb ...
 Unpacking libtcl8.6:amd64 (8.6.2+dfsg-2) ...
@@ -1655,6 +1702,9 @@ Unpacking libresid-builder0c2a (2.1.1-14) ...
 Selecting previously unselected package libsidplay2.
 Preparing to unpack .../libsidplay2_2.1.1-14_amd64.deb ...
 Unpacking libsidplay2 (2.1.1-14) ...
+Selecting previously unselected package libtag1c2a:amd64.
+Preparing to unpack .../libtag1c2a_1.9.1-2.1_amd64.deb ...
+Unpacking libtag1c2a:amd64 (1.9.1-2.1) ...
 Selecting previously unselected package libtwolame0.
 Preparing to unpack .../libtwolame0_0.3.13-1.1_amd64.deb ...
 Unpacking libtwolame0 (0.3.13-1.1) ...
@@ -1718,6 +1768,9 @@ Unpacking python-pyside.qtcore (1.2.2-1+b1) ...
 Selecting previously unselected package pyside-tools.
 Preparing to unpack .../pyside-tools_0.2.15-1_amd64.deb ...
 Unpacking pyside-tools (0.2.15-1) ...
+Selecting previously unselected package python-six.
+Preparing to unpack .../python-six_1.9.0-3~bpo8+1_all.deb ...
+Unpacking python-six (1.9.0-3~bpo8+1) ...
 Selecting previously unselected package python-dateutil.
 Preparing to unpack .../python-dateutil_2.4.2-1~bpo8+1_all.deb ...
 Unpacking python-dateutil (2.4.2-1~bpo8+1) ...
@@ -1739,6 +1792,9 @@ Unpacking python-pyparsing (2.0.3+dfsg1-1) ...
 Selecting previously unselected package python-tz.
 Preparing to unpack .../python-tz_2012c+dfsg-0.1_all.deb ...
 Unpacking python-tz (2012c+dfsg-0.1) ...
+Selecting previously unselected package python-pkg-resources.
+Preparing to unpack .../python-pkg-resources_20.10.1-1.1~bpo8+1_all.deb ...
+Unpacking python-pkg-resources (20.10.1-1.1~bpo8+1) ...
 Selecting previously unselected package python-pbr.
 Preparing to unpack .../python-pbr_1.8.0-4.1~bpo8+1_all.deb ...
 Unpacking python-pbr (1.8.0-4.1~bpo8+1) ...
@@ -1751,6 +1807,9 @@ Unpacking python-nose (1.3.7-1~bpo8+1) ...
 Selecting previously unselected package python-matplotlib.
 Preparing to unpack .../python-matplotlib_1.4.2-3.1_amd64.deb ...
 Unpacking python-matplotlib (1.4.2-3.1) ...
+Selecting previously unselected package python-ply.
+Preparing to unpack .../python-ply_3.4-5_all.deb ...
+Unpacking python-ply (3.4-5) ...
 Selecting previously unselected package python-pyside.qtgui.
 Preparing to unpack .../python-pyside.qtgui_1.2.2-1+b1_amd64.deb ...
 Unpacking python-pyside.qtgui (1.2.2-1+b1) ...
@@ -1813,10 +1872,10 @@ Processing triggers for hicolor-icon-theme (0.13-1) ...
 Processing triggers for fontconfig (2.11.0-6.3+deb8u1) ...
 Processing triggers for shared-mime-info (1.3-1) ...
 Processing triggers for menu (2.1.47) ...
-Processing triggers for desktop-file-utils (0.22-1) ...
 Processing triggers for mime-support (3.58) ...
 Setting up libbasicusageenvironment0 (2:2015.03.19-dmo1) ...
 Setting up libboost-program-options1.55.0:amd64 (1.55.0+dfsg-3) ...
+Setting up libboost-python1.55.0 (1.55.0+dfsg-3) ...
 Setting up libboost-signals1.55.0:amd64 (1.55.0+dfsg-3) ...
 Setting up libchromaprint0:amd64 (1.2-dmo2) ...
 Setting up libcoin80 (3.1.4~abc9f50-7) ...
@@ -1854,6 +1913,7 @@ Setting up libqtwebkit4:amd64 (2.3.4.dfsg-3) ...
 Setting up libshine3:amd64 (3.1.0-2.1) ...
 Setting up libshout3:amd64 (2.3.1-3) ...
 Setting up libspeexdsp1:amd64 (1.2~rc1.2-1) ...
+Setting up libtag1-vanilla:amd64 (1.9.1-2.1) ...
 Setting up libtcl8.6:amd64 (8.6.2+dfsg-2) ...
 Setting up libtk8.6:amd64 (8.6.2-1) ...
 Setting up libusageenvironment2 (2:2015.03.19-dmo1) ...
@@ -1868,6 +1928,7 @@ Setting up libkate1 (0.4.1-4) ...
 Setting up libmodplug1 (1:0.8.8.4-4.1+b1) ...
 Setting up libresid-builder0c2a (2.1.1-14) ...
 Setting up libsidplay2 (2.1.1-14) ...
+Setting up libtag1c2a:amd64 (1.9.1-2.1) ...
 Setting up libtwolame0 (0.3.13-1.1) ...
 Setting up libupnp6 (1:1.6.19+git20141001-1+deb8u1) ...
 Setting up libiso9660-8 (0.83-4.2) ...
@@ -1887,6 +1948,7 @@ Setting up libsoqt4-20 (1.6.0~e8310f-2) ...
 Setting up libzipios++0c2a (0.1.5.9+cvs.2007.04.28-5.1) ...
 Setting up python-pyside.qtcore (1.2.2-1+b1) ...
 Setting up pyside-tools (0.2.15-1) ...
+Setting up python-six (1.9.0-3~bpo8+1) ...
 Setting up python-dateutil (2.4.2-1~bpo8+1) ...
 Setting up python-lxml (3.4.0-1) ...
 Setting up python-collada (0.4-2) ...
@@ -1894,11 +1956,13 @@ Setting up python-funcsigs (1.0.2-3~bpo8+1) ...
 Setting up python-matplotlib-data (1.4.2-3.1) ...
 Setting up python-pyparsing (2.0.3+dfsg1-1) ...
 Setting up python-tz (2012c+dfsg-0.1) ...
+Setting up python-pkg-resources (20.10.1-1.1~bpo8+1) ...
 Setting up python-pbr (1.8.0-4.1~bpo8+1) ...
 update-alternatives: using /usr/bin/python2-pbr to provide /usr/bin/pbr (pbr) in auto mode
 Setting up python-mock (2.0.0-3~bpo8+1) ...
 Setting up python-nose (1.3.7-1~bpo8+1) ...
 Setting up python-matplotlib (1.4.2-3.1) ...
+Setting up python-ply (3.4-5) ...
 Setting up python-pyside.qtgui (1.2.2-1+b1) ...
 Setting up python-pyside.qtnetwork (1.2.2-1+b1) ...
 Setting up python-pyside.qtdeclarative (1.2.2-1+b1) ...
@@ -1924,4 +1988,4 @@ Setting up freecad (0.16+dfsg2-1~bpo8+1) ...
 Processing triggers for libc-bin (2.19-18+deb8u6) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install freecad.
-CLDS: * Disk size = 5199960K. Space Used = 496792K.
+CLDS: * Disk size = 4961144K. Space Used = 500788K.

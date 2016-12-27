@@ -18,7 +18,7 @@ The following NEW packages will be installed:
 0 upgraded, 9 newly installed, 0 to remove and 26 not upgraded.
 Need to get 4,476 kB of archives.
 After this operation, 19.1 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main libxml2 amd64 2.9.1+dfsg1-5+deb8u3 [802 kB]
+Get:1 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main libxml2 amd64 2.9.1+dfsg1-5+deb8u4 [802 kB]
 Get:2 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main imagemagick-common all 8:6.8.9.9-5+deb8u6 [151 kB]
 Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main libfftw3-double3 amd64 3.3.4-2 [722 kB]
 Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main liblqr-1-0 amd64 0.4.2-2 [24.6 kB]
@@ -27,11 +27,11 @@ Get:6 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main libm
 Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main hicolor-icon-theme all 0.13-1 [8,600 B]
 Get:8 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main imagemagick-6.q16 amd64 8:6.8.9.9-5+deb8u6 [510 kB]
 Get:9 http://localhost/aptly-repo/jessie-security-main/ jessie-updates/main imagemagick amd64 8:6.8.9.9-5+deb8u6 [157 kB]
-Fetched 4,476 kB in 0s (32.0 MB/s)
+Fetched 4,476 kB in 0s (11.9 MB/s)
 Selecting previously unselected package libxml2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33052 files and directories currently installed.)
-Preparing to unpack .../libxml2_2.9.1+dfsg1-5+deb8u3_amd64.deb ...
-Unpacking libxml2:amd64 (2.9.1+dfsg1-5+deb8u3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 31479 files and directories currently installed.)
+Preparing to unpack .../libxml2_2.9.1+dfsg1-5+deb8u4_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.1+dfsg1-5+deb8u4) ...
 Selecting previously unselected package imagemagick-common.
 Preparing to unpack .../imagemagick-common_8%3a6.8.9.9-5+deb8u6_all.deb ...
 Unpacking imagemagick-common (8:6.8.9.9-5+deb8u6) ...
@@ -57,7 +57,7 @@ Selecting previously unselected package imagemagick.
 Preparing to unpack .../imagemagick_8%3a6.8.9.9-5+deb8u6_amd64.deb ...
 Unpacking imagemagick (8:6.8.9.9-5+deb8u6) ...
 Processing triggers for man-db (2.7.0.2-5) ...
-Setting up libxml2:amd64 (2.9.1+dfsg1-5+deb8u3) ...
+Setting up libxml2:amd64 (2.9.1+dfsg1-5+deb8u4) ...
 Setting up imagemagick-common (8:6.8.9.9-5+deb8u6) ...
 Setting up libfftw3-double3:amd64 (3.3.4-2) ...
 Setting up liblqr-1-0:amd64 (0.4.2-2) ...
@@ -79,4 +79,4 @@ update-alternatives: using /usr/bin/montage-im6 to provide /usr/bin/montage (mon
 update-alternatives: using /usr/bin/mogrify-im6 to provide /usr/bin/mogrify (mogrify) in auto mode
 Processing triggers for libc-bin (2.19-18+deb8u6) ...
 CLDS: * Install imagemagick to process image from command line.
-CLDS: * Disk size = 2372032K. Space Used = 23800K.
+CLDS: * Disk size = 2383636K. Space Used = 23808K.
