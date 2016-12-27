@@ -74,9 +74,10 @@ HH_MM_SS=$(date +"%0k.%M.%S")
 DATE_STRING="${YYYY_MM_DD}_${HH_MM_SS}"
 
 
-# Copy main.log in ISOHYBRID
+# Copy main.log & dpkg*.log in ISOHYBRID
 ##################################################################
 yes | cp -av ${MAIN_LOG} binary/
+yes | cp -av ./logs/dpkg*.log binary/
 
 # Backup log files in ./binary/ to ./install-log/
 ##################################################################
