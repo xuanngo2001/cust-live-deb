@@ -3,7 +3,7 @@
   * Install xfe.
   * Insert xfe in Accessories menu.
   * Disable root warning popup: Edit->Preferences->Dialogs.
-  * Disk size = 3205868K. Space Used = 15016K.
+  * Disk size = 3187820K. Space Used = 15016K.
   * The following NEW packages will be installed:
   ```bash
   libfox-1.6-0 libglu1-mesa xfe xfe-themes

@@ -1,11 +1,11 @@
 * >>>>>>>>> Running inst-std-system-xtra-webcam-camorama.sh ...
-  * After this operation, 33.7 MB of additional disk space will be used.
+  * After this operation, 33.1 MB of additional disk space will be used.
   * Install webcam: Camorama.
   * Insert Camorama menu in Graphics.
-  * Disk size = 4335376K. Space Used = 27916K.
+  * Disk size = 4092536K. Space Used = 26868K.
   * The following NEW packages will be installed:
   ```bash
-  camorama gconf2 gnome-mime-data libart-2.0-2 libavahi-glib1 libbonobo2-0
+  camorama gnome-mime-data libart-2.0-2 libavahi-glib1 libbonobo2-0
   libbonobo2-common libbonoboui2-0 libbonoboui2-common libgail18 libgnome-2-0
   libgnome-keyring-common libgnome-keyring0 libgnome2-0 libgnome2-bin
   libgnome2-common libgnomecanvas2-0 libgnomecanvas2-common libgnomeui-0

@@ -1,5 +1,6 @@
 * >>>>>>>>> Running inst-std-internet-xtra-google-chrome.sh ...
   * After this operation, 638 kB of additional disk space will be used.
+  * After this operation, 308 kB of additional disk space will be used.
   * After this operation, 7,409 kB of additional disk space will be used.
   * After this operation, 57.3 kB of additional disk space will be used.
   * Install Google Chrome 55.0.2883.87 .
@@ -7,10 +8,12 @@
   * Insert Google Chrome in Internet menu.
   * Add google chrome alias, chrome.
   * Set default browser: update-alternatives --config x-www-browser.
-  * Disk size = 3744772K. Space Used = 180388K.
+  * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
+  * Disk size = 3433236K. Space Used = 180804K.
   * The following NEW packages will be installed:
   ```bash
   libappindicator1 libdbusmenu-glib4 libdbusmenu-gtk4 libindicator7
+  xdg-utils
   gconf-service gconf2-common libgconf-2-4
   libxss1
   ```

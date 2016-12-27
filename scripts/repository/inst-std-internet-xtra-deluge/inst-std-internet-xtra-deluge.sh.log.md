@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-internet-xtra-deluge.sh ...
   * After this operation, 73.4 MB of additional disk space will be used.
   * Install deluge.
-  * Disk size = 3564384K. Space Used = 122512K.
+  * Disk size = 3386760K. Space Used = 122524K.
   * The following NEW packages will be installed:
   ```bash
   deluge deluge-common deluge-gtk geoip-database libblas-common libblas3
