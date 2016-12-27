@@ -73,17 +73,17 @@ YYYY_MM_DD=$(date +"%Y-%m-%d")
 HH_MM_SS=$(date +"%0k.%M.%S")
 DATE_STRING="${YYYY_MM_DD}_${HH_MM_SS}"
 
-# Keep main.log in install-log/
-##################################################################
-NEW_MAIN_LOG_NAME="$(basename ${MAIN_LOG})${SYSTEM}_${DATE_STRING}"
-yes | cp ${MAIN_LOG} install-log/${NEW_MAIN_LOG_NAME}
-
-
 
 # Copy main.log in ISOHYBRID
 ##################################################################
-yes | cp ${MAIN_LOG} binary/
+yes | cp -av ${MAIN_LOG} binary/
 
+# Backup log files in ./binary/ to ./install-log/
+##################################################################
+CLD_LOGS_DIR="./install-log/cld${SYSTEM}_${DATE_STRING}"
+mkdir -p "${CLD_LOGS_DIR}"
+CLD_LOGS_DIR=$(readlink -ev "${CLD_LOGS_DIR}")
+yes | cp -av ./binary/*.log "${CLD_LOGS_DIR}"
 
 # Create squashfs.
 ##################################################################
