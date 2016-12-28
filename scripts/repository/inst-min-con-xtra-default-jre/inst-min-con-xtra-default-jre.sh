@@ -16,6 +16,7 @@ apt-get -y --force-yes install default-jre
 
 # Log
 echo "${GV_LOG} * Install JAVA JRE: default-jre."
+echo "${GV_LOG} * To install JAVA binary: https://wiki.debian.org/JavaPackage."
 
 
 #  tzdata version conflict with Debian update repository.
