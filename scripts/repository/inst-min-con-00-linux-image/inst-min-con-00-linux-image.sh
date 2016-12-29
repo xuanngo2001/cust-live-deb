@@ -26,8 +26,8 @@ apt-get -y --force-yes install linux-image-amd64 live-boot
 KERNEL_INSTALLED=$(dpkg-query -W -f='${binary:Package}; ${Status}\n' linux-image-* | grep 'install ok installed' | sed 's/;.*//' | head -n 1 | sed 's/linux-image-//')
 KERNEL_VERSION=$(echo "${KERNEL_INSTALLED}" | sed 's/-unsigned//')
 
-echo "${GV_LOG} * Reconfigure linux-image-${KERNEL_INSTALLED}."
-dpkg-reconfigure linux-image-${KERNEL_INSTALLED}
+#echo "${GV_LOG} * Reconfigure linux-image-${KERNEL_INSTALLED}."
+#dpkg-reconfigure linux-image-${KERNEL_INSTALLED}
 
 # Manually create /boot/initrd.img-* for a specific kernel.
 #mkinitramfs -d /etc/initramfs-tools -o /boot/initrd.img-${KERNEL_VERSION} ${KERNEL_VERSION} -r /
