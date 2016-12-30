@@ -8,6 +8,12 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Echo base system packages
+echo "============= START: Base system packages ============="
+dpkg -l | tee
+ls -l /boot/
+echo "============= END: Base system packages ============="
+
 # Always use the latest version of the repository.
 apt-get update
 #apt-get -y --force-yes dist-upgrade # Will cause boot issues.
@@ -19,8 +25,6 @@ dbus-uuidgen > /var/lib/dbus/machine-id
 # Install linux image.
 apt-get -y --force-yes install linux-image-amd64 live-boot 
 
-# K3.16
-#apt-get -y --force-yes install busybox
 
 # Get _installed_ kernel version.
 KERNEL_INSTALLED=$(dpkg-query -W -f='${binary:Package}; ${Status}\n' linux-image-* | grep 'install ok installed' | sed 's/;.*//' | head -n 1 | sed 's/linux-image-//')
@@ -39,12 +43,14 @@ if [ -z "${INITRD_FILE}" ]; then
 fi
 
 
-# Remove /vmlinuz.old & /initrd.img.old symbolic links.
+# When new kernel upgrade, remove /vmlinuz.old & /initrd.img.old symbolic links.
 rm -f /vmlinuz.old
 rm -f /initrd.img.old
 
-# Log files in /boot/
+# Log linux-images
+dpkg -l linux-image* | tee
 ls -l /boot/
+md5sum /boot/*
 
 # Log
 echo "${GV_LOG} * Generate dbus-uuidgen to /var/lib/dbus/machine-id."
