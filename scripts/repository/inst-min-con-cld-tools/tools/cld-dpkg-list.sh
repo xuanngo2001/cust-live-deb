@@ -3,16 +3,19 @@ set -e
 # Description: List Debian packages with its version number.
 # Output: Return values can be feed to packages.list
 
-VERSION="$1"
+ACTION=$1
+ACTION=$(echo "${ACTION}" | tr '[[:upper:]]' '[[:lower:]]')
 
-# Convert input to lowercase: Make option value case insensitive.
-VERSION=$(echo "${VERSION}" | tr '[[:upper:]]' '[[:lower:]]')
-
-if [ -z "${VERSION}" ]; then
-  dpkg-query -W -f='${binary:Package} (=${Version})\n'
-elif [ "${VERSION}" = "no-version" ]; then
-  dpkg-query -W -f='${binary:Package}\n'  
-else
-  echo "Error: ${VERSION}: Invalid argument!"
-  echo "   e.g.: $0 [,no-version]"
-fi
+case "${ACTION}" in
+  "")
+    dpkg-query -W -f='${binary:Package} (=${Version})\n'
+    ;;
+  no-version)
+    dpkg-query -W -f='${binary:Package}\n'
+    ;;
+  *)
+	  echo "Error: ${VERSION}: Invalid argument!"
+	  echo "   e.g.: $0 [,no-version]"
+	  exit 1;
+    ;;    
+esac
