@@ -52,6 +52,8 @@ dpkg -l linux-image* | tee
 ls -l /boot/
 md5sum /boot/*
 
+ls -l /
+
 # Log
 echo "${GV_LOG} * Generate dbus-uuidgen to /var/lib/dbus/machine-id."
 echo "${GV_LOG} * Installed Linux image: ${KERNEL_INSTALLED}."
