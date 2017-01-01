@@ -8,10 +8,10 @@ ACTION=$(echo "${ACTION}" | tr '[[:upper:]]' '[[:lower:]]')
 
 case "${ACTION}" in
   "")
-    dpkg-query -W -f='${binary:Package} (=${Version})\n'
+    dpkg-query -W -f='${Package}|${Version}|${Status}\n'
     ;;
   no-version)
-    dpkg-query -W -f='${binary:Package}\n'
+    dpkg-query -W -f='${Package}\n'
     ;;
   *)
 	  echo "Error: ${VERSION}: Invalid argument!"
