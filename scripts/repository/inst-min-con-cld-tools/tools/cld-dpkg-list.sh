@@ -8,7 +8,7 @@ ACTION=$(echo "${ACTION}" | tr '[[:upper:]]' '[[:lower:]]')
 
 case "${ACTION}" in
   "")
-    dpkg-query -W -f='${Package}|${Version}|${Status}\n'
+    dpkg-query -W -f='${Package}|${Version}\n'
     ;;
   no-version)
     dpkg-query -W -f='${Package}\n'
