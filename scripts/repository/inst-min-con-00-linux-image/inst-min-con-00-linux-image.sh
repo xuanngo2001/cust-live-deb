@@ -27,7 +27,7 @@ apt-get -y --force-yes install linux-image-amd64 live-boot
 
 
 # Get _installed_ kernel version.
-KERNEL_INSTALLED=$(dpkg-query -W -f='${binary:Package}; ${Status}\n' linux-image-* | grep 'install ok installed' | sed 's/;.*//' | head -n 1 | sed 's/linux-image-//')
+KERNEL_INSTALLED=$(dpkg-query -W -f='${Package}\n' | grep 'linux-image-' | head -n 1)
 KERNEL_VERSION=$(echo "${KERNEL_INSTALLED}" | sed 's/-unsigned//')
 
 #echo "${GV_LOG} * Reconfigure linux-image-${KERNEL_INSTALLED}."
