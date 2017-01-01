@@ -81,7 +81,7 @@ yes | cp -av ./logs/dpkg*.log binary/
 
 # Backup log files in ./binary/ to ./install-log/
 ##################################################################
-KERNEL_VERSION=$(cat ${CHROOT_DIR}/proc/version | sed 's/ (.*//' | sed 's/Linux version //')
+KERNEL_VERSION=$(cat binary/dpkg-no-version.log| grep 'linux-image-' | head -n1)
 CLD_LOGS_DIR="./install-log/cld${SYSTEM}_${DATE_STRING}_K${KERNEL_VERSION}"
 mkdir -p "${CLD_LOGS_DIR}"
 CLD_LOGS_DIR=$(readlink -ev "${CLD_LOGS_DIR}")
