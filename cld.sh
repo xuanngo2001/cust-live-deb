@@ -21,6 +21,9 @@ DEB_REPO_URL=$(echo $2 | tr '[:upper:]' '[:lower:]')
 # Update manuals.
   ./cld-create-manuals.sh
 
+# Update cld-tools scripts on the host. Ensure the latest scripts and versions.
+  ./cld-tools-deploy.sh
+
 # Build ISO
 	CHROOT_DIR=/media/imdb/chroot/
 	mkdir -p "${CHROOT_DIR}"
