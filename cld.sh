@@ -10,7 +10,7 @@ DEB_REPO_URL=$2
   CMD_EXAMPLES=$(printf " %s\n %s\n %s\n" \
                         " e.g. $0 <SYSTEM> <DEB_REPO_URL>"\
                         " e.g. $0 std http://ftp.debian.org/debian"\
-                        " e.g. $0 min http://localhost/aptly-repo/jessie-main"\
+                        " e.g. $0 min http://localhost/aptly-repo/master_jessie-main"\
                 )
   if [ "$#" -ne "${ARGS_REQUIRED}" ]; then
     echo "Error: ${ARGS_REQUIRED} arguments are required. Aborted!"
