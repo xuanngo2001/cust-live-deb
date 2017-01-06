@@ -16,3 +16,5 @@ sed -i "/Graphics\">/ r jwmrc-menus-graphics-dia.xml" "${GV_CLD_ROOT_DIR}/jwmrc-
 # Log
 echo "${GV_LOG} * Install Dia to draw diagrams."
 echo "${GV_LOG} * Insert Dia menu in Graphics."
+echo "${GV_LOG} * How to add a new shape to Dia: http://dia-installer.de/howto/create_shape/index.html.en"
+echo "${GV_LOG} * Dia Shape Repository: http://dia-installer.de/shapes/index.html.en"
