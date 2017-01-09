@@ -18,7 +18,7 @@ LOCAL_BIN=/usr/local/bin
 yes | cp -Rv ${SH3D_DIR} ${LOCAL_BIN} 
 
 # Create executable scripts.
-SH3D_JAR=SweetHome3D-5.2.jar
+SH3D_JAR=SweetHome3D-5.3.jar
 SH3D_TEXTURE_EDITOR_JAR=TexturesLibraryEditor-1.5.jar
 SH3D_FURNITURE_EDITOR_JAR=FurnitureLibraryEditor-1.19.jar
 
