@@ -22,7 +22,7 @@ SH3D_JAR=SweetHome3D-5.2.jar
 SH3D_TEXTURE_EDITOR_JAR=TexturesLibraryEditor-1.5.jar
 SH3D_FURNITURE_EDITOR_JAR=FurnitureLibraryEditor-1.19.jar
 
-echo "java -jar ${LOCAL_BIN}/${SH3D_DIR}/${SH3D_JAR}" > ${LOCAL_BIN}/sweethome3d
+echo "java -jar ${LOCAL_BIN}/${SH3D_DIR}/${SH3D_JAR}  -Dcom.eteks.sweethome3d.j3d.checkOffScreenSupport=false" > ${LOCAL_BIN}/sweethome3d
 echo "java -jar ${LOCAL_BIN}/${SH3D_DIR}/${SH3D_TEXTURE_EDITOR_JAR}" > ${LOCAL_BIN}/sweethome3d-textures-editor
 echo "java -jar ${LOCAL_BIN}/${SH3D_DIR}/${SH3D_FURNITURE_EDITOR_JAR}" > ${LOCAL_BIN}/sweethome3d-furniture-editor
 chmod +x ${LOCAL_BIN}/sweethome3d*
@@ -30,7 +30,7 @@ chmod +x ${LOCAL_BIN}/sweethome3d*
 # Insert Sweet Home 3D menu in Graphics
 sed -i "/Graphics\">/ r jwmrc-menus-graphics-sweethome3d.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
-./jmf.sh
+#./jmf.sh
 
 # Log
 echo "${GV_LOG} * Install ${SH3D_JAR}."
