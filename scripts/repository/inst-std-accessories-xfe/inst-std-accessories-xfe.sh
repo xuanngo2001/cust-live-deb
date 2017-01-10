@@ -18,7 +18,7 @@ sed -i "/Accessories\">/ r jwmrc-menus-acc-xfe.xml" "${GV_CLD_ROOT_DIR}/jwmrc-me
 
 # Disable root warning popup.
 mkdir -p ~/.config/xfe/
-\cp -a xferc ~/.config/xfe/
+\cp -av xferc ~/.config/xfe/
 
 # Log
 echo "${GV_LOG} * Install xfe."
