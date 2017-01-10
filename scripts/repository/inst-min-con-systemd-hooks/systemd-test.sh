@@ -15,3 +15,5 @@ yes | cp -av ./systemd/  ${GV_CLD_ROOT_DIR}
 yes | cp -av systemd/*.service /etc/systemd/system/
 
 systemctl enable "${SERVICE_NAME}"
+
+journalctl --no-pager | grep cld
