@@ -7,12 +7,18 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-yes | cp -a systemd/  ${GV_CLD_ROOT_DIR}
+# Set permission.
+SERVICE_NAME=cld-systemd-start-stop.service
+chmod 664 "./systemd/${SERVICE_NAME}"
+chmod +x ./systemd/*.sh
+
+# Copy to /root/cld/
+yes | cp -av ./systemd/  ${GV_CLD_ROOT_DIR}
 
 #Register unit files
-yes | cp -a systemd/*.service /etc/systemd/system/
+yes | cp -av systemd/*.service /etc/systemd/system/
 
-systemctl enable cld-systemd-start-stop.service
+systemctl enable "${SERVICE_NAME}"
 
 # Log
 echo "${GV_LOG} * Add systemd hook scripts."
