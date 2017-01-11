@@ -12,7 +12,7 @@ while IFS='' read -r UNMOUNTED_LINE || [[ -n "${UNMOUNTED_LINE}" ]]; do
   MOUNTPOINT="/media/${LABEL}"
   
   if [ -a "${MOUNTPOINT}" ]; then
-    echo "Warning: ${MOUNTPOINT} already existed. Didn't mount [${DEVICE}| ${FSTYPE}| ${MOUNTPOINT}]."
+    echo "Warning: Conflicting mountpoint path: ${MOUNTPOINT} already existed. Mount skipped for [${DEVICE}| ${FSTYPE}| ${MOUNTPOINT}]."
   else
     mkdir -p "${MOUNTPOINT}"
     mount "${DEVICE}" "${MOUNTPOINT}"
