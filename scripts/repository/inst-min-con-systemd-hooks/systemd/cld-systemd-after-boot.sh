@@ -1,8 +1,15 @@
 #!/bin/bash
 set -e
 echo "$0: $(date)" >> /root/cld/boot-sequence.txt
-# Description: Before reboot or shutdown, run the following scripts:
+# Description: After boot, run the following scripts:
+#   Note: Internal use only. If you want to add you own custom scripts, add in
+#           /root/cld/systemd/user/cld-user-after-boot.sh
 # Reference: 
 #   -http://unix.stackexchange.com/a/41756
 #   -https://wiki.archlinux.org/index.php/systemd
-exit 0
+
+MASTER_LOG="$(basename "$0").log"
+/root/cld/systemd/cld-automount-partitions.sh        | tee -a "${MASTER_LOG}"
+/root/cld/systemd/cld-automount-swap-partitions.sh   | tee -a "${MASTER_LOG}"
+
+/root/cld/systemd/user/cld-user-after-boot.sh | tee -a  "${MASTER_LOG}" /root/cld/systemd/user/cld-user-after-boot.log
