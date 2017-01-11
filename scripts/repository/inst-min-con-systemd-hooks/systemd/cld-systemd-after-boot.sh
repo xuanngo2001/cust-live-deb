@@ -8,8 +8,8 @@ echo "$0: $(date)" >> /root/cld/boot-sequence.txt
 #   -http://unix.stackexchange.com/a/41756
 #   -https://wiki.archlinux.org/index.php/systemd
 
-MASTER_LOG="$(basename "$0").log"
-/root/cld/systemd/cld-automount-partitions.sh        | tee -a "${MASTER_LOG}"
-/root/cld/systemd/cld-automount-swap-partitions.sh   | tee -a "${MASTER_LOG}"
+MASTER_LOG="/root/cld/systemd/$(basename "$0").log"
+/usr/local/bin/partition-automount.sh     | tee -a "${MASTER_LOG}"
+/usr/local/bin/partition-swap-enable.sh   | tee -a "${MASTER_LOG}"
 
 /root/cld/systemd/user/cld-user-after-boot.sh | tee -a  "${MASTER_LOG}" /root/cld/systemd/user/cld-user-after-boot.log

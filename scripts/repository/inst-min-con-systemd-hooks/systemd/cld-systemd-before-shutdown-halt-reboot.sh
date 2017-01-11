@@ -8,7 +8,7 @@ echo "$0: $(date)\n" >> /root/cld/boot-sequence.txt
 #   -http://unix.stackexchange.com/a/41756
 #   -https://wiki.archlinux.org/index.php/systemd
 
-MASTER_LOG="$(basename "$0").log"
+MASTER_LOG="/root/cld/systemd/$(basename "$0").log"
 
 
 /root/cld/systemd/user/cld-user-before-shutdown-halt-reboot.sh | tee -a "${MASTER_LOG}" /root/cld/systemd/user/cld-user-before-shutdown-halt-reboot.log
