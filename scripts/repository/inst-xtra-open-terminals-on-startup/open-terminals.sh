@@ -49,8 +49,22 @@ HEIGHT=$(echo ${SCREEN_RESOLUTION}|sed 's/^.*x //')
 HEIGHT_HALF=$((${HEIGHT}/2))
 
 # Open the terminal with specified sizes.
-nohup xfce4-terminal --title="Top" --geometry=${COLUMNS}x${LINES_HALF1}+0+0 2>/dev/null
-nohup xfce4-terminal --title="Bottom" --geometry=${COLUMNS}x${LINES_HALF2}+0+${HEIGHT_HALF} 2>/dev/null
+TERMINAL_APP=$(echo '' | update-alternatives --config x-terminal-emulator | grep '^*' | sed 's|.* /|/|' | cut -d' ' -f1)
+TERMINAL_APP=$(basename "${TERMINAL_APP}")
+case "${TERMINAL_APP}" in
+  xfce4-terminal|xfce4-terminal.wrapper)
+    nohup "${TERMINAL_APP}" --title="Top"    --geometry="${COLUMNS}x${LINES_HALF1}+0+0" &
+    nohup "${TERMINAL_APP}" --title="Bottom" --geometry="${COLUMNS}x${LINES_HALF2}+0+${HEIGHT_HALF}" &
+    ;;
+  stterm)
+    nohup "${TERMINAL_APP}" -T "Top"    -g "${COLUMNS}x${LINES_HALF1}+0+0" &
+    nohup "${TERMINAL_APP}" -T "Bottom" -g "${COLUMNS}x${LINES_HALF2}+0+${HEIGHT_HALF}" &
+    ;;
+  *)
+    echo "Error: ${TERMINAL_APP}: Unknown x-terminal-emulator. Aborted!"
+    exit 1;
+    ;;    
+esac
 
 ### Close current terminal.
 #kill -9 $PPID
