@@ -25,6 +25,10 @@ case "${TERMINAL_APP}" in
     ;;    
 esac
 
+# Wait until Top and Bottom terminals are created.
+timeout 10s /bin/bash -c "while ! wmctrl -l|grep ' Top'; do sleep 1s; echo 'Wait for Top to launch: 1s.'; done; sleep 1s"
+timeout 10s /bin/bash -c "while ! wmctrl -l|grep ' Bottom'; do sleep 1s; echo 'Wait for Bottom to launch: 1s.'; done; sleep 1s"
+
 ### Close current terminal.
 #kill -9 $PPID
 
