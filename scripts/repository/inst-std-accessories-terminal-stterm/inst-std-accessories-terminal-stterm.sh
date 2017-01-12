@@ -17,7 +17,7 @@ apt-get -y --force-yes install stterm
 cat bashrc-stterm-alias.txt >> /root/.bashrc
 
 # Set stterm as the default emulator
-update-alternatives --set x-terminal-emulator /usr/bin/stterm
+#update-alternatives --set x-terminal-emulator /usr/bin/stterm
 
 # Log
 echo "${GV_LOG} * Install stterm."
