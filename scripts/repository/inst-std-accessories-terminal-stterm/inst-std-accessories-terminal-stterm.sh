@@ -13,6 +13,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install stterm.
 apt-get -y --force-yes install stterm
 
+# Add alias.
+cat bashrc-stterm-alias.txt >> /root/.bashrc
+
 # Set stterm as the default emulator
 update-alternatives --set x-terminal-emulator /usr/bin/stterm
 
