@@ -17,3 +17,6 @@ cd -
 echo "${GV_LOG} * Copy startup.sh to /etc/init.d/."
 echo "${GV_LOG} * Make it executable."
 echo "${GV_LOG} * Register it in the boot sequence."
+
+# DEPRECATED.
+#   Use inst-min-con-03-systemd-hooks.sh instead.
