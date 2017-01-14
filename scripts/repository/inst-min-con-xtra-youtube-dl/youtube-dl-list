@@ -2,6 +2,7 @@
 set -e
 # Description: Download all files listed in to-dl-*.list.
 # to-dl-<DIRECTORY_NAME>.list
+# https://github.com/rg3/youtube-dl/blob/master/README.md#output-template
 
 while IFS='' read -r FILENAME || [[ -n "${FILENAME}" ]]; do
   
