@@ -26,9 +26,9 @@ TARGET_WIN_ID=$1
 SECTION=$(echo $2 | tr '[:upper:]' '[:lower:]')
 
 MARGIN_LEFT=0
-MARGIN_TOP=$(( 0 ))
+MARGIN_TOP=0
 MARGIN_RIGHT=0
-MARGIN_BOTTOM=$(( 54 ))
+MARGIN_BOTTOM=54
 
 # Define menu bar height
 MENU_BAR_HEIGHT=55
@@ -63,7 +63,7 @@ echo "TARGET_DECORATION(left, right, top, bottom): ${TARGET_DECORATION}"
 
 SEPARATOR=0
 VIEW_WIDTH=$(( $SCREEN_WIDTH - $MARGIN_LEFT - $MARGIN_RIGHT - $SEPARATOR ))
-VIEW_HEIGHT=$(( $SCREEN_HEIGHT - $MARGIN_TOP - $MARGIN_BOTTOM - $TARGET_DECORATION_TOP - $TARGET_DECORATION_BOTTOM - $SEPARATOR ))
+VIEW_HEIGHT=$(( $SCREEN_HEIGHT - $MARGIN_TOP - $MARGIN_BOTTOM - $SEPARATOR ))
 
 ### Move window to the corresponding section of the screen.
 case "${SECTION}" in
@@ -78,7 +78,7 @@ case "${SECTION}" in
         
   bottom|down)
     X=$(( $MARGIN_LEFT ))
-    Y=$(( $MARGIN_TOP + ($VIEW_HEIGHT/2) + $TARGET_DECORATION_TOP + $TARGET_DECORATION_BOTTOM ))
+    Y=$(( $MARGIN_TOP + ($VIEW_HEIGHT/2) ))
     W=$(( $VIEW_WIDTH ))
     H=$(( $VIEW_HEIGHT/2 ))
     ;;
