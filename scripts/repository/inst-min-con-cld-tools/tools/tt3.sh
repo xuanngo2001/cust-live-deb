@@ -78,7 +78,7 @@ case "${SECTION}" in
         
   bottom|down)
     X=$(( $MARGIN_LEFT ))
-    Y=$(( $MARGIN_TOP + ($VIEW_HEIGHT/2) + $TARGET_DECORATION_TOP + $TARGET_DECORATION_BOTTOM ))
+    Y=$(( $MARGIN_TOP + ($VIEW_HEIGHT/2) ))
     W=$(( $VIEW_WIDTH ))
     H=$(( $VIEW_HEIGHT/2 ))
     ;;
