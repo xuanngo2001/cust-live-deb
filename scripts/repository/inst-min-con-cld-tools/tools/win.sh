@@ -13,7 +13,8 @@
 #    +-----------+
 #    | 1 | 2 | 3 |
 #    +-----------+
-
+# xwininfo -root -tree 
+# xwininfo -root -children
 
 # Define menu bar height
 MENU_BAR_HEIGHT=55
