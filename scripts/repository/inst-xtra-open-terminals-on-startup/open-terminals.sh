@@ -21,58 +21,35 @@ if [ "${CONKY_INSTANCES}" -gt 1 ]; then
   exit 1;
 fi
 
+TOP_TITLE="Top"
+BOTTOM_TITLE="Bottom"
+nohup x-terminal-emulator -T "${TOP_TITLE}" &
+nohup x-terminal-emulator -T "${BOTTOM_TITLE}" &
 
-# Get column width of conky.
-# To make life easier, assume font width = 10pixels. Otherwise, use xprop to find out.
-CONKY_WIDTH_PIXELS=$(wmctrl -lG | grep -i Conky | tr -s ' ' | cut -d' ' -f5)
-CONKY_WIDTH_CHAR=$((${CONKY_WIDTH_PIXELS}/10))
-
-# Maximize the current terminal to get the maximum columns and lines. Note: Don't use :ACTIVE:, the active window might not be the terminal.
-wmctrl -r "open-2-terminals" -b toggle,maximized_vert,maximized_horz
-
-# update $COLUMNS $LINES with new values.
-resize
-
-# Get the maximum columns and lines availables.
-COLUMNS=$(tput cols)
-LINES=$(tput lines)
-
-# Adjust columns and lines values.
-COLUMNS=$((${COLUMNS}-${CONKY_WIDTH_CHAR}))
-LINES_HALF1=$((${LINES}/2-1))
-LINES_HALF2=$((${LINES_HALF1}-1))
-
-# Get screen geometry.
-SCREEN_RESOLUTION=$(xrandr | head -n1 | cut -d, -f2 | cut -d" " -f3-5)
-WIDTH=$(echo ${SCREEN_RESOLUTION}|sed 's/ .*//')
-HEIGHT=$(echo ${SCREEN_RESOLUTION}|sed 's/^.*x //')
-HEIGHT_HALF=$((${HEIGHT}/2))
-
-# Open the terminal with specified sizes.
-TERMINAL_APP=$(echo '' | update-alternatives --config x-terminal-emulator | grep '^*' | sed 's|.* /|/|' | cut -d' ' -f1)
-TERMINAL_APP=$(basename "${TERMINAL_APP}")
-case "${TERMINAL_APP}" in
-  xfce4-terminal|xfce4-terminal.wrapper) # xfce4-terminal.wrapper doesn't handle --geometry parameter.
-    nohup xfce4-terminal --title="Top"    --geometry="${COLUMNS}x${LINES_HALF1}+0+0" &
-    nohup xfce4-terminal --title="Bottom" --geometry="${COLUMNS}x${LINES_HALF2}+0+${HEIGHT_HALF}" &
-    ;;
-  stterm)
-    nohup "${TERMINAL_APP}" -T "Top"    -g "${COLUMNS}x${LINES_HALF1}+0+0" &
-    nohup "${TERMINAL_APP}" -T "Bottom" -g "${COLUMNS}x${LINES_HALF2}+0+${HEIGHT_HALF}" &
-    ;;
-  *)
-    echo "Error: ${TERMINAL_APP}: Unknown x-terminal-emulator. Aborted!"
-    exit 1;
-    ;;    
-esac
 
 # Wait until Top and Bottom terminals are created.
-timeout 10s /bin/bash -c "while ! wmctrl -l|grep ' Top'; do sleep 1s; echo 'Wait for Top to launch: 1s.'; done; sleep 1s"
-timeout 10s /bin/bash -c "while ! wmctrl -l|grep ' Bottom'; do sleep 1s; echo 'Wait for Bottom to launch: 1s.'; done; sleep 1s"
+timeout 10s /bin/bash -c "while ! wmctrl -l|grep ' Top'; do sleep 1s; echo 'Wait for xTop to launch: 1s.'; done;"
+timeout 10s /bin/bash -c "while ! wmctrl -l|grep ' Bottom'; do sleep 1s; echo 'Wait for xBottom to launch: 1s.'; done;"
+
+
+# Move terminals.
+CONKY_WIDTH=$(xwinsplitter--get-width.sh "conky (debian)")
+
+MARGIN_LEFT=0
+MARGIN_TOP=0
+MARGIN_RIGHT=${CONKY_WIDTH}
+MARGIN_BOTTOM=55
+MARGIN="${MARGIN_LEFT},${MARGIN_TOP},${MARGIN_RIGHT},${MARGIN_BOTTOM}"
+
+TOP_WIN_ID=$(xwinsplitter--id.sh "${TOP_TITLE}")
+xwinsplitter.sh ${TOP_WIN_ID} 'top' ${MARGIN}
+
+BOTTOM_WIN_ID=$(xwinsplitter--id.sh "${BOTTOM_TITLE}")
+xwinsplitter.sh ${BOTTOM_WIN_ID} 'bottom' ${MARGIN}
 
 
 ### Close current terminal.
-#kill -9 $PPID
+kill -9 $PPID
 
 # Reference:
 #   Get terminal columns and lines: http://stackoverflow.com/a/263900
