@@ -21,20 +21,17 @@ if [ "${CONKY_INSTANCES}" -gt 1 ]; then
   exit 1;
 fi
 
+# Open 'Top' and 'Bottom' terminal.
 TOP_TITLE="Top"
 BOTTOM_TITLE="Bottom"
 nohup x-terminal-emulator -T "${TOP_TITLE}" &
+timeout 10s /bin/bash -c "while ! wmctrl -l|grep ' Top'; do sleep 1s; echo 'Wait for Top to launch: 1s.'; done;"
 nohup x-terminal-emulator -T "${BOTTOM_TITLE}" &
-
-
-# Wait until Top and Bottom terminals are created.
-timeout 10s /bin/bash -c "while ! wmctrl -l|grep ' Top'; do sleep 1s; echo 'Wait for xTop to launch: 1s.'; done;"
-timeout 10s /bin/bash -c "while ! wmctrl -l|grep ' Bottom'; do sleep 1s; echo 'Wait for xBottom to launch: 1s.'; done;"
+timeout 10s /bin/bash -c "while ! wmctrl -l|grep ' Bottom'; do sleep 1s; echo 'Wait for Bottom to launch: 1s.'; done;"
 
 
 # Move terminals.
 CONKY_WIDTH=$(xwinsplitter--get-width.sh "conky (debian)")
-
 MARGIN_LEFT=0
 MARGIN_TOP=0
 MARGIN_RIGHT=${CONKY_WIDTH}
