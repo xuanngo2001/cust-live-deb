@@ -14,7 +14,7 @@ cat bashrc-common-* >> /root/.bashrc
 
 # Set dircolors
 DIR_COLORS_FILE=dircolors-gnu-ls-colors.txt
-cp ${DIR_COLORS_FILE} /root/.dircolors
+yes | cp -av ${DIR_COLORS_FILE} /root/.dircolors
 
 
 # Log
