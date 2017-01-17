@@ -15,7 +15,7 @@ apt-get -y --force-yes install x11-utils
 
 chmod +x ./xwinsplitter/*.sh
 chmod +x *.sh
-yes | cp -av ./xwinsplitter /usr/local/bin/
+yes | cp -av ./xwinsplitter/*.sh /usr/local/bin/
 yes | cp -av *.sh /usr/local/bin/
 
 # Add key binding
