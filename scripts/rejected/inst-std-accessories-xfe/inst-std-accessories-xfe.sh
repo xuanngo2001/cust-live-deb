@@ -28,3 +28,6 @@ echo "${GV_LOG} * Disable root warning popup: Edit->Preferences->Dialogs."
 # Feature: 
 #   -Can compress and extract by its own but need archive manager to view files.(e.g. file-roller).
 #   -Similar to MS Windows File Explorer.
+
+# REJECTED:
+#   -Can't display Chinese characters.
