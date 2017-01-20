@@ -8,12 +8,12 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Insert keyboard menu in Administration
+# Insert keyboard configuration in Administration menu.
 sed -i "/Administration\">/ r jwmrc-menus-adm-keyboard.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
 
 # Log
-echo "${GV_LOG} * Insert keyboard menu in Administration."
+echo "${GV_LOG} * Insert keyboard configuration in Administration menu."
 
 # Reference
 #   https://wiki.debian.org/Keyboard
