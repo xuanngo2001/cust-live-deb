@@ -6,9 +6,18 @@ set -e
 
 while IFS='' read -r FILENAME || [[ -n "${FILENAME}" ]]; do
   
-  DIR_NAME=$(echo "${FILENAME}" | sed 's/to-dl-//' | sed 's/\.list$//')
-  mkdir -p "${DIR_NAME}"
+  if [ -e "${FILENAME}" ]; then
   
-  youtube-dl -o "${DIR_NAME}/%(title)s-%(id)s.%(ext)s" $(cat "${FILENAME}"| grep -v '^#' | awk NF)
+    DIR_NAME=$(echo "${FILENAME}" | sed 's/to-dl-//' | sed 's/\.list$//')
+    mkdir -p "${DIR_NAME}"
+    DIR_NAME=$(readlink -ev "${DIR_NAME}")
+    
+    youtube-dl -o "${DIR_NAME}/%(title)s-%(id)s.%(ext)s" $(cat "${FILENAME}"| grep -v '^#' | awk NF)
+    
+  else
+  
+    echo "Warning: Skip ${FILENAME}: no such file!"
+    
+  fi
  
-done < <( ls -1 to-dl-*.list )
+done < <( echo $@ )
