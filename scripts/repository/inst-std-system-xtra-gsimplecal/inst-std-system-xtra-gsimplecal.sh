@@ -16,6 +16,9 @@ apt-get -y --force-yes install gsimplecal
 # Insert gsimplecal in JWM system tray.
 yes | cp -av jwmrc-tray.xml ${GV_CLD_ROOT_DIR}/jwmrc-tray.xml
 
+# Overwrite configuration.
+yes | cp -av ./gsimplecal  /root/.config/
+
 # Log
 echo "${GV_LOG} * Install gsimplecal."
 echo "${GV_LOG} * Insert gsimplecal in JWM system tray."
