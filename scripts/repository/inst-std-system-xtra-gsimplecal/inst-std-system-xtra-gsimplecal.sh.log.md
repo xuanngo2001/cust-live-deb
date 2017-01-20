@@ -2,7 +2,7 @@
   * After this operation, 93.2 kB of additional disk space will be used.
   * Install gsimplecal.
   * Insert gsimplecal in JWM system tray.
-  * Disk size = 3928432K. Space Used = 116K.
+  * Disk size = 3928468K. Space Used = 124K.
   * The following NEW packages will be installed:
   ```bash
   gsimplecal
