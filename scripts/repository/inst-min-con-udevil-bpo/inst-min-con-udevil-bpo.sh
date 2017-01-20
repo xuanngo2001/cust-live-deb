@@ -16,8 +16,10 @@ apt-get -t jessie-backports -y --force-yes install udevil
 
 # Insert devmon in startup script.
 yes | cp "startup-devmon.sh" "${GV_CLD_ROOT_DIR}"
-chmod +x "${GV_CLD_ROOT_DIR}/startup-devmon.sh"
-sed -i "/## Insert your script files here ##/a ${GV_CLD_ROOT_DIR}/startup-devmon.sh&" /etc/init.d/startup.sh
+DEVMON_SCRIPT_PATH="${GV_CLD_ROOT_DIR}/startup-devmon.sh"
+chmod +x "${DEVMON_SCRIPT_PATH}"
+sed -i "/## Add internal scripts below ##/a ${GV_CLD_ROOT_DIR}/startup-devmon.sh&" ${GV_CLD_ROOT_DIR}/systemd/cld-systemd-after-boot.sh
+
 
 # Log
 UDEVIL_VER=$(udevil -h | head -n 1)

@@ -6,7 +6,6 @@ dialog
 dbus
 linux-image-amd64
 live-boot
-live-tools
 # ./inst-min-con-01-apt/inst-min-con-01-apt.sh
 
 # ./inst-min-con-01-debconf-utils/inst-min-con-01-debconf-utils.sh
@@ -17,7 +16,7 @@ locales
 localepurge
 # ./inst-min-con-03-proxy/inst-min-con-03-proxy.sh
 
-# ./inst-min-con-03-startup-script/inst-min-con-03-startup-script.sh
+# ./inst-min-con-03-systemd-hooks/inst-min-con-03-systemd-hooks.sh
 
 # ./inst-min-con-04-block-services-start-postinstall/inst-min-con-04-block-services-start-postinstall.sh
 
@@ -103,6 +102,8 @@ virtualbox-guest-dkms
 virtualbox-guest-utils
 # ./inst-min-con-xtra-curl/inst-min-con-xtra-curl.sh
 curl
+# ./inst-min-con-xtra-default-jre/inst-min-con-xtra-default-jre.sh
+default-jre
 # ./inst-min-con-xtra-dev-tool-tree/inst-min-con-xtra-dev-tool-tree.sh
 tree
 # ./inst-min-con-xtra-gnuplot/inst-min-con-xtra-gnuplot.sh
@@ -111,8 +112,6 @@ gnuplot
 imagemagick
 # ./inst-min-con-xtra-iso-iat/inst-min-con-xtra-iso-iat.sh
 iat
-# ./inst-min-con-xtra-java-jre/inst-min-con-xtra-java-jre.sh
-default-jre
 # ./inst-min-con-xtra-locate/inst-min-con-xtra-locate.sh
 locate
 # ./inst-min-con-xtra-macchanger/inst-min-con-xtra-macchanger.sh
@@ -121,10 +120,14 @@ macchanger
 mariadb-server
 # ./inst-min-con-xtra-mtran/inst-min-con-xtra-mtran.sh
 
+# ./inst-min-con-xtra-openjdk-8-jre/inst-min-con-xtra-openjdk-8-jre.sh
+openjdk-8-jre
 # ./inst-min-con-xtra-pdf-poppler-utils/inst-min-con-xtra-pdf-poppler-utils.sh
 poppler-utils
 # ./inst-min-con-xtra-php5/inst-min-con-xtra-php5.sh
 php5
+# ./inst-min-con-xtra-re-use-x/inst-min-con-xtra-re-use-x.sh
+
 # ./inst-min-con-xtra-timezone/inst-min-con-xtra-timezone.sh
 
 # ./inst-min-con-xtra-youtube-dl/inst-min-con-xtra-youtube-dl.sh
@@ -174,6 +177,8 @@ gnome-screenshot
 # ./inst-std-accessories-scite/inst-std-accessories-scite.sh
 scite
 at-spi2-core
+# ./inst-std-accessories-terminal-stterm/inst-std-accessories-terminal-stterm.sh
+stterm
 # ./inst-std-accessories-terminal-xfce/inst-std-accessories-terminal-xfce.sh
 xfce4-terminal
 # ./inst-std-accessories-thunar/inst-std-accessories-thunar.sh
@@ -203,6 +208,8 @@ xdg-utils
 gconf-service
 libgconf-2-4
 libxss1
+libpango1.0-0
+google-chrome-stable
 # ./inst-std-internet-xtra-rtorrent/inst-std-internet-xtra-rtorrent.sh
 rtorrent
 # ./inst-std-internet-xtra-transmission-gtk/inst-std-internet-xtra-transmission-gtk.sh
@@ -231,7 +238,7 @@ libreoffice-draw
 libreoffice-base
 libreoffice-math
 # ./inst-std-office-xtra-projectlibre/inst-std-office-xtra-projectlibre.sh
-default-jre
+
 # ./inst-std-system-alsamixer/inst-std-system-alsamixer.sh
 
 # ./inst-std-system-conky/inst-std-system-conky.sh
@@ -247,6 +254,8 @@ lxrandr
 wicd
 # ./inst-std-system-time-zone/inst-std-system-time-zone.sh
 
+# ./inst-std-system-xtra-gsimplecal/inst-std-system-xtra-gsimplecal.sh
+gsimplecal
 # ./inst-std-system-xtra-hardinfo/inst-std-system-xtra-hardinfo.sh
 hardinfo
 # ./inst-std-system-xtra-webcam-camorama/inst-std-system-xtra-webcam-camorama.sh
@@ -257,6 +266,7 @@ libjemalloc1
 blender
 # ./inst-std-xtra-dia/inst-std-xtra-dia.sh
 dia
+dia-shapes
 # ./inst-std-xtra-opw-drush8-phar/inst-std-xtra-opw-drush8-phar.sh
 
 # ./inst-std-xtra-opw-php5-gd/inst-std-xtra-opw-php5-gd.sh

@@ -1,17 +1,30 @@
 * >>>>>>>>> Running inst-min-con-cld-tools.sh ...
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-bash-color-meaning.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/fimg.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/tt.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-mkiso.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/if-usage-sum.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/twin.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/lspace.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/zz1.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-dpkg-list.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/unrarall.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/zz2.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/feh-ss.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-win-split.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/bash-color-meaning.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-dd-usb.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/win.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-remaster.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-zfs-hd.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/if-usage.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/tt4-perfect.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-persistence.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/geometry.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/geo.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/partition-automount.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/tt3.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-lsmodules.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/decor.sh to /usr/local/bin/.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/apt-dependency.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-list-icons.sh to /usr/local/bin/.
-  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-apt-dependency.sh to /usr/local/bin/.
-  * Disk size = 1856748K. Space Used = 88K.
+  * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/partition-swap-enable.sh to /usr/local/bin/.
+  * Disk size = 1818844K. Space Used = 168K.

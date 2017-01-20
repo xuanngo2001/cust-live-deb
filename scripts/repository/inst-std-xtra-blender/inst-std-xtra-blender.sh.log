@@ -8,16 +8,16 @@ Recommended packages:
   libtxc-dxtn-s2tc libtxc-dxtn-s2tc0 libtxc-dxtn0
 The following NEW packages will be installed:
   libdrm-amdgpu1 libgl1-mesa-dri libjemalloc1 libllvm3.8
-0 upgraded, 4 newly installed, 0 to remove and 26 not upgraded.
+0 upgraded, 4 newly installed, 0 to remove and 10 not upgraded.
 Need to get 15.4 MB of archives.
 After this operation, 59.9 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libdrm-amdgpu1 amd64 2.4.73-1~bpo8+1 [26.7 kB]
-Get:2 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libllvm3.8 amd64 1:3.8.1-12~bpo8+1 [10.4 MB]
-Get:3 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libgl1-mesa-dri amd64 12.0.4-2~bpo8+1 [4,883 kB]
-Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libjemalloc1 amd64 3.6.0-3 [89.1 kB]
-Fetched 15.4 MB in 0s (32.8 MB/s)
+Get:1 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libdrm-amdgpu1 amd64 2.4.73-1~bpo8+1 [26.7 kB]
+Get:2 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libllvm3.8 amd64 1:3.8.1-12~bpo8+1 [10.4 MB]
+Get:3 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libgl1-mesa-dri amd64 12.0.4-2~bpo8+1 [4,883 kB]
+Get:4 http://localhost/aptly-repo/master_jessie-main/ jessie/main libjemalloc1 amd64 3.6.0-3 [89.1 kB]
+Fetched 15.4 MB in 1s (12.6 MB/s)
 Selecting previously unselected package libdrm-amdgpu1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62152 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45791 files and directories currently installed.)
 Preparing to unpack .../libdrm-amdgpu1_2.4.73-1~bpo8+1_amd64.deb ...
 Unpacking libdrm-amdgpu1:amd64 (2.4.73-1~bpo8+1) ...
 Selecting previously unselected package libllvm3.8:amd64.
@@ -38,21 +38,7 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  blender-data dh-python fonts-droid libavdevice55 libboost-chrono1.55.0
-  libboost-locale1.55.0 libboost-regex1.55.0 libboost-thread1.55.0
-  libgtkglext1 libilmbase6 libjs-jquery libjs-jquery-ui libmpdec2
-  libopencolorio1 libopencv-core2.4 libopencv-highgui2.4 libopencv-imgproc2.4
-  libopenexr6 libopenimageio1.4 libpython3-stdlib libpython3.4
-  libpython3.4-minimal libpython3.4-stdlib libraw10 libspnav0 libtbb2
-  libtinyxml2.6.2 libwebp5 libyaml-cpp0.3 python3 python3-minimal python3.4
-  python3.4-minimal
-Suggested packages:
-  libjs-jquery-ui-docs spacenavd python3-doc python3-tk python3-venv
-  python3.4-venv python3.4-doc binfmt-support
-Recommended packages:
-  javascript-common
-The following NEW packages will be installed:
-  blender blender-data dh-python fonts-droid libavdevice55
+  blender-data dh-python fonts-droid libatomic1 libavdevice55
   libboost-chrono1.55.0 libboost-locale1.55.0 libboost-regex1.55.0
   libboost-thread1.55.0 libgtkglext1 libilmbase6 libjs-jquery libjs-jquery-ui
   libmpdec2 libopencolorio1 libopencv-core2.4 libopencv-highgui2.4
@@ -60,49 +46,67 @@ The following NEW packages will be installed:
   libpython3.4 libpython3.4-minimal libpython3.4-stdlib libraw10 libspnav0
   libtbb2 libtinyxml2.6.2 libwebp5 libyaml-cpp0.3 python3 python3-minimal
   python3.4 python3.4-minimal
-0 upgraded, 34 newly installed, 0 to remove and 26 not upgraded.
-Need to get 45.4 MB of archives.
+Suggested packages:
+  libjs-jquery-ui-docs spacenavd python3-doc python3-tk python3-venv
+  python3.4-venv python3.4-doc binutils binfmt-support
+Recommended packages:
+  javascript-common
+The following NEW packages will be installed:
+  blender blender-data dh-python fonts-droid libatomic1 libavdevice55
+  libboost-chrono1.55.0 libboost-locale1.55.0 libboost-regex1.55.0
+  libboost-thread1.55.0 libgtkglext1 libilmbase6 libjs-jquery libjs-jquery-ui
+  libmpdec2 libopencolorio1 libopencv-core2.4 libopencv-highgui2.4
+  libopencv-imgproc2.4 libopenexr6 libopenimageio1.4 libpython3-stdlib
+  libpython3.4 libpython3.4-minimal libpython3.4-stdlib libraw10 libspnav0
+  libtbb2 libtinyxml2.6.2 libwebp5 libyaml-cpp0.3 python3 python3-minimal
+  python3.4 python3.4-minimal
+0 upgraded, 35 newly installed, 0 to remove and 10 not upgraded.
+Need to get 45.5 MB of archives.
 After this operation, 190 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/jessie-main/ jessie/main fonts-droid all 1:4.4.4r2-6 [3,729 kB]
-Get:2 http://localhost/aptly-repo/jessie-main/ jessie/main libavdevice55 amd64 6:11.7-1~deb8u1 [87.0 kB]
-Get:3 http://localhost/aptly-repo/jessie-main/ jessie/main libboost-chrono1.55.0 amd64 1.55.0+dfsg-3 [35.1 kB]
-Get:4 http://localhost/aptly-repo/jessie-main/ jessie/main libboost-thread1.55.0 amd64 1.55.0+dfsg-3 [53.4 kB]
-Get:5 http://localhost/aptly-repo/jessie-main/ jessie/main libboost-locale1.55.0 amd64 1.55.0+dfsg-3 [254 kB]
-Get:6 http://localhost/aptly-repo/jessie-main/ jessie/main libboost-regex1.55.0 amd64 1.55.0+dfsg-3 [293 kB]
-Get:7 http://localhost/aptly-repo/jessie-main/ jessie/main libilmbase6 amd64 1.0.1-6.1 [64.1 kB]
-Get:8 http://localhost/aptly-repo/jessie-main/ jessie/main libmpdec2 amd64 2.4.1-1 [85.7 kB]
-Get:9 http://localhost/aptly-repo/jessie-main/ jessie/main libtbb2 amd64 4.2~20140122-5 [121 kB]
-Get:10 http://localhost/aptly-repo/jessie-main/ jessie/main libopencv-core2.4 amd64 2.4.9.1+dfsg-1+deb8u1 [719 kB]
-Get:11 http://localhost/aptly-repo/jessie-main/ jessie/main libgtkglext1 amd64 1.2.0-3.2 [89.1 kB]
-Get:12 http://localhost/aptly-repo/jessie-main/ jessie/main libopencv-imgproc2.4 amd64 2.4.9.1+dfsg-1+deb8u1 [652 kB]
-Get:13 http://localhost/aptly-repo/jessie-main/ jessie/main libopenexr6 amd64 1.6.1-8 [183 kB]
-Get:14 http://localhost/aptly-repo/jessie-main/ jessie/main libopencv-highgui2.4 amd64 2.4.9.1+dfsg-1+deb8u1 [115 kB]
-Get:15 http://localhost/aptly-repo/jessie-main/ jessie/main libpython3.4-minimal amd64 3.4.2-1 [492 kB]
-Get:16 http://localhost/aptly-repo/jessie-main/ jessie/main libpython3.4-stdlib amd64 3.4.2-1 [2,088 kB]
-Get:17 http://localhost/aptly-repo/jessie-main/ jessie/main libpython3.4 amd64 3.4.2-1 [1,315 kB]
-Get:18 http://localhost/aptly-repo/jessie-main/ jessie/main libraw10 amd64 0.16.0-9+deb8u2 [218 kB]
-Get:19 http://localhost/aptly-repo/jessie-main/ jessie/main libtinyxml2.6.2 amd64 2.6.2-2 [43.0 kB]
-Get:20 http://localhost/aptly-repo/jessie-main/ jessie/main libyaml-cpp0.3 amd64 0.3.0-1.1 [146 kB]
-Get:21 http://localhost/aptly-repo/jessie-main/ jessie/main python3.4-minimal amd64 3.4.2-1 [1,646 kB]
-Get:22 http://localhost/aptly-repo/jessie-main/ jessie/main libwebp5 amd64 0.4.1-1.2+b2 [201 kB]
-Get:23 http://localhost/aptly-repo/jessie-main/ jessie/main python3.4 amd64 3.4.2-1 [204 kB]
-Get:24 http://localhost/aptly-repo/jessie-main/ jessie/main python3-minimal amd64 3.4.2-2 [34.7 kB]
-Get:25 http://localhost/aptly-repo/jessie-main/ jessie/main libpython3-stdlib amd64 3.4.2-2 [18.1 kB]
-Get:26 http://localhost/aptly-repo/jessie-main/ jessie/main dh-python all 1.20141111-2 [66.4 kB]
-Get:27 http://localhost/aptly-repo/jessie-main/ jessie/main python3 amd64 3.4.2-2 [21.2 kB]
-Get:28 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main blender-data all 2.74+dfsg0-4~bpo8+1 [8,229 kB]
-Get:29 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main libjs-jquery all 1.11.3+dfsg-4~bpo8+1 [163 kB]
-Get:30 http://localhost/aptly-repo/jessie-main/ jessie/main libjs-jquery-ui all 1.10.1+dfsg-1 [499 kB]
-Get:31 http://localhost/aptly-repo/jessie-main/ jessie/main libopencolorio1 amd64 1.0.9~dfsg0-3 [342 kB]
-Get:32 http://localhost/aptly-repo/jessie-main/ jessie/main libopenimageio1.4 amd64 1.4.14~dfsg0-1 [1,412 kB]
-Get:33 http://localhost/aptly-repo/jessie-main/ jessie/main libspnav0 amd64 0.2.2-1 [8,130 B]
-Get:34 http://localhost/aptly-repo/jessie-backports-main/ jessie-backports/main blender amd64 2.74+dfsg0-4~bpo8+1 [21.8 MB]
-Extracting templates from packages: 88%Extracting templates from packages: 100%
-Fetched 45.4 MB in 1s (24.4 MB/s)
+Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main fonts-droid all 1:4.4.4r2-6 [3,729 kB]
+Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libatomic1 amd64 4.9.2-10 [8,992 B]
+Get:3 http://localhost/aptly-repo/master_jessie-main/ jessie/main libavdevice55 amd64 6:11.7-1~deb8u1 [87.0 kB]
+Get:4 http://localhost/aptly-repo/master_jessie-main/ jessie/main libboost-chrono1.55.0 amd64 1.55.0+dfsg-3 [35.1 kB]
+Get:5 http://localhost/aptly-repo/master_jessie-main/ jessie/main libboost-thread1.55.0 amd64 1.55.0+dfsg-3 [53.4 kB]
+Get:6 http://localhost/aptly-repo/master_jessie-main/ jessie/main libboost-locale1.55.0 amd64 1.55.0+dfsg-3 [254 kB]
+Get:7 http://localhost/aptly-repo/master_jessie-main/ jessie/main libboost-regex1.55.0 amd64 1.55.0+dfsg-3 [293 kB]
+Get:8 http://localhost/aptly-repo/master_jessie-main/ jessie/main libilmbase6 amd64 1.0.1-6.1 [64.1 kB]
+Get:9 http://localhost/aptly-repo/master_jessie-main/ jessie/main libmpdec2 amd64 2.4.1-1 [85.7 kB]
+Get:10 http://localhost/aptly-repo/master_jessie-main/ jessie/main libtbb2 amd64 4.2~20140122-5 [121 kB]
+Get:11 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopencv-core2.4 amd64 2.4.9.1+dfsg-1+deb8u1 [719 kB]
+Get:12 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgtkglext1 amd64 1.2.0-3.2 [89.1 kB]
+Get:13 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopencv-imgproc2.4 amd64 2.4.9.1+dfsg-1+deb8u1 [652 kB]
+Get:14 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopenexr6 amd64 1.6.1-8 [183 kB]
+Get:15 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopencv-highgui2.4 amd64 2.4.9.1+dfsg-1+deb8u1 [115 kB]
+Get:16 http://localhost/aptly-repo/master_jessie-main/ jessie/main libpython3.4-minimal amd64 3.4.2-1 [492 kB]
+Get:17 http://localhost/aptly-repo/master_jessie-main/ jessie/main libpython3.4-stdlib amd64 3.4.2-1 [2,088 kB]
+Get:18 http://localhost/aptly-repo/master_jessie-main/ jessie/main libpython3.4 amd64 3.4.2-1 [1,315 kB]
+Get:19 http://localhost/aptly-repo/master_jessie-main/ jessie/main libraw10 amd64 0.16.0-9+deb8u2 [218 kB]
+Get:20 http://localhost/aptly-repo/master_jessie-main/ jessie/main libtinyxml2.6.2 amd64 2.6.2-2 [43.0 kB]
+Get:21 http://localhost/aptly-repo/master_jessie-main/ jessie/main libyaml-cpp0.3 amd64 0.3.0-1.1 [146 kB]
+Get:22 http://localhost/aptly-repo/master_jessie-main/ jessie/main python3.4-minimal amd64 3.4.2-1 [1,646 kB]
+Get:23 http://localhost/aptly-repo/master_jessie-main/ jessie/main libwebp5 amd64 0.4.1-1.2+b2 [201 kB]
+Get:24 http://localhost/aptly-repo/master_jessie-main/ jessie/main python3.4 amd64 3.4.2-1 [204 kB]
+Get:25 http://localhost/aptly-repo/master_jessie-main/ jessie/main python3-minimal amd64 3.4.2-2 [34.7 kB]
+Get:26 http://localhost/aptly-repo/master_jessie-main/ jessie/main libpython3-stdlib amd64 3.4.2-2 [18.1 kB]
+Get:27 http://localhost/aptly-repo/master_jessie-main/ jessie/main dh-python all 1.20141111-2 [66.4 kB]
+Get:28 http://localhost/aptly-repo/master_jessie-main/ jessie/main python3 amd64 3.4.2-2 [21.2 kB]
+Get:29 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main blender-data all 2.74+dfsg0-4~bpo8+1 [8,229 kB]
+Get:30 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libjs-jquery all 1.11.3+dfsg-4~bpo8+1 [163 kB]
+Get:31 http://localhost/aptly-repo/master_jessie-main/ jessie/main libjs-jquery-ui all 1.10.1+dfsg-1 [499 kB]
+Get:32 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopencolorio1 amd64 1.0.9~dfsg0-3 [342 kB]
+Get:33 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopenimageio1.4 amd64 1.4.14~dfsg0-1 [1,412 kB]
+Get:34 http://localhost/aptly-repo/master_jessie-main/ jessie/main libspnav0 amd64 0.2.2-1 [8,130 B]
+Get:35 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main blender amd64 2.74+dfsg0-4~bpo8+1 [21.8 MB]
+Extracting templates from packages: 85%Extracting templates from packages: 100%
+Fetched 45.5 MB in 2s (15.5 MB/s)
 Selecting previously unselected package fonts-droid.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62190 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45829 files and directories currently installed.)
 Preparing to unpack .../fonts-droid_1%3a4.4.4r2-6_all.deb ...
 Unpacking fonts-droid (1:4.4.4r2-6) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../libatomic1_4.9.2-10_amd64.deb ...
+Unpacking libatomic1:amd64 (4.9.2-10) ...
 Selecting previously unselected package libavdevice55:amd64.
 Preparing to unpack .../libavdevice55_6%3a11.7-1~deb8u1_amd64.deb ...
 Unpacking libavdevice55:amd64 (6:11.7-1~deb8u1) ...
@@ -204,10 +208,12 @@ Preparing to unpack .../blender_2.74+dfsg0-4~bpo8+1_amd64.deb ...
 Unpacking blender (2.74+dfsg0-4~bpo8+1) ...
 Processing triggers for fontconfig (2.11.0-6.3+deb8u1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
+Processing triggers for desktop-file-utils (0.22-1) ...
 Processing triggers for mime-support (3.58) ...
 Processing triggers for menu (2.1.47) ...
 Processing triggers for hicolor-icon-theme (0.13-1) ...
 Setting up fonts-droid (1:4.4.4r2-6) ...
+Setting up libatomic1:amd64 (4.9.2-10) ...
 Setting up libavdevice55:amd64 (6:11.7-1~deb8u1) ...
 Setting up libboost-chrono1.55.0:amd64 (1.55.0+dfsg-3) ...
 Setting up libboost-thread1.55.0:amd64 (1.55.0+dfsg-3) ...
@@ -249,4 +255,4 @@ CLDS: * Install required packages for blender.
 CLDS: * Install blender3d.
 CLDS: * Insert Blender 3D menu in Graphics.
 CLDS: * http://download.blender.org/release/
-CLDS: * Disk size = 4382056K. Space Used = 289520K.
+CLDS: * Disk size = 4245836K. Space Used = 289612K.

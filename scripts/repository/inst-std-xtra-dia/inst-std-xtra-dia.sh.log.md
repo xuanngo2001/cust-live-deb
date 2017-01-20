@@ -1,9 +1,11 @@
 * >>>>>>>>> Running inst-std-xtra-dia.sh ...
-  * After this operation, 21.5 MB of additional disk space will be used.
+  * After this operation, 22.8 MB of additional disk space will be used.
   * Install Dia to draw diagrams.
   * Insert Dia menu in Graphics.
-  * Disk size = 4408076K. Space Used = 26020K.
+  * How to add a new shape to Dia: http://dia-installer.de/howto/create_shape/index.html.en
+  * Dia Shape Repository: http://dia-installer.de/shapes/index.html.en
+  * Disk size = 4276532K. Space Used = 30696K.
   * The following NEW packages will be installed:
   ```bash
-  dia dia-common dia-libs sgml-base xml-core
+  dia dia-common dia-libs dia-shapes sgml-base xml-core
   ```

@@ -19,8 +19,13 @@ apt-get -y --force-yes install gconf-service
 apt-get -y --force-yes install libgconf-2-4
 apt-get -y --force-yes install libxss1
 
+#apt-get -y --force-yes install libpango1.0-0
+
+# Add google-chrome sources list
+GF_ADD_SOURCE_LIST live "deb http://dl.google.com/linux/chrome/deb/ stable main"
+
 # Install google-chrome.
-dpkg -i google-chrome-stable_current_amd64.deb
+apt-get -y --force-yes install google-chrome-stable
 
 # Get google-chrome version.
 GOOGLE_CHROME_VERSION=$(google-chrome --version)
