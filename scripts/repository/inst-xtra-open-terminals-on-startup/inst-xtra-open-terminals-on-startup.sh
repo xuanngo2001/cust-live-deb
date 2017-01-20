@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install x11-xserver-utils
 apt-get -y --force-yes install wmctrl
 apt-get -y --force-yes install x11-utils
-apt-get -y --force-yes install xterm
+#apt-get -y --force-yes install xterm
 
 # Make open-terminals.sh run when JWM start. 
 yes | cp -av open-terminals.sh "${GV_CLD_ROOT_DIR}"
