@@ -5,3 +5,6 @@
 
     clock_label = Auckland
     clock_tz = :Pacific/Auckland
+
+# gsimplecal manual
+http://manpages.ubuntu.com/manpages/precise/man1/gsimplecal.1.html
