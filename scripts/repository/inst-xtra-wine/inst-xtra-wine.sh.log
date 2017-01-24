@@ -2,6 +2,23 @@ CLDS:>>>>>>>>> Running inst-xtra-wine.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+Suggested packages:
+  cups-bsd ttf-mscorefonts-installer opencl-icd wine64-preloader
+Recommended packages:
+  libodbc1 libosmesa6 libasound2-plugins fonts-wine wine32
+The following NEW packages will be installed:
+  libwine ocl-icd-libopencl1 wine64
+0 upgraded, 3 newly installed, 0 to remove and 10 not upgraded.
+Need to get 18.6 MB of archives.
+After this operation, 158 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main ocl-icd-libopencl1 amd64 2.2.3-1+deb8u1 [33.6 kB]
+Get:2 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libwine amd64 1.8.6-1~bpo8+1 [18.4 MB]
+Get:3 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main wine64 amd64 1.8.6-1~bpo8+1 [251 kB]
+Fetched 18.6 MB in 0s (40.4 MB/s)
+Download complete and in download only mode
+Reading package lists...
+Building dependency tree...
+Reading state information...
 The following extra packages will be installed:
   libwine ocl-icd-libopencl1 wine64
 Suggested packages:
@@ -12,15 +29,12 @@ Recommended packages:
 The following NEW packages will be installed:
   libwine ocl-icd-libopencl1 wine wine64
 0 upgraded, 4 newly installed, 0 to remove and 10 not upgraded.
-Need to get 18.8 MB of archives.
+Need to get 117 kB/18.8 MB of archives.
 After this operation, 158 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main ocl-icd-libopencl1 amd64 2.2.3-1+deb8u1 [33.6 kB]
-Get:2 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libwine amd64 1.8.6-1~bpo8+1 [18.4 MB]
-Get:3 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main wine64 amd64 1.8.6-1~bpo8+1 [251 kB]
-Get:4 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main wine all 1.8.6-1~bpo8+1 [117 kB]
-Fetched 18.8 MB in 0s (44.1 MB/s)
+Get:1 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main wine all 1.8.6-1~bpo8+1 [117 kB]
+Fetched 117 kB in 0s (0 B/s)
 Selecting previously unselected package ocl-icd-libopencl1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56982 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72000 files and directories currently installed.)
 Preparing to unpack .../ocl-icd-libopencl1_2.2.3-1+deb8u1_amd64.deb ...
 Unpacking ocl-icd-libopencl1:amd64 (2.2.3-1+deb8u1) ...
 Selecting previously unselected package libwine:amd64.
@@ -40,6 +54,264 @@ Setting up wine64 (1.8.6-1~bpo8+1) ...
 Setting up wine (1.8.6-1~bpo8+1) ...
 Processing triggers for libc-bin (2.19-18+deb8u6) ...
 Processing triggers for wine (1.8.6-1~bpo8+1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libwxbase3.0-0 libwxgtk3.0-0 python-wxversion
+The following NEW packages will be installed:
+  libwxbase3.0-0 libwxgtk3.0-0 python-wxgtk3.0 python-wxversion
+0 upgraded, 4 newly installed, 0 to remove and 10 not upgraded.
+Need to get 11.0 MB of archives.
+After this operation, 52.0 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libwxbase3.0-0 amd64 3.0.2-1+b1 [1,103 kB]
+Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libwxgtk3.0-0 amd64 3.0.2-1+b1 [4,608 kB]
+Get:3 http://localhost/aptly-repo/master_jessie-main/ jessie/main python-wxversion all 3.0.1.1+dfsg-2 [113 kB]
+Get:4 http://localhost/aptly-repo/master_jessie-main/ jessie/main python-wxgtk3.0 amd64 3.0.1.1+dfsg-2 [5,195 kB]
+Fetched 11.0 MB in 0s (45.3 MB/s)
+Selecting previously unselected package libwxbase3.0-0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73349 files and directories currently installed.)
+Preparing to unpack .../libwxbase3.0-0_3.0.2-1+b1_amd64.deb ...
+Unpacking libwxbase3.0-0:amd64 (3.0.2-1+b1) ...
+Selecting previously unselected package libwxgtk3.0-0:amd64.
+Preparing to unpack .../libwxgtk3.0-0_3.0.2-1+b1_amd64.deb ...
+Unpacking libwxgtk3.0-0:amd64 (3.0.2-1+b1) ...
+Selecting previously unselected package python-wxversion.
+Preparing to unpack .../python-wxversion_3.0.1.1+dfsg-2_all.deb ...
+Unpacking python-wxversion (3.0.1.1+dfsg-2) ...
+Selecting previously unselected package python-wxgtk3.0.
+Preparing to unpack .../python-wxgtk3.0_3.0.1.1+dfsg-2_amd64.deb ...
+Unpacking python-wxgtk3.0 (3.0.1.1+dfsg-2) ...
+Setting up libwxbase3.0-0:amd64 (3.0.2-1+b1) ...
+Setting up libwxgtk3.0-0:amd64 (3.0.2-1+b1) ...
+Setting up python-wxversion (3.0.1.1+dfsg-2) ...
+Setting up python-wxgtk3.0 (3.0.1.1+dfsg-2) ...
+update-alternatives: using /usr/lib/wx/python/wx3.0.pth to provide /usr/lib/wx/python/wx.pth (wx.pth) in auto mode
+Processing triggers for libc-bin (2.19-18+deb8u6) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libmspack0
+The following NEW packages will be installed:
+  cabextract libmspack0
+0 upgraded, 2 newly installed, 0 to remove and 10 not upgraded.
+Need to get 77.0 kB of archives.
+After this operation, 240 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libmspack0 amd64 0.5-1 [46.5 kB]
+Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main cabextract amd64 1.4-5 [30.5 kB]
+Fetched 77.0 kB in 0s (4,190 kB/s)
+Selecting previously unselected package libmspack0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73894 files and directories currently installed.)
+Preparing to unpack .../libmspack0_0.5-1_amd64.deb ...
+Unpacking libmspack0:amd64 (0.5-1) ...
+Selecting previously unselected package cabextract.
+Preparing to unpack .../cabextract_1.4-5_amd64.deb ...
+Unpacking cabextract (1.4-5) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up libmspack0:amd64 (0.5-1) ...
+Setting up cabextract (1.4-5) ...
+Processing triggers for libc-bin (2.19-18+deb8u6) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  mesa-utils
+0 upgraded, 1 newly installed, 0 to remove and 10 not upgraded.
+Need to get 30.0 kB of archives.
+After this operation, 141 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main mesa-utils amd64 8.2.0-1 [30.0 kB]
+Fetched 30.0 kB in 0s (0 B/s)
+Selecting previously unselected package mesa-utils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73918 files and directories currently installed.)
+Preparing to unpack .../mesa-utils_8.2.0-1_amd64.deb ...
+Unpacking mesa-utils (8.2.0-1) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up mesa-utils (8.2.0-1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  gettext-base
+0 upgraded, 1 newly installed, 0 to remove and 10 not upgraded.
+Need to get 121 kB of archives.
+After this operation, 606 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main gettext-base amd64 0.19.8.1-1~bpo8+1 [121 kB]
+Fetched 121 kB in 0s (7,508 kB/s)
+Selecting previously unselected package gettext-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73929 files and directories currently installed.)
+Preparing to unpack .../gettext-base_0.19.8.1-1~bpo8+1_amd64.deb ...
+Unpacking gettext-base (0.19.8.1-1~bpo8+1) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up gettext-base (0.19.8.1-1~bpo8+1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libencode-locale-perl libfile-listing-perl libhtml-parser-perl
+  libhtml-tagset-perl libhtml-tree-perl libhttp-cookies-perl libhttp-date-perl
+  libhttp-message-perl libhttp-negotiate-perl libio-html-perl
+  libio-socket-ssl-perl liblwp-mediatypes-perl liblwp-protocol-https-perl
+  libnet-http-perl libnet-ssleay-perl libtimedate-perl liburi-perl libwww-perl
+  libwww-robotrules-perl
+Suggested packages:
+  libterm-readline-gnu-perl libterm-readline-perl-perl libdata-dump-perl
+  libcrypt-ssleay-perl libauthen-ntlm-perl
+Recommended packages:
+  libhtml-format-perl libhtml-form-perl libhttp-daemon-perl libmailtools-perl
+The following NEW packages will be installed:
+  icoutils libencode-locale-perl libfile-listing-perl libhtml-parser-perl
+  libhtml-tagset-perl libhtml-tree-perl libhttp-cookies-perl libhttp-date-perl
+  libhttp-message-perl libhttp-negotiate-perl libio-html-perl
+  libio-socket-ssl-perl liblwp-mediatypes-perl liblwp-protocol-https-perl
+  libnet-http-perl libnet-ssleay-perl libtimedate-perl liburi-perl libwww-perl
+  libwww-robotrules-perl
+0 upgraded, 20 newly installed, 0 to remove and 10 not upgraded.
+Need to get 1,409 kB of archives.
+After this operation, 4,242 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libencode-locale-perl all 1.03-1 [13.6 kB]
+Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libtimedate-perl all 2.3000-2 [42.2 kB]
+Get:3 http://localhost/aptly-repo/master_jessie-main/ jessie/main libhttp-date-perl all 6.02-1 [10.7 kB]
+Get:4 http://localhost/aptly-repo/master_jessie-main/ jessie/main libfile-listing-perl all 6.04-1 [10.3 kB]
+Get:5 http://localhost/aptly-repo/master_jessie-main/ jessie/main liburi-perl all 1.64-1 [95.5 kB]
+Get:6 http://localhost/aptly-repo/master_jessie-main/ jessie/main libhtml-tagset-perl all 3.20-2 [13.5 kB]
+Get:7 http://localhost/aptly-repo/master_jessie-main/ jessie/main libhtml-parser-perl amd64 3.71-1+b3 [109 kB]
+Get:8 http://localhost/aptly-repo/master_jessie-main/ jessie/main libhtml-tree-perl all 5.03-1 [210 kB]
+Get:9 http://localhost/aptly-repo/master_jessie-main/ jessie/main libio-html-perl all 1.001-1 [17.6 kB]
+Get:10 http://localhost/aptly-repo/master_jessie-main/ jessie/main liblwp-mediatypes-perl all 6.02-1 [22.1 kB]
+Get:11 http://localhost/aptly-repo/master_jessie-main/ jessie/main libhttp-message-perl all 6.06-1 [80.1 kB]
+Get:12 http://localhost/aptly-repo/master_jessie-main/ jessie/main libhttp-cookies-perl all 6.01-1 [17.4 kB]
+Get:13 http://localhost/aptly-repo/master_jessie-main/ jessie/main libhttp-negotiate-perl all 6.00-2 [13.6 kB]
+Get:14 http://localhost/aptly-repo/master_jessie-main/ jessie/main libnet-ssleay-perl amd64 1.65-1+deb8u1 [277 kB]
+Get:15 http://localhost/aptly-repo/master_jessie-main/ jessie/main libio-socket-ssl-perl all 2.002-2+deb8u2 [172 kB]
+Get:16 http://localhost/aptly-repo/master_jessie-main/ jessie/main libnet-http-perl all 6.07-1 [24.8 kB]
+Get:17 http://localhost/aptly-repo/master_jessie-main/ jessie/main liblwp-protocol-https-perl all 6.06-2 [9,582 B]
+Get:18 http://localhost/aptly-repo/master_jessie-main/ jessie/main libwww-robotrules-perl all 6.01-1 [14.3 kB]
+Get:19 http://localhost/aptly-repo/master_jessie-main/ jessie/main libwww-perl all 6.08-1 [194 kB]
+Get:20 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main icoutils amd64 0.31.0-2+deb8u2 [61.2 kB]
+Fetched 1,409 kB in 0s (6,764 kB/s)
+Selecting previously unselected package libencode-locale-perl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73992 files and directories currently installed.)
+Preparing to unpack .../libencode-locale-perl_1.03-1_all.deb ...
+Unpacking libencode-locale-perl (1.03-1) ...
+Selecting previously unselected package libtimedate-perl.
+Preparing to unpack .../libtimedate-perl_2.3000-2_all.deb ...
+Unpacking libtimedate-perl (2.3000-2) ...
+Selecting previously unselected package libhttp-date-perl.
+Preparing to unpack .../libhttp-date-perl_6.02-1_all.deb ...
+Unpacking libhttp-date-perl (6.02-1) ...
+Selecting previously unselected package libfile-listing-perl.
+Preparing to unpack .../libfile-listing-perl_6.04-1_all.deb ...
+Unpacking libfile-listing-perl (6.04-1) ...
+Selecting previously unselected package liburi-perl.
+Preparing to unpack .../liburi-perl_1.64-1_all.deb ...
+Unpacking liburi-perl (1.64-1) ...
+Selecting previously unselected package libhtml-tagset-perl.
+Preparing to unpack .../libhtml-tagset-perl_3.20-2_all.deb ...
+Unpacking libhtml-tagset-perl (3.20-2) ...
+Selecting previously unselected package libhtml-parser-perl.
+Preparing to unpack .../libhtml-parser-perl_3.71-1+b3_amd64.deb ...
+Unpacking libhtml-parser-perl (3.71-1+b3) ...
+Selecting previously unselected package libhtml-tree-perl.
+Preparing to unpack .../libhtml-tree-perl_5.03-1_all.deb ...
+Unpacking libhtml-tree-perl (5.03-1) ...
+Selecting previously unselected package libio-html-perl.
+Preparing to unpack .../libio-html-perl_1.001-1_all.deb ...
+Unpacking libio-html-perl (1.001-1) ...
+Selecting previously unselected package liblwp-mediatypes-perl.
+Preparing to unpack .../liblwp-mediatypes-perl_6.02-1_all.deb ...
+Unpacking liblwp-mediatypes-perl (6.02-1) ...
+Selecting previously unselected package libhttp-message-perl.
+Preparing to unpack .../libhttp-message-perl_6.06-1_all.deb ...
+Unpacking libhttp-message-perl (6.06-1) ...
+Selecting previously unselected package libhttp-cookies-perl.
+Preparing to unpack .../libhttp-cookies-perl_6.01-1_all.deb ...
+Unpacking libhttp-cookies-perl (6.01-1) ...
+Selecting previously unselected package libhttp-negotiate-perl.
+Preparing to unpack .../libhttp-negotiate-perl_6.00-2_all.deb ...
+Unpacking libhttp-negotiate-perl (6.00-2) ...
+Selecting previously unselected package libnet-ssleay-perl.
+Preparing to unpack .../libnet-ssleay-perl_1.65-1+deb8u1_amd64.deb ...
+Unpacking libnet-ssleay-perl (1.65-1+deb8u1) ...
+Selecting previously unselected package libio-socket-ssl-perl.
+Preparing to unpack .../libio-socket-ssl-perl_2.002-2+deb8u2_all.deb ...
+Unpacking libio-socket-ssl-perl (2.002-2+deb8u2) ...
+Selecting previously unselected package libnet-http-perl.
+Preparing to unpack .../libnet-http-perl_6.07-1_all.deb ...
+Unpacking libnet-http-perl (6.07-1) ...
+Selecting previously unselected package liblwp-protocol-https-perl.
+Preparing to unpack .../liblwp-protocol-https-perl_6.06-2_all.deb ...
+Unpacking liblwp-protocol-https-perl (6.06-2) ...
+Selecting previously unselected package libwww-robotrules-perl.
+Preparing to unpack .../libwww-robotrules-perl_6.01-1_all.deb ...
+Unpacking libwww-robotrules-perl (6.01-1) ...
+Selecting previously unselected package libwww-perl.
+Preparing to unpack .../libwww-perl_6.08-1_all.deb ...
+Unpacking libwww-perl (6.08-1) ...
+Selecting previously unselected package icoutils.
+Preparing to unpack .../icoutils_0.31.0-2+deb8u2_amd64.deb ...
+Unpacking icoutils (0.31.0-2+deb8u2) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up libencode-locale-perl (1.03-1) ...
+Setting up libtimedate-perl (2.3000-2) ...
+Setting up libhttp-date-perl (6.02-1) ...
+Setting up libfile-listing-perl (6.04-1) ...
+Setting up liburi-perl (1.64-1) ...
+Setting up libhtml-tagset-perl (3.20-2) ...
+Setting up libhtml-parser-perl (3.71-1+b3) ...
+Setting up libhtml-tree-perl (5.03-1) ...
+Setting up libio-html-perl (1.001-1) ...
+Setting up liblwp-mediatypes-perl (6.02-1) ...
+Setting up libhttp-message-perl (6.06-1) ...
+Setting up libhttp-cookies-perl (6.01-1) ...
+Setting up libhttp-negotiate-perl (6.00-2) ...
+Setting up libnet-ssleay-perl (1.65-1+deb8u1) ...
+Setting up libio-socket-ssl-perl (2.002-2+deb8u2) ...
+Setting up libnet-http-perl (6.07-1) ...
+Setting up libwww-robotrules-perl (6.01-1) ...
+Setting up liblwp-protocol-https-perl (6.06-2) ...
+Setting up libwww-perl (6.08-1) ...
+Setting up icoutils (0.31.0-2+deb8u2) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  p7zip-rar
+The following NEW packages will be installed:
+  p7zip-full
+0 upgraded, 1 newly installed, 0 to remove and 10 not upgraded.
+Need to get 924 kB of archives.
+After this operation, 3,828 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main p7zip-full amd64 9.20.1~dfsg.1-4.1+deb8u2 [924 kB]
+Fetched 924 kB in 0s (34.6 MB/s)
+Selecting previously unselected package p7zip-full.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74503 files and directories currently installed.)
+Preparing to unpack .../p7zip-full_9.20.1~dfsg.1-4.1+deb8u2_amd64.deb ...
+Unpacking p7zip-full (9.20.1~dfsg.1-4.1+deb8u2) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up p7zip-full (9.20.1~dfsg.1-4.1+deb8u2) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  ttf-mscorefonts-installer scrot
+The following NEW packages will be installed:
+  playonlinux
+0 upgraded, 1 newly installed, 0 to remove and 10 not upgraded.
+Need to get 1,190 kB of archives.
+After this operation, 3,717 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-contrib/ jessie/contrib playonlinux all 4.2.5-1 [1,190 kB]
+Fetched 1,190 kB in 0s (33.8 MB/s)
+Selecting previously unselected package playonlinux.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74567 files and directories currently installed.)
+Preparing to unpack .../playonlinux_4.2.5-1_all.deb ...
+Unpacking playonlinux (4.2.5-1) ...
+Processing triggers for menu (2.1.47) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Processing triggers for desktop-file-utils (0.22-1) ...
+Processing triggers for mime-support (3.58) ...
+Setting up playonlinux (4.2.5-1) ...
+Processing triggers for menu (2.1.47) ...
 CLDS: * Install wine so that you can run Windows applications.
 CLDS: * You need to run 'wine winecfg' before using wine. This is a workaround of a bug.
-CLDS: * Disk size = 5135320K. Space Used = 175496K.
+CLDS: * Disk size = 5398824K. Space Used = 267492K.

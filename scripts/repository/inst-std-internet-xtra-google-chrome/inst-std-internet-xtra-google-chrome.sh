@@ -22,7 +22,7 @@ apt-get -y --force-yes install libxss1
 #apt-get -y --force-yes install libpango1.0-0
 
 # Add google-chrome sources list
-GF_ADD_SOURCE_LIST live "deb http://dl.google.com/linux/chrome/deb/ stable main"
+#GF_ADD_SOURCE_LIST live "deb http://dl.google.com/linux/chrome/deb/ stable main"
 
 # Install google-chrome.
 apt-get -y --force-yes install google-chrome-stable
