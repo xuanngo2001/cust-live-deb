@@ -3,22 +3,22 @@ GtkCalendar.highlight
 {
 	background-color: #398ee7;
 	color: white;
+	font-weight: bold;
 }
+
 /*Calendar content*/
 GtkCalendar.view
 {
 	background-color: $selected_bg_color;
 	text-align: right;
 }
+
 /* day selected */
 GtkCalendar:selected
 {
 	background-color: $selected_bg_color;
 }
-GtkCalendar.entry
-{
-	color: red;
-}
+
 
 /* Month and year */
 GtkCalendar.header
