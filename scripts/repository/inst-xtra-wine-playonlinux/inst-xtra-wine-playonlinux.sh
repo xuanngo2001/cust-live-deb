@@ -19,6 +19,14 @@ apt-get -y --force-yes install p7zip-full
 # Install playonlinux.
 apt-get -y --force-yes install playonlinux
 
+# Insert playonlinux in Internet menu.
+sed -i "/Internet\">/ r jwmrc-menus-inet-playonlinux.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+
+
+# Enable run as root.
+yes | cp -av mainwindow.py /usr/share/playonlinux/python/
+yes | cp -av sources /usr/share/playonlinux/lib/
 
 # Log
 echo "${GV_LOG} * Install playonlinux."
+echo "${GV_LOG} * Insert playonlinux in Internet menu."
