@@ -7,6 +7,14 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Install dependencies.
+apt-get -y --force-yes install python-wxgtk3.0
+apt-get -y --force-yes install cabextract
+apt-get -y --force-yes install mesa-utils
+apt-get -y --force-yes install gettext-base
+apt-get -y --force-yes install icoutils
+apt-get -y --force-yes install p7zip-full
+
 
 # Install playonlinux.
 apt-get -y --force-yes install playonlinux
