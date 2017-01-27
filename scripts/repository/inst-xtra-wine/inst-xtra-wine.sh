@@ -17,14 +17,6 @@ apt-get -y --force-yes install wine
 #apt-get -y --force-yes install mono-vbnc
 #dpkg --add-architecture i386 && apt-get update && apt-get install wine32
 
-apt-get -y --force-yes install python-wxgtk3.0
-apt-get -y --force-yes install cabextract
-apt-get -y --force-yes install mesa-utils
-apt-get -y --force-yes install gettext-base
-apt-get -y --force-yes install icoutils
-apt-get -y --force-yes install p7zip-full
-
-apt-get -y --force-yes install playonlinux
 
 # Log
 echo "${GV_LOG} * Install wine so that you can run Windows applications."
