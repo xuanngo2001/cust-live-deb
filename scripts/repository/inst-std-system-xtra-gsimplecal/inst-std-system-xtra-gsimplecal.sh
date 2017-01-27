@@ -23,3 +23,5 @@ yes | cp -av gtk.css  /root/.config/gtk-3.0/
 # Log
 echo "${GV_LOG} * Install gsimplecal."
 echo "${GV_LOG} * Insert gsimplecal in JWM system tray."
+echo "${GV_LOG} * Overwrite configuration."
+echo "${GV_LOG} * Overwrite gtk calendar style."
