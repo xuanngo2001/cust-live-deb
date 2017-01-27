@@ -5,7 +5,8 @@
   * Insert Iceweasel in Internet menu.
   * To update Adobe Flash Player: update-flashplugin-nonfree --install.
   * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/.
-  * Disk size = 3441872K. Space Used = 171400K.
+  * Supported browsers by flashplugin-nonfree: https://wiki.debian.org/FlashPlayer.
+  * Disk size = 3421388K. Space Used = 171392K.
   * The following NEW packages will be installed:
   ```bash
   firefox-esr iceweasel libevent-2.0-5 libhunspell-1.3-0
