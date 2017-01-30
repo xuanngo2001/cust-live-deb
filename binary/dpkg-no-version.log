@@ -68,6 +68,7 @@ dia-libs
 dia-shapes
 dialog
 diffutils
+dkms
 dmidecode
 dmsetup
 dpkg
@@ -77,6 +78,7 @@ exfat-fuse
 exfat-utils
 exo-utils
 feh
+file
 findutils
 firmware-amd-graphics
 firmware-atheros
@@ -106,7 +108,9 @@ fonts-opensymbol
 fonts-wine
 freecad
 fuse
+gcc
 gcc-4.8-base
+gcc-4.9
 gcc-4.9-base
 gconf-service
 gconf2
@@ -133,6 +137,7 @@ grep
 groff-base
 gsettings-desktop-schemas
 gsimplecal
+guile-2.0-libs
 gzip
 hardinfo
 hicolor-icon-theme
@@ -179,6 +184,7 @@ libaprutil1-ldap
 libapt-inst1.5
 libapt-pkg4.12
 libart-2.0-2
+libasan1
 libasound2
 libasound2-data
 libass5
@@ -233,7 +239,9 @@ libburn4
 libbz2-1.0
 libc-ares2
 libc-bin
+libc-dev-bin
 libc6
+libc6-dev
 libcaca0
 libcairo-gobject2
 libcairo2
@@ -250,6 +258,7 @@ libcdr-0.1-1
 libcdt5
 libcgraph6
 libchromaprint0
+libcilkrts5
 libcloog-isl4
 libclucene-contribs1
 libclucene-core1
@@ -322,6 +331,8 @@ libfribidi0
 libfuse2
 libgail18
 libgbm1
+libgc1c2
+libgcc-4.9-dev
 libgcc1
 libgconf-2-4
 libgcrypt20
@@ -407,6 +418,7 @@ libisl10
 libiso9660-8
 libisoburn1
 libisofs6
+libitm1
 libiw30
 libjack-jackd2-0
 libjasper1
@@ -443,6 +455,7 @@ liblocale-gettext-perl
 liblogging-stdlog0
 liblognorm1
 liblqr-1-0
+liblsan0
 libltdl7
 liblua5.1-0
 liblua5.2-0
@@ -502,10 +515,12 @@ libnewt0.52
 libnfnetlink0
 libnl-3-200
 libnl-genl-3-200
+libnotify-bin
 libnotify4
 libnspr4
 libnss3
 libntdb1
+libnvpair1linux
 liboce-foundation10
 liboce-modeling10
 liboce-ocaf-lite10
@@ -679,9 +694,12 @@ libtimedate-perl
 libtinfo5
 libtinyxml2.6.2
 libtk8.6
+libtsan0
 libtwolame0
+libubsan0
 libudev1
 libudisks2-0
+libunistring0
 libupnp6
 liburi-perl
 libusageenvironment2
@@ -690,6 +708,7 @@ libusb-1.0-0
 libustr-1.0-1
 libutvideo15
 libuuid1
+libuutil1linux
 libv4l-0
 libv4lconvert0
 libva-glx1
@@ -786,12 +805,20 @@ libxxf86vm1
 libyajl2
 libyaml-0-2
 libyaml-cpp0.3
+libzfs2linux
 libzipios++0c2a
+libzpool2linux
 libzvbi-common
 libzvbi0
 linux-base
+linux-compiler-gcc-4.9-x86
+linux-headers-4.8.0-0.bpo.2-amd64
+linux-headers-4.8.0-0.bpo.2-common
+linux-headers-amd64
 linux-image-4.8.0-0.bpo.2-amd64-unsigned
 linux-image-amd64
+linux-kbuild-4.8
+linux-libc-dev
 live-boot
 live-boot-initramfs-tools
 localepurge
@@ -801,9 +828,11 @@ login
 logrotate
 lp-solve
 lsb-base
+lsb-release
 lsof
 lxrandr
 macchanger
+make-guile
 man-db
 manpages
 mariadb-client-10.0
@@ -846,6 +875,7 @@ pandoc
 pandoc-data
 parted
 passwd
+patch
 pciutils
 perl
 perl-base
@@ -937,6 +967,7 @@ sensible-utils
 sgml-base
 shared-mime-info
 speedcrunch
+spl-dkms
 sqlite3
 squashfs-tools
 startpar
@@ -970,6 +1001,9 @@ ure
 util-linux
 vim-common
 vim-tiny
+virtualbox-guest-dkms
+virtualbox-guest-utils
+virtualbox-guest-x11
 vlc-data
 vlc-nox
 volumeicon-alsa
@@ -1030,5 +1064,8 @@ xserver-xorg-video-trident
 xserver-xorg-video-vesa
 xserver-xorg-video-vmware
 xz-utils
+zfs-dkms
+zfs-initramfs
+zfsutils-linux
 zip
 zlib1g

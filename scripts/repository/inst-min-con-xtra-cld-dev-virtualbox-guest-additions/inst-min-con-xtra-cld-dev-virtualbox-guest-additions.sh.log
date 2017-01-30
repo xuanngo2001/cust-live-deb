@@ -45,7 +45,7 @@ Get:19 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backport
 Get:20 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-kbuild-4.8 amd64 4.8.15-2~bpo8+2 [610 kB]
 Get:21 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-headers-4.8.0-0.bpo.2-amd64 amd64 4.8.15-2~bpo8+2 [455 kB]
 Get:22 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-headers-amd64 amd64 4.8+77~bpo8+1 [5,910 B]
-Fetched 24.9 MB in 0s (38.1 MB/s)
+Fetched 24.9 MB in 0s (41.8 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -84,7 +84,7 @@ Get:9 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports
 Get:10 http://localhost/aptly-repo/master_jessie-main/ jessie/main libc-dev-bin amd64 2.19-18+deb8u7 [238 kB]
 Get:11 http://localhost/aptly-repo/master_jessie-main/ jessie/main linux-libc-dev amd64 3.16.39-1 [1,045 kB]
 Get:12 http://localhost/aptly-repo/master_jessie-main/ jessie/main libc6-dev amd64 2.19-18+deb8u7 [2,002 kB]
-Fetched 6,527 kB in 0s (32.7 MB/s)
+Fetched 6,527 kB in 0s (34.9 MB/s)
 Selecting previously unselected package libgc1c2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17475 files and directories currently installed.)
 Preparing to unpack .../libgc1c2_1%3a7.2d-6.4_amd64.deb ...
@@ -245,7 +245,7 @@ Need to get 1,010 kB of archives.
 After this operation, 6,798 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib virtualbox-guest-utils amd64 5.1.8-dfsg-6~bpo8+2 [418 kB]
 Get:2 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib virtualbox-guest-dkms all 5.1.8-dfsg-6~bpo8+2 [592 kB]
-Fetched 1,010 kB in 0s (16.5 MB/s)
+Fetched 1,010 kB in 0s (30.6 MB/s)
 Selecting previously unselected package virtualbox-guest-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32282 files and directories currently installed.)
 Preparing to unpack .../virtualbox-guest-utils_5.1.8-dfsg-6~bpo8+2_amd64.deb ...
@@ -283,10 +283,10 @@ Running module version sanity check.
  - Installation
    - Installing to /lib/modules/4.8.0-0.bpo.2-amd64/updates/
 
-depmod.....
+depmod......
 
 DKMS: install completed.
 Processing triggers for systemd (215-17+deb8u6) ...
 CLDS: * Install virtualbox-guest-utils to access shared folder. No need for x11. Less error prone.
 CLDS: * VirtualBox guest additions installed: version: 5.1.8_Debian r111374.
-CLDS: * Disk size = 2267508K. Space Used = 189924K.
+CLDS: * Disk size = 2267616K. Space Used = 189924K.
