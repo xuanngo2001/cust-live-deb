@@ -26,5 +26,6 @@ echo "${GV_LOG} * Install de/compressor: unrar."
 echo "${GV_LOG} * Install de/compressor: unzip."
 echo "${GV_LOG} * Install de/compressor: zip."
 echo "${GV_LOG} * Install de/compressor: p7zip."
+echo "${GV_LOG} * Add universal extractor."
 
 
