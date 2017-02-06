@@ -36,3 +36,5 @@ function extract {
     done
 fi
 }
+
+extract $@
