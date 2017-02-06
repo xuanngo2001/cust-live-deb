@@ -17,7 +17,7 @@ apt-get -y --force-yes install p7zip
 yes | cp -a ./rarlinux-x64-5.4.0/rar /usr/bin
 
 # Add universal extractor.
-yes | cp -av extract.sh /usr/local/bin/
+yes | cp -av ./extract/*.sh /usr/local/bin/
 
 # Log
 echo "${GV_LOG} * Install de/compressor: bzip2."
