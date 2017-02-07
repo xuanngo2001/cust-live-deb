@@ -8,7 +8,7 @@
   * After this operation, 162 MB of additional disk space will be used.
   * Install playonlinux.
   * Insert playonlinux in Internet menu.
-  * Disk size = 5408436K. Space Used = 267448K.
+  * Disk size = 5408244K. Space Used = 267448K.
   * The following NEW packages will be installed:
   ```bash
   libwxbase3.0-0 libwxgtk3.0-0 python-wxgtk3.0 python-wxversion
