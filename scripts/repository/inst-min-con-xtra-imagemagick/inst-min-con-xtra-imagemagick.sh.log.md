@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-imagemagick.sh ...
   * After this operation, 19.1 MB of additional disk space will be used.
   * Install imagemagick to process image from command line.
-  * Disk size = 2360696K. Space Used = 23800K.
+  * Disk size = 2360740K. Space Used = 23800K.
   * The following NEW packages will be installed:
   ```bash
   hicolor-icon-theme imagemagick imagemagick-6.q16 imagemagick-common
