@@ -11,4 +11,4 @@ echo "$0: $(date)\n" >> /root/cld/boot-sequence.txt
 MASTER_LOG="/root/cld/systemd/$(basename "$0").log"
 
 
-/root/cld/systemd/user/cld-user-before-shutdown-halt-reboot.sh | tee -a "${MASTER_LOG}" /root/cld/systemd/user/cld-user-before-shutdown-halt-reboot.log
+/root/cld/systemd/user/cld-user-before-shutdown-halt-reboot.sh 2>&1 | tee -a "${MASTER_LOG}" /root/cld/systemd/user/cld-user-before-shutdown-halt-reboot.log
