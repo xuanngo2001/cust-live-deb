@@ -18,7 +18,9 @@ yes | cp -av jwmrc-tray.xml ${GV_CLD_ROOT_DIR}/jwmrc-tray.xml
 yes | cp -av ./gsimplecal  /root/.config/
 
 # Overwrite gtk calendar style
-yes | cp -av gtk.css  /root/.config/gtk-3.0/
+GTK_CONFIG_DIR=/root/.config/gtk-3.0/
+mkdir -p "${GTK_CONFIG_DIR}"
+yes | cp -av gtk.css  "${GTK_CONFIG_DIR}"
 
 # Log
 echo "${GV_LOG} * Install gsimplecal."
