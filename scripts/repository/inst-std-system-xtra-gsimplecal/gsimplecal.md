@@ -8,3 +8,6 @@
 
 # gsimplecal manual
 http://manpages.ubuntu.com/manpages/precise/man1/gsimplecal.1.html
+
+# Style
+* https://github.com/limelime/cust-live-deb/issues/184
