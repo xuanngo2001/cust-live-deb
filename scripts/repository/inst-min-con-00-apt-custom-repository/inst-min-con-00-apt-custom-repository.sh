@@ -29,7 +29,7 @@ GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_jessie-security-n
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_jessie-updates-contrib jessie-updates contrib"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_jessie-updates-main jessie-updates main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_jessie-updates-non-free jessie-updates non-free"
-
+GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_virtualbox-contrib jessie contrib"
 
 #GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/aptly-nightly-main nightly main"
 #GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/deb-multimedia-main jessie main"
