@@ -27,6 +27,8 @@ set -e
 	# Insert content between patterns.
 	sed  -i "/${CPU_START}/ r ${CPU_CONKY}" /root/.conkyrc
 	
+  ### Prefix the total number of CPUs
+  sed -i "/}PROCESSORS /s/\[.*\]/[${CPU_NUM}]/" /root/.conkyrc
 
 #---- NETWORK: Add available network interfaces ----#
   IFACE_START="### IFACE-START"
