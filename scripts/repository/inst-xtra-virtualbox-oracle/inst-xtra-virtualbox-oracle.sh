@@ -20,7 +20,8 @@ PKGS_LIST="dkms libc6-dev linux-libc-dev linux-headers-${KERNEL_VERSION}"
 apt-get -y --force-yes install ${PKGS_LIST}
 
 # Explicitly download dependent packages.
-apt-get -d -y --force-yes install libqt4-opengl
+apt-get -d -y --force-yes install libqt5opengl5
+apt-get -d -y --force-yes install libqt5x11extras5
 
 # Install VirtualBox
 apt-get -y --force-yes install virtualbox-5.1
