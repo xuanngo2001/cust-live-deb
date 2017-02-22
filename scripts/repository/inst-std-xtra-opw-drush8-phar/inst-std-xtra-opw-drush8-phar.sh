@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install Drush using phar binary
-DRUSH_PHAR=drush.phar-8.0.3
+DRUSH_PHAR=$(ls -1 drush.phar-* | sort -r | head -n1)
 chmod +x ${DRUSH_PHAR}
 
 LOCAL_BIN=/usr/local/bin
