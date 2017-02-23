@@ -19,4 +19,4 @@ CHROOT_DIR=$1
 
 
 # Copy all scripts to live system.
-yes | cp -va ./scripts "${CHROOT_DIR}/root"
+yes | cp -av ./scripts "${CHROOT_DIR}/root"
