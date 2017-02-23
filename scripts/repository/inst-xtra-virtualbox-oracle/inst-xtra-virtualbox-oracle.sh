@@ -14,29 +14,27 @@ GF_ADD_SOURCE_LIST live "deb http://download.virtualbox.org/virtualbox/debian je
 apt-key add oracle_vbox_2016.asc
 apt-get update
 
-# Install required packages to compile VirtualBox.
-KERNEL_VERSION=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
-PKGS_LIST="dkms libc6-dev linux-libc-dev linux-headers-${KERNEL_VERSION}"
-apt-get -y --force-yes install ${PKGS_LIST}
-
 # Explicitly download dependent packages.
+apt-get -d -y --force-yes install linux-headers-amd64
 apt-get -d -y --force-yes install libqt5opengl5
 apt-get -d -y --force-yes install libqt5x11extras5
 
+# Install required packages to compile VirtualBox.
+KERNEL_HEADER=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
+apt-get -y --force-yes install linux-headers-${KERNEL_HEADER}
+apt-get -y --force-yes install dkms libc6-dev
+
+# Explicitly download dependent packages.
+
 # Install VirtualBox
 apt-get -y --force-yes install virtualbox-5.1
-
-
-# Clean up
-apt-get -y --force-yes purge ${PKGS_LIST}
-apt-get -y --force-yes autoremove
 
 # Log
 VBOX_VER=$(VBoxManage --version)
 if [ -z "${VBOX_VER}" ]; then
   VBOX_VER="Error: ${SCRIPT_NAME} installation failed!"
 fi
-echo "${GV_LOG} * Install ${PKGS_LIST// /, } to compile VirtualBox."
+#echo "${GV_LOG} * Install ${PKGS_LIST// /, } to compile VirtualBox."
 echo "${GV_LOG} * Install VirtualBox ${VBOX_VER}."
 
 # Reference:
