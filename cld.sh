@@ -30,10 +30,14 @@ DEB_REPO_URL=$2
 	CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 
 	./cld-debootstrap.sh "${CHROOT_DIR}" "${DEB_REPO_URL}"
+	./cld-umount.sh "${CHROOT_DIR}" || true
+	./cld-mount-points.sh "${CHROOT_DIR}"
 	./cld-chroot.sh "${SYSTEM}" "${CHROOT_DIR}"
-	./cld-backup-logs.sh "${CHROOT_DIR}/root/scripts/logs" "${PWD}"
+  ./cld-umount.sh "${CHROOT_DIR}" || true
+  ./cld-backup-logs.sh "${CHROOT_DIR}/root/scripts/logs" "${PWD}"
 	./cld-mkiso.sh "${SYSTEM}" "${CHROOT_DIR}" ignore
 
+  
 # Logs.
   LOG_DIR=./logs/
 	./cld-create-md.sh "${LOG_DIR}"
