@@ -26,6 +26,6 @@ CHROOT_DIR=$1
   
 
 # Unmount everything.  
-umount -lfv ${CHROOT_DIR}/sys ${CHROOT_DIR}/dev/pts ${CHROOT_DIR}/proc
+umount -lfv ${CHROOT_DIR}{/sys,/dev/pts,/proc,/dev}
 
 
