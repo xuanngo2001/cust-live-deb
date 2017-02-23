@@ -24,8 +24,6 @@ KERNEL_HEADER=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1
 apt-get -y --force-yes install linux-headers-${KERNEL_HEADER}
 apt-get -y --force-yes install dkms libc6-dev
 
-# Explicitly download dependent packages.
-
 # Install VirtualBox
 apt-get -y --force-yes install virtualbox-5.1
 
