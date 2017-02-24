@@ -11,8 +11,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Remove Help manuals in text format before adding the HTML format.
 sed -i '/<Menu label="Help">/ , /<\/Menu>/{//!d}' "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
-# Copy all documentations to /root/doc.
-DOC_DIR=/root/cld-doc
+# Copy all documentations to /root/cld/docs.
+DOC_DIR=/root/cld/docs
 mkdir -p ${DOC_DIR}
 yes | cp -R ../../settings/doc/cust-live-deb.wiki/*.html ${DOC_DIR}
 
