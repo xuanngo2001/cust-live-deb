@@ -21,16 +21,14 @@ m-a -i prepare
 VBOXGUEST_ADD_ISO="VBoxGuestAdditions.iso"
 VBOXGUEST_ADD_ISO_SIZE=$(GF_SIZE_OF ${VBOXGUEST_ADD_ISO})
 VBOXGUEST_ADD_MNT_DIR=/tmp/VBoxGuestAdditions
-if [ -f ${VBOXGUEST_ADD_ISO} ]
-then
+if [ -f ${VBOXGUEST_ADD_ISO} ]; then
   rm -rf ${VBOXGUEST_ADD_MNT_DIR}
   mkdir ${VBOXGUEST_ADD_MNT_DIR}
   mount -o loop,ro ${VBOXGUEST_ADD_ISO} ${VBOXGUEST_ADD_MNT_DIR}
 
   ( cd ${VBOXGUEST_ADD_MNT_DIR} && ./VBoxLinuxAdditions.run )
+  umount ${VBOXGUEST_ADD_MNT_DIR} && rm -f ${VBOXGUEST_ADD_ISO}
   
-  umount ${VBOXGUEST_ADD_MNT_DIR}
-  #rm -f ${VBOXGUEST_ADD_ISO}
 else
   echo "${GV_LOG} * ERROR: ${VBOXGUEST_ADD_ISO} is missing. Get it from virtualbox.org."
 fi
