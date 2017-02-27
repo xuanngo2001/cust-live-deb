@@ -40,6 +40,6 @@ DEB_REPO_URL=$2
   
 # Logs.
   LOG_DIR=./logs/
-	./cld-create-md.sh "${LOG_DIR}"
+	./cld-md-create.sh "${LOG_DIR}"
 	./cld-logs-extract-package-sizes.sh "${LOG_DIR}"
   ./cld-logs-backup.sh "${LOG_DIR}"
