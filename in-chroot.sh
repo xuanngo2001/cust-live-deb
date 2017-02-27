@@ -29,6 +29,8 @@ CHROOT_DIR=$1
 # Mount & load bashrc.
 MOUNT_CMD="mount none -t proc /proc; mount none -t sysfs /sys; mount none -t devpts /dev/pts"
 echo "${MOUNT_CMD}"
+MOUNT_CMD="echo 'mount cancelled'"
+./cld-mount.sh ${CHROOT_DIR}
 chroot "${CHROOT_DIR}" /bin/bash -c "${MOUNT_CMD}; chmod +x /root/scripts/in-chroot-ps1.sh; /root/scripts/in-chroot-ps1.sh"
 
 # Get in
