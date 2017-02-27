@@ -19,7 +19,7 @@ DEB_REPO_URL=$2
   fi
 
 # Update manuals.
-  ./cld-create-manuals.sh
+  ./cld-manuals-create.sh
 
 # Update cld-tools scripts on the host. Ensure the latest scripts and versions.
   ./cld-tools-deploy.sh
@@ -31,7 +31,7 @@ DEB_REPO_URL=$2
 
 	./cld-debootstrap.sh "${CHROOT_DIR}" "${DEB_REPO_URL}"
 	./cld-umount.sh "${CHROOT_DIR}" || true
-	./cld-mount-points.sh "${CHROOT_DIR}"
+	./cld-mount.sh "${CHROOT_DIR}"
 	./cld-chroot.sh "${SYSTEM}" "${CHROOT_DIR}"
   ./cld-umount.sh "${CHROOT_DIR}" || true
   ./cld-backup-logs.sh "${CHROOT_DIR}/root/scripts/logs" "${PWD}"
@@ -41,5 +41,5 @@ DEB_REPO_URL=$2
 # Logs.
   LOG_DIR=./logs/
 	./cld-create-md.sh "${LOG_DIR}"
-	./cld-log-package-sizes.sh "${LOG_DIR}"
-  ./cld-move-backup-log.sh "${LOG_DIR}"
+	./cld-logs-extract-package-sizes.sh "${LOG_DIR}"
+  ./cld-logs-backup.sh "${LOG_DIR}"
