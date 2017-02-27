@@ -29,8 +29,8 @@ DEB_REPO_URL=$2
 	mkdir -p "${CHROOT_DIR}"
 	CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 
+  ./cld-umount.sh "${CHROOT_DIR}" || true
 	./cld-debootstrap.sh "${CHROOT_DIR}" "${DEB_REPO_URL}"
-	./cld-umount.sh "${CHROOT_DIR}" || true
 	./cld-mount.sh "${CHROOT_DIR}"
 	./cld-chroot.sh "${SYSTEM}" "${CHROOT_DIR}"
   ./cld-umount.sh "${CHROOT_DIR}" || true
