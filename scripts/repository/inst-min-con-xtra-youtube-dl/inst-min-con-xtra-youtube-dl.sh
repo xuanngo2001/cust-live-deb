@@ -9,12 +9,12 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install youtube-dl.
-\cp -a youtube-dl /usr/local/bin/
-chmod a+rx /usr/local/bin/youtube-dl 
+  yes | cp -a youtube-dl /usr/local/bin/
+  chmod a+rx /usr/local/bin/youtube-dl 
 
-# Install help.
-chmod +x youtube-dl-list
-\cp -a youtube-dl-list /usr/local/bin/
+# Install helpers.
+  chmod +x youtube-dl-list*
+  yes | cp -a youtube-dl-list* /usr/local/bin/
 
 # Log
 echo "${GV_LOG} * Install youtube-dl to download video from playlist."
