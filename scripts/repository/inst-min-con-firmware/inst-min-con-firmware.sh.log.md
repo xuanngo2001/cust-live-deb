@@ -15,7 +15,7 @@
   * After this operation, 1,166 kB of additional disk space will be used.
   * After this operation, 52.2 kB of additional disk space will be used.
   * Install firmwares.
-  * Disk size = 2018664K. Space Used = 149536K.
+  * Disk size = 1548680K. Space Used = 149552K.
   * The following NEW packages will be installed:
   ```bash
   atmel-firmware

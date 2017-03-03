@@ -11,10 +11,11 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -d -y --force-yes install linux-headers-amd64
 
 # Install required packages to compile VirtualBox guest additions.
-KERNEL_VERSION=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
-apt-get -y --force-yes install dkms libc6-dev  build-essential module-assistant
-apt-get -y --force-yes install linux-headers-${KERNEL_VERSION}
-m-a -i prepare
+KERNEL_HEADER=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
+#apt-get -y --force-yes install dkms libc6-dev  build-essential module-assistant
+apt-get -y --force-yes install dkms libc6-dev  build-essential
+apt-get -y --force-yes install linux-headers-${KERNEL_HEADER}
+#m-a -i prepare
 
 
 # Install VBoxGuestAdditions

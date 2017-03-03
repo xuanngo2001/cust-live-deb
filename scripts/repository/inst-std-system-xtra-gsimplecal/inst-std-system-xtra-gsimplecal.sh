@@ -20,6 +20,7 @@ yes | cp -av ./gsimplecal  /root/.config/
 # Overwrite gtk calendar style
 GTK_CONFIG_DIR=/root/.config/gtk-3.0/
 mkdir -p "${GTK_CONFIG_DIR}"
+GTK_CONFIG_DIR=$(readlink -ev "${GTK_CONFIG_DIR}")
 yes | cp -av gtk.css  "${GTK_CONFIG_DIR}"
 
 # Log

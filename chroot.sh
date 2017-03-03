@@ -37,6 +37,7 @@ case "${ACTION}" in
     ./update-scripts.sh "${CHROOT_DIR}"
     ./cld-mount.sh ${CHROOT_DIR} || true
     chroot "${CHROOT_DIR}" /bin/bash -c "chmod +x /root/scripts/in-chroot-ps1.sh; /root/scripts/in-chroot-ps1.sh"
+    chroot "${CHROOT_DIR}" /bin/bash -c "yes | cp /etc/apt/sources.list.tmp /etc/apt/sources.list"
     chroot "${CHROOT_DIR}"
     ;;
     

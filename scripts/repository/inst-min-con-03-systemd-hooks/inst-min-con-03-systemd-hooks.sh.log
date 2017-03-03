@@ -1,12 +1,12 @@
 CLDS:>>>>>>>>> Running inst-min-con-03-systemd-hooks.sh ...
 ‘./systemd/’ -> ‘/root/cld/systemd’
-‘./systemd/user’ -> ‘/root/cld/systemd/user’
-‘./systemd/user/cld-user-after-boot.sh’ -> ‘/root/cld/systemd/user/cld-user-after-boot.sh’
-‘./systemd/user/cld-user-before-shutdown-halt-reboot.sh’ -> ‘/root/cld/systemd/user/cld-user-before-shutdown-halt-reboot.sh’
 ‘./systemd/cld-systemd-before-shutdown-halt-reboot.sh’ -> ‘/root/cld/systemd/cld-systemd-before-shutdown-halt-reboot.sh’
 ‘./systemd/cld-systemd-start-stop.service’ -> ‘/root/cld/systemd/cld-systemd-start-stop.service’
 ‘./systemd/cld-systemd-after-boot.sh’ -> ‘/root/cld/systemd/cld-systemd-after-boot.sh’
+‘./systemd/user’ -> ‘/root/cld/systemd/user’
+‘./systemd/user/cld-user-after-boot.sh’ -> ‘/root/cld/systemd/user/cld-user-after-boot.sh’
+‘./systemd/user/cld-user-before-shutdown-halt-reboot.sh’ -> ‘/root/cld/systemd/user/cld-user-before-shutdown-halt-reboot.sh’
 ‘systemd/cld-systemd-start-stop.service’ -> ‘/etc/systemd/system/cld-systemd-start-stop.service’
 Created symlink from /etc/systemd/system/multi-user.target.wants/cld-systemd-start-stop.service to /etc/systemd/system/cld-systemd-start-stop.service.
 CLDS: * Add systemd hook scripts.
-CLDS: * Disk size = 1820568K. Space Used = 36K.
+CLDS: * Disk size = 1350564K. Space Used = 36K.

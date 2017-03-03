@@ -158,6 +158,8 @@ menu
 volumeicon-alsa
 # ./inst-min-win-xtra-fonts-asian/inst-min-win-xtra-fonts-asian.sh
 fonts-hanazono
+# ./inst-min-win-xtra-pandoc-git/inst-min-win-xtra-pandoc-git.sh
+pandoc
 # ./inst-min-win-xtra-xdotool/inst-min-win-xtra-xdotool.sh
 xdotool
 # ./inst-std-00-jwm/inst-std-00-jwm.sh
@@ -254,6 +256,7 @@ hardinfo
 # ./inst-std-system-xtra-webcam-camorama/inst-std-system-xtra-webcam-camorama.sh
 camorama
 # ./inst-std-xtra-blender/inst-std-xtra-blender.sh
+libsensors4
 libgl1-mesa-dri
 libjemalloc1
 blender
@@ -387,6 +390,11 @@ wmctrl
 x11-utils
 # ./inst-xtra-sqlite3/inst-xtra-sqlite3.sh
 sqlite3
+# ./inst-xtra-virtualbox-guest-additions-iso/inst-xtra-virtualbox-guest-additions-iso.sh
+linux-headers-amd64
+dkms
+libc6-dev
+build-essential
 # ./inst-xtra-virtualbox-guest-additions-x11/inst-xtra-virtualbox-guest-additions-x11.sh
 linux-headers-amd64
 libnotify-bin
@@ -395,15 +403,18 @@ libc6-dev
 virtualbox-guest-x11
 # ./inst-xtra-wifite/inst-xtra-wifite.sh
 wifite
-# ./inst-xtra-wine32/inst-xtra-wine32.sh
-wine32
 # ./inst-xtra-wine64/inst-xtra-wine64.sh
-wine
+libwine
+libopencl1
+nvidia-libopencl1
+amd-libopencl1
+ocl-icd-libopencl1
 wine32
 wine64
-libwine
-libwine:i386
 fonts-wine
+# ./inst-xtra-wine-diablo2/inst-xtra-wine-diablo2.sh
+libjpeg-turbo-progs
+libldap-2.4-2
 # ./inst-xtra-wine-playonlinux/inst-xtra-wine-playonlinux.sh
 python-wxgtk3.0
 cabextract

@@ -1,3 +1,6 @@
+# Step-by-step guide
+http://www.gamersonlinux.com/forum/threads/diablo-ii-expansion-guide.217/
+
 # Force to run win32
 http://askubuntu.com/questions/136714/how-to-force-wine-into-acting-like-32-bit-windows-on-64-bit-ubuntu
 

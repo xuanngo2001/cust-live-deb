@@ -3,9 +3,6 @@
 #   -Put relative path to scripts/
 #   
 
-#zfs
-#virtualbox
-
 # JAVA
 #openjdk-8-jre
 default-jre
@@ -21,4 +18,18 @@ pcmanfm
 file-roller
 
 
-wine32
+# Virtualbox: Use ISO or backport.
+# inst-xtra-virtualbox-guest-additions-iso
+inst-xtra-virtualbox-guest-additions-x11
+inst-min-con-xtra-cld-dev-virtualbox-guest-additions
+
+
+# Pandoc
+## inst-min-win-xtra-pandoc-git
+inst-min-win-cld-dev-tools-pandoc
+
+
+#zfs
+#virtualbox
+#wine
+inst-xtra-wine-playonlinux
