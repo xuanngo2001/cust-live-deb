@@ -11,6 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   apt-get install -d -y --force-yes <your-package>  # Explicitly download dependent packages 
 
 # Install openttd.
+apt-get -y --force-yes install openttd-opengfx openttd-opensfx openttd-openmsx
 apt-get -y --force-yes install openttd
 
 
