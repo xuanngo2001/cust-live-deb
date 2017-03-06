@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+#set -e # Don't use this line. Otherwise, any error(e.g. command not found) will kick you out of chroot.
 
 #########################################################
 # All export variables and functions
