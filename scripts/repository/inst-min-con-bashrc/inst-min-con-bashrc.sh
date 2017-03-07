@@ -9,12 +9,12 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
-# Add common bashrc codes.
-cat bashrc-common-* >> ${HOME}/.bashrc
+# Add common bashrc environment.
+yes | cp -av bashrc-common-*.sh /etc/profile.d/
 
 # Set dircolors
 DIR_COLORS_FILE=dircolors-gnu-ls-colors.txt
-yes | cp -av ${DIR_COLORS_FILE} ${HOME}/.dircolors
+yes | cp -av ${DIR_COLORS_FILE} ${USER}/.dircolors
 
 
 # Log
