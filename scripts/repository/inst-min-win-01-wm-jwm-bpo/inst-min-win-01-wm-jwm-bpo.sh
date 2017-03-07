@@ -17,7 +17,7 @@ apt-get -t jessie-backports -y --force-yes install jwm
 
 # Set JWM.
 JWMRC=jwmrc
-yes | cp -av ${JWMRC}.xml         "/root/.${JWMRC}"
+yes | cp -av ${JWMRC}.xml         "${HOME}/.${JWMRC}"
 yes | cp -av ${JWMRC}-*.xml       "${GV_CLD_ROOT_DIR}"
 yes | cp -av ${JWMRC}-startup.sh  "${GV_CLD_ROOT_DIR}"
 
