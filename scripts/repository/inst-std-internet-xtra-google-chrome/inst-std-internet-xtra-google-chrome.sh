@@ -41,7 +41,7 @@ sed -i.original "s/exec -a \"\$0\" \"\$HERE\/chrome\"  \"\$@\"$/exec -a \"\$0\" 
 sed -i "/Internet\">/ r jwmrc-menus-inet-google-chrome.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
 # Add alias.
-cat bashrc-google-chrome-alias.txt >> /root/.bashrc
+yes | cp -av bashrc-google-chrome-alias.sh /etc/profile.d/
 
 # Log
 echo "${GV_LOG} * Install ${GOOGLE_CHROME_VERSION}."
