@@ -57,7 +57,7 @@ rm -f "${SQUASHFS_DIR}"/etc/fstab
 ## Optional:
 rm -f "${SQUASHFS_DIR}"/etc/resolv.conf
 rm -f "${SQUASHFS_DIR}"/var/lib/dhcp/dhclient.leases
-rm -f "${SQUASHFS_DIR}"/root/.xsession-errors
+rm -f "${SQUASHFS_DIR}"${HOME}/.xsession-errors
 
 
 # Shrink size of live system in the working directory.
