@@ -14,7 +14,7 @@ apt-get -y --force-yes install gpicview
 sed -i "/Accessories\">/ r jwmrc-menus-acc-gpicview.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
 # Add alias.
-cat bashrc-gpicview-alias.txt >> /root/.bashrc
+yes | cp -av bashrc-gpicview-alias.sh /etc/profile.d/
 
 # Log
 echo "${GV_LOG} * Install Image Viewer: gpicview."
