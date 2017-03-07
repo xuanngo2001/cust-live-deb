@@ -15,4 +15,4 @@
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/apt-dependency.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/cld-list-icons.sh to /usr/local/bin/.
   * Copied /root/scripts/repository/inst-min-con-cld-tools/tools/partition-swap-enable.sh to /usr/local/bin/.
-  * Disk size = 1351008K. Space Used = 72K.
+  * Disk size = 1360972K. Space Used = 68K.

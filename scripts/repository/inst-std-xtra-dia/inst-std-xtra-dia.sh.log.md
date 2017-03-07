@@ -4,7 +4,7 @@
   * Insert Dia menu in Graphics.
   * How to add a new shape to Dia: http://dia-installer.de/howto/create_shape/index.html.en
   * Dia Shape Repository: http://dia-installer.de/shapes/index.html.en
-  * Disk size = 3889784K. Space Used = 30684K.
+  * Disk size = 3899704K. Space Used = 30684K.
   * The following NEW packages will be installed:
   ```bash
   dia dia-common dia-libs dia-shapes sgml-base xml-core
