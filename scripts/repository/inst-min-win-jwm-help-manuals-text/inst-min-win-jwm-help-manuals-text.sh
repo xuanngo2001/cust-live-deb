@@ -8,8 +8,8 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Copy all documentations to /root/cld/docs.
-DOC_DIR=/root/cld/docs
+# Copy all documentations to ${HOME}/cld/docs.
+DOC_DIR=${HOME}/cld/docs
 mkdir -p ${DOC_DIR}
 yes | cp -R ../../settings/doc/cust-live-deb.wiki/*-manual.md ${DOC_DIR}
 
