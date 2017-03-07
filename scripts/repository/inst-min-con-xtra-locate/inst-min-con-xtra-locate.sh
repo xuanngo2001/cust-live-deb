@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install locate
 
 # Add locate alias.
-cat bashrc-alias-locate >> ${HOME}/.bashrc
+yes | cp -av bashrc-alias-locate.sh /etc/profile.d/
 
 # Log
 echo "${GV_LOG} * Install locate to generate an index of files and directories. Searching for files will be much faster."
