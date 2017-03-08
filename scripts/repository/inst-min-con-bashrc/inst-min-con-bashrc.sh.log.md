@@ -1,4 +1,3 @@
 * >>>>>>>>> Running inst-min-con-bashrc.sh ...
-  * Set common settings for /root/.bashrc.
-  * Set dircolors to use dircolors-gnu-ls-colors.txt to make ls more beautiful.
-  * Disk size = 1360560K. Space Used = 12K.
+  * Set common settings for ~/.bashrc.
+  * Disk size = 1362144K. Space Used = 32K.
