@@ -7,11 +7,8 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Copy and setup dircolors configuration.
 yes | cp -av ./cld/ /usr/local/
-
-# Set dircolors
-DIR_COLORS_FILE=dircolors-gnu-ls-colors.txt
-yes | cp -av ${DIR_COLORS_FILE} ${HOME}/.dircolors
 
 
 # Log
