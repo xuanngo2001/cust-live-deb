@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Add common bashrc environment.
-chmod +x ./cld/bashrc.sh
+chmod +x ./cld/bootstrap/bashrc.sh
 yes | cp -av ./cld/ /usr/local/
 
 
