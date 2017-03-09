@@ -9,14 +9,14 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Set permission.
 SERVICE_NAME=cld-systemd-start-stop.service
-chmod 664 "./systemd/${SERVICE_NAME}"
-chmod +x ./systemd/*.sh
+chmod 664 "./cld/systemd/${SERVICE_NAME}"
+chmod +x ./cld/systemd/*.sh
 
-# Copy to /root/cld/
-yes | cp -av ./systemd/  ${GV_CLD_ROOT_DIR}
+# Copy to /usr/local
+yes | cp -av ./cld/  /usr/local
 
 #Register unit files
-yes | cp -av systemd/*.service /etc/systemd/system/
+yes | cp -av ./cld/systemd/*.service /etc/systemd/system/
 
 systemctl enable "${SERVICE_NAME}"
 
