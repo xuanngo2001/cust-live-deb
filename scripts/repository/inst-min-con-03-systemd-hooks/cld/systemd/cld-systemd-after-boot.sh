@@ -9,9 +9,9 @@ echo "$0: $(date)" >> /usr/local/cld/log/boot-sequence.log
 #   -https://wiki.archlinux.org/index.php/systemd
 
 MASTER_LOG="/usr/local/cld/log/$(basename "$0").log"
-/usr/local/bin/partition-automount.sh     2>&1 | tee -a "${MASTER_LOG}"
-/usr/local/bin/partition-swap-enable.sh   2>&1 | tee -a "${MASTER_LOG}"
-/usr/local/cld/cld-bootstrap.sh           2>&1 | tee -a "${MASTER_LOG}"
+/usr/local/cld/bin/partition-automount.sh     2>&1 | tee -a "${MASTER_LOG}"
+/usr/local/cld/bin/partition-swap-enable.sh   2>&1 | tee -a "${MASTER_LOG}"
+/usr/local/cld/cld-bootstrap.sh               2>&1 | tee -a "${MASTER_LOG}"
 
 ## Add internal scripts below ##
 
