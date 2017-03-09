@@ -8,3 +8,8 @@ if [ -d /usr/local/cld/bashrc.d ]; then
   done
   unset i
 fi
+
+ENV_PATH=/usr/local/cld/bin
+ENV_PATH=$(readlink -ev "${ENV_PATH}")
+ENV_PATH="PATH=\$PATH:${ENV_PATH}"
+echo "${ENV_PATH}" >> /root/.bashrc
