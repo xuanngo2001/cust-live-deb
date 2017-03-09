@@ -14,8 +14,12 @@ GF_ADD_SOURCE_LIST live "deb http://http.debian.net/debian jessie-backports main
 apt-get update
 apt-get -t jessie-backports -y --force-yes install udevil
 
-# Run devmon at startup.
-yes | cp -av ./cld/  /usr/local
+# Insert devmon in startup script.
+yes | cp "startup-devmon.sh" "${GV_CLD_ROOT_DIR}"
+DEVMON_SCRIPT_PATH="${GV_CLD_ROOT_DIR}/startup-devmon.sh"
+chmod +x "${DEVMON_SCRIPT_PATH}"
+sed -i "/## Add internal scripts below ##/a ${GV_CLD_ROOT_DIR}/startup-devmon.sh&" ${GV_CLD_ROOT_DIR}/systemd/cld-systemd-after-boot.sh
+
 
 # Log
 UDEVIL_VER=$(udevil -h | head -n 1)
