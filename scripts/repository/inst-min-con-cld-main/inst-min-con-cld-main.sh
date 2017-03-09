@@ -8,7 +8,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # CLD bootstrap
-chmod +x ./cld/cld-bootstrap.sh
+chmod +x ./cld/*.sh
 yes | cp -av ./cld/ /usr/local/
 
 # Log
