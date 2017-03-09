@@ -4,6 +4,7 @@ set -e
 
 mkdir -p /usr/local/cld/bashrc.d
 mkdir -p /usr/local/cld/bin
+mkdir -p /usr/local/cld/bootstrap
 mkdir -p /usr/local/cld/jwm
 mkdir -p /usr/local/cld/doc
 mkdir -p /usr/local/cld/log
