@@ -12,12 +12,12 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 sed -i '/<Menu label="Help">/ , /<\/Menu>/{//!d}' "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Copy all documentations to ${HOME}/cld/docs.
-DOC_DIR=/usr/local/cld/doc
-mkdir -p ${DOC_DIR}
-yes | cp -R ../../settings/doc/cust-live-deb.wiki/*.html ${DOC_DIR}
+  DOC_DIR=/usr/local/cld/doc
+  mkdir -p ${DOC_DIR}
+  yes | cp -R ../../settings/doc/cust-live-deb.wiki/*.html ${DOC_DIR}
 
 # Overwrite manuals menu.
-yes | cp -av jwmrc-menus-help-manuals.xml ${GV_CLD_ROOT_DIR}
+  yes | cp -av ./cld/  /usr/local
 
 # Log
 echo "${GV_LOG} * Add user & developer manuals in Help menu."

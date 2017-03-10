@@ -1,5 +1,4 @@
-CONKYRC=/usr/local/cld/app/conky/config/conkyrc
-yes | cp -av ${CONKYRC} ${HOME}/.${CONKYRC}
+ln -s /usr/local/cld/app/conky/config/conkyrc ${HOME}/.conkyrc
 
 # Wait for JWM
 timeout 5s /bin/bash -c "while ! pgrep Xorg; do sleep 1s; done; sleep 1s"

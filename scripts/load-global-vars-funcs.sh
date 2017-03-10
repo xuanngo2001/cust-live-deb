@@ -7,6 +7,13 @@
 # Reference: http://stackoverflow.com/a/1158231
 #########################################################
 
+export CLD_DIR=/usr/local/cld
+export CLD_BIN_DIR=/usr/local/cld/bin
+export CLD_APP_DIR=/usr/local/cld/app
+export CLD_BASHRC_DIR=/usr/local/cld/bashrc.d
+export CLD_JWMRC_DIR=/usr/local/cld/app/jwm/jwmrc
+export CLD_JWM_BOOTSTRAP_DIR=/usr/local/cld/app/jwm/bootstrap
+
 ###### VARIABLES ######
 # Prefix this variable in echo to log echoed string. CLDS stands for Custom Live Debian System.
 export GV_LOG="CLDS:"
