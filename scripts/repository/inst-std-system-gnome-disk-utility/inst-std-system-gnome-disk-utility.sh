@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install gnome-disk-utility
 
 # Insert gnome-disk-utility menu in Administration.
-sed -i "/Administration\">/ r jwmrc-menus-adm-gnome-disk-utility.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Administration\">/ r jwmrc-menus-adm-gnome-disk-utility.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 echo "${GV_LOG} * Install Partition Manager: gnome-disk-utility."

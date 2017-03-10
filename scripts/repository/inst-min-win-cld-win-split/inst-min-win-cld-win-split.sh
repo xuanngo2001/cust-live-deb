@@ -19,7 +19,7 @@ yes | cp -av ./xwinsplitter/*.sh /usr/local/bin/
 yes | cp -av *.sh /usr/local/bin/
 
 # Add key binding
-sed -i "/NEW KEYS HERE -->/ r jwmrc-key-win-split.xml" "${GV_CLD_ROOT_DIR}/jwmrc-key.xml"
+sed -i "/NEW KEYS HERE -->/ r jwmrc-key-win-split.xml" "${CLD_JWMRC_DIR}/jwmrc-key.xml"
 
 
 # Log

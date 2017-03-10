@@ -12,7 +12,7 @@ apt-get -y --force-yes install camorama
 
 
 # Insert Camorama menu in Graphics
-sed -i "/Graphics\">/ r jwmrc-menus-graphics-camorama.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Graphics\">/ r jwmrc-menus-graphics-camorama.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 
 # Log

@@ -29,7 +29,7 @@ fi
 apt-get -y --force-yes install at-spi2-core
 
 # Insert scite in Accessories menu.
-sed -i "/Accessories\">/ r jwmrc-menus-acc-scite.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Accessories\">/ r jwmrc-menus-acc-scite.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 echo "${GV_LOG} * Install Text Editor: SciTE."

@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install gpicview
 
 # Insert gpicview in Accessories menu.
-sed -i "/Accessories\">/ r jwmrc-menus-acc-gpicview.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Accessories\">/ r jwmrc-menus-acc-gpicview.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Add alias.
 yes | cp -av ./cld/ /usr/local/

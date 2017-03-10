@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install speedcrunch
 
 # Insert speedcrunch in Accessories menu.
-sed -i "/Accessories\">/ r jwmrc-menus-acc-speedcrunch.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Accessories\">/ r jwmrc-menus-acc-speedcrunch.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 echo "${GV_LOG} * Install calculator: speedcrunch."

@@ -120,7 +120,7 @@ apt-get -d -y --force-yes install libboost-python1.55.0
 apt-get -y --force-yes install freecad
 
 # Insert FreeCAD menu in Graphics
-sed -i "/Graphics\">/ r jwmrc-menus-graphics-freecad.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Graphics\">/ r jwmrc-menus-graphics-freecad.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
     
 # Log
 echo "${GV_LOG} * Install freecad."

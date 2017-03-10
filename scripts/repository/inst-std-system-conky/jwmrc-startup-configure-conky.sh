@@ -10,7 +10,7 @@ set -e
 	CPU_NUM=$(grep -c ^processor /proc/cpuinfo)
 	
 	### If more than 1 CPU, then write CPU settings to a temporary file.
-	CPU_CONKY=/root/cld/conkyrc-cpu.txt
+	CPU_CONKY=${HOME}/cld/conkyrc-cpu.txt
 	cat /dev/null > ${CPU_CONKY}
 	for ((i=1; i<CPU_NUM; i+=2))
 	do
@@ -23,29 +23,29 @@ set -e
 	CPU_START="### CPU-START"
 	CPU_END="### CPU-END"
 	# Clear content between patterns.
-	sed  -i "/${CPU_START}/,/${CPU_END}/{//!d}" /root/.conkyrc
+	sed  -i "/${CPU_START}/,/${CPU_END}/{//!d}" ${HOME}/.conkyrc
 	# Insert content between patterns.
-	sed  -i "/${CPU_START}/ r ${CPU_CONKY}" /root/.conkyrc
+	sed  -i "/${CPU_START}/ r ${CPU_CONKY}" ${HOME}/.conkyrc
 	
   ### Prefix the total number of CPUs
-  sed -i "/}PROCESSORS /s/\[.*\]/[${CPU_NUM}]/" /root/.conkyrc
+  sed -i "/}PROCESSORS /s/\[.*\]/[${CPU_NUM}]/" ${HOME}/.conkyrc
 
 #---- NETWORK: Add available network interfaces ----#
   IFACE_START="### IFACE-START"
   IFACE_END="### IFACE-END"
   # Clear content between patterns.
-  sed  -i "/${IFACE_START}/,/${IFACE_END}/{//!d}" /root/.conkyrc
+  sed  -i "/${IFACE_START}/,/${IFACE_END}/{//!d}" ${HOME}/.conkyrc
   
   # Add all available network interfaces.
-  IFACE_BASE_CONKY=/root/cld/conkyrc-network-iface.txt
+  IFACE_BASE_CONKY=${HOME}/cld/conkyrc-network-iface.txt
 	while IFS='' read -r IFACE_NAME || [[ -n "$IFACE_NAME" ]]; do
 
 	  # Dynamically generate network interface for conkyrc.
-	  IFACE_CONKY="/root/cld/conkyrc-network-${IFACE_NAME}.txt"
+	  IFACE_CONKY="${HOME}/cld/conkyrc-network-${IFACE_NAME}.txt"
 	  sed "s/IFACE_NAME/${IFACE_NAME}/g" "${IFACE_BASE_CONKY}" > "${IFACE_CONKY}"
 	  
     # Insert network interface to conkyrc.
-    sed  -i "/${IFACE_START}/ r ${IFACE_CONKY}" /root/.conkyrc
+    sed  -i "/${IFACE_START}/ r ${IFACE_CONKY}" ${HOME}/.conkyrc
     	 
 	done < <( ifconfig -a | grep -v '^ ' | awk NF | cut -d ' ' -f 1 | grep -v 'lo' )
 
@@ -59,16 +59,16 @@ set -e
   SCREEN_RESOLUTION=$(xrandr | head -n1 | cut -d, -f2 | cut -d" " -f3-5)
   HEIGHT=$(echo ${SCREEN_RESOLUTION}|sed 's/^.*x //') 
 
-  CALENDAR_CONKY=/root/cld/conkyrc-calendar-current.txt
+  CALENDAR_CONKY=${HOME}/cld/conkyrc-calendar-current.txt
   if [ "${HEIGHT}" -gt 900 ]; then
-    CALENDAR_CONKY=/root/cld/conkyrc-calendar-3months.txt
+    CALENDAR_CONKY=${HOME}/cld/conkyrc-calendar-3months.txt
   fi
   CALENDAR_START="### CALENDAR-START"
   CALENDAR_END="### CALENDAR-END"
   # Clear content between patterns.
-  sed  -i "/${CALENDAR_START}/,/${CALENDAR_END}/{//!d}" /root/.conkyrc
+  sed  -i "/${CALENDAR_START}/,/${CALENDAR_END}/{//!d}" ${HOME}/.conkyrc
   # Insert content between patterns.
-  sed  -i "/${CALENDAR_START}/ r ${CALENDAR_CONKY}" /root/.conkyrc
+  sed  -i "/${CALENDAR_START}/ r ${CALENDAR_CONKY}" ${HOME}/.conkyrc
 
   
 exit 0

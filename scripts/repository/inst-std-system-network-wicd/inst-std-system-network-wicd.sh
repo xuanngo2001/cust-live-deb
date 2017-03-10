@@ -15,7 +15,7 @@ debconf-set-selections -v wicd-daemon.seed
 apt-get -y --force-yes install wicd
 
 # Insert Wicd menu in Network
-sed -i "/Network\">/ r jwmrc-menus-network-wicd.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Network\">/ r jwmrc-menus-network-wicd.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Start wicd daemon on startup.
 #yes | cp startup-wicd.sh "${GV_CLD_ROOT_DIR}"

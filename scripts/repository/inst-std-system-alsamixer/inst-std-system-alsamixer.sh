@@ -9,7 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Insert Alsa Mixer menu in Administration
-sed -i "/Administration\">/ r jwmrc-menus-adm-alsamixer.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Administration\">/ r jwmrc-menus-adm-alsamixer.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 echo "${GV_LOG} * Insert Alsamixer menu in Administration."

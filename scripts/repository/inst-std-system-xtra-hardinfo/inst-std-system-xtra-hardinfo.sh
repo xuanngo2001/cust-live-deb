@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install hardinfo
 
 # Insert System Information menu in Administration
-sed -i "/Administration\">/ r jwmrc-menus-adm-hardinfo.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Administration\">/ r jwmrc-menus-adm-hardinfo.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 
 # Log

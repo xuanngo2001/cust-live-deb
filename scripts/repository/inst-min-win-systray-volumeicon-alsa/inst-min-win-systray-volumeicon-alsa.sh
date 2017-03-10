@@ -9,7 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Set left click to display volume slider: lmb_slider=true
-VOLUME_ICON_CONFIG_DIR=/root/.config/volumeicon/
+VOLUME_ICON_CONFIG_DIR=${HOME}/.config/volumeicon/
 mkdir -p ${VOLUME_ICON_CONFIG_DIR}
 yes | cp volumeicon ${VOLUME_ICON_CONFIG_DIR}
 

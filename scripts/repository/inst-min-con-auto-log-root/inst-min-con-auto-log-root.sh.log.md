@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-auto-log-root.sh ...
-  * Disk size = 1360504K. Space Used = 12K.
+  * Disk size = 1362396K. Space Used = 12K.

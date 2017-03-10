@@ -9,7 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Add key binding
-sed -i "/NEW KEYS HERE -->/ r jwmrc-key-filemanager.xml" "${GV_CLD_ROOT_DIR}/jwmrc-key.xml"
+sed -i "/NEW KEYS HERE -->/ r jwmrc-key-filemanager.xml" "${CLD_JWMRC_DIR}/jwmrc-key.xml"
 
 # Log
 echo "${GV_LOG} * Set shortcut key(WIN+e) for filemanager."

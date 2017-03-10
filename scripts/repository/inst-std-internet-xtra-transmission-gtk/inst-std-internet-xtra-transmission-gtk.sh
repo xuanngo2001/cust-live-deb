@@ -14,7 +14,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install transmission-gtk
 
 # Insert transmission-gtk in Internet menu.
-sed -i "/Internet\">/ r jwmrc-menus-inet-transmission-gtk.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Internet\">/ r jwmrc-menus-inet-transmission-gtk.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 echo "${GV_LOG} * Install transmission-gtk."

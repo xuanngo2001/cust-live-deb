@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-cld-bootstrap.sh ...
   * Install cld bootstrap scripts.
-  * Disk size = 1362292K. Space Used = 16K.
+  * Disk size = 1362484K. Space Used = 12K.

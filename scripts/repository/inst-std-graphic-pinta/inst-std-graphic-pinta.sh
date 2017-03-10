@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 apt-get -y --force-yes install pinta
 
 # Insert Pinta menu in Graphics
-sed -i "/Graphics\">/ r jwmrc-menus-graphics-pinta.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Graphics\">/ r jwmrc-menus-graphics-pinta.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 echo "${GV_LOG} * Install Image Editor: Pinta."

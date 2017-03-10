@@ -15,7 +15,7 @@ apt-get -y --force-yes install libgl1-mesa-dri libjemalloc1
 apt-get -y --force-yes install blender
 
 # Insert Blender 3D menu in Graphics
-sed -i "/Graphics\">/ r jwmrc-menus-graphics-blender.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Graphics\">/ r jwmrc-menus-graphics-blender.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 echo "${GV_LOG} * Install required packages for blender."

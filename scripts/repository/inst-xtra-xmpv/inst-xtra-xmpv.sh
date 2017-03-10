@@ -9,7 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install lua scripts
 XMPV=xmpv
-LUA_DIR=/root/.config/mpv/scripts
+LUA_DIR=${HOME}/.config/mpv/scripts
 mkdir -p ${LUA_DIR}
 yes | cp ${XMPV}/*.lua ${LUA_DIR}
 

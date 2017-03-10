@@ -23,7 +23,7 @@ apt-get -t jessie-backports -y --force-yes install libreoffice-base
 apt-get -t jessie-backports -y --force-yes install libreoffice-math
 
 # Insert LibreOffice menu in Office
-sed -i "/Office\">/ r jwmrc-menus-office-libreoffice.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Office\">/ r jwmrc-menus-office-libreoffice.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
  
 # Log
 LO_VERSION=$(libreoffice --version | head -n1)

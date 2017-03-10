@@ -20,7 +20,7 @@ apt-get -y --force-yes install p7zip-full
 apt-get -y --force-yes install playonlinux
 
 # Insert playonlinux in Internet menu.
-sed -i "/Internet\">/ r jwmrc-menus-inet-playonlinux.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Internet\">/ r jwmrc-menus-inet-playonlinux.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 
 # Enable run as root.

@@ -14,11 +14,11 @@ apt-get -y --force-yes install conky
 
 # Add conky config files.
 	CONKYRC=conkyrc
-	yes | cp -av ${CONKYRC} /root/.${CONKYRC}
+	yes | cp -av ${CONKYRC} ${HOME}/.${CONKYRC}
 	
 	yes | cp -av conkyrc-*.txt "${GV_CLD_ROOT_DIR}"
 
-# Add conkyrc setting scripts to /root/cld/. 
+# Add conkyrc setting scripts to ${HOME}/cld/. 
   yes | cp -av jwmrc-startup-configure-conky.sh "${GV_CLD_ROOT_DIR}"
   
 # Set conky to run on JWM startup.

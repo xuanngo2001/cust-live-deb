@@ -9,3 +9,5 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 chmod +x ./cld/bin/*.sh
 yes | cp -av ./cld/ /usr/local/
+
+yes | cp -av ./cld/bin/cld-dpkg-list.sh /usr/local/bin

@@ -14,7 +14,7 @@ apt-get -y --force-yes install thunar-archive-plugin
 apt-get -y --force-yes install thunar-volman
 
 # Insert Thunar in Accessories menu.
-sed -i "/Accessories\">/ r jwmrc-menus-acc-thunar.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Accessories\">/ r jwmrc-menus-acc-thunar.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 
 # Log

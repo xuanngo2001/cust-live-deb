@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-xtra-games-users-poweruser.sh ...
   * Created user: poweruser/poweruser.
-  * Disk size = 4686676K. Space Used = 28K.
+  * Disk size = 4686688K. Space Used = 28K.

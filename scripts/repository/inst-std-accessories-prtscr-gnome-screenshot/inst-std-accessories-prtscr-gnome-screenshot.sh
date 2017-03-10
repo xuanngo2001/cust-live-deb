@@ -13,7 +13,7 @@ apt-get -y --force-yes install gnome-screenshot
 
 
 # Insert gnome-screenshot to bind with PrintScreen key.
-sed -i "/NEW KEYS HERE -->/ r jwmrc-key-printscreen-gnome-screenshot.xml" "${GV_CLD_ROOT_DIR}/jwmrc-key.xml"
+sed -i "/NEW KEYS HERE -->/ r jwmrc-key-printscreen-gnome-screenshot.xml" "${CLD_JWMRC_DIR}/jwmrc-key.xml"
 
 # Log
 echo "${GV_LOG} * Install gnome-screenshot to be used for PrintScreen key."

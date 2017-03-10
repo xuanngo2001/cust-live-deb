@@ -28,7 +28,7 @@ echo "java -jar ${LOCAL_BIN}/${SH3D_DIR}/${SH3D_FURNITURE_EDITOR_JAR}" > ${LOCAL
 chmod +x ${LOCAL_BIN}/sweethome3d*
 
 # Insert Sweet Home 3D menu in Graphics
-sed -i "/Graphics\">/ r jwmrc-menus-graphics-sweethome3d.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Graphics\">/ r jwmrc-menus-graphics-sweethome3d.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 #./jmf.sh
 

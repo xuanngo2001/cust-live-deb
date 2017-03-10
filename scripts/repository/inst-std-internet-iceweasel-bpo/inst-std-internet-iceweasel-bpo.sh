@@ -17,7 +17,7 @@ apt-get update
 apt-get -t jessie-backports -y --force-yes install iceweasel
 
 # Insert Iceweasel in Internet menu.
-sed -i "/Internet\">/ r jwmrc-menus-inet-iceweasel.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
+sed -i "/Internet\">/ r jwmrc-menus-inet-iceweasel.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 
 # Install flash plugin.
