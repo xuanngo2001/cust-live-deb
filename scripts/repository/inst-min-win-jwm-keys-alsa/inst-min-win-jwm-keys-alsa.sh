@@ -13,9 +13,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 sed -i "/NEW KEYS HERE -->/ r jwmrc-key-alsa.xml" "${CLD_JWMRC_DIR}/jwmrc-key.xml"
 
 # On startup, auto-detect ALSA controller.
-JWM_START_SCRIPT=jwmrc-startup-alsa.sh
-yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
-echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
+yes | cp -av ./cld/ /usr/local
+##JWM_START_SCRIPT=jwmrc-startup-alsa.sh
+##yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
+##echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
 # Log
 echo "${GV_LOG} * Add ALSA key binding."

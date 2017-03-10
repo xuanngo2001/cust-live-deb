@@ -1,0 +1,112 @@
+-- vim: ts=4 sw=4 noet ai cindent syntax=lua
+--[[
+    background = false,
+    border_width = 1,
+    cpu_avg_samples = 2,
+  default_color = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    use_xft = true,
+    gap_x = 5,
+    gap_y = 60,
+    minimum_height = 5,
+  minimum_width = 5,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = false,
+    show_graph_range = false
+
+]]
+
+-- Settings available: http://conky.sourceforge.net/config_settings.html
+
+conky.config = {
+    alignment = 'top_right',
+    font = 'Arial:size=8',
+    
+    -- Eliminate flicker
+    double_buffer = true,
+    
+    -- Refresh interval
+    update_interval = 1.0,
+    
+    -- Borders: lower than 6 pixels has no effect.
+    border_outer_margin = 6,
+    
+    -- Activate font styling. Otherwise, font size and boldface will not take effect.
+    use_xft = true,
+    
+    -- Set to 0. Otherwise, conky will not start from the top.
+    gap_y = 0,    
+    
+    -- Expose running Conky as 'Conky': wmctrl -l
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+};
+
+
+-- Available variables: http://conky.sourceforge.net/variables.html
+
+conky.text = [[
+
+# 2 newlines before starting.
+${font Arial:size=16}$alignc CUST${color Tan1} LIVE${color Ivory} DEB
+############ SYSTEM ############
+${color Gray}${font Arial:size=10:style=bold}${color Tan1}SYSTEM ${color DarkSlateGray} ${hr 2}
+$font${color Gray}$sysname $kernel $alignr $machine
+${execpi 3600 cat /proc/cpuinfo | grep "model name" | uniq | cut -d':' -f2 | cut -c 2-}
+Uptime $alignr${uptime}
+File System $alignr${fs_type}
+
+############ PROCESSORS ############
+${font Arial:size=10:style=bold}${color Tan1}PROCESSORS ${color Gray}[2]${color DarkSlateGray}${hr 2}
+$font${color Gray}CPU  ${cpu cpu0}% ${cpubar cpu0}
+### CPU-START
+### CPU-END
+
+############ MEMORY ############
+${font Arial:size=10:style=bold}${color Tan1}MEMORY ${color DarkSlateGray}${hr 2}
+$font${color Gray}MEM $alignc $mem / $memmax $alignr $memperc%
+$membar
+
+############ HDD ############
+${font Arial:size=10:style=bold}${color Tan1}HDD ${color DarkSlateGray}${hr 2}
+$font${color Gray}/home $alignc ${fs_used /home} / ${fs_size /home} $alignr ${fs_free_perc /home}%
+${fs_bar /home}
+${diskiograph}
+Disks IO  ${alignr}${diskio}
+
+############ TOP PROCESSES ############
+${font Arial:size=10:style=bold}${color Tan1}TOP PROCESSES ${color DarkSlateGray}${hr 2}
+${color Gray}$font${top_mem name 2}${alignr}${top mem 2} %
+$font${top_mem name 3}${alignr}${top mem 3} %
+$font${top_mem name 4}${alignr}${top mem 4} %
+$font${top_mem name 5}${alignr}${top mem 5} %
+
+############ NETWORK ############
+${font Arial:size=10:style=bold}${color Tan2}NETWORK ${color Gray}[${nodename_short}]${color DarkSlateGray}${hr 2}
+$font${color Gray}
+### IFACE-START
+### IFACE-END
+
+############ CALENDAR ############
+### CALENDAR-START
+### CALENDAR-END
+
+]];
+

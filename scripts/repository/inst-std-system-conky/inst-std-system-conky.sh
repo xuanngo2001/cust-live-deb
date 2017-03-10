@@ -9,22 +9,23 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install conky.
-###  apt-get -y --force-yes install conky-std=1.9.0-6
 apt-get -y --force-yes install conky
 
 # Add conky config files.
-	CONKYRC=conkyrc
-	yes | cp -av ${CONKYRC} ${HOME}/.${CONKYRC}
+##	CONKYRC=conkyrc
+##	yes | cp -av ${CONKYRC} ${HOME}/.${CONKYRC}
 	
-	yes | cp -av conkyrc-*.txt "${GV_CLD_ROOT_DIR}"
+##	yes | cp -av conkyrc-*.txt "${GV_CLD_ROOT_DIR}"
 
 # Add conkyrc setting scripts to ${HOME}/cld/. 
-  yes | cp -av jwmrc-startup-configure-conky.sh "${GV_CLD_ROOT_DIR}"
+##  yes | cp -av jwmrc-startup-configure-conky.sh "${GV_CLD_ROOT_DIR}"
   
 # Set conky to run on JWM startup.
-	JWM_START_SCRIPT=jwmrc-startup-conky.sh
-	yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
-	echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
+##	JWM_START_SCRIPT=jwmrc-startup-conky.sh
+##	yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
+##	echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
+
+yes | cp -av ./cld/ /usr/local
 
 # Log
 echo "${GV_LOG} * Install System Monitor: conky."

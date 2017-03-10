@@ -10,9 +10,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Setup X Window to allow keyboard to move mouse.
 #   Why under JWM? Because if JWM didn't run, then there is no point to move the mouse.
-  JWM_START_SCRIPT=jwmrc-startup-keyboard-move-mouse.sh
-  yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
-  echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
+  yes | cp -av ./cld/ /usr/local
+  ##JWM_START_SCRIPT=jwmrc-startup-keyboard-move-mouse.sh
+  ##yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
+  ##echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
 
 # Log

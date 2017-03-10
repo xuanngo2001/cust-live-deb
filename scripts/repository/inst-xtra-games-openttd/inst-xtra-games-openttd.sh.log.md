@@ -2,7 +2,7 @@
   * After this operation, 19.2 MB of additional disk space will be used.
   * After this operation, 16.5 MB of additional disk space will be used.
   * Install openttd.
-  * Disk size = 4688476K. Space Used = 51856K.
+  * Disk size = 4688868K. Space Used = 51860K.
   * The following NEW packages will be installed:
   ```bash
   openttd-opengfx openttd-openmsx openttd-opensfx

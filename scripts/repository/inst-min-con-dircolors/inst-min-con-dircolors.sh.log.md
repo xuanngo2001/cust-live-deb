@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-dircolors.sh ...
   * Set dircolors to use  to make ls more beautiful.
-  * Disk size = 1367776K. Space Used = 20K.
+  * Disk size = 1367900K. Space Used = 20K.
