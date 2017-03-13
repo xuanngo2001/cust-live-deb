@@ -2,7 +2,7 @@
   * After this operation, 23.1 MB of additional disk space will be used.
   * Install transmission-gtk.
   * Insert transmission-gtk in Internet menu.
-  * Disk size = 2934764K. Space Used = 35328K.
+  * Disk size = 2934832K. Space Used = 35328K.
   * The following NEW packages will be installed:
   ```bash
   gconf2 libcurl3-gnutls libevent-2.0-5 libminiupnpc10 libnatpmp1

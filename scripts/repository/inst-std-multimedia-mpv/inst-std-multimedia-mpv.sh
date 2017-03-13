@@ -26,7 +26,7 @@ apt-get install -d -y --force-yes libzvbi0
 apt-get -y --force-yes install mpv
 
 # Add multiple aliases for MPV
-yes | cp -av bashrc-alias-mpv.sh /etc/profile.d/
+yes | cp -av ./cld  /usr/local
 
 # Add useful mpv keybindings settings.
 MPV_CONFIG_DIR=${HOME}/.config/mpv/

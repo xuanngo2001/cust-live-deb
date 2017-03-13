@@ -12,6 +12,10 @@ case "${action}" in
   jwmrc)
       mkdir -p ./cld/app/jwm/jwmrc
       ;;
+      
+  bashrc)
+      mkdir -p ./cld/bashrc.d
+      ;;
             
    *)
       echo "Error: Action: ${action} is unknown. Aborted!"

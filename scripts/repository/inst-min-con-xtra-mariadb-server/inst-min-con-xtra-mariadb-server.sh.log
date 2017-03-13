@@ -39,7 +39,7 @@ Get:12 http://localhost/aptly-repo/master_jessie-main/ jessie/main psmisc amd64 
 Get:13 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main mariadb-server-10.0 amd64 10.0.29-0+deb8u1 [5,966 kB]
 Get:14 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main mariadb-server all 10.0.29-0+deb8u1 [16.8 kB]
 Preconfiguring packages ...
-Fetched 19.1 MB in 0s (39.9 MB/s)
+Fetched 19.1 MB in 0s (21.3 MB/s)
 Selecting previously unselected package perl-modules.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18988 files and directories currently installed.)
 Preparing to unpack .../perl-modules_5.20.2-3+deb8u6_all.deb ...
@@ -103,7 +103,7 @@ Setting up mariadb-server-core-10.0 (10.0.29-0+deb8u1) ...
 Setting up psmisc (22.21-2) ...
 Setting up mariadb-server-10.0 (10.0.29-0+deb8u1) ...
 invoke-rc.d: policy-rc.d denied execution of stop.
-170310 21:10:21 [Note] /usr/sbin/mysqld (mysqld 10.0.29-MariaDB-0+deb8u1) starting as process 12459 ...
+170313 17:07:54 [Note] /usr/sbin/mysqld (mysqld 10.0.29-MariaDB-0+deb8u1) starting as process 30220 ...
 invoke-rc.d: policy-rc.d denied execution of start.
 Setting up mariadb-server (10.0.29-0+deb8u1) ...
 Processing triggers for libc-bin (2.19-18+deb8u7) ...
@@ -111,4 +111,4 @@ Processing triggers for systemd (215-17+deb8u6) ...
 mysqladmin: connect to server at 'localhost' failed
 error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")'
 Check that mysqld is running and that the socket: '/var/run/mysqld/mysqld.sock' exists!
-CLDS: * Disk size = 2011060K. Space Used = 296256K.
+CLDS: * Disk size = 2011128K. Space Used = 296252K.

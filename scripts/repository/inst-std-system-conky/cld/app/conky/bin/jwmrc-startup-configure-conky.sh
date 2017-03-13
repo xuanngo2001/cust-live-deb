@@ -41,7 +41,7 @@ set -e
 	while IFS='' read -r IFACE_NAME || [[ -n "$IFACE_NAME" ]]; do
 
 	  # Dynamically generate network interface for conkyrc.
-	  IFACE_CONKY="/usr/local/cld/app/conky/config/cld/conkyrc-network-${IFACE_NAME}.txt"
+	  IFACE_CONKY="/usr/local/cld/app/conky/config/conkyrc-network-${IFACE_NAME}.txt"
 	  sed "s/IFACE_NAME/${IFACE_NAME}/g" "${IFACE_BASE_CONKY}" > "${IFACE_CONKY}"
 	  
     # Insert network interface to conkyrc.
