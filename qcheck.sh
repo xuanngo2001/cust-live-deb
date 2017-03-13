@@ -11,3 +11,7 @@ echo "qcheck-show-removed-packages.sh:"
 echo "------------------"
 echo "qcheck-jwm-missing-icons.sh:"
 ./qcheck-jwm-missing-icons.sh
+
+echo "------------------"
+echo "qcheck-warning.sh:"
+./qcheck-warning.sh
