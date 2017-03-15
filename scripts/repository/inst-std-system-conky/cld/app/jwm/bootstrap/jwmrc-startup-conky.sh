@@ -1,3 +1,4 @@
+rm -f ${HOME}/.conkyrc
 ln -s /usr/local/cld/app/conky/config/conkyrc ${HOME}/.conkyrc
 
 # Wait for JWM

@@ -6,7 +6,7 @@
   * Install blender3d.
   * Insert Blender 3D menu in Graphics.
   * http://download.blender.org/release/
-  * Disk size = 3871340K. Space Used = 290784K.
+  * Disk size = 3871336K. Space Used = 290784K.
   * The following NEW packages will be installed:
   ```bash
   libsensors4
