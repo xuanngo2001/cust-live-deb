@@ -189,35 +189,35 @@ Hit http://localhost jessie-updates InRelease
 Hit http://localhost jessie-updates InRelease
 Hit http://localhost jessie/main amd64 Packages
 Hit http://localhost nightly/main amd64 Packages
+Hit http://localhost jessie/main amd64 Packages
 Ign http://localhost jessie/main Translation-en
 Ign http://localhost nightly/main Translation-en
-Hit http://localhost jessie/main amd64 Packages
 Ign http://localhost jessie/main Translation-en
 Hit http://localhost jessie/non-free amd64 Packages
 Hit http://localhost stable/main amd64 Packages
+Hit http://localhost jessie-backports/contrib amd64 Packages
+Hit http://localhost jessie-backports/main amd64 Packages
 Ign http://localhost jessie/non-free Translation-en
 Ign http://localhost stable/main Translation-en
-Hit http://localhost jessie-backports/contrib amd64 Packages
 Ign http://localhost jessie-backports/contrib Translation-en
-Hit http://localhost jessie-backports/main amd64 Packages
 Ign http://localhost jessie-backports/main Translation-en
 Hit http://localhost jessie-backports/non-free amd64 Packages
-Ign http://localhost jessie-backports/non-free Translation-en
 Hit http://localhost jessie/contrib amd64 Packages
-Ign http://localhost jessie/contrib Translation-en
 Hit http://localhost jessie/non-free amd64 Packages
+Ign http://localhost jessie-backports/non-free Translation-en
+Ign http://localhost jessie/contrib Translation-en
 Ign http://localhost jessie/non-free Translation-en
 Hit http://localhost jessie-updates/contrib amd64 Packages
 Hit http://localhost jessie-updates/main amd64 Packages
+Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie-updates/contrib Translation-en
 Ign http://localhost jessie-updates/main Translation-en
-Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie-updates/non-free Translation-en
 Hit http://localhost jessie-updates/contrib amd64 Packages
-Ign http://localhost jessie-updates/contrib Translation-en
 Hit http://localhost jessie-updates/main amd64 Packages
-Ign http://localhost jessie-updates/main Translation-en
 Hit http://localhost jessie-updates/non-free amd64 Packages
+Ign http://localhost jessie-updates/contrib Translation-en
+Ign http://localhost jessie-updates/main Translation-en
 Ign http://localhost jessie-updates/non-free Translation-en
 Reading package lists...
 Reading package lists...
@@ -246,7 +246,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 810 kB in 0s (19.5 MB/s)
+Fetched 810 kB in 0s (19.7 MB/s)
 Selecting previously unselected package libcap-ng0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9756 files and directories currently installed.)
 Preparing to unpack .../libcap-ng0_0.7.4-2_amd64.deb ...
@@ -314,7 +314,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 39.6 MB in 1s (31.5 MB/s)
+Fetched 39.6 MB in 0s (43.2 MB/s)
 Selecting previously unselected package firmware-linux-free.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9977 files and directories currently installed.)
 Preparing to unpack .../firmware-linux-free_3.3_all.deb ...
@@ -389,34 +389,34 @@ ii  linux-image-amd64                        4.9+79~bpo8+1   amd64        Linux 
 total 37112
 -rw-r--r-- 1 root root  3171429 Feb 28 08:43 System.map-4.9.0-0.bpo.2-amd64
 -rw-r--r-- 1 root root   186717 Feb 28 08:43 config-4.9.0-0.bpo.2-amd64
--rw-r--r-- 1 root root 30620451 Mar 15 18:52 initrd.img-4.9.0-0.bpo.2-amd64
+-rw-r--r-- 1 root root 30620309 Mar 16 19:04 initrd.img-4.9.0-0.bpo.2-amd64
 -rw-r--r-- 1 root root  4016160 Feb 28 08:36 vmlinuz-4.9.0-0.bpo.2-amd64
 ad0cb0696689d7461f28c1667182b3cc  /boot/System.map-4.9.0-0.bpo.2-amd64
 1365bf9fd23a226b1c4a660f8d11f848  /boot/config-4.9.0-0.bpo.2-amd64
-2683ff73f2a727e6b7164376a16b4d75  /boot/initrd.img-4.9.0-0.bpo.2-amd64
+b25839902395a6554614256a7abe725e  /boot/initrd.img-4.9.0-0.bpo.2-amd64
 afcbdad773c8eab0a384a4d98a0dc328  /boot/vmlinuz-4.9.0-0.bpo.2-amd64
 total 64
-drwxr-xr-x   2 root root 4096 Mar 15 18:51 bin
-drwxr-xr-x   2 root root 4096 Mar 15 18:52 boot
-drwxr-xr-x  17 root root 3720 Mar 15 13:14 dev
-drwxr-xr-x  54 root root 4096 Mar 15 18:52 etc
+drwxr-xr-x   2 root root 4096 Mar 16 19:04 bin
+drwxr-xr-x   2 root root 4096 Mar 16 19:04 boot
+drwxr-xr-x  17 root root 3720 Mar 16 17:45 dev
+drwxr-xr-x  54 root root 4096 Mar 16 19:04 etc
 drwxr-xr-x   2 root root 4096 Dec 28 17:42 home
-lrwxrwxrwx   1 root root   35 Mar 15 18:51 initrd.img -> boot/initrd.img-4.9.0-0.bpo.2-amd64
-drwxr-xr-x  15 root root 4096 Mar 15 18:51 lib
-drwxr-xr-x   2 root root 4096 Mar 15 18:50 lib64
-drwxr-xr-x   2 root root 4096 Mar 15 18:50 media
-drwxr-xr-x   2 root root 4096 Mar 15 18:50 mnt
-drwxr-xr-x   2 root root 4096 Mar 15 18:50 opt
-dr-xr-xr-x 608 root root    0 Mar 15 12:50 proc
-drwx------   4 root root 4096 Mar 15 18:51 root
-drwxr-xr-x   6 root root 4096 Mar 15 18:51 run
-drwxr-xr-x   2 root root 4096 Mar 15 18:51 sbin
-drwxr-xr-x   2 root root 4096 Mar 15 18:50 srv
-dr-xr-xr-x  13 root root    0 Mar 15 13:07 sys
-drwxrwxrwt   2 root root 4096 Mar 15 18:51 tmp
-drwxr-xr-x  10 root root 4096 Mar 15 18:50 usr
-drwxr-xr-x  11 root root 4096 Mar 15 18:50 var
-lrwxrwxrwx   1 root root   32 Mar 15 18:51 vmlinuz -> boot/vmlinuz-4.9.0-0.bpo.2-amd64
+lrwxrwxrwx   1 root root   35 Mar 16 19:04 initrd.img -> boot/initrd.img-4.9.0-0.bpo.2-amd64
+drwxr-xr-x  15 root root 4096 Mar 16 19:04 lib
+drwxr-xr-x   2 root root 4096 Mar 16 19:03 lib64
+drwxr-xr-x   2 root root 4096 Mar 16 19:03 media
+drwxr-xr-x   2 root root 4096 Mar 16 19:03 mnt
+drwxr-xr-x   2 root root 4096 Mar 16 19:03 opt
+dr-xr-xr-x 617 root root    0 Mar 16 13:38 proc
+drwx------   4 root root 4096 Mar 16 19:04 root
+drwxr-xr-x   6 root root 4096 Mar 16 19:04 run
+drwxr-xr-x   2 root root 4096 Mar 16 19:04 sbin
+drwxr-xr-x   2 root root 4096 Mar 16 19:03 srv
+dr-xr-xr-x  13 root root    0 Mar 16 13:54 sys
+drwxrwxrwt   2 root root 4096 Mar 16 19:04 tmp
+drwxr-xr-x  10 root root 4096 Mar 16 19:03 usr
+drwxr-xr-x  11 root root 4096 Mar 16 19:03 var
+lrwxrwxrwx   1 root root   32 Mar 16 19:04 vmlinuz -> boot/vmlinuz-4.9.0-0.bpo.2-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-4.9.0-0.bpo.2-amd64-unsigned.
-CLDS: * Disk size = 1338808K. Space Used = 273276K.
+CLDS: * Disk size = 1338816K. Space Used = 273272K.

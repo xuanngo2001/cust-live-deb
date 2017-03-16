@@ -4,4 +4,4 @@
   * Install x11-utils for xprop.
   * Copy open-terminal.sh in /root/cld.
   * Add  in /root/cld/jwmrc-startup.sh.
-  * Disk size = 4703384K. Space Used = 20K.
+  * Disk size = 4703412K. Space Used = 24K.

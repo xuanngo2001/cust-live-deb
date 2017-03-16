@@ -16,7 +16,11 @@ case "${action}" in
   bashrc)
       mkdir -p ./cld/bashrc.d
       ;;
-            
+
+  bootstrap)
+      mkdir -p ./cld/bootstrap
+      ;;
+
    *)
       echo "Error: Action: ${action} is unknown. Aborted!"
       exit 1;

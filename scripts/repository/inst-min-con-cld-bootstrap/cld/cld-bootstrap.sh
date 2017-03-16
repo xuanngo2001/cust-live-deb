@@ -7,9 +7,10 @@ set -e
 script_dir=/usr/local/cld/bootstrap
 script_dir=$(readlink -ev "${script_dir}")
 while IFS='' read -r script_file || [[ -n "${script_file}" ]]; do
-
-  chmod +x ${script_file}         2>&1 | tee -a "${CLD_LOG_DIR}/boot-sequence.log" "${CLD_LOG_DIR}/$0.log"
-  echo "Executing ${script_file}" 2>&1 | tee -a "${CLD_LOG_DIR}/boot-sequence.log" "${CLD_LOG_DIR}/$0.log"
-  ./${script_file}                2>&1 | tee -a "${CLD_LOG_DIR}/boot-sequence.log" "${CLD_LOG_DIR}/$0.log"
+  
+  this_script_name=$(basename $0)
+  chmod +x ${script_file}          2>&1 | tee -a "${CLD_LOG_DIR}/${this_script_name}.log"
+  echo "Executing ${script_file}"  2>&1 | tee -a "${CLD_LOG_DIR}/${this_script_name}.log" "${CLD_LOG_DIR}/boot-sequence.log"
+  (${script_file}                  2>&1 | tee -a "${CLD_LOG_DIR}/${this_script_name}.log")&
 
 done < <( find "${script_dir}" -type f -name '*.sh')
