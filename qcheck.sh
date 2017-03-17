@@ -5,6 +5,10 @@ echo "qcheck-error-in-log.sh:"
 ./qcheck-error-in-log.sh
 
 echo "------------------"
+echo "qcheck-file-dir-not-found.sh:"
+./qcheck-file-dir-not-found.sh
+
+echo "------------------"
 echo "qcheck-show-removed-packages.sh:"
 ./qcheck-show-removed-packages.sh
 
