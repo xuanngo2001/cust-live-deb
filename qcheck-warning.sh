@@ -12,6 +12,7 @@ MAIN_LOG=/media/master/github/cust-live-deb/logs/main.log
     warnings=$(grep -iE 'Warning:' ${MAIN_LOG} | sed 's/^/  /')
     warnings=$(echo "${warnings}" | grep -vF 'setlocale:')
     warnings=$(echo "${warnings}" | grep -v ' perl: .* locale')
+    warnings=$(echo "${warnings}" | awk '!seen[$0]++' ) # Remove duplicate without sorting.
     
     echo "${warnings}"
   else
