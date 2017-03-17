@@ -17,8 +17,8 @@ case "${action}" in
       mkdir -p ./cld/bashrc.d
       ;;
 
-  bootstrap)
-      mkdir -p ./cld/bootstrap
+  after-boot)
+      mkdir -p ./cld/systemd/runlevel/after-boot
       ;;
 
    *)
