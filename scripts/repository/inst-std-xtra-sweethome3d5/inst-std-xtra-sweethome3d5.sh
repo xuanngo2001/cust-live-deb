@@ -30,8 +30,6 @@ chmod +x ${LOCAL_BIN}/sweethome3d*
 # Insert Sweet Home 3D menu in Graphics
 sed -i "/Graphics\">/ r jwmrc-menus-graphics-sweethome3d.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
-#./jmf.sh
-
 # Log
 echo "${GV_LOG} * Install ${SH3D_JAR}."
 echo "${GV_LOG} * Install ${SH3D_TEXTURE_EDITOR_JAR}."
