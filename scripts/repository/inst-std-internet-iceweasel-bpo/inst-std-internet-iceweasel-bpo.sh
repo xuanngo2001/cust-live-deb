@@ -21,7 +21,9 @@ sed -i "/Internet\">/ r jwmrc-menus-inet-iceweasel.xml" "${CLD_JWMRC_DIR}/jwmrc-
 
 
 # Install flash plugin.
-apt-get -y --force-yes install flashplugin-nonfree
+#apt-get -y --force-yes install flashplugin-nonfree
+apt-get -y --force-yes install libevent-pthreads-2.0-5
+apt-get -y --force-yes install browser-plugin-freshplayer-pepperflash
 
 # Log
 echo "${GV_LOG} * Install the latest Firefox from Debian Mozilla team: $(firefox --version | grep Mozilla)."
