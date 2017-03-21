@@ -17,15 +17,8 @@ apt-get -y --force-yes install wicd
 # Insert Wicd menu in Network
 sed -i "/Network\">/ r jwmrc-menus-network-wicd.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
-# Start wicd daemon on startup.
-#yes | cp startup-wicd.sh "${GV_CLD_ROOT_DIR}"
-#sed -i "/## Insert your script files here ##/a ${GV_CLD_ROOT_DIR}/startup-wicd.sh&" /etc/init.d/startup.sh
-
 # Set wicd to run on JWM startup.
 yes | cp -av ./cld/ /usr/local
-##JWM_START_SCRIPT=jwmrc-startup-wicd.sh
-##yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
-##echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
 # Log
 echo "${GV_LOG} * Install Network Manager: wicd."
