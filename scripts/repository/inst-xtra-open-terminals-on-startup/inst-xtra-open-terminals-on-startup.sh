@@ -13,20 +13,12 @@ apt-get -y --force-yes install x11-xserver-utils
 apt-get -y --force-yes install wmctrl
 apt-get -y --force-yes install x11-utils
 
+# Make open-terminals.sh run when JWM start. 
 yes | cp -av ./cld/ /usr/local
 
-
-# Make open-terminals.sh run when JWM start. 
-##yes | cp -av open-terminals.sh "${GV_CLD_ROOT_DIR}"
-##chmod +x "${GV_CLD_ROOT_DIR}/open-terminals.sh"
-
-##JWM_START_SCRIPT=jwmrc-startup-open-terminals.sh
-##yes | cp -av "${JWM_START_SCRIPT}" "${GV_CLD_ROOT_DIR}"
-##echo "${GV_CLD_ROOT_DIR}/${JWM_START_SCRIPT}&" >> "${GV_CLD_ROOT_DIR}/jwmrc-startup.sh"
 
 # Log
 echo "${GV_LOG} * Install x11-xserver-utils for xrandr."
 echo "${GV_LOG} * Install wmctrl."
 echo "${GV_LOG} * Install x11-utils for xprop."
-echo "${GV_LOG} * Copy open-terminal.sh in ${GV_CLD_ROOT_DIR}."
-echo "${GV_LOG} * Add ${JWM_START_SCRIPT} in ${GV_CLD_ROOT_DIR}/jwmrc-startup.sh."
+echo "${GV_LOG} * Make open-terminals.sh run when JWM start."
