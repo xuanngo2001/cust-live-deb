@@ -7,12 +7,13 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Examples:
-#   apt-get install -d -y --force-yes <your-package>  # Explicitly download dependent packages 
+# Explicitly download dependent packages
+#apt-get install -d -y --force-yes freeciv-sound-standard 
 
 # Install freeciv-client-gtk.
-apt-get -y --force-yes install freeciv-client-gtk
+apt-get -y --force-yes install freeciv-client-gtk freeciv-sound-standard
 
 
 # Log
 echo "${GV_LOG} * Install freeciv-client-gtk."
+echo "${GV_LOG} * How to run freeciv: http://freeciv.wikia.com/wiki/Install#Start_the_game"
