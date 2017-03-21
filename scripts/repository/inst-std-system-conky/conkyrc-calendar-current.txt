@@ -1,2 +1,0 @@
-${font Arial:size=10:style=bold}${color Tan2}CALENDAR ${color DarkSlateGray}${hr 2}
-${color}${font Bitstream Vera Sans Mono:size=8}${execpi 150 cal -h | head -n -1 | sed s/" $(date +%e)"/\$\{"color tan1"}\&\$\{color}/ | sed s/"$(date +%e) "/\$\{"color cyan"}\&\$\{color}/ | sed s/"$(date +%a | cut -c1-2)"/\$\{"color tan1"}\&\$\{color}/}
