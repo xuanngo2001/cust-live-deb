@@ -22,12 +22,18 @@ localepurge
 
 # ./inst-min-con-auto-log-root/inst-min-con-auto-log-root.sh
 
-# ./inst-min-con-bashrc/inst-min-con-bashrc.sh
-
 # ./inst-min-con-bash-scripts/inst-min-con-bash-scripts.sh
+
+# ./inst-min-con-cld-bashrc/inst-min-con-cld-bashrc.sh
+
+# ./inst-min-con-cld-bin/inst-min-con-cld-bin.sh
+
+# ./inst-min-con-cld-bootstrap/inst-min-con-cld-bootstrap.sh
 
 # ./inst-min-con-cld-dev-tools-debootstrap/inst-min-con-cld-dev-tools-debootstrap.sh
 debootstrap
+# ./inst-min-con-cld-env-variables/inst-min-con-cld-env-variables.sh
+
 # ./inst-min-con-cld-tools/inst-min-con-cld-tools.sh
 
 # ./inst-min-con-compressors/inst-min-con-compressors.sh
@@ -38,6 +44,8 @@ zip
 unzip
 p7zip
 # ./inst-min-con-deb-multimedia/inst-min-con-deb-multimedia.sh
+
+# ./inst-min-con-dircolors/inst-min-con-dircolors.sh
 
 # ./inst-min-con-filesystem-exfat/inst-min-con-filesystem-exfat.sh
 exfat-fuse
@@ -89,6 +97,8 @@ alsa-base
 alsa-utils
 # ./inst-min-con-udevil-bpo/inst-min-con-udevil-bpo.sh
 udevil
+# ./inst-min-con-users-poweruser/inst-min-con-users-poweruser.sh
+
 # ./inst-min-con-xtra-buffer/inst-min-con-xtra-buffer.sh
 buffer
 # ./inst-min-con-xtra-buffer-pv/inst-min-con-xtra-buffer-pv.sh
@@ -198,7 +208,8 @@ pinta
 
 # ./inst-std-internet-iceweasel-bpo/inst-std-internet-iceweasel-bpo.sh
 iceweasel
-flashplugin-nonfree
+libevent-pthreads-2.0-5
+browser-plugin-freshplayer-pepperflash
 # ./inst-std-internet-xtra-google-chrome/inst-std-internet-xtra-google-chrome.sh
 libappindicator1
 libdbusmenu-glib4

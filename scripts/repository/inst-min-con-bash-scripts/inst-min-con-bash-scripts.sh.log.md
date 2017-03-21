@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-bash-scripts.sh ...
   * Install bash-scripts.
-  * Disk size = 1362672K. Space Used = 44K.
+  * Disk size = 1331068K. Space Used = 48K.

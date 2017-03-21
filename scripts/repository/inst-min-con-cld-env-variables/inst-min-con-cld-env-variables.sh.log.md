@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-cld-env-variables.sh ...
   * Install CLD environment variables.
-  * Disk size = 1363072K. Space Used = 4K.
+  * Disk size = 1331464K. Space Used = 8K.

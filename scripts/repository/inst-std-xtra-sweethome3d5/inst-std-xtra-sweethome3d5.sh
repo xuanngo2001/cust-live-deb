@@ -19,12 +19,12 @@ yes | cp -Rv ${SH3D_DIR} ${LOCAL_BIN}
 
 # Create executable scripts.
 SH3D_JAR=SweetHome3D-5.3.jar
-SH3D_TEXTURE_EDITOR_JAR=TexturesLibraryEditor-1.5.jar
-SH3D_FURNITURE_EDITOR_JAR=FurnitureLibraryEditor-1.19.jar
+SH3D_TEXTURE_JAR=TexturesLibraryEditor-1.5.jar
+SH3D_FURNITURE_JAR=FurnitureLibraryEditor-1.19.jar
 
 echo "java -jar ${LOCAL_BIN}/${SH3D_DIR}/${SH3D_JAR}  -Dcom.eteks.sweethome3d.j3d.checkOffScreenSupport=false" > ${LOCAL_BIN}/sweethome3d
-echo "java -jar ${LOCAL_BIN}/${SH3D_DIR}/${SH3D_TEXTURE_EDITOR_JAR}" > ${LOCAL_BIN}/sweethome3d-textures-editor
-echo "java -jar ${LOCAL_BIN}/${SH3D_DIR}/${SH3D_FURNITURE_EDITOR_JAR}" > ${LOCAL_BIN}/sweethome3d-furniture-editor
+echo "java -jar ${LOCAL_BIN}/${SH3D_DIR}/${SH3D_TEXTURE_JAR}" > ${LOCAL_BIN}/sweethome3d-textures
+echo "java -jar ${LOCAL_BIN}/${SH3D_DIR}/${SH3D_FURNITURE_JAR}" > ${LOCAL_BIN}/sweethome3d-furniture
 chmod +x ${LOCAL_BIN}/sweethome3d*
 
 # Insert Sweet Home 3D menu in Graphics
@@ -32,8 +32,8 @@ sed -i "/Graphics\">/ r jwmrc-menus-graphics-sweethome3d.xml" "${CLD_JWMRC_DIR}/
 
 # Log
 echo "${GV_LOG} * Install ${SH3D_JAR}."
-echo "${GV_LOG} * Install ${SH3D_TEXTURE_EDITOR_JAR}."
-echo "${GV_LOG} * Install ${SH3D_FURNITURE_EDITOR_JAR}."
+echo "${GV_LOG} * Install ${SH3D_TEXTURE_JAR}."
+echo "${GV_LOG} * Install ${SH3D_FURNITURE_JAR}."
 echo "${GV_LOG} * Insert SweetHome3D menus in Graphics."
 
 #   * Running inst-std-xtra-sweethome3d.sh ...

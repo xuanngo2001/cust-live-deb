@@ -8,13 +8,7 @@ echo "$0: $(date)" >> /usr/local/cld/log/boot-sequence.log
 #   -http://unix.stackexchange.com/a/41756
 #   -https://wiki.archlinux.org/index.php/systemd
 
-MASTER_LOG="/usr/local/cld/log/$(basename "$0").log"
-/usr/local/cld/bin/partition-automount.sh     2>&1 | tee -a "${MASTER_LOG}"
-/usr/local/cld/bin/partition-swap-enable.sh   2>&1 | tee -a "${MASTER_LOG}"
-/usr/local/cld/cld-bootstrap.sh               2>&1 | tee -a "${MASTER_LOG}"
+log_file="/usr/local/cld/log/$(basename "$0").log"
 
-## Add internal scripts below ##
-
-
-/usr/local/cld/systemd/user/cld-user-after-boot.sh 2>&1 | tee -a  "${MASTER_LOG}" /usr/local/cld/log/cld-user-after-boot.log
-
+scripts_dir=/usr/local/cld/systemd/runlevel/after-boot
+/usr/local/cld/bin/cld-run-scripts.sh "${scripts_dir}" 2>&1 | tee -a "${log_file}" 
