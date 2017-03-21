@@ -4,7 +4,7 @@
   * Insert gsimplecal in JWM system tray.
   * Overwrite configuration.
   * Overwrite gtk calendar style.
-  * Disk size = 3673124K. Space Used = 132K.
+  * Disk size = 3673044K. Space Used = 136K.
   * The following NEW packages will be installed:
   ```bash
   gsimplecal

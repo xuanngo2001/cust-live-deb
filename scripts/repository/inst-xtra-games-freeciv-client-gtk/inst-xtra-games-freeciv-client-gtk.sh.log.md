@@ -1,9 +1,10 @@
 * >>>>>>>>> Running inst-xtra-games-freeciv-client-gtk.sh ...
-  * After this operation, 44.3 MB of additional disk space will be used.
+  * After this operation, 46.1 MB of additional disk space will be used.
   * Install freeciv-client-gtk.
-  * Disk size = 4586588K. Space Used = 49504K.
+  * How to run freeciv: http://freeciv.wikia.com/wiki/Install#Start_the_game
+  * Disk size = 4589884K. Space Used = 52880K.
   * The following NEW packages will be installed:
   ```bash
-  freeciv-client-gtk freeciv-data gtk2-engines-pixbuf libfluidsynth1
-  libmikmod3 libsdl-mixer1.2
+  freeciv-client-gtk freeciv-data freeciv-sound-standard gtk2-engines-pixbuf
+  libfluidsynth1 libmikmod3 libsdl-mixer1.2
   ```

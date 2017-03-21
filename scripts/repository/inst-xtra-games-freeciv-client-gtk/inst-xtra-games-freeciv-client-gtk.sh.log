@@ -5,22 +5,23 @@ Reading state information...
 The following extra packages will be installed:
   freeciv-data gtk2-engines-pixbuf libfluidsynth1 libmikmod3 libsdl-mixer1.2
 Suggested packages:
-  freeciv-client-extras freeciv-sound-standard
+  freeciv-client-extras
 Recommended packages:
   freeciv-server musescore-soundfont-gm fluid-soundfont-gm freepats
 The following NEW packages will be installed:
-  freeciv-client-gtk freeciv-data gtk2-engines-pixbuf libfluidsynth1
-  libmikmod3 libsdl-mixer1.2
-0 upgraded, 6 newly installed, 0 to remove and 25 not upgraded.
-Need to get 18.0 MB of archives.
-After this operation, 44.3 MB of additional disk space will be used.
+  freeciv-client-gtk freeciv-data freeciv-sound-standard gtk2-engines-pixbuf
+  libfluidsynth1 libmikmod3 libsdl-mixer1.2
+0 upgraded, 7 newly installed, 0 to remove and 25 not upgraded.
+Need to get 19.7 MB of archives.
+After this operation, 46.1 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libfluidsynth1 amd64 1.1.6-2 [227 kB]
 Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libmikmod3 amd64 3.3.7-1 [128 kB]
 Get:3 http://localhost/aptly-repo/master_jessie-main/ jessie/main libsdl-mixer1.2 amd64 1.2.12-11+b1 [85.0 kB]
 Get:4 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main freeciv-data all 2.5.6-1~bpo8+1 [16.3 MB]
 Get:5 http://localhost/aptly-repo/master_jessie-main/ jessie/main gtk2-engines-pixbuf amd64 2.24.25-3+deb8u1 [544 kB]
 Get:6 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main freeciv-client-gtk amd64 2.5.6-1~bpo8+1 [738 kB]
-Fetched 18.0 MB in 0s (40.1 MB/s)
+Get:7 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main freeciv-sound-standard all 2.5.6-1~bpo8+1 [1,673 kB]
+Fetched 19.7 MB in 0s (40.5 MB/s)
 Selecting previously unselected package libfluidsynth1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56779 files and directories currently installed.)
 Preparing to unpack .../libfluidsynth1_1.1.6-2_amd64.deb ...
@@ -40,6 +41,9 @@ Unpacking gtk2-engines-pixbuf:amd64 (2.24.25-3+deb8u1) ...
 Selecting previously unselected package freeciv-client-gtk.
 Preparing to unpack .../freeciv-client-gtk_2.5.6-1~bpo8+1_amd64.deb ...
 Unpacking freeciv-client-gtk (2.5.6-1~bpo8+1) ...
+Selecting previously unselected package freeciv-sound-standard.
+Preparing to unpack .../freeciv-sound-standard_2.5.6-1~bpo8+1_all.deb ...
+Unpacking freeciv-sound-standard (2.5.6-1~bpo8+1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for hicolor-icon-theme (0.13-1) ...
 Processing triggers for desktop-file-utils (0.22-1) ...
@@ -51,7 +55,9 @@ Setting up libsdl-mixer1.2:amd64 (1.2.12-11+b1) ...
 Setting up freeciv-data (2.5.6-1~bpo8+1) ...
 Setting up gtk2-engines-pixbuf:amd64 (2.24.25-3+deb8u1) ...
 Setting up freeciv-client-gtk (2.5.6-1~bpo8+1) ...
+Setting up freeciv-sound-standard (2.5.6-1~bpo8+1) ...
 Processing triggers for libc-bin (2.19-18+deb8u7) ...
 Processing triggers for menu (2.1.47) ...
 CLDS: * Install freeciv-client-gtk.
-CLDS: * Disk size = 4586588K. Space Used = 49504K.
+CLDS: * How to run freeciv: http://freeciv.wikia.com/wiki/Install#Start_the_game
+CLDS: * Disk size = 4589884K. Space Used = 52880K.

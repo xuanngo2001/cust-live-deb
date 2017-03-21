@@ -2,6 +2,5 @@
   * Install x11-xserver-utils for xrandr.
   * Install wmctrl.
   * Install x11-utils for xprop.
-  * Copy open-terminal.sh in /root/cld.
-  * Add  in /root/cld/jwmrc-startup.sh.
-  * Disk size = 4762872K. Space Used = 20K.
+  * Make open-terminals.sh run when JWM start.
+  * Disk size = 4769488K. Space Used = 20K.
