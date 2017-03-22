@@ -9,22 +9,18 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install gsimplecal.
-apt-get -y --force-yes install gsimplecal
+  apt-get -y --force-yes install gsimplecal
 
 # Insert gsimplecal in JWM system tray.
-yes | cp -av jwmrc-tray.xml ${CLD_JWMRC_DIR}/jwmrc-tray.xml
+  sed -i "/<\/Clock>/ r jwmrc-tray-clock.xml" "${CLD_JWMRC_DIR}/jwmrc-tray.xml"
+  sed -i '/xclock</!p' "${CLD_JWMRC_DIR}/jwmrc-tray.xml"
 
-# Overwrite configuration.
-yes | cp -av ./gsimplecal  ${HOME}/.config/
-
-# Overwrite gtk calendar style
-GTK_CONFIG_DIR=${HOME}/.config/gtk-3.0/
-mkdir -p "${GTK_CONFIG_DIR}"
-GTK_CONFIG_DIR=$(readlink -ev "${GTK_CONFIG_DIR}")
-yes | cp -av gtk.css  "${GTK_CONFIG_DIR}"
+# Overwrite gtk calendar style: home/.config/gtk-3.0/gtk.css
+# Overwrite gsimplecal configuration: home/.config/gsimplecal/config
+  yes | cp -av ./cld  /usr/local
 
 # Log
 echo "${GV_LOG} * Install gsimplecal."
 echo "${GV_LOG} * Insert gsimplecal in JWM system tray."
-echo "${GV_LOG} * Overwrite configuration."
-echo "${GV_LOG} * Overwrite gtk calendar style."
+echo "${GV_LOG} * Overwrite gtk calendar style: home/.config/gtk-3.0/gtk.css."
+echo "${GV_LOG} * Overwrite gsimplecal configuration: home/.config/gsimplecal/config."
