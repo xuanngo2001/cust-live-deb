@@ -8,7 +8,15 @@ case "${action}" in
   bin)
       mkdir -p ./cld/bin
       ;;
-      
+
+  home)
+      mkdir -p ./cld/home
+      ;;
+
+  app)
+      mkdir -p ./cld/app
+      ;;
+
   jwmrc)
       mkdir -p ./cld/app/jwm/jwmrc
       ;;
@@ -32,6 +40,8 @@ case "${action}" in
    *)
       echo "Error: Action: ${action} is unknown. Aborted!"
       printf "    %-20s %s\n" "bin"               "=> ./cld/bin"
+      printf "    %-20s %s\n" "home"              "=> ./cld/home"
+      printf "    %-20s %s\n" "app"               "=> ./cld/app"
       printf "    %-20s %s\n" "jwmrc"             "=> ./cld/app/jwm/jwmrc"
       printf "    %-20s %s\n" "jwm-bootstrap"     "=> ./cld/app/jwm/bootstrap"
       printf "    %-20s %s\n" "bashrc"            "=> ./cld/bashrc.d"
