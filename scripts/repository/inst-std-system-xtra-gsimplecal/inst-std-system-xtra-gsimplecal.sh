@@ -13,7 +13,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Insert gsimplecal in JWM system tray.
   sed -i "/<\/Clock>/ r jwmrc-tray-clock.xml" "${CLD_JWMRC_DIR}/jwmrc-tray.xml"
-  sed -i '/xclock</!p' "${CLD_JWMRC_DIR}/jwmrc-tray.xml"
+  sed -i '/xclock</d' "${CLD_JWMRC_DIR}/jwmrc-tray.xml"
 
 # Overwrite gtk calendar style: home/.config/gtk-3.0/gtk.css
 # Overwrite gsimplecal configuration: home/.config/gsimplecal/config
