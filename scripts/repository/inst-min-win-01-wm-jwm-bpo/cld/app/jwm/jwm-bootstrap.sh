@@ -1,16 +1,11 @@
 #!/bin/bash
 set -e
+echo "$0: $(date)\n" >> /usr/local/cld/log/boot-sequence.log
 # Description: Commands that will run on JWM startup.
 
-#find /usr/local/cld/app/jwm/bootstrap/ -name '*.sh' -type f -execdir echo "Executing {}" \; -execdir chmod +x {} \; -execdir {} \; 2>&1 | tee -a "${CLD_LOG_DIR}/boot-sequence.log" "${CLD_LOG_DIR}/$0.log"
+
+log_file="/usr/local/cld/log/$(basename "$0").log"
 
 script_dir=/usr/local/cld/app/jwm/bootstrap
 script_dir=$(readlink -ev "${script_dir}")
-while IFS='' read -r script_file || [[ -n "${script_file}" ]]; do
-
-  this_script_name=$(basename $0)
-  chmod +x ${script_file}          2>&1 | tee -a "${CLD_LOG_DIR}/${this_script_name}.log"
-  echo "Executing ${script_file}"  2>&1 | tee -a "${CLD_LOG_DIR}/${this_script_name}.log" "${CLD_LOG_DIR}/boot-sequence.log"
-  (${script_file}                  2>&1 | tee -a "${CLD_LOG_DIR}/${this_script_name}.log")&
-
-done < <( find "${script_dir}" -type f -name '*.sh')
+/usr/local/cld/bin/cld-run-scripts.sh "${scripts_dir}" 2>&1 | tee -a "${log_file}"
