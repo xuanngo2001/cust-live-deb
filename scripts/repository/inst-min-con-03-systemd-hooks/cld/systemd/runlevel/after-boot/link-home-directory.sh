@@ -4,7 +4,7 @@ set -e
 
 CLD_HOME_DIR=/usr/local/cld/home
 user_home_dir=$(readlink -ev /root)
-while IFS='' read -r line || [[ -n "${line}" ]]; do
+while IFS='' read -r line || [[ -n "${HOME}" ]]; do
 
   link_name=$(basename "${line}")
   rm -rf "${user_home_dir}/${link_name}"
