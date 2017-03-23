@@ -3,8 +3,8 @@ set -e
 # Description: Link all files or directories in /usr/local/cld/home to $HOME
 
 CLD_HOME_DIR=/usr/local/cld/home
-user_home_dir=$(readlink -ev /root)
-while IFS='' read -r line || [[ -n "${HOME}" ]]; do
+user_home_dir=$(readlink -ev ${HOME})
+while IFS='' read -r line || [[ -n "${line}" ]]; do
 
   link_name=$(basename "${line}")
   rm -rf "${user_home_dir}/${link_name}"
