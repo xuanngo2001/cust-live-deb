@@ -6,6 +6,11 @@ set -e
 
 script_dir=$1
 
+if [ -z "${script_dir}" ]; then
+  echo "Error: script_dir can't be empty. Aborted!" 
+  exit 1;
+fi
+
 script_dir=$(readlink -ev "${script_dir}")
 while IFS='' read -r script_file || [[ -n "${script_file}" ]]; do
   
