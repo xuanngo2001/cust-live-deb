@@ -7,5 +7,6 @@ echo "$0: $(date)\n" >> /usr/local/cld/log/boot-sequence.log
 log_file="/usr/local/cld/log/$(basename "$0").log"
 
 script_dir=/usr/local/cld/app/jwm/bootstrap
+
 script_dir=$(readlink -ev "${script_dir}")
-/usr/local/cld/bin/cld-run-scripts.sh "${scripts_dir}" 2>&1 | tee -a "${log_file}"
+/usr/local/cld/bin/cld-run-scripts.sh "${script_dir}" 2>&1 | tee -a "${log_file}"
