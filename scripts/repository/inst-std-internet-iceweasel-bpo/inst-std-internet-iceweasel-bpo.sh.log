@@ -23,67 +23,51 @@ Hit http://localhost jessie-updates InRelease
 Hit http://localhost jessie/main amd64 Packages
 Hit http://localhost nightly/main amd64 Packages
 Hit http://localhost jessie/main amd64 Packages
+Ign http://localhost jessie/main Translation-en_US
+Ign http://localhost jessie/main Translation-en
 Hit http://localhost jessie/non-free amd64 Packages
 Hit http://localhost stable/main amd64 Packages
 Hit http://localhost jessie-backports/contrib amd64 Packages
 Hit http://localhost jessie-backports/main amd64 Packages
-Hit http://localhost jessie-backports/non-free amd64 Packages
-Hit http://localhost jessie/contrib amd64 Packages
-Ign http://localhost jessie/main Translation-en_US
-Ign http://localhost jessie/main Translation-en
-Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://localhost nightly/main Translation-en_US
 Ign http://localhost nightly/main Translation-en
-Ign http://localhost nightly/main Translation-en_US.UTF-8
+Ign http://localhost jessie/main Translation-en_US
+Ign http://localhost jessie/main Translation-en
+Hit http://localhost jessie-backports/non-free amd64 Packages
+Hit http://localhost jessie/contrib amd64 Packages
 Hit http://localhost jessie/non-free amd64 Packages
 Hit http://localhost jessie-updates/contrib amd64 Packages
 Hit http://localhost jessie-updates/main amd64 Packages
-Hit http://localhost jessie-updates/non-free amd64 Packages
-Ign http://localhost jessie/main Translation-en_US
-Ign http://localhost jessie/main Translation-en
-Ign http://localhost jessie/main Translation-en_US.UTF-8
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
-Ign http://localhost jessie/non-free Translation-en_US.UTF-8
-Hit http://localhost jessie-updates/contrib amd64 Packages
-Hit http://localhost jessie-updates/main amd64 Packages
-Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost stable/main Translation-en_US
 Ign http://localhost stable/main Translation-en
-Ign http://localhost stable/main Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/non-free amd64 Packages
+Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-backports/contrib Translation-en_US
 Ign http://localhost jessie-backports/contrib Translation-en
-Ign http://localhost jessie-backports/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie-backports/main Translation-en_US
 Ign http://localhost jessie-backports/main Translation-en
-Ign http://localhost jessie-backports/main Translation-en_US.UTF-8
+Hit http://localhost jessie-updates/main amd64 Packages
+Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie-backports/non-free Translation-en_US
 Ign http://localhost jessie-backports/non-free Translation-en
-Ign http://localhost jessie-backports/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
-Ign http://localhost jessie/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
-Ign http://localhost jessie/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie-updates/contrib Translation-en_US
 Ign http://localhost jessie-updates/contrib Translation-en
-Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie-updates/main Translation-en_US
 Ign http://localhost jessie-updates/main Translation-en
-Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
 Ign http://localhost jessie-updates/non-free Translation-en_US
 Ign http://localhost jessie-updates/non-free Translation-en
-Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
 Ign http://localhost jessie-updates/contrib Translation-en_US
 Ign http://localhost jessie-updates/contrib Translation-en
-Ign http://localhost jessie-updates/contrib Translation-en_US.UTF-8
 Ign http://localhost jessie-updates/main Translation-en_US
 Ign http://localhost jessie-updates/main Translation-en
-Ign http://localhost jessie-updates/main Translation-en_US.UTF-8
 Ign http://localhost jessie-updates/non-free Translation-en_US
 Ign http://localhost jessie-updates/non-free Translation-en
-Ign http://localhost jessie-updates/non-free Translation-en_US.UTF-8
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -104,7 +88,7 @@ Get:1 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/ma
 Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libhunspell-1.3-0 amd64 1.3.3-3 [139 kB]
 Get:3 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main firefox-esr amd64 45.8.0esr-1~deb8u1 [43.7 MB]
 Get:4 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main iceweasel all 45.8.0esr-1~deb8u1 [119 kB]
-Fetched 44.1 MB in 0s (46.2 MB/s)
+Fetched 44.1 MB in 0s (48.2 MB/s)
 Selecting previously unselected package libevent-2.0-5:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36123 files and directories currently installed.)
 Preparing to unpack .../libevent-2.0-5_2.0.21-stable-2+deb8u1_amd64.deb ...
@@ -142,7 +126,7 @@ Need to get 152 kB of archives.
 After this operation, 339 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main libevent-core-2.0-5 amd64 2.0.21-stable-2+deb8u1 [108 kB]
 Get:2 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main libevent-pthreads-2.0-5 amd64 2.0.21-stable-2+deb8u1 [44.1 kB]
-Fetched 152 kB in 0s (12.9 MB/s)
+Fetched 152 kB in 0s (14.2 MB/s)
 Selecting previously unselected package libevent-core-2.0-5:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36251 files and directories currently installed.)
 Preparing to unpack .../libevent-core-2.0-5_2.0.21-stable-2+deb8u1_amd64.deb ...
@@ -207,7 +191,7 @@ Get:27 http://localhost/aptly-repo/master_jessie-main/ jessie/main libv4l-0 amd6
 Get:28 http://localhost/aptly-repo/master_jessie-main/ jessie/main libva-x11-1 amd64 1.4.1-1 [17.6 kB]
 Get:29 http://localhost/aptly-repo/master_jessie-main/ jessie/main libvdpau1 amd64 0.8-3+deb8u2 [33.7 kB]
 Get:30 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib browser-plugin-freshplayer-pepperflash amd64 0.3.5-1~bpo8+1 [370 kB]
-Fetched 8,396 kB in 0s (16.8 MB/s)
+Fetched 8,396 kB in 0s (17.8 MB/s)
 Selecting previously unselected package libaacplus2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36263 files and directories currently installed.)
 Preparing to unpack .../libaacplus2_2.0.2-dmo2_amd64.deb ...
@@ -336,4 +320,4 @@ CLDS: * Insert Iceweasel in Internet menu.
 CLDS: * To update Adobe Flash Player: update-flashplugin-nonfree --install.
 CLDS: * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/.
 CLDS: * Supported browsers by flashplugin-nonfree: https://wiki.debian.org/FlashPlayer.
-CLDS: * Disk size = 2821204K. Space Used = 175616K.
+CLDS: * Disk size = 2821152K. Space Used = 175624K.

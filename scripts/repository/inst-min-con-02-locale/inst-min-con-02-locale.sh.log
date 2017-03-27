@@ -1,4 +1,3 @@
-/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS:>>>>>>>>> Running inst-min-con-02-locale.sh ...
 Reading package lists...
 Building dependency tree...
@@ -11,8 +10,8 @@ After this operation, 16.7 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main locales all 2.19-18+deb8u7 [3946 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
-	LANGUAGE = "en_US.UTF-8",
-	LC_ALL = "en_US.UTF-8",
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
 	LANG = "en_US.UTF-8"
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
@@ -20,7 +19,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 3946 kB in 0s (29.6 MB/s)
+Fetched 3946 kB in 0s (50.1 MB/s)
 Selecting previously unselected package locales.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14438 files and directories currently installed.)
 Preparing to unpack .../locales_2.19-18+deb8u7_all.deb ...
@@ -34,4 +33,4 @@ Generating locales (this might take a while)...
 Generation complete.
 /root/.bashrc: line 21: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 CLDS: * Install locale and set it to use en_US.UTF-8.
-CLDS: * Disk size = 1330160K. Space Used = 22756K.
+CLDS: * Disk size = 1330124K. Space Used = 22756K.

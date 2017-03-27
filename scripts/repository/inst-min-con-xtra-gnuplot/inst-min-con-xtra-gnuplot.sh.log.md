@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-gnuplot.sh ...
   * After this operation, 46.7 MB of additional disk space will be used.
   * Install gnuplot.
-  * Disk size = 1660280K. Space Used = 63372K.
+  * Disk size = 1660224K. Space Used = 63368K.
   * The following NEW packages will be installed:
   ```bash
   aglfn fontconfig fontconfig-config fonts-dejavu-core gnuplot gnuplot-data

@@ -25,6 +25,7 @@ source ../lib/func_bashrc_add_path.sh
 
 source ../lib/func_backup.sh
 ./test-func_backup.sh
+./test-func_backup_del_old.sh
 
 source ../lib/func_apache_www_link.sh
 ./test-func_apache_www_link.sh
