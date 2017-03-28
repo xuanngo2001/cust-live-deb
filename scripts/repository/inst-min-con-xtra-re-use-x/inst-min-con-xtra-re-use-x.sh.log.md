@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-xtra-re-use-x.sh ...
   * Install re-use-x.
-  * Disk size = 2210520K. Space Used = 24K.
+  * Disk size = 2210932K. Space Used = 24K.

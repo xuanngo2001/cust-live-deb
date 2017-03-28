@@ -61,7 +61,7 @@ function func_backup_del_old()
   local counter=0
   while [ $counter -lt ${del_after_days} ]; do
     local day_exclude=$(date --date="-${counter} days" +%Y-%m-%d)
-    archive_list=$(echo "${archive_list}" | grep -vF "${day_exclude}" )
+    archive_list=$(echo "${archive_list}" | grep -vF "${day_exclude}" || true) # || true because it will exit if 'set -e' is set.
     counter=$[$counter+1]
   done  
   
@@ -72,5 +72,6 @@ function func_backup_del_old()
     echo "${archive_list}" | sed 's/^/  /'
     echo "${archive_list}"| tr \\n \\0 | xargs -0 -n1 rm -f
   fi
+
 }  
 export -f func_backup_del_old

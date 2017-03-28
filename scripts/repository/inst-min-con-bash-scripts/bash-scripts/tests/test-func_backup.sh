@@ -24,5 +24,6 @@ set -e
 
 
   rm -f "${FILE_A}"
-  rm -f "${FILE_B}" 
+  rm -f "${FILE_B}"
+  rm -rf "${BACKUP_DIR}"
 assert_end func_backup

@@ -26,15 +26,16 @@ set -e
 
   # Test delete old backups.
   assert_raises "func_backup_del_old \"${archive_prefix}\" 7" 0
-  # Check expected results.
-  results=$(find "${backup_test_data_dir}" -name '*.tar.bz2' | grep -F '.keep.' | wc -l)
-  if [ "${results}" -ne 3 ]; then
-    assert "echo ${results}" "Expect 3 files with name .keep."
-  else
-    # Clean up
-    rm -rf "${backup_test_data_dir}"
-  fi
+    # Check expected results.
+    results=$(find "${backup_test_data_dir}" -name '*.tar.bz2' | grep -F '.keep.' | wc -l)
+    if [ "${results}" -ne 3 ]; then
+      assert "echo ${results}" "Expect 3 files with name .keep."
+    fi
   
+  # Test delete old backups again.
+  assert_raises "func_backup_del_old \"${archive_prefix}\" 7" 0
   
-  rm -rf 
+# Clean up
+  rm -rf "${backup_test_data_dir}"
+     
 assert_end func_backup_del_old
