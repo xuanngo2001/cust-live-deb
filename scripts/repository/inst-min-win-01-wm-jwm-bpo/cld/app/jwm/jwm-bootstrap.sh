@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-echo "$0: $(date)\n" >> /usr/local/cld/log/boot-sequence.log
+echo "$0: $(date)" >> /usr/local/cld/log/boot-sequence.log
 # Description: Commands that will run on JWM startup.
 
 

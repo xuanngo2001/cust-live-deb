@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-echo "$0: $(date)\n" >> /usr/local/cld/log/boot-sequence.log
+echo "$0: $(date)" >> /usr/local/cld/log/boot-sequence.log
 # Description: Before reboot/halt/shutdown, run the following scripts:
 #   Note: Internal use only. If you want to add you own custom scripts, add in
 #           /root/cld/systemd/user/cld-user-before-shutdown-halt-reboot.sh
