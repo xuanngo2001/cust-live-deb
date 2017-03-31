@@ -15,3 +15,6 @@ https://wiki.archlinux.org/index.php/systemd
     
     # Main target explained
     https://wiki.archlinux.org/index.php/systemd#Targets_table
+    
+    # List of jobs running
+    systemctl list-jobs
