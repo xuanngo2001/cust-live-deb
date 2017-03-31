@@ -2,6 +2,7 @@ https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Sy
 
 https://fedoramagazine.org/systemd-unit-dependencies-and-order/
 https://wiki.archlinux.org/index.php/systemd
+http://unix.stackexchange.com/questions/284598/systemd-how-to-execute-script-at-shutdown-only-not-at-reboot
 
 
     # Get available target
