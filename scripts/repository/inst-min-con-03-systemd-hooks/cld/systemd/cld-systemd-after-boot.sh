@@ -11,4 +11,6 @@ echo "$0: $(date)" >> /usr/local/cld/log/boot-sequence.log
 log_file="/usr/local/cld/log/$(basename "$0").log"
 
 scripts_dir=/usr/local/cld/systemd/runlevel/after-boot
-/usr/local/cld/bin/cld-run-scripts.sh "${scripts_dir}" 2>&1 | tee -a "${log_file}" 
+/usr/local/cld/bin/cld-run-scripts.sh "${scripts_dir}" 2>&1 | tee -a "${log_file}"
+
+exit 0;
