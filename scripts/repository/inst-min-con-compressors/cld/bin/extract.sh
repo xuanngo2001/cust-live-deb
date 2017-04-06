@@ -1,6 +1,7 @@
 #!/bin/bash
 # function Extract for common file formats
 # Credit: https://github.com/limelime/Extract/blob/master/extract.sh
+#         https://coderwall.com/p/agmblq/bash-function-for-extract-every-archive-with-one-word
 
 function extract {
  if [ -z "$1" ]; then
