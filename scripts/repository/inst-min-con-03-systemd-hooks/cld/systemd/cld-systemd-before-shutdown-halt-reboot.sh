@@ -12,5 +12,3 @@ log_file="/usr/local/cld/log/$(basename "$0").log"
 
 scripts_dir=/usr/local/cld/systemd/runlevel/before-shutdown
 /usr/local/cld/bin/cld-run-scripts.sh "${scripts_dir}" 2>&1 | tee -a "${log_file}"
-
-exit 0;
