@@ -27,5 +27,6 @@ echo "${GV_LOG} * Install de/compressor: unzip."
 echo "${GV_LOG} * Install de/compressor: zip."
 echo "${GV_LOG} * Install de/compressor: p7zip."
 echo "${GV_LOG} * Add universal extractor."
+echo "${GV_LOG} * Use new rar version due to segmentation fault with 'RAR 4.20' with linux-image-4.8.0-0.bpo.2-amd64-unsigned (4.8.11-1~bpo8+1)."
 
 
