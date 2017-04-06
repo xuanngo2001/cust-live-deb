@@ -2,10 +2,9 @@
 Description=CLD: Systemd Start/Stop service.
 
 [Service]
-Type=oneshot
+Type=simple
 ExecStart=/usr/local/cld/systemd/cld-systemd-after-boot.sh
 ExecStop=/usr/local/cld/systemd/cld-systemd-before-shutdown-halt-reboot.sh
-RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
