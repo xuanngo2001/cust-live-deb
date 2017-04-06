@@ -36,5 +36,5 @@ echo "${GV_LOG} * Install ${SH3D_TEXTURE_JAR}."
 echo "${GV_LOG} * Install ${SH3D_FURNITURE_JAR}."
 echo "${GV_LOG} * Insert SweetHome3D menus in Graphics."
 
-#   * Running inst-std-xtra-sweethome3d.sh ...
-#    * Disk size = 3156512K. Space Used = 36104K.
+# REJECTED:
+#   -Application not often used enough to be included. Besides, easy to add externally: it is only a jar file.
