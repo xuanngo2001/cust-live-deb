@@ -19,3 +19,10 @@ http://unix.stackexchange.com/questions/284598/systemd-how-to-execute-script-at-
     
     # List of jobs running
     systemctl list-jobs
+    
+# Service file
+Shutdown scripts are not ran if you use combinations of:
+* Type=oneshot, RemainAfterExit=yes
+* Type=forking, PIDFile=/some/path/file.pid
+
+Only **Type=simple** works.
