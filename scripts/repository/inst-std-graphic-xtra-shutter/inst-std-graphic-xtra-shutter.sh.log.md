@@ -1,7 +1,8 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-shutter.sh ...
-  * After this operation, 97.9 MB of additional disk space will be used.
+  * After this operation, 97.8 MB of additional disk space will be used.
+  * After this operation, 1,145 kB of additional disk space will be used.
   * Install shutter.
-  * Disk size = 2718088K. Space Used = 110872K.
+  * Disk size = 2719836K. Space Used = 112580K.
   * The following NEW packages will be installed:
   ```bash
   gconf-service gconf2 gconf2-common gnome-mime-data libart-2.0-2
@@ -33,4 +34,6 @@
   libxml-namespacesupport-perl libxml-parser-perl libxml-sax-base-perl
   libxml-sax-perl libxml-simple-perl libxml-twig-perl libxres1 perlmagick
   python python-minimal python2.7 python2.7-minimal shutter xdg-utils
+  libextutils-depends-perl libextutils-pkgconfig-perl libgoo-canvas-perl
+  libgoocanvas-common libgoocanvas3 pkgconf
   ```
