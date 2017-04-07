@@ -30,8 +30,6 @@ localepurge
 
 # ./inst-min-con-cld-dev-tools-debootstrap/inst-min-con-cld-dev-tools-debootstrap.sh
 debootstrap
-# ./inst-min-con-cld-env-variables/inst-min-con-cld-env-variables.sh
-
 # ./inst-min-con-cld-tools/inst-min-con-cld-tools.sh
 
 # ./inst-min-con-compressors/inst-min-con-compressors.sh
@@ -118,6 +116,8 @@ default-jre
 tree
 # ./inst-min-con-xtra-encoding-libtext-iconv-perl/inst-min-con-xtra-encoding-libtext-iconv-perl.sh
 libtext-iconv-perl
+# ./inst-min-con-xtra-fuse/inst-min-con-xtra-fuse.sh
+fuse
 # ./inst-min-con-xtra-gnuplot/inst-min-con-xtra-gnuplot.sh
 gnuplot
 # ./inst-min-con-xtra-imagemagick/inst-min-con-xtra-imagemagick.sh
@@ -140,9 +140,9 @@ poppler-utils
 php5
 # ./inst-min-con-xtra-re-use-x/inst-min-con-xtra-re-use-x.sh
 
+# ./inst-min-con-xtra-sqlite3/inst-min-con-xtra-sqlite3.sh
+sqlite3
 # ./inst-min-con-xtra-timezone/inst-min-con-xtra-timezone.sh
-
-# ./inst-min-con-xtra-youtube-dl/inst-min-con-xtra-youtube-dl.sh
 
 # ./inst-min-win-00-xorg/inst-min-win-00-xorg.sh
 xinit
@@ -178,14 +178,10 @@ xdotool
 speedcrunch
 # ./inst-std-accessories-feh/inst-std-accessories-feh.sh
 feh
-# ./inst-std-accessories-file-roller/inst-std-accessories-file-roller.sh
-file-roller
 # ./inst-std-accessories-gpicview/inst-std-accessories-gpicview.sh
 gpicview
 # ./inst-std-accessories-mupdf/inst-std-accessories-mupdf.sh
 mupdf
-# ./inst-std-accessories-pcmanfm/inst-std-accessories-pcmanfm.sh
-pcmanfm
 # ./inst-std-accessories-prtscr-gnome-screenshot/inst-std-accessories-prtscr-gnome-screenshot.sh
 gnome-screenshot
 # ./inst-std-accessories-scite/inst-std-accessories-scite.sh
@@ -205,6 +201,7 @@ pinta
 # ./inst-std-graphic-xtra-shutter/inst-std-graphic-xtra-shutter.sh
 shutter
 perlmagick
+libgoo-canvas-perl
 # ./inst-std-help-manuals-html/inst-std-help-manuals-html.sh
 
 # ./inst-std-internet-iceweasel-bpo/inst-std-internet-iceweasel-bpo.sh
@@ -283,8 +280,6 @@ dia-shapes
 php5-gd
 # ./inst-std-xtra-opw-php5-mysql/inst-std-xtra-opw-php5-mysql.sh
 php5-mysql
-# ./inst-std-xtra-sweethome3d5/inst-std-xtra-sweethome3d5.sh
-
 # ./inst-xtra-dev-tools-ant/inst-xtra-dev-tools-ant.sh
 ant
 # ./inst-xtra-freecad/inst-xtra-freecad.sh
@@ -394,8 +389,6 @@ libbasicusageenvironment0
 pyside-tools
 libboost-python1.55.0
 freecad
-# ./inst-xtra-fuse/inst-xtra-fuse.sh
-fuse
 # ./inst-xtra-games-0ad/inst-xtra-games-0ad.sh
 0ad
 # ./inst-xtra-games-freeciv-client-gtk/inst-xtra-games-freeciv-client-gtk.sh
@@ -422,8 +415,6 @@ graphviz
 x11-xserver-utils
 wmctrl
 x11-utils
-# ./inst-xtra-sqlite3/inst-xtra-sqlite3.sh
-sqlite3
 # ./inst-xtra-virtualbox-guest-additions-iso/inst-xtra-virtualbox-guest-additions-iso.sh
 linux-headers-amd64
 dkms
@@ -456,8 +447,6 @@ gettext-base
 icoutils
 p7zip-full
 playonlinux
-# ./inst-xtra-xmpv/inst-xtra-xmpv.sh
-
 # ./inst-xtra-zfs-bpo/inst-xtra-zfs-bpo.sh
 file
 lsb-release
