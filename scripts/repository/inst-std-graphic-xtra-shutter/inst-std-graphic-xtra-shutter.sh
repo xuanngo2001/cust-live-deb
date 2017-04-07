@@ -13,6 +13,11 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install shutter.
 apt-get -y --force-yes install shutter perlmagick
 
+# Package needed to enable Edit button in Shutter.
+apt-get -y --force-yes install libgoo-canvas-perl
 
 # Log
 echo "${GV_LOG} * Install shutter."
+
+# REJECTED:
+#   Too big. Can be replaced with printscreen + Dia.
