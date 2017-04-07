@@ -31,7 +31,7 @@ timeout 10s /bin/bash -c "while ! wmctrl -l|grep ' Bottom'; do sleep 1s; echo 'W
 
 
 # Move terminals.
-CONKY_WIDTH=$(xwinsplitter--get-width.sh "conky (debian)")
+CONKY_WIDTH=$(xwinsplitter--get-width.sh "conky (")
 MARGIN_LEFT=0
 MARGIN_TOP=0
 MARGIN_RIGHT=${CONKY_WIDTH}
