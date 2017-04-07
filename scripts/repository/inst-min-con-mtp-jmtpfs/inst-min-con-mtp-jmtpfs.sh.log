@@ -3,32 +3,37 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  libmagic1
+  libmagic1 libmtp-common libmtp9 libusb-1.0-0
 Suggested packages:
   file
+Recommended packages:
+  libmtp-runtime
 The following NEW packages will be installed:
-  jmtpfs libmagic1
-0 upgraded, 2 newly installed, 0 to remove and 25 not upgraded.
-Need to get 289 kB of archives.
-After this operation, 3,389 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libmagic1 amd64 1:5.22+15-2+deb8u3 [250 kB]
-Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main jmtpfs amd64 0.5-2 [39.2 kB]
-Fetched 289 kB in 0s (16.7 MB/s)
-Selecting previously unselected package libmagic1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16738 files and directories currently installed.)
-Preparing to unpack .../libmagic1_1%3a5.22+15-2+deb8u3_amd64.deb ...
-Unpacking libmagic1:amd64 (1:5.22+15-2+deb8u3) ...
-Selecting previously unselected package jmtpfs.
-Preparing to unpack .../jmtpfs_0.5-2_amd64.deb ...
-Unpacking jmtpfs (0.5-2) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up libmagic1:amd64 (1:5.22+15-2+deb8u3) ...
-Setting up jmtpfs (0.5-2) ...
-Processing triggers for libc-bin (2.19-18+deb8u7) ...
-CLDS: * Install jmtpfs to mount smartphones that use Media Transfer Protocol(MTP).
-CLDS: *   # Connect your smartphone.
-CLDS: *   mkdir /path/to/your/mount/directory/
-CLDS: *   jmtpfs -o allow_other /path/to/your/mount/directory/
-CLDS: *   # Enter your PIN to unlock your smartphone.
-CLDS: *   cd /path/to/your/mount/directory/
-CLDS: * Disk size = 1501652K. Space Used = 3652K.
+  jmtpfs libmagic1 libmtp-common libmtp9 libusb-1.0-0
+0 upgraded, 5 newly installed, 0 to remove and 25 not upgraded.
+Need to get 600 kB of archives.
+After this operation, 5,795 kB of additional disk space will be used.
+WARNING: The following packages cannot be authenticated!
+  libmagic1 libmtp-common libusb-1.0-0 libmtp9 jmtpfs
+Err http://localhost/aptly-repo/master_jessie-main/ jessie/main libmagic1 amd64 1:5.22+15-2+deb8u3
+  Could not connect to localhost:80 (127.0.0.1). - connect (111: Connection refused) [IP: 127.0.0.1 80]
+Err http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libmtp-common all 1.1.10-1~bpo8+1
+  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
+Err http://localhost/aptly-repo/master_jessie-main/ jessie/main libusb-1.0-0 amd64 2:1.0.19-1
+  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
+Err http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libmtp9 amd64 1.1.10-1~bpo8+1
+  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
+Err http://localhost/aptly-repo/master_jessie-main/ jessie/main jmtpfs amd64 0.5-2
+  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
+E: Failed to fetch http://localhost/aptly-repo/master_jessie-main/pool/main/f/file/libmagic1_5.22+15-2+deb8u3_amd64.deb  Could not connect to localhost:80 (127.0.0.1). - connect (111: Connection refused) [IP: 127.0.0.1 80]
+
+E: Failed to fetch http://localhost/aptly-repo/master_jessie-backports-main/pool/main/libm/libmtp/libmtp-common_1.1.10-1~bpo8+1_all.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
+
+E: Failed to fetch http://localhost/aptly-repo/master_jessie-main/pool/main/libu/libusb-1.0/libusb-1.0-0_1.0.19-1_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
+
+E: Failed to fetch http://localhost/aptly-repo/master_jessie-backports-main/pool/main/libm/libmtp/libmtp9_1.1.10-1~bpo8+1_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
+
+E: Failed to fetch http://localhost/aptly-repo/master_jessie-main/pool/main/j/jmtpfs/jmtpfs_0.5-2_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+CLDS: * Disk size = 1491880K. Space Used = 4K.

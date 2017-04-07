@@ -245,7 +245,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 810 kB in 0s (19.3 MB/s)
+Fetched 810 kB in 0s (10.9 MB/s)
 Selecting previously unselected package libcap-ng0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9756 files and directories currently installed.)
 Preparing to unpack .../libcap-ng0_0.7.4-2_amd64.deb ...
@@ -313,7 +313,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 39.6 MB in 0s (40.9 MB/s)
+Fetched 39.6 MB in 1s (36.1 MB/s)
 Selecting previously unselected package firmware-linux-free.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9977 files and directories currently installed.)
 Preparing to unpack .../firmware-linux-free_3.3_all.deb ...
@@ -385,37 +385,37 @@ Desired=Unknown/Install/Remove/Purge/Hold
 un  linux-image-4.9.0-0.bpo.2-amd64          <none>          <none>       (no description available)
 ii  linux-image-4.9.0-0.bpo.2-amd64-unsigned 4.9.13-1~bpo8+1 amd64        Linux 4.9 for 64-bit PCs
 ii  linux-image-amd64                        4.9+79~bpo8+1   amd64        Linux for 64-bit PCs (meta-package)
-total 37112
+total 37108
 -rw-r--r-- 1 root root  3171429 Feb 28 08:43 System.map-4.9.0-0.bpo.2-amd64
 -rw-r--r-- 1 root root   186717 Feb 28 08:43 config-4.9.0-0.bpo.2-amd64
--rw-r--r-- 1 root root 30617777 Apr  6 18:27 initrd.img-4.9.0-0.bpo.2-amd64
+-rw-r--r-- 1 root root 30617167 Apr  7 17:01 initrd.img-4.9.0-0.bpo.2-amd64
 -rw-r--r-- 1 root root  4016160 Feb 28 08:36 vmlinuz-4.9.0-0.bpo.2-amd64
 ad0cb0696689d7461f28c1667182b3cc  /boot/System.map-4.9.0-0.bpo.2-amd64
 1365bf9fd23a226b1c4a660f8d11f848  /boot/config-4.9.0-0.bpo.2-amd64
-b75b982b713d128be5be0926b5a09fca  /boot/initrd.img-4.9.0-0.bpo.2-amd64
+6c128a597a5ad6c446e61016c562b8d1  /boot/initrd.img-4.9.0-0.bpo.2-amd64
 afcbdad773c8eab0a384a4d98a0dc328  /boot/vmlinuz-4.9.0-0.bpo.2-amd64
 total 64
-drwxr-xr-x   2 root root 4096 Apr  6 18:27 bin
-drwxr-xr-x   2 root root 4096 Apr  6 18:27 boot
-drwxr-xr-x  17 root root 3600 Apr  6 17:54 dev
-drwxr-xr-x  54 root root 4096 Apr  6 18:27 etc
+drwxr-xr-x   2 root root 4096 Apr  7 17:01 bin
+drwxr-xr-x   2 root root 4096 Apr  7 17:01 boot
+drwxr-xr-x  17 root root 3600 Apr  7 12:27 dev
+drwxr-xr-x  54 root root 4096 Apr  7 17:01 etc
 drwxr-xr-x   2 root root 4096 Dec 28 17:42 home
-lrwxrwxrwx   1 root root   35 Apr  6 18:27 initrd.img -> boot/initrd.img-4.9.0-0.bpo.2-amd64
-drwxr-xr-x  15 root root 4096 Apr  6 18:27 lib
-drwxr-xr-x   2 root root 4096 Apr  6 18:26 lib64
-drwxr-xr-x   2 root root 4096 Apr  6 18:26 media
-drwxr-xr-x   2 root root 4096 Apr  6 18:26 mnt
-drwxr-xr-x   2 root root 4096 Apr  6 18:26 opt
-dr-xr-xr-x 636 root root    0 Apr  6 15:22 proc
-drwx------   4 root root 4096 Apr  6 18:27 root
-drwxr-xr-x   6 root root 4096 Apr  6 18:27 run
-drwxr-xr-x   2 root root 4096 Apr  6 18:27 sbin
-drwxr-xr-x   2 root root 4096 Apr  6 18:26 srv
-dr-xr-xr-x  13 root root    0 Apr  6 15:39 sys
-drwxrwxrwt   2 root root 4096 Apr  6 18:27 tmp
-drwxr-xr-x  10 root root 4096 Apr  6 18:26 usr
-drwxr-xr-x  11 root root 4096 Apr  6 18:26 var
-lrwxrwxrwx   1 root root   32 Apr  6 18:27 vmlinuz -> boot/vmlinuz-4.9.0-0.bpo.2-amd64
+lrwxrwxrwx   1 root root   35 Apr  7 17:01 initrd.img -> boot/initrd.img-4.9.0-0.bpo.2-amd64
+drwxr-xr-x  15 root root 4096 Apr  7 17:01 lib
+drwxr-xr-x   2 root root 4096 Apr  7 17:00 lib64
+drwxr-xr-x   2 root root 4096 Apr  7 17:00 media
+drwxr-xr-x   2 root root 4096 Apr  7 17:00 mnt
+drwxr-xr-x   2 root root 4096 Apr  7 17:00 opt
+dr-xr-xr-x 624 root root    0 Apr  7 16:27 proc
+drwx------   4 root root 4096 Apr  7 17:01 root
+drwxr-xr-x   6 root root 4096 Apr  7 17:01 run
+drwxr-xr-x   2 root root 4096 Apr  7 17:01 sbin
+drwxr-xr-x   2 root root 4096 Apr  7 17:00 srv
+dr-xr-xr-x  13 root root    0 Apr  7 12:27 sys
+drwxrwxrwt   2 root root 4096 Apr  7 17:01 tmp
+drwxr-xr-x  10 root root 4096 Apr  7 17:00 usr
+drwxr-xr-x  11 root root 4096 Apr  7 17:00 var
+lrwxrwxrwx   1 root root   32 Apr  7 17:01 vmlinuz -> boot/vmlinuz-4.9.0-0.bpo.2-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-4.9.0-0.bpo.2-amd64-unsigned.
-CLDS: * Disk size = 1269596K. Space Used = 273276K.
+CLDS: * Disk size = 1269616K. Space Used = 273260K.

@@ -15,9 +15,9 @@ Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libdbusmenu-gl
 Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libdbusmenu-gtk4 amd64 12.10.2-1 [90.8 kB]
 Get:3 http://localhost/aptly-repo/master_jessie-main/ jessie/main libindicator7 amd64 0.5.0-2 [52.2 kB]
 Get:4 http://localhost/aptly-repo/master_jessie-main/ jessie/main libappindicator1 amd64 0.4.92-3.1 [52.5 kB]
-Fetched 299 kB in 0s (14.2 MB/s)
+Fetched 299 kB in 0s (7,234 kB/s)
 Selecting previously unselected package libdbusmenu-glib4:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41705 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36412 files and directories currently installed.)
 Preparing to unpack .../libdbusmenu-glib4_12.10.2-1_amd64.deb ...
 Unpacking libdbusmenu-glib4:amd64 (12.10.2-1) ...
 Selecting previously unselected package libdbusmenu-gtk4:amd64.
@@ -55,15 +55,54 @@ libindicator7 set to manually installed.
 Reading package lists...
 Building dependency tree...
 Reading state information...
-xdg-utils is already the newest version.
-xdg-utils set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 25 not upgraded.
+Suggested packages:
+  gvfs-bin
+Recommended packages:
+  libfile-mimeinfo-perl libnet-dbus-perl libx11-protocol-perl
+  x11-xserver-utils
+The following NEW packages will be installed:
+  xdg-utils
+0 upgraded, 1 newly installed, 0 to remove and 25 not upgraded.
+Need to get 65.0 kB of archives.
+After this operation, 308 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main xdg-utils all 1.1.0~rc1+git20111210-7.4 [65.0 kB]
+Fetched 65.0 kB in 0s (0 B/s)
+Selecting previously unselected package xdg-utils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36445 files and directories currently installed.)
+Preparing to unpack .../xdg-utils_1.1.0~rc1+git20111210-7.4_all.deb ...
+Unpacking xdg-utils (1.1.0~rc1+git20111210-7.4) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up xdg-utils (1.1.0~rc1+git20111210-7.4) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-gconf-service is already the newest version.
-gconf-service set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 25 not upgraded.
+The following extra packages will be installed:
+  gconf2-common libgconf-2-4
+The following NEW packages will be installed:
+  gconf-service gconf2-common libgconf-2-4
+0 upgraded, 3 newly installed, 0 to remove and 25 not upgraded.
+Need to get 1,879 kB of archives.
+After this operation, 7,409 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main gconf2-common all 3.2.6-3 [1,040 kB]
+Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgconf-2-4 amd64 3.2.6-3 [426 kB]
+Get:3 http://localhost/aptly-repo/master_jessie-main/ jessie/main gconf-service amd64 3.2.6-3 [414 kB]
+Fetched 1,879 kB in 0s (25.3 MB/s)
+Selecting previously unselected package gconf2-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36469 files and directories currently installed.)
+Preparing to unpack .../gconf2-common_3.2.6-3_all.deb ...
+Unpacking gconf2-common (3.2.6-3) ...
+Selecting previously unselected package libgconf-2-4:amd64.
+Preparing to unpack .../libgconf-2-4_3.2.6-3_amd64.deb ...
+Unpacking libgconf-2-4:amd64 (3.2.6-3) ...
+Selecting previously unselected package gconf-service.
+Preparing to unpack .../gconf-service_3.2.6-3_amd64.deb ...
+Unpacking gconf-service (3.2.6-3) ...
+Setting up gconf2-common (3.2.6-3) ...
+
+Creating config file /etc/gconf/2/path with new version
+Setting up libgconf-2-4:amd64 (3.2.6-3) ...
+Setting up gconf-service (3.2.6-3) ...
+Processing triggers for libc-bin (2.19-18+deb8u7) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -81,7 +120,7 @@ After this operation, 57.3 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libxss1 amd64 1:1.2.2-1 [17.5 kB]
 Fetched 17.5 kB in 0s (0 B/s)
 Selecting previously unselected package libxss1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41738 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36609 files and directories currently installed.)
 Preparing to unpack .../libxss1_1%3a1.2.2-1_amd64.deb ...
 Unpacking libxss1:amd64 (1:1.2.2-1) ...
 Setting up libxss1:amd64 (1:1.2.2-1) ...
@@ -95,9 +134,9 @@ The following NEW packages will be installed:
 Need to get 47.3 MB of archives.
 After this operation, 182 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_google-main/ stable/main google-chrome-stable amd64 57.0.2987.133-1 [47.3 MB]
-Fetched 47.3 MB in 1s (47.1 MB/s)
+Fetched 47.3 MB in 1s (45.2 MB/s)
 Selecting previously unselected package google-chrome-stable.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41744 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36615 files and directories currently installed.)
 Preparing to unpack .../google-chrome-stable_57.0.2987.133-1_amd64.deb ...
 Unpacking google-chrome-stable (57.0.2987.133-1) ...
 Processing triggers for menu (2.1.47) ...
@@ -116,4 +155,4 @@ CLDS: * Insert Google Chrome in Internet menu.
 CLDS: * Add google chrome alias, chrome.
 CLDS: * Set default browser: update-alternatives --config x-www-browser.
 CLDS: * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-CLDS: * Disk size = 3119220K. Space Used = 225436K.
+CLDS: * Disk size = 3006028K. Space Used = 229356K.

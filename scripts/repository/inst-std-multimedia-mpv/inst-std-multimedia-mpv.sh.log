@@ -13,7 +13,7 @@ Need to get 70.0 kB of archives.
 After this operation, 208 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libraw1394-11 amd64 2.1.0-3 [46.1 kB]
 Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libavc1394-0 amd64 0.5.4-2 [23.9 kB]
-Fetched 70.0 kB in 0s (0 B/s)
+Fetched 70.0 kB in 0s (3,663 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -27,7 +27,7 @@ The following extra packages will be installed:
   libass5 libavc1394-0 libavfilter5 libavformat56 libavresample2 libbluray1
   libcaca0 libcdio-cdda1 libcdio-paranoia1 libcdio13 libdc1394-22
   libdirectfb-1.2-9 libenca0 libiec61883-0 libjack-jackd2-0 libpostproc53
-  libraw1394-11 libsdl1.2debian libswscale3 libvidstab1.0
+  libraw1394-11 libsdl1.2debian libswscale3 libusb-1.0-0 libvidstab1.0
 Suggested packages:
   libbluray-bdj jackd2 libraw1394-doc
 Recommended packages:
@@ -36,10 +36,10 @@ The following NEW packages will be installed:
   libass5 libavc1394-0 libavdevice56 libavfilter5 libavformat56 libavresample2
   libbluray1 libcaca0 libcdio-cdda1 libcdio-paranoia1 libcdio13 libdc1394-22
   libdirectfb-1.2-9 libenca0 libiec61883-0 libjack-jackd2-0 libpostproc53
-  libraw1394-11 libsdl1.2debian libswscale3 libvidstab1.0
-0 upgraded, 21 newly installed, 0 to remove and 25 not upgraded.
-Need to get 4,280 kB/4,350 kB of archives.
-After this operation, 11.2 MB of additional disk space will be used.
+  libraw1394-11 libsdl1.2debian libswscale3 libusb-1.0-0 libvidstab1.0
+0 upgraded, 22 newly installed, 0 to remove and 25 not upgraded.
+Need to get 4,328 kB/4,398 kB of archives.
+After this operation, 11.3 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libenca0 amd64 1.16-1 [62.3 kB]
 Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libass5 amd64 0.10.2-3 [59.9 kB]
 Get:3 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libbluray1 amd64 2:0.7.0-dmo1 [111 kB]
@@ -52,14 +52,15 @@ Get:9 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libavf
 Get:10 http://localhost/aptly-repo/master_jessie-main/ jessie/main libcdio13 amd64 0.83-4.2 [168 kB]
 Get:11 http://localhost/aptly-repo/master_jessie-main/ jessie/main libcdio-cdda1 amd64 0.83-4.2 [132 kB]
 Get:12 http://localhost/aptly-repo/master_jessie-main/ jessie/main libcdio-paranoia1 amd64 0.83-4.2 [132 kB]
-Get:13 http://localhost/aptly-repo/master_jessie-main/ jessie/main libdc1394-22 amd64 2.2.3-1 [104 kB]
-Get:14 http://localhost/aptly-repo/master_jessie-main/ jessie/main libiec61883-0 amd64 1.2.0-0.2 [30.2 kB]
-Get:15 http://localhost/aptly-repo/master_jessie-main/ jessie/main libjack-jackd2-0 amd64 1.9.10+20140719git3eb0ae6a~dfsg-2 [172 kB]
-Get:16 http://localhost/aptly-repo/master_jessie-main/ jessie/main libcaca0 amd64 0.99.beta19-2 [346 kB]
-Get:17 http://localhost/aptly-repo/master_jessie-main/ jessie/main libdirectfb-1.2-9 amd64 1.2.10.0-5.1 [1,040 kB]
-Get:18 http://localhost/aptly-repo/master_jessie-main/ jessie/main libsdl1.2debian amd64 1.2.15-10+b1 [189 kB]
-Get:19 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libavdevice56 amd64 10:2.6.9-dmo1 [98.7 kB]
-Fetched 4,280 kB in 0s (23.4 MB/s)
+Get:13 http://localhost/aptly-repo/master_jessie-main/ jessie/main libusb-1.0-0 amd64 2:1.0.19-1 [48.1 kB]
+Get:14 http://localhost/aptly-repo/master_jessie-main/ jessie/main libdc1394-22 amd64 2.2.3-1 [104 kB]
+Get:15 http://localhost/aptly-repo/master_jessie-main/ jessie/main libiec61883-0 amd64 1.2.0-0.2 [30.2 kB]
+Get:16 http://localhost/aptly-repo/master_jessie-main/ jessie/main libjack-jackd2-0 amd64 1.9.10+20140719git3eb0ae6a~dfsg-2 [172 kB]
+Get:17 http://localhost/aptly-repo/master_jessie-main/ jessie/main libcaca0 amd64 0.99.beta19-2 [346 kB]
+Get:18 http://localhost/aptly-repo/master_jessie-main/ jessie/main libdirectfb-1.2-9 amd64 1.2.10.0-5.1 [1,040 kB]
+Get:19 http://localhost/aptly-repo/master_jessie-main/ jessie/main libsdl1.2debian amd64 1.2.15-10+b1 [189 kB]
+Get:20 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libavdevice56 amd64 10:2.6.9-dmo1 [98.7 kB]
+Fetched 4,328 kB in 0s (17.2 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -142,7 +143,7 @@ Get:6 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/ma
 Get:7 http://localhost/aptly-repo/master_jessie-main/ jessie/main python-talloc amd64 2.1.2-0+deb8u1 [10.4 kB]
 Get:8 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main samba-libs amd64 2:4.2.14+dfsg-0+deb8u5 [5,115 kB]
 Get:9 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main libsmbclient amd64 2:4.2.14+dfsg-0+deb8u5 [147 kB]
-Fetched 6,690 kB in 0s (31.8 MB/s)
+Fetched 6,690 kB in 0s (31.4 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -169,8 +170,8 @@ The following extra packages will be installed:
   libiec61883-0 libjack-jackd2-0 libldb1 liblircclient0 liblua5.2-0
   libmowgli-2-0 libmpg123-0 libntdb1 libopenal-data libopenal1 libpostproc53
   libpython2.7 libraw1394-11 libsdl1.2debian libsmbclient libswscale3
-  libtalloc2 libtevent0 libva-glx1 libvidstab1.0 libwayland-egl1-mesa
-  libwbclient0 python-talloc samba-libs
+  libtalloc2 libtevent0 libusb-1.0-0 libva-glx1 libvidstab1.0
+  libwayland-egl1-mesa libwbclient0 python-talloc samba-libs
 Suggested packages:
   libbluray-bdj libdvdcss2 jackd2 lirc libportaudio2 libraw1394-doc youtube-dl
 Recommended packages:
@@ -182,11 +183,11 @@ The following NEW packages will be installed:
   libiec61883-0 libjack-jackd2-0 libldb1 liblircclient0 liblua5.2-0
   libmowgli-2-0 libmpg123-0 libntdb1 libopenal-data libopenal1 libpostproc53
   libpython2.7 libraw1394-11 libsdl1.2debian libsmbclient libswscale3
-  libtalloc2 libtevent0 libva-glx1 libvidstab1.0 libwayland-egl1-mesa
-  libwbclient0 mpv python-talloc samba-libs
-0 upgraded, 43 newly installed, 0 to remove and 25 not upgraded.
-Need to get 1,399 kB/12.4 MB of archives.
-After this operation, 42.0 MB of additional disk space will be used.
+  libtalloc2 libtevent0 libusb-1.0-0 libva-glx1 libvidstab1.0
+  libwayland-egl1-mesa libwbclient0 mpv python-talloc samba-libs
+0 upgraded, 44 newly installed, 0 to remove and 25 not upgraded.
+Need to get 1,399 kB/12.5 MB of archives.
+After this operation, 42.1 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libdvdread4 amd64 5.0.0-1 [77.3 kB]
 Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libdvdnav4 amd64 5.0.1-1 [43.5 kB]
 Get:3 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libmowgli-2-0 amd64 2.0.0-dmo1+deb8u1 [54.0 kB]
@@ -200,10 +201,10 @@ Get:10 http://localhost/aptly-repo/master_jessie-main/ jessie/main libwayland-eg
 Get:11 http://localhost/aptly-repo/master_jessie-main/ jessie/main liblircclient0 amd64 0.9.0~pre1-1.2 [34.4 kB]
 Get:12 http://localhost/aptly-repo/master_jessie-main/ jessie/main libbs2b0 amd64 3.1.0+dfsg-2.1 [11.7 kB]
 Get:13 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main mpv amd64 1:0.8.3-dmo1 [720 kB]
-Extracting templates from packages: 69%Extracting templates from packages: 100%
-Fetched 1,399 kB in 0s (15.9 MB/s)
+Extracting templates from packages: 68%Extracting templates from packages: 100%
+Fetched 1,399 kB in 0s (10.1 MB/s)
 Selecting previously unselected package libraw1394-11:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 42061 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37764 files and directories currently installed.)
 Preparing to unpack .../libraw1394-11_2.1.0-3_amd64.deb ...
 Unpacking libraw1394-11:amd64 (2.1.0-3) ...
 Selecting previously unselected package libavc1394-0:amd64.
@@ -245,6 +246,9 @@ Unpacking libcdio-cdda1 (0.83-4.2) ...
 Selecting previously unselected package libcdio-paranoia1.
 Preparing to unpack .../libcdio-paranoia1_0.83-4.2_amd64.deb ...
 Unpacking libcdio-paranoia1 (0.83-4.2) ...
+Selecting previously unselected package libusb-1.0-0:amd64.
+Preparing to unpack .../libusb-1.0-0_2%3a1.0.19-1_amd64.deb ...
+Unpacking libusb-1.0-0:amd64 (2:1.0.19-1) ...
 Selecting previously unselected package libdc1394-22:amd64.
 Preparing to unpack .../libdc1394-22_2.2.3-1_amd64.deb ...
 Unpacking libdc1394-22:amd64 (2.2.3-1) ...
@@ -350,6 +354,7 @@ Setting up libavfilter5:amd64 (10:2.6.9-dmo1) ...
 Setting up libcdio13 (0.83-4.2) ...
 Setting up libcdio-cdda1 (0.83-4.2) ...
 Setting up libcdio-paranoia1 (0.83-4.2) ...
+Setting up libusb-1.0-0:amd64 (2:1.0.19-1) ...
 Setting up libdc1394-22:amd64 (2.2.3-1) ...
 Setting up libiec61883-0:amd64 (1.2.0-0.2) ...
 Setting up libjack-jackd2-0:amd64 (1.9.10+20140719git3eb0ae6a~dfsg-2) ...
@@ -384,4 +389,4 @@ Processing triggers for libc-bin (2.19-18+deb8u7) ...
 CLDS: * Install Media Player: mpv 0.8.3 .
 CLDS: * Add multiple aliases for MPV.
 CLDS: * Add useful mpv keybindings settings.
-CLDS: * Disk size = 3177096K. Space Used = 54072K.
+CLDS: * Disk size = 3095064K. Space Used = 54232K.
