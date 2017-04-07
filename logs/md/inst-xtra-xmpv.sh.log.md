@@ -1,3 +1,0 @@
-* >>>>>>>>> Running inst-xtra-xmpv.sh ...
-  * Install xmpv.
-  * Disk size = 5159828K. Space Used = 72K.
