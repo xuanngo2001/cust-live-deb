@@ -23,18 +23,18 @@ set -e
 	CPU_START="### CPU-START"
 	CPU_END="### CPU-END"
 	# Clear content between patterns.
-	sed  -i "/${CPU_START}/,/${CPU_END}/{//!d}" ${HOME}/.conkyrc
+	sed  -i --follow-symlinks "/${CPU_START}/,/${CPU_END}/{//!d}" ${HOME}/.conkyrc
 	# Insert content between patterns.
-	sed  -i "/${CPU_START}/ r ${CPU_CONKY}" ${HOME}/.conkyrc
+	sed  -i --follow-symlinks "/${CPU_START}/ r ${CPU_CONKY}" ${HOME}/.conkyrc
 	
   ### Prefix the total number of CPUs
-  sed -i "/}PROCESSORS /s/\[.*\]/[${CPU_NUM}]/" ${HOME}/.conkyrc
+  sed -i --follow-symlinks "/}PROCESSORS /s/\[.*\]/[${CPU_NUM}]/" ${HOME}/.conkyrc
 
 #---- NETWORK: Add available network interfaces ----#
   IFACE_START="### IFACE-START"
   IFACE_END="### IFACE-END"
   # Clear content between patterns.
-  sed  -i "/${IFACE_START}/,/${IFACE_END}/{//!d}" ${HOME}/.conkyrc
+  sed  -i --follow-symlinks "/${IFACE_START}/,/${IFACE_END}/{//!d}" ${HOME}/.conkyrc
   
   # Add all available network interfaces.
   IFACE_BASE_CONKY=/usr/local/cld/app/conky/config/conkyrc-network-iface.txt
@@ -45,7 +45,7 @@ set -e
 	  sed "s/IFACE_NAME/${IFACE_NAME}/g" "${IFACE_BASE_CONKY}" > "${IFACE_CONKY}"
 	  
     # Insert network interface to conkyrc.
-    sed  -i "/${IFACE_START}/ r ${IFACE_CONKY}" ${HOME}/.conkyrc
+    sed  -i --follow-symlinks "/${IFACE_START}/ r ${IFACE_CONKY}" ${HOME}/.conkyrc
     	 
 	done < <( ifconfig -a | grep -v '^ ' | awk NF | cut -d ' ' -f 1 | grep -v 'lo' )
 
@@ -66,9 +66,9 @@ set -e
   CALENDAR_START="### CALENDAR-START"
   CALENDAR_END="### CALENDAR-END"
   # Clear content between patterns.
-  sed  -i "/${CALENDAR_START}/,/${CALENDAR_END}/{//!d}" ${HOME}/.conkyrc
+  sed  -i --follow-symlinks "/${CALENDAR_START}/,/${CALENDAR_END}/{//!d}" ${HOME}/.conkyrc
   # Insert content between patterns.
-  sed  -i "/${CALENDAR_START}/ r ${CALENDAR_CONKY}" ${HOME}/.conkyrc
+  sed  -i --follow-symlinks "/${CALENDAR_START}/ r ${CALENDAR_CONKY}" ${HOME}/.conkyrc
 
   
 exit 0
