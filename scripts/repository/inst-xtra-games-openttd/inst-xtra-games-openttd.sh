@@ -16,4 +16,7 @@ apt-get -y --force-yes install openttd
 
 
 # Log
-echo "${GV_LOG} * Install openttd."
+openttd_version=$(/usr/games/openttd -v | head -n1)
+echo "${GV_LOG} * Install ${openttd_version}."
+
+# dpkg -i $(ls -1 openttd-*linux*-amd64.deb | sort -r | head -n1)
