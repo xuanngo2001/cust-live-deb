@@ -32,15 +32,15 @@ The following NEW packages will be installed:
   libxcb-present0 libxcb-sync1 libxcomposite1 libxcursor1 libxdamage1
   libxfixes3 libxinerama1 libxrandr2 libxshmfence1 libxxf86vm1 openjdk-8-jre
   openjdk-8-jre-headless openssl shared-mime-info
-0 upgraded, 50 newly installed, 0 to remove and 25 not upgraded.
-Need to get 38.9 MB of archives.
-After this operation, 151 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libsqlite3-0 amd64 3.8.7.1-1+deb8u2 [438 kB]
+0 upgraded, 50 newly installed, 0 to remove and 26 not upgraded.
+Need to get 39.0 MB of archives.
+After this operation, 152 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libsqlite3-0 amd64 3.16.2-3~bpo8+1 [572 kB]
 Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libwrap0 amd64 7.6.q-25 [58.5 kB]
 Get:3 http://localhost/aptly-repo/master_jessie-main/ jessie/main libasyncns0 amd64 0.8-5 [12.5 kB]
 Get:4 http://localhost/aptly-repo/master_jessie-main/ jessie/main libatk1.0-data all 2.14.0-1 [181 kB]
 Get:5 http://localhost/aptly-repo/master_jessie-main/ jessie/main libatk1.0-0 amd64 2.14.0-1 [92.0 kB]
-Get:6 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main libjasper1 amd64 1.900.1-debian1-2.4+deb8u2 [134 kB]
+Get:6 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main libjasper1 amd64 1.900.1-debian1-2.4+deb8u3 [134 kB]
 Get:7 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgdk-pixbuf2.0-common all 2.31.1-2+deb8u5 [294 kB]
 Get:8 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgdk-pixbuf2.0-0 amd64 2.31.1-2+deb8u5 [167 kB]
 Get:9 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgtk2.0-common all 2.24.25-3+deb8u1 [3,185 kB]
@@ -87,11 +87,11 @@ Get:49 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backport
 Get:50 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main openjdk-8-jre amd64 8u121-b13-1~bpo8+1 [69.9 kB]
 Extracting templates from packages: 60%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 38.9 MB in 1s (30.7 MB/s)
+Fetched 39.0 MB in 1s (29.5 MB/s)
 Selecting previously unselected package libsqlite3-0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20555 files and directories currently installed.)
-Preparing to unpack .../libsqlite3-0_3.8.7.1-1+deb8u2_amd64.deb ...
-Unpacking libsqlite3-0:amd64 (3.8.7.1-1+deb8u2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20675 files and directories currently installed.)
+Preparing to unpack .../libsqlite3-0_3.16.2-3~bpo8+1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.16.2-3~bpo8+1) ...
 Selecting previously unselected package libwrap0:amd64.
 Preparing to unpack .../libwrap0_7.6.q-25_amd64.deb ...
 Unpacking libwrap0:amd64 (7.6.q-25) ...
@@ -105,8 +105,8 @@ Selecting previously unselected package libatk1.0-0:amd64.
 Preparing to unpack .../libatk1.0-0_2.14.0-1_amd64.deb ...
 Unpacking libatk1.0-0:amd64 (2.14.0-1) ...
 Selecting previously unselected package libjasper1:amd64.
-Preparing to unpack .../libjasper1_1.900.1-debian1-2.4+deb8u2_amd64.deb ...
-Unpacking libjasper1:amd64 (1.900.1-debian1-2.4+deb8u2) ...
+Preparing to unpack .../libjasper1_1.900.1-debian1-2.4+deb8u3_amd64.deb ...
+Unpacking libjasper1:amd64 (1.900.1-debian1-2.4+deb8u3) ...
 Selecting previously unselected package libgdk-pixbuf2.0-common.
 Preparing to unpack .../libgdk-pixbuf2.0-common_2.31.1-2+deb8u5_all.deb ...
 Unpacking libgdk-pixbuf2.0-common (2.31.1-2+deb8u5) ...
@@ -242,12 +242,12 @@ Unpacking openjdk-8-jre:amd64 (8u121-b13-1~bpo8+1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for libc-bin (2.19-18+deb8u7) ...
 Processing triggers for hicolor-icon-theme (0.13-1) ...
-Setting up libsqlite3-0:amd64 (3.8.7.1-1+deb8u2) ...
+Setting up libsqlite3-0:amd64 (3.16.2-3~bpo8+1) ...
 Setting up libwrap0:amd64 (7.6.q-25) ...
 Setting up libasyncns0:amd64 (0.8-5) ...
 Setting up libatk1.0-data (2.14.0-1) ...
 Setting up libatk1.0-0:amd64 (2.14.0-1) ...
-Setting up libjasper1:amd64 (1.900.1-debian1-2.4+deb8u2) ...
+Setting up libjasper1:amd64 (1.900.1-debian1-2.4+deb8u3) ...
 Setting up libgdk-pixbuf2.0-common (2.31.1-2+deb8u5) ...
 Setting up libgdk-pixbuf2.0-0:amd64 (2.31.1-2+deb8u5) ...
 Setting up libgtk2.0-common (2.24.25-3+deb8u1) ...
@@ -487,4 +487,4 @@ Adding debian:spi-cacert-2008.pem
 done.
 done.
 CLDS: * Install openjdk-8-jre.
-CLDS: * Disk size = 2120708K. Space Used = 185364K.
+CLDS: * Disk size = 2145684K. Space Used = 185800K.
