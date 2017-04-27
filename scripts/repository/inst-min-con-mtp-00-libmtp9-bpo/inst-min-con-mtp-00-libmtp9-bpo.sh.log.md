@@ -1,2 +1,8 @@
 * >>>>>>>>> Running inst-min-con-mtp-00-libmtp9-bpo.sh ...
-  * Disk size = 1491876K. Space Used = -20K.
+  * After this operation, 2,649 kB of additional disk space will be used.
+  * Install backport version of libmtp9 to support the most smartphones.
+  * Disk size = 1512792K. Space Used = 3044K.
+  * The following NEW packages will be installed:
+  ```bash
+  libmtp-common libmtp9 libusb-1.0-0
+  ```
