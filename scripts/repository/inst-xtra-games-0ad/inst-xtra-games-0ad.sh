@@ -16,3 +16,6 @@ apt-get -y --force-yes install 0ad
 
 # Log
 echo "${GV_LOG} * Install 0ad."
+
+# REJECTED:
+#   Too big.
