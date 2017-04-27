@@ -1,7 +1,0 @@
-language: bash
-sudo: required
-before_script:
-  - sudo mkdir -p /var/www/html
-  - sudo chown travis /var/www/html
-script:
-  - (cd tests && ./run.sh)
