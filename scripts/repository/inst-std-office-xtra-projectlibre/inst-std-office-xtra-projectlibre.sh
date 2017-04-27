@@ -10,8 +10,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   Disabled because it might not be the default-jre but openjdk-8-jre.
 #apt-get -y --force-yes install default-jre
 
-PROJECT_LIBRE_DEB=projectlibre_1.6.2-1.deb
+PROJECT_LIBRE_DEB=$(ls -1 projectlibre_*.deb | sort -r | head -n1)
 dpkg -i ${PROJECT_LIBRE_DEB}
  
 # Log
-echo "${GV_LOG} * Install ProjectLibre."
+echo "${GV_LOG} * Install ProjectLibre: ${PROJECT_LIBRE_DEB}."
