@@ -18,7 +18,7 @@ The following NEW packages will be installed:
   libtsan0 libubsan0 linux-compiler-gcc-4.9-x86
   linux-headers-4.9.0-0.bpo.2-amd64 linux-headers-4.9.0-0.bpo.2-common
   linux-headers-amd64 linux-kbuild-4.9
-0 upgraded, 14 newly installed, 0 to remove and 25 not upgraded.
+0 upgraded, 14 newly installed, 0 to remove and 26 not upgraded.
 Need to get 20.6 MB of archives.
 After this operation, 108 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libasan1 amd64 4.9.2-10 [195 kB]
@@ -30,12 +30,12 @@ Get:6 http://localhost/aptly-repo/master_jessie-main/ jessie/main libubsan0 amd6
 Get:7 http://localhost/aptly-repo/master_jessie-main/ jessie/main binutils amd64 2.25-5 [3,516 kB]
 Get:8 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgcc-4.9-dev amd64 4.9.2-10 [2,066 kB]
 Get:9 http://localhost/aptly-repo/master_jessie-main/ jessie/main gcc-4.9 amd64 4.9.2-10 [5,352 kB]
-Get:10 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-compiler-gcc-4.9-x86 amd64 4.9.13-1~bpo8+1 [435 kB]
-Get:11 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-headers-4.9.0-0.bpo.2-common all 4.9.13-1~bpo8+1 [7,446 kB]
-Get:12 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-kbuild-4.9 amd64 4.9.13-1~bpo8+1 [631 kB]
-Get:13 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-headers-4.9.0-0.bpo.2-amd64 amd64 4.9.13-1~bpo8+1 [460 kB]
+Get:10 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-compiler-gcc-4.9-x86 amd64 4.9.18-1~bpo8+1 [444 kB]
+Get:11 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-headers-4.9.0-0.bpo.2-common all 4.9.18-1~bpo8+1 [7,454 kB]
+Get:12 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-kbuild-4.9 amd64 4.9.18-1~bpo8+1 [640 kB]
+Get:13 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-headers-4.9.0-0.bpo.2-amd64 amd64 4.9.18-1~bpo8+1 [460 kB]
 Get:14 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main linux-headers-amd64 amd64 4.9+79~bpo8+1 [6,002 B]
-Fetched 20.6 MB in 0s (36.6 MB/s)
+Fetched 20.6 MB in 0s (36.1 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -43,8 +43,8 @@ Reading state information...
 The following extra packages will be installed:
   binutils dpkg-dev g++ g++-4.9 gcc gcc-4.9 guile-2.0-libs libasan1
   libc-dev-bin libcilkrts5 libdpkg-perl libgc1c2 libgcc-4.9-dev libitm1
-  liblsan0 libstdc++-4.9-dev libtsan0 libubsan0 libunistring0 linux-libc-dev
-  make-guile patch
+  liblsan0 libstdc++-4.9-dev libtimedate-perl libtsan0 libubsan0 libunistring0
+  linux-libc-dev make-guile patch
 Suggested packages:
   binutils-doc python3-apport debian-keyring g++-multilib g++-4.9-multilib
   gcc-4.9-doc libstdc++6-4.9-dbg gcc-multilib make manpages-dev autoconf
@@ -59,9 +59,9 @@ Recommended packages:
 The following NEW packages will be installed:
   binutils build-essential dkms dpkg-dev g++ g++-4.9 gcc gcc-4.9
   guile-2.0-libs libasan1 libc-dev-bin libc6-dev libcilkrts5 libdpkg-perl
-  libgc1c2 libgcc-4.9-dev libitm1 liblsan0 libstdc++-4.9-dev libtsan0
-  libubsan0 libunistring0 linux-libc-dev make-guile patch
-0 upgraded, 25 newly installed, 0 to remove and 25 not upgraded.
+  libgc1c2 libgcc-4.9-dev libitm1 liblsan0 libstdc++-4.9-dev libtimedate-perl
+  libtsan0 libubsan0 libunistring0 linux-libc-dev make-guile patch
+0 upgraded, 26 newly installed, 0 to remove and 26 not upgraded.
 Need to get 31.6 MB/43.2 MB of archives.
 After this operation, 133 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgc1c2 amd64 1:7.2d-6.4 [132 kB]
@@ -76,13 +76,14 @@ Get:9 http://localhost/aptly-repo/master_jessie-main/ jessie/main libstdc++-4.9-
 Get:10 http://localhost/aptly-repo/master_jessie-main/ jessie/main g++-4.9 amd64 4.9.2-10 [21.4 MB]
 Get:11 http://localhost/aptly-repo/master_jessie-main/ jessie/main g++ amd64 4:4.9.2-2 [1,530 B]
 Get:12 http://localhost/aptly-repo/master_jessie-main/ jessie/main make-guile amd64 4.0-8.1 [350 kB]
-Get:13 http://localhost/aptly-repo/master_jessie-main/ jessie/main libdpkg-perl all 1.17.27 [1,075 kB]
-Get:14 http://localhost/aptly-repo/master_jessie-main/ jessie/main dpkg-dev all 1.17.27 [1,548 kB]
-Get:15 http://localhost/aptly-repo/master_jessie-main/ jessie/main build-essential amd64 11.7 [7,114 B]
-Get:16 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main dkms all 2.3-2~bpo8+1 [75.4 kB]
-Fetched 31.6 MB in 0s (36.6 MB/s)
+Get:13 http://localhost/aptly-repo/master_jessie-main/ jessie/main libtimedate-perl all 2.3000-2 [42.2 kB]
+Get:14 http://localhost/aptly-repo/master_jessie-main/ jessie/main libdpkg-perl all 1.17.27 [1,075 kB]
+Get:15 http://localhost/aptly-repo/master_jessie-main/ jessie/main dpkg-dev all 1.17.27 [1,548 kB]
+Get:16 http://localhost/aptly-repo/master_jessie-main/ jessie/main build-essential amd64 11.7 [7,114 B]
+Get:17 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main dkms all 2.3-2~bpo8+1 [75.4 kB]
+Fetched 31.6 MB in 0s (33.7 MB/s)
 Selecting previously unselected package libgc1c2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67482 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64924 files and directories currently installed.)
 Preparing to unpack .../libgc1c2_1%3a7.2d-6.4_amd64.deb ...
 Unpacking libgc1c2:amd64 (1:7.2d-6.4) ...
 Selecting previously unselected package libunistring0:amd64.
@@ -145,6 +146,9 @@ Unpacking g++ (4:4.9.2-2) ...
 Selecting previously unselected package make-guile.
 Preparing to unpack .../make-guile_4.0-8.1_amd64.deb ...
 Unpacking make-guile (4.0-8.1) ...
+Selecting previously unselected package libtimedate-perl.
+Preparing to unpack .../libtimedate-perl_2.3000-2_all.deb ...
+Unpacking libtimedate-perl (2.3000-2) ...
 Selecting previously unselected package libdpkg-perl.
 Preparing to unpack .../libdpkg-perl_1.17.27_all.deb ...
 Unpacking libdpkg-perl (1.17.27) ...
@@ -180,6 +184,7 @@ Setting up g++-4.9 (4.9.2-10) ...
 Setting up g++ (4:4.9.2-2) ...
 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
 Setting up make-guile (4.0-8.1) ...
+Setting up libtimedate-perl (2.3000-2) ...
 Setting up libdpkg-perl (1.17.27) ...
 Setting up dpkg-dev (1.17.27) ...
 Setting up build-essential (11.7) ...
@@ -194,26 +199,26 @@ The following extra packages will be installed:
 The following NEW packages will be installed:
   linux-compiler-gcc-4.9-x86 linux-headers-4.9.0-0.bpo.2-amd64
   linux-headers-4.9.0-0.bpo.2-common linux-kbuild-4.9
-0 upgraded, 4 newly installed, 0 to remove and 25 not upgraded.
-Need to get 0 B/8,972 kB of archives.
+0 upgraded, 4 newly installed, 0 to remove and 26 not upgraded.
+Need to get 0 B/8,998 kB of archives.
 After this operation, 55.8 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-4.9-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71135 files and directories currently installed.)
-Preparing to unpack .../linux-compiler-gcc-4.9-x86_4.9.13-1~bpo8+1_amd64.deb ...
-Unpacking linux-compiler-gcc-4.9-x86 (4.9.13-1~bpo8+1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68627 files and directories currently installed.)
+Preparing to unpack .../linux-compiler-gcc-4.9-x86_4.9.18-1~bpo8+1_amd64.deb ...
+Unpacking linux-compiler-gcc-4.9-x86 (4.9.18-1~bpo8+1) ...
 Selecting previously unselected package linux-headers-4.9.0-0.bpo.2-common.
-Preparing to unpack .../linux-headers-4.9.0-0.bpo.2-common_4.9.13-1~bpo8+1_all.deb ...
-Unpacking linux-headers-4.9.0-0.bpo.2-common (4.9.13-1~bpo8+1) ...
+Preparing to unpack .../linux-headers-4.9.0-0.bpo.2-common_4.9.18-1~bpo8+1_all.deb ...
+Unpacking linux-headers-4.9.0-0.bpo.2-common (4.9.18-1~bpo8+1) ...
 Selecting previously unselected package linux-kbuild-4.9.
-Preparing to unpack .../linux-kbuild-4.9_4.9.13-1~bpo8+1_amd64.deb ...
-Unpacking linux-kbuild-4.9 (4.9.13-1~bpo8+1) ...
+Preparing to unpack .../linux-kbuild-4.9_4.9.18-1~bpo8+1_amd64.deb ...
+Unpacking linux-kbuild-4.9 (4.9.18-1~bpo8+1) ...
 Selecting previously unselected package linux-headers-4.9.0-0.bpo.2-amd64.
-Preparing to unpack .../linux-headers-4.9.0-0.bpo.2-amd64_4.9.13-1~bpo8+1_amd64.deb ...
-Unpacking linux-headers-4.9.0-0.bpo.2-amd64 (4.9.13-1~bpo8+1) ...
-Setting up linux-compiler-gcc-4.9-x86 (4.9.13-1~bpo8+1) ...
-Setting up linux-headers-4.9.0-0.bpo.2-common (4.9.13-1~bpo8+1) ...
-Setting up linux-kbuild-4.9 (4.9.13-1~bpo8+1) ...
-Setting up linux-headers-4.9.0-0.bpo.2-amd64 (4.9.13-1~bpo8+1) ...
+Preparing to unpack .../linux-headers-4.9.0-0.bpo.2-amd64_4.9.18-1~bpo8+1_amd64.deb ...
+Unpacking linux-headers-4.9.0-0.bpo.2-amd64 (4.9.18-1~bpo8+1) ...
+Setting up linux-compiler-gcc-4.9-x86 (4.9.18-1~bpo8+1) ...
+Setting up linux-headers-4.9.0-0.bpo.2-common (4.9.18-1~bpo8+1) ...
+Setting up linux-kbuild-4.9 (4.9.18-1~bpo8+1) ...
+Setting up linux-headers-4.9.0-0.bpo.2-amd64 (4.9.18-1~bpo8+1) ...
 Verifying archive integrity... All good.
 Uncompressing VirtualBox 5.1.14 Guest Additions for Linux...........
 VirtualBox Guest Additions installer
@@ -231,4 +236,4 @@ CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto wind
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: version: 5.1.14 r112924.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 5067948K. Space Used = 285220K.
+CLDS: * Disk size = 4966264K. Space Used = 285548K.
