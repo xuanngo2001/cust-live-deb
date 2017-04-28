@@ -3,7 +3,7 @@ set -e
 # Description: Commit common files that are change constantly.
 
 # Commit files that were deleted.
-  git ls-files --deleted -z | xargs -0 git rm | git commit -m 'Deleted files manually' || true
+  git ls-files --deleted -z | xargs -0 git rm && git commit -m 'Deleted files manually' || true
   
 # binary/**
   find binary/ -type f -name '*.log' -exec git add '{}' + -exec git commit -m '*.sh.log' {} +         || true
