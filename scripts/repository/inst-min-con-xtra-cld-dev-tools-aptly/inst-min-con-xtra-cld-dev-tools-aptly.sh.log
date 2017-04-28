@@ -18,20 +18,20 @@ Hit http://localhost jessie-updates InRelease
 Hit http://localhost jessie-updates InRelease
 Hit http://localhost jessie/main amd64 Packages
 Hit http://localhost nightly/main amd64 Packages
-Hit http://localhost jessie/main amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
-Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost stable/main amd64 Packages
 Ign http://localhost nightly/main Translation-en_US
 Ign http://localhost nightly/main Translation-en
+Hit http://localhost jessie/main amd64 Packages
+Hit http://localhost jessie/non-free amd64 Packages
 Ign http://localhost jessie/main Translation-en_US
 Ign http://localhost jessie/main Translation-en
-Hit http://localhost jessie-backports/contrib amd64 Packages
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
+Hit http://localhost stable/main amd64 Packages
 Ign http://localhost stable/main Translation-en_US
 Ign http://localhost stable/main Translation-en
+Hit http://localhost jessie-backports/contrib amd64 Packages
 Ign http://localhost jessie-backports/contrib Translation-en_US
 Ign http://localhost jessie-backports/contrib Translation-en
 Hit http://localhost jessie-backports/main amd64 Packages
@@ -41,27 +41,27 @@ Ign http://localhost jessie-backports/main Translation-en
 Ign http://localhost jessie-backports/non-free Translation-en_US
 Ign http://localhost jessie-backports/non-free Translation-en
 Hit http://localhost jessie/contrib amd64 Packages
+Hit http://localhost jessie/non-free amd64 Packages
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
-Hit http://localhost jessie/non-free amd64 Packages
 Ign http://localhost jessie/non-free Translation-en_US
 Ign http://localhost jessie/non-free Translation-en
 Hit http://localhost jessie-updates/contrib amd64 Packages
+Hit http://localhost jessie-updates/main amd64 Packages
 Ign http://localhost jessie-updates/contrib Translation-en_US
 Ign http://localhost jessie-updates/contrib Translation-en
-Hit http://localhost jessie-updates/main amd64 Packages
 Hit http://localhost jessie-updates/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-updates/main Translation-en_US
 Ign http://localhost jessie-updates/main Translation-en
-Hit http://localhost jessie-updates/main amd64 Packages
-Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie-updates/non-free Translation-en_US
 Ign http://localhost jessie-updates/non-free Translation-en
+Hit http://localhost jessie-updates/contrib amd64 Packages
+Hit http://localhost jessie-updates/main amd64 Packages
 Ign http://localhost jessie-updates/contrib Translation-en_US
 Ign http://localhost jessie-updates/contrib Translation-en
 Ign http://localhost jessie-updates/main Translation-en_US
 Ign http://localhost jessie-updates/main Translation-en
+Hit http://localhost jessie-updates/non-free amd64 Packages
 Ign http://localhost jessie-updates/non-free Translation-en_US
 Ign http://localhost jessie-updates/non-free Translation-en
 Reading package lists...
@@ -75,7 +75,7 @@ Need to get 5,928 kB of archives.
 After this operation, 504 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main xz-utils amd64 5.1.1alpha+20120614-2+b3 [221 kB]
 Get:2 http://localhost/aptly-repo/master_aptly-nightly-main/ nightly/main aptly amd64 1.0.0+30+ga245b72 [5,708 kB]
-Fetched 5,928 kB in 0s (13.7 MB/s)
+Fetched 5,928 kB in 0s (19.5 MB/s)
 Selecting previously unselected package xz-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17489 files and directories currently installed.)
 Preparing to unpack .../xz-utils_5.1.1alpha+20120614-2+b3_amd64.deb ...
@@ -90,4 +90,4 @@ Setting up aptly (1.0.0+30+ga245b72) ...
 CLDS: * Add aptly nightly build repository.
 CLDS: * Install aptly version: 1.0.0+30+ga245b72 to create local debian repository.
 CLDS: * Add xz-utils package because aptly snapshot merge needs it.
-CLDS: * Disk size = 1568464K. Space Used = 25296K.
+CLDS: * Disk size = 1568496K. Space Used = 25296K.
