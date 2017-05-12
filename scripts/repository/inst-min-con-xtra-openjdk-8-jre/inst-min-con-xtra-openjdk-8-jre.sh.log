@@ -32,7 +32,7 @@ The following NEW packages will be installed:
   libxcb-present0 libxcb-sync1 libxcomposite1 libxcursor1 libxdamage1
   libxfixes3 libxinerama1 libxrandr2 libxshmfence1 libxxf86vm1 openjdk-8-jre
   openjdk-8-jre-headless openssl shared-mime-info
-0 upgraded, 50 newly installed, 0 to remove and 26 not upgraded.
+0 upgraded, 50 newly installed, 0 to remove and 33 not upgraded.
 Need to get 39.0 MB of archives.
 After this operation, 152 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libsqlite3-0 amd64 3.16.2-3~bpo8+1 [572 kB]
@@ -40,7 +40,7 @@ Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libwrap0 amd64
 Get:3 http://localhost/aptly-repo/master_jessie-main/ jessie/main libasyncns0 amd64 0.8-5 [12.5 kB]
 Get:4 http://localhost/aptly-repo/master_jessie-main/ jessie/main libatk1.0-data all 2.14.0-1 [181 kB]
 Get:5 http://localhost/aptly-repo/master_jessie-main/ jessie/main libatk1.0-0 amd64 2.14.0-1 [92.0 kB]
-Get:6 http://localhost/aptly-repo/master_jessie-security-main/ jessie-updates/main libjasper1 amd64 1.900.1-debian1-2.4+deb8u3 [134 kB]
+Get:6 http://localhost/aptly-repo/master_jessie-main/ jessie/main libjasper1 amd64 1.900.1-debian1-2.4+deb8u3 [134 kB]
 Get:7 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgdk-pixbuf2.0-common all 2.31.1-2+deb8u5 [294 kB]
 Get:8 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgdk-pixbuf2.0-0 amd64 2.31.1-2+deb8u5 [167 kB]
 Get:9 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgtk2.0-common all 2.24.25-3+deb8u1 [3,185 kB]
@@ -79,15 +79,15 @@ Get:41 http://localhost/aptly-repo/master_jessie-main/ jessie/main libvorbis0a a
 Get:42 http://localhost/aptly-repo/master_jessie-main/ jessie/main libvorbisenc2 amd64 1.3.4-2 [77.9 kB]
 Get:43 http://localhost/aptly-repo/master_jessie-main/ jessie/main libsndfile1 amd64 1.0.25-9.1+deb8u1 [215 kB]
 Get:44 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libpulse0 amd64 7.1-2~bpo8+1 [268 kB]
-Get:45 http://localhost/aptly-repo/master_jessie-main/ jessie/main openssl amd64 1.0.1t-1+deb8u5 [665 kB]
-Get:46 http://localhost/aptly-repo/master_jessie-main/ jessie/main ca-certificates all 20141019+deb8u2 [207 kB]
+Get:45 http://localhost/aptly-repo/master_jessie-main/ jessie/main openssl amd64 1.0.1t-1+deb8u6 [665 kB]
+Get:46 http://localhost/aptly-repo/master_jessie-main/ jessie/main ca-certificates all 20141019+deb8u3 [207 kB]
 Get:47 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main ca-certificates-java all 20161107~bpo8+1 [14.8 kB]
 Get:48 http://localhost/aptly-repo/master_jessie-main/ jessie/main java-common all 0.52 [136 kB]
 Get:49 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main openjdk-8-jre-headless amd64 8u121-b13-1~bpo8+1 [26.9 MB]
 Get:50 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main openjdk-8-jre amd64 8u121-b13-1~bpo8+1 [69.9 kB]
 Extracting templates from packages: 60%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 39.0 MB in 1s (31.1 MB/s)
+Fetched 39.0 MB in 1s (26.2 MB/s)
 Selecting previously unselected package libsqlite3-0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20679 files and directories currently installed.)
 Preparing to unpack .../libsqlite3-0_3.16.2-3~bpo8+1_amd64.deb ...
@@ -222,11 +222,11 @@ Selecting previously unselected package libpulse0:amd64.
 Preparing to unpack .../libpulse0_7.1-2~bpo8+1_amd64.deb ...
 Unpacking libpulse0:amd64 (7.1-2~bpo8+1) ...
 Selecting previously unselected package openssl.
-Preparing to unpack .../openssl_1.0.1t-1+deb8u5_amd64.deb ...
-Unpacking openssl (1.0.1t-1+deb8u5) ...
+Preparing to unpack .../openssl_1.0.1t-1+deb8u6_amd64.deb ...
+Unpacking openssl (1.0.1t-1+deb8u6) ...
 Selecting previously unselected package ca-certificates.
-Preparing to unpack .../ca-certificates_20141019+deb8u2_all.deb ...
-Unpacking ca-certificates (20141019+deb8u2) ...
+Preparing to unpack .../ca-certificates_20141019+deb8u3_all.deb ...
+Unpacking ca-certificates (20141019+deb8u3) ...
 Selecting previously unselected package ca-certificates-java.
 Preparing to unpack .../ca-certificates-java_20161107~bpo8+1_all.deb ...
 Unpacking ca-certificates-java (20161107~bpo8+1) ...
@@ -286,9 +286,9 @@ Setting up libvorbis0a:amd64 (1.3.4-2) ...
 Setting up libvorbisenc2:amd64 (1.3.4-2) ...
 Setting up libsndfile1:amd64 (1.0.25-9.1+deb8u1) ...
 Setting up libpulse0:amd64 (7.1-2~bpo8+1) ...
-Setting up openssl (1.0.1t-1+deb8u5) ...
-Setting up ca-certificates (20141019+deb8u2) ...
-/usr/sbin/update-ca-certificates: [--verbose] [--fresh]
+Setting up openssl (1.0.1t-1+deb8u6) ...
+Setting up ca-certificates (20141019+deb8u3) ...
+Updating certificates in /etc/ssl/certs... 174 added, 0 removed; done.
 Setting up java-common (0.52) ...
 Setting up openjdk-8-jre-headless:amd64 (8u121-b13-1~bpo8+1) ...
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
@@ -305,186 +305,186 @@ update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jexec to pr
 Setting up openjdk-8-jre:amd64 (8u121-b13-1~bpo8+1) ...
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode
 Setting up ca-certificates-java (20161107~bpo8+1) ...
+Adding debian:Comodo_Secure_Services_root.pem
+Adding debian:GeoTrust_Universal_CA_2.pem
+Adding debian:CA_WoSign_ECC_Root.pem
+Adding debian:WoSign.pem
+Adding debian:Staat_der_Nederlanden_EV_Root_CA.pem
+Adding debian:certSIGN_ROOT_CA.pem
+Adding debian:GeoTrust_Global_CA.pem
+Adding debian:Starfield_Class_2_CA.pem
+Adding debian:Comodo_AAA_Services_root.pem
+Adding debian:Swisscom_Root_CA_1.pem
+Adding debian:Baltimore_CyberTrust_Root.pem
+Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+Adding debian:Certplus_Root_CA_G2.pem
+Adding debian:DigiCert_Global_Root_CA.pem
+Adding debian:AddTrust_External_Root.pem
+Adding debian:Verisign_Class_2_Public_Primary_Certification_Authority_-_G3.pem
+Adding debian:Buypass_Class_2_CA_1.pem
+Adding debian:DigiCert_Assured_ID_Root_G2.pem
+Adding debian:TC_TrustCenter_Class_3_CA_II.pem
+Adding debian:AC_Raíz_Certicámara_S.A..pem
+Adding debian:GeoTrust_Universal_CA.pem
+Adding debian:RSA_Security_2048_v3.pem
+Adding debian:OISTE_WISeKey_Global_Root_GA_CA.pem
+Adding debian:QuoVadis_Root_CA_2_G3.pem
+Adding debian:Atos_TrustedRoot_2011.pem
+Adding debian:E-Tugra_Certification_Authority.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem
+Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+Adding debian:Verisign_Class_1_Public_Primary_Certification_Authority_-_G3.pem
+Adding debian:XRamp_Global_CA_Root.pem
+Adding debian:TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H6.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+Adding debian:Izenpe.com.pem
+Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+Adding debian:ePKI_Root_Certification_Authority.pem
+Adding debian:Global_Chambersign_Root_-_2008.pem
+Adding debian:Staat_der_Nederlanden_Root_CA_-_G2.pem
+Adding debian:Cybertrust_Global_Root.pem
+Adding debian:Buypass_Class_2_Root_CA.pem
+Adding debian:Microsec_e-Szigno_Root_CA.pem
+Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+Adding debian:StartCom_Certification_Authority_G2.pem
+Adding debian:Camerfirma_Global_Chambersign_Root.pem
+Adding debian:Hongkong_Post_Root_CA_1.pem
+Adding debian:StartCom_Certification_Authority.pem
+Adding debian:PSCProcert.pem
+Adding debian:AffirmTrust_Premium.pem
+Adding debian:thawte_Primary_Root_CA_-_G3.pem
+Adding debian:DST_ACES_CA_X6.pem
+Adding debian:QuoVadis_Root_CA_3_G3.pem
+Adding debian:Swisscom_Root_EV_CA_2.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+Adding debian:Go_Daddy_Class_2_CA.pem
+Adding debian:Trustis_FPS_Root_CA.pem
+Adding debian:AddTrust_Low-Value_Services_Root.pem
+Adding debian:Swisscom_Root_CA_2.pem
+Adding debian:GlobalSign_Root_CA_-_R3.pem
+Adding debian:GlobalSign_Root_CA_-_R2.pem
+Adding debian:USERTrust_RSA_Certification_Authority.pem
+Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+Adding debian:WoSign_China.pem
+Adding debian:S-TRUST_Universal_Root_CA.pem
+Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+Adding debian:Equifax_Secure_eBusiness_CA_1.pem
+Adding debian:ACCVRAIZ1.pem
+Adding debian:Security_Communication_EV_RootCA1.pem
+Adding debian:EBG_Elektronik_Sertifika_Hizmet_Sağlayıcısı.pem
+Adding debian:GeoTrust_Primary_Certification_Authority_-_G3.pem
+Adding debian:QuoVadis_Root_CA_1_G3.pem
+Adding debian:CA_Disig_Root_R2.pem
+Adding debian:Network_Solutions_Certificate_Authority.pem
+Adding debian:Entrust_Root_Certification_Authority.pem
+Adding debian:Staat_der_Nederlanden_Root_CA_-_G3.pem
+Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+Adding debian:Certigna.pem
+Adding debian:IGC_A.pem
+Adding debian:Certinomis_-_Root_CA.pem
+Adding debian:thawte_Primary_Root_CA.pem
+Adding debian:Visa_eCommerce_Root.pem
+Adding debian:GlobalSign_Root_CA.pem
+Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem
+Adding debian:OpenTrust_Root_CA_G1.pem
+Adding debian:Secure_Global_CA.pem
+Adding debian:China_Internet_Network_Information_Center_EV_Certificates_Root.pem
+Adding debian:Certplus_Class_2_Primary_CA.pem
+Adding debian:ACEDICOM_Root.pem
+Adding debian:SwissSign_Silver_CA_-_G2.pem
+Adding debian:Root_CA_Generalitat_Valenciana.pem
+Adding debian:Taiwan_GRCA.pem
+Adding debian:S-TRUST_Authentication_and_Encryption_Root_CA_2005_PN.pem
+Adding debian:TÜBİTAK_UEKAE_Kök_Sertifika_Hizmet_Sağlayıcısı_-_Sürüm_3.pem
+Adding debian:SwissSign_Platinum_CA_-_G2.pem
+Adding debian:SZAFIR_ROOT_CA2.pem
+Adding debian:StartCom_Certification_Authority_2.pem
+Adding debian:Deutsche_Telekom_Root_CA_2.pem
+Adding debian:WellsSecure_Public_Root_Certificate_Authority.pem
+Adding debian:Comodo_Trusted_Services_root.pem
+Adding debian:GeoTrust_Primary_Certification_Authority_-_G2.pem
+Adding debian:Juur-SK.pem
+Adding debian:spi-cacert-2008.pem
+Adding debian:DST_Root_CA_X3.pem
+Adding debian:Certum_Trusted_Network_CA.pem
+Adding debian:SwissSign_Gold_CA_-_G2.pem
+Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+Adding debian:GeoTrust_Global_CA_2.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+Adding debian:ApplicationCA_-_Japanese_Government.pem
+Adding debian:Certification_Authority_of_WoSign_G2.pem
+Adding debian:TWCA_Global_Root_CA.pem
+Adding debian:TeliaSonera_Root_CA_v1.pem
+Adding debian:Chambers_of_Commerce_Root_-_2008.pem
+Adding debian:COMODO_ECC_Certification_Authority.pem
+Adding debian:AffirmTrust_Commercial.pem
+Adding debian:Buypass_Class_3_Root_CA.pem
+Adding debian:OpenTrust_Root_CA_G3.pem
+Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+Adding debian:ComSign_CA.pem
+Adding debian:SecureSign_RootCA11.pem
+Adding debian:EC-ACC.pem
+Adding debian:thawte_Primary_Root_CA_-_G2.pem
+Adding debian:CFCA_EV_ROOT.pem
+Adding debian:USERTrust_ECC_Certification_Authority.pem
+Adding debian:Certum_Root_CA.pem
+Adding debian:QuoVadis_Root_CA_2.pem
+Adding debian:Camerfirma_Chambers_of_Commerce_Root.pem
+Adding debian:SecureTrust_CA.pem
+Adding debian:TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H5.pem
+Adding debian:TURKTRUST_Certificate_Services_Provider_Root_2007.pem
+Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+Adding debian:EE_Certification_Centre_Root_CA.pem
+Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+Adding debian:QuoVadis_Root_CA_3.pem
+Adding debian:AffirmTrust_Premium_ECC.pem
+Adding debian:TWCA_Root_Certification_Authority.pem
+Adding debian:DigiCert_Global_Root_G2.pem
+Adding debian:ISRG_Root_X1.pem
+Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+Adding debian:Actalis_Authentication_Root_CA.pem
+Adding debian:DigiCert_Global_Root_G3.pem
+Adding debian:VeriSign_Universal_Root_Certification_Authority.pem
+Adding debian:Security_Communication_Root_CA.pem
+Adding debian:Security_Communication_RootCA2.pem
+Adding debian:Equifax_Secure_CA.pem
+Adding debian:Certplus_Root_CA_G1.pem
+Adding debian:Certinomis_-_Autorité_Racine.pem
+Adding debian:OpenTrust_Root_CA_G2.pem
+Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem
+Adding debian:COMODO_Certification_Authority.pem
+Adding debian:Sonera_Class_2_Root_CA.pem
+Adding debian:CNNIC_ROOT.pem
+Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+Adding debian:Verisign_Class_1_Public_Primary_Certification_Authority.pem
+Adding debian:Certum_Trusted_Network_CA_2.pem
+Adding debian:COMODO_RSA_Certification_Authority.pem
+Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+Adding debian:UTN_USERFirst_Hardware_Root_CA.pem
+Adding debian:AddTrust_Public_Services_Root.pem
+Adding debian:GeoTrust_Primary_Certification_Authority.pem
+Adding debian:CA_Disig_Root_R1.pem
+Adding debian:Verisign_Class_2_Public_Primary_Certification_Authority_-_G2.pem
+Adding debian:UTN_USERFirst_Email_Root_CA.pem
+Adding debian:QuoVadis_Root_CA.pem
+Adding debian:DigiCert_Trusted_Root_G4.pem
+Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem
+Adding debian:AddTrust_Qualified_Certificates_Root.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+Adding debian:DigiCert_Assured_ID_Root_G3.pem
+Adding debian:DigiCert_Assured_ID_Root_CA.pem
+Adding debian:Equifax_Secure_Global_eBusiness_CA.pem
+Adding debian:AffirmTrust_Networking.pem
 done.
 Processing triggers for libc-bin (2.19-18+deb8u7) ...
-Processing triggers for ca-certificates (20141019+deb8u2) ...
-Updating certificates in /etc/ssl/certs... 174 added, 0 removed; done.
+Processing triggers for ca-certificates (20141019+deb8u3) ...
+Updating certificates in /etc/ssl/certs... 0 added, 0 removed; done.
 Running hooks in /etc/ca-certificates/update.d....
-Adding debian:ACCVRAIZ1.pem
-Adding debian:ACEDICOM_Root.pem
-Adding debian:AC_Raíz_Certicámara_S.A..pem
-Adding debian:Actalis_Authentication_Root_CA.pem
-Adding debian:AddTrust_External_Root.pem
-Adding debian:AddTrust_Low-Value_Services_Root.pem
-Adding debian:AddTrust_Public_Services_Root.pem
-Adding debian:AddTrust_Qualified_Certificates_Root.pem
-Adding debian:AffirmTrust_Commercial.pem
-Adding debian:AffirmTrust_Networking.pem
-Adding debian:AffirmTrust_Premium.pem
-Adding debian:AffirmTrust_Premium_ECC.pem
-Adding debian:ApplicationCA_-_Japanese_Government.pem
-Adding debian:Atos_TrustedRoot_2011.pem
-Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
-Adding debian:Baltimore_CyberTrust_Root.pem
-Adding debian:Buypass_Class_2_CA_1.pem
-Adding debian:Buypass_Class_2_Root_CA.pem
-Adding debian:Buypass_Class_3_Root_CA.pem
-Adding debian:CA_Disig_Root_R1.pem
-Adding debian:CA_Disig_Root_R2.pem
-Adding debian:Camerfirma_Chambers_of_Commerce_Root.pem
-Adding debian:Camerfirma_Global_Chambersign_Root.pem
-Adding debian:CA_WoSign_ECC_Root.pem
-Adding debian:Certification_Authority_of_WoSign_G2.pem
-Adding debian:Certigna.pem
-Adding debian:Certinomis_-_Autorité_Racine.pem
-Adding debian:Certinomis_-_Root_CA.pem
-Adding debian:Certplus_Class_2_Primary_CA.pem
-Adding debian:Certplus_Root_CA_G1.pem
-Adding debian:Certplus_Root_CA_G2.pem
-Adding debian:certSIGN_ROOT_CA.pem
-Adding debian:Certum_Root_CA.pem
-Adding debian:Certum_Trusted_Network_CA_2.pem
-Adding debian:Certum_Trusted_Network_CA.pem
-Adding debian:CFCA_EV_ROOT.pem
-Adding debian:Chambers_of_Commerce_Root_-_2008.pem
-Adding debian:China_Internet_Network_Information_Center_EV_Certificates_Root.pem
-Adding debian:CNNIC_ROOT.pem
-Adding debian:Comodo_AAA_Services_root.pem
-Adding debian:COMODO_Certification_Authority.pem
-Adding debian:COMODO_ECC_Certification_Authority.pem
-Adding debian:COMODO_RSA_Certification_Authority.pem
-Adding debian:Comodo_Secure_Services_root.pem
-Adding debian:Comodo_Trusted_Services_root.pem
-Adding debian:ComSign_CA.pem
-Adding debian:Cybertrust_Global_Root.pem
-Adding debian:Deutsche_Telekom_Root_CA_2.pem
-Adding debian:DigiCert_Assured_ID_Root_CA.pem
-Adding debian:DigiCert_Assured_ID_Root_G2.pem
-Adding debian:DigiCert_Assured_ID_Root_G3.pem
-Adding debian:DigiCert_Global_Root_CA.pem
-Adding debian:DigiCert_Global_Root_G2.pem
-Adding debian:DigiCert_Global_Root_G3.pem
-Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
-Adding debian:DigiCert_Trusted_Root_G4.pem
-Adding debian:DST_ACES_CA_X6.pem
-Adding debian:DST_Root_CA_X3.pem
-Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
-Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
-Adding debian:EBG_Elektronik_Sertifika_Hizmet_Sağlayıcısı.pem
-Adding debian:EC-ACC.pem
-Adding debian:EE_Certification_Centre_Root_CA.pem
-Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
-Adding debian:Entrust_Root_Certification_Authority.pem
-Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
-Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
-Adding debian:ePKI_Root_Certification_Authority.pem
-Adding debian:Equifax_Secure_CA.pem
-Adding debian:Equifax_Secure_eBusiness_CA_1.pem
-Adding debian:Equifax_Secure_Global_eBusiness_CA.pem
-Adding debian:E-Tugra_Certification_Authority.pem
-Adding debian:GeoTrust_Global_CA_2.pem
-Adding debian:GeoTrust_Global_CA.pem
-Adding debian:GeoTrust_Primary_Certification_Authority.pem
-Adding debian:GeoTrust_Primary_Certification_Authority_-_G2.pem
-Adding debian:GeoTrust_Primary_Certification_Authority_-_G3.pem
-Adding debian:GeoTrust_Universal_CA_2.pem
-Adding debian:GeoTrust_Universal_CA.pem
-Adding debian:Global_Chambersign_Root_-_2008.pem
-Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
-Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
-Adding debian:GlobalSign_Root_CA.pem
-Adding debian:GlobalSign_Root_CA_-_R2.pem
-Adding debian:GlobalSign_Root_CA_-_R3.pem
-Adding debian:Go_Daddy_Class_2_CA.pem
-Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
-Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
-Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem
-Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
-Adding debian:Hongkong_Post_Root_CA_1.pem
-Adding debian:IdenTrust_Commercial_Root_CA_1.pem
-Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
-Adding debian:IGC_A.pem
-Adding debian:ISRG_Root_X1.pem
-Adding debian:Izenpe.com.pem
-Adding debian:Juur-SK.pem
-Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
-Adding debian:Microsec_e-Szigno_Root_CA.pem
-Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
-Adding debian:Network_Solutions_Certificate_Authority.pem
-Adding debian:OISTE_WISeKey_Global_Root_GA_CA.pem
-Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
-Adding debian:OpenTrust_Root_CA_G1.pem
-Adding debian:OpenTrust_Root_CA_G2.pem
-Adding debian:OpenTrust_Root_CA_G3.pem
-Adding debian:PSCProcert.pem
-Adding debian:QuoVadis_Root_CA_1_G3.pem
-Adding debian:QuoVadis_Root_CA_2.pem
-Adding debian:QuoVadis_Root_CA_2_G3.pem
-Adding debian:QuoVadis_Root_CA_3.pem
-Adding debian:QuoVadis_Root_CA_3_G3.pem
-Adding debian:QuoVadis_Root_CA.pem
-Adding debian:Root_CA_Generalitat_Valenciana.pem
-Adding debian:RSA_Security_2048_v3.pem
-Adding debian:Secure_Global_CA.pem
-Adding debian:SecureSign_RootCA11.pem
-Adding debian:SecureTrust_CA.pem
-Adding debian:Security_Communication_EV_RootCA1.pem
-Adding debian:Security_Communication_RootCA2.pem
-Adding debian:Security_Communication_Root_CA.pem
-Adding debian:Sonera_Class_2_Root_CA.pem
-Adding debian:Staat_der_Nederlanden_EV_Root_CA.pem
-Adding debian:Staat_der_Nederlanden_Root_CA_-_G2.pem
-Adding debian:Staat_der_Nederlanden_Root_CA_-_G3.pem
-Adding debian:Starfield_Class_2_CA.pem
-Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
-Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
-Adding debian:StartCom_Certification_Authority_2.pem
-Adding debian:StartCom_Certification_Authority.pem
-Adding debian:StartCom_Certification_Authority_G2.pem
-Adding debian:S-TRUST_Authentication_and_Encryption_Root_CA_2005_PN.pem
-Adding debian:S-TRUST_Universal_Root_CA.pem
-Adding debian:Swisscom_Root_CA_1.pem
-Adding debian:Swisscom_Root_CA_2.pem
-Adding debian:Swisscom_Root_EV_CA_2.pem
-Adding debian:SwissSign_Gold_CA_-_G2.pem
-Adding debian:SwissSign_Platinum_CA_-_G2.pem
-Adding debian:SwissSign_Silver_CA_-_G2.pem
-Adding debian:SZAFIR_ROOT_CA2.pem
-Adding debian:Taiwan_GRCA.pem
-Adding debian:TC_TrustCenter_Class_3_CA_II.pem
-Adding debian:TeliaSonera_Root_CA_v1.pem
-Adding debian:thawte_Primary_Root_CA.pem
-Adding debian:thawte_Primary_Root_CA_-_G2.pem
-Adding debian:thawte_Primary_Root_CA_-_G3.pem
-Adding debian:Trustis_FPS_Root_CA.pem
-Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
-Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
-Adding debian:TÜBİTAK_UEKAE_Kök_Sertifika_Hizmet_Sağlayıcısı_-_Sürüm_3.pem
-Adding debian:TURKTRUST_Certificate_Services_Provider_Root_2007.pem
-Adding debian:TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H5.pem
-Adding debian:TÜRKTRUST_Elektronik_Sertifika_Hizmet_Sağlayıcısı_H6.pem
-Adding debian:TWCA_Global_Root_CA.pem
-Adding debian:TWCA_Root_Certification_Authority.pem
-Adding debian:USERTrust_ECC_Certification_Authority.pem
-Adding debian:USERTrust_RSA_Certification_Authority.pem
-Adding debian:UTN_USERFirst_Email_Root_CA.pem
-Adding debian:UTN_USERFirst_Hardware_Root_CA.pem
-Adding debian:Verisign_Class_1_Public_Primary_Certification_Authority.pem
-Adding debian:Verisign_Class_1_Public_Primary_Certification_Authority_-_G3.pem
-Adding debian:Verisign_Class_2_Public_Primary_Certification_Authority_-_G2.pem
-Adding debian:Verisign_Class_2_Public_Primary_Certification_Authority_-_G3.pem
-Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority.pem
-Adding debian:Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem
-Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem
-Adding debian:VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem
-Adding debian:VeriSign_Universal_Root_Certification_Authority.pem
-Adding debian:Visa_eCommerce_Root.pem
-Adding debian:WellsSecure_Public_Root_Certificate_Authority.pem
-Adding debian:WoSign_China.pem
-Adding debian:WoSign.pem
-Adding debian:XRamp_Global_CA_Root.pem
-Adding debian:spi-cacert-2008.pem
 done.
 done.
 CLDS: * Install openjdk-8-jre.
-CLDS: * Disk size = 2145916K. Space Used = 185784K.
+CLDS: * Disk size = 2145944K. Space Used = 185788K.
