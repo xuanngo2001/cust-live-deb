@@ -1,11 +1,11 @@
 * >>>>>>>>> Running inst-xtra-zfs-bpo.sh ...
   * After this operation, 108 MB of additional disk space will be used.
-  * After this operation, 41.3 MB of additional disk space will be used.
+  * After this operation, 41.4 MB of additional disk space will be used.
   * After this operation, 5,201 kB of additional disk space will be used.
   * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
   * Install zfs-dkms: version: 0.6.5.9-2~bpo8+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
   * Install zfs-initramfs to be able to boot from ZFS.
-  * Disk size = 4982964K. Space Used = 208520K.
+  * Disk size = 4979136K. Space Used = 213124K.
   * The following NEW packages will be installed:
   ```bash
   binutils file gcc-4.9 libasan1 libcilkrts5 libgcc-4.9-dev libitm1 liblsan0

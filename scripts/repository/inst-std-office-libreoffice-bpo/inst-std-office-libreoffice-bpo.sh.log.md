@@ -13,7 +13,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 3463668K. Space Used = 446860K.
+  * Disk size = 3460992K. Space Used = 446828K.
   * The following NEW packages will be installed:
   ```bash
   libpagemaker-0.0-0 librevenge-0.0-0

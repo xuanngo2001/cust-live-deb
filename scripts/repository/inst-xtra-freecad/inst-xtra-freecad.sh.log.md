@@ -106,7 +106,7 @@
   * After this operation, 735 kB of additional disk space will be used.
   * After this operation, 413 MB of additional disk space will be used.
   * Install freecad.
-  * Disk size = 4415848K. Space Used = 499664K.
+  * Disk size = 4406884K. Space Used = 499648K.
   * The following NEW packages will be installed:
   ```bash
   iso-codes libcoin80 libgstreamer-plugins-base1.0-0 libgstreamer1.0-0

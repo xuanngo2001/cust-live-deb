@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-std-accessories-prtscr-gnome-screenshot.sh ...
-  * After this operation, 54.9 MB of additional disk space will be used.
+  * After this operation, 55.8 MB of additional disk space will be used.
   * Install gnome-screenshot to be used for PrintScreen key.
   * Insert PrintScreen key binding.
   * By default, screenshots are saved under ~/Pictures/.
-  * Disk size = 2538688K. Space Used = 52744K.
+  * Disk size = 2538720K. Space Used = 52740K.
   * The following NEW packages will be installed:
   ```bash
   adwaita-icon-theme dconf-gsettings-backend dconf-service glib-networking
