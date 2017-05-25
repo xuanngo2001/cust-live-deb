@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-win-jwm-help-manuals-text.sh ...
   * Add Help menu in JWM.
-  * Disk size = 2282240K. Space Used = 40K.
+  * Disk size = 2285492K. Space Used = 44K.

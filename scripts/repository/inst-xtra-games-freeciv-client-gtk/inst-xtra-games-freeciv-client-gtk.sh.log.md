@@ -2,7 +2,7 @@
   * After this operation, 46.1 MB of additional disk space will be used.
   * Install freeciv-client-gtk.
   * How to run freeciv: http://freeciv.wikia.com/wiki/Install#Start_the_game
-  * Disk size = 4459772K. Space Used = 52888K.
+  * Disk size = 4588620K. Space Used = 52880K.
   * The following NEW packages will be installed:
   ```bash
   freeciv-client-gtk freeciv-data freeciv-sound-standard gtk2-engines-pixbuf

@@ -7,7 +7,7 @@
   * After this operation, 2,430 kB of additional disk space will be used.
   * After this operation, 56.5 MB of additional disk space will be used.
   * Install openra.
-  * Disk size = 4573628K. Space Used = 110528K.
+  * Disk size = 4702484K. Space Used = 110536K.
   * The following NEW packages will be installed:
   ```bash
   libsdl2-2.0-0
