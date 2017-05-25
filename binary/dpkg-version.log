@@ -13,7 +13,7 @@ apache2-data|2.4.10-10+deb8u8
 apache2-utils|2.4.10-10+deb8u8
 apt|1.0.9.8.4
 apt-utils|1.0.9.8.4
-aptly|1.0.0+30+ga245b72
+aptly|1.0.0+95+g0d04189
 aspell|0.60.7~20110707-1.3
 aspell-en|7.1-0-1.1
 at-spi2-core|2.14.0-1
@@ -26,9 +26,11 @@ binutils|2.25-5+deb8u1
 blender|2.74+dfsg0-4~bpo8+1
 blender-data|2.74+dfsg0-4~bpo8+1
 bluez-firmware|1.2-3
+browser-plugin-freshplayer-pepperflash|0.3.5-1~bpo8+1
 bsdmainutils|9.0.6
 bsdutils|1:2.25.2-6
 buffer|1.19-12
+build-essential|11.7
 busybox-static|1:1.22.0-9+deb8u1
 bzip2|1.0.6-7+b3
 ca-certificates|20141019+deb8u3
@@ -74,6 +76,7 @@ dkms|2.3-2~bpo8+1
 dmidecode|2.12-3
 dmsetup|2:1.02.90-2.2+deb8u1
 dpkg|1.17.27
+dpkg-dev|1.17.27
 e2fslibs|1.42.12-2+b1
 e2fsprogs|1.42.12-2+b1
 emacsen-common|2.0.8
@@ -83,6 +86,7 @@ exo-utils|0.10.2-4
 feh|2.12-1
 file|1:5.22+15-2+deb8u3
 findutils|4.4.2-9+b1
+firefox-esr|45.9.0esr-1~deb8u1
 firmware-amd-graphics|20161130-2~bpo8+1
 firmware-atheros|20161130-2~bpo8+1
 firmware-bnx2|20161130-2~bpo8+1
@@ -114,6 +118,8 @@ freeciv-data|2.5.6-1~bpo8+1
 freeciv-server|2.5.6-1~bpo8+1
 freeciv-sound-standard|2.5.6-1~bpo8+1
 fuse|2.9.3-15+deb8u2
+g++|4:4.9.2-2
+g++-4.9|4.9.2-10
 gcc|4:4.9.2-2
 gcc-4.8-base|4.8.4-1
 gcc-4.9|4.9.2-10
@@ -122,8 +128,8 @@ gconf-service|3.2.6-3
 gconf2|3.2.6-3
 gconf2-common|3.2.6-3
 gir1.2-glib-2.0|1.42.0-2.2
-git|1:2.11.0-2~bpo8+1
-git-man|1:2.11.0-2~bpo8+1
+git|1:2.11.0-3~bpo8+1
+git-man|1:2.11.0-3~bpo8+1
 glib-networking|2.42.0-2
 glib-networking-common|2.42.0-2
 glib-networking-services|2.42.0-2
@@ -150,6 +156,7 @@ hardinfo|0.5.1-1.4
 hicolor-icon-theme|0.13-1
 hostname|3.15
 iat|0.1.3-7
+iceweasel|45.9.0esr-1~deb8u1
 ifupdown|0.7.53.1
 imagemagick|8:6.8.9.9-5+deb8u8
 imagemagick-6.q16|8:6.8.9.9-5+deb8u8
@@ -292,6 +299,7 @@ libdebconfclient0|0.192
 libdevmapper1.02.1|2:1.02.90-2.2+deb8u1
 libdirectfb-1.2-9|1.2.10.0-5.1
 libdns-export100|1:9.9.5.dfsg-9+deb8u8
+libdpkg-perl|1.17.27
 libdrm-amdgpu1|2.4.74-1~bpo8+1
 libdrm-intel1|2.4.74-1~bpo8+1
 libdrm-nouveau2|2.4.74-1~bpo8+1
@@ -314,6 +322,8 @@ libestr0|0.1.9-1.1
 libetonyek-0.1-1|0.1.1-2
 libevdev2|1.3+dfsg-1
 libevent-2.0-5|2.0.21-stable-2+deb8u1
+libevent-core-2.0-5|2.0.21-stable-2+deb8u1
+libevent-pthreads-2.0-5|2.0.21-stable-2+deb8u1
 libexif12|0.6.21-2
 libexo-1-0|0.10.2-4
 libexo-common|0.10.2-4
@@ -325,7 +335,7 @@ libfaac0|1:1.28-dmo3+deb8u1
 libfaad2|2.7-8
 libfdk-aac1|1:0.1.4-dmo1
 libffi6|3.1-2+b2
-libfftw3-double3|3.3.4-2
+libfftw3-double3|3.3.5-3~bpo8+1
 libflac8|1.3.0-3
 libfluidsynth1|1.1.6-2
 libfontconfig1|2.11.0-6.3+deb8u1
@@ -421,7 +431,7 @@ libjack-jackd2-0|1.9.10+20140719git3eb0ae6a~dfsg-2
 libjasper1|1.900.1-debian1-2.4+deb8u3
 libjavascriptcoregtk-3.0-0|2.4.9-1~deb8u1
 libjbig0|2.1-3.1
-libjbig2dec0|0.13-4~deb8u1
+libjbig2dec0|0.13-4~deb8u2
 libjemalloc1|3.6.0-3
 libjpeg62-turbo|1:1.3.1-12
 libjs-jquery|1.11.3+dfsg-4~bpo8+1
@@ -659,7 +669,7 @@ libsigc++-2.0-0c2a|2.4.0-1
 libslang2|2.3.0-2
 libsm6|2:1.2.2-1+b1
 libsmartcols1|2.25.2-6
-libsmbclient|2:4.2.14+dfsg-0+deb8u5
+libsmbclient|2:4.2.14+dfsg-0+deb8u6
 libsmi2ldbl|0.4.8+dfsg2-10+b2
 libsndfile1|1.0.25-9.1+deb8u1
 libsoqt4-20|1.6.0~e8310f-2
@@ -673,6 +683,7 @@ libss2|1.42.12-2+b1
 libssh2-1|1.4.3-4.1+deb8u1
 libssl1.0.0|1.0.1t-1+deb8u5
 libstartup-notification0|0.12-4
+libstdc++-4.9-dev|4.9.2-10
 libstdc++6|4.9.2-10
 libswresample1|10:2.6.9-dmo1
 libswscale3|10:2.6.9-dmo1
@@ -695,6 +706,7 @@ libthai0|0.1.21-1
 libtheora0|1.1.1+dfsg.1-6
 libthunarx-2-0|1.6.3-2
 libtiff5|4.0.3-12.3+deb8u3
+libtimedate-perl|2.3000-2
 libtinfo5|5.9+20140913-1+b1
 libtinyxml2.6.2|2.6.2-2
 libtk8.6|8.6.2-1
@@ -734,7 +746,7 @@ libwayland-client0|1.6.0-2
 libwayland-cursor0|1.6.0-2
 libwayland-egl1-mesa|10.3.2-1+deb8u1
 libwayland-server0|1.6.0-2
-libwbclient0|2:4.2.14+dfsg-0+deb8u5
+libwbclient0|2:4.2.14+dfsg-0+deb8u6
 libwebkitgtk-3.0-0|2.4.9-1~deb8u1
 libwebkitgtk-3.0-common|2.4.9-1~deb8u1
 libwebp5|0.4.1-1.2+b2
@@ -809,13 +821,13 @@ libzpool2linux|0.6.5.9-2~bpo8+1
 libzvbi-common|0.2.35-3
 libzvbi0|0.2.35-3
 linux-base|4.3~bpo8+1
-linux-compiler-gcc-4.9-x86|4.9.18-1~bpo8+1
-linux-headers-4.9.0-0.bpo.2-amd64|4.9.18-1~bpo8+1
-linux-headers-4.9.0-0.bpo.2-common|4.9.18-1~bpo8+1
-linux-headers-amd64|4.9+79~bpo8+1
-linux-image-4.9.0-0.bpo.2-amd64-unsigned|4.9.18-1~bpo8+1
-linux-image-amd64|4.9+79~bpo8+1
-linux-kbuild-4.9|4.9.18-1~bpo8+1
+linux-compiler-gcc-4.9-x86|4.9.25-1~bpo8+1
+linux-headers-4.9.0-0.bpo.3-amd64|4.9.25-1~bpo8+1
+linux-headers-4.9.0-0.bpo.3-common|4.9.25-1~bpo8+1
+linux-headers-amd64|4.9+80~bpo8+1
+linux-image-4.9.0-0.bpo.3-amd64|4.9.25-1~bpo8+1
+linux-image-amd64|4.9+80~bpo8+1
+linux-kbuild-4.9|4.9.25-1~bpo8+1
 linux-libc-dev|3.16.43-2
 live-boot|1:20160511~bpo8+1
 live-boot-initramfs-tools|1:20160511~bpo8+1
@@ -862,8 +874,8 @@ nfacct|1.0.1-1.1
 ntfs-3g|1:2014.2.15AR.2-1+deb8u3
 ntp|1:4.2.6.p5+dfsg-7+deb8u2
 numlockx|1.2-7
-openjdk-8-jre|8u121-b13-1~bpo8+1
-openjdk-8-jre-headless|8u121-b13-1~bpo8+1
+openjdk-8-jre|8u131-b11-1~bpo8+1
+openjdk-8-jre-headless|8u131-b11-1~bpo8+1
 openra|20161019.release
 openssl|1.0.1t-1+deb8u6
 openttd|1.4.4-2
@@ -888,6 +900,7 @@ php5-gd|5.6.30+dfsg-0+deb8u1
 php5-json|1.3.6-1
 php5-mysql|5.6.30+dfsg-0+deb8u1
 pinta|1.3-3
+pkg-mozilla-archive-keyring|1.1
 poppler-utils|0.26.5-2+deb8u1
 procps|2:3.3.9-9
 projectlibre|1.7.0-1
@@ -956,7 +969,7 @@ readline-common|6.3-8
 reaver|1.4-2
 rsync|3.1.1-3
 rsyslog|8.4.2-1+deb8u2
-samba-libs|2:4.2.14+dfsg-0+deb8u5
+samba-libs|2:4.2.14+dfsg-0+deb8u6
 scite|3.5.0-1
 sed|4.2.2-4+deb8u1
 sensible-utils|0.0.9
