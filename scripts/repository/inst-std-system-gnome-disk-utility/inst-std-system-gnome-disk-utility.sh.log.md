@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-system-gnome-disk-utility.sh ...
-  * Disk size = 2646616K. Space Used = 4K.
+  * Disk size = 3628696K. Space Used = 4K.

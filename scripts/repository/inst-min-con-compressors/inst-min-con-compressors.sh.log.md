@@ -13,7 +13,7 @@
   * Install de/compressor: p7zip.
   * Add universal extractor.
   * Use new rar version due to segmentation fault with 'RAR 4.20' with linux-image-4.8.0-0.bpo.2-amd64-unsigned (4.8.11-1~bpo8+1).
-  * Disk size = 1316632K. Space Used = 4832K.
+  * Disk size = 1316672K. Space Used = 4836K.
   * The following NEW packages will be installed:
   ```bash
   bzip2

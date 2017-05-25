@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-openjdk-8-jre.sh ...
   * After this operation, 152 MB of additional disk space will be used.
   * Install openjdk-8-jre.
-  * Disk size = 2149196K. Space Used = 185916K.
+  * Disk size = 2149192K. Space Used = 185920K.
   * The following NEW packages will be installed:
   ```bash
   ca-certificates ca-certificates-java java-common libasyncns0
