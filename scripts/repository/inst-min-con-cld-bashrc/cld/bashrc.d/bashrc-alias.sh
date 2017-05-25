@@ -20,7 +20,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 # Shutdown
-alias fk='pkill --oldest chrome && poweroff'
+alias fk='pkill --oldest chrome; poweroff'
 
 
 # grep color
