@@ -1,19 +1,22 @@
 * >>>>>>>>> Running inst-min-win-00-xorg.sh ...
-  * After this operation, 67.6 MB of additional disk space will be used.
+  * After this operation, 72.1 MB of additional disk space will be used.
   * Set keyboard to use US international.
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
-  * Disk size = 2281820K. Space Used = 86604K.
+  * Disk size = 1640052K. Space Used = 93764K.
   * The following NEW packages will be installed:
   ```bash
-  keyboard-configuration libdrm-intel1 libdrm-nouveau2 libdrm-radeon1
-  libegl1-mesa libelf1 libepoxy0 libevdev2 libfontenc1 libgbm1 libllvm3.5
-  libmtdev1 libpciaccess0 libwayland-client0 libwayland-server0 libxatracker2
-  libxaw7 libxcb-shape0 libxcb-util0 libxcb-xfixes0 libxfont1 libxkbfile1
-  libxmu6 libxmuu1 libxv1 libxvmc1 x11-xkb-utils xauth xinit xkb-data
-  xserver-common xserver-xorg xserver-xorg-core xserver-xorg-input-all
-  xserver-xorg-input-evdev xserver-xorg-input-mouse
+  keyboard-configuration libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2
+  libegl1-mesa libelf1 libepoxy0 libevdev2 libfontenc1 libfreetype6 libgbm1
+  libgl1-mesa-glx libglapi-mesa libice6 libllvm3.5 libmtdev1 libpciaccess0
+  libpixman-1-0 libpng12-0 libsm6 libwayland-client0 libwayland-server0
+  libx11-xcb1 libxatracker2 libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0
+  libxcb-present0 libxcb-render0 libxcb-shape0 libxcb-sync1 libxcb-util0
+  libxcb-xfixes0 libxdamage1 libxfixes3 libxfont1 libxkbfile1 libxmu6 libxmuu1
+  libxpm4 libxshmfence1 libxt6 libxv1 libxvmc1 libxxf86vm1 x11-xkb-utils xauth
+  xinit xkb-data xserver-common xserver-xorg xserver-xorg-core
+  xserver-xorg-input-all xserver-xorg-input-evdev xserver-xorg-input-mouse
   xserver-xorg-input-synaptics xserver-xorg-input-vmmouse
   xserver-xorg-video-all xserver-xorg-video-ati xserver-xorg-video-cirrus
   xserver-xorg-video-fbdev xserver-xorg-video-intel xserver-xorg-video-mach64
