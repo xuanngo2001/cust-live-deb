@@ -15,12 +15,10 @@ The following extra packages will be installed:
   openjdk-8-jre-headless openssl shared-mime-info
 Suggested packages:
   default-jre equivs cups-common librsvg2-common gvfs libjasper-runtime pcscd
-  pulseaudio icedtea-8-plugin openjdk-8-jre-jamvm libnss-mdns
-  fonts-ipafont-gothic fonts-ipafont-mincho ttf-wqy-microhei ttf-wqy-zenhei
-  fonts-indic
+  pulseaudio icedtea-8-plugin libnss-mdns fonts-ipafont-gothic
+  fonts-ipafont-mincho ttf-wqy-microhei ttf-wqy-zenhei fonts-indic
 Recommended packages:
-  libgl1-mesa-dri libgtk2.0-bin tcpd libgnome2-0 libgnomevfs2-0 libgconf2-4
-  fonts-dejavu-extra
+  libgl1-mesa-dri libgtk2.0-bin tcpd fonts-dejavu-extra
 The following NEW packages will be installed:
   ca-certificates ca-certificates-java java-common libasyncns0
   libatk-wrapper-java libatk-wrapper-java-jni libatk1.0-0 libatk1.0-data
@@ -32,8 +30,8 @@ The following NEW packages will be installed:
   libxcb-present0 libxcb-sync1 libxcomposite1 libxcursor1 libxdamage1
   libxfixes3 libxinerama1 libxrandr2 libxshmfence1 libxxf86vm1 openjdk-8-jre
   openjdk-8-jre-headless openssl shared-mime-info
-0 upgraded, 50 newly installed, 0 to remove and 33 not upgraded.
-Need to get 39.0 MB of archives.
+0 upgraded, 50 newly installed, 0 to remove and 34 not upgraded.
+Need to get 39.1 MB of archives.
 After this operation, 152 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libsqlite3-0 amd64 3.16.2-3~bpo8+1 [572 kB]
 Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libwrap0 amd64 7.6.q-25 [58.5 kB]
@@ -83,13 +81,13 @@ Get:45 http://localhost/aptly-repo/master_jessie-main/ jessie/main openssl amd64
 Get:46 http://localhost/aptly-repo/master_jessie-main/ jessie/main ca-certificates all 20141019+deb8u3 [207 kB]
 Get:47 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main ca-certificates-java all 20161107~bpo8+1 [14.8 kB]
 Get:48 http://localhost/aptly-repo/master_jessie-main/ jessie/main java-common all 0.52 [136 kB]
-Get:49 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main openjdk-8-jre-headless amd64 8u121-b13-1~bpo8+1 [26.9 MB]
-Get:50 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main openjdk-8-jre amd64 8u121-b13-1~bpo8+1 [69.9 kB]
+Get:49 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main openjdk-8-jre-headless amd64 8u131-b11-1~bpo8+1 [27.0 MB]
+Get:50 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main openjdk-8-jre amd64 8u131-b11-1~bpo8+1 [69.8 kB]
 Extracting templates from packages: 60%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 39.0 MB in 1s (26.2 MB/s)
+Fetched 39.1 MB in 1s (34.0 MB/s)
 Selecting previously unselected package libsqlite3-0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20679 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20738 files and directories currently installed.)
 Preparing to unpack .../libsqlite3-0_3.16.2-3~bpo8+1_amd64.deb ...
 Unpacking libsqlite3-0:amd64 (3.16.2-3~bpo8+1) ...
 Selecting previously unselected package libwrap0:amd64.
@@ -234,11 +232,11 @@ Selecting previously unselected package java-common.
 Preparing to unpack .../java-common_0.52_all.deb ...
 Unpacking java-common (0.52) ...
 Selecting previously unselected package openjdk-8-jre-headless:amd64.
-Preparing to unpack .../openjdk-8-jre-headless_8u121-b13-1~bpo8+1_amd64.deb ...
-Unpacking openjdk-8-jre-headless:amd64 (8u121-b13-1~bpo8+1) ...
+Preparing to unpack .../openjdk-8-jre-headless_8u131-b11-1~bpo8+1_amd64.deb ...
+Unpacking openjdk-8-jre-headless:amd64 (8u131-b11-1~bpo8+1) ...
 Selecting previously unselected package openjdk-8-jre:amd64.
-Preparing to unpack .../openjdk-8-jre_8u121-b13-1~bpo8+1_amd64.deb ...
-Unpacking openjdk-8-jre:amd64 (8u121-b13-1~bpo8+1) ...
+Preparing to unpack .../openjdk-8-jre_8u131-b11-1~bpo8+1_amd64.deb ...
+Unpacking openjdk-8-jre:amd64 (8u131-b11-1~bpo8+1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for libc-bin (2.19-18+deb8u7) ...
 Processing triggers for hicolor-icon-theme (0.13-1) ...
@@ -290,7 +288,7 @@ Setting up openssl (1.0.1t-1+deb8u6) ...
 Setting up ca-certificates (20141019+deb8u3) ...
 Updating certificates in /etc/ssl/certs... 174 added, 0 removed; done.
 Setting up java-common (0.52) ...
-Setting up openjdk-8-jre-headless:amd64 (8u121-b13-1~bpo8+1) ...
+Setting up openjdk-8-jre-headless:amd64 (8u131-b11-1~bpo8+1) ...
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java to provide /usr/bin/java (java) in auto mode
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
@@ -302,7 +300,7 @@ update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/orbd to pro
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/servertool to provide /usr/bin/servertool (servertool) in auto mode
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/tnameserv to provide /usr/bin/tnameserv (tnameserv) in auto mode
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
-Setting up openjdk-8-jre:amd64 (8u121-b13-1~bpo8+1) ...
+Setting up openjdk-8-jre:amd64 (8u131-b11-1~bpo8+1) ...
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode
 Setting up ca-certificates-java (20161107~bpo8+1) ...
 Adding debian:Comodo_Secure_Services_root.pem
@@ -487,4 +485,4 @@ Running hooks in /etc/ca-certificates/update.d....
 done.
 done.
 CLDS: * Install openjdk-8-jre.
-CLDS: * Disk size = 2145944K. Space Used = 185788K.
+CLDS: * Disk size = 2149196K. Space Used = 185916K.
