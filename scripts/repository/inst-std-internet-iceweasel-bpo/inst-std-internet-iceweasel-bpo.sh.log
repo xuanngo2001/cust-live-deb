@@ -1,6 +1,6 @@
 CLDS:>>>>>>>>> Running inst-std-internet-iceweasel-bpo.sh ...
 Selecting previously unselected package pkg-mozilla-archive-keyring.
-(Reading database ... 36199 files and directories currently installed.)
+(Reading database ... 33428 files and directories currently installed.)
 Preparing to unpack pkg-mozilla-archive-keyring_1.1_all.deb ...
 Unpacking pkg-mozilla-archive-keyring (1.1) ...
 Setting up pkg-mozilla-archive-keyring (1.1) ...
@@ -43,15 +43,15 @@ Hit http://localhost jessie/non-free amd64 Packages
 Hit http://localhost jessie-updates/contrib amd64 Packages
 Hit http://localhost jessie-updates/main amd64 Packages
 Hit http://localhost jessie-updates/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
 Ign http://localhost jessie-backports/contrib Translation-en_US
 Ign http://localhost jessie-backports/contrib Translation-en
 Ign http://localhost jessie-backports/main Translation-en_US
 Ign http://localhost jessie-backports/main Translation-en
 Ign http://localhost jessie-backports/non-free Translation-en_US
+Ign http://localhost jessie-backports/non-free Translation-en
+Hit http://localhost jessie-updates/contrib amd64 Packages
 Hit http://localhost jessie-updates/main amd64 Packages
 Hit http://localhost jessie-updates/non-free amd64 Packages
-Ign http://localhost jessie-backports/non-free Translation-en
 Ign http://localhost jessie/contrib Translation-en_US
 Ign http://localhost jessie/contrib Translation-en
 Ign http://localhost jessie/non-free Translation-en_US
@@ -88,9 +88,9 @@ Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libevent-2.0-5
 Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libhunspell-1.3-0 amd64 1.3.3-3 [139 kB]
 Get:3 http://localhost/aptly-repo/master_jessie-main/ jessie/main firefox-esr amd64 45.9.0esr-1~deb8u1 [43.7 MB]
 Get:4 http://localhost/aptly-repo/master_jessie-main/ jessie/main iceweasel all 45.9.0esr-1~deb8u1 [119 kB]
-Fetched 44.1 MB in 0s (48.6 MB/s)
+Fetched 44.1 MB in 0s (47.9 MB/s)
 Selecting previously unselected package libevent-2.0-5:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36203 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33432 files and directories currently installed.)
 Preparing to unpack .../libevent-2.0-5_2.0.21-stable-2+deb8u1_amd64.deb ...
 Unpacking libevent-2.0-5:amd64 (2.0.21-stable-2+deb8u1) ...
 Selecting previously unselected package libhunspell-1.3-0:amd64.
@@ -103,7 +103,6 @@ Unpacking firefox-esr (45.9.0esr-1~deb8u1) ...
 Selecting previously unselected package iceweasel.
 Preparing to unpack .../iceweasel_45.9.0esr-1~deb8u1_all.deb ...
 Unpacking iceweasel (45.9.0esr-1~deb8u1) ...
-Processing triggers for mime-support (3.58) ...
 Processing triggers for desktop-file-utils (0.22-1) ...
 Processing triggers for man-db (2.7.0.2-5) ...
 Processing triggers for hicolor-icon-theme (0.13-1) ...
@@ -126,9 +125,9 @@ Need to get 152 kB of archives.
 After this operation, 339 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libevent-core-2.0-5 amd64 2.0.21-stable-2+deb8u1 [108 kB]
 Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libevent-pthreads-2.0-5 amd64 2.0.21-stable-2+deb8u1 [44.1 kB]
-Fetched 152 kB in 0s (10.8 MB/s)
+Fetched 152 kB in 0s (13.9 MB/s)
 Selecting previously unselected package libevent-core-2.0-5:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36331 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33560 files and directories currently installed.)
 Preparing to unpack .../libevent-core-2.0-5_2.0.21-stable-2+deb8u1_amd64.deb ...
 Unpacking libevent-core-2.0-5:amd64 (2.0.21-stable-2+deb8u1) ...
 Selecting previously unselected package libevent-pthreads-2.0-5:amd64.
@@ -141,59 +140,77 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following extra packages will be installed:
-  libaacplus2 libavcodec56 libavutil54 libcrystalhd3 libfaac0 libfdk-aac1
-  libgsm1 libmp3lame0 libopencore-amrnb0 libopencore-amrwb0 libopus0
-  liborc-0.4-0 libschroedinger-1.0-0 libspeex1 libswresample1 libtheora0
+  libaacplus2 libasyncns0 libavcodec56 libavutil54 libcrystalhd3 libfaac0
+  libfdk-aac1 libflac8 libgsm1 libmp3lame0 libopencore-amrnb0
+  libopencore-amrwb0 libopenjpeg5 libopus0 liborc-0.4-0 libpulse0
+  libschroedinger-1.0-0 libsndfile1 libspeex1 libswresample1 libtheora0
   libutvideo15 libv4l-0 libv4lconvert0 libva-x11-1 libva1 libvdpau1
-  libvo-aacenc0 libvo-amrwbenc0 libx264-146 libx265-51 libxvidcore4
-  libzvbi-common libzvbi0
+  libvo-aacenc0 libvo-amrwbenc0 libvorbisenc2 libvpx1 libwrap0 libx264-146
+  libx265-51 libxvidcore4 libzvbi-common libzvbi0
 Suggested packages:
-  firmware-crystalhd opus-tools speex nvidia-vdpau-driver vdpau-driver
+  firmware-crystalhd opus-tools pulseaudio speex nvidia-vdpau-driver
+  vdpau-driver
 Recommended packages:
-  pepperflashplugin-nonfree va-driver-all va-driver
+  pepperflashplugin-nonfree va-driver-all va-driver tcpd
 The following NEW packages will be installed:
-  browser-plugin-freshplayer-pepperflash libaacplus2 libavcodec56 libavutil54
-  libcrystalhd3 libfaac0 libfdk-aac1 libgsm1 libmp3lame0 libopencore-amrnb0
-  libopencore-amrwb0 libopus0 liborc-0.4-0 libschroedinger-1.0-0 libspeex1
-  libswresample1 libtheora0 libutvideo15 libv4l-0 libv4lconvert0 libva-x11-1
-  libva1 libvdpau1 libvo-aacenc0 libvo-amrwbenc0 libx264-146 libx265-51
-  libxvidcore4 libzvbi-common libzvbi0
-0 upgraded, 30 newly installed, 0 to remove and 34 not upgraded.
-Need to get 8,396 kB of archives.
-After this operation, 24.5 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libaacplus2 amd64 2.0.2-dmo2 [99.5 kB]
-Get:2 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libavutil54 amd64 10:2.6.9-dmo1 [190 kB]
-Get:3 http://localhost/aptly-repo/master_jessie-main/ jessie/main libcrystalhd3 amd64 1:0.0~git20110715.fdd2f19-11 [45.8 kB]
-Get:4 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libfaac0 amd64 1:1.28-dmo3+deb8u1 [35.1 kB]
-Get:5 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libfdk-aac1 amd64 1:0.1.4-dmo1 [350 kB]
-Get:6 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgsm1 amd64 1.0.13-4 [29.7 kB]
-Get:7 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libmp3lame0 amd64 1:3.99.5-dmo4 [345 kB]
-Get:8 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopencore-amrnb0 amd64 0.1.3-2.1 [92.4 kB]
-Get:9 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopencore-amrwb0 amd64 0.1.3-2.1 [46.2 kB]
-Get:10 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopus0 amd64 1.1-2 [156 kB]
-Get:11 http://localhost/aptly-repo/master_jessie-main/ jessie/main liborc-0.4-0 amd64 1:0.4.22-1 [141 kB]
-Get:12 http://localhost/aptly-repo/master_jessie-main/ jessie/main libschroedinger-1.0-0 amd64 1.0.11-2.1 [295 kB]
-Get:13 http://localhost/aptly-repo/master_jessie-main/ jessie/main libspeex1 amd64 1.2~rc1.2-1 [54.9 kB]
-Get:14 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libswresample1 amd64 10:2.6.9-dmo1 [87.3 kB]
-Get:15 http://localhost/aptly-repo/master_jessie-main/ jessie/main libtheora0 amd64 1.1.1+dfsg.1-6 [171 kB]
-Get:16 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libutvideo15 amd64 15.1.0-dmo2 [50.2 kB]
-Get:17 http://localhost/aptly-repo/master_jessie-main/ jessie/main libva1 amd64 1.4.1-1 [43.8 kB]
-Get:18 http://localhost/aptly-repo/master_jessie-main/ jessie/main libvo-aacenc0 amd64 0.1.3-1 [62.6 kB]
-Get:19 http://localhost/aptly-repo/master_jessie-main/ jessie/main libvo-amrwbenc0 amd64 0.1.3-1 [59.4 kB]
-Get:20 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libx264-146 amd64 3:0.146.2538+git121396c-dmo2 [599 kB]
-Get:21 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libx265-51 amd64 1.6-dmo1 [566 kB]
-Get:22 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libxvidcore4 amd64 3:1.3.3-dmo1 [239 kB]
-Get:23 http://localhost/aptly-repo/master_jessie-main/ jessie/main libzvbi-common all 0.2.35-3 [61.3 kB]
-Get:24 http://localhost/aptly-repo/master_jessie-main/ jessie/main libzvbi0 amd64 0.2.35-3 [266 kB]
-Get:25 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libavcodec56 amd64 10:2.6.9-dmo1 [3,708 kB]
-Get:26 http://localhost/aptly-repo/master_jessie-main/ jessie/main libv4lconvert0 amd64 1.6.0-2 [108 kB]
-Get:27 http://localhost/aptly-repo/master_jessie-main/ jessie/main libv4l-0 amd64 1.6.0-2 [71.8 kB]
-Get:28 http://localhost/aptly-repo/master_jessie-main/ jessie/main libva-x11-1 amd64 1.4.1-1 [17.6 kB]
-Get:29 http://localhost/aptly-repo/master_jessie-main/ jessie/main libvdpau1 amd64 0.8-3+deb8u2 [33.7 kB]
-Get:30 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib browser-plugin-freshplayer-pepperflash amd64 0.3.5-1~bpo8+1 [370 kB]
-Fetched 8,396 kB in 0s (19.7 MB/s)
+  browser-plugin-freshplayer-pepperflash libaacplus2 libasyncns0 libavcodec56
+  libavutil54 libcrystalhd3 libfaac0 libfdk-aac1 libflac8 libgsm1 libmp3lame0
+  libopencore-amrnb0 libopencore-amrwb0 libopenjpeg5 libopus0 liborc-0.4-0
+  libpulse0 libschroedinger-1.0-0 libsndfile1 libspeex1 libswresample1
+  libtheora0 libutvideo15 libv4l-0 libv4lconvert0 libva-x11-1 libva1 libvdpau1
+  libvo-aacenc0 libvo-amrwbenc0 libvorbisenc2 libvpx1 libwrap0 libx264-146
+  libx265-51 libxvidcore4 libzvbi-common libzvbi0
+0 upgraded, 38 newly installed, 0 to remove and 34 not upgraded.
+Need to get 9,827 kB of archives.
+After this operation, 29.4 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libwrap0 amd64 7.6.q-25 [58.5 kB]
+Get:2 http://localhost/aptly-repo/master_jessie-main/ jessie/main libasyncns0 amd64 0.8-5 [12.5 kB]
+Get:3 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libaacplus2 amd64 2.0.2-dmo2 [99.5 kB]
+Get:4 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libavutil54 amd64 10:2.6.9-dmo1 [190 kB]
+Get:5 http://localhost/aptly-repo/master_jessie-main/ jessie/main libcrystalhd3 amd64 1:0.0~git20110715.fdd2f19-11 [45.8 kB]
+Get:6 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libfaac0 amd64 1:1.28-dmo3+deb8u1 [35.1 kB]
+Get:7 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libfdk-aac1 amd64 1:0.1.4-dmo1 [350 kB]
+Get:8 http://localhost/aptly-repo/master_jessie-main/ jessie/main libgsm1 amd64 1.0.13-4 [29.7 kB]
+Get:9 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libmp3lame0 amd64 1:3.99.5-dmo4 [345 kB]
+Get:10 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopencore-amrnb0 amd64 0.1.3-2.1 [92.4 kB]
+Get:11 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopencore-amrwb0 amd64 0.1.3-2.1 [46.2 kB]
+Get:12 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopenjpeg5 amd64 1:1.5.2-3 [111 kB]
+Get:13 http://localhost/aptly-repo/master_jessie-main/ jessie/main libopus0 amd64 1.1-2 [156 kB]
+Get:14 http://localhost/aptly-repo/master_jessie-main/ jessie/main liborc-0.4-0 amd64 1:0.4.22-1 [141 kB]
+Get:15 http://localhost/aptly-repo/master_jessie-main/ jessie/main libschroedinger-1.0-0 amd64 1.0.11-2.1 [295 kB]
+Get:16 http://localhost/aptly-repo/master_jessie-main/ jessie/main libspeex1 amd64 1.2~rc1.2-1 [54.9 kB]
+Get:17 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libswresample1 amd64 10:2.6.9-dmo1 [87.3 kB]
+Get:18 http://localhost/aptly-repo/master_jessie-main/ jessie/main libtheora0 amd64 1.1.1+dfsg.1-6 [171 kB]
+Get:19 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libutvideo15 amd64 15.1.0-dmo2 [50.2 kB]
+Get:20 http://localhost/aptly-repo/master_jessie-main/ jessie/main libva1 amd64 1.4.1-1 [43.8 kB]
+Get:21 http://localhost/aptly-repo/master_jessie-main/ jessie/main libvo-aacenc0 amd64 0.1.3-1 [62.6 kB]
+Get:22 http://localhost/aptly-repo/master_jessie-main/ jessie/main libvo-amrwbenc0 amd64 0.1.3-1 [59.4 kB]
+Get:23 http://localhost/aptly-repo/master_jessie-main/ jessie/main libvorbisenc2 amd64 1.3.4-2 [77.9 kB]
+Get:24 http://localhost/aptly-repo/master_jessie-main/ jessie/main libvpx1 amd64 1.3.0-3 [599 kB]
+Get:25 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libx264-146 amd64 3:0.146.2538+git121396c-dmo2 [599 kB]
+Get:26 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libx265-51 amd64 1.6-dmo1 [566 kB]
+Get:27 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libxvidcore4 amd64 3:1.3.3-dmo1 [239 kB]
+Get:28 http://localhost/aptly-repo/master_jessie-main/ jessie/main libzvbi-common all 0.2.35-3 [61.3 kB]
+Get:29 http://localhost/aptly-repo/master_jessie-main/ jessie/main libzvbi0 amd64 0.2.35-3 [266 kB]
+Get:30 http://localhost/aptly-repo/master_deb-multimedia-main/ jessie/main libavcodec56 amd64 10:2.6.9-dmo1 [3,708 kB]
+Get:31 http://localhost/aptly-repo/master_jessie-main/ jessie/main libflac8 amd64 1.3.0-3 [89.3 kB]
+Get:32 http://localhost/aptly-repo/master_jessie-main/ jessie/main libsndfile1 amd64 1.0.25-9.1+deb8u1 [215 kB]
+Get:33 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main libpulse0 amd64 7.1-2~bpo8+1 [268 kB]
+Get:34 http://localhost/aptly-repo/master_jessie-main/ jessie/main libv4lconvert0 amd64 1.6.0-2 [108 kB]
+Get:35 http://localhost/aptly-repo/master_jessie-main/ jessie/main libv4l-0 amd64 1.6.0-2 [71.8 kB]
+Get:36 http://localhost/aptly-repo/master_jessie-main/ jessie/main libva-x11-1 amd64 1.4.1-1 [17.6 kB]
+Get:37 http://localhost/aptly-repo/master_jessie-main/ jessie/main libvdpau1 amd64 0.8-3+deb8u2 [33.7 kB]
+Get:38 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib browser-plugin-freshplayer-pepperflash amd64 0.3.5-1~bpo8+1 [370 kB]
+Extracting templates from packages: 78%Extracting templates from packages: 100%
+Fetched 9,827 kB in 0s (16.9 MB/s)
+Selecting previously unselected package libwrap0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33572 files and directories currently installed.)
+Preparing to unpack .../libwrap0_7.6.q-25_amd64.deb ...
+Unpacking libwrap0:amd64 (7.6.q-25) ...
+Selecting previously unselected package libasyncns0:amd64.
+Preparing to unpack .../libasyncns0_0.8-5_amd64.deb ...
+Unpacking libasyncns0:amd64 (0.8-5) ...
 Selecting previously unselected package libaacplus2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36343 files and directories currently installed.)
 Preparing to unpack .../libaacplus2_2.0.2-dmo2_amd64.deb ...
 Unpacking libaacplus2:amd64 (2.0.2-dmo2) ...
 Selecting previously unselected package libavutil54:amd64.
@@ -220,6 +237,9 @@ Unpacking libopencore-amrnb0:amd64 (0.1.3-2.1) ...
 Selecting previously unselected package libopencore-amrwb0:amd64.
 Preparing to unpack .../libopencore-amrwb0_0.1.3-2.1_amd64.deb ...
 Unpacking libopencore-amrwb0:amd64 (0.1.3-2.1) ...
+Selecting previously unselected package libopenjpeg5:amd64.
+Preparing to unpack .../libopenjpeg5_1%3a1.5.2-3_amd64.deb ...
+Unpacking libopenjpeg5:amd64 (1:1.5.2-3) ...
 Selecting previously unselected package libopus0:amd64.
 Preparing to unpack .../libopus0_1.1-2_amd64.deb ...
 Unpacking libopus0:amd64 (1.1-2) ...
@@ -250,6 +270,12 @@ Unpacking libvo-aacenc0:amd64 (0.1.3-1) ...
 Selecting previously unselected package libvo-amrwbenc0:amd64.
 Preparing to unpack .../libvo-amrwbenc0_0.1.3-1_amd64.deb ...
 Unpacking libvo-amrwbenc0:amd64 (0.1.3-1) ...
+Selecting previously unselected package libvorbisenc2:amd64.
+Preparing to unpack .../libvorbisenc2_1.3.4-2_amd64.deb ...
+Unpacking libvorbisenc2:amd64 (1.3.4-2) ...
+Selecting previously unselected package libvpx1:amd64.
+Preparing to unpack .../libvpx1_1.3.0-3_amd64.deb ...
+Unpacking libvpx1:amd64 (1.3.0-3) ...
 Selecting previously unselected package libx264-146:amd64.
 Preparing to unpack .../libx264-146_3%3a0.146.2538+git121396c-dmo2_amd64.deb ...
 Unpacking libx264-146:amd64 (3:0.146.2538+git121396c-dmo2) ...
@@ -268,6 +294,15 @@ Unpacking libzvbi0:amd64 (0.2.35-3) ...
 Selecting previously unselected package libavcodec56:amd64.
 Preparing to unpack .../libavcodec56_10%3a2.6.9-dmo1_amd64.deb ...
 Unpacking libavcodec56:amd64 (10:2.6.9-dmo1) ...
+Selecting previously unselected package libflac8:amd64.
+Preparing to unpack .../libflac8_1.3.0-3_amd64.deb ...
+Unpacking libflac8:amd64 (1.3.0-3) ...
+Selecting previously unselected package libsndfile1:amd64.
+Preparing to unpack .../libsndfile1_1.0.25-9.1+deb8u1_amd64.deb ...
+Unpacking libsndfile1:amd64 (1.0.25-9.1+deb8u1) ...
+Selecting previously unselected package libpulse0:amd64.
+Preparing to unpack .../libpulse0_7.1-2~bpo8+1_amd64.deb ...
+Unpacking libpulse0:amd64 (7.1-2~bpo8+1) ...
 Selecting previously unselected package libv4lconvert0:amd64.
 Preparing to unpack .../libv4lconvert0_1.6.0-2_amd64.deb ...
 Unpacking libv4lconvert0:amd64 (1.6.0-2) ...
@@ -283,6 +318,9 @@ Unpacking libvdpau1:amd64 (0.8-3+deb8u2) ...
 Selecting previously unselected package browser-plugin-freshplayer-pepperflash.
 Preparing to unpack .../browser-plugin-freshplayer-pepperflash_0.3.5-1~bpo8+1_amd64.deb ...
 Unpacking browser-plugin-freshplayer-pepperflash (0.3.5-1~bpo8+1) ...
+Processing triggers for man-db (2.7.0.2-5) ...
+Setting up libwrap0:amd64 (7.6.q-25) ...
+Setting up libasyncns0:amd64 (0.8-5) ...
 Setting up libaacplus2:amd64 (2.0.2-dmo2) ...
 Setting up libavutil54:amd64 (10:2.6.9-dmo1) ...
 Setting up libcrystalhd3:amd64 (1:0.0~git20110715.fdd2f19-11) ...
@@ -292,6 +330,7 @@ Setting up libgsm1:amd64 (1.0.13-4) ...
 Setting up libmp3lame0:amd64 (1:3.99.5-dmo4) ...
 Setting up libopencore-amrnb0:amd64 (0.1.3-2.1) ...
 Setting up libopencore-amrwb0:amd64 (0.1.3-2.1) ...
+Setting up libopenjpeg5:amd64 (1:1.5.2-3) ...
 Setting up libopus0:amd64 (1.1-2) ...
 Setting up liborc-0.4-0:amd64 (1:0.4.22-1) ...
 Setting up libschroedinger-1.0-0:amd64 (1.0.11-2.1) ...
@@ -302,12 +341,17 @@ Setting up libutvideo15:amd64 (15.1.0-dmo2) ...
 Setting up libva1:amd64 (1.4.1-1) ...
 Setting up libvo-aacenc0:amd64 (0.1.3-1) ...
 Setting up libvo-amrwbenc0:amd64 (0.1.3-1) ...
+Setting up libvorbisenc2:amd64 (1.3.4-2) ...
+Setting up libvpx1:amd64 (1.3.0-3) ...
 Setting up libx264-146:amd64 (3:0.146.2538+git121396c-dmo2) ...
 Setting up libx265-51:amd64 (1.6-dmo1) ...
 Setting up libxvidcore4:amd64 (3:1.3.3-dmo1) ...
 Setting up libzvbi-common (0.2.35-3) ...
 Setting up libzvbi0:amd64 (0.2.35-3) ...
 Setting up libavcodec56:amd64 (10:2.6.9-dmo1) ...
+Setting up libflac8:amd64 (1.3.0-3) ...
+Setting up libsndfile1:amd64 (1.0.25-9.1+deb8u1) ...
+Setting up libpulse0:amd64 (7.1-2~bpo8+1) ...
 Setting up libv4lconvert0:amd64 (1.6.0-2) ...
 Setting up libv4l-0:amd64 (1.6.0-2) ...
 Setting up libva-x11-1:amd64 (1.4.1-1) ...
@@ -320,4 +364,4 @@ CLDS: * Insert Iceweasel in Internet menu.
 CLDS: * To update Adobe Flash Player: update-flashplugin-nonfree --install.
 CLDS: * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/.
 CLDS: * Supported browsers by flashplugin-nonfree: https://wiki.debian.org/FlashPlayer.
-CLDS: * Disk size = 2804588K. Space Used = 175756K.
+CLDS: * Disk size = 2107524K. Space Used = 182088K.
