@@ -4,47 +4,48 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   amd64-microcode
-0 upgraded, 1 newly installed, 0 to remove and 20 not upgraded.
-Need to get 29.6 kB of archives.
-After this operation, 48.1 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_jessie-non-free/ jessie/non-free amd64-microcode amd64 2.20160316.1~deb8u1 [29.6 kB]
-Fetched 29.6 kB in 0s (0 B/s)
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 31.1 kB of archives.
+After this operation, 69.6 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 amd64-microcode amd64 3.20160316.3 [31.1 kB]
+Fetched 31.1 kB in 0s (937 kB/s)
 Selecting previously unselected package amd64-microcode.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15491 files and directories currently installed.)
-Preparing to unpack .../amd64-microcode_2.20160316.1~deb8u1_amd64.deb ...
-Unpacking amd64-microcode (2.20160316.1~deb8u1) ...
-Setting up amd64-microcode (2.20160316.1~deb8u1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14816 files and directories currently installed.)
+Preparing to unpack .../amd64-microcode_3.20160316.3_amd64.deb ...
+Unpacking amd64-microcode (3.20160316.3) ...
+Setting up amd64-microcode (3.20160316.3) ...
 update-initramfs: deferring update (trigger activated)
 amd64-microcode: microcode will be updated at next boot
-Processing triggers for initramfs-tools (0.120+deb8u3) ...
-update-initramfs: Generating /boot/initrd.img-4.9.0-0.bpo.3-amd64
+Processing triggers for initramfs-tools (0.130) ...
+update-initramfs: Generating /boot/initrd.img-4.11.0-0.bpo.1-amd64
 live-boot: core filesystems devices utils udev wget blockdev dns.
+W: --force-yes is deprecated, use one of the options starting with --allow instead.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   intel-microcode iucode-tool
-0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
-Need to get 1,052 kB of archives.
-After this operation, 1,273 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib iucode-tool amd64 2.1.1-1~bpo8+1 [53.8 kB]
-Get:2 http://localhost/aptly-repo/master_jessie-non-free/ jessie/non-free intel-microcode amd64 3.20170707.1~deb8u1 [998 kB]
-Fetched 1,052 kB in 0s (8,096 kB/s)
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1,051 kB of archives.
+After this operation, 1,303 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-contrib stretch/contrib amd64 iucode-tool amd64 2.1.1-1 [53.3 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 intel-microcode amd64 3.20170707.1~deb9u1 [998 kB]
+Fetched 1,051 kB in 0s (22.1 MB/s)
 Selecting previously unselected package iucode-tool.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15508 files and directories currently installed.)
-Preparing to unpack .../iucode-tool_2.1.1-1~bpo8+1_amd64.deb ...
-Unpacking iucode-tool (2.1.1-1~bpo8+1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14831 files and directories currently installed.)
+Preparing to unpack .../iucode-tool_2.1.1-1_amd64.deb ...
+Unpacking iucode-tool (2.1.1-1) ...
 Selecting previously unselected package intel-microcode.
-Preparing to unpack .../intel-microcode_3.20170707.1~deb8u1_amd64.deb ...
-Unpacking intel-microcode (3.20170707.1~deb8u1) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up iucode-tool (2.1.1-1~bpo8+1) ...
-Setting up intel-microcode (3.20170707.1~deb8u1) ...
+Preparing to unpack .../intel-microcode_3.20170707.1~deb9u1_amd64.deb ...
+Unpacking intel-microcode (3.20170707.1~deb9u1) ...
+Setting up iucode-tool (2.1.1-1) ...
+Setting up intel-microcode (3.20170707.1~deb9u1) ...
 update-initramfs: deferring update (trigger activated)
 intel-microcode: microcode will be updated at next boot
-Processing triggers for initramfs-tools (0.120+deb8u3) ...
-update-initramfs: Generating /boot/initrd.img-4.9.0-0.bpo.3-amd64
+Processing triggers for initramfs-tools (0.130) ...
+update-initramfs: Generating /boot/initrd.img-4.11.0-0.bpo.1-amd64
 live-boot: core filesystems devices utils udev wget blockdev dns.
+W: --force-yes is deprecated, use one of the options starting with --allow instead.
 CLDS: * Install CPU firmware: amd64-microcode.
 CLDS: * Install CPU firmware: intel-microcode.
-CLDS: * Disk size = 1322688K. Space Used = 2600K.
+CLDS: * Disk size = 1299680K. Space Used = 2580K.

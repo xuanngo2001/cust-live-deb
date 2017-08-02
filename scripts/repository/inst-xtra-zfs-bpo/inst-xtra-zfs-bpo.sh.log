@@ -1,98 +1,48 @@
 CLDS:>>>>>>>>> Running inst-xtra-zfs-bpo.sh ...
-Hit http://localhost jessie InRelease
-Hit http://localhost squeeze InRelease
-Hit http://localhost jessie InRelease
-Hit http://localhost jessie InRelease
-Hit http://localhost stable InRelease
-Hit http://localhost jessie-backports InRelease
-Hit http://localhost jessie-backports InRelease
-Hit http://localhost jessie-backports InRelease
-Hit http://localhost jessie InRelease
-Hit http://localhost jessie InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie-updates InRelease
-Hit http://localhost jessie/main amd64 Packages
-Hit http://localhost squeeze/main amd64 Packages
-Ign http://localhost jessie/main Translation-en_US
-Ign http://localhost jessie/main Translation-en
-Ign http://localhost squeeze/main Translation-en_US
-Ign http://localhost squeeze/main Translation-en
-Hit http://localhost jessie/main amd64 Packages
-Ign http://localhost jessie/main Translation-en_US
-Ign http://localhost jessie/main Translation-en
-Hit http://localhost jessie/non-free amd64 Packages
-Ign http://localhost jessie/non-free Translation-en_US
-Ign http://localhost jessie/non-free Translation-en
-Ign http://dl.google.com stable InRelease
-Hit http://localhost stable/main amd64 Packages
-Hit http://localhost jessie-backports/contrib amd64 Packages
-Ign http://localhost stable/main Translation-en_US
-Ign http://localhost stable/main Translation-en
-Ign http://localhost jessie-backports/contrib Translation-en_US
-Get:1 http://dl.google.com stable Release.gpg [916 B]
-Ign http://localhost jessie-backports/contrib Translation-en
-Hit http://localhost jessie-backports/main amd64 Packages
-Ign http://localhost jessie-backports/main Translation-en_US
-Ign http://localhost jessie-backports/main Translation-en
-Hit http://localhost jessie-backports/non-free amd64 Packages
-Get:2 http://dl.google.com stable Release [1,189 B]
-Hit http://localhost jessie/contrib amd64 Packages
-Ign http://localhost jessie-backports/non-free Translation-en_US
-Ign http://localhost jessie-backports/non-free Translation-en
-Ign http://localhost jessie/contrib Translation-en_US
-Ign http://localhost jessie/contrib Translation-en
-Hit http://localhost jessie/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
-Ign http://localhost jessie/non-free Translation-en_US
-Ign http://localhost jessie/non-free Translation-en
-Ign http://localhost jessie-updates/contrib Translation-en_US
-Ign http://localhost jessie-updates/contrib Translation-en
-Hit http://localhost jessie-updates/main amd64 Packages
-Hit http://localhost jessie-updates/non-free amd64 Packages
-Hit http://localhost jessie-updates/contrib amd64 Packages
-Ign http://localhost jessie-updates/main Translation-en_US
-Ign http://localhost jessie-updates/main Translation-en
-Hit http://localhost jessie-updates/main amd64 Packages
-Hit http://localhost jessie-updates/non-free amd64 Packages
-Ign http://localhost jessie-updates/non-free Translation-en_US
-Ign http://localhost jessie-updates/non-free Translation-en
-Ign http://localhost jessie-updates/contrib Translation-en_US
-Ign http://localhost jessie-updates/contrib Translation-en
-Ign http://localhost jessie-updates/main Translation-en_US
-Ign http://localhost jessie-updates/main Translation-en
-Ign http://localhost jessie-updates/non-free Translation-en_US
-Ign http://localhost jessie-updates/non-free Translation-en
-Get:3 http://dl.google.com stable/main amd64 Packages [1,383 B]
-Ign http://dl.google.com stable/main Translation-en_US
-Ign http://dl.google.com stable/main Translation-en
-Fetched 3,488 B in 2s (1,559 B/s)
+Hit:1 http://localhost/aptly-repo/master_stretch-main stretch InRelease
+Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
+Hit:3 http://localhost/aptly-repo/master_deb-multimedia-main stretch InRelease
+Hit:4 http://localhost/aptly-repo/master_deb-multimedia-non-free stretch InRelease
+Hit:5 http://localhost/aptly-repo/master_google-main stable InRelease
+Hit:6 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports InRelease
+Hit:7 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports InRelease
+Hit:8 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports InRelease
+Hit:9 http://localhost/aptly-repo/master_stretch-contrib stretch InRelease
+Hit:10 http://localhost/aptly-repo/master_stretch-non-free stretch InRelease
+Hit:11 http://localhost/aptly-repo/master_stretch-security-contrib stretch-updates InRelease
+Hit:12 http://localhost/aptly-repo/master_stretch-security-main stretch-updates InRelease
+Hit:13 http://localhost/aptly-repo/master_stretch-security-non-free stretch-updates InRelease
+Hit:14 http://localhost/aptly-repo/master_stretch-updates-contrib stretch-updates InRelease
+Hit:15 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates InRelease
+Hit:16 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease
+Ign:17 http://dl.google.com/linux/chrome/deb stable InRelease
+Get:18 http://dl.google.com/linux/chrome/deb stable Release [1,189 B]
+Get:19 http://dl.google.com/linux/chrome/deb stable Release.gpg [916 B]
+Get:20 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,383 B]
+Fetched 3,488 B in 2s (1,631 B/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-lsb-release is already the newest version.
+lsb-release is already the newest version (9.20161125).
 lsb-release set to manually installed.
 The following NEW packages will be installed:
   file linux-headers-amd64
-0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
-Need to get 60.4 kB/66.5 kB of archives.
-After this operation, 109 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main file amd64 1:5.22+15-2+deb8u3 [60.4 kB]
-Fetched 60.4 kB in 0s (4,046 kB/s)
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 63.9 kB/69.9 kB of archives.
+After this operation, 111 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 file amd64 1:5.30-1 [63.9 kB]
+Fetched 63.9 kB in 0s (388 kB/s)
 Selecting previously unselected package file.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80917 files and directories currently installed.)
-Preparing to unpack .../file_1%3a5.22+15-2+deb8u3_amd64.deb ...
-Unpacking file (1:5.22+15-2+deb8u3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86762 files and directories currently installed.)
+Preparing to unpack .../file_1%3a5.30-1_amd64.deb ...
+Unpacking file (1:5.30-1) ...
 Selecting previously unselected package linux-headers-amd64.
-Preparing to unpack .../linux-headers-amd64_4.9+80~bpo8+1_amd64.deb ...
-Unpacking linux-headers-amd64 (4.9+80~bpo8+1) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up file (1:5.22+15-2+deb8u3) ...
-Setting up linux-headers-amd64 (4.9+80~bpo8+1) ...
+Preparing to unpack .../linux-headers-amd64_4.11+82~bpo9+1_amd64.deb ...
+Unpacking linux-headers-amd64 (4.11+82~bpo9+1) ...
+Setting up linux-headers-amd64 (4.11+82~bpo9+1) ...
+Setting up file (1:5.30-1) ...
+W: --force-yes is deprecated, use one of the options starting with --allow instead.
 info: Trying to set 'zfs-dkms/note-incompatible-licenses' [note] to ''
 info: Loading answer for 'zfs-dkms/note-incompatible-licenses'
 info: Trying to set 'zfs-dkms/stop-build-for-32bit-kernel' [boolean] to 'true'
@@ -100,157 +50,5 @@ info: Loading answer for 'zfs-dkms/stop-build-for-32bit-kernel'
 info: Trying to set 'zfs-dkms/stop-build-for-unknown-kernel' [boolean] to 'true'
 info: Loading answer for 'zfs-dkms/stop-build-for-unknown-kernel'
 Reading package lists...
-Building dependency tree...
-Reading state information...
-Recommended packages:
-  spl zfsutils-linux zfs-zed
-The following NEW packages will be installed:
-  spl-dkms zfs-dkms
-0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
-Need to get 1,454 kB of archives.
-After this operation, 10.6 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_jessie-backports-main/ jessie-backports/main spl-dkms all 0.6.5.9-1~bpo8+1 [374 kB]
-Get:2 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib zfs-dkms all 0.6.5.9-2~bpo8+1 [1,079 kB]
-Preconfiguring packages ...
-Fetched 1,454 kB in 0s (20.4 MB/s)
-Selecting previously unselected package spl-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80931 files and directories currently installed.)
-Preparing to unpack .../spl-dkms_0.6.5.9-1~bpo8+1_all.deb ...
-Unpacking spl-dkms (0.6.5.9-1~bpo8+1) ...
-Setting up spl-dkms (0.6.5.9-1~bpo8+1) ...
-Loading new spl-0.6.5.9 DKMS files...
-Building for 4.9.0-0.bpo.3-amd64
-Building initial module for 4.9.0-0.bpo.3-amd64
-Done.
-
-spl:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.9.0-0.bpo.3-amd64/updates/dkms/
-
-splat.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.9.0-0.bpo.3-amd64/updates/dkms/
-
-depmod...
-
-DKMS: install completed.
-Selecting previously unselected package zfs-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 81218 files and directories currently installed.)
-Preparing to unpack .../zfs-dkms_0.6.5.9-2~bpo8+1_all.deb ...
-Unpacking zfs-dkms (0.6.5.9-2~bpo8+1) ...
-Setting up zfs-dkms (0.6.5.9-2~bpo8+1) ...
-Loading new zfs-0.6.5.9 DKMS files...
-Building for 4.9.0-0.bpo.3-amd64
-Building initial module for 4.9.0-0.bpo.3-amd64
-Done.
-
-zavl:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.9.0-0.bpo.3-amd64/updates/dkms/
-
-zcommon.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.9.0-0.bpo.3-amd64/updates/dkms/
-
-znvpair.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.9.0-0.bpo.3-amd64/updates/dkms/
-
-zpios.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.9.0-0.bpo.3-amd64/updates/dkms/
-
-zunicode.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.9.0-0.bpo.3-amd64/updates/dkms/
-
-zfs.ko:
-Running module version sanity check.
- - Original module
-   - No original module exists within this kernel
- - Installation
-   - Installing to /lib/modules/4.9.0-0.bpo.3-amd64/updates/dkms/
-
-depmod...
-
-DKMS: install completed.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following extra packages will be installed:
-  libnvpair1linux libuutil1linux libzfs2linux libzpool2linux zfsutils-linux
-Suggested packages:
-  nfs-kernel-server samba-common-bin
-Recommended packages:
-  zfs-zed
-The following NEW packages will be installed:
-  libnvpair1linux libuutil1linux libzfs2linux libzpool2linux zfs-initramfs
-  zfsutils-linux
-0 upgraded, 6 newly installed, 0 to remove and 20 not upgraded.
-Need to get 988 kB of archives.
-After this operation, 5,201 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib libuutil1linux amd64 0.6.5.9-2~bpo8+1 [48.1 kB]
-Get:2 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib libnvpair1linux amd64 0.6.5.9-2~bpo8+1 [44.9 kB]
-Get:3 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib libzpool2linux amd64 0.6.5.9-2~bpo8+1 [404 kB]
-Get:4 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib libzfs2linux amd64 0.6.5.9-2~bpo8+1 [127 kB]
-Get:5 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib zfsutils-linux amd64 0.6.5.9-2~bpo8+1 [340 kB]
-Get:6 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib zfs-initramfs all 0.6.5.9-2~bpo8+1 [23.2 kB]
-Fetched 988 kB in 0s (20.1 MB/s)
-Selecting previously unselected package libuutil1linux.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 81619 files and directories currently installed.)
-Preparing to unpack .../libuutil1linux_0.6.5.9-2~bpo8+1_amd64.deb ...
-Unpacking libuutil1linux (0.6.5.9-2~bpo8+1) ...
-Selecting previously unselected package libnvpair1linux.
-Preparing to unpack .../libnvpair1linux_0.6.5.9-2~bpo8+1_amd64.deb ...
-Unpacking libnvpair1linux (0.6.5.9-2~bpo8+1) ...
-Selecting previously unselected package libzpool2linux.
-Preparing to unpack .../libzpool2linux_0.6.5.9-2~bpo8+1_amd64.deb ...
-Unpacking libzpool2linux (0.6.5.9-2~bpo8+1) ...
-Selecting previously unselected package libzfs2linux.
-Preparing to unpack .../libzfs2linux_0.6.5.9-2~bpo8+1_amd64.deb ...
-Unpacking libzfs2linux (0.6.5.9-2~bpo8+1) ...
-Selecting previously unselected package zfsutils-linux.
-Preparing to unpack .../zfsutils-linux_0.6.5.9-2~bpo8+1_amd64.deb ...
-Unpacking zfsutils-linux (0.6.5.9-2~bpo8+1) ...
-Selecting previously unselected package zfs-initramfs.
-Preparing to unpack .../zfs-initramfs_0.6.5.9-2~bpo8+1_all.deb ...
-Unpacking zfs-initramfs (0.6.5.9-2~bpo8+1) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Processing triggers for initramfs-tools (0.120+deb8u3) ...
-update-initramfs: Generating /boot/initrd.img-4.9.0-0.bpo.3-amd64
-live-boot: core filesystems devices utils udev wget blockdev dns.
-Setting up libuutil1linux (0.6.5.9-2~bpo8+1) ...
-Setting up libnvpair1linux (0.6.5.9-2~bpo8+1) ...
-Setting up libzpool2linux (0.6.5.9-2~bpo8+1) ...
-Setting up libzfs2linux (0.6.5.9-2~bpo8+1) ...
-Setting up zfsutils-linux (0.6.5.9-2~bpo8+1) ...
-Setting up zfs-initramfs (0.6.5.9-2~bpo8+1) ...
-Processing triggers for libc-bin (2.19-18+deb8u10) ...
-Processing triggers for initramfs-tools (0.120+deb8u3) ...
-update-initramfs: Generating /boot/initrd.img-4.9.0-0.bpo.3-amd64
-live-boot: core filesystems devices utils udev wget blockdev dns.
-CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
-CLDS: * Install zfs-dkms: version: 0.6.5.9-2~bpo8+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
-CLDS: * Install zfs-initramfs to be able to boot from ZFS.
-CLDS: * Disk size = 4636248K. Space Used = 28888K.
+E: The value 'jessie-backports' is invalid for APT::Default-Release as such a release is not available in the sources
+CLDS: * Disk size = 5154804K. Space Used = 228K.

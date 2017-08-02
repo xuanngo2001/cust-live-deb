@@ -1,25 +1,25 @@
 CLDS:>>>>>>>>> Running inst-min-con-03-systemd-hooks.sh ...
-‘./cld/’ -> ‘/usr/local/cld’
-‘./cld/systemd’ -> ‘/usr/local/cld/systemd’
-‘./cld/systemd/user’ -> ‘/usr/local/cld/systemd/user’
-‘./cld/systemd/user/cld-user-after-boot.sh’ -> ‘/usr/local/cld/systemd/user/cld-user-after-boot.sh’
-‘./cld/systemd/user/cld-user-before-shutdown-halt-reboot.sh’ -> ‘/usr/local/cld/systemd/user/cld-user-before-shutdown-halt-reboot.sh’
-‘./cld/systemd/cld-systemd-before-shutdown-halt-reboot.sh’ -> ‘/usr/local/cld/systemd/cld-systemd-before-shutdown-halt-reboot.sh’
-‘./cld/systemd/cld-systemd-start-stop.service’ -> ‘/usr/local/cld/systemd/cld-systemd-start-stop.service’
-‘./cld/systemd/systemd-test.sh’ -> ‘/usr/local/cld/systemd/systemd-test.sh’
-‘./cld/systemd/cld-systemd-after-boot.sh’ -> ‘/usr/local/cld/systemd/cld-systemd-after-boot.sh’
-‘./cld/systemd/systemd-test-on-shutdown.sh’ -> ‘/usr/local/cld/systemd/systemd-test-on-shutdown.sh’
-‘./cld/systemd/runlevel’ -> ‘/usr/local/cld/systemd/runlevel’
-‘./cld/systemd/runlevel/after-boot’ -> ‘/usr/local/cld/systemd/runlevel/after-boot’
-‘./cld/systemd/runlevel/after-boot/link-home-directory.sh’ -> ‘/usr/local/cld/systemd/runlevel/after-boot/link-home-directory.sh’
-‘./cld/systemd/runlevel/after-boot/mount-all.sh’ -> ‘/usr/local/cld/systemd/runlevel/after-boot/mount-all.sh’
-‘./cld/systemd/runlevel/before-shutdown’ -> ‘/usr/local/cld/systemd/runlevel/before-shutdown’
-‘./cld/bin’ -> ‘/usr/local/cld/bin’
-‘./cld/bin/cld-run-scripts.sh’ -> ‘/usr/local/cld/bin/cld-run-scripts.sh’
-‘./cld/bin/partition-automount.sh’ -> ‘/usr/local/cld/bin/partition-automount.sh’
-‘./cld/bin/partition-swap-enable.sh’ -> ‘/usr/local/cld/bin/partition-swap-enable.sh’
-‘./cld/log’ -> ‘/usr/local/cld/log’
-‘./cld/systemd/cld-systemd-start-stop.service’ -> ‘/etc/systemd/system/cld-systemd-start-stop.service’
-Created symlink from /etc/systemd/system/multi-user.target.wants/cld-systemd-start-stop.service to /etc/systemd/system/cld-systemd-start-stop.service.
+'./cld/' -> '/usr/local/cld'
+'./cld/systemd' -> '/usr/local/cld/systemd'
+'./cld/systemd/user' -> '/usr/local/cld/systemd/user'
+'./cld/systemd/user/cld-user-after-boot.sh' -> '/usr/local/cld/systemd/user/cld-user-after-boot.sh'
+'./cld/systemd/user/cld-user-before-shutdown-halt-reboot.sh' -> '/usr/local/cld/systemd/user/cld-user-before-shutdown-halt-reboot.sh'
+'./cld/systemd/cld-systemd-before-shutdown-halt-reboot.sh' -> '/usr/local/cld/systemd/cld-systemd-before-shutdown-halt-reboot.sh'
+'./cld/systemd/cld-systemd-start-stop.service' -> '/usr/local/cld/systemd/cld-systemd-start-stop.service'
+'./cld/systemd/systemd-test.sh' -> '/usr/local/cld/systemd/systemd-test.sh'
+'./cld/systemd/cld-systemd-after-boot.sh' -> '/usr/local/cld/systemd/cld-systemd-after-boot.sh'
+'./cld/systemd/systemd-test-on-shutdown.sh' -> '/usr/local/cld/systemd/systemd-test-on-shutdown.sh'
+'./cld/systemd/runlevel' -> '/usr/local/cld/systemd/runlevel'
+'./cld/systemd/runlevel/after-boot' -> '/usr/local/cld/systemd/runlevel/after-boot'
+'./cld/systemd/runlevel/after-boot/link-home-directory.sh' -> '/usr/local/cld/systemd/runlevel/after-boot/link-home-directory.sh'
+'./cld/systemd/runlevel/after-boot/mount-all.sh' -> '/usr/local/cld/systemd/runlevel/after-boot/mount-all.sh'
+'./cld/systemd/runlevel/before-shutdown' -> '/usr/local/cld/systemd/runlevel/before-shutdown'
+'./cld/bin' -> '/usr/local/cld/bin'
+'./cld/bin/cld-run-scripts.sh' -> '/usr/local/cld/bin/cld-run-scripts.sh'
+'./cld/bin/partition-automount.sh' -> '/usr/local/cld/bin/partition-automount.sh'
+'./cld/bin/partition-swap-enable.sh' -> '/usr/local/cld/bin/partition-swap-enable.sh'
+'./cld/log' -> '/usr/local/cld/log'
+'./cld/systemd/cld-systemd-start-stop.service' -> '/etc/systemd/system/cld-systemd-start-stop.service'
+Created symlink /etc/systemd/system/multi-user.target.wants/cld-systemd-start-stop.service → /etc/systemd/system/cld-systemd-start-stop.service.
 CLDS: * Add systemd hook scripts.
-CLDS: * Disk size = 1311156K. Space Used = 92K.
+CLDS: * Disk size = 1288304K. Space Used = 92K.
