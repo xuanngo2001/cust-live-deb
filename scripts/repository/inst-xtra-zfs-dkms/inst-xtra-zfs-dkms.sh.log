@@ -20,9 +20,9 @@ After this operation, 11.2 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 spl-dkms all 0.6.5.9-1 [385 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-contrib stretch/contrib amd64 zfs-dkms all 0.6.5.9-5 [1,080 kB]
 Preconfiguring packages ...
-Fetched 1,464 kB in 0s (22.7 MB/s)
+Fetched 1,464 kB in 0s (17.8 MB/s)
 Selecting previously unselected package spl-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 87029 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 87255 files and directories currently installed.)
 Preparing to unpack .../spl-dkms_0.6.5.9-1_all.deb ...
 Unpacking spl-dkms (0.6.5.9-1) ...
 Setting up spl-dkms (0.6.5.9-1) ...
@@ -34,7 +34,7 @@ configure: error: unknown
 Error! Bad return status for module build on kernel: 4.11.0-0.bpo.1-amd64 (x86_64)
 Consult /var/lib/dkms/spl/0.6.5.9/build/make.log for more information.
 Selecting previously unselected package zfs-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 87316 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 87542 files and directories currently installed.)
 Preparing to unpack .../zfs-dkms_0.6.5.9-5_all.deb ...
 Unpacking zfs-dkms (0.6.5.9-5) ...
 Setting up zfs-dkms (0.6.5.9-5) ...
@@ -55,4 +55,4 @@ modinfo: ERROR: Module alias zfs not found.
 CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
 CLDS: * Install zfs-dkms: ERROR: ZFS installation failed!, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Install zfs-initramfs to be able to boot from ZFS.
-CLDS: * Disk size = 5197528K. Space Used = 26004K.
+CLDS: * Disk size = 5212792K. Space Used = 25992K.
