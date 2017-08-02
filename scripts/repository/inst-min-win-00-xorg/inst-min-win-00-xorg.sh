@@ -6,7 +6,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install X-Windows=xorg, Window Manager=openbox
 debconf-set-selections -v keyboard.seed
-apt-get -y --force-yes install xinit xserver-xorg
+apt-get -y install xinit xserver-xorg
 
 # Auto startx
 cat bash_profile-auto-startx >> ${HOME}/.bash_profile
@@ -18,5 +18,5 @@ echo "${GV_LOG} * Install xinit so you can run startx."
 echo "${GV_LOG} * Add auto start window manager(i.e startx)."
 
 # Note:
-# "apt-get -y --force-yes install xorg" uses too much space(~200MB).
+# "apt-get -y install xorg" uses too much space(~200MB).
 # xinit & xauth are needed for startx to run.

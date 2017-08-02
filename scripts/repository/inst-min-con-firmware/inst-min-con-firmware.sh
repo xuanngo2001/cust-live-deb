@@ -12,31 +12,31 @@ debconf-set-selections -v firmware.seed
 
 # Install all firmwares.
 #   These packages are part of non-free repository.
-apt-get -y --force-yes install atmel-firmware
-apt-get -y --force-yes install bluez-firmware
-apt-get -y --force-yes install firmware-atheros
-apt-get -y --force-yes install firmware-bnx2
-apt-get -y --force-yes install firmware-bnx2x
-apt-get -y --force-yes install firmware-brcm80211
-apt-get -y --force-yes install firmware-intelwimax
-apt-get -y --force-yes install firmware-ipw2x00
-apt-get -y --force-yes install firmware-ivtv
-apt-get -y --force-yes install firmware-iwlwifi
-apt-get -y --force-yes install firmware-libertas
-apt-get -y --force-yes install firmware-linux
-apt-get -y --force-yes install firmware-linux-free
-apt-get -y --force-yes install firmware-misc-nonfree
-apt-get -y --force-yes install firmware-linux-nonfree
-apt-get -y --force-yes install firmware-qlogic
-apt-get -y --force-yes install firmware-realtek
-apt-get -y --force-yes install firmware-zd1211
+apt-get -y install atmel-firmware
+apt-get -y install bluez-firmware
+apt-get -y install firmware-atheros
+apt-get -y install firmware-bnx2
+apt-get -y install firmware-bnx2x
+apt-get -y install firmware-brcm80211
+apt-get -y install firmware-intelwimax
+apt-get -y install firmware-ipw2x00
+apt-get -y install firmware-ivtv
+apt-get -y install firmware-iwlwifi
+apt-get -y install firmware-libertas
+apt-get -y install firmware-linux
+apt-get -y install firmware-linux-free
+apt-get -y install firmware-misc-nonfree
+apt-get -y install firmware-linux-nonfree
+apt-get -y install firmware-qlogic
+apt-get -y install firmware-realtek
+apt-get -y install firmware-zd1211
 
 # Install firmware-ralink will remove the following packages:
 #   firmware-linux
 #   firmware-linux-nonfree
 #   firmware-misc-nonfree
 #   firmware-amd-graphics
-#apt-get -y --force-yes install firmware-ralink
+#apt-get -y install firmware-ralink
 
 # Log
 echo "${GV_LOG} * Install firmwares."

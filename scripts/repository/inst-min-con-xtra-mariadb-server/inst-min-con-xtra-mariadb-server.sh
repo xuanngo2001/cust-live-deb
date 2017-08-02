@@ -13,7 +13,7 @@ echo "mariadb-server-10.0 mysql-server/root_password password ${ROOT_PASSWORD}" 
 echo "mariadb-server-10.0 mysql-server/root_password_again password ${ROOT_PASSWORD}" | debconf-set-selections
   
 # Install mariadb-server.
-apt-get -y --force-yes install mariadb-server
+apt-get -y install mariadb-server
 
 # Shutdown mariadb-server
 mysqladmin -u root -p${ROOT_PASSWORD} shutdown

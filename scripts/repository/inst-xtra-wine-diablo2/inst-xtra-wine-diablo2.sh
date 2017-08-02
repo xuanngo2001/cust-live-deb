@@ -9,8 +9,8 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install libjpeg-turbo-progs & libldap-2.4-2 so that Blizzard Downloader will not fail.
-apt-get -y --force-yes install libjpeg-turbo-progs
-apt-get -y --force-yes install libldap-2.4-2
+apt-get -y install libjpeg-turbo-progs
+apt-get -y install libldap-2.4-2
 
 
 # Log

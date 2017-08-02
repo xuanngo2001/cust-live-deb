@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install pandoc to generate user manual.
-apt-get -y --force-yes install pandoc
+apt-get -y install pandoc
 
 # Log
 echo "${GV_LOG} * Install pandoc to generate user manual."

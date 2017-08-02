@@ -8,7 +8,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install speedcrunch
-apt-get -y --force-yes install speedcrunch
+apt-get -y install speedcrunch
 
 # Insert speedcrunch in Accessories menu.
 sed -i "/Accessories\">/ r jwmrc-menus-acc-speedcrunch.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"

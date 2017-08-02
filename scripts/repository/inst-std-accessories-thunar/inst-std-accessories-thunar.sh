@@ -8,10 +8,10 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-apt-get -y --force-yes install thunar
-apt-get -y --force-yes install thunar-media-tags-plugin
-apt-get -y --force-yes install thunar-archive-plugin
-apt-get -y --force-yes install thunar-volman
+apt-get -y install thunar
+apt-get -y install thunar-media-tags-plugin
+apt-get -y install thunar-archive-plugin
+apt-get -y install thunar-volman
 
 # Insert Thunar in Accessories menu.
 sed -i "/Accessories\">/ r jwmrc-menus-acc-thunar.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"

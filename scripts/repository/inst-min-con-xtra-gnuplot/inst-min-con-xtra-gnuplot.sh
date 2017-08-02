@@ -8,7 +8,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install gnuplot.
-apt-get -y --force-yes install gnuplot
+apt-get -y install gnuplot
 
 # Log
 echo "${GV_LOG} * Install gnuplot."

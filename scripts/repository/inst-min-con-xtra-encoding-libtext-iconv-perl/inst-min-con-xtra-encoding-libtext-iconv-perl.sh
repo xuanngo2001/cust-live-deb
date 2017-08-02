@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 ### Install libtext-iconv-perl so that you can use iconv to convert to other encoding.
-apt-get -y --force-yes install libtext-iconv-perl
+apt-get -y install libtext-iconv-perl
 
 
 # Log

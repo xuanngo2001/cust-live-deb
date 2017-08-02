@@ -8,13 +8,13 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly download dependent packages.
-apt-get -d -y --force-yes install linux-headers-amd64
+apt-get -d -y install linux-headers-amd64
 
 # Install required packages to compile VirtualBox guest additions.
 KERNEL_HEADER=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
-#apt-get -y --force-yes install dkms libc6-dev  build-essential module-assistant
-apt-get -y --force-yes install dkms libc6-dev  build-essential
-apt-get -y --force-yes install linux-headers-${KERNEL_HEADER}
+#apt-get -y install dkms libc6-dev  build-essential module-assistant
+apt-get -y install dkms libc6-dev  build-essential
+apt-get -y install linux-headers-${KERNEL_HEADER}
 #m-a -i prepare
 
 
@@ -50,5 +50,5 @@ echo "${GV_LOG} * Delete ${VBOXGUEST_ADD_ISO}[${VBOXGUEST_ADD_ISO_SIZE}K]. Space
 # Reference:
 # https://forums.virtualbox.org/viewtopic.php?t=15679
 # Tried packages from big to small:
-# apt-get -y --force-yes install dkms build-essential linux-headers-$(uname -r)
-# apt-get -y --force-yes install dkms libc6-dev linux-headers-$(uname -r)
+# apt-get -y install dkms build-essential linux-headers-$(uname -r)
+# apt-get -y install dkms libc6-dev linux-headers-$(uname -r)

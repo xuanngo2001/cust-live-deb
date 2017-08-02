@@ -7,7 +7,7 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-apt-get -y --force-yes install scite
+apt-get -y install scite
 
 # Modify Scite configurations
 SCITE_CONFIG_FILE=/etc/scite/SciTEGlobal.properties
@@ -26,7 +26,7 @@ fi
 
 # To shut up warning message: "(scite:1224): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files"
 # Install this package.
-apt-get -y --force-yes install at-spi2-core
+apt-get -y install at-spi2-core
 
 # Insert scite in Accessories menu.
 sed -i "/Accessories\">/ r jwmrc-menus-acc-scite.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"

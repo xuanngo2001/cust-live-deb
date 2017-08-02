@@ -8,7 +8,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Ensure that dependent packages are downloaded.
-  apt-get install -d -y --force-yes pandoc
+  apt-get install -d -y pandoc
 
 # Install the latest version from Git
   PANDOC_DEB=$(find . -name 'pandoc*.deb' | sort -r | head -n1 )

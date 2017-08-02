@@ -9,7 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install conky.
-apt-get -y --force-yes install conky
+apt-get -y install conky
 
 # Add conky config files and run script after JWM.
 yes | cp -av ./cld/ /usr/local

@@ -9,7 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install wifite
 debconf-set-selections -v wifite-wireshark.seed
-apt-get -y --force-yes install wifite
+apt-get -y install wifite
 
 # Update wifite to revision 87.
 yes | cp wifite87.py /usr/bin/wifite

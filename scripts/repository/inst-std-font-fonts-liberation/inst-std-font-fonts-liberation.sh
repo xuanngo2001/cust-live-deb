@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install fonts-liberation.
-apt-get -y --force-yes install fonts-liberation
+apt-get -y install fonts-liberation
 
 
 # Log

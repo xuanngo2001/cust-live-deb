@@ -13,7 +13,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   apt-get update
 
 # Install JWM.
-  apt-get -t jessie-backports -y --force-yes install jwm
+  apt-get -t jessie-backports -y install jwm
 
 # Set JWM.
   yes | cp -av ./cld/ /usr/local/

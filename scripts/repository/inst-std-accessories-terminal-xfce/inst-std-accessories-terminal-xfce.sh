@@ -7,7 +7,7 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-apt-get -y --force-yes install xfce4-terminal
+apt-get -y install xfce4-terminal
 
 # Log
 echo "${GV_LOG} * Install terminal: xfce4-terminal."

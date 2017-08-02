@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install udevil to get devmon. Need version 0.4.4 or later to support exfat.
 GF_ADD_SOURCE_LIST live "deb http://http.debian.net/debian jessie-backports main contrib non-free"
 apt-get update
-apt-get -t jessie-backports -y --force-yes install udevil
+apt-get -t jessie-backports -y install udevil
 
 # Run devmon at startup.
 yes | cp -av ./cld/  /usr/local

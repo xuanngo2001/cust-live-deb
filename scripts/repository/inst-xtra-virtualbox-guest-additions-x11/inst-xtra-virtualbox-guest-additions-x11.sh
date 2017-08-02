@@ -10,16 +10,16 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Explicitly download dependent packages.
-apt-get -d -y --force-yes install linux-headers-amd64 libnotify-bin
+apt-get -d -y install linux-headers-amd64 libnotify-bin
 
 
 # Install required packages to compile VirtualBox guest additions.
 KERNEL_HEADER=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
-apt-get -y --force-yes install dkms libc6-dev
-apt-get -y --force-yes install linux-headers-${KERNEL_HEADER}
+apt-get -y install dkms libc6-dev
+apt-get -y install linux-headers-${KERNEL_HEADER}
 
 # Install virtualbox-guest-utils.
-apt-get -y --force-yes install virtualbox-guest-x11
+apt-get -y install virtualbox-guest-x11
 
 
 # Log
@@ -32,16 +32,16 @@ echo "${GV_LOG} * VirtualBox guest additions installed: ${VBOXGUEST_ADD_VERSION}
 
 # 1) Working dependencies.
 ###PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_HEADER} build-essential module-assistant"
-###apt-get -y --force-yes install ${PKGS_LIST}
+###apt-get -y install ${PKGS_LIST}
 ###m-a -i prepare
-###apt-get -y --force-yes install virtualbox-guest-dkms virtualbox-guest-source virtualbox-guest-utils
+###apt-get -y install virtualbox-guest-dkms virtualbox-guest-source virtualbox-guest-utils
 
 # 2) Working dependencies.
 ###PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_HEADER}"
-###apt-get -y --force-yes install ${PKGS_LIST}
-###apt-get -y --force-yes install virtualbox-guest-dkms virtualbox-guest-source virtualbox-guest-utils
+###apt-get -y install ${PKGS_LIST}
+###apt-get -y install virtualbox-guest-dkms virtualbox-guest-source virtualbox-guest-utils
 
 # 3) Working dependencies.
 ###PKGS_LIST="dkms libc6-dev linux-headers-${KERNEL_HEADER}"
-###apt-get -y --force-yes install ${PKGS_LIST}
-###apt-get -y --force-yes install virtualbox-guest-dkms virtualbox-guest-utils
+###apt-get -y install ${PKGS_LIST}
+###apt-get -y install virtualbox-guest-dkms virtualbox-guest-utils

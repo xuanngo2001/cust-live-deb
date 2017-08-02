@@ -7,23 +7,24 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly download dependent packages
-apt-get install -d -y --force-yes libavc1394-0
-apt-get install -d -y --force-yes libavcodec56 
-apt-get install -d -y --force-yes libavdevice56
-apt-get install -d -y --force-yes libavfilter5 
-apt-get install -d -y --force-yes libavformat56
-apt-get install -d -y --force-yes libcrystalhd3
-apt-get install -d -y --force-yes libiec61883-0
-apt-get install -d -y --force-yes libopencore-amrnb0
-apt-get install -d -y --force-yes libopencore-amrwb0
-apt-get install -d -y --force-yes libsmbclient 
-apt-get install -d -y --force-yes libvo-aacenc0
-apt-get install -d -y --force-yes libvo-amrwbenc0
-apt-get install -d -y --force-yes libzvbi0
+apt-get install -d -y libavc1394-0
+#apt-get install -d -y libavcodec56 
+#apt-get install -d -y libavdevice56
+#apt-get install -d -y libavfilter5 
+#apt-get install -d -y libavformat56
+apt-get install -d -y libcrystalhd3
+apt-get install -d -y libiec61883-0
+apt-get install -d -y libopencore-amrnb0
+apt-get install -d -y libopencore-amrwb0
+apt-get install -d -y libsmbclient 
+apt-get install -d -y libvo-aacenc0
+apt-get install -d -y libvo-amrwbenc0
+apt-get install -d -y libzvbi0
 
+apt-get install -d -y libuchardet0
 
 # Install MPV.
-apt-get -y --force-yes install mpv
+apt-get -y install mpv
 
 # Add multiple aliases for MPV
 yes | cp -av ./cld  /usr/local

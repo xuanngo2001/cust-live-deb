@@ -13,7 +13,7 @@ DEB_MULTIMEDIA_KEYRING_SIZE=$(GF_SIZE_OF ${DEB_MULTIMEDIA_KEYRING})
 dpkg -i ${DEB_MULTIMEDIA_KEYRING}
 rm -f ${DEB_MULTIMEDIA_KEYRING}
 
-#apt-get -y --force-yes install deb-multimedia-keyring
+#apt-get -y install deb-multimedia-keyring
 
 # Add deb-multimedia sources list
 GF_ADD_SOURCE_LIST live "deb http://www.deb-multimedia.org jessie main non-free"

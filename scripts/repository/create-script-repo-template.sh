@@ -8,10 +8,10 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Examples:
-#   apt-get install -d -y --force-yes <your-package>  # Explicitly download dependent packages 
+#   apt-get install -d -y <your-package>  # Explicitly download dependent packages 
 
 # Install PKG_NAME.
-apt-get -y --force-yes install PKG_NAME
+apt-get -y install PKG_NAME
 
 
 # Log

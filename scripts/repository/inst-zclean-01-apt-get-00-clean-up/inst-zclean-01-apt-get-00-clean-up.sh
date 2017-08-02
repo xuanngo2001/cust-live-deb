@@ -10,10 +10,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Clean APT.
-apt-get -y --force-yes autoremove
+apt-get -y autoremove
 apt-get clean
 
 # Log
-echo "${GV_LOG} * Remove unused packages: apt-get -y --force-yes autoremove."
+echo "${GV_LOG} * Remove unused packages: apt-get -y autoremove."
 echo "${GV_LOG} * Clean cached DEB: apt-get clean."
 

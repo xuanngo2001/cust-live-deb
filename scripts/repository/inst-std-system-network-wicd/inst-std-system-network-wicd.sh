@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install network manager: WICD.
 #  Note: network-manager needs to be removed before install wicd.
 debconf-set-selections -v wicd-daemon.seed
-apt-get -y --force-yes install wicd
+apt-get -y install wicd
 
 # Insert Wicd menu in Network
 sed -i "/Network\">/ r jwmrc-menus-network-wicd.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"

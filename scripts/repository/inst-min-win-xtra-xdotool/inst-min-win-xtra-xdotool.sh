@@ -9,7 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install xdotool.
-apt-get -y --force-yes install xdotool
+apt-get -y install xdotool
 
 
 # Log

@@ -8,7 +8,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install dia to draw diagrams.
-apt-get -y --force-yes install dia dia-shapes
+apt-get -y install dia dia-shapes
 
 # Insert Dia menu in Graphics
 sed -i "/Graphics\">/ r jwmrc-menus-graphics-dia.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"

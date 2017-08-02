@@ -9,7 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install graphviz.
-apt-get -y --force-yes install graphviz
+apt-get -y install graphviz
 
 
 # Log

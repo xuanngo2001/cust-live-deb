@@ -19,7 +19,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 debconf-set-selections -v macchanger.seed
 
 # Install macchanger.
-apt-get -y --force-yes install macchanger
+apt-get -y install macchanger
 
 
 # Change directly the configuration of macchanger so that it changes MAC address whenever network device is up or down.

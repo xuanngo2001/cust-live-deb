@@ -10,10 +10,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # This is required. Otherwise, when opening lxrandr, it will say "Unable to get monitor information".
 #   Pobably, xrandr is needed.
-apt-get -y --force-yes install x11-xserver-utils
+apt-get -y install x11-xserver-utils
 
 # Install lxrandr.
-apt-get -y --force-yes install lxrandr
+apt-get -y install lxrandr
 
 # Insert lxrandr menu in Administration
 sed -i "/Administration\">/ r jwmrc-menus-adm-lxrandr.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"

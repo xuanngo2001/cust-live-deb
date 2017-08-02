@@ -8,7 +8,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install gpicview
-apt-get -y --force-yes install gpicview
+apt-get -y install gpicview
 
 # Insert gpicview in Accessories menu.
 sed -i "/Accessories\">/ r jwmrc-menus-acc-gpicview.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"

@@ -9,8 +9,8 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install exfat-fuse so that you can read and write SD cards and USB keys.
-apt-get -y --force-yes install exfat-fuse
-apt-get -y --force-yes install exfat-utils
+apt-get -y install exfat-fuse
+apt-get -y install exfat-utils
 
 # Log
 echo "${GV_LOG} * Install exfat-fuse so that you can read and write SD cards and USB keys."

@@ -14,18 +14,18 @@ GF_ADD_SOURCE_LIST live "deb http://http.debian.net/debian jessie-backports main
 dpkg --add-architecture i386
 apt-get update
 
-#apt-get install -d -y --force-yes libopencl1  # Explicitly download dependent packages 
+#apt-get install -d -y libopencl1  # Explicitly download dependent packages 
 
 # Install wine64.
 
 # Have to explicitly install these: Don't install virtual package libopencl1
-apt-get -y --force-yes install nvidia-libopencl1
-apt-get -y --force-yes install amd-libopencl1
-apt-get -y --force-yes install ocl-icd-libopencl1
+apt-get -y install nvidia-libopencl1
+apt-get -y install amd-libopencl1
+apt-get -y install ocl-icd-libopencl1
 
-#apt-get -y --force-yes install wine wine-development fonts-wine
-apt-get -t jessie-backports -y --force-yes install libwine
-apt-get -t jessie-backports -y --force-yes install wine32 wine64 fonts-wine
+#apt-get -y install wine wine-development fonts-wine
+apt-get -t jessie-backports -y install libwine
+apt-get -t jessie-backports -y install wine32 wine64 fonts-wine
 
 
 # Log

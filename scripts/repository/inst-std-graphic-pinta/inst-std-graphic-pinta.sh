@@ -7,7 +7,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install Image Editor: Pinta.
-apt-get -y --force-yes install pinta
+apt-get -y install pinta
 
 # Insert Pinta menu in Graphics
 sed -i "/Graphics\">/ r jwmrc-menus-graphics-pinta.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"

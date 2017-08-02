@@ -9,7 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install gsimplecal.
-  apt-get -y --force-yes install gsimplecal
+  apt-get -y install gsimplecal
 
 # Insert gsimplecal in JWM system tray.
   sed -i "/<\/Clock>/ r jwmrc-tray-clock.xml" "${CLD_JWMRC_DIR}/jwmrc-tray.xml"

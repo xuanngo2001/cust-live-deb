@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 #### Install locale
 # -http://stackoverflow.com/a/20693661
-apt-get -y --force-yes install locales
+apt-get -y install locales
 
 LOCALE_GEN=/etc/locale.gen
 cp -n ${LOCALE_GEN} ${LOCALE_GEN}.bck

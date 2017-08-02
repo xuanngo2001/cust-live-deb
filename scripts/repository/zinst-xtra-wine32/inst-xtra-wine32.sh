@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install wine32.
 dpkg --add-architecture i386
 apt-get update
-apt-get -y --force-yes install wine32
+apt-get -y install wine32
 
 
 # Log

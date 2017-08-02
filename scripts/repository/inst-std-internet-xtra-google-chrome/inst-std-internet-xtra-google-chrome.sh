@@ -9,23 +9,23 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install dependencies
-apt-get -y --force-yes install libappindicator1
-apt-get -y --force-yes install libdbusmenu-glib4
-apt-get -y --force-yes install libdbusmenu-gtk4
-apt-get -y --force-yes install libindicator7
-apt-get -y --force-yes install xdg-utils
+apt-get -y install libappindicator1
+apt-get -y install libdbusmenu-glib4
+apt-get -y install libdbusmenu-gtk4
+apt-get -y install libindicator7
+apt-get -y install xdg-utils
 
-apt-get -y --force-yes install gconf-service
-apt-get -y --force-yes install libgconf-2-4
-apt-get -y --force-yes install libxss1
+apt-get -y install gconf-service
+apt-get -y install libgconf-2-4
+apt-get -y install libxss1
 
-#apt-get -y --force-yes install libpango1.0-0
+#apt-get -y install libpango1.0-0
 
 # Add google-chrome sources list
 #GF_ADD_SOURCE_LIST live "deb http://dl.google.com/linux/chrome/deb/ stable main"
 
 # Install google-chrome.
-apt-get -y --force-yes install google-chrome-stable
+apt-get -y install google-chrome-stable
 
 # Get google-chrome version.
 GOOGLE_CHROME_VERSION=$(google-chrome --version)

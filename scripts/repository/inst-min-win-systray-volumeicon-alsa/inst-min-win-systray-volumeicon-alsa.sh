@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install volume icon.
-apt-get -y --force-yes install volumeicon-alsa
+apt-get -y install volumeicon-alsa
 
 
 # Set volumeicon to run on JWN startup and set left-click to display volume slider

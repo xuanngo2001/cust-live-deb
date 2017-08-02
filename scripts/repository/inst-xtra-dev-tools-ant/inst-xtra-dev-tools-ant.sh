@@ -9,7 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install ant.
-apt-get -y --force-yes install ant
+apt-get -y install ant
 
 
 # Log

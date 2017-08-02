@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install jmtpfs.
-apt-get -y --force-yes install jmtpfs
+apt-get -y install jmtpfs
 
 
 # Log

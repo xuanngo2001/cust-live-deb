@@ -10,8 +10,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install required applications for cld-win-split.sh
-apt-get -y --force-yes install wmctrl
-apt-get -y --force-yes install x11-utils
+apt-get -y install wmctrl
+apt-get -y install x11-utils
 
 chmod +x ./xwinsplitter/*.sh
 chmod +x *.sh

@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install curl.
-apt-get -y --force-yes install curl
+apt-get -y install curl
 
 
 # Log

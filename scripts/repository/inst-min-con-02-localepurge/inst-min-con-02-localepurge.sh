@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 debconf-set-selections -v localepurge.seed
 
 # Install localepurge to keep documentation small.
-apt-get -y --force-yes install localepurge
+apt-get -y install localepurge
 
 # Log
 echo "${GV_LOG} * Install localepurge to purge documentation of all languages, except en, en_US, en_US.UTF-8."

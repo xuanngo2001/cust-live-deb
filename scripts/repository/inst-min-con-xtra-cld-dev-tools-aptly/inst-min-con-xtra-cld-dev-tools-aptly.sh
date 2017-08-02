@@ -16,7 +16,7 @@ apt-key add pubkey.txt
 apt-get update
 
 # Install aptly
-apt-get -y --force-yes install xz-utils aptly
+apt-get -y install xz-utils aptly
 
 # Log
 echo "${GV_LOG} * Add aptly nightly build repository."

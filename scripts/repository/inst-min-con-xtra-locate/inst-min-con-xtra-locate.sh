@@ -8,7 +8,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install locate
-apt-get -y --force-yes install locate
+apt-get -y install locate
 
 # Add locate alias.
 yes | cp -av ./cld/  /usr/local

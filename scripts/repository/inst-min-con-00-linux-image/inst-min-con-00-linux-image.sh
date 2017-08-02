@@ -16,14 +16,14 @@ echo "============= END: Base system packages ============="
 
 # Always use the latest version of the repository.
 apt-get update
-#apt-get -y --force-yes dist-upgrade # Will cause boot issues.
+#apt-get -y dist-upgrade # Will cause boot issues.
 
 # Install basic packages.
-apt-get -y --force-yes install dialog dbus
+apt-get -y install dialog dbus
 dbus-uuidgen > /var/lib/dbus/machine-id
 
 # Install linux image.
-apt-get -y --force-yes install linux-image-amd64 live-boot 
+apt-get -y install linux-image-amd64 live-boot 
 
 
 # Get _installed_ kernel version.

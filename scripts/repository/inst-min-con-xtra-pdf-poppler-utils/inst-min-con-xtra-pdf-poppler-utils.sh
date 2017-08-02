@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install poppler-utils.
-apt-get -y --force-yes install poppler-utils
+apt-get -y install poppler-utils
 
 
 # Log

@@ -9,7 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install gnome-disk-utility to partition and mount disks.
-apt-get -y --force-yes install gnome-disk-utility
+apt-get -y install gnome-disk-utility
 
 # Insert gnome-disk-utility menu in Administration.
 sed -i "/Administration\">/ r jwmrc-menus-adm-gnome-disk-utility.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"

@@ -7,12 +7,12 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Install php5-gd to run Drupal. 
-apt-get -y --force-yes install php5-gd
+# Install php-gd to run Drupal. 
+apt-get -y install php-gd
 
 
 # Log
-echo "${GV_LOG} * Install php5-gd to run Drupal."
+echo "${GV_LOG} * Install php-gd to run Drupal."
 
 
 

@@ -9,7 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install fonts-dejavu-core.
-apt-get -y --force-yes install fonts-dejavu-core
+apt-get -y install fonts-dejavu-core
 
 
 # Log

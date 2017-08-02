@@ -12,15 +12,15 @@ GF_ADD_SOURCE_LIST live "deb http://http.debian.net/debian jessie-backports main
 apt-get update
 
 # Install required packages.
-apt-get install -y --force-yes file lsb-release linux-headers-amd64 
+apt-get install -y file lsb-release linux-headers-amd64 
 
 
 # Install ZFS
 debconf-set-selections -v zfs-dkms.seed
-apt-get -t jessie-backports -y --force-yes install spl-dkms zfs-dkms
+apt-get -t jessie-backports -y install spl-dkms zfs-dkms
 
 # If you want to boot from ZFS, you'll need zfs-initramfs package too:
-apt-get -t jessie-backports -y --force-yes install zfs-initramfs
+apt-get -t jessie-backports -y install zfs-initramfs
 
 
 # Log
@@ -42,12 +42,12 @@ echo "${GV_LOG} * Install zfs-initramfs to be able to boot from ZFS."
 
 # Reference:
 # Tried packages from big to small:
-#	apt-get -y --force-yes install lsb-release build-essential
-#	apt-get -y --force-yes install lsb-release libc6-dev
+#	apt-get -y install lsb-release build-essential
+#	apt-get -y install lsb-release libc6-dev
 
 # Failed:
-# apt-get -y --force-yes install lsb-release linux-headers-$(uname -r)
-# apt-get -y --force-yes install lsb-release linux-libc-dev
+# apt-get -y install lsb-release linux-headers-$(uname -r)
+# apt-get -y install lsb-release linux-libc-dev
 
 # Test: apt-get -y remove debian-zfs zfs-dkms zfsonlinux zfsutils
 

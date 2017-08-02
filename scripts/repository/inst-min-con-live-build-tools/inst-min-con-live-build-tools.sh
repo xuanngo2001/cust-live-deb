@@ -10,16 +10,16 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # To get isohdpfx.bin and isolinux.bin in order to create isohybrid.
 # Note: boot.cat is automatically created
-apt-get -y --force-yes install isolinux
+apt-get -y install isolinux
 
 # To create isohybrid.
-apt-get -y --force-yes install xorriso
+apt-get -y install xorriso
 
 # To copy directories.
-apt-get -y --force-yes install rsync
+apt-get -y install rsync
 
 # To create new squashfs.
-apt-get -y --force-yes install squashfs-tools
+apt-get -y install squashfs-tools
 
 # Log
 echo "${GV_LOG} * Install xorriso to create isohybrid."
