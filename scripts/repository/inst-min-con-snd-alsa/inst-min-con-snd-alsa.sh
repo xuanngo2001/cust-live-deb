@@ -6,7 +6,7 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-apt-get -y --force-yes install alsa-base alsa-utils
+apt-get -y --force-yes install alsa-utils
 
 # Log
 echo "${GV_LOG} * Install ALSA sound."
