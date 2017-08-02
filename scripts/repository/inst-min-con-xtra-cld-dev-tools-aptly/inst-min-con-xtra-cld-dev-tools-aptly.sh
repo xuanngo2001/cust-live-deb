@@ -8,7 +8,8 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Add nightly build repository.
-GF_ADD_SOURCE_LIST live "deb http://repo.aptly.info/ nightly main"
+#GF_ADD_SOURCE_LIST live "deb http://repo.aptly.info/ nightly main"
+GF_ADD_SOURCE_LIST live "deb http://repo.aptly.info/ squeeze main"
 
 # Add repository key.
 apt-key add pubkey.txt
