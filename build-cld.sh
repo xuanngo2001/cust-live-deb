@@ -14,7 +14,7 @@ set -e
   T="$(date +%s)"
 
 # Run command.
-  ./cld.sh ${system_type} http://localhost/aptly-repo/master_jessie-main
+  ./cld.sh ${system_type} http://localhost/aptly-repo/master_stretch-main
 
 # Log total elapsed time if success.
   if [ $? -eq 0 ]; then

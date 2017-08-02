@@ -29,7 +29,7 @@ DEB_REPO_URL=$2
 	CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 
 # Boot strap the minimum live system.
-  debootstrap --no-check-gpg --arch=amd64 jessie ${CHROOT_DIR} ${DEB_REPO_URL}
+  debootstrap --no-check-gpg --arch=amd64 stretch ${CHROOT_DIR} ${DEB_REPO_URL}
 
 # copy original source.list to source.list.live
   cp -a ${CHROOT_DIR}/etc/apt/sources.list ${CHROOT_DIR}/etc/apt/sources.list.live
