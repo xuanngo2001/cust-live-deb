@@ -1,28 +1,13 @@
 * >>>>>>>>> Running inst-min-win-01-wm-jwm.sh ...
-  * After this operation, 167 MB of additional disk space will be used.
+  * After this operation, 12.6 MB of additional disk space will be used.
   * Install Window Manager jwm: JWM v2.3.6 by Joe Wingbermuehle.
   * Set .
-  * Disk size = 1809372K. Space Used = 168696K.
+  * Disk size = 2495744K. Space Used = 11604K.
   * The following NEW packages will be installed:
   ```bash
-  adwaita-icon-theme dbus-user-session dconf-gsettings-backend dconf-service
-  exo-utils fontconfig fontconfig-config glib-networking
-  glib-networking-common glib-networking-services gsettings-desktop-schemas
-  gtk-update-icon-cache hicolor-icon-theme jwm libatk-bridge2.0-0 libatk1.0-0
-  libatk1.0-data libatspi2.0-0 libavahi-client3 libavahi-common-data
-  libavahi-common3 libcairo-gobject2 libcairo2 libcolord2 libcroco3 libcups2
-  libdatrie1 libdbus-glib-1-2 libdconf1 libexo-1-0 libexo-common
-  libexo-helpers libfontconfig1 libfribidi0 libgdk-pixbuf2.0-0
-  libgdk-pixbuf2.0-common libgraphite2-3 libgssapi-krb5-2 libgtk-3-0
-  libgtk-3-common libgtk2.0-0 libgtk2.0-common libharfbuzz0b libicu57 libjbig0
-  libjpeg62-turbo libjson-glib-1.0-0 libjson-glib-1.0-common libk5crypto3
-  libkeyutils1 libkrb5-3 libkrb5support0 liblcms2-2 libpam-systemd
-  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpcre2-8-0
-  libproxy1v5 librest-0.7-0 librsvg2-2 librsvg2-common libsoup-gnome2.4-1
-  libsoup2.4-1 libstartup-notification0 libthai-data libthai0 libtiff5
-  libvte-2.91-0 libvte-2.91-common libwayland-cursor0 libwayland-egl1-mesa
-  libxcb-render0 libxcb-shm0 libxcb-util0 libxcomposite1 libxcursor1
-  libxfce4ui-1-0 libxfce4ui-2-0 libxfce4ui-common libxfce4util-common
-  libxfce4util7 libxfconf-0-2 libxft2 libxinerama1 libxkbcommon0 libxml2
-  libxrandr2 libxrender1 shared-mime-info xfce4-terminal xfconf
+  dbus-user-session exo-utils jwm libdbus-glib-1-2 libexo-1-0 libexo-common
+  libexo-helpers libfribidi0 libpam-systemd libpcre2-8-0
+  libstartup-notification0 libvte-2.91-0 libvte-2.91-common libxfce4ui-1-0
+  libxfce4ui-2-0 libxfce4ui-common libxfce4util-common libxfce4util7
+  libxfconf-0-2 xfce4-terminal xfconf
   ```

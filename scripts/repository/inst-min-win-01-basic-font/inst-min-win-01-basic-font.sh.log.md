@@ -1,8 +1,3 @@
 * >>>>>>>>> Running inst-min-win-01-basic-font.sh ...
-  * After this operation, 3,025 kB of additional disk space will be used.
   * Install fonts-dejavu-core to fix characters overlap with xfce4-terminal(e.g. mkdir).
-  * Disk size = 1640676K. Space Used = 4080K.
-  * The following NEW packages will be installed:
-  ```bash
-  fonts-dejavu-core
-  ```
+  * Disk size = 2484140K. Space Used = 0K.

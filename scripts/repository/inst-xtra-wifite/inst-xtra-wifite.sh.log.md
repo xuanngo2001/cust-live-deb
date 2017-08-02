@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-wifite.sh ...
-  * Disk size = 5154576K. Space Used = 4K.
+  * Disk size = 5171296K. Space Used = 4K.
