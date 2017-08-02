@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-internet-firefox-esr.sh ...
-  * Disk size = 2809400K. Space Used = 4K.
+  * Disk size = 2834560K. Space Used = 4K.
