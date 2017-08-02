@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-min-win-xtra-xdotool.sh ...
-  * After this operation, 479 kB of additional disk space will be used.
+  * After this operation, 204 kB of additional disk space will be used.
   * Install xdotool to manipulate windows: move, resize, click, mouse.
-  * Disk size = 2466676K. Space Used = 732K.
+  * Disk size = 2678316K. Space Used = 336K.
   * The following NEW packages will be installed:
   ```bash
-  libxdo3 libxkbcommon0 xdotool
+  libxdo3 xdotool
   ```

@@ -1,26 +1,23 @@
 * >>>>>>>>> Running inst-xtra-games-openra.sh ...
-  * After this operation, 1,110 kB of additional disk space will be used.
-  * After this operation, 2,266 kB of additional disk space will be used.
-  * After this operation, 125 kB of additional disk space will be used.
-  * After this operation, 527 kB of additional disk space will be used.
-  * After this operation, 274 kB of additional disk space will be used.
-  * After this operation, 2,430 kB of additional disk space will be used.
-  * After this operation, 79.8 MB of additional disk space will be used.
+  * After this operation, 2,784 kB of additional disk space will be used.
+  * After this operation, 1,350 kB of additional disk space will be used.
+  * After this operation, 203 kB of additional disk space will be used.
+  * After this operation, 1,520 kB of additional disk space will be used.
+  * After this operation, 70.0 MB of additional disk space will be used.
   * Install openra.
-  * Disk size = 4129224K. Space Used = 122368K.
+  * Disk size = 4795664K. Space Used = 125940K.
   * The following NEW packages will be installed:
   ```bash
-  libsdl2-2.0-0
   libmono-data-tds4.0-cil libmono-system-data4.0-cil
-  libmono-system-enterpriseservices4.0-cil libmono-system-transactions4.0-cil
-  libmono-system-numerics4.0-cil
+  libmono-system-enterpriseservices4.0-cil libmono-system-numerics4.0-cil
+  libmono-system-transactions4.0-cil
   libmono-system-runtime-serialization4.0-cil
+  libmono-system-servicemodel-internals0.0-cil
   libmono-system-xml-linq4.0-cil
   libmono-i18n-cjk4.0-cil libmono-i18n-mideast4.0-cil
   libmono-i18n-other4.0-cil libmono-i18n-rare4.0-cil libmono-i18n-west4.0-cil
   libmono-i18n4.0-all libmono-i18n4.0-cil
-  aspell aspell-en dictionaries-common emacsen-common iso-codes libaspell15
-  libenchant1c2a libgstreamer-plugins-base1.0-0 libgstreamer1.0-0
-  libjavascriptcoregtk-3.0-0 libwebkitgtk-3.0-0 libwebkitgtk-3.0-common zenity
+  aspell aspell-en dictionaries-common emacsen-common libaspell15
+  libenchant1c2a libjavascriptcoregtk-4.0-18 libwebkit2gtk-4.0-37 zenity
   zenity-common
   ```

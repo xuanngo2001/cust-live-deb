@@ -1,21 +1,21 @@
 * >>>>>>>>> Running inst-min-con-firmware.sh ...
   * After this operation, 881 kB of additional disk space will be used.
   * After this operation, 162 kB of additional disk space will be used.
-  * After this operation, 8,191 kB of additional disk space will be used.
-  * After this operation, 431 kB of additional disk space will be used.
-  * After this operation, 3,285 kB of additional disk space will be used.
+  * After this operation, 8,240 kB of additional disk space will be used.
+  * After this operation, 443 kB of additional disk space will be used.
+  * After this operation, 3,301 kB of additional disk space will be used.
   * After this operation, 12.9 MB of additional disk space will be used.
-  * After this operation, 4,134 kB of additional disk space will be used.
-  * After this operation, 1,217 kB of additional disk space will be used.
-  * After this operation, 848 kB of additional disk space will be used.
+  * After this operation, 4,147 kB of additional disk space will be used.
+  * After this operation, 1,233 kB of additional disk space will be used.
+  * After this operation, 861 kB of additional disk space will be used.
   * After this operation, 46.7 MB of additional disk space will be used.
-  * After this operation, 8,799 kB of additional disk space will be used.
-  * After this operation, 23.2 MB of additional disk space will be used.
-  * After this operation, 6,607 kB of additional disk space will be used.
-  * After this operation, 1,118 kB of additional disk space will be used.
-  * After this operation, 52.2 kB of additional disk space will be used.
+  * After this operation, 8,832 kB of additional disk space will be used.
+  * After this operation, 23.5 MB of additional disk space will be used.
+  * After this operation, 6,627 kB of additional disk space will be used.
+  * After this operation, 1,147 kB of additional disk space will be used.
+  * After this operation, 66.6 kB of additional disk space will be used.
   * Install firmwares.
-  * Disk size = 1510372K. Space Used = 149984K.
+  * Disk size = 1489176K. Space Used = 151764K.
   * The following NEW packages will be installed:
   ```bash
   atmel-firmware

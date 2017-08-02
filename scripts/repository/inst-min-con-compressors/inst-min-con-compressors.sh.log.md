@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-con-compressors.sh ...
-  * After this operation, 122 kB of additional disk space will be used.
-  * After this operation, 1,476 kB of additional disk space will be used.
-  * After this operation, 295 kB of additional disk space will be used.
-  * After this operation, 607 kB of additional disk space will be used.
-  * After this operation, 395 kB of additional disk space will be used.
-  * After this operation, 927 kB of additional disk space will be used.
+  * After this operation, 188 kB of additional disk space will be used.
+  * After this operation, 796 kB of additional disk space will be used.
+  * After this operation, 314 kB of additional disk space will be used.
+  * After this operation, 623 kB of additional disk space will be used.
+  * After this operation, 547 kB of additional disk space will be used.
+  * After this operation, 956 kB of additional disk space will be used.
   * Install de/compressor: bzip2.
   * Install de/compressor: rar.
   * Install de/compressor: unrar.
@@ -13,7 +13,7 @@
   * Install de/compressor: p7zip.
   * Add universal extractor.
   * Use new rar version due to segmentation fault with 'RAR 4.20' with linux-image-4.8.0-0.bpo.2-amd64-unsigned (4.8.11-1~bpo8+1).
-  * Disk size = 1316456K. Space Used = 4832K.
+  * Disk size = 1293292K. Space Used = 4508K.
   * The following NEW packages will be installed:
   ```bash
   bzip2

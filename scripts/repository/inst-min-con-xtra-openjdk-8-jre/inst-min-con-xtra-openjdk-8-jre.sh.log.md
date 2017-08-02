@@ -1,17 +1,18 @@
 * >>>>>>>>> Running inst-min-con-xtra-openjdk-8-jre.sh ...
-  * After this operation, 152 MB of additional disk space will be used.
+  * After this operation, 189 MB of additional disk space will be used.
   * Install openjdk-8-jre.
-  * Disk size = 2145844K. Space Used = 185856K.
+  * Disk size = 2382200K. Space Used = 244924K.
   * The following NEW packages will be installed:
   ```bash
-  ca-certificates ca-certificates-java java-common libasyncns0
-  libatk-wrapper-java libatk-wrapper-java-jni libatk1.0-0 libatk1.0-data
-  libavahi-client3 libavahi-common-data libavahi-common3 libcups2 libdrm2
-  libflac8 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgif4 libgl1-mesa-glx
-  libglapi-mesa libgtk2.0-0 libgtk2.0-common libjasper1 libnspr4 libnss3
-  libogg0 libpcsclite1 libpulse0 libsndfile1 libsqlite3-0 libvorbis0a
-  libvorbisenc2 libwrap0 libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0
-  libxcb-present0 libxcb-sync1 libxcomposite1 libxcursor1 libxdamage1
-  libxfixes3 libxinerama1 libxrandr2 libxshmfence1 libxxf86vm1 openjdk-8-jre
-  openjdk-8-jre-headless openssl shared-mime-info
+  adwaita-icon-theme ca-certificates ca-certificates-java
+  dconf-gsettings-backend dconf-service glib-networking glib-networking-common
+  glib-networking-services gsettings-desktop-schemas java-common libasound2
+  libasound2-data libasyncns0 libatk-bridge2.0-0 libatk-wrapper-java
+  libatk-wrapper-java-jni libatspi2.0-0 libcairo-gobject2 libcolord2 libdconf1
+  libepoxy0 libflac8 libfontenc1 libgif7 libgtk-3-0 libgtk-3-common
+  libjson-glib-1.0-0 libjson-glib-1.0-common libnspr4 libnss3 libogg0
+  libpcsclite1 libpulse0 librest-0.7-0 libsndfile1 libsoup-gnome2.4-1
+  libsoup2.4-1 libvorbis0a libvorbisenc2 libwayland-cursor0
+  libwayland-egl1-mesa libxaw7 libxft2 libxmu6 libxmuu1 libxt6 libxv1
+  libxxf86dga1 openjdk-8-jre openjdk-8-jre-headless openssl x11-utils
   ```

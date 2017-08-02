@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-std-accessories-calc-speedcrunch.sh ...
-  * After this operation, 1,830 kB of additional disk space will be used.
+  * After this operation, 5,514 kB of additional disk space will be used.
   * Install calculator: speedcrunch.
   * Insert speedcrunch in Accessories menu.
-  * Disk size = 2469824K. Space Used = 3144K.
+  * Disk size = 2685240K. Space Used = 6920K.
   * The following NEW packages will be installed:
   ```bash
-  speedcrunch
+  libqt5clucene5 libqt5help5 libqt5sql5 libqt5sql5-sqlite speedcrunch
   ```
