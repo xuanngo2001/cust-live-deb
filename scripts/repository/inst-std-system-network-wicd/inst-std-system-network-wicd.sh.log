@@ -5,11 +5,12 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  gir1.2-glib-2.0 libgirepository-1.0-1 libglade2-0 libnl-3-200
-  libnl-genl-3-200 libpython-stdlib libpython2.7-minimal libpython2.7-stdlib
-  net-tools python python-cairo python-dbus python-gi python-glade2
-  python-gobject python-gobject-2 python-gtk2 python-minimal python-numpy
-  python-wicd python2.7 python2.7-minimal wicd-daemon wicd-gtk wireless-tools
+  gir1.2-glib-2.0 libblas-common libblas3 libgfortran3 libgirepository-1.0-1
+  libglade2-0 liblapack3 libnl-3-200 libnl-genl-3-200 libpython-stdlib
+  libpython2.7-minimal libpython2.7-stdlib libquadmath0 net-tools python
+  python-cairo python-dbus python-gi python-glade2 python-gobject
+  python-gobject-2 python-gtk2 python-minimal python-numpy python-wicd
+  python2.7 python2.7-minimal wicd-daemon wicd-gtk wireless-tools
   wpasupplicant
 Suggested packages:
   python-doc python-tk python-dbus-dbg python-dbus-doc python-gi-cairo
@@ -19,15 +20,16 @@ Suggested packages:
 Recommended packages:
   rfkill gksu python-notify
 The following NEW packages will be installed:
-  gir1.2-glib-2.0 libgirepository-1.0-1 libglade2-0 libnl-3-200
-  libnl-genl-3-200 libpython-stdlib libpython2.7-minimal libpython2.7-stdlib
-  net-tools python python-cairo python-dbus python-gi python-glade2
-  python-gobject python-gobject-2 python-gtk2 python-minimal python-numpy
-  python-wicd python2.7 python2.7-minimal wicd wicd-daemon wicd-gtk
-  wireless-tools wpasupplicant
-0 upgraded, 27 newly installed, 0 to remove and 0 not upgraded.
-Need to get 6,098 kB/10.3 MB of archives.
-After this operation, 41.0 MB of additional disk space will be used.
+  gir1.2-glib-2.0 libblas-common libblas3 libgfortran3 libgirepository-1.0-1
+  libglade2-0 liblapack3 libnl-3-200 libnl-genl-3-200 libpython-stdlib
+  libpython2.7-minimal libpython2.7-stdlib libquadmath0 net-tools python
+  python-cairo python-dbus python-gi python-glade2 python-gobject
+  python-gobject-2 python-gtk2 python-minimal python-numpy python-wicd
+  python2.7 python2.7-minimal wicd wicd-daemon wicd-gtk wireless-tools
+  wpasupplicant
+0 upgraded, 32 newly installed, 0 to remove and 0 not upgraded.
+Need to get 8,805 kB/13.0 MB of archives.
+After this operation, 50.0 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libglade2-0 amd64 1:2.6.4-2 [81.8 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 net-tools amd64 1.60+git20161116.90da8a0-1 [248 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-dbus amd64 1.2.4-1+b1 [185 kB]
@@ -42,16 +44,22 @@ Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnl-
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnl-genl-3-200 amd64 3.2.27-2 [21.0 kB]
 Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wpasupplicant amd64 2:2.4-1 [970 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-daemon all 1.7.4+tb2-4 [162 kB]
-Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-cairo amd64 1.8.8-2.2 [42.5 kB]
-Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-numpy amd64 1:1.12.1-3 [1,936 kB]
-Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-gtk2 amd64 2.24.0-5.1 [642 kB]
-Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-glade2 amd64 2.24.0-5.1 [43.4 kB]
-Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-gtk all 1.7.4+tb2-4 [155 kB]
-Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd all 1.7.4+tb2-4 [24.3 kB]
+Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libblas-common amd64 3.7.0-2 [14.2 kB]
+Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libquadmath0 amd64 6.3.0-18 [131 kB]
+Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgfortran3 amd64 6.3.0-18 [265 kB]
+Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libblas3 amd64 3.7.0-2 [155 kB]
+Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblapack3 amd64 3.7.0-2 [2,141 kB]
+Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-cairo amd64 1.8.8-2.2 [42.5 kB]
+Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-numpy amd64 1:1.12.1-3 [1,936 kB]
+Get:22 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-gtk2 amd64 2.24.0-5.1 [642 kB]
+Get:23 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-glade2 amd64 2.24.0-5.1 [43.4 kB]
+Get:24 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-gtk all 1.7.4+tb2-4 [155 kB]
+Get:25 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd all 1.7.4+tb2-4 [24.3 kB]
+Extracting templates from packages: 93%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 6,098 kB in 0s (13.4 MB/s)
+Fetched 8,805 kB in 0s (31.5 MB/s)
 Selecting previously unselected package libpython2.7-minimal:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 47922 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 42036 files and directories currently installed.)
 Preparing to unpack .../0-libpython2.7-minimal_2.7.13-2_amd64.deb ...
 Unpacking libpython2.7-minimal:amd64 (2.7.13-2) ...
 Selecting previously unselected package python2.7-minimal.
@@ -74,7 +82,7 @@ Setting up python2.7-minimal (2.7.13-2) ...
 Linking and byte-compiling packages for runtime python2.7...
 Setting up python-minimal (2.7.13-2) ...
 Selecting previously unselected package python.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48668 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 42782 files and directories currently installed.)
 Preparing to unpack .../00-python_2.7.13-2_amd64.deb ...
 Unpacking python (2.7.13-2) ...
 Selecting previously unselected package libglade2-0:amd64.
@@ -119,29 +127,49 @@ Unpacking wpasupplicant (2:2.4-1) ...
 Selecting previously unselected package wicd-daemon.
 Preparing to unpack .../14-wicd-daemon_1.7.4+tb2-4_all.deb ...
 Unpacking wicd-daemon (1.7.4+tb2-4) ...
+Selecting previously unselected package libblas-common.
+Preparing to unpack .../15-libblas-common_3.7.0-2_amd64.deb ...
+Unpacking libblas-common (3.7.0-2) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../16-libquadmath0_6.3.0-18_amd64.deb ...
+Unpacking libquadmath0:amd64 (6.3.0-18) ...
+Selecting previously unselected package libgfortran3:amd64.
+Preparing to unpack .../17-libgfortran3_6.3.0-18_amd64.deb ...
+Unpacking libgfortran3:amd64 (6.3.0-18) ...
+Selecting previously unselected package libblas3.
+Preparing to unpack .../18-libblas3_3.7.0-2_amd64.deb ...
+Unpacking libblas3 (3.7.0-2) ...
+Selecting previously unselected package liblapack3.
+Preparing to unpack .../19-liblapack3_3.7.0-2_amd64.deb ...
+Unpacking liblapack3 (3.7.0-2) ...
 Selecting previously unselected package python-cairo.
-Preparing to unpack .../15-python-cairo_1.8.8-2.2_amd64.deb ...
+Preparing to unpack .../20-python-cairo_1.8.8-2.2_amd64.deb ...
 Unpacking python-cairo (1.8.8-2.2) ...
 Selecting previously unselected package python-numpy.
-Preparing to unpack .../16-python-numpy_1%3a1.12.1-3_amd64.deb ...
+Preparing to unpack .../21-python-numpy_1%3a1.12.1-3_amd64.deb ...
 Unpacking python-numpy (1:1.12.1-3) ...
 Selecting previously unselected package python-gtk2.
-Preparing to unpack .../17-python-gtk2_2.24.0-5.1_amd64.deb ...
+Preparing to unpack .../22-python-gtk2_2.24.0-5.1_amd64.deb ...
 Unpacking python-gtk2 (2.24.0-5.1) ...
 Selecting previously unselected package python-glade2.
-Preparing to unpack .../18-python-glade2_2.24.0-5.1_amd64.deb ...
+Preparing to unpack .../23-python-glade2_2.24.0-5.1_amd64.deb ...
 Unpacking python-glade2 (2.24.0-5.1) ...
 Selecting previously unselected package wicd-gtk.
-Preparing to unpack .../19-wicd-gtk_1.7.4+tb2-4_all.deb ...
+Preparing to unpack .../24-wicd-gtk_1.7.4+tb2-4_all.deb ...
 Unpacking wicd-gtk (1.7.4+tb2-4) ...
 Selecting previously unselected package wicd.
-Preparing to unpack .../20-wicd_1.7.4+tb2-4_all.deb ...
+Preparing to unpack .../25-wicd_1.7.4+tb2-4_all.deb ...
 Unpacking wicd (1.7.4+tb2-4) ...
+Setting up libquadmath0:amd64 (6.3.0-18) ...
 Setting up wireless-tools (30~pre9-12+b1) ...
 Processing triggers for mime-support (3.60) ...
 Processing triggers for desktop-file-utils (0.23-1) ...
+Setting up libblas-common (3.7.0-2) ...
+Setting up libgfortran3:amd64 (6.3.0-18) ...
 Setting up libgirepository-1.0-1:amd64 (1.50.0-1+b1) ...
 Setting up libglade2-0:amd64 (1:2.6.4-2) ...
+Setting up libblas3 (3.7.0-2) ...
+update-alternatives: using /usr/lib/libblas/libblas.so.3 to provide /usr/lib/libblas.so.3 (libblas.so.3) in auto mode
 Setting up gir1.2-glib-2.0:amd64 (1.50.0-1+b1) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Processing triggers for systemd (232-25+deb9u1) ...
@@ -150,6 +178,8 @@ Setting up libnl-3-200:amd64 (3.2.27-2) ...
 Setting up net-tools (1.60+git20161116.90da8a0-1) ...
 Processing triggers for hicolor-icon-theme (0.15-1) ...
 Setting up libpython2.7-stdlib:amd64 (2.7.13-2) ...
+Setting up liblapack3 (3.7.0-2) ...
+update-alternatives: using /usr/lib/lapack/liblapack.so.3 to provide /usr/lib/liblapack.so.3 (liblapack.so.3) in auto mode
 Setting up python2.7 (2.7.13-2) ...
 Setting up libnl-genl-3-200:amd64 (3.2.27-2) ...
 Setting up libpython-stdlib:amd64 (2.7.13-2) ...
@@ -176,11 +206,10 @@ Setting up wicd (1.7.4+tb2-4) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Processing triggers for dbus (1.10.18-1) ...
 Processing triggers for systemd (232-25+deb9u1) ...
-W: --force-yes is deprecated, use one of the options starting with --allow instead.
 './cld/app/jwm/bootstrap/jwmrc-startup-wicd.sh' -> '/usr/local/cld/app/jwm/bootstrap/jwmrc-startup-wicd.sh'
 CLDS: * Install Network Manager: wicd.
 CLDS: * Insert Wicd menu in Network.
 CLDS: * For wireless, you have to type in the wireless interface(e.g. wlan0) in the Preferences.
 CLDS: * Set wicd to run on JWM startup.
 CLDS: * Log at /var/log/wicd/wicd.log.
-CLDS: * Disk size = 3862852K. Space Used = 64144K.
+CLDS: * Disk size = 3533976K. Space Used = 75688K.

@@ -36,9 +36,8 @@ Get:12 http://localhost/aptly-repo/master_stretch-backports-main stretch-backpor
 Get:13 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-kbuild-4.11 amd64 4.11.6-1~bpo9+1 [672 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.11.0-0.bpo.1-amd64 amd64 4.11.6-1~bpo9+1 [456 kB]
 Get:15 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-amd64 amd64 4.11+82~bpo9+1 [5,954 B]
-Fetched 19.3 MB in 0s (45.0 MB/s)
+Fetched 19.3 MB in 0s (29.7 MB/s)
 Download complete and in download only mode
-W: --force-yes is deprecated, use one of the options starting with --allow instead.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -80,9 +79,9 @@ Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 patch 
 Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dpkg-dev all 1.18.24 [1,592 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 build-essential amd64 12.3 [7,346 B]
 Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dkms all 2.3-2 [74.8 kB]
-Fetched 18.2 MB in 0s (36.9 MB/s)
+Fetched 18.2 MB in 0s (25.7 MB/s)
 Selecting previously unselected package libgc1c2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67644 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62896 files and directories currently installed.)
 Preparing to unpack .../00-libgc1c2_1%3a7.4.2-8_amd64.deb ...
 Unpacking libgc1c2:amd64 (1:7.4.2-8) ...
 Selecting previously unselected package libc-dev-bin.
@@ -185,7 +184,6 @@ Setting up g++ (4:6.3.0-4) ...
 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
 Setting up build-essential (12.3) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
-W: --force-yes is deprecated, use one of the options starting with --allow instead.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -199,7 +197,7 @@ The following NEW packages will be installed:
 Need to get 0 B/9,212 kB of archives.
 After this operation, 52.5 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-6-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71141 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66393 files and directories currently installed.)
 Preparing to unpack .../linux-compiler-gcc-6-x86_4.11.6-1~bpo9+1_amd64.deb ...
 Unpacking linux-compiler-gcc-6-x86 (4.11.6-1~bpo9+1) ...
 Selecting previously unselected package linux-headers-4.11.0-0.bpo.1-common.
@@ -215,15 +213,13 @@ Setting up linux-compiler-gcc-6-x86 (4.11.6-1~bpo9+1) ...
 Setting up linux-headers-4.11.0-0.bpo.1-common (4.11.6-1~bpo9+1) ...
 Setting up linux-kbuild-4.11 (4.11.6-1~bpo9+1) ...
 Setting up linux-headers-4.11.0-0.bpo.1-amd64 (4.11.6-1~bpo9+1) ...
-W: --force-yes is deprecated, use one of the options starting with --allow instead.
 Verifying archive integrity... All good.
-Uncompressing VirtualBox 5.1.14 Guest Additions for Linux...........
+Uncompressing VirtualBox 5.1.26 Guest Additions for Linux...........
 VirtualBox Guest Additions installer
 Copying additional installer modules ...
 Installing additional modules ...
-vboxadd.sh: Building Guest Additions kernel modules.
-Failed to set up service vboxadd, please check the log file
-/var/log/VBoxGuestAdditions.log for details.
+vboxadd.sh: Starting the VirtualBox Guest Additions.
+
 libkmod: ERROR ../libkmod/libkmod.c:586 kmod_search_moddep: could not open moddep file '/lib/modules/4.9.0-0.bpo.3-amd64/modules.dep.bin'
 modinfo: ERROR: Module alias vboxguest not found.
 CLDS: * WARNING: Use this script only if backport repository doesn't work.
@@ -231,4 +227,4 @@ CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto wind
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 5186520K. Space Used = 256532K.
+CLDS: * Disk size = 4961460K. Space Used = 256732K.
