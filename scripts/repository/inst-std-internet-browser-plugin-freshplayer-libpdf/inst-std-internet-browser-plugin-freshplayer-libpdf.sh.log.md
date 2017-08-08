@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-internet-browser-plugin-freshplayer-libpdf.sh ...
   * After this operation, 33.3 MB of additional disk space will be used.
   * Install browser-plugin-freshplayer-libpdf.
-  * Disk size = 2857828K. Space Used = 43968K.
+  * Disk size = 2863528K. Space Used = 43968K.
   * The following NEW packages will be installed:
   ```bash
   browser-plugin-freshplayer-libpdf libavcodec57 libavutil55 libcrystalhd3

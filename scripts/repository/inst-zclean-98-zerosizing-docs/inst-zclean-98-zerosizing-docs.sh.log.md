@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-zclean-98-zerosizing-docs.sh ...
   * Zero size all documents in /usr/share/.
-  * Disk size = 3758404K. Space Used = -118448K.
+  * Disk size = 4482756K. Space Used = -132208K.

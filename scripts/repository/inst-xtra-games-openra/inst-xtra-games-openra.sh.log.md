@@ -3,9 +3,9 @@
   * After this operation, 1,350 kB of additional disk space will be used.
   * After this operation, 203 kB of additional disk space will be used.
   * After this operation, 1,520 kB of additional disk space will be used.
-  * After this operation, 70.5 MB of additional disk space will be used.
+  * After this operation, 70.0 MB of additional disk space will be used.
   * Install openra.
-  * Disk size = 4523716K. Space Used = 127040K.
+  * Disk size = 4982296K. Space Used = 125936K.
   * The following NEW packages will be installed:
   ```bash
   libmono-data-tds4.0-cil libmono-system-data4.0-cil
@@ -18,6 +18,6 @@
   libmono-i18n-other4.0-cil libmono-i18n-rare4.0-cil libmono-i18n-west4.0-cil
   libmono-i18n4.0-all libmono-i18n4.0-cil
   aspell aspell-en dictionaries-common emacsen-common libaspell15
-  libenchant1c2a libharfbuzz-icu0 libhyphen0 libjavascriptcoregtk-4.0-18
-  libwebkit2gtk-4.0-37 zenity zenity-common
+  libenchant1c2a libjavascriptcoregtk-4.0-18 libwebkit2gtk-4.0-37 zenity
+  zenity-common
   ```
