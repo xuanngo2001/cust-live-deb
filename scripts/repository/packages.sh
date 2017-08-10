@@ -10,8 +10,10 @@ while IFS='' read -r SCRIPT_FILE || [[ -n "$SCRIPT_FILE" ]]; do
   echo "# ${SCRIPT_FILE}" >> "${PACKAGE_LIST_FILE}"
   
   # Extract package names of apt-get command from script file. 
-  APT_GET_PACKAGES=$(grep '.*apt-get.*install' "${SCRIPT_FILE}" || true) # If apt-get not found, still return true to prevent exiting this script.
-  APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | grep -v '^#' || true) # Remove if it is commented out.
+  APT_GET_PACKAGES=$(grep '.*apt-get.*install' "${SCRIPT_FILE}" || true)  # If apt-get not found, still return true to prevent exiting this script.
+  APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | awk '{$1=$1;print}' )   # Remove all leading and trailing spaces and tabs
+  APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | grep -v '^#' || true)   # Remove if it is commented out.
+  APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | sed 's/#.*//' || true)  # Remove inline comments.
   APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | sed 's/.* install //' | tr ' ' '\n' || true) # Replace space with newline.
   APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | grep -v '^-' || true)  # Remove option(-XX)
   APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | awk NF || true)  # Remove empty line.
