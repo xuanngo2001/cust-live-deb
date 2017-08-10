@@ -7,13 +7,21 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Examples:
-#   apt-get install -d -y <your-package>  # Explicitly download dependent packages 
+# Install required packages.
+apt-get install -y linux-headers-amd64 lsb-release
+
+KERNEL_HEADER=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
+apt-get -y install dkms libc6-dev  build-essential
+apt-get -y install linux-headers-${KERNEL_HEADER}
+m-a -i prepare
 
 # Install zfs-dkms.
 debconf-set-selections -v zfs-dkms.seed
+apt-get -y install spl-dkms # Install spl first: https://github.com/zfsonlinux/zfs/issues/3065
 apt-get -y install zfs-dkms
 
+# If you want to boot from ZFS, you'll need zfs-initramfs package too:
+apt-get -y install zfs-initramfs
 
 # Log
 ZFS_VERSION=$(modinfo zfs | grep ^version | tr -s ' ')
