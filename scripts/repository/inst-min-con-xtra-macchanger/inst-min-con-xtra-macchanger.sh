@@ -30,7 +30,7 @@ sed -i 's/ENABLE_ON_POST_UP_DOWN=.*/ENABLE_ON_POST_UP_DOWN=true/' /etc/default/m
 # https://wiki.archlinux.org/index.php/MAC_address_spoofing#Method_2:_macchanger
 cp macchanger@.service /etc/systemd/system/
 net_iface=$(ifconfig -a | grep -v '^ ' | awk NF | cut -d ' ' -f 1 | grep -v 'lo' | tr -d ':')
-systemctl enable macchanger@eth0.service
+systemctl enable macchanger@${net_iface}.service
 #systemctl enable macchanger@wlan0.service
 # Check if the service is enabled correctly: systemctl --no-page -t service -a | grep macc
 
@@ -41,8 +41,8 @@ cp macchanger-udev.rules /etc/udev/rules.d/
 echo "${GV_LOG} * Install macchanger."
 echo "${GV_LOG} * Set macchanger to change MAC address whenever network device is up or down."
 echo "${GV_LOG} * To configure macchanger: dpkg-reconfigure macchanger."
-echo "${GV_LOG} * Check whether it is working: macchanger -s eth0."
-echo "${GV_LOG} * systemctl status macchanger@eth0.service"
+echo "${GV_LOG} * Check whether it is working: macchanger -s ${net_iface}."
+echo "${GV_LOG} * systemctl status macchanger@${net_iface}.service"
 
 # Debug:
 #   systemctl --no-page list-unit-files
