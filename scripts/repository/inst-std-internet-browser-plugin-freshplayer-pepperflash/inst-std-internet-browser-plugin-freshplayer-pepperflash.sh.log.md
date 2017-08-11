@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-internet-browser-plugin-freshplayer-pepperflash.sh ...
   * After this operation, 1,162 kB of additional disk space will be used.
   * Install browser-plugin-freshplayer-pepperflash.
-  * Disk size = 2865064K. Space Used = 1532K.
+  * Disk size = 2807088K. Space Used = 1532K.
   * The following NEW packages will be installed:
   ```bash
   browser-plugin-freshplayer-pepperflash
