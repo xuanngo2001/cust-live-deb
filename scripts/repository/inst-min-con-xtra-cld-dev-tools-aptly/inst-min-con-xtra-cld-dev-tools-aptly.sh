@@ -15,6 +15,9 @@ GF_ADD_SOURCE_LIST live "deb http://repo.aptly.info/ squeeze main"
 apt-key add pubkey.txt
 apt-get update
 
+# aptly needs gnupg needs dirmngr
+apt-get -y install dirmngr
+
 # Install aptly
 apt-get -y install xz-utils aptly
 
