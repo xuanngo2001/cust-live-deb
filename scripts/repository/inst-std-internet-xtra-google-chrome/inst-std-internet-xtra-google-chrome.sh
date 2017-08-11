@@ -19,10 +19,12 @@ apt-get -y install gconf-service
 apt-get -y install libgconf-2-4
 apt-get -y install libxss1
 
+apt-get -y install lsb-release
+
 #apt-get -y install libpango1.0-0
 
 # Add google-chrome sources list
-#GF_ADD_SOURCE_LIST live "deb http://dl.google.com/linux/chrome/deb/ stable main"
+GF_ADD_SOURCE_LIST live "deb http://dl.google.com/linux/chrome/deb/ stable main"
 
 # Install google-chrome.
 apt-get -y install google-chrome-stable
