@@ -5,6 +5,10 @@ echo "qcheck-error-in-log.sh:"
 ./qcheck-error-in-log.sh
 
 echo "------------------"
+echo "qcheck-command-not-found.sh:"
+./qcheck-command-not-found.sh
+
+echo "------------------"
 echo "qcheck-file-dir-not-found.sh:"
 ./qcheck-file-dir-not-found.sh
 
@@ -19,3 +23,4 @@ echo "qcheck-jwm-missing-icons.sh:"
 echo "------------------"
 echo "qcheck-warning.sh:"
 ./qcheck-warning.sh
+
