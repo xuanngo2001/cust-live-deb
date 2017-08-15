@@ -13,6 +13,7 @@ apt-get install -y linux-headers-amd64 lsb-release
 KERNEL_HEADER=$(dpkg-query -W -f='${binary:Package}\n' linux-image-* | head -n 1 | sed 's/linux-image-//')
 apt-get -y install dkms libc6-dev  build-essential
 apt-get -y install linux-headers-${KERNEL_HEADER}
+apt-get -y install module-assistant
 m-a -i prepare
 
 # Install zfs-dkms.
@@ -31,6 +32,7 @@ fi
 echo "${GV_LOG} * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian"
 echo "${GV_LOG} * Install zfs-dkms: ${ZFS_VERSION}, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html"
 echo "${GV_LOG} * Install zfs-initramfs to be able to boot from ZFS."
+echo "${GV_LOG} * Import existing ZFS partitions: zpool import -a"
 #echo "${GV_LOG} * Change default behavior: Don't allow the last 1.6% of space in the pool instead of 3.2%."
 
 # History:
