@@ -47,7 +47,7 @@ set -e
     # Insert network interface to conkyrc.
     sed  -i --follow-symlinks "/${IFACE_START}/ r ${IFACE_CONKY}" ${HOME}/.conkyrc
     	 
-  done < <( ifconfig -a | grep -v '^ ' | awk NF | cut -d ' ' -f 1 | grep -v 'lo' | tr -d ':' )
+  done < <( ip address | grep '^[0-9]' | grep -vF 'lo: ' | sed 's/^[0-9]*://' | cut -d':' -f1 | xargs )
 
 
 #---- CALENDAR: Add calendar if screen height is available(Watch out for multiple network interfaces(81px) or CPUs). ----#
