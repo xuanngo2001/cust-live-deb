@@ -10,15 +10,23 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Examples:
 #   apt-get install -d -y <your-package>  # Explicitly download dependent packages 
 
+apt-get -y install libreoffice-base
+apt-get -y install libreoffice-calc
+apt-get -y install libreoffice-core
+apt-get -y install libreoffice-draw
+apt-get -y install libreoffice-impress
+apt-get -y install libreoffice-math
+apt-get -y install libreoffice-report-builder-bin
+apt-get -y install libreoffice-writer
+apt-get -y install libreoffice-avmedia-backend-gstreamer
+apt-get -y install python3-uno
+apt-get -y install libreoffice-common
+apt-get -y install libgpgmepp6
+apt-get -y install libreoffice-base-core 
+apt-get -y install libreoffice-base-drivers 
+                    
 # Install libreoffice.
 apt-get -y install libreoffice
-
-#apt-get -t jessie-backports -y install libreoffice-writer
-#apt-get -t jessie-backports -y install libreoffice-calc
-#apt-get -t jessie-backports -y install libreoffice-impress
-#apt-get -t jessie-backports -y install libreoffice-draw
-#apt-get -t jessie-backports -y install libreoffice-base
-#apt-get -t jessie-backports -y install libreoffice-math
 
 # Insert LibreOffice menu in Office
 sed -i "/Office\">/ r jwmrc-menus-office-libreoffice.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"

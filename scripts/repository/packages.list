@@ -76,8 +76,6 @@ isolinux
 xorriso
 rsync
 squashfs-tools
-# ./inst-min-con-mtp-00-libmtp9-bpo/inst-min-con-mtp-00-libmtp9-bpo.sh
-libmtp9
 # ./inst-min-con-mtp-jmtpfs/inst-min-con-mtp-jmtpfs.sh
 jmtpfs
 # ./inst-min-con-ntp/inst-min-con-ntp.sh
@@ -87,17 +85,19 @@ numlockx
 # ./inst-min-con-pciutils/inst-min-con-pciutils.sh
 pciutils
 # ./inst-min-con-snd-alsa/inst-min-con-snd-alsa.sh
-alsa-base
 alsa-utils
-# ./inst-min-con-udevil-bpo/inst-min-con-udevil-bpo.sh
+# ./inst-min-con-udevil/inst-min-con-udevil.sh
 udevil
 # ./inst-min-con-users-poweruser/inst-min-con-users-poweruser.sh
 
+# ./inst-min-con-xtra-apache2/inst-min-con-xtra-apache2.sh
+apache2
 # ./inst-min-con-xtra-buffer/inst-min-con-xtra-buffer.sh
 buffer
 # ./inst-min-con-xtra-buffer-pv/inst-min-con-xtra-buffer-pv.sh
 pv
 # ./inst-min-con-xtra-cld-dev-tools-aptly/inst-min-con-xtra-cld-dev-tools-aptly.sh
+dirmngr
 xz-utils
 aptly
 # ./inst-min-con-xtra-cld-dev-virtualbox-guest-additions/inst-min-con-xtra-cld-dev-virtualbox-guest-additions.sh
@@ -132,8 +132,8 @@ mariadb-server
 openjdk-8-jre
 # ./inst-min-con-xtra-pdf-poppler-utils/inst-min-con-xtra-pdf-poppler-utils.sh
 poppler-utils
-# ./inst-min-con-xtra-php5/inst-min-con-xtra-php5.sh
-php5
+# ./inst-min-con-xtra-php/inst-min-con-xtra-php.sh
+php
 # ./inst-min-con-xtra-sqlite3/inst-min-con-xtra-sqlite3.sh
 sqlite3
 # ./inst-min-con-xtra-timezone/inst-min-con-xtra-timezone.sh
@@ -143,7 +143,7 @@ xinit
 xserver-xorg
 # ./inst-min-win-01-basic-font/inst-min-win-01-basic-font.sh
 fonts-dejavu-core
-# ./inst-min-win-01-wm-jwm-bpo/inst-min-win-01-wm-jwm-bpo.sh
+# ./inst-min-win-01-wm-jwm/inst-min-win-01-wm-jwm.sh
 jwm
 # ./inst-min-win-cld-dev-tools-pandoc/inst-min-win-cld-dev-tools-pandoc.sh
 pandoc
@@ -194,10 +194,15 @@ fonts-liberation
 pinta
 # ./inst-std-help-manuals-html/inst-std-help-manuals-html.sh
 
-# ./inst-std-internet-iceweasel-bpo/inst-std-internet-iceweasel-bpo.sh
-iceweasel
+# ./inst-std-internet-browser-plugin-freshplayer-libpdf/inst-std-internet-browser-plugin-freshplayer-libpdf.sh
+libevent-pthreads-2.0-5
+browser-plugin-freshplayer-libpdf
+# ./inst-std-internet-browser-plugin-freshplayer-pepperflash/inst-std-internet-browser-plugin-freshplayer-pepperflash.sh
 libevent-pthreads-2.0-5
 browser-plugin-freshplayer-pepperflash
+# ./inst-std-internet-firefox-esr/inst-std-internet-firefox-esr.sh
+libjsoncpp1
+firefox-esr
 # ./inst-std-internet-xtra-google-chrome/inst-std-internet-xtra-google-chrome.sh
 libappindicator1
 libdbusmenu-glib4
@@ -207,15 +212,12 @@ xdg-utils
 gconf-service
 libgconf-2-4
 libxss1
+lsb-release
 google-chrome-stable
 # ./inst-std-internet-xtra-transmission-gtk/inst-std-internet-xtra-transmission-gtk.sh
 transmission-gtk
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
 libavc1394-0
-libavcodec56
-libavdevice56
-libavfilter5
-libavformat56
 libcrystalhd3
 libiec61883-0
 libopencore-amrnb0
@@ -224,15 +226,24 @@ libsmbclient
 libvo-aacenc0
 libvo-amrwbenc0
 libzvbi0
+libuchardet0
 mpv
-# ./inst-std-office-libreoffice-bpo/inst-std-office-libreoffice-bpo.sh
-libpagemaker-0.0-0
-libreoffice-writer
-libreoffice-calc
-libreoffice-impress
-libreoffice-draw
+# ./inst-std-office-libreoffice/inst-std-office-libreoffice.sh
 libreoffice-base
+libreoffice-calc
+libreoffice-core
+libreoffice-draw
+libreoffice-impress
 libreoffice-math
+libreoffice-report-builder-bin
+libreoffice-writer
+libreoffice-avmedia-backend-gstreamer
+python3-uno
+libreoffice-common
+libgpgmepp6
+libreoffice-base-core
+libreoffice-base-drivers
+libreoffice
 # ./inst-std-office-xtra-projectlibre/inst-std-office-xtra-projectlibre.sh
 
 # ./inst-std-system-alsamixer/inst-std-system-alsamixer.sh
@@ -266,118 +277,13 @@ dia
 dia-shapes
 # ./inst-std-xtra-opw-drush8-phar/inst-std-xtra-opw-drush8-phar.sh
 
-# ./inst-std-xtra-opw-php5-gd/inst-std-xtra-opw-php5-gd.sh
-php5-gd
-# ./inst-std-xtra-opw-php5-mysql/inst-std-xtra-opw-php5-mysql.sh
-php5-mysql
+# ./inst-std-xtra-opw-php-gd/inst-std-xtra-opw-php-gd.sh
+php-gd
+# ./inst-std-xtra-opw-php-mysql/inst-std-xtra-opw-php-mysql.sh
+php-mysql
 # ./inst-xtra-dev-tools-ant/inst-xtra-dev-tools-ant.sh
 ant
 # ./inst-xtra-freecad/inst-xtra-freecad.sh
-python-pivy
-python-qt4-gl
-python-qt4
-python-sip
-python-pyside
-python-pyside.qtwebkit
-python-pyside.qtuitools
-python-pyside.qtxml
-python-pyside.qttest
-python-pyside.qtsvg
-python-pyside.qtsql
-python-pyside.qtscript
-python-pyside.qtopengl
-python-pyside.qthelp
-python-pyside.qtdeclarative
-python-pyside.qtnetwork
-python-pyside.phonon
-python-pyside.qtgui
-python-pyside.qtcore
-python-ply
-python-matplotlib
-python-nose
-python-pkg-resources
-python-mock
-python-tz
-python-pyparsing
-python-matplotlib-data
-python-collada
-python-lxml
-python-dateutil
-python-six
-phonon
-libzipios++0c2a
-libsoqt4-20
-libjs-sphinxdoc
-libjs-underscore
-fonts-lyx
-liboce-ocaf8
-liboce-visualization8
-libgl2ps0
-libfreeimage3
-liboce-ocaf-lite8
-liboce-modeling8
-liboce-foundation8
-libvcdinfo0
-libiso9660-8
-libtwolame0
-libsidplay2
-libresid-builder0c2a
-libmodplug1
-libkate1
-libgme0
-libcddb2
-liba52-0.7.4
-libupnp6
-libtk8.6
-libtcl8.6
-libspeexdsp1
-libshout3
-libshine3
-libqtwebkit4
-libqtassistantclient4
-libqt4-test
-libqt4-scripttools
-libqt4-opengl
-libqt4-help
-libqt4-designer
-libqt4-declarative
-libqt4-xmlpatterns
-libqt4-sql
-libqt4-script
-libpyside1.2
-phonon-backend-vlc
-vlc-nox
-libshiboken1.2
-libphonon4
-libqt4-dbus
-qdbus
-qtchooser
-libpulse-mainloop-glib0
-libmpeg2-4
-libmpcdec6
-libmad0
-libgstreamer-plugins-base1.0-0
-libvlc5
-libvlccore8
-iso-codes
-vlc-data
-libgstreamer1.0-0
-libfaad2
-libcoin80
-libusageenvironment2
-libmatroska6
-liblivemedia42
-libxerces-c3.1
-libgroupsock4
-libebml4
-libdvbpsi9
-libdca0
-libboost-signals1.55.0
-libchromaprint0
-libboost-program-options1.55.0
-libbasicusageenvironment0
-pyside-tools
-libboost-python1.55.0
 freecad
 # ./inst-xtra-games-0ad/inst-xtra-games-0ad.sh
 0ad
@@ -421,7 +327,9 @@ dkms
 libc6-dev
 virtualbox-guest-x11
 # ./inst-xtra-wifite/inst-xtra-wifite.sh
-wifite
+tshark
+aircrack-ng
+reaver
 # ./inst-xtra-wine64/inst-xtra-wine64.sh
 nvidia-libopencl1
 amd-libopencl1
@@ -441,10 +349,13 @@ gettext-base
 icoutils
 p7zip-full
 playonlinux
-# ./inst-xtra-zfs-bpo/inst-xtra-zfs-bpo.sh
-file
-lsb-release
+# ./inst-xtra-zfs-dkms/inst-xtra-zfs-dkms.sh
 linux-headers-amd64
+lsb-release
+dkms
+libc6-dev
+build-essential
+module-assistant
 spl-dkms
 zfs-dkms
 zfs-initramfs
