@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-users-poweruser.sh ...
   * Created user: poweruser/poweruser.
-  * Disk size = 1455348K. Space Used = 36K.
+  * Disk size = 1455588K. Space Used = 36K.

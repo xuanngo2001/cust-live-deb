@@ -3,9 +3,9 @@
   * Install macchanger.
   * Set macchanger to change MAC address whenever network device is up or down.
   * To configure macchanger: dpkg-reconfigure macchanger.
-  * Check whether it is working: macchanger -s eth0.
-  * systemctl status macchanger@eth0.service
-  * Disk size = 1762052K. Space Used = 904K.
+  * Check whether it is working: macchanger -s enp0s3.
+  * systemctl status macchanger@enp0s3.service
+  * Disk size = 1763328K. Space Used = 900K.
   * The following NEW packages will be installed:
   ```bash
   macchanger
