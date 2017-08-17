@@ -2,7 +2,7 @@
   * After this operation, 300 kB of additional disk space will be used.
   * After this operation, 33.0 MB of additional disk space will be used.
   * Install browser-plugin-freshplayer-libpdf.
-  * Disk size = 2806844K. Space Used = 43972K.
+  * Disk size = 2806940K. Space Used = 43972K.
   * The following NEW packages will be installed:
   ```bash
   libevent-core-2.0-5 libevent-pthreads-2.0-5

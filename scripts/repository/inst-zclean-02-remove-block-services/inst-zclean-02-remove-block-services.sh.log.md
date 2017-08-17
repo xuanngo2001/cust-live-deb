@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-zclean-02-remove-block-services.sh ...
   * Remove block services from starting after they are being installed.
-  * Disk size = 4553776K. Space Used = 4K.
+  * Disk size = 4553840K. Space Used = 0K.
