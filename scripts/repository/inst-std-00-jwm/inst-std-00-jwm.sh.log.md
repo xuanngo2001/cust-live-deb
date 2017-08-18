@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-00-jwm.sh ...
   * Add default standard menus in JWM.
-  * Disk size = 2640544K. Space Used = 8K.
+  * Disk size = 2640472K. Space Used = 4K.
