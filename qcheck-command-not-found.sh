@@ -15,7 +15,7 @@ main_log=/media/master/github/cust-live-deb/logs/main.log
     echo "${cmd_not_found}"
     
   else
-      echo "No error in log file: ${main_log}"
+    echo "No ${grep_pattern}: ${main_log}"
   fi
 
   # Add newline as a separation.
