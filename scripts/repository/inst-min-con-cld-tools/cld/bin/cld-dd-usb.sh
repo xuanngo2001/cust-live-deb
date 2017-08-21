@@ -6,13 +6,13 @@ set -e
 #            Errors handling
 ####################################
   CMD_TO_FIND=partprobe
-  command -v ${CMD_TO_FIND} > /dev/null 2>&1 || { echo >&2 "ERROR: ${CMD_TO_FIND} not found."; exit 1; }
+  command -v ${CMD_TO_FIND} > /dev/null 2>&1 || { echo >&2 "ERROR: ${CMD_TO_FIND} is not found."; exit 1; }
   
   CMD_TO_FIND=partx
-  command -v ${CMD_TO_FIND} > /dev/null 2>&1 || { echo >&2 "ERROR: ${CMD_TO_FIND} not found."; exit 1; }
+  command -v ${CMD_TO_FIND} > /dev/null 2>&1 || { echo >&2 "ERROR: ${CMD_TO_FIND} is not found."; exit 1; }
   
   CMD_TO_FIND=udevadm
-  command -v ${CMD_TO_FIND} > /dev/null 2>&1 || { echo >&2 "ERROR: ${CMD_TO_FIND} not found."; exit 1; }
+  command -v ${CMD_TO_FIND} > /dev/null 2>&1 || { echo >&2 "ERROR: ${CMD_TO_FIND} is not found."; exit 1; }
 
 ####################################
 #             FUNCTIONS
