@@ -3,7 +3,7 @@ set -e
 # Description: Transfer ISOHYBRID to USB.
 
 ####################################
-#            Errors handling
+#  Errors handling: Commands not found
 ####################################
   CMD_TO_FIND=partprobe
   command -v ${CMD_TO_FIND} > /dev/null 2>&1 || { echo >&2 "ERROR: ${CMD_TO_FIND} not found."; exit 1; }
