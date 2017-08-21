@@ -3,6 +3,18 @@ set -e
 # Description: Transfer ISOHYBRID to USB.
 
 ####################################
+#            Errors handling
+####################################
+  CMD_TO_FIND=partprobe
+  command -v ${CMD_TO_FIND} > /dev/null 2>&1 || { echo >&2 "ERROR: ${CMD_TO_FIND} not found."; exit 1; }
+  
+  CMD_TO_FIND=partx
+  command -v ${CMD_TO_FIND} > /dev/null 2>&1 || { echo >&2 "ERROR: ${CMD_TO_FIND} not found."; exit 1; }
+  
+  CMD_TO_FIND=udevadm
+  command -v ${CMD_TO_FIND} > /dev/null 2>&1 || { echo >&2 "ERROR: ${CMD_TO_FIND} not found."; exit 1; }
+
+####################################
 #             FUNCTIONS
 ####################################
 function unmount_all
