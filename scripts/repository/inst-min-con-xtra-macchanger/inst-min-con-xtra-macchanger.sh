@@ -26,16 +26,20 @@ apt-get -y install macchanger
 #   This step is needed because preseed doesn't work.
 sed -i 's/ENABLE_ON_POST_UP_DOWN=.*/ENABLE_ON_POST_UP_DOWN=true/' /etc/default/macchanger
 
-# Since macchanger's automatic run doesn't work, use systemd to run it.
-# https://wiki.archlinux.org/index.php/MAC_address_spoofing#Method_2:_macchanger
-cp macchanger@.service /etc/systemd/system/
-net_iface=$(ip address | grep '^[0-9]' | grep -vF 'lo: ' | sed 's/^[0-9]*://' | cut -d':' -f1 | xargs)
-systemctl enable macchanger@${net_iface}.service
-#systemctl enable macchanger@wlan0.service
-# Check if the service is enabled correctly: systemctl --no-page -t service -a | grep macc
+# Copy
+yes | cp -av ./cld  /usr/local
 
-# Use udev rule to change MAC address on wlan0. 
-cp macchanger-udev.rules /etc/udev/rules.d/
+
+## Since macchanger's automatic run doesn't work, use systemd to run it.
+## https://wiki.archlinux.org/index.php/MAC_address_spoofing#Method_2:_macchanger
+#  cp macchanger@.service /etc/systemd/system/
+#  net_iface=$(ip address | grep '^[0-9]' | grep -vF 'lo: ' | sed 's/^[0-9]*://' | cut -d':' -f1 | xargs)
+#  systemctl enable macchanger@${net_iface}.service
+##systemctl enable macchanger@wlan0.service
+## Check if the service is enabled correctly: systemctl --no-page -t service -a | grep macc
+
+## Use udev rule to change MAC address on wlan0. 
+# cp macchanger-udev.rules /etc/udev/rules.d/
 
 # Log
 echo "${GV_LOG} * Install macchanger."
