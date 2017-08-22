@@ -5,7 +5,7 @@
   * To configure macchanger: dpkg-reconfigure macchanger.
   * Check whether it is working: macchanger -s enp0s3.
   * systemctl status macchanger@enp0s3.service
-  * Disk size = 1763352K. Space Used = 904K.
+  * Disk size = 1764680K. Space Used = 892K.
   * The following NEW packages will be installed:
   ```bash
   macchanger
