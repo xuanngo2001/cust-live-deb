@@ -24,3 +24,6 @@ echo "------------------"
 echo "qcheck-warning.sh:"
 ./qcheck-warning.sh
 
+echo "------------------"
+echo "qcheck-list-manual-packages.sh:"
+./qcheck-list-manual-packages.sh
