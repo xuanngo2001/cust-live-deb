@@ -2,7 +2,7 @@
   * After this operation, 30.9 MB of additional disk space will be used.
   * Install webcam: Camorama.
   * Insert Camorama menu in Graphics.
-  * Disk size = 3819944K. Space Used = 25688K.
+  * Disk size = 3977320K. Space Used = 25700K.
   * The following NEW packages will be installed:
   ```bash
   camorama gconf2 gnome-mime-data libart-2.0-2 libavahi-glib1 libbonobo2-0

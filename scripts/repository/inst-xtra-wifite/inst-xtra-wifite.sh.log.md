@@ -2,7 +2,7 @@
   * After this operation, 102 MB of additional disk space will be used.
   * After this operation, 6,449 kB of additional disk space will be used.
   * Install wifite.
-  * Disk size = 4507940K. Space Used = 126072K.
+  * Disk size = 5406732K. Space Used = 126048K.
   * The following NEW packages will be installed:
   ```bash
   libc-ares2 libgeoip1 libjs-openlayers libpcap0.8 libsbc1 libsmi2ldbl
