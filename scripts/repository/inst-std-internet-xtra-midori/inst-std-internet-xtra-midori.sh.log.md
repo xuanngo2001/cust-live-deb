@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-internet-xtra-midori.sh ...
   * After this operation, 83.4 MB of additional disk space will be used.
   * Install midori.
-  * Disk size = 3273236K. Space Used = 84436K.
+  * Disk size = 3413392K. Space Used = 84452K.
   * The following NEW packages will be installed:
   ```bash
   aspell aspell-en dictionaries-common emacsen-common iso-codes libaspell15

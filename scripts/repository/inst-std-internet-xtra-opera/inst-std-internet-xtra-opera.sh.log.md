@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-internet-xtra-opera.sh ...
-  * Disk size = 3273240K. Space Used = 4K.
+  * Disk size = 3413396K. Space Used = 4K.
