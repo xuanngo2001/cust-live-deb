@@ -4,3 +4,6 @@ set -e
 
 find /usr/share/icons/
 find /usr/share/pixmaps/
+
+# TODO: Display unique filename only. 
+#   sed 's/^.*\///' | sort | uniq
