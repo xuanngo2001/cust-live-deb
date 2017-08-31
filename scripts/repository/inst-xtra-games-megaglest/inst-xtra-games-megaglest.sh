@@ -16,3 +16,6 @@ apt-get -y install megaglest
 
 # Log
 echo "${GV_LOG} * Install megaglest."
+
+# REJECTED:
+#   Too big: > 780 MB
