@@ -19,10 +19,15 @@ while IFS='' read -r FILENAME || [[ -n "${FILENAME}" ]]; do
 			  echo "Error: ${ICON_PATH} not found: ${FILENAME}"
 			fi
 		done < <( echo "${ICON_CONTENT}" )
-    
+
   fi 
  
 done < <( find "${REPOSITORY_DIR}" -type f -name *.xml )
+
+
+# Display solution.
+echo 'Run cld-list-icons.sh to list all icons.'
+
 
 # Add newline as a separation.
 echo ""  
