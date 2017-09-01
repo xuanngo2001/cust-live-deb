@@ -15,4 +15,4 @@ apt-get -y install browser-plugin-freshplayer-pepperflash
 
 
 # Log
-echo "${GV_LOG} * Install browser-plugin-freshplayer-pepperflash."
+echo "${GV_LOG} * Install browser-plugin-freshplayer-pepperflash: Needed for Chrome"
