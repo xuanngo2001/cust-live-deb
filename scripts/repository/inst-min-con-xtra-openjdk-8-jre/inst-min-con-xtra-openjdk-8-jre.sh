@@ -7,12 +7,11 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Examples:
-#   apt-get install -d -y <your-package>  # Explicitly download dependent packages 
-
 # Install openjdk-8-jre.
 apt-get -y install openjdk-8-jre
 
+# Get Java version
+JAVA_VER=$(java -version 2>&1 > /dev/null  | head -n1)
 
 # Log
-echo "${GV_LOG} * Install openjdk-8-jre."
+echo "${GV_LOG} * Install ${JAVA_VER}."
