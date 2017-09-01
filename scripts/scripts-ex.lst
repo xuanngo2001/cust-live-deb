@@ -1,46 +1,23 @@
-# Scripts with the following terms will be excluded: grep -Fv TERM_TO_EXCLUDE.
-#   -Don't put absolute path because chroot/ path is different.
-#   -Put relative path to scripts/
-#   
+# Script filename with the following terms will be excluded: grep -Fv TERM_TO_EXCLUDE.
+#   -Don't put TERM_TO_EXCLUDE as absolute path because the exclusion process is run from withing chroot environment. Therefore, path will be different.
 
-# JAVA
-#openjdk-8-jre
+
 default-jre
-
-# BROWSER
-#google-chrome
-#iceweasel
-
-
-
-# Virtualbox: Use ISO or backport.
-# inst-xtra-virtualbox-guest-additions-iso
 inst-xtra-virtualbox-guest-additions-x11
 inst-min-con-xtra-cld-dev-virtualbox-guest-additions
 
 
-# Pandoc
-## inst-min-win-xtra-pandoc-git
-inst-min-win-cld-dev-tools-pandoc
-
-# Games: Too big 
-inst-xtra-games-0ad
-
-#zfs
-#virtualbox
-
 wine
 inst-xtra-wine-playonlinux
 
-# TO DELETE
-
-
-inst-xtra-games-megaglest
-#freecad
 
 
 # Distro-upgrade: To delete after upgrade is successful.
-#virtualbox
-#zfs
-inst-std-internet-iceweasel-bpo
-inst-xtra zfs-bpo
+#inst-std-internet-browser-plugin-freshplayer-libpdf
+#inst-std-internet-browser-plugin-freshplayer-pepperflash
+inst-std-internet-xtra-flashplayer
+
+#firefox
+#freecad
+
+pandoc.sh
