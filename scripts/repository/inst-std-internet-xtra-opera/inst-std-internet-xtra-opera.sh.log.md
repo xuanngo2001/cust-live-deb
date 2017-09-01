@@ -1,2 +1,10 @@
 * >>>>>>>>> Running inst-std-internet-xtra-opera.sh ...
-  * Disk size = 3413396K. Space Used = 4K.
+  * After this operation, 872 kB of additional disk space will be used.
+  * After this operation, 177 MB of additional disk space will be used.
+  * Install opera.
+  * Disk size = 3536836K. Space Used = 222496K.
+  * The following NEW packages will be installed:
+  ```bash
+  apt-transport-https libcurl3-gnutls
+  apt-transport-https libcurl3-gnutls opera-stable
+  ```
