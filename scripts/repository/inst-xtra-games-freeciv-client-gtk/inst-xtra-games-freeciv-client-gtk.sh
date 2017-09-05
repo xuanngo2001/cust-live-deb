@@ -7,9 +7,13 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Install freeciv-client-gtk.
+# Install dependencies.
+apt-get -y install freeciv-server
+
+# Install freeciv-client-gtk only, other clients are available.
 apt-get -y install freeciv-client-gtk freeciv-data freeciv-sound-standard
 
 # Log
+echo "${GV_LOG} * Install freeciv-server: You need the server to run freeciv."
 echo "${GV_LOG} * Install freeciv-client-gtk."
 echo "${GV_LOG} * How to run freeciv: http://freeciv.wikia.com/wiki/Install#Start_the_game"
