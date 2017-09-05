@@ -7,12 +7,8 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Explicitly download dependent packages
-#apt-get install -d -y freeciv-sound-standard 
-
 # Install freeciv-client-gtk.
-apt-get -y install freeciv-client-gtk freeciv-sound-standard
-
+apt-get -y install freeciv-client-gtk freeciv-data freeciv-sound-standard
 
 # Log
 echo "${GV_LOG} * Install freeciv-client-gtk."
