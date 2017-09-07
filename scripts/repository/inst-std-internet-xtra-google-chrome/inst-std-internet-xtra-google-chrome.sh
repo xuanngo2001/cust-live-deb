@@ -40,7 +40,7 @@ sed -i "/Internet\">/ r jwmrc-menus-inet-google-chrome.xml" "${CLD_JWMRC_DIR}/jw
 
 # Add alias.
 yes | cp -av ./cld/ /usr/local/
-#yes | cp -av bashrc-google-chrome-alias.sh /etc/profile.d/
+
 
 # Run Google Chrome as root.
 ./run-google-chrome-as-root.sh
