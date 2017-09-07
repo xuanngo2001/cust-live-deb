@@ -35,10 +35,6 @@ if [ -z "${GOOGLE_CHROME_VERSION}" ]; then
   GOOGLE_CHROME_VERSION="ERROR: google-chrome installation failed!"
 fi
 
-# Run Google Chrome as root. Consider: x-www-browser. 
-GOOGLE_CHROME_BIN=/opt/google/chrome/google-chrome
-sed -i.original "s/exec -a \"\$0\" \"\$HERE\/chrome\"  \"\$@\"$/exec -a \"\$0\" \"\$HERE\/chrome\"  \"\$@\" --no-sandbox --user-data-dir/" "${GOOGLE_CHROME_BIN}"
-
 # Insert Google Chrome in Internet menu.
 sed -i "/Internet\">/ r jwmrc-menus-inet-google-chrome.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
@@ -46,9 +42,13 @@ sed -i "/Internet\">/ r jwmrc-menus-inet-google-chrome.xml" "${CLD_JWMRC_DIR}/jw
 yes | cp -av ./cld/ /usr/local/
 #yes | cp -av bashrc-google-chrome-alias.sh /etc/profile.d/
 
+# Run Google Chrome as root.
+./run-google-chrome-as-root.sh
+
+
 # Log
 echo "${GV_LOG} * Install ${GOOGLE_CHROME_VERSION}."
-echo "${GV_LOG} * Modify ${GOOGLE_CHROME_BIN} to run google-chrome as root."
+echo "${GV_LOG} * Modify configuration to run google-chrome as root."
 echo "${GV_LOG} * Insert Google Chrome in Internet menu."
 echo "${GV_LOG} * Add google chrome alias, chrome."
 echo "${GV_LOG} * Set default browser: update-alternatives --config x-www-browser."
