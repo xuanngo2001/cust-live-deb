@@ -1,3 +1,2 @@
 * >>>>>>>>> Running inst-std-accessories-terminal-xfce.sh ...
-  * Install terminal: xfce4-terminal.
-  * Disk size = 2631244K. Space Used = 8K.
+  * Disk size = 2627268K. Space Used = 8K.

@@ -2,7 +2,7 @@
   * After this operation, 49.4 MB of additional disk space will be used.
   * Install fonts-hanazono to display Asian characters correctly.
   * Test it by opening website http://ctext.org/zh.
-  * Disk size = 2588436K. Space Used = 68156K.
+  * Disk size = 2584456K. Space Used = 68172K.
   * The following NEW packages will be installed:
   ```bash
   fonts-hanazono
