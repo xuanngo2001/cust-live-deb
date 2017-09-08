@@ -2,8 +2,14 @@ CLDS:>>>>>>>>> Running inst-std-accessories-terminal-xfce.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-xfce4-terminal is already the newest version (0.8.3-1).
-xfce4-terminal set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-CLDS: * Install terminal: xfce4-terminal.
-CLDS: * Disk size = 2631244K. Space Used = 8K.
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ xfce4-terminal : Depends: libxfce4ui-2-0 (>= 4.11.0) but it is not going to be installed
+                  Depends: exo-utils but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+CLDS: * Disk size = 2627268K. Space Used = 8K.

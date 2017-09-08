@@ -5,50 +5,78 @@ Reading state information...
 lsb-release is already the newest version (9.20161125).
 The following NEW packages will be installed:
   linux-headers-amd64
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-Need to get 0 B/5,954 B of archives.
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 0 B/6,020 B of archives.
 After this operation, 12.3 kB of additional disk space will be used.
 Selecting previously unselected package linux-headers-amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 88984 files and directories currently installed.)
-Preparing to unpack .../linux-headers-amd64_4.11+82~bpo9+1_amd64.deb ...
-Unpacking linux-headers-amd64 (4.11+82~bpo9+1) ...
-Setting up linux-headers-amd64 (4.11+82~bpo9+1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 82938 files and directories currently installed.)
+Preparing to unpack .../linux-headers-amd64_4.12+84~bpo9+1_amd64.deb ...
+Unpacking linux-headers-amd64 (4.12+84~bpo9+1) ...
+Setting up linux-headers-amd64 (4.12+84~bpo9+1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 build-essential is already the newest version (12.3).
 dkms is already the newest version (2.3-2).
 libc6-dev is already the newest version (2.24-11+deb9u1).
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
-linux-headers-4.11.0-0.bpo.1-amd64 is already the newest version (4.11.6-1~bpo9+1).
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+linux-headers-4.12.0-0.bpo.1-amd64 is already the newest version (4.12.6-1~bpo9+1).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   module-assistant
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
 Need to get 101 kB of archives.
 After this operation, 399 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 module-assistant all 0.11.9 [101 kB]
-Fetched 101 kB in 5s (19.9 kB/s)
+Fetched 101 kB in 0s (5,834 kB/s)
 Selecting previously unselected package module-assistant.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 88987 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 82941 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.9_all.deb ...
 Unpacking module-assistant (0.11.9) ...
 Setting up module-assistant (0.11.9) ...
 Getting source for kernel version: 4.11.0-0.bpo.1-amd64
-Kernel headers available in /lib/modules/4.11.0-0.bpo.1-amd64/build
+apt-get -y install linux-headers-4.11.0-0.bpo.1-amd64 
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  linux-headers-4.11.0-0.bpo.1-common linux-kbuild-4.11
+The following NEW packages will be installed:
+  linux-headers-4.11.0-0.bpo.1-amd64 linux-headers-4.11.0-0.bpo.1-common
+  linux-kbuild-4.11
+0 upgraded, 3 newly installed, 0 to remove and 1 not upgraded.
+Need to get 8,748 kB of archives.
+After this operation, 52.1 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.11.0-0.bpo.1-common all 4.11.6-1~bpo9+1 [7,621 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-kbuild-4.11 amd64 4.11.6-1~bpo9+1 [672 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.11.0-0.bpo.1-amd64 amd64 4.11.6-1~bpo9+1 [456 kB]
+Fetched 8,748 kB in 0s (35.4 MB/s)
+Selecting previously unselected package linux-headers-4.11.0-0.bpo.1-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 82983 files and directories currently installed.)
+Preparing to unpack .../linux-headers-4.11.0-0.bpo.1-common_4.11.6-1~bpo9+1_all.deb ...
+Unpacking linux-headers-4.11.0-0.bpo.1-common (4.11.6-1~bpo9+1) ...
+Selecting previously unselected package linux-kbuild-4.11.
+Preparing to unpack .../linux-kbuild-4.11_4.11.6-1~bpo9+1_amd64.deb ...
+Unpacking linux-kbuild-4.11 (4.11.6-1~bpo9+1) ...
+Selecting previously unselected package linux-headers-4.11.0-0.bpo.1-amd64.
+Preparing to unpack .../linux-headers-4.11.0-0.bpo.1-amd64_4.11.6-1~bpo9+1_amd64.deb ...
+Unpacking linux-headers-4.11.0-0.bpo.1-amd64 (4.11.6-1~bpo9+1) ...
+Setting up linux-headers-4.11.0-0.bpo.1-common (4.11.6-1~bpo9+1) ...
+Setting up linux-kbuild-4.11 (4.11.6-1~bpo9+1) ...
+Setting up linux-headers-4.11.0-0.bpo.1-amd64 (4.11.6-1~bpo9+1) ...
 Creating symlink...
 apt-get -y install build-essential 
 Reading package lists...
 Building dependency tree...
 Reading state information...
 build-essential is already the newest version (12.3).
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
 
 Done!
 info: Trying to set 'zfs-dkms/note-incompatible-licenses' [note] to ''
@@ -66,14 +94,14 @@ Recommended packages:
   spl
 The following NEW packages will be installed:
   file spl-dkms
-0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.
 Need to get 449 kB of archives.
 After this operation, 3,122 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 file amd64 1:5.30-1 [63.9 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 spl-dkms all 0.6.5.11-1~bpo9+1 [385 kB]
-Fetched 449 kB in 0s (16.3 MB/s)
+Fetched 449 kB in 0s (11.6 MB/s)
 Selecting previously unselected package file.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89029 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 99081 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.30-1_amd64.deb ...
 Unpacking file (1:5.30-1) ...
 Selecting previously unselected package spl-dkms.
@@ -82,7 +110,8 @@ Unpacking spl-dkms (0.6.5.11-1~bpo9+1) ...
 Setting up file (1:5.30-1) ...
 Setting up spl-dkms (0.6.5.11-1~bpo9+1) ...
 Loading new spl-0.6.5.11 DKMS files...
-Building for 4.11.0-0.bpo.1-amd64
+It is likely that 4.11.0-0.bpo.1-amd64 belongs to a chroot's host
+Building for 4.11.0-0.bpo.1-amd64 and 4.12.0-0.bpo.1-amd64
 Building initial module for 4.11.0-0.bpo.1-amd64
 Done.
 
@@ -103,6 +132,26 @@ Running module version sanity check.
 depmod...
 
 DKMS: install completed.
+Building initial module for 4.12.0-0.bpo.1-amd64
+Done.
+
+spl:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.12.0-0.bpo.1-amd64/updates/dkms/
+
+splat.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.12.0-0.bpo.1-amd64/updates/dkms/
+
+depmod.......
+
+DKMS: install completed.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -110,19 +159,20 @@ Recommended packages:
   zfsutils-linux zfs-zed
 The following NEW packages will be installed:
   zfs-dkms
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
 Need to get 1,082 kB of archives.
 After this operation, 8,202 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 zfs-dkms all 0.6.5.11-1~bpo9+1 [1,082 kB]
 Preconfiguring packages ...
-Fetched 1,082 kB in 0s (26.4 MB/s)
+Fetched 1,082 kB in 0s (28.4 MB/s)
 Selecting previously unselected package zfs-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89327 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 99379 files and directories currently installed.)
 Preparing to unpack .../zfs-dkms_0.6.5.11-1~bpo9+1_all.deb ...
 Unpacking zfs-dkms (0.6.5.11-1~bpo9+1) ...
 Setting up zfs-dkms (0.6.5.11-1~bpo9+1) ...
 Loading new zfs-0.6.5.11 DKMS files...
-Building for 4.11.0-0.bpo.1-amd64
+It is likely that 4.11.0-0.bpo.1-amd64 belongs to a chroot's host
+Building for 4.11.0-0.bpo.1-amd64 and 4.12.0-0.bpo.1-amd64
 Building initial module for 4.11.0-0.bpo.1-amd64
 Done.
 
@@ -171,6 +221,54 @@ Running module version sanity check.
 depmod...
 
 DKMS: install completed.
+Building initial module for 4.12.0-0.bpo.1-amd64
+Done.
+
+zavl:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.12.0-0.bpo.1-amd64/updates/dkms/
+
+zcommon.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.12.0-0.bpo.1-amd64/updates/dkms/
+
+znvpair.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.12.0-0.bpo.1-amd64/updates/dkms/
+
+zpios.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.12.0-0.bpo.1-amd64/updates/dkms/
+
+zunicode.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.12.0-0.bpo.1-amd64/updates/dkms/
+
+zfs.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.12.0-0.bpo.1-amd64/updates/dkms/
+
+depmod...
+
+DKMS: install completed.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -183,7 +281,7 @@ Recommended packages:
 The following NEW packages will be installed:
   libnvpair1linux libuutil1linux libzfs2linux libzpool2linux zfs-initramfs
   zfsutils-linux
-0 upgraded, 6 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 6 newly installed, 0 to remove and 1 not upgraded.
 Need to get 974 kB of archives.
 After this operation, 3,241 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 libuutil1linux amd64 0.6.5.11-1~bpo9+1 [47.6 kB]
@@ -192,9 +290,9 @@ Get:3 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backp
 Get:4 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 libzfs2linux amd64 0.6.5.11-1~bpo9+1 [126 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 zfsutils-linux amd64 0.6.5.11-1~bpo9+1 [334 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 zfs-initramfs all 0.6.5.11-1~bpo9+1 [23.5 kB]
-Fetched 974 kB in 0s (17.4 MB/s)
+Fetched 974 kB in 0s (24.3 MB/s)
 Selecting previously unselected package libuutil1linux.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89731 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 99783 files and directories currently installed.)
 Preparing to unpack .../0-libuutil1linux_0.6.5.11-1~bpo9+1_amd64.deb ...
 Unpacking libuutil1linux (0.6.5.11-1~bpo9+1) ...
 Selecting previously unselected package libnvpair1linux.
@@ -214,7 +312,7 @@ Preparing to unpack .../5-zfs-initramfs_0.6.5.11-1~bpo9+1_all.deb ...
 Unpacking zfs-initramfs (0.6.5.11-1~bpo9+1) ...
 Setting up libuutil1linux (0.6.5.11-1~bpo9+1) ...
 Processing triggers for initramfs-tools (0.130) ...
-update-initramfs: Generating /boot/initrd.img-4.11.0-0.bpo.1-amd64
+update-initramfs: Generating /boot/initrd.img-4.12.0-0.bpo.1-amd64
 live-boot: core filesystems devices utils udev wget blockdev dns.
 Setting up libnvpair1linux (0.6.5.11-1~bpo9+1) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
@@ -230,10 +328,11 @@ Created symlink /etc/systemd/system/multi-user.target.wants/zfs.target → /lib/
 Setting up zfs-initramfs (0.6.5.11-1~bpo9+1) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Processing triggers for initramfs-tools (0.130) ...
-update-initramfs: Generating /boot/initrd.img-4.11.0-0.bpo.1-amd64
+update-initramfs: Generating /boot/initrd.img-4.12.0-0.bpo.1-amd64
 live-boot: core filesystems devices utils udev wget blockdev dns.
+libkmod: ERROR ../libkmod/libkmod.c:514 lookup_builtin_file: could not open builtin file '/lib/modules/4.11.0-0.bpo.1-amd64/modules.builtin.bin'
 CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
 CLDS: * Install zfs-dkms: version: 0.6.5.11-1~bpo9+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Install zfs-initramfs to be able to boot from ZFS.
 CLDS: * Import existing ZFS partitions: zpool import -a
-CLDS: * Disk size = 5625704K. Space Used = 27292K.
+CLDS: * Disk size = 5663088K. Space Used = 120768K.
