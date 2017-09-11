@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-games-freeciv-client-gtk.sh ...
-  * Disk size = 4929128K. Space Used = 4K.
+  * Disk size = 4968488K. Space Used = 4K.
