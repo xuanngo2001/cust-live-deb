@@ -8,14 +8,14 @@ Suggested packages:
   libparted-dev libparted-i18n parted-doc
 The following NEW packages will be installed:
   libparted2 parted
-0 upgraded, 2 newly installed, 0 to remove and 5 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
 Need to get 471 kB of archives.
 After this operation, 801 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libparted2 amd64 3.2-17 [276 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 parted amd64 3.2-17 [194 kB]
-Fetched 471 kB in 0s (13.6 MB/s)
+Fetched 471 kB in 0s (1,463 kB/s)
 Selecting previously unselected package libparted2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14596 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14592 files and directories currently installed.)
 Preparing to unpack .../libparted2_3.2-17_amd64.deb ...
 Unpacking libparted2:amd64 (3.2-17) ...
 Selecting previously unselected package parted.
@@ -28,62 +28,12 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 util-linux is already the newest version (2.29.2-1).
-0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following additional packages will be installed:
-  libsystemd0 libudev1 systemd
-Suggested packages:
-  systemd-container policykit-1
-Recommended packages:
-  libpam-systemd
-The following packages will be upgraded:
-  libsystemd0 libudev1 systemd udev
-4 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
-Need to get 4,435 kB of archives.
-After this operation, 1,967 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 libsystemd0 amd64 234-2~bpo9+1 [284 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 systemd amd64 234-2~bpo9+1 [2,861 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 udev amd64 234-2~bpo9+1 [1,165 kB]
-Get:4 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 libudev1 amd64 234-2~bpo9+1 [124 kB]
-Fetched 4,435 kB in 0s (34.2 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14611 files and directories currently installed.)
-Preparing to unpack .../libsystemd0_234-2~bpo9+1_amd64.deb ...
-Unpacking libsystemd0:amd64 (234-2~bpo9+1) over (232-25+deb9u1) ...
-Setting up libsystemd0:amd64 (234-2~bpo9+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14611 files and directories currently installed.)
-Preparing to unpack .../systemd_234-2~bpo9+1_amd64.deb ...
-Unpacking systemd (234-2~bpo9+1) over (232-25+deb9u1) ...
-Preparing to unpack .../udev_234-2~bpo9+1_amd64.deb ...
-Unpacking udev (234-2~bpo9+1) over (232-25+deb9u1) ...
-Preparing to unpack .../libudev1_234-2~bpo9+1_amd64.deb ...
-Unpacking libudev1:amd64 (234-2~bpo9+1) over (232-25+deb9u1) ...
-Setting up libudev1:amd64 (234-2~bpo9+1) ...
-Processing triggers for libc-bin (2.24-11+deb9u1) ...
-Setting up udev (234-2~bpo9+1) ...
-Installing new version of config file /etc/init.d/udev ...
-addgroup: The group `input' already exists as a system group. Exiting.
-A chroot environment has been detected, udev not started.
-update-initramfs: deferring update (trigger activated)
-Removing obsolete conffile /etc/init/udev.conf ...
-Removing obsolete conffile /etc/init/udevmonitor.conf ...
-Removing obsolete conffile /etc/init/udevtrigger.conf ...
-Setting up systemd (234-2~bpo9+1) ...
-Installing new version of config file /etc/systemd/logind.conf ...
-Installing new version of config file /etc/systemd/resolved.conf ...
-addgroup: The group `systemd-journal' already exists as a system group. Exiting.
-Removing obsolete conffile /etc/dbus-1/system.d/org.freedesktop.hostname1.conf ...
-Removing obsolete conffile /etc/dbus-1/system.d/org.freedesktop.locale1.conf ...
-Removing obsolete conffile /etc/dbus-1/system.d/org.freedesktop.login1.conf ...
-Removing obsolete conffile /etc/dbus-1/system.d/org.freedesktop.network1.conf ...
-Removing obsolete conffile /etc/dbus-1/system.d/org.freedesktop.resolve1.conf ...
-Removing obsolete conffile /etc/dbus-1/system.d/org.freedesktop.systemd1.conf ...
-Removing obsolete conffile /etc/dbus-1/system.d/org.freedesktop.timedate1.conf ...
-Processing triggers for dbus (1.10.18-1) ...
-Processing triggers for initramfs-tools (0.130) ...
-update-initramfs: Generating /boot/initrd.img-4.12.0-0.bpo.1-amd64
-live-boot: core filesystems devices utils udev wget blockdev dns.
+udev is already the newest version (232-25+deb9u1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 './cld/.gitignore' -> '/usr/local/cld/.gitignore'
 './cld/bin/apt-dependency.sh' -> '/usr/local/cld/bin/apt-dependency.sh'
 './cld/bin/bash-color-meaning.sh' -> '/usr/local/cld/bin/bash-color-meaning.sh'
@@ -101,4 +51,4 @@ live-boot: core filesystems devices utils udev wget blockdev dns.
 './cld/bin/lspace.sh' -> '/usr/local/cld/bin/lspace.sh'
 './cld/bin/readme.md' -> '/usr/local/cld/bin/readme.md'
 './cld/bin/cld-dpkg-list.sh' -> '/usr/local/bin/cld-dpkg-list.sh'
-CLDS: * Disk size = 1208444K. Space Used = 7536K.
+CLDS: * Disk size = 1200356K. Space Used = 1352K.

@@ -16,7 +16,7 @@ The following NEW packages will be installed:
   libsigsegv2 lsof mariadb-client-10.1 mariadb-client-core-10.1 mariadb-common
   mariadb-server mariadb-server-10.1 mariadb-server-core-10.1 mysql-common
   psmisc socat
-0 upgraded, 18 newly installed, 0 to remove and 1 not upgraded.
+0 upgraded, 18 newly installed, 0 to remove and 0 not upgraded.
 Need to get 25.3 MB of archives.
 After this operation, 188 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmpfr4 amd64 3.1.5-1 [556 kB]
@@ -38,9 +38,9 @@ Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 socat 
 Get:17 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 mariadb-server-10.1 amd64 10.1.26-0+deb9u1 [5,333 kB]
 Get:18 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 mariadb-server all 10.1.26-0+deb9u1 [26.2 kB]
 Preconfiguring packages ...
-Fetched 25.3 MB in 0s (41.8 MB/s)
+Fetched 25.3 MB in 1s (17.5 MB/s)
 Selecting previously unselected package libmpfr4:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35717 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35686 files and directories currently installed.)
 Preparing to unpack .../libmpfr4_3.1.5-1_amd64.deb ...
 Unpacking libmpfr4:amd64 (3.1.5-1) ...
 Selecting previously unselected package libsigsegv2:amd64.
@@ -49,7 +49,7 @@ Unpacking libsigsegv2:amd64 (2.10-5) ...
 Setting up libmpfr4:amd64 (3.1.5-1) ...
 Setting up libsigsegv2:amd64 (2.10-5) ...
 Selecting previously unselected package gawk.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35739 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35708 files and directories currently installed.)
 Preparing to unpack .../00-gawk_1%3a4.1.4+dfsg-1_amd64.deb ...
 Unpacking gawk (1:4.1.4+dfsg-1) ...
 Selecting previously unselected package mysql-common.
@@ -96,7 +96,7 @@ update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.c
 Setting up mariadb-common (10.1.26-0+deb9u1) ...
 update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
 Selecting previously unselected package mariadb-server-10.1.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36366 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36335 files and directories currently installed.)
 Preparing to unpack .../mariadb-server-10.1_10.1.26-0+deb9u1_amd64.deb ...
 Unpacking mariadb-server-10.1 (10.1.26-0+deb9u1) ...
 Selecting previously unselected package mariadb-server.
@@ -110,7 +110,7 @@ Setting up gawk (1:4.1.4+dfsg-1) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Setting up libaio1:amd64 (0.3.110-3) ...
 Setting up galera-3 (25.3.19-2) ...
-Processing triggers for systemd (234-2~bpo9+1) ...
+Processing triggers for systemd (232-25+deb9u1) ...
 Setting up libreadline5:amd64 (5.2+dfsg-3+b1) ...
 Setting up libdbi-perl (1.636-1+b1) ...
 Setting up mariadb-server-core-10.1 (10.1.26-0+deb9u1) ...
@@ -124,8 +124,8 @@ Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
 Setting up mariadb-server (10.1.26-0+deb9u1) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
-Processing triggers for systemd (234-2~bpo9+1) ...
+Processing triggers for systemd (232-25+deb9u1) ...
 mysqladmin: connect to server at 'localhost' failed
 error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")'
 Check that mysqld is running and that the socket: '/var/run/mysqld/mysqld.sock' exists!
-CLDS: * Disk size = 2322684K. Space Used = 319932K.
+CLDS: * Disk size = 2315196K. Space Used = 319940K.
