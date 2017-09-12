@@ -7,6 +7,11 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Explicitly download dependent packages
+apt-get install -d -y libxfce4ui-2-0
+apt-get install -d -y exo-utils
+
+# Install xfce4-terminal.
 apt-get -y install xfce4-terminal
 
 # Log
