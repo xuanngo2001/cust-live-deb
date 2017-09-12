@@ -29,7 +29,9 @@ localepurge
 # ./inst-min-con-cld-dev-tools-debootstrap/inst-min-con-cld-dev-tools-debootstrap.sh
 debootstrap
 # ./inst-min-con-cld-tools/inst-min-con-cld-tools.sh
-
+parted
+util-linux
+udev
 # ./inst-min-con-compressors/inst-min-con-compressors.sh
 bzip2
 rar
@@ -128,8 +130,6 @@ locate
 macchanger
 # ./inst-min-con-xtra-mariadb-server/inst-min-con-xtra-mariadb-server.sh
 mariadb-server
-# ./inst-min-con-xtra-openjdk-8-jre/inst-min-con-xtra-openjdk-8-jre.sh
-openjdk-8-jre
 # ./inst-min-con-xtra-pdf-poppler-utils/inst-min-con-xtra-pdf-poppler-utils.sh
 poppler-utils
 # ./inst-min-con-xtra-php/inst-min-con-xtra-php.sh
@@ -162,8 +162,6 @@ menu
 volumeicon-alsa
 # ./inst-min-win-xtra-fonts-asian/inst-min-win-xtra-fonts-asian.sh
 fonts-hanazono
-# ./inst-min-win-xtra-pandoc-git/inst-min-win-xtra-pandoc-git.sh
-pandoc
 # ./inst-min-win-xtra-xdotool/inst-min-win-xtra-xdotool.sh
 xdotool
 # ./inst-std-00-jwm/inst-std-00-jwm.sh
@@ -182,6 +180,8 @@ gnome-screenshot
 scite
 at-spi2-core
 # ./inst-std-accessories-terminal-xfce/inst-std-accessories-terminal-xfce.sh
+libxfce4ui-2-0
+exo-utils
 xfce4-terminal
 # ./inst-std-accessories-thunar/inst-std-accessories-thunar.sh
 thunar
@@ -194,15 +194,14 @@ fonts-liberation
 pinta
 # ./inst-std-help-manuals-html/inst-std-help-manuals-html.sh
 
-# ./inst-std-internet-browser-plugin-freshplayer-libpdf/inst-std-internet-browser-plugin-freshplayer-libpdf.sh
-libevent-pthreads-2.0-5
-browser-plugin-freshplayer-libpdf
 # ./inst-std-internet-browser-plugin-freshplayer-pepperflash/inst-std-internet-browser-plugin-freshplayer-pepperflash.sh
 libevent-pthreads-2.0-5
 browser-plugin-freshplayer-pepperflash
 # ./inst-std-internet-firefox-esr/inst-std-internet-firefox-esr.sh
 libjsoncpp1
 firefox-esr
+# ./inst-std-internet-xtra-flashplayer/inst-std-internet-xtra-flashplayer.sh
+
 # ./inst-std-internet-xtra-google-chrome/inst-std-internet-xtra-google-chrome.sh
 libappindicator1
 libdbusmenu-glib4
@@ -214,6 +213,9 @@ libgconf-2-4
 libxss1
 lsb-release
 google-chrome-stable
+# ./inst-std-internet-xtra-opera/inst-std-internet-xtra-opera.sh
+apt-transport-https
+opera-stable
 # ./inst-std-internet-xtra-transmission-gtk/inst-std-internet-xtra-transmission-gtk.sh
 transmission-gtk
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
@@ -229,20 +231,6 @@ libzvbi0
 libuchardet0
 mpv
 # ./inst-std-office-libreoffice/inst-std-office-libreoffice.sh
-libreoffice-base
-libreoffice-calc
-libreoffice-core
-libreoffice-draw
-libreoffice-impress
-libreoffice-math
-libreoffice-report-builder-bin
-libreoffice-writer
-libreoffice-avmedia-backend-gstreamer
-python3-uno
-libreoffice-common
-libgpgmepp6
-libreoffice-base-core
-libreoffice-base-drivers
 libreoffice
 # ./inst-std-office-xtra-projectlibre/inst-std-office-xtra-projectlibre.sh
 
@@ -285,15 +273,11 @@ php-mysql
 ant
 # ./inst-xtra-freecad/inst-xtra-freecad.sh
 freecad
-# ./inst-xtra-games-0ad/inst-xtra-games-0ad.sh
-0ad
 # ./inst-xtra-games-freeciv-client-gtk/inst-xtra-games-freeciv-client-gtk.sh
-freeciv-client-gtk
-freeciv-sound-standard
-# ./inst-xtra-games-freeciv-server/inst-xtra-games-freeciv-server.sh
 freeciv-server
-# ./inst-xtra-games-megaglest/inst-xtra-games-megaglest.sh
-megaglest
+freeciv-client-gtk
+freeciv-data
+freeciv-sound-standard
 # ./inst-xtra-games-openra/inst-xtra-games-openra.sh
 libsdl2-2.0-0
 libmono-system-data4.0-cil
