@@ -36,6 +36,20 @@ fct_home()
     echo "${scripts_list}"
   }
 
+fct_home_inspiron()
+  {
+    local scripts_list=$(fct_home)
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'games-' | grep -vF 'freecad')
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'opw-' | grep -vF 'xtra-php' | grep -vF 'mariadb-server' | grep -vF 'apache2')
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'zfs-')
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'projectlibre')
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'xtra-git')
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'graphviz')
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'tools-ant')
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'tools-pandoc')
+    echo "${scripts_list}"
+  }
+
 fct_std_xtra()
   {
     local scripts_list=$(fct_home)
@@ -104,7 +118,12 @@ case "${SYSTEM}" in
   home)
     fct_home > ${SCRIPT_LIST}
     ;;
-				
+
+  # Most of applications but no proxy settings and no virtualbox ++ for Inspiron laptop
+  home_inspiron)
+    fct_home_inspiron > ${SCRIPT_LIST}
+    ;;
+
   # Most of applications + proxy settings.  
 	work)
     fct_work > ${SCRIPT_LIST}
