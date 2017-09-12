@@ -18,6 +18,10 @@ apt-get install -d -y apt-transport-https
 debconf-set-selections -v opera.seed
 apt-get -y install opera-stable
 
+# Insert Opera in Internet menu.
+sed -i "/Internet\">/ r jwmrc-menus-inet-opera.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
+
+
 # Log
 echo "${GV_LOG} * Install opera."
 
