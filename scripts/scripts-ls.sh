@@ -1,35 +1,78 @@
 #!/bin/bash
 set -e
 # Description: Generate a list of scripts to be executed.
+#   Desing: All scripts to less scripts.
 # TODO: Is home & work switch for public release?
 SCRIPT_NAME=$(basename "$0")
 
 SYSTEM=$1
 
 # Error handling
-###################
-if [ -z "${SYSTEM}" ]; then
-  echo "${SCRIPT_NAME}: Error: SYSTEM argument missing. e.g.:"
-  echo "   ${SCRIPT_NAME} min"
-  echo "   ${SCRIPT_NAME} std"
-  echo "   ${SCRIPT_NAME} repo"
-  echo "   ${SCRIPT_NAME} all"
-  exit 0
-fi
+  if [ -z "${SYSTEM}" ]; then
+    echo "${SCRIPT_NAME}: Error: SYSTEM argument missing. e.g.:"
+    echo "   ${SCRIPT_NAME} min"
+    echo "   ${SCRIPT_NAME} std"
+    echo "   ${SCRIPT_NAME} repo"
+    echo "   ${SCRIPT_NAME} all"
+    exit 1
+  fi
+
+# Functtions: All to less
+fct_all()
+  {
+    find $(readlink -ev ./repository/inst-*) -type f -name "inst-*.sh" | sort
+  }
+
+fct_work()
+  {
+    local scripts_list=$(fct_all)
+    echo "${scripts_list}"
+  }
+
+fct_home()
+  {
+    local scripts_list=$(fct_work)
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'proxy' | grep -vF 'virtualbox')
+    echo "${scripts_list}"
+  }
+
+fct_std_xtra()
+  {
+    local scripts_list=$(fct_home)
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'inst-xtra-')
+    echo "${scripts_list}"
+  }
+  
+fct_std()
+  {
+    # Clean standard packages. No -xtra-, not even on the -min- level.
+    local scripts_list=$(fct_std_xtra)
+    scripts_list=$(echo "${scripts_list}" | grep -v '\-xtra-')
+    echo "${scripts_list}"
+  }  
+
+fct_min_xtra()
+  {
+    local scripts_list=$(fct_std_xtra)
+    scripts_list=$(echo "${scripts_list}" | grep -v 'inst-std-')
+    echo "${scripts_list}"
+  }
+  
+fct_min()
+  {
+    # Clean minimum packages. No -xtra-.
+    local scripts_list=$(fct_std)
+    scripts_list=$(echo "${scripts_list}" | grep -v 'inst-std-')
+    echo "${scripts_list}"
+  }    
 
 # Convert input to lowercase
 SYSTEM=$(echo $1 | tr '[[:upper:]]' '[[:lower:]]')
 
 # Generate script-ls.lst
 ########################
-SCRIPT_LIST_ALL=scripts-ls.all
 SCRIPT_LIST=scripts-ls.lst
 
-# Put all scripts in ${SCRIPT_LIST_ALL}. Then filter later on as needed.
-find $(readlink -ev ./repository/inst-*) -type f -name "inst-*.sh" | sort > ${SCRIPT_LIST_ALL}
-
-# Remove not-used scripts
-sed -i '/not-used/d' ${SCRIPT_LIST_ALL}
 
 # Clear scripts-ls.lst
 cat /dev/null > ${SCRIPT_LIST}
@@ -37,71 +80,39 @@ cat /dev/null > ${SCRIPT_LIST}
 case "${SYSTEM}" in
   
   # Minimum system with X window.
-	min)
-    # Add inst-min-con- | Add inst-min-win-
-    grep 'inst-min-con-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-    grep 'inst-min-win-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-    
-    # No proxy settings
-    sed -i '/proxy/d' ${SCRIPT_LIST}
-    
-    # No extra
-    sed -i '/-xtra-/d' ${SCRIPT_LIST}
+	min_xtra)
+    fct_min_xtra > ${SCRIPT_LIST}
 	  ;;
 
-  # Standard system for the general public. Strict minimum with common applications.
-  std)
-    # Add inst-min-con- | Add inst-min-win-
-    grep 'inst-min-con-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-    grep 'inst-min-win-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-    
-    # Add inst-std-
-    grep 'inst-std-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-    
-    # No proxy settings
-    sed -i '/proxy/d' ${SCRIPT_LIST}
-
-    # No extra
-    sed -i '/-xtra-/d' ${SCRIPT_LIST}
+  # Minimum system with X window.
+  min)
+    fct_min > ${SCRIPT_LIST}
     ;;
 
-  # Minimum system + tools to rebuild Debian repository from scratch.
-  repo)
-    # Minimum system
-	    # Add inst-min-con- | Add inst-min-win-
-	    grep 'inst-min-con-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-	    grep 'inst-min-win-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-	    
-	    # No extra
-	    sed -i '/-xtra-/d' ${SCRIPT_LIST}
-    
-    # Tools to rebuild Debian repository.
-      grep -F 'inst-min-con-xtra-cld-dev-tools-aptly' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-      grep -F 'inst-min-con-xtra-cld-dev-virtualbox-guest-additions' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-#      grep -F 'inst-min-win-xtra-cld-dev-tools-virtualbox-guest-iso' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-#      grep -F 'inst-xtra-virtualbox-guest-x11-bpo' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-      grep -F 'inst-xtra-zfs' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-    
+  # Standard system for the general public. Strict minimum with common applications.
+  std_xtra)
+    fct_std_xtra > ${SCRIPT_LIST}
+     
+    ;;
+  # Standard system for the general public. Strict minimum with common applications.
+  std)
+    fct_std > ${SCRIPT_LIST}
+     
     ;;
 
   # Most of applications but no proxy settings and no virtualbox. 
   home)
-    grep -E 'inst-[min|std|xtra]' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
-
-    # No proxy settings
-    sed -i '/proxy/d' ${SCRIPT_LIST}
-    # No virtualbox
-    sed -i '/virtualbox/d' ${SCRIPT_LIST}
+    fct_home > ${SCRIPT_LIST}
     ;;
 				
   # Most of applications + proxy settings.  
 	work)
-    grep -E 'inst-[min|std|xtra]' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
+    fct_work > ${SCRIPT_LIST}
 	  ;;
 
   # All install scripts in the repository.  
   all)
-    grep -v 'inst-zclean-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
+    fct_all > ${SCRIPT_LIST}
     ;;
 	  	  
 	*)
@@ -109,6 +120,7 @@ case "${SYSTEM}" in
 	  exit 1
 	  ;;
 esac
+
 
 # Exclude scripts
 #   scripts-ex.lst: Don't put absolute path because chroot/ path is different.
@@ -121,8 +133,6 @@ while IFS='' read -r LINE || [[ -n "${LINE}" ]]; do
 done < <(cat scripts-ex.lst | grep -v "^#"  | awk NF) # Ignore comment line | Remove empty line
 echo "${SCRIPT_LIST_CONTENT}" > "${SCRIPT_LIST}"
 
-# Add clean up scripts.
-grep 'inst-zclean-' ${SCRIPT_LIST_ALL} >> ${SCRIPT_LIST}
 
 # Sanity check: sort | uniq
 ##########################
