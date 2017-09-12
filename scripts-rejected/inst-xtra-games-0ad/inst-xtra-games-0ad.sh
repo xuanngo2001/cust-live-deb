@@ -18,4 +18,4 @@ apt-get -y install 0ad
 echo "${GV_LOG} * Install 0ad."
 
 # REJECTED:
-#   Too big.
+#   Too big: > 2 GB
