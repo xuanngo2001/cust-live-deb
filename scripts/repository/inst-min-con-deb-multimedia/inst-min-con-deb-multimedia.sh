@@ -16,7 +16,7 @@ rm -f ${DEB_MULTIMEDIA_KEYRING}
 #apt-get -y install deb-multimedia-keyring
 
 # Add deb-multimedia sources list
-GF_ADD_SOURCE_LIST live "deb http://www.deb-multimedia.org jessie main non-free"
+GF_ADD_SOURCE_LIST live "deb http://www.deb-multimedia.org stretch main non-free"
 
 # Update packages.
 apt-get update
