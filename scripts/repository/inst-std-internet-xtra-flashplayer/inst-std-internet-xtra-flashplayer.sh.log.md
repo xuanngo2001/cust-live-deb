@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-internet-xtra-flashplayer.sh ...
   * Install flashplayer: Flash Player for Linux 26.0.0.151.
-  * Disk size = 2934296K. Space Used = 21080K.
+  * Disk size = 2504964K. Space Used = 21080K.
