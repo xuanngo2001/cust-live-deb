@@ -17,11 +17,6 @@ apt-get -y install firefox-esr
 sed -i "/Internet\">/ r jwmrc-menus-inet-firefox.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 
-# Install flash plugin.
-#apt-get -y install flashplugin-nonfree
-#apt-get -y install libevent-pthreads-2.0-5
-#apt-get -y install browser-plugin-freshplayer-pepperflash
-
 # Log
 echo "${GV_LOG} * Install the latest Firefox from Debian Mozilla team: $(firefox --version | grep Mozilla)."
 echo "${GV_LOG} * Insert Iceweasel in Internet menu."
