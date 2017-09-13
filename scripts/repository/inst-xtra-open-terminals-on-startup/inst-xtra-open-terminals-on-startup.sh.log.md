@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-open-terminals-on-startup.sh ...
-  * Disk size = 4416368K. Space Used = 4K.
+  * Disk size = 4455980K. Space Used = 4K.
