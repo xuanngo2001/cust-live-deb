@@ -3,7 +3,7 @@
   * Install locate to generate an index of files and directories. Searching for files will be much faster.
   * Add locate alias.
   * Run updatedb to update the database.
-  * Disk size = 1934012K. Space Used = 564K.
+  * Disk size = 1994160K. Space Used = 568K.
   * The following NEW packages will be installed:
   ```bash
   locate
