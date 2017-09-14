@@ -8,6 +8,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly install dependent packages
+  apt-get -y install xdg-utils
   apt-get -y install libsdl2-2.0-0   
   apt-get -y install libmono-system-data4.0-cil
   apt-get -y install libmono-system-numerics4.0-cil
