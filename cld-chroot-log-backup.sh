@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-# Description: Backup logs generated.
+# Description: Backup chroot logs generated.
 
 LOG_DIR=$1
 DEST_DIR=$2
