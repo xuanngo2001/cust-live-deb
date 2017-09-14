@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-zfs-dkms.sh ...
-  * Disk size = 4475164K. Space Used = 4K.
+  * Disk size = 4475136K. Space Used = 4K.

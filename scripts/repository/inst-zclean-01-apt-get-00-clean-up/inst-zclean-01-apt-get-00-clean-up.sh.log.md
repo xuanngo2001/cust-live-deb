@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-zclean-01-apt-get-00-clean-up.sh ...
-  * Disk size = 4475168K. Space Used = 4K.
+  * Disk size = 4475140K. Space Used = 4K.

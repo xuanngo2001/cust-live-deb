@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-graphviz.sh ...
-  * Disk size = 4455976K. Space Used = 4K.
+  * Disk size = 4455948K. Space Used = 4K.
