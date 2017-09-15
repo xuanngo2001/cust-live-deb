@@ -1,2 +1,6 @@
 * >>>>>>>>> Running inst-xtra-open-terminals-on-startup.sh ...
-  * Disk size = 4455952K. Space Used = 4K.
+  * Install x11-xserver-utils for xrandr.
+  * Install wmctrl.
+  * Install x11-utils for xprop.
+  * Make open-terminals.sh run when JWM start.
+  * Disk size = 4558664K. Space Used = 20K.
