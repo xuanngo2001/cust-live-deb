@@ -6,7 +6,7 @@
   * After this operation, 1,520 kB of additional disk space will be used.
   * After this operation, 70.0 MB of additional disk space will be used.
   * Install openra.
-  * Disk size = 4456392K. Space Used = 126888K.
+  * Disk size = 4659252K. Space Used = 126888K.
   * The following NEW packages will be installed:
   ```bash
   xdg-utils

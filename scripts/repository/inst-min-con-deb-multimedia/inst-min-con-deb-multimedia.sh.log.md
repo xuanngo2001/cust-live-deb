@@ -2,4 +2,4 @@
   * Add deb-multimedia key.
   * Add deb-multimedia repository.
   * apt-get update
-  * Disk size = 1244328K. Space Used = 44K.
+  * Disk size = 1204788K. Space Used = 44K.
