@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 # Description: List Debian packages with its version number.
+#               Used in .../cust-live-deb/scripts/main.sh
 # Output: Return values can be feed to packages.list
 
 ACTION=$1
