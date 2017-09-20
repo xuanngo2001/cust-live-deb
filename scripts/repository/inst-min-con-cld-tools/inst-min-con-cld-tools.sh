@@ -11,6 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   apt-get -y install util-linux # partx
   apt-get -y install udev       # udevadm
 
-chmod +x ./cld/bin/*.sh
-yes | cp -av ./cld/ /usr/local/
+# Copy all scripts to executable folder.
+  chmod +x ./cld/bin/*.sh
+  yes | cp -av ./cld/ /usr/local/
 
