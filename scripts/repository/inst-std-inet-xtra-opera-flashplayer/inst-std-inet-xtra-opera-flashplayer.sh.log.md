@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-inet-xtra-opera-flashplayer.sh ...
   * Install flashplayer: Flash Player for Linux 27.0.0.130.
-  * Disk size = 2732312K. Space Used = 21128K.
+  * Disk size = 2732228K. Space Used = 21128K.

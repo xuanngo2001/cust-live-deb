@@ -1,15 +1,13 @@
 * >>>>>>>>> Running inst-xtra-games-openra.sh ...
-  * After this operation, 313 kB of additional disk space will be used.
   * After this operation, 2,784 kB of additional disk space will be used.
   * After this operation, 1,350 kB of additional disk space will be used.
   * After this operation, 203 kB of additional disk space will be used.
   * After this operation, 1,520 kB of additional disk space will be used.
   * After this operation, 70.0 MB of additional disk space will be used.
   * Install openra.
-  * Disk size = 4659252K. Space Used = 126888K.
+  * Disk size = 4915748K. Space Used = 126460K.
   * The following NEW packages will be installed:
   ```bash
-  xdg-utils
   libmono-data-tds4.0-cil libmono-system-data4.0-cil
   libmono-system-enterpriseservices4.0-cil libmono-system-numerics4.0-cil
   libmono-system-transactions4.0-cil

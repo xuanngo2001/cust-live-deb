@@ -2,7 +2,7 @@
   * After this operation, 872 kB of additional disk space will be used.
   * After this operation, 185 MB of additional disk space will be used.
   * Install opera.
-  * Disk size = 2958124K. Space Used = 225812K.
+  * Disk size = 2958036K. Space Used = 225808K.
   * The following NEW packages will be installed:
   ```bash
   apt-transport-https libcurl3-gnutls
