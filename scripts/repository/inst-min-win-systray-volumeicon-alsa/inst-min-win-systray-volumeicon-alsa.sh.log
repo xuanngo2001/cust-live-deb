@@ -2,20 +2,30 @@ CLDS:>>>>>>>>> Running inst-min-win-systray-volumeicon-alsa.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following additional packages will be installed:
+  libnotify4
 Suggested packages:
   alsamixergui | aumix-gtk | kmix | gnome-alsamixer notify-osd | xfce4-notifyd
   | notification-daemon
+Recommended packages:
+  notification-daemon
 The following NEW packages will be installed:
-  volumeicon-alsa
-0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
-Need to get 46.8 kB of archives.
-After this operation, 227 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 volumeicon-alsa amd64 0.5.1+git20170117-1~bpo9+1 [46.8 kB]
-Fetched 46.8 kB in 0s (820 kB/s)
+  libnotify4 volumeicon-alsa
+0 upgraded, 2 newly installed, 0 to remove and 3 not upgraded.
+Need to get 68.7 kB of archives.
+After this operation, 287 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnotify4 amd64 0.7.7-2 [21.9 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 volumeicon-alsa amd64 0.5.1+git20170117-1~bpo9+1 [46.8 kB]
+Fetched 68.7 kB in 0s (518 kB/s)
+Selecting previously unselected package libnotify4:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 26838 files and directories currently installed.)
+Preparing to unpack .../libnotify4_0.7.7-2_amd64.deb ...
+Unpacking libnotify4:amd64 (0.7.7-2) ...
 Selecting previously unselected package volumeicon-alsa.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38015 files and directories currently installed.)
 Preparing to unpack .../volumeicon-alsa_0.5.1+git20170117-1~bpo9+1_amd64.deb ...
 Unpacking volumeicon-alsa (0.5.1+git20170117-1~bpo9+1) ...
+Setting up libnotify4:amd64 (0.7.7-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Setting up volumeicon-alsa (0.5.1+git20170117-1~bpo9+1) ...
 './cld/app/jwm/bootstrap/jwmrc-startup-volumeicon.sh' -> '/usr/local/cld/app/jwm/bootstrap/jwmrc-startup-volumeicon.sh'
 './cld/home/.config' -> '/usr/local/cld/home/.config'
@@ -24,4 +34,4 @@ Setting up volumeicon-alsa (0.5.1+git20170117-1~bpo9+1) ...
 CLDS: * Install volume controller in system tray.
 CLDS: * Set left-click to display volume slider: lmb_slider=true.
 CLDS: * Set volumeicon to run on JWN startup.
-CLDS: * Disk size = 2529132K. Space Used = 388K.
+CLDS: * Disk size = 1812632K. Space Used = 504K.
