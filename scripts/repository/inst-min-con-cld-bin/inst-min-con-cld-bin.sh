@@ -7,7 +7,8 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-yes | cp -av ./cld  /usr/local
+# Add to CLD/
+  yes | cp -av ./cld  /usr/local
 
 # Log
 echo "${GV_LOG} * Install cld-bin."
