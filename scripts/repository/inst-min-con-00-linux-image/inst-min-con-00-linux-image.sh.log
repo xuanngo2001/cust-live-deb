@@ -195,7 +195,7 @@ Suggested packages:
   default-dbus-session-bus | dbus-session-bus
 The following NEW packages will be installed:
   dbus dialog libdbus-1-3 libexpat1
-0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 4 newly installed, 0 to remove and 3 not upgraded.
 Need to get 746 kB of archives.
 After this operation, 2517 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdbus-1-3 amd64 1.10.18-1 [192 kB]
@@ -212,7 +212,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 746 kB in 0s (7093 kB/s)
+Fetched 746 kB in 0s (6288 kB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9120 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.10.18-1_amd64.deb ...
@@ -240,29 +240,29 @@ Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
   busybox-static firmware-linux-free initramfs-tools initramfs-tools-core
-  klibc-utils libklibc linux-base linux-image-4.11.0-0.bpo.1-amd64
+  klibc-utils libklibc linux-base linux-image-4.12.0-0.bpo.2-amd64
   live-boot-initramfs-tools rsync
 Suggested packages:
-  bash-completion linux-doc-4.11 debian-kernel-handbook grub-pc
+  bash-completion linux-doc-4.12 debian-kernel-handbook grub-pc
   | grub-efi-amd64 | extlinux cryptsetup curlftpfs httpfs2 openssh-client
   openssh-server
 Recommended packages:
   irqbalance live-boot-doc live-tools uuid-runtime
 The following NEW packages will be installed:
   busybox-static firmware-linux-free initramfs-tools initramfs-tools-core
-  klibc-utils libklibc linux-base linux-image-4.11.0-0.bpo.1-amd64
+  klibc-utils libklibc linux-base linux-image-4.12.0-0.bpo.2-amd64
   linux-image-amd64 live-boot live-boot-initramfs-tools rsync
-0 upgraded, 12 newly installed, 0 to remove and 0 not upgraded.
-Need to get 41.0 MB of archives.
-After this operation, 195 MB of additional disk space will be used.
+0 upgraded, 12 newly installed, 0 to remove and 3 not upgraded.
+Need to get 41.4 MB of archives.
+After this operation, 197 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 firmware-linux-free all 3.4 [19.2 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libklibc amd64 2.0.4-9 [52.6 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 klibc-utils amd64 2.0.4-9 [108 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 initramfs-tools-core all 0.130 [97.0 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 linux-base all 4.5 [19.1 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 initramfs-tools all 0.130 [66.0 kB]
-Get:7 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-image-4.11.0-0.bpo.1-amd64 amd64 4.11.6-1~bpo9+1 [39.3 MB]
-Get:8 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-image-amd64 amd64 4.11+82~bpo9+1 [7012 B]
+Get:7 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-image-4.12.0-0.bpo.2-amd64 amd64 4.12.13-1~bpo9+1 [39.7 MB]
+Get:8 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-image-amd64 amd64 4.12+85~bpo9+1 [7140 B]
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 busybox-static amd64 1:1.22.0-19+b3 [855 kB]
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 live-boot-initramfs-tools all 1:20170112 [30.7 kB]
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 live-boot all 1:20170112 [53.1 kB]
@@ -278,7 +278,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 41.0 MB in 1s (36.0 MB/s)
+Fetched 41.4 MB in 1s (26.3 MB/s)
 Selecting previously unselected package firmware-linux-free.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9336 files and directories currently installed.)
 Preparing to unpack .../00-firmware-linux-free_3.4_all.deb ...
@@ -299,12 +299,12 @@ Unpacking linux-base (4.5) ...
 Selecting previously unselected package initramfs-tools.
 Preparing to unpack .../05-initramfs-tools_0.130_all.deb ...
 Unpacking initramfs-tools (0.130) ...
-Selecting previously unselected package linux-image-4.11.0-0.bpo.1-amd64.
-Preparing to unpack .../06-linux-image-4.11.0-0.bpo.1-amd64_4.11.6-1~bpo9+1_amd64.deb ...
-Unpacking linux-image-4.11.0-0.bpo.1-amd64 (4.11.6-1~bpo9+1) ...
+Selecting previously unselected package linux-image-4.12.0-0.bpo.2-amd64.
+Preparing to unpack .../06-linux-image-4.12.0-0.bpo.2-amd64_4.12.13-1~bpo9+1_amd64.deb ...
+Unpacking linux-image-4.12.0-0.bpo.2-amd64 (4.12.13-1~bpo9+1) ...
 Selecting previously unselected package linux-image-amd64.
-Preparing to unpack .../07-linux-image-amd64_4.11+82~bpo9+1_amd64.deb ...
-Unpacking linux-image-amd64 (4.11+82~bpo9+1) ...
+Preparing to unpack .../07-linux-image-amd64_4.12+85~bpo9+1_amd64.deb ...
+Unpacking linux-image-amd64 (4.12+85~bpo9+1) ...
 Selecting previously unselected package busybox-static.
 Preparing to unpack .../08-busybox-static_1%3a1.22.0-19+b3_amd64.deb ...
 Unpacking busybox-static (1:1.22.0-19+b3) ...
@@ -335,56 +335,56 @@ update-initramfs: deferring update (trigger activated)
 Setting up live-boot-initramfs-tools (1:20170112) ...
 update-initramfs: deferring update (trigger activated)
 Setting up live-boot (1:20170112) ...
-Setting up linux-image-4.11.0-0.bpo.1-amd64 (4.11.6-1~bpo9+1) ...
-I: /vmlinuz.old is now a symlink to boot/vmlinuz-4.11.0-0.bpo.1-amd64
-I: /initrd.img.old is now a symlink to boot/initrd.img-4.11.0-0.bpo.1-amd64
-I: /vmlinuz is now a symlink to boot/vmlinuz-4.11.0-0.bpo.1-amd64
-I: /initrd.img is now a symlink to boot/initrd.img-4.11.0-0.bpo.1-amd64
+Setting up linux-image-4.12.0-0.bpo.2-amd64 (4.12.13-1~bpo9+1) ...
+I: /vmlinuz.old is now a symlink to boot/vmlinuz-4.12.0-0.bpo.2-amd64
+I: /initrd.img.old is now a symlink to boot/initrd.img-4.12.0-0.bpo.2-amd64
+I: /vmlinuz is now a symlink to boot/vmlinuz-4.12.0-0.bpo.2-amd64
+I: /initrd.img is now a symlink to boot/initrd.img-4.12.0-0.bpo.2-amd64
 /etc/kernel/postinst.d/initramfs-tools:
-update-initramfs: Generating /boot/initrd.img-4.11.0-0.bpo.1-amd64
+update-initramfs: Generating /boot/initrd.img-4.12.0-0.bpo.2-amd64
 live-boot: core filesystems devices utils udev wget blockdev dns.
-Setting up linux-image-amd64 (4.11+82~bpo9+1) ...
+Setting up linux-image-amd64 (4.12+85~bpo9+1) ...
 Processing triggers for initramfs-tools (0.130) ...
-update-initramfs: Generating /boot/initrd.img-4.11.0-0.bpo.1-amd64
+update-initramfs: Generating /boot/initrd.img-4.12.0-0.bpo.2-amd64
 live-boot: core filesystems devices utils udev wget blockdev dns.
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                             Version         Architecture Description
-+++-================================-===============-============-===================================
-ii  linux-image-4.11.0-0.bpo.1-amd64 4.11.6-1~bpo9+1 amd64        Linux 4.11 for 64-bit PCs
-ii  linux-image-amd64                4.11+82~bpo9+1  amd64        Linux for 64-bit PCs (meta-package)
-total 30764
--rw-r--r-- 1 root root  2916297 Jul  9 18:22 System.map-4.11.0-0.bpo.1-amd64
--rw-r--r-- 1 root root   191631 Jul  9 18:22 config-4.11.0-0.bpo.1-amd64
--rw-r--r-- 1 root root 24043416 Oct  2 16:03 initrd.img-4.11.0-0.bpo.1-amd64
--rw-r--r-- 1 root root  4348176 Jul  9 18:22 vmlinuz-4.11.0-0.bpo.1-amd64
-1fb127377bffc887dd8eba1a482b167b  /boot/System.map-4.11.0-0.bpo.1-amd64
-eadc7da2601d5e1f63bdd7e5f1d69ae1  /boot/config-4.11.0-0.bpo.1-amd64
-e9a3370dd3941b4f65df82fef26a4858  /boot/initrd.img-4.11.0-0.bpo.1-amd64
-dae66d7480ff2f489535ca45065d628f  /boot/vmlinuz-4.11.0-0.bpo.1-amd64
+||/ Name                             Version          Architecture Description
++++-================================-================-============-===================================
+ii  linux-image-4.12.0-0.bpo.2-amd64 4.12.13-1~bpo9+1 amd64        Linux 4.12 for 64-bit PCs
+ii  linux-image-amd64                4.12+85~bpo9+1   amd64        Linux for 64-bit PCs (meta-package)
+total 30912
+-rw-r--r-- 1 root root  2947874 Sep 28 11:29 System.map-4.12.0-0.bpo.2-amd64
+-rw-r--r-- 1 root root   194412 Sep 28 11:29 config-4.12.0-0.bpo.2-amd64
+-rw-r--r-- 1 root root 24108831 Oct  6 16:03 initrd.img-4.12.0-0.bpo.2-amd64
+-rw-r--r-- 1 root root  4397328 Sep 28 11:29 vmlinuz-4.12.0-0.bpo.2-amd64
+2295caa3a7f797d78e85e44d61a65f1f  /boot/System.map-4.12.0-0.bpo.2-amd64
+4b257aac89f41db9876998a8a3521a31  /boot/config-4.12.0-0.bpo.2-amd64
+dcdc54c734c39312fa8e3c379d0e45d9  /boot/initrd.img-4.12.0-0.bpo.2-amd64
+f2476da8e12a3f1de0d9aeaebe0da0dc  /boot/vmlinuz-4.12.0-0.bpo.2-amd64
 total 64
-drwxr-xr-x   2 root root 4096 Oct  2 16:03 bin
-drwxr-xr-x   2 root root 4096 Oct  2 16:03 boot
-drwxr-xr-x  17 root root 3560 Oct  2 08:14 dev
-drwxr-xr-x  52 root root 4096 Oct  2 16:03 etc
+drwxr-xr-x   2 root root 4096 Oct  6 16:02 bin
+drwxr-xr-x   2 root root 4096 Oct  6 16:03 boot
+drwxr-xr-x  16 root root 3500 Oct  6 11:49 dev
+drwxr-xr-x  52 root root 4096 Oct  6 16:02 etc
 drwxr-xr-x   2 root root 4096 Jul 13 13:04 home
-lrwxrwxrwx   1 root root   36 Oct  2 16:03 initrd.img -> boot/initrd.img-4.11.0-0.bpo.1-amd64
-drwxr-xr-x  13 root root 4096 Oct  2 16:03 lib
-drwxr-xr-x   2 root root 4096 Oct  2 16:01 lib64
-drwxr-xr-x   2 root root 4096 Oct  2 16:01 media
-drwxr-xr-x   2 root root 4096 Oct  2 16:01 mnt
-drwxr-xr-x   2 root root 4096 Oct  2 16:01 opt
-dr-xr-xr-x 301 root root    0 Oct  2 12:13 proc
-drwx------   4 root root 4096 Oct  2 16:03 root
-drwxr-xr-x   4 root root 4096 Oct  2 16:01 run
-drwxr-xr-x   2 root root 4096 Oct  2 16:02 sbin
-drwxr-xr-x   2 root root 4096 Oct  2 16:01 srv
-dr-xr-xr-x  13 root root    0 Oct  2 08:13 sys
-drwxrwxrwt   2 root root 4096 Oct  2 16:03 tmp
-drwxr-xr-x  10 root root 4096 Oct  2 16:01 usr
-drwxr-xr-x  11 root root 4096 Oct  2 16:01 var
-lrwxrwxrwx   1 root root   33 Oct  2 16:03 vmlinuz -> boot/vmlinuz-4.11.0-0.bpo.1-amd64
+lrwxrwxrwx   1 root root   36 Oct  6 16:02 initrd.img -> boot/initrd.img-4.12.0-0.bpo.2-amd64
+drwxr-xr-x  13 root root 4096 Oct  6 16:02 lib
+drwxr-xr-x   2 root root 4096 Oct  6 16:01 lib64
+drwxr-xr-x   2 root root 4096 Oct  6 16:01 media
+drwxr-xr-x   2 root root 4096 Oct  6 16:01 mnt
+drwxr-xr-x   2 root root 4096 Oct  6 16:01 opt
+dr-xr-xr-x 298 root root    0 Oct  6 15:48 proc
+drwx------   4 root root 4096 Oct  6 16:02 root
+drwxr-xr-x   4 root root 4096 Oct  6 16:01 run
+drwxr-xr-x   2 root root 4096 Oct  6 16:02 sbin
+drwxr-xr-x   2 root root 4096 Oct  6 16:01 srv
+dr-xr-xr-x  13 root root    0 Oct  6 11:47 sys
+drwxrwxrwt   2 root root 4096 Oct  6 16:03 tmp
+drwxr-xr-x  10 root root 4096 Oct  6 16:01 usr
+drwxr-xr-x  11 root root 4096 Oct  6 16:01 var
+lrwxrwxrwx   1 root root   33 Oct  6 16:02 vmlinuz -> boot/vmlinuz-4.12.0-0.bpo.2-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
-CLDS: * Installed Linux image: linux-image-4.11.0-0.bpo.1-amd64.
-CLDS: * Disk size = 1183180K. Space Used = 270880K.
+CLDS: * Installed Linux image: linux-image-4.12.0-0.bpo.2-amd64.
+CLDS: * Disk size = 1185336K. Space Used = 272864K.
