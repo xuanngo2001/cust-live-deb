@@ -51,4 +51,6 @@ case "${action}" in
       ;;
 esac
 
-echo 'yes | cp -av ./cld  /usr/local'
+# Display template.
+echo '# Add to CLD/'
+echo ' yes | cp -av ./cld  /usr/local'
