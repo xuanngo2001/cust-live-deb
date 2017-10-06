@@ -15,7 +15,9 @@ chmod +x ${DRUSH_PHAR}
 
 LOCAL_BIN=/usr/local/bin
 yes | cp -av "${DRUSH_PHAR}" ${LOCAL_BIN}/drush 
- 
+
+# Add to CLD/
+  yes | cp -av ./cld  /usr/local
 
 # Log
 echo "${GV_LOG} * Install $(drush --version | tr -s ' ') to manage Drupal."
