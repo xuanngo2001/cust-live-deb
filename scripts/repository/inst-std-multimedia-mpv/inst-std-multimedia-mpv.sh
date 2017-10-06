@@ -26,7 +26,7 @@ apt-get install -d -y libuchardet0
 # Install MPV.
 apt-get -y install mpv
 
-# Add multiple aliases for MPV
+# Add to CLD/
 yes | cp -av ./cld  /usr/local
 
 # Add useful mpv keybindings settings.
