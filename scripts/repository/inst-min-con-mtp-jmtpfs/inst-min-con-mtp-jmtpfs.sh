@@ -10,8 +10,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install jmtpfs.
-apt-get -y install jmtpfs
+ apt-get -y install jmtpfs
 
+# Add to CLD/
+ yes | cp -av ./cld  /usr/local
 
 # Log
 echo "${GV_LOG} * Install jmtpfs to mount smartphones that use Media Transfer Protocol(MTP)."
