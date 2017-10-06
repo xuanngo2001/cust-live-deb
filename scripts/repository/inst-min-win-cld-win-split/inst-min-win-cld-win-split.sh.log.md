@@ -1,9 +1,11 @@
 * >>>>>>>>> Running inst-min-win-cld-win-split.sh ...
   * After this operation, 58.4 kB of additional disk space will be used.
+  * After this operation, 879 kB of additional disk space will be used.
   * Install required applications for cld-win-split.sh: wmctrl and x11-utils for xprop.
   * Add key bindings: Ctrl+Alt+Left, Right, Up, Down, 1, 2, 3, 4, 5, 6, 7, 8, 9.
-  * Disk size = 2527428K. Space Used = 136K.
+  * Disk size = 1810804K. Space Used = 1504K.
   * The following NEW packages will be installed:
   ```bash
   wmctrl
+  libxcb-shape0 libxv1 libxxf86dga1 x11-utils
   ```
