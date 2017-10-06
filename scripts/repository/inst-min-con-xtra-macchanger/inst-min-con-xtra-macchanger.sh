@@ -26,8 +26,8 @@ apt-get -y install macchanger
 #   This step is needed because preseed doesn't work.
 sed -i 's/ENABLE_ON_POST_UP_DOWN=.*/ENABLE_ON_POST_UP_DOWN=true/' /etc/default/macchanger
 
-# Copy
-yes | cp -av ./cld  /usr/local
+# Add to CLD/
+ yes | cp -av ./cld  /usr/local
 
 
 ## Since macchanger's automatic run doesn't work, use systemd to run it.
