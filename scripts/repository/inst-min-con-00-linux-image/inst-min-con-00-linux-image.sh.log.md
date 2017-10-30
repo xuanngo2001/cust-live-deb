@@ -3,7 +3,7 @@
   * After this operation, 198 MB of additional disk space will be used.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
   * Installed Linux image: linux-image-4.13.0-0.bpo.1-amd64.
-  * Disk size = 1188028K. Space Used = 275192K.
+  * Disk size = 1188040K. Space Used = 275188K.
   * The following NEW packages will be installed:
   ```bash
   dbus dialog libdbus-1-3 libexpat1
