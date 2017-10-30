@@ -16,6 +16,9 @@ ExecStart=
 ExecStart=-/sbin/agetty --autologin root %I
 EOF
 
+# Add to CLD/
+ yes | cp -av ./cld  /usr/local
+
 
 # Reference:
 #  http://forums.debian.net/viewtopic.php?f=5&t=119348#p563096
