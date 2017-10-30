@@ -19,13 +19,13 @@ The following NEW packages will be installed:
   libsasl2-modules-db libxml2 mime-support perl perl-modules-5.24
 The following packages will be upgraded:
   perl-base
-1 upgraded, 20 newly installed, 0 to remove and 2 not upgraded.
+1 upgraded, 20 newly installed, 0 to remove and 18 not upgraded.
 Need to get 19.2 MB of archives.
 After this operation, 81.4 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 perl-base amd64 5.24.1-3+deb9u2 [1,344 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 perl-modules-5.24 all 5.24.1-3+deb9u2 [2,724 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libperl5.24 amd64 5.24.1-3+deb9u2 [3,538 kB]
-Get:4 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 perl amd64 5.24.1-3+deb9u2 [218 kB]
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 perl-base amd64 5.24.1-3+deb9u2 [1,344 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 perl-modules-5.24 all 5.24.1-3+deb9u2 [2,724 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libperl5.24 amd64 5.24.1-3+deb9u2 [3,538 kB]
+Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 perl amd64 5.24.1-3+deb9u2 [218 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mime-support all 3.60 [36.7 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libapr1 amd64 1.5.2-5 [96.6 kB]
 Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libaprutil1 amd64 1.5.4-3 [85.8 kB]
@@ -38,18 +38,18 @@ Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libapr
 Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblua5.2-0 amd64 5.2.4-1.1+b2 [110 kB]
 Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnghttp2-14 amd64 1.18.1-1 [79.1 kB]
 Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libicu57 amd64 57.1-6 [7,701 kB]
-Get:17 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libxml2 amd64 2.9.4+dfsg1-2.2+deb9u1 [920 kB]
-Get:18 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 apache2-bin amd64 2.4.25-3+deb9u3 [1,181 kB]
-Get:19 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 apache2-utils amd64 2.4.25-3+deb9u3 [217 kB]
-Get:20 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 apache2-data all 2.4.25-3+deb9u3 [162 kB]
-Get:21 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 apache2 amd64 2.4.25-3+deb9u3 [235 kB]
-Fetched 19.2 MB in 0s (32.6 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16981 files and directories currently installed.)
+Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxml2 amd64 2.9.4+dfsg1-2.2+deb9u1 [920 kB]
+Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-bin amd64 2.4.25-3+deb9u3 [1,181 kB]
+Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-utils amd64 2.4.25-3+deb9u3 [217 kB]
+Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-data all 2.4.25-3+deb9u3 [162 kB]
+Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2 amd64 2.4.25-3+deb9u3 [235 kB]
+Fetched 19.2 MB in 0s (34.5 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17178 files and directories currently installed.)
 Preparing to unpack .../perl-base_5.24.1-3+deb9u2_amd64.deb ...
 Unpacking perl-base (5.24.1-3+deb9u2) over (5.24.1-3+deb9u1) ...
 Setting up perl-base (5.24.1-3+deb9u2) ...
 Selecting previously unselected package perl-modules-5.24.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16981 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17178 files and directories currently installed.)
 Preparing to unpack .../00-perl-modules-5.24_5.24.1-3+deb9u2_all.deb ...
 Unpacking perl-modules-5.24 (5.24.1-3+deb9u2) ...
 Selecting previously unselected package libperl5.24:amd64.
@@ -164,4 +164,4 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Processing triggers for systemd (232-25+deb9u1) ...
 CLDS: * Install apache2.
-CLDS: * Disk size = 1556760K. Space Used = 103916K.
+CLDS: * Disk size = 1587192K. Space Used = 103916K.

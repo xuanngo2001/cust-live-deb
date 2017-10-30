@@ -25,7 +25,7 @@ The following NEW packages will be installed:
   python-gobject python-gobject-2 python-gtk2 python-minimal python-numpy
   python-wicd python2.7 python2.7-minimal wicd wicd-daemon wicd-gtk
   wireless-tools wpasupplicant
-0 upgraded, 27 newly installed, 0 to remove and 2 not upgraded.
+0 upgraded, 27 newly installed, 0 to remove and 18 not upgraded.
 Need to get 6,098 kB/10.3 MB of archives.
 After this operation, 41.0 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libglade2-0 amd64 1:2.6.4-2 [81.8 kB]
@@ -49,9 +49,9 @@ Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python
 Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-gtk all 1.7.4+tb2-4 [155 kB]
 Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd all 1.7.4+tb2-4 [24.3 kB]
 Preconfiguring packages ...
-Fetched 6,098 kB in 0s (27.8 MB/s)
+Fetched 6,098 kB in 0s (21.9 MB/s)
 Selecting previously unselected package libpython2.7-minimal:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48661 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48863 files and directories currently installed.)
 Preparing to unpack .../0-libpython2.7-minimal_2.7.13-2_amd64.deb ...
 Unpacking libpython2.7-minimal:amd64 (2.7.13-2) ...
 Selecting previously unselected package python2.7-minimal.
@@ -74,7 +74,7 @@ Setting up python2.7-minimal (2.7.13-2) ...
 Linking and byte-compiling packages for runtime python2.7...
 Setting up python-minimal (2.7.13-2) ...
 Selecting previously unselected package python.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49407 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49609 files and directories currently installed.)
 Preparing to unpack .../00-python_2.7.13-2_amd64.deb ...
 Unpacking python (2.7.13-2) ...
 Selecting previously unselected package libglade2-0:amd64.
@@ -145,7 +145,7 @@ Setting up libglade2-0:amd64 (1:2.6.4-2) ...
 Setting up gir1.2-glib-2.0:amd64 (1.50.0-1+b1) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Processing triggers for systemd (232-25+deb9u1) ...
-Processing triggers for dbus (1.10.18-1) ...
+Processing triggers for dbus (1.10.22-0+deb9u1) ...
 Setting up libnl-3-200:amd64 (3.2.27-2) ...
 Setting up net-tools (1.60+git20161116.90da8a0-1) ...
 Processing triggers for hicolor-icon-theme (0.15-1) ...
@@ -174,7 +174,7 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Setting up wicd-gtk (1.7.4+tb2-4) ...
 Setting up wicd (1.7.4+tb2-4) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
-Processing triggers for dbus (1.10.18-1) ...
+Processing triggers for dbus (1.10.22-0+deb9u1) ...
 Processing triggers for systemd (232-25+deb9u1) ...
 './cld/app/jwm/bootstrap/jwmrc-startup-wicd.sh' -> '/usr/local/cld/app/jwm/bootstrap/jwmrc-startup-wicd.sh'
 CLDS: * Install Network Manager: wicd.
@@ -182,4 +182,4 @@ CLDS: * Insert Wicd menu in Network.
 CLDS: * For wireless, you have to type in the wireless interface(e.g. wlan0) in the Preferences.
 CLDS: * Set wicd to run on JWM startup.
 CLDS: * Log at /var/log/wicd/wicd.log.
-CLDS: * Disk size = 3952300K. Space Used = 64124K.
+CLDS: * Disk size = 3888472K. Space Used = 64120K.
