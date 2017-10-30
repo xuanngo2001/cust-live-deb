@@ -5,5 +5,14 @@ set -e
 
 cat << EndOfMPVhelp
   # Play videos found
-  mpv -playlist <(locate somepattern | grep otherpattern)  
+  mpv -playlist <(locate somepattern | grep otherpattern)
+  
+  # Extract audio from video file.
+  mpv videofile.avi -o audiofile.mp3 --no-video
+   
+  # Extract audio from video file at a specific time.
+  mpv videofile.avi -o audiofileAtSpecificTime.mp3 --no-video --start=00:01:00 --end=00:03:35
+   
+  # Extract audio from video file at a specific time for a relative length.
+  mpv videofile.avi -o audiofile10Seconds.mp3 --no-video --start=0 --length=10
 EndOfMPVhelp
