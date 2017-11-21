@@ -19,9 +19,9 @@ Need to get 4,605 kB of archives.
 After this operation, 116 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdrm-intel1 amd64 2.4.74-1 [68.7 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgl1-mesa-dri amd64 13.0.6-1+b2 [4,536 kB]
-Fetched 4,605 kB in 0s (17.8 MB/s)
+Fetched 4,605 kB in 1s (3,488 kB/s)
 Selecting previously unselected package libdrm-intel1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51866 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 70710 files and directories currently installed.)
 Preparing to unpack .../libdrm-intel1_2.4.74-1_amd64.deb ...
 Unpacking libdrm-intel1:amd64 (2.4.74-1) ...
 Selecting previously unselected package libgl1-mesa-dri:amd64.
@@ -34,24 +34,24 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  blender-data fonts-dejavu fonts-dejavu-extra libatomic1 libblosc1
-  libboost-atomic1.62.0 libboost-chrono1.62.0 libboost-locale1.62.0
-  libboost-regex1.62.0 libboost-thread1.62.0 libglew2.0 libglu1-mesa
-  libilmbase12 liblog4cplus-1.1-9 libopenal-data libopenal1 libopencolorio1v5
+  blender-data fonts-dejavu fonts-dejavu-extra libblosc1 libboost-atomic1.62.0
+  libboost-chrono1.62.0 libboost-locale1.62.0 libboost-regex1.62.0
+  libboost-thread1.62.0 libglew2.0 libglu1-mesa libilmbase12
+  liblog4cplus-1.1-9 libopenal-data libopenal1 libopencolorio1v5
   libopencv-core2.4v5 libopencv-highgui2.4-deb0 libopencv-imgproc2.4v5
   libopenexr22 libopenimageio1.6 libopenvdb3.2 libraw15 libspnav0 libtbb2
   libtinyxml2.6.2v5 libyaml-cpp0.3v5 libzstd1
 Suggested packages:
   glew-utils libportaudio2 spacenavd
 The following NEW packages will be installed:
-  blender blender-data fonts-dejavu fonts-dejavu-extra libatomic1 libblosc1
+  blender blender-data fonts-dejavu fonts-dejavu-extra libblosc1
   libboost-atomic1.62.0 libboost-chrono1.62.0 libboost-locale1.62.0
   libboost-regex1.62.0 libboost-thread1.62.0 libglew2.0 libglu1-mesa
   libilmbase12 liblog4cplus-1.1-9 libopenal-data libopenal1 libopencolorio1v5
   libopencv-core2.4v5 libopencv-highgui2.4-deb0 libopencv-imgproc2.4v5
   libopenexr22 libopenimageio1.6 libopenvdb3.2 libraw15 libspnav0 libtbb2
   libtinyxml2.6.2v5 libyaml-cpp0.3v5 libzstd1
-0 upgraded, 30 newly installed, 0 to remove and 18 not upgraded.
+0 upgraded, 29 newly installed, 0 to remove and 18 not upgraded.
 Need to get 44.0 MB of archives.
 After this operation, 200 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 blender-data all 2.78.a+dfsg0-4 [8,976 kB]
@@ -71,22 +71,21 @@ Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtin
 Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libyaml-cpp0.3v5 amd64 0.3.0-1.2 [145 kB]
 Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopencolorio1v5 amd64 1.0.9~dfsg0-6+b2 [304 kB]
 Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopenexr22 amd64 2.2.0-11+b1 [577 kB]
-Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libatomic1 amd64 6.3.0-18 [8,920 B]
-Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtbb2 amd64 4.3~20150611-2 [136 kB]
-Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopencv-core2.4v5 amd64 2.4.9.1+dfsg1-2 [653 kB]
-Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopencv-imgproc2.4v5 amd64 2.4.9.1+dfsg1-2 [618 kB]
-Get:22 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopencv-highgui2.4-deb0 amd64 2.4.9.1+dfsg1-2 [103 kB]
-Get:23 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libraw15 amd64 0.17.2-6+deb9u1 [252 kB]
-Get:24 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopenimageio1.6 amd64 1.6.17~dfsg0-1+b2 [1,666 kB]
-Get:25 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libzstd1 amd64 1.1.2-1 [193 kB]
-Get:26 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libblosc1 amd64 1.11.1+ds2-1 [41.0 kB]
-Get:27 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblog4cplus-1.1-9 amd64 1.1.2-3.2 [144 kB]
-Get:28 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopenvdb3.2 amd64 3.2.0-2.1 [448 kB]
-Get:29 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libspnav0 amd64 0.2.3-1 [8,476 B]
-Get:30 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 blender amd64 2.78.a+dfsg0-4 [26.3 MB]
-Fetched 44.0 MB in 1s (32.9 MB/s)
+Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtbb2 amd64 4.3~20150611-2 [136 kB]
+Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopencv-core2.4v5 amd64 2.4.9.1+dfsg1-2 [653 kB]
+Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopencv-imgproc2.4v5 amd64 2.4.9.1+dfsg1-2 [618 kB]
+Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopencv-highgui2.4-deb0 amd64 2.4.9.1+dfsg1-2 [103 kB]
+Get:22 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libraw15 amd64 0.17.2-6+deb9u1 [252 kB]
+Get:23 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopenimageio1.6 amd64 1.6.17~dfsg0-1+b2 [1,666 kB]
+Get:24 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libzstd1 amd64 1.1.2-1 [193 kB]
+Get:25 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libblosc1 amd64 1.11.1+ds2-1 [41.0 kB]
+Get:26 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblog4cplus-1.1-9 amd64 1.1.2-3.2 [144 kB]
+Get:27 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopenvdb3.2 amd64 3.2.0-2.1 [448 kB]
+Get:28 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libspnav0 amd64 0.2.3-1 [8,476 B]
+Get:29 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 blender amd64 2.78.a+dfsg0-4 [26.3 MB]
+Fetched 44.0 MB in 1s (28.3 MB/s)
 Selecting previously unselected package blender-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51893 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 70737 files and directories currently installed.)
 Preparing to unpack .../00-blender-data_2.78.a+dfsg0-4_all.deb ...
 Unpacking blender-data (2.78.a+dfsg0-4) ...
 Selecting previously unselected package fonts-dejavu-extra.
@@ -137,47 +136,43 @@ Unpacking libopencolorio1v5 (1.0.9~dfsg0-6+b2) ...
 Selecting previously unselected package libopenexr22:amd64.
 Preparing to unpack .../16-libopenexr22_2.2.0-11+b1_amd64.deb ...
 Unpacking libopenexr22:amd64 (2.2.0-11+b1) ...
-Selecting previously unselected package libatomic1:amd64.
-Preparing to unpack .../17-libatomic1_6.3.0-18_amd64.deb ...
-Unpacking libatomic1:amd64 (6.3.0-18) ...
 Selecting previously unselected package libtbb2:amd64.
-Preparing to unpack .../18-libtbb2_4.3~20150611-2_amd64.deb ...
+Preparing to unpack .../17-libtbb2_4.3~20150611-2_amd64.deb ...
 Unpacking libtbb2:amd64 (4.3~20150611-2) ...
 Selecting previously unselected package libopencv-core2.4v5:amd64.
-Preparing to unpack .../19-libopencv-core2.4v5_2.4.9.1+dfsg1-2_amd64.deb ...
+Preparing to unpack .../18-libopencv-core2.4v5_2.4.9.1+dfsg1-2_amd64.deb ...
 Unpacking libopencv-core2.4v5:amd64 (2.4.9.1+dfsg1-2) ...
 Selecting previously unselected package libopencv-imgproc2.4v5:amd64.
-Preparing to unpack .../20-libopencv-imgproc2.4v5_2.4.9.1+dfsg1-2_amd64.deb ...
+Preparing to unpack .../19-libopencv-imgproc2.4v5_2.4.9.1+dfsg1-2_amd64.deb ...
 Unpacking libopencv-imgproc2.4v5:amd64 (2.4.9.1+dfsg1-2) ...
 Selecting previously unselected package libopencv-highgui2.4-deb0:amd64.
-Preparing to unpack .../21-libopencv-highgui2.4-deb0_2.4.9.1+dfsg1-2_amd64.deb ...
+Preparing to unpack .../20-libopencv-highgui2.4-deb0_2.4.9.1+dfsg1-2_amd64.deb ...
 Unpacking libopencv-highgui2.4-deb0:amd64 (2.4.9.1+dfsg1-2) ...
 Selecting previously unselected package libraw15:amd64.
-Preparing to unpack .../22-libraw15_0.17.2-6+deb9u1_amd64.deb ...
+Preparing to unpack .../21-libraw15_0.17.2-6+deb9u1_amd64.deb ...
 Unpacking libraw15:amd64 (0.17.2-6+deb9u1) ...
 Selecting previously unselected package libopenimageio1.6.
-Preparing to unpack .../23-libopenimageio1.6_1.6.17~dfsg0-1+b2_amd64.deb ...
+Preparing to unpack .../22-libopenimageio1.6_1.6.17~dfsg0-1+b2_amd64.deb ...
 Unpacking libopenimageio1.6 (1.6.17~dfsg0-1+b2) ...
 Selecting previously unselected package libzstd1.
-Preparing to unpack .../24-libzstd1_1.1.2-1_amd64.deb ...
+Preparing to unpack .../23-libzstd1_1.1.2-1_amd64.deb ...
 Unpacking libzstd1 (1.1.2-1) ...
 Selecting previously unselected package libblosc1.
-Preparing to unpack .../25-libblosc1_1.11.1+ds2-1_amd64.deb ...
+Preparing to unpack .../24-libblosc1_1.11.1+ds2-1_amd64.deb ...
 Unpacking libblosc1 (1.11.1+ds2-1) ...
 Selecting previously unselected package liblog4cplus-1.1-9.
-Preparing to unpack .../26-liblog4cplus-1.1-9_1.1.2-3.2_amd64.deb ...
+Preparing to unpack .../25-liblog4cplus-1.1-9_1.1.2-3.2_amd64.deb ...
 Unpacking liblog4cplus-1.1-9 (1.1.2-3.2) ...
 Selecting previously unselected package libopenvdb3.2.
-Preparing to unpack .../27-libopenvdb3.2_3.2.0-2.1_amd64.deb ...
+Preparing to unpack .../26-libopenvdb3.2_3.2.0-2.1_amd64.deb ...
 Unpacking libopenvdb3.2 (3.2.0-2.1) ...
 Selecting previously unselected package libspnav0.
-Preparing to unpack .../28-libspnav0_0.2.3-1_amd64.deb ...
+Preparing to unpack .../27-libspnav0_0.2.3-1_amd64.deb ...
 Unpacking libspnav0 (0.2.3-1) ...
 Selecting previously unselected package blender.
-Preparing to unpack .../29-blender_2.78.a+dfsg0-4_amd64.deb ...
+Preparing to unpack .../28-blender_2.78.a+dfsg0-4_amd64.deb ...
 Unpacking blender (2.78.a+dfsg0-4) ...
 Setting up libraw15:amd64 (0.17.2-6+deb9u1) ...
-Setting up libatomic1:amd64 (6.3.0-18) ...
 Setting up libspnav0 (0.2.3-1) ...
 Setting up libtinyxml2.6.2v5:amd64 (2.6.2-4) ...
 Processing triggers for mime-support (3.60) ...
@@ -216,4 +211,4 @@ CLDS: * Install required packages for blender.
 CLDS: * Install blender3d.
 CLDS: * Insert Blender 3D menu in Graphics.
 CLDS: * http://download.blender.org/release/
-CLDS: * Disk size = 4147840K. Space Used = 232576K.
+CLDS: * Disk size = 4400500K. Space Used = 232500K.

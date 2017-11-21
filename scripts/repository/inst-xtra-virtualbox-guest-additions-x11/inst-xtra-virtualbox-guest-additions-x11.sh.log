@@ -4,48 +4,48 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   libnotify-bin linux-headers-amd64
-0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
-Need to get 22.7 kB/28.7 kB of archives.
-After this operation, 64.5 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_jessie-main/ jessie/main libnotify-bin amd64 0.7.6-2 [22.7 kB]
-Fetched 22.7 kB in 0s (0 B/s)
+0 upgraded, 2 newly installed, 0 to remove and 18 not upgraded.
+Need to get 13.0 kB/19.1 kB of archives.
+After this operation, 47.1 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnotify-bin amd64 0.7.7-2 [13.0 kB]
+Fetched 13.0 kB in 0s (19.6 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-libc6-dev is already the newest version.
-dkms is already the newest version.
-0 upgraded, 0 newly installed, 0 to remove and 20 not upgraded.
+dkms is already the newest version (2.3-2).
+libc6-dev is already the newest version (2.24-11+deb9u1).
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
-linux-headers-4.9.0-0.bpo.1-amd64 is already the newest version.
-0 upgraded, 0 newly installed, 0 to remove and 20 not upgraded.
+linux-headers-4.13.0-0.bpo.1-amd64 is already the newest version (4.13.4-2~bpo9+1).
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following extra packages will be installed:
+The following additional packages will be installed:
   libnotify-bin
 The following NEW packages will be installed:
   libnotify-bin virtualbox-guest-x11
-0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
-Need to get 1,080 kB/1,103 kB of archives.
-After this operation, 6,477 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_jessie-backports-contrib/ jessie-backports/contrib virtualbox-guest-x11 amd64 5.1.8-dfsg-6~bpo8+2 [1,080 kB]
-Fetched 1,080 kB in 0s (27.3 MB/s)
+0 upgraded, 2 newly installed, 0 to remove and 18 not upgraded.
+Need to get 1,055 kB/1,068 kB of archives.
+After this operation, 6,587 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 virtualbox-guest-x11 amd64 5.1.30-dfsg-1~bpo9+1 [1,055 kB]
+Fetched 1,055 kB in 1s (1,007 kB/s)
 Selecting previously unselected package libnotify-bin.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73017 files and directories currently installed.)
-Preparing to unpack .../libnotify-bin_0.7.6-2_amd64.deb ...
-Unpacking libnotify-bin (0.7.6-2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 87650 files and directories currently installed.)
+Preparing to unpack .../libnotify-bin_0.7.7-2_amd64.deb ...
+Unpacking libnotify-bin (0.7.7-2) ...
 Selecting previously unselected package virtualbox-guest-x11.
-Preparing to unpack .../virtualbox-guest-x11_5.1.8-dfsg-6~bpo8+2_amd64.deb ...
-Unpacking virtualbox-guest-x11 (5.1.8-dfsg-6~bpo8+2) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up libnotify-bin (0.7.6-2) ...
-Setting up virtualbox-guest-x11 (5.1.8-dfsg-6~bpo8+2) ...
-Processing triggers for libc-bin (2.19-18+deb8u7) ...
-libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file '/lib/modules/4.8.0-0.bpo.2-amd64/modules.dep.bin'
-modinfo: ERROR: Module alias vboxguest not found.
+Preparing to unpack .../virtualbox-guest-x11_5.1.30-dfsg-1~bpo9+1_amd64.deb ...
+Unpacking virtualbox-guest-x11 (5.1.30-dfsg-1~bpo9+1) ...
+Setting up libnotify-bin (0.7.7-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u1) ...
+Setting up virtualbox-guest-x11 (5.1.30-dfsg-1~bpo9+1) ...
+update-alternatives: using /usr/lib/virtualbox/additions/00vboxvideo.conf to provide /etc/ld.so.conf.d/x86_64-linux-gnu_GL.conf (x86_64-linux-gnu_gl_conf) in auto mode
+update-alternatives: using /usr/lib/virtualbox/additions/00vboxvideo.conf to provide /etc/ld.so.conf.d/x86_64-linux-gnu_EGL.conf (x86_64-linux-gnu_egl_conf) in auto mode
+Processing triggers for libc-bin (2.24-11+deb9u1) ...
 CLDS: * Install virtualbox-guest-x11 to have full screen and cross copy and paste.
-CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
-CLDS: * Disk size = 4798328K. Space Used = 7516K.
+CLDS: * VirtualBox guest additions installed: version: 5.1.30_Debian r118389.
+CLDS: * Disk size = 5219788K. Space Used = 7576K.
