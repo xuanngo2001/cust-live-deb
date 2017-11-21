@@ -33,6 +33,7 @@ ii  browser-plugin-freshplayer-pepperflash       0.3.5-1+b1                     
 ii  bsdmainutils                                 9.0.12+nmu1                       amd64        collection of more utilities from FreeBSD
 ii  bsdutils                                     1:2.29.2-1                        amd64        basic utilities from 4.4BSD-Lite
 ii  buffer                                       1.19-12+b1                        amd64        Buffering/reblocking program for tape backups, printing, etc.
+ii  build-essential                              12.3                              amd64        Informational list of build-essential packages
 ii  busybox-static                               1:1.22.0-19+b3                    amd64        Standalone rescue shell with tons of builtin utilities
 ii  bzip2                                        1.0.6-8.1                         amd64        high-quality block-sorting file compressor - utilities
 ii  ca-certificates                              20161130+nmu1                     all          Common CA certificates
@@ -81,6 +82,7 @@ ii  dkms                                         2.3-2                          
 ii  dmidecode                                    3.0-4                             amd64        SMBIOS/DMI table decoder
 ii  dmsetup                                      2:1.02.137-2                      amd64        Linux Kernel Device Mapper userspace library
 ii  dpkg                                         1.18.24                           amd64        Debian package management system
+ii  dpkg-dev                                     1.18.24                           all          Debian package development tools
 ii  e2fslibs:amd64                               1.43.4-2                          amd64        ext2/ext3/ext4 file system libraries
 ii  e2fsprogs                                    1.43.4-2                          amd64        ext2/ext3/ext4 file system utilities
 ii  emacsen-common                               2.0.8                             all          Common facilities for all emacsen
@@ -123,6 +125,8 @@ ii  freeciv-data                                 2.5.9-1~bpo9+1                 
 ii  freeciv-server                               2.5.9-1~bpo9+1                    amd64        Civilization turn based strategy game (server files)
 ii  freeciv-sound-standard                       2.5.9-1~bpo9+1                    all          Civilization turn based strategy game (standard sound pack)
 ii  fuse                                         2.9.7-1                           amd64        Filesystem in Userspace
+ii  g++                                          4:6.3.0-4                         amd64        GNU C++ compiler
+ii  g++-6                                        6.3.0-18                          amd64        GNU C++ compiler
 ii  galera-3                                     25.3.19-2                         amd64        Replication framework for transactional applications
 ii  gawk                                         1:4.1.4+dfsg-1                    amd64        GNU awk, a pattern scanning and processing language
 ii  gcc                                          4:6.3.0-4                         amd64        GNU C compiler
@@ -308,6 +312,7 @@ ii  libdebconfclient0:amd64                      0.227                          
 ii  libdevmapper1.02.1:amd64                     2:1.02.137-2                      amd64        Linux Kernel Device Mapper userspace library
 ii  libdns-export162                             1:9.10.3.dfsg.P4-12.3+deb9u1      amd64        Exported DNS Shared Library
 ii  libdouble-conversion1:amd64                  2.0.1-4                           amd64        routines to convert IEEE floats to and from strings
+ii  libdpkg-perl                                 1.18.24                           all          Dpkg perl modules
 ii  libdrm-amdgpu1:amd64                         2.4.74-1                          amd64        Userspace interface to amdgpu-specific kernel DRM services -- runtime
 ii  libdrm-intel1:amd64                          2.4.74-1                          amd64        Userspace interface to intel-specific kernel DRM services -- runtime
 ii  libdrm-nouveau2:amd64                        2.4.74-1                          amd64        Userspace interface to nouveau-specific kernel DRM services -- runtime
@@ -542,7 +547,6 @@ ii  libnfnetlink0:amd64                          1.0.1-3                        
 ii  libnghttp2-14:amd64                          1.18.1-1                          amd64        library implementing HTTP/2 protocol (shared library)
 ii  libnl-3-200:amd64                            3.2.27-2                          amd64        library for dealing with netlink sockets
 ii  libnl-genl-3-200:amd64                       3.2.27-2                          amd64        library for dealing with netlink sockets - generic netlink
-ii  libnotify-bin                                0.7.7-2                           amd64        sends desktop notifications to a notification daemon (Utilities)
 ii  libnotify4:amd64                             0.7.7-2                           amd64        sends desktop notifications to a notification daemon
 ii  libnpth0:amd64                               1.3-1                             amd64        replacement for GNU Pth using system threads
 ii  libnspr4:amd64                               2:4.12-6                          amd64        NetScape Portable Runtime Library
@@ -715,6 +719,7 @@ ii  libssh2-1:amd64                              1.7.0-1                        
 ii  libssl1.0.2:amd64                            1.0.2l-2                          amd64        Secure Sockets Layer toolkit - shared libraries
 ii  libssl1.1:amd64                              1.1.0f-3                          amd64        Secure Sockets Layer toolkit - shared libraries
 ii  libstartup-notification0:amd64               0.12-4+b2                         amd64        library for program launch feedback (shared library)
+ii  libstdc++-6-dev:amd64                        6.3.0-18                          amd64        GNU Standard C++ Library v3 (development files)
 ii  libstdc++6:amd64                             6.3.0-18                          amd64        GNU Standard C++ Library v3
 ii  libsuitesparseconfig4:amd64                  1:4.5.4-1                         amd64        configuration routines for all SuiteSparse modules
 ii  libswresample2:amd64                         10:3.3.5-dmo1+deb9u1              amd64        FFmpeg library for audio resampling, rematrixing etc. - runtime files
@@ -1048,9 +1053,6 @@ ii  usbutils                                     1:007-4+b1                     
 ii  util-linux                                   2.29.2-1                          amd64        miscellaneous system utilities
 ii  vim-common                                   2:8.0.0197-4                      all          Vi IMproved - Common files
 ii  vim-tiny                                     2:8.0.0197-4                      amd64        Vi IMproved - enhanced vi editor - compact version
-ii  virtualbox-guest-dkms                        5.1.30-dfsg-1~bpo9+1              all          x86 virtualization solution - guest addition module source for dkms
-ii  virtualbox-guest-utils                       5.1.30-dfsg-1~bpo9+1              amd64        x86 virtualization solution - non-X11 guest utilities
-ii  virtualbox-guest-x11                         5.1.30-dfsg-1~bpo9+1              amd64        x86 virtualization solution - X11 guest utilities
 ii  volumeicon-alsa                              0.5.1+git20170117-1~bpo9+1        amd64        systray volume icon for alsa
 ii  wget                                         1.18-5                            amd64        retrieves files from the web
 ii  whiptail                                     0.52.19-1+b1                      amd64        Displays user-friendly dialog boxes from shell scripts
