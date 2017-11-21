@@ -8,7 +8,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 4050704K. Space Used = 497996K.
+  * Disk size = 3825084K. Space Used = 498388K.
   * The following NEW packages will be installed:
   ```bash
   coinor-libcbc3 coinor-libcgl1 coinor-libclp1 coinor-libcoinmp1v5
@@ -21,12 +21,12 @@
   libgpgme11 libgpgmepp6 libgstreamer-plugins-base1.0-0 libgstreamer1.0-0
   libharfbuzz-icu0 libhyphen0 liblangtag-common liblangtag1 liblapack3
   libmhash2 libmspub-0.1-1 libmythes-1.2-0 libneon27-gnutls libodfgen-0.1-1
-  liborc-0.4-0 libpagemaker-0.0-0 libpython3.5 libraptor2-0 librasqal3 librdf0
-  libreoffice libreoffice-avmedia-backend-gstreamer libreoffice-base
-  libreoffice-base-core libreoffice-base-drivers libreoffice-calc
-  libreoffice-common libreoffice-core libreoffice-draw libreoffice-impress
-  libreoffice-math libreoffice-report-builder-bin libreoffice-style-galaxy
-  libreoffice-style-tango libreoffice-writer librevenge-0.0-0
-  libsuitesparseconfig4 libvisio-0.1-1 libwpd-0.10-10 libwpg-0.3-3 libxslt1.1
-  libyajl2 lp-solve python3-uno uno-libs3 ure
+  liborc-0.4-0 libpagemaker-0.0-0 libpython3.5 libquadmath0 libraptor2-0
+  librasqal3 librdf0 libreoffice libreoffice-avmedia-backend-gstreamer
+  libreoffice-base libreoffice-base-core libreoffice-base-drivers
+  libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw
+  libreoffice-impress libreoffice-math libreoffice-report-builder-bin
+  libreoffice-style-galaxy libreoffice-style-tango libreoffice-writer
+  librevenge-0.0-0 libsuitesparseconfig4 libvisio-0.1-1 libwpd-0.10-10
+  libwpg-0.3-3 libxslt1.1 libyajl2 lp-solve python3-uno uno-libs3 ure
   ```
