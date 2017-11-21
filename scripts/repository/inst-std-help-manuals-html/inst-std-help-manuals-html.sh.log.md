@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-help-manuals-html.sh ...
   * Add user & developer manuals in Help menu.
-  * Disk size = 2750548K. Space Used = 76K.
+  * Disk size = 3035460K. Space Used = 72K.
