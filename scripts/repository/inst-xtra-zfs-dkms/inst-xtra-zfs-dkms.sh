@@ -24,6 +24,9 @@ apt-get -y install zfs-dkms
 # If you want to boot from ZFS, you'll need zfs-initramfs package too:
 apt-get -y install zfs-initramfs
 
+# Add to CLD/
+ yes | cp -av ./cld  /usr/local
+
 # Log
 ZFS_VERSION=$(modinfo zfs | grep ^version | tr -s ' ')
 if [ -z "${ZFS_VERSION}" ]; then
