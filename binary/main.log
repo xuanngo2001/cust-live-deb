@@ -22,17 +22,17 @@ Get:15 http://localhost/aptly-repo/master_stretch-updates-contrib stretch-update
 Get:16 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates InRelease [4190 B]
 Get:17 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease [4330 B]
 Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 Packages [350 kB]
-Get:19 http://localhost/aptly-repo/master_aptly-main squeeze/main amd64 Packages [3234 B]
+Get:19 http://localhost/aptly-repo/master_aptly-main squeeze/main amd64 Packages [3222 B]
 Get:20 http://localhost/aptly-repo/master_deb-multimedia-main stretch/main amd64 Packages [14.3 kB]
 Get:21 http://localhost/aptly-repo/master_google-main stable/main amd64 Packages [2458 B]
 Get:22 http://localhost/aptly-repo/master_opera-non-free stable/non-free amd64 Packages [2590 B]
-Get:23 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 Packages [3990 B]
+Get:23 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 Packages [3985 B]
 Get:24 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 Packages [25.6 kB]
-Get:25 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 Packages [5038 B]
-Get:26 http://localhost/aptly-repo/master_stretch-contrib stretch/contrib amd64 Packages [4477 B]
-Get:27 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 Packages [7142 B]
+Get:25 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 Packages [5046 B]
+Get:26 http://localhost/aptly-repo/master_stretch-contrib stretch/contrib amd64 Packages [4473 B]
+Get:27 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 Packages [7148 B]
 Get:28 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 Packages [23.1 kB]
-Fetched 523 kB in 2s (195 kB/s)
+Fetched 523 kB in 3s (153 kB/s)
 Reading package lists...
 CLDS: * Disk size = 971816K. Space Used = 3472K.
 CLDS:>>>>>>>>> Running inst-min-con-00-linux-image.sh ...
@@ -249,7 +249,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 748 kB in 0s (913 kB/s)
+Fetched 748 kB in 0s (1124 kB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9120 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.10.22-0+deb9u1_amd64.deb ...
@@ -315,7 +315,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 41.8 MB in 1s (39.6 MB/s)
+Fetched 41.8 MB in 1s (27.8 MB/s)
 Selecting previously unselected package firmware-linux-free.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9336 files and directories currently installed.)
 Preparing to unpack .../00-firmware-linux-free_3.4_all.deb ...
@@ -394,34 +394,34 @@ ii  linux-image-amd64                4.13+86~bpo9+1  amd64        Linux for 64-b
 total 31200
 -rw-r--r-- 1 root root  2997721 Oct 17 16:18 System.map-4.13.0-0.bpo.1-amd64
 -rw-r--r-- 1 root root   196592 Oct 17 16:18 config-4.13.0-0.bpo.1-amd64
--rw-r--r-- 1 root root 24289021 Nov 22 00:10 initrd.img-4.13.0-0.bpo.1-amd64
+-rw-r--r-- 1 root root 24288143 Nov 22 08:05 initrd.img-4.13.0-0.bpo.1-amd64
 -rw-r--r-- 1 root root  4462352 Oct 17 16:18 vmlinuz-4.13.0-0.bpo.1-amd64
 915301968a39eef1b0f76a2e21097d18  /boot/System.map-4.13.0-0.bpo.1-amd64
 6c82311980872f951e8e727aca7d36ab  /boot/config-4.13.0-0.bpo.1-amd64
-4919cb3e158fffd559357ddf22e828c6  /boot/initrd.img-4.13.0-0.bpo.1-amd64
+1217fddfeb4656ad20ed1633faa249ec  /boot/initrd.img-4.13.0-0.bpo.1-amd64
 72da1774c4df5c51499008481011ee0a  /boot/vmlinuz-4.13.0-0.bpo.1-amd64
 total 64
-drwxr-xr-x   2 root root 4096 Nov 22 00:10 bin
-drwxr-xr-x   2 root root 4096 Nov 22 00:10 boot
+drwxr-xr-x   2 root root 4096 Nov 22 08:05 bin
+drwxr-xr-x   2 root root 4096 Nov 22 08:05 boot
 drwxr-xr-x  17 root root 3540 Nov 22  2017 dev
-drwxr-xr-x  52 root root 4096 Nov 22 00:10 etc
+drwxr-xr-x  52 root root 4096 Nov 22 08:05 etc
 drwxr-xr-x   2 root root 4096 Jul 13 13:04 home
-lrwxrwxrwx   1 root root   36 Nov 22 00:10 initrd.img -> boot/initrd.img-4.13.0-0.bpo.1-amd64
-drwxr-xr-x  13 root root 4096 Nov 22 00:10 lib
-drwxr-xr-x   2 root root 4096 Nov 22 00:09 lib64
-drwxr-xr-x   2 root root 4096 Nov 22 00:08 media
-drwxr-xr-x   2 root root 4096 Nov 22 00:08 mnt
-drwxr-xr-x   2 root root 4096 Nov 22 00:08 opt
-dr-xr-xr-x 205 root root    0 Nov 21 23:55 proc
-drwx------   4 root root 4096 Nov 22 00:09 root
-drwxr-xr-x   4 root root 4096 Nov 22 00:08 run
-drwxr-xr-x   2 root root 4096 Nov 22 00:09 sbin
-drwxr-xr-x   2 root root 4096 Nov 22 00:08 srv
+lrwxrwxrwx   1 root root   36 Nov 22 08:05 initrd.img -> boot/initrd.img-4.13.0-0.bpo.1-amd64
+drwxr-xr-x  13 root root 4096 Nov 22 08:05 lib
+drwxr-xr-x   2 root root 4096 Nov 22 08:03 lib64
+drwxr-xr-x   2 root root 4096 Nov 22 08:03 media
+drwxr-xr-x   2 root root 4096 Nov 22 08:03 mnt
+drwxr-xr-x   2 root root 4096 Nov 22 08:03 opt
+dr-xr-xr-x 205 root root    0 Nov 22 07:09 proc
+drwx------   4 root root 4096 Nov 22 08:04 root
+drwxr-xr-x   4 root root 4096 Nov 22 08:03 run
+drwxr-xr-x   2 root root 4096 Nov 22 08:04 sbin
+drwxr-xr-x   2 root root 4096 Nov 22 08:03 srv
 dr-xr-xr-x  13 root root    0 Nov 22  2017 sys
-drwxrwxrwt   2 root root 4096 Nov 22 00:10 tmp
-drwxr-xr-x  10 root root 4096 Nov 22 00:08 usr
-drwxr-xr-x  11 root root 4096 Nov 22 00:08 var
-lrwxrwxrwx   1 root root   33 Nov 22 00:10 vmlinuz -> boot/vmlinuz-4.13.0-0.bpo.1-amd64
+drwxrwxrwt   2 root root 4096 Nov 22 08:05 tmp
+drwxr-xr-x  10 root root 4096 Nov 22 08:03 usr
+drwxr-xr-x  11 root root 4096 Nov 22 08:03 var
+lrwxrwxrwx   1 root root   33 Nov 22 08:05 vmlinuz -> boot/vmlinuz-4.13.0-0.bpo.1-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-4.13.0-0.bpo.1-amd64.
 CLDS: * Disk size = 1246984K. Space Used = 275168K.
@@ -450,7 +450,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 56.6 kB in 0s (131 kB/s)
+Fetched 56.6 kB in 1s (42.8 kB/s)
 Selecting previously unselected package debconf-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13849 files and directories currently installed.)
 Preparing to unpack .../debconf-utils_1.5.61_all.deb ...
@@ -482,7 +482,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 4109 kB in 0s (10.5 MB/s)
+Fetched 4109 kB in 1s (3393 kB/s)
 Selecting previously unselected package libc-l10n.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13881 files and directories currently installed.)
 Preparing to unpack .../libc-l10n_2.24-11+deb9u1_all.deb ...
@@ -534,7 +534,7 @@ After this operation, 295 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ucf all 3.0036 [70.2 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 localepurge all 0.7.3.4 [52.4 kB]
 Preconfiguring packages ...
-Fetched 123 kB in 0s (131 kB/s)
+Fetched 123 kB in 0s (126 kB/s)
 Selecting previously unselected package ucf.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14513 files and directories currently installed.)
 Preparing to unpack .../archives/ucf_3.0036_all.deb ...
@@ -604,7 +604,7 @@ The following NEW packages will be installed:
 Need to get 66.8 kB of archives.
 After this operation, 266 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 debootstrap all 1.0.92~bpo9+1 [66.8 kB]
-Fetched 66.8 kB in 0s (1,078 kB/s)
+Fetched 66.8 kB in 0s (336 kB/s)
 Selecting previously unselected package debootstrap.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14543 files and directories currently installed.)
 Preparing to unpack .../debootstrap_1.0.92~bpo9+1_all.deb ...
@@ -627,7 +627,7 @@ Need to get 471 kB of archives.
 After this operation, 801 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libparted2 amd64 3.2-17 [276 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 parted amd64 3.2-17 [194 kB]
-Fetched 471 kB in 0s (1,321 kB/s)
+Fetched 471 kB in 0s (1,535 kB/s)
 Selecting previously unselected package libparted2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14608 files and directories currently installed.)
 Preparing to unpack .../libparted2_3.2-17_amd64.deb ...
@@ -671,7 +671,7 @@ The following NEW packages will be installed:
 Need to get 47.5 kB of archives.
 After this operation, 188 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 bzip2 amd64 1.0.6-8.1 [47.5 kB]
-Fetched 47.5 kB in 0s (48.1 kB/s)
+Fetched 47.5 kB in 0s (247 kB/s)
 Selecting previously unselected package bzip2.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14623 files and directories currently installed.)
 Preparing to unpack .../bzip2_1.0.6-8.1_amd64.deb ...
@@ -688,7 +688,7 @@ The following NEW packages will be installed:
 Need to get 294 kB of archives.
 After this operation, 796 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 rar amd64 2:5.4.0+dfsg.1-0.1 [294 kB]
-Fetched 294 kB in 0s (420 kB/s)
+Fetched 294 kB in 0s (553 kB/s)
 Selecting previously unselected package rar.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14651 files and directories currently installed.)
 Preparing to unpack .../rar_2%3a5.4.0+dfsg.1-0.1_amd64.deb ...
@@ -703,7 +703,7 @@ The following NEW packages will be installed:
 Need to get 127 kB of archives.
 After this operation, 314 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 unrar amd64 1:5.3.2-1+deb9u1 [127 kB]
-Fetched 127 kB in 0s (249 kB/s)
+Fetched 127 kB in 0s (257 kB/s)
 Selecting previously unselected package unrar.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14665 files and directories currently installed.)
 Preparing to unpack .../unrar_1%3a5.3.2-1+deb9u1_amd64.deb ...
@@ -721,7 +721,7 @@ The following NEW packages will be installed:
 Need to get 234 kB of archives.
 After this operation, 623 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 zip amd64 3.0-11+b1 [234 kB]
-Fetched 234 kB in 0s (515 kB/s)
+Fetched 234 kB in 0s (387 kB/s)
 Selecting previously unselected package zip.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14670 files and directories currently installed.)
 Preparing to unpack .../zip_3.0-11+b1_amd64.deb ...
@@ -736,7 +736,7 @@ The following NEW packages will be installed:
 Need to get 170 kB of archives.
 After this operation, 547 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 unzip amd64 6.0-21 [170 kB]
-Fetched 170 kB in 0s (379 kB/s)
+Fetched 170 kB in 0s (336 kB/s)
 Selecting previously unselected package unzip.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14686 files and directories currently installed.)
 Preparing to unpack .../unzip_6.0-21_amd64.deb ...
@@ -753,7 +753,7 @@ The following NEW packages will be installed:
 Need to get 364 kB of archives.
 After this operation, 956 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 p7zip amd64 16.02+dfsg-3 [364 kB]
-Fetched 364 kB in 0s (932 kB/s)
+Fetched 364 kB in 0s (761 kB/s)
 Selecting previously unselected package p7zip.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14704 files and directories currently installed.)
 Preparing to unpack .../p7zip_16.02+dfsg-3_amd64.deb ...
@@ -820,7 +820,7 @@ After this operation, 560 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libfuse2 amd64 2.9.7-1 [125 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 fuse amd64 2.9.7-1 [70.6 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 exfat-fuse amd64 1.2.5-2 [28.9 kB]
-Fetched 225 kB in 1s (217 kB/s)
+Fetched 225 kB in 0s (414 kB/s)
 Selecting previously unselected package libfuse2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14720 files and directories currently installed.)
 Preparing to unpack .../libfuse2_2.9.7-1_amd64.deb ...
@@ -848,7 +848,7 @@ The following NEW packages will be installed:
 Need to get 44.1 kB of archives.
 After this operation, 223 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 exfat-utils amd64 1.2.5-2 [44.1 kB]
-Fetched 44.1 kB in 0s (664 kB/s)
+Fetched 44.1 kB in 0s (135 kB/s)
 Selecting previously unselected package exfat-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14755 files and directories currently installed.)
 Preparing to unpack .../exfat-utils_1.2.5-2_amd64.deb ...
@@ -869,7 +869,7 @@ Need to get 562 kB of archives.
 After this operation, 1,743 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libntfs-3g871 amd64 1:2016.2.22AR.1+dfsg-1 [165 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ntfs-3g amd64 1:2016.2.22AR.1+dfsg-1 [397 kB]
-Fetched 562 kB in 0s (1,745 kB/s)
+Fetched 562 kB in 0s (1,497 kB/s)
 Selecting previously unselected package libntfs-3g871.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14771 files and directories currently installed.)
 Preparing to unpack .../libntfs-3g871_1%3a2016.2.22AR.1+dfsg-1_amd64.deb ...
@@ -899,7 +899,7 @@ The following NEW packages will be installed:
 Need to get 31.1 kB of archives.
 After this operation, 69.6 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 amd64-microcode amd64 3.20160316.3 [31.1 kB]
-Fetched 31.1 kB in 1s (21.2 kB/s)
+Fetched 31.1 kB in 1s (30.7 kB/s)
 Selecting previously unselected package amd64-microcode.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14847 files and directories currently installed.)
 Preparing to unpack .../amd64-microcode_3.20160316.3_amd64.deb ...
@@ -920,7 +920,7 @@ Need to get 1,051 kB of archives.
 After this operation, 1,303 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-contrib stretch/contrib amd64 iucode-tool amd64 2.1.1-1 [53.3 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 intel-microcode amd64 3.20170707.1~deb9u1 [998 kB]
-Fetched 1,051 kB in 0s (1,798 kB/s)
+Fetched 1,051 kB in 0s (1,136 kB/s)
 Selecting previously unselected package iucode-tool.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14862 files and directories currently installed.)
 Preparing to unpack .../iucode-tool_2.1.1-1_amd64.deb ...
@@ -949,7 +949,7 @@ Need to get 30.1 kB of archives.
 After this operation, 95.2 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-contrib stretch/contrib amd64 b43-fwcutter amd64 1:019-3 [30.1 kB]
 Preconfiguring packages ...
-Fetched 30.1 kB in 0s (43.6 kB/s)
+Fetched 30.1 kB in 0s (34.6 kB/s)
 Selecting previously unselected package b43-fwcutter.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14939 files and directories currently installed.)
 Preparing to unpack .../b43-fwcutter_1%3a019-3_amd64.deb ...
@@ -1109,7 +1109,7 @@ The following NEW packages will be installed:
 Need to get 467 kB of archives.
 After this operation, 881 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 atmel-firmware all 1.3-4 [467 kB]
-Fetched 467 kB in 0s (1,389 kB/s)
+Fetched 467 kB in 0s (809 kB/s)
 Selecting previously unselected package atmel-firmware.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14947 files and directories currently installed.)
 Preparing to unpack .../atmel-firmware_1.3-4_all.deb ...
@@ -1124,7 +1124,7 @@ The following NEW packages will be installed:
 Need to get 72.7 kB of archives.
 After this operation, 162 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 bluez-firmware all 1.2-3 [72.7 kB]
-Fetched 72.7 kB in 0s (132 kB/s)
+Fetched 72.7 kB in 0s (134 kB/s)
 Selecting previously unselected package bluez-firmware.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14977 files and directories currently installed.)
 Preparing to unpack .../bluez-firmware_1.2-3_all.deb ...
@@ -1139,7 +1139,7 @@ The following NEW packages will be installed:
 Need to get 3,561 kB of archives.
 After this operation, 9,315 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-atheros all 20170823-1~bpo9+1 [3,561 kB]
-Fetched 3,561 kB in 0s (5,127 kB/s)
+Fetched 3,561 kB in 0s (4,790 kB/s)
 Selecting previously unselected package firmware-atheros.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14991 files and directories currently installed.)
 Preparing to unpack .../firmware-atheros_20170823-1~bpo9+1_all.deb ...
@@ -1154,7 +1154,7 @@ The following NEW packages will be installed:
 Need to get 99.7 kB of archives.
 After this operation, 444 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-bnx2 all 20170823-1~bpo9+1 [99.7 kB]
-Fetched 99.7 kB in 0s (101 kB/s)
+Fetched 99.7 kB in 0s (929 kB/s)
 Selecting previously unselected package firmware-bnx2.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15124 files and directories currently installed.)
 Preparing to unpack .../firmware-bnx2_20170823-1~bpo9+1_all.deb ...
@@ -1173,7 +1173,7 @@ The following NEW packages will be installed:
 Need to get 2,817 kB of archives.
 After this operation, 3,302 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-bnx2x all 20170823-1~bpo9+1 [2,817 kB]
-Fetched 2,817 kB in 0s (4,202 kB/s)
+Fetched 2,817 kB in 1s (1,639 kB/s)
 Selecting previously unselected package firmware-bnx2x.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15138 files and directories currently installed.)
 Preparing to unpack .../firmware-bnx2x_20170823-1~bpo9+1_all.deb ...
@@ -1192,7 +1192,7 @@ The following NEW packages will be installed:
 Need to get 3,822 kB of archives.
 After this operation, 14.1 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-brcm80211 all 20170823-1~bpo9+1 [3,822 kB]
-Fetched 3,822 kB in 0s (4,263 kB/s)
+Fetched 3,822 kB in 1s (3,366 kB/s)
 Selecting previously unselected package firmware-brcm80211.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15160 files and directories currently installed.)
 Preparing to unpack .../firmware-brcm80211_20170823-1~bpo9+1_all.deb ...
@@ -1207,7 +1207,7 @@ The following NEW packages will be installed:
 Need to get 1,191 kB of archives.
 After this operation, 4,148 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-intelwimax all 20170823-1~bpo9+1 [1,191 kB]
-Fetched 1,191 kB in 0s (1,901 kB/s)
+Fetched 1,191 kB in 1s (630 kB/s)
 Selecting previously unselected package firmware-intelwimax.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15197 files and directories currently installed.)
 Preparing to unpack .../firmware-intelwimax_20170823-1~bpo9+1_all.deb ...
@@ -1223,7 +1223,7 @@ Need to get 249 kB of archives.
 After this operation, 1,234 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-ipw2x00 all 20170823-1~bpo9+1 [249 kB]
 Preconfiguring packages ...
-Fetched 249 kB in 0s (541 kB/s)
+Fetched 249 kB in 0s (345 kB/s)
 Selecting previously unselected package firmware-ipw2x00.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15206 files and directories currently installed.)
 Preparing to unpack .../firmware-ipw2x00_20170823-1~bpo9+1_all.deb ...
@@ -1241,7 +1241,7 @@ Need to get 107 kB of archives.
 After this operation, 862 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-ivtv all 20170823-1~bpo9+1 [107 kB]
 Preconfiguring packages ...
-Fetched 107 kB in 0s (218 kB/s)
+Fetched 107 kB in 0s (303 kB/s)
 Selecting previously unselected package firmware-ivtv.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15220 files and directories currently installed.)
 Preparing to unpack .../firmware-ivtv_20170823-1~bpo9+1_all.deb ...
@@ -1256,7 +1256,7 @@ The following NEW packages will be installed:
 Need to get 7,048 kB of archives.
 After this operation, 57.9 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-iwlwifi all 20170823-1~bpo9+1 [7,048 kB]
-Fetched 7,048 kB in 0s (13.2 MB/s)
+Fetched 7,048 kB in 0s (10.8 MB/s)
 Selecting previously unselected package firmware-iwlwifi.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15232 files and directories currently installed.)
 Preparing to unpack .../firmware-iwlwifi_20170823-1~bpo9+1_all.deb ...
@@ -1271,7 +1271,7 @@ The following NEW packages will be installed:
 Need to get 3,315 kB of archives.
 After this operation, 10.2 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-libertas all 20170823-1~bpo9+1 [3,315 kB]
-Fetched 3,315 kB in 0s (12.6 MB/s)
+Fetched 3,315 kB in 0s (8,904 kB/s)
 Selecting previously unselected package firmware-libertas.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15304 files and directories currently installed.)
 Preparing to unpack .../firmware-libertas_20170823-1~bpo9+1_all.deb ...
@@ -1292,7 +1292,7 @@ Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-back
 Get:2 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-misc-nonfree all 20170823-1~bpo9+1 [2,882 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-linux-nonfree all 20170823-1~bpo9+1 [14.8 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-linux all 20170823-1~bpo9+1 [15.1 kB]
-Fetched 4,825 kB in 0s (8,742 kB/s)
+Fetched 4,825 kB in 1s (3,489 kB/s)
 Selecting previously unselected package firmware-amd-graphics.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15368 files and directories currently installed.)
 Preparing to unpack .../firmware-amd-graphics_20170823-1~bpo9+1_all.deb ...
@@ -1341,7 +1341,7 @@ The following NEW packages will be installed:
 Need to get 3,946 kB of archives.
 After this operation, 8,215 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-qlogic all 20170823-1~bpo9+1 [3,946 kB]
-Fetched 3,946 kB in 0s (11.3 MB/s)
+Fetched 3,946 kB in 1s (3,093 kB/s)
 Selecting previously unselected package firmware-qlogic.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16130 files and directories currently installed.)
 Preparing to unpack .../firmware-qlogic_20170823-1~bpo9+1_all.deb ...
@@ -1360,7 +1360,7 @@ The following NEW packages will be installed:
 Need to get 391 kB of archives.
 After this operation, 1,331 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 firmware-realtek all 20170823-1~bpo9+1 [391 kB]
-Fetched 391 kB in 0s (448 kB/s)
+Fetched 391 kB in 0s (401 kB/s)
 Selecting previously unselected package firmware-realtek.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16161 files and directories currently installed.)
 Preparing to unpack .../firmware-realtek_20170823-1~bpo9+1_all.deb ...
@@ -1379,14 +1379,14 @@ The following NEW packages will be installed:
 Need to get 14.3 kB of archives.
 After this operation, 66.6 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 firmware-zd1211 all 1:1.5-4 [14.3 kB]
-Fetched 14.3 kB in 0s (67.3 kB/s)
+Fetched 14.3 kB in 0s (15.5 kB/s)
 Selecting previously unselected package firmware-zd1211.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16233 files and directories currently installed.)
 Preparing to unpack .../firmware-zd1211_1%3a1.5-4_all.deb ...
 Unpacking firmware-zd1211 (1:1.5-4) ...
 Setting up firmware-zd1211 (1:1.5-4) ...
 CLDS: * Install firmwares.
-CLDS: * Disk size = 1497404K. Space Used = 178804K.
+CLDS: * Disk size = 1497408K. Space Used = 178808K.
 CLDS:>>>>>>>>> Running inst-min-con-live-build-tools.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1401,7 +1401,7 @@ The following NEW packages will be installed:
 Need to get 94.0 kB of archives.
 After this operation, 125 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 isolinux all 3:6.03+dfsg-14.1 [94.0 kB]
-Fetched 94.0 kB in 0s (687 kB/s)
+Fetched 94.0 kB in 0s (160 kB/s)
 Selecting previously unselected package isolinux.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16249 files and directories currently installed.)
 Preparing to unpack .../isolinux_3%3a6.03+dfsg-14.1_all.deb ...
@@ -1424,7 +1424,7 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjte1
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libisofs6 amd64 1.4.6-1 [198 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libisoburn1 amd64 1.4.6-1+b1 [379 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xorriso amd64 1.4.6-1+b1 [299 kB]
-Fetched 1,060 kB in 0s (1,452 kB/s)
+Fetched 1,060 kB in 0s (3,623 kB/s)
 Selecting previously unselected package libburn4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16259 files and directories currently installed.)
 Preparing to unpack .../libburn4_1.4.6-1_amd64.deb ...
@@ -1466,7 +1466,7 @@ Need to get 179 kB of archives.
 After this operation, 488 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblzo2-2 amd64 2.08-1.2+b2 [55.0 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 squashfs-tools amd64 1:4.3-3+deb9u1 [124 kB]
-Fetched 179 kB in 0s (350 kB/s)
+Fetched 179 kB in 1s (161 kB/s)
 Selecting previously unselected package liblzo2-2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16318 files and directories currently installed.)
 Preparing to unpack .../liblzo2-2_2.08-1.2+b2_amd64.deb ...
@@ -1483,7 +1483,7 @@ CLDS: * Install isolinux to get isohdpfx.bin and isolinux.bin in order to create
 CLDS: * Note: boot.cat is automatically created.
 CLDS: * Install rsync to copy directories.
 CLDS: * Install squashfs-tools to create new squashfs.
-CLDS: * Disk size = 1501748K. Space Used = 4344K.
+CLDS: * Disk size = 1501752K. Space Used = 4344K.
 CLDS:>>>>>>>>> Running inst-min-con-mtp-jmtpfs.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1505,7 +1505,7 @@ Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmtp9
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmagic-mgc amd64 1:5.30-1+deb9u1 [222 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmagic1 amd64 1:5.30-1+deb9u1 [111 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 jmtpfs amd64 0.5-2+b2 [41.0 kB]
-Fetched 704 kB in 0s (12.4 MB/s)
+Fetched 704 kB in 0s (745 kB/s)
 Selecting previously unselected package libmtp-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16336 files and directories currently installed.)
 Preparing to unpack .../0-libmtp-common_1.1.13-1_all.deb ...
@@ -1541,7 +1541,7 @@ CLDS: *   mkdir /path/to/your/mount/directory/
 CLDS: *   jmtpfs -o allow_other /path/to/your/mount/directory/
 CLDS: *   # Enter your PIN to unlock your smartphone.
 CLDS: *   cd /path/to/your/mount/directory/
-CLDS: * Disk size = 1510564K. Space Used = 8816K.
+CLDS: * Disk size = 1510568K. Space Used = 8816K.
 CLDS:>>>>>>>>> Running inst-min-con-ntp.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1560,7 +1560,7 @@ After this operation, 2,266 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libedit2 amd64 3.1-20160903-3 [84.8 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopts25 amd64 1:5.18.12-3 [68.0 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ntp amd64 1:4.2.8p10+dfsg-3+deb9u1 [598 kB]
-Fetched 751 kB in 0s (802 kB/s)
+Fetched 751 kB in 0s (1,001 kB/s)
 Selecting previously unselected package libedit2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16396 files and directories currently installed.)
 Preparing to unpack .../libedit2_3.1-20160903-3_amd64.deb ...
@@ -1581,7 +1581,7 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Processing triggers for systemd (232-25+deb9u1) ...
 CLDS: * Install Network Time Protocol: ntp.
-CLDS: * Disk size = 1513700K. Space Used = 3136K.
+CLDS: * Disk size = 1513704K. Space Used = 3136K.
 CLDS:>>>>>>>>> Running inst-min-con-numlock.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1607,7 +1607,7 @@ Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxi6 
 Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 x11-common all 1:7.7+19 [251 kB]
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxtst6 amd64 2:1.2.3-1 [27.8 kB]
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 numlockx amd64 1.2-7+b2 [10.9 kB]
-Fetched 1,643 kB in 0s (9,112 kB/s)
+Fetched 1,643 kB in 0s (3,671 kB/s)
 Selecting previously unselected package libxau6:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16475 files and directories currently installed.)
 Preparing to unpack .../0-libxau6_1%3a1.0.8-1_amd64.deb ...
@@ -1657,7 +1657,7 @@ Setting up numlockx (1.2-7+b2) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Processing triggers for systemd (232-25+deb9u1) ...
 CLDS: * Install numlockx to turn on NumLock on boot.
-CLDS: * Disk size = 1520528K. Space Used = 6828K.
+CLDS: * Disk size = 1520532K. Space Used = 6828K.
 CLDS:>>>>>>>>> Running inst-min-con-pciutils.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1671,7 +1671,7 @@ Need to get 336 kB of archives.
 After this operation, 1,354 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpci3 amd64 1:3.5.2-1 [56.5 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 pciutils amd64 1:3.5.2-1 [279 kB]
-Fetched 336 kB in 0s (1,939 kB/s)
+Fetched 336 kB in 0s (4,302 kB/s)
 Selecting previously unselected package libpci3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16819 files and directories currently installed.)
 Preparing to unpack .../libpci3_1%3a3.5.2-1_amd64.deb ...
@@ -1684,7 +1684,7 @@ Setting up libpci3:amd64 (1:3.5.2-1) ...
 Setting up pciutils (1:3.5.2-1) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 CLDS: * Install pciutils to troubleshoot pci devices(i.e. lspci).
-CLDS: * Disk size = 1522248K. Space Used = 1720K.
+CLDS: * Disk size = 1522252K. Space Used = 1720K.
 CLDS:>>>>>>>>> Running inst-min-con-snd-alsa.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1705,7 +1705,7 @@ Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgomp
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libfftw3-single3 amd64 3.3.5-3 [776 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsamplerate0 amd64 0.1.8-8+b2 [949 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 alsa-utils amd64 1.1.3-1 [1,044 kB]
-Fetched 3,511 kB in 1s (3,242 kB/s)
+Fetched 3,511 kB in 1s (3,165 kB/s)
 Selecting previously unselected package libasound2-data.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16843 files and directories currently installed.)
 Preparing to unpack .../0-libasound2-data_1.1.3-5_all.deb ...
@@ -1738,7 +1738,7 @@ Processing triggers for systemd (232-25+deb9u1) ...
 CLDS: * Install ALSA sound.
 CLDS: * Test sound: aplay /usr/share/sounds/alsa/*.
 CLDS: * Add key bindings.
-CLDS: * Disk size = 1534156K. Space Used = 11908K.
+CLDS: * Disk size = 1534160K. Space Used = 11908K.
 CLDS:>>>>>>>>> Running inst-min-con-udevil.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1756,7 +1756,7 @@ Need to get 2,784 kB of archives.
 After this operation, 5,544 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libglib2.0-0 amd64 2.50.3-2 [2,691 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 udevil amd64 0.4.4-1+b1 [92.9 kB]
-Fetched 2,784 kB in 0s (3,107 kB/s)
+Fetched 2,784 kB in 0s (4,865 kB/s)
 Selecting previously unselected package libglib2.0-0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17123 files and directories currently installed.)
 Preparing to unpack .../libglib2.0-0_2.50.3-2_amd64.deb ...
@@ -1774,7 +1774,7 @@ CLDS: * Install udevil to auto mount USB devices.
 CLDS: * Set devmon to auto start on startup.
 CLDS: * Need ntfs-3g driver to be able to read and write ntfs partition.
 CLDS: * Need exfat-fuse to be able to read and write exfat partition.
-CLDS: * Disk size = 1542192K. Space Used = 8036K.
+CLDS: * Disk size = 1542196K. Space Used = 8036K.
 CLDS:>>>>>>>>> Running inst-min-con-users-poweruser.sh ...
 Adding user `poweruser' ...
 Adding new group `poweruser' (1000) ...
@@ -1783,7 +1783,7 @@ Creating home directory `/home/poweruser' ...
 Copying files from `/etc/skel' ...
 Enter new UNIX password: Retype new UNIX password: passwd: password updated successfully
 CLDS: * Created poweruser: Username/pwd = poweruser/poweruser.
-CLDS: * Disk size = 1542228K. Space Used = 36K.
+CLDS: * Disk size = 1542232K. Space Used = 36K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-apache2.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1829,7 +1829,7 @@ Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache
 Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-utils amd64 2.4.25-3+deb9u3 [217 kB]
 Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-data all 2.4.25-3+deb9u3 [162 kB]
 Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2 amd64 2.4.25-3+deb9u3 [235 kB]
-Fetched 19.2 MB in 0s (26.5 MB/s)
+Fetched 19.2 MB in 1s (16.9 MB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17179 files and directories currently installed.)
 Preparing to unpack .../perl-base_5.24.1-3+deb9u2_amd64.deb ...
 Unpacking perl-base (5.24.1-3+deb9u2) over (5.24.1-3+deb9u1) ...
@@ -1950,7 +1950,7 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Processing triggers for systemd (232-25+deb9u1) ...
 CLDS: * Install apache2.
-CLDS: * Disk size = 1646144K. Space Used = 103916K.
+CLDS: * Disk size = 1646148K. Space Used = 103916K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-buffer-pv.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1963,14 +1963,14 @@ The following NEW packages will be installed:
 Need to get 48.3 kB of archives.
 After this operation, 124 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 pv amd64 1.6.0-1+b1 [48.3 kB]
-Fetched 48.3 kB in 1s (36.8 kB/s)
+Fetched 48.3 kB in 0s (102 kB/s)
 Selecting previously unselected package pv.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19799 files and directories currently installed.)
 Preparing to unpack .../pv_1.6.0-1+b1_amd64.deb ...
 Unpacking pv (1.6.0-1+b1) ...
 Setting up pv (1.6.0-1+b1) ...
 CLDS: * Install pv.
-CLDS: * Disk size = 1646308K. Space Used = 164K.
+CLDS: * Disk size = 1646312K. Space Used = 164K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-buffer.sh ...
 Reading package lists...
 Building dependency tree...
@@ -1981,14 +1981,14 @@ The following NEW packages will be installed:
 Need to get 15.3 kB of archives.
 After this operation, 43.0 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 buffer amd64 1.19-12+b1 [15.3 kB]
-Fetched 15.3 kB in 1s (11.7 kB/s)
+Fetched 15.3 kB in 0s (81.9 kB/s)
 Selecting previously unselected package buffer.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19812 files and directories currently installed.)
 Preparing to unpack .../buffer_1.19-12+b1_amd64.deb ...
 Unpacking buffer (1.19-12+b1) ...
 Setting up buffer (1.19-12+b1) ...
 CLDS: * Install buffer.
-CLDS: * Disk size = 1646384K. Space Used = 76K.
+CLDS: * Disk size = 1646388K. Space Used = 76K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-cld-dev-tools-aptly.sh ...
 Warning: apt-key output should not be parsed (stdout is not a terminal)
 OK
@@ -2023,7 +2023,7 @@ The following NEW packages will be installed:
 Need to get 595 kB of archives.
 After this operation, 1,110 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dirmngr amd64 2.1.18-8~deb9u1 [595 kB]
-Fetched 595 kB in 0s (892 kB/s)
+Fetched 595 kB in 0s (3,533 kB/s)
 Selecting previously unselected package dirmngr.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19820 files and directories currently installed.)
 Preparing to unpack .../dirmngr_2.1.18-8~deb9u1_amd64.deb ...
@@ -2041,7 +2041,7 @@ Need to get 3,295 kB of archives.
 After this operation, 13.0 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xz-utils amd64 5.2.2-1.2+b1 [266 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 aptly amd64 1.1.1-2~bpo9+1 [3,029 kB]
-Fetched 3,295 kB in 0s (7,949 kB/s)
+Fetched 3,295 kB in 0s (5,087 kB/s)
 Selecting previously unselected package xz-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19839 files and directories currently installed.)
 Preparing to unpack .../xz-utils_5.2.2-1.2+b1_amd64.deb ...
@@ -2055,7 +2055,7 @@ Setting up aptly (1.1.1-2~bpo9+1) ...
 CLDS: * Add aptly nightly build repository.
 CLDS: * Install aptly version: unknown to create local debian repository.
 CLDS: * Add xz-utils package because aptly snapshot merge needs it.
-CLDS: * Disk size = 1663968K. Space Used = 17584K.
+CLDS: * Disk size = 1663972K. Space Used = 17584K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-curl.sh ...
 Reading package lists...
 Building dependency tree...
@@ -2082,7 +2082,7 @@ Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 librtmp
 Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libssh2-1 amd64 1.7.0-1 [138 kB]
 Get:8 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libcurl3 amd64 7.52.1-5+deb9u2 [291 kB]
 Get:9 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 curl amd64 7.52.1-5+deb9u2 [227 kB]
-Fetched 1,376 kB in 0s (2,040 kB/s)
+Fetched 1,376 kB in 0s (2,318 kB/s)
 Selecting previously unselected package libkeyutils1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19891 files and directories currently installed.)
 Preparing to unpack .../0-libkeyutils1_1.5.9-9_amd64.deb ...
@@ -2123,7 +2123,7 @@ Setting up libcurl3:amd64 (7.52.1-5+deb9u2) ...
 Setting up curl (7.52.1-5+deb9u2) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 CLDS: * Install curl.
-CLDS: * Disk size = 1668872K. Space Used = 4904K.
+CLDS: * Disk size = 1668876K. Space Used = 4904K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-default-jre.sh ...
 Reading package lists...
 Building dependency tree...
@@ -2315,7 +2315,7 @@ Get:121 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openj
 Get:122 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 default-jre amd64 2:1.8-58 [934 B]
 Extracting templates from packages: 24%Extracting templates from packages: 49%Extracting templates from packages: 73%Extracting templates from packages: 98%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 77.9 MB in 2s (29.2 MB/s)
+Fetched 77.9 MB in 2s (31.5 MB/s)
 Selecting previously unselected package libpng16-16:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19961 files and directories currently installed.)
 Preparing to unpack .../000-libpng16-16_1.6.28-1_amd64.deb ...
@@ -3005,7 +3005,7 @@ done.
 Processing triggers for libgdk-pixbuf2.0-0:amd64 (2.36.5-2+deb9u1) ...
 CLDS: * Install openjdk version "1.8.0_141".
 CLDS: * To install JAVA binary: https://wiki.debian.org/JavaPackage.
-CLDS: * Disk size = 1992316K. Space Used = 323444K.
+CLDS: * Disk size = 1992320K. Space Used = 323444K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-dev-tool-tree.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3016,14 +3016,14 @@ The following NEW packages will be installed:
 Need to get 46.1 kB of archives.
 After this operation, 106 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 tree amd64 1.7.0-5 [46.1 kB]
-Fetched 46.1 kB in 1s (29.2 kB/s)
+Fetched 46.1 kB in 0s (121 kB/s)
 Selecting previously unselected package tree.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 34894 files and directories currently installed.)
 Preparing to unpack .../tree_1.7.0-5_amd64.deb ...
 Unpacking tree (1.7.0-5) ...
 Setting up tree (1.7.0-5) ...
 CLDS: * Install tree to display files and directories structure.
-CLDS: * Disk size = 1992488K. Space Used = 172K.
+CLDS: * Disk size = 1992496K. Space Used = 176K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-encoding-libtext-iconv-perl.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3031,7 +3031,7 @@ Reading state information...
 libtext-iconv-perl is already the newest version (1.7-5+b4).
 0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 CLDS: * Install libtext-iconv-perl so that you can use iconv to convert to other encoding.
-CLDS: * Disk size = 1992492K. Space Used = 4K.
+CLDS: * Disk size = 1992500K. Space Used = 4K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-fuse.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3040,7 +3040,7 @@ fuse is already the newest version (2.9.7-1).
 fuse set to manually installed.
 0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 CLDS: * Install fuse(fusermount) to run TMSU.
-CLDS: * Disk size = 1992496K. Space Used = 4K.
+CLDS: * Disk size = 1992504K. Space Used = 4K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-gnuplot.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3105,7 +3105,7 @@ Get:33 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwxg
 Get:34 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gnuplot-qt amd64 5.0.5+dfsg1-6+deb9u1 [1,038 kB]
 Get:35 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gnuplot all 5.0.5+dfsg1-6+deb9u1 [70.8 kB]
 Extracting templates from packages: 85%Extracting templates from packages: 100%
-Fetched 16.0 MB in 0s (18.3 MB/s)
+Fetched 16.0 MB in 1s (11.8 MB/s)
 Selecting previously unselected package libdouble-conversion1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 34902 files and directories currently installed.)
 Preparing to unpack .../00-libdouble-conversion1_2.0.1-4_amd64.deb ...
@@ -3252,7 +3252,7 @@ update-alternatives: using /usr/bin/gnuplot-qt to provide /usr/bin/gnuplot (gnup
 Setting up gnuplot (5.0.5+dfsg1-6+deb9u1) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 CLDS: * Install gnuplot.
-CLDS: * Disk size = 2063872K. Space Used = 71376K.
+CLDS: * Disk size = 2063876K. Space Used = 71372K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-imagemagick.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3282,7 +3282,7 @@ Get:6 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/m
 Get:7 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libmagickwand-6.q16-3 amd64 8:6.9.7.4+dfsg-11+deb9u3 [422 kB]
 Get:8 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 imagemagick-6.q16 amd64 8:6.9.7.4+dfsg-11+deb9u3 [563 kB]
 Get:9 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 imagemagick amd64 8:6.9.7.4+dfsg-11+deb9u3 [141 kB]
-Fetched 4,319 kB in 1s (3,635 kB/s)
+Fetched 4,319 kB in 1s (3,780 kB/s)
 Selecting previously unselected package liblqr-1-0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35474 files and directories currently installed.)
 Preparing to unpack .../0-liblqr-1-0_0.4.2-2+b2_amd64.deb ...
@@ -3347,7 +3347,7 @@ update-alternatives: using /usr/bin/mogrify-im6.q16 to provide /usr/bin/mogrify-
 Setting up imagemagick (8:6.9.7.4+dfsg-11+deb9u3) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 CLDS: * Install imagemagick to process image from command line.
-CLDS: * Disk size = 2081408K. Space Used = 17536K.
+CLDS: * Disk size = 2081412K. Space Used = 17536K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-iso-iat.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3358,14 +3358,14 @@ The following NEW packages will be installed:
 Need to get 7,224 B of archives.
 After this operation, 26.6 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 iat amd64 0.1.3-7+b2 [7,224 B]
-Fetched 7,224 B in 1s (6,000 B/s)
+Fetched 7,224 B in 0s (13.3 kB/s)
 Selecting previously unselected package iat.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35849 files and directories currently installed.)
 Preparing to unpack .../iat_0.1.3-7+b2_amd64.deb ...
 Unpacking iat (0.1.3-7+b2) ...
 Setting up iat (0.1.3-7+b2) ...
 CLDS: * Install iat to convert BIN, MDF, PDI, CDI, NRG, and B5I into ISO-9660.
-CLDS: * Disk size = 2081468K. Space Used = 60K.
+CLDS: * Disk size = 2081472K. Space Used = 60K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-locate.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3376,7 +3376,7 @@ The following NEW packages will be installed:
 Need to get 212 kB of archives.
 After this operation, 322 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 locate amd64 4.6.0+git+20161106-2 [212 kB]
-Fetched 212 kB in 1s (146 kB/s)
+Fetched 212 kB in 0s (1,500 kB/s)
 Selecting previously unselected package locate.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35856 files and directories currently installed.)
 Preparing to unpack .../locate_4.6.0+git+20161106-2_amd64.deb ...
@@ -3386,7 +3386,7 @@ Setting up locate (4.6.0+git+20161106-2) ...
 CLDS: * Install locate to generate an index of files and directories. Searching for files will be much faster.
 CLDS: * Add locate alias.
 CLDS: * Run updatedb to update the database.
-CLDS: * Disk size = 2082032K. Space Used = 564K.
+CLDS: * Disk size = 2082036K. Space Used = 564K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-macchanger.sh ...
 info: Trying to set 'macchanger/automatically_run' [boolean] to 'true'
 info: Loading answer for 'macchanger/automatically_run'
@@ -3400,7 +3400,7 @@ Need to get 193 kB of archives.
 After this operation, 651 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 macchanger amd64 1.7.0-5.3+b1 [193 kB]
 Preconfiguring packages ...
-Fetched 193 kB in 1s (143 kB/s)
+Fetched 193 kB in 1s (145 kB/s)
 Selecting previously unselected package macchanger.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35870 files and directories currently installed.)
 Preparing to unpack .../macchanger_1.7.0-5.3+b1_amd64.deb ...
@@ -3412,7 +3412,7 @@ CLDS: * Set macchanger to change MAC address whenever network device is up or do
 CLDS: * To configure macchanger: dpkg-reconfigure macchanger.
 CLDS: * Check whether it is working: macchanger -s .
 CLDS: * systemctl status macchanger@.service
-CLDS: * Disk size = 2082916K. Space Used = 884K.
+CLDS: * Disk size = 2082920K. Space Used = 884K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-mariadb-server.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3453,7 +3453,7 @@ Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 socat 
 Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-server-10.1 amd64 10.1.26-0+deb9u1 [5,333 kB]
 Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-server all 10.1.26-0+deb9u1 [26.2 kB]
 Preconfiguring packages ...
-Fetched 25.3 MB in 1s (19.3 MB/s)
+Fetched 25.3 MB in 0s (27.9 MB/s)
 Selecting previously unselected package libmpfr4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35889 files and directories currently installed.)
 Preparing to unpack .../libmpfr4_3.1.5-1_amd64.deb ...
@@ -3543,7 +3543,7 @@ Processing triggers for systemd (232-25+deb9u1) ...
 mysqladmin: connect to server at 'localhost' failed
 error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")'
 Check that mysqld is running and that the socket: '/var/run/mysqld/mysqld.sock' exists!
-CLDS: * Disk size = 2402856K. Space Used = 319940K.
+CLDS: * Disk size = 2402860K. Space Used = 319940K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-pdf-poppler-utils.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3559,7 +3559,7 @@ Need to get 1,437 kB of archives.
 After this operation, 3,830 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpoppler64 amd64 0.48.0-2 [1,285 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 poppler-utils amd64 0.48.0-2 [151 kB]
-Fetched 1,437 kB in 1s (1,396 kB/s)
+Fetched 1,437 kB in 0s (1,492 kB/s)
 Selecting previously unselected package libpoppler64:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36678 files and directories currently installed.)
 Preparing to unpack .../libpoppler64_0.48.0-2_amd64.deb ...
@@ -3571,7 +3571,7 @@ Setting up libpoppler64:amd64 (0.48.0-2) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Setting up poppler-utils (0.48.0-2) ...
 CLDS: * Install poppler-utils to extract text from pdf files.
-CLDS: * Disk size = 2408084K. Space Used = 5228K.
+CLDS: * Disk size = 2408088K. Space Used = 5228K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-php.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3596,7 +3596,7 @@ Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php7.0-
 Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libapache2-mod-php7.0 amd64 7.0.19-1 [1,231 kB]
 Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php7.0 all 7.0.19-1 [48.7 kB]
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php all 1:7.0+49 [5,016 B]
-Fetched 3,562 kB in 0s (4,100 kB/s)
+Fetched 3,562 kB in 0s (5,966 kB/s)
 Selecting previously unselected package php-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36716 files and directories currently installed.)
 Preparing to unpack .../0-php-common_1%3a49_all.deb ...
@@ -3689,7 +3689,7 @@ invoke-rc.d: policy-rc.d denied execution of restart.
 Setting up php7.0 (7.0.19-1) ...
 Setting up php (1:7.0+49) ...
 CLDS: * Install php.
-CLDS: * Disk size = 2426160K. Space Used = 18076K.
+CLDS: * Disk size = 2426160K. Space Used = 18072K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-sqlite3.sh ...
 Reading package lists...
 Building dependency tree...
@@ -3702,7 +3702,7 @@ The following NEW packages will be installed:
 Need to get 784 kB of archives.
 After this operation, 2,355 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 sqlite3 amd64 3.16.2-5 [784 kB]
-Fetched 784 kB in 0s (949 kB/s)
+Fetched 784 kB in 0s (1,113 kB/s)
 Selecting previously unselected package sqlite3.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36857 files and directories currently installed.)
 Preparing to unpack .../sqlite3_3.16.2-5_amd64.deb ...
@@ -3713,8 +3713,8 @@ CLDS: * Disk size = 2429260K. Space Used = 3100K.
 CLDS:>>>>>>>>> Running inst-min-con-xtra-timezone.sh ...
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Wed Nov 22 00:15:55 UTC 2017.
-Universal Time is now:  Wed Nov 22 00:15:55 UTC 2017.
+Local time is now:      Wed Nov 22 08:10:39 UTC 2017.
+Universal Time is now:  Wed Nov 22 08:10:39 UTC 2017.
 
 CLDS: * Set time zone to EST (America/Montreal) in /etc/timezone.
 CLDS: * Disk size = 2429264K. Space Used = 4K.
@@ -3810,7 +3810,7 @@ Get:24 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xserve
 Get:25 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xserver-xorg-input-all amd64 1:7.7+19 [37.9 kB]
 Get:26 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xserver-xorg amd64 1:7.7+19 [93.7 kB]
 Preconfiguring packages ...
-Fetched 20.7 MB in 1s (14.3 MB/s)
+Fetched 20.7 MB in 1s (13.6 MB/s)
 Selecting previously unselected package keyboard-configuration.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36865 files and directories currently installed.)
 Preparing to unpack .../00-keyboard-configuration_1.164_all.deb ...
@@ -3976,7 +3976,7 @@ Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfc
 Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xfce4-terminal amd64 0.8.3-1 [555 kB]
 Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libfribidi0 amd64 0.19.7-1+b1 [45.7 kB]
 Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 jwm amd64 2.3.6-1 [232 kB]
-Fetched 4,429 kB in 0s (4,576 kB/s)
+Fetched 4,429 kB in 0s (5,268 kB/s)
 Selecting previously unselected package libpam-systemd:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37165 files and directories currently installed.)
 Preparing to unpack .../00-libpam-systemd_232-25+deb9u1_amd64.deb ...
@@ -4119,7 +4119,7 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libluaj
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libyaml-0-2 amd64 0.1.7-2 [47.6 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 pandoc-data all 1.17.2~dfsg-3 [265 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 pandoc amd64 1.17.2~dfsg-3 [9,104 kB]
-Fetched 9,660 kB in 1s (5,824 kB/s)
+Fetched 9,660 kB in 1s (7,118 kB/s)
 Selecting previously unselected package libluajit-5.1-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37899 files and directories currently installed.)
 Preparing to unpack .../libluajit-5.1-common_2.0.4+dfsg-1_all.deb ...
@@ -4155,7 +4155,7 @@ The following NEW packages will be installed:
 Need to get 21.5 kB of archives.
 After this operation, 58.4 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wmctrl amd64 1.07-7+b1 [21.5 kB]
-Fetched 21.5 kB in 0s (40.4 kB/s)
+Fetched 21.5 kB in 0s (24.5 kB/s)
 Selecting previously unselected package wmctrl.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38022 files and directories currently installed.)
 Preparing to unpack .../wmctrl_1.07-7+b1_amd64.deb ...
@@ -4203,7 +4203,7 @@ The following NEW packages will be installed:
 Need to get 380 kB of archives.
 After this operation, 1,469 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 menu amd64 2.1.47+b1 [380 kB]
-Fetched 380 kB in 0s (642 kB/s)
+Fetched 380 kB in 0s (565 kB/s)
 Selecting previously unselected package menu.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38030 files and directories currently installed.)
 Preparing to unpack .../menu_2.1.47+b1_amd64.deb ...
@@ -4226,7 +4226,7 @@ The following NEW packages will be installed:
 Need to get 46.8 kB of archives.
 After this operation, 227 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 volumeicon-alsa amd64 0.5.1+git20170117-1~bpo9+1 [46.8 kB]
-Fetched 46.8 kB in 0s (67.5 kB/s)
+Fetched 46.8 kB in 0s (47.9 kB/s)
 Selecting previously unselected package volumeicon-alsa.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38214 files and directories currently installed.)
 Preparing to unpack .../volumeicon-alsa_0.5.1+git20170117-1~bpo9+1_amd64.deb ...
@@ -4250,7 +4250,7 @@ The following NEW packages will be installed:
 Need to get 20.3 MB of archives.
 After this operation, 49.4 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 fonts-hanazono all 20160201-1 [20.3 MB]
-Fetched 20.3 MB in 1s (14.7 MB/s)
+Fetched 20.3 MB in 1s (16.6 MB/s)
 Selecting previously unselected package fonts-hanazono.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38269 files and directories currently installed.)
 Preparing to unpack .../fonts-hanazono_20160201-1_all.deb ...
@@ -4274,7 +4274,7 @@ Need to get 87.3 kB of archives.
 After this operation, 204 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxdo3 amd64 1:3.20160805.1-3 [32.9 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xdotool amd64 1:3.20160805.1-3 [54.4 kB]
-Fetched 87.3 kB in 0s (103 kB/s)
+Fetched 87.3 kB in 0s (110 kB/s)
 Selecting previously unselected package libxdo3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38280 files and directories currently installed.)
 Preparing to unpack .../libxdo3_1%3a3.20160805.1-3_amd64.deb ...
@@ -4307,7 +4307,7 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5s
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5help5 amd64 5.7.1-1 [200 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5sql5-sqlite amd64 5.7.1+dfsg-3+b1 [60.8 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 speedcrunch amd64 0.12.0-1 [777 kB]
-Fetched 1,446 kB in 0s (1,602 kB/s)
+Fetched 1,446 kB in 1s (881 kB/s)
 Selecting previously unselected package libqt5clucene5:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38294 files and directories currently installed.)
 Preparing to unpack .../libqt5clucene5_5.7.1-1_amd64.deb ...
@@ -4352,7 +4352,7 @@ Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libexif
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libid3tag0 amd64 0.15.1b-12 [35.4 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libimlib2 amd64 1.4.8-1 [205 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 feh amd64 2.18-2 [197 kB]
-Fetched 760 kB in 1s (749 kB/s)
+Fetched 760 kB in 1s (693 kB/s)
 Selecting previously unselected package libexif12:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38335 files and directories currently installed.)
 Preparing to unpack .../libexif12_0.6.21-2+b2_amd64.deb ...
@@ -4388,7 +4388,7 @@ The following NEW packages will be installed:
 Need to get 141 kB of archives.
 After this operation, 655 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gpicview amd64 0.2.5-2+b1 [141 kB]
-Fetched 141 kB in 0s (150 kB/s)
+Fetched 141 kB in 0s (142 kB/s)
 Selecting previously unselected package gpicview.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38447 files and directories currently installed.)
 Preparing to unpack .../gpicview_0.2.5-2+b1_amd64.deb ...
@@ -4416,7 +4416,7 @@ Need to get 6,918 kB of archives.
 After this operation, 17.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjbig2dec0 amd64 0.13-4.1 [60.1 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 mupdf amd64 1.9a+ds1-4+deb9u2 [6,858 kB]
-Fetched 6,918 kB in 0s (8,102 kB/s)
+Fetched 6,918 kB in 1s (5,287 kB/s)
 Selecting previously unselected package libjbig2dec0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38528 files and directories currently installed.)
 Preparing to unpack .../libjbig2dec0_0.13-4.1_amd64.deb ...
@@ -4450,7 +4450,7 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libvorb
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libcanberra0 amd64 0.30-3 [40.0 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libcanberra-gtk3-0 amd64 0.30-3 [15.4 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gnome-screenshot amd64 3.22.0-1+b1 [167 kB]
-Fetched 290 kB in 0s (483 kB/s)
+Fetched 290 kB in 0s (305 kB/s)
 Selecting previously unselected package libtdb1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38552 files and directories currently installed.)
 Preparing to unpack .../libtdb1_1.3.11-2_amd64.deb ...
@@ -4490,7 +4490,7 @@ The following NEW packages will be installed:
 Need to get 1,569 kB of archives.
 After this operation, 5,774 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 scite amd64 3.7.2-1 [1,569 kB]
-Fetched 1,569 kB in 0s (2,202 kB/s)
+Fetched 1,569 kB in 0s (1,572 kB/s)
 Selecting previously unselected package scite.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38687 files and directories currently installed.)
 Preparing to unpack .../scite_3.7.2-1_amd64.deb ...
@@ -4508,7 +4508,7 @@ The following NEW packages will be installed:
 Need to get 69.3 kB of archives.
 After this operation, 420 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 at-spi2-core amd64 2.22.0-6+deb9u1 [69.3 kB]
-Fetched 69.3 kB in 0s (93.7 kB/s)
+Fetched 69.3 kB in 0s (76.4 kB/s)
 Selecting previously unselected package at-spi2-core.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38882 files and directories currently installed.)
 Preparing to unpack .../at-spi2-core_2.22.0-6+deb9u1_amd64.deb ...
@@ -4537,7 +4537,7 @@ Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 desktop
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 thunar-data all 1.6.11-1 [981 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libthunarx-2-0 amd64 1.6.11-1 [60.6 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 thunar amd64 1.6.11-1 [272 kB]
-Fetched 1,398 kB in 0s (1,810 kB/s)
+Fetched 1,398 kB in 0s (1,651 kB/s)
 Selecting previously unselected package desktop-file-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38970 files and directories currently installed.)
 Preparing to unpack .../desktop-file-utils_0.23-1_amd64.deb ...
@@ -4573,7 +4573,7 @@ Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtag1
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtag1v5 amd64 1.11.1+dfsg.1-0.1 [23.4 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtagc0 amd64 1.11.1+dfsg.1-0.1 [28.4 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 thunar-media-tags-plugin amd64 0.2.1-1+b2 [65.4 kB]
-Fetched 402 kB in 0s (587 kB/s)
+Fetched 402 kB in 0s (798 kB/s)
 Selecting previously unselected package libtag1v5-vanilla:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39113 files and directories currently installed.)
 Preparing to unpack .../libtag1v5-vanilla_1.11.1+dfsg.1-0.1_amd64.deb ...
@@ -4604,7 +4604,7 @@ The following NEW packages will be installed:
 Need to get 50.4 kB of archives.
 After this operation, 586 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 thunar-archive-plugin amd64 0.3.1-4 [50.4 kB]
-Fetched 50.4 kB in 0s (106 kB/s)
+Fetched 50.4 kB in 0s (50.4 kB/s)
 Selecting previously unselected package thunar-archive-plugin.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39180 files and directories currently installed.)
 Preparing to unpack .../thunar-archive-plugin_0.3.1-4_amd64.deb ...
@@ -4620,7 +4620,7 @@ The following NEW packages will be installed:
 Need to get 148 kB of archives.
 After this operation, 1,197 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 thunar-volman amd64 0.8.1-2 [148 kB]
-Fetched 148 kB in 0s (390 kB/s)
+Fetched 148 kB in 0s (505 kB/s)
 Selecting previously unselected package thunar-volman.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39243 files and directories currently installed.)
 Preparing to unpack .../thunar-volman_0.8.1-2_amd64.deb ...
@@ -4642,7 +4642,7 @@ The following NEW packages will be installed:
 Need to get 827 kB of archives.
 After this operation, 2,143 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 fonts-liberation all 1:1.07.4-2 [827 kB]
-Fetched 827 kB in 0s (964 kB/s)
+Fetched 827 kB in 0s (992 kB/s)
 Selecting previously unselected package fonts-liberation.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39309 files and directories currently installed.)
 Preparing to unpack .../fonts-liberation_1%3a1.07.4-2_all.deb ...
@@ -4706,7 +4706,7 @@ Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmon
 Get:22 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono-addins0.2-cil all 1.0+git20130406.adcd75b-4 [201 kB]
 Get:23 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono-addins-gui0.2-cil all 1.0+git20130406.adcd75b-4 [69.2 kB]
 Get:24 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 pinta all 1.6-2 [694 kB]
-Fetched 11.2 MB in 1s (9,662 kB/s)
+Fetched 11.2 MB in 1s (10.9 MB/s)
 Selecting previously unselected package binutils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39333 files and directories currently installed.)
 Preparing to unpack .../00-binutils_2.28-5_amd64.deb ...
@@ -4832,7 +4832,7 @@ The following NEW packages will be installed:
 Need to get 75.6 kB of archives.
 After this operation, 245 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjsoncpp1 amd64 1.7.4-3 [75.6 kB]
-Fetched 75.6 kB in 0s (81.3 kB/s)
+Fetched 75.6 kB in 0s (137 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -4852,7 +4852,7 @@ Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libeven
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libhunspell-1.4-0 amd64 1.4.1-2+b2 [172 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libvpx4 amd64 1.6.1-3 [776 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 firefox-esr amd64 52.5.0esr-1~deb9u1 [46.4 MB]
-Fetched 47.5 MB in 1s (25.8 MB/s)
+Fetched 47.5 MB in 1s (25.7 MB/s)
 Selecting previously unselected package libevent-2.0-5:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40106 files and directories currently installed.)
 Preparing to unpack .../libevent-2.0-5_2.0.21-stable-3_amd64.deb ...
@@ -4901,7 +4901,7 @@ Need to get 153 kB of archives.
 After this operation, 300 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libevent-core-2.0-5 amd64 2.0.21-stable-3 [109 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libevent-pthreads-2.0-5 amd64 2.0.21-stable-3 [43.8 kB]
-Fetched 153 kB in 0s (270 kB/s)
+Fetched 153 kB in 0s (246 kB/s)
 Selecting previously unselected package libevent-core-2.0-5:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40256 files and directories currently installed.)
 Preparing to unpack .../libevent-core-2.0-5_2.0.21-stable-3_amd64.deb ...
@@ -4972,7 +4972,7 @@ Get:31 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libv4l
 Get:32 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libv4l-0 amd64 1.12.3-1 [85.5 kB]
 Get:33 http://localhost/aptly-repo/master_stretch-contrib stretch/contrib amd64 browser-plugin-freshplayer-pepperflash amd64 0.3.5-1+b1 [358 kB]
 Extracting templates from packages: 90%Extracting templates from packages: 100%
-Fetched 9,850 kB in 1s (6,708 kB/s)
+Fetched 9,850 kB in 0s (18.0 MB/s)
 Selecting previously unselected package libvo-amrwbenc0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40268 files and directories currently installed.)
 Preparing to unpack .../00-libvo-amrwbenc0_0.1.3-1_amd64.deb ...
@@ -5126,7 +5126,7 @@ Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdbus
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdbusmenu-gtk4 amd64 12.10.2-2 [90.8 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libindicator7 amd64 0.5.0-3+b1 [52.9 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libappindicator1 amd64 0.4.92-4 [52.5 kB]
-Fetched 300 kB in 0s (578 kB/s)
+Fetched 300 kB in 0s (474 kB/s)
 Selecting previously unselected package libdbusmenu-glib4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40525 files and directories currently installed.)
 Preparing to unpack .../libdbusmenu-glib4_12.10.2-2_amd64.deb ...
@@ -5178,7 +5178,7 @@ The following NEW packages will be installed:
 Need to get 71.1 kB of archives.
 After this operation, 313 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xdg-utils all 1.1.1-1 [71.1 kB]
-Fetched 71.1 kB in 0s (89.8 kB/s)
+Fetched 71.1 kB in 0s (81.0 kB/s)
 Selecting previously unselected package xdg-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40559 files and directories currently installed.)
 Preparing to unpack .../xdg-utils_1.1.1-1_all.deb ...
@@ -5197,7 +5197,7 @@ After this operation, 7,679 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gconf2-common all 3.2.6-4 [1,040 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgconf-2-4 amd64 3.2.6-4+b1 [427 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gconf-service amd64 3.2.6-4+b1 [415 kB]
-Fetched 1,881 kB in 0s (1,971 kB/s)
+Fetched 1,881 kB in 0s (11.4 MB/s)
 Selecting previously unselected package gconf2-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40583 files and directories currently installed.)
 Preparing to unpack .../gconf2-common_3.2.6-4_all.deb ...
@@ -5229,7 +5229,7 @@ The following NEW packages will be installed:
 Need to get 17.5 kB of archives.
 After this operation, 57.3 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxss1 amd64 1:1.2.2-1 [17.5 kB]
-Fetched 17.5 kB in 0s (36.9 kB/s)
+Fetched 17.5 kB in 0s (32.8 kB/s)
 Selecting previously unselected package libxss1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40725 files and directories currently installed.)
 Preparing to unpack .../libxss1_1%3a1.2.2-1_amd64.deb ...
@@ -5262,7 +5262,7 @@ Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dh-pyth
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python3 amd64 3.5.3-1 [21.6 kB]
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 distro-info-data all 0.36 [5,810 B]
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 lsb-release all 9.20161125 [27.1 kB]
-Fetched 4,937 kB in 0s (8,054 kB/s)
+Fetched 4,937 kB in 0s (8,412 kB/s)
 Selecting previously unselected package libpython3.5-minimal:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40731 files and directories currently installed.)
 Preparing to unpack .../0-libpython3.5-minimal_3.5.3-1_amd64.deb ...
@@ -5324,7 +5324,7 @@ The following NEW packages will be installed:
 Need to get 49.0 MB of archives.
 After this operation, 184 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 62.0.3202.94-1 [49.0 MB]
-Fetched 49.0 MB in 1s (26.9 MB/s)
+Fetched 49.0 MB in 1s (26.6 MB/s)
 Selecting previously unselected package google-chrome-stable.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41682 files and directories currently installed.)
 Preparing to unpack .../google-chrome-stable_62.0.3202.94-1_amd64.deb ...
@@ -5340,21 +5340,21 @@ Processing triggers for menu (2.1.47+b1) ...
 './cld/bashrc.d/bashrc-alias-google-chrome.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-google-chrome.sh'
 gpg: directory '/root/.gnupg' created
 gpg: can't open '/usr/share/gnupg/dirmngr-conf.skel': No such file or directory
---2017-11-22 00:18:12--  https://dl.google.com/linux/linux_signing_key.pub
 gpg: new configuration file '/root/.gnupg/gpg.conf' created
 gpg: keybox '/root/.gnupg/trustedkeys.gpg' created
-Resolving dl.google.com (dl.google.com)... 172.217.17.110, 2a00:1450:400e:806::200e
+--2017-11-22 08:12:46--  https://dl.google.com/linux/linux_signing_key.pub
+Resolving dl.google.com (dl.google.com)... 172.217.17.110, 2a00:1450:400e:807::200e
 Connecting to dl.google.com (dl.google.com)|172.217.17.110|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 8038 (7.8K) [application/octet-stream]
 Saving to: ‘STDOUT’
 
-     0K .......gpg: /root/.gnupg/trustdb.gpg: trustdb created
+     0K .......                                               100% 4.51M=0.002s
+
+2017-11-22 08:12:46 (4.51 MB/s) - written to stdout [8038/8038]
+
+gpg: /root/.gnupg/trustdb.gpg: trustdb created
 gpg: key A040830F7FAC5991: public key "Google, Inc. Linux Package Signing Key <linux-packages-keymaster@google.com>" imported
-                                               100% 4.69M=0.002s
-
-2017-11-22 00:18:12 (4.69 MB/s) - written to stdout [8038/8038]
-
 gpg: key 7721F63BD38B4796: public key "Google Inc. (Linux Packages Signing Authority) <linux-packages-keymaster@google.com>" imported
 gpg: Total number processed: 2
 gpg:               imported: 2
@@ -5387,7 +5387,7 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmini
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnatpmp1 amd64 20110808-4+b1 [8,926 B]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 transmission-common all 2.92-2 [287 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 transmission-gtk amd64 2.92-2 [701 kB]
-Fetched 1,316 kB in 1s (1,263 kB/s)
+Fetched 1,316 kB in 0s (5,002 kB/s)
 Selecting previously unselected package libcurl3-gnutls:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41785 files and directories currently installed.)
 Preparing to unpack .../libcurl3-gnutls_7.52.1-5+deb9u2_amd64.deb ...
@@ -5434,7 +5434,7 @@ Need to get 67.2 kB of archives.
 After this operation, 178 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libraw1394-11 amd64 2.1.2-1+b1 [47.2 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libavc1394-0 amd64 0.5.4-4+b1 [20.0 kB]
-Fetched 67.2 kB in 0s (74.0 kB/s)
+Fetched 67.2 kB in 1s (65.8 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -5454,7 +5454,7 @@ The following NEW packages will be installed:
 Need to get 30.2 kB/77.4 kB of archives.
 After this operation, 193 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libiec61883-0 amd64 1.2.0-2 [30.2 kB]
-Fetched 30.2 kB in 0s (38.8 kB/s)
+Fetched 30.2 kB in 0s (40.3 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -5497,7 +5497,7 @@ Get:12 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/
 Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-talloc amd64 2.1.8-1 [11.9 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 samba-libs amd64 2:4.5.12+dfsg-2+deb9u1 [5,213 kB]
 Get:15 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libsmbclient amd64 2:4.5.12+dfsg-2+deb9u1 [150 kB]
-Fetched 10.9 MB in 1s (8,883 kB/s)
+Fetched 10.9 MB in 1s (9,576 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -5508,7 +5508,7 @@ The following NEW packages will be installed:
 Need to get 62.6 kB of archives.
 After this operation, 154 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libvo-aacenc0 amd64 0.1.3-1 [62.6 kB]
-Fetched 62.6 kB in 0s (73.6 kB/s)
+Fetched 62.6 kB in 0s (64.4 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -5529,7 +5529,7 @@ The following NEW packages will be installed:
 Need to get 65.1 kB of archives.
 After this operation, 195 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libuchardet0 amd64 0.0.1-1+b2 [65.1 kB]
-Fetched 65.1 kB in 0s (114 kB/s)
+Fetched 65.1 kB in 0s (92.0 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -5588,7 +5588,7 @@ Get:28 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdvd
 Get:29 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libva-wayland1 amd64 1.7.3-2 [15.8 kB]
 Get:30 http://localhost/aptly-repo/master_deb-multimedia-main stretch/main amd64 mpv amd64 1:0.25.0-dmo2 [868 kB]
 Extracting templates from packages: 88%Extracting templates from packages: 100%
-Fetched 8,041 kB in 1s (6,460 kB/s)
+Fetched 8,041 kB in 1s (5,946 kB/s)
 Selecting previously unselected package libass9:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 42009 files and directories currently installed.)
 Preparing to unpack .../00-libass9_2%3a0.13.7-dmo1_amd64.deb ...
@@ -5882,7 +5882,7 @@ Get:73 http://localhost/aptly-repo/master_stretch-backports-main stretch-backpor
 Get:74 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 python3-uno amd64 1:5.4.2-3~bpo9+1 [179 kB]
 Get:75 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 libreoffice amd64 1:5.4.2-3~bpo9+1 [65.7 kB]
 Extracting templates from packages: 40%Extracting templates from packages: 80%Extracting templates from packages: 100%
-Fetched 106 MB in 2s (35.5 MB/s)
+Fetched 106 MB in 3s (33.2 MB/s)
 Selecting previously unselected package libmhash2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 42326 files and directories currently installed.)
 Preparing to unpack .../00-libmhash2_0.9.9.9-7_amd64.deb ...
@@ -6236,7 +6236,7 @@ After this operation, 1,310 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libiw30 amd64 30~pre9-12+b1 [21.6 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 conky-std amd64 1.10.6-1 [336 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 conky all 1.10.6-1 [35.9 kB]
-Fetched 394 kB in 0s (480 kB/s)
+Fetched 394 kB in 0s (1,783 kB/s)
 Selecting previously unselected package libiw30:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48357 files and directories currently installed.)
 Preparing to unpack .../libiw30_30~pre9-12+b1_amd64.deb ...
@@ -6296,7 +6296,7 @@ Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpwqu
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsecret-common all 0.18.5-3.1 [24.0 kB]
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsecret-1-0 amd64 0.18.5-3.1 [96.5 kB]
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gnome-disk-utility amd64 3.22.1-1 [888 kB]
-Fetched 1,567 kB in 0s (2,466 kB/s)
+Fetched 1,567 kB in 5s (280 kB/s)
 Selecting previously unselected package libatasmart4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48395 files and directories currently installed.)
 Preparing to unpack .../00-libatasmart4_0.19-4+b1_amd64.deb ...
@@ -6375,7 +6375,7 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmpc3
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 cpp-6 amd64 6.3.0-18 [6,579 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 cpp amd64 4:6.3.0-4 [18.7 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 x11-xserver-utils amd64 7.7+7+b1 [167 kB]
-Fetched 7,369 kB in 0s (16.8 MB/s)
+Fetched 7,369 kB in 0s (9,847 kB/s)
 Selecting previously unselected package libisl15:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48731 files and directories currently installed.)
 Preparing to unpack .../libisl15_0.18-1_amd64.deb ...
@@ -6410,7 +6410,7 @@ The following NEW packages will be installed:
 Need to get 50.2 kB of archives.
 After this operation, 392 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 lxrandr amd64 0.3.1-1 [50.2 kB]
-Fetched 50.2 kB in 0s (89.8 kB/s)
+Fetched 50.2 kB in 0s (164 kB/s)
 Selecting previously unselected package lxrandr.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48797 files and directories currently installed.)
 Preparing to unpack .../lxrandr_0.3.1-1_amd64.deb ...
@@ -6472,7 +6472,7 @@ Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python
 Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-gtk all 1.7.4+tb2-4 [155 kB]
 Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd all 1.7.4+tb2-4 [24.3 kB]
 Preconfiguring packages ...
-Fetched 6,098 kB in 0s (7,893 kB/s)
+Fetched 6,098 kB in 1s (5,399 kB/s)
 Selecting previously unselected package libpython2.7-minimal:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48866 files and directories currently installed.)
 Preparing to unpack .../0-libpython2.7-minimal_2.7.13-2_amd64.deb ...
@@ -6621,7 +6621,7 @@ The following NEW packages will be installed:
 Need to get 22.5 kB of archives.
 After this operation, 69.6 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gsimplecal amd64 2.1-1+b1 [22.5 kB]
-Fetched 22.5 kB in 0s (26.4 kB/s)
+Fetched 22.5 kB in 1s (21.0 kB/s)
 Selecting previously unselected package gsimplecal.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 50649 files and directories currently installed.)
 Preparing to unpack .../gsimplecal_2.1-1+b1_amd64.deb ...
@@ -6648,7 +6648,7 @@ The following NEW packages will be installed:
 Need to get 227 kB of archives.
 After this operation, 537 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 hardinfo amd64 0.5.1-1.5+b3 [227 kB]
-Fetched 227 kB in 0s (242 kB/s)
+Fetched 227 kB in 0s (359 kB/s)
 Selecting previously unselected package hardinfo.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 50660 files and directories currently installed.)
 Preparing to unpack .../hardinfo_0.5.1-1.5+b3_amd64.deb ...
@@ -6706,7 +6706,7 @@ Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgno
 Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgnomeui-common all 2.24.5-3.1 [513 kB]
 Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgnomeui-0 amd64 2.24.5-3.1 [325 kB]
 Get:22 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 camorama amd64 0.19-5+b1 [140 kB]
-Fetched 6,539 kB in 0s (7,507 kB/s)
+Fetched 6,539 kB in 1s (4,835 kB/s)
 Selecting previously unselected package libart-2.0-2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 50739 files and directories currently installed.)
 Preparing to unpack .../00-libart-2.0-2_2.3.21-2_amd64.deb ...
@@ -6824,7 +6824,7 @@ Need to get 4,605 kB of archives.
 After this operation, 116 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdrm-intel1 amd64 2.4.74-1 [68.7 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgl1-mesa-dri amd64 13.0.6-1+b2 [4,536 kB]
-Fetched 4,605 kB in 0s (16.5 MB/s)
+Fetched 4,605 kB in 1s (4,177 kB/s)
 Selecting previously unselected package libdrm-intel1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51869 files and directories currently installed.)
 Preparing to unpack .../libdrm-intel1_2.4.74-1_amd64.deb ...
@@ -6889,7 +6889,7 @@ Get:27 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblog
 Get:28 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopenvdb3.2 amd64 3.2.0-2.1 [448 kB]
 Get:29 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libspnav0 amd64 0.2.3-1 [8,476 B]
 Get:30 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 blender amd64 2.78.a+dfsg0-4 [26.3 MB]
-Fetched 44.0 MB in 1s (27.3 MB/s)
+Fetched 44.0 MB in 6s (7,001 kB/s)
 Selecting previously unselected package blender-data.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51896 files and directories currently installed.)
 Preparing to unpack .../00-blender-data_2.78.a+dfsg0-4_all.deb ...
@@ -7042,7 +7042,7 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xml-cor
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dia-common all 0.97.3+git20160930-6 [7,370 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dia amd64 0.97.3+git20160930-6 [973 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dia-shapes all 0.6.0-3 [269 kB]
-Fetched 8,649 kB in 0s (25.6 MB/s)
+Fetched 8,649 kB in 1s (7,321 kB/s)
 Selecting previously unselected package sgml-base.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53382 files and directories currently installed.)
 Preparing to unpack .../0-sgml-base_1.29_all.deb ...
@@ -7098,7 +7098,7 @@ Need to get 32.0 kB of archives.
 After this operation, 146 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php7.0-gd amd64 7.0.19-1 [27.0 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php-gd all 1:7.0+49 [5,042 B]
-Fetched 32.0 kB in 0s (70.7 kB/s)
+Fetched 32.0 kB in 0s (168 kB/s)
 Selecting previously unselected package php7.0-gd.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56840 files and directories currently installed.)
 Preparing to unpack .../php7.0-gd_7.0.19-1_amd64.deb ...
@@ -7127,7 +7127,7 @@ Need to get 129 kB of archives.
 After this operation, 502 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php7.0-mysql amd64 7.0.19-1 [124 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php-mysql all 1:7.0+49 [5,052 B]
-Fetched 129 kB in 0s (876 kB/s)
+Fetched 129 kB in 0s (1,025 kB/s)
 Selecting previously unselected package php7.0-mysql.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56852 files and directories currently installed.)
 Preparing to unpack .../php7.0-mysql_7.0.19-1_amd64.deb ...
@@ -7163,7 +7163,7 @@ Need to get 117 kB of archives.
 After this operation, 496 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php7.0-xml amd64 7.0.19-1 [112 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php-xml all 1:7.0+49 [5,068 B]
-Fetched 117 kB in 0s (146 kB/s)
+Fetched 117 kB in 0s (123 kB/s)
 Selecting previously unselected package php7.0-xml.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56868 files and directories currently installed.)
 Preparing to unpack .../php7.0-xml_7.0.19-1_amd64.deb ...
@@ -7205,7 +7205,7 @@ After this operation, 205 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libzip4 amd64 1.1.2-1.1+b1 [40.6 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php7.0-zip amd64 7.0.19-1 [19.9 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php-zip all 1:7.0+49 [5,044 B]
-Fetched 65.5 kB in 0s (238 kB/s)
+Fetched 65.5 kB in 0s (126 kB/s)
 Selecting previously unselected package libzip4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56892 files and directories currently installed.)
 Preparing to unpack .../libzip4_1.1.2-1.1+b1_amd64.deb ...
@@ -7241,7 +7241,7 @@ The following NEW packages will be installed:
 Need to get 1,921 kB of archives.
 After this operation, 2,195 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ant all 1.9.9-1 [1,921 kB]
-Fetched 1,921 kB in 0s (10.7 MB/s)
+Fetched 1,921 kB in 0s (1,985 kB/s)
 Selecting previously unselected package ant.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56911 files and directories currently installed.)
 Preparing to unpack .../archives/ant_1.9.9-1_all.deb ...
@@ -7410,7 +7410,7 @@ Get:89 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liboce
 Get:90 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 freecad amd64 0.16+dfsg2-3 [20.4 MB]
 Extracting templates from packages: 33%Extracting templates from packages: 66%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 88.0 MB in 3s (25.6 MB/s)
+Fetched 88.0 MB in 2s (33.0 MB/s)
 Selecting previously unselected package libaudio2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56956 files and directories currently installed.)
 Preparing to unpack .../00-libaudio2_1.9.4-5+b1_amd64.deb ...
@@ -7780,7 +7780,7 @@ Setting up python-pyside (1.2.2-2) ...
 Setting up freecad (0.16+dfsg2-3) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 CLDS: * Install freecad.
-CLDS: * Disk size = 4721072K. Space Used = 468612K.
+CLDS: * Disk size = 4721076K. Space Used = 468616K.
 CLDS:>>>>>>>>> Running inst-xtra-games-freeciv-client-gtk.sh ...
 Reading package lists...
 Building dependency tree...
@@ -7796,7 +7796,7 @@ Need to get 17.3 MB of archives.
 After this operation, 43.9 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 freeciv-data all 2.5.9-1~bpo9+1 [16.4 MB]
 Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 freeciv-server amd64 2.5.9-1~bpo9+1 [852 kB]
-Fetched 17.3 MB in 1s (11.7 MB/s)
+Fetched 17.3 MB in 0s (19.9 MB/s)
 Selecting previously unselected package freeciv-data.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60298 files and directories currently installed.)
 Preparing to unpack .../freeciv-data_2.5.9-1~bpo9+1_all.deb ...
@@ -7835,7 +7835,7 @@ Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmikm
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsdl-mixer1.2 amd64 1.2.12-11+b3 [85.8 kB]
 Get:7 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 freeciv-client-gtk amd64 2.5.9-1~bpo9+1 [738 kB]
 Get:8 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 freeciv-sound-standard all 2.5.9-1~bpo9+1 [1,682 kB]
-Fetched 3,121 kB in 0s (5,901 kB/s)
+Fetched 3,121 kB in 1s (2,817 kB/s)
 Selecting previously unselected package libmad0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63914 files and directories currently installed.)
 Preparing to unpack .../0-libmad0_0.15.1b-8_amd64.deb ...
@@ -7876,7 +7876,7 @@ Processing triggers for libc-bin (2.24-11+deb9u1) ...
 CLDS: * Install freeciv-server: You need the server to run freeciv.
 CLDS: * Install freeciv-client-gtk.
 CLDS: * How to run freeciv: http://freeciv.wikia.com/wiki/Install#Start_the_game
-CLDS: * Disk size = 4777224K. Space Used = 56152K.
+CLDS: * Disk size = 4777232K. Space Used = 56156K.
 CLDS:>>>>>>>>> Running inst-xtra-games-openra.sh ...
 Reading package lists...
 Building dependency tree...
@@ -7907,7 +7907,7 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono-system-enterpriseservices4.0-cil all 4.6.2.7+dfsg-1 [44.3 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono-system-numerics4.0-cil all 4.6.2.7+dfsg-1 [58.9 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono-system-data4.0-cil all 4.6.2.7+dfsg-1 [553 kB]
-Fetched 760 kB in 1s (669 kB/s)
+Fetched 760 kB in 0s (1,576 kB/s)
 Selecting previously unselected package libmono-data-tds4.0-cil.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63993 files and directories currently installed.)
 Preparing to unpack .../libmono-data-tds4.0-cil_4.6.2.7+dfsg-1_all.deb ...
@@ -7948,7 +7948,7 @@ Need to get 366 kB of archives.
 After this operation, 1,350 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono-system-servicemodel-internals0.0-cil all 4.6.2.7+dfsg-1 [99.2 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono-system-runtime-serialization4.0-cil all 4.6.2.7+dfsg-1 [267 kB]
-Fetched 366 kB in 0s (955 kB/s)
+Fetched 366 kB in 0s (502 kB/s)
 Selecting previously unselected package libmono-system-servicemodel-internals0.0-cil.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64029 files and directories currently installed.)
 Preparing to unpack .../libmono-system-servicemodel-internals0.0-cil_4.6.2.7+dfsg-1_all.deb ...
@@ -7967,7 +7967,7 @@ The following NEW packages will be installed:
 Need to get 69.9 kB of archives.
 After this operation, 203 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono-system-xml-linq4.0-cil all 4.6.2.7+dfsg-1 [69.9 kB]
-Fetched 69.9 kB in 0s (78.5 kB/s)
+Fetched 69.9 kB in 0s (441 kB/s)
 Selecting previously unselected package libmono-system-xml-linq4.0-cil.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64043 files and directories currently installed.)
 Preparing to unpack .../libmono-system-xml-linq4.0-cil_4.6.2.7+dfsg-1_all.deb ...
@@ -7994,7 +7994,7 @@ Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono-i18n-rare4.0-cil all 4.6.2.7+dfsg-1 [54.0 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono-i18n-west4.0-cil all 4.6.2.7+dfsg-1 [43.4 kB]
 Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmono-i18n4.0-all all 4.6.2.7+dfsg-1 [29.7 kB]
-Fetched 501 kB in 0s (1,278 kB/s)
+Fetched 501 kB in 0s (1,448 kB/s)
 Selecting previously unselected package libmono-i18n4.0-cil.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64050 files and directories currently installed.)
 Preparing to unpack .../0-libmono-i18n4.0-cil_4.6.2.7+dfsg-1_all.deb ...
@@ -8053,7 +8053,7 @@ Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwebk
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 zenity-common all 3.22.0-1 [731 kB]
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 zenity amd64 3.22.0-1+b1 [267 kB]
 Preconfiguring packages ...
-Fetched 17.1 MB in 0s (22.3 MB/s)
+Fetched 17.1 MB in 0s (18.7 MB/s)
 Selecting previously unselected package libaspell15:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64095 files and directories currently installed.)
 Preparing to unpack .../0-libaspell15_0.60.7~20110707-3+b2_amd64.deb ...
@@ -8131,7 +8131,7 @@ Processing triggers for desktop-file-utils (0.23-1) ...
 Processing triggers for mime-support (3.60) ...
 Processing triggers for shared-mime-info (1.8-1) ...
 CLDS: * Install openra.
-CLDS: * Disk size = 4903700K. Space Used = 126476K.
+CLDS: * Disk size = 4903708K. Space Used = 126476K.
 CLDS:>>>>>>>>> Running inst-xtra-games-openttd.sh ...
 Reading package lists...
 Building dependency tree...
@@ -8144,7 +8144,7 @@ After this operation, 19.3 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openttd-opengfx all 0.5.4-1 [2,889 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openttd-openmsx all 0.3.1-4 [94.9 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 openttd-opensfx all 0.2.3-4 [9,476 kB]
-Fetched 12.5 MB in 1s (9,074 kB/s)
+Fetched 12.5 MB in 1s (11.8 MB/s)
 Selecting previously unselected package openttd-opengfx.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67537 files and directories currently installed.)
 Preparing to unpack .../openttd-opengfx_0.5.4-1_all.deb ...
@@ -8173,7 +8173,7 @@ After this operation, 16.9 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxdg-basedir1 amd64 1.2.0-1 [11.0 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openttd-data all 1.6.1-1 [2,748 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openttd amd64 1.6.1-1+b1 [2,151 kB]
-Fetched 4,910 kB in 0s (10.4 MB/s)
+Fetched 4,910 kB in 0s (5,892 kB/s)
 Selecting previously unselected package libxdg-basedir1.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67612 files and directories currently installed.)
 Preparing to unpack .../libxdg-basedir1_1.2.0-1_amd64.deb ...
@@ -8193,7 +8193,7 @@ Processing triggers for hicolor-icon-theme (0.15-1) ...
 Setting up openttd (1.6.1-1+b1) ...
 Processing triggers for menu (2.1.47+b1) ...
 CLDS: * Install OpenTTD 1.6.1.
-CLDS: * Disk size = 4956492K. Space Used = 52792K.
+CLDS: * Disk size = 4956500K. Space Used = 52792K.
 CLDS:>>>>>>>>> Running inst-xtra-git.sh ...
 Reading package lists...
 Building dependency tree...
@@ -8213,7 +8213,7 @@ After this operation, 33.5 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liberror-perl all 0.17024-1 [26.9 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 git-man all 1:2.14.2-1~bpo9+1 [1,495 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 git amd64 1:2.14.2-1~bpo9+1 [4,403 kB]
-Fetched 5,925 kB in 1s (4,311 kB/s)
+Fetched 5,925 kB in 0s (24.0 MB/s)
 Selecting previously unselected package liberror-perl.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67738 files and directories currently installed.)
 Preparing to unpack .../liberror-perl_0.17024-1_all.deb ...
@@ -8228,7 +8228,7 @@ Setting up git-man (1:2.14.2-1~bpo9+1) ...
 Setting up liberror-perl (0.17024-1) ...
 Setting up git (1:2.14.2-1~bpo9+1) ...
 CLDS: * Install git.
-CLDS: * Disk size = 4992504K. Space Used = 36012K.
+CLDS: * Disk size = 4992512K. Space Used = 36012K.
 CLDS:>>>>>>>>> Running inst-xtra-graphviz.sh ...
 Reading package lists...
 Building dependency tree...
@@ -8255,7 +8255,7 @@ Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxdot
 Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgvc6 amd64 2.38.0-17 [639 kB]
 Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgvpr2 amd64 2.38.0-17 [211 kB]
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 graphviz amd64 2.38.0-17 [802 kB]
-Fetched 2,094 kB in 1s (2,031 kB/s)
+Fetched 2,094 kB in 0s (4,187 kB/s)
 Selecting previously unselected package libann0.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68644 files and directories currently installed.)
 Preparing to unpack .../0-libann0_1.1.2+doc-6_amd64.deb ...
@@ -8298,7 +8298,7 @@ Setting up graphviz (2.38.0-17) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Processing triggers for menu (2.1.47+b1) ...
 CLDS: * Install graphviz.
-CLDS: * Disk size = 5008360K. Space Used = 15856K.
+CLDS: * Disk size = 5008368K. Space Used = 15856K.
 CLDS:>>>>>>>>> Running inst-xtra-open-terminals-on-startup.sh ...
 Reading package lists...
 Building dependency tree...
@@ -8323,7 +8323,7 @@ CLDS: * Install x11-xserver-utils for xrandr.
 CLDS: * Install wmctrl.
 CLDS: * Install x11-utils for xprop.
 CLDS: * Make open-terminals.sh run when JWM start.
-CLDS: * Disk size = 5008380K. Space Used = 20K.
+CLDS: * Disk size = 5008388K. Space Used = 20K.
 CLDS:>>>>>>>>> Running inst-xtra-virtualbox-guest-additions-iso.sh ...
 Reading package lists...
 Building dependency tree...
@@ -8362,7 +8362,7 @@ Get:12 http://localhost/aptly-repo/master_stretch-backports-main stretch-backpor
 Get:13 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-kbuild-4.13 amd64 4.13.4-2~bpo9+1 [688 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.13.0-0.bpo.1-amd64 amd64 4.13.4-2~bpo9+1 [464 kB]
 Get:15 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-amd64 amd64 4.13+86~bpo9+1 [6,140 B]
-Fetched 19.5 MB in 1s (13.6 MB/s)
+Fetched 19.5 MB in 0s (38.4 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -8405,7 +8405,7 @@ Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 patch 
 Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dpkg-dev all 1.18.24 [1,592 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 build-essential amd64 12.3 [7,346 B]
 Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dkms all 2.3-2 [74.8 kB]
-Fetched 18.2 MB in 1s (10.4 MB/s)
+Fetched 18.2 MB in 0s (19.9 MB/s)
 Selecting previously unselected package libgc1c2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68813 files and directories currently installed.)
 Preparing to unpack .../00-libgc1c2_1%3a7.4.2-8_amd64.deb ...
@@ -8553,7 +8553,7 @@ CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto wind
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: version: 5.2.0 r118431.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 5277980K. Space Used = 269600K.
+CLDS: * Disk size = 5277992K. Space Used = 269604K.
 CLDS:>>>>>>>>> Running inst-xtra-wifite.sh ...
 info: Trying to set 'wireshark-common/install-setuid' [boolean] to 'true'
 info: Loading answer for 'wireshark-common/install-setuid'
@@ -8590,7 +8590,7 @@ Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwir
 Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wireshark-common amd64 2.2.6+g32dac6a-2 [248 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 tshark amd64 2.2.6+g32dac6a-2 [171 kB]
 Preconfiguring packages ...
-Fetched 16.0 MB in 0s (21.4 MB/s)
+Fetched 16.0 MB in 1s (12.3 MB/s)
 Selecting previously unselected package libgeoip1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 88558 files and directories currently installed.)
 Preparing to unpack .../00-libgeoip1_1.6.9-4_amd64.deb ...
@@ -8670,7 +8670,7 @@ Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 usbutil
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 rfkill amd64 0.5-1+b1 [8,284 B]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 aircrack-ng amd64 1:1.2-0~rc4-2 [2,717 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 reaver amd64 1.4-2+b2 [127 kB]
-Fetched 3,251 kB in 0s (4,098 kB/s)
+Fetched 3,251 kB in 0s (10.2 MB/s)
 Selecting previously unselected package iw.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89120 files and directories currently installed.)
 Preparing to unpack .../0-iw_4.9-0.1_amd64.deb ...
@@ -8697,7 +8697,7 @@ Setting up ethtool (1:4.8-1+b1) ...
 Setting up rfkill (0.5-1+b1) ...
 Setting up aircrack-ng (1:1.2-0~rc4-2) ...
 CLDS: * Install wifite.
-CLDS: * Disk size = 5404028K. Space Used = 126048K.
+CLDS: * Disk size = 5404040K. Space Used = 126048K.
 CLDS:>>>>>>>>> Running inst-zclean-01-apt-get-00-clean-up.sh ...
 Reading package lists...
 Building dependency tree...
@@ -8705,21 +8705,21 @@ Reading state information...
 0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 CLDS: * Remove unused packages: apt-get -y autoremove.
 CLDS: * Clean cached DEB: apt-get clean.
-CLDS: * Disk size = 4509528K. Space Used = -894500K.
+CLDS: * Disk size = 4509540K. Space Used = -894500K.
 CLDS:>>>>>>>>> Running inst-zclean-01-apt-get-01-source-list.sh ...
 CLDS: * Reinstate original Debian repositories back to source.list.
-CLDS: * Disk size = 4509536K. Space Used = 8K.
+CLDS: * Disk size = 4509548K. Space Used = 8K.
 CLDS:>>>>>>>>> Running inst-zclean-02-remove-block-services.sh ...
 CLDS: * Remove block services from starting after they are being installed.
-CLDS: * Disk size = 4509536K. Space Used = 0K.
+CLDS: * Disk size = 4509548K. Space Used = 0K.
 CLDS:>>>>>>>>> Running inst-zclean-03-default-filemanager.sh ...
 CLDS: * Set shortcut key(WIN+e) for filemanager.
-CLDS: * Disk size = 4509540K. Space Used = 4K.
+CLDS: * Disk size = 4509552K. Space Used = 4K.
 CLDS:>>>>>>>>> Running inst-zclean-98-zerosizing-docs.sh ...
 CLDS: * Zero size all documents in /usr/share/.
 .................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
-CLDS: * Disk size = 4377192K. Space Used = -132348K.
+CLDS: * Disk size = 4377204K. Space Used = -132348K.
 CLDS:>>>>>>>>> Running inst-zclean-99-end-cleanup.sh ...
 CLDS: * rm -rf /tmp/*.
 CLDS: * Umount /sys, /dev/pts and /proc.
-CLDS: * Disk size = 4377164K. Space Used = -28K.
+CLDS: * Disk size = 4377176K. Space Used = -28K.
