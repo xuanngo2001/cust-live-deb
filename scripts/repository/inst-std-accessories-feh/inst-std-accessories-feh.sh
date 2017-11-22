@@ -8,6 +8,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y install feh
 
+# Add to CLD/
+ yes | cp -av ./cld  /usr/local
 
 # Log
 echo "${GV_LOG} * Install command line image viewer: feh."
