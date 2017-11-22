@@ -18,7 +18,7 @@ The following NEW packages will be installed:
   libtsan0 libubsan0 linux-compiler-gcc-6-x86
   linux-headers-4.13.0-0.bpo.1-amd64 linux-headers-4.13.0-0.bpo.1-common
   linux-headers-amd64 linux-kbuild-4.13
-0 upgraded, 15 newly installed, 0 to remove and 18 not upgraded.
+0 upgraded, 15 newly installed, 0 to remove and 19 not upgraded.
 Need to get 19.5 MB of archives.
 After this operation, 95.3 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libcc1-0 amd64 6.3.0-18 [30.6 kB]
@@ -36,7 +36,7 @@ Get:12 http://localhost/aptly-repo/master_stretch-backports-main stretch-backpor
 Get:13 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-kbuild-4.13 amd64 4.13.4-2~bpo9+1 [688 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.13.0-0.bpo.1-amd64 amd64 4.13.4-2~bpo9+1 [464 kB]
 Get:15 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-amd64 amd64 4.13+86~bpo9+1 [6,140 B]
-Fetched 19.5 MB in 1s (11.2 MB/s)
+Fetched 19.5 MB in 1s (13.6 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -61,7 +61,7 @@ The following NEW packages will be installed:
   libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libgc1c2
   libgcc-6-dev libitm1 liblsan0 libmpx2 libstdc++-6-dev libtsan0 libubsan0
   linux-libc-dev make-guile patch
-0 upgraded, 25 newly installed, 0 to remove and 18 not upgraded.
+0 upgraded, 25 newly installed, 0 to remove and 19 not upgraded.
 Need to get 18.2 MB/28.3 MB of archives.
 After this operation, 121 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgc1c2 amd64 1:7.4.2-8 [208 kB]
@@ -79,9 +79,9 @@ Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 patch 
 Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dpkg-dev all 1.18.24 [1,592 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 build-essential amd64 12.3 [7,346 B]
 Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dkms all 2.3-2 [74.8 kB]
-Fetched 18.2 MB in 0s (28.7 MB/s)
+Fetched 18.2 MB in 1s (10.4 MB/s)
 Selecting previously unselected package libgc1c2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68809 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68813 files and directories currently installed.)
 Preparing to unpack .../00-libgc1c2_1%3a7.4.2-8_amd64.deb ...
 Unpacking libgc1c2:amd64 (1:7.4.2-8) ...
 Selecting previously unselected package libc-dev-bin.
@@ -193,11 +193,11 @@ The following additional packages will be installed:
 The following NEW packages will be installed:
   linux-compiler-gcc-6-x86 linux-headers-4.13.0-0.bpo.1-amd64
   linux-headers-4.13.0-0.bpo.1-common linux-kbuild-4.13
-0 upgraded, 4 newly installed, 0 to remove and 18 not upgraded.
+0 upgraded, 4 newly installed, 0 to remove and 19 not upgraded.
 Need to get 0 B/9,400 kB of archives.
 After this operation, 53.3 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-6-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72306 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72310 files and directories currently installed.)
 Preparing to unpack .../linux-compiler-gcc-6-x86_4.13.4-2~bpo9+1_amd64.deb ...
 Unpacking linux-compiler-gcc-6-x86 (4.13.4-2~bpo9+1) ...
 Selecting previously unselected package linux-headers-4.13.0-0.bpo.1-common.
@@ -227,4 +227,4 @@ CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto wind
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: version: 5.2.0 r118431.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 5288068K. Space Used = 269608K.
+CLDS: * Disk size = 5277980K. Space Used = 269600K.
