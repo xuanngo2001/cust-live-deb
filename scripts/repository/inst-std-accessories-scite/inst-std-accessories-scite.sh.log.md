@@ -4,7 +4,7 @@
   * Install Text Editor: SciTE.
   * Install at-spi2-core to shut up Accessibility warning message.
   * Insert SciTE in Accessories menu.
-  * Disk size = 2729488K. Space Used = 7608K.
+  * Disk size = 2719016K. Space Used = 7608K.
   * The following NEW packages will be installed:
   ```bash
   scite
