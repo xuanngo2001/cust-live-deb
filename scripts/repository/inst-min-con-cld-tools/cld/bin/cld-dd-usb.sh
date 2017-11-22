@@ -60,7 +60,7 @@ if [ "${#}" -ne "2" ]; then
 fi
 
 # Prevent WRONG USB device.
-# Question if USB device is more than 16 gigabytes.
+# Warn user if destination device is more than 16 gigabytes.
 ####################################################
 GIGABYTES=1
 MAX_BYTES_THRESHOLD=$((1073741824*${GIGABYTES}))
