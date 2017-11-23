@@ -9,7 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # This is required. Otherwise, when opening lxrandr, it will say "Unable to get monitor information".
-#   Pobably, xrandr is needed.
+#   Probably, xrandr is needed.
 apt-get -y install x11-xserver-utils
 
 # Install lxrandr.
