@@ -6,6 +6,7 @@ set -e
 cat << EndOfMPVhelp
   # Play videos found
   mpv -playlist <(locate somepattern | grep otherpattern)
+  mpv -playlist <(find . -type f -name '*.avi' -o -name '*.mkv' -o -name '*.mp4' -o -name '*.mpg' -o -name '*.mpeg' -o -name '*.rmvb' -o -name '*.rm')
   
   # Extract audio from video file.
   mpv videofile.avi -o audiofile.mp3 --no-video
