@@ -8,9 +8,9 @@ The following NEW packages will be installed:
 Need to get 31.1 kB of archives.
 After this operation, 69.6 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 amd64-microcode amd64 3.20160316.3 [31.1 kB]
-Fetched 31.1 kB in 1s (30.7 kB/s)
+Fetched 31.1 kB in 0s (311 kB/s)
 Selecting previously unselected package amd64-microcode.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14847 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14852 files and directories currently installed.)
 Preparing to unpack .../amd64-microcode_3.20160316.3_amd64.deb ...
 Unpacking amd64-microcode (3.20160316.3) ...
 Setting up amd64-microcode (3.20160316.3) ...
@@ -25,20 +25,20 @@ Reading state information...
 The following NEW packages will be installed:
   intel-microcode iucode-tool
 0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
-Need to get 1,051 kB of archives.
-After this operation, 1,303 kB of additional disk space will be used.
+Need to get 1,323 kB of archives.
+After this operation, 1,586 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-contrib stretch/contrib amd64 iucode-tool amd64 2.1.1-1 [53.3 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free amd64 intel-microcode amd64 3.20170707.1~deb9u1 [998 kB]
-Fetched 1,051 kB in 0s (1,136 kB/s)
+Get:2 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free amd64 intel-microcode amd64 3.20171117.1~bpo9+1 [1,270 kB]
+Fetched 1,323 kB in 0s (10.7 MB/s)
 Selecting previously unselected package iucode-tool.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14862 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14867 files and directories currently installed.)
 Preparing to unpack .../iucode-tool_2.1.1-1_amd64.deb ...
 Unpacking iucode-tool (2.1.1-1) ...
 Selecting previously unselected package intel-microcode.
-Preparing to unpack .../intel-microcode_3.20170707.1~deb9u1_amd64.deb ...
-Unpacking intel-microcode (3.20170707.1~deb9u1) ...
+Preparing to unpack .../intel-microcode_3.20171117.1~bpo9+1_amd64.deb ...
+Unpacking intel-microcode (3.20171117.1~bpo9+1) ...
 Setting up iucode-tool (2.1.1-1) ...
-Setting up intel-microcode (3.20170707.1~deb9u1) ...
+Setting up intel-microcode (3.20171117.1~bpo9+1) ...
 update-initramfs: deferring update (trigger activated)
 intel-microcode: microcode will be updated at next boot
 Processing triggers for initramfs-tools (0.130) ...
@@ -46,4 +46,4 @@ update-initramfs: Generating /boot/initrd.img-4.13.0-0.bpo.1-amd64
 live-boot: core filesystems devices utils udev wget blockdev dns.
 CLDS: * Install CPU firmware: amd64-microcode.
 CLDS: * Install CPU firmware: intel-microcode.
-CLDS: * Disk size = 1280876K. Space Used = 2584K.
+CLDS: * Disk size = 1274196K. Space Used = 3132K.
