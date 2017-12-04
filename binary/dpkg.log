@@ -53,7 +53,7 @@ ii  cpio                                         2.11+dfsg-6                    
 ii  cpp                                          4:6.3.0-4                         amd64        GNU C preprocessor (cpp)
 ii  cpp-6                                        6.3.0-18                          amd64        GNU C preprocessor
 ii  cron                                         3.0pl1-128+b1                     amd64        process scheduling daemon
-ii  curl                                         7.52.1-5+deb9u2                   amd64        command line tool for transferring data with URL syntax
+ii  curl                                         7.52.1-5+deb9u3                   amd64        command line tool for transferring data with URL syntax
 ii  dash                                         0.5.8-2.4                         amd64        POSIX-compliant shell
 ii  dbus                                         1.10.22-0+deb9u1                  amd64        simple interprocess messaging system (daemon and utilities)
 ii  dbus-user-session                            1.10.22-0+deb9u1                  all          simple interprocess messaging system (systemd --user integration)
@@ -91,6 +91,7 @@ ii  exfat-fuse                                   1.2.5-2                        
 ii  exfat-utils                                  1.2.5-2                           amd64        utilities to create, check, label and dump exFAT filesystem
 ii  exo-utils                                    0.10.7-1                          amd64        Utility files for libexo
 ii  feh                                          2.18-2                            amd64        imlib2 based image viewer
+ii  file                                         1:5.30-1+deb9u1                   amd64        Recognize the type of data in a file using "magic" numbers
 ii  findutils                                    4.6.0+git+20161106-2              amd64        utilities for finding files--find, xargs
 ii  firefox-esr                                  52.5.0esr-1~deb9u1                amd64        Mozilla Firefox web browser - Extended Support Release (ESR)
 ii  firmware-amd-graphics                        20170823-1~bpo9+1                 all          Binary firmware for AMD/ATI graphics chips
@@ -176,7 +177,7 @@ ii  init                                         1.48                           
 ii  init-system-helpers                          1.48                              all          helper tools for all init systems
 ii  initramfs-tools                              0.130                             all          generic modular initramfs generator (automation)
 ii  initramfs-tools-core                         0.130                             all          generic modular initramfs generator (core tools)
-ii  intel-microcode                              3.20170707.1~deb9u1               amd64        Processor microcode firmware for Intel CPUs
+ii  intel-microcode                              3.20171117.1~bpo9+1               amd64        Processor microcode firmware for Intel CPUs
 ii  iproute2                                     4.9.0-1                           amd64        networking and traffic control tools
 ii  iptables                                     1.6.0+snapshot20161117-6          amd64        administration tools for packet filtering and NAT
 ii  iputils-ping                                 3:20161105-1                      amd64        Tools to test the reachability of network hosts
@@ -297,8 +298,8 @@ ii  libcroco3:amd64                              0.6.11-3                       
 ii  libcryptsetup4:amd64                         2:1.7.3-4                         amd64        disk encryption support - shared library
 ii  libcrystalhd3:amd64                          1:0.0~git20110715.fdd2f19-12      amd64        Crystal HD Video Decoder (shared library)
 ii  libcups2:amd64                               2.2.1-8                           amd64        Common UNIX Printing System(tm) - Core library
-ii  libcurl3:amd64                               7.52.1-5+deb9u2                   amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
-ii  libcurl3-gnutls:amd64                        7.52.1-5+deb9u2                   amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
+ii  libcurl3:amd64                               7.52.1-5+deb9u3                   amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
+ii  libcurl3-gnutls:amd64                        7.52.1-5+deb9u3                   amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
 ii  libdatrie1:amd64                             0.2.10-4+b1                       amd64        Double-array trie library
 ii  libdb5.3:amd64                               5.3.28-12+b1                      amd64        Berkeley v5.3 Database Libraries [runtime]
 ii  libdbi-perl                                  1.636-1+b1                        amd64        Perl Database Interface (DBI)
@@ -553,6 +554,7 @@ ii  libnspr4:amd64                               2:4.12-6                       
 ii  libnss3:amd64                                2:3.26.2-1.1                      amd64        Network Security Service libraries
 ii  libntfs-3g871                                1:2016.2.22AR.1+dfsg-1            amd64        read/write NTFS driver for FUSE (runtime library)
 ii  libnuma1:amd64                               2.0.11-2.1                        amd64        Libraries for controlling NUMA policy
+ii  libnvpair1linux                              0.6.5.11-1~bpo9+1                 amd64        Solaris name-value library for Linux
 ii  liboce-foundation10:amd64                    0.17.2-2                          amd64        OpenCASCADE Community Edition CAE platform shared library
 ii  liboce-modeling10:amd64                      0.17.2-2                          amd64        OpenCASCADE Community Edition CAE platform shared library
 ii  liboce-ocaf-lite10:amd64                     0.17.2-2                          amd64        OpenCASCADE Community Edition CAE platform shared library
@@ -752,6 +754,7 @@ ii  libunistring0:amd64                          0.9.6+really0.9.3-0.1          
 ii  libusb-1.0-0:amd64                           2:1.0.21-1                        amd64        userspace USB programming library
 ii  libustr-1.0-1:amd64                          1.0.4-6                           amd64        Micro string library: shared library
 ii  libuuid1:amd64                               2.29.2-1                          amd64        Universally Unique ID library
+ii  libuutil1linux                               0.6.5.11-1~bpo9+1                 amd64        Solaris userland utility library for Linux
 ii  libv4l-0:amd64                               1.12.3-1                          amd64        Collection of video4linux support libraries
 ii  libv4lconvert0:amd64                         1.12.3-1                          amd64        Video4linux frame format conversion library
 ii  libva-drm1:amd64                             1.7.3-2                           amd64        Video Acceleration (VA) API for Linux -- DRM runtime
@@ -857,18 +860,21 @@ ii  libxxf86vm1:amd64                            1:1.1.4-1+b2                   
 ii  libyajl2:amd64                               2.1.0-2+b3                        amd64        Yet Another JSON Library
 ii  libyaml-0-2:amd64                            0.1.7-2                           amd64        Fast YAML 1.1 parser and emitter library
 ii  libyaml-cpp0.3v5:amd64                       0.3.0-1.2                         amd64        YAML parser and emitter for C++ (0.3 series)
+ii  libzfs2linux                                 0.6.5.11-1~bpo9+1                 amd64        OpenZFS filesystem library for Linux
 ii  libzip4:amd64                                1.1.2-1.1+b1                      amd64        library for reading, creating, and modifying zip archives (runtime)
 ii  libzipios++0v5                               0.1.5.9+cvs.2007.04.28-6          amd64        small C++ library for reading zip files (library)
+ii  libzpool2linux                               0.6.5.11-1~bpo9+1                 amd64        OpenZFS pool library for Linux
 ii  libzstd1                                     1.1.2-1                           amd64        fast lossless compression algorithm
 ii  libzvbi-common                               0.2.35-13                         all          Vertical Blanking Interval decoder (VBI) - common files
 ii  libzvbi0:amd64                               0.2.35-13                         amd64        Vertical Blanking Interval decoder (VBI) - runtime files
 ii  linux-base                                   4.5                               all          Linux image base package
-ii  linux-compiler-gcc-6-x86                     4.13.4-2~bpo9+1                   amd64        Compiler for Linux on x86 (meta-package)
-ii  linux-headers-4.13.0-0.bpo.1-amd64           4.13.4-2~bpo9+1                   amd64        Header files for Linux 4.13.0-0.bpo.1-amd64
-ii  linux-headers-4.13.0-0.bpo.1-common          4.13.4-2~bpo9+1                   all          Common header files for Linux 4.13.0-0.bpo.1
-ii  linux-image-4.13.0-0.bpo.1-amd64             4.13.4-2~bpo9+1                   amd64        Linux 4.13 for 64-bit PCs
+ii  linux-compiler-gcc-6-x86                     4.13.13-1~bpo9+1                  amd64        Compiler for Linux on x86 (meta-package)
+ii  linux-headers-4.13.0-0.bpo.1-amd64           4.13.13-1~bpo9+1                  amd64        Header files for Linux 4.13.0-0.bpo.1-amd64
+ii  linux-headers-4.13.0-0.bpo.1-common          4.13.13-1~bpo9+1                  all          Common header files for Linux 4.13.0-0.bpo.1
+ii  linux-headers-amd64                          4.13+86~bpo9+1                    amd64        Header files for Linux amd64 configuration (meta-package)
+ii  linux-image-4.13.0-0.bpo.1-amd64             4.13.13-1~bpo9+1                  amd64        Linux 4.13 for 64-bit PCs
 ii  linux-image-amd64                            4.13+86~bpo9+1                    amd64        Linux for 64-bit PCs (meta-package)
-ii  linux-kbuild-4.13                            4.13.4-2~bpo9+1                   amd64        Kbuild infrastructure for Linux 4.13
+ii  linux-kbuild-4.13                            4.13.13-1~bpo9+1                  amd64        Kbuild infrastructure for Linux 4.13
 ii  linux-libc-dev:amd64                         4.9.51-1                          amd64        Linux support headers for userspace development
 ii  live-boot                                    1:20170112                        all          Live System Boot Components
 ii  live-boot-initramfs-tools                    1:20170112                        all          Live System Boot Components (initramfs-tools backend)
@@ -893,6 +899,7 @@ ii  mariadb-server-core-10.1                     10.1.26-0+deb9u1               
 ii  mawk                                         1.3.3-17+b3                       amd64        a pattern scanning and text processing language
 ii  menu                                         2.1.47+b1                         amd64        generates programs menu for all menu-aware applications
 ii  mime-support                                 3.60                              all          MIME files 'mime.types' & 'mailcap', and support programs
+ii  module-assistant                             0.11.9                            all          tool to make module package creation easier
 ii  mono-4.0-gac                                 4.6.2.7+dfsg-1                    all          Mono GAC tool (for CLI 4.0)
 ii  mono-gac                                     4.6.2.7+dfsg-1                    all          Mono GAC tool
 ii  mono-runtime                                 4.6.2.7+dfsg-1                    amd64        Mono runtime - default version
@@ -1022,6 +1029,7 @@ ii  sgml-base                                    1.29                           
 ii  shared-mime-info                             1.8-1                             amd64        FreeDesktop.org shared MIME database and spec
 ii  socat                                        1.7.3.1-2+deb9u1                  amd64        multipurpose relay for bidirectional data transfer
 ii  speedcrunch                                  0.12.0-1                          amd64        High precision calculator
+ii  spl-dkms                                     0.6.5.11-1~bpo9+1                 all          Solaris Porting Layer kernel modules for Linux
 ii  sqlite3                                      3.16.2-5                          amd64        Command line interface for SQLite 3
 ii  squashfs-tools                               1:4.3-3+deb9u1                    amd64        Tool to create and append to squashfs filesystems
 ii  systemd                                      232-25+deb9u1                     amd64        system and service manager
@@ -1093,5 +1101,8 @@ ii  xxd                                          2:8.0.0197-4                   
 ii  xz-utils                                     5.2.2-1.2+b1                      amd64        XZ-format compression utilities
 ii  zenity                                       3.22.0-1+b1                       amd64        Display graphical dialog boxes from shell scripts
 ii  zenity-common                                3.22.0-1                          all          Display graphical dialog boxes from shell scripts (common files)
+ii  zfs-dkms                                     0.6.5.11-1~bpo9+1                 all          OpenZFS filesystem kernel modules for Linux
+ii  zfs-initramfs                                0.6.5.11-1~bpo9+1                 all          OpenZFS root filesystem capabilities for Linux - initramfs
+ii  zfsutils-linux                               0.6.5.11-1~bpo9+1                 amd64        command-line tools to manage OpenZFS filesystems
 ii  zip                                          3.0-11+b1                         amd64        Archiver for .zip files
 ii  zlib1g:amd64                                 1:1.2.8.dfsg-5                    amd64        compression library - runtime
