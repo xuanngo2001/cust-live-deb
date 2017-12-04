@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-git.sh ...
   * After this operation, 33.5 MB of additional disk space will be used.
   * Install git.
-  * Disk size = 4992512K. Space Used = 36012K.
+  * Disk size = 4985820K. Space Used = 36012K.
   * The following NEW packages will be installed:
   ```bash
   git git-man liberror-perl

@@ -1,6 +1,5 @@
 * >>>>>>>>> Running inst-xtra-zfs-dkms.sh ...
   * After this operation, 12.3 kB of additional disk space will be used.
-  * After this operation, 44.0 MB of additional disk space will be used.
   * After this operation, 399 kB of additional disk space will be used.
   * After this operation, 3,122 kB of additional disk space will be used.
   * After this operation, 8,202 kB of additional disk space will be used.
@@ -9,11 +8,10 @@
   * Install zfs-dkms: ERROR: ZFS installation failed!, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
   * Install zfs-initramfs to be able to boot from ZFS.
   * Import existing ZFS partitions: zpool import -a
-  * Disk size = 5433660K. Space Used = 87836K.
+  * Disk size = 5434960K. Space Used = 33044K.
   * The following NEW packages will be installed:
   ```bash
   linux-headers-amd64
-  build-essential dpkg-dev g++ g++-6 libdpkg-perl libstdc++-6-dev
   module-assistant
   file spl-dkms
   zfs-dkms
