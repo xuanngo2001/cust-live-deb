@@ -34,7 +34,7 @@ The following NEW packages will be installed:
 Need to get 101 kB of archives.
 After this operation, 399 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 module-assistant all 0.11.9 [101 kB]
-Fetched 101 kB in 0s (985 kB/s)
+Fetched 101 kB in 0s (879 kB/s)
 Selecting previously unselected package module-assistant.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89261 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.9_all.deb ...
@@ -67,25 +67,42 @@ Recommended packages:
 The following NEW packages will be installed:
   file spl-dkms
 0 upgraded, 2 newly installed, 0 to remove and 19 not upgraded.
-Need to get 449 kB of archives.
-After this operation, 3,122 kB of additional disk space will be used.
+Need to get 457 kB of archives.
+After this operation, 3,199 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 file amd64 1:5.30-1+deb9u1 [64.1 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 spl-dkms all 0.6.5.11-1~bpo9+1 [385 kB]
-Fetched 449 kB in 0s (5,859 kB/s)
+Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 spl-dkms all 0.7.3-1~bpo9+1 [393 kB]
+Fetched 457 kB in 0s (2,471 kB/s)
 Selecting previously unselected package file.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89303 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.30-1+deb9u1_amd64.deb ...
 Unpacking file (1:5.30-1+deb9u1) ...
 Selecting previously unselected package spl-dkms.
-Preparing to unpack .../spl-dkms_0.6.5.11-1~bpo9+1_all.deb ...
-Unpacking spl-dkms (0.6.5.11-1~bpo9+1) ...
+Preparing to unpack .../spl-dkms_0.7.3-1~bpo9+1_all.deb ...
+Unpacking spl-dkms (0.7.3-1~bpo9+1) ...
 Setting up file (1:5.30-1+deb9u1) ...
-Setting up spl-dkms (0.6.5.11-1~bpo9+1) ...
-Loading new spl-0.6.5.11 DKMS files...
+Setting up spl-dkms (0.7.3-1~bpo9+1) ...
+Loading new spl-0.7.3 DKMS files...
 Building for 4.13.0-0.bpo.1-amd64
 Building initial module for 4.13.0-0.bpo.1-amd64
-Error! Bad return status for module build on kernel: 4.13.0-0.bpo.1-amd64 (x86_64)
-Consult /var/lib/dkms/spl/0.6.5.11/build/make.log for more information.
+Done.
+
+spl:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.13.0-0.bpo.1-amd64/updates/dkms/
+
+splat.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.13.0-0.bpo.1-amd64/updates/dkms/
+
+depmod...
+
+DKMS: install completed.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -98,9 +115,9 @@ Need to get 1,082 kB of archives.
 After this operation, 8,202 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 zfs-dkms all 0.6.5.11-1~bpo9+1 [1,082 kB]
 Preconfiguring packages ...
-Fetched 1,082 kB in 0s (11.1 MB/s)
+Fetched 1,082 kB in 0s (10.2 MB/s)
 Selecting previously unselected package zfs-dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89601 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89609 files and directories currently installed.)
 Preparing to unpack .../zfs-dkms_0.6.5.11-1~bpo9+1_all.deb ...
 Unpacking zfs-dkms (0.6.5.11-1~bpo9+1) ...
 Setting up zfs-dkms (0.6.5.11-1~bpo9+1) ...
@@ -108,10 +125,9 @@ Loading new zfs-0.6.5.11 DKMS files...
 Building for 4.13.0-0.bpo.1-amd64
 Building initial module for 4.13.0-0.bpo.1-amd64
 configure: error: 
-	*** Please make sure the kmod spl devel <kernel> package for your
-	*** distribution is installed then try again.  If that fails you
-	*** can specify the location of the spl objects with the
-	*** '--with-spl-obj=PATH' option.
+	*** Please make sure the kmod spl devel package for your distribution
+	*** is installed then try again.  If that fails you can specify the
+	*** location of the spl source with the '--with-spl=PATH' option.
 Error! Bad return status for module build on kernel: 4.13.0-0.bpo.1-amd64 (x86_64)
 Consult /var/lib/dkms/zfs/0.6.5.11/build/make.log for more information.
 Reading package lists...
@@ -135,9 +151,9 @@ Get:3 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backp
 Get:4 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 libzfs2linux amd64 0.6.5.11-1~bpo9+1 [126 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 zfsutils-linux amd64 0.6.5.11-1~bpo9+1 [334 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 zfs-initramfs all 0.6.5.11-1~bpo9+1 [23.5 kB]
-Fetched 974 kB in 0s (9,022 kB/s)
+Fetched 974 kB in 0s (5,307 kB/s)
 Selecting previously unselected package libuutil1linux.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 90005 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 90013 files and directories currently installed.)
 Preparing to unpack .../0-libuutil1linux_0.6.5.11-1~bpo9+1_amd64.deb ...
 Unpacking libuutil1linux (0.6.5.11-1~bpo9+1) ...
 Selecting previously unselected package libnvpair1linux.
@@ -181,4 +197,4 @@ CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
 CLDS: * Install zfs-dkms: ERROR: ZFS installation failed!, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Install zfs-initramfs to be able to boot from ZFS.
 CLDS: * Import existing ZFS partitions: zpool import -a
-CLDS: * Disk size = 5434960K. Space Used = 33044K.
+CLDS: * Disk size = 5489860K. Space Used = 29632K.
