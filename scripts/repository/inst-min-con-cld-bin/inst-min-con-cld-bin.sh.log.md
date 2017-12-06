@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-cld-bin.sh ...
   * Install cld-bin.
-  * Disk size = 1261048K. Space Used = 8K.
+  * Disk size = 1320120K. Space Used = 8K.
