@@ -13,6 +13,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install git.
 apt-get -y install git
 
+# Add to CLD/
+ yes | cp -av ./cld  /usr/local
 
 # Log
 echo "${GV_LOG} * Install git."
