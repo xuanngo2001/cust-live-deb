@@ -42,7 +42,6 @@ http://www.somsubhra.com/github-release-stats/?username=limelime&repository=cust
 
 
 # References
-* http://live.debian.net/manual/git/html/live-manual.en.html (Manual)
 * http://manpages.ubuntu.com/manpages/natty/de/man1/lb_config.1.html
 * http://askubuntu.com/questions/551195/scripting-chroot-how-to
 * https://help.ubuntu.com/community/LiveCDCustomizationFromScratch
@@ -51,6 +50,7 @@ http://www.somsubhra.com/github-release-stats/?username=limelime&repository=cust
 * https://l3net.wordpress.com/2013/09/21/how-to-build-a-debian-livecd/
 * http://www.opengeeks.me/2015/04/building-an-hybrid-debian-live-iso-with-xorriso/
 * https://wiki.ubuntu.com/BootToRAM
+* https://wiki.debian.org/ReduceDebian
 
 # Release checklist
 * Can you watch youtube video over wireless connection?

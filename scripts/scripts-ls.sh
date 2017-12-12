@@ -29,6 +29,13 @@ fct_work()
     echo "${scripts_list}"
   }
 
+fct_work_no_proxy()
+  {
+    local scripts_list=$(fct_work)
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'proxy')
+    echo "${scripts_list}"
+  }
+  
 fct_home()
   {
     local scripts_list=$(fct_work)
@@ -129,6 +136,11 @@ case "${SYSTEM}" in
     fct_work > ${SCRIPT_LIST}
 	  ;;
 
+  # Most of applications but without proxy settings.  
+  work_no_proxy)
+    fct_work_no_proxy > ${SCRIPT_LIST}
+    ;;
+    
   # All install scripts in the repository.  
   all)
     fct_all > ${SCRIPT_LIST}

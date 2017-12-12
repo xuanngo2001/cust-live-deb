@@ -2,13 +2,13 @@
   * After this operation, 12.3 kB of additional disk space will be used.
   * After this operation, 399 kB of additional disk space will be used.
   * After this operation, 3,199 kB of additional disk space will be used.
-  * After this operation, 8,202 kB of additional disk space will be used.
-  * After this operation, 3,241 kB of additional disk space will be used.
+  * After this operation, 10.7 MB of additional disk space will be used.
+  * After this operation, 4,116 kB of additional disk space will be used.
   * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
-  * Install zfs-dkms: ERROR: ZFS installation failed!, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
+  * Install zfs-dkms: version: 0.7.3-3~bpo9+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
   * Install zfs-initramfs to be able to boot from ZFS.
   * Import existing ZFS partitions: zpool import -a
-  * Disk size = 5491580K. Space Used = 29632K.
+  * Disk size = 5506732K. Space Used = 34204K.
   * The following NEW packages will be installed:
   ```bash
   linux-headers-amd64

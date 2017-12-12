@@ -145,6 +145,10 @@ xserver-xorg
 fonts-dejavu-core
 # ./inst-min-win-01-wm-jwm/inst-min-win-01-wm-jwm.sh
 jwm
+# ./inst-min-win-01-wm-terminal-xfce/inst-min-win-01-wm-terminal-xfce.sh
+libxfce4ui-2-0
+exo-utils
+xfce4-terminal
 # ./inst-min-win-cld-dev-tools-pandoc/inst-min-win-cld-dev-tools-pandoc.sh
 pandoc
 # ./inst-min-win-cld-win-split/inst-min-win-cld-win-split.sh
@@ -179,10 +183,6 @@ gnome-screenshot
 # ./inst-std-accessories-scite/inst-std-accessories-scite.sh
 scite
 at-spi2-core
-# ./inst-std-accessories-terminal-xfce/inst-std-accessories-terminal-xfce.sh
-libxfce4ui-2-0
-exo-utils
-xfce4-terminal
 # ./inst-std-accessories-thunar/inst-std-accessories-thunar.sh
 thunar
 thunar-media-tags-plugin
@@ -194,15 +194,13 @@ fonts-liberation
 pinta
 # ./inst-std-help-manuals-html/inst-std-help-manuals-html.sh
 
-# ./inst-std-internet-browser-plugin-freshplayer-pepperflash/inst-std-internet-browser-plugin-freshplayer-pepperflash.sh
-libevent-pthreads-2.0-5
-browser-plugin-freshplayer-pepperflash
-# ./inst-std-internet-firefox-esr/inst-std-internet-firefox-esr.sh
+# ./inst-std-inet-firefox-esr/inst-std-inet-firefox-esr.sh
 libjsoncpp1
 firefox-esr
-# ./inst-std-internet-xtra-flashplayer/inst-std-internet-xtra-flashplayer.sh
-
-# ./inst-std-internet-xtra-google-chrome/inst-std-internet-xtra-google-chrome.sh
+# ./inst-std-inet-xtra-google-chrome-browser-plugin-freshplayer-pepperflash/inst-std-inet-xtra-google-chrome-browser-plugin-freshplayer-pepperflash.sh
+libevent-pthreads-2.0-5
+browser-plugin-freshplayer-pepperflash
+# ./inst-std-inet-xtra-google-chrome/inst-std-inet-xtra-google-chrome.sh
 libappindicator1
 libdbusmenu-glib4
 libdbusmenu-gtk4
@@ -213,10 +211,12 @@ libgconf-2-4
 libxss1
 lsb-release
 google-chrome-stable
-# ./inst-std-internet-xtra-opera/inst-std-internet-xtra-opera.sh
+# ./inst-std-inet-xtra-opera-flashplayer/inst-std-inet-xtra-opera-flashplayer.sh
+
+# ./inst-std-inet-xtra-opera/inst-std-inet-xtra-opera.sh
 apt-transport-https
 opera-stable
-# ./inst-std-internet-xtra-transmission-gtk/inst-std-internet-xtra-transmission-gtk.sh
+# ./inst-std-inet-xtra-transmission-gtk/inst-std-inet-xtra-transmission-gtk.sh
 transmission-gtk
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
 libavc1394-0
@@ -269,6 +269,10 @@ dia-shapes
 php-gd
 # ./inst-std-xtra-opw-php-mysql/inst-std-xtra-opw-php-mysql.sh
 php-mysql
+# ./inst-std-xtra-opw-php-xml/inst-std-xtra-opw-php-xml.sh
+php-xml
+# ./inst-std-xtra-opw-php-zip/inst-std-xtra-opw-php-zip.sh
+php-zip
 # ./inst-xtra-dev-tools-ant/inst-xtra-dev-tools-ant.sh
 ant
 # ./inst-xtra-freecad/inst-xtra-freecad.sh
@@ -279,6 +283,7 @@ freeciv-client-gtk
 freeciv-data
 freeciv-sound-standard
 # ./inst-xtra-games-openra/inst-xtra-games-openra.sh
+xdg-utils
 libsdl2-2.0-0
 libmono-system-data4.0-cil
 libmono-system-numerics4.0-cil

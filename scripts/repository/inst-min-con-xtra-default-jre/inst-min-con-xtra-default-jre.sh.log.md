@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-min-con-xtra-default-jre.sh ...
-  * After this operation, 265 MB of additional disk space will be used.
-  * Install openjdk version "1.8.0_141".
+  * After this operation, 262 MB of additional disk space will be used.
+  * Install openjdk version "1.8.0_151".
   * To install JAVA binary: https://wiki.debian.org/JavaPackage.
-  * Disk size = 2044696K. Space Used = 323444K.
+  * Disk size = 2054472K. Space Used = 320488K.
   * The following NEW packages will be installed:
   ```bash
   adwaita-icon-theme ca-certificates ca-certificates-java
