@@ -39,15 +39,15 @@ case "${action}" in
       
    *)
       echo "Error: Action: ${action} is unknown. Aborted!"
-      printf "    %-20s %s\n" "bin"               "=> ./cld/bin"
-      printf "    %-20s %s\n" "home"              "=> ./cld/home"
-      printf "    %-20s %s\n" "app"               "=> ./cld/app"
-      printf "    %-20s %s\n" "jwmrc"             "=> ./cld/app/jwm/jwmrc"
-      printf "    %-20s %s\n" "jwm-bootstrap"     "=> ./cld/app/jwm/bootstrap"
-      printf "    %-20s %s\n" "bashrc"            "=> ./cld/bashrc.d           [All *.sh will be exported.]"
-      printf "    %-20s %s\n" "after-boot"        "=> ./cld/systemd/runlevel/after-boot"
-      printf "    %-20s %s\n" "before-shutdown"   "=> ./cld/systemd/runlevel/before-shutdown"
-            exit 1;
+      printf "    %-15s %-40s %s\n" 'bin'               '=> ./cld/bin'                          '[All your executable scripts here]'
+      printf "    %-15s %-40s %s\n" 'home'              '=> ./cld/home'
+      printf "    %-15s %-40s %s\n" 'app'               '=> ./cld/app'
+      printf "    %-15s %-40s %s\n" 'jwmrc'             '=> ./cld/app/jwm/jwmrc'
+      printf "    %-15s %-40s %s\n" 'jwm-bootstrap'     '=> ./cld/app/jwm/bootstrap'
+      printf "    %-15s %-40s %s\n" 'bashrc'            '=> ./cld/bashrc.d'                     '[All *.sh will be exported]'
+      printf "    %-15s %-40s %s\n" 'after-boot'        '=> ./cld/systemd/runlevel/after-boot'
+      printf "    %-15s %-40s %s\n" 'before-shutdown'   '=> ./cld/systemd/runlevel/before-shutdown'
+      exit 1;
       ;;
 esac
 
