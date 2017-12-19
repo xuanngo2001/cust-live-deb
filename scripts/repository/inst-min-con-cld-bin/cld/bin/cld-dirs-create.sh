@@ -43,6 +43,8 @@ case "${action}" in
       script_repo_dir=$(readlink -ev "${script_repo_dir}")
       find "${script_repo_dir}"  | grep -F '/cld/' | sed "s|${script_repo_dir}|   .|"
       
+      echo '[where-used process completed!]'
+      exit 1; # Exit early to bypass display of template below.
       ;;    
   *)
       echo "Error: Action: ${action} is unknown. Aborted!"
