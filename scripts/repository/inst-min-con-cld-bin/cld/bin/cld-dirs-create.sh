@@ -41,7 +41,7 @@ case "${action}" in
       script_repo_dir=$2
       if [ -z "${script_repo_dir}" ]; then echo 'Error: Need scripts repository path. Aborted!'; exit 1; fi
       script_repo_dir=$(readlink -ev "${script_repo_dir}")
-      find "${script_repo_dir}"  | grep -F '/cld/' | sed "s|${script_repo_dir}|   .|"
+      find "${script_repo_dir}"  | grep -F '/cld/' | sort | sed "s|${script_repo_dir}|   .|"
       
       echo '[where-used process completed!]'
       exit 1; # Exit early to bypass display of template below.
