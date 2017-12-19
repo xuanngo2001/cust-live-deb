@@ -36,8 +36,15 @@ case "${action}" in
   before-shutdown)
       mkdir -p ./cld/systemd/runlevel/before-shutdown
       ;;
+  
+  where-used)
+      script_repo_dir=$2
+      if [ -z "${script_repo_dir}" ]; then echo 'Error: Need scripts repository path. Aborted!'; exit 1; fi
+      script_repo_dir=$(readlink -ev "${script_repo_dir}")
+      find "${script_repo_dir}"  | grep -F '/cld/' | sed "s|${script_repo_dir}|   .|"
       
-   *)
+      ;;    
+  *)
       echo "Error: Action: ${action} is unknown. Aborted!"
       printf "    %-15s %-40s %s\n" 'bin'               '=> ./cld/bin'                             '[All your executable scripts here]'
       printf "    %-15s %-40s %s\n" 'home'              '=> ./cld/home'
