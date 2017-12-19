@@ -46,15 +46,15 @@ case "${action}" in
       ;;    
   *)
       echo "Error: Action: ${action} is unknown. Aborted!"
-      printf "    %-15s %-40s %s\n" 'where-used'        '=> N/A'                                   '[Show where paths below are used]'
-      printf "    %-15s %-40s %s\n" 'bin'               '=> ./cld/bin'                             '[Your executable scripts]'
-      printf "    %-15s %-40s %s\n" 'home'              '=> ./cld/home'
-      printf "    %-15s %-40s %s\n" 'app'               '=> ./cld/app'
-      printf "    %-15s %-40s %s\n" 'jwmrc'             '=> ./cld/app/jwm/jwmrc'                   '[JWM configuration files]'
-      printf "    %-15s %-40s %s\n" 'jwm-bootstrap'     '=> ./cld/app/jwm/bootstrap'               '[Scripts executed after JWM started]'
-      printf "    %-15s %-40s %s\n" 'bashrc'            '=> ./cld/bashrc.d'                        '[*.sh will be exported]'
-      printf "    %-15s %-40s %s\n" 'after-boot'        '=> ./cld/systemd/runlevel/after-boot'
-      printf "    %-15s %-40s %s\n" 'before-shutdown'   '=> ./cld/systemd/runlevel/before-shutdown'
+      printf "    %-15s %-43s [%s]\n" 'where-used'        '=> N/A'                                    'Show where paths below are used'
+      printf "    %-15s %-43s [%s]\n" 'bin'               '=> ./cld/bin'                              'Your executable scripts'
+      printf "    %-15s %-43s [%s]\n" 'home'              '=> ./cld/home'                             'User directory'
+      printf "    %-15s %-43s [%s]\n" 'app'               '=> ./cld/app'
+      printf "    %-15s %-43s [%s]\n" 'jwmrc'             '=> ./cld/app/jwm/jwmrc'                    'JWM configuration files'
+      printf "    %-15s %-43s [%s]\n" 'jwm-bootstrap'     '=> ./cld/app/jwm/bootstrap'                'Scripts executed after JWM started'
+      printf "    %-15s %-43s [%s]\n" 'bashrc'            '=> ./cld/bashrc.d'                         '*.sh will be exported'
+      printf "    %-15s %-43s [%s]\n" 'after-boot'        '=> ./cld/systemd/runlevel/after-boot'      '*.sh will be executed after boot'
+      printf "    %-15s %-43s [%s]\n" 'before-shutdown'   '=> ./cld/systemd/runlevel/before-shutdown' '*.sh will be executed before shutdown/reboot/restart'
       exit 1;
       ;;
 esac
