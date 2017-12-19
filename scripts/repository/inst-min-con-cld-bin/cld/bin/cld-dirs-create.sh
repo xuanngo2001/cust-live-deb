@@ -46,6 +46,7 @@ case "${action}" in
       ;;    
   *)
       echo "Error: Action: ${action} is unknown. Aborted!"
+      printf "    %-15s %-40s %s\n" 'where-used'        '=> N/A'                                   '[Show where paths below are used]'
       printf "    %-15s %-40s %s\n" 'bin'               '=> ./cld/bin'                             '[Your executable scripts]'
       printf "    %-15s %-40s %s\n" 'home'              '=> ./cld/home'
       printf "    %-15s %-40s %s\n" 'app'               '=> ./cld/app'
