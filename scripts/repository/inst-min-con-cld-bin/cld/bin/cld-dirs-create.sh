@@ -46,12 +46,12 @@ case "${action}" in
       ;;    
   *)
       echo "Error: Action: ${action} is unknown. Aborted!"
-      printf "    %-15s %-40s %s\n" 'bin'               '=> ./cld/bin'                             '[All your executable scripts here]'
+      printf "    %-15s %-40s %s\n" 'bin'               '=> ./cld/bin'                             '[Your executable scripts]'
       printf "    %-15s %-40s %s\n" 'home'              '=> ./cld/home'
       printf "    %-15s %-40s %s\n" 'app'               '=> ./cld/app'
       printf "    %-15s %-40s %s\n" 'jwmrc'             '=> ./cld/app/jwm/jwmrc'
-      printf "    %-15s %-40s %s\n" 'jwm-bootstrap'     '=> ./cld/app/jwm/bootstrap'
-      printf "    %-15s %-40s %s\n" 'bashrc'            '=> ./cld/bashrc.d'                        '[All *.sh will be exported]'
+      printf "    %-15s %-40s %s\n" 'jwm-bootstrap'     '=> ./cld/app/jwm/bootstrap'               '[Scripts executed after jwm started]'
+      printf "    %-15s %-40s %s\n" 'bashrc'            '=> ./cld/bashrc.d'                        '[*.sh will be exported]'
       printf "    %-15s %-40s %s\n" 'after-boot'        '=> ./cld/systemd/runlevel/after-boot'
       printf "    %-15s %-40s %s\n" 'before-shutdown'   '=> ./cld/systemd/runlevel/before-shutdown'
       exit 1;
