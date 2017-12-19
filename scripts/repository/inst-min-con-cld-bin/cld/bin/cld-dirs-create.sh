@@ -48,7 +48,7 @@ case "${action}" in
       echo "Error: Action: ${action} is unknown. Aborted!"
       printf "    %-15s %-43s [%s]\n" 'where-used'        '=> N/A'                                    'Show where paths below are used'
       printf "    %-15s %-43s [%s]\n" 'bin'               '=> ./cld/bin'                              'Your executable scripts'
-      printf "    %-15s %-43s [%s]\n" 'home'              '=> ./cld/home'                             'User directory'
+      printf "    %-15s %-43s [%s]\n" 'home'              '=> ./cld/home'                             '$HOME directory'
       printf "    %-15s %-43s [%s]\n" 'app'               '=> ./cld/app'
       printf "    %-15s %-43s [%s]\n" 'jwmrc'             '=> ./cld/app/jwm/jwmrc'                    'JWM configuration files'
       printf "    %-15s %-43s [%s]\n" 'jwm-bootstrap'     '=> ./cld/app/jwm/bootstrap'                'Scripts executed after JWM started'
