@@ -44,7 +44,7 @@ case "${action}" in
       printf "    %-20s %s\n" "app"               "=> ./cld/app"
       printf "    %-20s %s\n" "jwmrc"             "=> ./cld/app/jwm/jwmrc"
       printf "    %-20s %s\n" "jwm-bootstrap"     "=> ./cld/app/jwm/bootstrap"
-      printf "    %-20s %s\n" "bashrc"            "=> ./cld/bashrc.d"
+      printf "    %-20s %s\n" "bashrc"            "=> ./cld/bashrc.d           [All *.sh will be exported.]"
       printf "    %-20s %s\n" "after-boot"        "=> ./cld/systemd/runlevel/after-boot"
       printf "    %-20s %s\n" "before-shutdown"   "=> ./cld/systemd/runlevel/before-shutdown"
             exit 1;
