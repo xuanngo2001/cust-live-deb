@@ -5,7 +5,7 @@ set -e
 
 cat << EndOfSqliteHelp
   # Passing commands to sqlite prompt
-  echo -e '.separator "@"\n.import output log_dump' | sqlite example.db
+  echo -e '.separator "@"\n.import csv_file.csv tablename' | sqlite example.db
   
   # Format table output.
   sqlite3 -cmd ".width 13 15" -column -header example.db "SELECT * tablename;"
