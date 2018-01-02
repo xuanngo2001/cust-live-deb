@@ -47,6 +47,10 @@ fi
 rm -f /vmlinuz.old
 rm -f /initrd.img.old
 
+# Add to CLD/
+ yes | cp -av ./cld  /usr/local
+
+
 # Log linux-images
 dpkg -l linux-image* | tee
 ls -l /boot/
