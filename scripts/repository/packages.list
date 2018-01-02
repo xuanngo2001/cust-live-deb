@@ -31,7 +31,6 @@ debootstrap
 # ./inst-min-con-cld-tools/inst-min-con-cld-tools.sh
 parted
 util-linux
-udev
 # ./inst-min-con-compressors/inst-min-con-compressors.sh
 bzip2
 rar
@@ -43,6 +42,8 @@ p7zip
 
 # ./inst-min-con-dircolors/inst-min-con-dircolors.sh
 
+# ./inst-min-con-filesystem-dosfstools/inst-min-con-filesystem-dosfstools.sh
+dosfstools
 # ./inst-min-con-filesystem-exfat/inst-min-con-filesystem-exfat.sh
 exfat-fuse
 exfat-utils
@@ -211,11 +212,6 @@ libgconf-2-4
 libxss1
 lsb-release
 google-chrome-stable
-# ./inst-std-inet-xtra-opera-flashplayer/inst-std-inet-xtra-opera-flashplayer.sh
-
-# ./inst-std-inet-xtra-opera/inst-std-inet-xtra-opera.sh
-apt-transport-https
-opera-stable
 # ./inst-std-inet-xtra-transmission-gtk/inst-std-inet-xtra-transmission-gtk.sh
 transmission-gtk
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
