@@ -10,5 +10,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install sqlite.
 apt-get -y install sqlite3
 
+# Add to CLD/
+ yes | cp -av ./cld  /usr/local
+
 # Log
 echo "${GV_LOG} * Install Database: sqlite3."
