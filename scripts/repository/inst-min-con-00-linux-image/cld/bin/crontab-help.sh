@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 # Description: List helpful commands for crontab
+#   Reference: https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/
 #   Highlight comment: ./crontab-help.sh | grep -E '^|#.*'
 
 cat << EndOfCrontabHelp
