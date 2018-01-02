@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-std-office-libreoffice.sh ...
-  * After this operation, 410 MB of additional disk space will be used.
-  * Install LibreOffice 5.4.3.2 40m0(Build:2).
+  * After this operation, 411 MB of additional disk space will be used.
+  * Install LibreOffice 5.4.4.2 40m0(Build:2).
   * Install Office Suite: Word processor.
   * Install Office Suite: Spreadsheet.
   * Install Office Suite: Presentation.
@@ -8,7 +8,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 3877060K. Space Used = 498584K.
+  * Disk size = 3877708K. Space Used = 498728K.
   * The following NEW packages will be installed:
   ```bash
   coinor-libcbc3 coinor-libcgl1 coinor-libclp1 coinor-libcoinmp1v5
