@@ -1,6 +1,7 @@
 * >>>>>>>>> Running inst-xtra-zfs-dkms.sh ...
   * After this operation, 12.3 kB of additional disk space will be used.
   * After this operation, 399 kB of additional disk space will be used.
+  * After this operation, 52.8 MB of additional disk space will be used.
   * After this operation, 3,199 kB of additional disk space will be used.
   * After this operation, 10.7 MB of additional disk space will be used.
   * After this operation, 4,116 kB of additional disk space will be used.
@@ -8,11 +9,13 @@
   * Install zfs-dkms: version: 0.7.3-3~bpo9+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
   * Install zfs-initramfs to be able to boot from ZFS.
   * Import existing ZFS partitions: zpool import -a
-  * Disk size = 5489444K. Space Used = 34204K.
+  * Disk size = 5572768K. Space Used = 131112K.
   * The following NEW packages will be installed:
   ```bash
   linux-headers-amd64
   module-assistant
+  linux-headers-4.13.0-0.bpo.1-amd64 linux-headers-4.13.0-0.bpo.1-common
+  linux-kbuild-4.13
   file spl-dkms
   zfs-dkms
   libnvpair1linux libuutil1linux libzfs2linux libzpool2linux zfs-initramfs
