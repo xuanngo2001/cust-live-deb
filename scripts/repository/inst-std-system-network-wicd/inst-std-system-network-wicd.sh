@@ -23,7 +23,6 @@ yes | cp -av ./cld/ /usr/local
 # Log
 echo "${GV_LOG} * Install Network Manager: wicd."
 echo "${GV_LOG} * Insert Wicd menu in Network."
-echo "${GV_LOG} * For wireless, you have to type in the wireless interface(e.g. wlan0) in the Preferences."
 echo "${GV_LOG} * Set wicd to run on JWM startup."
 echo "${GV_LOG} * Log at /var/log/wicd/wicd.log." 
 
