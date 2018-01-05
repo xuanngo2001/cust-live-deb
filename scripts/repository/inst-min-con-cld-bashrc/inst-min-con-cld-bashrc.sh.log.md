@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-cld-bashrc.sh ...
   * Set common settings for ~/.bashrc.
-  * Disk size = 1318532K. Space Used = 28K.
+  * Disk size = 1329132K. Space Used = 28K.
