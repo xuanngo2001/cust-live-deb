@@ -5,10 +5,11 @@ set -e
 
 cat << EndOfTarHelp
   # Un/Compress to tar.
-  tar -cf output.tar someDir/ file1 file2
-  tar -xf output.tar
+  tar -cf archive.tar /path/to/dir/ file1 file2
+  tar -xf archive.tar
   
-  # Decompress gzip file
-  tar -xzvf drupal.tar.gz
+  # Un/Decompress gzip file.
+  tar -czvf archive.tar.gz /path/to/dir/ file1 file2
+  tar -xzvf archive.tar.gz
   
 EndOfTarHelp
