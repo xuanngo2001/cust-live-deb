@@ -2,7 +2,7 @@
   * After this operation, 537 kB of additional disk space will be used.
   * Install hardware info apps: hardinfo.
   * Insert System Information menu in Administration.
-  * Disk size = 4004428K. Space Used = 952K.
+  * Disk size = 4001328K. Space Used = 948K.
   * The following NEW packages will be installed:
   ```bash
   hardinfo
