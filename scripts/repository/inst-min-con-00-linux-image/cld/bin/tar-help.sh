@@ -4,7 +4,7 @@ set -e
 #   Highlight comment: ./tar-help.sh | grep -E '^|#.*'
 
 cat << EndOfTarHelp
-  # Un/Compress to tar.
+  # Un/Compress tar.
   tar -cf archive.tar /path/to/dir/ file1 file2
   tar -xf archive.tar
   
