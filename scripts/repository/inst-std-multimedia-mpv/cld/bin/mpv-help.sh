@@ -4,8 +4,9 @@ set -e
 #   Highlight comment: ./mpv-help.sh | grep -E '^|#.*'
 
 cat << EndOfMPVhelp
-  # Play videos found
-  mpv -playlist <(locate somepattern | grep otherpattern)
+  # Play videos found: https://github.com/limelime/cust-live-deb/issues/268
+  mpv -playlist <(find "$PWD" -type f)
+  # $PWD is required. Otherwise, it'll try to go relative to the file descriptor's location, eg: "/dev/fd/./path/to/video-file.avi", which would fail to open.  
   
   # Extract audio from video file.
   mpv videofile.avi -o audiofile.mp3 --no-video
