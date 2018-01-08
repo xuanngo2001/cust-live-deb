@@ -71,7 +71,7 @@ ${color Gray}${font Arial:size=10:style=bold}${color Tan1}SYSTEM ${color DarkSla
 $font${color Gray}$sysname $kernel $alignr $machine
 ${execpi 3600 cat /proc/cpuinfo | grep "model name" | uniq | cut -d':' -f2 | cut -c 2-}
 Uptime $alignr${uptime}
-File System $alignr${fs_type}
+Filesystem $alignr${fs_type}
 
 ############ PROCESSORS ############
 ${font Arial:size=10:style=bold}${color Tan1}PROCESSORS ${color Gray}[2]${color DarkSlateGray}${hr 2}
