@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-system-time-zone.sh ...
   * Insert Time Zone menu in Administration.
-  * Disk size = 4000244K. Space Used = 4K.
+  * Disk size = 3943804K. Space Used = 4K.

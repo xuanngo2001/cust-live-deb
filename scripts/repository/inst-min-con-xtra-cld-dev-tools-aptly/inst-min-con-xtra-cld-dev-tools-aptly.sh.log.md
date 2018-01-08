@@ -4,7 +4,7 @@
   * Add aptly nightly build repository.
   * Install aptly version: 1.2.0 to create local debian repository.
   * Add xz-utils package because aptly snapshot merge needs it.
-  * Disk size = 1727636K. Space Used = 30076K.
+  * Disk size = 1679148K. Space Used = 30088K.
   * The following NEW packages will be installed:
   ```bash
   dirmngr

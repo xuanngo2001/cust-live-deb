@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-ntp.sh ...
   * After this operation, 2,266 kB of additional disk space will be used.
   * Install Network Time Protocol: ntp.
-  * Disk size = 1575932K. Space Used = 3148K.
+  * Disk size = 1518140K. Space Used = 3140K.
   * The following NEW packages will be installed:
   ```bash
   libedit2 libopts25 ntp
