@@ -8,4 +8,8 @@ cat << EndOfGrepHelp
   echo 1459mmmm34mm | grep -E [0-9]{3}
   echo 2786mmmm34mm | grep -E [[:digit:]]{3}
   
+  # Grep either pattern1 or pattern2
+  grep -e '(pattern1)|(pattern2)'
+  grep '\(pattern1\)\|\(pattern2\)'
+  
 EndOfGrepHelp
