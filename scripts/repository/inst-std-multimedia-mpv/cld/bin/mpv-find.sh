@@ -1,8 +1,31 @@
 #!/bin/bash
 set -e
-# Description: Find all video files and play
+# Description: Find all video files and play from directory.
+#   Reference: https://github.com/limelime/cust-live-deb/issues/268
 
-# Doesn't work yet.
-mpv -playlist <(find . -type f -name '*.avi' -o -name '*.mkv' -o -name '*.mp4' -o -name '*.mpg' -o -name '*.mpeg' -o -name '*.rmvb' -o -name '*.rm')
+# Error handling.
+  if [ -z "$1" ]; then
+    echo "Error: Input can't be empty. Aborted!"
+    exit 1;
+  fi
 
-find . -name "artist name" -exec mplayer '{}' \;
+# Play all videos.
+  dir_path=$(readlink -ev "$1")
+  mpv -playlist <(find "${dir_path}" -type f \
+                                          -o -iname '*.asf'\
+                                          -o -iname '*.avi'\
+                                          -o -iname '*.flv'\
+                                          -o -iname '*.m4v'\
+                                          -o -iname '*.mkv'\
+                                          -o -iname '*.mov'\
+                                          -o -iname '*.mp4'\
+                                          -o -iname '*.mpeg'\
+                                          -o -iname '*.mpg'\
+                                          -o -iname '*.ogg'\
+                                          -o -iname '*.rm'\
+                                          -o -iname '*.rmvb'\
+                                          -o -iname '*.vob'\
+                                          -o -iname '*.webm'\
+                                          -o -iname '*.wma'\
+                                          -o -iname '*.wmv'\
+                                          )
