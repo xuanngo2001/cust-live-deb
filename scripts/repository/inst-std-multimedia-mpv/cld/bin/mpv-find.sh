@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-# Description: Find all video files and play
+# Description: Find all video files and play from directory.
 
 # Error handling.
   if [ -z "$1" ]; then
