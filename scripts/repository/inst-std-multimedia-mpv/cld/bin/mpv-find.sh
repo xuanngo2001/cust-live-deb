@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 # Description: Find all video files and play from directory.
+#   Reference: https://github.com/limelime/cust-live-deb/issues/268
 
 # Error handling.
   if [ -z "$1" ]; then
