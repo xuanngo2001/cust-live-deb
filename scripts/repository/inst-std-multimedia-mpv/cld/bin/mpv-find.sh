@@ -12,8 +12,10 @@ set -e
 # Play all videos.
   dir_path=$(readlink -ev "$1")
   mpv -playlist <(find "${dir_path}" -type f -iname '*.avi'\
+                                          -o -iname '*.asf'\
                                           -o -iname '*.m4v'\
                                           -o -iname '*.mkv'\
+                                          -o -iname '*.mov'\
                                           -o -iname '*.mp4'\
                                           -o -iname '*.mpg'\
                                           -o -iname '*.mpeg'\
