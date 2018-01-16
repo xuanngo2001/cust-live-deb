@@ -23,4 +23,7 @@ set -e
                                           -o -iname '*.rm'\
                                           -o -iname '*.flv'\
                                           -o -iname '*.ogg'\
+                                          -o -iname '*.wma'\
+                                          -o -iname '*.wmv'\
+                                          -o -iname '*.webm'\
                                           -o -iname '*.vob')
