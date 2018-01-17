@@ -10,4 +10,7 @@ cat << EndOfFindHelp
   # As many files as possible are given as parameters to sed at once.
   find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} +
   
+  # Find multiple patterns.
+  find . -type f -o -iname '*.asf' -o -iname '*.avi'
+  
 EndOfFindHelp
