@@ -8,5 +8,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 apt-get -y install mupdf
 
+
+# Add to CLD/
+ yes | cp -av ./cld  /usr/local
+
 # Log
 echo "${GV_LOG} * Install PDF reader: Mupdf."
