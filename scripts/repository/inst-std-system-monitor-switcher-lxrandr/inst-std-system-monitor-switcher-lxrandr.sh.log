@@ -3,44 +3,39 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  cpp cpp-6 libisl15 libmpc3 libmpfr4
+  cpp cpp-6 libisl15 libmpc3
 Suggested packages:
   cpp-doc gcc-6-locales nickle cairo-5c xorg-docs-core
 The following NEW packages will be installed:
-  cpp cpp-6 libisl15 libmpc3 libmpfr4 x11-xserver-utils
-0 upgraded, 6 newly installed, 0 to remove and 24 not upgraded.
-Need to get 7,925 kB of archives.
-After this operation, 26.6 MB of additional disk space will be used.
+  cpp cpp-6 libisl15 libmpc3 x11-xserver-utils
+0 upgraded, 5 newly installed, 0 to remove and 24 not upgraded.
+Need to get 7,369 kB of archives.
+After this operation, 25.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libisl15 amd64 0.18-1 [564 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmpfr4 amd64 3.1.5-1 [556 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmpc3 amd64 1.0.3-1+b2 [39.9 kB]
-Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 cpp-6 amd64 6.3.0-18 [6,579 kB]
-Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 cpp amd64 4:6.3.0-4 [18.7 kB]
-Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 x11-xserver-utils amd64 7.7+7+b1 [167 kB]
-Fetched 7,925 kB in 0s (24.0 MB/s)
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmpc3 amd64 1.0.3-1+b2 [39.9 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 cpp-6 amd64 6.3.0-18 [6,579 kB]
+Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 cpp amd64 4:6.3.0-4 [18.7 kB]
+Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 x11-xserver-utils amd64 7.7+7+b1 [167 kB]
+Fetched 7,369 kB in 0s (16.9 MB/s)
 Selecting previously unselected package libisl15:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46952 files and directories currently installed.)
-Preparing to unpack .../0-libisl15_0.18-1_amd64.deb ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48762 files and directories currently installed.)
+Preparing to unpack .../libisl15_0.18-1_amd64.deb ...
 Unpacking libisl15:amd64 (0.18-1) ...
-Selecting previously unselected package libmpfr4:amd64.
-Preparing to unpack .../1-libmpfr4_3.1.5-1_amd64.deb ...
-Unpacking libmpfr4:amd64 (3.1.5-1) ...
 Selecting previously unselected package libmpc3:amd64.
-Preparing to unpack .../2-libmpc3_1.0.3-1+b2_amd64.deb ...
+Preparing to unpack .../libmpc3_1.0.3-1+b2_amd64.deb ...
 Unpacking libmpc3:amd64 (1.0.3-1+b2) ...
 Selecting previously unselected package cpp-6.
-Preparing to unpack .../3-cpp-6_6.3.0-18_amd64.deb ...
+Preparing to unpack .../cpp-6_6.3.0-18_amd64.deb ...
 Unpacking cpp-6 (6.3.0-18) ...
 Selecting previously unselected package cpp.
-Preparing to unpack .../4-cpp_4%3a6.3.0-4_amd64.deb ...
+Preparing to unpack .../cpp_4%3a6.3.0-4_amd64.deb ...
 Unpacking cpp (4:6.3.0-4) ...
 Selecting previously unselected package x11-xserver-utils.
-Preparing to unpack .../5-x11-xserver-utils_7.7+7+b1_amd64.deb ...
+Preparing to unpack .../x11-xserver-utils_7.7+7+b1_amd64.deb ...
 Unpacking x11-xserver-utils (7.7+7+b1) ...
 Processing triggers for menu (2.1.47+b1) ...
 Setting up libisl15:amd64 (0.18-1) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
-Setting up libmpfr4:amd64 (3.1.5-1) ...
 Setting up libmpc3:amd64 (1.0.3-1+b2) ...
 Setting up cpp-6 (6.3.0-18) ...
 Setting up cpp (4:6.3.0-4) ...
@@ -56,9 +51,9 @@ The following NEW packages will be installed:
 Need to get 50.2 kB of archives.
 After this operation, 392 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 lxrandr amd64 0.3.1-1 [50.2 kB]
-Fetched 50.2 kB in 0s (293 kB/s)
+Fetched 50.2 kB in 0s (795 kB/s)
 Selecting previously unselected package lxrandr.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 47030 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48828 files and directories currently installed.)
 Preparing to unpack .../lxrandr_0.3.1-1_amd64.deb ...
 Unpacking lxrandr (0.3.1-1) ...
 Processing triggers for mime-support (3.60) ...
@@ -66,4 +61,4 @@ Processing triggers for desktop-file-utils (0.23-1) ...
 Setting up lxrandr (0.3.1-1) ...
 CLDS: * Install Monitor Switcher: lxrandr.
 CLDS: * Add lxrandr key binding.
-CLDS: * Disk size = 3433532K. Space Used = 34080K.
+CLDS: * Disk size = 3935184K. Space Used = 32676K.
