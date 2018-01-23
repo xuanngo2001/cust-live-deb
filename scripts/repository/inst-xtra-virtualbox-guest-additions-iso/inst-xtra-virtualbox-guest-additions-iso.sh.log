@@ -36,7 +36,7 @@ Get:12 http://localhost/aptly-repo/master_stretch-backports-main stretch-backpor
 Get:13 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-kbuild-4.14 amd64 4.14.7-1~bpo9+1 [713 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.14.0-0.bpo.2-amd64 amd64 4.14.7-1~bpo9+1 [466 kB]
 Get:15 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-amd64 amd64 4.14+88~bpo9+1 [6,280 B]
-Fetched 19.6 MB in 1s (19.1 MB/s)
+Fetched 19.6 MB in 1s (11.9 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -64,7 +64,7 @@ The following NEW packages will be installed:
 Need to get 15.8 MB/25.9 MB of archives.
 After this operation, 109 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc-dev-bin amd64 2.24-11+deb9u1 [259 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 linux-libc-dev amd64 4.9.65-3+deb9u2 [1,299 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 linux-libc-dev amd64 4.9.65-3 [1,298 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc6-dev amd64 2.24-11+deb9u1 [2,365 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gcc amd64 4:6.3.0-4 [5,196 B]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libstdc++-6-dev amd64 6.3.0-18 [1,418 kB]
@@ -76,14 +76,14 @@ Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 patch 
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dpkg-dev all 1.18.24 [1,592 kB]
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 build-essential amd64 12.3 [7,346 B]
 Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dkms all 2.3-2 [74.8 kB]
-Fetched 15.8 MB in 0s (24.9 MB/s)
+Fetched 15.8 MB in 1s (12.2 MB/s)
 Selecting previously unselected package libc-dev-bin.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68827 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68855 files and directories currently installed.)
 Preparing to unpack .../00-libc-dev-bin_2.24-11+deb9u1_amd64.deb ...
 Unpacking libc-dev-bin (2.24-11+deb9u1) ...
 Selecting previously unselected package linux-libc-dev:amd64.
-Preparing to unpack .../01-linux-libc-dev_4.9.65-3+deb9u2_amd64.deb ...
-Unpacking linux-libc-dev:amd64 (4.9.65-3+deb9u2) ...
+Preparing to unpack .../01-linux-libc-dev_4.9.65-3_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.9.65-3) ...
 Selecting previously unselected package libc6-dev:amd64.
 Preparing to unpack .../02-libc6-dev_2.24-11+deb9u1_amd64.deb ...
 Unpacking libc6-dev:amd64 (2.24-11+deb9u1) ...
@@ -153,7 +153,7 @@ Setting up libasan3:amd64 (6.3.0-18) ...
 Setting up libcilkrts5:amd64 (6.3.0-18) ...
 Setting up libubsan0:amd64 (6.3.0-18) ...
 Setting up libtsan0:amd64 (6.3.0-18) ...
-Setting up linux-libc-dev:amd64 (4.9.65-3+deb9u2) ...
+Setting up linux-libc-dev:amd64 (4.9.65-3) ...
 Setting up libdpkg-perl (1.18.24) ...
 Setting up liblsan0:amd64 (6.3.0-18) ...
 Setting up libmpx2:amd64 (6.3.0-18) ...
@@ -186,7 +186,7 @@ The following NEW packages will be installed:
 Need to get 0 B/9,542 kB of archives.
 After this operation, 53.8 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-6-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71707 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71735 files and directories currently installed.)
 Preparing to unpack .../linux-compiler-gcc-6-x86_4.14.7-1~bpo9+1_amd64.deb ...
 Unpacking linux-compiler-gcc-6-x86 (4.14.7-1~bpo9+1) ...
 Selecting previously unselected package linux-headers-4.14.0-0.bpo.2-common.
@@ -216,4 +216,4 @@ CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto wind
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: version: 5.2.4 r119785.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 5272148K. Space Used = 257952K.
+CLDS: * Disk size = 5274676K. Space Used = 257940K.
