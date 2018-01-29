@@ -18,6 +18,9 @@ apt-get -y install mariadb-server
 # Shutdown mariadb-server
 mysqladmin -u root -p${ROOT_PASSWORD} shutdown
 
+# Add to CLD/
+ yes | cp -av ./cld  /usr/local
+
 # Log
 echo "${GV_LOG} * Install mariadb-server."
 echo "${GV_LOG} * Set root password to ${ROOT_PASSWORD}."
