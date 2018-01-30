@@ -4,6 +4,10 @@ set -e
 #   Highlight comment: ./mpv-help.sh | grep -E '^|#.*'
 
 cat << EndOfMPVhelp
+  # Key commands
+  Shift+# : Switch audio channel
+  ( )     : Left, right audio channel
+  
   # Play videos found: https://github.com/limelime/cust-live-deb/issues/268
   mpv -playlist <(find "$PWD" -type f)
   # $PWD is required. Otherwise, it'll try to go relative to the file descriptor's location, eg: "/dev/fd/./path/to/video-file.avi", which would fail to open.  
