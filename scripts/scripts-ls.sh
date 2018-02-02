@@ -39,13 +39,14 @@ fct_work_no_proxy()
 fct_home()
   {
     local scripts_list=$(fct_work)
-    scripts_list=$(echo "${scripts_list}" | grep -vF 'proxy' | grep -vF 'virtualbox')
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'proxy' | grep -vF 'vboxguest')
     echo "${scripts_list}"
   }
 
 fct_home_inspiron()
   {
     local scripts_list=$(fct_home)
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'virtualbox')
     scripts_list=$(echo "${scripts_list}" | grep -vF 'games-' | grep -vF 'freecad')
     scripts_list=$(echo "${scripts_list}" | grep -vF 'opw-' | grep -vF 'xtra-php' | grep -vF 'mariadb-server' | grep -vF 'apache2')
     scripts_list=$(echo "${scripts_list}" | grep -vF 'zfs-')
