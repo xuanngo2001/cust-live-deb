@@ -1,4 +1,4 @@
-* >>>>>>>>> Running inst-xtra-virtualbox-guest-additions-iso.sh ...
+* >>>>>>>>> Running inst-xtra-vboxguest-additions-iso.sh ...
   * After this operation, 95.9 MB of additional disk space will be used.
   * After this operation, 109 MB of additional disk space will be used.
   * After this operation, 53.8 MB of additional disk space will be used.
@@ -7,7 +7,7 @@
   * Assumed packages installed: bzip2 & Xserver installed.
   * VirtualBox guest additions installed: version: 5.2.4 r119785.
   * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-  * Disk size = 5274772K. Space Used = 257940K.
+  * Disk size = 5274792K. Space Used = 257940K.
   * The following NEW packages will be installed:
   ```bash
   gcc-6 libasan3 libcc1-0 libcilkrts5 libgcc-6-dev libitm1 liblsan0 libmpx2
