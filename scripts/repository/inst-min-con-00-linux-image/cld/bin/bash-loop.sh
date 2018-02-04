@@ -9,5 +9,12 @@ cat << EndOfBashLoopHelp
   while IFS='' read -r line || [[ -n "${line}" ]]; do
     echo "Do something ${line}"
   done < <( cat somefile.txt | grep -v '^#' | mawk NF )
-  
+
+  # Loop through array elements.
+  animalNames=( cat dog fish )
+  animalNames+=( bird )
+  for animal in "${animalNames[@]}"
+  do
+    echo "********  ${animal}  ********"
+  done
 EndOfBashLoopHelp
