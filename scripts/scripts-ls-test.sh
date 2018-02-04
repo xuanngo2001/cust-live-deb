@@ -1,10 +1,20 @@
-./scripts-list.sh min;  yes | cp scripts-ls.lst b-min.txt
-./scripts-list.sh std;  yes | cp scripts-ls.lst b-std.txt
-./scripts-list.sh home; yes | cp scripts-ls.lst b-home.txt
-./scripts-list.sh work; yes | cp scripts-ls.lst b-work.txt
+#!/bin/bash
+set -e
+# Description: Keep track of list of scripts for each system.
 
+date_str=$(date +"%Y-%m-%d.%0k.%M.%S")
 
-./scripts-ls.sh min;  yes | cp scripts-ls.lst a-min.txt
-./scripts-ls.sh std;  yes | cp scripts-ls.lst a-std.txt
-./scripts-ls.sh home; yes | cp scripts-ls.lst a-home.txt
-./scripts-ls.sh work; yes | cp scripts-ls.lst a-work.txt
+system=min
+./scripts-ls.sh ${system};  yes | cp scripts-ls.lst test-scripts_${system}_${date_str}.txt
+
+system=std
+./scripts-ls.sh ${system};  yes | cp scripts-ls.lst test-scripts_${system}_${date_str}.txt
+
+system=home
+./scripts-ls.sh ${system};  yes | cp scripts-ls.lst test-scripts_${system}_${date_str}.txt
+
+system=home_inspiron
+./scripts-ls.sh ${system};  yes | cp scripts-ls.lst test-scripts_${system}_${date_str}.txt
+
+system=work
+./scripts-ls.sh ${system};  yes | cp scripts-ls.lst test-scripts_${system}_${date_str}.txt
