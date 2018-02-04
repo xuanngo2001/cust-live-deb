@@ -4,17 +4,12 @@ set -e
 
 date_str=$(date +"%Y-%m-%d.%0k.%M.%S")
 
-system=min
-./scripts-ls.sh ${system};  yes | cp scripts-ls.lst test-scripts_${system}_${date_str}.txt
-
-system=std
-./scripts-ls.sh ${system};  yes | cp scripts-ls.lst test-scripts_${system}_${date_str}.txt
-
-system=home
-./scripts-ls.sh ${system};  yes | cp scripts-ls.lst test-scripts_${system}_${date_str}.txt
-
-system=home_inspiron
-./scripts-ls.sh ${system};  yes | cp scripts-ls.lst test-scripts_${system}_${date_str}.txt
-
-system=work
-./scripts-ls.sh ${system};  yes | cp scripts-ls.lst test-scripts_${system}_${date_str}.txt
+systems=( min min_xtra )
+systems+=( std std_xtra )
+systems+=( home home_inspiron )
+systems+=( work work_no_proxy )
+systems+=( all )
+for system in "${systems[@]}"
+do
+  ./scripts-ls.sh ${system};  yes | cp scripts-ls.lst test-scripts_${system}_${date_str}.txt
+done
