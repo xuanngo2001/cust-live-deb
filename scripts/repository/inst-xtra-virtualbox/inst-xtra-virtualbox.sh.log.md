@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-virtualbox.sh ...
-  * Disk size = 5274796K. Space Used = 4K.
+  * Disk size = 5019840K. Space Used = 4K.

@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-dev-tools-ant.sh ...
   * After this operation, 2,195 kB of additional disk space will be used.
   * Install ant.
-  * Disk size = 4260928K. Space Used = 4104K.
+  * Disk size = 4263916K. Space Used = 4104K.
   * The following NEW packages will be installed:
   ```bash
   ant
