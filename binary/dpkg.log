@@ -93,6 +93,7 @@ ii  exfat-fuse                                   1.2.5-2                        
 ii  exfat-utils                                  1.2.5-2                           amd64        utilities to create, check, label and dump exFAT filesystem
 ii  exo-utils                                    0.10.7-1                          amd64        Utility files for libexo
 ii  feh                                          2.18-2                            amd64        imlib2 based image viewer
+ii  file                                         1:5.30-1+deb9u1                   amd64        Recognize the type of data in a file using "magic" numbers
 ii  findutils                                    4.6.0+git+20161106-2              amd64        utilities for finding files--find, xargs
 ii  firefox-esr                                  52.5.0esr-1~deb9u1                amd64        Mozilla Firefox web browser - Extended Support Release (ESR)
 ii  firmware-amd-graphics                        20170823-1~bpo9+1                 all          Binary firmware for AMD/ATI graphics chips
@@ -122,10 +123,10 @@ ii  fonts-liberation                             1:1.07.4-2                     
 ii  fonts-lyx                                    2.2.2-1                           all          TrueType versions of some TeX fonts used by LyX
 ii  fonts-opensymbol                             2:102.10+LibO5.4.4-1~bpo9+1       all          OpenSymbol TrueType font
 ii  freecad                                      0.16+dfsg2-3                      amd64        Extensible Open Source CAx program (alpha)
-ii  freeciv-client-gtk                           2.5.9-1~bpo9+1                    amd64        Civilization turn based strategy game (GTK+ client)
-ii  freeciv-data                                 2.5.9-1~bpo9+1                    all          Civilization turn based strategy game (data)
-ii  freeciv-server                               2.5.9-1~bpo9+1                    amd64        Civilization turn based strategy game (server files)
-ii  freeciv-sound-standard                       2.5.9-1~bpo9+1                    all          Civilization turn based strategy game (standard sound pack)
+ii  freeciv-client-gtk                           2.5.10-1~bpo9+1                   amd64        Civilization turn based strategy game (GTK+ client)
+ii  freeciv-data                                 2.5.10-1~bpo9+1                   all          Civilization turn based strategy game (data)
+ii  freeciv-server                               2.5.10-1~bpo9+1                   amd64        Civilization turn based strategy game (server files)
+ii  freeciv-sound-standard                       2.5.10-1~bpo9+1                   all          Civilization turn based strategy game (standard sound pack)
 ii  fuse                                         2.9.7-1                           amd64        Filesystem in Userspace
 ii  g++                                          4:6.3.0-4                         amd64        GNU C++ compiler
 ii  g++-6                                        6.3.0-18                          amd64        GNU C++ compiler
@@ -325,6 +326,7 @@ ii  libdvdread4:amd64                            5.0.3-2                        
 ii  libe-book-0.1-1:amd64                        0.1.2-4                           amd64        library for reading and converting various  e-book formats
 ii  libedit2:amd64                               3.1-20160903-3                    amd64        BSD editline and history libraries
 ii  libegl1-mesa:amd64                           13.0.6-1+b2                       amd64        free implementation of the EGL API -- runtime
+ii  libelf-dev:amd64                             0.168-1                           amd64        libelf1 development libraries and header files
 ii  libelf1:amd64                                0.168-1                           amd64        library to read and write ELF files
 ii  libenchant1c2a:amd64                         1.6.0-11+b1                       amd64        Wrapper library for various spell checker engines (runtime libs)
 ii  libeot0:amd64                                0.01-4+b1                         amd64        Library for parsing/converting Embedded OpenType files
@@ -554,6 +556,7 @@ ii  libnspr4:amd64                               2:4.12-6                       
 ii  libnss3:amd64                                2:3.26.2-1.1+deb9u1               amd64        Network Security Service libraries
 ii  libntfs-3g871                                1:2016.2.22AR.1+dfsg-1            amd64        read/write NTFS driver for FUSE (runtime library)
 ii  libnuma1:amd64                               2.0.11-2.1                        amd64        Libraries for controlling NUMA policy
+ii  libnvpair1linux                              0.7.5-1~bpo9+1                    amd64        Solaris name-value library for Linux
 ii  liboce-foundation10:amd64                    0.17.2-2                          amd64        OpenCASCADE Community Edition CAE platform shared library
 ii  liboce-modeling10:amd64                      0.17.2-2                          amd64        OpenCASCADE Community Edition CAE platform shared library
 ii  liboce-ocaf-lite10:amd64                     0.17.2-2                          amd64        OpenCASCADE Community Edition CAE platform shared library
@@ -643,11 +646,13 @@ ii  libqt5dbus5:amd64                            5.7.1+dfsg-3+b1                
 ii  libqt5gui5:amd64                             5.7.1+dfsg-3+b1                   amd64        Qt 5 GUI module
 ii  libqt5help5:amd64                            5.7.1-1                           amd64        Qt 5 help module
 ii  libqt5network5:amd64                         5.7.1+dfsg-3+b1                   amd64        Qt 5 network module
+ii  libqt5opengl5:amd64                          5.7.1+dfsg-3+b1                   amd64        Qt 5 OpenGL module
 ii  libqt5printsupport5:amd64                    5.7.1+dfsg-3+b1                   amd64        Qt 5 print support module
 ii  libqt5sql5:amd64                             5.7.1+dfsg-3+b1                   amd64        Qt 5 SQL module
 ii  libqt5sql5-sqlite:amd64                      5.7.1+dfsg-3+b1                   amd64        Qt 5 SQLite 3 database driver
 ii  libqt5svg5:amd64                             5.7.1~20161021-2+b2               amd64        Qt 5 SVG module
 ii  libqt5widgets5:amd64                         5.7.1+dfsg-3+b1                   amd64        Qt 5 widgets module
+ii  libqt5x11extras5:amd64                       5.7.1~20161021-2                  amd64        Qt 5 X11 extras
 ii  libqtassistantclient4:amd64                  4.6.3-7+b1                        amd64        Qt Assistant client library (runtime)
 ii  libqtcore4:amd64                             4:4.8.7+dfsg-11                   amd64        Qt 4 core module
 ii  libqtdbus4:amd64                             4:4.8.7+dfsg-11                   amd64        Qt 4 D-Bus module library
@@ -753,6 +758,7 @@ ii  libunistring0:amd64                          0.9.6+really0.9.3-0.1          
 ii  libusb-1.0-0:amd64                           2:1.0.21-1                        amd64        userspace USB programming library
 ii  libustr-1.0-1:amd64                          1.0.4-6                           amd64        Micro string library: shared library
 ii  libuuid1:amd64                               2.29.2-1                          amd64        Universally Unique ID library
+ii  libuutil1linux                               0.7.5-1~bpo9+1                    amd64        Solaris userland utility library for Linux
 ii  libv4l-0:amd64                               1.12.3-1                          amd64        Collection of video4linux support libraries
 ii  libv4lconvert0:amd64                         1.12.3-1                          amd64        Video4linux frame format conversion library
 ii  libva-drm1:amd64                             1.7.3-2                           amd64        Video Acceleration (VA) API for Linux -- DRM runtime
@@ -858,8 +864,10 @@ ii  libxxf86vm1:amd64                            1:1.1.4-1+b2                   
 ii  libyajl2:amd64                               2.1.0-2+b3                        amd64        Yet Another JSON Library
 ii  libyaml-0-2:amd64                            0.1.7-2                           amd64        Fast YAML 1.1 parser and emitter library
 ii  libyaml-cpp0.3v5:amd64                       0.3.0-1.2                         amd64        YAML parser and emitter for C++ (0.3 series)
+ii  libzfs2linux                                 0.7.5-1~bpo9+1                    amd64        OpenZFS filesystem library for Linux
 ii  libzip4:amd64                                1.1.2-1.1+b1                      amd64        library for reading, creating, and modifying zip archives (runtime)
 ii  libzipios++0v5                               0.1.5.9+cvs.2007.04.28-6          amd64        small C++ library for reading zip files (library)
+ii  libzpool2linux                               0.7.5-1~bpo9+1                    amd64        OpenZFS pool library for Linux
 ii  libzstd1                                     1.1.2-1                           amd64        fast lossless compression algorithm
 ii  libzvbi-common                               0.2.35-13                         all          Vertical Blanking Interval decoder (VBI) - common files
 ii  libzvbi0:amd64                               0.2.35-13                         amd64        Vertical Blanking Interval decoder (VBI) - runtime files
@@ -1027,6 +1035,7 @@ ii  sgml-base                                    1.29                           
 ii  shared-mime-info                             1.8-1                             amd64        FreeDesktop.org shared MIME database and spec
 ii  socat                                        1.7.3.1-2+deb9u1                  amd64        multipurpose relay for bidirectional data transfer
 ii  speedcrunch                                  0.12.0-1                          amd64        High precision calculator
+ii  spl-dkms                                     0.7.5-1~bpo9+1                    all          Solaris Porting Layer kernel modules for Linux
 ii  sqlite3                                      3.16.2-5+deb9u1                   amd64        Command line interface for SQLite 3
 ii  squashfs-tools                               1:4.3-3+deb9u1                    amd64        Tool to create and append to squashfs filesystems
 ii  systemd                                      232-25+deb9u1                     amd64        system and service manager
@@ -1058,6 +1067,7 @@ ii  usbutils                                     1:007-4+b1                     
 ii  util-linux                                   2.29.2-1                          amd64        miscellaneous system utilities
 ii  vim-common                                   2:8.0.0197-4                      all          Vi IMproved - Common files
 ii  vim-tiny                                     2:8.0.0197-4                      amd64        Vi IMproved - enhanced vi editor - compact version
+ii  virtualbox-5.2                               5.2.6-120293~Debian~stretch       amd64        Oracle VM VirtualBox
 ii  volumeicon-alsa                              0.5.1+git20170117-1~bpo9+1        amd64        systray volume icon for alsa
 ii  wget                                         1.18-5                            amd64        retrieves files from the web
 ii  whiptail                                     0.52.19-1+b1                      amd64        Displays user-friendly dialog boxes from shell scripts
@@ -1098,5 +1108,8 @@ ii  xxd                                          2:8.0.0197-4                   
 ii  xz-utils                                     5.2.2-1.2+b1                      amd64        XZ-format compression utilities
 ii  zenity                                       3.22.0-1+b1                       amd64        Display graphical dialog boxes from shell scripts
 ii  zenity-common                                3.22.0-1                          all          Display graphical dialog boxes from shell scripts (common files)
+ii  zfs-dkms                                     0.7.5-1~bpo9+1                    all          OpenZFS filesystem kernel modules for Linux
+ii  zfs-initramfs                                0.7.5-1~bpo9+1                    all          OpenZFS root filesystem capabilities for Linux - initramfs
+ii  zfsutils-linux                               0.7.5-1~bpo9+1                    amd64        command-line tools to manage OpenZFS filesystems
 ii  zip                                          3.0-11+b1                         amd64        Archiver for .zip files
 ii  zlib1g:amd64                                 1:1.2.8.dfsg-5                    amd64        compression library - runtime
