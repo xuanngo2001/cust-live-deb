@@ -2,5 +2,14 @@ CLDS:>>>>>>>>> Running inst-xtra-virtualbox.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-E: Unable to locate package virtualbox
-CLDS: * Disk size = 5274796K. Space Used = 4K.
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ virtualbox-5.2 : Depends: libqt5opengl5 (>= 5.0.2) but it is not installable
+                  Depends: libqt5x11extras5 (>= 5.6.0) but it is not installable
+E: Unable to correct problems, you have held broken packages.
+CLDS: * Disk size = 5019840K. Space Used = 4K.
