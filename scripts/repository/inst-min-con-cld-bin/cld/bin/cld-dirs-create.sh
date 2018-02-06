@@ -9,6 +9,10 @@ case "${action}" in
       mkdir -p ./cld/bin
       ;;
 
+  doc)
+      mkdir -p ./cld/doc
+      ;;
+
   home)
       mkdir -p ./cld/home
       ;;
@@ -50,6 +54,7 @@ case "${action}" in
       echo "Error: Action: ${action} is unknown. Aborted!"
       printf "    %-15s %-43s [%s]\n" 'where-used'        '=> N/A'                                    'Show where paths below are used'
       printf "    %-15s %-43s [%s]\n" 'bin'               '=> ./cld/bin'                              'Your executable scripts'
+      printf "    %-15s %-43s [%s]\n" 'doc'               '=> ./cld/doc'                              'Documentation'
       printf "    %-15s %-43s [%s]\n" 'home'              '=> ./cld/home'                             '$HOME directory'
       printf "    %-15s %-43s [%s]\n" 'app'               '=> ./cld/app'
       printf "    %-15s %-43s [%s]\n" 'jwmrc'             '=> ./cld/app/jwm/jwmrc'                    'JWM configuration files'
