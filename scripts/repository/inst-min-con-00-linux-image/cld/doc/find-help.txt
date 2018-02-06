@@ -1,9 +1,3 @@
-#!/bin/bash
-set -e
-# Description: List helpful commands for find
-#   Highlight comment: ./find-help.sh | grep -E '^|#.*'
-
-cat << EndOfFindHelp
   # A single sed command for each file is executed.
   find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} \;
   
@@ -13,4 +7,3 @@ cat << EndOfFindHelp
   # Find multiple patterns.
   find . -type f -o -iname '*.asf' -o -iname '*.avi'
   
-EndOfFindHelp
