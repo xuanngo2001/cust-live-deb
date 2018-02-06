@@ -1,0 +1,6 @@
+  # Get Zfs version
+  modinfo zfs | grep ^version
+  
+  # Import all existing know zfs partitions.
+  zpool import -a
+
