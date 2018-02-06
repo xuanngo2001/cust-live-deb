@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 # Description: Display helps.
+#   Add your help file in /usr/local/cld/doc/. (e.g. mpv-help.txt)
+#   Usage: cld-helph.sh mpv
 
 topic=$1-help.txt
 doc_dir=$(readlink -ev /usr/local/cld/doc/)
