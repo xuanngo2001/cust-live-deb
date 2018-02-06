@@ -1,9 +1,3 @@
-#!/bin/bash
-set -e
-# Description: List helpful commands for mysql
-#   Highlight comment: ./mysql-help.sh | grep -E '^|#.*'
-
-cat << EndOfMysqlHelp
   # Log in mysql server
   mysql --user=root mysql
   
@@ -15,5 +9,3 @@ cat << EndOfMysqlHelp
   GRANT ALL PRIVILEGES ON *.* TO 'root2'@'localhost' WITH GRANT OPTION;
   FLUSH PRIVILEGES;
   
-  
-EndOfMysqlHelp
