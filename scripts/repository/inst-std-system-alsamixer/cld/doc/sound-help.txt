@@ -1,11 +1,4 @@
-#!/bin/bash
-set -e
-# Description: List helpful commands for sound
 #   Reference: https://sound.com/docs/manual
-#   Highlight comment: ./sound-help.sh | grep -E '^|#.*'
-
-cat << EndOfSoundHelp
-
   # Sound card number.
   arecord -l | grep card | cut -d ':' -f1 | sed 's/card //'
   
@@ -21,4 +14,3 @@ cat << EndOfSoundHelp
   #   Right volume channel up = e
   #   Right volume channel down = c
   
-EndOfSoundHelp
