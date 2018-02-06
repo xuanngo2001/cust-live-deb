@@ -1,9 +1,3 @@
-#!/bin/bash
-set -e
-# Description: List helpful commands for mpv
-#   Highlight comment: ./mpv-help.sh | grep -E '^|#.*'
-
-cat << EndOfMPVhelp
   # Key commands
   Shift+# : Switch audio channel
   ( )     : Left, right audio channel
@@ -20,4 +14,3 @@ cat << EndOfMPVhelp
    
   # Extract audio from video file at a specific time for a relative length.
   mpv videofile.avi -o audiofile10Seconds.mp3 --no-video --start=0 --length=10
-EndOfMPVhelp
