@@ -107,7 +107,7 @@ pv
 dirmngr
 xz-utils
 aptly
-# ./inst-min-con-xtra-cld-dev-virtualbox-guest-additions/inst-min-con-xtra-cld-dev-virtualbox-guest-additions.sh
+# ./inst-min-con-xtra-cld-dev-vboxguest/inst-min-con-xtra-cld-dev-vboxguest.sh
 linux-headers-amd64
 dkms
 libc6-dev
@@ -306,17 +306,21 @@ graphviz
 x11-xserver-utils
 wmctrl
 x11-utils
-# ./inst-xtra-virtualbox-guest-additions-iso/inst-xtra-virtualbox-guest-additions-iso.sh
+# ./inst-xtra-vboxguest-additions-iso/inst-xtra-vboxguest-additions-iso.sh
 linux-headers-amd64
 dkms
 libc6-dev
 build-essential
-# ./inst-xtra-virtualbox-guest-additions-x11/inst-xtra-virtualbox-guest-additions-x11.sh
+# ./inst-xtra-vboxguest-additions-x11/inst-xtra-vboxguest-additions-x11.sh
 linux-headers-amd64
 libnotify-bin
 dkms
 libc6-dev
 virtualbox-guest-x11
+# ./inst-xtra-virtualbox/inst-xtra-virtualbox.sh
+virtualbox-5.2
+libqt5opengl5
+libqt5x11extras5
 # ./inst-xtra-wifite/inst-xtra-wifite.sh
 tshark
 aircrack-ng

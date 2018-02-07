@@ -16,3 +16,4 @@ GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_stretch-non-free 
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_stretch-updates-contrib stretch-updates contrib"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_stretch-updates-main stretch-updates main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates non-free"
+GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_virtualbox-contrib stretch contrib"
