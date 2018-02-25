@@ -38,9 +38,9 @@ Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 socat 
 Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-server-10.1 amd64 10.1.26-0+deb9u1 [5,333 kB]
 Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-server all 10.1.26-0+deb9u1 [26.2 kB]
 Preconfiguring packages ...
-Fetched 25.3 MB in 0s (42.3 MB/s)
+Fetched 25.3 MB in 0s (49.0 MB/s)
 Selecting previously unselected package libmpfr4:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35927 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35928 files and directories currently installed.)
 Preparing to unpack .../libmpfr4_3.1.5-1_amd64.deb ...
 Unpacking libmpfr4:amd64 (3.1.5-1) ...
 Selecting previously unselected package libsigsegv2:amd64.
@@ -49,7 +49,7 @@ Unpacking libsigsegv2:amd64 (2.10-5) ...
 Setting up libmpfr4:amd64 (3.1.5-1) ...
 Setting up libsigsegv2:amd64 (2.10-5) ...
 Selecting previously unselected package gawk.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35949 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35950 files and directories currently installed.)
 Preparing to unpack .../00-gawk_1%3a4.1.4+dfsg-1_amd64.deb ...
 Unpacking gawk (1:4.1.4+dfsg-1) ...
 Selecting previously unselected package mysql-common.
@@ -96,7 +96,7 @@ update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.c
 Setting up mariadb-common (10.1.26-0+deb9u1) ...
 update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
 Selecting previously unselected package mariadb-server-10.1.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36576 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36577 files and directories currently installed.)
 Preparing to unpack .../mariadb-server-10.1_10.1.26-0+deb9u1_amd64.deb ...
 Unpacking mariadb-server-10.1 (10.1.26-0+deb9u1) ...
 Selecting previously unselected package mariadb-server.
@@ -128,4 +128,4 @@ Processing triggers for systemd (232-25+deb9u1) ...
 mysqladmin: connect to server at 'localhost' failed
 error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")'
 Check that mysqld is running and that the socket: '/var/run/mysqld/mysqld.sock' exists!
-CLDS: * Disk size = 2463508K. Space Used = 319952K.
+CLDS: * Disk size = 2463568K. Space Used = 319952K.
