@@ -26,6 +26,7 @@ fct_all()
 fct_work()
   {
     local scripts_list=$(fct_all)
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'virtualbox')
     echo "${scripts_list}"
   }
 
@@ -38,7 +39,7 @@ fct_work_no_proxy()
   
 fct_home()
   {
-    local scripts_list=$(fct_work)
+    local scripts_list=$(fct_all)
     scripts_list=$(echo "${scripts_list}" | grep -vF 'proxy' | grep -vF 'vboxguest')
     echo "${scripts_list}"
   }
