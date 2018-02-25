@@ -5,7 +5,7 @@
   * Install blender3d.
   * Insert Blender 3D menu in Graphics.
   * http://download.blender.org/release/
-  * Disk size = 4268672K. Space Used = 230876K.
+  * Disk size = 4268664K. Space Used = 230876K.
   * The following NEW packages will be installed:
   ```bash
   libdrm-intel1 libgl1-mesa-dri
