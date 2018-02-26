@@ -1,3 +1,10 @@
+# Tagging release
+    ./build-cld.sh work
+    ./master-release-ok.sh
+    aptly db cleanup
+    ./build-cld.sh work
+    
+
 # Eclipse
 ## Exclude chroot folder
 Otherwise, there will be lock issues with Eclipse.
