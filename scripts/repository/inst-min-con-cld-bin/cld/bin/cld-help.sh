@@ -1,8 +1,9 @@
 #!/bin/bash
 set -e
 # Description: Display helps.
-#   Add your help file in /usr/local/cld/doc/. (e.g. mpv-help.txt)
-#   Usage: cld-helph.sh mpv
+#   Add your help file in /usr/local/cld/doc/. (e.g. smartphone-help.txt)
+#     If you want different variation, add symbolic link: cd .../cld/doc && ln -s smartphone-help.txt phone-help.txt 
+#   Usage: cld-helph.sh smartphone
 
 topic=$1-help.txt
 doc_dir=$(readlink -ev /usr/local/cld/doc/)
