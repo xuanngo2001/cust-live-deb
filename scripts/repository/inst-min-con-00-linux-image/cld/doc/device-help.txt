@@ -1,0 +1,15 @@
+  # Show all devices with Kernel module loaded.
+  #   If device is not shown, then device is not connected/plugged.
+  lspci -nnk
+  lspci -v
+  
+  # Show all usb devices.
+  lsusb
+
+  # Load module.
+  modprobe -v ath9k
+  
+  # List loaded modules
+  lsmod
+  
+  modinfo ath9k
