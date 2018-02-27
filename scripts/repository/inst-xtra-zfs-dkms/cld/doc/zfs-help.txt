@@ -1,6 +1,12 @@
-  # Get Zfs version
+  # Get Zfs version.
   modinfo zfs | grep ^version
   
   # Import all existing know zfs partitions.
   zpool import -a
 
+  # Pool status.
+  zpool status -v
+  
+  # Check integrity of hard drives
+  zpool status -v | grep 'pool:'
+  zpool scrub <pool_name>
