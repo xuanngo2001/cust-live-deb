@@ -1,2 +1,5 @@
-  # Use pipe(|) instead slash(/)
+  # Use pipe(|) instead slash(/).
   sed 's|/home|/new|' input_file.txt
+
+  # Delete up to the first occurrence(:).
+  echo '123:aaaa:f35:bbbb' | sed 's/[^:]*://'
