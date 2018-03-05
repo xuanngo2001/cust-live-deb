@@ -6,8 +6,11 @@
   # Loop through array elements.
   animalNames=( cat dog fish )
   animalNames+=( bird )
-  for animal in "${animalNames[@]}"
-  do
+  for animal in "${animalNames[@]}"; do
     echo "********  ${animal}  ********"
   done
 
+  # Loop through arguments.
+  for arg in "$@}"; do
+    echo "${arg}"
+  done
