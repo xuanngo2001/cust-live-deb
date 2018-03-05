@@ -1,0 +1,6 @@
+	# Get current executing directory path.
+	  executing_path=$(dirname "$0")              # relative
+	  executing_path=$( cd "${executing_path}" && pwd ) # absolutized and normalized
+	  if [ -z "${executing_path}" ]; then
+	    exit 1  # fail
+	  fi
