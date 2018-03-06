@@ -4,3 +4,13 @@
 	  if [ -z "${executing_path}" ]; then
 	    exit 1  # fail
 	  fi
+	  
+  # Timestamp.
+  DATE_STRING=$(date +"%Y-%m-%d.%0k.%M.%S")
+  
+  # dirname: Always double quotes. Otherwise, issue with path with spaces.
+  echo "$(dirname "${line_with_spaces}")"
+  
+  # Increment variable.
+  sata_port=0
+  sata_port=$((sata_port+1))  
