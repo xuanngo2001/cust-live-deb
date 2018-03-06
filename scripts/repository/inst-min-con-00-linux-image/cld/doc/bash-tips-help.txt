@@ -11,6 +11,9 @@
   # dirname: Always double quotes. Otherwise, issue with path with spaces.
   echo "$(dirname "${line_with_spaces}")"
   
-  # Increment variable.
+  # Increment variable in the same script.
   sata_port=0
-  sata_port=$((sata_port+1))  
+  sata_port=$((sata_port+1))
+  
+  # Increment variable inside loop.
+  let index=index+1
