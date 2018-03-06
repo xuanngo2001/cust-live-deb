@@ -1,3 +1,4 @@
   # rsync always check integrity of NEWLY files copied except existing files, it will only size and timestamp
+  rsync -a source destination
 
-  rsync -r source destination
+  # Don't use option -r. Use option -a. Otherwise, every sync will recopy the files from scratch.
