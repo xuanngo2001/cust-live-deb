@@ -4,14 +4,14 @@
   * After this operation, 7,679 kB of additional disk space will be used.
   * After this operation, 57.3 kB of additional disk space will be used.
   * After this operation, 24.9 MB of additional disk space will be used.
-  * After this operation, 186 MB of additional disk space will be used.
-  * Install Google Chrome 64.0.3282.186 .
+  * After this operation, 188 MB of additional disk space will be used.
+  * Install Google Chrome 65.0.3325.162 .
   * Modify configuration to run google-chrome as root.
   * Insert Google Chrome in Internet menu.
   * Add google chrome alias, chrome.
   * Set default browser: update-alternatives --config x-www-browser.
   * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-  * Disk size = 3334848K. Space Used = 273772K.
+  * Disk size = 3340708K. Space Used = 276328K.
   * The following NEW packages will be installed:
   ```bash
   libappindicator1 libdbusmenu-glib4 libdbusmenu-gtk4 libindicator7

@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-std-office-libreoffice.sh ...
-  * After this operation, 415 MB of additional disk space will be used.
-  * Install LibreOffice 6.0.1.1 00m0(Build:1).
+  * After this operation, 416 MB of additional disk space will be used.
+  * Install LibreOffice 6.0.2.1.0 00m0(Build:1).
   * Install Office Suite: Word processor.
   * Install Office Suite: Spreadsheet.
   * Install Office Suite: Presentation.
@@ -8,7 +8,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 3887256K. Space Used = 507336K.
+  * Disk size = 3894344K. Space Used = 508572K.
   * The following NEW packages will be installed:
   ```bash
   coinor-libcbc3 coinor-libcgl1 coinor-libclp1 coinor-libcoinmp1v5
@@ -28,6 +28,6 @@
   libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw
   libreoffice-impress libreoffice-math libreoffice-report-builder-bin
   libreoffice-style-galaxy libreoffice-style-tango libreoffice-writer
-  librevenge-0.0-0 libsuitesparseconfig4 libwpd-0.10-10 libwpg-0.3-3
-  libxslt1.1 libyajl2 lp-solve python3-uno uno-libs3 ure
+  librevenge-0.0-0 libsuitesparseconfig4 libvisio-0.1-1 libwpd-0.10-10
+  libwpg-0.3-3 libxslt1.1 libyajl2 lp-solve python3-uno uno-libs3 ure
   ```
