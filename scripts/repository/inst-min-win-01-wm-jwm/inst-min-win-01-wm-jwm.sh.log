@@ -5,11 +5,11 @@ Reading state information...
 The following additional packages will be installed:
   dbus-user-session exo-utils libdbus-glib-1-2 libexo-1-0 libexo-common
   libexo-helpers libfribidi0 libpam-systemd libpcre2-8-0
-  libstartup-notification0 libvte-2.91-0 libvte-2.91-common libxfce4ui-1-0
-  libxfce4ui-2-0 libxfce4ui-common libxfce4util-common libxfce4util7
-  libxfconf-0-2 xfce4-terminal xfconf
+  libstartup-notification0 libsystemd0 libvte-2.91-0 libvte-2.91-common
+  libxfce4ui-1-0 libxfce4ui-2-0 libxfce4ui-common libxfce4util-common
+  libxfce4util7 libxfconf-0-2 systemd xfce4-terminal xfconf
 Suggested packages:
-  x11-apps devhelp
+  x11-apps devhelp systemd-ui systemd-container policykit-1
 Recommended packages:
   menu liburi-perl libxfce4util-bin
 The following NEW packages will be installed:
@@ -18,38 +18,48 @@ The following NEW packages will be installed:
   libstartup-notification0 libvte-2.91-0 libvte-2.91-common libxfce4ui-1-0
   libxfce4ui-2-0 libxfce4ui-common libxfce4util-common libxfce4util7
   libxfconf-0-2 xfce4-terminal xfconf
-0 upgraded, 21 newly installed, 0 to remove and 24 not upgraded.
-Need to get 4,430 kB of archives.
+The following packages will be upgraded:
+  libsystemd0 systemd
+2 upgraded, 21 newly installed, 0 to remove and 31 not upgraded.
+Need to get 7,178 kB of archives.
 After this operation, 12.6 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpam-systemd amd64 232-25+deb9u1 [187 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dbus-user-session all 1.10.24-0+deb9u1 [77.3 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdbus-glib-1-2 amd64 0.108-2 [206 kB]
-Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libstartup-notification0 amd64 0.12-4+b2 [22.9 kB]
-Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfce4util-common all 4.12.1-3 [99.5 kB]
-Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfce4util7 amd64 4.12.1-3 [72.6 kB]
-Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xfconf amd64 4.12.1-1 [156 kB]
-Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfconf-0-2 amd64 4.12.1-1 [87.3 kB]
-Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfce4ui-common all 4.12.1-2 [211 kB]
-Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfce4ui-1-0 amd64 4.12.1-2 [101 kB]
-Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libexo-common all 0.10.7-1 [146 kB]
-Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libexo-helpers amd64 0.10.7-1 [149 kB]
-Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libexo-1-0 amd64 0.10.7-1 [469 kB]
-Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 exo-utils amd64 0.10.7-1 [175 kB]
-Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpcre2-8-0 amd64 10.22-3 [182 kB]
-Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libvte-2.91-common all 0.46.1-1 [540 kB]
-Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libvte-2.91-0 amd64 0.46.1-1 [616 kB]
-Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfce4ui-2-0 amd64 4.12.1-2 [101 kB]
-Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xfce4-terminal amd64 0.8.3-1 [555 kB]
-Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libfribidi0 amd64 0.19.7-1+b1 [45.7 kB]
-Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 jwm amd64 2.3.6-1 [232 kB]
-Fetched 4,430 kB in 0s (4,716 kB/s)
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 systemd amd64 232-25+deb9u2 [2,468 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsystemd0 amd64 232-25+deb9u2 [280 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpam-systemd amd64 232-25+deb9u2 [188 kB]
+Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dbus-user-session all 1.10.26-0+deb9u1 [77.6 kB]
+Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdbus-glib-1-2 amd64 0.108-2 [206 kB]
+Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libstartup-notification0 amd64 0.12-4+b2 [22.9 kB]
+Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfce4util-common all 4.12.1-3 [99.5 kB]
+Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfce4util7 amd64 4.12.1-3 [72.6 kB]
+Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xfconf amd64 4.12.1-1 [156 kB]
+Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfconf-0-2 amd64 4.12.1-1 [87.3 kB]
+Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfce4ui-common all 4.12.1-2 [211 kB]
+Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfce4ui-1-0 amd64 4.12.1-2 [101 kB]
+Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libexo-common all 0.10.7-1 [146 kB]
+Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libexo-helpers amd64 0.10.7-1 [149 kB]
+Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libexo-1-0 amd64 0.10.7-1 [469 kB]
+Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 exo-utils amd64 0.10.7-1 [175 kB]
+Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpcre2-8-0 amd64 10.22-3 [182 kB]
+Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libvte-2.91-common all 0.46.1-1 [540 kB]
+Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libvte-2.91-0 amd64 0.46.1-1 [616 kB]
+Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxfce4ui-2-0 amd64 4.12.1-2 [101 kB]
+Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xfce4-terminal amd64 0.8.3-1 [555 kB]
+Get:22 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libfribidi0 amd64 0.19.7-1+b1 [45.7 kB]
+Get:23 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 jwm amd64 2.3.6-1 [232 kB]
+Fetched 7,178 kB in 1s (4,156 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37214 files and directories currently installed.)
+Preparing to unpack .../systemd_232-25+deb9u2_amd64.deb ...
+Unpacking systemd (232-25+deb9u2) over (232-25+deb9u1) ...
+Preparing to unpack .../libsystemd0_232-25+deb9u2_amd64.deb ...
+Unpacking libsystemd0:amd64 (232-25+deb9u2) over (232-25+deb9u1) ...
+Setting up libsystemd0:amd64 (232-25+deb9u2) ...
 Selecting previously unselected package libpam-systemd:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37204 files and directories currently installed.)
-Preparing to unpack .../00-libpam-systemd_232-25+deb9u1_amd64.deb ...
-Unpacking libpam-systemd:amd64 (232-25+deb9u1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37214 files and directories currently installed.)
+Preparing to unpack .../00-libpam-systemd_232-25+deb9u2_amd64.deb ...
+Unpacking libpam-systemd:amd64 (232-25+deb9u2) ...
 Selecting previously unselected package dbus-user-session.
-Preparing to unpack .../01-dbus-user-session_1.10.24-0+deb9u1_all.deb ...
-Unpacking dbus-user-session (1.10.24-0+deb9u1) ...
+Preparing to unpack .../01-dbus-user-session_1.10.26-0+deb9u1_all.deb ...
+Unpacking dbus-user-session (1.10.26-0+deb9u1) ...
 Selecting previously unselected package libdbus-glib-1-2:amd64.
 Preparing to unpack .../02-libdbus-glib-1-2_0.108-2_amd64.deb ...
 Unpacking libdbus-glib-1-2:amd64 (0.108-2) ...
@@ -107,21 +117,24 @@ Unpacking libfribidi0:amd64 (0.19.7-1+b1) ...
 Selecting previously unselected package jwm.
 Preparing to unpack .../20-jwm_2.3.6-1_amd64.deb ...
 Unpacking jwm (2.3.6-1) ...
-Setting up libpam-systemd:amd64 (232-25+deb9u1) ...
 Processing triggers for mime-support (3.60) ...
 Setting up libdbus-glib-1-2:amd64 (0.108-2) ...
 Setting up libxfce4ui-common (4.12.1-2) ...
-Setting up dbus-user-session (1.10.24-0+deb9u1) ...
 Setting up libstartup-notification0:amd64 (0.12-4+b2) ...
 Setting up libexo-common (0.10.7-1) ...
 Setting up libvte-2.91-common (0.46.1-1) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Setting up libxfce4util-common (4.12.1-3) ...
+Setting up systemd (232-25+deb9u2) ...
+addgroup: The group `systemd-journal' already exists as a system group. Exiting.
 Setting up libfribidi0:amd64 (0.19.7-1+b1) ...
+Processing triggers for dbus (1.10.26-0+deb9u1) ...
 Setting up libpcre2-8-0:amd64 (10.22-3) ...
 Processing triggers for hicolor-icon-theme (0.15-1) ...
 Setting up libexo-helpers (0.10.7-1) ...
+Setting up libpam-systemd:amd64 (232-25+deb9u2) ...
 Setting up libvte-2.91-0:amd64 (0.46.1-1) ...
+Setting up dbus-user-session (1.10.26-0+deb9u1) ...
 Setting up libxfce4util7:amd64 (4.12.1-3) ...
 Setting up xfconf (4.12.1-1) ...
 Setting up libxfconf-0-2 (4.12.1-1) ...
@@ -146,4 +159,4 @@ Processing triggers for libc-bin (2.24-11+deb9u1) ...
 './cld/home/.jwmrc' -> '/usr/local/cld/home/.jwmrc'
 CLDS: * Install Window Manager jwm: JWM v2.3.6 by Joe Wingbermuehle.
 CLDS: * Set .
-CLDS: * Disk size = 2585640K. Space Used = 11600K.
+CLDS: * Disk size = 2588860K. Space Used = 13860K.
