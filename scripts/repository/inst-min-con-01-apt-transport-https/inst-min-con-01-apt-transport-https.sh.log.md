@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-01-apt-transport-https.sh ...
   * After this operation, 6169 kB of additional disk space will be used.
   * Install apt-transport-https to support https debian repositories.
-  * Disk size = 1304920K. Space Used = 10612K.
+  * Disk size = 1304944K. Space Used = 10612K.
   * The following NEW packages will be installed:
   ```bash
   apt-transport-https ca-certificates libcurl3-gnutls libgssapi-krb5-2
