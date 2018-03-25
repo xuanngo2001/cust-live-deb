@@ -1,0 +1,8 @@
+  # Get executing directory.
+	executing_path=$(dirname "$0")                    # relative
+	executing_path=$( cd "${executing_path}" && pwd ) # absolutized and normalized
+	if [ -z "${executing_path}" ]; then
+	  # error; for some reason, the path is not accessible
+	  # to the script (e.g. permissions re-evaled after suid)
+	  return 1  # fail
+	fi
