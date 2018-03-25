@@ -3,3 +3,6 @@
 
   # Delete up to the first occurrence(:).
   echo '123:aaaa:f35:bbbb' | sed 's/[^:]*://'
+
+  # Remove 'empty' lines, lines with space/tabs are removed too.
+  sed '/^\s*$/d'
