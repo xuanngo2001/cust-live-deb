@@ -3,4 +3,4 @@
   * Install wmctrl.
   * Install x11-utils for xprop.
   * Make open-terminals.sh run when JWM start.
-  * Disk size = 3872648K. Space Used = 28K.
+  * Disk size = 3872696K. Space Used = 28K.
