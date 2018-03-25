@@ -10,3 +10,5 @@
   # Find multiple patterns.
   find . -type f -o -iname '*.asf' -o -iname '*.avi'
   
+  # Find files with size 0
+  find . -type f -size 0
