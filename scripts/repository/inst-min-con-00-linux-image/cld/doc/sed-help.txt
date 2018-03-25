@@ -6,3 +6,6 @@
 
   # Remove 'empty' lines, lines with space/tabs are removed too.
   sed '/^\s*$/d'
+  
+  # Delete line with pattern.
+  sed -i.bck "/pattern/d"
