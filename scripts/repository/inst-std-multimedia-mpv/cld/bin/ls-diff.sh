@@ -18,3 +18,6 @@ prev_ls_files=$1
   ls -1 | sort > /tmp/file2.txt
   comm -13 /tmp/file1.txt /tmp/file2.txt >> "${prev_ls_files}"
   rm -f /tmp/file1.txt /tmp/file2.txt
+
+# Display messsage
+  echo "New files are appended to ${prev_ls_files}."
