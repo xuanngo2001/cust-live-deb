@@ -1,0 +1,15 @@
+# References:
+#   https://stackoverflow.com/a/28806991
+#   https://shapeshed.com/unix-xargs/
+
+  # Print each command that will be executed to the terminal
+  echo 'one587 two587 three587' | xargs -t rm
+
+  # Handle space by using -0, which splits the input around NUL bytes.
+  echo $'one587\ntwo587\nthree and four587' | tr '\n' '\0' | xargs -0 rm
+
+  # Run multiple commands
+  echo $'one\ntwo\nthree and four' | tr '\n' '\0' | xargs -0 -I % sh -c 'echo Y; echo "%";'
+  
+  # Combined use
+  \ls *.xmp | sed 's/\.xmp//' |tr '\n' '\0'| xargs -0 -n1 -I % sh -c 'echo Y| zero-size.sh "%";'
