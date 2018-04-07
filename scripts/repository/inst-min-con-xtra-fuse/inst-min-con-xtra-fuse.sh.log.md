@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-xtra-fuse.sh ...
   * Install fuse(fusermount) to run TMSU.
-  * Disk size = 2052928K. Space Used = 4K.
+  * Disk size = 2042012K. Space Used = 4K.
