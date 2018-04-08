@@ -2,7 +2,7 @@
   * After this operation, 12.6 MB of additional disk space will be used.
   * Install Window Manager jwm: JWM v2.3.6 by Joe Wingbermuehle.
   * Set .
-  * Disk size = 2240108K. Space Used = 13868K.
+  * Disk size = 2588996K. Space Used = 13860K.
   * The following NEW packages will be installed:
   ```bash
   dbus-user-session exo-utils jwm libdbus-glib-1-2 libexo-1-0 libexo-common
