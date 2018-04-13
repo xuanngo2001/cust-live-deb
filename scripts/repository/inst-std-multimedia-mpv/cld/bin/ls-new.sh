@@ -7,6 +7,12 @@ set -e
 
 prev_ls_files=$1
 
+# Error handling.
+  if [ -z "${prev_ls_files}" ]; then
+    echo "Error: $(basename "$0"): List file can't be empty. Aborted!"
+    exit 1;
+  fi
+  
 # If ${prev_ls_files} not found, then create it.
   if [ ! -f "${prev_ls_files}" ]; then
     touch "${prev_ls_files}"
