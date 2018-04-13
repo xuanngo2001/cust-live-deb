@@ -9,7 +9,7 @@ prev_ls_files=$1
 
 # Error handling.
   if [ -z "${prev_ls_files}" ]; then
-    echo "Error: $(basename "$0"): List file can't be empty. Aborted!"
+    echo "Error: $(basename "$0"): Input list file can't be empty. Aborted!"
     exit 1;
   fi
   
