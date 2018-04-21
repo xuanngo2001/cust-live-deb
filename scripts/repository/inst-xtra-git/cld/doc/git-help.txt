@@ -3,4 +3,15 @@
 
   # List files that will be deleted.
   git ls-files --deleted
-    
+  
+  # Commit modified files.
+  git ls-files --modified -z | xargs -r -0 git commit -m 'Note: commit modified files.'
+  
+  # Commit new files.
+  git ls-files --others -z | xargs -r -0 git add; git commit -m 're-use-x: commit new files.'
+
+  # Combine commits. Commit deletes first because a deleted file is a modified file too.  
+  git ls-files --deleted -z | xargs -r -0 git rm && git commit -m 'Note: commit deleted files.' || true
+  git ls-files --modified -z | xargs -r -0 git commit -m 'Note: commit changed files.'
+  git ls-files --others -z | xargs -r -0 git add && git commit -m 'Note: commit new files.' || true  
+  
