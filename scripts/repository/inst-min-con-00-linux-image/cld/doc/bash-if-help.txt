@@ -3,3 +3,8 @@
     echo "ERROR: $(basename $0): No argument. Aborted!"
     exit 1;
   fi
+  
+  # If condition with pipes.
+  if ! echo 'someString' | grep -qF 'notFound'; then
+    echo 'Show negation: string not found.'
+  fi  
