@@ -1,5 +1,8 @@
-  # Get Zfs version.
+  # Get ZFS version.
   modinfo zfs | grep ^version
+
+  # Upgrade ZFS version.
+  zpool upgrade -a
   
   # Import all existing know zfs partitions.
   zpool import -a
@@ -11,30 +14,31 @@
   zpool status -v | grep 'pool:'
   zpool scrub <pool_name>
   
-# Symptom:
-  ~>zpool import -a
-  cannot import 'poolname': I/O error
-    Destroy and re-create the pool from
-    a backup source.
-  ------------------------------------  
-  ~>zpool import -F
-      pool: poolname
-       id: 13185988754217356698
-    state: DEGRADED
-   status: One or more devices contains corrupted data.
-   action: The pool can be imported despite missing or damaged devices.  The
-    fault tolerance of the pool may be compromised if imported.
-     see: http://zfsonlinux.org/msg/ZFS-8000-4J
-   config:
-
-    poolname                             DEGRADED
-      mirror-0                            DEGRADED
-        4123668411235123049               FAULTED  corrupted data
-        ata-ST8000AS0002-2NA17G_K2239JTL  ONLINE
-
-# Solution:
-  ~>zpool import -FfmX poolname
-# Clean up:
-  ~>zpool upgrade -a
-  ~>zpool scrub poolname
-# Replace the faulty drive:
+	# Symptom:
+	  ~>zpool import -a
+	  cannot import 'poolname': I/O error
+	    Destroy and re-create the pool from
+	    a backup source.
+	  ------------------------------------  
+	  ~>zpool import -F
+	      pool: poolname
+	       id: 13185988754217356698
+	    state: DEGRADED
+	   status: One or more devices contains corrupted data.
+	   action: The pool can be imported despite missing or damaged devices.  The
+	    fault tolerance of the pool may be compromised if imported.
+	     see: http://zfsonlinux.org/msg/ZFS-8000-4J
+	   config:
+	
+	    poolname                             DEGRADED
+	      mirror-0                            DEGRADED
+	        4123668411235123049               FAULTED  corrupted data
+	        ata-ST8000AS0002-2NA17G_K2239JTL  ONLINE
+	
+		# Solution:
+			  ~>zpool import -FfmX poolname
+			  ~>zpool clear poolname
+			  ~>zpool offline poolname faultyDriveName
+			  ~># Physically remove the disk.
+			  ~># Add new disk.
+			  ~>zpool attach poolname faultyDriveName /dev/sdX
