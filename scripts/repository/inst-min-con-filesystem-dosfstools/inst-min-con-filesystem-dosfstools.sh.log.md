@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-filesystem-dosfstools.sh ...
   * After this operation, 241 kB of additional disk space will be used.
   * Install dosfstools to read and write on FAT32.
-  * Disk size = 1093560K. Space Used = 356K.
+  * Disk size = 1203860K. Space Used = 356K.
   * The following NEW packages will be installed:
   ```bash
   dosfstools
