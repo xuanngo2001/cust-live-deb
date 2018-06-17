@@ -5,7 +5,13 @@ set -e
 #               - Add calendar if screen height > 1000 px.
 # Note: Temporary conkyrc needs a newline at the end of file because of sed.
 
-#---- CPU: Adjust the number of CPUs. ----# 
+#---- BATTERY: Add battery if exists. ----#
+  ### BATTERY
+  if [ -L /sys/class/power_supply/BAT0 ]; then
+    sed -i --follow-symlinks 's/### BATTERY/Battery: ${battery_time} : ${color Green}${battery_short} ${battery_bar}/' ${HOME}/.conkyrc
+  fi
+  
+#---- CPU: Adjust the number of CPUs. ----#
 	### Get the number of cpu.
 	CPU_NUM=$(grep -c ^processor /proc/cpuinfo)
 	
