@@ -59,7 +59,7 @@ case "${action}" in
       printf "    %-15s %-43s [%s]\n" 'app'               '=> ./cld/app'
       printf "    %-15s %-43s [%s]\n" 'jwmrc'             '=> ./cld/app/jwm/jwmrc'                    'JWM configuration files'
       printf "    %-15s %-43s [%s]\n" 'jwm-bootstrap'     '=> ./cld/app/jwm/bootstrap'                'Scripts executed after JWM started'
-      printf "    %-15s %-43s [%s]\n" 'bashrc'            '=> ./cld/bashrc.d'                         '*.sh will be exported'
+      printf "    %-15s %-43s [%s]\n" 'bashrc'            '=> ./cld/bashrc.d'                         '*.sh will be sourced'
       printf "    %-15s %-43s [%s]\n" 'after-boot'        '=> ./cld/systemd/runlevel/after-boot'      '*.sh will be executed after boot'
       printf "    %-15s %-43s [%s]\n" 'before-shutdown'   '=> ./cld/systemd/runlevel/before-shutdown' '*.sh will be executed before shutdown/reboot/restart'
       exit 1;
