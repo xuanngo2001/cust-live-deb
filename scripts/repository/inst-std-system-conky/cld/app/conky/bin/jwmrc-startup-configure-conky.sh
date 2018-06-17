@@ -8,7 +8,7 @@ set -e
 #---- BATTERY: Add battery if exists. ----#
   ### BATTERY
   if [ -L /sys/class/power_supply/BAT0 ]; then
-    sed -i --follow-symlinks 's/### BATTERY/Battery: ${battery_time} : ${color Green}${battery_short} ${battery_bar}/' ${HOME}/.conkyrc
+    sed -i --follow-symlinks 's/### BATTERY/Battery ${battery_time} ${color Green}${battery_short} ${battery_bar}/' ${HOME}/.conkyrc
   fi
   
 #---- CPU: Adjust the number of CPUs. ----#
