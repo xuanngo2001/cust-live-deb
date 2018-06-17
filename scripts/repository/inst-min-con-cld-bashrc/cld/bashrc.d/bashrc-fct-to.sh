@@ -8,16 +8,17 @@ function to()
   # Error handling.
     if [ ! -L "${destination}" ]; then
       echo "Error: ${destination} is not a symbolic link. Aborted!"
+      return 1;
+    fi
+    
+    destination=$(readlink -ev "${destination}")
+    
+  # Go to full path.
+    if [ -d "${destination}" ]; then
+      cd "${destination}"
     else
-    
-      destination=$(readlink -ev "${destination}")
-    
-      # Go to full path  
-        if [ -d "${destination}" ]; then
-          cd "${destination}"
-        else
-          echo "Error: ${destination} is not a directory. Aborted!"
-        fi
+      echo "Error: ${destination} is not a directory. Aborted!"
+      return 1;
     fi
 }  
 export -f to
