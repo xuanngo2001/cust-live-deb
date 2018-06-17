@@ -1,10 +1,32 @@
   # If no argument.
-  if [ $# -eq 0 ]; then
-    echo "ERROR: $(basename $0): No argument. Aborted!"
-    exit 1;
-  fi
+	  if [ $# -eq 0 ]; then
+	    echo "ERROR: $(basename $0): No argument. Aborted!"
+	    exit 1;
+	  fi
   
   # If condition with pipes.
-  if ! echo 'someString' | grep -qF 'notFound'; then
-    echo 'Show negation: string not found.'
-  fi  
+	  if ! echo 'someString' | grep -qF 'notFound'; then
+	    echo 'Show negation: string not found.'
+	  fi
+  
+  # If test conditions.
+		-b filename - Block special file
+		-c filename - Special character file
+		-d directoryname - Check for directory existence
+		-e filename - Check for file existence, regardless of type (node, directory, socket, etc.)
+		-f filename - Check for regular file existence not a directory
+		-G filename - Check if file exists and is owned by effective group ID.
+		-g filename - true if file exists and is set-group-id.
+		-k filename - Sticky bit
+		-L filename - Symbolic link
+		-n string is not null
+		-O filename - True if file exists and is owned by the effective user id.
+		-r filename - Check if file is a readable
+		-S filename - Check if file is socket
+		-s filename - Check if file is nonzero size
+		-u filename - Check if file set-user-id bit is set
+		-w filename - Check if file is writable
+		-x filename - Check if file is executable
+		
+		
+		  
