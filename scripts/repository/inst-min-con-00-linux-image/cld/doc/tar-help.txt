@@ -1,6 +1,6 @@
   # Un/Compress tar.
   tar -cf archive.tar /path/to/dir/ file1 file2
-  tar -xf archive.tar
+  tar -xf archive.tar -C /target/destination
   
   # Un/Decompress gzip file.
   tar -czvf archive.tar.gz /path/to/dir/ file1 file2
