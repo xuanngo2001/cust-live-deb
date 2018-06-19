@@ -1,5 +1,5 @@
   # Encrypt both file data and headers, i.e. [rar -l archive.rar] will not show filenames.
   rar a -hp archive.rar some_files...
 
-  # Compress with 2% recovery data and create 1 MB volume size.
+  # Compress with 2% recovery data and create 1 MB volume size.(e.g. 512000k = 500MB)
   rar a -rr2% -v1024k archive.rar some_files...
