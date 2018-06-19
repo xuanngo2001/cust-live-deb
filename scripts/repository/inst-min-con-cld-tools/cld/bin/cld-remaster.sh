@@ -3,6 +3,7 @@
 #   * All size values are in kilobytes.
 #   * Avoid using other applications than GNU coreutils applications: http://en.wikipedia.org/wiki/GNU_Core_Utilities.
 #   * Need: grep, xargs
+#  Note: from ../inst-min-con-cld-tools/cld/bin
 
 WORKING_DIR=$(readlink -ev $1)
 

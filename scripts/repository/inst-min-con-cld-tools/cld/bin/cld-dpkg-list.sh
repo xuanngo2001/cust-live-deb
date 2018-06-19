@@ -3,6 +3,7 @@ set -e
 # Description: List Debian packages with its version number.
 #               Used in .../cust-live-deb/scripts/main.sh
 # Output: Return values can be feed to packages.list
+#  Note: from ../inst-min-con-cld-tools/cld/bin
 
 ACTION=$1
 ACTION=$(echo "${ACTION}" | tr '[[:upper:]]' '[[:lower:]]')

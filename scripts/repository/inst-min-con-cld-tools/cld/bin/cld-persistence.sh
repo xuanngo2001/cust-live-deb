@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 # Description: Create a persistent image file.
+#  Note: from ../inst-min-con-cld-tools/cld/bin
+
 PERSISTENCE_IMG_SIZE=$1
 
 # Error handling

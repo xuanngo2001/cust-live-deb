@@ -1,5 +1,6 @@
 #!/bin/bash
 ### Description: List all modules with their names.
+#  Note: from ../inst-min-con-cld-tools/cld/bin
  
 # list modules | remove spaces | take 1st column | exclude 1st line, Module
 for module in $(lsmod | tr -s ' ' | cut -d ' ' -f1 | grep -v ^Module)

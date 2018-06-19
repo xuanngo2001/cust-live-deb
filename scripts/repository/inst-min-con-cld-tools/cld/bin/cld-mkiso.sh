@@ -1,6 +1,7 @@
 #!/bin/bash
 # Description: Create an iso-hybrid.
 # Requirements:
+#  Note: from ../inst-min-con-cld-tools/cld/bin
 
 WORKING_DIR=$(readlink -ev $1)
 

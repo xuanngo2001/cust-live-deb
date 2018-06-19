@@ -2,6 +2,7 @@
 set -e
 # Description: List dependent package.
 # Why?: Aptly doesn't automatically get all dependent packages, especially cross component.
+#  Note: from ../inst-min-con-cld-tools/cld/bin
 
 PACKAGE_NAME=$1
 

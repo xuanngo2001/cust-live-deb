@@ -3,6 +3,7 @@ set -e
 # Description: Sum up bandwidth usage.
 # Return: interface|dateTime|receiveBytes|transmittedBytes
 #   Doc: cat /proc/net/dev
+#  Note: from ../inst-min-con-cld-tools/cld/bin
 
 # Error handling.
 if [ $# -lt 1 ]; then

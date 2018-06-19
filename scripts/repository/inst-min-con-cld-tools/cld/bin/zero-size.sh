@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 # Description: Turn file size to 0.
+#  Note: from ../inst-min-con-cld-tools/cld/bin
 
 # Show which files will be zeroed.
   for file in "$@"

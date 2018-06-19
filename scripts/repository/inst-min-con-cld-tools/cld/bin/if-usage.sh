@@ -3,6 +3,8 @@ set -e
 # Description: Get bandwidth usage.
 # Return: interface|dateTime|receiveBytes|transmittedBytes
 #   Doc: cat /proc/net/dev
+#  Note: from ../inst-min-con-cld-tools/cld/bin
+
 DATE_STRING=$(date +"%Y-%m-%d.%0k.%M.%S")
 
 IF_BASE_DIR=$(readlink -ev "/sys/class/net/")

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # Description: List filenames with trailing spaces. This is to help renaming process.
-
+#  Note: from ../inst-min-con-cld-tools/cld/bin
 
 ### Find the longest filename.
 MAX_LENGTH=0

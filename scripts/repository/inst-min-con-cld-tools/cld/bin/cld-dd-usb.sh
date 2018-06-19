@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 # Description: Transfer ISOHYBRID to USB.
+#  Note: from ../inst-min-con-cld-tools/cld/bin
 
 ####################################
 #  Errors handling: Commands not found
