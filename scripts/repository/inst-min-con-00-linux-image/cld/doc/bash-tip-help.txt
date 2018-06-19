@@ -1,8 +1,23 @@
-  # Get executing directory.
-	executing_path=$(dirname "$0")                    # relative
-	executing_path=$( cd "${executing_path}" && pwd ) # absolutized and normalized
-	if [ -z "${executing_path}" ]; then
-	  # error; for some reason, the path is not accessible
-	  # to the script (e.g. permissions re-evaled after suid)
-	  return 1  # fail
-	fi
+  # Get current executing directory path. Only use it as shell function. Otherwise, it will not work.
+    function get_executing_path()
+    {
+	    local executing_path=$(dirname "$0")              # relative
+	    executing_path=$( cd "${executing_path}" && pwd ) # absolutized and normalized
+	    if [ -z "${executing_path}" ]; then
+	      return 1  # fail
+	    fi
+    }
+    export -f get_executing_path
+    
+  # Timestamp.
+    DATE_STRING=$(date +"%Y-%m-%d.%0k.%M.%S")
+  
+  # dirname: Always double quotes. Otherwise, issue with path with spaces.
+    echo "$(dirname "${line_with_spaces}")"
+  
+  # Increment variable in the same script.
+	  sata_port=0
+	  sata_port=$((sata_port+1))
+  
+  # Increment variable inside loop.
+	  let index=index+1
