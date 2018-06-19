@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
-# Description: Create CLD directory structure
+# Description: Create CLD directory structure.
+#   Note: from inst-min-con-cld-bin/cld/bin
 
 action=$1
 
