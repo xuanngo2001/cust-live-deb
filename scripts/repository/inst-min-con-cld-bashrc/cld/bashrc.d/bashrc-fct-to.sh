@@ -19,6 +19,7 @@ function to()
       return 1;
     fi
     
+  # Get full path.
     destination=$(readlink -ev "${destination}")
     
   # Go to full path.
