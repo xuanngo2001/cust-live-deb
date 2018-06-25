@@ -15,7 +15,7 @@ chmod +x ./cld/systemd/*.sh
 # Copy to /usr/local
 yes | cp -av ./cld/  /usr/local
 
-#Register unit files
+# Register unit files
 yes | cp -av ./cld/systemd/*.service /etc/systemd/system/
 
 systemctl enable "${SERVICE_NAME}"
