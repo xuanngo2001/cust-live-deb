@@ -32,7 +32,7 @@ yes | cp -av ./cld  /usr/local
 # Add useful mpv keybindings settings.
 MPV_CONFIG_DIR=${HOME}/.config/mpv/
 mkdir -p ${MPV_CONFIG_DIR} 
-cat mpv-input.conf >> ${MPV_CONFIG_DIR}/input.conf
+cat mpv.conf >> ${MPV_CONFIG_DIR}/mpv.conf
 
 # Log
 echo "${GV_LOG} * Install Media Player: $(mpv --version | head -n 1 | sed 's/(.*//')."
