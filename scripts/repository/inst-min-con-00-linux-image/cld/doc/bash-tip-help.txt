@@ -31,6 +31,6 @@
 		
 		# Get total elapsed time.
 		T="$(($(date +%s)-T))"
-		printf "${DOMAIN_NAME}: Backup elapsed time: %02d:%02d:%02d:%02d [DD:HH:MM:SS]\n" "$((T/86400))" "$((T/3600%24))" "$((T/60%60))" "$((T%60))"
+		printf "Elapsed time: %02d:%02d:%02d:%02d [DD:HH:MM:SS]\n" "$((T/86400))" "$((T/3600%24))" "$((T/60%60))" "$((T%60))"
 		
 		
