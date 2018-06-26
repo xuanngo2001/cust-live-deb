@@ -10,11 +10,7 @@ echo "$0: $(date)" >> /usr/local/cld/log/boot-sequence.log
 
 log_file="/usr/local/cld/log/$(basename "$0").log"
 
-# Core CLD use only.
 scripts_dir=/usr/local/cld/systemd/runlevel/after-boot
 /usr/local/cld/bin/cld-run-scripts.sh "${scripts_dir}" 2>&1 | tee -a "${log_file}"
 
-# Users custom scripts. To prevent overwrite on upgrade. Used when doing custom CLD.
-scripts_dir=/usr/local/cld/systemd/user/after-boot
-/usr/local/cld/bin/cld-run-scripts.sh "${scripts_dir}" 2>&1 | tee -a "${log_file}"
 
