@@ -2,8 +2,6 @@
 set -e
 echo "$0: $(date)" >> /usr/local/cld/log/boot-sequence.log
 # Description: After boot, run the following scripts:
-#   Note: Internal use only. If you want to add you own custom scripts, add
-#           your scripts in /root/cld/systemd/user/after-boot/
 # Reference: 
 #   -http://unix.stackexchange.com/a/41756
 #   -https://wiki.archlinux.org/index.php/systemd
