@@ -19,6 +19,38 @@ http://unix.stackexchange.com/questions/284598/systemd-how-to-execute-script-at-
     
     # List of jobs running
     systemctl list-jobs
+
+# Test
+
+      #!/bin/bash
+      set -e
+      # Description: systemd-test-on-shutdown.sh
+      DATE_STRING=$(date +"%Y-%m-%d.%0k.%M.%S")
+      echo "$0: ${DATE_STRING}" > /root/${DATE_STRING}.log
+
+    #---------------------------------------------------
+    
+      #!/bin/bash
+      set -e
+      
+      # Set permission.
+      SERVICE_NAME=cld-systemd-start-stop.service
+      chmod 664 "${SERVICE_NAME}"
+      
+      # Register unit files
+      yes | cp -av *.service /etc/systemd/system/
+      
+      systemctl enable "${SERVICE_NAME}"
+      
+      journalctl --no-pager | grep cld
+      
+      systemctl list-jobs || true
+      
+      systemctl cat "${SERVICE_NAME}"
+      
+      cp -av systemd-test-on-shutdown.sh runlevel/before-shutdown/
+    
+
     
 # Service file
 Shutdown scripts are not ran if you use combinations of:
@@ -26,3 +58,4 @@ Shutdown scripts are not ran if you use combinations of:
 * Type=forking, PIDFile=/some/path/file.pid
 
 Only **Type=simple** works.
+
