@@ -1,16 +1,16 @@
   # Crontab will NOT add new entry, only overwrite the main configuration file.
   
   # Run script.sh at every 5th minute.
-  echo "*/5 * * * * script.sh" | crontab
+    echo "*/5 * * * * script.sh" | crontab
   
   # Run script.sh hourly.
-  echo "0 * * * * script.sh" | crontab
-  echo "@hourly script.sh" | crontab
+	  echo "0 * * * * script.sh" | crontab
+	  echo "@hourly script.sh" | crontab
   
   # List crontab job.
-  crontab -l
+	  crontab -l
   
   # Run script.sh at every 3rd minute.
-  echo "*/3 * * * * script.sh" | crontab
-  
+	  echo "*/3 * * * * script.sh" | crontab
+	  
   

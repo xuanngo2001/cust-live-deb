@@ -1,18 +1,19 @@
   # Show all devices with Kernel module loaded.
   #   If device is not shown, then device is not connected/plugged.
-  lspci -nnk
-  lspci -v
+	  lspci -nnk
+	  lspci -v
   
   # Show all usb devices.
-  lsusb
+    lsusb
 
   # Load module.
-  modprobe -v ath9k
+    modprobe -v ath9k
   
   # List loaded modules
-  lsmod
+    lsmod
   
-  modinfo ath9k
+    modinfo ath9k
   
   # Disable N speed.
-  echo 'options ath9k 11n_disable=1' > /etc/modprobe.d/ath9k.conf
+    echo 'options ath9k 11n_disable=1' > /etc/modprobe.d/ath9k.conf
+    

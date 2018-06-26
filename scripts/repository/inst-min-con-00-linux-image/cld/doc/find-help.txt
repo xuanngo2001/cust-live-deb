@@ -1,14 +1,15 @@
   # A single sed command for each file is executed.
-  find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} \;
+    find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} \;
   
   # As many files as possible are given as parameters to sed at once.
-  find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} +
+    find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} +
 
   # Find and execute multiple commands.
-  find /usr/local/bin/ -name '*.sh' -type f -execdir echo "Executing {}" \; -execdir chmod +x {} \; 
+    find /usr/local/bin/ -name '*.sh' -type f -execdir echo "Executing {}" \; -execdir chmod +x {} \; 
   
   # Find multiple patterns.
-  find . -type f -o -iname '*.asf' -o -iname '*.avi'
+    find . -type f -o -iname '*.asf' -o -iname '*.avi'
   
   # Find files with size 0
-  find . -type f -size 0
+    find . -type f -size 0
+    

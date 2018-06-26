@@ -1,16 +1,16 @@
   # While loop.
-  while IFS='' read -r line || [[ -n "${line}" ]]; do
-    echo "Do something ${line}"
-  done < <( cat somefile.txt | grep -v '^#' | mawk NF )
+	  while IFS='' read -r line || [[ -n "${line}" ]]; do
+	    echo "Do something ${line}"
+	  done < <( cat somefile.txt | grep -v '^#' | mawk NF )
 
   # Loop through array elements.
-  animalNames=( cat dog fish )
-  animalNames+=( bird )
-  for animal in "${animalNames[@]}"; do
-    echo "********  ${animal}  ********"
-  done
+	  animalNames=( cat dog fish )
+	  animalNames+=( bird )
+	  for animal in "${animalNames[@]}"; do
+	    echo "********  ${animal}  ********"
+	  done
 
   # Loop through arguments.
-  for arg in "$@}"; do
-    echo "${arg}"
-  done
+	  for arg in "$@}"; do
+	    echo "${arg}"
+	  done
