@@ -2,7 +2,7 @@
   * After this operation, 293 MB of additional disk space will be used.
   * Install openjdk version "1.8.0_151".
   * To install JAVA binary: https://wiki.debian.org/JavaPackage.
-  * Disk size = 1913720K. Space Used = 357032K.
+  * Disk size = 1913696K. Space Used = 357032K.
   * The following NEW packages will be installed:
   ```bash
   adwaita-icon-theme ca-certificates-java dconf-gsettings-backend
