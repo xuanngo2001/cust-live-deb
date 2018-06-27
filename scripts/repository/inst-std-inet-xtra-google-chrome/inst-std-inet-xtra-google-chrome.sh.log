@@ -13,9 +13,9 @@ Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdbus
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdbusmenu-gtk4 amd64 12.10.2-2 [90.8 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libindicator7 amd64 0.5.0-3+b1 [52.9 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libappindicator1 amd64 0.4.92-4 [52.5 kB]
-Fetched 300 kB in 0s (9,573 kB/s)
+Fetched 300 kB in 0s (17.2 MB/s)
 Selecting previously unselected package libdbusmenu-glib4:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38939 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41730 files and directories currently installed.)
 Preparing to unpack .../libdbusmenu-glib4_12.10.2-2_amd64.deb ...
 Unpacking libdbusmenu-glib4:amd64 (12.10.2-2) ...
 Selecting previously unselected package libdbusmenu-gtk4:amd64.
@@ -65,9 +65,9 @@ The following NEW packages will be installed:
 Need to get 71.1 kB of archives.
 After this operation, 313 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xdg-utils all 1.1.1-1 [71.1 kB]
-Fetched 71.1 kB in 0s (3,645 kB/s)
+Fetched 71.1 kB in 0s (3,617 kB/s)
 Selecting previously unselected package xdg-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38973 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41764 files and directories currently installed.)
 Preparing to unpack .../xdg-utils_1.1.1-1_all.deb ...
 Unpacking xdg-utils (1.1.1-1) ...
 Setting up xdg-utils (1.1.1-1) ...
@@ -84,9 +84,9 @@ After this operation, 7,679 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gconf2-common all 3.2.6-4 [1,040 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgconf-2-4 amd64 3.2.6-4+b1 [427 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gconf-service amd64 3.2.6-4+b1 [415 kB]
-Fetched 1,881 kB in 0s (23.0 MB/s)
+Fetched 1,881 kB in 0s (30.5 MB/s)
 Selecting previously unselected package gconf2-common.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38997 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41788 files and directories currently installed.)
 Preparing to unpack .../gconf2-common_3.2.6-4_all.deb ...
 Unpacking gconf2-common (3.2.6-4) ...
 Selecting previously unselected package libgconf-2-4:amd64.
@@ -110,9 +110,18 @@ libgconf-2-4 set to manually installed.
 Reading package lists...
 Building dependency tree...
 Reading state information...
-libxss1 is already the newest version (1:1.2.2-1).
-libxss1 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 31 not upgraded.
+The following NEW packages will be installed:
+  libxss1
+0 upgraded, 1 newly installed, 0 to remove and 31 not upgraded.
+Need to get 17.5 kB of archives.
+After this operation, 57.3 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxss1 amd64 1:1.2.2-1 [17.5 kB]
+Fetched 17.5 kB in 0s (909 kB/s)
+Selecting previously unselected package libxss1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41930 files and directories currently installed.)
+Preparing to unpack .../libxss1_1%3a1.2.2-1_amd64.deb ...
+Unpacking libxss1:amd64 (1:1.2.2-1) ...
+Setting up libxss1:amd64 (1:1.2.2-1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -144,9 +153,9 @@ Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dh-pyth
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python3 amd64 3.5.3-1 [21.6 kB]
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 distro-info-data all 0.36 [5,810 B]
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 lsb-release all 9.20161125 [27.1 kB]
-Fetched 4,973 kB in 0s (12.3 MB/s)
+Fetched 4,973 kB in 0s (26.0 MB/s)
 Selecting previously unselected package libpython3.5-minimal:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39139 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41936 files and directories currently installed.)
 Preparing to unpack .../0-libpython3.5-minimal_3.5.3-1_amd64.deb ...
 Unpacking libpython3.5-minimal:amd64 (3.5.3-1) ...
 Selecting previously unselected package python3.5-minimal.
@@ -177,7 +186,7 @@ Setting up libpython3.5-minimal:amd64 (3.5.3-1) ...
 Setting up python3.5-minimal (3.5.3-1) ...
 Setting up python3-minimal (3.5.3-1) ...
 Selecting previously unselected package python3.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40081 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 42878 files and directories currently installed.)
 Preparing to unpack .../python3_3.5.3-1_amd64.deb ...
 Unpacking python3 (3.5.3-1) ...
 Selecting previously unselected package distro-info-data.
@@ -209,9 +218,9 @@ The following NEW packages will be installed:
 Need to get 52.1 MB of archives.
 After this operation, 188 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 65.0.3325.181-1 [52.1 MB]
-Fetched 52.1 MB in 1s (40.7 MB/s)
+Fetched 52.1 MB in 1s (48.3 MB/s)
 Selecting previously unselected package google-chrome-stable.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40116 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 42913 files and directories currently installed.)
 Preparing to unpack .../google-chrome-stable_65.0.3325.181-1_amd64.deb ...
 Unpacking google-chrome-stable (65.0.3325.181-1) ...
 Processing triggers for mime-support (3.60) ...
@@ -225,18 +234,18 @@ Processing triggers for menu (2.1.47+b1) ...
 './cld/bashrc.d/bashrc-alias-google-chrome.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-google-chrome.sh'
 gpg: directory '/root/.gnupg' created
 gpg: can't open '/usr/share/gnupg/dirmngr-conf.skel': No such file or directory
---2018-06-27 19:41:10--  https://dl.google.com/linux/linux_signing_key.pub
-Resolving dl.google.com (dl.google.com)... gpg: new configuration file '/root/.gnupg/gpg.conf' created
+--2018-06-27 20:15:56--  https://dl.google.com/linux/linux_signing_key.pub
+gpg: new configuration file '/root/.gnupg/gpg.conf' created
 gpg: keybox '/root/.gnupg/trustedkeys.gpg' created
-172.217.13.142, 2607:f8b0:4020:805::200e
+Resolving dl.google.com (dl.google.com)... 172.217.13.142, 2607:f8b0:4020:805::200e
 Connecting to dl.google.com (dl.google.com)|172.217.13.142|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 8038 (7.8K) [application/octet-stream]
 Saving to: ‘STDOUT’
 
-     0K .......                                               100% 3.21M=0.002s
+     0K .......                                               100% 1.84M=0.004s
 
-2018-06-27 19:41:10 (3.21 MB/s) - written to stdout [8038/8038]
+2018-06-27 20:15:56 (1.84 MB/s) - written to stdout [8038/8038]
 
 gpg: /root/.gnupg/trustdb.gpg: trustdb created
 gpg: key A040830F7FAC5991: public key "Google, Inc. Linux Package Signing Key <linux-packages-keymaster@google.com>" imported
@@ -250,4 +259,4 @@ CLDS: * Insert Google Chrome in Internet menu.
 CLDS: * Add google chrome alias, chrome.
 CLDS: * Set default browser: update-alternatives --config x-www-browser.
 CLDS: * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-CLDS: * Disk size = 2791724K. Space Used = 276588K.
+CLDS: * Disk size = 2934284K. Space Used = 276688K.

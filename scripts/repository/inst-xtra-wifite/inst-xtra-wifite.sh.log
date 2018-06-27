@@ -5,20 +5,20 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libc-ares2 libgeoip1 libjs-openlayers libpcap0.8 libsbc1 libsmi2ldbl
-  libssh-gcrypt-4 libwireshark-data libwireshark8 libwiretap6 libwscodecs1
-  libwsutil7 wireshark-common
+  libc-ares2 libgeoip1 libjs-openlayers libpcap0.8 libsmi2ldbl libssh-gcrypt-4
+  libwireshark-data libwireshark8 libwiretap6 libwscodecs1 libwsutil7
+  wireshark-common
 Suggested packages:
   geoip-bin snmp-mibs-downloader wireshark-doc
 Recommended packages:
   geoip-database javascript-common geoip-database-extra
 The following NEW packages will be installed:
-  libc-ares2 libgeoip1 libjs-openlayers libpcap0.8 libsbc1 libsmi2ldbl
-  libssh-gcrypt-4 libwireshark-data libwireshark8 libwiretap6 libwscodecs1
-  libwsutil7 tshark wireshark-common
-0 upgraded, 14 newly installed, 0 to remove and 31 not upgraded.
+  libc-ares2 libgeoip1 libjs-openlayers libpcap0.8 libsmi2ldbl libssh-gcrypt-4
+  libwireshark-data libwireshark8 libwiretap6 libwscodecs1 libwsutil7 tshark
+  wireshark-common
+0 upgraded, 13 newly installed, 0 to remove and 31 not upgraded.
 Need to get 16.0 MB of archives.
-After this operation, 102 MB of additional disk space will be used.
+After this operation, 101 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgeoip1 amd64 1.6.9-4 [90.5 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpcap0.8 amd64 1.8.1-3 [138 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsmi2ldbl amd64 0.4.8+dfsg2-15 [122 kB]
@@ -28,15 +28,14 @@ Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwire
 Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc-ares2 amd64 1.12.0-1+deb9u1 [81.6 kB]
 Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwsutil7 amd64 2.2.6+g32dac6a-2+deb9u2 [107 kB]
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwiretap6 amd64 2.2.6+g32dac6a-2+deb9u2 [211 kB]
-Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsbc1 amd64 1.3-2 [33.4 kB]
-Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwscodecs1 amd64 2.2.6+g32dac6a-2+deb9u2 [63.0 kB]
-Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwireshark8 amd64 2.2.6+g32dac6a-2+deb9u2 [12.9 MB]
-Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wireshark-common amd64 2.2.6+g32dac6a-2+deb9u2 [248 kB]
-Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 tshark amd64 2.2.6+g32dac6a-2+deb9u2 [172 kB]
+Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwscodecs1 amd64 2.2.6+g32dac6a-2+deb9u2 [63.0 kB]
+Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwireshark8 amd64 2.2.6+g32dac6a-2+deb9u2 [12.9 MB]
+Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wireshark-common amd64 2.2.6+g32dac6a-2+deb9u2 [248 kB]
+Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 tshark amd64 2.2.6+g32dac6a-2+deb9u2 [172 kB]
 Preconfiguring packages ...
-Fetched 16.0 MB in 0s (37.7 MB/s)
+Fetched 16.0 MB in 0s (40.0 MB/s)
 Selecting previously unselected package libgeoip1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55447 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55876 files and directories currently installed.)
 Preparing to unpack .../00-libgeoip1_1.6.9-4_amd64.deb ...
 Unpacking libgeoip1:amd64 (1.6.9-4) ...
 Selecting previously unselected package libpcap0.8:amd64.
@@ -63,22 +62,18 @@ Unpacking libwsutil7:amd64 (2.2.6+g32dac6a-2+deb9u2) ...
 Selecting previously unselected package libwiretap6:amd64.
 Preparing to unpack .../08-libwiretap6_2.2.6+g32dac6a-2+deb9u2_amd64.deb ...
 Unpacking libwiretap6:amd64 (2.2.6+g32dac6a-2+deb9u2) ...
-Selecting previously unselected package libsbc1:amd64.
-Preparing to unpack .../09-libsbc1_1.3-2_amd64.deb ...
-Unpacking libsbc1:amd64 (1.3-2) ...
 Selecting previously unselected package libwscodecs1:amd64.
-Preparing to unpack .../10-libwscodecs1_2.2.6+g32dac6a-2+deb9u2_amd64.deb ...
+Preparing to unpack .../09-libwscodecs1_2.2.6+g32dac6a-2+deb9u2_amd64.deb ...
 Unpacking libwscodecs1:amd64 (2.2.6+g32dac6a-2+deb9u2) ...
 Selecting previously unselected package libwireshark8:amd64.
-Preparing to unpack .../11-libwireshark8_2.2.6+g32dac6a-2+deb9u2_amd64.deb ...
+Preparing to unpack .../10-libwireshark8_2.2.6+g32dac6a-2+deb9u2_amd64.deb ...
 Unpacking libwireshark8:amd64 (2.2.6+g32dac6a-2+deb9u2) ...
 Selecting previously unselected package wireshark-common.
-Preparing to unpack .../12-wireshark-common_2.2.6+g32dac6a-2+deb9u2_amd64.deb ...
+Preparing to unpack .../11-wireshark-common_2.2.6+g32dac6a-2+deb9u2_amd64.deb ...
 Unpacking wireshark-common (2.2.6+g32dac6a-2+deb9u2) ...
 Selecting previously unselected package tshark.
-Preparing to unpack .../13-tshark_2.2.6+g32dac6a-2+deb9u2_amd64.deb ...
+Preparing to unpack .../12-tshark_2.2.6+g32dac6a-2+deb9u2_amd64.deb ...
 Unpacking tshark (2.2.6+g32dac6a-2+deb9u2) ...
-Setting up libsbc1:amd64 (1.3-2) ...
 Setting up libjs-openlayers (2.13.1+ds2-4) ...
 Setting up libssh-gcrypt-4:amd64 (0.7.3-2) ...
 Setting up libgeoip1:amd64 (1.6.9-4) ...
@@ -114,9 +109,9 @@ Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 usbutil
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 rfkill amd64 0.5-1+b1 [8,284 B]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 aircrack-ng amd64 1:1.2-0~rc4-2 [2,717 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 reaver amd64 1.4-2+b2 [127 kB]
-Fetched 3,251 kB in 0s (12.6 MB/s)
+Fetched 3,251 kB in 0s (17.9 MB/s)
 Selecting previously unselected package iw.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56010 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56432 files and directories currently installed.)
 Preparing to unpack .../0-iw_4.9-0.1_amd64.deb ...
 Unpacking iw (4.9-0.1) ...
 Selecting previously unselected package ethtool.
@@ -141,4 +136,4 @@ Setting up ethtool (1:4.8-1+b1) ...
 Setting up rfkill (0.5-1+b1) ...
 Setting up aircrack-ng (1:1.2-0~rc4-2) ...
 CLDS: * Install wifite.
-CLDS: * Disk size = 3880164K. Space Used = 126080K.
+CLDS: * Disk size = 3959880K. Space Used = 125924K.
