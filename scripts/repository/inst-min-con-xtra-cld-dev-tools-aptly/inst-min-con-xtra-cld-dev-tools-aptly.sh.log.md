@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-con-xtra-cld-dev-tools-aptly.sh ...
   * After this operation, 1,110 kB of additional disk space will be used.
-  * After this operation, 22.5 MB of additional disk space will be used.
+  * After this operation, 23.2 MB of additional disk space will be used.
   * Add aptly nightly build repository.
-  * Install aptly version: 1.2.0 to create local debian repository.
+  * Install aptly version: 1.3.0 to create local debian repository.
   * Add xz-utils package because aptly snapshot merge needs it.
-  * Disk size = 1554220K. Space Used = 30080K.
+  * Disk size = 1555160K. Space Used = 30868K.
   * The following NEW packages will be installed:
   ```bash
   dirmngr

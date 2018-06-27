@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-win-01-wm-terminal-xfce.sh ...
   * Install terminal: xfce4-terminal.
-  * Disk size = 2111084K. Space Used = 8K.
+  * Disk size = 2112016K. Space Used = 12K.
