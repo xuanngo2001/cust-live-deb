@@ -3,7 +3,7 @@
 	  ( )     : Left, right audio channel.
 	  s       : Take screenshot.
   
-  # Play videos found: https://github.com/limelime/cust-live-deb/issues/268
+  # Find and play videos: https://github.com/limelime/cust-live-deb/issues/268
 	  mpv -playlist <(find "$PWD" -type f)
 	  # $PWD is required. Otherwise, it'll try to go relative to the file descriptor's location, eg: "/dev/fd/./path/to/video-file.avi", which would fail to open.  
   
@@ -15,3 +15,8 @@
    
   # Extract audio from video file at a specific time for a relative length.
     mpv videofile.avi -o audiofile10Seconds.mp3 --no-video --start=0 --length=10
+    
+  # Take screenshot from Webcam.
+    mpv av://v4l2:/dev/video0
+    
+    
