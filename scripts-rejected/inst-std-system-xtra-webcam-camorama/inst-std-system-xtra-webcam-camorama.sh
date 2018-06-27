@@ -19,3 +19,5 @@ sed -i "/Graphics\">/ r jwmrc-menus-graphics-camorama.xml" "${CLD_JWMRC_DIR}/jwm
 echo "${GV_LOG} * Install webcam: Camorama."
 echo "${GV_LOG} * Insert Camorama menu in Graphics."
 
+# REJECTED because you can take screenshot using MPV: mpv av://v4l2:/dev/video0
+#   Saved 14MB.
