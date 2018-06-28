@@ -13,6 +13,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install guvcview.
 apt-get -y install guvcview
 
+# Insert guvcview menu in Graphics
+sed -i "/Graphics\">/ r jwmrc-menus-graphics-guvcview.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 echo "${GV_LOG} * Install guvcview."
+echo "${GV_LOG} * Insert guvcview in Graphics menu."
