@@ -2,26 +2,24 @@ CLDS:>>>>>>>>> Running inst-xtra-virtualbox.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+libqt5opengl5 is already the newest version (5.7.1+dfsg-3+b1).
+libqt5opengl5 set to manually installed.
 Recommended packages:
   libsdl-ttf2.0-0 linux-headers-generic | linux-headers-generic-pae
   | linux-headers-686-pae | linux-headers-amd64 | linux-headers-2.6-686
   | linux-headers-2.6-amd64 | linux-headers linux-image gcc make
   | build-essential | dpkg-dev
 The following NEW packages will be installed:
-  libqt5opengl5 libqt5x11extras5 virtualbox-5.2
-0 upgraded, 3 newly installed, 0 to remove and 31 not upgraded.
-Need to get 68.2 MB of archives.
-After this operation, 168 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5opengl5 amd64 5.7.1+dfsg-3+b1 [154 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5x11extras5 amd64 5.7.1~20161021-2 [9,970 B]
-Get:3 http://localhost/aptly-repo/master_virtualbox-contrib stretch/contrib amd64 virtualbox-5.2 amd64 5.2.12-122591~Debian~stretch [68.0 MB]
+  libqt5x11extras5 virtualbox-5.2
+0 upgraded, 2 newly installed, 0 to remove and 31 not upgraded.
+Need to get 68.0 MB of archives.
+After this operation, 167 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5x11extras5 amd64 5.7.1~20161021-2 [9,970 B]
+Get:2 http://localhost/aptly-repo/master_virtualbox-contrib stretch/contrib amd64 virtualbox-5.2 amd64 5.2.12-122591~Debian~stretch [68.0 MB]
 Preconfiguring packages ...
-Fetched 68.2 MB in 1s (54.0 MB/s)
-Selecting previously unselected package libqt5opengl5:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69621 files and directories currently installed.)
-Preparing to unpack .../libqt5opengl5_5.7.1+dfsg-3+b1_amd64.deb ...
-Unpacking libqt5opengl5:amd64 (5.7.1+dfsg-3+b1) ...
+Fetched 68.0 MB in 1s (51.0 MB/s)
 Selecting previously unselected package libqt5x11extras5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 70257 files and directories currently installed.)
 Preparing to unpack .../libqt5x11extras5_5.7.1~20161021-2_amd64.deb ...
 Unpacking libqt5x11extras5:amd64 (5.7.1~20161021-2) ...
 Selecting previously unselected package virtualbox-5.2.
@@ -30,7 +28,6 @@ Unpacking virtualbox-5.2 (5.2.12-122591~Debian~stretch) ...
 Setting up libqt5x11extras5:amd64 (5.7.1~20161021-2) ...
 Processing triggers for mime-support (3.60) ...
 Processing triggers for desktop-file-utils (0.23-1) ...
-Setting up libqt5opengl5:amd64 (5.7.1+dfsg-3+b1) ...
 Processing triggers for libc-bin (2.24-11+deb9u1) ...
 Processing triggers for systemd (232-25+deb9u2) ...
 Processing triggers for shared-mime-info (1.8-1) ...
@@ -59,4 +56,4 @@ There were problems setting up VirtualBox.  To re-start the set-up process, run
   /sbin/vboxconfig
 as root.
 CLDS: * Install virtualbox.
-CLDS: * Disk size = 5272708K. Space Used = 224748K.
+CLDS: * Disk size = 5306252K. Space Used = 224032K.
