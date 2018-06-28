@@ -10,16 +10,12 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Explicitly download dependent packages
 #   apt-get install -d -y <your-package> 
 
-# Install guvcview.
-apt-get -y install guvcview
+# Install webcamoid.
+apt-get -y install webcamoid
 
-# Insert guvcview menu in Graphics
-sed -i "/Graphics\">/ r jwmrc-menus-graphics-guvcview.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
-echo "${GV_LOG} * Install guvcview."
-echo "${GV_LOG} * Insert guvcview in Graphics menu."
+echo "${GV_LOG} * Install webcamoid."
 
-# REJECTED because it crashes X server after 5 minutes of recording.
-#   Space Used = 6504K
+# Space Used = 119700K.
 
