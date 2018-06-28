@@ -16,3 +16,8 @@ apt-get -y install cheese
 
 # Log
 echo "${GV_LOG} * Install cheese."
+
+# REJECTED because you can't choose where to store recorded file.
+#   Cheese will add 57,396 KB whereas Guvcview will add 4,340 KB.
+
+
