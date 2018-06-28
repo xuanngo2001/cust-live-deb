@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-guvcview.sh ...
   * After this operation, 37.9 MB of additional disk space will be used.
   * Install guvcview.
-  * Disk size = 2354280K. Space Used = 49564K.
+  * Disk size = 2783548K. Space Used = 49552K.
   * The following NEW packages will be installed:
   ```bash
   guvcview libavcodec57 libavutil55 libcrystalhd3 libfdk-aac1 libgsl2 libgsm1
