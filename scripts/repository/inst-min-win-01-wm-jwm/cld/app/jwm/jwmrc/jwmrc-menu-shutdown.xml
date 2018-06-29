@@ -5,9 +5,12 @@
       <Exit icon="/usr/share/icons/gnome/32x32/actions/application-exit.png" label="JWM - Exit" confirm="true"/>
       <Separator/>
       
-      <Program label="Reboot" confirm="false">/sbin/reboot</Program>
-      
+      <Program label="Screen Off" confirm="false">xset dpms force off</Program>
       <Separator/>
+      
+      <Program label="Reboot" confirm="false">/sbin/reboot</Program>
+      <Separator/>
+      
       <Program icon="/usr/share/icons/gnome/16x16/actions/system-shutdown.png" label="Shutdown" confirm="false">/sbin/halt -p</Program>
     </Menu>
         
