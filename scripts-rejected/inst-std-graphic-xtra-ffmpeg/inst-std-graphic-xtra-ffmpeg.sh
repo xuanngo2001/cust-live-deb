@@ -18,5 +18,6 @@ apt-get -y install ffmpeg
 echo "${GV_LOG} * Install ffmpeg."
 echo "${GV_LOG} * https://trac.ffmpeg.org/wiki/Capture/Webcam"
 
-# Space Used = 72180K.
+# REJECTED because too complex command for webcam recording.
+#   Space Used = 72180K.
 

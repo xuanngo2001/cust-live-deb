@@ -17,5 +17,6 @@ apt-get -y install webcamoid
 # Log
 echo "${GV_LOG} * Install webcamoid."
 
-# Space Used = 119700K.
+# REJECTED because record doesn't save file.
+#   Space Used = 119700K.
 
