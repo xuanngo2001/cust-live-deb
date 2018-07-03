@@ -1,11 +1,11 @@
   # Reference: https://www.computerhope.com/unix/ucomm.htm
-  #  comm produces three-column output. 
+  #  By default, comm produces three-column output:
   #     Column 1 contains lines unique to FILE1.
   #     Column 2 contains lines unique to FILE2.
   #     Column 3 contains lines common to both files.
-  #  Columns are separated by TAB. 
+  #  Columns are separated by TAB.
+  # Use options(1,2,3) to SUPRESS column.
 
-  
-  # This command will suppress columns 1 and 2, displaying only column 3
+  # This command will suppress columns 1 and 2. Therefore, display only column 3.
     comm -12 FILE_1.txt FILE_2.txt
     
