@@ -20,6 +20,7 @@ apt-get -y install dirmngr
 
 # Install aptly
 apt-get -y install xz-utils aptly
+apt-get -y install gpgv1 gnupg1   # Aptly still uses PGP v1.
 
 # Log
 echo "${GV_LOG} * Add aptly nightly build repository."
