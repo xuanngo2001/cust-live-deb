@@ -1,5 +1,5 @@
 
-# Changing current directory can only be done using shell function.
+# Changing to the specified directory can only be done using shell function.
 #   Hence, the function below.
 function to()
 { 
