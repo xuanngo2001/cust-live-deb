@@ -15,5 +15,5 @@
     echo $'one\ntwo\nthree and four' | tr '\n' '\0' | xargs -0 -I{} sh -c "echo Y; echo \"{}\";"
   
   # Combined use
-    \ls *.xmp | sed 's/\.xmp//' |tr '\n' '\0'| xargs -0 -n1 -I{} % sh -c "echo Y| zero-size.sh \"{}\";"
+    \ls *.xmp | sed 's/\.xmp//' |tr '\n' '\0'| xargs -0 -n1 -I{} sh -c "echo Y| zero-size.sh \"{}\";"
 
