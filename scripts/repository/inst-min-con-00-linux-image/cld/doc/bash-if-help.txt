@@ -9,6 +9,13 @@
 	    echo 'Show negation: string not found.'
 	  fi
   
+  # Compare 2 files.
+		if cmp -s "$file1" "$file2"; then
+		   echo "The files are the same."
+		else
+		   echo "The files are differents"
+		fi
+  
   # If test conditions.
 		-b filename - Block special file
 		-c filename - Special character file
