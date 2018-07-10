@@ -50,3 +50,10 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
   dpkg -l > "${LOG_DIR}/dpkg.log"
   cld-dpkg-list.sh > "${LOG_DIR}/dpkg-version.log"
   cld-dpkg-list.sh no-version > "${LOG_DIR}/dpkg-no-version.log"
+
+# Log scripts-ls.lst.  
+  yes | cp -a scripts-ls.lst "${LOG_DIR}"
+  
+  
+
+  
