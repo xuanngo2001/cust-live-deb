@@ -11,14 +11,6 @@ function to()
       return 1;
     fi
     
-    # Remove the last slash(/) due to excessive TABbing.
-    destination=$(echo "${destination}" | sed 's|/$||')
-    
-    if [ ! -L "${destination}" ]; then
-      echo "Error: ${destination} is not a symbolic link. Aborted!"
-      return 1;
-    fi
-    
   # Get full path.
     destination=$(readlink -ev "${destination}")
     
