@@ -49,14 +49,14 @@ fct_home_inspiron()
     local scripts_list=$(fct_home)
     scripts_list=$(echo "${scripts_list}" | grep -vF 'virtualbox')
     scripts_list=$(echo "${scripts_list}" | grep -vF 'freecad')
-    scripts_list=$(echo "${scripts_list}" | grep -vF 'blender')
+    #scripts_list=$(echo "${scripts_list}" | grep -vF 'blender')
     scripts_list=$(echo "${scripts_list}" | grep -vF 'xtra-dia')
     scripts_list=$(echo "${scripts_list}" | grep -vF 'games-')
     scripts_list=$(echo "${scripts_list}" | grep -vF 'opw-' | grep -vF 'xtra-php' | grep -vF 'mariadb-server' | grep -vF 'apache2')
     scripts_list=$(echo "${scripts_list}" | grep -vF 'zfs-')
     scripts_list=$(echo "${scripts_list}" | grep -vF 'projectlibre')
     scripts_list=$(echo "${scripts_list}" | grep -vF 'xtra-git')
-    scripts_list=$(echo "${scripts_list}" | grep -vF 'graphviz')
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'graphviz' | grep -vF 'gnuplot' )
     scripts_list=$(echo "${scripts_list}" | grep -vF 'tools-ant')
     scripts_list=$(echo "${scripts_list}" | grep -vF 'tools-pandoc')
     echo "${scripts_list}"
@@ -176,3 +176,5 @@ sort -u ${SCRIPT_LIST} -o ${SCRIPT_LIST}
 
 
 echo "${SCRIPT_NAME}: List of script names added in ${SCRIPT_LIST} for [${SYSTEM}] system."
+
+
