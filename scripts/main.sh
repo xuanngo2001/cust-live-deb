@@ -52,7 +52,8 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
   cld-dpkg-list.sh no-version > "${LOG_DIR}/dpkg-no-version.log"
 
 # Log scripts-ls.lst.  
-  yes | cp -a scripts-ls.lst "${LOG_DIR}/scripts-ls.lst.log"
+  yes | cp -av scripts-ls.lst "${LOG_DIR}/scripts-ls.lst.log"
+  sed -i 's|.*/scripts/repository/||' "${LOG_DIR}/scripts-ls.lst.log"
   
   
 

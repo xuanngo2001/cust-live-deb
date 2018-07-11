@@ -78,6 +78,7 @@ DATE_STRING="${YYYY_MM_DD}_${HH_MM_SS}"
 ##################################################################
 yes | cp -av ${MAIN_LOG} binary/
 yes | cp -av ./logs/dpkg*.log binary/
+yes | cp -av ./logs/scripts-ls.lst.log binary/
 
 # Backup log files in ./binary/ to ./install-log/
 ##################################################################
