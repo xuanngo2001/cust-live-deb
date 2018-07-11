@@ -23,9 +23,6 @@ apt-get -y install lsb-release
 
 #apt-get -y install libpango1.0-0
 
-# Add google-chrome sources list
-GF_ADD_SOURCE_LIST live "deb http://dl.google.com/linux/chrome/deb/ stable main"
-
 # Install google-chrome.
 apt-get -y install google-chrome-stable
 
