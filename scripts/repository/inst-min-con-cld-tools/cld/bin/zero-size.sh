@@ -2,10 +2,18 @@
 set -e
 # Description: Turn file size to 0.
 #  Note: from ../inst-min-con-cld-tools/cld/bin
+script_name=$(basename "$0")
+
+# Error handling.
+  if [ $# -eq 0 ]; then
+    echo "Error: ${script_name}: No argument. Aborted!"
+    echo "   e.g. ${script_name} file1 file2 file..."
+    exit 1;
+  fi
+
 
 # Show which files will be zeroed.
-  for file in "$@"
-  do
+  for file in "$@"; do
     echo "   ${file}."
   done
 
@@ -17,9 +25,16 @@ set -e
   fi
 
 # Zero out files
-  for file in "$@"
-  do
-    rm -f "${file}" && 
-    touch "${file}" &&
-    echo "zero: ${file}."
+  for file in "$@"; do
+    if [ -f "${file}" ]; then
+    
+      rm -f "${file}" && 
+      touch "${file}" &&
+      echo "Info: ${script_name}: zero ${file}."
+    else
+      
+      echo "Error: ${script_name}: '${file}' is not a file." 
+    fi
   done
+ 
+
