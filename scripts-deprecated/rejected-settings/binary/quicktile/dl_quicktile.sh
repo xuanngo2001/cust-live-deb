@@ -1,1 +1,0 @@
-wget https://raw.githubusercontent.com/ssokolow/quicktile/master/quicktile.py
