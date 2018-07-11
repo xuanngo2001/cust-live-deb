@@ -10,6 +10,9 @@
   # Find multiple patterns.
     find . -type f -o -iname '*.asf' -o -iname '*.avi'
   
-  # Find files with size 0
+  # Find files with size 0.
     find . -type f -size 0
     
+  # Find all images from current directory. Very slow because it reads the file content.
+    find . -type f -exec file {} \; | grep -o -P '^.+: \w+ image'
+  
