@@ -5,7 +5,7 @@
   * To configure macchanger: dpkg-reconfigure macchanger.
   * Check whether it is working: macchanger -s .
   * systemctl status macchanger@.service
-  * Disk size = 2018168K. Space Used = 892K.
+  * Disk size = 1964360K. Space Used = 892K.
   * The following NEW packages will be installed:
   ```bash
   macchanger
