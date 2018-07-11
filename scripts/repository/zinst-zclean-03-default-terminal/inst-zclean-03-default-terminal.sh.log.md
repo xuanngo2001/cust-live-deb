@@ -1,3 +1,0 @@
-* >>>>>>>>> Running inst-zclean-03-default-terminal.sh ...
-  * Hack: Set stter as the default emulator.
-  * Disk size = 4439716K. Space Used = 8K.
