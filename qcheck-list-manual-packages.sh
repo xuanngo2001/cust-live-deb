@@ -6,7 +6,7 @@ scripts_dir="./scripts/repository"
   # Add newline as a separation.
   echo ""
 
-  find "${scripts_dir}" -type f -name "*.deb" -o -name "*.iso" -o -name "*.jar" | sed 's/^/   /'
+  find "${scripts_dir}" -type f -name "*.deb" -o -name "*.iso" -o -name "*.jar" -o -name "*.phar" | sed 's/^/   /'
   
   
   # Add newline as a separation.
