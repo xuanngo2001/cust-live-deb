@@ -17,11 +17,13 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Update packages.
   apt-get update
+  #apt-get update -oAcquire::AllowInsecureRepositories=true
+  #apt-get install deb-multimedia-keyring -oAcquire::AllowInsecureRepositories=true
 
 # Log
-echo "${GV_LOG} * Add deb-multimedia key."
-echo "${GV_LOG} * Add deb-multimedia repository."
-echo "${GV_LOG} * apt-get update"
+  echo "${GV_LOG} * Add deb-multimedia keyring."
+  echo "${GV_LOG} * Add deb-multimedia repository."
+  echo "${GV_LOG} * apt-get update"
 
 # Note:
 # Key might change, see http://www.deb-multimedia.org/
