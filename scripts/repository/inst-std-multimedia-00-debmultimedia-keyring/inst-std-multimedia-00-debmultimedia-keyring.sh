@@ -9,7 +9,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Add deb-multimedia key.
   keyring_file=deb-multimedia-keyring_2016.8.1_all.deb
-  #wget http://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/${keyring_file}
   dpkg -i ${keyring_file} && rm -f ${keyring_file}
 
 # Add deb-multimedia sources list
@@ -27,3 +26,4 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Note:
 # Key might change, see http://www.deb-multimedia.org/
+#   wget http://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/${keyring_file}
