@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-system-alsamixer.sh ...
   * Insert Alsamixer menu in Administration.
-  * Disk size = 3826148K. Space Used = 8K.
+  * Disk size = 2996912K. Space Used = 8K.

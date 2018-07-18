@@ -1,11 +1,11 @@
 * >>>>>>>>> Running inst-std-graphic-pinta.sh ...
-  * After this operation, 49.9 MB of additional disk space will be used.
+  * After this operation, 65.5 MB of additional disk space will be used.
   * Install Image Editor: Pinta.
   * Insert Pinta menu in Graphics.
-  * Disk size = 2666808K. Space Used = 71060K.
+  * Disk size = 2476252K. Space Used = 97384K.
   * The following NEW packages will be installed:
   ```bash
-  binutils cli-common libgdiplus libglib2.0-cil libgtk2.0-cil
+  binutils cli-common gnome-icon-theme libgdiplus libglib2.0-cil libgtk2.0-cil
   libmono-addins-gui0.2-cil libmono-addins0.2-cil libmono-cairo4.0-cil
   libmono-corlib4.5-cil libmono-posix4.0-cil libmono-security4.0-cil
   libmono-sharpzip4.84-cil libmono-system-configuration4.0-cil
