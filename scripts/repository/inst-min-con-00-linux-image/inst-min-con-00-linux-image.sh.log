@@ -6,16 +6,16 @@ Desired=Unknown/Install/Remove/Purge/Hold
 ||/ Name                          Version                      Architecture Description
 +++-=============================-============================-============-========================================================================
 ii  adduser                       3.115                        all          add and remove users and groups
-ii  apt                           1.4.7                        amd64        commandline package manager
-ii  apt-utils                     1.4.7                        amd64        package management related utility programs
-ii  base-files                    9.9+deb9u1                   amd64        Debian base system miscellaneous files
+ii  apt                           1.4.8                        amd64        commandline package manager
+ii  apt-utils                     1.4.8                        amd64        package management related utility programs
+ii  base-files                    9.9+deb9u5                   amd64        Debian base system miscellaneous files
 ii  base-passwd                   3.5.43                       amd64        Debian base system master password and group files
 ii  bash                          4.4-5                        amd64        GNU Bourne Again SHell
 ii  bsdmainutils                  9.0.12+nmu1                  amd64        collection of more utilities from FreeBSD
-ii  bsdutils                      1:2.29.2-1                   amd64        basic utilities from 4.4BSD-Lite
+ii  bsdutils                      1:2.29.2-1+deb9u1            amd64        basic utilities from 4.4BSD-Lite
 ii  coreutils                     8.26-3                       amd64        GNU core utilities
 ii  cpio                          2.11+dfsg-6                  amd64        GNU cpio -- a program to manage archives of files
-ii  cron                          3.0pl1-128+b1                amd64        process scheduling daemon
+ii  cron                          3.0pl1-128+deb9u1            amd64        process scheduling daemon
 ii  dash                          0.5.8-2.4                    amd64        POSIX-compliant shell
 ii  debconf                       1.5.61                       all          Debian configuration management system
 ii  debconf-i18n                  1.5.61                       all          full internationalization support for debconf
@@ -24,65 +24,65 @@ ii  debianutils                   4.8.1.1                      amd64        Misc
 ii  diffutils                     1:3.5-3                      amd64        File comparison utilities
 ii  dmidecode                     3.0-4                        amd64        SMBIOS/DMI table decoder
 ii  dmsetup                       2:1.02.137-2                 amd64        Linux Kernel Device Mapper userspace library
-ii  dpkg                          1.18.24                      amd64        Debian package management system
+ii  dpkg                          1.18.25                      amd64        Debian package management system
 ii  e2fslibs:amd64                1.43.4-2                     amd64        ext2/ext3/ext4 file system libraries
 ii  e2fsprogs                     1.43.4-2                     amd64        ext2/ext3/ext4 file system utilities
 ii  findutils                     4.6.0+git+20161106-2         amd64        utilities for finding files--find, xargs
-ii  gcc-6-base:amd64              6.3.0-18                     amd64        GCC, the GNU Compiler Collection (base package)
-ii  gnupg                         2.1.18-6                     amd64        GNU privacy guard - a free PGP replacement
-ii  gnupg-agent                   2.1.18-6                     amd64        GNU privacy guard - cryptographic agent
-ii  gpgv                          2.1.18-6                     amd64        GNU privacy guard - signature verification tool
+ii  gcc-6-base:amd64              6.3.0-18+deb9u1              amd64        GCC, the GNU Compiler Collection (base package)
+ii  gnupg                         2.1.18-8~deb9u2              amd64        GNU privacy guard - a free PGP replacement
+ii  gnupg-agent                   2.1.18-8~deb9u2              amd64        GNU privacy guard - cryptographic agent
+ii  gpgv                          2.1.18-8~deb9u2              amd64        GNU privacy guard - signature verification tool
 ii  grep                          2.27-2                       amd64        GNU grep, egrep and fgrep
 ii  gzip                          1.6-5+b1                     amd64        GNU compression utilities
 ii  hostname                      3.18+b1                      amd64        utility to set/show the host name or domain name
 ii  ifupdown                      0.8.19                       amd64        high level tools to configure network interfaces
 ii  init                          1.48                         amd64        metapackage ensuring an init system is installed
 ii  init-system-helpers           1.48                         all          helper tools for all init systems
-ii  iproute2                      4.9.0-1                      amd64        networking and traffic control tools
+ii  iproute2                      4.9.0-1+deb9u1               amd64        networking and traffic control tools
 ii  iptables                      1.6.0+snapshot20161117-6     amd64        administration tools for packet filtering and NAT
 ii  iputils-ping                  3:20161105-1                 amd64        Tools to test the reachability of network hosts
-ii  isc-dhcp-client               4.3.5-3                      amd64        DHCP client for automatically obtaining an IP address
-ii  isc-dhcp-common               4.3.5-3                      amd64        common manpages relevant to all of the isc-dhcp packages
+ii  isc-dhcp-client               4.3.5-3+deb9u1               amd64        DHCP client for automatically obtaining an IP address
+ii  isc-dhcp-common               4.3.5-3+deb9u1               amd64        common manpages relevant to all of the isc-dhcp packages
 ii  kmod                          23-2                         amd64        tools for managing Linux kernel modules
 ii  libacl1:amd64                 2.2.52-3+b1                  amd64        Access control list shared library
-ii  libapparmor1:amd64            2.11.0-3                     amd64        changehat AppArmor library
-ii  libapt-inst2.0:amd64          1.4.7                        amd64        deb package format runtime library
-ii  libapt-pkg5.0:amd64           1.4.7                        amd64        package management runtime library
+ii  libapparmor1:amd64            2.11.0-3+deb9u2              amd64        changehat AppArmor library
+ii  libapt-inst2.0:amd64          1.4.8                        amd64        deb package format runtime library
+ii  libapt-pkg5.0:amd64           1.4.8                        amd64        package management runtime library
 ii  libassuan0:amd64              2.4.3-2                      amd64        IPC library for the GnuPG components
 ii  libattr1:amd64                1:2.4.47-2+b2                amd64        Extended attribute shared library
 ii  libaudit-common               1:2.6.7-2                    all          Dynamic library for security auditing - common files
 ii  libaudit1:amd64               1:2.6.7-2                    amd64        Dynamic library for security auditing
-ii  libblkid1:amd64               2.29.2-1                     amd64        block device ID library
+ii  libblkid1:amd64               2.29.2-1+deb9u1              amd64        block device ID library
 ii  libbsd0:amd64                 0.8.3-1                      amd64        utility functions from BSD systems - shared library
 ii  libbz2-1.0:amd64              1.0.6-8.1                    amd64        high-quality block-sorting file compressor library - runtime
-ii  libc-bin                      2.24-11+deb9u1               amd64        GNU C Library: Binaries
-ii  libc6:amd64                   2.24-11+deb9u1               amd64        GNU C Library: Shared libraries
+ii  libc-bin                      2.24-11+deb9u3               amd64        GNU C Library: Binaries
+ii  libc6:amd64                   2.24-11+deb9u3               amd64        GNU C Library: Shared libraries
 ii  libcap-ng0:amd64              0.7.7-3+b1                   amd64        An alternate POSIX capabilities library
 ii  libcap2:amd64                 1:2.25-1                     amd64        POSIX 1003.1e capabilities (library)
 ii  libcomerr2:amd64              1.43.4-2                     amd64        common error description library
 ii  libcryptsetup4:amd64          2:1.7.3-4                    amd64        disk encryption support - shared library
-ii  libdb5.3:amd64                5.3.28-12+b1                 amd64        Berkeley v5.3 Database Libraries [runtime]
+ii  libdb5.3:amd64                5.3.28-12+deb9u1             amd64        Berkeley v5.3 Database Libraries [runtime]
 ii  libdebconfclient0:amd64       0.227                        amd64        Debian Configuration Management System (C-implementation library)
 ii  libdevmapper1.02.1:amd64      2:1.02.137-2                 amd64        Linux Kernel Device Mapper userspace library
-ii  libdns-export162              1:9.10.3.dfsg.P4-12.3+deb9u1 amd64        Exported DNS Shared Library
+ii  libdns-export162              1:9.10.3.dfsg.P4-12.3+deb9u4 amd64        Exported DNS Shared Library
 ii  libelf1:amd64                 0.168-1                      amd64        library to read and write ELF files
 ii  libestr0                      0.1.10-2                     amd64        Helper functions for handling strings (lib)
 ii  libfastjson4:amd64            0.99.4-1                     amd64        fast json library for C
-ii  libfdisk1:amd64               2.29.2-1                     amd64        fdisk partitioning library
+ii  libfdisk1:amd64               2.29.2-1+deb9u1              amd64        fdisk partitioning library
 ii  libffi6:amd64                 3.2.1-6                      amd64        Foreign Function Interface library runtime
-ii  libgcc1:amd64                 1:6.3.0-18                   amd64        GCC support library
-ii  libgcrypt20:amd64             1.7.6-2+deb9u1               amd64        LGPL Crypto library - runtime library
+ii  libgcc1:amd64                 1:6.3.0-18+deb9u1            amd64        GCC support library
+ii  libgcrypt20:amd64             1.7.6-2+deb9u3               amd64        LGPL Crypto library - runtime library
 ii  libgdbm3:amd64                1.8.3-14                     amd64        GNU dbm database routines (runtime version)
 ii  libgmp10:amd64                2:6.1.2+dfsg-1               amd64        Multiprecision arithmetic library
-ii  libgnutls30:amd64             3.5.8-5+deb9u2               amd64        GNU TLS library - main runtime library
+ii  libgnutls30:amd64             3.5.8-5+deb9u3               amd64        GNU TLS library - main runtime library
 ii  libgpg-error0:amd64           1.26-2                       amd64        library for common error values and messages in GnuPG components
-ii  libhogweed4:amd64             3.3-1+b1                     amd64        low level cryptographic library (public-key cryptos)
+ii  libhogweed4:amd64             3.3-1+b2                     amd64        low level cryptographic library (public-key cryptos)
 ii  libidn11:amd64                1.33-1                       amd64        GNU Libidn library, implementation of IETF IDN specifications
-ii  libidn2-0:amd64               0.16-1                       amd64        Internationalized domain names (IDNA2008) library
+ii  libidn2-0:amd64               0.16-1+deb9u1                amd64        Internationalized domain names (IDNA2008) library
 ii  libip4tc0:amd64               1.6.0+snapshot20161117-6     amd64        netfilter libip4tc library
 ii  libip6tc0:amd64               1.6.0+snapshot20161117-6     amd64        netfilter libip6tc library
 ii  libiptc0:amd64                1.6.0+snapshot20161117-6     amd64        netfilter libiptc library
-ii  libisc-export160              1:9.10.3.dfsg.P4-12.3+deb9u1 amd64        Exported ISC Shared Library
+ii  libisc-export160              1:9.10.3.dfsg.P4-12.3+deb9u4 amd64        Exported ISC Shared Library
 ii  libkmod2:amd64                23-2                         amd64        libkmod shared library
 ii  libksba8:amd64                1.3.5-2                      amd64        X.509 and CMS support library
 ii  liblocale-gettext-perl        1.07-3+b1                    amd64        module using libc functions for internationalization in Perl
@@ -91,11 +91,11 @@ ii  liblognorm5:amd64             2.0.1-1.1+b1                 amd64        log 
 ii  liblz4-1:amd64                0.0~r131-2+b1                amd64        Fast LZ compression algorithm library - runtime
 ii  liblzma5:amd64                5.2.2-1.2+b1                 amd64        XZ-format compression library
 ii  libmnl0:amd64                 1.0.4-2                      amd64        minimalistic Netlink communication library
-ii  libmount1:amd64               2.29.2-1                     amd64        device mounting library
-ii  libncurses5:amd64             6.0+20161126-1               amd64        shared libraries for terminal handling
-ii  libncursesw5:amd64            6.0+20161126-1               amd64        shared libraries for terminal handling (wide character support)
+ii  libmount1:amd64               2.29.2-1+deb9u1              amd64        device mounting library
+ii  libncurses5:amd64             6.0+20161126-1+deb9u2        amd64        shared libraries for terminal handling
+ii  libncursesw5:amd64            6.0+20161126-1+deb9u2        amd64        shared libraries for terminal handling (wide character support)
 ii  libnetfilter-conntrack3:amd64 1.0.6-2                      amd64        Netfilter netlink-conntrack library
-ii  libnettle6:amd64              3.3-1+b1                     amd64        low level cryptographic library (symmetric and one-way cryptos)
+ii  libnettle6:amd64              3.3-1+b2                     amd64        low level cryptographic library (symmetric and one-way cryptos)
 ii  libnewt0.52:amd64             0.52.19-1+b1                 amd64        Not Erik's Windowing Toolkit - text mode windowing with slang
 ii  libnfnetlink0:amd64           1.0.1-3                      amd64        Netfilter netlink library
 ii  libnpth0:amd64                1.3-1                        amd64        replacement for GNU Pth using system threads
@@ -107,65 +107,65 @@ ii  libpam0g:amd64                1.1.8-3.6                    amd64        Plug
 ii  libpcre3:amd64                2:8.39-3                     amd64        Old Perl 5 Compatible Regular Expression Library - runtime files
 ii  libpipeline1:amd64            1.4.1-2                      amd64        pipeline manipulation library
 ii  libpopt0:amd64                1.16-10+b2                   amd64        lib for parsing cmdline parameters
-ii  libprocps6:amd64              2:3.3.12-3                   amd64        library for accessing process information from /proc
+ii  libprocps6:amd64              2:3.3.12-3+deb9u1            amd64        library for accessing process information from /proc
 ii  libpsl5:amd64                 0.17.0-3                     amd64        Library for Public Suffix List (shared libraries)
 ii  libreadline7:amd64            7.0-3                        amd64        GNU readline and history libraries, run-time libraries
 ii  libseccomp2:amd64             2.3.1-2.1                    amd64        high level interface to Linux seccomp filter
-ii  libselinux1:amd64             2.6-3+b1                     amd64        SELinux runtime shared libraries
+ii  libselinux1:amd64             2.6-3+b3                     amd64        SELinux runtime shared libraries
 ii  libsemanage-common            2.6-2                        all          Common files for SELinux policy management libraries
 ii  libsemanage1:amd64            2.6-2                        amd64        SELinux policy management library
 ii  libsepol1:amd64               2.6-2                        amd64        SELinux library for manipulating binary security policies
 ii  libslang2:amd64               2.3.1-5                      amd64        S-Lang programming library - runtime version
-ii  libsmartcols1:amd64           2.29.2-1                     amd64        smart column output alignment library
-ii  libsqlite3-0:amd64            3.16.2-5                     amd64        SQLite 3 shared library
+ii  libsmartcols1:amd64           2.29.2-1+deb9u1              amd64        smart column output alignment library
+ii  libsqlite3-0:amd64            3.16.2-5+deb9u1              amd64        SQLite 3 shared library
 ii  libss2:amd64                  1.43.4-2                     amd64        command-line interface parsing library
-ii  libssl1.0.2:amd64             1.0.2l-2                     amd64        Secure Sockets Layer toolkit - shared libraries
-ii  libssl1.1:amd64               1.1.0f-3                     amd64        Secure Sockets Layer toolkit - shared libraries
-ii  libstdc++6:amd64              6.3.0-18                     amd64        GNU Standard C++ Library v3
-ii  libsystemd0:amd64             232-25+deb9u1                amd64        systemd utility library
-ii  libtasn1-6:amd64              4.10-1.1                     amd64        Manage ASN.1 structures (runtime)
+ii  libssl1.0.2:amd64             1.0.2l-2+deb9u3              amd64        Secure Sockets Layer toolkit - shared libraries
+ii  libssl1.1:amd64               1.1.0f-3+deb9u2              amd64        Secure Sockets Layer toolkit - shared libraries
+ii  libstdc++6:amd64              6.3.0-18+deb9u1              amd64        GNU Standard C++ Library v3
+ii  libsystemd0:amd64             232-25+deb9u4                amd64        systemd utility library
+ii  libtasn1-6:amd64              4.10-1.1+deb9u1              amd64        Manage ASN.1 structures (runtime)
 ii  libtext-charwidth-perl        0.04-7+b5                    amd64        get display widths of characters on the terminal
 ii  libtext-iconv-perl            1.7-5+b4                     amd64        converts between character sets in Perl
 ii  libtext-wrapi18n-perl         0.06-7.1                     all          internationalized substitute of Text::Wrap
-ii  libtinfo5:amd64               6.0+20161126-1               amd64        shared low-level terminfo library for terminal handling
-ii  libudev1:amd64                232-25+deb9u1                amd64        libudev shared library
+ii  libtinfo5:amd64               6.0+20161126-1+deb9u2        amd64        shared low-level terminfo library for terminal handling
+ii  libudev1:amd64                232-25+deb9u4                amd64        libudev shared library
 ii  libunistring0:amd64           0.9.6+really0.9.3-0.1        amd64        Unicode string library for C
 ii  libustr-1.0-1:amd64           1.0.4-6                      amd64        Micro string library: shared library
-ii  libuuid1:amd64                2.29.2-1                     amd64        Universally Unique ID library
-ii  libxapian30:amd64             1.4.3-2                      amd64        Search engine library
+ii  libuuid1:amd64                2.29.2-1+deb9u1              amd64        Universally Unique ID library
+ii  libxapian30:amd64             1.4.3-2+deb9u1               amd64        Search engine library
 ii  libxtables12:amd64            1.6.0+snapshot20161117-6     amd64        netfilter xtables library
 ii  login                         1:4.4-4.1                    amd64        system login tools
 ii  logrotate                     3.11.0-0.1                   amd64        Log rotation utility
 ii  lsb-base                      9.20161125                   all          Linux Standard Base init script functionality
 ii  mawk                          1.3.3-17+b3                  amd64        a pattern scanning and text processing language
-ii  mount                         2.29.2-1                     amd64        tools for mounting and manipulating filesystems
-ii  multiarch-support             2.24-11+deb9u1               amd64        Transitional package to ensure multiarch compatibility
+ii  mount                         2.29.2-1+deb9u1              amd64        tools for mounting and manipulating filesystems
+ii  multiarch-support             2.24-11+deb9u3               amd64        Transitional package to ensure multiarch compatibility
 ii  nano                          2.7.4-1                      amd64        small, friendly text editor inspired by Pico
-ii  ncurses-base                  6.0+20161126-1               all          basic terminal type definitions
-ii  ncurses-bin                   6.0+20161126-1               amd64        terminal-related programs and man pages
+ii  ncurses-base                  6.0+20161126-1+deb9u2        all          basic terminal type definitions
+ii  ncurses-bin                   6.0+20161126-1+deb9u2        amd64        terminal-related programs and man pages
 ii  netbase                       5.4                          all          Basic TCP/IP networking system
 ii  passwd                        1:4.4-4.1                    amd64        change and administer password and group data
-ii  perl-base                     5.24.1-3+deb9u1              amd64        minimal Perl system
+ii  perl-base                     5.24.1-3+deb9u4              amd64        minimal Perl system
 ii  pinentry-curses               1.0.0-2                      amd64        curses-based PIN or pass-phrase entry dialog for GnuPG
-ii  procps                        2:3.3.12-3                   amd64        /proc file system utilities
+ii  procps                        2:3.3.12-3+deb9u1            amd64        /proc file system utilities
 ii  readline-common               7.0-3                        all          GNU readline and history libraries, common files
 ii  rsyslog                       8.24.0-1                     amd64        reliable system and kernel logging daemon
 ii  sed                           4.4-1                        amd64        GNU stream editor for filtering/transforming text
-ii  sensible-utils                0.0.9                        all          Utilities for sensible alternative selection
-ii  systemd                       232-25+deb9u1                amd64        system and service manager
-ii  systemd-sysv                  232-25+deb9u1                amd64        system and service manager - SysV links
+ii  sensible-utils                0.0.9+deb9u1                 all          Utilities for sensible alternative selection
+ii  systemd                       232-25+deb9u4                amd64        system and service manager
+ii  systemd-sysv                  232-25+deb9u4                amd64        system and service manager - SysV links
 ii  sysvinit-utils                2.88dsf-59.9                 amd64        System-V-like utilities
 ii  tar                           1.29b-1.1                    amd64        GNU version of the tar archiving utility
 ii  tasksel                       3.39                         all          tool for selecting tasks for installation on Debian systems
 ii  tasksel-data                  3.39                         all          official tasks used for installation of Debian systems
-ii  tzdata                        2017b-1                      all          time zone and daylight-saving time data
-ii  udev                          232-25+deb9u1                amd64        /dev/ and hotplug management daemon
-ii  util-linux                    2.29.2-1                     amd64        miscellaneous system utilities
-ii  vim-common                    2:8.0.0197-4                 all          Vi IMproved - Common files
-ii  vim-tiny                      2:8.0.0197-4                 amd64        Vi IMproved - enhanced vi editor - compact version
-ii  wget                          1.18-5                       amd64        retrieves files from the web
+ii  tzdata                        2018e-0+deb9u1               all          time zone and daylight-saving time data
+ii  udev                          232-25+deb9u4                amd64        /dev/ and hotplug management daemon
+ii  util-linux                    2.29.2-1+deb9u1              amd64        miscellaneous system utilities
+ii  vim-common                    2:8.0.0197-4+deb9u1          all          Vi IMproved - Common files
+ii  vim-tiny                      2:8.0.0197-4+deb9u1          amd64        Vi IMproved - enhanced vi editor - compact version
+ii  wget                          1.18-5+deb9u2                amd64        retrieves files from the web
 ii  whiptail                      0.52.19-1+b1                 amd64        Displays user-friendly dialog boxes from shell scripts
-ii  xxd                           2:8.0.0197-4                 amd64        tool to make (or reverse) a hex dump
+ii  xxd                           2:8.0.0197-4+deb9u1          amd64        tool to make (or reverse) a hex dump
 ii  zlib1g:amd64                  1:1.2.8.dfsg-5               amd64        compression library - runtime
 total 0
 ============= END: Base system packages =============
@@ -174,16 +174,14 @@ Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
 Hit:3 http://localhost/aptly-repo/master_deb-multimedia-main stretch InRelease
 Hit:4 http://localhost/aptly-repo/master_deb-multimedia-non-free stretch InRelease
 Hit:5 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:6 http://localhost/aptly-repo/master_opera-non-free stable InRelease
-Hit:7 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports InRelease
-Hit:8 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports InRelease
-Hit:9 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports InRelease
-Hit:10 http://localhost/aptly-repo/master_stretch-contrib stretch InRelease
-Hit:11 http://localhost/aptly-repo/master_stretch-non-free stretch InRelease
-Hit:12 http://localhost/aptly-repo/master_stretch-updates-contrib stretch-updates InRelease
-Hit:13 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates InRelease
-Hit:14 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease
-Hit:15 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
+Hit:6 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports InRelease
+Hit:7 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports InRelease
+Hit:8 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports InRelease
+Hit:9 http://localhost/aptly-repo/master_stretch-contrib stretch InRelease
+Hit:10 http://localhost/aptly-repo/master_stretch-non-free stretch InRelease
+Hit:11 http://localhost/aptly-repo/master_stretch-updates-contrib stretch-updates InRelease
+Hit:12 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates InRelease
+Hit:13 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -193,7 +191,7 @@ Suggested packages:
   default-dbus-session-bus | dbus-session-bus
 The following NEW packages will be installed:
   dbus dialog libdbus-1-3 libexpat1
-0 upgraded, 4 newly installed, 0 to remove and 38 not upgraded.
+0 upgraded, 4 newly installed, 0 to remove and 16 not upgraded.
 Need to get 750 kB of archives.
 After this operation, 2519 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdbus-1-3 amd64 1.10.26-0+deb9u1 [194 kB]
@@ -210,9 +208,9 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 750 kB in 0s (3690 kB/s)
+Fetched 750 kB in 0s (24.0 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9120 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9114 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.10.26-0+deb9u1_amd64.deb ...
 Unpacking libdbus-1-3:amd64 (1.10.26-0+deb9u1) ...
 Selecting previously unselected package libexpat1:amd64.
@@ -226,33 +224,33 @@ Preparing to unpack .../dialog_1.3-20160828-2_amd64.deb ...
 Unpacking dialog (1.3-20160828-2) ...
 Setting up libexpat1:amd64 (2.2.0-2+deb9u1) ...
 Setting up dialog (1.3-20160828-2) ...
-Processing triggers for libc-bin (2.24-11+deb9u1) ...
-Processing triggers for systemd (232-25+deb9u1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for systemd (232-25+deb9u4) ...
 Setting up libdbus-1-3:amd64 (1.10.26-0+deb9u1) ...
 Setting up dbus (1.10.26-0+deb9u1) ...
 Running in chroot, ignoring request.
-Processing triggers for libc-bin (2.24-11+deb9u1) ...
-Processing triggers for systemd (232-25+deb9u1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for systemd (232-25+deb9u4) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
   busybox firmware-linux-free initramfs-tools initramfs-tools-core klibc-utils
-  libklibc linux-base linux-image-4.14.0-0.bpo.3-amd64
+  libklibc linux-base linux-image-4.16.0-0.bpo.2-amd64
   live-boot-initramfs-tools rsync
 Suggested packages:
-  bash-completion linux-doc-4.14 debian-kernel-handbook grub-pc
+  bash-completion linux-doc-4.16 debian-kernel-handbook grub-pc
   | grub-efi-amd64 | extlinux cryptsetup curlftpfs httpfs2 openssh-client
   openssh-server
 Recommended packages:
   irqbalance apparmor live-boot-doc live-tools uuid-runtime
 The following NEW packages will be installed:
   busybox firmware-linux-free initramfs-tools initramfs-tools-core klibc-utils
-  libklibc linux-base linux-image-4.14.0-0.bpo.3-amd64 linux-image-amd64
+  libklibc linux-base linux-image-4.16.0-0.bpo.2-amd64 linux-image-amd64
   live-boot live-boot-initramfs-tools rsync
-0 upgraded, 12 newly installed, 0 to remove and 38 not upgraded.
-Need to get 45.4 MB of archives.
-After this operation, 252 MB of additional disk space will be used.
+0 upgraded, 12 newly installed, 0 to remove and 16 not upgraded.
+Need to get 46.8 MB of archives.
+After this operation, 261 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 busybox amd64 1:1.22.0-19+b3 [405 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 firmware-linux-free all 3.4 [19.2 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libklibc amd64 2.0.4-9 [52.6 kB]
@@ -260,8 +258,8 @@ Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 klibc-u
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 initramfs-tools-core all 0.130 [97.0 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 linux-base all 4.5 [19.1 kB]
 Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 initramfs-tools all 0.130 [66.0 kB]
-Get:8 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-image-4.14.0-0.bpo.3-amd64 amd64 4.14.13-1~bpo9+1 [44.2 MB]
-Get:9 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-image-amd64 amd64 4.14+89~bpo9+1 [7800 B]
+Get:8 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-image-4.16.0-0.bpo.2-amd64 amd64 4.16.16-2~bpo9+1 [45.6 MB]
+Get:9 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-image-amd64 amd64 4.16+94~bpo9+1 [7974 B]
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 live-boot-initramfs-tools all 1:20170112 [30.7 kB]
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 live-boot all 1:20170112 [53.1 kB]
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 rsync amd64 3.1.2-1+deb9u1 [393 kB]
@@ -276,9 +274,9 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 45.4 MB in 0s (47.7 MB/s)
+Fetched 46.8 MB in 0s (49.1 MB/s)
 Selecting previously unselected package busybox.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9336 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9330 files and directories currently installed.)
 Preparing to unpack .../00-busybox_1%3a1.22.0-19+b3_amd64.deb ...
 Unpacking busybox (1:1.22.0-19+b3) ...
 Selecting previously unselected package firmware-linux-free.
@@ -300,12 +298,12 @@ Unpacking linux-base (4.5) ...
 Selecting previously unselected package initramfs-tools.
 Preparing to unpack .../06-initramfs-tools_0.130_all.deb ...
 Unpacking initramfs-tools (0.130) ...
-Selecting previously unselected package linux-image-4.14.0-0.bpo.3-amd64.
-Preparing to unpack .../07-linux-image-4.14.0-0.bpo.3-amd64_4.14.13-1~bpo9+1_amd64.deb ...
-Unpacking linux-image-4.14.0-0.bpo.3-amd64 (4.14.13-1~bpo9+1) ...
+Selecting previously unselected package linux-image-4.16.0-0.bpo.2-amd64.
+Preparing to unpack .../07-linux-image-4.16.0-0.bpo.2-amd64_4.16.16-2~bpo9+1_amd64.deb ...
+Unpacking linux-image-4.16.0-0.bpo.2-amd64 (4.16.16-2~bpo9+1) ...
 Selecting previously unselected package linux-image-amd64.
-Preparing to unpack .../08-linux-image-amd64_4.14+89~bpo9+1_amd64.deb ...
-Unpacking linux-image-amd64 (4.14+89~bpo9+1) ...
+Preparing to unpack .../08-linux-image-amd64_4.16+94~bpo9+1_amd64.deb ...
+Unpacking linux-image-amd64 (4.16+94~bpo9+1) ...
 Selecting previously unselected package live-boot-initramfs-tools.
 Preparing to unpack .../09-live-boot-initramfs-tools_1%3a20170112_all.deb ...
 Unpacking live-boot-initramfs-tools (1:20170112) ...
@@ -324,26 +322,26 @@ locale: Cannot set LC_ALL to default locale: No such file or directory
 Setting up rsync (3.1.2-1+deb9u1) ...
 Running in chroot, ignoring request.
 Created symlink /etc/systemd/system/multi-user.target.wants/rsync.service → /lib/systemd/system/rsync.service.
-Processing triggers for systemd (232-25+deb9u1) ...
+Processing triggers for systemd (232-25+deb9u4) ...
 Setting up firmware-linux-free (3.4) ...
 Setting up klibc-utils (2.0.4-9) ...
 Setting up initramfs-tools-core (0.130) ...
 Setting up initramfs-tools (0.130) ...
 update-initramfs: deferring update (trigger activated)
+Setting up linux-image-4.16.0-0.bpo.2-amd64 (4.16.16-2~bpo9+1) ...
+I: /vmlinuz.old is now a symlink to boot/vmlinuz-4.16.0-0.bpo.2-amd64
+I: /initrd.img.old is now a symlink to boot/initrd.img-4.16.0-0.bpo.2-amd64
+I: /vmlinuz is now a symlink to boot/vmlinuz-4.16.0-0.bpo.2-amd64
+I: /initrd.img is now a symlink to boot/initrd.img-4.16.0-0.bpo.2-amd64
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-4.16.0-0.bpo.2-amd64
+live-boot: core filesystems devices utils udev wget blockdev dns.
 Setting up live-boot-initramfs-tools (1:20170112) ...
 update-initramfs: deferring update (trigger activated)
+Setting up linux-image-amd64 (4.16+94~bpo9+1) ...
 Setting up live-boot (1:20170112) ...
-Setting up linux-image-4.14.0-0.bpo.3-amd64 (4.14.13-1~bpo9+1) ...
-I: /vmlinuz.old is now a symlink to boot/vmlinuz-4.14.0-0.bpo.3-amd64
-I: /initrd.img.old is now a symlink to boot/initrd.img-4.14.0-0.bpo.3-amd64
-I: /vmlinuz is now a symlink to boot/vmlinuz-4.14.0-0.bpo.3-amd64
-I: /initrd.img is now a symlink to boot/initrd.img-4.14.0-0.bpo.3-amd64
-/etc/kernel/postinst.d/initramfs-tools:
-update-initramfs: Generating /boot/initrd.img-4.14.0-0.bpo.3-amd64
-live-boot: core filesystems devices utils udev wget blockdev dns.
-Setting up linux-image-amd64 (4.14+89~bpo9+1) ...
 Processing triggers for initramfs-tools (0.130) ...
-update-initramfs: Generating /boot/initrd.img-4.14.0-0.bpo.3-amd64
+update-initramfs: Generating /boot/initrd.img-4.16.0-0.bpo.2-amd64
 live-boot: core filesystems devices utils udev wget blockdev dns.
 './cld' -> '/usr/local/cld'
 './cld/doc' -> '/usr/local/cld/doc'
@@ -355,6 +353,7 @@ live-boot: core filesystems devices utils udev wget blockdev dns.
 './cld/doc/bash-loop-help.txt' -> '/usr/local/cld/doc/bash-loop-help.txt'
 './cld/doc/rsync-help.txt' -> '/usr/local/cld/doc/rsync-help.txt'
 './cld/doc/cut-help.txt' -> '/usr/local/cld/doc/cut-help.txt'
+'./cld/doc/dpkg-query-help.txt' -> '/usr/local/cld/doc/dpkg-query-help.txt'
 './cld/doc/tar-help.txt' -> '/usr/local/cld/doc/tar-help.txt'
 './cld/doc/bash-tip-help.txt' -> '/usr/local/cld/doc/bash-tip-help.txt'
 './cld/doc/bash-if-help.txt' -> '/usr/local/cld/doc/bash-if-help.txt'
@@ -373,39 +372,39 @@ Desired=Unknown/Install/Remove/Purge/Hold
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
 ||/ Name                             Version          Architecture Description
 +++-================================-================-============-===================================
-ii  linux-image-4.14.0-0.bpo.3-amd64 4.14.13-1~bpo9+1 amd64        Linux 4.14 for 64-bit PCs
-ii  linux-image-amd64                4.14+89~bpo9+1   amd64        Linux for 64-bit PCs (meta-package)
-total 33944
--rw-r--r-- 1 root root  3033028 Jan 14 23:48 System.map-4.14.0-0.bpo.3-amd64
--rw-r--r-- 1 root root   197366 Jan 14 23:48 config-4.14.0-0.bpo.3-amd64
--rw-r--r-- 1 root root 26675987 Jul 12 17:25 initrd.img-4.14.0-0.bpo.3-amd64
--rw-r--r-- 1 root root  4843280 Jan 14 23:48 vmlinuz-4.14.0-0.bpo.3-amd64
-1bd0110c4ebda2812c3af083af3fe84f  /boot/System.map-4.14.0-0.bpo.3-amd64
-9c3ee3cc25c8e244be19bc7b996bcf8f  /boot/config-4.14.0-0.bpo.3-amd64
-9d9599b862362c85df3be15758c88857  /boot/initrd.img-4.14.0-0.bpo.3-amd64
-aabc5d77ec695e5c9a891b5dbbcff3b2  /boot/vmlinuz-4.14.0-0.bpo.3-amd64
+ii  linux-image-4.16.0-0.bpo.2-amd64 4.16.16-2~bpo9+1 amd64        Linux 4.16 for 64-bit PCs
+ii  linux-image-amd64                4.16+94~bpo9+1   amd64        Linux for 64-bit PCs (meta-package)
+total 34928
+-rw-r--r-- 1 root root  3144368 Jun 26 00:25 System.map-4.16.0-0.bpo.2-amd64
+-rw-r--r-- 1 root root   203117 Jun 26 00:25 config-4.16.0-0.bpo.2-amd64
+-rw-r--r-- 1 root root 27433888 Jul 18 22:35 initrd.img-4.16.0-0.bpo.2-amd64
+-rw-r--r-- 1 root root  4978448 Jun 26 00:25 vmlinuz-4.16.0-0.bpo.2-amd64
+eb05d7e4c0c602ce41f0e928d2355573  /boot/System.map-4.16.0-0.bpo.2-amd64
+23e17f720d2be76159b55ee6d528d691  /boot/config-4.16.0-0.bpo.2-amd64
+f59e598d77dde3d28574f1e7ec44095f  /boot/initrd.img-4.16.0-0.bpo.2-amd64
+54d9eeea670abb3840b2df92ffc5cfa8  /boot/vmlinuz-4.16.0-0.bpo.2-amd64
 total 64
-drwxr-xr-x   2 root root 4096 Jul 12 17:24 bin
-drwxr-xr-x   2 root root 4096 Jul 12 17:25 boot
-drwxr-xr-x  17 root root 3460 Jul 12 11:31 dev
-drwxr-xr-x  52 root root 4096 Jul 12 17:24 etc
-drwxr-xr-x   2 root root 4096 Jul 13  2017 home
-lrwxrwxrwx   1 root root   36 Jul 12 17:24 initrd.img -> boot/initrd.img-4.14.0-0.bpo.3-amd64
-drwxr-xr-x  13 root root 4096 Jul 12 17:24 lib
-drwxr-xr-x   2 root root 4096 Jul 12 17:23 lib64
-drwxr-xr-x   2 root root 4096 Jul 12 17:23 media
-drwxr-xr-x   2 root root 4096 Jul 12 17:23 mnt
-drwxr-xr-x   2 root root 4096 Jul 12 17:23 opt
-dr-xr-xr-x 213 root root    0 Jul 12 15:30 proc
-drwx------   4 root root 4096 Jul 12 17:24 root
-drwxr-xr-x   4 root root 4096 Jul 12 17:23 run
-drwxr-xr-x   2 root root 4096 Jul 12 17:24 sbin
-drwxr-xr-x   2 root root 4096 Jul 12 17:23 srv
-dr-xr-xr-x  13 root root    0 Jul 12 16:42 sys
-drwxrwxrwt   2 root root 4096 Jul 12 17:25 tmp
-drwxr-xr-x  10 root root 4096 Jul 12 17:23 usr
-drwxr-xr-x  11 root root 4096 Jul 12 17:23 var
-lrwxrwxrwx   1 root root   33 Jul 12 17:24 vmlinuz -> boot/vmlinuz-4.14.0-0.bpo.3-amd64
+drwxr-xr-x   2 root root 4096 Jul 18 22:34 bin
+drwxr-xr-x   2 root root 4096 Jul 18 22:35 boot
+drwxr-xr-x  17 root root 3460 Jul 18 14:59 dev
+drwxr-xr-x  52 root root 4096 Jul 18 22:35 etc
+drwxr-xr-x   2 root root 4096 Jun 26 12:03 home
+lrwxrwxrwx   1 root root   36 Jul 18 22:34 initrd.img -> boot/initrd.img-4.16.0-0.bpo.2-amd64
+drwxr-xr-x  13 root root 4096 Jul 18 22:34 lib
+drwxr-xr-x   2 root root 4096 Jul 18 22:33 lib64
+drwxr-xr-x   2 root root 4096 Jul 18 22:33 media
+drwxr-xr-x   2 root root 4096 Jul 18 22:33 mnt
+drwxr-xr-x   2 root root 4096 Jul 18 22:33 opt
+dr-xr-xr-x 212 root root    0 Jul 18 18:59 proc
+drwx------   4 root root 4096 Jul 18 22:34 root
+drwxr-xr-x   4 root root 4096 Jul 18 22:33 run
+drwxr-xr-x   2 root root 4096 Jul 18 22:34 sbin
+drwxr-xr-x   2 root root 4096 Jul 18 22:33 srv
+dr-xr-xr-x  13 root root    0 Jul 18 19:03 sys
+drwxrwxrwt   2 root root 4096 Jul 18 22:35 tmp
+drwxr-xr-x  10 root root 4096 Jul 18 22:33 usr
+drwxr-xr-x  11 root root 4096 Jul 18 22:33 var
+lrwxrwxrwx   1 root root   33 Jul 18 22:34 vmlinuz -> boot/vmlinuz-4.16.0-0.bpo.2-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
-CLDS: * Installed Linux image: linux-image-4.14.0-0.bpo.3-amd64.
-CLDS: * Disk size = 1095716K. Space Used = 333432K.
+CLDS: * Installed Linux image: linux-image-4.16.0-0.bpo.2-amd64.
+CLDS: * Disk size = 1105092K. Space Used = 344312K.
