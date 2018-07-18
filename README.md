@@ -42,6 +42,7 @@ http://www.somsubhra.com/github-release-stats/?username=limelime&repository=cust
 
 
 # References
+* Installing Debian GNU/Linux from a Unix/Linux System: https://www.debian.org/releases/stable/amd64/apds03.html.en
 * http://manpages.ubuntu.com/manpages/natty/de/man1/lb_config.1.html
 * http://askubuntu.com/questions/551195/scripting-chroot-how-to
 * https://help.ubuntu.com/community/LiveCDCustomizationFromScratch
