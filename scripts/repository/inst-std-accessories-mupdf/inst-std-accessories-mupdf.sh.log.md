@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-std-accessories-mupdf.sh ...
-  * After this operation, 18.1 MB of additional disk space will be used.
+  * After this operation, 17.8 MB of additional disk space will be used.
   * Install PDF reader: Mupdf.
-  * Disk size = 1860816K. Space Used = 24656K.
+  * Disk size = 2499788K. Space Used = 24200K.
   * The following NEW packages will be installed:
   ```bash
-  libjbig2dec0 libopenjp2-7 mupdf
+  libjbig2dec0 mupdf
   ```
