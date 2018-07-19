@@ -1,19 +1,30 @@
 #!/bin/bash
 # Description: Check error in log file.
 
-MAIN_LOG=/media/master/github/cust-live-deb/logs/main.log
+main_log=$1
 
-  # Add newline as a separation.
-  echo ""
-
-  if grep -E '^E:|ERROR:' "${MAIN_LOG}" > /dev/null
-  then
-    echo "Error in log file: ${MAIN_LOG}"
-    grep -E '^E:|ERROR:' ${MAIN_LOG} | sed 's/^/  /'
-  
-  else
-      echo "No error in log file: ${MAIN_LOG}"
+# Use default main.log file.
+  if [ -z "${main_log}" ]; then
+    main_log=/media/master/github/cust-live-deb/logs/main.log
   fi
 
-  # Add newline as a separation.
+# Error handling.
+  if [ ! -f "${main_log}" ]; then
+    echo "Error: ${main_log} is not a file. Aborted!"
+    exit 1;
+  fi
+
+# Add newline as a separation.
+  echo ""
+
+  if grep -E '^E:|ERROR:' "${main_log}" > /dev/null
+  then
+    echo "Error in log file: ${main_log}"
+    grep -E '^E:|ERROR:' ${main_log} | sed 's/^/  /'
+  
+  else
+      echo "No error in log file: ${main_log}"
+  fi
+
+# Add newline as a separation.
   echo ""  
