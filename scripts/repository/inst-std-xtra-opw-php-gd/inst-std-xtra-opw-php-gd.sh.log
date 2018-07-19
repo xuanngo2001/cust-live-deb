@@ -3,35 +3,27 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libgd3 php7.0-gd
-Suggested packages:
-  libgd-tools
+  php7.0-gd
 The following NEW packages will be installed:
-  libgd3 php-gd php7.0-gd
-0 upgraded, 3 newly installed, 0 to remove and 17 not upgraded.
-Need to get 164 kB of archives.
-After this operation, 604 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgd3 amd64 2.2.4-2+deb9u2 [132 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php7.0-gd amd64 7.0.30-0+deb9u1 [27.0 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php-gd all 1:7.0+49 [5,042 B]
-Fetched 164 kB in 0s (10.3 MB/s)
-Selecting previously unselected package libgd3:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53108 files and directories currently installed.)
-Preparing to unpack .../libgd3_2.2.4-2+deb9u2_amd64.deb ...
-Unpacking libgd3:amd64 (2.2.4-2+deb9u2) ...
+  php-gd php7.0-gd
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 32.1 kB of archives.
+After this operation, 146 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php7.0-gd amd64 7.0.30-0+deb9u1 [27.0 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php-gd all 1:7.0+49 [5,042 B]
+Fetched 32.1 kB in 0s (1,450 kB/s)
 Selecting previously unselected package php7.0-gd.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58383 files and directories currently installed.)
 Preparing to unpack .../php7.0-gd_7.0.30-0+deb9u1_amd64.deb ...
 Unpacking php7.0-gd (7.0.30-0+deb9u1) ...
 Selecting previously unselected package php-gd.
 Preparing to unpack .../php-gd_1%3a7.0+49_all.deb ...
 Unpacking php-gd (1:7.0+49) ...
 Processing triggers for libapache2-mod-php7.0 (7.0.30-0+deb9u1) ...
-Setting up libgd3:amd64 (2.2.4-2+deb9u2) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
 Setting up php7.0-gd (7.0.30-0+deb9u1) ...
 
 Creating config file /etc/php/7.0/mods-available/gd.ini with new version
 Setting up php-gd (1:7.0+49) ...
 Processing triggers for libapache2-mod-php7.0 (7.0.30-0+deb9u1) ...
 CLDS: * Install php-gd to run Drupal.
-CLDS: * Disk size = 3398680K. Space Used = 832K.
+CLDS: * Disk size = 4157200K. Space Used = 232K.
