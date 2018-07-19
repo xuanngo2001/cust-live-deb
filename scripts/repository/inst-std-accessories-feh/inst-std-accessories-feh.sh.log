@@ -3,23 +3,27 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libexif12 libid3tag0 libimlib2
+  libexif12 libgif7 libid3tag0 libimlib2
 Recommended packages:
   libjpeg-progs
 The following NEW packages will be installed:
-  feh libexif12 libid3tag0 libimlib2
-0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
-Need to get 760 kB of archives.
-After this operation, 3,202 kB of additional disk space will be used.
+  feh libexif12 libgif7 libid3tag0 libimlib2
+0 upgraded, 5 newly installed, 0 to remove and 17 not upgraded.
+Need to get 803 kB of archives.
+After this operation, 3,286 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libexif12 amd64 0.6.21-2+b2 [323 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libid3tag0 amd64 0.15.1b-12 [35.4 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libimlib2 amd64 1.4.8-1 [205 kB]
-Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 feh amd64 2.18-2 [197 kB]
-Fetched 760 kB in 0s (26.3 MB/s)
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgif7 amd64 5.1.4-0.4 [43.1 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libid3tag0 amd64 0.15.1b-12 [35.4 kB]
+Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libimlib2 amd64 1.4.8-1 [205 kB]
+Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 feh amd64 2.18-2 [197 kB]
+Fetched 803 kB in 0s (3,953 kB/s)
 Selecting previously unselected package libexif12:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32136 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 31988 files and directories currently installed.)
 Preparing to unpack .../libexif12_0.6.21-2+b2_amd64.deb ...
 Unpacking libexif12:amd64 (0.6.21-2+b2) ...
+Selecting previously unselected package libgif7:amd64.
+Preparing to unpack .../libgif7_5.1.4-0.4_amd64.deb ...
+Unpacking libgif7:amd64 (5.1.4-0.4) ...
 Selecting previously unselected package libid3tag0:amd64.
 Preparing to unpack .../libid3tag0_0.15.1b-12_amd64.deb ...
 Unpacking libid3tag0:amd64 (0.15.1b-12) ...
@@ -31,13 +35,14 @@ Preparing to unpack .../archives/feh_2.18-2_amd64.deb ...
 Unpacking feh (2.18-2) ...
 Setting up libid3tag0:amd64 (0.15.1b-12) ...
 Processing triggers for mime-support (3.60) ...
-Setting up libimlib2:amd64 (1.4.8-1) ...
+Setting up libgif7:amd64 (5.1.4-0.4) ...
 Processing triggers for libc-bin (2.24-11+deb9u3) ...
 Processing triggers for hicolor-icon-theme (0.15-1) ...
 Setting up libexif12:amd64 (0.6.21-2+b2) ...
+Setting up libimlib2:amd64 (1.4.8-1) ...
 Setting up feh (2.18-2) ...
 Processing triggers for libc-bin (2.24-11+deb9u3) ...
 './cld/doc/feh-help.txt' -> '/usr/local/cld/doc/feh-help.txt'
 './cld/bin/feh-ss.sh' -> '/usr/local/cld/bin/feh-ss.sh'
 CLDS: * Install command line image viewer: feh.
-CLDS: * Disk size = 2470760K. Space Used = 2412K.
+CLDS: * Disk size = 2337232K. Space Used = 2564K.
