@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-xtra-default-jre.sh ...
-  * Disk size = 1536268K. Space Used = 8K.
+  * Disk size = 1536344K. Space Used = 8K.

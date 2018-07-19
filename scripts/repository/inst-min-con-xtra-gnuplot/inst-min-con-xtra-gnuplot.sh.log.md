@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-xtra-gnuplot.sh ...
-  * Disk size = 1536448K. Space Used = 4K.
+  * Disk size = 1536524K. Space Used = 4K.

@@ -1,18 +1,45 @@
 * >>>>>>>>> Running inst-std-multimedia-mpv.sh ...
-  * After this operation, 23.8 MB of additional disk space will be used.
+  * After this operation, 178 kB of additional disk space will be used.
+  * After this operation, 138 kB of additional disk space will be used.
+  * After this operation, 193 kB of additional disk space will be used.
+  * After this operation, 189 kB of additional disk space will be used.
+  * After this operation, 99.3 kB of additional disk space will be used.
+  * After this operation, 44.3 MB of additional disk space will be used.
+  * After this operation, 154 kB of additional disk space will be used.
+  * After this operation, 143 kB of additional disk space will be used.
+  * After this operation, 899 kB of additional disk space will be used.
   * After this operation, 195 kB of additional disk space will be used.
-  * After this operation, 12.8 MB of additional disk space will be used.
+  * After this operation, 57.5 MB of additional disk space will be used.
   * Install Media Player: mpv 0.27.2 .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 2996900K. Space Used = 23332K.
+  * Disk size = 2227124K. Space Used = 87920K.
   * The following NEW packages will be installed:
   ```bash
-  libldb1 libsmbclient libtalloc2 libtevent0 libwbclient0 python-talloc
+  libavc1394-0 libraw1394-11
+  libcrystalhd3
+  libiec61883-0 libraw1394-11
+  libopencore-amrnb0
+  libopencore-amrwb0
+  libldb1 libpython-stdlib libpython2.7 libpython2.7-minimal
+  libpython2.7-stdlib libsmbclient libtalloc2 libtevent0 libwbclient0
+  mime-support python python-minimal python-talloc python2.7 python2.7-minimal
   samba-libs
+  libvo-aacenc0
+  libvo-amrwbenc0
+  libzvbi-common libzvbi0
   libuchardet0
-  libass9 libavdevice57 libavfilter6 libavresample3 libcdio-cdda1
-  libcdio-paranoia1 libcdio13 liblept5 libpostproc54 librubberband2
-  libtesseract-data libtesseract3 libuchardet0 libva-wayland1 libvidstab1.0
-  mpv
+  libass9 libasyncns0 libavc1394-0 libavcodec57 libavdevice57 libavfilter6
+  libavformat57 libavresample3 libavutil55 libbluray2 libbs2b0 libcaca0
+  libcdio-cdda1 libcdio-paranoia1 libcdio13 libchromaprint1 libcrystalhd3
+  libdc1394-22 libdvdnav4 libdvdread4 libfdk-aac1 libfftw3-double3 libflac8
+  libgme0 libgsm1 libiec61883-0 libilbc2 libjack-jackd2-0 libkvazaar3 liblept5
+  liblua5.2-0 libmfx0 libmp3lame0 libmpg123-0 libnuma1 libopencore-amrnb0
+  libopencore-amrwb0 libopenh264-2 libopenmpt0 libopus0 libpostproc54
+  libpulse0 libraw1394-11 librubberband2 libsdl2-2.0-0 libshine3 libsnappy1v5
+  libsndfile1 libsndio6.1 libsoxr0 libspeex1 libswresample2 libswscale4
+  libtesseract-data libtesseract3 libtheora0 libuchardet0 libva-drm1
+  libva-wayland1 libva-x11-1 libva1 libvdpau1 libvidstab1.0 libvo-amrwbenc0
+  libvorbisenc2 libwebp6 libwrap0 libx264-150 libx265-116 libxss1 libxvidcore4
+  libzvbi-common libzvbi0 mpv
   ```

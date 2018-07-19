@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-freecad.sh ...
   * After this operation, 357 MB of additional disk space will be used.
   * Install freecad.
-  * Disk size = 3864008K. Space Used = 461604K.
+  * Disk size = 3864084K. Space Used = 461600K.
   * The following NEW packages will be installed:
   ```bash
   fonts-lyx freecad gstreamer1.0-pulseaudio libaudio2

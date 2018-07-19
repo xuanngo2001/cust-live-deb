@@ -2,7 +2,7 @@
   * After this operation, 72.8 MB of additional disk space will be used.
   * Install pandoc to generate user manual.
   * pandoc 1.17.2.
-  * Disk size = 2220512K. Space Used = 80928K.
+  * Disk size = 1787548K. Space Used = 80916K.
   * The following NEW packages will be installed:
   ```bash
   liblua5.1-0 libluajit-5.1-2 libluajit-5.1-common libyaml-0-2 pandoc
