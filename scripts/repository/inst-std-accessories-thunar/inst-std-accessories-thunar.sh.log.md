@@ -5,7 +5,7 @@
   * After this operation, 1,197 kB of additional disk space will be used.
   * Install Thunar file manager.
   * Insert Thunar in Accessories menu.
-  * Disk size = 2514316K. Space Used = 5976K.
+  * Disk size = 2509864K. Space Used = 5976K.
   * The following NEW packages will be installed:
   ```bash
   desktop-file-utils libnotify4 libthunarx-2-0 thunar thunar-data

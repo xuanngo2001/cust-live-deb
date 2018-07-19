@@ -4,7 +4,7 @@
   * Insert Wicd menu in Network.
   * Set wicd to run on JWM startup.
   * Log at /var/log/wicd/wicd.log.
-  * Disk size = 3901196K. Space Used = 14536K.
+  * Disk size = 3896716K. Space Used = 14536K.
   * The following NEW packages will be installed:
   ```bash
   ethtool libglade2-0 libnl-3-200 libnl-genl-3-200 python-dbus python-glade2
