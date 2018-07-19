@@ -27,3 +27,10 @@ echo "qcheck-warning.sh:"
 echo "------------------"
 echo "qcheck-list-manual-packages.sh:"
 ./qcheck-list-manual-packages.sh
+
+echo "------------------"
+echo "qcheck-temporary-fix-scripts.sh:"
+./qcheck-temporary-fix-scripts.sh
+
+
+
