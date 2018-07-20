@@ -1,16 +1,15 @@
 * >>>>>>>>> Running inst-min-win-01-wm-jwm.sh ...
-  * After this operation, 123 MB of additional disk space will be used.
+  * After this operation, 122 MB of additional disk space will be used.
   * Install Window Manager jwm: JWM v2.3.6 by Joe Wingbermuehle.
   * Set .
-  * Disk size = 2140876K. Space Used = 110840K.
+  * Disk size = 2285420K. Space Used = 109216K.
   * The following NEW packages will be installed:
   ```bash
   adwaita-icon-theme dbus-user-session dconf-gsettings-backend dconf-service
   exo-utils glib-networking glib-networking-common glib-networking-services
   gsettings-desktop-schemas gtk-update-icon-cache jwm libatk-bridge2.0-0
-  libatk1.0-0 libatk1.0-data libatspi2.0-0 libavahi-client3
-  libavahi-common-data libavahi-common3 libcairo-gobject2 libcolord2 libcroco3
-  libcups2 libdbus-glib-1-2 libdconf1 libexo-1-0 libexo-common libexo-helpers
+  libatk1.0-0 libatk1.0-data libatspi2.0-0 libcairo-gobject2 libcolord2
+  libcroco3 libdbus-glib-1-2 libdconf1 libexo-1-0 libexo-common libexo-helpers
   libfribidi0 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgtk-3-0
   libgtk-3-common libgtk2.0-0 libgtk2.0-common libjson-glib-1.0-0
   libjson-glib-1.0-common libpam-systemd libpcre2-8-0 libproxy1v5
