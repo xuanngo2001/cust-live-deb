@@ -5,21 +5,21 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  ethtool libglade2-0 libnl-3-200 libnl-genl-3-200 libpcsclite1 python-dbus
-  python-glade2 python-gobject python-gobject-2 python-gtk2 python-wicd
-  wicd-daemon wicd-gtk wireless-tools wpasupplicant
+  ethtool libglade2-0 libnl-3-200 libnl-genl-3-200 python-dbus python-glade2
+  python-gobject python-gobject-2 python-gtk2 python-wicd wicd-daemon wicd-gtk
+  wireless-tools wpasupplicant
 Suggested packages:
-  pcscd python-dbus-dbg python-dbus-doc python-gtk2-doc python-gobject-2-dbg
+  python-dbus-dbg python-dbus-doc python-gtk2-doc python-gobject-2-dbg
   pm-utils wpagui libengine-pkcs11-openssl
 Recommended packages:
   rfkill gksu python-notify
 The following NEW packages will be installed:
-  ethtool libglade2-0 libnl-3-200 libnl-genl-3-200 libpcsclite1 python-dbus
-  python-glade2 python-gobject python-gobject-2 python-gtk2 python-wicd wicd
-  wicd-daemon wicd-gtk wireless-tools wpasupplicant
-0 upgraded, 16 newly installed, 0 to remove and 17 not upgraded.
-Need to get 3,300 kB of archives.
-After this operation, 10.8 MB of additional disk space will be used.
+  ethtool libglade2-0 libnl-3-200 libnl-genl-3-200 python-dbus python-glade2
+  python-gobject python-gobject-2 python-gtk2 python-wicd wicd wicd-daemon
+  wicd-gtk wireless-tools wpasupplicant
+0 upgraded, 15 newly installed, 0 to remove and 17 not upgraded.
+Need to get 3,243 kB of archives.
+After this operation, 10.7 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libglade2-0 amd64 1:2.6.4-2 [81.8 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ethtool amd64 1:4.8-1+b1 [113 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-dbus amd64 1.2.4-1+b1 [185 kB]
@@ -29,17 +29,16 @@ Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-
 Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wireless-tools amd64 30~pre9-12+b1 [114 kB]
 Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnl-3-200 amd64 3.2.27-2 [61.5 kB]
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnl-genl-3-200 amd64 3.2.27-2 [21.0 kB]
-Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpcsclite1 amd64 1.8.20-1 [56.5 kB]
-Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wpasupplicant amd64 2:2.4-1+deb9u1 [972 kB]
-Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-daemon all 1.7.4+tb2-4 [162 kB]
-Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-gtk2 amd64 2.24.0-5.1 [642 kB]
-Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-glade2 amd64 2.24.0-5.1 [43.4 kB]
-Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-gtk all 1.7.4+tb2-4 [155 kB]
-Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd all 1.7.4+tb2-4 [24.3 kB]
+Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wpasupplicant amd64 2:2.4-1+deb9u1 [972 kB]
+Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-daemon all 1.7.4+tb2-4 [162 kB]
+Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-gtk2 amd64 2.24.0-5.1 [642 kB]
+Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-glade2 amd64 2.24.0-5.1 [43.4 kB]
+Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-gtk all 1.7.4+tb2-4 [155 kB]
+Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd all 1.7.4+tb2-4 [24.3 kB]
 Preconfiguring packages ...
-Fetched 3,300 kB in 0s (33.9 MB/s)
+Fetched 3,243 kB in 0s (37.4 MB/s)
 Selecting previously unselected package libglade2-0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52803 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53066 files and directories currently installed.)
 Preparing to unpack .../00-libglade2-0_1%3a2.6.4-2_amd64.deb ...
 Unpacking libglade2-0:amd64 (1:2.6.4-2) ...
 Selecting previously unselected package ethtool.
@@ -66,31 +65,27 @@ Unpacking libnl-3-200:amd64 (3.2.27-2) ...
 Selecting previously unselected package libnl-genl-3-200:amd64.
 Preparing to unpack .../08-libnl-genl-3-200_3.2.27-2_amd64.deb ...
 Unpacking libnl-genl-3-200:amd64 (3.2.27-2) ...
-Selecting previously unselected package libpcsclite1:amd64.
-Preparing to unpack .../09-libpcsclite1_1.8.20-1_amd64.deb ...
-Unpacking libpcsclite1:amd64 (1.8.20-1) ...
 Selecting previously unselected package wpasupplicant.
-Preparing to unpack .../10-wpasupplicant_2%3a2.4-1+deb9u1_amd64.deb ...
+Preparing to unpack .../09-wpasupplicant_2%3a2.4-1+deb9u1_amd64.deb ...
 Unpacking wpasupplicant (2:2.4-1+deb9u1) ...
 Selecting previously unselected package wicd-daemon.
-Preparing to unpack .../11-wicd-daemon_1.7.4+tb2-4_all.deb ...
+Preparing to unpack .../10-wicd-daemon_1.7.4+tb2-4_all.deb ...
 Unpacking wicd-daemon (1.7.4+tb2-4) ...
 Selecting previously unselected package python-gtk2.
-Preparing to unpack .../12-python-gtk2_2.24.0-5.1_amd64.deb ...
+Preparing to unpack .../11-python-gtk2_2.24.0-5.1_amd64.deb ...
 Unpacking python-gtk2 (2.24.0-5.1) ...
 Selecting previously unselected package python-glade2.
-Preparing to unpack .../13-python-glade2_2.24.0-5.1_amd64.deb ...
+Preparing to unpack .../12-python-glade2_2.24.0-5.1_amd64.deb ...
 Unpacking python-glade2 (2.24.0-5.1) ...
 Selecting previously unselected package wicd-gtk.
-Preparing to unpack .../14-wicd-gtk_1.7.4+tb2-4_all.deb ...
+Preparing to unpack .../13-wicd-gtk_1.7.4+tb2-4_all.deb ...
 Unpacking wicd-gtk (1.7.4+tb2-4) ...
 Selecting previously unselected package wicd.
-Preparing to unpack .../15-wicd_1.7.4+tb2-4_all.deb ...
+Preparing to unpack .../14-wicd_1.7.4+tb2-4_all.deb ...
 Unpacking wicd (1.7.4+tb2-4) ...
 Setting up wireless-tools (30~pre9-12+b1) ...
 Processing triggers for mime-support (3.60) ...
 Processing triggers for desktop-file-utils (0.23-1) ...
-Setting up libpcsclite1:amd64 (1.8.20-1) ...
 Setting up python-wicd (1.7.4+tb2-4) ...
 Setting up python-gobject-2 (2.28.6-13) ...
 Setting up libglade2-0:amd64 (1:2.6.4-2) ...
@@ -123,4 +118,4 @@ CLDS: * Install Network Manager: wicd.
 CLDS: * Insert Wicd menu in Network.
 CLDS: * Set wicd to run on JWM startup.
 CLDS: * Log at /var/log/wicd/wicd.log.
-CLDS: * Disk size = 3795504K. Space Used = 14712K.
+CLDS: * Disk size = 3939864K. Space Used = 14528K.
