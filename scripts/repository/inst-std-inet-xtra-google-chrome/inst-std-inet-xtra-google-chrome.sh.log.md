@@ -4,7 +4,7 @@
   * After this operation, 7,679 kB of additional disk space will be used.
   * After this operation, 24.9 MB of additional disk space will be used.
   * After this operation, 190 MB of additional disk space will be used.
-  * Disk size = 3379900K. Space Used = 277916K.
+  * Disk size = 3437408K. Space Used = 277924K.
   * The following NEW packages will be installed:
   ```bash
   libappindicator1 libdbusmenu-glib4 libdbusmenu-gtk4 libindicator7
