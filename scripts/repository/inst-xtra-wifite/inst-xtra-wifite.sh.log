@@ -33,9 +33,9 @@ Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwir
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wireshark-common amd64 2.2.6+g32dac6a-2+deb9u3 [248 kB]
 Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 tshark amd64 2.2.6+g32dac6a-2+deb9u3 [172 kB]
 Preconfiguring packages ...
-Fetched 16.0 MB in 0s (41.2 MB/s)
+Fetched 16.0 MB in 0s (45.3 MB/s)
 Selecting previously unselected package libgeoip1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 90183 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 90227 files and directories currently installed.)
 Preparing to unpack .../00-libgeoip1_1.6.9-4_amd64.deb ...
 Unpacking libgeoip1:amd64 (1.6.9-4) ...
 Selecting previously unselected package libpcap0.8:amd64.
@@ -95,40 +95,45 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  iw rfkill usbutils
+  ethtool iw rfkill usbutils
 Recommended packages:
   ieee-data crda
 The following NEW packages will be installed:
-  aircrack-ng iw reaver rfkill usbutils
-0 upgraded, 5 newly installed, 0 to remove and 17 not upgraded.
-Need to get 3,139 kB of archives.
-After this operation, 6,068 kB of additional disk space will be used.
+  aircrack-ng ethtool iw reaver rfkill usbutils
+0 upgraded, 6 newly installed, 0 to remove and 17 not upgraded.
+Need to get 3,251 kB of archives.
+After this operation, 6,449 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 iw amd64 4.9-0.1 [70.3 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 usbutils amd64 1:007-4+b1 [216 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 rfkill amd64 0.5-1+b1 [8,284 B]
-Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 aircrack-ng amd64 1:1.2-0~rc4-2 [2,717 kB]
-Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 reaver amd64 1.4-2+b2 [127 kB]
-Fetched 3,139 kB in 0s (12.5 MB/s)
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ethtool amd64 1:4.8-1+b1 [113 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 usbutils amd64 1:007-4+b1 [216 kB]
+Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 rfkill amd64 0.5-1+b1 [8,284 B]
+Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 aircrack-ng amd64 1:1.2-0~rc4-2 [2,717 kB]
+Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 reaver amd64 1.4-2+b2 [127 kB]
+Fetched 3,251 kB in 0s (38.0 MB/s)
 Selecting previously unselected package iw.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 90738 files and directories currently installed.)
-Preparing to unpack .../archives/iw_4.9-0.1_amd64.deb ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 90782 files and directories currently installed.)
+Preparing to unpack .../0-iw_4.9-0.1_amd64.deb ...
 Unpacking iw (4.9-0.1) ...
+Selecting previously unselected package ethtool.
+Preparing to unpack .../1-ethtool_1%3a4.8-1+b1_amd64.deb ...
+Unpacking ethtool (1:4.8-1+b1) ...
 Selecting previously unselected package usbutils.
-Preparing to unpack .../usbutils_1%3a007-4+b1_amd64.deb ...
+Preparing to unpack .../2-usbutils_1%3a007-4+b1_amd64.deb ...
 Unpacking usbutils (1:007-4+b1) ...
 Selecting previously unselected package rfkill.
-Preparing to unpack .../rfkill_0.5-1+b1_amd64.deb ...
+Preparing to unpack .../3-rfkill_0.5-1+b1_amd64.deb ...
 Unpacking rfkill (0.5-1+b1) ...
 Selecting previously unselected package aircrack-ng.
-Preparing to unpack .../aircrack-ng_1%3a1.2-0~rc4-2_amd64.deb ...
+Preparing to unpack .../4-aircrack-ng_1%3a1.2-0~rc4-2_amd64.deb ...
 Unpacking aircrack-ng (1:1.2-0~rc4-2) ...
 Selecting previously unselected package reaver.
-Preparing to unpack .../reaver_1.4-2+b2_amd64.deb ...
+Preparing to unpack .../5-reaver_1.4-2+b2_amd64.deb ...
 Unpacking reaver (1.4-2+b2) ...
 Setting up reaver (1.4-2+b2) ...
 Setting up usbutils (1:007-4+b1) ...
 Setting up iw (4.9-0.1) ...
+Setting up ethtool (1:4.8-1+b1) ...
 Setting up rfkill (0.5-1+b1) ...
 Setting up aircrack-ng (1:1.2-0~rc4-2) ...
 CLDS: * Install wifite.
-CLDS: * Disk size = 5427852K. Space Used = 125380K.
+CLDS: * Disk size = 5485384K. Space Used = 125892K.
