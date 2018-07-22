@@ -1,5 +1,5 @@
   # If no argument.
-	  if [ $# -eq 0 ]; then
+	  if [ "$#" -eq 0 ]; then
 	    echo "ERROR: $(basename $0): No argument. Aborted!"
 	    exit 1;
 	  fi
