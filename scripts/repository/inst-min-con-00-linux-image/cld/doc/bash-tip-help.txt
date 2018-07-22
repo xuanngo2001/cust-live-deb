@@ -10,7 +10,7 @@
     export -f get_executing_path
     
   # Timestamp.
-    DATE_STRING=$(date +"%Y-%m-%d.%0k.%M.%S")
+    date_string=$(date +"%Y-%m-%d.%0k.%M.%S")
   
   # dirname: Always double quotes. Otherwise, issue with path with spaces.
     echo "$(dirname "${line_with_spaces}")"
@@ -20,7 +20,7 @@
 	  sata_port=$((sata_port+1))
   
   # Increment variable inside loop.
-	  let index=index+1
+    let index=index+1
 
   # Get total elapsed time.	  
 		# Get time as a UNIX timestamp (seconds elapsed since Jan 1, 1970 0:00 UTC).
@@ -32,5 +32,5 @@
 		# Get total elapsed time.
 		T="$(($(date +%s)-T))"
 		printf "Elapsed time: %02d:%02d:%02d:%02d [DD:HH:MM:SS]\n" "$((T/86400))" "$((T/3600%24))" "$((T/60%60))" "$((T%60))"
-		
+
 		
