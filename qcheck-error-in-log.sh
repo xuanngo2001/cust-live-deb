@@ -17,6 +17,7 @@ main_log=$1
 # Add newline as a separation.
   echo ""
 
+# Get all errors.
   if grep -E '^E:|ERROR:' "${main_log}" > /dev/null
   then
     echo "Error in log file: ${main_log}"

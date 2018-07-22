@@ -1,6 +1,7 @@
 #!/bin/bash
 # Description: Check error in log file.
 
+main_log=$1
 
 # Use default main.log file.
   if [ -z "${main_log}" ]; then

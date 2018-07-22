@@ -1,11 +1,23 @@
 #!/bin/bash
 # Description: Check warnings in log file.
 
-MAIN_LOG=/media/master/github/cust-live-deb/logs/main.log
+main_log=$1
 
-  # Add newline as a separation.
+# Use default main.log file.
+  if [ -z "${main_log}" ]; then
+    main_log=/media/master/github/cust-live-deb/logs/main.log
+  fi
+
+# Error handling.
+  if [ ! -f "${main_log}" ]; then
+    echo "Error: ${main_log} is not a file. Aborted!"
+    exit 1;
+  fi
+
+# Add newline as a separation.
   echo ""
 
+# Get all warnings.
   if grep -iE 'Warning:' "${MAIN_LOG}" > /dev/null
   then
     echo "Warnings in log file: ${MAIN_LOG}"
@@ -19,5 +31,8 @@ MAIN_LOG=/media/master/github/cust-live-deb/logs/main.log
       echo "No warning in log file: ${MAIN_LOG}"
   fi
 
-  # Add newline as a separation.
+# Add newline as a separation.
   echo ""  
+  
+  
+  

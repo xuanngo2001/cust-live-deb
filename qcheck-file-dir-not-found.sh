@@ -1,11 +1,24 @@
 #!/bin/bash
 # Description: Check error in log file.
 
-main_log=/media/master/github/cust-live-deb/logs/main.log
+main_log=$1
 
-  # Add newline as a separation.
+# Use default main.log file.
+  if [ -z "${main_log}" ]; then
+    main_log=/media/master/github/cust-live-deb/logs/main.log
+  fi
+
+# Error handling.
+  if [ ! -f "${main_log}" ]; then
+    echo "Error: ${main_log} is not a file. Aborted!"
+    exit 1;
+  fi
+
+
+# Add newline as a separation.
   echo ""
 
+# Get 'No such file or directory'.
   grep_pattern='No such file or directory'
   if grep -F "${grep_pattern}" "${main_log}" > /dev/null
   then
@@ -19,5 +32,8 @@ main_log=/media/master/github/cust-live-deb/logs/main.log
       echo "No error in log file: ${main_log}"
   fi
 
-  # Add newline as a separation.
+# Add newline as a separation.
   echo ""  
+  
+  
+  

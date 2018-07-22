@@ -1,23 +1,37 @@
 #!/bin/bash
 # Description: Display removed Debian packages.
 
-MAIN_LOG=/media/master/github/cust-live-deb/logs/main.log
+main_log=$1
 
-  REMOVED_PACKAGES_MARKER="The following packages will be REMOVED:"
-  PKG_REMOVED=$(cat "${MAIN_LOG}" | sed -n "/${REMOVED_PACKAGES_MARKER}/,/^[^ *]/p" | grep '^  ')
-  PKG_REMOVED=$(echo "${PKG_REMOVED}" | tr ' ' '\n')  # 1 package per line.
-  PKG_REMOVED=$(echo "${PKG_REMOVED}" | awk NF)       # Remove empty line.
-  PKG_REMOVED=$(echo "${PKG_REMOVED}" | sed 's/^/   /') # Indent results.
+# Use default main.log file.
+  if [ -z "${main_log}" ]; then
+    main_log=/media/master/github/cust-live-deb/logs/main.log
+  fi
 
-  # Add newline as a separation.
+# Error handling.
+  if [ ! -f "${main_log}" ]; then
+    echo "Error: ${main_log} is not a file. Aborted!"
+    exit 1;
+  fi
+
+# Add newline as a separation.
   echo ""
-  
-  if [ $(echo "${PKG_REMOVED}"| tr -d ' '| wc -w) -gt 0 ]; then
-    echo "${REMOVED_PACKAGES_MARKER}"
-    echo "${PKG_REMOVED}"
+
+# Get packages that have been removed.  
+  removed_packages_marker="The following packages will be REMOVED:"
+  pkg_removed=$(cat "${main_log}" | sed -n "/${removed_packages_marker}/,/^[^ *]/p" | grep '^  ')
+  pkg_removed=$(echo "${pkg_removed}" | tr ' ' '\n')  # 1 package per line.
+  pkg_removed=$(echo "${pkg_removed}" | awk NF)       # Remove empty line.
+  pkg_removed=$(echo "${pkg_removed}" | sed 's/^/   /') # Indent results.  
+  if [ $(echo "${pkg_removed}"| tr -d ' '| wc -w) -gt 0 ]; then
+    echo "${removed_packages_marker}"
+    echo "${pkg_removed}"
   else
     echo "No package has been removed!"
   fi
   
-  # Add newline as a separation.
+# Add newline as a separation.
   echo ""  
+  
+  
+  
