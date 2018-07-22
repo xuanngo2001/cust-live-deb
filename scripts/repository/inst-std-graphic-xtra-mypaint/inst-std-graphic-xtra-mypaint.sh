@@ -11,8 +11,12 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   apt-get install -d -y <your-package> 
 
 # Install mypaint.
-apt-get -y install mypaint
+  apt-get -y install mypaint
 
+# Insert Mypaint menu in Graphics
+  sed -i "/Graphics\">/ r jwmrc-menus-graphics-mypaint.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
-echo "${GV_LOG} * Install mypaint."
+  echo "${GV_LOG} * Install mypaint."
+  
+
