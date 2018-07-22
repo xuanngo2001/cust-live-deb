@@ -11,6 +11,15 @@
 	  done
 
   # Loop through arguments.
-		for arg in "$@"; do
+		for arg in "${@:2}"; do # Skip the first argument.
 		  echo "${arg}"
+		done
+
+	# Loop using counter.
+		MAX=5
+		position=11
+		for ((i=0; i < MAX ; i++))
+		do
+			echo "i=$i , position=$position"
+			let position+=1 # Same as 'i=i+1
 		done
