@@ -2,7 +2,7 @@
   * After this operation, 65.5 MB of additional disk space will be used.
   * Install Image Editor: Pinta.
   * Insert Pinta menu in Graphics.
-  * Disk size = 2243944K. Space Used = 97376K.
+  * Disk size = 2679216K. Space Used = 97376K.
   * The following NEW packages will be installed:
   ```bash
   binutils cli-common gnome-icon-theme libgdiplus libglib2.0-cil libgtk2.0-cil
