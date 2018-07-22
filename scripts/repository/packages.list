@@ -40,8 +40,6 @@ unrar
 zip
 unzip
 p7zip
-# ./inst-min-con-deb-multimedia/inst-min-con-deb-multimedia.sh
-
 # ./inst-min-con-dircolors/inst-min-con-dircolors.sh
 
 # ./inst-min-con-filesystem-dosfstools/inst-min-con-filesystem-dosfstools.sh
@@ -85,6 +83,8 @@ rsync
 squashfs-tools
 # ./inst-min-con-mtp-jmtpfs/inst-min-con-mtp-jmtpfs.sh
 jmtpfs
+# ./inst-min-con-net-tools/inst-min-con-net-tools.sh
+net-tools
 # ./inst-min-con-ntp/inst-min-con-ntp.sh
 ntp
 # ./inst-min-con-numlock/inst-min-con-numlock.sh
@@ -109,24 +109,20 @@ pv
 dirmngr
 xz-utils
 aptly
-# ./inst-min-con-xtra-cld-dev-vboxguest/inst-min-con-xtra-cld-dev-vboxguest.sh
-linux-headers-amd64
-dkms
-libc6-dev
-virtualbox-guest-dkms
-virtualbox-guest-utils
+gpgv1
+gnupg1
 # ./inst-min-con-xtra-curl/inst-min-con-xtra-curl.sh
 curl
-# ./inst-min-con-xtra-default-jre/inst-min-con-xtra-default-jre.sh
-default-jre
+# ./inst-min-con-xtra-default-jre-headless/inst-min-con-xtra-default-jre-headless.sh
+default-jre-headless
 # ./inst-min-con-xtra-dev-tool-tree/inst-min-con-xtra-dev-tool-tree.sh
 tree
 # ./inst-min-con-xtra-encoding-libtext-iconv-perl/inst-min-con-xtra-encoding-libtext-iconv-perl.sh
 libtext-iconv-perl
 # ./inst-min-con-xtra-fuse/inst-min-con-xtra-fuse.sh
 fuse
-# ./inst-min-con-xtra-gnuplot/inst-min-con-xtra-gnuplot.sh
-gnuplot
+# ./inst-min-con-xtra-gnuplot-nox/inst-min-con-xtra-gnuplot-nox.sh
+gnuplot-nox
 # ./inst-min-con-xtra-imagemagick/inst-min-con-xtra-imagemagick.sh
 imagemagick
 # ./inst-min-con-xtra-iso-iat/inst-min-con-xtra-iso-iat.sh
@@ -145,6 +141,8 @@ php
 sqlite3
 # ./inst-min-con-xtra-timezone/inst-min-con-xtra-timezone.sh
 
+# ./inst-min-win-00-xorg/inst-min-win-00-00-xorg-fix.sh
+libglapi-mesa=13.0.6-1+b2
 # ./inst-min-win-00-xorg/inst-min-win-00-xorg.sh
 xinit
 xserver-xorg
@@ -201,8 +199,12 @@ fonts-liberation
 pinta
 # ./inst-std-graphic-xtra-cheese/inst-std-graphic-xtra-cheese.sh
 cheese
+# ./inst-std-graphic-xtra-gnuplot-x11/inst-std-graphic-xtra-gnuplot-x11.sh
+gnuplot-x11
 # ./inst-std-graphic-xtra-guvcview/inst-std-graphic-xtra-guvcview.sh
 guvcview
+# ./inst-std-graphic-xtra-mypaint/inst-std-graphic-xtra-mypaint.sh
+mypaint
 # ./inst-std-help-manuals-html/inst-std-help-manuals-html.sh
 
 # ./inst-std-inet-firefox-esr/inst-std-inet-firefox-esr.sh
@@ -211,6 +213,8 @@ firefox-esr
 # ./inst-std-inet-xtra-google-chrome-browser-plugin-freshplayer-pepperflash/inst-std-inet-xtra-google-chrome-browser-plugin-freshplayer-pepperflash.sh
 libevent-pthreads-2.0-5
 browser-plugin-freshplayer-pepperflash
+# ./inst-std-inet-xtra-google-chrome/inst-std-inet-xtra-00-google-chrome-fix.sh
+libappindicator3-1
 # ./inst-std-inet-xtra-google-chrome/inst-std-inet-xtra-google-chrome.sh
 libappindicator1
 libdbusmenu-glib4
@@ -224,6 +228,8 @@ lsb-release
 google-chrome-stable
 # ./inst-std-inet-xtra-transmission-gtk/inst-std-inet-xtra-transmission-gtk.sh
 transmission-gtk
+# ./inst-std-multimedia-00-debmultimedia-keyring/inst-std-multimedia-00-debmultimedia-keyring.sh
+
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
 libavc1394-0
 libcrystalhd3
@@ -236,10 +242,10 @@ libvo-amrwbenc0
 libzvbi0
 libuchardet0
 mpv
+# ./inst-std-office-libreoffice/inst-std-office-00-libreoffice-fix.sh
+libgpgmepp6
 # ./inst-std-office-libreoffice/inst-std-office-libreoffice.sh
 libreoffice
-# ./inst-std-office-xtra-projectlibre/inst-std-office-xtra-projectlibre.sh
-
 # ./inst-std-system-alsamixer/inst-std-system-alsamixer.sh
 
 # ./inst-std-system-conky/inst-std-system-conky.sh
@@ -259,8 +265,6 @@ wicd
 gsimplecal
 # ./inst-std-system-xtra-hardinfo/inst-std-system-xtra-hardinfo.sh
 hardinfo
-# ./inst-std-system-xtra-webcam-camorama/inst-std-system-xtra-webcam-camorama.sh
-camorama
 # ./inst-std-xtra-blender/inst-std-xtra-blender.sh
 libsensors4
 libgl1-mesa-dri
@@ -281,8 +285,6 @@ php-mysql
 php-xml
 # ./inst-std-xtra-opw-php-zip/inst-std-xtra-opw-php-zip.sh
 php-zip
-# ./inst-xtra-dev-tools-ant/inst-xtra-dev-tools-ant.sh
-ant
 # ./inst-xtra-freecad/inst-xtra-freecad.sh
 freecad
 # ./inst-xtra-games-freeciv-client-gtk/inst-xtra-games-freeciv-client-gtk.sh
@@ -319,12 +321,6 @@ linux-headers-amd64
 dkms
 libc6-dev
 build-essential
-# ./inst-xtra-vboxguest-additions-x11/inst-xtra-vboxguest-additions-x11.sh
-linux-headers-amd64
-libnotify-bin
-dkms
-libc6-dev
-virtualbox-guest-x11
 # ./inst-xtra-virtualbox/inst-xtra-virtualbox.sh
 virtualbox-5.2
 libqt5opengl5
@@ -370,8 +366,6 @@ zfs-initramfs
 # ./inst-zclean-02-remove-block-services/inst-zclean-02-remove-block-services.sh
 
 # ./inst-zclean-03-default-filemanager/inst-zclean-03-default-filemanager.sh
-
-# ./inst-zclean-98-zerosizing-docs/inst-zclean-98-zerosizing-docs.sh
 
 # ./inst-zclean-98-zerosizing/inst-zclean-98-zerosizing.sh
 
