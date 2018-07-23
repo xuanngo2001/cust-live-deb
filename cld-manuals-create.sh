@@ -12,8 +12,10 @@ WIKI_DIR=$(readlink -ev "${WIKI_DIR}")
 
 ( 
   cd ${WIKI_DIR}; 
-  ./generate-manual.sh 
+  ./generate-manual.sh
   yes | cp -av *-manual.md    /media/master/github/cust-live-deb/repo/inst-min-win-jwm-help-manuals-text/cld/doc
   yes | cp -av *-manual.html  /media/master/github/cust-live-deb/repo/inst-std-help-manuals-html/cld/doc
+  
+  ./git-common-commits.sh
 )
 
