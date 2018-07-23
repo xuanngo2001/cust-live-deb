@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Copy all documentations to ${HOME}/cld/docs.
 DOC_DIR=/usr/local/cld/doc
 mkdir -p ${DOC_DIR}
-yes | cp -R ../../settings/doc/cust-live-deb.wiki/*-manual.md ${DOC_DIR}
+yes | cp -a /media/master/github/cust-live-deb.wiki/*-manual.md ${DOC_DIR}
 
 # Overwrite manuals menu.
 yes | cp -av ./cld/  /usr/local
