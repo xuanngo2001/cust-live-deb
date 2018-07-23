@@ -33,6 +33,7 @@ yes | cp -av ./cld  /usr/local
 MPV_CONFIG_DIR=${HOME}/.config/mpv/
 mkdir -p ${MPV_CONFIG_DIR} 
 cat mpv.conf >> ${MPV_CONFIG_DIR}/mpv.conf
+cat input.conf >> ${MPV_CONFIG_DIR}/input.conf
 
 # Log
 echo "${GV_LOG} * Install Media Player: $(mpv --version | head -n 1 | sed 's/(.*//')."
