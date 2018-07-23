@@ -20,6 +20,6 @@ sed -i "/Graphics\">/ r jwmrc-menus-graphics-guvcview.xml" "${CLD_JWMRC_DIR}/jwm
 echo "${GV_LOG} * Install guvcview."
 echo "${GV_LOG} * Insert guvcview in Graphics menu."
 
-# REJECTED because it crashes X server after 5 minutes of recording.
+# REJECTED because it crashes X server after 5 minutes of recording. Guvcview cashes with mono v4.6.2.7+dfsg-1.
 #   Space Used = 6504K
 
