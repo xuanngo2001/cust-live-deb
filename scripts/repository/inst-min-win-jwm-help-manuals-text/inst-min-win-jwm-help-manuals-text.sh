@@ -8,13 +8,10 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Copy all documentations to ${HOME}/cld/docs.
-DOC_DIR=/usr/local/cld/doc
-mkdir -p ${DOC_DIR}
-yes | cp -a /media/master/github/cust-live-deb.wiki/*-manual.md ${DOC_DIR}
 
-# Overwrite manuals menu.
-yes | cp -av ./cld/  /usr/local
+# Add to CLD/
+  yes | cp -av ./cld  /usr/local
 
 # Log
-echo "${GV_LOG} * Add Help menu in JWM."
+  echo "${GV_LOG} * Add user & developer manuals(text) in Help menu."
+

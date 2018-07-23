@@ -1,0 +1,963 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>User manual</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+  /*
+      Buttondown
+      A Markdown/MultiMarkdown/Pandoc HTML output CSS stylesheet
+      Author: Ryan Gray
+      Date: 15 Feb 2011
+      Revised: 21 Feb 2012
+     
+      General style is clean, with minimal re-definition of the defaults or 
+      overrides of user font settings. The body text and header styles are 
+      left alone except title, author and date classes are centered. A Pandoc TOC 
+      is not printed, URLs are printed after hyperlinks in parentheses. 
+      Block quotes are italicized. Tables are lightly styled with lines above 
+      and below the table and below the header with a boldface header. Code 
+      blocks are line wrapped. 
+  
+      All elements that Pandoc and MultiMarkdown use should be listed here, even 
+      if the style is empty so you can easily add styling to anything.
+      
+      There are some elements in here for HTML5 output of Pandoc, but I have not 
+      gotten around to testing that yet.
+  */
+  
+  /* NOTES:
+  
+      Stuff tried and failed:
+      
+      It seems that specifying font-family:serif in Safari will always use 
+      Times New Roman rather than the user's preferences setting.
+      
+      Making the font size different or a fixed value for print in case the screen 
+      font size is making the print font too big: Making font-size different for 
+      print than for screen causes horizontal lines to disappear in math when using 
+      MathJax under Safari.
+  */
+  
+  /* ---- Front Matter ---- */
+  
+  /* Pandoc header DIV. Contains .title, .author and .date. Comes before div#TOC. 
+     Only appears if one of those three are in the document.
+  */
+  
+  div#header, header
+      {
+      /* Put border on bottom. Separates it from TOC or body that comes after it. */
+      border-bottom: 1px solid #aaa;
+      margin-bottom: 0.5em;
+      }
+  
+  .title /* Pandoc title header (h1.title) */
+      {
+      text-align: center;
+      }
+  
+  .author, .date /* Pandoc author(s) and date headers (h2.author and h3.date) */
+      {
+      text-align: center;
+      }
+  
+  /* Pandoc table of contents DIV when using the --toc option.
+     NOTE: this doesn't support Pandoc's --id-prefix option for #TOC and #header. 
+     Probably would need to use div[id$='TOC'] and div[id$='header'] as selectors.
+  */
+  
+  div#TOC, nav#TOC
+      {
+      /* Put border on bottom to separate it from body. */
+      border-bottom: 1px solid #aaa;
+      margin-bottom: 0.5em;
+      }
+  
+  @media print
+      {
+      div#TOC, nav#TOC
+          {
+          /* Don't display TOC in print */
+          display: none;
+          }
+      }
+  
+  /* ---- Headers and sections ---- */
+  
+  h1, h2, h3, h4, h5, h6
+  {
+      font-family: "Helvetica Neue", Helvetica, "Liberation Sans", Calibri, Arial, sans-serif; /* Sans-serif headers */
+  
+      /* font-family: "Liberation Serif", "Georgia", "Times New Roman", serif; /* Serif headers */
+  
+      page-break-after: avoid; /* Firefox, Chrome, and Safari do not support the property value "avoid" */
+  }
+  
+  /* Pandoc with --section-divs option */
+  
+  div div, section section /* Nested sections */
+      {
+      margin-left: 2em; /* This will increasingly indent nested header sections */
+      }
+  
+  p {}
+  
+  blockquote
+      { 
+      font-style: italic;
+      }
+  
+  li /* All list items */
+      {
+      }
+  
+  li > p /* Loosely spaced list item */
+      {
+      margin-top: 1em; /* IE: lack of space above a <li> when the item is inside a <p> */
+      }
+  
+  ul /* Whole unordered list */
+      {
+      }
+  
+  ul li /* Unordered list item */
+      {
+      }
+  
+  ol /* Whole ordered list */
+      {
+      }
+  
+  ol li /* Ordered list item */
+      {
+      }
+  
+  hr {}
+  
+  /* ---- Some span elements --- */
+  
+  sub /* Subscripts. Pandoc: H~2~O */
+      {
+      }
+  
+  sup /* Superscripts. Pandoc: The 2^nd^ try. */
+      {
+      }
+      
+  em /* Emphasis. Markdown: *emphasis* or _emphasis_ */
+      {
+      }
+      
+  em > em /* Emphasis within emphasis: *This is all *emphasized* except that* */
+      {
+      font-style: normal;
+      }
+  
+  strong /* Markdown **strong** or __strong__ */
+      {
+      }
+  
+  /* ---- Links (anchors) ---- */
+  
+  a /* All links */
+      {
+      /* Keep links clean. On screen, they are colored; in print, they do nothing anyway. */
+      text-decoration: none;
+      }
+  
+  @media screen
+      {
+      a:hover
+          {
+          /* On hover, we indicate a bit more that it is a link. */
+          text-decoration: underline;
+          }
+      }
+  
+  @media print
+      {
+      a   {
+          /* In print, a colored link is useless, so un-style it. */
+          color: black;
+          background: transparent;
+          }
+          
+      a[href^="http://"]:after, a[href^="https://"]:after
+          {
+          /* However, links that go somewhere else, might be useful to the reader,
+             so for http and https links, print the URL after what was the link 
+             text in parens
+          */
+          content: " (" attr(href) ") ";
+          font-size: 90%;
+          }
+      }
+  
+  /* ---- Images ---- */
+  
+  img
+      {
+      /* Let it be inline left/right where it wants to be, but verticality make 
+         it in the middle to look nicer, but opinions differ, and if in a multi-line 
+         paragraph, it might not be so great. 
+      */
+      vertical-align: middle;
+      }
+  
+  div.figure /* Pandoc figure-style image */
+      {
+      /* Center the image and caption */
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-style: italic;
+      }
+  
+  p.caption /* Pandoc figure-style caption within div.figure */
+      {
+      /* Inherits div.figure props by default */
+      }
+  
+  /* ---- Code blocks and spans ---- */
+  
+  pre, code 
+      {
+      font-family: "Courier New", Courier, monospace;
+      background-color: #fdf7ee;
+      /* BEGIN word wrap */
+      /* Need all the following to word wrap instead of scroll box */
+      /* This will override the overflow:auto if present */
+      white-space: pre-wrap; /* css-3 */
+      white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+      white-space: -pre-wrap; /* Opera 4-6 */
+      white-space: -o-pre-wrap; /* Opera 7 */
+      word-wrap: break-word; /* Internet Explorer 5.5+ */
+      /* END word wrap */
+      }
+  
+  pre /* Code blocks */
+      {
+      /* Distinguish pre blocks from other text by more than the font with a background tint. */
+      padding: 0.5em; /* Since we have a background color */
+      border-radius: 5px; /* Softens it */
+      /* Give it a some definition */
+      border: 1px solid #aaa;
+      /* Set it off left and right, seems to look a bit nicer when we have a background */
+      margin-left:  0.5em;
+      margin-right: 0.5em;
+      }
+  
+  @media screen
+      {
+      pre
+          {
+          /* On screen, use an auto scroll box for long lines, unless word-wrap is enabled */
+          white-space: pre;
+          overflow: auto;
+          /* Dotted looks better on screen and solid seems to print better. */
+          border: 1px dotted #777;
+          }
+      }
+  
+  code /* All inline code spans */
+      {
+      }
+  
+  p > code, li > code /* Code spans in paragraphs and tight lists */
+      {
+      /* Pad a little from adjacent text */
+      padding-left:  2px;
+      padding-right: 2px;
+      }
+      
+  li > p code /* Code span in a loose list */
+      {
+      /* We have room for some more background color above and below */
+      padding: 2px;
+      }
+  
+  /* ---- Math ---- */
+  
+  span.math /* Pandoc inline math default and --jsmath inline math */
+      {
+      /* Tried font-style:italic here, and it messed up MathJax rendering in some browsers. Maybe don't mess with at all. */
+      }
+      
+  div.math /* Pandoc --jsmath display math */
+      {
+      }
+      
+  span.LaTeX /* Pandoc --latexmathml math */
+      {
+      } 
+  
+  eq /* Pandoc --gladtex math */
+      {
+      } 
+  
+  /* ---- Tables ---- */
+  
+  /*  A clean textbook-like style with horizontal lines above and below and under 
+      the header. Rows highlight on hover to help scanning the table on screen.
+  */
+  
+  table
+      {
+      border-collapse: collapse;
+      border-spacing: 0; /* IE 6 */
+  
+      border-bottom: 2pt solid #000;
+      border-top: 2pt solid #000; /* The caption on top will not have a bottom-border */
+  
+      }
+      
+  thead /* Entire table header */
+      {
+      border-bottom: 1pt solid #000;
+      background-color: #eee; /* Does this BG print well? */
+      }
+  
+  tr.header /* Each header row */
+      {
+      } 
+  
+  tbody /* Entire table  body */
+      {
+      }
+  
+  /* Table body rows */
+  
+  tr  {
+      }
+  tr.odd:hover, tr.even:hover /* Use .odd and .even classes to avoid styling rows in other tables */
+      {
+      background-color: #eee;
+      }
+      
+  /* Odd and even rows */
+  tr.odd {}
+  tr.even {}
+  
+  td, th /* Table cells and table header cells */
+      { 
+      vertical-align: top; /* Word */
+      vertical-align: baseline; /* Others */
+      padding-left:   0.5em;
+      padding-right:  0.5em;
+      padding-top:    0.2em;
+      padding-bottom: 0.2em;
+      }
+      
+  /* Removes padding on left and right of table for a tight look. Good if thead has no background color*/
+  /*
+  tr td:last-child, tr th:last-child
+      {
+      padding-right: 0;
+      }
+  tr td:first-child, tr th:first-child 
+      {
+      padding-left: 0;
+      }
+  */
+  
+  th /* Table header cells */
+      {
+      font-weight: bold; 
+      }
+  
+  tfoot /* Table footer (what appears here if caption is on top?) */
+      {
+      }
+  
+  caption /* This is for a table caption tag, not the p.caption Pandoc uses in a div.figure */
+      {
+      caption-side: top;
+      border: none;
+      font-size: 0.9em;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 0.3em; /* Good for when on top */
+      padding-bottom: 0.2em;
+      }
+  
+  /* ---- Definition lists ---- */
+  
+  dl /* The whole list */
+      {
+      border-top: 2pt solid black;
+      padding-top: 0.5em;
+      border-bottom: 2pt solid black;
+      }
+  
+  dt /* Definition term */
+      {
+      font-weight: bold;
+      }
+  
+  dd+dt /* 2nd or greater term in the list */
+      {
+      border-top: 1pt solid black;
+      padding-top: 0.5em;
+      }
+      
+  dd /* A definition */
+      {
+      margin-bottom: 0.5em;
+      }
+  
+  dd+dd /* 2nd or greater definition of a term */
+      {
+      border-top: 1px solid black; /* To separate multiple definitions */
+      }
+      
+  /* ---- Footnotes ---- */
+  
+  a.footnote, a.footnoteRef { /* Pandoc, MultiMarkdown footnote links */
+      font-size: small; 
+      vertical-align: text-top;
+  }
+  
+  a[href^="#fnref"], a.reversefootnote /* Pandoc, MultiMarkdown, ?? footnote back links */
+      {
+      }
+  
+  @media print
+      {
+      a[href^="#fnref"], a.reversefootnote /* Pandoc, MultiMarkdown */
+          {
+          /* Don't display these at all in print since the arrow is only something to click on */
+          display: none;
+          }
+      }
+      
+  div.footnotes /* Pandoc footnotes div at end of the document */
+      {
+      }
+      
+  div.footnotes li[id^="fn"] /* A footnote item within that div */
+      {
+      }
+  
+  /* You can class stuff as "noprint" to not print. 
+     Useful since you can't set this media conditional inside an HTML element's 
+     style attribute (I think), and you don't want to make another stylesheet that 
+     imports this one and adds a class just to do this.
+  */
+  
+  @media print
+      {
+      .noprint
+          {
+          display:none;
+          }
+      }
+  
+  </style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">User manual</h1>
+</div>
+<div id="TOC">
+<ul>
+<li><a href="#system-settings"><span class="toc-section-number">1</span> System settings</a></li>
+<li><a href="#applications"><span class="toc-section-number">2</span> Applications</a><ul>
+<li><a href="#application-on-the-menu"><span class="toc-section-number">2.1</span> Application on the Menu</a></li>
+<li><a href="#command-line-applications"><span class="toc-section-number">2.2</span> Command line applications</a></li>
+<li><a href="#useful-commands"><span class="toc-section-number">2.3</span> Useful commands</a></li>
+<li><a href="#hot-keys"><span class="toc-section-number">2.4</span> Hot keys</a><ul>
+<li><a href="#main-operations"><span class="toc-section-number">2.4.1</span> Main operations</a></li>
+<li><a href="#operations-on-window"><span class="toc-section-number">2.4.2</span> Operations on window</a></li>
+</ul></li>
+<li><a href="#install-new-applications"><span class="toc-section-number">2.5</span> Install new applications</a></li>
+</ul></li>
+<li><a href="#persistence"><span class="toc-section-number">3</span> Persistence</a><ul>
+<li><a href="#disable-persistence"><span class="toc-section-number">3.1</span> Disable persistence</a></li>
+</ul></li>
+<li><a href="#remaster-live-system"><span class="toc-section-number">4</span> Remaster live system</a><ul>
+<li><a href="#tips"><span class="toc-section-number">4.1</span> Tips</a></li>
+</ul></li>
+<li><a href="#upgrade"><span class="toc-section-number">5</span> Upgrade</a></li>
+<li><a href="#cust-live-deb-hangs"><span class="toc-section-number">6</span> Cust-Live-Deb hangs</a><ul>
+<li><a href="#memory-is-max-out"><span class="toc-section-number">6.1</span> Memory is max out</a></li>
+</ul></li>
+<li><a href="#boot-sequence"><span class="toc-section-number">7</span> Boot sequence</a></li>
+<li><a href="#help"><span class="toc-section-number">8</span> Help</a><ul>
+<li><a href="#set-desktop-background-wallpaper"><span class="toc-section-number">8.1</span> Set desktop background / wallpaper</a></li>
+<li><a href="#set-keyboard"><span class="toc-section-number">8.2</span> Set keyboard</a></li>
+<li><a href="#access-files-of-your-smartphones-that-use-media-transfer-protocol-mtp"><span class="toc-section-number">8.3</span> Access files of your smartphones that use Media Transfer Protocol (MTP)</a></li>
+<li><a href="#find-what-video-card-am-i-using"><span class="toc-section-number">8.4</span> Find what video card am I using?</a></li>
+<li><a href="#turn-on-wlan0-network-interface"><span class="toc-section-number">8.5</span> Turn on wlan0 network interface</a></li>
+<li><a href="#setup-sound"><span class="toc-section-number">8.6</span> Setup sound</a></li>
+<li><a href="#sync-your-bios-clock-to-utc-or-local-time"><span class="toc-section-number">8.7</span> Sync your BIOS clock to UTC or local time</a></li>
+<li><a href="#use-uuid-in-fstab"><span class="toc-section-number">8.8</span> Use UUID in fstab</a></li>
+<li><a href="#character-encodings"><span class="toc-section-number">8.9</span> Character encodings</a></li>
+<li><a href="#port-numbers-opened"><span class="toc-section-number">8.10</span> Port numbers opened</a></li>
+<li><a href="#use-keyboard-to-move-mouse"><span class="toc-section-number">8.11</span> Use keyboard to move mouse</a></li>
+<li><a href="#find-and-play-videomusic"><span class="toc-section-number">8.12</span> Find and play video/music</a></li>
+<li><a href="#boot-logs"><span class="toc-section-number">8.13</span> Boot logs</a></li>
+<li><a href="#mount-failed-structure-needs-cleaning"><span class="toc-section-number">8.14</span> Mount failed: Structure needs cleaning</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="system-settings" class="section level1">
+<h1><span class="header-section-number">1</span> System settings</h1>
+<ul>
+<li>System Information:
+<ul>
+<li>Application: <code>hardinfo</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;System Information</strong></li>
+</ul></li>
+<li>Change time zone:
+<ul>
+<li>Application: <code>dpkg-reconfigure tzdata</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;Time Zone</strong></li>
+</ul></li>
+<li>Change keyboard:
+<ul>
+<li>Application: <code>dpkg-reconfigure keyboard-configuration</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;Keyboard</strong></li>
+</ul></li>
+<li>Change screen resolution or switch monitors:
+<ul>
+<li>Shortcut: <code>⌘ + p</code></li>
+<li>Application: <code>lxrandr</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;Monitor Settings - LXRandR</strong></li>
+</ul></li>
+<li>Volume control:
+<ul>
+<li>Shortcut: <code>⌘ + Up</code> to increase volume.</li>
+<li>Shortcut: <code>⌘ + Down</code> to decrease volume.</li>
+<li>Shortcut: <code>⌘ + 0</code> to mute.</li>
+</ul></li>
+<li>Change sound card settings:
+<ul>
+<li>Application: <code>alsamixer</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;Sound - Alsa mixer</strong></li>
+</ul></li>
+<li>Network settings:
+<ul>
+<li>Application: <code>wicd</code></li>
+<li>Menu path: <strong>Menu-&gt;Network-&gt;WICD</strong></li>
+</ul></li>
+<li>Hard drive management:
+<ul>
+<li>Application: <code>gnome-disks</code></li>
+<li>Menu path: <strong>Menu-&gt;Administration-&gt;Gnome Disk Utility</strong></li>
+</ul></li>
+<li>Run applications on startup:
+<ul>
+<li>Add your scripts in <code>/usr/local/cld/systemd/runlevel/after-boot/</code> if you want them to run <strong>after</strong> boot.</li>
+<li>Add your scripts in <code>/usr/local/cld/app/jwm/bootstrap/</code> if you want them to run <strong>after</strong> JWM window manager.</li>
+</ul></li>
+<li>Run applications before shutdown/reboot/restart:
+<ul>
+<li>Add your scripts in <code>/usr/local/cld/systemd/runlevel/before-shutdown/</code> if you want them to run <strong>before</strong> shutdown/reboot/restart.</li>
+</ul></li>
+</ul>
+</div>
+<div id="applications" class="section level1">
+<h1><span class="header-section-number">2</span> Applications</h1>
+<div id="application-on-the-menu" class="section level2">
+<h2><span class="header-section-number">2.1</span> Application on the Menu</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Path</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>gpicview</td>
+<td>Menu-&gt;Accessories-&gt;Image Viewer</td>
+<td>Image viewer</td>
+</tr>
+<tr class="even">
+<td>speedcrunch</td>
+<td>Menu-&gt;Accessories-&gt;Calculator</td>
+<td>Calculator</td>
+</tr>
+<tr class="odd">
+<td>scite</td>
+<td>Menu-&gt;Accessories-&gt;SciTE</td>
+<td>Text editor</td>
+</tr>
+<tr class="even">
+<td>thunar</td>
+<td>Menu-&gt;Accessories-&gt;Thunar</td>
+<td>File explorer</td>
+</tr>
+<tr class="odd">
+<td>firefox</td>
+<td>Menu-&gt;Internet-&gt;Firefox</td>
+<td>Internet browser</td>
+</tr>
+<tr class="even">
+<td>pinta</td>
+<td>Menu-&gt;Graphics-&gt;Pinta</td>
+<td>Image editor</td>
+</tr>
+<tr class="odd">
+<td>libreoffice</td>
+<td>Menu-&gt;Office-&gt;LibreOffice Calc</td>
+<td>Excel spreadsheet</td>
+</tr>
+<tr class="even">
+<td>libreoffice</td>
+<td>Menu-&gt;Office-&gt;LibreOffice Impress</td>
+<td>Powerpoint presentation</td>
+</tr>
+<tr class="odd">
+<td>libreoffice</td>
+<td>Menu-&gt;Office-&gt;LibreOffice Writer</td>
+<td>Word editor</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="command-line-applications" class="section level2">
+<h2><span class="header-section-number">2.2</span> Command line applications</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Description</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>mpv</td>
+<td>Video/music player</td>
+<td>mpv video.avi song.mp3</td>
+</tr>
+<tr class="even">
+<td>mupdf</td>
+<td>PDF viewer</td>
+<td>mupdf pdf_file.pdf</td>
+</tr>
+<tr class="odd">
+<td>feh-ss.sh</td>
+<td>Photo slideshow</td>
+<td>feh-ss.sh filelist.txt</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="useful-commands" class="section level2">
+<h2><span class="header-section-number">2.3</span> Useful commands</h2>
+<pre><code># Count lines
+ls -1 * | wc  -l
+
+# Play videos found
+mpv -playlist &lt;(locate somepattern | grep otherpattern)
+
+# Find and unrar
+#  http://superuser.com/questions/410972/recursive-unrar-of-several-folders
+#  http://stackoverflow.com/questions/22730756/unrar-all-file-in-directory-without-prompting
+find . -maxdepth 1 -name &#39;*.rar&#39; -execdir rar x -phef -o+ {} \; -execdir rm -f {} \;
+
+# Debug xargs
+xargs -p
+
+# List command history 5 lines before and after COMMAND_PATTERN
+history | grep -C 5 COMMAND_PATTERN
+
+# List partitions and size
+lsblk /dev/sdX
+
+# Episodes regex
+grep -iE &quot;s[0-9]+e[0-9]+&quot; FILE
+
+# View all and highlight pattern
+grep --color -E &#39;pattern|$&#39; file
+
+# Download a single web page. In case robots.txt is disallowing, add -e robots=off
+wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
+</div>
+<div id="hot-keys" class="section level2">
+<h2><span class="header-section-number">2.4</span> Hot keys</h2>
+<div id="main-operations" class="section level3">
+<h3><span class="header-section-number">2.4.1</span> Main operations</h3>
+<ul>
+<li><code>Alt + Ctrl + Del</code>: Reboot.</li>
+<li><code>Alt + Tab</code>: Switch focus to the next application.</li>
+<li><code>Alt + #</code>: Switch desktop. # is a number between 1 and 4.</li>
+<li><code>Alt + -&gt;</code>: Switch desktop.</li>
+<li><code>⌘ + d</code>: Minimize all applications.</li>
+<li><code>⌘ + Esc</code>: Open main menu.</li>
+</ul>
+</div>
+<div id="operations-on-window" class="section level3">
+<h3><span class="header-section-number">2.4.2</span> Operations on window</h3>
+<ul>
+<li><code>Alt + F4</code>: Close current application.</li>
+<li><code>Alt + F2</code>: Open the menu of the current application.</li>
+<li><code>Alt + F10</code>: Maximize the window of the current application.</li>
+<li><code>Ctrl + Alt + Left</code> : Maximize active window to the left half section of the screen.</li>
+<li><code>Ctrl + Alt + Right</code>: Maximize active window to the right half section of the screen.</li>
+<li><code>Ctrl + Alt + Up</code>: Maximize active window to the top half section of the screen.</li>
+<li><code>Ctrl + Alt + Down</code> : Maximize active window to the bottom half section of the screen.</li>
+</ul>
+<div id="move-active-window" class="section level4">
+<h4><span class="header-section-number">2.4.2.1</span> Move active window</h4>
+<pre><code>Screen section layout
++-----------+
+| 7 | 8 | 9 |
++-----------+
+| 4 | 5 | 6 |
++-----------+
+| 1 | 2 | 3 |
++-----------+</code></pre>
+<ul>
+<li><code>Ctrl + Alt + 7</code> : Move active window to the top-left section of the screen.</li>
+<li><code>Ctrl + Alt + 8</code> : Move active window to the top-center section of the screen.</li>
+<li><code>Ctrl + Alt + 9</code> : Move active window to the top-right section of the screen.</li>
+<li><code>Ctrl + Alt + 4</code> : Move active window to the middle-left section of the screen.</li>
+<li><code>Ctrl + Alt + 5</code> : Move active window to the center of the screen.</li>
+<li><code>Ctrl + Alt + 6</code> : Move active window to the middle-right section of the screen.</li>
+<li><code>Ctrl + Alt + 1</code> : Move active window to the bottom-left section of the screen.</li>
+<li><code>Ctrl + Alt + 2</code> : Move active window to the bottom-center of the screen.</li>
+<li><code>Ctrl + Alt + 3</code> : Move active window to the bottom-right section of the screen.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="install-new-applications" class="section level2">
+<h2><span class="header-section-number">2.5</span> Install new applications</h2>
+<p><code>Cust-Live-Deb</code> is a Debian system. <a href="https://www.debian.org/distrib/packages">Therefore, all softwares available for Debian can be installed</a>.</p>
+<pre><code>apt-get update
+apt-get install PACKAGE_NAME</code></pre>
+</div>
+</div>
+<div id="persistence" class="section level1">
+<h1><span class="header-section-number">3</span> Persistence</h1>
+<p>By default, <code>Cust-Live-Deb</code> supports <a href="https://debian-live.alioth.debian.org/live-manual/stable/manual/html/live-manual.en.html#556">persistence</a>. It allows your changes to persist after reboot, provided that you have a persistence image file in the root path of any partitions. That image file will hold all your changes. Here is how to create a persistent image file:</p>
+<pre><code># Create a persistence image file(e.g. 2048 MB).
+cld-persistence.sh 2048
+
+# Copy persistence image file to the root path of any partitions.
+cp persistence /path/to/some_partition/
+
+# Reboot for the persistence process to take effect.</code></pre>
+<p>You will know that persistence is working when you executed <code>df</code> and see something like the followings:</p>
+<pre><code>Filesystem      Size  Used Avail Use% Mounted on
+udev             10M     0   10M   0% /dev
+tmpfs           603M  8.1M  595M   2% /run
+/dev/shm        891M  849M   43M  96% /lib/live/mount/medium
+/dev/loop0      816M  816M     0 100% /lib/live/mount/rootfs/filesystem.squashfs
+tmpfs           1.5G     0  1.5G   0% /lib/live/mount/overlay
+/dev/sdb        2.4G  335M  2.0G  15% /lib/live/mount/persistence/sdb
+/dev/loop1      2.0G  285M  1.6G  16% /lib/live/mount/persistence/loop1</code></pre>
+<p>Note: Sometime, persistence image file is not recognized by <code>Cust-Live-Deb</code> due to bad format of your partition. You can remedy by reformatting: <code>mkfs.ext4 /dev/sdX</code>(Use different command for different filesystem).</p>
+<div id="disable-persistence" class="section level2">
+<h2><span class="header-section-number">3.1</span> Disable persistence</h2>
+<ul>
+<li>Ensure there is no <code>persistence</code> image file on the root path of any partitions. Or,</li>
+<li>On <strong>Boot Menu</strong>, press <code>Tab</code> key and delete <code>persistence</code> word. Or,</li>
+<li>When you <a href="#remaster-live-system">remastered the whole live system</a>, remove <code>persistence</code> words from <code>.../binary/isolinux/isolinux.cfg</code> file.</li>
+</ul>
+</div>
+</div>
+<div id="remaster-live-system" class="section level1">
+<h1><span class="header-section-number">4</span> Remaster live system</h1>
+<pre><code># Copy the whole live system to a WORKING directory.
+cld-remaster.sh /path/to/WORKING/
+
+# Create HYBRID-ISO
+cld-mkiso.sh /path/to/WORKING/
+
+# Burn HYBRID-ISO to USB key(e.g. /dev/sdX)
+cld-dd-usb.sh cust-live-deb_YYYY-MM-DD_HH.MM.SS.iso /dev/sdX</code></pre>
+<div id="tips" class="section level2">
+<h2><span class="header-section-number">4.1</span> Tips</h2>
+<pre><code># List USB key device available.
+ls -al /dev/disk/by-id/
+
+
+# To create an image from a drive.
+  dd if=/dev/sdX of=/path/to/new.iso
+# To create a USB drive from an image.
+  dd if=/path/to/iso of=/dev/sdX    </code></pre>
+</div>
+</div>
+<div id="upgrade" class="section level1">
+<h1><span class="header-section-number">5</span> Upgrade</h1>
+<ol style="list-style-type: decimal">
+<li>Boot without persistence.</li>
+<li>cld-dd-usb.sh ISO to the main usb key.</li>
+<li>Mount main usb key spare partition to /tmp/kkk.</li>
+<li><code>cd /tmp/kkk &amp;&amp; cld-persistence.sh 2048</code></li>
+<li>Reboot.</li>
+</ol>
+</div>
+<div id="cust-live-deb-hangs" class="section level1">
+<h1><span class="header-section-number">6</span> Cust-Live-Deb hangs</h1>
+<div id="memory-is-max-out" class="section level2">
+<h2><span class="header-section-number">6.1</span> Memory is max out</h2>
+<p>When you got the following symptoms, check your memory usage(i.e. Conky on your desktop): * Google Chrome/Firefox hangs when opening a lot of tabs. * Eclipse is working fine and then suddenly, code is not highlighted. Or, when closing tab, Cancel/Save/Ok buttons are not shown.</p>
+<p>If your memory is near max out, then the issues will be resolved by: * Add more physical memory. Or, * Add a swap partition:</p>
+<pre><code>  mkswap /dev/sdXX
+  swapon /dev/sdXX</code></pre>
+</div>
+</div>
+<div id="boot-sequence" class="section level1">
+<h1><span class="header-section-number">7</span> Boot sequence</h1>
+<pre><code>~&gt;cat /root/cld/boot-sequence.txt 
+/root/cld/systemd/cld-systemd-after-boot.sh: Mon Jan  9 14:14:25 EST 2017
+/root/cld/jwmrc-startup.sh: Tue Jan 10 00:14:35 UTC 2017
+/root/cld/systemd/cld-systemd-before-shutdown-halt-reboot.sh: Mon Jan  9 19:15:50 EST 2017</code></pre>
+</div>
+<div id="help" class="section level1">
+<h1><span class="header-section-number">8</span> Help</h1>
+<div id="set-desktop-background-wallpaper" class="section level2">
+<h2><span class="header-section-number">8.1</span> Set desktop background / wallpaper</h2>
+<pre><code>feh --bg-scale /path/to/your/image/background.jpg</code></pre>
+</div>
+<div id="set-keyboard" class="section level2">
+<h2><span class="header-section-number">8.2</span> Set keyboard</h2>
+<pre><code># Set keymap to English
+setxkbmap en</code></pre>
+</div>
+<div id="access-files-of-your-smartphones-that-use-media-transfer-protocol-mtp" class="section level2">
+<h2><span class="header-section-number">8.3</span> Access files of your smartphones that use Media Transfer Protocol (MTP)</h2>
+<pre><code># Connect your smartphone.
+mkdir /path/to/your/mount/directory/
+jmtpfs -o allow_other /path/to/your/mount/directory/
+# Enter your PIN to unlock your smartphone.
+cd /path/to/your/mount/directory/</code></pre>
+</div>
+<div id="find-what-video-card-am-i-using" class="section level2">
+<h2><span class="header-section-number">8.4</span> Find what video card am I using?</h2>
+<pre><code># Get the video card line.
+lspci | grep -iE &#39;vga|3d|2d&#39;
+# Get more informations about the device using option -s.
+lspci -v -s 01:00.0
+
+# Line &#39;Memory at d0000000&#39; show the total video memory size.</code></pre>
+</div>
+<div id="turn-on-wlan0-network-interface" class="section level2">
+<h2><span class="header-section-number">8.5</span> Turn on wlan0 network interface</h2>
+<pre><code># Check network interfaces available.
+ls /sys/class/net
+
+ip link set wlan0 up
+
+# Scan wireless networks available.
+iwlist wlan0 scan
+
+# /etc/init.d/networking restart</code></pre>
+</div>
+<div id="setup-sound" class="section level2">
+<h2><span class="header-section-number">8.6</span> Setup sound</h2>
+<pre><code># Check if your sound card is detected.
+lspci | grep audio
+
+# Use Alsamixer to select the correct sound card.
+alsamixer
+(Press F6 to select your sound card)
+  # Save your settings.
+  alsactl store
+
+# Play all possible sounds.
+aplay /usr/share/sounds/alsa/*
+
+# Default test for front left and right speaker:
+speaker-test -twav -l1 -c2 
+
+# For 4.0 surround (two speakers in front, two in the back):
+speaker-test -twav -l1 -Dplug:surround40 -c4
+                  
+# For 5.1:        
+speaker-test -twav -l1 -Dplug:surround51 -c6
+                  
+# For 7.1:         
+speaker-test -twav -l1 -Dplug:surround71 -c8</code></pre>
+</div>
+<div id="sync-your-bios-clock-to-utc-or-local-time" class="section level2">
+<h2><span class="header-section-number">8.7</span> Sync your BIOS clock to UTC or local time</h2>
+<pre><code># Sync your system time.
+ntpd -gqc pool.ntp.org
+sntp -s pool.ntp.org
+
+# Sync your BIOS/hardware clock to UTC.
+hwclock --systohc --utc
+
+# Sync your BIOS/hardware clock to local time.
+hwclock --systohc --localtime
+
+# To see the time in UTC.
+date -u</code></pre>
+</div>
+<div id="use-uuid-in-fstab" class="section level2">
+<h2><span class="header-section-number">8.8</span> Use UUID in fstab</h2>
+<ol style="list-style-type: decimal">
+<li>Find UUID of your hard drive by running <code>blkid</code>.</li>
+<li><p>Change device path to UUID in fstab as follows:</p>
+<pre><code># Change: /dev/sdb1 /media/critical ext4  defaults  0 0
+#  to
+UUID=&quot;81917b82-6a0f-4493-a657-6a0aa127bf41&quot; /media/critical ext4  defaults  0 0</code></pre></li>
+</ol>
+</div>
+<div id="character-encodings" class="section level2">
+<h2><span class="header-section-number">8.9</span> Character encodings</h2>
+<p><code>more</code>, <code>cat</code>, <code>less</code>, <code>grep</code>, etc commands don't display the characters correctly(e.g. accents). They displays <code>�</code>. Your shell is using UTF-8 whereas your file is using another encoding.</p>
+<pre><code># Your shell encoding.
+echo $LANG
+
+# You file encoding.
+file YOUR_FILE
+
+# Convert your file to UTF-8.
+iconv --from-code ISO-8859-15 --to-code UTF-8 YOUR_FILE -o YOUR_FILE_as_utf8</code></pre>
+<p>For more details, see http://unix.stackexchange.com/a/78782</p>
+</div>
+<div id="port-numbers-opened" class="section level2">
+<h2><span class="header-section-number">8.10</span> Port numbers opened</h2>
+<pre><code>netstat -tnlp
+# Reference: http://unix.stackexchange.com/a/108886</code></pre>
+</div>
+<div id="use-keyboard-to-move-mouse" class="section level2">
+<h2><span class="header-section-number">8.11</span> Use keyboard to move mouse</h2>
+<p>Reference: https://en.wikipedia.org/wiki/Mouse_keys</p>
+<ol style="list-style-type: decimal">
+<li>Run <code>setxkbmap -option keypad:pointerkeys</code>.</li>
+<li>Press <code>Left Shift</code>+<code>NumLock</code>.</li>
+<li>Press on numpad keys to move the mouse.</li>
+</ol>
+</div>
+<div id="find-and-play-videomusic" class="section level2">
+<h2><span class="header-section-number">8.12</span> Find and play video/music</h2>
+<pre><code>mpv $(ilocate 2016 | igrep funky | igrep music | sort)
+mpv -playlist &lt;(ilocate 2016 | igrep funky | igrep music | sort)</code></pre>
+<p>Reference: http://thinkmoult.com/tech-tip-2-mplayer-play-music-recursively-in-a-directory/</p>
+</div>
+<div id="boot-logs" class="section level2">
+<h2><span class="header-section-number">8.13</span> Boot logs</h2>
+<p>https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs</p>
+<pre><code># Display logs from the current boot.
+journalctl -b
+
+# Display boot errors.
+journalctl -p err -b
+
+# Display all without paging.
+journalclt --no-pager</code></pre>
+</div>
+<div id="mount-failed-structure-needs-cleaning" class="section level2">
+<h2><span class="header-section-number">8.14</span> Mount failed: Structure needs cleaning</h2>
+<pre><code># Get the filesystem
+blkid /dev/sdi5
+
+# Use fsck matching your filesystem
+fsck.ext4 -y /dev/sdi5</code></pre>
+</div>
+</div>
+</body>
+</html>

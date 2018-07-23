@@ -8,16 +8,12 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Remove Help manuals in text format before adding the HTML format.
-sed -i '/<Menu label="Help">/ , /<\/Menu>/{//!d}' "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
+# Remove Help manuals in text format before adding the HTML format: inst-min-win-jwm-help-manuals-text
+  sed -i '/<Menu label="Help">/ , /<\/Menu>/{//!d}' "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
-# Copy all documentations to ${HOME}/cld/docs.
-  DOC_DIR=/usr/local/cld/doc
-  mkdir -p ${DOC_DIR}
-  yes | cp -a /media/master/github/cust-live-deb.wiki/*.html ${DOC_DIR}
-
-# Overwrite manuals menu.
-  yes | cp -av ./cld/  /usr/local
+# Add to CLD/
+  yes | cp -av ./cld  /usr/local
 
 # Log
-echo "${GV_LOG} * Add user & developer manuals in Help menu."
+  echo "${GV_LOG} * Add user & developer manuals(html) in Help menu."
+
