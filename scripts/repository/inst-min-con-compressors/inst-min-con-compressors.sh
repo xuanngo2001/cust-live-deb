@@ -14,7 +14,7 @@ apt-get -y install unzip
 apt-get -y install p7zip
 
 # Use new rar version due to segmentation fault with 'RAR 4.20' with linux-image-4.8.0-0.bpo.2-amd64-unsigned (4.8.11-1~bpo8+1) 
-yes | cp -a ./rarlinux-x64-5.4.0/rar /usr/bin
+yes | cp -a ./rar/rar /usr/bin
 
 # Add universal extractor.
 yes | cp -av ./cld/  /usr/local
