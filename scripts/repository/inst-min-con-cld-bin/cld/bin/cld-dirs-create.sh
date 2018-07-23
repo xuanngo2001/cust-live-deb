@@ -46,6 +46,10 @@ case "${action}" in
       mkdir -p ./cld/systemd/runlevel/before-shutdown
       ;;
   
+  log)
+      mkdir -p ./cld/log
+      ;;
+        
   where-used)
       script_repo_dir=$2
       if [ -z "${script_repo_dir}" ]; then echo 'Error: Need scripts repository path. Aborted!'; exit 1; fi
@@ -68,6 +72,7 @@ case "${action}" in
       printf "    %-15s %-43s [%s]\n" 'bashrc'            '=> ./cld/bashrc.d'                         '*.sh will be sourced'
       printf "    %-15s %-43s [%s]\n" 'after-boot'        '=> ./cld/systemd/runlevel/after-boot'      '*.sh will be executed after boot'
       printf "    %-15s %-43s [%s]\n" 'before-shutdown'   '=> ./cld/systemd/runlevel/before-shutdown' '*.sh will be executed before shutdown/reboot/restart'
+      printf "    %-15s %-43s [%s]\n" 'log'               '=> ./cld/log'                              'All logs here.'
       exit 1;
       ;;
 esac
