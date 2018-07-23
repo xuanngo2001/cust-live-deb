@@ -1,0 +1,1 @@
+find . -name '*.sh' -type f -execdir chmod +x {} \; -execdir echo "chmod {}" \;
