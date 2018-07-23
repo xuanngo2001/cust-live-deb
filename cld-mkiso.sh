@@ -54,6 +54,7 @@ fi
 
 # Copy vmlinuz & initrd in binary/live/.
 ##################################################################
+mkdir -p /binary/live/
 yes | cp ${CHROOT_DIR}/boot/vmlinuz-* ./binary/live/vmlinuz
 yes | cp ${CHROOT_DIR}/boot/initrd.img-* ./binary/live/initrd
 #yes | cp /lib/live/mount/medium/live/initrd ./binary/live/initrd
