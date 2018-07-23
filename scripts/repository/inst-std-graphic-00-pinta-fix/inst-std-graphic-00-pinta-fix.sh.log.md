@@ -1,0 +1,3 @@
+* >>>>>>>>> Running inst-std-graphic-00-pinta-fix.sh ...
+  * Pinta crashes with mono v4.6.2.7+dfsg-1. Hence, install higher version.
+  * Disk size = 2105772K. Space Used = 36K.

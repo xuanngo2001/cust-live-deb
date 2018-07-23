@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-win-00-xorg.sh ...
-  * After this operation, 76.6 MB of additional disk space will be used.
+  * After this operation, 76.5 MB of additional disk space will be used.
   * Set keyboard to use US international.
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
-  * Disk size = 1396840K. Space Used = 98964K.
+  * Disk size = 1757724K. Space Used = 98780K.
   * The following NEW packages will be installed:
   ```bash
   keyboard-configuration libdrm-amdgpu1 libdrm-common libdrm-nouveau2
@@ -14,7 +14,7 @@
   libwayland-client0 libwayland-server0 libx11-xcb1 libxatracker2 libxaw7
   libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-sync1
   libxcb-xfixes0 libxdamage1 libxfixes3 libxfont2 libxkbfile1 libxmu6 libxmuu1
-  libxpm4 libxshmfence1 libxt6 libxxf86vm1 x11-xkb-utils xauth xinit xkb-data
+  libxshmfence1 libxt6 libxxf86vm1 x11-xkb-utils xauth xinit xkb-data
   xserver-common xserver-xorg xserver-xorg-core xserver-xorg-input-all
   xserver-xorg-input-libinput xserver-xorg-video-all xserver-xorg-video-amdgpu
   xserver-xorg-video-ati xserver-xorg-video-fbdev xserver-xorg-video-nouveau

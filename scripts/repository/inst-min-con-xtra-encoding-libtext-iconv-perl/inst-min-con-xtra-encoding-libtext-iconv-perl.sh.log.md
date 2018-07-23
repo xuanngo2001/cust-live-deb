@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-xtra-encoding-libtext-iconv-perl.sh ...
   * Install libtext-iconv-perl so that you can use iconv to convert to other encoding.
-  * Disk size = 1222708K. Space Used = 4K.
+  * Disk size = 1274368K. Space Used = 4K.
