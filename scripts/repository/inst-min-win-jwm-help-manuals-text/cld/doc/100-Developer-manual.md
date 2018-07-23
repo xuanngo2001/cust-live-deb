@@ -84,7 +84,8 @@ Register your own extension: http://stackoverflow.com/questions/30931/register-f
 # Clean rebuild
 
     chmod +x ../cust-live-deb.wiki/*.sh
-    chmod +x *.sh
+    chmod +x init-chmod-script.sh
+    ./init-chmod-script.sh
     cd ./scripts/repository/inst-xtra-vboxguest-additions-iso/
       chmod +x VBoxGuestAdditions.sh 
       ./VBoxGuestAdditions.sh
