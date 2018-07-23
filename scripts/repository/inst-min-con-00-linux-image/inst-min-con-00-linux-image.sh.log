@@ -174,15 +174,16 @@ Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
 Hit:3 http://localhost/aptly-repo/master_deb-multimedia-main stretch InRelease
 Hit:4 http://localhost/aptly-repo/master_deb-multimedia-non-free stretch InRelease
 Hit:5 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:6 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports InRelease
-Hit:7 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports InRelease
-Hit:8 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports InRelease
-Hit:9 http://localhost/aptly-repo/master_stretch-contrib stretch InRelease
-Hit:10 http://localhost/aptly-repo/master_stretch-non-free stretch InRelease
-Hit:11 http://localhost/aptly-repo/master_stretch-updates-contrib stretch-updates InRelease
-Hit:12 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates InRelease
-Hit:13 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease
-Hit:14 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
+Hit:6 http://localhost/aptly-repo/master_mono-main stable-stretch InRelease
+Hit:7 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports InRelease
+Hit:8 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports InRelease
+Hit:9 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports InRelease
+Hit:10 http://localhost/aptly-repo/master_stretch-contrib stretch InRelease
+Hit:11 http://localhost/aptly-repo/master_stretch-non-free stretch InRelease
+Hit:12 http://localhost/aptly-repo/master_stretch-updates-contrib stretch-updates InRelease
+Hit:13 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates InRelease
+Hit:14 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease
+Hit:15 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -209,7 +210,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 750 kB in 0s (8540 kB/s)
+Fetched 750 kB in 0s (19.4 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9114 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.10.26-0+deb9u1_amd64.deb ...
@@ -275,7 +276,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 46.8 MB in 0s (47.2 MB/s)
+Fetched 46.8 MB in 0s (50.4 MB/s)
 Selecting previously unselected package busybox.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9330 files and directories currently installed.)
 Preparing to unpack .../00-busybox_1%3a1.22.0-19+b3_amd64.deb ...
@@ -379,37 +380,37 @@ Desired=Unknown/Install/Remove/Purge/Hold
 +++-================================-================-============-===================================
 ii  linux-image-4.16.0-0.bpo.2-amd64 4.16.16-2~bpo9+1 amd64        Linux 4.16 for 64-bit PCs
 ii  linux-image-amd64                4.16+94~bpo9+1   amd64        Linux for 64-bit PCs (meta-package)
-total 34932
+total 34928
 -rw-r--r-- 1 root root  3144368 Jun 26 00:25 System.map-4.16.0-0.bpo.2-amd64
 -rw-r--r-- 1 root root   203117 Jun 26 00:25 config-4.16.0-0.bpo.2-amd64
--rw-r--r-- 1 root root 27435434 Jul 23 22:01 initrd.img-4.16.0-0.bpo.2-amd64
+-rw-r--r-- 1 root root 27434924 Jul 23 23:19 initrd.img-4.16.0-0.bpo.2-amd64
 -rw-r--r-- 1 root root  4978448 Jun 26 00:25 vmlinuz-4.16.0-0.bpo.2-amd64
 eb05d7e4c0c602ce41f0e928d2355573  /boot/System.map-4.16.0-0.bpo.2-amd64
 23e17f720d2be76159b55ee6d528d691  /boot/config-4.16.0-0.bpo.2-amd64
-007a9670dad6a0eb115a82ecce42c1aa  /boot/initrd.img-4.16.0-0.bpo.2-amd64
+1a9c82c6d29bdb86d459d0a6f273cf68  /boot/initrd.img-4.16.0-0.bpo.2-amd64
 54d9eeea670abb3840b2df92ffc5cfa8  /boot/vmlinuz-4.16.0-0.bpo.2-amd64
 total 64
-drwxr-xr-x   2 root root 4096 Jul 23 22:01 bin
-drwxr-xr-x   2 root root 4096 Jul 23 22:01 boot
-drwxr-xr-x  18 root root 3480 Jul 23 19:28 dev
-drwxr-xr-x  52 root root 4096 Jul 23 22:01 etc
+drwxr-xr-x   2 root root 4096 Jul 23 23:19 bin
+drwxr-xr-x   2 root root 4096 Jul 23 23:19 boot
+drwxr-xr-x  18 root root 3480 Jul 23 22:38 dev
+drwxr-xr-x  52 root root 4096 Jul 23 23:19 etc
 drwxr-xr-x   2 root root 4096 Jun 26 12:03 home
-lrwxrwxrwx   1 root root   36 Jul 23 22:01 initrd.img -> boot/initrd.img-4.16.0-0.bpo.2-amd64
-drwxr-xr-x  13 root root 4096 Jul 23 22:01 lib
-drwxr-xr-x   2 root root 4096 Jul 23 22:00 lib64
-drwxr-xr-x   2 root root 4096 Jul 23 22:00 media
-drwxr-xr-x   2 root root 4096 Jul 23 22:00 mnt
-drwxr-xr-x   2 root root 4096 Jul 23 22:00 opt
-dr-xr-xr-x 213 root root    0 Jul 23 19:09 proc
-drwx------   4 root root 4096 Jul 23 22:00 root
-drwxr-xr-x   3 root root 4096 Jul 23 22:00 run
-drwxr-xr-x   2 root root 4096 Jul 23 22:00 sbin
-drwxr-xr-x   2 root root 4096 Jul 23 22:00 srv
-dr-xr-xr-x  13 root root    0 Jul 23 19:27 sys
-drwxrwxrwt   2 root root 4096 Jul 23 22:01 tmp
-drwxr-xr-x  10 root root 4096 Jul 23 22:00 usr
-drwxr-xr-x  11 root root 4096 Jul 23 22:00 var
-lrwxrwxrwx   1 root root   33 Jul 23 22:01 vmlinuz -> boot/vmlinuz-4.16.0-0.bpo.2-amd64
+lrwxrwxrwx   1 root root   36 Jul 23 23:19 initrd.img -> boot/initrd.img-4.16.0-0.bpo.2-amd64
+drwxr-xr-x  13 root root 4096 Jul 23 23:19 lib
+drwxr-xr-x   2 root root 4096 Jul 23 23:18 lib64
+drwxr-xr-x   2 root root 4096 Jul 23 23:18 media
+drwxr-xr-x   2 root root 4096 Jul 23 23:18 mnt
+drwxr-xr-x   2 root root 4096 Jul 23 23:18 opt
+dr-xr-xr-x 218 root root    0 Jul 23 22:25 proc
+drwx------   4 root root 4096 Jul 23 23:18 root
+drwxr-xr-x   3 root root 4096 Jul 23 23:18 run
+drwxr-xr-x   2 root root 4096 Jul 23 23:18 sbin
+drwxr-xr-x   2 root root 4096 Jul 23 23:18 srv
+dr-xr-xr-x  13 root root    0 Jul 23 22:37 sys
+drwxrwxrwt   2 root root 4096 Jul 23 23:19 tmp
+drwxr-xr-x  10 root root 4096 Jul 23 23:18 usr
+drwxr-xr-x  11 root root 4096 Jul 23 23:18 var
+lrwxrwxrwx   1 root root   33 Jul 23 23:19 vmlinuz -> boot/vmlinuz-4.16.0-0.bpo.2-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-4.16.0-0.bpo.2-amd64.
-CLDS: * Disk size = 681344K. Space Used = 344332K.
+CLDS: * Disk size = 681412K. Space Used = 344328K.

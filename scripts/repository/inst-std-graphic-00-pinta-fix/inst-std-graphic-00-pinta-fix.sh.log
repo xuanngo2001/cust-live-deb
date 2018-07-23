@@ -1,0 +1,15 @@
+CLDS:>>>>>>>>> Running inst-std-graphic-00-pinta-fix.sh ...
+Warning: apt-key output should not be parsed (stdout is not a terminal)
+Executing: /tmp/apt-key-gpghome.yreNCAAAa3/gpg.1.sh --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+gpg: key A6A19B38D3D831EF: public key "Xamarin Public Jenkins (auto-signing) <releng@xamarin.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: directory '/root/.gnupg' created
+gpg: keybox '/root/.gnupg/trustedkeys.gpg' created
+gpg: /root/.gnupg/trustdb.gpg: trustdb created
+gpg: key A6A19B38D3D831EF: public key "Xamarin Public Jenkins (auto-signing) <releng@xamarin.com>" imported
+gpg: no ultimately trusted keys found
+gpg: Total number processed: 1
+gpg:               imported: 1
+CLDS: * Pinta crashes with mono v4.6.2.7+dfsg-1. Hence, install higher version.
+CLDS: * Disk size = 2105772K. Space Used = 36K.
