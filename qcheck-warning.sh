@@ -18,17 +18,17 @@ main_log=$1
   echo ""
 
 # Get all warnings.
-  if grep -iE 'Warning:' "${MAIN_LOG}" > /dev/null
+  if grep -iE 'Warning:' "${main_log}" > /dev/null
   then
-    echo "Warnings in log file: ${MAIN_LOG}"
-    warnings=$(grep -iE 'Warning:' ${MAIN_LOG} | sed 's/^/  /')
+    echo "Warnings in log file: ${main_log}"
+    warnings=$(grep -iE 'Warning:' ${main_log} | sed 's/^/  /')
     warnings=$(echo "${warnings}" | grep -vF 'setlocale:')
     warnings=$(echo "${warnings}" | grep -v ' perl: .* locale')
     warnings=$(echo "${warnings}" | awk '!seen[$0]++' ) # Remove duplicate without sorting.
     
     echo "${warnings}"
   else
-      echo "No warning in log file: ${MAIN_LOG}"
+    echo "No warning in log file: ${main_log}"
   fi
 
 # Add newline as a separation.
