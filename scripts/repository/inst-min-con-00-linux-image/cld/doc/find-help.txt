@@ -1,3 +1,5 @@
+  # Official manual: https://www.gnu.org/software/findutils/manual/html_mono/find.html
+
   # A single sed command for each file is executed.
     find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} \;
   
