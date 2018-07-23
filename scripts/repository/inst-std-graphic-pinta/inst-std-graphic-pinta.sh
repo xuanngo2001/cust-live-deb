@@ -15,3 +15,6 @@ sed -i "/Graphics\">/ r jwmrc-menus-graphics-pinta.xml" "${CLD_JWMRC_DIR}/jwmrc-
 # Log
 echo "${GV_LOG} * Install Image Editor: Pinta."
 echo "${GV_LOG} * Insert Pinta menu in Graphics."
+echo "${GV_LOG} * Pinta crashes with mono v4.6.2.7+dfsg-1."
+
+# Note: Pinta crashes with mono v4.6.2.7+dfsg-1.
