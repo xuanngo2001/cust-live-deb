@@ -2,7 +2,7 @@
   * After this operation, 32.5 MB of additional disk space will be used.
   * Install calculator: speedcrunch.
   * Insert speedcrunch in Accessories menu.
-  * Disk size = 2060760K. Space Used = 41556K.
+  * Disk size = 2060788K. Space Used = 41556K.
   * The following NEW packages will be installed:
   ```bash
   libdouble-conversion1 libpcre16-3 libqt5clucene5 libqt5core5a libqt5dbus5
