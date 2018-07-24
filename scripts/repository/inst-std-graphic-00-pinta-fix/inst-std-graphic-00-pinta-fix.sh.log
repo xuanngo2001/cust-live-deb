@@ -38,7 +38,7 @@ Get:12 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mo
 Get:13 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-runtime amd64 5.12.0.226-0xamarin3+debian9b1 [21.3 kB]
 Get:14 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-corlib4.5-cil all 5.12.0.226-0xamarin3+debian9b1 [1,102 kB]
 Get:15 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-drawing4.0-cil all 5.12.0.226-0xamarin3+debian9b1 [155 kB]
-Fetched 9,771 kB in 0s (41.3 MB/s)
+Fetched 9,771 kB in 0s (31.8 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -65,7 +65,7 @@ The following NEW packages will be installed:
 Need to get 37.8 kB/9,508 kB of archives.
 After this operation, 43.1 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-cairo4.0-cil all 5.12.0.226-0xamarin3+debian9b1 [37.8 kB]
-Fetched 37.8 kB in 0s (1,684 kB/s)
+Fetched 37.8 kB in 0s (1,731 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -92,10 +92,10 @@ The following NEW packages will be installed:
 Need to get 66.8 kB/9,537 kB of archives.
 After this operation, 43.1 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-sharpzip4.84-cil all 5.12.0.226-0xamarin3+debian9b1 [66.8 kB]
-Fetched 66.8 kB in 0s (3,105 kB/s)
+Fetched 66.8 kB in 0s (1,556 kB/s)
 Download complete and in download only mode
 Warning: apt-key output should not be parsed (stdout is not a terminal)
-Executing: /tmp/apt-key-gpghome.A7Nl1DYkse/gpg.1.sh --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+Executing: /tmp/apt-key-gpghome.WR00HI3wcF/gpg.1.sh --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 gpg: key A6A19B38D3D831EF: public key "Xamarin Public Jenkins (auto-signing) <releng@xamarin.com>" imported
 gpg: Total number processed: 1
 gpg:               imported: 1
@@ -107,4 +107,4 @@ gpg: no ultimately trusted keys found
 gpg: Total number processed: 1
 gpg:               imported: 1
 CLDS: * Pinta crashes with mono v4.6.2.7+dfsg-1. Hence, install higher version(5+).
-CLDS: * Disk size = 2115488K. Space Used = 9728K.
+CLDS: * Disk size = 2083052K. Space Used = 9724K.
