@@ -141,7 +141,7 @@ php
 sqlite3
 # ./inst-min-con-xtra-timezone/inst-min-con-xtra-timezone.sh
 
-# ./inst-min-win-00-xorg/inst-min-win-00-00-xorg-fix.sh
+# ./inst-min-win-00-00-xorg-fix/inst-min-win-00-00-xorg-fix.sh
 libglapi-mesa=13.0.6-1+b2
 # ./inst-min-win-00-xorg/inst-min-win-00-xorg.sh
 xinit
@@ -195,6 +195,10 @@ thunar-archive-plugin
 thunar-volman
 # ./inst-std-font-fonts-liberation/inst-std-font-fonts-liberation.sh
 fonts-liberation
+# ./inst-std-graphic-00-pinta-fix/inst-std-graphic-00-pinta-fix.sh
+libmono-system-drawing4.0-cil
+libmono-cairo4.0-cil
+libmono-sharpzip4.84-cil
 # ./inst-std-graphic-pinta/inst-std-graphic-pinta.sh
 pinta
 # ./inst-std-graphic-xtra-cheese/inst-std-graphic-xtra-cheese.sh
@@ -210,11 +214,11 @@ mypaint
 # ./inst-std-inet-firefox-esr/inst-std-inet-firefox-esr.sh
 libjsoncpp1
 firefox-esr
+# ./inst-std-inet-xtra-00-google-chrome-fix/inst-std-inet-xtra-00-google-chrome-fix.sh
+libappindicator3-1
 # ./inst-std-inet-xtra-google-chrome-browser-plugin-freshplayer-pepperflash/inst-std-inet-xtra-google-chrome-browser-plugin-freshplayer-pepperflash.sh
 libevent-pthreads-2.0-5
 browser-plugin-freshplayer-pepperflash
-# ./inst-std-inet-xtra-google-chrome/inst-std-inet-xtra-00-google-chrome-fix.sh
-libappindicator3-1
 # ./inst-std-inet-xtra-google-chrome/inst-std-inet-xtra-google-chrome.sh
 libappindicator1
 libdbusmenu-glib4
@@ -242,7 +246,7 @@ libvo-amrwbenc0
 libzvbi0
 libuchardet0
 mpv
-# ./inst-std-office-libreoffice/inst-std-office-00-libreoffice-fix.sh
+# ./inst-std-office-00-libreoffice-fix/inst-std-office-00-libreoffice-fix.sh
 libgpgmepp6
 # ./inst-std-office-libreoffice/inst-std-office-libreoffice.sh
 libreoffice
@@ -366,6 +370,8 @@ zfs-initramfs
 # ./inst-zclean-02-remove-block-services/inst-zclean-02-remove-block-services.sh
 
 # ./inst-zclean-03-default-filemanager/inst-zclean-03-default-filemanager.sh
+
+# ./inst-zclean-04-chmod-script/inst-zclean-04-chmod-script.sh
 
 # ./inst-zclean-98-zerosizing/inst-zclean-98-zerosizing.sh
 
