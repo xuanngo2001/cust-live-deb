@@ -5,7 +5,7 @@
   * After this operation, 1,448 kB of additional disk space will be used.
   * After this operation, 72.2 MB of additional disk space will be used.
   * Install openra.
-  * Disk size = 4509536K. Space Used = 128416K.
+  * Disk size = 4509544K. Space Used = 128420K.
   * The following NEW packages will be installed:
   ```bash
   libmono-system-data4.0-cil libmono-system-enterpriseservices4.0-cil
