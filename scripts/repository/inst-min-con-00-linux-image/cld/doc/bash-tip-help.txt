@@ -9,9 +9,6 @@
     }
     export -f get_executing_path
     
-  # Timestamp.
-    date_string=$(date +"%Y-%m-%d.%0k.%M.%S")
-  
   # dirname: Always double quotes. Otherwise, issue with path with spaces.
     echo "$(dirname "${line_with_spaces}")"
   
