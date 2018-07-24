@@ -22,6 +22,10 @@ echo "${GV_LOG} * Insert speedcrunch in Accessories menu."
 #   speedcrunch is the winner. It is small and doesn't seem to need "gnome base packages".
 #   Note: Gnome has 52528K overhead.
 #
+#   * >>>>>>>>> Running inst-std-accessories-calc-qalculate-gtk.sh ...
+#     * After this operation, 7,964 kB of additional disk space will be used.
+#     * Install qalculate-gtk.
+#     * Disk size = 2028364K. Space Used = 10312K.
 #   * Running inst-std-accessories-calc-calcoo.sh ...
 #     * After this operation, 123 kB of additional disk space will be used.
 #     * Install calculator: calcoo.
@@ -51,3 +55,4 @@ echo "${GV_LOG} * Insert speedcrunch in Accessories menu."
 #     * Install Calculator: galculator.
 #     * Insert galculator in Accessories menu.
 #     * Disk size = 2825140K. Space Used = 1520K.
+
