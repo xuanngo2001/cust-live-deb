@@ -95,10 +95,6 @@ Register your own extension: http://stackoverflow.com/questions/30931/register-f
       # Download drush-8.1.17.phar from https://github.com/drush-ops/drush/releases
       chmod +x drush.phar
       mv drush.phar drush-8.1.17.phar
-      
-    cd scripts/repository/inst-min-con-compressors
-      https://www.rarlab.com/rar/rarlinux-5.6.0.tar.gz
-      tar -xvzf rarlinux-x64-5.6.0.tar.gz 
                                                                           
     ./build-cld.sh work_no_proxy
 
