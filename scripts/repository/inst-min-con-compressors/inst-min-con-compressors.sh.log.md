@@ -8,12 +8,11 @@
   * Install de/compressor: bzip2.
   * Install de/compressor: rar.
   * Install de/compressor: unrar.
-  * Install de/compressor: unzip.
   * Install de/compressor: zip.
+  * Install de/compressor: unzip.
   * Install de/compressor: p7zip.
-  * Add universal extractor.
-  * Use new rar version due to segmentation fault with 'RAR 4.20' with linux-image-4.8.0-0.bpo.2-amd64-unsigned (4.8.11-1~bpo8+1).
-  * Disk size = 719484K. Space Used = 4540K.
+  * Add universal extractor: extract.sh.
+  * Disk size = 718296K. Space Used = 4520K.
   * The following NEW packages will be installed:
   ```bash
   bzip2
