@@ -19,12 +19,13 @@ Hit:12 http://localhost/aptly-repo/master_stretch-updates-contrib stretch-update
 Hit:13 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates InRelease
 Hit:14 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease
 Hit:15 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
-Err:16 http://dl.google.com/linux/chrome/deb stable InRelease
-  Temporary failure resolving 'dl.google.com'
+Ign:16 http://dl.google.com/linux/chrome/deb stable InRelease
+Get:17 http://dl.google.com/linux/chrome/deb stable Release [1,189 B]
+Get:18 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B]
+Get:19 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,380 B]
+Fetched 3,388 B in 12s (268 B/s)
 Reading package lists...
-W: Failed to fetch http://dl.google.com/linux/chrome/deb/dists/stable/InRelease  Temporary failure resolving 'dl.google.com'
-W: Some index files failed to download. They have been ignored, or old ones used instead.
 CLDS: * Add deb-multimedia keyring.
 CLDS: * Add deb-multimedia repository.
 CLDS: * apt-get update
-CLDS: * Disk size = 2926808K. Space Used = 40K.
+CLDS: * Disk size = 2926844K. Space Used = 60K.
