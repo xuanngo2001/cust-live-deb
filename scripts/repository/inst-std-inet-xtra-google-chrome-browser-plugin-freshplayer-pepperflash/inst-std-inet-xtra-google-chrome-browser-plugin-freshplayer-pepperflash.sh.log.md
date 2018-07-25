@@ -2,7 +2,7 @@
   * After this operation, 300 kB of additional disk space will be used.
   * After this operation, 1,162 kB of additional disk space will be used.
   * Install browser-plugin-freshplayer-pepperflash: Needed for Chrome
-  * Disk size = 2645772K. Space Used = 2016K.
+  * Disk size = 2645776K. Space Used = 2016K.
   * The following NEW packages will be installed:
   ```bash
   libevent-core-2.0-5 libevent-pthreads-2.0-5

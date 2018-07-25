@@ -2,7 +2,7 @@
   * After this operation, 43.9 MB of additional disk space will be used.
   * After this operation, 43.1 MB of additional disk space will be used.
   * After this operation, 43.1 MB of additional disk space will be used.
-  * Disk size = 2083048K. Space Used = 9692K.
+  * Disk size = 2083052K. Space Used = 9712K.
   * The following NEW packages will be installed:
   ```bash
   binutils libgdiplus libmono-corlib4.5-cil libmono-security4.0-cil
