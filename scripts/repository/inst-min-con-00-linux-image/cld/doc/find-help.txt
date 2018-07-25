@@ -1,20 +1,20 @@
-  # Official manual: https://www.gnu.org/software/findutils/manual/html_mono/find.html
+# Official manual: https://www.gnu.org/software/findutils/manual/html_mono/find.html
 
-  # A single sed command for each file is executed.
-    find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} \;
-  
-  # As many files as possible are given as parameters to sed at once.
-    find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} +
+# A single sed command for each file is executed.
+  find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} \;
 
-  # Find and execute multiple commands.
-    find /usr/local/bin/ -name '*.sh' -type f -execdir echo "Executing {}" \; -execdir chmod +x {} \; 
+# As many files as possible are given as parameters to sed at once.
+  find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} +
+
+# Find and execute multiple commands.
+  find /usr/local/bin/ -name '*.sh' -type f -execdir echo "Executing {}" \; -execdir chmod +x {} \; 
+
+# Find multiple patterns.
+  find . -type f -o -iname '*.asf' -o -iname '*.avi'
+
+# Find files with size 0.
+  find . -type f -size 0
   
-  # Find multiple patterns.
-    find . -type f -o -iname '*.asf' -o -iname '*.avi'
-  
-  # Find files with size 0.
-    find . -type f -size 0
-    
-  # Find all images from current directory. Very slow because it reads the file content.
-    find . -type f -exec file {} \; | grep -o -P '^.+: \w+ image'
+# Find all images from current directory. Very slow because it reads the file content.
+  find . -type f -exec file {} \; | grep -o -P '^.+: \w+ image'
   

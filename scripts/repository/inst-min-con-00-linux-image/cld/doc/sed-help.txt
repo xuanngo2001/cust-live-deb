@@ -1,13 +1,13 @@
-  # Use pipe(|) instead slash(/).
-    sed 's|/home|/new|' input_file.txt
+# Use pipe(|) instead slash(/).
+  sed 's|/home|/new|' input_file.txt
 
-  # Delete up to the first occurrence(:).
-    echo '123:aaaa:f35:bbbb' | sed 's/[^:]*://'
+# Delete up to the first occurrence(:).
+  echo '123:aaaa:f35:bbbb' | sed 's/[^:]*://'
 
-  # Remove 'empty' lines, lines with space/tabs are removed too.
-    sed '/^\s*$/d'
-  
-  # Delete line with pattern.
-    sed -i.bck "/pattern/d"
+# Remove 'empty' lines, lines with space/tabs are removed too.
+  sed '/^\s*$/d'
+
+# Delete line with pattern.
+  sed -i.bck "/pattern/d"
 
     
