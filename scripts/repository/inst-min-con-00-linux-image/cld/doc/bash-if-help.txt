@@ -16,6 +16,15 @@
     echo "The files are differents"
   fi
 
+# Elseif
+	if [ "${var}" -eq 0 ]; then
+	  echo "${var}"
+	elif [ "${var}" -gt 0 ]; then
+	  echo "${var}"
+	else
+	   echo "Unknown parameter"
+	fi
+
 # If test conditions.
   -b filename - Block special file
   -c filename - Special character file
