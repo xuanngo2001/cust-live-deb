@@ -5,7 +5,7 @@
   * Install Media Player: mpv 0.27.2 .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 2951724K. Space Used = 24880K.
+  * Disk size = 2957180K. Space Used = 24892K.
   * The following NEW packages will be installed:
   ```bash
   libldb1 libsmbclient libtalloc2 libtevent0 libwbclient0 python-talloc
