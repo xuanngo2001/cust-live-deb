@@ -12,7 +12,7 @@
   * Install de/compressor: unzip.
   * Install de/compressor: p7zip.
   * Add universal extractor: extract.sh.
-  * Disk size = 718252K. Space Used = 4520K.
+  * Disk size = 718184K. Space Used = 4516K.
   * The following NEW packages will be installed:
   ```bash
   bzip2

@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-mypaint.sh ...
   * After this operation, 55.3 MB of additional disk space will be used.
   * Install mypaint.
-  * Disk size = 2483156K. Space Used = 88816K.
+  * Disk size = 2483096K. Space Used = 88820K.
   * The following NEW packages will be installed:
   ```bash
   gir1.2-atk-1.0 gir1.2-freedesktop gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0
