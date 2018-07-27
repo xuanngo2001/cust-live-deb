@@ -10,4 +10,30 @@
 # Delete line with pattern.
   sed -i.bck "/pattern/d"
 
-    
+# Find line with MATCH_PATTERN. Then, SEARCH and REPLACE.
+  sed -i "/MATCH_PATTERN/b; s/SEARCH/REPLACE/" tmp.txt
+
+# Delete text between 2 patterns.
+	# Delete text between patterns, excluding the lines containing these patterns:
+	sed '/PATTERN-1/,/PATTERN-2/{//!d}' input.txt
+	
+	# Delete text between patterns, including the lines containing these patterns:
+	sed '/PATTERN-1/,/PATTERN-2/d' input.txt
+	
+# Delete all the lines after PATTERN, use this
+	sed '/PATTERN/,$d' input.txt    
+
+# Delete matching line: sed (printing the inverse is faster than actual deletion). Need -n.
+  sed -n '/pattern/!p' input.txt
+
+# Insert file content after match.
+	# Insert content of file2.txt into file1.txt after <tag> is found. /r stands for reading in a file.
+	sed '/<tag>/ r file2.txt' file1.txt
+	 
+	# Append line after match
+	sed  '/SEARCH-PATTERN/a REPLACE_STRING' inputfile
+	 
+	# Insert line before match
+	sed  '/SEARCH-PATTERN/i REPLACE_STRING' inputfile
+
+
