@@ -8,16 +8,19 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install dependencies.
-debconf-set-selections -v wifite-wireshark.seed
-apt-get -y install tshark
-apt-get -y install aircrack-ng reaver 
+  debconf-set-selections -v wifite-wireshark.seed
+  apt-get -y install tshark
+  apt-get -y install aircrack-ng reaver 
 
 # Update wifite to revision 87.
-yes | cp wifite87.py /usr/bin/wifite
-chmod +x /usr/bin/wifite
+  yes | cp wifite87.py /usr/bin/wifite
+  chmod +x /usr/bin/wifite
+
+# Add to CLD/
+ yes | cp -av ./cld  /usr/local
 
 # Log
-echo "${GV_LOG} * Install wifite."
+  echo "${GV_LOG} * Install wifite."
 
 
 # Reference:
