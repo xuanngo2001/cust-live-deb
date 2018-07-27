@@ -8,7 +8,10 @@
     fi
   }
   export -f get_executing_path
-  
+
+# Filesize.
+  stat -c %s file.txt
+    
 # dirname: Always double quotes. Otherwise, issue with path with spaces.
   echo "$(dirname "${line_with_spaces}")"
 
