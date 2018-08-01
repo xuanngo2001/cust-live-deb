@@ -42,4 +42,7 @@
 	# Insert line before match
 	sed  '/SEARCH-PATTERN/i REPLACE_STRING' inputfile
 
+# Use repeat characters pattern.
+  echo bluray.mkv.jpg.rar | sed 's/.\{4\}.rar//'
+
 

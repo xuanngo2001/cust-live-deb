@@ -22,3 +22,9 @@
     echo "i=$i , position=$position"
     let position+=1 # Same as 'i=i+1
   done
+  
+# Loop through movie files
+  for movie in *.{mp4,mkv,avi,rmvb}; do
+    echo "${movie}" 
+  done
+  
