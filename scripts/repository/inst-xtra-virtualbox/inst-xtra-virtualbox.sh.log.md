@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-virtualbox.sh ...
   * After this operation, 195 MB of additional disk space will be used.
   * Install virtualbox.
-  * Disk size = 4855612K. Space Used = 260112K.
+  * Disk size = 4863792K. Space Used = 260132K.
   * The following NEW packages will be installed:
   ```bash
   libdouble-conversion1 libpcre16-3 libqt5core5a libqt5dbus5 libqt5gui5

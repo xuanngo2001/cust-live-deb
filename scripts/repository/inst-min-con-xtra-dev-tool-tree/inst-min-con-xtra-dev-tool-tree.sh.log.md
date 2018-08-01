@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-dev-tool-tree.sh ...
   * After this operation, 106 kB of additional disk space will be used.
   * Install tree to display files and directories structure.
-  * Disk size = 1273144K. Space Used = 176K.
+  * Disk size = 1273080K. Space Used = 172K.
   * The following NEW packages will be installed:
   ```bash
   tree
