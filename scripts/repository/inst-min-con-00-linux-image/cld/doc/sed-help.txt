@@ -7,6 +7,12 @@
 # Remove 'empty' lines, lines with space/tabs are removed too.
   sed '/^\s*$/d'
 
+# Remove lines that have 3 characters or shorter.
+  sed -r '/^.{,3}$/d' filename
+  
+  # Print lines that have 3 characters or shorter.
+  sed -ne '/^.\{,3\}$/p'
+  
 # Delete line with pattern.
   sed -i.bck "/pattern/d"
 
