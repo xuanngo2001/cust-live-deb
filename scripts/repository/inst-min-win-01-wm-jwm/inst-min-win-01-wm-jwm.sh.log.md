@@ -2,7 +2,7 @@
   * After this operation, 122 MB of additional disk space will be used.
   * Install Window Manager jwm: JWM v2.3.6 by Joe Wingbermuehle.
   * Set .
-  * Disk size = 1865672K. Space Used = 109216K.
+  * Disk size = 1865684K. Space Used = 109216K.
   * The following NEW packages will be installed:
   ```bash
   adwaita-icon-theme dbus-user-session dconf-gsettings-backend dconf-service
