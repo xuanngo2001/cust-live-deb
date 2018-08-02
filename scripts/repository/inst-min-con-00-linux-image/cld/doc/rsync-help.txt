@@ -7,7 +7,7 @@
 # Copy all files, except files with size <= 0.
   rsync -a --min-size=1 source destination
   
-# Run rsync twice to do post copy checksum.
-  rsync -a source destination
-  rsync -ac source destination
+# Run rsync twice to do post copy checksum(-c).
+  rsync -a   source destination
+  rsync -acv source destination
   
