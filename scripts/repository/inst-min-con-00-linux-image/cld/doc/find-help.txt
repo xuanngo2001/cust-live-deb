@@ -14,6 +14,9 @@
 
 # Find files with size 0.
   find . -type f -size 0
+
+# Find empty directories.
+  find . -type d -empty
   
 # Find all images from current directory. Very slow because it reads the file content.
   find . -type f -exec file {} \; | grep -o -P '^.+: \w+ image'
