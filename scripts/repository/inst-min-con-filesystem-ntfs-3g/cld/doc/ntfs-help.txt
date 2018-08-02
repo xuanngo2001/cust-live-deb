@@ -1,0 +1,5 @@
+# Format partition using NTFS.
+  mkfs.ntfs /dev/sdc1
+
+# Label device.
+  ntfslabel /dev/sdb ScandiskUSB
