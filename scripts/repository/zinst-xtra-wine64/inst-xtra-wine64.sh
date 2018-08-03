@@ -6,8 +6,14 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Add to CLD/
-  yes | cp -av ./cld  /usr/local
+# Explicitly download dependent packages
+   apt-get install -d -y libgphoto2-6 
+
+# Install wine64.
+apt-get -y install wine64
+
 
 # Log
-echo "${GV_LOG} * Install cld-bin."
+echo "${GV_LOG} * Install wine64."
+
+
