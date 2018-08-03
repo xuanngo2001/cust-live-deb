@@ -7,7 +7,7 @@
   * Install Media Player: mpv 0.23.0 .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 2965576K. Space Used = 42056K.
+  * Disk size = 2965592K. Space Used = 42056K.
   * The following NEW packages will be installed:
   ```bash
   libopencore-amrnb0
