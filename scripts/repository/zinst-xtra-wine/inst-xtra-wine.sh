@@ -9,7 +9,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly download dependent packages
-apt-get install -d -y libwine ocl-icd-libopencl1 wine64
+#apt-get install -d -y libwine ocl-icd-libopencl1 wine64
 
 # Install wine so that you can run Windows applications.
 #apt-get install -d -y nvidia-libopencl1 amd-libopencl1
