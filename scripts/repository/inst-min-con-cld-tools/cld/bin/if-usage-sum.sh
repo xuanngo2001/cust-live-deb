@@ -12,7 +12,7 @@ if [ $# -lt 1 ]; then
   exit 1;
 fi
 
-CONTENT=$(cat "$@" | grep -v lo)
+CONTENT=$(cat "$@" | grep -v '^lo|')
 BYTES_RECEIVED=$(echo "${CONTENT}" | cut -d'|' -f3)
 BYTES_TRANSMITTED=$(echo "${CONTENT}" | cut -d'|' -f4)
 TOTAL_BYTES_RECEIVED=$(awk '{sum+=$1} END {printf "%.0f", sum}' <(echo "${BYTES_RECEIVED}"))
