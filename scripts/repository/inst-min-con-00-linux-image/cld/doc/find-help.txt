@@ -17,9 +17,13 @@
 
 # Find empty directories.
   find . -type d -empty
+
+# Find directories of this directory.
+  find . -maxdepth 1 -mindepth 1
   
 # Find all images from current directory. Very slow because it reads the file content.
   find . -type f -exec file {} \; | grep -o -P '^.+: \w+ image'
 
 # Find and delete file marked as *.xmp
-  find . -type f -name '*.xmp' | sed 's/\.xmp//' | tr '\n' '\0' | xargs -0 rm -f "{}"  
+  find . -type f -name '*.xmp' | sed 's/\.xmp//' | tr '\n' '\0' | xargs -0 rm -f "{}"
+
