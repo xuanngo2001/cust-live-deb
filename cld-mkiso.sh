@@ -87,7 +87,7 @@ KERNEL_VERSION=$(cat binary/dpkg-no-version.log| grep 'linux-image-' | head -n1 
 CLD_LOGS_DIR="./install-log/cld${SYSTEM}_${DATE_STRING}_K${KERNEL_VERSION}"
 mkdir -p "${CLD_LOGS_DIR}"
 CLD_LOGS_DIR=$(readlink -ev "${CLD_LOGS_DIR}")
-yes | cp -av ./binary/*.log "${CLD_LOGS_DIR}"
+yes | cp -av ./logs "${CLD_LOGS_DIR}"
 
 # Create squashfs.
 ##################################################################
