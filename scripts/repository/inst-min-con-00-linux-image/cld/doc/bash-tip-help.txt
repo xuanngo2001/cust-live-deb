@@ -22,15 +22,5 @@
 # Increment variable inside loop.
   let index=index+1
 
-# Get total elapsed time.	  
-  # Get time as a UNIX timestamp (seconds elapsed since Jan 1, 1970 0:00 UTC).
-  T="$(date +%s)"
-  
-  # Do some work.
-  sleep 3s
-  
-  # Get total elapsed time.
-  T="$(($(date +%s)-T))"
-  printf "Elapsed time: %02d:%02d:%02d:%02d [DD:HH:MM:SS]\n" "$((T/86400))" "$((T/3600%24))" "$((T/60%60))" "$((T%60))"
 
 		
