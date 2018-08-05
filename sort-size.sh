@@ -24,7 +24,7 @@ case "${ACTION}" in
   
   *)
     sort -t ';' -k5,5n "${SCRIPT_LOG_PARSABLE}"
-    echo "<system>: <script-name>; <date-time>; <disk-size-kb>; <space-used-kb>"
+    echo "<system>: <script-name>; <date-time>; <disk-size-kb>; <space-used-kb>; <runtime>"
     ;;
 esac
 
