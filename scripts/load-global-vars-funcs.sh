@@ -26,8 +26,8 @@ export GV_INSTALL_SIZE=/root/scripts/main.size
 export GV_SOURCES_LIST=/etc/apt/sources.list
 
 # Folder containing settings and scripts files for Cust-Live-Deb
-export GV_CLD_ROOT_DIR=/root/cld
-mkdir -p "${GV_CLD_ROOT_DIR}"
+#export GV_CLD_ROOT_DIR=/root/cld
+#mkdir -p "${GV_CLD_ROOT_DIR}"
 
 ###### FUNCTIONS ######
 
@@ -46,7 +46,10 @@ export -f GF_SIZE_OF
 
 # Use to exchange value variables between different script.
 export GP_VALUES_FILE=$(readlink -ev load-global-values.txt)
-
+  # Initialize default values.
+  echo 'PREV_TOTAL_SIZE=0' > "${GP_VALUES_FILE}"
+  echo "PREV_TIME=$(date +%s)" >> "${GP_VALUES_FILE}"
+  
 # Log total size in kilobytes.
 GF_LOG_TOTAL_SIZE ()
 {
@@ -60,11 +63,17 @@ GF_LOG_TOTAL_SIZE ()
   if [ -z "${PREV_TOTAL_SIZE}" ]; then PREV_TOTAL_SIZE=0; fi
   SPACE_USED=$((${CURRENT_TOTAL_SIZE}-${PREV_TOTAL_SIZE}))
   
-  # Log total size.
-  echo "${GV_LOG} * Disk size = ${CURRENT_TOTAL_SIZE}K. Space Used = ${SPACE_USED}K."
+  # Calculate runtime.
+  RUNTIME="$(($(date +%s)-PREV_TIME))"
+  printf -v RUNTIME_FORMAT "Runtime = %02d:%02d:%02d:%02d" "$((RUNTIME/86400))" "$((RUNTIME/3600%24))" "$((RUNTIME/60%60))" "$((RUNTIME%60))"
   
-  # Update previous total size.
-  echo "PREV_TOTAL_SIZE=${CURRENT_TOTAL_SIZE}" > ${GP_VALUES_FILE}
+  # Log total size.
+  echo "${GV_LOG} * Disk size = ${CURRENT_TOTAL_SIZE}K. Space Used = ${SPACE_USED}K. ${RUNTIME_FORMAT}."
+  
+  # Update previous total size and previous time.
+  sed -i "s/PREV_TOTAL_SIZE=.*/PREV_TOTAL_SIZE=${CURRENT_TOTAL_SIZE}/"  "${GP_VALUES_FILE}"
+  sed -i "s/PREV_TIME=.*/PREV_TIME=$(date +%s)/"                        "${GP_VALUES_FILE}"
+  
 }
 export -f GF_LOG_TOTAL_SIZE
 
