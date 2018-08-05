@@ -16,6 +16,7 @@ SCRIPT_LOG_PARSABLE=$(readlink -ev "${SCRIPT_LOG_PARSABLE}")
   sed -i 's/K\. Space Used = /; /'    "${SCRIPT_LOG_PARSABLE}"
   sed -i 's/K\.$//'                   "${SCRIPT_LOG_PARSABLE}"
   
+  # Add runtime.
   sed -i 's/K. Runtime = /; /'       "${SCRIPT_LOG_PARSABLE}"
   sed -i 's/\.$//'                   "${SCRIPT_LOG_PARSABLE}"
   
