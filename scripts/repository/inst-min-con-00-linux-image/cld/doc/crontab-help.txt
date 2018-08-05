@@ -1,6 +1,6 @@
 # Crontab will NOT add new entry, only overwrite the main configuration file.
 
-# Run script.sh at every 5th minute.
+# Run script.sh at every 5th minute. If script.sh is executed on 00:23:00, then the next run is on 00:25:00.
   echo "*/5 * * * * script.sh" | crontab
 
 # Run script.sh hourly.
