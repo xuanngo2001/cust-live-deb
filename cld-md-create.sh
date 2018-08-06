@@ -35,7 +35,9 @@ while IFS='' read -r SCRIPT_LOG || [[ -n "$SCRIPT_LOG" ]]; do
   
   # Append packages installed if exist.
   NEW_PACKAGES_MARKER="The following NEW packages will be installed:"
-  PKG_INSTALLED=$(echo "${LOG_CONTENT}" | sed -n "/${NEW_PACKAGES_MARKER}/,/^[^ *]/p" | grep '^  ' | tr ' ' '\n' | sort | uniq) # Get package list.
+  #PKG_INSTALLED=$(echo "${LOG_CONTENT}" | sed -n "/${NEW_PACKAGES_MARKER}/,/^[^ *]/p" | grep '^  ' | tr ' ' '\n' | sort | uniq) # Get package list.
+  PKG_INSTALLED=$(./cld--shlog-pkg-installed-extract.sh "${SCRIPT_LOG}")
+  
   if [ $(echo "${PKG_INSTALLED}"| tr -d ' '| wc -w) -gt 0 ]; then
     echo "  * ${NEW_PACKAGES_MARKER}" >> "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
     echo '  ```bash'                  >> "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
