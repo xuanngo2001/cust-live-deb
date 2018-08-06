@@ -51,7 +51,7 @@ export GP_VALUES_FILE=$(readlink -ev load-global-values.txt)
   echo "PREV_TIME=$(date +%s)" >> "${GP_VALUES_FILE}"
   
 # Log total size in kilobytes.
-GF_LOG_TOTAL_SIZE ()
+GF_LOG_SIZE_N_RUNTIME ()
 {
   # Load previous total size.
   . ${GP_VALUES_FILE}
@@ -75,7 +75,7 @@ GF_LOG_TOTAL_SIZE ()
   sed -i "s/PREV_TIME=.*/PREV_TIME=$(date +%s)/"                        "${GP_VALUES_FILE}"
   
 }
-export -f GF_LOG_TOTAL_SIZE
+export -f GF_LOG_SIZE_N_RUNTIME
 
 # Add repository to sources.list
 GF_ADD_SOURCE_LIST()
