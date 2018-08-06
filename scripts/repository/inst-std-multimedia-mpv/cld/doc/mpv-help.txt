@@ -18,5 +18,7 @@
   
 # Take screenshot from Webcam.
   mpv av://v4l2:/dev/video0
-    
-    
+
+# Take screenshot a specific time.(--no-terminal: turn off output)
+  mpv videofile.avi --no-audio --vo=image --start=2% --frames=1  -o output.jpg
+  
