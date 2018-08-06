@@ -22,5 +22,8 @@
 # Increment variable inside loop.
   let index=index+1
 
+# Redirection.
+  ls redirect-sterr-n-stdout &> /dev/null; echo $?
 
+  
 		
