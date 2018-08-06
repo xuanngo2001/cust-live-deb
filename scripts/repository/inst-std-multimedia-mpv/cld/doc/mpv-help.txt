@@ -1,22 +1,22 @@
-  # Key commands
-	  Shift+# : Switch audio channel.
-	  ( )     : Left, right audio channel.
-	  s       : Take screenshot.
+# Key commands
+  Shift+# : Switch audio channel.
+  ( )     : Left, right audio channel.
+  s       : Take screenshot.
+
+# Find and play videos: https://github.com/limelime/cust-live-deb/issues/268
+  mpv -playlist <(find "$PWD" -type f)
+  # $PWD is required. Otherwise, it'll try to go relative to the file descriptor's location, eg: "/dev/fd/./path/to/video-file.avi", which would fail to open.  
+
+# Extract audio from video file.
+  mpv videofile.avi -o audiofile.mp3 --no-video
+ 
+# Extract audio from video file at a specific time.
+  mpv videofile.avi -o audiofileAtSpecificTime.mp3 --no-video --start=00:01:00 --end=00:03:35
+ 
+# Extract audio from video file at a specific time for a relative length.
+  mpv videofile.avi -o audiofile10Seconds.mp3 --no-video --start=0 --length=10
   
-  # Find and play videos: https://github.com/limelime/cust-live-deb/issues/268
-	  mpv -playlist <(find "$PWD" -type f)
-	  # $PWD is required. Otherwise, it'll try to go relative to the file descriptor's location, eg: "/dev/fd/./path/to/video-file.avi", which would fail to open.  
-  
-  # Extract audio from video file.
-    mpv videofile.avi -o audiofile.mp3 --no-video
-   
-  # Extract audio from video file at a specific time.
-    mpv videofile.avi -o audiofileAtSpecificTime.mp3 --no-video --start=00:01:00 --end=00:03:35
-   
-  # Extract audio from video file at a specific time for a relative length.
-    mpv videofile.avi -o audiofile10Seconds.mp3 --no-video --start=0 --length=10
-    
-  # Take screenshot from Webcam.
-    mpv av://v4l2:/dev/video0
+# Take screenshot from Webcam.
+  mpv av://v4l2:/dev/video0
     
     
