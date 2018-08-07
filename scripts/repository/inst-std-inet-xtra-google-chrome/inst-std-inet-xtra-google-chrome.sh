@@ -41,9 +41,6 @@ yes | cp -av ./cld/ /usr/local/
 # Run Google Chrome as root.
 ./run-google-chrome-as-root.sh
 
-# Add google repository key.
-  wget -O - https://dl.google.com/linux/linux_signing_key.pub | gpg --no-default-keyring --keyring trustedkeys.gpg --import
-  
 # Log
 echo "${GV_LOG} * Install ${GOOGLE_CHROME_VERSION}."
 echo "${GV_LOG} * Modify configuration to run google-chrome as root."
@@ -51,3 +48,4 @@ echo "${GV_LOG} * Insert Google Chrome in Internet menu."
 echo "${GV_LOG} * Add google chrome alias, chrome."
 echo "${GV_LOG} * Set default browser: update-alternatives --config x-www-browser."
 echo "${GV_LOG} * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL"
+
