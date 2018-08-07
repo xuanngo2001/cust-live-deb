@@ -7,16 +7,13 @@
   * Assumed packages installed: bzip2 & Xserver installed.
   * VirtualBox guest additions installed: version: 5.2.16 r123759.
   * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-  * Disk size = 4866552K. Space Used = 262856K.
+  * Disk size = 4846428K. Space Used = 262824K. Runtime = 00:00:01:10.
   * The following NEW packages will be installed:
   ```bash
-  gcc-6 libasan3 libcc1-0 libcilkrts5 libgcc-6-dev libitm1 liblsan0 libmpx2
-  libtsan0 libubsan0 linux-compiler-gcc-6-x86
-  linux-headers-4.16.0-0.bpo.2-amd64 linux-headers-4.16.0-0.bpo.2-common
-  linux-headers-amd64 linux-kbuild-4.16
-  build-essential dkms dpkg-dev g++ g++-6 gcc gcc-6 libasan3 libc-dev-bin
-  libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libgcc-6-dev libitm1 liblsan0
-  libmpx2 libstdc++-6-dev libtsan0 libubsan0 linux-libc-dev make patch
-  linux-compiler-gcc-6-x86 linux-headers-4.16.0-0.bpo.2-amd64
-  linux-headers-4.16.0-0.bpo.2-common linux-kbuild-4.16
+build-essential dkms dpkg-dev g++ g++-6
+gcc gcc-6 libasan3 libc6-dev libcc1-0
+libc-dev-bin libcilkrts5 libdpkg-perl libgcc-6-dev libitm1
+liblsan0 libmpx2 libstdc++-6-dev libtsan0 libubsan0
+linux-compiler-gcc-6-x86 linux-headers-4.16.0-0.bpo.2-amd64 linux-headers-4.16.0-0.bpo.2-common linux-headers-amd64 linux-kbuild-4.16
+linux-libc-dev make patch
   ```
