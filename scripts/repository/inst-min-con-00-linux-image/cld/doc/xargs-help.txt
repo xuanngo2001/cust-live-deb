@@ -17,3 +17,6 @@
 # Combined use
   \ls *.xmp | sed 's/\.xmp//' |tr '\n' '\0'| xargs -0 -n1 -I{} sh -c "echo Y| zero-size.sh \"{}\";"
 
+# Add newline for every 3 words
+  echo 'cat dog eel pig'| xargs -n3
+  
