@@ -37,7 +37,7 @@ while IFS='' read -r SCRIPT_LOG || [[ -n "$SCRIPT_LOG" ]]; do
   NEW_PACKAGES_MARKER="The following NEW packages will be installed:"
   #PKG_INSTALLED=$(echo "${LOG_CONTENT}" | sed -n "/${NEW_PACKAGES_MARKER}/,/^[^ *]/p" | grep '^  ' | tr ' ' '\n' | sort | uniq) # Get package list.
   PKG_INSTALLED=$(./cld--shlog-pkg-installed-extract.sh "${SCRIPT_LOG}")
-  pkg_installed_formatted=$(echo "${PKG_INSTALLED}" | xargs | xargs -n5)  # Add newline for every 5 words.
+  pkg_installed_formatted=$(echo "${PKG_INSTALLED}" | xargs -n5)  # Add newline for every 5 words.
   
   if [ $(echo "${PKG_INSTALLED}"| tr -d ' '| wc -w) -gt 0 ]; then
     echo "  * ${NEW_PACKAGES_MARKER}" >> "${MD_DIR}/$(basename ${SCRIPT_LOG}).md"
