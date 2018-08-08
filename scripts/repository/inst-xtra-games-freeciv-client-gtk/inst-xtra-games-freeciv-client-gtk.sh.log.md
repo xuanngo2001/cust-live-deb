@@ -4,7 +4,7 @@
   * Install freeciv-server: You need the server to run freeciv.
   * Install freeciv-client-gtk.
   * How to run freeciv: http://freeciv.wikia.com/wiki/Install#Start_the_game
-  * Disk size = 4343608K. Space Used = 55500K. Runtime = 00:00:00:13.
+  * Disk size = 4361444K. Space Used = 55504K. Runtime = 00:00:00:09.
   * The following NEW packages will be installed:
   ```bash
 freeciv-client-gtk freeciv-data freeciv-data* freeciv-server freeciv-sound-standard

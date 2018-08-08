@@ -1,2 +1,3 @@
 * >>>>>>>>> Running inst-std-graphic-00-pinta-fix-mono-keyring.sh ...
-  * Disk size = 2073436K. Space Used = 24K. Runtime = 00:00:09:28.
+  * Install mono-keyring.
+  * Disk size = 2077752K. Space Used = 4K. Runtime = 00:00:00:01.
