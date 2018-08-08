@@ -2,7 +2,7 @@
   * After this operation, 161 MB of additional disk space will be used.
   * Install cheese.
   * By default, cheese stores all files in ~/.gnome2/cheese/media . 
-  * Disk size = 2373272K. Space Used = 195896K. Runtime = 00:00:00:29.
+  * Disk size = 2373292K. Space Used = 195888K. Runtime = 00:00:00:17.
   * The following NEW packages will be installed:
   ```bash
 cheese cheese-common gnome-desktop3-data gnome-video-effects gstreamer1.0-clutter-3.0
