@@ -6,3 +6,9 @@
   grep -e '(pattern1)|(pattern2)'
   grep '\(pattern1\)\|\(pattern2\)'
   
+# Show row number.  
+  echo -e "one\ntwo"| grep -n ^
+  
+# Show all but highlight pattern found.  
+  echo -e "one\ntwo\nthree"| grep -E 'e|$'
+  
