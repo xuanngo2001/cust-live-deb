@@ -4,7 +4,7 @@
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
-  * Disk size = 1761036K. Space Used = 98784K. Runtime = 00:00:00:15.
+  * Disk size = 1761056K. Space Used = 98772K. Runtime = 00:00:00:12.
   * The following NEW packages will be installed:
   ```bash
 keyboard-configuration libdrm2 libdrm-amdgpu1 libdrm-common libdrm-nouveau2
