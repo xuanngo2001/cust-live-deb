@@ -1,17 +1,44 @@
 CLDS:>>>>>>>>> Running inst-xtra-wine.sh ...
+Hit:1 http://localhost/aptly-repo/master_stretch-main stretch InRelease
+Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
+Hit:3 http://localhost/aptly-repo/master_deb-multimedia-main stretch InRelease
+Hit:4 http://localhost/aptly-repo/master_deb-multimedia-non-free stretch InRelease
+Hit:5 http://localhost/aptly-repo/master_google-main stable InRelease
+Hit:6 http://localhost/aptly-repo/master_mono-main stable-stretch InRelease
+Hit:7 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports InRelease
+Hit:8 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports InRelease
+Hit:9 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports InRelease
+Hit:10 http://localhost/aptly-repo/master_stretch-contrib stretch InRelease
+Hit:11 http://localhost/aptly-repo/master_stretch-non-free stretch InRelease
+Hit:12 http://localhost/aptly-repo/master_stretch-updates-contrib stretch-updates InRelease
+Hit:13 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates InRelease
+Hit:14 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease
+Hit:15 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
+Ign:16 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:17 http://dl.google.com/linux/chrome/deb stable Release
+Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main i386 Packages [310 kB]
+Get:19 http://localhost/aptly-repo/master_aptly-main squeeze/main i386 Packages [3,572 B]
+Get:20 http://localhost/aptly-repo/master_deb-multimedia-main stretch/main i386 Packages [10.4 kB]
+Get:21 http://localhost/aptly-repo/master_mono-main stable-stretch/main i386 Packages [8,310 B]
+Get:22 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib i386 Packages [2,749 B]
+Get:23 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main i386 Packages [19.8 kB]
+Get:24 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports/non-free i386 Packages [4,719 B]
+Get:25 http://localhost/aptly-repo/master_stretch-contrib stretch/contrib i386 Packages [4,143 B]
+Get:26 http://localhost/aptly-repo/master_stretch-non-free stretch/non-free i386 Packages [6,589 B]
+Get:27 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates/main i386 Packages [651 B]
+Get:28 http://localhost/aptly-repo/master_virtualbox-contrib stretch/contrib i386 Packages [1,193 B]
+Fetched 372 kB in 3s (106 kB/s)
+Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-ocl-icd-libopencl1 is already the newest version.
-libwine is already the newest version.
-wine64 is already the newest version.
-0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-wine is already the newest version.
-wine set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
-CLDS: * Install wine so that you can run Windows applications.
-CLDS: * You need to run 'wine winecfg' before using wine. This is a workaround of a bug.
-CLDS: * Disk size = 5356488K. Space Used = 8K.
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ wine32:i386 : Depends: libwine:i386 (= 3.0.1-2~bpo9+1) but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+CLDS: * Disk size = 4990112K. Space Used = 2688K. Runtime = 00:00:00:05.
