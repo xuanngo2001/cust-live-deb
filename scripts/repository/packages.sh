@@ -3,7 +3,14 @@ set -e
 # Description: Get all package names from inst-*.sh scripts. Note: it is not definitive.
 
 PACKAGE_LIST_FILE=./packages.list
-echo "# These are potential list of packages needed." > "${PACKAGE_LIST_FILE}"
+cat <<EOL > "${PACKAGE_LIST_FILE}"
+# To download the essential "base" Debian system: https://www.debian.org/doc/manuals/debian-faq/ch-pkg_basics.en.html#s-priority
+#   Remove these priorities will make local aptly repositories broken. debootstrap will not run.
+Priority (required)
+Priority (important)
+
+EOL
+
 while IFS='' read -r SCRIPT_FILE || [[ -n "$SCRIPT_FILE" ]]; do
   
   # Add script name.
