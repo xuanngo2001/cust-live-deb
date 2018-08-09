@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-xtra-timezone.sh ...
   * Set time zone to EST (America/Montreal) in /etc/timezone.
-  * Disk size = 1661944K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 1661896K. Space Used = 4K. Runtime = 00:00:00:01.
