@@ -15,5 +15,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Log
   echo "${GV_LOG} * Install wine64."
+  echo "${GV_LOG} * Test with Notepad++ 64-bit."
 
 
