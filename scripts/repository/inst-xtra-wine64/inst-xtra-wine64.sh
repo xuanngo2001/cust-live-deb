@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   apt-get install -d -y libgphoto2-6 
 
 # Install wine64.
-  apt-get -y install wine wine64
+  apt-get -y install wine wine64 fonts-wine
 
 
 # Log
