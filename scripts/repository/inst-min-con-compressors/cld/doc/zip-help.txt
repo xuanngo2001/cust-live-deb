@@ -1,0 +1,6 @@
+find . -name '*.pdf' -print | zip pdfFiles.zip -@
+
+find ./ -iname "*.pdf" | xargs -l 1000 zip -r -q -j abc.zip
+
+zip -r -s 200M myzip photos_test/
+find photos_test/ -mindepth 1 -maxdepth 1 | zip -@ -s 200M
