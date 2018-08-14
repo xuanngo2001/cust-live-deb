@@ -3,7 +3,7 @@
   * After this operation, 45.2 MB of additional disk space will be used.
   * After this operation, 45.3 MB of additional disk space will be used.
   * Pinta crashes with mono v4.6.2.7+dfsg-1. Hence, install higher version(5+).
-  * Disk size = 2087984K. Space Used = 10208K. Runtime = 00:00:00:01.
+  * Disk size = 2073444K. Space Used = 10208K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 binutils libgdiplus libmono-cairo4.0-cil libmono-corlib4.5-cil libmono-posix4.0-cil
