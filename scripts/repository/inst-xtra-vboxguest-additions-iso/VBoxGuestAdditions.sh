@@ -2,14 +2,10 @@
 set -e
 
 # Description: Download the VBoxGuestAdditions.iso.
+#     http://download.virtualbox.org/virtualbox/
 
-# http://download.virtualbox.org/virtualbox/
-
-# BAD ISO, linux headers not found: VBoxGuestAdditions_4.3.4.iso
-
-URL=http://download.virtualbox.org/virtualbox/5.2.4/VBoxGuestAdditions_5.2.4.iso    # Stretch: K14
-URL=http://download.virtualbox.org/virtualbox/5.2.14/VBoxGuestAdditions_5.2.14.iso  # Stretch: K14
 URL=http://download.virtualbox.org/virtualbox/5.2.16/VBoxGuestAdditions_5.2.16.iso  # Stretch: K16
+URL=http://download.virtualbox.org/virtualbox/5.2.18/VBoxGuestAdditions_5.2.18.iso
 
 # Download ISO if not already exists.
 ISO_FILE=$(basename $URL)
