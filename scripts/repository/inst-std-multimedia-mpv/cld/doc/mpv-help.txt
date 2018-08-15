@@ -26,3 +26,11 @@
 # Take screenshot a specific time.(--no-terminal: turn off output)
   mpv videofile.avi --no-audio --vo=image --start=2% --frames=1  -o output.jpg
   
+# Encoding: https://github.com/mpv-player/mpv/blob/master/DOCS/encoding.rst
+  cat /etc/mpv/encoding-profiles.conf
+  mpv infile -o outfile.avi --vf=fps=25 -ovc mpeg4    -ovcopts qscale=4                               -oac libmp3lame -oacopts ab=128k
+  mpv infile -o outfile.mkv             -ovc libx264  -ovcopts preset=medium,crf=23,profile=baseline  -oac libvorbis  -oacopts qscale=3
+  mpv infile -o outfile.mp4             -ovc libx264  -ovcopts preset=medium,crf=23,profile=baseline  -oac aac        -oacopts ab=128k
+  mpv infile -o outfile.mkv -of webm    -ovc libvpx   -ovcopts qmin=6,b=1000000k                      -oac libvorbis  -oacopts qscale=3
+  
+  
