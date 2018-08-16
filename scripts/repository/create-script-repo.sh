@@ -20,7 +20,7 @@ while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
   PKG_DIR="${DIR_PREFIX}-${PKG_NAME}"
 
   if [ -d "${PKG_DIR}" ]; then
-    echo "$0: Warning: ${PKG_DIR} already existed. Processing stop!"
+    echo "$0: Warning: ${PKG_DIR} already existed. Skipped!"
   else
   
 	  # Create script repository directory.
