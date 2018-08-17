@@ -1,11 +1,11 @@
 * >>>>>>>>> Running inst-xtra-wine64.sh ...
-  * After this operation, 4,788 kB of additional disk space will be used.
+  * After this operation, 4,330 kB of additional disk space will be used.
   * After this operation, 203 MB of additional disk space will be used.
   * Install wine64.
   * Test with Notepad++ 64-bit.
-  * Disk size = 3891808K. Space Used = 223540K. Runtime = 00:00:00:07.
+  * Disk size = 5684752K. Space Used = 222936K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
-fonts-wine libgd3 libgphoto2-6 libgphoto2-port12 libwine
-ocl-icd-libopencl1 wine wine64
+fonts-wine libgphoto2-6 libgphoto2-port12 libwine ocl-icd-libopencl1
+wine wine64
   ```
