@@ -12,3 +12,7 @@
 # Show all but highlight pattern found.  
   echo -e "one\ntwo\nthree"| grep -E 'e|$'
   
+# Count number of occurrence found. Number of CPUs.
+  grep -c ^processor /proc/cpuinfo
+  
+  
