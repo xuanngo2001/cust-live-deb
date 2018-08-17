@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-multimedia-mencoder.sh ...
   * After this operation, 44.1 MB of additional disk space will be used.
   * Install mencoder.
-  * Disk size = 3160364K. Space Used = 55664K. Runtime = 00:00:00:04.
+  * Disk size = 3160368K. Space Used = 55664K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 liba52-0.7.4 libenca0 libfaac0 libldb1 libmad0
