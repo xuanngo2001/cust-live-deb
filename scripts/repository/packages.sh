@@ -29,4 +29,5 @@ while IFS='' read -r SCRIPT_FILE || [[ -n "$SCRIPT_FILE" ]]; do
 
 done < <( find ./inst-* -type f -name "inst-*.sh" | sort )
 
+yes | cp -av "${PACKAGE_LIST_FILE}" /media/master/github/aptly/
 
