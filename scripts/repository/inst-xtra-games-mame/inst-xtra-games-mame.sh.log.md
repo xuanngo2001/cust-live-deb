@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-games-mame.sh ...
   * After this operation, 267 MB of additional disk space will be used.
   * Install mame.
-  * Disk size = 4830824K. Space Used = 318532K. Runtime = 00:00:00:12.
+  * Disk size = 4830836K. Space Used = 318532K. Runtime = 00:00:00:19.
   * The following NEW packages will be installed:
   ```bash
 libdouble-conversion1 liblua5.3-0 libpcre16-3 libportaudio2 libportmidi0

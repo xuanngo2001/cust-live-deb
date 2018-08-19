@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-zclean-03-default-filemanager.sh ...
   * Set shortcut key(WIN+e) for filemanager.
-  * Disk size = 3082748K. Space Used = 4K. Runtime = 00:00:00:02.
+  * Disk size = 4658180K. Space Used = 4K. Runtime = 00:00:00:01.
