@@ -1,114 +1,49 @@
-ffmpeg -i "01.mkv" -c:v copy -c:a ac3 -c:s copy "test.mkv"
+# DVDrip.
+	ffmpeg \
+	  -analyzeduration 500M -probesize 500M \
+	  -i INPUTFILE.VOB \
+	  -map 0:1 -map 0:2 -map 0:3 -map 0:4 -map 0:5 -map 0:6 \
+		  -metadata:s:a:0 language=ita -metadata:s:a:0 title="Italian stereo" \
+		  -metadata:s:a:1 language=eng -metadata:s:a:1 title="English stereo" \
+		  -metadata:s:s:0 language=ita -metadata:s:s:0 title="Italian" \
+		  -metadata:s:s:1 language=eng -metadata:s:s:1 title="English" \	  
+	  -codec:v libx264 -crf 21 \
+	  -codec:a libmp3lame -qscale:a 2 \
+	  -codec:s copy \
+	  OUTPUTFILE.mkv < /dev/null
+  
+  # Reference: https://www.internalpointers.com/post/convert-vob-files-mkv-ffmpeg
+    cfr: 0 is lossless, 23 is default, and 51 is worst possible. The sane range is between 18 and 28.
+  
+# Strange behaviour when running ffmpeg in a loop. It reads standard input. To turn off.
+  ffmpeg ... < /dev/null
+  ffmpeg -nostdin
+  
+# Probe video file.
+  ffmpeg -i input.mkv
+		Input #0, matroska,webm, from 'input.mkv':
+		  Metadata:
+		  Duration: 00:00:05.00, start: 0.000000, bitrate: 106 kb/s
+		    Stream #0:0: Video: h264 (High 4:4:4 Predictive), yuv444p, 320x240 [SAR 1:1 DAR 4:3], 25 fps, 25 tbr, 1k tbn, 50 tbc (default)
+		    Stream #0:1: Audio: vorbis, 44100 Hz, mono, fltp (default)
+		    Stream #0:2: Audio: vorbis, 44100 Hz, mono, fltp (default)
+		    Stream #0:3: Audio: vorbis, 44100 Hz, mono, fltp (default)
+		    Stream #0:4: Subtitle: ass (default)
 
-https://stackoverflow.com/questions/32922226/extract-every-audio-and-subtitles-from-a-video-with-ffmpeg
+# Extract streams.		    
+	ffmpeg -i input.mkv \
+	-map 0:v -c copy video.mkv \
+	-map 0:a:0 -c copy audio0.oga \
+	-map 0:a:1 -c copy audio1.oga \
+	-map 0:a:2 -c copy audio2.oga \
+	-map 0:s -c copy subtitles.ass
+	
+	# In this case, the example above is the same as:
+	ffmpeg -i input.mkv \
+	-map 0:0 -c copy video.mkv \
+	-map 0:1 -c copy audio0.oga \
+	-map 0:2 -c copy audio1.oga \
+	-map 0:3 -c copy audio2.oga \
+	-map 0:4 -c copy subtitles.ass		    
+		    
 
-
-https://www.internalpointers.com/post/convert-vob-files-mkv-ffmpeg
-
-====================
-We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. By using our site, you acknowledge that you have read and understand our Privacy Policy, and our Terms of Service. Your use of this site is subject to these policies and terms. | ok, got it
-
-**internal / pointers   
-— WRITTEN BY TRIANGLES ON JULY 09, 2017 • UPDATED ON NOVEMBER 13, 2017 • ID 54 —
-
-How to convert VOB files to mkv with FFmpeg
-You have just ripped a movie from a DVD and you want to store it in a compressed format with multi-language audio tracks, subtitles and high quality video.
-
-
- 
-In this guide I'll show you how to do that by using FFmpeg (version 3.2.5 or greater) on a Linux-based operating system - I'm currently using Debian Stable, aka Jessie.
-
-FFmpeg is able to deal with a vast amount of audio/video formats and containters. For our task I will be using Matroska Multimedia Container container (.mkv files), as it is capable of storing different audio, video and subtitle tracks together. The video stream will be encoded with H.264 codec, currently the best guy in town. Audio tracks will be encoded in mp3 format.
-
-Let's begin!
-
-Step 1: unify your VOBs
-VOB file are usually 1 Gb each in order to be compatible with all operating systems, as some cannot read files larger than that size. The first step then is to join them into a single, big VOB file. To do that, browse to the VIDEO_TS folder and do:
-
-cat *.VOB > output.vob
-That's it.
-
-Step 2: identify the streams
-Now let's inspect the newly created file: we want to find what kind of stuff it contains. Use FFmpeg for that, as follows:
-
-ffmpeg -i output.vob
-For example, you might end up with something like:
-
-Input #0, mpeg, from 'output.vob':
-  Duration: 01:50:40.99, start: 0.287267, bitrate: 7581 kb/s
-    Stream #0:0[0x1bf]: Data: dvd_nav_packet
-    Stream #0:1[0x1e0]: Video: mpeg2video (Main), yuv420p(tv, top first), 720x576 [SAR 64:45 DAR 16:9], 25 fps, 25 tbr, 90k tbn, 50 tbc
-    Stream #0:2[0x80]: Audio: ac3, 48000 Hz, 5.1(side), fltp, 384 kb/s
-    Stream #0:3[0x89]: Audio: dts (DTS), 48000 Hz, 5.1(side), fltp, 768 kb/s
-    Stream #0:4[0x82]: Audio: ac3, 48000 Hz, 5.1(side), fltp, 384 kb/s
-Here FFmpeg reports that my VOB file contains five streams. Starting from the first one, Stream #0:0 contains data regarding the DVD's menu navigation. We can get rid of it. Stream #0:1 is the actual movie. The remaining streams are audio tracks. I'll discard Stream #0:2 as it contains the same data (English audio track) encoded in a different format.
-
-Mind the deep-buried streams!
-Normally, while looking for streams, FFmpeg parses only few seconds of the input data as most formats have a global header there that describes everything present in the file. Unfortunately VOBs have no headers and it is likely to find movies that hold additional streams further down the VOB file.
-
-Let FFmpeg scan it thoroughly by adding two more flags: -analyzeduration (in microseconds) and -probesize (in bytes). Honestly I'm not able to tell the difference between those options: put in there some fairly large numbers and tweak them until you are satisfied. For example:
-
-ffmpeg -analyzeduration 100M -probesize 100M -i output.vob
-And, not surprisingly, two more streams are found:
-
-...
-    Stream #0:5[0x21]: Subtitle: dvd_subtitle
-    Stream #0:6[0x20]: Subtitle: dvd_subtitle
-Subtitles: let's keep them!
-
-
- 
-Step 3: encoding
-We are ready to pack our DVD into a beautiful .mkv file. The command looks like:
-
-ffmpeg \
-  -analyzeduration 100M -probesize 100M \
-  -i output.vob \
-  -map 0:1 -map 0:3 -map 0:4 -map 0:5 -map 0:6 \
-  -metadata:s:a:0 language=ita -metadata:s:a:0 title="Italian stereo" \
-  -metadata:s:a:1 language=eng -metadata:s:a:1 title="English stereo" \
-  -metadata:s:s:0 language=ita -metadata:s:s:0 title="Italian" \
-  -metadata:s:s:1 language=eng -metadata:s:s:1 title="English" \
-  -codec:v libx264 -crf 21 \
-  -codec:a libmp3lame -qscale:a 2 \
-  -codec:s copy \
-  output.mkv
-Let me dissect it:
-
--analyzeduration 100M -probesize 100M — keep this one so that FFmpeg is able to find hidden streams;
--i output.vob — the input file;
--map 0:1 -map 0:3 -map 0:4 -map 0:5 -map 0:6 — here I'm mapping the streams, namely I'm telling FFmpeg to keep Stream 0:1, Stream 0:3, Stream 0:4, Stream 0:5, Stream 0:6 and put them in the output file in that specific order;
--metadata[...] — this is used to give streams a title and other additional information, specifically to audio tracks (s:a:0 and s:a:1 where a stands for audio) and subtitles (s:s:0 and s:s:1 where s stands for subtitles);
--codec:v libx264 -crf 21 — defines the video codec in use and the constant rate factor (crf), namely the quality level. This method allows the encoder to keep a constant quality level, regardless the output file size: 0 is lossless, 23 is default, and 51 is worst possible. The sane range is between 18 and 28;
--codec:a libmp3lame -qscale:a 2 — defines the audio codec in use and the quality level: 0-3 will produce transparent results, 4 (default) should be close to perceptual transparency, 6-9 produces an "acceptable" quality. Using numbers from 0 to 9 means that the audio track will be encoded in variable bitrate (vbr) mode: smaller files, better quality;
--codec:s copy — s stands for subtitles: copy them as they are;
-output.mkv — the output file.
-Bonus point: if your machine supports it, add the flag -threads N to enable multi-threading and give the encoding a boost. Replace N with the number of your CPU cores.
-
-Sources
-Wikipedia - VOB (link)
-Wikipedia - Matroska (link)
-FFmpeg f.a.q. - 3.16 Why does FFmpeg not see the subtitles in my VOB file? (link)
-FFmpeg wiki - FFmpeg and H.264 Encoding Guide (link)
-FFmpeg wiki - FFmpeg MP3 Encoding Guide (link)
-
-audio • video • FFmpeg • VOB • mkv • video conversion
-COMMENTS
-Eytan on March 18, 2018 at 00:07
-Thanks a lot.
-Vangelis on April 07, 2018 at 17:24
-Many thanks for the helpful how-to guide. While checking out your sources, i couldn't help but notice the speed preset flag (i.e. slow, veryslow, etc.). I was wondering why have you omitted this option from your example above? Is it because you've tried it but saw no noticeable improvement in the quality of the encoding?
-Triangles on April 08, 2018 at 11:32
-Hey @Vangelis, I initially thought presets would override manual crf parameters, however this example -> https://trac.ffmpeg.org/wiki/Encode/H.264#CRFExample seems to tell a different story. Thanks for the input, I will look into it!
-Daniel on June 22, 2018 at 07:57
-Very helpful, but I would like to ask FFmpeg can also apply to Windows system? I now use the wonderfox DVD video converter to achieve this goal, so I want to make an alternative, can it be achieved?
-Triangles on June 24, 2018 at 09:59
-@Daniel FFmpeg runs on Win, Mac and Linux :) https://www.ffmpeg.org/download.html
-
-Your name
-
-Your message
-
-Add your comment!
-SHARE!
-© 2015-2018 — Monocasual Laboratories — terms of service — privacy policy — contact us
