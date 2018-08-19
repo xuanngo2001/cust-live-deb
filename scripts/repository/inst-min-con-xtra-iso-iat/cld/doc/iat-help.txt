@@ -1,6 +1,9 @@
-# Convert BIN to ISO.
-  iat file.BIN file.ISO
+# Convert BIN-image to ISO9660.
+  iat image.BIN > image.ISO
 
+# Convert MDF-image to ISO9660.
+  iat image.MDF my_new_image.ISO
+  
 # Mount ISO.
-  mount -o loop /path/to/FILE.ISO /your/dir_iso/
+  mount -o loop /path/to/image.ISO /your/dir_iso/
   
