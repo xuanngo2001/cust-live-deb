@@ -1,2 +1,10 @@
-# Mount ISO
-  mount -o loop /path/to/YOUR_ISO_FILE.ISO /media/dir_iso/
+# Mount ISO.
+  mount -o loop /path/to/FILE.ISO /your/dir_iso/
+
+# Mount CDROM.
+  mount -t iso9660 /dev/scd0 /media/cdrom
+  
+  # Search for loaded kernel modules
+    cat /proc/filesystems | grep iso9660
+  
+  
