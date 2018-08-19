@@ -32,18 +32,18 @@
 
 # Extract streams.		    
 	ffmpeg -i input.mkv \
-	-map 0:v -c copy video.mkv \
-	-map 0:a:0 -c copy audio0.oga \
-	-map 0:a:1 -c copy audio1.oga \
-	-map 0:a:2 -c copy audio2.oga \
-	-map 0:s -c copy subtitles.ass
+		-map 0:v -c copy video.mkv \
+		-map 0:a:0 -c copy audio0.oga \
+		-map 0:a:1 -c copy audio1.oga \
+		-map 0:a:2 -c copy audio2.oga \
+		-map 0:s -c copy subtitles.ass
 	
 	# In this case, the example above is the same as:
 	ffmpeg -i input.mkv \
-	-map 0:0 -c copy video.mkv \
-	-map 0:1 -c copy audio0.oga \
-	-map 0:2 -c copy audio1.oga \
-	-map 0:3 -c copy audio2.oga \
-	-map 0:4 -c copy subtitles.ass		    
+		-map 0:0 -c copy video.mkv \
+		-map 0:1 -c copy audio0.oga \
+		-map 0:2 -c copy audio1.oga \
+		-map 0:3 -c copy audio2.oga \
+		-map 0:4 -c copy subtitles.ass		    
 		    
 
