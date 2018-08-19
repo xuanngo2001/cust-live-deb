@@ -1,10 +1,13 @@
-  # Encrypt both file data and headers, i.e. [rar -l archive.rar] will not show filenames.
-    rar a -hp archive.rar some_files...
+# Encrypt both file data and headers, i.e. [rar -l archive.rar] will not show filenames.
+  rar a -hp archive.rar some_files...
 
-  # Compress with 2% recovery data and create 1 MB volume size.(e.g. 512000k = 500MB)
-    rar a -rr2% -v1024k archive.rar some_files...
+# Compress with 2% recovery data and create 1 MB volume size.(e.g. 512000k = 500MB)
+  rar a -rr2% -v1024k archive.rar some_files...
 
-  # Compress in order.
-	  rar a -m0 archive.rar $( find . -type f | sort )                                          [Potentially leading to 'Argument list too long']
-	  find . -type f | sort | sed 's/^/"/' | sed 's/$/"/' | xargs -n1000 rar a -m0 archive.rar  [Batch]
-  
+# Compress in order.
+  rar a -m0 archive.rar $( find . -type f | sort )                                          [Potentially leading to 'Argument list too long']
+  find . -type f | sort | sed 's/^/"/' | sed 's/$/"/' | xargs -n1000 rar a -m0 archive.rar  [Batch]
+
+# Don't overwrite existing files.
+  rar x -o- archive.rar
+
