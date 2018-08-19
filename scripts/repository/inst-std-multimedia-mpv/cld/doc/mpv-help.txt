@@ -9,6 +9,11 @@
   mpv -playlist <(find "$PWD" -type f)
   # $PWD is required. Otherwise, it'll try to go relative to the file descriptor's location, eg: "/dev/fd/./path/to/video-file.avi", which would fail to open.  
 
+# Play devices.
+  mpv dvd://  --dvd-device=/path/to/device/or/iso/
+  mpv bd://   --bluray-device=/path/to/bd/
+  mpv cdda:// --cdrom-device=/path/to/bd/
+
 # Extract video file at a specific time.
   mpv videofile.avi -o excerptvideo.avi --start=00:01:00 --end=00:03:35
   
