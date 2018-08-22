@@ -1,11 +1,12 @@
 #!/bin/bash
 set -e
 # Description: Turn on swap partition.
+script_name=$(basename "$0")
 
 SWAP_DEVICE=$(blkid | grep -F 'TYPE="swap"' | cut -d':' -f1)
 
 if [ -z "${SWAP_DEVICE}" ]; then
-  echo "$0: Error: There is no swap partition. Aborted!"
+  echo "${script_name}: Warning: There is no swap partition!"
 else
 
 	if swapon -s | grep -F "${SWAP_DEVICE}" > /dev/null; then
