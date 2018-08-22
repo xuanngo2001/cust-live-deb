@@ -3,55 +3,49 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  galera-3 gawk libaio1 libdbi-perl libjemalloc1 libmpfr4 libreadline5
-  libsigsegv2 libwrap0 lsof mariadb-client-10.1 mariadb-client-core-10.1
-  mariadb-common mariadb-server-10.1 mariadb-server-core-10.1 mysql-common
-  psmisc socat
+  galera-3 gawk libaio1 libdbi-perl libjemalloc1 libreadline5 libsigsegv2
+  libwrap0 lsof mariadb-client-10.1 mariadb-client-core-10.1 mariadb-common
+  mariadb-server-10.1 mariadb-server-core-10.1 mysql-common psmisc socat
 Suggested packages:
   gawk-doc libclone-perl libmldbm-perl libnet-daemon-perl
   libsql-statement-perl mailx mariadb-test netcat-openbsd tinyca
 Recommended packages:
   tcpd libdbd-mysql-perl libterm-readkey-perl libhtml-template-perl
 The following NEW packages will be installed:
-  galera-3 gawk libaio1 libdbi-perl libjemalloc1 libmpfr4 libreadline5
-  libsigsegv2 libwrap0 lsof mariadb-client-10.1 mariadb-client-core-10.1
-  mariadb-common mariadb-server mariadb-server-10.1 mariadb-server-core-10.1
-  mysql-common psmisc socat
-0 upgraded, 19 newly installed, 0 to remove and 16 not upgraded.
-Need to get 25.4 MB of archives.
-After this operation, 188 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmpfr4 amd64 3.1.5-1 [556 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsigsegv2 amd64 2.10-5 [28.9 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gawk amd64 1:4.1.4+dfsg-1 [571 kB]
-Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mysql-common all 5.8+1.0.2 [5,608 B]
-Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-common all 10.1.26-0+deb9u1 [27.3 kB]
-Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 galera-3 amd64 25.3.19-2 [955 kB]
-Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdbi-perl amd64 1.636-1+b1 [766 kB]
-Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 lsof amd64 4.89+dfsg-0.1 [313 kB]
-Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libaio1 amd64 0.3.110-3 [9,412 B]
-Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libreadline5 amd64 5.2+dfsg-3+b1 [119 kB]
-Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-client-core-10.1 amd64 10.1.26-0+deb9u1 [5,042 kB]
-Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjemalloc1 amd64 3.6.0-9.1 [89.8 kB]
-Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-client-10.1 amd64 10.1.26-0+deb9u1 [5,841 kB]
-Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-server-core-10.1 amd64 10.1.26-0+deb9u1 [5,177 kB]
-Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 psmisc amd64 22.21-2.1+b2 [123 kB]
-Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwrap0 amd64 7.6.q-26 [58.2 kB]
-Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 socat amd64 1.7.3.1-2+deb9u1 [353 kB]
-Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-server-10.1 amd64 10.1.26-0+deb9u1 [5,333 kB]
-Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-server all 10.1.26-0+deb9u1 [26.2 kB]
+  galera-3 gawk libaio1 libdbi-perl libjemalloc1 libreadline5 libsigsegv2
+  libwrap0 lsof mariadb-client-10.1 mariadb-client-core-10.1 mariadb-common
+  mariadb-server mariadb-server-10.1 mariadb-server-core-10.1 mysql-common
+  psmisc socat
+0 upgraded, 18 newly installed, 0 to remove and 16 not upgraded.
+Need to get 24.8 MB of archives.
+After this operation, 187 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsigsegv2 amd64 2.10-5 [28.9 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gawk amd64 1:4.1.4+dfsg-1 [571 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mysql-common all 5.8+1.0.2 [5,608 B]
+Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-common all 10.1.26-0+deb9u1 [27.3 kB]
+Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 galera-3 amd64 25.3.19-2 [955 kB]
+Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdbi-perl amd64 1.636-1+b1 [766 kB]
+Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 lsof amd64 4.89+dfsg-0.1 [313 kB]
+Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libaio1 amd64 0.3.110-3 [9,412 B]
+Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libreadline5 amd64 5.2+dfsg-3+b1 [119 kB]
+Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-client-core-10.1 amd64 10.1.26-0+deb9u1 [5,042 kB]
+Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjemalloc1 amd64 3.6.0-9.1 [89.8 kB]
+Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-client-10.1 amd64 10.1.26-0+deb9u1 [5,841 kB]
+Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-server-core-10.1 amd64 10.1.26-0+deb9u1 [5,177 kB]
+Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 psmisc amd64 22.21-2.1+b2 [123 kB]
+Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwrap0 amd64 7.6.q-26 [58.2 kB]
+Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 socat amd64 1.7.3.1-2+deb9u1 [353 kB]
+Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-server-10.1 amd64 10.1.26-0+deb9u1 [5,333 kB]
+Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mariadb-server all 10.1.26-0+deb9u1 [26.2 kB]
 Preconfiguring packages ...
-Fetched 25.4 MB in 0s (34.2 MB/s)
-Selecting previously unselected package libmpfr4:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22088 files and directories currently installed.)
-Preparing to unpack .../libmpfr4_3.1.5-1_amd64.deb ...
-Unpacking libmpfr4:amd64 (3.1.5-1) ...
+Fetched 24.8 MB in 0s (33.4 MB/s)
 Selecting previously unselected package libsigsegv2:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23806 files and directories currently installed.)
 Preparing to unpack .../libsigsegv2_2.10-5_amd64.deb ...
 Unpacking libsigsegv2:amd64 (2.10-5) ...
-Setting up libmpfr4:amd64 (3.1.5-1) ...
 Setting up libsigsegv2:amd64 (2.10-5) ...
 Selecting previously unselected package gawk.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22110 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23816 files and directories currently installed.)
 Preparing to unpack .../00-gawk_1%3a4.1.4+dfsg-1_amd64.deb ...
 Unpacking gawk (1:4.1.4+dfsg-1) ...
 Selecting previously unselected package mysql-common.
@@ -101,7 +95,7 @@ update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.c
 Setting up mariadb-common (10.1.26-0+deb9u1) ...
 update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
 Selecting previously unselected package mariadb-server-10.1.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22749 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24453 files and directories currently installed.)
 Preparing to unpack .../mariadb-server-10.1_10.1.26-0+deb9u1_amd64.deb ...
 Unpacking mariadb-server-10.1 (10.1.26-0+deb9u1) ...
 Selecting previously unselected package mariadb-server.
@@ -134,4 +128,4 @@ Processing triggers for systemd (232-25+deb9u4) ...
 mysqladmin: connect to server at 'localhost' failed
 error: 'Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")'
 Check that mysqld is running and that the socket: '/var/run/mysqld/mysqld.sock' exists!
-CLDS: * Disk size = 1678052K. Space Used = 320160K. Runtime = 00:00:00:22.
+CLDS: * Disk size = 1817408K. Space Used = 318732K. Runtime = 00:00:00:23.
