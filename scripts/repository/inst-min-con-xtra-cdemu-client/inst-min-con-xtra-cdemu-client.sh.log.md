@@ -2,7 +2,7 @@
   * After this operation, 179 kB of additional disk space will be used.
   * After this operation, 115 MB of additional disk space will be used.
   * Install cdemu-client.
-  * Disk size = 1276156K. Space Used = 140788K. Runtime = 00:00:00:10.
+  * Disk size = 1276128K. Space Used = 140788K. Runtime = 00:00:00:11.
   * The following NEW packages will be installed:
   ```bash
 binutils cdemu-client cdemu-daemon cpp cpp-6
