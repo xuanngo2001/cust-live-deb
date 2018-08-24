@@ -2,7 +2,7 @@
   * After this operation, 76.8 kB of additional disk space will be used.
   * After this operation, 11.5 MB of additional disk space will be used.
   * Install handbrake-cli.
-  * Disk size = 2643768K. Space Used = 15292K. Runtime = 00:00:00:02.
+  * Disk size = 2643772K. Space Used = 15292K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
 handbrake-cli libjansson4

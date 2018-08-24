@@ -5,7 +5,7 @@
   * After this operation, 1,455 kB of additional disk space will be used.
   * After this operation, 67.3 MB of additional disk space will be used.
   * Install openra.
-  * Disk size = 5003864K. Space Used = 118096K. Runtime = 00:00:00:14.
+  * Disk size = 5003816K. Space Used = 118096K. Runtime = 00:00:00:22.
   * The following NEW packages will be installed:
   ```bash
 libjavascriptcoregtk-4.0-18 libmono-i18n4.0-all libmono-i18n4.0-cil libmono-i18n-cjk4.0-cil libmono-i18n-mideast4.0-cil
