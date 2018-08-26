@@ -1,9 +1,27 @@
-  # View image from list of files
-    feh -f list.txt
+# Key commands
+  d:  Display filename.
+  f:  Save current filelist as feh_<PID_ID>_filelist.
+  +:  Zoom in.
+  -:  Zoom out.
+  *:  Zoom to 100%.
+  /:  Zoom to fit the window size
   
-  # Display image in window size: width x height 
-    feh -g 400x400
+  Ctrl+2:       Rotate.
+  Delete:       Remove current file from filelist
+  Ctrl+Delete:  Remove current file from filelist and delete it
+
   
-  # Set background image.
+# View image from list of files
+  feh -f list.txt
+
+# Display image in window size: width x height 
+  feh -g 400x400
+
+# Set background image.
   feh --bg-scale /path/to/your/image/background.jpg
-  
+
+# List details of images.
+  feh -l
+    
+feh -d --draw-tinted
+
