@@ -1,8 +1,12 @@
-  # Resize image
+# Resize image
   convert -resize 50% -quality 80 input.jpg output.jpg
   mogrify -verbose -resize 50% -quality 80% *.jpg
   
-  # Convert color to gray
+# Convert color to gray
   convert input.jpg -colorspace Gray output.jpg
   convert input.jpg -type Grayscale output.jpg
 
+# Get image resolution.
+  identify -format "%wx%h" image.jpg
+
+  
