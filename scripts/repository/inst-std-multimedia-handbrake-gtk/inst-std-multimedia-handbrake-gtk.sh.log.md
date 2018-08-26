@@ -2,7 +2,7 @@
   * After this operation, 49.4 MB of additional disk space will be used.
   * After this operation, 69.4 MB of additional disk space will be used.
   * Install handbrake-gtk.
-  * Disk size = 2731712K. Space Used = 87940K. Runtime = 00:00:00:08.
+  * Disk size = 3192168K. Space Used = 87940K. Runtime = 00:00:00:09.
   * The following NEW packages will be installed:
   ```bash
 aspell aspell-en dictionaries-common emacsen-common handbrake-gtk

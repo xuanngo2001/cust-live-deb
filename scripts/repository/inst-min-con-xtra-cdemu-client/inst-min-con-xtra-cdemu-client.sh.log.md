@@ -2,7 +2,7 @@
   * After this operation, 179 kB of additional disk space will be used.
   * After this operation, 115 MB of additional disk space will be used.
   * Install cdemu-client.
-  * Disk size = 1224748K. Space Used = 140976K. Runtime = 00:00:00:17.
+  * Disk size = 1276252K. Space Used = 140788K. Runtime = 00:00:00:10.
   * The following NEW packages will be installed:
   ```bash
 binutils cdemu-client cdemu-daemon cpp cpp-6
@@ -12,6 +12,6 @@ libflac8 libgcc-6-dev libisl15 libitm1 liblsan0
 libmirage10 libmpc3 libmpfr4 libmpx2 libogg0
 libpython2.7-minimal libpython2.7-stdlib libpython-stdlib libquadmath0 libsndfile1
 libtsan0 libubsan0 libvorbis0a libvorbisenc2 make
-mime-support patch python python2.7 python2.7-minimal
-python-dbus python-minimal vhba-dkms
+patch python python2.7 python2.7-minimal python-dbus
+python-minimal vhba-dkms
   ```
