@@ -1,0 +1,84 @@
+# DVDrip.
+	ffmpeg \
+	  -analyzeduration 500M -probesize 500M \
+	  -i INPUTFILE.VOB \
+	  -map 0:1 -map 0:2 -map 0:3 -map 0:4 -map 0:5 -map 0:6 \
+		  -metadata:s:a:0 language=ita -metadata:s:a:0 title="Italian stereo" \
+		  -metadata:s:a:1 language=eng -metadata:s:a:1 title="English stereo" \
+		  -metadata:s:s:0 language=ita -metadata:s:s:0 title="Italian" \
+		  -metadata:s:s:1 language=eng -metadata:s:s:1 title="English" \	  
+	  -codec:v libx264 -crf 21 \
+	  -codec:a libmp3lame -qscale:a 2 \
+	  -codec:s copy \
+	  OUTPUTFILE.mkv < /dev/null
+  
+  # Reference: https://www.internalpointers.com/post/convert-vob-files-mkv-ffmpeg
+    cfr: 0 is lossless, 23 is default, and 51 is worst possible. The sane range is between 18 and 28.
+  
+# Strange behaviour when running ffmpeg in a loop. It reads standard input. To turn off.
+  ffmpeg ... < /dev/null
+  ffmpeg -nostdin
+  
+# Probe video file.
+  ffmpeg -i input.mkv
+		Input #0, matroska,webm, from 'input.mkv':
+		  Metadata:
+		  Duration: 00:00:05.00, start: 0.000000, bitrate: 106 kb/s
+		    Stream #0:0: Video: h264 (High 4:4:4 Predictive), yuv444p, 320x240 [SAR 1:1 DAR 4:3], 25 fps, 25 tbr, 1k tbn, 50 tbc (default)
+		    Stream #0:1: Audio: vorbis, 44100 Hz, mono, fltp (default)
+		    Stream #0:2: Audio: vorbis, 44100 Hz, mono, fltp (default)
+		    Stream #0:3: Audio: vorbis, 44100 Hz, mono, fltp (default)
+		    Stream #0:4: Subtitle: ass (default)
+
+# Extract streams.		    
+	ffmpeg -i input.mkv \
+		-map 0:v -c copy video.mkv \
+		-map 0:a:0 -c copy audio0.oga \
+		-map 0:a:1 -c copy audio1.oga \
+		-map 0:a:2 -c copy audio2.oga \
+		-map 0:s -c copy subtitles.ass
+	
+	# In this case, the example above is the same as:
+	ffmpeg -i input.mkv \
+		-map 0:0 -c copy video.mkv \
+		-map 0:1 -c copy audio0.oga \
+		-map 0:2 -c copy audio1.oga \
+		-map 0:3 -c copy audio2.oga \
+		-map 0:4 -c copy subtitles.ass		    
+		    
+# Cut video based on start and end time.
+  ffmpeg -ss 00:00:00 -t 00:05:00 -i movie.mp4 -acodec copy -vcodec copy -async 1 cut.mp4
+
+# Different format:
+  # H.265: CFR of 28, audio of AC3 surround at 384 Kbps: https://trac.ffmpeg.org/wiki/Encode/H.265
+    ffmpeg -ss 00:00:00 -t 00:05:00 -i input.mkv -c:v libx265 -crf 28 -c:a ac3 -b:a 384k output.mp4
+  # VP8: variable bitrate 1 MBit/s: https://trac.ffmpeg.org/wiki/Encode/VP8
+    ffmpeg -i input-file.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis output-file.webm
+  # VP8: constant bitrate 10, Range 4–63, Lower values mean better quality.
+    ffmpeg -i input.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis output.webm
+  
+==========================
+ffmpeg -i "concat:VTS_02_0.VOB|VTS_02_1.VOB|VTS_02_2.VOB|VTS_02_3.VOB" -c copy /dev/null
+Input #0, mpeg, from 'concat:VTS_02_0.VOB|VTS_02_1.VOB|VTS_02_2.VOB|VTS_02_3.VOB':
+  Duration: 00:45:08.97, start: 0.280000, bitrate: 8821 kb/s
+    Stream #0:0[0x1bf]: Data: dvd_nav_packet
+    Stream #0:1[0x1e0]: Video: mpeg2video (Main), yuv420p(tv), 720x576 [SAR 16:15 DAR 4:3], 8000 kb/s, 25 fps, 25 tbr, 90k tbn, 50 tbc
+    Stream #0:2[0x20]: Subtitle: dvd_subtitle
+    Stream #0:3[0x81]: Audio: ac3, 48000 Hz, 5.1(side), fltp, 448 kb/s
+    Stream #0:4[0x80]: Audio: ac3, 48000 Hz, stereo, fltp, 224 kb/s
+
+ffmpeg -i "concat:VTS_02_0.VOB|VTS_02_1.VOB|VTS_02_2.VOB|VTS_02_3.VOB" -map 0:1 -map 0:4 -map 0:3 -f mpeg -c copy /tmp/intermediate.mpeg
+
+ffmpeg -i /tmp/intermediate.mpeg \
+  -map 0:0 -map 0:1 -map 0:2 \
+  -c:v libx264 -preset medium -b:v 600k -aspect 16:9 -strict -2 -g 50 -vf yadif \
+  -c:a:0 aac -b:a:0 160k -metadata:s:a:0 title=\"2 channel\" \
+  -c:a:1 ac3 -b:a:1 320k -metadata:s:a:1 title=\"5.1 channel\" \
+  /tmp/final.mkv
+  The -c:v libx264 directive selects the video codec. The -preset option chooses an H.264 encoding speed to compression ratio. The -b:v option specifies a constant output bitrate (you can use two-pass encoding if you wish to utilise a different strategy). The -aspect 16:9 may not be necessary but forces the default display by the client reading the file later. The -strict -2 options are required for H.264 encoding. The -g 50 option makes the encoder store a whole image frame every 50 frames (useful for being able to forward or reverse into the video). The -vf yadif video filter de-interlaces the source video.
+
+  The -c:a:0 option sets the audio codec on the first audio stream (which is different from the stream number assigned). The -b:a:0 option sets the bit rate for the first audio stream. And the -metadata:s:a:0 option sets a title for the stream, which can make it easier for those watching your video to choose an appropriate named audio track rather than guessing what the difference is.    
+  
+  
+  
+  

@@ -1,0 +1,20 @@
+# Get crop parameters: Skip 1st 90 sec and get crop parameters for 10 frames.
+	ffmpeg -ss 90 -i input.mp4 -vframes 10 -vf cropdetect -f null -
+		...
+		[Parsed_cropdetect_0 @ 0x220cdc0] x1:0 x2:1279 y1:0 y2:719 w:1280 h:720 x:0 y:0 pts:215 t:0.215000 crop=1280:720:0:0
+		[Parsed_cropdetect_0 @ 0x220cdc0] x1:0 x2:1279 y1:0 y2:719 w:1280 h:720 x:0 y:0 pts:257 t:0.257000 crop=1280:720:0:0
+		[Parsed_cropdetect_0 @ 0x220cdc0] x1:0 x2:1279 y1:0 y2:719 w:1280 h:720 x:0 y:0 pts:299 t:0.299000 crop=1280:720:0:0
+
+# Preview cropped.
+  ffplay -vf crop=1280:720:0:0 input.mp4
+
+# Re-encode using the crop filter
+  ffmpeg -i input.mp4 -vf crop=1280:720:0:0 -c:a copy output.mp4
+		
+http://ffmpeg.org/ffmpeg-filters.html#crop		
+Crop area with size 100x100 at position (12,34).		
+crop=100:100:12:34
+
+ffmpeg -i input -t 1 -vf cropdetect -f null - 2>&1 | awk '/crop/ { print $NF }' | tail -1
+
+
