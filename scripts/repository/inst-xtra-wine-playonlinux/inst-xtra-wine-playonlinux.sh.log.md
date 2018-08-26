@@ -5,7 +5,7 @@
   * After this operation, 735 kB of additional disk space will be used.
   * After this operation, 4,242 kB of additional disk space will be used.
   * After this operation, 4,513 kB of additional disk space will be used.
-  * Disk size = 5433688K. Space Used = 60704K. Runtime = 00:00:00:11.
+  * Disk size = 5433712K. Space Used = 60708K. Runtime = 00:00:00:19.
   * The following NEW packages will be installed:
   ```bash
 cabextract gettext-base icoutils libencode-locale-perl libfile-listing-perl
