@@ -50,5 +50,14 @@
 	if ! [[ "${string}" =~ ${is_number_regex} ]] ; then
 	   echo "Error: ${string} is not a number."
 	fi
+
+# Odd or even?
+	if [ $(($i%2)) -eq 0 ]; then
+	  echo $i is even
+	else
+	  echo $i is odd
+	fi
+
 	
-	  
+
+	
