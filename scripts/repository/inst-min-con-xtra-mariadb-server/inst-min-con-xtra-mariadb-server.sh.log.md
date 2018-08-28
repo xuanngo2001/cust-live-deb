@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-con-xtra-mariadb-server.sh ...
-  * After this operation, 187 MB of additional disk space will be used.
-  * Disk size = 1819212K. Space Used = 318732K. Runtime = 00:00:00:21.
+  * After this operation, 188 MB of additional disk space will be used.
+  * Disk size = 1679684K. Space Used = 320148K. Runtime = 00:00:00:22.
   * The following NEW packages will be installed:
   ```bash
 galera-3 gawk libaio1 libdbi-perl libjemalloc1
-libreadline5 libsigsegv2 libwrap0 lsof mariadb-client-10.1
-mariadb-client-core-10.1 mariadb-common mariadb-server mariadb-server-10.1 mariadb-server-core-10.1
-mysql-common psmisc socat
+libmpfr4 libreadline5 libsigsegv2 libwrap0 lsof
+mariadb-client-10.1 mariadb-client-core-10.1 mariadb-common mariadb-server mariadb-server-10.1
+mariadb-server-core-10.1 mysql-common psmisc socat
   ```

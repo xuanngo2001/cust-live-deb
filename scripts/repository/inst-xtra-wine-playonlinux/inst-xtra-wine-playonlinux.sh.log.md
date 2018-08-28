@@ -9,7 +9,7 @@
   * After this operation, 205 MB of additional disk space will be used.
   * Install playonlinux.
   * Insert playonlinux in Internet menu.
-  * Disk size = 5661536K. Space Used = 286848K. Runtime = 00:00:00:22.
+  * Disk size = 5349008K. Space Used = 286844K. Runtime = 00:00:00:25.
   * The following NEW packages will be installed:
   ```bash
 cabextract gettext-base icoutils libencode-locale-perl libfile-listing-perl
