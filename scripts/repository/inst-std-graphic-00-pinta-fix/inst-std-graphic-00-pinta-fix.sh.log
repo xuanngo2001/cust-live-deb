@@ -3,98 +3,102 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libgdiplus libmono-corlib4.5-cil libmono-posix4.0-cil
+  binutils libgdiplus libmono-corlib4.5-cil libmono-posix4.0-cil
   libmono-security4.0-cil libmono-system-configuration4.0-cil
   libmono-system-core4.0-cil libmono-system-numerics4.0-cil
   libmono-system-security4.0-cil libmono-system-xml4.0-cil
   libmono-system4.0-cil mono-4.0-gac mono-gac mono-runtime mono-runtime-common
   mono-runtime-sgen
 Suggested packages:
-  libmono-i18n4.0-all libgamin0 xdg-utils | libgnome2-0 | konqueror
+  binutils-doc libmono-i18n4.0-all libgamin0 xdg-utils | libgnome2-0
+  | konqueror
 Recommended packages:
   libmono-i18n-west4.0-cil ca-certificates-mono libmono-btls-interface4.0-cil
   cli-common binfmt-support mono-llvm-support
 The following NEW packages will be installed:
-  libgdiplus libmono-corlib4.5-cil libmono-posix4.0-cil
+  binutils libgdiplus libmono-corlib4.5-cil libmono-posix4.0-cil
   libmono-security4.0-cil libmono-system-configuration4.0-cil
   libmono-system-core4.0-cil libmono-system-drawing4.0-cil
   libmono-system-numerics4.0-cil libmono-system-security4.0-cil
   libmono-system-xml4.0-cil libmono-system4.0-cil mono-4.0-gac mono-gac
   mono-runtime mono-runtime-common mono-runtime-sgen
-0 upgraded, 16 newly installed, 0 to remove and 17 not upgraded.
-Need to get 6,516 kB of archives.
-After this operation, 22.2 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libgdiplus amd64 5.6-0xamarin5+debian9b1 [146 kB]
-Get:2 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-posix4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [89.6 kB]
-Get:3 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-core4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [281 kB]
-Get:4 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-numerics4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [57.6 kB]
-Get:5 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-xml4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [812 kB]
-Get:6 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-security4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [77.1 kB]
-Get:7 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-configuration4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [62.0 kB]
-Get:8 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [840 kB]
-Get:9 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-security4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [124 kB]
-Get:10 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-4.0-gac all 5.14.0.177-0xamarin3+debian9b1 [163 kB]
-Get:11 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-gac all 5.14.0.177-0xamarin3+debian9b1 [26.7 kB]
-Get:12 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-runtime-common amd64 5.14.0.177-0xamarin3+debian9b1 [991 kB]
-Get:13 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-runtime-sgen amd64 5.14.0.177-0xamarin3+debian9b1 [1,557 kB]
-Get:14 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-runtime amd64 5.14.0.177-0xamarin3+debian9b1 [22.7 kB]
-Get:15 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-corlib4.5-cil all 5.14.0.177-0xamarin3+debian9b1 [1,111 kB]
-Get:16 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-drawing4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [156 kB]
-Fetched 6,516 kB in 0s (38.5 MB/s)
+0 upgraded, 17 newly installed, 0 to remove and 17 not upgraded.
+Need to get 10.3 MB of archives.
+After this operation, 46.1 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 binutils amd64 2.28-5 [3,770 kB]
+Get:2 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libgdiplus amd64 5.6-0xamarin5+debian9b1 [146 kB]
+Get:3 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-posix4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [89.6 kB]
+Get:4 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-core4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [281 kB]
+Get:5 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-numerics4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [57.6 kB]
+Get:6 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-xml4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [812 kB]
+Get:7 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-security4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [77.1 kB]
+Get:8 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-configuration4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [62.0 kB]
+Get:9 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [840 kB]
+Get:10 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-security4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [124 kB]
+Get:11 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-4.0-gac all 5.14.0.177-0xamarin3+debian9b1 [163 kB]
+Get:12 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-gac all 5.14.0.177-0xamarin3+debian9b1 [26.7 kB]
+Get:13 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-runtime-common amd64 5.14.0.177-0xamarin3+debian9b1 [991 kB]
+Get:14 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-runtime-sgen amd64 5.14.0.177-0xamarin3+debian9b1 [1,557 kB]
+Get:15 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-runtime amd64 5.14.0.177-0xamarin3+debian9b1 [22.7 kB]
+Get:16 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-corlib4.5-cil all 5.14.0.177-0xamarin3+debian9b1 [1,111 kB]
+Get:17 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-system-drawing4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [156 kB]
+Fetched 10.3 MB in 0s (26.2 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libmono-corlib4.5-cil libmono-posix4.0-cil libmono-security4.0-cil
+  binutils libmono-corlib4.5-cil libmono-posix4.0-cil libmono-security4.0-cil
   libmono-system-configuration4.0-cil libmono-system-core4.0-cil
   libmono-system-numerics4.0-cil libmono-system-security4.0-cil
   libmono-system-xml4.0-cil libmono-system4.0-cil mono-4.0-gac mono-gac
   mono-runtime mono-runtime-common mono-runtime-sgen
 Suggested packages:
-  libmono-i18n4.0-all libgamin0 xdg-utils | libgnome2-0 | konqueror
+  binutils-doc libmono-i18n4.0-all libgamin0 xdg-utils | libgnome2-0
+  | konqueror
 Recommended packages:
   libmono-i18n-west4.0-cil ca-certificates-mono libmono-btls-interface4.0-cil
   cli-common binfmt-support mono-llvm-support
 The following NEW packages will be installed:
-  libmono-cairo4.0-cil libmono-corlib4.5-cil libmono-posix4.0-cil
+  binutils libmono-cairo4.0-cil libmono-corlib4.5-cil libmono-posix4.0-cil
   libmono-security4.0-cil libmono-system-configuration4.0-cil
   libmono-system-core4.0-cil libmono-system-numerics4.0-cil
   libmono-system-security4.0-cil libmono-system-xml4.0-cil
   libmono-system4.0-cil mono-4.0-gac mono-gac mono-runtime mono-runtime-common
   mono-runtime-sgen
-0 upgraded, 15 newly installed, 0 to remove and 17 not upgraded.
-Need to get 39.2 kB/6,254 kB of archives.
-After this operation, 21.3 MB of additional disk space will be used.
+0 upgraded, 16 newly installed, 0 to remove and 17 not upgraded.
+Need to get 39.2 kB/10.0 MB of archives.
+After this operation, 45.2 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-cairo4.0-cil all 5.14.0.177-0xamarin3+debian9b1 [39.2 kB]
-Fetched 39.2 kB in 10s (3,905 B/s)
+Fetched 39.2 kB in 0s (3,766 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libmono-corlib4.5-cil libmono-posix4.0-cil libmono-security4.0-cil
+  binutils libmono-corlib4.5-cil libmono-posix4.0-cil libmono-security4.0-cil
   libmono-system-configuration4.0-cil libmono-system-core4.0-cil
   libmono-system-numerics4.0-cil libmono-system-security4.0-cil
   libmono-system-xml4.0-cil libmono-system4.0-cil mono-4.0-gac mono-gac
   mono-runtime mono-runtime-common mono-runtime-sgen
 Suggested packages:
-  libmono-i18n4.0-all libgamin0 xdg-utils | libgnome2-0 | konqueror
+  binutils-doc libmono-i18n4.0-all libgamin0 xdg-utils | libgnome2-0
+  | konqueror
 Recommended packages:
   libmono-i18n-west4.0-cil ca-certificates-mono libmono-btls-interface4.0-cil
   cli-common binfmt-support mono-llvm-support
 The following NEW packages will be installed:
-  libmono-corlib4.5-cil libmono-posix4.0-cil libmono-security4.0-cil
+  binutils libmono-corlib4.5-cil libmono-posix4.0-cil libmono-security4.0-cil
   libmono-sharpzip4.84-cil libmono-system-configuration4.0-cil
   libmono-system-core4.0-cil libmono-system-numerics4.0-cil
   libmono-system-security4.0-cil libmono-system-xml4.0-cil
   libmono-system4.0-cil mono-4.0-gac mono-gac mono-runtime mono-runtime-common
   mono-runtime-sgen
-0 upgraded, 15 newly installed, 0 to remove and 17 not upgraded.
-Need to get 68.2 kB/6,283 kB of archives.
-After this operation, 21.4 MB of additional disk space will be used.
+0 upgraded, 16 newly installed, 0 to remove and 17 not upgraded.
+Need to get 68.2 kB/10.1 MB of archives.
+After this operation, 45.3 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 libmono-sharpzip4.84-cil all 5.14.0.177-0xamarin3+debian9b1 [68.2 kB]
-Fetched 68.2 kB in 0s (5,359 kB/s)
+Fetched 68.2 kB in 0s (5,693 kB/s)
 Download complete and in download only mode
 CLDS: * Pinta crashes with mono v4.6.2.7+dfsg-1. Hence, install higher version(5+).
-CLDS: * Disk size = 2266996K. Space Used = 6520K. Runtime = 00:00:00:11.
+CLDS: * Disk size = 2132100K. Space Used = 10208K. Runtime = 00:00:00:02.
