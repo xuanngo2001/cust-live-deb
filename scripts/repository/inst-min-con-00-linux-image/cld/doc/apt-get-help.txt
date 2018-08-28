@@ -1,3 +1,6 @@
 # Debug broken package. Search for 'Failed'.
   apt-get -o Debug::pkgProblemResolver=yes install <package> &> error.log
+
+# Get dependent packages.
+  apt-cache depends mpv
   

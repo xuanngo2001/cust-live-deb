@@ -13,6 +13,7 @@ apt-get -y install mesa-utils
 apt-get -y install gettext-base
 apt-get -y install icoutils
 apt-get -y install p7zip-full
+apt-get -y install netcat
 
 
 # Install playonlinux.

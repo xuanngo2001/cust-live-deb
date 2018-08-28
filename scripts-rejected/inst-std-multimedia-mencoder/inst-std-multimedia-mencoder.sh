@@ -16,4 +16,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Log
   echo "${GV_LOG} * Install mencoder."
 
+# REJECTED:
+#   Instead, use ffmpeg(19892K). Mencoder(55664K).
+
 
