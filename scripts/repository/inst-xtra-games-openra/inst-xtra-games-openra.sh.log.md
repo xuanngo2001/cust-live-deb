@@ -5,7 +5,7 @@
   * After this operation, 1,455 kB of additional disk space will be used.
   * After this operation, 72.2 MB of additional disk space will be used.
   * Install openra.
-  * Disk size = 4560368K. Space Used = 128432K. Runtime = 00:00:00:25.
+  * Disk size = 4560396K. Space Used = 128432K. Runtime = 00:00:00:15.
   * The following NEW packages will be installed:
   ```bash
 aspell aspell-en dictionaries-common emacsen-common libaspell15
