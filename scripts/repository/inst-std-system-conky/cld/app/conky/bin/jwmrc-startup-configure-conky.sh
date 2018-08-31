@@ -24,9 +24,11 @@ set -e
 	  echo -n "CPU${i}  \${cpu cpu${i}}% \${alignr} " >> ${CPU_CONKY}
 	  echo -e "CPU$((${i}+1))  \${cpu cpu$((${i}+1))}%" >> ${CPU_CONKY}
 	done
-	# Last CPU added if number of CPUs is a odd number.
+	# Last CPU added if number of CPUs is a odd number and greater than 1.
     if [ $((${CPU_NUM}%2)) -ne 0 ]; then
-      echo -e "CPU${CPU_NUM}  \${cpu cpu${CPU_NUM}}%" >> ${CPU_CONKY}
+      if [ ${CPU_NUM} -gt 1 ]; then
+        echo -e "CPU${CPU_NUM}  \${cpu cpu${CPU_NUM}}%" >> ${CPU_CONKY}
+      fi
     fi
 	
 			
