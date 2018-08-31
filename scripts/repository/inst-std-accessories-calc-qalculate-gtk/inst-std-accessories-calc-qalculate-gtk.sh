@@ -15,8 +15,12 @@ apt-get -y install qalculate-gtk
 # Insert qalculate-gtk in Accessories menu.
 sed -i "/Accessories\">/ r jwmrc-menus-acc-qalculate-gtk.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
+# Create empty ~/.qalculate/ directory to avoid pop up message to fetch exchange rate from the internet.
+mkdir -p "${HOME}/.qalculate"
+
 # Log
 echo "${GV_LOG} * Install qalculate-gtk."
+echo "${GV_LOG} * Create empty ~/.qalculate/ directory to avoid pop up message to fetch exchange rate from the internet."
 
 #   * >>>>>>>>> Running inst-std-accessories-calc-qalculate-gtk.sh ...
 #     * After this operation, 7,964 kB of additional disk space will be used.
