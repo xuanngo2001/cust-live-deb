@@ -2,4 +2,4 @@
   * Add deb-multimedia keyring.
   * Add deb-multimedia repository.
   * apt-get update
-  * Disk size = 2983160K. Space Used = 56K. Runtime = 00:00:00:22.
+  * Disk size = 2983168K. Space Used = 56K. Runtime = 00:00:00:08.
