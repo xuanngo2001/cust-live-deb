@@ -1,4 +1,8 @@
-# These are potential list of packages needed.
+# To download the essential "base" Debian system: https://www.debian.org/doc/manuals/debian-faq/ch-pkg_basics.en.html#s-priority
+#   Remove these priorities will make local aptly repositories broken. debootstrap will not run.
+Priority (required)
+Priority (important)
+
 # ./inst-min-con-00-apt-custom-repository/inst-min-con-00-apt-custom-repository.sh
 
 # ./inst-min-con-00-linux-image/inst-min-con-00-linux-image.sh
@@ -139,8 +143,6 @@ poppler-utils
 php
 # ./inst-min-con-xtra-sqlite3/inst-min-con-xtra-sqlite3.sh
 sqlite3
-# ./inst-min-con-xtra-timezone/inst-min-con-xtra-timezone.sh
-
 # ./inst-min-win-00-00-xorg-fix/inst-min-win-00-00-xorg-fix.sh
 libglapi-mesa=13.0.6-1+b2
 # ./inst-min-win-00-xorg/inst-min-win-00-xorg.sh
@@ -201,6 +203,8 @@ fonts-liberation
 libmono-system-drawing4.0-cil
 libmono-cairo4.0-cil
 libmono-sharpzip4.84-cil
+# ./inst-std-graphic-00-pinta-fix-mono-keyring/inst-std-graphic-00-pinta-fix-mono-keyring.sh
+
 # ./inst-std-graphic-pinta/inst-std-graphic-pinta.sh
 pinta
 # ./inst-std-graphic-xtra-cheese/inst-std-graphic-xtra-cheese.sh
@@ -232,6 +236,8 @@ libgconf-2-4
 libxss1
 lsb-release
 google-chrome-stable
+# ./inst-std-inet-xtra-google-chrome-keyring/inst-std-inet-xtra-google-chrome-keyring.sh
+
 # ./inst-std-inet-xtra-transmission-gtk/inst-std-inet-xtra-transmission-gtk.sh
 transmission-gtk
 # ./inst-std-multimedia-00-debmultimedia-keyring/inst-std-multimedia-00-debmultimedia-keyring.sh
@@ -247,7 +253,10 @@ libvo-aacenc0
 libvo-amrwbenc0
 libzvbi0
 libuchardet0
+liblept5
 mpv
+# ./inst-std-multimedia-xtra-ffmpeg/inst-std-multimedia-xtra-ffmpeg.sh
+ffmpeg
 # ./inst-std-office-00-libreoffice-fix/inst-std-office-00-libreoffice-fix.sh
 libgpgmepp6
 # ./inst-std-office-libreoffice/inst-std-office-libreoffice.sh
@@ -294,6 +303,7 @@ php-zip
 # ./inst-xtra-freecad/inst-xtra-freecad.sh
 freecad
 # ./inst-xtra-games-freeciv-client-gtk/inst-xtra-games-freeciv-client-gtk.sh
+libsdl2-mixer-2.0-0
 freeciv-server
 freeciv-client-gtk
 freeciv-data
@@ -335,9 +345,11 @@ libqt5x11extras5
 tshark
 aircrack-ng
 reaver
-# ./inst-xtra-wine-diablo2/inst-xtra-wine-diablo2.sh
-libjpeg-turbo-progs
-libldap-2.4-2
+# ./inst-xtra-wine64/inst-xtra-wine64.sh
+libgphoto2-6
+wine
+wine64
+fonts-wine
 # ./inst-xtra-wine-playonlinux/inst-xtra-wine-playonlinux.sh
 python-wxgtk3.0
 cabextract
@@ -345,6 +357,7 @@ mesa-utils
 gettext-base
 icoutils
 p7zip-full
+netcat
 playonlinux
 # ./inst-xtra-zfs-dkms/inst-xtra-zfs-dkms.sh
 libelf-dev

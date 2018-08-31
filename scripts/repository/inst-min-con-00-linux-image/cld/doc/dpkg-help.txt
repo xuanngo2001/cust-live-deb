@@ -1,6 +1,8 @@
 # Print architecture.
 	dpkg --print-architecture
 	dpkg --print-foreign-architectures
-  
 
-      
+# dpkg-reconfigure 
+  dpkg-reconfigure -f noninteractive tzdata
+
+  
