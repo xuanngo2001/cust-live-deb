@@ -18,8 +18,7 @@ echo "${GV_LOG} * Insert speedcrunch in Accessories menu."
 
 
 # REJECTION: 
-#   speedcrunch is the winner. It is small and doesn't seem to need "gnome base packages".
-#   Note: Gnome has 52528K overhead.
+#   speedcrunch needs QT libraries. It takes 41,556K.
 #
 #   * >>>>>>>>> Running inst-std-accessories-calc-qalculate-gtk.sh ...
 #     * After this operation, 7,964 kB of additional disk space will be used.
