@@ -2,7 +2,7 @@
   * After this operation, 963 kB of additional disk space will be used.
   * Install net-tools.
   * This package is required to access Internet.
-  * Disk size = 1004380K. Space Used = 860K. Runtime = 00:00:00:01.
+  * Disk size = 1004384K. Space Used = 860K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
 net-tools
