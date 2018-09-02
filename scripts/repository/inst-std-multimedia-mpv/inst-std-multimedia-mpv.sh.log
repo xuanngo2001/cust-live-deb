@@ -42,7 +42,7 @@ Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwbcl
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-talloc amd64 2.1.8-1 [11.9 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 samba-libs amd64 2:4.5.12+dfsg-2+deb9u2 [5,212 kB]
 Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsmbclient amd64 2:4.5.12+dfsg-2+deb9u2 [150 kB]
-Fetched 5,677 kB in 0s (41.5 MB/s)
+Fetched 5,677 kB in 0s (39.8 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -68,7 +68,7 @@ The following NEW packages will be installed:
 Need to get 65.1 kB of archives.
 After this operation, 195 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libuchardet0 amd64 0.0.1-1+b2 [65.1 kB]
-Fetched 65.1 kB in 0s (0 B/s)
+Fetched 65.1 kB in 0s (2,024 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -79,9 +79,9 @@ The following NEW packages will be installed:
 Need to get 923 kB of archives.
 After this operation, 2,574 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblept5 amd64 1.74.1-1 [923 kB]
-Fetched 923 kB in 0s (24.4 MB/s)
+Fetched 923 kB in 0s (28.5 MB/s)
 Selecting previously unselected package liblept5.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45558 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 47449 files and directories currently installed.)
 Preparing to unpack .../liblept5_1.74.1-1_amd64.deb ...
 Unpacking liblept5 (1.74.1-1) ...
 Setting up liblept5 (1.74.1-1) ...
@@ -91,19 +91,18 @@ Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
   libass9 libavdevice57 libavfilter6 libavresample3 libcdio-cdda1
-  libcdio-paranoia1 libcdio13 liblua5.2-0 libpostproc54 librubberband2
-  libsdl2-2.0-0 libtesseract-data libtesseract3 libuchardet0 libva-wayland1
-  libvidstab1.0
+  libcdio-paranoia1 libcdio13 libpostproc54 librubberband2 libsdl2-2.0-0
+  libtesseract-data libtesseract3 libuchardet0 libva-wayland1 libvidstab1.0
 Suggested packages:
   youtube-dl
 The following NEW packages will be installed:
   libass9 libavdevice57 libavfilter6 libavresample3 libcdio-cdda1
-  libcdio-paranoia1 libcdio13 liblua5.2-0 libpostproc54 librubberband2
-  libsdl2-2.0-0 libtesseract-data libtesseract3 libuchardet0 libva-wayland1
-  libvidstab1.0 mpv
-0 upgraded, 17 newly installed, 0 to remove and 17 not upgraded.
-Need to get 4,294 kB/4,359 kB of archives.
-After this operation, 11.9 MB of additional disk space will be used.
+  libcdio-paranoia1 libcdio13 libpostproc54 librubberband2 libsdl2-2.0-0
+  libtesseract-data libtesseract3 libuchardet0 libva-wayland1 libvidstab1.0
+  mpv
+0 upgraded, 16 newly installed, 0 to remove and 17 not upgraded.
+Need to get 4,184 kB/4,249 kB of archives.
+After this operation, 11.5 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_deb-multimedia-main stretch/main amd64 libass9 amd64 2:0.13.7-dmo1 [91.4 kB]
 Get:2 http://localhost/aptly-repo/master_deb-multimedia-main stretch/main amd64 libavresample3 amd64 10:3.3.8-dmo1+deb9u1 [94.3 kB]
 Get:3 http://localhost/aptly-repo/master_deb-multimedia-main stretch/main amd64 libpostproc54 amd64 10:3.3.8-dmo1+deb9u1 [94.0 kB]
@@ -117,12 +116,11 @@ Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libcdi
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libcdio-paranoia1 amd64 0.83-4.3+b1 [132 kB]
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsdl2-2.0-0 amd64 2.0.5+dfsg1-2 [358 kB]
 Get:13 http://localhost/aptly-repo/master_deb-multimedia-main stretch/main amd64 libavdevice57 amd64 10:3.3.8-dmo1+deb9u1 [113 kB]
-Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblua5.2-0 amd64 5.2.4-1.1+b2 [110 kB]
-Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libva-wayland1 amd64 1.7.3-2 [15.8 kB]
-Get:16 http://localhost/aptly-repo/master_deb-multimedia-main stretch/main amd64 mpv amd64 1:0.27.2-dmo1+deb9u1 [880 kB]
-Fetched 4,294 kB in 0s (27.9 MB/s)
+Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libva-wayland1 amd64 1.7.3-2 [15.8 kB]
+Get:15 http://localhost/aptly-repo/master_deb-multimedia-main stretch/main amd64 mpv amd64 1:0.27.2-dmo1+deb9u1 [880 kB]
+Fetched 4,184 kB in 0s (38.5 MB/s)
 Selecting previously unselected package libass9:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45563 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 47454 files and directories currently installed.)
 Preparing to unpack .../00-libass9_2%3a0.13.7-dmo1_amd64.deb ...
 Unpacking libass9:amd64 (2:0.13.7-dmo1) ...
 Selecting previously unselected package libavresample3:amd64.
@@ -161,17 +159,14 @@ Unpacking libsdl2-2.0-0:amd64 (2.0.5+dfsg1-2) ...
 Selecting previously unselected package libavdevice57:amd64.
 Preparing to unpack .../12-libavdevice57_10%3a3.3.8-dmo1+deb9u1_amd64.deb ...
 Unpacking libavdevice57:amd64 (10:3.3.8-dmo1+deb9u1) ...
-Selecting previously unselected package liblua5.2-0:amd64.
-Preparing to unpack .../13-liblua5.2-0_5.2.4-1.1+b2_amd64.deb ...
-Unpacking liblua5.2-0:amd64 (5.2.4-1.1+b2) ...
 Selecting previously unselected package libuchardet0.
-Preparing to unpack .../14-libuchardet0_0.0.1-1+b2_amd64.deb ...
+Preparing to unpack .../13-libuchardet0_0.0.1-1+b2_amd64.deb ...
 Unpacking libuchardet0 (0.0.1-1+b2) ...
 Selecting previously unselected package libva-wayland1:amd64.
-Preparing to unpack .../15-libva-wayland1_1.7.3-2_amd64.deb ...
+Preparing to unpack .../14-libva-wayland1_1.7.3-2_amd64.deb ...
 Unpacking libva-wayland1:amd64 (1.7.3-2) ...
 Selecting previously unselected package mpv.
-Preparing to unpack .../16-mpv_1%3a0.27.2-dmo1+deb9u1_amd64.deb ...
+Preparing to unpack .../15-mpv_1%3a0.27.2-dmo1+deb9u1_amd64.deb ...
 Unpacking mpv (1:0.27.2-dmo1+deb9u1) ...
 Setting up libcdio13:amd64 (0.83-4.3+b1) ...
 Setting up libavresample3:amd64 (10:3.3.8-dmo1+deb9u1) ...
@@ -188,7 +183,6 @@ Setting up librubberband2:amd64 (1.8.1-7) ...
 Setting up libsdl2-2.0-0:amd64 (2.0.5+dfsg1-2) ...
 Setting up libpostproc54:amd64 (10:3.3.8-dmo1+deb9u1) ...
 Setting up libcdio-paranoia1:amd64 (0.83-4.3+b1) ...
-Setting up liblua5.2-0:amd64 (5.2.4-1.1+b2) ...
 Setting up libtesseract3 (3.04.01-5) ...
 Processing triggers for hicolor-icon-theme (0.15-1) ...
 Setting up libavfilter6:amd64 (10:3.3.8-dmo1+deb9u1) ...
@@ -200,4 +194,4 @@ Processing triggers for libc-bin (2.24-11+deb9u3) ...
 CLDS: * Install Media Player: mpv 0.27.2 .
 CLDS: * Add multiple aliases for MPV.
 CLDS: * Add useful mpv keybindings settings.
-CLDS: * Disk size = 2558540K. Space Used = 25432K. Runtime = 00:00:00:05.
+CLDS: * Disk size = 3019824K. Space Used = 24884K. Runtime = 00:00:00:05.
