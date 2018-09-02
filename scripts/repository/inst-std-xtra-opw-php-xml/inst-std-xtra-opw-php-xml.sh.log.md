@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-xtra-opw-php-xml.sh ...
   * After this operation, 500 kB of additional disk space will be used.
   * Install php-xml.
-  * Disk size = 3915016K. Space Used = 740K. Runtime = 00:00:00:05.
+  * Disk size = 3915048K. Space Used = 740K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
 php7.0-xml php-xml

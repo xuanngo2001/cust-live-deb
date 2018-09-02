@@ -3,7 +3,7 @@
   * Install Image Editor: Pinta.
   * Insert Pinta menu in Graphics.
   * Pinta crashes with mono v4.6.2.7+dfsg-1.
-  * Disk size = 1798160K. Space Used = 89440K. Runtime = 00:00:00:46.
+  * Disk size = 2233304K. Space Used = 89432K. Runtime = 00:00:00:23.
   * The following NEW packages will be installed:
   ```bash
 binutils cli-common gnome-icon-theme libgdiplus libglib2.0-cil
