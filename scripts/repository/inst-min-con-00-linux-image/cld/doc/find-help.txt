@@ -9,6 +9,9 @@
 # Find and execute multiple commands.
   find /usr/local/bin/ -name '*.sh' -type f -execdir echo "Executing {}" \; -execdir chmod +x {} \; 
 
+# Find and execute multiple commands with success condition.
+  find "${base_dir}" -type f -name '*.url' -exec grep "${search_term}" {} \; -exec echo {} \;
+  
 # Find multiple patterns.
   find . -type f -o -iname '*.asf' -o -iname '*.avi'
 
