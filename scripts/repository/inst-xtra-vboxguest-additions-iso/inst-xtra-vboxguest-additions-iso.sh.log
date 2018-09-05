@@ -37,7 +37,7 @@ Get:13 http://localhost/aptly-repo/master_stretch-backports-main stretch-backpor
 Get:14 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-kbuild-4.17 amd64 4.17.17-1~bpo9+1 [844 kB]
 Get:15 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.17.0-0.bpo.3-amd64 amd64 4.17.17-1~bpo9+1 [483 kB]
 Get:16 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-amd64 amd64 4.17+97~bpo9+1 [6,658 B]
-Fetched 24.2 MB in 0s (30.3 MB/s)
+Fetched 24.2 MB in 0s (43.3 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -78,9 +78,9 @@ Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 patch 
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dpkg-dev all 1.18.25 [1,595 kB]
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 build-essential amd64 12.3 [7,346 B]
 Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dkms all 2.3-2 [74.8 kB]
-Fetched 15.9 MB in 0s (32.6 MB/s)
+Fetched 15.9 MB in 0s (42.8 MB/s)
 Selecting previously unselected package binutils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56005 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56043 files and directories currently installed.)
 Preparing to unpack .../00-binutils_2.28-5_amd64.deb ...
 Unpacking binutils (2.28-5) ...
 Selecting previously unselected package libc-dev-bin.
@@ -192,7 +192,7 @@ The following NEW packages will be installed:
 Need to get 0 B/10.3 MB of archives.
 After this operation, 56.9 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-6-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59203 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59241 files and directories currently installed.)
 Preparing to unpack .../linux-compiler-gcc-6-x86_4.17.17-1~bpo9+1_amd64.deb ...
 Unpacking linux-compiler-gcc-6-x86 (4.17.17-1~bpo9+1) ...
 Selecting previously unselected package linux-headers-4.17.0-0.bpo.3-common.
@@ -222,4 +222,4 @@ CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto wind
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: version: 5.2.18 r124319.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 4364972K. Space Used = 281444K. Runtime = 00:00:01:28.
+CLDS: * Disk size = 4365696K. Space Used = 281460K. Runtime = 00:00:01:07.
