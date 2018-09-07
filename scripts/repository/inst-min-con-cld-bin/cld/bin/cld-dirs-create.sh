@@ -79,4 +79,5 @@ esac
 
 # Display template.
 echo '# Add to CLD/'
-echo ' yes | cp -av ./cld  /usr/local'
+echo '	yes | cp -av ./cld  /usr/local'
+
