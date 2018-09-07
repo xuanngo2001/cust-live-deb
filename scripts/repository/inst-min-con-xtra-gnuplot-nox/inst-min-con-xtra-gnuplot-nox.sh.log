@@ -3,22 +3,22 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  aglfn fontconfig gnuplot-data libcairo2 libdatrie1 libgd3 libgraphite2-3
-  libharfbuzz0b libjbig0 liblua5.1-0 libpango-1.0-0 libpangocairo-1.0-0
-  libpangoft2-1.0-0 libpixman-1-0 libthai-data libthai0 libtiff5 libwebp6
-  libxcb-render0 libxcb-shm0 libxpm4
-Suggested packages:
-  gnuplot-doc libgd-tools
-Recommended packages:
-  fonts-liberation groff
-The following NEW packages will be installed:
-  aglfn fontconfig gnuplot-data gnuplot-nox libcairo2 libdatrie1 libgd3
+  aglfn fontconfig gnuplot-data libcairo2 libdatrie1 libgd3 libglib2.0-0
   libgraphite2-3 libharfbuzz0b libjbig0 liblua5.1-0 libpango-1.0-0
   libpangocairo-1.0-0 libpangoft2-1.0-0 libpixman-1-0 libthai-data libthai0
   libtiff5 libwebp6 libxcb-render0 libxcb-shm0 libxpm4
-0 upgraded, 22 newly installed, 0 to remove and 16 not upgraded.
-Need to get 5,405 kB of archives.
-After this operation, 11.4 MB of additional disk space will be used.
+Suggested packages:
+  gnuplot-doc libgd-tools
+Recommended packages:
+  fonts-liberation groff libglib2.0-data shared-mime-info xdg-user-dirs
+The following NEW packages will be installed:
+  aglfn fontconfig gnuplot-data gnuplot-nox libcairo2 libdatrie1 libgd3
+  libglib2.0-0 libgraphite2-3 libharfbuzz0b libjbig0 liblua5.1-0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpixman-1-0
+  libthai-data libthai0 libtiff5 libwebp6 libxcb-render0 libxcb-shm0 libxpm4
+0 upgraded, 23 newly installed, 0 to remove and 16 not upgraded.
+Need to get 8,096 kB of archives.
+After this operation, 16.5 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 fontconfig amd64 2.11.0-6.7+b1 [404 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 aglfn all 1.7-3 [29.2 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gnuplot-data all 5.0.5+dfsg1-6+deb9u1 [127 kB]
@@ -31,19 +31,20 @@ Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtiff
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwebp6 amd64 0.5.2-1 [235 kB]
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxpm4 amd64 1:3.5.12-1 [49.1 kB]
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgd3 amd64 2.2.4-2+deb9u2 [132 kB]
-Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblua5.1-0 amd64 5.1.5-8.1+b2 [111 kB]
-Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libthai-data all 0.1.26-1 [166 kB]
-Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdatrie1 amd64 0.2.10-4+b1 [36.4 kB]
-Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libthai0 amd64 0.1.26-1 [52.1 kB]
-Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpango-1.0-0 amd64 1.40.5-1 [320 kB]
-Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgraphite2-3 amd64 1.3.10-1 [84.2 kB]
-Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libharfbuzz0b amd64 1.4.2-1 [671 kB]
-Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpangoft2-1.0-0 amd64 1.40.5-1 [205 kB]
-Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpangocairo-1.0-0 amd64 1.40.5-1 [193 kB]
-Get:22 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gnuplot-nox amd64 5.0.5+dfsg1-6+deb9u1 [819 kB]
-Fetched 5,405 kB in 0s (32.4 MB/s)
+Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libglib2.0-0 amd64 2.50.3-2 [2,691 kB]
+Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblua5.1-0 amd64 5.1.5-8.1+b2 [111 kB]
+Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libthai-data all 0.1.26-1 [166 kB]
+Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdatrie1 amd64 0.2.10-4+b1 [36.4 kB]
+Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libthai0 amd64 0.1.26-1 [52.1 kB]
+Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpango-1.0-0 amd64 1.40.5-1 [320 kB]
+Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgraphite2-3 amd64 1.3.10-1 [84.2 kB]
+Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libharfbuzz0b amd64 1.4.2-1 [671 kB]
+Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpangoft2-1.0-0 amd64 1.40.5-1 [205 kB]
+Get:22 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpangocairo-1.0-0 amd64 1.40.5-1 [193 kB]
+Get:23 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gnuplot-nox amd64 5.0.5+dfsg1-6+deb9u1 [819 kB]
+Fetched 8,096 kB in 0s (37.7 MB/s)
 Selecting previously unselected package fontconfig.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21141 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18173 files and directories currently installed.)
 Preparing to unpack .../00-fontconfig_2.11.0-6.7+b1_amd64.deb ...
 Unpacking fontconfig (2.11.0-6.7+b1) ...
 Selecting previously unselected package aglfn.
@@ -79,38 +80,43 @@ Unpacking libxpm4:amd64 (1:3.5.12-1) ...
 Selecting previously unselected package libgd3:amd64.
 Preparing to unpack .../11-libgd3_2.2.4-2+deb9u2_amd64.deb ...
 Unpacking libgd3:amd64 (2.2.4-2+deb9u2) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Preparing to unpack .../12-libglib2.0-0_2.50.3-2_amd64.deb ...
+Unpacking libglib2.0-0:amd64 (2.50.3-2) ...
 Selecting previously unselected package liblua5.1-0:amd64.
-Preparing to unpack .../12-liblua5.1-0_5.1.5-8.1+b2_amd64.deb ...
+Preparing to unpack .../13-liblua5.1-0_5.1.5-8.1+b2_amd64.deb ...
 Unpacking liblua5.1-0:amd64 (5.1.5-8.1+b2) ...
 Selecting previously unselected package libthai-data.
-Preparing to unpack .../13-libthai-data_0.1.26-1_all.deb ...
+Preparing to unpack .../14-libthai-data_0.1.26-1_all.deb ...
 Unpacking libthai-data (0.1.26-1) ...
 Selecting previously unselected package libdatrie1:amd64.
-Preparing to unpack .../14-libdatrie1_0.2.10-4+b1_amd64.deb ...
+Preparing to unpack .../15-libdatrie1_0.2.10-4+b1_amd64.deb ...
 Unpacking libdatrie1:amd64 (0.2.10-4+b1) ...
 Selecting previously unselected package libthai0:amd64.
-Preparing to unpack .../15-libthai0_0.1.26-1_amd64.deb ...
+Preparing to unpack .../16-libthai0_0.1.26-1_amd64.deb ...
 Unpacking libthai0:amd64 (0.1.26-1) ...
 Selecting previously unselected package libpango-1.0-0:amd64.
-Preparing to unpack .../16-libpango-1.0-0_1.40.5-1_amd64.deb ...
+Preparing to unpack .../17-libpango-1.0-0_1.40.5-1_amd64.deb ...
 Unpacking libpango-1.0-0:amd64 (1.40.5-1) ...
 Selecting previously unselected package libgraphite2-3:amd64.
-Preparing to unpack .../17-libgraphite2-3_1.3.10-1_amd64.deb ...
+Preparing to unpack .../18-libgraphite2-3_1.3.10-1_amd64.deb ...
 Unpacking libgraphite2-3:amd64 (1.3.10-1) ...
 Selecting previously unselected package libharfbuzz0b:amd64.
-Preparing to unpack .../18-libharfbuzz0b_1.4.2-1_amd64.deb ...
+Preparing to unpack .../19-libharfbuzz0b_1.4.2-1_amd64.deb ...
 Unpacking libharfbuzz0b:amd64 (1.4.2-1) ...
 Selecting previously unselected package libpangoft2-1.0-0:amd64.
-Preparing to unpack .../19-libpangoft2-1.0-0_1.40.5-1_amd64.deb ...
+Preparing to unpack .../20-libpangoft2-1.0-0_1.40.5-1_amd64.deb ...
 Unpacking libpangoft2-1.0-0:amd64 (1.40.5-1) ...
 Selecting previously unselected package libpangocairo-1.0-0:amd64.
-Preparing to unpack .../20-libpangocairo-1.0-0_1.40.5-1_amd64.deb ...
+Preparing to unpack .../21-libpangocairo-1.0-0_1.40.5-1_amd64.deb ...
 Unpacking libpangocairo-1.0-0:amd64 (1.40.5-1) ...
 Selecting previously unselected package gnuplot-nox.
-Preparing to unpack .../21-gnuplot-nox_5.0.5+dfsg1-6+deb9u1_amd64.deb ...
+Preparing to unpack .../22-gnuplot-nox_5.0.5+dfsg1-6+deb9u1_amd64.deb ...
 Unpacking gnuplot-nox (5.0.5+dfsg1-6+deb9u1) ...
 Setting up libxcb-render0:amd64 (1.12-1) ...
 Setting up libjbig0:amd64 (2.1-3.1+b2) ...
+Setting up libglib2.0-0:amd64 (2.50.3-2) ...
+No schema files found: doing nothing.
 Setting up libdatrie1:amd64 (0.2.10-4+b1) ...
 Setting up libtiff5:amd64 (4.0.8-2+deb9u2) ...
 Setting up libgraphite2-3:amd64 (1.3.10-1) ...
@@ -136,4 +142,4 @@ Setting up gnuplot-nox (5.0.5+dfsg1-6+deb9u1) ...
 update-alternatives: using /usr/bin/gnuplot-nox to provide /usr/bin/gnuplot (gnuplot) in auto mode
 Processing triggers for libc-bin (2.24-11+deb9u3) ...
 CLDS: * Install gnuplot-nox.
-CLDS: * Disk size = 1350796K. Space Used = 17132K. Runtime = 00:00:00:06.
+CLDS: * Disk size = 1235656K. Space Used = 24832K. Runtime = 00:00:00:05.
