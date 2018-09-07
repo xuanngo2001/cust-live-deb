@@ -22,7 +22,7 @@
   find . -type d -empty
 
 # Find directories of this directory.
-  find . -maxdepth 1 -mindepth 1
+  find . -maxdepth 1 -mindepth 1 -type d
   
 # Find all images from current directory. Very slow because it reads the file content.
   find . -type f -exec file {} \; | grep -o -P '^.+: \w+ image'
