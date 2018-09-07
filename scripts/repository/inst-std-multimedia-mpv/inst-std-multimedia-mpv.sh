@@ -31,12 +31,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Add to CLD/
 	yes | cp -av ./cld  /usr/local
 
-# Add useful mpv keybindings settings.
-#	MPV_CONFIG_DIR=${HOME}/.config/mpv/
-#	mkdir -p ${MPV_CONFIG_DIR} 
-#	cat mpv.conf >> ${MPV_CONFIG_DIR}/mpv.conf
-#	cat input.conf >> ${MPV_CONFIG_DIR}/input.conf
-
 # Log
 	echo "${GV_LOG} * Install Media Player: $(mpv --version | head -n 1 | sed 's/(.*//')."
 	echo "${GV_LOG} * Add multiple aliases for MPV."
