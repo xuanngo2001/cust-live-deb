@@ -10,10 +10,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   apt-get install -d -y <your-package> 
 
 # Install PKG_NAME.
-  apt-get -y install PKG_NAME
+	apt-get -y install PKG_NAME
 
 
 # Log
-  echo "${GV_LOG} * Install PKG_NAME."
+	echo "${GV_LOG} * Install PKG_NAME."
 
 
