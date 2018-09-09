@@ -1,6 +1,8 @@
 * >>>>>>>>> Running inst-std-xtra-opw-php-mysql.sh ...
   * After this operation, 502 kB of additional disk space will be used.
-  * Disk size = 3900468K. Space Used = 708K. Runtime = 00:00:00:03.
+  * Install php-mysql to enable the PDO_MYSQL database driver for PHP and to run Drupal.
+  * Enable mod_rewrite module.
+  * Disk size = 3911196K. Space Used = 708K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 php7.0-mysql php-mysql

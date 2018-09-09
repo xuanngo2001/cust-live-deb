@@ -4,7 +4,7 @@
   * Add aptly nightly build repository.
   * Install aptly version: unknown to create local debian repository.
   * Add xz-utils package because aptly snapshot merge needs it.
-  * Disk size = 1119608K. Space Used = 33012K. Runtime = 00:00:00:08.
+  * Disk size = 1171188K. Space Used = 33024K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 aptly dirmngr gnupg1 gnupg1* gnupg-l10n
