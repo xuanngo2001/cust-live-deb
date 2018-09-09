@@ -4,64 +4,113 @@ Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
   apache2-bin apache2-data apache2-utils libapr1 libaprutil1
-  libaprutil1-dbd-sqlite3 libaprutil1-ldap libicu57 liblua5.2-0 libperl5.24
-  libxml2 mime-support perl perl-modules-5.24
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libicu57 liblua5.2-0 libxml2
+  mime-support
 Suggested packages:
   www-browser apache2-doc apache2-suexec-pristine | apache2-suexec-custom
-  perl-doc libterm-readline-gnu-perl | libterm-readline-perl-perl make
 Recommended packages:
-  ssl-cert xml-core file xz-utils rename
+  ssl-cert xml-core file xz-utils
 The following NEW packages will be installed:
   apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
-  libaprutil1-dbd-sqlite3 libaprutil1-ldap libicu57 liblua5.2-0 libperl5.24
-  libxml2 mime-support perl perl-modules-5.24
-0 upgraded, 15 newly installed, 0 to remove and 19 not upgraded.
-Need to get 17.3 MB of archives.
-After this operation, 80.3 MB of additional disk space will be used.
-Err:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 perl-modules-5.24 all 5.24.1-3+deb9u4
-  Could not connect to localhost:80 (127.0.0.1). - connect (111: Connection refused) [IP: 127.0.0.1 80]
-Err:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libperl5.24 amd64 5.24.1-3+deb9u4
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 perl amd64 5.24.1-3+deb9u4
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mime-support all 3.60
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libapr1 amd64 1.5.2-5
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libaprutil1 amd64 1.5.4-3
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-3
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libaprutil1-ldap amd64 1.5.4-3
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblua5.2-0 amd64 5.2.4-1.1+b2
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libicu57 amd64 57.1-6+deb9u2
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxml2 amd64 2.9.4+dfsg1-2.2+deb9u2
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-bin amd64 2.4.25-3+deb9u5
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-utils amd64 2.4.25-3+deb9u5
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-data all 2.4.25-3+deb9u5
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-Err:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2 amd64 2.4.25-3+deb9u5
-  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/p/perl/perl-modules-5.24_5.24.1-3+deb9u4_all.deb  Could not connect to localhost:80 (127.0.0.1). - connect (111: Connection refused) [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/p/perl/libperl5.24_5.24.1-3+deb9u4_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/p/perl/perl_5.24.1-3+deb9u4_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/m/mime-support/mime-support_3.60_all.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/a/apr/libapr1_1.5.2-5_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/a/apr-util/libaprutil1_1.5.4-3_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/a/apr-util/libaprutil1-dbd-sqlite3_1.5.4-3_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/a/apr-util/libaprutil1-ldap_1.5.4-3_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/l/lua5.2/liblua5.2-0_5.2.4-1.1+b2_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/i/icu/libicu57_57.1-6+deb9u2_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/a/apache2/apache2-bin_2.4.25-3+deb9u5_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/a/apache2/apache2-utils_2.4.25-3+deb9u5_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/a/apache2/apache2-data_2.4.25-3+deb9u5_all.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Failed to fetch http://localhost/aptly-repo/master_stretch-main/pool/main/a/apache2/apache2_2.4.25-3+deb9u5_amd64.deb  Unable to connect to localhost:http: [IP: 127.0.0.1 80]
-E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-CLDS: * Disk size = 1008528K. Space Used = 20K. Runtime = 00:00:00:05.
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libicu57 liblua5.2-0 libxml2
+  mime-support
+0 upgraded, 12 newly installed, 0 to remove and 19 not upgraded.
+Need to get 10.8 MB of archives.
+After this operation, 40.1 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mime-support all 3.60 [36.7 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libapr1 amd64 1.5.2-5 [96.6 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libaprutil1 amd64 1.5.4-3 [85.8 kB]
+Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-3 [19.3 kB]
+Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libaprutil1-ldap amd64 1.5.4-3 [17.4 kB]
+Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblua5.2-0 amd64 5.2.4-1.1+b2 [110 kB]
+Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libicu57 amd64 57.1-6+deb9u2 [7,700 kB]
+Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxml2 amd64 2.9.4+dfsg1-2.2+deb9u2 [920 kB]
+Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-bin amd64 2.4.25-3+deb9u5 [1,186 kB]
+Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-utils amd64 2.4.25-3+deb9u5 [217 kB]
+Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-data all 2.4.25-3+deb9u5 [162 kB]
+Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2 amd64 2.4.25-3+deb9u5 [236 kB]
+Fetched 10.8 MB in 5s (1,992 kB/s)
+Selecting previously unselected package mime-support.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19596 files and directories currently installed.)
+Preparing to unpack .../00-mime-support_3.60_all.deb ...
+Unpacking mime-support (3.60) ...
+Selecting previously unselected package libapr1:amd64.
+Preparing to unpack .../01-libapr1_1.5.2-5_amd64.deb ...
+Unpacking libapr1:amd64 (1.5.2-5) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../02-libaprutil1_1.5.4-3_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.5.4-3) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../03-libaprutil1-dbd-sqlite3_1.5.4-3_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-3) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../04-libaprutil1-ldap_1.5.4-3_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.5.4-3) ...
+Selecting previously unselected package liblua5.2-0:amd64.
+Preparing to unpack .../05-liblua5.2-0_5.2.4-1.1+b2_amd64.deb ...
+Unpacking liblua5.2-0:amd64 (5.2.4-1.1+b2) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../06-libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../07-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../08-apache2-bin_2.4.25-3+deb9u5_amd64.deb ...
+Unpacking apache2-bin (2.4.25-3+deb9u5) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../09-apache2-utils_2.4.25-3+deb9u5_amd64.deb ...
+Unpacking apache2-utils (2.4.25-3+deb9u5) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../10-apache2-data_2.4.25-3+deb9u5_all.deb ...
+Unpacking apache2-data (2.4.25-3+deb9u5) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../11-apache2_2.4.25-3+deb9u5_amd64.deb ...
+Unpacking apache2 (2.4.25-3+deb9u5) ...
+Setting up libapr1:amd64 (1.5.2-5) ...
+Setting up mime-support (3.60) ...
+Setting up apache2-data (2.4.25-3+deb9u5) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libaprutil1:amd64 (1.5.4-3) ...
+Processing triggers for systemd (232-25+deb9u4) ...
+Setting up liblua5.2-0:amd64 (5.2.4-1.1+b2) ...
+Setting up libaprutil1-ldap:amd64 (1.5.4-3) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-3) ...
+Setting up apache2-utils (2.4.25-3+deb9u5) ...
+Setting up apache2-bin (2.4.25-3+deb9u5) ...
+Setting up apache2 (2.4.25-3+deb9u5) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+Running in chroot, ignoring request.
+invoke-rc.d: policy-rc.d denied execution of start.
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for systemd (232-25+deb9u4) ...
+CLDS: * Install apache2.
+CLDS: * Disk size = 1137924K. Space Used = 51584K. Runtime = 00:00:00:11.
