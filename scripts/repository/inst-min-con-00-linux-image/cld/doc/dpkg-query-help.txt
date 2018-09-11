@@ -1,8 +1,8 @@
 # List all installed packages in size order.
 #   https://ubuntuforums.org/showthread.php?t=599424
-  dpkg-query -W --showformat='${Installed-Size;10}\t${Package}\n' | sort -k1,1n
-  dpkg-query --show --showformat='${Package;-50}\t${Installed-Size}\n' | sort -k 2 -n
-  dpkg-query --show --showformat='${Package;-50}\t${Installed-Size} ${Status}\n' | sort -k 2 -n |grep -v deinstall
-  
+	dpkg-query -W --showformat='${Installed-Size;10}\t${Package}\n' | sort -k1,1n
+	dpkg-query --show --showformat='${Package;-50}\t${Installed-Size}\n' | sort -k 2 -n
+	dpkg-query --show --showformat='${Package;-50}\t${Installed-Size} ${Status}\n' | sort -k 2 -n |grep -v deinstall
+	
 
-      
+	    

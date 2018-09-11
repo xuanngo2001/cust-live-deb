@@ -1,15 +1,15 @@
 # Un/Compress tar.
-  tar -cf archive.tar /path/to/dir/ file1 file2
-  tar -xf archive.tar -C /target/destination
+	tar -cf archive.tar /path/to/dir/ file1 file2
+	tar -xf archive.tar -C /target/destination
 
 # Un/Decompress gzip file.
-  tar -czvf archive.tar.gz /path/to/dir/ file1 file2
-  tar -xzvf archive.tar.gz
+	tar -czvf archive.tar.gz /path/to/dir/ file1 file2
+	tar -xzvf archive.tar.gz
 
 # Un/Decompress bzip file.
-  tar -cjvf archive.tar.bz2 /path/to/dir/ file1 file2
-  tar -xjvf archive.tar.bz2
+	tar -cjvf archive.tar.bz2 /path/to/dir/ file1 file2
+	tar -xjvf archive.tar.bz2
 
 # No parent path. Option -C is to change to the defined path before compressing.
-  tar -cjvf archive.tar.bz2 -C "/cd/to/this/path/first/" /path/to/dir/ file1 file2
-    
+	tar -cjvf archive.tar.bz2 -C "/cd/to/this/path/first/" /path/to/dir/ file1 file2
+	  

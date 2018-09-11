@@ -1,32 +1,32 @@
 # Official manual: https://www.gnu.org/software/findutils/manual/html_mono/find.html
 
 # A single sed command for each file is executed.
-  find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} \;
+	find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} \;
 
 # As many files as possible are given as parameters to sed at once.
-  find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} +
+	find . -type f -name "*.txt" -exec sed -i 's/SEARCH/REPLACE/g' {} +
 
 # Find and execute multiple commands.
-  find /usr/local/bin/ -name '*.sh' -type f -execdir echo "Executing {}" \; -execdir chmod +x {} \; 
+	find /usr/local/bin/ -name '*.sh' -type f -execdir echo "Executing {}" \; -execdir chmod +x {} \; 
 
 # Find and execute multiple commands with success condition.
-  find "${base_dir}" -type f -name '*.url' -exec grep "${search_term}" {} \; -exec echo {} \;
-  
+	find "${base_dir}" -type f -name '*.url' -exec grep "${search_term}" {} \; -exec echo {} \;
+	
 # Find multiple patterns.
-  find . -type f -o -iname '*.asf' -o -iname '*.avi'
+	find . -type f -o -iname '*.asf' -o -iname '*.avi'
 
 # Find files with size 0.
-  find . -type f -size 0
+	find . -type f -size 0
 
 # Find empty directories.
-  find . -type d -empty
+	find . -type d -empty
 
 # Find directories of this directory.
-  find . -maxdepth 1 -mindepth 1 -type d
-  
+	find . -maxdepth 1 -mindepth 1 -type d
+	
 # Find all images from current directory. Very slow because it reads the file content.
-  find . -type f -exec file {} \; | grep -o -P '^.+: \w+ image'
+	find . -type f -exec file {} \; | grep -o -P '^.+: \w+ image'
 
 # Find and delete file marked as *.xmp
-  find . -type f -name '*.xmp' | sed 's/\.xmp//' | tr '\n' '\0' | xargs -0 rm -f "{}"
+	find . -type f -name '*.xmp' | sed 's/\.xmp//' | tr '\n' '\0' | xargs -0 rm -f "{}"
 

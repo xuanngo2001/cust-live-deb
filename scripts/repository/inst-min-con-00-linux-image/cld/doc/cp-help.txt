@@ -1,2 +1,2 @@
 # Copy and exclude file with size = 0.
-  find . -type f -size +0 -print0 | xargs -0 -I{} cp {} /dest/
+	find . -type f -size +0 -print0 | xargs -0 -I{} cp {} /dest/

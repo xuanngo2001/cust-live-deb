@@ -1,9 +1,9 @@
 # Debug broken package. Search for 'Failed'.
-  apt-get -o Debug::pkgProblemResolver=yes install <package> &> error.log
+	apt-get -o Debug::pkgProblemResolver=yes install <package> &> error.log
 
 # Get dependent packages.
-  apt-cache depends mpv
-  
+	apt-cache depends mpv
+	
 # Update security packages only.
-  apt-get -s dist-upgrade | grep "^Inst" | grep -i securi | awk -F " " {'print $2'} | xargs apt-get install -y
-  
+	apt-get -s dist-upgrade | grep "^Inst" | grep -i securi | awk -F " " {'print $2'} | xargs apt-get install -y
+	

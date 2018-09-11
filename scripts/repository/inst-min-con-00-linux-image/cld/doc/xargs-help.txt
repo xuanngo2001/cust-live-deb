@@ -3,23 +3,23 @@
 #   https://shapeshed.com/unix-xargs/
 
 # Execute command if not empty.
-  echo '' | xargs -r echo
+	echo '' | xargs -r echo
 
 # Print each command that will be executed to the terminal
-  echo 'one587 two587 three587' | xargs -t echo
+	echo 'one587 two587 three587' | xargs -t echo
 
 # Handle space by using -0, which splits the input around NUL bytes.
-  echo $'one587\ntwo587\nthree and four587' | tr '\n' '\0' | xargs -0 -I{} echo "{}"
+	echo $'one587\ntwo587\nthree and four587' | tr '\n' '\0' | xargs -0 -I{} echo "{}"
 
 # Run multiple commands
-  echo $'one\ntwo\nthree and four' | tr '\n' '\0' | xargs -0 -I{} sh -c "echo Y; echo \"{}\";"
+	echo $'one\ntwo\nthree and four' | tr '\n' '\0' | xargs -0 -I{} sh -c "echo Y; echo \"{}\";"
 
 # Combined use
-  \ls *.xmp | sed 's/\.xmp//' |tr '\n' '\0'| xargs -0 -n1 -I{} sh -c "echo Y| zero-size.sh \"{}\";"
+	\ls *.xmp | sed 's/\.xmp//' |tr '\n' '\0'| xargs -0 -n1 -I{} sh -c "echo Y| zero-size.sh \"{}\";"
 
 # Use double-quote instead of null(\0)
-  find . -type f | sort | sed 's/^/"/' | sed 's/$/"/' | xargs -n1000 rar a -m0 archive.rar
+	find . -type f | sort | sed 's/^/"/' | sed 's/$/"/' | xargs -n1000 rar a -m0 archive.rar
 
 # Add newline for every 3 words
-  echo 'cat dog eel pig'| xargs -n3
-  
+	echo 'cat dog eel pig'| xargs -n3
+	

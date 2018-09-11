@@ -1,32 +1,32 @@
 # Get current executing directory path. Only use it as shell function. Otherwise, it will not work.
-  function get_executing_path()
-  {
-    local executing_path=$(dirname "$0")              # relative
-    executing_path=$( cd "${executing_path}" && pwd ) # absolutized and normalized
-    if [ -z "${executing_path}" ]; then
-      return 1  # fail
-    fi
-  }
-  export -f get_executing_path
+	function get_executing_path()
+	{
+	  local executing_path=$(dirname "$0")              # relative
+	  executing_path=$( cd "${executing_path}" && pwd ) # absolutized and normalized
+	  if [ -z "${executing_path}" ]; then
+	    return 1  # fail
+	  fi
+	}
+	export -f get_executing_path
 
 # Filesize.
-  stat -c %s file.txt
-    
+	stat -c %s file.txt
+	  
 # dirname: Always double quotes. Otherwise, issue with path with spaces.
-  echo "$(dirname "${line_with_spaces}")"
+	echo "$(dirname "${line_with_spaces}")"
 
 # Increment variable in the same script.
-  sata_port=0
-  sata_port=$((sata_port+1))
+	sata_port=0
+	sata_port=$((sata_port+1))
 
 # Increment variable inside loop.
-  let index=index+1
+	let index=index+1
 
 # Redirections.
-  # Redirect stdout to one file and stderr to another file:
-    command > out.log 2>error.log
-  # Redirect stderr to stdout (&1), and then redirect stdout to a file:
-    command > out.log 2>&1
-  # Redirect both to a file:
-    command &> out.log
-    
+	# Redirect stdout to one file and stderr to another file:
+	  command > out.log 2>error.log
+	# Redirect stderr to stdout (&1), and then redirect stdout to a file:
+	  command > out.log 2>&1
+	# Redirect both to a file:
+	  command &> out.log
+	  

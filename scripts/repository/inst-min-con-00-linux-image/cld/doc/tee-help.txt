@@ -1,7 +1,7 @@
 # Redirect stdout.log and stderr.log: https://stackoverflow.com/a/692407
-  command > >(tee -a stdout.log) 2> >(tee -a stderr.log >&2)
+	command > >(tee -a stdout.log) 2> >(tee -a stderr.log >&2)
 
 # Redirect all to stdout-stderr.log
-  command 2>&1 | tee -a stdout-stderr.log
-  
+	command 2>&1 | tee -a stdout-stderr.log
+	
 

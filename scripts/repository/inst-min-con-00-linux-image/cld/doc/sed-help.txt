@@ -1,48 +1,48 @@
 # Use pipe(|) instead slash(/).
-  sed 's|/home|/new|' input_file.txt
+	sed 's|/home|/new|' input_file.txt
 
 # Delete up to the first occurrence(:).
-  echo '123:aaaa:f35:bbbb' | sed 's/[^:]*://'
+	echo '123:aaaa:f35:bbbb' | sed 's/[^:]*://'
 
 # Remove 'empty' lines, lines with space/tabs are removed too.
-  sed '/^\s*$/d'
+	sed '/^\s*$/d'
 
 # Remove lines that have 3 characters or shorter.
-  sed -r '/^.{,3}$/d' filename
+	sed -r '/^.{,3}$/d' filename
 
-  # Print lines that have 3 characters or shorter.
-  sed -ne '/^.\{,3\}$/p'
-  
+	# Print lines that have 3 characters or shorter.
+	sed -ne '/^.\{,3\}$/p'
+	
 # Delete line with pattern.
-  sed -i.bck "/pattern/d"
+	sed -i.bck "/pattern/d"
 
 # Find line with MATCH_PATTERN. Then, SEARCH and REPLACE.
-  sed -i "/MATCH_PATTERN/b; s/SEARCH/REPLACE/" tmp.txt
+	sed -i "/MATCH_PATTERN/b; s/SEARCH/REPLACE/" tmp.txt
 
 # Delete text between 2 patterns.
-  # Delete text between patterns, excluding the lines containing these patterns:
-  sed '/PATTERN-1/,/PATTERN-2/{//!d}' input.txt
+	# Delete text between patterns, excluding the lines containing these patterns:
+	sed '/PATTERN-1/,/PATTERN-2/{//!d}' input.txt
 
-  # Delete text between patterns, including the lines containing these patterns:
-  sed '/PATTERN-1/,/PATTERN-2/d' input.txt
+	# Delete text between patterns, including the lines containing these patterns:
+	sed '/PATTERN-1/,/PATTERN-2/d' input.txt
 	
 # Delete all the lines after PATTERN, use this
-  sed '/PATTERN/,$d' input.txt    
+	sed '/PATTERN/,$d' input.txt    
 
 # Delete matching line: sed (printing the inverse is faster than actual deletion). Need -n.
-  sed -n '/pattern/!p' input.txt
+	sed -n '/pattern/!p' input.txt
 
 # Insert file content after match.
-  # Insert content of file2.txt into file1.txt after <tag> is found. /r stands for reading in a file.
-  sed '/<tag>/ r file2.txt' file1.txt
-   
-  # Append line after match
-  sed  '/SEARCH-PATTERN/a REPLACE_STRING' inputfile
-   
-  # Insert line before match
-  sed  '/SEARCH-PATTERN/i REPLACE_STRING' inputfile
+	# Insert content of file2.txt into file1.txt after <tag> is found. /r stands for reading in a file.
+	sed '/<tag>/ r file2.txt' file1.txt
+	 
+	# Append line after match
+	sed  '/SEARCH-PATTERN/a REPLACE_STRING' inputfile
+	 
+	# Insert line before match
+	sed  '/SEARCH-PATTERN/i REPLACE_STRING' inputfile
 
 # Use repeat characters pattern: 4 time dot character.
-  echo bluray.mkv.jpg.rar | sed 's/.\{4\}.rar//'
+	echo bluray.mkv.jpg.rar | sed 's/.\{4\}.rar//'
 
 
