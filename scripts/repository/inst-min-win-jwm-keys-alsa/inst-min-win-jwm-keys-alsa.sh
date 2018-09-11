@@ -9,11 +9,11 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Add ALSA key binding
-sed -i "/NEW KEYS HERE -->/ r jwmrc-key-alsa.xml" "${CLD_JWMRC_DIR}/jwmrc-key.xml"
+	sed -i "/NEW KEYS HERE -->/ r jwmrc-key-alsa.xml" "${CLD_JWMRC_DIR}/jwmrc-key.xml"
 
 # On startup, auto-detect ALSA controller.
-yes | cp -av ./cld/ /usr/local
+	yes | cp -av ./cld/ /usr/local
 
 # Log
-echo "${GV_LOG} * Add ALSA key binding."
-echo "${GV_LOG} * Add script to auto-detect ALSA controller on JWM startup."
+	echo "${GV_LOG} * Add ALSA key binding."
+	echo "${GV_LOG} * Add script to auto-detect ALSA controller on JWM startup."
