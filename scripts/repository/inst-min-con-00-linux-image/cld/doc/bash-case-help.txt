@@ -1,14 +1,14 @@
 # Basic case.
 	case "${option}" in
 	  
-	  option-value | ov )
-	    # Commands here for the option-value or ov.
-	    echo "[${option}]"
-	    ;;
-	  *)
-	    echo "$0: Error: Unknown option=>${option}"
-	    exit 1
-	    ;;
-	    
+		option-value | ov )
+			# Commands here for the option-value or ov.
+			echo "[${option}]"
+			;;
+		*)
+			echo "$0: Error: Unknown option=>${option}"
+			exit 1
+			;;
+
 	esac
 	  
