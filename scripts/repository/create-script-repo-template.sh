@@ -7,7 +7,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly download dependent packages
-#   apt-get install -d -y <your-package> 
+#	apt-get install -d -y <your-package> 
 
 # Install PKG_NAME.
 	apt-get -y install PKG_NAME
@@ -15,5 +15,3 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Log
 	echo "${GV_LOG} * Install PKG_NAME."
-
-
