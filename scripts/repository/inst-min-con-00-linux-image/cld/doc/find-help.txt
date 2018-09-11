@@ -29,4 +29,3 @@
 
 # Find and delete file marked as *.xmp
 	find . -type f -name '*.xmp' | sed 's/\.xmp//' | tr '\n' '\0' | xargs -0 rm -f "{}"
-
