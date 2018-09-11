@@ -15,6 +15,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Log
   echo "${GV_LOG} * Install mono-complete."
-  echo "${GV_LOG} * Needs for openra."
+  echo "${GV_LOG} * Needs for openra: AppImage."
 
 
