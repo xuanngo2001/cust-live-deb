@@ -1,28 +1,28 @@
 # If no argument.
 	if [ "$#" -eq 0 ]; then
-	  echo "ERROR: $(basename $0): No argument. Aborted!"
-	  exit 1;
+		echo "ERROR: $(basename $0): No argument. Aborted!"
+		exit 1;
 	fi
 
 # If condition with pipes.
 	if ! echo 'someString' | grep -qF 'notFound'; then
-	  echo 'Show negation: string not found.'
+		echo 'Show negation: string not found.'
 	fi
 
 # Compare 2 files.
 	if cmp -s "$file1" "$file2"; then
-	  echo "The files are the same."
+		echo "The files are the same."
 	else
-	  echo "The files are differents"
+		echo "The files are differents"
 	fi
 
 # Elseif
 	if [ "${var}" -eq 0 ]; then
-	  echo "${var}"
+		echo "${var}"
 	elif [ "${var}" -gt 0 ]; then
-	  echo "${var}"
+		echo "${var}"
 	else
-	   echo "Unknown parameter"
+		echo "Unknown parameter"
 	fi
 
 # If test conditions.
@@ -48,14 +48,14 @@
 	string='bla bla'
 	is_number_regex='^[0-9]+$'
 	if ! [[ "${string}" =~ ${is_number_regex} ]] ; then
-	   echo "Error: ${string} is not a number."
+		echo "Error: ${string} is not a number."
 	fi
 
 # Odd or even?
 	if [ $(($i%2)) -eq 0 ]; then
-	  echo $i is even
+		echo $i is even
 	else
-	  echo $i is odd
+		echo $i is odd
 	fi
 
 # Command not found.

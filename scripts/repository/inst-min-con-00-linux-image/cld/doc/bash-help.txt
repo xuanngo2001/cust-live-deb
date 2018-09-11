@@ -1,11 +1,11 @@
 # Get current executing directory path. Only use it as shell function. Otherwise, it will not work.
 	function get_executing_path()
 	{
-	  local executing_path=$(dirname "$0")              # relative
-	  executing_path=$( cd "${executing_path}" && pwd ) # absolutized and normalized
-	  if [ -z "${executing_path}" ]; then
-	    return 1  # fail
-	  fi
+		local executing_path=$(dirname "$0")              # relative
+		executing_path=$( cd "${executing_path}" && pwd ) # absolutized and normalized
+		if [ -z "${executing_path}" ]; then
+			return 1  # fail
+		fi
 	}
 	export -f get_executing_path
 
@@ -24,9 +24,9 @@
 
 # Redirections.
 	# Redirect stdout to one file and stderr to another file:
-	  command > out.log 2>error.log
+		command > out.log 2>error.log
 	# Redirect stderr to stdout (&1), and then redirect stdout to a file:
-	  command > out.log 2>&1
+		command > out.log 2>&1
 	# Redirect both to a file:
-	  command &> out.log
+		command &> out.log
 	  

@@ -1,30 +1,30 @@
 # While loop.
 	while IFS='' read -r line || [[ -n "${line}" ]]; do
-	  echo "Do something ${line}"
+		echo "Do something ${line}"
 	done < <( cat somefile.txt | grep -v '^#' | mawk NF )
 
 # Loop through array elements.
 	animalNames=( cat dog fish )
 	animalNames+=( bird )
 	for animal in "${animalNames[@]}"; do
-	  echo "********  ${animal}  ********"
+		echo "********  ${animal}  ********"
 	done
 
 # Loop through arguments.
 	for arg in "${@:2}"; do # Skip the first argument.
-	  echo "${arg}"
+		echo "${arg}"
 	done
 
 # Loop using counter.
 	MAX=5
 	position=11
 	for ((i=0; i < MAX ; i++)); do
-	  echo "i=$i , position=$position"
-	  let position+=1 # Same as 'i=i+1
+		echo "i=$i , position=$position"
+		let position+=1 # Same as 'i=i+1
 	done
 	
 # Loop through movie files
 	for movie in *.{mp4,mkv,avi,rmvb}; do
-	  echo "${movie}" 
+		echo "${movie}" 
 	done
 	
