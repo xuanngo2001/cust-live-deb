@@ -7,7 +7,8 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-apt-get -y install fuse
+# Install fuse.
+	apt-get -y install fuse
 
 # Log
-echo "${GV_LOG} * Install fuse(fusermount) to run TMSU."
+	echo "${GV_LOG} * Install fuse(fusermount) to run TMSU."
