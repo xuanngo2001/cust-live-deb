@@ -12,3 +12,7 @@
 
 # No parent path. Option -C is to change to the defined path before compressing.
 	tar -cjvf archive.tar.bz2 -C "/cd/to/this/path/first/" /path/to/dir/ file1 file2
+
+# Handle multiple part archive.
+	tar -czvf - drupal-7.59_2018-09-07_17.51.07.tar.gz | split -b 950K - archive.tar.gz
+	cat archive.tar.* | tar -xzvf -
