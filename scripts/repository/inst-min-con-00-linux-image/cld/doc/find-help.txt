@@ -27,5 +27,8 @@
 # Find all images from current directory. Very slow because it reads the file content.
 	find . -type f -exec file {} \; | grep -o -P '^.+: \w+ image'
 
-# Find and delete file marked as *.xmp
+# Find and delete file marked as *.xmp.
 	find . -type f -name '*.xmp' | sed 's/\.xmp//' | tr '\n' '\0' | xargs -0 rm -f "{}"
+
+# Find and print size.
+	find . -type f -name file.txt -printf '%s %p\n'
