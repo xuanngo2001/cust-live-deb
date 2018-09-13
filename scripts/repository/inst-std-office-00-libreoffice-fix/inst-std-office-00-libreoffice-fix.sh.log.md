@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-std-office-00-libreoffice-fix.sh ...
-  * After this operation, 793 kB of additional disk space will be used.
-  * Disk size = 2888060K. Space Used = 308K. Runtime = 00:00:00:01.
+  * After this operation, 951 kB of additional disk space will be used.
+  * Disk size = 2888364K. Space Used = 436K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libgpgme11 libgpgmepp6
