@@ -31,4 +31,4 @@
 	find . -type f -name '*.xmp' | sed 's/\.xmp//' | tr '\n' '\0' | xargs -0 rm -f "{}"
 
 # Find and print size.
-	find . -type f -name file.txt -printf '%s %p\n'
+	find . -type f -name all.txt -printf '%s %p\n' | numfmt --field=1 --to=iec-i  --format='%10.3f'
