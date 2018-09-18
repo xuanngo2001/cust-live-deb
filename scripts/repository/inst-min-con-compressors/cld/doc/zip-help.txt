@@ -5,7 +5,7 @@ find ./ -iname "*.pdf" | xargs -l 1000 zip -r -q -j abc.zip
 zip -r -s 200M myzip photos_test/
 find photos_test/ -mindepth 1 -maxdepth 1 | zip -@ -s 200M
 
-# Zip file with size limit.
+# Zip file with size limit: Extraction doesn't work.
 	# Create a split zip archive.
 		zip -r -s 10m archive.zip directory/
 	# Unsplit the zip file.
