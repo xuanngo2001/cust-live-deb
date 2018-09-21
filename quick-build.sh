@@ -5,3 +5,6 @@
 
 echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh 
 
+(cd rebuild-mirrors-log/; ./create-clean-mirrors-log.sh ; scite clean-mirrors-log.txt)
+
+
