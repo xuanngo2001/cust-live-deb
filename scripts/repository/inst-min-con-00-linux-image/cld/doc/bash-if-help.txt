@@ -59,7 +59,7 @@
 	fi
 
 # Command not found.
-	if ! command -v ffmpeg; then
+	if ! command -v ffmpeg > /dev/null; then
 		printf 'Warning: Skip %s.\n' 'dvdrip: ffmpeg command not found'
 		exit 0;
 	fi
