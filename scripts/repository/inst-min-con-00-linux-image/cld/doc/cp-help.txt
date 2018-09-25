@@ -1,2 +1,5 @@
 # Copy and exclude file with size = 0.
 	find . -type f -size +0 -print0 | xargs -0 -I{} cp {} /dest/
+
+# Copy also dot files and directories.
+	cp -a /tmp/. /home/tmp/
