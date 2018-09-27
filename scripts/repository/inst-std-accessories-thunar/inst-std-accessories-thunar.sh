@@ -9,7 +9,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install thunar.
 	apt-get -y install thunar
-	apt-get -y install thunar-media-tags-plugin
 	apt-get -y install thunar-archive-plugin
 	apt-get -y install thunar-volman
 	apt-get -y install gnome-icon-theme   # Ensure icons are shown in Thunar.
