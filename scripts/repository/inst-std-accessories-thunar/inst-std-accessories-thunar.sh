@@ -9,9 +9,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install thunar.
 	apt-get -y install thunar
-	apt-get -y install thunar-archive-plugin
-	apt-get -y install thunar-volman
-	apt-get -y install gnome-icon-theme   # Ensure icons are shown in Thunar.
+	apt-get -y install thunar-archive-plugin	# Extract archive.
+	apt-get -y install thunar-volman			# Manage CD/DVD/USB.
+	apt-get -y install gnome-icon-theme   		# Ensure icons are shown in Thunar(15.6 MB).
 
 # Insert Thunar in Accessories menu.
 	sed -i "/Accessories\">/ r jwmrc-menus-acc-thunar.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
