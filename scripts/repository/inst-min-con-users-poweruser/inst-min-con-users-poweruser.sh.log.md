@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-users-poweruser.sh ...
   * Created poweruser: Username/pwd = poweruser/poweruser.
-  * Disk size = 1088436K. Space Used = 36K. Runtime = 00:00:00:00.
+  * Disk size = 1088464K. Space Used = 36K. Runtime = 00:00:00:00.
