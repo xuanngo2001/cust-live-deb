@@ -11,7 +11,7 @@
   * Add google chrome alias, chrome.
   * Set default browser: update-alternatives --config x-www-browser.
   * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-  * Disk size = 2878172K. Space Used = 286456K. Runtime = 00:00:00:24.
+  * Disk size = 2878116K. Space Used = 286460K. Runtime = 00:00:00:30.
   * The following NEW packages will be installed:
   ```bash
 dh-python distro-info-data gconf2-common gconf-service google-chrome-stable
