@@ -6,21 +6,19 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-                    
 # Install libreoffice.
-apt-get -y install libreoffice
+	apt-get -y install libreoffice
 
 # Insert LibreOffice menu in Office
-sed -i "/Office\">/ r jwmrc-menus-office-libreoffice.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
+	sed -i "/Office\">/ r jwmrc-menus-office-libreoffice.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
  
 # Log
-LO_VERSION=$(libreoffice --version | head -n1)
-echo "${GV_LOG} * Install ${LO_VERSION}."
-echo "${GV_LOG} * Install Office Suite: Word processor."
-echo "${GV_LOG} * Install Office Suite: Spreadsheet."
-echo "${GV_LOG} * Install Office Suite: Presentation."
-echo "${GV_LOG} * Install Office Suite: Drawing."
-echo "${GV_LOG} * Install Office Suite: Database."
-echo "${GV_LOG} * Install Office Suite: Equation."
-echo "${GV_LOG} * https://wiki.documentfoundation.org/ReleasePlan"
-
+	LO_VERSION=$(libreoffice --version | head -n1)
+	echo "${GV_LOG} * Install ${LO_VERSION}."
+	echo "${GV_LOG} * Install Office Suite: Word processor."
+	echo "${GV_LOG} * Install Office Suite: Spreadsheet."
+	echo "${GV_LOG} * Install Office Suite: Presentation."
+	echo "${GV_LOG} * Install Office Suite: Drawing."
+	echo "${GV_LOG} * Install Office Suite: Database."
+	echo "${GV_LOG} * Install Office Suite: Equation."
+	echo "${GV_LOG} * https://wiki.documentfoundation.org/ReleasePlan"
