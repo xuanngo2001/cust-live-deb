@@ -1,7 +1,10 @@
 # Stream info.
-  ffprobe -v error -show_format -show_streams input.mp4
-  ffprobe -v error -show_format -show_chapters input.mp4
-  ffprobe -print_format json -show_chapters -loglevel error input.mp4
+	ffprobe -v error -show_format -show_streams input.mp4
+	ffprobe -v error -show_format -show_chapters input.mp4
+	ffprobe -print_format json -show_chapters -loglevel error input.mp4
     
 # Get video duration.
-  ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 input.mp4
+	ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 input.mp4
+
+# Display resolution.
+	ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 input.mp4
