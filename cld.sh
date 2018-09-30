@@ -35,7 +35,7 @@ DEB_REPO_URL=$2
 	./cld-chroot.sh "${SYSTEM}" "${CHROOT_DIR}"
 	./cld-umount.sh "${CHROOT_DIR}" || true
 	./cld-chroot-log-backup.sh "${CHROOT_DIR}/root/scripts/logs" "${PWD}"
-	./cld-mkiso.sh "${SYSTEM}" "${CHROOT_DIR}"
+	./cld-mkiso.sh "${SYSTEM}" "${CHROOT_DIR}" ignore
 
   
 # Logs.
