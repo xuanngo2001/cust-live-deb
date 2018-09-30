@@ -1,2 +1,5 @@
-# Cut using TAB delimiter
+# Cut using TAB delimiter.
 	cut -d$'\t' -f2
+
+# Remove 3rd column.
+	cut -d';' --complement -f3
