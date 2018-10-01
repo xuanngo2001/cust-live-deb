@@ -3,7 +3,7 @@
   * After this operation, 203 MB of additional disk space will be used.
   * Install wine64.
   * Test with Notepad++ 64-bit: wine notepad++.exe
-  * Disk size = 4443528K. Space Used = 223424K. Runtime = 00:00:00:13.
+  * Disk size = 4439744K. Space Used = 223420K. Runtime = 00:00:00:13.
   * The following NEW packages will be installed:
   ```bash
 fonts-wine libgphoto2-6 libgphoto2-port12 libpcap0.8 libwine
