@@ -3,6 +3,7 @@
 ./build-cld.sh home; ./build-cld.sh home_inspiron; mv cust-live-deb-64-*_????-??-??_*.iso /media/sf_shared/; ./build-cld.sh work_no_proxy
 
 
+./master-release.sh tmp
 echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh 
 
 (cd rebuild-mirrors-log/; ./create-clean-mirrors-log.sh ; scite clean-mirrors-log.txt)
