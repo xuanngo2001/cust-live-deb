@@ -44,3 +44,6 @@
 
 # Use repeat characters pattern: 4 time dot character.
 	echo bluray.mkv.jpg.rar | sed 's/.\{4\}.rar//'
+
+# Substitute TAB followed by zero or more occurrences of any character except TAB with nothing.
+	s/\t[^\t]*//	
