@@ -2,7 +2,7 @@
   * After this operation, 205 kB of additional disk space will be used.
   * Install php-zip.
   * This is required by: PHPExcel.
-  * Disk size = 3685860K. Space Used = 348K. Runtime = 00:00:00:03.
+  * Disk size = 3685904K. Space Used = 348K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 libzip4 php7.0-zip php-zip
