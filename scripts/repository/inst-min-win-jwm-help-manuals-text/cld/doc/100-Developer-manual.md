@@ -140,7 +140,7 @@ All scripts put in the directories below will be executed in the following order
 ==========================
 
 update-initramfs -u
-dpkg-reconfigure linux-image-3.2.0-2-686-pae  =>https://kernel-handbook.alioth.debian.org/ch-initramfs.html
+dpkg-reconfigure linux-image-3.2.0-2-686-pae  =>https://kernel-team.pages.debian.net/kernel-handbook/ch-initramfs.html
 
 
 * When using `update-initramfs`, specify the kernel version because the script use `uname -r` which is wrong if you upgrade from old to new kernel.
