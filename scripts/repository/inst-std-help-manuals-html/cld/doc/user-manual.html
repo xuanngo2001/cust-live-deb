@@ -1,11 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>User manual</title>
-  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
   <style type="text/css">
   /*
       Buttondown
@@ -459,10 +467,10 @@
   </style>
 </head>
 <body>
-<div id="header">
+<header id="title-block-header">
 <h1 class="title">User manual</h1>
-</div>
-<div id="TOC">
+</header>
+<nav id="TOC">
 <ul>
 <li><a href="#system-settings"><span class="toc-section-number">1</span> System settings</a></li>
 <li><a href="#applications"><span class="toc-section-number">2</span> Applications</a><ul>
@@ -503,8 +511,8 @@
 <li><a href="#mount-failed-structure-needs-cleaning"><span class="toc-section-number">8.14</span> Mount failed: Structure needs cleaning</a></li>
 </ul></li>
 </ul>
-</div>
-<div id="system-settings" class="section level1">
+</nav>
+<section id="system-settings" class="level1">
 <h1><span class="header-section-number">1</span> System settings</h1>
 <ul>
 <li>System Information:
@@ -559,10 +567,10 @@
 <li>Add your scripts in <code>/usr/local/cld/systemd/runlevel/before-shutdown/</code> if you want them to run <strong>before</strong> shutdown/reboot/restart.</li>
 </ul></li>
 </ul>
-</div>
-<div id="applications" class="section level1">
+</section>
+<section id="applications" class="level1">
 <h1><span class="header-section-number">2</span> Applications</h1>
-<div id="application-on-the-menu" class="section level2">
+<section id="application-on-the-menu" class="level2">
 <h2><span class="header-section-number">2.1</span> Application on the Menu</h2>
 <table>
 <thead>
@@ -620,8 +628,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div id="command-line-applications" class="section level2">
+</section>
+<section id="command-line-applications" class="level2">
 <h2><span class="header-section-number">2.2</span> Command line applications</h2>
 <table>
 <thead>
@@ -649,8 +657,8 @@
 </tr>
 </tbody>
 </table>
-</div>
-<div id="useful-commands" class="section level2">
+</section>
+<section id="useful-commands" class="level2">
 <h2><span class="header-section-number">2.3</span> Useful commands</h2>
 <pre><code># Count lines
 ls -1 * | wc  -l
@@ -680,10 +688,10 @@ grep --color -E &#39;pattern|$&#39; file
 
 # Download a single web page. In case robots.txt is disallowing, add -e robots=off
 wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
-</div>
-<div id="hot-keys" class="section level2">
+</section>
+<section id="hot-keys" class="level2">
 <h2><span class="header-section-number">2.4</span> Hot keys</h2>
-<div id="main-operations" class="section level3">
+<section id="main-operations" class="level3">
 <h3><span class="header-section-number">2.4.1</span> Main operations</h3>
 <ul>
 <li><code>Alt + Ctrl + Del</code>: Reboot.</li>
@@ -693,8 +701,8 @@ wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
 <li><code>⌘ + d</code>: Minimize all applications.</li>
 <li><code>⌘ + Esc</code>: Open main menu.</li>
 </ul>
-</div>
-<div id="operations-on-window" class="section level3">
+</section>
+<section id="operations-on-window" class="level3">
 <h3><span class="header-section-number">2.4.2</span> Operations on window</h3>
 <ul>
 <li><code>Alt + F4</code>: Close current application.</li>
@@ -705,7 +713,7 @@ wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
 <li><code>Ctrl + Alt + Up</code>: Maximize active window to the top half section of the screen.</li>
 <li><code>Ctrl + Alt + Down</code> : Maximize active window to the bottom half section of the screen.</li>
 </ul>
-<div id="move-active-window" class="section level4">
+<section id="move-active-window" class="level4">
 <h4><span class="header-section-number">2.4.2.1</span> Move active window</h4>
 <pre><code>Screen section layout
 +-----------+
@@ -726,17 +734,17 @@ wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
 <li><code>Ctrl + Alt + 2</code> : Move active window to the bottom-center of the screen.</li>
 <li><code>Ctrl + Alt + 3</code> : Move active window to the bottom-right section of the screen.</li>
 </ul>
-</div>
-</div>
-</div>
-<div id="install-new-applications" class="section level2">
+</section>
+</section>
+</section>
+<section id="install-new-applications" class="level2">
 <h2><span class="header-section-number">2.5</span> Install new applications</h2>
 <p><code>Cust-Live-Deb</code> is a Debian system. <a href="https://www.debian.org/distrib/packages">Therefore, all softwares available for Debian can be installed</a>.</p>
 <pre><code>apt-get update
 apt-get install PACKAGE_NAME</code></pre>
-</div>
-</div>
-<div id="persistence" class="section level1">
+</section>
+</section>
+<section id="persistence" class="level1">
 <h1><span class="header-section-number">3</span> Persistence</h1>
 <p>By default, <code>Cust-Live-Deb</code> supports <a href="https://debian-live.alioth.debian.org/live-manual/stable/manual/html/live-manual.en.html#556">persistence</a>. It allows your changes to persist after reboot, provided that you have a persistence image file in the root path of any partitions. That image file will hold all your changes. Here is how to create a persistent image file:</p>
 <pre><code># Create a persistence image file(e.g. 2048 MB).
@@ -756,16 +764,16 @@ tmpfs           1.5G     0  1.5G   0% /lib/live/mount/overlay
 /dev/sdb        2.4G  335M  2.0G  15% /lib/live/mount/persistence/sdb
 /dev/loop1      2.0G  285M  1.6G  16% /lib/live/mount/persistence/loop1</code></pre>
 <p>Note: Sometime, persistence image file is not recognized by <code>Cust-Live-Deb</code> due to bad format of your partition. You can remedy by reformatting: <code>mkfs.ext4 /dev/sdX</code>(Use different command for different filesystem).</p>
-<div id="disable-persistence" class="section level2">
+<section id="disable-persistence" class="level2">
 <h2><span class="header-section-number">3.1</span> Disable persistence</h2>
 <ul>
 <li>Ensure there is no <code>persistence</code> image file on the root path of any partitions. Or,</li>
 <li>On <strong>Boot Menu</strong>, press <code>Tab</code> key and delete <code>persistence</code> word. Or,</li>
 <li>When you <a href="#remaster-live-system">remastered the whole live system</a>, remove <code>persistence</code> words from <code>.../binary/isolinux/isolinux.cfg</code> file.</li>
 </ul>
-</div>
-</div>
-<div id="remaster-live-system" class="section level1">
+</section>
+</section>
+<section id="remaster-live-system" class="level1">
 <h1><span class="header-section-number">4</span> Remaster live system</h1>
 <pre><code># Copy the whole live system to a WORKING directory.
 cld-remaster.sh /path/to/WORKING/
@@ -775,7 +783,7 @@ cld-mkiso.sh /path/to/WORKING/
 
 # Burn HYBRID-ISO to USB key(e.g. /dev/sdX)
 cld-dd-usb.sh cust-live-deb_YYYY-MM-DD_HH.MM.SS.iso /dev/sdX</code></pre>
-<div id="tips" class="section level2">
+<section id="tips" class="level2">
 <h2><span class="header-section-number">4.1</span> Tips</h2>
 <pre><code># List USB key device available.
 ls -al /dev/disk/by-id/
@@ -785,55 +793,55 @@ ls -al /dev/disk/by-id/
   dd if=/dev/sdX of=/path/to/new.iso
 # To create a USB drive from an image.
   dd if=/path/to/iso of=/dev/sdX    </code></pre>
-</div>
-</div>
-<div id="upgrade" class="section level1">
+</section>
+</section>
+<section id="upgrade" class="level1">
 <h1><span class="header-section-number">5</span> Upgrade</h1>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Boot without persistence.</li>
 <li>cld-dd-usb.sh ISO to the main usb key.</li>
 <li>Mount main usb key spare partition to /tmp/kkk.</li>
 <li><code>cd /tmp/kkk &amp;&amp; cld-persistence.sh 2048</code></li>
 <li>Reboot.</li>
 </ol>
-</div>
-<div id="cust-live-deb-hangs" class="section level1">
+</section>
+<section id="cust-live-deb-hangs" class="level1">
 <h1><span class="header-section-number">6</span> Cust-Live-Deb hangs</h1>
-<div id="memory-is-max-out" class="section level2">
+<section id="memory-is-max-out" class="level2">
 <h2><span class="header-section-number">6.1</span> Memory is max out</h2>
-<p>When you got the following symptoms, check your memory usage(i.e. Conky on your desktop): * Google Chrome/Firefox hangs when opening a lot of tabs. * Eclipse is working fine and then suddenly, code is not highlighted. Or, when closing tab, Cancel/Save/Ok buttons are not shown.</p>
+<p>When you got the following symptoms, check your memory usage(i.e. Conky on your desktop): * Google Chrome/Firefox hangs when opening a lot of tabs. * Eclipse is working fine and then suddenly, code is not highlighted. Or, when closing tab, Cancel/Save/Ok buttons are not shown.</p>
 <p>If your memory is near max out, then the issues will be resolved by: * Add more physical memory. Or, * Add a swap partition:</p>
 <pre><code>  mkswap /dev/sdXX
   swapon /dev/sdXX</code></pre>
-</div>
-</div>
-<div id="boot-sequence" class="section level1">
+</section>
+</section>
+<section id="boot-sequence" class="level1">
 <h1><span class="header-section-number">7</span> Boot sequence</h1>
 <pre><code>~&gt;cat /root/cld/boot-sequence.txt 
 /root/cld/systemd/cld-systemd-after-boot.sh: Mon Jan  9 14:14:25 EST 2017
 /root/cld/jwmrc-startup.sh: Tue Jan 10 00:14:35 UTC 2017
 /root/cld/systemd/cld-systemd-before-shutdown-halt-reboot.sh: Mon Jan  9 19:15:50 EST 2017</code></pre>
-</div>
-<div id="help" class="section level1">
+</section>
+<section id="help" class="level1">
 <h1><span class="header-section-number">8</span> Help</h1>
-<div id="set-desktop-background-wallpaper" class="section level2">
+<section id="set-desktop-background-wallpaper" class="level2">
 <h2><span class="header-section-number">8.1</span> Set desktop background / wallpaper</h2>
 <pre><code>feh --bg-scale /path/to/your/image/background.jpg</code></pre>
-</div>
-<div id="set-keyboard" class="section level2">
+</section>
+<section id="set-keyboard" class="level2">
 <h2><span class="header-section-number">8.2</span> Set keyboard</h2>
 <pre><code># Set keymap to English
 setxkbmap en</code></pre>
-</div>
-<div id="access-files-of-your-smartphones-that-use-media-transfer-protocol-mtp" class="section level2">
+</section>
+<section id="access-files-of-your-smartphones-that-use-media-transfer-protocol-mtp" class="level2">
 <h2><span class="header-section-number">8.3</span> Access files of your smartphones that use Media Transfer Protocol (MTP)</h2>
 <pre><code># Connect your smartphone.
 mkdir /path/to/your/mount/directory/
 jmtpfs -o allow_other /path/to/your/mount/directory/
 # Enter your PIN to unlock your smartphone.
 cd /path/to/your/mount/directory/</code></pre>
-</div>
-<div id="find-what-video-card-am-i-using" class="section level2">
+</section>
+<section id="find-what-video-card-am-i-using" class="level2">
 <h2><span class="header-section-number">8.4</span> Find what video card am I using?</h2>
 <pre><code># Get the video card line.
 lspci | grep -iE &#39;vga|3d|2d&#39;
@@ -841,8 +849,8 @@ lspci | grep -iE &#39;vga|3d|2d&#39;
 lspci -v -s 01:00.0
 
 # Line &#39;Memory at d0000000&#39; show the total video memory size.</code></pre>
-</div>
-<div id="turn-on-wlan0-network-interface" class="section level2">
+</section>
+<section id="turn-on-wlan0-network-interface" class="level2">
 <h2><span class="header-section-number">8.5</span> Turn on wlan0 network interface</h2>
 <pre><code># Check network interfaces available.
 ls /sys/class/net
@@ -853,8 +861,8 @@ ip link set wlan0 up
 iwlist wlan0 scan
 
 # /etc/init.d/networking restart</code></pre>
-</div>
-<div id="setup-sound" class="section level2">
+</section>
+<section id="setup-sound" class="level2">
 <h2><span class="header-section-number">8.6</span> Setup sound</h2>
 <pre><code># Check if your sound card is detected.
 lspci | grep audio
@@ -879,8 +887,8 @@ speaker-test -twav -l1 -Dplug:surround51 -c6
                   
 # For 7.1:         
 speaker-test -twav -l1 -Dplug:surround71 -c8</code></pre>
-</div>
-<div id="sync-your-bios-clock-to-utc-or-local-time" class="section level2">
+</section>
+<section id="sync-your-bios-clock-to-utc-or-local-time" class="level2">
 <h2><span class="header-section-number">8.7</span> Sync your BIOS clock to UTC or local time</h2>
 <pre><code># Sync your system time.
 ntpd -gqc pool.ntp.org
@@ -894,20 +902,20 @@ hwclock --systohc --localtime
 
 # To see the time in UTC.
 date -u</code></pre>
-</div>
-<div id="use-uuid-in-fstab" class="section level2">
+</section>
+<section id="use-uuid-in-fstab" class="level2">
 <h2><span class="header-section-number">8.8</span> Use UUID in fstab</h2>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Find UUID of your hard drive by running <code>blkid</code>.</li>
 <li><p>Change device path to UUID in fstab as follows:</p>
-<pre><code># Change: /dev/sdb1 /media/critical ext4  defaults  0 0
-#  to
-UUID=&quot;81917b82-6a0f-4493-a657-6a0aa127bf41&quot; /media/critical ext4  defaults  0 0</code></pre></li>
+<pre><code> # Change: /dev/sdb1 /media/critical ext4  defaults  0 0
+ #  to
+ UUID=&quot;81917b82-6a0f-4493-a657-6a0aa127bf41&quot; /media/critical ext4  defaults  0 0</code></pre></li>
 </ol>
-</div>
-<div id="character-encodings" class="section level2">
+</section>
+<section id="character-encodings" class="level2">
 <h2><span class="header-section-number">8.9</span> Character encodings</h2>
-<p><code>more</code>, <code>cat</code>, <code>less</code>, <code>grep</code>, etc commands don't display the characters correctly(e.g. accents). They displays <code>�</code>. Your shell is using UTF-8 whereas your file is using another encoding.</p>
+<p><code>more</code>, <code>cat</code>, <code>less</code>, <code>grep</code>, etc commands don’t display the characters correctly(e.g. accents). They displays <code>�</code>. Your shell is using UTF-8 whereas your file is using another encoding.</p>
 <pre><code># Your shell encoding.
 echo $LANG
 
@@ -917,28 +925,28 @@ file YOUR_FILE
 # Convert your file to UTF-8.
 iconv --from-code ISO-8859-15 --to-code UTF-8 YOUR_FILE -o YOUR_FILE_as_utf8</code></pre>
 <p>For more details, see http://unix.stackexchange.com/a/78782</p>
-</div>
-<div id="port-numbers-opened" class="section level2">
+</section>
+<section id="port-numbers-opened" class="level2">
 <h2><span class="header-section-number">8.10</span> Port numbers opened</h2>
 <pre><code>netstat -tnlp
 # Reference: http://unix.stackexchange.com/a/108886</code></pre>
-</div>
-<div id="use-keyboard-to-move-mouse" class="section level2">
+</section>
+<section id="use-keyboard-to-move-mouse" class="level2">
 <h2><span class="header-section-number">8.11</span> Use keyboard to move mouse</h2>
 <p>Reference: https://en.wikipedia.org/wiki/Mouse_keys</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Run <code>setxkbmap -option keypad:pointerkeys</code>.</li>
 <li>Press <code>Left Shift</code>+<code>NumLock</code>.</li>
 <li>Press on numpad keys to move the mouse.</li>
 </ol>
-</div>
-<div id="find-and-play-videomusic" class="section level2">
+</section>
+<section id="find-and-play-videomusic" class="level2">
 <h2><span class="header-section-number">8.12</span> Find and play video/music</h2>
 <pre><code>mpv $(ilocate 2016 | igrep funky | igrep music | sort)
 mpv -playlist &lt;(ilocate 2016 | igrep funky | igrep music | sort)</code></pre>
 <p>Reference: http://thinkmoult.com/tech-tip-2-mplayer-play-music-recursively-in-a-directory/</p>
-</div>
-<div id="boot-logs" class="section level2">
+</section>
+<section id="boot-logs" class="level2">
 <h2><span class="header-section-number">8.13</span> Boot logs</h2>
 <p>https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs</p>
 <pre><code># Display logs from the current boot.
@@ -949,15 +957,15 @@ journalctl -p err -b
 
 # Display all without paging.
 journalclt --no-pager</code></pre>
-</div>
-<div id="mount-failed-structure-needs-cleaning" class="section level2">
+</section>
+<section id="mount-failed-structure-needs-cleaning" class="level2">
 <h2><span class="header-section-number">8.14</span> Mount failed: Structure needs cleaning</h2>
 <pre><code># Get the filesystem
 blkid /dev/sdi5
 
 # Use fsck matching your filesystem
 fsck.ext4 -y /dev/sdi5</code></pre>
-</div>
-</div>
+</section>
+</section>
 </body>
 </html>

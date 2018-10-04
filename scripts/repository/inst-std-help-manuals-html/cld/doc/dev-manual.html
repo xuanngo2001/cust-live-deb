@@ -1,11 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Developer manual</title>
-  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
   <style type="text/css">
   /*
       Buttondown
@@ -459,10 +467,10 @@
   </style>
 </head>
 <body>
-<div id="header">
+<header id="title-block-header">
 <h1 class="title">Developer manual</h1>
-</div>
-<div id="TOC">
+</header>
+<nav id="TOC">
 <ul>
 <li><a href="#create-hybrid-iso"><span class="toc-section-number">1</span> Create hybrid ISO</a></li>
 <li><a href="#add-remove-applications"><span class="toc-section-number">2</span> Add / Remove applications</a><ul>
@@ -501,10 +509,10 @@
 <li><a href="#dump"><span class="toc-section-number">14.11</span> Dump</a></li>
 </ul></li>
 </ul>
-</div>
-<div id="create-hybrid-iso" class="section level1">
+</nav>
+<section id="create-hybrid-iso" class="level1">
 <h1><span class="header-section-number">1</span> Create hybrid ISO</h1>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Clone the git repository(e.g. <code>git clone https://github.com/limelime/cust-live-deb.git</code>)</li>
 <li>Import the wiki to <code>./scripts/settings/doc/</code>.</li>
 <li>Download binary files as described in <code>./scripts/settings/binary/to-download.sh</code>.</li>
@@ -516,15 +524,15 @@
 <li>std: Standard system includes minimum system + common applications.</li>
 <li>all: Will execute all scripts in <code>./scripts/repository/</code>.</li>
 </ul></li>
-<li><strong>DEB_REPO_URL</strong> is the URL to the Debian repository(e.g. http://ftp.debian.org/debian/).</li>
+<li><strong>DEB_REPO_URL</strong> is the URL to the Debian repository(e.g. http://ftp.debian.org/debian/).</li>
 </ul></li>
 <li><code>cust-live-deb-64-&lt;SYSTEM&gt;_YYYY-MM-DD_HH.MM.SS.iso</code> will be created.</li>
 </ol>
-</div>
-<div id="add-remove-applications" class="section level1">
+</section>
+<section id="add-remove-applications" class="level1">
 <h1><span class="header-section-number">2</span> Add / Remove applications</h1>
 <p>Installation scripts are residing in <code>./scripts/repository/</code> directory.</p>
-<div id="script-name-nomenclature" class="section level2">
+<section id="script-name-nomenclature" class="level2">
 <h2><span class="header-section-number">2.1</span> Script name nomenclature</h2>
 <ul>
 <li>Script name must starts with <code>inst-</code> and end with <code>.sh</code>.
@@ -539,8 +547,8 @@
 </ul></li>
 <li>Suffix <code>-bpo</code> if your script is using the backports repository(e.g. <code>deb http://http.debian.net/debian jessie-backports main</code>).</li>
 </ul>
-</div>
-<div id="add-new-script" class="section level2">
+</section>
+<section id="add-new-script" class="level2">
 <h2><span class="header-section-number">2.2</span> Add new script</h2>
 <ul>
 <li><code>cd scripts/repository</code></li>
@@ -550,42 +558,42 @@
 <li>Before any script is run, the whole <code>./scripts/</code> directory is copied to <code>/root/</code> of the chroot environment.</li>
 <li>Write your script as if you are located at <code>/root/scripts/</code>.</li>
 </ul>
-</div>
-<div id="scripts-to-exclude" class="section level2">
+</section>
+<section id="scripts-to-exclude" class="level2">
 <h2><span class="header-section-number">2.3</span> Scripts to exclude</h2>
 <p>To exclude a specific script from the installation, add its name in <code>./scripts/scripts-ex.lst</code>, 1 per line.</p>
-</div>
-<div id="sources.list" class="section level2">
+</section>
+<section id="sources.list" class="level2">
 <h2><span class="header-section-number">2.4</span> Sources.list</h2>
 <pre><code># cat sources-PACKAGE_NAME.list &gt;&gt; &quot;${GV_SOURCES_LIST}&quot;
 cat sources-aptly.list &gt;&gt; &quot;${GV_SOURCES_LIST}&quot;</code></pre>
-</div>
-<div id="application-association-with-file-extension" class="section level2">
+</section>
+<section id="application-association-with-file-extension" class="level2">
 <h2><span class="header-section-number">2.5</span> Application association with file extension</h2>
 <p>Source: https://wiki.debian.org/MIME#Application_association</p>
 <p>The system-wide association between MIME types and applications is generated from the <code>*.desktop</code> files provided by the packages. The <code>.desktop</code> files are stored in the <code>/usr/share/applications/</code> directory and subdirectories, and the <code>update-desktop-database</code> parses their information and generates the <code>/usr/share/applications/mimeinfo.cache</code> file, that specifies for each MIME type the valid <code>.desktop</code> files (hence applications).</p>
-<p>The <code>mimeinfo.cache</code> is basically a raw reverse cache for the <code>.desktop</code> information. There is no way to define priorities in it. To be able to specify default applications, a <code>mimeapps.list</code> file (previously named <code>defaults.list</code> up to debian 5) must be created. It can be system-wide (in <code>/usr/share/applications</code> or a subdirectory) or user-specific (in <code>$HOME/.local/share/applications</code>). A heuristic is used by glib (FIXME: what about KDE?) to use the appropriate <code>mimeapps.list</code> file according to the user environment (Gnome evince vs. KDE Okular for PDF files for instance). The <code>mimeapps.list</code> file follows the same syntax as <code>mimeinfo.cache</code>, i.e:</p>
+<p>The <code>mimeinfo.cache</code> is basically a raw reverse cache for the <code>.desktop</code> information. There is no way to define priorities in it. To be able to specify default applications, a <code>mimeapps.list</code> file (previously named <code>defaults.list</code> up to debian 5) must be created. It can be system-wide (in <code>/usr/share/applications</code> or a subdirectory) or user-specific (in <code>$HOME/.local/share/applications</code>). A heuristic is used by glib (FIXME: what about KDE?) to use the appropriate <code>mimeapps.list</code> file according to the user environment (Gnome evince vs. KDE Okular for PDF files for instance). The <code>mimeapps.list</code> file follows the same syntax as <code>mimeinfo.cache</code>, i.e:</p>
 <pre><code>[Default Applications]
 application/pdf=evince.desktop
 image/png=eog.desktop</code></pre>
-<ol style="list-style-type: decimal">
-<li>Find your application's <code>*.desktop</code> in <code>/usr/share/applications/</code> and copy the <strong>MimeType</strong> value.</li>
+<ol type="1">
+<li>Find your application’s <code>*.desktop</code> in <code>/usr/share/applications/</code> and copy the <strong>MimeType</strong> value.</li>
 <li>Ensure that your application mine type is the same as your file mine type.(<code>file --mime-type YOUR_FILE</code>).</li>
 <li><p>In <code>$HOME/.local/share/applications/mimeapps.list</code>, paste <strong>MimeType</strong> value under <strong>[Default Applications]</strong> section.</p>
-<pre><code>[Default Applications]
-text/plain=SciTE.desktop</code></pre></li>
+<pre><code> [Default Applications]
+ text/plain=SciTE.desktop</code></pre></li>
 </ol>
 <p>Register your own extension: http://stackoverflow.com/questions/30931/register-file-extensions-mime-types-in-linux</p>
-</div>
-<div id="preseed-configuration-values" class="section level2">
+</section>
+<section id="preseed-configuration-values" class="level2">
 <h2><span class="header-section-number">2.6</span> Preseed configuration values</h2>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Manually configure interactively first.</li>
 <li>Get the configuration values: <code>debconf-get-selections | grep &quot;zfs&quot; &gt; zfs-dkms.seed</code></li>
 <li>Feed the configuration values in your install script, before the install line: <code>debconf-set-selections -v zfs-dkms.seed</code></li>
 </ol>
-</div>
-<div id="debug-installation-script" class="section level2">
+</section>
+<section id="debug-installation-script" class="level2">
 <h2><span class="header-section-number">2.7</span> Debug installation script</h2>
 <pre><code>./in-chroot /media/imdb/chroot
 yes | cp -a /etc/apt/sources.list.tmp /etc/apt/sources.list
@@ -593,9 +601,9 @@ apt-get update
 cd ~/scripts 
 source load-global-vars-funcs.sh
 RUN YOUR SCRIPT.</code></pre>
-</div>
-</div>
-<div id="clean-rebuild" class="section level1">
+</section>
+</section>
+<section id="clean-rebuild" class="level1">
 <h1><span class="header-section-number">3</span> Clean rebuild</h1>
 <pre><code>chmod +x ../cust-live-deb.wiki/*.sh
 chmod +x init-chmod-script.sh
@@ -611,8 +619,8 @@ cd scripts/repository/inst-std-xtra-opw-drush8-phar
   mv drush.phar drush-8.1.17.phar
                                                                       
 ./build-cld.sh work_no_proxy</code></pre>
-</div>
-<div id="cust-live-deb-specific" class="section level1">
+</section>
+<section id="cust-live-deb-specific" class="level1">
 <h1><span class="header-section-number">4</span> Cust-Live-Deb specific</h1>
 <p>Put all Cust-Live-Deb specific codes in <code>/usr/local/cld/</code> so that all users can use it. The idea is to mirror the same structure of <code>/usr/local/cld/</code> within your install script folder, put your specialized files and then copy over <code>/usr/local/cld/</code>. This will make the process self-contain within the install script folder.</p>
 <pre><code>&gt;cld-dirs-create.sh 
@@ -627,35 +635,35 @@ Error: Action:  is unknown. Aborted!
     bashrc          =&gt; ./cld/bashrc.d                           [*.sh will be sourced]
     after-boot      =&gt; ./cld/systemd/runlevel/after-boot        [*.sh will be executed after boot]
     before-shutdown =&gt; ./cld/systemd/runlevel/before-shutdown   [*.sh will be executed before shutdown/reboot/restart]</code></pre>
-</div>
-<div id="cld-scripts-execution-order" class="section level1">
+</section>
+<section id="cld-scripts-execution-order" class="level1">
 <h1><span class="header-section-number">5</span> CLD scripts execution order</h1>
 <p>All scripts put in the directories below will be executed in the following order:</p>
 <pre><code>/usr/local/cld/systemd/runlevel/after-boot/
 /usr/local/cld/app/jwm/bootstrap/
 /usr/local/cld/systemd/runlevel/before-shutdown/
    </code></pre>
-</div>
-<div id="how-to-upgrade-kernel" class="section level1">
+</section>
+<section id="how-to-upgrade-kernel" class="level1">
 <h1><span class="header-section-number">6</span> How to upgrade kernel</h1>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>Ensure <code>./cld-mkiso.sh &quot;${SYSTEM}&quot; &quot;${CHROOT_DIR}&quot; ignore</code> is in <code>cld.sh</code>. To forgo the following error:</p>
-<pre><code>libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file &#39;/lib/modules/4.6.0-0.bpo.1-amd64/modules.dep.bin&#39;
-modinfo: ERROR: Module alias vboxguest not found.</code></pre></li>
+<pre><code> libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file &#39;/lib/modules/4.6.0-0.bpo.1-amd64/modules.dep.bin&#39;
+ modinfo: ERROR: Module alias vboxguest not found.</code></pre></li>
 <li>Run <code>./cld.sh work http://localhost/aptly-repo/jessie-main</code>. The log for zfs and virtualbox will show error when trying to fetch for the version but that is fine.</li>
 <li>Load the new ISO.</li>
 <li><p>Re-run <code>./cld.sh work http://localhost/aptly-repo/jessie-main</code>. The log for zfs and virtualbox should not show any error. The versions should be displayed.</p></li>
 </ol>
 <p>==========================</p>
-<p>update-initramfs -u dpkg-reconfigure linux-image-3.2.0-2-686-pae =&gt;https://kernel-handbook.alioth.debian.org/ch-initramfs.html</p>
+<p>update-initramfs -u dpkg-reconfigure linux-image-3.2.0-2-686-pae =&gt;https://kernel-team.pages.debian.net/kernel-handbook/ch-initramfs.html</p>
 <ul>
 <li>When using <code>update-initramfs</code>, specify the kernel version because the script use <code>uname -r</code> which is wrong if you upgrade from old to new kernel.</li>
 <li>Use <code>update-initramfs</code> instead of <code>mkinitramfs</code>. <code>update-initramfs</code> does distro house keep for you.</li>
 </ul>
-</div>
-<div id="distribution-upgrade" class="section level1">
+</section>
+<section id="distribution-upgrade" class="level1">
 <h1><span class="header-section-number">7</span> Distribution upgrade</h1>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Update scripts at <code>/aptly/mirrors.d</code></li>
 <li>Update <code>./inst-min-con-00-apt-custom-repository/sourceslist-live.sh</code></li>
 <li>Update <code>./inst-min-con-00-apt-custom-repository/sourceslist-temporary.sh</code></li>
@@ -663,8 +671,8 @@ modinfo: ERROR: Module alias vboxguest not found.</code></pre></li>
 <li>Update line <code>debootstrap --no-check-gpg ...</code> from <code>cust-live-deb/cld-debootstrap.sh</code>.</li>
 <li>Find <code>'jessie-backports'</code> and replace with next distro name.</li>
 </ol>
-</div>
-<div id="debug-debian-package-dependency" class="section level1">
+</section>
+<section id="debug-debian-package-dependency" class="level1">
 <h1><span class="header-section-number">8</span> Debug Debian package dependency</h1>
 <p>Lower priority of packages from other repositories. Add the following in <code>.../scripts/repository/inst-min-con-01-apt/preferences-local-repository</code></p>
 <pre><code># https://unix.stackexchange.com/a/118610
@@ -676,8 +684,8 @@ Pin-Priority: 1
 Package: *
 Pin: release a=stretch-backports
 Pin-Priority: 1  </code></pre>
-</div>
-<div id="jwm-menu" class="section level1">
+</section>
+<section id="jwm-menu" class="level1">
 <h1><span class="header-section-number">9</span> JWM menu</h1>
 <p>Check https://specifications.freedesktop.org/menu-spec/latest/apa.html</p>
 <pre><code>Terminal
@@ -690,44 +698,44 @@ Debian: Debian generated menu
 --------
 Shutdown</code></pre>
 <p>Icon per application can found in it menu definition file located at <code>/usr/share/menu</code>.</p>
-<div id="add-icon-in-jwm-menu" class="section level2">
+<section id="add-icon-in-jwm-menu" class="level2">
 <h2><span class="header-section-number">9.1</span> Add icon in JWM menu</h2>
 <p>Size of icons should be 32x32.</p>
 <p>Icons repository: https://icons8.com/</p>
 <p>Use <code>inst-std-accessories-scite</code> as reference.</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Find menu file in <code>/usr/share/menu/</code></li>
 <li>Copy <code>jwmrc-menus-acc-scite.xml</code> to <code>jwmrc-menus-&lt;category&gt;-&lt;packagename&gt;.xml</code></li>
 <li>Edit <code>jwmrc-menus-&lt;category&gt;-&lt;packagename&gt;.xml</code> with info found in menu file.</li>
 <li><p>Edit install script. E.g.:</p>
-<pre><code># Insert Blender 3D menu in Graphics
-sed -i &quot;/Graphics\&quot;&gt;/ r jwmrc-menus-graphics-blender.xml&quot; &quot;${GV_CLD_ROOT_DIR}/jwmrc-menus.xml&quot;</code></pre></li>
+<pre><code> # Insert Blender 3D menu in Graphics
+ sed -i &quot;/Graphics\&quot;&gt;/ r jwmrc-menus-graphics-blender.xml&quot; &quot;${GV_CLD_ROOT_DIR}/jwmrc-menus.xml&quot;</code></pre></li>
 </ol>
 <p>Paths where you can find more icons:</p>
 <pre><code>/usr/share/icons/
 /usr/share/pixmaps/</code></pre>
-</div>
-</div>
-<div id="systemd" class="section level1">
+</section>
+</section>
+<section id="systemd" class="level1">
 <h1><span class="header-section-number">10</span> Systemd</h1>
 <p>https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units</p>
 <pre><code>systemctl list-unit-files --no-page | grep swap
 systemctl cat swap.target</code></pre>
 <p>Unit files located at /etc/systemd/system.</p>
-</div>
-<div id="virtual-packages" class="section level1">
+</section>
+<section id="virtual-packages" class="level1">
 <h1><span class="header-section-number">11</span> Virtual packages</h1>
 <ul>
 <li>https://www.debian.org/doc/packaging-manuals/virtual-package-names-list.txt</li>
 </ul>
-</div>
-<div id="useful-commands" class="section level1">
+</section>
+<section id="useful-commands" class="level1">
 <h1><span class="header-section-number">12</span> Useful commands</h1>
 <pre><code>dpkg --print-architecture
 dpkg --print-foreign-architectures
 apt list --upgradable</code></pre>
-</div>
-<div id="x-server" class="section level1">
+</section>
+<section id="x-server" class="level1">
 <h1><span class="header-section-number">13</span> X Server</h1>
 <p>https://wiki.archlinux.org/index.php/Display_Power_Management_Signaling</p>
 <ul>
@@ -740,23 +748,23 @@ apt list --upgradable</code></pre>
 <li><code>xset dpms force suspend</code>: Suspend screen</li>
 <li><code>xset q</code>: Display current settings.</li>
 </ul>
-</div>
-<div id="help" class="section level1">
+</section>
+<section id="help" class="level1">
 <h1><span class="header-section-number">14</span> Help</h1>
-<div id="list-of-fonts" class="section level2">
+<section id="list-of-fonts" class="level2">
 <h2><span class="header-section-number">14.1</span> List of fonts</h2>
 <p>https://wiki.debian.org/Fonts</p>
 <pre><code># List all fonts available.
 fc-list</code></pre>
-</div>
-<div id="get-version-of-zfs" class="section level2">
+</section>
+<section id="get-version-of-zfs" class="level2">
 <h2><span class="header-section-number">14.2</span> Get version of zfs</h2>
 <pre><code>dkms status
 # OR
 ZFS_VERSION=$(modinfo zfs | grep ^version | tr -s &#39; &#39;)
 echo ${ZFS_VERSION}</code></pre>
-</div>
-<div id="manually-test-the-installation-script-within-chroot-environment" class="section level2">
+</section>
+<section id="manually-test-the-installation-script-within-chroot-environment" class="level2">
 <h2><span class="header-section-number">14.3</span> Manually test the installation script within chroot environment</h2>
 <pre><code>./in-chroot.sh
 apt-get update
@@ -764,8 +772,8 @@ cd /root/scripts/
 cp repository/YOUR_SCRIPT.sh .
 source load-global-vars-funcs.sh
 ./YOUR_SCRIPT.sh</code></pre>
-</div>
-<div id="find-keyboard-key-you-can-map-in-.jwmrc" class="section level2">
+</section>
+<section id="find-keyboard-key-you-can-map-in-.jwmrc" class="level2">
 <h2><span class="header-section-number">14.4</span> Find keyboard key you can map in .jwmrc</h2>
 <pre><code>~&gt;xmodmap -pke | grep -iE &#39;escape|return&#39;
 keycode   9 = Escape NoSymbol Escape
@@ -775,44 +783,44 @@ keycode  36 = Return NoSymbol Return</code></pre>
 &lt;Key key=&quot;Return&quot;&gt;select&lt;/Key&gt;
 &lt;Key key=&quot;Escape&quot;&gt;escape&lt;/Key&gt;
 ...</code></pre>
-</div>
-<div id="debian-default-jwm-menu" class="section level2">
+</section>
+<section id="debian-default-jwm-menu" class="level2">
 <h2><span class="header-section-number">14.5</span> Debian default JWM menu</h2>
 <p>The default Debian JWM menu is located at <code>/etc/jwm/debian-menu</code>. It is auto-generated when you add a new application. You can copy the execution command line and add it in your installation script.</p>
-</div>
-<div id="preseed-debian-package-answers" class="section level2">
+</section>
+<section id="preseed-debian-package-answers" class="level2">
 <h2><span class="header-section-number">14.6</span> Preseed Debian package answers</h2>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Install the package and answer all the question manually.</li>
 <li>Get the answers by running <code>debconf-get-selections | grep &quot;YOUR_PACKAGE_NAME &gt; YOUR_ANSWERS.seed&quot;</code>. Note: Answers are not always good.</li>
 <li>Seed the answers before installing the package: <code>debconf-set-selections -v YOUR_ANSWERS.seed</code>.</li>
 <li>Install your package.</li>
 </ol>
 <p>https://wiki.debian.org/Multistrap/Environment</p>
-</div>
-<div id="hostname-name-or-service-not-known" class="section level2">
+</section>
+<section id="hostname-name-or-service-not-known" class="level2">
 <h2><span class="header-section-number">14.7</span> hostname: Name or service not known</h2>
 <pre><code>hostname --fqdn</code></pre>
-</div>
-<div id="disable-debconf-user-interface" class="section level2">
+</section>
+<section id="disable-debconf-user-interface" class="level2">
 <h2><span class="header-section-number">14.8</span> Disable debconf user interface</h2>
-<p>Don't use the following command line to disable debconf user interface:</p>
+<p>Don’t use the following command line to disable debconf user interface:</p>
 <pre><code>export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true</code></pre>
-<p>If your preseed file answer all questions, then the user interface shouldn't pop up.</p>
-</div>
-<div id="debug-debconf-user-interface" class="section level2">
+<p>If your preseed file answer all questions, then the user interface shouldn’t pop up.</p>
+</section>
+<section id="debug-debconf-user-interface" class="level2">
 <h2><span class="header-section-number">14.9</span> Debug debconf user interface</h2>
 <pre><code># List all questions and debug information on the command prompt.
 export DEBCONF_DEBUG=developer
 
 # Press Alt-F4 to switch from the debconf user interface to the command prompt. </code></pre>
-</div>
-<div id="debian-apt" class="section level2">
+</section>
+<section id="debian-apt" class="level2">
 <h2><span class="header-section-number">14.10</span> Debian APT</h2>
 <pre><code># Check available package versions
 apt-cache policy &lt;package&gt;</code></pre>
-</div>
-<div id="dump" class="section level2">
+</section>
+<section id="dump" class="level2">
 <h2><span class="header-section-number">14.11</span> Dump</h2>
 <pre><code># Set root password to empty string.
 echo &quot;
@@ -820,7 +828,7 @@ USE mysql;
 UPDATE user SET Password = PASSWORD(&#39;&#39;) where User = &#39;root&#39;;
 FLUSH PRIVILEGES;
 &quot; | mysql -u root -prootpasswd</code></pre>
-</div>
-</div>
+</section>
+</section>
 </body>
 </html>
