@@ -15,7 +15,7 @@
   * After this operation, 1,577 kB of additional disk space will be used.
   * After this operation, 66.6 kB of additional disk space will be used.
   * Install firmwares.
-  * Disk size = 987772K. Space Used = 165440K. Runtime = 00:00:01:20.
+  * Disk size = 987832K. Space Used = 165436K. Runtime = 00:00:01:56.
   * The following NEW packages will be installed:
   ```bash
 atmel-firmware bluez-firmware firmware-amd-graphics firmware-atheros firmware-bnx2
