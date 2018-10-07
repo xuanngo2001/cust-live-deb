@@ -1,6 +1,11 @@
-  # Passing commands to sqlite prompt
-  echo -e '.separator "@"\n.import csv_file.csv tablename' | sqlite example.db
-  
-  # Format table output.
-  sqlite3 -cmd ".width 13 15" -column -header example.db "SELECT * tablename;"
-  
+# Passing commands to sqlite prompt
+	echo -e '.separator "@"\n.import csv_file.csv tablename' | sqlite example.db
+
+# Format table output.
+	sqlite3 -cmd ".width 13 15" -column -header example.db "SELECT * tablename;"
+
+# Describe TABLENAME.
+	.schema TABLENAME
+
+# Show all tables.
+	.tables
