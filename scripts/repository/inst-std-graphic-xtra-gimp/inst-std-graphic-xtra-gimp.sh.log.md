@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-gimp.sh ...
   * After this operation, 204 MB of additional disk space will be used.
   * Install gimp.
-  * Disk size = 2348484K. Space Used = 236976K. Runtime = 00:00:02:09.
+  * Disk size = 2348572K. Space Used = 236976K. Runtime = 00:00:02:04.
   * The following NEW packages will be installed:
   ```bash
 gimp gimp-data libaa1 libamd2 libavcodec57
