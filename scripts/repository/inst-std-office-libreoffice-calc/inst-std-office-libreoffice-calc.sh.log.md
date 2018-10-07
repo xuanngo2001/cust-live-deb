@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-office-libreoffice-calc.sh ...
   * After this operation, 304 MB of additional disk space will be used.
   * Install libreoffice-calc: 6.1.2.1 10(Build:1).
-  * Disk size = 3262912K. Space Used = 398468K. Runtime = 00:00:02:14.
+  * Disk size = 3262920K. Space Used = 398464K. Runtime = 00:00:02:18.
   * The following NEW packages will be installed:
   ```bash
 coinor-libcbc3 coinor-libcgl1 coinor-libclp1 coinor-libcoinmp1v5 coinor-libcoinutils3v5

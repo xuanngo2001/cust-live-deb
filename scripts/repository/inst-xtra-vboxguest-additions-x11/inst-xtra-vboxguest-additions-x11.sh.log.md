@@ -5,7 +5,7 @@
   * After this operation, 16.3 MB of additional disk space will be used.
   * Install virtualbox-guest-x11 to have full screen and cross copy and paste.
   * VirtualBox guest additions installed: version: 5.2.18_Debian r123745.
-  * Disk size = 4116672K. Space Used = 212636K. Runtime = 00:00:05:13.
+  * Disk size = 4116684K. Space Used = 212636K. Runtime = 00:00:05:27.
   * The following NEW packages will be installed:
   ```bash
 binutils dkms gcc gcc-6 libasan3

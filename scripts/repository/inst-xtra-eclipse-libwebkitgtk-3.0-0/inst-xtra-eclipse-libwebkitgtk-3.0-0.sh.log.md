@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-eclipse-libwebkitgtk-3.0-0.sh ...
   * After this operation, 57.1 MB of additional disk space will be used.
   * Install libwebkitgtk-3.0-0.
-  * Disk size = 3780832K. Space Used = 71288K. Runtime = 00:00:00:31.
+  * Disk size = 3780844K. Space Used = 71288K. Runtime = 00:00:00:20.
   * The following NEW packages will be installed:
   ```bash
 aspell aspell-en dictionaries-common emacsen-common libaspell15
