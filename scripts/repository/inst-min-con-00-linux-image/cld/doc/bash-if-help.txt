@@ -63,3 +63,12 @@
 		printf 'Warning: Skip %s.\n' 'dvdrip: ffmpeg command not found'
 		exit 0;
 	fi
+
+# Interactive mode.	
+	echo -n 'Are you sure to delete the above files? [Y/N] '
+	read delete_confirm
+	if [ "${delete_confirm}" != "Y" ]; then
+		echo "OUT! Did nothing."
+		exit 0
+	fi
+
