@@ -12,6 +12,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install gpaint.
 	apt-get -y install gpaint
 
+# Insert Gpaint menu in Graphics
+	sed -i "/Graphics\">/ r jwmrc-menus-graphics-gpaint.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 	echo "${GV_LOG} * Install gpaint."
