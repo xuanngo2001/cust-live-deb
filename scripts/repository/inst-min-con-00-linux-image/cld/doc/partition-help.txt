@@ -1,0 +1,7 @@
+mkfs.ext4 /dev/sdh
+
+# e2label dev/sda1 ROOT
+OR
+# tune2fs –L ROOT_PART /dev/sda1
+
+ntfslabel /dev/sda5 NTFS_DIR
