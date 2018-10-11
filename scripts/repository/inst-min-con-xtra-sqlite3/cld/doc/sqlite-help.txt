@@ -9,3 +9,12 @@
 
 # Show all tables.
 	.tables
+
+# Table and index creation.
+	CREATE TABLE Shelf (  uid            INTEGER PRIMARY KEY AUTOINCREMENT,
+	                      canonical_path TEXT NOT NULL,
+	                      filename       TEXT NOT NULL,
+	                      last_modified  INTEGER NOT NULL,
+	                      hash           TEXT,
+	                      comment        TEXT);
+	CREATE INDEX shelf_hash ON Shelf (hash);
