@@ -4,4 +4,5 @@ cat home.all.txt | grep "${lastest_date}" > home.latest.txt
 
 cat home.latest.txt | cut -d';' -f2,5,6 > home.latest.csv
 
-libreoffice home.latest.csv&
+libreoffice_bin_path=$(whereis libreoffice | cut -d' ' -f2)
+"${libreoffice_bin_path}" home.latest.csv&
