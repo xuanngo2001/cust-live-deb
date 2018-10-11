@@ -12,6 +12,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install geany.
 	apt-get -y install geany
 
+# Insert geany in Accessories menu.
+	sed -i "/Accessories\">/ r jwmrc-menus-acc-geany.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 	echo "${GV_LOG} * Install geany."
