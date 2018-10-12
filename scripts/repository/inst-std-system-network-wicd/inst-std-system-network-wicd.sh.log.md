@@ -4,7 +4,7 @@
   * Insert Wicd menu in Network.
   * Set wicd to run on JWM startup.
   * Log at /var/log/wicd/wicd.log.
-  * Disk size = 3522136K. Space Used = 62976K. Runtime = 00:00:00:51.
+  * Disk size = 3522140K. Space Used = 62972K. Runtime = 00:00:00:55.
   * The following NEW packages will be installed:
   ```bash
 gir1.2-glib-2.0 libgirepository-1.0-1 libnl-3-200 libnl-genl-3-200 libpython2.7-minimal
