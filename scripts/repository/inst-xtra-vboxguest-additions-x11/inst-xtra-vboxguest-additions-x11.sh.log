@@ -38,7 +38,7 @@ Get:14 http://localhost/aptly-repo/master_stretch-backports-main stretch-backpor
 Get:15 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-kbuild-4.18 amd64 4.18.6-1~bpo9+1 [850 kB]
 Get:16 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.18.0-0.bpo.1-amd64 amd64 4.18.6-1~bpo9+1 [473 kB]
 Get:17 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-amd64 amd64 4.18+98~bpo9+1 [6,698 B]
-Fetched 24.3 MB in 5s (4,207 kB/s)
+Fetched 24.3 MB in 10s (2,272 kB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -60,18 +60,18 @@ The following NEW packages will be installed:
   libgcc-6-dev libitm1 liblsan0 libmpx2 libtsan0 libubsan0 linux-libc-dev make
   patch
 0 upgraded, 18 newly installed, 0 to remove and 18 not upgraded.
-Need to get 4,461 kB/18.3 MB of archives.
+Need to get 4,464 kB/18.3 MB of archives.
 After this operation, 88.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gcc amd64 4:6.3.0-4 [5,196 B]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 make amd64 4.1-9.1 [302 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 patch amd64 2.7.5-1+deb9u1 [112 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dkms all 2.3-2 [74.8 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc-dev-bin amd64 2.24-11+deb9u3 [258 kB]
-Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 linux-libc-dev amd64 4.9.110-1 [1,347 kB]
+Get:6 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 linux-libc-dev amd64 4.9.110-3+deb9u6 [1,351 kB]
 Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc6-dev amd64 2.24-11+deb9u3 [2,361 kB]
-Fetched 4,461 kB in 5s (859 kB/s)
+Fetched 4,464 kB in 10s (440 kB/s)
 Selecting previously unselected package binutils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54511 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55031 files and directories currently installed.)
 Preparing to unpack .../00-binutils_2.28-5_amd64.deb ...
 Unpacking binutils (2.28-5) ...
 Selecting previously unselected package libcc1-0:amd64.
@@ -120,8 +120,8 @@ Selecting previously unselected package libc-dev-bin.
 Preparing to unpack .../15-libc-dev-bin_2.24-11+deb9u3_amd64.deb ...
 Unpacking libc-dev-bin (2.24-11+deb9u3) ...
 Selecting previously unselected package linux-libc-dev:amd64.
-Preparing to unpack .../16-linux-libc-dev_4.9.110-1_amd64.deb ...
-Unpacking linux-libc-dev:amd64 (4.9.110-1) ...
+Preparing to unpack .../16-linux-libc-dev_4.9.110-3+deb9u6_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.9.110-3+deb9u6) ...
 Selecting previously unselected package libc6-dev:amd64.
 Preparing to unpack .../17-libc6-dev_2.24-11+deb9u3_amd64.deb ...
 Unpacking libc6-dev:amd64 (2.24-11+deb9u3) ...
@@ -131,7 +131,7 @@ Setting up libasan3:amd64 (6.3.0-18+deb9u1) ...
 Setting up libcilkrts5:amd64 (6.3.0-18+deb9u1) ...
 Setting up libubsan0:amd64 (6.3.0-18+deb9u1) ...
 Setting up libtsan0:amd64 (6.3.0-18+deb9u1) ...
-Setting up linux-libc-dev:amd64 (4.9.110-1) ...
+Setting up linux-libc-dev:amd64 (4.9.110-3+deb9u6) ...
 Setting up liblsan0:amd64 (6.3.0-18+deb9u1) ...
 Setting up libmpx2:amd64 (6.3.0-18+deb9u1) ...
 Setting up patch (2.7.5-1+deb9u1) ...
@@ -158,7 +158,7 @@ The following NEW packages will be installed:
 Need to get 0 B/10.4 MB of archives.
 After this operation, 57.2 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-6-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56518 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 57038 files and directories currently installed.)
 Preparing to unpack .../linux-compiler-gcc-6-x86_4.18.6-1~bpo9+1_amd64.deb ...
 Unpacking linux-compiler-gcc-6-x86 (4.18.6-1~bpo9+1) ...
 Selecting previously unselected package linux-headers-4.18.0-0.bpo.1-common.
@@ -188,9 +188,9 @@ After this operation, 16.3 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 virtualbox-guest-dkms all 5.2.18-dfsg-2~bpo9+1 [609 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 virtualbox-guest-utils amd64 5.2.18-dfsg-2~bpo9+1 [449 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 virtualbox-guest-x11 amd64 5.2.18-dfsg-2~bpo9+1 [1,072 kB]
-Fetched 2,130 kB in 0s (29.6 MB/s)
+Fetched 2,130 kB in 5s (404 kB/s)
 Selecting previously unselected package libnotify-bin.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73445 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73965 files and directories currently installed.)
 Preparing to unpack .../libnotify-bin_0.7.7-2_amd64.deb ...
 Unpacking libnotify-bin (0.7.7-2) ...
 Selecting previously unselected package virtualbox-guest-dkms.
@@ -239,4 +239,4 @@ Processing triggers for systemd (232-25+deb9u4) ...
 Processing triggers for libc-bin (2.24-11+deb9u3) ...
 CLDS: * Install virtualbox-guest-x11 to have full screen and cross copy and paste.
 CLDS: * VirtualBox guest additions installed: version: 5.2.18_Debian r123745.
-CLDS: * Disk size = 4246276K. Space Used = 212632K. Runtime = 00:00:05:18.
+CLDS: * Disk size = 4327944K. Space Used = 212644K. Runtime = 00:00:05:36.
