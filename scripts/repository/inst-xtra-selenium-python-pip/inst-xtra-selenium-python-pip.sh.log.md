@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-selenium-python-pip.sh ...
   * After this operation, 2,302 kB of additional disk space will be used.
   * Install python-pip.
-  * Disk size = 3620948K. Space Used = 4632K. Runtime = 00:00:00:10.
+  * Disk size = 4115316K. Space Used = 4632K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 python-pip python-pip-whl
