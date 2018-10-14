@@ -1,0 +1,25 @@
+# Burn ISO.
+xorriso -as cdrecord -v -eject fs=32m blank=as_needed dev=/dev/sr0 a_dvd_image.iso
+
+xorriso -as mkisofs -iso-level 3 \
+    -full-iso9660-filenames\
+    -volid "archisolabel" \
+    -appid "Arch Linux CD" \
+    -publisher "Arch Linux <https://www.archlinux.org>" \
+    -preparer "prepared by $USER" \
+    -eltorito-boot isolinux/isolinux.bin \
+    -eltorito-catalog isolinux/boot.cat \
+    -no-emul-boot -boot-load-size 4 -boot-info-table \
+    -isohybrid-mbr "/mnt/iso/isolinux/isohdpfx.bin" \
+    -output output.iso /mnt/iso/
+    
+xorriso -as mkisofs \
+       -iso-level 3 \  
+       -full-iso9660-filenames \
+       -volid "${iso_label}" \
+       -eltorito-boot isolinux/isolinux.bin \
+       -eltorito-catalog isolinux/boot.cat \
+       -no-emul-boot -boot-load-size 4 -boot-info-table \
+       -isohybrid-mbr ~/customiso/isolinux/isohdpfx.bin \
+       -output arch-custom.iso \ 
+       ~/customiso    

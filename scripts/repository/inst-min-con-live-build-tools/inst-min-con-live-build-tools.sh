@@ -21,6 +21,9 @@ apt-get -y install rsync
 # To create new squashfs.
 apt-get -y install squashfs-tools
 
+# Add to CLD/
+	yes | cp -av ./cld  /usr/local
+
 # Log
 echo "${GV_LOG} * Install xorriso to create isohybrid."
 echo "${GV_LOG} * Install isolinux to get isohdpfx.bin and isolinux.bin in order to create isohybrid."
