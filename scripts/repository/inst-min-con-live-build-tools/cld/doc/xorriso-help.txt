@@ -1,5 +1,9 @@
+# Make ISO.
+	xorriso -as mkisofs -v -J -r -V MY_DISK_LABEL -o /home/user/file.iso /home/user/for_iso
+
 # Burn ISO.
-xorriso -as cdrecord -v -eject fs=32m blank=as_needed dev=/dev/sr0 a_dvd_image.iso
+	xorriso -as cdrecord -v -eject fs=32m blank=as_needed dev=/dev/sr0 a_dvd_image.iso
+	xorriso -as cdrecord -v dev=/dev/sr0 -dao /home/user/file.iso
 
 xorriso -as mkisofs -iso-level 3 \
     -full-iso9660-filenames\
@@ -22,4 +26,7 @@ xorriso -as mkisofs \
        -no-emul-boot -boot-load-size 4 -boot-info-table \
        -isohybrid-mbr ~/customiso/isolinux/isohdpfx.bin \
        -output arch-custom.iso \ 
-       ~/customiso    
+       ~/customiso
+       
+https://wiki.debian.org/BurnCd#Make_an_ISO_9660_image_file
+
