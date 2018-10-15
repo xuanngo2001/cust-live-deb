@@ -1,2 +1,8 @@
-# Echo error.
+# No newline after echo.
+	echo -n "Error:"; echo 	" newline"
+	
+# Display TAB.
+	echo -e "A\tB"
+
+# Display message to stderr.
 	>&2 echo "error"
