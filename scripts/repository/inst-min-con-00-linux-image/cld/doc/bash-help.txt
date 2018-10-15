@@ -37,3 +37,6 @@
 		command > out.log 2>&1
 	# Redirect both to a file:
 		command &> out.log
+	# Suppress error messages. No file created. No error message displayed on screen
+		command 2>&-
+
