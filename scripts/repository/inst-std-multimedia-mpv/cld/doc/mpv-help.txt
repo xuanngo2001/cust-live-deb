@@ -8,6 +8,9 @@
   PGDWN   : Previous chapter.
   T       : Toggle stay-on-top (see also --ontop).
 
+# Show duration by default.
+	osd-level=2 in ~/.config/mpv/mpv.conf or use option: --osd-level=2
+
 # Find and play videos: https://github.com/limelime/cust-live-deb/issues/268
   mpv -playlist <(find "$PWD" -type f)
   # $PWD is required. Otherwise, it'll try to go relative to the file descriptor's location, eg: "/dev/fd/./path/to/video-file.avi", which would fail to open.  
