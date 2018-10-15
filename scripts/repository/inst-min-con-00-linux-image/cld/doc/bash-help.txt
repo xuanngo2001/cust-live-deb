@@ -11,6 +11,14 @@
 
 # Filesize.
 	stat -c %s file.txt
+	$ stat -c '%s' file.txt | numfmt --to=si
+	311K
+	$ stat -c '%s' file.txt | numfmt --to=iec
+	304K
+	$ stat -c '%s' file.txt | numfmt --to=iec-i
+	304Ki
+	$ stat -c '%s' file.txt | numfmt --to=si --suffix=B
+	311KB
 	  
 # dirname: Always double quotes. Otherwise, issue with path with spaces.
 	echo "$(dirname "${line_with_spaces}")"
