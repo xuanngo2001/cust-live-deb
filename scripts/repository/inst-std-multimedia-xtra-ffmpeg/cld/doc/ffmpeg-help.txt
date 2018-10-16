@@ -1,3 +1,8 @@
+# Extract excerpt of video. Note: -c copy copies the first video, audio, and subtitle bitstream from the input to the output file without re-encoding them.
+	ffmpeg -i INPUT.mkv -ss 00:01:13 -t 10 			-c:v copy -c:a copy -c:s copy -c:d copy -c:t copy OUTPUT.mkv
+	ffmpeg -i INPUT.mkv -ss 00:01:13 -t 10 			-c copy OUTPUT2.mkv
+	ffmpeg -i INPUT.mkv -ss 00:01:13 -to 00:01:23 	-c copy OUTPUT2.mkv
+
 # DVDrip.
 	ffmpeg \
 	  -analyzeduration 500M -probesize 500M \
