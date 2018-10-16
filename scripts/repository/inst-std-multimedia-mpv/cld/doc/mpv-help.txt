@@ -45,5 +45,11 @@
   mpv infile -o outfile.mkv             -ovc libx264  -ovcopts preset=medium,crf=23,profile=baseline  -oac libvorbis  -oacopts qscale=3
   mpv infile -o outfile.mp4             -ovc libx264  -ovcopts preset=medium,crf=23,profile=baseline  -oac aac        -oacopts ab=128k
   mpv infile -o outfile.mkv -of webm    -ovc libvpx   -ovcopts qmin=6,b=1000000k                      -oac libvorbis  -oacopts qscale=3
-  
-  
+
+# Subtitle:
+	--sub-visibility=no
+	--sid=no  
+
+# Duration.
+	mpv video.aiv --no-audio --vo=null --frames=1 2>&1 >/dev/null | grep '^V: ' | head -n1 | sed 's|.*/||' | sed 's/(.*//' | xargs
+
