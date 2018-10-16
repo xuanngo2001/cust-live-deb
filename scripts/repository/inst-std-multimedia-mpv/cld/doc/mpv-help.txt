@@ -1,54 +1,54 @@
 # Key commands: https://mpv.io/manual/master/#keyboard-control
-  Shift+# : Switch audio channel.
-  ( )     : Left, right audio channel.
-  s       : Take screenshot.
-  Shift+o : Sticky runtime.
-  j and J : Cycle through the available subtitles.
-  PGUP    : Next chapter.
-  PGDWN   : Previous chapter.
-  T       : Toggle stay-on-top (see also --ontop).
+	Shift+# : Switch audio channel.
+	( )		: Left, right audio channel.
+	s		: Take screenshot.
+	Shift+o	: Sticky runtime.
+	j and J	: Cycle through the available subtitles.
+	PGUP	: Next chapter.
+	PGDWN	: Previous chapter.
+	T		: Toggle stay-on-top (see also --ontop).
 
 # Show duration by default.
 	osd-level=2 in ~/.config/mpv/mpv.conf or use option: --osd-level=2
 
 # Find and play videos: https://github.com/limelime/cust-live-deb/issues/268
-  mpv -playlist <(find "$PWD" -type f)
-  # $PWD is required. Otherwise, it'll try to go relative to the file descriptor's location, eg: "/dev/fd/./path/to/video-file.avi", which would fail to open.  
+	mpv -playlist <(find "$PWD" -type f)
+	# $PWD is required. Otherwise, it'll try to go relative to the file descriptor's location, eg: "/dev/fd/./path/to/video-file.avi", which would fail to open.	
 
 # Play devices.
-  mpv dvd://1     --dvd-device=/dev/sr0/or/iso/
-	mpv dvdnav://2  --dvd-device=/dev/sr0/or/iso/
-  mpv bd://       --bluray-device=/path/to/bd/
-  mpv cdda://     --cdrom-device=/path/to/bd/
+	mpv dvd://1		--dvd-device=/dev/sr0/or/iso/
+	mpv dvdnav://2	--dvd-device=/dev/sr0/or/iso/
+	mpv bd://		--bluray-device=/path/to/bd/
+	mpv cdda://		--cdrom-device=/path/to/bd/
 
 # Extract video file at a specific time.
-  mpv videofile.avi -o excerptvideo.avi --start=00:01:00 --end=00:03:35
-  
+	mpv videofile.avi -o excerptvideo.avi --start=00:01:00 --end=00:03:35
+	
 # Extract audio from video file.
-  mpv videofile.avi -o audiofile.mp3 --no-video
+	mpv videofile.avi -o audiofile.mp3 --no-video
  
 # Extract audio from video file at a specific time.
-  mpv videofile.avi -o audiofile.mp3 --no-video --start=00:01:00 --end=00:03:35
+	mpv videofile.avi -o audiofile.mp3 --no-video --start=00:01:00 --end=00:03:35
  
 # Extract audio from video file at a specific time for a relative length.
-  mpv videofile.avi -o audiofile.mp3 --no-video --start=0 --length=10
-  
+	mpv videofile.avi -o audiofile.mp3 --no-video --start=0 --length=10
+	
 # Take screenshot from Webcam.
-  mpv av://v4l2:/dev/video0
+	mpv av://v4l2:/dev/video0
 
 # Take screenshot a specific time.(--no-terminal: turn off output)
-  mpv videofile.avi --no-audio --vo=image --start=2% --frames=1  -o output.jpg
-  
+	mpv videofile.avi --no-audio --vo=image --start=2% --frames=1	-o output.jpg
+	
 # Encoding: https://github.com/mpv-player/mpv/blob/master/DOCS/encoding.rst
-  cat /etc/mpv/encoding-profiles.conf
-  mpv infile -o outfile.avi --vf=fps=25 -ovc mpeg4    -ovcopts qscale=4                               -oac libmp3lame -oacopts ab=128k
-  mpv infile -o outfile.mkv             -ovc libx264  -ovcopts preset=medium,crf=23,profile=baseline  -oac libvorbis  -oacopts qscale=3
-  mpv infile -o outfile.mp4             -ovc libx264  -ovcopts preset=medium,crf=23,profile=baseline  -oac aac        -oacopts ab=128k
-  mpv infile -o outfile.mkv -of webm    -ovc libvpx   -ovcopts qmin=6,b=1000000k                      -oac libvorbis  -oacopts qscale=3
+	cat /etc/mpv/encoding-profiles.conf
+	mpv infile -o outfile.avi --vf=fps=25	-ovc mpeg4		-ovcopts qscale=4								-oac libmp3lame -oacopts ab=128k
+	mpv infile -o outfile.mkv				-ovc libx264	-ovcopts preset=medium,crf=23,profile=baseline	-oac libvorbis	-oacopts qscale=3
+	mpv infile -o outfile.mp4				-ovc libx264	-ovcopts preset=medium,crf=23,profile=baseline	-oac aac		-oacopts ab=128k
+	mpv infile -o outfile.mkv -of webm		-ovc libvpx		-ovcopts qmin=6,b=1000000k						-oac libvorbis	-oacopts qscale=3
 
 # Subtitle:
 	--sub-visibility=no
-	--sid=no  
+	--sid=no
 
 # Duration.
 	mpv video.aiv --no-audio --vo=null --frames=1 2>&1 >/dev/null | grep '^V: ' | head -n1 | sed 's|.*/||' | sed 's/(.*//' | xargs
