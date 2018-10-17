@@ -43,3 +43,19 @@
 # String manipulation.
 	${parameter/pattern/string} : replace the first occurrence of a pattern.
 	${parameter//pattern/string}: replace all occurrences.
+	
+	${parameter:offset}, ${parameter:offset:length}
+		$ string=01234567890abcdefgh
+		$ echo ${string:7}
+			7890abcdefgh
+		$ echo ${string:7:2}
+			78
+		$ echo ${string:7:-2}
+			7890abcdef
+		$ echo ${string: -7}
+			bcdefgh
+		$ echo ${string: -7:2}
+			bc
+		$ echo ${string: -7:-2}
+			bcdef
+
