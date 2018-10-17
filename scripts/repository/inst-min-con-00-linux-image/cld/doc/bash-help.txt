@@ -40,3 +40,6 @@
 	# Suppress error messages. No file created. No error message displayed on screen
 		command 2>&-
 
+# String manipulation.
+	${parameter/pattern/string} : replace the first occurrence of a pattern.
+	${parameter//pattern/string}: replace all occurrences.
