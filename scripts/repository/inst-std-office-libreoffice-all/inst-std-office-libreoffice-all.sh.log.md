@@ -8,7 +8,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 3469136K. Space Used = 517752K. Runtime = 00:00:02:43.
+  * Disk size = 3469144K. Space Used = 517756K. Runtime = 00:00:02:51.
   * The following NEW packages will be installed:
   ```bash
 coinor-libcbc3 coinor-libcgl1 coinor-libclp1 coinor-libcoinmp1v5 coinor-libcoinutils3v5
