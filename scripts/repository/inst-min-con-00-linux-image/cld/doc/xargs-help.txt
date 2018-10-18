@@ -16,6 +16,7 @@
 
 # Combined use
 	\ls *.xmp | sed 's/\.xmp//' |tr '\n' '\0'| xargs -0 -n1 -I{} sh -c "echo Y| zero-size.sh \"{}\";"
+	\ls *.mkv *.avi *.mp4 *.rmvb *.rm |tr '\n' '\0'| xargs -0 -n1 -I{} sh -c "mpv-movie-shot.sh {} && rm -f {}"
 
 # Use double-quote instead of null(\0)
 	find . -type f | sort | sed 's/^/"/' | sed 's/$/"/' | xargs -n1000 rar a -m0 archive.rar
