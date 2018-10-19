@@ -22,7 +22,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	libreoffice_bin_path="${libreoffice_appimage_dir}"/bin/libreoffice
 	sed -i "s|/usr/bin/libreoffice.* --|${libreoffice_bin_path} --|" "${jwmrc_menus_office_libreoffice_xml}"			# Update bin paths.
 
-	libreoffice_bin_filename="${libreoffice_appimage_dir}"/bin/icon
+	libreoffice_bin_filename="${libreoffice_appimage_dir}"/icon
 	sed -i "s|/usr/share/icons/hicolor/32x32/apps|${libreoffice_bin_filename}|" "${jwmrc_menus_office_libreoffice_xml}"	# Update icon paths.
 	
 	sed -i "/Office\">/ r ${jwmrc_menus_office_libreoffice_xml}" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
