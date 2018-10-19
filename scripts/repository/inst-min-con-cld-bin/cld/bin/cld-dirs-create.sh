@@ -61,7 +61,7 @@ case "${action}" in
       printf "    %-15s %-43s [%s]\n" 'doc'               '=> ./cld/doc'                              'CLD documentation'
       printf "    %-15s %-43s [%s]\n" 'bin'               '=> ./cld/bin'                              'Put your executable here'
       printf "    %-15s %-43s [%s]\n" 'home'              '=> ./cld/home'                             '$HOME directory'
-      printf "    %-15s %-43s [%s]\n" 'app'               '=> ./cld/app'
+      printf "    %-15s %-43s [%s]\n" 'app'               '=> ./cld/app'                              'e.g. ./app/ant/bin/, ./app/ant/icon/'
       printf "    %-15s %-43s [%s]\n" 'jwmrc'             '=> ./cld/app/jwm/jwmrc'                    'JWM configuration files'
       printf "    %-15s %-43s [%s]\n" 'jwm-bootstrap'     '=> ./cld/app/jwm/bootstrap'                'Scripts executed after JWM started'
       printf "    %-15s %-43s [%s]\n" 'bashrc'            '=> ./cld/bashrc.d'                         '*.sh will be sourced'
