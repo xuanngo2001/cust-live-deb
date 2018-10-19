@@ -10,10 +10,6 @@ case "${action}" in
       mkdir -p ./cld/doc
       ;;
       
-  icon)
-      mkdir -p ./cld/icon
-      ;;
-                
   bin)
       mkdir -p ./cld/bin
       ;;
@@ -63,7 +59,6 @@ case "${action}" in
       echo "Error: Action: ${action} is unknown. Aborted!"
       printf "    %-15s %-43s [%s]\n" 'where-used'        '=> N/A'                                    'Show where paths below are used'
       printf "    %-15s %-43s [%s]\n" 'doc'               '=> ./cld/doc'                              'CLD documentation'
-      printf "    %-15s %-43s [%s]\n" 'icon'              '=> ./cld/icon'                             'Put your icons here'      
       printf "    %-15s %-43s [%s]\n" 'bin'               '=> ./cld/bin'                              'Put your executable here'
       printf "    %-15s %-43s [%s]\n" 'home'              '=> ./cld/home'                             '$HOME directory'
       printf "    %-15s %-43s [%s]\n" 'app'               '=> ./cld/app'
