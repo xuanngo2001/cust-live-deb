@@ -5,9 +5,11 @@
 
 # Convert audio
 	ffmpeg -y -i INPUT.mkv -codec:a libmp3lame -qscale:a 10 OUTPUT.mkv
-		-qscale:a: Values are encoder specific, so for libmp3lame the range is 0-9 where a lower value is a higher quality. 
+		-qscale:a: (VBR) Values are encoder specific, so for libmp3lame the range is 0-9 where a lower value is a higher quality. 
 					0-3 will normally produce transparent results, 4 (default) should be close to perceptual transparency, 
 					and 6 produces an "acceptable" quality.
+			or
+			-b:a 320k: (CBR) Available options are: 8, 16, 24, 32, 40, 48, 64, 80, 96, 112, 128, 160, 192, 224, 256, or 320
 
 # DVDrip.
 	ffmpeg \
