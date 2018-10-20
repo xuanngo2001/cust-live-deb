@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-office-libreoffice-appimage.sh ...
   * Install libreoffice-appimage.
-  * Disk size = 3542496K. Space Used = 225504K. Runtime = 00:00:00:02.
+  * Disk size = 3402408K. Space Used = 225496K. Runtime = 00:00:00:01.
