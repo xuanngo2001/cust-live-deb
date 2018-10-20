@@ -1,8 +1,8 @@
-  # Disable email notification.
-  drush site-install standard install_configure_form.enable_update_status_emails=NULL
+# Disable email notification.
+	drush site-install standard install_configure_form.enable_update_status_emails=NULL
 
-  drush -r "${drupal_dir}" pm-uninstall -y module_name
-  drush -r "${drupal_dir}" pm-enable -y module_name
+	drush -r "${drupal_dir}" pm-uninstall -y module_name
+	drush -r "${drupal_dir}" pm-enable -y module_name
 
 	drush -r "${drupal_dir}" cache-clear drush
 	drush -r "${drupal_dir}" pm-list --type=Module --status=enabled
