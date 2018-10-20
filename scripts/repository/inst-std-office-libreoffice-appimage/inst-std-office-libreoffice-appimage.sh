@@ -28,4 +28,16 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	sed -i "/Office\">/ r ${jwmrc_menus_office_libreoffice_xml}" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
-	echo "${GV_LOG} * Install libreoffice-appimage."
+	lo_version=$(libreoffice --version | head -n1 | sed 's/.*Office //')
+	echo "${GV_LOG} * Install libreoffice-appimage: ${lo_version}."	
+	echo "${GV_LOG} * Install Office Suite: Word processor."
+	echo "${GV_LOG} * Install Office Suite: Spreadsheet."
+	echo "${GV_LOG} * Install Office Suite: Presentation."
+	echo "${GV_LOG} * Install Office Suite: Drawing."
+	echo "${GV_LOG} * Install Office Suite: Database."
+	echo "${GV_LOG} * Install Office Suite: Equation."
+	echo "${GV_LOG} * https://wiki.documentfoundation.org/ReleasePlan"
+	
+# REJECTED because ISO created is 100MB bigger than a normal bigger install. Maybe AppImage is not very compressable?
+
+
