@@ -10,5 +10,5 @@
 # To lowercase.
 	echo LOWERCASE | tr '[A-Z]' '[a-z]'
 	echo LOWERCASE | tr '[:upper:]' '[:lower:]'
-	for f in * ; do mv -v $f `echo $f | tr '[A-Z]' '[a-z]'`; done
+	find . -depth -name '* *' | while IFS= read -r f ; do mv -v "$f" "$(dirname "$f")/$(basename "$f"|tr '[A-Z]' '[a-z]')" ; done
 	
