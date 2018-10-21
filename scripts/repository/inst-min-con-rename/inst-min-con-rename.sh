@@ -10,8 +10,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   apt-get install -d -y <your-package> 
 
 # Install rename.
-apt-get -y install rename
+	apt-get -y install rename
 
-
+# Add to CLD/
+	yes | cp -av ./cld  /usr/local
+	
 # Log
-echo "${GV_LOG} * Install rename."
+	echo "${GV_LOG} * Install rename."
