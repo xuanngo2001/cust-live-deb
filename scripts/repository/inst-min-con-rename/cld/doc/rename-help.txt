@@ -1,0 +1,4 @@
+# To lowercase.
+	rename -f 'y/A-Z/a-z/' *
+	find my_root_dir -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;
+
