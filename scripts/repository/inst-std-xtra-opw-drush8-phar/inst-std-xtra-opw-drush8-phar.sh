@@ -25,3 +25,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Reference:
 #   -Download at https://github.com/drush-ops/drush/releases
 #   -https://pantheon.io/blog/easily-install-drush-phar
+
+# REJECTED: Move out of CLD. Add in firstboot.
+
