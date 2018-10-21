@@ -3,7 +3,7 @@
 	ffmpeg -i INPUT.mkv -ss 00:01:13 -t 10 			-c copy OUTPUT2.mkv
 	ffmpeg -i INPUT.mkv -ss 00:01:13 -to 00:01:23 	-c copy OUTPUT2.mkv
 
-# Convert audio
+# Convert audio.
 	ffmpeg -y -i INPUT.mkv -codec:a libmp3lame -qscale:a 10 OUTPUT.mkv
 		-qscale:a: (VBR) Values are encoder specific, so for libmp3lame the range is 0-9 where a lower value is a higher quality. 
 					0-3 will normally produce transparent results, 4 (default) should be close to perceptual transparency, 
@@ -11,6 +11,9 @@
 			or
 			-b:a 320k: (CBR) Available options are: 8, 16, 24, 32, 40, 48, 64, 80, 96, 112, 128, 160, 192, 224, 256, or 320
 
+# Select specific streams.
+	ffmpeg -i INPUT.mkv -map 0:0 -map 0:1 -map 0:3 -c copy INPUT.mkv
+	
 # DVDrip.
 	ffmpeg \
 	  -analyzeduration 500M -probesize 500M \
