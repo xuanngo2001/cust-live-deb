@@ -1,11 +1,11 @@
 * >>>>>>>>> Running inst-std-system-monitor-switcher-lxrandr.sh ...
-  * After this operation, 25.8 MB of additional disk space will be used.
+  * After this operation, 26.6 MB of additional disk space will be used.
   * After this operation, 392 kB of additional disk space will be used.
   * Install Monitor Switcher: lxrandr.
   * Add lxrandr key binding.
-  * Disk size = 3215760K. Space Used = 32708K. Runtime = 00:00:00:15.
+  * Disk size = 2836820K. Space Used = 34120K. Runtime = 00:00:00:15.
   * The following NEW packages will be installed:
   ```bash
-cpp cpp-6 libisl15 libmpc3 lxrandr
-x11-xserver-utils
+cpp cpp-6 libisl15 libmpc3 libmpfr4
+lxrandr x11-xserver-utils
   ```
