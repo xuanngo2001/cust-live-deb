@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-con-xtra-mariadb-server.sh ...
   * After this operation, 188 MB of additional disk space will be used.
-  * Disk size = 2117020K. Space Used = 320148K. Runtime = 00:00:01:04.
+  * Disk size = 2112480K. Space Used = 320148K. Runtime = 00:00:00:49.
   * The following NEW packages will be installed:
   ```bash
 galera-3 gawk libaio1 libdbi-perl libjemalloc1
