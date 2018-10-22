@@ -34,3 +34,5 @@
 
 # Find and print size.
 	find . -type f -name all.txt -printf '%s %p\n' | numfmt --field=1 --to=iec-i  --format='%10.3f'
+	find . -type f -name all.txt -printf '%s %p\n' 
+	
