@@ -13,6 +13,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	apt-get -y install openttd-opengfx openttd-opensfx openttd-openmsx
 	apt-get -y install openttd
 
+# Insert openTTD in Games menu.
+	sed -i "/Games\">/ r jwmrc-menus-games-openttd.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 	openttd_version=$(/usr/games/openttd -v | head -n1)
