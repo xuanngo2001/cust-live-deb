@@ -47,3 +47,8 @@
 
 # Substitute TAB followed by zero or more occurrences of any character except TAB with nothing.
 	s/\t[^\t]*//	
+
+# Replace a character in a matched line(e.g ipsum)
+	sed '/ipsum/s/#//g'
+	sed '/ipsum/{s/#//g;s/@/-at-/g;}'
+
