@@ -167,7 +167,7 @@ while IFS='' read -r LINE || [[ -n "${LINE}" ]]; do
   LINE=$(echo "${LINE}" | xargs)
   SCRIPT_LIST_CONTENT=$(echo "${SCRIPT_LIST_CONTENT}" | grep -Fv "${LINE}")
   echo "${SCRIPT_NAME}: Excluded ${LINE}."
-done < <(cat scripts-ex.lst | grep -v "^ *#"  | awk NF) # Ignore comment line | Remove empty line
+done < <(cat scripts-ex.lst | grep -v "^[[:space:]]*#"  | awk NF) # Ignore comment line | Remove empty line
 echo "${SCRIPT_LIST_CONTENT}" > "${SCRIPT_LIST}"
 
 
