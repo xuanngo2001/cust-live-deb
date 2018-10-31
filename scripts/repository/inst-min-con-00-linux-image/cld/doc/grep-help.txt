@@ -14,3 +14,7 @@
 	
 # Count number of occurrence found. Number of CPUs.
 	grep -c ^processor /proc/cpuinfo
+
+# Grep whitespaces.
+	grep -v "^[[:space:]]*#"
+
