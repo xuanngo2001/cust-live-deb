@@ -1,7 +1,8 @@
 * >>>>>>>>> Running inst-xtra-games-mono-complete.sh ...
-  * After this operation, 344 MB of additional disk space will be used.
+  * After this operation, 338 MB of additional disk space will be used.
   * Install mono-complete.
-  * Disk size = 4870156K. Space Used = 493364K. Runtime = 00:00:06:53.
+  * Needs for openra: AppImage.
+  * Disk size = 5849284K. Space Used = 484588K. Runtime = 00:00:10:40.
   * The following NEW packages will be installed:
   ```bash
 ca-certificates-mono libdpkg-perl libglade2.0-cil libmono-2.0-1 libmono-2.0-dev
