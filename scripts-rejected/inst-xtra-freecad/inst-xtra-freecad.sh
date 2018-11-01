@@ -17,3 +17,5 @@ sed -i "/Graphics\">/ r jwmrc-menus-graphics-freecad.xml" "${CLD_JWMRC_DIR}/jwmr
     
 # Log
 echo "${GV_LOG} * Install freecad."
+
+# REJECTED: Add in firstboot.

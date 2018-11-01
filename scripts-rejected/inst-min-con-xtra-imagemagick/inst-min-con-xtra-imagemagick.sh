@@ -17,4 +17,4 @@ apt-get -y install imagemagick
 # Log
 echo "${GV_LOG} * Install imagemagick to process image from command line."
 
-
+# REJECTED: Add in firstboot.

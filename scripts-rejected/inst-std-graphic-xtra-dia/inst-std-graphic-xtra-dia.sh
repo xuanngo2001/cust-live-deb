@@ -18,3 +18,5 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	echo "${GV_LOG} * Insert Dia menu in Graphics."
 	echo "${GV_LOG} * How to add a new shape to Dia: http://dia-installer.de/howto/create_shape/index.html.en"
 	echo "${GV_LOG} * Dia Shape Repository: http://dia-installer.de/shapes/index.html.en"
+
+# REJECTED: Use yed/draw.io instead.
