@@ -15,7 +15,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	apt-get -y install blender
 
 # Insert Blender 3D menu in Graphics
-	sed -i "/Graphics\">/ r jwmrc-menus-graphics-blender.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
+	sed -i "/Graphics\">/ r jwmrc-menus-graphics-blender3d.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Log
 	echo "${GV_LOG} * Install required packages for blender."
