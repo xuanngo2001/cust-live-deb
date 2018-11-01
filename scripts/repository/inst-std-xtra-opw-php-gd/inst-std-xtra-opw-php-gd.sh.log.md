@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-xtra-opw-php-gd.sh ...
   * After this operation, 146 kB of additional disk space will be used.
   * Install php-gd to run Drupal.
-  * Disk size = 3644520K. Space Used = 236K. Runtime = 00:00:00:04.
+  * Disk size = 3287828K. Space Used = 244K. Runtime = 00:00:00:15.
   * The following NEW packages will be installed:
   ```bash
 php7.0-gd php-gd

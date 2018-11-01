@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-geany.sh ...
   * After this operation, 11.7 MB of additional disk space will be used.
   * Install geany.
-  * Disk size = 3799080K. Space Used = 11700K. Runtime = 00:00:00:08.
+  * Disk size = 3442380K. Space Used = 11688K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 geany geany-common
