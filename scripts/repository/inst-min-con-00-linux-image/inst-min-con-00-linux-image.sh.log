@@ -213,7 +213,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 750 kB in 15s (49.8 kB/s)
+Fetched 750 kB in 5s (148 kB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9114 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.10.26-0+deb9u1_amd64.deb ...
@@ -279,7 +279,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 46.7 MB in 1s (44.6 MB/s)
+Fetched 46.7 MB in 1s (35.2 MB/s)
 Selecting previously unselected package busybox.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9330 files and directories currently installed.)
 Preparing to unpack .../00-busybox_1%3a1.22.0-19+b3_amd64.deb ...
@@ -395,37 +395,37 @@ Desired=Unknown/Install/Remove/Purge/Hold
 +++-================================-===============-============-===================================
 ii  linux-image-4.18.0-0.bpo.1-amd64 4.18.6-1~bpo9+1 amd64        Linux 4.18 for 64-bit PCs
 ii  linux-image-amd64                4.18+98~bpo9+1  amd64        Linux for 64-bit PCs (meta-package)
-total 33224
+total 33220
 -rw-r--r-- 1 root root  3306531 Sep 13 10:36 System.map-4.18.0-0.bpo.1-amd64
 -rw-r--r-- 1 root root   204317 Sep 13 10:36 config-4.18.0-0.bpo.1-amd64
--rw-r--r-- 1 root root 25374437 Nov  1 15:53 initrd.img-4.18.0-0.bpo.1-amd64
+-rw-r--r-- 1 root root 25370452 Nov  1 19:43 initrd.img-4.18.0-0.bpo.1-amd64
 -rw-r--r-- 1 root root  5130096 Sep 13 10:36 vmlinuz-4.18.0-0.bpo.1-amd64
 6a507a98e3f6f526dfc419448433d62b  /boot/System.map-4.18.0-0.bpo.1-amd64
 ca6cd3349b8312ac873e27cf4d6e4617  /boot/config-4.18.0-0.bpo.1-amd64
-a0c0c361a93e5402492eb739a34646ac  /boot/initrd.img-4.18.0-0.bpo.1-amd64
+cb74c36a1547d2f1a172bedc13b6706d  /boot/initrd.img-4.18.0-0.bpo.1-amd64
 7b2ed84079eabf193e96a726b5b90991  /boot/vmlinuz-4.18.0-0.bpo.1-amd64
 total 64
-drwxr-xr-x   2 root root 4096 Nov  1 15:52 bin
-drwxr-xr-x   2 root root 4096 Nov  1 15:53 boot
-drwxr-xr-x  17 root root 3440 Nov  1 11:34 dev
-drwxr-xr-x  52 root root 4096 Nov  1 15:52 etc
+drwxr-xr-x   2 root root 4096 Nov  1 19:42 bin
+drwxr-xr-x   2 root root 4096 Nov  1 19:43 boot
+drwxr-xr-x  17 root root 3440 Nov  1 12:54 dev
+drwxr-xr-x  52 root root 4096 Nov  1 19:42 etc
 drwxr-xr-x   2 root root 4096 Jun 26 12:03 home
-lrwxrwxrwx   1 root root   36 Nov  1 15:52 initrd.img -> boot/initrd.img-4.18.0-0.bpo.1-amd64
-drwxr-xr-x  13 root root 4096 Nov  1 15:52 lib
-drwxr-xr-x   2 root root 4096 Nov  1 15:47 lib64
-drwxr-xr-x   2 root root 4096 Nov  1 15:46 media
-drwxr-xr-x   2 root root 4096 Nov  1 15:46 mnt
-drwxr-xr-x   2 root root 4096 Nov  1 15:46 opt
-dr-xr-xr-x 215 root root    0 Nov  1 15:33 proc
-drwx------   3 root root 4096 Nov  1 15:51 root
-drwxr-xr-x   3 root root 4096 Nov  1 15:46 run
-drwxr-xr-x   2 root root 4096 Nov  1 15:51 sbin
-drwxr-xr-x   2 root root 4096 Nov  1 15:46 srv
-dr-xr-xr-x  13 root root    0 Nov  1 11:33 sys
-drwxrwxrwt   2 root root 4096 Nov  1 15:53 tmp
-drwxr-xr-x  10 root root 4096 Nov  1 15:46 usr
-drwxr-xr-x  11 root root 4096 Nov  1 15:46 var
-lrwxrwxrwx   1 root root   33 Nov  1 15:52 vmlinuz -> boot/vmlinuz-4.18.0-0.bpo.1-amd64
+lrwxrwxrwx   1 root root   36 Nov  1 19:42 initrd.img -> boot/initrd.img-4.18.0-0.bpo.1-amd64
+drwxr-xr-x  13 root root 4096 Nov  1 19:42 lib
+drwxr-xr-x   2 root root 4096 Nov  1 19:37 lib64
+drwxr-xr-x   2 root root 4096 Nov  1 19:36 media
+drwxr-xr-x   2 root root 4096 Nov  1 19:36 mnt
+drwxr-xr-x   2 root root 4096 Nov  1 19:36 opt
+dr-xr-xr-x 209 root root    0 Nov  1 16:54 proc
+drwx------   3 root root 4096 Nov  1 19:40 root
+drwxr-xr-x   3 root root 4096 Nov  1 19:36 run
+drwxr-xr-x   2 root root 4096 Nov  1 19:40 sbin
+drwxr-xr-x   2 root root 4096 Nov  1 19:36 srv
+dr-xr-xr-x  13 root root    0 Nov  1 17:56 sys
+drwxrwxrwt   2 root root 4096 Nov  1 19:43 tmp
+drwxr-xr-x  10 root root 4096 Nov  1 19:36 usr
+drwxr-xr-x  11 root root 4096 Nov  1 19:36 var
+lrwxrwxrwx   1 root root   33 Nov  1 19:42 vmlinuz -> boot/vmlinuz-4.18.0-0.bpo.1-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-4.18.0-0.bpo.1-amd64.
-CLDS: * Disk size = 1178896K. Space Used = 340984K. Runtime = 00:00:02:10.
+CLDS: * Disk size = 1178948K. Space Used = 341000K. Runtime = 00:00:02:00.
