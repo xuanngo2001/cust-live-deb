@@ -6,3 +6,8 @@
 	
 	# Search for loaded kernel modules
 	  cat /proc/filesystems | grep iso9660
+
+# Mount tmpfs: files stored in tmpfs are stored in either ram or (if there's too much memory pressure) in swap.
+	mkdir /ram
+	mount -t tmpfs none /ram
+
