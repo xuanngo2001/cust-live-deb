@@ -34,9 +34,6 @@ else
   echo "${GV_LOG} * ERROR: ${VBOXGUEST_ADD_ISO} is missing. Get it from virtualbox.org."
 fi
 
-# Add to CLD/
- yes | cp -av ./cld  /usr/local
-
 
 # Log
 VBOXGUEST_ADD_VERSION=$(modinfo vboxguest | grep ^version | tr -s ' ')
