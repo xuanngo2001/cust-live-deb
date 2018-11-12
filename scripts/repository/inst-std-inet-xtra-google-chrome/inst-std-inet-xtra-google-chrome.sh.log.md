@@ -5,13 +5,13 @@
   * After this operation, 57.3 kB of additional disk space will be used.
   * After this operation, 24.9 MB of additional disk space will be used.
   * After this operation, 199 MB of additional disk space will be used.
-  * Install Google Chrome 70.0.3538.77 .
+  * Install Google Chrome 70.0.3538.102 .
   * Modify configuration to run google-chrome as root.
   * Insert Google Chrome in Internet menu.
   * Add google chrome alias, chrome.
   * Set default browser: update-alternatives --config x-www-browser.
   * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-  * Disk size = 3123328K. Space Used = 291032K. Runtime = 00:00:00:59.
+  * Disk size = 3139340K. Space Used = 290836K. Runtime = 00:00:00:56.
   * The following NEW packages will be installed:
   ```bash
 dh-python distro-info-data gconf2-common gconf-service google-chrome-stable

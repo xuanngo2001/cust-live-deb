@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-filesystem-hfsprogs.sh ...
   * After this operation, 310 kB of additional disk space will be used.
   * Install hfsprogs.
-  * Disk size = 1219004K. Space Used = 464K. Runtime = 00:00:00:02.
+  * Disk size = 1275688K. Space Used = 464K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 hfsprogs
