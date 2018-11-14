@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-con-cld-tools.sh ...
   * After this operation, 801 kB of additional disk space will be used.
-  * Disk size = 1269164K. Space Used = 1340K. Runtime = 00:00:00:02.
+  * Disk size = 1269124K. Space Used = 1340K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libparted2 parted util-linux*
