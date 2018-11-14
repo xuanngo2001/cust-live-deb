@@ -17,15 +17,15 @@ The following NEW packages will be installed:
   libavahi-common3 libcups2 libfontconfig1 libfreetype6 libjpeg62-turbo
   liblcms2-2 libnspr4 libnss3 libpcsclite1 libpng16-16 libxrender1
   openjdk-8-jre-headless
-0 upgraded, 19 newly installed, 0 to remove and 19 not upgraded.
+0 upgraded, 19 newly installed, 0 to remove and 18 not upgraded.
 Need to get 31.8 MB of archives.
 After this operation, 112 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 java-common all 0.58 [13.5 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libavahi-common-data amd64 0.6.32-2 [118 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libavahi-common3 amd64 0.6.32-2 [52.0 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libavahi-client3 amd64 0.6.32-2 [55.3 kB]
-Get:5 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libcups2 amd64 2.2.1-8+deb9u2 [306 kB]
-Get:6 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 liblcms2-2 amd64 2.8-4+deb9u1 [143 kB]
+Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libcups2 amd64 2.2.1-8+deb9u2 [306 kB]
+Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblcms2-2 amd64 2.8-4+deb9u1 [143 kB]
 Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjpeg62-turbo amd64 1:1.5.1-2 [134 kB]
 Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpng16-16 amd64 1.6.28-1 [280 kB]
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libfreetype6 amd64 2.6.3-3.2 [438 kB]
@@ -36,13 +36,13 @@ Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnsp
 Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnss3 amd64 2:3.26.2-1.1+deb9u1 [1,161 kB]
 Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpcsclite1 amd64 1.8.20-1 [56.5 kB]
 Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxrender1 amd64 1:0.9.10-1 [33.0 kB]
-Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openjdk-8-jre-headless amd64 8u171-b11-1~deb9u1 [27.2 MB]
+Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openjdk-8-jre-headless amd64 8u181-b13-2~deb9u1 [27.2 MB]
 Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 default-jre-headless amd64 2:1.8-58 [10.0 kB]
 Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ca-certificates-java all 20170531+nmu1 [14.7 kB]
 Preconfiguring packages ...
-Fetched 31.8 MB in 0s (37.3 MB/s)
+Fetched 31.8 MB in 1s (31.6 MB/s)
 Selecting previously unselected package java-common.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20569 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20570 files and directories currently installed.)
 Preparing to unpack .../00-java-common_0.58_all.deb ...
 Unpacking java-common (0.58) ...
 Selecting previously unselected package libavahi-common-data:amd64.
@@ -91,8 +91,8 @@ Selecting previously unselected package libxrender1:amd64.
 Preparing to unpack .../15-libxrender1_1%3a0.9.10-1_amd64.deb ...
 Unpacking libxrender1:amd64 (1:0.9.10-1) ...
 Selecting previously unselected package openjdk-8-jre-headless:amd64.
-Preparing to unpack .../16-openjdk-8-jre-headless_8u171-b11-1~deb9u1_amd64.deb ...
-Unpacking openjdk-8-jre-headless:amd64 (8u171-b11-1~deb9u1) ...
+Preparing to unpack .../16-openjdk-8-jre-headless_8u181-b13-2~deb9u1_amd64.deb ...
+Unpacking openjdk-8-jre-headless:amd64 (8u181-b13-2~deb9u1) ...
 Selecting previously unselected package default-jre-headless.
 Preparing to unpack .../17-default-jre-headless_2%3a1.8-58_amd64.deb ...
 Unpacking default-jre-headless (2:1.8-58) ...
@@ -281,7 +281,7 @@ Running hooks in /etc/ca-certificates/update.d...
 
 done.
 done.
-Setting up openjdk-8-jre-headless:amd64 (8u171-b11-1~deb9u1) ...
+Setting up openjdk-8-jre-headless:amd64 (8u181-b13-2~deb9u1) ...
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/rmid to provide /usr/bin/rmid (rmid) in auto mode
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java to provide /usr/bin/java (java) in auto mode
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
@@ -295,6 +295,6 @@ update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/tnameserv t
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
 Setting up default-jre-headless (2:1.8-58) ...
 Processing triggers for libc-bin (2.24-11+deb9u3) ...
-CLDS: * Install openjdk version "1.8.0_171".
+CLDS: * Install openjdk version "1.8.0_181".
 CLDS: * To install JAVA binary: https://wiki.debian.org/JavaPackage.
-CLDS: * Disk size = 1829784K. Space Used = 160732K. Runtime = 00:00:00:32.
+CLDS: * Disk size = 1829824K. Space Used = 160788K. Runtime = 00:00:00:34.
