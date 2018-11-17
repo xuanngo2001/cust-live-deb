@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-win-00-00-xorg-fix.sh ...
   * After this operation, 252 kB of additional disk space will be used.
-  * Disk size = 2199812K. Space Used = 332K. Runtime = 00:00:00:02.
+  * Disk size = 2199820K. Space Used = 332K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 libglapi-mesa

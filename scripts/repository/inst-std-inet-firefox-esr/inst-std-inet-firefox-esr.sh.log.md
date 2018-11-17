@@ -6,7 +6,7 @@
   * To update Adobe Flash Player: update-flashplugin-nonfree --install.
   * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/.
   * Supported browsers by flashplugin-nonfree: https://wiki.debian.org/FlashPlayer.
-  * Disk size = 2848244K. Space Used = 205592K. Runtime = 00:00:00:13.
+  * Disk size = 2848252K. Space Used = 205592K. Runtime = 00:00:00:24.
   * The following NEW packages will be installed:
   ```bash
 firefox-esr libevent-2.0-5 libjsoncpp1 libvpx4

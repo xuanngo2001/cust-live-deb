@@ -7,7 +7,7 @@
   * Note: boot.cat is automatically created.
   * Install rsync to copy directories.
   * Install squashfs-tools to create new squashfs.
-  * Disk size = 1490800K. Space Used = 4460K. Runtime = 00:00:00:19.
+  * Disk size = 1490808K. Space Used = 4460K. Runtime = 00:00:00:15.
   * The following NEW packages will be installed:
   ```bash
 isolinux libburn4 libisoburn1 libisofs6 libjte1
