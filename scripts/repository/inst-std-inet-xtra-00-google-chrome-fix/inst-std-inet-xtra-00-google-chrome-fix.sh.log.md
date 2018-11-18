@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-std-inet-xtra-00-google-chrome-fix.sh ...
   * After this operation, 570 kB of additional disk space will be used.
-  * Disk size = 2880916K. Space Used = 308K. Runtime = 00:00:00:00.
+  * Disk size = 2881012K. Space Used = 308K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 libappindicator3-1 libdbusmenu-glib4 libdbusmenu-gtk3-4 libindicator3-7
