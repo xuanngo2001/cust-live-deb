@@ -14,7 +14,7 @@
   * Install Media Player: mpv 0.27.2 .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 3257552K. Space Used = 82592K. Runtime = 00:00:01:13.
+  * Disk size = 3257564K. Space Used = 82596K. Runtime = 00:00:02:06.
   * The following NEW packages will be installed:
   ```bash
 libass9 libavc1394-0 libavcodec57 libavdevice57 libavfilter6

@@ -2,7 +2,7 @@
   * After this operation, 19.3 MB of additional disk space will be used.
   * After this operation, 17.4 MB of additional disk space will be used.
   * Install OpenTTD 1.6.1.
-  * Disk size = 4001948K. Space Used = 53492K. Runtime = 00:00:00:13.
+  * Disk size = 3911480K. Space Used = 53488K. Runtime = 00:00:00:14.
   * The following NEW packages will be installed:
   ```bash
 libsdl1.2debian libxdg-basedir1 openttd openttd-data openttd-opengfx
