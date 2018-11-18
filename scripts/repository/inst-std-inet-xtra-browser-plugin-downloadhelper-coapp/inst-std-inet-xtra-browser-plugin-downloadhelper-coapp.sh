@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install dependencies.
-#	apt-get -y install libsdl2-2.0-0	# No need for this if installed after MPV. It will make ISO bigger.
+	apt-get -y install libsdl2-2.0-0
 
 # Install downloadhelper.
 	coapp_deb=$(\ls net.downloadhelper.coapp*.deb | sort -r | head -n1)
