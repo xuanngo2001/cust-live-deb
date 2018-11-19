@@ -32,7 +32,7 @@
 # Find and delete file marked as *.xmp.
 	find . -type f -name '*.xmp' | sed 's/\.xmp//' | tr '\n' '\0' | xargs -0 rm -f "{}"
 
-# Find and print size.
+# Find and print size. For printf format, see http://man7.org/linux/man-pages/man1/find.1.html
 	find . -type f -name all.txt -printf '%s %p\n' | numfmt --field=1 --to=iec-i  --format='%10.3f'
-	find . -type f -name all.txt -printf '%s %p\n' 
+	find . -type f -name all.txt -printf '%s %k %p\n' 
 	
