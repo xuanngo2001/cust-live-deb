@@ -18,7 +18,7 @@ script_name=$(basename "${0}")
 		echo "${script_name}: Error: ${help_file} no such file. Aborted!"
 		echo "   e.g. ./${script_name} [option]"
 		echo "   option: " 
-		options_list=$(ls /usr/local/cld/doc/*-help.txt | sed 's|.*/||' | sed 's/-help.txt//' | sort | pr -t -6 -o4)
+		options_list=$(ls /usr/local/cld/doc/*-help.txt | sed 's|.*/||' | sed 's/-help.txt//' | sort | pr -a -t -6 -o4)
 		echo "${options_list}"
 		exit 1;
 	fi
