@@ -2,9 +2,9 @@
 	mkfs.ext4 /dev/sdh
 
 # Change partition label.
-	e2label dev/sda1 ROOT
-	tune2fs –L ROOT_PART /dev/sda1
-	ntfslabel /dev/sda5 NTFS_DIR
+	e2label /dev/sda1 LABEL
+	tune2fs –L LABEL /dev/sda1
+	ntfslabel /dev/sda5 LABEL
 
 # Show filesystem
 	df -Th
