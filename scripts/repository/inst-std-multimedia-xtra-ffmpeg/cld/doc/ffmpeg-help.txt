@@ -74,28 +74,6 @@
     ffmpeg -i input.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis output.webm
   
 ==========================
-# Overlay with a background movie: https://superuser.com/questions/1081471/inserting-video-with-image-border-into-ffmpeg
-	input=$1
-	output="3-${input}"
-	bg_movie="backgroundmovie.mp4"
-	ffmpeg -analyzeduration 150M -probesize 150M  -y -i "${input}" \
-	       -vf "movie=${bg_movie},hue=s=0[bg];[in]scale=iw/2:-1,pad=iw+20:ih+20:10:10:color=yellow[m]; \
-	           [bg][m]overlay=shortest=1:x=(W-w)/2:y=(H-h)/2[out]" -c:v libx264 "${output}"  
-
-# Add border around video: https://superuser.com/questions/869117/how-to-put-border-around-video-to-prevent-clipping-of-content
-	input=$1
-	output="2-${input}"
-	# (720-700)/2=10
-	ffmpeg -analyzeduration 150M -probesize 150M  -y -i "${input}" -filter_complex 'scale=700:556, pad=720:576:10:10:color=0x00b5eb' "${output}" 
-		     
-	width=640
-	height=480
-	pad=10
-	scale_w=$(($width-(2*$pad)))
-	scale_h=$(($height-(2*$pad)))
-	ffmpeg -analyzeduration 150M -probesize 150M  -y -i "${input}" -filter_complex "scale=${scale_w}:${scale_h}, pad=${width}:${height}:${pad}:${pad}:color=0x00b5eb" "${output}" 
-  
-==========================
 ffmpeg -i "concat:VTS_02_0.VOB|VTS_02_1.VOB|VTS_02_2.VOB|VTS_02_3.VOB" -c copy /dev/null
 Input #0, mpeg, from 'concat:VTS_02_0.VOB|VTS_02_1.VOB|VTS_02_2.VOB|VTS_02_3.VOB':
   Duration: 00:45:08.97, start: 0.280000, bitrate: 8821 kb/s

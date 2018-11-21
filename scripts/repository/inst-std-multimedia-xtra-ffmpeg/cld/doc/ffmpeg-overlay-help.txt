@@ -1,0 +1,29 @@
+# Overlay with a background movie: https://superuser.com/questions/1081471/inserting-video-with-image-border-into-ffmpeg
+	input=$1
+	output="3-${input}"
+	bg_movie="backgroundmovie.mp4"
+	ffmpeg -analyzeduration 150M -probesize 150M  -y -i "${input}" \
+	       -vf "movie=${bg_movie},hue=s=0[bg];[in]scale=iw/2:-1,pad=iw+20:ih+20:10:10:color=yellow[m]; \
+	           [bg][m]overlay=shortest=1:x=(W-w)/2:y=(H-h)/2[out]" -c:v libx264 "${output}"  
+
+# Add border around video: https://superuser.com/questions/869117/how-to-put-border-around-video-to-prevent-clipping-of-content
+	input=$1
+	output="2-${input}"
+	# (720-700)/2=10
+	ffmpeg -analyzeduration 150M -probesize 150M  -y -i "${input}" -filter_complex 'scale=700:556, pad=720:576:10:10:color=0x00b5eb' "${output}" 
+		     
+	width=640
+	height=480
+	pad=10
+	scale_w=$(($width-(2*$pad)))
+	scale_h=$(($height-(2*$pad)))
+	ffmpeg -analyzeduration 150M -probesize 150M  -y -i "${input}" -filter_complex "scale=${scale_w}:${scale_h}, pad=${width}:${height}:${pad}:${pad}:color=0x00b5eb" "${output}" 
+  
+# How to Add a Watermark to Video: https://gist.github.com/bennylope/d5d6029fb63648582fed2367ae23cfd6
+	# Put watermark.png 10 pixels from the top and 10 pixels from the right.
+		ffmpeg -i test.mp4 -i watermark.png -filter_complex "overlay=10:10" test1.mp4
+	# Put watermark.png in the center.
+		ffmpeg -i test.mp4 -i watermark.png \
+			-filter_complex "overlay=x=(main_w-overlay_w)/2:y=(main_h-overlay_h)/2" test2.mp4
+	Variables: main_h, main_w, overlay_h, overlay_w
+	
