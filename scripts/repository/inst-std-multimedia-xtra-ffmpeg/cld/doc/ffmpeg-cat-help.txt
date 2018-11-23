@@ -1,3 +1,8 @@
-# https://trac.ffmpeg.org/wiki/Concatenate	
+# https://trac.ffmpeg.org/wiki/Concatenate
+# Concatenation of files with same codecs
 	printf "file '%s'\n" ./*.avi > mylist.txt
-	ffmpeg -f concat -safe 0 -i mylist.txt -c copy output
+	ffmpeg -f concat -safe 0 -i mylist.txt -c copy output.mp4
+	
+# Concatenation of files with different codecs
+
+

@@ -96,5 +96,35 @@ ffmpeg -i /tmp/intermediate.mpeg \
   The -c:a:0 option sets the audio codec on the first audio stream (which is different from the stream number assigned). The -b:a:0 option sets the bit rate for the first audio stream. And the -metadata:s:a:0 option sets a title for the stream, which can make it easier for those watching your video to choose an appropriate named audio track rather than guessing what the difference is.    
   
   
+============================
+Normalize video:
+	input_video_file=$1
+	output_video_file="n-${input_video_file}"
+	
+	scale_w=640
+	scale_h=360
+	framerate=30
+	ffmpeg -y -analyzeduration 150M -probesize 150M \
+		-i "${input_video_file}" \
+		-filter_complex "scale=${scale_w}:${scale_h}" \
+		-codec:v libx264 -crf 21 \
+		-codec:a libmp3lame -qscale:a 2 \
+		-r "${framerate}" \
+		"${output_video_file}"   
   
-  
+==========================
+First step - extract video to raw bitstream
+
+ffmpeg -y -i seeing_noaudio.mp4 -c copy -f h264 seeing_noaudio.h264
+Remux with new framerate
+
+ffmpeg -y -r 24 -i seeing_noaudio.h264 -c copy seeing.mp4
+
+==================
+To list all possible internal presets and tunes:
+
+ffmpeg -hide_banner -f lavfi -i nullsrc -c:v libx264 -preset help -f mp4 -
+===============
+
+
+
