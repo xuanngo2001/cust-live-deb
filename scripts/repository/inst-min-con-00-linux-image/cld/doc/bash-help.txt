@@ -59,3 +59,10 @@
 		$ echo ${string: -7:-2}
 			bcdef
 
+# Arguments: Index starts from 1. http://wiki.bash-hackers.org/scripting/posparams
+	total_args="$#"
+	last_arg="${!total_args}"
+	
+	$*	all positional parameters except $0
+	$@	all positional parameters except $0
+	$#	the number of arguments, not counting $0
