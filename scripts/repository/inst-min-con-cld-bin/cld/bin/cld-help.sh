@@ -5,17 +5,18 @@ set -e
 #     If you want different variation, add symbolic link: cd .../cld/doc && ln -s smartphone-help.txt phone-help.txt 
 #   Usage: cld-helph.sh smartphone
 #   Note: from ../inst-min-con-cld-bin/cld/bin
+#	Note: Should handle *: cld-help.sh bash*. Therefore, don't double quote ${help_file}.
 script_name=$(basename "${0}")
 
 # Define variables.
-	topic=$1-help.txt
+	topic="$1-help.txt"
 	doc_dir=$(readlink -ev /usr/local/cld/doc/)
 
 	help_file="${doc_dir}/${topic}"
 
 # Error handling.
-	if [ ! -f "${help_file}" ]; then
-		echo "${script_name}: Error: ${help_file} no such file. Aborted!"
+	if ! ls ${help_file}; then
+		echo "Error: ${help_file} no such file. Aborted!"
 		echo "   e.g. ./${script_name} [option]"
 		echo "   option: " 
 		options_list=$(ls /usr/local/cld/doc/*-help.txt | sed 's|.*/||' | sed 's/-help.txt//' | sort | pr -a -t -6 -o4)
@@ -24,4 +25,4 @@ script_name=$(basename "${0}")
 	fi
 
 # Display document content.
-	cat "${help_file}"
+	cat ${help_file}
