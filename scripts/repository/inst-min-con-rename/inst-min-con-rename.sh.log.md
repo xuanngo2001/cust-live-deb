@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-rename.sh ...
   * After this operation, 40.2 MB of additional disk space will be used.
   * Install rename.
-  * Disk size = 1594048K. Space Used = 49340K. Runtime = 00:00:00:27.
+  * Disk size = 1594040K. Space Used = 49340K. Runtime = 00:00:00:34.
   * The following NEW packages will be installed:
   ```bash
 libperl5.24 perl perl-modules-5.24 rename
