@@ -1,8 +1,8 @@
 
 
-  <!-- Volume
-       Note: Mod4 (Windows key) is "4" 
-  -->
-  <Key mask="4" key="Down">exec:amixer set Master 5%- </Key>  <!-- Lower volume -->
-  <Key mask="4" key="Up">exec:amixer set Master 5%+ </Key>    <!-- Increase volume -->
-  <Key mask="4" key="0">exec:amixer set Master 0</Key>        <!-- Mute sound -->
+	<!-- Volume
+	   Note: Mod4 (Windows key) is "4" 
+	-->
+	<Key mask="4" key="Down">exec:amixer set Master 5%- </Key>  <!-- `⌘ + Down`: Lower volume -->
+	<Key mask="4" key="Up">exec:amixer set Master 5%+ </Key>    <!-- `⌘ + Up`: Increase volume -->
+	<Key mask="4" key="0">exec:amixer set Master 0</Key>        <!-- `⌘ + 0`:Mute sound -->       

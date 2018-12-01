@@ -1,38 +1,42 @@
 <?xml version="1.0"?>
 <JWM>
-  <!-- Doc:
-          -(Windows key) is mask="4" 
-  -->
+	<!-- Doc:
+		  -Windows key(⌘) is mask="4" 
+	-->
 
-  <!-- Standard key bindings -->
-  <Key key="Up">up</Key>
-  <Key key="Down">down</Key>
-  <Key key="Right">right</Key>
-  <Key key="Left">left</Key>
-  <Key key="h">left</Key>
-  <Key key="j">down</Key>
-  <Key key="k">up</Key>
-  <Key key="l">right</Key>
-  <Key key="Return">select</Key>
-  <Key key="Escape">escape</Key>
+	<!-- Standard key bindings -->
+	<Key key="Up">up</Key>
+	<Key key="Down">down</Key>
+	<Key key="Right">right</Key>
+	<Key key="Left">left</Key>
+	
+	<Key key="Return">select</Key>
+	<Key key="Escape">escape</Key>
+	
+	<!-- ### Virtual desktop operations -->
+	<Key mask="A" key="Right">rdesktop</Key> <!-- `Alt + Right`: Switch to the right desktop. -->
+	<Key mask="A" key="Left">ldesktop</Key>	 <!-- `Alt + Left`: Switch to the left desktop. -->
+	<Key mask="A" key="Up">udesktop</Key>    <!-- `Alt + Up`: Switch to the top desktop. -->
+	<Key mask="A" key="Down">ddesktop</Key>  <!-- `Alt + Down`: Switch to the bottom desktop. -->
 
-  <Key mask="A" key="Right">rdesktop</Key>
-  <Key mask="A" key="Left">ldesktop</Key>
-  <Key mask="A" key="Up">udesktop</Key>
-  <Key mask="A" key="Down">ddesktop</Key>
-  
-  <!-- ### Main operations -->
-  <Key mask="CA" key="Delete">exec:reboot</Key> <!-- `Alt + Ctrl + Del`: Reboot. -->
-  <Key mask="A" key="Tab">nextstacked</Key>     <!-- `Alt + Tab`: Switch focus to the next application. -->
-  <Key mask="A" key="#">desktop#</Key>          <!-- `Alt + #`: Switch desktop. # is a number between 1 and 4. -->
-  <Key mask="4" key="d">showdesktop</Key>       <!-- `⌘ + d`: Minimize all applications. -->
-  <Key mask="4" key="Escape">root:1</Key>       <!-- `⌘ + Esc`: Open main menu. -->
-  
-  <!-- ### Operations on window -->
-  <Key mask="A" key="F4">close</Key>    <!-- `Alt + F4`: Close current application. -->
-  <Key mask="A" key="F2">window</Key>   <!-- `Alt + F2`: Open the menu of the current application. -->
-  <Key mask="A" key="F10">maximize</Key><!-- `Alt + F10`: Maximize the window of the current application. -->  
-  
-  <!-- Don't delete below. It is used as placeholder -->
-  <!-- NEW KEYS HERE -->
+	<Key mask="4" key="Right">sendr</Key>    <!-- `⌘ + Right`: Move current application to the right desktop. -->
+	<Key mask="4" key="Left">sendl</Key>     <!-- `⌘ + Left`: Move current application to the left desktop. -->
+	<Key mask="4" key="Up">sendu</Key>       <!-- `⌘ + Up`: Move current application to the top desktop. -->
+	<Key mask="4" key="Down">sendd</Key>     <!-- `⌘ + Down`: Move current application to the bottom desktop. -->
+
+	<!-- ### Main operations -->
+	<Key mask="CA" key="Delete">exec:reboot</Key> <!-- `Alt + Ctrl + Del`: Reboot. -->
+	<Key mask="A" key="Tab">nextstacked</Key>     <!-- `Alt + Tab`: Switch focus to the next application. -->
+	<Key mask="A" key="#">desktop#</Key>          <!-- `Alt + #`: Switch desktop. # is a number between 1 and 4. -->
+	<Key mask="4" key="d">showdesktop</Key>       <!-- `⌘ + d`: Minimize all applications. -->
+	<Key mask="4" key="Escape">root:1</Key>       <!-- `⌘ + Esc`: Open main menu. -->
+
+	<!-- ### Operations on window -->
+	<Key mask="A" key="F4">close</Key>    <!-- `Alt + F4`: Close current application. -->
+	<Key mask="A" key="F2">window</Key>   <!-- `Alt + F2`: Open the menu of the current application. -->
+	<Key mask="A" key="F10">maximize</Key><!-- `Alt + F10`: Maximize the window of the current application. -->  
+
+	<!-- Don't delete below. It is used as placeholder -->
+	<!-- NEW KEYS HERE -->
+
 </JWM>
