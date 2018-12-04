@@ -3,7 +3,7 @@
 
 # Change partition label.
 	e2label /dev/sda1 LABEL
-	tune2fs –L LABEL /dev/sda1
+	tune2fs -L LABEL /dev/sda1
 	ntfslabel /dev/sda5 LABEL
 
 # Show filesystem

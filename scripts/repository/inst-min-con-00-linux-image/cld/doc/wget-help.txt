@@ -3,3 +3,10 @@
 
 # Check internet connection
 	wget -q --spider http://google.com
+
+# Output to standard output
+	if wget -q "${url}" -O-| grep -qF 'File Not Found'; then
+		echo "NO: ${url}"
+	else
+		echo "YES: ${url}"
+	fi

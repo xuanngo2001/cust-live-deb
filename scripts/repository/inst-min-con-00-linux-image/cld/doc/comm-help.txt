@@ -8,3 +8,7 @@
 
 # This command will suppress columns 1 and 2. Therefore, display only column 3.
 	comm -12 FILE_1.txt FILE_2.txt
+
+# Line unique to FILE2
+	comm -3 "${old_file}" "${new_file}" | grep -P '^\t' | tr -d '\t' > out.diff
+	
