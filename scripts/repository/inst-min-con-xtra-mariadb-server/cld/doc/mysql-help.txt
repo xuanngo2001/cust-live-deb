@@ -4,7 +4,32 @@
 # View users
 	select user,host from mysql.user;
 
-# Create root2 user.  
+# Create root2 user after new installation of mysql.  
 	CREATE USER 'root2'@'localhost' IDENTIFIED BY 'password';
 	GRANT ALL PRIVILEGES ON *.* TO 'root2'@'localhost' WITH GRANT OPTION;
 	FLUSH PRIVILEGES;
+
+# Save database table sizes
+	mysql -t -u ${MYSQL_USER} -p${MYSQL_PWD} -h ${MYSQL_HOST} ${MYSQL_DBNAME} <<< "
+	  SELECT table_name AS Tables, 
+		round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' 
+		FROM information_schema.TABLES 
+		WHERE table_schema = '${MYSQL_DBNAME}'
+		ORDER BY (data_length + index_length) ASC;" >> ${BACKUP_DIR_PATH}/${BACKUP_DIR_NAME}.info.txt
+
+# Execute sql
+	mysql -uusername -ppassword databasename < SQLcommands.sql
+	mysql -uusername -ppassword databasename <<< "SELECT * FROM aTable;"
+	mysql -uusername -ppassword databasename -e "SELECT * FROM aTable;"
+
+# Test examples
+    mysql -uroot2 -ppassword -e "DROP DATABASE cldTest; CREATE DATABASE cldTest;"
+	
+	mysql -uroot2 -ppassword cldTest < mysql-sql-examples.sql
+
+	mysql -uroot2 -ppassword cldTest -e "DESCRIBE Product;" | grep -v ^+ | grep -v 'Field.*Type.*Default.*Extra' | cut -f1 |  sed 's/\(.*\)/get\1(self):\n\treturn self.\1/'
+	
+	mysql -uroot2 -ppassword cldTest -e "DESCRIBE Product;" | grep -v ^+ | grep -v 'Field.*Type.*Default.*Extra' | cut -f1 |  sed 's/\(.*\)/set\1(\1):\n\tself.\1=\1/'
+
+	mysql -uroot2 -ppassword cldTest -e "DESCRIBE Product;" | grep -v ^+ | grep -v 'Field.*Type.*Default.*Extra' | cut -f1 |  xargs -n1 ./word.sh
+	
