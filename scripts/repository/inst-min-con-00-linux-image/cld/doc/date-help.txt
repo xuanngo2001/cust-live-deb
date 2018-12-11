@@ -11,3 +11,14 @@
 	# Get total elapsed time.
 		T="$(($(date +%s)-T))"
 		printf "Elapsed time: %02d:%02d:%02d:%02d [DD:HH:MM:SS]\n" "$((T/86400))" "$((T/3600%24))" "$((T/60%60))" "$((T%60))"
+
+# Convert string to date
+    date -d '20120131' +'%Y-%m-%d'
+    date -d '20120131 - 7 days' +'%Y-%m-%d'
+    
+    date -d '20120131 7 days'
+    date -d '28-DEC-2012 7 days'
+    date -d '2012-01-31 7 days'
+    date -d '2012-01-31 4:10:10PM 7 days'
+    date -d '2012-01-31 16:10:55 7 days'
+    

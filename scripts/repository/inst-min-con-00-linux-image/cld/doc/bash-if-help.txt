@@ -72,3 +72,10 @@
 		exit 0
 	fi
 
+# If and(-a) / or(-o). Note: Escape parentheses for complex conditions.
+    if [ $# -gt 0  -a $# -lt 2 ]; then
+        echo "Error: Need 1 or 2 arguments. Aborted!"
+        echo "${cmd_eg}"
+        exit 1;
+    fi  
+
