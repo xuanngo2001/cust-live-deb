@@ -40,6 +40,11 @@
 	# Suppress error messages. No file created. No error message displayed on screen
 		command 2>&-
 
+    # Combines the STDERR of "time" and your command into time.txt
+        { time sleep 1 ; } 2> time.txt
+    # STDERR from sleep into the file sleep.stderr and only STDERR from time goes into time.txt
+        { time sleep 1 2> sleep.stderr ; } 2> time.txt
+        
 # String manipulation: https://www.gnu.org/software/bash/manual/bash.html#Shell-Parameter-Expansion
 	${parameter/pattern/string} : replace the first occurrence of a pattern.
 	${parameter//pattern/string}: replace all occurrences.

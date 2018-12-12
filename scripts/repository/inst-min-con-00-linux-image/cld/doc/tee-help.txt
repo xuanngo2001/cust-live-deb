@@ -2,5 +2,5 @@
 	command > >(tee -a stdout.log) 2> >(tee -a stderr.log >&2)
 
 # Redirect all to stdout-stderr.log
-	command 2>&1 | tee -a stdout-stderr_$(date +'%Y-%m-%d').log
+	(command) 2>&1 | tee -a stdout-stderr_$(date +'%Y-%m-%d.%0k.%M.%S').log
 
