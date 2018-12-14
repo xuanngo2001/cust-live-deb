@@ -1,0 +1,3 @@
+# Reformat to display 2 decimals.
+    echo 6.1027142857 | numfmt --field 1  --format %0.2f
+    printf "%0.2f\n" 6.1027142857
