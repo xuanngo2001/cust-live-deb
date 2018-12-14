@@ -78,3 +78,5 @@
     filename=$(basename -- "$fullfile")
     extension="${filename##*.}"
     filename="${filename%.*}"
+    # or
+    filename="${fullfile##*/}"
