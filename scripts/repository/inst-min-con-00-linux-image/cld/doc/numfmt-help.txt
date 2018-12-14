@@ -1,3 +1,29 @@
 # Reformat to display 2 decimals.
     echo 6.1027142857 | numfmt --field 1  --format %0.2f
     printf "%0.2f\n" 6.1027142857
+
+# Define your own format.
+    echo 1230900 | numfmt --to=none --to-unit=1000 --format="%'0.2f" --suffix=K
+
+# Convert FROM human readable.
+    echo 1.23M | numfmt --from=si
+        # 1230000
+
+# Convert TO human readable.
+    echo 1230000 | numfmt --to=si
+        # 1.3M
+
+# Convert TO human readable. All values are in thousands.
+    echo 1.23 | numfmt --to=si --from-unit=1000
+        # 1.3K
+
+# For alignment, use --padding
+    Positive number = right align.
+    Negative number = left align.
+
+
+# Example
+    numfmt --to=iec-i --field=2,4 --format='%.3f' <<<'tx: 180000 rx: 2000000'
+        tx: 175.782Ki rx: 1.908Mi
+    numfmt --grouping 123456789
+        123,456,789
