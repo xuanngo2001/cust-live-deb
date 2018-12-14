@@ -6,3 +6,7 @@
 
 # Display message to stderr.
 	>&2 echo "error"
+
+# Echo content as input file.
+    cat file1 = cat <(echo 'content')
+    

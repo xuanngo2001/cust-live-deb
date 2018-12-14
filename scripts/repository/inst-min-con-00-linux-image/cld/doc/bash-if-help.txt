@@ -79,3 +79,9 @@
         exit 1;
     fi  
 
+# Is digit: DON'T double quotes variables in if condition.
+    re='^[0-9]+$'
+    if ! [[ $yournumber =~ $re ]] ; then
+        echo "error: Not a number" >&2; exit 1
+    fi
+    
