@@ -74,4 +74,7 @@
 
 # Sourcing will not be available outside of (...).
 
-
+# File extension
+    filename=$(basename -- "$fullfile")
+    extension="${filename##*.}"
+    filename="${filename%.*}"
