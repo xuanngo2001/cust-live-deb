@@ -1,2 +1,23 @@
 # Remove emplty lines.
 	m/awk NF
+
+# Set field separator/delimiter.
+    echo "1: " | awk -F  ":" '/1/ {print $1}'
+
+# Right align column
+    awk '{printf "%-15s%3d%10s%2s%15s    %-5d\n", $1, $2, $3, $4, $5, $6}' file
+    apple            1    33.413 C            cat    10
+    banana           2    21.564 B          horse    356
+    cherry           3    43.223 D            cow    32
+    pear             4    26.432 A           goat    22
+    raspberry        5    72.639 C          eagle    4
+    watermelon       6    54.436 A            fox    976
+    pumpkin          7    42.654 B          mouse    1
+    peanut           8    36.451 B            dog    56
+    orange           9    57.333 C       elephant    32
+    coconut         10    10.445 A           frog    3
+    blueberry       11    46.435 B          camel    446
+    
+    Central alignment is little tricky: 
+    awk '{printf "%-15s%3d%10s%2s%*s%*s\t%d\n", $1, $2, $3, $4, 10+length($5)/2, $5, 10-length($5)/2,"", $6}' file
+

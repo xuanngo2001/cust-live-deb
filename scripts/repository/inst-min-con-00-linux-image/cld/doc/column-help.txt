@@ -1,2 +1,5 @@
 # Columnate entries with space separator.
 	echo -e "1 ab\napple banana" | column -t -s' '
+
+# Right aligned column
+    rev file | column -t | rev
