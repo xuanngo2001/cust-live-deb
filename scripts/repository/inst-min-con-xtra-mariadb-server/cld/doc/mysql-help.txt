@@ -20,7 +20,8 @@
 	FLUSH PRIVILEGES;
 
 # After crash: ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")
-    systemctl status mariadb.service --no-page
+    systemctl status mariadb.service --no-page 
+            # Cannot open tablespace mysql/innodb_index_stats which uses space ID: 2 at filepath: ./mysql/innodb_index_stats.ibd"
     # On Status line, delete affected *.ibd until no error on:
         service mysql start
 
