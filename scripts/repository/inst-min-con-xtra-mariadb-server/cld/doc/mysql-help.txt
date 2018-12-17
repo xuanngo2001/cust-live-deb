@@ -1,6 +1,9 @@
 # Log in mysql server
 	mysql --user=root mysql
-  
+
+# Shutdown mysql
+	mysqladmin -u root -p${ROOT_PASSWORD} shutdown
+
 # View users
 	select user,host from mysql.user;
 
@@ -8,6 +11,7 @@
 	CREATE USER 'root2'@'localhost' IDENTIFIED BY 'password';
 	GRANT ALL PRIVILEGES ON *.* TO 'root2'@'localhost' WITH GRANT OPTION;
 	FLUSH PRIVILEGES;
+# ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")
 
 # Save database table sizes
 	mysql -t -u ${MYSQL_USER} -p${MYSQL_PWD} -h ${MYSQL_HOST} ${MYSQL_DBNAME} <<< "
@@ -32,4 +36,31 @@
 	mysql -uroot2 -ppassword cldTest -e "DESCRIBE Product;" | grep -v ^+ | grep -v 'Field.*Type.*Default.*Extra' | cut -f1 |  sed 's/\(.*\)/set\1(\1):\n\tself.\1=\1/'
 
 	mysql -uroot2 -ppassword cldTest -e "DESCRIBE Product;" | grep -v ^+ | grep -v 'Field.*Type.*Default.*Extra' | cut -f1 |  xargs -n1 ./word.sh
-	
+
+# Export results as CSV file
+	SELECT order_id,product_name,qty
+	FROM orders
+	WHERE foo = 'bar'
+	INTO OUTFILE '/var/lib/mysql-files/orders.csv'
+	FIELDS TERMINATED BY ','
+	ENCLOSED BY '"'
+	LINES TERMINATED BY '\n';
+    
+    # No column names or header, no pipes
+    mysql --skip-column-names --silent -h"${host}" -u${username} -p${password} ${db_name} -e "${query}"
+    
+# Truncate or drop
+    mysql -h localhost -uroot2 -ppassword htstbot -e "TRUNCATE TABLE Price;"
+    mysql -h localhost -uroot2 -ppassword htstbot -e "DROP TABLE Price;"
+
+# Insert data into table from a query.
+    INSERT INTO tbl_temp2 (fld_id)
+        SELECT tbl_temp1.fld_order_id
+        FROM tbl_temp1 WHERE tbl_temp1.fld_order_id > 100;
+
+# String functions: https://dev.mysql.com/doc/refman/8.0/en/string-functions.html#function_instr
+    REPLACE(colname, 'str1', 'replace_str')
+    
+# IN() function: id = 12 or 555 or 888
+    SELECT * from Product WHERE id IN (12, 5555, 888)
+    
