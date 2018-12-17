@@ -4,6 +4,13 @@
 # Shutdown mysql
 	mysqladmin -u root -p${ROOT_PASSWORD} shutdown
 
+# Start / Stop mysql
+	service mysql stop
+	service mysql start
+
+# Check mysql status
+    systemctl status mariadb.service --no-page
+
 # View users
 	select user,host from mysql.user;
 
@@ -11,7 +18,11 @@
 	CREATE USER 'root2'@'localhost' IDENTIFIED BY 'password';
 	GRANT ALL PRIVILEGES ON *.* TO 'root2'@'localhost' WITH GRANT OPTION;
 	FLUSH PRIVILEGES;
-# ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")
+
+# After crash: ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")
+    systemctl status mariadb.service --no-page
+    # On Status line, delete affected *.ibd until no error on:
+        service mysql start
 
 # Save database table sizes
 	mysql -t -u ${MYSQL_USER} -p${MYSQL_PWD} -h ${MYSQL_HOST} ${MYSQL_DBNAME} <<< "
