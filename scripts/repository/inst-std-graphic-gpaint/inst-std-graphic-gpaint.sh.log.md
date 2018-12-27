@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-graphic-gpaint.sh ...
   * After this operation, 712 kB of additional disk space will be used.
   * Install gpaint.
-  * Disk size = 2690396K. Space Used = 784K. Runtime = 00:00:00:04.
+  * Disk size = 2770192K. Space Used = 788K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 gpaint

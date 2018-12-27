@@ -1,6 +1,8 @@
 * >>>>>>>>> Running inst-min-con-xtra-mariadb-server.sh ...
   * After this operation, 189 MB of additional disk space will be used.
-  * Disk size = 2206676K. Space Used = 321336K. Runtime = 00:00:00:46.
+  * Install mariadb-server.
+  * Set root password to [password].
+  * Disk size = 2286440K. Space Used = 321340K. Runtime = 00:00:00:48.
   * The following NEW packages will be installed:
   ```bash
 galera-3 gawk libaio1 libconfig-inifiles-perl libdbi-perl
