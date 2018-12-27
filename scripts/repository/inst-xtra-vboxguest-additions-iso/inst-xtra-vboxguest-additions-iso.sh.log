@@ -5,7 +5,7 @@ Reading state information...
 The following additional packages will be installed:
   binutils gcc-6 libasan3 libcc1-0 libcilkrts5 libgcc-6-dev libitm1 liblsan0
   libmpx2 libtsan0 libubsan0 linux-compiler-gcc-6-x86
-  linux-headers-4.18.0-0.bpo.1-amd64 linux-headers-4.18.0-0.bpo.1-common
+  linux-headers-4.18.0-0.bpo.3-amd64 linux-headers-4.18.0-0.bpo.3-common
   linux-kbuild-4.18
 Suggested packages:
   binutils-doc gcc-6-multilib gcc-6-doc gcc-6-locales libgcc1-dbg libgomp1-dbg
@@ -16,11 +16,11 @@ Recommended packages:
 The following NEW packages will be installed:
   binutils gcc-6 libasan3 libcc1-0 libcilkrts5 libgcc-6-dev libitm1 liblsan0
   libmpx2 libtsan0 libubsan0 linux-compiler-gcc-6-x86
-  linux-headers-4.18.0-0.bpo.1-amd64 linux-headers-4.18.0-0.bpo.1-common
+  linux-headers-4.18.0-0.bpo.3-amd64 linux-headers-4.18.0-0.bpo.3-common
   linux-headers-amd64 linux-kbuild-4.18
-0 upgraded, 16 newly installed, 0 to remove and 19 not upgraded.
-Need to get 24.3 MB of archives.
-After this operation, 123 MB of additional disk space will be used.
+0 upgraded, 16 newly installed, 0 to remove and 20 not upgraded.
+Need to get 25.1 MB of archives.
+After this operation, 124 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 binutils amd64 2.28-5 [3,770 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libcc1-0 amd64 6.3.0-18+deb9u1 [30.6 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libitm1 amd64 6.3.0-18+deb9u1 [27.3 kB]
@@ -32,12 +32,12 @@ Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libcilk
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmpx2 amd64 6.3.0-18+deb9u1 [11.2 kB]
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgcc-6-dev amd64 6.3.0-18+deb9u1 [2,296 kB]
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gcc-6 amd64 6.3.0-18+deb9u1 [6,900 kB]
-Get:12 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-compiler-gcc-6-x86 amd64 4.18.6-1~bpo9+1 [612 kB]
-Get:13 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.18.0-0.bpo.1-common all 4.18.6-1~bpo9+1 [8,459 kB]
-Get:14 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-kbuild-4.18 amd64 4.18.6-1~bpo9+1 [850 kB]
-Get:15 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.18.0-0.bpo.1-amd64 amd64 4.18.6-1~bpo9+1 [473 kB]
-Get:16 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-amd64 amd64 4.18+98~bpo9+1 [6,698 B]
-Fetched 24.3 MB in 0s (46.4 MB/s)
+Get:12 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-compiler-gcc-6-x86 amd64 4.18.20-2~bpo9+1 [655 kB]
+Get:13 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.18.0-0.bpo.3-common all 4.18.20-2~bpo9+1 [8,504 kB]
+Get:14 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-kbuild-4.18 amd64 4.18.20-2~bpo9+1 [894 kB]
+Get:15 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.18.0-0.bpo.3-amd64 amd64 4.18.20-2~bpo9+1 [1,127 kB]
+Get:16 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-amd64 amd64 4.18+100~bpo9+1 [6,754 B]
+Fetched 25.1 MB in 0s (43.2 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -62,7 +62,7 @@ The following NEW packages will be installed:
   libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libgcc-6-dev
   libitm1 liblsan0 libmpx2 libstdc++-6-dev libtsan0 libubsan0 linux-libc-dev
   make patch
-0 upgraded, 24 newly installed, 0 to remove and 19 not upgraded.
+0 upgraded, 24 newly installed, 0 to remove and 20 not upgraded.
 Need to get 15.9 MB/29.8 MB of archives.
 After this operation, 133 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc-dev-bin amd64 2.24-11+deb9u3 [258 kB]
@@ -78,9 +78,9 @@ Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 patch 
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dpkg-dev all 1.18.25 [1,595 kB]
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 build-essential amd64 12.3 [7,346 B]
 Get:13 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 dkms all 2.6.1-1~bpo9+1 [74.1 kB]
-Fetched 15.9 MB in 0s (39.9 MB/s)
+Fetched 15.9 MB in 0s (38.7 MB/s)
 Selecting previously unselected package binutils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49638 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49640 files and directories currently installed.)
 Preparing to unpack .../00-binutils_2.28-5_amd64.deb ...
 Unpacking binutils (2.28-5) ...
 Selecting previously unselected package libc-dev-bin.
@@ -183,42 +183,47 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  linux-compiler-gcc-6-x86 linux-headers-4.18.0-0.bpo.1-common
+  linux-compiler-gcc-6-x86 linux-headers-4.18.0-0.bpo.3-common
   linux-kbuild-4.18
 The following NEW packages will be installed:
-  linux-compiler-gcc-6-x86 linux-headers-4.18.0-0.bpo.1-amd64
-  linux-headers-4.18.0-0.bpo.1-common linux-kbuild-4.18
-0 upgraded, 4 newly installed, 0 to remove and 19 not upgraded.
-Need to get 0 B/10.4 MB of archives.
-After this operation, 57.2 MB of additional disk space will be used.
+  linux-compiler-gcc-6-x86 linux-headers-4.18.0-0.bpo.3-amd64
+  linux-headers-4.18.0-0.bpo.3-common linux-kbuild-4.18
+0 upgraded, 4 newly installed, 0 to remove and 20 not upgraded.
+Need to get 0 B/11.2 MB of archives.
+After this operation, 58.0 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-6-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52836 files and directories currently installed.)
-Preparing to unpack .../linux-compiler-gcc-6-x86_4.18.6-1~bpo9+1_amd64.deb ...
-Unpacking linux-compiler-gcc-6-x86 (4.18.6-1~bpo9+1) ...
-Selecting previously unselected package linux-headers-4.18.0-0.bpo.1-common.
-Preparing to unpack .../linux-headers-4.18.0-0.bpo.1-common_4.18.6-1~bpo9+1_all.deb ...
-Unpacking linux-headers-4.18.0-0.bpo.1-common (4.18.6-1~bpo9+1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52838 files and directories currently installed.)
+Preparing to unpack .../linux-compiler-gcc-6-x86_4.18.20-2~bpo9+1_amd64.deb ...
+Unpacking linux-compiler-gcc-6-x86 (4.18.20-2~bpo9+1) ...
+Selecting previously unselected package linux-headers-4.18.0-0.bpo.3-common.
+Preparing to unpack .../linux-headers-4.18.0-0.bpo.3-common_4.18.20-2~bpo9+1_all.deb ...
+Unpacking linux-headers-4.18.0-0.bpo.3-common (4.18.20-2~bpo9+1) ...
 Selecting previously unselected package linux-kbuild-4.18.
-Preparing to unpack .../linux-kbuild-4.18_4.18.6-1~bpo9+1_amd64.deb ...
-Unpacking linux-kbuild-4.18 (4.18.6-1~bpo9+1) ...
-Selecting previously unselected package linux-headers-4.18.0-0.bpo.1-amd64.
-Preparing to unpack .../linux-headers-4.18.0-0.bpo.1-amd64_4.18.6-1~bpo9+1_amd64.deb ...
-Unpacking linux-headers-4.18.0-0.bpo.1-amd64 (4.18.6-1~bpo9+1) ...
-Setting up linux-headers-4.18.0-0.bpo.1-common (4.18.6-1~bpo9+1) ...
-Setting up linux-compiler-gcc-6-x86 (4.18.6-1~bpo9+1) ...
-Setting up linux-kbuild-4.18 (4.18.6-1~bpo9+1) ...
-Setting up linux-headers-4.18.0-0.bpo.1-amd64 (4.18.6-1~bpo9+1) ...
+Preparing to unpack .../linux-kbuild-4.18_4.18.20-2~bpo9+1_amd64.deb ...
+Unpacking linux-kbuild-4.18 (4.18.20-2~bpo9+1) ...
+Selecting previously unselected package linux-headers-4.18.0-0.bpo.3-amd64.
+Preparing to unpack .../linux-headers-4.18.0-0.bpo.3-amd64_4.18.20-2~bpo9+1_amd64.deb ...
+Unpacking linux-headers-4.18.0-0.bpo.3-amd64 (4.18.20-2~bpo9+1) ...
+Setting up linux-compiler-gcc-6-x86 (4.18.20-2~bpo9+1) ...
+Setting up linux-kbuild-4.18 (4.18.20-2~bpo9+1) ...
+Setting up linux-headers-4.18.0-0.bpo.3-common (4.18.20-2~bpo9+1) ...
+Setting up linux-headers-4.18.0-0.bpo.3-amd64 (4.18.20-2~bpo9+1) ...
 Verifying archive integrity... All good.
-Uncompressing VirtualBox 5.2.22 Guest Additions for Linux........
+Uncompressing VirtualBox 6.0.0 Guest Additions for Linux........
 VirtualBox Guest Additions installer
 Copying additional installer modules ...
 Installing additional modules ...
 VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel modules.  This may take a while.
+VirtualBox Guest Additions: To build modules for other installed kernels, run
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
+VirtualBox Guest Additions: Building the modules for kernel 4.18.0-0.bpo.3-amd64.
 VirtualBox Guest Additions: Running kernel modules will not be replaced until the system is restarted
 VirtualBox Guest Additions: Starting.
+VirtualBox Guest Additions: modprobe vboxsf failed
+Running in chroot, ignoring request.
 CLDS: * WARNING: Use this script only if backport repository doesn't work.
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
-CLDS: * VirtualBox guest additions installed: version: 5.2.22 r126460.
+CLDS: * VirtualBox guest additions installed: version: 6.0.0 r127566.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 4347168K. Space Used = 282232K. Runtime = 00:00:05:38.
+CLDS: * Disk size = 4435712K. Space Used = 285984K. Runtime = 00:00:05:36.
