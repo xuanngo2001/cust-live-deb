@@ -2,7 +2,7 @@
 set -e
 # Description: Display helps.
 #   Add your help file in /usr/local/cld/doc/. (e.g. smartphone-help.txt)
-#     If you want different variation, add symbolic link: cd .../cld/doc && ln -s smartphone-help.txt phone-help.txt 
+#     If you want different name variation, add symbolic link: cd .../cld/doc && ln -s smartphone-help.txt phone-help.txt 
 #   Usage: cld-helph.sh smartphone
 #   Note: from ../inst-min-con-cld-bin/cld/bin
 #	Note: Should handle *: cld-help.sh bash*. Therefore, don't double quote ${help_file}.
