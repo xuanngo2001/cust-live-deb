@@ -31,7 +31,12 @@
 	let index=index+1
 
 # Redirections.
-	# Redirect stdout to one file and stderr to another file:
+	# Redirect stdout to file:
+        command 1> stdout.log
+    # Redirect sterr to file:
+        command 2> error.log
+        
+    # Redirect stdout to one file and stderr to another file:
 		command > out.log 2>error.log
 	# Redirect stderr to stdout (&1), and then redirect stdout to a file:
 		command > out.log 2>&1
