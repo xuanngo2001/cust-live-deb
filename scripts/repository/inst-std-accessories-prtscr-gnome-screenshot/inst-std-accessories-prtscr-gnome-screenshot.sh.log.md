@@ -1,11 +1,10 @@
 * >>>>>>>>> Running inst-std-accessories-prtscr-gnome-screenshot.sh ...
-  * After this operation, 1,923 kB of additional disk space will be used.
+  * After this operation, 1,806 kB of additional disk space will be used.
   * Install gnome-screenshot to be used for PrintScreen key.
   * Insert PrintScreen key binding.
   * By default, screenshots are saved under ~/Pictures/.
-  * Disk size = 2728452K. Space Used = 1768K. Runtime = 00:00:00:07.
+  * Disk size = 2829032K. Space Used = 1592K. Runtime = 00:00:00:06.
   * The following NEW packages will be installed:
   ```bash
-gnome-screenshot libcanberra0 libcanberra-gtk3-0 libltdl7 libtdb1
-libvorbisfile3
+gnome-screenshot libcanberra0 libcanberra-gtk3-0 libltdl7 libvorbisfile3
   ```

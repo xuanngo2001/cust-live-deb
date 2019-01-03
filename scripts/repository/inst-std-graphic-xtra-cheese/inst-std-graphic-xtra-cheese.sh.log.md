@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-cheese.sh ...
-  * After this operation, 120 MB of additional disk space will be used.
+  * After this operation, 121 MB of additional disk space will be used.
   * Install cheese.
   * By default, cheese stores all files in ~/.gnome2/cheese/media . 
-  * Disk size = 3008868K. Space Used = 142028K. Runtime = 00:00:01:19.
+  * Disk size = 2753780K. Space Used = 142712K. Runtime = 00:00:01:21.
   * The following NEW packages will be installed:
   ```bash
 cheese cheese-common gnome-desktop3-data gnome-video-effects gstreamer1.0-clutter-3.0
@@ -20,6 +20,6 @@ libopencv-highgui2.4-deb0 libopencv-imgproc2.4v5 libopencv-objdetect2.4v5 libope
 libraw1394-11 libsbc1 libserd-0-0 libshout3 libsndio6.1
 libsord-0-0 libsoundtouch1 libspandsp2 libsratom-0-0 libsrtp0
 libtag1v5 libtag1v5-vanilla libtbb2 libv4l-0 libv4lconvert0
-libvisual-0.4-0 libvo-aacenc0 libwavpack1 libwebrtc-audio-processing1 libwildmidi2
-libwildmidi-config libx265-95 libzbar0
+libvisual-0.4-0 libvo-aacenc0 libwavpack1 libwebp6 libwebrtc-audio-processing1
+libwildmidi2 libwildmidi-config libx265-95 libzbar0
   ```

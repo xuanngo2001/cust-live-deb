@@ -10,7 +10,7 @@
   * Add google chrome alias, chrome.
   * Set default browser: update-alternatives --config x-www-browser.
   * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-  * Disk size = 3354364K. Space Used = 258588K. Runtime = 00:00:00:27.
+  * Disk size = 3454972K. Space Used = 258604K. Runtime = 00:00:00:30.
   * The following NEW packages will be installed:
   ```bash
 distro-info-data gconf2-common gconf-service google-chrome-stable libappindicator1

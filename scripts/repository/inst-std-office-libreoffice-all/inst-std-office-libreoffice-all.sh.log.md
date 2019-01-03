@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-std-office-libreoffice-all.sh ...
   * After this operation, 378 MB of additional disk space will be used.
-  * Install LibreOffice 6.1.3.1 10(Build:1).
+  * Install LibreOffice 6.1.4.2 10(Build:2).
   * Install Office Suite: Word processor.
   * Install Office Suite: Spreadsheet.
   * Install Office Suite: Presentation.
@@ -8,7 +8,7 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 4055804K. Space Used = 489544K. Runtime = 00:00:02:32.
+  * Disk size = 3899984K. Space Used = 489648K. Runtime = 00:00:02:34.
   * The following NEW packages will be installed:
   ```bash
 coinor-libcbc3 coinor-libcgl1 coinor-libclp1 coinor-libcoinmp1v5 coinor-libcoinutils3v5
