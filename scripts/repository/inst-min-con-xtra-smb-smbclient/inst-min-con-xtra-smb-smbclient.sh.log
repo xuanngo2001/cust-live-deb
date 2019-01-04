@@ -3,31 +3,44 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libarchive13 libsmbclient
+  libarchive13 libicu57 libsmbclient libxml2
 Suggested packages:
   lrzip cifs-utils heimdal-clients
+Recommended packages:
+  xml-core
 The following NEW packages will be installed:
-  libarchive13 libsmbclient smbclient
-0 upgraded, 3 newly installed, 0 to remove and 21 not upgraded.
-Need to get 855 kB of archives.
-After this operation, 2,577 kB of additional disk space will be used.
+  libarchive13 libicu57 libsmbclient libxml2 smbclient
+0 upgraded, 5 newly installed, 0 to remove and 21 not upgraded.
+Need to get 9,475 kB of archives.
+After this operation, 35.5 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libsmbclient amd64 2:4.5.12+dfsg-2+deb9u4 [151 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libarchive13 amd64 3.2.2-2+deb9u1 [294 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 smbclient amd64 2:4.5.12+dfsg-2+deb9u4 [409 kB]
-Fetched 855 kB in 0s (17.4 MB/s)
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libicu57 amd64 57.1-6+deb9u2 [7,700 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxml2 amd64 2.9.4+dfsg1-2.2+deb9u2 [920 kB]
+Get:4 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libarchive13 amd64 3.2.2-2+deb9u1 [294 kB]
+Get:5 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 smbclient amd64 2:4.5.12+dfsg-2+deb9u4 [409 kB]
+Fetched 9,475 kB in 0s (45.2 MB/s)
 Selecting previously unselected package libsmbclient:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25303 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22298 files and directories currently installed.)
 Preparing to unpack .../libsmbclient_2%3a4.5.12+dfsg-2+deb9u4_amd64.deb ...
 Unpacking libsmbclient:amd64 (2:4.5.12+dfsg-2+deb9u4) ...
+Selecting previously unselected package libicu57:amd64.
+Preparing to unpack .../libicu57_57.1-6+deb9u2_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u2) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
 Selecting previously unselected package libarchive13:amd64.
 Preparing to unpack .../libarchive13_3.2.2-2+deb9u1_amd64.deb ...
 Unpacking libarchive13:amd64 (3.2.2-2+deb9u1) ...
 Selecting previously unselected package smbclient.
 Preparing to unpack .../smbclient_2%3a4.5.12+dfsg-2+deb9u4_amd64.deb ...
 Unpacking smbclient (2:4.5.12+dfsg-2+deb9u4) ...
-Setting up libarchive13:amd64 (3.2.2-2+deb9u1) ...
+Setting up libicu57:amd64 (57.1-6+deb9u2) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
 Setting up libsmbclient:amd64 (2:4.5.12+dfsg-2+deb9u4) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libarchive13:amd64 (3.2.2-2+deb9u1) ...
 Setting up smbclient (2:4.5.12+dfsg-2+deb9u4) ...
 Processing triggers for libc-bin (2.24-11+deb9u3) ...
 CLDS: * Install smbclient.
-CLDS: * Disk size = 2451320K. Space Used = 3444K. Runtime = 00:00:00:03.
+CLDS: * Disk size = 2037892K. Space Used = 44096K. Runtime = 00:00:00:07.
