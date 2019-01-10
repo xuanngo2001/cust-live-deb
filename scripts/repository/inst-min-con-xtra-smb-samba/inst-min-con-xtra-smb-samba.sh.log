@@ -5,57 +5,54 @@ Reading state information...
 The following additional packages will be installed:
   libfile-copy-recursive-perl libldb1 libpython-stdlib libpython2.7
   libpython2.7-minimal libpython2.7-stdlib libtalloc2 libtdb1 libtevent0
-  libwbclient0 mime-support python python-crypto python-dnspython python-ldb
-  python-minimal python-samba python-talloc python-tdb python2.7
-  python2.7-minimal samba-common samba-common-bin samba-libs tdb-tools
-  update-inetd
+  libwbclient0 python python-crypto python-dnspython python-ldb python-minimal
+  python-samba python-talloc python-tdb python2.7 python2.7-minimal
+  samba-common samba-common-bin samba-libs tdb-tools update-inetd
 Suggested packages:
   python-doc python-tk python-crypto-dbg python-crypto-doc python-gpgme
   python2.7-doc binutils binfmt-support bind9 bind9utils ctdb ldb-tools
   smbldap-tools winbind ufw heimdal-clients
 Recommended packages:
-  file attr samba-dsdb-modules samba-vfs-modules
+  attr samba-dsdb-modules samba-vfs-modules
 The following NEW packages will be installed:
   libfile-copy-recursive-perl libldb1 libpython-stdlib libpython2.7
   libpython2.7-minimal libpython2.7-stdlib libtalloc2 libtdb1 libtevent0
-  libwbclient0 mime-support python python-crypto python-dnspython python-ldb
-  python-minimal python-samba python-talloc python-tdb python2.7
-  python2.7-minimal samba samba-common samba-common-bin samba-libs tdb-tools
-  update-inetd
-0 upgraded, 27 newly installed, 0 to remove and 21 not upgraded.
+  libwbclient0 python python-crypto python-dnspython python-ldb python-minimal
+  python-samba python-talloc python-tdb python2.7 python2.7-minimal samba
+  samba-common samba-common-bin samba-libs tdb-tools update-inetd
+0 upgraded, 26 newly installed, 0 to remove and 21 not upgraded.
 Need to get 14.4 MB of archives.
-After this operation, 68.9 MB of additional disk space will be used.
+After this operation, 68.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpython2.7-minimal amd64 2.7.13-2+deb9u3 [389 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python2.7-minimal amd64 2.7.13-2+deb9u3 [1,382 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-minimal amd64 2.7.13-2 [40.5 kB]
-Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 mime-support all 3.60 [36.7 kB]
-Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpython2.7-stdlib amd64 2.7.13-2+deb9u3 [1,897 kB]
-Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python2.7 amd64 2.7.13-2+deb9u3 [285 kB]
-Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpython-stdlib amd64 2.7.13-2 [20.0 kB]
-Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python amd64 2.7.13-2 [154 kB]
-Get:9 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libwbclient0 amd64 2:4.5.12+dfsg-2+deb9u4 [124 kB]
-Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-dnspython all 1.15.0-1 [102 kB]
-Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-crypto amd64 2.6.1-7 [259 kB]
-Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtalloc2 amd64 2.1.8-1 [36.3 kB]
-Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtdb1 amd64 1.3.11-2 [43.2 kB]
-Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtevent0 amd64 0.9.31-1 [29.3 kB]
-Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libldb1 amd64 2:1.1.27-1+b1 [114 kB]
-Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpython2.7 amd64 2.7.13-2+deb9u3 [1,071 kB]
-Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-ldb amd64 2:1.1.27-1+b1 [35.0 kB]
-Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-tdb amd64 1.3.11-2 [16.2 kB]
-Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-talloc amd64 2.1.8-1 [11.9 kB]
-Get:20 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 samba-libs amd64 2:4.5.12+dfsg-2+deb9u4 [5,208 kB]
-Get:21 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 python-samba amd64 2:4.5.12+dfsg-2+deb9u4 [1,360 kB]
-Get:22 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 samba-common all 2:4.5.12+dfsg-2+deb9u4 [172 kB]
-Get:23 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 samba-common-bin amd64 2:4.5.12+dfsg-2+deb9u4 [604 kB]
-Get:24 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 tdb-tools amd64 1.3.11-2 [26.5 kB]
-Get:25 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libfile-copy-recursive-perl all 0.38-1 [20.6 kB]
-Get:26 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 update-inetd all 4.44 [20.8 kB]
-Get:27 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 samba amd64 2:4.5.12+dfsg-2+deb9u4 [933 kB]
+Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpython2.7-stdlib amd64 2.7.13-2+deb9u3 [1,897 kB]
+Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python2.7 amd64 2.7.13-2+deb9u3 [285 kB]
+Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpython-stdlib amd64 2.7.13-2 [20.0 kB]
+Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python amd64 2.7.13-2 [154 kB]
+Get:8 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libwbclient0 amd64 2:4.5.12+dfsg-2+deb9u4 [124 kB]
+Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-dnspython all 1.15.0-1 [102 kB]
+Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-crypto amd64 2.6.1-7 [259 kB]
+Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtalloc2 amd64 2.1.8-1 [36.3 kB]
+Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtdb1 amd64 1.3.11-2 [43.2 kB]
+Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtevent0 amd64 0.9.31-1 [29.3 kB]
+Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libldb1 amd64 2:1.1.27-1+b1 [114 kB]
+Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpython2.7 amd64 2.7.13-2+deb9u3 [1,071 kB]
+Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-ldb amd64 2:1.1.27-1+b1 [35.0 kB]
+Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-tdb amd64 1.3.11-2 [16.2 kB]
+Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python-talloc amd64 2.1.8-1 [11.9 kB]
+Get:19 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 samba-libs amd64 2:4.5.12+dfsg-2+deb9u4 [5,208 kB]
+Get:20 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 python-samba amd64 2:4.5.12+dfsg-2+deb9u4 [1,360 kB]
+Get:21 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 samba-common all 2:4.5.12+dfsg-2+deb9u4 [172 kB]
+Get:22 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 samba-common-bin amd64 2:4.5.12+dfsg-2+deb9u4 [604 kB]
+Get:23 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 tdb-tools amd64 1.3.11-2 [26.5 kB]
+Get:24 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libfile-copy-recursive-perl all 0.38-1 [20.6 kB]
+Get:25 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 update-inetd all 4.44 [20.8 kB]
+Get:26 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 samba amd64 2:4.5.12+dfsg-2+deb9u4 [933 kB]
 Preconfiguring packages ...
-Fetched 14.4 MB in 0s (39.4 MB/s)
+Fetched 14.4 MB in 0s (41.5 MB/s)
 Selecting previously unselected package libpython2.7-minimal:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20470 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23506 files and directories currently installed.)
 Preparing to unpack .../0-libpython2.7-minimal_2.7.13-2+deb9u3_amd64.deb ...
 Unpacking libpython2.7-minimal:amd64 (2.7.13-2+deb9u3) ...
 Selecting previously unselected package python2.7-minimal.
@@ -64,24 +61,21 @@ Unpacking python2.7-minimal (2.7.13-2+deb9u3) ...
 Selecting previously unselected package python-minimal.
 Preparing to unpack .../2-python-minimal_2.7.13-2_amd64.deb ...
 Unpacking python-minimal (2.7.13-2) ...
-Selecting previously unselected package mime-support.
-Preparing to unpack .../3-mime-support_3.60_all.deb ...
-Unpacking mime-support (3.60) ...
 Selecting previously unselected package libpython2.7-stdlib:amd64.
-Preparing to unpack .../4-libpython2.7-stdlib_2.7.13-2+deb9u3_amd64.deb ...
+Preparing to unpack .../3-libpython2.7-stdlib_2.7.13-2+deb9u3_amd64.deb ...
 Unpacking libpython2.7-stdlib:amd64 (2.7.13-2+deb9u3) ...
 Selecting previously unselected package python2.7.
-Preparing to unpack .../5-python2.7_2.7.13-2+deb9u3_amd64.deb ...
+Preparing to unpack .../4-python2.7_2.7.13-2+deb9u3_amd64.deb ...
 Unpacking python2.7 (2.7.13-2+deb9u3) ...
 Selecting previously unselected package libpython-stdlib:amd64.
-Preparing to unpack .../6-libpython-stdlib_2.7.13-2_amd64.deb ...
+Preparing to unpack .../5-libpython-stdlib_2.7.13-2_amd64.deb ...
 Unpacking libpython-stdlib:amd64 (2.7.13-2) ...
 Setting up libpython2.7-minimal:amd64 (2.7.13-2+deb9u3) ...
 Setting up python2.7-minimal (2.7.13-2+deb9u3) ...
 Linking and byte-compiling packages for runtime python2.7...
 Setting up python-minimal (2.7.13-2) ...
 Selecting previously unselected package python.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21240 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24252 files and directories currently installed.)
 Preparing to unpack .../00-python_2.7.13-2_amd64.deb ...
 Unpacking python (2.7.13-2) ...
 Selecting previously unselected package libwbclient0:amd64.
@@ -143,7 +137,7 @@ Preparing to unpack .../19-samba_2%3a4.5.12+dfsg-2+deb9u4_amd64.deb ...
 Unpacking samba (2:4.5.12+dfsg-2+deb9u4) ...
 Setting up libtdb1:amd64 (1.3.11-2) ...
 Setting up libwbclient0:amd64 (2:4.5.12+dfsg-2+deb9u4) ...
-Setting up mime-support (3.60) ...
+Processing triggers for mime-support (3.60) ...
 Setting up samba-common (2:4.5.12+dfsg-2+deb9u4) ...
 
 Creating config file /etc/samba/smb.conf with new version
@@ -170,7 +164,7 @@ Setting up samba-libs:amd64 (2:4.5.12+dfsg-2+deb9u4) ...
 Setting up python-samba (2:4.5.12+dfsg-2+deb9u4) ...
 Setting up samba-common-bin (2:4.5.12+dfsg-2+deb9u4) ...
 Setting up samba (2:4.5.12+dfsg-2+deb9u4) ...
-Adding group `sambashare' (GID 111) ...
+Adding group `sambashare' (GID 112) ...
 Done.
 Samba is not being run as an AD Domain Controller, masking samba-ad-dc-service.
 Please ignore the following error about deb-systemd-helper not finding samba-ad-dc-service.
@@ -187,4 +181,4 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Processing triggers for libc-bin (2.24-11+deb9u3) ...
 Processing triggers for systemd (232-25+deb9u6) ...
 CLDS: * Install samba.
-CLDS: * Disk size = 1993796K. Space Used = 97080K. Runtime = 00:00:00:52.
+CLDS: * Disk size = 2448240K. Space Used = 96892K. Runtime = 00:00:00:51.
