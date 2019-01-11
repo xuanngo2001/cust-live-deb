@@ -1,3 +1,6 @@
 # Display content of 2 files in 2 columns: https://unix.stackexchange.com/questions/392655/print-two-files-in-two-columns
     paste -d @ file1 file2 | column -t -n -s @
     pr -Tm file[12]
+
+    paste -d @ <(./script_1.sh) <(./script_2.sh) | column -t -n -s @
+
