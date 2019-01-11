@@ -10,17 +10,20 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   apt-get install -d -y <your-package> 
 
 # Install qalculate-gtk.
-apt-get -y install qalculate-gtk
+    apt-get -y install qalculate-gtk
 
 # Insert qalculate-gtk in Accessories menu.
-sed -i "/Accessories\">/ r jwmrc-menus-acc-qalculate-gtk.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
+    sed -i "/Accessories\">/ r jwmrc-menus-acc-qalculate-gtk.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Create empty ~/.qalculate/ directory to avoid pop up message to fetch exchange rate from the internet.
-mkdir -p "${HOME}/.qalculate"
+    mkdir -p "${HOME}/.qalculate"
+
+# Add to CLD/
+	yes | cp -av ./cld  /usr/local
 
 # Log
-echo "${GV_LOG} * Install qalculate-gtk."
-echo "${GV_LOG} * Create empty ~/.qalculate/ directory to avoid pop up message to fetch exchange rate from the internet."
+    echo "${GV_LOG} * Install qalculate-gtk."
+    echo "${GV_LOG} * Create empty ~/.qalculate/ directory to avoid pop up message to fetch exchange rate from the internet."
 
 #   * >>>>>>>>> Running inst-std-accessories-calc-qalculate-gtk.sh ...
 #     * After this operation, 7,964 kB of additional disk space will be used.
@@ -55,5 +58,3 @@ echo "${GV_LOG} * Create empty ~/.qalculate/ directory to avoid pop up message t
 #     * Install Calculator: galculator.
 #     * Insert galculator in Accessories menu.
 #     * Disk size = 2825140K. Space Used = 1520K.
-
-
