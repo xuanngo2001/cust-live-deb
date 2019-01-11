@@ -25,5 +25,6 @@
 # Example
     numfmt --to=iec-i --field=2,4 --format='%.3f' <<<'tx: 180000 rx: 2000000'
         tx: 175.782Ki rx: 1.908Mi
-    numfmt --grouping 123456789
-        123,456,789
+    
+    numfmt --grouping 12343423455.23353
+        # -> 12,343,423,455.23353 in locale en_US
