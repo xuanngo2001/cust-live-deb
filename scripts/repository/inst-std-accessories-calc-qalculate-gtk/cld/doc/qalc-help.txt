@@ -1,3 +1,8 @@
-# Set big precission so that result is not in scientific notation.
+# Set big precision so that result is not in scientific notation.
     qalc -t -set 'precision 13'
     
+# Disable I/O warning : failed to load external entity "/root/.qalculate/eurofxref-daily.xml"
+    qalc -nocurrencies
+    
+# Display all available SET options.
+    In interactive mode, type "help set"
