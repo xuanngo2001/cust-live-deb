@@ -33,7 +33,7 @@ Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ruby a
 Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 rake all 10.5.0-2 [49.4 kB]
 Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 vim-runtime all 2:8.0.0197-4+deb9u1 [5,407 kB]
 Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 vim-nox amd64 2:8.0.0197-4+deb9u1 [1,144 kB]
-Fetched 12.5 MB in 0s (24.3 MB/s)
+Fetched 12.5 MB in 5s (2,353 kB/s)
 Selecting previously unselected package libgpm2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25386 files and directories currently installed.)
 Preparing to unpack .../00-libgpm2_1.20.4-6.2+b1_amd64.deb ...
@@ -110,5 +110,6 @@ update-alternatives: using /usr/bin/vim.nox to provide /usr/bin/vi (vi) in auto 
 update-alternatives: using /usr/bin/vim.nox to provide /usr/bin/view (view) in auto mode
 update-alternatives: using /usr/bin/vim.nox to provide /usr/bin/ex (ex) in auto mode
 Processing triggers for libc-bin (2.24-11+deb9u3) ...
+'./cld/doc/vim-help.txt' -> '/usr/local/cld/doc/vim-help.txt'
 CLDS: * Install vim-nox.
-CLDS: * Disk size = 2500548K. Space Used = 72992K. Runtime = 00:00:01:04.
+CLDS: * Disk size = 2503164K. Space Used = 72988K. Runtime = 00:00:01:03.
