@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-vim-nox.sh ...
   * After this operation, 55.1 MB of additional disk space will be used.
   * Install vim-nox.
-  * Disk size = 2500548K. Space Used = 72992K. Runtime = 00:00:01:04.
+  * Disk size = 2503164K. Space Used = 72988K. Runtime = 00:00:01:03.
   * The following NEW packages will be installed:
   ```bash
 libgpm2 libpython3.5 libruby2.3 libtcl8.6 libyaml-0-2
