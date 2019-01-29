@@ -1,0 +1,63 @@
+# General output
+    dot -Tpng -o Output.png Input.dot
+
+# Comments
+    // This is a single line comment.
+    /* This is a
+        multiple line
+        comment. */
+    # Lines like this are also ignored.
+    
+# Frequently used attributes
+    digraph G {
+      graph [
+        label="Show general attributes\n that can be used",
+        labelloc=t,	//t=top, b=bottom
+        labeljust=r,	//r=right justified, l=left justified
+        overlap=false, 
+        center=true, 
+        bgcolor=green, 
+        fontcolor=red, 
+        fontsize=24, 
+        rankdir=TB,	// Orientation: TB=Top to Bottom, LR=Left to right
+        URL="G.html",	// Need to generate as ismap to be clickable
+        nodesep=3.0	// increases the separation between nodes
+            ];
+      node    [shape=circle, style=filled, fontname="Courier"];
+      edge    [color=blue]; // dir="none"
+     
+      a [label="Node A", width=1.25, fillcolor=white, color=black, URL="A.html"];
+     
+      {rank=same; "b"; "c";}
+     
+      a -> b [ taillabel="Tail Label", labelangle=45, labeldistance=5, color=red, fontcolor=blue];
+     
+      b -> c [ headlabel="Head Label", 
+        labeldistance=2, 
+        color=transparent, 
+        dir=back		// back=Revert arrow direction, both=arrow on both ends
+        URL="b.html"		// Need to generate as ismap to be clickable
+         ];
+     
+      external_image [label="", shape=box, style=invis, shapefile="image.png"];
+    }
+    
+# Historical event graph
+    # https://stackoverflow.com/a/37573076
+    digraph {
+
+        node [shape=plaintext, fontsize=16];
+
+        past -> 1933 -> 1943 -> 1988 -> 2001 -> 2015 -> future;
+
+        {
+            node [fontsize=14];
+            edge [style=invis];
+
+            a -> b -> c -> d -> e -> f -> g;
+        }       
+
+        {rank=same past -> a }
+        {rank=same 1943 -> c }
+        {rank=same future  g }   
+    }
