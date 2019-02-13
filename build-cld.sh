@@ -18,7 +18,6 @@ set -e
 
 # Log total elapsed time if success.
   if [ $? -eq 0 ]; then
-    iso_filename=$(ls -1 *${system_type}_*.iso | sort -r | head -n1)
     T="$(($(date +%s)-T))"
-    printf "%s: Elapsed time: %02d:%02d:%02d:%02d [DD:HH:MM:SS]\n" "${iso_filename}" "$((T/86400))" "$((T/3600%24))" "$((T/60%60))" "$((T%60))" >> build-elapsed.txt
+    printf "%s: Elapsed time: %02d:%02d:%02d:%02d [DD:HH:MM:SS]\n" "${system_type}" "$((T/86400))" "$((T/3600%24))" "$((T/60%60))" "$((T%60))" >> build-elapsed.txt
   fi
