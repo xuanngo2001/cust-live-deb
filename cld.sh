@@ -28,6 +28,7 @@ DEB_REPO_URL=$2
 	CHROOT_DIR=/media/imdb/chroot/
 	mkdir -p "${CHROOT_DIR}"
 	CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
+	iso_output_dir=$(readlink -ev "/media/sql")
 
 	./cld-umount.sh "${CHROOT_DIR}" || true
 	./cld-debootstrap.sh "${CHROOT_DIR}" "${DEB_REPO_URL}"
@@ -35,7 +36,7 @@ DEB_REPO_URL=$2
 	./cld-chroot.sh "${SYSTEM}" "${CHROOT_DIR}"
 	./cld-umount.sh "${CHROOT_DIR}" || true
 	./cld-chroot-log-backup.sh "${CHROOT_DIR}/root/scripts/logs" "${PWD}"
-	./cld-mkiso.sh "${SYSTEM}" "${CHROOT_DIR}" ignore
+	./cld-mkiso.sh "${SYSTEM}" "${CHROOT_DIR}" "${iso_output_dir}" ignore
 
   
 # Logs.

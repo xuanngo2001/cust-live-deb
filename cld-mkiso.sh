@@ -6,13 +6,14 @@ set -e
 
 SYSTEM=$1
 CHROOT_DIR=$2
-IGNORE_ERROR=$3
+iso_output_dir=$3
+IGNORE_ERROR=$4
 
 # Error Handling
   CMD_EXAMPLES=$(printf "%s\n%s\n%s\n" \
-                        "  e.g. $0 <SYSTEM> <CHROOT_DIR> <IGNORE_ERROR_IS_OPTIONAL>"\
-                        "  e.g. $0 std /path/to/chroot/"\
-                        "  e.g. $0 min /path/to/chroot/ ignore"\
+                        "  e.g. $0 <SYSTEM> <CHROOT_DIR> <iso_output_dir> <IGNORE_ERROR_IS_OPTIONAL>"\
+                        "  e.g. $0 std /path/to/chroot/ /media/iso/"\
+                        "  e.g. $0 min /path/to/chroot/ /media/iso/ ignore"\
                 )
   if [ -z "${SYSTEM}" ]; then
     echo "Error: Please provide the system name. Aborted!"
@@ -26,6 +27,14 @@ IGNORE_ERROR=$3
     exit 1;
   fi
   CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
+  
+  if [ ! -d "${iso_output_dir}" ]; then
+    echo "Error: ISO output directory: ${iso_output_dir}: no such directory. Aborted!"
+    echo "${CMD_EXAMPLES}"
+    exit 1;
+  fi
+  iso_output_dir=$(readlink -ev "${iso_output_dir}") 
+  
 
 IGNORE_ERROR=$(echo "${IGNORE_ERROR}" | tr '[:upper:]' '[:lower:]')
 
@@ -104,7 +113,7 @@ mksquashfs "${CHROOT_DIR}" ./binary/live/filesystem.squashfs -comp xz
 ##################################################################
 # Note: boot.cat is automatically created
 APP_ID=cust-live-deb-64
-ISO_FILENAME="${APP_ID}${SYSTEM}_${DATE_STRING}.iso"
+ISO_FILENAME="${iso_output_dir}/${APP_ID}${SYSTEM}_${DATE_STRING}.iso"
 xorriso -as mkisofs -r -J -joliet-long -l \
 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
 				-A "${APP_ID}"  \
