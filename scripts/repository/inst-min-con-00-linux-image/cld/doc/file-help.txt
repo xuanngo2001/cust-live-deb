@@ -1,0 +1,3 @@
+# Convert file to another character set.
+    character_set=$(file -i "${input_file}"| sed 's/.* charset=//')
+    iconv -f "${character_set}" "${input_file}" -t UTF-8 -o "utf8-${input_file}"
