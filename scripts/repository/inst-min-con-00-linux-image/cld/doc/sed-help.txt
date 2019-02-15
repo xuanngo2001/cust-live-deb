@@ -32,6 +32,9 @@
 # Delete matching line: sed (printing the inverse is faster than actual deletion). Need -n.
 	sed -n '/pattern/!p' input.txt
 
+# Delete all lines up to, before PATTERN line
+    sed -n '/PATTERN/,$p'
+    
 # Insert file content after match.
 	# Insert content of file2.txt into file1.txt after <tag> is found. /r stands for reading in a file.
 		sed '/<tag>/ r file2.txt' file1.txt

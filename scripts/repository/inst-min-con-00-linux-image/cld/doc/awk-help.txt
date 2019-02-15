@@ -24,4 +24,8 @@
 # Thousand separator using printf: %'d
     echo 'thousand|1234456' | awk -F '|' '{printf "%-15s%9'"'"'d\n", $1, $2}'
     echo 21343423 | awk '{ printf("%'"'"'d\n", $0) }'
+    
+#
+    head -1 test.csv | awk '{split($0,f,","); printf "create table test (%s INT, %s VARCHAR(50));",f[1],f[2]}'
+
 
