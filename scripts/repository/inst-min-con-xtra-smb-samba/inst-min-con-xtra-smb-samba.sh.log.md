@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-smb-samba.sh ...
   * After this operation, 68.9 MB of additional disk space will be used.
   * Install samba.
-  * Disk size = 2422404K. Space Used = 96988K. Runtime = 00:00:00:53.
+  * Disk size = 2422396K. Space Used = 96988K. Runtime = 00:00:00:50.
   * The following NEW packages will be installed:
   ```bash
 libfile-copy-recursive-perl libldb1 libpython2.7 libpython2.7-minimal libpython2.7-stdlib

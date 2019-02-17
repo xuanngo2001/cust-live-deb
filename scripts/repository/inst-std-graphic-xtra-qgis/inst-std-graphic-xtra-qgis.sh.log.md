@@ -61,7 +61,7 @@
   * After this operation, 7,942 kB of additional disk space will be used.
   * After this operation, 535 MB of additional disk space will be used.
   * Install qgis.
-  * Disk size = 3777544K. Space Used = 701188K. Runtime = 00:00:04:35.
+  * Disk size = 3777536K. Space Used = 701188K. Runtime = 00:00:04:38.
   * The following NEW packages will be installed:
   ```bash
 fonts-lyx gdal-bin iso-codes libaec0 libarmadillo7
