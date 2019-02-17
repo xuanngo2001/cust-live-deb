@@ -8,6 +8,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
                     
 # Dependency needed from K4.14 -> K4.16.
-apt-get install -d -y libappindicator3-1  # Need after google-chrome v65.0.3325.181.
+apt-get install -s -y libappindicator3-1  # Need after google-chrome v65.0.3325.181.
 
 

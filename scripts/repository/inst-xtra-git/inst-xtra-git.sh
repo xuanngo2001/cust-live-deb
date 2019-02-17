@@ -7,7 +7,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Examples:
-#   apt-get install -d -y <your-package>  # Explicitly download dependent packages 
+#   apt-get install -s -y <your-package>  # Explicitly download dependent packages 
 
 # Install git.
 apt-get -y install git

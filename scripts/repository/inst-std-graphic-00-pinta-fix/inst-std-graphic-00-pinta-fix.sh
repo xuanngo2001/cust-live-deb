@@ -8,9 +8,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Explicitly download dependent packages
-  apt-get install -d -y libmono-system-drawing4.0-cil
-  apt-get install -d -y libmono-cairo4.0-cil
-  apt-get install -d -y libmono-sharpzip4.84-cil
+  apt-get install -s -y libmono-system-drawing4.0-cil
+  apt-get install -s -y libmono-cairo4.0-cil
+  apt-get install -s -y libmono-sharpzip4.84-cil
 
 # Log
   echo "${GV_LOG} * Pinta crashes with mono v4.6.2.7+dfsg-1. Hence, install higher version(5+)."

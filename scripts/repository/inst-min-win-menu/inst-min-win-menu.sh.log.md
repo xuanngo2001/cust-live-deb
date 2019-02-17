@@ -2,7 +2,7 @@
   * After this operation, 1,469 kB of additional disk space will be used.
   * Install menu, an easy way to get installed programs in the menu automatically.
   * For how to use Debian menu, see https://www.debian.org/doc/packaging-manuals/menu.html/ch3.html.
-  * Disk size = 2715832K. Space Used = 1268K. Runtime = 00:00:00:03.
+  * Disk size = 2715824K. Space Used = 1268K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 menu

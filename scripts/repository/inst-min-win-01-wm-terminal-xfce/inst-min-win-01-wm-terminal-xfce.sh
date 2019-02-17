@@ -13,8 +13,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 ####
 
 # Explicitly download dependent packages
-apt-get install -d -y libxfce4ui-2-0
-apt-get install -d -y exo-utils
+apt-get install -s -y libxfce4ui-2-0
+apt-get install -s -y exo-utils
 
 # Install xfce4-terminal.
 apt-get -y install xfce4-terminal

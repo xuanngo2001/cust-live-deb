@@ -10,11 +10,11 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   GF_ADD_SOURCE_LIST live "deb https://download.virtualbox.org/virtualbox/debian stretch contrib"
 
 # Explicitly download dependent packages
-#   apt-get install -d -y <your-package> 
+#   apt-get install -s -y <your-package> 
 
 
 # Install virtualbox.
-  apt-get -y install virtualbox-5.2 libqt5opengl5 libqt5x11extras5
+  apt-get -y install virtualbox-6.0 libqt5opengl5 libqt5x11extras5
 
 
 # Log

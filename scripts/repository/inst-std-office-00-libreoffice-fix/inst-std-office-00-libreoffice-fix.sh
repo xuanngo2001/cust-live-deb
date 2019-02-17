@@ -8,6 +8,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
                     
 # Dependency needed from K4.14 -> K4.16.
-apt-get install -d -y libgpgmepp6  # Missing from backport.
+apt-get install -s -y libgpgmepp6  # Missing from backport.
 
 

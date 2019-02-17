@@ -20,6 +20,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   apt-get -y install xz-utils aptly
   apt-get -y install gpgv1 gnupg1   # Aptly still uses PGP v1.
 
+# Add to CLD/
+	yes | cp -av ./cld  /usr/local
+
 # Log
   echo "${GV_LOG} * Add aptly nightly build repository."
   echo "${GV_LOG} * Install $(aptly version) to create local debian repository."

@@ -3,7 +3,7 @@
   * After this operation, 123 MB of additional disk space will be used.
   * After this operation, 66.9 MB of additional disk space will be used.
   * After this operation, 399 kB of additional disk space will be used.
-  * Disk size = 5770896K. Space Used = 246588K. Runtime = 00:00:04:24.
+  * Disk size = 5768992K. Space Used = 246608K. Runtime = 00:00:04:35.
   * The following NEW packages will be installed:
   ```bash
 binutils build-essential dkms dpkg-dev g++

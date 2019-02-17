@@ -7,7 +7,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly download dependent packages
-  apt-get install -d -y libgphoto2-6 
+  apt-get install -s -y libgphoto2-6 
 
 # Install wine64.
   apt-get -y install wine wine64 fonts-wine

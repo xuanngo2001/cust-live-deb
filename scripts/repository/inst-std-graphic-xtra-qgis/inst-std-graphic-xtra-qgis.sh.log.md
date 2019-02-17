@@ -1,67 +1,7 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-qgis.sh ...
-  * After this operation, 10.2 MB of additional disk space will be used.
-  * After this operation, 3,114 kB of additional disk space will be used.
-  * After this operation, 22.8 MB of additional disk space will be used.
-  * After this operation, 15.8 MB of additional disk space will be used.
-  * After this operation, 2,659 kB of additional disk space will be used.
-  * After this operation, 722 kB of additional disk space will be used.
-  * After this operation, 721 kB of additional disk space will be used.
-  * After this operation, 44.0 kB of additional disk space will be used.
-  * After this operation, 1,700 kB of additional disk space will be used.
-  * After this operation, 88.2 MB of additional disk space will be used.
-  * After this operation, 43.4 MB of additional disk space will be used.
-  * After this operation, 246 MB of additional disk space will be used.
-  * After this operation, 311 MB of additional disk space will be used.
-  * After this operation, 122 MB of additional disk space will be used.
-  * After this operation, 2,625 kB of additional disk space will be used.
-  * After this operation, 12.5 MB of additional disk space will be used.
-  * After this operation, 22.7 MB of additional disk space will be used.
-  * After this operation, 7,239 kB of additional disk space will be used.
-  * After this operation, 204 MB of additional disk space will be used.
-  * After this operation, 238 MB of additional disk space will be used.
-  * After this operation, 200 MB of additional disk space will be used.
-  * After this operation, 221 MB of additional disk space will be used.
-  * After this operation, 6,286 kB of additional disk space will be used.
-  * After this operation, 7,006 kB of additional disk space will be used.
-  * After this operation, 6,425 kB of additional disk space will be used.
-  * After this operation, 13.7 MB of additional disk space will be used.
-  * After this operation, 28.7 MB of additional disk space will be used.
-  * After this operation, 36.1 MB of additional disk space will be used.
-  * After this operation, 32.3 MB of additional disk space will be used.
-  * After this operation, 6,239 kB of additional disk space will be used.
-  * After this operation, 6,575 kB of additional disk space will be used.
-  * After this operation, 104 MB of additional disk space will be used.
-  * After this operation, 6,518 kB of additional disk space will be used.
-  * After this operation, 30.3 MB of additional disk space will be used.
-  * After this operation, 418 MB of additional disk space will be used.
-  * After this operation, 241 MB of additional disk space will be used.
-  * After this operation, 52.5 MB of additional disk space will be used.
-  * After this operation, 52.9 MB of additional disk space will be used.
-  * After this operation, 53.1 MB of additional disk space will be used.
-  * After this operation, 129 MB of additional disk space will be used.
-  * After this operation, 281 kB of additional disk space will be used.
-  * After this operation, 311 MB of additional disk space will be used.
-  * After this operation, 1,308 kB of additional disk space will be used.
-  * After this operation, 58.5 MB of additional disk space will be used.
-  * After this operation, 120 kB of additional disk space will be used.
-  * After this operation, 555 kB of additional disk space will be used.
-  * After this operation, 62.5 kB of additional disk space will be used.
-  * After this operation, 3,219 kB of additional disk space will be used.
-  * After this operation, 2,625 kB of additional disk space will be used.
-  * After this operation, 289 kB of additional disk space will be used.
-  * After this operation, 120 kB of additional disk space will be used.
-  * After this operation, 57.3 kB of additional disk space will be used.
-  * After this operation, 454 kB of additional disk space will be used.
-  * After this operation, 1,702 kB of additional disk space will be used.
-  * After this operation, 12.5 MB of additional disk space will be used.
-  * After this operation, 15.8 MB of additional disk space will be used.
-  * After this operation, 22.7 MB of additional disk space will be used.
-  * After this operation, 24.3 MB of additional disk space will be used.
-  * After this operation, 6,779 kB of additional disk space will be used.
-  * After this operation, 7,942 kB of additional disk space will be used.
   * After this operation, 535 MB of additional disk space will be used.
   * Install qgis.
-  * Disk size = 3777536K. Space Used = 701188K. Runtime = 00:00:04:38.
+  * Disk size = 3773400K. Space Used = 697060K. Runtime = 00:00:04:43.
   * The following NEW packages will be installed:
   ```bash
 fonts-lyx gdal-bin iso-codes libaec0 libarmadillo7

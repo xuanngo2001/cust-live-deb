@@ -7,7 +7,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Fix dependency.
-	apt-get install -d -y libmaxminddb0
+	apt-get install -s -y libmaxminddb0
 
 # Install dependencies.
     debconf-set-selections -v wifite-wireshark.seed

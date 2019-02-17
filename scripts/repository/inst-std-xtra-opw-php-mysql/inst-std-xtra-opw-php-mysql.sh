@@ -7,9 +7,6 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Explicitly list specific packages to ensure they get the latest version from Security/Updates repositories.
-	apt-get install -d -y php7.0-mysql
-
 # Install php-mysql to enable the PDO_MYSQL database driver for PHP and to run Drupal. 
 	apt-get -y install php-mysql
 
