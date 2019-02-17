@@ -3,57 +3,32 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libcap2-bin libgstreamer-plugins-base1.0-0 libgstreamer1.0-0
-  libharfbuzz-icu0 libjavascriptcoregtk-3.0-0 liborc-0.4-0
-Suggested packages:
-  libvisual-0.4-plugins gstreamer1.0-tools
+  libharfbuzz-icu0 libjavascriptcoregtk-3.0-0
 Recommended packages:
-  libpam-cap gstreamer1.0-plugins-base gstreamer1.0-plugins-good geoclue-2.0
+  gstreamer1.0-plugins-base gstreamer1.0-plugins-good geoclue-2.0
 The following NEW packages will be installed:
-  libcap2-bin libgstreamer-plugins-base1.0-0 libgstreamer1.0-0
-  libharfbuzz-icu0 libjavascriptcoregtk-3.0-0 liborc-0.4-0 libwebkitgtk-3.0-0
-0 upgraded, 7 newly installed, 0 to remove and 21 not upgraded.
-Need to get 14.2 MB of archives.
-After this operation, 52.7 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libcap2-bin amd64 1:2.25-1 [26.5 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgstreamer1.0-0 amd64 1.10.4-1 [1,962 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liborc-0.4-0 amd64 1:0.4.26-2 [140 kB]
-Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgstreamer-plugins-base1.0-0 amd64 1.10.4-1 [1,646 kB]
-Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libharfbuzz-icu0 amd64 1.4.2-1 [466 kB]
-Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjavascriptcoregtk-3.0-0 amd64 2.4.11-3 [1,948 kB]
-Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwebkitgtk-3.0-0 amd64 2.4.11-3 [8,057 kB]
-Fetched 14.2 MB in 0s (35.1 MB/s)
-Selecting previously unselected package libcap2-bin.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53799 files and directories currently installed.)
-Preparing to unpack .../0-libcap2-bin_1%3a2.25-1_amd64.deb ...
-Unpacking libcap2-bin (1:2.25-1) ...
-Selecting previously unselected package libgstreamer1.0-0:amd64.
-Preparing to unpack .../1-libgstreamer1.0-0_1.10.4-1_amd64.deb ...
-Unpacking libgstreamer1.0-0:amd64 (1.10.4-1) ...
-Selecting previously unselected package liborc-0.4-0:amd64.
-Preparing to unpack .../2-liborc-0.4-0_1%3a0.4.26-2_amd64.deb ...
-Unpacking liborc-0.4-0:amd64 (1:0.4.26-2) ...
-Selecting previously unselected package libgstreamer-plugins-base1.0-0:amd64.
-Preparing to unpack .../3-libgstreamer-plugins-base1.0-0_1.10.4-1_amd64.deb ...
-Unpacking libgstreamer-plugins-base1.0-0:amd64 (1.10.4-1) ...
+  libharfbuzz-icu0 libjavascriptcoregtk-3.0-0 libwebkitgtk-3.0-0
+0 upgraded, 3 newly installed, 0 to remove and 18 not upgraded.
+Need to get 10.5 MB of archives.
+After this operation, 43.5 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libharfbuzz-icu0 amd64 1.4.2-1 [466 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjavascriptcoregtk-3.0-0 amd64 2.4.11-3 [1,948 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libwebkitgtk-3.0-0 amd64 2.4.11-3 [8,057 kB]
+Fetched 10.5 MB in 0s (33.5 MB/s)
 Selecting previously unselected package libharfbuzz-icu0:amd64.
-Preparing to unpack .../4-libharfbuzz-icu0_1.4.2-1_amd64.deb ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61288 files and directories currently installed.)
+Preparing to unpack .../libharfbuzz-icu0_1.4.2-1_amd64.deb ...
 Unpacking libharfbuzz-icu0:amd64 (1.4.2-1) ...
 Selecting previously unselected package libjavascriptcoregtk-3.0-0:amd64.
-Preparing to unpack .../5-libjavascriptcoregtk-3.0-0_2.4.11-3_amd64.deb ...
+Preparing to unpack .../libjavascriptcoregtk-3.0-0_2.4.11-3_amd64.deb ...
 Unpacking libjavascriptcoregtk-3.0-0:amd64 (2.4.11-3) ...
 Selecting previously unselected package libwebkitgtk-3.0-0:amd64.
-Preparing to unpack .../6-libwebkitgtk-3.0-0_2.4.11-3_amd64.deb ...
+Preparing to unpack .../libwebkitgtk-3.0-0_2.4.11-3_amd64.deb ...
 Unpacking libwebkitgtk-3.0-0:amd64 (2.4.11-3) ...
 Setting up libharfbuzz-icu0:amd64 (1.4.2-1) ...
-Setting up libcap2-bin (1:2.25-1) ...
 Setting up libjavascriptcoregtk-3.0-0:amd64 (2.4.11-3) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
-Setting up liborc-0.4-0:amd64 (1:0.4.26-2) ...
-Setting up libgstreamer1.0-0:amd64 (1.10.4-1) ...
-Setcap worked! gst-ptp-helper is not suid!
-Setting up libgstreamer-plugins-base1.0-0:amd64 (1.10.4-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Setting up libwebkitgtk-3.0-0:amd64 (2.4.11-3) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
 CLDS: * Install libwebkitgtk-3.0-0.
-CLDS: * Disk size = 4264880K. Space Used = 61896K. Runtime = 00:00:00:10.
+CLDS: * Disk size = 4914984K. Space Used = 50892K. Runtime = 00:00:00:06.

@@ -18,7 +18,7 @@ The following NEW packages will be installed:
   libmpx2 libtsan0 libubsan0 linux-compiler-gcc-6-x86
   linux-headers-4.19.0-0.bpo.2-amd64 linux-headers-4.19.0-0.bpo.2-common
   linux-headers-amd64 linux-kbuild-4.19
-0 upgraded, 16 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 16 newly installed, 0 to remove and 18 not upgraded.
 Need to get 23.4 MB of archives.
 After this operation, 123 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 binutils amd64 2.28-5 [3,770 kB]
@@ -37,7 +37,7 @@ Get:13 http://localhost/aptly-repo/master_stretch-backports-main stretch-backpor
 Get:14 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-kbuild-4.19 amd64 4.19.16-1~bpo9+1 [451 kB]
 Get:15 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.19.0-0.bpo.2-amd64 amd64 4.19.16-1~bpo9+1 [690 kB]
 Get:16 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-amd64 amd64 4.19+102~bpo9+1 [6,834 B]
-Fetched 23.4 MB in 0s (43.8 MB/s)
+Fetched 23.4 MB in 0s (28.2 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -62,12 +62,12 @@ The following NEW packages will be installed:
   libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libgcc-6-dev
   libitm1 liblsan0 libmpx2 libstdc++-6-dev libtsan0 libubsan0 linux-libc-dev
   make patch
-0 upgraded, 24 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 24 newly installed, 0 to remove and 18 not upgraded.
 Need to get 15.9 MB/29.8 MB of archives.
 After this operation, 133 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc-dev-bin amd64 2.24-11+deb9u3 [258 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 linux-libc-dev amd64 4.9.130-2 [1,373 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc6-dev amd64 2.24-11+deb9u3 [2,361 kB]
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc-dev-bin amd64 2.24-11+deb9u4 [259 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 linux-libc-dev amd64 4.9.144-3 [1,394 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc6-dev amd64 2.24-11+deb9u4 [2,364 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gcc amd64 4:6.3.0-4 [5,196 B]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libstdc++-6-dev amd64 6.3.0-18+deb9u1 [1,420 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 g++-6 amd64 6.3.0-18+deb9u1 [7,094 kB]
@@ -78,20 +78,20 @@ Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 patch 
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dpkg-dev all 1.18.25 [1,595 kB]
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 build-essential amd64 12.3 [7,346 B]
 Get:13 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 dkms all 2.6.1-4~bpo9+1 [74.5 kB]
-Fetched 15.9 MB in 0s (41.5 MB/s)
+Fetched 15.9 MB in 0s (29.9 MB/s)
 Selecting previously unselected package binutils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55453 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62782 files and directories currently installed.)
 Preparing to unpack .../00-binutils_2.28-5_amd64.deb ...
 Unpacking binutils (2.28-5) ...
 Selecting previously unselected package libc-dev-bin.
-Preparing to unpack .../01-libc-dev-bin_2.24-11+deb9u3_amd64.deb ...
-Unpacking libc-dev-bin (2.24-11+deb9u3) ...
+Preparing to unpack .../01-libc-dev-bin_2.24-11+deb9u4_amd64.deb ...
+Unpacking libc-dev-bin (2.24-11+deb9u4) ...
 Selecting previously unselected package linux-libc-dev:amd64.
-Preparing to unpack .../02-linux-libc-dev_4.9.130-2_amd64.deb ...
-Unpacking linux-libc-dev:amd64 (4.9.130-2) ...
+Preparing to unpack .../02-linux-libc-dev_4.9.144-3_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.9.144-3) ...
 Selecting previously unselected package libc6-dev:amd64.
-Preparing to unpack .../03-libc6-dev_2.24-11+deb9u3_amd64.deb ...
-Unpacking libc6-dev:amd64 (2.24-11+deb9u3) ...
+Preparing to unpack .../03-libc6-dev_2.24-11+deb9u4_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.24-11+deb9u4) ...
 Selecting previously unselected package libcc1-0:amd64.
 Preparing to unpack .../04-libcc1-0_6.3.0-18+deb9u1_amd64.deb ...
 Unpacking libcc1-0:amd64 (6.3.0-18+deb9u1) ...
@@ -158,15 +158,15 @@ Setting up libasan3:amd64 (6.3.0-18+deb9u1) ...
 Setting up libcilkrts5:amd64 (6.3.0-18+deb9u1) ...
 Setting up libubsan0:amd64 (6.3.0-18+deb9u1) ...
 Setting up libtsan0:amd64 (6.3.0-18+deb9u1) ...
-Setting up linux-libc-dev:amd64 (4.9.130-2) ...
+Setting up linux-libc-dev:amd64 (4.9.144-3) ...
 Setting up libdpkg-perl (1.18.25) ...
 Setting up liblsan0:amd64 (6.3.0-18+deb9u1) ...
 Setting up libmpx2:amd64 (6.3.0-18+deb9u1) ...
 Setting up patch (2.7.5-1+deb9u1) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Setting up binutils (2.28-5) ...
-Setting up libc-dev-bin (2.24-11+deb9u3) ...
-Setting up libc6-dev:amd64 (2.24-11+deb9u3) ...
+Setting up libc-dev-bin (2.24-11+deb9u4) ...
+Setting up libc6-dev:amd64 (2.24-11+deb9u4) ...
 Setting up libitm1:amd64 (6.3.0-18+deb9u1) ...
 Setting up libgcc-6-dev:amd64 (6.3.0-18+deb9u1) ...
 Setting up libstdc++-6-dev:amd64 (6.3.0-18+deb9u1) ...
@@ -178,7 +178,7 @@ Setting up dkms (2.6.1-4~bpo9+1) ...
 Setting up g++ (4:6.3.0-4) ...
 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
 Setting up build-essential (12.3) ...
-Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -188,11 +188,11 @@ The following additional packages will be installed:
 The following NEW packages will be installed:
   linux-compiler-gcc-6-x86 linux-headers-4.19.0-0.bpo.2-amd64
   linux-headers-4.19.0-0.bpo.2-common linux-kbuild-4.19
-0 upgraded, 4 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 4 newly installed, 0 to remove and 18 not upgraded.
 Need to get 0 B/9,517 kB of archives.
 After this operation, 56.8 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-6-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58651 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 65980 files and directories currently installed.)
 Preparing to unpack .../linux-compiler-gcc-6-x86_4.19.16-1~bpo9+1_amd64.deb ...
 Unpacking linux-compiler-gcc-6-x86 (4.19.16-1~bpo9+1) ...
 Selecting previously unselected package linux-headers-4.19.0-0.bpo.2-common.
@@ -225,4 +225,4 @@ CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto wind
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: version: 6.0.2 r128162.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 4664804K. Space Used = 288392K. Runtime = 00:00:05:30.
+CLDS: * Disk size = 5314832K. Space Used = 288436K. Runtime = 00:00:05:34.
