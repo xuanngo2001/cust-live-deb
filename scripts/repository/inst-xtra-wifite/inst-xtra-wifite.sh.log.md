@@ -3,7 +3,7 @@
   * After this operation, 95.8 MB of additional disk space will be used.
   * After this operation, 5,158 kB of additional disk space will be used.
   * Install wifite.
-  * Disk size = 4782960K. Space Used = 118156K. Runtime = 00:00:00:53.
+  * Disk size = 5524320K. Space Used = 118156K. Runtime = 00:00:00:56.
   * The following NEW packages will be installed:
   ```bash
 aircrack-ng ethtool hwloc iw libc-ares2

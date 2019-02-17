@@ -1,11 +1,11 @@
 * >>>>>>>>> Running inst-xtra-docker-ce.sh ...
   * After this operation, 411 kB of additional disk space will be used.
-  * After this operation, 22.0 MB of additional disk space will be used.
+  * After this operation, 4,046 kB of additional disk space will be used.
   * Install docker-ce.
-  * Disk size = 4202984K. Space Used = 11920K. Runtime = 00:00:00:15.
+  * Disk size = 4864092K. Space Used = 6392K. Runtime = 00:00:00:13.
   * The following NEW packages will be installed:
   ```bash
 apt-transport-https* ca-certificates* curl* gir1.2-packagekitglib-1.0 gnupg2
-iso-codes libpackagekit-glib2-18 python3-apt python3-dbus python3-gi
-python3-pycurl python3-software-properties python-apt-common software-properties-common
+libpackagekit-glib2-18 python3-apt python3-dbus python3-gi python3-pycurl
+python3-software-properties python-apt-common software-properties-common
   ```
