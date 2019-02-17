@@ -1,3 +1,8 @@
+# Ref
+    http://www.graphviz.org/doc/info/attrs.html
+    http://www.graphviz.org/doc/info/arrows.html
+    https://www.graphviz.org/doc/info/shapes.html
+    
 # General output
     dot -Tpng -o Output.png Input.dot
 
@@ -26,7 +31,7 @@
       node    [shape=circle, style=filled, fontname="Courier"];
       edge    [color=blue]; // dir="none"
      
-      a [label="Node A", width=1.25, fillcolor=white, color=black, URL="A.html"];
+      a [label="Node A", width=1.25, style=filled, fillcolor=white, color=black, URL="A.html"];
      
       {rank=same; "b"; "c";}
      
@@ -61,3 +66,27 @@
         {rank=same 1943 -> c }
         {rank=same future  g }   
     }
+    
+# UML
+    digraph G {
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+
+        node [
+                fontname = "Bitstream Vera Sans"
+                fontsize = 8
+                shape = "record"
+        ]
+
+        edge [
+                fontname = "Bitstream Vera Sans"
+                fontsize = 8
+        ]
+
+        Animal [
+                label = "{Animal|+ name : string\l+ age : int\l|+ die() : void\l}"
+        ]
+    }
+    # The opening and closing curly braces "{" and "}" indicate that we want to create a "record" shape with multiple dividers.
+    # The pipe characters "|" indicate the dividers, we use one to separate the class name from the attributes and another one to separate the methods from the attributes.
+    #Putting the "\l" characters after a line of text indicates the line should be aligned to the left side of the shape and that a new line of text should start.

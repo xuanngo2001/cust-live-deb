@@ -1,0 +1,12 @@
+# Error with gpg: https://qgis.org/en/site/forusers/alldownloads.html#debian-ubuntu
+    wget -O - https://qgis.org/downloads/qgis-2017.gpg.key | gpg --import
+    # Will the following error from aplty:
+        gpgv: Signature made Sat 19 Jan 2019 05:09:15 AM EST using RSA key ID BDF7FB45
+        gpgv: Can't check signature: public key not found
+
+        Looks like some keys are missing in your trusted keyring, you may consider importing them from keyserver:
+
+        gpg --no-default-keyring --keyring trustedkeys.gpg --keyserver pool.sks-keyservers.net --recv-keys CAEB3DC3BDF7FB45
+    
+    gpg --export --armor CAEB3DC3BDF7FB45 | apt-key add -
+    
