@@ -22,7 +22,7 @@
     .quit
     
 # Table and index creation.
-	CREATE TABLE Shelf (  uid            INTEGER PRIMARY KEY AUTO INCREMENT,
+	CREATE TABLE Shelf (  uid            INTEGER PRIMARY KEY AUTOINCREMENT,
 	                      canonical_path TEXT NOT NULL,
 	                      filename       TEXT NOT NULL,
 	                      last_modified  INTEGER NOT NULL,

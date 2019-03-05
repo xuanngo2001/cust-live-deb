@@ -7,8 +7,9 @@ set -e
 URL=http://download.virtualbox.org/virtualbox/5.2.16/VBoxGuestAdditions_5.2.16.iso  # Stretch: K16
 URL=http://download.virtualbox.org/virtualbox/5.2.18/VBoxGuestAdditions_5.2.18.iso
 URL=http://download.virtualbox.org/virtualbox/5.2.22/VBoxGuestAdditions_5.2.22.iso
-URL=http://download.virtualbox.org/virtualbox/6.0.0/VBoxGuestAdditions_6.0.0.iso    # Stretch: K18
-URL=http://download.virtualbox.org/virtualbox/6.0.2/VBoxGuestAdditions_6.0.2.iso
+URL=http://download.virtualbox.org/virtualbox/6.0.0/VBoxGuestAdditions_6.0.0.iso    # Stretch: K4.18
+URL=http://download.virtualbox.org/virtualbox/6.0.2/VBoxGuestAdditions_6.0.2.iso    # Stretch: K4.19
+URL=http://download.virtualbox.org/virtualbox/6.0.4/VBoxGuestAdditions_6.0.4.iso    
 
 # Download ISO if not already exists.
 ISO_FILE=$(basename $URL)

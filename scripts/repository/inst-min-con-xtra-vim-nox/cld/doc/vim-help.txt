@@ -4,8 +4,24 @@ To enter COMMAND mode, press ESC.
 To write text, from COMMAND mode, press i.
 
 # Command:
-	:q 		Quit.
+	:q 		    Quit.
 	:q! 		Quit without saving.
-	:w file.txt 	Save to file.txt.
-	:set number	Display line number.
+    :x          Quit with saving.
+	:w file.txt Save to file.txt.
+    :set number	Display line number.
 	/pattern	Search pattern. Enter to position cursor. Forward(n). Backward(N), ggn, GN.
+    :set wrap!  Turn off wrapping.
+    
+# Highlight on word
+1. Enable search `:set hlsearch`
+1. Place your cursor of word.
+1. Press `*`
+1. Press `n` to go to next occurence.
+1. Press `#` to go to next occurence.
+    https://stackoverflow.com/questions/3431184/highlight-all-occurrence-of-a-selected-word
+    https://vim.fandom.com/wiki/Auto_highlight_current_word_when_idle
+    
+# Wrapping
+    For preventing vim from wrapping long lines I use these two lines in my .vimrc:
+    set nowrap           " do not automatically wrap on load
+    set formatoptions-=t " do not automatically wrap text when typing
