@@ -37,7 +37,7 @@ The following NEW packages will be installed:
   gpgconf gpgsm
 The following packages will be upgraded:
   gnupg gpgv libassuan0
-3 upgraded, 9 newly installed, 1 to remove and 18 not upgraded.
+3 upgraded, 9 newly installed, 1 to remove and 19 not upgraded.
 Need to get 7,452 kB of archives.
 After this operation, 10.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 libassuan0 amd64 2.5.2-1~bpo9+1 [49.4 kB]
@@ -52,8 +52,8 @@ Get:9 http://localhost/aptly-repo/master_stretch-backports-main stretch-backport
 Get:10 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 gpg-wks-server amd64 2.2.12-1~bpo9+1 [476 kB]
 Get:11 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 gpgsm amd64 2.2.12-1~bpo9+1 [602 kB]
 Get:12 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 gpgv amd64 2.2.12-1~bpo9+1 [581 kB]
-Fetched 7,452 kB in 0s (19.9 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20432 files and directories currently installed.)
+Fetched 7,452 kB in 0s (22.4 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20575 files and directories currently installed.)
 Preparing to unpack .../libassuan0_2.5.2-1~bpo9+1_amd64.deb ...
 Unpacking libassuan0:amd64 (2.5.2-1~bpo9+1) over (2.4.3-2) ...
 Preparing to unpack .../gnupg_2.2.12-1~bpo9+1_all.deb ...
@@ -72,10 +72,10 @@ dpkg: gnupg-agent: dependency problems, but removing anyway as you requested:
   Package gpg-agent is not installed.
   Package gnupg-agent which provides gpg-agent is to be removed.
 
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20405 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20548 files and directories currently installed.)
 Removing gnupg-agent (2.1.18-8~deb9u4) ...
 Selecting previously unselected package gpgconf.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20371 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20514 files and directories currently installed.)
 Preparing to unpack .../0-gpgconf_2.2.12-1~bpo9+1_amd64.deb ...
 Unpacking gpgconf (2.2.12-1~bpo9+1) ...
 Selecting previously unselected package dirmngr.
@@ -129,21 +129,21 @@ Recommended packages:
   gnupg1-curl gnupg1-l10n
 The following NEW packages will be installed:
   aptly gnupg1 gpgv1 xz-utils
-0 upgraded, 4 newly installed, 0 to remove and 18 not upgraded.
+0 upgraded, 4 newly installed, 0 to remove and 19 not upgraded.
 Need to get 4,549 kB of archives.
 After this operation, 16.4 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gpgv1 amd64 1.4.21-4+deb9u1 [203 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xz-utils amd64 5.2.2-1.2+b1 [266 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 gnupg1 amd64 1.4.21-4+deb9u1 [601 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 aptly amd64 1.3.0-5~bpo9+1 [3,480 kB]
-Fetched 4,549 kB in 0s (27.7 MB/s)
+Fetched 4,549 kB in 0s (41.7 MB/s)
 Selecting previously unselected package gpgv1.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20554 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20697 files and directories currently installed.)
 Preparing to unpack .../gpgv1_1.4.21-4+deb9u1_amd64.deb ...
 Unpacking gpgv1 (1.4.21-4+deb9u1) ...
 Setting up gpgv1 (1.4.21-4+deb9u1) ...
 Selecting previously unselected package xz-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20560 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20703 files and directories currently installed.)
 Preparing to unpack .../xz-utils_5.2.2-1.2+b1_amd64.deb ...
 Unpacking xz-utils (5.2.2-1.2+b1) ...
 Selecting previously unselected package gnupg1.
@@ -163,9 +163,9 @@ gnupg1 is already the newest version (1.4.21-4+deb9u1).
 gnupg1 set to manually installed.
 gpgv1 is already the newest version (1.4.21-4+deb9u1).
 gpgv1 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 './cld/doc/aptly-help.txt' -> '/usr/local/cld/doc/aptly-help.txt'
 CLDS: * Add aptly nightly build repository.
 CLDS: * Install aptly version: unknown to create local debian repository.
 CLDS: * Add xz-utils package because aptly snapshot merge needs it.
-CLDS: * Disk size = 1755960K. Space Used = 34492K. Runtime = 00:00:00:23.
+CLDS: * Disk size = 1779380K. Space Used = 34492K. Runtime = 00:00:00:22.
