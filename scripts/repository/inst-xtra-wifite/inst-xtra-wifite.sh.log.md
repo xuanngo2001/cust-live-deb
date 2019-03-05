@@ -1,9 +1,8 @@
 * >>>>>>>>> Running inst-xtra-wifite.sh ...
-  * After this operation, 63.5 kB of additional disk space will be used.
   * After this operation, 95.8 MB of additional disk space will be used.
   * After this operation, 5,158 kB of additional disk space will be used.
   * Install wifite.
-  * Disk size = 5522384K. Space Used = 118148K. Runtime = 00:00:01:02.
+  * Disk size = 5557456K. Space Used = 118160K. Runtime = 00:00:00:58.
   * The following NEW packages will be installed:
   ```bash
 aircrack-ng ethtool hwloc iw libc-ares2
