@@ -18,14 +18,15 @@
 		echo "${arg}"
 	done
 
-# Loop using counter.
+# Loop from specific index and using counter.
 	MAX=5
 	position=11
 	for ((i=0; i < MAX ; i++)); do
 		echo "i=$i , position=$position"
 		let position+=1 # Same as 'i=i+1
 	done
-	
+    echo "Final position=${position}"
+
 # Loop through movie files
 	for movie in *.{mp4,mkv,avi,rmvb}; do
 		echo "${movie}" 
@@ -36,4 +37,9 @@
     do
         echo "$x"
     done
-    
+
+# Take screenshots of the entire screen forever.
+    while true; do
+        sleep 1s
+        magick import -window root screenshot-$(date +%Y-%m-%d_%k.%M.%S).png
+    done

@@ -9,3 +9,7 @@
 # Show filesystem
 	df -Th
 	lsblk -f
+
+# Fix USB
+    Umount USB
+    dosfsck -a /dev/sdb1
