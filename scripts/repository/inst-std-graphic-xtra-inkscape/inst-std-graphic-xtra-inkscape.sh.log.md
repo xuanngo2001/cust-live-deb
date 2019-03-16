@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-inkscape.sh ...
   * After this operation, 166 MB of additional disk space will be used.
   * Install inkscape.
-  * Disk size = 3099776K. Space Used = 158112K. Runtime = 00:00:00:55.
+  * Disk size = 3099832K. Space Used = 158120K. Runtime = 00:00:00:54.
   * The following NEW packages will be installed:
   ```bash
 aspell aspell-en dictionaries-common emacsen-common imagemagick-6-common
