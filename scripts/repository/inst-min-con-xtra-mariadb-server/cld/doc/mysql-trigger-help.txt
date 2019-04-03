@@ -1,0 +1,26 @@
+I am trying to create a trigger for every new row added in total_loaner, I would to add that new row to available_loaner.
+
+
+
+CREATE TRIGGER new_loaner_added 
+AFTER INSERT ON total_loaner
+FOR EACH ROW 
+  INSERT INTO available_loaner (Kind, Type, Sno, Status)
+  VALUES (NEW.Kind, NEW.Type, NEW.Sno, 'Available');
+  
+  
+CREATE TABLE total_loaner (
+  Kind varchar(10) NOT NULL,
+  Type varchar(10) NOT NULL,
+  Sno varchar(10) NOT NULL,
+  PRIMARY KEY (Sno)
+)
+
+CREATE TABLE available_loaner (
+  Kind varchar(10) NOT NULL,
+  Type varchar(10) NOT NULL,
+  Sno varchar(10) NOT NULL,
+  Status char(10) NOT NULL DEFAULT '',
+  PRIMARY KEY (Sno)
+)
+
