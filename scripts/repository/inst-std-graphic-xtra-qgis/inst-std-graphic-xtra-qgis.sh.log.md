@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-qgis.sh ...
   * After this operation, 535 MB of additional disk space will be used.
   * Install qgis.
-  * Disk size = 3796912K. Space Used = 697064K. Runtime = 00:00:04:57.
+  * Disk size = 3917684K. Space Used = 697048K. Runtime = 00:00:04:51.
   * The following NEW packages will be installed:
   ```bash
 fonts-lyx gdal-bin iso-codes libaec0 libarmadillo7
