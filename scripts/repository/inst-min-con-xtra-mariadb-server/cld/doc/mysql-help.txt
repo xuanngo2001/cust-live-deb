@@ -11,6 +11,32 @@
 # Check mysql status
     systemctl status mariadb.service --no-page
 
+# Feed command to mysql
+    echo "select 1" | mysql
+    mysql --batch --silent -e 'SHOW TABLES';
+    mysql < commands.sql
+    mysql --host=localhost --user=user --password=password << END
+
+        CREATE USER 'testuser'@'localhost' IDENTIFIED BY  'jakdJxct8W';
+        CREATE DATABASE IF NOT EXISTS 'testuser_dev' DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+        GRANT ALL PRIVILEGES ON  'testuser_dev' . * TO  'testuser'@'localhost';
+        CREATE DATABASE IF NOT EXISTS 'testuser_qa' DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+        GRANT ALL PRIVILEGES ON  'testuser_qa' . * TO  'testuser'@'localhost';
+        END
+
+    read -d '' SQL_QUERY_1 << EOF
+
+        SELECT prod.id as id, prod.title as title, comp.name as company, pho.id as photo_id, pho.image as photo_name
+        FROM products as prod
+        JOIN accounts as comp
+        ON comp.id = prod.account_id
+        JOIN photos as pho
+        ON pho.id = prod.featured_photo_id;
+
+        EOF
+
+        echo ${SQL_QUERY_1} | mysql
+
 # View users
 	select user,host from mysql.user;
 
@@ -18,6 +44,9 @@
 	CREATE USER 'root2'@'localhost' IDENTIFIED BY 'password';
 	GRANT ALL PRIVILEGES ON *.* TO 'root2'@'localhost' WITH GRANT OPTION;
 	FLUSH PRIVILEGES;
+
+    # Run if new mysql instance is installed.
+    mysql -e "CREATE USER 'root2'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON *.* TO 'root2'@'localhost' WITH GRANT OPTION; FLUSH PRIVILEGES;"
 
 # After crash: ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")
     systemctl status mariadb.service --no-page 
@@ -75,4 +104,54 @@
     
 # IN() function: id = 12 or 555 or 888
     SELECT * from Product WHERE id IN (12, 5555, 888)
+
+# ERROR 1133 (28000): Can't find any matching row in the user table
+# ERROR 1194 (HY000): Table 'user' is marked as crashed and should be repaired
+    mysqlcheck --repair --all-databases
+
+# Import from CSV.
+    -Requiremement: Table must exists first.
+    -Quoting is important.
+            LOAD DATA LOCAL INFILE '/path/to/file.csv'
+                INTO TABLE <tablename>
+                FIELDS TERMINATED BY ','
+                ENCLOSED BY '"'
+                LINES TERMINATED BY '\n'
+                IGNORE 1 LINES
+                (colname1, colname2...)
+                
+        query_drop_table="DROP TABLE IF EXISTS ${table_name}"
+            echo "${query_drop_table}" | mysql -h"${SB_HOST}" -u"${SB_USERNAME}" -p"${SB_PASSWORD}" "${SB_DB_NAME}" 
+        
+        data_type="VARCHAR(255)"
+        query_create_table=$(head -1 "${text_file}" | sed "s/,/ ${data_type}, /g" | sed "s/^/CREATE TABLE ${table_name}(/" | sed "s/$/ ${data_type})/")
+            echo "${query_create_table}" | mysql -h"${SB_HOST}" -u"${SB_USERNAME}" -p"${SB_PASSWORD}" "${SB_DB_NAME}" 
+        
+        query="LOAD DATA LOCAL INFILE '${text_file}'
+                INTO TABLE ${table_name}
+                FIELDS TERMINATED BY ','
+                ENCLOSED BY ''
+                LINES TERMINATED BY '\n'
+                IGNORE 1 LINES
+                "
+        echo "${query}" | mysql --skip-column-names --silent -h"${SB_HOST}" -u"${SB_USERNAME}" -p"${SB_PASSWORD}" "${SB_DB_NAME}" 
+
+# Find users.
+    SELECT User FROM mysql.user;
+    SELECT @@GLOBAL.sql_mode;
     
+# Show processlist
+    SHOW PROCESSLIST
+    
+# How to insert data into MySQL and update if data already exist.
+    -- Update name only.
+    INSERT INTO person (id, name, age) VALUES(1, "john smith", 19) ON DUPLICATE KEY UPDATE name="John Smith";
+
+    -- Update multiple columns.
+    INSERT INTO person (id, name, age) VALUES(1, "john smith", 19) ON DUPLICATE KEY UPDATE name="John Smith", age=99;
+
+    -- Use VALUES() to refer to inserted values.
+    INSERT INTO person (id, name, age) VALUES(1, "john smith", 19) ON DUPLICATE KEY UPDATE name=VALUES(name), age=VALUES(age);
+
+# Return empty string for null value
+    select IFNULL(column1,"") from table
