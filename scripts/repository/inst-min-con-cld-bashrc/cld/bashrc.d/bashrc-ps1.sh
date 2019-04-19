@@ -1,3 +1,4 @@
+# From ..cld-bashrc/
 
 # Define what to display on the command line: e.g. --=[2015-05-26 14:00:32 @root]=--
 # http://askubuntu.com/a/24422
