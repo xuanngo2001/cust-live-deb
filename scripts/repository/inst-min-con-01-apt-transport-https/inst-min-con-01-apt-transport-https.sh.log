@@ -15,9 +15,9 @@ The following NEW packages will be installed:
   libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.4-2
   libldap-common libnghttp2-14 librtmp1 libsasl2-2 libsasl2-modules-db
   libssh2-1 openssl
-0 upgraded, 16 newly installed, 0 to remove and 25 not upgraded.
-Need to get 2811 kB of archives.
-After this operation, 6205 kB of additional disk space will be used.
+0 upgraded, 16 newly installed, 0 to remove and 27 not upgraded.
+Need to get 2813 kB of archives.
+After this operation, 6211 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libkeyutils1 amd64 1.5.9-9 [12.4 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libkrb5support0 amd64 1.15-1+deb9u1 [61.9 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libk5crypto3 amd64 1.15-1+deb9u1 [119 kB]
@@ -29,7 +29,7 @@ Get:8 http://localhost/aptly-repo/master_stretch-backports-main stretch-backport
 Get:9 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 libldap-2.4-2 amd64 2.4.47+dfsg-3~bpo9+1 [223 kB]
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnghttp2-14 amd64 1.18.1-1 [79.1 kB]
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-1+b1 [60.4 kB]
-Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libssh2-1 amd64 1.7.0-1 [138 kB]
+Get:12 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libssh2-1 amd64 1.7.0-1+deb9u1 [139 kB]
 Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libcurl3-gnutls amd64 7.52.1-5+deb9u9 [290 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apt-transport-https amd64 1.4.9 [171 kB]
 Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openssl amd64 1.1.0j-1~deb9u1 [746 kB]
@@ -45,9 +45,9 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 2811 kB in 0s (26.5 MB/s)
+Fetched 2813 kB in 0s (21.6 MB/s)
 Selecting previously unselected package libkeyutils1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13869 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13996 files and directories currently installed.)
 Preparing to unpack .../00-libkeyutils1_1.5.9-9_amd64.deb ...
 Unpacking libkeyutils1:amd64 (1.5.9-9) ...
 Selecting previously unselected package libkrb5support0:amd64.
@@ -81,8 +81,8 @@ Selecting previously unselected package librtmp1:amd64.
 Preparing to unpack .../10-librtmp1_2.4+20151223.gitfa8646d.1-1+b1_amd64.deb ...
 Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-1+b1) ...
 Selecting previously unselected package libssh2-1:amd64.
-Preparing to unpack .../11-libssh2-1_1.7.0-1_amd64.deb ...
-Unpacking libssh2-1:amd64 (1.7.0-1) ...
+Preparing to unpack .../11-libssh2-1_1.7.0-1+deb9u1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.7.0-1+deb9u1) ...
 Selecting previously unselected package libcurl3-gnutls:amd64.
 Preparing to unpack .../12-libcurl3-gnutls_7.52.1-5+deb9u9_amd64.deb ...
 Unpacking libcurl3-gnutls:amd64 (7.52.1-5+deb9u9) ...
@@ -100,7 +100,7 @@ Setting up libldap-common (2.4.47+dfsg-3~bpo9+1) ...
 Setting up libsasl2-modules-db:amd64 (2.1.27~101-g0780600+dfsg-3) ...
 Setting up libsasl2-2:amd64 (2.1.27~101-g0780600+dfsg-3) ...
 Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-1+b1) ...
-Setting up libssh2-1:amd64 (1.7.0-1) ...
+Setting up libssh2-1:amd64 (1.7.0-1+deb9u1) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Setting up libldap-2.4-2:amd64 (2.4.47+dfsg-3~bpo9+1) ...
 Setting up openssl (1.1.0j-1~deb9u1) ...
@@ -124,4 +124,4 @@ Updating certificates in /etc/ssl/certs...
 Running hooks in /etc/ca-certificates/update.d...
 done.
 CLDS: * Install apt-transport-https to support https debian repositories.
-CLDS: * Disk size = 1342608K. Space Used = 10544K. Runtime = 00:00:00:22.
+CLDS: * Disk size = 1349856K. Space Used = 10548K. Runtime = 00:00:00:23.
