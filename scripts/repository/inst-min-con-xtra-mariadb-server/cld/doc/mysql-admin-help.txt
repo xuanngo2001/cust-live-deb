@@ -1,0 +1,16 @@
+# Reduce table size. Make sure that you have enough space in /tmp.    
+    OPTIMZE TABLE tbl_name;
+    
+# The USE_FRM option is available for use if the .MYI index file is missing or 
+#   if its header is corrupted. This option tells MySQL not to trust the information in 
+#   the .MYI file header and to re-create it using information from the .frm file. This kind of repair cannot be done with myisamchk.    
+    REPAIR TABLE tbl_name USE_FRM;
+    
+# Log file are located at /var/log/mysql/error.log
+
+# No valid checkpoint found.
+    cd /var/lib/mysql/
+    mv ib_logfile1 ib_logfile1.bak
+    mv ib_logfile0 ib_logfile0.bak
+    service mysql start
+    # No error.

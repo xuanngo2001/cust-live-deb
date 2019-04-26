@@ -1,0 +1,20 @@
+query="
+            SELECT * FROM 
+                (SELECT ticker_id FROM Indicator WHERE (name='indicator_price' AND value>=2)) AS tprice
+                INNER JOIN
+                (SELECT ticker_id FROM Indicator WHERE (name='indicator_volume' AND value>=100000)) as tvolume
+            USING (ticker_id, ticker_id)
+    "
+
+
+query="
+            SELECT * FROM
+                (
+                    (SELECT DISTINCT ticker_id FROM Indicator WHERE (name='indicator_price' AND value>=2))
+                        UNION ALL
+                    (SELECT DISTINCT ticker_id FROM Indicator WHERE (name='indicator_volume' AND value>=100000))
+                        UNION ALL
+                    (SELECT DISTINCT ticker_id FROM Indicator WHERE (name='indicator_overlap_sma_dir' AND value>0))
+                ) AS tmp
+            GROUP BY ticker_id HAVING COUNT(*) >=3
+    "
