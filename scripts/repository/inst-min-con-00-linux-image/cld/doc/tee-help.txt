@@ -4,3 +4,8 @@
 # Redirect all to stdout-stderr.log
 	(command) 2>&1 | tee -a stdout-stderr_$(date +'%Y-%m-%d.%0k.%M.%S').log
 
+# Tee not showing output with Python script because it buffers stdout when it's not a terminal.
+#   To unbuffer, use the followings:
+    #!/usr/bin/python -u
+    or
+    python -u foo.py | tee log

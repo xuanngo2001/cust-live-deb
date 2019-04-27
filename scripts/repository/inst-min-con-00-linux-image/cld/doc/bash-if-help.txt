@@ -85,3 +85,29 @@
         echo "error: Not a number" >&2; exit 1
     fi
     
+# Modulo
+    if ! ((n % 4)); then
+        echo "$n divisible by 4."
+    fi
+
+# String compare
+    if [ "${a}" == "${b}" ]; then
+        echo "equal"
+    else
+        echo "not equal"
+    fi
+
+# If Sat or Sun, then set to Fri.
+    date_string=$(date +"%Y-%m-%d")
+    day_of_week=$(date +%u)
+    if [ "${day_of_week}" -eq 6 ] || ["${day_of_week}" -eq 7 ]; then
+        date_string=$(date -d "last Friday" +"%Y-%m-%d")
+    fi
+
+# Check for empty directory
+    if [ -z "$(ls -A /path/to/dir)" ]; then
+        echo "Empty"
+    else
+        echo "Not Empty"
+    fi
+    
