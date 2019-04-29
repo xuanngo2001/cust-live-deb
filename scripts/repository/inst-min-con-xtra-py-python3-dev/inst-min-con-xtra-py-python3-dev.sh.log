@@ -17,7 +17,7 @@ The following NEW packages will be installed:
   libpython3-stdlib libpython3.5 libpython3.5-dev libpython3.5-minimal
   libpython3.5-stdlib linux-libc-dev python3 python3-dev python3-minimal
   python3.5 python3.5-dev python3.5-minimal
-0 upgraded, 18 newly installed, 0 to remove and 24 not upgraded.
+0 upgraded, 18 newly installed, 0 to remove and 21 not upgraded.
 Need to get 48.6 MB of archives.
 After this operation, 107 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpython3.5-minimal amd64 3.5.3-1+deb9u1 [573 kB]
@@ -30,7 +30,7 @@ Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpyth
 Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 dh-python all 2.20170125 [86.8 kB]
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python3 amd64 3.5.3-1 [21.6 kB]
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc-dev-bin amd64 2.24-11+deb9u4 [259 kB]
-Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 linux-libc-dev amd64 4.9.144-3 [1,394 kB]
+Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 linux-libc-dev amd64 4.9.168-1 [1,420 kB]
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libc6-dev amd64 2.24-11+deb9u4 [2,364 kB]
 Get:13 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libexpat1-dev amd64 2.2.0-2+deb9u1 [134 kB]
 Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpython3.5 amd64 3.5.3-1+deb9u1 [1,372 kB]
@@ -38,9 +38,9 @@ Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpyt
 Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpython3-dev amd64 3.5.3-1 [18.7 kB]
 Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python3.5-dev amd64 3.5.3-1+deb9u1 [413 kB]
 Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python3-dev amd64 3.5.3-1 [1,154 B]
-Fetched 48.6 MB in 1s (45.5 MB/s)
+Fetched 48.6 MB in 2s (23.8 MB/s)
 Selecting previously unselected package libpython3.5-minimal:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22776 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22780 files and directories currently installed.)
 Preparing to unpack .../0-libpython3.5-minimal_3.5.3-1+deb9u1_amd64.deb ...
 Unpacking libpython3.5-minimal:amd64 (3.5.3-1+deb9u1) ...
 Selecting previously unselected package python3.5-minimal.
@@ -68,15 +68,15 @@ Setting up libpython3.5-minimal:amd64 (3.5.3-1+deb9u1) ...
 Setting up python3.5-minimal (3.5.3-1+deb9u1) ...
 Setting up python3-minimal (3.5.3-1) ...
 Selecting previously unselected package python3.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23692 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23696 files and directories currently installed.)
 Preparing to unpack .../0-python3_3.5.3-1_amd64.deb ...
 Unpacking python3 (3.5.3-1) ...
 Selecting previously unselected package libc-dev-bin.
 Preparing to unpack .../1-libc-dev-bin_2.24-11+deb9u4_amd64.deb ...
 Unpacking libc-dev-bin (2.24-11+deb9u4) ...
 Selecting previously unselected package linux-libc-dev:amd64.
-Preparing to unpack .../2-linux-libc-dev_4.9.144-3_amd64.deb ...
-Unpacking linux-libc-dev:amd64 (4.9.144-3) ...
+Preparing to unpack .../2-linux-libc-dev_4.9.168-1_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.9.168-1) ...
 Selecting previously unselected package libc6-dev:amd64.
 Preparing to unpack .../3-libc6-dev_2.24-11+deb9u4_amd64.deb ...
 Unpacking libc6-dev:amd64 (2.24-11+deb9u4) ...
@@ -99,7 +99,7 @@ Selecting previously unselected package python3-dev.
 Preparing to unpack .../9-python3-dev_3.5.3-1_amd64.deb ...
 Unpacking python3-dev (3.5.3-1) ...
 Processing triggers for mime-support (3.60) ...
-Setting up linux-libc-dev:amd64 (4.9.144-3) ...
+Setting up linux-libc-dev:amd64 (4.9.168-1) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Setting up libc-dev-bin (2.24-11+deb9u4) ...
 Setting up libc6-dev:amd64 (2.24-11+deb9u4) ...
@@ -120,4 +120,4 @@ Setting up dh-python (2.20170125) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 CLDS: * Install python3-dev.
 CLDS: * Require for: tulipy
-CLDS: * Disk size = 2474444K. Space Used = 161364K. Runtime = 00:00:00:54.
+CLDS: * Disk size = 2418548K. Space Used = 161416K. Runtime = 00:00:01:00.

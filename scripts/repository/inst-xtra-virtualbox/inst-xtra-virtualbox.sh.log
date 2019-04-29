@@ -10,27 +10,27 @@ Recommended packages:
   | linux-headers-2.6-amd64 | linux-headers linux-image
 The following NEW packages will be installed:
   libqt5x11extras5 virtualbox-6.0
-0 upgraded, 2 newly installed, 0 to remove and 24 not upgraded.
-Need to get 129 MB of archives.
-After this operation, 265 MB of additional disk space will be used.
+0 upgraded, 2 newly installed, 0 to remove and 21 not upgraded.
+Need to get 108 MB of archives.
+After this operation, 235 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5x11extras5 amd64 5.7.1~20161021-2 [9,970 B]
-Get:2 http://localhost/aptly-repo/master_virtualbox-contrib stretch/contrib amd64 virtualbox-6.0 amd64 6.0.4-128413~Debian~stretch [129 MB]
+Get:2 http://localhost/aptly-repo/master_virtualbox-contrib stretch/contrib amd64 virtualbox-6.0 amd64 6.0.6-130049~Debian~stretch [108 MB]
 Preconfiguring packages ...
-Fetched 129 MB in 2s (47.0 MB/s)
+Fetched 108 MB in 2s (40.2 MB/s)
 Selecting previously unselected package libqt5x11extras5:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66630 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66636 files and directories currently installed.)
 Preparing to unpack .../libqt5x11extras5_5.7.1~20161021-2_amd64.deb ...
 Unpacking libqt5x11extras5:amd64 (5.7.1~20161021-2) ...
 Selecting previously unselected package virtualbox-6.0.
-Preparing to unpack .../virtualbox-6.0_6.0.4-128413~Debian~stretch_amd64.deb ...
-Unpacking virtualbox-6.0 (6.0.4-128413~Debian~stretch) ...
+Preparing to unpack .../virtualbox-6.0_6.0.6-130049~Debian~stretch_amd64.deb ...
+Unpacking virtualbox-6.0 (6.0.6-130049~Debian~stretch) ...
 Setting up libqt5x11extras5:amd64 (5.7.1~20161021-2) ...
 Processing triggers for mime-support (3.60) ...
 Processing triggers for desktop-file-utils (0.23-1) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
-Processing triggers for systemd (232-25+deb9u8) ...
+Processing triggers for systemd (232-25+deb9u11) ...
 Processing triggers for shared-mime-info (1.8-1+deb9u1) ...
-Setting up virtualbox-6.0 (6.0.4-128413~Debian~stretch) ...
+Setting up virtualbox-6.0 (6.0.6-130049~Debian~stretch) ...
 Adding group `vboxusers' (GID 113) ...
 Done.
 Running in chroot, ignoring request.
@@ -48,7 +48,9 @@ The distribution packages containing the headers are probably:
 
 There were problems setting up VirtualBox.  To re-start the set-up process, run
   /sbin/vboxconfig
-as root.
+as root.  If your system is using EFI Secure Boot you may need to sign the
+kernel modules (vboxdrv, vboxnetflt, vboxnetadp, vboxpci) before you can load
+ them. Please see your Linux system's documentation for more information.
 Processing triggers for hicolor-icon-theme (0.15-1) ...
 CLDS: * Install virtualbox.
-CLDS: * Disk size = 4823560K. Space Used = 383148K. Runtime = 00:00:00:52.
+CLDS: * Disk size = 4720124K. Space Used = 332704K. Runtime = 00:00:00:51.

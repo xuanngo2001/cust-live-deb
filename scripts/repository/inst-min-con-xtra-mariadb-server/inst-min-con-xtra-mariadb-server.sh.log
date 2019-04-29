@@ -16,7 +16,7 @@ The following NEW packages will be installed:
   lsof mariadb-client-10.3 mariadb-client-core-10.3 mariadb-common
   mariadb-server mariadb-server-10.3 mariadb-server-core-10.3 mysql-common
   psmisc socat
-0 upgraded, 18 newly installed, 0 to remove and 24 not upgraded.
+0 upgraded, 18 newly installed, 0 to remove and 21 not upgraded.
 Need to get 23.0 MB of archives.
 After this operation, 186 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libmpfr4 amd64 3.1.5-1 [556 kB]
@@ -38,9 +38,9 @@ Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 socat 
 Get:17 http://localhost/aptly-repo/master_mariadb-main stretch/main amd64 mariadb-server-10.3 amd64 1:10.3.14+maria~stretch [4,217 kB]
 Get:18 http://localhost/aptly-repo/master_mariadb-main stretch/main amd64 mariadb-server all 1:10.3.14+maria~stretch [3,068 B]
 Preconfiguring packages ...
-Fetched 23.0 MB in 0s (43.1 MB/s)
+Fetched 23.0 MB in 0s (32.8 MB/s)
 Selecting previously unselected package libmpfr4:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21828 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21832 files and directories currently installed.)
 Preparing to unpack .../libmpfr4_3.1.5-1_amd64.deb ...
 Unpacking libmpfr4:amd64 (3.1.5-1) ...
 Selecting previously unselected package libsigsegv2:amd64.
@@ -49,7 +49,7 @@ Unpacking libsigsegv2:amd64 (2.10-5) ...
 Setting up libmpfr4:amd64 (3.1.5-1) ...
 Setting up libsigsegv2:amd64 (2.10-5) ...
 Selecting previously unselected package gawk.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21850 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21854 files and directories currently installed.)
 Preparing to unpack .../00-gawk_1%3a4.1.4+dfsg-1_amd64.deb ...
 Unpacking gawk (1:4.1.4+dfsg-1) ...
 Selecting previously unselected package mysql-common.
@@ -94,7 +94,7 @@ Unpacking socat (1.7.3.1-2+deb9u1) ...
 Setting up mysql-common (1:10.3.14+maria~stretch) ...
 Setting up mariadb-common (1:10.3.14+maria~stretch) ...
 Selecting previously unselected package mariadb-server-10.3.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22469 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22473 files and directories currently installed.)
 Preparing to unpack .../mariadb-server-10.3_1%3a10.3.14+maria~stretch_amd64.deb ...
 Unpacking mariadb-server-10.3 (1:10.3.14+maria~stretch) ...
 Selecting previously unselected package mariadb-server.
@@ -106,7 +106,7 @@ Setting up gawk (1:4.1.4+dfsg-1) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Setting up libaio1:amd64 (0.3.110-3) ...
 Setting up galera-3 (25.3.26-stretch) ...
-Processing triggers for systemd (232-25+deb9u8) ...
+Processing triggers for systemd (232-25+deb9u11) ...
 Setting up libreadline5:amd64 (5.2+dfsg-3+b1) ...
 Setting up libdbi-perl (1.636-1+b1) ...
 Setting up libwrap0:amd64 (7.6.q-26) ...
@@ -117,24 +117,25 @@ Setting up mariadb-client-10.3 (1:10.3.14+maria~stretch) ...
 Setting up mariadb-server-10.3 (1:10.3.14+maria~stretch) ...
 Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of stop.
-2019-04-16 18:55:10 0 [Note] /usr/sbin/mysqld (mysqld 10.3.14-MariaDB-1:10.3.14+maria~stretch) starting as process 4641 ...
-2019-04-16 18:55:10 0 [Note] InnoDB: Using Linux native AIO
-2019-04-16 18:55:10 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
-2019-04-16 18:55:10 0 [Note] InnoDB: Uses event mutexes
-2019-04-16 18:55:10 0 [Note] InnoDB: Compressed tables use zlib 1.2.8
-2019-04-16 18:55:10 0 [Note] InnoDB: Number of pools: 1
-2019-04-16 18:55:10 0 [Note] InnoDB: Using SSE2 crc32 instructions
-2019-04-16 18:55:10 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
-2019-04-16 18:55:10 0 [Note] InnoDB: Completed initialization of buffer pool
-2019-04-16 18:55:10 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
-2019-04-16 18:55:10 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
-2019-04-16 18:55:10 0 [Note] InnoDB: Creating shared tablespace for temporary tables
-2019-04-16 18:55:10 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
-2019-04-16 18:55:10 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
-2019-04-16 18:55:10 0 [Note] InnoDB: 10.3.14 started; log sequence number 1630815; transaction id 21
-2019-04-16 18:55:10 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
-2019-04-16 18:55:10 0 [Note] Plugin 'FEEDBACK' is disabled.
-2019-04-16 18:55:10 0 [Note] InnoDB: Buffer pool(s) load completed at 190416 18:55:10
+2019-04-29 16:41:46 0 [Note] /usr/sbin/mysqld (mysqld 10.3.14-MariaDB-1:10.3.14+maria~stretch) starting as process 2586 ...
+2019-04-29 16:41:46 0 [Note] InnoDB: Using Linux native AIO
+2019-04-29 16:41:46 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-04-29 16:41:46 0 [Note] InnoDB: Uses event mutexes
+2019-04-29 16:41:46 0 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2019-04-29 16:41:46 0 [Note] InnoDB: Number of pools: 1
+2019-04-29 16:41:46 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-04-29 16:41:46 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2019-04-29 16:41:46 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-04-29 16:41:46 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-04-29 16:41:46 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2019-04-29 16:41:46 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-04-29 16:41:46 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-04-29 16:41:46 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-04-29 16:41:46 0 [Note] InnoDB: Waiting for purge to start
+2019-04-29 16:41:47 0 [Note] InnoDB: 10.3.14 started; log sequence number 1630815; transaction id 21
+2019-04-29 16:41:47 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2019-04-29 16:41:47 0 [Note] Plugin 'FEEDBACK' is disabled.
+2019-04-29 16:41:47 0 [Note] InnoDB: Buffer pool(s) load completed at 190429 16:41:47
 Created symlink /etc/systemd/system/mysql.service → /lib/systemd/system/mariadb.service.
 Created symlink /etc/systemd/system/mysqld.service → /lib/systemd/system/mariadb.service.
 Created symlink /etc/systemd/system/multi-user.target.wants/mariadb.service → /lib/systemd/system/mariadb.service.
@@ -142,12 +143,16 @@ Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
 Setting up mariadb-server (1:10.3.14+maria~stretch) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
-Processing triggers for systemd (232-25+deb9u8) ...
+Processing triggers for systemd (232-25+deb9u11) ...
 './cld/doc/mysql-help.txt' -> '/usr/local/cld/doc/mysql-help.txt'
+'./cld/doc/mysql-alter-help.txt' -> '/usr/local/cld/doc/mysql-alter-help.txt'
+'./cld/doc/mysql-admin-help.txt' -> '/usr/local/cld/doc/mysql-admin-help.txt'
+'./cld/doc/mysql-view-help.txt' -> '/usr/local/cld/doc/mysql-view-help.txt'
+'./cld/doc/mysql-intersect-help.txt' -> '/usr/local/cld/doc/mysql-intersect-help.txt'
 './cld/doc/mysql-data-type-help.txt' -> '/usr/local/cld/doc/mysql-data-type-help.txt'
 './cld/doc/mysql-sql-examples.sql' -> '/usr/local/cld/doc/mysql-sql-examples.sql'
 './cld/doc/mysql-trigger-help.txt' -> '/usr/local/cld/doc/mysql-trigger-help.txt'
 './cld/doc/mysql-aggregate-help.txt' -> '/usr/local/cld/doc/mysql-aggregate-help.txt'
 CLDS: * Install mariadb-server.
 CLDS: * Set root password to [password].
-CLDS: * Disk size = 2289392K. Space Used = 316088K. Runtime = 00:00:00:38.
+CLDS: * Disk size = 2233444K. Space Used = 316108K. Runtime = 00:00:00:41.
