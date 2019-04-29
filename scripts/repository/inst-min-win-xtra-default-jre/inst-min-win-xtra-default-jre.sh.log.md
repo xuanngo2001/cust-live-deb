@@ -1,7 +1,8 @@
 * >>>>>>>>> Running inst-min-win-xtra-default-jre.sh ...
   * Install default-jre.
   * Needed for Sweet Home 3D: java.awt.AWTError: Assistive Technology not found.
-  * Disk size = 2916724K. Space Used = 4K. Runtime = 00:00:00:00.
+  * JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64".
+  * Disk size = 2863236K. Space Used = 4K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 default-jre*

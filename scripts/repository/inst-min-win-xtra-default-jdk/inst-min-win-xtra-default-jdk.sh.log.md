@@ -1,7 +1,8 @@
 * >>>>>>>>> Running inst-min-win-xtra-default-jdk.sh ...
-  * After this operation, 43.6 MB of additional disk space will be used.
+  * After this operation, 44.8 MB of additional disk space will be used.
   * Install default-jdk.
-  * Disk size = 2916720K. Space Used = 52796K. Runtime = 00:00:00:18.
+  * JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64".
+  * Disk size = 2863232K. Space Used = 55188K. Runtime = 00:00:00:21.
   * The following NEW packages will be installed:
   ```bash
 default-jdk default-jdk-headless default-jre libasyncns0 libatk-wrapper-java
