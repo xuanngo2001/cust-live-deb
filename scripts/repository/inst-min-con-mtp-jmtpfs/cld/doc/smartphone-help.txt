@@ -1,8 +1,16 @@
-  # Connect your smartphone.
+# Connect your smartphone.
     mkdir /path/to/your/mount/directory/
     jmtpfs -o allow_other /path/to/your/mount/directory/
-  # Enter your PIN to unlock your smartphone.
+    
+# Enter your PIN to unlock your smartphone.
     cd /path/to/your/mount/directory/
 
-  # Path to your pictures and videos in Android.
-  ....//DCIM/Camera/
+# Path to your pictures and videos in Android.
+    ....//DCIM/Camera/
+
+# Enable USB debugging.
+    On the device, go to Settings > About <device>.
+    Tap the Build number seven times to make Settings > Developer options available.
+    Then enable the USB Debugging option.
+    Tip: You might also want to enable the Stay awake option, to prevent your Android device from sleeping while plugged into the USB port.
+    -Check USB debugging.
