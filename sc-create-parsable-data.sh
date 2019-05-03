@@ -6,7 +6,6 @@ SCRIPT_LOG=install-size-history.txt
 SCRIPT_LOG_PARSABLE=install-size-history.data
 
 SCRIPT_LOG=$(readlink -ev "${SCRIPT_LOG}")
-#SCRIPT_LOG_PARSABLE=$(readlink -ev "${SCRIPT_LOG_PARSABLE}")
 
 # Copy 
   yes | cp "${SCRIPT_LOG}" "${SCRIPT_LOG_PARSABLE}"
