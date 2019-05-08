@@ -40,9 +40,9 @@ Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python
 Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-gtk all 1.7.4+tb2-5~deb9u1 [155 kB]
 Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd all 1.7.4+tb2-5~deb9u1 [24.5 kB]
 Preconfiguring packages ...
-Fetched 3,838 kB in 0s (22.6 MB/s)
+Fetched 3,838 kB in 0s (26.2 MB/s)
 Selecting previously unselected package python-dbus.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59959 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61891 files and directories currently installed.)
 Preparing to unpack .../00-python-dbus_1.2.4-1+b1_amd64.deb ...
 Unpacking python-dbus (1.2.4-1+b1) ...
 Selecting previously unselected package libgirepository-1.0-1:amd64.
@@ -103,6 +103,7 @@ Setting up gir1.2-glib-2.0:amd64 (1.50.0-1+b1) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Processing triggers for systemd (232-25+deb9u11) ...
 Setting up python-cairo (1.8.8-2.2) ...
+Processing triggers for man-db (2.7.6.1-2) ...
 Processing triggers for dbus (1.10.26-0+deb9u1) ...
 Setting up python-dbus (1.2.4-1+b1) ...
 Remove stale byte-compiled files...
@@ -130,4 +131,4 @@ CLDS: * Install Network Manager: wicd.
 CLDS: * Insert Wicd menu in Network.
 CLDS: * Set wicd to run on JWM startup.
 CLDS: * Log at /var/log/wicd/wicd.log.
-CLDS: * Disk size = 4596196K. Space Used = 17072K. Runtime = 00:00:00:24.
+CLDS: * Disk size = 4745988K. Space Used = 17076K. Runtime = 00:00:00:24.

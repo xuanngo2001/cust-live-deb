@@ -38,7 +38,7 @@ Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 socat 
 Get:17 http://localhost/aptly-repo/master_mariadb-main stretch/main amd64 mariadb-server-10.3 amd64 1:10.3.14+maria~stretch [4,217 kB]
 Get:18 http://localhost/aptly-repo/master_mariadb-main stretch/main amd64 mariadb-server all 1:10.3.14+maria~stretch [3,068 B]
 Preconfiguring packages ...
-Fetched 23.0 MB in 0s (32.8 MB/s)
+Fetched 23.0 MB in 0s (37.6 MB/s)
 Selecting previously unselected package libmpfr4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21832 files and directories currently installed.)
 Preparing to unpack .../libmpfr4_3.1.5-1_amd64.deb ...
@@ -117,25 +117,25 @@ Setting up mariadb-client-10.3 (1:10.3.14+maria~stretch) ...
 Setting up mariadb-server-10.3 (1:10.3.14+maria~stretch) ...
 Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of stop.
-2019-04-29 16:41:46 0 [Note] /usr/sbin/mysqld (mysqld 10.3.14-MariaDB-1:10.3.14+maria~stretch) starting as process 2586 ...
-2019-04-29 16:41:46 0 [Note] InnoDB: Using Linux native AIO
-2019-04-29 16:41:46 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
-2019-04-29 16:41:46 0 [Note] InnoDB: Uses event mutexes
-2019-04-29 16:41:46 0 [Note] InnoDB: Compressed tables use zlib 1.2.8
-2019-04-29 16:41:46 0 [Note] InnoDB: Number of pools: 1
-2019-04-29 16:41:46 0 [Note] InnoDB: Using SSE2 crc32 instructions
-2019-04-29 16:41:46 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
-2019-04-29 16:41:46 0 [Note] InnoDB: Completed initialization of buffer pool
-2019-04-29 16:41:46 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
-2019-04-29 16:41:46 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
-2019-04-29 16:41:46 0 [Note] InnoDB: Creating shared tablespace for temporary tables
-2019-04-29 16:41:46 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
-2019-04-29 16:41:46 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
-2019-04-29 16:41:46 0 [Note] InnoDB: Waiting for purge to start
-2019-04-29 16:41:47 0 [Note] InnoDB: 10.3.14 started; log sequence number 1630815; transaction id 21
-2019-04-29 16:41:47 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
-2019-04-29 16:41:47 0 [Note] Plugin 'FEEDBACK' is disabled.
-2019-04-29 16:41:47 0 [Note] InnoDB: Buffer pool(s) load completed at 190429 16:41:47
+2019-05-08 18:53:54 0 [Note] /usr/sbin/mysqld (mysqld 10.3.14-MariaDB-1:10.3.14+maria~stretch) starting as process 5468 ...
+2019-05-08 18:53:54 0 [Note] InnoDB: Using Linux native AIO
+2019-05-08 18:53:54 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-05-08 18:53:54 0 [Note] InnoDB: Uses event mutexes
+2019-05-08 18:53:54 0 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2019-05-08 18:53:54 0 [Note] InnoDB: Number of pools: 1
+2019-05-08 18:53:54 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2019-05-08 18:53:54 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2019-05-08 18:53:54 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-08 18:53:54 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-05-08 18:53:55 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2019-05-08 18:53:55 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-08 18:53:55 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-08 18:53:55 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-05-08 18:53:55 0 [Note] InnoDB: Waiting for purge to start
+2019-05-08 18:53:55 0 [Note] InnoDB: 10.3.14 started; log sequence number 1630815; transaction id 21
+2019-05-08 18:53:55 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2019-05-08 18:53:55 0 [Note] Plugin 'FEEDBACK' is disabled.
+2019-05-08 18:53:55 0 [Note] InnoDB: Buffer pool(s) load completed at 190508 18:53:55
 Created symlink /etc/systemd/system/mysql.service → /lib/systemd/system/mariadb.service.
 Created symlink /etc/systemd/system/mysqld.service → /lib/systemd/system/mariadb.service.
 Created symlink /etc/systemd/system/multi-user.target.wants/mariadb.service → /lib/systemd/system/mariadb.service.
@@ -155,4 +155,4 @@ Processing triggers for systemd (232-25+deb9u11) ...
 './cld/doc/mysql-aggregate-help.txt' -> '/usr/local/cld/doc/mysql-aggregate-help.txt'
 CLDS: * Install mariadb-server.
 CLDS: * Set root password to [password].
-CLDS: * Disk size = 2233444K. Space Used = 316108K. Runtime = 00:00:00:41.
+CLDS: * Disk size = 2233520K. Space Used = 316108K. Runtime = 00:00:00:38.
