@@ -4,25 +4,15 @@ Building dependency tree...
 Reading state information...
 libsensors4 is already the newest version (1:3.4.0-4).
 libsensors4 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 22 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
+libjemalloc1 is already the newest version (3.6.0-9.1).
+libjemalloc1 set to manually installed.
 libgl1-mesa-dri is already the newest version (18.2.8-2~bpo9+1).
 libgl1-mesa-dri set to manually installed.
-The following NEW packages will be installed:
-  libjemalloc1
-0 upgraded, 1 newly installed, 0 to remove and 21 not upgraded.
-Need to get 89.8 kB of archives.
-After this operation, 252 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjemalloc1 amd64 3.6.0-9.1 [89.8 kB]
-Fetched 89.8 kB in 0s (2,299 kB/s)
-Selecting previously unselected package libjemalloc1.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62506 files and directories currently installed.)
-Preparing to unpack .../libjemalloc1_3.6.0-9.1_amd64.deb ...
-Unpacking libjemalloc1 (3.6.0-9.1) ...
-Setting up libjemalloc1 (3.6.0-9.1) ...
-Processing triggers for libc-bin (2.24-11+deb9u4) ...
+0 upgraded, 0 newly installed, 0 to remove and 22 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -46,7 +36,7 @@ The following NEW packages will be installed:
   libopencv-core2.4v5 libopencv-highgui2.4-deb0 libopencv-imgproc2.4v5
   libopenexr22 libopenimageio1.6 libopenvdb3.2 libraw15 libspnav0 libtbb2
   libtinyxml2.6.2v5 libv4l-0 libv4lconvert0 libyaml-cpp0.3v5 libzstd1
-0 upgraded, 35 newly installed, 0 to remove and 21 not upgraded.
+0 upgraded, 35 newly installed, 0 to remove and 22 not upgraded.
 Need to get 48.1 MB of archives.
 After this operation, 235 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 blender-data all 2.79.b+dfsg0-1~deb9u1 [12.3 MB]
@@ -85,9 +75,9 @@ Get:33 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libope
 Get:34 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libspnav0 amd64 0.2.3-1 [8,476 B]
 Get:35 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 blender amd64 2.79.b+dfsg0-1~deb9u1 [26.7 MB]
 Extracting templates from packages: 85%Extracting templates from packages: 100%
-Fetched 48.1 MB in 1s (40.1 MB/s)
+Fetched 48.1 MB in 11s (4,347 kB/s)
 Selecting previously unselected package blender-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62512 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49265 files and directories currently installed.)
 Preparing to unpack .../00-blender-data_2.79.b+dfsg0-1~deb9u1_all.deb ...
 Unpacking blender-data (2.79.b+dfsg0-1~deb9u1) ...
 Selecting previously unselected package fonts-dejavu-extra.
@@ -213,7 +203,6 @@ Setting up libilmbase12:amd64 (2.2.0-12) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Setting up libboost-atomic1.62.0:amd64 (1.62.0+dfsg-4) ...
 Setting up libglew2.0:amd64 (2.0.0-3+b1) ...
-Processing triggers for man-db (2.7.6.1-2) ...
 Setting up libopenal1:amd64 (1:1.17.2-4+b2) ...
 Setting up fonts-dejavu-extra (2.37-1) ...
 Processing triggers for hicolor-icon-theme (0.15-1) ...
@@ -238,4 +227,4 @@ CLDS: * Install required packages for blender.
 CLDS: * Install blender3d.
 CLDS: * Insert Blender 3D menu in Graphics.
 CLDS: * http://download.blender.org/release/
-CLDS: * Disk size = 4996328K. Space Used = 249252K. Runtime = 00:00:01:05.
+CLDS: * Disk size = 4041104K. Space Used = 248876K. Runtime = 00:00:01:16.
