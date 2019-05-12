@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-inet-xtra-google-chrome-keyring.sh ...
   * Add google keyring.
-  * Disk size = 4348432K. Space Used = 24K. Runtime = 00:00:00:01.
+  * Disk size = 3295880K. Space Used = 16K. Runtime = 00:00:00:01.
