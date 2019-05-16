@@ -20,9 +20,9 @@ The following NEW packages will be installed:
   libqt5x11extras5 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0
   libxcb-render-util0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
   virtualbox-6.0
-0 upgraded, 19 newly installed, 0 to remove and 22 not upgraded.
-Need to get 116 MB of archives.
-After this operation, 263 MB of additional disk space will be used.
+0 upgraded, 19 newly installed, 0 to remove and 23 not upgraded.
+Need to get 117 MB of archives.
+After this operation, 264 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdouble-conversion1 amd64 2.0.1-4 [33.7 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpcre16-3 amd64 2:8.39-3 [258 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5core5a amd64 5.7.1+dfsg-3+deb9u1 [1,840 kB]
@@ -41,11 +41,11 @@ Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5
 Get:16 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5opengl5 amd64 5.7.1+dfsg-3+deb9u1 [154 kB]
 Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5printsupport5 amd64 5.7.1+dfsg-3+deb9u1 [199 kB]
 Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libqt5x11extras5 amd64 5.7.1~20161021-2 [9,970 B]
-Get:19 http://localhost/aptly-repo/master_virtualbox-contrib stretch/contrib amd64 virtualbox-6.0 amd64 6.0.6-130049~Debian~stretch [108 MB]
+Get:19 http://localhost/aptly-repo/master_virtualbox-contrib stretch/contrib amd64 virtualbox-6.0 amd64 6.0.8-130520~Debian~stretch [108 MB]
 Preconfiguring packages ...
-Fetched 116 MB in 2s (46.4 MB/s)
+Fetched 117 MB in 2s (48.2 MB/s)
 Selecting previously unselected package libdouble-conversion1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56244 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56178 files and directories currently installed.)
 Preparing to unpack .../00-libdouble-conversion1_2.0.1-4_amd64.deb ...
 Unpacking libdouble-conversion1:amd64 (2.0.1-4) ...
 Selecting previously unselected package libpcre16-3:amd64.
@@ -100,8 +100,8 @@ Selecting previously unselected package libqt5x11extras5:amd64.
 Preparing to unpack .../17-libqt5x11extras5_5.7.1~20161021-2_amd64.deb ...
 Unpacking libqt5x11extras5:amd64 (5.7.1~20161021-2) ...
 Selecting previously unselected package virtualbox-6.0.
-Preparing to unpack .../18-virtualbox-6.0_6.0.6-130049~Debian~stretch_amd64.deb ...
-Unpacking virtualbox-6.0 (6.0.6-130049~Debian~stretch) ...
+Preparing to unpack .../18-virtualbox-6.0_6.0.8-130520~Debian~stretch_amd64.deb ...
+Unpacking virtualbox-6.0 (6.0.8-130520~Debian~stretch) ...
 Setting up libxcb-xinerama0:amd64 (1.12-1) ...
 Setting up libxcb-render-util0:amd64 (0.3.9-1) ...
 Setting up libxcb-randr0:amd64 (1.12-1) ...
@@ -126,7 +126,7 @@ Setting up libqt5x11extras5:amd64 (5.7.1~20161021-2) ...
 Setting up libqt5widgets5:amd64 (5.7.1+dfsg-3+deb9u1) ...
 Setting up libqt5printsupport5:amd64 (5.7.1+dfsg-3+deb9u1) ...
 Setting up libqt5opengl5:amd64 (5.7.1+dfsg-3+deb9u1) ...
-Setting up virtualbox-6.0 (6.0.6-130049~Debian~stretch) ...
+Setting up virtualbox-6.0 (6.0.8-130520~Debian~stretch) ...
 Adding group `vboxusers' (GID 112) ...
 Done.
 Running in chroot, ignoring request.
@@ -146,7 +146,7 @@ There were problems setting up VirtualBox.  To re-start the set-up process, run
   /sbin/vboxconfig
 as root.  If your system is using EFI Secure Boot you may need to sign the
 kernel modules (vboxdrv, vboxnetflt, vboxnetadp, vboxpci) before you can load
- them. Please see your Linux system's documentation for more information.
+them. Please see your Linux system's documentation for more information.
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 CLDS: * Install virtualbox.
-CLDS: * Disk size = 4031408K. Space Used = 368928K. Runtime = 00:00:01:06.
+CLDS: * Disk size = 4028820K. Space Used = 369628K. Runtime = 00:00:01:04.
