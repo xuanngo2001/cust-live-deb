@@ -2,7 +2,7 @@
   * After this operation, 7,964 kB of additional disk space will be used.
   * Install qalculate-gtk.
   * Create empty ~/.qalculate/ directory to avoid pop up message to fetch exchange rate from the internet.
-  * Disk size = 2951844K. Space Used = 10304K. Runtime = 00:00:00:10.
+  * Disk size = 2842536K. Space Used = 10320K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 libcln6 libglade2-0 libqalculate5-data libqalculate5v5 qalc

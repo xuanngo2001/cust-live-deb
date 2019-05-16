@@ -4,7 +4,7 @@
   * Insert Wicd menu in Network.
   * Set wicd to run on JWM startup.
   * Log at /var/log/wicd/wicd.log.
-  * Disk size = 3791140K. Space Used = 78672K. Runtime = 00:00:00:53.
+  * Disk size = 3681804K. Space Used = 78696K. Runtime = 00:00:00:53.
   * The following NEW packages will be installed:
   ```bash
 gir1.2-glib-2.0 libblas3 libblas-common libgfortran3 libgirepository-1.0-1
