@@ -55,3 +55,8 @@
 	sed '/ipsum/s/#//g'
 	sed '/ipsum/{s/#//g;s/@/-at-/g;}'
 
+# Insert or append at X line.
+    echo -e 'insert \nbefore \n1st line' | sed '1 i\someString'
+    echo -e 'append \nafter \nX line' | sed '1 a\someString'
+    
+    
