@@ -59,4 +59,6 @@
     echo -e 'insert \nbefore \n1st line' | sed '1 i\someString'
     echo -e 'append \nafter \nX line' | sed '1 a\someString'
     
+# Search and replace at specific line.
+    echo -e 'some \n multiple \n lines.' | sed '2 s/ti/XX/'
     
