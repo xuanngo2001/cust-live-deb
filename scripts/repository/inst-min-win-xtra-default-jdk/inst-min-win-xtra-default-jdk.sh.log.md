@@ -2,7 +2,7 @@
   * After this operation, 44.8 MB of additional disk space will be used.
   * Install default-jdk.
   * JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64".
-  * Disk size = 2768984K. Space Used = 55180K. Runtime = 00:00:00:24.
+  * Disk size = 2769028K. Space Used = 55180K. Runtime = 00:00:00:22.
   * The following NEW packages will be installed:
   ```bash
 default-jdk default-jdk-headless default-jre libasyncns0 libatk-wrapper-java

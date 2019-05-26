@@ -2,7 +2,7 @@
   * Install default-jre.
   * Needed for Sweet Home 3D: java.awt.AWTError: Assistive Technology not found.
   * JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64".
-  * Disk size = 2768992K. Space Used = 8K. Runtime = 00:00:00:00.
+  * Disk size = 2769036K. Space Used = 8K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 default-jre*
