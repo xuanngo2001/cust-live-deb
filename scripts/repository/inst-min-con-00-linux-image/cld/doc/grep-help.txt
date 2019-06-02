@@ -18,3 +18,5 @@
 # Grep whitespaces.
 	grep -v "^[[:space:]]*#"
 
+# Grep dash / hyphen.
+    echo -e "--x---t--\nas" | grep -E '[\-]{2}'
