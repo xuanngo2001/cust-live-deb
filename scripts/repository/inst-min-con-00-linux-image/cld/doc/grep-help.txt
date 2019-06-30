@@ -1,22 +1,44 @@
-# Grep 3 digits.
-	echo 1459mmmm34mm | grep -E [0-9]{3}
-	echo 2786mmmm34mm | grep -E [[:digit:]]{3}
-
-# Grep either pattern1 or pattern2
+# Grep tab using Perl regex
+    grep -P "\t"
+ 
+# Select multiple text patterns(e.g "this" or "that")
+    grep -E "this|that"
+ 
+# Grep either pattern1 or pattern2.
 	grep -e '(pattern1)|(pattern2)'
 	grep '\(pattern1\)\|\(pattern2\)'
-	
+ 
+# Searches in files recursively through directories for pattern, 
+#  while ignoring filename containing ignoreString
+    grep pattern $(find . -type f | grep -v 'ignoreString')
+    grep pattern $(find . -name '*.txt' -or -name '*.java' | grep -v 'ignoreString')
+    grep -E -rn "Your search string" /location/
+ 
+# Show 15 lines before and after
+    grep -C 15
+ 
 # Show row number.  
-	echo -e "one\ntwo"| grep -n ^
-	
+    echo -e "one\ntwo"| grep -n ^
+
 # Show all but highlight pattern found.  
 	echo -e "one\ntwo\nthree"| grep -E 'e|$'
-	
-# Count number of occurrence found. Number of CPUs.
-	grep -c ^processor /proc/cpuinfo
 
-# Grep whitespaces.
-	grep -v "^[[:space:]]*#"
+# Show all lines and highlight pattern.
+    grep -E '^|pattern' file
+
+# Color match term
+    grep --color=auto
+ 
+# Grep whitespaces up to pound key(#)
+    grep -v "^[[:space:]]*#"
+ 
+# Grep 3 digits.
+    echo 1459mmmm34mm | grep -E [0-9]{3}
+    echo 2786mmmm34mm | grep -E [[:digit:]]{3}
 
 # Grep dash / hyphen.
     echo -e "--x---t--\nas" | grep -E '[\-]{2}'
+
+# Count number of occurrence found. Number of CPUs.
+	grep -c ^processor /proc/cpuinfo
+    
