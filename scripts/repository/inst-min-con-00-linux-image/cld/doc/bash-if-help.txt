@@ -44,7 +44,7 @@
 	-w filename - Check if file is writable
 	-x filename - Check if file is executable
 
-# If string is a number.
+# If string is a number. DON'T double quotes variables in if condition.
 	string='bla bla'
 	is_number_regex='^[0-9]+$'
 	if ! [[ "${string}" =~ ${is_number_regex} ]] ; then
@@ -79,13 +79,7 @@
         exit 1;
     fi  
 
-# Is digit: DON'T double quotes variables in if condition.
-    re='^[0-9]+$'
-    if ! [[ $yournumber =~ $re ]] ; then
-        echo "error: Not a number" >&2; exit 1
-    fi
-    
-# Modulo
+# Modulo operation.
     if ! ((n % 4)); then
         echo "$n divisible by 4."
     fi

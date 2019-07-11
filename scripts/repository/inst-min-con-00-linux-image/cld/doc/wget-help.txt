@@ -1,8 +1,12 @@
 # Save as output_filename.html. Or overwrite.
 	wget http://www.google.com -O output_filename.html
 
-# Check internet connection.
-	wget --quite --spider http://google.com
+# Check for internet connection.
+    if wget -q --spider "http://google.com"; then
+        echo "Success, got internet connection!"
+    else
+        echo "Error: No internet connection!"
+    fi    
 
 # Redirect output to standard output.
 	if wget -q "${url}" -O-| grep -qF 'File Not Found'; then
