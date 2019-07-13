@@ -15,3 +15,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Log
 	echo "${GV_LOG} * Install inkscape."
+	
+## Rejected: Need 166 MB.
+##	Use AppImage instead.
+##

@@ -15,5 +15,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Log
   echo "${GV_LOG} * Install libwebkitgtk-3.0-0."
+  echo "${GV_LOG} * Otherwise, eclipse will complain when openning *.md files that XULrunner is not found. No gtk3 for XULrunner."
 
 

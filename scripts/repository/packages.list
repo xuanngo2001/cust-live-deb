@@ -43,7 +43,7 @@ rar
 unrar
 zip
 unzip
-p7zip
+p7zip-full
 # ./inst-min-con-dircolors/inst-min-con-dircolors.sh
 
 # ./inst-min-con-filesystem-dosfstools/inst-min-con-filesystem-dosfstools.sh
@@ -145,6 +145,9 @@ mariadb-server
 poppler-utils
 # ./inst-min-con-xtra-php/inst-min-con-xtra-php.sh
 php
+# ./inst-min-con-xtra-py-python3-dev/inst-min-con-xtra-py-python3-dev.sh
+python3-dev
+libexpat1=2.2.0-2+deb9u1
 # ./inst-min-con-xtra-py-python3-pip/inst-min-con-xtra-py-python3-pip.sh
 python3-pip
 # ./inst-min-con-xtra-smb-samba/inst-min-con-xtra-smb-samba.sh
@@ -230,8 +233,6 @@ dia
 dia-shapes
 # ./inst-std-graphic-xtra-gnuplot-x11/inst-std-graphic-xtra-gnuplot-x11.sh
 gnuplot-x11
-# ./inst-std-graphic-xtra-inkscape/inst-std-graphic-xtra-inkscape.sh
-inkscape
 # ./inst-std-graphic-xtra-qgis/inst-std-graphic-xtra-qgis.sh
 libqjson0
 python-future
@@ -338,6 +339,10 @@ liblept5
 mpv
 # ./inst-std-multimedia-xtra-ffmpeg/inst-std-multimedia-xtra-ffmpeg.sh
 ffmpeg
+# ./inst-std-multimedia-xtra-slop/inst-std-multimedia-xtra-slop.sh
+slop
+# ./inst-std-multimedia-xtra-sr-gromit-mpx/inst-std-multimedia-xtra-sr-gromit-mpx.sh
+gromit-mpx
 # ./inst-std-multimedia-xtra-sr-simplescreenrecorder/inst-std-multimedia-xtra-sr-simplescreenrecorder.sh
 simplescreenrecorder
 # ./inst-std-office-00-libreoffice-fix/inst-std-office-00-libreoffice-fix.sh
@@ -386,6 +391,8 @@ libsensors4
 libgl1-mesa-dri
 libjemalloc1
 blender
+# ./inst-std-xtra-opw-php-curl/inst-std-xtra-opw-php-curl.sh
+php-curl
 # ./inst-std-xtra-opw-php-gd/inst-std-xtra-opw-php-gd.sh
 php-gd
 # ./inst-std-xtra-opw-php-mbstring/inst-std-xtra-opw-php-mbstring.sh
@@ -398,6 +405,13 @@ php-mysql
 php-xml
 # ./inst-std-xtra-opw-php-zip/inst-std-xtra-opw-php-zip.sh
 php-zip
+# ./inst-xtra-atom/inst-xtra-atom.sh
+gconf2
+gvfs-bin
+# ./inst-xtra-compressor-pngcrush/inst-xtra-compressor-pngcrush.sh
+pngcrush
+# ./inst-xtra-compressor-pngquant/inst-xtra-compressor-pngquant.sh
+pngquant
 # ./inst-xtra-docker-ce/inst-xtra-docker-ce.sh
 apt-transport-https
 ca-certificates
@@ -436,6 +450,8 @@ wmctrl
 x11-utils
 # ./inst-xtra-selenium-python-pip/inst-xtra-selenium-python-pip.sh
 python-pip
+# ./inst-xtra-ta-lib/inst-xtra-ta-lib.sh
+build-essential
 # ./inst-xtra-vboxguest-additions-doc/inst-xtra-vboxguest-additions-doc.sh
 
 # ./inst-xtra-vboxguest-additions-iso/inst-xtra-vboxguest-additions-iso.sh
@@ -449,6 +465,8 @@ libnotify-bin
 dkms
 libc6-dev
 virtualbox-guest-x11
+# ./inst-xtra-virtualbox-clean/inst-xtra-virtualbox-clean.sh
+
 # ./inst-xtra-virtualbox/inst-xtra-virtualbox.sh
 virtualbox-6.0
 libqt5opengl5
@@ -472,6 +490,8 @@ icoutils
 p7zip-full
 netcat
 playonlinux
+# ./inst-xtra-zfs-clean/inst-xtra-zfs-clean.sh
+
 # ./inst-xtra-zfs-dkms/inst-xtra-zfs-dkms.sh
 libelf-dev
 linux-headers-amd64
