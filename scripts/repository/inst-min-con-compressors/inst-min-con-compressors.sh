@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   apt-get -y install unrar
   apt-get -y install zip
   apt-get -y install unzip
-  apt-get -y install p7zip
+  apt-get -y install p7zip-full
 
 # Add universal extractor: extract.sh.
   yes | cp -av ./cld/  /usr/local
