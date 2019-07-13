@@ -2,7 +2,7 @@
   * After this operation, 76.0 MB of additional disk space will be used.
   * Install libwebkitgtk-3.0-0.
   * Otherwise, eclipse will complain when openning *.md files that XULrunner is not found. No gtk3 for XULrunner.
-  * Disk size = 3776108K. Space Used = 78464K. Runtime = 00:00:00:48.
+  * Disk size = 3661032K. Space Used = 78460K. Runtime = 00:00:01:09.
   * The following NEW packages will be installed:
   ```bash
 aspell aspell-en dictionaries-common emacsen-common iso-codes
