@@ -16,4 +16,8 @@
 	deb-src http://site.example.com/debian distribution component1 component2 component3
 	deb [ arch=amd64,armel ] http://ftp.debian.org/debian jessie main
 	deb file:/home/jason/debian stable main contrib non-free
+    
+# Install package with specific version.
+    # Install libexpat1 with version 2.2.0-2+deb9u1
+    apt-get -y install libexpat1=2.2.0-2+deb9u1
 	
