@@ -1,6 +1,6 @@
 CLDS:>>>>>>>>> Running inst-std-multimedia-00-debmultimedia-keyring.sh ...
 Selecting previously unselected package deb-multimedia-keyring.
-(Reading database ... 46097 files and directories currently installed.)
+(Reading database ... 44598 files and directories currently installed.)
 Preparing to unpack deb-multimedia-keyring_2016.8.1_all.deb ...
 Unpacking deb-multimedia-keyring (2016.8.1) ...
 Setting up deb-multimedia-keyring (2016.8.1) ...
@@ -26,35 +26,10 @@ Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
 Ign:20 http://dl.google.com/linux/chrome/deb stable InRelease
 Get:21 http://dl.google.com/linux/chrome/deb stable Release [943 B]
 Get:22 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B]
-Get:23 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,104 B]
-Err:23 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages
-  Hash Sum mismatch
-  Hashes of expected file:
-   - Filesize:1104 [weak]
-   - SHA256:77ca2eefc7975f403bc1c9fb2dd97ed4a010d9c0b3f7932f07dd7995fc7c67a1
-   - SHA1:9c0534b7034652963231d629283e83833f706121 [weak]
-   - MD5Sum:14dd8b71c35111b40f1f06c565349097 [weak]
-  Hashes of received file:
-   - SHA256:a9f1cc4e9fd1b21bf238e213f25245dd05ab35190dbe663b3e2301089a4d4978
-   - SHA1:cf8465a18b03ac219c2904b65b2be82f755ab220 [weak]
-   - MD5Sum:a727df2c6ea2d3481f76a1b0eb0524af [weak]
-   - Filesize:1103 [weak]
-  Last modification reported: Wed, 22 May 2019 18:13:21 +0000
-  Release file created at: Wed, 29 May 2019 17:35:47 +0000
-Fetched 2,865 B in 8s (336 B/s)
+Get:23 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,107 B]
+Fetched 2,869 B in 21s (132 B/s)
 Reading package lists...
-E: Failed to fetch http://dl.google.com/linux/chrome/deb/dists/stable/main/binary-amd64/Packages.gz  Hash Sum mismatch
-   Hashes of expected file:
-    - Filesize:1104 [weak]
-    - SHA256:77ca2eefc7975f403bc1c9fb2dd97ed4a010d9c0b3f7932f07dd7995fc7c67a1
-    - SHA1:9c0534b7034652963231d629283e83833f706121 [weak]
-    - MD5Sum:14dd8b71c35111b40f1f06c565349097 [weak]
-   Hashes of received file:
-    - SHA256:a9f1cc4e9fd1b21bf238e213f25245dd05ab35190dbe663b3e2301089a4d4978
-    - SHA1:cf8465a18b03ac219c2904b65b2be82f755ab220 [weak]
-    - MD5Sum:a727df2c6ea2d3481f76a1b0eb0524af [weak]
-    - Filesize:1103 [weak]
-   Last modification reported: Wed, 22 May 2019 18:13:21 +0000
-   Release file created at: Wed, 29 May 2019 17:35:47 +0000
-E: Some index files failed to download. They have been ignored, or old ones used instead.
-CLDS: * Disk size = 3459608K. Space Used = 56K. Runtime = 00:00:00:13.
+CLDS: * Add deb-multimedia keyring.
+CLDS: * Add deb-multimedia repository.
+CLDS: * apt-get update
+CLDS: * Disk size = 3344524K. Space Used = 56K. Runtime = 00:00:00:29.
