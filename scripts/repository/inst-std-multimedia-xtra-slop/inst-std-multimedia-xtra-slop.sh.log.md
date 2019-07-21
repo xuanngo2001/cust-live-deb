@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-std-multimedia-xtra-slop.sh ...
-  * After this operation, 1,338 kB of additional disk space will be used.
+  * After this operation, 1,727 kB of additional disk space will be used.
   * Install slop.
   * Use slop to do area selection before do screen recorder using ffmpeg.
-  * Disk size = 3420876K. Space Used = 2016K. Runtime = 00:00:00:10.
+  * Disk size = 4168104K. Space Used = 2204K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
-libglew2.0 slop
+libglew2.1 libglu1-mesa slop
   ```

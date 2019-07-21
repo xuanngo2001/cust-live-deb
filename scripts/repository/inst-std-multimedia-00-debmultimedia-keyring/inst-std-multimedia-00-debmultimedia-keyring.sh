@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   dpkg -i ${keyring_file} && rm -f ${keyring_file}
 
 # Add deb-multimedia sources list
-  GF_ADD_SOURCE_LIST live "deb http://www.deb-multimedia.org stretch main non-free"
+  GF_ADD_SOURCE_LIST live "deb http://www.deb-multimedia.org buster main non-free"
 
 # Update packages.
   apt-get update

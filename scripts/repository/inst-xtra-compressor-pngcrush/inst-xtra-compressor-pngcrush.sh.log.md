@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-compressor-pngcrush.sh ...
-  * After this operation, 152 kB of additional disk space will be used.
+  * After this operation, 160 kB of additional disk space will be used.
   * Install pngcrush.
-  * Disk size = 3582424K. Space Used = 248K. Runtime = 00:00:00:10.
+  * Disk size = 4351620K. Space Used = 248K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 pngcrush

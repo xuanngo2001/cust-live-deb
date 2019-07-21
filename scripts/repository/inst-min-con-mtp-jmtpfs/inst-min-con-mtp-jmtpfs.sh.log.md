@@ -1,12 +1,12 @@
 * >>>>>>>>> Running inst-min-con-mtp-jmtpfs.sh ...
-  * After this operation, 8,004 kB of additional disk space will be used.
+  * After this operation, 6,889 kB of additional disk space will be used.
   * Install jmtpfs to mount smartphones that use Media Transfer Protocol(MTP).
   *   # Connect your smartphone.
   *   mkdir /path/to/your/mount/directory/
   *   jmtpfs -o allow_other /path/to/your/mount/directory/
   *   # Enter your PIN to unlock your smartphone.
   *   cd /path/to/your/mount/directory/
-  * Disk size = 1568524K. Space Used = 8808K. Runtime = 00:00:00:17.
+  * Disk size = 1570768K. Space Used = 7744K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
 jmtpfs libmagic1 libmagic-mgc libmtp9 libmtp-common

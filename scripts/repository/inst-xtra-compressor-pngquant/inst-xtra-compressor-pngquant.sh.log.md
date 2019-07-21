@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-xtra-compressor-pngquant.sh ...
-  * After this operation, 92.2 kB of additional disk space will be used.
+  * After this operation, 138 kB of additional disk space will be used.
   * Install pngquant.
-  * Disk size = 3582572K. Space Used = 148K. Runtime = 00:00:00:10.
+  * Disk size = 4351864K. Space Used = 244K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
-pngquant
+libimagequant0 pngquant
   ```

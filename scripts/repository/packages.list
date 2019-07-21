@@ -113,8 +113,6 @@ pv
 dirmngr
 xz-utils
 aptly
-gpgv1
-gnupg1
 # ./inst-min-con-xtra-curl/inst-min-con-xtra-curl.sh
 curl
 # ./inst-min-con-xtra-default-jre-headless/inst-min-con-xtra-default-jre-headless.sh
@@ -157,8 +155,6 @@ smbclient
 sqlite3
 # ./inst-min-con-xtra-vim-nox/inst-min-con-xtra-vim-nox.sh
 vim-nox
-# ./inst-min-win-00-00-xorg-fix/inst-min-win-00-00-xorg-fix.sh
-libglapi-mesa=13.0.6-1+b2
 # ./inst-min-win-00-xorg/inst-min-win-00-xorg.sh
 xinit
 xserver-xorg
@@ -317,24 +313,13 @@ libgconf-2-4
 libxss1
 lsb-release
 google-chrome-stable
-# ./inst-std-inet-xtra-google-chrome-keyring/inst-std-inet-xtra-google-chrome-keyring.sh
-
 # ./inst-std-inet-xtra-transmission-gtk/inst-std-inet-xtra-transmission-gtk.sh
 transmission-gtk
 # ./inst-std-multimedia-00-debmultimedia-keyring/inst-std-multimedia-00-debmultimedia-keyring.sh
 
+# ./inst-std-multimedia-mpv-fix/inst-std-multimedia-mpv-fix.sh
+libtesseract4
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
-libavc1394-0
-libcrystalhd3
-libiec61883-0
-libopencore-amrnb0
-libopencore-amrwb0
-libsmbclient
-libvo-aacenc0
-libvo-amrwbenc0
-libzvbi0
-libuchardet0
-liblept5
 mpv
 # ./inst-std-multimedia-xtra-ffmpeg/inst-std-multimedia-xtra-ffmpeg.sh
 ffmpeg
@@ -396,8 +381,6 @@ php-curl
 php-gd
 # ./inst-std-xtra-opw-php-mbstring/inst-std-xtra-opw-php-mbstring.sh
 php-mbstring
-# ./inst-std-xtra-opw-php-mysql-fix/inst-std-xtra-opw-php-mysql-fix.sh
-php7.0-mysql
 # ./inst-std-xtra-opw-php-mysql/inst-std-xtra-opw-php-mysql.sh
 php-mysql
 # ./inst-std-xtra-opw-php-xml/inst-std-xtra-opw-php-xml.sh
@@ -417,8 +400,8 @@ ca-certificates
 curl
 gnupg2
 software-properties-common
-# ./inst-xtra-eclipse-libwebkitgtk-3.0-0/inst-xtra-eclipse-libwebkitgtk-3.0-0.sh
-libwebkitgtk-3.0-0
+# ./inst-xtra-eclipse-libwebkit2gtk-4.0-37/inst-xtra-eclipse-libwebkit2gtk-4.0-37.sh
+libwebkit2gtk-4.0-37
 # ./inst-xtra-freecad/inst-xtra-freecad.sh
 freecad
 # ./inst-xtra-games-mono-complete/inst-xtra-games-mono-complete.sh

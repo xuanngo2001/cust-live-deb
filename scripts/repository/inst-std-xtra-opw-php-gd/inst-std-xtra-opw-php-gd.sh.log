@@ -3,27 +3,26 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  php7.0-gd
+  php7.3-gd
 The following NEW packages will be installed:
-  php-gd php7.0-gd
-0 upgraded, 2 newly installed, 0 to remove and 26 not upgraded.
-Need to get 32.2 kB of archives.
-After this operation, 146 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php7.0-gd amd64 7.0.33-0+deb9u3 [27.2 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php-gd all 1:7.0+49 [5,042 B]
-Fetched 32.2 kB in 0s (474 kB/s)
-Selecting previously unselected package php7.0-gd.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 47772 files and directories currently installed.)
-Preparing to unpack .../php7.0-gd_7.0.33-0+deb9u3_amd64.deb ...
-Unpacking php7.0-gd (7.0.33-0+deb9u3) ...
+  php-gd php7.3-gd
+0 upgraded, 2 newly installed, 0 to remove and 4 not upgraded.
+Need to get 33.6 kB of archives.
+After this operation, 151 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 php7.3-gd amd64 7.3.4-2 [27.6 kB]
+Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 php-gd all 2:7.3+69 [5,984 B]
+Fetched 33.6 kB in 0s (1,183 kB/s)
+Selecting previously unselected package php7.3-gd.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51254 files and directories currently installed.)
+Preparing to unpack .../php7.3-gd_7.3.4-2_amd64.deb ...
+Unpacking php7.3-gd (7.3.4-2) ...
 Selecting previously unselected package php-gd.
-Preparing to unpack .../php-gd_1%3a7.0+49_all.deb ...
-Unpacking php-gd (1:7.0+49) ...
-Processing triggers for libapache2-mod-php7.0 (7.0.33-0+deb9u3) ...
-Setting up php7.0-gd (7.0.33-0+deb9u3) ...
+Preparing to unpack .../php-gd_2%3a7.3+69_all.deb ...
+Unpacking php-gd (2:7.3+69) ...
+Setting up php7.3-gd (7.3.4-2) ...
 
-Creating config file /etc/php/7.0/mods-available/gd.ini with new version
-Setting up php-gd (1:7.0+49) ...
-Processing triggers for libapache2-mod-php7.0 (7.0.33-0+deb9u3) ...
+Creating config file /etc/php/7.3/mods-available/gd.ini with new version
+Setting up php-gd (2:7.3+69) ...
+Processing triggers for libapache2-mod-php7.3 (7.3.4-2) ...
 CLDS: * Install php-gd to run Drupal.
-CLDS: * Disk size = 3575524K. Space Used = 232K. Runtime = 00:00:00:16.
+CLDS: * Disk size = 4343188K. Space Used = 232K. Runtime = 00:00:00:03.

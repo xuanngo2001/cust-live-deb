@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-min-con-snd-alsa.sh ...
-  * After this operation, 8,106 kB of additional disk space will be used.
+  * After this operation, 8,127 kB of additional disk space will be used.
   * Install ALSA sound.
   * Test sound: aplay /usr/share/sounds/alsa/*.
   * Add key bindings.
-  * Disk size = 1642332K. Space Used = 11908K. Runtime = 00:00:00:23.
+  * Disk size = 1652928K. Space Used = 12092K. Runtime = 00:00:00:12.
   * The following NEW packages will be installed:
   ```bash
 alsa-utils libasound2 libasound2-data libfftw3-single3 libgomp1

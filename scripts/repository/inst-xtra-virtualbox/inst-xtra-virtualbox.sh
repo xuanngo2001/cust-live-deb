@@ -7,7 +7,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Add source url.
-  GF_ADD_SOURCE_LIST live "deb https://download.virtualbox.org/virtualbox/debian stretch contrib"
+  GF_ADD_SOURCE_LIST live "deb https://download.virtualbox.org/virtualbox/debian bionic contrib"
 
 # Explicitly download dependent packages
 #   apt-get install -s -y <your-package> 

@@ -3,45 +3,44 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libxslt1.1 php7.0-xml
+  libxslt1.1 php7.3-xml
 The following NEW packages will be installed:
-  libxslt1.1 php-xml php7.0-xml
-0 upgraded, 3 newly installed, 0 to remove and 26 not upgraded.
+  libxslt1.1 php-xml php7.3-xml
+0 upgraded, 3 newly installed, 0 to remove and 4 not upgraded.
 Need to get 351 kB of archives.
-After this operation, 992 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxslt1.1 amd64 1.1.29-2.1 [233 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php7.0-xml amd64 7.0.33-0+deb9u3 [112 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 php-xml all 1:7.0+49 [5,068 B]
-Fetched 351 kB in 0s (2,558 kB/s)
+After this operation, 985 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libxslt1.1 amd64 1.1.32-2 [236 kB]
+Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 php7.3-xml amd64 7.3.4-2 [109 kB]
+Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 php-xml all 2:7.3+69 [6,012 B]
+Fetched 351 kB in 0s (8,974 kB/s)
 Selecting previously unselected package libxslt1.1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 47812 files and directories currently installed.)
-Preparing to unpack .../libxslt1.1_1.1.29-2.1_amd64.deb ...
-Unpacking libxslt1.1:amd64 (1.1.29-2.1) ...
-Selecting previously unselected package php7.0-xml.
-Preparing to unpack .../php7.0-xml_7.0.33-0+deb9u3_amd64.deb ...
-Unpacking php7.0-xml (7.0.33-0+deb9u3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51294 files and directories currently installed.)
+Preparing to unpack .../libxslt1.1_1.1.32-2_amd64.deb ...
+Unpacking libxslt1.1:amd64 (1.1.32-2) ...
+Selecting previously unselected package php7.3-xml.
+Preparing to unpack .../php7.3-xml_7.3.4-2_amd64.deb ...
+Unpacking php7.3-xml (7.3.4-2) ...
 Selecting previously unselected package php-xml.
-Preparing to unpack .../php-xml_1%3a7.0+49_all.deb ...
-Unpacking php-xml (1:7.0+49) ...
-Processing triggers for libapache2-mod-php7.0 (7.0.33-0+deb9u3) ...
-Setting up libxslt1.1:amd64 (1.1.29-2.1) ...
-Processing triggers for libc-bin (2.24-11+deb9u4) ...
-Setting up php7.0-xml (7.0.33-0+deb9u3) ...
+Preparing to unpack .../php-xml_2%3a7.3+69_all.deb ...
+Unpacking php-xml (2:7.3+69) ...
+Setting up libxslt1.1:amd64 (1.1.32-2) ...
+Setting up php7.3-xml (7.3.4-2) ...
 
-Creating config file /etc/php/7.0/mods-available/dom.ini with new version
+Creating config file /etc/php/7.3/mods-available/dom.ini with new version
 
-Creating config file /etc/php/7.0/mods-available/simplexml.ini with new version
+Creating config file /etc/php/7.3/mods-available/simplexml.ini with new version
 
-Creating config file /etc/php/7.0/mods-available/wddx.ini with new version
+Creating config file /etc/php/7.3/mods-available/wddx.ini with new version
 
-Creating config file /etc/php/7.0/mods-available/xml.ini with new version
+Creating config file /etc/php/7.3/mods-available/xml.ini with new version
 
-Creating config file /etc/php/7.0/mods-available/xmlreader.ini with new version
+Creating config file /etc/php/7.3/mods-available/xmlreader.ini with new version
 
-Creating config file /etc/php/7.0/mods-available/xmlwriter.ini with new version
+Creating config file /etc/php/7.3/mods-available/xmlwriter.ini with new version
 
-Creating config file /etc/php/7.0/mods-available/xsl.ini with new version
-Setting up php-xml (1:7.0+49) ...
-Processing triggers for libapache2-mod-php7.0 (7.0.33-0+deb9u3) ...
+Creating config file /etc/php/7.3/mods-available/xsl.ini with new version
+Setting up php-xml (2:7.3+69) ...
+Processing triggers for libapache2-mod-php7.3 (7.3.4-2) ...
+Processing triggers for libc-bin (2.28-10) ...
 CLDS: * Install php-xml.
-CLDS: * Disk size = 3579728K. Space Used = 1476K. Runtime = 00:00:00:45.
+CLDS: * Disk size = 4347484K. Space Used = 1460K. Runtime = 00:00:00:08.

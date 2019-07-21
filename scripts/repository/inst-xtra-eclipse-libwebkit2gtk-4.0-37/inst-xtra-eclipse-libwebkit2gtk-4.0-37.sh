@@ -6,8 +6,12 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Explicitly list specific packages to ensure they get the latest version from Security/Updates repositories.
-	apt-get install -s -y php7.0-mysql
+# Explicitly list dependent packages
+#	apt-get install -s -y <your-package> 
+
+# Install libwebkit2gtk-4.0-37.
+	apt-get -y install libwebkit2gtk-4.0-37
+
 
 # Log
-	echo "${GV_LOG} * Install fix: php7.0-mysql."
+	echo "${GV_LOG} * Install libwebkit2gtk-4.0-37."

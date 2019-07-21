@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   GF_ADD_SOURCE_LIST live "deb http://repo.aptly.info/ squeeze main"
 
 # Add repository key: https://www.aptly.info/pubkey.txt
-  apt-key add pubkey.txt
+  #apt-key add pubkey.txt
   apt-get update
 
 # aptly needs gnupg needs dirmngr
@@ -18,7 +18,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install aptly
   apt-get -y install xz-utils aptly
-  apt-get -y install gpgv1 gnupg1   # Aptly still uses PGP v1.
+	#apt-get -y install gpgv1 gnupg1   # Aptly still uses PGP v1.
+	#apt-get -y install aptly dirmngr gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libassuan0 libksba8 libnpth0 pinentry-curses
+  
 
 # Add to CLD/
 	yes | cp -av ./cld  /usr/local

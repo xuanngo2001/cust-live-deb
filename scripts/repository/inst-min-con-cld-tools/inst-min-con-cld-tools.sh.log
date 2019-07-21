@@ -3,32 +3,37 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libparted2
+  libparted2 libreadline7
 Suggested packages:
   libparted-dev libparted-i18n parted-doc
 The following NEW packages will be installed:
-  libparted2 parted
-0 upgraded, 2 newly installed, 0 to remove and 31 not upgraded.
-Need to get 471 kB of archives.
-After this operation, 801 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libparted2 amd64 3.2-17 [276 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 parted amd64 3.2-17 [194 kB]
-Fetched 471 kB in 0s (5,631 kB/s)
+  libparted2 libreadline7 parted
+0 upgraded, 3 newly installed, 0 to remove and 4 not upgraded.
+Need to get 624 kB of archives.
+After this operation, 1,235 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libparted2 amd64 3.2-25 [277 kB]
+Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libreadline7 amd64 7.0-5 [151 kB]
+Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 parted amd64 3.2-25 [196 kB]
+Fetched 624 kB in 0s (9,625 kB/s)
 Selecting previously unselected package libparted2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15234 files and directories currently installed.)
-Preparing to unpack .../libparted2_3.2-17_amd64.deb ...
-Unpacking libparted2:amd64 (3.2-17) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14962 files and directories currently installed.)
+Preparing to unpack .../libparted2_3.2-25_amd64.deb ...
+Unpacking libparted2:amd64 (3.2-25) ...
+Selecting previously unselected package libreadline7:amd64.
+Preparing to unpack .../libreadline7_7.0-5_amd64.deb ...
+Unpacking libreadline7:amd64 (7.0-5) ...
 Selecting previously unselected package parted.
-Preparing to unpack .../parted_3.2-17_amd64.deb ...
-Unpacking parted (3.2-17) ...
-Setting up libparted2:amd64 (3.2-17) ...
-Setting up parted (3.2-17) ...
-Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Preparing to unpack .../parted_3.2-25_amd64.deb ...
+Unpacking parted (3.2-25) ...
+Setting up libparted2:amd64 (3.2-25) ...
+Setting up libreadline7:amd64 (7.0-5) ...
+Setting up parted (3.2-25) ...
+Processing triggers for libc-bin (2.28-10) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-util-linux is already the newest version (2.29.2-1+deb9u1).
-0 upgraded, 0 newly installed, 0 to remove and 31 not upgraded.
+util-linux is already the newest version (2.33.1-0.1).
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
 './cld/bin/cld-dd-usb.sh' -> '/usr/local/cld/bin/cld-dd-usb.sh'
 './cld/bin/cld-dpkg-list.sh' -> '/usr/local/cld/bin/cld-dpkg-list.sh'
 './cld/bin/cld-list-icons.sh' -> '/usr/local/cld/bin/cld-list-icons.sh'
@@ -37,4 +42,4 @@ util-linux is already the newest version (2.29.2-1+deb9u1).
 './cld/bin/cld-persistence.sh' -> '/usr/local/cld/bin/cld-persistence.sh'
 './cld/bin/cld-remaster.sh' -> '/usr/local/cld/bin/cld-remaster.sh'
 './cld/bin/readme.md' -> '/usr/local/cld/bin/readme.md'
-CLDS: * Disk size = 1319320K. Space Used = 1324K. Runtime = 00:00:00:05.
+CLDS: * Disk size = 1316388K. Space Used = 1932K. Runtime = 00:00:00:03.

@@ -2,21 +2,39 @@ CLDS:>>>>>>>>> Running inst-min-con-cld-dev-tools-debootstrap.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following additional packages will be installed:
+  libpcre2-8-0 libpsl5 wget
 Suggested packages:
   ubuntu-archive-keyring squid-deb-proxy-client
 Recommended packages:
-  arch-test
+  gnupg arch-test publicsuffix ca-certificates
 The following NEW packages will be installed:
-  debootstrap
-0 upgraded, 1 newly installed, 0 to remove and 31 not upgraded.
-Need to get 72.7 kB of archives.
-After this operation, 289 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 debootstrap all 1.0.110~bpo9+1 [72.7 kB]
-Fetched 72.7 kB in 0s (1,866 kB/s)
+  debootstrap libpcre2-8-0 libpsl5 wget
+0 upgraded, 4 newly installed, 0 to remove and 4 not upgraded.
+Need to get 1,242 kB of archives.
+After this operation, 4,307 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libpcre2-8-0 amd64 10.32-5 [213 kB]
+Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libpsl5 amd64 0.20.2-2 [53.7 kB]
+Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 wget amd64 1.20.1-1.1 [902 kB]
+Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 debootstrap all 1.0.114 [73.4 kB]
+Fetched 1,242 kB in 0s (3,249 kB/s)
+Selecting previously unselected package libpcre2-8-0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14825 files and directories currently installed.)
+Preparing to unpack .../libpcre2-8-0_10.32-5_amd64.deb ...
+Unpacking libpcre2-8-0:amd64 (10.32-5) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../libpsl5_0.20.2-2_amd64.deb ...
+Unpacking libpsl5:amd64 (0.20.2-2) ...
+Selecting previously unselected package wget.
+Preparing to unpack .../wget_1.20.1-1.1_amd64.deb ...
+Unpacking wget (1.20.1-1.1) ...
 Selecting previously unselected package debootstrap.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15161 files and directories currently installed.)
-Preparing to unpack .../debootstrap_1.0.110~bpo9+1_all.deb ...
-Unpacking debootstrap (1.0.110~bpo9+1) ...
-Setting up debootstrap (1.0.110~bpo9+1) ...
+Preparing to unpack .../debootstrap_1.0.114_all.deb ...
+Unpacking debootstrap (1.0.114) ...
+Setting up libpsl5:amd64 (0.20.2-2) ...
+Setting up libpcre2-8-0:amd64 (10.32-5) ...
+Setting up wget (1.20.1-1.1) ...
+Setting up debootstrap (1.0.114) ...
+Processing triggers for libc-bin (2.28-10) ...
 CLDS: * Install debootstrap allows the creation of a Debian base system in a directory.
-CLDS: * Disk size = 1317996K. Space Used = 380K. Runtime = 00:00:00:03.
+CLDS: * Disk size = 1314456K. Space Used = 3100K. Runtime = 00:00:00:05.

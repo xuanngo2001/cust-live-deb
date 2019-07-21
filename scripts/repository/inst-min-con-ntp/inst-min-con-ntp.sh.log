@@ -7,34 +7,33 @@ The following additional packages will be installed:
 Suggested packages:
   ntp-doc
 Recommended packages:
-  perl:any
+  sntp perl:any
 The following NEW packages will be installed:
   libedit2 libopts25 ntp
-0 upgraded, 3 newly installed, 0 to remove and 31 not upgraded.
-Need to get 752 kB of archives.
-After this operation, 2,266 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libedit2 amd64 3.1-20160903-3 [84.8 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libopts25 amd64 1:5.18.12-3 [68.0 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ntp amd64 1:4.2.8p10+dfsg-3+deb9u2 [599 kB]
-Fetched 752 kB in 0s (5,019 kB/s)
+0 upgraded, 3 newly installed, 0 to remove and 4 not upgraded.
+Need to get 924 kB of archives.
+After this operation, 2,495 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libedit2 amd64 3.1-20181209-1 [94.0 kB]
+Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libopts25 amd64 1:5.18.12-4 [69.4 kB]
+Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 ntp amd64 1:4.2.8p12+dfsg-4 [761 kB]
+Fetched 924 kB in 0s (17.6 MB/s)
 Selecting previously unselected package libedit2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17356 files and directories currently installed.)
-Preparing to unpack .../libedit2_3.1-20160903-3_amd64.deb ...
-Unpacking libedit2:amd64 (3.1-20160903-3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17176 files and directories currently installed.)
+Preparing to unpack .../libedit2_3.1-20181209-1_amd64.deb ...
+Unpacking libedit2:amd64 (3.1-20181209-1) ...
 Selecting previously unselected package libopts25:amd64.
-Preparing to unpack .../libopts25_1%3a5.18.12-3_amd64.deb ...
-Unpacking libopts25:amd64 (1:5.18.12-3) ...
+Preparing to unpack .../libopts25_1%3a5.18.12-4_amd64.deb ...
+Unpacking libopts25:amd64 (1:5.18.12-4) ...
 Selecting previously unselected package ntp.
-Preparing to unpack .../ntp_1%3a4.2.8p10+dfsg-3+deb9u2_amd64.deb ...
-Unpacking ntp (1:4.2.8p10+dfsg-3+deb9u2) ...
-Setting up libedit2:amd64 (3.1-20160903-3) ...
-Processing triggers for libc-bin (2.24-11+deb9u4) ...
-Processing triggers for systemd (232-25+deb9u11) ...
-Setting up libopts25:amd64 (1:5.18.12-3) ...
-Setting up ntp (1:4.2.8p10+dfsg-3+deb9u2) ...
+Preparing to unpack .../ntp_1%3a4.2.8p12+dfsg-4_amd64.deb ...
+Unpacking ntp (1:4.2.8p12+dfsg-4) ...
+Setting up libedit2:amd64 (3.1-20181209-1) ...
+Setting up libopts25:amd64 (1:5.18.12-4) ...
+Setting up ntp (1:4.2.8p12+dfsg-4) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/ntp.service → /lib/systemd/system/ntp.service.
 Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
-Processing triggers for libc-bin (2.24-11+deb9u4) ...
-Processing triggers for systemd (232-25+deb9u11) ...
+Processing triggers for systemd (241-5) ...
+Processing triggers for libc-bin (2.28-10) ...
 CLDS: * Install Network Time Protocol: ntp.
-CLDS: * Disk size = 1572528K. Space Used = 3144K. Runtime = 00:00:00:15.
+CLDS: * Disk size = 1575200K. Space Used = 3528K. Runtime = 00:00:00:06.
