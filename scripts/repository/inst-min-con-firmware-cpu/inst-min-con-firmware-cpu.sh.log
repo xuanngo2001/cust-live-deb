@@ -4,13 +4,13 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   amd64-microcode
-0 upgraded, 1 newly installed, 0 to remove and 4 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
 Need to get 35.2 kB of archives.
 After this operation, 76.8 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-non-free buster/non-free amd64 amd64-microcode amd64 3.20181128.1 [35.2 kB]
-Fetched 35.2 kB in 0s (1,238 kB/s)
+Fetched 35.2 kB in 0s (1,816 kB/s)
 Selecting previously unselected package amd64-microcode.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15344 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15345 files and directories currently installed.)
 Preparing to unpack .../amd64-microcode_3.20181128.1_amd64.deb ...
 Unpacking amd64-microcode (3.20181128.1) ...
 Setting up amd64-microcode (3.20181128.1) ...
@@ -24,14 +24,14 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   intel-microcode iucode-tool
-0 upgraded, 2 newly installed, 0 to remove and 4 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 9 not upgraded.
 Need to get 2,001 kB of archives.
 After this operation, 2,593 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-contrib buster/contrib amd64 iucode-tool amd64 2.3.1-1 [62.4 kB]
 Get:2 http://localhost/aptly-repo/master_buster-non-free buster/non-free amd64 intel-microcode amd64 3.20190618.1 [1,938 kB]
-Fetched 2,001 kB in 0s (24.4 MB/s)
+Fetched 2,001 kB in 0s (28.8 MB/s)
 Selecting previously unselected package iucode-tool.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15360 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15361 files and directories currently installed.)
 Preparing to unpack .../iucode-tool_2.3.1-1_amd64.deb ...
 Unpacking iucode-tool (2.3.1-1) ...
 Selecting previously unselected package intel-microcode.
@@ -46,4 +46,4 @@ update-initramfs: Generating /boot/initrd.img-4.19.0-5-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 CLDS: * Install CPU firmware: amd64-microcode.
 CLDS: * Install CPU firmware: intel-microcode.
-CLDS: * Disk size = 1338940K. Space Used = 7156K. Runtime = 00:00:00:36.
+CLDS: * Disk size = 1338988K. Space Used = 7152K. Runtime = 00:00:00:41.
