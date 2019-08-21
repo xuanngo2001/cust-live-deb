@@ -177,8 +177,7 @@ Hit:14 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
 Hit:15 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
 Hit:16 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:17 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
-Hit:18 http://localhost/aptly-repo/master_qgis-main buster InRelease
-Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
+Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -188,7 +187,7 @@ Suggested packages:
   default-dbus-session-bus | dbus-session-bus
 The following NEW packages will be installed:
   dbus dialog libdbus-1-3 libexpat1
-0 upgraded, 4 newly installed, 0 to remove and 9 not upgraded.
+0 upgraded, 4 newly installed, 0 to remove and 10 not upgraded.
 Need to get 829 kB of archives.
 After this operation, 2824 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libdbus-1-3 amd64 1.12.16-1 [214 kB]
@@ -205,7 +204,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 829 kB in 0s (17.3 MB/s)
+Fetched 829 kB in 0s (20.5 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9227 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.12.16-1_amd64.deb ...
@@ -243,7 +242,7 @@ The following NEW packages will be installed:
   busybox firmware-linux-free initramfs-tools initramfs-tools-core klibc-utils
   libklibc linux-base linux-image-4.19.0-5-amd64 linux-image-amd64 live-boot
   live-boot-initramfs-tools rsync
-0 upgraded, 12 newly installed, 0 to remove and 9 not upgraded.
+0 upgraded, 12 newly installed, 0 to remove and 10 not upgraded.
 Need to get 48.9 MB of archives.
 After this operation, 270 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 busybox amd64 1:1.30.1-4 [432 kB]
@@ -269,7 +268,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 48.9 MB in 1s (39.8 MB/s)
+Fetched 48.9 MB in 1s (45.0 MB/s)
 Selecting previously unselected package busybox.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9450 files and directories currently installed.)
 Preparing to unpack .../00-busybox_1%3a1.30.1-4_amd64.deb ...
@@ -396,36 +395,36 @@ ii  linux-image-amd64                   4.19+105     amd64        Linux for 64-b
 total 36880
 -rw-r--r-- 1 root root  3371003 Jun 19 22:16 System.map-4.19.0-5-amd64
 -rw-r--r-- 1 root root   206212 Jun 19 22:16 config-4.19.0-5-amd64
--rw-r--r-- 1 root root 28959011 Aug 10 16:30 initrd.img-4.19.0-5-amd64
+-rw-r--r-- 1 root root 28961327 Aug 18 18:59 initrd.img-4.19.0-5-amd64
 -rw-r--r-- 1 root root  5221616 Jun 19 22:16 vmlinuz-4.19.0-5-amd64
 9589a8b60c7f4bc2ff6853b4bd226877  /boot/System.map-4.19.0-5-amd64
 86ba377e04f4a063908abe49a6b5507f  /boot/config-4.19.0-5-amd64
-972b90e0fd5519fd570142c2c86cb353  /boot/initrd.img-4.19.0-5-amd64
+ccc393338b50846ad4222549c0a18c95  /boot/initrd.img-4.19.0-5-amd64
 73a8f54234bcb1cb823b0e7bab80a19f  /boot/vmlinuz-4.19.0-5-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Aug 10 16:23 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Aug 10 16:30 boot
-drwxr-xr-x  17 root root 3580 Aug 10 11:00 dev
-drwxr-xr-x  49 root root 4096 Aug 10 16:29 etc
+lrwxrwxrwx   1 root root    7 Aug 18 18:52 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Aug 18 18:59 boot
+drwxr-xr-x  17 root root 3580 Aug 18 18:32 dev
+drwxr-xr-x  49 root root 4096 Aug 18 18:58 etc
 drwxr-xr-x   2 root root 4096 May 13 20:25 home
-lrwxrwxrwx   1 root root   30 Aug 10 16:29 initrd.img -> boot/initrd.img-4.19.0-5-amd64
-lrwxrwxrwx   1 root root    7 Aug 10 16:23 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Aug 10 16:23 lib32 -> usr/lib32
-lrwxrwxrwx   1 root root    9 Aug 10 16:23 lib64 -> usr/lib64
-lrwxrwxrwx   1 root root   10 Aug 10 16:23 libx32 -> usr/libx32
-drwxr-xr-x   2 root root 4096 Aug 10 16:23 media
-drwxr-xr-x   2 root root 4096 Aug 10 16:23 mnt
-drwxr-xr-x   2 root root 4096 Aug 10 16:23 opt
-dr-xr-xr-x 230 root root    0 Aug 10 14:59 proc
-drwx------   3 root root 4096 Aug 10 16:27 root
-drwxr-xr-x   4 root root 4096 Aug 10 16:23 run
-lrwxrwxrwx   1 root root    8 Aug 10 16:23 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Aug 10 16:23 srv
-dr-xr-xr-x  13 root root    0 Aug 10 15:26 sys
-drwxrwxrwt   2 root root 4096 Aug 10 16:30 tmp
-drwxr-xr-x  13 root root 4096 Aug 10 16:23 usr
-drwxr-xr-x  11 root root 4096 Aug 10 16:23 var
-lrwxrwxrwx   1 root root   27 Aug 10 16:29 vmlinuz -> boot/vmlinuz-4.19.0-5-amd64
+lrwxrwxrwx   1 root root   30 Aug 18 18:58 initrd.img -> boot/initrd.img-4.19.0-5-amd64
+lrwxrwxrwx   1 root root    7 Aug 18 18:52 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Aug 18 18:52 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Aug 18 18:52 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Aug 18 18:52 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Aug 18 18:52 media
+drwxr-xr-x   2 root root 4096 Aug 18 18:52 mnt
+drwxr-xr-x   2 root root 4096 Aug 18 18:52 opt
+dr-xr-xr-x 228 root root    0 Aug 18  2019 proc
+drwx------   3 root root 4096 Aug 18 18:56 root
+drwxr-xr-x   4 root root 4096 Aug 18 18:52 run
+lrwxrwxrwx   1 root root    8 Aug 18 18:52 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Aug 18 18:52 srv
+dr-xr-xr-x  13 root root    0 Aug 18 18:32 sys
+drwxrwxrwt   2 root root 4096 Aug 18 18:59 tmp
+drwxr-xr-x  13 root root 4096 Aug 18 18:52 usr
+drwxr-xr-x  11 root root 4096 Aug 18 18:52 var
+lrwxrwxrwx   1 root root   27 Aug 18 18:58 vmlinuz -> boot/vmlinuz-4.19.0-5-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-4.19.0-5-amd64.
-CLDS: * Disk size = 1280932K. Space Used = 357504K. Runtime = 00:00:01:59.
+CLDS: * Disk size = 1281348K. Space Used = 357504K. Runtime = 00:00:01:56.
