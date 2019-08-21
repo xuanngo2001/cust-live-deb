@@ -6,22 +6,6 @@
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Explicitly download dependent packages
-	#apt-get install -s -y libavc1394-0
-	#apt-get install -s -y libavcodec56 
-	#apt-get install -s -y libavdevice56
-	#apt-get install -s -y libavfilter5 
-	#apt-get install -s -y libavformat56
-	#apt-get install -s -y libcrystalhd3
-	#apt-get install -s -y libiec61883-0
-	#apt-get install -s -y libopencore-amrnb0
-	#apt-get install -s -y libopencore-amrwb0
-	#apt-get install -s -y libsmbclient 
-	#apt-get install -s -y libvo-aacenc0
-	#apt-get install -s -y libvo-amrwbenc0
-	#apt-get install -s -y libzvbi0
-	#apt-get install -s -y libuchardet0
-
 # Install dependency.
 	#apt-get -y install liblept5 # Allow to take screenshot with option: --vo=image
   
