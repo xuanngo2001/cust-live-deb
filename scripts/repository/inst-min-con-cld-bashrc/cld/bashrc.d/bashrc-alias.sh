@@ -1,5 +1,8 @@
 # From ..cld-bashrc/
 
+# Prevent ls to wrap filename with single or double quotes.
+export QUOTING_STYLE=literal
+
 # LS: Some shortcuts for different directory listings
 alias ls='ls -hFA --color=tty'                  # classify files in colour
 alias dir='ls -A --color=auto --format=vertical'
