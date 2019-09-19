@@ -43,12 +43,12 @@ Get:17 http://localhost/aptly-repo/master_buster-main buster/main amd64 g++-8 am
 Get:18 http://localhost/aptly-repo/master_buster-main buster/main amd64 g++ amd64 4:8.3.0-1 [1,644 B]
 Get:19 http://localhost/aptly-repo/master_buster-main buster/main amd64 make amd64 4.2.1-1.2 [341 kB]
 Get:20 http://localhost/aptly-repo/master_buster-main buster/main amd64 libdpkg-perl all 1.19.7 [1,414 kB]
-Get:21 http://localhost/aptly-repo/master_buster-main buster/main amd64 patch amd64 2.7.6-3 [126 kB]
+Get:21 http://localhost/aptly-repo/master_buster-main buster/main amd64 patch amd64 2.7.6-3+deb10u1 [126 kB]
 Get:22 http://localhost/aptly-repo/master_buster-main buster/main amd64 dpkg-dev all 1.19.7 [1,773 kB]
 Get:23 http://localhost/aptly-repo/master_buster-main buster/main amd64 build-essential amd64 12.6 [7,576 B]
-Fetched 32.1 MB in 1s (38.7 MB/s)
+Fetched 32.1 MB in 1s (34.6 MB/s)
 Selecting previously unselected package binutils-common:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54948 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55028 files and directories currently installed.)
 Preparing to unpack .../00-binutils-common_2.31.1-16_amd64.deb ...
 Unpacking binutils-common:amd64 (2.31.1-16) ...
 Selecting previously unselected package libbinutils:amd64.
@@ -109,8 +109,8 @@ Selecting previously unselected package libdpkg-perl.
 Preparing to unpack .../19-libdpkg-perl_1.19.7_all.deb ...
 Unpacking libdpkg-perl (1.19.7) ...
 Selecting previously unselected package patch.
-Preparing to unpack .../20-patch_2.7.6-3_amd64.deb ...
-Unpacking patch (2.7.6-3) ...
+Preparing to unpack .../20-patch_2.7.6-3+deb10u1_amd64.deb ...
+Unpacking patch (2.7.6-3+deb10u1) ...
 Selecting previously unselected package dpkg-dev.
 Preparing to unpack .../21-dpkg-dev_1.19.7_all.deb ...
 Unpacking dpkg-dev (1.19.7) ...
@@ -121,7 +121,7 @@ Setting up binutils-common:amd64 (2.31.1-16) ...
 Setting up libasan5:amd64 (8.3.0-6) ...
 Setting up make (4.2.1-1.2) ...
 Setting up libatomic1:amd64 (8.3.0-6) ...
-Setting up patch (2.7.6-3) ...
+Setting up patch (2.7.6-3+deb10u1) ...
 Setting up libdpkg-perl (1.19.7) ...
 Setting up libmpx2:amd64 (8.3.0-6) ...
 Setting up libubsan1:amd64 (8.3.0-6) ...
@@ -1775,4 +1775,4 @@ make[1]: Leaving directory '/root/scripts/repository/inst-xtra-ta-lib/ta-lib'
 CLDS: * Install ta-lib.org from source.
 CLDS: * wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
 CLDS: * Require later to: pip install TA-Lib
-CLDS: * Disk size = 4729520K. Space Used = 151144K. Runtime = 00:00:02:51.
+CLDS: * Disk size = 4870968K. Space Used = 151148K. Runtime = 00:00:02:28.

@@ -14,9 +14,9 @@ After this operation, 577 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libfuse2 amd64 2.9.9-1 [128 kB]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 fuse amd64 2.9.9-1 [72.3 kB]
 Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 exfat-fuse amd64 1.3.0-1 [29.4 kB]
-Fetched 229 kB in 5s (45.6 kB/s)
+Fetched 229 kB in 0s (10.1 MB/s)
 Selecting previously unselected package libfuse2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15204 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15183 files and directories currently installed.)
 Preparing to unpack .../libfuse2_2.9.9-1_amd64.deb ...
 Unpacking libfuse2:amd64 (2.9.9-1) ...
 Selecting previously unselected package fuse.
@@ -30,8 +30,8 @@ Setting up fuse (2.9.9-1) ...
 update-initramfs: deferring update (trigger activated)
 Setting up exfat-fuse (1.3.0-1) ...
 Processing triggers for libc-bin (2.28-10) ...
-Processing triggers for initramfs-tools (0.133) ...
-update-initramfs: Generating /boot/initrd.img-4.19.0-5-amd64
+Processing triggers for initramfs-tools (0.133+deb10u1) ...
+update-initramfs: Generating /boot/initrd.img-5.2.0-0.bpo.2-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 Reading package lists...
 Building dependency tree...
@@ -42,11 +42,11 @@ The following NEW packages will be installed:
 Need to get 45.2 kB of archives.
 After this operation, 232 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 exfat-utils amd64 1.3.0-1 [45.2 kB]
-Fetched 45.2 kB in 10s (4,438 B/s)
+Fetched 45.2 kB in 0s (2,907 kB/s)
 Selecting previously unselected package exfat-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15238 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15217 files and directories currently installed.)
 Preparing to unpack .../exfat-utils_1.3.0-1_amd64.deb ...
 Unpacking exfat-utils (1.3.0-1) ...
 Setting up exfat-utils (1.3.0-1) ...
 CLDS: * Install exfat-fuse so that you can read and write SD cards and USB keys.
-CLDS: * Disk size = 1329044K. Space Used = 1184K. Runtime = 00:00:00:37.
+CLDS: * Disk size = 1420884K. Space Used = 1176K. Runtime = 00:00:00:17.

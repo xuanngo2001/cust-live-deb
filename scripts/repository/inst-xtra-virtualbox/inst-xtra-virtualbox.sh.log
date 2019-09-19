@@ -15,22 +15,22 @@ Need to get 103 MB of archives.
 After this operation, 228 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libqt5opengl5 amd64 5.11.3+dfsg1-1 [160 kB]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libqt5printsupport5 amd64 5.11.3+dfsg1-1 [216 kB]
-Get:3 http://localhost/aptly-repo/master_virtualbox-contrib buster/contrib amd64 virtualbox-6.0 amd64 6.0.10-132072~Ubuntu~bionic [102 MB]
+Get:3 http://localhost/aptly-repo/master_virtualbox-contrib buster/contrib amd64 virtualbox-6.0 amd64 6.0.12-133076~Ubuntu~bionic [103 MB]
 Preconfiguring packages ...
-Fetched 103 MB in 2s (49.6 MB/s)
+Fetched 103 MB in 2s (43.0 MB/s)
 Selecting previously unselected package libqt5opengl5:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56857 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56937 files and directories currently installed.)
 Preparing to unpack .../libqt5opengl5_5.11.3+dfsg1-1_amd64.deb ...
 Unpacking libqt5opengl5:amd64 (5.11.3+dfsg1-1) ...
 Selecting previously unselected package libqt5printsupport5:amd64.
 Preparing to unpack .../libqt5printsupport5_5.11.3+dfsg1-1_amd64.deb ...
 Unpacking libqt5printsupport5:amd64 (5.11.3+dfsg1-1) ...
 Selecting previously unselected package virtualbox-6.0.
-Preparing to unpack .../virtualbox-6.0_6.0.10-132072~Ubuntu~bionic_amd64.deb ...
-Unpacking virtualbox-6.0 (6.0.10-132072~Ubuntu~bionic) ...
+Preparing to unpack .../virtualbox-6.0_6.0.12-133076~Ubuntu~bionic_amd64.deb ...
+Unpacking virtualbox-6.0 (6.0.12-133076~Ubuntu~bionic) ...
 Setting up libqt5printsupport5:amd64 (5.11.3+dfsg1-1) ...
 Setting up libqt5opengl5:amd64 (5.11.3+dfsg1-1) ...
-Setting up virtualbox-6.0 (6.0.10-132072~Ubuntu~bionic) ...
+Setting up virtualbox-6.0 (6.0.12-133076~Ubuntu~bionic) ...
 Adding group `vboxusers' (GID 113) ...
 Done.
 Running in chroot, ignoring request: daemon-reload
@@ -39,12 +39,12 @@ This system is currently not set up to build kernel modules.
 Please install the Linux kernel "header" files matching the current kernel
 for adding new hardware support to the system.
 The distribution packages containing the headers are probably:
-    linux-headers-amd64 linux-headers-4.19.0-5-amd64
+    linux-headers-amd64 linux-headers-5.2.0-0.bpo.2-amd64
 This system is currently not set up to build kernel modules.
 Please install the Linux kernel "header" files matching the current kernel
 for adding new hardware support to the system.
 The distribution packages containing the headers are probably:
-    linux-headers-amd64 linux-headers-4.19.0-5-amd64
+    linux-headers-amd64 linux-headers-5.2.0-0.bpo.2-amd64
 
 There were problems setting up VirtualBox.  To re-start the set-up process, run
   /sbin/vboxconfig
@@ -54,8 +54,8 @@ them. Please see your Linux system's documentation for more information.
 Processing triggers for mime-support (3.62) ...
 Processing triggers for hicolor-icon-theme (0.17-2) ...
 Processing triggers for libc-bin (2.28-10) ...
-Processing triggers for systemd (241-5) ...
+Processing triggers for systemd (241-7~deb10u1) ...
 Processing triggers for shared-mime-info (1.10-1) ...
 Processing triggers for desktop-file-utils (0.23-4) ...
 CLDS: * Install virtualbox.
-CLDS: * Disk size = 4144864K. Space Used = 320812K. Runtime = 00:00:00:52.
+CLDS: * Disk size = 4274920K. Space Used = 321220K. Runtime = 00:00:00:20.
