@@ -1,0 +1,12 @@
+# Show service status.
+    systemctl status mariadb.service --no-page
+
+# List all services enabled.
+    systemctl list-unit-files | grep enabled
+    systemctl list-unit-files --state=running
+    
+    systemctl list-units --type service --state running,failed
+    
+# Start service
+    service mysql start
+    
