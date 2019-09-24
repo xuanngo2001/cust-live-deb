@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-03-systemd-hooks.sh ...
   * Add systemd hook scripts.
-  * Disk size = 1403604K. Space Used = 76K. Runtime = 00:00:00:01.
+  * Disk size = 1403640K. Space Used = 76K. Runtime = 00:00:00:00.
