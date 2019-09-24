@@ -11,69 +11,29 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 lsb-release is already the newest version (10.2019051400).
-The following additional packages will be installed:
-  linux-compiler-gcc-8-x86 linux-headers-5.2.0-0.bpo.2-amd64
-  linux-headers-5.2.0-0.bpo.2-common linux-kbuild-5.2
 The following NEW packages will be installed:
-  linux-compiler-gcc-8-x86 linux-headers-5.2.0-0.bpo.2-amd64
-  linux-headers-5.2.0-0.bpo.2-common linux-headers-amd64 linux-kbuild-5.2
-0 upgraded, 5 newly installed, 0 to remove and 9 not upgraded.
-Need to get 9,999 kB of archives.
-After this operation, 57.6 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-compiler-gcc-8-x86 amd64 5.2.9-2~bpo10+1 [278 kB]
-Get:2 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-5.2.0-0.bpo.2-common all 5.2.9-2~bpo10+1 [8,428 kB]
-Get:3 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-kbuild-5.2 amd64 5.2.9-2~bpo10+1 [514 kB]
-Get:4 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-5.2.0-0.bpo.2-amd64 amd64 5.2.9-2~bpo10+1 [772 kB]
-Get:5 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-amd64 amd64 5.2+106~bpo10+1 [6,752 B]
-Fetched 9,999 kB in 0s (34.7 MB/s)
-Selecting previously unselected package linux-compiler-gcc-8-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62400 files and directories currently installed.)
-Preparing to unpack .../linux-compiler-gcc-8-x86_5.2.9-2~bpo10+1_amd64.deb ...
-Unpacking linux-compiler-gcc-8-x86 (5.2.9-2~bpo10+1) ...
-Selecting previously unselected package linux-headers-5.2.0-0.bpo.2-common.
-Preparing to unpack .../linux-headers-5.2.0-0.bpo.2-common_5.2.9-2~bpo10+1_all.deb ...
-Unpacking linux-headers-5.2.0-0.bpo.2-common (5.2.9-2~bpo10+1) ...
-Selecting previously unselected package linux-kbuild-5.2.
-Preparing to unpack .../linux-kbuild-5.2_5.2.9-2~bpo10+1_amd64.deb ...
-Unpacking linux-kbuild-5.2 (5.2.9-2~bpo10+1) ...
-Selecting previously unselected package linux-headers-5.2.0-0.bpo.2-amd64.
-Preparing to unpack .../linux-headers-5.2.0-0.bpo.2-amd64_5.2.9-2~bpo10+1_amd64.deb ...
-Unpacking linux-headers-5.2.0-0.bpo.2-amd64 (5.2.9-2~bpo10+1) ...
+  linux-headers-amd64
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
+Need to get 6,752 B of archives.
+After this operation, 12.3 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-amd64 amd64 5.2+106~bpo10+1 [6,752 B]
+Fetched 6,752 B in 0s (0 B/s)
 Selecting previously unselected package linux-headers-amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79051 files and directories currently installed.)
 Preparing to unpack .../linux-headers-amd64_5.2+106~bpo10+1_amd64.deb ...
 Unpacking linux-headers-amd64 (5.2+106~bpo10+1) ...
-Setting up linux-compiler-gcc-8-x86 (5.2.9-2~bpo10+1) ...
-Setting up linux-headers-5.2.0-0.bpo.2-common (5.2.9-2~bpo10+1) ...
-Setting up linux-kbuild-5.2 (5.2.9-2~bpo10+1) ...
-Setting up linux-headers-5.2.0-0.bpo.2-amd64 (5.2.9-2~bpo10+1) ...
 Setting up linux-headers-amd64 (5.2+106~bpo10+1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 build-essential is already the newest version (12.6).
+dkms is already the newest version (2.6.1-4).
 libc6-dev is already the newest version (2.28-10).
-libc6-dev set to manually installed.
-Suggested packages:
-  python3-apport
-Recommended packages:
-  fakeroot sudo
-The following NEW packages will be installed:
-  dkms
-0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
-Need to get 74.4 kB of archives.
-After this operation, 285 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 dkms all 2.6.1-4 [74.4 kB]
-Fetched 74.4 kB in 0s (4,134 kB/s)
-Selecting previously unselected package dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79982 files and directories currently installed.)
-Preparing to unpack .../archives/dkms_2.6.1-4_all.deb ...
-Unpacking dkms (2.6.1-4) ...
-Setting up dkms (2.6.1-4) ...
+0 upgraded, 0 newly installed, 0 to remove and 9 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 linux-headers-5.2.0-0.bpo.2-amd64 is already the newest version (5.2.9-2~bpo10+1).
-linux-headers-5.2.0-0.bpo.2-amd64 set to manually installed.
 0 upgraded, 0 newly installed, 0 to remove and 9 not upgraded.
 Reading package lists...
 Building dependency tree...
@@ -84,9 +44,9 @@ The following NEW packages will be installed:
 Need to get 101 kB of archives.
 After this operation, 400 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 module-assistant all 0.11.10 [101 kB]
-Fetched 101 kB in 0s (5,733 kB/s)
+Fetched 101 kB in 0s (6,271 kB/s)
 Selecting previously unselected package module-assistant.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80039 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79054 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.10_all.deb ...
 Unpacking module-assistant (0.11.10) ...
 Setting up module-assistant (0.11.10) ...
@@ -123,9 +83,9 @@ Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 file amd6
 Get:2 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfs-dkms all 0.8.1-4~bpo10+1 [1,859 kB]
 Get:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 spl-dkms all 0.8.1-4~bpo10+1 [21.2 kB]
 Preconfiguring packages ...
-Fetched 1,946 kB in 0s (33.9 MB/s)
+Fetched 1,946 kB in 0s (36.1 MB/s)
 Selecting previously unselected package file.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80081 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79096 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.35-4_amd64.deb ...
 Unpacking file (1:5.35-4) ...
 Selecting previously unselected package zfs-dkms.
@@ -197,7 +157,7 @@ Running module version sanity check.
  - Installation
    - Installing to /lib/modules/5.2.0-0.bpo.2-amd64/updates/dkms/
 
-depmod....
+depmod...
 Running in chroot, ignoring request: restart
 
 DKMS: install completed.
@@ -229,9 +189,9 @@ Get:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backpor
 Get:4 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 libzpool2linux amd64 0.8.1-4~bpo10+1 [796 kB]
 Get:5 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfsutils-linux amd64 0.8.1-4~bpo10+1 [358 kB]
 Get:6 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfs-initramfs all 0.8.1-4~bpo10+1 [30.8 kB]
-Fetched 1,497 kB in 0s (26.3 MB/s)
+Fetched 1,497 kB in 0s (25.0 MB/s)
 Selecting previously unselected package libnvpair1linux.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80929 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79944 files and directories currently installed.)
 Preparing to unpack .../0-libnvpair1linux_0.8.1-4~bpo10+1_amd64.deb ...
 Unpacking libnvpair1linux (0.8.1-4~bpo10+1) ...
 Selecting previously unselected package libuutil1linux.
@@ -276,4 +236,4 @@ CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
 CLDS: * Install zfs-dkms: version: 0.8.1-4~bpo10+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Install zfs-initramfs to be able to boot from ZFS.
 CLDS: * Import existing ZFS partitions: zpool import -a
-CLDS: * Disk size = 4404108K. Space Used = 141492K. Runtime = 00:00:11:17.
+CLDS: * Disk size = 3998644K. Space Used = 44840K. Runtime = 00:00:10:34.
