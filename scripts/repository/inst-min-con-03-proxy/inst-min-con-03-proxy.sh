@@ -8,7 +8,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 #PROXY=your_proxy:8080
-PROXY=proxy.wdf.sap.corp:8080
+PROXY=
 
 # Get out if there is no proxy.
 if [ -z "${PROXY}" ]; then
