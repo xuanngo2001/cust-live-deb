@@ -7,8 +7,8 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
-#PROXY=your_proxy:8080
-PROXY=
+# PROXY=your_proxy:8080
+source proxy.sh
 
 # Get out if there is no proxy.
 if [ -z "${PROXY}" ]; then
