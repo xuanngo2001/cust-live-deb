@@ -1,0 +1,13 @@
+# Error handling.
+    set -e
+    script_name=$(basename "${0}")
+
+    cmd_eg=$(printf "%s\n%s\n%s\n" \
+            "  e.g. ./${script_name} file_list.txt /target/dir/"
+    )
+    
+    if [ ! -f "${file_list}" ]; then
+        echo "Error: ${file_list} is not a file. Aborted!"
+        echo "${cmd_eg}"
+        exit 1;
+    fi    
