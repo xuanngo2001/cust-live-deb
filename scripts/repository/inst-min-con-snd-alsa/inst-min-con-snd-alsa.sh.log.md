@@ -3,7 +3,7 @@
   * Install ALSA sound.
   * Test sound: aplay /usr/share/sounds/alsa/*.
   * Add key bindings.
-  * Disk size = 1769248K. Space Used = 12084K. Runtime = 00:00:00:02.
+  * Disk size = 1543788K. Space Used = 12084K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 alsa-utils libasound2 libasound2-data libfftw3-single3 libgomp1
