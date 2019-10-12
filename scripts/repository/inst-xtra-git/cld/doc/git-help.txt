@@ -1,17 +1,35 @@
-  # Commit specific files.
-  git commit -m "my notes." file1 file2 fileN
+# Commit specific files.
+    git commit -m "my notes." file1 file2 fileN
 
-  # List files that will be deleted.
-  git ls-files --deleted
-  
-  # Commit modified files.
-  git ls-files --modified -z | xargs -r -0 git commit -m 'Note: commit modified files.'
-  
-  # Commit new files.
-  git ls-files --others -z | xargs -r -0 git add; git commit -m 're-use-x: commit new files.'
+# List files that are deleted.
+    git ls-files --deleted
 
-  # Combine commits. Commit deletes first because a deleted file is a modified file too.  
-  git ls-files --deleted -z | xargs -r -0 git rm && git commit -m 'Note: commit deleted files.' || true
-  git ls-files --modified -z | xargs -r -0 git commit -m 'Note: commit changed files.'
-  git ls-files --others -z | xargs -r -0 git add && git commit -m 'Note: commit new files.' || true  
+# List files that are changed.
+    git ls-files --modified
+
+# List files that are added.
+    git ls-files --others
+    
+# Add files to staging.
+    # Add deleted files to staging.
+        git ls-files --deleted -z | xargs -r -0 git rm
+
+    # Add modified files to staging.
+        git ls-files --modified -z | xargs -r -0 git add
+        # or
+            git add -u
+
+    # Add new files to staging.
+        git ls-files --others -z | xargs -r -0 git add
+
+# Commit what are in staging.
+    git commit -m 'Commit comment here....'
+
+# List files in stageg area.
+    git diff --name-only --cached
+
+# Unstaged all files.
+    git reset HEAD -- .
+# Remove a single file from staging.
+    git reset HEAD -- <file>
   
