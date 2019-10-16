@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-03-proxy.sh ...
-  * Disk size = 1178120K. Space Used = 12K. Runtime = 00:00:00:00.
+  * Disk size = 1178292K. Space Used = 12K. Runtime = 00:00:00:00.
