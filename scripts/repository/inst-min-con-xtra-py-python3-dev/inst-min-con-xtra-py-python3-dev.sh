@@ -10,8 +10,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #	apt-get install -s -y <your-package> 
 
 # Install python3-dev.
-    #apt-get -y install libexpat1=2.2.6-2+deb10u1
-    #apt-get -y install libexpat1=2.2.6-2
 	apt-get -y install python3-dev
 
 
