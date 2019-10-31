@@ -25,7 +25,7 @@ Hit:23 https://download.docker.com/linux/debian buster InRelease
 Hit:24 https://deb.nodesource.com/node_12.x buster InRelease
 Get:25 http://dl.google.com/linux/chrome/deb stable Release [943 B]
 Get:26 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 Packages [23.1 kB]
-Fetched 39.9 kB in 3s (13.7 kB/s)
+Fetched 39.9 kB in 3s (12.4 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -55,20 +55,20 @@ Get:10 http://localhost/aptly-repo/master_buster-security-main buster-updates/ma
 Get:11 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libss2 amd64 1.45.3-3~bpo10+1 [75.0 kB]
 Get:12 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 php7.3 all 7.3.11-1~deb10u1 [39.0 kB]
 Preconfiguring packages ...
-Fetched 51.4 MB in 1s (46.9 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80652 files and directories currently installed.)
+Fetched 51.4 MB in 1s (45.2 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80711 files and directories currently installed.)
 Preparing to unpack .../systemd-sysv_242-7~bpo10+1_amd64.deb ...
 Unpacking systemd-sysv (242-7~bpo10+1) over (241-7~deb10u1) ...
 Preparing to unpack .../libseccomp2_2.4.1-2~bpo10+1_amd64.deb ...
 Unpacking libseccomp2:amd64 (2.4.1-2~bpo10+1) over (2.3.3-4) ...
 Setting up libseccomp2:amd64 (2.4.1-2~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80652 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80711 files and directories currently installed.)
 Preparing to unpack .../udev_242-7~bpo10+1_amd64.deb ...
 Unpacking udev (242-7~bpo10+1) over (241-7~deb10u1) ...
 Preparing to unpack .../libudev1_242-7~bpo10+1_amd64.deb ...
 Unpacking libudev1:amd64 (242-7~bpo10+1) over (241-7~deb10u1) ...
 Setting up libudev1:amd64 (242-7~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80651 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80710 files and directories currently installed.)
 Preparing to unpack .../0-tzdata_2019c-0+deb10u1_all.deb ...
 Unpacking tzdata (2019c-0+deb10u1) over (2019b-0+deb10u1) ...
 Preparing to unpack .../1-libssl1.1_1.1.1d-0+deb10u2_amd64.deb ...
@@ -95,8 +95,8 @@ Setting up libcom-err2:amd64 (1.45.3-3~bpo10+1) ...
 Setting up tzdata (2019c-0+deb10u1) ...
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Tue Oct 29 16:27:25 UTC 2019.
-Universal Time is now:  Tue Oct 29 16:27:25 UTC 2019.
+Local time is now:      Thu Oct 31 13:54:02 UTC 2019.
+Universal Time is now:  Thu Oct 31 13:54:02 UTC 2019.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up udev (242-7~bpo10+1) ...
@@ -116,4 +116,4 @@ Processing triggers for initramfs-tools (0.133+deb10u1) ...
 update-initramfs: Generating /boot/initrd.img-5.2.0-0.bpo.3-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 4266740K. Space Used = 64728K. Runtime = 00:00:00:35.
+CLDS: * Disk size = 4275160K. Space Used = 64736K. Runtime = 00:00:00:36.
