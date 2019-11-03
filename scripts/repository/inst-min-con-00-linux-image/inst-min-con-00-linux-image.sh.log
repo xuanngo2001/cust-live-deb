@@ -172,12 +172,10 @@ Hit:9 http://localhost/aptly-repo/master_buster-updates-main buster-updates InRe
 Hit:10 http://localhost/aptly-repo/master_buster-updates-non-free buster-updates InRelease
 Hit:11 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
 Hit:12 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
-Hit:13 http://localhost/aptly-repo/master_docker-stable buster InRelease
-Hit:14 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:15 http://localhost/aptly-repo/master_mariadb-main buster InRelease
-Hit:16 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
-Hit:17 http://localhost/aptly-repo/master_qgis-main buster InRelease
-Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
+Hit:13 http://localhost/aptly-repo/master_google-main stable InRelease
+Hit:14 http://localhost/aptly-repo/master_mariadb-main buster InRelease
+Hit:15 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
+Hit:16 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -204,7 +202,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 829 kB in 1s (912 kB/s)
+Fetched 829 kB in 0s (18.4 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9227 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.12.16-1_amd64.deb ...
@@ -268,7 +266,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 50.0 MB in 1s (39.9 MB/s)
+Fetched 50.0 MB in 1s (45.6 MB/s)
 Selecting previously unselected package busybox.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9450 files and directories currently installed.)
 Preparing to unpack .../00-busybox_1%3a1.30.1-4_amd64.deb ...
@@ -340,6 +338,7 @@ live-boot: core filesystems devices utils udev blockdev dns.
 './cld' -> '/usr/local/cld'
 './cld/doc' -> '/usr/local/cld/doc'
 './cld/doc/bash-error-help.txt' -> '/usr/local/cld/doc/bash-error-help.txt'
+'./cld/doc/systemd-help.txt' -> '/usr/local/cld/doc/systemd-help.txt'
 './cld/doc/apt-get-help.txt' -> '/usr/local/cld/doc/apt-get-help.txt'
 './cld/doc/awk-help.txt' -> '/usr/local/cld/doc/awk-help.txt'
 './cld/doc/bash-case-help.txt' -> '/usr/local/cld/doc/bash-case-help.txt'
@@ -385,7 +384,6 @@ live-boot: core filesystems devices utils udev blockdev dns.
 './cld/doc/tr-help.txt' -> '/usr/local/cld/doc/tr-help.txt'
 './cld/doc/wget-help.txt' -> '/usr/local/cld/doc/wget-help.txt'
 './cld/doc/xargs-help.txt' -> '/usr/local/cld/doc/xargs-help.txt'
-'./cld/doc/systemd-help.txt' -> '/usr/local/cld/doc/systemd-help.txt'
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
@@ -394,39 +392,39 @@ Desired=Unknown/Install/Remove/Purge/Hold
 ii  linux-image-5.2.0-0.bpo.3-amd64          5.2.17-1~bpo10+1 amd64        Linux 5.2 for 64-bit PCs (signed)
 un  linux-image-5.2.0-0.bpo.3-amd64-unsigned <none>           <none>       (no description available)
 ii  linux-image-amd64                        5.2+107~bpo10+1  amd64        Linux for 64-bit PCs (meta-package)
-total 38084
+total 38080
 -rw-r--r-- 1 root root  3579616 Sep 30 15:38 System.map-5.2.0-0.bpo.3-amd64
 -rw-r--r-- 1 root root   216546 Sep 30 15:38 config-5.2.0-0.bpo.3-amd64
--rw-r--r-- 1 root root 29700758 Nov  1 15:19 initrd.img-5.2.0-0.bpo.3-amd64
+-rw-r--r-- 1 root root 29699645 Nov  2 17:54 initrd.img-5.2.0-0.bpo.3-amd64
 -rw-r--r-- 1 root root  5496560 Sep 30 15:38 vmlinuz-5.2.0-0.bpo.3-amd64
 b13f48e6e8cab1396cd628b4682768e3  /boot/System.map-5.2.0-0.bpo.3-amd64
 73347f1fe84a8e74f4a209e767d20b12  /boot/config-5.2.0-0.bpo.3-amd64
-3ba6fbc2fc19558e18975731532ab967  /boot/initrd.img-5.2.0-0.bpo.3-amd64
+b472a5b4ce08b5604ad65f0b0ca35a69  /boot/initrd.img-5.2.0-0.bpo.3-amd64
 1ea7008ddb984e9b72b73f26111f2093  /boot/vmlinuz-5.2.0-0.bpo.3-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Nov  1 15:16 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Nov  1 15:19 boot
-drwxr-xr-x  17 root root 3480 Nov  1 14:44 dev
-drwxr-xr-x  49 root root 4096 Nov  1 15:19 etc
+lrwxrwxrwx   1 root root    7 Nov  2 17:48 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Nov  2 17:54 boot
+drwxr-xr-x  17 root root 3600 Nov  2 17:13 dev
+drwxr-xr-x  49 root root 4096 Nov  2 17:54 etc
 drwxr-xr-x   2 root root 4096 Aug 30 12:31 home
-lrwxrwxrwx   1 root root   35 Nov  1 15:18 initrd.img -> boot/initrd.img-5.2.0-0.bpo.3-amd64
-lrwxrwxrwx   1 root root    7 Nov  1 15:16 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Nov  1 15:16 lib32 -> usr/lib32
-lrwxrwxrwx   1 root root    9 Nov  1 15:16 lib64 -> usr/lib64
-lrwxrwxrwx   1 root root   10 Nov  1 15:16 libx32 -> usr/libx32
-drwxr-xr-x   2 root root 4096 Nov  1 15:16 media
-drwxr-xr-x   2 root root 4096 Nov  1 15:16 mnt
-drwxr-xr-x   2 root root 4096 Nov  1 15:16 opt
-dr-xr-xr-x 187 root root    0 Nov  1 14:40 proc
-drwx------   3 root root 4096 Nov  1 15:18 root
-drwxr-xr-x   4 root root 4096 Nov  1 15:16 run
-lrwxrwxrwx   1 root root    8 Nov  1 15:16 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Nov  1 15:16 srv
-dr-xr-xr-x  13 root root    0 Nov  1 14:39 sys
-drwxrwxrwt   2 root root 4096 Nov  1 15:19 tmp
-drwxr-xr-x  13 root root 4096 Nov  1 15:16 usr
-drwxr-xr-x  11 root root 4096 Nov  1 15:16 var
-lrwxrwxrwx   1 root root   32 Nov  1 15:18 vmlinuz -> boot/vmlinuz-5.2.0-0.bpo.3-amd64
+lrwxrwxrwx   1 root root   35 Nov  2 17:54 initrd.img -> boot/initrd.img-5.2.0-0.bpo.3-amd64
+lrwxrwxrwx   1 root root    7 Nov  2 17:48 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Nov  2 17:48 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Nov  2 17:48 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Nov  2 17:48 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Nov  2 17:48 media
+drwxr-xr-x   2 root root 4096 Nov  2 17:48 mnt
+drwxr-xr-x   2 root root 4096 Nov  2 17:48 opt
+dr-xr-xr-x 216 root root    0 Nov  2  2019 proc
+drwx------   3 root root 4096 Nov  2 17:52 root
+drwxr-xr-x   4 root root 4096 Nov  2 17:48 run
+lrwxrwxrwx   1 root root    8 Nov  2 17:48 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Nov  2 17:48 srv
+dr-xr-xr-x  13 root root    0 Nov  2 17:12 sys
+drwxrwxrwt   2 root root 4096 Nov  2 17:54 tmp
+drwxr-xr-x  13 root root 4096 Nov  2 17:48 usr
+drwxr-xr-x  11 root root 4096 Nov  2 17:48 var
+lrwxrwxrwx   1 root root   32 Nov  2 17:54 vmlinuz -> boot/vmlinuz-5.2.0-0.bpo.3-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-5.2.0-0.bpo.3-amd64.
-CLDS: * Disk size = 1148084K. Space Used = 365492K. Runtime = 00:00:00:53.
+CLDS: * Disk size = 1280464K. Space Used = 365484K. Runtime = 00:00:01:55.
