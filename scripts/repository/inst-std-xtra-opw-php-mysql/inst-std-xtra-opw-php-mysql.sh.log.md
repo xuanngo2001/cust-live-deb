@@ -2,7 +2,7 @@
   * After this operation, 470 kB of additional disk space will be used.
   * Install php-mysql to enable the PDO_MYSQL database driver for PHP and to run Drupal.
   * Enable mod_rewrite module.
-  * Disk size = 3899888K. Space Used = 684K. Runtime = 00:00:00:03.
+  * Disk size = 4032940K. Space Used = 680K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
 php7.3-mysql php-mysql
