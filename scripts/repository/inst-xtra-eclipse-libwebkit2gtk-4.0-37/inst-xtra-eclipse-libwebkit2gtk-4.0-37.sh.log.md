@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-eclipse-libwebkit2gtk-4.0-37.sh ...
   * After this operation, 109 MB of additional disk space will be used.
   * Install libwebkit2gtk-4.0-37.
-  * Disk size = 4156832K. Space Used = 118056K. Runtime = 00:00:00:31.
+  * Disk size = 4100796K. Space Used = 118056K. Runtime = 00:00:00:29.
   * The following NEW packages will be installed:
   ```bash
 aspell aspell-en bubblewrap dictionaries-common emacsen-common
