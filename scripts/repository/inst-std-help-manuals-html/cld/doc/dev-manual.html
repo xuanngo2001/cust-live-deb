@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Developer manual</title>
-  <style type="text/css">
+  <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
@@ -470,7 +470,7 @@
 <header id="title-block-header">
 <h1 class="title">Developer manual</h1>
 </header>
-<nav id="TOC">
+<nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#create-hybrid-iso"><span class="toc-section-number">1</span> Create hybrid ISO</a></li>
 <li><a href="#add-remove-applications"><span class="toc-section-number">2</span> Add / Remove applications</a><ul>
@@ -513,7 +513,7 @@
 <section id="create-hybrid-iso" class="level1">
 <h1><span class="header-section-number">1</span> Create hybrid ISO</h1>
 <ol type="1">
-<li>Clone the git repository(e.g. <code>git clone https://github.com/limelime/cust-live-deb.git</code>)</li>
+<li>Clone the git repository(e.g. <code>git clone https://github.com/limelime/cust-live-deb.git</code>)</li>
 <li>Import the wiki to <code>./scripts/settings/doc/</code>.</li>
 <li>Download binary files as described in <code>./scripts/settings/binary/to-download.sh</code>.</li>
 <li><code>./cld.sh &lt;SYSTEM&gt; &lt;DEB_REPO_URL&gt;</code>.
@@ -545,7 +545,7 @@
 <li><code>-std-</code>: Standard system.</li>
 <li><code>-zclean-</code>: Clean up scripts that will run at the end.</li>
 </ul></li>
-<li>Suffix <code>-bpo</code> if your script is using the backports repository(e.g. <code>deb http://http.debian.net/debian jessie-backports main</code>).</li>
+<li>Suffix <code>-bpo</code> if your script is using the backports repository(e.g. <code>deb http://http.debian.net/debian jessie-backports main</code>).</li>
 </ul>
 </section>
 <section id="add-new-script" class="level2">
@@ -577,8 +577,8 @@ cat sources-aptly.list &gt;&gt; &quot;${GV_SOURCES_LIST}&quot;</code></pre>
 application/pdf=evince.desktop
 image/png=eog.desktop</code></pre>
 <ol type="1">
-<li>Find your application’s <code>*.desktop</code> in <code>/usr/share/applications/</code> and copy the <strong>MimeType</strong> value.</li>
-<li>Ensure that your application mine type is the same as your file mine type.(<code>file --mime-type YOUR_FILE</code>).</li>
+<li><p>Find your application’s <code>*.desktop</code> in <code>/usr/share/applications/</code> and copy the <strong>MimeType</strong> value.</p></li>
+<li><p>Ensure that your application mine type is the same as your file mine type.(<code>file --mime-type YOUR_FILE</code>).</p></li>
 <li><p>In <code>$HOME/.local/share/applications/mimeapps.list</code>, paste <strong>MimeType</strong> value under <strong>[Default Applications]</strong> section.</p>
 <pre><code> [Default Applications]
  text/plain=SciTE.desktop</code></pre></li>
@@ -589,7 +589,7 @@ image/png=eog.desktop</code></pre>
 <h2><span class="header-section-number">2.6</span> Preseed configuration values</h2>
 <ol type="1">
 <li>Manually configure interactively first.</li>
-<li>Get the configuration values: <code>debconf-get-selections | grep &quot;zfs&quot; &gt; zfs-dkms.seed</code></li>
+<li>Get the configuration values: <code>debconf-get-selections | grep "zfs" &gt; zfs-dkms.seed</code></li>
 <li>Feed the configuration values in your install script, before the install line: <code>debconf-set-selections -v zfs-dkms.seed</code></li>
 </ol>
 </section>
@@ -647,11 +647,11 @@ Error: Action:  is unknown. Aborted!
 <section id="how-to-upgrade-kernel" class="level1">
 <h1><span class="header-section-number">6</span> How to upgrade kernel</h1>
 <ol type="1">
-<li><p>Ensure <code>./cld-mkiso.sh &quot;${SYSTEM}&quot; &quot;${CHROOT_DIR}&quot; ignore</code> is in <code>cld.sh</code>. To forgo the following error:</p>
+<li><p>Ensure <code>./cld-mkiso.sh "${SYSTEM}" "${CHROOT_DIR}" ignore</code> is in <code>cld.sh</code>. To forgo the following error:</p>
 <pre><code> libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file &#39;/lib/modules/4.6.0-0.bpo.1-amd64/modules.dep.bin&#39;
  modinfo: ERROR: Module alias vboxguest not found.</code></pre></li>
-<li>Run <code>./cld.sh work http://localhost/aptly-repo/jessie-main</code>. The log for zfs and virtualbox will show error when trying to fetch for the version but that is fine.</li>
-<li>Load the new ISO.</li>
+<li><p>Run <code>./cld.sh work http://localhost/aptly-repo/jessie-main</code>. The log for zfs and virtualbox will show error when trying to fetch for the version but that is fine.</p></li>
+<li><p>Load the new ISO.</p></li>
 <li><p>Re-run <code>./cld.sh work http://localhost/aptly-repo/jessie-main</code>. The log for zfs and virtualbox should not show any error. The versions should be displayed.</p></li>
 </ol>
 <p>==========================</p>
@@ -704,9 +704,9 @@ Shutdown</code></pre>
 <p>Icons repository: https://icons8.com/</p>
 <p>Use <code>inst-std-accessories-scite</code> as reference.</p>
 <ol type="1">
-<li>Find menu file in <code>/usr/share/menu/</code></li>
-<li>Copy <code>jwmrc-menus-acc-scite.xml</code> to <code>jwmrc-menus-&lt;category&gt;-&lt;packagename&gt;.xml</code></li>
-<li>Edit <code>jwmrc-menus-&lt;category&gt;-&lt;packagename&gt;.xml</code> with info found in menu file.</li>
+<li><p>Find menu file in <code>/usr/share/menu/</code></p></li>
+<li><p>Copy <code>jwmrc-menus-acc-scite.xml</code> to <code>jwmrc-menus-&lt;category&gt;-&lt;packagename&gt;.xml</code></p></li>
+<li><p>Edit <code>jwmrc-menus-&lt;category&gt;-&lt;packagename&gt;.xml</code> with info found in menu file.</p></li>
 <li><p>Edit install script. E.g.:</p>
 <pre><code> # Insert Blender 3D menu in Graphics
  sed -i &quot;/Graphics\&quot;&gt;/ r jwmrc-menus-graphics-blender.xml&quot; &quot;${GV_CLD_ROOT_DIR}/jwmrc-menus.xml&quot;</code></pre></li>
@@ -792,7 +792,7 @@ keycode  36 = Return NoSymbol Return</code></pre>
 <h2><span class="header-section-number">14.6</span> Preseed Debian package answers</h2>
 <ol type="1">
 <li>Install the package and answer all the question manually.</li>
-<li>Get the answers by running <code>debconf-get-selections | grep &quot;YOUR_PACKAGE_NAME &gt; YOUR_ANSWERS.seed&quot;</code>. Note: Answers are not always good.</li>
+<li>Get the answers by running <code>debconf-get-selections | grep "YOUR_PACKAGE_NAME &gt; YOUR_ANSWERS.seed"</code>. Note: Answers are not always good.</li>
 <li>Seed the answers before installing the package: <code>debconf-set-selections -v YOUR_ANSWERS.seed</code>.</li>
 <li>Install your package.</li>
 </ol>
