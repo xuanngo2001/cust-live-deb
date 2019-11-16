@@ -13,17 +13,18 @@ Hit:11 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
 Hit:12 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
 Hit:13 http://localhost/aptly-repo/master_docker-stable buster InRelease
 Hit:14 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:15 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
-Hit:16 http://localhost/aptly-repo/master_qgis-main buster InRelease
-Hit:17 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
-Get:18 http://localhost/aptly-repo/master_buster-security-contrib buster-updates InRelease [2,566 B]
-Get:19 http://localhost/aptly-repo/master_buster-security-main buster-updates InRelease [4,045 B]
-Get:20 http://localhost/aptly-repo/master_buster-security-non-free buster-updates InRelease [2,585 B]
-Ign:21 http://dl.google.com/linux/chrome/deb stable InRelease
-Hit:22 https://deb.nodesource.com/node_12.x buster InRelease
+Hit:15 http://localhost/aptly-repo/master_mariadb-main buster InRelease
+Hit:16 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
+Hit:17 http://localhost/aptly-repo/master_qgis-main buster InRelease
+Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
+Get:19 http://localhost/aptly-repo/master_buster-security-contrib buster-updates InRelease [2,566 B]
+Get:20 http://localhost/aptly-repo/master_buster-security-main buster-updates InRelease [4,045 B]
+Get:21 http://localhost/aptly-repo/master_buster-security-non-free buster-updates InRelease [2,585 B]
+Ign:22 http://dl.google.com/linux/chrome/deb stable InRelease
 Hit:23 http://dl.google.com/linux/chrome/deb stable Release
-Get:24 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 Packages [26.1 kB]
-Fetched 35.3 kB in 4s (8,756 B/s)
+Hit:24 https://deb.nodesource.com/node_12.x buster InRelease
+Get:25 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 Packages [26.1 kB]
+Fetched 35.3 kB in 4s (8,453 B/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -64,20 +65,20 @@ Get:19 http://localhost/aptly-repo/master_buster-security-main buster-updates/ma
 Get:20 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libss2 amd64 1.45.3-3~bpo10+1 [75.0 kB]
 Get:21 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 php7.3 all 7.3.11-1~deb10u1 [39.0 kB]
 Preconfiguring packages ...
-Fetched 76.9 MB in 2s (43.4 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80156 files and directories currently installed.)
+Fetched 76.9 MB in 2s (42.1 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80174 files and directories currently installed.)
 Preparing to unpack .../systemd-sysv_242-8~bpo10+1_amd64.deb ...
 Unpacking systemd-sysv (242-8~bpo10+1) over (241-7~deb10u1) ...
 Preparing to unpack .../libseccomp2_2.4.1-2~bpo10+1_amd64.deb ...
 Unpacking libseccomp2:amd64 (2.4.1-2~bpo10+1) over (2.3.3-4) ...
 Setting up libseccomp2:amd64 (2.4.1-2~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80156 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80174 files and directories currently installed.)
 Preparing to unpack .../udev_242-8~bpo10+1_amd64.deb ...
 Unpacking udev (242-8~bpo10+1) over (241-7~deb10u1) ...
 Preparing to unpack .../libudev1_242-8~bpo10+1_amd64.deb ...
 Unpacking libudev1:amd64 (242-8~bpo10+1) over (241-7~deb10u1) ...
 Setting up libudev1:amd64 (242-8~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80155 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80173 files and directories currently installed.)
 Preparing to unpack .../00-tzdata_2019c-0+deb10u1_all.deb ...
 Unpacking tzdata (2019c-0+deb10u1) over (2019b-0+deb10u1) ...
 Preparing to unpack .../01-libssl1.1_1.1.1d-0+deb10u2_amd64.deb ...
@@ -124,8 +125,8 @@ Setting up libcom-err2:amd64 (1.45.3-3~bpo10+1) ...
 Setting up tzdata (2019c-0+deb10u1) ...
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Sun Nov 10 18:38:52 UTC 2019.
-Universal Time is now:  Sun Nov 10 18:38:52 UTC 2019.
+Local time is now:      Sun Nov 10 21:32:07 UTC 2019.
+Universal Time is now:  Sun Nov 10 21:32:07 UTC 2019.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up libfribidi0:amd64 (1.0.5-3.1+deb10u1) ...
@@ -152,4 +153,4 @@ Processing triggers for initramfs-tools (0.133+deb10u1) ...
 update-initramfs: Generating /boot/initrd.img-5.2.0-0.bpo.3-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 4003832K. Space Used = 89648K. Runtime = 00:00:01:16.
+CLDS: * Disk size = 4052396K. Space Used = 89620K. Runtime = 00:00:01:17.
