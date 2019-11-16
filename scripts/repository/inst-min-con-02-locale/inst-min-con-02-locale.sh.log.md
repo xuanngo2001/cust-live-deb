@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-02-locale.sh ...
   * After this operation, 20.8 MB of additional disk space will be used.
   * Install locale and set it to use en_US.UTF-8.
-  * Disk size = 1310200K. Space Used = 29072K. Runtime = 00:00:00:14.
+  * Disk size = 1310252K. Space Used = 29076K. Runtime = 00:00:00:17.
   * The following NEW packages will be installed:
   ```bash
 libc-l10n locales

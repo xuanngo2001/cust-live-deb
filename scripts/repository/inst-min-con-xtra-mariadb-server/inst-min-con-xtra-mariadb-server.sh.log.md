@@ -1,12 +1,12 @@
 * >>>>>>>>> Running inst-min-con-xtra-mariadb-server.sh ...
-  * After this operation, 167 MB of additional disk space will be used.
+  * After this operation, 215 MB of additional disk space will be used.
   * Install mariadb-server.
   * Set root password to [password].
-  * Disk size = 2360768K. Space Used = 295944K. Runtime = 00:00:00:36.
+  * Disk size = 2416216K. Space Used = 351348K. Runtime = 00:00:00:42.
   * The following NEW packages will be installed:
   ```bash
-galera-3 gawk libaio1 libconfig-inifiles-perl libdbi-perl
-libmpfr6 libreadline5 libsigsegv2 libsnappy1v5 libwrap0
-lsof mariadb-client-10.3 mariadb-client-core-10.3 mariadb-common mariadb-server
-mariadb-server-10.3 mariadb-server-core-10.3 mysql-common psmisc socat
+galera-4 gawk libaio1 libdbi-perl libmariadb3
+libmpfr6 libreadline5 libsigsegv2 libwrap0 lsof
+mariadb-client-10.4 mariadb-client-core-10.4 mariadb-common mariadb-server mariadb-server-10.4
+mariadb-server-core-10.4 mysql-common psmisc socat
   ```
