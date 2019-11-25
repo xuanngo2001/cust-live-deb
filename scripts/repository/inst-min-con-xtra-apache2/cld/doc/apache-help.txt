@@ -1,0 +1,15 @@
+# Get status of Apache server.
+    systemctl status apache2.service
+
+# Stop Apache server.
+    service apache2 stop
+    systemctl stop apache2.service
+
+# Start Apache server.
+    service apache2 start
+    systemctl start apache2.service
+    
+# Restart Apache server.
+    service apache2 restart
+    systemctl restart apache2.service
+    

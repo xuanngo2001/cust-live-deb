@@ -10,8 +10,11 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   apt-get install -s -y <your-package>  # Explicitly download dependent packages 
 
 # Install apache2.
-apt-get -y install apache2
+    apt-get -y install apache2
+
+# Add to CLD/
+	yes | cp -av ./cld  /usr/local
 
 
 # Log
-echo "${GV_LOG} * Install apache2."
+    echo "${GV_LOG} * Install apache2."
