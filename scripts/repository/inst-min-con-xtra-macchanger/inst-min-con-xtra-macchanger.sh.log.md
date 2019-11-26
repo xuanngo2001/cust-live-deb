@@ -5,7 +5,11 @@
   * To configure macchanger: dpkg-reconfigure macchanger.
   * Check whether it is working: macchanger -s .
   * systemctl status macchanger@.service
+<<<<<<< HEAD
   * Disk size = 2064872K. Space Used = 888K. Runtime = 00:00:00:00.
+=======
+  * Disk size = 2064872K. Space Used = 888K. Runtime = 00:00:00:03.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 macchanger

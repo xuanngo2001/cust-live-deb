@@ -4,7 +4,11 @@
   * Add aptly nightly build repository.
   * Install aptly version: 1.4.0 to create local debian repository.
   * Add xz-utils package because aptly snapshot merge needs it.
+<<<<<<< HEAD
   * Disk size = 1800004K. Space Used = 53660K. Runtime = 00:00:00:04.
+=======
+  * Disk size = 1800004K. Space Used = 53660K. Runtime = 00:00:00:22.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 aptly dirmngr gnupg gnupg-l10n gnupg-utils

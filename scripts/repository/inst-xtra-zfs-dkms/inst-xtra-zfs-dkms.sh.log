@@ -4,49 +4,126 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   libelf-dev
+<<<<<<< HEAD
 0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
+=======
+0 upgraded, 1 newly installed, 0 to remove and 14 not upgraded.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Inst libelf-dev (0.176-1.1 master_buster-main buster:buster [amd64])
 Conf libelf-dev (0.176-1.1 master_buster-main buster:buster [amd64])
 Reading package lists...
 Building dependency tree...
 Reading state information...
 lsb-release is already the newest version (10.2019051400).
+The following additional packages will be installed:
+  linux-compiler-gcc-8-x86 linux-headers-5.2.0-0.bpo.3-amd64
+  linux-headers-5.2.0-0.bpo.3-common linux-kbuild-5.2
 The following NEW packages will be installed:
+<<<<<<< HEAD
   linux-headers-amd64
 0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
 Need to get 6,784 B of archives.
 After this operation, 12.3 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-amd64 amd64 5.2+107~bpo10+1 [6,784 B]
 Fetched 6,784 B in 0s (471 kB/s)
+=======
+  linux-compiler-gcc-8-x86 linux-headers-5.2.0-0.bpo.3-amd64
+  linux-headers-5.2.0-0.bpo.3-common linux-headers-amd64 linux-kbuild-5.2
+0 upgraded, 5 newly installed, 0 to remove and 14 not upgraded.
+Need to get 10.1 MB of archives.
+After this operation, 57.7 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-compiler-gcc-8-x86 amd64 5.2.17-1~bpo10+1 [295 kB]
+Get:2 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-5.2.0-0.bpo.3-common all 5.2.17-1~bpo10+1 [8,446 kB]
+Get:3 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-kbuild-5.2 amd64 5.2.17-1~bpo10+1 [531 kB]
+Get:4 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-5.2.0-0.bpo.3-amd64 amd64 5.2.17-1~bpo10+1 [788 kB]
+Get:5 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-amd64 amd64 5.2+107~bpo10+1 [6,784 B]
+Fetched 10.1 MB in 0s (39.0 MB/s)
+Selecting previously unselected package linux-compiler-gcc-8-x86.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62296 files and directories currently installed.)
+Preparing to unpack .../linux-compiler-gcc-8-x86_5.2.17-1~bpo10+1_amd64.deb ...
+Unpacking linux-compiler-gcc-8-x86 (5.2.17-1~bpo10+1) ...
+Selecting previously unselected package linux-headers-5.2.0-0.bpo.3-common.
+Preparing to unpack .../linux-headers-5.2.0-0.bpo.3-common_5.2.17-1~bpo10+1_all.deb ...
+Unpacking linux-headers-5.2.0-0.bpo.3-common (5.2.17-1~bpo10+1) ...
+Selecting previously unselected package linux-kbuild-5.2.
+Preparing to unpack .../linux-kbuild-5.2_5.2.17-1~bpo10+1_amd64.deb ...
+Unpacking linux-kbuild-5.2 (5.2.17-1~bpo10+1) ...
+Selecting previously unselected package linux-headers-5.2.0-0.bpo.3-amd64.
+Preparing to unpack .../linux-headers-5.2.0-0.bpo.3-amd64_5.2.17-1~bpo10+1_amd64.deb ...
+Unpacking linux-headers-5.2.0-0.bpo.3-amd64 (5.2.17-1~bpo10+1) ...
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Selecting previously unselected package linux-headers-amd64.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79075 files and directories currently installed.)
+=======
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Preparing to unpack .../linux-headers-amd64_5.2+107~bpo10+1_amd64.deb ...
 Unpacking linux-headers-amd64 (5.2+107~bpo10+1) ...
+Setting up linux-compiler-gcc-8-x86 (5.2.17-1~bpo10+1) ...
+Setting up linux-headers-5.2.0-0.bpo.3-common (5.2.17-1~bpo10+1) ...
+Setting up linux-kbuild-5.2 (5.2.17-1~bpo10+1) ...
+Setting up linux-headers-5.2.0-0.bpo.3-amd64 (5.2.17-1~bpo10+1) ...
 Setting up linux-headers-amd64 (5.2+107~bpo10+1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 build-essential is already the newest version (12.6).
-dkms is already the newest version (2.6.1-4).
 libc6-dev is already the newest version (2.28-10).
+<<<<<<< HEAD
 0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
+=======
+libc6-dev set to manually installed.
+Suggested packages:
+  python3-apport
+Recommended packages:
+  fakeroot sudo
+The following NEW packages will be installed:
+  dkms
+0 upgraded, 1 newly installed, 0 to remove and 14 not upgraded.
+Need to get 74.4 kB of archives.
+After this operation, 285 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 dkms all 2.6.1-4 [74.4 kB]
+Fetched 74.4 kB in 0s (1,234 kB/s)
+Selecting previously unselected package dkms.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79878 files and directories currently installed.)
+Preparing to unpack .../archives/dkms_2.6.1-4_all.deb ...
+Unpacking dkms (2.6.1-4) ...
+Setting up dkms (2.6.1-4) ...
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Reading package lists...
 Building dependency tree...
 Reading state information...
 linux-headers-5.2.0-0.bpo.3-amd64 is already the newest version (5.2.17-1~bpo10+1).
+<<<<<<< HEAD
 0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
+=======
+linux-headers-5.2.0-0.bpo.3-amd64 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   module-assistant
+<<<<<<< HEAD
 0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
+=======
+0 upgraded, 1 newly installed, 0 to remove and 14 not upgraded.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Need to get 101 kB of archives.
 After this operation, 400 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 module-assistant all 0.11.10 [101 kB]
+<<<<<<< HEAD
 Fetched 101 kB in 0s (5,318 kB/s)
+=======
+Fetched 101 kB in 0s (2,619 kB/s)
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Selecting previously unselected package module-assistant.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79078 files and directories currently installed.)
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79935 files and directories currently installed.)
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Preparing to unpack .../module-assistant_0.11.10_all.deb ...
 Unpacking module-assistant (0.11.10) ...
 Setting up module-assistant (0.11.10) ...
@@ -58,7 +135,11 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 build-essential is already the newest version (12.6).
+<<<<<<< HEAD
 0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
+=======
+0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 
 Done!
 info: Trying to set 'zfs-dkms/note-incompatible-licenses' [note] to ''
@@ -76,25 +157,39 @@ Recommended packages:
   zfs-zed zfsutils-linux
 The following NEW packages will be installed:
   file spl-dkms zfs-dkms
+<<<<<<< HEAD
 0 upgraded, 3 newly installed, 0 to remove and 16 not upgraded.
+=======
+0 upgraded, 3 newly installed, 0 to remove and 14 not upgraded.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Need to get 1,947 kB of archives.
 After this operation, 14.1 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 file amd64 1:5.35-4 [66.3 kB]
+Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 file amd64 1:5.35-4+deb10u1 [66.4 kB]
 Get:2 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfs-dkms all 0.8.2-2~bpo10+1 [1,859 kB]
 Get:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 spl-dkms all 0.8.2-2~bpo10+1 [21.7 kB]
 Preconfiguring packages ...
+<<<<<<< HEAD
 Fetched 1,947 kB in 0s (42.4 MB/s)
+=======
+Fetched 1,947 kB in 0s (27.3 MB/s)
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Selecting previously unselected package file.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79120 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.35-4_amd64.deb ...
 Unpacking file (1:5.35-4) ...
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79977 files and directories currently installed.)
+Preparing to unpack .../file_1%3a5.35-4+deb10u1_amd64.deb ...
+Unpacking file (1:5.35-4+deb10u1) ...
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Selecting previously unselected package zfs-dkms.
 Preparing to unpack .../zfs-dkms_0.8.2-2~bpo10+1_all.deb ...
 Unpacking zfs-dkms (0.8.2-2~bpo10+1) ...
 Selecting previously unselected package spl-dkms.
 Preparing to unpack .../spl-dkms_0.8.2-2~bpo10+1_all.deb ...
 Unpacking spl-dkms (0.8.2-2~bpo10+1) ...
-Setting up file (1:5.35-4) ...
+Setting up file (1:5.35-4+deb10u1) ...
 Setting up zfs-dkms (0.8.2-2~bpo10+1) ...
 Loading new zfs-0.8.2 DKMS files...
 Building for 5.2.0-0.bpo.3-amd64
@@ -157,7 +252,7 @@ Running module version sanity check.
  - Installation
    - Installing to /lib/modules/5.2.0-0.bpo.3-amd64/updates/dkms/
 
-depmod...
+depmod....
 Running in chroot, ignoring request: restart
 
 DKMS: install completed.
@@ -167,7 +262,11 @@ Building dependency tree...
 Reading state information...
 zfs-dkms is already the newest version (0.8.2-2~bpo10+1).
 zfs-dkms set to manually installed.
+<<<<<<< HEAD
 0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
+=======
+0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -180,7 +279,11 @@ Recommended packages:
 The following NEW packages will be installed:
   libnvpair1linux libuutil1linux libzfs2linux libzpool2linux zfs-initramfs
   zfsutils-linux
+<<<<<<< HEAD
 0 upgraded, 6 newly installed, 0 to remove and 16 not upgraded.
+=======
+0 upgraded, 6 newly installed, 0 to remove and 14 not upgraded.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Need to get 1,521 kB of archives.
 After this operation, 5,198 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 libnvpair1linux amd64 0.8.2-2~bpo10+1 [55.1 kB]
@@ -189,9 +292,17 @@ Get:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backpor
 Get:4 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 libzpool2linux amd64 0.8.2-2~bpo10+1 [811 kB]
 Get:5 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfsutils-linux amd64 0.8.2-2~bpo10+1 [361 kB]
 Get:6 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfs-initramfs all 0.8.2-2~bpo10+1 [31.2 kB]
+<<<<<<< HEAD
 Fetched 1,521 kB in 0s (51.4 MB/s)
+=======
+Fetched 1,521 kB in 0s (15.3 MB/s)
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Selecting previously unselected package libnvpair1linux.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79964 files and directories currently installed.)
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80821 files and directories currently installed.)
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
 Preparing to unpack .../0-libnvpair1linux_0.8.2-2~bpo10+1_amd64.deb ...
 Unpacking libnvpair1linux (0.8.2-2~bpo10+1) ...
 Selecting previously unselected package libuutil1linux.
@@ -229,7 +340,7 @@ Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
 Setting up zfs-initramfs (0.8.2-2~bpo10+1) ...
 Processing triggers for libc-bin (2.28-10) ...
-Processing triggers for systemd (241-7~deb10u1) ...
+Processing triggers for systemd (241-7~deb10u2) ...
 Processing triggers for initramfs-tools (0.133+deb10u1) ...
 update-initramfs: Generating /boot/initrd.img-5.2.0-0.bpo.3-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
@@ -238,4 +349,8 @@ CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
 CLDS: * Install zfs-dkms: version: 0.8.2-2~bpo10+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Install zfs-initramfs to be able to boot from ZFS.
 CLDS: * Import existing ZFS partitions: zpool import -a
+<<<<<<< HEAD
 CLDS: * Disk size = 3962884K. Space Used = 43848K. Runtime = 00:00:05:12.
+=======
+CLDS: * Disk size = 4182860K. Space Used = 140628K. Runtime = 00:00:13:58.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git

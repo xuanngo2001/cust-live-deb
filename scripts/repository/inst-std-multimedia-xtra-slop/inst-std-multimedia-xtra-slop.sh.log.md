@@ -2,7 +2,11 @@
   * After this operation, 1,727 kB of additional disk space will be used.
   * Install slop.
   * Use slop to do area selection before do screen recorder using ffmpeg.
+<<<<<<< HEAD
   * Disk size = 3892060K. Space Used = 2204K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 3911284K. Space Used = 2200K. Runtime = 00:00:00:04.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 libglew2.1 libglu1-mesa slop

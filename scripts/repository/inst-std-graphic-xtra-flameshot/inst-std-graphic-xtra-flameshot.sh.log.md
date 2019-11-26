@@ -1,7 +1,11 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-flameshot.sh ...
   * After this operation, 31.0 MB of additional disk space will be used.
   * Install flameshot.
+<<<<<<< HEAD
   * Disk size = 3188656K. Space Used = 39664K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 3188696K. Space Used = 39656K. Runtime = 00:00:00:19.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 flameshot libdouble-conversion1 libpcre2-16-0 libqt5core5a libqt5dbus5

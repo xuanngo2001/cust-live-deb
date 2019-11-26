@@ -4,7 +4,11 @@
   * Add conky config file: .
   * Set conky to run on JWM startup.
   * Add on the fly settings to Conky.
+<<<<<<< HEAD
   * Disk size = 3899684K. Space Used = 2332K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 3918916K. Space Used = 2332K. Runtime = 00:00:00:05.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 conky conky-std libiw30 liblua5.1-0

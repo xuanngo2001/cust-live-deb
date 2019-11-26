@@ -4,7 +4,11 @@
   * Insert gsimplecal in JWM system tray.
   * Overwrite gtk calendar style: home/.config/gtk-3.0/gtk.css.
   * Overwrite gsimplecal configuration: home/.config/gsimplecal/config.
+<<<<<<< HEAD
   * Disk size = 4027176K. Space Used = 136K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 4046424K. Space Used = 144K. Runtime = 00:00:00:02.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 gsimplecal

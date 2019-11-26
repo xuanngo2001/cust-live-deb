@@ -2,7 +2,11 @@
   * After this operation, 140 MB of additional disk space will be used.
   * Install python3-dev.
   * Require for: tulipy
+<<<<<<< HEAD
   * Disk size = 2650148K. Space Used = 203916K. Runtime = 00:00:00:08.
+=======
+  * Disk size = 2650196K. Space Used = 203916K. Runtime = 00:00:01:02.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 dh-python libc6-dev libc-dev-bin libexpat1-dev libmpdec2

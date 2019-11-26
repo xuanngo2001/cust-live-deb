@@ -12,7 +12,11 @@
   * Install de/compressor: unzip.
   * Install de/compressor: p7zip.
   * Add universal extractor: extract.sh.
+<<<<<<< HEAD
   * Disk size = 1326780K. Space Used = 10636K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 1326772K. Space Used = 10636K. Runtime = 00:00:00:28.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 bzip2 p7zip p7zip-full rar unrar

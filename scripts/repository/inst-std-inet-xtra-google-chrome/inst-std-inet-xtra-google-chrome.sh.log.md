@@ -10,7 +10,11 @@
   * Add google chrome alias, chrome.
   * Set default browser: update-alternatives --config x-www-browser.
   * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
+<<<<<<< HEAD
   * Disk size = 3779784K. Space Used = 286212K. Runtime = 00:00:00:08.
+=======
+  * Disk size = 3799028K. Space Used = 286212K. Runtime = 00:00:00:32.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 distro-info-data gconf2-common gconf-service google-chrome-stable libappindicator1

@@ -6,7 +6,11 @@
   *   jmtpfs -o allow_other /path/to/your/mount/directory/
   *   # Enter your PIN to unlock your smartphone.
   *   cd /path/to/your/mount/directory/
+<<<<<<< HEAD
   * Disk size = 1594500K. Space Used = 7744K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 1594504K. Space Used = 7744K. Runtime = 00:00:00:10.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 jmtpfs libmagic1 libmagic-mgc libmtp9 libmtp-common

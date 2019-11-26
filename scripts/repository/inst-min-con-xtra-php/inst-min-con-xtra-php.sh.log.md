@@ -1,7 +1,11 @@
 * >>>>>>>>> Running inst-min-con-xtra-php.sh ...
   * After this operation, 17.9 MB of additional disk space will be used.
   * Install php.
+<<<<<<< HEAD
   * Disk size = 2446232K. Space Used = 22352K. Runtime = 00:00:00:07.
+=======
+  * Disk size = 2446280K. Space Used = 22392K. Runtime = 00:00:00:26.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 libapache2-mod-php7.3 libsodium23 php php7.3 php7.3-cli

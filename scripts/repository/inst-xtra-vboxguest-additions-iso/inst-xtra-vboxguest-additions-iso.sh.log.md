@@ -7,7 +7,11 @@
   * Assumed packages installed: bzip2 & Xserver installed.
   * VirtualBox guest additions installed: version: 6.0.14 r133895.
   * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
+<<<<<<< HEAD
   * Disk size = 4552148K. Space Used = 138156K. Runtime = 00:00:00:45.
+=======
+  * Disk size = 4572100K. Space Used = 138160K. Runtime = 00:00:05:11.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 build-essential* dkms libc6-dev* linux-compiler-gcc-8-x86 linux-headers-5.2.0-0.bpo.3-amd64

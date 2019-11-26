@@ -2,7 +2,11 @@
   * After this operation, 97.6 MB of additional disk space will be used.
   * Install Window Manager jwm: JWM v2.3.7 by Joe Wingbermuehle.
   * Set .
+<<<<<<< HEAD
   * Disk size = 2985024K. Space Used = 104848K. Runtime = 00:00:00:08.
+=======
+  * Disk size = 2985084K. Space Used = 104852K. Runtime = 00:00:02:49.
+>>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 adwaita-icon-theme dbus-user-session dconf-gsettings-backend dconf-service exo-utils
