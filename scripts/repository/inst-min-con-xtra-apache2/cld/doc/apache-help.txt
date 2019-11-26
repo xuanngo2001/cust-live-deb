@@ -2,14 +2,21 @@
     systemctl status apache2.service
 
 # Stop Apache server.
-    service apache2 stop
     systemctl stop apache2.service
+    service apache2 stop
+    apachectl -k stop
 
 # Start Apache server.
-    service apache2 start
     systemctl start apache2.service
+    service apache2 start
     
 # Restart Apache server.
-    service apache2 restart
     systemctl restart apache2.service
+    service apache2 restart
+    apachectl -k restart
+    apachectl -k graceful
+
+# Start it with specific httpd.conf.
+    apachectl -f /path/to/your/httpd.conf
+    apachectl -f /usr/local/apache2/conf/httpd.conf
     
