@@ -1,17 +1,17 @@
 # Get status of Apache server.
-    systemctl status apache2.service
+    systemctl status apache2
 
 # Stop Apache server.
-    systemctl stop apache2.service
+    systemctl stop apache2
     service apache2 stop
     apachectl -k stop
 
 # Start Apache server.
-    systemctl start apache2.service
+    systemctl start apache2
     service apache2 start
     
 # Restart Apache server.
-    systemctl restart apache2.service
+    systemctl restart apache2
     service apache2 restart
     apachectl -k restart
     apachectl -k graceful
