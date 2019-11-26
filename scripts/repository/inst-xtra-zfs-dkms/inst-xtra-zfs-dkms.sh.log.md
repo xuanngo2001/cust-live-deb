@@ -7,7 +7,7 @@
   * Install zfs-dkms: version: 0.8.2-2~bpo10+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
   * Install zfs-initramfs to be able to boot from ZFS.
   * Import existing ZFS partitions: zpool import -a
-  * Disk size = 3976948K. Space Used = 43832K. Runtime = 00:00:04:49.
+  * Disk size = 3962884K. Space Used = 43848K. Runtime = 00:00:05:12.
   * The following NEW packages will be installed:
   ```bash
 build-essential* dkms* file libc6-dev* libelf-dev
