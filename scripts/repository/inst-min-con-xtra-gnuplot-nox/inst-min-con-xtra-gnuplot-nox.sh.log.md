@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-gnuplot-nox.sh ...
   * After this operation, 12.3 MB of additional disk space will be used.
   * Install gnuplot-nox.
-<<<<<<< HEAD
-  * Disk size = 2060280K. Space Used = 18344K. Runtime = 00:00:00:04.
-=======
-  * Disk size = 2060280K. Space Used = 18344K. Runtime = 00:00:00:21.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Disk size = 2063964K. Space Used = 18348K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 aglfn fontconfig gnuplot-data gnuplot-nox libcairo2

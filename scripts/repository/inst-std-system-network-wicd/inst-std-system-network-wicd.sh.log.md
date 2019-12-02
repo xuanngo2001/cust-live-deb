@@ -4,11 +4,7 @@
   * Insert Wicd menu in Network.
   * Set wicd to run on JWM startup.
   * Log at /var/log/wicd/wicd.log.
-<<<<<<< HEAD
-  * Disk size = 4027036K. Space Used = 81564K. Runtime = 00:00:00:07.
-=======
-  * Disk size = 4046276K. Space Used = 81572K. Runtime = 00:00:00:57.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Disk size = 4050536K. Space Used = 81564K. Runtime = 00:00:00:06.
   * The following NEW packages will be installed:
   ```bash
 libblas3 libgfortran5 liblapack3 libnl-3-200 libnl-genl-3-200

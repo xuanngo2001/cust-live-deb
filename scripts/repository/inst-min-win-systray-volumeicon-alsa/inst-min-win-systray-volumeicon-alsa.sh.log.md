@@ -3,11 +3,7 @@
   * Install volume controller in system tray.
   * Set left-click to display volume slider: lmb_slider=true.
   * Set volumeicon to run on JWN startup.
-<<<<<<< HEAD
-  * Disk size = 2988380K. Space Used = 516K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 2988432K. Space Used = 508K. Runtime = 00:00:00:04.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Disk size = 2992116K. Space Used = 512K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libnotify4 volumeicon-alsa

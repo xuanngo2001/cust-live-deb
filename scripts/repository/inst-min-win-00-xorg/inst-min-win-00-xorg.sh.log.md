@@ -4,11 +4,7 @@
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
-<<<<<<< HEAD
-  * Disk size = 2880168K. Space Used = 148680K. Runtime = 00:00:00:07.
-=======
-  * Disk size = 2880228K. Space Used = 148692K. Runtime = 00:00:01:18.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Disk size = 2883912K. Space Used = 148696K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
 keyboard-configuration libdrm2 libdrm-amdgpu1 libdrm-common libdrm-intel1

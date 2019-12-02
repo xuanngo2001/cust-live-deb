@@ -2,11 +2,7 @@
   * After this operation, 215 MB of additional disk space will be used.
   * Install mariadb-server.
   * Set root password to [password].
-<<<<<<< HEAD
-  * Disk size = 2416212K. Space Used = 351340K. Runtime = 00:00:00:08.
-=======
-  * Disk size = 2416220K. Space Used = 351348K. Runtime = 00:00:00:39.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Disk size = 2419900K. Space Used = 351344K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
 galera-4 gawk libaio1 libdbi-perl libmariadb3

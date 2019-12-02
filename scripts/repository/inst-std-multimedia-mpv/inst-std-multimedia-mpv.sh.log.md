@@ -3,11 +3,7 @@
   * Install Media Player: mpv 0.29.1 Copyright © 2000-2018 mpv/MPlayer/mplayer2 projects.
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-<<<<<<< HEAD
-  * Disk size = 3887116K. Space Used = 95428K. Runtime = 00:00:00:06.
-=======
-  * Disk size = 3906348K. Space Used = 95428K. Runtime = 00:00:01:02.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Disk size = 3910600K. Space Used = 95432K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
 libaom0 libarchive13 libass9 libavc1394-0 libavcodec58

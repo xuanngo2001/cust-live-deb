@@ -5,11 +5,7 @@
   * Set devmon to auto start on startup.
   * Need ntfs-3g driver to be able to read and write ntfs partition.
   * Need exfat-fuse to be able to read and write exfat partition.
-<<<<<<< HEAD
-  * Disk size = 1682016K. Space Used = 5360K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 1682020K. Space Used = 5360K. Runtime = 00:00:00:03.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Disk size = 1685704K. Space Used = 5360K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libglib2.0-0 udevil

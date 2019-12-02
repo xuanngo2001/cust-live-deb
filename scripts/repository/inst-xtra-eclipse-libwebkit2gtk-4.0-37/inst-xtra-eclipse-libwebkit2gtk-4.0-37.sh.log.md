@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-xtra-eclipse-libwebkit2gtk-4.0-37.sh ...
   * After this operation, 109 MB of additional disk space will be used.
   * Install libwebkit2gtk-4.0-37.
-<<<<<<< HEAD
-  * Disk size = 4156340K. Space Used = 118056K. Runtime = 00:00:00:05.
-=======
-  * Disk size = 4176272K. Space Used = 118712K. Runtime = 00:00:00:31.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Disk size = 4180540K. Space Used = 118728K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
 aspell aspell-en bubblewrap dictionaries-common emacsen-common

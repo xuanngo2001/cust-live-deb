@@ -1,17 +1,13 @@
 * >>>>>>>>> Running inst-min-con-00-linux-image.sh ...
   * After this operation, 2824 kB of additional disk space will be used.
-  * After this operation, 276 MB of additional disk space will be used.
+  * After this operation, 279 MB of additional disk space will be used.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
-  * Installed Linux image: linux-image-5.2.0-0.bpo.3-amd64.
-<<<<<<< HEAD
-  * Disk size = 1280648K. Space Used = 365492K. Runtime = 00:00:00:25.
-=======
-  * Disk size = 1280636K. Space Used = 365488K. Runtime = 00:00:02:15.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Installed Linux image: linux-image-5.3.0-0.bpo.2-amd64.
+  * Disk size = 1283792K. Space Used = 368644K. Runtime = 00:00:00:25.
   * The following NEW packages will be installed:
   ```bash
 busybox dbus dialog firmware-linux-free initramfs-tools
 initramfs-tools-core klibc-utils libdbus-1-3 libexpat1 libklibc
-linux-base linux-image-5.2.0-0.bpo.3-amd64 linux-image-amd64 live-boot live-boot-initramfs-tools
+linux-base linux-image-5.3.0-0.bpo.2-amd64 linux-image-amd64 live-boot live-boot-initramfs-tools
 rsync
   ```

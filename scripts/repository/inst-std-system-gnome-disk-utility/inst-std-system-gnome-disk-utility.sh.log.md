@@ -3,11 +3,7 @@
   * Install Partition Manager: gnome-disk-utility.
   * Run: gnome-disks.
   * Insert gnome-disk-utility menu in Administration.
-<<<<<<< HEAD
-  * Disk size = 3907452K. Space Used = 7768K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 3926688K. Space Used = 7772K. Runtime = 00:00:00:19.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Disk size = 3930952K. Space Used = 7772K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 gdisk gnome-disk-utility libatasmart4 libblockdev2 libblockdev-fs2

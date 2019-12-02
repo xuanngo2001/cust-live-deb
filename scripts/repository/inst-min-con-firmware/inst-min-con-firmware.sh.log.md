@@ -15,11 +15,7 @@
   * After this operation, 1,621 kB of additional disk space will be used.
   * After this operation, 66.6 kB of additional disk space will be used.
   * Install firmwares.
-<<<<<<< HEAD
-  * Disk size = 1582212K. Space Used = 205776K. Runtime = 00:00:00:51.
-=======
-  * Disk size = 1582216K. Space Used = 205780K. Runtime = 00:00:03:13.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Disk size = 1585872K. Space Used = 206256K. Runtime = 00:00:00:51.
   * The following NEW packages will be installed:
   ```bash
 atmel-firmware bluez-firmware firmware-amd-graphics firmware-atheros firmware-bnx2

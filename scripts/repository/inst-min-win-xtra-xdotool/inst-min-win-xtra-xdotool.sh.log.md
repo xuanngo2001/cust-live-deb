@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-win-xtra-xdotool.sh ...
   * After this operation, 208 kB of additional disk space will be used.
   * Install xdotool to manipulate windows: move, resize, click, mouse.
-<<<<<<< HEAD
-  * Disk size = 3063148K. Space Used = 340K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 3063200K. Space Used = 336K. Runtime = 00:00:00:08.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+  * Disk size = 3066880K. Space Used = 332K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libxdo3 xdotool
