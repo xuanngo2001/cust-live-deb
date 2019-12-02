@@ -16,7 +16,7 @@ The following NEW packages will be installed:
   libqt5gui5 libqt5network5 libqt5svg5 libqt5widgets5 libxcb-icccm4
   libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0
   libxcb-xinerama0 libxcb-xkb1 libxkbcommon-x11-0
-0 upgraded, 17 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 17 newly installed, 0 to remove and 15 not upgraded.
 Need to get 9,065 kB of archives.
 After this operation, 31.0 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libdouble-conversion1 amd64 3.1.0-3 [39.4 kB]
@@ -36,13 +36,12 @@ Get:14 http://localhost/aptly-repo/master_buster-main buster/main amd64 libqt5gu
 Get:15 http://localhost/aptly-repo/master_buster-main buster/main amd64 libqt5widgets5 amd64 5.11.3+dfsg1-1+deb10u1 [2,262 kB]
 Get:16 http://localhost/aptly-repo/master_buster-main buster/main amd64 libqt5svg5 amd64 5.11.3-2 [131 kB]
 Get:17 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 flameshot amd64 0.6.0+git20191001-1~bpo10+1 [285 kB]
-<<<<<<< HEAD
-Fetched 9,065 kB in 0s (74.1 MB/s)
-=======
-Fetched 9,065 kB in 0s (40.3 MB/s)
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Fetched 9,065 kB in 0s (64.7 MB/s)
 Selecting previously unselected package libdouble-conversion1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 46966 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 47000 files and directories currently installed.)
 Preparing to unpack .../00-libdouble-conversion1_3.1.0-3_amd64.deb ...
 Unpacking libdouble-conversion1:amd64 (3.1.0-3) ...
 Selecting previously unselected package libpcre2-16-0:amd64.
@@ -115,8 +114,4 @@ Processing triggers for hicolor-icon-theme (0.17-2) ...
 Processing triggers for libc-bin (2.28-10) ...
 Processing triggers for desktop-file-utils (0.23-4) ...
 CLDS: * Install flameshot.
-<<<<<<< HEAD
-CLDS: * Disk size = 3188656K. Space Used = 39664K. Runtime = 00:00:00:02.
-=======
-CLDS: * Disk size = 3188696K. Space Used = 39656K. Runtime = 00:00:00:19.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+CLDS: * Disk size = 3192380K. Space Used = 39656K. Runtime = 00:00:00:02.
