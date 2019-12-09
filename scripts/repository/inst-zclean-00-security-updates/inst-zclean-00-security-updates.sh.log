@@ -9,23 +9,23 @@ Hit:7 http://localhost/aptly-repo/master_buster-non-free buster InRelease
 Hit:8 http://localhost/aptly-repo/master_buster-updates-contrib buster-updates InRelease
 Hit:9 http://localhost/aptly-repo/master_buster-updates-main buster-updates InRelease
 Hit:10 http://localhost/aptly-repo/master_buster-updates-non-free buster-updates InRelease
-Hit:11 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
-Hit:12 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
-Hit:13 http://localhost/aptly-repo/master_docker-stable buster InRelease
-Hit:14 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:15 http://localhost/aptly-repo/master_mariadb-main buster InRelease
-Hit:16 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
-Hit:17 http://localhost/aptly-repo/master_qgis-main buster InRelease
-Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
-Get:19 http://localhost/aptly-repo/master_buster-security-contrib buster-updates InRelease [2,565 B]
-Get:20 http://localhost/aptly-repo/master_buster-security-main buster-updates InRelease [4,044 B]
-Get:21 http://localhost/aptly-repo/master_buster-security-non-free buster-updates InRelease [4,152 B]
-Hit:22 https://deb.nodesource.com/node_12.x buster InRelease
+Hit:11 https://deb.nodesource.com/node_12.x buster InRelease
+Hit:12 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
+Hit:13 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
+Hit:14 http://localhost/aptly-repo/master_docker-stable buster InRelease
+Hit:15 http://localhost/aptly-repo/master_google-main stable InRelease
+Hit:16 http://localhost/aptly-repo/master_mariadb-main buster InRelease
+Hit:17 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
+Hit:18 http://localhost/aptly-repo/master_qgis-main buster InRelease
+Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
+Get:20 http://localhost/aptly-repo/master_buster-security-contrib buster-updates InRelease [2,565 B]
+Get:21 http://localhost/aptly-repo/master_buster-security-main buster-updates InRelease [4,044 B]
+Get:22 http://localhost/aptly-repo/master_buster-security-non-free buster-updates InRelease [4,152 B]
 Ign:23 http://dl.google.com/linux/chrome/deb stable InRelease
 Hit:24 http://dl.google.com/linux/chrome/deb stable Release
 Get:25 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 Packages [26.3 kB]
 Get:26 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 Packages [645 B]
-Fetched 37.7 kB in 2s (21.7 kB/s)
+Fetched 37.7 kB in 2s (21.8 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -49,10 +49,7 @@ Get:7 http://localhost/aptly-repo/master_buster-backports-main buster-backports/
 Get:8 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libss2 amd64 1.45.3-3~bpo10+1 [75.0 kB]
 Get:9 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libvpx5 amd64 1.7.0-3+deb10u1 [800 kB]
 Get:10 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 intel-microcode amd64 3.20191112.1~deb10u1 [2,326 kB]
-debconf: unable to initialize frontend: Dialog
-debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
-debconf: falling back to frontend: Readline
-Fetched 5,054 kB in 0s (63.3 MB/s)
+Fetched 5,054 kB in 0s (61.1 MB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80362 files and directories currently installed.)
 Preparing to unpack .../systemd-sysv_242-8~bpo10+1_amd64.deb ...
 Unpacking systemd-sysv (242-8~bpo10+1) over (241-7~deb10u2) ...
@@ -97,4 +94,4 @@ Processing triggers for initramfs-tools (0.133+deb10u1) ...
 update-initramfs: Generating /boot/initrd.img-5.3.0-0.bpo.2-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 3986592K. Space Used = 6068K. Runtime = 00:00:00:14.
+CLDS: * Disk size = 3986512K. Space Used = 6068K. Runtime = 00:00:00:14.
