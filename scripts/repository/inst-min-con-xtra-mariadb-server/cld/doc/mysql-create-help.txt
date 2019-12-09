@@ -1,0 +1,7 @@
+# Create table from query results
+    CREATE TABLE new_table
+        SELECT * 
+        FROM Contacts AS c
+            LEFT JOIN Emails AS e ON
+                c.id = e.Contact_id
+        WHERE c.id < 10
