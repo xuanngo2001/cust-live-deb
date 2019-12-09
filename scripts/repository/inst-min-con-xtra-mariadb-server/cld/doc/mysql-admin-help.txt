@@ -14,3 +14,22 @@
     mv ib_logfile0 ib_logfile0.bak
     service mysql start
     # No error.
+
+# Relocate /var/lib/mysql data directory.
+    # Create new directory for MySQL data
+    mkdir /new/dir/for/mysql
+
+    # Set ownership of new directory to match existing one
+    chown --reference=/var/lib/mysql /new/dir/for/mysql
+
+    # Set permissions on new directory to match existing one
+    chmod --reference=/var/lib/mysql /new/dir/for/mysql
+
+    # Stop MySQL before copying over files
+    service mysql stop
+
+    # Copy all files in default directory, to new one, retaining perms (-p)
+    cp -rp /var/lib/mysql/* /new/dir/for/mysql/
+    
+# Show datadir path
+    mysql -uUSER -p -e 'SHOW VARIABLES WHERE Variable_Name LIKE "%dir"'
