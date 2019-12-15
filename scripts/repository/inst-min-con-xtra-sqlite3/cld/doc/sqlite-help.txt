@@ -30,6 +30,12 @@
 	                      comment        TEXT);
 	CREATE INDEX shelf_hash ON Shelf (hash);
 
+# Create table from query results
+    CREATE TABLE new_table AS
+      SELECT expressions
+      FROM existing_tables
+      [WHERE conditions];    
+
 # Data types.
     NULL. The value is a NULL value.
     INTEGER. The value is a signed integer, stored in 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of the value.
