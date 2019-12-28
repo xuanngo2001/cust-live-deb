@@ -210,3 +210,5 @@
 
 # Performance
     EXPLAIN QUERY PLAN SELECT * FROM tags WHERE title = "Kotlin";
+    
+    The PRAGMA optimize command will automatically run ANALYZE on individual tables on an as-needed basis. The recommended practice is for applications to invoke the PRAGMA optimize statement just before closing each database connection.    
