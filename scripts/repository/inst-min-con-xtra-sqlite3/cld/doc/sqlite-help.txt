@@ -92,6 +92,10 @@
     
     # Ensure databse file size is always compacted.
     echo "PRAGMA auto_vacuum = FULL;" | sqlite3 "${db_file}"
+    
+    # Compact now.
+    echo "VACUUM;" | sqlite3 "${db_file}"
+        
 
 # Index
     CREATE INDEX StudentNameIndex ON Students(colname1, colname2,...);
