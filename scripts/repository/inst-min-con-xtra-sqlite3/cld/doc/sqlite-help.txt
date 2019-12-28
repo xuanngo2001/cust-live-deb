@@ -207,3 +207,6 @@
     round(1929.236, 2)
     -----------------
     1929.24
+
+# Performance
+    EXPLAIN QUERY PLAN SELECT * FROM tags WHERE title = "Kotlin";
