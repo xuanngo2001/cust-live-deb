@@ -2,7 +2,8 @@
 	command > >(tee -a stdout.log) 2> >(tee -a stderr.log >&2)
 
 # Redirect all to stdout-stderr.log
-	(command) 2>&1 | tee -a stdout-stderr_$(date +'%Y-%m-%d.%0k.%M.%S').log
+	(command)       2>&1 | tee -a stdout-stderr_$(date +'%Y-%m-%d.%0k.%M.%S').log
+    (time ./run.sh) 2>&1 | tee log.log
 
 # Tee not showing output with Python script because it buffers stdout when it's not a terminal.
 #   To unbuffer, use the followings:
