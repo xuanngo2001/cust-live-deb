@@ -1,5 +1,5 @@
 # Save as output_filename.html. Or overwrite.
-	wget http://www.google.com -O output_filename.html
+    wget -q -O output_filename.html     http://www.google.com
 
 # Check for internet connection.
     if wget -q --spider "http://google.com"; then
