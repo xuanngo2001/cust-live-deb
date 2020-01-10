@@ -10,14 +10,19 @@
 # Update security packages only.
 	apt-get -s dist-upgrade | grep "^Inst" | grep -i securi | awk -F " " {'print $2'} | xargs apt-get install -y
 
+# Install specific package version.
+    # Install libexpat1 with version 2.2.0-2+deb9u1
+    apt-get -y install libexpat1=2.2.0-2+deb9u1
+
+# Find package
+    apt-cache madison linux-image-amd64
+    
+# source.list
+    /etc/apt/sources.list
+
 # Apt sources.list syntax: https://manpages.debian.org/jessie/apt/sources.list.5.en.html
 	deb [ options ] uri suite [component1] [component2] [...]
 	deb http://site.example.com/debian distribution component1 component2 component3
 	deb-src http://site.example.com/debian distribution component1 component2 component3
 	deb [ arch=amd64,armel ] http://ftp.debian.org/debian jessie main
 	deb file:/home/jason/debian stable main contrib non-free
-    
-# Install package with specific version.
-    # Install libexpat1 with version 2.2.0-2+deb9u1
-    apt-get -y install libexpat1=2.2.0-2+deb9u1
-	
