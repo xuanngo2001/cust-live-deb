@@ -10,23 +10,15 @@ Recommended packages:
   | linux-headers-2.6-amd64 | linux-headers linux-image pdf-viewer
 The following NEW packages will be installed:
   libqt5opengl5 virtualbox-6.0
-0 upgraded, 2 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 16 not upgraded.
 Need to get 110 MB of archives.
 After this operation, 249 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_virtualbox-contrib buster/contrib amd64 virtualbox-6.0 amd64 6.0.14-133895~Debian~buster [109 MB]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libqt5opengl5 amd64 5.11.3+dfsg1-1+deb10u1 [161 kB]
 Preconfiguring packages ...
-<<<<<<< HEAD
-Fetched 110 MB in 3s (34.1 MB/s)
-=======
-Fetched 110 MB in 2s (49.9 MB/s)
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+Fetched 110 MB in 1s (83.3 MB/s)
 Selecting previously unselected package virtualbox-6.0.
-<<<<<<< HEAD
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56817 files and directories currently installed.)
-=======
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56827 files and directories currently installed.)
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56873 files and directories currently installed.)
 Preparing to unpack .../virtualbox-6.0_6.0.14-133895~Debian~buster_amd64.deb ...
 Unpacking virtualbox-6.0 (6.0.14-133895~Debian~buster) ...
 Selecting previously unselected package libqt5opengl5:amd64.
@@ -42,12 +34,12 @@ This system is currently not set up to build kernel modules.
 Please install the Linux kernel "header" files matching the current kernel
 for adding new hardware support to the system.
 The distribution packages containing the headers are probably:
-    linux-headers-amd64 linux-headers-5.2.0-0.bpo.3-amd64
+    linux-headers-amd64 linux-headers-5.3.0-0.bpo.2-amd64
 This system is currently not set up to build kernel modules.
 Please install the Linux kernel "header" files matching the current kernel
 for adding new hardware support to the system.
 The distribution packages containing the headers are probably:
-    linux-headers-amd64 linux-headers-5.2.0-0.bpo.3-amd64
+    linux-headers-amd64 linux-headers-5.3.0-0.bpo.2-amd64
 
 There were problems setting up VirtualBox.  To re-start the set-up process, run
   /sbin/vboxconfig
@@ -61,8 +53,4 @@ Processing triggers for systemd (241-7~deb10u2) ...
 Processing triggers for shared-mime-info (1.10-1) ...
 Processing triggers for desktop-file-utils (0.23-4) ...
 CLDS: * Install virtualbox.
-<<<<<<< HEAD
-CLDS: * Disk size = 4046116K. Space Used = 348080K. Runtime = 00:00:00:56.
-=======
-CLDS: * Disk size = 4060188K. Space Used = 348080K. Runtime = 00:00:00:52.
->>>>>>> branch 'master' of https://github.com/limelime/cust-live-deb.git
+CLDS: * Disk size = 4060560K. Space Used = 348076K. Runtime = 00:00:00:10.
