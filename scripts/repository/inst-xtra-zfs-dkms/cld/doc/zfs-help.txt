@@ -1,18 +1,39 @@
-  # Get ZFS version.
-  modinfo zfs | grep ^version
+# Get ZFS version.
+    modinfo zfs | grep ^version
 
-  # Upgrade ZFS version.
-  zpool upgrade -a
+# Upgrade ZFS version.
+    zpool upgrade -a
   
-  # Import all existing know zfs partitions.
-  zpool import -a
+# Import all existing know zfs partitions.
+    zpool import -a
 
-  # Pool status.
-  zpool status -v
-  
-  # Check integrity of hard drives
-  zpool status -v | grep 'pool:'
-  zpool scrub <pool_name>
+# Pool status.
+    zpool status -v
+
+# Destroy pool.
+    zpool destroy <pool_name>
+
+# Create pool with disks.
+    zpool create <pool_name> /dev/sda /dev/sdb /dev/sdc ...
+    
+# Raid 1: Create mirror pool.
+    zpool create <pool_name> mirror /dev/sda /dev/sdb
+
+# Raid 5: Create single-parity RAID-Z.
+    zpool create <pool_name> raidz /dev/sda /dev/sdb /dev/sdc ...    
+
+# RAIDz2: Create two-parity disks raid.
+    zpool create <pool_name> raidz2 /dev/sda /dev/sdb /dev/sdc /dev/sdd
+
+# RAIDz3: Create three-parity disks raid.
+    zpool create <pool_name> raidz3 /dev/sdb /dev/sdc /dev/sdd /dev/sde
+    
+# Add disk to existing pool.
+    zpool add <pool_name> /dev/sdd
+
+# Check integrity of hard drives
+    zpool status -v | grep 'pool:'
+    zpool scrub <pool_name>
   
 	# Symptom:
 	  ~>zpool import -a
@@ -42,3 +63,11 @@
 			  ~># Physically remove the disk.
 			  ~># Add new disk.
 			  ~>zpool attach poolname faultyDriveName /dev/sdX
+
+#####
+After performing some tests, I realize now that creating the pools by specifying disks like /dev/sda and /dev/sdb is somewhat dangerous. Your pool could become degraded or disappear if you plug in another drive and all the letters change. To remedy this, use paths with /dev/disk/by-id/... instead or immediately convert your pool after creation by running:
+
+sudo zpool export [my pool name]
+sudo zpool import -d [my pool name]
+
+https://blog.programster.org/zfs-create-disk-pools
