@@ -16,7 +16,7 @@ Get:2 http://localhost/aptly-repo/master_buster-backports-main buster-backports/
 Get:3 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-kbuild-5.4 amd64 5.4.8-1~bpo10+1 [319 kB]
 Get:4 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-5.4.0-0.bpo.2-amd64 amd64 5.4.8-1~bpo10+1 [584 kB]
 Get:5 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-amd64 amd64 5.4.8-1~bpo10+1 [1,144 B]
-Fetched 9,222 kB in 0s (53.6 MB/s)
+Fetched 9,222 kB in 0s (54.5 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -35,7 +35,7 @@ The following NEW packages will be installed:
 Need to get 74.4 kB of archives.
 After this operation, 285 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 dkms all 2.6.1-4 [74.4 kB]
-Fetched 74.4 kB in 0s (1,073 kB/s)
+Fetched 74.4 kB in 0s (1,021 kB/s)
 Selecting previously unselected package dkms.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 56869 files and directories currently installed.)
 Preparing to unpack .../archives/dkms_2.6.1-4_all.deb ...
@@ -74,8 +74,6 @@ Uncompressing VirtualBox 6.0.16 Guest Additions for Linux........
 VirtualBox Guest Additions installer
 Copying additional installer modules ...
 Installing additional modules ...
-depmod: ERROR: could not open directory /lib/modules/4.19.0-6-amd64: No such file or directory
-depmod: FATAL: could not search modules: No such file or directory
 VirtualBox Guest Additions: Starting.
 VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
 modules.  This may take a while.
@@ -83,17 +81,14 @@ VirtualBox Guest Additions: To build modules for other installed kernels, run
 VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
 VirtualBox Guest Additions: or
 VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup all
-VirtualBox Guest Additions: Kernel headers not found for target kernel 
-4.19.0-6-amd64. Please install them and execute
-  /sbin/rcvboxadd setup
+VirtualBox Guest Additions: Building the modules for kernel 5.4.0-0.bpo.2-amd64.
+Failed to connect to bus: No such file or directory
 VirtualBox Guest Additions: Running kernel modules will not be replaced until 
 the system is restarted
 Running in chroot, ignoring request: daemon-reload
-libkmod: ERROR ../libkmod/libkmod.c:586 kmod_search_moddep: could not open moddep file '/lib/modules/4.19.0-6-amd64/modules.dep.bin'
-modinfo: ERROR: Module alias vboxguest not found.
 CLDS: * WARNING: Use this script only if backport repository doesn't work.
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
-CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
+CLDS: * VirtualBox guest additions installed: version: 6.0.16 r135674.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 4627288K. Space Used = 116256K. Runtime = 00:00:00:09.
+CLDS: * Disk size = 4648264K. Space Used = 137260K. Runtime = 00:00:00:42.

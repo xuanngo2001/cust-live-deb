@@ -20,12 +20,12 @@ Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
 Get:19 http://localhost/aptly-repo/master_buster-security-contrib buster-updates InRelease [2,566 B]
 Get:20 http://localhost/aptly-repo/master_buster-security-main buster-updates InRelease [4,045 B]
 Get:21 http://localhost/aptly-repo/master_buster-security-non-free buster-updates InRelease [4,153 B]
-Ign:22 http://dl.google.com/linux/chrome/deb stable InRelease
-Hit:23 http://dl.google.com/linux/chrome/deb stable Release
-Hit:24 https://deb.nodesource.com/node_12.x buster InRelease
+Hit:22 https://deb.nodesource.com/node_12.x buster InRelease
+Ign:23 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:24 http://dl.google.com/linux/chrome/deb stable Release
 Get:25 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 Packages [27.3 kB]
 Get:26 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 Packages [640 B]
-Fetched 38.7 kB in 2s (23.2 kB/s)
+Fetched 38.7 kB in 2s (22.3 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -55,20 +55,20 @@ Get:13 http://localhost/aptly-repo/master_buster-security-main buster-updates/ma
 Get:14 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libss2 amd64 1.45.3-3~bpo10+1 [75.0 kB]
 Get:15 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 intel-microcode amd64 3.20191115.2~deb10u1 [2,428 kB]
 Preconfiguring packages ...
-Fetched 62.3 MB in 1s (89.8 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 97800 files and directories currently installed.)
+Fetched 62.3 MB in 1s (75.9 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80442 files and directories currently installed.)
 Preparing to unpack .../systemd-sysv_244-3~bpo10+1_amd64.deb ...
 Unpacking systemd-sysv (244-3~bpo10+1) over (241-7~deb10u2) ...
 Preparing to unpack .../libseccomp2_2.4.1-2~bpo10+1_amd64.deb ...
 Unpacking libseccomp2:amd64 (2.4.1-2~bpo10+1) over (2.3.3-4) ...
 Setting up libseccomp2:amd64 (2.4.1-2~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 97800 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80442 files and directories currently installed.)
 Preparing to unpack .../udev_244-3~bpo10+1_amd64.deb ...
 Unpacking udev (244-3~bpo10+1) over (241-7~deb10u2) ...
 Preparing to unpack .../libudev1_244-3~bpo10+1_amd64.deb ...
 Unpacking libudev1:amd64 (244-3~bpo10+1) over (241-7~deb10u2) ...
 Setting up libudev1:amd64 (244-3~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 97805 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80447 files and directories currently installed.)
 Preparing to unpack .../00-iproute2_5.4.0-1~bpo10+1_amd64.deb ...
 Unpacking iproute2 (5.4.0-1~bpo10+1) over (4.20.0-2) ...
 Preparing to unpack .../01-less_551-1~bpo10+1_amd64.deb ...
@@ -118,4 +118,4 @@ Processing triggers for initramfs-tools (0.133+deb10u1) ...
 update-initramfs: Generating /boot/initrd.img-5.4.0-0.bpo.2-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 4208100K. Space Used = 63704K. Runtime = 00:00:00:20.
+CLDS: * Disk size = 4122408K. Space Used = 63708K. Runtime = 00:00:00:20.
