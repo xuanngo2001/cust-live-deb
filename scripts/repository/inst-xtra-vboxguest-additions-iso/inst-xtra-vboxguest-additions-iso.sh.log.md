@@ -1,15 +1,15 @@
 * >>>>>>>>> Running inst-xtra-vboxguest-additions-iso.sh ...
-  * After this operation, 57.1 MB of additional disk space will be used.
+  * After this operation, 56.9 MB of additional disk space will be used.
   * After this operation, 285 kB of additional disk space will be used.
-  * After this operation, 57.1 MB of additional disk space will be used.
+  * After this operation, 56.9 MB of additional disk space will be used.
   * WARNING: Use this script only if backport repository doesn't work.
   * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
   * Assumed packages installed: bzip2 & Xserver installed.
-  * VirtualBox guest additions installed: version: 6.0.14 r133895.
+  * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
   * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-  * Disk size = 4571716K. Space Used = 137304K. Runtime = 00:00:00:44.
+  * Disk size = 4627288K. Space Used = 116256K. Runtime = 00:00:00:09.
   * The following NEW packages will be installed:
   ```bash
-build-essential* dkms libc6-dev* linux-compiler-gcc-8-x86 linux-headers-5.3.0-0.bpo.2-amd64
-linux-headers-5.3.0-0.bpo.2-common linux-headers-amd64 linux-kbuild-5.3
+build-essential* dkms libc6-dev* linux-compiler-gcc-8-x86 linux-headers-5.4.0-0.bpo.2-amd64
+linux-headers-5.4.0-0.bpo.2-common linux-headers-amd64 linux-kbuild-5.4
   ```
