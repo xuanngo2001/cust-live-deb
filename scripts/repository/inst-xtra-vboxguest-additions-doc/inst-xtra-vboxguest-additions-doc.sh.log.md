@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-xtra-vboxguest-additions-doc.sh ...
   * Add virtualbox doc-help.
-  * Disk size = 4511032K. Space Used = 12K. Runtime = 00:00:00:00.
+  * Disk size = 4511004K. Space Used = 12K. Runtime = 00:00:00:00.
