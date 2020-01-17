@@ -14,15 +14,15 @@ lsb-release is already the newest version (10.2019051400).
 The following NEW packages will be installed:
   linux-headers-amd64
 0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
-Need to get 1,140 B of archives.
+Need to get 1,144 B of archives.
 After this operation, 10.2 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-amd64 amd64 5.3.9-2~bpo10+1 [1,140 B]
-Fetched 1,140 B in 0s (46.2 kB/s)
+Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-amd64 amd64 5.4.8-1~bpo10+1 [1,144 B]
+Fetched 1,144 B in 0s (15.5 kB/s)
 Selecting previously unselected package linux-headers-amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79435 files and directories currently installed.)
-Preparing to unpack .../linux-headers-amd64_5.3.9-2~bpo10+1_amd64.deb ...
-Unpacking linux-headers-amd64 (5.3.9-2~bpo10+1) ...
-Setting up linux-headers-amd64 (5.3.9-2~bpo10+1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79344 files and directories currently installed.)
+Preparing to unpack .../linux-headers-amd64_5.4.8-1~bpo10+1_amd64.deb ...
+Unpacking linux-headers-amd64 (5.4.8-1~bpo10+1) ...
+Setting up linux-headers-amd64 (5.4.8-1~bpo10+1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -33,7 +33,7 @@ libc6-dev is already the newest version (2.28-10).
 Reading package lists...
 Building dependency tree...
 Reading state information...
-linux-headers-5.3.0-0.bpo.2-amd64 is already the newest version (5.3.9-2~bpo10+1).
+linux-headers-5.4.0-0.bpo.2-amd64 is already the newest version (5.4.8-1~bpo10+1).
 0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
 Reading package lists...
 Building dependency tree...
@@ -44,14 +44,41 @@ The following NEW packages will be installed:
 Need to get 101 kB of archives.
 After this operation, 400 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 module-assistant all 0.11.10 [101 kB]
-Fetched 101 kB in 0s (4,978 kB/s)
+Fetched 101 kB in 0s (1,359 kB/s)
 Selecting previously unselected package module-assistant.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79436 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79345 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.10_all.deb ...
 Unpacking module-assistant (0.11.10) ...
 Setting up module-assistant (0.11.10) ...
-Getting source for kernel version: 5.3.0-0.bpo.2-amd64
-Kernel headers available in /lib/modules/5.3.0-0.bpo.2-amd64/build
+Getting source for kernel version: 4.19.0-6-amd64
+apt-get -y install linux-headers-4.19.0-6-amd64 
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  linux-headers-4.19.0-6-common linux-kbuild-4.19
+The following NEW packages will be installed:
+  linux-headers-4.19.0-6-amd64 linux-headers-4.19.0-6-common linux-kbuild-4.19
+0 upgraded, 3 newly installed, 0 to remove and 16 not upgraded.
+Need to get 9,585 kB of archives.
+After this operation, 57.1 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 linux-headers-4.19.0-6-common all 4.19.67-2+deb10u1 [8,241 kB]
+Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 linux-kbuild-4.19 amd64 4.19.67-2+deb10u1 [547 kB]
+Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 linux-headers-4.19.0-6-amd64 amd64 4.19.67-2+deb10u1 [797 kB]
+Fetched 9,585 kB in 0s (53.8 MB/s)
+Selecting previously unselected package linux-headers-4.19.0-6-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79387 files and directories currently installed.)
+Preparing to unpack .../linux-headers-4.19.0-6-common_4.19.67-2+deb10u1_all.deb ...
+Unpacking linux-headers-4.19.0-6-common (4.19.67-2+deb10u1) ...
+Selecting previously unselected package linux-kbuild-4.19.
+Preparing to unpack .../linux-kbuild-4.19_4.19.67-2+deb10u1_amd64.deb ...
+Unpacking linux-kbuild-4.19 (4.19.67-2+deb10u1) ...
+Selecting previously unselected package linux-headers-4.19.0-6-amd64.
+Preparing to unpack .../linux-headers-4.19.0-6-amd64_4.19.67-2+deb10u1_amd64.deb ...
+Unpacking linux-headers-4.19.0-6-amd64 (4.19.67-2+deb10u1) ...
+Setting up linux-kbuild-4.19 (4.19.67-2+deb10u1) ...
+Setting up linux-headers-4.19.0-6-common (4.19.67-2+deb10u1) ...
+Setting up linux-headers-4.19.0-6-amd64 (4.19.67-2+deb10u1) ...
 Creating symlink...
 apt-get -y install build-essential 
 Reading package lists...
@@ -85,9 +112,9 @@ Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 file amd6
 Get:2 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfs-dkms all 0.8.2-3~bpo10+1 [1,860 kB]
 Get:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 spl-dkms all 0.8.2-3~bpo10+1 [21.9 kB]
 Preconfiguring packages ...
-Fetched 1,948 kB in 0s (39.3 MB/s)
+Fetched 1,948 kB in 0s (20.8 MB/s)
 Selecting previously unselected package file.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79478 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 96745 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.35-4+deb10u1_amd64.deb ...
 Unpacking file (1:5.35-4+deb10u1) ...
 Selecting previously unselected package zfs-dkms.
@@ -99,8 +126,9 @@ Unpacking spl-dkms (0.8.2-3~bpo10+1) ...
 Setting up file (1:5.35-4+deb10u1) ...
 Setting up zfs-dkms (0.8.2-3~bpo10+1) ...
 Loading new zfs-0.8.2 DKMS files...
-Building for 5.3.0-0.bpo.2-amd64
-Building initial module for 5.3.0-0.bpo.2-amd64
+It is likely that 4.19.0-6-amd64 belongs to a chroot's host
+Building for 4.19.0-6-amd64 and 5.4.0-0.bpo.2-amd64
+Building initial module for 4.19.0-6-amd64
 Done.
 
 zavl.ko:
@@ -108,63 +136,126 @@ Running module version sanity check.
  - Original module
    - No original module exists within this kernel
  - Installation
-   - Installing to /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/
+   - Installing to /lib/modules/4.19.0-6-amd64/updates/dkms/
 
 znvpair.ko:
 Running module version sanity check.
  - Original module
    - No original module exists within this kernel
  - Installation
-   - Installing to /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/
+   - Installing to /lib/modules/4.19.0-6-amd64/updates/dkms/
 
 zunicode.ko:
 Running module version sanity check.
  - Original module
    - No original module exists within this kernel
  - Installation
-   - Installing to /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/
+   - Installing to /lib/modules/4.19.0-6-amd64/updates/dkms/
 
 zcommon.ko:
 Running module version sanity check.
  - Original module
    - No original module exists within this kernel
  - Installation
-   - Installing to /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/
+   - Installing to /lib/modules/4.19.0-6-amd64/updates/dkms/
 
 zfs.ko:
 Running module version sanity check.
  - Original module
    - No original module exists within this kernel
  - Installation
-   - Installing to /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/
+   - Installing to /lib/modules/4.19.0-6-amd64/updates/dkms/
 
 icp.ko:
 Running module version sanity check.
  - Original module
    - No original module exists within this kernel
  - Installation
-   - Installing to /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/
+   - Installing to /lib/modules/4.19.0-6-amd64/updates/dkms/
 
 zlua.ko:
 Running module version sanity check.
  - Original module
    - No original module exists within this kernel
  - Installation
-   - Installing to /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/
+   - Installing to /lib/modules/4.19.0-6-amd64/updates/dkms/
 
 spl.ko:
 Running module version sanity check.
  - Original module
    - No original module exists within this kernel
  - Installation
-   - Installing to /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/
+   - Installing to /lib/modules/4.19.0-6-amd64/updates/dkms/
+
+depmod...
+Running in chroot, ignoring request: restart
+
+DKMS: install completed.
+Building initial module for 5.4.0-0.bpo.2-amd64
+Done.
+
+zavl.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-0.bpo.2-amd64/updates/dkms/
+
+znvpair.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-0.bpo.2-amd64/updates/dkms/
+
+zunicode.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-0.bpo.2-amd64/updates/dkms/
+
+zcommon.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-0.bpo.2-amd64/updates/dkms/
+
+zfs.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-0.bpo.2-amd64/updates/dkms/
+
+icp.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-0.bpo.2-amd64/updates/dkms/
+
+zlua.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-0.bpo.2-amd64/updates/dkms/
+
+spl.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-0.bpo.2-amd64/updates/dkms/
 
 depmod...
 Running in chroot, ignoring request: restart
 
 DKMS: install completed.
 Processing triggers for initramfs-tools (0.133+deb10u1) ...
-update-initramfs: Generating /boot/initrd.img-5.3.0-0.bpo.2-amd64
+update-initramfs: Generating /boot/initrd.img-5.4.0-0.bpo.2-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 Setting up spl-dkms (0.8.2-3~bpo10+1) ...
 Reading package lists...
@@ -194,9 +285,9 @@ Get:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backpor
 Get:4 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 libzpool2linux amd64 0.8.2-3~bpo10+1 [812 kB]
 Get:5 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfsutils-linux amd64 0.8.2-3~bpo10+1 [362 kB]
 Get:6 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfs-initramfs all 0.8.2-3~bpo10+1 [31.4 kB]
-Fetched 1,523 kB in 0s (32.6 MB/s)
+Fetched 1,523 kB in 0s (37.1 MB/s)
 Selecting previously unselected package libnvpair1linux.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80323 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 97590 files and directories currently installed.)
 Preparing to unpack .../0-libnvpair1linux_0.8.2-3~bpo10+1_amd64.deb ...
 Unpacking libnvpair1linux (0.8.2-3~bpo10+1) ...
 Selecting previously unselected package libuutil1linux.
@@ -219,14 +310,22 @@ Setting up libnvpair1linux (0.8.2-3~bpo10+1) ...
 Setting up libzfs2linux (0.8.2-3~bpo10+1) ...
 Setting up libzpool2linux (0.8.2-3~bpo10+1) ...
 Setting up zfsutils-linux (0.8.2-3~bpo10+1) ...
-insmod /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/spl.ko 
-insmod /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/icp.ko 
-insmod /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/zavl.ko 
-insmod /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/znvpair.ko 
-insmod /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/zcommon.ko 
-insmod /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/zlua.ko 
-insmod /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/zunicode.ko 
-insmod /lib/modules/5.3.0-0.bpo.2-amd64/updates/dkms/zfs.ko 
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.19.0-6-amd64/modules.builtin.bin'
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.19.0-6-amd64/modules.builtin.bin'
+insmod /lib/modules/4.19.0-6-amd64/updates/dkms/spl.ko 
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.19.0-6-amd64/modules.builtin.bin'
+insmod /lib/modules/4.19.0-6-amd64/updates/dkms/icp.ko 
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.19.0-6-amd64/modules.builtin.bin'
+insmod /lib/modules/4.19.0-6-amd64/updates/dkms/zavl.ko 
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.19.0-6-amd64/modules.builtin.bin'
+insmod /lib/modules/4.19.0-6-amd64/updates/dkms/znvpair.ko 
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.19.0-6-amd64/modules.builtin.bin'
+insmod /lib/modules/4.19.0-6-amd64/updates/dkms/zcommon.ko 
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.19.0-6-amd64/modules.builtin.bin'
+insmod /lib/modules/4.19.0-6-amd64/updates/dkms/zlua.ko 
+modprobe: ERROR: ../libkmod/libkmod.c:514 lookup_builtin_file() could not open builtin file '/lib/modules/4.19.0-6-amd64/modules.builtin.bin'
+insmod /lib/modules/4.19.0-6-amd64/updates/dkms/zunicode.ko 
+insmod /lib/modules/4.19.0-6-amd64/updates/dkms/zfs.ko 
 Created symlink /etc/systemd/system/zfs-import.target.wants/zfs-import-cache.service → /lib/systemd/system/zfs-import-cache.service.
 Created symlink /etc/systemd/system/zfs.target.wants/zfs-import.target → /lib/systemd/system/zfs-import.target.
 Created symlink /etc/systemd/system/zfs.target.wants/zfs-mount.service → /lib/systemd/system/zfs-mount.service.
@@ -244,11 +343,12 @@ Setting up zfs-initramfs (0.8.2-3~bpo10+1) ...
 Processing triggers for libc-bin (2.28-10) ...
 Processing triggers for systemd (241-7~deb10u2) ...
 Processing triggers for initramfs-tools (0.133+deb10u1) ...
-update-initramfs: Generating /boot/initrd.img-5.3.0-0.bpo.2-amd64
+update-initramfs: Generating /boot/initrd.img-5.4.0-0.bpo.2-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 './cld/doc/zfs-help.txt' -> '/usr/local/cld/doc/zfs-help.txt'
+libkmod: ERROR ../libkmod/libkmod.c:514 lookup_builtin_file: could not open builtin file '/lib/modules/4.19.0-6-amd64/modules.builtin.bin'
 CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
 CLDS: * Install zfs-dkms: version: 0.8.2-3~bpo10+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Install zfs-initramfs to be able to boot from ZFS.
 CLDS: * Import existing ZFS partitions: zpool import -a
-CLDS: * Disk size = 3982572K. Space Used = 43876K. Runtime = 00:00:05:20.
+CLDS: * Disk size = 4144396K. Space Used = 150572K. Runtime = 00:00:10:01.
