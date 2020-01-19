@@ -30,6 +30,22 @@
     
 # Add disk to existing pool.
     zpool add <pool_name> /dev/sdd
+    zpool add <pool_name> mirror /dev/sdi /dev/sdj
+
+# Detach disk from pool
+    zpool detach <pool_name> /dev/sdi
+
+# Take a device offline.
+    zpool offline <pool_name> /dev/sdi
+
+# Bring a device online.
+    zpool online <pool_name> /dev/sdi
+    
+# Clear storage pool device errors.
+    zpool clear <pool_name>
+
+# Replace devices in a storage pool.
+    zpool replace <pool_name>  /dev/sdi_old /dev/sdj_new
 
 # Check integrity of hard drives
     zpool status -v | grep 'pool:'
