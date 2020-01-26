@@ -12,12 +12,15 @@
 
 	# Print lines that have 3 characters or shorter.
 		sed -ne '/^.\{,3\}$/p'
-	
-# Delete line with pattern.
-	sed -i.bck "/pattern/d"
+
+# Search and replace but skip the 1st line.
+    sed '2,$s/SEARCH/REPLACE/' filename
 
 # Find line with MATCH_PATTERN. Then, SEARCH and REPLACE.
 	sed -i "/MATCH_PATTERN/b; s/SEARCH/REPLACE/" tmp.txt
+
+# Delete line with pattern.
+	sed -i.bck "/pattern/d"
 
 # Delete text between 2 patterns.
 	# Delete text between patterns, excluding the lines containing these patterns:
