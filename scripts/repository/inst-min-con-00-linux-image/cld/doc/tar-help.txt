@@ -23,3 +23,13 @@
 	XZ_OPT=3    tar ...
 	GZIP_OPT=-9 tar ...
 
+# Exclusion
+    # Exclude files using multiple patterns
+        tar -czf backup.tar.gz --exclude=PATTERN1 --exclude=PATTERN2 ... /path/to/backup
+
+    # Exclude files using an exclude file filled with a list of patterns
+        tar -czf backup.tar.gz -X /path/to/exclude.txt /path/to/backup
+
+    # Exclude files using tags by placing a tag file in any directory that should be skipped
+        tar -czf backup.tar.gz --exclude-tag-all=exclude.tag /path/to/backup
+
