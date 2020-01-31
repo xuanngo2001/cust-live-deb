@@ -5,9 +5,9 @@
     
     chmod +x cust-live-deb.wiki/git-common-commits.sh 
     
-    # Display script size and runtime.
-    ./home.sh
+    # Display package size and runtime of the latest build.
+        ./home.sh
     
-    # Total size.
-    ./sort-size.sh | grep zclean-99 | sort | grep work
+    # List of total size.
+        ./sort-size.sh | grep zclean-99 | sort | grep work_no_proxy > a.csv
     
