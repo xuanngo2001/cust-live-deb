@@ -12,6 +12,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install btrfs-progs.
 	apt-get -y install btrfs-progs
 
+# Add to CLD/
+	yes | cp -av ./cld  /usr/local
 
 # Log
 	echo "${GV_LOG} * Install btrfs-progs."
