@@ -1,7 +1,11 @@
 * >>>>>>>>> Running inst-min-con-cld-dev-tools-debootstrap.sh ...
   * After this operation, 4,308 kB of additional disk space will be used.
   * Install debootstrap allows the creation of a Debian base system in a directory.
+<<<<<<< HEAD
   * Disk size = 1393696K. Space Used = 3092K. Runtime = 00:00:00:04.
+=======
+  * Disk size = 1393680K. Space Used = 3092K. Runtime = 00:00:00:00.
+>>>>>>> refs/remotes/origin/master
   * The following NEW packages will be installed:
   ```bash
 debootstrap libpcre2-8-0 libpsl5 wget

@@ -1,7 +1,11 @@
 * >>>>>>>>> Running inst-min-con-numlock.sh ...
   * After this operation, 4,374 kB of additional disk space will be used.
   * Install numlockx to turn on NumLock on boot.
+<<<<<<< HEAD
   * Disk size = 1691104K. Space Used = 6864K. Runtime = 00:00:00:13.
+=======
+  * Disk size = 1685752K. Space Used = 6868K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/master
   * The following NEW packages will be installed:
   ```bash
 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6
