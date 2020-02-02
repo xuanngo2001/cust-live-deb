@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>User manual</title>
-  <style type="text/css">
+  <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
@@ -470,7 +470,7 @@
 <header id="title-block-header">
 <h1 class="title">User manual</h1>
 </header>
-<nav id="TOC">
+<nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#system-settings"><span class="toc-section-number">1</span> System settings</a></li>
 <li><a href="#applications"><span class="toc-section-number">2</span> Applications</a><ul>
@@ -906,7 +906,7 @@ date -u</code></pre>
 <section id="use-uuid-in-fstab" class="level2">
 <h2><span class="header-section-number">8.8</span> Use UUID in fstab</h2>
 <ol type="1">
-<li>Find UUID of your hard drive by running <code>blkid</code>.</li>
+<li><p>Find UUID of your hard drive by running <code>blkid</code>.</p></li>
 <li><p>Change device path to UUID in fstab as follows:</p>
 <pre><code> # Change: /dev/sdb1 /media/critical ext4  defaults  0 0
  #  to
