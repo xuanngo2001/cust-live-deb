@@ -1,0 +1,28 @@
+https://btrfs.wiki.kernel.org/index.php/Using_Btrfs_with_Multiple_Devices
+
+# Create a filesystem across four drives (metadata mirrored, linear data allocation)
+    mkfs.btrfs -d single /dev/sdb /dev/sdc /dev/sdd /dev/sde
+
+# Stripe the data without mirroring, metadata are mirrored
+    mkfs.btrfs -d raid0 /dev/sdb /dev/sdc
+
+# Use raid10 for both data and metadata
+    mkfs.btrfs -m raid10 -d raid10 /dev/sdb /dev/sdc /dev/sdd /dev/sde
+
+# Don't duplicate metadata on a single drive (default on single SSDs)
+    mkfs.btrfs -m single /dev/sdb
+    
+# Use full capacity of multiple drives with different sizes (metadata mirrored, data not mirrored and not striped)
+    mkfs.btrfs -d single /dev/sdb /dev/sdc
+    
+# Scan all devices
+    btrfs device scan
+
+# Scan a single device
+    btrfs device scan /dev/sdb
+    
+# How do I create a RAID1 mirror in Btrfs?
+    mkfs.btrfs -m raid1 -d raid1 /dev/sda1 /dev/sdb1
+    
+# How do I create a RAID10 striped mirror in Btrfs?
+    mkfs.btrfs -m RAID10 -d RAID10 /dev/sda1 /dev/sdb1 /dev/sdc1 /dev/sdd1
