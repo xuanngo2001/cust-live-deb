@@ -1,7 +1,3 @@
 * >>>>>>>>> Running inst-zclean-02-remove-block-services.sh ...
   * Remove block services from starting after they are being installed.
-<<<<<<< HEAD
-  * Disk size = 4058732K. Space Used = 0K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 4229392K. Space Used = 0K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/master
+  * Disk size = 4236900K. Space Used = 0K. Runtime = 00:00:00:01.
