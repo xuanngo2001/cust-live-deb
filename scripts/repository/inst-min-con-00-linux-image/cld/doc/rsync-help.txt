@@ -1,12 +1,12 @@
 # rsync always check integrity of NEWLY files copied except existing files, it will only size and timestamp
-	rsync -a source destination
+	rsync -al source destination
 
 # Don't use option -r. Use option -a. Otherwise, every sync will recopy the files from scratch.
 # Forward slash(/) means process the content after the slash.
 	
 # Copy all files, except files with size <= 0.
-	rsync -a --min-size=1 source destination
+	rsync -al --min-size=1 source destination
 	
 # Run rsync twice to do post copy checksum(-c).
-	rsync -a   source destination
-	rsync -acv source destination
+	rsync -al   source destination
+	rsync -alcv source destination
