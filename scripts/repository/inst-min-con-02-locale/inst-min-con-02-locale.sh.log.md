@@ -1,7 +1,11 @@
 * >>>>>>>>> Running inst-min-con-02-locale.sh ...
   * After this operation, 20.8 MB of additional disk space will be used.
   * Install locale and set it to use en_US.UTF-8.
+<<<<<<< HEAD
   * Disk size = 1389740K. Space Used = 29072K. Runtime = 00:00:00:18.
+=======
+  * Disk size = 1389748K. Space Used = 29072K. Runtime = 00:00:00:03.
+>>>>>>> refs/remotes/origin/master
   * The following NEW packages will be installed:
   ```bash
 libc-l10n locales

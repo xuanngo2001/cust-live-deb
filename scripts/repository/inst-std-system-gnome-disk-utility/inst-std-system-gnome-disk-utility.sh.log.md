@@ -3,7 +3,11 @@
   * Install Partition Manager: gnome-disk-utility.
   * Run: gnome-disks.
   * Insert gnome-disk-utility menu in Administration.
+<<<<<<< HEAD
   * Disk size = 4009704K. Space Used = 7772K. Runtime = 00:00:00:19.
+=======
+  * Disk size = 4014700K. Space Used = 7764K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/master
   * The following NEW packages will be installed:
   ```bash
 gdisk gnome-disk-utility libatasmart4 libblockdev2 libblockdev-fs2
