@@ -11,13 +11,9 @@ Need to get 125 kB of archives.
 After this operation, 470 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 php7.3-mysql amd64 7.3.11-1~deb10u1 [119 kB]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 php-mysql all 2:7.3+69 [5,992 B]
-<<<<<<< HEAD
-Fetched 125 kB in 0s (997 kB/s)
-=======
-Fetched 125 kB in 0s (1,810 kB/s)
->>>>>>> refs/remotes/origin/master
+Fetched 125 kB in 0s (5,884 kB/s)
 Selecting previously unselected package php7.3-mysql.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51391 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51400 files and directories currently installed.)
 Preparing to unpack .../php7.3-mysql_7.3.11-1~deb10u1_amd64.deb ...
 Unpacking php7.3-mysql (7.3.11-1~deb10u1) ...
 Selecting previously unselected package php-mysql.
@@ -37,8 +33,4 @@ To activate the new configuration, you need to run:
   systemctl restart apache2
 CLDS: * Install php-mysql to enable the PDO_MYSQL database driver for PHP and to run Drupal.
 CLDS: * Enable mod_rewrite module.
-<<<<<<< HEAD
-CLDS: * Disk size = 4134720K. Space Used = 672K. Runtime = 00:00:00:05.
-=======
-CLDS: * Disk size = 4139720K. Space Used = 672K. Runtime = 00:00:00:02.
->>>>>>> refs/remotes/origin/master
+CLDS: * Disk size = 4142172K. Space Used = 668K. Runtime = 00:00:00:02.
