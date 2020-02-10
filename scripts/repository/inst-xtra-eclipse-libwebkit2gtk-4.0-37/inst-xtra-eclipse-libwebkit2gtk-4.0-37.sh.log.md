@@ -1,12 +1,8 @@
 * >>>>>>>>> Running inst-xtra-eclipse-libwebkit2gtk-4.0-37.sh ...
   * After this operation, 109 MB of additional disk space will be used.
   * Install libwebkit2gtk-4.0-37.
-<<<<<<< HEAD
-  * Disk size = 4258552K. Space Used = 118748K. Runtime = 00:00:00:31.
-=======
   * To be able to render *.md files.
-  * Disk size = 4263520K. Space Used = 118716K. Runtime = 00:00:00:05.
->>>>>>> refs/remotes/origin/master
+  * Disk size = 4265976K. Space Used = 118708K. Runtime = 00:00:00:06.
   * The following NEW packages will be installed:
   ```bash
 aspell aspell-en bubblewrap dictionaries-common emacsen-common

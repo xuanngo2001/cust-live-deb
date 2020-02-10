@@ -2,8 +2,4 @@
   * Setup X Window to allow keyboard to move mouse.
   * Press Left Shift+NumLock.
   * Press on numpad keys to move the mouse.
-<<<<<<< HEAD
-  * Disk size = 3073012K. Space Used = 16K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 3073696K. Space Used = 16K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/master
+  * Disk size = 3075980K. Space Used = 16K. Runtime = 00:00:00:01.

@@ -3,11 +3,7 @@
   * Install locate to generate an index of files and directories. Searching for files will be much faster.
   * Add locate alias.
   * Run updatedb to update the database.
-<<<<<<< HEAD
-  * Disk size = 2149000K. Space Used = 732K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 2149684K. Space Used = 732K. Runtime = 00:00:00:00.
->>>>>>> refs/remotes/origin/master
+  * Disk size = 2151792K. Space Used = 728K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 locate

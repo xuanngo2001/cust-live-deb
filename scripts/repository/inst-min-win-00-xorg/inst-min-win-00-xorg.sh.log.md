@@ -1,14 +1,10 @@
 * >>>>>>>>> Running inst-min-win-00-xorg.sh ...
-  * After this operation, 244 MB of additional disk space will be used.
+  * After this operation, 245 MB of additional disk space will be used.
   * Set keyboard to use US international.
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
-<<<<<<< HEAD
-  * Disk size = 2966608K. Space Used = 148712K. Runtime = 00:00:01:09.
-=======
-  * Disk size = 2967276K. Space Used = 148704K. Runtime = 00:00:00:07.
->>>>>>> refs/remotes/origin/master
+  * Disk size = 2969580K. Space Used = 148720K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
 keyboard-configuration libdrm2 libdrm-amdgpu1 libdrm-common libdrm-intel1

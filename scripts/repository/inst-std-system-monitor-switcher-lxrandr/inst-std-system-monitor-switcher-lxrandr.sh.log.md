@@ -3,11 +3,7 @@
   * After this operation, 410 kB of additional disk space will be used.
   * Install Monitor Switcher: lxrandr.
   * Add lxrandr key binding.
-<<<<<<< HEAD
-  * Disk size = 4047712K. Space Used = 38004K. Runtime = 00:00:00:11.
-=======
-  * Disk size = 4052712K. Space Used = 38008K. Runtime = 00:00:00:02.
->>>>>>> refs/remotes/origin/master
+  * Disk size = 4055160K. Space Used = 37992K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 cpp cpp-8 libisl19 libmpc3 lxrandr
