@@ -62,6 +62,13 @@
 		WHERE table_schema = '${MYSQL_DBNAME}'
 		ORDER BY (data_length + index_length) ASC;" >> ${BACKUP_DIR_PATH}/${BACKUP_DIR_NAME}.info.txt
 
+# Get database size.
+    SELECT table_schema "Database Name"
+         , SUM( data_length + index_length ) / 1048576  AS "Database Size in MB"
+         , SUM( data_free )/ 1048576  AS "Free Space in MB"
+    FROM information_schema.TABLES
+    GROUP BY table_schema;
+
 # Execute sql
 	mysql -uusername -ppassword databasename < SQLcommands.sql
 	mysql -uusername -ppassword databasename <<< "SELECT * FROM aTable;"
