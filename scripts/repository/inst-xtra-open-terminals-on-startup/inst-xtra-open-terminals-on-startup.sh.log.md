@@ -3,7 +3,11 @@
   * Install wmctrl.
   * Install x11-utils for xprop.
   * Make open-terminals.sh run when JWM start.
+<<<<<<< HEAD
+  * Disk size = 4363016K. Space Used = 20K. Runtime = 00:00:00:01.
+=======
   * Disk size = 4367984K. Space Used = 20K. Runtime = 00:00:00:00.
+>>>>>>> refs/remotes/origin/master
   * The following NEW packages will be installed:
   ```bash
 wmctrl* x11-utils* x11-xserver-utils*

@@ -2,7 +2,11 @@
   * After this operation, 97.6 MB of additional disk space will be used.
   * Install Window Manager jwm: JWM v2.3.7 by Joe Wingbermuehle.
   * Set .
+<<<<<<< HEAD
+  * Disk size = 3071456K. Space Used = 104844K. Runtime = 00:00:02:43.
+=======
   * Disk size = 3072140K. Space Used = 104860K. Runtime = 00:00:00:09.
+>>>>>>> refs/remotes/origin/master
   * The following NEW packages will be installed:
   ```bash
 adwaita-icon-theme dbus-user-session dconf-gsettings-backend dconf-service exo-utils
