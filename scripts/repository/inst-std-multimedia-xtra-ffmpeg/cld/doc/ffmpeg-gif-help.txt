@@ -1,0 +1,6 @@
+# Convert video to gif: https://imdjh.github.io/howto/2015/10/09/howto-ffmpeg-capture-screen-as-gif.html
+    sleep 2; ffmpeg -y -video_size 683x384 -framerate 15 -f x11grab -i :0.0+0,0 output.mp4
+    ffmpeg -i output.mp4 -ss 10 -t 54 myclip.mp4; ffplay myclip.mp4
+    ffmpeg -i myclip.mp4 -vf fps=6 frames/ffout%03d.png
+    convert -delay 7 -loop 0 -dither None -colors 3 "frames/ffout*.png" -fuzz "10%" -layers OptimizeFrame "output.gif"
+

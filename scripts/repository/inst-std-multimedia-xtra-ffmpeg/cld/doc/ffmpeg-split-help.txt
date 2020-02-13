@@ -1,0 +1,10 @@
+# Compare two video files by using a vertical split screen: https://avpres.net/FFmpeg/split.html
+    ffmpeg \
+        -i input_file_1 \
+        -i input_file_2 \
+        -filter_complex \
+            "[0]crop=iw/2:ih:0:0, \
+                pad=iw*2:ih[left]; \
+            [1]crop=iw/2:ih:iw/2:0[right]; \
+            [left][right]overlay=w" \
+        output_file

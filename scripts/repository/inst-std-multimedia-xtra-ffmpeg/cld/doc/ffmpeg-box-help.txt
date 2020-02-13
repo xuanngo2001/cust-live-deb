@@ -1,0 +1,2 @@
+# https://video.stackexchange.com/questions/14924/ffmpeg-drawtext-clipping-to-a-bounding-box
+    ffmpeg -y -i input.mp4 -vf "drawbox=enable='between(t,2,6)':y=ih-ih/4:color=black@0.5:width=iw:height=56:t=max",\ "drawtext=enable='between(t,2,6)':fontfile=roboto.ttf:y=h-h/4+10:x=20:text='Test Heading':fontcolor=white:fontsize=16,drawtext=enable='between(t,2,6)':fontfile=roboto.ttf:y=h-h/4+30:x=20:text='Test sub heading':fontcolor=white:fontsize=12" -acodec copy output.mp4

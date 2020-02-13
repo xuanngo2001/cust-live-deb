@@ -1,0 +1,7 @@
+# https://trac.ffmpeg.org/wiki/Capture/Desktop: Press q to quit.
+    # No audio.
+    ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 output.mp4
+    
+    # With audio.
+    ffmpeg -video_size 1024x768 -framerate 25 -f x11grab -i :0.0+100,200 -f alsa -ac 2 -i hw:0 output.mkv
+
