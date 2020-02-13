@@ -56,3 +56,10 @@
 # Print video info.
 	find . -type f -print0 | xargs -0 mpv --no-audio --vo=null --frames=1
 
+# Print all video available.
+    mpv -vo=help
+
+# Play with specific video format, x11 = not hardware accelerated.
+    mpv --vo=x11 video.avi
+    
+Well, it looks like it’s crashing in driver code. Try with a different opengl backend (e.g. --opengl-backend=dxinterop or --opengl-backend=win). Most likely not our bug, but ANGLE triggering undefined behavior in AMD’s drivers.
