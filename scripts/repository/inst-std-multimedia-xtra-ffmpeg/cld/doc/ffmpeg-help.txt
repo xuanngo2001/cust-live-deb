@@ -124,7 +124,12 @@ ffmpeg -y -r 24 -i seeing_noaudio.h264 -c copy seeing.mp4
 To list all possible internal presets and tunes:
 
 ffmpeg -hide_banner -f lavfi -i nullsrc -c:v libx264 -preset help -f mp4 -
+
+x264 preset encoding time vs quality graph: https://trac.ffmpeg.org/wiki/Encode/H.264#FAQ
 ===============
 
-
+# Convert RMVB to MP4
+    ffmpeg -i 1.rmvb -c:v libx264 -b:a 32k output.mp4
+    ffmpeg -i "%%~G" -c:v h264 -c:a aac "%%~nG.mp4"
+    qscale:v 17
 

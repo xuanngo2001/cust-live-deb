@@ -10,11 +10,15 @@
 
 # Re-encode using the crop filter
   ffmpeg -i input.mp4 -vf crop=1280:720:0:0 -c:a copy output.mp4
-		
+
 http://ffmpeg.org/ffmpeg-filters.html#crop		
 Crop area with size 100x100 at position (12,34).		
 crop=100:100:12:34
 
 ffmpeg -i input -t 1 -vf cropdetect -f null - 2>&1 | awk '/crop/ { print $NF }' | tail -1
 
+ffmpeg -i in.mp4 -filter:v "crop=out_w:out_h:x:y" out.mp4
+    out_w is the width of the output rectangle
+    out_h is the height of the output rectangle
+    x and y specify the top left corner of the output rectangle
 

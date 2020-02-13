@@ -7,3 +7,14 @@ ffmpeg -loop 1 -i img.jpg -c:v libx264 -t 30 -pix_fmt yuv420p out.mp4
 
 ffmpeg -loop 1 -i img.jpg -i audio.wav -c:v libx264 -c:a aac -b:a 192k -shortest out.mp4
 ffmpeg -loop 1 -i img.jpg -i audio.m4a -c:v libx264 -c:a copy -shortest out.mp4
+
+# Create a silent video from 1 image.
+	ffmpeg -loop 1 -i img002.jpg -f lavfi -i anullsrc=channel_layout=5.1:sample_rate=48000 -t 10 -c:v libx264 -t 10 -pix_fmt yuv420p -vf scale=480:320 -y output.mp4
+
+# Create a video from 1 image and an audio file.
+	image_file=subscribe-image.png
+	music_file=subscribe-audio.aac
+	ffmpeg -y -loop 1 -i "${image_file}" -i "${music_file}" -c:v libx264 -tune stillimage -c:a aac -b:a 48k -pix_fmt yuv420p -shortest subscribe-video.mp4
+
+
+	
