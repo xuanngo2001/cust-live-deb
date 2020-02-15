@@ -15,3 +15,6 @@
     systemd-analyze critical-chain
     systemd-analyze plot > something.svg
     systemd-analyze dot | dot -Tpng -o stuff.png
+    
+systemd-analyze blame --no-pager
+systemd-analyze dump
