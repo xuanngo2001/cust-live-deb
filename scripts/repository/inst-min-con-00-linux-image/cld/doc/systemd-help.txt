@@ -13,6 +13,8 @@
 
 # Display execution tree of systemd
     systemd-analyze critical-chain
+        systemd-analyze critical-chain [UNIT...]
+        
     systemd-analyze plot > something.svg
     systemd-analyze dot | dot -Tpng -o stuff.png
     
