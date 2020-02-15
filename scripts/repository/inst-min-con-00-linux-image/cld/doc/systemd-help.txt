@@ -1,5 +1,6 @@
 # Show service status.
     systemctl status mariadb.service --no-page
+    journalctl -u cld-systemd-start-stop.service
 
 # List all services enabled.
     systemctl list-unit-files | grep enabled
@@ -9,4 +10,8 @@
     
 # Start service
     service mysql start
-    
+
+# Display execution tree of systemd
+    systemd-analyze critical-chain
+    systemd-analyze plot > something.svg
+    systemd-analyze dot | dot -Tpng -o stuff.png
