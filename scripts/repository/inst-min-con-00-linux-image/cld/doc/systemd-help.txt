@@ -1,22 +1,36 @@
 # Show service status.
-    systemctl status mariadb.service --no-page
+    systemctl status mariadb.service --no-pager -l
+
     journalctl -u cld-systemd-start-stop.service
 
+# Start service
+    service mysql start
+    
 # List all services enabled.
     systemctl list-unit-files | grep enabled
     systemctl list-unit-files --state=running
     
     systemctl list-units --type service --state running,failed
-    
-# Start service
-    service mysql start
 
-# Display execution tree of systemd
-    systemd-analyze critical-chain
+# Display content of *.service
+    systemctl cat cld-systemd-start-stop.service
+
+# List of jobs running
+    systemctl list-jobs
+    
+# Get available target
+    systemctl list-units --type=target --no-pager
+    
+# Get executed targets in order
+    systemd-analyze critical-chain --no-pager
         systemd-analyze critical-chain [UNIT...]
         
+# Display execution tree of systemd
     systemd-analyze plot > something.svg
     systemd-analyze dot | dot -Tpng -o stuff.png
     
+    systemd-analyze dot cld-systemd-start-stop.service | dot -Tpng -o cld-systemd.png
+    systemd-analyze dot --to-pattern='*.target' --from-pattern='*.target' | dot -Tsvg > targets.svg
+
 systemd-analyze blame --no-pager
 systemd-analyze dump
