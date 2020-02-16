@@ -5,19 +5,20 @@ https://wiki.archlinux.org/index.php/systemd
 http://unix.stackexchange.com/questions/284598/systemd-how-to-execute-script-at-shutdown-only-not-at-reboot
 
 
-    # Get available target
+# Get available target
     systemctl list-units --type=target --no-pager
     
-    # Get executed targets in order
+# Get executed targets in order
     systemd-analyze critical-chain --no-pager
     
-    # Target dependency graph
+# Target dependency graph
     systemd-analyze dot --to-pattern='*.target' --from-pattern='*.target' | dot -Tsvg > targets.svg
+    systemd-analyze dot cld-systemd-start-stop.service | dot -Tpng -o cld-systemd.png
     
-    # Main target explained
+# Main target explained
     https://wiki.archlinux.org/index.php/systemd#Targets_table
     
-    # List of jobs running
+# List of jobs running
     systemctl list-jobs
 
 # Test
@@ -53,9 +54,9 @@ http://unix.stackexchange.com/questions/284598/systemd-how-to-execute-script-at-
 
     
 # Service file
-Shutdown scripts are not ran if you use combinations of:
-* Type=oneshot, RemainAfterExit=yes
-* Type=forking, PIDFile=/some/path/file.pid
+    Shutdown scripts are not ran if you use combinations of:
+    * Type=oneshot, RemainAfterExit=yes
+    * Type=forking, PIDFile=/some/path/file.pid
 
-Only **Type=simple** works.
+    Only **Type=simple** works.
 
