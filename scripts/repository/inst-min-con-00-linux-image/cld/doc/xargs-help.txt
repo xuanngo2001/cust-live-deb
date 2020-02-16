@@ -26,3 +26,6 @@
 
 # Add newline for every 3 words
 	echo 'cat dog eel pig'| xargs -n3
+
+echo {1..8} | parallel -N2 echo {1} {2}
+https://unix.stackexchange.com/questions/178191/multiple-arguments-using-xargs
