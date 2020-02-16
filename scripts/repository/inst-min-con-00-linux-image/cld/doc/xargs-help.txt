@@ -14,6 +14,9 @@
 # Run multiple commands
 	echo $'one\ntwo\nthree and four' | tr '\n' '\0' | xargs -0 -I{} sh -c "echo Y; echo \"{}\";"
 
+# Pass multiple arguments.
+    echo {1..8} | xargs -n2 sh -c 'echo "the number $1 comes before $2"' sh
+    
 # Combined use
 	\ls *.xmp | sed 's/\.xmp//' |tr '\n' '\0'| xargs -0 -n1 -I{} sh -c "echo Y| zero-size.sh \"{}\";"
 	\ls *.mkv *.avi *.mp4 *.rmvb *.rm |tr '\n' '\0'| xargs -0 -n1 -I{} sh -c "mpv-movie-shot.sh {} && rm -f {}"
