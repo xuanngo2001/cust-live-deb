@@ -14,4 +14,4 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Log
-	echo "${GV_LOG} * Install fix."
+	echo "${GV_LOG} * 2020-02-17: libtesseract4 package still need."
