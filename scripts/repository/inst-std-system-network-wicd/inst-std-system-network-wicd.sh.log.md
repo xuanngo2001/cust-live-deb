@@ -1,16 +1,16 @@
 * >>>>>>>>> Running inst-std-system-network-wicd.sh ...
-  * After this operation, 50.8 MB of additional disk space will be used.
+  * After this operation, 50.5 MB of additional disk space will be used.
   * Install Network Manager: wicd.
   * Insert Wicd menu in Network.
   * Set wicd to run on JWM startup.
   * Log at /var/log/wicd/wicd.log.
-  * Disk size = 4136756K. Space Used = 81596K. Runtime = 00:00:00:07.
+  * Disk size = 4370976K. Space Used = 81160K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
 libblas3 libgfortran5 liblapack3 libnl-3-200 libnl-genl-3-200
 libnl-route-3-200 libpython2.7-minimal libpython2.7-stdlib libpython2-stdlib libpython-stdlib
-libquadmath0 python python2 python2.7 python2.7-minimal
-python2-minimal python-cairo python-dbus python-glade2 python-gobject-2
-python-gtk2 python-minimal python-numpy python-pkg-resources python-wicd
-wicd wicd-daemon wicd-gtk wireless-tools wpasupplicant
+python python2 python2.7 python2.7-minimal python2-minimal
+python-cairo python-dbus python-glade2 python-gobject-2 python-gtk2
+python-minimal python-numpy python-pkg-resources python-wicd wicd
+wicd-daemon wicd-gtk wireless-tools wpasupplicant
   ```
