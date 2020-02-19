@@ -1,42 +1,3 @@
-# Log in mysql server
-	mysql --user=root mysql
-
-# Shutdown mysql
-	mysqladmin -u root -p${ROOT_PASSWORD} shutdown
-
-# Start / Stop mysql
-	service mysql stop
-	service mysql start
-
-# Check mysql status
-    systemctl status mariadb.service --no-page
-
-# Feed command to mysql
-    echo "select 1" | mysql
-    mysql --batch --silent -e 'SHOW TABLES';
-    mysql < commands.sql
-    mysql --host=localhost --user=user --password=password << END
-
-        CREATE USER 'testuser'@'localhost' IDENTIFIED BY  'jakdJxct8W';
-        CREATE DATABASE IF NOT EXISTS 'testuser_dev' DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
-        GRANT ALL PRIVILEGES ON  'testuser_dev' . * TO  'testuser'@'localhost';
-        CREATE DATABASE IF NOT EXISTS 'testuser_qa' DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
-        GRANT ALL PRIVILEGES ON  'testuser_qa' . * TO  'testuser'@'localhost';
-        END
-
-    read -d '' SQL_QUERY_1 << EOF
-
-        SELECT prod.id as id, prod.title as title, comp.name as company, pho.id as photo_id, pho.image as photo_name
-        FROM products as prod
-        JOIN accounts as comp
-        ON comp.id = prod.account_id
-        JOIN photos as pho
-        ON pho.id = prod.featured_photo_id;
-
-        EOF
-
-        echo ${SQL_QUERY_1} | mysql
-
 # View users
 	select user,host from mysql.user;
 
@@ -47,12 +8,6 @@
 
     # Run if new mysql instance is installed.
     mysql -e "CREATE USER 'root2'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON *.* TO 'root2'@'localhost' WITH GRANT OPTION; FLUSH PRIVILEGES;"
-
-# After crash: ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such file or directory")
-    systemctl status mariadb.service --no-page 
-            # Cannot open tablespace mysql/innodb_index_stats which uses space ID: 2 at filepath: ./mysql/innodb_index_stats.ibd"
-    # On Status line, delete affected *.ibd until no error on:
-        service mysql start
 
 # Save database table sizes
 	mysql -t -u ${MYSQL_USER} -p${MYSQL_PWD} -h ${MYSQL_HOST} ${MYSQL_DBNAME} <<< "
@@ -69,21 +24,20 @@
     FROM information_schema.TABLES
     GROUP BY table_schema;
 
-# Execute sql
-	mysql -uusername -ppassword databasename < SQLcommands.sql
-	mysql -uusername -ppassword databasename <<< "SELECT * FROM aTable;"
-	mysql -uusername -ppassword databasename -e "SELECT * FROM aTable;"
+# Truncate or drop
+    TRUNCATE TABLE Price;
+    DROP TABLE Price;
 
-# Test examples
-    mysql -uroot2 -ppassword -e "DROP DATABASE cldTest; CREATE DATABASE cldTest;"
-	
-	mysql -uroot2 -ppassword cldTest < mysql-sql-examples.sql
+# Insert data into table from a query.
+    INSERT INTO tbl_temp2 (fld_id)
+        SELECT tbl_temp1.fld_order_id
+        FROM tbl_temp1 WHERE tbl_temp1.fld_order_id > 100;
 
-	mysql -uroot2 -ppassword cldTest -e "DESCRIBE Product;" | grep -v ^+ | grep -v 'Field.*Type.*Default.*Extra' | cut -f1 |  sed 's/\(.*\)/get\1(self):\n\treturn self.\1/'
-	
-	mysql -uroot2 -ppassword cldTest -e "DESCRIBE Product;" | grep -v ^+ | grep -v 'Field.*Type.*Default.*Extra' | cut -f1 |  sed 's/\(.*\)/set\1(\1):\n\tself.\1=\1/'
-
-	mysql -uroot2 -ppassword cldTest -e "DESCRIBE Product;" | grep -v ^+ | grep -v 'Field.*Type.*Default.*Extra' | cut -f1 |  xargs -n1 ./word.sh
+# String functions: https://dev.mysql.com/doc/refman/8.0/en/string-functions.html#function_instr
+    REPLACE(colname, 'str1', 'replace_str')
+    
+# IN() function: id = 12 or 555 or 888
+    SELECT * from Product WHERE id IN (12, 5555, 888)
 
 # Export results as CSV file
 	SELECT order_id,product_name,qty
@@ -97,25 +51,6 @@
     # No column names or header, no pipes
     mysql --skip-column-names --silent -h"${host}" -u${username} -p${password} ${db_name} -e "${query}"
     
-# Truncate or drop
-    mysql -h localhost -uroot2 -ppassword htstbot -e "TRUNCATE TABLE Price;"
-    mysql -h localhost -uroot2 -ppassword htstbot -e "DROP TABLE Price;"
-
-# Insert data into table from a query.
-    INSERT INTO tbl_temp2 (fld_id)
-        SELECT tbl_temp1.fld_order_id
-        FROM tbl_temp1 WHERE tbl_temp1.fld_order_id > 100;
-
-# String functions: https://dev.mysql.com/doc/refman/8.0/en/string-functions.html#function_instr
-    REPLACE(colname, 'str1', 'replace_str')
-    
-# IN() function: id = 12 or 555 or 888
-    SELECT * from Product WHERE id IN (12, 5555, 888)
-
-# ERROR 1133 (28000): Can't find any matching row in the user table
-# ERROR 1194 (HY000): Table 'user' is marked as crashed and should be repaired
-    mysqlcheck --repair --all-databases
-
 # Import from CSV.
     -Requiremement: Table must exists first.
     -Quoting is important.
