@@ -1,18 +1,28 @@
+# Install package.
+    apt-get -y install nvidia-driver
+    
+    # Download package but don't install.
+    apt-get install -s -y nvidia-driver
+    
+# Remove package
+    # --purge = Remove configuration files too.
+    apt-get -y --purge remove gimp
+
+# Install specific package version.
+    # Install libexpat1 with version 2.2.0-2+deb9u1
+    apt-get -y install libexpat1=2.2.0-2+deb9u1
+    
 # Debug broken package. Search for 'Failed'.
-	apt-get -o Debug::pkgProblemResolver=yes install <package> &> error.log
+    apt-get -o Debug::pkgProblemResolver=yes install <package> &> error.log
 
 # Get dependent packages.
-	apt-cache depends mpv
+    apt-cache depends mpv
 
 # Clean cached *.deb
     apt-get clean
 
 # Update security packages only.
-	apt-get -s dist-upgrade | grep "^Inst" | grep -i securi | awk -F " " {'print $2'} | xargs apt-get install -y
-
-# Install specific package version.
-    # Install libexpat1 with version 2.2.0-2+deb9u1
-    apt-get -y install libexpat1=2.2.0-2+deb9u1
+    apt-get -s dist-upgrade | grep "^Inst" | grep -i securi | awk -F " " {'print $2'} | xargs apt-get install -y
 
 # Find package
     apt-cache madison linux-image-amd64
@@ -21,8 +31,8 @@
     /etc/apt/sources.list
 
 # Apt sources.list syntax: https://manpages.debian.org/jessie/apt/sources.list.5.en.html
-	deb [ options ] uri suite [component1] [component2] [...]
-	deb http://site.example.com/debian distribution component1 component2 component3
-	deb-src http://site.example.com/debian distribution component1 component2 component3
-	deb [ arch=amd64,armel ] http://ftp.debian.org/debian jessie main
-	deb file:/home/jason/debian stable main contrib non-free
+    deb [ options ] uri suite [component1] [component2] [...]
+    deb http://site.example.com/debian distribution component1 component2 component3
+    deb-src http://site.example.com/debian distribution component1 component2 component3
+    deb [ arch=amd64,armel ] http://ftp.debian.org/debian jessie main
+    deb file:/home/jason/debian stable main contrib non-free
