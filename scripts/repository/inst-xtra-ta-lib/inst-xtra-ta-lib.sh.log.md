@@ -3,7 +3,7 @@
   * Install ta-lib.org from source.
   * wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
   * Require later to: pip install TA-Lib
-  * Disk size = 4671704K. Space Used = 65012K. Runtime = 00:00:01:15.
+  * Disk size = 4671168K. Space Used = 65024K. Runtime = 00:00:01:16.
   * The following NEW packages will be installed:
   ```bash
 build-essential g++ g++-8 libstdc++-8-dev

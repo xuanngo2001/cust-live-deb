@@ -1,7 +1,8 @@
 * >>>>>>>>> Running inst-min-win-01-xorg-drivers-fix-nvidia-driver.sh ...
+  * After this operation, 540 kB disk space will be freed.
   * After this operation, 228 MB of additional disk space will be used.
   * Install nvidia-driver to fix freeze of nouveau driver: Nouveau system freeze fifo: SCHED_ERROR 0a [CTXSW_TIMEOUT]
-  * Disk size = 3345612K. Space Used = 273144K. Runtime = 00:00:00:34.
+  * Disk size = 3345076K. Space Used = 272596K. Runtime = 00:00:00:35.
   * The following NEW packages will be installed:
   ```bash
 binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-8
