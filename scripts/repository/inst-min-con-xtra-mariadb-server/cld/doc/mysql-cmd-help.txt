@@ -1,0 +1,69 @@
+# Log in mysql server
+	mysql --user=root mysql
+
+# Shutdown mysql
+	mysqladmin -u root -p${ROOT_PASSWORD} shutdown
+
+# Start / Stop mysql
+    # On System V:
+	service mysql stop
+	service mysql start
+    
+    # On systemd:
+    systemctl start mariadb.service
+    systemctl stop mariadb.service
+    
+# Check mysql status
+    systemctl status mariadb.service --no-page
+
+# Feed command to mysql
+    echo "select 1" | mysql
+    mysql --batch --silent -e 'SHOW TABLES';
+    mysql < commands.sql
+    mysql --host=localhost --user=user --password=password << END
+
+        CREATE USER 'testuser'@'localhost' IDENTIFIED BY  'jakdJxct8W';
+        CREATE DATABASE IF NOT EXISTS 'testuser_dev' DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+        GRANT ALL PRIVILEGES ON  'testuser_dev' . * TO  'testuser'@'localhost';
+        CREATE DATABASE IF NOT EXISTS 'testuser_qa' DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+        GRANT ALL PRIVILEGES ON  'testuser_qa' . * TO  'testuser'@'localhost';
+        END
+
+    read -d '' SQL_QUERY_1 << EOF
+
+        SELECT prod.id as id, prod.title as title, comp.name as company, pho.id as photo_id, pho.image as photo_name
+        FROM products as prod
+        JOIN accounts as comp
+        ON comp.id = prod.account_id
+        JOIN photos as pho
+        ON pho.id = prod.featured_photo_id;
+
+        EOF
+
+        echo ${SQL_QUERY_1} | mysql
+
+# Execute sql
+	mysql -uusername -ppassword databasename < SQLcommands.sql
+	mysql -uusername -ppassword databasename <<< "SELECT * FROM aTable;"
+	mysql -uusername -ppassword databasename -e "SELECT * FROM aTable;"
+
+# Test examples
+    mysql -uroot2 -ppassword -e "DROP DATABASE cldTest; CREATE DATABASE cldTest;"
+	
+	mysql -uroot2 -ppassword cldTest < mysql-sql-examples.sql
+
+	mysql -uroot2 -ppassword cldTest -e "DESCRIBE Product;" | grep -v ^+ | grep -v 'Field.*Type.*Default.*Extra' | cut -f1 |  sed 's/\(.*\)/get\1(self):\n\treturn self.\1/'
+	
+	mysql -uroot2 -ppassword cldTest -e "DESCRIBE Product;" | grep -v ^+ | grep -v 'Field.*Type.*Default.*Extra' | cut -f1 |  sed 's/\(.*\)/set\1(\1):\n\tself.\1=\1/'
+
+	mysql -uroot2 -ppassword cldTest -e "DESCRIBE Product;" | grep -v ^+ | grep -v 'Field.*Type.*Default.*Extra' | cut -f1 |  xargs -n1 ./word.sh
+
+
+# Export db.
+    USER="root"
+    PASSWORD="password"
+    HOST="127.0.0.1"
+    DBNAME="database_mame"
+    mysqldump --opt -u ${USER} -p${PASSWORD} -h ${HOST} ${DB_NAME} > ${DB_NAME}.sql
+    
+# Import db.
