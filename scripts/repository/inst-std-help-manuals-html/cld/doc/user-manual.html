@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>User manual</title>
   <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -29,16 +31,16 @@
       Block quotes are italicized. Tables are lightly styled with lines above 
       and below the table and below the header with a boldface header. Code 
       blocks are line wrapped. 
-  
+
       All elements that Pandoc and MultiMarkdown use should be listed here, even 
       if the style is empty so you can easily add styling to anything.
       
       There are some elements in here for HTML5 output of Pandoc, but I have not 
       gotten around to testing that yet.
   */
-  
+
   /* NOTES:
-  
+
       Stuff tried and failed:
       
       It seems that specifying font-family:serif in Safari will always use 
@@ -49,42 +51,42 @@
       print than for screen causes horizontal lines to disappear in math when using 
       MathJax under Safari.
   */
-  
+
   /* ---- Front Matter ---- */
-  
+
   /* Pandoc header DIV. Contains .title, .author and .date. Comes before div#TOC. 
      Only appears if one of those three are in the document.
   */
-  
+
   div#header, header
       {
       /* Put border on bottom. Separates it from TOC or body that comes after it. */
       border-bottom: 1px solid #aaa;
       margin-bottom: 0.5em;
       }
-  
+
   .title /* Pandoc title header (h1.title) */
       {
       text-align: center;
       }
-  
+
   .author, .date /* Pandoc author(s) and date headers (h2.author and h3.date) */
       {
       text-align: center;
       }
-  
+
   /* Pandoc table of contents DIV when using the --toc option.
      NOTE: this doesn't support Pandoc's --id-prefix option for #TOC and #header. 
      Probably would need to use div[id$='TOC'] and div[id$='header'] as selectors.
   */
-  
+
   div#TOC, nav#TOC
       {
       /* Put border on bottom to separate it from body. */
       border-bottom: 1px solid #aaa;
       margin-bottom: 0.5em;
       }
-  
+
   @media print
       {
       div#TOC, nav#TOC
@@ -93,65 +95,65 @@
           display: none;
           }
       }
-  
+
   /* ---- Headers and sections ---- */
-  
+
   h1, h2, h3, h4, h5, h6
   {
       font-family: "Helvetica Neue", Helvetica, "Liberation Sans", Calibri, Arial, sans-serif; /* Sans-serif headers */
-  
+
       /* font-family: "Liberation Serif", "Georgia", "Times New Roman", serif; /* Serif headers */
-  
+
       page-break-after: avoid; /* Firefox, Chrome, and Safari do not support the property value "avoid" */
   }
-  
+
   /* Pandoc with --section-divs option */
-  
+
   div div, section section /* Nested sections */
       {
       margin-left: 2em; /* This will increasingly indent nested header sections */
       }
-  
+
   p {}
-  
+
   blockquote
       { 
       font-style: italic;
       }
-  
+
   li /* All list items */
       {
       }
-  
+
   li > p /* Loosely spaced list item */
       {
       margin-top: 1em; /* IE: lack of space above a <li> when the item is inside a <p> */
       }
-  
+
   ul /* Whole unordered list */
       {
       }
-  
+
   ul li /* Unordered list item */
       {
       }
-  
+
   ol /* Whole ordered list */
       {
       }
-  
+
   ol li /* Ordered list item */
       {
       }
-  
+
   hr {}
-  
+
   /* ---- Some span elements --- */
-  
+
   sub /* Subscripts. Pandoc: H~2~O */
       {
       }
-  
+
   sup /* Superscripts. Pandoc: The 2^nd^ try. */
       {
       }
@@ -164,19 +166,19 @@
       {
       font-style: normal;
       }
-  
+
   strong /* Markdown **strong** or __strong__ */
       {
       }
-  
+
   /* ---- Links (anchors) ---- */
-  
+
   a /* All links */
       {
       /* Keep links clean. On screen, they are colored; in print, they do nothing anyway. */
       text-decoration: none;
       }
-  
+
   @media screen
       {
       a:hover
@@ -185,7 +187,7 @@
           text-decoration: underline;
           }
       }
-  
+
   @media print
       {
       a   {
@@ -204,9 +206,9 @@
           font-size: 90%;
           }
       }
-  
+
   /* ---- Images ---- */
-  
+
   img
       {
       /* Let it be inline left/right where it wants to be, but verticality make 
@@ -215,7 +217,7 @@
       */
       vertical-align: middle;
       }
-  
+
   div.figure /* Pandoc figure-style image */
       {
       /* Center the image and caption */
@@ -224,14 +226,14 @@
       text-align: center;
       font-style: italic;
       }
-  
+
   p.caption /* Pandoc figure-style caption within div.figure */
       {
       /* Inherits div.figure props by default */
       }
-  
+
   /* ---- Code blocks and spans ---- */
-  
+
   pre, code 
       {
       font-family: "Courier New", Courier, monospace;
@@ -246,7 +248,7 @@
       word-wrap: break-word; /* Internet Explorer 5.5+ */
       /* END word wrap */
       }
-  
+
   pre /* Code blocks */
       {
       /* Distinguish pre blocks from other text by more than the font with a background tint. */
@@ -258,7 +260,7 @@
       margin-left:  0.5em;
       margin-right: 0.5em;
       }
-  
+
   @media screen
       {
       pre
@@ -270,11 +272,11 @@
           border: 1px dotted #777;
           }
       }
-  
+
   code /* All inline code spans */
       {
       }
-  
+
   p > code, li > code /* Code spans in paragraphs and tight lists */
       {
       /* Pad a little from adjacent text */
@@ -287,9 +289,9 @@
       /* We have room for some more background color above and below */
       padding: 2px;
       }
-  
+
   /* ---- Math ---- */
-  
+
   span.math /* Pandoc inline math default and --jsmath inline math */
       {
       /* Tried font-style:italic here, and it messed up MathJax rendering in some browsers. Maybe don't mess with at all. */
@@ -302,25 +304,25 @@
   span.LaTeX /* Pandoc --latexmathml math */
       {
       } 
-  
+
   eq /* Pandoc --gladtex math */
       {
       } 
-  
+
   /* ---- Tables ---- */
-  
+
   /*  A clean textbook-like style with horizontal lines above and below and under 
       the header. Rows highlight on hover to help scanning the table on screen.
   */
-  
+
   table
       {
       border-collapse: collapse;
       border-spacing: 0; /* IE 6 */
-  
+
       border-bottom: 2pt solid #000;
       border-top: 2pt solid #000; /* The caption on top will not have a bottom-border */
-  
+
       }
       
   thead /* Entire table header */
@@ -328,17 +330,17 @@
       border-bottom: 1pt solid #000;
       background-color: #eee; /* Does this BG print well? */
       }
-  
+
   tr.header /* Each header row */
       {
       } 
-  
+
   tbody /* Entire table  body */
       {
       }
-  
+
   /* Table body rows */
-  
+
   tr  {
       }
   tr.odd:hover, tr.even:hover /* Use .odd and .even classes to avoid styling rows in other tables */
@@ -349,7 +351,7 @@
   /* Odd and even rows */
   tr.odd {}
   tr.even {}
-  
+
   td, th /* Table cells and table header cells */
       { 
       vertical-align: top; /* Word */
@@ -371,16 +373,16 @@
       padding-left: 0;
       }
   */
-  
+
   th /* Table header cells */
       {
       font-weight: bold; 
       }
-  
+
   tfoot /* Table footer (what appears here if caption is on top?) */
       {
       }
-  
+
   caption /* This is for a table caption tag, not the p.caption Pandoc uses in a div.figure */
       {
       caption-side: top;
@@ -391,21 +393,21 @@
       margin-bottom: 0.3em; /* Good for when on top */
       padding-bottom: 0.2em;
       }
-  
+
   /* ---- Definition lists ---- */
-  
+
   dl /* The whole list */
       {
       border-top: 2pt solid black;
       padding-top: 0.5em;
       border-bottom: 2pt solid black;
       }
-  
+
   dt /* Definition term */
       {
       font-weight: bold;
       }
-  
+
   dd+dt /* 2nd or greater term in the list */
       {
       border-top: 1pt solid black;
@@ -416,23 +418,23 @@
       {
       margin-bottom: 0.5em;
       }
-  
+
   dd+dd /* 2nd or greater definition of a term */
       {
       border-top: 1px solid black; /* To separate multiple definitions */
       }
       
   /* ---- Footnotes ---- */
-  
+
   a.footnote, a.footnoteRef { /* Pandoc, MultiMarkdown footnote links */
       font-size: small; 
       vertical-align: text-top;
   }
-  
+
   a[href^="#fnref"], a.reversefootnote /* Pandoc, MultiMarkdown, ?? footnote back links */
       {
       }
-  
+
   @media print
       {
       a[href^="#fnref"], a.reversefootnote /* Pandoc, MultiMarkdown */
@@ -449,13 +451,13 @@
   div.footnotes li[id^="fn"] /* A footnote item within that div */
       {
       }
-  
+
   /* You can class stuff as "noprint" to not print. 
      Useful since you can't set this media conditional inside an HTML element's 
      style attribute (I think), and you don't want to make another stylesheet that 
      imports this one and adds a class just to do this.
   */
-  
+
   @media print
       {
       .noprint
@@ -463,7 +465,7 @@
           display:none;
           }
       }
-  
+
   </style>
 </head>
 <body>
@@ -473,28 +475,34 @@
 <nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#system-settings"><span class="toc-section-number">1</span> System settings</a></li>
-<li><a href="#applications"><span class="toc-section-number">2</span> Applications</a><ul>
+<li><a href="#applications"><span class="toc-section-number">2</span> Applications</a>
+<ul>
 <li><a href="#application-on-the-menu"><span class="toc-section-number">2.1</span> Application on the Menu</a></li>
 <li><a href="#command-line-applications"><span class="toc-section-number">2.2</span> Command line applications</a></li>
 <li><a href="#useful-commands"><span class="toc-section-number">2.3</span> Useful commands</a></li>
-<li><a href="#hot-keys"><span class="toc-section-number">2.4</span> Hot keys</a><ul>
+<li><a href="#hot-keys"><span class="toc-section-number">2.4</span> Hot keys</a>
+<ul>
 <li><a href="#main-operations"><span class="toc-section-number">2.4.1</span> Main operations</a></li>
 <li><a href="#operations-on-window"><span class="toc-section-number">2.4.2</span> Operations on window</a></li>
 </ul></li>
 <li><a href="#install-new-applications"><span class="toc-section-number">2.5</span> Install new applications</a></li>
 </ul></li>
-<li><a href="#persistence"><span class="toc-section-number">3</span> Persistence</a><ul>
+<li><a href="#persistence"><span class="toc-section-number">3</span> Persistence</a>
+<ul>
 <li><a href="#disable-persistence"><span class="toc-section-number">3.1</span> Disable persistence</a></li>
 </ul></li>
-<li><a href="#remaster-live-system"><span class="toc-section-number">4</span> Remaster live system</a><ul>
+<li><a href="#remaster-live-system"><span class="toc-section-number">4</span> Remaster live system</a>
+<ul>
 <li><a href="#tips"><span class="toc-section-number">4.1</span> Tips</a></li>
 </ul></li>
 <li><a href="#upgrade"><span class="toc-section-number">5</span> Upgrade</a></li>
-<li><a href="#cust-live-deb-hangs"><span class="toc-section-number">6</span> Cust-Live-Deb hangs</a><ul>
+<li><a href="#cust-live-deb-hangs"><span class="toc-section-number">6</span> Cust-Live-Deb hangs</a>
+<ul>
 <li><a href="#memory-is-max-out"><span class="toc-section-number">6.1</span> Memory is max out</a></li>
 </ul></li>
 <li><a href="#boot-sequence"><span class="toc-section-number">7</span> Boot sequence</a></li>
-<li><a href="#help"><span class="toc-section-number">8</span> Help</a><ul>
+<li><a href="#help"><span class="toc-section-number">8</span> Help</a>
+<ul>
 <li><a href="#set-desktop-background-wallpaper"><span class="toc-section-number">8.1</span> Set desktop background / wallpaper</a></li>
 <li><a href="#set-keyboard"><span class="toc-section-number">8.2</span> Set keyboard</a></li>
 <li><a href="#access-files-of-your-smartphones-that-use-media-transfer-protocol-mtp"><span class="toc-section-number">8.3</span> Access files of your smartphones that use Media Transfer Protocol (MTP)</a></li>
@@ -512,8 +520,8 @@
 </ul></li>
 </ul>
 </nav>
-<section id="system-settings" class="level1">
-<h1><span class="header-section-number">1</span> System settings</h1>
+<section id="system-settings" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> System settings</h1>
 <ul>
 <li>System Information:
 <ul>
@@ -568,10 +576,10 @@
 </ul></li>
 </ul>
 </section>
-<section id="applications" class="level1">
-<h1><span class="header-section-number">2</span> Applications</h1>
-<section id="application-on-the-menu" class="level2">
-<h2><span class="header-section-number">2.1</span> Application on the Menu</h2>
+<section id="applications" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Applications</h1>
+<section id="application-on-the-menu" class="level2" data-number="2.1">
+<h2 data-number="2.1"><span class="header-section-number">2.1</span> Application on the Menu</h2>
 <table>
 <thead>
 <tr class="header">
@@ -629,8 +637,8 @@
 </tbody>
 </table>
 </section>
-<section id="command-line-applications" class="level2">
-<h2><span class="header-section-number">2.2</span> Command line applications</h2>
+<section id="command-line-applications" class="level2" data-number="2.2">
+<h2 data-number="2.2"><span class="header-section-number">2.2</span> Command line applications</h2>
 <table>
 <thead>
 <tr class="header">
@@ -658,8 +666,8 @@
 </tbody>
 </table>
 </section>
-<section id="useful-commands" class="level2">
-<h2><span class="header-section-number">2.3</span> Useful commands</h2>
+<section id="useful-commands" class="level2" data-number="2.3">
+<h2 data-number="2.3"><span class="header-section-number">2.3</span> Useful commands</h2>
 <pre><code># Count lines
 ls -1 * | wc  -l
 
@@ -689,10 +697,10 @@ grep --color -E &#39;pattern|$&#39; file
 # Download a single web page. In case robots.txt is disallowing, add -e robots=off
 wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
 </section>
-<section id="hot-keys" class="level2">
-<h2><span class="header-section-number">2.4</span> Hot keys</h2>
-<section id="main-operations" class="level3">
-<h3><span class="header-section-number">2.4.1</span> Main operations</h3>
+<section id="hot-keys" class="level2" data-number="2.4">
+<h2 data-number="2.4"><span class="header-section-number">2.4</span> Hot keys</h2>
+<section id="main-operations" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1"><span class="header-section-number">2.4.1</span> Main operations</h3>
 <ul>
 <li><code>Alt + Ctrl + Del</code>: Reboot.</li>
 <li><code>Alt + Tab</code>: Switch focus to the next application.</li>
@@ -702,8 +710,8 @@ wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
 <li><code>⌘ + Esc</code>: Open main menu.</li>
 </ul>
 </section>
-<section id="operations-on-window" class="level3">
-<h3><span class="header-section-number">2.4.2</span> Operations on window</h3>
+<section id="operations-on-window" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2"><span class="header-section-number">2.4.2</span> Operations on window</h3>
 <ul>
 <li><code>Alt + F4</code>: Close current application.</li>
 <li><code>Alt + F2</code>: Open the menu of the current application.</li>
@@ -713,8 +721,8 @@ wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
 <li><code>Ctrl + Alt + Up</code>: Maximize active window to the top half section of the screen.</li>
 <li><code>Ctrl + Alt + Down</code> : Maximize active window to the bottom half section of the screen.</li>
 </ul>
-<section id="move-active-window" class="level4">
-<h4><span class="header-section-number">2.4.2.1</span> Move active window</h4>
+<section id="move-active-window" class="level4" data-number="2.4.2.1">
+<h4 data-number="2.4.2.1"><span class="header-section-number">2.4.2.1</span> Move active window</h4>
 <pre><code>Screen section layout
 +-----------+
 | 7 | 8 | 9 |
@@ -737,15 +745,15 @@ wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
 </section>
 </section>
 </section>
-<section id="install-new-applications" class="level2">
-<h2><span class="header-section-number">2.5</span> Install new applications</h2>
+<section id="install-new-applications" class="level2" data-number="2.5">
+<h2 data-number="2.5"><span class="header-section-number">2.5</span> Install new applications</h2>
 <p><code>Cust-Live-Deb</code> is a Debian system. <a href="https://www.debian.org/distrib/packages">Therefore, all softwares available for Debian can be installed</a>.</p>
 <pre><code>apt-get update
 apt-get install PACKAGE_NAME</code></pre>
 </section>
 </section>
-<section id="persistence" class="level1">
-<h1><span class="header-section-number">3</span> Persistence</h1>
+<section id="persistence" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Persistence</h1>
 <p>By default, <code>Cust-Live-Deb</code> supports <a href="https://debian-live.alioth.debian.org/live-manual/stable/manual/html/live-manual.en.html#556">persistence</a>. It allows your changes to persist after reboot, provided that you have a persistence image file in the root path of any partitions. That image file will hold all your changes. Here is how to create a persistent image file:</p>
 <pre><code># Create a persistence image file(e.g. 2048 MB).
 cld-persistence.sh 2048
@@ -764,8 +772,8 @@ tmpfs           1.5G     0  1.5G   0% /lib/live/mount/overlay
 /dev/sdb        2.4G  335M  2.0G  15% /lib/live/mount/persistence/sdb
 /dev/loop1      2.0G  285M  1.6G  16% /lib/live/mount/persistence/loop1</code></pre>
 <p>Note: Sometime, persistence image file is not recognized by <code>Cust-Live-Deb</code> due to bad format of your partition. You can remedy by reformatting: <code>mkfs.ext4 /dev/sdX</code>(Use different command for different filesystem).</p>
-<section id="disable-persistence" class="level2">
-<h2><span class="header-section-number">3.1</span> Disable persistence</h2>
+<section id="disable-persistence" class="level2" data-number="3.1">
+<h2 data-number="3.1"><span class="header-section-number">3.1</span> Disable persistence</h2>
 <ul>
 <li>Ensure there is no <code>persistence</code> image file on the root path of any partitions. Or,</li>
 <li>On <strong>Boot Menu</strong>, press <code>Tab</code> key and delete <code>persistence</code> word. Or,</li>
@@ -773,8 +781,8 @@ tmpfs           1.5G     0  1.5G   0% /lib/live/mount/overlay
 </ul>
 </section>
 </section>
-<section id="remaster-live-system" class="level1">
-<h1><span class="header-section-number">4</span> Remaster live system</h1>
+<section id="remaster-live-system" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Remaster live system</h1>
 <pre><code># Copy the whole live system to a WORKING directory.
 cld-remaster.sh /path/to/WORKING/
 
@@ -783,8 +791,8 @@ cld-mkiso.sh /path/to/WORKING/
 
 # Burn HYBRID-ISO to USB key(e.g. /dev/sdX)
 cld-dd-usb.sh cust-live-deb_YYYY-MM-DD_HH.MM.SS.iso /dev/sdX</code></pre>
-<section id="tips" class="level2">
-<h2><span class="header-section-number">4.1</span> Tips</h2>
+<section id="tips" class="level2" data-number="4.1">
+<h2 data-number="4.1"><span class="header-section-number">4.1</span> Tips</h2>
 <pre><code># List USB key device available.
 ls -al /dev/disk/by-id/
 
@@ -795,8 +803,8 @@ ls -al /dev/disk/by-id/
   dd if=/path/to/iso of=/dev/sdX    </code></pre>
 </section>
 </section>
-<section id="upgrade" class="level1">
-<h1><span class="header-section-number">5</span> Upgrade</h1>
+<section id="upgrade" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Upgrade</h1>
 <ol type="1">
 <li>Boot without persistence.</li>
 <li>cld-dd-usb.sh ISO to the main usb key.</li>
@@ -805,44 +813,44 @@ ls -al /dev/disk/by-id/
 <li>Reboot.</li>
 </ol>
 </section>
-<section id="cust-live-deb-hangs" class="level1">
-<h1><span class="header-section-number">6</span> Cust-Live-Deb hangs</h1>
-<section id="memory-is-max-out" class="level2">
-<h2><span class="header-section-number">6.1</span> Memory is max out</h2>
+<section id="cust-live-deb-hangs" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Cust-Live-Deb hangs</h1>
+<section id="memory-is-max-out" class="level2" data-number="6.1">
+<h2 data-number="6.1"><span class="header-section-number">6.1</span> Memory is max out</h2>
 <p>When you got the following symptoms, check your memory usage(i.e. Conky on your desktop): * Google Chrome/Firefox hangs when opening a lot of tabs. * Eclipse is working fine and then suddenly, code is not highlighted. Or, when closing tab, Cancel/Save/Ok buttons are not shown.</p>
 <p>If your memory is near max out, then the issues will be resolved by: * Add more physical memory. Or, * Add a swap partition:</p>
 <pre><code>  mkswap /dev/sdXX
   swapon /dev/sdXX</code></pre>
 </section>
 </section>
-<section id="boot-sequence" class="level1">
-<h1><span class="header-section-number">7</span> Boot sequence</h1>
+<section id="boot-sequence" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Boot sequence</h1>
 <pre><code>~&gt;cat /root/cld/boot-sequence.txt 
 /root/cld/systemd/cld-systemd-after-boot.sh: Mon Jan  9 14:14:25 EST 2017
 /root/cld/jwmrc-startup.sh: Tue Jan 10 00:14:35 UTC 2017
 /root/cld/systemd/cld-systemd-before-shutdown-halt-reboot.sh: Mon Jan  9 19:15:50 EST 2017</code></pre>
 </section>
-<section id="help" class="level1">
-<h1><span class="header-section-number">8</span> Help</h1>
-<section id="set-desktop-background-wallpaper" class="level2">
-<h2><span class="header-section-number">8.1</span> Set desktop background / wallpaper</h2>
+<section id="help" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Help</h1>
+<section id="set-desktop-background-wallpaper" class="level2" data-number="8.1">
+<h2 data-number="8.1"><span class="header-section-number">8.1</span> Set desktop background / wallpaper</h2>
 <pre><code>feh --bg-scale /path/to/your/image/background.jpg</code></pre>
 </section>
-<section id="set-keyboard" class="level2">
-<h2><span class="header-section-number">8.2</span> Set keyboard</h2>
+<section id="set-keyboard" class="level2" data-number="8.2">
+<h2 data-number="8.2"><span class="header-section-number">8.2</span> Set keyboard</h2>
 <pre><code># Set keymap to English
 setxkbmap en</code></pre>
 </section>
-<section id="access-files-of-your-smartphones-that-use-media-transfer-protocol-mtp" class="level2">
-<h2><span class="header-section-number">8.3</span> Access files of your smartphones that use Media Transfer Protocol (MTP)</h2>
+<section id="access-files-of-your-smartphones-that-use-media-transfer-protocol-mtp" class="level2" data-number="8.3">
+<h2 data-number="8.3"><span class="header-section-number">8.3</span> Access files of your smartphones that use Media Transfer Protocol (MTP)</h2>
 <pre><code># Connect your smartphone.
 mkdir /path/to/your/mount/directory/
 jmtpfs -o allow_other /path/to/your/mount/directory/
 # Enter your PIN to unlock your smartphone.
 cd /path/to/your/mount/directory/</code></pre>
 </section>
-<section id="find-what-video-card-am-i-using" class="level2">
-<h2><span class="header-section-number">8.4</span> Find what video card am I using?</h2>
+<section id="find-what-video-card-am-i-using" class="level2" data-number="8.4">
+<h2 data-number="8.4"><span class="header-section-number">8.4</span> Find what video card am I using?</h2>
 <pre><code># Get the video card line.
 lspci | grep -iE &#39;vga|3d|2d&#39;
 # Get more informations about the device using option -s.
@@ -850,8 +858,8 @@ lspci -v -s 01:00.0
 
 # Line &#39;Memory at d0000000&#39; show the total video memory size.</code></pre>
 </section>
-<section id="turn-on-wlan0-network-interface" class="level2">
-<h2><span class="header-section-number">8.5</span> Turn on wlan0 network interface</h2>
+<section id="turn-on-wlan0-network-interface" class="level2" data-number="8.5">
+<h2 data-number="8.5"><span class="header-section-number">8.5</span> Turn on wlan0 network interface</h2>
 <pre><code># Check network interfaces available.
 ls /sys/class/net
 
@@ -862,8 +870,8 @@ iwlist wlan0 scan
 
 # /etc/init.d/networking restart</code></pre>
 </section>
-<section id="setup-sound" class="level2">
-<h2><span class="header-section-number">8.6</span> Setup sound</h2>
+<section id="setup-sound" class="level2" data-number="8.6">
+<h2 data-number="8.6"><span class="header-section-number">8.6</span> Setup sound</h2>
 <pre><code># Check if your sound card is detected.
 lspci | grep audio
 
@@ -888,8 +896,8 @@ speaker-test -twav -l1 -Dplug:surround51 -c6
 # For 7.1:         
 speaker-test -twav -l1 -Dplug:surround71 -c8</code></pre>
 </section>
-<section id="sync-your-bios-clock-to-utc-or-local-time" class="level2">
-<h2><span class="header-section-number">8.7</span> Sync your BIOS clock to UTC or local time</h2>
+<section id="sync-your-bios-clock-to-utc-or-local-time" class="level2" data-number="8.7">
+<h2 data-number="8.7"><span class="header-section-number">8.7</span> Sync your BIOS clock to UTC or local time</h2>
 <pre><code># Sync your system time.
 ntpd -gqc pool.ntp.org
 sntp -s pool.ntp.org
@@ -903,8 +911,8 @@ hwclock --systohc --localtime
 # To see the time in UTC.
 date -u</code></pre>
 </section>
-<section id="use-uuid-in-fstab" class="level2">
-<h2><span class="header-section-number">8.8</span> Use UUID in fstab</h2>
+<section id="use-uuid-in-fstab" class="level2" data-number="8.8">
+<h2 data-number="8.8"><span class="header-section-number">8.8</span> Use UUID in fstab</h2>
 <ol type="1">
 <li><p>Find UUID of your hard drive by running <code>blkid</code>.</p></li>
 <li><p>Change device path to UUID in fstab as follows:</p>
@@ -913,8 +921,8 @@ date -u</code></pre>
  UUID=&quot;81917b82-6a0f-4493-a657-6a0aa127bf41&quot; /media/critical ext4  defaults  0 0</code></pre></li>
 </ol>
 </section>
-<section id="character-encodings" class="level2">
-<h2><span class="header-section-number">8.9</span> Character encodings</h2>
+<section id="character-encodings" class="level2" data-number="8.9">
+<h2 data-number="8.9"><span class="header-section-number">8.9</span> Character encodings</h2>
 <p><code>more</code>, <code>cat</code>, <code>less</code>, <code>grep</code>, etc commands don’t display the characters correctly(e.g. accents). They displays <code>�</code>. Your shell is using UTF-8 whereas your file is using another encoding.</p>
 <pre><code># Your shell encoding.
 echo $LANG
@@ -926,13 +934,13 @@ file YOUR_FILE
 iconv --from-code ISO-8859-15 --to-code UTF-8 YOUR_FILE -o YOUR_FILE_as_utf8</code></pre>
 <p>For more details, see http://unix.stackexchange.com/a/78782</p>
 </section>
-<section id="port-numbers-opened" class="level2">
-<h2><span class="header-section-number">8.10</span> Port numbers opened</h2>
+<section id="port-numbers-opened" class="level2" data-number="8.10">
+<h2 data-number="8.10"><span class="header-section-number">8.10</span> Port numbers opened</h2>
 <pre><code>netstat -tnlp
 # Reference: http://unix.stackexchange.com/a/108886</code></pre>
 </section>
-<section id="use-keyboard-to-move-mouse" class="level2">
-<h2><span class="header-section-number">8.11</span> Use keyboard to move mouse</h2>
+<section id="use-keyboard-to-move-mouse" class="level2" data-number="8.11">
+<h2 data-number="8.11"><span class="header-section-number">8.11</span> Use keyboard to move mouse</h2>
 <p>Reference: https://en.wikipedia.org/wiki/Mouse_keys</p>
 <ol type="1">
 <li>Run <code>setxkbmap -option keypad:pointerkeys</code>.</li>
@@ -940,14 +948,14 @@ iconv --from-code ISO-8859-15 --to-code UTF-8 YOUR_FILE -o YOUR_FILE_as_utf8</co
 <li>Press on numpad keys to move the mouse.</li>
 </ol>
 </section>
-<section id="find-and-play-videomusic" class="level2">
-<h2><span class="header-section-number">8.12</span> Find and play video/music</h2>
+<section id="find-and-play-videomusic" class="level2" data-number="8.12">
+<h2 data-number="8.12"><span class="header-section-number">8.12</span> Find and play video/music</h2>
 <pre><code>mpv $(ilocate 2016 | igrep funky | igrep music | sort)
 mpv -playlist &lt;(ilocate 2016 | igrep funky | igrep music | sort)</code></pre>
 <p>Reference: http://thinkmoult.com/tech-tip-2-mplayer-play-music-recursively-in-a-directory/</p>
 </section>
-<section id="boot-logs" class="level2">
-<h2><span class="header-section-number">8.13</span> Boot logs</h2>
+<section id="boot-logs" class="level2" data-number="8.13">
+<h2 data-number="8.13"><span class="header-section-number">8.13</span> Boot logs</h2>
 <p>https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs</p>
 <pre><code># Display logs from the current boot.
 journalctl -b
@@ -958,8 +966,8 @@ journalctl -p err -b
 # Display all without paging.
 journalclt --no-pager</code></pre>
 </section>
-<section id="mount-failed-structure-needs-cleaning" class="level2">
-<h2><span class="header-section-number">8.14</span> Mount failed: Structure needs cleaning</h2>
+<section id="mount-failed-structure-needs-cleaning" class="level2" data-number="8.14">
+<h2 data-number="8.14"><span class="header-section-number">8.14</span> Mount failed: Structure needs cleaning</h2>
 <pre><code># Get the filesystem
 blkid /dev/sdi5
 

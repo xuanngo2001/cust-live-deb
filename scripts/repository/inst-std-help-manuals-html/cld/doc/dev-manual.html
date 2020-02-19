@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Developer manual</title>
   <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -29,16 +31,16 @@
       Block quotes are italicized. Tables are lightly styled with lines above 
       and below the table and below the header with a boldface header. Code 
       blocks are line wrapped. 
-  
+
       All elements that Pandoc and MultiMarkdown use should be listed here, even 
       if the style is empty so you can easily add styling to anything.
       
       There are some elements in here for HTML5 output of Pandoc, but I have not 
       gotten around to testing that yet.
   */
-  
+
   /* NOTES:
-  
+
       Stuff tried and failed:
       
       It seems that specifying font-family:serif in Safari will always use 
@@ -49,42 +51,42 @@
       print than for screen causes horizontal lines to disappear in math when using 
       MathJax under Safari.
   */
-  
+
   /* ---- Front Matter ---- */
-  
+
   /* Pandoc header DIV. Contains .title, .author and .date. Comes before div#TOC. 
      Only appears if one of those three are in the document.
   */
-  
+
   div#header, header
       {
       /* Put border on bottom. Separates it from TOC or body that comes after it. */
       border-bottom: 1px solid #aaa;
       margin-bottom: 0.5em;
       }
-  
+
   .title /* Pandoc title header (h1.title) */
       {
       text-align: center;
       }
-  
+
   .author, .date /* Pandoc author(s) and date headers (h2.author and h3.date) */
       {
       text-align: center;
       }
-  
+
   /* Pandoc table of contents DIV when using the --toc option.
      NOTE: this doesn't support Pandoc's --id-prefix option for #TOC and #header. 
      Probably would need to use div[id$='TOC'] and div[id$='header'] as selectors.
   */
-  
+
   div#TOC, nav#TOC
       {
       /* Put border on bottom to separate it from body. */
       border-bottom: 1px solid #aaa;
       margin-bottom: 0.5em;
       }
-  
+
   @media print
       {
       div#TOC, nav#TOC
@@ -93,65 +95,65 @@
           display: none;
           }
       }
-  
+
   /* ---- Headers and sections ---- */
-  
+
   h1, h2, h3, h4, h5, h6
   {
       font-family: "Helvetica Neue", Helvetica, "Liberation Sans", Calibri, Arial, sans-serif; /* Sans-serif headers */
-  
+
       /* font-family: "Liberation Serif", "Georgia", "Times New Roman", serif; /* Serif headers */
-  
+
       page-break-after: avoid; /* Firefox, Chrome, and Safari do not support the property value "avoid" */
   }
-  
+
   /* Pandoc with --section-divs option */
-  
+
   div div, section section /* Nested sections */
       {
       margin-left: 2em; /* This will increasingly indent nested header sections */
       }
-  
+
   p {}
-  
+
   blockquote
       { 
       font-style: italic;
       }
-  
+
   li /* All list items */
       {
       }
-  
+
   li > p /* Loosely spaced list item */
       {
       margin-top: 1em; /* IE: lack of space above a <li> when the item is inside a <p> */
       }
-  
+
   ul /* Whole unordered list */
       {
       }
-  
+
   ul li /* Unordered list item */
       {
       }
-  
+
   ol /* Whole ordered list */
       {
       }
-  
+
   ol li /* Ordered list item */
       {
       }
-  
+
   hr {}
-  
+
   /* ---- Some span elements --- */
-  
+
   sub /* Subscripts. Pandoc: H~2~O */
       {
       }
-  
+
   sup /* Superscripts. Pandoc: The 2^nd^ try. */
       {
       }
@@ -164,19 +166,19 @@
       {
       font-style: normal;
       }
-  
+
   strong /* Markdown **strong** or __strong__ */
       {
       }
-  
+
   /* ---- Links (anchors) ---- */
-  
+
   a /* All links */
       {
       /* Keep links clean. On screen, they are colored; in print, they do nothing anyway. */
       text-decoration: none;
       }
-  
+
   @media screen
       {
       a:hover
@@ -185,7 +187,7 @@
           text-decoration: underline;
           }
       }
-  
+
   @media print
       {
       a   {
@@ -204,9 +206,9 @@
           font-size: 90%;
           }
       }
-  
+
   /* ---- Images ---- */
-  
+
   img
       {
       /* Let it be inline left/right where it wants to be, but verticality make 
@@ -215,7 +217,7 @@
       */
       vertical-align: middle;
       }
-  
+
   div.figure /* Pandoc figure-style image */
       {
       /* Center the image and caption */
@@ -224,14 +226,14 @@
       text-align: center;
       font-style: italic;
       }
-  
+
   p.caption /* Pandoc figure-style caption within div.figure */
       {
       /* Inherits div.figure props by default */
       }
-  
+
   /* ---- Code blocks and spans ---- */
-  
+
   pre, code 
       {
       font-family: "Courier New", Courier, monospace;
@@ -246,7 +248,7 @@
       word-wrap: break-word; /* Internet Explorer 5.5+ */
       /* END word wrap */
       }
-  
+
   pre /* Code blocks */
       {
       /* Distinguish pre blocks from other text by more than the font with a background tint. */
@@ -258,7 +260,7 @@
       margin-left:  0.5em;
       margin-right: 0.5em;
       }
-  
+
   @media screen
       {
       pre
@@ -270,11 +272,11 @@
           border: 1px dotted #777;
           }
       }
-  
+
   code /* All inline code spans */
       {
       }
-  
+
   p > code, li > code /* Code spans in paragraphs and tight lists */
       {
       /* Pad a little from adjacent text */
@@ -287,9 +289,9 @@
       /* We have room for some more background color above and below */
       padding: 2px;
       }
-  
+
   /* ---- Math ---- */
-  
+
   span.math /* Pandoc inline math default and --jsmath inline math */
       {
       /* Tried font-style:italic here, and it messed up MathJax rendering in some browsers. Maybe don't mess with at all. */
@@ -302,25 +304,25 @@
   span.LaTeX /* Pandoc --latexmathml math */
       {
       } 
-  
+
   eq /* Pandoc --gladtex math */
       {
       } 
-  
+
   /* ---- Tables ---- */
-  
+
   /*  A clean textbook-like style with horizontal lines above and below and under 
       the header. Rows highlight on hover to help scanning the table on screen.
   */
-  
+
   table
       {
       border-collapse: collapse;
       border-spacing: 0; /* IE 6 */
-  
+
       border-bottom: 2pt solid #000;
       border-top: 2pt solid #000; /* The caption on top will not have a bottom-border */
-  
+
       }
       
   thead /* Entire table header */
@@ -328,17 +330,17 @@
       border-bottom: 1pt solid #000;
       background-color: #eee; /* Does this BG print well? */
       }
-  
+
   tr.header /* Each header row */
       {
       } 
-  
+
   tbody /* Entire table  body */
       {
       }
-  
+
   /* Table body rows */
-  
+
   tr  {
       }
   tr.odd:hover, tr.even:hover /* Use .odd and .even classes to avoid styling rows in other tables */
@@ -349,7 +351,7 @@
   /* Odd and even rows */
   tr.odd {}
   tr.even {}
-  
+
   td, th /* Table cells and table header cells */
       { 
       vertical-align: top; /* Word */
@@ -371,16 +373,16 @@
       padding-left: 0;
       }
   */
-  
+
   th /* Table header cells */
       {
       font-weight: bold; 
       }
-  
+
   tfoot /* Table footer (what appears here if caption is on top?) */
       {
       }
-  
+
   caption /* This is for a table caption tag, not the p.caption Pandoc uses in a div.figure */
       {
       caption-side: top;
@@ -391,21 +393,21 @@
       margin-bottom: 0.3em; /* Good for when on top */
       padding-bottom: 0.2em;
       }
-  
+
   /* ---- Definition lists ---- */
-  
+
   dl /* The whole list */
       {
       border-top: 2pt solid black;
       padding-top: 0.5em;
       border-bottom: 2pt solid black;
       }
-  
+
   dt /* Definition term */
       {
       font-weight: bold;
       }
-  
+
   dd+dt /* 2nd or greater term in the list */
       {
       border-top: 1pt solid black;
@@ -416,23 +418,23 @@
       {
       margin-bottom: 0.5em;
       }
-  
+
   dd+dd /* 2nd or greater definition of a term */
       {
       border-top: 1px solid black; /* To separate multiple definitions */
       }
       
   /* ---- Footnotes ---- */
-  
+
   a.footnote, a.footnoteRef { /* Pandoc, MultiMarkdown footnote links */
       font-size: small; 
       vertical-align: text-top;
   }
-  
+
   a[href^="#fnref"], a.reversefootnote /* Pandoc, MultiMarkdown, ?? footnote back links */
       {
       }
-  
+
   @media print
       {
       a[href^="#fnref"], a.reversefootnote /* Pandoc, MultiMarkdown */
@@ -449,13 +451,13 @@
   div.footnotes li[id^="fn"] /* A footnote item within that div */
       {
       }
-  
+
   /* You can class stuff as "noprint" to not print. 
      Useful since you can't set this media conditional inside an HTML element's 
      style attribute (I think), and you don't want to make another stylesheet that 
      imports this one and adds a class just to do this.
   */
-  
+
   @media print
       {
       .noprint
@@ -463,7 +465,7 @@
           display:none;
           }
       }
-  
+
   </style>
 </head>
 <body>
@@ -473,7 +475,8 @@
 <nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#create-hybrid-iso"><span class="toc-section-number">1</span> Create hybrid ISO</a></li>
-<li><a href="#add-remove-applications"><span class="toc-section-number">2</span> Add / Remove applications</a><ul>
+<li><a href="#add-remove-applications"><span class="toc-section-number">2</span> Add / Remove applications</a>
+<ul>
 <li><a href="#script-name-nomenclature"><span class="toc-section-number">2.1</span> Script name nomenclature</a></li>
 <li><a href="#add-new-script"><span class="toc-section-number">2.2</span> Add new script</a></li>
 <li><a href="#scripts-to-exclude"><span class="toc-section-number">2.3</span> Scripts to exclude</a></li>
@@ -488,14 +491,16 @@
 <li><a href="#how-to-upgrade-kernel"><span class="toc-section-number">6</span> How to upgrade kernel</a></li>
 <li><a href="#distribution-upgrade"><span class="toc-section-number">7</span> Distribution upgrade</a></li>
 <li><a href="#debug-debian-package-dependency"><span class="toc-section-number">8</span> Debug Debian package dependency</a></li>
-<li><a href="#jwm-menu"><span class="toc-section-number">9</span> JWM menu</a><ul>
+<li><a href="#jwm-menu"><span class="toc-section-number">9</span> JWM menu</a>
+<ul>
 <li><a href="#add-icon-in-jwm-menu"><span class="toc-section-number">9.1</span> Add icon in JWM menu</a></li>
 </ul></li>
 <li><a href="#systemd"><span class="toc-section-number">10</span> Systemd</a></li>
 <li><a href="#virtual-packages"><span class="toc-section-number">11</span> Virtual packages</a></li>
 <li><a href="#useful-commands"><span class="toc-section-number">12</span> Useful commands</a></li>
 <li><a href="#x-server"><span class="toc-section-number">13</span> X Server</a></li>
-<li><a href="#help"><span class="toc-section-number">14</span> Help</a><ul>
+<li><a href="#help"><span class="toc-section-number">14</span> Help</a>
+<ul>
 <li><a href="#list-of-fonts"><span class="toc-section-number">14.1</span> List of fonts</a></li>
 <li><a href="#get-version-of-zfs"><span class="toc-section-number">14.2</span> Get version of zfs</a></li>
 <li><a href="#manually-test-the-installation-script-within-chroot-environment"><span class="toc-section-number">14.3</span> Manually test the installation script within chroot environment</a></li>
@@ -510,8 +515,8 @@
 </ul></li>
 </ul>
 </nav>
-<section id="create-hybrid-iso" class="level1">
-<h1><span class="header-section-number">1</span> Create hybrid ISO</h1>
+<section id="create-hybrid-iso" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Create hybrid ISO</h1>
 <ol type="1">
 <li>Clone the git repository(e.g. <code>git clone https://github.com/limelime/cust-live-deb.git</code>)</li>
 <li>Import the wiki to <code>./scripts/settings/doc/</code>.</li>
@@ -529,11 +534,11 @@
 <li><code>cust-live-deb-64-&lt;SYSTEM&gt;_YYYY-MM-DD_HH.MM.SS.iso</code> will be created.</li>
 </ol>
 </section>
-<section id="add-remove-applications" class="level1">
-<h1><span class="header-section-number">2</span> Add / Remove applications</h1>
+<section id="add-remove-applications" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Add / Remove applications</h1>
 <p>Installation scripts are residing in <code>./scripts/repository/</code> directory.</p>
-<section id="script-name-nomenclature" class="level2">
-<h2><span class="header-section-number">2.1</span> Script name nomenclature</h2>
+<section id="script-name-nomenclature" class="level2" data-number="2.1">
+<h2 data-number="2.1"><span class="header-section-number">2.1</span> Script name nomenclature</h2>
 <ul>
 <li>Script name must starts with <code>inst-</code> and end with <code>.sh</code>.
 <ul>
@@ -548,8 +553,8 @@
 <li>Suffix <code>-bpo</code> if your script is using the backports repository(e.g. <code>deb http://http.debian.net/debian jessie-backports main</code>).</li>
 </ul>
 </section>
-<section id="add-new-script" class="level2">
-<h2><span class="header-section-number">2.2</span> Add new script</h2>
+<section id="add-new-script" class="level2" data-number="2.2">
+<h2 data-number="2.2"><span class="header-section-number">2.2</span> Add new script</h2>
 <ul>
 <li><code>cd scripts/repository</code></li>
 <li>Add your package in <code>create-script-repo.txt</code>.</li>
@@ -559,17 +564,17 @@
 <li>Write your script as if you are located at <code>/root/scripts/</code>.</li>
 </ul>
 </section>
-<section id="scripts-to-exclude" class="level2">
-<h2><span class="header-section-number">2.3</span> Scripts to exclude</h2>
+<section id="scripts-to-exclude" class="level2" data-number="2.3">
+<h2 data-number="2.3"><span class="header-section-number">2.3</span> Scripts to exclude</h2>
 <p>To exclude a specific script from the installation, add its name in <code>./scripts/scripts-ex.lst</code>, 1 per line.</p>
 </section>
-<section id="sources.list" class="level2">
-<h2><span class="header-section-number">2.4</span> Sources.list</h2>
+<section id="sources.list" class="level2" data-number="2.4">
+<h2 data-number="2.4"><span class="header-section-number">2.4</span> Sources.list</h2>
 <pre><code># cat sources-PACKAGE_NAME.list &gt;&gt; &quot;${GV_SOURCES_LIST}&quot;
 cat sources-aptly.list &gt;&gt; &quot;${GV_SOURCES_LIST}&quot;</code></pre>
 </section>
-<section id="application-association-with-file-extension" class="level2">
-<h2><span class="header-section-number">2.5</span> Application association with file extension</h2>
+<section id="application-association-with-file-extension" class="level2" data-number="2.5">
+<h2 data-number="2.5"><span class="header-section-number">2.5</span> Application association with file extension</h2>
 <p>Source: https://wiki.debian.org/MIME#Application_association</p>
 <p>The system-wide association between MIME types and applications is generated from the <code>*.desktop</code> files provided by the packages. The <code>.desktop</code> files are stored in the <code>/usr/share/applications/</code> directory and subdirectories, and the <code>update-desktop-database</code> parses their information and generates the <code>/usr/share/applications/mimeinfo.cache</code> file, that specifies for each MIME type the valid <code>.desktop</code> files (hence applications).</p>
 <p>The <code>mimeinfo.cache</code> is basically a raw reverse cache for the <code>.desktop</code> information. There is no way to define priorities in it. To be able to specify default applications, a <code>mimeapps.list</code> file (previously named <code>defaults.list</code> up to debian 5) must be created. It can be system-wide (in <code>/usr/share/applications</code> or a subdirectory) or user-specific (in <code>$HOME/.local/share/applications</code>). A heuristic is used by glib (FIXME: what about KDE?) to use the appropriate <code>mimeapps.list</code> file according to the user environment (Gnome evince vs. KDE Okular for PDF files for instance). The <code>mimeapps.list</code> file follows the same syntax as <code>mimeinfo.cache</code>, i.e:</p>
@@ -585,16 +590,16 @@ image/png=eog.desktop</code></pre>
 </ol>
 <p>Register your own extension: http://stackoverflow.com/questions/30931/register-file-extensions-mime-types-in-linux</p>
 </section>
-<section id="preseed-configuration-values" class="level2">
-<h2><span class="header-section-number">2.6</span> Preseed configuration values</h2>
+<section id="preseed-configuration-values" class="level2" data-number="2.6">
+<h2 data-number="2.6"><span class="header-section-number">2.6</span> Preseed configuration values</h2>
 <ol type="1">
 <li>Manually configure interactively first.</li>
 <li>Get the configuration values: <code>debconf-get-selections | grep "zfs" &gt; zfs-dkms.seed</code></li>
 <li>Feed the configuration values in your install script, before the install line: <code>debconf-set-selections -v zfs-dkms.seed</code></li>
 </ol>
 </section>
-<section id="debug-installation-script" class="level2">
-<h2><span class="header-section-number">2.7</span> Debug installation script</h2>
+<section id="debug-installation-script" class="level2" data-number="2.7">
+<h2 data-number="2.7"><span class="header-section-number">2.7</span> Debug installation script</h2>
 <pre><code>./in-chroot /media/imdb/chroot
 yes | cp -a /etc/apt/sources.list.tmp /etc/apt/sources.list
 apt-get update
@@ -603,8 +608,8 @@ source load-global-vars-funcs.sh
 RUN YOUR SCRIPT.</code></pre>
 </section>
 </section>
-<section id="clean-rebuild" class="level1">
-<h1><span class="header-section-number">3</span> Clean rebuild</h1>
+<section id="clean-rebuild" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Clean rebuild</h1>
 <pre><code>chmod +x ../cust-live-deb.wiki/*.sh
 chmod +x init-chmod-script.sh
 ./init-chmod-script.sh
@@ -620,8 +625,8 @@ cd scripts/repository/inst-std-xtra-opw-drush8-phar
                                                                       
 ./build-cld.sh work_no_proxy</code></pre>
 </section>
-<section id="cust-live-deb-specific" class="level1">
-<h1><span class="header-section-number">4</span> Cust-Live-Deb specific</h1>
+<section id="cust-live-deb-specific" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Cust-Live-Deb specific</h1>
 <p>Put all Cust-Live-Deb specific codes in <code>/usr/local/cld/</code> so that all users can use it. The idea is to mirror the same structure of <code>/usr/local/cld/</code> within your install script folder, put your specialized files and then copy over <code>/usr/local/cld/</code>. This will make the process self-contain within the install script folder.</p>
 <pre><code>&gt;cld-dirs-create.sh 
 Error: Action:  is unknown. Aborted!
@@ -636,16 +641,16 @@ Error: Action:  is unknown. Aborted!
     after-boot      =&gt; ./cld/systemd/runlevel/after-boot        [*.sh will be executed after boot]
     before-shutdown =&gt; ./cld/systemd/runlevel/before-shutdown   [*.sh will be executed before shutdown/reboot/restart]</code></pre>
 </section>
-<section id="cld-scripts-execution-order" class="level1">
-<h1><span class="header-section-number">5</span> CLD scripts execution order</h1>
+<section id="cld-scripts-execution-order" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> CLD scripts execution order</h1>
 <p>All scripts put in the directories below will be executed in the following order:</p>
 <pre><code>/usr/local/cld/systemd/runlevel/after-boot/
 /usr/local/cld/app/jwm/bootstrap/
 /usr/local/cld/systemd/runlevel/before-shutdown/
    </code></pre>
 </section>
-<section id="how-to-upgrade-kernel" class="level1">
-<h1><span class="header-section-number">6</span> How to upgrade kernel</h1>
+<section id="how-to-upgrade-kernel" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> How to upgrade kernel</h1>
 <ol type="1">
 <li><p>Ensure <code>./cld-mkiso.sh "${SYSTEM}" "${CHROOT_DIR}" ignore</code> is in <code>cld.sh</code>. To forgo the following error:</p>
 <pre><code> libkmod: ERROR ../libkmod/libkmod.c:557 kmod_search_moddep: could not open moddep file &#39;/lib/modules/4.6.0-0.bpo.1-amd64/modules.dep.bin&#39;
@@ -661,8 +666,8 @@ Error: Action:  is unknown. Aborted!
 <li>Use <code>update-initramfs</code> instead of <code>mkinitramfs</code>. <code>update-initramfs</code> does distro house keep for you.</li>
 </ul>
 </section>
-<section id="distribution-upgrade" class="level1">
-<h1><span class="header-section-number">7</span> Distribution upgrade</h1>
+<section id="distribution-upgrade" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Distribution upgrade</h1>
 <ol type="1">
 <li>Update scripts at <code>/aptly/mirrors.d</code></li>
 <li>Update <code>./inst-min-con-00-apt-custom-repository/sourceslist-live.sh</code></li>
@@ -672,8 +677,8 @@ Error: Action:  is unknown. Aborted!
 <li>Find <code>'jessie-backports'</code> and replace with next distro name.</li>
 </ol>
 </section>
-<section id="debug-debian-package-dependency" class="level1">
-<h1><span class="header-section-number">8</span> Debug Debian package dependency</h1>
+<section id="debug-debian-package-dependency" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Debug Debian package dependency</h1>
 <p>Lower priority of packages from other repositories. Add the following in <code>.../scripts/repository/inst-min-con-01-apt/preferences-local-repository</code></p>
 <pre><code># https://unix.stackexchange.com/a/118610
 Package: *
@@ -685,8 +690,8 @@ Package: *
 Pin: release a=stretch-backports
 Pin-Priority: 1  </code></pre>
 </section>
-<section id="jwm-menu" class="level1">
-<h1><span class="header-section-number">9</span> JWM menu</h1>
+<section id="jwm-menu" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> JWM menu</h1>
 <p>Check https://specifications.freedesktop.org/menu-spec/latest/apa.html</p>
 <pre><code>Terminal
 --------
@@ -698,8 +703,8 @@ Debian: Debian generated menu
 --------
 Shutdown</code></pre>
 <p>Icon per application can found in it menu definition file located at <code>/usr/share/menu</code>.</p>
-<section id="add-icon-in-jwm-menu" class="level2">
-<h2><span class="header-section-number">9.1</span> Add icon in JWM menu</h2>
+<section id="add-icon-in-jwm-menu" class="level2" data-number="9.1">
+<h2 data-number="9.1"><span class="header-section-number">9.1</span> Add icon in JWM menu</h2>
 <p>Size of icons should be 32x32.</p>
 <p>Icons repository: https://icons8.com/</p>
 <p>Use <code>inst-std-accessories-scite</code> as reference.</p>
@@ -716,27 +721,27 @@ Shutdown</code></pre>
 /usr/share/pixmaps/</code></pre>
 </section>
 </section>
-<section id="systemd" class="level1">
-<h1><span class="header-section-number">10</span> Systemd</h1>
+<section id="systemd" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Systemd</h1>
 <p>https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units</p>
 <pre><code>systemctl list-unit-files --no-page | grep swap
 systemctl cat swap.target</code></pre>
 <p>Unit files located at /etc/systemd/system.</p>
 </section>
-<section id="virtual-packages" class="level1">
-<h1><span class="header-section-number">11</span> Virtual packages</h1>
+<section id="virtual-packages" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Virtual packages</h1>
 <ul>
 <li>https://www.debian.org/doc/packaging-manuals/virtual-package-names-list.txt</li>
 </ul>
 </section>
-<section id="useful-commands" class="level1">
-<h1><span class="header-section-number">12</span> Useful commands</h1>
+<section id="useful-commands" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Useful commands</h1>
 <pre><code>dpkg --print-architecture
 dpkg --print-foreign-architectures
 apt list --upgradable</code></pre>
 </section>
-<section id="x-server" class="level1">
-<h1><span class="header-section-number">13</span> X Server</h1>
+<section id="x-server" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> X Server</h1>
 <p>https://wiki.archlinux.org/index.php/Display_Power_Management_Signaling</p>
 <ul>
 <li><code>xset s off</code>: Disable screen saver blanking</li>
@@ -749,23 +754,23 @@ apt list --upgradable</code></pre>
 <li><code>xset q</code>: Display current settings.</li>
 </ul>
 </section>
-<section id="help" class="level1">
-<h1><span class="header-section-number">14</span> Help</h1>
-<section id="list-of-fonts" class="level2">
-<h2><span class="header-section-number">14.1</span> List of fonts</h2>
+<section id="help" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Help</h1>
+<section id="list-of-fonts" class="level2" data-number="14.1">
+<h2 data-number="14.1"><span class="header-section-number">14.1</span> List of fonts</h2>
 <p>https://wiki.debian.org/Fonts</p>
 <pre><code># List all fonts available.
 fc-list</code></pre>
 </section>
-<section id="get-version-of-zfs" class="level2">
-<h2><span class="header-section-number">14.2</span> Get version of zfs</h2>
+<section id="get-version-of-zfs" class="level2" data-number="14.2">
+<h2 data-number="14.2"><span class="header-section-number">14.2</span> Get version of zfs</h2>
 <pre><code>dkms status
 # OR
 ZFS_VERSION=$(modinfo zfs | grep ^version | tr -s &#39; &#39;)
 echo ${ZFS_VERSION}</code></pre>
 </section>
-<section id="manually-test-the-installation-script-within-chroot-environment" class="level2">
-<h2><span class="header-section-number">14.3</span> Manually test the installation script within chroot environment</h2>
+<section id="manually-test-the-installation-script-within-chroot-environment" class="level2" data-number="14.3">
+<h2 data-number="14.3"><span class="header-section-number">14.3</span> Manually test the installation script within chroot environment</h2>
 <pre><code>./in-chroot.sh
 apt-get update
 cd /root/scripts/
@@ -773,8 +778,8 @@ cp repository/YOUR_SCRIPT.sh .
 source load-global-vars-funcs.sh
 ./YOUR_SCRIPT.sh</code></pre>
 </section>
-<section id="find-keyboard-key-you-can-map-in-.jwmrc" class="level2">
-<h2><span class="header-section-number">14.4</span> Find keyboard key you can map in .jwmrc</h2>
+<section id="find-keyboard-key-you-can-map-in-.jwmrc" class="level2" data-number="14.4">
+<h2 data-number="14.4"><span class="header-section-number">14.4</span> Find keyboard key you can map in .jwmrc</h2>
 <pre><code>~&gt;xmodmap -pke | grep -iE &#39;escape|return&#39;
 keycode   9 = Escape NoSymbol Escape
 keycode  36 = Return NoSymbol Return</code></pre>
@@ -784,12 +789,12 @@ keycode  36 = Return NoSymbol Return</code></pre>
 &lt;Key key=&quot;Escape&quot;&gt;escape&lt;/Key&gt;
 ...</code></pre>
 </section>
-<section id="debian-default-jwm-menu" class="level2">
-<h2><span class="header-section-number">14.5</span> Debian default JWM menu</h2>
+<section id="debian-default-jwm-menu" class="level2" data-number="14.5">
+<h2 data-number="14.5"><span class="header-section-number">14.5</span> Debian default JWM menu</h2>
 <p>The default Debian JWM menu is located at <code>/etc/jwm/debian-menu</code>. It is auto-generated when you add a new application. You can copy the execution command line and add it in your installation script.</p>
 </section>
-<section id="preseed-debian-package-answers" class="level2">
-<h2><span class="header-section-number">14.6</span> Preseed Debian package answers</h2>
+<section id="preseed-debian-package-answers" class="level2" data-number="14.6">
+<h2 data-number="14.6"><span class="header-section-number">14.6</span> Preseed Debian package answers</h2>
 <ol type="1">
 <li>Install the package and answer all the question manually.</li>
 <li>Get the answers by running <code>debconf-get-selections | grep "YOUR_PACKAGE_NAME &gt; YOUR_ANSWERS.seed"</code>. Note: Answers are not always good.</li>
@@ -798,30 +803,30 @@ keycode  36 = Return NoSymbol Return</code></pre>
 </ol>
 <p>https://wiki.debian.org/Multistrap/Environment</p>
 </section>
-<section id="hostname-name-or-service-not-known" class="level2">
-<h2><span class="header-section-number">14.7</span> hostname: Name or service not known</h2>
+<section id="hostname-name-or-service-not-known" class="level2" data-number="14.7">
+<h2 data-number="14.7"><span class="header-section-number">14.7</span> hostname: Name or service not known</h2>
 <pre><code>hostname --fqdn</code></pre>
 </section>
-<section id="disable-debconf-user-interface" class="level2">
-<h2><span class="header-section-number">14.8</span> Disable debconf user interface</h2>
+<section id="disable-debconf-user-interface" class="level2" data-number="14.8">
+<h2 data-number="14.8"><span class="header-section-number">14.8</span> Disable debconf user interface</h2>
 <p>Don’t use the following command line to disable debconf user interface:</p>
 <pre><code>export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true</code></pre>
 <p>If your preseed file answer all questions, then the user interface shouldn’t pop up.</p>
 </section>
-<section id="debug-debconf-user-interface" class="level2">
-<h2><span class="header-section-number">14.9</span> Debug debconf user interface</h2>
+<section id="debug-debconf-user-interface" class="level2" data-number="14.9">
+<h2 data-number="14.9"><span class="header-section-number">14.9</span> Debug debconf user interface</h2>
 <pre><code># List all questions and debug information on the command prompt.
 export DEBCONF_DEBUG=developer
 
 # Press Alt-F4 to switch from the debconf user interface to the command prompt. </code></pre>
 </section>
-<section id="debian-apt" class="level2">
-<h2><span class="header-section-number">14.10</span> Debian APT</h2>
+<section id="debian-apt" class="level2" data-number="14.10">
+<h2 data-number="14.10"><span class="header-section-number">14.10</span> Debian APT</h2>
 <pre><code># Check available package versions
 apt-cache policy &lt;package&gt;</code></pre>
 </section>
-<section id="dump" class="level2">
-<h2><span class="header-section-number">14.11</span> Dump</h2>
+<section id="dump" class="level2" data-number="14.11">
+<h2 data-number="14.11"><span class="header-section-number">14.11</span> Dump</h2>
 <pre><code># Set root password to empty string.
 echo &quot;
 USE mysql;
