@@ -3,7 +3,11 @@
 
     journalctl -u cld-systemd-start-stop.service
 
-# Start service
+# Start/stop service
+    systemctl start mariadb.service
+    systemctl stop mariadb.service
+    
+    # service is to emulate sysvinit functionality during the transition so that people have time to adjust
     service mysql start
     
 # List all services enabled.
