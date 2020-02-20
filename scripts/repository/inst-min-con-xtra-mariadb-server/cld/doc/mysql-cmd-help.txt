@@ -66,4 +66,6 @@
     DBNAME="database_mame"
     mysqldump --opt -u ${USER} -p${PASSWORD} -h ${HOST} ${DB_NAME} > ${DB_NAME}.sql
     
+    mysqldump --opt -u ${USER} -p${PASSWORD} -h ${HOST} ${DB_NAME} [tbl_name...] > ${DB_NAME}.sql
+    
 # Import db.
