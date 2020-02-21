@@ -2,251 +2,35 @@ CLDS:>>>>>>>>> Running inst-min-win-01-xorg-fix-drivers-xtra.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-xserver-xorg-video-all is already the newest version (1:7.7+19).
-xserver-xorg-video-all set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  xserver-xorg-video-mach64 xserver-xorg-video-r128
-0 upgraded, 2 newly installed, 0 to remove and 16 not upgraded.
-Need to get 377 kB of archives.
-After this operation, 584 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-mach64 amd64 6.9.6-1 [189 kB]
-Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-r128 amd64 6.12.0-1 [188 kB]
-Fetched 377 kB in 0s (6,607 kB/s)
-Selecting previously unselected package xserver-xorg-video-mach64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38561 files and directories currently installed.)
-Preparing to unpack .../xserver-xorg-video-mach64_6.9.6-1_amd64.deb ...
-Unpacking xserver-xorg-video-mach64 (6.9.6-1) ...
-Selecting previously unselected package xserver-xorg-video-r128.
-Preparing to unpack .../xserver-xorg-video-r128_6.12.0-1_amd64.deb ...
-Unpacking xserver-xorg-video-r128 (6.12.0-1) ...
-Setting up xserver-xorg-video-r128 (6.12.0-1) ...
-Setting up xserver-xorg-video-mach64 (6.9.6-1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-xserver-xorg-input-wacom is already the newest version (0.34.99.1-1).
-xserver-xorg-input-wacom set to manually installed.
 The following additional packages will be installed:
-  libxss1 libxv1 libxvmc1
+  xserver-xorg-video-nouveau
+Recommended packages:
+  xserver-xorg-video-intel xserver-xorg-video-qxl
 The following NEW packages will be installed:
-  libxss1 libxv1 libxvmc1 xserver-xorg-video-intel xserver-xorg-video-qxl
-0 upgraded, 5 newly installed, 0 to remove and 16 not upgraded.
-Need to get 1,858 kB of archives.
-After this operation, 3,710 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libxss1 amd64 1:1.2.3-1 [17.8 kB]
-Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libxv1 amd64 2:1.0.11-1 [24.6 kB]
-Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 libxvmc1 amd64 2:1.0.10-1 [25.1 kB]
-Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-intel amd64 2:2.99.917+git20180925-2 [1,645 kB]
-Get:5 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-qxl amd64 0.1.5-2+b1 [145 kB]
-Fetched 1,858 kB in 0s (24.2 MB/s)
-Selecting previously unselected package libxss1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38577 files and directories currently installed.)
-Preparing to unpack .../libxss1_1%3a1.2.3-1_amd64.deb ...
-Unpacking libxss1:amd64 (1:1.2.3-1) ...
-Selecting previously unselected package libxv1:amd64.
-Preparing to unpack .../libxv1_2%3a1.0.11-1_amd64.deb ...
-Unpacking libxv1:amd64 (2:1.0.11-1) ...
-Selecting previously unselected package libxvmc1:amd64.
-Preparing to unpack .../libxvmc1_2%3a1.0.10-1_amd64.deb ...
-Unpacking libxvmc1:amd64 (2:1.0.10-1) ...
-Selecting previously unselected package xserver-xorg-video-intel.
-Preparing to unpack .../xserver-xorg-video-intel_2%3a2.99.917+git20180925-2_amd64.deb ...
-Unpacking xserver-xorg-video-intel (2:2.99.917+git20180925-2) ...
-Selecting previously unselected package xserver-xorg-video-qxl.
-Preparing to unpack .../xserver-xorg-video-qxl_0.1.5-2+b1_amd64.deb ...
-Unpacking xserver-xorg-video-qxl (0.1.5-2+b1) ...
-Setting up xserver-xorg-video-qxl (0.1.5-2+b1) ...
-Setting up libxv1:amd64 (2:1.0.11-1) ...
-Setting up libxss1:amd64 (1:1.2.3-1) ...
-Setting up libxvmc1:amd64 (2:1.0.10-1) ...
-Setting up xserver-xorg-video-intel (2:2.99.917+git20180925-2) ...
-Processing triggers for libc-bin (2.28-10) ...
+  xserver-xorg-video-all xserver-xorg-video-nouveau
+0 upgraded, 2 newly installed, 0 to remove and 16 not upgraded.
+Need to get 0 B/367 kB of archives.
+After this operation, 540 kB of additional disk space will be used.
+Selecting previously unselected package xserver-xorg-video-nouveau.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40896 files and directories currently installed.)
+Preparing to unpack .../xserver-xorg-video-nouveau_1%3a1.0.16-1_amd64.deb ...
+Unpacking xserver-xorg-video-nouveau (1:1.0.16-1) ...
+Selecting previously unselected package xserver-xorg-video-all.
+Preparing to unpack .../xserver-xorg-video-all_1%3a7.7+19_amd64.deb ...
+Unpacking xserver-xorg-video-all (1:7.7+19) ...
+Setting up xserver-xorg-video-nouveau (1:1.0.16-1) ...
+Setting up xserver-xorg-video-all (1:7.7+19) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-xserver-xorg-video-amdgpu is already the newest version (18.1.99+git20190207-1).
-xserver-xorg-video-amdgpu set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-xserver-xorg-video-ati is already the newest version (1:19.0.1-1).
-xserver-xorg-video-ati set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  xserver-xorg-video-cirrus
-0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
-Need to get 41.7 kB of archives.
-After this operation, 117 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-cirrus amd64 1:1.5.3-1+b3 [41.7 kB]
-Fetched 41.7 kB in 0s (830 kB/s)
-Selecting previously unselected package xserver-xorg-video-cirrus.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38630 files and directories currently installed.)
-Preparing to unpack .../xserver-xorg-video-cirrus_1%3a1.5.3-1+b3_amd64.deb ...
-Unpacking xserver-xorg-video-cirrus (1:1.5.3-1+b3) ...
-Setting up xserver-xorg-video-cirrus (1:1.5.3-1+b3) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-xserver-xorg-video-fbdev is already the newest version (1:0.5.0-1).
-xserver-xorg-video-fbdev set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-xserver-xorg-video-intel is already the newest version (2:2.99.917+git20180925-2).
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-xserver-xorg-video-mach64 is already the newest version (6.9.6-1).
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  xserver-xorg-video-mga
-0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
-Need to get 105 kB of archives.
-After this operation, 218 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-mga amd64 1:2.0.0-1 [105 kB]
-Fetched 105 kB in 0s (1,887 kB/s)
-Selecting previously unselected package xserver-xorg-video-mga.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38641 files and directories currently installed.)
-Preparing to unpack .../xserver-xorg-video-mga_1%3a2.0.0-1_amd64.deb ...
-Unpacking xserver-xorg-video-mga (1:2.0.0-1) ...
-Setting up xserver-xorg-video-mga (1:2.0.0-1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  xserver-xorg-video-neomagic
-0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
-Need to get 43.1 kB of archives.
-After this operation, 110 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-neomagic amd64 1:1.3.0-1 [43.1 kB]
-Fetched 43.1 kB in 4s (9,719 B/s)
-Selecting previously unselected package xserver-xorg-video-neomagic.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38649 files and directories currently installed.)
-Preparing to unpack .../xserver-xorg-video-neomagic_1%3a1.3.0-1_amd64.deb ...
-Unpacking xserver-xorg-video-neomagic (1:1.3.0-1) ...
-Setting up xserver-xorg-video-neomagic (1:1.3.0-1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-xserver-xorg-video-nouveau is already the newest version (1:1.0.16-1).
-xserver-xorg-video-nouveau set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  xserver-xorg-video-openchrome
-0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
-Need to get 263 kB of archives.
-After this operation, 645 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-openchrome amd64 1:0.6.0-3+b1 [263 kB]
-Fetched 263 kB in 0s (4,482 kB/s)
-Selecting previously unselected package xserver-xorg-video-openchrome.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38657 files and directories currently installed.)
-Preparing to unpack .../xserver-xorg-video-openchrome_1%3a0.6.0-3+b1_amd64.deb ...
-Unpacking xserver-xorg-video-openchrome (1:0.6.0-3+b1) ...
-Setting up xserver-xorg-video-openchrome (1:0.6.0-3+b1) ...
-Processing triggers for libc-bin (2.28-10) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-xserver-xorg-video-qxl is already the newest version (0.1.5-2+b1).
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-xserver-xorg-video-r128 is already the newest version (6.12.0-1).
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-xserver-xorg-video-radeon is already the newest version (1:19.0.1-1).
-xserver-xorg-video-radeon set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  xserver-xorg-video-savage
-0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
-Need to get 91.9 kB of archives.
-After this operation, 201 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-savage amd64 1:2.3.9-2 [91.9 kB]
-Fetched 91.9 kB in 0s (1,836 kB/s)
-Selecting previously unselected package xserver-xorg-video-savage.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38675 files and directories currently installed.)
-Preparing to unpack .../xserver-xorg-video-savage_1%3a2.3.9-2_amd64.deb ...
-Unpacking xserver-xorg-video-savage (1:2.3.9-2) ...
-Setting up xserver-xorg-video-savage (1:2.3.9-2) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  xserver-xorg-video-sisusb
-0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
-Need to get 48.2 kB of archives.
-After this operation, 112 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-sisusb amd64 1:0.9.7-1+b1 [48.2 kB]
-Fetched 48.2 kB in 0s (944 kB/s)
-Selecting previously unselected package xserver-xorg-video-sisusb.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38683 files and directories currently installed.)
-Preparing to unpack .../xserver-xorg-video-sisusb_1%3a0.9.7-1+b1_amd64.deb ...
-Unpacking xserver-xorg-video-sisusb (1:0.9.7-1+b1) ...
-Setting up xserver-xorg-video-sisusb (1:0.9.7-1+b1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  xserver-xorg-video-tdfx
-0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
-Need to get 43.6 kB of archives.
-After this operation, 102 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-tdfx amd64 1:1.4.7-1+b1 [43.6 kB]
-Fetched 43.6 kB in 0s (850 kB/s)
-Selecting previously unselected package xserver-xorg-video-tdfx.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38692 files and directories currently installed.)
-Preparing to unpack .../xserver-xorg-video-tdfx_1%3a1.4.7-1+b1_amd64.deb ...
-Unpacking xserver-xorg-video-tdfx (1:1.4.7-1+b1) ...
-Setting up xserver-xorg-video-tdfx (1:1.4.7-1+b1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  xserver-xorg-video-trident
-0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
-Need to get 67.4 kB of archives.
-After this operation, 174 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xserver-xorg-video-trident amd64 1:1.3.8-1+b1 [67.4 kB]
-Fetched 67.4 kB in 0s (1,124 kB/s)
-Selecting previously unselected package xserver-xorg-video-trident.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38701 files and directories currently installed.)
-Preparing to unpack .../xserver-xorg-video-trident_1%3a1.3.8-1+b1_amd64.deb ...
-Unpacking xserver-xorg-video-trident (1:1.3.8-1+b1) ...
-Setting up xserver-xorg-video-trident (1:1.3.8-1+b1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-xserver-xorg-video-vesa is already the newest version (1:2.4.0-1).
-xserver-xorg-video-vesa set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-xserver-xorg-video-vmware is already the newest version (1:13.3.0-2).
-xserver-xorg-video-vmware set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
-CLDS: * Installed xtra driver. Try to fix mpv playing freeze.
-CLDS: * Disk size = 3081332K. Space Used = 9044K. Runtime = 00:00:00:10.
+Package xserver-xorg-video-r128 is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package xserver-xorg-video-mach64 is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'xserver-xorg-video-r128' has no installation candidate
+E: Package 'xserver-xorg-video-mach64' has no installation candidate
+CLDS: * Disk size = 3345640K. Space Used = 556K. Runtime = 00:00:00:00.
