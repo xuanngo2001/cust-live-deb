@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-min-con-xtra-curl.sh ...
-  * After this operation, 410 kB of additional disk space will be used.
+  * After this operation, 989 kB of additional disk space will be used.
   * Install curl.
-  * Disk size = 1963640K. Space Used = 696K. Runtime = 00:00:00:01.
+  * Disk size = 1897432K. Space Used = 1516K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
-curl
+curl libcurl3
   ```

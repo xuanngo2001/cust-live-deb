@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-inet-xtra-google-chrome.sh ...
-  * After this operation, 498 kB of additional disk space will be used.
-  * After this operation, 335 kB of additional disk space will be used.
-  * After this operation, 7,693 kB of additional disk space will be used.
+  * After this operation, 570 kB of additional disk space will be used.
+  * After this operation, 313 kB of additional disk space will be used.
+  * After this operation, 7,679 kB of additional disk space will be used.
   * After this operation, 78.8 kB of additional disk space will be used.
   * After this operation, 224 MB of additional disk space will be used.
   * Install Google Chrome 80.0.3987.122 .
@@ -10,7 +10,7 @@
   * Add google chrome alias, chrome.
   * Set default browser: update-alternatives --config x-www-browser.
   * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-  * Disk size = 3964824K. Space Used = 286524K. Runtime = 00:00:00:09.
+  * Disk size = 3764676K. Space Used = 286744K. Runtime = 00:00:00:09.
   * The following NEW packages will be installed:
   ```bash
 distro-info-data gconf2-common gconf-service google-chrome-stable libappindicator1

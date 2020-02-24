@@ -9,8 +9,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
 
 # Add deb-multimedia sources list
-  GF_ADD_SOURCE_LIST live "deb https://download.docker.com/linux/debian buster stable"
-  GF_ADD_SOURCE_LIST tmp "deb https://download.docker.com/linux/debian buster stable"
+  GF_ADD_SOURCE_LIST live "deb https://download.docker.com/linux/debian stretch stable"
+  GF_ADD_SOURCE_LIST tmp "deb https://download.docker.com/linux/debian stretch stable"
   
   
 # Explicitly install dependent packages
