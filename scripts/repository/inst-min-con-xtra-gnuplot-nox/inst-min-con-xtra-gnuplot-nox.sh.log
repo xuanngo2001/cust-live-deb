@@ -16,8 +16,8 @@ The following NEW packages will be installed:
   libgd3 libgraphite2-3 libharfbuzz0b libjbig0 liblua5.3-0 libpango-1.0-0
   libpangocairo-1.0-0 libpangoft2-1.0-0 libpixman-1-0 libthai-data libthai0
   libtiff5 libwebp6 libxcb-render0 libxcb-shm0 libxpm4
-0 upgraded, 23 newly installed, 0 to remove and 16 not upgraded.
-Need to get 5,715 kB of archives.
+0 upgraded, 23 newly installed, 0 to remove and 17 not upgraded.
+Need to get 5,729 kB of archives.
 After this operation, 12.3 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 aglfn all 1.7-3 [29.2 kB]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 fontconfig amd64 2.13.1-2 [405 kB]
@@ -28,7 +28,7 @@ Get:6 http://localhost/aptly-repo/master_buster-main buster/main amd64 libxcb-sh
 Get:7 http://localhost/aptly-repo/master_buster-main buster/main amd64 libcairo2 amd64 1.16.0-4 [689 kB]
 Get:8 http://localhost/aptly-repo/master_buster-main buster/main amd64 libjbig0 amd64 2.1-3.1+b2 [31.0 kB]
 Get:9 http://localhost/aptly-repo/master_buster-main buster/main amd64 libwebp6 amd64 0.6.1-2 [263 kB]
-Get:10 http://localhost/aptly-repo/master_buster-main buster/main amd64 libtiff5 amd64 4.0.10-4 [257 kB]
+Get:10 http://localhost/aptly-repo/master_buster-main buster/main amd64 libtiff5 amd64 4.1.0+git191117-2~deb10u1 [271 kB]
 Get:11 http://localhost/aptly-repo/master_buster-main buster/main amd64 libxpm4 amd64 1:3.5.12-1 [49.1 kB]
 Get:12 http://localhost/aptly-repo/master_buster-main buster/main amd64 libgd3 amd64 2.2.5-5.2 [136 kB]
 Get:13 http://localhost/aptly-repo/master_buster-main buster/main amd64 liblua5.3-0 amd64 5.3.3-1.1 [120 kB]
@@ -42,9 +42,9 @@ Get:20 http://localhost/aptly-repo/master_buster-main buster/main amd64 libharfb
 Get:21 http://localhost/aptly-repo/master_buster-main buster/main amd64 libpangoft2-1.0-0 amd64 1.42.4-7~deb10u1 [67.9 kB]
 Get:22 http://localhost/aptly-repo/master_buster-main buster/main amd64 libpangocairo-1.0-0 amd64 1.42.4-7~deb10u1 [55.5 kB]
 Get:23 http://localhost/aptly-repo/master_buster-main buster/main amd64 gnuplot-nox amd64 5.2.6+dfsg1-1+deb10u1 [908 kB]
-Fetched 5,715 kB in 0s (46.0 MB/s)
+Fetched 5,729 kB in 0s (44.0 MB/s)
 Selecting previously unselected package aglfn.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22385 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22395 files and directories currently installed.)
 Preparing to unpack .../00-aglfn_1.7-3_all.deb ...
 Unpacking aglfn (1.7-3) ...
 Selecting previously unselected package fontconfig.
@@ -72,8 +72,8 @@ Selecting previously unselected package libwebp6:amd64.
 Preparing to unpack .../08-libwebp6_0.6.1-2_amd64.deb ...
 Unpacking libwebp6:amd64 (0.6.1-2) ...
 Selecting previously unselected package libtiff5:amd64.
-Preparing to unpack .../09-libtiff5_4.0.10-4_amd64.deb ...
-Unpacking libtiff5:amd64 (4.0.10-4) ...
+Preparing to unpack .../09-libtiff5_4.1.0+git191117-2~deb10u1_amd64.deb ...
+Unpacking libtiff5:amd64 (4.1.0+git191117-2~deb10u1) ...
 Selecting previously unselected package libxpm4:amd64.
 Preparing to unpack .../10-libxpm4_1%3a3.5.12-1_amd64.deb ...
 Unpacking libxpm4:amd64 (1:3.5.12-1) ...
@@ -129,7 +129,7 @@ Setting up libwebp6:amd64 (0.6.1-2) ...
 Setting up liblua5.3-0:amd64 (5.3.3-1.1) ...
 Setting up libharfbuzz0b:amd64 (2.3.1-1) ...
 Setting up libthai-data (0.1.28-2) ...
-Setting up libtiff5:amd64 (4.0.10-4) ...
+Setting up libtiff5:amd64 (4.1.0+git191117-2~deb10u1) ...
 Setting up gnuplot-data (5.2.6+dfsg1-1+deb10u1) ...
 Setting up libthai0:amd64 (0.1.28-2) ...
 Setting up libgd3:amd64 (2.2.5-5.2) ...
@@ -140,4 +140,4 @@ Setting up gnuplot-nox (5.2.6+dfsg1-1+deb10u1) ...
 update-alternatives: using /usr/bin/gnuplot-nox to provide /usr/bin/gnuplot (gnuplot) in auto mode
 Processing triggers for libc-bin (2.28-10) ...
 CLDS: * Install gnuplot-nox.
-CLDS: * Disk size = 2146136K. Space Used = 18348K. Runtime = 00:00:00:04.
+CLDS: * Disk size = 2223748K. Space Used = 18376K. Runtime = 00:00:00:04.
