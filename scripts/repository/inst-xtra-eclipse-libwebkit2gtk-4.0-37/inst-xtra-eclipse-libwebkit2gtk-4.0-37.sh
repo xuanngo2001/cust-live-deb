@@ -15,3 +15,4 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Log
 	echo "${GV_LOG} * Install libwebkit2gtk-4.0-37."
+	echo "${GV_LOG} * To be able to render *.md files."
