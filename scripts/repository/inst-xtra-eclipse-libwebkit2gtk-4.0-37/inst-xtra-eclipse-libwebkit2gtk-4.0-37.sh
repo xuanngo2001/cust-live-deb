@@ -11,6 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 	# Stretch
 	apt-get install -s -y libwebpdemux2
+	apt-get install -s -y libgles2-mesa
 	
 # Install libwebkit2gtk-4.0-37.
 	apt-get -y install libwebkit2gtk-4.0-37
