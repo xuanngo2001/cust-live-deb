@@ -8,10 +8,12 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly list dependent packages
 #	apt-get install -s -y <your-package> 
+	
+	# For Stretch.
+	apt-get install -s -y libuchardet0
 
 # Install fix.
 	apt-get -y install libtesseract4
-
 
 # Log
 	echo "${GV_LOG} * 2020-02-17: libtesseract4 package still need."
