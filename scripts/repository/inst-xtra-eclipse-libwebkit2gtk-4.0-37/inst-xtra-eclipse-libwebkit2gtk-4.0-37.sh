@@ -9,6 +9,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Explicitly list dependent packages
 	apt-get install -s -y xdg-dbus-proxy 
 
+	# Stretch
+	apt-get install -s -y libwebpdemux2
+	
 # Install libwebkit2gtk-4.0-37.
 	apt-get -y install libwebkit2gtk-4.0-37
 
