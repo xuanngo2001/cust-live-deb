@@ -24,7 +24,7 @@ while IFS='' read -r SCRIPT_FILE || [[ -n "$SCRIPT_FILE" ]]; do
   APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | sed 's/.* install //' | tr ' ' '\n' || true) # Replace space with newline.
   APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | grep -v '^-' || true)  # Remove option(-XX)
   APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | awk NF || true)  # Remove empty line.
-  APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | grep -Fv '${KERNEL_HEADER}' || true)  # Remove line with '${KERNEL_HEADER}'.
+  APT_GET_PACKAGES=$(echo "${APT_GET_PACKAGES}" | grep -iFv '${KERNEL_HEADER}' || true)  # Remove line with '${KERNEL_HEADER}'.
   echo "${APT_GET_PACKAGES}" >> "${PACKAGE_LIST_FILE}"
 
 done < <( find ./inst-* -type f -name "inst-*.sh" | sort )
