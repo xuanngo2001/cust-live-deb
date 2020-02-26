@@ -18,5 +18,5 @@ cd zfs-0.8.3
 make -j1 pkg-utils deb-dkms
 for file in *.deb; do dpkg -i $file; done
 
-
+touch "build_for_linux-headers-$(uname -r).txt"
 
