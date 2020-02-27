@@ -8,13 +8,7 @@ The following NEW packages will be installed:
 Need to get 35.2 kB of archives.
 After this operation, 76.8 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-non-free buster/non-free amd64 amd64-microcode amd64 3.20181128.1 [35.2 kB]
-debconf: unable to initialize frontend: Dialog
-debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.28.1 /usr/local/share/perl/5.28.1 /usr/lib/x86_64-linux-gnu/perl5/5.28 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.28 /usr/share/perl/5.28 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7, <> line 1.)
-debconf: falling back to frontend: Teletype
-Fetched 35.2 kB in 0s (727 kB/s)
+Fetched 35.2 kB in 0s (684 kB/s)
 Selecting previously unselected package amd64-microcode.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15411 files and directories currently installed.)
 Preparing to unpack .../amd64-microcode_3.20181128.1_amd64.deb ...
@@ -35,13 +29,7 @@ Need to get 2,490 kB of archives.
 After this operation, 3,143 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-contrib buster/contrib amd64 iucode-tool amd64 2.3.1-1 [62.4 kB]
 Get:2 http://localhost/aptly-repo/master_buster-non-free buster/non-free amd64 intel-microcode amd64 3.20191115.2~deb10u1 [2,428 kB]
-debconf: unable to initialize frontend: Dialog
-debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.28.1 /usr/local/share/perl/5.28.1 /usr/lib/x86_64-linux-gnu/perl5/5.28 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.28 /usr/share/perl/5.28 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7, <> line 2.)
-debconf: falling back to frontend: Teletype
-Fetched 2,490 kB in 0s (31.3 MB/s)
+Fetched 2,490 kB in 0s (31.8 MB/s)
 Selecting previously unselected package iucode-tool.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15427 files and directories currently installed.)
 Preparing to unpack .../iucode-tool_2.3.1-1_amd64.deb ...
@@ -58,4 +46,4 @@ update-initramfs: Generating /boot/initrd.img-5.4.0-0.bpo.3-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 CLDS: * Install CPU firmware: amd64-microcode.
 CLDS: * Install CPU firmware: intel-microcode.
-CLDS: * Disk size = 1501132K. Space Used = 8728K. Runtime = 00:00:00:18.
+CLDS: * Disk size = 1501104K. Space Used = 8724K. Runtime = 00:00:00:19.
