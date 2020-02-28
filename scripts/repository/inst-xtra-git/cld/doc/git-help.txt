@@ -32,4 +32,13 @@
     git reset HEAD -- .
 # Remove a single file from staging.
     git reset HEAD -- <file>
-  
+
+# Branch
+    # Show all branches.
+        git branch -a
+        
+    # Select branch you want to use.
+        git checkout buster
+        
+    # Confirm you are now working on that branch.
+        git branch
