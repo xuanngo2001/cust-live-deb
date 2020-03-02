@@ -1,0 +1,2 @@
+# Create bootable USB key from ISO
+    dd bs=4M if=/input.iso of=/dev/sdX conv=fdatasync  status=progress
