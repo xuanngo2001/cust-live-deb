@@ -3,7 +3,7 @@
   * After this operation, 410 kB of additional disk space will be used.
   * Install Monitor Switcher: lxrandr.
   * Add lxrandr key binding.
-  * Disk size = 4131264K. Space Used = 37988K. Runtime = 00:00:00:03.
+  * Disk size = 4131300K. Space Used = 38008K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 cpp cpp-8 libisl19 libmpc3 lxrandr
