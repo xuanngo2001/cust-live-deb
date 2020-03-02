@@ -113,7 +113,7 @@ mksquashfs "${CHROOT_DIR}" ./binary/live/filesystem.squashfs -comp xz
 ##################################################################
 # Note: boot.cat is automatically created
 architecture=$(dpkg --print-architecture)
-APP_ID=cust-live-deb-${architecture}
+APP_ID=cld-${architecture}
 version_codename=$(cat /etc/os-release| grep CODENAME| cut -d'=' -f2)
 ISO_FILENAME="${iso_output_dir}/${APP_ID}_${version_codename}${SYSTEM}_${DATE_STRING}.iso"
 xorriso -as mkisofs -r -J -joliet-long -l \
