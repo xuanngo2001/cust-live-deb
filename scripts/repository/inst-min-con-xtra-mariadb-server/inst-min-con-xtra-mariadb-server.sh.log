@@ -40,9 +40,9 @@ Get:17 http://localhost/aptly-repo/master_buster-main buster/main amd64 socat am
 Get:18 http://localhost/aptly-repo/master_mariadb-main buster/main amd64 mariadb-server-10.4 amd64 1:10.4.12+maria~buster [4,583 kB]
 Get:19 http://localhost/aptly-repo/master_mariadb-main buster/main amd64 mariadb-server all 1:10.4.12+maria~buster [3,180 B]
 Preconfiguring packages ...
-Fetched 28.3 MB in 0s (86.9 MB/s)
+Fetched 28.3 MB in 0s (75.4 MB/s)
 Selecting previously unselected package libmpfr6:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22744 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22749 files and directories currently installed.)
 Preparing to unpack .../libmpfr6_4.0.2-1_amd64.deb ...
 Unpacking libmpfr6:amd64 (4.0.2-1) ...
 Selecting previously unselected package libsigsegv2:amd64.
@@ -51,7 +51,7 @@ Unpacking libsigsegv2:amd64 (2.12-2) ...
 Setting up libmpfr6:amd64 (4.0.2-1) ...
 Setting up libsigsegv2:amd64 (2.12-2) ...
 Selecting previously unselected package gawk.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22764 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22769 files and directories currently installed.)
 Preparing to unpack .../00-gawk_1%3a4.2.1+dfsg-1_amd64.deb ...
 Unpacking gawk (1:4.2.1+dfsg-1) ...
 Selecting previously unselected package mysql-common.
@@ -99,7 +99,7 @@ Unpacking socat (1.7.3.2-2) ...
 Setting up mysql-common (1:10.4.12+maria~buster) ...
 Setting up mariadb-common (1:10.4.12+maria~buster) ...
 Selecting previously unselected package mariadb-server-10.4.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23440 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23445 files and directories currently installed.)
 Preparing to unpack .../mariadb-server-10.4_1%3a10.4.12+maria~buster_amd64.deb ...
 Running in chroot, ignoring request: stop
 Unpacking mariadb-server-10.4 (1:10.4.12+maria~buster) ...
@@ -141,4 +141,4 @@ Processing triggers for libc-bin (2.28-10) ...
 './cld/doc/mysql-error-help.txt' -> '/usr/local/cld/doc/mysql-error-help.txt'
 CLDS: * Install mariadb-server.
 CLDS: * Set root password to [password].
-CLDS: * Disk size = 2580064K. Space Used = 351632K. Runtime = 00:00:00:08.
+CLDS: * Disk size = 2580076K. Space Used = 351632K. Runtime = 00:00:00:08.
