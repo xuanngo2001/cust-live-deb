@@ -3,8 +3,10 @@
 ./build-cld.sh home; ./build-cld.sh home_inspiron; mv cust-live-deb-64-*_????-??-??_*.iso /media/sf_shared/; ./build-cld.sh work_no_proxy
 
 
+git checkout buster
+(cd ../cust-live-deb/; chmod +x *.sh; git checkout buster)
+
 ./master-release.sh tmp
-(cd ../cust-live-deb/; chmod +x *.sh)
 (cd ../cust-live-deb/scripts/repository/; chmod +x *.sh; ./packages.sh)
 echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh 
 
