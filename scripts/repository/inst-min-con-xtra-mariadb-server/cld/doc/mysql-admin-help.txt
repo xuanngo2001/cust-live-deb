@@ -1,3 +1,6 @@
+# Check mysql status
+    systemctl status mariadb.service --no-page
+    
 # Reduce table size. Make sure that you have enough space in /tmp.    
     OPTIMZE TABLE tbl_name;
     
