@@ -7,3 +7,7 @@
 # ERROR 1133 (28000): Can't find any matching row in the user table
 # ERROR 1194 (HY000): Table 'user' is marked as crashed and should be repaired
     mysqlcheck --repair --all-databases
+
+# You have to start mysqld with --tc-heuristic-recover switch to commit or rollback pending transactions.
+    mysqld --tc-heuristic-recover=ROLLBACK
+    systemctl start mariadb.service
