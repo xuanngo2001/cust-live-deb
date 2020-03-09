@@ -12,6 +12,12 @@ echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh
 
 (cd rebuild-mirrors-log/; ./create-clean-mirrors-log.sh ; scite clean-mirrors-log.txt)
 
+=================
+# To build stretch from buster environment.
+    # Get latest version of linux-image-amd64 for Stretch from https://packages.debian.org/stretch-backports/linux-image-amd64
+    # Rename that version in ./aptly/packages.list
+    # Comment out './mirrors--choose-kernel.sh' from ./aptly/mirrors-update.sh
+
 
 =================
 git checkout stretch
@@ -21,3 +27,4 @@ git checkout stretch
 (cd ../cust-live-deb/scripts/repository/; chmod +x *.sh; ./packages.sh)
 echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh
 
+==================
