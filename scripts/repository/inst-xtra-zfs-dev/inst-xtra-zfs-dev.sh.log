@@ -4,7 +4,7 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   libelf-dev
-0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
 Inst libelf-dev (0.168-1 master_stretch-main stretch:stretch [amd64])
 Conf libelf-dev (0.168-1 master_stretch-main stretch:stretch [amd64])
 Reading package lists...
@@ -13,13 +13,13 @@ Reading state information...
 lsb-release is already the newest version (9.20161125).
 The following NEW packages will be installed:
   linux-headers-amd64
-0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
 Need to get 6,964 B of archives.
 After this operation, 13.3 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-amd64 amd64 4.19+105+deb10u1~bpo9+1 [6,964 B]
 Fetched 6,964 B in 0s (0 B/s)
 Selecting previously unselected package linux-headers-amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 75335 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77379 files and directories currently installed.)
 Preparing to unpack .../linux-headers-amd64_4.19+105+deb10u1~bpo9+1_amd64.deb ...
 Unpacking linux-headers-amd64 (4.19+105+deb10u1~bpo9+1) ...
 Setting up linux-headers-amd64 (4.19+105+deb10u1~bpo9+1) ...
@@ -29,42 +29,172 @@ Reading state information...
 build-essential is already the newest version (12.3).
 libc6-dev is already the newest version (2.24-11+deb9u4).
 dkms is already the newest version (2.6.1-4~bpo9+1).
-0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 linux-headers-4.19.0-0.bpo.6-amd64 is already the newest version (4.19.67-2+deb10u2~bpo9+1).
-0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   module-assistant
-0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
 Need to get 101 kB of archives.
 After this operation, 399 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 module-assistant all 0.11.9 [101 kB]
 Fetched 101 kB in 0s (0 B/s)
 Selecting previously unselected package module-assistant.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 75338 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77382 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.9_all.deb ...
 Unpacking module-assistant (0.11.9) ...
+Processing triggers for man-db (2.7.6.1-2) ...
 Setting up module-assistant (0.11.9) ...
-Getting source for kernel version: 5.4.0-0.bpo.3-amd64
-apt-get -y install linux-headers-5.4.0-0.bpo.3-amd64 
-Reading package lists...
-Building dependency tree...
-Reading state information...
-E: Unable to locate package linux-headers-5.4.0-0.bpo.3-amd64
-E: Couldn't find any package by glob 'linux-headers-5.4.0-0.bpo.3-amd64'
-E: Couldn't find any package by regex 'linux-headers-5.4.0-0.bpo.3-amd64'
+Getting source for kernel version: 4.19.0-0.bpo.6-amd64
+Kernel headers available in /lib/modules/4.19.0-0.bpo.6-amd64/build
 Creating symlink...
 apt-get -y install build-essential 
 Reading package lists...
 Building dependency tree...
 Reading state information...
 build-essential is already the newest version (12.3).
-0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
 
 Done!
-CLDS: * Disk size = 3818288K. Space Used = 3948K. Runtime = 00:00:00:02.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+file is already the newest version (1:5.30-1+deb9u3).
+file set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+Selecting previously unselected package libnvpair1.
+(Reading database ... 77424 files and directories currently installed.)
+Preparing to unpack .../libnvpair1_0.8.3-1_amd64.deb ...
+Unpacking libnvpair1 (0.8.3-1) ...
+Setting up libnvpair1 (0.8.3-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Selecting previously unselected package libuutil1.
+(Reading database ... 77429 files and directories currently installed.)
+Preparing to unpack .../libuutil1_0.8.3-1_amd64.deb ...
+Unpacking libuutil1 (0.8.3-1) ...
+Setting up libuutil1 (0.8.3-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Selecting previously unselected package libzfs2.
+(Reading database ... 77434 files and directories currently installed.)
+Preparing to unpack .../libzfs2_0.8.3-1_amd64.deb ...
+Unpacking libzfs2 (0.8.3-1) ...
+Setting up libzfs2 (0.8.3-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Selecting previously unselected package libzfs2-devel.
+(Reading database ... 77441 files and directories currently installed.)
+Preparing to unpack .../libzfs2-devel_0.8.3-1_amd64.deb ...
+Unpacking libzfs2-devel (0.8.3-1) ...
+Setting up libzfs2-devel (0.8.3-1) ...
+Selecting previously unselected package libzpool2.
+(Reading database ... 77707 files and directories currently installed.)
+Preparing to unpack .../libzpool2_0.8.3-1_amd64.deb ...
+Unpacking libzpool2 (0.8.3-1) ...
+Setting up libzpool2 (0.8.3-1) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Selecting previously unselected package python3-pyzfs.
+(Reading database ... 77712 files and directories currently installed.)
+Preparing to unpack .../python3-pyzfs_0.8.3-1_amd64.deb ...
+Unpacking python3-pyzfs (0.8.3-1) ...
+Setting up python3-pyzfs (0.8.3-1) ...
+Selecting previously unselected package zfs.
+(Reading database ... 77757 files and directories currently installed.)
+Preparing to unpack zfs-deb/zfs_0.8.3-1_amd64.deb ...
+Unpacking zfs (0.8.3-1) ...
+Setting up zfs (0.8.3-1) ...
+Processing triggers for systemd (232-25+deb9u12) ...
+Processing triggers for man-db (2.7.6.1-2) ...
+Selecting previously unselected package zfs-dkms.
+(Reading database ... 77931 files and directories currently installed.)
+Preparing to unpack .../zfs-dkms_0.8.3-1_amd64.deb ...
+Unpacking zfs-dkms (0.8.3-1) ...
+Setting up zfs-dkms (0.8.3-1) ...
+Loading new zfs-0.8.3 DKMS files...
+Building for 4.19.0-0.bpo.6-amd64
+Building initial module for 4.19.0-0.bpo.6-amd64
+Done.
+
+zavl.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.19.0-0.bpo.6-amd64/updates/dkms/
+
+znvpair.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.19.0-0.bpo.6-amd64/updates/dkms/
+
+zunicode.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.19.0-0.bpo.6-amd64/updates/dkms/
+
+zcommon.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.19.0-0.bpo.6-amd64/updates/dkms/
+
+zfs.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.19.0-0.bpo.6-amd64/updates/dkms/
+
+icp.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.19.0-0.bpo.6-amd64/updates/dkms/
+
+zlua.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.19.0-0.bpo.6-amd64/updates/dkms/
+
+spl.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/4.19.0-0.bpo.6-amd64/updates/dkms/
+
+depmod...
+Running in chroot, ignoring request.
+
+DKMS: install completed.
+Selecting previously unselected package zfs-dracut.
+(Reading database ... 81660 files and directories currently installed.)
+Preparing to unpack .../zfs-dracut_0.8.3-1_amd64.deb ...
+Unpacking zfs-dracut (0.8.3-1) ...
+Setting up zfs-dracut (0.8.3-1) ...
+Selecting previously unselected package zfs-initramfs.
+(Reading database ... 81679 files and directories currently installed.)
+Preparing to unpack .../zfs-initramfs_0.8.3-1_amd64.deb ...
+Unpacking zfs-initramfs (0.8.3-1) ...
+Setting up zfs-initramfs (0.8.3-1) ...
+Selecting previously unselected package zfs-test.
+(Reading database ... 81690 files and directories currently installed.)
+Preparing to unpack .../zfs-test_0.8.3-1_amd64.deb ...
+Unpacking zfs-test (0.8.3-1) ...
+Setting up zfs-test (0.8.3-1) ...
+CLDS: * Install latest version from upstream.
+CLDS: * This is script is created for Stretch.
+CLDS: * Install zfs-dkms: version: 0.8.3-1
+CLDS: * Disk size = 4025188K. Space Used = 92912K. Runtime = 00:00:02:57.
