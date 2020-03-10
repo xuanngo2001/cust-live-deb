@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-std-multimedia-mpv.sh ...
-  * After this operation, 74.7 MB of additional disk space will be used.
+  * After this operation, 74.5 MB of additional disk space will be used.
   * Install Media Player: mpv 0.29.1 Copyright © 2000-2018 mpv/MPlayer/mplayer2 projects.
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 4074352K. Space Used = 95540K. Runtime = 00:00:00:06.
+  * Disk size = 4415368K. Space Used = 95284K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
 libaom0 libarchive13 libass9 libavc1394-0 libavcodec58
@@ -15,9 +15,9 @@ libgsm1 libiec61883-0 libilbc2 libjack-jackd2-0 libkvazaar4
 libmfx1 libmp3lame0 libmpg123-0 libnuma1 libopencore-amrnb0
 libopencore-amrwb0 libopenh264-5 libopenmpt0 libopus0 libpostproc55
 libraw1394-11 librubberband2 libshine3 libsnappy1v5 libsoxr0
-libspeex1 libswresample3 libswscale5 libtheora0 libuchardet0
-libva2 libva-drm2 libva-wayland2 libva-x11-2 libvdpau1
-libvidstab1.1 libvo-amrwbenc0 libvpx6 libvulkan1 libwebpmux3
-libx264-157 libx265-176 libxvidcore4 libzimg2 libzvbi0
-libzvbi-common mpv ocl-icd-libopencl1 vapoursynth vapoursynth-ffms2
+libspeex1 libswresample3 libswscale5 libtheora0 libva2
+libva-drm2 libva-wayland2 libva-x11-2 libvdpau1 libvidstab1.1
+libvo-amrwbenc0 libvpx6 libvulkan1 libwebpmux3 libx264-157
+libx265-176 libxvidcore4 libzimg2 libzvbi0 libzvbi-common
+mpv ocl-icd-libopencl1 vapoursynth vapoursynth-ffms2
   ```
