@@ -13,6 +13,9 @@ Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libdbusme
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libdbusmenu-gtk4 amd64 18.10.20180917~bzr490+repack1-1 [45.7 kB]
 Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 libindicator7 amd64 0.5.0-4 [53.0 kB]
 Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 libappindicator1 amd64 0.4.92-7 [53.3 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
 Fetched 210 kB in 0s (0 B/s)
 Selecting previously unselected package libdbusmenu-glib4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52547 files and directories currently installed.)
@@ -62,6 +65,9 @@ The following NEW packages will be installed:
 Need to get 73.3 kB of archives.
 After this operation, 335 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xdg-utils all 1.1.3-1 [73.3 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
 Fetched 73.3 kB in 0s (0 B/s)
 Selecting previously unselected package xdg-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52572 files and directories currently installed.)
@@ -82,7 +88,10 @@ After this operation, 7,693 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 gconf2-common all 3.2.6-5 [1,039 kB]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libgconf-2-4 amd64 3.2.6-5 [426 kB]
 Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 gconf-service amd64 3.2.6-5 [414 kB]
-Fetched 1,879 kB in 0s (68.5 MB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Fetched 1,879 kB in 0s (69.9 MB/s)
 Selecting previously unselected package gconf2-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52599 files and directories currently installed.)
 Preparing to unpack .../gconf2-common_3.2.6-5_all.deb ...
@@ -125,6 +134,9 @@ Need to get 34.0 kB of archives.
 After this operation, 78.8 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 distro-info-data all 0.41+deb10u1 [6,500 B]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 lsb-release all 10.2019051400 [27.5 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
 Fetched 34.0 kB in 0s (0 B/s)
 Selecting previously unselected package distro-info-data.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52739 files and directories currently installed.)
@@ -146,13 +158,16 @@ Recommended packages:
 The following NEW packages will be installed:
   google-chrome-stable libappindicator3-1 libdbusmenu-gtk3-4 libindicator3-7
 0 upgraded, 4 newly installed, 0 to remove and 14 not upgraded.
-Need to get 63.7 MB of archives.
+Need to get 63.3 MB of archives.
 After this operation, 224 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libdbusmenu-gtk3-4 amd64 18.10.20180917~bzr490+repack1-1 [45.6 kB]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libindicator3-7 amd64 0.5.0-4 [52.9 kB]
 Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 libappindicator3-1 amd64 0.4.92-7 [53.5 kB]
-Get:4 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 80.0.3987.132-1 [63.6 MB]
-Fetched 63.7 MB in 1s (84.5 MB/s)
+Get:4 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 80.0.3987.149-1 [63.1 MB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Fetched 63.3 MB in 1s (88.0 MB/s)
 Selecting previously unselected package libdbusmenu-gtk3-4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52759 files and directories currently installed.)
 Preparing to unpack .../libdbusmenu-gtk3-4_18.10.20180917~bzr490+repack1-1_amd64.deb ...
@@ -164,12 +179,12 @@ Selecting previously unselected package libappindicator3-1:amd64.
 Preparing to unpack .../libappindicator3-1_0.4.92-7_amd64.deb ...
 Unpacking libappindicator3-1:amd64 (0.4.92-7) ...
 Selecting previously unselected package google-chrome-stable.
-Preparing to unpack .../google-chrome-stable_80.0.3987.132-1_amd64.deb ...
-Unpacking google-chrome-stable (80.0.3987.132-1) ...
+Preparing to unpack .../google-chrome-stable_80.0.3987.149-1_amd64.deb ...
+Unpacking google-chrome-stable (80.0.3987.149-1) ...
 Setting up libdbusmenu-gtk3-4:amd64 (18.10.20180917~bzr490+repack1-1) ...
 Setting up libindicator3-7:amd64 (0.5.0-4) ...
 Setting up libappindicator3-1:amd64 (0.4.92-7) ...
-Setting up google-chrome-stable (80.0.3987.132-1) ...
+Setting up google-chrome-stable (80.0.3987.149-1) ...
 update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
 update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
 update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/google-chrome (google-chrome) in auto mode
@@ -179,10 +194,10 @@ Processing triggers for man-db (2.8.5-2) ...
 Processing triggers for menu (2.1.47+b1) ...
 Processing triggers for desktop-file-utils (0.23-4) ...
 './cld/bashrc.d/bashrc-alias-google-chrome.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-google-chrome.sh'
-CLDS: * Install Google Chrome 80.0.3987.132 .
+CLDS: * Install Google Chrome 80.0.3987.149 .
 CLDS: * Modify configuration to run google-chrome as root.
 CLDS: * Insert Google Chrome in Internet menu.
 CLDS: * Add google chrome alias, chrome.
 CLDS: * Set default browser: update-alternatives --config x-www-browser.
 CLDS: * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-CLDS: * Disk size = 4308180K. Space Used = 286988K. Runtime = 00:00:00:10.
+CLDS: * Disk size = 4307916K. Space Used = 286552K. Runtime = 00:00:00:09.
