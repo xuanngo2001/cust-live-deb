@@ -1,2 +1,2 @@
 # List and sort directories by size.
-    du -c --max-depth=1 | sort -k1,1n | numfmt --field=1 --from-unit=1024 --to=iec-i  --format='%10f'
+    du -c --max-depth=1 | sort -k1,1n | numfmt --field=1 --from-unit=1024 --to=iec-i  --format='%10f' --suffix B
