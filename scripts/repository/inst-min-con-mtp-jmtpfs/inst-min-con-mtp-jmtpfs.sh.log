@@ -19,13 +19,7 @@ Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 libmtp-co
 Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 libusb-1.0-0 amd64 2:1.0.22-2 [55.3 kB]
 Get:5 http://localhost/aptly-repo/master_buster-main buster/main amd64 libmtp9 amd64 1.1.16-2 [202 kB]
 Get:6 http://localhost/aptly-repo/master_buster-main buster/main amd64 jmtpfs amd64 0.5-2+b2 [41.0 kB]
-debconf: unable to initialize frontend: Dialog
-debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.28.1 /usr/local/share/perl/5.28.1 /usr/lib/x86_64-linux-gnu/perl5/5.28 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.28 /usr/share/perl/5.28 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7, <> line 6.)
-debconf: falling back to frontend: Teletype
-Fetched 724 kB in 0s (51.0 MB/s)
+Fetched 724 kB in 0s (45.0 MB/s)
 Selecting previously unselected package libmagic-mgc.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17230 files and directories currently installed.)
 Preparing to unpack .../0-libmagic-mgc_1%3a5.35-4+deb10u1_amd64.deb ...
@@ -61,4 +55,4 @@ CLDS: *   mkdir /path/to/your/mount/directory/
 CLDS: *   jmtpfs -o allow_other /path/to/your/mount/directory/
 CLDS: *   # Enter your PIN to unlock your smartphone.
 CLDS: *   cd /path/to/your/mount/directory/
-CLDS: * Disk size = 1758012K. Space Used = 7760K. Runtime = 00:00:00:01.
+CLDS: * Disk size = 1758024K. Space Used = 7756K. Runtime = 00:00:00:01.
