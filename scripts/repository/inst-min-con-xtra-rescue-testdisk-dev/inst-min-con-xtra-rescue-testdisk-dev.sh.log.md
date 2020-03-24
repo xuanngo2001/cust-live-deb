@@ -3,7 +3,7 @@
   * After this operation, 2,009 kB of additional disk space will be used.
   * After this operation, 67.9 MB of additional disk space will be used.
   * Install testdisk-dev.
-  * Disk size = 3163072K. Space Used = 342652K. Runtime = 00:00:02:46.
+  * Disk size = 3332280K. Space Used = 343160K. Runtime = 00:00:02:44.
   * The following NEW packages will be installed:
   ```bash
 autoconf automake autopoint autotools-dev binutils
@@ -20,5 +20,5 @@ liblsan0 libmpc3 libmpx2 libncurses5-dev libncurses-dev
 libncursesw5-dev libpipeline1 libquadmath0 libstdc++-8-dev libtool
 libtsan0 libubsan1 libuchardet0 logsave m4
 make man-db ntfs-3g-dev patch pkg-config
-po-debconf uuid-dev zlib1g-dev zlib1g-dev*
+po-debconf uuid-dev xz-utils zlib1g-dev zlib1g-dev*
   ```
