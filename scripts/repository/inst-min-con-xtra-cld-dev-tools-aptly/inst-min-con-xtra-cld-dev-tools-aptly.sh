@@ -20,7 +20,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   apt-get update
 
 # aptly needs gnupg needs dirmngr
-  apt-get -y install dirmngr
+  apt-get -y install dirmngr gnupg
 
 # Install aptly
   apt-get -y install xz-utils aptly
