@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #	apt-get install -s -y <your-package> 
 
 # Install remmina.
-	apt-get -y install remmina
+	apt-get -y install remmina remmina-plugin-rdp
 
 
 # Log
