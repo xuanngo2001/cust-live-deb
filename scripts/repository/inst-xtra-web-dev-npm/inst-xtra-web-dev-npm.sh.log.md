@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-web-dev-npm.sh ...
   * After this operation, 27.9 MB of additional disk space will be used.
   * Install npm.
-  * Disk size = 5159064K. Space Used = 92988K. Runtime = 00:00:00:24.
+  * Disk size = 5159100K. Space Used = 92988K. Runtime = 00:00:00:24.
   * The following NEW packages will be installed:
   ```bash
 gyp libjs-inherits libjs-is-typedarray libnode-dev libssl-dev

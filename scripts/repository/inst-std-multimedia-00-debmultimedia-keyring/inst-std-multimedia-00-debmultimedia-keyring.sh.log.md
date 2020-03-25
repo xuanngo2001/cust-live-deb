@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-multimedia-00-debmultimedia-keyring.sh ...
-  * Disk size = 4480536K. Space Used = 56K. Runtime = 00:00:00:02.
+  * Disk size = 4480592K. Space Used = 56K. Runtime = 00:00:00:02.
