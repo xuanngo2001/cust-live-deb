@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-xtra-cld-dev-tools-aptly.sh ...
-  * Disk size = 1909924K. Space Used = 4K. Runtime = 00:00:00:00.
+  * Disk size = 1909948K. Space Used = 0K. Runtime = 00:00:00:01.

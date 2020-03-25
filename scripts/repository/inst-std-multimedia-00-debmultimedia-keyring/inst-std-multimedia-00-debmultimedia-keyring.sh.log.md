@@ -1,2 +1,5 @@
 * >>>>>>>>> Running inst-std-multimedia-00-debmultimedia-keyring.sh ...
-  * Disk size = 4480592K. Space Used = 56K. Runtime = 00:00:00:02.
+  * Add deb-multimedia keyring.
+  * Add deb-multimedia repository.
+  * apt-get update
+  * Disk size = 4500080K. Space Used = 72K. Runtime = 00:00:00:02.
