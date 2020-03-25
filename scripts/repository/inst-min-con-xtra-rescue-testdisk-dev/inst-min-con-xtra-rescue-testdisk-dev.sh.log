@@ -15,11 +15,10 @@ Suggested packages:
   gcc-multilib manpages-dev autoconf automake libtool flex bison gdb gcc-doc
   gcc-8-multilib libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg
   libasan5-dbg liblsan0-dbg libtsan0-dbg libubsan1-dbg libmpx2-dbg
-  libquadmath0-dbg gnupg | gnupg2 git bzr ncurses-doc libstdc++-8-doc make-doc
-  ed diffutils-doc
+  libquadmath0-dbg git bzr ncurses-doc libstdc++-8-doc make-doc ed
+  diffutils-doc
 Recommended packages:
-  fakeroot gnupg | gnupg2 libalgorithm-merge-perl e2fsprogs-l10n
-  libfile-fcntllock-perl
+  fakeroot libalgorithm-merge-perl e2fsprogs-l10n libfile-fcntllock-perl
 The following NEW packages will be installed:
   binutils binutils-common binutils-x86-64-linux-gnu build-essential
   comerr-dev cpp cpp-8 dpkg-dev e2fslibs-dev g++ g++-8 gcc gcc-8 libasan5
@@ -29,7 +28,7 @@ The following NEW packages will be installed:
   libubsan1 logsave make patch xz-utils zlib1g-dev
 The following packages will be upgraded:
   e2fsprogs libcom-err2 libext2fs2
-3 upgraded, 40 newly installed, 0 to remove and 15 not upgraded.
+3 upgraded, 40 newly installed, 0 to remove and 14 not upgraded.
 Need to get 45.8 MB of archives.
 After this operation, 166 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libext2fs2 amd64 1.45.5-2~bpo10+1 [248 kB]
@@ -75,12 +74,12 @@ Get:40 http://localhost/aptly-repo/master_buster-main buster/main amd64 zlib1g-d
 Get:41 http://localhost/aptly-repo/master_buster-main buster/main amd64 libewf-dev amd64 20140804-1 [568 kB]
 Get:42 http://localhost/aptly-repo/master_buster-main buster/main amd64 libncurses-dev amd64 6.1+20181013-2+deb10u2 [333 kB]
 Get:43 http://localhost/aptly-repo/master_buster-main buster/main amd64 libncurses5-dev amd64 6.1+20181013-2+deb10u2 [948 B]
-Fetched 45.8 MB in 1s (82.3 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 26154 files and directories currently installed.)
+Fetched 45.8 MB in 1s (84.6 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 26404 files and directories currently installed.)
 Preparing to unpack .../libext2fs2_1.45.5-2~bpo10+1_amd64.deb ...
 Unpacking libext2fs2:amd64 (1.45.5-2~bpo10+1) over (1.44.5-1+deb10u3) ...
 Setting up libext2fs2:amd64 (1.45.5-2~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 26154 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 26404 files and directories currently installed.)
 Preparing to unpack .../00-e2fsprogs_1.45.5-2~bpo10+1_amd64.deb ...
 Unpacking e2fsprogs (1.45.5-2~bpo10+1) over (1.44.5-1+deb10u3) ...
 Selecting previously unselected package logsave.
@@ -264,7 +263,7 @@ The following additional packages will be installed:
   libjpeg62-turbo-dev
 The following NEW packages will be installed:
   libjpeg-dev libjpeg62-turbo-dev libncursesw5-dev ntfs-3g-dev uuid-dev
-0 upgraded, 5 newly installed, 0 to remove and 15 not upgraded.
+0 upgraded, 5 newly installed, 0 to remove and 14 not upgraded.
 Need to get 597 kB of archives.
 After this operation, 2,009 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libjpeg62-turbo-dev amd64 1:1.5.2-2+b1 [208 kB]
@@ -272,9 +271,9 @@ Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libjpeg-d
 Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 libncursesw5-dev amd64 6.1+20181013-2+deb10u2 [952 B]
 Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 ntfs-3g-dev amd64 1:2017.3.23AR.3-3 [236 kB]
 Get:5 http://localhost/aptly-repo/master_buster-main buster/main amd64 uuid-dev amd64 2.33.1-0.1 [93.6 kB]
-Fetched 597 kB in 0s (46.7 MB/s)
+Fetched 597 kB in 0s (47.3 MB/s)
 Selecting previously unselected package libjpeg62-turbo-dev:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28371 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28621 files and directories currently installed.)
 Preparing to unpack .../libjpeg62-turbo-dev_1%3a1.5.2-2+b1_amd64.deb ...
 Unpacking libjpeg62-turbo-dev:amd64 (1:1.5.2-2+b1) ...
 Selecting previously unselected package libjpeg-dev.
@@ -319,7 +318,7 @@ The following NEW packages will be installed:
   intltool-debian libarchive-zip-perl libcroco3 libdebhelper-perl
   liberror-perl libfile-stripnondeterminism-perl libpipeline1 libtool
   libuchardet0 m4 man-db pkg-config po-debconf
-0 upgraded, 27 newly installed, 0 to remove and 15 not upgraded.
+0 upgraded, 27 newly installed, 0 to remove and 14 not upgraded.
 Need to get 16.1 MB of archives.
 After this operation, 67.9 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libuchardet0 amd64 0.0.6-3 [64.9 kB]
@@ -350,9 +349,9 @@ Get:25 http://localhost/aptly-repo/master_buster-backports-main buster-backports
 Get:26 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 git amd64 1:2.25.0-1~bpo10+1 [6,316 kB]
 Get:27 http://localhost/aptly-repo/master_buster-main buster/main amd64 pkg-config amd64 0.29-6 [63.5 kB]
 Preconfiguring packages ...
-Fetched 16.1 MB in 0s (75.4 MB/s)
+Fetched 16.1 MB in 0s (81.1 MB/s)
 Selecting previously unselected package libuchardet0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28461 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28711 files and directories currently installed.)
 Preparing to unpack .../00-libuchardet0_0.0.6-3_amd64.deb ...
 Unpacking libuchardet0:amd64 (0.0.6-3) ...
 Selecting previously unselected package groff-base.
@@ -472,7 +471,7 @@ dwz is already the newest version (0.12-3).
 dwz set to manually installed.
 debhelper is already the newest version (12.9~bpo10+1).
 debhelper set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
 Cloning into 'testdisk'...
 configure.ac:321: installing 'config/compile'
 configure.ac:13: installing 'config/config.guess'
@@ -6031,4 +6030,4 @@ make[3]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-te
 make[2]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 make[1]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 CLDS: * Install testdisk-dev.
-CLDS: * Disk size = 3332356K. Space Used = 343160K. Runtime = 00:00:02:46.
+CLDS: * Disk size = 3128968K. Space Used = 343172K. Runtime = 00:00:02:38.
