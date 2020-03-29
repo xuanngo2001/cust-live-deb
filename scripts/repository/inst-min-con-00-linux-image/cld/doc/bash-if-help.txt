@@ -44,7 +44,7 @@
     -w filename - Check if file is writable
     -x filename - Check if file is executable
 
-# Check status
+# Check exit code.
     if [ $? -eq 0 ]; then
         echo "Exit code is 0, i.e. good"
     fi
