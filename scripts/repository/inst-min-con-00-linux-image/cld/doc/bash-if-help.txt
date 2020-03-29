@@ -1,76 +1,81 @@
 # If no argument.
-	if [ "$#" -eq 0 ]; then
-		echo "ERROR: $(basename $0): No argument. Aborted!"
-		exit 1;
-	fi
+    if [ "$#" -eq 0 ]; then
+        echo "ERROR: $(basename $0): No argument. Aborted!"
+        exit 1;
+    fi
 
 # If condition with pipes.
-	if ! echo 'someString' | grep -qF 'notFound'; then
-		echo 'Show negation: string not found.'
-	fi
+    if ! echo 'someString' | grep -qF 'notFound'; then
+        echo 'Show negation: string not found.'
+    fi
 
 # Compare 2 files.
-	if cmp -s "$file1" "$file2"; then
-		echo "The files are the same."
-	else
-		echo "The files are differents"
-	fi
+    if cmp -s "$file1" "$file2"; then
+        echo "The files are the same."
+    else
+        echo "The files are differents"
+    fi
 
 # Elseif
-	if [ "${var}" -eq 0 ]; then
-		echo "${var}"
-	elif [ "${var}" -gt 0 ]; then
-		echo "${var}"
-	else
-		echo "Unknown parameter"
-	fi
+    if [ "${var}" -eq 0 ]; then
+        echo "${var}"
+    elif [ "${var}" -gt 0 ]; then
+        echo "${var}"
+    else
+        echo "Unknown parameter"
+    fi
 
 # If test conditions.
-	-b filename - Block special file
-	-c filename - Special character file
-	-d directoryname - Check for directory existence
-	-e filename - Check for file existence, regardless of type (node, directory, socket, etc.)
-	-f filename - Check for regular file existence not a directory
-	-G filename - Check if file exists and is owned by effective group ID.
-	-g filename - true if file exists and is set-group-id.
-	-k filename - Sticky bit
-	-L filename - Symbolic link
-	-n string is not null
-	-O filename - True if file exists and is owned by the effective user id.
-	-r filename - Check if file is a readable
-	-S filename - Check if file is socket
-	-s filename - Check if file is nonzero size
-	-u filename - Check if file set-user-id bit is set
-	-w filename - Check if file is writable
-	-x filename - Check if file is executable
+    -b filename - Block special file
+    -c filename - Special character file
+    -d directoryname - Check for directory existence
+    -e filename - Check for file existence, regardless of type (node, directory, socket, etc.)
+    -f filename - Check for regular file existence not a directory
+    -G filename - Check if file exists and is owned by effective group ID.
+    -g filename - true if file exists and is set-group-id.
+    -k filename - Sticky bit
+    -L filename - Symbolic link
+    -n string is not null
+    -O filename - True if file exists and is owned by the effective user id.
+    -r filename - Check if file is a readable
+    -S filename - Check if file is socket
+    -s filename - Check if file is nonzero size
+    -u filename - Check if file set-user-id bit is set
+    -w filename - Check if file is writable
+    -x filename - Check if file is executable
+
+# Check status
+    if [ $? -eq 0 ]; then
+        echo "Exit code is 0, i.e. good"
+    fi
 
 # If string is a number. DON'T double quotes variables in if condition.
-	string='bla bla'
-	is_number_regex='^[0-9]+$'
-	if ! [[ "${string}" =~ ${is_number_regex} ]] ; then
-		echo "Error: ${string} is not a number."
-	fi
+    string='bla bla'
+    is_number_regex='^[0-9]+$'
+    if ! [[ "${string}" =~ ${is_number_regex} ]] ; then
+        echo "Error: ${string} is not a number."
+    fi
 
 # Odd or even?
-	if [ $(($i%2)) -eq 0 ]; then
-		echo $i is even
-	else
-		echo $i is odd
-	fi
+    if [ $(($i%2)) -eq 0 ]; then
+        echo $i is even
+    else
+        echo $i is odd
+    fi
 
 # Command not found.
-	if ! command -v ffmpeg > /dev/null; then
-		printf 'Warning: Skip %s.\n' 'dvdrip: ffmpeg command not found'
-		exit 0;
-	fi
+    if ! command -v ffmpeg > /dev/null; then
+        printf 'Warning: Skip %s.\n' 'dvdrip: ffmpeg command not found'
+        exit 0;
+    fi
 
 # Interactive mode.	
-	echo -n 'Are you sure to delete the above files? [Y/N] '
-	read delete_confirm
-	if [ "${delete_confirm}" != "Y" ]; then
-		echo "OUT! Did nothing."
-		exit 0
-	fi
+    echo -n 'Are you sure to delete the above files? [Y/N] '
+    read delete_confirm
+    if [ "${delete_confirm}" != "Y" ]; then
+        echo "OUT! Did nothing."
+        exit 0
+    fi
 
 # If and(-a) / or(-o). Note: Escape parentheses for complex conditions.
     if [ $# -gt 0  -a $# -lt 2 ]; then
