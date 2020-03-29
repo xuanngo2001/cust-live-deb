@@ -8,7 +8,7 @@
     if ! echo 'someString' | grep -qF 'notFound'; then
         echo 'Show negation: string not found.'
     fi
-
+    
 # Compare 2 files.
     if cmp -s "$file1" "$file2"; then
         echo "The files are the same."
@@ -109,4 +109,11 @@
     else
         echo "Not Empty"
     fi
-    
+
+# If string found in file.
+    occurrences_found=$(grep -c 'someString' file.txt)
+    if [ "${occurrences_found}" -eq 0 ]; then
+        echo 'someString not found in file.txt'
+    else
+        echo "someString is found ${occurrences_found} times."
+    fi    
