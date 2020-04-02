@@ -65,3 +65,6 @@
 # Search and replace at specific line.
     echo -e 'some \n multiple \n lines.' | sed '2 s/ti/XX/'
     
+# Search case insensitive.
+    echo 'aAbB' | sed 's/a/X/gI'
+    
