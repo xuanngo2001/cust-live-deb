@@ -56,6 +56,8 @@
 
 # Replace a character in a matched line(e.g ipsum)
 	sed '/ipsum/s/#//g'
+    
+    # Additional complex commands.
 	sed '/ipsum/{s/#//g;s/@/-at-/g;}'
 
 # Insert or append at X line.
