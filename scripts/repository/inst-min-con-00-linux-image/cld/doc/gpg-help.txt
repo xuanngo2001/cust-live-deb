@@ -29,4 +29,4 @@
 # Import public key.
     cat public_key.pub | apt-key add -
     # or
-    cat public_key.pub | gpg --no-default-keyring --keyring /etc/apt/trusted.gpg.d/trustedkeys.gpg --import
+    cat public_key.pub | gpg --no-default-keyring --keyring /etc/apt/trusted.gpg --import
