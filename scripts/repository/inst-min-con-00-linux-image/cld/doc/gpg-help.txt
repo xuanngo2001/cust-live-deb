@@ -1,0 +1,32 @@
+# Create config setting file
+    cat >gpg2_generate_batch_file.txt <<EOF
+    %echo Generating a default key
+    Key-Type: RSA
+    Key-Length: 4096
+    Name-Real: John Doe
+    Name-Comment: aptly key no passphrase
+    Name-Email: John.Doe@some-fake-email-address-in-the-world-2020.com
+    Expire-Date: 0
+    %no-protection
+    # Do a commit here, so that we can later print "done" :-)
+    %commit
+    %echo done
+    EOF
+    
+# Generate PG key from gpg2_config_settings.txt file.
+    gpg --batch --gen-key gpg2_config_settings.txt
+
+# Export public key.
+    gpg --output public_key.pub --armor --export 38992A75C0D9EED74790207D900ABE48AA630CED
+        
+# Get GNU PG key ID
+    gpg --dry-run --import --import-options show-only public_key.pub
+    gpg --keyid-format long --list-keys email@address.com
+    
+# List all keys ID.
+    gpg --list-secret-keys
+    
+# Import public key.
+    cat public_key.pub | apt-key add -
+    # or
+    cat public_key.pub | gpg --no-default-keyring --keyring /etc/apt/trusted.gpg.d/trustedkeys.gpg --import
