@@ -1,7 +1,7 @@
 # Use pipe(|) instead slash(/).
 	sed 's|/home|/new|' input_file.txt
 
-# Delete up to the first occurrence(:).
+# Delete up to the first occurrence of (:).
 	echo '123:aaaa:f35:bbbb' | sed 's/[^:]*://'
 
 # Remove 'empty' lines, lines with space/tabs are removed too.
@@ -56,6 +56,8 @@
 
 # Replace a character in a matched line(e.g ipsum)
 	sed '/ipsum/s/#//g'
+    
+    # Additional complex commands.
 	sed '/ipsum/{s/#//g;s/@/-at-/g;}'
 
 # Insert or append at X line.
@@ -64,4 +66,7 @@
     
 # Search and replace at specific line.
     echo -e 'some \n multiple \n lines.' | sed '2 s/ti/XX/'
+    
+# Search case insensitive.
+    echo 'aAbB' | sed 's/a/X/gI'
     
