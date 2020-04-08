@@ -1,8 +1,12 @@
 # All GNU PG keys are in ~/.gnupg/trustedkeys.gpg.
 
+# REPLACE IN THIS SCRIPT.
+    Last deb-repo-0X to new deb-repo-0Y.
+    Previous deb-repo-0W to deb-repo-0X
+
 # Clear GNU PG keys.
     (
-        cd /media/deb-repo-03/config/gnupg/;
+        cd ~/.gnupg/;
         rm -rf *;
     )
 
@@ -17,44 +21,69 @@
     
 # Add new hard drive for Aptly.
     # Make dir structure.
-        mkdir -p /media/deb-repo-03/data/.aptly
+        mkdir -p /media/deb-repo-04/data/.aptly
         
     # Copy data only.
         (
-            cd /media/deb-repo-02/data/.aptly
-            cp -a pool public /media/deb-repo-03/data/.aptly
+            cd /media/deb-repo-03/data/.aptly
+            cp -a pool public /media/deb-repo-04/data/.aptly
         )
     
-    # Make deb-repo-03/ executable for Apache.
-        chmod 755 /media/deb-repo-03/
-        
-# Update the following FB_* variable to point the new path: ../firstboot-work/scripts/xtra-work-aptly
-    FB_APTLY_GNUPG_DIR
-    FB_APTLY_CONFIG_DIR
-    FB_APTLY_APACHE_DIR
+    # Make deb-repo-04/ executable for Apache.
+        chmod 755 /media/deb-repo-04/
+
+# Redirect ~/.aptly to new hard disk. Otherwise, it will run out of disk space.
+    export FB_APTLY_CONFIG_DIR=/media/deb-repo-04/data/.aptly
+    symbolic-link.sh "${FB_APTLY_CONFIG_DIR}" ~/.aptly
+
+    export FB_APTLY_APACHE_DIR=/media/deb-repo-04/data/.aptly/public/
+    apache-www-link.sh "${FB_APTLY_APACHE_DIR}" aptly-repo
 
 # Add missing keys to trusted keyring. 
     # Run /aptly/mirrors-rebuild.sh to get all missing keys.
-
+        ( cd /media/master/github/aptly/; ./mirrors-rebuild.sh ) 2>&1 | tee missing_keys.txt
+        cat missing_keys.txt | grep 'pool.sks-keyservers.net' | sed 's/.*recv-keys //' | tr ' ' '\n' | sort | uniq | xargs
+        
     # Don't know why you are forced to import into ~/.gnupg/trustedkeys.gpg.
-        keys=(AA8E81B4331F7F50 112695A0E562B32A DCC9EFBF77E11517 5C808C2B65558117 F1656F24C74CD1D8 A2F683C52980AECF ED75B5A4483DA07C A03BE326C0EF29A4)
+        keys=(112695A0E562B32A 5C808C2B65558117 A2F683C52980AECF AA8E81B4331F7F50 DCC9EFBF77E11517 F1656F24C74CD1D8)
         gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ${keys[@]}
 
         gpg --no-default-keyring -a --export ${keys[@]} \
             | gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -
-
-# Copy ~/.gnupg/trustedkeys.gpg to be reused permanently.
-    mkdir -p /media/deb-repo-03/config/gnupg
-    chown -R $(whoami) /media/deb-repo-03/config/gnupg
-    find /media/deb-repo-03/config/gnupg -type f -exec chmod 600 {} \;
-    find /media/deb-repo-03/config/gnupg -type d -exec chmod 700 {} \;
-
-    cp -a ~/.gnupg/* /media/deb-repo-03/config/gnupg
-
-
-# Add public key of the private key generate.
-    (
-        cd /media/master/github/aptly
-        cat aptly-gpg-generate-keys.sh.public.key.pub | gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -
-    )
     
+    # Re-run.
+        ( cd /media/master/github/aptly/; ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh ) 2>&1 | tee missing_keys.txt
+        cat missing_keys.txt | grep 'pool.sks-keyservers.net' | sed 's/.*recv-keys //' | tr ' ' '\n' | sort | uniq | xargs
+        
+# Copy keys from ~/.gnupg/ to be reused permanently.
+    mkdir -p /media/deb-repo-04/config/gnupg
+    chown -R $(whoami) /media/deb-repo-04/config/gnupg
+    find /media/deb-repo-04/config/gnupg -type f -exec chmod 600 {} \;
+    find /media/deb-repo-04/config/gnupg -type d -exec chmod 700 {} \;
+
+    cp -a ~/.gnupg/* /media/deb-repo-04/config/gnupg
+
+
+#~ # Add public key of the private key generate.
+    #~ (
+        #~ cd /media/master/github/aptly
+        #~ cat aptly-gpg-generate-keys.sh.public.key.pub | gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -
+    #~ )
+
+# TESTING new key.
+    echo "deb http://localhost/aptly-repo/master_aptly-main squeeze main" >> /etc/apt/sources.list
+    apt-get update
+    
+    # Missing public key.(Local key is missing)
+        key=F65992B724B45C58
+        gpg -q --output my-public.key --armor --export "F65992B724B45C58" | gpg --no-default-keyring --keyring /etc/apt/trusted.gpg --import
+    
+    # Re-run update
+        apt-get update
+        
+# Update the following FB_* variable to point the new path: ../firstboot-work/scripts/xtra-work-aptly
+    # $FB_APTLY_GNUPG_DIR
+    # $FB_APTLY_CONFIG_DIR
+    # $FB_APTLY_APACHE_DIR
+    
+# REBOOT.
