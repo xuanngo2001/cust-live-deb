@@ -80,7 +80,7 @@ set -e
 # TESTING new key.
     echo "deb http://localhost/aptly-repo/master_aptly-main squeeze main" >> /etc/apt/sources.list
     apt-get update
-    
+
 # Update the following FB_* variable to point the new path: ../firstboot-work/scripts/xtra-work-aptly
     # $FB_APTLY_GNUPG_DIR
     # $FB_APTLY_CONFIG_DIR
