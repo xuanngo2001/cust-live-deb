@@ -204,7 +204,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 829 kB in 0s (61.3 MB/s)
+Fetched 829 kB in 0s (48.0 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9227 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.12.16-1_amd64.deb ...
@@ -268,7 +268,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 50.5 MB in 1s (71.3 MB/s)
+Fetched 50.5 MB in 1s (86.2 MB/s)
 Selecting previously unselected package busybox.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9450 files and directories currently installed.)
 Preparing to unpack .../00-busybox_1%3a1.30.1-4_amd64.deb ...
@@ -339,7 +339,6 @@ update-initramfs: Generating /boot/initrd.img-5.4.0-0.bpo.4-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 './cld' -> '/usr/local/cld'
 './cld/doc' -> '/usr/local/cld/doc'
-'./cld/doc/sed-help.txt' -> '/usr/local/cld/doc/sed-help.txt'
 './cld/doc/bash-error-help.txt' -> '/usr/local/cld/doc/bash-error-help.txt'
 './cld/doc/lspci-help.txt' -> '/usr/local/cld/doc/lspci-help.txt'
 './cld/doc/tar-help.txt' -> '/usr/local/cld/doc/tar-help.txt'
@@ -347,7 +346,6 @@ live-boot: core filesystems devices utils udev blockdev dns.
 './cld/doc/awk-help.txt' -> '/usr/local/cld/doc/awk-help.txt'
 './cld/doc/bash-case-help.txt' -> '/usr/local/cld/doc/bash-case-help.txt'
 './cld/doc/bash-help.txt' -> '/usr/local/cld/doc/bash-help.txt'
-'./cld/doc/bash-if-help.txt' -> '/usr/local/cld/doc/bash-if-help.txt'
 './cld/doc/bash-loop-help.txt' -> '/usr/local/cld/doc/bash-loop-help.txt'
 './cld/doc/bash-msg-help.txt' -> '/usr/local/cld/doc/bash-msg-help.txt'
 './cld/doc/blkid-help.txt' -> '/usr/local/cld/doc/blkid-help.txt'
@@ -362,7 +360,6 @@ live-boot: core filesystems devices utils udev blockdev dns.
 './cld/doc/dpkg-query-help.txt' -> '/usr/local/cld/doc/dpkg-query-help.txt'
 './cld/doc/echo-help.txt' -> '/usr/local/cld/doc/echo-help.txt'
 './cld/doc/file-help.txt' -> '/usr/local/cld/doc/file-help.txt'
-'./cld/doc/find-help.txt' -> '/usr/local/cld/doc/find-help.txt'
 './cld/doc/grep-help.txt' -> '/usr/local/cld/doc/grep-help.txt'
 './cld/doc/java-help.txt' -> '/usr/local/cld/doc/java-help.txt'
 './cld/doc/ln-help.txt' -> '/usr/local/cld/doc/ln-help.txt'
@@ -388,6 +385,11 @@ live-boot: core filesystems devices utils udev blockdev dns.
 './cld/doc/xargs-help.txt' -> '/usr/local/cld/doc/xargs-help.txt'
 './cld/doc/rsync-help.txt' -> '/usr/local/cld/doc/rsync-help.txt'
 './cld/doc/dd-help.txt' -> '/usr/local/cld/doc/dd-help.txt'
+'./cld/doc/find-help.txt' -> '/usr/local/cld/doc/find-help.txt'
+'./cld/doc/sed-help.txt' -> '/usr/local/cld/doc/sed-help.txt'
+'./cld/doc/bash-if-help.txt' -> '/usr/local/cld/doc/bash-if-help.txt'
+'./cld/doc/du-help.txt' -> '/usr/local/cld/doc/du-help.txt'
+'./cld/doc/gpg-help.txt' -> '/usr/local/cld/doc/gpg-help.txt'
 './cld/doc/ps-help.txt' -> '/usr/local/cld/doc/ps-help.txt'
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -400,36 +402,36 @@ ii  linux-image-amd64                        5.4.19-1~bpo10+1 amd64        Linux
 total 38480
 -rw-r--r-- 1 root root  3628180 Mar  9 00:28 System.map-5.4.0-0.bpo.4-amd64
 -rw-r--r-- 1 root root   223591 Mar  9 00:28 config-5.4.0-0.bpo.4-amd64
--rw-r--r-- 1 root root 29912182 Mar 26 13:43 initrd.img-5.4.0-0.bpo.4-amd64
+-rw-r--r-- 1 root root 29911902 Apr  8 22:00 initrd.img-5.4.0-0.bpo.4-amd64
 -rw-r--r-- 1 root root  5635824 Mar  9 00:28 vmlinuz-5.4.0-0.bpo.4-amd64
 939c2b1f16c7de0c6332f2dea347aea0  /boot/System.map-5.4.0-0.bpo.4-amd64
 f2dc5bc47ed1b04e93ea88509fb01d80  /boot/config-5.4.0-0.bpo.4-amd64
-6a20689d5153ebcdd9806590040a4f49  /boot/initrd.img-5.4.0-0.bpo.4-amd64
+f2e72d75fae6c7a6b042fb504cb8074b  /boot/initrd.img-5.4.0-0.bpo.4-amd64
 e34aef7d17ed553721aec8465403bfc8  /boot/vmlinuz-5.4.0-0.bpo.4-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Mar 26 13:42 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Mar 26 13:43 boot
-drwxr-xr-x  17 root root 3620 Mar 26 12:54 dev
-drwxr-xr-x  49 root root 4096 Mar 26 13:43 etc
+lrwxrwxrwx   1 root root    7 Apr  8 21:59 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Apr  8 22:00 boot
+drwxr-xr-x  17 root root 3700 Apr  8 21:54 dev
+drwxr-xr-x  49 root root 4096 Apr  8 22:00 etc
 drwxr-xr-x   2 root root 4096 Feb  1 17:09 home
-lrwxrwxrwx   1 root root   35 Mar 26 13:43 initrd.img -> boot/initrd.img-5.4.0-0.bpo.4-amd64
-lrwxrwxrwx   1 root root    7 Mar 26 13:42 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Mar 26 13:42 lib32 -> usr/lib32
-lrwxrwxrwx   1 root root    9 Mar 26 13:42 lib64 -> usr/lib64
-lrwxrwxrwx   1 root root   10 Mar 26 13:42 libx32 -> usr/libx32
-drwxr-xr-x   2 root root 4096 Mar 26 13:42 media
-drwxr-xr-x   2 root root 4096 Mar 26 13:42 mnt
-drwxr-xr-x   2 root root 4096 Mar 26 13:42 opt
-dr-xr-xr-x 226 root root    0 Mar 26 12:54 proc
-drwx------   3 root root 4096 Mar 26 13:43 root
-drwxr-xr-x   4 root root 4096 Mar 26 13:42 run
-lrwxrwxrwx   1 root root    8 Mar 26 13:42 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Mar 26 13:42 srv
-dr-xr-xr-x  13 root root    0 Mar 26 12:54 sys
-drwxrwxrwt   2 root root 4096 Mar 26 13:43 tmp
-drwxr-xr-x  13 root root 4096 Mar 26 13:42 usr
-drwxr-xr-x  11 root root 4096 Mar 26 13:42 var
-lrwxrwxrwx   1 root root   32 Mar 26 13:43 vmlinuz -> boot/vmlinuz-5.4.0-0.bpo.4-amd64
+lrwxrwxrwx   1 root root   35 Apr  8 22:00 initrd.img -> boot/initrd.img-5.4.0-0.bpo.4-amd64
+lrwxrwxrwx   1 root root    7 Apr  8 21:59 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Apr  8 21:59 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Apr  8 21:59 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Apr  8 21:59 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Apr  8 22:00 media
+drwxr-xr-x   2 root root 4096 Apr  8 22:00 mnt
+drwxr-xr-x   2 root root 4096 Apr  8 22:00 opt
+dr-xr-xr-x 215 root root    0 Apr  9  2020 proc
+drwx------   3 root root 4096 Apr  8 22:00 root
+drwxr-xr-x   4 root root 4096 Apr  8 22:00 run
+lrwxrwxrwx   1 root root    8 Apr  8 21:59 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Apr  8 22:00 srv
+dr-xr-xr-x  13 root root    0 Apr  8 21:54 sys
+drwxrwxrwt   2 root root 4096 Apr  8 22:00 tmp
+drwxr-xr-x  13 root root 4096 Apr  8 22:00 usr
+drwxr-xr-x  11 root root 4096 Apr  8 22:00 var
+lrwxrwxrwx   1 root root   32 Apr  8 22:00 vmlinuz -> boot/vmlinuz-5.4.0-0.bpo.4-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-5.4.0-0.bpo.4-amd64.
-CLDS: * Disk size = 1436768K. Space Used = 369688K. Runtime = 00:00:00:26.
+CLDS: * Disk size = 1437296K. Space Used = 369696K. Runtime = 00:00:00:24.
