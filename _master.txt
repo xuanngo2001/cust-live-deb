@@ -1,8 +1,17 @@
+# All GNU PG keys are in ~/.gnupg/trustedkeys.gpg.
+
+# Clear GNU PG keys.
+    (
+        cd /media/deb-repo-03/config/gnupg/;
+        rm -rf *;
+    )
+
 # Generate new GNU PG key to sign.
     (
         cd /media/master/github/aptly/conf/gnupg2
         ./aptly-gpg-generate-keys.sh
-        cat aptly-gpg-generate-keys.sh.public.key.pub | apt-key add -
+#        cat aptly-gpg-generate-keys.sh.public.key.pub | apt-key add -
+        cat aptly-gpg-generate-keys.sh.public.key.pub | gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -
         yes | cp -av aptly-gpg-generate-keys.sh.p*.key.* /media/master/github/aptly/
     )
     
