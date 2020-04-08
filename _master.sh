@@ -1,13 +1,16 @@
+#!/bin/bash
+set -e
 # All GNU PG keys are in ~/.gnupg/trustedkeys.gpg.
+# Catch-22: Run this script once. Otherwise, ~/.aptly will be linked to new folder on new disk.
 
 # REPLACE IN THIS SCRIPT.
-    Last deb-repo-0X to new deb-repo-0Y.
-    Previous deb-repo-0W to deb-repo-0X
+    # Last deb-repo-0X to new deb-repo-0Y.
+    # Previous deb-repo-0W to deb-repo-0X
 
 # Clear GNU PG keys.
     (
         cd ~/.gnupg/;
-        rm -rf *;
+        rm -rf ~/.gnupg/*;
         
         # Need these. Otherwise, gnupg will complain.
         mkdir -p  ~/.gnupg/private-keys-v1.d
@@ -17,10 +20,13 @@
 # Generate new GNU PG key to sign.
     (
         cd /media/master/github/aptly/conf/gnupg2
+        
+        # Delete and create new key.
+        rm -f aptly-gpg-generate-keys.sh.p*.key.*
         ./aptly-gpg-generate-keys.sh
         
         # Add public key in /etc/apt/ and ~/.gnupg
-        cat aptly-gpg-generate-keys.sh.public.key.pub | apt-key add -
+        cat aptly-gpg-generate-keys.sh.public.key.pub | gpg --no-default-keyring --keyring /etc/apt/trusted.gpg --import -
         cat aptly-gpg-generate-keys.sh.public.key.pub | gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -
         
         # Copy to local ../github/aptly/
@@ -70,13 +76,6 @@
     find /media/deb-repo-05/config/gnupg -type d -exec chmod 700 {} \;
 
     cp -a ~/.gnupg/* /media/deb-repo-05/config/gnupg
-
-
-#~ # Add public key of the private key generate.
-    #~ (
-        #~ cd /media/master/github/aptly
-        #~ cat aptly-gpg-generate-keys.sh.public.key.pub | gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -
-    #~ )
 
 # TESTING new key.
     echo "deb http://localhost/aptly-repo/master_aptly-main squeeze main" >> /etc/apt/sources.list
