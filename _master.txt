@@ -8,35 +8,43 @@
     (
         cd ~/.gnupg/;
         rm -rf *;
+        
+        # Need these. Otherwise, gnupg will complain.
+        mkdir -p  ~/.gnupg/private-keys-v1.d
+        chmod 700 ~/.gnupg/private-keys-v1.d        
     )
 
 # Generate new GNU PG key to sign.
     (
         cd /media/master/github/aptly/conf/gnupg2
         ./aptly-gpg-generate-keys.sh
-#        cat aptly-gpg-generate-keys.sh.public.key.pub | apt-key add -
+        
+        # Add public key in /etc/apt/ and ~/.gnupg
+        cat aptly-gpg-generate-keys.sh.public.key.pub | apt-key add -
         cat aptly-gpg-generate-keys.sh.public.key.pub | gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -
+        
+        # Copy to local ../github/aptly/
         yes | cp -av aptly-gpg-generate-keys.sh.p*.key.* /media/master/github/aptly/
     )
     
 # Add new hard drive for Aptly.
     # Make dir structure.
-        mkdir -p /media/deb-repo-04/data/.aptly
+        mkdir -p /media/deb-repo-05/data/.aptly
         
     # Copy data only.
         (
-            cd /media/deb-repo-03/data/.aptly
-            cp -a pool public /media/deb-repo-04/data/.aptly
+            cd /media/deb-repo-04/data/.aptly
+            cp -a pool public /media/deb-repo-05/data/.aptly
         )
     
-    # Make deb-repo-04/ executable for Apache.
-        chmod 755 /media/deb-repo-04/
+    # Make deb-repo-05/ executable for Apache.
+        chmod 755 /media/deb-repo-05/
 
 # Redirect ~/.aptly to new hard disk. Otherwise, it will run out of disk space.
-    export FB_APTLY_CONFIG_DIR=/media/deb-repo-04/data/.aptly
+    export FB_APTLY_CONFIG_DIR=/media/deb-repo-05/data/.aptly
     symbolic-link.sh "${FB_APTLY_CONFIG_DIR}" ~/.aptly
 
-    export FB_APTLY_APACHE_DIR=/media/deb-repo-04/data/.aptly/public/
+    export FB_APTLY_APACHE_DIR=/media/deb-repo-05/data/.aptly/public/
     apache-www-link.sh "${FB_APTLY_APACHE_DIR}" aptly-repo
 
 # Add missing keys to trusted keyring. 
@@ -56,12 +64,12 @@
         cat missing_keys.txt | grep 'pool.sks-keyservers.net' | sed 's/.*recv-keys //' | tr ' ' '\n' | sort | uniq | xargs
         
 # Copy keys from ~/.gnupg/ to be reused permanently.
-    mkdir -p /media/deb-repo-04/config/gnupg
-    chown -R $(whoami) /media/deb-repo-04/config/gnupg
-    find /media/deb-repo-04/config/gnupg -type f -exec chmod 600 {} \;
-    find /media/deb-repo-04/config/gnupg -type d -exec chmod 700 {} \;
+    mkdir -p /media/deb-repo-05/config/gnupg
+    chown -R $(whoami) /media/deb-repo-05/config/gnupg
+    find /media/deb-repo-05/config/gnupg -type f -exec chmod 600 {} \;
+    find /media/deb-repo-05/config/gnupg -type d -exec chmod 700 {} \;
 
-    cp -a ~/.gnupg/* /media/deb-repo-04/config/gnupg
+    cp -a ~/.gnupg/* /media/deb-repo-05/config/gnupg
 
 
 #~ # Add public key of the private key generate.
@@ -74,13 +82,6 @@
     echo "deb http://localhost/aptly-repo/master_aptly-main squeeze main" >> /etc/apt/sources.list
     apt-get update
     
-    # Missing public key.(Local key is missing)
-        key=F65992B724B45C58
-        gpg -q --output my-public.key --armor --export "F65992B724B45C58" | gpg --no-default-keyring --keyring /etc/apt/trusted.gpg --import
-    
-    # Re-run update
-        apt-get update
-        
 # Update the following FB_* variable to point the new path: ../firstboot-work/scripts/xtra-work-aptly
     # $FB_APTLY_GNUPG_DIR
     # $FB_APTLY_CONFIG_DIR
