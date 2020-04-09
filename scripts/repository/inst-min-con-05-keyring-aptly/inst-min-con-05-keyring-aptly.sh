@@ -9,10 +9,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Explicitly list dependent packages
 #	apt-get install -s -y <your-package> 
 
-# Install key.
-# aptly needs gnupg needs dirmngr
-	apt-get -y install dirmngr gnupg
-  
+ 
 # Add keyring: https://www.aptly.info/download/
     url_key="https://www.aptly.info/pubkey.txt"
     deb_repo_key_file="${SCRIPT_NAME}.gpg"

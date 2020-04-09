@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #	apt-get install -s -y <your-package> 
 
 # Install gnupg.
-	apt-get -y install gnupg
+	apt-get -y install gnupg wget
 
 # Log
 	echo "${GV_LOG} * Install gnupg to manage and create keys."
