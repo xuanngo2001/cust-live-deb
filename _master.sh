@@ -2,6 +2,7 @@
 set -e
 # All GNU PG keys are in ~/.gnupg/trustedkeys.gpg.
 # Catch-22: Run this script once. Otherwise, ~/.aptly will be linked to new folder on new disk.
+script_name=$(basename "${0}")
 
 # REPLACE IN THIS SCRIPT.
     # Last deb-repo-0X to new deb-repo-0Y.
@@ -55,8 +56,8 @@ set -e
 
 # Add missing keys to trusted keyring. 
     # Run /aptly/mirrors-rebuild.sh to get all missing keys.
-        ( cd /media/master/github/aptly/; ./mirrors-rebuild.sh ) 2>&1 | tee missing_keys.txt
-        cat missing_keys.txt | grep 'pool.sks-keyservers.net' | sed 's/.*recv-keys //' | tr ' ' '\n' | sort | uniq | xargs
+        ( cd /media/master/github/aptly/; ./mirrors-rebuild.sh ) 2>&1 | tee "${script_name}_missing_keys.txt"
+        cat "${script_name}_missing_keys.txt" | grep 'pool.sks-keyservers.net' | sed 's/.*recv-keys //' | tr ' ' '\n' | sort | uniq | xargs
         
     # Don't know why you are forced to import into ~/.gnupg/trustedkeys.gpg.
         keys=(112695A0E562B32A 5C808C2B65558117 A2F683C52980AECF AA8E81B4331F7F50 DCC9EFBF77E11517 F1656F24C74CD1D8)
@@ -66,8 +67,8 @@ set -e
             | gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -
     
     # Re-run.
-        ( cd /media/master/github/aptly/; ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh ) 2>&1 | tee missing_keys.txt
-        cat missing_keys.txt | grep 'pool.sks-keyservers.net' | sed 's/.*recv-keys //' | tr ' ' '\n' | sort | uniq | xargs
+        ( cd /media/master/github/aptly/; ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh ) 2>&1 | tee "${script_name}_missing_keys.txt"
+        cat "${script_name}_missing_keys.txt" | grep 'pool.sks-keyservers.net' | sed 's/.*recv-keys //' | tr ' ' '\n' | sort | uniq | xargs
         
 # Copy keys from ~/.gnupg/ to be reused permanently.
     mkdir -p /media/deb-repo-05/config/gnupg
