@@ -39,8 +39,12 @@
     Instead of using this command a keyring should be placed directly in the /etc/apt/trusted.gpg.d/ directory with a descriptive name and either "gpg" or "asc" as file extension.
     
 # No public key
-    gpg -q --output my-public.key --armor --export "A03BE326C0EF29A4"
+    gpg -q --output my-public.key --armor --export A03BE326C0EF29A4
     cat my-public.key | apt-key add -
      
     # Or you can import using gpg.
     cat my-public.key | gpg --no-default-keyring --keyring /etc/apt/trusted.gpg --import
+    
+# Dump
+    gpg --no-default-keyring --keyring trustedkeys.gpg --keyserver keys.gnupg.net --recv-keys 6709F753EDAC8514
+    
