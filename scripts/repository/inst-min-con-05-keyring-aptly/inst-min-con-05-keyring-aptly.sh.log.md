@@ -1,3 +1,6 @@
 * >>>>>>>>> Running inst-min-con-05-keyring-aptly.sh ...
-  * Install aptly keyring.
-  * Disk size = 1491028K. Space Used = 4K. Runtime = 00:00:00:00.
+  * Disk size = 1490472K. Space Used = 8K. Runtime = 00:00:00:00.
+  * The following NEW packages will be installed:
+  ```bash
+dirmngr* gnupg*
+  ```
