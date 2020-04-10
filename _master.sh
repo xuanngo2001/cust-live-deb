@@ -60,7 +60,7 @@ script_name=$(basename "${0}")
         cat "${script_name}_missing_keys.txt" | grep 'pool.sks-keyservers.net' | sed 's/.*recv-keys //' | tr ' ' '\n' | sort | uniq | xargs
         
     # Don't know why you are forced to import into ~/.gnupg/trustedkeys.gpg.
-        keys=(112695A0E562B32A 5C808C2B65558117 A2F683C52980AECF AA8E81B4331F7F50 DCC9EFBF77E11517 F1656F24C74CD1D8)
+        keys=(112695A0E562B32A 5C808C2B65558117 A2F683C52980AECF AA8E81B4331F7F50 DCC9EFBF77E11517 F1656F24C74CD1D8 7638D0442B90D010 9D6D8F6BC857C906 EF0F382A1A7B6500)
         gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ${keys[@]}
 
         gpg --no-default-keyring -a --export ${keys[@]} \
