@@ -1,4 +1,4 @@
 * >>>>>>>>> Running inst-zclean-98-zerosizing.sh ...
   * Zero size using the following scripts:
   * docs_zero.sh virtualbox_zero.sh
-  * Disk size = 4069628K. Space Used = -128424K. Runtime = 00:00:00:10.
+  * Disk size = 1883148K. Space Used = -58796K. Runtime = 00:00:00:05.
