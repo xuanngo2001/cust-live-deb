@@ -10,7 +10,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #	apt-get install -s -y <your-package> 
 
 # Install dependent packages.
-	apt-get -y install dirmngr gnupg
 
 # Add keyring: 
     url_key="https://dl.google.com/linux/linux_signing_key.pub"
