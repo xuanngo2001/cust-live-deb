@@ -26,6 +26,11 @@ localepurge
 
 # ./inst-min-con-04-block-services-start-postinstall/inst-min-con-04-block-services-start-postinstall.sh
 
+# ./inst-min-con-05-keyring-00-gnupg/inst-min-con-05-keyring-00-gnupg.sh
+gnupg
+wget
+# ./inst-min-con-05-keyring-aptly/inst-min-con-05-keyring-aptly.sh
+
 # ./inst-min-con-auto-log-root/inst-min-con-auto-log-root.sh
 
 # ./inst-min-con-cld-bashrc/inst-min-con-cld-bashrc.sh
@@ -111,8 +116,10 @@ apache2
 buffer
 # ./inst-min-con-xtra-buffer-pv/inst-min-con-xtra-buffer-pv.sh
 pv
-# ./inst-min-con-xtra-cld-dev-tools-aptly/inst-min-con-xtra-cld-dev-tools-aptly.sh
+# ./inst-min-con-xtra-cld-dev-tools-00-aptly-key/inst-min-con-xtra-cld-dev-tools-00-aptly-key.sh
 dirmngr
+gnupg
+# ./inst-min-con-xtra-cld-dev-tools-aptly/inst-min-con-xtra-cld-dev-tools-aptly.sh
 xz-utils
 aptly
 # ./inst-min-con-xtra-curl/inst-min-con-xtra-curl.sh
@@ -139,6 +146,8 @@ locate
 macchanger
 # ./inst-min-con-xtra-mariadb-server/inst-min-con-xtra-mariadb-server.sh
 mariadb-server
+# ./inst-min-con-xtra-ms-powershell/inst-min-con-xtra-ms-powershell.sh
+
 # ./inst-min-con-xtra-pdf-poppler-utils/inst-min-con-xtra-pdf-poppler-utils.sh
 poppler-utils
 # ./inst-min-con-xtra-php/inst-min-con-xtra-php.sh
@@ -322,6 +331,9 @@ libgconf-2-4
 libxss1
 lsb-release
 google-chrome-stable
+# ./inst-std-inet-xtra-google-chrome-key/inst-std-inet-xtra-google-chrome-key.sh
+dirmngr
+gnupg
 # ./inst-std-inet-xtra-transmission-gtk/inst-std-inet-xtra-transmission-gtk.sh
 transmission-gtk
 # ./inst-std-multimedia-00-debmultimedia-keyring/inst-std-multimedia-00-debmultimedia-keyring.sh
@@ -444,6 +456,9 @@ graphviz
 x11-xserver-utils
 wmctrl
 x11-utils
+# ./inst-xtra-remmina/inst-xtra-remmina.sh
+remmina
+remmina-plugin-rdp
 # ./inst-xtra-selenium-python-pip/inst-xtra-selenium-python-pip.sh
 python-pip
 # ./inst-xtra-ta-lib/inst-xtra-ta-lib.sh
