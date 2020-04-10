@@ -6,6 +6,7 @@
 git checkout buster
 (cd ../cust-live-deb/; chmod +x *.sh; git checkout buster)
 
+./aptly-gpg-update-keys.sh
 ./master-release.sh tmp
 (cd ../cust-live-deb/scripts/repository/; chmod +x *.sh; ./packages.sh)
 echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh 
@@ -23,6 +24,7 @@ echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh
 git checkout stretch
 (cd ../cust-live-deb/; chmod +x *.sh; git checkout stretch)
 
+./aptly-gpg-update-keys.sh
 ./master-release.sh tmp
 (cd ../cust-live-deb/scripts/repository/; chmod +x *.sh; ./packages.sh)
 echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh
