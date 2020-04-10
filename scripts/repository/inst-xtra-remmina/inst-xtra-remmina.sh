@@ -9,6 +9,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Explicitly list dependent packages
 #	apt-get install -s -y <your-package> 
 
+	# Stretch
+	apt-get install -s -y libavahi-ui-gtk3-0
+
 # Install remmina.
 	apt-get -y install remmina remmina-plugin-rdp
 
