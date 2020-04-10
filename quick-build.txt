@@ -15,9 +15,19 @@ echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh
 
 =================
 # To build stretch from buster environment.
-    # Get latest version of linux-image-amd64 for Stretch from https://packages.debian.org/stretch-backports/linux-image-amd64
-    # Rename that version in ./aptly/packages.list
+    # from .../aptly/
+        git checkout stretch
+        (cd ../cust-live-deb/scripts/repository/; chmod +x *.sh; ./packages.sh)
+        
+    # Remove version numbers of linux-image-amd64/linux-headers-amd64 from ./aptly/packages.list
     # Comment out './mirrors--choose-kernel.sh' from ./aptly/mirrors-update.sh
+        ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh 
+        
+    # Check what is the latest version of linux-image-amd64 for Stretch from https://packages.debian.org/stretch-backports/linux-image-amd64
+    # The mirror repos should have the latest version:
+        ./aptly-cmd-package-find2.sh linux-headers-amd64 | grep -C4 mirror
+        ./aptly-cmd-package-find2.sh linux-image-amd64 | grep -C4 mirror
+        
     ## The ISO filename will contain 'buster' but boot with it and rebuild to get a clean Stretch ISO.
 
 =================
