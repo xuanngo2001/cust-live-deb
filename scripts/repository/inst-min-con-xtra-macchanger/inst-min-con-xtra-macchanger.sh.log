@@ -10,6 +10,9 @@ The following NEW packages will be installed:
 Need to get 193 kB of archives.
 After this operation, 651 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 macchanger amd64 1.7.0-5.3+b1 [193 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
 Preconfiguring packages ...
 Fetched 193 kB in 0s (0 B/s)
 Selecting previously unselected package macchanger.
@@ -24,4 +27,4 @@ CLDS: * Set macchanger to change MAC address whenever network device is up or do
 CLDS: * To configure macchanger: dpkg-reconfigure macchanger.
 CLDS: * Check whether it is working: macchanger -s .
 CLDS: * systemctl status macchanger@.service
-CLDS: * Disk size = 2094636K. Space Used = 908K. Runtime = 00:00:00:00.
+CLDS: * Disk size = 2094676K. Space Used = 908K. Runtime = 00:00:00:00.
