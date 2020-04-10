@@ -1,22 +1,22 @@
 CLDS:>>>>>>>>> Running inst-min-con-xtra-cld-dev-tools-aptly.sh ...
-Hit:1 http://localhost/aptly-repo/master_buster-main buster InRelease
+Hit:1 http://localhost/aptly-repo/master_stretch-main stretch InRelease
 Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
-Hit:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports InRelease
-Hit:4 http://localhost/aptly-repo/master_buster-backports-main buster-backports InRelease
-Hit:5 http://localhost/aptly-repo/master_buster-backports-non-free buster-backports InRelease
-Hit:6 http://localhost/aptly-repo/master_buster-contrib buster InRelease
-Hit:7 http://localhost/aptly-repo/master_buster-non-free buster InRelease
-Hit:8 http://localhost/aptly-repo/master_buster-updates-contrib buster-updates InRelease
-Hit:9 http://localhost/aptly-repo/master_buster-updates-main buster-updates InRelease
-Hit:10 http://localhost/aptly-repo/master_buster-updates-non-free buster-updates InRelease
-Hit:11 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
-Hit:12 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
-Hit:13 http://localhost/aptly-repo/master_docker-stable buster InRelease
-Hit:14 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:15 http://localhost/aptly-repo/master_mariadb-main buster InRelease
-Hit:16 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
-Hit:17 http://localhost/aptly-repo/master_qgis-main buster InRelease
-Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
+Hit:3 http://localhost/aptly-repo/master_deb-multimedia-main stretch InRelease
+Hit:4 http://localhost/aptly-repo/master_deb-multimedia-non-free stretch InRelease
+Hit:5 http://localhost/aptly-repo/master_docker-stable stretch InRelease
+Hit:6 http://localhost/aptly-repo/master_google-main stable InRelease
+Hit:7 http://localhost/aptly-repo/master_mariadb-main stretch InRelease
+Hit:8 http://localhost/aptly-repo/master_mono-main stable-stretch InRelease
+Hit:9 http://localhost/aptly-repo/master_qgis-main stretch InRelease
+Hit:10 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports InRelease
+Hit:11 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports InRelease
+Hit:12 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports InRelease
+Hit:13 http://localhost/aptly-repo/master_stretch-contrib stretch InRelease
+Hit:14 http://localhost/aptly-repo/master_stretch-non-free stretch InRelease
+Hit:15 http://localhost/aptly-repo/master_stretch-updates-contrib stretch-updates InRelease
+Hit:16 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates InRelease
+Hit:17 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease
+Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
 Reading package lists...
 ********** START install *****************
 Reading package lists...
@@ -24,20 +24,20 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   aptly xz-utils
-0 upgraded, 2 newly installed, 0 to remove and 17 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
 Need to get 10.9 MB of archives.
-After this operation, 24.6 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xz-utils amd64 5.2.4-1 [183 kB]
+After this operation, 24.7 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xz-utils amd64 5.2.2-1.2+b1 [266 kB]
 Get:2 http://localhost/aptly-repo/master_aptly-main squeeze/main amd64 aptly amd64 1.4.0 [10.7 MB]
-Fetched 10.9 MB in 0s (88.8 MB/s)
+Fetched 10.9 MB in 0s (83.0 MB/s)
 Selecting previously unselected package xz-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21390 files and directories currently installed.)
-Preparing to unpack .../xz-utils_5.2.4-1_amd64.deb ...
-Unpacking xz-utils (5.2.4-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16395 files and directories currently installed.)
+Preparing to unpack .../xz-utils_5.2.2-1.2+b1_amd64.deb ...
+Unpacking xz-utils (5.2.2-1.2+b1) ...
 Selecting previously unselected package aptly.
 Preparing to unpack .../archives/aptly_1.4.0_amd64.deb ...
 Unpacking aptly (1.4.0) ...
-Setting up xz-utils (5.2.4-1) ...
+Setting up xz-utils (5.2.2-1.2+b1) ...
 update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
 Setting up aptly (1.4.0) ...
 ********** END install *****************
@@ -45,4 +45,4 @@ Setting up aptly (1.4.0) ...
 CLDS: * Add aptly nightly build repository.
 CLDS: * Install aptly version: 1.4.0 to create local debian repository.
 CLDS: * Add xz-utils package because aptly snapshot merge needs it.
-CLDS: * Disk size = 1963780K. Space Used = 34612K. Runtime = 00:00:00:03.
+CLDS: * Disk size = 1550892K. Space Used = 34796K. Runtime = 00:00:00:02.

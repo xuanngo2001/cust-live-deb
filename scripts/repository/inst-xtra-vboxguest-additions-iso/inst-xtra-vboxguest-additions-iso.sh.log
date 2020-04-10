@@ -2,22 +2,12 @@ CLDS:>>>>>>>>> Running inst-xtra-vboxguest-additions-iso.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following additional packages will be installed:
-  linux-compiler-gcc-6-x86 linux-headers-4.19.0-0.bpo.6-amd64
-  linux-headers-4.19.0-0.bpo.6-common linux-kbuild-4.19
-The following NEW packages will be installed:
-  linux-compiler-gcc-6-x86 linux-headers-4.19.0-0.bpo.6-amd64
-  linux-headers-4.19.0-0.bpo.6-common linux-headers-amd64 linux-kbuild-4.19
-0 upgraded, 5 newly installed, 0 to remove and 18 not upgraded.
-Need to get 9,951 kB of archives.
-After this operation, 57.3 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-compiler-gcc-6-x86 amd64 4.19.67-2+deb10u2~bpo9+1 [316 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.19.0-0.bpo.6-common all 4.19.67-2+deb10u2~bpo9+1 [8,274 kB]
-Get:3 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-kbuild-4.19 amd64 4.19.67-2+deb10u2~bpo9+1 [555 kB]
-Get:4 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-4.19.0-0.bpo.6-amd64 amd64 4.19.67-2+deb10u2~bpo9+1 [800 kB]
-Get:5 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 linux-headers-amd64 amd64 4.19+105+deb10u1~bpo9+1 [6,964 B]
-Fetched 9,951 kB in 0s (85.7 MB/s)
-Download complete and in download only mode
+Package linux-headers-amd64 is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'linux-headers-amd64' has no installation candidate
+dpkg-query: no packages found matching linux-image-*
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -37,7 +27,7 @@ After this operation, 285 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 dkms all 2.6.1-4~bpo9+1 [74.5 kB]
 Fetched 74.5 kB in 0s (0 B/s)
 Selecting previously unselected package dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55178 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 50488 files and directories currently installed.)
 Preparing to unpack .../dkms_2.6.1-4~bpo9+1_all.deb ...
 Unpacking dkms (2.6.1-4~bpo9+1) ...
 Setting up dkms (2.6.1-4~bpo9+1) ...
@@ -45,37 +35,15 @@ Processing triggers for man-db (2.7.6.1-2) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following additional packages will be installed:
-  linux-compiler-gcc-6-x86 linux-headers-4.19.0-0.bpo.6-common
-  linux-kbuild-4.19
-The following NEW packages will be installed:
-  linux-compiler-gcc-6-x86 linux-headers-4.19.0-0.bpo.6-amd64
-  linux-headers-4.19.0-0.bpo.6-common linux-kbuild-4.19
-0 upgraded, 4 newly installed, 0 to remove and 18 not upgraded.
-Need to get 0 B/9,945 kB of archives.
-After this operation, 57.3 MB of additional disk space will be used.
-Selecting previously unselected package linux-compiler-gcc-6-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55235 files and directories currently installed.)
-Preparing to unpack .../linux-compiler-gcc-6-x86_4.19.67-2+deb10u2~bpo9+1_amd64.deb ...
-Unpacking linux-compiler-gcc-6-x86 (4.19.67-2+deb10u2~bpo9+1) ...
-Selecting previously unselected package linux-headers-4.19.0-0.bpo.6-common.
-Preparing to unpack .../linux-headers-4.19.0-0.bpo.6-common_4.19.67-2+deb10u2~bpo9+1_all.deb ...
-Unpacking linux-headers-4.19.0-0.bpo.6-common (4.19.67-2+deb10u2~bpo9+1) ...
-Selecting previously unselected package linux-kbuild-4.19.
-Preparing to unpack .../linux-kbuild-4.19_4.19.67-2+deb10u2~bpo9+1_amd64.deb ...
-Unpacking linux-kbuild-4.19 (4.19.67-2+deb10u2~bpo9+1) ...
-Selecting previously unselected package linux-headers-4.19.0-0.bpo.6-amd64.
-Preparing to unpack .../linux-headers-4.19.0-0.bpo.6-amd64_4.19.67-2+deb10u2~bpo9+1_amd64.deb ...
-Unpacking linux-headers-4.19.0-0.bpo.6-amd64 (4.19.67-2+deb10u2~bpo9+1) ...
-Setting up linux-headers-4.19.0-0.bpo.6-common (4.19.67-2+deb10u2~bpo9+1) ...
-Setting up linux-kbuild-4.19 (4.19.67-2+deb10u2~bpo9+1) ...
-Setting up linux-compiler-gcc-6-x86 (4.19.67-2+deb10u2~bpo9+1) ...
-Setting up linux-headers-4.19.0-0.bpo.6-amd64 (4.19.67-2+deb10u2~bpo9+1) ...
+Package 'linux-headers' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
 Verifying archive integrity... All good.
 Uncompressing VirtualBox 6.0.18 Guest Additions for Linux........
 VirtualBox Guest Additions installer
 Copying additional installer modules ...
 Installing additional modules ...
+depmod: ERROR: could not open directory /lib/modules/5.4.0-0.bpo.4-amd64: No such file or directory
+depmod: FATAL: could not search modules: No such file or directory
 VirtualBox Guest Additions: Starting.
 VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
 modules.  This may take a while.
@@ -83,15 +51,17 @@ VirtualBox Guest Additions: To build modules for other installed kernels, run
 VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
 VirtualBox Guest Additions: or
 VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup all
-VirtualBox Guest Additions: Building the modules for kernel 
-4.19.0-0.bpo.6-amd64.
-Failed to connect to bus: No such file or directory
+VirtualBox Guest Additions: Kernel headers not found for target kernel 
+5.4.0-0.bpo.4-amd64. Please install them and execute
+  /sbin/rcvboxadd setup
 VirtualBox Guest Additions: Running kernel modules will not be replaced until 
 the system is restarted
 Running in chroot, ignoring request.
+libkmod: ERROR ../libkmod/libkmod.c:586 kmod_search_moddep: could not open moddep file '/lib/modules/5.4.0-0.bpo.4-amd64/modules.dep.bin'
+modinfo: ERROR: Module alias vboxguest not found.
 CLDS: * WARNING: Use this script only if backport repository doesn't work.
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
-CLDS: * VirtualBox guest additions installed: version: 6.0.18 r136238.
+CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
 CLDS: * Delete VBoxGuestAdditions.iso[0K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 4519516K. Space Used = 136440K. Runtime = 00:00:00:46.
+CLDS: * Disk size = 4052216K. Space Used = 21552K. Runtime = 00:00:00:03.
