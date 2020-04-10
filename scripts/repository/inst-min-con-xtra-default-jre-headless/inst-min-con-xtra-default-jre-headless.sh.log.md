@@ -3,7 +3,7 @@
   * Install openjdk version "11.0.6" 2020-01-14.
   * To install JAVA binary: https://wiki.debian.org/JavaPackage.
   * JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java".
-  * Disk size = 2205988K. Space Used = 241544K. Runtime = 00:00:00:08.
+  * Disk size = 2205996K. Space Used = 241540K. Runtime = 00:00:00:10.
   * The following NEW packages will be installed:
   ```bash
 ca-certificates ca-certificates-java default-jre-headless fontconfig-config fonts-dejavu-core
