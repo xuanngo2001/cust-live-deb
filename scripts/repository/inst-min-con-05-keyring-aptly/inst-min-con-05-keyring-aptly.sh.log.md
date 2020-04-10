@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-05-keyring-aptly.sh ...
   * Install Aptly key.
-  * Disk size = 1475556K. Space Used = 8K. Runtime = 00:00:00:00.
+  * Disk size = 1475300K. Space Used = 8K. Runtime = 00:00:00:01.
