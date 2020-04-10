@@ -10,9 +10,33 @@ Conf xdg-dbus-proxy (0.1.1-1~bpo9+1 master_stretch-backports-main stretch-backpo
 Reading package lists...
 Building dependency tree...
 Reading state information...
-Package libwebpdemux2 is not available, but is referred to by another package.
-This may mean that the package is missing, has been obsoleted, or
-is only available from another source
+The following NEW packages will be installed:
+  libwebpdemux2
+0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
+Inst libwebpdemux2 (0.5.2-1 master_stretch-main stretch:stretch [amd64])
+Conf libwebpdemux2 (0.5.2-1 master_stretch-main stretch:stretch [amd64])
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libgles2
+The following NEW packages will be installed:
+  libgles2 libgles2-mesa
+0 upgraded, 2 newly installed, 0 to remove and 18 not upgraded.
+Inst libgles2 (1.1.0-1~bpo9+1 master_stretch-backports-main stretch-backports:stretch-backports [amd64])
+Inst libgles2-mesa (18.2.8-2~bpo9+1 master_stretch-backports-main stretch-backports:stretch-backports [amd64])
+Conf libgles2 (1.1.0-1~bpo9+1 master_stretch-backports-main stretch-backports:stretch-backports [amd64])
+Conf libgles2-mesa (18.2.8-2~bpo9+1 master_stretch-backports-main stretch-backports:stretch-backports [amd64])
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
 
-E: Package 'libwebpdemux2' has no installation candidate
-CLDS: * Disk size = 3951536K. Space Used = 4K. Runtime = 00:00:00:01.
+The following packages have unmet dependencies:
+ libwebkit2gtk-4.0-37 : Depends: libgstreamer-plugins-bad1.0-0 (< 1.10.5) but 1:1.10.4-dmo2 is to be installed
+E: Unable to correct problems, you have held broken packages.
+CLDS: * Disk size = 4319300K. Space Used = 8K. Runtime = 00:00:00:01.
