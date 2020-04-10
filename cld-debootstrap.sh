@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 # Description: debootstrap
+#   - Ensure /root/.gnupg/trustedkeys.gpg has key for CLD aptly repository.
 
 CHROOT_DIR=$1
 DEB_REPO_URL=$2
@@ -29,13 +30,13 @@ DEB_REPO_URL=$2
 	CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 
 # Boot strap the minimum live system.
-  debootstrap --no-check-gpg --arch=amd64 stretch ${CHROOT_DIR} ${DEB_REPO_URL}
+    debootstrap --keyring=/root/.gnupg/trustedkeys.gpg --arch=amd64 stretch ${CHROOT_DIR} ${DEB_REPO_URL}
 
 # copy original source.list to source.list.live
-  cp -a ${CHROOT_DIR}/etc/apt/sources.list ${CHROOT_DIR}/etc/apt/sources.list.live
+    cp -a ${CHROOT_DIR}/etc/apt/sources.list ${CHROOT_DIR}/etc/apt/sources.list.live
 
 # Copy all scripts, setting files and binary to live system.
-  cp -a scripts ${CHROOT_DIR}/root
+    cp -a scripts ${CHROOT_DIR}/root
 
 
 # What to do next.
