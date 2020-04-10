@@ -33,7 +33,7 @@
 # Remove a single file from staging.
     git reset HEAD -- <file>
 
-# Branch
+# Branch.
     # Show all branches.
         git branch -a
         
@@ -42,3 +42,9 @@
         
     # Confirm you are now working on that branch.
         git branch
+
+# Submodule.
+    # Clone submodule.
+        git submodule add https://github.com/zzossig/hugo-theme-zdoc.git themes/zdoc
+    # Update submodule.
+        git submodule update --remote --merge
