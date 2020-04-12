@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-con-xtra-default-jre-headless.sh ...
   * After this operation, 184 MB of additional disk space will be used.
-  * Disk size = 1480936K. Space Used = 241536K. Runtime = 00:00:00:08.
+  * Disk size = 1480636K. Space Used = 241536K. Runtime = 00:00:00:09.
   * The following NEW packages will be installed:
   ```bash
 ca-certificates ca-certificates-java default-jre-headless fontconfig-config fonts-dejavu-core
