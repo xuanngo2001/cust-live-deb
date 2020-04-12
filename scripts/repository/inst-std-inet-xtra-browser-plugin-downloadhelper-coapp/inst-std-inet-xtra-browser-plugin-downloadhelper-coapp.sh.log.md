@@ -1,7 +1,6 @@
 * >>>>>>>>> Running inst-std-inet-xtra-browser-plugin-downloadhelper-coapp.sh ...
   * After this operation, 4,360 kB of additional disk space will be used.
-  * Install downloadhelper Companion App to record JW Player live stream.
-  * Disk size = 4021400K. Space Used = 96236K. Runtime = 00:00:00:02.
+  * Disk size = 3205844K. Space Used = 5768K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libasyncns0 libflac8 libpulse0 libsdl2-2.0-0 libsndfile1
