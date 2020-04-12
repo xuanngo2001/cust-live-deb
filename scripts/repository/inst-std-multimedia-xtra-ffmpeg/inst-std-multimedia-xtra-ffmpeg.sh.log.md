@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-std-multimedia-xtra-ffmpeg.sh ...
   * Install ffmpeg.
-  * Disk size = 4433368K. Space Used = 72K. Runtime = 00:00:00:00.
+  * Disk size = 4433376K. Space Used = 72K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 ffmpeg*
