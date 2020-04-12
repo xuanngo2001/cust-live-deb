@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-04-block-services-start-postinstall.sh ...
   * Block services from starting after they are being installed.
-  * Disk size = 1467156K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 683740K. Space Used = 8K. Runtime = 00:00:00:01.
