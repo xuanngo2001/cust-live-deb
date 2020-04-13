@@ -14,3 +14,6 @@
     # List of total size.
         ./sort-size.sh | grep zclean-99 | sort | grep work_no_proxy > a.csv
     
+    # After running ./build.sh, check ./qcheck.sh log for:
+        - error.
+        - file or directory not found.
