@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-graphviz.sh ...
   * After this operation, 8,592 kB of additional disk space will be used.
   * Install graphviz.
-  * Disk size = 3915288K. Space Used = 10784K. Runtime = 00:00:00:02.
+  * Disk size = 3915280K. Space Used = 10788K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 graphviz libcdt5 libcgraph6 libgts-0.7-5 libgvc6
