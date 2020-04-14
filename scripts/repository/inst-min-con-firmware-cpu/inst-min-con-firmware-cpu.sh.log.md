@@ -3,7 +3,7 @@
   * After this operation, 3,143 kB of additional disk space will be used.
   * Install CPU firmware: amd64-microcode.
   * Install CPU firmware: intel-microcode.
-  * Disk size = 834912K. Space Used = 8716K. Runtime = 00:00:00:18.
+  * Disk size = 893276K. Space Used = 8720K. Runtime = 00:00:00:17.
   * The following NEW packages will be installed:
   ```bash
 amd64-microcode intel-microcode iucode-tool
