@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-05-keyring-google.sh ...
-  * Disk size = 767848K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 803388K. Space Used = 4K. Runtime = 00:00:00:00.
