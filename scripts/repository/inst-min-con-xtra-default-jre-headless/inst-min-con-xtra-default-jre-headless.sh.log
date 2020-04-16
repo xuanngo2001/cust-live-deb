@@ -40,7 +40,7 @@ Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openjd
 Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 default-jre-headless amd64 2:1.8-58+deb9u1 [10.1 kB]
 Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ca-certificates-java all 20170929~deb9u3 [15.1 kB]
 Preconfiguring packages ...
-Fetched 31.9 MB in 0s (81.0 MB/s)
+Fetched 31.9 MB in 0s (83.7 MB/s)
 Selecting previously unselected package java-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21062 files and directories currently installed.)
 Preparing to unpack .../00-java-common_0.58+deb9u1_all.deb ...
@@ -295,8 +295,5 @@ update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/tnameserv t
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
 Setting up default-jre-headless (2:1.8-58+deb9u1) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
-'./cld/bashrc.d/bashrc-java.sh' -> '/usr/local/cld/bashrc.d/bashrc-java.sh'
-CLDS: * Install openjdk version "1.8.0_232".
-CLDS: * To install JAVA binary: https://wiki.debian.org/JavaPackage.
-CLDS: * JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64".
-CLDS: * Disk size = 2072792K. Space Used = 161248K. Runtime = 00:00:00:08.
+/root/scripts/repository/inst-min-con-xtra-default-jre-headless/inst-min-con-xtra-default-jre-headless.sh: line 16: ./java-set-home.sh: Permission denied
+CLDS: * Disk size = 1499696K. Space Used = 161244K. Runtime = 00:00:00:06.
