@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-graphic-gimp.sh ...
-  * After this operation, 191 MB of additional disk space will be used.
+  * After this operation, 188 MB of additional disk space will be used.
   * Install gimp.
-  * Disk size = 2772292K. Space Used = 211560K. Runtime = 00:00:01:42.
+  * Disk size = 3253964K. Space Used = 206648K. Runtime = 00:00:00:13.
   * The following NEW packages will be installed:
   ```bash
 gimp gimp-data libaa1 libamd2 libavcodec57
@@ -13,11 +13,10 @@ libgs9-common libgsm1 libijs-0.35 libilbc2 libilmbase12
 libkvazaar3 liblapack3 libmetis5 libmfx0 libmng1
 libmp3lame0 libmpg123-0 libnuma1 libopencore-amrnb0 libopencore-amrwb0
 libopenexr22 libopenh264-2 libopenmpt0 libopus0 libpaper1
-libpoppler64 libpoppler-glib8 libquadmath0 libraw15 libsdl1.2debian
-libshine3 libsnappy1v5 libsoxr0 libspeex1 libsuitesparseconfig4
-libswresample2 libswscale4 libtheora0 libumfpack5 libva1
-libva-drm1 libva-x11-1 libvdpau1 libvo-amrwbenc0 libvpx4
-libwmf0.2-7 libx264-150 libx265-116 libxvidcore4 libzvbi0
-libzvbi-common poppler-data python-cairo python-gobject-2 python-gtk2
-python-numpy
+libpoppler-glib8 libraw15 libsdl1.2debian libshine3 libsnappy1v5
+libsoxr0 libspeex1 libsuitesparseconfig4 libswresample2 libswscale4
+libtheora0 libumfpack5 libva1 libva-drm1 libva-x11-1
+libvdpau1 libvo-amrwbenc0 libvpx4 libwmf0.2-7 libx264-150
+libx265-116 libxvidcore4 libzvbi0 libzvbi-common poppler-data
+python-cairo python-gobject-2 python-gtk2 python-numpy
   ```

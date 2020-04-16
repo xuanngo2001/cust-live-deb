@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-std-office-libreoffice-impress.sh ...
-  * Install libreoffice-impress: 6.1.3.1 10(Build:1).
-  * Disk size = 4907600K. Space Used = 4K. Runtime = 00:00:00:02.
+  * Install libreoffice-impress: 6.1.5.2 10(Build:2).
+  * Disk size = 4561036K. Space Used = 4K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libreoffice-impress*
