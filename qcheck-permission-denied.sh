@@ -29,7 +29,7 @@ main_log=$1
     echo "${file_dir_not_found}"
     
   else
-      echo "No error in log file: ${main_log}"
+      echo "No '${grep_pattern}' in log file: ${main_log}"
   fi
 
 # Add newline as a separation.
