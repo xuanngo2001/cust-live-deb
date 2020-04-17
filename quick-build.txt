@@ -3,12 +3,12 @@
 ./build-cld.sh home; ./build-cld.sh home_inspiron; mv cust-live-deb-64-*_????-??-??_*.iso /media/sf_shared/; ./build-cld.sh work_no_proxy
 
 
-git checkout buster
-(cd ../cust-live-deb/; chmod +x *.sh; git checkout buster)
+git checkout buster; find . -type f -name '*.sh' -exec chmod +x {} \;
+(cd ../cust-live-deb/; git checkout buster)
 
 ./aptly-gpg-update-keys.sh
 ./master-release.sh tmp
-(cd ../cust-live-deb/scripts/repository/; chmod +x *.sh; ./packages.sh)
+(cd ../cust-live-deb/scripts/repository/; find . -type f -name '*.sh' -exec chmod +x {} \; ./packages.sh)
 echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh 
 
 (cd rebuild-mirrors-log/; ./create-clean-mirrors-log.sh ; scite clean-mirrors-log.txt)
@@ -21,12 +21,12 @@ echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh
     ## The ISO filename will contain 'buster' but boot with it and rebuild to get a clean Stretch ISO.
 
 =================
-git checkout stretch
-(cd ../cust-live-deb/; chmod +x *.sh; git checkout stretch)
+git checkout stretch; find . -type f -name '*.sh' -exec chmod +x {} \;
+(cd ../cust-live-deb/; git checkout stretch)
 
 ./aptly-gpg-update-keys.sh
 ./master-release.sh tmp
-(cd ../cust-live-deb/scripts/repository/; chmod +x *.sh; ./packages.sh)
+(cd ../cust-live-deb/scripts/repository/; find . -type f -name '*.sh' -exec chmod +x {} \; ./packages.sh)
 echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh
 
 ==================

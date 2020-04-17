@@ -3,9 +3,7 @@
     git pull https://github.com/xuanngo2001/cust-live-deb.wiki.git
     # On the same directory.
     
-    chmod +x *.sh
-    chmod +x scripts/*.sh
-    chmod +x scripts/repository/*.sh
+    find . -type f -name '*.sh' -exec chmod +x {} \;
     chmod +x ../cust-live-deb.wiki/git-common-commits.sh
     
     # Display package size and runtime of the latest build.
