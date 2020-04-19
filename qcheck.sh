@@ -13,6 +13,10 @@ echo "qcheck-file-dir-not-found.sh:"
 ./qcheck-file-dir-not-found.sh
 
 echo "------------------"
+echo "qcheck-permission-denied.sh:"
+./qcheck-permission-denied.sh
+
+echo "------------------"
 echo "qcheck-show-removed-packages.sh:"
 ./qcheck-show-removed-packages.sh
 
@@ -31,6 +35,7 @@ echo "qcheck-list-manual-packages.sh:"
 echo "------------------"
 echo "qcheck-temporary-fix-scripts.sh:"
 ./qcheck-temporary-fix-scripts.sh
+
 
 
 
