@@ -1,6 +1,8 @@
 * >>>>>>>>> Running inst-std-inet-xtra-transmission-gtk.sh ...
   * After this operation, 4,470 kB of additional disk space will be used.
-  * Disk size = 3992800K. Space Used = 3140K. Runtime = 00:00:00:01.
+  * Install transmission-gtk.
+  * Insert transmission-gtk in Internet menu.
+  * Disk size = 4214832K. Space Used = 3136K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libminiupnpc10 libnatpmp1 transmission-common transmission-gtk

@@ -1,5 +1,5 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-qgis.sh ...
-  * Disk size = 3359436K. Space Used = 20K. Runtime = 00:00:00:02.
+  * Disk size = 3581452K. Space Used = 24K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libjs-jquery libjs-sphinxdoc libjs-underscore libproj12 libqjson0
