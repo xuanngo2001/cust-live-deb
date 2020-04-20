@@ -2,10 +2,117 @@ CLDS:>>>>>>>>> Running inst-xtra-vboxguest-additions-x11.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following packages were automatically installed and are no longer required:
+  galera-4 libaio1 libdbi-perl libreadline5 lsof mariadb-common
+  mariadb-server-core-10.4 socat
+Use 'apt autoremove' to remove them.
 The following NEW packages will be installed:
   libnotify-bin linux-headers-amd64
 0 upgraded, 2 newly installed, 0 to remove and 18 not upgraded.
 Need to get 13.0 kB/20.0 kB of archives.
 After this operation, 48.1 kB of additional disk space will be used.
-E: You don't have enough free space in /var/cache/apt/archives/.
-CLDS: * Disk size = 6778196K. Space Used = 4K. Runtime = 00:00:00:01.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnotify-bin amd64 0.7.7-2 [13.0 kB]
+Fetched 13.0 kB in 0s (0 B/s)
+Download complete and in download only mode
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libc6-dev is already the newest version (2.24-11+deb9u4).
+dkms is already the newest version (2.6.1-4~bpo9+1).
+The following packages were automatically installed and are no longer required:
+  galera-4 libaio1 libdbi-perl libreadline5 lsof mariadb-common
+  mariadb-server-core-10.4 socat
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+linux-headers-4.19.0-0.bpo.8-amd64 is already the newest version (4.19.98-1~bpo9+1).
+The following packages were automatically installed and are no longer required:
+  galera-4 libaio1 libdbi-perl libreadline5 lsof mariadb-common
+  mariadb-server-core-10.4 socat
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  galera-4 libaio1 libdbi-perl libreadline5 lsof mariadb-common
+  mariadb-server-core-10.4 socat
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  libnotify-bin virtualbox-guest-dkms virtualbox-guest-utils
+The following NEW packages will be installed:
+  libnotify-bin virtualbox-guest-dkms virtualbox-guest-utils
+  virtualbox-guest-x11
+0 upgraded, 4 newly installed, 0 to remove and 18 not upgraded.
+Need to get 2,146 kB/2,159 kB of archives.
+After this operation, 16.4 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 virtualbox-guest-dkms all 5.2.24-dfsg-4~bpo9+1 [613 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 virtualbox-guest-utils amd64 5.2.24-dfsg-4~bpo9+1 [455 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports/contrib amd64 virtualbox-guest-x11 amd64 5.2.24-dfsg-4~bpo9+1 [1,078 kB]
+Fetched 2,146 kB in 0s (49.0 MB/s)
+Selecting previously unselected package libnotify-bin.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105107 files and directories currently installed.)
+Preparing to unpack .../libnotify-bin_0.7.7-2_amd64.deb ...
+Unpacking libnotify-bin (0.7.7-2) ...
+Selecting previously unselected package virtualbox-guest-dkms.
+Preparing to unpack .../virtualbox-guest-dkms_5.2.24-dfsg-4~bpo9+1_all.deb ...
+Unpacking virtualbox-guest-dkms (5.2.24-dfsg-4~bpo9+1) ...
+Selecting previously unselected package virtualbox-guest-utils.
+Preparing to unpack .../virtualbox-guest-utils_5.2.24-dfsg-4~bpo9+1_amd64.deb ...
+Unpacking virtualbox-guest-utils (5.2.24-dfsg-4~bpo9+1) ...
+Selecting previously unselected package virtualbox-guest-x11.
+Preparing to unpack .../virtualbox-guest-x11_5.2.24-dfsg-4~bpo9+1_amd64.deb ...
+Unpacking virtualbox-guest-x11 (5.2.24-dfsg-4~bpo9+1) ...
+Setting up virtualbox-guest-dkms (5.2.24-dfsg-4~bpo9+1) ...
+Loading new virtualbox-guest-5.2.24 DKMS files...
+Building for 4.19.0-0.bpo.8-amd64
+Building initial module for 4.19.0-0.bpo.8-amd64
+Done.
+
+vboxguest.ko:
+Running module version sanity check.
+Error! Module version 5.2.24_Debian for vboxguest.ko
+is not newer than what is already found in kernel 4.19.0-0.bpo.8-amd64 (6.1.6).
+You may override by specifying --force.
+
+vboxsf.ko:
+Running module version sanity check.
+Error! Module version 5.2.24_Debian for vboxsf.ko
+is not newer than what is already found in kernel 4.19.0-0.bpo.8-amd64 (6.1.6).
+You may override by specifying --force.
+
+vboxvideo.ko:
+Running module version sanity check.
+Error! Module version 5.2.24_Debian for vboxvideo.ko
+is not newer than what is already found in kernel 4.19.0-0.bpo.8-amd64 (6.1.6).
+You may override by specifying --force.
+
+depmod...
+Running in chroot, ignoring request.
+
+DKMS: install completed.
+Setting up libnotify-bin (0.7.7-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+Processing triggers for systemd (232-25+deb9u12) ...
+Setting up virtualbox-guest-utils (5.2.24-dfsg-4~bpo9+1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/virtualbox-guest-utils.service → /lib/systemd/system/virtualbox-guest-utils.service.
+Processing triggers for man-db (2.7.6.1-2) ...
+Setting up virtualbox-guest-x11 (5.2.24-dfsg-4~bpo9+1) ...
+
+Configuration file '/etc/X11/Xsession.d/98vboxadd-xclient'
+ ==> File on system created by you or by a script.
+ ==> File also in package provided by package maintainer.
+   What would you like to do about it ?  Your options are:
+    Y or I  : install the package maintainer's version
+    N or O  : keep your currently-installed version
+      D     : show the differences between the versions
+      Z     : start a shell to examine the situation
+ The default action is to keep your current version.
+*** 98vboxadd-xclient (Y/I/N/O/D/Z) [default=N] ? 
+Processing triggers for systemd (232-25+deb9u12) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+CLDS: * Install virtualbox-guest-x11 to have full screen and cross copy and paste.
+CLDS: * VirtualBox guest additions installed: version: 6.1.6 r137129.
+CLDS: * Disk size = 7306540K. Space Used = 19608K. Runtime = 00:00:00:42.

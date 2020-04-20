@@ -2,6 +2,10 @@ CLDS:>>>>>>>>> Running inst-std-multimedia-mpv.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following packages were automatically installed and are no longer required:
+  galera-4 libaio1 libdbi-perl libreadline5 lsof mariadb-common
+  mariadb-server-core-10.4 socat
+Use 'apt autoremove' to remove them.
 The following additional packages will be installed:
   libass9 libavc1394-0 libavdevice57 libavfilter6 libavresample3 libbs2b0
   libcdio-cdda1 libcdio-paranoia1 libcdio13 libdc1394-22 libdvdnav4
@@ -43,9 +47,9 @@ Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libdvd
 Get:22 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libuchardet0 amd64 0.0.1-1+b2 [65.1 kB]
 Get:23 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libva-wayland1 amd64 1.7.3-2 [15.8 kB]
 Get:24 http://localhost/aptly-repo/master_deb-multimedia-main stretch/main amd64 mpv amd64 1:0.27.2-dmo1+deb9u1 [880 kB]
-Fetched 5,261 kB in 0s (64.7 MB/s)
+Fetched 5,261 kB in 0s (63.9 MB/s)
 Selecting previously unselected package libass9:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60239 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68204 files and directories currently installed.)
 Preparing to unpack .../00-libass9_2%3a0.13.7-dmo1_amd64.deb ...
 Unpacking libass9:amd64 (2:0.13.7-dmo1) ...
 Selecting previously unselected package libraw1394-11:amd64.
@@ -155,4 +159,4 @@ Processing triggers for libc-bin (2.24-11+deb9u4) ...
 CLDS: * Install Media Player: mpv 0.27.2 .
 CLDS: * Add multiple aliases for MPV.
 CLDS: * Add useful mpv keybindings settings.
-CLDS: * Disk size = 4242984K. Space Used = 19964K. Runtime = 00:00:00:03.
+CLDS: * Disk size = 4769016K. Space Used = 19960K. Runtime = 00:00:00:02.

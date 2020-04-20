@@ -21,11 +21,12 @@ Get:19 http://localhost/aptly-repo/master_stretch-security-contrib stretch-updat
 Get:20 http://localhost/aptly-repo/master_stretch-security-main stretch-updates InRelease [4,396 B]
 Get:21 http://localhost/aptly-repo/master_stretch-security-non-free stretch-updates InRelease [4,504 B]
 Ign:22 http://dl.google.com/linux/chrome/deb stable InRelease
-Hit:23 https://download.docker.com/linux/debian stretch InRelease
-Hit:24 http://dl.google.com/linux/chrome/deb stable Release
-Get:25 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 Packages [64.4 kB]
-Get:26 http://localhost/aptly-repo/master_stretch-security-non-free stretch-updates/non-free amd64 Packages [633 B]
-Fetched 76.8 kB in 1s (51.0 kB/s)
+Hit:23 https://deb.nodesource.com/node_12.x stretch InRelease
+Hit:24 https://download.docker.com/linux/debian stretch InRelease
+Hit:25 http://dl.google.com/linux/chrome/deb stable Release
+Get:26 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 Packages [64.4 kB]
+Get:27 http://localhost/aptly-repo/master_stretch-security-non-free stretch-updates/non-free amd64 Packages [633 B]
+Fetched 76.8 kB in 1s (47.0 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -37,15 +38,16 @@ Use 'apt autoremove' to remove it.
 The following packages have been kept back:
   libapache2-mod-php7.0 libsystemd0 libudev1 php7.0-cli php7.0-common
   php7.0-curl php7.0-gd php7.0-json php7.0-mbstring php7.0-opcache
-  php7.0-readline php7.0-xml php7.0-zip systemd udev
+  php7.0-readline php7.0-sqlite3 php7.0-xml php7.0-zip systemd udev
 The following packages will be upgraded:
   curl firefox-esr grep init init-system-helpers iproute2 iptables libcurl3
   libcurl3-gnutls libexif12 libfastjson4 libicu57 libip4tc0 libip6tc0 libiptc0
-  liblognorm5 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5
-  libqt5widgets5 libss2 libxtables12 php7.0 rsyslog systemd-sysv
-26 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+  liblognorm5 libqt5concurrent5 libqt5core5a libqt5dbus5 libqt5gui5
+  libqt5network5 libqt5opengl5 libqt5sql5 libqt5sql5-sqlite libqt5widgets5
+  libqt5xml5 libss2 libxtables12 php7.0 rsyslog systemd-sysv
+31 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
 1 not fully installed or removed.
-Need to get 67.4 MB of archives.
+Need to get 67.9 MB of archives.
 After this operation, 1,268 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 grep amd64 3.3-1~bpo9+1 [377 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 init-system-helpers all 1.56~bpo9+1 [46.7 kB]
@@ -68,22 +70,28 @@ Get:18 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/
 Get:19 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libexif12 amd64 0.6.21-2+deb9u1 [323 kB]
 Get:20 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libicu57 amd64 57.1-6+deb9u4 [7,699 kB]
 Get:21 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5core5a amd64 5.7.1+dfsg-3+deb9u2 [1,839 kB]
-Get:22 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5dbus5 amd64 5.7.1+dfsg-3+deb9u2 [217 kB]
-Get:23 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5network5 amd64 5.7.1+dfsg-3+deb9u2 [593 kB]
-Get:24 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5gui5 amd64 5.7.1+dfsg-3+deb9u2 [2,449 kB]
-Get:25 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5widgets5 amd64 5.7.1+dfsg-3+deb9u2 [2,242 kB]
-Get:26 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 php7.0 all 7.0.33-0+deb9u7 [56.4 kB]
+Get:22 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5concurrent5 amd64 5.7.1+dfsg-3+deb9u2 [52.6 kB]
+Get:23 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5dbus5 amd64 5.7.1+dfsg-3+deb9u2 [217 kB]
+Get:24 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5network5 amd64 5.7.1+dfsg-3+deb9u2 [593 kB]
+Get:25 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5gui5 amd64 5.7.1+dfsg-3+deb9u2 [2,449 kB]
+Get:26 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5widgets5 amd64 5.7.1+dfsg-3+deb9u2 [2,242 kB]
+Get:27 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5opengl5 amd64 5.7.1+dfsg-3+deb9u2 [154 kB]
+Get:28 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5sql5 amd64 5.7.1+dfsg-3+deb9u2 [136 kB]
+Get:29 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5sql5-sqlite amd64 5.7.1+dfsg-3+deb9u2 [60.8 kB]
+Get:30 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libqt5xml5 amd64 5.7.1+dfsg-3+deb9u2 [120 kB]
+Get:31 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 php7.0 all 7.0.33-0+deb9u7 [56.4 kB]
+Extracting templates from packages: 96%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 67.4 MB in 0s (84.8 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105105 files and directories currently installed.)
+Fetched 67.9 MB in 0s (82.3 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 119863 files and directories currently installed.)
 Preparing to unpack .../grep_3.3-1~bpo9+1_amd64.deb ...
 Unpacking grep (3.3-1~bpo9+1) over (2.27-2) ...
 Setting up grep (3.3-1~bpo9+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105105 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 119863 files and directories currently installed.)
 Preparing to unpack .../init-system-helpers_1.56~bpo9+1_all.deb ...
 Unpacking init-system-helpers (1.56~bpo9+1) over (1.48) ...
 Setting up init-system-helpers (1.56~bpo9+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105105 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 119863 files and directories currently installed.)
 Preparing to unpack .../init_1.56~bpo9+1_amd64.deb ...
 Unpacking init (1.56~bpo9+1) over (1.48) ...
 Preparing to unpack .../systemd-sysv_241-5~bpo9+1_amd64.deb ...
@@ -91,7 +99,7 @@ Unpacking systemd-sysv (241-5~bpo9+1) over (232-25+deb9u12) ...
 Preparing to unpack .../libss2_1.44.5-1~bpo9+1_amd64.deb ...
 Unpacking libss2:amd64 (1.44.5-1~bpo9+1) over (1.43.4-2+deb9u1) ...
 Setting up libss2:amd64 (1.44.5-1~bpo9+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105105 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 119863 files and directories currently installed.)
 Preparing to unpack .../00-libxtables12_1.6.2-1.1~bpo9+1_amd64.deb ...
 Unpacking libxtables12:amd64 (1.6.2-1.1~bpo9+1) over (1.6.0+snapshot20161117-6) ...
 Preparing to unpack .../01-iptables_1.6.2-1.1~bpo9+1_amd64.deb ...
@@ -125,15 +133,25 @@ Preparing to unpack .../14-libicu57_57.1-6+deb9u4_amd64.deb ...
 Unpacking libicu57:amd64 (57.1-6+deb9u4) over (57.1-6+deb9u3) ...
 Preparing to unpack .../15-libqt5core5a_5.7.1+dfsg-3+deb9u2_amd64.deb ...
 Unpacking libqt5core5a:amd64 (5.7.1+dfsg-3+deb9u2) over (5.7.1+dfsg-3+deb9u1) ...
-Preparing to unpack .../16-libqt5dbus5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
+Preparing to unpack .../16-libqt5concurrent5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
+Unpacking libqt5concurrent5:amd64 (5.7.1+dfsg-3+deb9u2) over (5.7.1+dfsg-3+deb9u1) ...
+Preparing to unpack .../17-libqt5dbus5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
 Unpacking libqt5dbus5:amd64 (5.7.1+dfsg-3+deb9u2) over (5.7.1+dfsg-3+deb9u1) ...
-Preparing to unpack .../17-libqt5network5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
+Preparing to unpack .../18-libqt5network5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
 Unpacking libqt5network5:amd64 (5.7.1+dfsg-3+deb9u2) over (5.7.1+dfsg-3+deb9u1) ...
-Preparing to unpack .../18-libqt5gui5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
+Preparing to unpack .../19-libqt5gui5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
 Unpacking libqt5gui5:amd64 (5.7.1+dfsg-3+deb9u2) over (5.7.1+dfsg-3+deb9u1) ...
-Preparing to unpack .../19-libqt5widgets5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
+Preparing to unpack .../20-libqt5widgets5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
 Unpacking libqt5widgets5:amd64 (5.7.1+dfsg-3+deb9u2) over (5.7.1+dfsg-3+deb9u1) ...
-Preparing to unpack .../20-php7.0_7.0.33-0+deb9u7_all.deb ...
+Preparing to unpack .../21-libqt5opengl5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
+Unpacking libqt5opengl5:amd64 (5.7.1+dfsg-3+deb9u2) over (5.7.1+dfsg-3+deb9u1) ...
+Preparing to unpack .../22-libqt5sql5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
+Unpacking libqt5sql5:amd64 (5.7.1+dfsg-3+deb9u2) over (5.7.1+dfsg-3+deb9u1) ...
+Preparing to unpack .../23-libqt5sql5-sqlite_5.7.1+dfsg-3+deb9u2_amd64.deb ...
+Unpacking libqt5sql5-sqlite:amd64 (5.7.1+dfsg-3+deb9u2) over (5.7.1+dfsg-3+deb9u1) ...
+Preparing to unpack .../24-libqt5xml5_5.7.1+dfsg-3+deb9u2_amd64.deb ...
+Unpacking libqt5xml5:amd64 (5.7.1+dfsg-3+deb9u2) over (5.7.1+dfsg-3+deb9u1) ...
+Preparing to unpack .../25-php7.0_7.0.33-0+deb9u7_all.deb ...
 Unpacking php7.0 (7.0.33-0+deb9u7) over (7.0.33-0+deb9u6) ...
 Setting up libip4tc0:amd64 (1.6.2-1.1~bpo9+1) ...
 Processing triggers for mime-support (3.60) ...
@@ -171,10 +189,15 @@ Installing new version of config file /etc/iproute2/ematch_map ...
 Installing new version of config file /etc/iproute2/nl_protos ...
 Installing new version of config file /etc/iproute2/rt_protos ...
 Installing new version of config file /etc/iproute2/rt_tables.d/README ...
+Setting up libqt5xml5:amd64 (5.7.1+dfsg-3+deb9u2) ...
 Setting up iptables (1.6.2-1.1~bpo9+1) ...
 Setting up libqt5gui5:amd64 (5.7.1+dfsg-3+deb9u2) ...
+Setting up libqt5sql5:amd64 (5.7.1+dfsg-3+deb9u2) ...
+Setting up libqt5concurrent5:amd64 (5.7.1+dfsg-3+deb9u2) ...
 Setting up libqt5widgets5:amd64 (5.7.1+dfsg-3+deb9u2) ...
+Setting up libqt5opengl5:amd64 (5.7.1+dfsg-3+deb9u2) ...
+Setting up libqt5sql5-sqlite:amd64 (5.7.1+dfsg-3+deb9u2) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Processing triggers for systemd (232-25+deb9u12) ...
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 5738368K. Space Used = 67124K. Runtime = 00:00:00:11.
+CLDS: * Disk size = 6542152K. Space Used = 67640K. Runtime = 00:00:00:12.

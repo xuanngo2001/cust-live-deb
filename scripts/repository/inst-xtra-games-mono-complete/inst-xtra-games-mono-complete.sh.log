@@ -2,6 +2,10 @@ CLDS:>>>>>>>>> Running inst-xtra-games-mono-complete.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following packages were automatically installed and are no longer required:
+  galera-4 libaio1 libdbi-perl libreadline5 lsof mariadb-common
+  mariadb-server-core-10.4 socat
+Use 'apt autoremove' to remove them.
 The following additional packages will be installed:
   ca-certificates-mono cli-common libgdiplus libglade2.0-cil libglib2.0-cil
   libgtk2.0-cil libmono-2.0-1 libmono-2.0-dev libmono-accessibility4.0-cil
@@ -368,9 +372,9 @@ Get:170 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 m
 Get:171 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 msbuild all 1:16.5+xamarinxplat.2020.01.10.05.36-0xamarin1+debian9b1 [7,720 kB]
 Get:172 http://localhost/aptly-repo/master_mono-main stable-stretch/main amd64 mono-complete amd64 6.8.0.105-0xamarin3+debian9b1 [27.7 kB]
 Extracting templates from packages: 17%Extracting templates from packages: 34%Extracting templates from packages: 52%Extracting templates from packages: 69%Extracting templates from packages: 87%Extracting templates from packages: 100%
-Fetched 111 MB in 1s (63.4 MB/s)
+Fetched 111 MB in 1s (69.2 MB/s)
 Selecting previously unselected package mono-runtime-sgen.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74361 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80595 files and directories currently installed.)
 Preparing to unpack .../00-mono-runtime-sgen_6.8.0.105-0xamarin3+debian9b1_amd64.deb ...
 Unpacking mono-runtime-sgen (6.8.0.105-0xamarin3+debian9b1) ...
 Selecting previously unselected package mono-runtime.
@@ -427,7 +431,7 @@ Setting up libmono-system-configuration4.0-cil (6.8.0.105-0xamarin3+debian9b1) .
 Setting up libmono-system-xml4.0-cil (6.8.0.105-0xamarin3+debian9b1) ...
 Setting up libmono-system-security4.0-cil (6.8.0.105-0xamarin3+debian9b1) ...
 Selecting previously unselected package ca-certificates-mono.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74495 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80729 files and directories currently installed.)
 Preparing to unpack .../000-ca-certificates-mono_6.8.0.105-0xamarin3+debian9b1_all.deb ...
 Unpacking ca-certificates-mono (6.8.0.105-0xamarin3+debian9b1) ...
 Selecting previously unselected package cli-common.
@@ -1413,4 +1417,4 @@ Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Processing triggers for menu (2.1.47+b1) ...
 CLDS: * Install mono-complete.
 CLDS: * Needs for openra: AppImage.
-CLDS: * Disk size = 6580392K. Space Used = 629892K. Runtime = 00:00:06:45.
+CLDS: * Disk size = 7063336K. Space Used = 629904K. Runtime = 00:00:06:39.
