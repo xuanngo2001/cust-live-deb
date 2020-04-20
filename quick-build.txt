@@ -8,7 +8,7 @@ git checkout buster; find . -type f -name '*.sh' -exec chmod +x {} \;
 
 ./aptly-gpg-update-keys.sh
 ./master-release.sh tmp
-(cd ../cust-live-deb/scripts/repository/; find . -type f -name '*.sh' -exec chmod +x {} \; ./packages.sh)
+(cd ../cust-live-deb/; find . -type f -name '*.sh' -exec chmod +x {} \; ; cd scripts/repository/; ./packages.sh)
 echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh 
 
 (cd rebuild-mirrors-log/; ./create-clean-mirrors-log.sh ; scite clean-mirrors-log.txt)
@@ -26,7 +26,7 @@ git checkout stretch; find . -type f -name '*.sh' -exec chmod +x {} \;
 
 ./aptly-gpg-update-keys.sh
 ./master-release.sh tmp
-(cd ../cust-live-deb/scripts/repository/; find . -type f -name '*.sh' -exec chmod +x {} \; ./packages.sh)
+(cd ../cust-live-deb/; find . -type f -name '*.sh' -exec chmod +x {} \; ; cd scripts/repository/; ./packages.sh)
 echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh
 
 ==================
