@@ -27,6 +27,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	apt-get -y install file
 	for file in zfs-deb/*.deb; do dpkg -i $file; done
 
+# Add to CLD/
+	yes | cp -av ./cld  /usr/local
+ 
 # Log
 	zfs_version=$(modinfo zfs | grep ^version | tr -s ' ')
 	if [ -z "${zfs_version}" ]; then
