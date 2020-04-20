@@ -2,28 +2,29 @@ CLDS:>>>>>>>>> Running inst-std-inet-xtra-transmission-gtk.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following packages were automatically installed and are no longer required:
-  galera-4 libaio1 libdbi-perl libreadline5 lsof mariadb-common
-  mariadb-server-core-10.4 socat
-Use 'apt autoremove' to remove them.
 The following additional packages will be installed:
-  libminiupnpc10 libnatpmp1 transmission-common
+  libevent-2.0-5 libminiupnpc10 libnatpmp1 transmission-common
 Suggested packages:
   minissdpd natpmp-utils
 Recommended packages:
   minissdpd
 The following NEW packages will be installed:
-  libminiupnpc10 libnatpmp1 transmission-common transmission-gtk
-0 upgraded, 4 newly installed, 0 to remove and 18 not upgraded.
-Need to get 1,028 kB of archives.
-After this operation, 4,470 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libminiupnpc10 amd64 1.9.20140610-4 [30.1 kB]
-Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnatpmp1 amd64 20110808-4+b1 [8,926 B]
-Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 transmission-common all 2.92-2+deb9u1 [288 kB]
-Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 transmission-gtk amd64 2.92-2+deb9u1 [701 kB]
-Fetched 1,028 kB in 0s (44.3 MB/s)
+  libevent-2.0-5 libminiupnpc10 libnatpmp1 transmission-common
+  transmission-gtk
+0 upgraded, 5 newly installed, 0 to remove and 18 not upgraded.
+Need to get 1,180 kB of archives.
+After this operation, 4,819 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libevent-2.0-5 amd64 2.0.21-stable-3 [152 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libminiupnpc10 amd64 1.9.20140610-4 [30.1 kB]
+Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libnatpmp1 amd64 20110808-4+b1 [8,926 B]
+Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 transmission-common all 2.92-2+deb9u1 [288 kB]
+Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 transmission-gtk amd64 2.92-2+deb9u1 [701 kB]
+Fetched 1,180 kB in 0s (52.2 MB/s)
+Selecting previously unselected package libevent-2.0-5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51021 files and directories currently installed.)
+Preparing to unpack .../libevent-2.0-5_2.0.21-stable-3_amd64.deb ...
+Unpacking libevent-2.0-5:amd64 (2.0.21-stable-3) ...
 Selecting previously unselected package libminiupnpc10:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67945 files and directories currently installed.)
 Preparing to unpack .../libminiupnpc10_1.9.20140610-4_amd64.deb ...
 Unpacking libminiupnpc10:amd64 (1.9.20140610-4) ...
 Selecting previously unselected package libnatpmp1:amd64.
@@ -43,10 +44,12 @@ Processing triggers for menu (2.1.47+b1) ...
 Setting up transmission-common (2.92-2+deb9u1) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Processing triggers for man-db (2.7.6.1-2) ...
+Setting up libevent-2.0-5:amd64 (2.0.21-stable-3) ...
 Processing triggers for hicolor-icon-theme (0.15-1) ...
 Setting up transmission-gtk (2.92-2+deb9u1) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Processing triggers for menu (2.1.47+b1) ...
 /usr/bin/google-chrome
 CLDS: * Install transmission-gtk.
 CLDS: * Insert transmission-gtk in Internet menu.
-CLDS: * Disk size = 4740880K. Space Used = 3140K. Runtime = 00:00:00:01.
+CLDS: * Disk size = 3761288K. Space Used = 3656K. Runtime = 00:00:00:01.
