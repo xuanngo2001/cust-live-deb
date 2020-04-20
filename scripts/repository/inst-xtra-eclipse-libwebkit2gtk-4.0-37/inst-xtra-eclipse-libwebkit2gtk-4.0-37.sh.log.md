@@ -1,5 +1,5 @@
 * >>>>>>>>> Running inst-xtra-eclipse-libwebkit2gtk-4.0-37.sh ...
-  * Disk size = 3974252K. Space Used = 16K. Runtime = 00:00:00:01.
+  * Disk size = 3974236K. Space Used = 16K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 iso-codes libcap2-bin libgles2 libgles2-mesa libgstreamer1.0-0
