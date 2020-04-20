@@ -1,0 +1,100 @@
+# Script filename with the following terms will be excluded: grep -Fv TERM_TO_EXCLUDE.
+#   -Don't put TERM_TO_EXCLUDE as absolute path because the exclusion process is run from within chroot environment. Therefore, path will be different.
+
+
+# Test browser:
+#inst-std-inet-firefox-esr.sh
+inst-std-inet-xtra-google-chrome-browser-plugin-freshplayer-pepperflash.sh
+#inst-std-inet-xtra-google-chrome.sh
+
+
+### Camcorder
+	# Guvcview 2.0.4+debian-1+b1 cashes after 5 mins of recording.
+	#inst-std-graphic-xtra-guvcview
+	inst-std-graphic-xtra-cheese
+
+#### VBOX
+	# If ISO doesn't work, use x11.
+	#inst-xtra-vboxguest-additions-iso
+	inst-xtra-vboxguest-additions-x11
+
+#### Office: all or select few.
+	#inst-std-office-libreoffice-all
+		# or
+	inst-std-office-libreoffice-writer
+	inst-std-office-libreoffice-calc
+	inst-std-office-libreoffice-impress
+	inst-std-office-libreoffice-draw
+	inst-std-office-libreoffice-base
+	inst-std-office-libreoffice-math
+		# or
+	libreoffice-deb
+		# or
+	inst-std-office-libreoffice-appimage
+	
+		## Exclude all office: Used for home and work system ##
+	libreoffice
+
+# ### Image ###
+	pinta
+	gimp
+	#gpaint
+
+# ### Games ###
+	inst-xtra-games-openra
+	inst-xtra-games-mono-complete
+
+
+# Gnuplot
+    #inst-min-con-xtra-gnuplot-nox
+    inst-std-graphic-xtra-gnuplot-x11
+
+# JAVA
+    jdk
+    
+########### Exclude but PRESERVE ###########
+	inst-std-graphic-xtra-dia
+	inst-min-con-xtra-imagemagick
+
+	inst-min-win-cld-dev-tools-pandoc
+	
+    inst-xtra-freecad
+    inst-std-xtra-blender
+	wifite
+	
+	inst-xtra-wine64
+	inst-xtra-wine-playonlinux
+	
+    inst-std-graphic-xtra-qgis
+ 	
+ 	# Samba
+ 	xtra-smb-s
+    
+    # Use google chrome to view pdf. 	
+    inst-std-accessories-mupdf.sh
+    
+    inst-xtra-geany.sh
+
+    inst-xtra-docker-ce
+
+	
+########### TO DELETE ###########
+# For tony:
+    #xtra-opw
+    #xtra-git
+    #xtra-mariadb
+    #xtra-php
+    #pdf-poppler-utils
+    #apache2
+    #gnuplot
+    #pdf-poppler-utils
+    #graphviz
+    #python-pip
+    #python3
+    #vbox
+    #virtualbox
+    
+inst-min-win-01-xorg-drivers-fix-nvidia-driver
+inst-min-win-01-xorg-fix-drivers-xtra
+
+
