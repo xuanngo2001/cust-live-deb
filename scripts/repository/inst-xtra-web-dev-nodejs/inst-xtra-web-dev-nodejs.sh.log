@@ -15,7 +15,7 @@ Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backport
 Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 libhttp-parser2.8 amd64 2.8.1-1~bpo9+1 [20.6 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 libuv1 amd64 1.34.2-1~bpo9+1 [126 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 nodejs amd64 8.11.1~dfsg-2~bpo9+1 [4,802 kB]
-Fetched 5,034 kB in 0s (79.2 MB/s)
+Fetched 5,034 kB in 0s (79.8 MB/s)
 Selecting previously unselected package libc-ares2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74070 files and directories currently installed.)
 Preparing to unpack .../libc-ares2_1.14.0-1~bpo9+1_amd64.deb ...
@@ -66,7 +66,7 @@ Ign:19 http://dl.google.com/linux/chrome/deb stable InRelease
 Get:20 http://dl.google.com/linux/chrome/deb stable Release [943 B]
 Get:21 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B]
 Get:22 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,127 B]
-Fetched 2,889 B in 1s (2,224 B/s)
+Fetched 2,889 B in 1s (2,283 B/s)
 Reading package lists...
 
 ## Confirming "stretch" is supported...
@@ -106,10 +106,10 @@ Hit:16 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates I
 Hit:17 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease
 Ign:18 http://dl.google.com/linux/chrome/deb stable InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
-Hit:20 http://dl.google.com/linux/chrome/deb stable Release
-Get:21 https://deb.nodesource.com/node_12.x stretch InRelease [4,585 B]
+Get:20 https://deb.nodesource.com/node_12.x stretch InRelease [4,585 B]
+Hit:21 http://dl.google.com/linux/chrome/deb stable Release
 Get:23 https://deb.nodesource.com/node_12.x stretch/main amd64 Packages [765 B]
-Fetched 5,350 B in 1s (3,991 B/s)
+Fetched 5,350 B in 1s (3,793 B/s)
 Reading package lists...
 
 ## Run `sudo apt-get install -y nodejs` to install Node.js 12.x and npm
@@ -133,11 +133,11 @@ The following packages will be upgraded:
 Need to get 17.9 MB of archives.
 After this operation, 71.2 MB of additional disk space will be used.
 Get:1 https://deb.nodesource.com/node_12.x stretch/main amd64 nodejs amd64 12.16.2-1nodesource1 [17.9 MB]
-Fetched 17.9 MB in 0s (43.6 MB/s)
+Fetched 17.9 MB in 0s (21.7 MB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74102 files and directories currently installed.)
 Preparing to unpack .../nodejs_12.16.2-1nodesource1_amd64.deb ...
 Unpacking nodejs (12.16.2-1nodesource1) over (8.11.1~dfsg-2~bpo9+1) ...
 Setting up nodejs (12.16.2-1nodesource1) ...
 Processing triggers for man-db (2.7.6.1-2) ...
 CLDS: * Install nodejs.
-CLDS: * Disk size = 4325844K. Space Used = 122520K. Runtime = 00:00:00:09.
+CLDS: * Disk size = 4325900K. Space Used = 122524K. Runtime = 00:00:00:10.
