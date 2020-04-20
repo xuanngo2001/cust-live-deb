@@ -6,6 +6,9 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Stretch
+	apt-get install -y libmariadbclient18
+
 # Explicitly download dependent packages
 	apt-get install -s -y libqjson0
 	apt-get install -s -y python-future
