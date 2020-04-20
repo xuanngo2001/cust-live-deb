@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-xtra-games-openttd.sh ...
   * After this operation, 19.3 MB of additional disk space will be used.
-  * After this operation, 16.9 MB of additional disk space will be used.
+  * After this operation, 17.4 MB of additional disk space will be used.
   * Install OpenTTD 1.6.1.
-  * Disk size = 7116148K. Space Used = 52804K. Runtime = 00:00:00:03.
+  * Disk size = 4027688K. Space Used = 53492K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
-libxdg-basedir1 openttd openttd-data openttd-opengfx openttd-openmsx
-openttd-opensfx
+libsdl1.2debian libxdg-basedir1 openttd openttd-data openttd-opengfx
+openttd-openmsx openttd-opensfx
   ```

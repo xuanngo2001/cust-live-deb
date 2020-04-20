@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-xtra-zfs-clean.sh ...
   * ***************************************  BEFORE cleaning  *****************************************
-  * After this operation, 82.9 MB disk space will be freed.
+  * After this operation, 497 kB disk space will be freed.
   * ***************************************  AFTER cleaning  *****************************************
   * Solving E: You don't have enough free space in /var/cache/apt/archives/.
-  * Disk size = 6380724K. Space Used = -1472020K. Runtime = 00:00:00:02.
+  * Disk size = 3603796K. Space Used = -722280K. Runtime = 00:00:00:01.

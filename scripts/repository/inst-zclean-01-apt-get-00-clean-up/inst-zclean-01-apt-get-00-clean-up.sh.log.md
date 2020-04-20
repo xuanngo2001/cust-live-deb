@@ -2,4 +2,4 @@
   * After this operation, 353 kB disk space will be freed.
   * Remove unused packages: apt-get -y autoremove.
   * Clean cached DEB: apt-get clean.
-  * Disk size = 6471076K. Space Used = -71076K. Runtime = 00:00:00:02.
+  * Disk size = 3694156K. Space Used = -70536K. Runtime = 00:00:00:01.
