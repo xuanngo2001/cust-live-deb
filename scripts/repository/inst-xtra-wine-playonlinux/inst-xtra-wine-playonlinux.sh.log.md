@@ -1,7 +1,16 @@
 * >>>>>>>>> Running inst-xtra-wine-playonlinux.sh ...
   * After this operation, 29.3 MB of additional disk space will be used.
-  * Disk size = 6778228K. Space Used = 4K. Runtime = 00:00:00:01.
+  * After this operation, 178 kB of additional disk space will be used.
+  * After this operation, 127 kB of additional disk space will be used.
+  * After this operation, 4,144 kB of additional disk space will be used.
+  * After this operation, 173 kB of additional disk space will be used.
+  * Disk size = 7602080K. Space Used = 54716K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
-python-wxgtk3.0 python-wxversion
+cabextract gettext-base* icoutils libencode-locale-perl libfile-listing-perl
+libhtml-parser-perl libhtml-tagset-perl libhtml-tree-perl libhttp-cookies-perl libhttp-date-perl
+libhttp-message-perl libhttp-negotiate-perl libio-html-perl libio-socket-ssl-perl liblwp-mediatypes-perl
+liblwp-protocol-https-perl libmspack0 libnet-http-perl libnet-ssleay-perl liburi-perl
+libwww-perl libwww-robotrules-perl mesa-utils netcat netcat-traditional
+p7zip-full* perl-openssl-defaults python-wxgtk3.0 python-wxversion
   ```

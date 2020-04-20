@@ -2,7 +2,7 @@
   * After this operation, 428 MB of additional disk space will be used.
   * Install mono-complete.
   * Needs for openra: AppImage.
-  * Disk size = 6580392K. Space Used = 629892K. Runtime = 00:00:06:45.
+  * Disk size = 7063336K. Space Used = 629904K. Runtime = 00:00:06:39.
   * The following NEW packages will be installed:
   ```bash
 ca-certificates-mono cli-common libgdiplus libglade2.0-cil libglib2.0-cil

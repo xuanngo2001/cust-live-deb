@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-cheese.sh ...
-  * Disk size = 3476776K. Space Used = 12K. Runtime = 00:00:00:01.
+  * Disk size = 3476856K. Space Used = 12K. Runtime = 00:00:00:01.

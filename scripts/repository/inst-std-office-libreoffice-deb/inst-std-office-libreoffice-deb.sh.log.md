@@ -7,4 +7,4 @@
   * Install Office Suite: Database.
   * Install Office Suite: Equation.
   * https://wiki.documentfoundation.org/ReleasePlan
-  * Disk size = 4783020K. Space Used = 20K. Runtime = 00:00:00:01.
+  * Disk size = 5292564K. Space Used = 16K. Runtime = 00:00:00:01.
