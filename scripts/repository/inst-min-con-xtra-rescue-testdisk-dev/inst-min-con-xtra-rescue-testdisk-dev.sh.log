@@ -72,7 +72,7 @@ Get:37 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libewf
 Get:38 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtinfo-dev amd64 6.0+20161126-1+deb9u2 [79.2 kB]
 Get:39 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libncurses5-dev amd64 6.0+20161126-1+deb9u2 [175 kB]
 Extracting templates from packages: 76%Extracting templates from packages: 100%
-Fetched 36.8 MB in 0s (83.3 MB/s)
+Fetched 36.8 MB in 0s (80.9 MB/s)
 dpkg: libcomerr2:amd64: dependency problems, but removing anyway as you requested:
  libkrb5-3:amd64 depends on libcomerr2 (>= 1.34).
  libgssapi-krb5-2:amd64 depends on libcomerr2 (>= 1.34).
@@ -272,7 +272,7 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjpeg
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libncursesw5-dev amd64 6.0+20161126-1+deb9u2 [200 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ntfs-3g-dev amd64 1:2016.2.22AR.1+dfsg-1+deb9u1 [234 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 uuid-dev amd64 2.29.2-1+deb9u1 [83.9 kB]
-Fetched 784 kB in 0s (52.9 MB/s)
+Fetched 784 kB in 0s (53.8 MB/s)
 Selecting previously unselected package libjpeg62-turbo-dev:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27535 files and directories currently installed.)
 Preparing to unpack .../libjpeg62-turbo-dev_1%3a1.5.1-2_amd64.deb ...
@@ -348,7 +348,7 @@ Get:24 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 po-deb
 Get:25 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 debhelper all 12.1.1~bpo9+1 [1,012 kB]
 Get:26 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 pkg-config amd64 0.29-4+b1 [63.3 kB]
 Preconfiguring packages ...
-Fetched 15.4 MB in 0s (79.7 MB/s)
+Fetched 15.4 MB in 0s (80.4 MB/s)
 Selecting previously unselected package groff-base.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27661 files and directories currently installed.)
 Preparing to unpack .../00-groff-base_1.22.3-9_amd64.deb ...
@@ -5190,21 +5190,13 @@ file_tib.c:110:151: warning: unused parameter ‘file_recovery’ [-Wunused-para
                                                                                                                                                        ^~~~~~~~~~~~~
   CC       file_tiff.o
   CC       file_tiff_be.o
-file_tiff_be.c: In function ‘find_tag_from_tiff_header_be’:
-file_tiff_be.c:180:7: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
-       const uint32_t *tiff_next_diroff=(const uint32_t *)ptr_hdr;
-       ^~~~~
 file_tiff_be.c: In function ‘header_check_tiff_be’:
-file_tiff_be.c:756:106: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+file_tiff_be.c:758:106: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  int header_check_tiff_be(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                           ^~~~~~~~~~~~~~~~
   CC       file_tiff_le.o
-file_tiff_le.c: In function ‘find_tag_from_tiff_header_le’:
-file_tiff_le.c:182:7: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
-       const uint32_t *tiff_next_diroff=(const uint32_t *)ptr_hdr;
-       ^~~~~
 file_tiff_le.c: In function ‘header_check_tiff_le’:
-file_tiff_le.c:759:106: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+file_tiff_le.c:761:106: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  int header_check_tiff_le(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                           ^~~~~~~~~~~~~~~~
   CC       file_tivo.o
@@ -6031,6 +6023,7 @@ suspend_no.c:17:32: warning: unused parameter ‘cinfo’ [-Wunused-parameter]
   CCLD     fidentify
 make[2]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk/src'
 make[2]: Entering directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
+make[2]: Nothing to be done for 'all-am'.
 make[2]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 make[1]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 Making install in icons
@@ -6080,4 +6073,4 @@ make[3]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-te
 make[2]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 make[1]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 CLDS: * Install testdisk-dev.
-CLDS: * Disk size = 2574068K. Space Used = 310376K. Runtime = 00:00:02:39.
+CLDS: * Disk size = 2574232K. Space Used = 310560K. Runtime = 00:00:02:32.
