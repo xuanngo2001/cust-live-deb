@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-eclipse-fix-md-libwebkitgtk-3.0-0.sh ...
-  * Disk size = 3638004K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 3637976K. Space Used = 4K. Runtime = 00:00:00:00.

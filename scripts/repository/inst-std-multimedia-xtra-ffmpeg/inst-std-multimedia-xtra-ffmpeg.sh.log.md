@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-multimedia-xtra-ffmpeg.sh ...
-  * Disk size = 3543120K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 3543084K. Space Used = 8K. Runtime = 00:00:00:01.
