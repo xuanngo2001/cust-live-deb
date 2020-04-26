@@ -15,9 +15,9 @@ Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backport
 Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 libhttp-parser2.8 amd64 2.8.1-1~bpo9+1 [20.6 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 libuv1 amd64 1.34.2-1~bpo9+1 [126 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 nodejs amd64 8.11.1~dfsg-2~bpo9+1 [4,802 kB]
-Fetched 5,034 kB in 0s (85.7 MB/s)
+Fetched 5,034 kB in 0s (76.4 MB/s)
 Selecting previously unselected package libc-ares2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58025 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72677 files and directories currently installed.)
 Preparing to unpack .../libc-ares2_1.14.0-1~bpo9+1_amd64.deb ...
 Unpacking libc-ares2:amd64 (1.14.0-1~bpo9+1) ...
 Selecting previously unselected package libhttp-parser2.8:amd64.
@@ -65,8 +65,8 @@ Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
 Ign:19 http://dl.google.com/linux/chrome/deb stable InRelease
 Get:20 http://dl.google.com/linux/chrome/deb stable Release [943 B]
 Get:21 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B]
-Get:22 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,129 B]
-Fetched 2,891 B in 1s (2,335 B/s)
+Get:22 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,128 B]
+Fetched 2,890 B in 1s (2,150 B/s)
 Reading package lists...
 
 ## Confirming "stretch" is supported...
@@ -108,8 +108,8 @@ Ign:18 http://dl.google.com/linux/chrome/deb stable InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
 Get:20 https://deb.nodesource.com/node_12.x stretch InRelease [4,585 B]
 Hit:21 http://dl.google.com/linux/chrome/deb stable Release
-Get:23 https://deb.nodesource.com/node_12.x stretch/main amd64 Packages [765 B]
-Fetched 5,350 B in 1s (4,170 B/s)
+Get:22 https://deb.nodesource.com/node_12.x stretch/main amd64 Packages [765 B]
+Fetched 5,350 B in 1s (3,931 B/s)
 Reading package lists...
 
 ## Run `sudo apt-get install -y nodejs` to install Node.js 12.x and npm
@@ -133,11 +133,11 @@ The following packages will be upgraded:
 Need to get 17.9 MB of archives.
 After this operation, 71.2 MB of additional disk space will be used.
 Get:1 https://deb.nodesource.com/node_12.x stretch/main amd64 nodejs amd64 12.16.2-1nodesource1 [17.9 MB]
-Fetched 17.9 MB in 0s (41.2 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58057 files and directories currently installed.)
+Fetched 17.9 MB in 0s (47.3 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72709 files and directories currently installed.)
 Preparing to unpack .../nodejs_12.16.2-1nodesource1_amd64.deb ...
 Unpacking nodejs (12.16.2-1nodesource1) over (8.11.1~dfsg-2~bpo9+1) ...
 Setting up nodejs (12.16.2-1nodesource1) ...
 Processing triggers for man-db (2.7.6.1-2) ...
 CLDS: * Install nodejs.
-CLDS: * Disk size = 3886136K. Space Used = 122504K. Runtime = 00:00:00:09.
+CLDS: * Disk size = 4032080K. Space Used = 122484K. Runtime = 00:00:00:09.
