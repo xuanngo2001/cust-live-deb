@@ -70,3 +70,6 @@
 # Search case insensitive.
     echo 'aAbB' | sed 's/a/X/gI'
     
+# Trim spaces.
+    alias trim="sed -e 's/^[[:space:]]*//g' -e 's/[[:space:]]*\$//g'"
+    

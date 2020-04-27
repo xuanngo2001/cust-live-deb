@@ -34,4 +34,7 @@
  
 # Find and print size. For printf format, see http://man7.org/linux/man-pages/man1/find.1.html
     find . -type f -name 'all.txt' -printf '%s %p\n' | numfmt --field=1 --to=iec-i  --format='%10.3f'
-    find . -type f -name 'all.txt' -printf '%s %k %p\n' 
+    find . -type f -name 'all.txt' -printf '%s %k %p\n'
+    
+# Find negation. Find all files that don't end with .sh.
+    find . -type f -not -name '*.sh'
