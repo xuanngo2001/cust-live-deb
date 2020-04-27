@@ -2,4 +2,4 @@
   * Install Media Player: .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 3543072K. Space Used = 24K. Runtime = 00:00:00:01.
+  * Disk size = 3536172K. Space Used = 28K. Runtime = 00:00:00:00.

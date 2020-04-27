@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-win-00-xorg.sh ...
-  * Disk size = 2653648K. Space Used = 20K. Runtime = 00:00:00:01.
+  * Disk size = 2646740K. Space Used = 16K. Runtime = 00:00:00:00.
