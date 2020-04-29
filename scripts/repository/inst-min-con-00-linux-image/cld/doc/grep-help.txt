@@ -33,11 +33,14 @@
     grep -v "^[[:space:]]*#"
  
 # Grep 3 digits.
-    echo 1459mmmm34mm | grep -E [0-9]{3}
-    echo 2786mmmm34mm | grep -E [[:digit:]]{3}
+    echo 1459mmmm34mm | grep -E [0-9]\{3\}
+    echo 2786mmmm34mm | grep -E [[:digit:]]\{3\}
+    echo 1459mmmm34mm | grep -E [0-9]\{3,\}
+    echo 1459mmmm34mm | grep -E [0-9]\{2,3\}
 
-# Grep dash / hyphen.
+# Grep dash or hyphen.
     echo -e "--x---t--\nas" | grep -E '[\-]{2}'
+    echo -e "--x---t--\nas" | grep '[\-]\{2\}'
 
 # Count number of occurrence found. Number of CPUs.
 	grep -c ^processor /proc/cpuinfo
