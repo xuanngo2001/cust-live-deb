@@ -72,4 +72,11 @@
     
 # Trim spaces.
     alias trim="sed -e 's/^[[:space:]]*//g' -e 's/[[:space:]]*\$//g'"
+
+# Print between 2 patterns, 2 lines with ---.
+    sed -n '/^---$/,/^---$/p'
     
+# Between 2 lines, search replace.
+    # Between 2 lines with ---, replace weight with heavy.
+    sed  '/^---$/,/^---$/{s/weight/heavy/g}'
+    sed  '/^---$/,/^---$/{s/weight/heavy/g; s/search/replace/}'

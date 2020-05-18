@@ -13,3 +13,10 @@
 # Fix USB
     Umount USB
     dosfsck -a /dev/sdb1
+
+# Scan for badsectors.
+    badblocks -v /dev/sda10 > badsectors.txt
+
+# Tell kernel not write on bad sectors.
+    fsck -l badsectors.txt /dev/sda10
+    for ext2,3,4: e2fsck -l badsectors.txt /dev/sda10
