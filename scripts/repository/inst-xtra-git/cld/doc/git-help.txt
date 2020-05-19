@@ -54,3 +54,8 @@
         git submodule add https://github.com/zzossig/hugo-theme-zdoc.git themes/zdoc
     # Update submodule.
         git submodule update --remote --merge
+    # First time checkout, use --init.
+        git submodule update --init --recursive
+
+# Tell Git which SSH key to use.
+	export GIT_SSH_COMMAND="ssh -i /root/.ssh/id_rsa -F /dev/null"

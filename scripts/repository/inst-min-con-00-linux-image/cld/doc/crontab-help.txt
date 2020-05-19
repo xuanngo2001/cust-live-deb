@@ -1,4 +1,13 @@
-# Crontab will NOT add new entry, only overwrite the main configuration file.
+# Everytime you run Crontab, it will NOT add new entry, only overwrite the main configuration file.
+    ┌───────────── minute (0 - 59)
+    │ ┌───────────── hour (0 - 23)
+    │ │ ┌───────────── day of the month (1 - 31)
+    │ │ │ ┌───────────── month (1 - 12)
+    │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday;
+    │ │ │ │ │                                   7 is also Sunday on some systems)
+    │ │ │ │ │
+    │ │ │ │ │
+    * * * * * <command to execute>
 
 # Run script.sh at every 5th minute. If script.sh is executed on 00:23:00, then the next run is on 00:25:00.
 	echo "*/5 * * * * script.sh" | crontab
@@ -10,5 +19,14 @@
 # List crontab job.
 	crontab -l
 
-# Run script.sh at every 3rd minute.
-	echo "*/3 * * * * script.sh" | crontab
+# Cron logs.
+    grep CRON /var/log/syslog
+    
+# Keywords
+    @yearly (or @annually)  0 0 1 1 *   Run once a year at midnight of 1 January
+    @monthly                0 0 1 * *   Run once a month at midnight of the first day of the month
+    @weekly                 0 0 * * 0   Run once a week at midnight on Sunday morning
+    @daily (or @midnight)   0 0 * * *   Run once a day at midnight
+    @hourly                 0 * * * *   Run once an hour at the beginning of the hour
+    @reboot                 N/A         Run at startup
+    
