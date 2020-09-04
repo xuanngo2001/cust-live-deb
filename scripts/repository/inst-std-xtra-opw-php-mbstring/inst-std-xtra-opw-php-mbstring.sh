@@ -14,4 +14,4 @@ apt-get -y install php-mbstring
 
 
 # Log
-echo "${GV_LOG} * Install php-mbstring."
+echo "${GV_LOG} * Install php-mbstring for unicode library."
