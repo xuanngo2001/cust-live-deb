@@ -1,0 +1,3 @@
+# gpg: WARNING: unsafe permissions on homedir '/root/.gnupg'
+    find /media/deb-repo-05/config/gnupg -type f -exec chmod 600 {} \;
+    find /media/deb-repo-05/config/gnupg -type d -exec chmod 700 {} \;
