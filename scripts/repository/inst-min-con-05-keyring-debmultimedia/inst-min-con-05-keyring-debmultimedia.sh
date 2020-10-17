@@ -13,6 +13,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Add deb-multimedia sources list
   GF_ADD_SOURCE_LIST live "deb http://www.deb-multimedia.org buster main non-free"
+  GF_ADD_SOURCE_LIST live "deb http://www.deb-multimedia.org buster-backports main"
 
 # Update packages.
   apt-get update
