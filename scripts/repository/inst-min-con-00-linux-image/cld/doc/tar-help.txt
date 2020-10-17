@@ -1,23 +1,27 @@
-# Un/Compress tar.
+# Compress/Uncompress tar.
 	tar -cf archive.tar /path/to/dir/ file1 file2
 	tar -xf archive.tar -C /target/destination
 
-# Un/Decompress gzip file.
+# Compress/Uncompress gzip file.
 	tar -czvf archive.tar.gz /path/to/dir/ file1 file2
 	tar -xzvf archive.tar.gz
 
-# Un/Decompress bzip file.
+# Compress/Uncompress bzip file.
 	tar -cjvf archive.tar.bz2 /path/to/dir/ file1 file2
 	tar -xjvf archive.tar.bz2
 
+# List all files in archive, use -t option
+
 # No parent path. Option -C is to change to the defined path before compressing.
-	tar -cjvf archive.tar.bz2 -C "/cd/to/this/path/first/" /path/to/dir/ file1 file2
+#   All input files should relative to the -C path or absolute path.
+	tar -cjvf archive.tar.bz2 -C "/cd/to/this/path/first/" ./
 
 # Handle multiple part archive.
 	tar -czvf - drupal-7.59_2018-09-07_17.51.07.tar.gz | split -b 950K - archive.tar.gz
 	cat archive.tar.* | tar -xzvf -
 
-# Compression level 3 is mid-point for gz, bz, xz: https://www.rootusers.com/gzip-vs-bzip2-vs-xz-performance-comparison/
+# Compression level 3 is mid-point for gz, bz, xz. Higher value mean smaller size.
+#	More details at https://www.rootusers.com/gzip-vs-bzip2-vs-xz-performance-comparison/
 	XZ_OPT=3    tar ...
 	BZIP=0      tar ...
 	XZ_OPT=3    tar ...
@@ -26,6 +30,8 @@
 # Exclusion
     # Exclude files using multiple patterns
         tar -czf backup.tar.gz --exclude=PATTERN1 --exclude=PATTERN2 ... /path/to/backup
+        tar --exclude='*.jpg' --exclude='*.png' --exclude='*.bmp' --exclude='*.gif' -cvf tar-filename.tar folder
+        tar czvf myarchive.tar.gz --exclude=\*.{jpg,gif,png,wmv,flv,tar.gz,zip} rootdir
 
     # Exclude files using an exclude file filled with a list of patterns
         tar -czf backup.tar.gz -X /path/to/exclude.txt /path/to/backup
@@ -33,3 +39,7 @@
     # Exclude files using tags by placing a tag file in any directory that should be skipped
         tar -czf backup.tar.gz --exclude-tag-all=exclude.tag /path/to/backup
 
+# When distributing *.tar.gz, it is better to set everything owned by root/root.
+	tar -czvf github.tar.gz --owner=0 --group=0 github/
+
+	

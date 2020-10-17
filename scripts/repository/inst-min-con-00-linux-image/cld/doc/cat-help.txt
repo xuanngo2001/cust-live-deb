@@ -1,10 +1,11 @@
 # Here document, https://linuxize.com/post/bash-heredoc/
+#   Delimiter(EOF) ends with line starting and ending with EOF.
     cat << EOF > /tmp/yourfilehere
     These contents will be written to the file.
             This line is indented.
     EOF
 
-# Disable leading tab, use <<-
+# Disable leading tab(space will not work), use <<-
     #!/usr/bin/env bash
 
     if true ; then

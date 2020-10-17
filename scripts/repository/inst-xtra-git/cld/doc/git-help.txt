@@ -1,3 +1,7 @@
+# Set user name and email.
+	git config --global user.email "you@example.com"
+	git config --global user.name "Your Name"
+
 # Commit specific files.
     git commit -m "my notes." file1 file2 fileN
 
@@ -30,6 +34,7 @@
 
 # Unstaged all files.
     git reset HEAD -- .
+
 # Remove a single file from staging.
     git reset HEAD -- <file>
 
@@ -43,8 +48,18 @@
     # Confirm you are now working on that branch.
         git branch
 
+# Pull Get latest code.
+    # cd to git directory.
+    git checkout master
+    git pull origin master
+    
 # Submodule.
     # Clone submodule.
         git submodule add https://github.com/zzossig/hugo-theme-zdoc.git themes/zdoc
     # Update submodule.
         git submodule update --remote --merge
+    # First time checkout, use --init.
+        git submodule update --init --recursive
+
+# Tell Git which SSH key to use.
+	export GIT_SSH_COMMAND="ssh -i /root/.ssh/id_rsa -F /dev/null"
