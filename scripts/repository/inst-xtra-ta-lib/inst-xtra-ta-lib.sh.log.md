@@ -1,5 +1,5 @@
 * >>>>>>>>> Running inst-xtra-ta-lib.sh ...
-  * Disk size = 3985128K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 4337296K. Space Used = 8K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 build-essential*
