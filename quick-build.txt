@@ -22,6 +22,7 @@ echo 2 | ./mirrors-rebuild.sh && ./master-rebuild.sh && ./aptly-update-cld.sh
 
 =================
 sources-list-replace.sh sources.list.stretch
+(cd /media/master/github/firstboot; ./update-cld-doc.sh )
 
 git checkout stretch; find . -type f -name '*.sh' -exec chmod +x {} \;
 (cd ../cust-live-deb/; git checkout stretch)
