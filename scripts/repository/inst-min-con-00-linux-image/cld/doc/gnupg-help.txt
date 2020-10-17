@@ -1,3 +1,20 @@
+# List keys.
+    gpg --list-keys
+    gpg --list-secret-keys
+    
 # gpg: WARNING: unsafe permissions on homedir '/root/.gnupg'
     find /media/deb-repo-05/config/gnupg -type f -exec chmod 600 {} \;
     find /media/deb-repo-05/config/gnupg -type d -exec chmod 700 {} \;
+
+# Copy gpg key from one machine to another. https://unix.stackexchange.com/a/392355
+    # From original machine.
+        gpg --export ${KEY_ID} > public.key
+        gpg --export-secret-key ${KEY_ID} > private.key
+    
+    # To new machine.
+        gpg --import public.key
+        gpg --import private.key
+    
+        # Turn key into trusted state [ultimate] instead of [unknown].
+        gpg --edit-key ${KEY_ID} trust quit
+        (Select 5 = I trust ultimately)
