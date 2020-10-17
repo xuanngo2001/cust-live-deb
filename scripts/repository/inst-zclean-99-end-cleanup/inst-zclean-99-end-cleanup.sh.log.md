@@ -1,4 +1,4 @@
 * >>>>>>>>> Running inst-zclean-99-end-cleanup.sh ...
   * rm -rf /tmp/*.
   * Umount /sys, /dev/pts and /proc.
-  * Disk size = 3737436K. Space Used = -59672K. Runtime = 00:00:00:00.
+  * Disk size = 3280352K. Space Used = -59644K. Runtime = 00:00:00:01.

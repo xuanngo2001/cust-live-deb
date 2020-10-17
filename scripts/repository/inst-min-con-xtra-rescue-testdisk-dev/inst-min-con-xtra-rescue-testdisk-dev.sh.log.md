@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-min-con-xtra-rescue-testdisk-dev.sh ...
-  * After this operation, 166 MB of additional disk space will be used.
+  * After this operation, 167 MB of additional disk space will be used.
   * After this operation, 2,009 kB of additional disk space will be used.
-  * After this operation, 69.0 MB of additional disk space will be used.
+  * After this operation, 71.5 MB of additional disk space will be used.
   * Install testdisk-dev.
-  * Disk size = 2813148K. Space Used = 343208K. Runtime = 00:00:03:03.
+  * Disk size = 2482004K. Space Used = 353548K. Runtime = 00:00:05:08.
   * The following NEW packages will be installed:
   ```bash
 autoconf automake autopoint autotools-dev binutils
@@ -16,9 +16,10 @@ libarchive-zip-perl libasan5 libatomic1 libbfio1 libbfio-dev
 libbinutils libcc1-0 libcroco3 libdebhelper-perl libdpkg-perl
 liberror-perl libewf2 libewf-dev libext2fs-dev libfile-stripnondeterminism-perl
 libgcc-8-dev libisl19 libitm1 libjpeg62-turbo-dev libjpeg-dev
-liblsan0 libmpc3 libmpx2 libncurses5-dev libncurses-dev
-libncursesw5-dev libpipeline1 libquadmath0 libstdc++-8-dev libtool
-libtsan0 libubsan1 libuchardet0 logsave m4
-make man-db ntfs-3g-dev patch pkg-config
-po-debconf uuid-dev zlib1g-dev zlib1g-dev*
+liblsan0 libmpc3 libmpfr6 libmpx2 libncurses5-dev
+libncurses-dev libncursesw5-dev libpipeline1 libquadmath0 libsigsegv2
+libstdc++-8-dev libtool libtsan0 libubsan1 libuchardet0
+logsave m4 make man-db ntfs-3g-dev
+patch pkg-config po-debconf uuid-dev zlib1g-dev
+zlib1g-dev*
   ```
