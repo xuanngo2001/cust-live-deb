@@ -26,11 +26,11 @@ Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libvorb
 Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libvorbisenc2 amd64 1.3.5-4+deb9u2 [79.4 kB]
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsndfile1 amd64 1.0.27-3 [248 kB]
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libpulse0 amd64 10.0-1+deb9u1 [283 kB]
-Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openjdk-8-jre amd64 8u232-b09-1~deb9u1 [69.5 kB]
+Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openjdk-8-jre amd64 8u252-b09-1~deb9u1 [69.8 kB]
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 default-jre amd64 2:1.8-58+deb9u1 [930 B]
-Fetched 1,150 kB in 0s (54.7 MB/s)
+Fetched 1,150 kB in 0s (14.8 MB/s)
 Selecting previously unselected package libogg0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 43087 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 43062 files and directories currently installed.)
 Preparing to unpack .../00-libogg0_1.3.2-1_amd64.deb ...
 Unpacking libogg0:amd64 (1.3.2-1) ...
 Selecting previously unselected package libatk-wrapper-java.
@@ -61,8 +61,8 @@ Selecting previously unselected package libpulse0:amd64.
 Preparing to unpack .../09-libpulse0_10.0-1+deb9u1_amd64.deb ...
 Unpacking libpulse0:amd64 (10.0-1+deb9u1) ...
 Selecting previously unselected package openjdk-8-jre:amd64.
-Preparing to unpack .../10-openjdk-8-jre_8u232-b09-1~deb9u1_amd64.deb ...
-Unpacking openjdk-8-jre:amd64 (8u232-b09-1~deb9u1) ...
+Preparing to unpack .../10-openjdk-8-jre_8u252-b09-1~deb9u1_amd64.deb ...
+Unpacking openjdk-8-jre:amd64 (8u252-b09-1~deb9u1) ...
 Selecting previously unselected package default-jre.
 Preparing to unpack .../11-default-jre_2%3a1.8-58+deb9u1_amd64.deb ...
 Unpacking default-jre (2:1.8-58+deb9u1) ...
@@ -79,7 +79,7 @@ Setting up libatk-wrapper-java-jni:amd64 (0.33.3-13+deb9u1) ...
 Setting up libvorbisenc2:amd64 (1.3.5-4+deb9u2) ...
 Setting up libsndfile1:amd64 (1.0.27-3) ...
 Setting up libpulse0:amd64 (10.0-1+deb9u1) ...
-Setting up openjdk-8-jre:amd64 (8u232-b09-1~deb9u1) ...
+Setting up openjdk-8-jre:amd64 (8u252-b09-1~deb9u1) ...
 update-alternatives: using /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/policytool to provide /usr/bin/policytool (policytool) in auto mode
 Setting up default-jre (2:1.8-58+deb9u1) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
@@ -87,4 +87,4 @@ Processing triggers for libc-bin (2.24-11+deb9u4) ...
 CLDS: * Install default-jre.
 CLDS: * Needed for Sweet Home 3D: java.awt.AWTError: Assistive Technology not found.
 CLDS: * JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64".
-CLDS: * Disk size = 2975900K. Space Used = 5008K. Runtime = 00:00:00:01.
+CLDS: * Disk size = 2830116K. Space Used = 5012K. Runtime = 00:00:00:02.

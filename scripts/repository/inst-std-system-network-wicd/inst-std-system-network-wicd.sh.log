@@ -45,7 +45,7 @@ Get:14 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python
 Get:15 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wireless-tools amd64 30~pre9-12+b1 [114 kB]
 Get:16 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 libnl-3-200 amd64 3.4.0-1~bpo9+1 [62.9 kB]
 Get:17 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 libnl-genl-3-200 amd64 3.4.0-1~bpo9+1 [21.1 kB]
-Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wpasupplicant amd64 2:2.4-1+deb9u4 [974 kB]
+Get:18 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wpasupplicant amd64 2:2.4-1+deb9u6 [974 kB]
 Get:19 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-daemon all 1.7.4+tb2-5~deb9u1 [162 kB]
 Get:20 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libblas-common amd64 3.7.0-2 [14.2 kB]
 Get:21 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libgfortran3 amd64 6.3.0-18+deb9u1 [265 kB]
@@ -58,9 +58,9 @@ Get:27 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 python
 Get:28 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd-gtk all 1.7.4+tb2-5~deb9u1 [155 kB]
 Get:29 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 wicd all 1.7.4+tb2-5~deb9u1 [24.5 kB]
 Preconfiguring packages ...
-Fetched 12.5 MB in 0s (71.6 MB/s)
+Fetched 12.5 MB in 0s (32.1 MB/s)
 Selecting previously unselected package libpython2.7-minimal:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52668 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52583 files and directories currently installed.)
 Preparing to unpack .../0-libpython2.7-minimal_2.7.13-2+deb9u3_amd64.deb ...
 Unpacking libpython2.7-minimal:amd64 (2.7.13-2+deb9u3) ...
 Selecting previously unselected package python2.7-minimal.
@@ -83,7 +83,7 @@ Setting up python2.7-minimal (2.7.13-2+deb9u3) ...
 Linking and byte-compiling packages for runtime python2.7...
 Setting up python-minimal (2.7.13-2) ...
 Selecting previously unselected package python.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53414 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53329 files and directories currently installed.)
 Preparing to unpack .../00-python_2.7.13-2_amd64.deb ...
 Unpacking python (2.7.13-2) ...
 Selecting previously unselected package python-dbus.
@@ -117,8 +117,8 @@ Selecting previously unselected package libnl-genl-3-200:amd64.
 Preparing to unpack .../10-libnl-genl-3-200_3.4.0-1~bpo9+1_amd64.deb ...
 Unpacking libnl-genl-3-200:amd64 (3.4.0-1~bpo9+1) ...
 Selecting previously unselected package wpasupplicant.
-Preparing to unpack .../11-wpasupplicant_2%3a2.4-1+deb9u4_amd64.deb ...
-Unpacking wpasupplicant (2:2.4-1+deb9u4) ...
+Preparing to unpack .../11-wpasupplicant_2%3a2.4-1+deb9u6_amd64.deb ...
+Unpacking wpasupplicant (2:2.4-1+deb9u6) ...
 Selecting previously unselected package wicd-daemon.
 Preparing to unpack .../12-wicd-daemon_1.7.4+tb2-5~deb9u1_all.deb ...
 Unpacking wicd-daemon (1.7.4+tb2-5~deb9u1) ...
@@ -164,7 +164,7 @@ Setting up gir1.2-glib-2.0:amd64 (1.50.0-1+b1) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Processing triggers for systemd (232-25+deb9u12) ...
 Processing triggers for man-db (2.7.6.1-2) ...
-Processing triggers for dbus (1.10.28-0+deb9u1) ...
+Processing triggers for dbus (1.10.32-0+deb9u1) ...
 Setting up libnl-3-200:amd64 (3.4.0-1~bpo9+1) ...
 Processing triggers for hicolor-icon-theme (0.15-1) ...
 Setting up libpython2.7-stdlib:amd64 (2.7.13-2+deb9u3) ...
@@ -175,7 +175,7 @@ Setting up libnl-genl-3-200:amd64 (3.4.0-1~bpo9+1) ...
 Setting up libpython-stdlib:amd64 (2.7.13-2) ...
 Setting up python (2.7.13-2) ...
 Setting up python-wicd (1.7.4+tb2-5~deb9u1) ...
-Setting up wpasupplicant (2:2.4-1+deb9u4) ...
+Setting up wpasupplicant (2:2.4-1+deb9u6) ...
 Setting up python-numpy (1:1.12.1-3) ...
 Setting up python-gobject-2 (2.28.6-13) ...
 Setting up python-gi (3.22.0-2) ...
@@ -194,11 +194,11 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Setting up wicd-gtk (1.7.4+tb2-5~deb9u1) ...
 Setting up wicd (1.7.4+tb2-5~deb9u1) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
-Processing triggers for dbus (1.10.28-0+deb9u1) ...
+Processing triggers for dbus (1.10.32-0+deb9u1) ...
 Processing triggers for systemd (232-25+deb9u12) ...
 './cld/app/jwm/bootstrap/jwmrc-startup-wicd.sh' -> '/usr/local/cld/app/jwm/bootstrap/jwmrc-startup-wicd.sh'
 CLDS: * Install Network Manager: wicd.
 CLDS: * Insert Wicd menu in Network.
 CLDS: * Set wicd to run on JWM startup.
 CLDS: * Log at /var/log/wicd/wicd.log.
-CLDS: * Disk size = 3973088K. Space Used = 78260K. Runtime = 00:00:00:07.
+CLDS: * Disk size = 3739644K. Space Used = 78248K. Runtime = 00:00:00:10.
