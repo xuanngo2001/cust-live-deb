@@ -38,3 +38,7 @@
     
 # Find negation. Find all files that don't end with .sh.
     find . -type f -not -name '*.sh'
+
+# Exclude directory pattern.
+    find . ! -path "./zinst-*" -type f -name "*-help.txt"
+

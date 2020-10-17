@@ -63,3 +63,12 @@
 
 # Tell Git which SSH key to use.
 	export GIT_SSH_COMMAND="ssh -i /root/.ssh/id_rsa -F /dev/null"
+	
+# Ignore file permission.
+    git config --global core.fileMode false
+    # Set 'core.fileMode false' is not recommended.This setting only covers the executable bit of mode and never the read/write bits.
+    #   The proper way to solve this is:
+		find . -type d -exec chmod a+rwx {} \; # Make folders traversable and read/write
+		find . -type f -exec chmod a+rw {} \;  # Make files read/write
+
+    
