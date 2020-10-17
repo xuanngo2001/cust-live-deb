@@ -1,17 +1,36 @@
-# Workflow
-    git pull https://github.com/xuanngo2001/cust-live-deb.git
-    git pull https://github.com/xuanngo2001/cust-live-deb.wiki.git
-    # On the same directory.
+# New installation.
+    # Ensure /media/imdb/chroot exits.
     
-    find . -type f -name '*.sh' -exec chmod +x {} \;
-    chmod +x ../cust-live-deb.wiki/git-common-commits.sh
+    # Set git account.
+        git config --global user.email "xuan.ngo@example.com"
+        git config --global user.name "Xuan Ngo"
     
-    # Display package size and runtime of the latest build.
-        ./home.sh
+    # Fetch repositories.
+        git pull https://github.com/xuanngo2001/cust-live-deb.git
+        git pull https://github.com/xuanngo2001/cust-live-deb.wiki.git
     
-    # List of total size.
-        ./sort-size.sh | grep zclean-99 | sort | grep work_no_proxy > a.csv
+    # Make all script executable.
+        (
+            cd cust-live-deb
+            find . -type f -name '*.sh' -exec chmod +x {} \;
+            chmod +x ../cust-live-deb.wiki/git-common-commits.sh
+        )
     
-    # After running ./build.sh, check ./qcheck.sh log for:
-        - error.
-        - file or directory not found.
+    # Download vbox.
+        (
+            cd /media/master/github/cust-live-deb/scripts/repository/inst-xtra-vboxguest-additions-iso
+            ./VBoxGuestAdditions.sh
+        )
+        
+    # Build system.
+        ./build-cld.sh min
+    
+# Display package size and runtime of the latest build.
+    ./home.sh
+
+# List of total size.
+    ./sort-size.sh | grep zclean-99 | sort | grep work_no_proxy > a.csv
+
+# After running ./build.sh, check ./qcheck.sh log for:
+    - error.
+    - file or directory not found.
