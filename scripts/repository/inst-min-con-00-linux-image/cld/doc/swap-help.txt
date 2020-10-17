@@ -1,0 +1,24 @@
+# Allocate 1GB of disk space for swap file.
+    fallocate -l 1G /tmp/swapfile
+ 
+# Set permission.
+    chmod 600 /tmp/swapfile
+ 
+# Make it a swap file.
+    mkswap /tmp/swapfile
+ 
+# Turn swap file on.
+    swapon /tmp/swapfile
+    
+#  Show memory and swap used.
+    free -h
+
+# Show swap file / partition.
+    swapon --show
+    
+# Remove swap.
+    swapoff -v /tmp/swapfile
+    rm /tmp/swapfile
+    
+# swapon: /tmp/swapfile: swapon failed: Invalid argument
+    Change /tmp/swapfile path to a normal filesystem partition.
