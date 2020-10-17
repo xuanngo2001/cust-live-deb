@@ -1,0 +1,19 @@
+# https://mariadb.com/kb/en/library/configuring-mariadb-with-option-files/
+#   /etc/mysql/my.cnf
+    [mysqld]
+    datadir=/media/sql/mysql-data
+
+# From mysql console, the following to see the new datadir path.
+    mysql -e 'select @@datadir;'
+
+# Show my.cnf read order.
+    mysql --help | head -n8
+
+# Show options.
+    mysqld --print-defaults
+
+# Create user.
+    DROP USER IF EXISTS '${username}'@'localhost';
+    CREATE USER '${username}'@'localhost' IDENTIFIED BY '${password}';
+    GRANT ALL ON ${dbname}.* TO '${username}'@'localhost' IDENTIFIED BY '${password}' WITH GRANT OPTION;
+    FLUSH PRIVILEGES;
