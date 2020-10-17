@@ -3,7 +3,7 @@
   * After this operation, 2,009 kB of additional disk space will be used.
   * After this operation, 71.4 MB of additional disk space will be used.
   * Install testdisk-dev.
-  * Disk size = 2834284K. Space Used = 351632K. Runtime = 00:00:05:21.
+  * Disk size = 2834380K. Space Used = 351648K. Runtime = 00:00:04:34.
   * The following NEW packages will be installed:
   ```bash
 autoconf automake autopoint autotools-dev binutils

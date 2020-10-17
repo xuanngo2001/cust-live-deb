@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-flameshot.sh ...
   * After this operation, 31.2 MB of additional disk space will be used.
   * Install flameshot.
-  * Disk size = 3368560K. Space Used = 39900K. Runtime = 00:00:00:04.
+  * Disk size = 3368644K. Space Used = 39896K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 flameshot libdouble-conversion1 libpcre2-16-0 libqt5core5a libqt5dbus5
