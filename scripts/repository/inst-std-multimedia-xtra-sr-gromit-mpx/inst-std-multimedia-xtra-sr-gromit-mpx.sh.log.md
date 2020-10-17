@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-multimedia-xtra-sr-gromit-mpx.sh ...
   * After this operation, 485 kB of additional disk space will be used.
   * Install gromit-mpx.
-  * Disk size = 3618964K. Space Used = 852K. Runtime = 00:00:00:02.
+  * Disk size = 3678516K. Space Used = 852K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 gromit-mpx libappindicator3-1 libdbusmenu-gtk3-4 libindicator3-7
