@@ -2,6 +2,14 @@
 set -e
 # Description: Tag good build.
 
+repository=$1
+
+# Error handling.
+    if [ -z "${repository}" ]; then
+        echo "Error: Repository name can't be empty. Aborted!"
+        exit 1;
+    fi
+    
 ## Tag cld
     date_string=$(date +"%Y-%m-%d.%0k.%M.%S")
     distro_code_name=$(lsb_release -c | cut -d':' -f2 | tr -d ' ' | xargs)
@@ -12,15 +20,8 @@ set -e
         git tag "${git_tag}"
 
     # Display info.
-        echo "Tagged cld: ${git_tag}"
+        echo "Tagged ${repository}: ${git_tag}"
 
-## Tag aptly
-    (
-        cd ../aptly/;
-        ./master-release-ok.sh > /dev/null
-    )
-    # Display info.
-        echo "Tagged aptly."
 exit
 version_codename=$(cat /etc/os-release| grep CODENAME| cut -d'=' -f2)
 architecture=$(dpkg --print-architecture)
