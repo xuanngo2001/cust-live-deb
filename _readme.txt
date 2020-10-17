@@ -15,3 +15,7 @@
     # After running ./build.sh, check ./qcheck.sh log for:
         - error.
         - file or directory not found.
+        
+# When build ready, tag it.
+    # Ensure everything is commit for CLD and Aptly repositories.
+    ./tag-all.sh
