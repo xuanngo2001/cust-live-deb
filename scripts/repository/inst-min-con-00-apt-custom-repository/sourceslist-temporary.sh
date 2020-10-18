@@ -14,6 +14,7 @@ GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_deb-multimedia-no
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_docker-stable buster stable"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_google-main stable main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_mariadb-main buster main"
+GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_microsoft-main buster main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_mono-main stable-buster main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_qgis-main buster main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_virtualbox-contrib buster contrib"
