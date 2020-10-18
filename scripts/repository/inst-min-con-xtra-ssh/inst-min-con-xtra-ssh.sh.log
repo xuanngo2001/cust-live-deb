@@ -18,7 +18,7 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openssh
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 openssh-server amd64 1:7.4p1-10+deb9u7 [332 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ssh all 1:7.4p1-10+deb9u7 [189 kB]
 Preconfiguring packages ...
-Fetched 1,341 kB in 0s (9,668 kB/s)
+Fetched 1,341 kB in 0s (18.6 MB/s)
 Selecting previously unselected package openssh-client.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 30356 files and directories currently installed.)
 Preparing to unpack .../openssh-client_1%3a7.4p1-10+deb9u7_amd64.deb ...
@@ -40,11 +40,11 @@ Setting up openssh-server (1:7.4p1-10+deb9u7) ...
 
 Creating config file /etc/ssh/sshd_config with new version
 Creating SSH2 RSA key; this may take some time ...
-2048 SHA256:Oj1iJlnuJnX7T6FFAoBwp2bCLM9FkrlS5n3N0krvB8U root@work (RSA)
+2048 SHA256:WV5WewbL/M03Yj7s3zEMV/FPLLc9nZik7pdgvGqKPnA root@work (RSA)
 Creating SSH2 ECDSA key; this may take some time ...
-256 SHA256:JPF/gPB+IyOaO8kM4vaDzqsdQaY2hE1C4nMc/WkTt/Q root@work (ECDSA)
+256 SHA256:VQ82VdvGiMklILuhmbh/8UBSj+L5tJIDOET7AAsShWo root@work (ECDSA)
 Creating SSH2 ED25519 key; this may take some time ...
-256 SHA256:htLzX8cle/CEOczPCE4Rd3LCiw3n9qYGLePpHEq9jNY root@work (ED25519)
+256 SHA256:LQwXNTCFxujoQ0PanQ1IuK9NolqDkyH0NtNgl8zgDt8 root@work (ED25519)
 Created symlink /etc/systemd/system/sshd.service → /lib/systemd/system/ssh.service.
 Created symlink /etc/systemd/system/multi-user.target.wants/ssh.service → /lib/systemd/system/ssh.service.
 Running in chroot, ignoring request.
@@ -52,4 +52,4 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Setting up ssh (1:7.4p1-10+deb9u7) ...
 Processing triggers for systemd (232-25+deb9u12) ...
 CLDS: * Install ssh.
-CLDS: * Disk size = 2441268K. Space Used = 6900K. Runtime = 00:00:00:03.
+CLDS: * Disk size = 2441256K. Space Used = 6900K. Runtime = 00:00:00:02.
