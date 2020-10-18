@@ -2,7 +2,7 @@
   * After this operation, 107 MB of additional disk space will be used.
   * Install python3-dev.
   * Require for: tulipy
-  * Disk size = 2109440K. Space Used = 161584K. Runtime = 00:00:00:10.
+  * Disk size = 2109408K. Space Used = 161584K. Runtime = 00:00:00:10.
   * The following NEW packages will be installed:
   ```bash
 dh-python libc6-dev libc-dev-bin libexpat1-dev libmpdec2
