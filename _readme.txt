@@ -39,4 +39,4 @@
 # When build ready, tag it.
     # Ensure everything is commit for CLD and Aptly repositories.
     ./tag-all.sh
-    # Manually push to branch(e.g. buster)
+    # Manually push tags from Git view.
