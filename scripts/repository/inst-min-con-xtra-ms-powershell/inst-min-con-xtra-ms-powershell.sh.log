@@ -1,3 +1,14 @@
 CLDS:>>>>>>>>> Running inst-min-con-xtra-ms-powershell.sh ...
-/root/scripts/repository/inst-min-con-xtra-ms-powershell/inst-min-con-xtra-ms-powershell.sh: line 15: ./install-powershell-buster2.sh: Permission denied
-CLDS: * Disk size = 1961004K. Space Used = 4K. Runtime = 00:00:00:01.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ powershell : Depends: liblttng-ust0 but it is not installable
+E: Unable to correct problems, you have held broken packages.
+CLDS: * Disk size = 1960412K. Space Used = 4K. Runtime = 00:00:00:01.
