@@ -12,7 +12,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install powershell.
 #	apt-get -y install powershell
 
-	./install-powershell-buster.sh
+	./install-powershell-buster2.sh
 
 # Log
 	echo "${GV_LOG} * Install PowerShell."
