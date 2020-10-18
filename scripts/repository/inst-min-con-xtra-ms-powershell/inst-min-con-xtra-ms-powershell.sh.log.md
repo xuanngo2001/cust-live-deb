@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-xtra-ms-powershell.sh ...
-  * Disk size = 1961004K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 1960412K. Space Used = 4K. Runtime = 00:00:00:01.

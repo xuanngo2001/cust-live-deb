@@ -2,7 +2,7 @@
   * After this operation, 8,460 kB of additional disk space will be used.
   * Install remmina.
   * Need to remote desktop MS Windows machines.
-  * Disk size = 3976444K. Space Used = 9348K. Runtime = 00:00:00:05.
+  * Disk size = 4052600K. Space Used = 9352K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
 libavahi-glib1 libavahi-ui-gtk3-0 libfreerdp2-2 libfreerdp-client2-2 libssh-4
