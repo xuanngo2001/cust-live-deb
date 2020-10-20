@@ -6,16 +6,19 @@ The following additional packages will be installed:
   libdbusmenu-glib4 libdbusmenu-gtk4 libindicator7
 The following NEW packages will be installed:
   libappindicator1 libdbusmenu-glib4 libdbusmenu-gtk4 libindicator7
-0 upgraded, 4 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 4 newly installed, 0 to remove and 17 not upgraded.
 Need to get 210 kB of archives.
 After this operation, 498 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libdbusmenu-glib4 amd64 18.10.20180917~bzr490+repack1-1 [58.0 kB]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libdbusmenu-gtk4 amd64 18.10.20180917~bzr490+repack1-1 [45.7 kB]
 Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 libindicator7 amd64 0.5.0-4 [53.0 kB]
 Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 libappindicator1 amd64 0.4.92-7 [53.3 kB]
-Fetched 210 kB in 0s (4,057 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Fetched 210 kB in 0s (4,976 kB/s)
 Selecting previously unselected package libdbusmenu-glib4:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52865 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49377 files and directories currently installed.)
 Preparing to unpack .../libdbusmenu-glib4_18.10.20180917~bzr490+repack1-1_amd64.deb ...
 Unpacking libdbusmenu-glib4:amd64 (18.10.20180917~bzr490+repack1-1) ...
 Selecting previously unselected package libdbusmenu-gtk4:amd64.
@@ -37,19 +40,19 @@ Building dependency tree...
 Reading state information...
 libdbusmenu-glib4 is already the newest version (18.10.20180917~bzr490+repack1-1).
 libdbusmenu-glib4 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 libdbusmenu-gtk4 is already the newest version (18.10.20180917~bzr490+repack1-1).
 libdbusmenu-gtk4 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 libindicator7 is already the newest version (0.5.0-4).
 libindicator7 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -58,17 +61,19 @@ Recommended packages:
   x11-xserver-utils
 The following NEW packages will be installed:
   xdg-utils
-0 upgraded, 1 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 17 not upgraded.
 Need to get 73.7 kB of archives.
 After this operation, 335 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xdg-utils all 1.1.3-1+deb10u1 [73.7 kB]
-Fetched 73.7 kB in 0s (1,481 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Fetched 73.7 kB in 0s (950 kB/s)
 Selecting previously unselected package xdg-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52890 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49402 files and directories currently installed.)
 Preparing to unpack .../xdg-utils_1.1.3-1+deb10u1_all.deb ...
 Unpacking xdg-utils (1.1.3-1+deb10u1) ...
 Setting up xdg-utils (1.1.3-1+deb10u1) ...
-Processing triggers for man-db (2.8.5-2) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -76,15 +81,18 @@ The following additional packages will be installed:
   gconf2-common libgconf-2-4
 The following NEW packages will be installed:
   gconf-service gconf2-common libgconf-2-4
-0 upgraded, 3 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 3 newly installed, 0 to remove and 17 not upgraded.
 Need to get 1,879 kB of archives.
 After this operation, 7,693 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 gconf2-common all 3.2.6-5 [1,039 kB]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libgconf-2-4 amd64 3.2.6-5 [426 kB]
 Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 gconf-service amd64 3.2.6-5 [414 kB]
-Fetched 1,879 kB in 0s (20.8 MB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Fetched 1,879 kB in 0s (18.1 MB/s)
 Selecting previously unselected package gconf2-common.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52917 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49429 files and directories currently installed.)
 Preparing to unpack .../gconf2-common_3.2.6-5_all.deb ...
 Unpacking gconf2-common (3.2.6-5) ...
 Selecting previously unselected package libgconf-2-4:amd64.
@@ -104,13 +112,13 @@ Building dependency tree...
 Reading state information...
 libgconf-2-4 is already the newest version (3.2.6-5).
 libgconf-2-4 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 libxss1 is already the newest version (1:1.2.3-1).
 libxss1 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -120,14 +128,17 @@ Suggested packages:
   lsb
 The following NEW packages will be installed:
   distro-info-data lsb-release
-0 upgraded, 2 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 17 not upgraded.
 Need to get 34.1 kB of archives.
 After this operation, 79.9 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 distro-info-data all 0.41+deb10u2 [6,584 B]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 lsb-release all 10.2019051400 [27.5 kB]
-Fetched 34.1 kB in 0s (836 kB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Fetched 34.1 kB in 0s (697 kB/s)
 Selecting previously unselected package distro-info-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53057 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49569 files and directories currently installed.)
 Preparing to unpack .../distro-info-data_0.41+deb10u2_all.deb ...
 Unpacking distro-info-data (0.41+deb10u2) ...
 Selecting previously unselected package lsb-release.
@@ -135,7 +146,6 @@ Preparing to unpack .../lsb-release_10.2019051400_all.deb ...
 Unpacking lsb-release (10.2019051400) ...
 Setting up distro-info-data (0.41+deb10u2) ...
 Setting up lsb-release (10.2019051400) ...
-Processing triggers for man-db (2.8.5-2) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -143,13 +153,16 @@ Recommended packages:
   libu2f-udev libvulkan1
 The following NEW packages will be installed:
   google-chrome-stable
-0 upgraded, 1 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 17 not upgraded.
 Need to get 71.2 MB of archives.
 After this operation, 239 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 86.0.4240.75-1 [71.2 MB]
-Fetched 71.2 MB in 1s (54.1 MB/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
+Fetched 71.2 MB in 1s (53.7 MB/s)
 Selecting previously unselected package google-chrome-stable.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53077 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49589 files and directories currently installed.)
 Preparing to unpack .../google-chrome-stable_86.0.4240.75-1_amd64.deb ...
 Unpacking google-chrome-stable (86.0.4240.75-1) ...
 Setting up google-chrome-stable (86.0.4240.75-1) ...
@@ -157,7 +170,6 @@ update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/x-w
 update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
 update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/google-chrome (google-chrome) in auto mode
 Processing triggers for mime-support (3.62) ...
-Processing triggers for man-db (2.8.5-2) ...
 Processing triggers for menu (2.1.47+b1) ...
 Processing triggers for desktop-file-utils (0.23-4) ...
 './cld/bashrc.d/bashrc-alias-google-chrome.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-google-chrome.sh'
@@ -167,4 +179,4 @@ CLDS: * Insert Google Chrome in Internet menu.
 CLDS: * Add google chrome alias, chrome.
 CLDS: * Set default browser: update-alternatives --config x-www-browser.
 CLDS: * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-CLDS: * Disk size = 3628700K. Space Used = 308228K. Runtime = 00:00:00:15.
+CLDS: * Disk size = 3591720K. Space Used = 308224K. Runtime = 00:00:00:13.

@@ -23,9 +23,9 @@ Get:21 http://localhost/aptly-repo/master_buster-security-main buster-updates In
 Get:22 http://localhost/aptly-repo/master_buster-security-non-free buster-updates InRelease [4,498 B]
 Hit:23 http://dl.google.com/linux/chrome/deb stable InRelease
 Hit:24 https://deb.nodesource.com/node_12.x buster InRelease
-Get:25 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 Packages [33.5 kB]
+Get:25 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 Packages [32.9 kB]
 Get:26 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 Packages [634 B]
-Fetched 45.9 kB in 3s (15.8 kB/s)
+Fetched 45.4 kB in 3s (17.3 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -35,12 +35,12 @@ The following packages were automatically installed and are no longer required:
   libjsoncpp1 libvpx5
 Use 'apt autoremove' to remove them.
 The following packages have been kept back:
-  iptables libsystemd0 libxtables12 systemd
+  e2fsprogs iptables libext2fs2 libsystemd0 libxtables12 systemd
 The following packages will be upgraded:
-  firefox-esr iproute2 less libcryptsetup12 libnftnl11 libseccomp2 libss2
-  libudev1 netbase systemd-sysv udev
-11 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
-Need to get 59.0 MB of archives.
+  firefox-esr iproute2 less libcom-err2 libcryptsetup12 libnftnl11 libseccomp2
+  libss2 libudev1 netbase systemd-sysv udev
+12 upgraded, 0 newly installed, 0 to remove and 6 not upgraded.
+Need to get 59.1 MB of archives.
 After this operation, 21.2 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 systemd-sysv amd64 246.6-2~bpo10+1 [109 kB]
 Get:2 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libseccomp2 amd64 2.4.4-1~bpo10+1 [47.6 kB]
@@ -50,24 +50,28 @@ Get:5 http://localhost/aptly-repo/master_buster-backports-main buster-backports/
 Get:6 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 less amd64 551-1~bpo10+1 [133 kB]
 Get:7 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 netbase all 6.1~bpo10+1 [19.9 kB]
 Get:8 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 firefox-esr amd64 78.3.0esr-1~deb10u1 [55.8 MB]
-Get:9 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libcryptsetup12 amd64 2:2.3.4-1~bpo10+1 [240 kB]
-Get:10 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libnftnl11 amd64 1.1.7-1~bpo10+1 [61.1 kB]
-Get:11 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libss2 amd64 1.45.5-2~bpo10+1 [75.9 kB]
+Get:9 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libcom-err2 amd64 1.45.5-2~bpo10+1 [71.5 kB]
+Get:10 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libcryptsetup12 amd64 2:2.3.4-1~bpo10+1 [240 kB]
+Get:11 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libnftnl11 amd64 1.1.7-1~bpo10+1 [61.1 kB]
+Get:12 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libss2 amd64 1.45.5-2~bpo10+1 [75.9 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
+debconf: falling back to frontend: Readline
 Preconfiguring packages ...
-Fetched 59.0 MB in 1s (49.6 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 83850 files and directories currently installed.)
+Fetched 59.1 MB in 1s (51.3 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 83311 files and directories currently installed.)
 Preparing to unpack .../systemd-sysv_246.6-2~bpo10+1_amd64.deb ...
 Unpacking systemd-sysv (246.6-2~bpo10+1) over (241-7~deb10u4) ...
 Preparing to unpack .../libseccomp2_2.4.4-1~bpo10+1_amd64.deb ...
 Unpacking libseccomp2:amd64 (2.4.4-1~bpo10+1) over (2.3.3-4) ...
 Setting up libseccomp2:amd64 (2.4.4-1~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 83850 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 83311 files and directories currently installed.)
 Preparing to unpack .../udev_246.6-2~bpo10+1_amd64.deb ...
 Unpacking udev (246.6-2~bpo10+1) over (241-7~deb10u4) ...
 Preparing to unpack .../libudev1_246.6-2~bpo10+1_amd64.deb ...
 Unpacking libudev1:amd64 (246.6-2~bpo10+1) over (241-7~deb10u4) ...
 Setting up libudev1:amd64 (246.6-2~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 83857 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 83318 files and directories currently installed.)
 Preparing to unpack .../0-iproute2_5.8.0-1~bpo10+1_amd64.deb ...
 Unpacking iproute2 (5.8.0-1~bpo10+1) over (4.20.0-2) ...
 Preparing to unpack .../1-less_551-1~bpo10+1_amd64.deb ...
@@ -77,16 +81,19 @@ Unpacking netbase (6.1~bpo10+1) over (5.6) ...
 Preparing to unpack .../3-firefox-esr_78.3.0esr-1~deb10u1_amd64.deb ...
 Leaving 'diversion of /usr/bin/firefox to /usr/bin/firefox.real by firefox-esr'
 Unpacking firefox-esr (78.3.0esr-1~deb10u1) over (68.12.0esr-1~deb10u1) ...
-Preparing to unpack .../4-libcryptsetup12_2%3a2.3.4-1~bpo10+1_amd64.deb ...
+Preparing to unpack .../4-libcom-err2_1.45.5-2~bpo10+1_amd64.deb ...
+Unpacking libcom-err2:amd64 (1.45.5-2~bpo10+1) over (1.44.5-1+deb10u3) ...
+Preparing to unpack .../5-libcryptsetup12_2%3a2.3.4-1~bpo10+1_amd64.deb ...
 Unpacking libcryptsetup12:amd64 (2:2.3.4-1~bpo10+1) over (2:2.1.0-5+deb10u2) ...
-Preparing to unpack .../5-libnftnl11_1.1.7-1~bpo10+1_amd64.deb ...
+Preparing to unpack .../6-libnftnl11_1.1.7-1~bpo10+1_amd64.deb ...
 Unpacking libnftnl11:amd64 (1.1.7-1~bpo10+1) over (1.1.2-2) ...
-Preparing to unpack .../6-libss2_1.45.5-2~bpo10+1_amd64.deb ...
+Preparing to unpack .../7-libss2_1.45.5-2~bpo10+1_amd64.deb ...
 Unpacking libss2:amd64 (1.45.5-2~bpo10+1) over (1.44.5-1+deb10u3) ...
 Setting up systemd-sysv (246.6-2~bpo10+1) ...
 Setting up iproute2 (5.8.0-1~bpo10+1) ...
 Setting up less (551-1~bpo10+1) ...
 Setting up libnftnl11:amd64 (1.1.7-1~bpo10+1) ...
+Setting up libcom-err2:amd64 (1.45.5-2~bpo10+1) ...
 Setting up udev (246.6-2~bpo10+1) ...
 Installing new version of config file /etc/init.d/udev ...
 Installing new version of config file /etc/udev/udev.conf ...
@@ -104,7 +111,6 @@ live-boot: core filesystems devices utils udev blockdev dns.
 Processing triggers for hicolor-icon-theme (0.17-2) ...
 Processing triggers for libc-bin (2.28-10) ...
 Processing triggers for systemd (241-7~deb10u4) ...
-Processing triggers for man-db (2.8.5-2) ...
 Processing triggers for desktop-file-utils (0.23-4) ...
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 3614756K. Space Used = 79656K. Runtime = 00:00:00:35.
+CLDS: * Disk size = 3703324K. Space Used = 79732K. Runtime = 00:00:00:31.
