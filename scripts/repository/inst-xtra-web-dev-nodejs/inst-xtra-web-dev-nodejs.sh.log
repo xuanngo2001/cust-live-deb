@@ -17,12 +17,9 @@ Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libc-ares
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libuv1 amd64 1.24.1-1 [110 kB]
 Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 libnode64 amd64 10.21.0~dfsg-1~deb10u1 [5,629 kB]
 Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 nodejs amd64 10.21.0~dfsg-1~deb10u1 [87.0 kB]
-debconf: unable to initialize frontend: Dialog
-debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
-debconf: falling back to frontend: Readline
-Fetched 5,911 kB in 0s (32.3 MB/s)
+Fetched 5,911 kB in 0s (38.3 MB/s)
 Selecting previously unselected package libc-ares2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77369 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77421 files and directories currently installed.)
 Preparing to unpack .../libc-ares2_1.14.0-1_amd64.deb ...
 Unpacking libc-ares2:amd64 (1.14.0-1) ...
 Selecting previously unselected package libuv1:amd64.
@@ -67,8 +64,8 @@ Hit:17 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
 Hit:18 http://localhost/aptly-repo/master_qgis-main buster InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
 Get:20 http://dl.google.com/linux/chrome/deb stable InRelease [1,811 B]
-Get:21 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,090 B]
-Fetched 2,901 B in 3s (1,144 B/s)
+Get:21 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,092 B]
+Fetched 2,903 B in 2s (1,210 B/s)
 Reading package lists...
 
 ## Confirming "buster" is supported...
@@ -108,10 +105,10 @@ Hit:16 http://localhost/aptly-repo/master_microsoft-main buster InRelease
 Hit:17 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
 Hit:18 http://localhost/aptly-repo/master_qgis-main buster InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
-Hit:20 http://dl.google.com/linux/chrome/deb stable InRelease
-Get:21 https://deb.nodesource.com/node_12.x buster InRelease [4,584 B]
-Get:22 https://deb.nodesource.com/node_12.x buster/main amd64 Packages [765 B]
-Fetched 5,349 B in 3s (2,101 B/s)
+Get:20 https://deb.nodesource.com/node_12.x buster InRelease [4,584 B]
+Get:21 https://deb.nodesource.com/node_12.x buster/main amd64 Packages [765 B]
+Hit:22 http://dl.google.com/linux/chrome/deb stable InRelease
+Fetched 5,349 B in 5s (988 B/s)
 Reading package lists...
 
 ## Run `sudo apt-get install -y nodejs` to install Node.js 12.x and npm
@@ -137,19 +134,16 @@ The following packages will be upgraded:
 Need to get 18.4 MB of archives.
 After this operation, 71.1 MB of additional disk space will be used.
 Get:1 https://deb.nodesource.com/node_12.x buster/main amd64 nodejs amd64 12.19.0-1nodesource1 [18.4 MB]
-debconf: unable to initialize frontend: Dialog
-debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
-debconf: falling back to frontend: Readline
-Fetched 18.4 MB in 12s (1,549 kB/s)
+Fetched 18.4 MB in 13s (1,429 kB/s)
 dpkg: libnode64:amd64: dependency problems, but removing anyway as you requested:
  nodejs depends on libnode64 (= 10.21.0~dfsg-1~deb10u1).
 
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77400 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77452 files and directories currently installed.)
 Removing libnode64:amd64 (10.21.0~dfsg-1~deb10u1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77393 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77445 files and directories currently installed.)
 Preparing to unpack .../nodejs_12.19.0-1nodesource1_amd64.deb ...
 Unpacking nodejs (12.19.0-1nodesource1) over (10.21.0~dfsg-1~deb10u1) ...
 Setting up nodejs (12.19.0-1nodesource1) ...
 Processing triggers for libc-bin (2.28-10) ...
 CLDS: * Install nodejs.
-CLDS: * Disk size = 4438776K. Space Used = 127880K. Runtime = 00:00:00:27.
+CLDS: * Disk size = 4453976K. Space Used = 127884K. Runtime = 00:00:00:30.

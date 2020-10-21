@@ -23,13 +23,7 @@ Get:7 http://localhost/aptly-repo/master_buster-main buster/main amd64 libxi6 am
 Get:8 http://localhost/aptly-repo/master_buster-main buster/main amd64 x11-common all 1:7.7+19 [251 kB]
 Get:9 http://localhost/aptly-repo/master_buster-main buster/main amd64 libxtst6 amd64 2:1.2.3-1 [27.8 kB]
 Get:10 http://localhost/aptly-repo/master_buster-main buster/main amd64 numlockx amd64 1.2-7.1 [10.8 kB]
-debconf: unable to initialize frontend: Dialog
-debconf: (Dialog frontend requires a screen at least 13 lines tall and 31 columns wide.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.28.1 /usr/local/share/perl/5.28.1 /usr/lib/x86_64-linux-gnu/perl5/5.28 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.28 /usr/share/perl/5.28 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7, <> line 10.)
-debconf: falling back to frontend: Teletype
-Fetched 1,659 kB in 0s (11.9 MB/s)
+Fetched 1,659 kB in 0s (19.4 MB/s)
 Selecting previously unselected package libxau6:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18063 files and directories currently installed.)
 Preparing to unpack .../0-libxau6_1%3a1.0.8-1+b2_amd64.deb ...
@@ -77,4 +71,4 @@ Setting up numlockx (1.2-7.1) ...
 Processing triggers for systemd (241-7~deb10u4) ...
 Processing triggers for libc-bin (2.28-10) ...
 CLDS: * Install numlockx to turn on NumLock on boot.
-CLDS: * Disk size = 1230600K. Space Used = 6848K. Runtime = 00:00:00:01.
+CLDS: * Disk size = 1172252K. Space Used = 6848K. Runtime = 00:00:00:02.
