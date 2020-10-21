@@ -1,0 +1,14 @@
+# Enable git-lfs in your existing git repository. From your git repository, run
+    git lfs install
+
+    # Set what big file to track. e.g.
+        git lfs track '*.iso'
+        git lfs track '*.bin'
+        git lfs track '*.tar.gz'
+        git lfs track '*.tar.bz2'
+    
+    # View what are being tracked.
+        git lfs track
+    
+    # View files being tracked.
+    git lfs ls-files
