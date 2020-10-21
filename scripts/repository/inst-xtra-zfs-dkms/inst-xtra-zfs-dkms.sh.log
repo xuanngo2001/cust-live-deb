@@ -17,7 +17,7 @@ The following NEW packages will be installed:
 Need to get 1,196 B of archives.
 After this operation, 10.2 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 linux-headers-amd64 amd64 5.8.10-1~bpo10+1 [1,196 B]
-Fetched 1,196 B in 0s (21.4 kB/s)
+Fetched 1,196 B in 0s (31.2 kB/s)
 Selecting previously unselected package linux-headers-amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 82260 files and directories currently installed.)
 Preparing to unpack .../linux-headers-amd64_5.8.10-1~bpo10+1_amd64.deb ...
@@ -44,7 +44,7 @@ The following NEW packages will be installed:
 Need to get 101 kB of archives.
 After this operation, 400 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 module-assistant all 0.11.10 [101 kB]
-Fetched 101 kB in 0s (2,059 kB/s)
+Fetched 101 kB in 0s (2,506 kB/s)
 Selecting previously unselected package module-assistant.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 82261 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.10_all.deb ...
@@ -85,7 +85,7 @@ Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 file amd6
 Get:2 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfs-dkms all 0.8.4-2~bpo10+1 [1,906 kB]
 Get:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 spl-dkms all 0.8.4-2~bpo10+1 [23.9 kB]
 Preconfiguring packages ...
-Fetched 1,996 kB in 0s (18.0 MB/s)
+Fetched 1,996 kB in 0s (22.5 MB/s)
 Selecting previously unselected package file.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 82303 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.35-4+deb10u1_amd64.deb ...
@@ -194,7 +194,7 @@ Get:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backpor
 Get:4 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 libzpool2linux amd64 0.8.4-2~bpo10+1 [835 kB]
 Get:5 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfsutils-linux amd64 0.8.4-2~bpo10+1 [375 kB]
 Get:6 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports/contrib amd64 zfs-initramfs all 0.8.4-2~bpo10+1 [33.7 kB]
-Fetched 1,576 kB in 0s (16.5 MB/s)
+Fetched 1,576 kB in 0s (20.4 MB/s)
 Selecting previously unselected package libnvpair1linux.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 83152 files and directories currently installed.)
 Preparing to unpack .../0-libnvpair1linux_0.8.4-2~bpo10+1_amd64.deb ...
@@ -246,4 +246,4 @@ CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
 CLDS: * Install zfs-dkms: version: 0.8.4-2~bpo10+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Install zfs-initramfs to be able to boot from ZFS.
 CLDS: * Import existing ZFS partitions: zpool import -a
-CLDS: * Disk size = 3627204K. Space Used = 46452K. Runtime = 00:00:04:46.
+CLDS: * Disk size = 3627176K. Space Used = 46452K. Runtime = 00:00:04:31.
