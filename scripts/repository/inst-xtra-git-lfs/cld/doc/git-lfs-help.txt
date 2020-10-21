@@ -11,4 +11,16 @@
         git lfs track
     
     # View files being tracked.
-    git lfs ls-files
+        git lfs ls-files
+
+    # Migrate existing files to LFS.
+        git lfs migrate import --include="*.jpg,largefiles/*.xml" --include-ref=refs/heads/master
+        
+        # Helpful: show all refs
+            git show-ref
+
+    # Clean local Git LFS cache.
+        git lfs prune
+
+# Version
+    git lfs version
