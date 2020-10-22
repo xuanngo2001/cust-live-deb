@@ -24,7 +24,7 @@ Hit:22 http://dl.google.com/linux/chrome/deb stable InRelease
 Hit:23 https://deb.nodesource.com/node_12.x stretch InRelease
 Get:24 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 Packages [72.0 kB]
 Get:25 http://localhost/aptly-repo/master_stretch-security-non-free stretch-updates/non-free amd64 Packages [4,460 B]
-Fetched 88.2 kB in 2s (39.7 kB/s)
+Fetched 88.2 kB in 2s (39.2 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -55,8 +55,8 @@ The following packages will be upgraded:
   python-pip-whl python2.7 python2.7-minimal python3-pip rsyslog systemd-sysv
   transmission-common transmission-gtk
 67 upgraded, 0 newly installed, 0 to remove and 22 not upgraded.
-Need to get 123 MB of archives.
-After this operation, 57.4 MB of additional disk space will be used.
+Need to get 124 MB of archives.
+After this operation, 57.7 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 grep amd64 3.3-1~bpo9+1 [377 kB]
 Get:2 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 init-system-helpers all 1.56~bpo9+1 [46.7 kB]
 Get:3 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 init amd64 1.56~bpo9+1 [14.5 kB]
@@ -88,7 +88,7 @@ Get:28 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/
 Get:29 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libx11-data all 2:1.6.4-3+deb9u3 [291 kB]
 Get:30 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libx11-6 amd64 2:1.6.4-3+deb9u3 [749 kB]
 Get:31 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libx11-xcb1 amd64 2:1.6.4-3+deb9u3 [184 kB]
-Get:32 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 firefox-esr amd64 78.3.0esr-1~deb9u2 [57.4 MB]
+Get:32 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 firefox-esr amd64 78.4.0esr-1~deb9u1 [57.5 MB]
 Get:33 http://localhost/aptly-repo/master_stretch-security-non-free stretch-updates/non-free amd64 firmware-atheros all 20190114-2~deb9u1 [4,012 kB]
 Get:34 http://localhost/aptly-repo/master_stretch-security-non-free stretch-updates/non-free amd64 firmware-bnx2 all 20190114-2~deb9u1 [103 kB]
 Get:35 http://localhost/aptly-repo/master_stretch-security-non-free stretch-updates/non-free amd64 firmware-bnx2x all 20190114-2~deb9u1 [2,821 kB]
@@ -126,16 +126,16 @@ Get:66 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/
 Get:67 http://localhost/aptly-repo/master_stretch-security-main stretch-updates/main amd64 libruby2.3 amd64 2.3.3-1+deb9u9 [3,109 kB]
 Extracting templates from packages: 44%Extracting templates from packages: 89%Extracting templates from packages: 100%
 Preconfiguring packages ...
-Fetched 123 MB in 7s (17.0 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86522 files and directories currently installed.)
+Fetched 124 MB in 2s (54.1 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86530 files and directories currently installed.)
 Preparing to unpack .../grep_3.3-1~bpo9+1_amd64.deb ...
 Unpacking grep (3.3-1~bpo9+1) over (2.27-2) ...
 Setting up grep (3.3-1~bpo9+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86522 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86530 files and directories currently installed.)
 Preparing to unpack .../init-system-helpers_1.56~bpo9+1_all.deb ...
 Unpacking init-system-helpers (1.56~bpo9+1) over (1.48) ...
 Setting up init-system-helpers (1.56~bpo9+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86522 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86530 files and directories currently installed.)
 Preparing to unpack .../00-init_1.56~bpo9+1_amd64.deb ...
 Unpacking init (1.56~bpo9+1) over (1.48) ...
 Preparing to unpack .../01-systemd-sysv_241-5~bpo9+1_amd64.deb ...
@@ -163,7 +163,7 @@ Unpacking libpython2.7-minimal:amd64 (2.7.13-2+deb9u4) over (2.7.13-2+deb9u3) ..
 Preparing to unpack .../12-libss2_1.44.5-1~bpo9+1_amd64.deb ...
 Unpacking libss2:amd64 (1.44.5-1~bpo9+1) over (1.43.4-2+deb9u1) ...
 Setting up libss2:amd64 (1.44.5-1~bpo9+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86522 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86530 files and directories currently installed.)
 Preparing to unpack .../00-libxtables12_1.6.2-1.1~bpo9+1_amd64.deb ...
 Unpacking libxtables12:amd64 (1.6.2-1.1~bpo9+1) over (1.6.0+snapshot20161117-6) ...
 Preparing to unpack .../01-iptables_1.6.2-1.1~bpo9+1_amd64.deb ...
@@ -196,9 +196,9 @@ Preparing to unpack .../14-libx11-6_2%3a1.6.4-3+deb9u3_amd64.deb ...
 Unpacking libx11-6:amd64 (2:1.6.4-3+deb9u3) over (2:1.6.4-3+deb9u1) ...
 Preparing to unpack .../15-libx11-xcb1_2%3a1.6.4-3+deb9u3_amd64.deb ...
 Unpacking libx11-xcb1:amd64 (2:1.6.4-3+deb9u3) over (2:1.6.4-3+deb9u1) ...
-Preparing to unpack .../16-firefox-esr_78.3.0esr-1~deb9u2_amd64.deb ...
+Preparing to unpack .../16-firefox-esr_78.4.0esr-1~deb9u1_amd64.deb ...
 Leaving 'diversion of /usr/bin/firefox to /usr/bin/firefox.real by firefox-esr'
-Unpacking firefox-esr (78.3.0esr-1~deb9u2) over (68.10.0esr-1~deb9u1) ...
+Unpacking firefox-esr (78.4.0esr-1~deb9u1) over (68.10.0esr-1~deb9u1) ...
 Preparing to unpack .../17-firmware-atheros_20190114-2~deb9u1_all.deb ...
 Unpacking firmware-atheros (20190114-2~deb9u1) over (20190114-2~bpo9+1) ...
 Preparing to unpack .../18-firmware-bnx2_20190114-2~deb9u1_all.deb ...
@@ -350,7 +350,7 @@ Installing new version of config file /etc/iproute2/rt_tables.d/README ...
 Setting up libjpeg-dev (1:1.5.1-2+deb9u1) ...
 Setting up iptables (1.6.2-1.1~bpo9+1) ...
 Setting up libqt5gui5:amd64 (5.7.1+dfsg-3+deb9u3) ...
-Setting up firefox-esr (78.3.0esr-1~deb9u2) ...
+Setting up firefox-esr (78.4.0esr-1~deb9u1) ...
 Setting up poppler-utils (0.48.0-2+deb9u3) ...
 Setting up libqt5widgets5:amd64 (5.7.1+dfsg-3+deb9u3) ...
 Setting up curl (7.52.1-5+deb9u12) ...
@@ -363,4 +363,4 @@ Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Processing triggers for systemd (232-25+deb9u12) ...
 Processing triggers for menu (2.1.47+b1) ...
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 3900548K. Space Used = 185720K. Runtime = 00:00:00:48.
+CLDS: * Disk size = 3901100K. Space Used = 186096K. Runtime = 00:00:00:44.
