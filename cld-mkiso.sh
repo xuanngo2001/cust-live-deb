@@ -126,7 +126,7 @@ xorriso -as mkisofs -r -J -joliet-long -l \
 				-o ${ISO_FILENAME} \
 				./binary
 
-
+md5sum "${ISO_FILENAME}" > "${ISO_FILENAME}.md5"
 
 # Log directories size.
 ##################################################################
