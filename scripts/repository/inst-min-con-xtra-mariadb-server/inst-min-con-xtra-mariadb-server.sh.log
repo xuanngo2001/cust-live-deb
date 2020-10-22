@@ -40,7 +40,7 @@ Get:17 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 socat 
 Get:18 http://localhost/aptly-repo/master_mariadb-main stretch/main amd64 mariadb-server-10.4 amd64 1:10.4.15+maria~stretch [4,551 kB]
 Get:19 http://localhost/aptly-repo/master_mariadb-main stretch/main amd64 mariadb-server all 1:10.4.15+maria~stretch [3,100 B]
 Preconfiguring packages ...
-Fetched 25.2 MB in 0s (51.8 MB/s)
+Fetched 25.2 MB in 0s (46.9 MB/s)
 Selecting previously unselected package libmpfr4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21934 files and directories currently installed.)
 Preparing to unpack .../libmpfr4_3.1.5-1_amd64.deb ...
@@ -127,19 +127,19 @@ Created symlink /etc/systemd/system/multi-user.target.wants/mariadb.service → 
 Setting up mariadb-server (1:10.4.15+maria~stretch) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 './cld/doc/mysql-error-help.txt' -> '/usr/local/cld/doc/mysql-error-help.txt'
-'./cld/doc/mysql-data-type-help.txt' -> '/usr/local/cld/doc/mysql-data-type-help.txt'
 './cld/doc/mysql-intersect-help.txt' -> '/usr/local/cld/doc/mysql-intersect-help.txt'
+'./cld/doc/mysql-admin-help.txt' -> '/usr/local/cld/doc/mysql-admin-help.txt'
 './cld/doc/mysql-help.txt' -> '/usr/local/cld/doc/mysql-help.txt'
 './cld/doc/mysql-aggregate-help.txt' -> '/usr/local/cld/doc/mysql-aggregate-help.txt'
-'./cld/doc/mysql-sql-examples.sql' -> '/usr/local/cld/doc/mysql-sql-examples.sql'
-'./cld/doc/mysql-view-help.txt' -> '/usr/local/cld/doc/mysql-view-help.txt'
-'./cld/doc/mysql-cmd-help.txt' -> '/usr/local/cld/doc/mysql-cmd-help.txt'
-'./cld/doc/mysql-admin-help.txt' -> '/usr/local/cld/doc/mysql-admin-help.txt'
-'./cld/doc/mysql-alter-help.txt' -> '/usr/local/cld/doc/mysql-alter-help.txt'
-'./cld/doc/mysql-user-help.txt' -> '/usr/local/cld/doc/mysql-user-help.txt'
 './cld/doc/mysql-create-help.txt' -> '/usr/local/cld/doc/mysql-create-help.txt'
+'./cld/doc/mysql-sql-examples.sql' -> '/usr/local/cld/doc/mysql-sql-examples.sql'
 './cld/doc/mysql-trigger-help.txt' -> '/usr/local/cld/doc/mysql-trigger-help.txt'
 './cld/doc/mysql-cnf-help.txt' -> '/usr/local/cld/doc/mysql-cnf-help.txt'
+'./cld/doc/mysql-view-help.txt' -> '/usr/local/cld/doc/mysql-view-help.txt'
+'./cld/doc/mysql-cmd-help.txt' -> '/usr/local/cld/doc/mysql-cmd-help.txt'
+'./cld/doc/mysql-data-type-help.txt' -> '/usr/local/cld/doc/mysql-data-type-help.txt'
+'./cld/doc/mysql-alter-help.txt' -> '/usr/local/cld/doc/mysql-alter-help.txt'
+'./cld/doc/mysql-user-help.txt' -> '/usr/local/cld/doc/mysql-user-help.txt'
 CLDS: * Install mariadb-server.
 CLDS: * Set root password to [password].
-CLDS: * Disk size = 1761180K. Space Used = 330884K. Runtime = 00:00:00:09.
+CLDS: * Disk size = 1761244K. Space Used = 330884K. Runtime = 00:00:00:09.
