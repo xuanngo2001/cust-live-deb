@@ -4,21 +4,21 @@
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
-  * Disk size = 2715152K. Space Used = 204068K. Runtime = 00:00:00:11.
+  * Disk size = 2715364K. Space Used = 203364K. Runtime = 00:00:00:13.
   * The following NEW packages will be installed:
   ```bash
 keyboard-configuration libdrm2 libdrm-amdgpu1 libdrm-common libdrm-intel1
 libdrm-nouveau2 libdrm-radeon1 libegl1-mesa libepoxy0 libevdev2
 libfontenc1 libgbm1 libgl1 libgl1-mesa-dri libgl1-mesa-glx
-libglapi-mesa libglvnd0 libglx0 libglx-mesa0 libgudev-1.0-0
-libice6 libinput10 libinput-bin libllvm3.9 libllvm6.0
-libmtdev1 libpciaccess0 libsensors4 libsm6 libwacom2
-libwacom-common libwayland-client0 libwayland-server0 libx11-xcb1 libxatracker2
-libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
-libxcb-sync1 libxcb-xfixes0 libxdamage1 libxfixes3 libxfont2
-libxkbfile1 libxmu6 libxmuu1 libxshmfence1 libxt6
-libxxf86vm1 x11-xkb-utils xauth xinit xkb-data
-xserver-common xserver-xorg xserver-xorg-core xserver-xorg-input-all xserver-xorg-input-libinput
-xserver-xorg-video-all xserver-xorg-video-amdgpu xserver-xorg-video-ati xserver-xorg-video-fbdev xserver-xorg-video-nouveau
-xserver-xorg-video-radeon xserver-xorg-video-vesa xserver-xorg-video-vmware
+libglapi-mesa libglx0 libglx-mesa0 libgudev-1.0-0 libice6
+libinput10 libinput-bin libllvm3.9 libllvm6.0 libmtdev1
+libpciaccess0 libsensors4 libsm6 libwacom2 libwacom-common
+libwayland-client0 libwayland-server0 libx11-xcb1 libxatracker2 libxaw7
+libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-sync1
+libxcb-xfixes0 libxdamage1 libxfixes3 libxfont2 libxkbfile1
+libxmu6 libxmuu1 libxshmfence1 libxt6 libxxf86vm1
+x11-xkb-utils xauth xinit xkb-data xserver-common
+xserver-xorg xserver-xorg-core xserver-xorg-input-all xserver-xorg-input-libinput xserver-xorg-video-all
+xserver-xorg-video-amdgpu xserver-xorg-video-ati xserver-xorg-video-fbdev xserver-xorg-video-nouveau xserver-xorg-video-radeon
+xserver-xorg-video-vesa xserver-xorg-video-vmware
   ```
