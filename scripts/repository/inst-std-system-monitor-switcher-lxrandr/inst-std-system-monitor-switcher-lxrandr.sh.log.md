@@ -3,7 +3,7 @@
   * After this operation, 392 kB of additional disk space will be used.
   * Install Monitor Switcher: lxrandr.
   * Add lxrandr key binding.
-  * Disk size = 3664124K. Space Used = 908K. Runtime = 00:00:00:03.
+  * Disk size = 3680208K. Space Used = 904K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 lxrandr x11-xserver-utils

@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-git-lfs.sh ...
-  * Disk size = 3882512K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 3898604K. Space Used = 4K. Runtime = 00:00:00:01.
