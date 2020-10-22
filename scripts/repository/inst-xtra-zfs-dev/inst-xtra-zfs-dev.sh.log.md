@@ -5,7 +5,7 @@
   * Install latest version from upstream.
   * This is script is created for Stretch.
   * Install zfs-dkms: version: 0.8.3-1
-  * Disk size = 3713956K. Space Used = 189392K. Runtime = 00:00:04:06.
+  * Disk size = 3714828K. Space Used = 189392K. Runtime = 00:00:04:14.
   * The following NEW packages will be installed:
   ```bash
 build-essential* dkms file* libc6-dev* libelf-dev

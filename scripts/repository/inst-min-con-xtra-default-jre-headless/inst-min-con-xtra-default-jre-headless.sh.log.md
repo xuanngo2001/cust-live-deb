@@ -3,7 +3,7 @@
   * Install openjdk version "1.8.0_252".
   * To install JAVA binary: https://wiki.debian.org/JavaPackage.
   * JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64".
-  * Disk size = 1408688K. Space Used = 161648K. Runtime = 00:00:00:08.
+  * Disk size = 1408752K. Space Used = 161648K. Runtime = 00:00:00:09.
   * The following NEW packages will be installed:
   ```bash
 ca-certificates-java default-jre-headless fontconfig-config fonts-dejavu-core java-common

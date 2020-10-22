@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-win-00-xorg-fix-libgl1-mesa-glx.sh ...
   * Force explicit download of libgl1-mesa-glx from Stretch-backport.
-  * Disk size = 2509416K. Space Used = 12K. Runtime = 00:00:00:01.
+  * Disk size = 2511084K. Space Used = 16K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libdrm2 libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm-nouveau2

@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-con-05-keyring-google.sh ...
   * Install Google repository key.
-  * Disk size = 810728K. Space Used = 16K. Runtime = 00:00:00:01.
+  * Disk size = 810788K. Space Used = 16K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 dirmngr* gnupg*
