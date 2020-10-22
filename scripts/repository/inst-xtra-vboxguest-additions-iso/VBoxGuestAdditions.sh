@@ -11,7 +11,8 @@ URL=http://download.virtualbox.org/virtualbox/6.0.18/VBoxGuestAdditions_6.0.18.i
 URL=http://download.virtualbox.org/virtualbox/6.1.4/VBoxGuestAdditions_6.1.4.iso    # Clipboard doesn't work.
 URL=http://download.virtualbox.org/virtualbox/6.1.2/VBoxGuestAdditions_6.1.2.iso
 URL=http://download.virtualbox.org/virtualbox/6.1.6/VBoxGuestAdditions_6.1.6.iso
-URL=http://download.virtualbox.org/virtualbox/6.1.14/VBoxGuestAdditions_6.1.14.iso
+URL=http://download.virtualbox.org/virtualbox/6.1.14/VBoxGuestAdditions_6.1.14.iso  # ok clipboard but crash on windows host.
+URL=http://download.virtualbox.org/virtualbox/6.0.24/VBoxGuestAdditions_6.0.24.iso
 
 # Download ISO if not already exists.
     vbox_iso_txt="VBoxGuestAdditions.iso.txt"
