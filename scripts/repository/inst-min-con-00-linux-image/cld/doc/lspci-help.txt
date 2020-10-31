@@ -1,5 +1,6 @@
 # Display your video card.
-    lspci -vnn | grep VGA -A 1
+    lspci -nnk | grep -i VGA -A3 | grep 'in use'
+    lspci -vnn | grep VGA -A1
     
 # Check if network card is detected.
 #   For Wifi on laptop, ensure that you didn't accidentally press a key to kill the wifi anthenna.
