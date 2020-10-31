@@ -16,6 +16,7 @@ URL=http://download.virtualbox.org/virtualbox/6.0.24/VBoxGuestAdditions_6.0.24.i
 
 # Download ISO if not already exists.
     vbox_iso_txt="VBoxGuestAdditions.iso.txt"
+        touch "${vbox_iso_txt}"
     dled_iso=$(cat "${vbox_iso_txt}")
     iso_file=$(basename $URL)
 
