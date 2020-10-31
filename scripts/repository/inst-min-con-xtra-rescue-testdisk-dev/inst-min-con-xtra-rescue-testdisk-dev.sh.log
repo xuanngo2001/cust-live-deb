@@ -72,7 +72,7 @@ Get:37 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libewf
 Get:38 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtinfo-dev amd64 6.0+20161126-1+deb9u2 [79.2 kB]
 Get:39 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libncurses5-dev amd64 6.0+20161126-1+deb9u2 [175 kB]
 Extracting templates from packages: 76%Extracting templates from packages: 100%
-Fetched 36.8 MB in 0s (42.4 MB/s)
+Fetched 36.8 MB in 0s (37.0 MB/s)
 dpkg: libcomerr2:amd64: dependency problems, but removing anyway as you requested:
  libkrb5-3:amd64 depends on libcomerr2 (>= 1.34).
  libgssapi-krb5-2:amd64 depends on libcomerr2 (>= 1.34).
@@ -272,7 +272,7 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjpeg
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libncursesw5-dev amd64 6.0+20161126-1+deb9u2 [200 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ntfs-3g-dev amd64 1:2016.2.22AR.1+dfsg-1+deb9u1 [234 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 uuid-dev amd64 2.29.2-1+deb9u1 [83.9 kB]
-Fetched 784 kB in 0s (5,723 kB/s)
+Fetched 784 kB in 0s (11.9 MB/s)
 Selecting previously unselected package libjpeg62-turbo-dev:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27512 files and directories currently installed.)
 Preparing to unpack .../libjpeg62-turbo-dev_1%3a1.5.1-2_amd64.deb ...
@@ -348,7 +348,7 @@ Get:24 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 po-deb
 Get:25 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 debhelper all 12.1.1~bpo9+1 [1,012 kB]
 Get:26 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 pkg-config amd64 0.29-4+b1 [63.3 kB]
 Preconfiguring packages ...
-Fetched 15.4 MB in 0s (48.9 MB/s)
+Fetched 15.4 MB in 0s (39.5 MB/s)
 Selecting previously unselected package groff-base.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27638 files and directories currently installed.)
 Preparing to unpack .../00-groff-base_1.22.3-9_amd64.deb ...
@@ -2491,7 +2491,7 @@ file_dpx.c:82:63: warning: pointer targets in passing argument 1 of ‘get_time_
      file_recovery_new->time=get_time_from_YYYY_MM_DD_HH_MM_SS(dpx->create_time);
                                                                ^~~
 In file included from file_dpx.c:35:0:
-filegen.h:310:8: note: expected ‘const unsigned char *’ but argument is of type ‘const char *’
+filegen.h:311:8: note: expected ‘const unsigned char *’ but argument is of type ‘const char *’
  time_t get_time_from_YYYY_MM_DD_HH_MM_SS(const unsigned char *date_asc);
         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 file_dpx.c:69:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
@@ -5242,29 +5242,29 @@ file_tg.c:45:149: warning: unused parameter ‘file_recovery’ [-Wunused-parame
                                                                                                                                                      ^~~~~~~~~~~~~
   CC       file_tib.o
 file_tib.c: In function ‘header_check_tib’:
-file_tib.c:104:50: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+file_tib.c:108:50: warning: unused parameter ‘buffer’ [-Wunused-parameter]
  static int header_check_tib(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                   ^~~~~~
-file_tib.c:104:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+file_tib.c:108:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_tib(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                              ^~~~~~~~~~~
-file_tib.c:104:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+file_tib.c:108:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_tib(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
-file_tib.c:104:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+file_tib.c:108:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
  static int header_check_tib(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                       ^~~~~~~~~~~~~
 file_tib.c: In function ‘header_check_tib2’:
-file_tib.c:111:51: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+file_tib.c:115:51: warning: unused parameter ‘buffer’ [-Wunused-parameter]
  static int header_check_tib2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                    ^~~~~~
-file_tib.c:111:78: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+file_tib.c:115:78: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_tib2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                               ^~~~~~~~~~~
-file_tib.c:111:110: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+file_tib.c:115:110: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_tib2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                               ^~~~~~~~~~~~~~~~
-file_tib.c:111:151: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+file_tib.c:115:151: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
  static int header_check_tib2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                        ^~~~~~~~~~~~~
   CC       file_tiff.o
@@ -5327,10 +5327,13 @@ file_tpl.c:45:150: warning: unused parameter ‘file_recovery’ [-Wunused-param
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_ttf.o
 file_ttf.c: In function ‘header_check_ttf’:
-file_ttf.c:75:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+file_ttf.c:97:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if((16<<entrySelector) != searchRange)
+                          ^~
+file_ttf.c:82:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_ttf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
-file_ttf.c:75:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+file_ttf.c:82:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
  static int header_check_ttf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_txt.o
@@ -5626,23 +5629,26 @@ file_vib.c:45:150: warning: unused parameter ‘file_recovery’ [-Wunused-param
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_vmdk.o
 file_vmdk.c: In function ‘header_check_vmdk3’:
-file_vmdk.c:77:79: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+file_vmdk.c:78:79: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_vmdk3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                ^~~~~~~~~~~
-file_vmdk.c:77:111: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+file_vmdk.c:78:111: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_vmdk3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                ^~~~~~~~~~~~~~~~
-file_vmdk.c:77:152: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+file_vmdk.c:78:152: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
  static int header_check_vmdk3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                         ^~~~~~~~~~~~~
 file_vmdk.c: In function ‘header_check_vmdk4’:
-file_vmdk.c:93:79: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+file_vmdk.c:99:12: warning: variable ‘l1_entry_sectors’ set but not used [-Wunused-but-set-variable]
+   uint64_t l1_entry_sectors;
+            ^~~~~~~~~~~~~~~~
+file_vmdk.c:94:79: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_vmdk4(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                ^~~~~~~~~~~
-file_vmdk.c:93:111: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+file_vmdk.c:94:111: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_vmdk4(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                ^~~~~~~~~~~~~~~~
-file_vmdk.c:93:152: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+file_vmdk.c:94:152: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
  static int header_check_vmdk4(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                         ^~~~~~~~~~~~~
   CC       file_vmg.o
@@ -5866,13 +5872,13 @@ file_x3i.c:45:150: warning: unused parameter ‘file_recovery’ [-Wunused-param
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_x4a.o
 file_x4a.c: In function ‘header_check_ysfc100’:
-file_x4a.c:78:81: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+file_x4a.c:86:81: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_ysfc100(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                  ^~~~~~~~~~~
-file_x4a.c:78:113: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+file_x4a.c:86:113: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_ysfc100(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                  ^~~~~~~~~~~~~~~~
-file_x4a.c:78:154: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+file_x4a.c:86:154: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
  static int header_check_ysfc100(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                           ^~~~~~~~~~~~~
   CC       file_xar.o
@@ -5923,44 +5929,44 @@ file_xfs.c:48:153: warning: unused parameter ‘file_recovery’ [-Wunused-param
  static int header_check_xfs_sb(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                          ^~~~~~~~~~~~~
 file_xfs.c: In function ‘data_check_stopasap’:
-file_xfs.c:64:62: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+file_xfs.c:69:62: warning: unused parameter ‘buffer’ [-Wunused-parameter]
  static data_check_t data_check_stopasap(const unsigned char *buffer, const unsigned int buffer_size, file_recovery_t *file_recovery)
                                                               ^~~~~~
-file_xfs.c:64:89: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+file_xfs.c:69:89: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static data_check_t data_check_stopasap(const unsigned char *buffer, const unsigned int buffer_size, file_recovery_t *file_recovery)
                                                                                          ^~~~~~~~~~~
-file_xfs.c:64:119: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+file_xfs.c:69:119: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
  static data_check_t data_check_stopasap(const unsigned char *buffer, const unsigned int buffer_size, file_recovery_t *file_recovery)
                                                                                                                        ^~~~~~~~~~~~~
 file_xfs.c: In function ‘header_save_xfs’:
-file_xfs.c:69:49: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+file_xfs.c:74:49: warning: unused parameter ‘buffer’ [-Wunused-parameter]
  static int header_save_xfs(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                  ^~~~~~
-file_xfs.c:69:76: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+file_xfs.c:74:76: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_save_xfs(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                             ^~~~~~~~~~~
-file_xfs.c:69:149: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+file_xfs.c:74:149: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
  static int header_save_xfs(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                      ^~~~~~~~~~~~~
 file_xfs.c: In function ‘header_check_xfs_inode’:
-file_xfs.c:119:83: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+file_xfs.c:124:83: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_xfs_inode(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                    ^~~~~~~~~~~
-file_xfs.c:119:156: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+file_xfs.c:124:156: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
  static int header_check_xfs_inode(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                             ^~~~~~~~~~~~~
   CC       file_xm.o
 file_xm.c: In function ‘header_check_xm’:
-file_xm.c:182:49: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+file_xm.c:206:49: warning: unused parameter ‘buffer’ [-Wunused-parameter]
  static int header_check_xm(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                  ^~~~~~
-file_xm.c:182:76: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+file_xm.c:206:76: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_xm(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                             ^~~~~~~~~~~
-file_xm.c:182:108: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+file_xm.c:206:108: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_xm(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                             ^~~~~~~~~~~~~~~~
-file_xm.c:182:149: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+file_xm.c:206:149: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
  static int header_check_xm(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                      ^~~~~~~~~~~~~
   CC       file_xml.o
@@ -6102,6 +6108,7 @@ suspend_no.c:20:32: warning: unused parameter ‘cinfo’ [-Wunused-parameter]
   CCLD     fidentify
 make[2]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk/src'
 make[2]: Entering directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
+make[2]: Nothing to be done for 'all-am'.
 make[2]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 make[1]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 Making install in icons
@@ -6151,4 +6158,4 @@ make[3]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-te
 make[2]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 make[1]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 CLDS: * Install testdisk-dev.
-CLDS: * Disk size = 2446044K. Space Used = 316064K. Runtime = 00:00:04:06.
+CLDS: * Disk size = 2446300K. Space Used = 316364K. Runtime = 00:00:04:18.
