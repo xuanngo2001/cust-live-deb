@@ -23,15 +23,15 @@ Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libapru
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-3 [19.3 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libaprutil1-ldap amd64 1.5.4-3 [17.4 kB]
 Get:6 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 liblua5.2-0 amd64 5.2.4-1.1+b2 [110 kB]
-Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libicu57 amd64 57.1-6+deb9u3 [7,705 kB]
+Get:7 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libicu57 amd64 57.1-6+deb9u4 [7,699 kB]
 Get:8 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libxml2 amd64 2.9.4+dfsg1-2.2+deb9u2 [920 kB]
 Get:9 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-bin amd64 2.4.25-3+deb9u9 [1,185 kB]
 Get:10 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-utils amd64 2.4.25-3+deb9u9 [218 kB]
 Get:11 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2-data all 2.4.25-3+deb9u9 [162 kB]
 Get:12 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 apache2 amd64 2.4.25-3+deb9u9 [237 kB]
-Fetched 10.8 MB in 0s (80.4 MB/s)
+Fetched 10.8 MB in 0s (69.6 MB/s)
 Selecting previously unselected package mime-support.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20214 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20191 files and directories currently installed.)
 Preparing to unpack .../00-mime-support_3.60_all.deb ...
 Unpacking mime-support (3.60) ...
 Selecting previously unselected package libapr1:amd64.
@@ -50,8 +50,8 @@ Selecting previously unselected package liblua5.2-0:amd64.
 Preparing to unpack .../05-liblua5.2-0_5.2.4-1.1+b2_amd64.deb ...
 Unpacking liblua5.2-0:amd64 (5.2.4-1.1+b2) ...
 Selecting previously unselected package libicu57:amd64.
-Preparing to unpack .../06-libicu57_57.1-6+deb9u3_amd64.deb ...
-Unpacking libicu57:amd64 (57.1-6+deb9u3) ...
+Preparing to unpack .../06-libicu57_57.1-6+deb9u4_amd64.deb ...
+Unpacking libicu57:amd64 (57.1-6+deb9u4) ...
 Selecting previously unselected package libxml2:amd64.
 Preparing to unpack .../07-libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb ...
 Unpacking libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
@@ -70,7 +70,7 @@ Unpacking apache2 (2.4.25-3+deb9u9) ...
 Setting up libapr1:amd64 (1.5.2-5) ...
 Setting up mime-support (3.60) ...
 Setting up apache2-data (2.4.25-3+deb9u9) ...
-Setting up libicu57:amd64 (57.1-6+deb9u3) ...
+Setting up libicu57:amd64 (57.1-6+deb9u4) ...
 Setting up libxml2:amd64 (2.9.4+dfsg1-2.2+deb9u2) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Setting up libaprutil1:amd64 (1.5.4-3) ...
@@ -114,4 +114,4 @@ Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Processing triggers for systemd (232-25+deb9u12) ...
 './cld/doc/apache-help.txt' -> '/usr/local/cld/doc/apache-help.txt'
 CLDS: * Install apache2.
-CLDS: * Disk size = 1361404K. Space Used = 51636K. Runtime = 00:00:00:04.
+CLDS: * Disk size = 1419824K. Space Used = 51604K. Runtime = 00:00:00:04.

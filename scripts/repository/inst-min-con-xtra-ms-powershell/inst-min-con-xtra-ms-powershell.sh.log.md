@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-xtra-ms-powershell.sh ...
   * Install PowerShell.
-  * Disk size = 2074088K. Space Used = 162960K. Runtime = 00:00:00:02.
+  * Disk size = 2133488K. Space Used = 162960K. Runtime = 00:00:00:01.

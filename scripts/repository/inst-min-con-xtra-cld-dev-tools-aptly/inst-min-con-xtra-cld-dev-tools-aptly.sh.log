@@ -7,16 +7,15 @@ Hit:5 http://localhost/aptly-repo/master_docker-stable stretch InRelease
 Hit:6 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:7 http://localhost/aptly-repo/master_mariadb-main stretch InRelease
 Hit:8 http://localhost/aptly-repo/master_mono-main stable-stretch InRelease
-Hit:9 http://localhost/aptly-repo/master_qgis-main stretch InRelease
-Hit:10 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports InRelease
-Hit:11 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports InRelease
-Hit:12 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports InRelease
-Hit:13 http://localhost/aptly-repo/master_stretch-contrib stretch InRelease
-Hit:14 http://localhost/aptly-repo/master_stretch-non-free stretch InRelease
-Hit:15 http://localhost/aptly-repo/master_stretch-updates-contrib stretch-updates InRelease
-Hit:16 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates InRelease
-Hit:17 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease
-Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
+Hit:9 http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports InRelease
+Hit:10 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports InRelease
+Hit:11 http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports InRelease
+Hit:12 http://localhost/aptly-repo/master_stretch-contrib stretch InRelease
+Hit:13 http://localhost/aptly-repo/master_stretch-non-free stretch InRelease
+Hit:14 http://localhost/aptly-repo/master_stretch-updates-contrib stretch-updates InRelease
+Hit:15 http://localhost/aptly-repo/master_stretch-updates-main stretch-updates InRelease
+Hit:16 http://localhost/aptly-repo/master_stretch-updates-non-free stretch-updates InRelease
+Hit:17 http://localhost/aptly-repo/master_virtualbox-contrib stretch InRelease
 Reading package lists...
 ********** START install *****************
 Reading package lists...
@@ -29,9 +28,9 @@ Need to get 10.9 MB of archives.
 After this operation, 24.7 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 xz-utils amd64 5.2.2-1.2+b1 [266 kB]
 Get:2 http://localhost/aptly-repo/master_aptly-main squeeze/main amd64 aptly amd64 1.4.0 [10.7 MB]
-Fetched 10.9 MB in 0s (78.4 MB/s)
+Fetched 10.9 MB in 0s (94.4 MB/s)
 Selecting previously unselected package xz-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20994 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20971 files and directories currently installed.)
 Preparing to unpack .../xz-utils_5.2.2-1.2+b1_amd64.deb ...
 Unpacking xz-utils (5.2.2-1.2+b1) ...
 Selecting previously unselected package aptly.
@@ -45,4 +44,4 @@ Setting up aptly (1.4.0) ...
 CLDS: * Add aptly nightly build repository.
 CLDS: * Install aptly version: 1.4.0 to create local debian repository.
 CLDS: * Add xz-utils package because aptly snapshot merge needs it.
-CLDS: * Disk size = 1396432K. Space Used = 34784K. Runtime = 00:00:00:04.
+CLDS: * Disk size = 1454852K. Space Used = 34788K. Runtime = 00:00:00:02.
