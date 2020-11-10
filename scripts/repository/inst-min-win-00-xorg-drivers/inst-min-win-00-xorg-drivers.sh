@@ -27,7 +27,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	apt-get install -y xserver-xorg-video-qxl
 	apt-get install -y xserver-xorg-video-mga
 	
-	apt-get install -y xserver-xorg-legacy		# /var/log/Xorg.0.log: modeset(0) failed to initialize glamor at screeninit() time
+#	apt-get install -y xserver-xorg-legacy		# /var/log/Xorg.0.log: modeset(0) failed to initialize glamor at screeninit() time
 	
 # Log
 	echo "${GV_LOG} * Install common xorg drivers."
