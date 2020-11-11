@@ -1,6 +1,29 @@
-# Set user name and email.
-	git config --global user.email "you@example.com"
-	git config --global user.name "Your Name"
+# Git global setup
+    git config --global user.name "John Doe"
+    git config --global user.email "xuanngo2001@yahoo.com"
+
+# Create a new repository
+    git clone git@gitlab.com:jdoes/toonize.git
+    cd toonize
+    touch README.md
+    git add README.md
+    git commit -m "add README"
+    git push -u origin master
+
+# Push an existing folder
+    cd existing_folder
+    git init
+    git remote add origin git@gitlab.com:jdoes/toonize.git
+    git add .
+    git commit -m "Initial commit"
+    git push -u origin master
+
+# Push an existing Git repository
+    cd existing_repo
+    git remote rename origin old-origin
+    git remote add origin git@gitlab.com:jdoes/toonize.git
+    git push -u origin --all
+    git push -u origin --tags
 
 # Commit specific files.
     git commit -m "my notes." file1 file2 fileN
