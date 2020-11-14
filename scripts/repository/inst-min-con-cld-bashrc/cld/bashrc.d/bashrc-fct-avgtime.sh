@@ -1,5 +1,5 @@
 # https://stackoverflow.com/a/54920339
-avgtime() {
+function avgtime() {
     #
     # usage: avg_time n command ...
     #
@@ -18,3 +18,5 @@ avgtime() {
                  if (ns>0) printf("sys %f\n",  sys/ns)
                }'
 }
+
+export -f avgtime
