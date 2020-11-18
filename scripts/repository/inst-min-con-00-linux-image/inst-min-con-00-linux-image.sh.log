@@ -205,7 +205,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 831 kB in 0s (14.3 MB/s)
+Fetched 831 kB in 0s (16.6 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9230 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.12.20-0+deb10u1_amd64.deb ...
@@ -273,7 +273,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 51.9 MB in 1s (39.7 MB/s)
+Fetched 51.9 MB in 1s (40.8 MB/s)
 Selecting previously unselected package libxxhash0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9453 files and directories currently installed.)
 Preparing to unpack .../libxxhash0_0.6.5-2_amd64.deb ...
@@ -421,36 +421,36 @@ un  linux-image-generic                      <none>           <none>       (no d
 total 36808
 -rw-r--r-- 1 root root       83 Sep 26 17:31 System.map-5.8.0-0.bpo.2-amd64
 -rw-r--r-- 1 root root   233626 Sep 26 17:31 config-5.8.0-0.bpo.2-amd64
--rw-r--r-- 1 root root 31756139 Nov 10 14:51 initrd.img-5.8.0-0.bpo.2-amd64
+-rw-r--r-- 1 root root 31753311 Nov 16 22:45 initrd.img-5.8.0-0.bpo.2-amd64
 -rw-r--r-- 1 root root  5690736 Sep 26 17:31 vmlinuz-5.8.0-0.bpo.2-amd64
 e0a6c09212a19ed48183a052eab847e7  /boot/System.map-5.8.0-0.bpo.2-amd64
 0f3cca1a4c920811421ab8c8e93f0fd4  /boot/config-5.8.0-0.bpo.2-amd64
-572808691857c9e409d19b1a38fd5d34  /boot/initrd.img-5.8.0-0.bpo.2-amd64
+731c05e878b3fa82c7610ab023b03b07  /boot/initrd.img-5.8.0-0.bpo.2-amd64
 11a5df52d47bebbfebb8041fb54793cd  /boot/vmlinuz-5.8.0-0.bpo.2-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Nov 10 14:50 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Nov 10 14:51 boot
-drwxr-xr-x  17 root root 3520 Nov 10 09:00 dev
-drwxr-xr-x  49 root root 4096 Nov 10 14:51 etc
+lrwxrwxrwx   1 root root    7 Nov 16 22:44 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Nov 16 22:45 boot
+drwxr-xr-x  17 root root 3540 Nov 16 16:53 dev
+drwxr-xr-x  49 root root 4096 Nov 16 22:45 etc
 drwxr-xr-x   2 root root 4096 Sep 19 21:39 home
-lrwxrwxrwx   1 root root   35 Nov 10 14:51 initrd.img -> boot/initrd.img-5.8.0-0.bpo.2-amd64
-lrwxrwxrwx   1 root root    7 Nov 10 14:50 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Nov 10 14:50 lib32 -> usr/lib32
-lrwxrwxrwx   1 root root    9 Nov 10 14:50 lib64 -> usr/lib64
-lrwxrwxrwx   1 root root   10 Nov 10 14:50 libx32 -> usr/libx32
-drwxr-xr-x   2 root root 4096 Nov 10 14:50 media
-drwxr-xr-x   2 root root 4096 Nov 10 14:50 mnt
-drwxr-xr-x   2 root root 4096 Nov 10 14:50 opt
-dr-xr-xr-x 295 root root    0 Nov 10 14:51 proc
-drwx------   3 root root 4096 Nov 10 14:51 root
-drwxr-xr-x   4 root root 4096 Nov 10 14:50 run
-lrwxrwxrwx   1 root root    8 Nov 10 14:50 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Nov 10 14:50 srv
-dr-xr-xr-x  13 root root    0 Nov 10 08:59 sys
-drwxrwxrwt   2 root root 4096 Nov 10 14:51 tmp
-drwxr-xr-x  13 root root 4096 Nov 10 14:50 usr
-drwxr-xr-x  11 root root 4096 Nov 10 14:50 var
-lrwxrwxrwx   1 root root   32 Nov 10 14:51 vmlinuz -> boot/vmlinuz-5.8.0-0.bpo.2-amd64
+lrwxrwxrwx   1 root root   35 Nov 16 22:45 initrd.img -> boot/initrd.img-5.8.0-0.bpo.2-amd64
+lrwxrwxrwx   1 root root    7 Nov 16 22:44 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Nov 16 22:44 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Nov 16 22:44 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Nov 16 22:44 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Nov 16 22:44 media
+drwxr-xr-x   2 root root 4096 Nov 16 22:44 mnt
+drwxr-xr-x   2 root root 4096 Nov 16 22:44 opt
+dr-xr-xr-x 306 root root    0 Nov 16 22:44 proc
+drwx------   3 root root 4096 Nov 16 22:44 root
+drwxr-xr-x   4 root root 4096 Nov 16 22:44 run
+lrwxrwxrwx   1 root root    8 Nov 16 22:44 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Nov 16 22:44 srv
+dr-xr-xr-x  13 root root    0 Nov 16 16:52 sys
+drwxrwxrwt   2 root root 4096 Nov 16 22:45 tmp
+drwxr-xr-x  13 root root 4096 Nov 16 22:44 usr
+drwxr-xr-x  11 root root 4096 Nov 16 22:44 var
+lrwxrwxrwx   1 root root   32 Nov 16 22:45 vmlinuz -> boot/vmlinuz-5.8.0-0.bpo.2-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-5.8.0-0.bpo.2-amd64.
-CLDS: * Disk size = 721984K. Space Used = 378464K. Runtime = 00:00:00:41.
+CLDS: * Disk size = 721996K. Space Used = 378464K. Runtime = 00:00:00:42.
