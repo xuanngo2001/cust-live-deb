@@ -1,0 +1,41 @@
+https://docs.docker.com/get-started/#images-and-containers
+Fundamentally, a container is nothing but a running process, with some added encapsulation features applied to it in order to keep it isolated from the host and from other containers. One of the most important aspects of container isolation is that each container interacts with its own private filesystem; this filesystem is provided by a Docker image. An image includes everything needed to run an application - the code or binary, runtimes, dependencies, and any other filesystem objects required.
+
+Image: filesystem:
+    Container: Big.exe
+
+
+
+# https://www.youtube.com/watch?v=iqqDU2crIEQ&feature=emb_logo
+    docker build --tag hello-world -f
+        # Must have Dockerfile
+    docker build <a container>
+
+    docker images
+    docker ps
+    docker ps -a
+
+    docker start <image>
+    docker stop <image>
+
+    docker rm <image>
+
+    docker run --help
+    docker run -p 8080:80 --name hello -d hello-world
+    docker run -p <local port>:<container port>
+    docker stop hello
+
+    docker logs hello -f
+
+
+    ## Docker hub
+        docker tag hello-world xngo/hello-world
+        docker push xngo/hello-world
+
+        docker rmi xngo/hello-world
+
+        docker pull xngo/hello-world
+
+   ## Docker compose
+        dcoker-compose up -d
+            # Must have docker-compose.yml
