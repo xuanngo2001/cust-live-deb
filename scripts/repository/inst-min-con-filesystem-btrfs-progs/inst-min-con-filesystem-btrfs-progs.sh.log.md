@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-filesystem-btrfs-progs.sh ...
   * After this operation, 4,269 kB of additional disk space will be used.
   * Install btrfs-progs.
-  * Disk size = 796248K. Space Used = 5476K. Runtime = 00:00:00:15.
+  * Disk size = 796232K. Space Used = 5472K. Runtime = 00:00:00:17.
   * The following NEW packages will be installed:
   ```bash
 btrfs-progs liblzo2-2

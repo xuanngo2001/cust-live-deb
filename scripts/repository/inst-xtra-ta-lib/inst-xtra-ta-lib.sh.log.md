@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-xtra-ta-lib.sh ...
   * After this operation, 126 MB of additional disk space will be used.
-  * Disk size = 4796532K. Space Used = 142284K. Runtime = 00:00:00:08.
+  * Disk size = 4797596K. Space Used = 142276K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 binutils binutils-common binutils-x86-64-linux-gnu build-essential dpkg-dev
