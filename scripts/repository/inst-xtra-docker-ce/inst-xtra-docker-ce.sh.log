@@ -24,7 +24,7 @@ The following NEW packages will be installed:
 Need to get 415 kB of archives.
 After this operation, 429 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 gnupg-agent all 2.2.20-1~bpo10+1 [415 kB]
-Fetched 415 kB in 0s (11.1 MB/s)
+Fetched 415 kB in 0s (10.9 MB/s)
 Selecting previously unselected package gnupg-agent.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54170 files and directories currently installed.)
 Preparing to unpack .../gnupg-agent_2.2.20-1~bpo10+1_all.deb ...
@@ -59,7 +59,7 @@ Get:7 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-g
 Get:8 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-pycurl amd64 7.43.0.2-0.1 [66.3 kB]
 Get:9 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-software-properties all 0.96.20.2-2 [49.6 kB]
 Get:10 http://localhost/aptly-repo/master_buster-main buster/main amd64 software-properties-common all 0.96.20.2-2 [83.3 kB]
-Fetched 3,627 kB in 0s (38.6 MB/s)
+Fetched 3,627 kB in 0s (28.3 MB/s)
 Selecting previously unselected package libpackagekit-glib2-18:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54175 files and directories currently installed.)
 Preparing to unpack .../0-libpackagekit-glib2-18_1.1.12-5_amd64.deb ...
@@ -127,8 +127,8 @@ Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
 Get:20 https://download.docker.com/linux/debian buster InRelease [44.4 kB]
 Get:21 http://dl.google.com/linux/chrome/deb stable InRelease [1,811 B]
 Get:22 https://download.docker.com/linux/debian buster/stable amd64 Packages [13.3 kB]
-Get:23 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,090 B]
-Fetched 60.7 kB in 3s (23.4 kB/s)
+Get:23 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,064 B]
+Fetched 60.6 kB in 3s (23.2 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -143,7 +143,7 @@ After this operation, 409 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_docker-stable buster/stable amd64 containerd.io amd64 1.3.7-1 [24.4 MB]
 Get:2 http://localhost/aptly-repo/master_docker-stable buster/stable amd64 docker-ce-cli amd64 5:19.03.13~3-0~debian-buster [44.2 MB]
 Get:3 http://localhost/aptly-repo/master_docker-stable buster/stable amd64 docker-ce amd64 5:19.03.13~3-0~debian-buster [22.5 MB]
-Fetched 91.0 MB in 2s (49.8 MB/s)
+Fetched 91.0 MB in 2s (46.9 MB/s)
 Selecting previously unselected package containerd.io.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55569 files and directories currently installed.)
 Preparing to unpack .../containerd.io_1.3.7-1_amd64.deb ...
@@ -165,4 +165,4 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Processing triggers for systemd (241-7~deb10u4) ...
 './cld/doc/docker-help.txt' -> '/usr/local/cld/doc/docker-help.txt'
 CLDS: * Install docker-ce.
-CLDS: * Disk size = 4333588K. Space Used = 501628K. Runtime = 00:00:00:22.
+CLDS: * Disk size = 4334652K. Space Used = 501628K. Runtime = 00:00:00:23.
