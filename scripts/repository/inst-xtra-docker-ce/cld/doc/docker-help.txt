@@ -4,9 +4,20 @@ Fundamentally, a container is nothing but a running process, with some added enc
 Image: filesystem:
     Container: Big.exe
 
+# Change Root dir
+    echo '{ "graph": "/media/sql/docker" }' > /etc/docker/daemon.json
+    systemctl restart docker
 
+# Default docker data directory.
+    /var/lib/docker/
+    systemctl restart docker
+    # service docker stop
+    # service docker start
 
-# https://www.youtube.com/watch?v=iqqDU2crIEQ&feature=emb_logo
+# Ignore file.
+    .dockerignore
+    
+# https://www.youtube.com/watch?v=iqqDU2crIEQ
     docker build --tag hello-world -f
         # Must have Dockerfile
     docker build <a container>
@@ -39,3 +50,36 @@ Image: filesystem:
    ## Docker compose
         dcoker-compose up -d
             # Must have docker-compose.yml
+            
+# Where docker files are stored
+    docker info | grep 'Docker Root Dir'
+
+
+# Delete all containers.
+    docker rm $(docker ps -a | tail +2 | cut -d' ' -f1 | xargs)
+
+# Delete all images with <none> name.
+    docker rmi $(docker images | grep '<none>' | awk '{print $3}')
+    
+# Image
+    # List what is inside the image.
+        docker run -it --rm <image> ls
+        
+    # Access all commands of the image.
+	    docker run -it --rm py-hello cp --help
+	    docker run -it --rm py-hello ls --help
+	    docker run -it --rm py-hello mv --help
+	    docker run -it --rm py-hello find --help
+	    
+	    docker run -it --rm py-hello echo 'hello'
+        docker run -it --rm py-hello ls /
+
+# Passing input file to image. Use docker volumes. https://stackoverflow.com/a/41092636
+    docker run -v /local/path/to/file1.txt:/container/path/to/file1.txt -t <image> python myscrip.py file1.txt
+    
+# Passing args to Dockerfile: https://stackoverflow.com/a/51708059
+    You'd have to docker "build --build-arg build-date=$(date)" or something like that. 
+    Having done that, you can refer to the argument using something similar to shell variable syntax at build time.
+
+# Access docker.
+    docker exec -it <mycontainer> bash
