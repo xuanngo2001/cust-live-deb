@@ -32,12 +32,12 @@ Get:7 http://localhost/aptly-repo/master_buster-backports-main buster-backports/
 Get:8 http://localhost/aptly-repo/master_buster-main buster/main amd64 libksba8 amd64 1.3.5-2 [99.7 kB]
 Get:9 http://localhost/aptly-repo/master_buster-main buster/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg-1+deb10u1 [69.1 kB]
 Get:10 http://localhost/aptly-repo/master_buster-main buster/main amd64 libsasl2-2 amd64 2.1.27+dfsg-1+deb10u1 [106 kB]
-Get:11 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libldap-2.4-2 amd64 2.4.56+dfsg-1~bpo10+1 [231 kB]
+Get:11 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libldap-2.4-2 amd64 2.4.57+dfsg-2~bpo10+1 [231 kB]
 Get:12 http://localhost/aptly-repo/master_buster-main buster/main amd64 libnpth0 amd64 1.6-1 [18.4 kB]
 Get:13 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 dirmngr amd64 2.2.20-1~bpo10+1 [742 kB]
 Get:14 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 gnupg-l10n all 2.2.20-1~bpo10+1 [1,036 kB]
 Get:15 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 gnupg-utils amd64 2.2.20-1~bpo10+1 [892 kB]
-Get:16 http://localhost/aptly-repo/master_buster-main buster/main amd64 libsqlite3-0 amd64 3.27.2-3 [641 kB]
+Get:16 http://localhost/aptly-repo/master_buster-main buster/main amd64 libsqlite3-0 amd64 3.27.2-3+deb10u1 [641 kB]
 Get:17 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 gpg amd64 2.2.20-1~bpo10+1 [896 kB]
 Get:18 http://localhost/aptly-repo/master_buster-main buster/main amd64 pinentry-curses amd64 1.1.0-2 [64.5 kB]
 Get:19 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 gpg-agent amd64 2.2.20-1~bpo10+1 [642 kB]
@@ -45,13 +45,13 @@ Get:20 http://localhost/aptly-repo/master_buster-backports-main buster-backports
 Get:21 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 gpg-wks-server amd64 2.2.20-1~bpo10+1 [501 kB]
 Get:22 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 gpgsm amd64 2.2.20-1~bpo10+1 [628 kB]
 Get:23 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 gnupg all 2.2.20-1~bpo10+1 [750 kB]
-Fetched 10.3 MB in 0s (36.4 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14873 files and directories currently installed.)
+Fetched 10.3 MB in 0s (40.8 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15192 files and directories currently installed.)
 Preparing to unpack .../gpgv_2.2.20-1~bpo10+1_amd64.deb ...
 Unpacking gpgv (2.2.20-1~bpo10+1) over (2.2.12-1+deb10u1) ...
 Setting up gpgv (2.2.20-1~bpo10+1) ...
 Selecting previously unselected package libpcre2-8-0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14873 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15192 files and directories currently installed.)
 Preparing to unpack .../00-libpcre2-8-0_10.32-5_amd64.deb ...
 Unpacking libpcre2-8-0:amd64 (10.32-5) ...
 Selecting previously unselected package libpsl5:amd64.
@@ -79,8 +79,8 @@ Selecting previously unselected package libsasl2-2:amd64.
 Preparing to unpack .../08-libsasl2-2_2.1.27+dfsg-1+deb10u1_amd64.deb ...
 Unpacking libsasl2-2:amd64 (2.1.27+dfsg-1+deb10u1) ...
 Selecting previously unselected package libldap-2.4-2:amd64.
-Preparing to unpack .../09-libldap-2.4-2_2.4.56+dfsg-1~bpo10+1_amd64.deb ...
-Unpacking libldap-2.4-2:amd64 (2.4.56+dfsg-1~bpo10+1) ...
+Preparing to unpack .../09-libldap-2.4-2_2.4.57+dfsg-2~bpo10+1_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.57+dfsg-2~bpo10+1) ...
 Selecting previously unselected package libnpth0:amd64.
 Preparing to unpack .../10-libnpth0_1.6-1_amd64.deb ...
 Unpacking libnpth0:amd64 (1.6-1) ...
@@ -94,8 +94,8 @@ Selecting previously unselected package gnupg-utils.
 Preparing to unpack .../13-gnupg-utils_2.2.20-1~bpo10+1_amd64.deb ...
 Unpacking gnupg-utils (2.2.20-1~bpo10+1) ...
 Selecting previously unselected package libsqlite3-0:amd64.
-Preparing to unpack .../14-libsqlite3-0_3.27.2-3_amd64.deb ...
-Unpacking libsqlite3-0:amd64 (3.27.2-3) ...
+Preparing to unpack .../14-libsqlite3-0_3.27.2-3+deb10u1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.27.2-3+deb10u1) ...
 Selecting previously unselected package gpg.
 Preparing to unpack .../15-gpg_2.2.20-1~bpo10+1_amd64.deb ...
 Unpacking gpg (2.2.20-1~bpo10+1) ...
@@ -119,7 +119,7 @@ Preparing to unpack .../21-gnupg_2.2.20-1~bpo10+1_all.deb ...
 Unpacking gnupg (2.2.20-1~bpo10+1) ...
 Setting up libksba8:amd64 (1.3.5-2) ...
 Setting up libpsl5:amd64 (0.20.2-2) ...
-Setting up libsqlite3-0:amd64 (3.27.2-3) ...
+Setting up libsqlite3-0:amd64 (3.27.2-3+deb10u1) ...
 Setting up libnpth0:amd64 (1.6-1) ...
 Setting up libassuan0:amd64 (2.5.2-1) ...
 Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg-1+deb10u1) ...
@@ -130,7 +130,7 @@ Setting up libreadline7:amd64 (7.0-5) ...
 Setting up gnupg-utils (2.2.20-1~bpo10+1) ...
 Setting up pinentry-curses (1.1.0-2) ...
 Setting up wget (1.20.1-1.1) ...
-Setting up libldap-2.4-2:amd64 (2.4.56+dfsg-1~bpo10+1) ...
+Setting up libldap-2.4-2:amd64 (2.4.57+dfsg-2~bpo10+1) ...
 Setting up gpgconf (2.2.20-1~bpo10+1) ...
 Setting up gpg (2.2.20-1~bpo10+1) ...
 Setting up gpg-agent (2.2.20-1~bpo10+1) ...
@@ -146,4 +146,4 @@ Setting up gpg-wks-client (2.2.20-1~bpo10+1) ...
 Setting up gnupg (2.2.20-1~bpo10+1) ...
 Processing triggers for libc-bin (2.28-10) ...
 CLDS: * Install gnupg to manage and create keys.
-CLDS: * Disk size = 778256K. Space Used = 25860K. Runtime = 00:00:00:04.
+CLDS: * Disk size = 856532K. Space Used = 25860K. Runtime = 00:00:00:03.

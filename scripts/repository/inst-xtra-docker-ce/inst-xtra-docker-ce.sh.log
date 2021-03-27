@@ -2,12 +2,12 @@ CLDS:>>>>>>>>> Running inst-xtra-docker-ce.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-apt-transport-https is already the newest version (1.8.2.1).
+apt-transport-https is already the newest version (1.8.2.2).
 0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
-ca-certificates is already the newest version (20200601~deb10u1).
+ca-certificates is already the newest version (20200601~deb10u2).
 ca-certificates set to manually installed.
 0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
 Reading package lists...
@@ -24,9 +24,9 @@ The following NEW packages will be installed:
 Need to get 415 kB of archives.
 After this operation, 429 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 gnupg-agent all 2.2.20-1~bpo10+1 [415 kB]
-Fetched 415 kB in 0s (10.9 MB/s)
+Fetched 415 kB in 0s (7,990 kB/s)
 Selecting previously unselected package gnupg-agent.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54170 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54474 files and directories currently installed.)
 Preparing to unpack .../gnupg-agent_2.2.20-1~bpo10+1_all.deb ...
 Unpacking gnupg-agent (2.2.20-1~bpo10+1) ...
 Setting up gnupg-agent (2.2.20-1~bpo10+1) ...
@@ -47,21 +47,21 @@ The following NEW packages will be installed:
   python3-apt python3-dbus python3-gi python3-pycurl
   python3-software-properties software-properties-common
 0 upgraded, 10 newly installed, 0 to remove and 18 not upgraded.
-Need to get 3,627 kB of archives.
+Need to get 3,628 kB of archives.
 After this operation, 24.0 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libpackagekit-glib2-18 amd64 1.1.12-5 [116 kB]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 gir1.2-packagekitglib-1.0 amd64 1.1.12-5 [35.9 kB]
 Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 iso-codes all 4.2-1 [2,713 kB]
-Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 python-apt-common all 1.8.4.1 [95.7 kB]
-Get:5 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-apt amd64 1.8.4.1 [184 kB]
+Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 python-apt-common all 1.8.4.3 [96.3 kB]
+Get:5 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-apt amd64 1.8.4.3 [185 kB]
 Get:6 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-dbus amd64 1.2.8-3 [103 kB]
 Get:7 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-gi amd64 3.30.4-1 [180 kB]
 Get:8 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-pycurl amd64 7.43.0.2-0.1 [66.3 kB]
 Get:9 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-software-properties all 0.96.20.2-2 [49.6 kB]
 Get:10 http://localhost/aptly-repo/master_buster-main buster/main amd64 software-properties-common all 0.96.20.2-2 [83.3 kB]
-Fetched 3,627 kB in 0s (28.3 MB/s)
+Fetched 3,628 kB in 0s (32.7 MB/s)
 Selecting previously unselected package libpackagekit-glib2-18:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54175 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54479 files and directories currently installed.)
 Preparing to unpack .../0-libpackagekit-glib2-18_1.1.12-5_amd64.deb ...
 Unpacking libpackagekit-glib2-18:amd64 (1.1.12-5) ...
 Selecting previously unselected package gir1.2-packagekitglib-1.0.
@@ -71,11 +71,11 @@ Selecting previously unselected package iso-codes.
 Preparing to unpack .../2-iso-codes_4.2-1_all.deb ...
 Unpacking iso-codes (4.2-1) ...
 Selecting previously unselected package python-apt-common.
-Preparing to unpack .../3-python-apt-common_1.8.4.1_all.deb ...
-Unpacking python-apt-common (1.8.4.1) ...
+Preparing to unpack .../3-python-apt-common_1.8.4.3_all.deb ...
+Unpacking python-apt-common (1.8.4.3) ...
 Selecting previously unselected package python3-apt.
-Preparing to unpack .../4-python3-apt_1.8.4.1_amd64.deb ...
-Unpacking python3-apt (1.8.4.1) ...
+Preparing to unpack .../4-python3-apt_1.8.4.3_amd64.deb ...
+Unpacking python3-apt (1.8.4.3) ...
 Selecting previously unselected package python3-dbus.
 Preparing to unpack .../5-python3-dbus_1.2.8-3_amd64.deb ...
 Unpacking python3-dbus (1.2.8-3) ...
@@ -96,9 +96,9 @@ Setting up libpackagekit-glib2-18:amd64 (1.1.12-5) ...
 Setting up gir1.2-packagekitglib-1.0 (1.1.12-5) ...
 Setting up python3-pycurl (7.43.0.2-0.1) ...
 Setting up python3-gi (3.30.4-1) ...
-Setting up python-apt-common (1.8.4.1) ...
+Setting up python-apt-common (1.8.4.3) ...
 Setting up iso-codes (4.2-1) ...
-Setting up python3-apt (1.8.4.1) ...
+Setting up python3-apt (1.8.4.3) ...
 Setting up python3-software-properties (0.96.20.2-2) ...
 Setting up software-properties-common (0.96.20.2-2) ...
 Processing triggers for libc-bin (2.28-10) ...
@@ -124,45 +124,47 @@ Hit:16 http://localhost/aptly-repo/master_microsoft-main buster InRelease
 Hit:17 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
 Hit:18 http://localhost/aptly-repo/master_qgis-main buster InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
-Get:20 https://download.docker.com/linux/debian buster InRelease [44.4 kB]
-Get:21 http://dl.google.com/linux/chrome/deb stable InRelease [1,811 B]
-Get:22 https://download.docker.com/linux/debian buster/stable amd64 Packages [13.3 kB]
-Get:23 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,064 B]
-Fetched 60.6 kB in 3s (23.2 kB/s)
+Get:20 http://dl.google.com/linux/chrome/deb stable InRelease [1,811 B]
+Get:21 https://download.docker.com/linux/debian buster InRelease [44.4 kB]
+Get:22 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,082 B]
+Get:23 https://download.docker.com/linux/debian buster/stable amd64 Packages [17.8 kB]
+Fetched 65.1 kB in 3s (26.0 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+Suggested packages:
+  aufs-tools cgroupfs-mount | cgroup-lite
 Recommended packages:
-  aufs-tools cgroupfs-mount | cgroup-lite git pigz
+  apparmor docker-ce-rootless-extras git pigz
 The following NEW packages will be installed:
   containerd.io docker-ce docker-ce-cli
 0 upgraded, 3 newly installed, 0 to remove and 18 not upgraded.
-Need to get 91.0 MB of archives.
-After this operation, 409 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_docker-stable buster/stable amd64 containerd.io amd64 1.3.7-1 [24.4 MB]
-Get:2 http://localhost/aptly-repo/master_docker-stable buster/stable amd64 docker-ce-cli amd64 5:19.03.13~3-0~debian-buster [44.2 MB]
-Get:3 http://localhost/aptly-repo/master_docker-stable buster/stable amd64 docker-ce amd64 5:19.03.13~3-0~debian-buster [22.5 MB]
-Fetched 91.0 MB in 2s (46.9 MB/s)
+Need to get 94.4 MB of archives.
+After this operation, 425 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_docker-stable buster/stable amd64 containerd.io amd64 1.4.4-1 [28.3 MB]
+Get:2 http://localhost/aptly-repo/master_docker-stable buster/stable amd64 docker-ce-cli amd64 5:20.10.5~3-0~debian-buster [41.4 MB]
+Get:3 http://localhost/aptly-repo/master_docker-stable buster/stable amd64 docker-ce amd64 5:20.10.5~3-0~debian-buster [24.8 MB]
+Fetched 94.4 MB in 2s (50.4 MB/s)
 Selecting previously unselected package containerd.io.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55569 files and directories currently installed.)
-Preparing to unpack .../containerd.io_1.3.7-1_amd64.deb ...
-Unpacking containerd.io (1.3.7-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 55873 files and directories currently installed.)
+Preparing to unpack .../containerd.io_1.4.4-1_amd64.deb ...
+Unpacking containerd.io (1.4.4-1) ...
 Selecting previously unselected package docker-ce-cli.
-Preparing to unpack .../docker-ce-cli_5%3a19.03.13~3-0~debian-buster_amd64.deb ...
-Unpacking docker-ce-cli (5:19.03.13~3-0~debian-buster) ...
+Preparing to unpack .../docker-ce-cli_5%3a20.10.5~3-0~debian-buster_amd64.deb ...
+Unpacking docker-ce-cli (5:20.10.5~3-0~debian-buster) ...
 Selecting previously unselected package docker-ce.
-Preparing to unpack .../docker-ce_5%3a19.03.13~3-0~debian-buster_amd64.deb ...
-Unpacking docker-ce (5:19.03.13~3-0~debian-buster) ...
-Setting up containerd.io (1.3.7-1) ...
+Preparing to unpack .../docker-ce_5%3a20.10.5~3-0~debian-buster_amd64.deb ...
+Unpacking docker-ce (5:20.10.5~3-0~debian-buster) ...
+Setting up containerd.io (1.4.4-1) ...
 Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
-Setting up docker-ce-cli (5:19.03.13~3-0~debian-buster) ...
-Setting up docker-ce (5:19.03.13~3-0~debian-buster) ...
+Setting up docker-ce-cli (5:20.10.5~3-0~debian-buster) ...
+Setting up docker-ce (5:20.10.5~3-0~debian-buster) ...
 Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
 Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
 Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
-Processing triggers for systemd (241-7~deb10u4) ...
+Processing triggers for systemd (241-7~deb10u7) ...
 './cld/doc/docker-help.txt' -> '/usr/local/cld/doc/docker-help.txt'
 CLDS: * Install docker-ce.
-CLDS: * Disk size = 4334652K. Space Used = 501628K. Runtime = 00:00:00:23.
+CLDS: * Disk size = 4451060K. Space Used = 520608K. Runtime = 00:00:00:22.
