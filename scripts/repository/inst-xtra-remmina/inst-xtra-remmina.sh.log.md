@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-xtra-remmina.sh ...
-  * After this operation, 8,460 kB of additional disk space will be used.
+  * After this operation, 8,606 kB of additional disk space will be used.
   * Install remmina.
   * Need to remote desktop MS Windows machines.
-  * Disk size = 4653288K. Space Used = 9336K. Runtime = 00:00:00:04.
+  * Disk size = 4699724K. Space Used = 9500K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 libavahi-glib1 libavahi-ui-gtk3-0 libfreerdp2-2 libfreerdp-client2-2 libssh-4

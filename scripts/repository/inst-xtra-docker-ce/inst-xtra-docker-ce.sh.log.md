@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-xtra-docker-ce.sh ...
   * After this operation, 429 kB of additional disk space will be used.
   * After this operation, 24.0 MB of additional disk space will be used.
-  * After this operation, 409 MB of additional disk space will be used.
+  * After this operation, 425 MB of additional disk space will be used.
   * Install docker-ce.
-  * Disk size = 4334652K. Space Used = 501628K. Runtime = 00:00:00:23.
+  * Disk size = 4451060K. Space Used = 520608K. Runtime = 00:00:00:22.
   * The following NEW packages will be installed:
   ```bash
 apt-transport-https* ca-certificates* containerd.io curl* docker-ce
