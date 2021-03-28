@@ -1,6 +1,9 @@
 * >>>>>>>>> Running inst-xtra-ta-lib.sh ...
   * After this operation, 126 MB of additional disk space will be used.
-  * Disk size = 4907524K. Space Used = 142296K. Runtime = 00:00:00:08.
+  * Install ta-lib.org from source.
+  * wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+  * Require later to: pip install TA-Lib
+  * Disk size = 4917744K. Space Used = 151176K. Runtime = 00:00:02:02.
   * The following NEW packages will be installed:
   ```bash
 binutils binutils-common binutils-x86-64-linux-gnu build-essential dpkg-dev
