@@ -15,3 +15,5 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Log
 	echo "${GV_LOG} * Install vim-python-jedi."
+	echo "${GV_LOG} * vim-addons install python-jedi"
+	
