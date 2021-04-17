@@ -13,6 +13,11 @@
 # Config file for Drupal.
     https://www.nginx.com/resources/wiki/start/topics/recipes/drupal/
 
+# Add server/configuration/virtual host
+    Add /etc/nginx/sites-available/${domain}.conf
+	ln -s /etc/nginx/sites-available/${domain}.conf /etc/nginx/sites-enabled/
+    service nginx restart    
+    
 # Troubleshooting.
     # Test configuration file.
         nginx -t
