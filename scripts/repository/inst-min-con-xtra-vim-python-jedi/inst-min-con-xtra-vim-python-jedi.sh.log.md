@@ -2,7 +2,7 @@
   * After this operation, 1,027 kB of additional disk space will be used.
   * Install vim-python-jedi.
   * vim-addons install python-jedi
-  * Disk size = 2746008K. Space Used = 2368K. Runtime = 00:00:00:02.
+  * Disk size = 2744328K. Space Used = 2360K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 python3-jedi python3-parso vim-python-jedi
