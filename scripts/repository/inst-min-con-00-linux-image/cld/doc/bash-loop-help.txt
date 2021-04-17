@@ -13,6 +13,20 @@
 		echo "********  ${animal}  ********"
 	done
 
+# Find valid path from array of paths.
+    path_dirs=( /media/main/critical/firstboot-work )
+    path_dirs+=( /media/critical-02/firstboot-work )
+    path_dirs+=( /media/critical/firstboot-work )
+    path_dir_found=""
+    for path_dir in "${path_dirs[@]}"; do
+        if [ -d "${path_dir}" ]; then
+            path_dir_found="${path_dir}"
+            break
+        fi
+    done
+
+    echo "${path_dir} found!"
+
 # Loop through arguments.
 	for arg in "${@:2}"; do # Skip the first argument.
 		echo "${arg}"
