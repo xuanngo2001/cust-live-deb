@@ -14,6 +14,11 @@
         EOF
     fi
 
+# Parameter substitution.
+    # To escape $, use \$
+    # For long text, it is better to turn off parameter substitution and
+    #   use sed to search and replace.
+
 # If you don't want to interpret variables in the text, then use single quotes:
     cat << 'EOF' > /tmp/yourfilehere
     The variable $FOO will not be interpreted.
