@@ -17,7 +17,8 @@
     # Test configuration file.
         nginx -t
 
-    # Is fastcgi_pass point to correct version FPM? ls /var/run/php/php*-fpm.sock
+    # In config file, is fastcgi_pass pointing to correct version FPM? 
+    #   ls /var/run/php/php*-fpm.sock
     
     # Check for error.
         tail -30 /var/log/nginx/error.log
