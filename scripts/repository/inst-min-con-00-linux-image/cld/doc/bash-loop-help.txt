@@ -25,7 +25,11 @@
         fi
     done
 
-    echo "${path_dir} found!"
+	if [ -z "${path_dir_found}" ]; then
+	    echo "ERROR: destination firstboot directory not found. Aborted!"
+	    exit 1;
+	fi
+	echo "${path_dir_found} found!"
 
 # Loop through arguments.
 	for arg in "${@:2}"; do # Skip the first argument.
