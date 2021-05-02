@@ -39,8 +39,19 @@
         I       Insert from the beginning of the line: move before the 1st char of line and switch to INSERT mode.
 
     # Search
-        f+<char>    Find char.
+        f<char>     Find char.
+
         /<string>   Find string.
+        n           Find next occurrence.
+        N           Find previous occurrence.
+        /Linux\c    Performs ignore case search.
+        /Linux\C    Force case matching search. 
+        :set ignorecase     :set ic
+        :set noignorecase   :set noic
+        https://vim.fandom.com/wiki/Highlight_all_search_pattern_matches
+            :set hlsearch
+            :nohlsearch
+            :noh
 
     yy      Copy line. It includes EOL character.
     yiw     Copy (inner) word.
@@ -66,9 +77,13 @@
     :42     Goto line 42.
 
     # Buffers
-    :ls     List buffers.
-    :b<#>   Switch to buffer #.
-    CTRL+6  Switch to previous buffer.
+        :ls     List buffers.
+        :b<#>   Switch to buffer #.
+        CTRL+6  Switch to previous buffer.
+    
+    # Run external command
+        :!<cmd>     Run <cmd>.
+
 
 # Configurations
     ~/.vimrc
