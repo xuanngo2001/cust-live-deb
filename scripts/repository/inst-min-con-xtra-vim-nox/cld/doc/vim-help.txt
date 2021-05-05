@@ -52,6 +52,12 @@
             :set hlsearch
             :nohlsearch
             :noh
+        
+        https://stackoverflow.com/a/7747112
+            *   Jump to the next occurrence of the word under the cursor.
+            n   Next
+            N   Previous
+            g*  Search word without word boundary.
 
     yy      Copy line. It includes EOL character.
     yiw     Copy (inner) word.
@@ -80,6 +86,7 @@
         :ls     List buffers.
         :b<#>   Switch to buffer #.
         CTRL+6  Switch to previous buffer.
+        :bd     Close buffer, delete buffer from buffer list.
     
     # Run external command
         :!<cmd>     Run <cmd>.
