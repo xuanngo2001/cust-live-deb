@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-git-fix-libcurl3-gnutls.sh ...
-  * Disk size = 5460108K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 5460100K. Space Used = 4K. Runtime = 00:00:00:01.

@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-05-keyring-aptly.sh ...
-  * Disk size = 919104K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 919148K. Space Used = 4K. Runtime = 00:00:00:01.
