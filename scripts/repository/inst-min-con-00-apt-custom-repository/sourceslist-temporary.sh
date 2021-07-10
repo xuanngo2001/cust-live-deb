@@ -12,6 +12,7 @@ GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_buster-updates-no
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_deb-multimedia-main buster main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_deb-multimedia-non-free buster non-free"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_docker-stable buster stable"
+GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_google-cloud-main cloud-sdk main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_google-main stable main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_mariadb-main buster main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_microsoft-main buster main"
