@@ -15,6 +15,7 @@ URL=http://download.virtualbox.org/virtualbox/6.1.14/VBoxGuestAdditions_6.1.14.i
 URL=http://download.virtualbox.org/virtualbox/6.0.24/VBoxGuestAdditions_6.0.24.iso
 URL=http://download.virtualbox.org/virtualbox/6.1.18/VBoxGuestAdditions_6.1.18.iso	# After install, kernel panic.
 URL=http://download.virtualbox.org/virtualbox/6.1.16/VBoxGuestAdditions_6.1.16.iso
+URL=http://download.virtualbox.org/virtualbox/6.1.22/VBoxGuestAdditions_6.1.22.iso
 
 # Download ISO if not already exists.
     vbox_iso_txt="VBoxGuestAdditions.iso.txt"
