@@ -1,7 +1,6 @@
 qcheck-error-in-log.sh:
 
 Error in log file: /media/master/github/cust-live-deb/logs/main.log
-  CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
   E: Unable to correct problems, you have held broken packages.
 
 ------------------
@@ -81,10 +80,10 @@ Run cld-list-icons.sh to list all icons.
 qcheck-warning.sh:
 
 Warnings in log file: /media/master/github/cust-live-deb/logs/main.log
-  update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
   Warning: apt-key output should not be parsed (stdout is not a terminal)
+  update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+  dpkg: warning: downgrading libcurl3-gnutls:amd64 from 7.74.0-1.2~bpo10+1 to 7.64.0-4+deb10u2
   libtool: link: warning: `-version-info/-version-number' is ignored for convenience libraries
-  CLDS: * WARNING: Use this script only if backport repository doesn't work.
 
 ------------------
 qcheck-list-manual-packages.sh:
