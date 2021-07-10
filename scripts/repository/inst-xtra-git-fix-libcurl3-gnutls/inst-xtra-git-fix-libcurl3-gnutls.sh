@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #	apt-get install -s -y <your-package> 
 
 # Install libcurl3-gnutls.
-	apt-get --allow-downgrades -y install libcurl3-gnutls=7.64.0-4+deb10u2
+	apt-get -f --allow-downgrades -y install libcurl3-gnutls=7.64.0-4+deb10u2
 
 
 # Log
