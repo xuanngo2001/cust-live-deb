@@ -17,6 +17,5 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
     wget -q "${url_key}" -O "${deb_repo_key_file}"
     cat "${deb_repo_key_file}" | apt-key add -
 
-
 # Log
 	echo "${GV_LOG} * Install Google repository key."
