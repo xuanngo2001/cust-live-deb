@@ -14,14 +14,14 @@ The following NEW packages will be installed:
   dh-python libc-dev-bin libc6-dev libexpat1-dev libpython3-dev libpython3.7
   libpython3.7-dev linux-libc-dev python3-dev python3-distutils
   python3-lib2to3 python3.7-dev
-0 upgraded, 12 newly installed, 0 to remove and 22 not upgraded.
+0 upgraded, 12 newly installed, 0 to remove and 18 not upgraded.
 Need to get 55.3 MB of archives.
 After this operation, 117 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-lib2to3 all 3.7.3-1 [76.7 kB]
 Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-distutils all 3.7.3-1 [142 kB]
 Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 dh-python all 3.20190308 [99.3 kB]
 Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 libc-dev-bin amd64 2.28-10 [275 kB]
-Get:5 http://localhost/aptly-repo/master_buster-main buster/main amd64 linux-libc-dev amd64 4.19.181-1 [1,441 kB]
+Get:5 http://localhost/aptly-repo/master_buster-main buster/main amd64 linux-libc-dev amd64 4.19.194-1 [1,459 kB]
 Get:6 http://localhost/aptly-repo/master_buster-main buster/main amd64 libc6-dev amd64 2.28-10 [2,691 kB]
 Get:7 http://localhost/aptly-repo/master_buster-main buster/main amd64 libexpat1-dev amd64 2.2.6-2+deb10u1 [153 kB]
 Get:8 http://localhost/aptly-repo/master_buster-main buster/main amd64 libpython3.7 amd64 3.7.3-2+deb10u3 [1,498 kB]
@@ -29,9 +29,9 @@ Get:9 http://localhost/aptly-repo/master_buster-main buster/main amd64 libpython
 Get:10 http://localhost/aptly-repo/master_buster-main buster/main amd64 libpython3-dev amd64 3.7.3-1 [20.1 kB]
 Get:11 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3.7-dev amd64 3.7.3-2+deb10u3 [510 kB]
 Get:12 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-dev amd64 3.7.3-1 [1,264 B]
-Fetched 55.3 MB in 2s (33.8 MB/s)
+Fetched 55.3 MB in 1s (41.8 MB/s)
 Selecting previously unselected package python3-lib2to3.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51260 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52404 files and directories currently installed.)
 Preparing to unpack .../00-python3-lib2to3_3.7.3-1_all.deb ...
 Unpacking python3-lib2to3 (3.7.3-1) ...
 Selecting previously unselected package python3-distutils.
@@ -44,8 +44,8 @@ Selecting previously unselected package libc-dev-bin.
 Preparing to unpack .../03-libc-dev-bin_2.28-10_amd64.deb ...
 Unpacking libc-dev-bin (2.28-10) ...
 Selecting previously unselected package linux-libc-dev:amd64.
-Preparing to unpack .../04-linux-libc-dev_4.19.181-1_amd64.deb ...
-Unpacking linux-libc-dev:amd64 (4.19.181-1) ...
+Preparing to unpack .../04-linux-libc-dev_4.19.194-1_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.19.194-1) ...
 Selecting previously unselected package libc6-dev:amd64.
 Preparing to unpack .../05-libc6-dev_2.28-10_amd64.deb ...
 Unpacking libc6-dev:amd64 (2.28-10) ...
@@ -68,7 +68,7 @@ Selecting previously unselected package python3-dev.
 Preparing to unpack .../11-python3-dev_3.7.3-1_amd64.deb ...
 Unpacking python3-dev (3.7.3-1) ...
 Setting up libpython3.7:amd64 (3.7.3-2+deb10u3) ...
-Setting up linux-libc-dev:amd64 (4.19.181-1) ...
+Setting up linux-libc-dev:amd64 (4.19.194-1) ...
 Setting up libc-dev-bin (2.28-10) ...
 Setting up python3-lib2to3 (3.7.3-1) ...
 Setting up python3-distutils (3.7.3-1) ...
@@ -82,4 +82,4 @@ Setting up python3-dev (3.7.3-1) ...
 Processing triggers for libc-bin (2.28-10) ...
 CLDS: * Install python3-dev.
 CLDS: * Require for: tulipy
-CLDS: * Disk size = 3347044K. Space Used = 173096K. Runtime = 00:00:00:11.
+CLDS: * Disk size = 3370640K. Space Used = 173128K. Runtime = 00:00:00:10.
