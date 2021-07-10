@@ -1,2 +1,6 @@
 * >>>>>>>>> Running inst-xtra-git-fix-libcurl3-gnutls.sh ...
-  * Disk size = 5460100K. Space Used = 4K. Runtime = 00:00:00:01.
+  * After this operation, 34.8 kB disk space will be freed.
+  * 2021-05-03: Install libcurl3-gnutls to fix 'Failed sending HTTP2 data' error.
+  * https://superuser.com/a/1642989.
+  * https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=987187.
+  * Disk size = 5496216K. Space Used = 292K. Runtime = 00:00:00:01.

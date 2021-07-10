@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-nmap.sh ...
-  * After this operation, 29.5 MB of additional disk space will be used.
+  * After this operation, 29.6 MB of additional disk space will be used.
   * Install nmap.
-  * Disk size = 3143536K. Space Used = 36204K. Runtime = 00:00:00:04.
+  * Disk size = 3167096K. Space Used = 36360K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 libblas3 libgfortran5 liblinear3 libpcap0.8 libquadmath0
