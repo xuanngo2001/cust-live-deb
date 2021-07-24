@@ -61,3 +61,13 @@
         sleep 1s
         magick import -window root screenshot-$(date +%Y-%m-%d_%k.%M.%S).png
     done
+
+# Use continue to skip an iteration in loop.
+	while IFS='' read -r url_link || [[ -n "${url_link}" ]]; do
+	
+	    # Skip url if url length < 3. Prevent processing \r\n.
+        if [ ${#url_link} -lt 3 ]; then
+            continue
+        fi
+        
+	done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )
