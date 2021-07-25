@@ -3,4 +3,4 @@
   * 2021-05-03: Install libcurl3-gnutls to fix 'Failed sending HTTP2 data' error.
   * https://superuser.com/a/1642989.
   * https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=987187.
-  * Disk size = 5488564K. Space Used = 292K. Runtime = 00:00:00:02.
+  * Disk size = 5488596K. Space Used = 292K. Runtime = 00:00:00:02.
