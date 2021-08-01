@@ -15,5 +15,8 @@
 # Remove non-alphanumeric charaters.( -c is to complement )
     echo "Â10.41.89.50-._ " | tr -cd '[:alnum:]._-'
     echo "Â10.41.89.50-._ " | tr -cd '[a-zA-Z0-9]._-'
-   
+
+# Convert DOS newline(CRLF) to Unix newline(LF).
+    tr "\r" "\n"
+
 
