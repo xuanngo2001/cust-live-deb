@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-nginx.sh ...
   * After this operation, 5,962 kB of additional disk space will be used.
   * Install nginx.
-  * Disk size = 3136188K. Space Used = 9144K. Runtime = 00:00:00:03.
+  * Disk size = 3137228K. Space Used = 9144K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 libgeoip1 libnginx-mod-http-auth-pam libnginx-mod-http-dav-ext libnginx-mod-http-echo libnginx-mod-http-geoip

@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-zclean-01-apt-get-01-source-list.sh ...
   * Reinstate original Debian repositories back to source.list.
-  * Disk size = 4895300K. Space Used = 12K. Runtime = 00:00:00:02.
+  * Disk size = 4896164K. Space Used = 8K. Runtime = 00:00:00:02.

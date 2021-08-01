@@ -2,7 +2,7 @@
   * After this operation, 5,954 kB of additional disk space will be used.
   * Install awesome.
   * Change X window manager: update-alternatives --config x-window-manager
-  * Disk size = 3737868K. Space Used = 9056K. Runtime = 00:00:00:03.
+  * Disk size = 3738916K. Space Used = 9056K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 awesome gir1.2-freedesktop gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-pango-1.0
