@@ -10,6 +10,7 @@
 # Help
     :help <command> E.g. :help yy
     :q              Quit help window.
+    CTRL+q          To escape when you mistakenly press CTRL+s.
 
 # NORMAL mode
     :q      Quit.
@@ -76,8 +77,8 @@
 
     :s/SEARCH/REPLACE       Search and replace 1st matching occurrence on this line.
     :5,25s/SEARCH/REPLACE   Search and replace from line 5 to line 25.
-    :.,$s/SEARCH/REPLACE    Search and replace from current line to the end of file.
     :s/SEARCH/REPLACE/g     Search and replace all matching terms on this line.
+    :.,$s/SEARCH/REPLACE    Search and replace from current line to the end of file.
     :%s/SEARCH/REPLACE      Search and replace on the entire file.
     :s/\~//g                Remove tilde(~). Need to escape it with (\).
 
@@ -94,6 +95,10 @@
     # Run external command
         :!<cmd>     Run <cmd>.
 
+    # Lowercase / uppercase
+        gu  Lowercase: move in word and gu.
+        gU  Uppercase: move in word and gU.
+        g~  Toggle case: move in word and g~.
 
 # Configurations
     ~/.vimrc
