@@ -37,6 +37,7 @@
         ge      Move back, reverse of e.
         A       Append at the end of the line: move to end of line and switch to INSERT mode.
         I       Insert from the beginning of the line: move before the 1st char of line and switch to INSERT mode.
+        0       Move cursor to beginning of the line.
 
     # Search
         f<char>     Find char.
@@ -76,8 +77,8 @@
     :s/SEARCH/REPLACE       Search and replace 1st matching occurrence on this line.
     :5,25s/SEARCH/REPLACE   Search and replace from line 5 to line 25.
     :.,$s/SEARCH/REPLACE    Search and replace from current line to the end of file.
-    :%s/SEARCH/REPLACE      Search and replace on the entire file.
     :s/SEARCH/REPLACE/g     Search and replace all matching terms on this line.
+    :%s/SEARCH/REPLACE      Search and replace on the entire file.
     :s/\~//g                Remove tilde(~). Need to escape it with (\).
 
     :42     Goto line 42.
