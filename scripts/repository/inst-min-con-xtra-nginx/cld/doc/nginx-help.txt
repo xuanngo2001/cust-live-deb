@@ -1,0 +1,35 @@
+# Install
+    apt-get update
+    apt-get -y install nginx php-fpm
+
+# Start / stop nginx.
+    systemctl stop nginx.service
+    systemctl start nginx.service
+    systemctl enable nginx.service
+    
+    service nginx start
+    service nginx restart
+
+# Config file for Drupal.
+    https://www.nginx.com/resources/wiki/start/topics/recipes/drupal/
+
+# Add server/configuration/virtual host
+    Add /etc/nginx/sites-available/${domain}.conf
+	ln -s /etc/nginx/sites-available/${domain}.conf /etc/nginx/sites-enabled/
+    service nginx restart    
+    
+# Troubleshooting.
+    # Test configuration file.
+        nginx -t
+
+    # In config file, is fastcgi_pass pointing to correct version FPM? 
+    #   ls /var/run/php/php*-fpm.sock
+    
+    # Check for error.
+        tail -30 /var/log/nginx/error.log
+
+    # Check status.
+        systemctl status nginx
+        
+    # Check if nginx is binding to the default ports.
+        netstat -plant | grep '80\|443'

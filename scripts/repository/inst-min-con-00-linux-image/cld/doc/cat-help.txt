@@ -1,0 +1,28 @@
+# Here document, https://linuxize.com/post/bash-heredoc/
+#   Delimiter(EOF) ends with line starting and ending with EOF.
+    cat << EOF > /tmp/yourfilehere
+    These contents will be written to the file.
+            This line is indented.
+    EOF
+
+# Disable leading tab(space will not work), use <<-
+    #!/usr/bin/env bash
+
+    if true ; then
+        cat <<- EOF > /tmp/yourfilehere
+        The leading tab is ignored.
+        EOF
+    fi
+
+# Parameter substitution.
+    # To escape $, use \$
+    # For long text, it is better to turn off parameter substitution and
+    #   use sed to search and replace.
+
+# If you don't want to interpret variables in the text, then use single quotes:
+    cat << 'EOF' > /tmp/yourfilehere
+    The variable $FOO will not be interpreted.
+    EOF
+    
+# Here strings, <<<.
+    tr a-z A-Z <<< 'one two three'
