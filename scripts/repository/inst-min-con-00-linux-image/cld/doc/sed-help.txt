@@ -22,6 +22,9 @@
 # Delete line with pattern.
 	sed -i.bck "/pattern/d"
 
+# Delete matching line: sed (printing the inverse is faster than actual deletion). Need -n.
+    sed -n '/pattern/!p' input.txt
+
 # Delete text between 2 patterns.
 	# Delete text between patterns, excluding the lines containing these patterns:
 		sed '/PATTERN-1/,/PATTERN-2/{//!d}' input.txt
@@ -31,9 +34,6 @@
 	
 # Delete all the lines after PATTERN, use this
 	sed '/PATTERN/,$d' input.txt    
-
-# Delete matching line: sed (printing the inverse is faster than actual deletion). Need -n.
-	sed -n '/pattern/!p' input.txt
 
 # Delete all lines up to, before PATTERN line
     sed -n '/PATTERN/,$p'
@@ -70,3 +70,13 @@
 # Search case insensitive.
     echo 'aAbB' | sed 's/a/X/gI'
     
+# Trim spaces.
+    alias trim="sed -e 's/^[[:space:]]*//g' -e 's/[[:space:]]*\$//g'"
+
+# Print between 2 patterns, 2 lines with ---.
+    sed -n '/^---$/,/^---$/p'
+    
+# Between 2 lines, search replace.
+    # Between 2 lines with ---, replace weight with heavy.
+    sed  '/^---$/,/^---$/{s/weight/heavy/g}'
+    sed  '/^---$/,/^---$/{s/weight/heavy/g; s/search/replace/}'

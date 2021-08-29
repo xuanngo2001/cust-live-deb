@@ -1,5 +1,5 @@
 # While loop.
-    counter
+    counter=0
 	while IFS='' read -r line || [[ -n "${line}" ]]; do
 		echo "Do something ${line}"
         let counter+=1
@@ -12,6 +12,24 @@
 	for animal in "${animalNames[@]}"; do
 		echo "********  ${animal}  ********"
 	done
+
+# Find valid path from array of paths.
+    path_dirs=( /media/main/critical/firstboot-work )
+    path_dirs+=( /media/critical-02/firstboot-work )
+    path_dirs+=( /media/critical/firstboot-work )
+    path_dir_found=""
+    for path_dir in "${path_dirs[@]}"; do
+        if [ -d "${path_dir}" ]; then
+            path_dir_found="${path_dir}"
+            break
+        fi
+    done
+
+	if [ -z "${path_dir_found}" ]; then
+	    echo "ERROR: destination firstboot directory not found. Aborted!"
+	    exit 1;
+	fi
+	echo "${path_dir_found} found!"
 
 # Loop through arguments.
 	for arg in "${@:2}"; do # Skip the first argument.
@@ -43,3 +61,13 @@
         sleep 1s
         magick import -window root screenshot-$(date +%Y-%m-%d_%k.%M.%S).png
     done
+
+# Use continue to skip an iteration in loop.
+	while IFS='' read -r url_link || [[ -n "${url_link}" ]]; do
+	
+	    # Skip url if url length < 3. Prevent processing \r\n.
+        if [ ${#url_link} -lt 3 ]; then
+            continue
+        fi
+        
+	done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )

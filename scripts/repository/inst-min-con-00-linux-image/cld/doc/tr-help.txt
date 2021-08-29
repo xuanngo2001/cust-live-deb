@@ -12,3 +12,13 @@
 	echo LOWERCASE | tr '[:upper:]' '[:lower:]'
 	find . -depth -name '* *' | while IFS= read -r f ; do mv -v "$f" "$(dirname "$f")/$(basename "$f"|tr '[A-Z]' '[a-z]')" ; done
 	
+# Remove non-alphanumeric charaters.( -c is to complement )
+    echo "Â10.41.89.50-._ " | tr -cd '[:alnum:]._-'
+    echo "Â10.41.89.50-._ " | tr -cd '[a-zA-Z0-9]._-'
+   
+# Convert DOS newline(CRLF) to Unix newline(LF).
+    tmp_unix_file=$(mktemp)
+    # Convert DOS newline to UNIX newline.
+        tr "\r" "\n" < "${dos_file}" > "${tmp_unix_file}"
+        \mv "${tmp_unix_file}" "${dos_file}"
+

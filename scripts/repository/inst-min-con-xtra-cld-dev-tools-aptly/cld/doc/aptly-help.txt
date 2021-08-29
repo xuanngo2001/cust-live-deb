@@ -10,3 +10,9 @@
     
     gpg --export --armor CAEB3DC3BDF7FB45 | apt-key add -
     
+
+
+aptly publish repo -skip-signing -architectures='amd64' "${REPO_NAME}" "${PUBLISH_URL_PREFIX}"
+    aptly publish repo -architectures='amd64,i386' -skip-signing "${REPO_NAME}" "${PUBLISH_URL_PREFIX}"
+echo "aptly publish repo -architectures='amd64' -gpg-key=${aptly_private_key_id} ${REPO_NAME} ${PUBLISH_URL_PREFIX}"
+    

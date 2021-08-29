@@ -1,3 +1,30 @@
+# Git global setup
+    git config --global user.name "John Doe"
+    git config --global user.email "xuanngo2001@yahoo.com"
+
+# Create a new repository
+    git clone git@gitlab.com:jdoes/toonize.git
+    cd toonize
+    touch README.md
+    git add README.md
+    git commit -m "add README"
+    git push -u origin master
+
+# Push an existing folder
+    cd existing_folder
+    git init
+    git remote add origin git@gitlab.com:jdoes/toonize.git
+    git add .
+    git commit -m "Initial commit"
+    git push -u origin master
+
+# Push an existing Git repository
+    cd existing_repo
+    git remote rename origin old-origin
+    git remote add origin git@gitlab.com:jdoes/toonize.git
+    git push -u origin --all
+    git push -u origin --tags
+
 # Commit specific files.
     git commit -m "my notes." file1 file2 fileN
 
@@ -30,6 +57,51 @@
 
 # Unstaged all files.
     git reset HEAD -- .
+
 # Remove a single file from staging.
     git reset HEAD -- <file>
-  
+
+# Branch.
+    # Show all branches.
+        git branch -a
+        
+    # Select branch(e.g buster) you want to use.
+        git checkout buster
+        
+    # Confirm you are now working on that branch.
+        git branch
+    
+    # Create a new branch.
+    
+    
+# Pull Get latest code.
+    # cd to git directory.
+    git checkout master
+    git pull origin master
+    
+# Submodule.
+    # Clone submodule.
+        git submodule add https://github.com/zzossig/hugo-theme-zdoc.git themes/zdoc
+    # Update submodule.
+        git submodule update --remote --merge
+    # First time checkout, use --init.
+        git submodule update --init --recursive
+
+# Tell Git which SSH key to use.
+	export GIT_SSH_COMMAND="ssh -i /root/.ssh/id_rsa -F /dev/null"
+	
+# Ignore file permission.
+    git config --global core.fileMode false
+    # Set 'core.fileMode false' is not recommended.This setting only covers the executable bit of mode and never the read/write bits.
+    #   The proper way to solve this is:
+		find . -type d -exec chmod a+rwx {} \; # Make folders traversable and read/write
+		find . -type f -exec chmod a+rw {} \;  # Make files read/write
+
+# Create tag.
+    git tag <tagname>    
+    git push --tags <remote>
+
+
+# Show all refs.
+    git show-ref
+    

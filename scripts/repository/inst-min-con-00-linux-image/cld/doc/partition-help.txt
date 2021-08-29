@@ -1,15 +1,22 @@
 # Format filesystem.
-	mkfs.ext4 /dev/sdh
+    mkfs.ext4 -L <partition_name> /dev/sdh
 
 # Change partition label.
-	e2label /dev/sda1 LABEL
-	tune2fs -L LABEL /dev/sda1
-	ntfslabel /dev/sda5 LABEL
+    e2label /dev/sda1 LABEL
+    tune2fs -L LABEL /dev/sda1
+    ntfslabel /dev/sda5 LABEL
 
 # Show filesystem
-	df -Th
-	lsblk -f
+    df -Th
+    lsblk -f
 
 # Fix USB
     Umount USB
     dosfsck -a /dev/sdb1
+
+# Scan for badsectors.
+    badblocks -v /dev/sda10 > badsectors.txt
+
+# Tell kernel not write on bad sectors.
+    fsck -l badsectors.txt /dev/sda10
+    for ext2,3,4: e2fsck -l badsectors.txt /dev/sda10
