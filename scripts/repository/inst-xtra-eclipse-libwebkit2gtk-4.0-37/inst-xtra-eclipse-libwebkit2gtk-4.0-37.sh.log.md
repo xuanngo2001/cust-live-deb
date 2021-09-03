@@ -2,7 +2,7 @@
   * After this operation, 101 MB of additional disk space will be used.
   * Install libwebkit2gtk-4.0-37.
   * To be able to render *.md files.
-  * Disk size = 5436120K. Space Used = 126996K. Runtime = 00:00:00:09.
+  * Disk size = 5062640K. Space Used = 126992K. Runtime = 00:00:00:09.
   * The following NEW packages will be installed:
   ```bash
 aspell aspell-en bubblewrap dictionaries-common emacsen-common

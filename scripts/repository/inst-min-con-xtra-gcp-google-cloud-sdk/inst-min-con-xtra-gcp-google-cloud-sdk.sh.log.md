@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-gcp-google-cloud-sdk.sh ...
-  * After this operation, 468 MB of additional disk space will be used.
+  * After this operation, 476 MB of additional disk space will be used.
   * Install google-cloud-sdk.
-  * Disk size = 2475180K. Space Used = 731948K. Runtime = 00:00:00:47.
+  * Disk size = 2493592K. Space Used = 744336K. Runtime = 00:00:00:47.
   * The following NEW packages will be installed:
   ```bash
 google-cloud-sdk libmpdec2 libpython3.7-minimal libpython3.7-stdlib libpython3-stdlib
