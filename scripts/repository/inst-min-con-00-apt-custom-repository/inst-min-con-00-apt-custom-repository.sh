@@ -7,10 +7,8 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Add repository key.
-#apt-key add aptly-master-key.pub
-yes | cp -av trustedkeys.gpg /etc/apt/trusted.gpg.d/
-
+# Add CLD aptly repository key.
+yes | cp -av trusted.gpg /etc/apt/
 
 # Add temporary local repository at the beginning of the sources.list file.
 source sourceslist-temporary.sh

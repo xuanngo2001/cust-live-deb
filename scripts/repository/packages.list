@@ -26,6 +26,17 @@ localepurge
 
 # ./inst-min-con-04-block-services-start-postinstall/inst-min-con-04-block-services-start-postinstall.sh
 
+# ./inst-min-con-05-keyring-00-gnupg/inst-min-con-05-keyring-00-gnupg.sh
+gnupg
+wget
+# ./inst-min-con-05-keyring-aptly/inst-min-con-05-keyring-aptly.sh
+
+# ./inst-min-con-05-keyring-debmultimedia/inst-min-con-05-keyring-debmultimedia.sh
+
+# ./inst-min-con-05-keyring-google/inst-min-con-05-keyring-google.sh
+
+# ./inst-min-con-06-keyring-google-cloud/inst-min-con-06-keyring-google-cloud.sh
+
 # ./inst-min-con-auto-log-root/inst-min-con-auto-log-root.sh
 
 # ./inst-min-con-cld-bashrc/inst-min-con-cld-bashrc.sh
@@ -87,6 +98,14 @@ isolinux
 xorriso
 rsync
 squashfs-tools
+# ./inst-min-con-live-build-tools-isolinux/inst-min-con-live-build-tools-isolinux.sh
+isolinux
+# ./inst-min-con-live-build-tools-rsync/inst-min-con-live-build-tools-rsync.sh
+rsync
+# ./inst-min-con-live-build-tools-squashfs-tools/inst-min-con-live-build-tools-squashfs-tools.sh
+squashfs-tools
+# ./inst-min-con-live-build-tools-xorriso/inst-min-con-live-build-tools-xorriso.sh
+xorriso
 # ./inst-min-con-mtp-jmtpfs/inst-min-con-mtp-jmtpfs.sh
 jmtpfs
 # ./inst-min-con-net-tools/inst-min-con-net-tools.sh
@@ -112,7 +131,6 @@ buffer
 # ./inst-min-con-xtra-buffer-pv/inst-min-con-xtra-buffer-pv.sh
 pv
 # ./inst-min-con-xtra-cld-dev-tools-aptly/inst-min-con-xtra-cld-dev-tools-aptly.sh
-dirmngr
 xz-utils
 aptly
 # ./inst-min-con-xtra-curl/inst-min-con-xtra-curl.sh
@@ -125,6 +143,13 @@ tree
 libtext-iconv-perl
 # ./inst-min-con-xtra-fuse/inst-min-con-xtra-fuse.sh
 fuse
+# ./inst-min-con-xtra-gcp-google-cloud-sdk/inst-min-con-xtra-gcp-google-cloud-sdk.sh
+google-cloud-sdk
+# ./inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client-fix-libfido2-1-libcbor0/inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client-fix-libfido2-1-libcbor0.sh
+libfido2-1
+libcbor0
+# ./inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client/inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client.sh
+openssh-client
 # ./inst-min-con-xtra-gnuplot-nox/inst-min-con-xtra-gnuplot-nox.sh
 gnuplot-nox
 # ./inst-min-con-xtra-hd-hdparm/inst-min-con-xtra-hd-hdparm.sh
@@ -139,24 +164,55 @@ locate
 macchanger
 # ./inst-min-con-xtra-mariadb-server/inst-min-con-xtra-mariadb-server.sh
 mariadb-server
+# ./inst-min-con-xtra-ms-powershell/inst-min-con-xtra-ms-powershell.sh
+liblttng-ust0
+powershell
+# ./inst-min-con-xtra-nginx/inst-min-con-xtra-nginx.sh
+nginx
+# ./inst-min-con-xtra-nmap/inst-min-con-xtra-nmap.sh
+nmap
 # ./inst-min-con-xtra-pdf-poppler-utils/inst-min-con-xtra-pdf-poppler-utils.sh
 poppler-utils
+# ./inst-min-con-xtra-php-fpm/inst-min-con-xtra-php-fpm.sh
+php-fpm
 # ./inst-min-con-xtra-php/inst-min-con-xtra-php.sh
 php
 # ./inst-min-con-xtra-py-python3-dev/inst-min-con-xtra-py-python3-dev.sh
 python3-dev
 # ./inst-min-con-xtra-py-python3-pip/inst-min-con-xtra-py-python3-pip.sh
 python3-pip
+# ./inst-min-con-xtra-rescue-testdisk/inst-min-con-xtra-rescue-testdisk.sh
+testdisk
 # ./inst-min-con-xtra-smb-samba/inst-min-con-xtra-smb-samba.sh
 samba
 # ./inst-min-con-xtra-smb-smbclient/inst-min-con-xtra-smb-smbclient.sh
 smbclient
 # ./inst-min-con-xtra-sqlite3/inst-min-con-xtra-sqlite3.sh
 sqlite3
+# ./inst-min-con-xtra-tmux/inst-min-con-xtra-tmux.sh
+tmux
+# ./inst-min-con-xtra-vim-addon-manager/inst-min-con-xtra-vim-addon-manager.sh
+vim-addon-manager
 # ./inst-min-con-xtra-vim-nox/inst-min-con-xtra-vim-nox.sh
 vim-nox
+# ./inst-min-con-xtra-vim-python-jedi/inst-min-con-xtra-vim-python-jedi.sh
+vim-python-jedi
+# ./inst-min-con-xtra-vim-universal-ctags/inst-min-con-xtra-vim-universal-ctags.sh
+universal-ctags
 # ./inst-min-con-xtra-xsltproc/inst-min-con-xtra-xsltproc.sh
 xsltproc
+# ./inst-min-win-00-xorg-drivers/inst-min-win-00-xorg-drivers.sh
+xserver-xorg-video-all
+xserver-xorg-video-amdgpu
+xserver-xorg-video-ati
+xserver-xorg-video-fbdev
+xserver-xorg-video-nouveau
+xserver-xorg-video-vesa
+xserver-xorg-video-vmware
+xserver-xorg-video-radeon
+xserver-xorg-video-intel
+xserver-xorg-video-qxl
+xserver-xorg-video-mga
 # ./inst-min-win-00-xorg/inst-min-win-00-xorg.sh
 xinit
 xserver-xorg
@@ -168,65 +224,6 @@ jwm
 libxfce4ui-2-0
 exo-utils
 xfce4-terminal
-# ./inst-min-win-01-xorg-drivers-fix-nvidia-driver/inst-min-win-01-xorg-drivers-fix-nvidia-driver.sh
-nvidia-installer-cleanup
-nvidia-legacy-check
-nvidia-driver-libs
-nvidia-driver-bin
-xserver-xorg-video-nvidia
-nvidia-vdpau-driver
-nvidia-alternative
-nvidia-kernel-dkms
-nvidia-kernel-430.64
-nvidia-support
-glx-alternative-mesa
-glx-alternative-nvidia
-glx-diversions
-libegl-nvidia0
-libgl1-nvidia-glvnd-glx
-libglx-nvidia0
-libnvidia-eglcore
-libnvidia-glcore
-libnvidia-ml1
-nvidia-alternative
-nvidia-driver
-nvidia-driver-bin
-nvidia-driver-libs
-nvidia-egl-common
-nvidia-egl-icd
-nvidia-installer-cleanup
-nvidia-kernel-common
-nvidia-kernel-dkms
-nvidia-kernel-support
-nvidia-legacy-check
-nvidia-modprobe
-nvidia-support
-nvidia-vdpau-driver
-update-glx
-xserver-xorg-video-nvidia
-nvidia-driver
-# ./inst-min-win-01-xorg-fix-drivers-xtra/inst-min-win-01-xorg-fix-drivers-xtra.sh
-xserver-xorg-video-all
-xserver-xorg-input-wacom
-xserver-xorg-video-intel
-xserver-xorg-video-qxl
-xserver-xorg-video-amdgpu
-xserver-xorg-video-ati
-xserver-xorg-video-cirrus
-xserver-xorg-video-fbdev
-xserver-xorg-video-intel
-xserver-xorg-video-mga
-xserver-xorg-video-neomagic
-xserver-xorg-video-nouveau
-xserver-xorg-video-openchrome
-xserver-xorg-video-qxl
-xserver-xorg-video-radeon
-xserver-xorg-video-savage
-xserver-xorg-video-sisusb
-xserver-xorg-video-tdfx
-xserver-xorg-video-trident
-xserver-xorg-video-vesa
-xserver-xorg-video-vmware
 # ./inst-min-win-cld-win-split/inst-min-win-cld-win-split.sh
 wmctrl
 x11-utils
@@ -240,6 +237,8 @@ x11-utils
 menu
 # ./inst-min-win-systray-volumeicon-alsa/inst-min-win-systray-volumeicon-alsa.sh
 volumeicon-alsa
+# ./inst-min-win-wm-awesome/inst-min-win-wm-awesome.sh
+awesome
 # ./inst-min-win-xtra-default-jdk/inst-min-win-xtra-default-jdk.sh
 default-jdk
 # ./inst-min-win-xtra-default-jre/inst-min-win-xtra-default-jre.sh
@@ -449,7 +448,7 @@ pngquant
 apt-transport-https
 ca-certificates
 curl
-gnupg2
+gnupg-agent
 software-properties-common
 docker-ce
 docker-ce-cli
@@ -477,20 +476,30 @@ openttd-openmsx
 openttd
 # ./inst-xtra-geany/inst-xtra-geany.sh
 geany
+# ./inst-xtra-git-fix-libcurl3-gnutls/inst-xtra-git-fix-libcurl3-gnutls.sh
+libcurl3-gnutls=7.64.0-4+deb10u2
 # ./inst-xtra-git/inst-xtra-git.sh
 git
+# ./inst-xtra-git-lfs/inst-xtra-git-lfs.sh
+libgo13
+git-lfs
 # ./inst-xtra-graphviz/inst-xtra-graphviz.sh
 graphviz
 # ./inst-xtra-open-terminals-on-startup/inst-xtra-open-terminals-on-startup.sh
 x11-xserver-utils
 wmctrl
 x11-utils
+# ./inst-xtra-remmina/inst-xtra-remmina.sh
+remmina
+remmina-plugin-rdp
 # ./inst-xtra-selenium-python-pip/inst-xtra-selenium-python-pip.sh
 python-pip
 # ./inst-xtra-ta-lib/inst-xtra-ta-lib.sh
 build-essential
 # ./inst-xtra-vboxguest-additions-doc/inst-xtra-vboxguest-additions-doc.sh
 
+# ./inst-xtra-vboxguest-additions-iso-fix-dctrl-tools/inst-xtra-vboxguest-additions-iso-fix-dctrl-tools.sh
+dctrl-tools
 # ./inst-xtra-vboxguest-additions-iso/inst-xtra-vboxguest-additions-iso.sh
 linux-headers-amd64
 dkms
