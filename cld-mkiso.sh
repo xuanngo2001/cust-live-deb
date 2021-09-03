@@ -112,8 +112,10 @@ mksquashfs "${CHROOT_DIR}" ./binary/live/filesystem.squashfs -comp xz
 # Create ISOHYBRID.
 ##################################################################
 # Note: boot.cat is automatically created
-APP_ID=cust-live-deb-64
-ISO_FILENAME="${iso_output_dir}/${APP_ID}${SYSTEM}_${DATE_STRING}.iso"
+architecture=$(dpkg --print-architecture)
+APP_ID=cld-${architecture}
+version_codename=$(cat /etc/os-release| grep CODENAME| cut -d'=' -f2)
+ISO_FILENAME="${iso_output_dir}/${APP_ID}_${version_codename}${SYSTEM}_${DATE_STRING}.iso"
 xorriso -as mkisofs -r -J -joliet-long -l \
 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
 				-A "${APP_ID}"  \
@@ -124,7 +126,7 @@ xorriso -as mkisofs -r -J -joliet-long -l \
 				-o ${ISO_FILENAME} \
 				./binary
 
-
+md5sum "${ISO_FILENAME}" > "${ISO_FILENAME}.md5"
 
 # Log directories size.
 ##################################################################
