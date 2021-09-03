@@ -1,0 +1,6 @@
+# Convert a string into an array.
+    arr=($line)
+    read -a arr <<< $line
+
+    for i in ${arr[@]}; do echo $i; done
+
