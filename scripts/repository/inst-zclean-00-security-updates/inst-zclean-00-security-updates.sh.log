@@ -1,38 +1,34 @@
 CLDS:>>>>>>>>> Running inst-zclean-00-security-updates.sh ...
-Err:1 https://download.docker.com/linux/debian buster InRelease
-  Temporary failure resolving 'download.docker.com'
-Err:2 http://dl.google.com/linux/chrome/deb stable InRelease
-  Temporary failure resolving 'dl.google.com'
-Hit:3 http://localhost/aptly-repo/master_buster-main buster InRelease
-Hit:4 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
-Hit:5 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports InRelease
-Hit:6 http://localhost/aptly-repo/master_buster-backports-main buster-backports InRelease
-Hit:7 http://localhost/aptly-repo/master_buster-backports-non-free buster-backports InRelease
-Hit:8 http://localhost/aptly-repo/master_buster-contrib buster InRelease
-Hit:9 http://localhost/aptly-repo/master_buster-non-free buster InRelease
-Hit:10 http://localhost/aptly-repo/master_buster-updates-contrib buster-updates InRelease
-Hit:11 http://localhost/aptly-repo/master_buster-updates-main buster-updates InRelease
-Hit:12 http://localhost/aptly-repo/master_buster-updates-non-free buster-updates InRelease
-Hit:13 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
-Hit:14 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
-Hit:15 http://localhost/aptly-repo/master_docker-stable buster InRelease
-Hit:16 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
-Hit:17 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:18 http://localhost/aptly-repo/master_mariadb-main buster InRelease
-Hit:19 http://localhost/aptly-repo/master_microsoft-main buster InRelease
-Hit:20 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
-Hit:21 http://localhost/aptly-repo/master_qgis-main buster InRelease
-Hit:22 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
-Get:23 http://localhost/aptly-repo/master_buster-security-contrib buster-updates InRelease [2,911 B]
-Get:24 http://localhost/aptly-repo/master_buster-security-main buster-updates InRelease [4,390 B]
-Get:25 http://localhost/aptly-repo/master_buster-security-non-free buster-updates InRelease [4,498 B]
-Get:26 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 Packages [52.9 kB]
-Get:27 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 Packages [637 B]
-Fetched 65.3 kB in 3s (23.7 kB/s)
+Hit:1 http://localhost/aptly-repo/master_buster-main buster InRelease
+Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
+Hit:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports InRelease
+Hit:4 http://localhost/aptly-repo/master_buster-backports-main buster-backports InRelease
+Hit:5 http://localhost/aptly-repo/master_buster-backports-non-free buster-backports InRelease
+Hit:6 http://localhost/aptly-repo/master_buster-contrib buster InRelease
+Hit:7 http://localhost/aptly-repo/master_buster-non-free buster InRelease
+Hit:8 http://localhost/aptly-repo/master_buster-updates-contrib buster-updates InRelease
+Hit:9 http://localhost/aptly-repo/master_buster-updates-main buster-updates InRelease
+Hit:10 http://localhost/aptly-repo/master_buster-updates-non-free buster-updates InRelease
+Hit:11 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
+Hit:12 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
+Hit:13 http://localhost/aptly-repo/master_docker-stable buster InRelease
+Hit:14 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
+Hit:15 http://localhost/aptly-repo/master_google-main stable InRelease
+Hit:16 http://localhost/aptly-repo/master_mariadb-main buster InRelease
+Hit:17 http://localhost/aptly-repo/master_microsoft-main buster InRelease
+Hit:18 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
+Hit:19 http://localhost/aptly-repo/master_qgis-main buster InRelease
+Hit:20 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
+Get:21 http://localhost/aptly-repo/master_buster-security-contrib buster-updates InRelease [2,910 B]
+Get:22 http://localhost/aptly-repo/master_buster-security-main buster-updates InRelease [4,389 B]
+Get:23 http://localhost/aptly-repo/master_buster-security-non-free buster-updates InRelease [4,497 B]
+Hit:24 https://download.docker.com/linux/debian buster InRelease
+Hit:25 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:26 https://deb.nodesource.com/node_12.x buster InRelease
+Get:27 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 Packages [52.9 kB]
+Get:28 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 Packages [637 B]
+Fetched 65.3 kB in 3s (20.0 kB/s)
 Reading package lists...
-W: Failed to fetch https://download.docker.com/linux/debian/dists/buster/InRelease  Temporary failure resolving 'download.docker.com'
-W: Failed to fetch http://dl.google.com/linux/chrome/deb/dists/stable/InRelease  Temporary failure resolving 'dl.google.com'
-W: Some index files failed to download. They have been ignored, or old ones used instead.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -43,13 +39,13 @@ The following packages have been kept back:
   php7.3-curl php7.3-fpm php7.3-gd php7.3-json php7.3-mbstring php7.3-opcache
   php7.3-readline php7.3-sqlite3 php7.3-xml php7.3-zip systemd
 The following packages will be upgraded:
-  firefox-esr intel-microcode less libc-ares2 libcom-err2 libcryptsetup12
-  libcurl3-gnutls libelf1 libgssapi-krb5-2 libhogweed4 libk5crypto3 libkrb5-3
-  libkrb5support0 libnettle6 libnftnl11 libseccomp2 libss2 libssl1.1 libudev1
-  libuv1 netbase php7.3 systemd-sysv udev
-24 upgraded, 0 newly installed, 0 to remove and 21 not upgraded.
-Need to get 65.5 MB of archives.
-After this operation, 2,181 kB of additional disk space will be used.
+  firefox-esr intel-microcode less libcom-err2 libcryptsetup12 libcurl3-gnutls
+  libelf1 libgssapi-krb5-2 libhogweed4 libk5crypto3 libkrb5-3 libkrb5support0
+  libnettle6 libnftnl11 libseccomp2 libss2 libssl1.1 libudev1 netbase php7.3
+  systemd-sysv udev
+22 upgraded, 0 newly installed, 0 to remove and 21 not upgraded.
+Need to get 65.3 MB of archives.
+After this operation, 2,176 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 systemd-sysv amd64 247.3-6~bpo10+1 [113 kB]
 Get:2 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libnettle6 amd64 3.4.1-1+deb10u1 [215 kB]
 Get:3 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libhogweed4 amd64 3.4.1-1+deb10u1 [141 kB]
@@ -70,33 +66,31 @@ Get:17 http://localhost/aptly-repo/master_buster-backports-main buster-backports
 Get:18 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libelf1 amd64 0.183-1~bpo10+1 [165 kB]
 Get:19 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libnftnl11 amd64 1.1.7-1~bpo10+1 [61.1 kB]
 Get:20 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libss2 amd64 1.46.2-1~bpo10+2 [78.7 kB]
-Get:21 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libuv1 amd64 1.24.1-1+deb10u1 [110 kB]
-Get:22 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 php7.3 all 7.3.29-1~deb10u1 [47.1 kB]
-Get:23 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 intel-microcode amd64 3.20210608.2~deb10u1 [3,835 kB]
-Get:24 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libc-ares2 amd64 1.14.0-1+deb10u1 [86.1 kB]
+Get:21 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 php7.3 all 7.3.29-1~deb10u1 [47.1 kB]
+Get:22 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 intel-microcode amd64 3.20210608.2~deb10u1 [3,835 kB]
 Preconfiguring packages ...
-Fetched 65.5 MB in 1s (48.7 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107620 files and directories currently installed.)
+Fetched 65.3 MB in 1s (49.0 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 112803 files and directories currently installed.)
 Preparing to unpack .../systemd-sysv_247.3-6~bpo10+1_amd64.deb ...
 Unpacking systemd-sysv (247.3-6~bpo10+1) over (241-7~deb10u7) ...
 Preparing to unpack .../libnettle6_3.4.1-1+deb10u1_amd64.deb ...
 Unpacking libnettle6:amd64 (3.4.1-1+deb10u1) over (3.4.1-1) ...
 Setting up libnettle6:amd64 (3.4.1-1+deb10u1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107620 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 112803 files and directories currently installed.)
 Preparing to unpack .../libhogweed4_3.4.1-1+deb10u1_amd64.deb ...
 Unpacking libhogweed4:amd64 (3.4.1-1+deb10u1) over (3.4.1-1) ...
 Setting up libhogweed4:amd64 (3.4.1-1+deb10u1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107620 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 112803 files and directories currently installed.)
 Preparing to unpack .../libseccomp2_2.4.4-1~bpo10+1_amd64.deb ...
 Unpacking libseccomp2:amd64 (2.4.4-1~bpo10+1) over (2.3.3-4) ...
 Setting up libseccomp2:amd64 (2.4.4-1~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107620 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 112803 files and directories currently installed.)
 Preparing to unpack .../udev_247.3-6~bpo10+1_amd64.deb ...
 Unpacking udev (247.3-6~bpo10+1) over (241-7~deb10u7) ...
 Preparing to unpack .../libudev1_247.3-6~bpo10+1_amd64.deb ...
 Unpacking libudev1:amd64 (247.3-6~bpo10+1) over (241-7~deb10u7) ...
 Setting up libudev1:amd64 (247.3-6~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 107627 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 112810 files and directories currently installed.)
 Preparing to unpack .../00-less_551-1~bpo10+1_amd64.deb ...
 Unpacking less (551-1~bpo10+1) over (487-0.1+b1) ...
 Preparing to unpack .../01-libssl1.1_1.1.1d-0+deb10u7_amd64.deb ...
@@ -126,14 +120,10 @@ Preparing to unpack .../12-libnftnl11_1.1.7-1~bpo10+1_amd64.deb ...
 Unpacking libnftnl11:amd64 (1.1.7-1~bpo10+1) over (1.1.2-2) ...
 Preparing to unpack .../13-libss2_1.46.2-1~bpo10+2_amd64.deb ...
 Unpacking libss2:amd64 (1.46.2-1~bpo10+2) over (1.44.5-1+deb10u3) ...
-Preparing to unpack .../14-libuv1_1.24.1-1+deb10u1_amd64.deb ...
-Unpacking libuv1:amd64 (1.24.1-1+deb10u1) over (1.24.1-1) ...
-Preparing to unpack .../15-php7.3_7.3.29-1~deb10u1_all.deb ...
+Preparing to unpack .../14-php7.3_7.3.29-1~deb10u1_all.deb ...
 Unpacking php7.3 (7.3.29-1~deb10u1) over (7.3.27-1~deb10u1) ...
-Preparing to unpack .../16-intel-microcode_3.20210608.2~deb10u1_amd64.deb ...
+Preparing to unpack .../15-intel-microcode_3.20210608.2~deb10u1_amd64.deb ...
 Unpacking intel-microcode (3.20210608.2~deb10u1) over (3.20210216.1~deb10u1) ...
-Preparing to unpack .../17-libc-ares2_1.14.0-1+deb10u1_amd64.deb ...
-Unpacking libc-ares2:amd64 (1.14.0-1+deb10u1) over (1.14.0-1) ...
 Setting up systemd-sysv (247.3-6~bpo10+1) ...
 Setting up php7.3 (7.3.29-1~deb10u1) ...
 Setting up libssl1.1:amd64 (1.1.1d-0+deb10u7) ...
@@ -143,9 +133,7 @@ intel-microcode: microcode will be updated at next boot
 Setting up less (551-1~bpo10+1) ...
 Setting up libnftnl11:amd64 (1.1.7-1~bpo10+1) ...
 Setting up libcom-err2:amd64 (1.46.2-1~bpo10+2) ...
-Setting up libc-ares2:amd64 (1.14.0-1+deb10u1) ...
 Setting up libkrb5support0:amd64 (1.17-3+deb10u2) ...
-Setting up libuv1:amd64 (1.24.1-1+deb10u1) ...
 Setting up udev (247.3-6~bpo10+1) ...
 Installing new version of config file /etc/init.d/udev ...
 Installing new version of config file /etc/udev/udev.conf ...
@@ -170,4 +158,4 @@ Processing triggers for hicolor-icon-theme (0.17-2) ...
 Processing triggers for libc-bin (2.28-10) ...
 Processing triggers for systemd (241-7~deb10u7) ...
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 4587064K. Space Used = 68172K. Runtime = 00:00:00:37.
+CLDS: * Disk size = 5037552K. Space Used = 68000K. Runtime = 00:00:00:37.
