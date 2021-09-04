@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-05-keyring-00-gnupg.sh ...
   * After this operation, 22.6 MB of additional disk space will be used.
   * Install gnupg to manage and create keys.
-  * Disk size = 920380K. Space Used = 26744K. Runtime = 00:00:00:04.
+  * Disk size = 920320K. Space Used = 26744K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 dirmngr gnupg gnupg-l10n gnupg-utils gpg

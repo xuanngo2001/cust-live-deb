@@ -2,7 +2,7 @@
   * After this operation, 23.4 MB of additional disk space will be used.
   * After this operation, 70.7 MB of additional disk space will be used.
   * Install nodejs.
-  * Disk size = 5997292K. Space Used = 127304K. Runtime = 00:00:00:25.
+  * Disk size = 6067112K. Space Used = 127304K. Runtime = 00:00:00:24.
   * The following NEW packages will be installed:
   ```bash
 libc-ares2 libnode64 libuv1 nodejs
