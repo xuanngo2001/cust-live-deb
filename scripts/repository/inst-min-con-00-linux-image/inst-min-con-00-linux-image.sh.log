@@ -170,16 +170,14 @@ Hit:7 http://localhost/aptly-repo/master_buster-non-free buster InRelease
 Hit:8 http://localhost/aptly-repo/master_buster-updates-contrib buster-updates InRelease
 Hit:9 http://localhost/aptly-repo/master_buster-updates-main buster-updates InRelease
 Hit:10 http://localhost/aptly-repo/master_buster-updates-non-free buster-updates InRelease
-Hit:11 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
-Hit:12 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
-Hit:13 http://localhost/aptly-repo/master_docker-stable buster InRelease
-Hit:14 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
-Hit:15 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:16 http://localhost/aptly-repo/master_mariadb-main buster InRelease
-Hit:17 http://localhost/aptly-repo/master_microsoft-main buster InRelease
-Hit:18 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
-Hit:19 http://localhost/aptly-repo/master_qgis-main buster InRelease
-Hit:20 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
+Hit:11 http://localhost/aptly-repo/master_docker-stable buster InRelease
+Hit:12 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
+Hit:13 http://localhost/aptly-repo/master_google-main stable InRelease
+Hit:14 http://localhost/aptly-repo/master_mariadb-main buster InRelease
+Hit:15 http://localhost/aptly-repo/master_microsoft-main buster InRelease
+Hit:16 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
+Hit:17 http://localhost/aptly-repo/master_qgis-main buster InRelease
+Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -206,7 +204,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 831 kB in 0s (12.6 MB/s)
+Fetched 831 kB in 0s (14.6 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9230 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.12.20-0+deb10u1_amd64.deb ...
@@ -274,7 +272,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 54.9 MB in 1s (40.3 MB/s)
+Fetched 54.9 MB in 2s (32.7 MB/s)
 Selecting previously unselected package libxxhash0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9453 files and directories currently installed.)
 Preparing to unpack .../libxxhash0_0.8.0-2~bpo10+1_amd64.deb ...
@@ -424,36 +422,36 @@ un  linux-image-generic                       <none>            <none>       (no
 total 38592
 -rw-r--r-- 1 root root       83 Aug  7 06:00 System.map-5.10.0-0.bpo.8-amd64
 -rw-r--r-- 1 root root   236202 Aug  7 06:00 config-5.10.0-0.bpo.8-amd64
--rw-r--r-- 1 root root 32464814 Sep  3 20:22 initrd.img-5.10.0-0.bpo.8-amd64
+-rw-r--r-- 1 root root 32463967 Sep  4 21:49 initrd.img-5.10.0-0.bpo.8-amd64
 -rw-r--r-- 1 root root  6808800 Aug  7 06:00 vmlinuz-5.10.0-0.bpo.8-amd64
 e0a6c09212a19ed48183a052eab847e7  /boot/System.map-5.10.0-0.bpo.8-amd64
 7bae7f55a0426f1134b95046fc2d9dd0  /boot/config-5.10.0-0.bpo.8-amd64
-813f823570ad89fc3f32dc11299b2492  /boot/initrd.img-5.10.0-0.bpo.8-amd64
+7b9b728ac7db92a4389630d3a822f420  /boot/initrd.img-5.10.0-0.bpo.8-amd64
 e9d2ddfc2948cd050bd7268d675d87a1  /boot/vmlinuz-5.10.0-0.bpo.8-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Sep  3 20:20 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Sep  3 20:22 boot
-drwxr-xr-x  17 root root 3620 Sep  3 16:07 dev
-drwxr-xr-x  49 root root 4096 Sep  3 20:21 etc
+lrwxrwxrwx   1 root root    7 Sep  4 21:48 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Sep  4 21:49 boot
+drwxr-xr-x  17 root root 3620 Sep  4 16:39 dev
+drwxr-xr-x  49 root root 4096 Sep  4 21:49 etc
 drwxr-xr-x   2 root root 4096 Jun 13 10:30 home
-lrwxrwxrwx   1 root root   36 Sep  3 20:21 initrd.img -> boot/initrd.img-5.10.0-0.bpo.8-amd64
-lrwxrwxrwx   1 root root    7 Sep  3 20:20 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Sep  3 20:20 lib32 -> usr/lib32
-lrwxrwxrwx   1 root root    9 Sep  3 20:20 lib64 -> usr/lib64
-lrwxrwxrwx   1 root root   10 Sep  3 20:20 libx32 -> usr/libx32
-drwxr-xr-x   2 root root 4096 Sep  3 20:20 media
-drwxr-xr-x   2 root root 4096 Sep  3 20:20 mnt
-drwxr-xr-x   2 root root 4096 Sep  3 20:20 opt
-dr-xr-xr-x 296 root root    0 Sep  3 20:21 proc
-drwx------   3 root root 4096 Sep  3 20:21 root
-drwxr-xr-x   4 root root 4096 Sep  3 20:20 run
-lrwxrwxrwx   1 root root    8 Sep  3 20:20 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Sep  3 20:20 srv
-dr-xr-xr-x  13 root root    0 Sep  3 16:04 sys
-drwxrwxrwt   2 root root 4096 Sep  3 20:22 tmp
-drwxr-xr-x  13 root root 4096 Sep  3 20:20 usr
-drwxr-xr-x  11 root root 4096 Sep  3 20:20 var
-lrwxrwxrwx   1 root root   33 Sep  3 20:21 vmlinuz -> boot/vmlinuz-5.10.0-0.bpo.8-amd64
+lrwxrwxrwx   1 root root   36 Sep  4 21:48 initrd.img -> boot/initrd.img-5.10.0-0.bpo.8-amd64
+lrwxrwxrwx   1 root root    7 Sep  4 21:48 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Sep  4 21:48 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Sep  4 21:48 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Sep  4 21:48 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Sep  4 21:48 media
+drwxr-xr-x   2 root root 4096 Sep  4 21:48 mnt
+drwxr-xr-x   2 root root 4096 Sep  4 21:48 opt
+dr-xr-xr-x 313 root root    0 Sep  4 21:48 proc
+drwx------   3 root root 4096 Sep  4 21:48 root
+drwxr-xr-x   4 root root 4096 Sep  4 21:48 run
+lrwxrwxrwx   1 root root    8 Sep  4 21:48 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Sep  4 21:48 srv
+dr-xr-xr-x  13 root root    0 Sep  4 16:38 sys
+drwxrwxrwt   2 root root 4096 Sep  4 21:49 tmp
+drwxr-xr-x  13 root root 4096 Sep  4 21:48 usr
+drwxr-xr-x  11 root root 4096 Sep  4 21:48 var
+lrwxrwxrwx   1 root root   33 Sep  4 21:48 vmlinuz -> boot/vmlinuz-5.10.0-0.bpo.8-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-5.10.0-0.bpo.8-amd64.
-CLDS: * Disk size = 863224K. Space Used = 398380K. Runtime = 00:00:00:45.
+CLDS: * Disk size = 863164K. Space Used = 398380K. Runtime = 00:00:00:47.
