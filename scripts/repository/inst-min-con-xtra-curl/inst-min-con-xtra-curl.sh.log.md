@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-curl.sh ...
   * After this operation, 4,755 kB of additional disk space will be used.
   * Install curl.
-  * Disk size = 1498544K. Space Used = 6780K. Runtime = 00:00:00:02.
+  * Disk size = 1498580K. Space Used = 6780K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 curl libbrotli1 libcurl4 libgssapi-krb5-2 libk5crypto3
