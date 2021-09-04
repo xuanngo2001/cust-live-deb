@@ -1,4 +1,5 @@
 #!/bin/bash
+# Description: Setup /media/master/ partition.
 set -e
 # All GNU PG keys are in ~/.gnupg/trustedkeys.gpg.
 # Catch-22: Run this script once. Otherwise, ~/.aptly will be linked to new folder on new disk.
