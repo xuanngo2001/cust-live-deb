@@ -30,7 +30,7 @@ DEB_REPO_URL=$2
 	CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 
 # Boot strap the minimum live system.
-    debootstrap --keyring=/root/.gnupg/trustedkeys.gpg --arch=amd64 buster ${CHROOT_DIR} ${DEB_REPO_URL}
+    debootstrap --keyring=/root/.gnupg/trustedkeys.gpg --arch=amd64 bullseye ${CHROOT_DIR} ${DEB_REPO_URL}
 
 # copy original source.list to source.list.live
     cp -a ${CHROOT_DIR}/etc/apt/sources.list ${CHROOT_DIR}/etc/apt/sources.list.live
