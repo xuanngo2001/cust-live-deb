@@ -9,23 +9,25 @@ Hit:7 http://localhost/aptly-repo/master_buster-non-free buster InRelease
 Hit:8 http://localhost/aptly-repo/master_buster-updates-contrib buster-updates InRelease
 Hit:9 http://localhost/aptly-repo/master_buster-updates-main buster-updates InRelease
 Hit:10 http://localhost/aptly-repo/master_buster-updates-non-free buster-updates InRelease
-Hit:11 http://localhost/aptly-repo/master_docker-stable buster InRelease
-Hit:12 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
-Hit:13 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:14 http://localhost/aptly-repo/master_mariadb-main buster InRelease
-Hit:15 http://localhost/aptly-repo/master_microsoft-main buster InRelease
-Hit:16 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
-Hit:17 http://localhost/aptly-repo/master_qgis-main buster InRelease
-Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
-Get:19 http://localhost/aptly-repo/master_buster-security-contrib buster-updates InRelease [2,910 B]
-Get:20 http://localhost/aptly-repo/master_buster-security-main buster-updates InRelease [4,389 B]
-Get:21 http://localhost/aptly-repo/master_buster-security-non-free buster-updates InRelease [4,497 B]
-Hit:22 http://dl.google.com/linux/chrome/deb stable InRelease
-Hit:23 https://download.docker.com/linux/debian buster InRelease
-Hit:24 https://deb.nodesource.com/node_12.x buster InRelease
-Get:25 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 Packages [53.1 kB]
-Get:26 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 Packages [637 B]
-Fetched 65.5 kB in 3s (19.2 kB/s)
+Hit:11 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
+Hit:12 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
+Hit:13 http://localhost/aptly-repo/master_docker-stable buster InRelease
+Hit:14 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
+Hit:15 http://localhost/aptly-repo/master_google-main stable InRelease
+Hit:16 http://localhost/aptly-repo/master_mariadb-main buster InRelease
+Hit:17 http://localhost/aptly-repo/master_microsoft-main buster InRelease
+Hit:18 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
+Hit:19 http://localhost/aptly-repo/master_qgis-main buster InRelease
+Hit:20 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
+Get:21 http://localhost/aptly-repo/master_buster-security-contrib buster-updates InRelease [2,910 B]
+Get:22 http://localhost/aptly-repo/master_buster-security-main buster-updates InRelease [4,389 B]
+Get:23 http://localhost/aptly-repo/master_buster-security-non-free buster-updates InRelease [4,497 B]
+Hit:24 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:25 https://download.docker.com/linux/debian buster InRelease
+Hit:26 https://deb.nodesource.com/node_12.x buster InRelease
+Get:27 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 Packages [53.1 kB]
+Get:28 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 Packages [637 B]
+Fetched 65.5 kB in 3s (20.7 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -39,100 +41,91 @@ The following packages have been kept back:
 The following packages will be upgraded:
   firefox-esr intel-microcode less libcom-err2 libcryptsetup12 libcurl3-gnutls
   libelf1 libgssapi-krb5-2 libhogweed4 libk5crypto3 libkrb5-3 libkrb5support0
-  libnettle6 libnftnl11 libseccomp2 libsmbclient libss2 libssl1.1 libudev1
-  libwbclient0 netbase php7.3 samba-libs squashfs-tools systemd-sysv udev
-26 upgraded, 0 newly installed, 0 to remove and 21 not upgraded.
-Need to get 71.3 MB of archives.
-After this operation, 2,177 kB of additional disk space will be used.
+  libnettle6 libnftnl11 libseccomp2 libss2 libssl1.1 libudev1 netbase php7.3
+  squashfs-tools systemd-sysv udev
+23 upgraded, 0 newly installed, 0 to remove and 21 not upgraded.
+Need to get 65.5 MB of archives.
+After this operation, 2,176 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 systemd-sysv amd64 247.3-6~bpo10+1 [113 kB]
-Get:2 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libk5crypto3 amd64 1.17-3+deb10u2 [122 kB]
-Get:3 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libgssapi-krb5-2 amd64 1.17-3+deb10u2 [158 kB]
-Get:4 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libkrb5-3 amd64 1.17-3+deb10u2 [369 kB]
-Get:5 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libkrb5support0 amd64 1.17-3+deb10u2 [65.7 kB]
-Get:6 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libcom-err2 amd64 1.46.2-1~bpo10+2 [74.2 kB]
-Get:7 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libssl1.1 amd64 1.1.1d-0+deb10u7 [1,539 kB]
-Get:8 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libsmbclient amd64 2:4.9.5+dfsg-5+deb10u1 [160 kB]
-Get:9 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 samba-libs amd64 2:4.9.5+dfsg-5+deb10u1 [5,563 kB]
-Get:10 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libwbclient0 amd64 2:4.9.5+dfsg-5+deb10u1 [132 kB]
-Get:11 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libnettle6 amd64 3.4.1-1+deb10u1 [215 kB]
-Get:12 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libhogweed4 amd64 3.4.1-1+deb10u1 [141 kB]
-Get:13 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libseccomp2 amd64 2.4.4-1~bpo10+1 [47.6 kB]
-Get:14 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 udev amd64 247.3-6~bpo10+1 [1,463 kB]
-Get:15 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libudev1 amd64 247.3-6~bpo10+1 [171 kB]
-Get:16 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 less amd64 551-1~bpo10+1 [133 kB]
-Get:17 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 netbase all 6.1~bpo10+1 [19.9 kB]
-Get:18 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 firefox-esr amd64 78.13.0esr-1~deb10u1 [55.9 MB]
-Get:19 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libcryptsetup12 amd64 2:2.3.5-1~bpo10+1 [243 kB]
-Get:20 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libcurl3-gnutls amd64 7.74.0-1.2~bpo10+1 [337 kB]
-Get:21 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libelf1 amd64 0.183-1~bpo10+1 [165 kB]
-Get:22 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libnftnl11 amd64 1.1.7-1~bpo10+1 [61.1 kB]
-Get:23 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libss2 amd64 1.46.2-1~bpo10+2 [78.7 kB]
-Get:24 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 php7.3 all 7.3.29-1~deb10u1 [47.1 kB]
-Get:25 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 squashfs-tools amd64 1:4.3-12+deb10u1 [126 kB]
-Get:26 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 intel-microcode amd64 3.20210608.2~deb10u1 [3,835 kB]
+Get:2 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libnettle6 amd64 3.4.1-1+deb10u1 [215 kB]
+Get:3 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libhogweed4 amd64 3.4.1-1+deb10u1 [141 kB]
+Get:4 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libseccomp2 amd64 2.4.4-1~bpo10+1 [47.6 kB]
+Get:5 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 udev amd64 247.3-6~bpo10+1 [1,463 kB]
+Get:6 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libudev1 amd64 247.3-6~bpo10+1 [171 kB]
+Get:7 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 less amd64 551-1~bpo10+1 [133 kB]
+Get:8 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libssl1.1 amd64 1.1.1d-0+deb10u7 [1,539 kB]
+Get:9 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 netbase all 6.1~bpo10+1 [19.9 kB]
+Get:10 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libgssapi-krb5-2 amd64 1.17-3+deb10u2 [158 kB]
+Get:11 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libkrb5-3 amd64 1.17-3+deb10u2 [369 kB]
+Get:12 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libkrb5support0 amd64 1.17-3+deb10u2 [65.7 kB]
+Get:13 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 libk5crypto3 amd64 1.17-3+deb10u2 [122 kB]
+Get:14 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libcom-err2 amd64 1.46.2-1~bpo10+2 [74.2 kB]
+Get:15 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 firefox-esr amd64 78.13.0esr-1~deb10u1 [55.9 MB]
+Get:16 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libcryptsetup12 amd64 2:2.3.5-1~bpo10+1 [243 kB]
+Get:17 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libcurl3-gnutls amd64 7.74.0-1.2~bpo10+1 [337 kB]
+Get:18 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libelf1 amd64 0.183-1~bpo10+1 [165 kB]
+Get:19 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libnftnl11 amd64 1.1.7-1~bpo10+1 [61.1 kB]
+Get:20 http://localhost/aptly-repo/master_buster-backports-main buster-backports/main amd64 libss2 amd64 1.46.2-1~bpo10+2 [78.7 kB]
+Get:21 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 php7.3 all 7.3.29-1~deb10u1 [47.1 kB]
+Get:22 http://localhost/aptly-repo/master_buster-security-main buster-updates/main amd64 squashfs-tools amd64 1:4.3-12+deb10u1 [126 kB]
+Get:23 http://localhost/aptly-repo/master_buster-security-non-free buster-updates/non-free amd64 intel-microcode amd64 3.20210608.2~deb10u1 [3,835 kB]
 Preconfiguring packages ...
-Fetched 71.3 MB in 2s (47.5 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 113038 files and directories currently installed.)
-Preparing to unpack .../00-systemd-sysv_247.3-6~bpo10+1_amd64.deb ...
+Fetched 65.5 MB in 1s (48.3 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 112803 files and directories currently installed.)
+Preparing to unpack .../systemd-sysv_247.3-6~bpo10+1_amd64.deb ...
 Unpacking systemd-sysv (247.3-6~bpo10+1) over (241-7~deb10u7) ...
-Preparing to unpack .../01-libk5crypto3_1.17-3+deb10u2_amd64.deb ...
-Unpacking libk5crypto3:amd64 (1.17-3+deb10u2) over (1.17-3+deb10u1) ...
-Preparing to unpack .../02-libgssapi-krb5-2_1.17-3+deb10u2_amd64.deb ...
-Unpacking libgssapi-krb5-2:amd64 (1.17-3+deb10u2) over (1.17-3+deb10u1) ...
-Preparing to unpack .../03-libkrb5-3_1.17-3+deb10u2_amd64.deb ...
-Unpacking libkrb5-3:amd64 (1.17-3+deb10u2) over (1.17-3+deb10u1) ...
-Preparing to unpack .../04-libkrb5support0_1.17-3+deb10u2_amd64.deb ...
-Unpacking libkrb5support0:amd64 (1.17-3+deb10u2) over (1.17-3+deb10u1) ...
-Preparing to unpack .../05-libcom-err2_1.46.2-1~bpo10+2_amd64.deb ...
-Unpacking libcom-err2:amd64 (1.46.2-1~bpo10+2) over (1.44.5-1+deb10u3) ...
-Preparing to unpack .../06-libssl1.1_1.1.1d-0+deb10u7_amd64.deb ...
-Unpacking libssl1.1:amd64 (1.1.1d-0+deb10u7) over (1.1.1d-0+deb10u6) ...
-Preparing to unpack .../07-libsmbclient_2%3a4.9.5+dfsg-5+deb10u1_amd64.deb ...
-Unpacking libsmbclient:amd64 (2:4.9.5+dfsg-5+deb10u1) over (2:4.9.5+dfsg-5) ...
-Preparing to unpack .../08-samba-libs_2%3a4.9.5+dfsg-5+deb10u1_amd64.deb ...
-Unpacking samba-libs:amd64 (2:4.9.5+dfsg-5+deb10u1) over (2:4.9.5+dfsg-5) ...
-Preparing to unpack .../09-libwbclient0_2%3a4.9.5+dfsg-5+deb10u1_amd64.deb ...
-Unpacking libwbclient0:amd64 (2:4.9.5+dfsg-5+deb10u1) over (2:4.9.5+dfsg-5) ...
-Preparing to unpack .../10-libnettle6_3.4.1-1+deb10u1_amd64.deb ...
+Preparing to unpack .../libnettle6_3.4.1-1+deb10u1_amd64.deb ...
 Unpacking libnettle6:amd64 (3.4.1-1+deb10u1) over (3.4.1-1) ...
 Setting up libnettle6:amd64 (3.4.1-1+deb10u1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 113038 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 112803 files and directories currently installed.)
 Preparing to unpack .../libhogweed4_3.4.1-1+deb10u1_amd64.deb ...
 Unpacking libhogweed4:amd64 (3.4.1-1+deb10u1) over (3.4.1-1) ...
 Setting up libhogweed4:amd64 (3.4.1-1+deb10u1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 113038 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 112803 files and directories currently installed.)
 Preparing to unpack .../libseccomp2_2.4.4-1~bpo10+1_amd64.deb ...
 Unpacking libseccomp2:amd64 (2.4.4-1~bpo10+1) over (2.3.3-4) ...
 Setting up libseccomp2:amd64 (2.4.4-1~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 113038 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 112803 files and directories currently installed.)
 Preparing to unpack .../udev_247.3-6~bpo10+1_amd64.deb ...
 Unpacking udev (247.3-6~bpo10+1) over (241-7~deb10u7) ...
 Preparing to unpack .../libudev1_247.3-6~bpo10+1_amd64.deb ...
 Unpacking libudev1:amd64 (247.3-6~bpo10+1) over (241-7~deb10u7) ...
 Setting up libudev1:amd64 (247.3-6~bpo10+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 113045 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 112810 files and directories currently installed.)
 Preparing to unpack .../00-less_551-1~bpo10+1_amd64.deb ...
 Unpacking less (551-1~bpo10+1) over (487-0.1+b1) ...
-Preparing to unpack .../01-netbase_6.1~bpo10+1_all.deb ...
+Preparing to unpack .../01-libssl1.1_1.1.1d-0+deb10u7_amd64.deb ...
+Unpacking libssl1.1:amd64 (1.1.1d-0+deb10u7) over (1.1.1d-0+deb10u6) ...
+Preparing to unpack .../02-netbase_6.1~bpo10+1_all.deb ...
 Unpacking netbase (6.1~bpo10+1) over (5.6) ...
-Preparing to unpack .../02-firefox-esr_78.13.0esr-1~deb10u1_amd64.deb ...
+Preparing to unpack .../03-libgssapi-krb5-2_1.17-3+deb10u2_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.17-3+deb10u2) over (1.17-3+deb10u1) ...
+Preparing to unpack .../04-libkrb5-3_1.17-3+deb10u2_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.17-3+deb10u2) over (1.17-3+deb10u1) ...
+Preparing to unpack .../05-libkrb5support0_1.17-3+deb10u2_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.17-3+deb10u2) over (1.17-3+deb10u1) ...
+Preparing to unpack .../06-libk5crypto3_1.17-3+deb10u2_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.17-3+deb10u2) over (1.17-3+deb10u1) ...
+Preparing to unpack .../07-libcom-err2_1.46.2-1~bpo10+2_amd64.deb ...
+Unpacking libcom-err2:amd64 (1.46.2-1~bpo10+2) over (1.44.5-1+deb10u3) ...
+Preparing to unpack .../08-firefox-esr_78.13.0esr-1~deb10u1_amd64.deb ...
 Leaving 'diversion of /usr/bin/firefox to /usr/bin/firefox.real by firefox-esr'
 Unpacking firefox-esr (78.13.0esr-1~deb10u1) over (78.11.0esr-1~deb10u1) ...
-Preparing to unpack .../03-libcryptsetup12_2%3a2.3.5-1~bpo10+1_amd64.deb ...
+Preparing to unpack .../09-libcryptsetup12_2%3a2.3.5-1~bpo10+1_amd64.deb ...
 Unpacking libcryptsetup12:amd64 (2:2.3.5-1~bpo10+1) over (2:2.1.0-5+deb10u2) ...
-Preparing to unpack .../04-libcurl3-gnutls_7.74.0-1.2~bpo10+1_amd64.deb ...
+Preparing to unpack .../10-libcurl3-gnutls_7.74.0-1.2~bpo10+1_amd64.deb ...
 Unpacking libcurl3-gnutls:amd64 (7.74.0-1.2~bpo10+1) over (7.64.0-4+deb10u2) ...
-Preparing to unpack .../05-libelf1_0.183-1~bpo10+1_amd64.deb ...
+Preparing to unpack .../11-libelf1_0.183-1~bpo10+1_amd64.deb ...
 Unpacking libelf1:amd64 (0.183-1~bpo10+1) over (0.176-1.1) ...
-Preparing to unpack .../06-libnftnl11_1.1.7-1~bpo10+1_amd64.deb ...
+Preparing to unpack .../12-libnftnl11_1.1.7-1~bpo10+1_amd64.deb ...
 Unpacking libnftnl11:amd64 (1.1.7-1~bpo10+1) over (1.1.2-2) ...
-Preparing to unpack .../07-libss2_1.46.2-1~bpo10+2_amd64.deb ...
+Preparing to unpack .../13-libss2_1.46.2-1~bpo10+2_amd64.deb ...
 Unpacking libss2:amd64 (1.46.2-1~bpo10+2) over (1.44.5-1+deb10u3) ...
-Preparing to unpack .../08-php7.3_7.3.29-1~deb10u1_all.deb ...
+Preparing to unpack .../14-php7.3_7.3.29-1~deb10u1_all.deb ...
 Unpacking php7.3 (7.3.29-1~deb10u1) over (7.3.27-1~deb10u1) ...
-Preparing to unpack .../09-squashfs-tools_1%3a4.3-12+deb10u1_amd64.deb ...
+Preparing to unpack .../15-squashfs-tools_1%3a4.3-12+deb10u1_amd64.deb ...
 Unpacking squashfs-tools (1:4.3-12+deb10u1) over (1:4.3-12) ...
-Preparing to unpack .../10-intel-microcode_3.20210608.2~deb10u1_amd64.deb ...
+Preparing to unpack .../16-intel-microcode_3.20210608.2~deb10u1_amd64.deb ...
 Unpacking intel-microcode (3.20210608.2~deb10u1) over (3.20210216.1~deb10u1) ...
 Setting up systemd-sysv (247.3-6~bpo10+1) ...
 Setting up squashfs-tools (1:4.3-12+deb10u1) ...
@@ -144,7 +137,6 @@ intel-microcode: microcode will be updated at next boot
 Setting up less (551-1~bpo10+1) ...
 Setting up libnftnl11:amd64 (1.1.7-1~bpo10+1) ...
 Setting up libcom-err2:amd64 (1.46.2-1~bpo10+2) ...
-Setting up libwbclient0:amd64 (2:4.9.5+dfsg-5+deb10u1) ...
 Setting up libkrb5support0:amd64 (1.17-3+deb10u2) ...
 Setting up udev (247.3-6~bpo10+1) ...
 Installing new version of config file /etc/init.d/udev ...
@@ -158,9 +150,7 @@ Installing new version of config file /etc/services ...
 Setting up libkrb5-3:amd64 (1.17-3+deb10u2) ...
 Setting up libelf1:amd64 (0.183-1~bpo10+1) ...
 Setting up firefox-esr (78.13.0esr-1~deb10u1) ...
-Setting up samba-libs:amd64 (2:4.9.5+dfsg-5+deb10u1) ...
 Setting up libgssapi-krb5-2:amd64 (1.17-3+deb10u2) ...
-Setting up libsmbclient:amd64 (2:4.9.5+dfsg-5+deb10u1) ...
 Setting up libcurl3-gnutls:amd64 (7.74.0-1.2~bpo10+1) ...
 Processing triggers for desktop-file-utils (0.23-4) ...
 Processing triggers for mime-support (3.62) ...
@@ -172,4 +162,4 @@ Processing triggers for hicolor-icon-theme (0.17-2) ...
 Processing triggers for libc-bin (2.28-10) ...
 Processing triggers for systemd (241-7~deb10u7) ...
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 5095236K. Space Used = 73792K. Runtime = 00:00:00:43.
+CLDS: * Disk size = 5037700K. Space Used = 68132K. Runtime = 00:00:00:37.
