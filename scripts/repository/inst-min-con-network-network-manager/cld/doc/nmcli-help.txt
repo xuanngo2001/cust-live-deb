@@ -1,0 +1,32 @@
+# Get devices status.
+    nmcli dev status
+
+# Is wifi on?
+    nmcli radio wifi
+
+    # Enable wifi
+        nmcli radio wifi on
+
+# List wifi access point.
+    nmcli dev wifi list
+
+# Connect to wifi network.
+    nmcli dev wifi connect <SSID>
+
+    # For WEP or WPA.
+    nmcli dev wifi connect <SSID> password <PASSWORD>
+
+    # Ask for password, instead of writing out on screen.
+    nmcli --ask dev wifi connect <SSID>
+
+# Test connection.
+    ping google.com
+
+# Show all saved connections.
+    nmcli con show
+    
+# Connect to different network.
+    nmcli con down <SSID/UUID>
+    nmcli con up <SSID/UUID>
+
+# Configuration files are stored in /etc/NetworkManager/NetworkManager.conf
