@@ -8,16 +8,16 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install conky.
-apt-get -y install conky
+    apt-get -y install conky
 
 # Add conky config files and run script after JWM.
-yes | cp -av ./cld/ /usr/local
+    yes | cp -av ./cld/ /usr/local
 
 # Log
-echo "${GV_LOG} * Install System Monitor: conky."
-echo "${GV_LOG} * Add conky config file: ${CONKYRC}."
-echo "${GV_LOG} * Set conky to run on JWM startup."
-echo "${GV_LOG} * Add on the fly settings to Conky."
+	echo "${GV_LOG} * Install System Monitor: conky."
+	echo "${GV_LOG} * Add conky config file: ${CONKYRC}."
+	echo "${GV_LOG} * Set conky to run on JWM startup."
+	echo "${GV_LOG} * Add on the fly settings to Conky."
 
 # Reference
 # http://www.techdrivein.com/2010/12/13-breathtaking-conky-configurations.html
