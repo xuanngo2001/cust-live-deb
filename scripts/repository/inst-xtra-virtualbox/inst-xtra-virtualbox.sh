@@ -14,7 +14,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install virtualbox.
-  apt-get -y install virtualbox-6.0 libqt5opengl5 libqt5x11extras5
+  apt-get -y install virtualbox-6.1 libqt5opengl5 libqt5x11extras5
 
 
 # Log
