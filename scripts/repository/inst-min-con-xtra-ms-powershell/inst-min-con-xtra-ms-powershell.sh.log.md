@@ -1,8 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-ms-powershell.sh ...
-  * After this operation, 212 MB of additional disk space will be used.
   * Install PowerShell.
-  * Disk size = 3148924K. Space Used = 283936K. Runtime = 00:00:00:07.
+  * Disk size = 3126816K. Space Used = 222788K. Runtime = 00:00:01:06.
   * The following NEW packages will be installed:
   ```bash
-libicu63 liblttng-ust0 liblttng-ust-ctl4 liburcu6 powershell
+liblttng-ust0 liblttng-ust-ctl4 libnuma1 liburcu6
   ```

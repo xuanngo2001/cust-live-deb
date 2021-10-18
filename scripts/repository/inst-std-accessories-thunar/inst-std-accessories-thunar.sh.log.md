@@ -1,13 +1,13 @@
 * >>>>>>>>> Running inst-std-accessories-thunar.sh ...
-  * After this operation, 7,470 kB of additional disk space will be used.
+  * After this operation, 8,036 kB of additional disk space will be used.
   * After this operation, 353 kB of additional disk space will be used.
-  * After this operation, 899 kB of additional disk space will be used.
+  * After this operation, 938 kB of additional disk space will be used.
   * After this operation, 15.6 MB of additional disk space will be used.
   * Install Thunar file manager.
   * Insert Thunar in Accessories menu.
-  * Disk size = 4034792K. Space Used = 32296K. Runtime = 00:00:00:07.
+  * Disk size = 3932600K. Space Used = 32936K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
-desktop-file-utils gnome-icon-theme libthunarx-3-0 thunar thunar-archive-plugin
-thunar-data thunar-volman
+desktop-file-utils gnome-icon-theme librsvg2-common libthunarx-3-0 thunar
+thunar-archive-plugin thunar-data thunar-volman
   ```

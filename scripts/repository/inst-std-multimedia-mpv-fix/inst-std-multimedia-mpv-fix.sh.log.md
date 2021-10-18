@@ -1,8 +1,9 @@
 * >>>>>>>>> Running inst-std-multimedia-mpv-fix.sh ...
-  * After this operation, 6,134 kB of additional disk space will be used.
-  * 2020-02-17: libtesseract4 package still need.
-  * Disk size = 4690556K. Space Used = 8268K. Runtime = 00:00:00:03.
+  * 2021-09-06: Bullseye upgrade: required packages.
+  * Disk size = 4611928K. Space Used = 12K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
-liblept5 libtesseract4
+libarchive13 libcjson1 libdjvulibre21 libdjvulibre-text liblept5
+liblqr-1-0 libmbedcrypto3 libopencore-amrnb0 libopencore-amrwb0 libraqm0
+libsixel1 libtesseract4 libwebpmux3
   ```

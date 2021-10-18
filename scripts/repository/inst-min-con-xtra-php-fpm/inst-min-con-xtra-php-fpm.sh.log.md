@@ -1,11 +1,12 @@
 * >>>>>>>>> Running inst-min-con-xtra-php-fpm.sh ...
-  * After this operation, 18.0 MB of additional disk space will be used.
+  * After this operation, 18.6 MB of additional disk space will be used.
   * Install php-fpm.
   * Need for Drupal with nginx.
   * Used to speed up the performance of a website. It is much faster than traditional CGI based methods and has the ability to handle tremendous loads simultaneously.
-  * Disk size = 3224668K. Space Used = 22504K. Runtime = 00:00:00:12.
+  * Disk size = 3241496K. Space Used = 23280K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
-libsodium23 php7.3-cli php7.3-common php7.3-fpm php7.3-json
-php7.3-opcache php7.3-readline php-common php-fpm
+libsodium23 mailcap mime-support php7.4-cli php7.4-common
+php7.4-fpm php7.4-json php7.4-opcache php7.4-readline php-common
+php-fpm
   ```

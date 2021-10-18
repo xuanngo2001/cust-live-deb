@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-xtra-web-dev-nodejs.sh ...
-  * After this operation, 23.4 MB of additional disk space will be used.
-  * After this operation, 70.7 MB of additional disk space will be used.
+  * After this operation, 38.1 MB of additional disk space will be used.
+  * After this operation, 56.1 MB of additional disk space will be used.
   * Install nodejs.
-  * Disk size = 5997328K. Space Used = 127304K. Runtime = 00:00:00:25.
+  * Disk size = 5091212K. Space Used = 130088K. Runtime = 00:00:00:20.
   * The following NEW packages will be installed:
   ```bash
-libc-ares2 libnode64 libuv1 nodejs
+libc-ares2 libnode72 libuv1 nodejs
   ```

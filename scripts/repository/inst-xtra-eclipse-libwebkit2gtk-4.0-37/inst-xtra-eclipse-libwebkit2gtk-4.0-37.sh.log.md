@@ -1,12 +1,15 @@
 * >>>>>>>>> Running inst-xtra-eclipse-libwebkit2gtk-4.0-37.sh ...
-  * After this operation, 101 MB of additional disk space will be used.
+  * After this operation, 123 MB of additional disk space will be used.
   * Install libwebkit2gtk-4.0-37.
   * To be able to render *.md files.
-  * Disk size = 5518436K. Space Used = 127004K. Runtime = 00:00:00:09.
+  * Disk size = 5634248K. Space Used = 151904K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
-aspell aspell-en bubblewrap dictionaries-common emacsen-common
-libaspell15 libenchant1c2a libgstreamer1.0-0 libgstreamer-gl1.0-0 libgstreamer-plugins-base1.0-0
-libharfbuzz-icu0 libhunspell-1.7-0 libhyphen0 libjavascriptcoregtk-4.0-18 liborc-0.4-0
-libwebkit2gtk-4.0-37 libwebpdemux2 libwoff1 xdg-dbus-proxy
+bubblewrap dictionaries-common emacsen-common gstreamer1.0-plugins-base gstreamer1.0-plugins-good
+hunspell-en-us libaa1 libaspell15 libcdparanoia0 libdv4
+libdw1 libenchant-2-2 libgstreamer1.0-0 libgstreamer-gl1.0-0 libgstreamer-plugins-base1.0-0
+libharfbuzz-icu0 libhunspell-1.7-0 libhyphen0 libjavascriptcoregtk-4.0-18 libmanette-0.2-0
+liborc-0.4-0 libshout3 libtag1v5 libtag1v5-vanilla libv4l-0
+libv4lconvert0 libvisual-0.4-0 libwavpack1 libwebkit2gtk-4.0-37 libwoff1
+libwpe-1.0-1 libwpebackend-fdo-1.0-1 xdg-dbus-proxy
   ```

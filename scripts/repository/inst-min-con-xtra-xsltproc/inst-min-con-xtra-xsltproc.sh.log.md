@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-xsltproc.sh ...
-  * After this operation, 162 kB of additional disk space will be used.
+  * After this operation, 164 kB of additional disk space will be used.
   * Install xsltproc to process Docbook.
-  * Disk size = 3487872K. Space Used = 300K. Runtime = 00:00:00:01.
+  * Disk size = 3429188K. Space Used = 312K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 xsltproc

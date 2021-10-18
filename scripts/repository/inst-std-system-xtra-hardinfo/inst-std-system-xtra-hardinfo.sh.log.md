@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-std-system-xtra-hardinfo.sh ...
-  * After this operation, 1,347 kB of additional disk space will be used.
+  * After this operation, 891 kB of additional disk space will be used.
   * Install hardware info apps: hardinfo.
   * Insert System Information menu in Administration.
-  * Disk size = 4924780K. Space Used = 1928K. Runtime = 00:00:00:02.
+  * Disk size = 5012368K. Space Used = 1240K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
-hardinfo zlib1g-dev
+hardinfo
   ```

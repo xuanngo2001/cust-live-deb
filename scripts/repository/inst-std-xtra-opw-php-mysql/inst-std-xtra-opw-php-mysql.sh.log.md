@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-xtra-opw-php-mysql.sh ...
-  * After this operation, 470 kB of additional disk space will be used.
-  * Disk size = 4928124K. Space Used = 672K. Runtime = 00:00:00:03.
+  * After this operation, 483 kB of additional disk space will be used.
+  * Disk size = 5015944K. Space Used = 692K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
-php7.3-mysql php-mysql
+php7.4-mysql php-mysql
   ```
