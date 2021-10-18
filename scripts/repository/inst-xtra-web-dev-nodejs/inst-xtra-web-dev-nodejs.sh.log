@@ -3,40 +3,40 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libc-ares2 libnode64 libuv1
+  libc-ares2 libnode72 libuv1
 Suggested packages:
   npm
 Recommended packages:
   nodejs-doc
 The following NEW packages will be installed:
-  libc-ares2 libnode64 libuv1 nodejs
-0 upgraded, 4 newly installed, 0 to remove and 19 not upgraded.
-Need to get 5,914 kB of archives.
-After this operation, 23.4 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libc-ares2 amd64 1.14.0-1 [85.8 kB]
-Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libuv1 amd64 1.24.1-1 [110 kB]
-Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 libnode64 amd64 10.24.0~dfsg-1~deb10u1 [5,631 kB]
-Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 nodejs amd64 10.24.0~dfsg-1~deb10u1 [87.3 kB]
-Fetched 5,914 kB in 0s (42.3 MB/s)
+  libc-ares2 libnode72 libuv1 nodejs
+0 upgraded, 4 newly installed, 0 to remove and 1 not upgraded.
+Need to get 8,714 kB of archives.
+After this operation, 38.1 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libc-ares2 amd64 1.17.1-1+deb11u1 [102 kB]
+Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libuv1 amd64 1.40.0-2 [132 kB]
+Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libnode72 amd64 12.22.5~dfsg-2~11u1 [8,333 kB]
+Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 nodejs amd64 12.22.5~dfsg-2~11u1 [147 kB]
+Fetched 8,714 kB in 0s (81.4 MB/s)
 Selecting previously unselected package libc-ares2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 106633 files and directories currently installed.)
-Preparing to unpack .../libc-ares2_1.14.0-1_amd64.deb ...
-Unpacking libc-ares2:amd64 (1.14.0-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94300 files and directories currently installed.)
+Preparing to unpack .../libc-ares2_1.17.1-1+deb11u1_amd64.deb ...
+Unpacking libc-ares2:amd64 (1.17.1-1+deb11u1) ...
 Selecting previously unselected package libuv1:amd64.
-Preparing to unpack .../libuv1_1.24.1-1_amd64.deb ...
-Unpacking libuv1:amd64 (1.24.1-1) ...
-Selecting previously unselected package libnode64:amd64.
-Preparing to unpack .../libnode64_10.24.0~dfsg-1~deb10u1_amd64.deb ...
-Unpacking libnode64:amd64 (10.24.0~dfsg-1~deb10u1) ...
+Preparing to unpack .../libuv1_1.40.0-2_amd64.deb ...
+Unpacking libuv1:amd64 (1.40.0-2) ...
+Selecting previously unselected package libnode72:amd64.
+Preparing to unpack .../libnode72_12.22.5~dfsg-2~11u1_amd64.deb ...
+Unpacking libnode72:amd64 (12.22.5~dfsg-2~11u1) ...
 Selecting previously unselected package nodejs.
-Preparing to unpack .../nodejs_10.24.0~dfsg-1~deb10u1_amd64.deb ...
-Unpacking nodejs (10.24.0~dfsg-1~deb10u1) ...
-Setting up libc-ares2:amd64 (1.14.0-1) ...
-Setting up libuv1:amd64 (1.24.1-1) ...
-Setting up libnode64:amd64 (10.24.0~dfsg-1~deb10u1) ...
-Setting up nodejs (10.24.0~dfsg-1~deb10u1) ...
+Preparing to unpack .../nodejs_12.22.5~dfsg-2~11u1_amd64.deb ...
+Unpacking nodejs (12.22.5~dfsg-2~11u1) ...
+Setting up libc-ares2:amd64 (1.17.1-1+deb11u1) ...
+Setting up libuv1:amd64 (1.40.0-2) ...
+Setting up libnode72:amd64 (12.22.5~dfsg-2~11u1) ...
+Setting up nodejs (12.22.5~dfsg-2~11u1) ...
 update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
-Processing triggers for libc-bin (2.28-10) ...
+Processing triggers for libc-bin (2.31-13+deb11u2) ...
 
 ## Installing the NodeSource Node.js 12.x repo...
 
@@ -44,33 +44,30 @@ Processing triggers for libc-bin (2.28-10) ...
 ## Populating apt-get cache...
 
 + apt-get update
-Hit:1 http://localhost/aptly-repo/master_buster-main buster InRelease
+Hit:1 http://localhost/aptly-repo/master_bullseye-main bullseye InRelease
 Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
-Hit:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports InRelease
-Hit:4 http://localhost/aptly-repo/master_buster-backports-main buster-backports InRelease
-Hit:5 http://localhost/aptly-repo/master_buster-backports-non-free buster-backports InRelease
-Hit:6 http://localhost/aptly-repo/master_buster-contrib buster InRelease
-Hit:7 http://localhost/aptly-repo/master_buster-non-free buster InRelease
-Hit:8 http://localhost/aptly-repo/master_buster-updates-contrib buster-updates InRelease
-Hit:9 http://localhost/aptly-repo/master_buster-updates-main buster-updates InRelease
-Hit:10 http://localhost/aptly-repo/master_buster-updates-non-free buster-updates InRelease
-Hit:11 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
-Hit:12 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
-Hit:13 http://localhost/aptly-repo/master_docker-stable buster InRelease
+Hit:3 http://localhost/aptly-repo/master_bullseye-backports-contrib bullseye-backports InRelease
+Hit:4 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports InRelease
+Hit:5 http://localhost/aptly-repo/master_bullseye-backports-non-free bullseye-backports InRelease
+Hit:6 http://localhost/aptly-repo/master_bullseye-contrib bullseye InRelease
+Hit:7 http://localhost/aptly-repo/master_bullseye-non-free bullseye InRelease
+Hit:8 http://localhost/aptly-repo/master_bullseye-updates-contrib bullseye-updates InRelease
+Hit:9 http://localhost/aptly-repo/master_bullseye-updates-main bullseye-updates InRelease
+Hit:10 http://localhost/aptly-repo/master_bullseye-updates-non-free bullseye-updates InRelease
+Hit:11 http://localhost/aptly-repo/master_deb-multimedia-main bullseye InRelease
+Hit:12 http://localhost/aptly-repo/master_deb-multimedia-non-free bullseye InRelease
+Hit:13 http://localhost/aptly-repo/master_docker-stable bullseye InRelease
 Hit:14 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:15 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:16 http://localhost/aptly-repo/master_mariadb-main buster InRelease
-Hit:17 http://localhost/aptly-repo/master_microsoft-main buster InRelease
-Hit:18 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
-Hit:19 http://localhost/aptly-repo/master_qgis-main buster InRelease
-Hit:20 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
-Hit:21 http://dl.google.com/linux/chrome/deb stable InRelease
-Hit:22 https://download.docker.com/linux/debian buster InRelease
+Hit:16 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
+Hit:17 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
+Hit:18 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:19 https://download.docker.com/linux/debian buster InRelease
 Reading package lists...
 
-## Confirming "buster" is supported...
+## Confirming "bullseye" is supported...
 
-+ curl -sLf -o /dev/null 'https://deb.nodesource.com/node_12.x/dists/buster/Release'
++ curl -sLf -o /dev/null 'https://deb.nodesource.com/node_12.x/dists/bullseye/Release'
 
 ## Adding the NodeSource signing key to your keyring...
 
@@ -78,37 +75,34 @@ Reading package lists...
 
 ## Creating apt sources list file for the NodeSource Node.js 12.x repo...
 
-+ echo 'deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_12.x buster main' > /etc/apt/sources.list.d/nodesource.list
-+ echo 'deb-src [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_12.x buster main' >> /etc/apt/sources.list.d/nodesource.list
++ echo 'deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_12.x bullseye main' > /etc/apt/sources.list.d/nodesource.list
++ echo 'deb-src [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_12.x bullseye main' >> /etc/apt/sources.list.d/nodesource.list
 
 ## Running `apt-get update` for you...
 
 + apt-get update
-Hit:1 http://localhost/aptly-repo/master_buster-main buster InRelease
+Hit:1 http://localhost/aptly-repo/master_bullseye-main bullseye InRelease
 Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
-Hit:3 http://localhost/aptly-repo/master_buster-backports-contrib buster-backports InRelease
-Hit:4 http://localhost/aptly-repo/master_buster-backports-main buster-backports InRelease
-Hit:5 http://localhost/aptly-repo/master_buster-backports-non-free buster-backports InRelease
-Hit:6 http://localhost/aptly-repo/master_buster-contrib buster InRelease
-Hit:7 http://localhost/aptly-repo/master_buster-non-free buster InRelease
-Hit:8 http://localhost/aptly-repo/master_buster-updates-contrib buster-updates InRelease
-Hit:9 http://localhost/aptly-repo/master_buster-updates-main buster-updates InRelease
-Hit:10 http://localhost/aptly-repo/master_buster-updates-non-free buster-updates InRelease
-Hit:11 http://localhost/aptly-repo/master_deb-multimedia-main buster InRelease
-Hit:12 http://localhost/aptly-repo/master_deb-multimedia-non-free buster InRelease
-Hit:13 http://localhost/aptly-repo/master_docker-stable buster InRelease
+Hit:3 http://localhost/aptly-repo/master_bullseye-backports-contrib bullseye-backports InRelease
+Hit:4 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports InRelease
+Hit:5 http://localhost/aptly-repo/master_bullseye-backports-non-free bullseye-backports InRelease
+Hit:6 http://localhost/aptly-repo/master_bullseye-contrib bullseye InRelease
+Hit:7 http://localhost/aptly-repo/master_bullseye-non-free bullseye InRelease
+Hit:8 http://localhost/aptly-repo/master_bullseye-updates-contrib bullseye-updates InRelease
+Hit:9 http://localhost/aptly-repo/master_bullseye-updates-main bullseye-updates InRelease
+Hit:10 http://localhost/aptly-repo/master_bullseye-updates-non-free bullseye-updates InRelease
+Hit:11 http://localhost/aptly-repo/master_deb-multimedia-main bullseye InRelease
+Hit:12 http://localhost/aptly-repo/master_deb-multimedia-non-free bullseye InRelease
+Hit:13 http://localhost/aptly-repo/master_docker-stable bullseye InRelease
 Hit:14 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:15 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:16 http://localhost/aptly-repo/master_mariadb-main buster InRelease
-Hit:17 http://localhost/aptly-repo/master_microsoft-main buster InRelease
-Hit:18 http://localhost/aptly-repo/master_mono-main stable-buster InRelease
-Hit:19 http://localhost/aptly-repo/master_qgis-main buster InRelease
-Hit:20 http://localhost/aptly-repo/master_virtualbox-contrib buster InRelease
-Hit:21 http://dl.google.com/linux/chrome/deb stable InRelease
-Hit:22 https://download.docker.com/linux/debian buster InRelease
-Get:23 https://deb.nodesource.com/node_12.x buster InRelease [4,584 B]
-Get:24 https://deb.nodesource.com/node_12.x buster/main amd64 Packages [768 B]
-Fetched 5,352 B in 3s (1,603 B/s)
+Hit:16 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
+Hit:17 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
+Hit:18 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:19 https://download.docker.com/linux/debian buster InRelease
+Get:20 https://deb.nodesource.com/node_12.x bullseye InRelease [4,586 B]
+Get:21 https://deb.nodesource.com/node_12.x bullseye/main amd64 Packages [767 B]
+Fetched 5,353 B in 1s (3,591 B/s)
 Reading package lists...
 
 ## Run `sudo apt-get install -y nodejs` to install Node.js 12.x and npm
@@ -127,23 +121,23 @@ The following packages were automatically installed and are no longer required:
   libc-ares2 libuv1
 Use 'apt autoremove' to remove them.
 The following packages will be REMOVED:
-  libnode64
+  libnode72
 The following packages will be upgraded:
   nodejs
-1 upgraded, 0 newly installed, 1 to remove and 19 not upgraded.
-Need to get 18.1 MB of archives.
-After this operation, 70.7 MB of additional disk space will be used.
-Get:1 https://deb.nodesource.com/node_12.x buster/main amd64 nodejs amd64 12.22.6-deb-1nodesource1 [18.1 MB]
-Fetched 18.1 MB in 9s (1,935 kB/s)
-dpkg: libnode64:amd64: dependency problems, but removing anyway as you requested:
- nodejs depends on libnode64 (= 10.24.0~dfsg-1~deb10u1).
+1 upgraded, 0 newly installed, 1 to remove and 1 not upgraded.
+Need to get 18.0 MB of archives.
+After this operation, 56.1 MB of additional disk space will be used.
+Get:1 https://deb.nodesource.com/node_12.x bullseye/main amd64 nodejs amd64 12.22.7-deb-1nodesource1 [18.0 MB]
+Fetched 18.0 MB in 12s (1,544 kB/s)
+dpkg: libnode72:amd64: dependency problems, but removing anyway as you requested:
+ nodejs depends on libnode72 (= 12.22.5~dfsg-2~11u1).
 
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 106664 files and directories currently installed.)
-Removing libnode64:amd64 (10.24.0~dfsg-1~deb10u1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 106657 files and directories currently installed.)
-Preparing to unpack .../nodejs_12.22.6-deb-1nodesource1_amd64.deb ...
-Unpacking nodejs (12.22.6-deb-1nodesource1) over (10.24.0~dfsg-1~deb10u1) ...
-Setting up nodejs (12.22.6-deb-1nodesource1) ...
-Processing triggers for libc-bin (2.28-10) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94385 files and directories currently installed.)
+Removing libnode72:amd64 (12.22.5~dfsg-2~11u1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94379 files and directories currently installed.)
+Preparing to unpack .../nodejs_12.22.7-deb-1nodesource1_amd64.deb ...
+Unpacking nodejs (12.22.7-deb-1nodesource1) over (12.22.5~dfsg-2~11u1) ...
+Setting up nodejs (12.22.7-deb-1nodesource1) ...
+Processing triggers for libc-bin (2.31-13+deb11u2) ...
 CLDS: * Install nodejs.
-CLDS: * Disk size = 5997328K. Space Used = 127304K. Runtime = 00:00:00:25.
+CLDS: * Disk size = 5091212K. Space Used = 130088K. Runtime = 00:00:00:20.

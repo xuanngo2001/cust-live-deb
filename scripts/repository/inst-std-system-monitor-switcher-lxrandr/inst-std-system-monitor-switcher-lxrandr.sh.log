@@ -3,61 +3,61 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  cpp cpp-8 libisl19 libmpc3
+  cpp cpp-10 libisl23 libmpc3
 Suggested packages:
-  cpp-doc gcc-8-locales nickle cairo-5c xorg-docs-core
+  cpp-doc gcc-10-locales nickle cairo-5c xorg-docs-core
 The following NEW packages will be installed:
-  cpp cpp-8 libisl19 libmpc3 x11-xserver-utils
-0 upgraded, 5 newly installed, 0 to remove and 18 not upgraded.
-Need to get 9,729 kB of archives.
-After this operation, 28.9 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libisl19 amd64 0.20-2 [587 kB]
-Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libmpc3 amd64 1.1.0-1 [41.3 kB]
-Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 cpp-8 amd64 8.3.0-6 [8,914 kB]
-Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 cpp amd64 4:8.3.0-1 [19.4 kB]
-Get:5 http://localhost/aptly-repo/master_buster-main buster/main amd64 x11-xserver-utils amd64 7.7+8 [168 kB]
-Fetched 9,729 kB in 0s (48.6 MB/s)
-Selecting previously unselected package libisl19:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79284 files and directories currently installed.)
-Preparing to unpack .../libisl19_0.20-2_amd64.deb ...
-Unpacking libisl19:amd64 (0.20-2) ...
+  cpp cpp-10 libisl23 libmpc3 x11-xserver-utils
+0 upgraded, 5 newly installed, 0 to remove and 1 not upgraded.
+Need to get 9,437 kB of archives.
+After this operation, 29.2 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libisl23 amd64 0.23-1 [676 kB]
+Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libmpc3 amd64 1.2.0-1 [45.0 kB]
+Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 cpp-10 amd64 10.2.1-6 [8,528 kB]
+Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 cpp amd64 4:10.2.1-1 [19.7 kB]
+Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 x11-xserver-utils amd64 7.7+8 [168 kB]
+Fetched 9,437 kB in 0s (70.3 MB/s)
+Selecting previously unselected package libisl23:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86933 files and directories currently installed.)
+Preparing to unpack .../libisl23_0.23-1_amd64.deb ...
+Unpacking libisl23:amd64 (0.23-1) ...
 Selecting previously unselected package libmpc3:amd64.
-Preparing to unpack .../libmpc3_1.1.0-1_amd64.deb ...
-Unpacking libmpc3:amd64 (1.1.0-1) ...
-Selecting previously unselected package cpp-8.
-Preparing to unpack .../cpp-8_8.3.0-6_amd64.deb ...
-Unpacking cpp-8 (8.3.0-6) ...
+Preparing to unpack .../libmpc3_1.2.0-1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.2.0-1) ...
+Selecting previously unselected package cpp-10.
+Preparing to unpack .../cpp-10_10.2.1-6_amd64.deb ...
+Unpacking cpp-10 (10.2.1-6) ...
 Selecting previously unselected package cpp.
-Preparing to unpack .../cpp_4%3a8.3.0-1_amd64.deb ...
-Unpacking cpp (4:8.3.0-1) ...
+Preparing to unpack .../cpp_4%3a10.2.1-1_amd64.deb ...
+Unpacking cpp (4:10.2.1-1) ...
 Selecting previously unselected package x11-xserver-utils.
 Preparing to unpack .../x11-xserver-utils_7.7+8_amd64.deb ...
 Unpacking x11-xserver-utils (7.7+8) ...
-Setting up libmpc3:amd64 (1.1.0-1) ...
-Setting up libisl19:amd64 (0.20-2) ...
-Setting up cpp-8 (8.3.0-6) ...
-Setting up cpp (4:8.3.0-1) ...
+Setting up libmpc3:amd64 (1.2.0-1) ...
+Setting up libisl23:amd64 (0.23-1) ...
+Setting up cpp-10 (10.2.1-6) ...
+Setting up cpp (4:10.2.1-1) ...
 Setting up x11-xserver-utils (7.7+8) ...
-Processing triggers for libc-bin (2.28-10) ...
-Processing triggers for menu (2.1.47+b1) ...
+Processing triggers for libc-bin (2.31-13+deb11u2) ...
+Processing triggers for menu (2.1.48) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   lxrandr
-0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
-Need to get 52.2 kB of archives.
-After this operation, 410 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 lxrandr amd64 0.3.2-1 [52.2 kB]
-Fetched 52.2 kB in 0s (1,545 kB/s)
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 52.4 kB of archives.
+After this operation, 411 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 lxrandr amd64 0.3.2-1+b1 [52.4 kB]
+Fetched 52.4 kB in 0s (1,249 kB/s)
 Selecting previously unselected package lxrandr.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79346 files and directories currently installed.)
-Preparing to unpack .../lxrandr_0.3.2-1_amd64.deb ...
-Unpacking lxrandr (0.3.2-1) ...
-Setting up lxrandr (0.3.2-1) ...
-Processing triggers for mime-support (3.62) ...
-Processing triggers for desktop-file-utils (0.23-4) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86998 files and directories currently installed.)
+Preparing to unpack .../lxrandr_0.3.2-1+b1_amd64.deb ...
+Unpacking lxrandr (0.3.2-1+b1) ...
+Setting up lxrandr (0.3.2-1+b1) ...
+Processing triggers for desktop-file-utils (0.26-1) ...
+Processing triggers for mailcap (3.69) ...
 './cld/doc/monitor-help.txt' -> '/usr/local/cld/doc/monitor-help.txt'
 CLDS: * Install Monitor Switcher: lxrandr.
 CLDS: * Add lxrandr key binding.
-CLDS: * Disk size = 4845296K. Space Used = 37992K. Runtime = 00:00:00:04.
+CLDS: * Disk size = 5010976K. Space Used = 38084K. Runtime = 00:00:00:02.

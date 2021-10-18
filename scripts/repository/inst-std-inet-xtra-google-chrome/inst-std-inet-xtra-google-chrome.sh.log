@@ -3,165 +3,39 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libdbusmenu-glib4 libdbusmenu-gtk4 libindicator7
-The following NEW packages will be installed:
-  libappindicator1 libdbusmenu-glib4 libdbusmenu-gtk4 libindicator7
-0 upgraded, 4 newly installed, 0 to remove and 18 not upgraded.
-Need to get 210 kB of archives.
-After this operation, 498 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libdbusmenu-glib4 amd64 18.10.20180917~bzr490+repack1-1 [58.0 kB]
-Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libdbusmenu-gtk4 amd64 18.10.20180917~bzr490+repack1-1 [45.7 kB]
-Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 libindicator7 amd64 0.5.0-4 [53.0 kB]
-Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 libappindicator1 amd64 0.4.92-7 [53.3 kB]
-Fetched 210 kB in 0s (4,973 kB/s)
-Selecting previously unselected package libdbusmenu-glib4:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77469 files and directories currently installed.)
-Preparing to unpack .../libdbusmenu-glib4_18.10.20180917~bzr490+repack1-1_amd64.deb ...
-Unpacking libdbusmenu-glib4:amd64 (18.10.20180917~bzr490+repack1-1) ...
-Selecting previously unselected package libdbusmenu-gtk4:amd64.
-Preparing to unpack .../libdbusmenu-gtk4_18.10.20180917~bzr490+repack1-1_amd64.deb ...
-Unpacking libdbusmenu-gtk4:amd64 (18.10.20180917~bzr490+repack1-1) ...
-Selecting previously unselected package libindicator7:amd64.
-Preparing to unpack .../libindicator7_0.5.0-4_amd64.deb ...
-Unpacking libindicator7:amd64 (0.5.0-4) ...
-Selecting previously unselected package libappindicator1:amd64.
-Preparing to unpack .../libappindicator1_0.4.92-7_amd64.deb ...
-Unpacking libappindicator1:amd64 (0.4.92-7) ...
-Setting up libdbusmenu-glib4:amd64 (18.10.20180917~bzr490+repack1-1) ...
-Setting up libindicator7:amd64 (0.5.0-4) ...
-Setting up libdbusmenu-gtk4:amd64 (18.10.20180917~bzr490+repack1-1) ...
-Setting up libappindicator1:amd64 (0.4.92-7) ...
-Processing triggers for libc-bin (2.28-10) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-libdbusmenu-glib4 is already the newest version (18.10.20180917~bzr490+repack1-1).
-libdbusmenu-glib4 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-libdbusmenu-gtk4 is already the newest version (18.10.20180917~bzr490+repack1-1).
-libdbusmenu-gtk4 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-libindicator7 is already the newest version (0.5.0-4).
-libindicator7 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
+  xdg-utils
 Recommended packages:
-  libfile-mimeinfo-perl libnet-dbus-perl libx11-protocol-perl
+  libu2f-udev libfile-mimeinfo-perl libnet-dbus-perl libx11-protocol-perl
   x11-xserver-utils
 The following NEW packages will be installed:
-  xdg-utils
-0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
-Need to get 73.7 kB of archives.
-After this operation, 335 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 xdg-utils all 1.1.3-1+deb10u1 [73.7 kB]
-Fetched 73.7 kB in 0s (2,070 kB/s)
+  google-chrome-stable xdg-utils
+0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.
+Need to get 90.3 MB of archives.
+After this operation, 283 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xdg-utils all 1.1.3-4.1 [75.5 kB]
+Get:2 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 94.0.4606.81-1 [90.2 MB]
+Fetched 90.3 MB in 1s (115 MB/s)
 Selecting previously unselected package xdg-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77494 files and directories currently installed.)
-Preparing to unpack .../xdg-utils_1.1.3-1+deb10u1_all.deb ...
-Unpacking xdg-utils (1.1.3-1+deb10u1) ...
-Setting up xdg-utils (1.1.3-1+deb10u1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  gconf2-common libgconf-2-4
-The following NEW packages will be installed:
-  gconf-service gconf2-common libgconf-2-4
-0 upgraded, 3 newly installed, 0 to remove and 18 not upgraded.
-Need to get 1,879 kB of archives.
-After this operation, 7,693 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 gconf2-common all 3.2.6-5 [1,039 kB]
-Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 libgconf-2-4 amd64 3.2.6-5 [426 kB]
-Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 gconf-service amd64 3.2.6-5 [414 kB]
-Fetched 1,879 kB in 0s (23.0 MB/s)
-Selecting previously unselected package gconf2-common.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77521 files and directories currently installed.)
-Preparing to unpack .../gconf2-common_3.2.6-5_all.deb ...
-Unpacking gconf2-common (3.2.6-5) ...
-Selecting previously unselected package libgconf-2-4:amd64.
-Preparing to unpack .../libgconf-2-4_3.2.6-5_amd64.deb ...
-Unpacking libgconf-2-4:amd64 (3.2.6-5) ...
-Selecting previously unselected package gconf-service.
-Preparing to unpack .../gconf-service_3.2.6-5_amd64.deb ...
-Unpacking gconf-service (3.2.6-5) ...
-Setting up gconf2-common (3.2.6-5) ...
-
-Creating config file /etc/gconf/2/path with new version
-Setting up libgconf-2-4:amd64 (3.2.6-5) ...
-Setting up gconf-service (3.2.6-5) ...
-Processing triggers for libc-bin (2.28-10) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-libgconf-2-4 is already the newest version (3.2.6-5).
-libgconf-2-4 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-libxss1 is already the newest version (1:1.2.3-1).
-libxss1 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  distro-info-data
-Suggested packages:
-  lsb
-The following NEW packages will be installed:
-  distro-info-data lsb-release
-0 upgraded, 2 newly installed, 0 to remove and 18 not upgraded.
-Need to get 34.2 kB of archives.
-After this operation, 79.9 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 distro-info-data all 0.41+deb10u3 [6,640 B]
-Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 lsb-release all 10.2019051400 [27.5 kB]
-Fetched 34.2 kB in 0s (989 kB/s)
-Selecting previously unselected package distro-info-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77661 files and directories currently installed.)
-Preparing to unpack .../distro-info-data_0.41+deb10u3_all.deb ...
-Unpacking distro-info-data (0.41+deb10u3) ...
-Selecting previously unselected package lsb-release.
-Preparing to unpack .../lsb-release_10.2019051400_all.deb ...
-Unpacking lsb-release (10.2019051400) ...
-Setting up distro-info-data (0.41+deb10u3) ...
-Setting up lsb-release (10.2019051400) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-Recommended packages:
-  libu2f-udev
-The following NEW packages will be installed:
-  google-chrome-stable
-0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
-Need to get 82.9 MB of archives.
-After this operation, 261 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 93.0.4577.63-1 [82.9 MB]
-Fetched 82.9 MB in 2s (52.4 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 83619 files and directories currently installed.)
+Preparing to unpack .../xdg-utils_1.1.3-4.1_all.deb ...
+Unpacking xdg-utils (1.1.3-4.1) ...
 Selecting previously unselected package google-chrome-stable.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 77681 files and directories currently installed.)
-Preparing to unpack .../google-chrome-stable_93.0.4577.63-1_amd64.deb ...
-Unpacking google-chrome-stable (93.0.4577.63-1) ...
-Setting up google-chrome-stable (93.0.4577.63-1) ...
+Preparing to unpack .../google-chrome-stable_94.0.4606.81-1_amd64.deb ...
+Unpacking google-chrome-stable (94.0.4606.81-1) ...
+Setting up xdg-utils (1.1.3-4.1) ...
+update-alternatives: using /usr/bin/xdg-open to provide /usr/bin/open (open) in auto mode
+Setting up google-chrome-stable (94.0.4606.81-1) ...
 update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
 update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
 update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/google-chrome (google-chrome) in auto mode
-Processing triggers for mime-support (3.62) ...
-Processing triggers for menu (2.1.47+b1) ...
-Processing triggers for desktop-file-utils (0.23-4) ...
+Processing triggers for menu (2.1.48) ...
+Processing triggers for mailcap (3.69) ...
+Processing triggers for desktop-file-utils (0.26-1) ...
 './cld/bashrc.d/bashrc-alias-google-chrome.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-google-chrome.sh'
-CLDS: * Install Google Chrome 93.0.4577.63 .
+CLDS: * Install Google Chrome 94.0.4606.81 .
 CLDS: * Modify configuration to run google-chrome as root.
 CLDS: * Insert Google Chrome in Internet menu.
 CLDS: * Add google chrome alias, chrome.
 CLDS: * Set default browser: update-alternatives --config x-www-browser.
 CLDS: * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-CLDS: * Disk size = 4678120K. Space Used = 340720K. Runtime = 00:00:00:17.
+CLDS: * Disk size = 4607468K. Space Used = 365028K. Runtime = 00:00:00:06.

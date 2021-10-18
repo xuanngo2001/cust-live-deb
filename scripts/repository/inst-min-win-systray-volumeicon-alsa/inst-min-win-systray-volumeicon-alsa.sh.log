@@ -3,30 +3,40 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libnotify4
+  libgdk-pixbuf-xlib-2.0-0 libgdk-pixbuf2.0-0 libnotify4
 Suggested packages:
   alsamixergui | aumix-gtk | kmix | gnome-alsamixer notify-osd | xfce4-notifyd
   | notification-daemon
 Recommended packages:
-  notification-daemon
+  libgdk-pixbuf2.0-bin notification-daemon
 The following NEW packages will be installed:
-  libnotify4 volumeicon-alsa
-0 upgraded, 2 newly installed, 0 to remove and 18 not upgraded.
-Need to get 75.8 kB of archives.
-After this operation, 297 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libnotify4 amd64 0.7.7-4 [29.0 kB]
-Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 volumeicon-alsa amd64 0.5.1+git20170117-1 [46.8 kB]
-Fetched 75.8 kB in 0s (2,061 kB/s)
+  libgdk-pixbuf-xlib-2.0-0 libgdk-pixbuf2.0-0 libnotify4 volumeicon-alsa
+0 upgraded, 4 newly installed, 0 to remove and 1 not upgraded.
+Need to get 134 kB of archives.
+After this operation, 420 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libgdk-pixbuf-xlib-2.0-0 amd64 2.40.2-2 [47.9 kB]
+Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libgdk-pixbuf2.0-0 amd64 2.40.2-2 [14.1 kB]
+Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libnotify4 amd64 0.7.9-3 [23.7 kB]
+Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 volumeicon-alsa amd64 0.5.1+git20170117-1+b1 [48.4 kB]
+Fetched 134 kB in 0s (3,222 kB/s)
+Selecting previously unselected package libgdk-pixbuf-xlib-2.0-0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74748 files and directories currently installed.)
+Preparing to unpack .../libgdk-pixbuf-xlib-2.0-0_2.40.2-2_amd64.deb ...
+Unpacking libgdk-pixbuf-xlib-2.0-0:amd64 (2.40.2-2) ...
+Selecting previously unselected package libgdk-pixbuf2.0-0:amd64.
+Preparing to unpack .../libgdk-pixbuf2.0-0_2.40.2-2_amd64.deb ...
+Unpacking libgdk-pixbuf2.0-0:amd64 (2.40.2-2) ...
 Selecting previously unselected package libnotify4:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68629 files and directories currently installed.)
-Preparing to unpack .../libnotify4_0.7.7-4_amd64.deb ...
-Unpacking libnotify4:amd64 (0.7.7-4) ...
+Preparing to unpack .../libnotify4_0.7.9-3_amd64.deb ...
+Unpacking libnotify4:amd64 (0.7.9-3) ...
 Selecting previously unselected package volumeicon-alsa.
-Preparing to unpack .../volumeicon-alsa_0.5.1+git20170117-1_amd64.deb ...
-Unpacking volumeicon-alsa (0.5.1+git20170117-1) ...
-Setting up libnotify4:amd64 (0.7.7-4) ...
-Setting up volumeicon-alsa (0.5.1+git20170117-1) ...
-Processing triggers for libc-bin (2.28-10) ...
+Preparing to unpack .../volumeicon-alsa_0.5.1+git20170117-1+b1_amd64.deb ...
+Unpacking volumeicon-alsa (0.5.1+git20170117-1+b1) ...
+Setting up libgdk-pixbuf-xlib-2.0-0:amd64 (2.40.2-2) ...
+Setting up libnotify4:amd64 (0.7.9-3) ...
+Setting up libgdk-pixbuf2.0-0:amd64 (2.40.2-2) ...
+Setting up volumeicon-alsa (0.5.1+git20170117-1+b1) ...
+Processing triggers for libc-bin (2.31-13+deb11u2) ...
 './cld/app/jwm/bootstrap/jwmrc-startup-volumeicon.sh' -> '/usr/local/cld/app/jwm/bootstrap/jwmrc-startup-volumeicon.sh'
 './cld/home/.config' -> '/usr/local/cld/home/.config'
 './cld/home/.config/volumeicon' -> '/usr/local/cld/home/.config/volumeicon'
@@ -34,4 +44,4 @@ Processing triggers for libc-bin (2.28-10) ...
 CLDS: * Install volume controller in system tray.
 CLDS: * Set left-click to display volume slider: lmb_slider=true.
 CLDS: * Set volumeicon to run on JWN startup.
-CLDS: * Disk size = 3868640K. Space Used = 524K. Runtime = 00:00:00:02.
+CLDS: * Disk size = 3773576K. Space Used = 728K. Runtime = 00:00:00:01.

@@ -3,78 +3,78 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libmpdec2 libpython3-stdlib libpython3.7-minimal libpython3.7-stdlib
-  mime-support python3 python3-minimal python3.7 python3.7-minimal
+  libmpdec3 libpython3-stdlib libpython3.9-minimal libpython3.9-stdlib
+  media-types python3 python3-minimal python3.9 python3.9-minimal
 Suggested packages:
   google-cloud-sdk-app-engine-java google-cloud-sdk-app-engine-python
   google-cloud-sdk-pubsub-emulator google-cloud-sdk-bigtable-emulator
   google-cloud-sdk-datastore-emulator kubectl python3-doc python3-tk
-  python3-venv python3.7-venv python3.7-doc binutils binfmt-support
+  python3-venv python3.9-venv python3.9-doc binutils binfmt-support
 Recommended packages:
-  python3-crcmod file
+  python3-crcmod
 The following NEW packages will be installed:
-  google-cloud-sdk libmpdec2 libpython3-stdlib libpython3.7-minimal
-  libpython3.7-stdlib mime-support python3 python3-minimal python3.7
-  python3.7-minimal
-0 upgraded, 10 newly installed, 0 to remove and 18 not upgraded.
-Need to get 77.1 MB of archives.
-After this operation, 477 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_buster-main buster/main amd64 libpython3.7-minimal amd64 3.7.3-2+deb10u3 [589 kB]
-Get:2 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3.7-minimal amd64 3.7.3-2+deb10u3 [1,737 kB]
-Get:3 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3-minimal amd64 3.7.3-1 [36.6 kB]
-Get:4 http://localhost/aptly-repo/master_buster-main buster/main amd64 mime-support all 3.62 [37.2 kB]
-Get:5 http://localhost/aptly-repo/master_buster-main buster/main amd64 libmpdec2 amd64 2.4.2-2 [87.2 kB]
-Get:6 http://localhost/aptly-repo/master_buster-main buster/main amd64 libpython3.7-stdlib amd64 3.7.3-2+deb10u3 [1,734 kB]
-Get:7 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3.7 amd64 3.7.3-2+deb10u3 [330 kB]
-Get:8 http://localhost/aptly-repo/master_buster-main buster/main amd64 libpython3-stdlib amd64 3.7.3-1 [20.0 kB]
-Get:9 http://localhost/aptly-repo/master_buster-main buster/main amd64 python3 amd64 3.7.3-1 [61.5 kB]
-Get:10 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk/main amd64 google-cloud-sdk all 355.0.0-0 [72.5 MB]
-Fetched 77.1 MB in 1s (53.3 MB/s)
-Selecting previously unselected package libpython3.7-minimal:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22570 files and directories currently installed.)
-Preparing to unpack .../libpython3.7-minimal_3.7.3-2+deb10u3_amd64.deb ...
-Unpacking libpython3.7-minimal:amd64 (3.7.3-2+deb10u3) ...
-Selecting previously unselected package python3.7-minimal.
-Preparing to unpack .../python3.7-minimal_3.7.3-2+deb10u3_amd64.deb ...
-Unpacking python3.7-minimal (3.7.3-2+deb10u3) ...
-Setting up libpython3.7-minimal:amd64 (3.7.3-2+deb10u3) ...
-Setting up python3.7-minimal (3.7.3-2+deb10u3) ...
+  google-cloud-sdk libmpdec3 libpython3-stdlib libpython3.9-minimal
+  libpython3.9-stdlib media-types python3 python3-minimal python3.9
+  python3.9-minimal
+0 upgraded, 10 newly installed, 0 to remove and 1 not upgraded.
+Need to get 80.9 MB of archives.
+After this operation, 499 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpython3.9-minimal amd64 3.9.2-1 [801 kB]
+Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3.9-minimal amd64 3.9.2-1 [1,955 kB]
+Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-minimal amd64 3.9.2-3 [38.2 kB]
+Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 media-types all 4.0.0 [30.3 kB]
+Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libmpdec3 amd64 2.5.1-1 [87.7 kB]
+Get:6 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpython3.9-stdlib amd64 3.9.2-1 [1,684 kB]
+Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3.9 amd64 3.9.2-1 [466 kB]
+Get:8 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpython3-stdlib amd64 3.9.2-3 [21.4 kB]
+Get:9 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3 amd64 3.9.2-3 [37.9 kB]
+Get:10 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk/main amd64 google-cloud-sdk all 360.0.0-0 [75.8 MB]
+Fetched 80.9 MB in 1s (117 MB/s)
+Selecting previously unselected package libpython3.9-minimal:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22715 files and directories currently installed.)
+Preparing to unpack .../libpython3.9-minimal_3.9.2-1_amd64.deb ...
+Unpacking libpython3.9-minimal:amd64 (3.9.2-1) ...
+Selecting previously unselected package python3.9-minimal.
+Preparing to unpack .../python3.9-minimal_3.9.2-1_amd64.deb ...
+Unpacking python3.9-minimal (3.9.2-1) ...
+Setting up libpython3.9-minimal:amd64 (3.9.2-1) ...
+Setting up python3.9-minimal (3.9.2-1) ...
 Selecting previously unselected package python3-minimal.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22810 files and directories currently installed.)
-Preparing to unpack .../0-python3-minimal_3.7.3-1_amd64.deb ...
-Unpacking python3-minimal (3.7.3-1) ...
-Selecting previously unselected package mime-support.
-Preparing to unpack .../1-mime-support_3.62_all.deb ...
-Unpacking mime-support (3.62) ...
-Selecting previously unselected package libmpdec2:amd64.
-Preparing to unpack .../2-libmpdec2_2.4.2-2_amd64.deb ...
-Unpacking libmpdec2:amd64 (2.4.2-2) ...
-Selecting previously unselected package libpython3.7-stdlib:amd64.
-Preparing to unpack .../3-libpython3.7-stdlib_3.7.3-2+deb10u3_amd64.deb ...
-Unpacking libpython3.7-stdlib:amd64 (3.7.3-2+deb10u3) ...
-Selecting previously unselected package python3.7.
-Preparing to unpack .../4-python3.7_3.7.3-2+deb10u3_amd64.deb ...
-Unpacking python3.7 (3.7.3-2+deb10u3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22999 files and directories currently installed.)
+Preparing to unpack .../0-python3-minimal_3.9.2-3_amd64.deb ...
+Unpacking python3-minimal (3.9.2-3) ...
+Selecting previously unselected package media-types.
+Preparing to unpack .../1-media-types_4.0.0_all.deb ...
+Unpacking media-types (4.0.0) ...
+Selecting previously unselected package libmpdec3:amd64.
+Preparing to unpack .../2-libmpdec3_2.5.1-1_amd64.deb ...
+Unpacking libmpdec3:amd64 (2.5.1-1) ...
+Selecting previously unselected package libpython3.9-stdlib:amd64.
+Preparing to unpack .../3-libpython3.9-stdlib_3.9.2-1_amd64.deb ...
+Unpacking libpython3.9-stdlib:amd64 (3.9.2-1) ...
+Selecting previously unselected package python3.9.
+Preparing to unpack .../4-python3.9_3.9.2-1_amd64.deb ...
+Unpacking python3.9 (3.9.2-1) ...
 Selecting previously unselected package libpython3-stdlib:amd64.
-Preparing to unpack .../5-libpython3-stdlib_3.7.3-1_amd64.deb ...
-Unpacking libpython3-stdlib:amd64 (3.7.3-1) ...
-Setting up python3-minimal (3.7.3-1) ...
+Preparing to unpack .../5-libpython3-stdlib_3.9.2-3_amd64.deb ...
+Unpacking libpython3-stdlib:amd64 (3.9.2-3) ...
+Setting up python3-minimal (3.9.2-3) ...
 Selecting previously unselected package python3.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23246 files and directories currently installed.)
-Preparing to unpack .../python3_3.7.3-1_amd64.deb ...
-Unpacking python3 (3.7.3-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23395 files and directories currently installed.)
+Preparing to unpack .../python3_3.9.2-3_amd64.deb ...
+Unpacking python3 (3.9.2-3) ...
 Selecting previously unselected package google-cloud-sdk.
-Preparing to unpack .../google-cloud-sdk_355.0.0-0_all.deb ...
-Unpacking google-cloud-sdk (355.0.0-0) ...
-Setting up mime-support (3.62) ...
-Setting up libmpdec2:amd64 (2.4.2-2) ...
-Setting up libpython3.7-stdlib:amd64 (3.7.3-2+deb10u3) ...
-Setting up libpython3-stdlib:amd64 (3.7.3-1) ...
-Setting up python3.7 (3.7.3-2+deb10u3) ...
-Setting up python3 (3.7.3-1) ...
-running python rtupdate hooks for python3.7...
-running python post-rtupdate hooks for python3.7...
-Setting up google-cloud-sdk (355.0.0-0) ...
-Processing triggers for libc-bin (2.28-10) ...
+Preparing to unpack .../google-cloud-sdk_360.0.0-0_all.deb ...
+Unpacking google-cloud-sdk (360.0.0-0) ...
+Setting up media-types (4.0.0) ...
+Setting up libmpdec3:amd64 (2.5.1-1) ...
+Setting up libpython3.9-stdlib:amd64 (3.9.2-1) ...
+Setting up libpython3-stdlib:amd64 (3.9.2-3) ...
+Setting up python3.9 (3.9.2-1) ...
+Setting up python3 (3.9.2-3) ...
+running python rtupdate hooks for python3.9...
+running python post-rtupdate hooks for python3.9...
+Setting up google-cloud-sdk (360.0.0-0) ...
+Processing triggers for libc-bin (2.31-13+deb11u2) ...
 CLDS: * Install google-cloud-sdk.
-CLDS: * Disk size = 2495992K. Space Used = 746668K. Runtime = 00:00:00:44.
+CLDS: * Disk size = 2597224K. Space Used = 793032K. Runtime = 00:00:00:20.
