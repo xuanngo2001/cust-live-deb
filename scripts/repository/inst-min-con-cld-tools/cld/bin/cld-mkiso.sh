@@ -72,11 +72,11 @@ fi
 # Create ISOHYBRID.
 ##################################################################
 # Note: boot.cat is automatically created
-YYYY_MM_DD=$(date +"%Y-%m-%d")
-HH_MM_SS=$(date +"%0k.%M.%S")
-DATE_STRING="${YYYY_MM_DD}_${HH_MM_SS}"
-APP_ID=cust-live-deb-64
-ISO_FILENAME="${APP_ID}_${DATE_STRING}.iso"
+architecture=$(dpkg --print-architecture)
+APP_ID=cld-${architecture}
+version_codename=$(cat /etc/os-release| grep CODENAME| cut -d'=' -f2)
+DATE_STRING="$(date +"%Y-%m-%d_%0k.%M.%S")"
+ISO_FILENAME="${APP_ID}_${version_codename}_${DATE_STRING}.iso"
 xorriso -as mkisofs -r -J -joliet-long -l \
 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
 				-A "${APP_ID}"  \
