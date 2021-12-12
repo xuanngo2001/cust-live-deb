@@ -16,26 +16,155 @@ Hit:14 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:15 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:16 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
 Hit:17 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
-Hit:18 http://dl.google.com/linux/chrome/deb stable InRelease
-Hit:19 https://download.docker.com/linux/debian buster InRelease
-Hit:20 https://deb.nodesource.com/node_12.x bullseye InRelease
+Hit:18 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:19 https://deb.nodesource.com/node_12.x bullseye InRelease
+Hit:20 https://download.docker.com/linux/debian buster InRelease
 Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 Calculating upgrade...
 The following packages will be upgraded:
-  iproute2
-1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 1,003 kB of archives.
-After this operation, 378 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 iproute2 amd64 5.14.0-1~bpo11+1 [1,003 kB]
+  iproute2 libbpf0 rsyslog tzdata
+4 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2,132 kB of archives.
+After this operation, 530 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bullseye-updates-main bullseye-updates/main amd64 tzdata all 2021a-1+deb11u2 [284 kB]
+Get:2 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libbpf0 amd64 1:0.5.0-1~bpo11+1 [130 kB]
+Get:3 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 iproute2 amd64 5.15.0-1~bpo11+1 [1,007 kB]
+Get:4 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 rsyslog amd64 8.2110.0-4~bpo11+1 [711 kB]
 Preconfiguring packages ...
-Fetched 1,003 kB in 0s (21.8 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 119144 files and directories currently installed.)
-Preparing to unpack .../iproute2_5.14.0-1~bpo11+1_amd64.deb ...
-Unpacking iproute2 (5.14.0-1~bpo11+1) over (5.10.0-4) ...
-Setting up iproute2 (5.14.0-1~bpo11+1) ...
+[?1049h[22;0;0t[1;31r[4l[?25l(B[m[37m[40m[1;31r[H[2J[1;1H[97m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[37mPackage configuration[5;2H[30m[47m┌──────────────────────────────────────────────────────────────────────┤ [31mConfiguring tzdata[30m ├──────────────────────────────────────────────────────────────────────┐[6;2H│ Please select the geographic area in which you live. Subsequent configuration questions will narrow this down by presenting a list of cities, representing the   │[97m[40m [7;2H[30m[47m│ time zones in which they are located.                                                                                                                            │[97m[40m [8;2H[30m[47m│                                                                                                                                                                  │[97m[40m [9;2H[30m[47m│ Geographic area:                                                                                                                                                 │[97m[40m [10;2H[30m[47m│                                                                                                                                                                  │[97m[40m [11;2H[30m[47m│                                                                        Africa                                                                                    │[97m[40m [12;2H[30m[47m│                                                                        America                                                                                   │[97m[40m [13;2H[30m[47m│                                                                        Antarctica                                                                                │[97m[40m [14;2H[30m[47m│                                                                        Australia                                                                                 │[97m[40m [15;2H[30m[47m│                                                                        Arctic Ocean                                                                              │[97m[40m [16;2H[30m[47m│                                                                        Asia                                                                                      │[97m[40m [17;2H[30m[47m│                                                                        Atlantic Ocean                                                                            │[97m[40m [18;2H[30m[47m│                                                                        Europe                                                                                    │[97m[40m [19;2H[30m[47m│                                                                        Indian Ocean                                                                              │[97m[40m [20;2H[30m[47m│                                                                        Pacific Ocean                                                                             │[97m[40m [21;2H[30m[47m│                                                                        US                                                                                        │[97m[40m [22;2H[30m[47m│                                                                        [37m[41mNone of the above [30m[47m                                                                        │[97m[40m [23;2H[30m[47m│                                                                                                                                                                  │[97m[40m [24;2H[30m[47m│                                                                                                                                                                  │[97m[40m [25;2H[30m[47m│                                                 <Ok>                                                     <Cancel>                                                │[97m[40m [26;2H[30m[47m│                                                                                                                                                                  │[97m[40m [27;2H[30m[47m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘[97m[40m [28;3H                                                                                                                                                                    [22;75H[?12l[?25h[31;1H[37m(B[m[39;49m[K[?1049l[23;0;0t[?1049h[22;0;0t[1;31r[4l[?25l(B[m[37m[40m[1;31r[H[2J[1;1H[97m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[37mPackage configuration[3;49H[30m[47m┌───────────────────────┤ [31mConfiguring tzdata[30m ├───────────────────────┐[4;49H│ Please select the city or region corresponding to your time zone.  │[97m[40m [5;49H[30m[47m│                                                                    │[97m[40m [6;49H[30m[47m│ Time zone:                                                         │[97m[40m [7;49H[30m[47m│                                                                    │[97m[40m [8;49H[30m[47m│                            GMT-10        ↑                         │[97m[40m [9;49H[30m[47m│                            GMT-11        ▒                         │[97m[40m [10;49H[30m[47m│                            GMT-12        ▒                         │[97m[40m [11;49H[30m[47m│                            GMT-13        ▒                         │[97m[40m [12;49H[30m[47m│                            GMT-14        ▒                         │[97m[40m [13;49H[30m[47m│                            GMT-2         ▒                         │[97m[40m [14;49H[30m[47m│                            GMT-3         ▒                         │[97m[40m [15;49H[30m[47m│                            GMT-4         ▒                         │[97m[40m [16;49H[30m[47m│                            GMT-5         ▒                         │[97m[40m [17;49H[30m[47m│                            GMT-6         ▒                         │[97m[40m [18;49H[30m[47m│                            GMT-7         ▒                         │[97m[40m [19;49H[30m[47m│                            GMT-8         ▒                         │[97m[40m [20;49H[30m[47m│                            GMT-9         ▒                         │[97m[40m [21;49H[30m[47m│                            GMT0          ▒                         │[97m[40m [22;49H[30m[47m│                            Greenwich     ▮                         │[97m[40m [23;49H[30m[47m│                            UCT           ▒                         │[97m[40m [24;49H[30m[47m│                            [37m[41mUTC         [30m[47m  ↓                         │[97m[40m [25;49H[30m[47m│                                                                    │[97m[40m [26;49H[30m[47m│                                                                    │[97m[40m [27;49H[30m[47m│                 <Ok>                     <Cancel>                  │[97m[40m [28;49H[30m[47m│                                                                    │[97m[40m [29;49H[30m[47m└────────────────────────────────────────────────────────────────────┘[97m[40m [30;50H                                                                      [24;78H[?12l[?25h[31;1H[37m(B[m[39;49m[K[?1049l[23;0;0tFetched 2,132 kB in 0s (31.2 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 119691 files and directories currently installed.)
+Preparing to unpack .../tzdata_2021a-1+deb11u2_all.deb ...
+Unpacking tzdata (2021a-1+deb11u2) over (2021a-1+deb11u1) ...
+Preparing to unpack .../libbpf0_1%3a0.5.0-1~bpo11+1_amd64.deb ...
+Unpacking libbpf0:amd64 (1:0.5.0-1~bpo11+1) over (1:0.3-2) ...
+Preparing to unpack .../iproute2_5.15.0-1~bpo11+1_amd64.deb ...
+Unpacking iproute2 (5.15.0-1~bpo11+1) over (5.10.0-4) ...
+Preparing to unpack .../rsyslog_8.2110.0-4~bpo11+1_amd64.deb ...
+Unpacking rsyslog (8.2110.0-4~bpo11+1) over (8.2102.0-2) ...
+Setting up rsyslog (8.2110.0-4~bpo11+1) ...
+Removing obsolete conffile /etc/init.d/rsyslog ...
+Setting up tzdata (2021a-1+deb11u2) ...
+[?1049h[22;0;0t[1;24r[4l[?25l(B[m[37m[40m[1;24r[H[2J[1;1H[97m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[37mPackage configuration[2;3H(0[30m[47mlqqqqqqqqqqqqqqqqqqqqqqqqqu(B[m(B[30m[47m [31mConfiguring tzdata[30m (0[30m[47mtqqqqqqqqqqqqqqqqqqqqqqqqqqk[3;3Hx(B[m(B[30m[47m Please select the geographic area in which you live. Subsequent         (0[30m[47mx(B[m(B[97m[40m [4;3H(0[30m[47mx(B[m(B[30m[47m configuration questions will narrow this down by presenting a list of   (0[30m[47mx(B[m(B[97m[40m [5;3H(0[30m[47mx(B[m(B[30m[47m cities, representing the time zones in which they are located.          (0[30m[47mx(B[m(B[97m[40m [6;3H(0[30m[47mx(B[m(B[30m[47m                                                                         (0[30m[47mx(B[m(B[97m[40m [7;3H(0[30m[47mx(B[m(B[30m[47m Geographic area:                                                        (0[30m[47mx(B[m(B[97m[40m [8;3H(0[30m[47mx(B[m(B[30m[47m                                                                         (0[30m[47mx(B[m(B[97m[40m [9;3H(0[30m[47mx(B[m(B[30m[47m                          Australia             (0[30m[47m (B[m(B[30m[47m                        (0[30m[47mx(B[m(B[97m[40m [10;3H(0[30m[47mx(B[m(B[30m[47m                          Arctic Ocean          (0[30m[47ma(B[m(B[30m[47m                        (0[30m[47mx(B[m(B[97m[40m [11;3H(0[30m[47mx(B[m(B[30m[47m                          Asia                  (0[30m[47ma(B[m(B[30m[47m                        (0[30m[47mx(B[m(B[97m[40m [12;3H(0[30m[47mx(B[m(B[30m[47m                          Atlantic Ocean        (0[30m[47ma(B[m(B[30m[47m                        (0[30m[47mx(B[m(B[97m[40m [13;3H(0[30m[47mx(B[m(B[30m[47m                          Europe                (0[30m[47ma(B[m(B[30m[47m                        (0[30m[47mx(B[m(B[97m[40m [14;3H(0[30m[47mx(B[m(B[30m[47m                          Indian Ocean          (0[30m[47ma(B[m(B[30m[47m                        (0[30m[47mx(B[m(B[97m[40m [15;3H(0[30m[47mx(B[m(B[30m[47m                          Pacific Ocean         (0[30m[47ma(B[m(B[30m[47m                        (0[30m[47mx(B[m(B[97m[40m [16;3H(0[30m[47mx(B[m(B[30m[47m                          US                    (0[30m[47m (B[m(B[30m[47m                        (0[30m[47mx(B[m(B[97m[40m [17;3H(0[30m[47mx(B[m(B[30m[47m                          [37m[41mNone of the above   [30m[47m  (0[30m[47m (B[m(B[30m[47m                        (0[30m[47mx(B[m(B[97m[40m [18;3H(0[30m[47mx(B[m(B[30m[47m                                                                         (0[30m[47mx(B[m(B[97m[40m [19;3H(0[30m[47mx(B[m(B[30m[47m                                                                         (0[30m[47mx(B[m(B[97m[40m [20;3H(0[30m[47mx(B[m(B[30m[47m                   <Ok>                       <Cancel>                   (0[30m[47mx(B[m(B[97m[40m [21;3H(0[30m[47mx(B[m(B[30m[47m                                                                         (0[30m[47mx(B[m(B[97m[40m [22;3H(0[30m[47mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B[m(B[97m[40m [23;4H                                                                           [17;30H[?12l[?25h[24;1H[37m(B[m[39;49m[K[?1049l[23;0;0t[?1049h[22;0;0t[1;24r[4l[?25l(B[m[37m[40m[1;24r[H[2J[1;1H[97m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[37mPackage configuration[2;6H(0[30m[47mlqqqqqqqqqqqqqqqqqqqqqqqu(B[m(B[30m[47m [31mConfiguring tzdata[30m (0[30m[47mtqqqqqqqqqqqqqqqqqqqqqqqk[3;6Hx(B[m(B[30m[47m Please select the city or region corresponding to your time zone.  (0[30m[47mx(B[m(B[97m[40m [4;6H(0[30m[47mx(B[m(B[30m[47m                                                                    (0[30m[47mx(B[m(B[97m[40m [5;6H(0[30m[47mx(B[m(B[30m[47m Time zone:                                                         (0[30m[47mx(B[m(B[97m[40m [6;6H(0[30m[47mx(B[m(B[30m[47m                                                                    (0[30m[47mx(B[m(B[97m[40m [7;6H(0[30m[47mx(B[m(B[30m[47m                            GMT-3         (0[30m[47m (B[m(B[30m[47m                         (0[30m[47mx(B[m(B[97m[40m [8;6H(0[30m[47mx(B[m(B[30m[47m                            GMT-4         (0[30m[47ma(B[m(B[30m[47m                         (0[30m[47mx(B[m(B[97m[40m [9;6H(0[30m[47mx(B[m(B[30m[47m                            GMT-5         (0[30m[47ma(B[m(B[30m[47m                         (0[30m[47mx(B[m(B[97m[40m [10;6H(0[30m[47mx(B[m(B[30m[47m                            GMT-6         (0[30m[47ma(B[m(B[30m[47m                         (0[30m[47mx(B[m(B[97m[40m [11;6H(0[30m[47mx(B[m(B[30m[47m                            GMT-7         (0[30m[47ma(B[m(B[30m[47m                         (0[30m[47mx(B[m(B[97m[40m [12;6H(0[30m[47mx(B[m(B[30m[47m                            GMT-8         (0[30m[47ma(B[m(B[30m[47m                         (0[30m[47mx(B[m(B[97m[40m [13;6H(0[30m[47mx(B[m(B[30m[47m                            GMT-9         (0[30m[47ma(B[m(B[30m[47m                         (0[30m[47mx(B[m(B[97m[40m [14;6H(0[30m[47mx(B[m(B[30m[47m                            GMT0          (0[30m[47ma(B[m(B[30m[47m                         (0[30m[47mx(B[m(B[97m[40m [15;6H(0[30m[47mx(B[m(B[30m[47m                            Greenwich     (0[30m[47m (B[m(B[30m[47m                         (0[30m[47mx(B[m(B[97m[40m [16;6H(0[30m[47mx(B[m(B[30m[47m                            UCT           (0[30m[47ma(B[m(B[30m[47m                         (0[30m[47mx(B[m(B[97m[40m [17;6H(0[30m[47mx(B[m(B[30m[47m                            [37m[41mUTC         [30m[47m  (0[30m[47m (B[m(B[30m[47m                         (0[30m[47mx(B[m(B[97m[40m [18;6H(0[30m[47mx(B[m(B[30m[47m                                                                    (0[30m[47mx(B[m(B[97m[40m [19;6H(0[30m[47mx(B[m(B[30m[47m                                                                    (0[30m[47mx(B[m(B[97m[40m [20;6H(0[30m[47mx(B[m(B[30m[47m                 <Ok>                     <Cancel>                  (0[30m[47mx(B[m(B[97m[40m [21;6H(0[30m[47mx(B[m(B[30m[47m                                                                    (0[30m[47mx(B[m(B[97m[40m [22;6H(0[30m[47mmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B[m(B[97m[40m [23;7H                                                                      [17;35H[?12l[?25h[24;1H[37m(B[m[39;49m[K[?1049l[23;0;0t
+Current default time zone: 'Etc/UTC'
+Local time is now:      Sun Dec 12 12:57:49 UTC 2021.
+Universal Time is now:  Sun Dec 12 12:57:49 UTC 2021.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up libbpf0:amd64 (1:0.5.0-1~bpo11+1) ...
+Setting up iproute2 (5.15.0-1~bpo11+1) ...
 Installing new version of config file /etc/iproute2/rt_protos ...
+Processing triggers for ntp (1:4.2.8p15+dfsg-1) ...
+Running in chroot, ignoring request.
+invoke-rc.d: policy-rc.d denied execution of try-restart.
+Processing triggers for libc-bin (2.31-13+deb11u2) ...
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 5221188K. Space Used = 1396K. Runtime = 00:00:00:02.
+CLDS: * Disk size = 5202228K. Space Used = 2696K. Runtime = 00:00:02:13.

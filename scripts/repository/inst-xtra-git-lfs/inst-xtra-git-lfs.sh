@@ -7,7 +7,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly list dependent packages
-	apt-get install -s -y libgo13 
+#	apt-get install -s -y libgo13 
 
 # Install git-lfs.
 	apt-get -y install git-lfs

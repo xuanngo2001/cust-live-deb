@@ -8,17 +8,17 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Install dependencies
-apt-get -y install libappindicator1
-apt-get -y install libdbusmenu-glib4
-apt-get -y install libdbusmenu-gtk4
-apt-get -y install libindicator7
-apt-get -y install xdg-utils
+#~ apt-get -y install libappindicator1
+#~ apt-get -y install libdbusmenu-glib4
+#~ apt-get -y install libdbusmenu-gtk4
+#~ apt-get -y install libindicator7 # libindicator7
+#~ apt-get -y install xdg-utils
 
-apt-get -y install gconf-service
-apt-get -y install libgconf-2-4
-apt-get -y install libxss1
+#~ apt-get -y install gconf-service
+#~ apt-get -y install libgconf-2-4
+#~ apt-get -y install libxss1
 
-apt-get -y install lsb-release
+#~ apt-get -y install lsb-release
 
 #apt-get -y install libpango1.0-0
 

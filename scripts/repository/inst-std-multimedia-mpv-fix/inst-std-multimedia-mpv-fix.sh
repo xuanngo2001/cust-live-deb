@@ -7,11 +7,12 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly list dependent packages
-#	apt-get install -s -y <your-package> 
-
-# Install fix.
-	apt-get -y install libtesseract4
-
+	apt-get install -s -y libsixel1
+	apt-get install -s -y libtesseract4
+	apt-get install -s -y libopencore-amrnb0 libopencore-amrwb0
+    apt-get install -s -y libdjvulibre21 liblqr-1-0 libraqm0
+    apt-get install -s -y libcjson1 libmbedcrypto3
+    
 
 # Log
-	echo "${GV_LOG} * 2020-02-17: libtesseract4 package still need."
+	echo "${GV_LOG} * 2021-09-06: Bullseye upgrade: required packages."

@@ -33,7 +33,7 @@ The following NEW packages will be installed:
   libxcomposite1 libxfce4ui-2-0 libxfce4ui-common libxfce4util-common
   libxfce4util7 libxfconf-0-3 libxft2 libxkbcommon0 shared-mime-info
   xfce4-terminal xfconf
-0 upgraded, 48 newly installed, 0 to remove and 1 not upgraded.
+0 upgraded, 48 newly installed, 0 to remove and 4 not upgraded.
 Need to get 26.3 MB of archives.
 After this operation, 104 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 hicolor-icon-theme all 0.17-2 [11.4 kB]
@@ -49,7 +49,7 @@ Get:10 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 dcon
 Get:11 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libexo-common all 4.16.0-1 [194 kB]
 Get:12 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libatk1.0-data all 2.36.0-2 [149 kB]
 Get:13 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libatk1.0-0 amd64 2.36.0-2 [52.2 kB]
-Get:14 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libatspi2.0-0 amd64 2.42.0-1~bpo11+1 [78.5 kB]
+Get:14 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libatspi2.0-0 amd64 2.42.0-2~bpo11+1 [78.6 kB]
 Get:15 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libatk-bridge2.0-0 amd64 2.38.0-1 [64.6 kB]
 Get:16 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libcairo-gobject2 amd64 1.16.0-5 [125 kB]
 Get:17 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libcolord2 amd64 1.4.5-3 [144 kB]
@@ -84,9 +84,9 @@ Get:45 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xfce
 Get:46 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 librsvg2-2 amd64 2.50.3+dfsg-1 [2,460 kB]
 Get:47 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxft2 amd64 2.3.2-2 [57.2 kB]
 Get:48 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 jwm amd64 2.3.7-5 [239 kB]
-Fetched 26.3 MB in 0s (90.7 MB/s)
+Fetched 26.3 MB in 0s (92.8 MB/s)
 Selecting previously unselected package hicolor-icon-theme.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66334 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66872 files and directories currently installed.)
 Preparing to unpack .../00-hicolor-icon-theme_0.17-2_all.deb ...
 Unpacking hicolor-icon-theme (0.17-2) ...
 Selecting previously unselected package libgdk-pixbuf2.0-common.
@@ -126,8 +126,8 @@ Selecting previously unselected package libatk1.0-0:amd64.
 Preparing to unpack .../12-libatk1.0-0_2.36.0-2_amd64.deb ...
 Unpacking libatk1.0-0:amd64 (2.36.0-2) ...
 Selecting previously unselected package libatspi2.0-0:amd64.
-Preparing to unpack .../13-libatspi2.0-0_2.42.0-1~bpo11+1_amd64.deb ...
-Unpacking libatspi2.0-0:amd64 (2.42.0-1~bpo11+1) ...
+Preparing to unpack .../13-libatspi2.0-0_2.42.0-2~bpo11+1_amd64.deb ...
+Unpacking libatspi2.0-0:amd64 (2.42.0-2~bpo11+1) ...
 Selecting previously unselected package libatk-bridge2.0-0:amd64.
 Preparing to unpack .../14-libatk-bridge2.0-0_2.38.0-1_amd64.deb ...
 Unpacking libatk-bridge2.0-0:amd64 (2.38.0-1) ...
@@ -237,7 +237,7 @@ Setting up libvte-2.91-common (0.62.3-1) ...
 Setting up libexo-common (4.16.0-1) ...
 Setting up libxfce4util-common (4.16.0-1) ...
 Setting up libgdk-pixbuf2.0-common (2.42.2+dfsg-1) ...
-Setting up libatspi2.0-0:amd64 (2.42.0-1~bpo11+1) ...
+Setting up libatspi2.0-0:amd64 (2.42.0-2~bpo11+1) ...
 Setting up libcolord2:amd64 (1.4.5-3) ...
 Setting up libdconf1:amd64 (0.38.0-2) ...
 Setting up dbus-user-session (1.12.20-2) ...
@@ -297,4 +297,4 @@ Processing triggers for libc-bin (2.31-13+deb11u2) ...
 CLDS: * Install Window Manager jwm: JWM v2.3.7 by Joe Wingbermuehle.
 CLDS: * Set .
 CLDS: * Change X window manager: update-alternatives --config x-window-manager
-CLDS: * Disk size = 3769836K. Space Used = 108524K. Runtime = 00:00:00:06.
+CLDS: * Disk size = 3795092K. Space Used = 108460K. Runtime = 00:00:00:06.

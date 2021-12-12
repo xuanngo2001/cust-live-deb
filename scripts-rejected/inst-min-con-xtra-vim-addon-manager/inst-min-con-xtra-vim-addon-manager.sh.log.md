@@ -2,7 +2,7 @@
   * After this operation, 21.3 MB of additional disk space will be used.
   * Install vim-addon-manager.
   * Need it to install vim-python-jedi.
-  * Disk size = 3361632K. Space Used = 30764K. Runtime = 00:00:00:01.
+  * Disk size = 3386944K. Space Used = 30760K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libruby2.7 libyaml-0-2 rake ruby ruby2.7

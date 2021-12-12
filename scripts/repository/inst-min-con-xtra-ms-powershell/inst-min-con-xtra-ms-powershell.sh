@@ -10,9 +10,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	apt-get install -s -y liblttng-ust0 
 
 # Install powershell.
-	apt-get -y install powershell
+	#apt-get -y install powershell
 
-	#./install-powershell-buster2.sh
+	./install-powershell-buster2.sh
 
 # Log
 	echo "${GV_LOG} * Install PowerShell."

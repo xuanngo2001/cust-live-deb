@@ -3,7 +3,7 @@
   * Install php-fpm.
   * Need for Drupal with nginx.
   * Used to speed up the performance of a website. It is much faster than traditional CGI based methods and has the ability to handle tremendous loads simultaneously.
-  * Disk size = 3241496K. Space Used = 23280K. Runtime = 00:00:00:04.
+  * Disk size = 3266580K. Space Used = 23284K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
 libsodium23 mailcap mime-support php7.4-cli php7.4-common

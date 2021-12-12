@@ -8,7 +8,7 @@ The following additional packages will be installed:
 The following NEW packages will be installed:
   linux-compiler-gcc-10-x86 linux-headers-5.10.0-9-amd64
   linux-headers-5.10.0-9-common linux-headers-amd64 linux-kbuild-5.10
-0 upgraded, 5 newly installed, 0 to remove and 1 not upgraded.
+0 upgraded, 5 newly installed, 0 to remove and 4 not upgraded.
 Need to get 10.8 MB of archives.
 After this operation, 60.5 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 linux-compiler-gcc-10-x86 amd64 5.10.70-1 [379 kB]
@@ -16,7 +16,7 @@ Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 linux
 Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 linux-kbuild-5.10 amd64 5.10.70-1 [621 kB]
 Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 linux-headers-5.10.0-9-amd64 amd64 5.10.70-1 [901 kB]
 Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 linux-headers-amd64 amd64 5.10.70-1 [1,176 B]
-Fetched 10.8 MB in 0s (63.5 MB/s)
+Fetched 10.8 MB in 0s (80.6 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -33,14 +33,14 @@ Recommended packages:
   | linux-headers-generic | linux-headers
 The following NEW packages will be installed:
   dctrl-tools dkms
-0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 4 not upgraded.
 Need to get 182 kB of archives.
 After this operation, 734 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 dctrl-tools amd64 2.24-3+b1 [104 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 dkms all 2.8.4-3 [78.2 kB]
-Fetched 182 kB in 0s (1,484 kB/s)
+Fetched 182 kB in 0s (3,820 kB/s)
 Selecting previously unselected package dctrl-tools.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94300 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94833 files and directories currently installed.)
 Preparing to unpack .../dctrl-tools_2.24-3+b1_amd64.deb ...
 Unpacking dctrl-tools (2.24-3+b1) ...
 Selecting previously unselected package dkms.
@@ -56,11 +56,11 @@ The following additional packages will be installed:
 The following NEW packages will be installed:
   linux-compiler-gcc-10-x86 linux-headers-5.10.0-9-amd64
   linux-headers-5.10.0-9-common linux-kbuild-5.10
-0 upgraded, 4 newly installed, 0 to remove and 1 not upgraded.
+0 upgraded, 4 newly installed, 0 to remove and 4 not upgraded.
 Need to get 0 B/10.8 MB of archives.
 After this operation, 60.5 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-10-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94402 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94935 files and directories currently installed.)
 Preparing to unpack .../linux-compiler-gcc-10-x86_5.10.70-1_amd64.deb ...
 Unpacking linux-compiler-gcc-10-x86 (5.10.70-1) ...
 Selecting previously unselected package linux-headers-5.10.0-9-common.
@@ -100,4 +100,4 @@ CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto wind
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: version: 6.1.22 r144080.
 CLDS: * Delete VBoxGuestAdditions.iso[59592K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 6037848K. Space Used = 70000K. Runtime = 00:00:00:18.
+CLDS: * Disk size = 6062296K. Space Used = 70004K. Runtime = 00:00:00:17.

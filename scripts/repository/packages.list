@@ -5,6 +5,8 @@ Priority (important)
 
 # ./inst-min-con-00-apt-custom-repository/inst-min-con-00-apt-custom-repository.sh
 
+# ./inst-min-con-00-linux-image-fix-systemd-timesyncd/inst-min-con-00-linux-image-fix-systemd-timesyncd.sh
+systemd-timesyncd
 # ./inst-min-con-00-linux-image/inst-min-con-00-linux-image.sh
 dialog
 dbus
@@ -105,6 +107,8 @@ xorriso
 jmtpfs
 # ./inst-min-con-net-tools/inst-min-con-net-tools.sh
 net-tools
+# ./inst-min-con-network-network-manager/inst-min-con-network-network-manager.sh
+network-manager
 # ./inst-min-con-ntp/inst-min-con-ntp.sh
 ntp
 # ./inst-min-con-numlock/inst-min-con-numlock.sh
@@ -121,6 +125,8 @@ udevil
 
 # ./inst-min-con-xtra-apache2/inst-min-con-xtra-apache2.sh
 apache2
+# ./inst-min-con-xtra-bat/inst-min-con-xtra-bat.sh
+bat
 # ./inst-min-con-xtra-buffer/inst-min-con-xtra-buffer.sh
 buffer
 # ./inst-min-con-xtra-buffer-pv/inst-min-con-xtra-buffer-pv.sh
@@ -138,6 +144,8 @@ tree
 libtext-iconv-perl
 # ./inst-min-con-xtra-fuse/inst-min-con-xtra-fuse.sh
 fuse
+# ./inst-min-con-xtra-fzf/inst-min-con-xtra-fzf.sh
+fzf
 # ./inst-min-con-xtra-gcp-google-cloud-sdk/inst-min-con-xtra-gcp-google-cloud-sdk.sh
 google-cloud-sdk
 # ./inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client-fix-libfido2-1-libcbor0/inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client-fix-libfido2-1-libcbor0.sh
@@ -161,7 +169,6 @@ macchanger
 mariadb-server
 # ./inst-min-con-xtra-ms-powershell/inst-min-con-xtra-ms-powershell.sh
 liblttng-ust0
-powershell
 # ./inst-min-con-xtra-nginx/inst-min-con-xtra-nginx.sh
 nginx
 # ./inst-min-con-xtra-nmap/inst-min-con-xtra-nmap.sh
@@ -176,6 +183,8 @@ php
 python3-dev
 # ./inst-min-con-xtra-py-python3-pip/inst-min-con-xtra-py-python3-pip.sh
 python3-pip
+# ./inst-min-con-xtra-py-python-is-python3/inst-min-con-xtra-py-python-is-python3.sh
+python-is-python3
 # ./inst-min-con-xtra-rescue-testdisk/inst-min-con-xtra-rescue-testdisk.sh
 testdisk
 # ./inst-min-con-xtra-smb-samba/inst-min-con-xtra-smb-samba.sh
@@ -244,8 +253,6 @@ fonts-hanazono
 xdotool
 # ./inst-std-00-jwm-menu/inst-std-00-jwm-menu.sh
 
-# ./inst-std-accessories-calc-qalculate-gtk/inst-std-accessories-calc-qalculate-gtk.sh
-qalculate-gtk
 # ./inst-std-accessories-feh/inst-std-accessories-feh.sh
 feh
 # ./inst-std-accessories-gpicview/inst-std-accessories-gpicview.sh
@@ -266,8 +273,6 @@ gnome-icon-theme
 fonts-liberation
 # ./inst-std-graphic-gimp/inst-std-graphic-gimp.sh
 gimp
-# ./inst-std-graphic-gpaint/inst-std-graphic-gpaint.sh
-gpaint
 # ./inst-std-graphic-xtra-cheese/inst-std-graphic-xtra-cheese.sh
 cheese
 # ./inst-std-graphic-xtra-dia/inst-std-graphic-xtra-dia.sh
@@ -342,7 +347,6 @@ qgis
 # ./inst-std-help-manuals-html/inst-std-help-manuals-html.sh
 
 # ./inst-std-inet-firefox-esr/inst-std-inet-firefox-esr.sh
-libjsoncpp1
 firefox-esr
 # ./inst-std-inet-xtra-browser-plugin-downloadhelper-coapp/inst-std-inet-xtra-browser-plugin-downloadhelper-coapp.sh
 libsdl2-2.0-0
@@ -350,23 +354,22 @@ libsdl2-2.0-0
 libevent-pthreads-2.0-5
 browser-plugin-freshplayer-pepperflash
 # ./inst-std-inet-xtra-google-chrome/inst-std-inet-xtra-google-chrome.sh
-libappindicator1
-libdbusmenu-glib4
-libdbusmenu-gtk4
-libindicator7
-xdg-utils
-gconf-service
-libgconf-2-4
-libxss1
-lsb-release
 google-chrome-stable
 # ./inst-std-inet-xtra-transmission-gtk/inst-std-inet-xtra-transmission-gtk.sh
 transmission-gtk
 # ./inst-std-multimedia-mpv-fix/inst-std-multimedia-mpv-fix.sh
+libsixel1
 libtesseract4
+libopencore-amrnb0
+libopencore-amrwb0
+libdjvulibre21
+liblqr-1-0
+libraqm0
+libcjson1
+libmbedcrypto3
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
 mpv
-# ./inst-std-multimedia-xtra-ffmpeg-ffplay/inst-std-multimedia-xtra-ffmpeg-ffplay.sh
+# ./inst-std-multimedia-xtra-ffmpeg-fix-ffplay/inst-std-multimedia-xtra-ffmpeg-fix-ffplay.sh
 ffplay
 # ./inst-std-multimedia-xtra-ffmpeg/inst-std-multimedia-xtra-ffmpeg.sh
 ffmpeg
@@ -396,6 +399,8 @@ libreoffice-writer
 
 # ./inst-std-system-conky/inst-std-system-conky.sh
 conky
+# ./inst-std-system-conky-ncal/inst-std-system-conky-ncal.sh
+ncal
 # ./inst-std-system-gnome-disk-utility/inst-std-system-gnome-disk-utility.sh
 gnome-disk-utility
 # ./inst-std-system-keyboard/inst-std-system-keyboard.sh
@@ -403,8 +408,6 @@ gnome-disk-utility
 # ./inst-std-system-monitor-switcher-lxrandr/inst-std-system-monitor-switcher-lxrandr.sh
 x11-xserver-utils
 lxrandr
-# ./inst-std-system-network-wicd/inst-std-system-network-wicd.sh
-wicd
 # ./inst-std-system-time-zone/inst-std-system-time-zone.sh
 
 # ./inst-std-system-xtra-gsimplecal/inst-std-system-xtra-gsimplecal.sh
@@ -437,6 +440,8 @@ gvfs-bin
 pngcrush
 # ./inst-xtra-compressor-pngquant/inst-xtra-compressor-pngquant.sh
 pngquant
+# ./inst-xtra-docker-ce-fix-iptables/inst-xtra-docker-ce-fix-iptables.sh
+iptables
 # ./inst-xtra-docker-ce/inst-xtra-docker-ce.sh
 apt-transport-https
 ca-certificates
@@ -469,12 +474,9 @@ openttd-openmsx
 openttd
 # ./inst-xtra-geany/inst-xtra-geany.sh
 geany
-# ./inst-xtra-git-fix-libcurl3-gnutls/inst-xtra-git-fix-libcurl3-gnutls.sh
-libcurl3-gnutls=7.64.0-4+deb10u2
 # ./inst-xtra-git/inst-xtra-git.sh
 git
 # ./inst-xtra-git-lfs/inst-xtra-git-lfs.sh
-libgo13
 git-lfs
 # ./inst-xtra-graphviz/inst-xtra-graphviz.sh
 graphviz
@@ -485,8 +487,6 @@ x11-utils
 # ./inst-xtra-remmina/inst-xtra-remmina.sh
 remmina
 remmina-plugin-rdp
-# ./inst-xtra-selenium-python-pip/inst-xtra-selenium-python-pip.sh
-python-pip
 # ./inst-xtra-ta-lib/inst-xtra-ta-lib.sh
 build-essential
 # ./inst-xtra-vboxguest-additions-doc/inst-xtra-vboxguest-additions-doc.sh
@@ -507,7 +507,7 @@ virtualbox-guest-x11
 # ./inst-xtra-virtualbox-clean/inst-xtra-virtualbox-clean.sh
 
 # ./inst-xtra-virtualbox/inst-xtra-virtualbox.sh
-virtualbox-6.0
+virtualbox-6.1
 libqt5opengl5
 libqt5x11extras5
 # ./inst-xtra-web-dev-nodejs/inst-xtra-web-dev-nodejs.sh
@@ -538,6 +538,8 @@ netcat
 playonlinux
 # ./inst-xtra-zfs-clean/inst-xtra-zfs-clean.sh
 
+# ./inst-xtra-zfs-dkms-fix-file/inst-xtra-zfs-dkms-fix-file.sh
+file
 # ./inst-xtra-zfs-dkms/inst-xtra-zfs-dkms.sh
 libelf-dev
 linux-headers-amd64
