@@ -9,6 +9,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Add security temporary local repository at the end of the sources.list file.
 	source sourceslist-security-temporary.sh	
 
+# Provide pre-settings using seed.
+    export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
+    debconf-set-selections -v tzdata.seed
+    
 # Update security packages
 	apt-get update
 	apt-get -y upgrade

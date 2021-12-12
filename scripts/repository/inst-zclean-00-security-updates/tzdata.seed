@@ -1,0 +1,6 @@
+# 1-Manually configure interactively.
+# 2-debconf-get-selections | grep "^tzdata" > tzdata.seed
+# 3-Remove no 'select' from *.seed.
+
+tzdata	tzdata/Zones/Etc	select	UTC
+tzdata	tzdata/Areas	select	Etc

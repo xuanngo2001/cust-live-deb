@@ -6,14 +6,14 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
-# Explicitly download dependent packages
+# Explicitly list dependent packages
 #	apt-get install -s -y <your-package> 
 
-# Install vim-nox.
-	apt-get -y install vim-nox
+# Install vim.
+	apt-get -y install vim
 
 # Add to CLD/
-	yes | cp -av ./cld  /usr/local
+    yes | cp -av ./cld  /usr/local
 
 # Log
-	echo "${GV_LOG} * Install vim-nox. This package contains a version of vim compiled with support for scripting with Lua, Perl, Python 3, Ruby, and Tcl but no GUI."
+	echo "${GV_LOG} * Install vim."
