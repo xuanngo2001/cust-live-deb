@@ -10,6 +10,8 @@
 # Help
     :help <command> E.g. :help yy
     :q              Quit help window.
+    :qa!            Quit all without saving any changes.
+    :wqa            Saves and quits all buffers.    
     CTRL+q          To escape when you mistakenly press CTRL+s.
 
 # NORMAL mode
@@ -39,6 +41,7 @@
         A       Append at the end of the line: move to end of line and switch to INSERT mode.
         I       Insert from the beginning of the line: move before the 1st char of line and switch to INSERT mode.
         0       Move cursor to beginning of the line.
+        :42     Goto line 42.
 
     # Search
         f<char>     Find char.
@@ -61,28 +64,30 @@
             N   Previous
             g*  Search word without word boundary.
 
-    yy      Copy line. It includes EOL character.
-    yiw     Copy (inner) word.
-    y2j     Copy 2 lines below.
-    p       Paste.
+    # Copy / paste.
+        yy      Copy line. It includes EOL character.
+        yiw     Copy (inner) word.
+        y2j     Copy 2 lines below.
+        p       Paste.
 
-    dd      Cut/Delete line.
-    dw      Delete word.
-    d$      Delete till end of line.
-    d3j     Delete 3 lines below.
-    dG      Delete from current to end of file.
+    # Delete / cut.
+        dd      Cut/Delete line.
+        dw      Delete word.
+        d$      Delete till end of line.
+        d3j     Delete 3 lines below.
+        dG      Delete from current to end of file.
 
-    u       Undo
-    CTRL+r  Redo
+    # Undo
+        u       Undo
+        CTRL+r  Redo
 
-    :s/SEARCH/REPLACE       Search and replace 1st matching occurrence on this line.
-    :5,25s/SEARCH/REPLACE   Search and replace from line 5 to line 25.
-    :s/SEARCH/REPLACE/g     Search and replace all matching terms on this line.
-    :.,$s/SEARCH/REPLACE    Search and replace from current line to the end of file.
-    :%s/SEARCH/REPLACE      Search and replace on the entire file.
-    :s/\~//g                Remove tilde(~). Need to escape it with (\).
-
-    :42     Goto line 42.
+    # Search / replace.
+        :s/SEARCH/REPLACE       Search and replace 1st matching occurrence on this line.
+        :5,25s/SEARCH/REPLACE   Search and replace from line 5 to line 25.
+        :s/SEARCH/REPLACE/g     Search and replace all matching terms on this line.
+        :.,$s/SEARCH/REPLACE    Search and replace from current line to the end of file.
+        :%s/SEARCH/REPLACE      Search and replace on the entire file.
+        :s/\~//g                Remove tilde(~). Need to escape it with (\).
 
     # Buffers
         :ls     List buffers.
