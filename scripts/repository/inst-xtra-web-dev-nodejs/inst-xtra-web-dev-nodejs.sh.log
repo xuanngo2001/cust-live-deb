@@ -17,9 +17,9 @@ Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libc-
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libuv1 amd64 1.40.0-2 [132 kB]
 Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libnode72 amd64 12.22.5~dfsg-2~11u1 [8,333 kB]
 Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 nodejs amd64 12.22.5~dfsg-2~11u1 [147 kB]
-Fetched 8,714 kB in 5s (1,695 kB/s)
+Fetched 8,714 kB in 0s (76.3 MB/s)
 Selecting previously unselected package libc-ares2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 113507 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 109324 files and directories currently installed.)
 Preparing to unpack .../libc-ares2_1.17.1-1+deb11u1_amd64.deb ...
 Unpacking libc-ares2:amd64 (1.17.1-1+deb11u1) ...
 Selecting previously unselected package libuv1:amd64.
@@ -102,7 +102,7 @@ Hit:18 https://download.docker.com/linux/debian buster InRelease
 Hit:19 https://dl.google.com/linux/chrome/deb stable InRelease
 Get:20 https://deb.nodesource.com/node_12.x bullseye InRelease [4,586 B]
 Get:21 https://deb.nodesource.com/node_12.x bullseye/main amd64 Packages [767 B]
-Fetched 5,353 B in 1s (3,965 B/s)
+Fetched 5,353 B in 1s (4,333 B/s)
 Reading package lists...
 
 ## Run `sudo apt-get install -y nodejs` to install Node.js 12.x and npm
@@ -128,16 +128,16 @@ The following packages will be upgraded:
 Need to get 18.0 MB of archives.
 After this operation, 56.1 MB of additional disk space will be used.
 Get:1 https://deb.nodesource.com/node_12.x bullseye/main amd64 nodejs amd64 12.22.7-deb-1nodesource1 [18.0 MB]
-Fetched 18.0 MB in 12s (1,553 kB/s)
+Fetched 18.0 MB in 10s (1,751 kB/s)
 dpkg: libnode72:amd64: dependency problems, but removing anyway as you requested:
  nodejs depends on libnode72 (= 12.22.5~dfsg-2~11u1).
 
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 113592 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 109411 files and directories currently installed.)
 Removing libnode72:amd64 (12.22.5~dfsg-2~11u1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 113586 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 109403 files and directories currently installed.)
 Preparing to unpack .../nodejs_12.22.7-deb-1nodesource1_amd64.deb ...
 Unpacking nodejs (12.22.7-deb-1nodesource1) over (12.22.5~dfsg-2~11u1) ...
 Setting up nodejs (12.22.7-deb-1nodesource1) ...
 Processing triggers for libc-bin (2.31-13+deb11u2) ...
 CLDS: * Install nodejs.
-CLDS: * Disk size = 6192368K. Space Used = 130072K. Runtime = 00:00:00:25.
+CLDS: * Disk size = 6147648K. Space Used = 130088K. Runtime = 00:00:00:17.

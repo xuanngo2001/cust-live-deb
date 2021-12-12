@@ -24,9 +24,9 @@ The following NEW packages will be installed:
 Need to get 434 kB of archives.
 After this operation, 447 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 gnupg-agent all 2.2.27-2 [434 kB]
-Fetched 434 kB in 0s (6,031 kB/s)
+Fetched 434 kB in 0s (7,731 kB/s)
 Selecting previously unselected package gnupg-agent.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 88223 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 84041 files and directories currently installed.)
 Preparing to unpack .../gnupg-agent_2.2.27-2_all.deb ...
 Unpacking gnupg-agent (2.2.27-2) ...
 Setting up gnupg-agent (2.2.27-2) ...
@@ -61,9 +61,9 @@ Get:9 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 pytho
 Get:10 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-pycurl amd64 7.43.0.6-5 [68.8 kB]
 Get:11 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-software-properties all 0.96.20.2-2.1 [49.7 kB]
 Get:12 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 software-properties-common all 0.96.20.2-2.1 [83.4 kB]
-Fetched 3,849 kB in 0s (43.1 MB/s)
+Fetched 3,849 kB in 0s (50.7 MB/s)
 Selecting previously unselected package distro-info-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 88228 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 84046 files and directories currently installed.)
 Preparing to unpack .../00-distro-info-data_0.51_all.deb ...
 Unpacking distro-info-data (0.51) ...
 Selecting previously unselected package libpackagekit-glib2-18:amd64.
@@ -135,7 +135,7 @@ Hit:17 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
 Get:18 https://download.docker.com/linux/debian buster InRelease [54.0 kB]
 Hit:19 https://dl.google.com/linux/chrome/deb stable InRelease
 Get:20 https://download.docker.com/linux/debian buster/stable amd64 Packages [22.3 kB]
-Fetched 76.3 kB in 1s (72.6 kB/s)
+Fetched 76.3 kB in 1s (65.7 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -159,9 +159,9 @@ Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libnf
 Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libnetfilter-conntrack3 amd64 1.0.8-3 [40.6 kB]
 Get:6 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 iptables amd64 1.8.7-1 [382 kB]
 Get:7 https://download.docker.com/linux/debian buster/stable amd64 docker-ce amd64 5:20.10.11~3-0~debian-buster [21.2 MB]
-Fetched 84.2 MB in 31s (2,734 kB/s)
+Fetched 84.2 MB in 33s (2,580 kB/s)
 Selecting previously unselected package containerd.io.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89746 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 85564 files and directories currently installed.)
 Preparing to unpack .../0-containerd.io_1.4.12-1_amd64.deb ...
 Unpacking containerd.io (1.4.12-1) ...
 Selecting previously unselected package docker-ce-cli.
@@ -203,4 +203,4 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Processing triggers for libc-bin (2.31-13+deb11u2) ...
 './cld/doc/docker-help.txt' -> '/usr/local/cld/doc/docker-help.txt'
 CLDS: * Install docker-ce.
-CLDS: * Disk size = 5506712K. Space Used = 457908K. Runtime = 00:00:00:41.
+CLDS: * Disk size = 5461984K. Space Used = 457936K. Runtime = 00:00:00:43.
