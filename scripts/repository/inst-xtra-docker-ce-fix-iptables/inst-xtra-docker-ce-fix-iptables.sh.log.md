@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-xtra-docker-ce-fix-iptables.sh ...
   * Install iptables.
-  * Disk size = 5048804K. Space Used = 12K. Runtime = 00:00:00:01.
+  * Disk size = 5004048K. Space Used = 8K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 iptables libip6tc2 libnetfilter-conntrack3 libnfnetlink0

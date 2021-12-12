@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-rename.sh ...
   * After this operation, 51.2 kB of additional disk space will be used.
   * Install rename.
-  * Disk size = 1514380K. Space Used = 116K. Runtime = 00:00:00:01.
+  * Disk size = 1514316K. Space Used = 116K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 rename
