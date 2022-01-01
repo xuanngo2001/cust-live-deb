@@ -22,6 +22,9 @@
 # Delete line with pattern.
 	sed -i.bck "/pattern/d"
 
+# Delete all lines that don't match pattern. -n prevent to print all lines. Equivalent to grep pattern file.txt.
+    sed -ni '/pattern/p' file.txt
+
 # Delete matching line: sed (printing the inverse is faster than actual deletion). Need -n.
     sed -n '/pattern/!p' input.txt
 
