@@ -22,6 +22,13 @@
 # Cron logs.
     grep CRON /var/log/syslog
     
+    # For more granular cron log:
+        # Uncomment cron.* from /etc/rsyslog.conf.
+        service rsyslog restart
+        service cron restart
+        cat /var/log/cron.log
+    
+    
 # Keywords
     @yearly (or @annually)  0 0 1 1 *   Run once a year at midnight of 1 January
     @monthly                0 0 1 * *   Run once a month at midnight of the first day of the month
@@ -30,7 +37,7 @@
     @hourly                 0 * * * *   Run once an hour at the beginning of the hour
     @reboot                 N/A         Run at startup
 
-# Append entries.
+# Append cron entries.
     (crontab -l; cat new-cron.txt) | crontab -
 
 # User crontab is stored in /var/spool/cron/crontabs/
