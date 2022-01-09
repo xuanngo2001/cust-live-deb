@@ -36,3 +36,12 @@
 # User crontab is stored in /var/spool/cron/crontabs/
 
 # System wide cron are stored in /etc/cron*
+
+# Examples
+    * * * * *       script.sh   # Run every minute.
+    */2 * * * *     script.sh   # Run every 2 minute.
+    */3 * * * *     script.sh   # Run every 3 minute.
+    */5 * * * *     script.sh   # Run every 5 minute.
+    */10 * * * *    script.sh   # Run every 10 minute.
+    */15 * * * *    script.sh   # Run every 15 minute.
+    
