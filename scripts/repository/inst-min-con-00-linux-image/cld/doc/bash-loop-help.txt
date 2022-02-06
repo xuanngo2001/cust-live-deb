@@ -36,6 +36,11 @@
 		echo "${arg}"
 	done
 
+# Loop through array.
+	for elem in "${myArray[@]:1}"; do # Skip the first element.
+		echo "==>${elem}"
+	done
+    
 # Loop from specific index and using counter.
 	MAX=5
 	position=11
