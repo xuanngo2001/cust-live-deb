@@ -10,6 +10,7 @@ CHROOT_DIR=$2
                         "  e.g. $0 <ACTION> <CHROOT_DIR>"\
                         "  e.g. $0 in /path/to/chroot/"\
                         "  e.g. $0 out /path/to/chroot/"\
+						"  e.g. $0 in /media/cld-img/chroot/" \
                 )
   if [ -z "${ACTION}" ]; then
     echo "Error: ACTION can't be empty. Aborted!"
