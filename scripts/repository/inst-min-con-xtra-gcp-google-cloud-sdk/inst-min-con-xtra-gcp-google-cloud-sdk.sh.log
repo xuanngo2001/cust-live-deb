@@ -2,79 +2,21 @@ CLDS:>>>>>>>>> Running inst-min-con-xtra-gcp-google-cloud-sdk.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following additional packages will be installed:
-  libmpdec3 libpython3-stdlib libpython3.9-minimal libpython3.9-stdlib
-  media-types python3 python3-minimal python3.9 python3.9-minimal
 Suggested packages:
   google-cloud-sdk-app-engine-java google-cloud-sdk-app-engine-python
   google-cloud-sdk-pubsub-emulator google-cloud-sdk-bigtable-emulator
-  google-cloud-sdk-datastore-emulator kubectl python3-doc python3-tk
-  python3-venv python3.9-venv python3.9-doc binutils binfmt-support
-Recommended packages:
-  python3-crcmod
+  google-cloud-sdk-datastore-emulator kubectl
 The following NEW packages will be installed:
-  google-cloud-sdk libmpdec3 libpython3-stdlib libpython3.9-minimal
-  libpython3.9-stdlib media-types python3 python3-minimal python3.9
-  python3.9-minimal
-0 upgraded, 10 newly installed, 0 to remove and 4 not upgraded.
-Need to get 81.8 MB of archives.
-After this operation, 509 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpython3.9-minimal amd64 3.9.2-1 [801 kB]
-Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3.9-minimal amd64 3.9.2-1 [1,955 kB]
-Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-minimal amd64 3.9.2-3 [38.2 kB]
-Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 media-types all 4.0.0 [30.3 kB]
-Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libmpdec3 amd64 2.5.1-1 [87.7 kB]
-Get:6 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpython3.9-stdlib amd64 3.9.2-1 [1,684 kB]
-Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3.9 amd64 3.9.2-1 [466 kB]
-Get:8 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpython3-stdlib amd64 3.9.2-3 [21.4 kB]
-Get:9 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3 amd64 3.9.2-3 [37.9 kB]
-Get:10 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk/main amd64 google-cloud-sdk all 366.0.0-0 [76.7 MB]
-Fetched 81.8 MB in 1s (105 MB/s)
-Selecting previously unselected package libpython3.9-minimal:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22777 files and directories currently installed.)
-Preparing to unpack .../libpython3.9-minimal_3.9.2-1_amd64.deb ...
-Unpacking libpython3.9-minimal:amd64 (3.9.2-1) ...
-Selecting previously unselected package python3.9-minimal.
-Preparing to unpack .../python3.9-minimal_3.9.2-1_amd64.deb ...
-Unpacking python3.9-minimal (3.9.2-1) ...
-Setting up libpython3.9-minimal:amd64 (3.9.2-1) ...
-Setting up python3.9-minimal (3.9.2-1) ...
-Selecting previously unselected package python3-minimal.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23061 files and directories currently installed.)
-Preparing to unpack .../0-python3-minimal_3.9.2-3_amd64.deb ...
-Unpacking python3-minimal (3.9.2-3) ...
-Selecting previously unselected package media-types.
-Preparing to unpack .../1-media-types_4.0.0_all.deb ...
-Unpacking media-types (4.0.0) ...
-Selecting previously unselected package libmpdec3:amd64.
-Preparing to unpack .../2-libmpdec3_2.5.1-1_amd64.deb ...
-Unpacking libmpdec3:amd64 (2.5.1-1) ...
-Selecting previously unselected package libpython3.9-stdlib:amd64.
-Preparing to unpack .../3-libpython3.9-stdlib_3.9.2-1_amd64.deb ...
-Unpacking libpython3.9-stdlib:amd64 (3.9.2-1) ...
-Selecting previously unselected package python3.9.
-Preparing to unpack .../4-python3.9_3.9.2-1_amd64.deb ...
-Unpacking python3.9 (3.9.2-1) ...
-Selecting previously unselected package libpython3-stdlib:amd64.
-Preparing to unpack .../5-libpython3-stdlib_3.9.2-3_amd64.deb ...
-Unpacking libpython3-stdlib:amd64 (3.9.2-3) ...
-Setting up python3-minimal (3.9.2-3) ...
-Selecting previously unselected package python3.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23457 files and directories currently installed.)
-Preparing to unpack .../python3_3.9.2-3_amd64.deb ...
-Unpacking python3 (3.9.2-3) ...
+  google-cloud-sdk
+0 upgraded, 1 newly installed, 0 to remove and 14 not upgraded.
+Need to get 122 MB of archives.
+After this operation, 681 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk/main amd64 google-cloud-sdk all 372.0.0-0 [122 MB]
+Fetched 122 MB in 1s (92.5 MB/s)
 Selecting previously unselected package google-cloud-sdk.
-Preparing to unpack .../google-cloud-sdk_366.0.0-0_all.deb ...
-Unpacking google-cloud-sdk (366.0.0-0) ...
-Setting up media-types (4.0.0) ...
-Setting up libmpdec3:amd64 (2.5.1-1) ...
-Setting up libpython3.9-stdlib:amd64 (3.9.2-1) ...
-Setting up libpython3-stdlib:amd64 (3.9.2-3) ...
-Setting up python3.9 (3.9.2-1) ...
-Setting up python3 (3.9.2-3) ...
-running python rtupdate hooks for python3.9...
-running python post-rtupdate hooks for python3.9...
-Setting up google-cloud-sdk (366.0.0-0) ...
-Processing triggers for libc-bin (2.31-13+deb11u2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22857 files and directories currently installed.)
+Preparing to unpack .../google-cloud-sdk_372.0.0-0_all.deb ...
+Unpacking google-cloud-sdk (372.0.0-0) ...
+Setting up google-cloud-sdk (372.0.0-0) ...
 CLDS: * Install google-cloud-sdk.
-CLDS: * Disk size = 2625792K. Space Used = 808932K. Runtime = 00:00:00:25.
+CLDS: * Disk size = 2824444K. Space Used = 1032756K. Runtime = 00:00:00:27.

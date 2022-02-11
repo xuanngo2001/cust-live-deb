@@ -17,8 +17,8 @@ The following NEW packages will be installed:
   libblockdev-part-err2 libblockdev-part2 libblockdev-swap2 libblockdev-utils2
   libblockdev2 libcrack2 libparted-fs-resize0 libpwquality-common
   libpwquality1 libsecret-1-0 libsecret-common libudisks2-0 udisks2
-0 upgraded, 18 newly installed, 0 to remove and 4 not upgraded.
-Need to get 2,381 kB of archives.
+0 upgraded, 18 newly installed, 0 to remove and 14 not upgraded.
+Need to get 2,383 kB of archives.
 After this operation, 13.7 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 gdisk amd64 1.0.6-1.1 [220 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libblockdev-part-err2 amd64 2.25-2 [6,812 B]
@@ -30,17 +30,17 @@ Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libbl
 Get:8 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libblockdev-swap2 amd64 2.25-2 [11.4 kB]
 Get:9 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libatasmart4 amd64 0.19-5 [23.8 kB]
 Get:10 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libblockdev2 amd64 2.25-2 [39.3 kB]
-Get:11 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libudisks2-0 amd64 2.9.2-2 [152 kB]
-Get:12 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 udisks2 amd64 2.9.2-2 [408 kB]
+Get:11 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libudisks2-0 amd64 2.9.2-2+deb11u1 [153 kB]
+Get:12 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 udisks2 amd64 2.9.2-2+deb11u1 [409 kB]
 Get:13 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libcrack2 amd64 2.9.6-3.4 [56.0 kB]
 Get:14 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpwquality-common all 1.4.4-1 [50.3 kB]
 Get:15 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpwquality1 amd64 1.4.4-1 [13.9 kB]
 Get:16 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libsecret-common all 0.20.4-2 [26.7 kB]
 Get:17 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libsecret-1-0 amd64 0.20.4-2 [114 kB]
 Get:18 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 gnome-disk-utility amd64 3.38.2-1 [967 kB]
-Fetched 2,381 kB in 0s (31.0 MB/s)
+Fetched 2,383 kB in 0s (35.5 MB/s)
 Selecting previously unselected package gdisk.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 82831 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 85382 files and directories currently installed.)
 Preparing to unpack .../00-gdisk_1.0.6-1.1_amd64.deb ...
 Unpacking gdisk (1.0.6-1.1) ...
 Selecting previously unselected package libblockdev-part-err2:amd64.
@@ -71,11 +71,11 @@ Selecting previously unselected package libblockdev2:amd64.
 Preparing to unpack .../09-libblockdev2_2.25-2_amd64.deb ...
 Unpacking libblockdev2:amd64 (2.25-2) ...
 Selecting previously unselected package libudisks2-0:amd64.
-Preparing to unpack .../10-libudisks2-0_2.9.2-2_amd64.deb ...
-Unpacking libudisks2-0:amd64 (2.9.2-2) ...
+Preparing to unpack .../10-libudisks2-0_2.9.2-2+deb11u1_amd64.deb ...
+Unpacking libudisks2-0:amd64 (2.9.2-2+deb11u1) ...
 Selecting previously unselected package udisks2.
-Preparing to unpack .../11-udisks2_2.9.2-2_amd64.deb ...
-Unpacking udisks2 (2.9.2-2) ...
+Preparing to unpack .../11-udisks2_2.9.2-2+deb11u1_amd64.deb ...
+Unpacking udisks2 (2.9.2-2+deb11u1) ...
 Selecting previously unselected package libcrack2:amd64.
 Preparing to unpack .../12-libcrack2_2.9.6-3.4_amd64.deb ...
 Unpacking libcrack2:amd64 (2.9.6-3.4) ...
@@ -102,7 +102,7 @@ Setting up libcrack2:amd64 (2.9.6-3.4) ...
 Setting up libparted-fs-resize0:amd64 (3.4-1) ...
 Setting up libblockdev-part-err2:amd64 (2.25-2) ...
 Setting up libsecret-common (0.20.4-2) ...
-Setting up libudisks2-0:amd64 (2.9.2-2) ...
+Setting up libudisks2-0:amd64 (2.9.2-2+deb11u1) ...
 Setting up libblockdev-swap2:amd64 (2.25-2) ...
 Setting up libblockdev-loop2:amd64 (2.25-2) ...
 Setting up libblockdev2:amd64 (2.25-2) ...
@@ -110,7 +110,7 @@ Setting up libblockdev-part2:amd64 (2.25-2) ...
 Setting up libsecret-1-0:amd64 (0.20.4-2) ...
 Setting up libpwquality1:amd64 (1.4.4-1) ...
 Setting up libblockdev-fs2:amd64 (2.25-2) ...
-Setting up udisks2 (2.9.2-2) ...
+Setting up udisks2 (2.9.2-2+deb11u1) ...
 Running in chroot, ignoring request.
 Created symlink /etc/systemd/system/graphical.target.wants/udisks2.service → /lib/systemd/system/udisks2.service.
 Setting up gnome-disk-utility (3.38.2-1) ...
@@ -123,4 +123,4 @@ Processing triggers for mailcap (3.69) ...
 CLDS: * Install Partition Manager: gnome-disk-utility.
 CLDS: * Run: gnome-disks.
 CLDS: * Insert gnome-disk-utility menu in Administration.
-CLDS: * Disk size = 4952480K. Space Used = 8072K. Runtime = 00:00:00:01.
+CLDS: * Disk size = 5285688K. Space Used = 8072K. Runtime = 00:00:00:02.

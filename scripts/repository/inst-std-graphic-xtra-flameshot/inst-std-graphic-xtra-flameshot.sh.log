@@ -3,20 +3,20 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libdouble-conversion3 libfmt7 libmd4c0 libpcre2-16-0 libqt5core5a
-  libqt5dbus5 libqt5gui5 libqt5network5 libqt5svg5 libqt5widgets5 libspdlog1
-  libxcb-xinput0
+  libdouble-conversion3 libmd4c0 libpcre2-16-0 libqt5core5a libqt5dbus5
+  libqt5gui5 libqt5network5 libqt5svg5 libqt5widgets5 libxcb-xinput0
 Suggested packages:
   qt5-image-formats-plugins qtwayland5
 Recommended packages:
-  qttranslations5-l10n qt5-gtk-platformtheme
+  xdg-desktop-portal-gtk | xdg-desktop-portal-gnome | xdg-desktop-portal-kde
+  | xdg-desktop-portal-wlr grim qttranslations5-l10n qt5-gtk-platformtheme
 The following NEW packages will be installed:
-  flameshot libdouble-conversion3 libfmt7 libmd4c0 libpcre2-16-0 libqt5core5a
-  libqt5dbus5 libqt5gui5 libqt5network5 libqt5svg5 libqt5widgets5 libspdlog1
+  flameshot libdouble-conversion3 libmd4c0 libpcre2-16-0 libqt5core5a
+  libqt5dbus5 libqt5gui5 libqt5network5 libqt5svg5 libqt5widgets5
   libxcb-xinput0
-0 upgraded, 13 newly installed, 0 to remove and 4 not upgraded.
-Need to get 9,535 kB of archives.
-After this operation, 33.3 MB of additional disk space will be used.
+0 upgraded, 11 newly installed, 0 to remove and 14 not upgraded.
+Need to get 9,532 kB of archives.
+After this operation, 33.5 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libdouble-conversion3 amd64 3.1.5-6.1 [41.0 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpcre2-16-0 amd64 10.36-2 [231 kB]
 Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libqt5core5a amd64 5.15.2+dfsg-9 [1,822 kB]
@@ -27,12 +27,10 @@ Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxc
 Get:8 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libqt5gui5 amd64 5.15.2+dfsg-9 [3,320 kB]
 Get:9 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libqt5widgets5 amd64 5.15.2+dfsg-9 [2,349 kB]
 Get:10 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libqt5svg5 amd64 5.15.2-3 [132 kB]
-Get:11 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libfmt7 amd64 7.1.3+ds1-5 [110 kB]
-Get:12 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libspdlog1 amd64 1:1.8.1+ds-2.1 [89.7 kB]
-Get:13 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 flameshot amd64 0.9.0+ds1-2 [385 kB]
-Fetched 9,535 kB in 0s (73.7 MB/s)
+Get:11 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 flameshot amd64 11.0.0-2~bpo11+1 [583 kB]
+Fetched 9,532 kB in 0s (76.1 MB/s)
 Selecting previously unselected package libdouble-conversion3:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79615 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 82162 files and directories currently installed.)
 Preparing to unpack .../00-libdouble-conversion3_3.1.5-6.1_amd64.deb ...
 Unpacking libdouble-conversion3:amd64 (3.1.5-6.1) ...
 Selecting previously unselected package libpcre2-16-0:amd64.
@@ -62,31 +60,23 @@ Unpacking libqt5widgets5:amd64 (5.15.2+dfsg-9) ...
 Selecting previously unselected package libqt5svg5:amd64.
 Preparing to unpack .../09-libqt5svg5_5.15.2-3_amd64.deb ...
 Unpacking libqt5svg5:amd64 (5.15.2-3) ...
-Selecting previously unselected package libfmt7:amd64.
-Preparing to unpack .../10-libfmt7_7.1.3+ds1-5_amd64.deb ...
-Unpacking libfmt7:amd64 (7.1.3+ds1-5) ...
-Selecting previously unselected package libspdlog1:amd64.
-Preparing to unpack .../11-libspdlog1_1%3a1.8.1+ds-2.1_amd64.deb ...
-Unpacking libspdlog1:amd64 (1:1.8.1+ds-2.1) ...
 Selecting previously unselected package flameshot.
-Preparing to unpack .../12-flameshot_0.9.0+ds1-2_amd64.deb ...
-Unpacking flameshot (0.9.0+ds1-2) ...
+Preparing to unpack .../10-flameshot_11.0.0-2~bpo11+1_amd64.deb ...
+Unpacking flameshot (11.0.0-2~bpo11+1) ...
 Setting up libdouble-conversion3:amd64 (3.1.5-6.1) ...
 Setting up libxcb-xinput0:amd64 (1.14-3) ...
 Setting up libpcre2-16-0:amd64 (10.36-2) ...
 Setting up libqt5core5a:amd64 (5.15.2+dfsg-9) ...
 Setting up libqt5dbus5:amd64 (5.15.2+dfsg-9) ...
-Setting up libfmt7:amd64 (7.1.3+ds1-5) ...
-Setting up libspdlog1:amd64 (1:1.8.1+ds-2.1) ...
 Setting up libmd4c0:amd64 (0.4.7-2) ...
 Setting up libqt5network5:amd64 (5.15.2+dfsg-9) ...
 Setting up libqt5gui5:amd64 (5.15.2+dfsg-9) ...
 Setting up libqt5widgets5:amd64 (5.15.2+dfsg-9) ...
 Setting up libqt5svg5:amd64 (5.15.2-3) ...
-Setting up flameshot (0.9.0+ds1-2) ...
+Setting up flameshot (11.0.0-2~bpo11+1) ...
 Processing triggers for desktop-file-utils (0.26-1) ...
 Processing triggers for hicolor-icon-theme (0.17-2) ...
 Processing triggers for libc-bin (2.31-13+deb11u2) ...
 Processing triggers for mailcap (3.69) ...
 CLDS: * Install flameshot.
-CLDS: * Disk size = 3957736K. Space Used = 42244K. Runtime = 00:00:00:02.
+CLDS: * Disk size = 4262096K. Space Used = 42456K. Runtime = 00:00:00:02.

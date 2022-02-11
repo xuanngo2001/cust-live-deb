@@ -1,8 +1,28 @@
 CLDS:>>>>>>>>> Running inst-min-con-00-linux-image-fix-systemd-timesyncd.sh ...
 Reading package lists...
 Building dependency tree...
-systemd-timesyncd is already the newest version (247.3-6).
-0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+The following additional packages will be installed:
+  dbus libdbus-1-3 libexpat1 libsystemd0 systemd
+Suggested packages:
+  default-dbus-session-bus | dbus-session-bus systemd-container libfido2-1
+  libtss2-esys-3.0.2-0 libtss2-mu0 libtss2-rc0 policykit-1
+The following NEW packages will be installed:
+  dbus libdbus-1-3 libexpat1
+The following packages will be upgraded:
+  libsystemd0 systemd systemd-timesyncd
+3 upgraded, 3 newly installed, 0 to remove and 12 not upgraded.
+Inst systemd-timesyncd [247.3-6] (250.3-2~bpo11+1 master_bullseye-backports-main bullseye-backports:bullseye-backports [amd64]) []
+Inst systemd [247.3-6] (250.3-2~bpo11+1 master_bullseye-backports-main bullseye-backports:bullseye-backports [amd64]) []
+Inst libsystemd0 [247.3-6] (250.3-2~bpo11+1 master_bullseye-backports-main bullseye-backports:bullseye-backports [amd64])
+Conf libsystemd0 (250.3-2~bpo11+1 master_bullseye-backports-main bullseye-backports:bullseye-backports [amd64])
+Inst libdbus-1-3 (1.12.20-2 master_bullseye-main bullseye:bullseye [amd64])
+Inst libexpat1 (2.2.10-2 master_bullseye-main bullseye:bullseye [amd64])
+Inst dbus (1.12.20-2 master_bullseye-main bullseye:bullseye [amd64])
+Conf systemd-timesyncd (250.3-2~bpo11+1 master_bullseye-backports-main bullseye-backports:bullseye-backports [amd64])
+Conf systemd (250.3-2~bpo11+1 master_bullseye-backports-main bullseye-backports:bullseye-backports [amd64])
+Conf libdbus-1-3 (1.12.20-2 master_bullseye-main bullseye:bullseye [amd64])
+Conf libexpat1 (2.2.10-2 master_bullseye-main bullseye:bullseye [amd64])
+Conf dbus (1.12.20-2 master_bullseye-main bullseye:bullseye [amd64])
 CLDS: * Required systemd-timesyncd. Otherwise, debootstrap will not work.
 CLDS: * 2021-09-05: Upgrade from Buster to Bullseye.
-CLDS: * Disk size = 488536K. Space Used = 4K. Runtime = 00:00:00:00.
+CLDS: * Disk size = 369336K. Space Used = 16K. Runtime = 00:00:00:00.

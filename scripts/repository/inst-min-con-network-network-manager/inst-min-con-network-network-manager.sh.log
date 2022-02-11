@@ -17,8 +17,8 @@ The following NEW packages will be installed:
   libnghttp2-14 libnl-3-200 libnl-genl-3-200 libnl-route-3-200 libnm0
   libpam-systemd libpcsclite1 libpolkit-agent-1-0 libpolkit-gobject-1-0
   librtmp1 libssh2-1 libteamdctl0 network-manager policykit-1 wpasupplicant
-0 upgraded, 21 newly installed, 0 to remove and 4 not upgraded.
-Need to get 9,057 kB of archives.
+0 upgraded, 21 newly installed, 0 to remove and 15 not upgraded.
+Need to get 9,073 kB of archives.
 After this operation, 31.4 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpam-systemd amd64 247.3-6 [282 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libbluetooth3 amd64 5.55-3.1 [112 kB]
@@ -26,7 +26,7 @@ Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libbr
 Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libnghttp2-14 amd64 1.43.0-1 [77.1 kB]
 Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b2 [60.8 kB]
 Get:6 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libssh2-1 amd64 1.9.0-2 [156 kB]
-Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libcurl3-gnutls amd64 7.74.0-1.3+b1 [338 kB]
+Get:7 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libcurl3-gnutls amd64 7.81.0-1~bpo11+1 [354 kB]
 Get:8 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libglib2.0-0 amd64 2.66.8-1 [1,370 kB]
 Get:9 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libmm-glib0 amd64 1.14.12-0.2 [1,104 kB]
 Get:10 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libndp0 amd64 1.6-1+b1 [11.0 kB]
@@ -41,9 +41,9 @@ Get:18 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libt
 Get:19 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 wpasupplicant amd64 2:2.9.0-21 [1,284 kB]
 Get:20 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 policykit-1 amd64 0.105-31 [96.6 kB]
 Get:21 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 network-manager amd64 1.30.0-2 [3,044 kB]
-Fetched 9,057 kB in 0s (73.1 MB/s)
+Fetched 9,073 kB in 0s (73.6 MB/s)
 Selecting previously unselected package libpam-systemd:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20543 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20626 files and directories currently installed.)
 Preparing to unpack .../00-libpam-systemd_247.3-6_amd64.deb ...
 Unpacking libpam-systemd:amd64 (247.3-6) ...
 Selecting previously unselected package libbluetooth3:amd64.
@@ -62,8 +62,8 @@ Selecting previously unselected package libssh2-1:amd64.
 Preparing to unpack .../05-libssh2-1_1.9.0-2_amd64.deb ...
 Unpacking libssh2-1:amd64 (1.9.0-2) ...
 Selecting previously unselected package libcurl3-gnutls:amd64.
-Preparing to unpack .../06-libcurl3-gnutls_7.74.0-1.3+b1_amd64.deb ...
-Unpacking libcurl3-gnutls:amd64 (7.74.0-1.3+b1) ...
+Preparing to unpack .../06-libcurl3-gnutls_7.81.0-1~bpo11+1_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.81.0-1~bpo11+1) ...
 Selecting previously unselected package libglib2.0-0:amd64.
 Preparing to unpack .../07-libglib2.0-0_2.66.8-1_amd64.deb ...
 Unpacking libglib2.0-0:amd64 (2.66.8-1) ...
@@ -121,7 +121,7 @@ Setting up libpam-systemd:amd64 (247.3-6) ...
 Setting up libssh2-1:amd64 (1.9.0-2) ...
 Setting up libndp0:amd64 (1.6-1+b1) ...
 Setting up libpolkit-gobject-1-0:amd64 (0.105-31) ...
-Setting up libcurl3-gnutls:amd64 (7.74.0-1.3+b1) ...
+Setting up libcurl3-gnutls:amd64 (7.81.0-1~bpo11+1) ...
 Setting up libnl-route-3-200:amd64 (3.4.0-1+b1) ...
 Setting up libnl-genl-3-200:amd64 (3.4.0-1+b1) ...
 Setting up libpolkit-agent-1-0:amd64 (0.105-31) ...
@@ -137,4 +137,4 @@ Processing triggers for libc-bin (2.31-13+deb11u2) ...
 Processing triggers for dbus (1.12.20-2) ...
 './cld/doc/nmcli-help.txt' -> '/usr/local/cld/doc/nmcli-help.txt'
 CLDS: * Install network-manager.
-CLDS: * Disk size = 1502248K. Space Used = 32920K. Runtime = 00:00:00:02.
+CLDS: * Disk size = 1477024K. Space Used = 32968K. Runtime = 00:00:00:02.
