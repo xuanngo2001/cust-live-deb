@@ -16,19 +16,21 @@ URL=http://download.virtualbox.org/virtualbox/6.0.24/VBoxGuestAdditions_6.0.24.i
 URL=http://download.virtualbox.org/virtualbox/6.1.18/VBoxGuestAdditions_6.1.18.iso	# After install, kernel panic.
 URL=http://download.virtualbox.org/virtualbox/6.1.16/VBoxGuestAdditions_6.1.16.iso
 URL=http://download.virtualbox.org/virtualbox/6.1.22/VBoxGuestAdditions_6.1.22.iso
+URL=http://download.virtualbox.org/virtualbox/6.1.32/VBoxGuestAdditions_6.1.32.iso
 
 # Download ISO if not already exists.
+    vbox_iso="VBoxGuestAdditions.iso"
     vbox_iso_txt="VBoxGuestAdditions.iso.txt"
     dled_iso=$(cat "${vbox_iso_txt}")
-    iso_file=$(basename $URL)
+    url_iso_file=$(basename $URL)
 
-    if [ "${iso_file}" == "${dled_iso}" ]; then
-        echo "Warning: already downloaded: ${iso_file}."
+    if [ "${url_iso_file}" == "${dled_iso}" ]; then
+        echo "Warning: already downloaded: ${url_iso_file}."
     else
         wget "${URL}"
-        md5sum "${iso_file}" >> VBoxGuestAdditions.md5
+        md5sum "${url_iso_file}" >> VBoxGuestAdditions.iso.md5
         
-        echo "${iso_file}" > "${vbox_iso_txt}"
+        echo "${url_iso_file}" > "${vbox_iso_txt}"
         
-        \mv "${iso_file}" VBoxGuestAdditions.iso
+        \mv "${url_iso_file}" "${vbox_iso}"
     fi

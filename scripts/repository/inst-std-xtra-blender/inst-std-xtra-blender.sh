@@ -8,8 +8,9 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install required packages.
-	apt-get -y install libsensors4
-	apt-get -y install libgl1-mesa-dri libjemalloc1
+	#apt-get -y install libsensors4
+	#apt-get -y install libjemalloc1
+	apt-get -y install libgl1-mesa-dri
 
 # Install blender.
 	apt-get -y install blender
