@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-con-firmware.sh ...
   * After this operation, 800 kB of additional disk space will be used.
-  * After this operation, 143 kB of additional disk space will be used.
+  * After this operation, 348 kB of additional disk space will be used.
   * After this operation, 31.4 MB of additional disk space will be used.
   * After this operation, 454 kB of additional disk space will be used.
   * After this operation, 3,986 kB of additional disk space will be used.
@@ -15,7 +15,7 @@
   * After this operation, 2,988 kB of additional disk space will be used.
   * After this operation, 66.6 kB of additional disk space will be used.
   * Install firmwares.
-  * Disk size = 1454876K. Space Used = 376328K. Runtime = 00:00:00:50.
+  * Disk size = 1429612K. Space Used = 375656K. Runtime = 00:00:00:52.
   * The following NEW packages will be installed:
   ```bash
 atmel-firmware bluez-firmware firmware-amd-graphics firmware-atheros firmware-bnx2
