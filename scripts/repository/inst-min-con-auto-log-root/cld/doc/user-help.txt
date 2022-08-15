@@ -1,2 +1,10 @@
-  # Switch to anther user account.
-  su - poweruser
+# Switch to another user account, e.g. poweruser.
+  	su - poweruser
+  
+# Add new user
+	useradd -g users -s `which bash` -m new_username
+
+# Change password of user.
+	passwd new_username
+
+  	
