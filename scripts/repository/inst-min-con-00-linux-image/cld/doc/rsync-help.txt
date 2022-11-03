@@ -1,6 +1,9 @@
 # rsync always check integrity of NEWLY copied files except for existing files, it will check the size and timestamp.
 	rsync -al source destination
 
+# Re-Copy: copy new files or non-existing files to destination.
+    rsync -aq /source/test/ /destination/test/
+
 # Don't use option -r. Use -a instead. Otherwise, for every sync, it will recopy every files.
 
 # Forward slash(/) means process the content after the slash.
