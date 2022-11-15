@@ -1,3 +1,9 @@
 # Show which interfaces are wireless and which ones are not.
 #   no wireless extensions = Not wireless interface.
 	iwconfig
+
+# List processes using the port number.
+    lsof -i:80
+
+# List processes using port 80
+    netstat -pna | grep 80

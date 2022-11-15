@@ -17,3 +17,5 @@
     CREATE USER '${username}'@'localhost' IDENTIFIED BY '${password}';
     GRANT ALL ON ${dbname}.* TO '${username}'@'localhost' IDENTIFIED BY '${password}' WITH GRANT OPTION;
     FLUSH PRIVILEGES;
+    
+    CREATE USER IF NOT EXISTS '${username}'@'localhost' IDENTIFIED BY '${password}';

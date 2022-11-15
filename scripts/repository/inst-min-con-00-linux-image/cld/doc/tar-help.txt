@@ -42,4 +42,8 @@
 # When distributing *.tar.gz, it is better to set everything owned by root/root.
 	tar -czvf github.tar.gz --owner=0 --group=0 github/
 
-	
+# Show first few lines of archive content.
+    tar -tf drupal-8.9.8.tar.gz | head
+    
+# Extract without first/parent directory.
+    tar -xzvf drupal-8.9.8.tar.gz --strip 1 -C public_html

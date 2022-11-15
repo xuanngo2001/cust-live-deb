@@ -63,6 +63,14 @@
         echo $i is odd
     fi
 
+# Compare number: Don't double quote your variable, e.g. elem.
+    if [ ${elem} -lt 0 ]; then
+        echo "==>[${elem}] is NEGATIVE<=="
+        
+    else
+        echo "==>[${elem}] is POSITIVE<==="
+    fi
+
 # Command not found.
     if ! command -v ffmpeg > /dev/null; then
         printf 'Warning: Skip %s.\n' 'dvdrip: ffmpeg command not found'

@@ -92,3 +92,11 @@
 # Get Random number from 0 through 32767
     echo $RANDOM
     
+# Array
+    myArray=(b c d)
+    echo "${myArray[0]}"
+    echo "${myArray[1]}"
+    echo "${myArray[2]}"
+    echo "${myArray[@]}"    # All elements of the array.
+    echo "${#myArray[@]}"   # Array size
+    
