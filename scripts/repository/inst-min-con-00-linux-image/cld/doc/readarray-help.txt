@@ -1,0 +1,10 @@
+# Split string into array.
+    readarray -td',' myArray <<<"a, b, c"
+        echo "${myArray[0]}"
+        echo "${myArray[1]}"
+        echo "${myArray[2]}"
+        
+    readarray -td' ' myArray <<<"a b c"
+        echo "${myArray[0]}"
+        echo "${myArray[1]}"
+        echo "${myArray[2]}"        
