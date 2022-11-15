@@ -3,7 +3,11 @@
   * Install php-apcu. Require for Drupal.
   * https://flaviocopes.com/php-caching/#:~:text=APCu,work%20just%20after%20being%20installed.
   * https://stackoverflow.com/a/37062144
+<<<<<<< HEAD
   * Disk size = 4043152K. Space Used = 304K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 3488596K. Space Used = 316K. Runtime = 00:00:00:01.
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
   * The following NEW packages will be installed:
   ```bash
 php-apcu

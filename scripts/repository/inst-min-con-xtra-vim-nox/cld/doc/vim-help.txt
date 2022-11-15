@@ -1,3 +1,12 @@
+# Vim config file.
+    scite ~/.vimrc
+
+# Cursor
+    h   Left
+    j   Down
+    k   Up
+    l   Right
+
 When you open file with Vim, you are in Command mode.
 
 To enter COMMAND mode, press ESC.
@@ -25,3 +34,9 @@ To write text, from COMMAND mode, press i.
     For preventing vim from wrapping long lines I use these two lines in my .vimrc:
     set nowrap           " do not automatically wrap on load
     set formatoptions-=t " do not automatically wrap text when typing
+
+# Tab: https://vim.fandom.com/wiki/Converting_tabs_to_spaces
+    set tabstop=4
+    set shiftwidth=4
+    set softtabstop=4
+    set expandtab

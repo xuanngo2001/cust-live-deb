@@ -2,7 +2,20 @@ CLDS:>>>>>>>>> Running inst-zclean-01-apt-get-00-clean-up.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 0 upgraded, 0 newly installed, 0 to remove and 22 not upgraded.
 CLDS: * Remove unused packages: apt-get -y autoremove.
 CLDS: * Clean cached DEB: apt-get clean.
 CLDS: * Disk size = 3854524K. Space Used = -102168K. Runtime = 00:00:00:01.
+=======
+The following packages will be REMOVED:
+  libjsoncpp1
+0 upgraded, 0 newly installed, 1 to remove and 25 not upgraded.
+After this operation, 245 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 84656 files and directories currently installed.)
+Removing libjsoncpp1:amd64 (1.7.4-3) ...
+Processing triggers for libc-bin (2.24-11+deb9u4) ...
+CLDS: * Remove unused packages: apt-get -y autoremove.
+CLDS: * Clean cached DEB: apt-get clean.
+CLDS: * Disk size = 3694204K. Space Used = -141132K. Runtime = 00:00:00:02.
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20

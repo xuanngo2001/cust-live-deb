@@ -3,10 +3,11 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libsndio6.1 libxss1
+  libsndio6.1
 Suggested packages:
   sndiod
 The following NEW packages will be installed:
+<<<<<<< HEAD
   libsdl2-2.0-0 libsndio6.1 libxss1
 0 upgraded, 3 newly installed, 0 to remove and 18 not upgraded.
 Need to get 399 kB of archives.
@@ -19,17 +20,27 @@ Selecting previously unselected package libxss1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 50634 files and directories currently installed.)
 Preparing to unpack .../libxss1_1%3a1.2.2-1_amd64.deb ...
 Unpacking libxss1:amd64 (1:1.2.2-1) ...
+=======
+  libsdl2-2.0-0 libsndio6.1
+0 upgraded, 2 newly installed, 0 to remove and 19 not upgraded.
+Need to get 382 kB of archives.
+After this operation, 1,266 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsndio6.1 amd64 1.1.0-3 [23.5 kB]
+Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libsdl2-2.0-0 amd64 2.0.5+dfsg1-2 [358 kB]
+Fetched 382 kB in 0s (6,779 kB/s)
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
 Selecting previously unselected package libsndio6.1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45896 files and directories currently installed.)
 Preparing to unpack .../libsndio6.1_1.1.0-3_amd64.deb ...
 Unpacking libsndio6.1:amd64 (1.1.0-3) ...
 Selecting previously unselected package libsdl2-2.0-0:amd64.
 Preparing to unpack .../libsdl2-2.0-0_2.0.5+dfsg1-2_amd64.deb ...
 Unpacking libsdl2-2.0-0:amd64 (2.0.5+dfsg1-2) ...
-Setting up libxss1:amd64 (1:1.2.2-1) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
 Setting up libsndio6.1:amd64 (1.1.0-3) ...
 Setting up libsdl2-2.0-0:amd64 (2.0.5+dfsg1-2) ...
 Processing triggers for libc-bin (2.24-11+deb9u4) ...
+<<<<<<< HEAD
 Selecting previously unselected package net.downloadhelper.coapp.
 (Reading database ... 50654 files and directories currently installed.)
 Preparing to unpack net.downloadhelper.coapp-1.4.0-1_amd64.deb ...
@@ -37,3 +48,8 @@ Unpacking net.downloadhelper.coapp (1.4.0) ...
 Setting up net.downloadhelper.coapp (1.4.0) ...
 CLDS: * Install downloadhelper Companion App to record JW Player live stream.
 CLDS: * Disk size = 3527500K. Space Used = 97744K. Runtime = 00:00:00:03.
+=======
+ls: cannot access 'net.downloadhelper.coapp*.deb': No such file or directory
+dpkg: error: cannot access archive '': No such file or directory
+CLDS: * Disk size = 2937768K. Space Used = 1676K. Runtime = 00:00:00:02.
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20

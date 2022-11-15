@@ -8,6 +8,9 @@
         echo "Error: No internet connection!"
     fi    
 
+# Download only file doesn't exist
+    wget -nc $url
+    
 # Redirect output to standard output.
 	if wget -q "${url}" -O-| grep -qF 'File Not Found'; then
 		echo "NO: ${url}"

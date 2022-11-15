@@ -72,7 +72,11 @@ Get:37 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libewf
 Get:38 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libtinfo-dev amd64 6.0+20161126-1+deb9u2 [79.2 kB]
 Get:39 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libncurses5-dev amd64 6.0+20161126-1+deb9u2 [175 kB]
 Extracting templates from packages: 76%Extracting templates from packages: 100%
+<<<<<<< HEAD
 Fetched 36.8 MB in 0s (69.6 MB/s)
+=======
+Fetched 36.8 MB in 0s (37.0 MB/s)
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
 dpkg: libcomerr2:amd64: dependency problems, but removing anyway as you requested:
  libkrb5-3:amd64 depends on libcomerr2 (>= 1.34).
  libgssapi-krb5-2:amd64 depends on libcomerr2 (>= 1.34).
@@ -272,7 +276,11 @@ Get:2 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libjpeg
 Get:3 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 libncursesw5-dev amd64 6.0+20161126-1+deb9u2 [200 kB]
 Get:4 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 ntfs-3g-dev amd64 1:2016.2.22AR.1+dfsg-1+deb9u1 [234 kB]
 Get:5 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 uuid-dev amd64 2.29.2-1+deb9u1 [83.9 kB]
+<<<<<<< HEAD
 Fetched 784 kB in 0s (38.8 MB/s)
+=======
+Fetched 784 kB in 0s (11.9 MB/s)
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
 Selecting previously unselected package libjpeg62-turbo-dev:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27512 files and directories currently installed.)
 Preparing to unpack .../libjpeg62-turbo-dev_1%3a1.5.1-2_amd64.deb ...
@@ -348,7 +356,11 @@ Get:24 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 po-deb
 Get:25 http://localhost/aptly-repo/master_stretch-backports-main stretch-backports/main amd64 debhelper all 12.1.1~bpo9+1 [1,012 kB]
 Get:26 http://localhost/aptly-repo/master_stretch-main stretch/main amd64 pkg-config amd64 0.29-4+b1 [63.3 kB]
 Preconfiguring packages ...
+<<<<<<< HEAD
 Fetched 15.4 MB in 0s (65.6 MB/s)
+=======
+Fetched 15.4 MB in 0s (39.5 MB/s)
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
 Selecting previously unselected package groff-base.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27638 files and directories currently installed.)
 Preparing to unpack .../00-groff-base_1.22.3-9_amd64.deb ...
@@ -2346,6 +2358,7 @@ file_doc.c:123:12: note: expected ‘char *’ but argument is of type ‘unsign
  static int OLE_read_block(FILE *IN, char *buf, const unsigned int uSectorShift, const unsigned int block, const uint64_t offset)
             ^~~~~~~~~~~~~~
 file_doc.c: In function ‘header_check_doc’:
+<<<<<<< HEAD
 file_doc.c:1697:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_doc(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
@@ -2483,6 +2496,145 @@ memmem.h:30:27: warning: inlining failed in call to ‘td_memmem’: call is unl
  static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
                            ^~~~~~~~~
 file_doc.c:1804:11: note: called from here
+=======
+file_doc.c:1702:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_doc(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+file_doc.c:1702:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+ static int header_check_doc(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                                                                      ^~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1745:10: note: called from here
+       if(td_memmem(buffer,buffer_size,"StarImpress",11)!=NULL)
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1751:10: note: called from here
+       if(td_memmem(buffer,buffer_size,"Microsoft Publisher",19)!=NULL)
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1757:6: note: called from here
+   if(td_memmem(buffer,buffer_size,"WordDocument",12)!=NULL)
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1761:11: note: called from here
+   else if(td_memmem(buffer,buffer_size,"StarDraw",8)!=NULL)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1765:11: note: called from here
+   else if(td_memmem(buffer,buffer_size,"StarCalc",8)!=NULL)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1769:11: note: called from here
+   else if(td_memmem(buffer,buffer_size,"StarImpress",11)!=NULL)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1773:11: note: called from here
+   else if(td_memmem(buffer,buffer_size,"Worksheet",9)!=NULL ||
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1774:7: note: called from here
+       td_memmem(buffer,buffer_size,"Book",4)!=NULL ||
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1775:7: note: called from here
+       td_memmem(buffer,buffer_size,"Workbook",8)!=NULL ||
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1776:7: note: called from here
+       td_memmem(buffer,buffer_size,"Calc",4)!=NULL)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1780:11: note: called from here
+   else if(td_memmem(buffer,buffer_size,"Power",5)!=NULL)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1784:11: note: called from here
+   else if(td_memmem(buffer,buffer_size,"AccessObjSiteData",17)!=NULL)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1788:11: note: called from here
+   else if(td_memmem(buffer,buffer_size,"Visio",5)!=NULL)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1792:11: note: called from here
+   else if(td_memmem(buffer,buffer_size,"SfxDocument",11)!=NULL)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1796:11: note: called from here
+   else if(td_memmem(buffer,buffer_size,"CPicPage",8)!=NULL)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1800:11: note: called from here
+   else if(td_memmem(buffer,buffer_size,"Microsoft Publisher",19)!=NULL)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1804:11: note: called from here
+   else if(td_memmem(buffer, buffer_size, "Microsoft Works Database", 24)!=NULL
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1805:10: note: called from here
+       || td_memmem( buffer, buffer_size, "MSWorksDBDoc", 12)!=NULL)
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from file_doc.c:40:0:
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+ static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
+                           ^~~~~~~~~
+file_doc.c:1809:11: note: called from here
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
    else if(td_memmem(buffer,buffer_size,"MetaStock",9)!=NULL)
            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   CC       file_dpx.o
@@ -2491,7 +2643,11 @@ file_dpx.c:82:63: warning: pointer targets in passing argument 1 of ‘get_time_
      file_recovery_new->time=get_time_from_YYYY_MM_DD_HH_MM_SS(dpx->create_time);
                                                                ^~~
 In file included from file_dpx.c:35:0:
+<<<<<<< HEAD
 filegen.h:310:8: note: expected ‘const unsigned char *’ but argument is of type ‘const char *’
+=======
+filegen.h:311:8: note: expected ‘const unsigned char *’ but argument is of type ‘const char *’
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  time_t get_time_from_YYYY_MM_DD_HH_MM_SS(const unsigned char *date_asc);
         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 file_dpx.c:69:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
@@ -3506,6 +3662,7 @@ file_jks.c:54:150: warning: unused parameter ‘file_recovery’ [-Wunused-param
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_jpg.o
 file_jpg.c: In function ‘header_check_jpg’:
+<<<<<<< HEAD
 file_jpg.c:543:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_jpg(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
@@ -3527,6 +3684,29 @@ file_jpg.c:1590:15: warning: comparison between signed and unsigned integer expr
                ^
 file_jpg.c: In function ‘jpg_save_thumbnail’:
 file_jpg.c:1695:105: warning: unused parameter ‘nbytes’ [-Wunused-parameter]
+=======
+file_jpg.c:817:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_jpg(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+file_jpg.c: In function ‘my_output_message’:
+file_jpg.c:1002:45: warning: unused parameter ‘cinfo’ [-Wunused-parameter]
+ static void my_output_message (j_common_ptr cinfo)
+                                             ^~~~~
+file_jpg.c: In function ‘jpg_term_source’:
+file_jpg.c:1193:47: warning: unused parameter ‘cinfo’ [-Wunused-parameter]
+ static void jpg_term_source (j_decompress_ptr cinfo)
+                                               ^~~~~
+file_jpg.c: In function ‘jpg_find_error’:
+file_jpg.c:1519:118: warning: unused parameter ‘checkpoint_offset’ [-Wunused-parameter]
+ static uint64_t jpg_find_error(struct jpeg_session_struct *jpeg_session, const unsigned int *offsets, const uint64_t checkpoint_offset)
+                                                                                                                      ^~~~~~~~~~~~~~~~~
+file_jpg.c: In function ‘jpg_check_sof0’:
+file_jpg.c:1864:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(length < 8+h->nbr*3)
+               ^
+file_jpg.c: In function ‘jpg_save_thumbnail’:
+file_jpg.c:1969:105: warning: unused parameter ‘nbytes’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static void jpg_save_thumbnail(const file_recovery_t *file_recovery, const char *buffer, const uint64_t nbytes, const uint64_t thumb_offset, const unsigned int thumb_size)
                                                                                                          ^~~~~~
   CC       file_jsonlz4.o
@@ -3609,10 +3789,17 @@ file_lit.c:45:150: warning: unused parameter ‘file_recovery’ [-Wunused-param
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_lnk.o
 file_lnk.c: In function ‘header_check_lnk’:
+<<<<<<< HEAD
 file_lnk.c:223:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_lnk(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
 file_lnk.c:223:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_lnk.c:238:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_lnk(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+file_lnk.c:238:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_lnk(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_logic.o
@@ -3912,11 +4099,16 @@ file_mobi.c:60:151: warning: unused parameter ‘file_recovery’ [-Wunused-para
                                                                                                                                                        ^~~~~~~~~~~~~
   CC       file_mov.o
 file_mov.c: In function ‘header_check_mov_aux’:
+<<<<<<< HEAD
 file_mov.c:229:113: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+=======
+file_mov.c:236:113: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_mov_aux(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                  ^~~~~~~~~~~~~~~~
   CC       file_mp3.o
 file_mp3.c: In function ‘header_check_id3’:
+<<<<<<< HEAD
 file_mp3.c:462:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_id3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                              ^~~~~~~~~~~
@@ -3928,10 +4120,24 @@ file_mp3.c:462:150: warning: unused parameter ‘file_recovery’ [-Wunused-para
                                                                                                                                                       ^~~~~~~~~~~~~
 file_mp3.c: In function ‘header_check_mp3’:
 file_mp3.c:517:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+=======
+file_mp3.c:473:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_id3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                             ^~~~~~~~~~~
+file_mp3.c:473:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_id3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+file_mp3.c:473:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+ static int header_check_id3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                                                                      ^~~~~~~~~~~~~
+file_mp3.c: In function ‘header_check_mp3’:
+file_mp3.c:528:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_mp3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
   CC       file_mpg.o
 file_mpg.c: In function ‘header_check_mpg_Pack’:
+<<<<<<< HEAD
 file_mpg.c:165:114: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_mpg_Pack(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                   ^~~~~~~~~~~~~~~~
@@ -3945,6 +4151,21 @@ file_mpg.c:269:118: warning: unused parameter ‘safe_header_only’ [-Wunused-p
                                                                                                                       ^~~~~~~~~~~~~~~~
 file_mpg.c: In function ‘header_check_mpg4_ElemVideo’:
 file_mpg.c:303:120: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+=======
+file_mpg.c:195:114: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_mpg_Pack(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                                  ^~~~~~~~~~~~~~~~
+file_mpg.c: In function ‘header_check_mpg_System’:
+file_mpg.c:270:116: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_mpg_System(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                                    ^~~~~~~~~~~~~~~~
+file_mpg.c: In function ‘header_check_mpg_Sequence’:
+file_mpg.c:323:118: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_mpg_Sequence(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                                      ^~~~~~~~~~~~~~~~
+file_mpg.c: In function ‘header_check_mpg4_ElemVideo’:
+file_mpg.c:369:120: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_mpg4_ElemVideo(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                         ^~~~~~~~~~~~~~~~
   CC       file_mpl.o
@@ -3974,6 +4195,7 @@ file_mrw.c:72:150: warning: unused parameter ‘file_recovery’ [-Wunused-param
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_msa.o
 file_msa.c: In function ‘header_check_msa’:
+<<<<<<< HEAD
 file_msa.c:52:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_msa(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                              ^~~~~~~~~~~
@@ -3981,6 +4203,15 @@ file_msa.c:52:109: warning: unused parameter ‘safe_header_only’ [-Wunused-pa
  static int header_check_msa(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
 file_msa.c:52:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_msa.c:61:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_msa(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                             ^~~~~~~~~~~
+file_msa.c:61:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_msa(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+file_msa.c:61:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_msa(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_mus.o
@@ -4017,7 +4248,21 @@ file_myo.c:47:109: warning: unused parameter ‘safe_header_only’ [-Wunused-pa
  static int header_check_myo(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
   CC       file_mysql.o
+file_mysql.c: In function ‘header_check_myisam’:
+file_mysql.c:57:53: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+ static int header_check_myisam(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                     ^~~~~~
+file_mysql.c:57:80: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_myisam(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                ^~~~~~~~~~~
+file_mysql.c:57:112: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_myisam(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                                ^~~~~~~~~~~~~~~~
+file_mysql.c:57:153: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+ static int header_check_myisam(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                                                                         ^~~~~~~~~~~~~
 file_mysql.c: In function ‘header_check_mysql’:
+<<<<<<< HEAD
 file_mysql.c:56:79: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_mysql(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                ^~~~~~~~~~~
@@ -4025,6 +4270,15 @@ file_mysql.c:56:111: warning: unused parameter ‘safe_header_only’ [-Wunused-
  static int header_check_mysql(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                ^~~~~~~~~~~~~~~~
 file_mysql.c:56:152: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_mysql.c:74:79: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_mysql(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                               ^~~~~~~~~~~
+file_mysql.c:74:111: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_mysql(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                               ^~~~~~~~~~~~~~~~
+file_mysql.c:74:152: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_mysql(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                         ^~~~~~~~~~~~~
   CC       file_nd2.o
@@ -4073,6 +4327,7 @@ file_njx.c:55:150: warning: unused parameter ‘file_recovery’ [-Wunused-param
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_nk2.o
 file_nk2.c: In function ‘header_check_nk2’:
+<<<<<<< HEAD
 file_nk2.c:181:50: warning: unused parameter ‘buffer’ [-Wunused-parameter]
  static int header_check_nk2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                   ^~~~~~
@@ -4083,6 +4338,18 @@ file_nk2.c:181:109: warning: unused parameter ‘safe_header_only’ [-Wunused-p
  static int header_check_nk2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
 file_nk2.c:181:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_nk2.c:227:50: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+ static int header_check_nk2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                  ^~~~~~
+file_nk2.c:227:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_nk2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                             ^~~~~~~~~~~
+file_nk2.c:227:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_nk2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+file_nk2.c:227:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_nk2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_nsf.o
@@ -4229,6 +4496,7 @@ file_pcx.c:86:150: warning: unused parameter ‘file_recovery’ [-Wunused-param
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_pdb.o
 file_pdb.c: In function ‘header_check_pdb’:
+<<<<<<< HEAD
 file_pdb.c:72:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_pdb(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                              ^~~~~~~~~~~
@@ -4236,14 +4504,30 @@ file_pdb.c:72:109: warning: unused parameter ‘safe_header_only’ [-Wunused-pa
  static int header_check_pdb(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
 file_pdb.c:72:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_pdb.c:75:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_pdb(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                             ^~~~~~~~~~~
+file_pdb.c:75:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_pdb(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+file_pdb.c:75:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_pdb(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_pdf.o
 file_pdf.c: In function ‘header_check_pdf’:
+<<<<<<< HEAD
 file_pdf.c:273:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_pdf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
 file_pdf.c:273:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_pdf.c:374:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_pdf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+file_pdf.c:374:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_pdf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_pds.o
@@ -5062,6 +5346,7 @@ file_spe.c:285:150: warning: unused parameter ‘file_recovery’ [-Wunused-para
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_spf.o
 file_spf.c: In function ‘header_check_spf’:
+<<<<<<< HEAD
 file_spf.c:87:50: warning: unused parameter ‘buffer’ [-Wunused-parameter]
  static int header_check_spf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                   ^~~~~~
@@ -5072,6 +5357,18 @@ file_spf.c:87:109: warning: unused parameter ‘safe_header_only’ [-Wunused-pa
  static int header_check_spf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
 file_spf.c:87:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_spf.c:94:50: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+ static int header_check_spf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                  ^~~~~~
+file_spf.c:94:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_spf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                             ^~~~~~~~~~~
+file_spf.c:94:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_spf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+file_spf.c:94:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_spf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_spss.o
@@ -5193,12 +5490,21 @@ file_swf.c:276:151: warning: unused parameter ‘file_recovery’ [-Wunused-para
                                                                                                                                                        ^~~~~~~~~~~~~
   CC       file_tar.o
 file_tar.c: In function ‘header_check_tar’:
+<<<<<<< HEAD
 file_tar.c:77:70: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  int header_check_tar(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                       ^~~~~~~~~~~
 file_tar.c:77:102: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  int header_check_tar(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                       ^~~~~~~~~~~~~~~~
+=======
+file_tar.c:116:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_tar(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                             ^~~~~~~~~~~
+file_tar.c:116:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_tar(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
   CC       file_tax.o
 file_tax.c: In function ‘header_check_tax’:
 file_tax.c:46:50: warning: unused parameter ‘buffer’ [-Wunused-parameter]
@@ -5229,6 +5535,7 @@ file_tg.c:45:149: warning: unused parameter ‘file_recovery’ [-Wunused-parame
                                                                                                                                                      ^~~~~~~~~~~~~
   CC       file_tib.o
 file_tib.c: In function ‘header_check_tib’:
+<<<<<<< HEAD
 file_tib.c:104:50: warning: unused parameter ‘buffer’ [-Wunused-parameter]
  static int header_check_tib(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                   ^~~~~~
@@ -5252,6 +5559,31 @@ file_tib.c:111:110: warning: unused parameter ‘safe_header_only’ [-Wunused-p
  static int header_check_tib2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                               ^~~~~~~~~~~~~~~~
 file_tib.c:111:151: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_tib.c:108:50: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+ static int header_check_tib(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                  ^~~~~~
+file_tib.c:108:77: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_tib(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                             ^~~~~~~~~~~
+file_tib.c:108:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_tib(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+file_tib.c:108:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+ static int header_check_tib(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                                                                      ^~~~~~~~~~~~~
+file_tib.c: In function ‘header_check_tib2’:
+file_tib.c:115:51: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+ static int header_check_tib2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                   ^~~~~~
+file_tib.c:115:78: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_tib2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                              ^~~~~~~~~~~
+file_tib.c:115:110: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_tib2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                              ^~~~~~~~~~~~~~~~
+file_tib.c:115:151: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_tib2(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                        ^~~~~~~~~~~~~
   CC       file_tiff.o
@@ -5314,10 +5646,20 @@ file_tpl.c:45:150: warning: unused parameter ‘file_recovery’ [-Wunused-param
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_ttf.o
 file_ttf.c: In function ‘header_check_ttf’:
+<<<<<<< HEAD
 file_ttf.c:75:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
  static int header_check_ttf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                              ^~~~~~~~~~~~~~~~
 file_ttf.c:75:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_ttf.c:97:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if((16<<entrySelector) != searchRange)
+                          ^~
+file_ttf.c:82:109: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_ttf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                             ^~~~~~~~~~~~~~~~
+file_ttf.c:82:150: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_ttf(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_txt.o
@@ -5481,28 +5823,40 @@ file_txt.c:2280:109: warning: unused parameter ‘safe_header_only’ [-Wunused-
                                                                                                              ^~~~~~~~~~~~~~~~
 In file included from file_txt.c:43:0:
 file_txt.c: In function ‘header_check_txt’:
-memmem.h:30:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
  static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
                            ^~~~~~~~~
 file_txt.c:1755:8: note: called from here
      if(td_memmem(haystack, ll, "perl", 4) != NULL)
         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from file_txt.c:43:0:
+<<<<<<< HEAD
 memmem.h:30:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+=======
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
                            ^~~~~~~~~
 file_txt.c:1764:8: note: called from here
      if(td_memmem(haystack, ll, "php", 3) != NULL)
         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from file_txt.c:43:0:
+<<<<<<< HEAD
 memmem.h:30:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+=======
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
                            ^~~~~~~~~
 file_txt.c:1773:8: note: called from here
      if(td_memmem(haystack, ll, "python", 6) != NULL)
         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from file_txt.c:43:0:
+<<<<<<< HEAD
 memmem.h:30:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+=======
+memmem.h:32:27: warning: inlining failed in call to ‘td_memmem’: call is unlikely and code size would grow [-Winline]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static inline const void *td_memmem(const void *haystack, const unsigned int haystack_len, const void *needle, const unsigned int needle_len)
                            ^~~~~~~~~
 file_txt.c:1782:8: note: called from here
@@ -5613,6 +5967,7 @@ file_vib.c:45:150: warning: unused parameter ‘file_recovery’ [-Wunused-param
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_vmdk.o
 file_vmdk.c: In function ‘header_check_vmdk3’:
+<<<<<<< HEAD
 file_vmdk.c:77:79: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_vmdk3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                ^~~~~~~~~~~
@@ -5630,6 +5985,28 @@ file_vmdk.c:93:111: warning: unused parameter ‘safe_header_only’ [-Wunused-p
  static int header_check_vmdk4(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                ^~~~~~~~~~~~~~~~
 file_vmdk.c:93:152: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_vmdk.c:78:79: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_vmdk3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                               ^~~~~~~~~~~
+file_vmdk.c:78:111: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_vmdk3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                               ^~~~~~~~~~~~~~~~
+file_vmdk.c:78:152: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+ static int header_check_vmdk3(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                                                                        ^~~~~~~~~~~~~
+file_vmdk.c: In function ‘header_check_vmdk4’:
+file_vmdk.c:99:12: warning: variable ‘l1_entry_sectors’ set but not used [-Wunused-but-set-variable]
+   uint64_t l1_entry_sectors;
+            ^~~~~~~~~~~~~~~~
+file_vmdk.c:94:79: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_vmdk4(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                               ^~~~~~~~~~~
+file_vmdk.c:94:111: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_vmdk4(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                               ^~~~~~~~~~~~~~~~
+file_vmdk.c:94:152: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_vmdk4(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                         ^~~~~~~~~~~~~
   CC       file_vmg.o
@@ -5853,6 +6230,7 @@ file_x3i.c:45:150: warning: unused parameter ‘file_recovery’ [-Wunused-param
                                                                                                                                                       ^~~~~~~~~~~~~
   CC       file_x4a.o
 file_x4a.c: In function ‘header_check_ysfc100’:
+<<<<<<< HEAD
 file_x4a.c:78:81: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
  static int header_check_ysfc100(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                  ^~~~~~~~~~~
@@ -5860,6 +6238,15 @@ file_x4a.c:78:113: warning: unused parameter ‘safe_header_only’ [-Wunused-pa
  static int header_check_ysfc100(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                  ^~~~~~~~~~~~~~~~
 file_x4a.c:78:154: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_x4a.c:86:81: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_ysfc100(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                 ^~~~~~~~~~~
+file_x4a.c:86:113: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_ysfc100(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                                 ^~~~~~~~~~~~~~~~
+file_x4a.c:86:154: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_ysfc100(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                           ^~~~~~~~~~~~~
   CC       file_xar.o
@@ -5910,6 +6297,7 @@ file_xfs.c:48:153: warning: unused parameter ‘file_recovery’ [-Wunused-param
  static int header_check_xfs_sb(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                          ^~~~~~~~~~~~~
 file_xfs.c: In function ‘data_check_stopasap’:
+<<<<<<< HEAD
 file_xfs.c:64:62: warning: unused parameter ‘buffer’ [-Wunused-parameter]
  static data_check_t data_check_stopasap(const unsigned char *buffer, const unsigned int buffer_size, file_recovery_t *file_recovery)
                                                               ^~~~~~
@@ -5934,10 +6322,37 @@ file_xfs.c:119:83: warning: unused parameter ‘buffer_size’ [-Wunused-paramet
  static int header_check_xfs_inode(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                    ^~~~~~~~~~~
 file_xfs.c:119:156: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_xfs.c:69:62: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+ static data_check_t data_check_stopasap(const unsigned char *buffer, const unsigned int buffer_size, file_recovery_t *file_recovery)
+                                                              ^~~~~~
+file_xfs.c:69:89: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static data_check_t data_check_stopasap(const unsigned char *buffer, const unsigned int buffer_size, file_recovery_t *file_recovery)
+                                                                                         ^~~~~~~~~~~
+file_xfs.c:69:119: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+ static data_check_t data_check_stopasap(const unsigned char *buffer, const unsigned int buffer_size, file_recovery_t *file_recovery)
+                                                                                                                       ^~~~~~~~~~~~~
+file_xfs.c: In function ‘header_save_xfs’:
+file_xfs.c:74:49: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+ static int header_save_xfs(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                 ^~~~~~
+file_xfs.c:74:76: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_save_xfs(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                            ^~~~~~~~~~~
+file_xfs.c:74:149: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+ static int header_save_xfs(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                                                                     ^~~~~~~~~~~~~
+file_xfs.c: In function ‘header_check_xfs_inode’:
+file_xfs.c:124:83: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_xfs_inode(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                   ^~~~~~~~~~~
+file_xfs.c:124:156: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_xfs_inode(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                             ^~~~~~~~~~~~~
   CC       file_xm.o
 file_xm.c: In function ‘header_check_xm’:
+<<<<<<< HEAD
 file_xm.c:182:49: warning: unused parameter ‘buffer’ [-Wunused-parameter]
  static int header_check_xm(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                  ^~~~~~
@@ -5948,6 +6363,18 @@ file_xm.c:182:108: warning: unused parameter ‘safe_header_only’ [-Wunused-pa
  static int header_check_xm(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                             ^~~~~~~~~~~~~~~~
 file_xm.c:182:149: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+=======
+file_xm.c:206:49: warning: unused parameter ‘buffer’ [-Wunused-parameter]
+ static int header_check_xm(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                 ^~~~~~
+file_xm.c:206:76: warning: unused parameter ‘buffer_size’ [-Wunused-parameter]
+ static int header_check_xm(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                            ^~~~~~~~~~~
+file_xm.c:206:108: warning: unused parameter ‘safe_header_only’ [-Wunused-parameter]
+ static int header_check_xm(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
+                                                                                                            ^~~~~~~~~~~~~~~~
+file_xm.c:206:149: warning: unused parameter ‘file_recovery’ [-Wunused-parameter]
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
  static int header_check_xm(const unsigned char *buffer, const unsigned int buffer_size, const unsigned int safe_header_only, const file_recovery_t *file_recovery, file_recovery_t *file_recovery_new)
                                                                                                                                                      ^~~~~~~~~~~~~
   CC       file_xml.o
@@ -6138,4 +6565,8 @@ make[3]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-te
 make[2]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 make[1]: Leaving directory '/root/scripts/repository/inst-min-con-xtra-rescue-testdisk-dev/testdisk'
 CLDS: * Install testdisk-dev.
+<<<<<<< HEAD
 CLDS: * Disk size = 2638192K. Space Used = 314988K. Runtime = 00:00:02:48.
+=======
+CLDS: * Disk size = 2446300K. Space Used = 316364K. Runtime = 00:00:04:18.
+>>>>>>> 206eae0daaa6332453d70820fc513e7a5d4dcb20
