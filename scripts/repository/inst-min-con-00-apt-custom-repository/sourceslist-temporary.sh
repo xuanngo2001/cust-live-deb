@@ -6,7 +6,6 @@ GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_docker-stable str
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_google-main stable main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_mariadb-main stretch main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_mono-main stable-stretch main"
-GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_qgis-main stretch main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_stretch-backports-contrib stretch-backports contrib"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_stretch-backports-main stretch-backports main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_stretch-backports-non-free stretch-backports non-free"
