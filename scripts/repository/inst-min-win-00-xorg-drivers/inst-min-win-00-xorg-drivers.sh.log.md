@@ -1,13 +1,13 @@
 * >>>>>>>>> Running inst-min-win-00-xorg-drivers.sh ...
   * After this operation, 178 MB of additional disk space will be used.
-  * After this operation, 3,664 kB of additional disk space will be used.
+  * After this operation, 3,659 kB of additional disk space will be used.
   * After this operation, 211 kB of additional disk space will be used.
   * After this operation, 218 kB of additional disk space will be used.
   * Install common xorg drivers.
   * Install xserver-xorg-video-intel to fix: cat /var/log/Xorg.0.log
   * 		Failed to initialize glamor at ScreenInit() time.
   * 		Boot from virtualbox is working fine but boot from HP, X server not loaded.
-  * Disk size = 3941244K. Space Used = 227868K. Runtime = 00:00:00:08.
+  * Disk size = 4226220K. Space Used = 227988K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 keyboard-configuration libdrm2 libdrm-amdgpu1 libdrm-common libdrm-intel1

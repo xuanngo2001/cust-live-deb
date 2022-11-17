@@ -22,29 +22,31 @@ Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-Suggested packages:
-  graphviz
 The following NEW packages will be installed:
   aptly xz-utils
-0 upgraded, 2 newly installed, 0 to remove and 14 not upgraded.
-Need to get 4,953 kB of archives.
-After this operation, 19.5 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xz-utils amd64 5.2.5-2 [220 kB]
-Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 aptly amd64 1.4.0+ds1-4+b4 [4,732 kB]
-Fetched 4,953 kB in 0s (58.4 MB/s)
+0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
+Need to get 13.5 MB of archives.
+After this operation, 29.9 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xz-utils amd64 5.2.5-2.1~deb11u1 [220 kB]
+Get:2 http://localhost/aptly-repo/master_aptly-main squeeze/main amd64 aptly amd64 1.5.0 [13.3 MB]
+E: Invalid archive member header
+E: Internal error, could not locate member control.tar{.zst,.lz4,.gz,.xz,.bz2,.lzma,}
+E: Prior errors apply to /var/cache/apt/archives/aptly_1.5.0_amd64.deb
+debconf: apt-extracttemplates failed: No such file or directory
+Fetched 13.5 MB in 0s (82.2 MB/s)
 Selecting previously unselected package xz-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21757 files and directories currently installed.)
-Preparing to unpack .../xz-utils_5.2.5-2_amd64.deb ...
-Unpacking xz-utils (5.2.5-2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21870 files and directories currently installed.)
+Preparing to unpack .../xz-utils_5.2.5-2.1~deb11u1_amd64.deb ...
+Unpacking xz-utils (5.2.5-2.1~deb11u1) ...
 Selecting previously unselected package aptly.
-Preparing to unpack .../aptly_1.4.0+ds1-4+b4_amd64.deb ...
-Unpacking aptly (1.4.0+ds1-4+b4) ...
-Setting up xz-utils (5.2.5-2) ...
+Preparing to unpack .../archives/aptly_1.5.0_amd64.deb ...
+Unpacking aptly (1.5.0) ...
+Setting up aptly (1.5.0) ...
+Setting up xz-utils (5.2.5-2.1~deb11u1) ...
 update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
-Setting up aptly (1.4.0+ds1-4+b4) ...
 ********** END install *****************
 './cld/doc/aptly-help.txt' -> '/usr/local/cld/doc/aptly-help.txt'
 CLDS: * Add aptly nightly build repository.
-CLDS: * Install aptly version: 1.4.0+ds1-4+b4 to create local debian repository.
+CLDS: * Install aptly version: '1.5.0' to create local debian repository.
 CLDS: * Add xz-utils package because aptly snapshot merge needs it.
-CLDS: * Disk size = 1533836K. Space Used = 23664K. Runtime = 00:00:00:02.
+CLDS: * Disk size = 1746760K. Space Used = 42196K. Runtime = 00:00:00:01.

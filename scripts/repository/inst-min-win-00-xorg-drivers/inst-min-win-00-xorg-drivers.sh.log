@@ -70,7 +70,7 @@ The following NEW packages will be installed:
   xserver-xorg-video-all xserver-xorg-video-amdgpu xserver-xorg-video-ati
   xserver-xorg-video-fbdev xserver-xorg-video-nouveau
   xserver-xorg-video-radeon xserver-xorg-video-vesa xserver-xorg-video-vmware
-0 upgraded, 58 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 58 newly installed, 0 to remove and 19 not upgraded.
 Need to get 47.9 MB of archives.
 After this operation, 178 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 keyboard-configuration all 1.205 [424 kB]
@@ -99,7 +99,7 @@ Get:23 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libz
 Get:24 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libllvm11 amd64 1:11.0.1-2 [17.9 MB]
 Get:25 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libsensors-config all 1:3.6.0-7 [32.3 kB]
 Get:26 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libsensors5 amd64 1:3.6.0-7 [52.3 kB]
-Get:27 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libvulkan1 amd64 1.2.162.0-1 [103 kB]
+Get:27 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libvulkan1 amd64 1.3.224.0-1~bpo11+1 [119 kB]
 Get:28 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libgl1-mesa-dri amd64 20.3.5-1 [9,633 kB]
 Get:29 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libglvnd0 amd64 1.3.2-1 [53.6 kB]
 Get:30 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxcb-glx0 amd64 1.14-3 [118 kB]
@@ -118,11 +118,11 @@ Get:42 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libx
 Get:43 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxkbfile1 amd64 1:1.1.0-1 [75.2 kB]
 Get:44 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 x11-xkb-utils amd64 7.7+5 [163 kB]
 Get:45 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xkb-data all 2.29-2 [655 kB]
-Get:46 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-common all 2:1.20.11-1 [2,283 kB]
+Get:46 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-common all 2:1.20.11-1+deb11u2 [2,283 kB]
 Get:47 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libegl1 amd64 1.3.2-1 [34.8 kB]
 Get:48 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libglx0 amd64 1.3.2-1 [35.7 kB]
 Get:49 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libgl1 amd64 1.3.2-1 [89.5 kB]
-Get:50 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-core amd64 2:1.20.11-1 [3,602 kB]
+Get:50 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-core amd64 2:1.20.11-1+deb11u2 [3,602 kB]
 Get:51 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-amdgpu amd64 19.1.0-2 [136 kB]
 Get:52 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-radeon amd64 1:19.1.0-2 [503 kB]
 Get:53 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-ati amd64 1:19.1.0-2 [363 kB]
@@ -132,9 +132,9 @@ Get:56 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xser
 Get:57 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-vmware amd64 1:13.3.0-3 [117 kB]
 Get:58 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-all amd64 1:7.7+22 [38.6 kB]
 Preconfiguring packages ...
-Fetched 47.9 MB in 1s (79.8 MB/s)
+Fetched 47.9 MB in 0s (101 MB/s)
 Selecting previously unselected package keyboard-configuration.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63787 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68370 files and directories currently installed.)
 Preparing to unpack .../00-keyboard-configuration_1.205_all.deb ...
 Unpacking keyboard-configuration (1.205) ...
 Selecting previously unselected package libdrm-common.
@@ -213,8 +213,8 @@ Selecting previously unselected package libsensors5:amd64.
 Preparing to unpack .../25-libsensors5_1%3a3.6.0-7_amd64.deb ...
 Unpacking libsensors5:amd64 (1:3.6.0-7) ...
 Selecting previously unselected package libvulkan1:amd64.
-Preparing to unpack .../26-libvulkan1_1.2.162.0-1_amd64.deb ...
-Unpacking libvulkan1:amd64 (1.2.162.0-1) ...
+Preparing to unpack .../26-libvulkan1_1.3.224.0-1~bpo11+1_amd64.deb ...
+Unpacking libvulkan1:amd64 (1.3.224.0-1~bpo11+1) ...
 Selecting previously unselected package libgl1-mesa-dri:amd64.
 Preparing to unpack .../27-libgl1-mesa-dri_20.3.5-1_amd64.deb ...
 Unpacking libgl1-mesa-dri:amd64 (20.3.5-1) ...
@@ -270,8 +270,8 @@ Selecting previously unselected package xkb-data.
 Preparing to unpack .../44-xkb-data_2.29-2_all.deb ...
 Unpacking xkb-data (2.29-2) ...
 Selecting previously unselected package xserver-common.
-Preparing to unpack .../45-xserver-common_2%3a1.20.11-1_all.deb ...
-Unpacking xserver-common (2:1.20.11-1) ...
+Preparing to unpack .../45-xserver-common_2%3a1.20.11-1+deb11u2_all.deb ...
+Unpacking xserver-common (2:1.20.11-1+deb11u2) ...
 Selecting previously unselected package libegl1:amd64.
 Preparing to unpack .../46-libegl1_1.3.2-1_amd64.deb ...
 Unpacking libegl1:amd64 (1.3.2-1) ...
@@ -282,8 +282,8 @@ Selecting previously unselected package libgl1:amd64.
 Preparing to unpack .../48-libgl1_1.3.2-1_amd64.deb ...
 Unpacking libgl1:amd64 (1.3.2-1) ...
 Selecting previously unselected package xserver-xorg-core.
-Preparing to unpack .../49-xserver-xorg-core_2%3a1.20.11-1_amd64.deb ...
-Unpacking xserver-xorg-core (2:1.20.11-1) ...
+Preparing to unpack .../49-xserver-xorg-core_2%3a1.20.11-1+deb11u2_amd64.deb ...
+Unpacking xserver-xorg-core (2:1.20.11-1+deb11u2) ...
 Selecting previously unselected package xserver-xorg-video-amdgpu.
 Preparing to unpack .../50-xserver-xorg-video-amdgpu_19.1.0-2_amd64.deb ...
 Unpacking xserver-xorg-video-amdgpu (19.1.0-2) ...
@@ -330,7 +330,7 @@ Setting up libxfixes3:amd64 (1:5.0.3-2) ...
 Setting up libxcb-sync1:amd64 (1.14-3) ...
 Setting up libsensors5:amd64 (1:3.6.0-7) ...
 Setting up libglapi-mesa:amd64 (20.3.5-1) ...
-Setting up libvulkan1:amd64 (1.2.162.0-1) ...
+Setting up libvulkan1:amd64 (1.3.224.0-1~bpo11+1) ...
 Setting up libxcb-dri2-0:amd64 (1.14-3) ...
 Setting up libxshmfence1:amd64 (1.3-1) ...
 Setting up libxkbfile1:amd64 (1:1.1.0-1) ...
@@ -356,8 +356,8 @@ Setting up libglx-mesa0:amd64 (20.3.5-1) ...
 Setting up libglx0:amd64 (1.3.2-1) ...
 Setting up x11-xkb-utils (7.7+5) ...
 Setting up libgl1:amd64 (1.3.2-1) ...
-Setting up xserver-common (2:1.20.11-1) ...
-Setting up xserver-xorg-core (2:1.20.11-1) ...
+Setting up xserver-common (2:1.20.11-1+deb11u2) ...
+Setting up xserver-xorg-core (2:1.20.11-1+deb11u2) ...
 Setting up xserver-xorg-video-radeon (1:19.1.0-2) ...
 Setting up xserver-xorg-video-fbdev (1:0.5.0-1) ...
 Setting up xserver-xorg-video-vmware (1:13.3.0-3) ...
@@ -366,49 +366,49 @@ Setting up xserver-xorg-video-amdgpu (19.1.0-2) ...
 Setting up xserver-xorg-video-nouveau (1:1.0.17-1) ...
 Setting up xserver-xorg-video-ati (1:19.1.0-2) ...
 Setting up xserver-xorg-video-all (1:7.7+22) ...
-Processing triggers for libc-bin (2.31-13+deb11u2) ...
+Processing triggers for libc-bin (2.31-13+deb11u4) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 xserver-xorg-video-amdgpu is already the newest version (19.1.0-2).
 xserver-xorg-video-amdgpu set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 xserver-xorg-video-ati is already the newest version (1:19.1.0-2).
 xserver-xorg-video-ati set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 xserver-xorg-video-fbdev is already the newest version (1:0.5.0-1).
 xserver-xorg-video-fbdev set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 xserver-xorg-video-nouveau is already the newest version (1:1.0.17-1).
 xserver-xorg-video-nouveau set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 xserver-xorg-video-vesa is already the newest version (1:2.5.0-1).
 xserver-xorg-video-vesa set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 xserver-xorg-video-vmware is already the newest version (1:13.3.0-3).
 xserver-xorg-video-vmware set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 xserver-xorg-video-radeon is already the newest version (1:19.1.0-2).
 xserver-xorg-video-radeon set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -417,19 +417,19 @@ The following additional packages will be installed:
 The following NEW packages will be installed:
   libxcb-util1 libxcursor1 libxinerama1 libxrandr2 libxss1 libxvmc1
   xserver-xorg-video-intel
-0 upgraded, 7 newly installed, 0 to remove and 14 not upgraded.
-Need to get 1,803 kB of archives.
-After this operation, 3,664 kB of additional disk space will be used.
+0 upgraded, 7 newly installed, 0 to remove and 19 not upgraded.
+Need to get 1,801 kB of archives.
+After this operation, 3,659 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxcb-util1 amd64 0.4.0-1+b1 [23.2 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxcursor1 amd64 1:1.2.0-2 [37.3 kB]
 Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxinerama1 amd64 2:1.1.4-2 [17.7 kB]
 Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxrandr2 amd64 2:1.5.1-1 [37.5 kB]
 Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxss1 amd64 1:1.2.3-1 [17.8 kB]
 Get:6 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxvmc1 amd64 2:1.0.12-2 [25.6 kB]
-Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-intel amd64 2:2.99.917+git20200714-1+b1 [1,644 kB]
-Fetched 1,803 kB in 0s (30.4 MB/s)
+Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-intel amd64 2:2.99.917+git20200714-1+deb11u1 [1,642 kB]
+Fetched 1,801 kB in 0s (34.9 MB/s)
 Selecting previously unselected package libxcb-util1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64624 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69207 files and directories currently installed.)
 Preparing to unpack .../0-libxcb-util1_0.4.0-1+b1_amd64.deb ...
 Unpacking libxcb-util1:amd64 (0.4.0-1+b1) ...
 Selecting previously unselected package libxcursor1:amd64.
@@ -448,28 +448,28 @@ Selecting previously unselected package libxvmc1:amd64.
 Preparing to unpack .../5-libxvmc1_2%3a1.0.12-2_amd64.deb ...
 Unpacking libxvmc1:amd64 (2:1.0.12-2) ...
 Selecting previously unselected package xserver-xorg-video-intel.
-Preparing to unpack .../6-xserver-xorg-video-intel_2%3a2.99.917+git20200714-1+b1_amd64.deb ...
-Unpacking xserver-xorg-video-intel (2:2.99.917+git20200714-1+b1) ...
+Preparing to unpack .../6-xserver-xorg-video-intel_2%3a2.99.917+git20200714-1+deb11u1_amd64.deb ...
+Unpacking xserver-xorg-video-intel (2:2.99.917+git20200714-1+deb11u1) ...
 Setting up libxcursor1:amd64 (1:1.2.0-2) ...
 Setting up libxvmc1:amd64 (2:1.0.12-2) ...
 Setting up libxcb-util1:amd64 (0.4.0-1+b1) ...
 Setting up libxinerama1:amd64 (2:1.1.4-2) ...
 Setting up libxrandr2:amd64 (2:1.5.1-1) ...
 Setting up libxss1:amd64 (1:1.2.3-1) ...
-Setting up xserver-xorg-video-intel (2:2.99.917+git20200714-1+b1) ...
-Processing triggers for libc-bin (2.31-13+deb11u2) ...
+Setting up xserver-xorg-video-intel (2:2.99.917+git20200714-1+deb11u1) ...
+Processing triggers for libc-bin (2.31-13+deb11u4) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   xserver-xorg-video-qxl
-0 upgraded, 1 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
 Need to get 83.4 kB of archives.
 After this operation, 211 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-qxl amd64 0.1.5+git20200331-1 [83.4 kB]
-Fetched 83.4 kB in 0s (2,081 kB/s)
+Fetched 83.4 kB in 0s (2,121 kB/s)
 Selecting previously unselected package xserver-xorg-video-qxl.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64687 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69269 files and directories currently installed.)
 Preparing to unpack .../xserver-xorg-video-qxl_0.1.5+git20200331-1_amd64.deb ...
 Unpacking xserver-xorg-video-qxl (0.1.5+git20200331-1) ...
 Setting up xserver-xorg-video-qxl (0.1.5+git20200331-1) ...
@@ -478,13 +478,13 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   xserver-xorg-video-mga
-0 upgraded, 1 newly installed, 0 to remove and 14 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
 Need to get 105 kB of archives.
 After this operation, 218 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-mga amd64 1:2.0.0-1 [105 kB]
-Fetched 105 kB in 0s (2,533 kB/s)
+Fetched 105 kB in 0s (2,237 kB/s)
 Selecting previously unselected package xserver-xorg-video-mga.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64695 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69277 files and directories currently installed.)
 Preparing to unpack .../xserver-xorg-video-mga_1%3a2.0.0-1_amd64.deb ...
 Unpacking xserver-xorg-video-mga (1:2.0.0-1) ...
 Setting up xserver-xorg-video-mga (1:2.0.0-1) ...
@@ -492,4 +492,4 @@ CLDS: * Install common xorg drivers.
 CLDS: * Install xserver-xorg-video-intel to fix: cat /var/log/Xorg.0.log
 CLDS: * 		Failed to initialize glamor at ScreenInit() time.
 CLDS: * 		Boot from virtualbox is working fine but boot from HP, X server not loaded.
-CLDS: * Disk size = 3941244K. Space Used = 227868K. Runtime = 00:00:00:08.
+CLDS: * Disk size = 4226220K. Space Used = 227988K. Runtime = 00:00:00:08.
