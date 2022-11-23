@@ -46,7 +46,6 @@
     find . -maxdepth 1 -mtime -1    # Find files modified 24 hours ago.
     find . -maxdepth 1 -mtime +1    # Find files modified before 24 hours ago.
     
-    # newermt=modified time, at=accessed time, ct=create time
+    # newerXX: mt=modified time, at=accessed time, ct=create time
     find . -type f -newermt '2020-04-01 00:00:00'       # After 2020-04-01 00:00:00'
-    
-    find . -type f -note -newermt '2020-04-01 00:00:00' # Before 2020-04-01 00:00:00'
+    find . -type f -not -newermt '2020-04-01 00:00:00' # Before 2020-04-01 00:00:00'
