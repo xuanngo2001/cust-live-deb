@@ -702,8 +702,7 @@ image/png=eog.desktop</code></pre>
 <ol type="1">
 <li>Manually configure interactively first.</li>
 <li>Get the configuration values: <code>debconf-get-selections | grep "zfs" &gt; zfs-dkms.seed</code></li>
-<li>Remove unused ‘select’ from zfs-dkms.seed.</li>
-<li>Feed the configuration values in your install script, before the install line: <code>export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true; debconf-set-selections -v zfs-dkms.seed</code></li>
+<li>Feed the configuration values in your install script, before the install line: <code>debconf-set-selections -v zfs-dkms.seed</code></li>
 </ol>
 </section>
 <section id="debug-installation-script" class="level2" data-number="2.7">
