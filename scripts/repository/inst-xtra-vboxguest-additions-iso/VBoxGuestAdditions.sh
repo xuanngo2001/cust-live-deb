@@ -10,13 +10,14 @@ URL=http://download.virtualbox.org/virtualbox/6.0.16/VBoxGuestAdditions_6.0.16.i
 URL=http://download.virtualbox.org/virtualbox/6.0.18/VBoxGuestAdditions_6.0.18.iso
 URL=http://download.virtualbox.org/virtualbox/6.1.4/VBoxGuestAdditions_6.1.4.iso    # Clipboard doesn't work.
 URL=http://download.virtualbox.org/virtualbox/6.1.2/VBoxGuestAdditions_6.1.2.iso
-URL=http://download.virtualbox.org/virtualbox/6.1.6/VBoxGuestAdditions_6.1.6.iso
+URL=http://download.virtualbox.org/virtualbox/6.1.6/VBoxGuestAdditions_6.1.6.iso	# 6.1.6 r137129 Copy & paste work flawlessly, include formatting.
 URL=http://download.virtualbox.org/virtualbox/6.1.14/VBoxGuestAdditions_6.1.14.iso
 URL=http://download.virtualbox.org/virtualbox/6.0.24/VBoxGuestAdditions_6.0.24.iso
 URL=http://download.virtualbox.org/virtualbox/6.1.18/VBoxGuestAdditions_6.1.18.iso	# After install, kernel panic.
 URL=http://download.virtualbox.org/virtualbox/6.1.16/VBoxGuestAdditions_6.1.16.iso
 URL=http://download.virtualbox.org/virtualbox/6.1.22/VBoxGuestAdditions_6.1.22.iso
 URL=http://download.virtualbox.org/virtualbox/6.1.32/VBoxGuestAdditions_6.1.32.iso
+URL=http://download.virtualbox.org/virtualbox/7.0.4/VBoxGuestAdditions_7.0.4.iso    # Copy & paste work flawlessly, include formatting. Host win32 v7.0.0 r153978
 
 # Download ISO if not already exists.
     vbox_iso="VBoxGuestAdditions.iso"
