@@ -25,7 +25,7 @@ DEB_REPO_URL=$2
 	./cld-tools-deploy.sh
 
 # Build ISO
-	CHROOT_DIR=/media/cld-img/chroot/
+	CHROOT_DIR=/media/sql/chroot/
 	mkdir -p "${CHROOT_DIR}"
 	CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 	iso_output_dir=$(readlink -ev "/media/sql")
