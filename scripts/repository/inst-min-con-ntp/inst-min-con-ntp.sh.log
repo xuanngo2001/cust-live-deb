@@ -8,34 +8,19 @@ Suggested packages:
   ntp-doc
 Recommended packages:
   sntp
-The following packages will be REMOVED:
-  systemd-timesyncd
 The following NEW packages will be installed:
   libopts25 ntp
-0 upgraded, 2 newly installed, 1 to remove and 14 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 20 not upgraded.
 Need to get 854 kB of archives.
-After this operation, 2,130 kB of additional disk space will be used.
+After this operation, 2,341 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libopts25 amd64 1:5.18.16-4 [69.2 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 ntp amd64 1:4.2.8p15+dfsg-1 [785 kB]
-Fetched 854 kB in 0s (17.2 MB/s)
+Fetched 854 kB in 0s (45.2 MB/s)
 Selecting previously unselected package libopts25:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21033 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21143 files and directories currently installed.)
 Preparing to unpack .../libopts25_1%3a5.18.16-4_amd64.deb ...
 Unpacking libopts25:amd64 (1:5.18.16-4) ...
-dpkg: systemd-timesyncd: dependency problems, but removing anyway as you requested:
- systemd depends on systemd-timesyncd | time-daemon; however:
-  Package systemd-timesyncd is to be removed.
-  Package time-daemon is not installed.
-  Package systemd-timesyncd which provides time-daemon is to be removed.
- systemd depends on systemd-timesyncd | time-daemon; however:
-  Package systemd-timesyncd is to be removed.
-  Package time-daemon is not installed.
-  Package systemd-timesyncd which provides time-daemon is to be removed.
-
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21038 files and directories currently installed.)
-Removing systemd-timesyncd (247.3-6) ...
 Selecting previously unselected package ntp.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21025 files and directories currently installed.)
 Preparing to unpack .../ntp_1%3a4.2.8p15+dfsg-1_amd64.deb ...
 Unpacking ntp (1:4.2.8p15+dfsg-1) ...
 Setting up libopts25:amd64 (1:5.18.16-4) ...
@@ -43,7 +28,6 @@ Setting up ntp (1:4.2.8p15+dfsg-1) ...
 Created symlink /etc/systemd/system/multi-user.target.wants/ntp.service → /lib/systemd/system/ntp.service.
 Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
-Processing triggers for libc-bin (2.31-13+deb11u2) ...
-Processing triggers for dbus (1.12.20-2) ...
+Processing triggers for libc-bin (2.31-13+deb11u4) ...
 CLDS: * Install Network Time Protocol: ntp.
-CLDS: * Disk size = 1480076K. Space Used = 3052K. Runtime = 00:00:00:01.
+CLDS: * Disk size = 1788240K. Space Used = 3268K. Runtime = 00:00:00:01.

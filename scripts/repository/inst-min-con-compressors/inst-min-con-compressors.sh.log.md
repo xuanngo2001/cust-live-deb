@@ -3,7 +3,7 @@
   * After this operation, 799 kB of additional disk space will be used.
   * After this operation, 350 kB of additional disk space will be used.
   * After this operation, 638 kB of additional disk space will be used.
-  * After this operation, 394 kB of additional disk space will be used.
+  * After this operation, 393 kB of additional disk space will be used.
   * After this operation, 5,787 kB of additional disk space will be used.
   * Install de/compressor: bzip2.
   * Install de/compressor: rar.
@@ -12,7 +12,7 @@
   * Install de/compressor: unzip.
   * Install de/compressor: p7zip.
   * Add universal extractor: extract.sh.
-  * Disk size = 992072K. Space Used = 10660K. Runtime = 00:00:00:02.
+  * Disk size = 1246536K. Space Used = 10660K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 bzip2 p7zip p7zip-full rar unrar
