@@ -5,7 +5,11 @@
   * After this operation, 15.6 MB of additional disk space will be used.
   * Install Thunar file manager.
   * Insert Thunar in Accessories menu.
+<<<<<<< HEAD
   * Disk size = 4621248K. Space Used = 32920K. Runtime = 00:00:00:06.
+=======
+  * Disk size = 4501616K. Space Used = 32896K. Runtime = 00:00:00:03.
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 desktop-file-utils gnome-icon-theme librsvg2-common libthunarx-3-0 thunar

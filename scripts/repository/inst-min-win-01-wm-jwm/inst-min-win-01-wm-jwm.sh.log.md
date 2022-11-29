@@ -3,7 +3,11 @@
   * Install Window Manager jwm: JWM v2.3.7 by Joe Wingbermuehle.
   * Set .
   * Change X window manager: update-alternatives --config x-window-manager
+<<<<<<< HEAD
   * Disk size = 4458508K. Space Used = 108436K. Runtime = 00:00:00:11.
+=======
+  * Disk size = 4338912K. Space Used = 108432K. Runtime = 00:00:00:06.
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 adwaita-icon-theme dbus-user-session dconf-gsettings-backend dconf-service exo-utils

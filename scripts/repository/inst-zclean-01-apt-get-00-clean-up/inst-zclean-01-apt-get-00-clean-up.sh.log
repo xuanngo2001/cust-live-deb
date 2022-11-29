@@ -3,6 +3,7 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+<<<<<<< HEAD
 2 not fully installed or removed.
 After this operation, 0 B of additional disk space will be used.
 Setting up zfs-dkms (2.1.5-1~bpo11+1) ...
@@ -43,3 +44,8 @@ Errors were encountered while processing:
  spl-dkms
 E: Sub-process /usr/bin/dpkg returned an error code (1)
 CLDS: * Disk size = 6299232K. Space Used = 4K. Runtime = 00:00:01:43.
+=======
+CLDS: * Remove unused packages: apt-get -y autoremove.
+CLDS: * Clean cached DEB: apt-get clean.
+CLDS: * Disk size = 5982832K. Space Used = -17044K. Runtime = 00:00:00:01.
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git

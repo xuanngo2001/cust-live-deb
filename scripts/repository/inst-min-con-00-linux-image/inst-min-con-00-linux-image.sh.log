@@ -216,7 +216,11 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
+<<<<<<< HEAD
 Fetched 845 kB in 0s (45.9 MB/s)
+=======
+Fetched 845 kB in 0s (9886 kB/s)
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9220 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.12.20-2_amd64.deb ...
@@ -241,21 +245,38 @@ Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
   busybox firmware-linux-free initramfs-tools initramfs-tools-core klibc-utils
+<<<<<<< HEAD
   libklibc linux-base linux-image-6.0.0-0.deb11.2-amd64
+=======
+  libklibc linux-base linux-image-5.19.0-0.deb11.2-amd64
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   live-boot-initramfs-tools rsync
 Suggested packages:
+<<<<<<< HEAD
   bash-completion linux-doc-6.0 debian-kernel-handbook grub-pc
+=======
+  bash-completion linux-doc-5.19 debian-kernel-handbook grub-pc
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   | grub-efi-amd64 | extlinux cryptsetup curlftpfs httpfs2 wget openssh-client
   openssh-server python3 python3-braceexpand
 Recommended packages:
   pigz apparmor live-boot-doc live-tools uuid-runtime
 The following NEW packages will be installed:
   busybox firmware-linux-free initramfs-tools initramfs-tools-core klibc-utils
+<<<<<<< HEAD
   libklibc linux-base linux-image-6.0.0-0.deb11.2-amd64 linux-image-amd64
+=======
+  libklibc linux-base linux-image-5.19.0-0.deb11.2-amd64 linux-image-amd64
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   live-boot live-boot-initramfs-tools rsync
 0 upgraded, 12 newly installed, 0 to remove and 20 not upgraded.
+<<<<<<< HEAD
 Need to get 73.2 MB of archives.
 After this operation, 511 MB of additional disk space will be used.
+=======
+Need to get 72.7 MB of archives.
+After this operation, 506 MB of additional disk space will be used.
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 Get:1 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 rsync amd64 3.2.4-1~bpo11+1 [411 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 busybox amd64 1:1.30.1-6+b3 [435 kB]
 Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 firmware-linux-free all 20200122-1 [24.2 kB]
@@ -264,8 +285,13 @@ Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 klibc
 Get:6 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 initramfs-tools-core all 0.140 [103 kB]
 Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 linux-base all 4.6 [32.4 kB]
 Get:8 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 initramfs-tools all 0.140 [71.7 kB]
+<<<<<<< HEAD
 Get:9 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 linux-image-6.0.0-0.deb11.2-amd64 amd64 6.0.3-1~bpo11+1 [71.9 MB]
 Get:10 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 linux-image-amd64 amd64 6.0.3-1~bpo11+1 [1496 B]
+=======
+Get:9 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 linux-image-5.19.0-0.deb11.2-amd64 amd64 5.19.11-1~bpo11+1 [71.3 MB]
+Get:10 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 linux-image-amd64 amd64 5.19.11-1~bpo11+1 [1500 B]
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 Get:11 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 live-boot-initramfs-tools all 1:20210208 [33.4 kB]
 Get:12 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 live-boot all 1:20210208 [56.0 kB]
 perl: warning: Setting locale failed.
@@ -279,7 +305,11 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
+<<<<<<< HEAD
 Fetched 73.2 MB in 1s (97.5 MB/s)
+=======
+Fetched 72.7 MB in 1s (81.3 MB/s)
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 Selecting previously unselected package rsync.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9443 files and directories currently installed.)
 Preparing to unpack .../00-rsync_3.2.4-1~bpo11+1_amd64.deb ...
@@ -305,12 +335,23 @@ Unpacking linux-base (4.6) ...
 Selecting previously unselected package initramfs-tools.
 Preparing to unpack .../07-initramfs-tools_0.140_all.deb ...
 Unpacking initramfs-tools (0.140) ...
+<<<<<<< HEAD
 Selecting previously unselected package linux-image-6.0.0-0.deb11.2-amd64.
 Preparing to unpack .../08-linux-image-6.0.0-0.deb11.2-amd64_6.0.3-1~bpo11+1_amd64.deb ...
 Unpacking linux-image-6.0.0-0.deb11.2-amd64 (6.0.3-1~bpo11+1) ...
+=======
+Selecting previously unselected package linux-image-5.19.0-0.deb11.2-amd64.
+Preparing to unpack .../08-linux-image-5.19.0-0.deb11.2-amd64_5.19.11-1~bpo11+1_amd64.deb ...
+Unpacking linux-image-5.19.0-0.deb11.2-amd64 (5.19.11-1~bpo11+1) ...
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 Selecting previously unselected package linux-image-amd64.
+<<<<<<< HEAD
 Preparing to unpack .../09-linux-image-amd64_6.0.3-1~bpo11+1_amd64.deb ...
 Unpacking linux-image-amd64 (6.0.3-1~bpo11+1) ...
+=======
+Preparing to unpack .../09-linux-image-amd64_5.19.11-1~bpo11+1_amd64.deb ...
+Unpacking linux-image-amd64 (5.19.11-1~bpo11+1) ...
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 Selecting previously unselected package live-boot-initramfs-tools.
 Preparing to unpack .../10-live-boot-initramfs-tools_1%3a20210208_all.deb ...
 Unpacking live-boot-initramfs-tools (1:20210208) ...
@@ -331,20 +372,40 @@ Running in chroot, ignoring request.
 Setting up initramfs-tools-core (0.140) ...
 Setting up initramfs-tools (0.140) ...
 update-initramfs: deferring update (trigger activated)
+<<<<<<< HEAD
 Setting up linux-image-6.0.0-0.deb11.2-amd64 (6.0.3-1~bpo11+1) ...
 I: /vmlinuz.old is now a symlink to boot/vmlinuz-6.0.0-0.deb11.2-amd64
 I: /initrd.img.old is now a symlink to boot/initrd.img-6.0.0-0.deb11.2-amd64
 I: /vmlinuz is now a symlink to boot/vmlinuz-6.0.0-0.deb11.2-amd64
 I: /initrd.img is now a symlink to boot/initrd.img-6.0.0-0.deb11.2-amd64
+=======
+Setting up linux-image-5.19.0-0.deb11.2-amd64 (5.19.11-1~bpo11+1) ...
+I: /vmlinuz.old is now a symlink to boot/vmlinuz-5.19.0-0.deb11.2-amd64
+I: /initrd.img.old is now a symlink to boot/initrd.img-5.19.0-0.deb11.2-amd64
+I: /vmlinuz is now a symlink to boot/vmlinuz-5.19.0-0.deb11.2-amd64
+I: /initrd.img is now a symlink to boot/initrd.img-5.19.0-0.deb11.2-amd64
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 /etc/kernel/postinst.d/initramfs-tools:
+<<<<<<< HEAD
 update-initramfs: Generating /boot/initrd.img-6.0.0-0.deb11.2-amd64
+=======
+update-initramfs: Generating /boot/initrd.img-5.19.0-0.deb11.2-amd64
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 live-boot: core filesystems devices utils udev blockdev dns.
+<<<<<<< HEAD
 Setting up linux-image-amd64 (6.0.3-1~bpo11+1) ...
+=======
+Setting up linux-image-amd64 (5.19.11-1~bpo11+1) ...
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 Setting up live-boot-initramfs-tools (1:20210208) ...
 update-initramfs: deferring update (trigger activated)
 Setting up live-boot (1:20210208) ...
 Processing triggers for initramfs-tools (0.140) ...
+<<<<<<< HEAD
 update-initramfs: Generating /boot/initrd.img-6.0.0-0.deb11.2-amd64
+=======
+update-initramfs: Generating /boot/initrd.img-5.19.0-0.deb11.2-amd64
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 live-boot: core filesystems devices utils udev blockdev dns.
 './cld' -> '/usr/local/cld'
 './cld/doc' -> '/usr/local/cld/doc'
@@ -412,6 +473,7 @@ live-boot: core filesystems devices utils udev blockdev dns.
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+<<<<<<< HEAD
 ||/ Name                                       Version         Architecture Description
 +++-==========================================-===============-============-===================================
 ii  linux-image-6.0.0-0.deb11.2-amd64          6.0.3-1~bpo11+1 amd64        Linux 6.0 for 64-bit PCs (signed)
@@ -427,7 +489,25 @@ e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.0.0-0.deb11.2-amd64
 f53ef0036a3ef07472146cb43e7c7404  /boot/config-6.0.0-0.deb11.2-amd64
 b952d54f36e2e22965aa5784cae45c8a  /boot/initrd.img-6.0.0-0.deb11.2-amd64
 f7d067581e884dd4f37abb1e86214c77  /boot/vmlinuz-6.0.0-0.deb11.2-amd64
+=======
+||/ Name                                        Version           Architecture Description
++++-===========================================-=================-============-===================================
+ii  linux-image-5.19.0-0.deb11.2-amd64          5.19.11-1~bpo11+1 amd64        Linux 5.19 for 64-bit PCs (signed)
+un  linux-image-5.19.0-0.deb11.2-amd64-unsigned <none>            <none>       (no description available)
+ii  linux-image-amd64                           5.19.11-1~bpo11+1 amd64        Linux for 64-bit PCs (meta-package)
+un  linux-image-generic                         <none>            <none>       (no description available)
+total 56640
+-rw-r--r-- 1 root root       83 Oct  3 21:59 System.map-5.19.0-0.deb11.2-amd64
+-rw-r--r-- 1 root root   255139 Oct  3 21:59 config-5.19.0-0.deb11.2-amd64
+-rw-r--r-- 1 root root 50075303 Nov  3 19:17 initrd.img-5.19.0-0.deb11.2-amd64
+-rw-r--r-- 1 root root  7659136 Oct  3 21:59 vmlinuz-5.19.0-0.deb11.2-amd64
+e0a6c09212a19ed48183a052eab847e7  /boot/System.map-5.19.0-0.deb11.2-amd64
+b6bafd7c34decb2b15829830c96fb6fa  /boot/config-5.19.0-0.deb11.2-amd64
+e36d631c36053fb6cb3f651b546e7c3e  /boot/initrd.img-5.19.0-0.deb11.2-amd64
+4b05d30b7019ffe1fe93fef310f52035  /boot/vmlinuz-5.19.0-0.deb11.2-amd64
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 total 48
+<<<<<<< HEAD
 lrwxrwxrwx   1 root root    7 Nov 24 21:03 bin -> usr/bin
 drwxr-xr-x   2 root root 4096 Nov 24 21:04 boot
 drwxr-xr-x  17 root root 3640 Nov 24 20:18 dev
@@ -451,6 +531,36 @@ drwxrwxrwt   2 root root 4096 Nov 24 21:04 tmp
 drwxr-xr-x  14 root root 4096 Nov 24 21:03 usr
 drwxr-xr-x  11 root root 4096 Nov 24 21:03 var
 lrwxrwxrwx   1 root root   34 Nov 24 21:04 vmlinuz -> boot/vmlinuz-6.0.0-0.deb11.2-amd64
+=======
+lrwxrwxrwx   1 root root    7 Nov  3 19:16 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Nov  3 19:17 boot
+drwxr-xr-x  17 root root 3560 Nov  3 19:10 dev
+drwxr-xr-x  49 root root 4096 Nov  3 19:17 etc
+drwxr-xr-x   2 root root 4096 Sep  3 12:10 home
+lrwxrwxrwx   1 root root   38 Nov  3 19:17 initrd.img -> boot/initrd.img-5.19.0-0.deb11.2-amd64
+lrwxrwxrwx   1 root root    7 Nov  3 19:16 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Nov  3 19:16 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Nov  3 19:16 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Nov  3 19:16 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Nov  3 19:16 media
+drwxr-xr-x   2 root root 4096 Nov  3 19:16 mnt
+drwxr-xr-x   2 root root 4096 Nov  3 19:16 opt
+dr-xr-xr-x 287 root root    0 Nov  3 19:17 proc
+drwx------   3 root root 4096 Nov  3 19:17 root
+drwxr-xr-x   4 root root 4096 Nov  3 19:16 run
+lrwxrwxrwx   1 root root    8 Nov  3 19:16 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Nov  3 19:16 srv
+dr-xr-xr-x  13 root root    0 Nov  3 15:09 sys
+drwxrwxrwt   2 root root 4096 Nov  3 19:17 tmp
+drwxr-xr-x  14 root root 4096 Nov  3 19:16 usr
+drwxr-xr-x  11 root root 4096 Nov  3 19:16 var
+lrwxrwxrwx   1 root root   35 Nov  3 19:17 vmlinuz -> boot/vmlinuz-5.19.0-0.deb11.2-amd64
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
+<<<<<<< HEAD
 CLDS: * Installed Linux image: linux-image-6.0.0-0.deb11.2-amd64.
 CLDS: * Disk size = 1120416K. Space Used = 638600K. Runtime = 00:00:00:42.
+=======
+CLDS: * Installed Linux image: linux-image-5.19.0-0.deb11.2-amd64.
+CLDS: * Disk size = 1004736K. Space Used = 633720K. Runtime = 00:00:00:31.
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git

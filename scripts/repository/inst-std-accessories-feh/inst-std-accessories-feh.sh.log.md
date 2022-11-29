@@ -1,7 +1,11 @@
 * >>>>>>>>> Running inst-std-accessories-feh.sh ...
   * After this operation, 13.5 MB of additional disk space will be used.
   * Install command line image viewer: feh.
+<<<<<<< HEAD
   * Disk size = 4563140K. Space Used = 14020K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 4443540K. Space Used = 14032K. Runtime = 00:00:00:01.
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 feh libexif12 libid3tag0 libimlib2 yudit-common
