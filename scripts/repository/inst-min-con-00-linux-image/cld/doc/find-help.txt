@@ -41,4 +41,7 @@
 
 # Exclude directory pattern.
     find . ! -path "./zinst-*" -type f -name "*-help.txt"
+    
+# Find file touched by git merge.
+    find . -type f -name "*.sh" -exec grep "<<<<<<< HEAD" {} \; -exec echo "   {}" \;    
 
