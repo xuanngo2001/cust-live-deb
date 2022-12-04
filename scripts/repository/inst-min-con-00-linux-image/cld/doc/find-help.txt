@@ -45,3 +45,5 @@
 # Find file touched by git merge.
     find . -type f -name "*.sh" -exec grep "<<<<<<< HEAD" {} \; -exec echo "   {}" \;    
 
+# mv-dirs.sh: Move files to dst/
+    find . -type f -exec echo "mv {} ${dst}/$(basename {})" \; -exec \mv {} ${dst}/$(basename {}) \;
