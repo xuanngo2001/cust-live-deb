@@ -1,0 +1,2 @@
+# Find Asus device on 10.0.100.* network.
+    nmap -sn 10.0.100.0/24 | grep -B 2 Asus
