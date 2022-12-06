@@ -36,8 +36,9 @@
     find . -type f -name 'all.txt' -printf '%s %p\n' | numfmt --field=1 --to=iec-i  --format='%10.3f'
     find . -type f -name 'all.txt' -printf '%s %k %p\n'
     
-# Find negation. Find all files that don't end with .sh.
-    find . -type f -not -name '*.sh'
+# Find negation.
+    find . -type f -not -name '*.sh'    # Find all files that don't end with .sh.
+    find . -type f -not \( -name "*.svg" -or -name "*.png" -or -name "*.jpg" \) # Exclude pictures.
 
 # Exclude directory pattern.
     find . ! -path "./zinst-*" -type f -name "*-help.txt"
