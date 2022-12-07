@@ -42,9 +42,14 @@
 
 # Exclude directory pattern.
     find . ! -path "./zinst-*" -type f -name "*-help.txt"
-    
-# Find file touched by git merge.
-    find . -type f -name "*.sh" -exec grep "<<<<<<< HEAD" {} \; -exec echo "   {}" \;    
 
-# mv-dirs.sh: Move files to dst/
-    find . -type f -exec echo "mv {} ${dst}/$(basename {})" \; -exec \mv {} ${dst}/$(basename {}) \;
+# Find files by date
+    find . -maxdepth 1 -mtime -1    # Find files modified 24 hours ago.
+    find . -maxdepth 1 -mtime +1    # Find files modified before 24 hours ago.
+    
+    # newerXX: mt=modified time, at=accessed time, ct=create time
+    find . -type f -newermt '2020-04-01 00:00:00'       # After 2020-04-01 00:00:00'
+    find . -type f -not -newermt '2020-04-01 00:00:00' # Before 2020-04-01 00:00:00'
+
+# Find file touched by git merge.
+    find . -type f -name "*.sh" -exec grep "<<<<<<< HEAD" {} \; -exec echo "   {}" \;
