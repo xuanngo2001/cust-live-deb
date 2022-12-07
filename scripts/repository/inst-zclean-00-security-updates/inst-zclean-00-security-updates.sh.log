@@ -20,9 +20,9 @@ Hit:14 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:15 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:16 http://localhost/aptly-repo/master_mariadb-main bullseye InRelease
 Hit:17 http://localhost/aptly-repo/master_microsoft-main bullseye InRelease
-Hit:18 https://deb.nodesource.com/node_12.x bullseye InRelease
-Hit:19 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
-Hit:20 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
+Hit:18 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
+Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
+Hit:20 https://deb.nodesource.com/node_12.x bullseye InRelease
 Hit:21 https://download.docker.com/linux/debian buster InRelease
 Hit:22 https://dl.google.com/linux/chrome/deb stable InRelease
 Reading package lists...
@@ -33,14 +33,13 @@ Calculating upgrade...
 The following packages have been kept back:
   libelf1 libsystemd0 systemd
 The following packages will be upgraded:
-<<<<<<< HEAD
   e2fsprogs google-chrome-stable init init-system-helpers iproute2 less
   libbpf0 libc-bin libcom-err2 libext2fs2 libss2 libudev1 logsave rsyslog
   systemd-sysv tzdata udev
 17 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
 2 not fully installed or removed.
-Need to get 99.7 MB of archives.
-After this operation, 2,085 kB of additional disk space will be used.
+Need to get 99.3 MB of archives.
+After this operation, 3,111 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 init-system-helpers all 1.64~bpo11+1 [49.2 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-updates-main bullseye-updates/main amd64 libc-bin amd64 2.31-13+deb11u5 [828 kB]
 Get:3 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 logsave amd64 1.46.5-2~bpo11+2 [76.6 kB]
@@ -57,96 +56,42 @@ Get:13 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backp
 Get:14 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 less amd64 590-1~bpo11+1 [142 kB]
 Get:15 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 rsyslog amd64 8.2208.0-1~bpo11+1 [733 kB]
 Get:16 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libss2 amd64 1.46.5-2~bpo11+2 [80.6 kB]
-Get:17 https://dl.google.com/linux/chrome/deb stable/main amd64 google-chrome-stable amd64 107.0.5304.121-1 [93.3 MB]
-=======
-  e2fsprogs init init-system-helpers iproute2 less libbpf0 libc-bin
-  libcom-err2 libext2fs2 libss2 libudev1 logsave rsyslog systemd-sysv tzdata
-  udev
-16 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
-Need to get 6,326 kB of archives.
-After this operation, 2,086 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 init-system-helpers all 1.64~bpo11+1 [49.2 kB]
-Get:2 http://localhost/aptly-repo/master_bullseye-updates-main bullseye-updates/main amd64 libc-bin amd64 2.31-13+deb11u5 [828 kB]
-Get:3 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 logsave amd64 1.46.5-2~bpo11+2 [76.6 kB]
-Get:4 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libext2fs2 amd64 1.46.5-2~bpo11+2 [259 kB]
-Get:5 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 e2fsprogs amd64 1.46.5-2~bpo11+2 [622 kB]
-Get:6 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 init amd64 1.64~bpo11+1 [16.3 kB]
-Get:7 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 systemd-sysv amd64 251.3-1~bpo11+1 [123 kB]
-Get:8 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libcom-err2 amd64 1.46.5-2~bpo11+2 [75.9 kB]
-Get:9 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 udev amd64 251.3-1~bpo11+1 [1,657 kB]
-Get:10 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libudev1 amd64 251.3-1~bpo11+1 [184 kB]
-Get:11 http://localhost/aptly-repo/master_bullseye-updates-main bullseye-updates/main amd64 tzdata all 2021a-1+deb11u8 [284 kB]
-Get:12 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libbpf0 amd64 1:0.7.0-2~bpo11+1 [141 kB]
-Get:13 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 iproute2 amd64 6.0.0-1~bpo11+1 [1,054 kB]
-Get:14 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 less amd64 590-1~bpo11+1 [142 kB]
-Get:15 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 rsyslog amd64 8.2208.0-1~bpo11+1 [733 kB]
-Get:16 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libss2 amd64 1.46.5-2~bpo11+2 [80.6 kB]
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+Get:17 https://dl.google.com/linux/chrome/deb stable/main amd64 google-chrome-stable amd64 108.0.5359.98-1 [93.0 MB]
 Preconfiguring packages ...
-<<<<<<< HEAD
-Fetched 99.7 MB in 1s (85.8 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123664 files and directories currently installed.)
+Fetched 99.3 MB in 2s (56.5 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 122159 files and directories currently installed.)
 Preparing to unpack .../init-system-helpers_1.64~bpo11+1_all.deb ...
 Unpacking init-system-helpers (1.64~bpo11+1) over (1.60) ...
 Setting up init-system-helpers (1.64~bpo11+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123664 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 122159 files and directories currently installed.)
 Preparing to unpack .../libc-bin_2.31-13+deb11u5_amd64.deb ...
 Unpacking libc-bin (2.31-13+deb11u5) over (2.31-13+deb11u4) ...
 Setting up libc-bin (2.31-13+deb11u5) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123664 files and directories currently installed.)
-=======
-Fetched 6,326 kB in 0s (61.9 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123780 files and directories currently installed.)
-Preparing to unpack .../init-system-helpers_1.64~bpo11+1_all.deb ...
-Unpacking init-system-helpers (1.64~bpo11+1) over (1.60) ...
-Setting up init-system-helpers (1.64~bpo11+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123780 files and directories currently installed.)
-Preparing to unpack .../libc-bin_2.31-13+deb11u5_amd64.deb ...
-Unpacking libc-bin (2.31-13+deb11u5) over (2.31-13+deb11u4) ...
-Setting up libc-bin (2.31-13+deb11u5) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123780 files and directories currently installed.)
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 122159 files and directories currently installed.)
 Preparing to unpack .../logsave_1.46.5-2~bpo11+2_amd64.deb ...
 Unpacking logsave (1.46.5-2~bpo11+2) over (1.46.2-2) ...
 Preparing to unpack .../libext2fs2_1.46.5-2~bpo11+2_amd64.deb ...
 Unpacking libext2fs2:amd64 (1.46.5-2~bpo11+2) over (1.46.2-2) ...
 Setting up libext2fs2:amd64 (1.46.5-2~bpo11+2) ...
-<<<<<<< HEAD
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123664 files and directories currently installed.)
-=======
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123780 files and directories currently installed.)
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 122159 files and directories currently installed.)
 Preparing to unpack .../e2fsprogs_1.46.5-2~bpo11+2_amd64.deb ...
 Unpacking e2fsprogs (1.46.5-2~bpo11+2) over (1.46.2-2) ...
 Preparing to unpack .../init_1.64~bpo11+1_amd64.deb ...
 Unpacking init (1.64~bpo11+1) over (1.60) ...
 Preparing to unpack .../systemd-sysv_251.3-1~bpo11+1_amd64.deb ...
 Unpacking systemd-sysv (251.3-1~bpo11+1) over (247.3-7+deb11u1) ...
-<<<<<<< HEAD
-Preparing to unpack .../google-chrome-stable_107.0.5304.121-1_amd64.deb ...
-Unpacking google-chrome-stable (107.0.5304.121-1) over (107.0.5304.110-1) ...
-=======
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+Preparing to unpack .../google-chrome-stable_108.0.5359.98-1_amd64.deb ...
+Unpacking google-chrome-stable (108.0.5359.98-1) over (107.0.5304.110-1) ...
 Preparing to unpack .../libcom-err2_1.46.5-2~bpo11+2_amd64.deb ...
 Unpacking libcom-err2:amd64 (1.46.5-2~bpo11+2) over (1.46.2-2) ...
 Setting up libcom-err2:amd64 (1.46.5-2~bpo11+2) ...
-<<<<<<< HEAD
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123664 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 122159 files and directories currently installed.)
 Preparing to unpack .../udev_251.3-1~bpo11+1_amd64.deb ...
 Unpacking udev (251.3-1~bpo11+1) over (247.3-7+deb11u1) ...
 Preparing to unpack .../libudev1_251.3-1~bpo11+1_amd64.deb ...
 Unpacking libudev1:amd64 (251.3-1~bpo11+1) over (247.3-7+deb11u1) ...
 Setting up libudev1:amd64 (251.3-1~bpo11+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123673 files and directories currently installed.)
-=======
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123780 files and directories currently installed.)
-Preparing to unpack .../udev_251.3-1~bpo11+1_amd64.deb ...
-Unpacking udev (251.3-1~bpo11+1) over (247.3-7+deb11u1) ...
-Preparing to unpack .../libudev1_251.3-1~bpo11+1_amd64.deb ...
-Unpacking libudev1:amd64 (251.3-1~bpo11+1) over (247.3-7+deb11u1) ...
-Setting up libudev1:amd64 (251.3-1~bpo11+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123789 files and directories currently installed.)
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 122168 files and directories currently installed.)
 Preparing to unpack .../0-tzdata_2021a-1+deb11u8_all.deb ...
 Unpacking tzdata (2021a-1+deb11u8) over (2021a-1+deb11u5) ...
 Preparing to unpack .../1-libbpf0_1%3a0.7.0-2~bpo11+1_amd64.deb ...
@@ -160,10 +105,7 @@ Unpacking rsyslog (8.2208.0-1~bpo11+1) over (8.2102.0-2+deb11u1) ...
 Preparing to unpack .../5-libss2_1.46.5-2~bpo11+2_amd64.deb ...
 Unpacking libss2:amd64 (1.46.5-2~bpo11+2) over (1.46.2-2) ...
 Setting up systemd-sysv (251.3-1~bpo11+1) ...
-<<<<<<< HEAD
-Setting up google-chrome-stable (107.0.5304.121-1) ...
-=======
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+Setting up google-chrome-stable (108.0.5359.98-1) ...
 Setting up init (1.64~bpo11+1) ...
 Setting up rsyslog (8.2208.0-1~bpo11+1) ...
 Removing obsolete conffile /etc/init.d/rsyslog ...
@@ -171,9 +113,8 @@ Setting up less (590-1~bpo11+1) ...
 Setting up tzdata (2021a-1+deb11u8) ...
 
 Current default time zone: 'Etc/UTC'
-<<<<<<< HEAD
-Local time is now:      Thu Nov 24 21:17:38 UTC 2022.
-Universal Time is now:  Thu Nov 24 21:17:38 UTC 2022.
+Local time is now:      Wed Dec  7 19:23:36 UTC 2022.
+Universal Time is now:  Wed Dec  7 19:23:36 UTC 2022.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up zfs-dkms (2.1.5-1~bpo11+1) ...
@@ -200,32 +141,22 @@ Error! Bad return status for module build on kernel: 6.0.0-0.deb11.2-amd64 (x86_
 Consult /var/lib/dkms/zfs/2.1.5/build/make.log for more information.
 dpkg: error processing package zfs-dkms (--configure):
  installed zfs-dkms package post-installation script subprocess returned error exit status 10
-=======
-Local time is now:      Thu Nov  3 19:28:42 UTC 2022.
-Universal Time is now:  Thu Nov  3 19:28:42 UTC 2022.
-Run 'dpkg-reconfigure tzdata' if you wish to change it.
-
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 Setting up udev (251.3-1~bpo11+1) ...
 A chroot environment has been detected, udev not started.
 Setting up libss2:amd64 (1.46.5-2~bpo11+2) ...
 Setting up logsave (1.46.5-2~bpo11+2) ...
-<<<<<<< HEAD
 dpkg: dependency problems prevent configuration of spl-dkms:
  spl-dkms depends on zfs-dkms; however:
   Package zfs-dkms is not configured yet.
 
 dpkg: error processing package spl-dkms (--configure):
  dependency problems - leaving unconfigured
-=======
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
 Setting up libbpf0:amd64 (1:0.7.0-2~bpo11+1) ...
 Setting up iproute2 (6.0.0-1~bpo11+1) ...
 Installing new version of config file /etc/iproute2/rt_protos ...
 Setting up e2fsprogs (1.46.5-2~bpo11+2) ...
 Installing new version of config file /etc/mke2fs.conf ...
 update-initramfs: deferring update (trigger activated)
-<<<<<<< HEAD
 Processing triggers for menu (2.1.48) ...
 Processing triggers for mailcap (3.69) ...
 Processing triggers for desktop-file-utils (0.26-1) ...
@@ -240,17 +171,4 @@ Errors were encountered while processing:
  zfs-dkms
  spl-dkms
 E: Sub-process /usr/bin/dpkg returned an error code (1)
-CLDS: * Disk size = 6299228K. Space Used = 100472K. Runtime = 00:00:01:58.
-=======
-Processing triggers for mailcap (3.69) ...
-Processing triggers for initramfs-tools (0.140) ...
-update-initramfs: Generating /boot/initrd.img-5.19.0-0.deb11.2-amd64
-setupcon is missing. Please install the 'console-setup' package.
-live-boot: core filesystems devices utils udev blockdev dns.
-Processing triggers for libc-bin (2.31-13+deb11u5) ...
-Processing triggers for ntp (1:4.2.8p15+dfsg-1) ...
-Running in chroot, ignoring request.
-invoke-rc.d: policy-rc.d denied execution of try-restart.
-CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 5999876K. Space Used = 9336K. Runtime = 00:00:00:19.
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+CLDS: * Disk size = 6226720K. Space Used = 101156K. Runtime = 00:00:02:15.

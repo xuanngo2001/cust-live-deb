@@ -878,7 +878,11 @@ tmpfs           603M  8.1M  595M   2% /run
 tmpfs           1.5G     0  1.5G   0% /lib/live/mount/overlay
 /dev/sdb        2.4G  335M  2.0G  15% /lib/live/mount/persistence/sdb
 /dev/loop1      2.0G  285M  1.6G  16% /lib/live/mount/persistence/loop1</code></pre>
-<p>Note: Sometime, persistence image file is not recognized by <code>Cust-Live-Deb</code> due to bad format of your partition. You can remedy by reformatting: <code>mkfs.ext4 /dev/sdX</code>(Use different command for different filesystem).</p>
+<p><strong>NOTE</strong></p>
+<ul>
+<li>Don’t use <strong>persistence</strong> word as a LABEL for your partition.</li>
+<li>Sometime, persistence image file is not recognized by <code>Cust-Live-Deb</code> due to bad format of your partition. You can remedy this by reformatting it: <code>mkfs.ext4 -L LABEL /dev/sdX</code>(Use different command for different filesystem).</li>
+</ul>
 <section id="disable-persistence" class="level2" data-number="3.1">
 <h2 data-number="3.1"><span class="header-section-number">3.1</span> Disable persistence</h2>
 <ul>

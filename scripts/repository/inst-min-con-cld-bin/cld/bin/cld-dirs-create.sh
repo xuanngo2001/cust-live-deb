@@ -26,6 +26,10 @@ case "${action}" in
       mkdir -p ./cld/app/jwm/jwmrc
       ;;
 
+  jwmrc-icons)
+      mkdir -p ./cld/app/jwm/jwmrc/icons
+      ;;
+
   jwm-bootstrap)
       mkdir -p ./cld/app/jwm/bootstrap
       ;;
@@ -63,6 +67,7 @@ case "${action}" in
       printf "    %-15s %-43s [%s]\n" 'home'              '=> ./cld/home'                             '$HOME directory'
       printf "    %-15s %-43s [%s]\n" 'app'               '=> ./cld/app'                              'e.g. ./app/ant/bin/, ./app/ant/icon/'
       printf "    %-15s %-43s [%s]\n" 'jwmrc'             '=> ./cld/app/jwm/jwmrc'                    'JWM configuration files'
+      printf "    %-15s %-43s [%s]\n" 'jwmrc-icons'       '=> ../cld/app/jwm/jwmrc/icons'             'JWM menu icons. /usr/local/cld/app/jwm/jwmrc/icons/bomb-1F4A3.svg'
       printf "    %-15s %-43s [%s]\n" 'jwm-bootstrap'     '=> ./cld/app/jwm/bootstrap'                'Scripts executed after JWM started'
       printf "    %-15s %-43s [%s]\n" 'bashrc'            '=> ./cld/bashrc.d'                         '*.sh will be sourced after boot'
       printf "    %-15s %-43s [%s]\n" 'after-boot'        '=> ./cld/systemd/runlevel/after-boot'      '*.sh will be executed after boot'

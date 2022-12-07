@@ -1,10 +1,6 @@
 * >>>>>>>>> Running inst-std-multimedia-mpv-fix.sh ...
   * 2021-09-06: Bullseye upgrade: required packages.
-<<<<<<< HEAD
-  * Disk size = 5370908K. Space Used = 8K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 5243492K. Space Used = 8K. Runtime = 00:00:00:01.
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 5370988K. Space Used = 8K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libarchive13 libcjson1 libdjvulibre21 libdjvulibre-text liblept5

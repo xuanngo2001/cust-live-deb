@@ -1,13 +1,9 @@
 * >>>>>>>>> Running inst-std-multimedia-mpv.sh ...
   * After this operation, 266 MB of additional disk space will be used.
-  * Install Media Player: mpv 0.33.1 Copyright © 2000-2020 mpv/MPlayer/mplayer2 projects.
+  * Install Media Player: .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-<<<<<<< HEAD
-  * Disk size = 5708736K. Space Used = 337828K. Runtime = 00:00:00:20.
-=======
-  * Disk size = 5581272K. Space Used = 337780K. Runtime = 00:00:00:12.
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 5444472K. Space Used = 73484K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
 fonts-urw-base35 imagemagick-7-common libaom0 libaom3 libarchive13

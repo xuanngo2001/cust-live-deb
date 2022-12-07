@@ -1,10 +1,6 @@
 * >>>>>>>>> Running inst-xtra-ta-lib.sh ...
   * After this operation, 172 MB of additional disk space will be used.
-<<<<<<< HEAD
-  * Disk size = 7121624K. Space Used = 198576K. Runtime = 00:00:00:07.
-=======
-  * Disk size = 6994232K. Space Used = 198580K. Runtime = 00:00:00:06.
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 7048096K. Space Used = 198568K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 binutils binutils-common binutils-x86-64-linux-gnu build-essential dpkg-dev

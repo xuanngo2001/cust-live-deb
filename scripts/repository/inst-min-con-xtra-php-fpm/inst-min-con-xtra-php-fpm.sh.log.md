@@ -3,11 +3,7 @@
   * Install php-fpm.
   * Need for Drupal with nginx.
   * Used to speed up the performance of a website. It is much faster than traditional CGI based methods and has the ability to handle tremendous loads simultaneously.
-<<<<<<< HEAD
-  * Disk size = 3941192K. Space Used = 23448K. Runtime = 00:00:00:09.
-=======
-  * Disk size = 3821736K. Space Used = 23448K. Runtime = 00:00:00:06.
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 3941236K. Space Used = 23444K. Runtime = 00:00:00:10.
   * The following NEW packages will be installed:
   ```bash
 libsodium23 mailcap media-types mime-support php7.4-cli

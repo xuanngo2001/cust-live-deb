@@ -702,7 +702,8 @@ image/png=eog.desktop</code></pre>
 <ol type="1">
 <li>Manually configure interactively first.</li>
 <li>Get the configuration values: <code>debconf-get-selections | grep "zfs" &gt; zfs-dkms.seed</code></li>
-<li>Feed the configuration values in your install script, before the install line: <code>debconf-set-selections -v zfs-dkms.seed</code></li>
+<li>Remove unused ‘select’ from zfs-dkms.seed.</li>
+<li>Feed the configuration values in your install script, before the install line: <code>export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true; debconf-set-selections -v zfs-dkms.seed</code></li>
 </ol>
 </section>
 <section id="debug-installation-script" class="level2" data-number="2.7">
@@ -812,8 +813,17 @@ Shutdown</code></pre>
 <p>Icon per application can found in it menu definition file located at <code>/usr/share/menu</code>.</p>
 <section id="add-icon-in-jwm-menu" class="level2" data-number="9.1">
 <h2 data-number="9.1"><span class="header-section-number">9.1</span> Add icon in JWM menu</h2>
-<p>Size of icons should be 32x32.</p>
-<p>Icons repository: https://icons8.com/</p>
+<ul>
+<li><p>Main menu: ./cust-live-deb/scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml</p></li>
+<li><p>Set up icons at /usr/local/cld/app/jwm/jwmrc/jwmrc-menus.xml</p></li>
+<li><p>Find JWM menu files: find ./scripts/repository/ -type f -name "jwmrc-*.xml" | sort</p></li>
+<li><p>Put all custom icons in: /usr/local/cld/app/jwm/jwmrc/icons/</p></li>
+<li><p>Size of icons should be 32x32.</p></li>
+<li><p>https://github.com/toss/tossface/releases/tag/v1.1</p></li>
+<li><p>https://openmoji.org/</p></li>
+<li><p>https://unicode.org/emoji/charts-13.1/full-emoji-list.html</p></li>
+<li><p>Icons repository: https://icons8.com/</p></li>
+</ul>
 <p>Use <code>inst-std-accessories-scite</code> as reference.</p>
 <ol type="1">
 <li><p>Find menu file in <code>/usr/share/menu/</code></p></li>
