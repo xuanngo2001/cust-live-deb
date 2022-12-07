@@ -2,7 +2,7 @@
   * After this operation, 13.3 kB of additional disk space will be used.
   * After this operation, 400 kB of additional disk space will be used.
   * After this operation, 18.2 MB of additional disk space will be used.
-  * Disk size = 6125564K. Space Used = 144436K. Runtime = 00:00:02:03.
+  * Disk size = 6125620K. Space Used = 144424K. Runtime = 00:00:01:47.
   * The following NEW packages will be installed:
   ```bash
 build-essential* dkms* file libc6-dev* libelf-dev

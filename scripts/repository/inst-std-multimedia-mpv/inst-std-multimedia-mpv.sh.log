@@ -20,7 +20,7 @@ Hit:18 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
 Get:20 https://dl.google.com/linux/chrome/deb stable InRelease [1,811 B]
 Get:21 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,090 B]
-Fetched 2,901 B in 2s (1,646 B/s)
+Fetched 2,901 B in 2s (1,616 B/s)
 Reading package lists...
 Hit:1 http://localhost/aptly-repo/master_bullseye-main bullseye InRelease
 Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
@@ -231,7 +231,7 @@ Get:121 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 lib
 Get:122 http://localhost/aptly-repo/master_deb-multimedia-main bullseye/main amd64 vapoursynth-ffms2 amd64 1:2.40-dmo2 [14.9 kB]
 Get:123 http://localhost/aptly-repo/master_deb-multimedia-main bullseye/main amd64 vapoursynth amd64 54-dmo1 [815 kB]
 Get:124 http://localhost/aptly-repo/master_deb-multimedia-main bullseye/main amd64 mpv amd64 1:0.33.1-dmo2+deb11u1 [1,113 kB]
-Fetched 74.6 MB in 1s (105 MB/s)
+Fetched 74.6 MB in 1s (98.6 MB/s)
 E: Failed to fetch http://localhost/aptly-repo/master_bullseye-main/pool/main/d/djvulibre/libdjvulibre21_3.5.28-2_amd64.deb  Error reading from server - read (32: Broken pipe) [IP: ::1 80]
 E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
 './cld/bashrc.d/bashrc-alias-mpv.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-mpv.sh'
@@ -243,4 +243,4 @@ E: Unable to fetch some archives, maybe run apt-get update or try with --fix-mis
 CLDS: * Install Media Player: .
 CLDS: * Add multiple aliases for MPV.
 CLDS: * Add useful mpv keybindings settings.
-CLDS: * Disk size = 5444472K. Space Used = 73484K. Runtime = 00:00:00:05.
+CLDS: * Disk size = 5444416K. Space Used = 73356K. Runtime = 00:00:00:05.
