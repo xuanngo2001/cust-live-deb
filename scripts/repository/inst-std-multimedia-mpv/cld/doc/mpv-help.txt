@@ -63,3 +63,6 @@
     mpv --vo=x11 video.avi
     
 Well, it looks like it’s crashing in driver code. Try with a different opengl backend (e.g. --opengl-backend=dxinterop or --opengl-backend=win). Most likely not our bug, but ANGLE triggering undefined behavior in AMD’s drivers.
+
+# Play playlist from file with filtering.
+    mpv --start=00:00:47 --osd-level=3 --volume=50 --playlist <(cat img-dupes_00.27.txt | grep -v ^#)
