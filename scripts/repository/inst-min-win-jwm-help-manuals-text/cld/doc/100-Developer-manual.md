@@ -70,7 +70,8 @@ Register your own extension: http://stackoverflow.com/questions/30931/register-f
 
 1. Manually configure interactively first.
 1. Get the configuration values: `debconf-get-selections | grep "zfs" > zfs-dkms.seed`
-1. Feed the configuration values in your install script, before the install line: `debconf-set-selections -v zfs-dkms.seed`
+1. Remove unused 'select' from zfs-dkms.seed.
+1. Feed the configuration values in your install script, before the install line: `export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true; debconf-set-selections -v zfs-dkms.seed`
 
 ## Debug installation script
 

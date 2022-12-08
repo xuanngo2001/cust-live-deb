@@ -169,8 +169,13 @@ You will know that persistence is working when you executed `df` and see somethi
     tmpfs           1.5G     0  1.5G   0% /lib/live/mount/overlay
     /dev/sdb        2.4G  335M  2.0G  15% /lib/live/mount/persistence/sdb
     /dev/loop1      2.0G  285M  1.6G  16% /lib/live/mount/persistence/loop1
-  
-Note: Sometime, persistence image file is not recognized by `Cust-Live-Deb` due to bad format of your partition. You can remedy by reformatting: `mkfs.ext4 /dev/sdX`(Use different command for different filesystem).
+
+
+**NOTE**
+
+* Don't use **persistence** word as a LABEL for your partition. 
+* Sometime, persistence image file is not recognized by `Cust-Live-Deb` due to bad format of your partition. You can remedy this by reformatting it: `mkfs.ext4 -L LABEL /dev/sdX`(Use different command for different filesystem).
+
 
 ##  Disable persistence
 * Ensure there is no `persistence` image file on the root path of any partitions. Or,

@@ -3,11 +3,7 @@
   * Install ALSA sound.
   * Test sound: aplay /usr/share/sounds/alsa/*.
   * Add key bindings.
-<<<<<<< HEAD
-  * Disk size = 1808632K. Space Used = 11368K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 1694844K. Space Used = 11368K. Runtime = 00:00:00:01.
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 1686836K. Space Used = 11368K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 alsa-utils libasound2 libasound2-data libatopology2 libfftw3-single3

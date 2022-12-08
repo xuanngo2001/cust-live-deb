@@ -2,11 +2,7 @@
   * After this operation, 1,447 kB of additional disk space will be used.
   * Install universal-ctags.
   * Use this for VIM.
-<<<<<<< HEAD
-  * Disk size = 4070340K. Space Used = 1960K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 3950752K. Space Used = 1960K. Runtime = 00:00:00:01.
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 3948484K. Space Used = 1960K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libyaml-0-2 universal-ctags
