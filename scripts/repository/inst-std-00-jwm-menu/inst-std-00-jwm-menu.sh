@@ -10,5 +10,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Add default standard menus in JWM.
 	sed -i "/<JWM>/ r jwmrc-menus-standard.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
+# Add to CLD/
+	yes | cp -av ./cld  /usr/local
+
 # Log
 	echo "${GV_LOG} * Add default standard menus in JWM."

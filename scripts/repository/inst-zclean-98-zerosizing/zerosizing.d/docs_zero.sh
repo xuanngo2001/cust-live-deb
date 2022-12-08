@@ -14,8 +14,8 @@ zerosize() {
   fi
 } 
 
-  zerosize /usr/share/doc -type f -size +1c 
-  zerosize /usr/share/doc -type l 
+  zerosize /usr/share/doc -type f -size +1c -not \( -name "*.svg" -or -name "*.png" -or -name "*.jpg" \)
+  zerosize /usr/share/doc -type l -not \( -name "*.svg" -or -name "*.png" -or -name "*.jpg" \)
   
   zerosize /usr/share/man -type f -size +1c 
   zerosize /usr/share/man -type l 
