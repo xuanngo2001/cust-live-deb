@@ -9,15 +9,16 @@
 # Forward slash(/) means process the content after the slash.
 	
 # Copy all files, except files with size <= 0.
-	rsync -al --min-size=1 source destination
+	rsync -al --min-size=1  source destination
+    rsync -al --max-size=1mb source destination
 	
 # Run rsync twice to do post copy checksum(-c).
 	rsync -al   source destination
 	rsync -alcv source destination
 
 # Exclude.
-    rsync -a --exclude="test-*" --exclude="to-" source destination
-    rsync -a --exclude-from="your-exclude-file.txt" source destination
+    rsync -a --exclude="test-*" --exclude="more-exclude-patter" source destination
+    rsync -a --exclude-from="your-exclude-file.txt"             source destination
 
 # Include.
     rsync -a --include="test-*" --include="to-" source destination
@@ -26,3 +27,7 @@
 # Copy everything: rsync -aqxP 
     
 # Option: --checksum --progress --itemize-changes --stats --out-format='%i %n %M %l'
+
+# Merge 2 dir: Identifcal files are deleted from src/
+#   but old files in src/ will not deleted.
+    rsync -au --remove-source-files src/ dst
