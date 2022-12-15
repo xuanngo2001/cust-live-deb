@@ -36,3 +36,11 @@
     deb-src http://site.example.com/debian distribution component1 component2 component3
     deb [ arch=amd64,armel ] http://ftp.debian.org/debian jessie main
     deb file:/home/jason/debian stable main contrib non-free
+    
+# Copy keys list to $key.
+    keys=(EB3E94ADBE1229CF 648ACFD622F3D138 0E98404D386FA1D9)
+    gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ${keys[@]}
+
+    gpg --no-default-keyring -a --export ${keys[@]} \
+        | gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -
+    
