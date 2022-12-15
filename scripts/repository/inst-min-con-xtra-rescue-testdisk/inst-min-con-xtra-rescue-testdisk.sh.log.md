@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-rescue-testdisk.sh ...
   * After this operation, 1,460 kB of additional disk space will be used.
   * Install testdisk.
-<<<<<<< HEAD
-  * Disk size = 3940048K. Space Used = 1868K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 4062004K. Space Used = 1872K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 3948028K. Space Used = 1868K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 testdisk

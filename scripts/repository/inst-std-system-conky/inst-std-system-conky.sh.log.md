@@ -4,11 +4,7 @@
   * Add conky config file: .
   * Set conky to run on JWM startup.
   * Add on the fly settings to Conky.
-<<<<<<< HEAD
-  * Disk size = 5602128K. Space Used = 2448K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 5620340K. Space Used = 2448K. Runtime = 00:00:00:02.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 5610176K. Space Used = 2452K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 conky conky-std libiw30

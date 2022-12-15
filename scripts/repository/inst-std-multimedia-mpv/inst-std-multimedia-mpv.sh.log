@@ -19,13 +19,8 @@ Hit:17 http://localhost/aptly-repo/master_microsoft-main bullseye InRelease
 Hit:18 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
 Get:20 https://dl.google.com/linux/chrome/deb stable InRelease [1,811 B]
-<<<<<<< HEAD
 Get:21 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,093 B]
-Fetched 2,904 B in 1s (2,252 B/s)
-=======
-Get:21 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,090 B]
-Fetched 2,901 B in 2s (1,616 B/s)
->>>>>>> refs/remotes/origin/bullseye
+Fetched 2,904 B in 1s (2,415 B/s)
 Reading package lists...
 Hit:1 http://localhost/aptly-repo/master_bullseye-main bullseye InRelease
 Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
@@ -107,11 +102,7 @@ The following NEW packages will be installed:
   libx265-192 libx265-199 libxavs2-13 libxvidcore4 libzimg2 libzip4 libzmq5
   libzvbi-common libzvbi0 mpv ocl-icd-libopencl1 poppler-data vapoursynth
   vapoursynth-ffms2
-<<<<<<< HEAD
 0 upgraded, 124 newly installed, 0 to remove and 19 not upgraded.
-=======
-0 upgraded, 124 newly installed, 0 to remove and 20 not upgraded.
->>>>>>> refs/remotes/origin/bullseye
 Need to get 75.2 MB of archives.
 After this operation, 266 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 poppler-data all 0.4.10-1 [1,602 kB]
@@ -207,8 +198,6 @@ Get:90 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libd
 Get:91 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libde265-0 amd64 1.0.8-1 [242 kB]
 Get:92 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libdjvulibre-text all 3.5.28-2 [61.8 kB]
 Get:93 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libdjvulibre21 amd64 3.5.28-2 [591 kB]
-Err:93 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libdjvulibre21 amd64 3.5.28-2
-  Error reading from server - read (32: Broken pipe) [IP: ::1 80]
 Get:94 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libdvdread8 amd64 6.1.1-2 [89.3 kB]
 Get:95 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libdvdnav4 amd64 6.1.0-1+b1 [46.9 kB]
 Get:96 http://localhost/aptly-repo/master_deb-multimedia-main bullseye/main amd64 libffms2-4 amd64 1:2.40-dmo2 [83.4 kB]
@@ -240,11 +229,10 @@ Get:121 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 lib
 Get:122 http://localhost/aptly-repo/master_deb-multimedia-main bullseye/main amd64 vapoursynth-ffms2 amd64 1:2.40-dmo2 [14.9 kB]
 Get:123 http://localhost/aptly-repo/master_deb-multimedia-main bullseye/main amd64 vapoursynth amd64 54-dmo1 [815 kB]
 Get:124 http://localhost/aptly-repo/master_deb-multimedia-main bullseye/main amd64 mpv amd64 1:0.33.1-dmo2+deb11u1 [1,113 kB]
-<<<<<<< HEAD
 Preconfiguring packages ...
-Fetched 75.2 MB in 1s (93.4 MB/s)
+Fetched 75.2 MB in 1s (94.7 MB/s)
 Selecting previously unselected package poppler-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 87670 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 88036 files and directories currently installed.)
 Preparing to unpack .../000-poppler-data_0.4.10-1_all.deb ...
 Unpacking poppler-data (0.4.10-1) ...
 Selecting previously unselected package fonts-urw-base35.
@@ -747,27 +735,12 @@ Processing triggers for fontconfig (2.13.1-4.2) ...
 Processing triggers for desktop-file-utils (0.26-1) ...
 Processing triggers for hicolor-icon-theme (0.17-2) ...
 Processing triggers for libc-bin (2.31-13+deb11u4) ...
-=======
-Fetched 74.6 MB in 1s (98.6 MB/s)
-E: Failed to fetch http://localhost/aptly-repo/master_bullseye-main/pool/main/d/djvulibre/libdjvulibre21_3.5.28-2_amd64.deb  Error reading from server - read (32: Broken pipe) [IP: ::1 80]
-E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-'./cld/bashrc.d/bashrc-alias-mpv.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-mpv.sh'
->>>>>>> refs/remotes/origin/bullseye
 './cld/doc/mpv-help.txt' -> '/usr/local/cld/doc/mpv-help.txt'
 './cld/home/.config/mpv' -> '/usr/local/cld/home/.config/mpv'
 './cld/home/.config/mpv/mpv.conf' -> '/usr/local/cld/home/.config/mpv/mpv.conf'
-<<<<<<< HEAD
 './cld/home/.config/mpv/input.conf' -> '/usr/local/cld/home/.config/mpv/input.conf'
 './cld/bashrc.d/bashrc-alias-mpv.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-mpv.sh'
 CLDS: * Install Media Player: mpv 0.33.1 Copyright © 2000-2020 mpv/MPlayer/mplayer2 projects.
-=======
-/root/scripts/repository/inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh: line 21: mpv: command not found
-CLDS: * Install Media Player: .
->>>>>>> refs/remotes/origin/bullseye
 CLDS: * Add multiple aliases for MPV.
 CLDS: * Add useful mpv keybindings settings.
-<<<<<<< HEAD
-CLDS: * Disk size = 5587544K. Space Used = 337800K. Runtime = 00:00:00:12.
-=======
-CLDS: * Disk size = 5444416K. Space Used = 73356K. Runtime = 00:00:00:05.
->>>>>>> refs/remotes/origin/bullseye
+CLDS: * Disk size = 5595576K. Space Used = 337792K. Runtime = 00:00:00:13.
