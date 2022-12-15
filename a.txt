@@ -4,10 +4,9 @@ Error in log file: /media/master/github/cust-live-deb/logs/main.log
   E: Invalid archive member header
   E: Internal error, could not locate member control.tar{.zst,.lz4,.gz,.xz,.bz2,.lzma,}
   E: Prior errors apply to /var/cache/apt/archives/aptly_1.5.0_amd64.deb
-  E: Failed to fetch http://localhost/aptly-repo/master_bullseye-main/pool/main/d/djvulibre/libdjvulibre21_3.5.28-2_amd64.deb  Error reading from server - read (32: Broken pipe) [IP: ::1 80]
+  E: Failed to fetch http://localhost/aptly-repo/master_bullseye-main/pool/main/d/djvulibre/libdjvulibre21_3.5.28-2_amd64.deb  404  Not Found [IP: ::1 80]
   E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-  E: Package 'ffplay' has no installation candidate
-  CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
+  E: Unable to correct problems, you have held broken packages.
   E: Unable to correct problems, you have held broken packages.
   E: Sub-process /usr/bin/dpkg returned an error code (1)
   E: Sub-process /usr/bin/dpkg returned an error code (1)
@@ -63,14 +62,7 @@ The following packages will be REMOVED:
 ------------------
 qcheck-jwm-missing-icons.sh:
 
-Error: /usr/local/cld/app/jwm/jwmrc/icons/bomb-1F4A3.svg not found: ./scripts/repository/inst-min-win-01-wm-jwm/cld/app/jwm/jwmrc/jwmrc-menu-shutdown.xml
-Error: /usr/local/cld/app/jwm/jwmrc/icons/counterclockwise-1F504.svg not found: ./scripts/repository/inst-min-win-01-wm-jwm/cld/app/jwm/jwmrc/jwmrc-menu-shutdown.xml
-Error: /usr/local/cld/app/jwm/jwmrc/icons/briefcase-1F4BC.svg not found: ./scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml
-Error: /usr/local/cld/app/jwm/jwmrc/icons/globe-1F30E.svg not found: ./scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml
-Error: /usr/local/cld/app/jwm/jwmrc/icons/video-game-1F3AE.svg not found: ./scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-main.png not found: ./scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml
-Error: /usr/local/cld/app/jwm/jwmrc/icons/satellite-1F6F0.svg not found: ./scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml
-Error: /usr/local/cld/app/jwm/jwmrc/icons/gear-2699.svg not found: ./scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-base.png not found: ./scripts/repository/inst-std-office-libreoffice-base/jwmrc-menus-office-libreoffice-base.xml
 Error: /usr/share/pixmaps/gimp.xpm not found: ./scripts/repository/inst-std-graphic-gimp/jwmrc-menus-graphics-gimp.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png not found: ./scripts/repository/inst-std-office-libreoffice-writer/jwmrc-menus-office-libreoffice-writer.xml
@@ -112,7 +104,6 @@ qcheck-warning.sh:
 
 Warnings in log file: /media/master/github/cust-live-deb/logs/main.log
   Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
-  CLDS: * WARNING: Use this script only if backport repository doesn't work.
 
 ------------------
 qcheck-list-manual-packages.sh:
@@ -128,6 +119,7 @@ qcheck-list-manual-packages.sh:
 qcheck-temporary-fix-scripts.sh:
 
    ./inst-min-con-xtra-mariadb-server-fix/inst-min-con-xtra-mariadb-server-fix.sh
-   ./inst-std-multimedia-mpv-fix/inst-std-multimedia-mpv-fix.sh
+   ./zinst-std-multimedia-mpv-fix/inst-std-multimedia-mpv-fix.sh
+   ./inst-std-multimedia-mpv-fix2/inst-std-multimedia-mpv-fix.sh
 All scripts above should be removed or merged in the official installation script.
 

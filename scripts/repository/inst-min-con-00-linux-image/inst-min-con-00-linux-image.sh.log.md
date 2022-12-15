@@ -3,7 +3,7 @@
   * After this operation, 511 MB of additional disk space will be used.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
   * Installed Linux image: linux-image-6.0.0-0.deb11.2-amd64.
-  * Disk size = 1120516K. Space Used = 638612K. Runtime = 00:00:00:44.
+  * Disk size = 1120584K. Space Used = 638600K. Runtime = 00:00:00:45.
   * The following NEW packages will be installed:
   ```bash
 busybox dbus dialog firmware-linux-free initramfs-tools
