@@ -5,12 +5,16 @@
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
 <<<<<<< HEAD
+  * Disk size = 4236192K. Space Used = 4256K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
   * Disk size = 4350232K. Space Used = 4260K. Runtime = 00:00:00:03.
 =======
 <<<<<<< HEAD
   * Disk size = 4228208K. Space Used = 4260K. Runtime = 00:00:00:02.
 =======
   * Disk size = 4350168K. Space Used = 4260K. Runtime = 00:00:00:03.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

@@ -4,12 +4,16 @@
   * After this operation, 354 MB of additional disk space will be used.
   * Install docker-ce.
 <<<<<<< HEAD
+  * Disk size = 6546432K. Space Used = 441340K. Runtime = 00:00:00:48.
+=======
+<<<<<<< HEAD
   * Disk size = 6585932K. Space Used = 441356K. Runtime = 00:00:00:17.
 =======
 <<<<<<< HEAD
   * Disk size = 6538404K. Space Used = 441340K. Runtime = 00:00:00:41.
 =======
   * Disk size = 6585988K. Space Used = 441372K. Runtime = 00:00:00:18.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

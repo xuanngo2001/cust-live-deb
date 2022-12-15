@@ -4,12 +4,16 @@
   * Add locate alias.
   * Run updatedb to update the database.
 <<<<<<< HEAD
+  * Disk size = 3124816K. Space Used = 736K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
   * Disk size = 3238848K. Space Used = 736K. Runtime = 00:00:00:02.
 =======
 <<<<<<< HEAD
   * Disk size = 3116832K. Space Used = 736K. Runtime = 00:00:00:01.
 =======
   * Disk size = 3238788K. Space Used = 736K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

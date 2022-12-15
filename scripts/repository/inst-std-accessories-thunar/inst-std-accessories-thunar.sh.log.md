@@ -6,12 +6,16 @@
   * Install Thunar file manager.
   * Insert Thunar in Accessories menu.
 <<<<<<< HEAD
+  * Disk size = 4507436K. Space Used = 32920K. Runtime = 00:00:00:03.
+=======
+<<<<<<< HEAD
   * Disk size = 4621464K. Space Used = 32920K. Runtime = 00:00:00:06.
 =======
 <<<<<<< HEAD
   * Disk size = 4499396K. Space Used = 32920K. Runtime = 00:00:00:03.
 =======
   * Disk size = 4621396K. Space Used = 32920K. Runtime = 00:00:00:05.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

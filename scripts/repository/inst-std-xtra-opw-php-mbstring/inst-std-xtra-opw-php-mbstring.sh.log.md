@@ -2,12 +2,16 @@
   * After this operation, 1,757 kB of additional disk space will be used.
   * Install php-mbstring.
 <<<<<<< HEAD
+  * Disk size = 6095884K. Space Used = 2372K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
   * Disk size = 6135224K. Space Used = 2376K. Runtime = 00:00:00:02.
 =======
 <<<<<<< HEAD
   * Disk size = 6087860K. Space Used = 2372K. Runtime = 00:00:00:01.
 =======
   * Disk size = 6135268K. Space Used = 2376K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

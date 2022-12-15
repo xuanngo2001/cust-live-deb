@@ -4,12 +4,16 @@
   * Install Monitor Switcher: lxrandr.
   * Add lxrandr key binding.
 <<<<<<< HEAD
+  * Disk size = 5656328K. Space Used = 38080K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
   * Disk size = 5666648K. Space Used = 38068K. Runtime = 00:00:00:03.
 =======
 <<<<<<< HEAD
   * Disk size = 5648304K. Space Used = 38104K. Runtime = 00:00:00:02.
 =======
   * Disk size = 5666692K. Space Used = 38068K. Runtime = 00:00:00:03.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

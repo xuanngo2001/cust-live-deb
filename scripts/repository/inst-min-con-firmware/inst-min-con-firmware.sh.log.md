@@ -16,12 +16,16 @@
   * After this operation, 66.6 kB of additional disk space will be used.
   * Install firmwares.
 <<<<<<< HEAD
+  * Disk size = 1624124K. Space Used = 435628K. Runtime = 00:00:01:04.
+=======
+<<<<<<< HEAD
   * Disk size = 1745976K. Space Used = 435632K. Runtime = 00:00:01:33.
 =======
 <<<<<<< HEAD
   * Disk size = 1624008K. Space Used = 435620K. Runtime = 00:00:01:09.
 =======
   * Disk size = 1745912K. Space Used = 435632K. Runtime = 00:00:01:32.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

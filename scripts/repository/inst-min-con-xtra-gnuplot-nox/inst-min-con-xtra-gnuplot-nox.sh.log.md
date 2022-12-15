@@ -2,12 +2,16 @@
   * After this operation, 10.6 MB of additional disk space will be used.
   * Install gnuplot-nox.
 <<<<<<< HEAD
+  * Disk size = 3120568K. Space Used = 15480K. Runtime = 00:00:00:04.
+=======
+<<<<<<< HEAD
   * Disk size = 3234600K. Space Used = 15480K. Runtime = 00:00:00:05.
 =======
 <<<<<<< HEAD
   * Disk size = 3112584K. Space Used = 15480K. Runtime = 00:00:00:04.
 =======
   * Disk size = 3234540K. Space Used = 15480K. Runtime = 00:00:00:05.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

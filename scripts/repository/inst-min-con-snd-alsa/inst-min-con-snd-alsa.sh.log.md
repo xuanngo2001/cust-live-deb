@@ -4,12 +4,16 @@
   * Test sound: aplay /usr/share/sounds/alsa/*.
   * Add key bindings.
 <<<<<<< HEAD
+  * Disk size = 1686988K. Space Used = 11368K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
   * Disk size = 1808804K. Space Used = 11368K. Runtime = 00:00:00:01.
 =======
 <<<<<<< HEAD
   * Disk size = 1686836K. Space Used = 11368K. Runtime = 00:00:00:01.
 =======
   * Disk size = 1808740K. Space Used = 11368K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

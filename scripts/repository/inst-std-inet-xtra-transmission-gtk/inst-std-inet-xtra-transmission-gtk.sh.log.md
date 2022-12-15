@@ -3,12 +3,16 @@
   * Install transmission-gtk.
   * Insert transmission-gtk in Internet menu.
 <<<<<<< HEAD
+  * Disk size = 5257776K. Space Used = 4440K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
   * Disk size = 5371124K. Space Used = 4440K. Runtime = 00:00:00:02.
 =======
 <<<<<<< HEAD
   * Disk size = 5249736K. Space Used = 4436K. Runtime = 00:00:00:01.
 =======
   * Disk size = 5371056K. Space Used = 4440K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

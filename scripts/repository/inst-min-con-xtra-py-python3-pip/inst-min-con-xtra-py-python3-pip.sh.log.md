@@ -2,12 +2,16 @@
   * After this operation, 5,895 kB of additional disk space will be used.
   * Install python3-pip.
 <<<<<<< HEAD
+  * Disk size = 3946160K. Space Used = 12600K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
   * Disk size = 4060188K. Space Used = 12588K. Runtime = 00:00:00:03.
 =======
 <<<<<<< HEAD
   * Disk size = 3938180K. Space Used = 12600K. Runtime = 00:00:00:02.
 =======
   * Disk size = 4060132K. Space Used = 12592K. Runtime = 00:00:00:04.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

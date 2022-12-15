@@ -4,12 +4,16 @@
   * Insert PrintScreen key binding.
   * By default, screenshots are saved under ~/Pictures/.
 <<<<<<< HEAD
+  * Disk size = 4464364K. Space Used = 3968K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
   * Disk size = 4578396K. Space Used = 3972K. Runtime = 00:00:00:02.
 =======
 <<<<<<< HEAD
   * Disk size = 4456328K. Space Used = 3972K. Runtime = 00:00:00:01.
 =======
   * Disk size = 4578328K. Space Used = 3972K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

@@ -1,12 +1,16 @@
 * >>>>>>>>> Running inst-std-inet-xtra-browser-plugin-downloadhelper-coapp.sh ...
   * After this operation, 4,688 kB of additional disk space will be used.
 <<<<<<< HEAD
+  * Disk size = 4833556K. Space Used = 6148K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
   * Disk size = 4947576K. Space Used = 6140K. Runtime = 00:00:00:02.
 =======
 <<<<<<< HEAD
   * Disk size = 4825520K. Space Used = 6148K. Runtime = 00:00:00:01.
 =======
   * Disk size = 4947508K. Space Used = 6140K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

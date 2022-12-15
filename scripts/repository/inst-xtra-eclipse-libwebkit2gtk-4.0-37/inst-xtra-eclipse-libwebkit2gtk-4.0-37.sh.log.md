@@ -3,12 +3,16 @@
   * Install libwebkit2gtk-4.0-37.
   * To be able to render *.md files.
 <<<<<<< HEAD
+  * Disk size = 6679872K. Space Used = 133440K. Runtime = 00:00:00:04.
+=======
+<<<<<<< HEAD
   * Disk size = 6719376K. Space Used = 133444K. Runtime = 00:00:00:07.
 =======
 <<<<<<< HEAD
   * Disk size = 6671836K. Space Used = 133432K. Runtime = 00:00:00:04.
 =======
   * Disk size = 6719428K. Space Used = 133440K. Runtime = 00:00:00:07.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

@@ -4,12 +4,16 @@
   * Set left-click to display volume slider: lmb_slider=true.
   * Set volumeicon to run on JWN startup.
 <<<<<<< HEAD
+  * Disk size = 4348408K. Space Used = 724K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
   * Disk size = 4462428K. Space Used = 728K. Runtime = 00:00:00:01.
 =======
 <<<<<<< HEAD
   * Disk size = 4340400K. Space Used = 724K. Runtime = 00:00:00:01.
 =======
   * Disk size = 4462364K. Space Used = 728K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

@@ -3,12 +3,16 @@
   * Install xorriso.
   * Install xorriso to create isohybrid.
 <<<<<<< HEAD
+  * Disk size = 1628524K. Space Used = 3516K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
   * Disk size = 1750376K. Space Used = 3516K. Runtime = 00:00:00:01.
 =======
 <<<<<<< HEAD
   * Disk size = 1628408K. Space Used = 3516K. Runtime = 00:00:00:00.
 =======
   * Disk size = 1750312K. Space Used = 3516K. Runtime = 00:00:00:00.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

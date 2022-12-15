@@ -4,12 +4,16 @@
   * Insert gpicview in Accessories menu.
   * Add alias viewpic='gpicview'.
 <<<<<<< HEAD
+  * Disk size = 4460396K. Space Used = 11064K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
   * Disk size = 4574424K. Space Used = 11060K. Runtime = 00:00:00:02.
 =======
 <<<<<<< HEAD
   * Disk size = 4452356K. Space Used = 11060K. Runtime = 00:00:00:01.
 =======
   * Disk size = 4574356K. Space Used = 11060K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

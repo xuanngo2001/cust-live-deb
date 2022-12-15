@@ -2,12 +2,16 @@
   * After this operation, 51.2 kB of additional disk space will be used.
   * Install rename.
 <<<<<<< HEAD
+  * Disk size = 1675620K. Space Used = 112K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
   * Disk size = 1797436K. Space Used = 112K. Runtime = 00:00:00:01.
 =======
 <<<<<<< HEAD
   * Disk size = 1675468K. Space Used = 112K. Runtime = 00:00:00:00.
 =======
   * Disk size = 1797372K. Space Used = 112K. Runtime = 00:00:00:00.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

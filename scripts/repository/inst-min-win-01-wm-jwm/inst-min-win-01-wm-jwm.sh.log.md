@@ -4,12 +4,16 @@
   * Set .
   * Change X window manager: update-alternatives --config x-window-manager
 <<<<<<< HEAD
+  * Disk size = 4344672K. Space Used = 108476K. Runtime = 00:00:00:06.
+=======
+<<<<<<< HEAD
   * Disk size = 4458688K. Space Used = 108452K. Runtime = 00:00:00:11.
 =======
 <<<<<<< HEAD
   * Disk size = 4336672K. Space Used = 108460K. Runtime = 00:00:00:06.
 =======
   * Disk size = 4458624K. Space Used = 108452K. Runtime = 00:00:00:11.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

@@ -3,12 +3,16 @@
   * Install remmina.
   * Need to remote desktop MS Windows machines.
 <<<<<<< HEAD
+  * Disk size = 6809928K. Space Used = 9992K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
   * Disk size = 6849420K. Space Used = 9984K. Runtime = 00:00:00:04.
 =======
 <<<<<<< HEAD
   * Disk size = 6801896K. Space Used = 9996K. Runtime = 00:00:00:02.
 =======
   * Disk size = 6849476K. Space Used = 9984K. Runtime = 00:00:00:04.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

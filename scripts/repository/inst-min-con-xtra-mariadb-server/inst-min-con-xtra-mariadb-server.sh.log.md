@@ -3,12 +3,16 @@
   * Install mariadb-server.
   * Set root password to [password].
 <<<<<<< HEAD
+  * Disk size = 3489452K. Space Used = 363732K. Runtime = 00:00:00:05.
+=======
+<<<<<<< HEAD
   * Disk size = 3603484K. Space Used = 363736K. Runtime = 00:00:00:08.
 =======
 <<<<<<< HEAD
   * Disk size = 3481472K. Space Used = 363736K. Runtime = 00:00:00:05.
 =======
   * Disk size = 3603424K. Space Used = 363736K. Runtime = 00:00:00:09.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

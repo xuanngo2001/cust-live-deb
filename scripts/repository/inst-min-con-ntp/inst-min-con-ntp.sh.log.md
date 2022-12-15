@@ -2,12 +2,16 @@
   * After this operation, 2,341 kB of additional disk space will be used.
   * Install Network Time Protocol: ntp.
 <<<<<<< HEAD
+  * Disk size = 1666600K. Space Used = 3268K. Runtime = 00:00:00:00.
+=======
+<<<<<<< HEAD
   * Disk size = 1788408K. Space Used = 3268K. Runtime = 00:00:00:01.
 =======
 <<<<<<< HEAD
   * Disk size = 1666448K. Space Used = 3268K. Runtime = 00:00:00:01.
 =======
   * Disk size = 1788344K. Space Used = 3268K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

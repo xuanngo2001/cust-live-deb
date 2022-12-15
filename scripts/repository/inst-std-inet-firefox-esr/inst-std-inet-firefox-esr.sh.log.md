@@ -6,12 +6,16 @@
   * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/.
   * Supported browsers by flashplugin-nonfree: https://wiki.debian.org/FlashPlayer.
 <<<<<<< HEAD
+  * Disk size = 4827408K. Space Used = 273604K. Runtime = 00:00:00:05.
+=======
+<<<<<<< HEAD
   * Disk size = 4941436K. Space Used = 273596K. Runtime = 00:00:00:06.
 =======
 <<<<<<< HEAD
   * Disk size = 4819372K. Space Used = 273604K. Runtime = 00:00:00:05.
 =======
   * Disk size = 4941368K. Space Used = 273596K. Runtime = 00:00:00:07.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

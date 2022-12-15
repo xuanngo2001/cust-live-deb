@@ -2,12 +2,16 @@
   * After this operation, 27.6 MB of additional disk space will be used.
   * Install nmap.
 <<<<<<< HEAD
+  * Disk size = 3796380K. Space Used = 34284K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
   * Disk size = 3910412K. Space Used = 34280K. Runtime = 00:00:00:03.
 =======
 <<<<<<< HEAD
   * Disk size = 3788400K. Space Used = 34284K. Runtime = 00:00:00:01.
 =======
   * Disk size = 3910352K. Space Used = 34280K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

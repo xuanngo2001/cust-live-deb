@@ -5,12 +5,16 @@
   * Overwrite gtk calendar style: home/.config/gtk-3.0/gtk.css.
   * Overwrite gsimplecal configuration: home/.config/gsimplecal/config.
 <<<<<<< HEAD
+  * Disk size = 5656480K. Space Used = 148K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
   * Disk size = 5666800K. Space Used = 148K. Runtime = 00:00:00:02.
 =======
 <<<<<<< HEAD
   * Disk size = 5648456K. Space Used = 148K. Runtime = 00:00:00:01.
 =======
   * Disk size = 5666844K. Space Used = 148K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

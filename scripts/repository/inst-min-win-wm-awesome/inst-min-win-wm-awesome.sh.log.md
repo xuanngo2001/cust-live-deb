@@ -3,12 +3,16 @@
   * Install awesome.
   * Change X window manager: update-alternatives --config x-window-manager
 <<<<<<< HEAD
+  * Disk size = 4359936K. Space Used = 11528K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
   * Disk size = 4473968K. Space Used = 11540K. Runtime = 00:00:00:03.
 =======
 <<<<<<< HEAD
   * Disk size = 4351928K. Space Used = 11528K. Runtime = 00:00:00:01.
 =======
   * Disk size = 4473904K. Space Used = 11540K. Runtime = 00:00:00:03.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:

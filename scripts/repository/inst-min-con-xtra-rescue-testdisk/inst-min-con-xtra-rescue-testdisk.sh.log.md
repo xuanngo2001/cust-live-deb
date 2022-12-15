@@ -2,12 +2,16 @@
   * After this operation, 1,460 kB of additional disk space will be used.
   * Install testdisk.
 <<<<<<< HEAD
+  * Disk size = 3948028K. Space Used = 1868K. Runtime = 00:00:00:00.
+=======
+<<<<<<< HEAD
   * Disk size = 4062060K. Space Used = 1872K. Runtime = 00:00:00:01.
 =======
 <<<<<<< HEAD
   * Disk size = 3940048K. Space Used = 1868K. Runtime = 00:00:00:01.
 =======
   * Disk size = 4062004K. Space Used = 1872K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
 >>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
