@@ -25,6 +25,14 @@ Suggested packages:
 Recommended packages:
   libaacs0 va-driver-all | va-driver vdpau-driver-all | vdpau-driver
 The following NEW packages will be installed:
+<<<<<<< HEAD
+  ffmpeg
+0 upgraded, 1 newly installed, 0 to remove and 19 not upgraded.
+Need to get 1,725 kB of archives.
+After this operation, 2,296 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_deb-multimedia-main bullseye/main amd64 ffmpeg amd64 10:4.4.3-dmo0+deb11u3 [1,725 kB]
+Fetched 1,725 kB in 0s (34.9 MB/s)
+=======
   ffmpeg libaom3 libarchive13 libaribb24-0 libass9 libavc1394-0 libavcodec58
   libavdevice58 libavfilter7 libavformat58 libavresample4 libavutil56
   libbluray2 libbs2b0 libcaca0 libcdio-cdda2 libcdio-paranoia2 libcdio19
@@ -301,8 +309,14 @@ Unpacking libopenal1:amd64 (1:1.19.1-2) ...
 Selecting previously unselected package libavdevice58:amd64.
 Preparing to unpack .../84-libavdevice58_10%3a4.4.3-dmo0+deb11u3_amd64.deb ...
 Unpacking libavdevice58:amd64 (10:4.4.3-dmo0+deb11u3) ...
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package ffmpeg.
+<<<<<<< HEAD
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89923 files and directories currently installed.)
+Preparing to unpack .../ffmpeg_10%3a4.4.3-dmo0+deb11u3_amd64.deb ...
+=======
 Preparing to unpack .../85-ffmpeg_10%3a4.4.3-dmo0+deb11u3_amd64.deb ...
+>>>>>>> refs/remotes/origin/bullseye
 Unpacking ffmpeg (10:4.4.3-dmo0+deb11u3) ...
 Setting up libgme0:amd64 (0.6.3-2) ...
 Setting up libfdk-aac2:amd64 (1:2.0.2-dmo2) ...
@@ -390,21 +404,34 @@ Setting up libavformat58:amd64 (10:4.4.3-dmo0+deb11u3) ...
 Setting up libavfilter7:amd64 (10:4.4.3-dmo0+deb11u3) ...
 Setting up libavdevice58:amd64 (10:4.4.3-dmo0+deb11u3) ...
 Setting up ffmpeg (10:4.4.3-dmo0+deb11u3) ...
+<<<<<<< HEAD
+'./cld/doc/ffmpeg-crop-help.txt' -> '/usr/local/cld/doc/ffmpeg-crop-help.txt'
+=======
 Processing triggers for libc-bin (2.31-13+deb11u4) ...
 './cld/doc/crop.sh' -> '/usr/local/cld/doc/crop.sh'
 './cld/doc/ffmpeg-360-help.txt' -> '/usr/local/cld/doc/ffmpeg-360-help.txt'
+>>>>>>> refs/remotes/origin/bullseye
 './cld/doc/ffmpeg-box-help.txt' -> '/usr/local/cld/doc/ffmpeg-box-help.txt'
+'./cld/doc/ffmpeg-help.txt' -> '/usr/local/cld/doc/ffmpeg-help.txt'
 './cld/doc/ffmpeg-capture-help.txt' -> '/usr/local/cld/doc/ffmpeg-capture-help.txt'
 './cld/doc/ffmpeg-cat-help.txt' -> '/usr/local/cld/doc/ffmpeg-cat-help.txt'
-'./cld/doc/ffmpeg-crop-help.txt' -> '/usr/local/cld/doc/ffmpeg-crop-help.txt'
-'./cld/doc/ffmpeg-error-help.txt' -> '/usr/local/cld/doc/ffmpeg-error-help.txt'
+'./cld/doc/ffprobe-help.txt' -> '/usr/local/cld/doc/ffprobe-help.txt'
+'./cld/doc/ffmpeg-split-help.txt' -> '/usr/local/cld/doc/ffmpeg-split-help.txt'
+'./cld/doc/ffplay-help.txt' -> '/usr/local/cld/doc/ffplay-help.txt'
 './cld/doc/ffmpeg-gif-help.txt' -> '/usr/local/cld/doc/ffmpeg-gif-help.txt'
-'./cld/doc/ffmpeg-help.txt' -> '/usr/local/cld/doc/ffmpeg-help.txt'
 './cld/doc/ffmpeg-overlay-help.txt' -> '/usr/local/cld/doc/ffmpeg-overlay-help.txt'
 './cld/doc/ffmpeg-slide-help.txt' -> '/usr/local/cld/doc/ffmpeg-slide-help.txt'
-'./cld/doc/ffmpeg-split-help.txt' -> '/usr/local/cld/doc/ffmpeg-split-help.txt'
+'./cld/doc/ffmpeg-360-help.txt' -> '/usr/local/cld/doc/ffmpeg-360-help.txt'
+'./cld/doc/crop.sh' -> '/usr/local/cld/doc/crop.sh'
+'./cld/doc/ffmpeg-error-help.txt' -> '/usr/local/cld/doc/ffmpeg-error-help.txt'
 './cld/doc/ffmpeg-sub-help.txt' -> '/usr/local/cld/doc/ffmpeg-sub-help.txt'
-'./cld/doc/ffplay-help.txt' -> '/usr/local/cld/doc/ffplay-help.txt'
-'./cld/doc/ffprobe-help.txt' -> '/usr/local/cld/doc/ffprobe-help.txt'
 CLDS: * Install ffmpeg.
+<<<<<<< HEAD
 CLDS: * Disk size = 5609784K. Space Used = 165404K. Runtime = 00:00:00:10.
+=======
+<<<<<<< HEAD
+CLDS: * Disk size = 5591624K. Space Used = 4072K. Runtime = 00:00:00:01.
+=======
+CLDS: * Disk size = 5609828K. Space Used = 165404K. Runtime = 00:00:00:12.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
