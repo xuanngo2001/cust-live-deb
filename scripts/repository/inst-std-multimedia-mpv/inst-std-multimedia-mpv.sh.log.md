@@ -3,7 +3,19 @@
   * Install Media Player: mpv 0.33.1 Copyright © 2000-2020 mpv/MPlayer/mplayer2 projects.
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
+<<<<<<< HEAD
   * Disk size = 5595576K. Space Used = 337792K. Runtime = 00:00:00:13.
+=======
+<<<<<<< HEAD
+  * Disk size = 5444380K. Space Used = 73252K. Runtime = 00:00:00:06.
+=======
+<<<<<<< HEAD
+  * Disk size = 5587544K. Space Used = 337800K. Runtime = 00:00:00:12.
+=======
+  * Disk size = 5444416K. Space Used = 73356K. Runtime = 00:00:00:05.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 fonts-urw-base35 imagemagick-7-common libaom0 libaom3 libarchive13

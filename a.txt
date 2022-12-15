@@ -4,8 +4,14 @@ Error in log file: /media/master/github/cust-live-deb/logs/main.log
   E: Invalid archive member header
   E: Internal error, could not locate member control.tar{.zst,.lz4,.gz,.xz,.bz2,.lzma,}
   E: Prior errors apply to /var/cache/apt/archives/aptly_1.5.0_amd64.deb
+<<<<<<< HEAD
   E: Unable to correct problems, you have held broken packages.
   E: Package 'ffplay' has no installation candidate
+=======
+  E: Failed to fetch http://localhost/aptly-repo/master_bullseye-main/pool/main/d/djvulibre/libdjvulibre21_3.5.28-2_amd64.deb  404  Not Found [IP: ::1 80]
+  E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+  E: Unable to correct problems, you have held broken packages.
+>>>>>>> refs/remotes/origin/bullseye
   E: Unable to correct problems, you have held broken packages.
   E: Unable to correct problems, you have held broken packages.
   E: Unable to correct problems, you have held broken packages.
@@ -60,6 +66,13 @@ The following packages will be REMOVED:
 ------------------
 qcheck-jwm-missing-icons.sh:
 
+<<<<<<< HEAD
+=======
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-main.png not found: ./scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-base.png not found: ./scripts/repository/inst-std-office-libreoffice-base/jwmrc-menus-office-libreoffice-base.xml
+Error: /usr/share/pixmaps/gimp.xpm not found: ./scripts/repository/inst-std-graphic-gimp/jwmrc-menus-graphics-gimp.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png not found: ./scripts/repository/inst-std-office-libreoffice-writer/jwmrc-menus-office-libreoffice-writer.xml
+>>>>>>> refs/remotes/origin/bullseye
 Error: /usr/local/cld/app/cheese/icon/webcam.png not found: ./scripts/repository/inst-std-graphic-xtra-cheese/jwmrc-menus-graphics-cheese.xml
 Error: /usr/share/pixmaps/gimp.xpm not found: ./scripts/repository/inst-std-graphic-gimp/jwmrc-menus-graphics-gimp.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-draw.png not found: ./scripts/repository/inst-std-office-libreoffice-draw/jwmrc-menus-office-libreoffice-draw.xml
@@ -117,5 +130,9 @@ qcheck-temporary-fix-scripts.sh:
 
    ./inst-min-con-xtra-mariadb-server-fix/inst-min-con-xtra-mariadb-server-fix.sh
    ./zinst-std-multimedia-mpv-fix/inst-std-multimedia-mpv-fix.sh
+<<<<<<< HEAD
+=======
+   ./inst-std-multimedia-mpv-fix2/inst-std-multimedia-mpv-fix.sh
+>>>>>>> refs/remotes/origin/bullseye
 All scripts above should be removed or merged in the official installation script.
 
