@@ -7,7 +7,11 @@
   * Install xserver-xorg-video-intel to fix: cat /var/log/Xorg.0.log
   * 		Failed to initialize glamor at ScreenInit() time.
   * 		Boot from virtualbox is working fine but boot from HP, X server not loaded.
+<<<<<<< HEAD
   * Disk size = 4235372K. Space Used = 227984K. Runtime = 00:00:00:07.
+=======
+  * Disk size = 4346400K. Space Used = 227988K. Runtime = 00:00:00:12.
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 keyboard-configuration libdrm2 libdrm-amdgpu1 libdrm-common libdrm-intel1
