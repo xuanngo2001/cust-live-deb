@@ -17,9 +17,5 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&\
 	apt-get install -y nodejs
 
-#	curl -sL https://deb.nodesource.com/setup_12.x | bash -
-#	apt-get install -y nodejs
-
-
 # Log
 	echo "${GV_LOG} * Install nodejs."

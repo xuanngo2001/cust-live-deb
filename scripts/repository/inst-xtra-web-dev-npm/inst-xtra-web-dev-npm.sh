@@ -7,10 +7,13 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly list dependent packages
-	apt-get install -s -y node-cacache 
-	apt-get install -s -y node-cli-table3
-	apt-get install -s -y node-got
-	apt-get install -s -y node-negotiator
+#	apt-get install -s -y <your-package> 
 
+# Install npm.
+	apt-get -y install npm
+
+# Update to the latest version.
+	npm install npm@latest -g
+	
 # Log
-	echo "${GV_LOG} * Bullseye: 2022-12-16: Add required packages."
+	echo "${GV_LOG} * Install npm."

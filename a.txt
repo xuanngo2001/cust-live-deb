@@ -5,7 +5,6 @@ Error in log file: /media/master/github/cust-live-deb/logs/main.log
   E: Internal error, could not locate member control.tar{.zst,.lz4,.gz,.xz,.bz2,.lzma,}
   E: Prior errors apply to /var/cache/apt/archives/aptly_1.5.0_amd64.deb
   E: Unable to correct problems, you have held broken packages.
-  E: Package 'node-cli-table3' has no installation candidate
 
 ------------------
 qcheck-command-not-found.sh:
@@ -110,7 +109,7 @@ qcheck-list-manual-packages.sh:
 qcheck-temporary-fix-scripts.sh:
 
    ./inst-min-con-xtra-mariadb-server-fix/inst-min-con-xtra-mariadb-server-fix.sh
+   ./zinst-xtra-web-dev-npm-fix/inst-xtra-web-dev-npm-fix.sh
    ./zinst-std-multimedia-mpv-fix/inst-std-multimedia-mpv-fix.sh
-   ./inst-xtra-web-dev-npm-fix/inst-xtra-web-dev-npm-fix.sh
 All scripts above should be removed or merged in the official installation script.
 
