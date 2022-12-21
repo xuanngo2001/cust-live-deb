@@ -1,15 +1,7 @@
 * >>>>>>>>> Running inst-min-con-filesystem-hfsprogs.sh ...
   * After this operation, 398 kB of additional disk space will be used.
   * Install hfsprogs.
-<<<<<<< HEAD
-  * Disk size = 1254624K. Space Used = 588K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 1132852K. Space Used = 576K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 1255036K. Space Used = 584K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1255004K. Space Used = 584K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 hfsprogs
