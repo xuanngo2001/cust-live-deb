@@ -1,3 +1,7 @@
 * >>>>>>>>> Running inst-min-win-jwm-help-manuals-text.sh ...
   * Add user & developer manuals(text) in Help menu.
+<<<<<<< HEAD
   * Disk size = 4460752K. Space Used = 60K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 4347012K. Space Used = 60K. Runtime = 00:00:00:00.
+>>>>>>> refs/remotes/origin/bullseye

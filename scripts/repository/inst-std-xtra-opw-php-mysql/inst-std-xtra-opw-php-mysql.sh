@@ -11,7 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	apt-get -y install php-mysql
 
 # Enable mod_rewrite module.
-	a2enmod rewrite
+	# a2enmod rewrite
 
 # Log
 	echo "${GV_LOG} * Install php-mysql to enable the PDO_MYSQL database driver for PHP and to run Drupal."

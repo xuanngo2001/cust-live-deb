@@ -7,4 +7,4 @@ green=$(tput setaf 2)
 white=$(tput setaf 7)
 reset=$(tput sgr0)
 bold=$(tput bold)
-export PS1="\[$green\]-----=[$(date +%Y-%m-%d) \t @\[$red\]\u\[$green\]]=-----\[$reset\]\n\w>"
+export PS1="\[$bold\]\[$green\]-----=[$(date +%Y-%m-%d) \t @\[$red\]\u\[$green\]]=-----\[$reset\]\n\w>"

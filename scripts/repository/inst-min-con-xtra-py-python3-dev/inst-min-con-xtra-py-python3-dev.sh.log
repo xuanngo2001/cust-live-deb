@@ -3,25 +3,23 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libc-dev-bin libc6 libc6-dev libcrypt-dev libexpat1-dev libjs-jquery
+  libc-dev-bin libc6-dev libcrypt-dev libexpat1-dev libjs-jquery
   libjs-sphinxdoc libjs-underscore libnsl-dev libpython3-dev libpython3.9
   libpython3.9-dev libtirpc-dev linux-libc-dev python3-distutils
   python3-lib2to3 python3.9-dev zlib1g-dev
 Suggested packages:
   glibc-doc manpages-dev
 Recommended packages:
-  manpages manpages-dev libc-devtools libnss-nis libnss-nisplus
-  javascript-common
+  manpages manpages-dev libc-devtools javascript-common
 The following NEW packages will be installed:
   libc-dev-bin libc6-dev libcrypt-dev libexpat1-dev libjs-jquery
   libjs-sphinxdoc libjs-underscore libnsl-dev libpython3-dev libpython3.9
   libpython3.9-dev libtirpc-dev linux-libc-dev python3-dev python3-distutils
   python3-lib2to3 python3.9-dev zlib1g-dev
-The following packages will be upgraded:
-  libc6
-1 upgraded, 18 newly installed, 0 to remove and 19 not upgraded.
-Need to get 14.9 MB of archives.
+0 upgraded, 18 newly installed, 0 to remove and 17 not upgraded.
+Need to get 12.0 MB of archives.
 After this operation, 53.8 MB of additional disk space will be used.
+<<<<<<< HEAD
 Get:1 http://localhost/aptly-repo/master_bullseye-updates-main bullseye-updates/main amd64 libc6 amd64 2.31-13+deb11u5 [2,825 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-updates-main bullseye-updates/main amd64 libc-dev-bin amd64 2.31-13+deb11u5 [276 kB]
 Get:3 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 linux-libc-dev amd64 6.0.3-1~bpo11+1 [1,673 kB]
@@ -47,8 +45,33 @@ Fetched 14.9 MB in 0s (97.5 MB/s)
 Preparing to unpack .../libc6_2.31-13+deb11u5_amd64.deb ...
 Unpacking libc6:amd64 (2.31-13+deb11u5) over (2.31-13+deb11u4) ...
 Setting up libc6:amd64 (2.31-13+deb11u5) ...
+=======
+Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libc-dev-bin amd64 2.31-13+deb11u5 [276 kB]
+Get:2 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 linux-libc-dev amd64 6.0.3-1~bpo11+1 [1,673 kB]
+Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libcrypt-dev amd64 1:4.4.18-4 [104 kB]
+Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libtirpc-dev amd64 1.3.1-1+deb11u1 [191 kB]
+Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libnsl-dev amd64 1.3.0-2 [66.4 kB]
+Get:6 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libc6-dev amd64 2.31-13+deb11u5 [2,359 kB]
+Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libexpat1-dev amd64 2.2.10-2+deb11u5 [141 kB]
+Get:8 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libjs-jquery all 3.5.1+dfsg+~3.5.5-7 [315 kB]
+Get:9 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libjs-underscore all 1.9.1~dfsg-3 [100 kB]
+Get:10 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libjs-sphinxdoc all 3.4.3-2 [127 kB]
+Get:11 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpython3.9 amd64 3.9.2-1 [1,691 kB]
+Get:12 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpython3.9-dev amd64 3.9.2-1 [4,028 kB]
+Get:13 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpython3-dev amd64 3.9.2-3 [21.7 kB]
+Get:14 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2+deb11u2 [191 kB]
+Get:15 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3.9-dev amd64 3.9.2-1 [515 kB]
+Get:16 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-lib2to3 all 3.9.2-1 [77.8 kB]
+Get:17 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-distutils all 3.9.2-1 [143 kB]
+Get:18 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-dev amd64 3.9.2-3 [24.8 kB]
+Fetched 12.0 MB in 0s (74.5 MB/s)
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package libc-dev-bin.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63969 files and directories currently installed.)
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64498 files and directories currently installed.)
+>>>>>>> refs/remotes/origin/bullseye
 Preparing to unpack .../00-libc-dev-bin_2.31-13+deb11u5_amd64.deb ...
 Unpacking libc-dev-bin (2.31-13+deb11u5) ...
 Selecting previously unselected package linux-libc-dev:amd64.
@@ -67,8 +90,8 @@ Selecting previously unselected package libc6-dev:amd64.
 Preparing to unpack .../05-libc6-dev_2.31-13+deb11u5_amd64.deb ...
 Unpacking libc6-dev:amd64 (2.31-13+deb11u5) ...
 Selecting previously unselected package libexpat1-dev:amd64.
-Preparing to unpack .../06-libexpat1-dev_2.2.10-2+deb11u3_amd64.deb ...
-Unpacking libexpat1-dev:amd64 (2.2.10-2+deb11u3) ...
+Preparing to unpack .../06-libexpat1-dev_2.2.10-2+deb11u5_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.2.10-2+deb11u5) ...
 Selecting previously unselected package libjs-jquery.
 Preparing to unpack .../07-libjs-jquery_3.5.1+dfsg+~3.5.5-7_all.deb ...
 Unpacking libjs-jquery (3.5.1+dfsg+~3.5.5-7) ...
@@ -114,13 +137,17 @@ Setting up libjs-underscore (1.9.1~dfsg-3) ...
 Setting up python3-distutils (3.9.2-1) ...
 Setting up libjs-sphinxdoc (3.4.3-2) ...
 Setting up libc6-dev:amd64 (2.31-13+deb11u5) ...
-Setting up libexpat1-dev:amd64 (2.2.10-2+deb11u3) ...
+Setting up libexpat1-dev:amd64 (2.2.10-2+deb11u5) ...
 Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2+deb11u2) ...
 Setting up libpython3.9-dev:amd64 (3.9.2-1) ...
 Setting up python3.9-dev (3.9.2-1) ...
 Setting up libpython3-dev:amd64 (3.9.2-3) ...
 Setting up python3-dev (3.9.2-3) ...
-Processing triggers for libc-bin (2.31-13+deb11u4) ...
+Processing triggers for libc-bin (2.31-13+deb11u5) ...
 CLDS: * Install python3-dev.
 CLDS: * Require for: tulipy
+<<<<<<< HEAD
 CLDS: * Disk size = 4048016K. Space Used = 72348K. Runtime = 00:00:00:05.
+=======
+CLDS: * Disk size = 3934244K. Space Used = 69544K. Runtime = 00:00:00:03.
+>>>>>>> refs/remotes/origin/bullseye

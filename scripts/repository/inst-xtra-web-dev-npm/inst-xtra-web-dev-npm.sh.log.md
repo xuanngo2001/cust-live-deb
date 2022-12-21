@@ -1,4 +1,5 @@
 * >>>>>>>>> Running inst-xtra-web-dev-npm.sh ...
+<<<<<<< HEAD
   * Disk size = 7322524K. Space Used = 12K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
@@ -11,3 +12,6 @@ node-once node-path-is-absolute node-p-map node-promise-inflight node-rimraf
 node-run-queue node-semver node-ssri node-unique-filename node-wrappy
 node-yallist
   ```
+=======
+  * Disk size = 7299192K. Space Used = 12K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
