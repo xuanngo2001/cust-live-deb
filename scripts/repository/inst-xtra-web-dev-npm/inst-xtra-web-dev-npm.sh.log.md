@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-web-dev-npm.sh ...
-  * Disk size = 7238164K. Space Used = 12K. Runtime = 00:00:00:01.
+  * Disk size = 7237756K. Space Used = 12K. Runtime = 00:00:00:01.

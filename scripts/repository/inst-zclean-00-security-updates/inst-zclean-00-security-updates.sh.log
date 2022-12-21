@@ -20,10 +20,10 @@ Hit:14 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:15 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:16 http://localhost/aptly-repo/master_mariadb-main bullseye InRelease
 Hit:17 http://localhost/aptly-repo/master_microsoft-main bullseye InRelease
-Hit:18 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
-Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
-Hit:20 https://download.docker.com/linux/debian buster InRelease
-Hit:21 https://deb.nodesource.com/node_12.x bullseye InRelease
+Hit:18 https://deb.nodesource.com/node_12.x bullseye InRelease
+Hit:19 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
+Hit:20 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
+Hit:21 https://download.docker.com/linux/debian buster InRelease
 Hit:22 https://dl.google.com/linux/chrome/deb stable InRelease
 Reading package lists...
 Reading package lists...
@@ -58,7 +58,7 @@ Get:15 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backp
 Get:16 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libss2 amd64 1.46.5-2~bpo11+2 [80.6 kB]
 Get:17 https://dl.google.com/linux/chrome/deb stable/main amd64 google-chrome-stable amd64 108.0.5359.124-1 [93.0 MB]
 Preconfiguring packages ...
-Fetched 99.3 MB in 1s (79.7 MB/s)
+Fetched 99.3 MB in 3s (29.4 MB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 122159 files and directories currently installed.)
 Preparing to unpack .../init-system-helpers_1.64~bpo11+1_all.deb ...
 Unpacking init-system-helpers (1.64~bpo11+1) over (1.60) ...
@@ -113,8 +113,8 @@ Setting up less (590-1~bpo11+1) ...
 Setting up tzdata (2021a-1+deb11u8) ...
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Fri Dec 16 15:40:05 UTC 2022.
-Universal Time is now:  Fri Dec 16 15:40:05 UTC 2022.
+Local time is now:      Tue Dec 20 21:31:02 UTC 2022.
+Universal Time is now:  Tue Dec 20 21:31:02 UTC 2022.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up zfs-dkms (2.1.5-1~bpo11+1) ...
@@ -171,4 +171,4 @@ Errors were encountered while processing:
  zfs-dkms
  spl-dkms
 E: Sub-process /usr/bin/dpkg returned an error code (1)
-CLDS: * Disk size = 6226936K. Space Used = 100828K. Runtime = 00:00:02:03.
+CLDS: * Disk size = 6226540K. Space Used = 100836K. Runtime = 00:00:01:58.

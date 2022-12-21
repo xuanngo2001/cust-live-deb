@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-system-conky-ncal.sh ...
   * After this operation, 69.6 kB of additional disk space will be used.
   * Install ncal.
-  * Disk size = 5618272K. Space Used = 128K. Runtime = 00:00:00:02.
+  * Disk size = 5617864K. Space Used = 128K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 ncal

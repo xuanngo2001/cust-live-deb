@@ -216,7 +216,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 845 kB in 0s (43.7 MB/s)
+Fetched 845 kB in 0s (31.7 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9220 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.12.20-2_amd64.deb ...
@@ -279,7 +279,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 73.2 MB in 1s (93.6 MB/s)
+Fetched 73.2 MB in 1s (96.2 MB/s)
 Selecting previously unselected package rsync.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9443 files and directories currently installed.)
 Preparing to unpack .../00-rsync_3.2.4-1~bpo11+1_amd64.deb ...
@@ -348,7 +348,6 @@ update-initramfs: Generating /boot/initrd.img-6.0.0-0.deb11.2-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 './cld' -> '/usr/local/cld'
 './cld/doc' -> '/usr/local/cld/doc'
-'./cld/doc/apt-get-help.txt' -> '/usr/local/cld/doc/apt-get-help.txt'
 './cld/doc/awk-help.txt' -> '/usr/local/cld/doc/awk-help.txt'
 './cld/doc/bash-case-help.txt' -> '/usr/local/cld/doc/bash-case-help.txt'
 './cld/doc/bash-error-help.txt' -> '/usr/local/cld/doc/bash-error-help.txt'
@@ -404,6 +403,7 @@ live-boot: core filesystems devices utils udev blockdev dns.
 './cld/doc/touch-help.txt' -> '/usr/local/cld/doc/touch-help.txt'
 './cld/doc/tr-help.txt' -> '/usr/local/cld/doc/tr-help.txt'
 './cld/doc/xargs-help.txt' -> '/usr/local/cld/doc/xargs-help.txt'
+'./cld/doc/apt-get-help.txt' -> '/usr/local/cld/doc/apt-get-help.txt'
 './cld/doc/readarray-help.txt' -> '/usr/local/cld/doc/readarray-help.txt'
 './cld/doc/lsb_release-help.txt' -> '/usr/local/cld/doc/lsb_release-help.txt'
 './cld/doc/cld-help.txt' -> '/usr/local/cld/doc/cld-help.txt'
@@ -421,36 +421,36 @@ un  linux-image-generic                        <none>          <none>       (no 
 total 56400
 -rw-r--r-- 1 root root       83 Oct 29 15:59 System.map-6.0.0-0.deb11.2-amd64
 -rw-r--r-- 1 root root   257218 Oct 29 15:59 config-6.0.0-0.deb11.2-amd64
--rw-r--r-- 1 root root 49762130 Dec 16 15:27 initrd.img-6.0.0-0.deb11.2-amd64
+-rw-r--r-- 1 root root 49759670 Dec 20 21:18 initrd.img-6.0.0-0.deb11.2-amd64
 -rw-r--r-- 1 root root  7726816 Oct 29 15:59 vmlinuz-6.0.0-0.deb11.2-amd64
 e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.0.0-0.deb11.2-amd64
 f53ef0036a3ef07472146cb43e7c7404  /boot/config-6.0.0-0.deb11.2-amd64
-d4176d0f3f36a6c128d9630790018958  /boot/initrd.img-6.0.0-0.deb11.2-amd64
+03cdeac77bcd2b0fdbb1c22498c7e950  /boot/initrd.img-6.0.0-0.deb11.2-amd64
 f7d067581e884dd4f37abb1e86214c77  /boot/vmlinuz-6.0.0-0.deb11.2-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Dec 16 15:25 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Dec 16 15:27 boot
-drwxr-xr-x  17 root root 3640 Dec 14 20:28 dev
-drwxr-xr-x  49 root root 4096 Dec 16 15:26 etc
+lrwxrwxrwx   1 root root    7 Dec 20 21:17 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Dec 20 21:18 boot
+drwxr-xr-x  17 root root 3640 Dec 20 20:34 dev
+drwxr-xr-x  49 root root 4096 Dec 20 21:18 etc
 drwxr-xr-x   2 root root 4096 Sep  3 12:10 home
-lrwxrwxrwx   1 root root   37 Dec 16 15:26 initrd.img -> boot/initrd.img-6.0.0-0.deb11.2-amd64
-lrwxrwxrwx   1 root root    7 Dec 16 15:25 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Dec 16 15:25 lib32 -> usr/lib32
-lrwxrwxrwx   1 root root    9 Dec 16 15:25 lib64 -> usr/lib64
-lrwxrwxrwx   1 root root   10 Dec 16 15:25 libx32 -> usr/libx32
-drwxr-xr-x   2 root root 4096 Dec 16 15:25 media
-drwxr-xr-x   2 root root 4096 Dec 16 15:25 mnt
-drwxr-xr-x   2 root root 4096 Dec 16 15:25 opt
-dr-xr-xr-x 282 root root    0 Dec 16 15:26 proc
-drwx------   3 root root 4096 Dec 16 15:26 root
-drwxr-xr-x   4 root root 4096 Dec 16 15:25 run
-lrwxrwxrwx   1 root root    8 Dec 16 15:25 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Dec 16 15:25 srv
-dr-xr-xr-x  13 root root    0 Dec 14 20:27 sys
-drwxrwxrwt   2 root root 4096 Dec 16 15:26 tmp
-drwxr-xr-x  14 root root 4096 Dec 16 15:25 usr
-drwxr-xr-x  11 root root 4096 Dec 16 15:25 var
-lrwxrwxrwx   1 root root   34 Dec 16 15:26 vmlinuz -> boot/vmlinuz-6.0.0-0.deb11.2-amd64
+lrwxrwxrwx   1 root root   37 Dec 20 21:18 initrd.img -> boot/initrd.img-6.0.0-0.deb11.2-amd64
+lrwxrwxrwx   1 root root    7 Dec 20 21:17 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Dec 20 21:17 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Dec 20 21:17 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Dec 20 21:17 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Dec 20 21:17 media
+drwxr-xr-x   2 root root 4096 Dec 20 21:17 mnt
+drwxr-xr-x   2 root root 4096 Dec 20 21:17 opt
+dr-xr-xr-x 265 root root    0 Dec 20 21:17 proc
+drwx------   3 root root 4096 Dec 20 21:17 root
+drwxr-xr-x   4 root root 4096 Dec 20 21:17 run
+lrwxrwxrwx   1 root root    8 Dec 20 21:17 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Dec 20 21:17 srv
+dr-xr-xr-x  13 root root    0 Dec 20 20:34 sys
+drwxrwxrwt   2 root root 4096 Dec 20 21:18 tmp
+drwxr-xr-x  14 root root 4096 Dec 20 21:17 usr
+drwxr-xr-x  11 root root 4096 Dec 20 21:17 var
+lrwxrwxrwx   1 root root   34 Dec 20 21:18 vmlinuz -> boot/vmlinuz-6.0.0-0.deb11.2-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-6.0.0-0.deb11.2-amd64.
-CLDS: * Disk size = 1121016K. Space Used = 638600K. Runtime = 00:00:00:44.
+CLDS: * Disk size = 1120596K. Space Used = 638608K. Runtime = 00:00:00:42.
