@@ -1,7 +1,15 @@
 * >>>>>>>>> Running inst-std-multimedia-xtra-ffmpeg.sh ...
   * After this operation, 166 MB of additional disk space will be used.
   * Install ffmpeg.
+<<<<<<< HEAD
   * Disk size = 5609800K. Space Used = 165404K. Runtime = 00:00:00:10.
+=======
+<<<<<<< HEAD
+  * Disk size = 5602788K. Space Used = 4076K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 5610208K. Space Used = 165404K. Runtime = 00:00:00:10.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 ffmpeg libaom3 libarchive13 libaribb24-0 libass9

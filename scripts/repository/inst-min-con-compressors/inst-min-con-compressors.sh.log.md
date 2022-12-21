@@ -12,7 +12,15 @@
   * Install de/compressor: unzip.
   * Install de/compressor: p7zip.
   * Add universal extractor: extract.sh.
+<<<<<<< HEAD
   * Disk size = 1246716K. Space Used = 10660K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 1124960K. Space Used = 10668K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 1247136K. Space Used = 10660K. Runtime = 00:00:00:03.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 bzip2 p7zip p7zip-full rar unrar
