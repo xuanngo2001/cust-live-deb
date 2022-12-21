@@ -3,19 +3,7 @@
   * Install Partition Manager: gnome-disk-utility.
   * Run: gnome-disks.
   * Insert gnome-disk-utility menu in Administration.
-<<<<<<< HEAD
-  * Disk size = 5618244K. Space Used = 8068K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 5628576K. Space Used = 8280K. Runtime = 00:00:00:03.
-=======
-<<<<<<< HEAD
-  * Disk size = 5610196K. Space Used = 8068K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 5628620K. Space Used = 8280K. Runtime = 00:00:00:03.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 5621360K. Space Used = 8068K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 gdisk gnome-disk-utility libatasmart4 libblockdev2 libblockdev-fs2

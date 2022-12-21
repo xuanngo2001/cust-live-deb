@@ -1,19 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-sqlite3.sh ...
   * After this operation, 3,155 kB of additional disk space will be used.
   * Install Database: sqlite3.
-<<<<<<< HEAD
-  * Disk size = 3952324K. Space Used = 4296K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 4066360K. Space Used = 4300K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 3944344K. Space Used = 4296K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 4066300K. Space Used = 4296K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 3955772K. Space Used = 4296K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 sqlite3

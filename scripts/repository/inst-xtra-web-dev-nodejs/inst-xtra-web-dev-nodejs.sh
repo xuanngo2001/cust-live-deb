@@ -10,11 +10,15 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #	apt-get install -s -y <your-package> 
 
 # Install nodejs.
-	apt-get -y install nodejs
+#	apt-get -y install nodejs
 
-# Manually update nodejs to version 12.
-	curl -sL https://deb.nodesource.com/setup_12.x | bash -
+# Manually update nodejs to version 18x.
+#	https://github.com/nodesource/distributions/blob/master/README.md
+	curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&\
 	apt-get install -y nodejs
+
+#	curl -sL https://deb.nodesource.com/setup_12.x | bash -
+#	apt-get install -y nodejs
 
 
 # Log

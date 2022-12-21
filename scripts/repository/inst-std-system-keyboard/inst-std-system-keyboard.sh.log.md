@@ -1,15 +1,3 @@
 * >>>>>>>>> Running inst-std-system-keyboard.sh ...
   * Insert keyboard configuration in Administration menu.
-<<<<<<< HEAD
-  * Disk size = 5618248K. Space Used = 4K. Runtime = 00:00:00:00.
-=======
-<<<<<<< HEAD
-  * Disk size = 5628580K. Space Used = 4K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 5610200K. Space Used = 4K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 5628624K. Space Used = 4K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 5621364K. Space Used = 4K. Runtime = 00:00:00:01.

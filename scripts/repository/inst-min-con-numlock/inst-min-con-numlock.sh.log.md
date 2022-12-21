@@ -1,19 +1,7 @@
 * >>>>>>>>> Running inst-min-con-numlock.sh ...
   * After this operation, 4,410 kB of additional disk space will be used.
   * Install numlockx to turn on NumLock on boot.
-<<<<<<< HEAD
-  * Disk size = 1673496K. Space Used = 6896K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 1795312K. Space Used = 6904K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 1673344K. Space Used = 6896K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 1795248K. Space Used = 6904K. Runtime = 00:00:00:02.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1673584K. Space Used = 6896K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 libx11-6 libx11-data libxau6 libxcb1 libxdmcp6

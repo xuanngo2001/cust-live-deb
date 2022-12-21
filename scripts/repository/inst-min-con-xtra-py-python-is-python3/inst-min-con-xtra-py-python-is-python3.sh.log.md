@@ -2,19 +2,7 @@
   * After this operation, 19.9 MB of additional disk space will be used.
   * Starting from Bullseye, this is required for old script which uses unversioned /usr/bin/python.
   * Otherwise, old script(e.g. youtube-dl) will complain: /usr/bin/env: ‘python’: No such file or directory.
-<<<<<<< HEAD
-  * Disk size = 3861228K. Space Used = 33704K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 3975256K. Space Used = 33700K. Runtime = 00:00:00:04.
-=======
-<<<<<<< HEAD
-  * Disk size = 3853248K. Space Used = 33704K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 3975196K. Space Used = 33700K. Runtime = 00:00:00:04.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 3864676K. Space Used = 33704K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 libmpdec3 libpython3.9-minimal libpython3.9-stdlib libpython3-stdlib python3

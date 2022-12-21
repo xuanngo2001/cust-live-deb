@@ -1,19 +1,7 @@
 * >>>>>>>>> Running inst-min-con-02-locale.sh ...
   * After this operation, 20.9 MB of additional disk space will be used.
   * Install locale and set it to use en_US.UTF-8.
-<<<<<<< HEAD
-  * Disk size = 1028524K. Space Used = 29216K. Runtime = 00:00:00:03.
-=======
-<<<<<<< HEAD
-  * Disk size = 1150356K. Space Used = 29212K. Runtime = 00:00:00:04.
-=======
-<<<<<<< HEAD
-  * Disk size = 1028424K. Space Used = 29220K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 1150288K. Space Used = 29212K. Runtime = 00:00:00:04.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1028624K. Space Used = 29216K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 libc-l10n locales
