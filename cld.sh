@@ -44,3 +44,8 @@ DEB_REPO_URL=$2
 	./cld-shlog.sh "${LOG_DIR}"
 	./cld-logs-extract-package-sizes.sh "${LOG_DIR}"
 	./cld-logs-backup.sh "${LOG_DIR}"
+	
+# Done
+	./cld-done-line.sh
+
+	

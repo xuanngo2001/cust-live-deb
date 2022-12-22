@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-buffer-pv.sh ...
   * After this operation, 127 kB of additional disk space will be used.
   * Install pv.
-<<<<<<< HEAD
-  * Disk size = 1818844K. Space Used = 180K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 1696720K. Space Used = 180K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1696696K. Space Used = 172K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 pv
