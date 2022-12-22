@@ -12,7 +12,7 @@ repository_dir=./scripts/repository/
     script_name=$(echo "${filename}"| sed 's|./scripts/repository/|./|')
     echo "   ${script_name}"
     
-  done < <( find "${repository_dir}" -type f -name "inst-*-fix.sh" )
+  done < <( find "${repository_dir}" -type f -name "inst-*-fix*.sh" | sort )
 
 
 # Display solution.
