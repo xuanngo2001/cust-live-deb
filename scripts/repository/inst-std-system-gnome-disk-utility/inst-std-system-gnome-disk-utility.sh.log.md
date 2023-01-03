@@ -3,7 +3,11 @@
   * Install Partition Manager: gnome-disk-utility.
   * Run: gnome-disks.
   * Insert gnome-disk-utility menu in Administration.
+<<<<<<< HEAD
   * Disk size = 5628624K. Space Used = 8280K. Runtime = 00:00:00:03.
+=======
+  * Disk size = 5618616K. Space Used = 8088K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 gdisk gnome-disk-utility libatasmart4 libblockdev2 libblockdev-fs2
