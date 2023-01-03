@@ -16,13 +16,13 @@ The following NEW packages will be installed:
   libfribidi0 libgd3 libjbig0 liblua5.4-0 libpango-1.0-0 libpangocairo-1.0-0
   libpangoft2-1.0-0 libpixman-1-0 libthai-data libthai0 libtiff5 libwebp6
   libxcb-render0 libxcb-shm0 libxpm4 libxrender1
-0 upgraded, 23 newly installed, 0 to remove and 17 not upgraded.
+0 upgraded, 23 newly installed, 0 to remove and 20 not upgraded.
 Need to get 4,461 kB of archives.
 After this operation, 10.6 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 aglfn all 1.7+git20191031.4036a9c-2 [30.5 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 fontconfig amd64 2.13.1-4.2 [417 kB]
 Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 gnuplot-data all 5.4.1+dfsg1-1+deb11u1 [87.5 kB]
-Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpixman-1-0 amd64 0.40.0-1.1~deb11u1 [543 kB]
+Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpixman-1-0 amd64 0.40.0-1 [543 kB]
 Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxcb-render0 amd64 1.14-3 [111 kB]
 Get:6 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxcb-shm0 amd64 1.14-3 [101 kB]
 Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxrender1 amd64 1:0.9.10-1 [33.0 kB]
@@ -42,17 +42,9 @@ Get:20 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libp
 Get:21 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpangoft2-1.0-0 amd64 1.46.2-3 [62.2 kB]
 Get:22 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpangocairo-1.0-0 amd64 1.46.2-3 [50.6 kB]
 Get:23 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 gnuplot-nox amd64 5.4.1+dfsg1-1+deb11u1 [853 kB]
-<<<<<<< HEAD
-Fetched 4,461 kB in 0s (73.5 MB/s)
-=======
-Fetched 4,461 kB in 0s (58.1 MB/s)
->>>>>>> refs/remotes/origin/bullseye
+Fetched 4,461 kB in 0s (69.4 MB/s)
 Selecting previously unselected package aglfn.
-<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60706 files and directories currently installed.)
-=======
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61235 files and directories currently installed.)
->>>>>>> refs/remotes/origin/bullseye
 Preparing to unpack .../00-aglfn_1.7+git20191031.4036a9c-2_all.deb ...
 Unpacking aglfn (1.7+git20191031.4036a9c-2) ...
 Selecting previously unselected package fontconfig.
@@ -62,8 +54,8 @@ Selecting previously unselected package gnuplot-data.
 Preparing to unpack .../02-gnuplot-data_5.4.1+dfsg1-1+deb11u1_all.deb ...
 Unpacking gnuplot-data (5.4.1+dfsg1-1+deb11u1) ...
 Selecting previously unselected package libpixman-1-0:amd64.
-Preparing to unpack .../03-libpixman-1-0_0.40.0-1.1~deb11u1_amd64.deb ...
-Unpacking libpixman-1-0:amd64 (0.40.0-1.1~deb11u1) ...
+Preparing to unpack .../03-libpixman-1-0_0.40.0-1_amd64.deb ...
+Unpacking libpixman-1-0:amd64 (0.40.0-1) ...
 Selecting previously unselected package libxcb-render0:amd64.
 Preparing to unpack .../04-libxcb-render0_1.14-3_amd64.deb ...
 Unpacking libxcb-render0:amd64 (1.14-3) ...
@@ -121,7 +113,7 @@ Unpacking libpangocairo-1.0-0:amd64 (1.46.2-3) ...
 Selecting previously unselected package gnuplot-nox.
 Preparing to unpack .../22-gnuplot-nox_5.4.1+dfsg1-1+deb11u1_amd64.deb ...
 Unpacking gnuplot-nox (5.4.1+dfsg1-1+deb11u1) ...
-Setting up libpixman-1-0:amd64 (0.40.0-1.1~deb11u1) ...
+Setting up libpixman-1-0:amd64 (0.40.0-1) ...
 Setting up fontconfig (2.13.1-4.2) ...
 Regenerating fonts cache... done.
 Setting up libxpm4:amd64 (1:3.5.12-1) ...
@@ -146,10 +138,6 @@ Setting up libpangoft2-1.0-0:amd64 (1.46.2-3) ...
 Setting up libpangocairo-1.0-0:amd64 (1.46.2-3) ...
 Setting up gnuplot-nox (5.4.1+dfsg1-1+deb11u1) ...
 update-alternatives: using /usr/bin/gnuplot-nox to provide /usr/bin/gnuplot (gnuplot) in auto mode
-Processing triggers for libc-bin (2.31-13+deb11u5) ...
+Processing triggers for libc-bin (2.31-13+deb11u4) ...
 CLDS: * Install gnuplot-nox.
-<<<<<<< HEAD
-CLDS: * Disk size = 3235004K. Space Used = 15480K. Runtime = 00:00:00:05.
-=======
-CLDS: * Disk size = 3124024K. Space Used = 15484K. Runtime = 00:00:00:04.
->>>>>>> refs/remotes/origin/bullseye
+CLDS: * Disk size = 3234648K. Space Used = 15480K. Runtime = 00:00:00:05.

@@ -187,9 +187,18 @@ Check https://specifications.freedesktop.org/menu-spec/latest/apa.html
 Icon per application can found in it menu definition file located at `/usr/share/menu`.
 
 ## Add icon in JWM menu
-Size of icons should be 32x32.
 
-Icons repository: https://icons8.com/
+* Main menu: ./cust-live-deb/scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml
+* Set up icons at /usr/local/cld/app/jwm/jwmrc/jwmrc-menus.xml
+* Find JWM menu files: find ./scripts/repository/ -type f -name "jwmrc-*.xml" | sort
+* Put all custom icons in: /usr/local/cld/app/jwm/jwmrc/icons/
+
+* Size of icons should be 32x32.
+* https://github.com/toss/tossface/releases/tag/v1.1
+* https://openmoji.org/
+* https://unicode.org/emoji/charts-13.1/full-emoji-list.html
+* Icons repository: https://icons8.com/
+
 
 Use `inst-std-accessories-scite` as reference.
 
