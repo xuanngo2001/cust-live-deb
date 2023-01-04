@@ -13,6 +13,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   apt-get -y install zip
   apt-get -y install unzip
   apt-get -y install p7zip-full
+  apt-get -y install zpaq
 
 # Add universal extractor: extract.sh.
   yes | cp -av ./cld/  /usr/local
@@ -24,6 +25,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   echo "${GV_LOG} * Install de/compressor: zip."
   echo "${GV_LOG} * Install de/compressor: unzip."
   echo "${GV_LOG} * Install de/compressor: p7zip."
+  echo "${GV_LOG} * Install de/compressor: zpaq."
   echo "${GV_LOG} * Add universal extractor: extract.sh."
 
 

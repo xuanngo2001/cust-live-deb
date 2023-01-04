@@ -17,10 +17,10 @@ The following NEW packages will be installed:
   libpython3.9-dev libtirpc-dev linux-libc-dev python3-dev python3-distutils
   python3-lib2to3 python3.9-dev zlib1g-dev
 0 upgraded, 18 newly installed, 0 to remove and 17 not upgraded.
-Need to get 12.0 MB of archives.
-After this operation, 53.8 MB of additional disk space will be used.
+Need to get 12.1 MB of archives.
+After this operation, 53.9 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libc-dev-bin amd64 2.31-13+deb11u5 [276 kB]
-Get:2 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 linux-libc-dev amd64 6.0.3-1~bpo11+1 [1,673 kB]
+Get:2 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 linux-libc-dev amd64 6.0.12-1~bpo11+1 [1,698 kB]
 Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libcrypt-dev amd64 1:4.4.18-4 [104 kB]
 Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libtirpc-dev amd64 1.3.1-1+deb11u1 [191 kB]
 Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libnsl-dev amd64 1.3.0-2 [66.4 kB]
@@ -37,14 +37,14 @@ Get:15 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 pyth
 Get:16 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-lib2to3 all 3.9.2-1 [77.8 kB]
 Get:17 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-distutils all 3.9.2-1 [143 kB]
 Get:18 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-dev amd64 3.9.2-3 [24.8 kB]
-Fetched 12.0 MB in 0s (84.4 MB/s)
+Fetched 12.1 MB in 0s (59.7 MB/s)
 Selecting previously unselected package libc-dev-bin.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64498 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64501 files and directories currently installed.)
 Preparing to unpack .../00-libc-dev-bin_2.31-13+deb11u5_amd64.deb ...
 Unpacking libc-dev-bin (2.31-13+deb11u5) ...
 Selecting previously unselected package linux-libc-dev:amd64.
-Preparing to unpack .../01-linux-libc-dev_6.0.3-1~bpo11+1_amd64.deb ...
-Unpacking linux-libc-dev:amd64 (6.0.3-1~bpo11+1) ...
+Preparing to unpack .../01-linux-libc-dev_6.0.12-1~bpo11+1_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (6.0.12-1~bpo11+1) ...
 Selecting previously unselected package libcrypt-dev:amd64.
 Preparing to unpack .../02-libcrypt-dev_1%3a4.4.18-4_amd64.deb ...
 Unpacking libcrypt-dev:amd64 (1:4.4.18-4) ...
@@ -93,7 +93,7 @@ Unpacking python3-distutils (3.9.2-1) ...
 Selecting previously unselected package python3-dev.
 Preparing to unpack .../17-python3-dev_3.9.2-3_amd64.deb ...
 Unpacking python3-dev (3.9.2-3) ...
-Setting up linux-libc-dev:amd64 (6.0.3-1~bpo11+1) ...
+Setting up linux-libc-dev:amd64 (6.0.12-1~bpo11+1) ...
 Setting up libtirpc-dev:amd64 (1.3.1-1+deb11u1) ...
 Setting up libpython3.9:amd64 (3.9.2-1) ...
 Setting up libnsl-dev:amd64 (1.3.0-2) ...
@@ -114,4 +114,4 @@ Setting up python3-dev (3.9.2-3) ...
 Processing triggers for libc-bin (2.31-13+deb11u5) ...
 CLDS: * Install python3-dev.
 CLDS: * Require for: tulipy
-CLDS: * Disk size = 3934228K. Space Used = 69544K. Runtime = 00:00:00:02.
+CLDS: * Disk size = 3934808K. Space Used = 69592K. Runtime = 00:00:00:02.

@@ -216,7 +216,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 852 kB in 0s (23.0 MB/s)
+Fetched 852 kB in 0s (23.9 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9220 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.12.24-0+deb11u1_amd64.deb ...
@@ -254,9 +254,9 @@ The following NEW packages will be installed:
   libklibc linux-base linux-image-6.0.0-0.deb11.2-amd64 linux-image-amd64
   live-boot live-boot-initramfs-tools rsync
 0 upgraded, 12 newly installed, 0 to remove and 17 not upgraded.
-Need to get 73.2 MB of archives.
+Need to get 73.3 MB of archives.
 After this operation, 511 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 rsync amd64 3.2.4-1~bpo11+1 [411 kB]
+Get:1 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 rsync amd64 3.2.7-1~bpo11+1 [429 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 busybox amd64 1:1.30.1-6+b3 [435 kB]
 Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 firmware-linux-free all 20200122-1 [24.2 kB]
 Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libklibc amd64 2.0.8-6.1 [56.6 kB]
@@ -279,11 +279,11 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 73.2 MB in 1s (82.9 MB/s)
+Fetched 73.3 MB in 1s (87.5 MB/s)
 Selecting previously unselected package rsync.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9443 files and directories currently installed.)
-Preparing to unpack .../00-rsync_3.2.4-1~bpo11+1_amd64.deb ...
-Unpacking rsync (3.2.4-1~bpo11+1) ...
+Preparing to unpack .../00-rsync_3.2.7-1~bpo11+1_amd64.deb ...
+Unpacking rsync (3.2.7-1~bpo11+1) ...
 Selecting previously unselected package busybox.
 Preparing to unpack .../01-busybox_1%3a1.30.1-6+b3_amd64.deb ...
 Unpacking busybox (1:1.30.1-6+b3) ...
@@ -326,7 +326,7 @@ Setting up busybox (1:1.30.1-6+b3) ...
 Setting up libklibc:amd64 (2.0.8-6.1) ...
 Setting up klibc-utils (2.0.8-6.1) ...
 No diversion 'diversion of /usr/share/initramfs-tools/hooks/klibc to /usr/share/initramfs-tools/hooks/klibc^i-t by klibc-utils', none removed.
-Setting up rsync (3.2.4-1~bpo11+1) ...
+Setting up rsync (3.2.7-1~bpo11+1) ...
 Running in chroot, ignoring request.
 Setting up initramfs-tools-core (0.140) ...
 Setting up initramfs-tools (0.140) ...
@@ -418,39 +418,39 @@ ii  linux-image-6.0.0-0.deb11.2-amd64          6.0.3-1~bpo11+1 amd64        Linu
 un  linux-image-6.0.0-0.deb11.2-amd64-unsigned <none>          <none>       (no description available)
 ii  linux-image-amd64                          6.0.3-1~bpo11+1 amd64        Linux for 64-bit PCs (meta-package)
 un  linux-image-generic                        <none>          <none>       (no description available)
-total 56408
+total 56400
 -rw-r--r-- 1 root root       83 Oct 29 15:59 System.map-6.0.0-0.deb11.2-amd64
 -rw-r--r-- 1 root root   257218 Oct 29 15:59 config-6.0.0-0.deb11.2-amd64
--rw-r--r-- 1 root root 49769273 Dec 22 03:48 initrd.img-6.0.0-0.deb11.2-amd64
+-rw-r--r-- 1 root root 49759463 Jan  2 05:49 initrd.img-6.0.0-0.deb11.2-amd64
 -rw-r--r-- 1 root root  7726816 Oct 29 15:59 vmlinuz-6.0.0-0.deb11.2-amd64
 e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.0.0-0.deb11.2-amd64
 f53ef0036a3ef07472146cb43e7c7404  /boot/config-6.0.0-0.deb11.2-amd64
-b0200a3a3e7975750691475a47d36f2a  /boot/initrd.img-6.0.0-0.deb11.2-amd64
+9de0d1c8cc662071381d2052830d883a  /boot/initrd.img-6.0.0-0.deb11.2-amd64
 f7d067581e884dd4f37abb1e86214c77  /boot/vmlinuz-6.0.0-0.deb11.2-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Dec 22 03:47 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Dec 22 03:48 boot
-drwxr-xr-x  17 root root 3560 Dec 22 03:39 dev
-drwxr-xr-x  49 root root 4096 Dec 22 03:48 etc
+lrwxrwxrwx   1 root root    7 Jan  2 05:48 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Jan  2 05:49 boot
+drwxr-xr-x  17 root root 3560 Jan  2 05:30 dev
+drwxr-xr-x  49 root root 4096 Jan  2 05:49 etc
 drwxr-xr-x   2 root root 4096 Dec  9 19:15 home
-lrwxrwxrwx   1 root root   37 Dec 22 03:47 initrd.img -> boot/initrd.img-6.0.0-0.deb11.2-amd64
-lrwxrwxrwx   1 root root    7 Dec 22 03:47 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Dec 22 03:47 lib32 -> usr/lib32
-lrwxrwxrwx   1 root root    9 Dec 22 03:47 lib64 -> usr/lib64
-lrwxrwxrwx   1 root root   10 Dec 22 03:47 libx32 -> usr/libx32
-drwxr-xr-x   2 root root 4096 Dec 22 03:47 media
-drwxr-xr-x   2 root root 4096 Dec 22 03:47 mnt
-drwxr-xr-x   2 root root 4096 Dec 22 03:47 opt
-dr-xr-xr-x 288 root root    0 Dec 22 03:47 proc
-drwx------   3 root root 4096 Dec 22 03:47 root
-drwxr-xr-x   4 root root 4096 Dec 22 03:47 run
-lrwxrwxrwx   1 root root    8 Dec 22 03:47 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Dec 22 03:47 srv
-dr-xr-xr-x  13 root root    0 Dec 21 22:39 sys
-drwxrwxrwt   2 root root 4096 Dec 22 03:47 tmp
-drwxr-xr-x  14 root root 4096 Dec 22 03:47 usr
-drwxr-xr-x  11 root root 4096 Dec 22 03:47 var
-lrwxrwxrwx   1 root root   34 Dec 22 03:47 vmlinuz -> boot/vmlinuz-6.0.0-0.deb11.2-amd64
+lrwxrwxrwx   1 root root   37 Jan  2 05:49 initrd.img -> boot/initrd.img-6.0.0-0.deb11.2-amd64
+lrwxrwxrwx   1 root root    7 Jan  2 05:48 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Jan  2 05:48 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Jan  2 05:48 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Jan  2 05:48 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Jan  2 05:48 media
+drwxr-xr-x   2 root root 4096 Jan  2 05:48 mnt
+drwxr-xr-x   2 root root 4096 Jan  2 05:48 opt
+dr-xr-xr-x 290 root root    0 Jan  2 05:49 proc
+drwx------   3 root root 4096 Jan  2 05:49 root
+drwxr-xr-x   4 root root 4096 Jan  2 05:48 run
+lrwxrwxrwx   1 root root    8 Jan  2 05:48 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Jan  2 05:48 srv
+dr-xr-xr-x  13 root root    0 Jan  2 00:29 sys
+drwxrwxrwt   2 root root 4096 Jan  2 05:49 tmp
+drwxr-xr-x  14 root root 4096 Jan  2 05:48 usr
+drwxr-xr-x  11 root root 4096 Jan  2 05:48 var
+lrwxrwxrwx   1 root root   34 Jan  2 05:49 vmlinuz -> boot/vmlinuz-6.0.0-0.deb11.2-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-6.0.0-0.deb11.2-amd64.
-CLDS: * Disk size = 998836K. Space Used = 638624K. Runtime = 00:00:00:32.
+CLDS: * Disk size = 998592K. Space Used = 638664K. Runtime = 00:00:00:32.

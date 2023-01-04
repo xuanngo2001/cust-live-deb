@@ -1,13 +1,5 @@
 * >>>>>>>>> Running inst-xtra-virtualbox.sh ...
-<<<<<<< HEAD
-  * Disk size = 5789528K. Space Used = 6260K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 5829832K. Space Used = 6260K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 5782032K. Space Used = 6256K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 5796664K. Space Used = 6084K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 libqt5x11extras5*
