@@ -1,10 +1,6 @@
 * >>>>>>>>> Running inst-xtra-docker-ce-fix-iptables.sh ...
   * Install iptables.
-<<<<<<< HEAD
-  * Disk size = 6144620K. Space Used = 4K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 6105480K. Space Used = 8K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 6144608K. Space Used = 8K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 iptables libip6tc2 libnetfilter-conntrack3 libnfnetlink0
