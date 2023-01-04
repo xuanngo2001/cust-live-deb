@@ -3,7 +3,15 @@
   * Install gnome-screenshot to be used for PrintScreen key.
   * Insert PrintScreen key binding.
   * By default, screenshots are saved under ~/Pictures/.
+<<<<<<< HEAD
   * Disk size = 4465636K. Space Used = 3956K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 4578444K. Space Used = 3972K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 4465036K. Space Used = 3968K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 gnome-screenshot libcanberra0 libcanberra-gtk3-0 libhandy-1-0 libltdl7

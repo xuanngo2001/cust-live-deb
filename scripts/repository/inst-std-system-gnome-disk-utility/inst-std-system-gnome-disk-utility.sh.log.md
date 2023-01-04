@@ -1,13 +1,21 @@
 * >>>>>>>>> Running inst-std-system-gnome-disk-utility.sh ...
-  * After this operation, 13.7 MB of additional disk space will be used.
+  * After this operation, 13.9 MB of additional disk space will be used.
   * Install Partition Manager: gnome-disk-utility.
   * Run: gnome-disks.
   * Insert gnome-disk-utility menu in Administration.
+<<<<<<< HEAD
   * Disk size = 5619184K. Space Used = 8080K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 5628624K. Space Used = 8280K. Runtime = 00:00:00:03.
+=======
+  * Disk size = 5618616K. Space Used = 8088K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 gdisk gnome-disk-utility libatasmart4 libblockdev2 libblockdev-fs2
 libblockdev-loop2 libblockdev-part2 libblockdev-part-err2 libblockdev-swap2 libblockdev-utils2
-libcrack2 libparted-fs-resize0 libpwquality1 libpwquality-common libsecret-1-0
-libsecret-common libudisks2-0 udisks2
+libcrack2 libdvdread8 libparted-fs-resize0 libpwquality1 libpwquality-common
+libsecret-1-0 libsecret-common libudisks2-0 udisks2
   ```

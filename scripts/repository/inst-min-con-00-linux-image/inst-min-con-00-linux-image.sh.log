@@ -8,7 +8,7 @@ Desired=Unknown/Install/Remove/Purge/Hold
 ii  adduser                  3.118                        all          add and remove users and groups
 ii  apt                      2.2.4                        amd64        commandline package manager
 ii  apt-utils                2.2.4                        amd64        package management related utility programs
-ii  base-files               11.1+deb11u6                 amd64        Debian base system miscellaneous files
+ii  base-files               11.1+deb11u5                 amd64        Debian base system miscellaneous files
 ii  base-passwd              3.5.51                       amd64        Debian base system master password and group files
 ii  bash                     5.1-2+deb11u1                amd64        GNU Bourne Again SHell
 ii  bsdutils                 1:2.36.1-8+deb11u1           amd64        basic utilities from 4.4BSD-Lite
@@ -38,8 +38,8 @@ ii  init                     1.60                         amd64        metapacka
 ii  init-system-helpers      1.60                         all          helper tools for all init systems
 ii  iproute2                 5.10.0-4                     amd64        networking and traffic control tools
 ii  iputils-ping             3:20210202-1                 amd64        Tools to test the reachability of network hosts
-ii  isc-dhcp-client          4.4.1-2.3+deb11u1            amd64        DHCP client for automatically obtaining an IP address
-ii  isc-dhcp-common          4.4.1-2.3+deb11u1            amd64        common manpages relevant to all of the isc-dhcp packages
+ii  isc-dhcp-client          4.4.1-2.3                    amd64        DHCP client for automatically obtaining an IP address
+ii  isc-dhcp-common          4.4.1-2.3                    amd64        common manpages relevant to all of the isc-dhcp packages
 ii  kmod                     28-1                         amd64        tools for managing Linux kernel modules
 ii  less                     551-2                        amd64        pager program similar to more
 ii  libacl1:amd64            2.2.53-10                    amd64        access control list - shared library
@@ -53,8 +53,8 @@ ii  libblkid1:amd64          2.36.1-8+deb11u1             amd64        block dev
 ii  libbpf0:amd64            1:0.3-2                      amd64        eBPF helper library (shared library)
 ii  libbsd0:amd64            0.11.3-1                     amd64        utility functions from BSD systems - shared library
 ii  libbz2-1.0:amd64         1.0.8-4                      amd64        high-quality block-sorting file compressor library - runtime
-ii  libc-bin                 2.31-13+deb11u5              amd64        GNU C Library: Binaries
-ii  libc6:amd64              2.31-13+deb11u5              amd64        GNU C Library: Shared libraries
+ii  libc-bin                 2.31-13+deb11u4              amd64        GNU C Library: Binaries
+ii  libc6:amd64              2.31-13+deb11u4              amd64        GNU C Library: Shared libraries
 ii  libcap-ng0:amd64         0.7.9-2.2+b1                 amd64        An alternate POSIX capabilities library
 ii  libcap2:amd64            1:2.44-1                     amd64        POSIX 1003.1e capabilities (library)
 ii  libcap2-bin              1:2.44-1                     amd64        POSIX 1003.1e capabilities (utilities)
@@ -77,18 +77,18 @@ ii  libgcrypt20:amd64        1.8.7-6                      amd64        LGPL Cryp
 ii  libgmp10:amd64           2:6.2.1+dfsg-1+deb11u1       amd64        Multiprecision arithmetic library
 ii  libgnutls30:amd64        3.7.1-5+deb11u2              amd64        GNU TLS library - main runtime library
 ii  libgpg-error0:amd64      1.38-2                       amd64        GnuPG development runtime library
-ii  libgssapi-krb5-2:amd64   1.18.3-6+deb11u3             amd64        MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+ii  libgssapi-krb5-2:amd64   1.18.3-6+deb11u2             amd64        MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
 ii  libhogweed6:amd64        3.7.3-1                      amd64        low level cryptographic library (public-key cryptos)
 ii  libidn2-0:amd64          2.3.0-5                      amd64        Internationalized domain names (IDNA2008/TR46) library
 ii  libip4tc2:amd64          1.8.7-1                      amd64        netfilter libip4tc library
 ii  libisc-export1105:amd64  1:9.11.19+dfsg-2.1           amd64        Exported ISC Shared Library
 ii  libjansson4:amd64        2.13.1-1.1                   amd64        C library for encoding, decoding and manipulating JSON data
 ii  libjson-c5:amd64         0.15-2                       amd64        JSON manipulation library - shared library
-ii  libk5crypto3:amd64       1.18.3-6+deb11u3             amd64        MIT Kerberos runtime libraries - Crypto Library
+ii  libk5crypto3:amd64       1.18.3-6+deb11u2             amd64        MIT Kerberos runtime libraries - Crypto Library
 ii  libkeyutils1:amd64       1.6.1-2                      amd64        Linux Key Management Utilities (library)
 ii  libkmod2:amd64           28-1                         amd64        libkmod shared library
-ii  libkrb5-3:amd64          1.18.3-6+deb11u3             amd64        MIT Kerberos runtime libraries
-ii  libkrb5support0:amd64    1.18.3-6+deb11u3             amd64        MIT Kerberos runtime libraries - Support library
+ii  libkrb5-3:amd64          1.18.3-6+deb11u2             amd64        MIT Kerberos runtime libraries
+ii  libkrb5support0:amd64    1.18.3-6+deb11u2             amd64        MIT Kerberos runtime libraries - Support library
 ii  liblocale-gettext-perl   1.07-4+b1                    amd64        module using libc functions for internationalization in Perl
 ii  liblognorm5:amd64        2.0.5-1.1                    amd64        log normalizing library
 ii  liblz4-1:amd64           1.9.3-2                      amd64        Fast LZ compression algorithm library - runtime
@@ -100,7 +100,7 @@ ii  libncurses6:amd64        6.2+20201114-2               amd64        shared li
 ii  libncursesw6:amd64       6.2+20201114-2               amd64        shared libraries for terminal handling (wide character support)
 ii  libnettle8:amd64         3.7.3-1                      amd64        low level cryptographic library (symmetric and one-way cryptos)
 ii  libnewt0.52:amd64        0.52.21-4+b3                 amd64        Not Erik's Windowing Toolkit - text mode windowing with slang
-ii  libnftables1:amd64       0.9.8-3.1+deb11u1            amd64        Netfilter nftables high level userspace API library
+ii  libnftables1:amd64       0.9.8-3.1                    amd64        Netfilter nftables high level userspace API library
 ii  libnftnl11:amd64         1.1.9-1                      amd64        Netfilter nftables userspace API library
 ii  libnsl2:amd64            1.3.0-2                      amd64        Public client interface for NIS(YP) and NIS+
 ii  libp11-kit0:amd64        0.23.22-1                    amd64        library for loading and coordinating access to PKCS#11 modules - runtime
@@ -124,7 +124,7 @@ ii  libss2:amd64             1.46.2-2                     amd64        command-l
 ii  libssl1.1:amd64          1.1.1n-0+deb11u3             amd64        Secure Sockets Layer toolkit - shared libraries
 ii  libstdc++6:amd64         10.2.1-6                     amd64        GNU Standard C++ Library v3
 ii  libsystemd0:amd64        247.3-7+deb11u1              amd64        systemd utility library
-ii  libtasn1-6:amd64         4.16.0-2+deb11u1             amd64        Manage ASN.1 structures (runtime)
+ii  libtasn1-6:amd64         4.16.0-2                     amd64        Manage ASN.1 structures (runtime)
 ii  libtext-charwidth-perl   0.04-10+b1                   amd64        get display widths of characters on the terminal
 ii  libtext-iconv-perl       1.7-7+b1                     amd64        module to convert between character sets in Perl
 ii  libtext-wrapi18n-perl    0.06-9                       all          internationalized substitute of Text::Wrap
@@ -143,11 +143,11 @@ ii  logsave                  1.46.2-2                     amd64        save the 
 ii  lsb-base                 11.1.0                       all          Linux Standard Base init script functionality
 ii  mawk                     1.3.4.20200120-2             amd64        Pattern scanning and text processing language
 ii  mount                    2.36.1-8+deb11u1             amd64        tools for mounting and manipulating filesystems
-ii  nano                     5.4-2+deb11u2                amd64        small, friendly text editor inspired by Pico
+ii  nano                     5.4-2+deb11u1                amd64        small, friendly text editor inspired by Pico
 ii  ncurses-base             6.2+20201114-2               all          basic terminal type definitions
 ii  ncurses-bin              6.2+20201114-2               amd64        terminal-related programs and man pages
 ii  netbase                  6.3                          all          Basic TCP/IP networking system
-ii  nftables                 0.9.8-3.1+deb11u1            amd64        Program to control packet filtering rules by Netfilter project
+ii  nftables                 0.9.8-3.1                    amd64        Program to control packet filtering rules by Netfilter project
 ii  passwd                   1:4.8.1-1                    amd64        change and administer password and group data
 ii  perl-base                5.32.1-4+deb11u2             amd64        minimal Perl system
 ii  procps                   2:3.3.17-5                   amd64        /proc file system utilities
@@ -161,7 +161,7 @@ ii  sysvinit-utils           2.96-7+deb11u1               amd64        System-V-
 ii  tar                      1.34+dfsg-1                  amd64        GNU version of the tar archiving utility
 ii  tasksel                  3.68+deb11u1                 all          tool for selecting tasks for installation on Debian systems
 ii  tasksel-data             3.68+deb11u1                 all          official tasks used for installation of Debian systems
-ii  tzdata                   2021a-1+deb11u8              all          time zone and daylight-saving time data
+ii  tzdata                   2021a-1+deb11u5              all          time zone and daylight-saving time data
 ii  udev                     247.3-7+deb11u1              amd64        /dev/ and hotplug management daemon
 ii  util-linux               2.36.1-8+deb11u1             amd64        miscellaneous system utilities
 ii  vim-common               2:8.2.2434-3+deb11u1         all          Vi IMproved - Common files
@@ -199,12 +199,12 @@ Suggested packages:
   default-dbus-session-bus | dbus-session-bus
 The following NEW packages will be installed:
   dbus dialog libdbus-1-3 libexpat1
-0 upgraded, 4 newly installed, 0 to remove and 17 not upgraded.
-Need to get 852 kB of archives.
-After this operation, 2800 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libdbus-1-3 amd64 1.12.24-0+deb11u1 [222 kB]
-Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libexpat1 amd64 2.2.10-2+deb11u5 [98.2 kB]
-Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 dbus amd64 1.12.24-0+deb11u1 [243 kB]
+0 upgraded, 4 newly installed, 0 to remove and 20 not upgraded.
+Need to get 845 kB of archives.
+After this operation, 2796 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libdbus-1-3 amd64 1.12.20-2 [219 kB]
+Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libexpat1 amd64 2.2.10-2+deb11u3 [98.5 kB]
+Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 dbus amd64 1.12.20-2 [239 kB]
 Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 dialog amd64 1.3-20201126-1 [288 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -216,26 +216,34 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
+<<<<<<< HEAD
 Fetched 852 kB in 0s (23.9 MB/s)
+=======
+<<<<<<< HEAD
+Fetched 845 kB in 0s (38.5 MB/s)
+=======
+Fetched 852 kB in 0s (23.0 MB/s)
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9220 files and directories currently installed.)
-Preparing to unpack .../libdbus-1-3_1.12.24-0+deb11u1_amd64.deb ...
-Unpacking libdbus-1-3:amd64 (1.12.24-0+deb11u1) ...
+Preparing to unpack .../libdbus-1-3_1.12.20-2_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.12.20-2) ...
 Selecting previously unselected package libexpat1:amd64.
-Preparing to unpack .../libexpat1_2.2.10-2+deb11u5_amd64.deb ...
-Unpacking libexpat1:amd64 (2.2.10-2+deb11u5) ...
+Preparing to unpack .../libexpat1_2.2.10-2+deb11u3_amd64.deb ...
+Unpacking libexpat1:amd64 (2.2.10-2+deb11u3) ...
 Selecting previously unselected package dbus.
-Preparing to unpack .../dbus_1.12.24-0+deb11u1_amd64.deb ...
-Unpacking dbus (1.12.24-0+deb11u1) ...
+Preparing to unpack .../dbus_1.12.20-2_amd64.deb ...
+Unpacking dbus (1.12.20-2) ...
 Selecting previously unselected package dialog.
 Preparing to unpack .../dialog_1.3-20201126-1_amd64.deb ...
 Unpacking dialog (1.3-20201126-1) ...
-Setting up libexpat1:amd64 (2.2.10-2+deb11u5) ...
+Setting up libexpat1:amd64 (2.2.10-2+deb11u3) ...
 Setting up dialog (1.3-20201126-1) ...
-Setting up libdbus-1-3:amd64 (1.12.24-0+deb11u1) ...
-Setting up dbus (1.12.24-0+deb11u1) ...
+Setting up libdbus-1-3:amd64 (1.12.20-2) ...
+Setting up dbus (1.12.20-2) ...
 Running in chroot, ignoring request.
-Processing triggers for libc-bin (2.31-13+deb11u5) ...
+Processing triggers for libc-bin (2.31-13+deb11u4) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -253,8 +261,13 @@ The following NEW packages will be installed:
   busybox firmware-linux-free initramfs-tools initramfs-tools-core klibc-utils
   libklibc linux-base linux-image-6.0.0-0.deb11.2-amd64 linux-image-amd64
   live-boot live-boot-initramfs-tools rsync
+<<<<<<< HEAD
 0 upgraded, 12 newly installed, 0 to remove and 17 not upgraded.
 Need to get 73.3 MB of archives.
+=======
+0 upgraded, 12 newly installed, 0 to remove and 20 not upgraded.
+Need to get 73.2 MB of archives.
+>>>>>>> refs/remotes/origin/bullseye
 After this operation, 511 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 rsync amd64 3.2.7-1~bpo11+1 [429 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 busybox amd64 1:1.30.1-6+b3 [435 kB]
@@ -348,67 +361,67 @@ update-initramfs: Generating /boot/initrd.img-6.0.0-0.deb11.2-amd64
 live-boot: core filesystems devices utils udev blockdev dns.
 './cld' -> '/usr/local/cld'
 './cld/doc' -> '/usr/local/cld/doc'
-'./cld/doc/readarray-help.txt' -> '/usr/local/cld/doc/readarray-help.txt'
-'./cld/doc/touch-help.txt' -> '/usr/local/cld/doc/touch-help.txt'
-'./cld/doc/ps-help.txt' -> '/usr/local/cld/doc/ps-help.txt'
-'./cld/doc/java-help.txt' -> '/usr/local/cld/doc/java-help.txt'
-'./cld/doc/network-help.txt' -> '/usr/local/cld/doc/network-help.txt'
-'./cld/doc/swap-help.txt' -> '/usr/local/cld/doc/swap-help.txt'
-'./cld/doc/bash-error-help.txt' -> '/usr/local/cld/doc/bash-error-help.txt'
-'./cld/doc/column-help.txt' -> '/usr/local/cld/doc/column-help.txt'
-'./cld/doc/sed-help.txt' -> '/usr/local/cld/doc/sed-help.txt'
-'./cld/doc/timeout-help.txt' -> '/usr/local/cld/doc/timeout-help.txt'
-'./cld/doc/cut-help.txt' -> '/usr/local/cld/doc/cut-help.txt'
-'./cld/doc/bash-case-help.txt' -> '/usr/local/cld/doc/bash-case-help.txt'
-'./cld/doc/dpkg-help.txt' -> '/usr/local/cld/doc/dpkg-help.txt'
-'./cld/doc/printf-help.txt' -> '/usr/local/cld/doc/printf-help.txt'
 './cld/doc/awk-help.txt' -> '/usr/local/cld/doc/awk-help.txt'
-'./cld/doc/df-help.txt' -> '/usr/local/cld/doc/df-help.txt'
+'./cld/doc/bash-case-help.txt' -> '/usr/local/cld/doc/bash-case-help.txt'
+'./cld/doc/bash-error-help.txt' -> '/usr/local/cld/doc/bash-error-help.txt'
+'./cld/doc/bash-help.txt' -> '/usr/local/cld/doc/bash-help.txt'
+'./cld/doc/bash-if-help.txt' -> '/usr/local/cld/doc/bash-if-help.txt'
+'./cld/doc/bash-loop-help.txt' -> '/usr/local/cld/doc/bash-loop-help.txt'
+'./cld/doc/bash-msg-help.txt' -> '/usr/local/cld/doc/bash-msg-help.txt'
+'./cld/doc/blkid-help.txt' -> '/usr/local/cld/doc/blkid-help.txt'
+'./cld/doc/cat-help.txt' -> '/usr/local/cld/doc/cat-help.txt'
+'./cld/doc/column-help.txt' -> '/usr/local/cld/doc/column-help.txt'
+'./cld/doc/comm-help.txt' -> '/usr/local/cld/doc/comm-help.txt'
+'./cld/doc/cp-help.txt' -> '/usr/local/cld/doc/cp-help.txt'
 './cld/doc/crontab-help.txt' -> '/usr/local/cld/doc/crontab-help.txt'
+'./cld/doc/cut-help.txt' -> '/usr/local/cld/doc/cut-help.txt'
+'./cld/doc/date-help.txt' -> '/usr/local/cld/doc/date-help.txt'
+'./cld/doc/dd-help.txt' -> '/usr/local/cld/doc/dd-help.txt'
 './cld/doc/device-help.txt' -> '/usr/local/cld/doc/device-help.txt'
+'./cld/doc/df-help.txt' -> '/usr/local/cld/doc/df-help.txt'
+'./cld/doc/dpkg-help.txt' -> '/usr/local/cld/doc/dpkg-help.txt'
+'./cld/doc/dpkg-query-help.txt' -> '/usr/local/cld/doc/dpkg-query-help.txt'
 './cld/doc/du-help.txt' -> '/usr/local/cld/doc/du-help.txt'
+'./cld/doc/echo-help.txt' -> '/usr/local/cld/doc/echo-help.txt'
+'./cld/doc/file-help.txt' -> '/usr/local/cld/doc/file-help.txt'
+'./cld/doc/gnupg-help.txt' -> '/usr/local/cld/doc/gnupg-help.txt'
+'./cld/doc/gpg-help.txt' -> '/usr/local/cld/doc/gpg-help.txt'
+'./cld/doc/grep-help.txt' -> '/usr/local/cld/doc/grep-help.txt'
+'./cld/doc/head-help.txt' -> '/usr/local/cld/doc/head-help.txt'
+'./cld/doc/java-help.txt' -> '/usr/local/cld/doc/java-help.txt'
+'./cld/doc/ln-help.txt' -> '/usr/local/cld/doc/ln-help.txt'
 './cld/doc/locale-help.txt' -> '/usr/local/cld/doc/locale-help.txt'
 './cld/doc/ls-help.txt' -> '/usr/local/cld/doc/ls-help.txt'
-'./cld/doc/bash-help.txt' -> '/usr/local/cld/doc/bash-help.txt'
+'./cld/doc/lspci-help.txt' -> '/usr/local/cld/doc/lspci-help.txt'
+'./cld/doc/mount-help.txt' -> '/usr/local/cld/doc/mount-help.txt'
+'./cld/doc/network-help.txt' -> '/usr/local/cld/doc/network-help.txt'
+'./cld/doc/numfmt-help.txt' -> '/usr/local/cld/doc/numfmt-help.txt'
+'./cld/doc/partition-help.txt' -> '/usr/local/cld/doc/partition-help.txt'
+'./cld/doc/paste-help.txt' -> '/usr/local/cld/doc/paste-help.txt'
+'./cld/doc/perl-help.txt' -> '/usr/local/cld/doc/perl-help.txt'
+'./cld/doc/ping-help.txt' -> '/usr/local/cld/doc/ping-help.txt'
+'./cld/doc/pr-help.txt' -> '/usr/local/cld/doc/pr-help.txt'
+'./cld/doc/printf-help.txt' -> '/usr/local/cld/doc/printf-help.txt'
+'./cld/doc/ps-help.txt' -> '/usr/local/cld/doc/ps-help.txt'
+'./cld/doc/read-help.txt' -> '/usr/local/cld/doc/read-help.txt'
+'./cld/doc/rsync-help.txt' -> '/usr/local/cld/doc/rsync-help.txt'
+'./cld/doc/sed-help.txt' -> '/usr/local/cld/doc/sed-help.txt'
+'./cld/doc/sort-help.txt' -> '/usr/local/cld/doc/sort-help.txt'
+'./cld/doc/swap-help.txt' -> '/usr/local/cld/doc/swap-help.txt'
 './cld/doc/systemd-help.txt' -> '/usr/local/cld/doc/systemd-help.txt'
-'./cld/doc/dpkg-query-help.txt' -> '/usr/local/cld/doc/dpkg-query-help.txt'
 './cld/doc/tail-help.txt' -> '/usr/local/cld/doc/tail-help.txt'
 './cld/doc/tar-help.txt' -> '/usr/local/cld/doc/tar-help.txt'
 './cld/doc/tee-help.txt' -> '/usr/local/cld/doc/tee-help.txt'
-'./cld/doc/read-help.txt' -> '/usr/local/cld/doc/read-help.txt'
-'./cld/doc/ln-help.txt' -> '/usr/local/cld/doc/ln-help.txt'
-'./cld/doc/date-help.txt' -> '/usr/local/cld/doc/date-help.txt'
-'./cld/doc/bash-loop-help.txt' -> '/usr/local/cld/doc/bash-loop-help.txt'
-'./cld/doc/dd-help.txt' -> '/usr/local/cld/doc/dd-help.txt'
-'./cld/doc/lspci-help.txt' -> '/usr/local/cld/doc/lspci-help.txt'
-'./cld/doc/cp-help.txt' -> '/usr/local/cld/doc/cp-help.txt'
-'./cld/doc/bash-msg-help.txt' -> '/usr/local/cld/doc/bash-msg-help.txt'
-'./cld/doc/cat-help.txt' -> '/usr/local/cld/doc/cat-help.txt'
-'./cld/doc/gnupg-help.txt' -> '/usr/local/cld/doc/gnupg-help.txt'
-'./cld/doc/ping-help.txt' -> '/usr/local/cld/doc/ping-help.txt'
-'./cld/doc/head-help.txt' -> '/usr/local/cld/doc/head-help.txt'
-'./cld/doc/bash-if-help.txt' -> '/usr/local/cld/doc/bash-if-help.txt'
-'./cld/doc/partition-help.txt' -> '/usr/local/cld/doc/partition-help.txt'
-'./cld/doc/paste-help.txt' -> '/usr/local/cld/doc/paste-help.txt'
-'./cld/doc/gpg-help.txt' -> '/usr/local/cld/doc/gpg-help.txt'
-'./cld/doc/comm-help.txt' -> '/usr/local/cld/doc/comm-help.txt'
-'./cld/doc/pr-help.txt' -> '/usr/local/cld/doc/pr-help.txt'
-'./cld/doc/mount-help.txt' -> '/usr/local/cld/doc/mount-help.txt'
-'./cld/doc/perl-help.txt' -> '/usr/local/cld/doc/perl-help.txt'
-'./cld/doc/echo-help.txt' -> '/usr/local/cld/doc/echo-help.txt'
-'./cld/doc/sort-help.txt' -> '/usr/local/cld/doc/sort-help.txt'
-'./cld/doc/xargs-help.txt' -> '/usr/local/cld/doc/xargs-help.txt'
-'./cld/doc/find-help.txt' -> '/usr/local/cld/doc/find-help.txt'
-'./cld/doc/file-help.txt' -> '/usr/local/cld/doc/file-help.txt'
-'./cld/doc/blkid-help.txt' -> '/usr/local/cld/doc/blkid-help.txt'
-'./cld/doc/grep-help.txt' -> '/usr/local/cld/doc/grep-help.txt'
+'./cld/doc/timeout-help.txt' -> '/usr/local/cld/doc/timeout-help.txt'
+'./cld/doc/touch-help.txt' -> '/usr/local/cld/doc/touch-help.txt'
 './cld/doc/tr-help.txt' -> '/usr/local/cld/doc/tr-help.txt'
-'./cld/doc/numfmt-help.txt' -> '/usr/local/cld/doc/numfmt-help.txt'
-'./cld/doc/cld-help.txt' -> '/usr/local/cld/doc/cld-help.txt'
-'./cld/doc/rsync-help.txt' -> '/usr/local/cld/doc/rsync-help.txt'
+'./cld/doc/xargs-help.txt' -> '/usr/local/cld/doc/xargs-help.txt'
+'./cld/doc/readarray-help.txt' -> '/usr/local/cld/doc/readarray-help.txt'
 './cld/doc/lsb_release-help.txt' -> '/usr/local/cld/doc/lsb_release-help.txt'
-'./cld/doc/apt-get-help.txt' -> '/usr/local/cld/doc/apt-get-help.txt'
+'./cld/doc/cld-help.txt' -> '/usr/local/cld/doc/cld-help.txt'
 './cld/doc/wget-help.txt' -> '/usr/local/cld/doc/wget-help.txt'
+'./cld/doc/find-help.txt' -> '/usr/local/cld/doc/find-help.txt'
+'./cld/doc/apt-get-help.txt' -> '/usr/local/cld/doc/apt-get-help.txt'
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
@@ -418,21 +431,78 @@ ii  linux-image-6.0.0-0.deb11.2-amd64          6.0.3-1~bpo11+1 amd64        Linu
 un  linux-image-6.0.0-0.deb11.2-amd64-unsigned <none>          <none>       (no description available)
 ii  linux-image-amd64                          6.0.3-1~bpo11+1 amd64        Linux for 64-bit PCs (meta-package)
 un  linux-image-generic                        <none>          <none>       (no description available)
+<<<<<<< HEAD
 total 56400
+=======
+<<<<<<< HEAD
+total 56400
+=======
+total 56408
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
 -rw-r--r-- 1 root root       83 Oct 29 15:59 System.map-6.0.0-0.deb11.2-amd64
 -rw-r--r-- 1 root root   257218 Oct 29 15:59 config-6.0.0-0.deb11.2-amd64
+<<<<<<< HEAD
 -rw-r--r-- 1 root root 49759463 Jan  2 05:49 initrd.img-6.0.0-0.deb11.2-amd64
+=======
+<<<<<<< HEAD
+-rw-r--r-- 1 root root 49761019 Dec 21 18:56 initrd.img-6.0.0-0.deb11.2-amd64
+=======
+-rw-r--r-- 1 root root 49769273 Dec 22 03:48 initrd.img-6.0.0-0.deb11.2-amd64
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
 -rw-r--r-- 1 root root  7726816 Oct 29 15:59 vmlinuz-6.0.0-0.deb11.2-amd64
 e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.0.0-0.deb11.2-amd64
 f53ef0036a3ef07472146cb43e7c7404  /boot/config-6.0.0-0.deb11.2-amd64
+<<<<<<< HEAD
 9de0d1c8cc662071381d2052830d883a  /boot/initrd.img-6.0.0-0.deb11.2-amd64
+=======
+<<<<<<< HEAD
+d84463308da6540fbf446e14638090ba  /boot/initrd.img-6.0.0-0.deb11.2-amd64
+=======
+b0200a3a3e7975750691475a47d36f2a  /boot/initrd.img-6.0.0-0.deb11.2-amd64
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
 f7d067581e884dd4f37abb1e86214c77  /boot/vmlinuz-6.0.0-0.deb11.2-amd64
 total 48
+<<<<<<< HEAD
 lrwxrwxrwx   1 root root    7 Jan  2 05:48 bin -> usr/bin
 drwxr-xr-x   2 root root 4096 Jan  2 05:49 boot
 drwxr-xr-x  17 root root 3560 Jan  2 05:30 dev
 drwxr-xr-x  49 root root 4096 Jan  2 05:49 etc
+=======
+<<<<<<< HEAD
+lrwxrwxrwx   1 root root    7 Dec 21 18:54 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Dec 21 18:56 boot
+drwxr-xr-x  17 root root 3640 Dec 21 18:50 dev
+drwxr-xr-x  49 root root 4096 Dec 21 18:56 etc
+drwxr-xr-x   2 root root 4096 Sep  3 12:10 home
+lrwxrwxrwx   1 root root   37 Dec 21 18:55 initrd.img -> boot/initrd.img-6.0.0-0.deb11.2-amd64
+lrwxrwxrwx   1 root root    7 Dec 21 18:54 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Dec 21 18:54 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Dec 21 18:54 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Dec 21 18:54 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Dec 21 18:55 media
+drwxr-xr-x   2 root root 4096 Dec 21 18:55 mnt
+drwxr-xr-x   2 root root 4096 Dec 21 18:55 opt
+dr-xr-xr-x 269 root root    0 Dec 21 18:55 proc
+drwx------   3 root root 4096 Dec 21 18:55 root
+drwxr-xr-x   4 root root 4096 Dec 21 18:55 run
+lrwxrwxrwx   1 root root    8 Dec 21 18:54 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Dec 21 18:55 srv
+dr-xr-xr-x  13 root root    0 Dec 21 18:50 sys
+drwxrwxrwt   2 root root 4096 Dec 21 18:55 tmp
+drwxr-xr-x  14 root root 4096 Dec 21 18:55 usr
+drwxr-xr-x  11 root root 4096 Dec 21 18:55 var
+lrwxrwxrwx   1 root root   34 Dec 21 18:55 vmlinuz -> boot/vmlinuz-6.0.0-0.deb11.2-amd64
+=======
+lrwxrwxrwx   1 root root    7 Dec 22 03:47 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Dec 22 03:48 boot
+drwxr-xr-x  17 root root 3560 Dec 22 03:39 dev
+drwxr-xr-x  49 root root 4096 Dec 22 03:48 etc
+>>>>>>> refs/remotes/origin/bullseye
 drwxr-xr-x   2 root root 4096 Dec  9 19:15 home
+<<<<<<< HEAD
 lrwxrwxrwx   1 root root   37 Jan  2 05:49 initrd.img -> boot/initrd.img-6.0.0-0.deb11.2-amd64
 lrwxrwxrwx   1 root root    7 Jan  2 05:48 lib -> usr/lib
 lrwxrwxrwx   1 root root    9 Jan  2 05:48 lib32 -> usr/lib32
@@ -451,6 +521,35 @@ drwxrwxrwt   2 root root 4096 Jan  2 05:49 tmp
 drwxr-xr-x  14 root root 4096 Jan  2 05:48 usr
 drwxr-xr-x  11 root root 4096 Jan  2 05:48 var
 lrwxrwxrwx   1 root root   34 Jan  2 05:49 vmlinuz -> boot/vmlinuz-6.0.0-0.deb11.2-amd64
+=======
+lrwxrwxrwx   1 root root   37 Dec 22 03:47 initrd.img -> boot/initrd.img-6.0.0-0.deb11.2-amd64
+lrwxrwxrwx   1 root root    7 Dec 22 03:47 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Dec 22 03:47 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Dec 22 03:47 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Dec 22 03:47 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Dec 22 03:47 media
+drwxr-xr-x   2 root root 4096 Dec 22 03:47 mnt
+drwxr-xr-x   2 root root 4096 Dec 22 03:47 opt
+dr-xr-xr-x 288 root root    0 Dec 22 03:47 proc
+drwx------   3 root root 4096 Dec 22 03:47 root
+drwxr-xr-x   4 root root 4096 Dec 22 03:47 run
+lrwxrwxrwx   1 root root    8 Dec 22 03:47 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Dec 22 03:47 srv
+dr-xr-xr-x  13 root root    0 Dec 21 22:39 sys
+drwxrwxrwt   2 root root 4096 Dec 22 03:47 tmp
+drwxr-xr-x  14 root root 4096 Dec 22 03:47 usr
+drwxr-xr-x  11 root root 4096 Dec 22 03:47 var
+lrwxrwxrwx   1 root root   34 Dec 22 03:47 vmlinuz -> boot/vmlinuz-6.0.0-0.deb11.2-amd64
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-6.0.0-0.deb11.2-amd64.
+<<<<<<< HEAD
 CLDS: * Disk size = 998592K. Space Used = 638664K. Runtime = 00:00:00:32.
+=======
+<<<<<<< HEAD
+CLDS: * Disk size = 1120640K. Space Used = 638600K. Runtime = 00:00:00:54.
+=======
+CLDS: * Disk size = 998836K. Space Used = 638624K. Runtime = 00:00:00:32.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
