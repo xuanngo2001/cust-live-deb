@@ -1,19 +1,7 @@
 * >>>>>>>>> Running inst-min-con-filesystem-ntfs-3g.sh ...
   * After this operation, 1,903 kB of additional disk space will be used.
   * Install support for NTFS: ntfs-3g.
-<<<<<<< HEAD
-  * Disk size = 1257412K. Space Used = 2768K. Runtime = 00:00:00:15.
-=======
-<<<<<<< HEAD
-  * Disk size = 1135932K. Space Used = 2792K. Runtime = 00:00:00:11.
-=======
-<<<<<<< HEAD
-  * Disk size = 1257432K. Space Used = 2768K. Runtime = 00:00:00:19.
-=======
-  * Disk size = 1135600K. Space Used = 2772K. Runtime = 00:00:00:10.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1257824K. Space Used = 2796K. Runtime = 00:00:00:18.
   * The following NEW packages will be installed:
   ```bash
 libntfs-3g883 ntfs-3g

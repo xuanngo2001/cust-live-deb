@@ -1,19 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-nmap.sh ...
   * After this operation, 27.6 MB of additional disk space will be used.
   * Install nmap.
-<<<<<<< HEAD
-  * Disk size = 3910448K. Space Used = 34284K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 3800340K. Space Used = 34280K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 3910464K. Space Used = 34284K. Runtime = 00:00:00:03.
-=======
-  * Disk size = 3799812K. Space Used = 34280K. Runtime = 00:00:00:02.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 3922212K. Space Used = 34284K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 libblas3 liblinear4 liblua5.3-0 libpcap0.8 lua-lpeg
