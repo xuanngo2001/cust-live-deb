@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-hd-smartmontools.sh ...
   * After this operation, 2,168 kB of additional disk space will be used.
   * Install smartmontools.
-  * Disk size = 3249848K. Space Used = 3016K. Runtime = 00:00:00:02.
+  * Disk size = 3249880K. Space Used = 3016K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 smartmontools
