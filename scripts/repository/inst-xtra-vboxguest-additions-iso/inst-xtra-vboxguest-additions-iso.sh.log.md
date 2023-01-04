@@ -7,7 +7,20 @@
   * Assumed packages installed: bzip2 & Xserver installed.
   * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
   * Delete VBoxGuestAdditions.iso[60928K]. Space used could be negative due to this deletion.
+<<<<<<< HEAD
   * Disk size = 7107828K. Space Used = 59804K. Runtime = 00:00:00:25.
+=======
+  * Disk size = 7107844K. Space Used = 59804K. Runtime = 00:00:00:27.
+=======
+  * VirtualBox guest additions installed: version: 7.0.4 r154605.
+  * Delete VBoxGuestAdditions.iso[51728K]. Space used could be negative due to this deletion.
+<<<<<<< HEAD
+  * Disk size = 7085540K. Space Used = 69120K. Runtime = 00:00:00:20.
+=======
+  * Disk size = 7084868K. Space Used = 69016K. Runtime = 00:00:00:17.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 build-essential* dctrl-tools dkms libc6-dev* linux-compiler-gcc-10-x86

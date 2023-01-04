@@ -10,7 +10,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #	apt-get install -s -y <your-package> 
 
 # Install npm.
-	apt-get -y install npm
+	#apt-get -y install npm
 
 # Update to the latest version.
 	npm install npm@latest -g

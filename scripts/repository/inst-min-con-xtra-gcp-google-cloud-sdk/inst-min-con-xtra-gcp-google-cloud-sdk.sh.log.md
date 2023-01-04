@@ -1,7 +1,19 @@
 * >>>>>>>>> Running inst-min-con-xtra-gcp-google-cloud-sdk.sh ...
   * After this operation, 717 MB of additional disk space will be used.
   * Install google-cloud-sdk.
+<<<<<<< HEAD
   * Disk size = 3219152K. Space Used = 1106084K. Runtime = 00:00:01:09.
+=======
+<<<<<<< HEAD
+  * Disk size = 3109040K. Space Used = 1117244K. Runtime = 00:00:00:37.
+=======
+<<<<<<< HEAD
+  * Disk size = 3219168K. Space Used = 1106084K. Runtime = 00:00:01:17.
+=======
+  * Disk size = 3108516K. Space Used = 1117236K. Runtime = 00:00:00:33.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 google-cloud-sdk

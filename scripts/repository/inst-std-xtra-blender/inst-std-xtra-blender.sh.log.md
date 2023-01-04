@@ -4,7 +4,19 @@
   * Install blender3d.
   * Insert Blender 3D menu in Graphics.
   * http://download.blender.org/release/
+<<<<<<< HEAD
   * Disk size = 6132388K. Space Used = 464308K. Runtime = 00:00:00:17.
+=======
+<<<<<<< HEAD
+  * Disk size = 6093964K. Space Used = 435308K. Runtime = 00:00:00:10.
+=======
+<<<<<<< HEAD
+  * Disk size = 6132400K. Space Used = 464308K. Runtime = 00:00:00:16.
+=======
+  * Disk size = 6093412K. Space Used = 435324K. Runtime = 00:00:00:10.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 blender blender-data fonts-dejavu fonts-dejavu-extra gdal-data
