@@ -6,7 +6,15 @@
   * Add google chrome alias, chrome.
   * Set default browser: update-alternatives --config x-www-browser.
   * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
+<<<<<<< HEAD
   * Disk size = 5254964K. Space Used = 399108K. Runtime = 00:00:00:07.
+=======
+<<<<<<< HEAD
+  * Disk size = 5376164K. Space Used = 399128K. Runtime = 00:00:00:10.
+=======
+  * Disk size = 5254944K. Space Used = 399112K. Runtime = 00:00:00:07.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 google-chrome-stable xdg-utils

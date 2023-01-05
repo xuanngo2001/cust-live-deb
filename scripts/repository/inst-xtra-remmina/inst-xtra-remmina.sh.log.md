@@ -2,7 +2,15 @@
   * After this operation, 9,566 kB of additional disk space will be used.
   * Install remmina.
   * Need to remote desktop MS Windows machines.
+<<<<<<< HEAD
   * Disk size = 6818524K. Space Used = 10008K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 6939716K. Space Used = 9996K. Runtime = 00:00:00:06.
+=======
+  * Disk size = 6818504K. Space Used = 10008K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 libavahi-glib1 libavahi-ui-gtk3-0 libfreerdp2-2 libfreerdp-client2-2 libssh-4

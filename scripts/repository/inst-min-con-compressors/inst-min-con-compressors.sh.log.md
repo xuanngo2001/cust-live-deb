@@ -14,7 +14,15 @@
   * Install de/compressor: p7zip.
   * Install de/compressor: zpaq.
   * Add universal extractor: extract.sh.
+<<<<<<< HEAD
   * Disk size = 1125324K. Space Used = 11220K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 1247144K. Space Used = 11220K. Runtime = 00:00:00:05.
+=======
+  * Disk size = 1125320K. Space Used = 11220K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 bzip2 p7zip p7zip-full rar unrar

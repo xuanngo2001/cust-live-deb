@@ -2,7 +2,15 @@
   * After this operation, 224 MB of additional disk space will be used.
   * Install mariadb-server.
   * Set root password to [password].
+<<<<<<< HEAD
   * Disk size = 3494072K. Space Used = 363740K. Runtime = 00:00:00:05.
+=======
+<<<<<<< HEAD
+  * Disk size = 3615308K. Space Used = 363748K. Runtime = 00:00:00:11.
+=======
+  * Disk size = 3494080K. Space Used = 363748K. Runtime = 00:00:00:05.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 galera-4 gawk libconfig-inifiles-perl libdaxctl1 libdbi-perl
