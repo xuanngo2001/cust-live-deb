@@ -1,6 +1,2 @@
 * >>>>>>>>> Running inst-min-con-05-keyring-google.sh ...
-<<<<<<< HEAD
-  * Disk size = 1112524K. Space Used = 4K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 1233924K. Space Used = 4K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1112252K. Space Used = 4K. Runtime = 00:00:00:01.

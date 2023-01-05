@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-xsltproc.sh ...
   * After this operation, 164 kB of additional disk space will be used.
   * Install xsltproc to process Docbook.
-<<<<<<< HEAD
-  * Disk size = 4005676K. Space Used = 304K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 4127096K. Space Used = 304K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 4006008K. Space Used = 320K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 xsltproc

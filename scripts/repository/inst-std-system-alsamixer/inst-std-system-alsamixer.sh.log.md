@@ -1,7 +1,3 @@
 * >>>>>>>>> Running inst-std-system-alsamixer.sh ...
   * Insert Alsamixer menu in Administration.
-<<<<<<< HEAD
-  * Disk size = 5609016K. Space Used = 8K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 5730440K. Space Used = 8K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 5609340K. Space Used = 12K. Runtime = 00:00:00:01.

@@ -1,10 +1,6 @@
 * >>>>>>>>> Running inst-min-win-01-wm-terminal-xfce.sh ...
   * Install terminal: xfce4-terminal.
-<<<<<<< HEAD
-  * Disk size = 4346404K. Space Used = 0K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 4467804K. Space Used = 0K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 4346724K. Space Used = 0K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 exo-utils* libxfce4ui-2-0* xfce4-terminal*

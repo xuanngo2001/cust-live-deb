@@ -1,7 +1,3 @@
 * >>>>>>>>> Running inst-min-con-dircolors.sh ...
   * Set dircolors to use  to make ls more beautiful.
-<<<<<<< HEAD
-  * Disk size = 1125784K. Space Used = 24K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 1247188K. Space Used = 24K. Runtime = 00:00:00:00.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1125512K. Space Used = 24K. Runtime = 00:00:00:00.

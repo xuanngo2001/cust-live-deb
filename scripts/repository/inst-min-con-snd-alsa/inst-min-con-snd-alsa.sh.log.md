@@ -3,11 +3,7 @@
   * Install ALSA sound.
   * Test sound: aplay /usr/share/sounds/alsa/*.
   * Add key bindings.
-<<<<<<< HEAD
-  * Disk size = 1687944K. Space Used = 11368K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 1809340K. Space Used = 11368K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1687668K. Space Used = 11368K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 alsa-utils libasound2 libasound2-data libatopology2 libfftw3-single3
