@@ -1,7 +1,11 @@
 * >>>>>>>>> Running inst-xtra-atom.sh ...
   * After this operation, 21.6 MB of additional disk space will be used.
   * Install required packages for atom.
+<<<<<<< HEAD
   * Disk size = 6106040K. Space Used = 7152K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 6227436K. Space Used = 7156K. Runtime = 00:00:00:04.
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 gconf2 gconf2-common gconf-service gvfs-bin gvfs-common

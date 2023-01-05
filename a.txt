@@ -4,22 +4,12 @@ Error in log file: /media/master/github/cust-live-deb/logs/main.log
   E: Invalid archive member header
   E: Internal error, could not locate member control.tar{.zst,.lz4,.gz,.xz,.bz2,.lzma,}
   E: Prior errors apply to /var/cache/apt/archives/aptly_1.5.0_amd64.deb
-<<<<<<< HEAD
-=======
-  E: Failed to fetch http://localhost/aptly-repo/master_bullseye-main/pool/main/d/djvulibre/libdjvulibre21_3.5.28-2_amd64.deb  404  Not Found [IP: ::1 80]
-  E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
   CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
-  E: Unable to correct problems, you have held broken packages.
-  E: Sub-process /usr/bin/dpkg returned an error code (1)
-  E: Sub-process /usr/bin/dpkg returned an error code (1)
-  E: Sub-process /usr/bin/dpkg returned an error code (1)
->>>>>>> refs/remotes/origin/bullseye
 
 ------------------
 qcheck-command-not-found.sh:
 
-command not found in log file: /media/master/github/cust-live-deb/logs/main.log
-/root/scripts/repository/inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh: line 21: mpv: command not found
+No command not found: /media/master/github/cust-live-deb/logs/main.log
 
 ------------------
 qcheck-file-dir-not-found.sh:
@@ -120,8 +110,6 @@ qcheck-temporary-fix-scripts.sh:
 
    ./inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client-fix-libfido2-1-libcbor0/inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client-fix-libfido2-1-libcbor0.sh
    ./inst-min-con-xtra-mariadb-server-fix/inst-min-con-xtra-mariadb-server-fix.sh
-<<<<<<< HEAD
-=======
    ./inst-std-multimedia-mpv-fix2/inst-std-multimedia-mpv-fix2.sh
    ./inst-xtra-docker-ce-fix-iptables/inst-xtra-docker-ce-fix-iptables.sh
    ./inst-xtra-vboxguest-additions-iso-fix-dctrl-tools/inst-xtra-vboxguest-additions-iso-fix-dctrl-tools.sh
@@ -129,14 +117,9 @@ qcheck-temporary-fix-scripts.sh:
    ./z01-inst-min-con-00-linux-image-fix-systemd-timesyncd/inst-min-con-00-linux-image-fix-systemd-timesyncd.sh
    ./zinst-min-con-live-build-tools-fix-libxxhash0/inst-min-con-live-build-tools-fix-libxxhash0.sh
    ./zinst-min-con-live-build-tools-rsync-fix-libxxhash0/inst-min-con-live-build-tools-rsync-fix-libxxhash0.sh
->>>>>>> refs/remotes/origin/bullseye
    ./zinst-std-multimedia-mpv-fix/inst-std-multimedia-mpv-fix.sh
-<<<<<<< HEAD
-   ./zinst-xtra-web-dev-npm-fix/inst-xtra-web-dev-npm-fix.sh
-=======
    ./zinst-std-multimedia-xtra-ffmpeg-fix-ffplay/inst-std-multimedia-xtra-ffmpeg-fix-ffplay.sh
    ./zinst-xtra-web-dev-npm-fix/inst-xtra-web-dev-npm-fix.sh
    ./zx-inst-xtra-git-fix-libcurl3-gnutls/inst-xtra-git-fix-libcurl3-gnutls.sh
->>>>>>> refs/remotes/origin/bullseye
 All scripts above should be removed or merged in the official installation script.
 

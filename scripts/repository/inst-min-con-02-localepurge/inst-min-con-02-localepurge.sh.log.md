@@ -2,7 +2,11 @@
   * After this operation, 47.7 MB of additional disk space will be used.
   * Install localepurge to purge documentation of all languages, except en, en_US, en_US.UTF-8.
   * Reconfigure localepurge: dpkg-reconfigure localepurge
+<<<<<<< HEAD
   * Disk size = 1087548K. Space Used = 58676K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 1208948K. Space Used = 58676K. Runtime = 00:00:00:07.
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 libgdbm6 libgdbm-compat4 libperl5.32 localepurge perl
