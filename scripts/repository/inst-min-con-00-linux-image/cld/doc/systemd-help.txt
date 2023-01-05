@@ -14,7 +14,9 @@
     systemctl list-unit-files | grep enabled
     systemctl list-unit-files --state=running
     
+# List failed services
     systemctl list-units --type service --state running,failed
+    systemctl list-units --state=failed
 
 # Display content of *.service
     systemctl cat cld-systemd-start-stop.service
