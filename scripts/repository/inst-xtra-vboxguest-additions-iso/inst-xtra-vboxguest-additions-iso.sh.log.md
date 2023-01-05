@@ -6,8 +6,8 @@
   * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
   * Assumed packages installed: bzip2 & Xserver installed.
   * VirtualBox guest additions installed: version: 7.0.4 r154605.
-  * Delete VBoxGuestAdditions.iso[51732K]. Space used could be negative due to this deletion.
-  * Disk size = 7086452K. Space Used = 69228K. Runtime = 00:00:00:17.
+  * Delete VBoxGuestAdditions.iso[51728K]. Space used could be negative due to this deletion.
+  * Disk size = 7086316K. Space Used = 69232K. Runtime = 00:00:00:18.
   * The following NEW packages will be installed:
   ```bash
 build-essential* dctrl-tools dkms libc6-dev* linux-compiler-gcc-10-x86
