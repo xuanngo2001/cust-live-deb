@@ -1,2 +1,8 @@
-# Wrap line input into 2 columns.
+# Indent content by 4 spaces.
+    echo "hello" | pr -t -o4
+    
+# Put lines into 2 columns.
 	echo -e "1\nab\napple\nbanana" | pr -t -2 -o4
+
+# Number each line.
+    echo -e "1\nab\napple\nbanana" | pr -t -n
