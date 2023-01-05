@@ -1,15 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-hd-hdparm.sh ...
   * After this operation, 262 kB of additional disk space will be used.
   * Install hdparm.
-<<<<<<< HEAD
-  * Disk size = 3124960K. Space Used = 444K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 3235088K. Space Used = 440K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 3124440K. Space Used = 440K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 3125456K. Space Used = 444K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 hdparm

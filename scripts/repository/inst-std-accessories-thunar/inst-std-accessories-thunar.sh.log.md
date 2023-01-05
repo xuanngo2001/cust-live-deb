@@ -5,15 +5,7 @@
   * After this operation, 15.6 MB of additional disk space will be used.
   * Install Thunar file manager.
   * Insert Thunar in Accessories menu.
-<<<<<<< HEAD
-  * Disk size = 4508712K. Space Used = 32920K. Runtime = 00:00:00:04.
-=======
-<<<<<<< HEAD
-  * Disk size = 4621512K. Space Used = 32920K. Runtime = 00:00:00:05.
-=======
-  * Disk size = 4508108K. Space Used = 32924K. Runtime = 00:00:00:03.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 4509196K. Space Used = 32924K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 desktop-file-utils gnome-icon-theme librsvg2-common libthunarx-3-0 thunar

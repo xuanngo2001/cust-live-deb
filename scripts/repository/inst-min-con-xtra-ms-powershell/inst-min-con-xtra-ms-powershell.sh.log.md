@@ -1,14 +1,6 @@
 * >>>>>>>>> Running inst-min-con-xtra-ms-powershell.sh ...
   * Install PowerShell.
-<<<<<<< HEAD
-  * Disk size = 3716204K. Space Used = 222796K. Runtime = 00:00:01:03.
-=======
-<<<<<<< HEAD
-  * Disk size = 3826316K. Space Used = 222784K. Runtime = 00:00:00:04.
-=======
-  * Disk size = 3715680K. Space Used = 222792K. Runtime = 00:00:00:33.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 3716700K. Space Used = 222800K. Runtime = 00:00:00:33.
   * The following NEW packages will be installed:
   ```bash
 liblttng-ust0 liblttng-ust-ctl4 libnuma1 liburcu6

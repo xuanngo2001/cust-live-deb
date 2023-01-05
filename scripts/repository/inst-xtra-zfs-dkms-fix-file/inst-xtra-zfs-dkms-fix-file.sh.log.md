@@ -1,14 +1,6 @@
 * >>>>>>>>> Running inst-xtra-zfs-dkms-fix-file.sh ...
   * Install file.
-<<<<<<< HEAD
-  * Disk size = 5991784K. Space Used = 6084K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 6064420K. Space Used = 6256K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 6040188K. Space Used = 6256K. Runtime = 00:00:00:00.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 6039976K. Space Used = 6124K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 file
