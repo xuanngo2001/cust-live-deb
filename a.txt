@@ -4,7 +4,7 @@ Error in log file: /media/master/github/cust-live-deb/logs/main.log
   E: Invalid archive member header
   E: Internal error, could not locate member control.tar{.zst,.lz4,.gz,.xz,.bz2,.lzma,}
   E: Prior errors apply to /var/cache/apt/archives/aptly_1.5.0_amd64.deb
-  CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
+  E: Unable to correct problems, you have held broken packages.
 
 ------------------
 qcheck-command-not-found.sh:
@@ -93,7 +93,6 @@ qcheck-warning.sh:
 
 Warnings in log file: /media/master/github/cust-live-deb/logs/main.log
   Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
-  CLDS: * WARNING: Use this script only if backport repository doesn't work.
 
 ------------------
 qcheck-list-manual-packages.sh:
