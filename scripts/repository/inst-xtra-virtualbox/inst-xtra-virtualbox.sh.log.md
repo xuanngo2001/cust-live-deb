@@ -1,5 +1,5 @@
 * >>>>>>>>> Running inst-xtra-virtualbox.sh ...
-  * Disk size = 5796664K. Space Used = 6084K. Runtime = 00:00:00:00.
+  * Disk size = 5797116K. Space Used = 6084K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 libqt5x11extras5*
