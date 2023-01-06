@@ -58,12 +58,11 @@ if [ ! -z "${SYSTEM}" ]; then
   sed -i "/^${SYSTEM}:/b; s/^/${SYSTEM}: /" ./logs/main.size
   
   # Add system in the output file.
-  SYSTEM="-${SYSTEM}"
+  SYSTEM="_${SYSTEM}"
 fi
 
 # Copy vmlinuz & initrd in binary/live/.
 ##################################################################
-rm -rf ./binary
 mkdir -p ./binary/live/
 yes | cp ${CHROOT_DIR}/boot/vmlinuz-* ./binary/live/vmlinuz
 yes | cp ${CHROOT_DIR}/boot/initrd.img-* ./binary/live/initrd
@@ -118,7 +117,7 @@ APP_ID=cld-${architecture}
 version_codename=$(cat /etc/os-release| grep CODENAME| cut -d'=' -f2)
 iso_filename="cld_${version_codename}_K${KERNEL_VERSION}${SYSTEM}_${DATE_STRING}.iso"
 iso_filepath="${iso_output_dir}/${iso_filename}"
-touch ./binary/"${iso_filename}"
+rm -f ./binary/cld*.iso; touch ./binary/"${iso_filename}"
 xorriso -as mkisofs -r -J -joliet-long -l \
 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
 				-A "${APP_ID}"  \
