@@ -8,7 +8,7 @@ systems=( min min_xtra )
 systems+=( std std_xtra )
 systems+=( home home_inspiron )
 systems+=( work work_no_proxy )
-systems+=( all )
+systems+=( no_proxy all )
 for system in "${systems[@]}"
 do
   test_output_filename=test-scripts_${system}_${date_str}.txt
