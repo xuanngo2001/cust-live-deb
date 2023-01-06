@@ -2,15 +2,7 @@
   * After this operation, 47.7 MB of additional disk space will be used.
   * Install localepurge to purge documentation of all languages, except en, en_US, en_US.UTF-8.
   * Reconfigure localepurge: dpkg-reconfigure localepurge
-<<<<<<< HEAD
-  * Disk size = 1087112K. Space Used = 58676K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 1208928K. Space Used = 58676K. Runtime = 00:00:00:06.
-=======
-  * Disk size = 1087108K. Space Used = 58676K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 869128K. Space Used = 58672K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libgdbm6 libgdbm-compat4 libperl5.32 localepurge perl

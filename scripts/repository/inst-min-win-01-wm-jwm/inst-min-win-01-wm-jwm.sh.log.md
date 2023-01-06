@@ -3,15 +3,7 @@
   * Install Window Manager jwm: JWM v2.3.7 by Joe Wingbermuehle.
   * Set .
   * Change X window manager: update-alternatives --config x-window-manager
-<<<<<<< HEAD
-  * Disk size = 4346600K. Space Used = 108480K. Runtime = 00:00:00:06.
-=======
-<<<<<<< HEAD
-  * Disk size = 4467796K. Space Used = 108460K. Runtime = 00:00:00:15.
-=======
-  * Disk size = 4346584K. Space Used = 108484K. Runtime = 00:00:00:06.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 3988680K. Space Used = 108472K. Runtime = 00:00:00:06.
   * The following NEW packages will be installed:
   ```bash
 adwaita-icon-theme dbus-user-session dconf-gsettings-backend dconf-service exo-utils
