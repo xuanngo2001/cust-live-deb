@@ -15,3 +15,4 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Log
 	echo "${GV_LOG} * Install bat."
+	echo "${GV_LOG} * batcat file.sh."
