@@ -7,14 +7,14 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Add source url.
-  GF_ADD_SOURCE_LIST live "deb https://download.virtualbox.org/virtualbox/debian bionic contrib"
+  GF_ADD_SOURCE_LIST live "deb https://download.virtualbox.org/virtualbox/debian bullseye contrib"
 
 # Explicitly download dependent packages
 #   apt-get install -s -y <your-package> 
 
 
 # Install virtualbox.
-  apt-get -y install virtualbox-6.1 libqt5opengl5 libqt5x11extras5
+  apt-get -y install virtualbox-7.0 libqt5opengl5 libqt5x11extras5
 
 
 # Log

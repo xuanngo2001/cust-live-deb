@@ -6,19 +6,18 @@ The following additional packages will be installed:
   ca-certificates ca-certificates-java fontconfig-config fonts-dejavu-core
   java-common libavahi-client3 libavahi-common-data libavahi-common3 libcups2
   libfontconfig1 libfreetype6 libgraphite2-3 libharfbuzz0b libjpeg62-turbo
-  liblcms2-2 libnspr4 libnss3 libpcsclite1 libpng16-16 openjdk-11-jre-headless
-  openssl
+  liblcms2-2 libnspr4 libnss3 libpng16-16 openjdk-11-jre-headless openssl
 Suggested packages:
-  default-jre cups-common liblcms2-utils pcscd libnss-mdns fonts-dejavu-extra
+  default-jre cups-common liblcms2-utils libnss-mdns fonts-dejavu-extra
   fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei
   | fonts-wqy-zenhei fonts-indic
 The following NEW packages will be installed:
   ca-certificates ca-certificates-java default-jre-headless fontconfig-config
   fonts-dejavu-core java-common libavahi-client3 libavahi-common-data
   libavahi-common3 libcups2 libfontconfig1 libfreetype6 libgraphite2-3
-  libharfbuzz0b libjpeg62-turbo liblcms2-2 libnspr4 libnss3 libpcsclite1
-  libpng16-16 openjdk-11-jre-headless openssl
-0 upgraded, 22 newly installed, 0 to remove and 17 not upgraded.
+  libharfbuzz0b libjpeg62-turbo liblcms2-2 libnspr4 libnss3 libpng16-16
+  openjdk-11-jre-headless openssl
+0 upgraded, 21 newly installed, 0 to remove and 17 not upgraded.
 Need to get 44.7 MB of archives.
 After this operation, 188 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 openssl amd64 1.1.1n-0+deb11u3 [853 kB]
@@ -39,14 +38,13 @@ Get:15 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libn
 Get:16 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libnss3 amd64 2:3.61-1+deb11u2 [1,306 kB]
 Get:17 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libgraphite2-3 amd64 1.3.14-1 [81.2 kB]
 Get:18 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libharfbuzz0b amd64 2.7.4-1 [1,471 kB]
-Get:19 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpcsclite1 amd64 1.9.1-1 [60.2 kB]
-Get:20 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 openjdk-11-jre-headless amd64 11.0.16+8-1~deb11u1 [37.3 MB]
-Get:21 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 default-jre-headless amd64 2:1.11-72 [10.9 kB]
-Get:22 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 ca-certificates-java all 20190909 [15.7 kB]
+Get:19 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 openjdk-11-jre-headless amd64 11.0.16+8-1~deb11u1 [37.3 MB]
+Get:20 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 default-jre-headless amd64 2:1.11-72 [10.9 kB]
+Get:21 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 ca-certificates-java all 20190909 [15.7 kB]
 Preconfiguring packages ...
-Fetched 44.7 MB in 0s (113 MB/s)
+Fetched 44.7 MB in 0s (111 MB/s)
 Selecting previously unselected package openssl.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21677 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21910 files and directories currently installed.)
 Preparing to unpack .../00-openssl_1.1.1n-0+deb11u3_amd64.deb ...
 Unpacking openssl (1.1.1n-0+deb11u3) ...
 Selecting previously unselected package ca-certificates.
@@ -100,17 +98,14 @@ Unpacking libgraphite2-3:amd64 (1.3.14-1) ...
 Selecting previously unselected package libharfbuzz0b:amd64.
 Preparing to unpack .../17-libharfbuzz0b_2.7.4-1_amd64.deb ...
 Unpacking libharfbuzz0b:amd64 (2.7.4-1) ...
-Selecting previously unselected package libpcsclite1:amd64.
-Preparing to unpack .../18-libpcsclite1_1.9.1-1_amd64.deb ...
-Unpacking libpcsclite1:amd64 (1.9.1-1) ...
 Selecting previously unselected package openjdk-11-jre-headless:amd64.
-Preparing to unpack .../19-openjdk-11-jre-headless_11.0.16+8-1~deb11u1_amd64.deb ...
+Preparing to unpack .../18-openjdk-11-jre-headless_11.0.16+8-1~deb11u1_amd64.deb ...
 Unpacking openjdk-11-jre-headless:amd64 (11.0.16+8-1~deb11u1) ...
 Selecting previously unselected package default-jre-headless.
-Preparing to unpack .../20-default-jre-headless_2%3a1.11-72_amd64.deb ...
+Preparing to unpack .../19-default-jre-headless_2%3a1.11-72_amd64.deb ...
 Unpacking default-jre-headless (2:1.11-72) ...
 Selecting previously unselected package ca-certificates-java.
-Preparing to unpack .../21-ca-certificates-java_20190909_all.deb ...
+Preparing to unpack .../20-ca-certificates-java_20190909_all.deb ...
 Unpacking ca-certificates-java (20190909) ...
 Setting up libgraphite2-3:amd64 (1.3.14-1) ...
 Setting up liblcms2-2:amd64 (2.12~rc1-2) ...
@@ -120,7 +115,6 @@ Setting up libnspr4:amd64 (2:4.29-1) ...
 Setting up libavahi-common-data:amd64 (0.8-5+deb11u1) ...
 Setting up libpng16-16:amd64 (1.6.37-3) ...
 Setting up fonts-dejavu-core (2.37-2) ...
-Setting up libpcsclite1:amd64 (1.9.1-1) ...
 Setting up openssl (1.1.1n-0+deb11u3) ...
 Setting up fontconfig-config (2.13.1-4.2) ...
 Setting up libavahi-common3:amd64 (0.8-5+deb11u1) ...
@@ -287,4 +281,4 @@ update-alternatives: using /usr/lib/jvm/java-11-openjdk-amd64/lib/jexec to provi
 CLDS: * Install openjdk version "11.0.16" 2022-07-19.
 CLDS: * To install JAVA binary: https://wiki.debian.org/JavaPackage.
 CLDS: * JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java".
-CLDS: * Disk size = 1625112K. Space Used = 240900K. Runtime = 00:00:00:06.
+CLDS: * Disk size = 1772996K. Space Used = 240724K. Runtime = 00:00:00:06.
