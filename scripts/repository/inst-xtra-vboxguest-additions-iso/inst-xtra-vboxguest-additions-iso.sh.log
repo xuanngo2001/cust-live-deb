@@ -3,12 +3,13 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  linux-compiler-gcc-10-x86 linux-headers-6.0.0-0.deb11.6-amd64
-  linux-headers-6.0.0-0.deb11.6-common linux-kbuild-6.0
+  linux-compiler-gcc-10-x86 linux-headers-5.10.0-20-amd64
+  linux-headers-5.10.0-20-common linux-kbuild-5.10
 The following NEW packages will be installed:
-  linux-compiler-gcc-10-x86 linux-headers-6.0.0-0.deb11.6-amd64
-  linux-headers-6.0.0-0.deb11.6-common linux-headers-amd64 linux-kbuild-6.0
+  linux-compiler-gcc-10-x86 linux-headers-5.10.0-20-amd64
+  linux-headers-5.10.0-20-common linux-headers-amd64 linux-kbuild-5.10
 0 upgraded, 5 newly installed, 0 to remove and 17 not upgraded.
+<<<<<<< HEAD
 Need to get 12.1 MB of archives.
 After this operation, 62.4 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 linux-compiler-gcc-10-x86 amd64 6.0.12-1~bpo11+1 [559 kB]
@@ -17,6 +18,16 @@ Get:3 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backpo
 Get:4 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 linux-headers-6.0.0-0.deb11.6-amd64 amd64 6.0.12-1~bpo11+1 [1,046 kB]
 Get:5 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 linux-headers-amd64 amd64 6.0.12-1~bpo11+1 [1,432 B]
 Fetched 12.1 MB in 0s (97.9 MB/s)
+=======
+Need to get 11.4 MB of archives.
+After this operation, 61.2 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 linux-compiler-gcc-10-x86 amd64 5.10.158-2 [540 kB]
+Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 linux-headers-5.10.0-20-common all 5.10.158-2 [9,055 kB]
+Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 linux-kbuild-5.10 amd64 5.10.158-2 [786 kB]
+Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 linux-headers-5.10.0-20-amd64 amd64 5.10.158-2 [1,062 kB]
+Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 linux-headers-amd64 amd64 5.10.158-2 [1,180 B]
+Fetched 11.4 MB in 0s (82.8 MB/s)
+>>>>>>> refs/remotes/origin/bullseye
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -38,9 +49,17 @@ Need to get 182 kB of archives.
 After this operation, 734 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 dctrl-tools amd64 2.24-3+b1 [104 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 dkms all 2.8.4-3 [78.2 kB]
+<<<<<<< HEAD
 Fetched 182 kB in 0s (10.7 MB/s)
+=======
+Fetched 182 kB in 0s (7,049 kB/s)
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package dctrl-tools.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 101797 files and directories currently installed.)
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 101714 files and directories currently installed.)
+>>>>>>> refs/remotes/origin/bullseye
 Preparing to unpack .../dctrl-tools_2.24-3+b1_amd64.deb ...
 Unpacking dctrl-tools (2.24-3+b1) ...
 Selecting previously unselected package dkms.
@@ -52,15 +71,15 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  linux-compiler-gcc-10-x86 linux-headers-6.0.0-0.deb11.6-common
-  linux-kbuild-6.0
+  linux-compiler-gcc-10-x86 linux-headers-5.10.0-20-common linux-kbuild-5.10
 The following NEW packages will be installed:
-  linux-compiler-gcc-10-x86 linux-headers-6.0.0-0.deb11.6-amd64
-  linux-headers-6.0.0-0.deb11.6-common linux-kbuild-6.0
+  linux-compiler-gcc-10-x86 linux-headers-5.10.0-20-amd64
+  linux-headers-5.10.0-20-common linux-kbuild-5.10
 0 upgraded, 4 newly installed, 0 to remove and 17 not upgraded.
-Need to get 0 B/12.1 MB of archives.
-After this operation, 62.4 MB of additional disk space will be used.
+Need to get 0 B/11.4 MB of archives.
+After this operation, 61.2 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-10-x86.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 101899 files and directories currently installed.)
 Preparing to unpack .../linux-compiler-gcc-10-x86_6.0.12-1~bpo11+1_amd64.deb ...
 Unpacking linux-compiler-gcc-10-x86 (6.0.12-1~bpo11+1) ...
@@ -77,10 +96,34 @@ Setting up linux-compiler-gcc-10-x86 (6.0.12-1~bpo11+1) ...
 Setting up linux-headers-6.0.0-0.deb11.6-common (6.0.12-1~bpo11+1) ...
 Setting up linux-kbuild-6.0 (6.0.12-1~bpo11+1) ...
 Setting up linux-headers-6.0.0-0.deb11.6-amd64 (6.0.12-1~bpo11+1) ...
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 101816 files and directories currently installed.)
+Preparing to unpack .../linux-compiler-gcc-10-x86_5.10.158-2_amd64.deb ...
+Unpacking linux-compiler-gcc-10-x86 (5.10.158-2) ...
+Selecting previously unselected package linux-headers-5.10.0-20-common.
+Preparing to unpack .../linux-headers-5.10.0-20-common_5.10.158-2_all.deb ...
+Unpacking linux-headers-5.10.0-20-common (5.10.158-2) ...
+Selecting previously unselected package linux-kbuild-5.10.
+Preparing to unpack .../linux-kbuild-5.10_5.10.158-2_amd64.deb ...
+Unpacking linux-kbuild-5.10 (5.10.158-2) ...
+Selecting previously unselected package linux-headers-5.10.0-20-amd64.
+Preparing to unpack .../linux-headers-5.10.0-20-amd64_5.10.158-2_amd64.deb ...
+Unpacking linux-headers-5.10.0-20-amd64 (5.10.158-2) ...
+Setting up linux-compiler-gcc-10-x86 (5.10.158-2) ...
+Setting up linux-headers-5.10.0-20-common (5.10.158-2) ...
+Setting up linux-kbuild-5.10 (5.10.158-2) ...
+Setting up linux-headers-5.10.0-20-amd64 (5.10.158-2) ...
+>>>>>>> refs/remotes/origin/bullseye
 /etc/kernel/header_postinst.d/dkms:
+<<<<<<< HEAD
 dkms: running auto installation service for kernel 6.0.0-0.deb11.6-amd64:.
 Verifying archive integrity... All good.
 Uncompressing VirtualBox 6.1.32 Guest Additions for Linux........
+=======
+dkms: running auto installation service for kernel 5.10.0-20-amd64:.
+Verifying archive integrity...     0%    70%  100%   MD5 checksums are OK. All good.
+Uncompressing VirtualBox 7.0.4 Guest Additions for Linux     0%    70%  100%  
+>>>>>>> refs/remotes/origin/bullseye
 VirtualBox Guest Additions installer
 Copying additional installer modules ...
 Installing additional modules ...
@@ -91,17 +134,36 @@ VirtualBox Guest Additions: To build modules for other installed kernels, run
 VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
 VirtualBox Guest Additions: or
 VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup all
+<<<<<<< HEAD
 VirtualBox Guest Additions: Building the modules for kernel 
 6.0.0-0.deb11.6-amd64.
 
 VirtualBox Guest Additions: Look at /var/log/vboxadd-setup.log to find out what 
 went wrong
+=======
+VirtualBox Guest Additions: Building the modules for kernel 5.10.0-20-amd64.
+[0;1;31mFailed to connect to bus: No such file or directory[0m
+>>>>>>> refs/remotes/origin/bullseye
 VirtualBox Guest Additions: Running kernel modules will not be replaced until 
 the system is restarted
+<<<<<<< HEAD
 Running in chroot, ignoring command 'daemon-reload'
+=======
+Setting up modules
+VirtualBox Guest Additions kernel modules 7.0.4 r154605 are already available 
+for kernel 5.10.0-20-amd64 and do not require to be rebuilt.
+Running kernel modules will not be replaced until the system is restarted
+vboxadd-service.sh: Starting VirtualBox Guest Addition service.
+>>>>>>> refs/remotes/origin/bullseye
 CLDS: * WARNING: Use this script only if backport repository doesn't work.
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
+<<<<<<< HEAD
 CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
 CLDS: * Delete VBoxGuestAdditions.iso[60928K]. Space used could be negative due to this deletion.
 CLDS: * Disk size = 7199460K. Space Used = 60020K. Runtime = 00:00:00:25.
+=======
+CLDS: * VirtualBox guest additions installed: version: 7.0.4 r154605.
+CLDS: * Delete VBoxGuestAdditions.iso[51728K]. Space used could be negative due to this deletion.
+CLDS: * Disk size = 6881508K. Space Used = 74408K. Runtime = 00:00:00:17.
+>>>>>>> refs/remotes/origin/bullseye

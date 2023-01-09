@@ -23,6 +23,13 @@ fct_all()
     find $(readlink -ev ./repository/inst-*) -type f -name "inst-*.sh" | sort
   }
 
+fct_no_proxy()
+  {
+    local scripts_list=$(fct_all)
+    scripts_list=$(echo "${scripts_list}" | grep -vF 'proxy')
+    echo "${scripts_list}"
+  }
+  
 fct_work()
   {
     local scripts_list=$(fct_all)
@@ -141,9 +148,14 @@ case "${SYSTEM}" in
     fct_work > ${SCRIPT_LIST}
 	  ;;
 
-  # Most of applications but without proxy settings.  
+  # Most of applications but without proxy settings and virtualbox.  
   work_no_proxy)
     fct_work_no_proxy > ${SCRIPT_LIST}
+    ;;
+
+  # Most of applications but without proxy settings.  
+  no_proxy)
+    fct_no_proxy > ${SCRIPT_LIST}
     ;;
     
   # All install scripts in the repository.  

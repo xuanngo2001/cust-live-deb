@@ -58,7 +58,7 @@ if [ ! -z "${SYSTEM}" ]; then
   sed -i "/^${SYSTEM}:/b; s/^/${SYSTEM}: /" ./logs/main.size
   
   # Add system in the output file.
-  SYSTEM="-${SYSTEM}"
+  SYSTEM="_${SYSTEM}"
 fi
 
 # Copy vmlinuz & initrd in binary/live/.
@@ -115,7 +115,9 @@ mksquashfs "${CHROOT_DIR}" ./binary/live/filesystem.squashfs -comp xz
 architecture=$(dpkg --print-architecture)
 APP_ID=cld-${architecture}
 version_codename=$(cat /etc/os-release| grep CODENAME| cut -d'=' -f2)
-ISO_FILENAME="${iso_output_dir}/${APP_ID}_${version_codename}${SYSTEM}_${DATE_STRING}.iso"
+iso_filename="cld_${version_codename}_K${KERNEL_VERSION}${SYSTEM}_${DATE_STRING}.iso"
+iso_filepath="${iso_output_dir}/${iso_filename}"
+rm -f ./binary/cld*.iso; touch ./binary/"${iso_filename}"
 xorriso -as mkisofs -r -J -joliet-long -l \
 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
 				-A "${APP_ID}"  \
@@ -123,15 +125,15 @@ xorriso -as mkisofs -r -J -joliet-long -l \
 				-b isolinux/isolinux.bin \
 				-c isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
 				-boot-info-table \
-				-o ${ISO_FILENAME} \
+				-o ${iso_filepath} \
 				./binary
 
-md5sum "${ISO_FILENAME}" > "${ISO_FILENAME}.md5"
+md5sum "${iso_filepath}" > "${iso_filepath}.md5"
 
 # Log directories size.
 ##################################################################
 SIZE_LOG=sizes.log
-echo "${ISO_FILENAME}" >> ${SIZE_LOG}
+echo "${iso_filepath}" >> ${SIZE_LOG}
 du -h -c ./binary | sed 's/^/   /' >> ${SIZE_LOG}
 du -h -c -d 1 "${CHROOT_DIR}" | sed 's/^/   /' >> ${SIZE_LOG}
 echo "" >> ${SIZE_LOG}

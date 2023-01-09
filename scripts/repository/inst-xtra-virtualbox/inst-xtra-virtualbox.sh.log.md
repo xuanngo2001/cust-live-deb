@@ -1,10 +1,9 @@
 * >>>>>>>>> Running inst-xtra-virtualbox.sh ...
-<<<<<<< HEAD
-  * Disk size = 5797116K. Space Used = 6084K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 5918464K. Space Used = 6084K. Runtime = 00:00:00:01.
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * After this operation, 218 MB of additional disk space will be used.
+  * Install virtualbox.
+  * Disk size = 5975664K. Space Used = 311096K. Runtime = 00:00:00:14.
   * The following NEW packages will be installed:
   ```bash
-libqt5x11extras5*
+libqt5help5 libqt5opengl5 libqt5printsupport5 libqt5sql5 libqt5x11extras5*
+libqt5xml5 virtualbox-7.0
   ```

@@ -40,3 +40,6 @@
 
 systemd-analyze blame --no-pager
 systemd-analyze dump
+
+# Debug service: display logs of NetworkManager service
+	journalctl -n 1000 -u NetworkManager

@@ -16,4 +16,4 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	yes | cp -av ./cld  /usr/local
 
 # Log
-	echo "${GV_LOG} * Install network-manager."
+	echo "${GV_LOG} * Install network-manager: nmcli"
