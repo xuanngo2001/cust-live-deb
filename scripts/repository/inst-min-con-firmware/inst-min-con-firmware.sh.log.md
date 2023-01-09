@@ -15,15 +15,7 @@
   * After this operation, 4,109 kB of additional disk space will be used.
   * After this operation, 66.6 kB of additional disk space will be used.
   * Install firmwares.
-<<<<<<< HEAD
-  * Disk size = 1624592K. Space Used = 435624K. Runtime = 00:00:01:00.
-=======
-<<<<<<< HEAD
-  * Disk size = 1746408K. Space Used = 435608K. Runtime = 00:00:01:57.
-=======
-  * Disk size = 1624588K. Space Used = 435620K. Runtime = 00:00:01:04.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 1746908K. Space Used = 435616K. Runtime = 00:00:01:27.
   * The following NEW packages will be installed:
   ```bash
 atmel-firmware bluez-firmware firmware-amd-graphics firmware-atheros firmware-bnx2

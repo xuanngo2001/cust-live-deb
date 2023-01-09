@@ -3,15 +3,7 @@
   * After this operation, 3,942 kB of additional disk space will be used.
   * After this operation, 354 MB of additional disk space will be used.
   * Install docker-ce.
-<<<<<<< HEAD
-  * Disk size = 6548044K. Space Used = 441312K. Runtime = 00:00:00:43.
-=======
-<<<<<<< HEAD
-  * Disk size = 6669232K. Space Used = 441312K. Runtime = 00:00:00:17.
-=======
-  * Disk size = 6548024K. Space Used = 441316K. Runtime = 00:00:00:42.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 6670380K. Space Used = 441348K. Runtime = 00:00:00:16.
   * The following NEW packages will be installed:
   ```bash
 apt-transport-https* ca-certificates* containerd.io curl* distro-info-data

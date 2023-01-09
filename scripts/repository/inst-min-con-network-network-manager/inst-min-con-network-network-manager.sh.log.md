@@ -1,15 +1,7 @@
 * >>>>>>>>> Running inst-min-con-network-network-manager.sh ...
   * After this operation, 26.0 MB of additional disk space will be used.
   * Install network-manager.
-<<<<<<< HEAD
-  * Disk size = 1663868K. Space Used = 24832K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 1785676K. Space Used = 24828K. Runtime = 00:00:00:05.
-=======
-  * Disk size = 1663864K. Space Used = 24832K. Runtime = 00:00:00:02.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 1786176K. Space Used = 24828K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libbluetooth3 libbrotli1 libcurl3-gnutls libglib2.0-0 libmm-glib0
