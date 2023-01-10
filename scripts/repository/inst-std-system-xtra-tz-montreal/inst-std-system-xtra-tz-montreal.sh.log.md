@@ -1,7 +1,3 @@
 * >>>>>>>>> Running inst-std-system-xtra-tz-montreal.sh ...
   * Set time: Montreal.
-<<<<<<< HEAD
-  * Disk size = 5781644K. Space Used = 4K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 5449296K. Space Used = 4K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 5788216K. Space Used = 4K. Runtime = 00:00:00:01.

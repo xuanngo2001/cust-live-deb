@@ -3,11 +3,7 @@
   * Install Window Manager jwm: JWM v2.3.7 by Joe Wingbermuehle.
   * Set .
   * Change X window manager: update-alternatives --config x-window-manager
-<<<<<<< HEAD
-  * Disk size = 4468896K. Space Used = 108460K. Runtime = 00:00:00:41.
-=======
-  * Disk size = 4136564K. Space Used = 108480K. Runtime = 00:00:00:05.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 4475456K. Space Used = 108460K. Runtime = 00:00:00:11.
   * The following NEW packages will be installed:
   ```bash
 adwaita-icon-theme dbus-user-session dconf-gsettings-backend dconf-service exo-utils

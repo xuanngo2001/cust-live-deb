@@ -4,11 +4,7 @@
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
-<<<<<<< HEAD
-  * Disk size = 4360432K. Space Used = 4248K. Runtime = 00:00:00:12.
-=======
-  * Disk size = 4028080K. Space Used = 4264K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 4366992K. Space Used = 4264K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 libevdev2 libgudev-1.0-0 libinput10 libinput-bin libmtdev1

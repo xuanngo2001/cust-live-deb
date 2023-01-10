@@ -3,11 +3,7 @@
   * Install openjdk version "11.0.16" 2022-07-19.
   * To install JAVA binary: https://wiki.debian.org/JavaPackage.
   * JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java".
-<<<<<<< HEAD
-  * Disk size = 2105324K. Space Used = 240912K. Runtime = 00:00:00:10.
-=======
-  * Disk size = 1772996K. Space Used = 240724K. Runtime = 00:00:00:06.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 2111900K. Space Used = 240724K. Runtime = 00:00:00:09.
   * The following NEW packages will be installed:
   ```bash
 ca-certificates ca-certificates-java default-jre-headless fontconfig-config fonts-dejavu-core
