@@ -15,7 +15,11 @@
   * After this operation, 4,109 kB of additional disk space will be used.
   * After this operation, 66.6 kB of additional disk space will be used.
   * Install firmwares.
+<<<<<<< HEAD
   * Disk size = 1408192K. Space Used = 436848K. Runtime = 00:00:00:48.
+=======
+  * Disk size = 1746904K. Space Used = 435620K. Runtime = 00:00:01:29.
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 atmel-firmware bluez-firmware firmware-amd-graphics firmware-atheros firmware-bnx2
