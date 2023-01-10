@@ -589,8 +589,9 @@
 <li><a href="#useful-commands"><span class="toc-section-number">2.3</span> Useful commands</a></li>
 <li><a href="#hot-keys"><span class="toc-section-number">2.4</span> Hot keys</a>
 <ul>
-<li><a href="#main-operations"><span class="toc-section-number">2.4.1</span> Main operations</a></li>
-<li><a href="#operations-on-window"><span class="toc-section-number">2.4.2</span> Operations on window</a></li>
+<li><a href="#boot-menu"><span class="toc-section-number">2.4.1</span> Boot menu</a></li>
+<li><a href="#main-operations"><span class="toc-section-number">2.4.2</span> Main operations</a></li>
+<li><a href="#operations-on-window"><span class="toc-section-number">2.4.3</span> Operations on window</a></li>
 </ul></li>
 <li><a href="#install-new-applications"><span class="toc-section-number">2.5</span> Install new applications</a></li>
 </ul></li>
@@ -802,12 +803,24 @@ grep -iE &quot;s[0-9]+e[0-9]+&quot; FILE
 grep --color -E &#39;pattern|$&#39; file
 
 # Download a single web page. In case robots.txt is disallowing, add -e robots=off
-wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
+wget -E -H -k -K -p http://your-web-page.com/page1.html
+
+# Change screen brightness.
+xrandr --output LVDS-1 --brightness .6
+
+# Turn off screen.
+xset dpms force off</code></pre>
 </section>
 <section id="hot-keys" class="level2" data-number="2.4">
 <h2 data-number="2.4"><span class="header-section-number">2.4</span> Hot keys</h2>
-<section id="main-operations" class="level3" data-number="2.4.1">
-<h3 data-number="2.4.1"><span class="header-section-number">2.4.1</span> Main operations</h3>
+<section id="boot-menu" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1"><span class="header-section-number">2.4.1</span> Boot menu</h3>
+<ul>
+<li><code>F11</code>: Supermicro board.</li>
+</ul>
+</section>
+<section id="main-operations" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2"><span class="header-section-number">2.4.2</span> Main operations</h3>
 <ul>
 <li><code>Alt + Ctrl + Del</code>: Reboot.</li>
 <li><code>Alt + Tab</code>: Switch focus to the next application.</li>
@@ -817,8 +830,8 @@ wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
 <li><code>⌘ + Esc</code>: Open main menu.</li>
 </ul>
 </section>
-<section id="operations-on-window" class="level3" data-number="2.4.2">
-<h3 data-number="2.4.2"><span class="header-section-number">2.4.2</span> Operations on window</h3>
+<section id="operations-on-window" class="level3" data-number="2.4.3">
+<h3 data-number="2.4.3"><span class="header-section-number">2.4.3</span> Operations on window</h3>
 <ul>
 <li><code>Alt + F4</code>: Close current application.</li>
 <li><code>Alt + F2</code>: Open the menu of the current application.</li>
@@ -828,8 +841,8 @@ wget -E -H -k -K -p http://your-web-page.com/page1.html</code></pre>
 <li><code>Ctrl + Alt + Up</code>: Maximize active window to the top half section of the screen.</li>
 <li><code>Ctrl + Alt + Down</code> : Maximize active window to the bottom half section of the screen.</li>
 </ul>
-<section id="move-active-window" class="level4" data-number="2.4.2.1">
-<h4 data-number="2.4.2.1"><span class="header-section-number">2.4.2.1</span> Move active window</h4>
+<section id="move-active-window" class="level4" data-number="2.4.3.1">
+<h4 data-number="2.4.3.1"><span class="header-section-number">2.4.3.1</span> Move active window</h4>
 <pre><code>Screen section layout
 +-----------+
 | 7 | 8 | 9 |

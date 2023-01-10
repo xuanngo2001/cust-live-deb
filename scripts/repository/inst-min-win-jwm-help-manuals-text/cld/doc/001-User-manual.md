@@ -99,9 +99,17 @@ title: User manual
     # Download a single web page. In case robots.txt is disallowing, add -e robots=off
     wget -E -H -k -K -p http://your-web-page.com/page1.html
     
+    # Change screen brightness.
+    xrandr --output LVDS-1 --brightness .6
     
+    # Turn off screen.
+    xset dpms force off
+
 
 ## Hot keys
+
+### Boot menu
+* `F11`: Supermicro board.
 
 ### Main operations
 * `Alt + Ctrl + Del`: Reboot.

@@ -1,12 +1,8 @@
 * >>>>>>>>> Running inst-min-con-xtra-bat.sh ...
   * After this operation, 6,631 kB of additional disk space will be used.
   * Install bat.
-<<<<<<< HEAD
-  * Disk size = 1819300K. Space Used = 9092K. Runtime = 00:00:00:01.
-=======
   * batcat file.sh.
-  * Disk size = 1487164K. Space Used = 9084K. Runtime = 00:00:00:00.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1487352K. Space Used = 9084K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 bat libgit2-1.1 libhttp-parser2.9 libmbedcrypto3 libmbedtls12

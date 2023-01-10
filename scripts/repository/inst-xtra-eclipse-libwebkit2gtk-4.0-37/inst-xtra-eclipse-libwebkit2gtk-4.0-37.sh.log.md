@@ -2,11 +2,7 @@
   * After this operation, 113 MB of additional disk space will be used.
   * Install libwebkit2gtk-4.0-37.
   * To be able to render *.md files.
-<<<<<<< HEAD
-  * Disk size = 6810772K. Space Used = 140392K. Runtime = 00:00:00:07.
-=======
-  * Disk size = 6478420K. Space Used = 140396K. Runtime = 00:00:00:04.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 6478620K. Space Used = 140396K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 bubblewrap dictionaries-common emacsen-common gstreamer1.0-plugins-base gstreamer1.0-plugins-good
