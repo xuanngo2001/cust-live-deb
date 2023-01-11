@@ -16,8 +16,9 @@ repository_dir=./scripts/repository/
 
 
 # Display solution.
-  echo 'All scripts above should be removed or merged in the official installation script.'
+  echo ""
+  echo '   All scripts above should be removed or merged in the official installation script.'
 
 
 # Add newline as a separation.
-  echo ""  
+  echo ""
