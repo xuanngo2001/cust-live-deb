@@ -1,6 +1,8 @@
 # Workflow
     ./build-cld.sh work_no_proxy
 
+# Find big files.
+	find-big-files.sh . 5 | tee to-dl-big-files.txt
 
 # After running ./build.sh, check ./qcheck.sh log for:
     ./qcheck.sh > a.txt
