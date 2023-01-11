@@ -14,4 +14,4 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 
 # Log
-	echo "${GV_LOG} * Install libu2f-udev."
+	echo "${GV_LOG} * Bullseye: 2023-01-10: K6: Requires libu2f-udev."
