@@ -19,6 +19,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Log
 	echo "${GV_LOG} * Install downloadhelper Companion App to record JW Player live stream."
+	echo "${GV_LOG} * Install Video DownloadHelper browser extension and record JW player stream."
 
 # Note:
 #	Put this script below MPV. Otherwise, ISO size will be 812MB instead of 777MB.
