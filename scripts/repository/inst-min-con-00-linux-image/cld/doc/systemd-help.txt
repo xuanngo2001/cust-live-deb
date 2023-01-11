@@ -1,9 +1,3 @@
-# Display logs from the current boot.
-    journalctl -b
-
-# Display boot errors.
-    journalctl -p err -b
-
 # Show service status.
     systemctl status mariadb.service --no-pager -l
 
