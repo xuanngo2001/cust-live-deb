@@ -1,13 +1,13 @@
 * >>>>>>>>> Running inst-min-con-00-linux-image.sh ...
   * After this operation, 2800 kB of additional disk space will be used.
-  * After this operation, 321 MB of additional disk space will be used.
+  * After this operation, 511 MB of additional disk space will be used.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
-  * Installed Linux image: linux-image-5.10.0-20-amd64.
-  * Disk size = 804476K. Space Used = 420640K. Runtime = 00:00:00:25.
+  * Installed Linux image: linux-image-6.0.0-0.deb11.6-amd64.
+  * Disk size = 1016264K. Space Used = 638708K. Runtime = 00:00:00:42.
   * The following NEW packages will be installed:
   ```bash
 busybox dbus dialog firmware-linux-free initramfs-tools
 initramfs-tools-core klibc-utils libdbus-1-3 libexpat1 libklibc
-linux-base linux-image-5.10.0-20-amd64 linux-image-amd64 live-boot live-boot-initramfs-tools
+linux-base linux-image-6.0.0-0.deb11.6-amd64 linux-image-amd64 live-boot live-boot-initramfs-tools
 rsync
   ```

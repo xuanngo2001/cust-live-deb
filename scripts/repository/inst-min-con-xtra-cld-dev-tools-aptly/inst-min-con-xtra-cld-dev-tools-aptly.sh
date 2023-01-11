@@ -13,7 +13,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 echo "********** START install *****************"
 
 # Install aptly
-  apt-get -y install xz-utils aptly
+	apt-get -y install xz-utils	
+	apt-get -y install aptly
 	#apt-get -y install gpgv1 gnupg1   # Aptly still uses PGP v1.
 	#apt-get -y install aptly dirmngr gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libassuan0 libksba8 libnpth0 pinentry-curses
 
