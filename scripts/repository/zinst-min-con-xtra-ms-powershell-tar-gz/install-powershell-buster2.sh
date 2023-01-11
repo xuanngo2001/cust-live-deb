@@ -2,6 +2,7 @@
 set -e
 # Description: Install PowerShell
 #   https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7#debian-10
+#	https://learn.microsoft.com/en-us/powershell/scripting/install/install-debian?source=recommendations&view=powershell-7.3
 
 # Variables.
     url=https://github.com/PowerShell/PowerShell/releases/download/v7.0.0/powershell-7.0.0-linux-x64.tar.gz
