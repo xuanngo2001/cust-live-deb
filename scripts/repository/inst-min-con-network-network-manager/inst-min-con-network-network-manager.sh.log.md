@@ -1,15 +1,7 @@
 * >>>>>>>>> Running inst-min-con-network-network-manager.sh ...
   * After this operation, 26.0 MB of additional disk space will be used.
   * Install network-manager: nmcli
-<<<<<<< HEAD
-  * Disk size = 1785980K. Space Used = 24828K. Runtime = 00:00:00:06.
-=======
-<<<<<<< HEAD
-  * Disk size = 1447468K. Space Used = 24840K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 1786172K. Space Used = 24828K. Runtime = 00:00:00:03.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1447636K. Space Used = 24840K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libbluetooth3 libbrotli1 libcurl3-gnutls libglib2.0-0 libmm-glib0

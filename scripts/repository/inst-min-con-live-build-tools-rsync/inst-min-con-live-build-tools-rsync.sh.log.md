@@ -1,14 +1,6 @@
 * >>>>>>>>> Running inst-min-con-live-build-tools-rsync.sh ...
   * Install rsync to copy directories.
-<<<<<<< HEAD
-  * Disk size = 1747088K. Space Used = 4K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 1408568K. Space Used = 4K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 1747280K. Space Used = 4K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1408736K. Space Used = 4K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 rsync*

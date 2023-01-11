@@ -1,14 +1,6 @@
 * >>>>>>>>> Running inst-min-con-xtra-fuse.sh ...
   * Install fuse(fusermount) to run TMSU.
-<<<<<<< HEAD
-  * Disk size = 2111920K. Space Used = 8K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 1773396K. Space Used = 4K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 2112112K. Space Used = 8K. Runtime = 00:00:00:00.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1773556K. Space Used = 4K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 fuse*

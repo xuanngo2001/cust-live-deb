@@ -1,10 +1,2 @@
 * >>>>>>>>> Running inst-min-con-00-apt-custom-repository.sh ...
-<<<<<<< HEAD
-  * Disk size = 481848K. Space Used = 6640K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 360192K. Space Used = 6628K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 482048K. Space Used = 6636K. Runtime = 00:00:00:09.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 360356K. Space Used = 6632K. Runtime = 00:00:00:01.

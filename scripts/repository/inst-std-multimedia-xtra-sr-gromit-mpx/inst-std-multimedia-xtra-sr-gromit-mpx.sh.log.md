@@ -1,15 +1,7 @@
 * >>>>>>>>> Running inst-std-multimedia-xtra-sr-gromit-mpx.sh ...
   * After this operation, 168 kB of additional disk space will be used.
   * Install gromit-mpx.
-<<<<<<< HEAD
-  * Disk size = 5740540K. Space Used = 272K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 5393272K. Space Used = 272K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 5732000K. Space Used = 272K. Runtime = 00:00:00:02.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 5402184K. Space Used = 272K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 gromit-mpx

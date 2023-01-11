@@ -2,15 +2,7 @@
   * After this operation, 575 kB of additional disk space will be used.
   * After this operation, 237 kB of additional disk space will be used.
   * Install exfat-fuse so that you can read and write SD cards and USB keys.
-<<<<<<< HEAD
-  * Disk size = 1254776K. Space Used = 1176K. Runtime = 00:00:00:16.
-=======
-<<<<<<< HEAD
-  * Disk size = 915036K. Space Used = 1180K. Runtime = 00:00:00:08.
-=======
-  * Disk size = 1254972K. Space Used = 1176K. Runtime = 00:00:00:17.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 915208K. Space Used = 1184K. Runtime = 00:00:00:11.
   * The following NEW packages will be installed:
   ```bash
 exfat-fuse exfat-utils fuse libfuse2
