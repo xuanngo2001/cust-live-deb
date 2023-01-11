@@ -52,6 +52,7 @@ The following packages will be REMOVED:
 qcheck-jwm-missing-icons.sh:
 
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-main.png not found: ./scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml
+Error: /opt/google/chrome/product_logo_32.xpm not found: ./scripts/repository/inst-std-inet-xtra-google-chrome/jwmrc-menus-inet-google-chrome.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-base.png not found: ./scripts/repository/inst-std-office-libreoffice-base/jwmrc-menus-office-libreoffice-base.xml
 Error: /usr/share/pixmaps/gimp.xpm not found: ./scripts/repository/inst-std-graphic-gimp/jwmrc-menus-graphics-gimp.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png not found: ./scripts/repository/inst-std-office-libreoffice-writer/jwmrc-menus-office-libreoffice-writer.xml
@@ -110,7 +111,9 @@ qcheck-temporary-fix-scripts.sh:
 
    ./inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client-fix-libfido2-1-libcbor0/inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client-fix-libfido2-1-libcbor0.sh
    ./inst-min-con-xtra-mariadb-server-fix/inst-min-con-xtra-mariadb-server-fix.sh
+   ./inst-std-inet-xtra-google-chrome-fix-libu2f-udev/inst-std-inet-xtra-google-chrome-fix-libu2f-udev.sh
    ./inst-std-multimedia-mpv-fix2/inst-std-multimedia-mpv-fix2.sh
+   ./inst-std-multimedia-mpv-fix/inst-std-multimedia-mpv-fix.sh
    ./inst-xtra-docker-ce-fix-iptables/inst-xtra-docker-ce-fix-iptables.sh
    ./inst-xtra-vboxguest-additions-iso-fix-dctrl-tools/inst-xtra-vboxguest-additions-iso-fix-dctrl-tools.sh
    ./inst-xtra-virtualbox-fix-libsdl1.2debian/inst-xtra-virtualbox-fix-libsdl1.2debian.sh
@@ -118,7 +121,6 @@ qcheck-temporary-fix-scripts.sh:
    ./z01-inst-min-con-00-linux-image-fix-systemd-timesyncd/inst-min-con-00-linux-image-fix-systemd-timesyncd.sh
    ./zinst-min-con-live-build-tools-fix-libxxhash0/inst-min-con-live-build-tools-fix-libxxhash0.sh
    ./zinst-min-con-live-build-tools-rsync-fix-libxxhash0/inst-min-con-live-build-tools-rsync-fix-libxxhash0.sh
-   ./zinst-std-multimedia-mpv-fix/inst-std-multimedia-mpv-fix.sh
    ./zinst-std-multimedia-xtra-ffmpeg-fix-ffplay/inst-std-multimedia-xtra-ffmpeg-fix-ffplay.sh
    ./zinst-xtra-web-dev-npm-fix/inst-xtra-web-dev-npm-fix.sh
    ./zx-inst-xtra-git-fix-libcurl3-gnutls/inst-xtra-git-fix-libcurl3-gnutls.sh
