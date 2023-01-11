@@ -1,6 +1,14 @@
 * >>>>>>>>> Running inst-min-con-xtra-mariadb-server-fix.sh ...
   * Install dependent packages for MariaDB.
+<<<<<<< HEAD
   * Disk size = 3264768K. Space Used = 8K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 2920516K. Space Used = 8K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 3259236K. Space Used = 8K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 libdaxctl1 libndctl6 libpmem1 liburing1
