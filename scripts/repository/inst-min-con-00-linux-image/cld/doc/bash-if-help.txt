@@ -1,9 +1,13 @@
+# Never use [[. It suppresses important error messages and is not portable to different shells.
+
 # If no argument.
     if [ "$#" -eq 0 ]; then
         echo "ERROR: $(basename $0): No argument. Aborted!"
         exit 1;
     fi
 
+    if [ "${STATUS}" != 200 ] && [ "${STRING}" != "${VALUE}" ]; then
+    
 # If condition with pipes.
     if ! echo 'someString' | grep -qF 'notFound'; then
         echo 'Show negation: string not found.'
