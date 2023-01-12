@@ -1,4 +1,4 @@
-# From ..cld-bashrc/
+# From ../cld-bashrc/
 
 # Prevent ls to wrap filename with single or double quotes.
 export QUOTING_STYLE=literal

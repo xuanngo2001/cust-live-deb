@@ -1,4 +1,4 @@
-# From ..cld-bashrc/
+# From ../cld-bashrc/
 
 export CLD_DIR=/usr/local/cld
 export CLD_APP_DIR=/usr/local/cld/app

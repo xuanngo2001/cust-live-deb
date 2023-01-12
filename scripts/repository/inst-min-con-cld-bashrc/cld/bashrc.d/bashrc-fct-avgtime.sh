@@ -1,4 +1,7 @@
-# https://stackoverflow.com/a/54920339
+# From ../cld-bashrc/
+
+# Description: Return average runtime of command N times.
+# 	Ref: https://stackoverflow.com/a/54920339
 function avgtime() {
     #
     # usage: avg_time n command ...
