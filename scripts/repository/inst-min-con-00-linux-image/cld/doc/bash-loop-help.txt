@@ -13,30 +13,33 @@
 		echo "********  ${animal}  ********"
 	done
 
-# Find valid path from array of paths.
-    path_dirs=( /media/main/critical/firstboot-work )
-    path_dirs+=( /media/critical-02/firstboot-work )
-    path_dirs+=( /media/critical/firstboot-work )
-    path_dir_found=""
-    for path_dir in "${path_dirs[@]}"; do
-        if [ -d "${path_dir}" ]; then
-            path_dir_found="${path_dir}"
-            break
-        fi
+# Read multiple arrays using index.
+    array=( "Vietnam" "Germany" "Argentina" )
+    array2=( "Asia" "Europe" "America" )
+
+    for i in "${!array[@]}"; do
+        echo "i=${i}";
+        printf "   %s is in %s\n" "${array[i]}" "${array2[i]}"
+        echo "   ${array[i]} === ${array2[i]}"
     done
 
-	if [ -z "${path_dir_found}" ]; then
-	    echo "ERROR: destination firstboot directory not found. Aborted!"
-	    exit 1;
-	fi
-	echo "${path_dir_found} found!"
+# Using an associative array and read multiple array using index.
+#   Order is not guaranteed.
+    declare -A continent
+    continent["Viet-nam"]="Asia"
+    continent["Germany"]="Europe"
+    continent["Argentina"]="America"
 
-# Loop through arguments.
-	for arg in "${@:2}"; do # Skip the first argument.
+    for c in "${!continent[@]}"; do
+        printf "   %s is in %s\n" "$c" "${continent[$c]}"
+    done
+
+# Loop through ARGUMENTs starting from the 2nd ARGUMENT.
+	for arg in "${@:2}"; do # Skip the first ARGUMENT.
 		echo "${arg}"
 	done
 
-# Loop through array.
+# Loop through ARRAY starting from the 2nd element.
 	for elem in "${myArray[@]:1}"; do # Skip the first element.
 		echo "==>${elem}"
 	done
@@ -76,3 +79,21 @@
         fi
         
 	done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )
+
+# Find valid path from array of paths.
+    path_dirs=( /media/main/critical/firstboot-work )
+    path_dirs+=( /media/critical-02/firstboot-work )
+    path_dirs+=( /media/critical/firstboot-work )
+    path_dir_found=""
+    for path_dir in "${path_dirs[@]}"; do
+        if [ -d "${path_dir}" ]; then
+            path_dir_found="${path_dir}"
+            break
+        fi
+    done
+
+	if [ -z "${path_dir_found}" ]; then
+	    echo "ERROR: destination firstboot directory not found. Aborted!"
+	    exit 1;
+	fi
+	echo "${path_dir_found} found!"
