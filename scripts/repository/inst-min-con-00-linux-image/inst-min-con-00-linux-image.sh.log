@@ -216,7 +216,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 852 kB in 0s (34.0 MB/s)
+Fetched 852 kB in 0s (43.1 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9220 files and directories currently installed.)
 Preparing to unpack .../libdbus-1-3_1.12.24-0+deb11u1_amd64.deb ...
@@ -279,7 +279,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 73.3 MB in 1s (94.8 MB/s)
+Fetched 73.3 MB in 1s (74.7 MB/s)
 Selecting previously unselected package rsync.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9443 files and directories currently installed.)
 Preparing to unpack .../00-rsync_3.2.7-1~bpo11+1_amd64.deb ...
@@ -418,39 +418,39 @@ ii  linux-image-6.0.0-0.deb11.6-amd64          6.0.12-1~bpo11+1 amd64        Lin
 un  linux-image-6.0.0-0.deb11.6-amd64-unsigned <none>           <none>       (no description available)
 ii  linux-image-amd64                          6.0.12-1~bpo11+1 amd64        Linux for 64-bit PCs (meta-package)
 un  linux-image-generic                        <none>           <none>       (no description available)
-total 56288
+total 56292
 -rw-r--r-- 1 root root       83 Dec 19 14:14 System.map-6.0.0-0.deb11.6-amd64
 -rw-r--r-- 1 root root   257159 Dec 19 14:14 config-6.0.0-0.deb11.6-amd64
--rw-r--r-- 1 root root 49643114 Jan 17 14:59 initrd.img-6.0.0-0.deb11.6-amd64
+-rw-r--r-- 1 root root 49643746 Jan 24 16:39 initrd.img-6.0.0-0.deb11.6-amd64
 -rw-r--r-- 1 root root  7730784 Dec 19 14:14 vmlinuz-6.0.0-0.deb11.6-amd64
 e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.0.0-0.deb11.6-amd64
 ae64cd708be60b72844f877d457c5bed  /boot/config-6.0.0-0.deb11.6-amd64
-9ebfca3c436e0511fd8703db8227ddbb  /boot/initrd.img-6.0.0-0.deb11.6-amd64
+2975a9f61062655f5d33a9c70432b74d  /boot/initrd.img-6.0.0-0.deb11.6-amd64
 091ab3a481cd1622ef89007c76e2bca4  /boot/vmlinuz-6.0.0-0.deb11.6-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Jan 17 14:58 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Jan 17 14:59 boot
-drwxr-xr-x  18 root root 3740 Jan 12 16:16 dev
-drwxr-xr-x  49 root root 4096 Jan 17 14:59 etc
+lrwxrwxrwx   1 root root    7 Jan 24 16:38 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Jan 24 16:39 boot
+drwxr-xr-x  18 root root 3740 Jan 20 14:24 dev
+drwxr-xr-x  49 root root 4096 Jan 24 16:39 etc
 drwxr-xr-x   2 root root 4096 Dec  9 19:15 home
-lrwxrwxrwx   1 root root   37 Jan 17 14:59 initrd.img -> boot/initrd.img-6.0.0-0.deb11.6-amd64
-lrwxrwxrwx   1 root root    7 Jan 17 14:58 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Jan 17 14:58 lib32 -> usr/lib32
-lrwxrwxrwx   1 root root    9 Jan 17 14:58 lib64 -> usr/lib64
-lrwxrwxrwx   1 root root   10 Jan 17 14:58 libx32 -> usr/libx32
-drwxr-xr-x   2 root root 4096 Jan 17 14:58 media
-drwxr-xr-x   2 root root 4096 Jan 17 14:58 mnt
-drwxr-xr-x   2 root root 4096 Jan 17 14:58 opt
-dr-xr-xr-x 301 root root    0 Jan 17 14:59 proc
-drwx------   3 root root 4096 Jan 17 14:59 root
-drwxr-xr-x   4 root root 4096 Jan 17 14:58 run
-lrwxrwxrwx   1 root root    8 Jan 17 14:58 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Jan 17 14:58 srv
-dr-xr-xr-x  13 root root    0 Jan 12 15:44 sys
-drwxrwxrwt   2 root root 4096 Jan 17 14:59 tmp
-drwxr-xr-x  14 root root 4096 Jan 17 14:58 usr
-drwxr-xr-x  11 root root 4096 Jan 17 14:58 var
-lrwxrwxrwx   1 root root   34 Jan 17 14:59 vmlinuz -> boot/vmlinuz-6.0.0-0.deb11.6-amd64
+lrwxrwxrwx   1 root root   37 Jan 24 16:38 initrd.img -> boot/initrd.img-6.0.0-0.deb11.6-amd64
+lrwxrwxrwx   1 root root    7 Jan 24 16:38 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Jan 24 16:38 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 Jan 24 16:38 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 Jan 24 16:38 libx32 -> usr/libx32
+drwxr-xr-x   2 root root 4096 Jan 24 16:38 media
+drwxr-xr-x   2 root root 4096 Jan 24 16:38 mnt
+drwxr-xr-x   2 root root 4096 Jan 24 16:38 opt
+dr-xr-xr-x 305 root root    0 Jan 24 16:38 proc
+drwx------   3 root root 4096 Jan 24 16:38 root
+drwxr-xr-x   4 root root 4096 Jan 24 16:38 run
+lrwxrwxrwx   1 root root    8 Jan 24 16:38 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Jan 24 16:38 srv
+dr-xr-xr-x  13 root root    0 Jan 20 14:23 sys
+drwxrwxrwt   2 root root 4096 Jan 24 16:38 tmp
+drwxr-xr-x  14 root root 4096 Jan 24 16:38 usr
+drwxr-xr-x  11 root root 4096 Jan 24 16:38 var
+lrwxrwxrwx   1 root root   34 Jan 24 16:38 vmlinuz -> boot/vmlinuz-6.0.0-0.deb11.6-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-6.0.0-0.deb11.6-amd64.
-CLDS: * Disk size = 1016272K. Space Used = 638704K. Runtime = 00:00:00:45.
+CLDS: * Disk size = 1016276K. Space Used = 638708K. Runtime = 00:00:00:44.
