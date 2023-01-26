@@ -237,10 +237,20 @@ If your memory is near max out, then the issues will be resolved by:
 
 # Boot sequence
 
-    ~>cat /root/cld/boot-sequence.txt 
-    /root/cld/systemd/cld-systemd-after-boot.sh: Mon Jan  9 14:14:25 EST 2017
-    /root/cld/jwmrc-startup.sh: Tue Jan 10 00:14:35 UTC 2017
-    /root/cld/systemd/cld-systemd-before-shutdown-halt-reboot.sh: Mon Jan  9 19:15:50 EST 2017
+    ~>cat /usr/local/cld/log/boot-sequence.log
+        /usr/local/cld/systemd/cld-systemd-after-boot.sh: Thu 12 Jan 2023 02:18:31 AM UTC
+            Executing /usr/local/cld/systemd/runlevel/after-boot/bashrc.sh
+            Executing /usr/local/cld/systemd/runlevel/after-boot/devmon.sh
+            Executing /usr/local/cld/systemd/runlevel/after-boot/jwmrc-startup-alsa.sh
+            Executing /usr/local/cld/systemd/runlevel/after-boot/link-home-directory.sh
+            Executing /usr/local/cld/systemd/runlevel/after-boot/macchanger.sh
+            Executing /usr/local/cld/systemd/runlevel/after-boot/mount-all.sh
+        /usr/local/cld/app/jwm/jwm-bootstrap.sh: Thu 12 Jan 2023 02:18:40 AM UTC
+            Executing /usr/local/cld/app/jwm/bootstrap/jwmrc-startup-conky.sh
+            Executing /usr/local/cld/app/jwm/bootstrap/jwmrc-startup-keyboard-move-mouse.sh
+            Executing /usr/local/cld/app/jwm/bootstrap/jwmrc-startup-open-terminals.sh
+            Executing /usr/local/cld/app/jwm/bootstrap/jwmrc-startup-volumeicon.sh
+    
 
 # Help
 

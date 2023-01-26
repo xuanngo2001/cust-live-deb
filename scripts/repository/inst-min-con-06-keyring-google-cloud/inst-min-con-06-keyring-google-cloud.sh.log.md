@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-06-keyring-google-cloud.sh ...
   * Install google-cloud repository key.
-  * Disk size = 902432K. Space Used = 12K. Runtime = 00:00:00:00.
+  * Disk size = 902448K. Space Used = 12K. Runtime = 00:00:00:01.

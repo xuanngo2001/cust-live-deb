@@ -44,9 +44,9 @@ Get:20 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 soca
 Get:21 http://localhost/aptly-repo/master_mariadb-main bullseye/main amd64 mariadb-server-10.7 amd64 1:10.7.7+maria~deb11 [3,455 kB]
 Get:22 http://localhost/aptly-repo/master_mariadb-main bullseye/main amd64 mariadb-server all 1:10.7.7+maria~deb11 [2,832 B]
 Preconfiguring packages ...
-Fetched 30.6 MB in 0s (103 MB/s)
+Fetched 30.6 MB in 0s (79.0 MB/s)
 Selecting previously unselected package libmpfr6:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61923 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61934 files and directories currently installed.)
 Preparing to unpack .../libmpfr6_4.1.0-3_amd64.deb ...
 Unpacking libmpfr6:amd64 (4.1.0-3) ...
 Selecting previously unselected package libsigsegv2:amd64.
@@ -55,7 +55,7 @@ Unpacking libsigsegv2:amd64 (2.13-1) ...
 Setting up libmpfr6:amd64 (4.1.0-3) ...
 Setting up libsigsegv2:amd64 (2.13-1) ...
 Selecting previously unselected package gawk.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61943 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61954 files and directories currently installed.)
 Preparing to unpack .../00-gawk_1%3a5.1.0-1_amd64.deb ...
 Unpacking gawk (1:5.1.0-1) ...
 Selecting previously unselected package mysql-common.
@@ -114,7 +114,7 @@ Setting up mariadb-common (1:10.7.7+maria~deb11) ...
 update-alternatives: error: no alternatives for my.cnf
 update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
 Selecting previously unselected package mariadb-server-10.7.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62720 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62731 files and directories currently installed.)
 Preparing to unpack .../mariadb-server-10.7_1%3a10.7.7+maria~deb11_amd64.deb ...
 invoke-rc.d: unknown initscript, /etc/init.d/mariadb not found.
 Running in chroot, ignoring request.
@@ -164,4 +164,4 @@ Processing triggers for libc-bin (2.31-13+deb11u5) ...
 './cld/doc/mysql-user-help.txt' -> '/usr/local/cld/doc/mysql-user-help.txt'
 CLDS: * Install mariadb-server.
 CLDS: * Set root password to [password].
-CLDS: * Disk size = 3298184K. Space Used = 363732K. Runtime = 00:00:00:10.
+CLDS: * Disk size = 3303644K. Space Used = 363728K. Runtime = 00:00:00:07.
