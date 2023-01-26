@@ -1,5 +1,5 @@
 # Indent content by 4 spaces.
-    echo "hello" | pr -t -o4
+    echo "hello"  2>&1 | pr -t -o4
     
 # Put lines into 2 columns.
 	echo -e "1\nab\napple\nbanana" | pr -t -2 -o4
