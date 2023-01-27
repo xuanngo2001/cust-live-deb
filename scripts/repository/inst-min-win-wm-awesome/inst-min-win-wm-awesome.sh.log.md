@@ -2,7 +2,23 @@
   * After this operation, 7,310 kB of additional disk space will be used.
   * Install awesome.
   * Change X window manager: update-alternatives --config x-window-manager
+<<<<<<< HEAD
   * Disk size = 4437740K. Space Used = 11524K. Runtime = 00:00:00:03.
+=======
+<<<<<<< HEAD
+  * Disk size = 4321224K. Space Used = 11512K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 4437604K. Space Used = 11524K. Runtime = 00:00:00:03.
+=======
+<<<<<<< HEAD
+  * Disk size = 4217440K. Space Used = 11512K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 4437592K. Space Used = 11524K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 awesome gir1.2-freedesktop gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-harfbuzz-0.0

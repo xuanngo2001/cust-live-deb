@@ -1,7 +1,23 @@
 * >>>>>>>>> Running inst-std-multimedia-xtra-ffmpeg.sh ...
   * After this operation, 166 MB of additional disk space will be used.
   * Install ffmpeg.
+<<<<<<< HEAD
   * Disk size = 5665900K. Space Used = 165412K. Runtime = 00:00:00:10.
+=======
+<<<<<<< HEAD
+  * Disk size = 5652896K. Space Used = 4076K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 5768920K. Space Used = 4076K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 5548736K. Space Used = 4076K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 5768908K. Space Used = 4076K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 ffmpeg libaom3 libarchive13 libaribb24-0 libass9

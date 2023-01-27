@@ -1,7 +1,23 @@
 * >>>>>>>>> Running inst-min-con-xtra-iso-iat.sh ...
   * After this operation, 26.6 kB of additional disk space will be used.
   * Install iat to convert BIN, MDF, PDI, CDI, NRG, and B5I into ISO-9660.
+<<<<<<< HEAD
   * Disk size = 3159024K. Space Used = 64K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 3042104K. Space Used = 64K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 3158888K. Space Used = 64K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 2938284K. Space Used = 64K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 3158876K. Space Used = 64K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 iat

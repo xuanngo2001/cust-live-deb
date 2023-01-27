@@ -1,6 +1,22 @@
 * >>>>>>>>> Running inst-std-multimedia-mpv-fix2.sh ...
   * 2022-12-14: Bullseye: libdjvulibre21_3.5.28-2_amd64.deb  404  Not Found [IP: ::1 80].
+<<<<<<< HEAD
   * Disk size = 5427164K. Space Used = 12K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 5311020K. Space Used = 12K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 5427024K. Space Used = 12K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 5206860K. Space Used = 12K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 5427016K. Space Used = 16K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 libarchive13 libcjson1 libdjvulibre21 libdjvulibre-text liblept5

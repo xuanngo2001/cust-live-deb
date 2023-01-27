@@ -4,7 +4,23 @@
   * Install Text Editor: SciTE.
   * Insert SciTE in Accessories menu.
   * Install at-spi2-core to shut up Accessibility warning message.
+<<<<<<< HEAD
   * Disk size = 4552324K. Space Used = 10148K. Runtime = 00:00:00:03.
+=======
+<<<<<<< HEAD
+  * Disk size = 4435804K. Space Used = 10156K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 4552188K. Space Used = 10148K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 4332020K. Space Used = 10156K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 4552176K. Space Used = 10148K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 at-spi2-core scite

@@ -4,7 +4,23 @@
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
+<<<<<<< HEAD
   * Disk size = 4314000K. Space Used = 4260K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 4197480K. Space Used = 4260K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 4313860K. Space Used = 4260K. Runtime = 00:00:00:03.
+=======
+<<<<<<< HEAD
+  * Disk size = 4093692K. Space Used = 4260K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 4313848K. Space Used = 4260K. Runtime = 00:00:00:03.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 libevdev2 libgudev-1.0-0 libinput10 libinput-bin libmtdev1

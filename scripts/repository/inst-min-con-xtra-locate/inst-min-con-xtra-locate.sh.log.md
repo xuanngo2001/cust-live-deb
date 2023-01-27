@@ -3,7 +3,23 @@
   * Install locate to generate an index of files and directories. Searching for files will be much faster.
   * Add locate alias.
   * Run updatedb to update the database.
+<<<<<<< HEAD
   * Disk size = 3159760K. Space Used = 736K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 3042840K. Space Used = 736K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 3159624K. Space Used = 736K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 2939020K. Space Used = 736K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 3159612K. Space Used = 736K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 locate
