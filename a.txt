@@ -4,12 +4,15 @@ Error in log file: /media/master/github/cust-live-deb/logs/main.log
   E: Invalid archive member header
   E: Internal error, could not locate member control.tar{.zst,.lz4,.gz,.xz,.bz2,.lzma,}
   E: Prior errors apply to /var/cache/apt/archives/aptly_1.5.0_amd64.deb
+  E: Failed to fetch http://localhost/aptly-repo/master_bullseye-main/pool/main/d/djvulibre/libdjvulibre21_3.5.28-2_amd64.deb  Error reading from server - read (32: Broken pipe) [IP: ::1 80]
+  E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
   CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
 
 ------------------
 qcheck-command-not-found.sh:
 
-No command not found: /media/master/github/cust-live-deb/logs/main.log
+command not found in log file: /media/master/github/cust-live-deb/logs/main.log
+/root/scripts/repository/inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh: line 21: mpv: command not found
 
 ------------------
 qcheck-file-dir-not-found.sh:
