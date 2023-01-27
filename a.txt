@@ -4,7 +4,6 @@ Error in log file: /media/master/github/cust-live-deb/logs/main.log
   E: Invalid archive member header
   E: Internal error, could not locate member control.tar{.zst,.lz4,.gz,.xz,.bz2,.lzma,}
   E: Prior errors apply to /var/cache/apt/archives/aptly_1.5.0_amd64.deb
-  CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
 
 ------------------
 qcheck-command-not-found.sh:
@@ -25,6 +24,7 @@ File or directory not found in log file: /media/master/github/cust-live-deb/logs
   head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such file or directory
   CLDS: * Otherwise, old script(e.g. youtube-dl) will complain: /usr/bin/env: ‘python’: No such file or directory.
   tar (child): ta-lib-0.4.0-src.tar.gz: Cannot open: No such file or directory
+  [0;1;31mFailed to connect to bus: No such file or directory[0m
 
 ------------------
 qcheck-permission-denied.sh:
@@ -49,41 +49,41 @@ The following packages will be REMOVED:
 ------------------
 qcheck-jwm-missing-icons.sh:
 
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-main.png not found: ./scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-base.png not found: ./scripts/repository/inst-std-office-libreoffice-base/jwmrc-menus-office-libreoffice-base.xml
-Error: /usr/share/pixmaps/gimp.xpm not found: ./scripts/repository/inst-std-graphic-gimp/jwmrc-menus-graphics-gimp.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png not found: ./scripts/repository/inst-std-office-libreoffice-writer/jwmrc-menus-office-libreoffice-writer.xml
 Error: /usr/local/cld/app/cheese/icon/webcam.png not found: ./scripts/repository/inst-std-graphic-xtra-cheese/jwmrc-menus-graphics-cheese.xml
-Error: /usr/share/pixmaps/qalculate.png not found: ./scripts/repository/zx-inst-std-accessories-calc-qalculate-gtk/jwmrc-menus-acc-qalculate-gtk.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-math.png not found: ./scripts/repository/inst-std-office-libreoffice-math/jwmrc-menus-office-libreoffice-math.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-impress.png not found: ./scripts/repository/inst-std-office-libreoffice-impress/jwmrc-menus-office-libreoffice-impress.xml
-Error: /usr/share/icons/hicolor/scalable/apps/geany.svg not found: ./scripts/repository/inst-xtra-geany/jwmrc-menus-acc-geany.xml
-Error: /usr/share/pixmaps/gpaint.xpm not found: ./scripts/repository/zx-inst-std-graphic-gpaint/jwmrc-menus-graphics-gpaint.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-calc.png not found: ./scripts/repository/inst-std-office-libreoffice-calc/jwmrc-menus-office-libreoffice-calc.xml
-Error: /usr/share/icons/hicolor/scalable/apps/dia.svg not found: ./scripts/repository/inst-std-graphic-xtra-dia/jwmrc-menus-graphics-dia.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-calc.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-impress.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-draw.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-base.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-math.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/pixmaps/gimp.xpm not found: ./scripts/repository/inst-std-graphic-gimp/jwmrc-menus-graphics-gimp.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-draw.png not found: ./scripts/repository/inst-std-office-libreoffice-draw/jwmrc-menus-office-libreoffice-draw.xml
+Error: /usr/share/icons/hicolor/scalable/apps/geany.svg not found: ./scripts/repository/inst-xtra-geany/jwmrc-menus-acc-geany.xml
 Error: /usr/share/pixmaps/hardinfo.xpm not found: ./scripts/repository/inst-std-system-xtra-hardinfo/jwmrc-menus-adm-hardinfo.xml
-Error: /usr/share/icons/hicolor/scalable/apps/freecad.svg not found: ./scripts/repository/inst-xtra-freecad/jwmrc-menus-graphics-freecad.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-calc.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-impress.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-draw.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-base.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
-Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-math.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-calc.png not found: ./scripts/repository/inst-std-office-libreoffice-calc/jwmrc-menus-office-libreoffice-calc.xml
+Error: /usr/share/pixmaps/qalculate.png not found: ./scripts/repository/zx-inst-std-accessories-calc-qalculate-gtk/jwmrc-menus-acc-qalculate-gtk.xml
 Error: /usr/share/pixmaps/playonlinux.xpm not found: ./scripts/repository/inst-xtra-wine-playonlinux/jwmrc-menus-inet-playonlinux.xml
-Error: /usr/share/pixmaps/wicd-gtk.xpm not found: ./scripts/repository/zx-inst-std-system-network-wicd/jwmrc-menus-network-wicd.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-impress.png not found: ./scripts/repository/inst-std-office-libreoffice-impress/jwmrc-menus-office-libreoffice-impress.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png not found: ./scripts/repository/zinst-std-office-libreoffice-appimage/jwmrc-menus-office-libreoffice.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-calc.png not found: ./scripts/repository/zinst-std-office-libreoffice-appimage/jwmrc-menus-office-libreoffice.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-impress.png not found: ./scripts/repository/zinst-std-office-libreoffice-appimage/jwmrc-menus-office-libreoffice.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-draw.png not found: ./scripts/repository/zinst-std-office-libreoffice-appimage/jwmrc-menus-office-libreoffice.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-base.png not found: ./scripts/repository/zinst-std-office-libreoffice-appimage/jwmrc-menus-office-libreoffice.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-math.png not found: ./scripts/repository/zinst-std-office-libreoffice-appimage/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-math.png not found: ./scripts/repository/inst-std-office-libreoffice-math/jwmrc-menus-office-libreoffice-math.xml
+Error: /usr/share/pixmaps/wicd-gtk.xpm not found: ./scripts/repository/zx-inst-std-system-network-wicd/jwmrc-menus-network-wicd.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-base.png not found: ./scripts/repository/inst-std-office-libreoffice-base/jwmrc-menus-office-libreoffice-base.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-main.png not found: ./scripts/repository/inst-std-00-jwm-menu/jwmrc-menus-standard.xml
+Error: /usr/share/icons/hicolor/scalable/apps/freecad.svg not found: ./scripts/repository/inst-xtra-freecad/jwmrc-menus-graphics-freecad.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-calc.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-impress.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-draw.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-base.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-math.png not found: ./scripts/repository/inst-std-office-libreoffice-deb/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-calc.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-impress.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-draw.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-base.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-math.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
+Error: /usr/share/pixmaps/gpaint.xpm not found: ./scripts/repository/zx-inst-std-graphic-gpaint/jwmrc-menus-graphics-gpaint.xml
+Error: /usr/share/icons/hicolor/scalable/apps/dia.svg not found: ./scripts/repository/inst-std-graphic-xtra-dia/jwmrc-menus-graphics-dia.xml
+Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png not found: ./scripts/repository/inst-std-office-libreoffice-writer/jwmrc-menus-office-libreoffice-writer.xml
 Run cld-list-icons.sh to list all icons.
 
 ------------------
@@ -96,9 +96,9 @@ Warnings in log file: /media/master/github/cust-live-deb/logs/main.log
 ------------------
 qcheck-list-manual-packages.sh:
 
+   ./scripts/repository/inst-min-con-05-keyring-debmultimedia/deb-multimedia-keyring_2016.8.1_all.deb
    ./scripts/repository/inst-std-inet-xtra-browser-plugin-downloadhelper-coapp/net.downloadhelper.coapp-1.6.3-1_amd64.deb
    ./scripts/repository/zinst-std-inet-xtra-google-chrome-keyring/linux_signing_key.pub
-   ./scripts/repository/inst-min-con-05-keyring-debmultimedia/deb-multimedia-keyring_2016.8.1_all.deb
    ./scripts/repository/inst-xtra-vboxguest-additions-iso/VBoxGuestAdditions.iso
 
 ------------------

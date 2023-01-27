@@ -2,8 +2,4 @@
   * Add deb-multimedia keyring.
   * Add deb-multimedia repository.
   * apt-get update
-<<<<<<< HEAD
-  * Disk size = 902432K. Space Used = 44K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 1129696K. Space Used = 44K. Runtime = 00:00:00:02.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 902540K. Space Used = 44K. Runtime = 00:00:00:01.
