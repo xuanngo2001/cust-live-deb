@@ -70,6 +70,9 @@
 # Search and replace at specific line.
     echo -e 'some \n multiple \n lines.' | sed '2 s/ti/XX/'
     
+    # Search and replace only the 2nd occurrence
+        echo 'abac' | sed 's/a/X/2'
+    
 # Search case insensitive.
     echo 'aAbB' | sed 's/a/X/gI'
     
