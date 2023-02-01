@@ -1,23 +1,7 @@
 * >>>>>>>>> Running inst-min-con-05-keyring-00-gnupg.sh ...
   * After this operation, 21.7 MB of additional disk space will be used.
   * Install gnupg to manage and create keys.
-<<<<<<< HEAD
-  * Disk size = 1129784K. Space Used = 24844K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 902492K. Space Used = 24844K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 1129652K. Space Used = 24844K. Runtime = 00:00:00:03.
-=======
-<<<<<<< HEAD
-  * Disk size = 902384K. Space Used = 24844K. Runtime = 00:00:00:03.
-=======
-  * Disk size = 1129648K. Space Used = 24844K. Runtime = 00:00:00:04.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 911564K. Space Used = 24844K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 dirmngr gnupg gnupg-l10n gnupg-utils gpg

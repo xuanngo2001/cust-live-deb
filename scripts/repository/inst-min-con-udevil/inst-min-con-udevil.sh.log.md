@@ -5,23 +5,7 @@
   * Set devmon to auto start on startup.
   * Need ntfs-3g driver to be able to read and write ntfs partition.
   * Need exfat-fuse to be able to read and write exfat partition.
-<<<<<<< HEAD
-  * Disk size = 1712636K. Space Used = 348K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 1486540K. Space Used = 348K. Runtime = 00:00:00:00.
-=======
-<<<<<<< HEAD
-  * Disk size = 1712492K. Space Used = 348K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 1486440K. Space Used = 348K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 1712488K. Space Used = 348K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 1495620K. Space Used = 348K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 udevil
