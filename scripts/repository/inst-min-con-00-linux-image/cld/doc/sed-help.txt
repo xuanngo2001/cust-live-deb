@@ -1,26 +1,26 @@
 # Use pipe(|) instead slash(/).
-	sed 's|/home|/new|' input_file.txt
+    sed 's|/home|/new|' input_file.txt
 
 # Delete up to the first occurrence of (:).
-	echo '123:aaaa:f35:bbbb' | sed 's/[^:]*://'
+    echo '123:aaaa:f35:bbbb' | sed 's/[^:]*://'
 
 # Remove 'empty' lines, lines with space/tabs are removed too.
-	sed '/^\s*$/d'
+    sed '/^\s*$/d'
 
 # Remove lines that have 3 characters or shorter.
-	sed -r '/^.{,3}$/d' filename
+    sed -r '/^.{,3}$/d' filename
 
-	# Print lines that have 3 characters or shorter.
-		sed -ne '/^.\{,3\}$/p'
+    # Print lines that have 3 characters or shorter.
+        sed -ne '/^.\{,3\}$/p'
 
 # Search and replace but skip the 1st line.
     sed '2,$s/SEARCH/REPLACE/' filename
 
 # Find line with MATCH_PATTERN. Then, SEARCH and REPLACE.
-	sed -i "/MATCH_PATTERN/b; s/SEARCH/REPLACE/" tmp.txt
+    sed -i "/MATCH_PATTERN/b; s/SEARCH/REPLACE/" tmp.txt
 
 # Delete line with pattern.
-	sed -i.bck "/pattern/d"
+    sed -i.bck "/pattern/d"
 
 # Delete all lines that don't match pattern. -n prevent to print all lines. Equivalent to grep pattern file.txt.
     sed -ni '/pattern/p' file.txt
@@ -29,39 +29,39 @@
     sed -n '/pattern/!p' input.txt
 
 # Delete text between 2 patterns.
-	# Delete text between patterns, excluding the lines containing these patterns:
-		sed '/PATTERN-1/,/PATTERN-2/{//!d}' input.txt
+    # Delete text between patterns, excluding the lines containing these patterns:
+        sed '/PATTERN-1/,/PATTERN-2/{//!d}' input.txt
 
-	# Delete text between patterns, including the lines containing these patterns:
-		sed '/PATTERN-1/,/PATTERN-2/d' input.txt
-	
+    # Delete text between patterns, including the lines containing these patterns:
+        sed '/PATTERN-1/,/PATTERN-2/d' input.txt
+    
 # Delete all the lines after PATTERN, use this
-	sed '/PATTERN/,$d' input.txt    
+    sed '/PATTERN/,$d' input.txt    
 
 # Delete all lines up to, before PATTERN line
     sed -n '/PATTERN/,$p'
     
 # Insert file content after match.
-	# Insert content of file2.txt into file1.txt after <tag> is found. /r stands for reading in a file.
-		sed '/<tag>/ r file2.txt' file1.txt
-	 
-	# Append line after match
-		sed  '/SEARCH-PATTERN/a REPLACE_STRING' inputfile
-	 
-	# Insert line before match
-		sed  '/SEARCH-PATTERN/i REPLACE_STRING' inputfile
+    # Insert content of file2.txt into file1.txt after <tag> is found. /r stands for reading in a file.
+        sed '/<tag>/ r file2.txt' file1.txt
+     
+    # Append line after match
+        sed  '/SEARCH-PATTERN/a REPLACE_STRING' inputfile
+     
+    # Insert line before match
+        sed  '/SEARCH-PATTERN/i REPLACE_STRING' inputfile
 
 # Use repeat characters pattern: 4 time dot character.
-	echo bluray.mkv.jpg.rar | sed 's/.\{4\}.rar//'
+    echo bluray.mkv.jpg.rar | sed 's/.\{4\}.rar//'
 
 # Substitute TAB followed by zero or more occurrences of any character except TAB with nothing.
-	s/\t[^\t]*//	
+    s/\t[^\t]*//    
 
 # Replace a character in a matched line(e.g ipsum)
-	sed '/ipsum/s/#//g'
+    sed '/ipsum/s/#//g'
     
     # Additional complex commands.
-	sed '/ipsum/{s/#//g;s/@/-at-/g;}'
+    sed '/ipsum/{s/#//g;s/@/-at-/g;}'
 
 # Insert or append at X line.
     echo -e 'insert \nbefore \n1st line' | sed '1 i\someString'
@@ -69,6 +69,9 @@
     
 # Search and replace at specific line.
     echo -e 'some \n multiple \n lines.' | sed '2 s/ti/XX/'
+    
+    # Search and replace only the 2nd occurrence
+        echo 'abac' | sed 's/a/X/2'
     
 # Search case insensitive.
     echo 'aAbB' | sed 's/a/X/gI'
@@ -83,3 +86,7 @@
     # Between 2 lines with ---, replace weight with heavy.
     sed  '/^---$/,/^---$/{s/weight/heavy/g}'
     sed  '/^---$/,/^---$/{s/weight/heavy/g; s/search/replace/}'
+
+# Replace the last space occurrence with dot: https://stackoverflow.com/a/22862132
+    echo "11 723 38" | sed -r 's/ ([^ ]*)$/.\1/'
+    echo "11 723 38" | rev | sed 's/ /./' | rev

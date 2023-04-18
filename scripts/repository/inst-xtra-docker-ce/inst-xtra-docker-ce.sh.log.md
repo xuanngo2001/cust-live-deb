@@ -3,7 +3,11 @@
   * After this operation, 3,942 kB of additional disk space will be used.
   * After this operation, 253 MB of additional disk space will be used.
   * Install docker-ce.
+<<<<<<< HEAD
   * Disk size = 6424112K. Space Used = 317568K. Runtime = 00:00:00:13.
+=======
+  * Disk size = 6612848K. Space Used = 445456K. Runtime = 00:00:00:22.
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 apt-transport-https* ca-certificates* containerd.io curl* distro-info-data

@@ -13,8 +13,13 @@ The following NEW packages will be installed:
 Need to get 93.8 MB of archives.
 After this operation, 312 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xdg-utils all 1.1.3-4.1 [75.5 kB]
+<<<<<<< HEAD
 Get:2 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 112.0.5615.121-1 [93.8 MB]
 Fetched 93.8 MB in 1s (70.8 MB/s)
+=======
+Get:2 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 109.0.5414.119-1 [93.7 MB]
+Fetched 93.8 MB in 1s (65.5 MB/s)
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package xdg-utils.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89626 files and directories currently installed.)
 Preparing to unpack .../xdg-utils_1.1.3-4.1_all.deb ...
@@ -38,4 +43,8 @@ CLDS: * Insert Google Chrome in Internet menu.
 CLDS: * Add google chrome alias, chrome.
 CLDS: * Set default browser: update-alternatives --config x-www-browser.
 CLDS: * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
+<<<<<<< HEAD
 CLDS: * Disk size = 5254740K. Space Used = 396576K. Runtime = 00:00:00:11.
+=======
+CLDS: * Disk size = 5315612K. Space Used = 402456K. Runtime = 00:00:00:14.
+>>>>>>> refs/remotes/origin/bullseye

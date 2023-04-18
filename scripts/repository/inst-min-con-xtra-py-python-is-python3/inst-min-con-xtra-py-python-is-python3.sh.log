@@ -23,7 +23,11 @@ Get:6 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 pytho
 Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libpython3-stdlib amd64 3.9.2-3 [21.4 kB]
 Get:8 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3 amd64 3.9.2-3 [37.9 kB]
 Get:9 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python-is-python3 all 3.9.2-1 [2,800 B]
+<<<<<<< HEAD
 Fetched 5,094 kB in 0s (47.0 MB/s)
+=======
+Fetched 5,094 kB in 0s (67.7 MB/s)
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package libpython3.9-minimal:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 65549 files and directories currently installed.)
 Preparing to unpack .../libpython3.9-minimal_3.9.2-1_amd64.deb ...
@@ -69,4 +73,8 @@ Processing triggers for libc-bin (2.31-13+deb11u5) ...
 Processing triggers for mailcap (3.69) ...
 CLDS: * Starting from Bullseye, this is required for old script which uses unversioned /usr/bin/python.
 CLDS: * Otherwise, old script(e.g. youtube-dl) will complain: /usr/bin/env: ‘python’: No such file or directory.
+<<<<<<< HEAD
 CLDS: * Disk size = 3779212K. Space Used = 33696K. Runtime = 00:00:00:03.
+=======
+CLDS: * Disk size = 3834304K. Space Used = 33700K. Runtime = 00:00:00:06.
+>>>>>>> refs/remotes/origin/bullseye

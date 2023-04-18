@@ -3,28 +3,37 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 apt-transport-https is already the newest version (2.2.4).
-0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 ca-certificates is already the newest version (20210119).
 ca-certificates set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 curl is already the newest version (7.88.1-7~bpo11+2).
 0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+=======
+curl is already the newest version (7.87.0-2~bpo11+1).
+0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
+>>>>>>> refs/remotes/origin/bullseye
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   gnupg-agent
-0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 17 not upgraded.
 Need to get 434 kB of archives.
 After this operation, 447 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 gnupg-agent all 2.2.27-2+deb11u2 [434 kB]
+<<<<<<< HEAD
 Fetched 434 kB in 0s (12.4 MB/s)
+=======
+Fetched 434 kB in 0s (32.7 MB/s)
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package gnupg-agent.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 98231 files and directories currently installed.)
 Preparing to unpack .../gnupg-agent_2.2.27-2+deb11u2_all.deb ...
@@ -46,7 +55,7 @@ The following NEW packages will be installed:
   distro-info-data gir1.2-packagekitglib-1.0 libpackagekit-glib2-18
   lsb-release python-apt-common python3-apt python3-dbus python3-gi
   python3-pycurl python3-software-properties software-properties-common
-0 upgraded, 11 newly installed, 0 to remove and 18 not upgraded.
+0 upgraded, 11 newly installed, 0 to remove and 17 not upgraded.
 Need to get 1,025 kB of archives.
 After this operation, 3,942 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 distro-info-data all 0.51+deb11u3 [7,812 B]
@@ -60,7 +69,11 @@ Get:8 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 pytho
 Get:9 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-pycurl amd64 7.43.0.6-5 [68.8 kB]
 Get:10 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 python3-software-properties all 0.96.20.2-2.1 [49.7 kB]
 Get:11 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 software-properties-common all 0.96.20.2-2.1 [83.4 kB]
+<<<<<<< HEAD
 Fetched 1,025 kB in 0s (10.6 MB/s)
+=======
+Fetched 1,025 kB in 0s (16.0 MB/s)
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package distro-info-data.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 98236 files and directories currently installed.)
 Preparing to unpack .../00-distro-info-data_0.51+deb11u3_all.deb ...
@@ -131,8 +144,13 @@ Hit:18 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
 Get:20 https://download.docker.com/linux/debian buster InRelease [54.0 kB]
 Hit:21 https://dl.google.com/linux/chrome/deb stable InRelease
+<<<<<<< HEAD
 Get:22 https://download.docker.com/linux/debian buster/stable amd64 Packages [36.5 kB]
 Fetched 90.5 kB in 2s (56.8 kB/s)
+=======
+Get:22 https://download.docker.com/linux/debian buster/stable amd64 Packages [32.6 kB]
+Fetched 86.5 kB in 2s (36.7 kB/s)
+>>>>>>> refs/remotes/origin/bullseye
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -147,21 +165,40 @@ Recommended packages:
 The following NEW packages will be installed:
   containerd.io docker-ce docker-ce-cli iptables libip6tc2
   libnetfilter-conntrack3 libnfnetlink0
+<<<<<<< HEAD
 0 upgraded, 7 newly installed, 0 to remove and 18 not upgraded.
 Need to get 63.9 MB of archives.
 After this operation, 253 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_docker-stable bullseye/stable amd64 containerd.io amd64 1.6.20-1 [28.3 MB]
 Get:2 http://localhost/aptly-repo/master_docker-stable bullseye/stable amd64 docker-ce-cli amd64 5:23.0.4-1~debian.11~bullseye [13.2 MB]
+=======
+0 upgraded, 7 newly installed, 0 to remove and 17 not upgraded.
+Need to get 91.2 MB of archives.
+After this operation, 357 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_docker-stable bullseye/stable amd64 containerd.io amd64 1.6.16-1 [27.7 MB]
+Get:2 https://download.docker.com/linux/debian buster/stable amd64 docker-ce-cli amd64 5:20.10.23~3-0~debian-buster [42.6 MB]
+>>>>>>> refs/remotes/origin/bullseye
 Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libip6tc2 amd64 1.8.7-1 [35.0 kB]
 Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libnfnetlink0 amd64 1.0.1-3+b1 [13.9 kB]
 Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libnetfilter-conntrack3 amd64 1.0.8-3 [40.6 kB]
 Get:6 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 iptables amd64 1.8.7-1 [382 kB]
+<<<<<<< HEAD
 Get:7 http://localhost/aptly-repo/master_docker-stable bullseye/stable amd64 docker-ce amd64 5:23.0.4-1~debian.11~bullseye [22.0 MB]
 Fetched 63.9 MB in 1s (77.5 MB/s)
+=======
+Get:7 https://download.docker.com/linux/debian buster/stable amd64 docker-ce amd64 5:20.10.23~3-0~debian-buster [20.4 MB]
+Fetched 91.2 MB in 2s (41.1 MB/s)
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package containerd.io.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 98557 files and directories currently installed.)
 Preparing to unpack .../0-containerd.io_1.6.20-1_amd64.deb ...
 Unpacking containerd.io (1.6.20-1) ...
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 97910 files and directories currently installed.)
+Preparing to unpack .../0-containerd.io_1.6.16-1_amd64.deb ...
+Unpacking containerd.io (1.6.16-1) ...
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package docker-ce-cli.
 Preparing to unpack .../1-docker-ce-cli_5%3a23.0.4-1~debian.11~bullseye_amd64.deb ...
 Unpacking docker-ce-cli (5:23.0.4-1~debian.11~bullseye) ...
@@ -181,7 +218,11 @@ Selecting previously unselected package docker-ce.
 Preparing to unpack .../6-docker-ce_5%3a23.0.4-1~debian.11~bullseye_amd64.deb ...
 Unpacking docker-ce (5:23.0.4-1~debian.11~bullseye) ...
 Setting up libip6tc2:amd64 (1.8.7-1) ...
+<<<<<<< HEAD
 Setting up containerd.io (1.6.20-1) ...
+=======
+Setting up containerd.io (1.6.16-1) ...
+>>>>>>> refs/remotes/origin/bullseye
 Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
 Setting up docker-ce-cli (5:23.0.4-1~debian.11~bullseye) ...
 Setting up libnfnetlink0:amd64 (1.0.1-3+b1) ...
@@ -201,4 +242,8 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Processing triggers for libc-bin (2.31-13+deb11u5) ...
 './cld/doc/docker-help.txt' -> '/usr/local/cld/doc/docker-help.txt'
 CLDS: * Install docker-ce.
+<<<<<<< HEAD
 CLDS: * Disk size = 6424112K. Space Used = 317568K. Runtime = 00:00:00:13.
+=======
+CLDS: * Disk size = 6612848K. Space Used = 445456K. Runtime = 00:00:00:22.
+>>>>>>> refs/remotes/origin/bullseye
