@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-git-lfs.sh ...
-  * After this operation, 52.3 MB of additional disk space will be used.
+  * After this operation, 59.8 MB of additional disk space will be used.
   * Install git-lfs.
-  * Disk size = 6861912K. Space Used = 54532K. Runtime = 00:00:00:04.
+  * Disk size = 6871464K. Space Used = 62904K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 git git-lfs git-man liberror-perl
