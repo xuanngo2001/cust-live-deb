@@ -5,7 +5,19 @@
   * To configure macchanger: dpkg-reconfigure macchanger.
   * Check whether it is working: macchanger -s .
   * systemctl status macchanger@.service
+<<<<<<< HEAD
   * Disk size = 3137396K. Space Used = 892K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 3053972K. Space Used = 892K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 2998488K. Space Used = 892K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 3052796K. Space Used = 892K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 macchanger

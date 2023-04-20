@@ -36,6 +36,7 @@ script_name=$(basename "${0}")
     )
     
 # Add new hard drive for Aptly.
+## NOTE: use aptly/aptly-hd-swap.sh
     # Make dir structure.
         mkdir -p /media/deb-repo-05/data/.aptly
         

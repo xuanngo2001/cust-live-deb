@@ -4,7 +4,19 @@
   * Add aptly nightly build repository.
   * Install aptly version: '1.5.0' to create local debian repository.
   * Add xz-utils package because aptly snapshot merge needs it.
+<<<<<<< HEAD
   * Disk size = 1677620K. Space Used = 42212K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 1547840K. Space Used = 42212K. Runtime = 00:00:00:03.
+=======
+<<<<<<< HEAD
+  * Disk size = 1539048K. Space Used = 42212K. Runtime = 00:00:00:03.
+=======
+  * Disk size = 1547800K. Space Used = 42212K. Runtime = 00:00:00:04.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 aptly xz-utils

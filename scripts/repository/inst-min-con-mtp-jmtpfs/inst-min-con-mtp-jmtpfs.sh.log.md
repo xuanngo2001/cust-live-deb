@@ -6,7 +6,19 @@
   *   jmtpfs -o allow_other /path/to/your/mount/directory/
   *   # Enter your PIN to unlock your smartphone.
   *   cd /path/to/your/mount/directory/
+<<<<<<< HEAD
   * Disk size = 1568620K. Space Used = 9120K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 1439116K. Space Used = 9116K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 1430048K. Space Used = 9120K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 1439076K. Space Used = 9116K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 jmtpfs libmagic1 libmagic-mgc libmtp9 libmtp-common

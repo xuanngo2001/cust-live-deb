@@ -3,7 +3,19 @@
   * Install ALSA sound.
   * Test sound: aplay /usr/share/sounds/alsa/*.
   * Add key bindings.
+<<<<<<< HEAD
   * Disk size = 1625096K. Space Used = 11368K. Runtime = 00:00:00:00.
+=======
+<<<<<<< HEAD
+  * Disk size = 1495312K. Space Used = 11368K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 1486524K. Space Used = 11368K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 1495272K. Space Used = 11368K. Runtime = 00:00:00:02.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 alsa-utils libasound2 libasound2-data libatopology2 libfftw3-single3

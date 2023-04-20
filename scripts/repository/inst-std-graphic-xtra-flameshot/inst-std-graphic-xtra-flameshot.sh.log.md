@@ -1,7 +1,19 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-flameshot.sh ...
   * After this operation, 34.3 MB of additional disk space will be used.
   * Install flameshot.
+<<<<<<< HEAD
   * Disk size = 4607972K. Space Used = 43312K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 4525256K. Space Used = 43312K. Runtime = 00:00:00:03.
+=======
+<<<<<<< HEAD
+  * Disk size = 4469068K. Space Used = 43312K. Runtime = 00:00:00:03.
+=======
+  * Disk size = 4524072K. Space Used = 43312K. Runtime = 00:00:00:03.
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> refs/remotes/origin/bullseye
+>>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 flameshot libdouble-conversion3 libmd4c0 libpcre2-16-0 libqt5core5a
