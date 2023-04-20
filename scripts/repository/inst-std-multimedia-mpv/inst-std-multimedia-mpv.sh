@@ -11,6 +11,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
   
 # Install MPV.
     apt-get update  # Fix: Error reading from server - read (32: Broken pipe) [IP: ::1 80]
+	apt-get -y install mpv
     apt-get update  # Fix: Error reading from server - read (32: Broken pipe) [IP: ::1 80]
 	apt-get -y install mpv
 

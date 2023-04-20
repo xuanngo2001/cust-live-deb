@@ -1,13 +1,9 @@
 * >>>>>>>>> Running inst-std-multimedia-mpv.sh ...
   * After this operation, 266 MB of additional disk space will be used.
-  * Install Media Player: .
+  * Install Media Player: mpv 0.33.1 Copyright © 2000-2020 mpv/MPlayer/mplayer2 projects.
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-<<<<<<< HEAD
-  * Disk size = 5975240K. Space Used = 73808K. Runtime = 00:00:00:05.
-=======
-  * Disk size = 6230740K. Space Used = 338216K. Runtime = 00:00:00:12.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 6463496K. Space Used = 338232K. Runtime = 00:00:00:22.
   * The following NEW packages will be installed:
   ```bash
 fonts-urw-base35 imagemagick-7-common libaom0 libaom3 libarchive13
@@ -34,5 +30,5 @@ libva-wayland2 libva-x11-2 libvdpau1 libvidstab1.1 libvmaf1
 libvo-amrwbenc0 libwebpdemux2 libwebpmux3 libwmf0.2-7 libx264-164
 libx265-192 libx265-199 libxavs2-13 libxvidcore4 libzimg2
 libzip4 libzmq5 libzvbi0 libzvbi-common mpv
-ocl-icd-libopencl1 poppler-data vapoursynth vapoursynth-ffms2
+mpv* ocl-icd-libopencl1 poppler-data vapoursynth vapoursynth-ffms2
   ```

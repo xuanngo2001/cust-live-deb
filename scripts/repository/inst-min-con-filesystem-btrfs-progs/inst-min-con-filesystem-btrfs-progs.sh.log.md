@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-filesystem-btrfs-progs.sh ...
   * After this operation, 4,588 kB of additional disk space will be used.
   * Install btrfs-progs.
-<<<<<<< HEAD
-  * Disk size = 1069460K. Space Used = 5876K. Runtime = 00:00:00:11.
-=======
-  * Disk size = 1060564K. Space Used = 5872K. Runtime = 00:00:00:08.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1294708K. Space Used = 5868K. Runtime = 00:00:00:16.
   * The following NEW packages will be installed:
   ```bash
 btrfs-progs liblzo2-2

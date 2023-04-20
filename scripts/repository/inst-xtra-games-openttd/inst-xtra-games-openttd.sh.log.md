@@ -2,11 +2,7 @@
   * After this operation, 19.3 MB of additional disk space will be used.
   * After this operation, 18.0 MB of additional disk space will be used.
   * Install OpenTTD 1.10.3.
-<<<<<<< HEAD
-  * Disk size = 7187548K. Space Used = 54144K. Runtime = 00:00:00:04.
-=======
-  * Disk size = 7252360K. Space Used = 54148K. Runtime = 00:00:00:03.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 7485060K. Space Used = 54148K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 openttd openttd-data openttd-opengfx openttd-openmsx openttd-opensfx

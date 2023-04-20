@@ -2,11 +2,7 @@
   * After this operation, 6,631 kB of additional disk space will be used.
   * Install bat.
   * batcat file.sh.
-<<<<<<< HEAD
-  * Disk size = 1643760K. Space Used = 9088K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 1634856K. Space Used = 9084K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1867596K. Space Used = 9088K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 bat libgit2-1.1 libhttp-parser2.9 libmbedcrypto3 libmbedtls12

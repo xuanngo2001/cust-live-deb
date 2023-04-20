@@ -2,11 +2,7 @@
   * After this operation, 223 MB of additional disk space will be used.
   * Install mariadb-server.
   * Set root password to [password].
-<<<<<<< HEAD
-  * Disk size = 3509332K. Space Used = 362748K. Runtime = 00:00:00:07.
-=======
-  * Disk size = 3500448K. Space Used = 362760K. Runtime = 00:00:00:06.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 3733184K. Space Used = 362760K. Runtime = 00:00:00:09.
   * The following NEW packages will be installed:
   ```bash
 galera-4 gawk libconfig-inifiles-perl libdaxctl1 libdbi-perl
