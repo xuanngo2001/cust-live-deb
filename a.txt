@@ -4,11 +4,14 @@ Error in log file: /media/master/github/cust-live-deb/logs/main.log
   E: Invalid archive member header
   E: Internal error, could not locate member control.tar{.zst,.lz4,.gz,.xz,.bz2,.lzma,}
   E: Prior errors apply to /var/cache/apt/archives/aptly_1.5.0_amd64.deb
+  E: Failed to fetch http://localhost/aptly-repo/master_bullseye-main/pool/main/d/djvulibre/libdjvulibre21_3.5.28-2_amd64.deb  Error reading from server - read (32: Broken pipe) [IP: ::1 80]
+  E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
 
 ------------------
 qcheck-command-not-found.sh:
 
-No command not found: /media/master/github/cust-live-deb/logs/main.log
+command not found in log file: /media/master/github/cust-live-deb/logs/main.log
+/root/scripts/repository/inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh: line 21: mpv: command not found
 
 ------------------
 qcheck-file-dir-not-found.sh:
@@ -78,6 +81,7 @@ Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-base.png not found: ./scr
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-math.png not found: ./scripts/repository/inst-std-office-libreoffice-all/jwmrc-menus-office-libreoffice.xml
 Error: /usr/share/pixmaps/playonlinux.xpm not found: ./scripts/repository/inst-xtra-wine-playonlinux/jwmrc-menus-inet-playonlinux.xml
 Error: /usr/share/pixmaps/wicd-gtk.xpm not found: ./scripts/repository/zx-inst-std-system-network-wicd/jwmrc-menus-network-wicd.xml
+Error: /opt/microsoft/msedge/product_logo_32.xpm not found: ./scripts/repository/inst-std-inet-xtra-ms-edge/jwmrc-menus-inet-ms-edge.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-writer.png not found: ./scripts/repository/zinst-std-office-libreoffice-appimage/jwmrc-menus-office-libreoffice.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-calc.png not found: ./scripts/repository/zinst-std-office-libreoffice-appimage/jwmrc-menus-office-libreoffice.xml
 Error: /usr/share/icons/hicolor/32x32/apps/libreoffice-impress.png not found: ./scripts/repository/zinst-std-office-libreoffice-appimage/jwmrc-menus-office-libreoffice.xml
@@ -99,6 +103,7 @@ qcheck-list-manual-packages.sh:
    ./scripts/repository/inst-std-inet-xtra-browser-plugin-downloadhelper-coapp/net.downloadhelper.coapp-1.6.3-1_amd64.deb
    ./scripts/repository/zinst-std-inet-xtra-google-chrome-keyring/linux_signing_key.pub
    ./scripts/repository/inst-min-con-05-keyring-debmultimedia/deb-multimedia-keyring_2016.8.1_all.deb
+   ./scripts/repository/inst-std-inet-xtra-ms-edge/microsoft-edge-stable_112.0.1722.48-1_amd64.deb
    ./scripts/repository/inst-xtra-vboxguest-additions-iso/VBoxGuestAdditions.iso
 
 ------------------
