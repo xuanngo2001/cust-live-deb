@@ -1,15 +1,3 @@
 * >>>>>>>>> Running inst-min-con-dircolors.sh ...
   * Set dircolors to use  to make ls more beautiful.
-<<<<<<< HEAD
-  * Disk size = 1054404K. Space Used = 24K. Runtime = 00:00:00:00.
-=======
-<<<<<<< HEAD
-  * Disk size = 924904K. Space Used = 24K. Runtime = 00:00:00:00.
-=======
-<<<<<<< HEAD
-  * Disk size = 915820K. Space Used = 24K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 924884K. Space Used = 24K. Runtime = 00:00:00:00.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 1054692K. Space Used = 24K. Runtime = 00:00:00:00.

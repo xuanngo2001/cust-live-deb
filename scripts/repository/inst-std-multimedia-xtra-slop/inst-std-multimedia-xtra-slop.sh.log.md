@@ -2,19 +2,7 @@
   * After this operation, 1,262 kB of additional disk space will be used.
   * Install slop.
   * Use slop to do area selection before do screen recorder using ffmpeg.
-<<<<<<< HEAD
-  * Disk size = 6234596K. Space Used = 1548K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 5664676K. Space Used = 1548K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 5602640K. Space Used = 1552K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 5663492K. Space Used = 1548K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 6236356K. Space Used = 1548K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libglew2.1 slop

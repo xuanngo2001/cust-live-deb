@@ -1,19 +1,7 @@
 * >>>>>>>>> Running inst-min-con-network-network-manager.sh ...
   * After this operation, 26.5 MB of additional disk space will be used.
   * Install network-manager: nmcli
-<<<<<<< HEAD
-  * Disk size = 1594680K. Space Used = 25140K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 1464884K. Space Used = 24848K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 1456108K. Space Used = 25140K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 1464844K. Space Used = 24848K. Runtime = 00:00:00:03.
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> refs/remotes/origin/bullseye
->>>>>>> branch 'bullseye' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 1594972K. Space Used = 25136K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libbluetooth3 libbrotli1 libcurl3-gnutls libglib2.0-0 libmm-glib0
