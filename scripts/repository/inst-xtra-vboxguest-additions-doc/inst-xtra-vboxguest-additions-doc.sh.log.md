@@ -1,7 +1,3 @@
 * >>>>>>>>> Running inst-xtra-vboxguest-additions-doc.sh ...
   * Add virtualbox doc-help.
-<<<<<<< HEAD
-  * Disk size = 6901640K. Space Used = 8K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 7081904K. Space Used = 8K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 7533568K. Space Used = 8K. Runtime = 00:00:00:01.

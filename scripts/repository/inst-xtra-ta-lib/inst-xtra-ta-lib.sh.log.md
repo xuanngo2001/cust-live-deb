@@ -1,10 +1,6 @@
 * >>>>>>>>> Running inst-xtra-ta-lib.sh ...
   * After this operation, 172 MB of additional disk space will be used.
-<<<<<<< HEAD
-  * Disk size = 6901632K. Space Used = 198568K. Runtime = 00:00:00:07.
-=======
-  * Disk size = 7081896K. Space Used = 198564K. Runtime = 00:00:00:10.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 7533560K. Space Used = 198572K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 binutils binutils-common binutils-x86-64-linux-gnu build-essential dpkg-dev

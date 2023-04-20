@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-ntp.sh ...
   * After this operation, 2,341 kB of additional disk space will be used.
   * Install Network Time Protocol: ntp.
-<<<<<<< HEAD
-  * Disk size = 1466140K. Space Used = 3268K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 1474888K. Space Used = 3268K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 1604712K. Space Used = 3268K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libopts25 ntp

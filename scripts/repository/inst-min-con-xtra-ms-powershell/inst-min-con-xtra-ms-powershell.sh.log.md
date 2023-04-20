@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-ms-powershell.sh ...
   * After this operation, 236 MB of additional disk space will be used.
   * Install powershell.
-<<<<<<< HEAD
-  * Disk size = 3671340K. Space Used = 310092K. Runtime = 00:00:00:06.
-=======
-  * Disk size = 3726440K. Space Used = 309912K. Runtime = 00:00:00:07.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 3810252K. Space Used = 310096K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 libicu67 powershell
