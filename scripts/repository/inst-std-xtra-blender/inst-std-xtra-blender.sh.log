@@ -4,7 +4,11 @@ Building dependency tree...
 Reading state information...
 libgl1-mesa-dri is already the newest version (20.3.5-1).
 libgl1-mesa-dri set to manually installed.
+<<<<<<< HEAD
 0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+=======
+0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
+>>>>>>> refs/remotes/origin/bullseye
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -44,6 +48,7 @@ The following NEW packages will be installed:
   libilmbase25 libjemalloc2 libkmlbase1 libkmldom1 libkmlengine1 liblapack3
   liblog4cplus-2.0.5 libminizip1 libnetcdf18 libodbc1 libogdi4.1
   libopencolorio1v5 libopencv-core4.5 libopencv-imgcodecs4.5
+<<<<<<< HEAD
   libopencv-imgproc4.5 libopencv-videoio4.5 libopenexr25 libopenimageio2.2
   libopenvdb7.1 liborc-0.4-0 libosdcpu3.4.3 libosdgpu3.4.3 libpq5 libproj19
   libqhull8.0 libquadmath0 libraw20 librttopo1 libsocket++1 libspatialite7
@@ -53,6 +58,16 @@ The following NEW packages will be installed:
 0 upgraded, 84 newly installed, 0 to remove and 18 not upgraded.
 Need to get 93.7 MB/98.0 MB of archives.
 After this operation, 427 MB of additional disk space will be used.
+=======
+  libopencv-imgproc4.5 libopencv-videoio4.5 libopenimageio2.2 libopenvdb7.1
+  liborc-0.4-0 libosdcpu3.4.3 libosdgpu3.4.3 libpq5 libproj19 libqhull8.0
+  libquadmath0 librttopo1 libsocket++1 libspatialite7 libspnav0 libsquish0
+  libsuperlu5 libsz2 libtbb2 libtinyxml2.6.2v5 liburiparser1 libxerces-c3.2
+  libyaml-cpp0.6 odbcinst odbcinst1debian2 proj-data
+0 upgraded, 75 newly installed, 0 to remove and 19 not upgraded.
+Need to get 93.7 MB of archives.
+After this operation, 397 MB of additional disk space will be used.
+>>>>>>> refs/remotes/origin/bullseye
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 blender-data all 2.83.5+dfsg-5+deb11u1 [19.0 MB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 fonts-dejavu-extra all 2.37-2 [2,070 kB]
 Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 fonts-dejavu all 2.37-2 [32.6 kB]
@@ -128,9 +143,17 @@ Get:72 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libo
 Get:73 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libosdgpu3.4.3 amd64 3.4.3-3 [136 kB]
 Get:74 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libspnav0 amd64 0.2.3-1+b2 [8,680 B]
 Get:75 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 blender amd64 2.83.5+dfsg-5+deb11u1 [19.9 MB]
+<<<<<<< HEAD
 Fetched 93.7 MB in 1s (116 MB/s)
+=======
+Fetched 93.7 MB in 1s (104 MB/s)
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package blender-data.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 91808 files and directories currently installed.)
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93386 files and directories currently installed.)
+>>>>>>> refs/remotes/origin/bullseye
 Preparing to unpack .../00-blender-data_2.83.5+dfsg-5+deb11u1_all.deb ...
 Unpacking blender-data (2.83.5+dfsg-5+deb11u1) ...
 Selecting previously unselected package fonts-dejavu-extra.
@@ -478,4 +501,8 @@ CLDS: * Install required packages for blender.
 CLDS: * Install blender3d.
 CLDS: * Insert Blender 3D menu in Graphics.
 CLDS: * http://download.blender.org/release/
+<<<<<<< HEAD
 CLDS: * Disk size = 6663192K. Space Used = 464316K. Runtime = 00:00:00:16.
+=======
+CLDS: * Disk size = 6728164K. Space Used = 435308K. Runtime = 00:00:00:10.
+>>>>>>> refs/remotes/origin/bullseye

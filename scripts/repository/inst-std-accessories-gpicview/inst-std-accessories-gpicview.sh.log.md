@@ -3,7 +3,11 @@
   * Install Image Viewer: gpicview.
   * Insert gpicview in Accessories menu.
   * Add alias viewpic='gpicview'.
+<<<<<<< HEAD
   * Disk size = 4523832K. Space Used = 11072K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 4514948K. Space Used = 11072K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 gpicview libgtk2.0-0 libgtk2.0-common

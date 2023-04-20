@@ -2,7 +2,11 @@
   * After this operation, 483 kB of additional disk space will be used.
   * Install php-mysql to enable the PDO_MYSQL database driver for PHP and to run Drupal.
   * Enable mod_rewrite module.
+<<<<<<< HEAD
   * Disk size = 6666764K. Space Used = 688K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 6731732K. Space Used = 700K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 php7.4-mysql php-mysql

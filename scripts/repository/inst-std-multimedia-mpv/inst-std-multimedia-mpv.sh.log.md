@@ -3,7 +3,11 @@
   * Install Media Player: .
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
+<<<<<<< HEAD
   * Disk size = 5975240K. Space Used = 73808K. Runtime = 00:00:00:05.
+=======
+  * Disk size = 6230740K. Space Used = 338216K. Runtime = 00:00:00:12.
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 fonts-urw-base35 imagemagick-7-common libaom0 libaom3 libarchive13

@@ -5,18 +5,33 @@ Reading state information...
 The following additional packages will be installed:
   libzip4 php7.4-zip
 The following NEW packages will be installed:
+<<<<<<< HEAD
   libzip4 php-zip php7.4-zip
 0 upgraded, 3 newly installed, 0 to remove and 18 not upgraded.
 Need to get 27.8 kB/83.2 kB of archives.
 After this operation, 260 kB of additional disk space will be used.
+=======
+  php-zip php7.4-zip
+0 upgraded, 2 newly installed, 0 to remove and 19 not upgraded.
+Need to get 27.8 kB of archives.
+After this operation, 112 kB of additional disk space will be used.
+>>>>>>> refs/remotes/origin/bullseye
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 php7.4-zip amd64 7.4.33-1+deb11u1 [21.5 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 php-zip all 2:7.4+76 [6,360 B]
+<<<<<<< HEAD
 Fetched 27.8 kB in 0s (1,992 kB/s)
 Selecting previously unselected package libzip4:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 96481 files and directories currently installed.)
 Preparing to unpack .../libzip4_1.7.3-1_amd64.deb ...
 Unpacking libzip4:amd64 (1.7.3-1) ...
+=======
+Fetched 27.8 kB in 0s (1,222 kB/s)
+>>>>>>> refs/remotes/origin/bullseye
 Selecting previously unselected package php7.4-zip.
+<<<<<<< HEAD
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 97993 files and directories currently installed.)
+>>>>>>> refs/remotes/origin/bullseye
 Preparing to unpack .../php7.4-zip_7.4.33-1+deb11u1_amd64.deb ...
 Unpacking php7.4-zip (7.4.33-1+deb11u1) ...
 Selecting previously unselected package php-zip.
@@ -34,4 +49,8 @@ invoke-rc.d: policy-rc.d denied execution of restart.
 Processing triggers for php7.4-cli (7.4.33-1+deb11u1) ...
 CLDS: * Install php-zip.
 CLDS: * This is required by: PHPExcel.
+<<<<<<< HEAD
 CLDS: * Disk size = 6667796K. Space Used = 372K. Runtime = 00:00:00:02.
+=======
+CLDS: * Disk size = 6732600K. Space Used = 208K. Runtime = 00:00:00:01.
+>>>>>>> refs/remotes/origin/bullseye
