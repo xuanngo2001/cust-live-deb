@@ -20,10 +20,10 @@ Hit:14 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:15 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:16 http://localhost/aptly-repo/master_mariadb-main bullseye InRelease
 Hit:17 http://localhost/aptly-repo/master_microsoft-main bullseye InRelease
-Hit:18 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
-Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
-Hit:20 https://deb.nodesource.com/node_18.x bullseye InRelease
-Hit:21 https://download.docker.com/linux/debian buster InRelease
+Hit:18 https://download.docker.com/linux/debian buster InRelease
+Hit:19 http://localhost/aptly-repo/master_qgis-main bullseye InRelease
+Hit:20 http://localhost/aptly-repo/master_virtualbox-contrib bullseye InRelease
+Hit:21 https://deb.nodesource.com/node_18.x bullseye InRelease
 Hit:22 https://packages.microsoft.com/repos/edge stable InRelease
 Hit:23 https://dl.google.com/linux/chrome/deb stable InRelease
 Reading package lists...
@@ -57,7 +57,7 @@ Get:14 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backp
 Get:15 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libss2 amd64 1.46.6-1~bpo11+1 [85.9 kB]
 Get:16 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 112.0.1722.54-1 [142 MB]
 Preconfiguring packages ...
-Fetched 147 MB in 16s (8,968 kB/s)
+Fetched 147 MB in 17s (8,673 kB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128307 files and directories currently installed.)
 Preparing to unpack .../init-system-helpers_1.64~bpo11+1_all.deb ...
 Unpacking init-system-helpers (1.64~bpo11+1) over (1.60) ...
@@ -110,8 +110,8 @@ Setting up less (590-1~bpo11+1) ...
 Setting up tzdata (2021a-1+deb11u9) ...
 
 Current default time zone: 'Etc/UTC'
-Local time is now:      Thu Apr 20 20:18:33 UTC 2023.
-Universal Time is now:  Thu Apr 20 20:18:33 UTC 2023.
+Local time is now:      Thu Apr 20 21:12:02 UTC 2023.
+Universal Time is now:  Thu Apr 20 21:12:02 UTC 2023.
 Run 'dpkg-reconfigure tzdata' if you wish to change it.
 
 Setting up udev (252.5-2~bpo11+1) ...
@@ -136,4 +136,4 @@ Processing triggers for ntp (1:4.2.8p15+dfsg-1) ...
 Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of try-restart.
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 7155628K. Space Used = 147872K. Runtime = 00:00:00:59.
+CLDS: * Disk size = 7155628K. Space Used = 147876K. Runtime = 00:00:00:59.

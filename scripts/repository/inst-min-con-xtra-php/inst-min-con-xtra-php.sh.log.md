@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-php.sh ...
   * After this operation, 99.3 kB of additional disk space will be used.
   * Install php.
-  * Disk size = 4117444K. Space Used = 192K. Runtime = 00:00:00:02.
+  * Disk size = 4117492K. Space Used = 192K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 php php7.4

@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-atom.sh ...
   * After this operation, 21.6 MB of additional disk space will be used.
   * Install required packages for atom.
-  * Disk size = 6972480K. Space Used = 7144K. Runtime = 00:00:00:03.
+  * Disk size = 6972532K. Space Used = 7144K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 gconf2 gconf2-common gconf-service gvfs-bin gvfs-common
