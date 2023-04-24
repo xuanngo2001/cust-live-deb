@@ -3,7 +3,11 @@
   * After this operation, 6,062 kB of additional disk space will be used.
   * Install CPU firmware: amd64-microcode.
   * Install CPU firmware: intel-microcode.
+<<<<<<< HEAD
   * Disk size = 1315028K. Space Used = 15232K. Runtime = 00:00:00:36.
+=======
+  * Disk size = 1305800K. Space Used = 15240K. Runtime = 00:00:00:22.
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 amd64-microcode intel-microcode iucode-tool

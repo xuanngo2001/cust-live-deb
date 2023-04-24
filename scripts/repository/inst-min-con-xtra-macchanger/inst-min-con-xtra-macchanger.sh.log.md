@@ -5,7 +5,11 @@
   * To configure macchanger: dpkg-reconfigure macchanger.
   * Check whether it is working: macchanger -s .
   * systemctl status macchanger@.service
+<<<<<<< HEAD
   * Disk size = 3370464K. Space Used = 896K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 3361228K. Space Used = 892K. Runtime = 00:00:00:00.
+>>>>>>> refs/remotes/origin/bullseye
   * The following NEW packages will be installed:
   ```bash
 macchanger
