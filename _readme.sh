@@ -50,3 +50,10 @@
     # Ensure everything is commit for CLD and Aptly repositories.
     ./tag-all.sh
     # Manually push tags from Git Repositories view.
+
+# Issue
+	- Google chrome is extremely slow to start (vs firefox, chromuim etc): https://askubuntu.com/a/1445233
+		- Navigate to chrome://settings/system
+		- Make sure "Use hardware acceleration when available" is toggled off.
+	    
+   
