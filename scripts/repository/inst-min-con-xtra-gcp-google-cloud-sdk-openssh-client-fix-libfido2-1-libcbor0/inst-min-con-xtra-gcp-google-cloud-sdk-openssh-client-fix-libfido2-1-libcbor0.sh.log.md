@@ -1,10 +1,6 @@
 * >>>>>>>>> Running inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client-fix-libfido2-1-libcbor0.sh ...
   * Install libfido2-1 libcbor0.
-<<<<<<< HEAD
-  * Disk size = 2157308K. Space Used = 4K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 2148064K. Space Used = 4K. Runtime = 00:00:00:01.
->>>>>>> refs/remotes/origin/bullseye
+  * Disk size = 2190472K. Space Used = 4K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libcbor0 libfido2-1
