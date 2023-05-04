@@ -1,12 +1,12 @@
 * >>>>>>>>> Running inst-std-inet-xtra-google-chrome.sh ...
-  * After this operation, 313 MB of additional disk space will be used.
-  * Install Google Chrome 112.0.5615.165 .
+  * After this operation, 315 MB of additional disk space will be used.
+  * Install Google Chrome 113.0.5672.63 .
   * Modify configuration to run google-chrome as root.
   * Insert Google Chrome in Internet menu.
   * Add google chrome alias, chrome.
   * Set default browser: update-alternatives --config x-www-browser.
   * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-  * Disk size = 5661360K. Space Used = 398052K. Runtime = 00:00:00:11.
+  * Disk size = 5686020K. Space Used = 400696K. Runtime = 00:00:00:10.
   * The following NEW packages will be installed:
   ```bash
 google-chrome-stable xdg-utils

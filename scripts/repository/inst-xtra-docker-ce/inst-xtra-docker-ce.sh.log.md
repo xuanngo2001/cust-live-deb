@@ -3,7 +3,7 @@
   * After this operation, 3,942 kB of additional disk space will be used.
   * After this operation, 253 MB of additional disk space will be used.
   * Install docker-ce.
-  * Disk size = 7323732K. Space Used = 317544K. Runtime = 00:00:00:16.
+  * Disk size = 7348112K. Space Used = 317536K. Runtime = 00:00:00:15.
   * The following NEW packages will be installed:
   ```bash
 apt-transport-https* ca-certificates* containerd.io curl* distro-info-data

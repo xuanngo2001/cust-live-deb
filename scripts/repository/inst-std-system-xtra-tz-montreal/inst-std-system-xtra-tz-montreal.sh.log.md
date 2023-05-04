@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-std-system-xtra-tz-montreal.sh ...
   * Set time: Montreal.
-  * Disk size = 6558804K. Space Used = 4K. Runtime = 00:00:00:03.
+  * Disk size = 6583196K. Space Used = 4K. Runtime = 00:00:00:01.
