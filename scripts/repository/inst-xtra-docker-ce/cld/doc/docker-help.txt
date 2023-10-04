@@ -5,6 +5,7 @@ Image: filesystem:
     Container: Big.exe
 
 # Change Root dir
+    systemctl stop docker
     echo '{ "graph": "/media/sql/docker" }' > /etc/docker/daemon.json
     systemctl restart docker
 
