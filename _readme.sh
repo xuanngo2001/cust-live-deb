@@ -1,4 +1,10 @@
 # Workflow
+    (
+        cd ../aptly
+        distroname="bullseye"
+        ./update-${distroname}.sh 2>&1 | tee log-update-${distroname}.log
+    
+    )
     ./build-cld.sh work_no_proxy
 
 # Find big files.
