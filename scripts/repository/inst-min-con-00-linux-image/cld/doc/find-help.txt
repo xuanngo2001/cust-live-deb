@@ -56,3 +56,6 @@
     # newerXX: mt=modified time, at=accessed time, ct=create time
     find . -type f -newermt '2020-04-01 00:00:00'       # After 2020-04-01 00:00:00'
     find . -type f -not -newermt '2020-04-01 00:00:00' # Before 2020-04-01 00:00:00'
+
+# List files by size in descending order.
+    find . -size +2k  -printf "%s %p\n" | sort -k1nr | cut -d ' ' --complement -f1 > big-list.txt

@@ -5,8 +5,6 @@ Image: filesystem:
     Container: Big.exe
 
 # Change Root dir
-    # https://mrkandreev.name/snippets/how_to_move_docker_data_to_another_location/
-    systemctl stop docker
     echo '{ "graph": "/media/sql/docker" }' > /etc/docker/daemon.json
     systemctl restart docker
 
