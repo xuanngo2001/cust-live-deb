@@ -85,7 +85,7 @@ Get:9 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libwa
 Get:10 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libgbm1 amd64 20.3.5-1 [73.5 kB]
 Get:11 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libglapi-mesa amd64 20.3.5-1 [71.7 kB]
 Get:12 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libwayland-client0 amd64 1.18.0-2~exp1.1 [26.9 kB]
-Get:13 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libx11-xcb1 amd64 2:1.7.2-1 [203 kB]
+Get:13 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libx11-xcb1 amd64 2:1.7.2-1+deb11u1 [203 kB]
 Get:14 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxcb-dri2-0 amd64 1.14-3 [103 kB]
 Get:15 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxcb-dri3-0 amd64 1.14-3 [102 kB]
 Get:16 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxcb-present0 amd64 1.14-3 [101 kB]
@@ -132,9 +132,9 @@ Get:56 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xser
 Get:57 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-vmware amd64 1:13.3.0-3 [117 kB]
 Get:58 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-all amd64 1:7.7+22 [38.6 kB]
 Preconfiguring packages ...
-Fetched 47.9 MB in 1s (92.0 MB/s)
+Fetched 47.9 MB in 1s (88.5 MB/s)
 Selecting previously unselected package keyboard-configuration.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71410 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71445 files and directories currently installed.)
 Preparing to unpack .../00-keyboard-configuration_1.205_all.deb ...
 Unpacking keyboard-configuration (1.205) ...
 Selecting previously unselected package libdrm-common.
@@ -171,8 +171,8 @@ Selecting previously unselected package libwayland-client0:amd64.
 Preparing to unpack .../11-libwayland-client0_1.18.0-2~exp1.1_amd64.deb ...
 Unpacking libwayland-client0:amd64 (1.18.0-2~exp1.1) ...
 Selecting previously unselected package libx11-xcb1:amd64.
-Preparing to unpack .../12-libx11-xcb1_2%3a1.7.2-1_amd64.deb ...
-Unpacking libx11-xcb1:amd64 (2:1.7.2-1) ...
+Preparing to unpack .../12-libx11-xcb1_2%3a1.7.2-1+deb11u1_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.7.2-1+deb11u1) ...
 Selecting previously unselected package libxcb-dri2-0:amd64.
 Preparing to unpack .../13-libxcb-dri2-0_1.14-3_amd64.deb ...
 Unpacking libxcb-dri2-0:amd64 (1.14-3) ...
@@ -310,7 +310,7 @@ Preparing to unpack .../57-xserver-xorg-video-all_1%3a7.7+22_amd64.deb ...
 Unpacking xserver-xorg-video-all (1:7.7+22) ...
 Setting up libxcb-dri3-0:amd64 (1.14-3) ...
 Setting up libwayland-server0:amd64 (1.18.0-2~exp1.1) ...
-Setting up libx11-xcb1:amd64 (2:1.7.2-1) ...
+Setting up libx11-xcb1:amd64 (2:1.7.2-1+deb11u1) ...
 Setting up libice6:amd64 (2:1.0.10-1) ...
 Setting up libpciaccess0:amd64 (0.16-1) ...
 Setting up libxdamage1:amd64 (1:1.1.5-2) ...
@@ -427,9 +427,9 @@ Get:4 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxr
 Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxss1 amd64 1:1.2.3-1 [17.8 kB]
 Get:6 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libxvmc1 amd64 2:1.0.12-2 [25.6 kB]
 Get:7 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-intel amd64 2:2.99.917+git20200714-1+deb11u1 [1,642 kB]
-Fetched 1,801 kB in 0s (52.7 MB/s)
+Fetched 1,801 kB in 0s (66.5 MB/s)
 Selecting previously unselected package libxcb-util1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72247 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72282 files and directories currently installed.)
 Preparing to unpack .../0-libxcb-util1_0.4.0-1+b1_amd64.deb ...
 Unpacking libxcb-util1:amd64 (0.4.0-1+b1) ...
 Selecting previously unselected package libxcursor1:amd64.
@@ -467,9 +467,9 @@ The following NEW packages will be installed:
 Need to get 83.4 kB of archives.
 After this operation, 211 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-qxl amd64 0.1.5+git20200331-1 [83.4 kB]
-Fetched 83.4 kB in 0s (7,850 kB/s)
+Fetched 83.4 kB in 0s (6,447 kB/s)
 Selecting previously unselected package xserver-xorg-video-qxl.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72309 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72344 files and directories currently installed.)
 Preparing to unpack .../xserver-xorg-video-qxl_0.1.5+git20200331-1_amd64.deb ...
 Unpacking xserver-xorg-video-qxl (0.1.5+git20200331-1) ...
 Setting up xserver-xorg-video-qxl (0.1.5+git20200331-1) ...
@@ -482,9 +482,9 @@ The following NEW packages will be installed:
 Need to get 105 kB of archives.
 After this operation, 218 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 xserver-xorg-video-mga amd64 1:2.0.0-1 [105 kB]
-Fetched 105 kB in 0s (10.4 MB/s)
+Fetched 105 kB in 0s (8,970 kB/s)
 Selecting previously unselected package xserver-xorg-video-mga.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72317 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 72352 files and directories currently installed.)
 Preparing to unpack .../xserver-xorg-video-mga_1%3a2.0.0-1_amd64.deb ...
 Unpacking xserver-xorg-video-mga (1:2.0.0-1) ...
 Setting up xserver-xorg-video-mga (1:2.0.0-1) ...
@@ -492,4 +492,4 @@ CLDS: * Install common xorg drivers.
 CLDS: * Install xserver-xorg-video-intel to fix: cat /var/log/Xorg.0.log
 CLDS: * 		Failed to initialize glamor at ScreenInit() time.
 CLDS: * 		Boot from virtualbox is working fine but boot from HP, X server not loaded.
-CLDS: * Disk size = 4564772K. Space Used = 227960K. Runtime = 00:00:00:13.
+CLDS: * Disk size = 4649468K. Space Used = 227980K. Runtime = 00:00:00:13.

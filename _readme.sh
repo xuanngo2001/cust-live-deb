@@ -5,7 +5,7 @@
         ./update-${distroname}.sh 2>&1 | tee log-update-${distroname}.log
     
     )
-    ./build-cld.sh work_no_proxy
+    ./build-cld.sh no_proxy
 
 # Find big files.
 	find-big-files.sh . 5 | tee to-dl-big-files.txt

@@ -9,26 +9,26 @@ Suggested packages:
 The following NEW packages will be installed:
   libblas3 liblinear4 liblua5.3-0 libpcap0.8 lua-lpeg nmap nmap-common
 0 upgraded, 7 newly installed, 0 to remove and 17 not upgraded.
-Need to get 6,577 kB of archives.
+Need to get 6,581 kB of archives.
 After this operation, 27.9 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libblas3 amd64 3.9.0-3 [153 kB]
+Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 libblas3 amd64 3.9.0-3+deb11u1 [153 kB]
 Get:2 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 liblinear4 amd64 2.3.0+dfsg-5 [43.6 kB]
-Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 liblua5.3-0 amd64 5.3.3-1.1+b1 [120 kB]
+Get:3 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 liblua5.3-0 amd64 5.3.3-1.1+deb11u1 [123 kB]
 Get:4 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 libpcap0.8 amd64 1.10.3-1~bpo11+1 [165 kB]
 Get:5 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 lua-lpeg amd64 1.0.2-1 [33.3 kB]
 Get:6 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 nmap-common all 7.93+dfsg1-1~bpo11+1 [4,155 kB]
 Get:7 http://localhost/aptly-repo/master_bullseye-backports-main bullseye-backports/main amd64 nmap amd64 7.93+dfsg1-1~bpo11+1 [1,908 kB]
-Fetched 6,577 kB in 0s (96.4 MB/s)
+Fetched 6,581 kB in 0s (98.3 MB/s)
 Selecting previously unselected package libblas3:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64988 files and directories currently installed.)
-Preparing to unpack .../0-libblas3_3.9.0-3_amd64.deb ...
-Unpacking libblas3:amd64 (3.9.0-3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 64965 files and directories currently installed.)
+Preparing to unpack .../0-libblas3_3.9.0-3+deb11u1_amd64.deb ...
+Unpacking libblas3:amd64 (3.9.0-3+deb11u1) ...
 Selecting previously unselected package liblinear4:amd64.
 Preparing to unpack .../1-liblinear4_2.3.0+dfsg-5_amd64.deb ...
 Unpacking liblinear4:amd64 (2.3.0+dfsg-5) ...
 Selecting previously unselected package liblua5.3-0:amd64.
-Preparing to unpack .../2-liblua5.3-0_5.3.3-1.1+b1_amd64.deb ...
-Unpacking liblua5.3-0:amd64 (5.3.3-1.1+b1) ...
+Preparing to unpack .../2-liblua5.3-0_5.3.3-1.1+deb11u1_amd64.deb ...
+Unpacking liblua5.3-0:amd64 (5.3.3-1.1+deb11u1) ...
 Selecting previously unselected package libpcap0.8:amd64.
 Preparing to unpack .../3-libpcap0.8_1.10.3-1~bpo11+1_amd64.deb ...
 Unpacking libpcap0.8:amd64 (1.10.3-1~bpo11+1) ...
@@ -42,14 +42,14 @@ Selecting previously unselected package nmap.
 Preparing to unpack .../6-nmap_7.93+dfsg1-1~bpo11+1_amd64.deb ...
 Unpacking nmap (7.93+dfsg1-1~bpo11+1) ...
 Setting up lua-lpeg:amd64 (1.0.2-1) ...
-Setting up libblas3:amd64 (3.9.0-3) ...
+Setting up libblas3:amd64 (3.9.0-3+deb11u1) ...
 update-alternatives: using /usr/lib/x86_64-linux-gnu/blas/libblas.so.3 to provide /usr/lib/x86_64-linux-gnu/libblas.so.3 (libblas.so.3-x86_64-linux-gnu) in auto mode
 Setting up libpcap0.8:amd64 (1.10.3-1~bpo11+1) ...
 Setting up nmap-common (7.93+dfsg1-1~bpo11+1) ...
-Setting up liblua5.3-0:amd64 (5.3.3-1.1+b1) ...
+Setting up liblua5.3-0:amd64 (5.3.3-1.1+deb11u1) ...
 Setting up liblinear4:amd64 (2.3.0+dfsg-5) ...
 Setting up nmap (7.93+dfsg1-1~bpo11+1) ...
 Processing triggers for libc-bin (2.31-13+deb11u6) ...
 './cld/doc/nmap-help.txt' -> '/usr/local/cld/doc/nmap-help.txt'
 CLDS: * Install nmap.
-CLDS: * Disk size = 4131828K. Space Used = 34740K. Runtime = 00:00:00:03.
+CLDS: * Disk size = 4215608K. Space Used = 34760K. Runtime = 00:00:00:03.

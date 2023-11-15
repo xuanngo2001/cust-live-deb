@@ -8,6 +8,6 @@ white=$(tput setaf 7)
 reset=$(tput sgr0)
 bold=$(tput bold)
 blink=$(tput blink)
-echo -e "  $(date +"%Y-%m-%d.%0k.%M.%S") $blink  $bold $green-----=[$red DONE DONE DONE DONE DONE DONE  DONE DONE DONE DONE DONE DONE $green]=-----$reset"
-echo -e "  $(date +"%Y-%m-%d.%0k.%M.%S") $blink  $bold $green-----=[$red DONE DONE DONE DONE DONE DONE  DONE DONE DONE DONE DONE DONE $green]=-----$reset"
-echo -e "  $(date +"%Y-%m-%d.%0k.%M.%S") $blink  $bold $green-----=[$red DONE DONE DONE DONE DONE DONE  DONE DONE DONE DONE DONE DONE $green]=-----$reset"
+echo -e "  $(date +"%Y-%m-%d_%0k.%M.%S") $blink  $bold $green-----=[$red DONE DONE DONE DONE DONE DONE  DONE DONE DONE DONE DONE DONE $green]=-----$reset"
+echo -e "  $(date +"%Y-%m-%d_%0k.%M.%S") $blink  $bold $green-----=[$red DONE DONE DONE DONE DONE DONE  DONE DONE DONE DONE DONE DONE $green]=-----$reset"
+echo -e "  $(date +"%Y-%m-%d_%0k.%M.%S") $blink  $bold $green-----=[$red DONE DONE DONE DONE DONE DONE  DONE DONE DONE DONE DONE DONE $green]=-----$reset"
