@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-min-con-firmware-cpu.sh ...
-  * After this operation, 76.8 kB of additional disk space will be used.
-  * After this operation, 12.2 MB of additional disk space will be used.
+  * After this operation, 286 kB of additional disk space will be used.
+  * After this operation, 12.6 MB of additional disk space will be used.
   * Install CPU firmware: amd64-microcode.
   * Install CPU firmware: intel-microcode.
-  * Disk size = 1322836K. Space Used = 24888K. Runtime = 00:00:00:32.
+  * Disk size = 1327180K. Space Used = 26128K. Runtime = 00:00:00:33.
   * The following NEW packages will be installed:
   ```bash
 amd64-microcode intel-microcode iucode-tool
