@@ -26,6 +26,7 @@ DEB_REPO_URL=$2
 
 # Build ISO
 	CHROOT_DIR=/media/sql/chroot/
+	rm -rf "${CHROOT_DIR}"
 	mkdir -p "${CHROOT_DIR}"
 	CHROOT_DIR=$(readlink -ev "${CHROOT_DIR}")
 	iso_output_dir=$(readlink -ev "/media/sql")
