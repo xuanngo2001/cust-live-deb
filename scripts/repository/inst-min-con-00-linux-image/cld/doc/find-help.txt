@@ -39,7 +39,8 @@
 # Find negation.
     find . -type f -not -name '*.sh'    # Find all files that don't end with .sh.
     find . -type f -not \( -name "*.svg" -or -name "*.png" -or -name "*.jpg" \) # Exclude pictures.
-
+    find . -type f  ! -path "*/node_modules/*" -exec echo {} \; # Exclude node_modules directory
+    
 # Exclude directory pattern.
     find . ! -path "./zinst-*" -type f -name "*-help.txt"
     
