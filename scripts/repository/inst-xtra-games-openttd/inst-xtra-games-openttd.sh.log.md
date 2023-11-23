@@ -1,9 +1,10 @@
 * >>>>>>>>> Running inst-xtra-games-openttd.sh ...
-  * After this operation, 19.3 MB of additional disk space will be used.
-  * After this operation, 18.0 MB of additional disk space will be used.
-  * Install OpenTTD 1.10.3.
-  * Disk size = 7665836K. Space Used = 54144K. Runtime = 00:00:00:05.
+  * After this operation, 19.4 MB of additional disk space will be used.
+  * After this operation, 30.7 MB of additional disk space will be used.
+  * Install OpenTTD 13.0.
+  * Disk size = 7344784K. Space Used = 74088K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
-openttd openttd-data openttd-opengfx openttd-openmsx openttd-opensfx
+libfluidsynth3 libinstpatch-1.0-2 openttd openttd-data openttd-opengfx
+openttd-openmsx openttd-opensfx timgm6mb-soundfont
   ```

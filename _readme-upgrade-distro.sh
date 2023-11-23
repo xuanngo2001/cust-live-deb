@@ -26,10 +26,24 @@
 
 # Test: Boot with min system and check for Debian release name.
     cat /etc/os-release
+
+# Fix debian package dependencies.
+    ./build-cld.sh no_proxy
     
+    ./qcheck.sh
+    # Fix missing packages.
+    
+    # Log in chroot
+    ./chroot.sh in /media/sql/chroot/
+        # Update repos
+        apt-update
+        # Install package
+    
+    # Got back to step 1.
+
 ################# USELESS ############################################
 # Add persistence partition.
-	cd /media/persistence/
+	cd /media/datapersist/
 	cld-persistence.sh 11264
 	reboot
 	df	# Should see /run/live/persistence/loop1

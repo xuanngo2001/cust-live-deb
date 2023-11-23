@@ -20,7 +20,7 @@ m-a -i prepare
 
 # Install zfs-dkms.
 debconf-set-selections -v zfs-dkms.seed
-apt-get -y install spl-dkms # Install spl first: https://github.com/zfsonlinux/zfs/issues/3065
+#apt-get -y install spl-dkms # Install spl first: https://github.com/zfsonlinux/zfs/issues/3065
 apt-get -y install zfs-dkms
 
 # If you want to boot from ZFS, you'll need zfs-initramfs package too:

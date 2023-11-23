@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-fzf.sh ...
-  * After this operation, 2,700 kB of additional disk space will be used.
+  * After this operation, 3,413 kB of additional disk space will be used.
   * Install fzf.
-  * Disk size = 2207936K. Space Used = 3556K. Runtime = 00:00:00:01.
+  * Disk size = 2205656K. Space Used = 4464K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 fzf

@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-min-con-xtra-py-python3-pip.sh ...
-  * After this operation, 5,895 kB of additional disk space will be used.
+  * After this operation, 10.6 MB of additional disk space will be used.
   * Install python3-pip.
-  * Disk size = 4363008K. Space Used = 12584K. Runtime = 00:00:00:03.
+  * Disk size = 4119712K. Space Used = 27780K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
-python3-pip python3-pkg-resources python3-setuptools python3-wheel python-pip-whl
+python3-pip python3-pkg-resources python3-setuptools python3-wheel
   ```

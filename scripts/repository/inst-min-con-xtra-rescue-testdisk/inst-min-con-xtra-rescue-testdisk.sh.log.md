@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-min-con-xtra-rescue-testdisk.sh ...
-  * After this operation, 1,460 kB of additional disk space will be used.
+  * After this operation, 2,921 kB of additional disk space will be used.
   * Install testdisk.
-  * Disk size = 4364892K. Space Used = 1884K. Runtime = 00:00:00:01.
+  * Disk size = 4123404K. Space Used = 3692K. Runtime = 00:00:00:21.
   * The following NEW packages will be installed:
   ```bash
-testdisk
+fuse3 ntfs-3g testdisk
   ```

@@ -2,17 +2,47 @@ CLDS:>>>>>>>>> Running inst-min-con-xtra-rescue-testdisk.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following additional packages will be installed:
+  fuse3 ntfs-3g
+The following packages will be REMOVED:
+  fuse
 The following NEW packages will be installed:
-  testdisk
-0 upgraded, 1 newly installed, 0 to remove and 17 not upgraded.
-Need to get 416 kB of archives.
-After this operation, 1,460 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bullseye-main bullseye/main amd64 testdisk amd64 7.1-5+b1 [416 kB]
-Fetched 416 kB in 0s (25.8 MB/s)
+  fuse3 ntfs-3g testdisk
+0 upgraded, 3 newly installed, 1 to remove and 6 not upgraded.
+Need to get 415 kB/857 kB of archives.
+After this operation, 2,921 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 testdisk amd64 7.1-5+nmu1 [415 kB]
+Fetched 415 kB in 0s (25.2 MB/s)
+dpkg: fuse: dependency problems, but removing anyway as you requested:
+ jmtpfs depends on fuse; however:
+  Package fuse is to be removed.
+  Package fuse3 which provides fuse is not installed.
+ exfat-fuse depends on fuse; however:
+  Package fuse is to be removed.
+  Package fuse3 which provides fuse is not installed.
+
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69484 files and directories currently installed.)
+Removing fuse (2.9.9-6+b1) ...
+update-initramfs: deferring update (trigger activated)
+Selecting previously unselected package fuse3.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69472 files and directories currently installed.)
+Preparing to unpack .../fuse3_3.14.0-4_amd64.deb ...
+Unpacking fuse3 (3.14.0-4) ...
+Setting up fuse3 (3.14.0-4) ...
+Installing new version of config file /etc/fuse.conf ...
+update-initramfs: deferring update (trigger activated)
+Selecting previously unselected package ntfs-3g.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69485 files and directories currently installed.)
+Preparing to unpack .../ntfs-3g_1%3a2022.10.3-1+b1_amd64.deb ...
+Unpacking ntfs-3g (1:2022.10.3-1+b1) ...
 Selecting previously unselected package testdisk.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69414 files and directories currently installed.)
-Preparing to unpack .../testdisk_7.1-5+b1_amd64.deb ...
-Unpacking testdisk (7.1-5+b1) ...
-Setting up testdisk (7.1-5+b1) ...
+Preparing to unpack .../testdisk_7.1-5+nmu1_amd64.deb ...
+Unpacking testdisk (7.1-5+nmu1) ...
+Setting up ntfs-3g (1:2022.10.3-1+b1) ...
+Setting up testdisk (7.1-5+nmu1) ...
+Processing triggers for initramfs-tools (0.142) ...
+update-initramfs: Generating /boot/initrd.img-6.5.0-0.deb12.1-amd64
+W: No zstd in /usr/bin:/sbin:/bin, using gzip
+live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 CLDS: * Install testdisk.
-CLDS: * Disk size = 4364892K. Space Used = 1884K. Runtime = 00:00:00:01.
+CLDS: * Disk size = 4123404K. Space Used = 3692K. Runtime = 00:00:00:21.

@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-con-xtra-bat.sh ...
-  * After this operation, 6,627 kB of additional disk space will be used.
+  * After this operation, 7,261 kB of additional disk space will be used.
   * Install bat.
   * batcat file.sh.
-  * Disk size = 1913000K. Space Used = 9088K. Runtime = 00:00:00:01.
+  * Disk size = 1909492K. Space Used = 10212K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
-bat libgit2-1.1 libhttp-parser2.9 libmbedcrypto3 libmbedtls12
-libmbedx509-0
+bat libgit2-1.5 libhttp-parser2.9 libmbedcrypto7 libmbedtls14
+libmbedx509-1
   ```
