@@ -161,6 +161,7 @@ By default, `Cust-Live-Deb` supports [persistence](https://debian-live.alioth.de
 
     # Create a persistence image file(e.g. 2048 MB).
     cld-persistence.sh 2048
+    cld-persistence.sh $((2*1024))
     
     # Copy persistence image file to the root path of any partitions.
     cp persistence /path/to/some_partition/
