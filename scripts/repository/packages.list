@@ -10,6 +10,8 @@ dialog
 dbus
 linux-image-amd64
 live-boot
+# ./inst-min-con-00-oldlibs-fix-usr-is-merged/inst-min-con-00-oldlibs-fix-usr-is-merged.sh
+usr-is-merged
 # ./inst-min-con-01-apt/inst-min-con-01-apt.sh
 
 # ./inst-min-con-01-apt-transport-https/inst-min-con-01-apt-transport-https.sh
@@ -64,7 +66,6 @@ btrfs-progs
 dosfstools
 # ./inst-min-con-filesystem-exfat/inst-min-con-filesystem-exfat.sh
 exfat-fuse
-exfat-utils
 # ./inst-min-con-filesystem-hfsprogs/inst-min-con-filesystem-hfsprogs.sh
 hfsprogs
 # ./inst-min-con-filesystem-ntfs-3g/inst-min-con-filesystem-ntfs-3g.sh
@@ -80,7 +81,6 @@ firmware-atheros
 firmware-bnx2
 firmware-bnx2x
 firmware-brcm80211
-firmware-intelwimax
 firmware-ipw2x00
 firmware-ivtv
 firmware-iwlwifi
@@ -151,9 +151,6 @@ fuse
 fzf
 # ./inst-min-con-xtra-gcp-google-cloud-sdk/inst-min-con-xtra-gcp-google-cloud-sdk.sh
 google-cloud-sdk
-# ./inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client-fix-libfido2-1-libcbor0/inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client-fix-libfido2-1-libcbor0.sh
-libfido2-1
-libcbor0
 # ./inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client/inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client.sh
 openssh-client
 # ./inst-min-con-xtra-gnuplot-nox/inst-min-con-xtra-gnuplot-nox.sh
@@ -168,13 +165,8 @@ iat
 locate
 # ./inst-min-con-xtra-macchanger/inst-min-con-xtra-macchanger.sh
 macchanger
-# ./inst-min-con-xtra-mariadb-server-fix/inst-min-con-xtra-mariadb-server-fix.sh
-libpmem1
-liburing1
 # ./inst-min-con-xtra-mariadb-server/inst-min-con-xtra-mariadb-server.sh
 mariadb-server
-# ./inst-min-con-xtra-ms-powershell/inst-min-con-xtra-ms-powershell.sh
-powershell
 # ./inst-min-con-xtra-nginx/inst-min-con-xtra-nginx.sh
 nginx
 # ./inst-min-con-xtra-nmap/inst-min-con-xtra-nmap.sh
@@ -245,8 +237,6 @@ x11-utils
 menu
 # ./inst-min-win-systray-volumeicon-alsa/inst-min-win-systray-volumeicon-alsa.sh
 volumeicon-alsa
-# ./inst-min-win-wm-awesome/inst-min-win-wm-awesome.sh
-awesome
 # ./inst-min-win-xtra-default-jdk/inst-min-win-xtra-default-jdk.sh
 default-jdk
 # ./inst-min-win-xtra-default-jre/inst-min-win-xtra-default-jre.sh
@@ -368,7 +358,7 @@ transmission-gtk
 libsixel1
 libopencore-amrnb0
 libopencore-amrwb0
-libtesseract4
+libtesseract5
 libcjson1
 libdjvulibre21
 liblqr-1-0
@@ -436,24 +426,10 @@ php-mysql
 php-xml
 # ./inst-std-xtra-opw-php-zip/inst-std-xtra-opw-php-zip.sh
 php-zip
-# ./inst-xtra-atom/inst-xtra-atom.sh
-gconf2
-gvfs-bin
 # ./inst-xtra-compressor-pngcrush/inst-xtra-compressor-pngcrush.sh
 pngcrush
 # ./inst-xtra-compressor-pngquant/inst-xtra-compressor-pngquant.sh
 pngquant
-# ./inst-xtra-docker-ce-fix-iptables/inst-xtra-docker-ce-fix-iptables.sh
-iptables
-# ./inst-xtra-docker-ce/inst-xtra-docker-ce.sh
-apt-transport-https
-ca-certificates
-curl
-gnupg-agent
-software-properties-common
-docker-ce
-docker-ce-cli
-containerd.io
 # ./inst-xtra-eclipse-libwebkit2gtk-4.0-37/inst-xtra-eclipse-libwebkit2gtk-4.0-37.sh
 xdg-dbus-proxy
 libwebkit2gtk-4.0-37
@@ -541,7 +517,6 @@ dkms
 libc6-dev
 build-essential
 module-assistant
-spl-dkms
 zfs-dkms
 zfs-initramfs
 # ./inst-zclean-00-security-updates/inst-zclean-00-security-updates.sh

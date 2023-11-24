@@ -1020,7 +1020,11 @@ It allows your changes to persist after reboot, provided that you have a
 persistence image file in the root path of any partitions. That image
 file will hold all your changes. Here is how to create a persistent
 image file:</p>
-<pre><code># Create a persistence image file(e.g. 2048 MB).
+<pre><code># Format partition with name &lt;&gt; persistence
+mkfs.ext4 -L LABEL       /dev/sdX
+mkfs.ext4 -L datapersist /dev/sdX
+
+# Create a persistence image file(e.g. 2048 MB).
 cld-persistence.sh 2048
 cld-persistence.sh $((2*1024))
 

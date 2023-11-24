@@ -159,6 +159,10 @@ title: User manual
 # Persistence
 By default, `Cust-Live-Deb` supports [persistence](https://debian-live.alioth.debian.org/live-manual/stable/manual/html/live-manual.en.html#556). It allows your changes to persist after reboot, provided that you have a persistence image file in the root path of any partitions. That image file will hold all your changes. Here is how to create a persistent image file:
 
+    # Format partition with name <> persistence
+    mkfs.ext4 -L LABEL       /dev/sdX
+    mkfs.ext4 -L datapersist /dev/sdX
+    
     # Create a persistence image file(e.g. 2048 MB).
     cld-persistence.sh 2048
     cld-persistence.sh $((2*1024))

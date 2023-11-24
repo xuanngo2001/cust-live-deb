@@ -18,7 +18,6 @@ apt-get -y install firmware-atheros
 apt-get -y install firmware-bnx2
 apt-get -y install firmware-bnx2x
 apt-get -y install firmware-brcm80211
-apt-get -y install firmware-intelwimax
 apt-get -y install firmware-ipw2x00
 apt-get -y install firmware-ivtv
 apt-get -y install firmware-iwlwifi
