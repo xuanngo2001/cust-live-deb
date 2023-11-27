@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-multimedia-xtra-sr-simplescreenrecorder.sh ...
   * After this operation, 53.7 MB of additional disk space will be used.
   * Install simplescreenrecorder.
-  * Disk size = 6437076K. Space Used = 64920K. Runtime = 00:00:00:04.
+  * Disk size = 6584168K. Space Used = 64904K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libavcodec59 libavformat59 libavutil57 libglu1-mesa libmfx1

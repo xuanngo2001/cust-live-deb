@@ -24,9 +24,7 @@ Hit:18 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
 Hit:20 https://deb.nodesource.com/node_18.x bookworm InRelease
 Hit:21 https://dl.google.com/linux/chrome/deb stable InRelease
-Get:22 https://packages.microsoft.com/repos/edge stable InRelease [3,589 B]
-Get:23 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [8,781 B]
-Fetched 12.4 kB in 3s (3,820 B/s)
+Hit:22 https://packages.microsoft.com/repos/edge stable InRelease
 Reading package lists...
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -60,7 +58,7 @@ Need to get 165 MB of archives.
 After this operation, 65.2 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 systemd-sysv amd64 254.5-1~bpo12+2 [45.6 kB]
 Get:2 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 119.0.2151.72-1 [165 MB]
-Fetched 165 MB in 18s (9,088 kB/s)
+Fetched 165 MB in 1min 26s (1,933 kB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128223 files and directories currently installed.)
 Preparing to unpack .../systemd-sysv_254.5-1~bpo12+2_amd64.deb ...
 Unpacking systemd-sysv (254.5-1~bpo12+2) over (252.17-1~deb12u1) ...
@@ -71,4 +69,4 @@ Setting up systemd-sysv (254.5-1~bpo12+2) ...
 Processing triggers for menu (2.1.49) ...
 Processing triggers for desktop-file-utils (0.26-1) ...
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 7191068K. Space Used = 225024K. Runtime = 00:00:00:34.
+CLDS: * Disk size = 7342028K. Space Used = 225028K. Runtime = 00:00:01:37.
