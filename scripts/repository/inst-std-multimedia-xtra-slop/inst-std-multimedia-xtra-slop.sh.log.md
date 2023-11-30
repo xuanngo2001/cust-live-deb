@@ -2,7 +2,7 @@
   * After this operation, 1,360 kB of additional disk space will be used.
   * Install slop.
   * Use slop to do area selection before do screen recorder using ffmpeg.
-  * Disk size = 6518980K. Space Used = 1688K. Runtime = 00:00:00:01.
+  * Disk size = 6371856K. Space Used = 1692K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libglew2.2 libslopy7.6 slop

@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client.sh ...
   * After this operation, 6,265 kB of additional disk space will be used.
   * Install openssh-client.
-  * Disk size = 2360060K. Space Used = 7324K. Runtime = 00:00:00:01.
+  * Disk size = 2213012K. Space Used = 7344K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libcbor0.8 libfido2-1 openssh-client
