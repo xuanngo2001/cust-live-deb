@@ -41,6 +41,7 @@
         I       Insert from the beginning of the line: move before the 1st char of line and switch to INSERT mode.
         0       Move cursor to beginning of the line.
         :42     Goto line 42.
+        ''      Move cursor to its last position.
 
     # Search
         f<char>     Find char.
@@ -72,20 +73,13 @@
         yy+     Copy line to register.
         p+      Paste from register.
 
-	# Select (ggvG) and copy(y) to register(+)
-	    Select the whole file(ggvG) and auto-indent(=).
-	    gg  Move cursor to the top of file.
-	    V   Change to VISUAL LINE mode.
-	    G   Move cursor to the last line of file.
-	    y   Yank
-	    +   To register
-
     # Delete / cut.
         dd      Cut/Delete line, including EOL character.
         dw      Delete word.
         d$      Delete till end of line.
         d3j     Delete 3 lines below.
         dG      Delete from current to end of file.
+        cw      Cut word and get in insert mode.
 
     # Undo
         u       Undo
@@ -99,6 +93,17 @@
         :.,$s/SEARCH/REPLACE    Search and replace from current line to the end of file.
         :%s/SEARCH/REPLACE      Search and replace on the entire file.
         :s/\~//g                Remove tilde(~). Need to escape it with (\).
+
+    # Selection: https://vimdoc.sourceforge.net/htmldoc/motion.html#object-select
+        va[     Select between [].
+        
+    # Select (ggvG) and copy(y) to register(+)
+        Select the whole file(ggvG) and auto-indent(=).
+        gg  Move cursor to the top of file.
+        V   Change to VISUAL LINE mode.
+        G   Move cursor to the last line of file.
+        y   Yank
+        +   To register
 
     # Buffers
         :ls     List buffers.
