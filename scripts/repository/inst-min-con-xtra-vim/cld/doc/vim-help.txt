@@ -64,14 +64,14 @@
             g*  Search word without word boundary.
 
     # Copy / paste.
-        yy      Copy line. It includes EOL character.
+        yy      Copy line, including EOL character.
         y$      Copy line with EOL char.
         yiw     Copy (inner) word.
         y2j     Copy 2 lines below(j).
         p       Paste after cursor. P: Paste before cursor.
 
     # Delete / cut.
-        dd      Cut/Delete line.
+        dd      Cut/Delete line, including EOL character.
         dw      Delete word.
         d$      Delete till end of line.
         d3j     Delete 3 lines below.
