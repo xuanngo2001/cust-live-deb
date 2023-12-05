@@ -69,6 +69,16 @@
         yiw     Copy (inner) word.
         y2j     Copy 2 lines below(j).
         p       Paste after cursor. P: Paste before cursor.
+        yy+     Copy line to register.
+        p+      Paste from register.
+
+	# Select (ggvG) and copy(y) to register(+)
+	    Select the whole file(ggvG) and auto-indent(=).
+	    gg  Move cursor to the top of file.
+	    V   Change to VISUAL LINE mode.
+	    G   Move cursor to the last line of file.
+	    y   Yank
+	    +   To register
 
     # Delete / cut.
         dd      Cut/Delete line, including EOL character.
