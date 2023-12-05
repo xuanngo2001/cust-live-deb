@@ -1,8 +1,10 @@
 # Quit vim
     Press ESC key and then type in `:q!`
-    :q              Quit help window.
-    :qa!            Quit all without saving any changes.
-    :wqa            Saves and quits all buffers.  
+    :q          Quit window.
+    :q!         Quit without saving.    
+    :qa!        Quit all without saving any changes.
+    :wqa        Saves and quits all buffers.  
+    CTRL+q      To escape when you mistakenly press CTRL+s.
 
 # Basic modes
     ESC     Go back to normal mode. It is the initial state.
@@ -12,13 +14,9 @@
 
 # Help
     :help <command> E.g. :help yy
-  
-    CTRL+q          To escape when you mistakenly press CTRL+s.
 
 # NORMAL mode
-    :q      Quit.
-    :q!     Quit without saving.
-    :x      Quit with saving.
+    :x                  Quit with saving.
     :w file.txt         Save to file.txt.
     :e a/b/file.txt     Edit ./a/b/file.txt.
     /pattern            Search pattern. Enter to position cursor. Forward(n). Backward(N), ggn, GN.
@@ -80,6 +78,7 @@
 
     # Undo
         u       Undo
+        :u0     Undo all
         CTRL+r  Redo
 
     # Search / replace.
