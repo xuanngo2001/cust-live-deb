@@ -70,9 +70,9 @@ Get:37 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libx
 Get:38 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libpangoxft-1.0-0 amd64 1.50.12+ds-1 [26.7 kB]
 Get:39 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 librsvg2-2 amd64 2.54.7+dfsg-1~deb12u1 [2,620 kB]
 Get:40 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 jwm amd64 2.4.3-1 [146 kB]
-Fetched 20.0 MB in 0s (90.7 MB/s)
+Fetched 20.0 MB in 0s (92.5 MB/s)
 Selecting previously unselected package hicolor-icon-theme.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73324 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73513 files and directories currently installed.)
 Preparing to unpack .../00-hicolor-icon-theme_0.17-2_all.deb ...
 Unpacking hicolor-icon-theme (0.17-2) ...
 Selecting previously unselected package libgdk-pixbuf2.0-common.
@@ -229,7 +229,7 @@ Setting up libgtk-3-common (3.24.38-2~deb12u1) ...
 Processing triggers for libglib2.0-0:amd64 (2.74.6-2) ...
 Setting up libgtk-3-0:amd64 (3.24.38-2~deb12u1) ...
 Setting up libxfce4ui-2-0:amd64 (4.18.2-2) ...
-Processing triggers for libc-bin (2.36-9+deb12u2) ...
+Processing triggers for libc-bin (2.36-9+deb12u3) ...
 Setting up libvte-2.91-0:amd64 (0.70.6-2~deb12u1) ...
 Setting up libexo-2-0:amd64 (4.18.0-1) ...
 Setting up exo-utils (4.18.0-1) ...
@@ -237,7 +237,7 @@ Setting up xfce4-terminal (1.0.4-1) ...
 update-alternatives: using /usr/bin/xfce4-terminal.wrapper to provide /usr/bin/x-terminal-emulator (x-terminal-emulator) in auto mode
 Setting up jwm (2.4.3-1) ...
 update-alternatives: using /usr/bin/jwm to provide /usr/bin/x-window-manager (x-window-manager) in auto mode
-Processing triggers for libc-bin (2.36-9+deb12u2) ...
+Processing triggers for libc-bin (2.36-9+deb12u3) ...
 './cld/app/jwm' -> '/usr/local/cld/app/jwm'
 './cld/app/jwm/jwm-bootstrap.sh' -> '/usr/local/cld/app/jwm/jwm-bootstrap.sh'
 './cld/app/jwm/jwmrc' -> '/usr/local/cld/app/jwm/jwmrc'
@@ -254,4 +254,4 @@ Processing triggers for libc-bin (2.36-9+deb12u2) ...
 CLDS: * Install Window Manager jwm: JWM v2.4.4 by Joe Wingbermuehle.
 CLDS: * Set .
 CLDS: * Change X window manager: update-alternatives --config x-window-manager
-CLDS: * Disk size = 4543128K. Space Used = 96172K. Runtime = 00:00:00:10.
+CLDS: * Disk size = 4324816K. Space Used = 96180K. Runtime = 00:00:00:11.

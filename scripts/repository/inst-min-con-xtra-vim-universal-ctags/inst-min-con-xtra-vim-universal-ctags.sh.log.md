@@ -2,7 +2,7 @@
   * After this operation, 3,623 kB of additional disk space will be used.
   * Install universal-ctags.
   * Use this for VIM.
-  * Disk size = 4130804K. Space Used = 4400K. Runtime = 00:00:00:01.
+  * Disk size = 3912488K. Space Used = 4396K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libyaml-0-2 universal-ctags
