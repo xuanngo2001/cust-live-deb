@@ -25,9 +25,9 @@ Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libqt
 Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libqt5xml5 amd64 5.15.8+dfsg-11 [122 kB]
 Get:6 http://localhost/aptly-repo/master_virtualbox-contrib bookworm/contrib amd64 virtualbox-7.0 amd64 7.0.12-159484~Debian~bookworm [92.6 MB]
 Preconfiguring packages ...
-Fetched 93.3 MB in 1s (96.5 MB/s)
+Fetched 93.3 MB in 1s (101 MB/s)
 Selecting previously unselected package libqt5sql5:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 120608 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 120656 files and directories currently installed.)
 Preparing to unpack .../0-libqt5sql5_5.15.8+dfsg-11_amd64.deb ...
 Unpacking libqt5sql5:amd64 (5.15.8+dfsg-11) ...
 Selecting previously unselected package libqt5help5:amd64.
@@ -55,25 +55,13 @@ Adding group `vboxusers' (GID 112) ...
 Done.
 Running in chroot, ignoring command 'daemon-reload'
 Running in chroot, ignoring command 'daemon-reload'
-This system is currently not set up to build kernel modules.
-Please install the Linux kernel "header" files matching the current kernel
-for adding new hardware support to the system.
-The distribution packages containing the headers are probably:
-    linux-headers-amd64 linux-headers-6.5.0-0.deb12.1-amd64
-This system is currently not set up to build kernel modules.
-Please install the Linux kernel "header" files matching the current kernel
-for adding new hardware support to the system.
-The distribution packages containing the headers are probably:
-    linux-headers-amd64 linux-headers-6.5.0-0.deb12.1-amd64
-
-There were problems setting up VirtualBox.  To re-start the set-up process, run
-  /sbin/vboxconfig
-as root.  If your system is using EFI Secure Boot you may need to sign the
-kernel modules (vboxdrv, vboxnetflt, vboxnetadp, vboxpci) before you can load
-them. Please see your Linux system's documentation for more information.
+Running in chroot, ignoring command 'start'
+Running in chroot, ignoring command 'start'
+Running in chroot, ignoring command 'start'
+Running in chroot, ignoring command 'start'
 Processing triggers for hicolor-icon-theme (0.17-2) ...
 Processing triggers for libc-bin (2.36-9+deb12u3) ...
 Processing triggers for shared-mime-info (2.2-1) ...
 Processing triggers for desktop-file-utils (0.26-1) ...
 CLDS: * Install virtualbox.
-CLDS: * Disk size = 6638212K. Space Used = 309712K. Runtime = 00:00:00:09.
+CLDS: * Disk size = 6646180K. Space Used = 315076K. Runtime = 00:00:00:24.
