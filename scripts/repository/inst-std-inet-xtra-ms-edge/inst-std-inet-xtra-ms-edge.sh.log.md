@@ -1,4 +1,4 @@
 * >>>>>>>>> Running inst-std-inet-xtra-ms-edge.sh ...
   * Install MS Edge using *.deb.
   * Change config to run MS Edge as root.
-  * Disk size = 6009860K. Space Used = 492668K. Runtime = 00:00:00:12.
+  * Disk size = 6007392K. Space Used = 492668K. Runtime = 00:00:00:11.
