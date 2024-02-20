@@ -1,5 +1,5 @@
 # Remove emplty lines.
-	m/awk NF
+    m/awk NF
 
 # Set field separator/delimiter.
     echo "abc__123_zzz" | awk -F  "__" '{print $1 " => " $0}'  # Single-quote for {}
