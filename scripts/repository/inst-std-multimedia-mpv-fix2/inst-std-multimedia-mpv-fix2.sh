@@ -14,4 +14,5 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
     apt-get install -s -y libdjvulibre21 liblqr-1-0 libraqm0
 
 # Log
+	echo "${GV_LOG} * 2024-02-20: Bookworm: Dependent packages are still required."
 	echo "${GV_LOG} * 2022-12-14: Bullseye: libdjvulibre21_3.5.28-2_amd64.deb  404  Not Found [IP: ::1 80]."
