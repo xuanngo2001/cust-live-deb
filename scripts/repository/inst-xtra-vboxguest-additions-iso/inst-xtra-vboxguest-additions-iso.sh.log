@@ -3,43 +3,21 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  binutils binutils-common binutils-x86-64-linux-gnu gcc-12 libasan8
-  libbinutils libcc1-0 libctf-nobfd0 libctf0 libgcc-12-dev libgprofng0 libitm1
-  liblsan0 libtsan2 libubsan1 linux-compiler-gcc-12-x86
-  linux-headers-6.5.0-0.deb12.4-amd64 linux-headers-6.5.0-0.deb12.4-common
-  linux-kbuild-6.5.0-0.deb12.4
-Suggested packages:
-  binutils-doc gcc-12-multilib gcc-12-doc gcc-12-locales
+  linux-compiler-gcc-12-x86 linux-headers-6.5.0-0.deb12.4-amd64
+  linux-headers-6.5.0-0.deb12.4-common linux-kbuild-6.5.0-0.deb12.4
 The following NEW packages will be installed:
-  binutils binutils-common binutils-x86-64-linux-gnu gcc-12 libasan8
-  libbinutils libcc1-0 libctf-nobfd0 libctf0 libgcc-12-dev libgprofng0 libitm1
-  liblsan0 libtsan2 libubsan1 linux-compiler-gcc-12-x86
-  linux-headers-6.5.0-0.deb12.4-amd64 linux-headers-6.5.0-0.deb12.4-common
-  linux-headers-amd64 linux-kbuild-6.5.0-0.deb12.4
-0 upgraded, 20 newly installed, 0 to remove and 9 not upgraded.
-Need to get 47.5 MB of archives.
-After this operation, 207 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 binutils-common amd64 2.40-2 [2,487 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libbinutils amd64 2.40-2 [572 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libctf-nobfd0 amd64 2.40-2 [153 kB]
-Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libctf0 amd64 2.40-2 [89.8 kB]
-Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libgprofng0 amd64 2.40-2 [812 kB]
-Get:6 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 binutils-x86-64-linux-gnu amd64 2.40-2 [2,246 kB]
-Get:7 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 binutils amd64 2.40-2 [65.0 kB]
-Get:8 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libcc1-0 amd64 12.2.0-14 [41.7 kB]
-Get:9 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libitm1 amd64 12.2.0-14 [26.1 kB]
-Get:10 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libasan8 amd64 12.2.0-14 [2,195 kB]
-Get:11 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 liblsan0 amd64 12.2.0-14 [969 kB]
-Get:12 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libtsan2 amd64 12.2.0-14 [2,196 kB]
-Get:13 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libubsan1 amd64 12.2.0-14 [883 kB]
-Get:14 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libgcc-12-dev amd64 12.2.0-14 [2,437 kB]
-Get:15 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gcc-12 amd64 12.2.0-14 [19.3 MB]
-Get:16 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-compiler-gcc-12-x86 amd64 6.5.10-1~bpo12+1 [710 kB]
-Get:17 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-6.5.0-0.deb12.4-common all 6.5.10-1~bpo12+1 [10.1 MB]
-Get:18 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-kbuild-6.5.0-0.deb12.4 amd64 6.5.10-1~bpo12+1 [984 kB]
-Get:19 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-6.5.0-0.deb12.4-amd64 amd64 6.5.10-1~bpo12+1 [1,252 kB]
-Get:20 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-amd64 amd64 6.5.10-1~bpo12+1 [1,436 B]
-Fetched 47.5 MB in 1s (86.6 MB/s)
+  linux-compiler-gcc-12-x86 linux-headers-6.5.0-0.deb12.4-amd64
+  linux-headers-6.5.0-0.deb12.4-common linux-headers-amd64
+  linux-kbuild-6.5.0-0.deb12.4
+0 upgraded, 5 newly installed, 0 to remove and 9 not upgraded.
+Need to get 13.1 MB of archives.
+After this operation, 65.8 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-compiler-gcc-12-x86 amd64 6.5.10-1~bpo12+1 [710 kB]
+Get:2 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-6.5.0-0.deb12.4-common all 6.5.10-1~bpo12+1 [10.1 MB]
+Get:3 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-kbuild-6.5.0-0.deb12.4 amd64 6.5.10-1~bpo12+1 [984 kB]
+Get:4 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-6.5.0-0.deb12.4-amd64 amd64 6.5.10-1~bpo12+1 [1,252 kB]
+Get:5 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-amd64 amd64 6.5.10-1~bpo12+1 [1,436 B]
+Fetched 13.1 MB in 0s (104 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -47,147 +25,74 @@ Reading state information...
 libc6-dev is already the newest version (2.36-9+deb12u4).
 libc6-dev set to manually installed.
 The following additional packages will be installed:
-  binutils binutils-common binutils-x86-64-linux-gnu dpkg-dev g++ g++-12 gcc
-  gcc-12 libasan8 libbinutils libcc1-0 libctf-nobfd0 libctf0 libdpkg-perl
-  libgcc-12-dev libgprofng0 libitm1 liblsan0 libstdc++-12-dev libtsan2
-  libubsan1 lsb-release make patch
+  dpkg-dev g++ g++-12 libdpkg-perl libstdc++-12-dev lsb-release make patch
 Suggested packages:
-  binutils-doc debian-keyring g++-multilib g++-12-multilib gcc-12-doc
-  gcc-multilib manpages-dev autoconf automake libtool flex bison gdb gcc-doc
-  gcc-12-multilib gcc-12-locales bzr libstdc++-12-doc make-doc ed
-  diffutils-doc
+  debian-keyring g++-multilib g++-12-multilib gcc-12-doc bzr libstdc++-12-doc
+  make-doc ed diffutils-doc
 Recommended packages:
   fakeroot sudo linux-headers-generic | linux-headers-686-pae
   | linux-headers-amd64 | linux-headers libalgorithm-merge-perl
   libfile-fcntllock-perl
 The following NEW packages will be installed:
-  binutils binutils-common binutils-x86-64-linux-gnu build-essential dkms
-  dpkg-dev g++ g++-12 gcc gcc-12 libasan8 libbinutils libcc1-0 libctf-nobfd0
-  libctf0 libdpkg-perl libgcc-12-dev libgprofng0 libitm1 liblsan0
-  libstdc++-12-dev libtsan2 libubsan1 lsb-release make patch
-0 upgraded, 26 newly installed, 0 to remove and 9 not upgraded.
-Need to get 15.3 MB/49.7 MB of archives.
-After this operation, 204 MB of additional disk space will be used.
+  build-essential dkms dpkg-dev g++ g++-12 libdpkg-perl libstdc++-12-dev
+  lsb-release make patch
+0 upgraded, 10 newly installed, 0 to remove and 9 not upgraded.
+Need to get 15.3 MB of archives.
+After this operation, 62.9 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 lsb-release all 12.0-1 [6,416 B]
-Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gcc amd64 4:12.2.0-3 [5,216 B]
-Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libdpkg-perl all 1.21.22 [603 kB]
-Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 patch amd64 2.7.6-7 [128 kB]
-Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 make amd64 4.3-4.1 [396 kB]
-Get:6 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 dpkg-dev all 1.21.22 [1,353 kB]
-Get:7 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libstdc++-12-dev amd64 12.2.0-14 [2,046 kB]
-Get:8 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 g++-12 amd64 12.2.0-14 [10.7 MB]
-Get:9 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 g++ amd64 4:12.2.0-3 [1,356 B]
-Get:10 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 build-essential amd64 12.9 [7,704 B]
-Get:11 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 dkms all 3.0.10-8+deb12u1 [48.7 kB]
-Fetched 15.3 MB in 0s (71.6 MB/s)
+Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libdpkg-perl all 1.21.22 [603 kB]
+Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 patch amd64 2.7.6-7 [128 kB]
+Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 make amd64 4.3-4.1 [396 kB]
+Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 dpkg-dev all 1.21.22 [1,353 kB]
+Get:6 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libstdc++-12-dev amd64 12.2.0-14 [2,046 kB]
+Get:7 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 g++-12 amd64 12.2.0-14 [10.7 MB]
+Get:8 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 g++ amd64 4:12.2.0-3 [1,356 B]
+Get:9 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 build-essential amd64 12.9 [7,704 B]
+Get:10 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 dkms all 3.0.10-8+deb12u1 [48.7 kB]
+Fetched 15.3 MB in 0s (105 MB/s)
 Selecting previously unselected package lsb-release.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 103080 files and directories currently installed.)
-Preparing to unpack .../00-lsb-release_12.0-1_all.deb ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 104344 files and directories currently installed.)
+Preparing to unpack .../0-lsb-release_12.0-1_all.deb ...
 Unpacking lsb-release (12.0-1) ...
-Selecting previously unselected package libcc1-0:amd64.
-Preparing to unpack .../01-libcc1-0_12.2.0-14_amd64.deb ...
-Unpacking libcc1-0:amd64 (12.2.0-14) ...
-Selecting previously unselected package binutils-common:amd64.
-Preparing to unpack .../02-binutils-common_2.40-2_amd64.deb ...
-Unpacking binutils-common:amd64 (2.40-2) ...
-Selecting previously unselected package libbinutils:amd64.
-Preparing to unpack .../03-libbinutils_2.40-2_amd64.deb ...
-Unpacking libbinutils:amd64 (2.40-2) ...
-Selecting previously unselected package libctf-nobfd0:amd64.
-Preparing to unpack .../04-libctf-nobfd0_2.40-2_amd64.deb ...
-Unpacking libctf-nobfd0:amd64 (2.40-2) ...
-Selecting previously unselected package libctf0:amd64.
-Preparing to unpack .../05-libctf0_2.40-2_amd64.deb ...
-Unpacking libctf0:amd64 (2.40-2) ...
-Selecting previously unselected package libgprofng0:amd64.
-Preparing to unpack .../06-libgprofng0_2.40-2_amd64.deb ...
-Unpacking libgprofng0:amd64 (2.40-2) ...
-Selecting previously unselected package binutils-x86-64-linux-gnu.
-Preparing to unpack .../07-binutils-x86-64-linux-gnu_2.40-2_amd64.deb ...
-Unpacking binutils-x86-64-linux-gnu (2.40-2) ...
-Selecting previously unselected package binutils.
-Preparing to unpack .../08-binutils_2.40-2_amd64.deb ...
-Unpacking binutils (2.40-2) ...
-Selecting previously unselected package libitm1:amd64.
-Preparing to unpack .../09-libitm1_12.2.0-14_amd64.deb ...
-Unpacking libitm1:amd64 (12.2.0-14) ...
-Selecting previously unselected package libasan8:amd64.
-Preparing to unpack .../10-libasan8_12.2.0-14_amd64.deb ...
-Unpacking libasan8:amd64 (12.2.0-14) ...
-Selecting previously unselected package liblsan0:amd64.
-Preparing to unpack .../11-liblsan0_12.2.0-14_amd64.deb ...
-Unpacking liblsan0:amd64 (12.2.0-14) ...
-Selecting previously unselected package libtsan2:amd64.
-Preparing to unpack .../12-libtsan2_12.2.0-14_amd64.deb ...
-Unpacking libtsan2:amd64 (12.2.0-14) ...
-Selecting previously unselected package libubsan1:amd64.
-Preparing to unpack .../13-libubsan1_12.2.0-14_amd64.deb ...
-Unpacking libubsan1:amd64 (12.2.0-14) ...
-Selecting previously unselected package libgcc-12-dev:amd64.
-Preparing to unpack .../14-libgcc-12-dev_12.2.0-14_amd64.deb ...
-Unpacking libgcc-12-dev:amd64 (12.2.0-14) ...
-Selecting previously unselected package gcc-12.
-Preparing to unpack .../15-gcc-12_12.2.0-14_amd64.deb ...
-Unpacking gcc-12 (12.2.0-14) ...
-Selecting previously unselected package gcc.
-Preparing to unpack .../16-gcc_4%3a12.2.0-3_amd64.deb ...
-Unpacking gcc (4:12.2.0-3) ...
 Selecting previously unselected package libdpkg-perl.
-Preparing to unpack .../17-libdpkg-perl_1.21.22_all.deb ...
+Preparing to unpack .../1-libdpkg-perl_1.21.22_all.deb ...
 Unpacking libdpkg-perl (1.21.22) ...
 Selecting previously unselected package patch.
-Preparing to unpack .../18-patch_2.7.6-7_amd64.deb ...
+Preparing to unpack .../2-patch_2.7.6-7_amd64.deb ...
 Unpacking patch (2.7.6-7) ...
 Selecting previously unselected package make.
-Preparing to unpack .../19-make_4.3-4.1_amd64.deb ...
+Preparing to unpack .../3-make_4.3-4.1_amd64.deb ...
 Unpacking make (4.3-4.1) ...
 Selecting previously unselected package dpkg-dev.
-Preparing to unpack .../20-dpkg-dev_1.21.22_all.deb ...
+Preparing to unpack .../4-dpkg-dev_1.21.22_all.deb ...
 Unpacking dpkg-dev (1.21.22) ...
 Selecting previously unselected package libstdc++-12-dev:amd64.
-Preparing to unpack .../21-libstdc++-12-dev_12.2.0-14_amd64.deb ...
+Preparing to unpack .../5-libstdc++-12-dev_12.2.0-14_amd64.deb ...
 Unpacking libstdc++-12-dev:amd64 (12.2.0-14) ...
 Selecting previously unselected package g++-12.
-Preparing to unpack .../22-g++-12_12.2.0-14_amd64.deb ...
+Preparing to unpack .../6-g++-12_12.2.0-14_amd64.deb ...
 Unpacking g++-12 (12.2.0-14) ...
 Selecting previously unselected package g++.
-Preparing to unpack .../23-g++_4%3a12.2.0-3_amd64.deb ...
+Preparing to unpack .../7-g++_4%3a12.2.0-3_amd64.deb ...
 Unpacking g++ (4:12.2.0-3) ...
 Selecting previously unselected package build-essential.
-Preparing to unpack .../24-build-essential_12.9_amd64.deb ...
+Preparing to unpack .../8-build-essential_12.9_amd64.deb ...
 Unpacking build-essential (12.9) ...
 Setting up lsb-release (12.0-1) ...
 Selecting previously unselected package dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105152 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105762 files and directories currently installed.)
 Preparing to unpack .../dkms_3.0.10-8+deb12u1_all.deb ...
 Unpacking dkms (3.0.10-8+deb12u1) ...
-Setting up binutils-common:amd64 (2.40-2) ...
-Setting up libctf-nobfd0:amd64 (2.40-2) ...
+Setting up libstdc++-12-dev:amd64 (12.2.0-14) ...
 Setting up make (4.3-4.1) ...
 Setting up patch (2.7.6-7) ...
 Setting up libdpkg-perl (1.21.22) ...
-Setting up libubsan1:amd64 (12.2.0-14) ...
-Setting up libasan8:amd64 (12.2.0-14) ...
-Setting up libtsan2:amd64 (12.2.0-14) ...
-Setting up libbinutils:amd64 (2.40-2) ...
-Setting up libcc1-0:amd64 (12.2.0-14) ...
-Setting up liblsan0:amd64 (12.2.0-14) ...
-Setting up libitm1:amd64 (12.2.0-14) ...
-Setting up libctf0:amd64 (2.40-2) ...
-Setting up libgprofng0:amd64 (2.40-2) ...
-Setting up libgcc-12-dev:amd64 (12.2.0-14) ...
-Setting up binutils-x86-64-linux-gnu (2.40-2) ...
-Setting up libstdc++-12-dev:amd64 (12.2.0-14) ...
-Setting up binutils (2.40-2) ...
-Setting up dpkg-dev (1.21.22) ...
-Setting up gcc-12 (12.2.0-14) ...
 Setting up g++-12 (12.2.0-14) ...
-Setting up gcc (4:12.2.0-3) ...
+Setting up dpkg-dev (1.21.22) ...
 Setting up dkms (3.0.10-8+deb12u1) ...
 Setting up g++ (4:12.2.0-3) ...
 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
 Setting up build-essential (12.9) ...
-Processing triggers for libc-bin (2.36-9+deb12u4) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -201,7 +106,7 @@ The following NEW packages will be installed:
 Need to get 0 B/13.1 MB of archives.
 After this operation, 65.8 MB of additional disk space will be used.
 Selecting previously unselected package linux-compiler-gcc-12-x86.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105176 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105786 files and directories currently installed.)
 Preparing to unpack .../linux-compiler-gcc-12-x86_6.5.10-1~bpo12+1_amd64.deb ...
 Unpacking linux-compiler-gcc-12-x86 (6.5.10-1~bpo12+1) ...
 Selecting previously unselected package linux-headers-6.5.0-0.deb12.4-common.
@@ -220,12 +125,11 @@ Setting up linux-headers-6.5.0-0.deb12.4-amd64 (6.5.10-1~bpo12+1) ...
 /etc/kernel/header_postinst.d/dkms:
 dkms: running auto installation service for kernel 6.5.0-0.deb12.4-amd64.
 dkms: autoinstall for kernel: 6.5.0-0.deb12.4-amd64.
-Verifying archive integrity... All good.
-Uncompressing VirtualBox 6.1.32 Guest Additions for Linux........
+Verifying archive integrity...     0%    70%  100%   MD5 checksums are OK. All good.
+Uncompressing VirtualBox 7.0.4 Guest Additions for Linux     0%    70%  100%  
 VirtualBox Guest Additions installer
-Copying additional installer modules ...
-Installing additional modules ...
 VirtualBox Guest Additions: Starting.
+VirtualBox Guest Additions: Setting up modules
 VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
 modules.  This may take a while.
 VirtualBox Guest Additions: To build modules for other installed kernels, run
@@ -239,10 +143,20 @@ VirtualBox Guest Additions: Look at /var/log/vboxadd-setup.log to find out what
 went wrong
 VirtualBox Guest Additions: Running kernel modules will not be replaced until 
 the system is restarted
-Running in chroot, ignoring command 'daemon-reload'
+Setting up modules
+Building the VirtualBox Guest Additions kernel modules.  This may take a while.
+To build modules for other installed kernels, run
+  /sbin/rcvboxadd quicksetup <version>
+or
+  /sbin/rcvboxadd quicksetup all
+Building the modules for kernel 6.5.0-0.deb12.4-amd64.
+
+Look at /var/log/vboxadd-setup.log to find out what went wrong
+Running kernel modules will not be replaced until the system is restarted
+vboxadd-service.sh: Starting VirtualBox Guest Addition service.
 CLDS: * WARNING: Use this script only if backport repository doesn't work.
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
-CLDS: * Delete VBoxGuestAdditions.iso[60928K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 7584996K. Space Used = 292280K. Runtime = 00:00:00:33.
+CLDS: * Delete VBoxGuestAdditions.iso[51728K]. Space used could be negative due to this deletion.
+CLDS: * Disk size = 7747260K. Space Used = 138496K. Runtime = 00:00:00:20.

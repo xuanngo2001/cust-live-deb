@@ -2,43 +2,20 @@ CLDS:>>>>>>>>> Running inst-std-system-monitor-switcher-lxrandr.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following additional packages will be installed:
-  cpp cpp-12 libisl23 libmpc3
 Suggested packages:
-  cpp-doc gcc-12-locales cpp-12-doc nickle cairo-5c xorg-docs-core
+  nickle cairo-5c xorg-docs-core
 The following NEW packages will be installed:
-  cpp cpp-12 libisl23 libmpc3 x11-xserver-utils
-0 upgraded, 5 newly installed, 0 to remove and 9 not upgraded.
-Need to get 10.7 MB of archives.
-After this operation, 37.8 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libisl23 amd64 0.25-1.1 [683 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libmpc3 amd64 1.3.1-1 [51.5 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 cpp-12 amd64 12.2.0-14 [9,764 kB]
-Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 cpp amd64 4:12.2.0-3 [6,836 B]
-Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 x11-xserver-utils amd64 7.7+9+b1 [169 kB]
-Fetched 10.7 MB in 0s (84.5 MB/s)
-Selecting previously unselected package libisl23:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94991 files and directories currently installed.)
-Preparing to unpack .../libisl23_0.25-1.1_amd64.deb ...
-Unpacking libisl23:amd64 (0.25-1.1) ...
-Selecting previously unselected package libmpc3:amd64.
-Preparing to unpack .../libmpc3_1.3.1-1_amd64.deb ...
-Unpacking libmpc3:amd64 (1.3.1-1) ...
-Selecting previously unselected package cpp-12.
-Preparing to unpack .../cpp-12_12.2.0-14_amd64.deb ...
-Unpacking cpp-12 (12.2.0-14) ...
-Selecting previously unselected package cpp.
-Preparing to unpack .../cpp_4%3a12.2.0-3_amd64.deb ...
-Unpacking cpp (4:12.2.0-3) ...
+  x11-xserver-utils
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
+Need to get 169 kB of archives.
+After this operation, 590 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 x11-xserver-utils amd64 7.7+9+b1 [169 kB]
+Fetched 169 kB in 0s (5,762 kB/s)
 Selecting previously unselected package x11-xserver-utils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 96288 files and directories currently installed.)
 Preparing to unpack .../x11-xserver-utils_7.7+9+b1_amd64.deb ...
 Unpacking x11-xserver-utils (7.7+9+b1) ...
-Setting up libmpc3:amd64 (1.3.1-1) ...
-Setting up libisl23:amd64 (0.25-1.1) ...
-Setting up cpp-12 (12.2.0-14) ...
-Setting up cpp (4:12.2.0-3) ...
 Setting up x11-xserver-utils (7.7+9+b1) ...
-Processing triggers for libc-bin (2.36-9+deb12u4) ...
 Processing triggers for menu (2.1.49) ...
 Reading package lists...
 Building dependency tree...
@@ -49,9 +26,9 @@ The following NEW packages will be installed:
 Need to get 52.1 kB of archives.
 After this operation, 411 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 lxrandr amd64 0.3.2-1.1 [52.1 kB]
-Fetched 52.1 kB in 0s (0 B/s)
+Fetched 52.1 kB in 0s (2,005 kB/s)
 Selecting previously unselected package lxrandr.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 95057 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 96327 files and directories currently installed.)
 Preparing to unpack .../lxrandr_0.3.2-1.1_amd64.deb ...
 Unpacking lxrandr (0.3.2-1.1) ...
 Setting up lxrandr (0.3.2-1.1) ...
@@ -59,4 +36,4 @@ Processing triggers for desktop-file-utils (0.26-1) ...
 './cld/doc/monitor-help.txt' -> '/usr/local/cld/doc/monitor-help.txt'
 CLDS: * Install Monitor Switcher: lxrandr.
 CLDS: * Add lxrandr key binding.
-CLDS: * Disk size = 6361088K. Space Used = 47628K. Runtime = 00:00:00:04.
+CLDS: * Disk size = 6677628K. Space Used = 972K. Runtime = 00:00:00:02.
