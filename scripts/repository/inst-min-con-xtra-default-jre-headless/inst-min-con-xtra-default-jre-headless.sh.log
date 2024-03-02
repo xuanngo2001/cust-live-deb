@@ -42,7 +42,11 @@ Get:19 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libh
 Get:20 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 openjdk-17-jre-headless amd64 17.0.10+7-1~deb12u1 [43.7 MB]
 Get:21 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 default-jre-headless amd64 2:1.17-74 [2,936 B]
 Preconfiguring packages ...
+<<<<<<< HEAD
 Fetched 52.0 MB in 0s (126 MB/s)
+=======
+Fetched 52.0 MB in 0s (115 MB/s)
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
 Selecting previously unselected package openssl.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22912 files and directories currently installed.)
 Preparing to unpack .../00-openssl_3.0.11-1~deb12u2_amd64.deb ...
@@ -292,4 +296,8 @@ done.
 CLDS: * Install openjdk version "17.0.10" 2024-01-16.
 CLDS: * To install JAVA binary: https://wiki.debian.org/JavaPackage.
 CLDS: * JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64/bin/java".
+<<<<<<< HEAD
 CLDS: * Disk size = 2347372K. Space Used = 258584K. Runtime = 00:00:00:05.
+=======
+CLDS: * Disk size = 2200436K. Space Used = 258576K. Runtime = 00:00:00:08.
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git

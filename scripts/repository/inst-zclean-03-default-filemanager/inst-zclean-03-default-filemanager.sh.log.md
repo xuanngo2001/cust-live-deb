@@ -1,3 +1,7 @@
 * >>>>>>>>> Running inst-zclean-03-default-filemanager.sh ...
   * Set shortcut key(WIN+e) for filemanager.
+<<<<<<< HEAD
   * Disk size = 6879564K. Space Used = 4K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 6721612K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git

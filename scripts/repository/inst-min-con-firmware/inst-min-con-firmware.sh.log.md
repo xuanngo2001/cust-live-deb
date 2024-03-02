@@ -14,7 +14,11 @@
   * After this operation, 7,046 kB of additional disk space will be used.
   * After this operation, 61.4 kB of additional disk space will be used.
   * Install firmwares.
+<<<<<<< HEAD
   * Disk size = 1931456K. Space Used = 463508K. Runtime = 00:00:01:00.
+=======
+  * Disk size = 1784528K. Space Used = 463496K. Runtime = 00:00:01:31.
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 atmel-firmware bluez-firmware firmware-amd-graphics firmware-atheros firmware-bnx2

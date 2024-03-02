@@ -1,2 +1,6 @@
 * >>>>>>>>> Running inst-min-con-05-keyring-aptly.sh ...
+<<<<<<< HEAD
   * Disk size = 1379504K. Space Used = 4K. Runtime = 00:00:00:00.
+=======
+  * Disk size = 1232580K. Space Used = 4K. Runtime = 00:00:00:00.
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
