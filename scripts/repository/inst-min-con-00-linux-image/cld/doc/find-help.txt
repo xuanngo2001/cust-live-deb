@@ -7,8 +7,9 @@
     find . -type f -name '*.txt' -exec sed -i 's/SEARCH/REPLACE/g' {} +
  
 # Find and execute multiple commands.
-    find /usr/local/bin/ -name '*.sh' -type f -execdir echo "Executing {}" \; -execdir chmod +x {} \; 
- 
+    find . -type f -name '*.sh' -execdir echo "Executing {}" \; -execdir chmod +x {} \; 
+    find . -type f -name "*.sh" ! -name "*readme*.sh" -execdir echo "Executing {}" \; -execdir chmod +x {} \;
+
 # Find and execute multiple commands with success condition.
     find "${base_dir}" -type f -name '*.url' -exec grep "${search_term}" {} \; -exec echo {} \;
  
