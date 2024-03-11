@@ -1,3 +1,6 @@
+# Git author and committer
+	Xuan Ngo <xuanngo2001@users.noreply.github.com>
+
 # Workflow
     (
         cd ../aptly
