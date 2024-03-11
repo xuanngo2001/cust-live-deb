@@ -7,7 +7,7 @@ The following packages were automatically installed and are no longer required:
 Use 'apt autoremove' to remove them.
 The following additional packages will be installed:
   galera-4 gawk libconfig-inifiles-perl libdaxctl1 libdbi-perl libmariadb3
-  libmpfr6 libncurses6 libndctl6 libpmem1 libsigsegv2 liburing2 libwrap0 lsof
+  libncurses6 libndctl6 libpmem1 libsigsegv2 liburing2 libwrap0 lsof
   mariadb-client mariadb-client-core mariadb-common mariadb-server-core
   mysql-common psmisc socat
 Suggested packages:
@@ -20,47 +20,62 @@ Recommended packages:
   mariadb-plugin-provider-lzo mariadb-plugin-provider-snappy
 The following NEW packages will be installed:
   galera-4 gawk libconfig-inifiles-perl libdaxctl1 libdbi-perl libmariadb3
-  libmpfr6 libncurses6 libndctl6 libpmem1 libsigsegv2 liburing2 libwrap0 lsof
+  libncurses6 libndctl6 libpmem1 libsigsegv2 liburing2 libwrap0 lsof
   mariadb-client mariadb-client-core mariadb-common mariadb-server
   mariadb-server-core mysql-common psmisc socat
-0 upgraded, 22 newly installed, 0 to remove and 8 not upgraded.
-Need to get 19.3 MB of archives.
-After this operation, 194 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libmpfr6 amd64 4.2.0-1 [701 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libsigsegv2 amd64 2.14-1 [37.2 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gawk amd64 1:5.2.1-2 [673 kB]
-Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mysql-common all 5.8+1.1.0 [6,636 B]
-Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mariadb-common all 1:10.11.6-0+deb12u1 [24.4 kB]
-Get:6 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 galera-4 amd64 26.4.13-1 [825 kB]
-Get:7 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libdbi-perl amd64 1.643-4 [773 kB]
-Get:8 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 lsof amd64 4.95.0-1 [318 kB]
-Get:9 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libconfig-inifiles-perl all 3.000003-2 [45.9 kB]
-Get:10 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libmariadb3 amd64 1:10.11.6-0+deb12u1 [174 kB]
-Get:11 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libncurses6 amd64 6.4-4 [103 kB]
-Get:12 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mariadb-client-core amd64 1:10.11.6-0+deb12u1 [869 kB]
-Get:13 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mariadb-client amd64 1:10.11.6-0+deb12u1 [2,931 kB]
-Get:14 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libdaxctl1 amd64 76.1-1 [21.1 kB]
-Get:15 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libndctl6 amd64 76.1-1 [61.7 kB]
-Get:16 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libpmem1 amd64 1.12.1-2 [90.0 kB]
-Get:17 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 liburing2 amd64 2.3-3 [12.6 kB]
-Get:18 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mariadb-server-core amd64 1:10.11.6-0+deb12u1 [7,249 kB]
-Get:19 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 psmisc amd64 23.6-1 [259 kB]
-Get:20 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libwrap0 amd64 7.6.q-32 [54.9 kB]
-Get:21 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 socat amd64 1.7.4.4-2 [375 kB]
-Get:22 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mariadb-server amd64 1:10.11.6-0+deb12u1 [3,655 kB]
+0 upgraded, 21 newly installed, 0 to remove and 8 not upgraded.
+Need to get 18.6 MB of archives.
+After this operation, 193 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libsigsegv2 amd64 2.14-1 [37.2 kB]
+Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gawk amd64 1:5.2.1-2 [673 kB]
+Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mysql-common all 5.8+1.1.0 [6,636 B]
+Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mariadb-common all 1:10.11.6-0+deb12u1 [24.4 kB]
+Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 galera-4 amd64 26.4.13-1 [825 kB]
+Get:6 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libdbi-perl amd64 1.643-4 [773 kB]
+Get:7 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 lsof amd64 4.95.0-1 [318 kB]
+Get:8 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libconfig-inifiles-perl all 3.000003-2 [45.9 kB]
+Get:9 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libmariadb3 amd64 1:10.11.6-0+deb12u1 [174 kB]
+Get:10 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libncurses6 amd64 6.4-4 [103 kB]
+Get:11 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mariadb-client-core amd64 1:10.11.6-0+deb12u1 [869 kB]
+Get:12 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mariadb-client amd64 1:10.11.6-0+deb12u1 [2,931 kB]
+Get:13 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libdaxctl1 amd64 76.1-1 [21.1 kB]
+Get:14 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libndctl6 amd64 76.1-1 [61.7 kB]
+Get:15 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libpmem1 amd64 1.12.1-2 [90.0 kB]
+Get:16 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 liburing2 amd64 2.3-3 [12.6 kB]
+Get:17 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mariadb-server-core amd64 1:10.11.6-0+deb12u1 [7,249 kB]
+Get:18 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 psmisc amd64 23.6-1 [259 kB]
+Get:19 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libwrap0 amd64 7.6.q-32 [54.9 kB]
+Get:20 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 socat amd64 1.7.4.4-2 [375 kB]
+Get:21 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 mariadb-server amd64 1:10.11.6-0+deb12u1 [3,655 kB]
 Preconfiguring packages ...
+<<<<<<< HEAD
 Fetched 19.3 MB in 0s (112 MB/s)
+=======
+<<<<<<< HEAD
+Fetched 18.6 MB in 0s (108 MB/s)
+=======
+Fetched 19.3 MB in 0s (103 MB/s)
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
 Selecting previously unselected package libmpfr6:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 65779 files and directories currently installed.)
 Preparing to unpack .../libmpfr6_4.2.0-1_amd64.deb ...
 Unpacking libmpfr6:amd64 (4.2.0-1) ...
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
 Selecting previously unselected package libsigsegv2:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67064 files and directories currently installed.)
 Preparing to unpack .../libsigsegv2_2.14-1_amd64.deb ...
 Unpacking libsigsegv2:amd64 (2.14-1) ...
-Setting up libmpfr6:amd64 (4.2.0-1) ...
 Setting up libsigsegv2:amd64 (2.14-1) ...
 Selecting previously unselected package gawk.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 65799 files and directories currently installed.)
+=======
+<<<<<<< HEAD
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67073 files and directories currently installed.)
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 65752 files and directories currently installed.)
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
 Preparing to unpack .../00-gawk_1%3a5.2.1-2_amd64.deb ...
 Unpacking gawk (1:5.2.1-2) ...
 Selecting previously unselected package mysql-common.
@@ -122,7 +137,15 @@ update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.c
 Setting up mariadb-common (1:10.11.6-0+deb12u1) ...
 update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
 Selecting previously unselected package mariadb-server.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66642 files and directories currently installed.)
+=======
+<<<<<<< HEAD
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 67916 files and directories currently installed.)
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66595 files and directories currently installed.)
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
 Preparing to unpack .../mariadb-server_1%3a10.11.6-0+deb12u1_amd64.deb ...
 invoke-rc.d: unknown initscript, /etc/init.d/mariadb not found.
 Running in chroot, ignoring request.
@@ -155,18 +178,26 @@ invoke-rc.d: policy-rc.d denied execution of start.
 Processing triggers for libc-bin (2.36-9+deb12u4) ...
 './cld/doc/mysql-admin-help.txt' -> '/usr/local/cld/doc/mysql-admin-help.txt'
 './cld/doc/mysql-aggregate-help.txt' -> '/usr/local/cld/doc/mysql-aggregate-help.txt'
-'./cld/doc/mysql-alter-help.txt' -> '/usr/local/cld/doc/mysql-alter-help.txt'
-'./cld/doc/mysql-cmd-help.txt' -> '/usr/local/cld/doc/mysql-cmd-help.txt'
 './cld/doc/mysql-cnf-help.txt' -> '/usr/local/cld/doc/mysql-cnf-help.txt'
-'./cld/doc/mysql-create-help.txt' -> '/usr/local/cld/doc/mysql-create-help.txt'
-'./cld/doc/mysql-data-type-help.txt' -> '/usr/local/cld/doc/mysql-data-type-help.txt'
+'./cld/doc/mysql-view-help.txt' -> '/usr/local/cld/doc/mysql-view-help.txt'
+'./cld/doc/mysql-alter-help.txt' -> '/usr/local/cld/doc/mysql-alter-help.txt'
 './cld/doc/mysql-error-help.txt' -> '/usr/local/cld/doc/mysql-error-help.txt'
-'./cld/doc/mysql-help.txt' -> '/usr/local/cld/doc/mysql-help.txt'
 './cld/doc/mysql-intersect-help.txt' -> '/usr/local/cld/doc/mysql-intersect-help.txt'
+'./cld/doc/mysql-help.txt' -> '/usr/local/cld/doc/mysql-help.txt'
+'./cld/doc/mysql-create-help.txt' -> '/usr/local/cld/doc/mysql-create-help.txt'
 './cld/doc/mysql-sql-examples.sql' -> '/usr/local/cld/doc/mysql-sql-examples.sql'
 './cld/doc/mysql-trigger-help.txt' -> '/usr/local/cld/doc/mysql-trigger-help.txt'
+'./cld/doc/mysql-cmd-help.txt' -> '/usr/local/cld/doc/mysql-cmd-help.txt'
+'./cld/doc/mysql-data-type-help.txt' -> '/usr/local/cld/doc/mysql-data-type-help.txt'
 './cld/doc/mysql-user-help.txt' -> '/usr/local/cld/doc/mysql-user-help.txt'
-'./cld/doc/mysql-view-help.txt' -> '/usr/local/cld/doc/mysql-view-help.txt'
 CLDS: * Install mariadb-server.
 CLDS: * Set root password to [password].
+<<<<<<< HEAD
 CLDS: * Disk size = 3737564K. Space Used = 323300K. Runtime = 00:00:00:07.
+=======
+<<<<<<< HEAD
+CLDS: * Disk size = 4158448K. Space Used = 321416K. Runtime = 00:00:00:04.
+=======
+CLDS: * Disk size = 3735564K. Space Used = 323300K. Runtime = 00:00:00:07.
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git

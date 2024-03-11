@@ -1,3 +1,11 @@
 * >>>>>>>>> Running inst-std-system-keyboard.sh ...
   * Insert keyboard configuration in Administration menu.
+<<<<<<< HEAD
   * Disk size = 6316656K. Space Used = 4K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 6676656K. Space Used = 4K. Runtime = 00:00:00:00.
+=======
+  * Disk size = 6315700K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git

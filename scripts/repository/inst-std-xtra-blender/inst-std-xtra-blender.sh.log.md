@@ -4,7 +4,15 @@
   * Install blender3d.
   * Insert Blender 3D menu in Graphics.
   * http://download.blender.org/release/
+<<<<<<< HEAD
   * Disk size = 6970032K. Space Used = 604340K. Runtime = 00:00:00:18.
+=======
+<<<<<<< HEAD
+  * Disk size = 7282968K. Space Used = 603936K. Runtime = 00:00:00:11.
+=======
+  * Disk size = 6969076K. Space Used = 604340K. Runtime = 00:00:00:17.
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 blender blender-data fonts-dejavu fonts-dejavu-extra gdal-data
@@ -21,8 +29,8 @@ libopencolorio2.1 libopencv-core406 libopencv-imgcodecs406 libopencv-imgproc406 
 libopenexr-3-1-30 libopenimageio2.4 libopenvdb10.0 liborc-0.4-0 libosdcpu3.5.0
 libosdgpu3.5.0 libpcre3 libplacebo208 libpocketsphinx3 libpostproc56
 libpotrace0 libpq5 libproj25 libpugixml1v5 libpystring0
-libqhull-r8.0 libquadmath0 libraw20 librttopo1 libsocket++1
-libspatialite7 libsphinxbase3 libspnav0 libsuperlu5 libsz2
-libtbb12 libtbbbind-2-5 libtbbmalloc2 liburiparser1 libvidstab1.1
-libxerces-c3.2 libyaml-cpp0.7 proj-data unixodbc-common
+libqhull-r8.0 libraw20 librttopo1 libsocket++1 libspatialite7
+libsphinxbase3 libspnav0 libsuperlu5 libsz2 libtbb12
+libtbbbind-2-5 libtbbmalloc2 liburiparser1 libvidstab1.1 libxerces-c3.2
+libyaml-cpp0.7 proj-data unixodbc-common
   ```

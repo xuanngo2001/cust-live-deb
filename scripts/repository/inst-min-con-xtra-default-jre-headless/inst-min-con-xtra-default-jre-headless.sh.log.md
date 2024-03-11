@@ -3,7 +3,15 @@
   * Install openjdk version "17.0.10" 2024-01-16.
   * To install JAVA binary: https://wiki.debian.org/JavaPackage.
   * JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64/bin/java".
+<<<<<<< HEAD
   * Disk size = 2200436K. Space Used = 258576K. Runtime = 00:00:00:07.
+=======
+<<<<<<< HEAD
+  * Disk size = 2347372K. Space Used = 258584K. Runtime = 00:00:00:05.
+=======
+  * Disk size = 2200436K. Space Used = 258576K. Runtime = 00:00:00:08.
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 ca-certificates ca-certificates-java default-jre-headless fontconfig-config fonts-dejavu-core

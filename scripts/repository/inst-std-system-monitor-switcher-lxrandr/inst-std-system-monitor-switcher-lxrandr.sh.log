@@ -2,11 +2,17 @@ CLDS:>>>>>>>>> Running inst-std-system-monitor-switcher-lxrandr.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following additional packages will be installed:
-  cpp cpp-12 libisl23 libmpc3
 Suggested packages:
-  cpp-doc gcc-12-locales cpp-12-doc nickle cairo-5c xorg-docs-core
+  nickle cairo-5c xorg-docs-core
 The following NEW packages will be installed:
+<<<<<<< HEAD
+  x11-xserver-utils
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
+Need to get 169 kB of archives.
+After this operation, 590 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 x11-xserver-utils amd64 7.7+9+b1 [169 kB]
+Fetched 169 kB in 0s (5,762 kB/s)
+=======
   cpp cpp-12 libisl23 libmpc3 x11-xserver-utils
 0 upgraded, 5 newly installed, 0 to remove and 9 not upgraded.
 Need to get 10.7 MB of archives.
@@ -30,15 +36,12 @@ Unpacking cpp-12 (12.2.0-14) ...
 Selecting previously unselected package cpp.
 Preparing to unpack .../cpp_4%3a12.2.0-3_amd64.deb ...
 Unpacking cpp (4:12.2.0-3) ...
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
 Selecting previously unselected package x11-xserver-utils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 96288 files and directories currently installed.)
 Preparing to unpack .../x11-xserver-utils_7.7+9+b1_amd64.deb ...
 Unpacking x11-xserver-utils (7.7+9+b1) ...
-Setting up libmpc3:amd64 (1.3.1-1) ...
-Setting up libisl23:amd64 (0.25-1.1) ...
-Setting up cpp-12 (12.2.0-14) ...
-Setting up cpp (4:12.2.0-3) ...
 Setting up x11-xserver-utils (7.7+9+b1) ...
-Processing triggers for libc-bin (2.36-9+deb12u4) ...
 Processing triggers for menu (2.1.49) ...
 Reading package lists...
 Building dependency tree...
@@ -49,9 +52,25 @@ The following NEW packages will be installed:
 Need to get 52.1 kB of archives.
 After this operation, 411 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 lxrandr amd64 0.3.2-1.1 [52.1 kB]
+<<<<<<< HEAD
 Fetched 52.1 kB in 0s (2,565 kB/s)
+=======
+<<<<<<< HEAD
+Fetched 52.1 kB in 0s (2,005 kB/s)
+=======
+Fetched 52.1 kB in 0s (4,573 kB/s)
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
 Selecting previously unselected package lxrandr.
+<<<<<<< HEAD
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 95227 files and directories currently installed.)
+=======
+<<<<<<< HEAD
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 96327 files and directories currently installed.)
+=======
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 95180 files and directories currently installed.)
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
 Preparing to unpack .../lxrandr_0.3.2-1.1_amd64.deb ...
 Unpacking lxrandr (0.3.2-1.1) ...
 Setting up lxrandr (0.3.2-1.1) ...
@@ -59,4 +78,12 @@ Processing triggers for desktop-file-utils (0.26-1) ...
 './cld/doc/monitor-help.txt' -> '/usr/local/cld/doc/monitor-help.txt'
 CLDS: * Install Monitor Switcher: lxrandr.
 CLDS: * Add lxrandr key binding.
+<<<<<<< HEAD
 CLDS: * Disk size = 6364284K. Space Used = 47628K. Runtime = 00:00:00:04.
+=======
+<<<<<<< HEAD
+CLDS: * Disk size = 6677628K. Space Used = 972K. Runtime = 00:00:00:02.
+=======
+CLDS: * Disk size = 6363328K. Space Used = 47628K. Runtime = 00:00:00:04.
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git

@@ -3,7 +3,15 @@
   * Install Image Viewer: gpicview.
   * Insert gpicview in Accessories menu.
   * Add alias viewpic='gpicview'.
+<<<<<<< HEAD
   * Disk size = 4571124K. Space Used = 11068K. Runtime = 00:00:00:02.
+=======
+<<<<<<< HEAD
+  * Disk size = 4930312K. Space Used = 11076K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 4569108K. Space Used = 11068K. Runtime = 00:00:00:02.
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+>>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
   * The following NEW packages will be installed:
   ```bash
 gpicview libgtk2.0-0 libgtk2.0-common
