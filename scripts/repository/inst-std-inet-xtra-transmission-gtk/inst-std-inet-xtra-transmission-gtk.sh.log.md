@@ -2,15 +2,7 @@
   * After this operation, 5,353 kB of additional disk space will be used.
   * Install transmission-gtk.
   * Insert transmission-gtk in Internet menu.
-<<<<<<< HEAD
-  * Disk size = 6015484K. Space Used = 4152K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 6375720K. Space Used = 4132K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 6014520K. Space Used = 4152K. Runtime = 00:00:00:02.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 6229836K. Space Used = 4136K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libayatana-appindicator3-1 libayatana-ido3-0.4-0 libayatana-indicator3-7 libdbusmenu-glib4 libdbusmenu-gtk3-4

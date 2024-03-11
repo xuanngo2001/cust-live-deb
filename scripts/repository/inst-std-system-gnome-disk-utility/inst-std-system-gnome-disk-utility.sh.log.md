@@ -3,15 +3,7 @@
   * Install Partition Manager: gnome-disk-utility.
   * Run: gnome-disks.
   * Insert gnome-disk-utility menu in Administration.
-<<<<<<< HEAD
-  * Disk size = 6316652K. Space Used = 9788K. Runtime = 00:00:00:03.
-=======
-<<<<<<< HEAD
-  * Disk size = 6676652K. Space Used = 9792K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 6315696K. Space Used = 9788K. Runtime = 00:00:00:03.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 6530672K. Space Used = 9788K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 gdisk gnome-disk-utility libatasmart4 libblockdev2 libblockdev-fs2

@@ -2,15 +2,7 @@
   * After this operation, 193 MB of additional disk space will be used.
   * Install mariadb-server.
   * Set root password to [password].
-<<<<<<< HEAD
-  * Disk size = 3737564K. Space Used = 323300K. Runtime = 00:00:00:07.
-=======
-<<<<<<< HEAD
-  * Disk size = 4158448K. Space Used = 321416K. Runtime = 00:00:00:04.
-=======
-  * Disk size = 3735564K. Space Used = 323300K. Runtime = 00:00:00:07.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 4013616K. Space Used = 321428K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 galera-4 gawk libconfig-inifiles-perl libdaxctl1 libdbi-perl

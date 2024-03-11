@@ -1,10 +1,2 @@
 * >>>>>>>>> Running inst-min-con-05-keyring-google.sh ...
-<<<<<<< HEAD
-  * Disk size = 1232636K. Space Used = 4K. Runtime = 00:00:00:00.
-=======
-<<<<<<< HEAD
-  * Disk size = 1379564K. Space Used = 4K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 1232640K. Space Used = 4K. Runtime = 00:00:00:01.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 1232736K. Space Used = 4K. Runtime = 00:00:00:00.

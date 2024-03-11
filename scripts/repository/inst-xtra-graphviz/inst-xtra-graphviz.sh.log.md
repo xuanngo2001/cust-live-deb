@@ -1,15 +1,7 @@
 * >>>>>>>>> Running inst-xtra-graphviz.sh ...
   * After this operation, 9,014 kB of additional disk space will be used.
   * Install graphviz.
-<<<<<<< HEAD
-  * Disk size = 7285656K. Space Used = 11140K. Runtime = 00:00:00:03.
-=======
-<<<<<<< HEAD
-  * Disk size = 7598504K. Space Used = 11140K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 7284700K. Space Used = 11140K. Runtime = 00:00:00:02.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 7452516K. Space Used = 11140K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 graphviz libann0 libcdt5 libcgraph6 libgts-0.7-5

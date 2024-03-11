@@ -1,15 +1,7 @@
 * >>>>>>>>> Running inst-std-accessories-feh.sh ...
   * After this operation, 71.0 MB of additional disk space will be used.
   * Install command line image viewer: feh.
-<<<<<<< HEAD
-  * Disk size = 4560056K. Space Used = 94632K. Runtime = 00:00:00:05.
-=======
-<<<<<<< HEAD
-  * Disk size = 4919236K. Space Used = 88128K. Runtime = 00:00:00:03.
-=======
-  * Disk size = 4558040K. Space Used = 94632K. Runtime = 00:00:00:06.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 4774392K. Space Used = 88116K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
 feh fonts-urw-base35 libexif12 libgs10 libgs10-common

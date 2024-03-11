@@ -3,15 +3,7 @@
   * Install Media Player: mpv 0.35.1 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects.
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-<<<<<<< HEAD
-  * Disk size = 6233316K. Space Used = 217824K. Runtime = 00:00:00:19.
-=======
-<<<<<<< HEAD
-  * Disk size = 6593328K. Space Used = 217600K. Runtime = 00:00:00:12.
-=======
-  * Disk size = 6232352K. Space Used = 217824K. Runtime = 00:00:00:19.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 6447356K. Space Used = 217512K. Runtime = 00:00:00:18.
   * The following NEW packages will be installed:
   ```bash
 libarchive13 libaribb24-0 libass9 libavc1394-0 libavcodec60

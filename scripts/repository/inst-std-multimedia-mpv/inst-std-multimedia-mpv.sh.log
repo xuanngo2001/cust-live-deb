@@ -18,23 +18,11 @@ Hit:16 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:17 http://localhost/aptly-repo/master_microsoft-main bookworm InRelease
 Hit:18 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
-<<<<<<< HEAD
-Get:20 https://packages.microsoft.com/repos/edge stable InRelease [3,589 B]
+Get:20 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
 Get:21 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
-Get:22 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [7,757 B]
-Get:23 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,080 B]
-Fetched 14.3 kB in 3s (4,142 B/s)
-=======
-Get:20 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
-Get:21 https://packages.microsoft.com/repos/edge stable InRelease [3,589 B]
-Get:22 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,080 B]
-Get:23 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [7,695 B]
-<<<<<<< HEAD
-Fetched 14.2 kB in 2s (6,586 B/s)
-=======
-Fetched 14.2 kB in 3s (4,225 B/s)
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+Get:22 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [7,866 B]
+Get:23 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,078 B]
+Fetched 14.4 kB in 3s (5,051 B/s)
 Reading package lists...
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -136,7 +124,6 @@ Get:27 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd6
 Get:28 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libtheora0 amd64 1.1.1+dfsg.1-16.1+b1 [154 kB]
 Get:29 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libtwolame0 amd64 1:0.4.0-dmo2 [51.8 kB]
 Get:30 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libvo-amrwbenc0 amd64 0.1.3-2 [68.4 kB]
-<<<<<<< HEAD
 Get:31 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libx264-164 amd64 4:0.164.3107+gita8b68eb-dmo1 [840 kB]
 Get:32 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libxavs2-13 amd64 1:1.4-dmo1 [528 kB]
 Get:33 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libxvidcore4 amd64 3:1.3.7-dmo1 [240 kB]
@@ -208,96 +195,9 @@ Get:98 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libx
 Get:99 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 vapoursynth-ffms2 amd64 1:2.40+20211209.git90975ec-dmo4 [13.7 kB]
 Get:100 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 vapoursynth amd64 62-dmo1 [867 kB]
 Get:101 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 mpv amd64 1:0.35.1-dmo5 [1,212 kB]
-Fetched 57.7 MB in 1s (102 MB/s)
-=======
-Get:31 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libwebpmux3 amd64 1.2.4-0.2+deb12u1 [109 kB]
-Get:32 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libx264-164 amd64 4:0.164.3107+gita8b68eb-dmo1 [840 kB]
-Get:33 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libxavs2-13 amd64 1:1.4-dmo1 [528 kB]
-Get:34 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libxvidcore4 amd64 3:1.3.7-dmo1 [240 kB]
-Get:35 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libzvbi-common all 0.2.41-1 [69.7 kB]
-Get:36 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libzvbi0 amd64 0.2.41-1 [274 kB]
-Get:37 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libavcodec60 amd64 10:6.0.1-dmo0+deb12u1 [5,234 kB]
-Get:38 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libudfread0 amd64 1:1.1.2-dmo1 [15.9 kB]
-Get:39 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libbluray2 amd64 2:1.3.4-dmo2 [131 kB]
-Get:40 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libchromaprint1 amd64 1:1.5.1-dmo5 [32.1 kB]
-Get:41 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libgme0 amd64 0.6.3-6 [130 kB]
-Get:42 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libvorbisfile3 amd64 1.3.7-1 [26.1 kB]
-Get:43 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libopenmpt0 amd64 0.6.9-1 [693 kB]
-Get:44 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 librabbitmq4 amd64 0.11.0-1+b1 [43.5 kB]
-Get:45 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libcjson1 amd64 1.7.15-1 [22.9 kB]
-Get:46 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 librist4 amd64 1:0.2.7-dmo1 [72.6 kB]
-Get:47 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 liblmdb0 amd64 0.9.24-1 [45.0 kB]
-Get:48 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libtalloc2 amd64 2.4.1-2~bpo12+1 [25.8 kB]
-Get:49 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libtdb1 amd64 1.4.9-2~bpo12+1 [44.9 kB]
-Get:50 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libtevent0 amd64 0.15.0-1~bpo12+1 [39.0 kB]
-Get:51 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libldb2 amd64 2:2.8.0+samba4.19.4+dfsg-3~bpo12+1 [166 kB]
-Get:52 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libwbclient0 amd64 2:4.19.4+dfsg-3~bpo12+1 [58.7 kB]
-Get:53 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 samba-libs amd64 2:4.19.4+dfsg-3~bpo12+1 [5,638 kB]
-Get:54 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libsmbclient amd64 2:4.19.4+dfsg-3~bpo12+1 [85.8 kB]
-Get:55 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libsrt1.5-gnutls amd64 1.5.1-1 [313 kB]
-Get:56 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libnorm1 amd64 1.5.9+dfsg-2 [221 kB]
-Get:57 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libpgm-5.3-0 amd64 5.3.128~dfsg-2 [161 kB]
-Get:58 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libzmq5 amd64 4.3.4-6 [273 kB]
-Get:59 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libavformat60 amd64 10:6.0.1-dmo0+deb12u1 [1,112 kB]
-Get:60 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libbs2b0 amd64 3.1.0+dfsg-7 [11.5 kB]
-Get:61 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libflite1 amd64 2.2-5 [12.8 MB]
-Get:62 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libserd-0-0 amd64 0.30.16-1 [47.5 kB]
-Get:63 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libsord-0-0 amd64 0.16.14+git221008-1 [20.8 kB]
-Get:64 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libsratom-0-0 amd64 0.6.14-1 [17.7 kB]
-Get:65 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 liblilv-0-0 amd64 0.24.14-1 [49.4 kB]
-Get:66 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libmysofa1 amd64 1.3.1~dfsg0-1 [1,158 kB]
-Get:67 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libpostproc57 amd64 10:6.0.1-dmo0+deb12u1 [83.6 kB]
-Get:68 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libfftw3-double3 amd64 3.3.10-1 [776 kB]
-Get:69 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 librubberband2 amd64 1:3.2.1-dmo1 [139 kB]
-Get:70 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libswscale7 amd64 10:6.0.1-dmo0+deb12u1 [217 kB]
-Get:71 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 liblept5 amd64 1.82.0-3+b3 [1,050 kB]
-Get:72 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libtesseract5 amd64 5.3.0-2 [1,279 kB]
-Get:73 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libvidstab1.2 amd64 2:1.1.1-dmo1 [36.7 kB]
-Get:74 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libzimg2 amd64 1:3.0.4-dmo1 [227 kB]
-Get:75 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libavfilter9 amd64 10:6.0.1-dmo0+deb12u1 [3,742 kB]
-Get:76 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libcaca0 amd64 0.99.beta20-3 [205 kB]
-Get:77 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libcdio19 amd64 1:2.1.0-dmo3 [205 kB]
-Get:78 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libcdio-cdda2 amd64 10.2+2.0.1-dmo1 [20.9 kB]
-Get:79 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libcdio-paranoia2 amd64 10.2+2.0.1-dmo1 [21.2 kB]
-Get:80 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libdc1394-25 amd64 2.2.6-4 [109 kB]
-Get:81 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libiec61883-0 amd64 1.2.0-6+b1 [30.5 kB]
-Get:82 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libjack-jackd2-0 amd64 1.9.21~dfsg-3 [281 kB]
-Get:83 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libopenal-data all 1:1.19.1-2 [170 kB]
-Get:84 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libsndio7.0 amd64 1.9.0-0.3+b2 [27.3 kB]
-Get:85 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libopenal1 amd64 1:1.19.1-2 [501 kB]
-Get:86 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libavdevice60 amd64 10:6.0.1-dmo0+deb12u1 [116 kB]
-Get:87 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libdvdread8 amd64 6.1.3-1 [91.9 kB]
-Get:88 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libdvdnav4 amd64 6.1.1-1 [47.5 kB]
-Get:89 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libffms2-5 amd64 1:2.40+20211209.git90975ec-dmo4 [87.5 kB]
-Get:90 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 liblua5.2-0 amd64 5.2.4-3 [111 kB]
-Get:91 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libmujs2 amd64 1.3.2-1 [110 kB]
-Get:92 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libwebrtc-audio-processing1 amd64 0.3-1+b1 [264 kB]
-Get:93 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libspa-0.2-modules amd64 0.3.65-3+deb12u1 [542 kB]
-Get:94 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libpipewire-0.3-0 amd64 0.3.65-3+deb12u1 [243 kB]
-Get:95 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libplacebo264 amd64 2:5.264.1-dmo1 [2,302 kB]
-Get:96 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libsixel1 amd64 1.10.3-3 [97.6 kB]
-Get:97 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libuchardet0 amd64 0.0.7-1 [67.8 kB]
-Get:98 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libva-wayland2 amd64 2.17.0-1 [18.0 kB]
-Get:99 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libxpresent1 amd64 1.0.0-2+b10 [8,046 B]
-Get:100 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 vapoursynth-ffms2 amd64 1:2.40+20211209.git90975ec-dmo4 [13.7 kB]
-Get:101 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 vapoursynth amd64 62-dmo1 [867 kB]
-Get:102 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 mpv amd64 1:0.35.1-dmo5 [1,212 kB]
-<<<<<<< HEAD
-Fetched 57.8 MB in 1s (101 MB/s)
-=======
-Fetched 57.8 MB in 1s (82.4 MB/s)
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+Fetched 57.7 MB in 1s (109 MB/s)
 Selecting previously unselected package libarchive13:amd64.
-<<<<<<< HEAD
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93324 files and directories currently installed.)
-=======
-<<<<<<< HEAD
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94457 files and directories currently installed.)
-=======
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93277 files and directories currently installed.)
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94504 files and directories currently installed.)
 Preparing to unpack .../000-libarchive13_3.6.2-1_amd64.deb ...
 Unpacking libarchive13:amd64 (3.6.2-1) ...
 Selecting previously unselected package libaribb24-0:amd64.
@@ -750,20 +650,12 @@ Building dependency tree...
 Reading state information...
 mpv is already the newest version (1:0.35.1-dmo5).
 0 upgraded, 0 newly installed, 0 to remove and 9 not upgraded.
+'./cld/bashrc.d/bashrc-alias-mpv.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-mpv.sh'
 './cld/doc/mpv-help.txt' -> '/usr/local/cld/doc/mpv-help.txt'
 './cld/home/.config/mpv' -> '/usr/local/cld/home/.config/mpv'
-'./cld/home/.config/mpv/mpv.conf' -> '/usr/local/cld/home/.config/mpv/mpv.conf'
 './cld/home/.config/mpv/input.conf' -> '/usr/local/cld/home/.config/mpv/input.conf'
-'./cld/bashrc.d/bashrc-alias-mpv.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-mpv.sh'
+'./cld/home/.config/mpv/mpv.conf' -> '/usr/local/cld/home/.config/mpv/mpv.conf'
 CLDS: * Install Media Player: mpv 0.35.1 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects.
 CLDS: * Add multiple aliases for MPV.
 CLDS: * Add useful mpv keybindings settings.
-<<<<<<< HEAD
-CLDS: * Disk size = 6233316K. Space Used = 217824K. Runtime = 00:00:00:19.
-=======
-<<<<<<< HEAD
-CLDS: * Disk size = 6593328K. Space Used = 217600K. Runtime = 00:00:00:12.
-=======
-CLDS: * Disk size = 6232352K. Space Used = 217824K. Runtime = 00:00:00:19.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+CLDS: * Disk size = 6447356K. Space Used = 217512K. Runtime = 00:00:00:18.

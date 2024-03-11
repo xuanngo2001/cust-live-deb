@@ -14,15 +14,7 @@
   * Install de/compressor: p7zip.
   * Install de/compressor: zpaq.
   * Add universal extractor: extract.sh.
-<<<<<<< HEAD
-  * Disk size = 1245980K. Space Used = 11852K. Runtime = 00:00:00:03.
-=======
-<<<<<<< HEAD
-  * Disk size = 1392904K. Space Used = 11848K. Runtime = 00:00:00:03.
-=======
-  * Disk size = 1245984K. Space Used = 11852K. Runtime = 00:00:00:03.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 1246080K. Space Used = 11852K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 bzip2 p7zip p7zip-full rar unrar

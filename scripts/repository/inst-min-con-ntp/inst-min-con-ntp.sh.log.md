@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-ntp.sh ...
   * After this operation, 23.2 MB of additional disk space will be used.
   * Install Network Time Protocol: ntp.
-<<<<<<< HEAD
-  * Disk size = 2023344K. Space Used = 42984K. Runtime = 00:00:00:03.
-=======
-  * Disk size = 1876416K. Space Used = 42984K. Runtime = 00:00:00:05.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 1876512K. Space Used = 42984K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 libnsl2 libpython3.11-minimal libpython3.11-stdlib libpython3-stdlib media-types

@@ -1,11 +1,3 @@
 * >>>>>>>>> Running inst-zclean-01-apt-get-01-source-list.sh ...
   * Reinstate original Debian repositories back to source.list.
-<<<<<<< HEAD
-  * Disk size = 6723792K. Space Used = 8K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 6879560K. Space Used = 8K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 6721608K. Space Used = 8K. Runtime = 00:00:00:02.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 6731300K. Space Used = 8K. Runtime = 00:00:00:01.

@@ -2,15 +2,7 @@
   * After this operation, 132 MB of additional disk space will be used.
   * Install libwebkit2gtk-4.0-37.
   * To be able to render *.md files.
-<<<<<<< HEAD
-  * Disk size = 7138220K. Space Used = 162824K. Runtime = 00:00:00:08.
-=======
-<<<<<<< HEAD
-  * Disk size = 7451080K. Space Used = 162756K. Runtime = 00:00:00:05.
-=======
-  * Disk size = 7137264K. Space Used = 162824K. Runtime = 00:00:00:07.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 7305096K. Space Used = 162756K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
 bubblewrap dictionaries-common emacsen-common glib-networking glib-networking-common

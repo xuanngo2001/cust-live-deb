@@ -2,15 +2,7 @@
   * After this operation, 15.4 kB of additional disk space will be used.
   * Starting from Bullseye, this is required for old script which uses unversioned /usr/bin/python.
   * Otherwise, old script(e.g. youtube-dl) will complain: /usr/bin/env: ‘python’: No such file or directory.
-<<<<<<< HEAD
-  * Disk size = 3857292K. Space Used = 32K. Runtime = 00:00:00:01.
-=======
-<<<<<<< HEAD
-  * Disk size = 4230256K. Space Used = 32K. Runtime = 00:00:00:00.
-=======
-  * Disk size = 3855288K. Space Used = 32K. Runtime = 00:00:00:01.
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
->>>>>>> branch 'bookworm' of https://github.com/xuanngo2001/cust-live-deb.git
+  * Disk size = 4085456K. Space Used = 36K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 python-is-python3
