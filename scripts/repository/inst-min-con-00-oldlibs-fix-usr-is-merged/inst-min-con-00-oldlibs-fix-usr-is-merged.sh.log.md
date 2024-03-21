@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-con-00-oldlibs-fix-usr-is-merged.sh ...
   * Install usr-is-merged: Fix: debootstrap can't find usr-is-merged package
-  * Disk size = 1118084K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 762332K. Space Used = 4K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 usr-is-merged*
