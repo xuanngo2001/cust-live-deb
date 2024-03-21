@@ -32,6 +32,7 @@
         tar -czf backup.tar.gz --exclude=PATTERN1 --exclude=PATTERN2 ... /path/to/backup
         tar --exclude='*.jpg' --exclude='*.png' --exclude='*.bmp' --exclude='*.gif' -cvf tar-filename.tar folder
         tar czvf myarchive.tar.gz --exclude=\*.{jpg,gif,png,wmv,flv,tar.gz,zip} rootdir
+        tar -czf web.tar.gz --exclude=node_modules --exclude=.next web/
 
     # Exclude files using an exclude file filled with a list of patterns
         tar -czf backup.tar.gz -X /path/to/exclude.txt /path/to/backup

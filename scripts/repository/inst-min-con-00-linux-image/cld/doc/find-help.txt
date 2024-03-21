@@ -8,7 +8,7 @@
  
 # Find and execute multiple commands.
     find . -type f -name '*.sh' -execdir echo "Executing {}" \; -execdir chmod +x {} \; 
-    find . -type f -name "*.sh" ! -name "_readme*.sh" -execdir echo "Executing {}" \; -execdir chmod +x {} \;
+    find . -type f -name "*.sh" ! -name "*readme*.sh" -execdir echo "chmod +x {}" \; -execdir chmod +x {} \;
 
 # Find and execute multiple commands with success condition.
     find "${base_dir}" -type f -name '*.url' -exec grep "${search_term}" {} \; -exec echo {} \;
