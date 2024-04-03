@@ -21,14 +21,17 @@
 
 # Cron logs.
     grep CRON /var/log/syslog
-    
+
     # For more granular cron log:
         # Uncomment cron.* from /etc/rsyslog.conf.
         service rsyslog restart
         service cron restart
         cat /var/log/cron.log
     
-    
+    # /var/log/syslog was removed from Debian(rsyslog). Use journalctl instead.
+    journalctl -b --no-pager
+    journalctl -u cron --no-pager
+
 # Keywords
     @yearly (or @annually)  0 0 1 1 *   Run once a year at midnight of 1 January
     @monthly                0 0 1 * *   Run once a month at midnight of the first day of the month
@@ -39,6 +42,7 @@
 
 # Append cron entries.
     (crontab -l; cat new-cron.txt) | crontab -
+    (crontab -l; cat new-cron.txt | grep -v ^#) | crontab -
 
 # User crontab is stored in /var/spool/cron/crontabs/
 
@@ -51,4 +55,11 @@
     */5 * * * *     script.sh   # Run every 5 minute.
     */10 * * * *    script.sh   # Run every 10 minute.
     */15 * * * *    script.sh   # Run every 15 minute.
-    
+
+# Always use full path
+    * * * * * /bin/bash -c "echo $(date) >> /root/test-date.txt"
+    * * * * * /bin/bash -c "cd /root; echo $(date) >> test-date-2.txt"
+
+# CRON Environment is the bare minimum environment supported by system. 
+#   Its not aware of additional environment settings which is made available to you via shell.
+    59 23 * * * source $HOME/.profile; /root/myscript.sh
