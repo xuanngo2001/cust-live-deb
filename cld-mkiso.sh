@@ -56,9 +56,6 @@ fi
 if [ ! -z "${SYSTEM}" ]; then
   # Prefix main.size with system name.
   sed -i "/^${SYSTEM}:/b; s/^/${SYSTEM}: /" ./logs/main.size
-  
-  # Add system in the output file.
-  SYSTEM="_${SYSTEM}"
 fi
 
 # Copy vmlinuz & initrd in binary/live/.
@@ -93,7 +90,9 @@ yes | cp -av ./logs/scripts-ls.lst.log binary/
 # Backup log files in ./binary/ to ./install-log/
 ##################################################################
 KERNEL_VERSION=$(cat binary/dpkg-no-version.log| grep 'linux-image-' | head -n1 | sed 's/linux-image-//')
-CLD_LOGS_DIR="./install-log/cld${SYSTEM}_${DATE_STRING}_K${KERNEL_VERSION}"
+VERSION_CODENAME=$(cat /etc/os-release| grep CODENAME| cut -d'=' -f2)
+OUTPUT_NAME="cld_${SYSTEM}_${VERSION_CODENAME}_K${KERNEL_VERSION}_${DATE_STRING}"
+CLD_LOGS_DIR="./install-log/${OUTPUT_NAME}"
 mkdir -p "${CLD_LOGS_DIR}"
 CLD_LOGS_DIR=$(readlink -ev "${CLD_LOGS_DIR}")
 yes | cp -av ./logs "${CLD_LOGS_DIR}"
@@ -114,8 +113,7 @@ mksquashfs "${CHROOT_DIR}" ./binary/live/filesystem.squashfs -comp xz
 # Note: boot.cat is automatically created
 architecture=$(dpkg --print-architecture)
 APP_ID=cld-${architecture}
-version_codename=$(cat /etc/os-release| grep CODENAME| cut -d'=' -f2)
-iso_filename="cld_${version_codename}_K${KERNEL_VERSION}${SYSTEM}_${DATE_STRING}.iso"
+iso_filename="${OUTPUT_NAME}.iso"
 iso_filepath="${iso_output_dir}/${iso_filename}"
 rm -f ./binary/cld*.iso; touch ./binary/"${iso_filename}"
 xorriso -as mkisofs -r -J -joliet-long -l \
