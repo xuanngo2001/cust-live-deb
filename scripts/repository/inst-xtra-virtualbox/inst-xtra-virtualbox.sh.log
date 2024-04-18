@@ -11,7 +11,7 @@ Recommended packages:
   | libqt5sql5-tds | libqt5sql5-ibase libsdl-ttf2.0-0 linux-headers-generic
   | linux-headers-generic-pae | linux-headers-686-pae | linux-headers-amd64
   | linux-headers-2.6-686 | linux-headers-2.6-amd64 | linux-headers
-  linux-image pdf-viewer
+  linux-image make | build-essential | dpkg-dev pdf-viewer
 The following NEW packages will be installed:
   libqt5help5 libqt5opengl5 libqt5printsupport5 libqt5sql5 libqt5xml5
   virtualbox-7.0
@@ -25,9 +25,9 @@ Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libqt
 Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libqt5xml5 amd64 5.15.8+dfsg-11 [122 kB]
 Get:6 http://localhost/aptly-repo/master_virtualbox-contrib bookworm/contrib amd64 virtualbox-7.0 amd64 7.0.14-161095~Debian~bookworm [92.4 MB]
 Preconfiguring packages ...
-Fetched 93.1 MB in 1s (95.3 MB/s)
+Fetched 93.1 MB in 1s (93.1 MB/s)
 Selecting previously unselected package libqt5sql5:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 121898 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 108056 files and directories currently installed.)
 Preparing to unpack .../0-libqt5sql5_5.15.8+dfsg-11_amd64.deb ...
 Unpacking libqt5sql5:amd64 (5.15.8+dfsg-11) ...
 Selecting previously unselected package libqt5help5:amd64.
@@ -55,13 +55,27 @@ Adding group `vboxusers' (GID 112) ...
 Done.
 Running in chroot, ignoring command 'daemon-reload'
 Running in chroot, ignoring command 'daemon-reload'
-Running in chroot, ignoring command 'start'
-Running in chroot, ignoring command 'start'
-Running in chroot, ignoring command 'start'
-Running in chroot, ignoring command 'start'
+This system is currently not set up to build kernel modules.
+Please install the gcc make perl packages from your distribution.
+Please install the Linux kernel "header" files matching the current kernel
+for adding new hardware support to the system.
+The distribution packages containing the headers are probably:
+    linux-headers-amd64 linux-headers-6.6.13+bpo-amd64
+This system is currently not set up to build kernel modules.
+Please install the gcc make perl packages from your distribution.
+Please install the Linux kernel "header" files matching the current kernel
+for adding new hardware support to the system.
+The distribution packages containing the headers are probably:
+    linux-headers-amd64 linux-headers-6.6.13+bpo-amd64
+
+There were problems setting up VirtualBox.  To re-start the set-up process, run
+  /sbin/vboxconfig
+as root.  If your system is using EFI Secure Boot you may need to sign the
+kernel modules (vboxdrv, vboxnetflt, vboxnetadp, vboxpci) before you can load
+them. Please see your Linux system's documentation for more information.
 Processing triggers for hicolor-icon-theme (0.17-2) ...
 Processing triggers for libc-bin (2.36-9+deb12u4) ...
 Processing triggers for shared-mime-info (2.2-1) ...
 Processing triggers for desktop-file-utils (0.26-1) ...
 CLDS: * Install virtualbox.
-CLDS: * Disk size = 6696932K. Space Used = 313048K. Runtime = 00:00:00:23.
+CLDS: * Disk size = 6172712K. Space Used = 307676K. Runtime = 00:00:00:11.

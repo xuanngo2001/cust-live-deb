@@ -179,9 +179,8 @@ Hit:13 http://localhost/aptly-repo/master_deb-multimedia-non-free bookworm InRel
 Hit:14 http://localhost/aptly-repo/master_docker-stable bookworm InRelease
 Hit:15 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:16 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:17 http://localhost/aptly-repo/master_microsoft-main bookworm InRelease
-Hit:18 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
-Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
+Hit:17 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
+Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
 Reading package lists...
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -199,7 +198,6 @@ W: http://localhost/aptly-repo/master_deb-multimedia-non-free/dists/bookworm/InR
 W: http://localhost/aptly-repo/master_docker-stable/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_google-cloud-main/dists/cloud-sdk/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_google-main/dists/stable/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
-W: http://localhost/aptly-repo/master_microsoft-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_qgis-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_virtualbox-contrib/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 Reading package lists...
@@ -233,7 +231,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 1129 kB in 0s (58.5 MB/s)
+Fetched 1129 kB in 0s (48.0 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8743 files and directories currently installed.)
 Preparing to unpack .../0-libdbus-1-3_1.14.10-1~deb12u1_amd64.deb ...
@@ -312,7 +310,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 98.0 MB in 1s (87.4 MB/s)
+Fetched 98.0 MB in 1s (92.9 MB/s)
 Selecting previously unselected package rsync.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8990 files and directories currently installed.)
 Preparing to unpack .../00-rsync_3.2.7-1_amd64.deb ...
@@ -457,34 +455,34 @@ un  linux-image-generic                   <none>           <none>       (no desc
 total 44280
 -rw-r--r-- 1 root root       83 Feb 15 23:12 System.map-6.6.13+bpo-amd64
 -rw-r--r-- 1 root root   270298 Feb 15 23:12 config-6.6.13+bpo-amd64
--rw-r--r-- 1 root root 35740506 Apr 10 16:04 initrd.img-6.6.13+bpo-amd64
+-rw-r--r-- 1 root root 35740911 Apr 16 14:06 initrd.img-6.6.13+bpo-amd64
 -rw-r--r-- 1 root root  9324160 Feb 15 23:12 vmlinuz-6.6.13+bpo-amd64
 e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.6.13+bpo-amd64
 0eae1f93960b8822bc0834eff05d0f18  /boot/config-6.6.13+bpo-amd64
-4ae374ea9ffdee1c7f726fe728613820  /boot/initrd.img-6.6.13+bpo-amd64
+e2eed45ab078787e7a3eaa801cd0b54a  /boot/initrd.img-6.6.13+bpo-amd64
 dba7e2f87c96f424f52a18e72605f7d1  /boot/vmlinuz-6.6.13+bpo-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Apr 10 16:03 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Apr 10 16:04 boot
-drwxr-xr-x  17 root root 3780 Apr 10 10:50 dev
-drwxr-xr-x  49 root root 4096 Apr 10 16:04 etc
+lrwxrwxrwx   1 root root    7 Apr 16 14:05 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Apr 16 14:06 boot
+drwxr-xr-x  17 root root 3780 Apr 11 14:26 dev
+drwxr-xr-x  49 root root 4096 Apr 16 14:06 etc
 drwxr-xr-x   2 root root 4096 Jan 28 21:20 home
-lrwxrwxrwx   1 root root   32 Apr 10 16:04 initrd.img -> boot/initrd.img-6.6.13+bpo-amd64
-lrwxrwxrwx   1 root root    7 Apr 10 16:03 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Apr 10 16:03 lib64 -> usr/lib64
-drwxr-xr-x   2 root root 4096 Apr 10 16:03 media
-drwxr-xr-x   2 root root 4096 Apr 10 16:03 mnt
-drwxr-xr-x   2 root root 4096 Apr 10 16:03 opt
-dr-xr-xr-x 327 root root    0 Apr 10 16:03 proc
-drwx------   4 root root 4096 Apr 10 16:03 root
-drwxr-xr-x   8 root root 4096 Apr 10 16:03 run
-lrwxrwxrwx   1 root root    8 Apr 10 16:03 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Apr 10 16:03 srv
-dr-xr-xr-x  13 root root    0 Apr 10 10:50 sys
-drwxrwxrwt   2 root root 4096 Apr 10 16:04 tmp
-drwxr-xr-x  12 root root 4096 Apr 10 16:03 usr
-drwxr-xr-x  11 root root 4096 Apr 10 16:03 var
-lrwxrwxrwx   1 root root   29 Apr 10 16:04 vmlinuz -> boot/vmlinuz-6.6.13+bpo-amd64
+lrwxrwxrwx   1 root root   32 Apr 16 14:06 initrd.img -> boot/initrd.img-6.6.13+bpo-amd64
+lrwxrwxrwx   1 root root    7 Apr 16 14:05 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Apr 16 14:05 lib64 -> usr/lib64
+drwxr-xr-x   2 root root 4096 Apr 16 14:05 media
+drwxr-xr-x   2 root root 4096 Apr 16 14:05 mnt
+drwxr-xr-x   2 root root 4096 Apr 16 14:05 opt
+dr-xr-xr-x 352 root root    0 Apr 16 14:06 proc
+drwx------   4 root root 4096 Apr 16 14:06 root
+drwxr-xr-x   8 root root 4096 Apr 16 14:06 run
+lrwxrwxrwx   1 root root    8 Apr 16 14:05 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Apr 16 14:05 srv
+dr-xr-xr-x  13 root root    0 Apr 11 14:26 sys
+drwxrwxrwt   2 root root 4096 Apr 16 14:06 tmp
+drwxr-xr-x  12 root root 4096 Apr 16 14:05 usr
+drwxr-xr-x  11 root root 4096 Apr 16 14:05 var
+lrwxrwxrwx   1 root root   29 Apr 16 14:06 vmlinuz -> boot/vmlinuz-6.6.13+bpo-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-6.6.13+bpo-amd64.
-CLDS: * Disk size = 762376K. Space Used = 251564K. Runtime = 00:00:00:42.
+CLDS: * Disk size = 762372K. Space Used = 251552K. Runtime = 00:00:00:47.
