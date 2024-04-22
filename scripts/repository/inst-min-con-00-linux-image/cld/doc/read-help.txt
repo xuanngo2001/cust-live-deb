@@ -4,3 +4,12 @@
 
     for i in ${arr[@]}; do echo $i; done
 
+# Heredoc
+read -r -d '' FRON_MATTER <<- EOM
++++
+title = '${title}'
+date = ${date_iso}
+draft = false
++++
+
+EOM
