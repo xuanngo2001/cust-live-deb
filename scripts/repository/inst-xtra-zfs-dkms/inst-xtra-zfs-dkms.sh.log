@@ -10,113 +10,31 @@ Conf libelf-dev (0.188-2.1 master_bookworm-main bookworm:bookworm [amd64])
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following additional packages will be installed:
-  linux-headers-6.6.13+bpo-amd64 linux-headers-6.6.13+bpo-common
-  linux-kbuild-6.6.13+bpo
+lsb-release is already the newest version (12.0-1).
+lsb-release set to manually installed.
 The following NEW packages will be installed:
-  linux-headers-6.6.13+bpo-amd64 linux-headers-6.6.13+bpo-common
-  linux-headers-amd64 linux-kbuild-6.6.13+bpo lsb-release
-0 upgraded, 5 newly installed, 0 to remove and 9 not upgraded.
-Need to get 12.5 MB of archives.
-After this operation, 65.7 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-6.6.13+bpo-common all 6.6.13-1~bpo12+1 [10.2 MB]
-Get:2 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-kbuild-6.6.13+bpo amd64 6.6.13-1~bpo12+1 [1,021 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-6.6.13+bpo-amd64 amd64 6.6.13-1~bpo12+1 [1,296 kB]
-Get:4 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-amd64 amd64 6.6.13-1~bpo12+1 [1,420 B]
-Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 lsb-release all 12.0-1 [6,416 B]
-Fetched 12.5 MB in 0s (84.3 MB/s)
-Selecting previously unselected package linux-headers-6.6.13+bpo-common.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 114237 files and directories currently installed.)
-Preparing to unpack .../linux-headers-6.6.13+bpo-common_6.6.13-1~bpo12+1_all.deb ...
-Unpacking linux-headers-6.6.13+bpo-common (6.6.13-1~bpo12+1) ...
-Selecting previously unselected package linux-kbuild-6.6.13+bpo.
-Preparing to unpack .../linux-kbuild-6.6.13+bpo_6.6.13-1~bpo12+1_amd64.deb ...
-Unpacking linux-kbuild-6.6.13+bpo (6.6.13-1~bpo12+1) ...
-Selecting previously unselected package linux-headers-6.6.13+bpo-amd64.
-Preparing to unpack .../linux-headers-6.6.13+bpo-amd64_6.6.13-1~bpo12+1_amd64.deb ...
-Unpacking linux-headers-6.6.13+bpo-amd64 (6.6.13-1~bpo12+1) ...
+  linux-headers-amd64
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
+Need to get 1,420 B of archives.
+After this operation, 13.3 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-amd64 amd64 6.6.13-1~bpo12+1 [1,420 B]
+Fetched 1,420 B in 0s (132 kB/s)
 Selecting previously unselected package linux-headers-amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 131765 files and directories currently installed.)
 Preparing to unpack .../linux-headers-amd64_6.6.13-1~bpo12+1_amd64.deb ...
 Unpacking linux-headers-amd64 (6.6.13-1~bpo12+1) ...
-Selecting previously unselected package lsb-release.
-Preparing to unpack .../lsb-release_12.0-1_all.deb ...
-Unpacking lsb-release (12.0-1) ...
-Setting up linux-kbuild-6.6.13+bpo (6.6.13-1~bpo12+1) ...
-Setting up linux-headers-6.6.13+bpo-common (6.6.13-1~bpo12+1) ...
-Setting up lsb-release (12.0-1) ...
-Setting up linux-headers-6.6.13+bpo-amd64 (6.6.13-1~bpo12+1) ...
 Setting up linux-headers-amd64 (6.6.13-1~bpo12+1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+dkms is already the newest version (3.0.10-8+deb12u1).
 libc6-dev is already the newest version (2.36-9+deb12u4).
-libc6-dev set to manually installed.
-The following additional packages will be installed:
-  dpkg-dev g++ g++-12 libdpkg-perl libstdc++-12-dev make patch
-Suggested packages:
-  debian-keyring g++-multilib g++-12-multilib gcc-12-doc bzr libstdc++-12-doc
-  make-doc ed diffutils-doc
-Recommended packages:
-  fakeroot sudo libalgorithm-merge-perl libfile-fcntllock-perl
-The following NEW packages will be installed:
-  build-essential dkms dpkg-dev g++ g++-12 libdpkg-perl libstdc++-12-dev make
-  patch
-0 upgraded, 9 newly installed, 0 to remove and 9 not upgraded.
-Need to get 15.3 MB of archives.
-After this operation, 62.9 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libdpkg-perl all 1.21.22 [603 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 patch amd64 2.7.6-7 [128 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 make amd64 4.3-4.1 [396 kB]
-Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 dpkg-dev all 1.21.22 [1,353 kB]
-Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libstdc++-12-dev amd64 12.2.0-14 [2,046 kB]
-Get:6 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 g++-12 amd64 12.2.0-14 [10.7 MB]
-Get:7 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 g++ amd64 4:12.2.0-3 [1,356 B]
-Get:8 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 build-essential amd64 12.9 [7,704 B]
-Get:9 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 dkms all 3.0.10-8+deb12u1 [48.7 kB]
-Fetched 15.3 MB in 0s (104 MB/s)
-Selecting previously unselected package libdpkg-perl.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 131103 files and directories currently installed.)
-Preparing to unpack .../0-libdpkg-perl_1.21.22_all.deb ...
-Unpacking libdpkg-perl (1.21.22) ...
-Selecting previously unselected package patch.
-Preparing to unpack .../1-patch_2.7.6-7_amd64.deb ...
-Unpacking patch (2.7.6-7) ...
-Selecting previously unselected package make.
-Preparing to unpack .../2-make_4.3-4.1_amd64.deb ...
-Unpacking make (4.3-4.1) ...
-Selecting previously unselected package dpkg-dev.
-Preparing to unpack .../3-dpkg-dev_1.21.22_all.deb ...
-Unpacking dpkg-dev (1.21.22) ...
-Selecting previously unselected package libstdc++-12-dev:amd64.
-Preparing to unpack .../4-libstdc++-12-dev_12.2.0-14_amd64.deb ...
-Unpacking libstdc++-12-dev:amd64 (12.2.0-14) ...
-Selecting previously unselected package g++-12.
-Preparing to unpack .../5-g++-12_12.2.0-14_amd64.deb ...
-Unpacking g++-12 (12.2.0-14) ...
-Selecting previously unselected package g++.
-Preparing to unpack .../6-g++_4%3a12.2.0-3_amd64.deb ...
-Unpacking g++ (4:12.2.0-3) ...
-Selecting previously unselected package build-essential.
-Preparing to unpack .../7-build-essential_12.9_amd64.deb ...
-Unpacking build-essential (12.9) ...
-Selecting previously unselected package dkms.
-Preparing to unpack .../8-dkms_3.0.10-8+deb12u1_all.deb ...
-Unpacking dkms (3.0.10-8+deb12u1) ...
-Setting up libstdc++-12-dev:amd64 (12.2.0-14) ...
-Setting up make (4.3-4.1) ...
-Setting up patch (2.7.6-7) ...
-Setting up libdpkg-perl (1.21.22) ...
-Setting up g++-12 (12.2.0-14) ...
-Setting up dpkg-dev (1.21.22) ...
-Setting up dkms (3.0.10-8+deb12u1) ...
-Setting up g++ (4:12.2.0-3) ...
-update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
-Setting up build-essential (12.9) ...
+build-essential is already the newest version (12.9).
+0 upgraded, 0 newly installed, 0 to remove and 9 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 linux-headers-6.6.13+bpo-amd64 is already the newest version (6.6.13-1~bpo12+1).
-linux-headers-6.6.13+bpo-amd64 set to manually installed.
 0 upgraded, 0 newly installed, 0 to remove and 9 not upgraded.
 Reading package lists...
 Building dependency tree...
@@ -127,9 +45,9 @@ The following NEW packages will be installed:
 Need to get 102 kB of archives.
 After this operation, 416 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 module-assistant all 0.11.11 [102 kB]
-Fetched 102 kB in 0s (6,078 kB/s)
+Fetched 102 kB in 0s (5,921 kB/s)
 Selecting previously unselected package module-assistant.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 132540 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 131767 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.11_all.deb ...
 Unpacking module-assistant (0.11.11) ...
 Setting up module-assistant (0.11.11) ...
@@ -167,9 +85,9 @@ After this operation, 19.0 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 file amd64 1:5.44-3 [42.5 kB]
 Get:2 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 zfs-dkms all 2.2.3-1~bpo12+1 [2,397 kB]
 Preconfiguring packages ...
-Fetched 2,440 kB in 0s (70.4 MB/s)
+Fetched 2,440 kB in 0s (80.3 MB/s)
 Selecting previously unselected package file.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 132593 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 131820 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.44-3_amd64.deb ...
 Unpacking file (1:5.44-3) ...
 Selecting previously unselected package zfs-dkms.
@@ -195,7 +113,7 @@ Running module version sanity check.
    - No original module exists within this kernel
  - Installation
    - Installing to /lib/modules/6.6.13+bpo-amd64/updates/dkms/
-depmod......
+depmod.....
 Processing triggers for initramfs-tools (0.142) ...
 update-initramfs: Generating /boot/initrd.img-6.6.13+bpo-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
@@ -221,9 +139,9 @@ Get:3 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-bac
 Get:4 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 libzpool5linux amd64 2.2.3-1~bpo12+1 [1,334 kB]
 Get:5 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 zfsutils-linux amd64 2.2.3-1~bpo12+1 [559 kB]
 Get:6 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 zfs-initramfs all 2.2.3-1~bpo12+1 [35.6 kB]
-Fetched 2,267 kB in 0s (26.8 MB/s)
+Fetched 2,267 kB in 0s (28.3 MB/s)
 Selecting previously unselected package libnvpair3linux.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 133592 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 132819 files and directories currently installed.)
 Preparing to unpack .../0-libnvpair3linux_2.2.3-1~bpo12+1_amd64.deb ...
 Unpacking libnvpair3linux (2.2.3-1~bpo12+1) ...
 Selecting previously unselected package libuutil3linux.
@@ -275,4 +193,4 @@ CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
 CLDS: * Install zfs-dkms: version: 2.2.3-1~bpo12+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Install zfs-initramfs to be able to boot from ZFS.
 CLDS: * Import existing ZFS partitions: zpool import -a
-CLDS: * Disk size = 6506188K. Space Used = 222648K. Runtime = 00:00:08:25.
+CLDS: * Disk size = 6219432K. Space Used = 46980K. Runtime = 00:00:07:01.
