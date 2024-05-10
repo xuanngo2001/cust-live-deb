@@ -19,9 +19,9 @@ Hit:17 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
 Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
 Get:19 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
 Get:20 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
-Get:21 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [8,155 B]
-Get:22 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,077 B]
-Fetched 14.6 kB in 3s (4,908 B/s)
+Get:21 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [7,793 B]
+Get:22 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,084 B]
+Fetched 14.3 kB in 4s (3,645 B/s)
 Reading package lists...
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -168,8 +168,8 @@ Get:73 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd6
 Get:74 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libavfilter9 amd64 10:6.0.1-dmo0+deb12u1 [3,742 kB]
 Get:75 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libcaca0 amd64 0.99.beta20-3 [205 kB]
 Get:76 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libcdio19 amd64 1:2.1.0-dmo3 [205 kB]
-Get:77 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libcdio-cdda2 amd64 10.2+2.0.1-dmo1 [20.9 kB]
-Get:78 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libcdio-paranoia2 amd64 10.2+2.0.1-dmo1 [21.2 kB]
+Get:77 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libcdio-cdda2 amd64 10.2+2.0.2-dmo0+deb12u1 [17.2 kB]
+Get:78 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 libcdio-paranoia2 amd64 10.2+2.0.2-dmo0+deb12u1 [16.7 kB]
 Get:79 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libdc1394-25 amd64 2.2.6-4 [109 kB]
 Get:80 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libiec61883-0 amd64 1.2.0-6+b1 [30.5 kB]
 Get:81 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libjack-jackd2-0 amd64 1.9.21~dfsg-3 [281 kB]
@@ -193,9 +193,9 @@ Get:98 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libx
 Get:99 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 vapoursynth-ffms2 amd64 1:2.40+20211209.git90975ec-dmo4 [13.7 kB]
 Get:100 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 vapoursynth amd64 62-dmo1 [867 kB]
 Get:101 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 mpv amd64 1:0.35.1-dmo5 [1,212 kB]
-Fetched 57.7 MB in 1s (94.1 MB/s)
+Fetched 57.7 MB in 1s (62.7 MB/s)
 Selecting previously unselected package libarchive13:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 98169 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 98420 files and directories currently installed.)
 Preparing to unpack .../000-libarchive13_3.6.2-1_amd64.deb ...
 Unpacking libarchive13:amd64 (3.6.2-1) ...
 Selecting previously unselected package libaribb24-0:amd64.
@@ -424,11 +424,11 @@ Selecting previously unselected package libcdio19:amd64.
 Preparing to unpack .../075-libcdio19_1%3a2.1.0-dmo3_amd64.deb ...
 Unpacking libcdio19:amd64 (1:2.1.0-dmo3) ...
 Selecting previously unselected package libcdio-cdda2:amd64.
-Preparing to unpack .../076-libcdio-cdda2_10.2+2.0.1-dmo1_amd64.deb ...
-Unpacking libcdio-cdda2:amd64 (10.2+2.0.1-dmo1) ...
+Preparing to unpack .../076-libcdio-cdda2_10.2+2.0.2-dmo0+deb12u1_amd64.deb ...
+Unpacking libcdio-cdda2:amd64 (10.2+2.0.2-dmo0+deb12u1) ...
 Selecting previously unselected package libcdio-paranoia2:amd64.
-Preparing to unpack .../077-libcdio-paranoia2_10.2+2.0.1-dmo1_amd64.deb ...
-Unpacking libcdio-paranoia2:amd64 (10.2+2.0.1-dmo1) ...
+Preparing to unpack .../077-libcdio-paranoia2_10.2+2.0.2-dmo0+deb12u1_amd64.deb ...
+Unpacking libcdio-paranoia2:amd64 (10.2+2.0.2-dmo0+deb12u1) ...
 Selecting previously unselected package libdc1394-25:amd64.
 Preparing to unpack .../078-libdc1394-25_2.2.6-4_amd64.deb ...
 Unpacking libdc1394-25:amd64 (2.2.6-4) ...
@@ -577,8 +577,8 @@ Setting up libkvazaar7:amd64 (1:2.2.0-dmo1) ...
 Setting up libavc1394-0:amd64 (0.5.4-5) ...
 Setting up libzvbi0:amd64 (0.2.41-1) ...
 Setting up libzmq5:amd64 (4.3.4-6) ...
-Setting up libcdio-cdda2:amd64 (10.2+2.0.1-dmo1) ...
-Setting up libcdio-paranoia2:amd64 (10.2+2.0.1-dmo1) ...
+Setting up libcdio-cdda2:amd64 (10.2+2.0.2-dmo0+deb12u1) ...
+Setting up libcdio-paranoia2:amd64 (10.2+2.0.2-dmo0+deb12u1) ...
 Setting up samba-libs:amd64 (2:4.19.5+dfsg-4~bpo12+1) ...
 Setting up libavutil58:amd64 (10:6.0.1-dmo0+deb12u1) ...
 Setting up libopenal1:amd64 (1:1.19.1-2) ...
@@ -620,8 +620,9 @@ Hit:15 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:16 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:17 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
 Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
-Hit:19 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:20 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:19 https://dl.google.com/linux/chrome/deb stable InRelease
+Get:20 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
+Fetched 3,590 B in 4s (880 B/s)
 Reading package lists...
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -654,4 +655,4 @@ mpv is already the newest version (1:0.35.1-dmo5).
 CLDS: * Install Media Player: mpv 0.35.1 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects.
 CLDS: * Add multiple aliases for MPV.
 CLDS: * Add useful mpv keybindings settings.
-CLDS: * Disk size = 6043444K. Space Used = 217600K. Runtime = 00:00:00:20.
+CLDS: * Disk size = 5895396K. Space Used = 217584K. Runtime = 00:00:00:24.

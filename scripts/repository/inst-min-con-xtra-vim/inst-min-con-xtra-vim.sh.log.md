@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-vim.sh ...
   * After this operation, 41.1 MB of additional disk space will be used.
   * Install vim.
-  * Disk size = 3846992K. Space Used = 53024K. Runtime = 00:00:00:03.
+  * Disk size = 3699384K. Space Used = 53024K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 libgpm2 vim vim-runtime
