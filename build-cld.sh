@@ -18,6 +18,7 @@ set -e
 
 # Log total elapsed time if success.
   if [ $? -eq 0 ]; then
+    date_string=$(date +"%Y-%m-%d.%0k.%M.%S")
     T="$(($(date +%s)-T))"
-    printf "%s: Elapsed time: %02d:%02d:%02d:%02d [DD:HH:MM:SS]\n" "${system_type}" "$((T/86400))" "$((T/3600%24))" "$((T/60%60))" "$((T%60))" >> build-elapsed.txt
+    printf "%s: %s: Elapsed time: %02d:%02d:%02d:%02d [DD:HH:MM:SS]\n" "${date_string}" "${system_type}" "$((T/86400))" "$((T/3600%24))" "$((T/60%60))" "$((T%60))" >> build-elapsed.txt
   fi
