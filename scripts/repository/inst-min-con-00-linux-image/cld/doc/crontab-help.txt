@@ -63,3 +63,6 @@
 # CRON Environment is the bare minimum environment supported by system. 
 #   Its not aware of additional environment settings which is made available to you via shell.
     59 23 * * * source $HOME/.profile; /root/myscript.sh
+
+# % (percent sign) is reserved word in crontab, you need to escape it.
+    $(date +'\%Y-\%m-\%d_\%0k.\%M.\%S').log
