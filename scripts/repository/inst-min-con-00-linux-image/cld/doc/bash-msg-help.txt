@@ -2,3 +2,11 @@
 	echo "ERROR: $(basename $0): ..."
 	echo "WARN: $(basename $0): ..."
 	echo "INFO: $(basename $0): ..."
+
+# Get total elapsed time.
+    DURATION="$(date +%s)"
+
+    sleep 5s;
+
+	DURATION="$(($(date +%s)-DURATION))"
+	printf "Runtime: %02d:%02d:%02d:%02d [DD:HH:MM:SS]\n" "$((DURATION/86400))" "$((DURATION/3600%24))" "$((DURATION/60%60))" "$((DURATION%60))"   

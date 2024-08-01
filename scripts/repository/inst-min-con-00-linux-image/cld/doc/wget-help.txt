@@ -31,3 +31,7 @@
 
 # wget ERROR: The certificate of ‘ftp-master.debian.org’ is not trusted.
     wget --no-check-certificate -q https://ftp-master.debian.org/keys/archive-key-11.asc
+
+# Don't save output but save logs.
+    wget https://cieinplay.netlify.app/earnings/ -O /dev/null > ${LOG_FILE} 2>&1
+
