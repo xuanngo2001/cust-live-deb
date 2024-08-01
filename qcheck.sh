@@ -9,6 +9,10 @@ echo "qcheck-command-not-found.sh:"
 ./qcheck-command-not-found.sh
 
 echo "------------------"
+echo "qcheck-not-installable.sh:"
+./qcheck-not-installable.sh
+
+echo "------------------"
 echo "qcheck-file-dir-not-found.sh:"
 ./qcheck-file-dir-not-found.sh
 
