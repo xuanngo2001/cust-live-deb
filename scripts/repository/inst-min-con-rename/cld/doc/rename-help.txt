@@ -1,4 +1,35 @@
 # To lowercase.
 	rename -f 'y/A-Z/a-z/' *
-	find my_root_dir -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;
+	find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;
 
+# Rename series
+    # Prefix 0 to Episode
+    rename "s/Episode (\d{1}) /Episode 0\$1 /" *.mp4
+    rename "s/Ep (\d{1}) /Ep 0\$1 /i" *.mp4
+    rename "s/Ep.(\d{1})_/Ep.0\$1_/" *.mp4
+
+    # Rename based of dirname.
+    rename "s/(.*)(Episode \d{1,2})(.*)__(.*)__(.*)\.mp4/xuan_\$2__\$4__\$5.mp4/" *.mp4
+    rename "s/(.*)(Ep \d{1,2})(.*)__(.*)__(.*)\.mp4/xuan_\$2__\$4__\$5.mp4/i" *.mp4
+    rename "s/(.*)(Ep.\d{1,2})(.*)__(.*)__(.*)\.mp4/xuan_\$2__\$4__\$5.mp4/" *.mp4
+    xuan=$(basename $(readlink -ev .))
+    rename "s/xuan/${xuan}/" *.mp4
+
+    # Final format of Episode.
+    rename "s/Episode /Ep./" *.mp4
+    rename "s/Ep /Ep./" *.mp4
+
+# Rename series
+    # Take left of Episode, Episode, id and date.
+    rename "s/(.*)(Ep \d{1,2})(.*)__(.*)__(.*)\.mp4/\$1\$2__\$4__\$5.mp4/i" *.mp4
+    rename "s/(.*)(Episode \d{1,2})(.*)__(.*)__(.*)\.mp4/\$1\$2__\$4__\$5.mp4/i" *.mp4
+
+    # Prefix 0 to Episode
+    rename "s/Episode (\d{1}) /Episode 0\$1 /i" *.mp4
+    rename "s/Ep (\d{1}) /Ep 0\$1 /i" *.mp4
+    rename "s/Ep (\d{1})_/Ep 0\$1_/i" *.mp4
+
+    # Shorten episode to Ep.
+    rename "s/Episode /Ep./i" *.mp4
+    rename "s/Ep (\d{1,2})_/Ep.\$1_/i" *.mp4
+    
