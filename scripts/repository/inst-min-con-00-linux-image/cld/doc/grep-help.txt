@@ -44,4 +44,8 @@
 
 # Count number of occurrence found. Number of CPUs.
 	grep -c ^processor /proc/cpuinfo
-    
+
+# If condition with grep.
+    if grep -iq 'stop' "file.state"; then
+        echo "stop found in file.state."
+    fi    
