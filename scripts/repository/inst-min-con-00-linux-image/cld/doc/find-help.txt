@@ -16,9 +16,10 @@
 # Find multiple filename patterns.
     find . -type f -iname '*.asf' -o -iname '*.avi'
  
-# Find files with size 0, greater than 1MB, greater than 500K.
+# Find files with size 0, greater than 1MB, greater than 500K, less than 1M.
     find . -type f -size 0
     find . -type f -size +1M
+    find . -type f -size -999k # Don't use -1M.
     du -d 0 -t 500K -h /bin/*
  
 # Find empty directories.
