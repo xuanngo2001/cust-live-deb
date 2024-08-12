@@ -3,7 +3,7 @@
   * After this operation, 106 MB of additional disk space will be used.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
   * Installed Linux image: linux-image-6.9.7+bpo-amd64.
-  * Disk size = 770104K. Space Used = 258948K. Runtime = 00:00:01:05.
+  * Disk size = 770112K. Space Used = 258952K. Runtime = 00:00:00:42.
   * The following NEW packages will be installed:
   ```bash
 busybox dbus dbus-bin dbus-daemon dbus-session-bus-common
