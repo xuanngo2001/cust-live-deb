@@ -113,8 +113,8 @@
                 "  e.g. ./${this_script} <name>" \
                 "  e.g. ./${this_script} cld-help.sh" \
         )
-        if [ "$#" -eq 0 ]; then
-            echo "ERROR: ./${this_script}: Incomplete argument. Aborted!"
+        if [ "$#" -ne 1 ]; then
+            echo "Error: Incomplete argument. Aborted!"
             echo "${cmd_eg}"
             exit 1
         fi
