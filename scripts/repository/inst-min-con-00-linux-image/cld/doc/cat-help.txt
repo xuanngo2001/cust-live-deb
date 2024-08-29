@@ -1,5 +1,12 @@
 # Here document, https://linuxize.com/post/bash-heredoc/
-#   Delimiter(EOF) ends with line starting and ending with EOF.
+    cat << EOF
+    usage: up [--level <n>| -n <levels>][--help][--version]
+
+    The current working directory is: $PWD
+    You are logged in as: $(whoami)    
+    EOF
+
+# Delimiter(EOF) ends with line starting and ending with EOF.
     cat << EOF > /tmp/yourfilehere
     These contents will be written to the file.
             This line is indented.
