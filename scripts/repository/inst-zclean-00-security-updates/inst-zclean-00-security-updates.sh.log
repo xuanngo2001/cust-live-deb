@@ -54,7 +54,7 @@ The following packages will be upgraded:
   microsoft-edge-stable systemd-sysv sysvinit-utils
 9 upgraded, 0 newly installed, 0 to remove and 6 not upgraded.
 Need to get 169 MB of archives.
-After this operation, 91.2 MB of additional disk space will be used.
+After this operation, 87.5 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 sysvinit-utils amd64 3.08-3~bpo12+2 [31.8 kB]
 Get:2 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 logsave amd64 1.47.1~rc2-1~bpo12+1 [22.5 kB]
 Get:3 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libext2fs2 amd64 1.47.1~rc2-1~bpo12+1 [209 kB]
@@ -63,26 +63,26 @@ Get:5 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backpo
 Get:6 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 iproute2 amd64 6.9.0-1~bpo12+1 [1,060 kB]
 Get:7 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libcom-err2 amd64 1.47.1~rc2-1~bpo12+1 [22.6 kB]
 Get:8 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libss2 amd64 1.47.1~rc2-1~bpo12+1 [27.3 kB]
-Get:9 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 127.0.2651.98-1 [167 MB]
+Get:9 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 128.0.2739.67-1 [167 MB]
 Preconfiguring packages ...
-Fetched 169 MB in 5s (36.0 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 129776 files and directories currently installed.)
+Fetched 169 MB in 12s (14.0 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128498 files and directories currently installed.)
 Preparing to unpack .../sysvinit-utils_3.08-3~bpo12+2_amd64.deb ...
 Unpacking sysvinit-utils (3.08-3~bpo12+2) over (3.06-4) ...
 Setting up sysvinit-utils (3.08-3~bpo12+2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 129776 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128498 files and directories currently installed.)
 Preparing to unpack .../logsave_1.47.1~rc2-1~bpo12+1_amd64.deb ...
 Unpacking logsave (1.47.1~rc2-1~bpo12+1) over (1.47.0-2) ...
 Preparing to unpack .../libext2fs2_1.47.1~rc2-1~bpo12+1_amd64.deb ...
 Unpacking libext2fs2:amd64 (1.47.1~rc2-1~bpo12+1) over (1.47.0-2) ...
 Setting up libext2fs2:amd64 (1.47.1~rc2-1~bpo12+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 129776 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128498 files and directories currently installed.)
 Preparing to unpack .../0-e2fsprogs_1.47.1~rc2-1~bpo12+1_amd64.deb ...
 Unpacking e2fsprogs (1.47.1~rc2-1~bpo12+1) over (1.47.0-2) ...
 Preparing to unpack .../1-systemd-sysv_254.16-1~bpo12+1_amd64.deb ...
-Unpacking systemd-sysv (254.16-1~bpo12+1) over (252.26-1~deb12u2) ...
-Preparing to unpack .../2-microsoft-edge-stable_127.0.2651.98-1_amd64.deb ...
-Unpacking microsoft-edge-stable (127.0.2651.98-1) over (112.0.1722.48-1) ...
+Unpacking systemd-sysv (254.16-1~bpo12+1) over (252.30-1~deb12u2) ...
+Preparing to unpack .../2-microsoft-edge-stable_128.0.2739.67-1_amd64.deb ...
+Unpacking microsoft-edge-stable (128.0.2739.67-1) over (112.0.1722.48-1) ...
 Preparing to unpack .../3-iproute2_6.9.0-1~bpo12+1_amd64.deb ...
 Unpacking iproute2 (6.9.0-1~bpo12+1) over (6.1.0-3) ...
 dpkg: warning: unable to delete old directory '/etc/iproute2/rt_tables.d': Directory not empty
@@ -92,7 +92,7 @@ Preparing to unpack .../4-libcom-err2_1.47.1~rc2-1~bpo12+1_amd64.deb ...
 Unpacking libcom-err2:amd64 (1.47.1~rc2-1~bpo12+1) over (1.47.0-2) ...
 Preparing to unpack .../5-libss2_1.47.1~rc2-1~bpo12+1_amd64.deb ...
 Unpacking libss2:amd64 (1.47.1~rc2-1~bpo12+1) over (1.47.0-2) ...
-Setting up microsoft-edge-stable (127.0.2651.98-1) ...
+Setting up microsoft-edge-stable (128.0.2739.67-1) ...
 Setting up systemd-sysv (254.16-1~bpo12+1) ...
 Setting up iproute2 (6.9.0-1~bpo12+1) ...
 Removing obsolete conffile /etc/iproute2/group ...
@@ -114,12 +114,11 @@ Installing new version of config file /etc/cron.d/e2scrub_all ...
 Installing new version of config file /etc/mke2fs.conf ...
 update-initramfs: deferring update (trigger activated)
 Processing triggers for desktop-file-utils (0.26-1) ...
-Processing triggers for libc-bin (2.36-9+deb12u7) ...
+Processing triggers for libc-bin (2.36-9+deb12u8) ...
 Processing triggers for menu (2.1.49) ...
-Processing triggers for initramfs-tools (0.142) ...
-update-initramfs: Generating /boot/initrd.img-6.9.7+bpo-amd64
+Processing triggers for initramfs-tools (0.142+deb12u1) ...
+update-initramfs: Generating /boot/initrd.img-6.10.6+bpo-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
-setupcon is missing. Please install the 'console-setup' package.
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 6567564K. Space Used = 254304K. Runtime = 00:00:00:50.
+CLDS: * Disk size = 6524056K. Space Used = 250264K. Runtime = 00:00:00:59.
