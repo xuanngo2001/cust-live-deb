@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-min-con-xtra-default-jre-headless.sh ...
   * After this operation, 211 MB of additional disk space will be used.
-  * Install openjdk version "17.0.11" 2024-04-16.
+  * Install openjdk version "17.0.12" 2024-07-16.
   * To install JAVA binary: https://wiki.debian.org/JavaPackage.
   * JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64/bin/java".
-  * Disk size = 1857276K. Space Used = 258620K. Runtime = 00:00:00:10.
+  * Disk size = 1859456K. Space Used = 258692K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 ca-certificates ca-certificates-java default-jre-headless fontconfig-config fonts-dejavu-core
