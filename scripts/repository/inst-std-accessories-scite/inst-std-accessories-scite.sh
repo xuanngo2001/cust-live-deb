@@ -15,7 +15,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # To shut up warning message: "(scite:1224): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: 
 #	The name org.a11y.Bus was not provided by any .service files"
 	apt-get -y install at-spi2-core
-	
+
+# Add to CLD/
+	yes | cp -av ./cld  /usr/local
+
 # Log
 	echo "${GV_LOG} * Install Text Editor: SciTE."
 	echo "${GV_LOG} * Insert SciTE in Accessories menu."
