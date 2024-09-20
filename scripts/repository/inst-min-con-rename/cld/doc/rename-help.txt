@@ -2,6 +2,9 @@
 	rename -f 'y/A-Z/a-z/' *
 	find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;
 
+# Replace vowels
+    rename -n 's/[aeiou]/_/g' *.mp4
+
 # Rename series
     # Prefix 0 to Episode
     rename "s/Episode (\d{1}) /Episode 0\$1 /" *.mp4
