@@ -22,6 +22,7 @@ URL=http://download.virtualbox.org/virtualbox/6.1.38/VBoxGuestAdditions_6.1.38.i
 URL=http://download.virtualbox.org/virtualbox/7.0.4/VBoxGuestAdditions_7.0.4.iso    # Copy & paste work flawlessly, include formatting TO host. Host win32 v7.0.0 r153978. But only 1 line copy FROM host.
 #~ URL=http://download.virtualbox.org/virtualbox/7.0.10/VBoxGuestAdditions_7.0.10.iso	# BAD: mv file: segmentation fault. Copy & paste not working.
 #~ URL=http://download.virtualbox.org/virtualbox/7.0.12/VBoxGuestAdditions_7.0.12.iso  # BAD: Boot can´t open Window manager.
+URL=http://download.virtualbox.org/virtualbox/7.1.0/VBoxGuestAdditions_7.1.0.iso  # OK
 
 # Download ISO if not already exists.
     vbox_iso="VBoxGuestAdditions.iso"
