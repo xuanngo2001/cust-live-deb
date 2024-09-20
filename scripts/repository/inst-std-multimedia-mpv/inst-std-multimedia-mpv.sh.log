@@ -17,11 +17,11 @@ Hit:15 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:16 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:17 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
 Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
-Get:19 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
-Get:20 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
-Get:21 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [11.3 kB]
-Get:22 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,092 B]
-Fetched 17.9 kB in 3s (5,451 B/s)
+Get:19 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
+Get:20 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
+Get:21 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,083 B]
+Get:22 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [11.7 kB]
+Fetched 18.2 kB in 3s (7,223 B/s)
 Reading package lists...
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -193,7 +193,7 @@ Get:98 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libx
 Get:99 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 vapoursynth-ffms2 amd64 1:2.40+20211209.git90975ec-dmo4 [13.7 kB]
 Get:100 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 vapoursynth amd64 62-dmo1 [867 kB]
 Get:101 http://localhost/aptly-repo/master_deb-multimedia-main bookworm/main amd64 mpv amd64 1:0.35.1-dmo5 [1,212 kB]
-Fetched 57.9 MB in 1s (95.5 MB/s)
+Fetched 57.9 MB in 1s (100 MB/s)
 Selecting previously unselected package libarchive13:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94665 files and directories currently installed.)
 Preparing to unpack .../000-libarchive13_3.6.2-1+deb12u1_amd64.deb ...
@@ -654,4 +654,4 @@ mpv is already the newest version (1:0.35.1-dmo5).
 CLDS: * Install Media Player: mpv 0.35.1 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects.
 CLDS: * Add multiple aliases for MPV.
 CLDS: * Add useful mpv keybindings settings.
-CLDS: * Disk size = 6142704K. Space Used = 218900K. Runtime = 00:00:00:19.
+CLDS: * Disk size = 6151064K. Space Used = 218912K. Runtime = 00:00:00:18.
