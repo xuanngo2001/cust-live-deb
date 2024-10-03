@@ -5,6 +5,9 @@
 # Replace vowels
     rename -n 's/[aeiou]/_/g' *.mp4
 
+# Prefix with timestamp
+    \ls -1 *.jpg | xargs -I{} rename -n "s/^/$(date +%s)_/" {}
+
 # Rename series
     # Prefix 0 to Episode
     rename "s/Episode (\d{1}) /Episode 0\$1 /" *.mp4

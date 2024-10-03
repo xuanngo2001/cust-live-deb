@@ -26,6 +26,9 @@
 	
 # Extract audio from video file.
 	mpv videofile.avi -o audiofile.mp3 --no-video
+
+    \ls -1 *.mp4 | tr '\n' '\0' | xargs -0 -I{} mpv "{}" -o "{}".mp3 --no-video
+    rename 's/.mp4.mp3/.mp3/' *.mp3
  
 # Extract audio from video file at a specific time.
 	mpv videofile.avi -o audiofile.mp3 --no-video --start=00:01:00 --end=00:03:35
