@@ -3,9 +3,11 @@ set -e
 # Description: Log build time.
 
 # Error handling.
+    available_system_types=$(cat ./scripts/scripts-ls.sh | sed -n '/case/,/esac/p' | grep ".*)$"| grep -v SYSTEM | tr -d "[:space:]" | sed 's/)/, /g')
     system_type=$1
     if [ -z "${system_type}" ]; then
         echo "Error: system_type can't be empty. Aborted!"
+        echo "  system_type: ${available_system_types}"
         exit 1
     fi
 
