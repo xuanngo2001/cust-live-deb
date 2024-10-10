@@ -7,12 +7,17 @@
     find . -type f -name '*.txt' -exec sed -i 's/SEARCH/REPLACE/g' {} +
  
 # Find and execute multiple commands.
-    find . -type f -name '*.sh' -execdir echo "Executing {}" \; -execdir chmod +x {} \; 
-    find . -type f -name "*.sh" ! -name "*readme*.sh" -execdir echo "chmod +x {}" \; -execdir chmod +x {} \;
+    find . -type f -name '*.sh' -exec echo "Executing {}" \; -exec chmod +x {} \; 
+    find . -type f -name "*.sh" ! -name "*readme*.sh" -exec echo "chmod +x {}" \; -exec chmod +x {} \;
+
+    find . -type f -exec sh -c "echo -n {}; echo -n ' x '; echo {}" \;
 
 # Find and execute multiple commands with success condition.
     find "${base_dir}" -type f -name '*.url' -exec grep "${search_term}" {} \; -exec echo {} \;
- 
+
+# Find and execute command within the matching directories: cd directory found and then execute command.
+    find . -type d -execdir ls -al {} \;
+
 # Find multiple filename patterns.
     find . -type f -iname '*.asf' -o -iname '*.avi'
  
