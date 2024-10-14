@@ -13,3 +13,12 @@ draft = false
 +++
 
 EOM
+
+# Read stdin, read data passing to pipe
+    while read line
+    do 
+        echo "${line}" | \
+            sed 's/  ##    .*//' | \
+            sed 's/##xn##.*//' | \
+            xargs
+    done
