@@ -99,6 +99,9 @@ title: User manual
     # Download a single web page. In case robots.txt is disallowing, add -e robots=off
     wget -E -H -k -K -p http://your-web-page.com/page1.html
     
+    # List outputs(Connected and with asterisk)
+    xrandr -q
+
     # Change screen brightness.
     xrandr --output LVDS-1 --brightness .6
     
