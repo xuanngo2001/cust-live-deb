@@ -14,7 +14,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Manually update nodejs to version 18x.
 #	https://github.com/nodesource/distributions/blob/master/README.md
-	curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&\
+	setup_url="https://deb.nodesource.com/setup_18.x"
+	setup_url="https://deb.nodesource.com/setup_20.x"
+	curl -fsSL "${setup_url}" | bash - &&\
 	apt-get install -y nodejs
 
 # Log
