@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # Description: Open script with scite
-#   Note: from ../inst-min-con-cld-bin/cld/bin
+#   Note: from ./inst-std-accessories-scite/cld/bin/scite-open.sh
 this_script=$(basename "${0}")
 
 script_name=$1
