@@ -272,7 +272,7 @@ Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
   busybox initramfs-tools initramfs-tools-core klibc-utils libklibc linux-base
-  linux-image-6.10.6+bpo-amd64 live-boot-initramfs-tools rsync
+  linux-image-6.10.11+bpo-amd64 live-boot-initramfs-tools rsync
 Suggested packages:
   bash-completion firmware-linux-free linux-doc-6.10 debian-kernel-handbook
   grub-pc | grub-efi-amd64 | extlinux cryptsetup curlftpfs httpfs2 wget
@@ -281,7 +281,7 @@ Recommended packages:
   zstd apparmor live-boot-doc live-tools uuid-runtime
 The following NEW packages will be installed:
   busybox initramfs-tools initramfs-tools-core klibc-utils libklibc linux-base
-  linux-image-6.10.6+bpo-amd64 linux-image-amd64 live-boot
+  linux-image-6.10.11+bpo-amd64 linux-image-amd64 live-boot
   live-boot-initramfs-tools rsync
 0 upgraded, 11 newly installed, 0 to remove and 14 not upgraded.
 Need to get 102 MB of archives.
@@ -293,8 +293,8 @@ Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 klibc
 Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 initramfs-tools-core all 0.142+deb12u1 [47.9 kB]
 Get:6 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 linux-base all 4.9 [31.8 kB]
 Get:7 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 initramfs-tools all 0.142+deb12u1 [15.8 kB]
-Get:8 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-image-6.10.6+bpo-amd64 amd64 6.10.6-1~bpo12+1 [101 MB]
-Get:9 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-image-amd64 amd64 6.10.6-1~bpo12+1 [1480 B]
+Get:8 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-image-6.10.11+bpo-amd64 amd64 6.10.11-1~bpo12+1 [101 MB]
+Get:9 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-image-amd64 amd64 6.10.11-1~bpo12+1 [1476 B]
 Get:10 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 live-boot-initramfs-tools all 1:20230131 [5804 B]
 Get:11 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 live-boot all 1:20230131 [28.7 kB]
 perl: warning: Setting locale failed.
@@ -308,7 +308,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 102 MB in 1s (83.4 MB/s)
+Fetched 102 MB in 1s (97.0 MB/s)
 Selecting previously unselected package rsync.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8980 files and directories currently installed.)
 Preparing to unpack .../00-rsync_3.2.7-1_amd64.deb ...
@@ -331,12 +331,12 @@ Unpacking linux-base (4.9) ...
 Selecting previously unselected package initramfs-tools.
 Preparing to unpack .../06-initramfs-tools_0.142+deb12u1_all.deb ...
 Unpacking initramfs-tools (0.142+deb12u1) ...
-Selecting previously unselected package linux-image-6.10.6+bpo-amd64.
-Preparing to unpack .../07-linux-image-6.10.6+bpo-amd64_6.10.6-1~bpo12+1_amd64.deb ...
-Unpacking linux-image-6.10.6+bpo-amd64 (6.10.6-1~bpo12+1) ...
+Selecting previously unselected package linux-image-6.10.11+bpo-amd64.
+Preparing to unpack .../07-linux-image-6.10.11+bpo-amd64_6.10.11-1~bpo12+1_amd64.deb ...
+Unpacking linux-image-6.10.11+bpo-amd64 (6.10.11-1~bpo12+1) ...
 Selecting previously unselected package linux-image-amd64.
-Preparing to unpack .../08-linux-image-amd64_6.10.6-1~bpo12+1_amd64.deb ...
-Unpacking linux-image-amd64 (6.10.6-1~bpo12+1) ...
+Preparing to unpack .../08-linux-image-amd64_6.10.11-1~bpo12+1_amd64.deb ...
+Unpacking linux-image-amd64 (6.10.11-1~bpo12+1) ...
 Selecting previously unselected package live-boot-initramfs-tools.
 Preparing to unpack .../09-live-boot-initramfs-tools_1%3a20230131_all.deb ...
 Unpacking live-boot-initramfs-tools (1:20230131) ...
@@ -356,21 +356,21 @@ Running in chroot, ignoring request.
 Setting up initramfs-tools-core (0.142+deb12u1) ...
 Setting up initramfs-tools (0.142+deb12u1) ...
 update-initramfs: deferring update (trigger activated)
-Setting up live-boot-initramfs-tools (1:20230131) ...
-update-initramfs: deferring update (trigger activated)
-Setting up linux-image-6.10.6+bpo-amd64 (6.10.6-1~bpo12+1) ...
-I: /vmlinuz.old is now a symlink to boot/vmlinuz-6.10.6+bpo-amd64
-I: /initrd.img.old is now a symlink to boot/initrd.img-6.10.6+bpo-amd64
-I: /vmlinuz is now a symlink to boot/vmlinuz-6.10.6+bpo-amd64
-I: /initrd.img is now a symlink to boot/initrd.img-6.10.6+bpo-amd64
+Setting up linux-image-6.10.11+bpo-amd64 (6.10.11-1~bpo12+1) ...
+I: /vmlinuz.old is now a symlink to boot/vmlinuz-6.10.11+bpo-amd64
+I: /initrd.img.old is now a symlink to boot/initrd.img-6.10.11+bpo-amd64
+I: /vmlinuz is now a symlink to boot/vmlinuz-6.10.11+bpo-amd64
+I: /initrd.img is now a symlink to boot/initrd.img-6.10.11+bpo-amd64
 /etc/kernel/postinst.d/initramfs-tools:
-update-initramfs: Generating /boot/initrd.img-6.10.6+bpo-amd64
+update-initramfs: Generating /boot/initrd.img-6.10.11+bpo-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
-Setting up linux-image-amd64 (6.10.6-1~bpo12+1) ...
+Setting up live-boot-initramfs-tools (1:20230131) ...
+update-initramfs: deferring update (trigger activated)
+Setting up linux-image-amd64 (6.10.11-1~bpo12+1) ...
 Setting up live-boot (1:20230131) ...
 Processing triggers for initramfs-tools (0.142+deb12u1) ...
-update-initramfs: Generating /boot/initrd.img-6.10.6+bpo-amd64
+update-initramfs: Generating /boot/initrd.img-6.10.11+bpo-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 './cld' -> '/usr/local/cld'
@@ -440,43 +440,43 @@ live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                  Version          Architecture Description
-+++-=====================================-================-============-===================================
-ii  linux-image-6.10.6+bpo-amd64          6.10.6-1~bpo12+1 amd64        Linux 6.10 for 64-bit PCs (signed)
-un  linux-image-6.10.6+bpo-amd64-unsigned <none>           <none>       (no description available)
-ii  linux-image-amd64                     6.10.6-1~bpo12+1 amd64        Linux for 64-bit PCs (meta-package)
-un  linux-image-generic                   <none>           <none>       (no description available)
-total 45704
--rw-r--r-- 1 root root       83 Aug 26 22:06 System.map-6.10.6+bpo-amd64
--rw-r--r-- 1 root root   276593 Aug 26 22:06 config-6.10.6+bpo-amd64
--rw-r--r-- 1 root root 36843910 Sep 20 17:16 initrd.img-6.10.6+bpo-amd64
--rw-r--r-- 1 root root  9668544 Aug 26 22:06 vmlinuz-6.10.6+bpo-amd64
-e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.10.6+bpo-amd64
-05e76e857a2b0d37102450266e96e2b7  /boot/config-6.10.6+bpo-amd64
-5682172687c8a1a06975c58c0355448b  /boot/initrd.img-6.10.6+bpo-amd64
-049ebbbf3f331a851134db5a61e0aa9d  /boot/vmlinuz-6.10.6+bpo-amd64
+||/ Name                                   Version           Architecture Description
++++-======================================-=================-============-===================================
+ii  linux-image-6.10.11+bpo-amd64          6.10.11-1~bpo12+1 amd64        Linux 6.10 for 64-bit PCs (signed)
+un  linux-image-6.10.11+bpo-amd64-unsigned <none>            <none>       (no description available)
+ii  linux-image-amd64                      6.10.11-1~bpo12+1 amd64        Linux for 64-bit PCs (meta-package)
+un  linux-image-generic                    <none>            <none>       (no description available)
+total 45696
+-rw-r--r-- 1 root root       83 Oct  3 20:43 System.map-6.10.11+bpo-amd64
+-rw-r--r-- 1 root root   276562 Oct  3 20:43 config-6.10.11+bpo-amd64
+-rw-r--r-- 1 root root 36842470 Oct 14 16:35 initrd.img-6.10.11+bpo-amd64
+-rw-r--r-- 1 root root  9664448 Oct  3 20:43 vmlinuz-6.10.11+bpo-amd64
+e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.10.11+bpo-amd64
+69839f73c86261c7ea80635f25e4b84e  /boot/config-6.10.11+bpo-amd64
+52241266228ed4bb273afbc6d986813c  /boot/initrd.img-6.10.11+bpo-amd64
+abf2273aed528566b5d52740187995df  /boot/vmlinuz-6.10.11+bpo-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Sep 20 17:14 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Sep 20 17:16 boot
-drwxr-xr-x  17 root root 3820 Sep 20 13:05 dev
-drwxr-xr-x  49 root root 4096 Sep 20 17:16 etc
+lrwxrwxrwx   1 root root    7 Oct 14 16:34 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Oct 14 16:35 boot
+drwxr-xr-x  17 root root 3820 Oct 14 10:43 dev
+drwxr-xr-x  49 root root 4096 Oct 14 16:35 etc
 drwxr-xr-x   2 root root 4096 Aug 14 16:10 home
-lrwxrwxrwx   1 root root   32 Sep 20 17:15 initrd.img -> boot/initrd.img-6.10.6+bpo-amd64
-lrwxrwxrwx   1 root root    7 Sep 20 17:14 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Sep 20 17:14 lib64 -> usr/lib64
-drwxr-xr-x   2 root root 4096 Sep 20 17:14 media
-drwxr-xr-x   2 root root 4096 Sep 20 17:14 mnt
-drwxr-xr-x   2 root root 4096 Sep 20 17:14 opt
-dr-xr-xr-x 318 root root    0 Sep 20 17:15 proc
-drwx------   4 root root 4096 Sep 20 17:15 root
-drwxr-xr-x   8 root root 4096 Sep 20 17:15 run
-lrwxrwxrwx   1 root root    8 Sep 20 17:14 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Sep 20 17:14 srv
-dr-xr-xr-x  13 root root    0 Sep 20 13:04 sys
-drwxrwxrwt   2 root root 4096 Sep 20 17:15 tmp
-drwxr-xr-x  12 root root 4096 Sep 20 17:14 usr
-drwxr-xr-x  11 root root 4096 Sep 20 17:14 var
-lrwxrwxrwx   1 root root   29 Sep 20 17:15 vmlinuz -> boot/vmlinuz-6.10.6+bpo-amd64
+lrwxrwxrwx   1 root root   33 Oct 14 16:34 initrd.img -> boot/initrd.img-6.10.11+bpo-amd64
+lrwxrwxrwx   1 root root    7 Oct 14 16:34 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Oct 14 16:34 lib64 -> usr/lib64
+drwxr-xr-x   2 root root 4096 Oct 14 16:34 media
+drwxr-xr-x   2 root root 4096 Oct 14 16:34 mnt
+drwxr-xr-x   2 root root 4096 Oct 14 16:34 opt
+dr-xr-xr-x 338 root root    0 Oct 14 16:34 proc
+drwx------   4 root root 4096 Oct 14 16:34 root
+drwxr-xr-x   8 root root 4096 Oct 14 16:34 run
+lrwxrwxrwx   1 root root    8 Oct 14 16:34 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Oct 14 16:34 srv
+dr-xr-xr-x  13 root root    0 Oct 14 10:42 sys
+drwxrwxrwt   2 root root 4096 Oct 14 16:34 tmp
+drwxr-xr-x  12 root root 4096 Oct 14 16:34 usr
+drwxr-xr-x  11 root root 4096 Oct 14 16:34 var
+lrwxrwxrwx   1 root root   30 Oct 14 16:34 vmlinuz -> boot/vmlinuz-6.10.11+bpo-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
-CLDS: * Installed Linux image: linux-image-6.10.6+bpo-amd64.
-CLDS: * Disk size = 887200K. Space Used = 260924K. Runtime = 00:00:00:57.
+CLDS: * Installed Linux image: linux-image-6.10.11+bpo-amd64.
+CLDS: * Disk size = 887260K. Space Used = 260992K. Runtime = 00:00:00:57.

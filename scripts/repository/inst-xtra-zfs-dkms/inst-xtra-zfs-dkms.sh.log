@@ -13,18 +13,18 @@ The following packages were automatically installed and are no longer required:
   libgphoto2-port12 libgssdp-1.6-0 libgupnp-1.6-0 libgupnp-igd-1.0-4
   libharfbuzz-icu0 libhdf4-0-alt libhdf5-103-1 libhdf5-hl-100
   libhunspell-1.7-0 libhwloc15 libhyphen0 libimath-3-1-29
-  libjavascriptcoregtk-4.0-18 libjemalloc2 libkmlbase1 libkmldom1
-  libkmlengine1 liblapack3 liblog4cplus-2.0.5 libmanette-0.2-0 libminizip1
-  libnetcdf19 libnice10 libodbc2 libodbcinst2 libogdi4.1 libopencolorio2.1
-  libopencv-core406 libopencv-imgcodecs406 libopencv-imgproc406
-  libopenexr-3-1-30 libopenvdb10.0 liborc-0.4-0 libosdcpu3.5.0 libosdgpu3.5.0
-  libpcre3 libplacebo208 libpocketsphinx3 libpostproc56 libpotrace0 libpq5
-  libproj25 libpugixml1v5 libpystring0 libqhull-r8.0 libraw20 librttopo1
-  libshout3 libsocket++1 libsoup2.4-1 libsoup2.4-common libspatialite7
-  libsphinxbase3 libspnav0 libsuperlu5 libsz2 libtag1v5 libtag1v5-vanilla
-  libtbb12 libtbbbind-2-5 libtbbmalloc2 liburiparser1 libvidstab1.1
-  libvisual-0.4-0 libwavpack1 libwoff1 libxerces-c3.2 libyaml-cpp0.7 proj-data
-  unixodbc-common xdg-dbus-proxy
+  libjavascriptcoregtk-4.0-18 libkmlbase1 libkmldom1 libkmlengine1 liblapack3
+  liblog4cplus-2.0.5 libmanette-0.2-0 libminizip1 libnetcdf19 libnice10
+  libodbc2 libodbcinst2 libogdi4.1 libopencolorio2.1 libopencv-core406
+  libopencv-imgcodecs406 libopencv-imgproc406 libopenexr-3-1-30 libopenvdb10.0
+  liborc-0.4-0 libosdcpu3.5.0 libosdgpu3.5.0 libpcre3 libplacebo208
+  libpocketsphinx3 libpostproc56 libpotrace0 libpq5 libproj25 libpugixml1v5
+  libpystring0 libqhull-r8.0 libraw20 librttopo1 libshout3 libsocket++1
+  libsoup2.4-1 libsoup2.4-common libspatialite7 libsphinxbase3 libspnav0
+  libsuperlu5 libsz2 libtag1v5 libtag1v5-vanilla libtbb12 libtbbbind-2-5
+  libtbbmalloc2 liburiparser1 libvidstab1.1 libvisual-0.4-0 libwavpack1
+  libwoff1 libxerces-c3.2 libyaml-cpp0.7 proj-data unixodbc-common
+  xdg-dbus-proxy
 Use 'apt autoremove' to remove them.
 The following additional packages will be installed:
   libelf1 libzstd-dev
@@ -63,15 +63,15 @@ lsb-release set to manually installed.
 The following NEW packages will be installed:
   linux-headers-amd64
 0 upgraded, 1 newly installed, 0 to remove and 15 not upgraded.
-Need to get 1,416 B of archives.
+Need to get 1,412 B of archives.
 After this operation, 13.3 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-amd64 amd64 6.10.6-1~bpo12+1 [1,416 B]
-Fetched 1,416 B in 0s (0 B/s)
+Get:1 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 linux-headers-amd64 amd64 6.10.11-1~bpo12+1 [1,412 B]
+Fetched 1,412 B in 0s (0 B/s)
 Selecting previously unselected package linux-headers-amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128443 files and directories currently installed.)
-Preparing to unpack .../linux-headers-amd64_6.10.6-1~bpo12+1_amd64.deb ...
-Unpacking linux-headers-amd64 (6.10.6-1~bpo12+1) ...
-Setting up linux-headers-amd64 (6.10.6-1~bpo12+1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 149820 files and directories currently installed.)
+Preparing to unpack .../linux-headers-amd64_6.10.11-1~bpo12+1_amd64.deb ...
+Unpacking linux-headers-amd64 (6.10.11-1~bpo12+1) ...
+Setting up linux-headers-amd64 (6.10.11-1~bpo12+1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -82,7 +82,7 @@ build-essential is already the newest version (12.9).
 Reading package lists...
 Building dependency tree...
 Reading state information...
-linux-headers-6.10.6+bpo-amd64 is already the newest version (6.10.6-1~bpo12+1).
+linux-headers-6.10.11+bpo-amd64 is already the newest version (6.10.11-1~bpo12+1).
 0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
 Reading package lists...
 Building dependency tree...
@@ -93,14 +93,14 @@ The following NEW packages will be installed:
 Need to get 102 kB of archives.
 After this operation, 416 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 module-assistant all 0.11.11 [102 kB]
-Fetched 102 kB in 0s (8,306 kB/s)
+Fetched 102 kB in 0s (0 B/s)
 Selecting previously unselected package module-assistant.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128445 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 149822 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.11_all.deb ...
 Unpacking module-assistant (0.11.11) ...
 Setting up module-assistant (0.11.11) ...
-Getting source for kernel version: 6.10.6+bpo-amd64
-Kernel headers available in /lib/modules/6.10.6+bpo-amd64/build
+Getting source for kernel version: 6.10.11+bpo-amd64
+Kernel headers available in /lib/modules/6.10.11+bpo-amd64/build
 Creating symlink...
 apt-get -y install build-essential 
 Reading package lists...
@@ -131,21 +131,21 @@ The following NEW packages will be installed:
 Need to get 2,459 kB of archives.
 After this operation, 19.2 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 file amd64 1:5.44-3 [42.5 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 zfs-dkms all 2.2.6-1~bpo12+1 [2,416 kB]
+Get:2 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 zfs-dkms all 2.2.6-1~bpo12+3 [2,416 kB]
 Preconfiguring packages ...
-Fetched 2,459 kB in 0s (70.2 MB/s)
+Fetched 2,459 kB in 0s (88.9 MB/s)
 Selecting previously unselected package file.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128498 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 149875 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.44-3_amd64.deb ...
 Unpacking file (1:5.44-3) ...
 Selecting previously unselected package zfs-dkms.
-Preparing to unpack .../zfs-dkms_2.2.6-1~bpo12+1_all.deb ...
-Unpacking zfs-dkms (2.2.6-1~bpo12+1) ...
+Preparing to unpack .../zfs-dkms_2.2.6-1~bpo12+3_all.deb ...
+Unpacking zfs-dkms (2.2.6-1~bpo12+3) ...
 Setting up file (1:5.44-3) ...
-Setting up zfs-dkms (2.2.6-1~bpo12+1) ...
+Setting up zfs-dkms (2.2.6-1~bpo12+3) ...
 Loading new zfs-2.2.6 DKMS files...
-Building for 6.10.6+bpo-amd64
-Building initial module for 6.10.6+bpo-amd64
+Building for 6.10.11+bpo-amd64
+Building initial module for 6.10.11+bpo-amd64
 Done.
 
 zfs.ko.xz:
@@ -153,17 +153,17 @@ Running module version sanity check.
  - Original module
    - No original module exists within this kernel
  - Installation
-   - Installing to /lib/modules/6.10.6+bpo-amd64/updates/dkms/
+   - Installing to /lib/modules/6.10.11+bpo-amd64/updates/dkms/
 
 spl.ko.xz:
 Running module version sanity check.
  - Original module
    - No original module exists within this kernel
  - Installation
-   - Installing to /lib/modules/6.10.6+bpo-amd64/updates/dkms/
+   - Installing to /lib/modules/6.10.11+bpo-amd64/updates/dkms/
 depmod.....
 Processing triggers for initramfs-tools (0.142+deb12u1) ...
-update-initramfs: Generating /boot/initrd.img-6.10.6+bpo-amd64
+update-initramfs: Generating /boot/initrd.img-6.10.11+bpo-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 Reading package lists...
@@ -179,41 +179,39 @@ The following NEW packages will be installed:
   libnvpair3linux libuutil3linux libzfs4linux libzpool5linux zfs-initramfs
   zfsutils-linux
 0 upgraded, 6 newly installed, 0 to remove and 15 not upgraded.
-Need to get 2,281 kB of archives.
-After this operation, 7,382 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 libnvpair3linux amd64 2.2.6-1~bpo12+1 [60.9 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 libuutil3linux amd64 2.2.6-1~bpo12+1 [52.0 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 libzfs4linux amd64 2.2.6-1~bpo12+1 [229 kB]
-Get:4 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 libzpool5linux amd64 2.2.6-1~bpo12+1 [1,340 kB]
-Get:5 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 zfsutils-linux amd64 2.2.6-1~bpo12+1 [562 kB]
-Get:6 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 zfs-initramfs all 2.2.6-1~bpo12+1 [36.5 kB]
-Fetched 2,281 kB in 0s (30.7 MB/s)
+Need to get 2,280 kB of archives.
+After this operation, 7,396 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 libnvpair3linux amd64 2.2.6-1~bpo12+3 [61.0 kB]
+Get:2 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 libuutil3linux amd64 2.2.6-1~bpo12+3 [52.1 kB]
+Get:3 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 libzfs4linux amd64 2.2.6-1~bpo12+3 [229 kB]
+Get:4 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 libzpool5linux amd64 2.2.6-1~bpo12+3 [1,339 kB]
+Get:5 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 zfsutils-linux amd64 2.2.6-1~bpo12+3 [563 kB]
+Get:6 http://localhost/aptly-repo/master_bookworm-backports-contrib bookworm-backports/contrib amd64 zfs-initramfs all 2.2.6-1~bpo12+3 [36.6 kB]
+Fetched 2,280 kB in 0s (51.2 MB/s)
 Selecting previously unselected package libnvpair3linux.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 129503 files and directories currently installed.)
-Preparing to unpack .../0-libnvpair3linux_2.2.6-1~bpo12+1_amd64.deb ...
-Unpacking libnvpair3linux (2.2.6-1~bpo12+1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 150880 files and directories currently installed.)
+Preparing to unpack .../0-libnvpair3linux_2.2.6-1~bpo12+3_amd64.deb ...
+Unpacking libnvpair3linux (2.2.6-1~bpo12+3) ...
 Selecting previously unselected package libuutil3linux.
-Preparing to unpack .../1-libuutil3linux_2.2.6-1~bpo12+1_amd64.deb ...
-Unpacking libuutil3linux (2.2.6-1~bpo12+1) ...
+Preparing to unpack .../1-libuutil3linux_2.2.6-1~bpo12+3_amd64.deb ...
+Unpacking libuutil3linux (2.2.6-1~bpo12+3) ...
 Selecting previously unselected package libzfs4linux.
-Preparing to unpack .../2-libzfs4linux_2.2.6-1~bpo12+1_amd64.deb ...
-Unpacking libzfs4linux (2.2.6-1~bpo12+1) ...
+Preparing to unpack .../2-libzfs4linux_2.2.6-1~bpo12+3_amd64.deb ...
+Unpacking libzfs4linux (2.2.6-1~bpo12+3) ...
 Selecting previously unselected package libzpool5linux.
-Preparing to unpack .../3-libzpool5linux_2.2.6-1~bpo12+1_amd64.deb ...
-Unpacking libzpool5linux (2.2.6-1~bpo12+1) ...
+Preparing to unpack .../3-libzpool5linux_2.2.6-1~bpo12+3_amd64.deb ...
+Unpacking libzpool5linux (2.2.6-1~bpo12+3) ...
 Selecting previously unselected package zfsutils-linux.
-Preparing to unpack .../4-zfsutils-linux_2.2.6-1~bpo12+1_amd64.deb ...
-Unpacking zfsutils-linux (2.2.6-1~bpo12+1) ...
+Preparing to unpack .../4-zfsutils-linux_2.2.6-1~bpo12+3_amd64.deb ...
+Unpacking zfsutils-linux (2.2.6-1~bpo12+3) ...
 Selecting previously unselected package zfs-initramfs.
-Preparing to unpack .../5-zfs-initramfs_2.2.6-1~bpo12+1_all.deb ...
-Unpacking zfs-initramfs (2.2.6-1~bpo12+1) ...
-Setting up libnvpair3linux (2.2.6-1~bpo12+1) ...
-Setting up libuutil3linux (2.2.6-1~bpo12+1) ...
-Setting up libzpool5linux (2.2.6-1~bpo12+1) ...
-Setting up libzfs4linux (2.2.6-1~bpo12+1) ...
-Setting up zfsutils-linux (2.2.6-1~bpo12+1) ...
-insmod /lib/modules/6.10.6+bpo-amd64/updates/dkms/spl.ko.xz 
-insmod /lib/modules/6.10.6+bpo-amd64/updates/dkms/zfs.ko.xz 
+Preparing to unpack .../5-zfs-initramfs_2.2.6-1~bpo12+3_all.deb ...
+Unpacking zfs-initramfs (2.2.6-1~bpo12+3) ...
+Setting up libnvpair3linux (2.2.6-1~bpo12+3) ...
+Setting up libuutil3linux (2.2.6-1~bpo12+3) ...
+Setting up libzpool5linux (2.2.6-1~bpo12+3) ...
+Setting up libzfs4linux (2.2.6-1~bpo12+3) ...
+Setting up zfsutils-linux (2.2.6-1~bpo12+3) ...
 Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
 Running in chroot, ignoring request.
@@ -222,16 +220,25 @@ Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
 Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
-Setting up zfs-initramfs (2.2.6-1~bpo12+1) ...
+Created symlink /etc/systemd/system/zfs-import.target.wants/zfs-import-cache.service → /lib/systemd/system/zfs-import-cache.service.
+Created symlink /etc/systemd/system/zfs.target.wants/zfs-import.target → /lib/systemd/system/zfs-import.target.
+Created symlink /etc/systemd/system/zfs-mount.service.wants/zfs-load-module.service → /lib/systemd/system/zfs-load-module.service.
+Created symlink /etc/systemd/system/zfs.target.wants/zfs-load-module.service → /lib/systemd/system/zfs-load-module.service.
+Created symlink /etc/systemd/system/zfs.target.wants/zfs-mount.service → /lib/systemd/system/zfs-mount.service.
+Created symlink /etc/systemd/system/zfs.target.wants/zfs-share.service → /lib/systemd/system/zfs-share.service.
+Created symlink /etc/systemd/system/zfs-volumes.target.wants/zfs-volume-wait.service → /lib/systemd/system/zfs-volume-wait.service.
+Created symlink /etc/systemd/system/zfs.target.wants/zfs-volumes.target → /lib/systemd/system/zfs-volumes.target.
+Created symlink /etc/systemd/system/multi-user.target.wants/zfs.target → /lib/systemd/system/zfs.target.
+Setting up zfs-initramfs (2.2.6-1~bpo12+3) ...
 Processing triggers for libc-bin (2.36-9+deb12u8) ...
 Processing triggers for initramfs-tools (0.142+deb12u1) ...
-update-initramfs: Generating /boot/initrd.img-6.10.6+bpo-amd64
+update-initramfs: Generating /boot/initrd.img-6.10.11+bpo-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
 setupcon is missing. Please install the 'console-setup' package.
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 './cld/doc/zfs-help.txt' -> '/usr/local/cld/doc/zfs-help.txt'
 CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
-CLDS: * Install zfs-dkms: version: 2.2.6-1~bpo12+1, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
+CLDS: * Install zfs-dkms: version: 2.2.6-1~bpo12+3, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
 CLDS: * Install zfs-initramfs to be able to boot from ZFS.
 CLDS: * Import existing ZFS partitions: zpool import -a
-CLDS: * Disk size = 6449388K. Space Used = 47128K. Runtime = 00:00:08:22.
+CLDS: * Disk size = 7028260K. Space Used = 47204K. Runtime = 00:00:08:22.
