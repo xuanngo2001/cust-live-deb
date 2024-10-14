@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-min-con-xtra-vim-universal-ctags.sh ...
-  * After this operation, 3,623 kB of additional disk space will be used.
+  * After this operation, 3,467 kB of additional disk space will be used.
   * Install universal-ctags.
   * Use this for VIM.
-  * Disk size = 3987388K. Space Used = 4400K. Runtime = 00:00:00:01.
+  * Disk size = 4573156K. Space Used = 4180K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
-libyaml-0-2 universal-ctags
+universal-ctags
   ```

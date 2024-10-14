@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-std-system-xtra-hardinfo.sh ...
-  * After this operation, 10.8 MB of additional disk space will be used.
+  * After this operation, 13.5 MB of additional disk space will be used.
   * Install hardware info apps: hardinfo.
   * Insert System Information menu in Administration.
-  * Disk size = 6362968K. Space Used = 12472K. Runtime = 00:00:00:03.
+  * Disk size = 6961476K. Space Used = 15548K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 glib-networking glib-networking-common glib-networking-services hardinfo hardinfo2
