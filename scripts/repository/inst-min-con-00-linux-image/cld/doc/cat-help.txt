@@ -6,13 +6,23 @@
     You are logged in as: $(whoami)    
     EOF
 
-# Delimiter(EOF) ends with line starting and ending with EOF.
-    cat << EOF > /tmp/yourfilehere
-    These contents will be written to the file.
-            This line is indented.
+# HereDoc: Delimiter(EOF) ends with line starting and ending with EOF.
+    nextjs_port=3962
+    cat << EOF > ./nginx.conf
+    server {
+        #listen 80;
+        server_name ${nextjs_app_name}.domain.com;
+        location / {
+            proxy_pass http://localhost:${nextjs_port};
+
+            # Expose ./public/
+            add_header Cache-Control "public, max-age=3600";
+        }
+    }
     EOF
 
-# Disable leading tab(space will not work), use <<-
+
+# HereDoc: Disable leading tab(space will not work), use <<-
     #!/usr/bin/env bash
 
     if true ; then
