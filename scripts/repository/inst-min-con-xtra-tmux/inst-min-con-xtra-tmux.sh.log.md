@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-min-con-xtra-tmux.sh ...
-  * After this operation, 2,475 kB of additional disk space will be used.
+  * After this operation, 2,424 kB of additional disk space will be used.
   * Install tmux.
-  * Disk size = 4569152K. Space Used = 3416K. Runtime = 00:00:00:02.
+  * Disk size = 4568944K. Space Used = 3328K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
-libevent-core-2.1-7 libjemalloc2 libutempter0 tmux
+libevent-core-2.1-7 libjemalloc2 tmux
   ```
