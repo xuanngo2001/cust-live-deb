@@ -13,6 +13,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 	apt-get -y install ansible
 	apt-get -y install -s python3-cffi-backend
 
-
 # Log
 	echo "${GV_LOG} * Install ansible."
+	echo "${GV_LOG} * sshpass: to allow passing username and password on the fly."
