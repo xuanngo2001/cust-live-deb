@@ -1,0 +1,4 @@
+# sudo multiple commands
+    sudo sh -c "cat ${service_template} | \
+        sed 's|SYSTEMD_SCRIPTS_DIR|${service_scripts_dir}|' | \
+        sed 's|SERVICE_USER|${service_user}|' > /etc/systemd/system/${serivce_filename}"
