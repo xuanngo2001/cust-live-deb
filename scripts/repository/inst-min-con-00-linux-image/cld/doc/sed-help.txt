@@ -47,15 +47,15 @@
 # Delete all lines up to, before PATTERN line
     sed -n '/PATTERN/,$p'
     
-# Insert file content after match.
+# Find and then add content after match.
     # Insert content of file2.txt into file1.txt after <tag> is found. /r stands for reading in a file.
         sed '/<tag>/ r file2.txt' file1.txt
      
     # Append line after match
-        sed  '/SEARCH-PATTERN/a REPLACE_STRING' inputfile
+        sed  '/SEARCH-PATTERN/a find-and-append-this-after-term-found' inputfile
      
     # Insert line before match
-        sed  '/SEARCH-PATTERN/i REPLACE_STRING' inputfile
+        sed  '/SEARCH-PATTERN/i find-and-insert-this-before-term-found' inputfile
 
 # Use repeat characters pattern: 4 time dot character.
     echo bluray.mkv.jpg.rar | sed 's/.\{4\}.rar//'

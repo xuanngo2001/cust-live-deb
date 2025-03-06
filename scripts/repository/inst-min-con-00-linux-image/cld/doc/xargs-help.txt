@@ -31,5 +31,9 @@
 # Add newline for every 3 words
 	echo 'cat dog eel pig'| xargs -n3
 
+# Keep the latest 5 files and delete the others. 
+    # List files in order | Remove the top 5 from the list | Delete all remaining files listed.
+    \ls -1 listings.db_*.7z | sort | head -n -5 | xargs rm -f
+
 echo {1..8} | parallel -N2 echo {1} {2}
 https://unix.stackexchange.com/questions/178191/multiple-arguments-using-xargs
