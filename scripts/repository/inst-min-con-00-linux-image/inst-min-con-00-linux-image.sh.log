@@ -8,7 +8,7 @@ Desired=Unknown/Install/Remove/Purge/Hold
 ii  adduser                      3.134                  all          add and remove users and groups
 ii  apt                          2.6.1                  amd64        commandline package manager
 ii  apt-utils                    2.6.1                  amd64        package management related utility programs
-ii  base-files                   12.4+deb12u9           amd64        Debian base system miscellaneous files
+ii  base-files                   12.4+deb12u10          amd64        Debian base system miscellaneous files
 ii  base-passwd                  3.6.1                  amd64        Debian base system master password and group files
 ii  bash                         5.2.15-2+b7            amd64        GNU Bourne Again SHell
 ii  bsdutils                     1:2.38.1-5+deb12u3     amd64        basic utilities from 4.4BSD-Lite
@@ -53,8 +53,8 @@ ii  libblkid1:amd64              2.38.1-5+deb12u3       amd64        block devic
 ii  libbpf1:amd64                1:1.1.0-1              amd64        eBPF helper library (shared library)
 ii  libbsd0:amd64                0.11.7-2               amd64        utility functions from BSD systems - shared library
 ii  libbz2-1.0:amd64             1.0.8-5+b1             amd64        high-quality block-sorting file compressor library - runtime
-ii  libc-bin                     2.36-9+deb12u9         amd64        GNU C Library: Binaries
-ii  libc6:amd64                  2.36-9+deb12u9         amd64        GNU C Library: Shared libraries
+ii  libc-bin                     2.36-9+deb12u10        amd64        GNU C Library: Binaries
+ii  libc6:amd64                  2.36-9+deb12u10        amd64        GNU C Library: Shared libraries
 ii  libcap-ng0:amd64             0.8.3-1+b3             amd64        alternate POSIX capabilities library
 ii  libcap2:amd64                1:2.66-4               amd64        POSIX 1003.1e capabilities (library)
 ii  libcap2-bin                  1:2.66-4               amd64        POSIX 1003.1e capabilities (utilities)
@@ -72,7 +72,7 @@ ii  libffi8:amd64                3.4.4-1                amd64        Foreign Fun
 ii  libgcc-s1:amd64              12.2.0-14              amd64        GCC support library
 ii  libgcrypt20:amd64            1.10.1-3               amd64        LGPL Crypto library - runtime library
 ii  libgmp10:amd64               2:6.2.1+dfsg1-1.1      amd64        Multiprecision arithmetic library
-ii  libgnutls30:amd64            3.7.9-2+deb12u3        amd64        GNU TLS library - main runtime library
+ii  libgnutls30:amd64            3.7.9-2+deb12u4        amd64        GNU TLS library - main runtime library
 ii  libgpg-error0:amd64          1.46-1                 amd64        GnuPG development runtime library
 ii  libgssapi-krb5-2:amd64       1.20.1-2+deb12u2       amd64        MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
 ii  libhogweed6:amd64            3.8.1-2                amd64        low level cryptographic library (public-key cryptos)
@@ -115,16 +115,16 @@ ii  libsmartcols1:amd64          2.38.1-5+deb12u3       amd64        smart colum
 ii  libss2:amd64                 1.47.0-2               amd64        command-line interface parsing library
 ii  libssl3:amd64                3.0.15-1~deb12u1       amd64        Secure Sockets Layer toolkit - shared libraries
 ii  libstdc++6:amd64             12.2.0-14              amd64        GNU Standard C++ Library v3
-ii  libsystemd-shared:amd64      252.33-1~deb12u1       amd64        systemd shared private library
-ii  libsystemd0:amd64            252.33-1~deb12u1       amd64        systemd utility library
-ii  libtasn1-6:amd64             4.19.0-2               amd64        Manage ASN.1 structures (runtime)
+ii  libsystemd-shared:amd64      252.36-1~deb12u1       amd64        systemd shared private library
+ii  libsystemd0:amd64            252.36-1~deb12u1       amd64        systemd utility library
+ii  libtasn1-6:amd64             4.19.0-2+deb12u1       amd64        Manage ASN.1 structures (runtime)
 ii  libtext-charwidth-perl:amd64 0.04-11                amd64        get display widths of characters on the terminal
 ii  libtext-iconv-perl:amd64     1.7-8                  amd64        module to convert between character sets in Perl
 ii  libtext-wrapi18n-perl        0.06-10                all          internationalized substitute of Text::Wrap
 ii  libtinfo6:amd64              6.4-4                  amd64        shared low-level terminfo library for terminal handling
 ii  libtirpc-common              1.3.3+ds-1             all          transport-independent RPC library - common files
 ii  libtirpc3:amd64              1.3.3+ds-1             amd64        transport-independent RPC library
-ii  libudev1:amd64               252.33-1~deb12u1       amd64        libudev shared library
+ii  libudev1:amd64               252.36-1~deb12u1       amd64        libudev shared library
 ii  libunistring2:amd64          1.0-2                  amd64        Unicode string library for C
 ii  libuuid1:amd64               2.38.1-5+deb12u3       amd64        Universally Unique ID library
 ii  libxtables12:amd64           1.8.9-2                amd64        netfilter xtables library
@@ -146,19 +146,19 @@ ii  procps                       2:4.0.2-3              amd64        /proc file 
 ii  readline-common              8.2-1.3                all          GNU readline and history libraries, common files
 ii  sed                          4.9-1                  amd64        GNU stream editor for filtering/transforming text
 ii  sensible-utils               0.0.17+nmu1            all          Utilities for sensible alternative selection
-ii  systemd                      252.33-1~deb12u1       amd64        system and service manager
-ii  systemd-sysv                 252.33-1~deb12u1       amd64        system and service manager - SysV compatibility symlinks
+ii  systemd                      252.36-1~deb12u1       amd64        system and service manager
+ii  systemd-sysv                 252.36-1~deb12u1       amd64        system and service manager - SysV compatibility symlinks
 ii  sysvinit-utils               3.06-4                 amd64        System-V-like utilities
 ii  tar                          1.34+dfsg-1.2+deb12u1  amd64        GNU version of the tar archiving utility
 ii  tasksel                      3.73                   all          tool for selecting tasks for installation on Debian systems
 ii  tasksel-data                 3.73                   all          official tasks used for installation of Debian systems
-ii  tzdata                       2024b-0+deb12u1        all          time zone and daylight-saving time data
-ii  udev                         252.33-1~deb12u1       amd64        /dev/ and hotplug management daemon
+ii  tzdata                       2025a-0+deb12u1        all          time zone and daylight-saving time data
+ii  udev                         252.36-1~deb12u1       amd64        /dev/ and hotplug management daemon
 ii  usr-is-merged                37~deb12u1             all          Transitional package to assert a merged-/usr system
 ii  util-linux                   2.38.1-5+deb12u3       amd64        miscellaneous system utilities
 ii  util-linux-extra             2.38.1-5+deb12u3       amd64        interactive login tools
-ii  vim-common                   2:9.0.1378-2           all          Vi IMproved - Common files
-ii  vim-tiny                     2:9.0.1378-2           amd64        Vi IMproved - enhanced vi editor - compact version
+ii  vim-common                   2:9.0.1378-2+deb12u2   all          Vi IMproved - Common files
+ii  vim-tiny                     2:9.0.1378-2+deb12u2   amd64        Vi IMproved - enhanced vi editor - compact version
 ii  whiptail                     0.52.23-1+b1           amd64        Displays user-friendly dialog boxes from shell scripts
 ii  zlib1g:amd64                 1:1.2.13.dfsg-1        amd64        compression library - runtime
 total 0
@@ -231,7 +231,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 1128 kB in 0s (31.6 MB/s)
+Fetched 1128 kB in 0s (40.3 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8733 files and directories currently installed.)
 Preparing to unpack .../0-libdbus-1-3_1.14.10-1~deb12u1_amd64.deb ...
@@ -266,7 +266,7 @@ Setting up dbus-bin (1.14.10-1~deb12u1) ...
 Setting up dbus-daemon (1.14.10-1~deb12u1) ...
 Setting up dbus (1.14.10-1~deb12u1) ...
 Running in chroot, ignoring request.
-Processing triggers for libc-bin (2.36-9+deb12u9) ...
+Processing triggers for libc-bin (2.36-9+deb12u10) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -286,7 +286,7 @@ The following NEW packages will be installed:
 0 upgraded, 11 newly installed, 0 to remove and 15 not upgraded.
 Need to get 106 MB of archives.
 After this operation, 111 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 rsync amd64 3.2.7-1 [417 kB]
+Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 rsync amd64 3.2.7-1+deb12u2 [419 kB]
 Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 busybox amd64 1:1.35.0-4+b3 [452 kB]
 Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libklibc amd64 2.0.12-1 [44.2 kB]
 Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 klibc-utils amd64 2.0.12-1 [94.9 kB]
@@ -308,11 +308,11 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 106 MB in 1s (103 MB/s)
+Fetched 106 MB in 1s (87.0 MB/s)
 Selecting previously unselected package rsync.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8980 files and directories currently installed.)
-Preparing to unpack .../00-rsync_3.2.7-1_amd64.deb ...
-Unpacking rsync (3.2.7-1) ...
+Preparing to unpack .../00-rsync_3.2.7-1+deb12u2_amd64.deb ...
+Unpacking rsync (3.2.7-1+deb12u2) ...
 Selecting previously unselected package busybox.
 Preparing to unpack .../01-busybox_1%3a1.35.0-4+b3_amd64.deb ...
 Unpacking busybox (1:1.35.0-4+b3) ...
@@ -351,7 +351,7 @@ Setting up busybox (1:1.35.0-4+b3) ...
 Setting up libklibc:amd64 (2.0.12-1) ...
 Setting up klibc-utils (2.0.12-1) ...
 No diversion 'diversion of /usr/share/initramfs-tools/hooks/klibc to /usr/share/initramfs-tools/hooks/klibc^i-t by klibc-utils', none removed.
-Setting up rsync (3.2.7-1) ...
+Setting up rsync (3.2.7-1+deb12u2) ...
 Running in chroot, ignoring request.
 Setting up initramfs-tools-core (0.142+deb12u1) ...
 Setting up initramfs-tools (0.142+deb12u1) ...
@@ -438,6 +438,7 @@ live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 './cld/doc/apt-get-help.txt' -> '/usr/local/cld/doc/apt-get-help.txt'
 './cld/doc/systemd-help.txt' -> '/usr/local/cld/doc/systemd-help.txt'
 './cld/doc/shuf-help.txt' -> '/usr/local/cld/doc/shuf-help.txt'
+'./cld/doc/sudo-help.txt' -> '/usr/local/cld/doc/sudo-help.txt'
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
@@ -447,37 +448,37 @@ ii  linux-image-6.12.12+bpo-amd64          6.12.12-1~bpo12+1 amd64        Linux 
 un  linux-image-6.12.12+bpo-amd64-unsigned <none>            <none>       (no description available)
 ii  linux-image-amd64                      6.12.12-1~bpo12+1 amd64        Linux for 64-bit PCs (meta-package)
 un  linux-image-generic                    <none>            <none>       (no description available)
-total 46308
+total 46300
 -rw-r--r-- 1 root root       83 Feb 23 18:00 System.map-6.12.12+bpo-amd64
 -rw-r--r-- 1 root root   280776 Feb 23 18:00 config-6.12.12+bpo-amd64
--rw-r--r-- 1 root root 37175545 Mar  4 14:22 initrd.img-6.12.12+bpo-amd64
+-rw-r--r-- 1 root root 37170488 Mar 24 16:42 initrd.img-6.12.12+bpo-amd64
 -rw-r--r-- 1 root root  9951168 Feb 23 18:00 vmlinuz-6.12.12+bpo-amd64
 e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.12.12+bpo-amd64
 31d921d71a2135a951bc651a4599e3f1  /boot/config-6.12.12+bpo-amd64
-063731966c17c41f903a1197cdc3d1df  /boot/initrd.img-6.12.12+bpo-amd64
+32708e58c55482e881cdf6fd83b8f34c  /boot/initrd.img-6.12.12+bpo-amd64
 5baa85bbc6d9e978d0d3862c1034d91a  /boot/vmlinuz-6.12.12+bpo-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Mar  4 14:21 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Mar  4 14:22 boot
-drwxr-xr-x  18 root root 3940 Mar  4 13:15 dev
-drwxr-xr-x  49 root root 4096 Mar  4 14:22 etc
-drwxr-xr-x   2 root root 4096 Dec 31 10:25 home
-lrwxrwxrwx   1 root root   33 Mar  4 14:22 initrd.img -> boot/initrd.img-6.12.12+bpo-amd64
-lrwxrwxrwx   1 root root    7 Mar  4 14:21 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Mar  4 14:21 lib64 -> usr/lib64
-drwxr-xr-x   2 root root 4096 Mar  4 14:21 media
-drwxr-xr-x   2 root root 4096 Mar  4 14:21 mnt
-drwxr-xr-x   2 root root 4096 Mar  4 14:21 opt
-dr-xr-xr-x 390 root root    0 Mar  4 14:21 proc
-drwx------   4 root root 4096 Mar  4 14:21 root
-drwxr-xr-x   8 root root 4096 Mar  4 14:21 run
-lrwxrwxrwx   1 root root    8 Mar  4 14:21 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Mar  4 14:21 srv
-dr-xr-xr-x  13 root root    0 Mar  4 13:15 sys
-drwxrwxrwt   2 root root 4096 Mar  4 14:21 tmp
-drwxr-xr-x  12 root root 4096 Mar  4 14:21 usr
-drwxr-xr-x  11 root root 4096 Mar  4 14:21 var
-lrwxrwxrwx   1 root root   30 Mar  4 14:22 vmlinuz -> boot/vmlinuz-6.12.12+bpo-amd64
+lrwxrwxrwx   1 root root    7 Mar 24 16:40 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Mar 24 16:42 boot
+drwxr-xr-x  18 root root 3940 Mar 24 16:20 dev
+drwxr-xr-x  49 root root 4096 Mar 24 16:42 etc
+drwxr-xr-x   2 root root 4096 Mar  7 17:30 home
+lrwxrwxrwx   1 root root   33 Mar 24 16:41 initrd.img -> boot/initrd.img-6.12.12+bpo-amd64
+lrwxrwxrwx   1 root root    7 Mar 24 16:40 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Mar 24 16:40 lib64 -> usr/lib64
+drwxr-xr-x   2 root root 4096 Mar 24 16:40 media
+drwxr-xr-x   2 root root 4096 Mar 24 16:40 mnt
+drwxr-xr-x   2 root root 4096 Mar 24 16:40 opt
+dr-xr-xr-x 428 root root    0 Mar 24 16:41 proc
+drwx------   4 root root 4096 Mar 24 16:41 root
+drwxr-xr-x   8 root root 4096 Mar 24 16:41 run
+lrwxrwxrwx   1 root root    8 Mar 24 16:40 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Mar 24 16:40 srv
+dr-xr-xr-x  13 root root    0 Mar 24 16:19 sys
+drwxrwxrwt   2 root root 4096 Mar 24 16:41 tmp
+drwxr-xr-x  12 root root 4096 Mar 24 16:40 usr
+drwxr-xr-x  11 root root 4096 Mar 24 16:40 var
+lrwxrwxrwx   1 root root   30 Mar 24 16:41 vmlinuz -> boot/vmlinuz-6.12.12+bpo-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-6.12.12+bpo-amd64.
-CLDS: * Disk size = 956672K. Space Used = 268960K. Runtime = 00:00:01:07.
+CLDS: * Disk size = 956772K. Space Used = 268944K. Runtime = 00:00:01:02.

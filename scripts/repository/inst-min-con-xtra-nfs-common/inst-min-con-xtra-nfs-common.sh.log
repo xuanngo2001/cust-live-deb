@@ -1,0 +1,61 @@
+CLDS:>>>>>>>>> Running inst-min-con-xtra-nfs-common.sh ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libfuse3-3 libntfs-3g89
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  keyutils libevent-core-2.1-7 libnfsidmap1 rpcbind
+Suggested packages:
+  open-iscsi watchdog
+The following NEW packages will be installed:
+  keyutils libevent-core-2.1-7 libnfsidmap1 nfs-common rpcbind
+0 upgraded, 5 newly installed, 0 to remove and 15 not upgraded.
+Need to get 548 kB of archives.
+After this operation, 2,056 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libevent-core-2.1-7 amd64 2.1.12-stable-8 [131 kB]
+Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libnfsidmap1 amd64 1:2.6.2-4+deb12u1 [54.9 kB]
+Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 rpcbind amd64 1.2.6-6+b1 [48.3 kB]
+Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 keyutils amd64 1.6.3-2 [54.5 kB]
+Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 nfs-common amd64 1:2.6.2-4+deb12u1 [260 kB]
+Fetched 548 kB in 0s (13.7 MB/s)
+Selecting previously unselected package libevent-core-2.1-7:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 89756 files and directories currently installed.)
+Preparing to unpack .../libevent-core-2.1-7_2.1.12-stable-8_amd64.deb ...
+Unpacking libevent-core-2.1-7:amd64 (2.1.12-stable-8) ...
+Selecting previously unselected package libnfsidmap1:amd64.
+Preparing to unpack .../libnfsidmap1_1%3a2.6.2-4+deb12u1_amd64.deb ...
+Unpacking libnfsidmap1:amd64 (1:2.6.2-4+deb12u1) ...
+Selecting previously unselected package rpcbind.
+Preparing to unpack .../rpcbind_1.2.6-6+b1_amd64.deb ...
+Unpacking rpcbind (1.2.6-6+b1) ...
+Selecting previously unselected package keyutils.
+Preparing to unpack .../keyutils_1.6.3-2_amd64.deb ...
+Unpacking keyutils (1.6.3-2) ...
+Selecting previously unselected package nfs-common.
+Preparing to unpack .../nfs-common_1%3a2.6.2-4+deb12u1_amd64.deb ...
+Unpacking nfs-common (1:2.6.2-4+deb12u1) ...
+Setting up libnfsidmap1:amd64 (1:2.6.2-4+deb12u1) ...
+Setting up rpcbind (1.2.6-6+b1) ...
+Running in chroot, ignoring request.
+invoke-rc.d: policy-rc.d denied execution of start.
+Created symlink /etc/systemd/system/multi-user.target.wants/rpcbind.service → /lib/systemd/system/rpcbind.service.
+Created symlink /etc/systemd/system/sockets.target.wants/rpcbind.socket → /lib/systemd/system/rpcbind.socket.
+Setting up libevent-core-2.1-7:amd64 (2.1.12-stable-8) ...
+Setting up keyutils (1.6.3-2) ...
+Setting up nfs-common (1:2.6.2-4+deb12u1) ...
+
+Creating config file /etc/idmapd.conf with new version
+
+Creating config file /etc/nfs.conf with new version
+Adding system user `statd' (UID 104) ...
+Adding new user `statd' (UID 104) with group `nogroup' ...
+Not creating home directory `/var/lib/nfs'.
+Running in chroot, ignoring request.
+invoke-rc.d: policy-rc.d denied execution of start.
+Created symlink /etc/systemd/system/multi-user.target.wants/nfs-client.target → /lib/systemd/system/nfs-client.target.
+Created symlink /etc/systemd/system/remote-fs.target.wants/nfs-client.target → /lib/systemd/system/nfs-client.target.
+Processing triggers for libc-bin (2.36-9+deb12u10) ...
+CLDS: * Install nfs-common.
+CLDS: * Disk size = 4468232K. Space Used = 2920K. Runtime = 00:00:00:05.
