@@ -28,4 +28,8 @@
 #
     head -1 test.csv | awk '{split($0,f,","); printf "create table test (%s INT, %s VARCHAR(50));",f[1],f[2]}'
 
+# Print commands to install wanted npm version(not latest).
+    npm outdated | tail +2 | awk '{printf "npm install %s@%s\n", $1,$3}'
+
+
 
