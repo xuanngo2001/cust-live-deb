@@ -105,7 +105,8 @@
     # Multiple lines / heredoc => see cat
 
 # String expansion / single quote
-    numb=456; echo "'${numb}'"
+    numb=456; echo "'${numb}'"  # '456'
+    echo "456" | xargs -n1 bash -c ' echo "$0" '  # 456
 
 # Random: https://tldp.org/LDP/abs/html/randomvar.html
     $RANDOM: pseudorandom integer in the range 0 - 32767

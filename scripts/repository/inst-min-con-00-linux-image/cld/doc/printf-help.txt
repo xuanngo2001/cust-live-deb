@@ -10,6 +10,8 @@
     printf "%10s: %'6d\n"    "Gold" "1342"  # Thousand separator.
     printf "%10s: %'-8.2f\n" "Gas"  "3.236" # Limit to 2 decimal digits, rounds up(8.2f). Right alignment(-).
 
+    printf "%-10s AAA\n"     "Oil" # Left align
+
 # Print command examples.
     cmd_eg=$(printf "%s\n%s\n%s\n" \
             "  e.g. $0 <MIRROR>"\

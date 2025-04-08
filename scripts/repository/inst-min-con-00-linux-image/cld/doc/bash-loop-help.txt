@@ -80,6 +80,8 @@
         
 	done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )
 
+# Break statement terminates the current loop.
+
 # Find valid path from array of paths.
     path_dirs=( /media/main/critical/firstboot-work )
     path_dirs+=( /media/critical-02/firstboot-work )
