@@ -1,0 +1,48 @@
+#!/bin/bash
+set -e
+# Description: BASH TEMPLATE
+this_script=$(basename "${0}")
+
+# Error handling.
+    cmd_eg=$(
+        printf "%s\n%s\n%s\n" \
+            "  e.g. ${this_script} <name>" \
+            "  e.g. ${this_script} cld-help.sh" \
+    )
+    if [ "$#" -ne 1 ]; then
+        echo "Error: Incomplete argument. Aborted!"
+        echo "${cmd_eg}"
+        exit 1
+    fi
+
+    # Error response from daemon: No such container: my-mysql
+
+# Common function
+    source $HOME/.bashrc
+    function func_dir_get_executing_path()
+    { 
+        local EXECUTING_PATH=$(dirname "$0")              # relative
+        EXECUTING_PATH=$( cd "${EXECUTING_PATH}" && pwd ) # absolutized and normalized
+        if [ -z "${EXECUTING_PATH}" ]; then
+            # error; for some reason, the path is not accessible
+            # to the script (e.g. permissions re-evaled after suid)
+            return 1  # fail
+        fi
+
+        echo "${EXECUTING_PATH}"  
+    }
+    export -f func_dir_get_executing_path
+
+# Get current executing directory
+    CURR_EXEC_DIR=$(func_dir_get_executing_path)
+    echo "${CURR_EXEC_DIR}"
+
+# Use continue to skip an iteration in loop.
+    while IFS='' read -r url_link || [[ -n "${url_link}" ]]; do
+    
+        # Skip url if url length < 3. Prevent processing \r\n.
+        if [ ${#url_link} -lt 3 ]; then
+            continue
+        fi
+        
+    done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )
