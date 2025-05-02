@@ -1,49 +1,49 @@
 # Get current executing directory path. Only use it as shell function. Otherwise, it will not work.
-	function get_executing_path()
-	{
-		local executing_path=$(dirname "$0")              # relative
-		executing_path=$( cd "${executing_path}" && pwd ) # absolutized and normalized
-		if [ -z "${executing_path}" ]; then
-			return 1  # fail
-		fi
-	}
-	export -f get_executing_path
+    function get_executing_path()
+    {
+        local executing_path=$(dirname "$0")              # relative
+        executing_path=$( cd "${executing_path}" && pwd ) # absolutized and normalized
+        if [ -z "${executing_path}" ]; then
+            return 1  # fail
+        fi
+    }
+    export -f get_executing_path
 
 # Filesize.
-	stat -c %s file.txt
-	$ stat -c '%s' file.txt | numfmt --to=si
-	311K
-	$ stat -c '%s' file.txt | numfmt --to=iec
-	304K
-	$ stat -c '%s' file.txt | numfmt --to=iec-i
-	304Ki
-	$ stat -c '%s' file.txt | numfmt --to=si --suffix=B
-	311KB
-	  
+    stat -c %s file.txt
+    $ stat -c '%s' file.txt | numfmt --to=si
+    311K
+    $ stat -c '%s' file.txt | numfmt --to=iec
+    304K
+    $ stat -c '%s' file.txt | numfmt --to=iec-i
+    304Ki
+    $ stat -c '%s' file.txt | numfmt --to=si --suffix=B
+    311KB
+      
 # dirname: Always double quotes. Otherwise, issue with path with spaces.
-	echo "$(dirname "${line_with_spaces}")"
+    echo "$(dirname "${line_with_spaces}")"
 
 # Increment variable in the same script.
-	sata_port=0
-	sata_port=$((sata_port+1))
+    sata_port=0
+    sata_port=$((sata_port+1))
 
 # Increment variable inside loop.
-	let index=index+1
+    let index=index+1
 
 # Redirections.
-	# Redirect stdout to file:
+    # Redirect stdout to file:
         command 1> stdout.log
     # Redirect sterr to file:
         command 2> error.log
         
     # Redirect stdout to one file and stderr to another file:
-		command > out.log 2>error.log
-	# Redirect stderr to stdout (&1), and then redirect stdout to a file:
-		command > out.log 2>&1
-	# Redirect both to a file:
-		command &> out.log
-	# Suppress error messages. No file created. No error message displayed on screen
-		command 2>&-
+        command > out.log 2>error.log
+    # Redirect stderr to stdout (&1), and then redirect stdout to a file:
+        command > out.log 2>&1
+    # Redirect both to a file:
+        command &> out.log
+    # Suppress error messages. No file created. No error message displayed on screen
+        command 2>&-
 
     # Combines the STDERR of "time" and your command into time.txt
         { time sleep 1 ; } 2> time.txt
@@ -51,31 +51,31 @@
         { time sleep 1 2> sleep.stderr ; } 2> time.txt
         
 # String manipulation: https://www.gnu.org/software/bash/manual/bash.html#Shell-Parameter-Expansion
-	${parameter/pattern/string} : replace the first occurrence of a pattern.
-	${parameter//pattern/string}: replace all occurrences.
-	
-	${parameter:offset}, ${parameter:offset:length}
-		$ string=01234567890abcdefgh
-		$ echo ${string:7}
-			7890abcdefgh
-		$ echo ${string:7:2}
-			78
-		$ echo ${string:7:-2}
-			7890abcdef
-		$ echo ${string: -7}
-			bcdefgh
-		$ echo ${string: -7:2}
-			bc
-		$ echo ${string: -7:-2}
-			bcdef
+    ${parameter/pattern/string} : replace the first occurrence of a pattern.
+    ${parameter//pattern/string}: replace all occurrences.
+    
+    ${parameter:offset}, ${parameter:offset:length}
+        $ string=01234567890abcdefgh
+        $ echo ${string:7}
+            7890abcdefgh
+        $ echo ${string:7:2}
+            78
+        $ echo ${string:7:-2}
+            7890abcdef
+        $ echo ${string: -7}
+            bcdefgh
+        $ echo ${string: -7:2}
+            bc
+        $ echo ${string: -7:-2}
+            bcdef
 
 # Arguments: Index starts from 1. http://wiki.bash-hackers.org/scripting/posparams
-	total_args="$#"
-	last_arg="${!total_args}"
-	
-	$*      All arguments, except $0
-	$@      All arguments, except $0. Good for wrapper to pass all arguments.
-	$#      Total number of arguments, not counting $0
+    total_args="$#"
+    last_arg="${!total_args}"
+    
+    $*      All arguments, except $0
+    $@      All arguments, except $0. Good for wrapper to pass all arguments.
+    $#      Total number of arguments, not counting $0
     ${@:2}  Skip 1st argument and return remaining arguments.
 
 # Sourcing will not be available outside of (...).
@@ -92,6 +92,7 @@
 
 # Get Random number from 0 through 32767
     echo $RANDOM
+    echo ${RANDOM:0:1}  # 1 random digit
     
 # Array
     myArray=(b c d)
@@ -116,25 +117,3 @@
 
     echo $(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-12}) # l2-m7Vup3-VT
     echo $(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)        # 2HOw1H9DIiSO
-
-# BASH TEMPLATE
-    #!/bin/bash
-    set -e
-    # Description: Open script with scite
-    #   Note: from ../inst-min-con-cld-bin/cld/bin
-    this_script=$(basename "${0}")
-
-    # Error handling.
-        cmd_eg=$(
-            printf "%s\n%s\n%s\n" \
-                "  e.g. ${this_script} <name>" \
-                "  e.g. ${this_script} cld-help.sh" \
-        )
-        if [ "$#" -ne 1 ]; then
-            echo "Error: Incomplete argument. Aborted!"
-            echo "${cmd_eg}"
-            exit 1
-        fi
-
-        # Error response from daemon: No such container: my-mysql
-

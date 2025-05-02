@@ -73,4 +73,5 @@
 
 # Remove existing job using cronjob_id and replace with new ones.
     (crontab -l | grep -vF "${cronjob_id}" || true; cat job.cron | grep -v ^#) | crontab -
+    crontab -l | grep -vF '/cieinplay-web/' | crontab -
 

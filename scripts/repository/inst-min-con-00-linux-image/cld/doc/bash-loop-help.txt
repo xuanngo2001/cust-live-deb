@@ -1,17 +1,17 @@
 # While loop.
     counter=0
-	while IFS='' read -r line || [[ -n "${line}" ]]; do
-		echo "Do something ${line}"
+    while IFS='' read -r line || [[ -n "${line}" ]]; do
+        echo "Do something ${line}"
         let counter+=1
-	done < <( cat somefile.txt | grep -v '^#' | mawk NF )
+    done < <( cat somefile.txt | grep -v '^#' | mawk NF )
     echo ${counter}
     
 # Loop through array elements.
-	animalNames=( cat dog fish )
-	animalNames+=( bird )
-	for animal in "${animalNames[@]}"; do
-		echo "********  ${animal}  ********"
-	done
+    animalNames=( cat dog fish )
+    animalNames+=( bird )
+    for animal in "${animalNames[@]}"; do
+        echo "********  ${animal}  ********"
+    done
 
 # Read multiple arrays using index.
     array=( "Vietnam" "Germany" "Argentina" )
@@ -35,28 +35,28 @@
     done
 
 # Loop through ARGUMENTs starting from the 2nd ARGUMENT.
-	for arg in "${@:2}"; do # Skip the first ARGUMENT.
-		echo "${arg}"
-	done
+    for arg in "${@:2}"; do # Skip the first ARGUMENT.
+        echo "${arg}"
+    done
 
 # Loop through ARRAY starting from the 2nd element.
-	for elem in "${myArray[@]:1}"; do # Skip the first element.
-		echo "==>${elem}"
-	done
+    for elem in "${myArray[@]:1}"; do # Skip the first element.
+        echo "==>${elem}"
+    done
     
 # Loop from specific index and using counter.
-	MAX=5
-	position=11
-	for ((i=0; i < MAX ; i++)); do
-		echo "i=$i , position=$position"
-		let position+=1 # Same as 'i=i+1
-	done
+    MAX=5
+    position=11
+    for ((i=0; i < MAX ; i++)); do
+        echo "i=$i , position=$position"
+        let position+=1 # Same as 'i=i+1
+    done
     echo "Final position=${position}"
 
 # Loop through movie files
-	for movie in *.{mp4,mkv,avi,rmvb}; do
-		echo "${movie}" 
-	done
+    for movie in *.{mp4,mkv,avi,rmvb}; do
+        echo "${movie}" 
+    done
 
 # Loop through alphabet.
     for x in {a..z}
@@ -71,14 +71,14 @@
     done
 
 # Use continue to skip an iteration in loop.
-	while IFS='' read -r url_link || [[ -n "${url_link}" ]]; do
-	
-	    # Skip url if url length < 3. Prevent processing \r\n.
+    while IFS='' read -r url_link || [[ -n "${url_link}" ]]; do
+    
+        # Skip url if url length < 3. Prevent processing \r\n.
         if [ ${#url_link} -lt 3 ]; then
             continue
         fi
         
-	done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )
+    done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )
 
 # Break statement terminates the current loop.
 
@@ -94,8 +94,8 @@
         fi
     done
 
-	if [ -z "${path_dir_found}" ]; then
-	    echo "ERROR: destination firstboot directory not found. Aborted!"
-	    exit 1;
-	fi
-	echo "${path_dir_found} found!"
+    if [ -z "${path_dir_found}" ]; then
+        echo "ERROR: destination firstboot directory not found. Aborted!"
+        exit 1;
+    fi
+    echo "${path_dir_found} found!"
