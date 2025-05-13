@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-nfs-kernel-server.sh ...
   * After this operation, 626 kB of additional disk space will be used.
   * Install nfs-kernel-server.
-  * Disk size = 4469196K. Space Used = 884K. Runtime = 00:00:00:03.
+  * Disk size = 4386660K. Space Used = 880K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 nfs-kernel-server

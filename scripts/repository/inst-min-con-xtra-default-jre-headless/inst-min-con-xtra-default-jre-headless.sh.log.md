@@ -3,7 +3,7 @@
   * Install openjdk version "17.0.14" 2025-01-21.
   * To install JAVA binary: https://wiki.debian.org/JavaPackage.
   * JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64/bin/java".
-  * Disk size = 2644724K. Space Used = 253496K. Runtime = 00:00:00:07.
+  * Disk size = 2712192K. Space Used = 253500K. Runtime = 00:00:00:06.
   * The following NEW packages will be installed:
   ```bash
 ca-certificates-java default-jre-headless fontconfig-config fonts-dejavu-core java-common
