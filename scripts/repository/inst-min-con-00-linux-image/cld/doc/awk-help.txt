@@ -1,6 +1,9 @@
 # Remove emplty lines.
     m/awk NF
 
+# Print 3rd column, docker image ID.
+    docker image ls | awk '{printf "%s\n", $3}'
+
 # Set field separator/delimiter.
     echo "abc__123_zzz" | awk -F  "__" '{print $1 " => " $0}'  # Single-quote for {}
 

@@ -48,4 +48,13 @@
 # If condition with grep.
     if grep -iq 'stop' "file.state"; then
         echo "stop found in file.state."
-    fi    
+    fi
+
+# Character class: e.g. Everything but ;
+    echo "1232; ii;c" | grep "^[^;]*"       # 1232 is found.
+    # You can specify a character class, by enclosing a list of characters in [] , 
+    #   which will match any character from the list. If the first character after the "[" is "^", 
+    #   the class matches any character not in the list.
+
+# Non-greedy: Perl lazy operator ?: Match first occurrence
+    echo "1232; ii;c" | grep -P "^(.*?);"       # 1232 is found.
