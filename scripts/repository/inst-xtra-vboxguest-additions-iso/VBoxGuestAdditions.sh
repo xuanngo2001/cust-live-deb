@@ -11,7 +11,8 @@ URL=http://download.virtualbox.org/virtualbox/7.0.4/VBoxGuestAdditions_7.0.4.iso
 #~ URL=http://download.virtualbox.org/virtualbox/7.0.12/VBoxGuestAdditions_7.0.12.iso  # BAD: Boot can´t open Window manager.
 URL=http://download.virtualbox.org/virtualbox/7.1.0/VBoxGuestAdditions_7.1.0.iso  # OK
 URL=http://download.virtualbox.org/virtualbox/7.1.4/VBoxGuestAdditions_7.1.4.iso  # OK but error with linux-headers-6.12.9+bpo
-URL=http://download.virtualbox.org/virtualbox/7.1.6/VBoxGuestAdditions_7.1.6.iso  # ?
+URL=http://download.virtualbox.org/virtualbox/7.1.6/VBoxGuestAdditions_7.1.6.iso  # OK
+URL=http://download.virtualbox.org/virtualbox/7.1.8/VBoxGuestAdditions_7.1.8.iso  # OK
 
 
 # Download ISO if not already exists.
