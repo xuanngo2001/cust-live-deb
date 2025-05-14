@@ -20,3 +20,6 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Log
     echo "${GV_LOG} * Install google-cloud-cli."
+
+# Display version
+    gcloud version | sed "s/^/${GV_LOG} * /"
