@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-nfs-common.sh ...
   * After this operation, 2,056 kB of additional disk space will be used.
   * Install nfs-common.
-  * Disk size = 4385796K. Space Used = 2908K. Runtime = 00:00:00:04.
+  * Disk size = 4387228K. Space Used = 2908K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 keyutils libevent-core-2.1-7 libnfsidmap1 nfs-common rpcbind
