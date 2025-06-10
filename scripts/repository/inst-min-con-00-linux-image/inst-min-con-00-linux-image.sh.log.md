@@ -2,12 +2,12 @@
   * After this operation, 3138 kB of additional disk space will be used.
   * After this operation, 113 MB of additional disk space will be used.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
-  * Installed Linux image: linux-image-6.12.22+bpo-amd64.
-  * Disk size = 1023088K. Space Used = 273936K. Runtime = 00:00:01:33.
+  * Installed Linux image: linux-image-6.12.27+bpo-amd64.
+  * Disk size = 1023496K. Space Used = 274280K. Runtime = 00:00:01:07.
   * The following NEW packages will be installed:
   ```bash
 busybox dbus dbus-bin dbus-daemon dbus-session-bus-common
 dbus-system-bus-common dialog initramfs-tools initramfs-tools-core klibc-utils
-libdbus-1-3 libexpat1 libklibc linux-base linux-image-6.12.22+bpo-amd64
+libdbus-1-3 libexpat1 libklibc linux-base linux-image-6.12.27+bpo-amd64
 linux-image-amd64 live-boot live-boot-initramfs-tools rsync
   ```
