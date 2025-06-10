@@ -9,7 +9,7 @@ or been moved out of Incoming.
 The following information may help to resolve the situation:
 
 The following packages have unmet dependencies:
- linux-kbuild-6.12.22+bpo : Depends: pahole but it is not installable
+ linux-kbuild-6.12.27+bpo : Depends: pahole but it is not installable
 E: Unable to correct problems, you have held broken packages.
 Reading package lists...
 Building dependency tree...
@@ -40,9 +40,9 @@ Get:7 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 g++-1
 Get:8 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 g++ amd64 4:12.2.0-3 [1,356 B]
 Get:9 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 build-essential amd64 12.9 [7,704 B]
 Get:10 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 dkms all 3.0.10-8+deb12u1 [48.7 kB]
-Fetched 15.3 MB in 0s (103 MB/s)
+Fetched 15.3 MB in 0s (83.1 MB/s)
 Selecting previously unselected package lsb-release.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 133761 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 133963 files and directories currently installed.)
 Preparing to unpack .../0-lsb-release_12.0-1_all.deb ...
 Unpacking lsb-release (12.0-1) ...
 Selecting previously unselected package libdpkg-perl.
@@ -71,7 +71,7 @@ Preparing to unpack .../8-build-essential_12.9_amd64.deb ...
 Unpacking build-essential (12.9) ...
 Setting up lsb-release (12.0-1) ...
 Selecting previously unselected package dkms.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 135179 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 135381 files and directories currently installed.)
 Preparing to unpack .../dkms_3.0.10-8+deb12u1_all.deb ...
 Unpacking dkms (3.0.10-8+deb12u1) ...
 Setting up libstdc++-12-dev:amd64 (12.2.0-14+deb12u1) ...
@@ -94,12 +94,14 @@ or been moved out of Incoming.
 The following information may help to resolve the situation:
 
 The following packages have unmet dependencies:
- linux-kbuild-6.12.22+bpo : Depends: pahole but it is not installable
+ linux-kbuild-6.12.27+bpo : Depends: pahole but it is not installable
 E: Unable to correct problems, you have held broken packages.
 Verifying archive integrity...     0%    63%  100%   MD5 checksums are OK. All good.
 Uncompressing VirtualBox 7.1.8 Guest Additions for Linux     0%    63%  100%  
 VirtualBox Guest Additions installer
 Running in chroot, ignoring command 'daemon-reload'
+depmod: ERROR: could not open directory /lib/modules/6.12.22+bpo-amd64: No such file or directory
+depmod: FATAL: could not search modules: No such file or directory
 VirtualBox Guest Additions: Starting.
 VirtualBox Guest Additions: Setting up modules
 VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
@@ -118,9 +120,10 @@ VirtualBox Guest Additions: cannot reload kernel modules: one or more module(s)
 is still in use
 VirtualBox Guest Additions: kernel modules and services were not reloaded
 The log file /var/log/vboxadd-setup.log may contain further information.
+modinfo: ERROR: Module vboxguest not found.
 CLDS: * WARNING: Use this script only if backport repository doesn't work.
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
 CLDS: * Delete VBoxGuestAdditions.iso[59948K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 8575160K. Space Used = 30000K. Runtime = 00:00:00:19.
+CLDS: * Disk size = 8623980K. Space Used = 30004K. Runtime = 00:00:00:10.
