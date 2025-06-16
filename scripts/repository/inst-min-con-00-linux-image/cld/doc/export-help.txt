@@ -1,0 +1,3 @@
+# Understanding environment variable: https://stackoverflow.com/questions/10938483/why-cant-i-specify-an-environment-variable-and-echo-it-in-the-same-command-line
+(export SOMEVAR=BBB; python -c "import os; print(os.environ['SOMEVAR'])")
+(SOMEVAR=BBB python -c "import os; print(os.environ['SOMEVAR'])")
