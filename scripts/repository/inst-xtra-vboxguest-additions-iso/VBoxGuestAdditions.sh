@@ -13,7 +13,7 @@ URL=http://download.virtualbox.org/virtualbox/7.1.0/VBoxGuestAdditions_7.1.0.iso
 URL=http://download.virtualbox.org/virtualbox/7.1.4/VBoxGuestAdditions_7.1.4.iso  # OK but error with linux-headers-6.12.9+bpo
 URL=http://download.virtualbox.org/virtualbox/7.1.6/VBoxGuestAdditions_7.1.6.iso  # OK
 URL=http://download.virtualbox.org/virtualbox/7.1.8/VBoxGuestAdditions_7.1.8.iso  # OK
-
+URL=http://download.virtualbox.org/virtualbox/7.1.10/VBoxGuestAdditions_7.1.10.iso
 
 # Download ISO if not already exists.
     vbox_iso="VBoxGuestAdditions.iso"
