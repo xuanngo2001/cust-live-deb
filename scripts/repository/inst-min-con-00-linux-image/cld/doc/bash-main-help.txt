@@ -3,6 +3,11 @@ set -e
 # Description: BASH TEMPLATE
 this_script=$(basename "${0}")
 
+# DEBUG arguments
+for i in $(seq 1 $#); do
+  echo "Argument $i: ${!i}"
+done
+
 # Error handling.
     cmd_eg=$(
         printf "%s\n%s\n%s\n" \
