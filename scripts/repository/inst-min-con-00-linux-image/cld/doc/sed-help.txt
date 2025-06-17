@@ -83,7 +83,8 @@
     echo 'aAbB' | sed 's/a/X/gI'
     
 # Trim spaces.
-    alias trim="sed -e 's/^[[:space:]]*//g' -e 's/[[:space:]]*\$//g'"
+    alias trim="sed -e 's/^[[:space:]]*//'  -e 's/[[:space:]]*$//'"
+    echo " fdafs   bcdsa  fds " | trim
 
 # Print between 2 patterns, 2 lines with ---.
     sed -n '/^---$/,/^---$/p'
