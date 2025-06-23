@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-nginx.sh ...
   * After this operation, 1,696 kB of additional disk space will be used.
   * Install nginx.
-  * Disk size = 4316024K. Space Used = 2488K. Runtime = 00:00:00:02.
+  * Disk size = 4316060K. Space Used = 2480K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 nginx nginx-common

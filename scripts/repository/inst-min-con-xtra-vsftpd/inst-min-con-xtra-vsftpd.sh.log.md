@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-vsftpd.sh ...
   * After this operation, 351 kB of additional disk space will be used.
   * Install vsftpd to have a basic FTP server.
-  * Disk size = 4501968K. Space Used = 664K. Runtime = 00:00:00:03.
+  * Disk size = 4502012K. Space Used = 664K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 vsftpd
