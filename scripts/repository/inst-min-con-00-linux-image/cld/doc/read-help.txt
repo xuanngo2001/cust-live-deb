@@ -22,3 +22,15 @@ EOM
             sed 's/##xn##.*//' | \
             xargs
     done
+
+# Ask question. Prevent accidental delete without backup.
+    cr=`echo $'\n.'`
+    cr=${cr%.}
+    while true; do
+        read -p "Are you sure to overwrite cron/ on other projects?${cr}$(cat "${this_script}.txt.sh" | grep -v '^#')${cr}" yn
+        case $yn in
+            [Yy]* ) break;;
+            [Nn]* ) exit;;
+            * ) echo "Please answer yes or no.";;
+        esac
+    done

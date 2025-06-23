@@ -58,3 +58,7 @@
 
 # Non-greedy: Perl lazy operator ?: Match first occurrence
     echo "1232; ii;c" | grep -P "^(.*?);"       # 1232 is found.
+
+# Grep and check greater than date time: https://stackoverflow.com/a/22565740
+    utcStartTime=$(date -u +"%Y-%m-%dT%H:%M:%S")
+    cat log.log | grep "${elapsedPattern}"  | awk "\$0 > \"${utcStartTime}\""

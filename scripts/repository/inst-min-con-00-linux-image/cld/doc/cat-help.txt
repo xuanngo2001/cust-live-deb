@@ -47,6 +47,8 @@
 # Heredoc into a variable, see read.
 
 # Heredoc assigned to a variable, FRON_MATTER.
+title="Example"
+date_iso=$(date)
 FRON_MATTER=$(
 cat << EOF
 +++
@@ -56,6 +58,7 @@ draft = false
 +++
 EOF
 )
+echo "${FRON_MATTER}"
 
 # Remove duplicate empty lines
     cat -s a.txt
