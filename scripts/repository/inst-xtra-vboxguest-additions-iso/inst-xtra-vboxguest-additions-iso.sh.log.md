@@ -7,11 +7,11 @@
   * Assumed packages installed: bzip2 & Xserver installed.
   * VirtualBox guest additions installed: version: 7.1.10 r169112.
   * Delete VBoxGuestAdditions.iso[59944K]. Space used could be negative due to this deletion.
-  * Disk size = 8636100K. Space Used = 153232K. Runtime = 00:00:01:42.
+  * Disk size = 8613188K. Space Used = 153348K. Runtime = 00:00:01:10.
   * The following NEW packages will be installed:
   ```bash
 build-essential dkms dpkg-dev g++ g++-12
-libc6-dev* libdpkg-perl libstdc++-12-dev linux-headers-6.12.30+bpo-amd64 linux-headers-6.12.30+bpo-common
-linux-headers-amd64 linux-kbuild-6.12.30+bpo lsb-release make pahole
+libc6-dev* libdpkg-perl libstdc++-12-dev linux-headers-6.12.32+bpo-amd64 linux-headers-6.12.32+bpo-common
+linux-headers-amd64 linux-kbuild-6.12.32+bpo lsb-release make pahole
 patch
   ```
