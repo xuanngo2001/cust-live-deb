@@ -124,6 +124,28 @@ All scripts put in the directories below will be executed in the following order
     /usr/local/cld/app/jwm/bootstrap/
     /usr/local/cld/systemd/runlevel/before-shutdown/
        
+# Add alias
+
+## From installation script itself
+
+    On boot all *.sh are sourced.(./inst-min-con-cld-bashrc/cld/systemd/runlevel/after-boot/bashrc.sh)
+    Add bashrc-alias-*.sh in ./inst-std-multimedia-mpv/cld/bashrc.d/
+    In installation script(inst-std-multimedia-mpv.sh), add
+        # Add to CLD/
+        yes | cp -av ./cld  /usr/local
+
+## From firstboot
+    See ./scripts/mpv-00-mpv/
+
+    Add your new bashrc-alias-mpv.sh in ./mpv-00-mpv/cld/bashrc.d/
+    Add in deploy-mpv.sh, 
+        # Add to CLD/
+        yes | cp -av ./cld  /usr/local
+
+        # Source alias
+            source /usr/local/cld/bashrc.d/bashrc-alias-mpv.sh
+
+
 
 # How to upgrade kernel
 
