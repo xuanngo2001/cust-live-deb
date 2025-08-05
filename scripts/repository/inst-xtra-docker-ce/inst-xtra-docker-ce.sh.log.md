@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-xtra-docker-ce.sh ...
-  * After this operation, 416 MB of additional disk space will be used.
+  * After this operation, 418 MB of additional disk space will be used.
   * Install docker-ce: https://docs.docker.com/engine/install/debian
-  * Disk size = 8120496K. Space Used = 512780K. Runtime = 00:00:00:16.
+  * Disk size = 8127540K. Space Used = 514596K. Runtime = 00:00:00:17.
   * The following NEW packages will be installed:
   ```bash
 ca-certificates* containerd.io curl* docker-buildx-plugin docker-ce
