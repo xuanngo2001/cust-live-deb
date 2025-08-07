@@ -34,9 +34,8 @@ fi
 # Insert Google Chrome in Internet menu.
 sed -i "/Internet\">/ r jwmrc-menus-inet-google-chrome.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
-# Add alias.
-yes | cp -av ./cld/ /usr/local/
-
+# Add to CLD/
+	yes | cp -av ./cld  /usr/local
 
 # Run Google Chrome as root.
 ./run-google-chrome-as-root.sh
