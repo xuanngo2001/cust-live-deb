@@ -37,12 +37,12 @@ Get:14 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libn
 Get:15 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libnss3 amd64 2:3.87.1-1+deb12u1 [1,331 kB]
 Get:16 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libgraphite2-3 amd64 1.3.14-1 [81.2 kB]
 Get:17 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libharfbuzz0b amd64 6.0.0+dfsg-3 [1,945 kB]
-Get:18 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 openjdk-17-jre-headless amd64 17.0.15+6-1~deb12u1 [43.8 MB]
+Get:18 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 openjdk-17-jre-headless amd64 17.0.16+8-1~deb12u1 [43.8 MB]
 Get:19 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 default-jre-headless amd64 2:1.17-74 [2,936 B]
 Preconfiguring packages ...
-Fetched 50.5 MB in 0s (112 MB/s)
+Fetched 50.5 MB in 0s (177 MB/s)
 Selecting previously unselected package ca-certificates-java.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45189 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45949 files and directories currently installed.)
 Preparing to unpack .../00-ca-certificates-java_20230710~deb12u1_all.deb ...
 Unpacking ca-certificates-java (20230710~deb12u1) ...
 Selecting previously unselected package java-common.
@@ -94,8 +94,8 @@ Selecting previously unselected package libharfbuzz0b:amd64.
 Preparing to unpack .../16-libharfbuzz0b_6.0.0+dfsg-3_amd64.deb ...
 Unpacking libharfbuzz0b:amd64 (6.0.0+dfsg-3) ...
 Selecting previously unselected package openjdk-17-jre-headless:amd64.
-Preparing to unpack .../17-openjdk-17-jre-headless_17.0.15+6-1~deb12u1_amd64.deb ...
-Unpacking openjdk-17-jre-headless:amd64 (17.0.15+6-1~deb12u1) ...
+Preparing to unpack .../17-openjdk-17-jre-headless_17.0.16+8-1~deb12u1_amd64.deb ...
+Unpacking openjdk-17-jre-headless:amd64 (17.0.16+8-1~deb12u1) ...
 Selecting previously unselected package default-jre-headless.
 Preparing to unpack .../18-default-jre-headless_2%3a1.17-74_amd64.deb ...
 Unpacking default-jre-headless (2:1.17-74) ...
@@ -116,10 +116,10 @@ Setting up libfreetype6:amd64 (2.12.1+dfsg-5+deb12u4) ...
 Setting up libharfbuzz0b:amd64 (6.0.0+dfsg-3) ...
 Setting up libavahi-client3:amd64 (0.8-10+deb12u1) ...
 Setting up libcups2:amd64 (2.4.2-3+deb12u8) ...
-Processing triggers for libc-bin (2.36-9+deb12u10) ...
+Processing triggers for libc-bin (2.36-9+deb12u13) ...
 Processing triggers for sgml-base (1.31) ...
 Setting up libfontconfig1:amd64 (2.14.1-4) ...
-Setting up openjdk-17-jre-headless:amd64 (17.0.15+6-1~deb12u1) ...
+Setting up openjdk-17-jre-headless:amd64 (17.0.16+8-1~deb12u1) ...
 update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
 update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jpackage to provide /usr/bin/jpackage (jpackage) in auto mode
 update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
@@ -270,9 +270,9 @@ Adding debian:vTrus_Root_CA.pem
 Adding debian:XRamp_Global_CA_Root.pem
 done.
 Setting up default-jre-headless (2:1.17-74) ...
-Processing triggers for libc-bin (2.36-9+deb12u10) ...
+Processing triggers for libc-bin (2.36-9+deb12u13) ...
 './cld/bashrc.d/bashrc-java.sh' -> '/usr/local/cld/bashrc.d/bashrc-java.sh'
-CLDS: * Install openjdk version "17.0.15" 2025-04-15.
+CLDS: * Install openjdk version "17.0.16" 2025-07-15.
 CLDS: * To install JAVA binary: https://wiki.debian.org/JavaPackage.
 CLDS: * JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64/bin/java".
-CLDS: * Disk size = 2596928K. Space Used = 253584K. Runtime = 00:00:00:06.
+CLDS: * Disk size = 2650000K. Space Used = 253616K. Runtime = 00:00:00:03.

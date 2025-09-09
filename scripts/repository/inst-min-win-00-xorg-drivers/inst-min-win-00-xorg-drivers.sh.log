@@ -78,9 +78,9 @@ Get:14 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libx
 Get:15 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libxkbfile1 amd64 1:1.1.0-1 [75.2 kB]
 Get:16 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libxrandr2 amd64 2:1.5.2-2+b1 [39.2 kB]
 Get:17 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 x11-xkb-utils amd64 7.7+7 [165 kB]
-Get:18 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-common all 2:21.1.7-3+deb12u9 [2,383 kB]
+Get:18 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-common all 2:21.1.7-3+deb12u10 [2,383 kB]
 Get:19 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libegl1 amd64 1.6.0-1 [33.7 kB]
-Get:20 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-xorg-core amd64 2:21.1.7-3+deb12u9 [3,720 kB]
+Get:20 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-xorg-core amd64 2:21.1.7-3+deb12u10 [3,721 kB]
 Get:21 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-xorg-video-amdgpu amd64 23.0.0-1 [136 kB]
 Get:22 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-xorg-video-radeon amd64 1:19.1.0-3 [503 kB]
 Get:23 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-xorg-video-ati amd64 1:19.1.0-3 [363 kB]
@@ -90,9 +90,9 @@ Get:26 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xser
 Get:27 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-xorg-video-vmware amd64 1:13.3.0-3.1+b1 [114 kB]
 Get:28 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-xorg-video-all amd64 1:7.7+23 [38.7 kB]
 Preconfiguring packages ...
-Fetched 11.9 MB in 0s (109 MB/s)
+Fetched 11.9 MB in 0s (79.6 MB/s)
 Selecting previously unselected package xkb-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 104765 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 109618 files and directories currently installed.)
 Preparing to unpack .../00-xkb-data_2.35.1-1_all.deb ...
 Unpacking xkb-data (2.35.1-1) ...
 Selecting previously unselected package keyboard-configuration.
@@ -144,14 +144,14 @@ Selecting previously unselected package x11-xkb-utils.
 Preparing to unpack .../16-x11-xkb-utils_7.7+7_amd64.deb ...
 Unpacking x11-xkb-utils (7.7+7) ...
 Selecting previously unselected package xserver-common.
-Preparing to unpack .../17-xserver-common_2%3a21.1.7-3+deb12u9_all.deb ...
-Unpacking xserver-common (2:21.1.7-3+deb12u9) ...
+Preparing to unpack .../17-xserver-common_2%3a21.1.7-3+deb12u10_all.deb ...
+Unpacking xserver-common (2:21.1.7-3+deb12u10) ...
 Selecting previously unselected package libegl1:amd64.
 Preparing to unpack .../18-libegl1_1.6.0-1_amd64.deb ...
 Unpacking libegl1:amd64 (1.6.0-1) ...
 Selecting previously unselected package xserver-xorg-core.
-Preparing to unpack .../19-xserver-xorg-core_2%3a21.1.7-3+deb12u9_amd64.deb ...
-Unpacking xserver-xorg-core (2:21.1.7-3+deb12u9) ...
+Preparing to unpack .../19-xserver-xorg-core_2%3a21.1.7-3+deb12u10_amd64.deb ...
+Unpacking xserver-xorg-core (2:21.1.7-3+deb12u10) ...
 Selecting previously unselected package xserver-xorg-video-amdgpu.
 Preparing to unpack .../20-xserver-xorg-video-amdgpu_23.0.0-1_amd64.deb ...
 Unpacking xserver-xorg-video-amdgpu (23.0.0-1) ...
@@ -194,8 +194,8 @@ Setting up libxfont2:amd64 (1:2.0.6-1) ...
 Setting up libglx0:amd64 (1.6.0-1) ...
 Setting up x11-xkb-utils (7.7+7) ...
 Setting up libgl1:amd64 (1.6.0-1) ...
-Setting up xserver-common (2:21.1.7-3+deb12u9) ...
-Setting up xserver-xorg-core (2:21.1.7-3+deb12u9) ...
+Setting up xserver-common (2:21.1.7-3+deb12u10) ...
+Setting up xserver-xorg-core (2:21.1.7-3+deb12u10) ...
 Setting up xserver-xorg-video-radeon (1:19.1.0-3) ...
 Setting up xserver-xorg-video-fbdev (1:0.5.0-2) ...
 Setting up xserver-xorg-video-vmware (1:13.3.0-3.1+b1) ...
@@ -204,7 +204,7 @@ Setting up xserver-xorg-video-amdgpu (23.0.0-1) ...
 Setting up xserver-xorg-video-nouveau (1:1.0.17-2) ...
 Setting up xserver-xorg-video-ati (1:19.1.0-3) ...
 Setting up xserver-xorg-video-all (1:7.7+23) ...
-Processing triggers for libc-bin (2.36-9+deb12u10) ...
+Processing triggers for libc-bin (2.36-9+deb12u13) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -268,9 +268,9 @@ Get:6 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libxi
 Get:7 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libxss1 amd64 1:1.2.3-1 [17.8 kB]
 Get:8 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libxvmc1 amd64 2:1.0.12-2 [25.6 kB]
 Get:9 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-xorg-video-intel amd64 2:2.99.917+git20210115-1 [1,642 kB]
-Fetched 1,912 kB in 0s (52.4 MB/s)
+Fetched 1,912 kB in 0s (36.4 MB/s)
 Selecting previously unselected package libxcb-dri2-0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105393 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 110246 files and directories currently installed.)
 Preparing to unpack .../0-libxcb-dri2-0_1.15-1_amd64.deb ...
 Unpacking libxcb-dri2-0:amd64 (1.15-1) ...
 Selecting previously unselected package libxcb-util1:amd64.
@@ -306,7 +306,7 @@ Setting up libxcb-dri2-0:amd64 (1.15-1) ...
 Setting up libxss1:amd64 (1:1.2.3-1) ...
 Setting up libxcursor1:amd64 (1:1.2.1-1) ...
 Setting up xserver-xorg-video-intel (2:2.99.917+git20210115-1) ...
-Processing triggers for libc-bin (2.36-9+deb12u10) ...
+Processing triggers for libc-bin (2.36-9+deb12u13) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -316,9 +316,9 @@ The following NEW packages will be installed:
 Need to get 83.7 kB of archives.
 After this operation, 211 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-xorg-video-qxl amd64 0.1.5+git20200331-3 [83.7 kB]
-Fetched 83.7 kB in 0s (4,542 kB/s)
+Fetched 83.7 kB in 0s (2,983 kB/s)
 Selecting previously unselected package xserver-xorg-video-qxl.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105467 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 110320 files and directories currently installed.)
 Preparing to unpack .../xserver-xorg-video-qxl_0.1.5+git20200331-3_amd64.deb ...
 Unpacking xserver-xorg-video-qxl (0.1.5+git20200331-3) ...
 Setting up xserver-xorg-video-qxl (0.1.5+git20200331-3) ...
@@ -331,9 +331,9 @@ The following NEW packages will be installed:
 Need to get 105 kB of archives.
 After this operation, 219 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 xserver-xorg-video-mga amd64 1:2.0.0-1+b1 [105 kB]
-Fetched 105 kB in 0s (0 B/s)
+Fetched 105 kB in 0s (3,247 kB/s)
 Selecting previously unselected package xserver-xorg-video-mga.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105475 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 110328 files and directories currently installed.)
 Preparing to unpack .../xserver-xorg-video-mga_1%3a2.0.0-1+b1_amd64.deb ...
 Unpacking xserver-xorg-video-mga (1:2.0.0-1+b1) ...
 Setting up xserver-xorg-video-mga (1:2.0.0-1+b1) ...
@@ -341,4 +341,4 @@ CLDS: * Install common xorg drivers.
 CLDS: * Install xserver-xorg-video-intel to fix: cat /var/log/Xorg.0.log
 CLDS: * 		Failed to initialize glamor at ScreenInit() time.
 CLDS: * 		Boot from virtualbox is working fine but boot from HP, X server not loaded.
-CLDS: * Disk size = 4889080K. Space Used = 50652K. Runtime = 00:00:00:07.
+CLDS: * Disk size = 4978632K. Space Used = 50656K. Runtime = 00:00:00:06.

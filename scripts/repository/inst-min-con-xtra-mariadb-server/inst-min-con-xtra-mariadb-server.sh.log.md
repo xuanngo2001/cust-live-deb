@@ -2,7 +2,7 @@
   * After this operation, 196 MB of additional disk space will be used.
   * Install mariadb-server.
   * Set root password to [password].
-  * Disk size = 4326148K. Space Used = 324876K. Runtime = 00:00:00:12.
+  * Disk size = 4412332K. Space Used = 324972K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 galera-4 gawk libconfig-inifiles-perl libdbi-perl libmariadb3

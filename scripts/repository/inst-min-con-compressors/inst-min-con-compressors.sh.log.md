@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-con-compressors.sh ...
   * After this operation, 124 kB of additional disk space will be used.
-  * After this operation, 1,398 kB of additional disk space will be used.
+  * After this operation, 1,655 kB of additional disk space will be used.
   * After this operation, 341 kB of additional disk space will be used.
   * After this operation, 631 kB of additional disk space will be used.
   * After this operation, 388 kB of additional disk space will be used.
@@ -14,7 +14,7 @@
   * Install de/compressor: p7zip.
   * Install de/compressor: zpaq.
   * Add universal extractor: extract.sh.
-  * Disk size = 1034436K. Space Used = 11848K. Runtime = 00:00:00:03.
+  * Disk size = 1019660K. Space Used = 12156K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 bzip2 p7zip p7zip-full rar unrar
