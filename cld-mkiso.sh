@@ -123,8 +123,9 @@ xorriso -as mkisofs -r -J -joliet-long -l \
 				-b isolinux/isolinux.bin \
 				-c isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
 				-boot-info-table \
+                -eltorito-alt-boot -e EFI/BOOT/BOOTX64.EFI -no-emul-boot \
 				-o ${iso_filepath} \
-				./binary
+				./binary/secure-boot
 
 md5sum "${iso_filepath}" > "${iso_filepath}.md5"
 

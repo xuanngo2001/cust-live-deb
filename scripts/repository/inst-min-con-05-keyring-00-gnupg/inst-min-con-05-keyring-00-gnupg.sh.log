@@ -33,6 +33,7 @@ Get:12 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gnup
 Get:13 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libsqlite3-0 amd64 3.40.1-2+deb12u2 [839 kB]
 Get:14 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gpg amd64 2.2.40-1.1+deb12u1 [949 kB]
 Get:15 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 pinentry-curses amd64 1.2.1-1 [77.4 kB]
+<<<<<<< HEAD
 Get:16 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gpg-agent amd64 2.2.40-1.1+deb12u1 [694 kB]
 Get:17 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gpg-wks-client amd64 2.2.40-1.1+deb12u1 [540 kB]
 Get:18 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gpg-wks-server amd64 2.2.40-1.1+deb12u1 [531 kB]
@@ -41,6 +42,16 @@ Get:20 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gnup
 Fetched 9,980 kB in 0s (116 MB/s)
 Selecting previously unselected package libpsl5:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17163 files and directories currently installed.)
+=======
+Get:16 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gpg-agent amd64 2.2.40-1.1 [695 kB]
+Get:17 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gpg-wks-client amd64 2.2.40-1.1 [541 kB]
+Get:18 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gpg-wks-server amd64 2.2.40-1.1 [531 kB]
+Get:19 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gpgsm amd64 2.2.40-1.1 [671 kB]
+Get:20 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 gnupg all 2.2.40-1.1 [846 kB]
+Fetched 9,979 kB in 0s (92.8 MB/s)
+Selecting previously unselected package libpsl5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17155 files and directories currently installed.)
+>>>>>>> 6b87cc5ae3c796f143c5b5cb605bdfc0d6f5e364
 Preparing to unpack .../00-libpsl5_0.21.2-1_amd64.deb ...
 Unpacking libpsl5:amd64 (0.21.2-1) ...
 Selecting previously unselected package wget.
@@ -127,4 +138,8 @@ Setting up gpg-wks-client (2.2.40-1.1+deb12u1) ...
 Setting up gnupg (2.2.40-1.1+deb12u1) ...
 Processing triggers for libc-bin (2.36-9+deb12u13) ...
 CLDS: * Install gnupg to manage and create keys.
+<<<<<<< HEAD
 CLDS: * Disk size = 1005792K. Space Used = 25320K. Runtime = 00:00:00:01.
+=======
+CLDS: * Disk size = 1021400K. Space Used = 25316K. Runtime = 00:00:00:03.
+>>>>>>> 6b87cc5ae3c796f143c5b5cb605bdfc0d6f5e364
