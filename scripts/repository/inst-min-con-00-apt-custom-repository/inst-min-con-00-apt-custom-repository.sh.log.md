@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-00-apt-custom-repository.sh ...
-  * Disk size = 632120K. Space Used = 7568K. Runtime = 00:00:00:03.
+  * Disk size = 632136K. Space Used = 7572K. Runtime = 00:00:00:04.
