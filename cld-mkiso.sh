@@ -125,7 +125,7 @@ xorriso -as mkisofs -r -J -joliet-long -l \
 				-boot-info-table \
                 -eltorito-alt-boot -e EFI/BOOT/BOOTX64.EFI -no-emul-boot \
 				-o ${iso_filepath} \
-				./secure-boot
+				./binary/secure-boot
 
 md5sum "${iso_filepath}" > "${iso_filepath}.md5"
 
