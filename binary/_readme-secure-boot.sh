@@ -53,4 +53,4 @@ xorriso -as mkisofs \
 ## AI
    how to create efi.img, set grub.cfg and then create ISO boot on UEFI using xorriso?
 
-https://askubuntu.com/questions/625286/how-to-create-uefi-bootable-iso
+uefi ok: https://askubuntu.com/questions/625286/how-to-create-uefi-bootable-iso
