@@ -7,14 +7,14 @@ https://www.google.com/search?q=create+isolinux+with+secure+boot&gs_lcrp=EgRlZGd
 
 
 # Build /EFI/ folder
-	mkdir -p /tmp/custom_iso/EFI/BOOT
+    mkdir -p /tmp/custom_iso/EFI/BOOT
 
-	# Copy signed shim and MokManager
-	cp /usr/lib/shim/shimx64.efi.signed /tmp/custom_iso/EFI/BOOT/BOOTX64.EFI
-	cp /usr/lib/shim/mmx64.efi /tmp/custom_iso/EFI/BOOT/MokManager.efi
+    # Copy signed shim and MokManager
+    cp /usr/lib/shim/shimx64.efi.signed /tmp/custom_iso/EFI/BOOT/BOOTX64.EFI
+    cp /usr/lib/shim/mmx64.efi /tmp/custom_iso/EFI/BOOT/MokManager.efi
 
-	# Copy signed GRUB executable
-	cp /usr/lib/grub/x86_64-efi-signed/grubx64.efi.signed /tmp/custom_iso/EFI/BOOT/grubx64.efi
+    # Copy signed GRUB executable
+    cp /usr/lib/grub/x86_64-efi-signed/grubx64.efi.signed /tmp/custom_iso/EFI/BOOT/grubx64.efi
 
 
 # Step 4: Create the GRUB configuration file
