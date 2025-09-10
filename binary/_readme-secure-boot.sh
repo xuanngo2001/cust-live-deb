@@ -47,3 +47,10 @@ xorriso -as mkisofs \
    -no-emul-boot -boot-load-size 4 -boot-info-table \
    -eltorito-alt-boot -e EFI/BOOT/BOOTX64.EFI -no-emul-boot \
    ./secure-boot
+
+
+
+## AI
+   how to create efi.img, set grub.cfg and then create ISO boot on UEFI using xorriso?
+
+https://askubuntu.com/questions/625286/how-to-create-uefi-bootable-iso
