@@ -1,0 +1,3 @@
+# Redirect results
+    (time sleep 3s;) &> a.txt
+    (time sleep 3s;) 2>&1 | tee -a b.txt

@@ -1,0 +1,7 @@
+# List available fonts
+    fc-list --format="%{family}:%{style}:%{file}\n"
+
+# Detail about font
+    fc-query /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+    fc-query -b /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+
