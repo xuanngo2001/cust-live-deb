@@ -134,7 +134,7 @@ xorriso -as mkisofs \
     -iso-level 3 \
     -r -V "${APP_ID}" \
     -J -joliet-long \
-    -append_partition 2 0xef boot/grub/efi.img \
+    -append_partition 2 0xef ./binary/efi.img \
     -partition_cyl_align all \
     -o ${iso_filepath} \
     ./binary
