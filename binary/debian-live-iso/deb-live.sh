@@ -20,6 +20,9 @@
 # Use custom grub.cfg
     \cp -v ./config/boot/grub/grub.cfg "$working/boot/grub/"
 
+# Copy live/
+    \cp -av ../live/ "$working"
+
 # Making iso
     xorriso -as mkisofs \
     -r -V 'Debian 9.3.0 amd64 n' \
