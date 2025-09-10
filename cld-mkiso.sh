@@ -116,19 +116,28 @@ APP_ID=cld-${architecture}
 iso_filename="${OUTPUT_NAME}.iso"
 iso_filepath="${iso_output_dir}/${iso_filename}"
 rm -f ./binary/cld*.iso; touch ./binary/"${iso_filename}"
-xorriso -as mkisofs -r -J -joliet-long -l \
-				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
-				-A "${APP_ID}"  \
-				-V "${APP_ID}" \
-				-b isolinux/isolinux.bin \
-				-c isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
-				-boot-info-table \
-                -eltorito-alt-boot \
-                -e boot/grub/efi.img \
-                -no-emul-boot \
-                -isohybrid-gpt-basdat \
-				-o ${iso_filepath} \
-				./binary
+# xorriso -as mkisofs -r -J -joliet-long -l \
+# 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
+# 				-A "${APP_ID}"  \
+# 				-V "${APP_ID}" \
+# 				-b isolinux/isolinux.bin \
+# 				-c isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
+# 				-boot-info-table \
+#                 -eltorito-alt-boot \
+#                 -e boot/grub/efi.img \
+#                 -no-emul-boot \
+#                 -isohybrid-gpt-basdat \
+# 				-o ${iso_filepath} \
+# 				./binary
+
+xorriso -as mkisofs \
+    -iso-level 3 \
+    -r -V "${APP_ID}" \
+    -J -joliet-long \
+    -append_partition 2 0xef boot/grub/efi.img \
+    -partition_cyl_align all \
+    -o ${iso_filepath} \
+    ./binary
 
 md5sum "${iso_filepath}" > "${iso_filepath}.md5"
 

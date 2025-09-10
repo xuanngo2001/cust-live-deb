@@ -54,3 +54,6 @@ xorriso -as mkisofs \
    how to create efi.img, set grub.cfg and then create ISO boot on UEFI using xorriso?
 
 uefi ok: https://askubuntu.com/questions/625286/how-to-create-uefi-bootable-iso
+
+https://askubuntu.com/questions/1110651/how-to-produce-an-iso-image-that-boots-only-on-uefi
+https://wiki.debian.org/RepackBootableISO#amd64_release_5.0.4
