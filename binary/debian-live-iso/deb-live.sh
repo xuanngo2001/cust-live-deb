@@ -33,3 +33,7 @@
     -e boot/grub/efi.img \
     -no-emul-boot -isohybrid-gpt-basdat -isohybrid-apm-hfsplus \
     "$working"
+
+# Unmount the original ISO
+    umount $deb_live_working
+    echo "Unmounted $deb_live_working"
