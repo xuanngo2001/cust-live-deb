@@ -26,7 +26,6 @@ The following NEW packages will be installed:
 0 upgraded, 23 newly installed, 0 to remove and 15 not upgraded.
 Need to get 24.9 MB of archives.
 After this operation, 304 MB of additional disk space will be used.
-<<<<<<< HEAD
 Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 openssl amd64 3.0.17-1~deb12u2 [1,430 kB]
 Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 ca-certificates all 20230311+deb12u1 [155 kB]
 Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libcbor0.8 amd64 0.8.0-2+b1 [27.4 kB]
@@ -51,43 +50,10 @@ Get:21 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 ansi
 Get:22 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 ansible all 7.7.0+dfsg-3+deb12u1 [16.9 MB]
 Get:23 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 sshpass amd64 1.09-1+b1 [13.0 kB]
 Preconfiguring packages ...
-Fetched 24.9 MB in 0s (158 MB/s)
+Fetched 24.9 MB in 0s (106 MB/s)
 Selecting previously unselected package openssl.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22888 files and directories currently installed.)
 Preparing to unpack .../00-openssl_3.0.17-1~deb12u2_amd64.deb ...
-=======
-Get:1 http://localhost/aptly-repo/master_bookworm-updates-main bookworm-updates/main amd64 libssl3 amd64 3.0.17-1~deb12u2 [2,027 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-updates-main bookworm-updates/main amd64 openssl amd64 3.0.17-1~deb12u2 [1,430 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-updates-main bookworm-updates/main amd64 ca-certificates all 20230311+deb12u1 [155 kB]
-Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libcbor0.8 amd64 0.8.0-2+b1 [27.4 kB]
-Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libfido2-1 amd64 1.12.0-2+b1 [77.2 kB]
-Get:6 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 openssh-client amd64 1:10.0p1-7~bpo12+1 [984 kB]
-Get:7 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-cffi-backend amd64 1.15.1-5+b1 [84.6 kB]
-Get:8 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-cryptography amd64 38.0.4-3+deb12u1 [665 kB]
-Get:9 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-markupsafe amd64 2.1.2-1+b1 [13.2 kB]
-Get:10 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-jinja2 all 3.1.2-1+deb12u2 [120 kB]
-Get:11 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-packaging all 23.0-1 [32.5 kB]
-Get:12 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-resolvelib all 0.9.0-2 [27.3 kB]
-Get:13 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libyaml-0-2 amd64 0.2.5-1 [53.6 kB]
-Get:14 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-yaml amd64 6.0-3+b2 [119 kB]
-Get:15 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-lib2to3 all 3.11.2-3 [76.3 kB]
-Get:16 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-distutils all 3.11.2-3 [131 kB]
-Get:17 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-dnspython all 2.3.0-1 [152 kB]
-Get:18 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-pyparsing all 3.0.9-1 [138 kB]
-Get:19 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-httplib2 all 0.20.4-3 [36.0 kB]
-Get:20 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 ieee-data all 20220827.1 [2,029 kB]
-Get:21 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 python3-netaddr all 0.8.0-2 [295 kB]
-Get:22 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 ansible-core all 2.14.18-0+deb12u2 [1,291 kB]
-Get:23 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 ansible all 7.7.0+dfsg-3+deb12u1 [16.9 MB]
-Get:24 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 sshpass amd64 1.09-1+b1 [13.0 kB]
-Preconfiguring packages ...
-Fetched 26.9 MB in 0s (105 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 22874 files and directories currently installed.)
-Preparing to unpack .../00-libssl3_3.0.17-1~deb12u2_amd64.deb ...
-Unpacking libssl3:amd64 (3.0.17-1~deb12u2) over (3.0.16-1~deb12u1) ...
-Selecting previously unselected package openssl.
-Preparing to unpack .../01-openssl_3.0.17-1~deb12u2_amd64.deb ...
->>>>>>> 6b87cc5ae3c796f143c5b5cb605bdfc0d6f5e364
 Unpacking openssl (3.0.17-1~deb12u2) ...
 Selecting previously unselected package ca-certificates.
 Preparing to unpack .../01-ca-certificates_20230311+deb12u1_all.deb ...
@@ -157,10 +123,6 @@ Preparing to unpack .../22-sshpass_1.09-1+b1_amd64.deb ...
 Unpacking sshpass (1.09-1+b1) ...
 Setting up libyaml-0-2:amd64 (0.2.5-1) ...
 Setting up libcbor0.8:amd64 (0.8.0-2+b1) ...
-<<<<<<< HEAD
-=======
-Setting up libssl3:amd64 (3.0.17-1~deb12u2) ...
->>>>>>> 6b87cc5ae3c796f143c5b5cb605bdfc0d6f5e364
 Setting up python3-resolvelib (0.9.0-2) ...
 Setting up python3-yaml (6.0-3+b2) ...
 Setting up python3-markupsafe (2.1.2-1+b1) ...
@@ -199,8 +161,4 @@ python3-cffi-backend set to manually installed.
 0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
 CLDS: * Install ansible.
 CLDS: * sshpass: to allow passing username and password on the fly.
-<<<<<<< HEAD
-CLDS: * Disk size = 2291840K. Space Used = 600072K. Runtime = 00:00:00:22.
-=======
-CLDS: * Disk size = 2299488K. Space Used = 602016K. Runtime = 00:00:00:42.
->>>>>>> 6b87cc5ae3c796f143c5b5cb605bdfc0d6f5e364
+CLDS: * Disk size = 2292044K. Space Used = 600052K. Runtime = 00:00:00:23.

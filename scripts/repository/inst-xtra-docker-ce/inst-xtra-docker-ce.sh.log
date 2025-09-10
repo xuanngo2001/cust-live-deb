@@ -37,21 +37,12 @@ Hit:17 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
 Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
 Get:19 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
 Get:20 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
-<<<<<<< HEAD
 Get:21 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,620 B]
 Get:22 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [23.0 kB]
-Get:23 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [1,815 kB]
-Get:24 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [4,119 kB]
-Get:25 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,210 B]
-Fetched 5,965 kB in 4s (1,419 kB/s)
-=======
-Get:21 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,618 B]
-Get:22 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [22.1 kB]
-Get:23 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,218 B]
-Get:24 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [1,791 kB]
-Get:25 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [4,046 kB]
-Fetched 5,867 kB in 5s (1,099 kB/s)
->>>>>>> 6b87cc5ae3c796f143c5b5cb605bdfc0d6f5e364
+Get:23 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,209 B]
+Get:24 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [4,138 kB]
+Get:25 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [1,821 kB]
+Fetched 5,990 kB in 6s (1,000 kB/s)
 Reading package lists...
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -96,22 +87,12 @@ Hit:15 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:16 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:17 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
 Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
-<<<<<<< HEAD
 Get:19 https://download.docker.com/linux/debian bookworm InRelease [47.0 kB]
-Hit:20 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:21 https://packages.cloud.google.com/apt cloud-sdk InRelease
-Get:22 https://download.docker.com/linux/debian bookworm/stable amd64 Packages [46.2 kB]
-Ign:23 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:23 https://packages.microsoft.com/repos/edge stable InRelease
-Fetched 93.2 kB in 6s (14.9 kB/s)
-=======
-Hit:19 https://dl.google.com/linux/chrome/deb stable InRelease
-Get:20 https://download.docker.com/linux/debian bookworm InRelease [47.0 kB]
-Hit:21 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:20 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:21 https://dl.google.com/linux/chrome/deb stable InRelease
 Hit:22 https://packages.cloud.google.com/apt cloud-sdk InRelease
-Get:23 https://download.docker.com/linux/debian bookworm/stable amd64 Packages [45.3 kB]
-Fetched 92.3 kB in 4s (22.7 kB/s)
->>>>>>> 6b87cc5ae3c796f143c5b5cb605bdfc0d6f5e364
+Get:23 https://download.docker.com/linux/debian bookworm/stable amd64 Packages [46.2 kB]
+Fetched 93.2 kB in 4s (25.5 kB/s)
 Reading package lists...
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -145,11 +126,7 @@ The following NEW packages will be installed:
   docker-compose-plugin iptables libip6tc2 libnetfilter-conntrack3
   libnfnetlink0
 0 upgraded, 9 newly installed, 0 to remove and 16 not upgraded.
-<<<<<<< HEAD
 Need to get 97.2 MB of archives.
-=======
-Need to get 97.1 MB of archives.
->>>>>>> 6b87cc5ae3c796f143c5b5cb605bdfc0d6f5e364
 After this operation, 418 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_docker-stable bookworm/stable amd64 containerd.io amd64 1.7.27-1 [30.5 MB]
 Get:2 http://localhost/aptly-repo/master_docker-stable bookworm/stable amd64 docker-ce-cli amd64 5:28.4.0-1~debian.12~bookworm [16.5 MB]
@@ -157,21 +134,12 @@ Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libip
 Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libnfnetlink0 amd64 1.0.2-2 [15.1 kB]
 Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libnetfilter-conntrack3 amd64 1.0.9-3 [40.7 kB]
 Get:6 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 iptables amd64 1.8.9-2 [360 kB]
-<<<<<<< HEAD
 Get:7 http://localhost/aptly-repo/master_docker-stable bookworm/stable amd64 docker-ce amd64 5:28.4.0-1~debian.12~bookworm [19.7 MB]
 Get:8 http://localhost/aptly-repo/master_docker-stable bookworm/stable amd64 docker-buildx-plugin amd64 0.27.0-1~debian.12~bookworm [15.9 MB]
 Get:9 http://localhost/aptly-repo/master_docker-stable bookworm/stable amd64 docker-compose-plugin amd64 2.39.2-1~debian.12~bookworm [14.2 MB]
-Fetched 97.2 MB in 1s (184 MB/s)
+Fetched 97.2 MB in 1s (96.7 MB/s)
 Selecting previously unselected package containerd.io.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 136474 files and directories currently installed.)
-=======
-Get:7 http://localhost/aptly-repo/master_docker-stable bookworm/stable amd64 docker-ce amd64 5:28.3.3-1~debian.12~bookworm [19.6 MB]
-Get:8 http://localhost/aptly-repo/master_docker-stable bookworm/stable amd64 docker-buildx-plugin amd64 0.26.1-1~debian.12~bookworm [15.8 MB]
-Get:9 http://localhost/aptly-repo/master_docker-stable bookworm/stable amd64 docker-compose-plugin amd64 2.39.1-1~debian.12~bookworm [14.2 MB]
-Fetched 97.1 MB in 1s (169 MB/s)
-Selecting previously unselected package containerd.io.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 131449 files and directories currently installed.)
->>>>>>> 6b87cc5ae3c796f143c5b5cb605bdfc0d6f5e364
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 136490 files and directories currently installed.)
 Preparing to unpack .../0-containerd.io_1.7.27-1_amd64.deb ...
 Unpacking containerd.io (1.7.27-1) ...
 Selecting previously unselected package docker-ce-cli.
@@ -220,8 +188,4 @@ Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /
 Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
 Processing triggers for libc-bin (2.36-9+deb12u13) ...
 CLDS: * Install docker-ce: https://docs.docker.com/engine/install/debian
-<<<<<<< HEAD
-CLDS: * Disk size = 8231848K. Space Used = 515328K. Runtime = 00:00:00:17.
-=======
-CLDS: * Disk size = 8136616K. Space Used = 514628K. Runtime = 00:00:00:20.
->>>>>>> 6b87cc5ae3c796f143c5b5cb605bdfc0d6f5e364
+CLDS: * Disk size = 8234436K. Space Used = 515448K. Runtime = 00:00:00:18.
