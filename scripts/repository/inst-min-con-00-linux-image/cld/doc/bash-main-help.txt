@@ -2,7 +2,6 @@
 set -e
 # Description: BASH TEMPLATE
 this_script=$(basename "${0}")
-echo -e "\033[0;33m======> $(date +"%Y-%m-%d %0k.%M.%S"): ${this_script} \033[0m"
 
 # DEBUG arguments
 for i in $(seq 1 $#); do
@@ -16,7 +15,7 @@ done
             "  e.g. ${this_script} cld-help.sh" \
     )
     if [ "$#" -ne 1 ]; then
-        echo "Error: Incomplete arguments($#). Aborted!"
+        echo "Error: Incomplete argument. Aborted!"
         echo "${cmd_eg}"
         exit 1
     fi
