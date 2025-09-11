@@ -2,7 +2,7 @@
   * After this operation, 11.0 MB of additional disk space will be used.
   * Install fonts-noto-color-emoji.
   * Needed for rocket emoji.
-  * Disk size = 5789632K. Space Used = 20428K. Runtime = 00:00:00:02.
+  * Disk size = 5827208K. Space Used = 20424K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 fonts-noto-color-emoji
