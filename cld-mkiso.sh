@@ -115,16 +115,31 @@ architecture=$(dpkg --print-architecture)
 APP_ID=cld-${architecture}
 iso_filename="${OUTPUT_NAME}.iso"
 iso_filepath="${iso_output_dir}/${iso_filename}"
-rm -f ./binary/cld*.iso; touch ./binary/"${iso_filename}"
-xorriso -as mkisofs -r -J -joliet-long -l \
-				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
-				-A "${APP_ID}"  \
-				-V "${APP_ID}" \
-				-b isolinux/isolinux.bin \
-				-c isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
-				-boot-info-table \
-				-o ${iso_filepath} \
-				./binary
+rm -f ./binary/cld*.txt; touch "./binary/${iso_filename}.txt"
+# xorriso -as mkisofs -r -J -joliet-long -l \
+# 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
+# 				-A "${APP_ID}"  \
+# 				-V "${APP_ID}" \
+# 				-b isolinux/isolinux.bin \
+# 				-c isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
+# 				-boot-info-table \
+# 				-o ${iso_filepath} \
+# 				./binary
+
+# Making iso
+    xorriso -as mkisofs \
+    -r -V  "${APP_ID}" \
+    -o "${iso_filepath}" \
+    -J -J -joliet-long -cache-inodes \
+    -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin \
+    -b isolinux/isolinux.bin \
+    -c isolinux/boot.cat \
+    -boot-load-size 4 -boot-info-table -no-emul-boot \
+    -eltorito-alt-boot \
+    -e boot/grub/efi.img \
+    -no-emul-boot -isohybrid-gpt-basdat -isohybrid-apm-hfsplus \
+    ./binary
+
 
 md5sum "${iso_filepath}" > "${iso_filepath}.md5"
 

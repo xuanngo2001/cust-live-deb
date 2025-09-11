@@ -10,8 +10,10 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   apt-get install -s -y <your-package> 
 
 # Install net-tools.
-apt-get -y install net-tools
+    apt-get -y install net-tools
 
+# Add to CLD/
+    yes | cp -av ./cld  /usr/local
 
 # Log
 echo "${GV_LOG} * Install net-tools."
