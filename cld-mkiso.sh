@@ -115,7 +115,7 @@ architecture=$(dpkg --print-architecture)
 APP_ID=cld-${architecture}
 iso_filename="${OUTPUT_NAME}.iso"
 iso_filepath="${iso_output_dir}/${iso_filename}"
-rm -f ./binary/cld*.iso; touch ./binary/"${iso_filename}"
+rm -f ./binary/cld*.txt; touch "./binary/${iso_filename}.txt"
 # xorriso -as mkisofs -r -J -joliet-long -l \
 # 				-isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 \
 # 				-A "${APP_ID}"  \
