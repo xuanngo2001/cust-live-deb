@@ -1,3 +1,5 @@
+# Description: Create the latest Debian Live ISO with custom bootloader configuration.
+
 # https://wiki.debian.org/RepackBootableISO#amd64_release_5.0.4
 
 iso_volume_label="cust-live-deb"
@@ -43,3 +45,6 @@ output_iso="/media/sql/test.iso"
 # Unmount the original ISO
     umount $deb_live_working
     echo "Unmounted $deb_live_working"
+
+# Final step
+    echo "TODO: Overwrite ./working/ to ../../binary"

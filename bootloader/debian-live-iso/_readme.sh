@@ -3,5 +3,7 @@
     - Replace the live filesystem with a custom one.
     - Use a custom GRUB configuration to boot the custom live system.
 
+    - Overwrite ./working/ to ../../binary
+
 # Ref:
     - # https://wiki.debian.org/RepackBootableISO#amd64_release_5.0.4
