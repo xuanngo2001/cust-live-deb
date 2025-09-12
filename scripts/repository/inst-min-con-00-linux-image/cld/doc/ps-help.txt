@@ -3,7 +3,3 @@
     
 # Display PID
     ps -eo pid,command | grep APP_NAME
-    
-# Which process is using the most RAM
-    ps -e -o pid,vsz,comm= | sort -n -k 2
-    ps aux  | awk '{print $6/1024 " MB\t\t" $11}'  | sort -n

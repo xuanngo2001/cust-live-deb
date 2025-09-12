@@ -2,7 +2,11 @@
   * After this operation, 19.4 MB of additional disk space will be used.
   * After this operation, 30.7 MB of additional disk space will be used.
   * Install OpenTTD 13.0.
+<<<<<<< HEAD
   * Disk size = 8510812K. Space Used = 74096K. Runtime = 00:00:00:17.
+=======
+  * Disk size = 8494760K. Space Used = 74096K. Runtime = 00:00:00:03.
+>>>>>>> 70e75b0d79be1a2cd375129189a7503dd1390e3e
   * The following NEW packages will be installed:
   ```bash
 libfluidsynth3 libinstpatch-1.0-2 openttd openttd-data openttd-opengfx
