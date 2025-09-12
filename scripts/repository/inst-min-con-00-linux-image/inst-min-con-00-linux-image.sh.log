@@ -180,6 +180,7 @@ Hit:14 http://localhost/aptly-repo/master_docker-stable bookworm InRelease
 Hit:15 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:16 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:17 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
+Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
 Reading package lists...
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -198,6 +199,7 @@ W: http://localhost/aptly-repo/master_docker-stable/dists/bookworm/InRelease: Ke
 W: http://localhost/aptly-repo/master_google-cloud-main/dists/cloud-sdk/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_google-main/dists/stable/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_qgis-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+W: http://localhost/aptly-repo/master_virtualbox-contrib/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 Reading package lists...
 Building dependency tree...
 The following additional packages will be installed:
@@ -229,11 +231,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-<<<<<<< HEAD
-Fetched 1129 kB in 10s (112 kB/s)
-=======
-Fetched 1129 kB in 0s (25.9 MB/s)
->>>>>>> 70e75b0d79be1a2cd375129189a7503dd1390e3e
+Fetched 1129 kB in 5s (224 kB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8741 files and directories currently installed.)
 Preparing to unpack .../0-libdbus-1-3_1.14.10-1~deb12u1_amd64.deb ...
@@ -310,11 +308,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-<<<<<<< HEAD
-Fetched 109 MB in 11s (10.1 MB/s)
-=======
-Fetched 109 MB in 1s (123 MB/s)
->>>>>>> 70e75b0d79be1a2cd375129189a7503dd1390e3e
+Fetched 109 MB in 6s (19.2 MB/s)
 Selecting previously unselected package linux-base.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8988 files and directories currently installed.)
 Preparing to unpack .../linux-base_4.12~bpo12+1_all.deb ...
@@ -463,68 +457,34 @@ un  linux-image-generic                      <none>            <none>       (no 
 total 48420
 -rw-r--r-- 1 root root       83 Jul 27 11:42 System.map-6.12.38+deb12-amd64
 -rw-r--r-- 1 root root   283089 Jul 27 11:42 config-6.12.38+deb12-amd64
-<<<<<<< HEAD
--rw-r--r-- 1 root root 37278816 Sep 11 17:44 initrd.img-6.12.38+deb12-amd64
+-rw-r--r-- 1 root root 37279143 Sep 12 15:30 initrd.img-6.12.38+deb12-amd64
 -rw-r--r-- 1 root root 12007360 Jul 27 11:42 vmlinuz-6.12.38+deb12-amd64
 e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.12.38+deb12-amd64
 a82053f14c207805d1974bfc7937affb  /boot/config-6.12.38+deb12-amd64
-bf72c2ef817edeb8a57f1b5e87358e72  /boot/initrd.img-6.12.38+deb12-amd64
+90e99fb20ceb62f8592ff9dd35727ee8  /boot/initrd.img-6.12.38+deb12-amd64
 a0241aa2a68c71a65e847e5eec9afa51  /boot/vmlinuz-6.12.38+deb12-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Sep 11 17:42 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Sep 11 17:44 boot
-drwxr-xr-x  18 root root 3940 Sep 11 16:10 dev
-drwxr-xr-x  49 root root 4096 Sep 11 17:44 etc
+lrwxrwxrwx   1 root root    7 Sep 12 15:27 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Sep 12 15:30 boot
+drwxr-xr-x  18 root root 3940 Sep 12 14:33 dev
+drwxr-xr-x  49 root root 4096 Sep 12 15:29 etc
 drwxr-xr-x   2 root root 4096 Aug 24 16:05 home
-lrwxrwxrwx   1 root root   35 Sep 11 17:43 initrd.img -> boot/initrd.img-6.12.38+deb12-amd64
-lrwxrwxrwx   1 root root    7 Sep 11 17:42 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Sep 11 17:42 lib64 -> usr/lib64
-drwxr-xr-x   2 root root 4096 Sep 11 17:42 media
-drwxr-xr-x   2 root root 4096 Sep 11 17:42 mnt
-drwxr-xr-x   2 root root 4096 Sep 11 17:42 opt
-dr-xr-xr-x 385 root root    0 Sep 11 17:42 proc
-drwx------   4 root root 4096 Sep 11 17:42 root
-drwxr-xr-x   8 root root 4096 Sep 11 17:43 run
-lrwxrwxrwx   1 root root    8 Sep 11 17:42 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Sep 11 17:42 srv
-dr-xr-xr-x  13 root root    0 Sep 11 16:09 sys
-drwxrwxrwt   2 root root 4096 Sep 11 17:43 tmp
-drwxr-xr-x  12 root root 4096 Sep 11 17:42 usr
-drwxr-xr-x  11 root root 4096 Sep 11 17:42 var
-lrwxrwxrwx   1 root root   32 Sep 11 17:43 vmlinuz -> boot/vmlinuz-6.12.38+deb12-amd64
+lrwxrwxrwx   1 root root   35 Sep 12 15:28 initrd.img -> boot/initrd.img-6.12.38+deb12-amd64
+lrwxrwxrwx   1 root root    7 Sep 12 15:27 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Sep 12 15:27 lib64 -> usr/lib64
+drwxr-xr-x   2 root root 4096 Sep 12 15:27 media
+drwxr-xr-x   2 root root 4096 Sep 12 15:27 mnt
+drwxr-xr-x   2 root root 4096 Sep 12 15:27 opt
+dr-xr-xr-x 368 root root    0 Sep 12 15:28 proc
+drwx------   4 root root 4096 Sep 12 15:28 root
+drwxr-xr-x   8 root root 4096 Sep 12 15:28 run
+lrwxrwxrwx   1 root root    8 Sep 12 15:27 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Sep 12 15:27 srv
+dr-xr-xr-x  13 root root    0 Sep 12 14:32 sys
+drwxrwxrwt   2 root root 4096 Sep 12 15:28 tmp
+drwxr-xr-x  12 root root 4096 Sep 12 15:27 usr
+drwxr-xr-x  11 root root 4096 Sep 12 15:27 var
+lrwxrwxrwx   1 root root   32 Sep 12 15:28 vmlinuz -> boot/vmlinuz-6.12.38+deb12-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-6.12.38+deb12-amd64.
-CLDS: * Disk size = 907512K. Space Used = 274824K. Runtime = 00:00:02:06.
-=======
--rw-r--r-- 1 root root 37279464 Sep 11 23:57 initrd.img-6.12.38+deb12-amd64
--rw-r--r-- 1 root root 12007360 Jul 27 11:42 vmlinuz-6.12.38+deb12-amd64
-e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.12.38+deb12-amd64
-a82053f14c207805d1974bfc7937affb  /boot/config-6.12.38+deb12-amd64
-724b32b2e782c76ec08ef009f7bc252c  /boot/initrd.img-6.12.38+deb12-amd64
-a0241aa2a68c71a65e847e5eec9afa51  /boot/vmlinuz-6.12.38+deb12-amd64
-total 48
-lrwxrwxrwx   1 root root    7 Sep 11 23:55 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Sep 11 23:57 boot
-drwxr-xr-x  18 root root 3820 Sep 11 23:46 dev
-drwxr-xr-x  49 root root 4096 Sep 11 23:56 etc
-drwxr-xr-x   2 root root 4096 Aug 24 16:05 home
-lrwxrwxrwx   1 root root   35 Sep 11 23:56 initrd.img -> boot/initrd.img-6.12.38+deb12-amd64
-lrwxrwxrwx   1 root root    7 Sep 11 23:55 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Sep 11 23:55 lib64 -> usr/lib64
-drwxr-xr-x   2 root root 4096 Sep 11 23:55 media
-drwxr-xr-x   2 root root 4096 Sep 11 23:55 mnt
-drwxr-xr-x   2 root root 4096 Sep 11 23:55 opt
-dr-xr-xr-x 394 root root    0 Sep 11 23:56 proc
-drwx------   4 root root 4096 Sep 11 23:56 root
-drwxr-xr-x   8 root root 4096 Sep 11 23:56 run
-lrwxrwxrwx   1 root root    8 Sep 11 23:55 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Sep 11 23:55 srv
-dr-xr-xr-x  13 root root    0 Sep 11 23:45 sys
-drwxrwxrwt   2 root root 4096 Sep 11 23:56 tmp
-drwxr-xr-x  12 root root 4096 Sep 11 23:55 usr
-drwxr-xr-x  11 root root 4096 Sep 11 23:55 var
-lrwxrwxrwx   1 root root   32 Sep 11 23:56 vmlinuz -> boot/vmlinuz-6.12.38+deb12-amd64
-CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
-CLDS: * Installed Linux image: linux-image-6.12.38+deb12-amd64.
-CLDS: * Disk size = 891452K. Space Used = 274816K. Runtime = 00:00:00:51.
->>>>>>> 70e75b0d79be1a2cd375129189a7503dd1390e3e
+CLDS: * Disk size = 907584K. Space Used = 274824K. Runtime = 00:00:01:55.
