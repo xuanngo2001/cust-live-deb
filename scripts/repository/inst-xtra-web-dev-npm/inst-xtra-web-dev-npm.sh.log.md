@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-xtra-web-dev-npm.sh ...
   * Install npm.
-  * Disk size = 9116232K. Space Used = 33752K. Runtime = 00:00:00:06.
+  * Disk size = 9116244K. Space Used = 33752K. Runtime = 00:00:00:08.
