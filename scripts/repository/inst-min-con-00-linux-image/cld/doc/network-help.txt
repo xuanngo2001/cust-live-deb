@@ -13,3 +13,18 @@
     ss -tulpn | grep LISTEN
     lsof -i -P -n | grep LISTEN
     lsof -i:22 ## see a specific port such as 22 ##
+    
+# List all of your interfaces
+    ifconfig -a
+    ip link show
+    cat /proc/net/dev
+
+    # Naming 
+        Two character prefixes based on the type of interface:
+         *   en -- ethernet
+         *   sl -- serial line IP (slip)
+         *   wl -- wlan
+         *   ww -- wwan
+ 
+# List network cards
+    lspci | grep -E -i --color 'network|ethernet|wireless|wi-fi'
