@@ -2,11 +2,7 @@
   * After this operation, 5,353 kB of additional disk space will be used.
   * Install transmission-gtk.
   * Insert transmission-gtk in Internet menu.
-<<<<<<< HEAD
-  * Disk size = 6847372K. Space Used = 4128K. Runtime = 00:00:00:07.
-=======
-  * Disk size = 6831284K. Space Used = 4128K. Runtime = 00:00:00:01.
->>>>>>> 70e75b0d79be1a2cd375129189a7503dd1390e3e
+  * Disk size = 6847496K. Space Used = 4128K. Runtime = 00:00:00:08.
   * The following NEW packages will be installed:
   ```bash
 libayatana-appindicator3-1 libayatana-ido3-0.4-0 libayatana-indicator3-7 libdbusmenu-glib4 libdbusmenu-gtk3-4

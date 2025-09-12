@@ -4,11 +4,7 @@
   * Install blender3d.
   * Insert Blender 3D menu in Graphics.
   * http://download.blender.org/release/
-<<<<<<< HEAD
-  * Disk size = 7734360K. Space Used = 602864K. Runtime = 00:00:00:33.
-=======
-  * Disk size = 7718308K. Space Used = 602884K. Runtime = 00:00:00:12.
->>>>>>> 70e75b0d79be1a2cd375129189a7503dd1390e3e
+  * Disk size = 7734484K. Space Used = 602864K. Runtime = 00:00:00:22.
   * The following NEW packages will be installed:
   ```bash
 blender blender-data fonts-dejavu fonts-dejavu-extra gdal-data
