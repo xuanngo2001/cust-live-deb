@@ -24,8 +24,8 @@ Hit:18 https://download.docker.com/linux/debian bookworm InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
 Hit:20 https://deb.nodesource.com/node_20.x nodistro InRelease
 Hit:21 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:22 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:23 https://packages.cloud.google.com/apt cloud-sdk InRelease
+Hit:22 https://packages.cloud.google.com/apt cloud-sdk InRelease
+Hit:23 https://packages.microsoft.com/repos/edge stable InRelease
 Reading package lists...
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -68,18 +68,18 @@ Get:8 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backpo
 Get:9 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libss2 amd64 1.47.2-3~bpo12+1 [29.5 kB]
 Get:10 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 140.0.3485.66-1 [180 MB]
 Preconfiguring packages ...
-Fetched 182 MB in 27s (6,764 kB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165680 files and directories currently installed.)
+Fetched 182 MB in 10s (17.7 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165810 files and directories currently installed.)
 Preparing to unpack .../sysvinit-utils_3.08-3~bpo12+2_amd64.deb ...
 Unpacking sysvinit-utils (3.08-3~bpo12+2) over (3.06-4) ...
 Setting up sysvinit-utils (3.08-3~bpo12+2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165680 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165810 files and directories currently installed.)
 Preparing to unpack .../logsave_1.47.2-3~bpo12+1_amd64.deb ...
 Unpacking logsave (1.47.2-3~bpo12+1) over (1.47.0-2+b2) ...
 Preparing to unpack .../libext2fs2_1.47.2-3~bpo12+1_amd64.deb ...
 Unpacking libext2fs2:amd64 (1.47.2-3~bpo12+1) over (1.47.0-2+b2) ...
 Setting up libext2fs2:amd64 (1.47.2-3~bpo12+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165678 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165808 files and directories currently installed.)
 Preparing to unpack .../0-e2fsprogs_1.47.2-3~bpo12+1_amd64.deb ...
 Unpacking e2fsprogs (1.47.2-3~bpo12+1) over (1.47.0-2+b2) ...
 Preparing to unpack .../1-systemd-sysv_254.26-1~bpo12+1_amd64.deb ...
@@ -128,4 +128,4 @@ W: No zstd in /usr/bin:/sbin:/bin, using gzip
 setupcon is missing. Please install the 'console-setup' package.
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 8028508K. Space Used = 303728K. Runtime = 00:00:01:49.
+CLDS: * Disk size = 8032072K. Space Used = 303704K. Runtime = 00:00:00:54.
