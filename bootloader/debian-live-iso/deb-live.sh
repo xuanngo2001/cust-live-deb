@@ -6,7 +6,7 @@ iso_volume_label="cust-live-deb"
 output_iso="/media/sql/test.iso"
 
 # Mount the original ISO
-    deb_live_iso="/media/sf_shared/dump/debian-live-13.1.0-amd64-standard.iso"
+    deb_live_iso="/media/sf_shared/dump/debian-live/debian-live-13.1.0-amd64-standard.iso"
     deb_live_working="/tmp/deb-live"
     mkdir -p $deb_live_working
 
@@ -22,8 +22,8 @@ output_iso="/media/sql/test.iso"
 # Copy isolinux/
     \cp -av $deb_live_working/isolinux "$working"
 
-# Use custom grub.cfg
-    \cp -v ./config/boot/grub/grub.cfg "$working/boot/grub/"
+# # Use custom grub.cfg
+#     \cp -v ./config/boot/grub/grub.cfg "$working/boot/grub/"
 
 # # Copy live/
 #     \cp -av ../live/ "$working"
