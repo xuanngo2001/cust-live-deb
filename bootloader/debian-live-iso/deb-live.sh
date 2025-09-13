@@ -3,7 +3,7 @@
 # https://wiki.debian.org/RepackBootableISO#amd64_release_5.0.4
 
 iso_volume_label="cust-live-deb"
-output_iso="/media/sql/test.iso"
+output_iso="/media/sql/test_$(date +"%Y-%m-%d_%0k.%M.%S").iso"
 squashfs="/media/sf_shared/dump/debian-live/filesystem.squashfs_min"
 deb_live_iso="/media/sf_shared/dump/debian-live/debian-live-13.1.0-amd64-standard.iso"
 
