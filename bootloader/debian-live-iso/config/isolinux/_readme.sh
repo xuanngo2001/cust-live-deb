@@ -3,6 +3,8 @@
 - menu-cld.cfg: Backup menu of CLD.
 - menu.0.cfg: Original file from debian-live-13.1.0-amd64-standard.iso
 - live.cfg: Original boot entries but decided to use menu.cfg instead.
+- isolinux.cfg: timeout 100
+
 
 isolinux.cfg
     - menu.cfg
