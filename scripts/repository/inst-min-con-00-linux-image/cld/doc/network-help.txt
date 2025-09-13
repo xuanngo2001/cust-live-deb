@@ -4,8 +4,7 @@
 
 # List processes using the port number.
     lsof -i:80
-
-# List processes using port 80
+    netstat -plant | grep 80
     netstat -pna | grep 80
 
 # What ports are in used.
