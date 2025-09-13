@@ -5,5 +5,8 @@
 
     - Overwrite ./working/ to ../../binary
 
+# Workflow
+    ./deb-live.sh; rm -f /media/sf_shared/test.iso; \mv /media/sql/test.iso  /media/sf_shared/; echo "Done"
+
 # Ref:
     - # https://wiki.debian.org/RepackBootableISO#amd64_release_5.0.4
