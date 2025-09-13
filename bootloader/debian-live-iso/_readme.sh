@@ -2,6 +2,7 @@
     - Download Debian Live ISO and use its boot files to create a custom live ISO.
     - Replace the live filesystem with a custom one.
     - Use a custom GRUB configuration to boot the custom live system.
+    - Bootloader: ISOLINUX + GRUB EFI: ./config/boot/grub/grub.cfg(Hyper-V) + ./config/isolinux/live.cfg (VirtualBox)
 
     - Overwrite ./working/ to ../../binary
 
