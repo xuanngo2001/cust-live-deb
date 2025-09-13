@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-secure-boot-grub.sh ...
-  * Disk size = 1679760K. Space Used = 4K. Runtime = 00:00:00:00.
+  * Disk size = 1676156K. Space Used = 4K. Runtime = 00:00:00:00.
