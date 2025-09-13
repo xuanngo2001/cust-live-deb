@@ -55,3 +55,4 @@ deb_live_iso="/media/sf_shared/dump/debian-live/debian-live-13.1.0-amd64-standar
 # Final step
     echo "Created ISO at $output_iso"
     echo "TODO: Overwrite ./working/ to ../../binary"
+    echo "\cp -a working/boot/ working/isolinux/ ../../binary/"

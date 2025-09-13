@@ -8,6 +8,10 @@
 
 # Workflow
     ./deb-live.sh; rm -f /media/sf_shared/test.iso; \mv /media/sql/test*.iso  /media/sf_shared/; echo "Done"
+    \cp -a working/boot/ working/isolinux/ ../../binary/
+
+    \cp -a working/boot/ ../../binary/
+    \cp -a working/isolinux/ ../../binary/
 
 # Ref:
     - # https://wiki.debian.org/RepackBootableISO#amd64_release_5.0.4
