@@ -21,13 +21,12 @@ deb_live_iso="/media/sf_shared/dump/debian-live/debian-live-13.1.0-amd64-standar
     \cp -av $deb_live_working/boot "$working"
 
 # Copy isolinux/
-    # \cp -av $deb_live_working/isolinux "$working"
+    \cp -av $deb_live_working/isolinux "$working"
 
 # # Use custom grub.cfg
     \cp -v ./config/boot/grub/grub.cfg "$working/boot/grub/"
     \cp -v ./config/isolinux/live.cfg "$working/isolinux/"
     \cp -v ./config/isolinux/menu.cfg "$working/isolinux/"
-    \cp -v ./config/isolinux/* "$working/isolinux/"
 
 # # Copy live/
 #     \cp -av ../live/ "$working"
