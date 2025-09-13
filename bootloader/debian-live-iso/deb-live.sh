@@ -4,9 +4,10 @@
 
 iso_volume_label="cust-live-deb"
 output_iso="/media/sql/test.iso"
+squashfs="/media/sf_shared/dump/debian-live/filesystem.squashfs_min"
+deb_live_iso="/media/sf_shared/dump/debian-live/debian-live-13.1.0-amd64-standard.iso"
 
 # Mount the original ISO
-    deb_live_iso="/media/sf_shared/dump/debian-live/debian-live-13.1.0-amd64-standard.iso"
     deb_live_working="/tmp/deb-live"
     mkdir -p $deb_live_working
 
@@ -23,10 +24,14 @@ output_iso="/media/sql/test.iso"
     \cp -av $deb_live_working/isolinux "$working"
 
 # # Use custom grub.cfg
-#     \cp -v ./config/boot/grub/grub.cfg "$working/boot/grub/"
+    \cp -v ./config/boot/grub/grub.cfg "$working/boot/grub/"
 
 # # Copy live/
 #     \cp -av ../live/ "$working"
+    mkdir -p "$working/live"
+    \cp ../../binary/live/initrd "$working/live/"
+    \cp ../../binary/live/vmlinuz "$working/live/"
+    \cp "${squashfs}" "$working/live/filesystem.squashfs"
 
 # Making iso
     xorriso -as mkisofs \
@@ -47,4 +52,5 @@ output_iso="/media/sql/test.iso"
     echo "Unmounted $deb_live_working"
 
 # Final step
+    echo "Created ISO at $output_iso"
     echo "TODO: Overwrite ./working/ to ../../binary"
