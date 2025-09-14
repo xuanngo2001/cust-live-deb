@@ -3,3 +3,12 @@
     
 # Display PID
     ps -eo pid,command | grep APP_NAME
+
+# Kill processes
+    # killall requires an exact match of the process name. It matches the first 15 characters.
+    killall apache2
+
+    # pkill uses pattern matching (regular expressions) against various process attributes, 
+    #   including the process name, command line, PID, PPID, and UID. This allows for more flexible and partial matching.
+    pkill apache2
+
