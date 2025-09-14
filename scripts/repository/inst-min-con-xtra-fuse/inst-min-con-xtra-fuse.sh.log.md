@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-fuse.sh ...
   * After this operation, 1,475 kB disk space will be freed.
   * Install fuse(fusermount) to run TMSU.
-  * Disk size = 2995824K. Space Used = 9268K. Runtime = 00:00:00:25.
+  * Disk size = 2995840K. Space Used = 9264K. Runtime = 00:00:00:27.
   * The following NEW packages will be installed:
   ```bash
 fuse
