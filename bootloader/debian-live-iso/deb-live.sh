@@ -24,11 +24,10 @@ deb_live_iso="/media/sf_shared/dump/debian-live/debian-live-13.1.0-amd64-standar
     \cp -av $deb_live_working/isolinux "$working"
 
 # # Use custom grub / isolinux cfg
-    # \cp -v ./config/boot/grub/grub.cfg "$working/boot/grub/"
-    \cp -v ./config/isolinux/* "$working/isolinux/"
+    \cp -av ./config/boot/grub/* "$working/boot/grub/"
+    \cp -av ./config/isolinux/*  "$working/isolinux/"
 
 # # Copy live/
-    \cp -av ../live/ "$working"
     mkdir -p "$working/live"
     \cp ../../binary/live/initrd "$working/live/"
     \cp ../../binary/live/vmlinuz "$working/live/"
@@ -54,5 +53,6 @@ deb_live_iso="/media/sf_shared/dump/debian-live/debian-live-13.1.0-amd64-standar
 
 # Final step
     echo "Created ISO at $output_iso"
-    echo "TODO: Overwrite ./working/ to ../../binary"
-    echo "\cp -a working/boot/ working/isolinux/ ../../binary/"
+    echo "TODO:"
+    echo "      Overwrite ./working/ to ../../binary"
+    echo "      \cp -a working/boot/ working/isolinux/ ../../binary/"
