@@ -4,4 +4,4 @@
     
 # Check if network card is detected.
 #   For Wifi on laptop, ensure that you didn't accidentally press a key to kill the wifi anthenna.
-    lspci | grep -E 'Network|Ethernet'
+    lspci | grep -E -i --color 'network|ethernet|wireless|wi-fi'
