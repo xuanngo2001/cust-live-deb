@@ -3,10 +3,11 @@
 # https://wiki.debian.org/RepackBootableISO#amd64_release_5.0.4
 
 iso_volume_label="cust-live-deb"
-output_iso="/media/sql/test.iso"
+output_iso="/media/sql/test_$(date +"%Y-%m-%d_%0k.%M.%S").iso"
+squashfs="/media/sf_shared/dump/debian-live/filesystem.squashfs_min"
+deb_live_iso="/media/sf_shared/dump/debian-live/debian-live-13.1.0-amd64-standard.iso"
 
 # Mount the original ISO
-    deb_live_iso="/media/sf_shared/dump/debian-live-13.1.0-amd64-standard.iso"
     deb_live_working="/tmp/deb-live"
     mkdir -p $deb_live_working
 
@@ -22,11 +23,16 @@ output_iso="/media/sql/test.iso"
 # Copy isolinux/
     \cp -av $deb_live_working/isolinux "$working"
 
-# Use custom grub.cfg
-    \cp -v ./config/boot/grub/grub.cfg "$working/boot/grub/"
+# # Use custom grub / isolinux cfg
+    # \cp -v ./config/boot/grub/grub.cfg "$working/boot/grub/"
+    \cp -v ./config/isolinux/* "$working/isolinux/"
 
 # # Copy live/
-#     \cp -av ../live/ "$working"
+    \cp -av ../live/ "$working"
+    mkdir -p "$working/live"
+    \cp ../../binary/live/initrd "$working/live/"
+    \cp ../../binary/live/vmlinuz "$working/live/"
+    \cp "${squashfs}" "$working/live/filesystem.squashfs"
 
 # Making iso
     xorriso -as mkisofs \
@@ -47,4 +53,6 @@ output_iso="/media/sql/test.iso"
     echo "Unmounted $deb_live_working"
 
 # Final step
+    echo "Created ISO at $output_iso"
     echo "TODO: Overwrite ./working/ to ../../binary"
+    echo "\cp -a working/boot/ working/isolinux/ ../../binary/"

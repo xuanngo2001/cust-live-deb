@@ -921,12 +921,12 @@ ii  libzstd1:amd64                       1.5.4+dfsg2-5                          
 ii  libzvbi-common                       0.2.41-1                                  all          Vertical Blanking Interval decoder (VBI) - common files
 ii  libzvbi0:amd64                       0.2.41-1                                  amd64        Vertical Blanking Interval decoder (VBI) - runtime files
 ii  linux-base                           4.12~bpo12+1                              all          Linux image base package
-ii  linux-headers-6.12.38+deb12-amd64    6.12.38-1~bpo12+1                         amd64        Header files for Linux 6.12.38+deb12-amd64
-ii  linux-headers-6.12.38+deb12-common   6.12.38-1~bpo12+1                         all          Common header files for Linux 6.12.38+deb12
-ii  linux-headers-amd64                  6.12.38-1~bpo12+1                         amd64        Header files for Linux amd64 configuration (meta-package)
-ii  linux-image-6.12.38+deb12-amd64      6.12.38-1~bpo12+1                         amd64        Linux 6.12 for 64-bit PCs (signed)
-ii  linux-image-amd64                    6.12.38-1~bpo12+1                         amd64        Linux for 64-bit PCs (meta-package)
-ii  linux-kbuild-6.12.38+deb12           6.12.38-1~bpo12+1                         amd64        Kbuild infrastructure for Linux 6.12.38+deb12
+ii  linux-headers-6.12.43+deb12-amd64    6.12.43-1~bpo12+1                         amd64        Header files for Linux 6.12.43+deb12-amd64
+ii  linux-headers-6.12.43+deb12-common   6.12.43-1~bpo12+1                         all          Common header files for Linux 6.12.43+deb12
+ii  linux-headers-amd64                  6.12.43-1~bpo12+1                         amd64        Header files for Linux amd64 configuration (meta-package)
+ii  linux-image-6.12.43+deb12-amd64      6.12.43-1~bpo12+1                         amd64        Linux 6.12 for 64-bit PCs (signed)
+ii  linux-image-amd64                    6.12.43-1~bpo12+1                         amd64        Linux for 64-bit PCs (meta-package)
+ii  linux-kbuild-6.12.43+deb12           6.12.43-1~bpo12+1                         amd64        Kbuild infrastructure for Linux 6.12.43+deb12
 ii  linux-libc-dev:amd64                 6.1.148-1                                 amd64        Linux support headers for userspace development
 ii  live-boot                            1:20230131+deb12u1                        all          Live System Boot Components
 ii  live-boot-initramfs-tools            1:20230131+deb12u1                        all          Live System Boot Components (initramfs-tools backend)
@@ -980,6 +980,8 @@ ii  open-vm-tools-desktop                2:12.5.0-2~bpo12+1                     
 ii  openjdk-17-jre:amd64                 17.0.16+8-1~deb12u1                       amd64        OpenJDK Java runtime, using Hotspot JIT
 ii  openjdk-17-jre-headless:amd64        17.0.16+8-1~deb12u1                       amd64        OpenJDK Java runtime, using Hotspot JIT (headless)
 ii  openssh-client                       1:10.0p1-7~bpo12+1                        amd64        secure shell (SSH) client, for secure access to remote machines
+ii  openssh-server                       1:10.0p1-7~bpo12+1                        amd64        secure shell (SSH) server, for secure access from remote machines
+ii  openssh-sftp-server                  1:10.0p1-7~bpo12+1                        amd64        secure shell (SSH) sftp server module, for SFTP access from remote machines
 ii  openssl                              3.0.17-1~deb12u2                          amd64        Secure Sockets Layer toolkit - cryptographic utility
 ii  openttd                              13.0-2                                    amd64        reimplementation of Transport Tycoon Deluxe with enhancements
 ii  openttd-data                         13.0-2                                    all          common data files for the OpenTTD game
@@ -1064,7 +1066,10 @@ ii  rename                               2.01-1                                 
 ii  rpcbind                              1.2.6-6+b1                                amd64        converts RPC program numbers into universal addresses
 ii  rpcsvc-proto                         1.4.3-1                                   amd64        RPC protocol compiler and definitions
 ii  rsync                                3.2.7-1+deb12u2                           amd64        fast, versatile, remote (and local) file-copying tool
+ii  runit-helper                         2.15.2                                    all          dh-runit implementation detail
+ii  samba                                2:4.22.3+dfsg-4~bpo12+1                   amd64        SMB/CIFS file, print, and login server for Unix
 ii  samba-common                         2:4.22.3+dfsg-4~bpo12+1                   all          common files used by both the Samba server and client
+ii  samba-common-bin                     2:4.22.3+dfsg-4~bpo12+1                   amd64        Samba common files used by both the server and the client
 ii  samba-libs:amd64                     2:4.22.3+dfsg-4~bpo12+1                   amd64        Samba core libraries
 ii  scite                                5.3.3-1                                   amd64        Lightweight GTK-based programming editor
 ii  sed                                  4.9-1                                     amd64        GNU stream editor for filtering/transforming text
@@ -1081,6 +1086,7 @@ ii  sound-theme-freedesktop              0.8-2                                  
 ii  sqlite3                              3.40.1-2+deb12u2                          amd64        Command line interface for SQLite 3
 ii  squashfs-tools                       1:4.5.1-1                                 amd64        Tool to create and append to squashfs filesystems
 ii  sshpass                              1.09-1+b1                                 amd64        Non-interactive ssh password authentication
+ii  ssl-cert                             1.1.2                                     all          simple debconf wrapper for OpenSSL
 ii  sudo                                 1.9.13p3-1+deb12u2                        amd64        Provide limited super user privileges to specific users
 ii  systemd                              252.39-1~deb12u1                          amd64        system and service manager
 ii  systemd-sysv                         254.26-1~bpo12+1                          amd64        system and service manager - SysV compatibility symlinks
@@ -1136,6 +1142,7 @@ ii  xinit                                1.4.0-1                                
 ii  xkb-data                             2.35.1-1                                  all          X Keyboard Extension (XKB) configuration data
 ii  xml-core                             0.18+nmu1                                 all          XML infrastructure and XML catalog file support
 ii  xorriso                              1.5.4-4                                   amd64        command line ISO-9660 and Rock Ridge manipulation tool
+ii  xrdp                                 0.9.24-5~bpo12+1                          amd64        Remote Desktop Protocol (RDP) server
 ii  xserver-common                       2:21.1.7-3+deb12u10                       all          common files used by various X servers
 ii  xserver-xorg                         1:7.7+23                                  amd64        X.Org X server
 ii  xserver-xorg-core                    2:21.1.7-3+deb12u10                       amd64        Xorg X server - core server

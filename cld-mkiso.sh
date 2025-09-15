@@ -127,7 +127,7 @@ rm -f ./binary/cld*.txt; touch "./binary/${iso_filename}.txt"
 # 				./binary
 
 # Making iso
-    xorriso -as mkisofs \
+xorriso -as mkisofs \
     -r -V  "${APP_ID}" \
     -o "${iso_filepath}" \
     -J -J -joliet-long -cache-inodes \

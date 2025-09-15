@@ -1,9 +1,8 @@
 * >>>>>>>>> Running inst-min-con-xtra-smb-smbclient.sh ...
-  * After this operation, 30.1 MB of additional disk space will be used.
+  * After this operation, 2,467 kB of additional disk space will be used.
   * Install smbclient.
-  * Disk size = 4650704K. Space Used = 36784K. Runtime = 00:00:00:08.
+  * Disk size = 4648932K. Space Used = 3064K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
-libldb2 liblmdb0 libsmbclient libtdb1 libtevent0
-samba-common samba-libs smbclient
+libsmbclient smbclient
   ```

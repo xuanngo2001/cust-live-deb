@@ -51,7 +51,7 @@ set -e
   
   # Add all available network interfaces.
   IFACE_BASE_CONKY=/usr/local/cld/app/conky/config/conkyrc-network-iface.txt
-	while IFS='' read -r IFACE_NAME || [[ -n "$IFACE_NAME" ]]; do
+  while IFS='' read -r IFACE_NAME || [[ -n "$IFACE_NAME" ]]; do
 
 	  # Dynamically generate network interface for conkyrc.
 	  IFACE_CONKY="/usr/local/cld/app/conky/config/conkyrc-network-${IFACE_NAME}.txt"
@@ -60,7 +60,7 @@ set -e
     # Insert network interface to conkyrc.
     sed  -i --follow-symlinks "/${IFACE_START}/ r ${IFACE_CONKY}" ${HOME}/.conkyrc
     	 
-  done < <( ip address | grep '^[0-9]' | grep -vF 'lo: ' | sed 's/^[0-9]*://' | cut -d':' -f1 | xargs )
+  done < <( ip address | grep '^[0-9]' | grep -vF 'lo: ' | sed 's/^[0-9]*://' | cut -d':' -f1 | grep -vE '^ br-|^ veth' | xargs )
 
 
 #---- CALENDAR: Add calendar if screen height is available(Watch out for multiple network interfaces(81px) or CPUs). ----#

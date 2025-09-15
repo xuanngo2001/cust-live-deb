@@ -3,61 +3,26 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libldb2 liblmdb0 libsmbclient libtdb1 libtevent0 samba-common samba-libs
+  libsmbclient
 Suggested packages:
   heimdal-clients
-Recommended packages:
-  samba-common-bin
 The following NEW packages will be installed:
-  libldb2 liblmdb0 libsmbclient libtdb1 libtevent0 samba-common samba-libs
-  smbclient
-0 upgraded, 8 newly installed, 0 to remove and 15 not upgraded.
-Need to get 7,073 kB of archives.
-After this operation, 30.1 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 liblmdb0 amd64 0.9.24-1 [45.0 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libtdb1 amd64 2:1.4.13+samba4.22.3+dfsg-4~bpo12+1 [80.1 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libtevent0 amd64 2:0.16.2+samba4.22.3+dfsg-4~bpo12+1 [75.3 kB]
-Get:4 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libldb2 amd64 2:2.11.0+samba4.22.3+dfsg-4~bpo12+1 [177 kB]
-Get:5 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 samba-libs amd64 2:4.22.3+dfsg-4~bpo12+1 [6,043 kB]
-Get:6 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libsmbclient amd64 2:4.22.3+dfsg-4~bpo12+1 [96.4 kB]
-Get:7 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 samba-common all 2:4.22.3+dfsg-4~bpo12+1 [59.7 kB]
-Get:8 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 smbclient amd64 2:4.22.3+dfsg-4~bpo12+1 [497 kB]
-Fetched 7,073 kB in 5s (1,393 kB/s)
-Selecting previously unselected package liblmdb0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 109175 files and directories currently installed.)
-Preparing to unpack .../0-liblmdb0_0.9.24-1_amd64.deb ...
-Unpacking liblmdb0:amd64 (0.9.24-1) ...
-Selecting previously unselected package libtdb1:amd64.
-Preparing to unpack .../1-libtdb1_2%3a1.4.13+samba4.22.3+dfsg-4~bpo12+1_amd64.deb ...
-Unpacking libtdb1:amd64 (2:1.4.13+samba4.22.3+dfsg-4~bpo12+1) ...
-Selecting previously unselected package libtevent0:amd64.
-Preparing to unpack .../2-libtevent0_2%3a0.16.2+samba4.22.3+dfsg-4~bpo12+1_amd64.deb ...
-Unpacking libtevent0:amd64 (2:0.16.2+samba4.22.3+dfsg-4~bpo12+1) ...
-Selecting previously unselected package libldb2:amd64.
-Preparing to unpack .../3-libldb2_2%3a2.11.0+samba4.22.3+dfsg-4~bpo12+1_amd64.deb ...
-Unpacking libldb2:amd64 (2:2.11.0+samba4.22.3+dfsg-4~bpo12+1) ...
-Selecting previously unselected package samba-libs:amd64.
-Preparing to unpack .../4-samba-libs_2%3a4.22.3+dfsg-4~bpo12+1_amd64.deb ...
-Unpacking samba-libs:amd64 (2:4.22.3+dfsg-4~bpo12+1) ...
+  libsmbclient smbclient
+0 upgraded, 2 newly installed, 0 to remove and 15 not upgraded.
+Need to get 594 kB of archives.
+After this operation, 2,467 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libsmbclient amd64 2:4.22.3+dfsg-4~bpo12+1 [96.4 kB]
+Get:2 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 smbclient amd64 2:4.22.3+dfsg-4~bpo12+1 [497 kB]
+Fetched 594 kB in 0s (16.3 MB/s)
 Selecting previously unselected package libsmbclient:amd64.
-Preparing to unpack .../5-libsmbclient_2%3a4.22.3+dfsg-4~bpo12+1_amd64.deb ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 109685 files and directories currently installed.)
+Preparing to unpack .../libsmbclient_2%3a4.22.3+dfsg-4~bpo12+1_amd64.deb ...
 Unpacking libsmbclient:amd64 (2:4.22.3+dfsg-4~bpo12+1) ...
-Selecting previously unselected package samba-common.
-Preparing to unpack .../6-samba-common_2%3a4.22.3+dfsg-4~bpo12+1_all.deb ...
-Unpacking samba-common (2:4.22.3+dfsg-4~bpo12+1) ...
 Selecting previously unselected package smbclient.
-Preparing to unpack .../7-smbclient_2%3a4.22.3+dfsg-4~bpo12+1_amd64.deb ...
+Preparing to unpack .../smbclient_2%3a4.22.3+dfsg-4~bpo12+1_amd64.deb ...
 Unpacking smbclient (2:4.22.3+dfsg-4~bpo12+1) ...
-Setting up liblmdb0:amd64 (0.9.24-1) ...
-Setting up libtdb1:amd64 (2:1.4.13+samba4.22.3+dfsg-4~bpo12+1) ...
-Setting up samba-common (2:4.22.3+dfsg-4~bpo12+1) ...
-
-Creating config file /etc/samba/smb.conf with new version
-Setting up libtevent0:amd64 (2:0.16.2+samba4.22.3+dfsg-4~bpo12+1) ...
-Setting up libldb2:amd64 (2:2.11.0+samba4.22.3+dfsg-4~bpo12+1) ...
-Setting up samba-libs:amd64 (2:4.22.3+dfsg-4~bpo12+1) ...
 Setting up libsmbclient:amd64 (2:4.22.3+dfsg-4~bpo12+1) ...
 Setting up smbclient (2:4.22.3+dfsg-4~bpo12+1) ...
 Processing triggers for libc-bin (2.36-9+deb12u13) ...
 CLDS: * Install smbclient.
-CLDS: * Disk size = 4650704K. Space Used = 36784K. Runtime = 00:00:00:08.
+CLDS: * Disk size = 4648932K. Space Used = 3064K. Runtime = 00:00:00:01.
