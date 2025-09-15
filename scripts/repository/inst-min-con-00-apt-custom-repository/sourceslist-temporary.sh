@@ -16,3 +16,4 @@ GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_docker-stable boo
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_google-cloud-main cloud-sdk main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_google-main stable main"
 GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_qgis-main bookworm main"
+GF_ADD_SOURCE_LIST tmp "deb http://localhost/aptly-repo/master_virtualbox-contrib bookworm contrib"
