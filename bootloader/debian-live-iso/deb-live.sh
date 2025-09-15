@@ -56,3 +56,4 @@ deb_live_iso="/media/sf_shared/dump/debian-live/debian-live-13.1.0-amd64-standar
     echo "TODO:"
     echo "      Overwrite ./working/ to ../../binary"
     echo "      \cp -a working/boot/ working/isolinux/ ../../binary/"
+    echo "      TEST: ./cust-live-deb/cld-mkiso.test.sh"
