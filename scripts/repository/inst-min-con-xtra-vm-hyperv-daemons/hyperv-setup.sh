@@ -3,14 +3,14 @@
 
 
 
-# Add hyperv settings to //etc/initramfs-tools/modules.
+# Add hyperv settings to /etc/initramfs-tools/modules.
     hyperv_config_start="### Hyper-V modules: START ###"
     hyperv_config_end="### Hyper-V modules: END ###"
 
     # Remove between patterns, including patterns.
-    sed -i --follow-symlinks "/${hyperv_config_start}/,/${hyperv_config_end}/d" //etc/initramfs-tools/modules
+    sed -i --follow-symlinks "/${hyperv_config_start}/,/${hyperv_config_end}/d" /etc/initramfs-tools/modules
 
-    # Add hyperv settings to //etc/initramfs-tools/modules.
+    # Add hyperv settings to /etc/initramfs-tools/modules.
     {
         echo "${hyperv_config_start}"
 cat << 'EOF'
