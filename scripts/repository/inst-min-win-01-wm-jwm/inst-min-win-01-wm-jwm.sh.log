@@ -70,7 +70,7 @@ Get:37 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libx
 Get:38 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libpangoxft-1.0-0 amd64 1.50.12+ds-1 [26.7 kB]
 Get:39 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 librsvg2-2 amd64 2.54.7+dfsg-1~deb12u1 [2,620 kB]
 Get:40 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 jwm amd64 2.4.3-1 [146 kB]
-Fetched 19.3 MB in 5s (3,712 kB/s)
+Fetched 19.3 MB in 0s (118 MB/s)
 Selecting previously unselected package hicolor-icon-theme.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 111871 files and directories currently installed.)
 Preparing to unpack .../00-hicolor-icon-theme_0.17-2_all.deb ...
@@ -241,19 +241,19 @@ update-alternatives: using /usr/bin/jwm to provide /usr/bin/x-window-manager (x-
 Processing triggers for libc-bin (2.36-9+deb12u13) ...
 Processing triggers for menu (2.1.49) ...
 './cld/app/jwm' -> '/usr/local/cld/app/jwm'
-'./cld/app/jwm/jwm-bootstrap.sh' -> '/usr/local/cld/app/jwm/jwm-bootstrap.sh'
 './cld/app/jwm/jwmrc' -> '/usr/local/cld/app/jwm/jwmrc'
-'./cld/app/jwm/jwmrc/jwmrc-key.xml' -> '/usr/local/cld/app/jwm/jwmrc/jwmrc-key.xml'
 './cld/app/jwm/jwmrc/jwmrc-menu-shutdown.xml' -> '/usr/local/cld/app/jwm/jwmrc/jwmrc-menu-shutdown.xml'
 './cld/app/jwm/jwmrc/jwmrc-menus.xml' -> '/usr/local/cld/app/jwm/jwmrc/jwmrc-menus.xml'
 './cld/app/jwm/jwmrc/jwmrc-tray.xml' -> '/usr/local/cld/app/jwm/jwmrc/jwmrc-tray.xml'
+'./cld/app/jwm/jwmrc/jwmrc-key.xml' -> '/usr/local/cld/app/jwm/jwmrc/jwmrc-key.xml'
 './cld/app/jwm/jwmrc/icons' -> '/usr/local/cld/app/jwm/jwmrc/icons'
 './cld/app/jwm/jwmrc/icons/bomb-1F4A3.svg' -> '/usr/local/cld/app/jwm/jwmrc/icons/bomb-1F4A3.svg'
-'./cld/app/jwm/jwmrc/icons/gear-2699.svg' -> '/usr/local/cld/app/jwm/jwmrc/icons/gear-2699.svg'
 './cld/app/jwm/jwmrc/icons/counterclockwise-1F504.svg' -> '/usr/local/cld/app/jwm/jwmrc/icons/counterclockwise-1F504.svg'
+'./cld/app/jwm/jwmrc/icons/gear-2699.svg' -> '/usr/local/cld/app/jwm/jwmrc/icons/gear-2699.svg'
+'./cld/app/jwm/jwm-bootstrap.sh' -> '/usr/local/cld/app/jwm/jwm-bootstrap.sh'
 './cld/home' -> '/usr/local/cld/home'
 './cld/home/.jwmrc' -> '/usr/local/cld/home/.jwmrc'
 CLDS: * Install Window Manager jwm: JWM v2.4.4 by Joe Wingbermuehle.
 CLDS: * Set .
 CLDS: * Change X window manager: update-alternatives --config x-window-manager
-CLDS: * Disk size = 5149900K. Space Used = 88980K. Runtime = 00:00:00:17.
+CLDS: * Disk size = 5133784K. Space Used = 89012K. Runtime = 00:00:00:05.

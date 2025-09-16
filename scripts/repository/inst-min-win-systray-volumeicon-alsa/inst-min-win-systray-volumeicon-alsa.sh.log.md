@@ -3,7 +3,7 @@
   * Install volume controller in system tray.
   * Set left-click to display volume slider: lmb_slider=true.
   * Set volumeicon to run on JWN startup.
-  * Disk size = 5152128K. Space Used = 548K. Runtime = 00:00:00:07.
+  * Disk size = 5136008K. Space Used = 544K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libnotify4 volumeicon-alsa
