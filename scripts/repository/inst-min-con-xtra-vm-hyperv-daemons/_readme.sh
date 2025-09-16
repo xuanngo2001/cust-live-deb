@@ -4,6 +4,13 @@
 
 # Reference:
     - https://techlabs.blog/categories/debian-linux/install-linux-integration-services-and-hyper-v-daemons-on-debian
+    - https://packages.debian.org/bookworm/amd64/hyperv-daemons/filelist
+
+# Debug
+    systemctl list-unit-files --no-page | grep hv
+    systemctl start hv-fcopy-daemon
+    systemctl status hv-fcopy-daemon
+
 
 # For Debian 10 (Buster) and earlier:
 
