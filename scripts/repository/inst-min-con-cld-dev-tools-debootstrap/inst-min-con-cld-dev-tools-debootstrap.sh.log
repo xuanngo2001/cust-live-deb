@@ -10,33 +10,25 @@ Recommended packages:
   arch-test
 The following NEW packages will be installed:
   debootstrap distro-info distro-info-data
-0 upgraded, 3 newly installed, 0 to remove and 15 not upgraded.
-Need to get 74.8 kB of archives.
-After this operation, 419 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 distro-info-data all 0.58+deb12u5 [6,452 B]
-Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 distro-info amd64 1.5+deb12u1 [18.1 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 debootstrap all 1.0.141~bpo12+1 [50.2 kB]
-<<<<<<< HEAD
-Fetched 74.8 kB in 0s (1,099 kB/s)
-=======
-Fetched 74.8 kB in 0s (3,918 kB/s)
->>>>>>> 7a0fce1bbbecdb30c170104408daee0b91545167
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 69.7 kB of archives.
+After this operation, 376 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 debootstrap all 1.0.128+nmu2+deb12u2 [45.1 kB]
+Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 distro-info-data all 0.58+deb12u5 [6,452 B]
+Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 distro-info amd64 1.5+deb12u1 [18.1 kB]
+Fetched 69.7 kB in 0s (1,171 kB/s)
+Selecting previously unselected package debootstrap.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17320 files and directories currently installed.)
+Preparing to unpack .../debootstrap_1.0.128+nmu2+deb12u2_all.deb ...
+Unpacking debootstrap (1.0.128+nmu2+deb12u2) ...
 Selecting previously unselected package distro-info-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17555 files and directories currently installed.)
 Preparing to unpack .../distro-info-data_0.58+deb12u5_all.deb ...
 Unpacking distro-info-data (0.58+deb12u5) ...
 Selecting previously unselected package distro-info.
 Preparing to unpack .../distro-info_1.5+deb12u1_amd64.deb ...
 Unpacking distro-info (1.5+deb12u1) ...
-Selecting previously unselected package debootstrap.
-Preparing to unpack .../debootstrap_1.0.141~bpo12+1_all.deb ...
-Unpacking debootstrap (1.0.141~bpo12+1) ...
+Setting up debootstrap (1.0.128+nmu2+deb12u2) ...
 Setting up distro-info-data (0.58+deb12u5) ...
 Setting up distro-info (1.5+deb12u1) ...
-Setting up debootstrap (1.0.141~bpo12+1) ...
 CLDS: * Install debootstrap allows the creation of a Debian base system in a directory.
-<<<<<<< HEAD
-CLDS: * Disk size = 1002952K. Space Used = 516K. Runtime = 00:00:00:01.
-=======
-CLDS: * Disk size = 1019088K. Space Used = 516K. Runtime = 00:00:00:00.
->>>>>>> 7a0fce1bbbecdb30c170104408daee0b91545167
+CLDS: * Disk size = 1261864K. Space Used = 484K. Runtime = 00:00:00:00.
