@@ -13,7 +13,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
     apt-get -y install hyperv-daemons
 
 # Setup hyperv modules in initramfs.
-    ./hyperv-setup.sh
+    # hv-fcopy-daemon is removed from Debian trixie onwards.
+    #./hyperv-setup.sh
 
 # Log
     echo "${GV_LOG} * To enable copy and paste between host and VMs."
