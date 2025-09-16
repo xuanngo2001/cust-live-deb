@@ -1,7 +1,7 @@
-
-
-
-
+#!/bin/bash
+set -e
+# Description: Setup Hyper-V modules in initramfs so that you can copy and paste text between Windows host and Linux guest.
+this_script=$(basename "${0}")
 
 # Add hyperv settings to /etc/initramfs-tools/modules.
     hyperv_config_start="### Hyper-V modules: START ###"
@@ -21,3 +21,6 @@ hv_netvsc
 EOF
         echo "${hyperv_config_end}"
     } >> /etc/initramfs-tools/modules
+
+# Update initramfs.
+    update-initramfs -u

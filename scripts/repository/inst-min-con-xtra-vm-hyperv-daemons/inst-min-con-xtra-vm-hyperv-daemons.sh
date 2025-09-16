@@ -12,7 +12,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install hyperv-daemons.
     apt-get -y install hyperv-daemons
 
-    update-initramfs -u
+# Setup hyperv modules in initramfs.
+    ./hyperv-setup.sh
 
 # Log
     echo "${GV_LOG} * To enable copy and paste between host and VMs."
