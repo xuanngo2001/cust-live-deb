@@ -1,7 +1,11 @@
 * >>>>>>>>> Running inst-min-con-ntp.sh ...
   * After this operation, 23.2 MB of additional disk space will be used.
   * Install Network Time Protocol: ntp.
+<<<<<<< HEAD
   * Disk size = 1683436K. Space Used = 43028K. Runtime = 00:00:00:03.
+=======
+  * Disk size = 1683440K. Space Used = 43028K. Runtime = 00:00:00:09.
+>>>>>>> 601a57ba2b3d937c1080f1a0e57227705f03cbbc
   * The following NEW packages will be installed:
   ```bash
 libnsl2 libpython3.11-minimal libpython3.11-stdlib libpython3-stdlib media-types
