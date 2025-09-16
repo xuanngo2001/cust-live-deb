@@ -169,7 +169,6 @@ gstreamer1.0-plugins-good
 gtk-update-icon-cache
 gzip
 hardinfo
-hardinfo2
 hdparm
 hfsprogs
 hicolor-icon-theme
@@ -405,6 +404,7 @@ libgif7
 libgit2-1.5
 libgl1
 libgl1-mesa-dri
+libglapi-mesa
 libgles2
 libglew2.2
 libglib2.0-0
@@ -569,9 +569,6 @@ libnfsidmap1
 libnftables1
 libnftnl11
 libnghttp2-14
-libnghttp3-9
-libngtcp2-16
-libngtcp2-crypto-gnutls8
 libnice10
 libnl-3-200
 libnl-genl-3-200
@@ -672,7 +669,6 @@ libqt5core5a
 libqt5dbus5
 libqt5gui5
 libqt5network5
-libqt5opengl5
 libqt5svg5
 libqt5widgets5
 libqt5x11extras5
@@ -683,7 +679,6 @@ libraw1394-11
 libraw20
 libreadline8
 libregexp-ipv6-perl
-libreiserfscore0
 librhash0
 librist4
 librsvg2-2
@@ -705,7 +700,6 @@ libsensors-config
 libsensors5
 libsepol2
 libserd-0-0
-libsharpyuv0
 libshine3
 libshout3
 libsigc++-2.0-0v5
@@ -907,21 +901,22 @@ libyaml-cpp0.7
 libyaml-pp-perl
 libyuv0
 libz3-4
-libzfs6linux
+libzfs4linux
 libzimg2
 libzip4
 libzmq5
-libzpool6linux
+libzpool5linux
 libzstd1
 libzvbi-common
 libzvbi0
 linux-base
-linux-headers-6.12.43+deb12-amd64
-linux-headers-6.12.43+deb12-common
+linux-compiler-gcc-12-x86
+linux-headers-6.1.0-39-amd64
+linux-headers-6.1.0-39-common
 linux-headers-amd64
-linux-image-6.12.43+deb12-amd64
+linux-image-6.1.0-39-amd64
 linux-image-amd64
-linux-kbuild-6.12.43+deb12
+linux-kbuild-6.1
 linux-libc-dev
 live-boot
 live-boot-initramfs-tools
@@ -933,6 +928,7 @@ logrotate
 logsave
 lsb-release
 lsof
+lua-lpeg
 lxrandr
 make
 mariadb-client
@@ -943,7 +939,6 @@ mariadb-server-core
 mawk
 media-types
 menu
-mesa-libgallium
 microsoft-edge-stable
 module-assistant
 mount
@@ -1036,6 +1031,7 @@ python3-distutils
 python3-dnspython
 python3-httplib2
 python3-jinja2
+python3-ldb
 python3-lib2to3
 python3-markupsafe
 python3-minimal
@@ -1046,7 +1042,10 @@ python3-pip
 python3-pkg-resources
 python3-pyparsing
 python3-resolvelib
+python3-samba
 python3-setuptools
+python3-talloc
+python3-tdb
 python3-wheel
 python3-yaml
 python3.11
@@ -1089,6 +1088,7 @@ sysvinit-utils
 tar
 tasksel
 tasksel-data
+tdb-tools
 testdisk
 thunar
 thunar-archive-plugin
