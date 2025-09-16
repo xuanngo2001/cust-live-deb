@@ -3,11 +3,7 @@
   * Install Media Player: mpv 0.35.1 Copyright © 2000-2023 mpv/MPlayer/mplayer2 projects.
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-<<<<<<< HEAD
-  * Disk size = 7050656K. Space Used = 183900K. Runtime = 00:00:00:10.
-=======
-  * Disk size = 7049908K. Space Used = 183900K. Runtime = 00:00:00:17.
->>>>>>> 601a57ba2b3d937c1080f1a0e57227705f03cbbc
+  * Disk size = 7052200K. Space Used = 183900K. Runtime = 00:00:00:14.
   * The following NEW packages will be installed:
   ```bash
 libaribb24-0 libass9 libavc1394-0 libavcodec60 libavdevice60

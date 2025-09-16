@@ -6,11 +6,7 @@
   *   jmtpfs -o allow_other /path/to/your/mount/directory/
   *   # Enter your PIN to unlock your smartphone.
   *   cd /path/to/your/mount/directory/
-<<<<<<< HEAD
-  * Disk size = 1605692K. Space Used = 10532K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 1605700K. Space Used = 10536K. Runtime = 00:00:00:06.
->>>>>>> 601a57ba2b3d937c1080f1a0e57227705f03cbbc
+  * Disk size = 1605728K. Space Used = 10536K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 jmtpfs libmagic1 libmagic-mgc libmtp9 libmtp-common

@@ -3,11 +3,7 @@
   * Install php-fpm.
   * Need for Drupal with nginx.
   * Used to speed up the performance of a website. It is much faster than traditional CGI based methods and has the ability to handle tremendous loads simultaneously.
-<<<<<<< HEAD
-  * Disk size = 4506548K. Space Used = 26616K. Runtime = 00:00:00:08.
-=======
-  * Disk size = 4506548K. Space Used = 26616K. Runtime = 00:00:00:17.
->>>>>>> 601a57ba2b3d937c1080f1a0e57227705f03cbbc
+  * Disk size = 4508096K. Space Used = 26616K. Runtime = 00:00:00:06.
   * The following NEW packages will be installed:
   ```bash
 libsodium23 php8.2-cli php8.2-common php8.2-fpm php8.2-opcache
