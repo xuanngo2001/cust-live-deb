@@ -36,10 +36,10 @@
 
 # Delete text between 2 patterns.
     # Delete text between patterns, excluding the lines containing these patterns:
-        sed -i --follow-symlinks '/PATTERN-1/,/PATTERN-2/{//!d}' input.txt
+        sed '/PATTERN-1/,/PATTERN-2/{//!d}' input.txt
 
     # Delete text between patterns, including the lines containing these patterns:
-        sed -i --follow-symlinks '/PATTERN-1/,/PATTERN-2/d' input.txt
+        sed '/PATTERN-1/,/PATTERN-2/d' input.txt
     
 # Delete all the lines after PATTERN, use this
     sed '/PATTERN/,$d' input.txt    
