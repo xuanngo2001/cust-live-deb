@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-gnuplot-nox.sh ...
   * After this operation, 21.1 MB of additional disk space will be used.
   * Install gnuplot-nox.
-<<<<<<< HEAD
-  * Disk size = 4081004K. Space Used = 28396K. Runtime = 00:00:00:05.
-=======
-  * Disk size = 4098688K. Space Used = 28380K. Runtime = 00:00:00:05.
->>>>>>> 7a0fce1bbbecdb30c170104408daee0b91545167
+  * Disk size = 4311264K. Space Used = 28400K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 aglfn fontconfig gnuplot-data gnuplot-nox libabsl20220623

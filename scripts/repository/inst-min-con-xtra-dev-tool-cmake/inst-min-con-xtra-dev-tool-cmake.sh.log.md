@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-dev-tool-cmake.sh ...
-  * After this operation, 54.0 MB of additional disk space will be used.
+  * After this operation, 42.0 MB of additional disk space will be used.
   * Install cmake.
-<<<<<<< HEAD
-  * Disk size = 2724080K. Space Used = 77560K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 2740192K. Space Used = 77552K. Runtime = 00:00:00:02.
->>>>>>> 7a0fce1bbbecdb30c170104408daee0b91545167
+  * Disk size = 2964288K. Space Used = 61124K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 cmake cmake-data libarchive13 libjsoncpp25 librhash0

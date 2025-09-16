@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-findimagedupes.sh ...
   * After this operation, 224 MB of additional disk space will be used.
   * Install findimagedupes.
-<<<<<<< HEAD
-  * Disk size = 2986572K. Space Used = 262296K. Runtime = 00:00:00:06.
-=======
-  * Disk size = 3002688K. Space Used = 262300K. Runtime = 00:00:00:07.
->>>>>>> 7a0fce1bbbecdb30c170104408daee0b91545167
+  * Disk size = 3226364K. Space Used = 261880K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
 binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-12
@@ -16,8 +12,8 @@ libfile-desktopentry-perl libfile-mimeinfo-perl libgcc-12-dev libgprofng0 libgra
 libgraphicsmagick-q16-3 libheif1 libhwy1 libinline-c-perl libinline-perl
 libipc-system-simple-perl libisl23 libitm1 libjbig0 libjxl0.7
 liblerc4 liblsan0 libmpc3 libmpfr6 libnuma1
-libparse-recdescent-perl libpegex-perl libquadmath0 libregexp-ipv6-perl libsharpyuv0
-libtiff6 libtsan2 libubsan1 liburi-perl libvmaf1
-libwebp7 libwebpmux3 libwmflite-0.2-7 libx265-199 libxxx-perl
-libyaml-pp-perl shared-mime-info
+libparse-recdescent-perl libpegex-perl libquadmath0 libregexp-ipv6-perl libtiff6
+libtsan2 libubsan1 liburi-perl libvmaf1 libwebp7
+libwebpmux3 libwmflite-0.2-7 libx265-199 libxxx-perl libyaml-pp-perl
+shared-mime-info
   ```

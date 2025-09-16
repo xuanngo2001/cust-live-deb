@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-pciutils.sh ...
   * After this operation, 1,717 kB of additional disk space will be used.
   * Install pciutils to troubleshoot pci devices(i.e. lspci).
-<<<<<<< HEAD
-  * Disk size = 1676032K. Space Used = 2168K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 1692168K. Space Used = 2172K. Runtime = 00:00:00:01.
->>>>>>> 7a0fce1bbbecdb30c170104408daee0b91545167
+  * Disk size = 1931904K. Space Used = 2176K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libpci3 pci.ids pciutils
