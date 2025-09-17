@@ -16,7 +16,7 @@ The following NEW packages will be installed:
   feh fonts-urw-base35 libexif12 libgs-common libgs10 libgs10-common
   libid3tag0 libidn12 libijs-0.35 libimlib2 libjbig2dec0 libpaper1 libspectre1
   libwebpdemux2 poppler-data xfonts-encodings xfonts-utils yudit-common
-0 upgraded, 18 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 18 newly installed, 0 to remove and 15 not upgraded.
 Need to get 19.2 MB of archives.
 After this operation, 71.0 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 poppler-data all 0.4.12-1 [1,601 kB]
@@ -33,14 +33,14 @@ Get:11 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libj
 Get:12 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libpaper1 amd64 1.1.29 [12.5 kB]
 Get:13 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libgs10 amd64 10.0.0~dfsg-11+deb12u7 [2,467 kB]
 Get:14 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libspectre1 amd64 0.2.12-1 [50.6 kB]
-Get:15 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libwebpdemux2 amd64 1.2.4-0.2+deb12u1 [99.4 kB]
+Get:15 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libwebpdemux2 amd64 1.5.0-0.1~bpo12+1 [113 kB]
 Get:16 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libimlib2 amd64 1.10.0-4+deb12u1 [206 kB]
 Get:17 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 yudit-common all 3.1.0-1 [1,752 kB]
 Get:18 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 feh amd64 3.9.1-2 [157 kB]
 Preconfiguring packages ...
-Fetched 19.2 MB in 0s (119 MB/s)
+Fetched 19.2 MB in 0s (163 MB/s)
 Selecting previously unselected package poppler-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 119140 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 119673 files and directories currently installed.)
 Preparing to unpack .../00-poppler-data_0.4.12-1_all.deb ...
 Unpacking poppler-data (0.4.12-1) ...
 Selecting previously unselected package libexif12:amd64.
@@ -83,8 +83,8 @@ Selecting previously unselected package libspectre1:amd64.
 Preparing to unpack .../13-libspectre1_0.2.12-1_amd64.deb ...
 Unpacking libspectre1:amd64 (0.2.12-1) ...
 Selecting previously unselected package libwebpdemux2:amd64.
-Preparing to unpack .../14-libwebpdemux2_1.2.4-0.2+deb12u1_amd64.deb ...
-Unpacking libwebpdemux2:amd64 (1.2.4-0.2+deb12u1) ...
+Preparing to unpack .../14-libwebpdemux2_1.5.0-0.1~bpo12+1_amd64.deb ...
+Unpacking libwebpdemux2:amd64 (1.5.0-0.1~bpo12+1) ...
 Selecting previously unselected package libimlib2:amd64.
 Preparing to unpack .../15-libimlib2_1.10.0-4+deb12u1_amd64.deb ...
 Unpacking libimlib2:amd64 (1.10.0-4+deb12u1) ...
@@ -98,7 +98,7 @@ Setting up libpaper1:amd64 (1.1.29) ...
 
 Creating config file /etc/papersize with new version
 Setting up libijs-0.35:amd64 (0.35-15) ...
-Setting up libwebpdemux2:amd64 (1.2.4-0.2+deb12u1) ...
+Setting up libwebpdemux2:amd64 (1.5.0-0.1~bpo12+1) ...
 Setting up libgs-common (10.0.0~dfsg-11+deb12u7) ...
 Setting up poppler-data (0.4.12-1) ...
 Setting up libid3tag0:amd64 (0.15.1b-14) ...
@@ -119,4 +119,4 @@ Processing triggers for libc-bin (2.36-9+deb12u13) ...
 Processing triggers for fontconfig (2.14.1-4) ...
 './cld/doc/feh-help.txt' -> '/usr/local/cld/doc/feh-help.txt'
 CLDS: * Install command line image viewer: feh.
-CLDS: * Disk size = 5538888K. Space Used = 88128K. Runtime = 00:00:00:03.
+CLDS: * Disk size = 5317384K. Space Used = 88184K. Runtime = 00:00:00:03.
