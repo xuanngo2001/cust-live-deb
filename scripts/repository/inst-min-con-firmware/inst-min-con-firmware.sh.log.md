@@ -14,11 +14,12 @@
   * After this operation, 7,046 kB of additional disk space will be used.
   * After this operation, 61.4 kB of additional disk space will be used.
   * Install firmwares.
-  * Disk size = 1831352K. Space Used = 462880K. Runtime = 00:00:01:37.
+  * Disk size = 1590516K. Space Used = 463720K. Runtime = 00:00:01:37.
   * The following NEW packages will be installed:
   ```bash
 atmel-firmware bluez-firmware firmware-amd-graphics firmware-atheros firmware-bnx2
 firmware-bnx2x firmware-brcm80211 firmware-ipw2x00 firmware-ivtv firmware-iwlwifi
-firmware-libertas firmware-linux firmware-linux-free* firmware-linux-nonfree firmware-linux-nonfree*
-firmware-misc-nonfree firmware-misc-nonfree* firmware-qlogic firmware-realtek firmware-zd1211
+firmware-libertas firmware-linux firmware-linux-free firmware-linux-free* firmware-linux-nonfree
+firmware-linux-nonfree* firmware-misc-nonfree firmware-misc-nonfree* firmware-qlogic firmware-realtek
+firmware-zd1211
   ```

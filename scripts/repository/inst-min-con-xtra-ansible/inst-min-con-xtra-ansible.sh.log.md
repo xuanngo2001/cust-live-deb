@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-min-con-xtra-ansible.sh ...
-  * After this operation, 305 MB of additional disk space will be used.
+  * After this operation, 304 MB of additional disk space will be used.
   * Install ansible.
   * sshpass: to allow passing username and password on the fly.
-  * Disk size = 2545092K. Space Used = 600920K. Runtime = 00:00:00:20.
+  * Disk size = 2304412K. Space Used = 600044K. Runtime = 00:00:00:23.
   * The following NEW packages will be installed:
   ```bash
 ansible ansible-core ca-certificates ieee-data libcbor0.8

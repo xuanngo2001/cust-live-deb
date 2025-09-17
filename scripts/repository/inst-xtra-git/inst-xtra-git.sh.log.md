@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-xtra-git.sh ...
   * Install git.
-  * Disk size = 8803240K. Space Used = 12K. Runtime = 00:00:00:01.
+  * Disk size = 8593628K. Space Used = 12K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 git*
