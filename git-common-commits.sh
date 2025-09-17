@@ -9,8 +9,9 @@ set -e
   find binary/ -type f -name '*.log' -exec git add '{}' + -exec git commit -m 'update binary/*.log' {} +         || true
 
 # scripts/repository/**
-  find scripts/repository/ -type f -name '*.sh.log' -exec git add '{}' + -exec git commit -m 'update repository/*.sh.log' {} +         || true
-  find scripts/repository/ -type f -name '*.sh.log.md' -exec git add '{}' + -exec git commit -m 'update repository/*.sh.log.md' {} +   || true
+  find scripts/repository/ -type f -name '*.sh.log*' -exec git add '{}' + -exec git commit -m 'update repository/*.sh.log*' {} +         || true
+#   find scripts/repository/ -type f -name '*.sh.log.deb.txt' -exec git add '{}' + -exec git commit -m 'update repository/*.sh.log.deb.txt' {} +         || true
+#   find scripts/repository/ -type f -name '*.sh.log.md' -exec git add '{}' + -exec git commit -m 'update repository/*.sh.log.md' {} +   || true
 
 # Commit individual files
   files_to_commit=(build-elapsed.txt)
