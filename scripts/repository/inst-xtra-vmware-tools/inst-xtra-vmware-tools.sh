@@ -15,3 +15,4 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Log
     echo "${GV_LOG} * Enable shared folder and bidirectional clipboard."
+    echo "${GV_LOG} * Run only if played from VMWare: /usr/bin/vmware-user."
