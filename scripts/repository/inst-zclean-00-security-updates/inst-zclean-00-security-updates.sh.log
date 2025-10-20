@@ -20,11 +20,11 @@ Hit:14 http://localhost/aptly-repo/master_docker-stable bookworm InRelease
 Hit:15 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:16 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:17 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
-Hit:18 https://download.docker.com/linux/debian bookworm InRelease
-Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
-Hit:20 https://deb.nodesource.com/node_20.x nodistro InRelease
-Hit:21 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:22 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
+Hit:19 https://download.docker.com/linux/debian bookworm InRelease
+Hit:20 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:21 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:22 https://deb.nodesource.com/node_20.x nodistro InRelease
 Hit:23 https://packages.cloud.google.com/apt cloud-sdk InRelease
 Reading package lists...
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -66,26 +66,26 @@ Get:6 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backpo
 Get:7 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 iproute2 amd64 6.15.0-1~bpo12+1 [1,080 kB]
 Get:8 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libcom-err2 amd64 1.47.2-3~bpo12+1 [24.7 kB]
 Get:9 http://localhost/aptly-repo/master_bookworm-backports-main bookworm-backports/main amd64 libss2 amd64 1.47.2-3~bpo12+1 [29.5 kB]
-Get:10 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 141.0.3537.57-1 [181 MB]
+Get:10 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 141.0.3537.85-1 [181 MB]
 Preconfiguring packages ...
-Fetched 183 MB in 3s (55.4 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166581 files and directories currently installed.)
+Fetched 183 MB in 5s (39.4 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166671 files and directories currently installed.)
 Preparing to unpack .../sysvinit-utils_3.08-3~bpo12+2_amd64.deb ...
 Unpacking sysvinit-utils (3.08-3~bpo12+2) over (3.06-4) ...
 Setting up sysvinit-utils (3.08-3~bpo12+2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166581 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166671 files and directories currently installed.)
 Preparing to unpack .../logsave_1.47.2-3~bpo12+1_amd64.deb ...
 Unpacking logsave (1.47.2-3~bpo12+1) over (1.47.0-2+b2) ...
 Preparing to unpack .../libext2fs2_1.47.2-3~bpo12+1_amd64.deb ...
 Unpacking libext2fs2:amd64 (1.47.2-3~bpo12+1) over (1.47.0-2+b2) ...
 Setting up libext2fs2:amd64 (1.47.2-3~bpo12+1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166579 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166669 files and directories currently installed.)
 Preparing to unpack .../0-e2fsprogs_1.47.2-3~bpo12+1_amd64.deb ...
 Unpacking e2fsprogs (1.47.2-3~bpo12+1) over (1.47.0-2+b2) ...
 Preparing to unpack .../1-systemd-sysv_254.26-1~bpo12+1_amd64.deb ...
 Unpacking systemd-sysv (254.26-1~bpo12+1) over (252.39-1~deb12u1) ...
-Preparing to unpack .../2-microsoft-edge-stable_141.0.3537.57-1_amd64.deb ...
-Unpacking microsoft-edge-stable (141.0.3537.57-1) over (112.0.1722.48-1) ...
+Preparing to unpack .../2-microsoft-edge-stable_141.0.3537.85-1_amd64.deb ...
+Unpacking microsoft-edge-stable (141.0.3537.85-1) over (112.0.1722.48-1) ...
 Preparing to unpack .../3-libbpf1_1%3a1.4.6-1~bpo12+1_amd64.deb ...
 Unpacking libbpf1:amd64 (1:1.4.6-1~bpo12+1) over (1:1.1.2-0+deb12u1) ...
 Preparing to unpack .../4-iproute2_6.15.0-1~bpo12+1_amd64.deb ...
@@ -97,7 +97,7 @@ Preparing to unpack .../5-libcom-err2_1.47.2-3~bpo12+1_amd64.deb ...
 Unpacking libcom-err2:amd64 (1.47.2-3~bpo12+1) over (1.47.0-2+b2) ...
 Preparing to unpack .../6-libss2_1.47.2-3~bpo12+1_amd64.deb ...
 Unpacking libss2:amd64 (1.47.2-3~bpo12+1) over (1.47.0-2+b2) ...
-Setting up microsoft-edge-stable (141.0.3537.57-1) ...
+Setting up microsoft-edge-stable (141.0.3537.85-1) ...
 Setting up systemd-sysv (254.26-1~bpo12+1) ...
 Setting up libcom-err2:amd64 (1.47.2-3~bpo12+1) ...
 Setting up libss2:amd64 (1.47.2-3~bpo12+1) ...
@@ -128,4 +128,4 @@ W: No zstd in /usr/bin:/sbin:/bin, using gzip
 setupcon is missing. Please install the 'console-setup' package.
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 8059100K. Space Used = 306188K. Runtime = 00:00:01:10.
+CLDS: * Disk size = 8059644K. Space Used = 306456K. Runtime = 00:00:01:09.
