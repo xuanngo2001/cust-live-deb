@@ -39,3 +39,17 @@
     rename "s/Episode /Ep./i" *.mp4
     rename "s/Ep (\d{1,2})_/Ep.\$1_/i" *.mp4
     
+# Rename filenames
+    # Replace non-alphanumeric with dot.
+    for f in *; do mv "$f" "$(echo "$f" | sed 's/[^a-zA-Z0-9.]/./'g)"; done
+
+    # Replace non-alphanumeric with dot, except undercore.
+    for f in *; do mv "$f" "$(echo "$f" | sed 's/[^a-zA-Z0-9._-]/./g')"; done
+
+        # Replace all multiple dots with 1 dot in filename
+        for file in .*; do
+        if [ -f "$file" ]; then
+            new_name=$(echo "$file" | sed -E 's/\.\.+/./g' | sed -E 's/^\.//')
+            mv "$file" "$new_name"
+        fi
+        done
