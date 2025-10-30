@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-smb-samba.sh ...
   * After this operation, 38.4 MB of additional disk space will be used.
   * Install samba.
-  * Disk size = 4671048K. Space Used = 47252K. Runtime = 00:00:00:03.
+  * Disk size = 4673104K. Space Used = 47252K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 libldb2 liblmdb0 libtdb1 libtevent0 samba

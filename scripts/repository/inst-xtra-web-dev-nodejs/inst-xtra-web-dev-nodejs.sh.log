@@ -1,5 +1,5 @@
 CLDS:>>>>>>>>> Running inst-xtra-web-dev-nodejs.sh ...
-[38;5;79m2025-10-28 15:25:38 - Installing pre-requisites[0m
+[38;5;79m2025-10-30 16:09:05 - Installing pre-requisites[0m
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
@@ -22,13 +22,13 @@ Hit:16 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:17 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
 Hit:18 https://download.docker.com/linux/debian bookworm InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
-Hit:20 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:21 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:20 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:21 https://packages.microsoft.com/repos/edge stable InRelease
 Hit:22 https://packages.cloud.google.com/apt cloud-sdk InRelease
 Reading package lists...
 Building dependency tree...
 Reading state information...
-17 packages can be upgraded. Run 'apt list --upgradable' to see them.
+16 packages can be upgraded. Run 'apt list --upgradable' to see them.
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_bookworm-backports-contrib/dists/bookworm-backports/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -57,7 +57,7 @@ apt-transport-https is already the newest version (2.6.1).
 ca-certificates is already the newest version (20230311+deb12u1).
 curl is already the newest version (8.14.1-2~bpo12+1).
 gnupg is already the newest version (2.2.40-1.1+deb12u1).
-0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
@@ -85,11 +85,11 @@ Hit:21 https://dl.google.com/linux/chrome/deb stable InRelease
 Get:22 https://deb.nodesource.com/node_20.x nodistro InRelease [12.1 kB]
 Hit:23 https://packages.cloud.google.com/apt cloud-sdk InRelease
 Get:24 https://deb.nodesource.com/node_20.x nodistro/main amd64 Packages [12.8 kB]
-Fetched 25.0 kB in 3s (8,676 B/s)
+Fetched 25.0 kB in 7s (3,476 B/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
-17 packages can be upgraded. Run 'apt list --upgradable' to see them.
+16 packages can be upgraded. Run 'apt list --upgradable' to see them.
 W: http://localhost/aptly-repo/master_bookworm-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_aptly-main/dists/squeeze/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_bookworm-backports-contrib/dists/bookworm-backports/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
@@ -108,25 +108,25 @@ W: http://localhost/aptly-repo/master_google-cloud-main/dists/cloud-sdk/InReleas
 W: http://localhost/aptly-repo/master_google-main/dists/stable/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_qgis-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_virtualbox-contrib/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
-[1;34m2025-10-28 15:25:44 - Repository configured successfully.[0m
-[38;5;79m2025-10-28 15:25:44 - To install Node.js, run: apt install nodejs -y[0m
-[38;5;79m2025-10-28 15:25:44 - You can use N|solid Runtime as a node.js alternative[0m
-[1;32m2025-10-28 15:25:44 - To install N|solid Runtime, run: apt install nsolid -y 
+[1;34m2025-10-30 16:09:17 - Repository configured successfully.[0m
+[38;5;79m2025-10-30 16:09:17 - To install Node.js, run: apt install nodejs -y[0m
+[38;5;79m2025-10-30 16:09:17 - You can use N|solid Runtime as a node.js alternative[0m
+[1;32m2025-10-30 16:09:17 - To install N|solid Runtime, run: apt install nsolid -y 
 [0m
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   nodejs
-0 upgraded, 1 newly installed, 0 to remove and 17 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.
 Need to get 32.0 MB of archives.
 After this operation, 197 MB of additional disk space will be used.
 Get:1 https://deb.nodesource.com/node_20.x nodistro/main amd64 nodejs amd64 20.19.5-1nodesource1 [32.0 MB]
-Fetched 32.0 MB in 1s (45.7 MB/s)
+Fetched 32.0 MB in 1s (41.7 MB/s)
 Selecting previously unselected package nodejs.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 160204 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 160194 files and directories currently installed.)
 Preparing to unpack .../nodejs_20.19.5-1nodesource1_amd64.deb ...
 Unpacking nodejs (20.19.5-1nodesource1) ...
 Setting up nodejs (20.19.5-1nodesource1) ...
 CLDS: * Install nodejs.
-CLDS: * Disk size = 9075772K. Space Used = 234828K. Runtime = 00:00:00:11.
+CLDS: * Disk size = 9021480K. Space Used = 234856K. Runtime = 00:00:00:19.
