@@ -70,3 +70,11 @@
 
 # List files by size in descending order.
     find . -size +2k  -printf "%s %p\n" | sort -k1nr | cut -d ' ' --complement -f1 > big-list.txt
+
+
+# Busybox commands
+    # List all files recursively and sort by size (largest first)
+        find . -type f -exec ls -l {} \; | sort -k5 -nr
+
+    # Show just filename and size, sorted by size
+        find . -type f -exec ls -l {} \; | awk '{print $5 "\t" $9}' | sort -nr
