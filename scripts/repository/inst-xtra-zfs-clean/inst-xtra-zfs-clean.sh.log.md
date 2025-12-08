@@ -2,4 +2,4 @@
   * ***************************************  BEFORE cleaning  *****************************************
   * ***************************************  AFTER cleaning  *****************************************
   * Solving E: You don't have enough free space in /var/cache/apt/archives/.
-  * Disk size = 7692264K. Space Used = -1467868K. Runtime = 00:00:00:01.
+  * Disk size = 7655688K. Space Used = -1463076K. Runtime = 00:00:00:01.

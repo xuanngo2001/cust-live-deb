@@ -1,5 +1,5 @@
 CLDS:>>>>>>>>> Running inst-xtra-web-dev-nodejs.sh ...
-[38;5;79m2025-11-27 16:19:29 - Installing pre-requisites[0m
+[38;5;79m2025-12-08 18:44:12 - Installing pre-requisites[0m
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
@@ -22,9 +22,9 @@ Hit:16 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:17 http://localhost/aptly-repo/master_qgis-main bookworm InRelease
 Hit:18 https://download.docker.com/linux/debian bookworm InRelease
 Hit:19 http://localhost/aptly-repo/master_virtualbox-contrib bookworm InRelease
-Hit:20 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:21 https://packages.cloud.google.com/apt cloud-sdk InRelease
-Hit:22 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:20 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:21 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:22 https://packages.cloud.google.com/apt cloud-sdk InRelease
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -84,8 +84,8 @@ Get:20 https://deb.nodesource.com/node_20.x nodistro InRelease [12.1 kB]
 Hit:21 https://packages.microsoft.com/repos/edge stable InRelease
 Hit:22 https://dl.google.com/linux/chrome/deb stable InRelease
 Hit:23 https://packages.cloud.google.com/apt cloud-sdk InRelease
-Get:24 https://deb.nodesource.com/node_20.x nodistro/main amd64 Packages [13.0 kB]
-Fetched 25.1 kB in 3s (8,590 B/s)
+Get:24 https://deb.nodesource.com/node_20.x nodistro/main amd64 Packages [13.2 kB]
+Fetched 25.3 kB in 3s (9,326 B/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -108,10 +108,10 @@ W: http://localhost/aptly-repo/master_google-cloud-main/dists/cloud-sdk/InReleas
 W: http://localhost/aptly-repo/master_google-main/dists/stable/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_qgis-main/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
 W: http://localhost/aptly-repo/master_virtualbox-contrib/dists/bookworm/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
-[1;34m2025-11-27 16:19:36 - Repository configured successfully.[0m
-[38;5;79m2025-11-27 16:19:36 - To install Node.js, run: apt install nodejs -y[0m
-[38;5;79m2025-11-27 16:19:36 - You can use N|solid Runtime as a node.js alternative[0m
-[1;32m2025-11-27 16:19:36 - To install N|solid Runtime, run: apt install nsolid -y 
+[1;34m2025-12-08 18:44:18 - Repository configured successfully.[0m
+[38;5;79m2025-12-08 18:44:18 - To install Node.js, run: apt install nodejs -y[0m
+[38;5;79m2025-12-08 18:44:18 - You can use N|solid Runtime as a node.js alternative[0m
+[1;32m2025-12-08 18:44:18 - To install N|solid Runtime, run: apt install nsolid -y 
 [0m
 Reading package lists...
 Building dependency tree...
@@ -122,11 +122,11 @@ The following NEW packages will be installed:
 Need to get 32.0 MB of archives.
 After this operation, 197 MB of additional disk space will be used.
 Get:1 https://deb.nodesource.com/node_20.x nodistro/main amd64 nodejs amd64 20.19.6-1nodesource1 [32.0 MB]
-Fetched 32.0 MB in 1s (61.4 MB/s)
+Fetched 32.0 MB in 0s (64.9 MB/s)
 Selecting previously unselected package nodejs.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 160889 files and directories currently installed.)
 Preparing to unpack .../nodejs_20.19.6-1nodesource1_amd64.deb ...
 Unpacking nodejs (20.19.6-1nodesource1) ...
 Setting up nodejs (20.19.6-1nodesource1) ...
 CLDS: * Install nodejs.
-CLDS: * Disk size = 9041584K. Space Used = 234864K. Runtime = 00:00:00:11.
+CLDS: * Disk size = 9000180K. Space Used = 234864K. Runtime = 00:00:00:10.
