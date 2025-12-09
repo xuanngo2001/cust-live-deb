@@ -10,6 +10,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Add CLD aptly repository key.
 yes | cp -av trusted.gpg /etc/apt/
 
+echo "${GV_LOG} * ===================== DONE XUAN iiiiiiii ====================="
+echo "${GV_LOG} * ===================== DONE XUAN ====================="
+
 # Add temporary local repository at the beginning of the sources.list file.
 source sourceslist-temporary.sh
 
@@ -18,4 +21,9 @@ source sourceslist-temporary.sh
 source sourceslist-live.sh
 
 # Update source.list
-apt-get update
+#   Commented out this for distro upgrade. Because host still using old distro.
+#apt-get update
+
+# Log
+echo "${GV_LOG} * ===================== DONE XUAN ====================="
+echo "${GV_LOG} * ===================== DONE XUAN ====================="
