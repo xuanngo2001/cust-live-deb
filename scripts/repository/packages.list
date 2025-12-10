@@ -34,7 +34,7 @@ wget
 # ./inst-min-con-05-keyring-aptly/inst-min-con-05-keyring-aptly.sh
 
 # ./inst-min-con-05-keyring-debmultimedia/inst-min-con-05-keyring-debmultimedia.sh
-
+gpgv
 # ./inst-min-con-05-keyring-google/inst-min-con-05-keyring-google.sh
 
 # ./inst-min-con-auto-log-root/inst-min-con-auto-log-root.sh
@@ -107,8 +107,6 @@ net-tools
 network-manager
 # ./inst-min-con-network-wpasupplicant/inst-min-con-network-wpasupplicant.sh
 wpasupplicant
-# ./inst-min-con-ntp/inst-min-con-ntp.sh
-ntp
 # ./inst-min-con-numlock/inst-min-con-numlock.sh
 numlockx
 # ./inst-min-con-pciutils/inst-min-con-pciutils.sh
@@ -379,6 +377,7 @@ google-chrome-stable
 # ./inst-std-inet-xtra-transmission-gtk/inst-std-inet-xtra-transmission-gtk.sh
 transmission-gtk
 # ./inst-std-multimedia-mpv-fix2/inst-std-multimedia-mpv-fix2.sh
+libdovi3
 libsixel1
 libopencore-amrnb0
 libopencore-amrwb0
@@ -416,7 +415,7 @@ libreoffice-writer
 # ./inst-std-system-alsamixer/inst-std-system-alsamixer.sh
 
 # ./inst-std-system-conky/inst-std-system-conky.sh
-conky
+conky-std
 # ./inst-std-system-conky-ncal/inst-std-system-conky-ncal.sh
 ncal
 # ./inst-std-system-gnome-disk-utility/inst-std-system-gnome-disk-utility.sh
@@ -462,9 +461,6 @@ docker-ce-cli
 containerd.io
 docker-buildx-plugin
 docker-compose-plugin
-# ./inst-xtra-eclipse-libwebkit2gtk-4.0-37/inst-xtra-eclipse-libwebkit2gtk-4.0-37.sh
-xdg-dbus-proxy
-libwebkit2gtk-4.0-37
 # ./inst-xtra-freecad/inst-xtra-freecad.sh
 freecad
 # ./inst-xtra-games-openttd/inst-xtra-games-openttd.sh
