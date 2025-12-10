@@ -3,129 +3,69 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  ca-certificates-java fontconfig-config fonts-dejavu-core java-common
-  libavahi-client3 libavahi-common-data libavahi-common3 libcups2
-  libfontconfig1 libfreetype6 libgraphite2-3 libharfbuzz0b libjpeg62-turbo
-  liblcms2-2 libnspr4 libnss3 libpng16-16 openjdk-17-jre-headless
+  ca-certificates-java java-common libjpeg62-turbo liblcms2-2 libnspr4 libnss3
+  openjdk-21-jre-headless
 Suggested packages:
-  default-jre cups-common liblcms2-utils libnss-mdns fonts-dejavu-extra
+  default-jre liblcms2-utils libnss-mdns fonts-dejavu-extra
   fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei
   | fonts-wqy-zenhei fonts-indic
+Recommended packages:
+  libcups2t64 libfontconfig1 libfreetype6 libharfbuzz0b
 The following NEW packages will be installed:
-  ca-certificates-java default-jre-headless fontconfig-config
-  fonts-dejavu-core java-common libavahi-client3 libavahi-common-data
-  libavahi-common3 libcups2 libfontconfig1 libfreetype6 libgraphite2-3
-  libharfbuzz0b libjpeg62-turbo liblcms2-2 libnspr4 libnss3 libpng16-16
-  openjdk-17-jre-headless
-0 upgraded, 19 newly installed, 0 to remove and 15 not upgraded.
-Need to get 50.5 MB of archives.
-After this operation, 208 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 ca-certificates-java all 20230710~deb12u1 [11.9 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 java-common all 0.74 [6,388 B]
-Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libavahi-common-data amd64 0.8-10+deb12u1 [107 kB]
-Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libavahi-common3 amd64 0.8-10+deb12u1 [42.1 kB]
-Get:5 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libavahi-client3 amd64 0.8-10+deb12u1 [45.8 kB]
-Get:6 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libcups2 amd64 2.4.2-3+deb12u8 [246 kB]
-Get:7 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libpng16-16 amd64 1.6.39-2 [276 kB]
-Get:8 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libfreetype6 amd64 2.12.1+dfsg-5+deb12u4 [398 kB]
-Get:9 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 fonts-dejavu-core all 2.37-6 [1,068 kB]
-Get:10 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 fontconfig-config amd64 2.14.1-4 [315 kB]
-Get:11 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libfontconfig1 amd64 2.14.1-4 [386 kB]
-Get:12 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 liblcms2-2 amd64 2.14-2 [154 kB]
-Get:13 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libjpeg62-turbo amd64 1:2.1.5-2 [166 kB]
-Get:14 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libnspr4 amd64 2:4.35-1 [113 kB]
-Get:15 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libnss3 amd64 2:3.87.1-1+deb12u1 [1,331 kB]
-Get:16 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libgraphite2-3 amd64 1.3.14-1 [81.2 kB]
-Get:17 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libharfbuzz0b amd64 6.0.0+dfsg-3 [1,945 kB]
-Get:18 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 openjdk-17-jre-headless amd64 17.0.16+8-1~deb12u1 [43.8 MB]
-Get:19 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 default-jre-headless amd64 2:1.17-74 [2,936 B]
-Preconfiguring packages ...
-Fetched 50.5 MB in 0s (153 MB/s)
+  ca-certificates-java default-jre-headless java-common libjpeg62-turbo
+  liblcms2-2 libnspr4 libnss3 openjdk-21-jre-headless
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 43.7 MB of archives.
+After this operation, 209 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 ca-certificates-java all 20240118 [11.6 kB]
+Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 java-common all 0.76 [6,776 B]
+Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 liblcms2-2 amd64 2.16-2 [160 kB]
+Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libjpeg62-turbo amd64 1:2.1.5-4 [168 kB]
+Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libnspr4 amd64 2:4.36-1 [110 kB]
+Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libnss3 amd64 2:3.110-1 [1,393 kB]
+Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 openjdk-21-jre-headless amd64 21.0.9+10-1~deb13u1 [41.8 MB]
+Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 default-jre-headless amd64 2:1.21-76 [3,192 B]
+Fetched 43.7 MB in 0s (115 MB/s)
 Selecting previously unselected package ca-certificates-java.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 45954 files and directories currently installed.)
-Preparing to unpack .../00-ca-certificates-java_20230710~deb12u1_all.deb ...
-Unpacking ca-certificates-java (20230710~deb12u1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48453 files and directories currently installed.)
+Preparing to unpack .../0-ca-certificates-java_20240118_all.deb ...
+Unpacking ca-certificates-java (20240118) ...
 Selecting previously unselected package java-common.
-Preparing to unpack .../01-java-common_0.74_all.deb ...
-Unpacking java-common (0.74) ...
-Selecting previously unselected package libavahi-common-data:amd64.
-Preparing to unpack .../02-libavahi-common-data_0.8-10+deb12u1_amd64.deb ...
-Unpacking libavahi-common-data:amd64 (0.8-10+deb12u1) ...
-Selecting previously unselected package libavahi-common3:amd64.
-Preparing to unpack .../03-libavahi-common3_0.8-10+deb12u1_amd64.deb ...
-Unpacking libavahi-common3:amd64 (0.8-10+deb12u1) ...
-Selecting previously unselected package libavahi-client3:amd64.
-Preparing to unpack .../04-libavahi-client3_0.8-10+deb12u1_amd64.deb ...
-Unpacking libavahi-client3:amd64 (0.8-10+deb12u1) ...
-Selecting previously unselected package libcups2:amd64.
-Preparing to unpack .../05-libcups2_2.4.2-3+deb12u8_amd64.deb ...
-Unpacking libcups2:amd64 (2.4.2-3+deb12u8) ...
-Selecting previously unselected package libpng16-16:amd64.
-Preparing to unpack .../06-libpng16-16_1.6.39-2_amd64.deb ...
-Unpacking libpng16-16:amd64 (1.6.39-2) ...
-Selecting previously unselected package libfreetype6:amd64.
-Preparing to unpack .../07-libfreetype6_2.12.1+dfsg-5+deb12u4_amd64.deb ...
-Unpacking libfreetype6:amd64 (2.12.1+dfsg-5+deb12u4) ...
-Selecting previously unselected package fonts-dejavu-core.
-Preparing to unpack .../08-fonts-dejavu-core_2.37-6_all.deb ...
-Unpacking fonts-dejavu-core (2.37-6) ...
-Selecting previously unselected package fontconfig-config.
-Preparing to unpack .../09-fontconfig-config_2.14.1-4_amd64.deb ...
-Unpacking fontconfig-config (2.14.1-4) ...
-Selecting previously unselected package libfontconfig1:amd64.
-Preparing to unpack .../10-libfontconfig1_2.14.1-4_amd64.deb ...
-Unpacking libfontconfig1:amd64 (2.14.1-4) ...
+Preparing to unpack .../1-java-common_0.76_all.deb ...
+Unpacking java-common (0.76) ...
 Selecting previously unselected package liblcms2-2:amd64.
-Preparing to unpack .../11-liblcms2-2_2.14-2_amd64.deb ...
-Unpacking liblcms2-2:amd64 (2.14-2) ...
+Preparing to unpack .../2-liblcms2-2_2.16-2_amd64.deb ...
+Unpacking liblcms2-2:amd64 (2.16-2) ...
 Selecting previously unselected package libjpeg62-turbo:amd64.
-Preparing to unpack .../12-libjpeg62-turbo_1%3a2.1.5-2_amd64.deb ...
-Unpacking libjpeg62-turbo:amd64 (1:2.1.5-2) ...
+Preparing to unpack .../3-libjpeg62-turbo_1%3a2.1.5-4_amd64.deb ...
+Unpacking libjpeg62-turbo:amd64 (1:2.1.5-4) ...
 Selecting previously unselected package libnspr4:amd64.
-Preparing to unpack .../13-libnspr4_2%3a4.35-1_amd64.deb ...
-Unpacking libnspr4:amd64 (2:4.35-1) ...
+Preparing to unpack .../4-libnspr4_2%3a4.36-1_amd64.deb ...
+Unpacking libnspr4:amd64 (2:4.36-1) ...
 Selecting previously unselected package libnss3:amd64.
-Preparing to unpack .../14-libnss3_2%3a3.87.1-1+deb12u1_amd64.deb ...
-Unpacking libnss3:amd64 (2:3.87.1-1+deb12u1) ...
-Selecting previously unselected package libgraphite2-3:amd64.
-Preparing to unpack .../15-libgraphite2-3_1.3.14-1_amd64.deb ...
-Unpacking libgraphite2-3:amd64 (1.3.14-1) ...
-Selecting previously unselected package libharfbuzz0b:amd64.
-Preparing to unpack .../16-libharfbuzz0b_6.0.0+dfsg-3_amd64.deb ...
-Unpacking libharfbuzz0b:amd64 (6.0.0+dfsg-3) ...
-Selecting previously unselected package openjdk-17-jre-headless:amd64.
-Preparing to unpack .../17-openjdk-17-jre-headless_17.0.16+8-1~deb12u1_amd64.deb ...
-Unpacking openjdk-17-jre-headless:amd64 (17.0.16+8-1~deb12u1) ...
+Preparing to unpack .../5-libnss3_2%3a3.110-1_amd64.deb ...
+Unpacking libnss3:amd64 (2:3.110-1) ...
+Selecting previously unselected package openjdk-21-jre-headless:amd64.
+Preparing to unpack .../6-openjdk-21-jre-headless_21.0.9+10-1~deb13u1_amd64.deb ...
+Unpacking openjdk-21-jre-headless:amd64 (21.0.9+10-1~deb13u1) ...
 Selecting previously unselected package default-jre-headless.
-Preparing to unpack .../18-default-jre-headless_2%3a1.17-74_amd64.deb ...
-Unpacking default-jre-headless (2:1.17-74) ...
-Setting up libgraphite2-3:amd64 (1.3.14-1) ...
-Setting up liblcms2-2:amd64 (2.14-2) ...
-Setting up java-common (0.74) ...
-Setting up libjpeg62-turbo:amd64 (1:2.1.5-2) ...
-Setting up libnspr4:amd64 (2:4.35-1) ...
-Setting up libavahi-common-data:amd64 (0.8-10+deb12u1) ...
-Setting up libpng16-16:amd64 (1.6.39-2) ...
-Setting up fonts-dejavu-core (2.37-6) ...
-Setting up ca-certificates-java (20230710~deb12u1) ...
+Preparing to unpack .../7-default-jre-headless_2%3a1.21-76_amd64.deb ...
+Unpacking default-jre-headless (2:1.21-76) ...
+Setting up liblcms2-2:amd64 (2.16-2) ...
+Setting up java-common (0.76) ...
+Setting up libjpeg62-turbo:amd64 (1:2.1.5-4) ...
+Setting up libnspr4:amd64 (2:4.36-1) ...
+Setting up ca-certificates-java (20240118) ...
 No JRE found. Skipping Java certificates setup.
-Setting up fontconfig-config (2.14.1-4) ...
-Setting up libavahi-common3:amd64 (0.8-10+deb12u1) ...
-Setting up libnss3:amd64 (2:3.87.1-1+deb12u1) ...
-Setting up libfreetype6:amd64 (2.12.1+dfsg-5+deb12u4) ...
-Setting up libharfbuzz0b:amd64 (6.0.0+dfsg-3) ...
-Setting up libavahi-client3:amd64 (0.8-10+deb12u1) ...
-Setting up libcups2:amd64 (2.4.2-3+deb12u8) ...
-Processing triggers for libc-bin (2.36-9+deb12u13) ...
-Processing triggers for sgml-base (1.31) ...
-Setting up libfontconfig1:amd64 (2.14.1-4) ...
-Setting up openjdk-17-jre-headless:amd64 (17.0.16+8-1~deb12u1) ...
-update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
-update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jpackage to provide /usr/bin/jpackage (jpackage) in auto mode
-update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
-update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
-update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
-Processing triggers for ca-certificates-java (20230710~deb12u1) ...
+Setting up libnss3:amd64 (2:3.110-1) ...
+Setting up openjdk-21-jre-headless:amd64 (21.0.9+10-1~deb13u1) ...
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jpackage to provide /usr/bin/jpackage (jpackage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+Processing triggers for libc-bin (2.41-12) ...
+Processing triggers for ca-certificates-java (20240118) ...
 Adding debian:ACCVRAIZ1.pem
 Adding debian:AC_RAIZ_FNMT-RCM.pem
 Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
@@ -140,9 +80,12 @@ Adding debian:Amazon_Root_CA_3.pem
 Adding debian:Amazon_Root_CA_4.pem
 Adding debian:ANF_Secure_Server_Root_CA.pem
 Adding debian:Atos_TrustedRoot_2011.pem
-Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068_2.pem
+Adding debian:Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem
+Adding debian:Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem
 Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
 Adding debian:Baltimore_CyberTrust_Root.pem
+Adding debian:BJCA_Global_Root_CA1.pem
+Adding debian:BJCA_Global_Root_CA2.pem
 Adding debian:Buypass_Class_2_Root_CA.pem
 Adding debian:Buypass_Class_3_Root_CA.pem
 Adding debian:CA_Disig_Root_R2.pem
@@ -157,6 +100,10 @@ Adding debian:Certum_Trusted_Network_CA_2.pem
 Adding debian:Certum_Trusted_Network_CA.pem
 Adding debian:Certum_Trusted_Root_CA.pem
 Adding debian:CFCA_EV_ROOT.pem
+Adding debian:CommScope_Public_Trust_ECC_Root-01.pem
+Adding debian:CommScope_Public_Trust_ECC_Root-02.pem
+Adding debian:CommScope_Public_Trust_RSA_Root-01.pem
+Adding debian:CommScope_Public_Trust_RSA_Root-02.pem
 Adding debian:Comodo_AAA_Services_root.pem
 Adding debian:COMODO_Certification_Authority.pem
 Adding debian:COMODO_ECC_Certification_Authority.pem
@@ -172,7 +119,9 @@ Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
 Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
 Adding debian:DigiCert_Trusted_Root_G4.pem
 Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+Adding debian:D-TRUST_BR_Root_CA_2_2023.pem
 Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+Adding debian:D-TRUST_EV_Root_CA_2_2023.pem
 Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
 Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
 Adding debian:emSign_ECC_Root_CA_-_C3.pem
@@ -182,13 +131,10 @@ Adding debian:emSign_Root_CA_-_G1.pem
 Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
 Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
 Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
-Adding debian:Entrust_Root_Certification_Authority_-_G4.pem
 Adding debian:Entrust_Root_Certification_Authority.pem
 Adding debian:ePKI_Root_Certification_Authority.pem
 Adding debian:e-Szigno_Root_CA_2017.pem
-Adding debian:E-Tugra_Certification_Authority.pem
-Adding debian:E-Tugra_Global_Root_CA_ECC_v3.pem
-Adding debian:E-Tugra_Global_Root_CA_RSA_v3.pem
+Adding debian:FIRMAPROFESIONAL_CA_ROOT-A_WEB.pem
 Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
 Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
 Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
@@ -209,7 +155,6 @@ Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
 Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
 Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
 Adding debian:HiPKI_Root_CA_-_G1.pem
-Adding debian:Hongkong_Post_Root_CA_1.pem
 Adding debian:Hongkong_Post_Root_CA_3.pem
 Adding debian:IdenTrust_Commercial_Root_CA_1.pem
 Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
@@ -231,27 +176,29 @@ Adding debian:QuoVadis_Root_CA_3.pem
 Adding debian:Sectigo_Public_Server_Authentication_Root_E46.pem
 Adding debian:Sectigo_Public_Server_Authentication_Root_R46.pem
 Adding debian:Secure_Global_CA.pem
-Adding debian:SecureSign_RootCA11.pem
+Adding debian:SecureSign_Root_CA12.pem
+Adding debian:SecureSign_Root_CA14.pem
+Adding debian:SecureSign_Root_CA15.pem
 Adding debian:SecureTrust_CA.pem
 Adding debian:Security_Communication_ECC_RootCA1.pem
 Adding debian:Security_Communication_RootCA2.pem
-Adding debian:Security_Communication_RootCA3.pem
-Adding debian:Security_Communication_Root_CA.pem
 Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
 Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
 Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
 Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+Adding debian:SSL.com_TLS_ECC_Root_CA_2022.pem
+Adding debian:SSL.com_TLS_RSA_Root_CA_2022.pem
 Adding debian:Starfield_Class_2_CA.pem
 Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
 Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
 Adding debian:SwissSign_Gold_CA_-_G2.pem
-Adding debian:SwissSign_Silver_CA_-_G2.pem
 Adding debian:SZAFIR_ROOT_CA2.pem
+Adding debian:Telekom_Security_TLS_ECC_Root_2020.pem
+Adding debian:Telekom_Security_TLS_RSA_Root_2023.pem
 Adding debian:Telia_Root_CA_v2.pem
 Adding debian:TeliaSonera_Root_CA_v1.pem
-Adding debian:TrustCor_ECA-1.pem
-Adding debian:TrustCor_RootCert_CA-1.pem
-Adding debian:TrustCor_RootCert_CA-2.pem
+Adding debian:TrustAsia_Global_Root_CA_G3.pem
+Adding debian:TrustAsia_Global_Root_CA_G4.pem
 Adding debian:Trustwave_Global_Certification_Authority.pem
 Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem
 Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem
@@ -259,6 +206,7 @@ Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
 Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
 Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
 Adding debian:TunTrust_Root_CA.pem
+Adding debian:TWCA_CYBER_Root_CA.pem
 Adding debian:TWCA_Global_Root_CA.pem
 Adding debian:TWCA_Root_Certification_Authority.pem
 Adding debian:UCA_Extended_Validation_Root.pem
@@ -269,10 +217,9 @@ Adding debian:vTrus_ECC_Root_CA.pem
 Adding debian:vTrus_Root_CA.pem
 Adding debian:XRamp_Global_CA_Root.pem
 done.
-Setting up default-jre-headless (2:1.17-74) ...
-Processing triggers for libc-bin (2.36-9+deb12u13) ...
+Setting up default-jre-headless (2:1.21-76) ...
 './cld/bashrc.d/bashrc-java.sh' -> '/usr/local/cld/bashrc.d/bashrc-java.sh'
-CLDS: * Install openjdk version "17.0.16" 2025-07-15.
+CLDS: * Install openjdk version "21.0.9" 2025-10-21.
 CLDS: * To install JAVA binary: https://wiki.debian.org/JavaPackage.
-CLDS: * JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64/bin/java".
-CLDS: * Disk size = 2647108K. Space Used = 253616K. Runtime = 00:00:00:04.
+CLDS: * JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64/bin/java".
+CLDS: * Disk size = 2564092K. Space Used = 247892K. Runtime = 00:00:00:03.

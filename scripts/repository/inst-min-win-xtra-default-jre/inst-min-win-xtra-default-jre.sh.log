@@ -3,35 +3,35 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libgif7 openjdk-17-jre
+  libgif7 openjdk-21-jre
 Recommended packages:
   libatk-wrapper-java-jni fonts-dejavu-extra
 The following NEW packages will be installed:
-  default-jre libgif7 openjdk-17-jre
-0 upgraded, 3 newly installed, 0 to remove and 15 not upgraded.
-Need to get 257 kB of archives.
-After this operation, 805 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libgif7 amd64 5.2.1-2.5 [46.9 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 openjdk-17-jre amd64 17.0.16+8-1~deb12u1 [209 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 default-jre amd64 2:1.17-74 [1,056 B]
-Fetched 257 kB in 0s (4,106 kB/s)
+  default-jre libgif7 openjdk-21-jre
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 254 kB of archives.
+After this operation, 775 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libgif7 amd64 5.2.2-1+b1 [44.2 kB]
+Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 openjdk-21-jre amd64 21.0.9+10-1~deb13u1 [208 kB]
+Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 default-jre amd64 2:1.21-76 [1,068 B]
+Fetched 254 kB in 0s (3,330 kB/s)
 Selecting previously unselected package libgif7:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 121033 files and directories currently installed.)
-Preparing to unpack .../libgif7_5.2.1-2.5_amd64.deb ...
-Unpacking libgif7:amd64 (5.2.1-2.5) ...
-Selecting previously unselected package openjdk-17-jre:amd64.
-Preparing to unpack .../openjdk-17-jre_17.0.16+8-1~deb12u1_amd64.deb ...
-Unpacking openjdk-17-jre:amd64 (17.0.16+8-1~deb12u1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 121341 files and directories currently installed.)
+Preparing to unpack .../libgif7_5.2.2-1+b1_amd64.deb ...
+Unpacking libgif7:amd64 (5.2.2-1+b1) ...
+Selecting previously unselected package openjdk-21-jre:amd64.
+Preparing to unpack .../openjdk-21-jre_21.0.9+10-1~deb13u1_amd64.deb ...
+Unpacking openjdk-21-jre:amd64 (21.0.9+10-1~deb13u1) ...
 Selecting previously unselected package default-jre.
-Preparing to unpack .../default-jre_2%3a1.17-74_amd64.deb ...
-Unpacking default-jre (2:1.17-74) ...
-Setting up libgif7:amd64 (5.2.1-2.5) ...
-Setting up openjdk-17-jre:amd64 (17.0.16+8-1~deb12u1) ...
-Setting up default-jre (2:1.17-74) ...
-Processing triggers for libc-bin (2.36-9+deb12u13) ...
-Processing triggers for hicolor-icon-theme (0.17-2) ...
+Preparing to unpack .../default-jre_2%3a1.21-76_amd64.deb ...
+Unpacking default-jre (2:1.21-76) ...
+Setting up libgif7:amd64 (5.2.2-1+b1) ...
+Setting up openjdk-21-jre:amd64 (21.0.9+10-1~deb13u1) ...
+Setting up default-jre (2:1.21-76) ...
+Processing triggers for libc-bin (2.41-12) ...
+Processing triggers for hicolor-icon-theme (0.18-2) ...
 './cld/bashrc.d/bashrc-java.sh' -> '/usr/local/cld/bashrc.d/bashrc-java.sh'
 CLDS: * Install default-jre.
 CLDS: * Needed for Sweet Home 3D: java.awt.AWTError: Assistive Technology not found.
-CLDS: * JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64/bin/java".
-CLDS: * Disk size = 5209232K. Space Used = 1092K. Runtime = 00:00:00:02.
+CLDS: * JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64/bin/java".
+CLDS: * Disk size = 5241012K. Space Used = 1064K. Runtime = 00:00:00:01.

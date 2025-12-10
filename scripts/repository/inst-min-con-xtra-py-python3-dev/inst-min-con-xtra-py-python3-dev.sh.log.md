@@ -1,12 +1,11 @@
 * >>>>>>>>> Running inst-min-con-xtra-py-python3-dev.sh ...
-  * After this operation, 59.6 MB of additional disk space will be used.
+  * After this operation, 63.8 MB of additional disk space will be used.
   * Install python3-dev.
   * Require for: tulipy
-  * Disk size = 4641092K. Space Used = 75640K. Runtime = 00:00:00:03.
+  * Disk size = 4625492K. Space Used = 81216K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 libc6-dev libc-dev-bin libcrypt-dev libexpat1-dev libjs-jquery
-libjs-sphinxdoc libjs-underscore libnsl-dev libpython3.11 libpython3.11-dev
-libpython3-dev libtirpc-dev linux-libc-dev python3.11-dev python3-dev
-rpcsvc-proto zlib1g-dev
+libjs-sphinxdoc libjs-underscore libpython3.13 libpython3.13-dev libpython3-dev
+linux-libc-dev python3.13-dev python3-dev rpcsvc-proto zlib1g-dev
   ```

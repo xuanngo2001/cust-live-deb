@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-min-con-xtra-xclip.sh ...
-  * After this operation, 909 kB of additional disk space will be used.
+  * After this operation, 929 kB of additional disk space will be used.
   * Install xclip for vim and nvim to paste to clipboard
-  * Disk size = 4742300K. Space Used = 1364K. Runtime = 00:00:00:01.
+  * Disk size = 4773392K. Space Used = 1392K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
-libice6 libsm6 libxmu6 libxt6 xclip
+libice6 libsm6 libxmu6 libxt6t64 xclip
   ```

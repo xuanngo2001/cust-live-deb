@@ -2,28 +2,24 @@ CLDS:>>>>>>>>> Running inst-min-con-xtra-nfs-kernel-server.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following packages were automatically installed and are no longer required:
-  libfuse3-3 libntfs-3g89
-Use 'apt autoremove' to remove them.
 The following NEW packages will be installed:
   nfs-kernel-server
-0 upgraded, 1 newly installed, 0 to remove and 15 not upgraded.
-Need to get 152 kB of archives.
-After this operation, 626 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 nfs-kernel-server amd64 1:2.6.2-4+deb12u1 [152 kB]
-Fetched 152 kB in 0s (3,151 kB/s)
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 189 kB of archives.
+After this operation, 808 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 nfs-kernel-server amd64 1:2.8.3-1 [189 kB]
+Fetched 189 kB in 0s (4,858 kB/s)
 Selecting previously unselected package nfs-kernel-server.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 106408 files and directories currently installed.)
-Preparing to unpack .../nfs-kernel-server_1%3a2.6.2-4+deb12u1_amd64.deb ...
-Unpacking nfs-kernel-server (1:2.6.2-4+deb12u1) ...
-Setting up nfs-kernel-server (1:2.6.2-4+deb12u1) ...
-Created symlink /etc/systemd/system/nfs-client.target.wants/nfs-blkmap.service → /lib/systemd/system/nfs-blkmap.service.
-Created symlink /etc/systemd/system/multi-user.target.wants/nfs-server.service → /lib/systemd/system/nfs-server.service.
-
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 109346 files and directories currently installed.)
+Preparing to unpack .../nfs-kernel-server_1%3a2.8.3-1_amd64.deb ...
+Unpacking nfs-kernel-server (1:2.8.3-1) ...
+Setting up nfs-kernel-server (1:2.8.3-1) ...
+Created symlink '/etc/systemd/system/nfs-mountd.service.requires/fsidd.service' → '/usr/lib/systemd/system/fsidd.service'.
+Created symlink '/etc/systemd/system/nfs-server.service.requires/fsidd.service' → '/usr/lib/systemd/system/fsidd.service'.
+Created symlink '/etc/systemd/system/multi-user.target.wants/nfs-server.service' → '/usr/lib/systemd/system/nfs-server.service'.
 Creating config file /etc/exports with new version
-
 Creating config file /etc/default/nfs-kernel-server with new version
 Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
 CLDS: * Install nfs-kernel-server.
-CLDS: * Disk size = 4489336K. Space Used = 896K. Runtime = 00:00:00:02.
+CLDS: * Disk size = 4461452K. Space Used = 1104K. Runtime = 00:00:00:02.

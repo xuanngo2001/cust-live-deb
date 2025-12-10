@@ -1,15 +1,15 @@
 * >>>>>>>>> Running inst-min-con-xtra-gcp-google-cloud-cli.sh ...
-  * After this operation, 584 MB of additional disk space will be used.
+  * After this operation, 585 MB of additional disk space will be used.
   * Install google-cloud-cli.
-  * Google Cloud SDK 548.0.0
-  * alpha 2025.11.17
-  * beta 2025.11.17
+  * Google Cloud SDK 549.0.0
+  * alpha 2025.12.05
+  * beta 2025.12.05
   * bq 2.1.25
   * bundled-python3-unix 3.13.7
-  * core 2025.11.17
+  * core 2025.12.05
   * gcloud-crc32c 1.0.0
   * gsutil 5.35
-  * Disk size = 4127460K. Space Used = 1126568K. Runtime = 00:00:00:32.
+  * Disk size = 4041260K. Space Used = 1129404K. Runtime = 00:00:00:35.
   * The following NEW packages will be installed:
   ```bash
 google-cloud-cli

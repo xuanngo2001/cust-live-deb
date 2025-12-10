@@ -1,11 +1,11 @@
 * >>>>>>>>> Running inst-std-accessories-feh.sh ...
-  * After this operation, 71.0 MB of additional disk space will be used.
+  * After this operation, 71.1 MB of additional disk space will be used.
   * Install command line image viewer: feh.
-  * Disk size = 5371884K. Space Used = 88176K. Runtime = 00:00:00:03.
+  * Disk size = 5403520K. Space Used = 88032K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 feh fonts-urw-base35 libexif12 libgs10 libgs10-common
-libgs-common libid3tag0 libidn12 libijs-0.35 libimlib2
-libjbig2dec0 libpaper1 libspectre1 libwebpdemux2 poppler-data
+libgs-common libid3tag0 libidn12 libijs-0.35 libimlib2t64
+libjbig2dec0 libpaper2 libspectre1 libwebpdemux2 poppler-data
 xfonts-encodings xfonts-utils yudit-common
   ```

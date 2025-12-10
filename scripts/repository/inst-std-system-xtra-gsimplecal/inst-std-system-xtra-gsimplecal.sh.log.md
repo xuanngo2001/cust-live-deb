@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-std-system-xtra-gsimplecal.sh ...
-  * After this operation, 79.9 kB of additional disk space will be used.
+  * After this operation, 85.0 kB of additional disk space will be used.
   * Install gsimplecal.
   * Insert gsimplecal in JWM system tray.
   * Overwrite gtk calendar style: home/.config/gtk-3.0/gtk.css.
   * Overwrite gsimplecal configuration: home/.config/gsimplecal/config.
-  * Disk size = 7175544K. Space Used = 152K. Runtime = 00:00:00:01.
+  * Disk size = 7250140K. Space Used = 156K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 gsimplecal
