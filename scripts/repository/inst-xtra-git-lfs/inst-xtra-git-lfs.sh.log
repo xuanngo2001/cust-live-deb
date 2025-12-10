@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-xtra-git-lfs.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   git git-man liberror-perl
 Suggested packages:
@@ -39,3 +40,17 @@ Setting up git-lfs (3.6.1-1+b5) ...
 './cld/doc/git-lfs-help.txt' -> '/usr/local/cld/doc/git-lfs-help.txt'
 CLDS: * Install git-lfs.
 CLDS: * Disk size = 8471192K. Space Used = 69648K. Runtime = 00:00:00:03.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ git-lfs : Depends: git but it is not going to be installed
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6125356K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

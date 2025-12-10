@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-std-multimedia-xtra-slop.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libglew2.2 libslopy7.6
 Suggested packages:
@@ -32,3 +33,17 @@ Processing triggers for libc-bin (2.41-12) ...
 CLDS: * Install slop.
 CLDS: * Use slop to do area selection before do screen recorder using ffmpeg.
 CLDS: * Disk size = 7225688K. Space Used = 1720K. Runtime = 00:00:00:02.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+ slop : Depends: libslopy7.6 (>= 7.6) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6125236K. Space Used = 8K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

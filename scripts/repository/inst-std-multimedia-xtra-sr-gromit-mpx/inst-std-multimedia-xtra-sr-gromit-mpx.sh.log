@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-std-multimedia-xtra-sr-gromit-mpx.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libayatana-appindicator3-1 libayatana-ido3-0.4-0 libayatana-indicator3-7
   libdbusmenu-glib4 libdbusmenu-gtk3-4
@@ -48,3 +49,18 @@ Processing triggers for libc-bin (2.41-12) ...
 Processing triggers for desktop-file-utils (0.28-1) ...
 CLDS: * Install gromit-mpx.
 CLDS: * Disk size = 7226944K. Space Used = 1256K. Runtime = 00:00:00:01.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ gromit-mpx : Depends: libayatana-appindicator3-1 (>= 0.2.92) but it is not going to be installed
+              Depends: libgtk-3-0t64 (>= 3.21.4) but it is not going to be installed
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6125240K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

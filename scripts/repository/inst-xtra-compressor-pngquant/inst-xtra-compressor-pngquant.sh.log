@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-xtra-compressor-pngquant.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following NEW packages will be installed:
   pngquant
 0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
@@ -16,3 +17,16 @@ Unpacking pngquant (2.18.0-1+b1) ...
 Setting up pngquant (2.18.0-1+b1) ...
 CLDS: * Install pngquant.
 CLDS: * Disk size = 7880388K. Space Used = 112K. Runtime = 00:00:00:01.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6125344K. Space Used = 8K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-std-accessories-gpicview.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 Recommended packages:
   xdg-utils
 The following NEW packages will be installed:
@@ -17,8 +18,33 @@ Preparing to unpack .../gpicview_0.3.1-1_amd64.deb ...
 Unpacking gpicview (0.3.1-1) ...
 Setting up gpicview (0.3.1-1) ...
 Processing triggers for hicolor-icon-theme (0.18-2) ...
+=======
+Solving dependencies...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ libatk-bridge2.0-0t64 : Depends: libatspi2.0-0t64 (= 2.56.2-1) but 2.58.2-1~bpo13+1 is to be installed
+E: Unable to correct problems, you have held broken packages.
+E: The following information from --solver 3.0 may provide additional context:
+   Unable to satisfy dependencies. Reached two conflicting decisions:
+   1. libatspi2.0-0t64:amd64=2.56.2-1 is not selected for install
+   2. libatspi2.0-0t64:amd64=2.56.2-1 is selected for install because:
+      1. gpicview:amd64=0.3.1-1 is selected for install
+      2. gpicview:amd64 Depends libgtk-3-0t64 (>= 3.0.0)
+      3. libgtk-3-0t64:amd64 Depends libatk-bridge2.0-0t64 (>= 2.15.1)
+      4. libatk-bridge2.0-0t64:amd64 Depends libatspi2.0-0t64 (= 2.56.2-1)
+sed: can't read /usr/local/cld/app/jwm/jwmrc/jwmrc-menus.xml: No such file or directory
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07
 './cld/bashrc.d/bashrc-alias-gpicview.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-gpicview.sh'
 CLDS: * Install Image Viewer: gpicview.
 CLDS: * Insert gpicview in Accessories menu.
 CLDS: * Add alias viewpic='gpicview'.
+<<<<<<< HEAD
 CLDS: * Disk size = 5403740K. Space Used = 384K. Runtime = 00:00:00:02.
+=======
+CLDS: * Disk size = 5504672K. Space Used = 8K. Runtime = 00:00:00:02.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-std-system-gnome-disk-utility.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libatasmart4 libblockdev-crypto3 libblockdev-fs3 libblockdev-loop3
   libblockdev-mdraid3 libblockdev-nvme3 libblockdev-part3 libblockdev-swap3
@@ -189,3 +190,26 @@ CLDS: * Install Partition Manager: gnome-disk-utility.
 CLDS: * Run: gnome-disks.
 CLDS: * Insert gnome-disk-utility menu in Administration.
 CLDS: * Disk size = 7248660K. Space Used = 11420K. Runtime = 00:00:00:02.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ gnome-disk-utility : Depends: udisks2 (>= 2.7.6) but it is not going to be installed
+                      Depends: libatk1.0-0t64 (>= 1.12.4) but it is not going to be installed
+                      Depends: libcanberra-gtk3-0 (>= 0.25) but it is not going to be installed
+                      Depends: libdvdread8t64 (>= 4.2.0) but it is not going to be installed
+                      Depends: libgtk-3-0t64 (>= 3.21.5) but it is not going to be installed
+                      Depends: libhandy-1-0 (>= 1.5.0) but it is not going to be installed
+                      Depends: libnotify4 (>= 0.7.0) but it is not going to be installed
+                      Depends: libpwquality1 (>= 1.1.0) but it is not going to be installed
+                      Depends: libsecret-1-0 (>= 0.7) but it is not going to be installed
+                      Depends: libudisks2-0 (>= 2.7.6) but it is not going to be installed
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6125264K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

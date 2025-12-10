@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-min-win-01-wm-jwm.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   adwaita-icon-theme at-spi2-common dbus-user-session dconf-gsettings-backend
   dconf-service exo-utils gtk-update-icon-cache hicolor-icon-theme
@@ -272,3 +273,25 @@ CLDS: * Install Window Manager jwm: JWM v2.4.6 by Joe Wingbermuehle.
 CLDS: * Set .
 CLDS: * Change X window manager: update-alternatives --config x-window-manager
 CLDS: * Disk size = 5237652K. Space Used = 61700K. Runtime = 00:00:00:03.
+=======
+Solving dependencies...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ libatk-bridge2.0-0t64 : Depends: libatspi2.0-0t64 (= 2.56.2-1) but 2.58.2-1~bpo13+1 is to be installed
+E: Unable to correct problems, you have held broken packages.
+E: The following information from --solver 3.0 may provide additional context:
+   Unable to satisfy dependencies. Reached two conflicting decisions:
+   1. libatspi2.0-0t64:amd64=2.56.2-1 is not selected for install
+   2. libatspi2.0-0t64:amd64=2.56.2-1 is selected for install because:
+      1. jwm:amd64=2.4.6-2 is selected for install
+      2. jwm:amd64 Depends rxvt-unicode | gnome-terminal | konsole | x-terminal-emulator
+      3. xfce4-terminal:amd64 Depends libgtk-3-0t64 (>= 3.21.6)
+      4. libgtk-3-0t64:amd64 Depends libatk-bridge2.0-0t64 (>= 2.15.1)
+      5. libatk-bridge2.0-0t64:amd64 Depends libatspi2.0-0t64 (= 2.56.2-1)
+CLDS: * Disk size = 5330120K. Space Used = 8K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

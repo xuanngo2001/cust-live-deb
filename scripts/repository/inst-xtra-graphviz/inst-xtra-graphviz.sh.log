@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-xtra-graphviz.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libann0 libcdt5 libcgraph6 libgts-0.7-5t64 libgvc6 libgvpr2 liblab-gamut1
   libpathplan4
@@ -67,3 +68,23 @@ Processing triggers for libc-bin (2.41-12) ...
 './cld/doc/graphviz-help.txt' -> '/usr/local/cld/doc/graphviz-help.txt'
 CLDS: * Install graphviz.
 CLDS: * Disk size = 8482472K. Space Used = 11268K. Runtime = 00:00:00:01.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ graphviz : Depends: libann0 (>= 1.1.2+doc) but it is not going to be installed
+            Depends: libcdt5 (>= 2.42.4) but it is not going to be installed
+            Depends: libcgraph6 (>= 2.42.4) but it is not going to be installed
+            Depends: libgts-0.7-5t64 (>= 0.7.6) but it is not going to be installed
+            Depends: libgvc6 (>= 2.42.4) but it is not going to be installed
+            Depends: libgvpr2 (>= 2.42.4) but it is not going to be installed
+            Depends: liblab-gamut1 (>= 2.42.4) but it is not going to be installed
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6125368K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

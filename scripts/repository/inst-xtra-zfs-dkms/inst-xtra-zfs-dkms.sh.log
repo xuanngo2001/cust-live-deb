@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-xtra-zfs-dkms.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libzstd-dev
 The following NEW packages will be installed:
@@ -196,3 +197,18 @@ CLDS: * Install zfs-dkms: version: 2.3.2-2, DKMS style package. DKMS vs KMOD, se
 CLDS: * Install zfs-initramfs to be able to boot from ZFS.
 CLDS: * Import existing ZFS partitions: zpool import -a
 CLDS: * Disk size = 7651256K. Space Used = 45752K. Runtime = 00:00:03:18.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ libelf-dev : Depends: libelf1t64 (= 0.193-3~bpo13+1) but 0.192-4 is to be installed
+              Depends: libzstd-dev but it is not going to be installed
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6090068K. Space Used = 8K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

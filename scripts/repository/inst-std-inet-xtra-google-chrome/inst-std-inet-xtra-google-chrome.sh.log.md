@@ -1,4 +1,5 @@
 * >>>>>>>>> Running inst-std-inet-xtra-google-chrome.sh ...
+<<<<<<< HEAD
   * After this operation, 392 MB of additional disk space will be used.
   * Install Google Chrome 143.0.7499.109 .
   * Modify configuration to run google-chrome as root.
@@ -11,3 +12,6 @@
   ```bash
 google-chrome-stable xdg-utils
   ```
+=======
+  * Disk size = 5632580K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

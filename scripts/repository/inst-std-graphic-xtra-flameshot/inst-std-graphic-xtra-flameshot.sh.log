@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-std-graphic-xtra-flameshot.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libdouble-conversion3 libmd4c0 libpcre2-16-0 libqt5core5t64 libqt5dbus5t64
   libqt5gui5t64 libqt5network5t64 libqt5svg5 libqt5widgets5t64 libxcb-icccm4
@@ -118,3 +119,29 @@ Processing triggers for libc-bin (2.41-12) ...
 Processing triggers for desktop-file-utils (0.28-1) ...
 CLDS: * Install flameshot.
 CLDS: * Disk size = 5506264K. Space Used = 46420K. Runtime = 00:00:00:02.
+=======
+Solving dependencies...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ flameshot : Depends: libqt6svg6 but it is not installable
+             Depends: libkdsingleapplication-qt6-1.0 (>= 1.1.0) but it is not installable
+             Depends: libkf6guiaddons6 (>= 6.0.0) but it is not installable
+             Depends: libqt-color-widgets2 (>= 3.0.0) but it is not going to be installed
+             Depends: libqt6core6t64 (>= 6.8.2) but it is not installable
+             Depends: libqt6dbus6 (>= 6.2) but it is not installable
+             Depends: libqt6gui6 (>= 6.4.0) but it is not installable
+             Depends: libqt6widgets6 (>= 6.2) but it is not installable
+E: Unable to correct problems, you have held broken packages.
+E: The following information from --solver 3.0 may provide additional context:
+   Unable to satisfy dependencies. Reached two conflicting decisions:
+   1. flameshot:amd64=13.3.0-1~bpo13+1 is selected for install
+   2. flameshot:amd64=13.3.0-1~bpo13+1 Depends libqt6svg6
+      but none of the choices are installable:
+      [no choices]
+CLDS: * Disk size = 5514144K. Space Used = 8K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

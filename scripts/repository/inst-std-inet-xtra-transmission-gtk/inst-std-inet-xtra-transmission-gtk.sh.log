@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-std-inet-xtra-transmission-gtk.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libb64-0d libcairo-script-interpreter2 libcairomm-1.16-1 libgles2
   libglibmm-2.68-1t64 libgraphene-1.0-0 libgtk-4-1 libgtk-4-common
@@ -114,3 +115,26 @@ W: Target Translations (main/i18n/Translation-en) is configured multiple times i
 CLDS: * Install transmission-gtk.
 CLDS: * Insert transmission-gtk in Internet menu.
 CLDS: * Disk size = 7004800K. Space Used = 46476K. Runtime = 00:00:00:02.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+ transmission-gtk : Depends: transmission-common (= 4.1.0~beta2+dfsg-3+deb13u1) but it is not going to be installed
+                    Depends: libb64-0d (>= 1.2) but it is not going to be installed
+                    Depends: libevent-2.1-7t64 (>= 2.1.11-stable) but it is not going to be installed
+                    Depends: libglibmm-2.68-1t64 (>= 2.77.0) but it is not going to be installed
+                    Depends: libgtk-4-1 (>= 4.0.0) but it is not going to be installed
+                    Depends: libgtkmm-4.0-0 (>= 4.11) but it is not going to be installed
+                    Depends: libminiupnpc18 (>= 2.2.8) but it is not going to be installed
+                    Depends: libnatpmp1t64 (>= 20150609) but it is not going to be installed
+                    Depends: libpangomm-2.48-1t64 (>= 2.50) but it is not going to be installed
+                    Depends: libsigc++-3.0-0 (>= 3.2.0) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6125184K. Space Used = 8K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

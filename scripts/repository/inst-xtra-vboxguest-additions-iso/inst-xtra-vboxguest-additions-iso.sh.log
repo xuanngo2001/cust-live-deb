@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-xtra-vboxguest-additions-iso.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libdw1t64 linux-headers-6.12.57+deb13-amd64
   linux-headers-6.12.57+deb13-common linux-kbuild-6.12.57+deb13 pahole
@@ -20,11 +21,25 @@ Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-hea
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-amd64 amd64 6.12.57-1 [1,416 B]
 Fetched 15.9 MB in 0s (120 MB/s)
 Download complete and in download only mode
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ linux-headers-amd64 : Depends: linux-headers-6.17.8+deb13-amd64 (= 6.17.8-1~bpo13+1) but it is not going to be installed
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07
 Reading package lists...
 Building dependency tree...
 Reading state information...
 libc6-dev is already the newest version (2.41-12).
 libc6-dev set to manually installed.
+<<<<<<< HEAD
 The following additional packages will be installed:
   dpkg-dev g++ g++-14 g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu
   libdpkg-perl libstdc++-14-dev make patch
@@ -143,3 +158,64 @@ CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: version: 7.2.0 r170228.
 CLDS: * Delete VBoxGuestAdditions.iso[51900K]. Space used could be negative due to this deletion.
 CLDS: * Disk size = 8663044K. Space Used = 169528K. Runtime = 00:00:00:42.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ build-essential : Depends: g++ (>= 4:14.2) but it is not going to be installed
+                   Depends: make but it is not going to be installed
+                   Depends: dpkg-dev (>= 1.22.11) but it is not going to be installed
+ dkms : Depends: dpkg-dev but it is not going to be installed
+        Depends: patch but it is not going to be installed
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+Reading package lists...
+Building dependency tree...
+Reading state information...
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ linux-headers-6.17.8+deb13-amd64 : Depends: linux-headers-6.17.8+deb13-common (= 6.17.8-1~bpo13+1) but it is not going to be installed
+                                    Depends: linux-kbuild-6.17.8+deb13 but it is not going to be installed
+                                    Depends: gcc-14-for-host but it is not installable
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+Verifying archive integrity...     0%    63%  100%   MD5 checksums are OK. All good.
+Uncompressing VirtualBox 7.1.10 Guest Additions for Linux     0%    63%  100%  
+VirtualBox Guest Additions installer
+Running in chroot, ignoring command 'daemon-reload'
+depmod: ERROR: could not open directory /lib/modules/6.12.57+deb13-amd64: No such file or directory
+depmod: FATAL: could not search modules: No such file or directory
+VirtualBox Guest Additions: Starting.
+VirtualBox Guest Additions: Setting up modules
+VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
+modules.  This may take a while.
+VirtualBox Guest Additions: To build modules for other installed kernels, run
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
+VirtualBox Guest Additions: or
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup all
+VirtualBox Guest Additions: Kernel headers not found for target kernel 
+6.12.57+deb13-amd64. Please install them and execute
+  /sbin/rcvboxadd setup
+VirtualBox Guest Additions: reloading kernel modules and services
+VirtualBox Guest Additions: unable to load vboxguest kernel module, see dmesg
+VirtualBox Guest Additions: kernel modules and services were not reloaded
+The log file /var/log/vboxadd-setup.log may contain further information.
+modinfo: ERROR: Module vboxguest not found.
+CLDS: * WARNING: Use this script only if backport repository doesn't work.
+CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
+CLDS: * Assumed packages installed: bzip2 & Xserver installed.
+CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
+CLDS: * Delete VBoxGuestAdditions.iso[59940K]. Space used could be negative due to this deletion.
+CLDS: * Disk size = 6080220K. Space Used = -45172K. Runtime = 00:00:00:02.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

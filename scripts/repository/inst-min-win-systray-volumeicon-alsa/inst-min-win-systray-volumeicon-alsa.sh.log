@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-min-win-systray-volumeicon-alsa.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libnotify4
 Suggested packages:
@@ -33,3 +34,24 @@ CLDS: * Install volume controller in system tray.
 CLDS: * Set left-click to display volume slider: lmb_slider=true.
 CLDS: * Set volumeicon to run on JWN startup.
 CLDS: * Disk size = 5239784K. Space Used = 544K. Runtime = 00:00:00:01.
+=======
+Solving dependencies...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ libatk-bridge2.0-0t64 : Depends: libatspi2.0-0t64 (= 2.56.2-1) but 2.58.2-1~bpo13+1 is to be installed
+E: Unable to correct problems, you have held broken packages.
+E: The following information from --solver 3.0 may provide additional context:
+   Unable to satisfy dependencies. Reached two conflicting decisions:
+   1. libatspi2.0-0t64:amd64=2.56.2-1 is not selected for install
+   2. libatspi2.0-0t64:amd64=2.56.2-1 is selected for install because:
+      1. volumeicon-alsa:amd64=0.5.1+git20230228-1+b1 is selected for install
+      2. volumeicon-alsa:amd64 Depends libgtk-3-0t64 (>= 3.0.0)
+      3. libgtk-3-0t64:amd64 Depends libatk-bridge2.0-0t64 (>= 2.15.1)
+      4. libatk-bridge2.0-0t64:amd64 Depends libatspi2.0-0t64 (= 2.56.2-1)
+CLDS: * Disk size = 5332256K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

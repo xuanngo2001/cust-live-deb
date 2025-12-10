@@ -1,4 +1,5 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-flameshot.sh ...
+<<<<<<< HEAD
   * After this operation, 36.6 MB of additional disk space will be used.
   * Install flameshot.
   * Disk size = 5506264K. Space Used = 46420K. Runtime = 00:00:00:02.
@@ -9,3 +10,6 @@ libqt5dbus5t64 libqt5gui5t64 libqt5network5t64 libqt5svg5 libqt5widgets5t64
 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-xinerama0
 libxcb-xinput0 libxcb-xkb1 libxkbcommon-x11-0
   ```
+=======
+  * Disk size = 5514144K. Space Used = 8K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

@@ -11,6 +11,7 @@ Hit:5 http://localhost/aptly-repo/master_docker-stable trixie InRelease
 Hit:6 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:7 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:8 http://localhost/aptly-repo/master_qgis-main trixie InRelease
+<<<<<<< HEAD
 Hit:9 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
 Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
 Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
@@ -50,3 +51,37 @@ Processing triggers for menu (2.1.51) ...
 Processing triggers for desktop-file-utils (0.28-1) ...
 CLDS: * Install security updates at the ends.
 CLDS: * Disk size = 7957092K. Space Used = 305836K. Runtime = 00:00:02:12.
+=======
+Hit:9 http://localhost/aptly-repo/master_trixie-backports-contrib trixie-backports InRelease
+Hit:10 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports InRelease
+Hit:11 http://localhost/aptly-repo/master_trixie-backports-non-free trixie-backports InRelease
+Hit:12 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
+Hit:13 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
+Hit:14 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
+Hit:15 http://localhost/aptly-repo/master_trixie-updates-contrib trixie-updates InRelease
+Hit:16 http://localhost/aptly-repo/master_trixie-updates-main trixie-updates InRelease
+Hit:17 http://localhost/aptly-repo/master_trixie-updates-non-free trixie-updates InRelease
+Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
+Hit:19 https://packages.cloud.google.com/apt cloud-sdk InRelease
+Reading package lists...
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+Reading package lists...
+Building dependency tree...
+Reading state information...
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6090072K. Space Used = 4K. Runtime = 00:00:00:02.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

@@ -1,4 +1,5 @@
 * >>>>>>>>> Running inst-xtra-zfs-dkms.sh ...
+<<<<<<< HEAD
   * After this operation, 13.3 kB of additional disk space will be used.
   * After this operation, 400 kB of additional disk space will be used.
   * After this operation, 18.8 MB of additional disk space will be used.
@@ -15,3 +16,6 @@ libnvpair3linux libuutil3linux libzfs6linux libzpool6linux libzstd-dev
 linux-headers-6.12.57+deb13-amd64* linux-headers-amd64 lsb-release* module-assistant zfs-dkms
 zfs-initramfs zfsutils-linux
   ```
+=======
+  * Disk size = 6090068K. Space Used = 8K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

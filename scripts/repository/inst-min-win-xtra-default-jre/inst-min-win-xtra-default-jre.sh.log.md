@@ -1,4 +1,5 @@
 * >>>>>>>>> Running inst-min-win-xtra-default-jre.sh ...
+<<<<<<< HEAD
   * After this operation, 775 kB of additional disk space will be used.
   * Install default-jre.
   * Needed for Sweet Home 3D: java.awt.AWTError: Assistive Technology not found.
@@ -8,3 +9,6 @@
   ```bash
 default-jre libgif7 openjdk-21-jre
   ```
+=======
+  * Disk size = 5332260K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

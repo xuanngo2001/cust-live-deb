@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-std-multimedia-mpv-fix2.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following NEW packages will be installed:
   libdovi3
 0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
@@ -64,3 +65,16 @@ Conf libraqm0 (0.10.2-1 master_trixie-main trixie:trixie [amd64])
 CLDS: * 2024-02-20: Bookworm: Dependent packages are still required.
 CLDS: * 2022-12-14: Bullseye: libdjvulibre21_3.5.28-2_amd64.deb  404  Not Found [IP: ::1 80].
 CLDS: * Disk size = 7004812K. Space Used = 12K. Runtime = 00:00:00:02.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6125188K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

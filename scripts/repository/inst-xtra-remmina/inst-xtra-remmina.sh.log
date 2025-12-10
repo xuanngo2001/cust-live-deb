@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-xtra-remmina.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libavahi-glib1 libavahi-ui-gtk3-0 libfreerdp-client3-3 libfreerdp3-3
   libssh-4 libwinpr3-3 remmina-common
@@ -71,3 +72,27 @@ Processing triggers for desktop-file-utils (0.28-1) ...
 CLDS: * Install remmina.
 CLDS: * Need to remote desktop MS Windows machines.
 CLDS: * Disk size = 8493500K. Space Used = 11008K. Runtime = 00:00:00:03.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+ remmina : Depends: libavahi-ui-gtk3-0 (>= 0.6.30) but it is not going to be installed
+           Depends: libayatana-appindicator3-1 (>= 0.4.90) but it is not going to be installed
+           Depends: libgtk-3-0t64 (>= 3.21.5) but it is not going to be installed
+           Depends: libjson-glib-1.0-0 (>= 1.5.2) but it is not going to be installed
+           Depends: libssh-4 (>= 0.8.1) but it is not going to be installed
+           Depends: libvte-2.91-0 (>= 0.51.90) but it is not going to be installed
+           Depends: remmina-common (= 1.4.39+dfsg-1) but it is not going to be installed
+ remmina-plugin-rdp : Depends: libfreerdp-client3-3 (>= 3.5.0~) but it is not going to be installed
+                      Depends: libfreerdp3-3 (>= 3.5.0~) but it is not going to be installed
+                      Depends: libgtk-3-0t64 (>= 3.21.4) but it is not going to be installed
+                      Depends: libwinpr3-3 (>= 3.0.0) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6125380K. Space Used = 8K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

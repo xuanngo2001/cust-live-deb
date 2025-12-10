@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-std-accessories-prtscr-gnome-screenshot.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libhandy-1-0
 The following NEW packages will be installed:
@@ -28,3 +29,24 @@ CLDS: * Install gnome-screenshot to be used for PrintScreen key.
 CLDS: * Insert PrintScreen key binding.
 CLDS: * By default, screenshots are saved under ~/Pictures/.
 CLDS: * Disk size = 5405140K. Space Used = 1400K. Runtime = 00:00:00:01.
+=======
+Solving dependencies...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ libatk-bridge2.0-0t64 : Depends: libatspi2.0-0t64 (= 2.56.2-1) but 2.58.2-1~bpo13+1 is to be installed
+E: Unable to correct problems, you have held broken packages.
+E: The following information from --solver 3.0 may provide additional context:
+   Unable to satisfy dependencies. Reached two conflicting decisions:
+   1. libatspi2.0-0t64:amd64=2.56.2-1 is not selected for install
+   2. libatspi2.0-0t64:amd64=2.56.2-1 is selected for install because:
+      1. gnome-screenshot:amd64=41.0-3 is selected for install
+      2. gnome-screenshot:amd64 Depends libgtk-3-0t64 (>= 3.21.4)
+      3. libgtk-3-0t64:amd64 Depends libatk-bridge2.0-0t64 (>= 2.15.1)
+      4. libatk-bridge2.0-0t64:amd64 Depends libatspi2.0-0t64 (= 2.56.2-1)
+CLDS: * Disk size = 5504676K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

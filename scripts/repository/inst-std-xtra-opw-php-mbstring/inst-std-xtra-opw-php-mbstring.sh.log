@@ -2,6 +2,7 @@ CLDS:>>>>>>>>> Running inst-std-xtra-opw-php-mbstring.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+<<<<<<< HEAD
 The following additional packages will be installed:
   libonig5 php8.4-mbstring
 The following NEW packages will be installed:
@@ -39,3 +40,17 @@ NOTICE: You are seeing this message because you have apache2 package installed.
 Processing triggers for php8.4-cli (8.4.11-1) ...
 CLDS: * Install php-mbstring.
 CLDS: * Disk size = 7874320K. Space Used = 2640K. Runtime = 00:00:00:01.
+=======
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+ php-mbstring : Depends: php8.4-mbstring but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6125316K. Space Used = 4K. Runtime = 00:00:00:01.
+>>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07
