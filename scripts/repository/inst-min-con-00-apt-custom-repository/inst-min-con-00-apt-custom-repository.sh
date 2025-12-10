@@ -8,7 +8,11 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Add CLD aptly repository key.
-yes | cp -av trusted.gpg /etc/apt/
+    # Legacy way: trusted.gpg
+    yes | cp -av trusted.gpg /etc/apt/
+
+    # New way: keyrings/trusted.gpg
+    yes | cp -av trusted.gpg /etc/apt/keyrings/
 
 echo "${GV_LOG} * ===================== DONE XUAN iiiiiiii ====================="
 echo "${GV_LOG} * ===================== DONE XUAN ====================="
