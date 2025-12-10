@@ -1,5 +1,5 @@
 CLDS:>>>>>>>>> Running inst-xtra-web-dev-nodejs.sh ...
-[38;5;79m2025-12-10 04:50:59 - Installing pre-requisites[0m
+[38;5;79m2025-12-10 18:00:13 - Installing pre-requisites[0m
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
@@ -11,30 +11,32 @@ Hit:5 http://localhost/aptly-repo/master_docker-stable trixie InRelease
 Hit:6 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:7 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:8 http://localhost/aptly-repo/master_qgis-main trixie InRelease
-Hit:9 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
-Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
-Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
-Hit:12 http://localhost/aptly-repo/master_trixie-updates-contrib trixie-updates InRelease
-Hit:13 http://localhost/aptly-repo/master_trixie-updates-main trixie-updates InRelease
-Hit:14 http://localhost/aptly-repo/master_trixie-updates-non-free trixie-updates InRelease
-Hit:15 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
-Hit:16 https://packages.cloud.google.com/apt cloud-sdk InRelease
-Hit:17 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:18 https://download.docker.com/linux/debian trixie InRelease
-Hit:19 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:9 http://localhost/aptly-repo/master_trixie-backports-contrib trixie-backports InRelease
+Hit:10 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports InRelease
+Hit:11 http://localhost/aptly-repo/master_trixie-backports-non-free trixie-backports InRelease
+Hit:12 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
+Hit:13 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
+Hit:14 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
+Hit:15 http://localhost/aptly-repo/master_trixie-updates-contrib trixie-updates InRelease
+Hit:16 http://localhost/aptly-repo/master_trixie-updates-main trixie-updates InRelease
+Hit:17 http://localhost/aptly-repo/master_trixie-updates-non-free trixie-updates InRelease
+Hit:18 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
+Get:19 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,620 B]
+Get:20 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [4,340 kB]
+Get:21 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [1,887 kB]
+Fetched 6,229 kB in 1s (6,829 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
-1 package can be upgraded. Run 'apt list --upgradable' to see it.
-Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: https://packages.microsoft.com/repos/edge/dists/stable/InRelease: Policy will reject signature within a year, see --audit for details
-Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
+Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:13
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
@@ -43,68 +45,33 @@ Building dependency tree...
 Reading state information...
 apt-transport-https is already the newest version (3.0.3).
 ca-certificates is already the newest version (20250419).
-curl is already the newest version (8.14.1-2+deb13u2).
+ca-certificates set to manually installed.
+curl is already the newest version (8.16.0-4~bpo13+1).
 gnupg is already the newest version (2.4.7-21).
-Summary:
-  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 1
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Hit:1 http://localhost/aptly-repo/master_trixie-main trixie InRelease
-Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
-Hit:3 http://localhost/aptly-repo/master_deb-multimedia-main trixie InRelease
-Hit:4 http://localhost/aptly-repo/master_deb-multimedia-non-free trixie InRelease
-Hit:5 http://localhost/aptly-repo/master_docker-stable trixie InRelease
-Hit:6 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
-Hit:7 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:8 http://localhost/aptly-repo/master_qgis-main trixie InRelease
-Hit:9 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
-Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
-Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
-Hit:12 http://localhost/aptly-repo/master_trixie-updates-contrib trixie-updates InRelease
-Hit:13 http://localhost/aptly-repo/master_trixie-updates-main trixie-updates InRelease
-Hit:14 http://localhost/aptly-repo/master_trixie-updates-non-free trixie-updates InRelease
-Hit:15 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
-Hit:16 https://download.docker.com/linux/debian trixie InRelease
-Hit:17 https://packages.microsoft.com/repos/edge stable InRelease
-Get:18 https://deb.nodesource.com/node_20.x nodistro InRelease [12.1 kB]
-Get:19 https://deb.nodesource.com/node_20.x nodistro/main amd64 Packages [13.2 kB]
-Hit:20 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:21 https://packages.cloud.google.com/apt cloud-sdk InRelease
-Fetched 25.3 kB in 1s (35.8 kB/s)
+You might want to run 'apt --fix-broken install' to correct these.
+Unsatisfied dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+Error: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+Error: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+[1;31m2025-12-10 18:00:14 - Error: Failed to install packages (Exit Code: 0)[0m
 Reading package lists...
 Building dependency tree...
 Reading state information...
-1 package can be upgraded. Run 'apt list --upgradable' to see it.
-Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: https://packages.microsoft.com/repos/edge/dists/stable/InRelease: Policy will reject signature within a year, see --audit for details
-Warning: https://deb.nodesource.com/node_20.x/dists/nodistro/InRelease: Policy will reject signature within a year, see --audit for details
-Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-[1;34m2025-12-10 04:51:02 - Repository configured successfully.[0m
-[38;5;79m2025-12-10 04:51:02 - To install Node.js, run: apt install nodejs -y[0m
-[38;5;79m2025-12-10 04:51:02 - You can use N|solid Runtime as a node.js alternative[0m
-[1;32m2025-12-10 04:51:02 - To install N|solid Runtime, run: apt install nsolid -y 
-[0m
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  nodejs
-0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
-Need to get 32.0 MB of archives.
-After this operation, 197 MB of additional disk space will be used.
-Get:1 https://deb.nodesource.com/node_20.x nodistro/main amd64 nodejs amd64 20.19.6-1nodesource1 [32.0 MB]
-Fetched 32.0 MB in 33s (961 kB/s)
-Selecting previously unselected package nodejs.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 160209 files and directories currently installed.)
-Preparing to unpack .../nodejs_20.19.6-1nodesource1_amd64.deb ...
-Unpacking nodejs (20.19.6-1nodesource1) ...
-Setting up nodejs (20.19.6-1nodesource1) ...
-CLDS: * Install nodejs.
-CLDS: * Disk size = 8916816K. Space Used = 234852K. Runtime = 00:00:00:40.
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.2.0)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+ nodejs : Depends: libnode115 (= 20.19.2+dfsg-1) but it is not going to be installed
+          Depends: node-corepack but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6090028K. Space Used = 9800K. Runtime = 00:00:00:02.

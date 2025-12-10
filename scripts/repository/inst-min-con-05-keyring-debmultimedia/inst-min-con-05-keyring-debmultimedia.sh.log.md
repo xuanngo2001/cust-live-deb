@@ -3,7 +3,7 @@
   * Add deb-multimedia keyring.
   * Add deb-multimedia repository.
   * apt-get update
-  * Disk size = 1010260K. Space Used = 872K. Runtime = 00:00:00:00.
+  * Disk size = 1161696K. Space Used = 876K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 gpgv
