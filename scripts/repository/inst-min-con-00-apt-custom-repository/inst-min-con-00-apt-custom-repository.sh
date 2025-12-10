@@ -14,20 +14,13 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
     # New way: keyrings/trusted.gpg
     yes | cp -av trusted.gpg /etc/apt/keyrings/
 
-echo "${GV_LOG} * ===================== DONE XUAN iiiiiiii ====================="
-echo "${GV_LOG} * ===================== DONE XUAN ====================="
 
 # Add temporary local repository at the beginning of the sources.list file.
-source sourceslist-temporary.sh
+    source sourceslist-temporary.sh
 
 
 # Add default sources list
-source sourceslist-live.sh
+    source sourceslist-live.sh
 
 # Update source.list
-#   Commented out this for distro upgrade. Because host still using old distro.
-#apt-get update
-
-# Log
-echo "${GV_LOG} * ===================== DONE XUAN ====================="
-echo "${GV_LOG} * ===================== DONE XUAN ====================="
+    apt-get update

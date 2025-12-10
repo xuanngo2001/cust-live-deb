@@ -7,6 +7,9 @@ set -e
 SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
+# Explicitly list dependent packages
+    apt-get -y install gpgv 
+
 # Add deb-multimedia key.
   keyring_file=deb-multimedia-keyring_2016.8.1_all.deb
   dpkg -i ${keyring_file} && rm -f ${keyring_file}
