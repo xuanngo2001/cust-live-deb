@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-smb-samba.sh ...
   * After this operation, 78.6 MB of additional disk space will be used.
   * Install samba.
-  * Disk size = 4744028K. Space Used = 95888K. Runtime = 00:00:00:03.
+  * Disk size = 4743836K. Space Used = 95888K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 libavahi-client3 libavahi-common3 libavahi-common-data libcups2t64 libicu76
