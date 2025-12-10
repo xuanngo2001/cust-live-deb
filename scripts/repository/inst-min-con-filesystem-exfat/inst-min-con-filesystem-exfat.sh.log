@@ -3,36 +3,28 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  fuse libfuse2
+  libfuse3-4
+Suggested packages:
+  fuse3
 Recommended packages:
   exfatprogs
 The following NEW packages will be installed:
-  exfat-fuse fuse libfuse2
-0 upgraded, 3 newly installed, 0 to remove and 15 not upgraded.
-Need to get 211 kB of archives.
-After this operation, 563 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libfuse2 amd64 2.9.9-6+b1 [119 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 fuse amd64 2.9.9-6+b1 [61.3 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 exfat-fuse amd64 1.3.0+git20220115-2 [30.9 kB]
-Fetched 211 kB in 0s (5,799 kB/s)
-Selecting previously unselected package libfuse2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17988 files and directories currently installed.)
-Preparing to unpack .../libfuse2_2.9.9-6+b1_amd64.deb ...
-Unpacking libfuse2:amd64 (2.9.9-6+b1) ...
-Selecting previously unselected package fuse.
-Preparing to unpack .../fuse_2.9.9-6+b1_amd64.deb ...
-Unpacking fuse (2.9.9-6+b1) ...
+  exfat-fuse libfuse3-4
+0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
+Need to get 129 kB of archives.
+After this operation, 409 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libfuse3-4 amd64 3.17.2-3 [98.7 kB]
+Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 exfat-fuse amd64 1.4.0-3+b1 [30.1 kB]
+Fetched 129 kB in 0s (4,183 kB/s)
+Selecting previously unselected package libfuse3-4:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17221 files and directories currently installed.)
+Preparing to unpack .../libfuse3-4_3.17.2-3_amd64.deb ...
+Unpacking libfuse3-4:amd64 (3.17.2-3) ...
 Selecting previously unselected package exfat-fuse.
-Preparing to unpack .../exfat-fuse_1.3.0+git20220115-2_amd64.deb ...
-Unpacking exfat-fuse (1.3.0+git20220115-2) ...
-Setting up libfuse2:amd64 (2.9.9-6+b1) ...
-Setting up fuse (2.9.9-6+b1) ...
-update-initramfs: deferring update (trigger activated)
-Setting up exfat-fuse (1.3.0+git20220115-2) ...
-Processing triggers for libc-bin (2.36-9+deb12u13) ...
-Processing triggers for initramfs-tools (0.142+deb12u3) ...
-update-initramfs: Generating /boot/initrd.img-6.12.57+deb12-amd64
-W: No zstd in /usr/bin:/sbin:/bin, using gzip
-live-boot: core filesystems dm-verity devices utils udev blockdev dns.
+Preparing to unpack .../exfat-fuse_1.4.0-3+b1_amd64.deb ...
+Unpacking exfat-fuse (1.4.0-3+b1) ...
+Setting up libfuse3-4:amd64 (3.17.2-3) ...
+Setting up exfat-fuse (1.4.0-3+b1) ...
+Processing triggers for libc-bin (2.41-12) ...
 CLDS: * Install exfat-fuse so that you can read and write SD cards and USB keys.
-CLDS: * Disk size = 1025376K. Space Used = 860K. Runtime = 00:00:00:18.
+CLDS: * Disk size = 1170596K. Space Used = 592K. Runtime = 00:00:00:01.

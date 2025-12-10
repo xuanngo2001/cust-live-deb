@@ -3,49 +3,42 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  fuse3 libfuse3-3 libntfs-3g89
-The following packages will be REMOVED:
-  fuse
+  fuse3 libntfs-3g89t64
 The following NEW packages will be installed:
-  fuse3 libfuse3-3 libntfs-3g89 ntfs-3g
-0 upgraded, 4 newly installed, 1 to remove and 15 not upgraded.
-Need to get 693 kB of archives.
-After this operation, 2,162 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libfuse3-3 amd64 3.14.0-4 [88.1 kB]
-Get:2 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 fuse3 amd64 3.14.0-4 [35.9 kB]
-Get:3 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 libntfs-3g89 amd64 1:2022.10.3-1+deb12u2 [164 kB]
-Get:4 http://localhost/aptly-repo/master_bookworm-main bookworm/main amd64 ntfs-3g amd64 1:2022.10.3-1+deb12u2 [406 kB]
-Fetched 693 kB in 0s (20.0 MB/s)
-Selecting previously unselected package libfuse3-3:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18037 files and directories currently installed.)
-Preparing to unpack .../libfuse3-3_3.14.0-4_amd64.deb ...
-Unpacking libfuse3-3:amd64 (3.14.0-4) ...
-dpkg: fuse: dependency problems, but removing anyway as you requested:
- exfat-fuse depends on fuse.
-
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18046 files and directories currently installed.)
-Removing fuse (2.9.9-6+b1) ...
-update-initramfs: deferring update (trigger activated)
+  fuse3 libntfs-3g89t64 ntfs-3g
+0 upgraded, 3 newly installed, 0 to remove and 2 not upgraded.
+Need to get 616 kB of archives.
+After this operation, 2,025 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 fuse3 amd64 3.17.2-3 [41.3 kB]
+Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libntfs-3g89t64 amd64 1:2022.10.3-5 [166 kB]
+Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 ntfs-3g amd64 1:2022.10.3-5 [409 kB]
+Fetched 616 kB in 0s (13.5 MB/s)
 Selecting previously unselected package fuse3.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 18034 files and directories currently installed.)
-Preparing to unpack .../fuse3_3.14.0-4_amd64.deb ...
-Unpacking fuse3 (3.14.0-4) ...
-Selecting previously unselected package libntfs-3g89:amd64.
-Preparing to unpack .../libntfs-3g89_1%3a2022.10.3-1+deb12u2_amd64.deb ...
-Unpacking libntfs-3g89:amd64 (1:2022.10.3-1+deb12u2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 17253 files and directories currently installed.)
+Preparing to unpack .../fuse3_3.17.2-3_amd64.deb ...
+Adding 'diversion of /bin/fusermount to /bin/fusermount.usr-is-merged by fuse3'
+Adding 'diversion of /sbin/mount.fuse to /sbin/mount.fuse.usr-is-merged by fuse3'
+Unpacking fuse3 (3.17.2-3) ...
+Selecting previously unselected package libntfs-3g89t64:amd64.
+Preparing to unpack .../libntfs-3g89t64_1%3a2022.10.3-5_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libntfs-3g.so.89 to /lib/x86_64-linux-gnu/libntfs-3g.so.89.usr-is-merged by libntfs-3g89t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libntfs-3g.so.89.0.0 to /lib/x86_64-linux-gnu/libntfs-3g.so.89.0.0.usr-is-merged by libntfs-3g89t64'
+Unpacking libntfs-3g89t64:amd64 (1:2022.10.3-5) ...
 Selecting previously unselected package ntfs-3g.
-Preparing to unpack .../ntfs-3g_1%3a2022.10.3-1+deb12u2_amd64.deb ...
-Unpacking ntfs-3g (1:2022.10.3-1+deb12u2) ...
-Setting up libntfs-3g89:amd64 (1:2022.10.3-1+deb12u2) ...
-Setting up libfuse3-3:amd64 (3.14.0-4) ...
-Setting up fuse3 (3.14.0-4) ...
-Installing new version of config file /etc/fuse.conf ...
+Preparing to unpack .../ntfs-3g_1%3a2022.10.3-5_amd64.deb ...
+Unpacking ntfs-3g (1:2022.10.3-5) ...
+Setting up libntfs-3g89t64:amd64 (1:2022.10.3-5) ...
+Removing 'diversion of /lib/x86_64-linux-gnu/libntfs-3g.so.89 to /lib/x86_64-linux-gnu/libntfs-3g.so.89.usr-is-merged by libntfs-3g89t64'
+Removing 'diversion of /lib/x86_64-linux-gnu/libntfs-3g.so.89.0.0 to /lib/x86_64-linux-gnu/libntfs-3g.so.89.0.0.usr-is-merged by libntfs-3g89t64'
+Setting up fuse3 (3.17.2-3) ...
+Removing 'diversion of /bin/fusermount to /bin/fusermount.usr-is-merged by fuse3'
+Removing 'diversion of /sbin/mount.fuse to /sbin/mount.fuse.usr-is-merged by fuse3'
 update-initramfs: deferring update (trigger activated)
-Setting up ntfs-3g (1:2022.10.3-1+deb12u2) ...
-Processing triggers for libc-bin (2.36-9+deb12u13) ...
-Processing triggers for initramfs-tools (0.142+deb12u3) ...
-update-initramfs: Generating /boot/initrd.img-6.12.57+deb12-amd64
+Setting up ntfs-3g (1:2022.10.3-5) ...
+Processing triggers for libc-bin (2.41-12) ...
+Processing triggers for initramfs-tools (0.148.3) ...
+update-initramfs: Generating /boot/initrd.img-6.17.8+deb13-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 CLDS: * Install support for NTFS: ntfs-3g.
-CLDS: * Disk size = 1029204K. Space Used = 3248K. Runtime = 00:00:00:18.
+CLDS: * Disk size = 1174216K. Space Used = 3056K. Runtime = 00:00:00:10.

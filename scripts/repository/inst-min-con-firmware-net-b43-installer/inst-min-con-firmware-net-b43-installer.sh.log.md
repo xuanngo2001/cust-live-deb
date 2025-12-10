@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-firmware-net-b43-installer.sh ...
-  * After this operation, 98.3 kB of additional disk space will be used.
+  * After this operation, 99.3 kB of additional disk space will be used.
   * Install b43 for Dell Wireless 1397 WLAN Mini-Card Driver.
-  * Disk size = 1111320K. Space Used = 37728K. Runtime = 00:00:00:02.
+  * Disk size = 1256740K. Space Used = 37720K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 b43-fwcutter

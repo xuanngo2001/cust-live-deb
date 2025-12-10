@@ -1,20 +1,20 @@
 * >>>>>>>>> Running inst-min-con-firmware.sh ...
-  * After this operation, 797 kB of additional disk space will be used.
-  * After this operation, 353 kB of additional disk space will be used.
-  * After this operation, 62.5 MB of additional disk space will be used.
-  * After this operation, 481 kB of additional disk space will be used.
-  * After this operation, 2,285 kB of additional disk space will be used.
-  * After this operation, 18.5 MB of additional disk space will be used.
-  * After this operation, 1,450 kB of additional disk space will be used.
-  * After this operation, 1,089 kB of additional disk space will be used.
-  * After this operation, 84.3 MB of additional disk space will be used.
-  * After this operation, 39.0 MB of additional disk space will be used.
-  * After this operation, 136 MB of additional disk space will be used.
-  * After this operation, 8,054 kB of additional disk space will be used.
-  * After this operation, 7,046 kB of additional disk space will be used.
-  * After this operation, 61.4 kB of additional disk space will be used.
+  * After this operation, 796 kB of additional disk space will be used.
+  * After this operation, 362 kB of additional disk space will be used.
+  * After this operation, 99.6 MB of additional disk space will be used.
+  * After this operation, 601 kB of additional disk space will be used.
+  * After this operation, 2,404 kB of additional disk space will be used.
+  * After this operation, 18.7 MB of additional disk space will be used.
+  * After this operation, 1,570 kB of additional disk space will be used.
+  * After this operation, 1,208 kB of additional disk space will be used.
+  * After this operation, 117 MB of additional disk space will be used.
+  * After this operation, 11.7 MB of additional disk space will be used.
+  * After this operation, 109 MB of additional disk space will be used.
+  * After this operation, 4,832 kB of additional disk space will be used.
+  * After this operation, 19.6 MB of additional disk space will be used.
+  * After this operation, 66.6 kB of additional disk space will be used.
   * Install firmwares.
-  * Disk size = 1575040K. Space Used = 463720K. Runtime = 00:00:01:44.
+  * Disk size = 1725460K. Space Used = 468720K. Runtime = 00:00:00:54.
   * The following NEW packages will be installed:
   ```bash
 atmel-firmware bluez-firmware firmware-amd-graphics firmware-atheros firmware-bnx2

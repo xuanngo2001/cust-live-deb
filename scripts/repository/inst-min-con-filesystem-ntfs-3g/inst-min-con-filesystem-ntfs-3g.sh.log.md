@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-min-con-filesystem-ntfs-3g.sh ...
-  * After this operation, 2,162 kB of additional disk space will be used.
+  * After this operation, 2,025 kB of additional disk space will be used.
   * Install support for NTFS: ntfs-3g.
-  * Disk size = 1029204K. Space Used = 3248K. Runtime = 00:00:00:18.
+  * Disk size = 1174216K. Space Used = 3056K. Runtime = 00:00:00:10.
   * The following NEW packages will be installed:
   ```bash
-fuse3 libfuse3-3 libntfs-3g89 ntfs-3g
+fuse3 libntfs-3g89t64 ntfs-3g
   ```
