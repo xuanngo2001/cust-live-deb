@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-con-xtra-gcp-google-cloud-sdk-openssh-client.sh ...
   * Install openssh-client.
-  * Disk size = 4041264K. Space Used = 4K. Runtime = 00:00:00:00.
+  * Disk size = 4041276K. Space Used = 4K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 openssh-client*

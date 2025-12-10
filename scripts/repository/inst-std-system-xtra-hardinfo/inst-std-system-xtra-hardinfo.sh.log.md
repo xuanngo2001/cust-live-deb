@@ -2,7 +2,7 @@
   * After this operation, 14.3 MB of additional disk space will be used.
   * Install hardware info apps: hardinfo.
   * Insert System Information menu in Administration.
-  * Disk size = 7266260K. Space Used = 16120K. Runtime = 00:00:00:02.
+  * Disk size = 7266268K. Space Used = 16120K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 glib-networking glib-networking-common glib-networking-services hardinfo hardinfo2

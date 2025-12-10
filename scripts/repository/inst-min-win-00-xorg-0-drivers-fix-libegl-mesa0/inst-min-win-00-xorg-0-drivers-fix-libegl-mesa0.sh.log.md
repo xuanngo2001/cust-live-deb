@@ -2,7 +2,7 @@
   * After this operation, 203 MB of additional disk space will be used.
   * After this operation, 1,648 kB of additional disk space will be used.
   * Install libegl-mesa0.
-  * Disk size = 5112408K. Space Used = 245060K. Runtime = 00:00:00:04.
+  * Disk size = 5112416K. Space Used = 245060K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 libdrm2 libdrm-amdgpu1 libdrm-common libdrm-intel1 libegl-mesa0
