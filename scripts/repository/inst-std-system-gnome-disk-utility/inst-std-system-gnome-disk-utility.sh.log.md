@@ -1,10 +1,9 @@
 * >>>>>>>>> Running inst-std-system-gnome-disk-utility.sh ...
-<<<<<<< HEAD
   * After this operation, 17.0 MB of additional disk space will be used.
   * Install Partition Manager: gnome-disk-utility.
   * Run: gnome-disks.
   * Insert gnome-disk-utility menu in Administration.
-  * Disk size = 7248660K. Space Used = 11420K. Runtime = 00:00:00:02.
+  * Disk size = 7248908K. Space Used = 11420K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 gnome-disk-utility libatasmart4 libblockdev3 libblockdev-crypto3 libblockdev-fs3
@@ -14,6 +13,3 @@ libcrack2 libcryptsetup12 libjson-c5 libltdl7 libnvme1t64
 libpolkit-agent-1-0 libpolkit-gobject-1-0 libpwquality1 libpwquality-common libsecret-1-0
 libsecret-common libudisks2-0 libvolume-key1 sound-theme-freedesktop udisks2
   ```
-=======
-  * Disk size = 6125264K. Space Used = 4K. Runtime = 00:00:00:01.
->>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

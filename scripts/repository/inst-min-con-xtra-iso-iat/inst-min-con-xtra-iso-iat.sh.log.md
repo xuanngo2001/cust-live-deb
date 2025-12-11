@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-iso-iat.sh ...
   * After this operation, 64.5 kB of additional disk space will be used.
   * Install iat to convert BIN, MDF, PDI, CDI, NRG, and B5I into ISO-9660.
-<<<<<<< HEAD
-  * Disk size = 4095488K. Space Used = 104K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 4247608K. Space Used = 104K. Runtime = 00:00:00:01.
->>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07
+  * Disk size = 4095736K. Space Used = 104K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 iat

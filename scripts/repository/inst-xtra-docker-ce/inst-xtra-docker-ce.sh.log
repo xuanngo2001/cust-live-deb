@@ -2,7 +2,6 @@ CLDS:>>>>>>>>> Running inst-xtra-docker-ce.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-<<<<<<< HEAD
 The following additional packages will be installed:
   libip4tc2 libip6tc2 libnetfilter-conntrack3 libnfnetlink0
 Suggested packages:
@@ -36,10 +35,10 @@ Get:13 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
 Get:14 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [25.9 kB]
 Get:15 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
 Get:16 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,620 B]
-Get:17 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [1,887 kB]
+Get:17 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [4,340 kB]
 Get:18 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,214 B]
-Get:19 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [4,340 kB]
-Fetched 6,261 kB in 7s (926 kB/s)
+Get:19 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [1,887 kB]
+Fetched 6,261 kB in 6s (1,082 kB/s)
 Reading package lists...
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -70,11 +69,11 @@ Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRele
 Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
 Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
 Get:13 https://download.docker.com/linux/debian trixie InRelease [32.5 kB]
-Get:14 https://download.docker.com/linux/debian trixie/stable amd64 Packages [22.0 kB]
-Hit:15 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:14 https://packages.microsoft.com/repos/edge stable InRelease
+Get:15 https://download.docker.com/linux/debian trixie/stable amd64 Packages [22.0 kB]
 Hit:16 https://dl.google.com/linux/chrome/deb stable InRelease
 Hit:17 https://packages.cloud.google.com/apt cloud-sdk InRelease
-Fetched 54.4 kB in 0s (126 kB/s)
+Fetched 54.4 kB in 0s (114 kB/s)
 Reading package lists...
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -166,21 +165,4 @@ Created symlink '/etc/systemd/system/multi-user.target.wants/docker.service' →
 Created symlink '/etc/systemd/system/sockets.target.wants/docker.socket' → '/usr/lib/systemd/system/docker.socket'.
 Processing triggers for libc-bin (2.41-12) ...
 CLDS: * Install docker-ce: https://docs.docker.com/engine/install/debian
-CLDS: * Disk size = 8318120K. Space Used = 437732K. Runtime = 00:00:00:12.
-=======
-You might want to run 'apt --fix-broken install' to correct these.
-The following packages have unmet dependencies:
- iptables : Depends: libip4tc2 (= 1.8.11-2) but it is not going to be installed
-            Depends: libip6tc2 (= 1.8.11-2) but it is not going to be installed
-            Depends: libnetfilter-conntrack3 (>= 1.0.6) but it is not going to be installed
-            Depends: libnfnetlink0 (>= 1.0.2) but it is not going to be installed
- microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
-                         Depends: libatk1.0-0 (>= 2.2.0)
-                         Depends: libgtk-3-0 (>= 3.9.10) or
-                                  libgtk-4-1 but it is not going to be installed
-                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
-E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
-E: The following information from --solver 3.0 may provide additional context:
-   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
-CLDS: * Disk size = 6125348K. Space Used = 4K. Runtime = 00:00:00:02.
->>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07
+CLDS: * Disk size = 8318372K. Space Used = 437732K. Runtime = 00:00:00:12.

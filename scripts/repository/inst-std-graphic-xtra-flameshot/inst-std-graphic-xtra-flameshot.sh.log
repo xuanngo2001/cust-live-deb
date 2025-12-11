@@ -2,7 +2,6 @@ CLDS:>>>>>>>>> Running inst-std-graphic-xtra-flameshot.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-<<<<<<< HEAD
 The following additional packages will be installed:
   libdouble-conversion3 libmd4c0 libpcre2-16-0 libqt5core5t64 libqt5dbus5t64
   libqt5gui5t64 libqt5network5t64 libqt5svg5 libqt5widgets5t64 libxcb-icccm4
@@ -40,7 +39,7 @@ Get:15 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libqt5gu
 Get:16 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libqt5widgets5t64 amd64 5.15.15+dfsg-6 [2,395 kB]
 Get:17 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libqt5svg5 amd64 5.15.15-2 [138 kB]
 Get:18 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 flameshot amd64 12.1.0+ds-2 [700 kB]
-Fetched 10.3 MB in 0s (48.3 MB/s)
+Fetched 10.3 MB in 0s (80.8 MB/s)
 Selecting previously unselected package libdouble-conversion3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 130761 files and directories currently installed.)
 Preparing to unpack .../00-libdouble-conversion3_3.3.1-1_amd64.deb ...
@@ -118,30 +117,4 @@ Processing triggers for hicolor-icon-theme (0.18-2) ...
 Processing triggers for libc-bin (2.41-12) ...
 Processing triggers for desktop-file-utils (0.28-1) ...
 CLDS: * Install flameshot.
-CLDS: * Disk size = 5506264K. Space Used = 46420K. Runtime = 00:00:00:02.
-=======
-Solving dependencies...
-Some packages could not be installed. This may mean that you have
-requested an impossible situation or if you are using the unstable
-distribution that some required packages have not yet been created
-or been moved out of Incoming.
-The following information may help to resolve the situation:
-
-The following packages have unmet dependencies:
- flameshot : Depends: libqt6svg6 but it is not installable
-             Depends: libkdsingleapplication-qt6-1.0 (>= 1.1.0) but it is not installable
-             Depends: libkf6guiaddons6 (>= 6.0.0) but it is not installable
-             Depends: libqt-color-widgets2 (>= 3.0.0) but it is not going to be installed
-             Depends: libqt6core6t64 (>= 6.8.2) but it is not installable
-             Depends: libqt6dbus6 (>= 6.2) but it is not installable
-             Depends: libqt6gui6 (>= 6.4.0) but it is not installable
-             Depends: libqt6widgets6 (>= 6.2) but it is not installable
-E: Unable to correct problems, you have held broken packages.
-E: The following information from --solver 3.0 may provide additional context:
-   Unable to satisfy dependencies. Reached two conflicting decisions:
-   1. flameshot:amd64=13.3.0-1~bpo13+1 is selected for install
-   2. flameshot:amd64=13.3.0-1~bpo13+1 Depends libqt6svg6
-      but none of the choices are installable:
-      [no choices]
-CLDS: * Disk size = 5514144K. Space Used = 8K. Runtime = 00:00:00:01.
->>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07
+CLDS: * Disk size = 5506516K. Space Used = 46420K. Runtime = 00:00:00:03.

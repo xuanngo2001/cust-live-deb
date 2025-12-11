@@ -1,10 +1,9 @@
 * >>>>>>>>> Running inst-min-win-01-wm-jwm.sh ...
-<<<<<<< HEAD
   * After this operation, 80.8 MB of additional disk space will be used.
   * Install Window Manager jwm: JWM v2.4.6 by Joe Wingbermuehle.
   * Set .
   * Change X window manager: update-alternatives --config x-window-manager
-  * Disk size = 5237652K. Space Used = 61700K. Runtime = 00:00:00:03.
+  * Disk size = 5237904K. Space Used = 61700K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 adwaita-icon-theme at-spi2-common dbus-user-session dconf-gsettings-backend dconf-service
@@ -17,6 +16,3 @@ libwayland-egl1 libxcomposite1 libxfce4ui-2-0 libxfce4ui-common libxfce4util7
 libxfce4util-common libxfconf-0-3 libxft2 libxi6 libxkbcommon0
 xfce4-terminal xfconf
   ```
-=======
-  * Disk size = 5330120K. Space Used = 8K. Runtime = 00:00:00:01.
->>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07

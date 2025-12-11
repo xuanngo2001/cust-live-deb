@@ -1,9 +1,8 @@
 * >>>>>>>>> Running inst-std-inet-xtra-transmission-gtk.sh ...
-<<<<<<< HEAD
   * After this operation, 47.3 MB of additional disk space will be used.
   * Install transmission-gtk.
   * Insert transmission-gtk in Internet menu.
-  * Disk size = 7004800K. Space Used = 46476K. Runtime = 00:00:00:02.
+  * Disk size = 7005056K. Space Used = 46476K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libb64-0d libcairomm-1.16-1 libcairo-script-interpreter2 libgles2 libglibmm-2.68-1t64
@@ -11,6 +10,3 @@ libgraphene-1.0-0 libgtk-4-1 libgtk-4-common libgtkmm-4.0-0 libharfbuzz-subset0
 libminiupnpc18 libnatpmp1t64 libpangomm-2.48-1t64 libsigc++-3.0-0 transmission-common
 transmission-gtk
   ```
-=======
-  * Disk size = 6125184K. Space Used = 8K. Runtime = 00:00:00:01.
->>>>>>> 0f8f094e8a46c25d987ffe56202c00b57bfa0e07
