@@ -14,10 +14,12 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
     # New way: keyrings/trusted.gpg
     yes | cp -av trusted.gpg /etc/apt/keyrings/
 
+# Copy keyrings
+    \cp -av ./etc/keyrings/     /etc/apt/
+    \cp -av ./usr/keyrings/     /usr/share/
 
 # Add temporary local repository at the beginning of the sources.list file.
     source sourceslist-temporary.sh
-
 
 # Add default sources list
     source sourceslist-live.sh
