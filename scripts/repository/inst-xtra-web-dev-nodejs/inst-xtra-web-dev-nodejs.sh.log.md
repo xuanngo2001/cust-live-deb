@@ -1,8 +1,6 @@
 * >>>>>>>>> Running inst-xtra-web-dev-nodejs.sh ...
-  * After this operation, 197 MB of additional disk space will be used.
-  * Install nodejs.
-  * Disk size = 8916732K. Space Used = 234828K. Runtime = 00:00:00:25.
+  * Disk size = 5946792K. Space Used = 9748K. Runtime = 00:00:00:06.
   * The following NEW packages will be installed:
   ```bash
-apt-transport-https* ca-certificates* curl* gnupg* nodejs
+apt-transport-https* ca-certificates* curl* gnupg*
   ```
