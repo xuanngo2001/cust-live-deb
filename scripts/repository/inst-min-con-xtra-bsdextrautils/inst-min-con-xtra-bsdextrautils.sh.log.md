@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-bsdextrautils.sh ...
   * After this operation, 347 kB of additional disk space will be used.
   * Install bsdextrautils to get column utility required by zero*.sh
-  * Disk size = 2273928K. Space Used = 504K. Runtime = 00:00:00:00.
+  * Disk size = 2273000K. Space Used = 488K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 bsdextrautils
