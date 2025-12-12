@@ -2,8 +2,20 @@ CLDS:>>>>>>>>> Running inst-std-office-libreoffice-draw.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-libreoffice-draw is already the newest version (1:7.0.4-4+deb11u3).
+libreoffice-draw is already the newest version (4:25.2.3-2+deb13u2).
 libreoffice-draw set to manually installed.
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-CLDS: * Install libreoffice-draw: 7.0.4.2 00(Build:2).
-CLDS: * Disk size = 4185448K. Space Used = 4K. Runtime = 00:00:00:01.
+1 not fully installed or removed.
+After this operation, 0 B of additional disk space will be used.
+E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
+Setting up google-cloud-cli (549.0.1-0) ...
+Fatal Python error: _Py_HashRandomization_Init: failed to get random numbers to initialize Python
+Python runtime state: preinitialized
+
+dpkg: error processing package google-cloud-cli (--configure):
+ installed google-cloud-cli package post-installation script subprocess returned error exit status 1
+Processing triggers for libc-bin (2.41-12) ...
+Errors were encountered while processing:
+ google-cloud-cli
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+CLDS: * Disk size = 8010436K. Space Used = -4K. Runtime = 00:00:00:01.

@@ -1,27 +1,18 @@
 * >>>>>>>>> Running inst-std-graphic-gimp.sh ...
-  * After this operation, 319 MB of additional disk space will be used.
-  * Install gimp.
-  * Disk size = 3120460K. Space Used = 351180K. Runtime = 00:00:00:17.
+  * After this operation, 192 MB of additional disk space will be used.
+  * Disk size = 5593972K. Space Used = 165912K. Runtime = 00:00:00:06.
   * The following NEW packages will be installed:
   ```bash
-fonts-urw-base35 gimp gimp-data graphviz libaa1
-libamd2 libann0 libaom0 libasyncns0 libavcodec58
-libavformat58 libavutil56 libbabl-0.1-0 libbluray2 libcamd2
-libccolamd2 libcdt5 libcgraph6 libcholmod3 libchromaprint1
-libcodec2-0.9 libcolamd2 libdav1d4 libde265-0 libexiv2-27
-libflac8 libgegl-0.4-0 libgegl-common libgexiv2-2 libgfortran5
-libgimp2.0 libgme0 libgs9 libgs9-common libgsm1
-libgts-0.7-5 libgvc6 libgvpr2 libheif1 libidn11
-libijs-0.35 libilmbase25 liblab-gamut1 liblapack3 libmetis5
-libmfx1 libmng1 libmp3lame0 libmpg123-0 libmypaint-1.5-1
-libmypaint-common libnorm1 libnuma1 libopenexr25 libopenmpt0
-libopus0 libpaper1 libpathplan4 libpgm-5.3-0 libpoppler-glib8
-libpulse0 libquadmath0 librabbitmq4 libraw20 libsdl2-2.0-0
-libshine3 libsndfile1 libsoxr0 libspeex1 libsrt1.4-gnutls
-libssh-gcrypt-4 libsuitesparseconfig5 libswresample3 libswscale5 libtheora0
-libtwolame0 libudfread0 libumfpack5 libva2 libva-drm2
-libva-x11-2 libvdpau1 libvorbisenc2 libvpx6 libwavpack1
-libwebpdemux2 libwebpmux3 libwmf0.2-7 libx264-160 libx265-192
-libxvidcore4 libzmq5 libzvbi0 libzvbi-common ocl-icd-libopencl1
-poppler-data xdg-utils
+gimp gimp-data gir1.2-atk-1.0 gir1.2-babl-0.1 gir1.2-freedesktop
+gir1.2-gdkpixbuf-2.0 gir1.2-gegl-0.4 gir1.2-gimp-3.0 gir1.2-girepository-2.0 gir1.2-glib-2.0
+gir1.2-gtk-3.0 gir1.2-harfbuzz-0.0 gir1.2-pango-1.0 graphviz libaa1
+libamd3 libann0 libappstream-glib8 libbabl-0.1-0 libcamd3
+libccolamd3 libcdt5 libcfitsio10t64 libcgraph6 libcholmod5
+libcolamd3 libexiv2-28 libexiv2-data libgegl-0.4-0t64 libgegl-common
+libgexiv2-2 libgfortran5 libgimp-3.0-0 libgirepository-1.0-1 libgpm2
+libgts-0.7-5t64 libgvc6 libgvpr2 libharfbuzz-gobject0 libimath-3-1-29t64
+libinih1 libinireader0 libjson-c5 libjson-glib-1.0-0 libjson-glib-1.0-common
+liblab-gamut1 liblapack3 libltdl7 libmypaint-1.5-1 libmypaint-common
+libopenexr-3-1-30 libpathplan4 libpoppler-glib8t64 libraw23t64 librsvg2-common
+libsuitesparseconfig7 libumfpack6 libwmf-0.2-7 python3-gi xdg-utils
   ```

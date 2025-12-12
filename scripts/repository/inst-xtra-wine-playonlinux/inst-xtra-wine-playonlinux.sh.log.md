@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-wine-playonlinux.sh ...
-  * Disk size = 6426716K. Space Used = 8K. Runtime = 00:00:00:00.
+  * Disk size = 10303624K. Space Used = 4K. Runtime = 00:00:00:01.

@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-qgis.sh ...
-  * Disk size = 3378636K. Space Used = 4K. Runtime = 00:00:00:00.
+  * Disk size = 5986780K. Space Used = 0K. Runtime = 00:00:00:01.

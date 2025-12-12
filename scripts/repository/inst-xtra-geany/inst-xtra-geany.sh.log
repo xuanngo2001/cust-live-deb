@@ -2,10 +2,40 @@ CLDS:>>>>>>>>> Running inst-xtra-geany.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-You might want to run 'apt --fix-broken install' to correct these.
-The following packages have unmet dependencies:
- geany : Depends: geany-common (= 1.37.1-2) but it is not going to be installed
- openra : Depends: libgl1-mesa-glx but it is not installable
-          Depends: liblua5.1-0 but it is not installable
-E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
-CLDS: * Disk size = 6426620K. Space Used = 4K. Runtime = 00:00:00:01.
+The following additional packages will be installed:
+  geany-common
+Suggested packages:
+  doc-base
+The following NEW packages will be installed:
+  geany geany-common
+0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.
+1 not fully installed or removed.
+Need to get 5,111 kB of archives.
+After this operation, 16.0 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 geany-common all 2.0-2 [3,061 kB]
+Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 geany amd64 2.0-2 [2,050 kB]
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Fetched 5,111 kB in 0s (72.3 MB/s)
+E: Can not write log (Is /dev/pts mounted?) - posix_openpt (2: No such file or directory)
+Selecting previously unselected package geany-common.
+(Reading database ... 157213 files and directories currently installed.)
+Preparing to unpack .../geany-common_2.0-2_all.deb ...
+Unpacking geany-common (2.0-2) ...
+Selecting previously unselected package geany.
+Preparing to unpack .../archives/geany_2.0-2_amd64.deb ...
+Unpacking geany (2.0-2) ...
+Setting up geany-common (2.0-2) ...
+Setting up google-cloud-cli (549.0.1-0) ...
+Fatal Python error: _Py_HashRandomization_Init: failed to get random numbers to initialize Python
+Python runtime state: preinitialized
+
+dpkg: error processing package google-cloud-cli (--configure):
+ installed google-cloud-cli package post-installation script subprocess returned error exit status 1
+Setting up geany (2.0-2) ...
+Processing triggers for hicolor-icon-theme (0.18-2) ...
+Processing triggers for libc-bin (2.41-12) ...
+Processing triggers for desktop-file-utils (0.28-1) ...
+Errors were encountered while processing:
+ google-cloud-cli
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+CLDS: * Disk size = 9767992K. Space Used = 16780K. Runtime = 00:00:00:02.

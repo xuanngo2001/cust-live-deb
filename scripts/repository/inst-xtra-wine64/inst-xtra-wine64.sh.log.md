@@ -1,6 +1,8 @@
 * >>>>>>>>> Running inst-xtra-wine64.sh ...
-  * Disk size = 6426720K. Space Used = 4K. Runtime = 00:00:00:01.
+  * After this operation, 767 MB of additional disk space will be used.
+  * Disk size = 11164704K. Space Used = 861080K. Runtime = 00:00:00:06.
   * The following NEW packages will be installed:
   ```bash
-libgphoto2-6*
+fonts-wine libcapi20-3t64 libgphoto2-6t64 libgphoto2-port12t64 libwine
+libz-mingw-w64 wine wine64
   ```
