@@ -9,14 +9,14 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Add CLD aptly repository key.
     # Legacy way: trusted.gpg
-    yes | cp -av trusted.gpg /etc/apt/
+    \cp -av trusted.gpg /etc/apt/
 
     # New way: keyrings/trusted.gpg
-    yes | cp -av trusted.gpg /etc/apt/keyrings/
+    \cp -av trusted.gpg /etc/apt/keyrings/
 
 # Copy keyrings
-    \cp -av ./etc/keyrings/     /etc/apt/
-    \cp -av ./usr/keyrings/     /usr/share/
+    \cp -av ./keys/etc/keyrings/     /etc/apt/
+    \cp -av ./keys/usr/keyrings/     /usr/share/
 
 # Add temporary local repository at the beginning of the sources.list file.
     source sourceslist-temporary.sh

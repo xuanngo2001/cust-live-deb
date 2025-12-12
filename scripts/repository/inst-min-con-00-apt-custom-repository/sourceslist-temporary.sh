@@ -5,7 +5,6 @@ GF_ADD_SOURCE_LIST tmp "deb [signed-by=/etc/apt/keyrings/trusted.gpg] http://loc
 GF_ADD_SOURCE_LIST tmp "deb [signed-by=/etc/apt/keyrings/trusted.gpg] http://localhost/aptly-repo/master_docker-stable trixie stable"
 GF_ADD_SOURCE_LIST tmp "deb [signed-by=/etc/apt/keyrings/trusted.gpg] http://localhost/aptly-repo/master_google-cloud-main cloud-sdk main"
 GF_ADD_SOURCE_LIST tmp "deb [signed-by=/etc/apt/keyrings/trusted.gpg] http://localhost/aptly-repo/master_google-main stable main"
-GF_ADD_SOURCE_LIST tmp "deb [signed-by=/etc/apt/keyrings/trusted.gpg] http://localhost/aptly-repo/master_qgis-main trixie main"
 GF_ADD_SOURCE_LIST tmp "deb [signed-by=/etc/apt/keyrings/trusted.gpg] http://localhost/aptly-repo/master_trixie-contrib trixie contrib"
 GF_ADD_SOURCE_LIST tmp "deb [signed-by=/etc/apt/keyrings/trusted.gpg] http://localhost/aptly-repo/master_trixie-main trixie main"
 GF_ADD_SOURCE_LIST tmp "deb [signed-by=/etc/apt/keyrings/trusted.gpg] http://localhost/aptly-repo/master_trixie-non-free-firmware trixie non-free-firmware"
