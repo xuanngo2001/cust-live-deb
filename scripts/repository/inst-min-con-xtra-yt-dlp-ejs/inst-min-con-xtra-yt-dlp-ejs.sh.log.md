@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-xtra-yt-dlp-ejs.sh ...
   * Install yt-dlp-ejs.
-  * Disk size = 4868268K. Space Used = 12K. Runtime = 00:00:00:01.
+  * Disk size = 4867232K. Space Used = 12K. Runtime = 00:00:00:01.

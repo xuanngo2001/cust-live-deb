@@ -1,2 +1,8 @@
 * >>>>>>>>> Running inst-std-xtra-opw-php-mbstring.sh ...
-  * Disk size = 5974052K. Space Used = 4K. Runtime = 00:00:00:01.
+  * After this operation, 1,967 kB of additional disk space will be used.
+  * Install php-mbstring.
+  * Disk size = 7874408K. Space Used = 2648K. Runtime = 00:00:00:02.
+  * The following NEW packages will be installed:
+  ```bash
+libonig5 php8.4-mbstring php-mbstring
+  ```

@@ -1,2 +1,7 @@
 * >>>>>>>>> Running inst-min-win-01-wm-terminal-xfce.sh ...
-  * Disk size = 5178836K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Install terminal: xfce4-terminal.
+  * Disk size = 5237716K. Space Used = 4K. Runtime = 00:00:00:01.
+  * The following NEW packages will be installed:
+  ```bash
+exo-utils* libxfce4ui-2-0* xfce4-terminal*
+  ```

@@ -2,23 +2,36 @@ CLDS:>>>>>>>>> Running inst-min-win-xtra-default-jre.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-Solving dependencies...
-Some packages could not be installed. This may mean that you have
-requested an impossible situation or if you are using the unstable
-distribution that some required packages have not yet been created
-or been moved out of Incoming.
-The following information may help to resolve the situation:
-
-The following packages have unmet dependencies:
- libatk-bridge2.0-0t64 : Depends: libatspi2.0-0t64 (= 2.56.2-1) but 2.58.2-1~bpo13+1 is to be installed
-E: Unable to correct problems, you have held broken packages.
-E: The following information from --solver 3.0 may provide additional context:
-   Unable to satisfy dependencies. Reached two conflicting decisions:
-   1. libatspi2.0-0t64:amd64=2.56.2-1 is not selected for install
-   2. libatspi2.0-0t64:amd64=2.56.2-1 is selected for install because:
-      1. default-jre:amd64=2:1.21-76 is selected for install
-      2. default-jre:amd64 Depends openjdk-21-jre
-      3. openjdk-21-jre:amd64 Depends libgtk-3-0t64
-      4. libgtk-3-0t64:amd64 Depends libatk-bridge2.0-0t64 (>= 2.15.1)
-      5. libatk-bridge2.0-0t64:amd64 Depends libatspi2.0-0t64 (= 2.56.2-1)
-CLDS: * Disk size = 5180964K. Space Used = 4K. Runtime = 00:00:00:01.
+The following additional packages will be installed:
+  libgif7 openjdk-21-jre
+Recommended packages:
+  libatk-wrapper-java-jni fonts-dejavu-extra
+The following NEW packages will be installed:
+  default-jre libgif7 openjdk-21-jre
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 254 kB of archives.
+After this operation, 775 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libgif7 amd64 5.2.2-1+b1 [44.2 kB]
+Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 openjdk-21-jre amd64 21.0.9+10-1~deb13u1 [208 kB]
+Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 default-jre amd64 2:1.21-76 [1,068 B]
+Fetched 254 kB in 0s (4,596 kB/s)
+Selecting previously unselected package libgif7:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 121337 files and directories currently installed.)
+Preparing to unpack .../libgif7_5.2.2-1+b1_amd64.deb ...
+Unpacking libgif7:amd64 (5.2.2-1+b1) ...
+Selecting previously unselected package openjdk-21-jre:amd64.
+Preparing to unpack .../openjdk-21-jre_21.0.9+10-1~deb13u1_amd64.deb ...
+Unpacking openjdk-21-jre:amd64 (21.0.9+10-1~deb13u1) ...
+Selecting previously unselected package default-jre.
+Preparing to unpack .../default-jre_2%3a1.21-76_amd64.deb ...
+Unpacking default-jre (2:1.21-76) ...
+Setting up libgif7:amd64 (5.2.2-1+b1) ...
+Setting up openjdk-21-jre:amd64 (21.0.9+10-1~deb13u1) ...
+Setting up default-jre (2:1.21-76) ...
+Processing triggers for libc-bin (2.41-12) ...
+Processing triggers for hicolor-icon-theme (0.18-2) ...
+'./cld/bashrc.d/bashrc-java.sh' -> '/usr/local/cld/bashrc.d/bashrc-java.sh'
+CLDS: * Install default-jre.
+CLDS: * Needed for Sweet Home 3D: java.awt.AWTError: Assistive Technology not found.
+CLDS: * JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64/bin/java".
+CLDS: * Disk size = 5240916K. Space Used = 1068K. Runtime = 00:00:00:01.
