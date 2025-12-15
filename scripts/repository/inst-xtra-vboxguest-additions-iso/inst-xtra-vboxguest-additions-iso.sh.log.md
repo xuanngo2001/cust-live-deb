@@ -5,9 +5,9 @@
   * WARNING: Use this script only if backport repository doesn't work.
   * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
   * Assumed packages installed: bzip2 & Xserver installed.
-  * VirtualBox guest additions installed: version: 7.2.0 r170228.
-  * Delete VBoxGuestAdditions.iso[51900K]. Space used could be negative due to this deletion.
-  * Disk size = 8663184K. Space Used = 169528K. Runtime = 00:00:00:44.
+  * VirtualBox guest additions installed: version: 7.1.10 r169112.
+  * Delete VBoxGuestAdditions.iso[59940K]. Space used could be negative due to this deletion.
+  * Disk size = 8671340K. Space Used = 161416K. Runtime = 00:00:51:20.
   * The following NEW packages will be installed:
   ```bash
 build-essential dkms dpkg-dev g++ g++-14
