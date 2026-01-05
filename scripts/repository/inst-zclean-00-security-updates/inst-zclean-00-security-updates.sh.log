@@ -13,12 +13,15 @@ Hit:7 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:8 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
 Hit:9 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
 Hit:10 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
-Hit:11 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
-Hit:12 https://download.docker.com/linux/debian trixie InRelease
-Hit:13 https://deb.nodesource.com/node_20.x nodistro InRelease
-Hit:14 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:15 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:16 https://packages.cloud.google.com/apt cloud-sdk InRelease
+Hit:11 http://localhost/aptly-repo/master_trixie-updates-contrib trixie-updates InRelease
+Hit:12 http://localhost/aptly-repo/master_trixie-updates-main trixie-updates InRelease
+Hit:13 http://localhost/aptly-repo/master_trixie-updates-non-free trixie-updates InRelease
+Hit:14 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
+Hit:15 https://download.docker.com/linux/debian trixie InRelease
+Hit:16 https://deb.nodesource.com/node_20.x nodistro InRelease
+Hit:17 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:18 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:19 https://packages.cloud.google.com/apt cloud-sdk InRelease
 Reading package lists...
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
@@ -40,7 +43,7 @@ The following packages will be upgraded:
 Need to get 180 MB of archives.
 After this operation, 132 MB of additional disk space will be used.
 Get:1 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 143.0.3650.96-1 [180 MB]
-Fetched 180 MB in 6s (28.9 MB/s)
+Fetched 180 MB in 9s (20.4 MB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 167125 files and directories currently installed.)
 Preparing to unpack .../microsoft-edge-stable_143.0.3650.96-1_amd64.deb ...
 Unpacking microsoft-edge-stable (143.0.3650.96-1) over (112.0.1722.48-1) ...
@@ -48,4 +51,4 @@ Setting up microsoft-edge-stable (143.0.3650.96-1) ...
 Processing triggers for menu (2.1.51) ...
 Processing triggers for desktop-file-utils (0.28-1) ...
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 7968128K. Space Used = 306088K. Runtime = 00:00:00:16.
+CLDS: * Disk size = 7968176K. Space Used = 306096K. Runtime = 00:00:00:18.
