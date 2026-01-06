@@ -3,24 +3,29 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libxdo3
+  libxdo3 libxkbcommon0
 The following NEW packages will be installed:
-  libxdo3 xdotool
-0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
-Need to get 82.5 kB of archives.
-After this operation, 205 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxdo3 amd64 1:3.20160805.1-5.1 [31.0 kB]
-Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xdotool amd64 1:3.20160805.1-5.1 [51.5 kB]
-Fetched 82.5 kB in 0s (6,589 kB/s)
+  libxdo3 libxkbcommon0 xdotool
+0 upgraded, 3 newly installed, 0 to remove and 2 not upgraded.
+Need to get 195 kB of archives.
+After this operation, 529 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxkbcommon0 amd64 1.7.0-2 [113 kB]
+Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxdo3 amd64 1:3.20160805.1-5.1 [31.0 kB]
+Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xdotool amd64 1:3.20160805.1-5.1 [51.5 kB]
+Fetched 195 kB in 0s (15.8 MB/s)
+Selecting previously unselected package libxkbcommon0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 118581 files and directories currently installed.)
+Preparing to unpack .../libxkbcommon0_1.7.0-2_amd64.deb ...
+Unpacking libxkbcommon0:amd64 (1.7.0-2) ...
 Selecting previously unselected package libxdo3:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 121518 files and directories currently installed.)
 Preparing to unpack .../libxdo3_1%3a3.20160805.1-5.1_amd64.deb ...
 Unpacking libxdo3:amd64 (1:3.20160805.1-5.1) ...
 Selecting previously unselected package xdotool.
 Preparing to unpack .../xdotool_1%3a3.20160805.1-5.1_amd64.deb ...
 Unpacking xdotool (1:3.20160805.1-5.1) ...
+Setting up libxkbcommon0:amd64 (1.7.0-2) ...
 Setting up libxdo3:amd64 (1:3.20160805.1-5.1) ...
 Setting up xdotool (1:3.20160805.1-5.1) ...
 Processing triggers for libc-bin (2.41-12) ...
 CLDS: * Install xdotool to manipulate windows: move, resize, click, mouse.
-CLDS: * Disk size = 5333980K. Space Used = 352K. Runtime = 00:00:00:01.
+CLDS: * Disk size = 5410040K. Space Used = 780K. Runtime = 00:00:00:01.

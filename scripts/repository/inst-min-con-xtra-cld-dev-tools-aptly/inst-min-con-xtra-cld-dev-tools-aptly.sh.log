@@ -6,35 +6,35 @@ Hit:4 http://localhost/aptly-repo/master_deb-multimedia-non-free trixie InReleas
 Hit:5 http://localhost/aptly-repo/master_docker-stable trixie InRelease
 Hit:6 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:7 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:8 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
-Hit:9 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
-Hit:10 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
-Hit:11 http://localhost/aptly-repo/master_trixie-updates-contrib trixie-updates InRelease
-Hit:12 http://localhost/aptly-repo/master_trixie-updates-main trixie-updates InRelease
-Hit:13 http://localhost/aptly-repo/master_trixie-updates-non-free trixie-updates InRelease
+Hit:8 http://localhost/aptly-repo/master_trixie-backports-contrib trixie-backports InRelease
+Hit:9 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports InRelease
+Hit:10 http://localhost/aptly-repo/master_trixie-backports-non-free trixie-backports InRelease
+Hit:11 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
+Hit:12 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
+Hit:13 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
 Hit:14 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
 Reading package lists...
-W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
 ********** START install *****************
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   xz-utils
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
 Need to get 660 kB of archives.
 After this operation, 1,458 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xz-utils amd64 5.8.1-1 [660 kB]
-Fetched 660 kB in 0s (37.6 MB/s)
+Fetched 660 kB in 0s (44.8 MB/s)
 Selecting previously unselected package xz-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48291 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48329 files and directories currently installed.)
 Preparing to unpack .../xz-utils_5.8.1-1_amd64.deb ...
 Unpacking xz-utils (5.8.1-1) ...
 Setting up xz-utils (5.8.1-1) ...
@@ -48,24 +48,24 @@ Suggested packages:
   graphviz
 The following NEW packages will be installed:
   aptly gpgv
-0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
-Need to get 8,323 kB of archives.
+0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
+Need to get 8,322 kB of archives.
 After this operation, 33.5 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 gpgv amd64 2.4.7-21+b3 [241 kB]
-Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 aptly amd64 1.6.1+ds1-3 [8,082 kB]
-Fetched 8,323 kB in 0s (135 MB/s)
+Get:2 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 aptly amd64 1.6.2-1~bpo13+1 [8,082 kB]
+Fetched 8,322 kB in 0s (129 MB/s)
 Selecting previously unselected package gpgv.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48421 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48459 files and directories currently installed.)
 Preparing to unpack .../gpgv_2.4.7-21+b3_amd64.deb ...
 Unpacking gpgv (2.4.7-21+b3) ...
 Selecting previously unselected package aptly.
-Preparing to unpack .../aptly_1.6.1+ds1-3_amd64.deb ...
-Unpacking aptly (1.6.1+ds1-3) ...
+Preparing to unpack .../aptly_1.6.2-1~bpo13+1_amd64.deb ...
+Unpacking aptly (1.6.2-1~bpo13+1) ...
 Setting up gpgv (2.4.7-21+b3) ...
-Setting up aptly (1.6.1+ds1-3) ...
+Setting up aptly (1.6.2-1~bpo13+1) ...
 ********** END install *****************
 './cld/doc/aptly-help.txt' -> '/usr/local/cld/doc/aptly-help.txt'
 CLDS: * Add aptly nightly build repository.
-CLDS: * Install aptly version: 1.6.1+ds1-3 to create local debian repository.
+CLDS: * Install aptly version: 1.6.2-1~bpo13+1 to create local debian repository.
 CLDS: * Add xz-utils package because aptly snapshot merge needs it.
-CLDS: * Disk size = 2331632K. Space Used = 42072K. Runtime = 00:00:00:02.
+CLDS: * Disk size = 2467064K. Space Used = 42092K. Runtime = 00:00:00:02.

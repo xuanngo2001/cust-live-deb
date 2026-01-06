@@ -49,30 +49,31 @@ Get:4 http://localhost/aptly-repo/master_deb-multimedia-non-free trixie InReleas
 Get:5 http://localhost/aptly-repo/master_docker-stable trixie InRelease [4393 B]
 Get:6 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease [4363 B]
 Get:7 http://localhost/aptly-repo/master_google-main stable InRelease [4339 B]
-Get:8 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease [4420 B]
-Get:9 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease [4690 B]
-Get:10 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease [4447 B]
-Get:11 http://localhost/aptly-repo/master_trixie-updates-contrib trixie-updates InRelease [2908 B]
-Get:12 http://localhost/aptly-repo/master_trixie-updates-main trixie-updates InRelease [4387 B]
-Get:13 http://localhost/aptly-repo/master_trixie-updates-non-free trixie-updates InRelease [2927 B]
+Get:8 http://localhost/aptly-repo/master_trixie-backports-contrib trixie-backports InRelease [4480 B]
+Get:9 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports InRelease [4399 B]
+Get:10 http://localhost/aptly-repo/master_trixie-backports-non-free trixie-backports InRelease [2939 B]
+Get:11 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease [4420 B]
+Get:12 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease [4690 B]
+Get:13 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease [4447 B]
 Get:14 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease [4428 B]
-Get:15 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 Packages [411 kB]
+Get:15 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 Packages [409 kB]
 Get:16 http://localhost/aptly-repo/master_aptly-main squeeze/main amd64 Packages [3891 B]
 Get:17 http://localhost/aptly-repo/master_deb-multimedia-main trixie/main amd64 Packages [11.8 kB]
 Get:18 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 Packages [15.0 kB]
-Get:19 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk/main amd64 Packages [18.6 kB]
+Get:19 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk/main amd64 Packages [18.8 kB]
 Get:20 http://localhost/aptly-repo/master_google-main stable/main amd64 Packages [939 B]
-Get:21 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 Packages [3553 B]
-Get:22 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie/non-free-firmware amd64 Packages [5292 B]
-Get:23 http://localhost/aptly-repo/master_trixie-non-free trixie/non-free amd64 Packages [1455 B]
-Get:24 http://localhost/aptly-repo/master_trixie-updates-main trixie-updates/main amd64 Packages [2721 B]
-Get:25 http://localhost/aptly-repo/master_virtualbox-contrib trixie/contrib amd64 Packages [1152 B]
-Fetched 532 kB in 0s (2480 kB/s)
+Get:21 http://localhost/aptly-repo/master_trixie-backports-contrib trixie-backports/contrib amd64 Packages [2648 B]
+Get:22 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 Packages [29.8 kB]
+Get:23 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 Packages [3553 B]
+Get:24 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie/non-free-firmware amd64 Packages [5292 B]
+Get:25 http://localhost/aptly-repo/master_trixie-non-free trixie/non-free amd64 Packages [1455 B]
+Get:26 http://localhost/aptly-repo/master_virtualbox-contrib trixie/contrib amd64 Packages [1152 B]
+Fetched 563 kB in 0s (3511 kB/s)
 Reading package lists...
-W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:9
-CLDS: * Disk size = 631512K. Space Used = 6260K. Runtime = 00:00:00:00.
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+CLDS: * Disk size = 631572K. Space Used = 6488K. Runtime = 00:00:00:00.

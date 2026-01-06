@@ -1,10 +1,5 @@
 * >>>>>>>>> Running inst-std-accessories-gpicview.sh ...
-  * After this operation, 677 kB of additional disk space will be used.
   * Install Image Viewer: gpicview.
   * Insert gpicview in Accessories menu.
   * Add alias viewpic='gpicview'.
-  * Disk size = 5422416K. Space Used = 384K. Runtime = 00:00:00:02.
-  * The following NEW packages will be installed:
-  ```bash
-gpicview
-  ```
+  * Disk size = 5507592K. Space Used = 12K. Runtime = 00:00:00:01.
