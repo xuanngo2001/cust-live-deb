@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-accessories-prtscr-gnome-screenshot.sh ...
-  * Disk size = 5507596K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 5507588K. Space Used = 4K. Runtime = 00:00:00:01.

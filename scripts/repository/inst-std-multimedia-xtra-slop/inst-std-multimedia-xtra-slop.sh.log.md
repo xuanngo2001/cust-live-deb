@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-multimedia-xtra-slop.sh ...
-  * Disk size = 6128160K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6128148K. Space Used = 4K. Runtime = 00:00:00:01.

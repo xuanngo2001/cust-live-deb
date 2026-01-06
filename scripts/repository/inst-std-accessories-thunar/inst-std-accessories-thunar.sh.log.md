@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-accessories-thunar.sh ...
-  * Disk size = 5511244K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 5511236K. Space Used = 4K. Runtime = 00:00:00:01.

@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-system-keyboard.sh ...
-  * Disk size = 6128196K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6128184K. Space Used = 4K. Runtime = 00:00:00:01.

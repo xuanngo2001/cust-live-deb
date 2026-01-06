@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-multimedia-mpv-fix2.sh ...
-  * Disk size = 6128116K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 6128104K. Space Used = 4K. Runtime = 00:00:00:01.

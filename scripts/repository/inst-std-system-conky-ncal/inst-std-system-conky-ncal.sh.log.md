@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-system-conky-ncal.sh ...
-  * Disk size = 6128180K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6128168K. Space Used = 4K. Runtime = 00:00:00:01.

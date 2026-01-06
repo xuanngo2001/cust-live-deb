@@ -10,23 +10,25 @@ Hit:4 http://localhost/aptly-repo/master_deb-multimedia-non-free trixie InReleas
 Hit:5 http://localhost/aptly-repo/master_docker-stable trixie InRelease
 Hit:6 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
 Hit:7 http://localhost/aptly-repo/master_google-main stable InRelease
-Hit:8 http://localhost/aptly-repo/master_trixie-backports-contrib trixie-backports InRelease
-Hit:9 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports InRelease
-Hit:10 http://localhost/aptly-repo/master_trixie-backports-non-free trixie-backports InRelease
-Hit:11 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
-Hit:12 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
-Hit:13 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
-Hit:14 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
-Hit:15 https://packages.cloud.google.com/apt cloud-sdk InRelease
+Hit:8 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports InRelease
+Hit:9 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
+Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
+Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
+Hit:12 http://localhost/aptly-repo/master_trixie-updates-contrib trixie-updates InRelease
+Hit:13 http://localhost/aptly-repo/master_trixie-updates-main trixie-updates InRelease
+Hit:14 http://localhost/aptly-repo/master_trixie-updates-non-free-firmware trixie-updates InRelease
+Hit:15 http://localhost/aptly-repo/master_trixie-updates-non-free trixie-updates InRelease
+Hit:16 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
+Hit:17 https://packages.cloud.google.com/apt cloud-sdk InRelease
 Reading package lists...
-W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
-W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
-W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
-W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
-W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
-W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
-W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
-W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:12
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -38,4 +40,4 @@ The following packages have unmet dependencies:
                                   libgtk-4-1 but it is not installed
                          Depends: xdg-utils (>= 1.0.2) but it is not installed
 E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
-CLDS: * Disk size = 6093076K. Space Used = 8K. Runtime = 00:00:00:01.
+CLDS: * Disk size = 6093064K. Space Used = 8K. Runtime = 00:00:00:01.

@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-zfs-dkms-fix-pahole.sh ...
-  * Disk size = 6093064K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 6093052K. Space Used = 4K. Runtime = 00:00:00:01.

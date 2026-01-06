@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-compressor-pngquant.sh ...
-  * Disk size = 6128268K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6128256K. Space Used = 4K. Runtime = 00:00:00:01.

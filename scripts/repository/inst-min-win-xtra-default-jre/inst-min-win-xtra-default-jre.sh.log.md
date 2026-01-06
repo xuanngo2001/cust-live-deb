@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-win-xtra-default-jre.sh ...
-  * Disk size = 5335168K. Space Used = 12K. Runtime = 00:00:00:01.
+  * Disk size = 5335156K. Space Used = 4K. Runtime = 00:00:00:01.

@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-vboxguest-additions-iso-fix-dctrl-tools.sh ...
-  * Disk size = 6128320K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 6128308K. Space Used = 8K. Runtime = 00:00:00:01.

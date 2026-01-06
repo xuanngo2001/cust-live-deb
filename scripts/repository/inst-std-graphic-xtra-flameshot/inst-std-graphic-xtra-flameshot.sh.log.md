@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-flameshot.sh ...
-  * Disk size = 5517064K. Space Used = 12K. Runtime = 00:00:00:01.
+  * Disk size = 5517052K. Space Used = 8K. Runtime = 00:00:00:02.

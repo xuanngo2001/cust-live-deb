@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-inet-firefox-esr.sh ...
-  * Disk size = 5517076K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 5517064K. Space Used = 8K. Runtime = 00:00:00:01.

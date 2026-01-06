@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-inet-xtra-ms-edge.sh ...
-  * Disk size = 6128100K. Space Used = 492596K. Runtime = 00:00:00:06.
+  * Disk size = 6128092K. Space Used = 492596K. Runtime = 00:00:00:06.

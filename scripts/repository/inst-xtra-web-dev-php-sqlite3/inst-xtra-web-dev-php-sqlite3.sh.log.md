@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-web-dev-php-sqlite3.sh ...
-  * Disk size = 6093048K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6093036K. Space Used = 4K. Runtime = 00:00:00:01.
