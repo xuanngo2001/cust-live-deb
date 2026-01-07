@@ -1,2 +1,7 @@
 * >>>>>>>>> Running inst-xtra-zfs-dkms-fix-file.sh ...
-  * Disk size = 6093048K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Install file.
+  * Disk size = 7783812K. Space Used = 10320K. Runtime = 00:00:00:01.
+  * The following NEW packages will be installed:
+  ```bash
+file
+  ```

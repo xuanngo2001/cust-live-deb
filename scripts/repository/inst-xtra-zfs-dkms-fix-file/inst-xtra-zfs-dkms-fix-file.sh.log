@@ -2,14 +2,14 @@ CLDS:>>>>>>>>> Running inst-xtra-zfs-dkms-fix-file.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-You might want to run 'apt --fix-broken install' to correct these.
-The following packages have unmet dependencies:
- microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
-                         Depends: libatk1.0-0 (>= 2.2.0)
-                         Depends: libgtk-3-0 (>= 3.9.10) or
-                                  libgtk-4-1 but it is not going to be installed
-                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
-E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
-E: The following information from --solver 3.0 may provide additional context:
-   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
-CLDS: * Disk size = 6093048K. Space Used = 8K. Runtime = 00:00:00:01.
+The following NEW packages will be installed:
+  file
+0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+Inst file (1:5.46-5 master_trixie-main trixie:trixie [amd64])
+Conf file (1:5.46-5 master_trixie-main trixie:trixie [amd64])
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+CLDS: * Install file.
+CLDS: * Disk size = 7783812K. Space Used = 10320K. Runtime = 00:00:00:01.
