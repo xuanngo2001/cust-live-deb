@@ -793,7 +793,11 @@ repository(e.g. <code>deb http://http.debian.net/debian jessie-backports main</
 new script</h2>
 <ul>
 <li><code>cd scripts/repository</code></li>
-<li>Add your package in <code>create-script-repo.txt</code>.</li>
+<li>Add your package in <code>create-script-repo.txt</code>.
+<ul>
+<li>To force a specific version, set
+<code>libatk-bridge2.0-0t64=2.58.2-1~bpo13+1</code>.</li>
+</ul></li>
 <li><code>./create-script-repo.sh</code> will create the corresponding
 directory and *.sh file.</li>
 <li>Scripts are executed in alphabetically order.</li>

@@ -33,6 +33,7 @@ Installation scripts are residing in `./scripts/repository/` directory.
 ## Add new script
 - `cd scripts/repository`
 - Add your package in `create-script-repo.txt`.
+    - To force a specific version, set `libatk-bridge2.0-0t64=2.58.2-1~bpo13+1`.
 - `./create-script-repo.sh` will create the corresponding directory and *.sh file.
 - Scripts are executed in alphabetically order.
 - Before any script is run, the whole `./scripts/` directory is copied to `/root/` of the chroot environment.
