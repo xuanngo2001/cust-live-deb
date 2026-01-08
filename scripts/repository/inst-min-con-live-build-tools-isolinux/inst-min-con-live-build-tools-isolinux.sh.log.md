@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-live-build-tools-isolinux.sh ...
   * After this operation, 189 kB of additional disk space will be used.
   * Install isolinux to get isohdpfx.bin and isolinux.bin in order to create isohybrid.
-  * Disk size = 1784976K. Space Used = 328K. Runtime = 00:00:00:00.
+  * Disk size = 1784796K. Space Used = 328K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 isolinux
