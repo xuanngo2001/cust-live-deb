@@ -16,8 +16,6 @@ removed '/usr/share/keyrings/debian-archive-bookworm-security-automatic.gpg'
 removed '/usr/share/keyrings/debian-archive-bookworm-stable.gpg'
 './keys/usr/keyrings/debian-archive-bookworm-stable.gpg' -> '/usr/share/keyrings/debian-archive-bookworm-stable.gpg'
 './keys/usr/keyrings/debian-archive-bookworm-stable.pgp' -> '/usr/share/keyrings/debian-archive-bookworm-stable.pgp'
-removed '/usr/share/keyrings/debian-archive-bullseye-automatic.gpg'
-'./keys/usr/keyrings/debian-archive-bullseye-automatic.gpg' -> '/usr/share/keyrings/debian-archive-bullseye-automatic.gpg'
 './keys/usr/keyrings/debian-archive-bullseye-automatic.pgp' -> '/usr/share/keyrings/debian-archive-bullseye-automatic.pgp'
 removed '/usr/share/keyrings/debian-archive-bullseye-security-automatic.gpg'
 './keys/usr/keyrings/debian-archive-bullseye-security-automatic.gpg' -> '/usr/share/keyrings/debian-archive-bullseye-security-automatic.gpg'
@@ -42,6 +40,8 @@ removed '/usr/share/keyrings/debian-archive-trixie-stable.gpg'
 './keys/usr/keyrings/debian-archive-trixie-stable.pgp' -> '/usr/share/keyrings/debian-archive-trixie-stable.pgp'
 './keys/usr/keyrings/nodesource.gpg' -> '/usr/share/keyrings/nodesource.gpg'
 './keys/usr/keyrings/oracle-virtualbox-2016.gpg' -> '/usr/share/keyrings/oracle-virtualbox-2016.gpg'
+removed '/usr/share/keyrings/debian-archive-bullseye-automatic.gpg'
+'./keys/usr/keyrings/debian-archive-bullseye-automatic.gpg' -> '/usr/share/keyrings/debian-archive-bullseye-automatic.gpg'
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie InRelease [4339 B]
 Get:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease [4341 B]
 Get:3 http://localhost/aptly-repo/master_deb-multimedia-main trixie InRelease [4355 B]
@@ -54,7 +54,7 @@ Get:9 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease [4420 B
 Get:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease [4690 B]
 Get:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease [4447 B]
 Get:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease [4428 B]
-Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 Packages [410 kB]
+Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 Packages [413 kB]
 Get:14 http://localhost/aptly-repo/master_aptly-main squeeze/main amd64 Packages [3891 B]
 Get:15 http://localhost/aptly-repo/master_deb-multimedia-main trixie/main amd64 Packages [11.8 kB]
 Get:16 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 Packages [15.0 kB]
@@ -65,7 +65,7 @@ Get:20 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 Pa
 Get:21 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie/non-free-firmware amd64 Packages [5292 B]
 Get:22 http://localhost/aptly-repo/master_trixie-non-free trixie/non-free amd64 Packages [1455 B]
 Get:23 http://localhost/aptly-repo/master_virtualbox-contrib trixie/contrib amd64 Packages [1152 B]
-Fetched 553 kB in 0s (4037 kB/s)
+Fetched 557 kB in 0s (4885 kB/s)
 Reading package lists...
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -73,4 +73,4 @@ W: Target Translations (main/i18n/Translation-en) is configured multiple times i
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-CLDS: * Disk size = 675676K. Space Used = 6472K. Runtime = 00:00:00:00.
+CLDS: * Disk size = 675544K. Space Used = 6480K. Runtime = 00:00:00:00.

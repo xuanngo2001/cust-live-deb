@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-zclean-00-security-updates.sh ...
   * After this operation, 132 MB of additional disk space will be used.
-  * Disk size = 8095688K. Space Used = 306312K. Runtime = 00:00:00:32.
+  * Disk size = 8133776K. Space Used = 306304K. Runtime = 00:00:00:27.
