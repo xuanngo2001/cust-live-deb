@@ -12,6 +12,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 # Install MPV.
 	apt-get -y install mpv
 
+    apt-get install -s -y libdovi3
+    apt-get install -s -y libtesseract5
+
 # Add to CLD/
 	yes | cp -av ./cld  /usr/local
 
