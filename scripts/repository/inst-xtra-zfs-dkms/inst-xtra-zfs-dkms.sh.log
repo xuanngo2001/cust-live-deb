@@ -2,29 +2,26 @@ CLDS:>>>>>>>>> Running inst-xtra-zfs-dkms.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following package was automatically installed and is no longer required:
-  linux-headers-6.17.13+deb13-common
-Use 'apt autoremove' to remove it.
+pahole is already the newest version (1.30-1).
+pahole set to manually installed.
+libelf1t64 is already the newest version (0.193-3~bpo13+1).
+libdw1t64 is already the newest version (0.193-3~bpo13+1).
+libdw1t64 set to manually installed.
 The following additional packages will be installed:
-  libelf1t64 libzstd-dev
-The following packages will be REMOVED:
-  libdw1t64 linux-headers-6.17.13+deb13-amd64 linux-kbuild-6.17.13+deb13
-  pahole
+  libzstd-dev
 The following NEW packages will be installed:
-  libelf-dev libzstd-dev
-The following packages will be upgraded:
-  libelf1t64
-1 upgraded, 2 newly installed, 4 to remove and 2 not upgraded.
-Remv linux-headers-6.17.13+deb13-amd64 [6.17.13-1~bpo13+1]
-Remv linux-kbuild-6.17.13+deb13 [6.17.13-1~bpo13+1]
-Remv pahole [1.30-1]
-Remv libdw1t64 [0.192-4]
-Inst libelf1t64 [0.192-4] (0.193-3~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [amd64])
+  file libelf-dev libzstd-dev
+0 upgraded, 3 newly installed, 0 to remove and 2 not upgraded.
+Inst file (1:5.46-5 master_trixie-main trixie:trixie [amd64])
 Inst libzstd-dev (1.5.7+dfsg-1 master_trixie-main trixie:trixie [amd64])
 Inst libelf-dev (0.193-3~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [amd64])
-Conf libelf1t64 (0.193-3~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [amd64])
+Conf file (1:5.46-5 master_trixie-main trixie:trixie [amd64])
 Conf libzstd-dev (1.5.7+dfsg-1 master_trixie-main trixie:trixie [amd64])
 Conf libelf-dev (0.193-3~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [amd64])
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -32,7 +29,7 @@ lsb-release is already the newest version (12.1-1).
 lsb-release set to manually installed.
 The following NEW packages will be installed:
   linux-headers-amd64
-0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
 Need to get 1,420 B of archives.
 After this operation, 13.3 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-headers-amd64 amd64 6.17.13-1~bpo13+1 [1,420 B]
@@ -48,22 +45,22 @@ Reading state information...
 dkms is already the newest version (3.2.2-1~deb13u1).
 libc6-dev is already the newest version (2.41-12).
 build-essential is already the newest version (12.12).
-0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 linux-headers-6.17.13+deb13-amd64 is already the newest version (6.17.13-1~bpo13+1).
-0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
   module-assistant
-0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
 Need to get 87.0 kB of archives.
 After this operation, 400 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 module-assistant all 0.11.14 [87.0 kB]
-Fetched 87.0 kB in 0s (7,898 kB/s)
+Fetched 87.0 kB in 0s (0 B/s)
 Selecting previously unselected package module-assistant.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166410 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.14_all.deb ...
@@ -77,7 +74,7 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 build-essential is already the newest version (12.12).
-0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
 
 Done!
 info: Trying to set 'zfs-dkms/note-incompatible-licenses' [note] to ''
@@ -97,13 +94,13 @@ Recommended packages:
   zfs-zed zfsutils-linux
 The following NEW packages will be installed:
   file zfs-dkms
-0 upgraded, 2 newly installed, 0 to remove and 3 not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
 Need to get 2,496 kB of archives.
 After this operation, 18.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 file amd64 1:5.46-5 [43.6 kB]
 Get:2 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 zfs-dkms all 2.3.2-2 [2,452 kB]
 Preconfiguring packages ...
-Fetched 2,496 kB in 0s (101 MB/s)
+Fetched 2,496 kB in 0s (95.0 MB/s)
 Selecting previously unselected package file.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166462 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.46-5_amd64.deb ...
@@ -135,4 +132,4 @@ live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 Errors were encountered while processing:
  zfs-dkms
 E: Sub-process /usr/bin/dpkg returned an error code (1)
-CLDS: * Disk size = 7827432K. Space Used = 43784K. Runtime = 00:00:00:22.
+CLDS: * Disk size = 7826404K. Space Used = 54096K. Runtime = 00:00:00:21.
