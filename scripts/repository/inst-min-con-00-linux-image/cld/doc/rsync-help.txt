@@ -31,3 +31,6 @@
 # Merge 2 dir: Identifcal files are deleted from src/
 #   but old files in src/ will not deleted.
     rsync -au --remove-source-files src/ dst
+
+# Copy but exclude directories
+    rsync -av --exclude 'node_modules' --exclude '.git' . ../uselessdegrees/
