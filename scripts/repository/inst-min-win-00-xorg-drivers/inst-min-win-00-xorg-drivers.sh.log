@@ -89,7 +89,7 @@ Get:25 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xserver-
 Get:26 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xserver-xorg-video-vmware amd64 1:13.4.0-1 [115 kB]
 Get:27 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xserver-xorg-video-all amd64 1:7.7+24+deb13u1 [4,296 B]
 Preconfiguring packages ...
-Fetched 12.3 MB in 0s (91.9 MB/s)
+Fetched 12.3 MB in 0s (41.4 MB/s)
 Selecting previously unselected package xkb-data.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 116809 files and directories currently installed.)
 Preparing to unpack .../00-xkb-data_2.42-1_all.deb ...
@@ -262,7 +262,7 @@ Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxinera
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxss1 amd64 1:1.2.3-1+b3 [17.0 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxvmc1 amd64 2:1.0.12-2+b3 [23.9 kB]
 Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xserver-xorg-video-intel amd64 2:2.99.917+git20210115-1 [1,642 kB]
-Fetched 1,884 kB in 0s (26.3 MB/s)
+Fetched 1,884 kB in 0s (30.7 MB/s)
 Selecting previously unselected package libxcb-dri2-0:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 117430 files and directories currently installed.)
 Preparing to unpack .../0-libxcb-dri2-0_1.17.0-2+b1_amd64.deb ...
@@ -306,7 +306,7 @@ The following NEW packages will be installed:
 Need to get 149 kB of archives.
 After this operation, 280 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xserver-xorg-video-qxl amd64 0.1.6-1.1 [149 kB]
-Fetched 149 kB in 0s (1,796 kB/s)
+Fetched 149 kB in 0s (1,307 kB/s)
 Selecting previously unselected package xserver-xorg-video-qxl.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 117502 files and directories currently installed.)
 Preparing to unpack .../xserver-xorg-video-qxl_0.1.6-1.1_amd64.deb ...
@@ -321,7 +321,7 @@ The following NEW packages will be installed:
 Need to get 105 kB of archives.
 After this operation, 219 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xserver-xorg-video-mga amd64 1:2.0.0-1+b1 [105 kB]
-Fetched 105 kB in 0s (1,574 kB/s)
+Fetched 105 kB in 0s (1,934 kB/s)
 Selecting previously unselected package xserver-xorg-video-mga.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 117511 files and directories currently installed.)
 Preparing to unpack .../xserver-xorg-video-mga_1%3a2.0.0-1+b1_amd64.deb ...
@@ -331,4 +331,4 @@ CLDS: * Install common xorg drivers.
 CLDS: * Install xserver-xorg-video-intel to fix: cat /var/log/Xorg.0.log
 CLDS: * 		Failed to initialize glamor at ScreenInit() time.
 CLDS: * 		Boot from virtualbox is working fine but boot from HP, X server not loaded.
-CLDS: * Disk size = 5315576K. Space Used = 56056K. Runtime = 00:00:00:05.
+CLDS: * Disk size = 5315572K. Space Used = 56056K. Runtime = 00:00:00:05.

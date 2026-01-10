@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-zclean-01-apt-get-00-clean-up.sh ...
   * After this operation, 0 B of additional disk space will be used.
-  * Disk size = 8077236K. Space Used = 4K. Runtime = 00:00:00:15.
+  * Disk size = 8077224K. Space Used = 4K. Runtime = 00:00:00:14.

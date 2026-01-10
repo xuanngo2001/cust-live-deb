@@ -2,7 +2,7 @@
   * After this operation, 2,336 kB of additional disk space will be used.
   * Install libatk-bridge2.0-0t64.
   * Trixie: 2026-01-06: Force to install backport version instead of stable version.
-  * Disk size = 5012676K. Space Used = 1520K. Runtime = 00:00:00:01.
+  * Disk size = 5012668K. Space Used = 1516K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 at-spi2-common libatk1.0-0t64 libatk-bridge2.0-0t64 libatspi2.0-0t64 libxi6
