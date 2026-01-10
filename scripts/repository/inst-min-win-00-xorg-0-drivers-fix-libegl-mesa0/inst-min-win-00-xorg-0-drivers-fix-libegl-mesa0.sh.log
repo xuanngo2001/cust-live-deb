@@ -22,27 +22,6 @@ Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libdrm2 a
 Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libdrm-amdgpu1 amd64 2.4.124-2 [22.6 kB]
 Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpciaccess0 amd64 0.17-3+b3 [51.9 kB]
 Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libdrm-intel1 amd64 2.4.124-2 [64.1 kB]
-<<<<<<< HEAD
-Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libwayland-server0 amd64 1.23.1-3 [34.4 kB]
-Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libz3-4 amd64 4.13.3-1 [8,560 kB]
-Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libllvm19 amd64 1:19.1.7-3+b1 [26.0 MB]
-Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libsensors-config all 1:3.6.2-2 [16.2 kB]
-Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libsensors5 amd64 1:3.6.2-2 [37.5 kB]
-Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libx11-xcb1 amd64 2:1.8.12-1 [247 kB]
-Get:12 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxcb-dri3-0 amd64 1.17.0-2+b1 [107 kB]
-Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxcb-present0 amd64 1.17.0-2+b1 [106 kB]
-Get:14 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxcb-randr0 amd64 1.17.0-2+b1 [117 kB]
-Get:15 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxcb-sync1 amd64 1.17.0-2+b1 [109 kB]
-Get:16 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxcb-xfixes0 amd64 1.17.0-2+b1 [109 kB]
-Get:17 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxshmfence1 amd64 1.3.3-1 [10.9 kB]
-Get:18 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 mesa-libgallium amd64 25.0.7-2 [9,629 kB]
-Get:19 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libgbm1 amd64 25.0.7-2 [44.4 kB]
-Get:20 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libwayland-client0 amd64 1.23.1-3 [26.8 kB]
-Get:21 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libegl-mesa0 amd64 25.0.7-2 [128 kB]
-Fetched 45.4 MB in 0s (164 MB/s)
-Selecting previously unselected package libdrm-common.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 116391 files and directories currently installed.)
-=======
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libz3-4 amd64 4.13.3-1 [8,560 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libllvm19 amd64 1:19.1.7-3+b1 [26.0 MB]
 Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libsensors-config all 1:3.6.2-2 [16.2 kB]
@@ -58,10 +37,9 @@ Get:17 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports
 Get:18 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libgbm1 amd64 25.2.6-1~bpo13+1 [46.1 kB]
 Get:19 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libwayland-client0 amd64 1.23.1-3 [26.8 kB]
 Get:20 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libegl-mesa0 amd64 25.2.6-1~bpo13+1 [122 kB]
-Fetched 45.9 MB in 0s (196 MB/s)
+Fetched 45.9 MB in 0s (140 MB/s)
 Selecting previously unselected package libdrm-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 116590 files and directories currently installed.)
->>>>>>> 5264b2a0f25b3e3766305d9ed8c894d7d23ac43b
 Preparing to unpack .../00-libdrm-common_2.4.124-2_all.deb ...
 Unpacking libdrm-common (2.4.124-2) ...
 Selecting previously unselected package libdrm2:amd64.
@@ -158,17 +136,10 @@ Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libvulkan
 Get:2 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libgl1-mesa-dri amd64 25.2.6-1~bpo13+1 [47.8 kB]
 Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxcb-glx0 amd64 1.17.0-2+b1 [122 kB]
 Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxxf86vm1 amd64 1:1.1.4-1+b4 [19.3 kB]
-<<<<<<< HEAD
-Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libglx-mesa0 amd64 25.0.7-2 [143 kB]
-Fetched 461 kB in 0s (2,257 kB/s)
-Selecting previously unselected package libvulkan1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 116534 files and directories currently installed.)
-=======
 Get:5 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libglx-mesa0 amd64 25.2.6-1~bpo13+1 [116 kB]
-Fetched 436 kB in 0s (27.9 MB/s)
+Fetched 436 kB in 0s (5,387 kB/s)
 Selecting previously unselected package libvulkan1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 116729 files and directories currently installed.)
->>>>>>> 5264b2a0f25b3e3766305d9ed8c894d7d23ac43b
 Preparing to unpack .../libvulkan1_1.4.309.0-1_amd64.deb ...
 Unpacking libvulkan1:amd64 (1.4.309.0-1) ...
 Selecting previously unselected package libgl1-mesa-dri:amd64.
@@ -190,8 +161,4 @@ Setting up libgl1-mesa-dri:amd64 (25.2.6-1~bpo13+1) ...
 Setting up libglx-mesa0:amd64 (25.2.6-1~bpo13+1) ...
 Processing triggers for libc-bin (2.41-12) ...
 CLDS: * Install libegl-mesa0.
-<<<<<<< HEAD
-CLDS: * Disk size = 5115588K. Space Used = 245072K. Runtime = 00:00:00:04.
-=======
-CLDS: * Disk size = 5314748K. Space Used = 246848K. Runtime = 00:00:00:04.
->>>>>>> 5264b2a0f25b3e3766305d9ed8c894d7d23ac43b
+CLDS: * Disk size = 5254992K. Space Used = 246844K. Runtime = 00:00:00:04.
