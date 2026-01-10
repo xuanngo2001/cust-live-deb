@@ -8,12 +8,12 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly list dependent packages
     apt-get install -s -y libdovi3
-
-	apt-get install -s -y libsixel1
-    apt-get install -s -y libopencore-amrnb0 libopencore-amrwb0
     apt-get install -s -y libtesseract5
-    apt-get install -s -y libcjson1
-    apt-get install -s -y libdjvulibre21 liblqr-1-0 libraqm0
+
+	# apt-get install -s -y libsixel1
+    # apt-get install -s -y libopencore-amrnb0 libopencore-amrwb0
+    # apt-get install -s -y libcjson1
+    # apt-get install -s -y libdjvulibre21 liblqr-1-0 libraqm0
 
 # Log
 	echo "${GV_LOG} * 2024-02-20: Bookworm: Dependent packages are still required."

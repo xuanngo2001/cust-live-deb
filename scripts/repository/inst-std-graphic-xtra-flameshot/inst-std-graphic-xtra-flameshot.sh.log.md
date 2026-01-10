@@ -1,11 +1,17 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-flameshot.sh ...
-  * After this operation, 36.6 MB of additional disk space will be used.
+  * After this operation, 40.9 MB of additional disk space will be used.
   * Install flameshot.
+<<<<<<< HEAD
   * Disk size = 5509608K. Space Used = 46416K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 5712844K. Space Used = 51940K. Runtime = 00:00:00:05.
+>>>>>>> 5264b2a0f25b3e3766305d9ed8c894d7d23ac43b
   * The following NEW packages will be installed:
   ```bash
-flameshot libdouble-conversion3 libmd4c0 libpcre2-16-0 libqt5core5t64
-libqt5dbus5t64 libqt5gui5t64 libqt5network5t64 libqt5svg5 libqt5widgets5t64
-libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-xinerama0
-libxcb-xinput0 libxcb-xkb1 libxkbcommon-x11-0
+flameshot libb2-1 libdouble-conversion3 libduktape207 libkdsingleapplication-qt6-1.0
+libkf6guiaddons6 libkf6guiaddons-data libmd4c0 libopengl0 libpcre2-16-0
+libproxy1v5 libqt6core6t64 libqt6dbus6 libqt6gui6 libqt6network6
+libqt6svg6 libqt6waylandclient6 libqt6widgets6 libqt-color-widgets2 libts0t64
+libxcb-cursor0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0
+libxcb-xinput0 libxcb-xkb1 libxkbcommon-x11-0 qt6-svg-plugins
   ```

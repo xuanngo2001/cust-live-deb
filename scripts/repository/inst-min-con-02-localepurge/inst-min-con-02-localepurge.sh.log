@@ -28,7 +28,7 @@ Suggested packages:
 The following NEW packages will be installed:
   libgdbm-compat4t64 libgdbm6t64 libperl5.40 localepurge perl
   perl-modules-5.40 ucf
-0 upgraded, 7 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 7 newly installed, 0 to remove and 2 not upgraded.
 Need to get 7,830 kB of archives.
 After this operation, 51.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 perl-modules-5.40 all 5.40.1-6 [3,019 kB]
@@ -39,9 +39,13 @@ Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 perl amd6
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 ucf all 3.0052 [43.3 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 localepurge all 0.7.3.11 [33.1 kB]
 Preconfiguring packages ...
+<<<<<<< HEAD
 Fetched 7,830 kB in 0s (80.2 MB/s)
+=======
+Fetched 7,830 kB in 0s (118 MB/s)
+>>>>>>> 5264b2a0f25b3e3766305d9ed8c894d7d23ac43b
 Selecting previously unselected package perl-modules-5.40.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14187 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14223 files and directories currently installed.)
 Preparing to unpack .../0-perl-modules-5.40_5.40.1-6_all.deb ...
 Unpacking perl-modules-5.40 (5.40.1-6) ...
 Selecting previously unselected package libgdbm6t64:amd64.
@@ -74,4 +78,8 @@ Creating config file /etc/locale.nopurge with new version
 Processing triggers for libc-bin (2.41-12) ...
 CLDS: * Install localepurge to purge documentation of all languages, except en, en_US, en_US.UTF-8.
 CLDS: * Reconfigure localepurge: dpkg-reconfigure localepurge
+<<<<<<< HEAD
 CLDS: * Disk size = 986580K. Space Used = 63416K. Runtime = 00:00:00:02.
+=======
+CLDS: * Disk size = 1181908K. Space Used = 63416K. Runtime = 00:00:00:02.
+>>>>>>> 5264b2a0f25b3e3766305d9ed8c894d7d23ac43b

@@ -2,7 +2,11 @@
   * After this operation, 47.3 MB of additional disk space will be used.
   * Install transmission-gtk.
   * Insert transmission-gtk in Internet menu.
+<<<<<<< HEAD
   * Disk size = 7008152K. Space Used = 46480K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 7211396K. Space Used = 46480K. Runtime = 00:00:00:03.
+>>>>>>> 5264b2a0f25b3e3766305d9ed8c894d7d23ac43b
   * The following NEW packages will be installed:
   ```bash
 libb64-0d libcairomm-1.16-1 libcairo-script-interpreter2 libgles2 libglibmm-2.68-1t64

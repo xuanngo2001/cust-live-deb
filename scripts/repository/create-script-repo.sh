@@ -13,9 +13,10 @@ SCRIPT_REPO_LIST=$(readlink -ev "${SCRIPT_REPO_LIST}")
 
 
 while IFS='' read -r LINE || [[ -n "$LINE" ]]; do
-  
-  DIR_PREFIX=$(echo "${LINE}" | cut -d' ' -f1 | tr -d '[:space:]')
-  PKG_NAME=$(echo "${LINE}"   | cut -d' ' -f2 | tr -d '[:space:]')
+  LINE_CLEAN=$(echo "${LINE}" | tr '[:space:]' ' ' | tr -s ' ')
+
+  DIR_PREFIX=$(echo "${LINE_CLEAN}" | cut -d' ' -f1 )
+  PKG_NAME=$(echo "${LINE_CLEAN}"   | cut -d' ' -f2 )
 
   PKG_DIR="${DIR_PREFIX}-${PKG_NAME}"
 
