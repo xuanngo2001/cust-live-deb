@@ -1,6 +1,6 @@
 * >>>>>>>>> Running inst-min-con-cld-tools.sh ...
   * After this operation, 1,424 kB of additional disk space will be used.
-  * Disk size = 1148108K. Space Used = 2420K. Runtime = 00:00:00:10.
+  * Disk size = 1147964K. Space Used = 2412K. Runtime = 00:00:00:10.
   * The following NEW packages will be installed:
   ```bash
 dmsetup libdevmapper1.02.1 libparted2t64 parted util-linux*

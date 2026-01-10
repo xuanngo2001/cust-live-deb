@@ -8,9 +8,9 @@ Desired=Unknown/Install/Remove/Purge/Hold
 ii  adduser                      3.152                       all          add and remove users and groups
 ii  apt                          3.0.3                       amd64        commandline package manager
 ii  apt-utils                    3.0.3                       amd64        package management related utility programs
-ii  base-files                   13.8+deb13u2                amd64        Debian base system miscellaneous files
+ii  base-files                   13.8+deb13u3                amd64        Debian base system miscellaneous files
 ii  base-passwd                  3.6.7                       amd64        Debian base system master password and group files
-ii  bash                         5.2.37-2+b5                 amd64        GNU Bourne Again SHell
+ii  bash                         5.2.37-2+b7                 amd64        GNU Bourne Again SHell
 ii  bsdutils                     1:2.41-5                    amd64        basic utilities from 4.4BSD-Lite
 ii  coreutils                    9.7-3                       amd64        GNU core utilities
 ii  cpio                         2.15+dfsg-2                 amd64        GNU cpio -- a program to manage archives of files
@@ -21,11 +21,11 @@ ii  debconf                      1.5.91                      all          Debian
 ii  debconf-i18n                 1.5.91                      all          full internationalization support for debconf
 ii  debian-archive-keyring       2025.1                      all          OpenPGP archive certificates of the Debian archive
 ii  debianutils                  5.23.2                      amd64        Miscellaneous utilities specific to Debian
-ii  dhcpcd-base                  1:10.1.0-11+deb13u1         amd64        DHCPv4 and DHCPv6 dual-stack client (binaries and exit hooks)
+ii  dhcpcd-base                  1:10.1.0-11+deb13u2         amd64        DHCPv4 and DHCPv6 dual-stack client (binaries and exit hooks)
 ii  diffutils                    1:3.10-4                    amd64        File comparison utilities
 ii  dmidecode                    3.6-2                       amd64        SMBIOS/DMI table decoder
 ii  dpkg                         1.22.21                     amd64        Debian package management system
-ii  e2fsprogs                    1.47.2-3+b3                 amd64        ext2/ext3/ext4 file system utilities
+ii  e2fsprogs                    1.47.2-3+b7                 amd64        ext2/ext3/ext4 file system utilities
 ii  fdisk                        2.41-5                      amd64        collection of partitioning utilities
 ii  findutils                    4.10.0-3                    amd64        utilities for finding files--find, xargs
 ii  gcc-14-base:amd64            14.2.0-19                   amd64        GCC, the GNU Compiler Collection (base package)
@@ -49,18 +49,18 @@ ii  libblkid1:amd64              2.41-5                      amd64        block 
 ii  libbpf1:amd64                1:1.5.0-3                   amd64        eBPF helper library (shared library)
 ii  libbsd0:amd64                0.12.2-2                    amd64        utility functions from BSD systems - shared library
 ii  libbz2-1.0:amd64             1.0.8-6                     amd64        high-quality block-sorting file compressor library - runtime
-ii  libc-bin                     2.41-12                     amd64        GNU C Library: Binaries
-ii  libc6:amd64                  2.41-12                     amd64        GNU C Library: Shared libraries
+ii  libc-bin                     2.41-12+deb13u1             amd64        GNU C Library: Binaries
+ii  libc6:amd64                  2.41-12+deb13u1             amd64        GNU C Library: Shared libraries
 ii  libcap-ng0:amd64             0.8.5-4+b1                  amd64        alternate POSIX capabilities library
-ii  libcap2:amd64                1:2.75-10+b1                amd64        POSIX 1003.1e capabilities (library)
-ii  libcap2-bin                  1:2.75-10+b1                amd64        POSIX 1003.1e capabilities (utilities)
-ii  libcom-err2:amd64            1.47.2-3+b3                 amd64        common error description library
+ii  libcap2:amd64                1:2.75-10+b3                amd64        POSIX 1003.1e capabilities (library)
+ii  libcap2-bin                  1:2.75-10+b3                amd64        POSIX 1003.1e capabilities (utilities)
+ii  libcom-err2:amd64            1.47.2-3+b7                 amd64        common error description library
 ii  libcrypt1:amd64              1:4.4.38-1                  amd64        libcrypt shared library
 ii  libdb5.3t64:amd64            5.3.28+dfsg2-9              amd64        Berkeley v5.3 Database Libraries [runtime]
 ii  libdebconfclient0:amd64      0.280                       amd64        Debian Configuration Management System (C-implementation library)
 ii  libedit2:amd64               3.1-20250104-1              amd64        BSD editline and history libraries
 ii  libelf1t64:amd64             0.192-4                     amd64        library to read and write ELF files
-ii  libext2fs2t64:amd64          1.47.2-3+b3                 amd64        ext2/ext3/ext4 file system libraries
+ii  libext2fs2t64:amd64          1.47.2-3+b7                 amd64        ext2/ext3/ext4 file system libraries
 ii  libfdisk1:amd64              2.41-5                      amd64        fdisk partitioning library
 ii  libgcc-s1:amd64              14.2.0-19                   amd64        GCC support library
 ii  libgmp10:amd64               2:6.3.0+dfsg-3              amd64        Multiprecision arithmetic library
@@ -101,7 +101,7 @@ ii  libsepol2:amd64              3.8.1-1                     amd64        SELinu
 ii  libslang2:amd64              2.3.3-5+b2                  amd64        S-Lang programming library - runtime version
 ii  libsmartcols1:amd64          2.41-5                      amd64        smart column output alignment library
 ii  libsqlite3-0:amd64           3.46.1-7                    amd64        SQLite 3 shared library
-ii  libss2:amd64                 1.47.2-3+b3                 amd64        command-line interface parsing library
+ii  libss2:amd64                 1.47.2-3+b7                 amd64        command-line interface parsing library
 ii  libssl3t64:amd64             3.5.4-1~deb13u1             amd64        Secure Sockets Layer toolkit - shared libraries
 ii  libstdc++6:amd64             14.2.0-19                   amd64        GNU Standard C++ Library v3
 ii  libsystemd-shared:amd64      257.9-1~deb13u1             amd64        systemd shared private library
@@ -122,7 +122,7 @@ ii  linux-sysctl-defaults        4.12                        all          defaul
 ii  login                        1:4.16.0-2+really2.41-5     amd64        system login tools
 ii  login.defs                   1:4.17.4-2                  all          system user management configuration
 ii  logrotate                    3.22.0-1                    amd64        Log rotation utility
-ii  logsave                      1.47.2-3+b3                 amd64        save the output of a command in a log file
+ii  logsave                      1.47.2-3+b7                 amd64        save the output of a command in a log file
 ii  mawk                         1.3.4.20250131-1            amd64        Pattern scanning and text processing language
 ii  mount                        2.41-5                      amd64        tools for mounting and manipulating filesystems
 ii  nano                         8.4-1                       amd64        small, friendly text editor inspired by Pico
@@ -137,7 +137,7 @@ ii  procps                       2:4.0.4-9                   amd64        /proc 
 ii  readline-common              8.2-6                       all          GNU readline and history libraries, common files
 ii  sed                          4.9-2                       amd64        GNU stream editor for filtering/transforming text
 ii  sensible-utils               0.0.25                      all          Utilities for sensible alternative selection
-ii  sqv                          1.3.0-3                     amd64        OpenPGP signature verification program from Sequoia
+ii  sqv                          1.3.0-3+b2                  amd64        OpenPGP signature verification program from Sequoia
 ii  systemd                      257.9-1~deb13u1             amd64        system and service manager
 ii  systemd-sysv                 257.9-1~deb13u1             amd64        system and service manager - SysV compatibility symlinks
 ii  sysvinit-utils               3.14-4                      amd64        System-V-like utilities
@@ -214,9 +214,9 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 939 kB in 0s (14.4 MB/s)
+Fetched 939 kB in 0s (20.6 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7796 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7797 files and directories currently installed.)
 Preparing to unpack .../0-libdbus-1-3_1.16.2-2_amd64.deb ...
 Unpacking libdbus-1-3:amd64 (1.16.2-2) ...
 Selecting previously unselected package dbus-bin.
@@ -255,7 +255,7 @@ Setting up dbus-daemon (1.16.2-2) ...
 Setting up dialog (1.3-20250116-1) ...
 Setting up dbus (1.16.2-2) ...
 Running in chroot, ignoring request.
-Processing triggers for libc-bin (2.41-12) ...
+Processing triggers for libc-bin (2.41-12+deb13u1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -285,8 +285,8 @@ Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 klibc-uti
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 initramfs-tools-core all 0.148.3 [50.5 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 initramfs-tools all 0.148.3 [17.3 kB]
 Get:8 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-image-6.17.13+deb13-amd64 amd64 6.17.13-1~bpo13+1 [169 MB]
-Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 rsync amd64 3.4.1+ds1-5 [428 kB]
-Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 busybox amd64 1:1.37.0-6+b3 [485 kB]
+Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 rsync amd64 3.4.1+ds1-5+deb13u1 [429 kB]
+Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 busybox amd64 1:1.37.0-6+b5 [485 kB]
 Get:11 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-image-amd64 amd64 6.17.13-1~bpo13+1 [1484 B]
 Get:12 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 live-boot-initramfs-tools all 1:20250815~deb13u1 [6400 B]
 Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 live-boot all 1:20250815~deb13u1 [31.2 kB]
@@ -313,9 +313,9 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 171 MB in 1s (202 MB/s)
+Fetched 171 MB in 1s (191 MB/s)
 Selecting previously unselected package linux-base.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8042 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8043 files and directories currently installed.)
 Preparing to unpack .../0-linux-base_4.12_all.deb ...
 Unpacking linux-base (4.12) ...
 Selecting previously unselected package dracut-install.
@@ -341,15 +341,15 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Selecting previously unselected package linux-image-6.17.13+deb13-amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8184 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8185 files and directories currently installed.)
 Preparing to unpack .../0-linux-image-6.17.13+deb13-amd64_6.17.13-1~bpo13+1_amd64.deb ...
 Unpacking linux-image-6.17.13+deb13-amd64 (6.17.13-1~bpo13+1) ...
 Selecting previously unselected package rsync.
-Preparing to unpack .../1-rsync_3.4.1+ds1-5_amd64.deb ...
-Unpacking rsync (3.4.1+ds1-5) ...
+Preparing to unpack .../1-rsync_3.4.1+ds1-5+deb13u1_amd64.deb ...
+Unpacking rsync (3.4.1+ds1-5+deb13u1) ...
 Selecting previously unselected package busybox.
-Preparing to unpack .../2-busybox_1%3a1.37.0-6+b3_amd64.deb ...
-Unpacking busybox (1:1.37.0-6+b3) ...
+Preparing to unpack .../2-busybox_1%3a1.37.0-6+b5_amd64.deb ...
+Unpacking busybox (1:1.37.0-6+b5) ...
 Selecting previously unselected package linux-image-amd64.
 Preparing to unpack .../3-linux-image-amd64_6.17.13-1~bpo13+1_amd64.deb ...
 Unpacking linux-image-amd64 (6.17.13-1~bpo13+1) ...
@@ -359,12 +359,12 @@ Unpacking live-boot-initramfs-tools (1:20250815~deb13u1) ...
 Selecting previously unselected package live-boot.
 Preparing to unpack .../5-live-boot_1%3a20250815~deb13u1_all.deb ...
 Unpacking live-boot (1:20250815~deb13u1) ...
-Setting up busybox (1:1.37.0-6+b3) ...
+Setting up busybox (1:1.37.0-6+b5) ...
 Setting up libklibc:amd64 (2.0.14-1) ...
 Setting up dracut-install (106-6) ...
 Setting up klibc-utils (2.0.14-1) ...
 No diversion 'diversion of /usr/share/initramfs-tools/hooks/klibc to /usr/share/initramfs-tools/hooks/klibc^i-t by klibc-utils', none removed.
-Setting up rsync (3.4.1+ds1-5) ...
+Setting up rsync (3.4.1+ds1-5+deb13u1) ...
 Running in chroot, ignoring request.
 Setting up initramfs-tools-bin (0.148.3) ...
 Setting up initramfs-tools-core (0.148.3) ...
@@ -470,34 +470,34 @@ un  linux-image-generic                      <none>            <none>       (no 
 total 68664
 -rw-r--r-- 1 root root       93 Dec 28 21:35 System.map-6.17.13+deb13-amd64
 -rw-r--r-- 1 root root   291711 Dec 28 21:35 config-6.17.13+deb13-amd64
--rw-r--r-- 1 root root 56291820 Jan 10 03:29 initrd.img-6.17.13+deb13-amd64
+-rw-r--r-- 1 root root 56293378 Jan 10 15:19 initrd.img-6.17.13+deb13-amd64
 -rw-r--r-- 1 root root 13715072 Dec 28 21:35 vmlinuz-6.17.13+deb13-amd64
 465af9bec1fe8d2c92adc01b489e99d7  /boot/System.map-6.17.13+deb13-amd64
 37ebc5d94a6a0a31c2fef9552b9d866e  /boot/config-6.17.13+deb13-amd64
-eeaa65d5dd92207e983e2f47f1945920  /boot/initrd.img-6.17.13+deb13-amd64
+7d484a8d7ae06fa31521eb66855cc454  /boot/initrd.img-6.17.13+deb13-amd64
 64064660fbf83b508d01b2197b8787c2  /boot/vmlinuz-6.17.13+deb13-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Nov  7 17:40 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Jan 10 03:29 boot
-drwxr-xr-x  18 root root 3900 Jan 10 02:11 dev
-drwxr-xr-x  51 root root 4096 Jan 10 03:29 etc
-drwxr-xr-x   2 root root 4096 Nov  7 17:40 home
-lrwxrwxrwx   1 root root   35 Jan 10 03:29 initrd.img -> boot/initrd.img-6.17.13+deb13-amd64
-lrwxrwxrwx   1 root root    7 Nov  7 17:40 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Nov  7 17:40 lib64 -> usr/lib64
-drwxr-xr-x   2 root root 4096 Jan 10 03:28 media
-drwxr-xr-x   2 root root 4096 Jan 10 03:28 mnt
-drwxr-xr-x   2 root root 4096 Jan 10 03:28 opt
-dr-xr-xr-x 427 root root    0 Jan 10 03:29 proc
-drwx------   4 root root 4096 Jan 10 03:29 root
-drwxr-xr-x   8 root root 4096 Jan 10 03:29 run
-lrwxrwxrwx   1 root root    8 Nov  7 17:40 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Jan 10 03:28 srv
-dr-xr-xr-x  13 root root    0 Jan 10 02:26 sys
-drwxrwxrwt   2 root root 4096 Jan 10 03:29 tmp
-drwxr-xr-x  12 root root 4096 Jan 10 03:28 usr
-drwxr-xr-x  11 root root 4096 Jan 10 03:28 var
-lrwxrwxrwx   1 root root   32 Jan 10 03:29 vmlinuz -> boot/vmlinuz-6.17.13+deb13-amd64
+lrwxrwxrwx   1 root root    7 Jan  2 12:35 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Jan 10 15:19 boot
+drwxr-xr-x  18 root root 3880 Jan 10 15:05 dev
+drwxr-xr-x  51 root root 4096 Jan 10 15:19 etc
+drwxr-xr-x   2 root root 4096 Jan  2 12:35 home
+lrwxrwxrwx   1 root root   35 Jan 10 15:18 initrd.img -> boot/initrd.img-6.17.13+deb13-amd64
+lrwxrwxrwx   1 root root    7 Jan  2 12:35 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Jan  2 12:35 lib64 -> usr/lib64
+drwxr-xr-x   2 root root 4096 Jan 10 15:18 media
+drwxr-xr-x   2 root root 4096 Jan 10 15:18 mnt
+drwxr-xr-x   2 root root 4096 Jan 10 15:18 opt
+dr-xr-xr-x 389 root root    0 Jan 10 15:18 proc
+drwx------   4 root root 4096 Jan 10 15:18 root
+drwxr-xr-x   8 root root 4096 Jan 10 15:18 run
+lrwxrwxrwx   1 root root    8 Jan  2 12:35 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Jan 10 15:18 srv
+dr-xr-xr-x  13 root root    0 Jan 10 15:03 sys
+drwxrwxrwt   2 root root 4096 Jan 10 15:18 tmp
+drwxr-xr-x  12 root root 4096 Jan 10 15:18 usr
+drwxr-xr-x  11 root root 4096 Jan 10 15:18 var
+lrwxrwxrwx   1 root root   32 Jan 10 15:18 vmlinuz -> boot/vmlinuz-6.17.13+deb13-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
 CLDS: * Installed Linux image: linux-image-6.17.13+deb13-amd64.
-CLDS: * Disk size = 1029348K. Space Used = 413592K. Runtime = 00:00:00:30.
+CLDS: * Disk size = 1029208K. Space Used = 413592K. Runtime = 00:00:00:31.
