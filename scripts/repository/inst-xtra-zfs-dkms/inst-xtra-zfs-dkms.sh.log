@@ -30,26 +30,26 @@ lsb-release set to manually installed.
 The following NEW packages will be installed:
   linux-headers-amd64
 0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
-Need to get 1,420 B of archives.
+Need to get 1,412 B of archives.
 After this operation, 13.3 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-headers-amd64 amd64 6.17.13-1~bpo13+1 [1,420 B]
-Fetched 1,420 B in 0s (19.4 kB/s)
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-amd64 amd64 6.12.63-1 [1,412 B]
+Fetched 1,412 B in 0s (136 kB/s)
 Selecting previously unselected package linux-headers-amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166408 files and directories currently installed.)
-Preparing to unpack .../linux-headers-amd64_6.17.13-1~bpo13+1_amd64.deb ...
-Unpacking linux-headers-amd64 (6.17.13-1~bpo13+1) ...
-Setting up linux-headers-amd64 (6.17.13-1~bpo13+1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165942 files and directories currently installed.)
+Preparing to unpack .../linux-headers-amd64_6.12.63-1_amd64.deb ...
+Unpacking linux-headers-amd64 (6.12.63-1) ...
+Setting up linux-headers-amd64 (6.12.63-1) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 dkms is already the newest version (3.2.2-1~deb13u1).
-libc6-dev is already the newest version (2.41-12).
+libc6-dev is already the newest version (2.41-12+deb13u1).
 build-essential is already the newest version (12.12).
 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
 Reading package lists...
 Building dependency tree...
 Reading state information...
-linux-headers-6.17.13+deb13-amd64 is already the newest version (6.17.13-1~bpo13+1).
+linux-headers-6.12.63+deb13-amd64 is already the newest version (6.12.63-1).
 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
 Reading package lists...
 Building dependency tree...
@@ -60,24 +60,14 @@ The following NEW packages will be installed:
 Need to get 87.0 kB of archives.
 After this operation, 400 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 module-assistant all 0.11.14 [87.0 kB]
-<<<<<<< HEAD
-Fetched 87.0 kB in 0s (0 B/s)
-=======
-Fetched 87.0 kB in 0s (728 kB/s)
->>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
+Fetched 87.0 kB in 0s (8,418 kB/s)
 Selecting previously unselected package module-assistant.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166410 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165944 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.14_all.deb ...
 Unpacking module-assistant (0.11.14) ...
 Setting up module-assistant (0.11.14) ...
-Getting source for kernel version: 6.12.57+deb13-amd64
-apt-get -y install linux-headers-6.12.57+deb13-amd64 
-Reading package lists...
-Building dependency tree...
-Reading state information...
-E: Unable to locate package linux-headers-6.12.57+deb13-amd64
-E: Couldn't find any package by glob 'linux-headers-6.12.57+deb13-amd64'
-E: Couldn't find any package by regex 'linux-headers-6.12.57+deb13-amd64'
+Getting source for kernel version: 6.12.63+deb13-amd64
+Kernel headers available in /lib/modules/6.12.63+deb13-amd64/build
 Creating symlink...
 apt-get -y install build-essential 
 Reading package lists...
@@ -87,7 +77,6 @@ build-essential is already the newest version (12.12).
 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
 
 Done!
-<<<<<<< HEAD
 info: Trying to set 'zfs-dkms/note-incompatible-licenses' [note] to ''
 info: Loading answer for 'zfs-dkms/note-incompatible-licenses'
 info: Trying to set 'zfs-dkms/stop-build-for-32bit-kernel' [boolean] to 'true'
@@ -111,9 +100,9 @@ After this operation, 18.8 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 file amd64 1:5.46-5 [43.6 kB]
 Get:2 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 zfs-dkms all 2.3.2-2 [2,452 kB]
 Preconfiguring packages ...
-Fetched 2,496 kB in 0s (95.0 MB/s)
+Fetched 2,496 kB in 0s (109 MB/s)
 Selecting previously unselected package file.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166462 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165996 files and directories currently installed.)
 Preparing to unpack .../file_1%3a5.46-5_amd64.deb ...
 Unpacking file (1:5.46-5) ...
 Selecting previously unselected package zfs-dkms.
@@ -122,28 +111,101 @@ Unpacking zfs-dkms (2.3.2-2) ...
 Setting up file (1:5.46-5) ...
 Setting up zfs-dkms (2.3.2-2) ...
 Loading new zfs/2.3.2 DKMS files...
-Building for 6.17.13+deb13-amd64
+Building for 6.12.63+deb13-amd64
 
-Building initial module zfs/2.3.2 for 6.17.13+deb13-amd64
-Sign command: /lib/modules/6.17.13+deb13-amd64/build/scripts/sign-file
+Building initial module zfs/2.3.2 for 6.12.63+deb13-amd64
+Sign command: /lib/modules/6.12.63+deb13-amd64/build/scripts/sign-file
 Signing key: /var/lib/dkms/mok.key
 Public certificate (MOK): /var/lib/dkms/mok.pub
 Certificate or key are missing, generating self signed certificate for MOK...
 
-Running the pre_build script...(bad exit status: 1)
-Failed command:
-cd /var/lib/dkms/zfs/2.3.2/build/ && /var/lib/dkms/zfs/2.3.2/build/configure --disable-dependency-tracking --prefix=/usr --with-config=kernel --with-linux=/lib/modules/6.17.13+deb13-amd64/source --with-linux-obj=/lib/modules/6.17.13+deb13-amd64/build --with-qat= --host= 
-Consult /var/lib/dkms/zfs/2.3.2/build/make.log for more information.
-dpkg: error processing package zfs-dkms (--configure):
- installed zfs-dkms package post-installation script subprocess returned error exit status 1
+Running the pre_build script......................... done.
+Building module(s)....................................... done.
+Signing module /var/lib/dkms/zfs/2.3.2/build/module/zfs.ko
+Signing module /var/lib/dkms/zfs/2.3.2/build/module/spl.ko
+Running the post_build script... done.
+Installing /lib/modules/6.12.63+deb13-amd64/updates/dkms/zfs.ko.xz
+Installing /lib/modules/6.12.63+deb13-amd64/updates/dkms/spl.ko.xz
+Running depmod.... done.
 Processing triggers for initramfs-tools (0.148.3) ...
-update-initramfs: Generating /boot/initrd.img-6.17.13+deb13-amd64
+update-initramfs: Generating /boot/initrd.img-6.12.63+deb13-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
-Errors were encountered while processing:
- zfs-dkms
-E: Sub-process /usr/bin/dpkg returned an error code (1)
-CLDS: * Disk size = 7826404K. Space Used = 54096K. Runtime = 00:00:00:21.
-=======
-CLDS: * Disk size = 7714712K. Space Used = 400K. Runtime = 00:00:00:02.
->>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libnvpair3linux libuutil3linux libzfs6linux libzpool6linux zfsutils-linux
+Recommended packages:
+  zfs-zed
+The following NEW packages will be installed:
+  libnvpair3linux libuutil3linux libzfs6linux libzpool6linux zfs-initramfs
+  zfsutils-linux
+0 upgraded, 6 newly installed, 0 to remove and 2 not upgraded.
+Need to get 2,369 kB of archives.
+After this operation, 7,674 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 libnvpair3linux amd64 2.3.2-2 [62.0 kB]
+Get:2 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 libuutil3linux amd64 2.3.2-2 [53.3 kB]
+Get:3 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 libzfs6linux amd64 2.3.2-2 [238 kB]
+Get:4 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 libzpool6linux amd64 2.3.2-2 [1,383 kB]
+Get:5 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 zfsutils-linux amd64 2.3.2-2 [595 kB]
+Get:6 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 zfs-initramfs all 2.3.2-2 [37.4 kB]
+Fetched 2,369 kB in 0s (95.8 MB/s)
+Selecting previously unselected package libnvpair3linux:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166968 files and directories currently installed.)
+Preparing to unpack .../0-libnvpair3linux_2.3.2-2_amd64.deb ...
+Unpacking libnvpair3linux:amd64 (2.3.2-2) ...
+Selecting previously unselected package libuutil3linux:amd64.
+Preparing to unpack .../1-libuutil3linux_2.3.2-2_amd64.deb ...
+Unpacking libuutil3linux:amd64 (2.3.2-2) ...
+Selecting previously unselected package libzfs6linux:amd64.
+Preparing to unpack .../2-libzfs6linux_2.3.2-2_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libzfs_core.so.3 to /lib/x86_64-linux-gnu/libzfs_core.so.3.usr-is-merged by libzfs6linux'
+Adding 'diversion of /lib/x86_64-linux-gnu/libzfs_core.so.3.0.0 to /lib/x86_64-linux-gnu/libzfs_core.so.3.0.0.usr-is-merged by libzfs6linux'
+Unpacking libzfs6linux:amd64 (2.3.2-2) ...
+Selecting previously unselected package libzpool6linux:amd64.
+Preparing to unpack .../3-libzpool6linux_2.3.2-2_amd64.deb ...
+Unpacking libzpool6linux:amd64 (2.3.2-2) ...
+Selecting previously unselected package zfsutils-linux.
+Preparing to unpack .../4-zfsutils-linux_2.3.2-2_amd64.deb ...
+Unpacking zfsutils-linux (2.3.2-2) ...
+Selecting previously unselected package zfs-initramfs.
+Preparing to unpack .../5-zfs-initramfs_2.3.2-2_all.deb ...
+Unpacking zfs-initramfs (2.3.2-2) ...
+Setting up libnvpair3linux:amd64 (2.3.2-2) ...
+Setting up libuutil3linux:amd64 (2.3.2-2) ...
+Setting up libzpool6linux:amd64 (2.3.2-2) ...
+Setting up libzfs6linux:amd64 (2.3.2-2) ...
+Setting up zfsutils-linux (2.3.2-2) ...
+insmod /lib/modules/6.12.63+deb13-amd64/updates/dkms/spl.ko.xz 
+insmod /lib/modules/6.12.63+deb13-amd64/updates/dkms/zfs.ko.xz 
+Running in chroot, ignoring request.
+invoke-rc.d: policy-rc.d denied execution of start.
+Running in chroot, ignoring request.
+invoke-rc.d: policy-rc.d denied execution of start.
+Running in chroot, ignoring request.
+invoke-rc.d: policy-rc.d denied execution of start.
+Running in chroot, ignoring request.
+invoke-rc.d: policy-rc.d denied execution of start.
+Created symlink '/etc/systemd/system/zfs-import.target.wants/zfs-import-cache.service' → '/usr/lib/systemd/system/zfs-import-cache.service'.
+Created symlink '/etc/systemd/system/zfs.target.wants/zfs-import.target' → '/usr/lib/systemd/system/zfs-import.target'.
+Created symlink '/etc/systemd/system/zfs-mount.service.wants/zfs-load-module.service' → '/usr/lib/systemd/system/zfs-load-module.service'.
+Created symlink '/etc/systemd/system/zfs.target.wants/zfs-load-module.service' → '/usr/lib/systemd/system/zfs-load-module.service'.
+Created symlink '/etc/systemd/system/zfs.target.wants/zfs-mount.service' → '/usr/lib/systemd/system/zfs-mount.service'.
+Created symlink '/etc/systemd/system/zfs.target.wants/zfs-share.service' → '/usr/lib/systemd/system/zfs-share.service'.
+Created symlink '/etc/systemd/system/zfs-volumes.target.wants/zfs-volume-wait.service' → '/usr/lib/systemd/system/zfs-volume-wait.service'.
+Created symlink '/etc/systemd/system/zfs.target.wants/zfs-volumes.target' → '/usr/lib/systemd/system/zfs-volumes.target'.
+Created symlink '/etc/systemd/system/multi-user.target.wants/zfs.target' → '/usr/lib/systemd/system/zfs.target'.
+Setting up zfs-initramfs (2.3.2-2) ...
+Processing triggers for libc-bin (2.41-12+deb13u1) ...
+Processing triggers for initramfs-tools (0.148.3) ...
+update-initramfs: Generating /boot/initrd.img-6.12.63+deb13-amd64
+W: No zstd in /usr/bin:/sbin:/bin, using gzip
+setupcon is missing. Please install the 'console-setup' package.
+live-boot: core filesystems dm-verity devices utils udev blockdev dns.
+'./cld/doc/zfs-help.txt' -> '/usr/local/cld/doc/zfs-help.txt'
+CLDS: * Install instructions: https://github.com/zfsonlinux/zfs/wiki/Debian
+CLDS: * Install zfs-dkms: version: 2.3.2-2, DKMS style package. DKMS vs KMOD, see http://zfsonlinux.org/generic-deb.html
+CLDS: * Install zfs-initramfs to be able to boot from ZFS.
+CLDS: * Import existing ZFS partitions: zpool import -a
+CLDS: * Disk size = 7752904K. Space Used = 56232K. Runtime = 00:00:03:36.

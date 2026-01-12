@@ -1,23 +1,17 @@
 * >>>>>>>>> Running inst-xtra-vboxguest-additions-iso.sh ...
-  * After this operation, 81.0 MB of additional disk space will be used.
+  * After this operation, 78.1 MB of additional disk space will be used.
   * After this operation, 66.7 MB of additional disk space will be used.
-  * After this operation, 81.0 MB of additional disk space will be used.
+  * After this operation, 78.1 MB of additional disk space will be used.
   * WARNING: Use this script only if backport repository doesn't work.
   * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
   * Assumed packages installed: bzip2 & Xserver installed.
-<<<<<<< HEAD
   * VirtualBox guest additions installed: version: 7.2.4 r170995.
   * Delete VBoxGuestAdditions.iso[51908K]. Space used could be negative due to this deletion.
-  * Disk size = 8910952K. Space Used = 172888K. Runtime = 00:00:10:01.
-=======
-  * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
-  * Delete VBoxGuestAdditions.iso[51900K]. Space used could be negative due to this deletion.
-  * Disk size = 8842432K. Space Used = 164112K. Runtime = 00:00:09:22.
->>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
+  * Disk size = 8776312K. Space Used = 168864K. Runtime = 00:00:00:41.
   * The following NEW packages will be installed:
   ```bash
 build-essential dkms dpkg-dev g++ g++-14
 g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu libc6-dev* libdpkg-perl libdw1t64
-libstdc++-14-dev linux-headers-6.17.13+deb13-amd64 linux-headers-6.17.13+deb13-common linux-headers-amd64 linux-kbuild-6.17.13+deb13
+libstdc++-14-dev linux-headers-6.12.63+deb13-amd64 linux-headers-6.12.63+deb13-common linux-headers-amd64 linux-kbuild-6.12.63+deb13
 make pahole patch
   ```

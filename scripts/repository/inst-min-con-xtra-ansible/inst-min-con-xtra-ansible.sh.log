@@ -58,16 +58,12 @@ Get:25 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 python3-
 Get:26 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 ieee-data all 20240722 [2,221 kB]
 Get:27 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 python3-netaddr all 1.3.0-1 [356 kB]
 Get:28 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 ansible-core all 2.19.4-0+deb13u1 [1,370 kB]
-Get:29 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 ansible all 12.0.0~b5+dfsg-0+deb13u1 [18.6 MB]
+Get:29 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 ansible all 12.0.0+dfsg-0+deb13u1 [18.6 MB]
 Get:30 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 sshpass amd64 1.10-0.1 [12.7 kB]
 Preconfiguring packages ...
-<<<<<<< HEAD
-Fetched 33.2 MB in 0s (177 MB/s)
-=======
-Fetched 33.2 MB in 0s (154 MB/s)
->>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
+Fetched 33.2 MB in 0s (147 MB/s)
 Selecting previously unselected package libpython3.13-minimal:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21002 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20967 files and directories currently installed.)
 Preparing to unpack .../libpython3.13-minimal_3.13.5-2_amd64.deb ...
 Unpacking libpython3.13-minimal:amd64 (3.13.5-2) ...
 Selecting previously unselected package python3.13-minimal.
@@ -76,7 +72,7 @@ Unpacking python3.13-minimal (3.13.5-2) ...
 Setting up libpython3.13-minimal:amd64 (3.13.5-2) ...
 Setting up python3.13-minimal (3.13.5-2) ...
 Selecting previously unselected package python3-minimal.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21326 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21291 files and directories currently installed.)
 Preparing to unpack .../python3-minimal_3.13.5-1_amd64.deb ...
 Unpacking python3-minimal (3.13.5-1) ...
 Selecting previously unselected package media-types.
@@ -93,7 +89,7 @@ Preparing to unpack .../libpython3-stdlib_3.13.5-1_amd64.deb ...
 Unpacking libpython3-stdlib:amd64 (3.13.5-1) ...
 Setting up python3-minimal (3.13.5-1) ...
 Selecting previously unselected package python3.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21779 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 21744 files and directories currently installed.)
 Preparing to unpack .../00-python3_3.13.5-1_amd64.deb ...
 Unpacking python3 (3.13.5-1) ...
 Selecting previously unselected package openssl.
@@ -157,8 +153,8 @@ Selecting previously unselected package ansible-core.
 Preparing to unpack .../20-ansible-core_2.19.4-0+deb13u1_all.deb ...
 Unpacking ansible-core (2.19.4-0+deb13u1) ...
 Selecting previously unselected package ansible.
-Preparing to unpack .../21-ansible_12.0.0~b5+dfsg-0+deb13u1_all.deb ...
-Unpacking ansible (12.0.0~b5+dfsg-0+deb13u1) ...
+Preparing to unpack .../21-ansible_12.0.0+dfsg-0+deb13u1_all.deb ...
+Unpacking ansible (12.0.0+dfsg-0+deb13u1) ...
 Selecting previously unselected package sshpass.
 Preparing to unpack .../22-sshpass_1.10-0.1_amd64.deb ...
 Unpacking sshpass (1.10-0.1) ...
@@ -193,9 +189,9 @@ Setting up python3-resolvelib (1.1.0-1) ...
 Setting up python3-yaml (6.0.2-1+b2) ...
 Setting up python3-cryptography (43.0.0-3) ...
 Setting up ansible-core (2.19.4-0+deb13u1) ...
-Setting up ansible (12.0.0~b5+dfsg-0+deb13u1) ...
+Setting up ansible (12.0.0+dfsg-0+deb13u1) ...
 Processing triggers for systemd (257.9-1~deb13u1) ...
-Processing triggers for libc-bin (2.41-12) ...
+Processing triggers for libc-bin (2.41-12+deb13u1) ...
 Processing triggers for ca-certificates (20250419) ...
 Updating certificates in /etc/ssl/certs...
 0 added, 0 removed; done.
@@ -209,8 +205,4 @@ python3-cffi-backend set to manually installed.
 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
 CLDS: * Install ansible.
 CLDS: * sshpass: to allow passing username and password on the fly.
-<<<<<<< HEAD
-CLDS: * Disk size = 2439236K. Space Used = 582076K. Runtime = 00:00:00:25.
-=======
-CLDS: * Disk size = 2379468K. Space Used = 582084K. Runtime = 00:00:00:24.
->>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
+CLDS: * Disk size = 2308468K. Space Used = 582124K. Runtime = 00:00:00:27.

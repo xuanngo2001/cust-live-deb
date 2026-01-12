@@ -37,63 +37,22 @@ Reading state information...
 Calculating upgrade...
 The following packages will be upgraded:
   dhcpcd-base microsoft-edge-stable
-<<<<<<< HEAD
 2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-1 not fully installed or removed.
-=======
-2 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
->>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
 Need to get 181 MB of archives.
 After this operation, 132 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 dhcpcd-base amd64 1:10.3.0-3~bpo13+1 [206 kB]
 Get:2 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 143.0.3650.139-1 [180 MB]
-<<<<<<< HEAD
-Fetched 181 MB in 4s (47.6 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 167434 files and directories currently installed.)
-=======
-Fetched 181 MB in 3min 52s (780 kB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166462 files and directories currently installed.)
->>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
+Fetched 181 MB in 2s (77.2 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 167341 files and directories currently installed.)
 Preparing to unpack .../microsoft-edge-stable_143.0.3650.139-1_amd64.deb ...
 Unpacking microsoft-edge-stable (143.0.3650.139-1) over (112.0.1722.48-1) ...
 Preparing to unpack .../dhcpcd-base_1%3a10.3.0-3~bpo13+1_amd64.deb ...
-Unpacking dhcpcd-base (1:10.3.0-3~bpo13+1) over (1:10.1.0-11+deb13u1) ...
+Unpacking dhcpcd-base (1:10.3.0-3~bpo13+1) over (1:10.1.0-11+deb13u2) ...
 Setting up microsoft-edge-stable (143.0.3650.139-1) ...
-<<<<<<< HEAD
-Setting up zfs-dkms (2.3.2-2) ...
-Removing old zfs/2.3.2 DKMS files...
-Deleting module zfs/2.3.2 completely from the DKMS tree.
-Loading new zfs/2.3.2 DKMS files...
-Building for 6.17.13+deb13-amd64
-
-Building initial module zfs/2.3.2 for 6.17.13+deb13-amd64
-Sign command: /lib/modules/6.17.13+deb13-amd64/build/scripts/sign-file
-Signing key: /var/lib/dkms/mok.key
-Public certificate (MOK): /var/lib/dkms/mok.pub
-
-Running the pre_build script...(bad exit status: 1)
-Failed command:
-cd /var/lib/dkms/zfs/2.3.2/build/ && /var/lib/dkms/zfs/2.3.2/build/configure --disable-dependency-tracking --prefix=/usr --with-config=kernel --with-linux=/lib/modules/6.17.13+deb13-amd64/source --with-linux-obj=/lib/modules/6.17.13+deb13-amd64/build --with-qat= --host= 
-Consult /var/lib/dkms/zfs/2.3.2/build/make.log for more information.
-dpkg: error processing package zfs-dkms (--configure):
- installed zfs-dkms package post-installation script subprocess returned error exit status 1
-=======
->>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
 Setting up dhcpcd-base (1:10.3.0-3~bpo13+1) ...
 Installing new version of config file /etc/dhcpcd.conf ...
 Creating group 'dhcpcd' with GID 986.
 Processing triggers for desktop-file-utils (0.28-1) ...
 Processing triggers for menu (2.1.51) ...
-<<<<<<< HEAD
-Processing triggers for initramfs-tools (0.148.3) ...
-update-initramfs: Generating /boot/initrd.img-6.17.13+deb13-amd64
-W: No zstd in /usr/bin:/sbin:/bin, using gzip
-live-boot: core filesystems dm-verity devices utils udev blockdev dns.
-Errors were encountered while processing:
- zfs-dkms
-E: Sub-process /usr/bin/dpkg returned an error code (1)
-CLDS: * Disk size = 8132728K. Space Used = 306324K. Runtime = 00:00:00:30.
-=======
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 8021028K. Space Used = 306316K. Runtime = 00:00:04:00.
->>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
+CLDS: * Disk size = 8059236K. Space Used = 306332K. Runtime = 00:00:00:11.

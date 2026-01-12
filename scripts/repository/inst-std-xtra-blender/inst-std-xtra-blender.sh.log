@@ -107,7 +107,7 @@ Get:52 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libodbc2
 Get:53 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 unixodbc-common all 2.3.12-2 [8,640 B]
 Get:54 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libodbcinst2 amd64 2.3.12-2 [35.1 kB]
 Get:55 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libogdi4.1 amd64 4.1.1+ds-5 [217 kB]
-Get:56 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpq5 amd64 17.6-0+deb13u1 [228 kB]
+Get:56 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpq5 amd64 17.7-0+deb13u1 [228 kB]
 Get:57 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libqhull-r8.0 amd64 2020.2-6+b2 [248 kB]
 Get:58 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 librttopo1 amd64 1.1.0-4 [179 kB]
 Get:59 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libspatialite8t64 amd64 5.1.0-3+b2 [1,864 kB]
@@ -130,13 +130,9 @@ Get:75 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpotra
 Get:76 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpugixml1v5 amd64 1.14-2 [88.6 kB]
 Get:77 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libspnav0 amd64 1.2-1 [14.1 kB]
 Get:78 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 blender amd64 4.3.2+dfsg-2 [25.9 MB]
-<<<<<<< HEAD
-Fetched 131 MB in 1s (203 MB/s)
-=======
-Fetched 131 MB in 1s (164 MB/s)
->>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
+Fetched 131 MB in 1s (169 MB/s)
 Selecting previously unselected package blender-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 134801 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 134749 files and directories currently installed.)
 Preparing to unpack .../00-blender-data_4.3.2+dfsg-2_all.deb ...
 Unpacking blender-data (4.3.2+dfsg-2) ...
 Selecting previously unselected package fonts-dejavu-extra.
@@ -302,8 +298,8 @@ Selecting previously unselected package libogdi4.1:amd64.
 Preparing to unpack .../54-libogdi4.1_4.1.1+ds-5_amd64.deb ...
 Unpacking libogdi4.1:amd64 (4.1.1+ds-5) ...
 Selecting previously unselected package libpq5:amd64.
-Preparing to unpack .../55-libpq5_17.6-0+deb13u1_amd64.deb ...
-Unpacking libpq5:amd64 (17.6-0+deb13u1) ...
+Preparing to unpack .../55-libpq5_17.7-0+deb13u1_amd64.deb ...
+Unpacking libpq5:amd64 (17.7-0+deb13u1) ...
 Selecting previously unselected package libqhull-r8.0:amd64.
 Preparing to unpack .../56-libqhull-r8.0_2020.2-6+b2_amd64.deb ...
 Unpacking libqhull-r8.0:amd64 (2020.2-6+b2) ...
@@ -380,7 +376,7 @@ Setting up libcharls2:amd64 (2.4.2-2+b2) ...
 Setting up libgeos-c1t64:amd64 (3.13.1-1) ...
 Setting up libyaml-cpp0.8:amd64 (0.8.0+dfsg-7) ...
 Setting up libosdcpu3.6.0:amd64 (3.6.0-3) ...
-Setting up libpq5:amd64 (17.6-0+deb13u1) ...
+Setting up libpq5:amd64 (17.7-0+deb13u1) ...
 Setting up libboost-thread1.83.0:amd64 (1.83.0-4.2) ...
 Setting up libqhull-r8.0:amd64 (2020.2-6+b2) ...
 Setting up libosdgpu3.6.0:amd64 (3.6.0-3) ...
@@ -452,15 +448,11 @@ Setting up libopenimageio2.5:amd64 (2.5.18.0+dfsg-1+b1) ...
 Setting up blender (4.3.2+dfsg-2) ...
 Processing triggers for desktop-file-utils (0.28-1) ...
 Processing triggers for hicolor-icon-theme (0.18-2) ...
-Processing triggers for libc-bin (2.41-12) ...
+Processing triggers for libc-bin (2.41-12+deb13u1) ...
 Processing triggers for udev (257.9-1~deb13u1) ...
 Processing triggers for fontconfig (2.15.0-2.3) ...
 CLDS: * Install required packages for blender.
 CLDS: * Install blender3d.
 CLDS: * Insert Blender 3D menu in Graphics.
 CLDS: * http://download.blender.org/release/
-<<<<<<< HEAD
-CLDS: * Disk size = 8114908K. Space Used = 605208K. Runtime = 00:00:00:09.
-=======
-CLDS: * Disk size = 8055172K. Space Used = 605224K. Runtime = 00:00:00:10.
->>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
+CLDS: * Disk size = 7984296K. Space Used = 605220K. Runtime = 00:00:00:11.
