@@ -1,7 +1,11 @@
 * >>>>>>>>> Running inst-min-con-xtra-sudo.sh ...
   * After this operation, 6,865 kB of additional disk space will be used.
   * Install sudo to make it easier to handle script with/without it.
+<<<<<<< HEAD
   * Disk size = 4953352K. Space Used = 5872K. Runtime = 00:00:00:01.
+=======
+  * Disk size = 4893584K. Space Used = 5880K. Runtime = 00:00:00:01.
+>>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
   * The following NEW packages will be installed:
   ```bash
 sudo

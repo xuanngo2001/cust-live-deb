@@ -33,7 +33,11 @@ Get:12 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpytho
 Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpython3-dev amd64 3.13.5-1 [10.4 kB]
 Get:14 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 python3.13-dev amd64 3.13.5-2 [504 kB]
 Get:15 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 python3-dev amd64 3.13.5-1 [26.1 kB]
+<<<<<<< HEAD
 Fetched 14.5 MB in 0s (169 MB/s)
+=======
+Fetched 14.5 MB in 0s (42.8 MB/s)
+>>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
 Selecting previously unselected package libc-dev-bin.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 110810 files and directories currently installed.)
 Preparing to unpack .../00-libc-dev-bin_2.41-12_amd64.deb ...
@@ -98,4 +102,8 @@ Setting up python3-dev (3.13.5-1) ...
 Processing triggers for libc-bin (2.41-12) ...
 CLDS: * Install python3-dev.
 CLDS: * Require for: tulipy
+<<<<<<< HEAD
 CLDS: * Disk size = 4825516K. Space Used = 81224K. Runtime = 00:00:00:02.
+=======
+CLDS: * Disk size = 4765724K. Space Used = 81224K. Runtime = 00:00:00:03.
+>>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e

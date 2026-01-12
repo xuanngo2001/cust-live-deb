@@ -33,7 +33,7 @@ The following NEW packages will be installed:
 Need to get 1,420 B of archives.
 After this operation, 13.3 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-headers-amd64 amd64 6.17.13-1~bpo13+1 [1,420 B]
-Fetched 1,420 B in 0s (0 B/s)
+Fetched 1,420 B in 0s (19.4 kB/s)
 Selecting previously unselected package linux-headers-amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166408 files and directories currently installed.)
 Preparing to unpack .../linux-headers-amd64_6.17.13-1~bpo13+1_amd64.deb ...
@@ -60,14 +60,24 @@ The following NEW packages will be installed:
 Need to get 87.0 kB of archives.
 After this operation, 400 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 module-assistant all 0.11.14 [87.0 kB]
+<<<<<<< HEAD
 Fetched 87.0 kB in 0s (0 B/s)
+=======
+Fetched 87.0 kB in 0s (728 kB/s)
+>>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
 Selecting previously unselected package module-assistant.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 166410 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.14_all.deb ...
 Unpacking module-assistant (0.11.14) ...
 Setting up module-assistant (0.11.14) ...
-Getting source for kernel version: 6.17.13+deb13-amd64
-Kernel headers available in /lib/modules/6.17.13+deb13-amd64/build
+Getting source for kernel version: 6.12.57+deb13-amd64
+apt-get -y install linux-headers-6.12.57+deb13-amd64 
+Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package linux-headers-6.12.57+deb13-amd64
+E: Couldn't find any package by glob 'linux-headers-6.12.57+deb13-amd64'
+E: Couldn't find any package by regex 'linux-headers-6.12.57+deb13-amd64'
 Creating symlink...
 apt-get -y install build-essential 
 Reading package lists...
@@ -77,6 +87,7 @@ build-essential is already the newest version (12.12).
 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
 
 Done!
+<<<<<<< HEAD
 info: Trying to set 'zfs-dkms/note-incompatible-licenses' [note] to ''
 info: Loading answer for 'zfs-dkms/note-incompatible-licenses'
 info: Trying to set 'zfs-dkms/stop-build-for-32bit-kernel' [boolean] to 'true'
@@ -133,3 +144,6 @@ Errors were encountered while processing:
  zfs-dkms
 E: Sub-process /usr/bin/dpkg returned an error code (1)
 CLDS: * Disk size = 7826404K. Space Used = 54096K. Runtime = 00:00:00:21.
+=======
+CLDS: * Disk size = 7714712K. Space Used = 400K. Runtime = 00:00:00:02.
+>>>>>>> 2d8296026aa896da96fe4c85ba3e479703e6eb9e
