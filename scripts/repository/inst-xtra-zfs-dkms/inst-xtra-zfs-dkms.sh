@@ -7,7 +7,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly download dependent packages
-  apt-get install -s -y libelf-dev 
+  apt-get install -s -y libelf-dev pahole libelf1t64 libdw1t64 file
 
 # Install required packages.
 apt-get install -y linux-headers-amd64 lsb-release
