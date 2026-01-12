@@ -21,7 +21,7 @@ Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 pahole am
 Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-kbuild-6.12.63+deb13 amd64 6.12.63-1 [1,597 kB]
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-6.12.63+deb13-amd64 amd64 6.12.63-1 [2,920 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-amd64 amd64 6.12.63-1 [1,412 B]
-Fetched 16.2 MB in 0s (179 MB/s)
+Fetched 16.2 MB in 0s (172 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -142,12 +142,12 @@ Processing triggers for libc-bin (2.41-12+deb13u1) ...
 chmod: changing permissions of './VBoxLinuxAdditions.run': Read-only file system
 Please add execution rights on ./VBoxLinuxAdditions.run
 
-(xfce4-terminal:123059): xfce4-terminal-WARNING **: 16:51:50.070: Failed to initialize Xfconf: Could not connect: No such file or directory
+(xfce4-terminal:118483): xfce4-terminal-WARNING **: 18:48:15.657: Failed to initialize Xfconf: Could not connect: No such file or directory
 
-(xfce4-terminal:123059): xfce4-terminal-WARNING **: 16:51:50.097: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+(xfce4-terminal:118483): xfce4-terminal-WARNING **: 18:48:15.689: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
 CLDS: * WARNING: Use this script only if backport repository doesn't work.
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: version: 7.2.4 r170995.
 CLDS: * Delete VBoxGuestAdditions.iso[51908K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 8776312K. Space Used = 168864K. Runtime = 00:00:00:41.
+CLDS: * Disk size = 8902112K. Space Used = 168860K. Runtime = 00:01:30:06.

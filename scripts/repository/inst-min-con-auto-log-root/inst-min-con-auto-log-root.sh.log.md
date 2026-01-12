@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-auto-log-root.sh ...
-  * Disk size = 1069572K. Space Used = 16K. Runtime = 00:00:00:00.
+  * Disk size = 1069588K. Space Used = 16K. Runtime = 00:00:00:01.
