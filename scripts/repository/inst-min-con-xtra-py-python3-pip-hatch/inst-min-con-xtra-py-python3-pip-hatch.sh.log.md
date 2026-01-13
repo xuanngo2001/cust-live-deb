@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-xtra-py-python3-pip-hatch.sh ...
-  * Disk size = 4770216K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 4634884K. Space Used = 4K. Runtime = 00:00:00:01.
