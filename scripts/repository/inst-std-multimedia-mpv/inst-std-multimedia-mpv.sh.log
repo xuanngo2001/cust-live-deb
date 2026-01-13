@@ -2,6 +2,26 @@ CLDS:>>>>>>>>> Running inst-std-multimedia-mpv.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following NEW packages will be installed:
+  libdovi3
+0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
+Inst libdovi3 (3.3.1-2+b1 master_trixie-main trixie:trixie [amd64])
+Conf libdovi3 (3.3.1-2+b1 master_trixie-main trixie:trixie [amd64])
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libleptonica6
+The following NEW packages will be installed:
+  libleptonica6 libtesseract5
+0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
+Inst libleptonica6 (1.84.1-4 master_trixie-main trixie:trixie [amd64])
+Inst libtesseract5 (5.5.0-1+b1 master_trixie-main trixie:trixie [amd64])
+Conf libleptonica6 (1.84.1-4 master_trixie-main trixie:trixie [amd64])
+Conf libtesseract5 (5.5.0-1+b1 master_trixie-main trixie:trixie [amd64])
+Reading package lists...
+Building dependency tree...
+Reading state information...
 The following additional packages will be installed:
   libaribb24-0t64 libass9 libavc1394-0 libavcodec61 libavdevice61
   libavfilter10 libavformat61 libavutil59 libbluray2 libbs2b0 libcaca0
@@ -147,9 +167,15 @@ Get:94 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libva-wa
 Get:95 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxpresent1 amd64 1.0.1-1+b2 [9,816 B]
 Get:96 http://localhost/aptly-repo/master_deb-multimedia-main trixie/main amd64 vapoursynth amd64 72-dmo1 [1,057 kB]
 Get:97 http://localhost/aptly-repo/master_deb-multimedia-main trixie/main amd64 mpv amd64 1:0.40.0-dmo2+deb13u1 [1,316 kB]
+<<<<<<< HEAD
 Fetched 55.6 MB in 0s (126 MB/s)
 Selecting previously unselected package libaribb24-0t64:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 132330 files and directories currently installed.)
+=======
+Fetched 55.6 MB in 1s (108 MB/s)
+Selecting previously unselected package libaribb24-0t64:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 132410 files and directories currently installed.)
+>>>>>>> 76ce2de21d35440cb3334f78d724dfbf626c7aaa
 Preparing to unpack .../00-libaribb24-0t64_1%3a1.0.3-dmo6+b1_amd64.deb ...
 Unpacking libaribb24-0t64:amd64 (1:1.0.3-dmo6+b1) ...
 Selecting previously unselected package libunibreak6:amd64.
@@ -540,24 +566,16 @@ Setting up mpv (1:0.40.0-dmo2+deb13u1) ...
 Processing triggers for hicolor-icon-theme (0.18-2) ...
 Processing triggers for libc-bin (2.41-12+deb13u1) ...
 Processing triggers for desktop-file-utils (0.28-1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-libdovi3 is already the newest version (3.3.1-2+b1).
-libdovi3 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-libtesseract5 is already the newest version (5.5.0-1+b1).
-libtesseract5 set to manually installed.
-0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+'./cld/bashrc.d/bashrc-alias-mpv.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-mpv.sh'
 './cld/doc/mpv-help.txt' -> '/usr/local/cld/doc/mpv-help.txt'
 './cld/home/.config/mpv' -> '/usr/local/cld/home/.config/mpv'
-'./cld/home/.config/mpv/mpv.conf' -> '/usr/local/cld/home/.config/mpv/mpv.conf'
 './cld/home/.config/mpv/input.conf' -> '/usr/local/cld/home/.config/mpv/input.conf'
-'./cld/bashrc.d/bashrc-alias-mpv.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-mpv.sh'
+'./cld/home/.config/mpv/mpv.conf' -> '/usr/local/cld/home/.config/mpv/mpv.conf'
 CLDS: * Install Media Player: mpv v0.40.0 Copyright © 2000-2025 mpv/MPlayer/mplayer2 projects.
 CLDS: * Add multiple aliases for MPV.
 CLDS: * Add useful mpv keybindings settings.
+<<<<<<< HEAD
 CLDS: * Disk size = 7235216K. Space Used = 214380K. Runtime = 00:00:00:07.
+=======
+CLDS: * Disk size = 7618872K. Space Used = 214392K. Runtime = 00:00:00:09.
+>>>>>>> 76ce2de21d35440cb3334f78d724dfbf626c7aaa

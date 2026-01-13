@@ -8,12 +8,11 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install dependency.
 	#apt-get -y install liblept5 # Allow to take screenshot with option: --vo=image
-  
-# Install MPV.
-	apt-get -y install mpv
-
     apt-get install -s -y libdovi3
     apt-get install -s -y libtesseract5
+
+# Install MPV.
+	apt-get -y install mpv
 
 # Add to CLD/
 	yes | cp -av ./cld  /usr/local

@@ -184,10 +184,12 @@ php-fpm
 php
 # ./inst-min-con-xtra-py-python3-dev/inst-min-con-xtra-py-python3-dev.sh
 python3-dev
-# ./inst-min-con-xtra-py-python3-pip-hatch/inst-min-con-xtra-py-python3-pip-hatch.sh
-
-# ./inst-min-con-xtra-py-python3-pip/inst-min-con-xtra-py-python3-pip.sh
+# ./inst-min-con-xtra-py-python3-pip-00/inst-min-con-xtra-py-python3-pip-00.sh
 python3-pip
+# ./inst-min-con-xtra-py-python3-pip-01-hatch/inst-min-con-xtra-py-python3-pip-01-hatch.sh
+
+# ./inst-min-con-xtra-py-python3-pip-01-yfinance/inst-min-con-xtra-py-python3-pip-01-yfinance.sh
+
 # ./inst-min-con-xtra-py-python-is-python3/inst-min-con-xtra-py-python-is-python3.sh
 python-is-python3
 # ./inst-min-con-xtra-rescue-testdisk/inst-min-con-xtra-rescue-testdisk.sh
@@ -219,7 +221,7 @@ xsltproc
 # ./inst-min-con-xtra-yt-dlp-ejs/inst-min-con-xtra-yt-dlp-ejs.sh
 
 # ./inst-min-win-00-wm-jwm-fixD13-libatk-bridge2.0-0t64/inst-min-win-00-wm-jwm-fixD13-libatk-bridge2.0-0t64.sh
-libatk-bridge2.0-0t64=2.58.2-1~bpo13+1
+libatk-bridge2.0-0t64
 # ./inst-min-win-00-xorg-0-drivers-fix-libegl-mesa0/inst-min-win-00-xorg-0-drivers-fix-libegl-mesa0.sh
 libegl-mesa0
 libglx-mesa0
@@ -383,13 +385,10 @@ google-chrome-stable
 
 # ./inst-std-inet-xtra-transmission-gtk/inst-std-inet-xtra-transmission-gtk.sh
 transmission-gtk
-# ./inst-std-multimedia-mpv-fix/inst-std-multimedia-mpv-fix.sh
-libdovi3
-libtesseract5
 # ./inst-std-multimedia-mpv/inst-std-multimedia-mpv.sh
-mpv
 libdovi3
 libtesseract5
+mpv
 # ./inst-std-multimedia-xtra-ffmpeg/inst-std-multimedia-xtra-ffmpeg.sh
 ffmpeg
 # ./inst-std-multimedia-xtra-slop/inst-std-multimedia-xtra-slop.sh
@@ -544,12 +543,12 @@ netcat
 playonlinux
 # ./inst-xtra-zfs-clean/inst-xtra-zfs-clean.sh
 
-# ./inst-xtra-zfs-dkms-fix-file/inst-xtra-zfs-dkms-fix-file.sh
-file
-# ./inst-xtra-zfs-dkms-fix-pahole/inst-xtra-zfs-dkms-fix-pahole.sh
-pahole
 # ./inst-xtra-zfs-dkms/inst-xtra-zfs-dkms.sh
 libelf-dev
+pahole
+libelf1t64
+libdw1t64
+file
 linux-headers-amd64
 lsb-release
 dkms

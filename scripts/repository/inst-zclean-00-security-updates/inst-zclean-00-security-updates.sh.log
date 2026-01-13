@@ -35,26 +35,37 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 Calculating upgrade...
-The following packages have been kept back:
-  libelf1t64
 The following packages will be upgraded:
   dhcpcd-base microsoft-edge-stable
-2 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 Need to get 181 MB of archives.
 After this operation, 132 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 dhcpcd-base amd64 1:10.3.0-3~bpo13+1 [206 kB]
+Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 dhcpcd-base amd64 1:10.3.0-7~bpo13+1 [205 kB]
 Get:2 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 143.0.3650.139-1 [180 MB]
+<<<<<<< HEAD
 Fetched 181 MB in 1min 32s (1,953 kB/s)
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 167341 files and directories currently installed.)
 Preparing to unpack .../microsoft-edge-stable_143.0.3650.139-1_amd64.deb ...
 Unpacking microsoft-edge-stable (143.0.3650.139-1) over (112.0.1722.48-1) ...
 Preparing to unpack .../dhcpcd-base_1%3a10.3.0-3~bpo13+1_amd64.deb ...
 Unpacking dhcpcd-base (1:10.3.0-3~bpo13+1) over (1:10.1.0-11+deb13u2) ...
+=======
+Fetched 181 MB in 3s (70.2 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 167421 files and directories currently installed.)
+Preparing to unpack .../microsoft-edge-stable_143.0.3650.139-1_amd64.deb ...
+Unpacking microsoft-edge-stable (143.0.3650.139-1) over (112.0.1722.48-1) ...
+Preparing to unpack .../dhcpcd-base_1%3a10.3.0-7~bpo13+1_amd64.deb ...
+Unpacking dhcpcd-base (1:10.3.0-7~bpo13+1) over (1:10.1.0-11+deb13u2) ...
+>>>>>>> 76ce2de21d35440cb3334f78d724dfbf626c7aaa
 Setting up microsoft-edge-stable (143.0.3650.139-1) ...
-Setting up dhcpcd-base (1:10.3.0-3~bpo13+1) ...
+Setting up dhcpcd-base (1:10.3.0-7~bpo13+1) ...
 Installing new version of config file /etc/dhcpcd.conf ...
 Creating group 'dhcpcd' with GID 986.
 Processing triggers for desktop-file-utils (0.28-1) ...
 Processing triggers for menu (2.1.51) ...
 CLDS: * Install security updates at the ends.
+<<<<<<< HEAD
 CLDS: * Disk size = 8000360K. Space Used = 306328K. Runtime = 00:00:01:40.
+=======
+CLDS: * Disk size = 8382904K. Space Used = 306324K. Runtime = 00:00:00:12.
+>>>>>>> 76ce2de21d35440cb3334f78d724dfbf626c7aaa
