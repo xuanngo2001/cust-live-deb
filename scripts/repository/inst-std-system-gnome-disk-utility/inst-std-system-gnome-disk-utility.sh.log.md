@@ -3,11 +3,7 @@
   * Install Partition Manager: gnome-disk-utility.
   * Run: gnome-disks.
   * Insert gnome-disk-utility menu in Administration.
-<<<<<<< HEAD
-  * Disk size = 7303256K. Space Used = 11416K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 7686896K. Space Used = 11392K. Runtime = 00:00:00:03.
->>>>>>> 76ce2de21d35440cb3334f78d724dfbf626c7aaa
+  * Disk size = 7625600K. Space Used = 11412K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 gnome-disk-utility libatasmart4 libblockdev3 libblockdev-crypto3 libblockdev-fs3

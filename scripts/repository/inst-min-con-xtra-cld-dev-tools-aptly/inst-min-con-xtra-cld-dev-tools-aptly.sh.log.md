@@ -4,11 +4,7 @@
   * Add aptly nightly build repository.
   * Install aptly version: 1.6.2-1~bpo13+1 to create local debian repository.
   * Add xz-utils package because aptly snapshot merge needs it.
-<<<<<<< HEAD
-  * Disk size = 2320328K. Space Used = 42072K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 2380304K. Space Used = 42088K. Runtime = 00:00:00:01.
->>>>>>> 76ce2de21d35440cb3334f78d724dfbf626c7aaa
+  * Disk size = 2320468K. Space Used = 42072K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 aptly gpgv xz-utils

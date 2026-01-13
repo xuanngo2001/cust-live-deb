@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-buffer.sh ...
   * After this operation, 43.0 kB of additional disk space will be used.
   * Install buffer.
-<<<<<<< HEAD
-  * Disk size = 2278256K. Space Used = 80K. Runtime = 00:00:00:01.
-=======
-  * Disk size = 2338216K. Space Used = 80K. Runtime = 00:00:00:01.
->>>>>>> 76ce2de21d35440cb3334f78d724dfbf626c7aaa
+  * Disk size = 2278396K. Space Used = 80K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 buffer

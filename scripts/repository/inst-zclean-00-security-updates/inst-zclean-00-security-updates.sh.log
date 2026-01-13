@@ -16,8 +16,8 @@ Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRele
 Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
 Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
 Hit:13 https://download.docker.com/linux/debian trixie InRelease
-Hit:14 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:15 https://deb.nodesource.com/node_20.x nodistro InRelease
+Hit:14 https://deb.nodesource.com/node_20.x nodistro InRelease
+Hit:15 https://packages.microsoft.com/repos/edge stable InRelease
 Hit:16 https://dl.google.com/linux/chrome/deb stable InRelease
 Hit:17 https://packages.cloud.google.com/apt cloud-sdk InRelease
 Reading package lists...
@@ -25,8 +25,8 @@ W: Target Packages (main/binary-amd64/Packages) is configured multiple times in 
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-W: https://packages.microsoft.com/repos/edge/dists/stable/InRelease: Policy will reject signature within a year, see --audit for details
 W: https://deb.nodesource.com/node_20.x/dists/nodistro/InRelease: Policy will reject signature within a year, see --audit for details
+W: https://packages.microsoft.com/repos/edge/dists/stable/InRelease: Policy will reject signature within a year, see --audit for details
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -35,37 +35,31 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 Calculating upgrade...
+The following packages have been kept back:
+  libelf1t64
 The following packages will be upgraded:
-  dhcpcd-base microsoft-edge-stable
-2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 181 MB of archives.
-After this operation, 132 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 dhcpcd-base amd64 1:10.3.0-7~bpo13+1 [205 kB]
+  dhcpcd-base google-cloud-cli microsoft-edge-stable
+3 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Need to get 323 MB of archives.
+After this operation, 133 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 dhcpcd-base amd64 1:10.3.0-3~bpo13+1 [206 kB]
 Get:2 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 143.0.3650.139-1 [180 MB]
-<<<<<<< HEAD
-Fetched 181 MB in 1min 32s (1,953 kB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 167341 files and directories currently installed.)
+Get:3 https://packages.cloud.google.com/apt cloud-sdk/main amd64 google-cloud-cli amd64 552.0.0-0 [143 MB]
+Fetched 323 MB in 3min 22s (1,599 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165942 files and directories currently installed.)
 Preparing to unpack .../microsoft-edge-stable_143.0.3650.139-1_amd64.deb ...
 Unpacking microsoft-edge-stable (143.0.3650.139-1) over (112.0.1722.48-1) ...
 Preparing to unpack .../dhcpcd-base_1%3a10.3.0-3~bpo13+1_amd64.deb ...
 Unpacking dhcpcd-base (1:10.3.0-3~bpo13+1) over (1:10.1.0-11+deb13u2) ...
-=======
-Fetched 181 MB in 3s (70.2 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 167421 files and directories currently installed.)
-Preparing to unpack .../microsoft-edge-stable_143.0.3650.139-1_amd64.deb ...
-Unpacking microsoft-edge-stable (143.0.3650.139-1) over (112.0.1722.48-1) ...
-Preparing to unpack .../dhcpcd-base_1%3a10.3.0-7~bpo13+1_amd64.deb ...
-Unpacking dhcpcd-base (1:10.3.0-7~bpo13+1) over (1:10.1.0-11+deb13u2) ...
->>>>>>> 76ce2de21d35440cb3334f78d724dfbf626c7aaa
+Preparing to unpack .../google-cloud-cli_552.0.0-0_amd64.deb ...
+Unpacking google-cloud-cli (552.0.0-0) over (551.0.0-0) ...
 Setting up microsoft-edge-stable (143.0.3650.139-1) ...
-Setting up dhcpcd-base (1:10.3.0-7~bpo13+1) ...
+Setting up google-cloud-cli (552.0.0-0) ...
+Setting up dhcpcd-base (1:10.3.0-3~bpo13+1) ...
 Installing new version of config file /etc/dhcpcd.conf ...
 Creating group 'dhcpcd' with GID 986.
 Processing triggers for desktop-file-utils (0.28-1) ...
+Processing triggers for libc-bin (2.41-12+deb13u1) ...
 Processing triggers for menu (2.1.51) ...
 CLDS: * Install security updates at the ends.
-<<<<<<< HEAD
-CLDS: * Disk size = 8000360K. Space Used = 306328K. Runtime = 00:00:01:40.
-=======
-CLDS: * Disk size = 8382904K. Space Used = 306324K. Runtime = 00:00:00:12.
->>>>>>> 76ce2de21d35440cb3334f78d724dfbf626c7aaa
+CLDS: * Disk size = 8420988K. Space Used = 450472K. Runtime = 00:00:04:32.

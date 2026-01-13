@@ -1,14 +1,10 @@
 * >>>>>>>>> Running inst-std-accessories-scite.sh ...
   * After this operation, 11.7 MB of additional disk space will be used.
-  * After this operation, 6,042 kB of additional disk space will be used.
+  * After this operation, 6,046 kB of additional disk space will be used.
   * Install Text Editor: SciTE.
   * Insert SciTE in Accessories menu.
   * Install at-spi2-core to shut up Accessibility warning message.
-<<<<<<< HEAD
-  * Disk size = 5433412K. Space Used = 17812K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 5817048K. Space Used = 17808K. Runtime = 00:00:00:03.
->>>>>>> 76ce2de21d35440cb3334f78d724dfbf626c7aaa
+  * Disk size = 5755760K. Space Used = 17816K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 at-spi2-core gsettings-desktop-schemas liblua5.3-0 scite

@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-gnuplot-nox.sh ...
   * After this operation, 37.7 MB of additional disk space will be used.
   * Install gnuplot-nox.
-<<<<<<< HEAD
-  * Disk size = 4099496K. Space Used = 50272K. Runtime = 00:00:00:05.
-=======
-  * Disk size = 4160940K. Space Used = 50256K. Runtime = 00:00:00:06.
->>>>>>> 76ce2de21d35440cb3334f78d724dfbf626c7aaa
+  * Disk size = 4099644K. Space Used = 50272K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
 aglfn fontconfig fontconfig-config fonts-dejavu-core fonts-dejavu-mono
