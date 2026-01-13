@@ -1,3 +1,0 @@
-* >>>>>>>>> Running inst-zclean-01-pip-purge.sh ...
-  * Delete python packages to reduce size: ~/.cache/pip
-  * Disk size = 7942480K. Space Used = -51024K. Runtime = 00:00:00:02.
