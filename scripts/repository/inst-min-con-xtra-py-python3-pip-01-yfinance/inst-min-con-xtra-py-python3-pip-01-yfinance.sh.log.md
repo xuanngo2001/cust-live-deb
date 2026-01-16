@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-xtra-py-python3-pip-01-yfinance.sh ...
   * Install yfinance.
-  * Disk size = 5018056K. Space Used = 235976K. Runtime = 00:00:00:41.
+  * Disk size = 5080912K. Space Used = 235972K. Runtime = 00:00:00:10.
