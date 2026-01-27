@@ -105,6 +105,10 @@
 # Show all refs.
     git show-ref
 
-# Pull all projects
-    \ls -d -1 */ | xargs -n1 bash -c 'cd "$0"; git pull; cd ..'
-
+# Mass operations
+    # Pull all projects
+    \ls -d -1 */.git | xargs -n1 bash -c 'cd "$0"; git pull; cd ..'
+    
+    # Commit and push all projects
+    \ls -d -1 */.git | xargs -n1 bash -c 'echo "⭐ $0"; cd "$0/.."; git pull; git add -A; git commit -m mass-update; git push; cd ..'
+    find . -maxdepth 2 -mindepth 2 -type d -name .git -exec sh -c 'repo_dir=$(dirname "$1"); echo "⭐Processing repo: $repo_dir"; cd "$repo_dir" && git pull && git add . && git commit -m "Auto-update" && git push' _ {} \;

@@ -4,7 +4,10 @@
     awk '{print $2}'
 
 # Cut using TAB delimiter.
-	cut -d$'\t' -f2
+    cut -d$'\t' -f2
 
 # Remove 3rd column.
-	cut -d';' --complement -f3
+    cut -d';' --complement -f3
+
+# Use any whitespace character as delimiter.
+    tr '[:space:]' ' ' | tr -s ' ' | cut -d' ' -f1
