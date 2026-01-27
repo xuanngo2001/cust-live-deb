@@ -7,7 +7,7 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly list dependent packages
-#   apt-get install -s -y <your-package> 
+    apt-get install -y python3-lxml
 
 # Install yfinance.
     pip install yfinance --break-system-packages
