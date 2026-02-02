@@ -1,6 +1,10 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-flameshot-fixD13-qt6-svg-plugins.sh ...
   * Install qt6-svg-plugins.
+<<<<<<< HEAD
   * Disk size = 5856120K. Space Used = 40K. Runtime = 00:00:00:02.
+=======
+  * Disk size = 5796176K. Space Used = 40K. Runtime = 00:00:00:01.
+>>>>>>> 1c18ea0c5ebca1f2d28db4992054888879224aca
   * The following NEW packages will be installed:
   ```bash
 libb2-1 libdouble-conversion3 libduktape207 libkdsingleapplication-qt6-1.0 libkf6guiaddons6

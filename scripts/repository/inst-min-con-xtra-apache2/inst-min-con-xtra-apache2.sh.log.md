@@ -1,7 +1,11 @@
 * >>>>>>>>> Running inst-min-con-xtra-apache2.sh ...
   * After this operation, 11.6 MB of additional disk space will be used.
   * Install apache2.
+<<<<<<< HEAD
   * Disk size = 2325228K. Space Used = 16720K. Runtime = 00:00:00:03.
+=======
+  * Disk size = 2265264K. Space Used = 16716K. Runtime = 00:00:00:02.
+>>>>>>> 1c18ea0c5ebca1f2d28db4992054888879224aca
   * The following NEW packages will be installed:
   ```bash
 apache2 apache2-bin apache2-data apache2-utils libapr1t64
