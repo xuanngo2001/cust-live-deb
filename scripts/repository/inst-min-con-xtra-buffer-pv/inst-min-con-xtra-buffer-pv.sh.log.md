@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-buffer-pv.sh ...
   * After this operation, 273 kB of additional disk space will be used.
   * Install pv.
-  * Disk size = 2338164K. Space Used = 300K. Runtime = 00:00:00:00.
+  * Disk size = 2338176K. Space Used = 304K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
 pv
