@@ -40,7 +40,10 @@
 
     # Delete text between patterns, including the lines containing these patterns:
         sed -i --follow-symlinks '/PATTERN-1/,/PATTERN-2/d' input.txt
-    
+
+    # Remove characters between https and youtube.com
+    echo "https://fd.fd.youtube.com/"| sed 's|\(https://\).*\(youtube.com\)|\1\2|g'
+
 # Delete all the lines after PATTERN, use this
     sed '/PATTERN/,$d' input.txt    
 

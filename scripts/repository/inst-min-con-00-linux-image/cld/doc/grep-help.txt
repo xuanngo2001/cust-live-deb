@@ -31,7 +31,16 @@
  
 # Grep whitespaces up to pound key(#)
     grep -v "^[[:space:]]*#"
- 
+
+    # Clean up, no whitespace no comments lines
+        # - exclude any lines that start with # (comments).
+        # - removing empty lines and trimming whitespace.
+        # - sort and remove duplicates.
+    grep -v '^#' symbols.sh.txt.sh \
+        | grep -v '^[[:space:]]*$' \
+        | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' \
+        | sort -u > symbols.sh.clean
+
 # Grep 3 digits.
     echo 1459mmmm34mm | grep -E [0-9]\{3\}
     echo 2786mmmm34mm | grep -E [[:digit:]]\{3\}
