@@ -1,11 +1,7 @@
 * >>>>>>>>> Running inst-min-con-network-network-manager.sh ...
   * After this operation, 19.3 MB of additional disk space will be used.
   * Install network-manager: nmcli
-<<<<<<< HEAD
-  * Disk size = 1697756K. Space Used = 25240K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 1637792K. Space Used = 25232K. Runtime = 00:00:00:01.
->>>>>>> 1c18ea0c5ebca1f2d28db4992054888879224aca
+  * Disk size = 1637856K. Space Used = 25232K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
 libatomic1 libbluetooth3 libbrotli1 libcurl3t64-gnutls libglib2.0-0t64

@@ -2,11 +2,7 @@
   * After this operation, 16.4 kB of additional disk space will be used.
   * Starting from Bullseye, this is required for old script which uses unversioned /usr/bin/python.
   * Otherwise, old script(e.g. youtube-dl) will complain: /usr/bin/env: ‘python’: No such file or directory.
-<<<<<<< HEAD
-  * Disk size = 4619372K. Space Used = 40K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 4559400K. Space Used = 40K. Runtime = 00:00:00:02.
->>>>>>> 1c18ea0c5ebca1f2d28db4992054888879224aca
+  * Disk size = 4569032K. Space Used = 40K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 python-is-python3
