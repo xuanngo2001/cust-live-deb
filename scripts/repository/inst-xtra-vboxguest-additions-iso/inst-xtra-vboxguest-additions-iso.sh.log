@@ -21,7 +21,7 @@ Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 pahole am
 Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-kbuild-6.12.63+deb13 amd64 6.12.63-1 [1,597 kB]
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-6.12.63+deb13-amd64 amd64 6.12.63-1 [2,920 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-amd64 amd64 6.12.63-1 [1,412 B]
-Fetched 16.2 MB in 0s (148 MB/s)
+Fetched 16.2 MB in 0s (166 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -53,9 +53,9 @@ Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 patch amd
 Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 dpkg-dev all 1.22.21 [1,338 kB]
 Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 build-essential amd64 12.12 [4,624 B]
 Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 dkms all 3.2.2-1~deb13u1 [60.1 kB]
-Fetched 17.2 MB in 0s (167 MB/s)
+Fetched 17.2 MB in 0s (171 MB/s)
 Selecting previously unselected package libstdc++-14-dev:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 142468 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 143249 files and directories currently installed.)
 Preparing to unpack .../00-libstdc++-14-dev_14.2.0-19_amd64.deb ...
 Unpacking libstdc++-14-dev:amd64 (14.2.0-19) ...
 Selecting previously unselected package g++-14-x86-64-linux-gnu.
@@ -114,7 +114,7 @@ The following packages will be upgraded:
 1 upgraded, 5 newly installed, 0 to remove and 1 not upgraded.
 Need to get 0 B/16.2 MB of archives.
 After this operation, 78.1 MB of additional disk space will be used.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 143994 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 144775 files and directories currently installed.)
 Preparing to unpack .../0-libelf1t64_0.193-3~bpo13+1_amd64.deb ...
 Unpacking libelf1t64:amd64 (0.193-3~bpo13+1) over (0.192-4) ...
 Selecting previously unselected package libdw1t64:amd64.
@@ -142,12 +142,12 @@ Processing triggers for libc-bin (2.41-12+deb13u1) ...
 chmod: changing permissions of './VBoxLinuxAdditions.run': Read-only file system
 Please add execution rights on ./VBoxLinuxAdditions.run
 
-(xfce4-terminal:118508): xfce4-terminal-WARNING **: 19:18:18.890: Failed to initialize Xfconf: Could not connect: No such file or directory
+(xfce4-terminal:122400): xfce4-terminal-WARNING **: 20:24:09.491: Failed to initialize Xfconf: Could not connect: No such file or directory
 
-(xfce4-terminal:118508): xfce4-terminal-WARNING **: 19:18:18.924: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+(xfce4-terminal:122400): xfce4-terminal-WARNING **: 20:24:09.514: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
 CLDS: * WARNING: Use this script only if backport repository doesn't work.
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: version: 7.2.4 r170995.
-CLDS: * Delete VBoxGuestAdditions.iso[51908K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 8662712K. Space Used = 168860K. Runtime = 00:00:00:43.
+CLDS: * Delete VBoxGuestAdditions.iso[51912K]. Space used could be negative due to this deletion.
+CLDS: * Disk size = 9301224K. Space Used = 168848K. Runtime = 00:00:02:19.
