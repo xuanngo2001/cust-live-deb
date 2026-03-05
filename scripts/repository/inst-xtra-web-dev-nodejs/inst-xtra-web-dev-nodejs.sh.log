@@ -1,5 +1,5 @@
 CLDS:>>>>>>>>> Running inst-xtra-web-dev-nodejs.sh ...
-[38;5;79m2026-03-05 17:17:23 - Installing pre-requisites[0m
+[38;5;79m2026-03-05 18:04:20 - Installing pre-requisites[0m
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
@@ -18,8 +18,8 @@ Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
 Get:13 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
 Err:13 https://packages.microsoft.com/repos/edge stable InRelease
   Sub-process /usr/bin/sqv returned an error code (1), error message is: Signing key on BC528686B50D79E339D3721CEB3E94ADBE1229CF is not bound:            No binding signature at time 2026-03-04T00:12:53Z   because: Policy rejected non-revocation signature (PositiveCertification) requiring second pre-image resistance   because: SHA1 is not considered secure since 2026-02-01T00:00:00Z
-Hit:14 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:15 https://packages.cloud.google.com/apt cloud-sdk InRelease
+Hit:14 https://packages.cloud.google.com/apt cloud-sdk InRelease
+Hit:15 https://dl.google.com/linux/chrome/deb stable InRelease
 Reading package lists...
 Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -31,7 +31,7 @@ Warning: Target Packages (main/binary-amd64/Packages) is configured multiple tim
 Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-[1;31m2026-03-05 17:17:24 - Error: Failed to run 'apt update' (Exit Code: 0)[0m
+[1;31m2026-03-05 18:04:21 - Error: Failed to run 'apt update' (Exit Code: 0)[0m
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -46,7 +46,7 @@ The following NEW packages will be installed:
   libcares2 libnode115 node-acorn node-balanced-match node-brace-expansion
   node-cjs-module-lexer node-corepack node-minimatch node-undici node-xtend
   nodejs
-0 upgraded, 11 newly installed, 0 to remove and 3 not upgraded.
+0 upgraded, 11 newly installed, 0 to remove and 1 not upgraded.
 Need to get 13.8 MB of archives.
 After this operation, 65.4 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libcares2 amd64 1.34.5-1+deb13u1 [98.3 kB]
@@ -60,9 +60,9 @@ Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 node-brac
 Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 node-minimatch all 9.0.3-6 [76.8 kB]
 Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 node-undici all 7.3.0+dfsg1+~cs24.12.11-1 [333 kB]
 Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libnode115 amd64 20.19.2+dfsg-1 [12.1 MB]
-Fetched 13.8 MB in 0s (137 MB/s)
+Fetched 13.8 MB in 0s (101 MB/s)
 Selecting previously unselected package libcares2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 160732 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 161627 files and directories currently installed.)
 Preparing to unpack .../00-libcares2_1.34.5-1+deb13u1_amd64.deb ...
 Unpacking libcares2:amd64 (1.34.5-1+deb13u1) ...
 Selecting previously unselected package node-xtend.
@@ -109,4 +109,4 @@ Setting up nodejs (20.19.2+dfsg-1) ...
 update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
 Processing triggers for libc-bin (2.41-12+deb13u1) ...
 CLDS: * Install nodejs.
-CLDS: * Disk size = 8778520K. Space Used = 78884K. Runtime = 00:00:00:04.
+CLDS: * Disk size = 8760000K. Space Used = 78880K. Runtime = 00:00:00:07.
