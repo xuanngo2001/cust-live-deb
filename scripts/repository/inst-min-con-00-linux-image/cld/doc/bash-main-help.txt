@@ -1,8 +1,30 @@
 #!/bin/bash
-set -e
+set -e # Exit immediately if a command exits with a non-zero status
 # Description: BASH TEMPLATE
 this_script=$(basename "${0}")
 echo -e "\033[0;33m======> $(date +"%Y-%m-%d %0k.%M.%S"): ${this_script} \033[0m"
+
+        # Common function
+            source $HOME/.bashrc
+            function func_dir_get_executing_path()
+            { 
+                local EXECUTING_PATH=$(dirname "$0")              # relative
+                EXECUTING_PATH=$( cd "${EXECUTING_PATH}" && pwd ) # absolutized and normalized
+                if [ -z "${EXECUTING_PATH}" ]; then
+                    # error; for some reason, the path is not accessible
+                    # to the script (e.g. permissions re-evaled after suid)
+                    return 1  # fail
+                fi
+
+                echo "${EXECUTING_PATH}"  
+            }
+            export -f func_dir_get_executing_path
+
+            # Get current executing directory
+                CURR_EXEC_DIR=$(func_dir_get_executing_path)
+                echo "${CURR_EXEC_DIR}"
+
+########################### Real script starts here ############################
 
 # DEBUG arguments
 for i in $(seq 1 $#); do
@@ -23,26 +45,6 @@ done
 
     # Error response from daemon: No such container: my-mysql
 
-# Common function
-    source $HOME/.bashrc
-    function func_dir_get_executing_path()
-    { 
-        local EXECUTING_PATH=$(dirname "$0")              # relative
-        EXECUTING_PATH=$( cd "${EXECUTING_PATH}" && pwd ) # absolutized and normalized
-        if [ -z "${EXECUTING_PATH}" ]; then
-            # error; for some reason, the path is not accessible
-            # to the script (e.g. permissions re-evaled after suid)
-            return 1  # fail
-        fi
-
-        echo "${EXECUTING_PATH}"  
-    }
-    export -f func_dir_get_executing_path
-
-# Get current executing directory
-    CURR_EXEC_DIR=$(func_dir_get_executing_path)
-    echo "${CURR_EXEC_DIR}"
-
 # Use continue to skip an iteration in loop.
     while IFS='' read -r url_link || [[ -n "${url_link}" ]]; do
     
@@ -52,3 +54,5 @@ done
         fi
         
     done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )
+
+echo "@@@@@@@@@@ ${this_script} @@@@@@@@@@"
