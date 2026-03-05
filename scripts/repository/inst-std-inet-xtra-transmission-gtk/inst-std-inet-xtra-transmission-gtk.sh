@@ -11,13 +11,13 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
     apt-get install -s -y libevent
 
 # Install transmission-gtk.
-apt-get -y install transmission-gtk
+    apt-get -y install transmission-gtk
 
 # Insert transmission-gtk in Internet menu.
-sed -i "/Internet\">/ r jwmrc-menus-inet-transmission-gtk.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
+    sed -i "/Internet\">/ r jwmrc-menus-inet-transmission-gtk.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
 
 # Magnet link activated for Chrome
-./magnet-link-chrome-enable.sh
+    ./magnet-link-chrome-enable.sh
 
 # Log
 echo "${GV_LOG} * Install transmission-gtk."

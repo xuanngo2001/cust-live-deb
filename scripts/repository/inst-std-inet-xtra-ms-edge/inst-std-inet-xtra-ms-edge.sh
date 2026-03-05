@@ -11,8 +11,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Install edge.
 	#apt-get -y install edge
-	
-	dpkg -i microsoft-edge-stable_112.0.1722.48-1_amd64.deb
+	latest_edge_deb=$(\ls -1 microsoft-edge-stable_*.deb | sort -r| head -n1)
+	dpkg -i "$latest_edge_deb"
 
 # Insert Google Chrome in Internet menu.
 	sed -i "/Internet\">/ r jwmrc-menus-inet-ms-edge.xml" "${CLD_JWMRC_DIR}/jwmrc-menus.xml"
