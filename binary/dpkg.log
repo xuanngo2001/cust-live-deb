@@ -253,6 +253,7 @@ ii  libayatana-appindicator3-1           0.5.94-1                              a
 ii  libayatana-ido3-0.4-0:amd64          0.10.4-1                              amd64        Widgets and other objects used for Ayatana Indicators
 ii  libayatana-indicator3-7:amd64        0.9.4-1+b1                            amd64        panel indicator applet - shared library (GTK-3+ variant)
 ii  libb2-1:amd64                        0.98.1-1.1+b2                         amd64        BLAKE2 family of hash functions
+ii  libb64-0d:amd64                      1.2-5+b3                              amd64        base64 encoding/decoding library - runtime library
 ii  libbinutils:amd64                    2.44-3                                amd64        GNU binary utilities (private shared library)
 ii  libblas3:amd64                       3.12.1-6                              amd64        Basic Linear Algebra Reference implementations, shared library
 ii  libblkid1:amd64                      2.41-5                                amd64        block device ID library
@@ -286,8 +287,10 @@ ii  libc6:amd64                          2.41-12+deb13u1                       a
 ii  libc6-dev:amd64                      2.41-12+deb13u1                       amd64        GNU C Library: Development Libraries and Header Files
 ii  libcaca0:amd64                       0.99.beta20-5                         amd64        colour ASCII art library
 ii  libcairo-gobject2:amd64              1.18.4-1+b1                           amd64        Cairo 2D vector graphics library (GObject library)
+ii  libcairo-script-interpreter2:amd64   1.18.4-1+b1                           amd64        Cairo 2D vector graphics library (script interpreter)
 ii  libcairo2:amd64                      1.18.4-1+b1                           amd64        Cairo 2D vector graphics library
 ii  libcairomm-1.0-1v5:amd64             1.14.5-2+b1                           amd64        C++ wrappers for Cairo (shared libraries)
+ii  libcairomm-1.16-1:amd64              1.18.0-2                              amd64        C++ wrappers for Cairo (shared libraries)
 ii  libcanberra-gtk3-0:amd64             0.30-18                               amd64        GTK+ 3.0 helper for playing widget event sounds with libcanberra
 ii  libcanberra0:amd64                   0.30-18                               amd64        simple abstract interface for playing event sounds
 ii  libcap-ng0:amd64                     0.8.5-4+b1                            amd64        alternate POSIX capabilities library
@@ -361,6 +364,7 @@ ii  liberror-perl                        0.17030-1                             a
 ii  libevdev2:amd64                      1.13.4+dfsg-1                         amd64        wrapper library for evdev devices
 ii  libevent-2.1-7t64:amd64              2.1.12-stable-10+b1                   amd64        Asynchronous event notification library
 ii  libevent-core-2.1-7t64:amd64         2.1.12-stable-10+b1                   amd64        Asynchronous event notification library (core)
+ii  libevent-extra-2.1-7t64:amd64        2.1.12-stable-10+b1                   amd64        Asynchronous event notification library (extra)
 ii  libexif12:amd64                      0.6.25-1                              amd64        library to parse EXIF files
 ii  libexo-2-0:amd64                     4.20.0-1                              amd64        Library with extensions for Xfce (GTK-3 version)
 ii  libexo-common                        4.20.0-1                              all          libexo common files
@@ -409,9 +413,11 @@ ii  libgif7:amd64                        5.2.2-1+b1                            a
 ii  libgit2-1.9:amd64                    1.9.0+ds-2                            amd64        low-level Git library
 ii  libgl1:amd64                         1.7.0-1+b2                            amd64        Vendor neutral GL dispatch library -- legacy GL support
 ii  libgl1-mesa-dri:amd64                25.2.6-1~bpo13+1                      amd64        free implementation of the OpenGL API -- DRI modules
+ii  libgles2:amd64                       1.7.0-1+b2                            amd64        Vendor neutral GL dispatch library -- GLESv2 support
 ii  libglew2.2:amd64                     2.2.0-4+b2                            amd64        OpenGL Extension Wrangler - runtime environment
 ii  libglib2.0-0t64:amd64                2.84.4-3~deb13u2                      amd64        GLib library of C routines
 ii  libglibmm-2.4-1t64:amd64             2.66.8-1                              amd64        C++ wrapper for the GLib toolkit (shared libraries)
+ii  libglibmm-2.68-1t64:amd64            2.84.0-1                              amd64        C++ wrapper for the GLib toolkit (shared libraries)
 ii  libglu1-mesa:amd64                   9.0.2-1.1+b3                          amd64        Mesa OpenGL utility library (GLU)
 ii  libglvnd0:amd64                      1.7.0-1+b2                            amd64        Vendor neutral GL dispatch library
 ii  libglx-mesa0:amd64                   25.2.6-1~bpo13+1                      amd64        free implementation of the OpenGL API -- GLX vendor library
@@ -426,6 +432,7 @@ ii  libgpgmepp6t64:amd64                 1.24.2-3                              a
 ii  libgphoto2-6t64:amd64                2.5.31-4                              amd64        gphoto2 digital camera library
 ii  libgphoto2-port12t64:amd64           2.5.31-4                              amd64        gphoto2 digital camera port library
 ii  libgprofng0:amd64                    2.44-3                                amd64        GNU Next Generation profiler (runtime library)
+ii  libgraphene-1.0-0:amd64              1.10.8-5                              amd64        library of graphic data types
 ii  libgraphics-magick-perl              1.4+really1.3.45+hg17696-1            amd64        format-independent image processing - perl interface
 ii  libgraphicsmagick-q16-3t64           1.4+really1.3.45+hg17696-1            amd64        format-independent image processing - C shared library
 ii  libgraphite2-3:amd64                 1.3.14-2+b1                           amd64        Font rendering engine for Complex Scripts -- library
@@ -438,12 +445,16 @@ ii  libgstreamer-plugins-base1.0-0:amd64 1.26.2-1                              a
 ii  libgstreamer1.0-0:amd64              1.26.2-2                              amd64        Core GStreamer libraries and elements
 ii  libgtk-3-0t64:amd64                  3.24.49-3                             amd64        GTK graphical user interface library
 ii  libgtk-3-common                      3.24.49-3                             all          common files for the GTK graphical user interface library
+ii  libgtk-4-1:amd64                     4.18.6+ds-2                           amd64        GTK graphical user interface library
+ii  libgtk-4-common                      4.18.6+ds-2                           all          common files for the GTK graphical user interface library
 ii  libgtkmm-3.0-1t64:amd64              3.24.10-1                             amd64        C++ wrappers for GTK+ (shared libraries)
+ii  libgtkmm-4.0-0:amd64                 4.18.0-1                              amd64        C++ wrappers for GTK4 (shared libraries)
 ii  libgts-0.7-5t64:amd64                0.7.6+darcs121130-5.2+b1              amd64        library to deal with 3D computational surface meshes
 ii  libgudev-1.0-0:amd64                 238-6                                 amd64        GObject-based wrapper library for libudev
 ii  libgvc6                              2.42.4-3                              amd64        rich set of graph drawing tools - gvc library
 ii  libgvpr2:amd64                       2.42.4-3                              amd64        rich set of graph drawing tools - gvpr library
 ii  libhandy-1-0:amd64                   1.8.3-2                               amd64        Library with GTK widgets for mobile phones
+ii  libharfbuzz-subset0:amd64            10.2.0-1+b1                           amd64        OpenType text shaping engine (subset library)
 ii  libharfbuzz0b:amd64                  10.2.0-1+b1                           amd64        OpenType text shaping engine (shared library)
 ii  libhdf4-0-alt:amd64                  4.3.0-1+b1                            amd64        Hierarchical Data Format library (without NetCDF)
 ii  libhdf5-310:amd64                    1.14.5+repack-3                       amd64        HDF5 C runtime files - serial version
@@ -540,6 +551,7 @@ ii  libmbedtls21:amd64                   3.6.5-0.1~deb13u1                     a
 ii  libmbedx509-7:amd64                  3.6.5-0.1~deb13u1                     amd64        lightweight crypto and SSL/TLS library - x509 certificate library
 ii  libmd0:amd64                         1.1.0-2+b1                            amd64        message digest functions from BSD systems - shared library
 ii  libmd4c0:amd64                       0.5.2-2+b1                            amd64        Markdown for C
+ii  libminiupnpc18:amd64                 2.2.8-2+b2                            amd64        UPnP IGD client lightweight library
 ii  libminizip1t64:amd64                 1:1.3.dfsg+really1.3.1-1+b1           amd64        compression library - minizip library
 ii  libmm-glib0:amd64                    1.24.0-1+deb13u1                      amd64        D-Bus service for managing modems - shared libraries
 ii  libmnl0:amd64                        1.0.5-3                               amd64        minimalistic Netlink communication library
@@ -554,6 +566,7 @@ ii  libmtp-common                        1.1.22-1                              a
 ii  libmtp9t64:amd64                     1.1.22-1                              amd64        Media Transfer Protocol (MTP) library
 ii  libmujs3:amd64                       1.3.6-1                               amd64        Lightweight JavaScript interpreter library
 ii  libmysofa1:amd64                     1.3.3+dfsg-1                          amd64        library to read HRTFs stored in the AES69-2015 SOFA format
+ii  libnatpmp1t64:amd64                  20230423-1.2+b3                       amd64        portable and fully compliant implementation of NAT-PMP
 ii  libncurses6:amd64                    6.5+20250216-2                        amd64        shared libraries for terminal handling
 ii  libncursesw6:amd64                   6.5+20250216-2                        amd64        shared libraries for terminal handling (wide character support)
 ii  libndp0:amd64                        1.9-1+b1                              amd64        Library for Neighbor Discovery Protocol
@@ -619,6 +632,7 @@ ii  libpango-1.0-0:amd64                 1.56.3-1                              a
 ii  libpangocairo-1.0-0:amd64            1.56.3-1                              amd64        Layout and rendering of internationalized text
 ii  libpangoft2-1.0-0:amd64              1.56.3-1                              amd64        Layout and rendering of internationalized text
 ii  libpangomm-1.4-1v5:amd64             2.46.4-1+b2                           amd64        C++ Wrapper for pango (shared libraries)
+ii  libpangomm-2.48-1t64:amd64           2.56.1-1                              amd64        C++ Wrapper for pango (shared libraries)
 ii  libpangoxft-1.0-0:amd64              1.56.3-1                              amd64        Layout and rendering of internationalized text
 ii  libpaper2:amd64                      2.2.5-0.3+b2                          amd64        Paper sizes catalogue
 ii  libparse-recdescent-perl             1.967015+dfsg-4                       all          Perl module to create and use recursive-descent parsers
@@ -708,6 +722,7 @@ ii  libshaderc1:amd64                    2025.2-1                              a
 ii  libsharpyuv0:amd64                   1.5.0-0.1                             amd64        Library for sharp RGB to YUV conversion
 ii  libshine3:amd64                      3.1.1-2+b2                            amd64        Fixed-point MP3 encoding library - runtime files
 ii  libsigc++-2.0-0v5:amd64              2.12.1-3                              amd64        type-safe Signal Framework for C++ - runtime
+ii  libsigc++-3.0-0:amd64                3.6.0-2+b1                            amd64        type-safe Signal Framework for C++ - runtime
 ii  libsigsegv2:amd64                    2.14-1+b2                             amd64        Library for handling page faults in a portable way
 ii  libsixel1:amd64                      1.10.5-1                              amd64        DEC SIXEL graphics codec implementation (runtime)
 ii  libslang2:amd64                      2.3.3-5+b2                            amd64        S-Lang programming library - runtime version
@@ -1081,6 +1096,8 @@ ii  thunar-data                          4.20.2-1+deb13u1                      a
 ii  thunar-volman                        4.20.0-1                              amd64        Thunar extension for volumes management
 ii  timgm6mb-soundfont                   1.3-5                                 all          TimGM6mb SoundFont from MuseScore 1.3
 ii  tmux                                 3.5a-3                                amd64        terminal multiplexer
+ii  transmission-common                  4.1.1+dfsg-1~bpo13+1                  amd64        lightweight BitTorrent client (common files)
+ii  transmission-gtk                     4.1.1+dfsg-1~bpo13+1                  amd64        lightweight BitTorrent client (GTK+ interface)
 ii  tree                                 2.2.1-1                               amd64        displays an indented directory tree, in color
 ii  tzdata                               2025b-4+deb13u1                       all          time zone and daylight-saving time data
 ii  ucf                                  3.0052                                all          Update Configuration File(s): preserve user changes to config files
