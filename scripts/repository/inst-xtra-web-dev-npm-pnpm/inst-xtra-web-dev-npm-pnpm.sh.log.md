@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-xtra-web-dev-npm-pnpm.sh ...
   * Install pnpm.
-  * Disk size = 9645624K. Space Used = 31756K. Runtime = 00:00:00:02.
+  * Disk size = 9645652K. Space Used = 31756K. Runtime = 00:00:00:02.

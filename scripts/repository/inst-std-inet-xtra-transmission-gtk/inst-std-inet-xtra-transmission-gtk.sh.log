@@ -2,9 +2,24 @@ CLDS:>>>>>>>>> Running inst-std-inet-xtra-transmission-gtk.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
+Solving dependencies...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ transmission-gtk : Depends: libevent-extra-2.1-7t64 (>= 2.1.8-stable) but it is not installable
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-E: Unable to locate package libevent-extra
-CLDS: * Disk size = 7570732K. Space Used = 4K. Runtime = 00:00:00:01.
+E: Unable to correct problems, you have held broken packages.
+E: The following information from --solver 3.0 may provide additional context:
+   Unable to satisfy dependencies. Reached two conflicting decisions:
+   1. transmission-gtk:amd64=4.1.1+dfsg-1~bpo13+1 is selected for install
+   2. transmission-gtk:amd64=4.1.1+dfsg-1~bpo13+1 Depends libevent-extra-2.1-7t64 (>= 2.1.8-stable)
+      but none of the choices are installable:
+      [no choices]
+CLDS: * Disk size = 7570776K. Space Used = 4K. Runtime = 00:00:00:02.

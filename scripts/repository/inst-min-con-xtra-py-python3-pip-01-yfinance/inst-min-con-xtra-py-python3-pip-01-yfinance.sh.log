@@ -15,7 +15,7 @@ Need to get 1,530 kB of archives.
 After this operation, 5,648 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxslt1.1 amd64 1.1.35-1.2+deb13u2 [233 kB]
 Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 python3-lxml amd64 5.4.0-1 [1,297 kB]
-Fetched 1,530 kB in 0s (43.6 MB/s)
+Fetched 1,530 kB in 0s (73.6 MB/s)
 Selecting previously unselected package libxslt1.1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 117007 files and directories currently installed.)
 Preparing to unpack .../libxslt1.1_1.1.35-1.2+deb13u2_amd64.deb ...
@@ -77,14 +77,14 @@ Collecting urllib3<3,>=1.21.1 (from requests>=2.31->yfinance)
   Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
 Downloading yfinance-1.2.0-py2.py3-none-any.whl (130 kB)
 Downloading curl_cffi-0.13.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.3 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 28.0 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 31.8 MB/s eta 0:00:00
 Downloading beautifulsoup4-4.14.3-py3-none-any.whl (107 kB)
 Downloading cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (219 kB)
 Downloading frozendict-2.4.7-py3-none-any.whl (16 kB)
 Downloading numpy-2.4.2-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 34.5 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.6/16.6 MB 33.7 MB/s eta 0:00:00
 Downloading pandas-3.0.1-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (10.9 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 32.7 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 30.2 MB/s eta 0:00:00
 Downloading peewee-4.0.1-py3-none-any.whl (139 kB)
 Downloading protobuf-7.34.0-cp310-abi3-manylinux2014_x86_64.whl (324 kB)
 Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
@@ -100,7 +100,7 @@ Downloading pycparser-3.0-py3-none-any.whl (48 kB)
 Building wheels for collected packages: multitasking
   Building wheel for multitasking (pyproject.toml): started
   Building wheel for multitasking (pyproject.toml): finished with status 'done'
-  Created wheel for multitasking: filename=multitasking-0.0.12-py3-none-any.whl size=15635 sha256=c77fd1c9f31f4b6914b9558414be8897857fc46fe50a8db511c351178d6edac3
+  Created wheel for multitasking: filename=multitasking-0.0.12-py3-none-any.whl size=15635 sha256=9d99d29ff5b0f6e67c08c9d78305b6e12d3515882d7c12c78e6ef3ee63304de8
   Stored in directory: /root/.cache/pip/wheels/1e/df/0f/e2bbb22d689b30c681feb5410ab64a2523437b34c8ecfc6476
 Successfully built multitasking
 Installing collected packages: pytz, peewee, multitasking, websockets, urllib3, typing-extensions, soupsieve, six, pycparser, protobuf, numpy, frozendict, charset_normalizer, requests, python-dateutil, cffi, beautifulsoup4, pandas, curl_cffi, yfinance
@@ -108,4 +108,4 @@ Installing collected packages: pytz, peewee, multitasking, websockets, urllib3, 
 Successfully installed beautifulsoup4-4.14.3 cffi-2.0.0 charset_normalizer-3.4.5 curl_cffi-0.13.0 frozendict-2.4.7 multitasking-0.0.12 numpy-2.4.2 pandas-3.0.1 peewee-4.0.1 protobuf-7.34.0 pycparser-3.0 python-dateutil-2.9.0.post0 pytz-2026.1.post1 requests-2.32.5 six-1.17.0 soupsieve-2.8.3 typing-extensions-4.15.0 urllib3-2.6.3 websockets-16.0 yfinance-1.2.0
 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
 CLDS: * Install yfinance.
-CLDS: * Disk size = 5137016K. Space Used = 233216K. Runtime = 00:00:00:12.
+CLDS: * Disk size = 5137052K. Space Used = 233220K. Runtime = 00:00:00:12.
