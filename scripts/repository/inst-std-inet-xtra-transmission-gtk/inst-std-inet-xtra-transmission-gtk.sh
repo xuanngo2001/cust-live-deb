@@ -8,7 +8,7 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly list dependent packages
     # 2026-03-05: Added for Trixie.
-    apt-get install -s -y libevent-extra
+    apt-get install -s -y libevent-extra-2.1-7t64
 
 # Install transmission-gtk.
     apt-get -y install transmission-gtk
