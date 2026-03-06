@@ -1,7 +1,7 @@
 CLDS:>>>>>>>>> Running inst-min-con-xtra-gcp-google-cloud-cli.sh ...
   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
                                  Dload  Upload  Total   Spent   Left   Speed
-  0      0   0      0   0      0      0      0                              0100   1022 100   1022   0      0   6715      0                              0100   1022 100   1022   0      0   6710      0                              0100   1022 100   1022   0      0   6706      0                              0
+  0      0   0      0   0      0      0      0                              0100   1022 100   1022   0      0   9903      0                              0100   1022 100   1022   0      0   9893      0                              0100   1022 100   1022   0      0   9883      0                              0
 deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main
 Reading package lists...
 Building dependency tree...
@@ -18,13 +18,17 @@ The following NEW packages will be installed:
 Need to get 144 MB of archives.
 After this operation, 593 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk/main amd64 google-cloud-cli amd64 559.0.0-0 [144 MB]
-Fetched 144 MB in 1s (177 MB/s)
+Fetched 144 MB in 1s (112 MB/s)
 Selecting previously unselected package google-cloud-cli.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54432 files and directories currently installed.)
 Preparing to unpack .../google-cloud-cli_559.0.0-0_amd64.deb ...
 Unpacking google-cloud-cli (559.0.0-0) ...
 Setting up google-cloud-cli (559.0.0-0) ...
 Processing triggers for libc-bin (2.41-12+deb13u1) ...
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 CLDS: * Install google-cloud-cli.
 CLDS: * Google Cloud SDK 559.0.0
 CLDS: * alpha 2026.02.27
@@ -34,4 +38,4 @@ CLDS: * bundled-python3-unix 3.13.10
 CLDS: * core 2026.02.27
 CLDS: * gcloud-crc32c 1.0.0
 CLDS: * gsutil 5.35
-CLDS: * Disk size = 4168548K. Space Used = 1148016K. Runtime = 00:00:00:31.
+CLDS: * Disk size = 4168532K. Space Used = 1148016K. Runtime = 00:00:00:36.
