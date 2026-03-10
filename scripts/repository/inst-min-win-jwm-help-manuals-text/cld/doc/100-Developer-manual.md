@@ -234,7 +234,7 @@ Use `inst-std-accessories-scite` as reference.
         sed -i "/Graphics\">/ r jwmrc-menus-graphics-blender.xml" "${GV_CLD_ROOT_DIR}/jwmrc-menus.xml"
 
 
-Paths where you can find more icons:
+Paths where you can find more icons or use `cld-list-icons.sh`:
     
     /usr/share/icons/
     /usr/share/pixmaps/
