@@ -3,30 +3,30 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libdw1t64 libelf1t64 linux-headers-6.12.63+deb13-amd64
-  linux-headers-6.12.63+deb13-common linux-kbuild-6.12.63+deb13 pahole
+  libdw1t64 libelf1t64 linux-headers-6.12.73+deb13-amd64
+  linux-headers-6.12.73+deb13-common linux-kbuild-6.12.73+deb13 pahole
 The following NEW packages will be installed:
-  libdw1t64 linux-headers-6.12.63+deb13-amd64
-  linux-headers-6.12.63+deb13-common linux-headers-amd64
-  linux-kbuild-6.12.63+deb13 pahole
+  libdw1t64 linux-headers-6.12.73+deb13-amd64
+  linux-headers-6.12.73+deb13-common linux-headers-amd64
+  linux-kbuild-6.12.73+deb13 pahole
 The following packages will be upgraded:
   libelf1t64
-1 upgraded, 6 newly installed, 0 to remove and 2 not upgraded.
-Need to get 16.2 MB of archives.
-After this operation, 78.1 MB of additional disk space will be used.
+1 upgraded, 6 newly installed, 0 to remove and 1 not upgraded.
+Need to get 16.3 MB of archives.
+After this operation, 78.2 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libelf1t64 amd64 0.193-3~bpo13+1 [189 kB]
 Get:2 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libdw1t64 amd64 0.193-3~bpo13+1 [261 kB]
-Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-6.12.63+deb13-common all 6.12.63-1 [11.0 MB]
+Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-6.12.73+deb13-common all 6.12.73-1 [11.0 MB]
 Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 pahole amd64 1.30-1 [259 kB]
-Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-kbuild-6.12.63+deb13 amd64 6.12.63-1 [1,597 kB]
-Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-6.12.63+deb13-amd64 amd64 6.12.63-1 [2,920 kB]
-Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-amd64 amd64 6.12.63-1 [1,412 B]
-Fetched 16.2 MB in 0s (171 MB/s)
+Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-kbuild-6.12.73+deb13 amd64 6.12.73-1 [1,623 kB]
+Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-6.12.73+deb13-amd64 amd64 6.12.73-1 [2,950 kB]
+Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-amd64 amd64 6.12.73-1 [1,412 B]
+Fetched 16.3 MB in 0s (88.9 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
 Reading state information...
-libc6-dev is already the newest version (2.41-12+deb13u1).
+libc6-dev is already the newest version (2.41-12+deb13u2).
 libc6-dev set to manually installed.
 The following additional packages will be installed:
   dpkg-dev g++ g++-14 g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu
@@ -39,7 +39,7 @@ Recommended packages:
 The following NEW packages will be installed:
   build-essential dkms dpkg-dev g++ g++-14 g++-14-x86-64-linux-gnu
   g++-x86-64-linux-gnu libdpkg-perl libstdc++-14-dev make patch
-0 upgraded, 11 newly installed, 0 to remove and 3 not upgraded.
+0 upgraded, 11 newly installed, 0 to remove and 2 not upgraded.
 Need to get 17.2 MB of archives.
 After this operation, 66.7 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libstdc++-14-dev amd64 14.2.0-19 [2,376 kB]
@@ -48,14 +48,14 @@ Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 g++-14 am
 Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 g++-x86-64-linux-gnu amd64 4:14.2.0-1 [1,200 B]
 Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 g++ amd64 4:14.2.0-1 [1,344 B]
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 make amd64 4.4.1-2 [463 kB]
-Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libdpkg-perl all 1.22.21 [650 kB]
+Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libdpkg-perl all 1.22.22 [651 kB]
 Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 patch amd64 2.8-2 [134 kB]
-Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 dpkg-dev all 1.22.21 [1,338 kB]
+Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 dpkg-dev all 1.22.22 [1,337 kB]
 Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 build-essential amd64 12.12 [4,624 B]
 Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 dkms all 3.2.2-1~deb13u1 [60.1 kB]
-Fetched 17.2 MB in 0s (170 MB/s)
+Fetched 17.2 MB in 0s (96.4 MB/s)
 Selecting previously unselected package libstdc++-14-dev:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 143686 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 142911 files and directories currently installed.)
 Preparing to unpack .../00-libstdc++-14-dev_14.2.0-19_amd64.deb ...
 Unpacking libstdc++-14-dev:amd64 (14.2.0-19) ...
 Selecting previously unselected package g++-14-x86-64-linux-gnu.
@@ -74,14 +74,14 @@ Selecting previously unselected package make.
 Preparing to unpack .../05-make_4.4.1-2_amd64.deb ...
 Unpacking make (4.4.1-2) ...
 Selecting previously unselected package libdpkg-perl.
-Preparing to unpack .../06-libdpkg-perl_1.22.21_all.deb ...
-Unpacking libdpkg-perl (1.22.21) ...
+Preparing to unpack .../06-libdpkg-perl_1.22.22_all.deb ...
+Unpacking libdpkg-perl (1.22.22) ...
 Selecting previously unselected package patch.
 Preparing to unpack .../07-patch_2.8-2_amd64.deb ...
 Unpacking patch (2.8-2) ...
 Selecting previously unselected package dpkg-dev.
-Preparing to unpack .../08-dpkg-dev_1.22.21_all.deb ...
-Unpacking dpkg-dev (1.22.21) ...
+Preparing to unpack .../08-dpkg-dev_1.22.22_all.deb ...
+Unpacking dpkg-dev (1.22.22) ...
 Selecting previously unselected package build-essential.
 Preparing to unpack .../09-build-essential_12.12_amd64.deb ...
 Unpacking build-essential (12.12) ...
@@ -90,9 +90,9 @@ Preparing to unpack .../10-dkms_3.2.2-1~deb13u1_all.deb ...
 Unpacking dkms (3.2.2-1~deb13u1) ...
 Setting up make (4.4.1-2) ...
 Setting up patch (2.8-2) ...
-Setting up libdpkg-perl (1.22.21) ...
+Setting up libdpkg-perl (1.22.22) ...
 Setting up libstdc++-14-dev:amd64 (14.2.0-19) ...
-Setting up dpkg-dev (1.22.21) ...
+Setting up dpkg-dev (1.22.22) ...
 Setting up dkms (3.2.2-1~deb13u1) ...
 Setting up g++-14-x86-64-linux-gnu (14.2.0-19) ...
 Setting up g++-x86-64-linux-gnu (4:14.2.0-1) ...
@@ -104,50 +104,51 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libdw1t64 libelf1t64 linux-headers-6.12.63+deb13-common
-  linux-kbuild-6.12.63+deb13 pahole
+  libdw1t64 libelf1t64 linux-headers-6.12.73+deb13-common
+  linux-kbuild-6.12.73+deb13 pahole
 The following NEW packages will be installed:
-  libdw1t64 linux-headers-6.12.63+deb13-amd64
-  linux-headers-6.12.63+deb13-common linux-kbuild-6.12.63+deb13 pahole
+  libdw1t64 linux-headers-6.12.73+deb13-amd64
+  linux-headers-6.12.73+deb13-common linux-kbuild-6.12.73+deb13 pahole
 The following packages will be upgraded:
   libelf1t64
-1 upgraded, 5 newly installed, 0 to remove and 2 not upgraded.
-Need to get 0 B/16.2 MB of archives.
-After this operation, 78.1 MB of additional disk space will be used.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 145212 files and directories currently installed.)
+1 upgraded, 5 newly installed, 0 to remove and 1 not upgraded.
+Need to get 0 B/16.3 MB of archives.
+After this operation, 78.2 MB of additional disk space will be used.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 144437 files and directories currently installed.)
 Preparing to unpack .../0-libelf1t64_0.193-3~bpo13+1_amd64.deb ...
 Unpacking libelf1t64:amd64 (0.193-3~bpo13+1) over (0.192-4) ...
 Selecting previously unselected package libdw1t64:amd64.
 Preparing to unpack .../1-libdw1t64_0.193-3~bpo13+1_amd64.deb ...
 Unpacking libdw1t64:amd64 (0.193-3~bpo13+1) ...
-Selecting previously unselected package linux-headers-6.12.63+deb13-common.
-Preparing to unpack .../2-linux-headers-6.12.63+deb13-common_6.12.63-1_all.deb ...
-Unpacking linux-headers-6.12.63+deb13-common (6.12.63-1) ...
+Selecting previously unselected package linux-headers-6.12.73+deb13-common.
+Preparing to unpack .../2-linux-headers-6.12.73+deb13-common_6.12.73-1_all.deb ...
+Unpacking linux-headers-6.12.73+deb13-common (6.12.73-1) ...
 Selecting previously unselected package pahole.
 Preparing to unpack .../3-pahole_1.30-1_amd64.deb ...
 Unpacking pahole (1.30-1) ...
-Selecting previously unselected package linux-kbuild-6.12.63+deb13.
-Preparing to unpack .../4-linux-kbuild-6.12.63+deb13_6.12.63-1_amd64.deb ...
-Unpacking linux-kbuild-6.12.63+deb13 (6.12.63-1) ...
-Selecting previously unselected package linux-headers-6.12.63+deb13-amd64.
-Preparing to unpack .../5-linux-headers-6.12.63+deb13-amd64_6.12.63-1_amd64.deb ...
-Unpacking linux-headers-6.12.63+deb13-amd64 (6.12.63-1) ...
-Setting up linux-headers-6.12.63+deb13-common (6.12.63-1) ...
+Selecting previously unselected package linux-kbuild-6.12.73+deb13.
+Preparing to unpack .../4-linux-kbuild-6.12.73+deb13_6.12.73-1_amd64.deb ...
+Unpacking linux-kbuild-6.12.73+deb13 (6.12.73-1) ...
+Selecting previously unselected package linux-headers-6.12.73+deb13-amd64.
+Preparing to unpack .../5-linux-headers-6.12.73+deb13-amd64_6.12.73-1_amd64.deb ...
+Unpacking linux-headers-6.12.73+deb13-amd64 (6.12.73-1) ...
+Setting up linux-headers-6.12.73+deb13-common (6.12.73-1) ...
 Setting up libelf1t64:amd64 (0.193-3~bpo13+1) ...
 Setting up libdw1t64:amd64 (0.193-3~bpo13+1) ...
 Setting up pahole (1.30-1) ...
-Setting up linux-kbuild-6.12.63+deb13 (6.12.63-1) ...
-Setting up linux-headers-6.12.63+deb13-amd64 (6.12.63-1) ...
-Processing triggers for libc-bin (2.41-12+deb13u1) ...
+Setting up linux-kbuild-6.12.73+deb13 (6.12.73-1) ...
+Setting up linux-headers-6.12.73+deb13-amd64 (6.12.73-1) ...
+Processing triggers for libc-bin (2.41-12+deb13u2) ...
 chmod: changing permissions of './VBoxLinuxAdditions.run': Read-only file system
 Please add execution rights on ./VBoxLinuxAdditions.run
 
-(xfce4-terminal:128241): xfce4-terminal-WARNING **: 14:47:53.672: Failed to initialize Xfconf: Could not connect: No such file or directory
+(xfce4-terminal:123317): xfce4-terminal-WARNING **: 16:17:52.521: Failed to initialize Xfconf: Could not connect: No such file or directory
 
-(xfce4-terminal:128241): xfce4-terminal-WARNING **: 14:47:53.711: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+(xfce4-terminal:123317): xfce4-terminal-WARNING **: 16:17:52.552: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+modinfo: ERROR: Module vboxguest not found.
 CLDS: * WARNING: Use this script only if backport repository doesn't work.
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
-CLDS: * VirtualBox guest additions installed: version: 7.2.4 r170995.
-CLDS: * Delete VBoxGuestAdditions.iso[51908K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 9367708K. Space Used = 168860K. Runtime = 00:00:08:41.
+CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
+CLDS: * Delete VBoxGuestAdditions.iso[51900K]. Space used could be negative due to this deletion.
+CLDS: * Disk size = 8660644K. Space Used = 159860K. Runtime = 00:00:12:04.

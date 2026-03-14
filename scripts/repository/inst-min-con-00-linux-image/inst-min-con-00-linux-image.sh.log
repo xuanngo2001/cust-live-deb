@@ -8,9 +8,9 @@ Desired=Unknown/Install/Remove/Purge/Hold
 ii  adduser                      3.152                       all          add and remove users and groups
 ii  apt                          3.0.3                       amd64        commandline package manager
 ii  apt-utils                    3.0.3                       amd64        package management related utility programs
-ii  base-files                   13.8+deb13u3                amd64        Debian base system miscellaneous files
+ii  base-files                   13.8+deb13u4                amd64        Debian base system miscellaneous files
 ii  base-passwd                  3.6.7                       amd64        Debian base system master password and group files
-ii  bash                         5.2.37-2+b7                 amd64        GNU Bourne Again SHell
+ii  bash                         5.2.37-2+b8                 amd64        GNU Bourne Again SHell
 ii  bsdutils                     1:2.41-5                    amd64        basic utilities from 4.4BSD-Lite
 ii  coreutils                    9.7-3                       amd64        GNU core utilities
 ii  cpio                         2.15+dfsg-2                 amd64        GNU cpio -- a program to manage archives of files
@@ -24,15 +24,15 @@ ii  debianutils                  5.23.2                      amd64        Miscel
 ii  dhcpcd-base                  1:10.1.0-11+deb13u2         amd64        DHCPv4 and DHCPv6 dual-stack client (binaries and exit hooks)
 ii  diffutils                    1:3.10-4                    amd64        File comparison utilities
 ii  dmidecode                    3.6-2                       amd64        SMBIOS/DMI table decoder
-ii  dpkg                         1.22.21                     amd64        Debian package management system
-ii  e2fsprogs                    1.47.2-3+b7                 amd64        ext2/ext3/ext4 file system utilities
+ii  dpkg                         1.22.22                     amd64        Debian package management system
+ii  e2fsprogs                    1.47.2-3+b10                amd64        ext2/ext3/ext4 file system utilities
 ii  fdisk                        2.41-5                      amd64        collection of partitioning utilities
 ii  findutils                    4.10.0-3                    amd64        utilities for finding files--find, xargs
 ii  gcc-14-base:amd64            14.2.0-19                   amd64        GCC, the GNU Compiler Collection (base package)
 ii  grep                         3.11-4                      amd64        GNU grep, egrep and fgrep
 ii  gzip                         1.13-1                      amd64        GNU compression utilities
 ii  hostname                     3.25                        amd64        utility to set/show the host name or domain name
-ii  ifupdown                     0.8.44                      amd64        high level tools to configure network interfaces
+ii  ifupdown                     0.8.44+deb13u1              amd64        high level tools to configure network interfaces
 ii  init                         1.69~deb13u1                amd64        metapackage ensuring an init system is installed
 ii  init-system-helpers          1.69~deb13u1                all          helper tools for all init systems
 ii  iproute2                     6.15.0-1                    amd64        networking and traffic control tools
@@ -49,18 +49,18 @@ ii  libblkid1:amd64              2.41-5                      amd64        block 
 ii  libbpf1:amd64                1:1.5.0-3                   amd64        eBPF helper library (shared library)
 ii  libbsd0:amd64                0.12.2-2                    amd64        utility functions from BSD systems - shared library
 ii  libbz2-1.0:amd64             1.0.8-6                     amd64        high-quality block-sorting file compressor library - runtime
-ii  libc-bin                     2.41-12+deb13u1             amd64        GNU C Library: Binaries
-ii  libc6:amd64                  2.41-12+deb13u1             amd64        GNU C Library: Shared libraries
+ii  libc-bin                     2.41-12+deb13u2             amd64        GNU C Library: Binaries
+ii  libc6:amd64                  2.41-12+deb13u2             amd64        GNU C Library: Shared libraries
 ii  libcap-ng0:amd64             0.8.5-4+b1                  amd64        alternate POSIX capabilities library
-ii  libcap2:amd64                1:2.75-10+b3                amd64        POSIX 1003.1e capabilities (library)
-ii  libcap2-bin                  1:2.75-10+b3                amd64        POSIX 1003.1e capabilities (utilities)
-ii  libcom-err2:amd64            1.47.2-3+b7                 amd64        common error description library
+ii  libcap2:amd64                1:2.75-10+b8                amd64        POSIX 1003.1e capabilities (library)
+ii  libcap2-bin                  1:2.75-10+b8                amd64        POSIX 1003.1e capabilities (utilities)
+ii  libcom-err2:amd64            1.47.2-3+b10                amd64        common error description library
 ii  libcrypt1:amd64              1:4.4.38-1                  amd64        libcrypt shared library
 ii  libdb5.3t64:amd64            5.3.28+dfsg2-9              amd64        Berkeley v5.3 Database Libraries [runtime]
 ii  libdebconfclient0:amd64      0.280                       amd64        Debian Configuration Management System (C-implementation library)
 ii  libedit2:amd64               3.1-20250104-1              amd64        BSD editline and history libraries
 ii  libelf1t64:amd64             0.192-4                     amd64        library to read and write ELF files
-ii  libext2fs2t64:amd64          1.47.2-3+b7                 amd64        ext2/ext3/ext4 file system libraries
+ii  libext2fs2t64:amd64          1.47.2-3+b10                amd64        ext2/ext3/ext4 file system libraries
 ii  libfdisk1:amd64              2.41-5                      amd64        fdisk partitioning library
 ii  libgcc-s1:amd64              14.2.0-19                   amd64        GCC support library
 ii  libgmp10:amd64               2:6.3.0+dfsg-3              amd64        Multiprecision arithmetic library
@@ -100,9 +100,9 @@ ii  libsemanage2:amd64           3.8.1-1                     amd64        SELinu
 ii  libsepol2:amd64              3.8.1-1                     amd64        SELinux library for manipulating binary security policies
 ii  libslang2:amd64              2.3.3-5+b2                  amd64        S-Lang programming library - runtime version
 ii  libsmartcols1:amd64          2.41-5                      amd64        smart column output alignment library
-ii  libsqlite3-0:amd64           3.46.1-7                    amd64        SQLite 3 shared library
-ii  libss2:amd64                 1.47.2-3+b7                 amd64        command-line interface parsing library
-ii  libssl3t64:amd64             3.5.4-1~deb13u1             amd64        Secure Sockets Layer toolkit - shared libraries
+ii  libsqlite3-0:amd64           3.46.1-7+deb13u1            amd64        SQLite 3 shared library
+ii  libss2:amd64                 1.47.2-3+b10                amd64        command-line interface parsing library
+ii  libssl3t64:amd64             3.5.5-1~deb13u1             amd64        Secure Sockets Layer toolkit - shared libraries
 ii  libstdc++6:amd64             14.2.0-19                   amd64        GNU Standard C++ Library v3
 ii  libsystemd-shared:amd64      257.9-1~deb13u1             amd64        systemd shared private library
 ii  libsystemd0:amd64            257.9-1~deb13u1             amd64        systemd utility library
@@ -118,11 +118,11 @@ ii  libuuid1:amd64               2.41-5                      amd64        Univer
 ii  libxtables12:amd64           1.8.11-2                    amd64        netfilter xtables library
 ii  libxxhash0:amd64             0.8.3-2                     amd64        shared library for xxhash
 ii  libzstd1:amd64               1.5.7+dfsg-1                amd64        fast lossless compression algorithm
-ii  linux-sysctl-defaults        4.12                        all          default sysctl configuration for Linux
+ii  linux-sysctl-defaults        4.12.1                      all          default sysctl configuration for Linux
 ii  login                        1:4.16.0-2+really2.41-5     amd64        system login tools
 ii  login.defs                   1:4.17.4-2                  all          system user management configuration
 ii  logrotate                    3.22.0-1                    amd64        Log rotation utility
-ii  logsave                      1.47.2-3+b7                 amd64        save the output of a command in a log file
+ii  logsave                      1.47.2-3+b10                amd64        save the output of a command in a log file
 ii  mawk                         1.3.4.20250131-1            amd64        Pattern scanning and text processing language
 ii  mount                        2.41-5                      amd64        tools for mounting and manipulating filesystems
 ii  nano                         8.4-1                       amd64        small, friendly text editor inspired by Pico
@@ -130,7 +130,7 @@ ii  ncurses-base                 6.5+20250216-2              all          basic 
 ii  ncurses-bin                  6.5+20250216-2              amd64        terminal-related programs and man pages
 ii  netbase                      6.5                         all          Basic TCP/IP networking system
 ii  nftables                     1.1.3-1                     amd64        Program to control packet filtering rules by Netfilter project
-ii  openssl-provider-legacy      3.5.4-1~deb13u1             amd64        Secure Sockets Layer toolkit - cryptographic utility
+ii  openssl-provider-legacy      3.5.5-1~deb13u1             amd64        Secure Sockets Layer toolkit - cryptographic utility
 ii  passwd                       1:4.17.4-2                  amd64        change and administer password and group data
 ii  perl-base                    5.40.1-6                    amd64        minimal Perl system
 ii  procps                       2:4.0.4-9                   amd64        /proc file system utilities
@@ -142,7 +142,7 @@ ii  systemd                      257.9-1~deb13u1             amd64        system
 ii  systemd-sysv                 257.9-1~deb13u1             amd64        system and service manager - SysV compatibility symlinks
 ii  sysvinit-utils               3.14-4                      amd64        System-V-like utilities
 ii  tar                          1.35+dfsg-3.1               amd64        GNU version of the tar archiving utility
-ii  tzdata                       2025b-4+deb13u1             all          time zone and daylight-saving time data
+ii  tzdata                       2026a-0+deb13u1             all          time zone and daylight-saving time data
 ii  udev                         257.9-1~deb13u1             amd64        /dev/ and hotplug management daemon
 ii  util-linux                   2.41-5                      amd64        miscellaneous system utilities
 ii  vim-common                   2:9.1.1230-2                all          Vi IMproved - Common files
@@ -214,7 +214,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 939 kB in 0s (39.2 MB/s)
+Fetched 939 kB in 0s (1928 kB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7797 files and directories currently installed.)
 Preparing to unpack .../0-libdbus-1-3_1.16.2-2_amd64.deb ...
@@ -255,14 +255,14 @@ Setting up dbus-daemon (1.16.2-2) ...
 Setting up dialog (1.3-20250116-1) ...
 Setting up dbus (1.16.2-2) ...
 Running in chroot, ignoring request.
-Processing triggers for libc-bin (2.41-12+deb13u1) ...
+Processing triggers for libc-bin (2.41-12+deb13u2) ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
   busybox dracut-install initramfs-tools initramfs-tools-bin
   initramfs-tools-core klibc-utils libklibc linux-base
-  linux-image-6.12.63+deb13-amd64 live-boot-initramfs-tools rsync
+  linux-image-6.12.73+deb13-amd64 live-boot-initramfs-tools rsync
 Suggested packages:
   bash-completion firmware-linux-free linux-doc-6.12 debian-kernel-handbook
   grub-pc | grub-efi-amd64 | extlinux cryptsetup curlftpfs httpfs2 wget
@@ -272,22 +272,22 @@ Recommended packages:
 The following NEW packages will be installed:
   busybox dracut-install initramfs-tools initramfs-tools-bin
   initramfs-tools-core klibc-utils libklibc linux-base
-  linux-image-6.12.63+deb13-amd64 linux-image-amd64 live-boot
+  linux-image-6.12.73+deb13-amd64 linux-image-amd64 live-boot
   live-boot-initramfs-tools rsync
 0 upgraded, 13 newly installed, 0 to remove and 2 not upgraded.
 Need to get 109 MB of archives.
 After this operation, 114 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-base all 4.12 [25.5 kB]
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-base all 4.12.1 [25.5 kB]
 Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 dracut-install amd64 106-6 [37.8 kB]
 Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 initramfs-tools-bin amd64 0.148.3 [17.3 kB]
 Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libklibc amd64 2.0.14-1 [44.8 kB]
 Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 klibc-utils amd64 2.0.14-1 [95.1 kB]
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 initramfs-tools-core all 0.148.3 [50.5 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 initramfs-tools all 0.148.3 [17.3 kB]
-Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-image-6.12.63+deb13-amd64 amd64 6.12.63-1 [108 MB]
+Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-image-6.12.73+deb13-amd64 amd64 6.12.73-1 [108 MB]
 Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 rsync amd64 3.4.1+ds1-5+deb13u1 [429 kB]
-Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 busybox amd64 1:1.37.0-6+b5 [485 kB]
-Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-image-amd64 amd64 6.12.63-1 [1476 B]
+Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 busybox amd64 1:1.37.0-6+b7 [485 kB]
+Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-image-amd64 amd64 6.12.73-1 [1472 B]
 Get:12 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 live-boot-initramfs-tools all 1:20250815~deb13u1 [6400 B]
 Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 live-boot all 1:20250815~deb13u1 [31.2 kB]
 perl: warning: Setting locale failed.
@@ -313,11 +313,11 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 109 MB in 1s (151 MB/s)
+Fetched 109 MB in 1s (115 MB/s)
 Selecting previously unselected package linux-base.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8043 files and directories currently installed.)
-Preparing to unpack .../0-linux-base_4.12_all.deb ...
-Unpacking linux-base (4.12) ...
+Preparing to unpack .../0-linux-base_4.12.1_all.deb ...
+Unpacking linux-base (4.12.1) ...
 Selecting previously unselected package dracut-install.
 Preparing to unpack .../1-dracut-install_106-6_amd64.deb ...
 Unpacking dracut-install (106-6) ...
@@ -336,30 +336,30 @@ Unpacking initramfs-tools-core (0.148.3) ...
 Selecting previously unselected package initramfs-tools.
 Preparing to unpack .../6-initramfs-tools_0.148.3_all.deb ...
 Unpacking initramfs-tools (0.148.3) ...
-Setting up linux-base (4.12) ...
+Setting up linux-base (4.12.1) ...
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Selecting previously unselected package linux-image-6.12.63+deb13-amd64.
+Selecting previously unselected package linux-image-6.12.73+deb13-amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8185 files and directories currently installed.)
-Preparing to unpack .../0-linux-image-6.12.63+deb13-amd64_6.12.63-1_amd64.deb ...
-Unpacking linux-image-6.12.63+deb13-amd64 (6.12.63-1) ...
+Preparing to unpack .../0-linux-image-6.12.73+deb13-amd64_6.12.73-1_amd64.deb ...
+Unpacking linux-image-6.12.73+deb13-amd64 (6.12.73-1) ...
 Selecting previously unselected package rsync.
 Preparing to unpack .../1-rsync_3.4.1+ds1-5+deb13u1_amd64.deb ...
 Unpacking rsync (3.4.1+ds1-5+deb13u1) ...
 Selecting previously unselected package busybox.
-Preparing to unpack .../2-busybox_1%3a1.37.0-6+b5_amd64.deb ...
-Unpacking busybox (1:1.37.0-6+b5) ...
+Preparing to unpack .../2-busybox_1%3a1.37.0-6+b7_amd64.deb ...
+Unpacking busybox (1:1.37.0-6+b7) ...
 Selecting previously unselected package linux-image-amd64.
-Preparing to unpack .../3-linux-image-amd64_6.12.63-1_amd64.deb ...
-Unpacking linux-image-amd64 (6.12.63-1) ...
+Preparing to unpack .../3-linux-image-amd64_6.12.73-1_amd64.deb ...
+Unpacking linux-image-amd64 (6.12.73-1) ...
 Selecting previously unselected package live-boot-initramfs-tools.
 Preparing to unpack .../4-live-boot-initramfs-tools_1%3a20250815~deb13u1_all.deb ...
 Unpacking live-boot-initramfs-tools (1:20250815~deb13u1) ...
 Selecting previously unselected package live-boot.
 Preparing to unpack .../5-live-boot_1%3a20250815~deb13u1_all.deb ...
 Unpacking live-boot (1:20250815~deb13u1) ...
-Setting up busybox (1:1.37.0-6+b5) ...
+Setting up busybox (1:1.37.0-6+b7) ...
 Setting up libklibc:amd64 (2.0.14-1) ...
 Setting up dracut-install (106-6) ...
 Setting up klibc-utils (2.0.14-1) ...
@@ -370,134 +370,134 @@ Setting up initramfs-tools-bin (0.148.3) ...
 Setting up initramfs-tools-core (0.148.3) ...
 Setting up initramfs-tools (0.148.3) ...
 update-initramfs: deferring update (trigger activated)
-Setting up linux-image-6.12.63+deb13-amd64 (6.12.63-1) ...
-I: /vmlinuz.old is now a symlink to boot/vmlinuz-6.12.63+deb13-amd64
-I: /initrd.img.old is now a symlink to boot/initrd.img-6.12.63+deb13-amd64
-I: /vmlinuz is now a symlink to boot/vmlinuz-6.12.63+deb13-amd64
-I: /initrd.img is now a symlink to boot/initrd.img-6.12.63+deb13-amd64
+Setting up linux-image-6.12.73+deb13-amd64 (6.12.73-1) ...
+I: /vmlinuz.old is now a symlink to boot/vmlinuz-6.12.73+deb13-amd64
+I: /initrd.img.old is now a symlink to boot/initrd.img-6.12.73+deb13-amd64
+I: /vmlinuz is now a symlink to boot/vmlinuz-6.12.73+deb13-amd64
+I: /initrd.img is now a symlink to boot/initrd.img-6.12.73+deb13-amd64
 /etc/kernel/postinst.d/initramfs-tools:
-update-initramfs: Generating /boot/initrd.img-6.12.63+deb13-amd64
+update-initramfs: Generating /boot/initrd.img-6.12.73+deb13-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
-Setting up linux-image-amd64 (6.12.63-1) ...
 Setting up live-boot-initramfs-tools (1:20250815~deb13u1) ...
 update-initramfs: deferring update (trigger activated)
+Setting up linux-image-amd64 (6.12.73-1) ...
 Setting up live-boot (1:20250815~deb13u1) ...
 Processing triggers for initramfs-tools (0.148.3) ...
-update-initramfs: Generating /boot/initrd.img-6.12.63+deb13-amd64
+update-initramfs: Generating /boot/initrd.img-6.12.73+deb13-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 './cld' -> '/usr/local/cld'
 './cld/doc' -> '/usr/local/cld/doc'
-'./cld/doc/date-help.txt' -> '/usr/local/cld/doc/date-help.txt'
-'./cld/doc/awk-help.txt' -> '/usr/local/cld/doc/awk-help.txt'
-'./cld/doc/bash-case-help.txt' -> '/usr/local/cld/doc/bash-case-help.txt'
-'./cld/doc/bash-error-help.txt' -> '/usr/local/cld/doc/bash-error-help.txt'
-'./cld/doc/bash-help.txt' -> '/usr/local/cld/doc/bash-help.txt'
-'./cld/doc/bash-if-help.txt' -> '/usr/local/cld/doc/bash-if-help.txt'
-'./cld/doc/bash-loop-help.txt' -> '/usr/local/cld/doc/bash-loop-help.txt'
-'./cld/doc/bash-msg-help.txt' -> '/usr/local/cld/doc/bash-msg-help.txt'
-'./cld/doc/blkid-help.txt' -> '/usr/local/cld/doc/blkid-help.txt'
-'./cld/doc/cat-help.txt' -> '/usr/local/cld/doc/cat-help.txt'
-'./cld/doc/column-help.txt' -> '/usr/local/cld/doc/column-help.txt'
-'./cld/doc/comm-help.txt' -> '/usr/local/cld/doc/comm-help.txt'
-'./cld/doc/cp-help.txt' -> '/usr/local/cld/doc/cp-help.txt'
 './cld/doc/crontab-help.txt' -> '/usr/local/cld/doc/crontab-help.txt'
-'./cld/doc/cut-help.txt' -> '/usr/local/cld/doc/cut-help.txt'
-'./cld/doc/dd-help.txt' -> '/usr/local/cld/doc/dd-help.txt'
-'./cld/doc/device-help.txt' -> '/usr/local/cld/doc/device-help.txt'
-'./cld/doc/df-help.txt' -> '/usr/local/cld/doc/df-help.txt'
-'./cld/doc/dpkg-query-help.txt' -> '/usr/local/cld/doc/dpkg-query-help.txt'
-'./cld/doc/du-help.txt' -> '/usr/local/cld/doc/du-help.txt'
-'./cld/doc/echo-help.txt' -> '/usr/local/cld/doc/echo-help.txt'
-'./cld/doc/file-help.txt' -> '/usr/local/cld/doc/file-help.txt'
-'./cld/doc/gnupg-help.txt' -> '/usr/local/cld/doc/gnupg-help.txt'
-'./cld/doc/gpg-help.txt' -> '/usr/local/cld/doc/gpg-help.txt'
-'./cld/doc/grep-help.txt' -> '/usr/local/cld/doc/grep-help.txt'
-'./cld/doc/head-help.txt' -> '/usr/local/cld/doc/head-help.txt'
+'./cld/doc/readarray-help.txt' -> '/usr/local/cld/doc/readarray-help.txt'
+'./cld/doc/touch-help.txt' -> '/usr/local/cld/doc/touch-help.txt'
+'./cld/doc/ps-help.txt' -> '/usr/local/cld/doc/ps-help.txt'
 './cld/doc/java-help.txt' -> '/usr/local/cld/doc/java-help.txt'
-'./cld/doc/ln-help.txt' -> '/usr/local/cld/doc/ln-help.txt'
+'./cld/doc/network-help.txt' -> '/usr/local/cld/doc/network-help.txt'
+'./cld/doc/swap-help.txt' -> '/usr/local/cld/doc/swap-help.txt'
+'./cld/doc/bash-error-help.txt' -> '/usr/local/cld/doc/bash-error-help.txt'
+'./cld/doc/column-help.txt' -> '/usr/local/cld/doc/column-help.txt'
+'./cld/doc/bash-if-help.txt' -> '/usr/local/cld/doc/bash-if-help.txt'
+'./cld/doc/timeout-help.txt' -> '/usr/local/cld/doc/timeout-help.txt'
+'./cld/doc/cut-help.txt' -> '/usr/local/cld/doc/cut-help.txt'
+'./cld/doc/bash-case-help.txt' -> '/usr/local/cld/doc/bash-case-help.txt'
+'./cld/doc/printf-help.txt' -> '/usr/local/cld/doc/printf-help.txt'
+'./cld/doc/df-help.txt' -> '/usr/local/cld/doc/df-help.txt'
+'./cld/doc/device-help.txt' -> '/usr/local/cld/doc/device-help.txt'
+'./cld/doc/du-help.txt' -> '/usr/local/cld/doc/du-help.txt'
 './cld/doc/locale-help.txt' -> '/usr/local/cld/doc/locale-help.txt'
 './cld/doc/ls-help.txt' -> '/usr/local/cld/doc/ls-help.txt'
-'./cld/doc/lspci-help.txt' -> '/usr/local/cld/doc/lspci-help.txt'
-'./cld/doc/mount-help.txt' -> '/usr/local/cld/doc/mount-help.txt'
-'./cld/doc/network-help.txt' -> '/usr/local/cld/doc/network-help.txt'
-'./cld/doc/numfmt-help.txt' -> '/usr/local/cld/doc/numfmt-help.txt'
-'./cld/doc/partition-help.txt' -> '/usr/local/cld/doc/partition-help.txt'
-'./cld/doc/paste-help.txt' -> '/usr/local/cld/doc/paste-help.txt'
-'./cld/doc/perl-help.txt' -> '/usr/local/cld/doc/perl-help.txt'
-'./cld/doc/ping-help.txt' -> '/usr/local/cld/doc/ping-help.txt'
-'./cld/doc/printf-help.txt' -> '/usr/local/cld/doc/printf-help.txt'
-'./cld/doc/ps-help.txt' -> '/usr/local/cld/doc/ps-help.txt'
-'./cld/doc/read-help.txt' -> '/usr/local/cld/doc/read-help.txt'
-'./cld/doc/rsync-help.txt' -> '/usr/local/cld/doc/rsync-help.txt'
-'./cld/doc/sed-help.txt' -> '/usr/local/cld/doc/sed-help.txt'
-'./cld/doc/sort-help.txt' -> '/usr/local/cld/doc/sort-help.txt'
-'./cld/doc/swap-help.txt' -> '/usr/local/cld/doc/swap-help.txt'
+'./cld/doc/dpkg-query-help.txt' -> '/usr/local/cld/doc/dpkg-query-help.txt'
 './cld/doc/tail-help.txt' -> '/usr/local/cld/doc/tail-help.txt'
 './cld/doc/tar-help.txt' -> '/usr/local/cld/doc/tar-help.txt'
 './cld/doc/tee-help.txt' -> '/usr/local/cld/doc/tee-help.txt'
-'./cld/doc/timeout-help.txt' -> '/usr/local/cld/doc/timeout-help.txt'
-'./cld/doc/touch-help.txt' -> '/usr/local/cld/doc/touch-help.txt'
-'./cld/doc/tr-help.txt' -> '/usr/local/cld/doc/tr-help.txt'
+'./cld/doc/ln-help.txt' -> '/usr/local/cld/doc/ln-help.txt'
+'./cld/doc/date-help.txt' -> '/usr/local/cld/doc/date-help.txt'
+'./cld/doc/dd-help.txt' -> '/usr/local/cld/doc/dd-help.txt'
+'./cld/doc/lspci-help.txt' -> '/usr/local/cld/doc/lspci-help.txt'
+'./cld/doc/cp-help.txt' -> '/usr/local/cld/doc/cp-help.txt'
+'./cld/doc/bash-msg-help.txt' -> '/usr/local/cld/doc/bash-msg-help.txt'
+'./cld/doc/gnupg-help.txt' -> '/usr/local/cld/doc/gnupg-help.txt'
+'./cld/doc/ping-help.txt' -> '/usr/local/cld/doc/ping-help.txt'
+'./cld/doc/head-help.txt' -> '/usr/local/cld/doc/head-help.txt'
+'./cld/doc/partition-help.txt' -> '/usr/local/cld/doc/partition-help.txt'
+'./cld/doc/paste-help.txt' -> '/usr/local/cld/doc/paste-help.txt'
+'./cld/doc/gpg-help.txt' -> '/usr/local/cld/doc/gpg-help.txt'
+'./cld/doc/awk-help.txt' -> '/usr/local/cld/doc/awk-help.txt'
+'./cld/doc/comm-help.txt' -> '/usr/local/cld/doc/comm-help.txt'
+'./cld/doc/mount-help.txt' -> '/usr/local/cld/doc/mount-help.txt'
+'./cld/doc/perl-help.txt' -> '/usr/local/cld/doc/perl-help.txt'
+'./cld/doc/echo-help.txt' -> '/usr/local/cld/doc/echo-help.txt'
+'./cld/doc/sort-help.txt' -> '/usr/local/cld/doc/sort-help.txt'
 './cld/doc/xargs-help.txt' -> '/usr/local/cld/doc/xargs-help.txt'
-'./cld/doc/readarray-help.txt' -> '/usr/local/cld/doc/readarray-help.txt'
-'./cld/doc/find-help.txt' -> '/usr/local/cld/doc/find-help.txt'
-'./cld/doc/bash-main-help.txt' -> '/usr/local/cld/doc/bash-main-help.txt'
-'./cld/doc/split-help.txt' -> '/usr/local/cld/doc/split-help.txt'
-'./cld/doc/fonts-help.txt' -> '/usr/local/cld/doc/fonts-help.txt'
-'./cld/doc/time-help.txt' -> '/usr/local/cld/doc/time-help.txt'
-'./cld/doc/lsb_release-help.txt' -> '/usr/local/cld/doc/lsb_release-help.txt'
-'./cld/doc/dpkg-help.txt' -> '/usr/local/cld/doc/dpkg-help.txt'
+'./cld/doc/file-help.txt' -> '/usr/local/cld/doc/file-help.txt'
+'./cld/doc/blkid-help.txt' -> '/usr/local/cld/doc/blkid-help.txt'
+'./cld/doc/grep-help.txt' -> '/usr/local/cld/doc/grep-help.txt'
+'./cld/doc/tr-help.txt' -> '/usr/local/cld/doc/tr-help.txt'
+'./cld/doc/numfmt-help.txt' -> '/usr/local/cld/doc/numfmt-help.txt'
 './cld/doc/cld-help.txt' -> '/usr/local/cld/doc/cld-help.txt'
+'./cld/doc/rsync-help.txt' -> '/usr/local/cld/doc/rsync-help.txt'
+'./cld/doc/lsb_release-help.txt' -> '/usr/local/cld/doc/lsb_release-help.txt'
+'./cld/doc/apt-get-help.txt' -> '/usr/local/cld/doc/apt-get-help.txt'
 './cld/doc/wget-help.txt' -> '/usr/local/cld/doc/wget-help.txt'
 './cld/doc/pr-help.txt' -> '/usr/local/cld/doc/pr-help.txt'
-'./cld/doc/apt-get-help.txt' -> '/usr/local/cld/doc/apt-get-help.txt'
+'./cld/doc/split-help.txt' -> '/usr/local/cld/doc/split-help.txt'
+'./cld/doc/bash-loop-help.txt' -> '/usr/local/cld/doc/bash-loop-help.txt'
+'./cld/doc/sed-help.txt' -> '/usr/local/cld/doc/sed-help.txt'
+'./cld/doc/dpkg-help.txt' -> '/usr/local/cld/doc/dpkg-help.txt'
 './cld/doc/systemd-help.txt' -> '/usr/local/cld/doc/systemd-help.txt'
+'./cld/doc/read-help.txt' -> '/usr/local/cld/doc/read-help.txt'
+'./cld/doc/cat-help.txt' -> '/usr/local/cld/doc/cat-help.txt'
+'./cld/doc/bash-help.txt' -> '/usr/local/cld/doc/bash-help.txt'
+'./cld/doc/find-help.txt' -> '/usr/local/cld/doc/find-help.txt'
 './cld/doc/shuf-help.txt' -> '/usr/local/cld/doc/shuf-help.txt'
-'./cld/doc/export-help.txt' -> '/usr/local/cld/doc/export-help.txt'
-'./cld/doc/sleep-help.txt' -> '/usr/local/cld/doc/sleep-help.txt'
+'./cld/doc/bash-main-help.txt' -> '/usr/local/cld/doc/bash-main-help.txt'
 './cld/doc/sudo-help.txt' -> '/usr/local/cld/doc/sudo-help.txt'
+'./cld/doc/sleep-help.txt' -> '/usr/local/cld/doc/sleep-help.txt'
+'./cld/doc/export-help.txt' -> '/usr/local/cld/doc/export-help.txt'
+'./cld/doc/time-help.txt' -> '/usr/local/cld/doc/time-help.txt'
+'./cld/doc/fonts-help.txt' -> '/usr/local/cld/doc/fonts-help.txt'
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
 ||/ Name                                     Version      Architecture Description
 +++-========================================-============-============-===================================
-ii  linux-image-6.12.63+deb13-amd64          6.12.63-1    amd64        Linux 6.12 for 64-bit PCs (signed)
-un  linux-image-6.12.63+deb13-amd64-unsigned <none>       <none>       (no description available)
-ii  linux-image-amd64                        6.12.63-1    amd64        Linux for 64-bit PCs (meta-package)
+ii  linux-image-6.12.73+deb13-amd64          6.12.73-1    amd64        Linux 6.12 for 64-bit PCs (signed)
+un  linux-image-6.12.73+deb13-amd64-unsigned <none>       <none>       (no description available)
+ii  linux-image-amd64                        6.12.73-1    amd64        Linux for 64-bit PCs (meta-package)
 un  linux-image-generic                      <none>       <none>       (no description available)
-total 52812
--rw-r--r-- 1 root root       83 Dec 30 19:37 System.map-6.12.63+deb13-amd64
--rw-r--r-- 1 root root   283288 Dec 30 19:37 config-6.12.63+deb13-amd64
--rw-r--r-- 1 root root 41680793 Mar 13 14:39 initrd.img-6.12.63+deb13-amd64
--rw-r--r-- 1 root root 12105664 Dec 30 19:37 vmlinuz-6.12.63+deb13-amd64
-e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.12.63+deb13-amd64
-888c42a1727dd026ffa97910c87dd56e  /boot/config-6.12.63+deb13-amd64
-48dc29f5c1e45b49895f358b64fdaf10  /boot/initrd.img-6.12.63+deb13-amd64
-245cb6273af1ba858a6e3667faee8e05  /boot/vmlinuz-6.12.63+deb13-amd64
+total 52820
+-rw-r--r-- 1 root root       83 Feb 17 05:47 System.map-6.12.73+deb13-amd64
+-rw-r--r-- 1 root root   283277 Feb 17 05:47 config-6.12.73+deb13-amd64
+-rw-r--r-- 1 root root 41681428 Mar 14 16:03 initrd.img-6.12.73+deb13-amd64
+-rw-r--r-- 1 root root 12109760 Feb 17 05:47 vmlinuz-6.12.73+deb13-amd64
+e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.12.73+deb13-amd64
+2fb7d1dff568230d0e99617d09ec79a5  /boot/config-6.12.73+deb13-amd64
+60a030c3ae332f7045abfeefeb438468  /boot/initrd.img-6.12.73+deb13-amd64
+422d12c9cae29654502dbbd411c7cc5c  /boot/vmlinuz-6.12.73+deb13-amd64
 total 48
-lrwxrwxrwx   1 root root    7 Jan  2 12:35 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Mar 13 14:39 boot
-drwxr-xr-x  17 root root 3920 Mar 13 14:25 dev
-drwxr-xr-x  51 root root 4096 Mar 13 14:39 etc
-drwxr-xr-x   2 root root 4096 Jan  2 12:35 home
-lrwxrwxrwx   1 root root   35 Mar 13 14:39 initrd.img -> boot/initrd.img-6.12.63+deb13-amd64
-lrwxrwxrwx   1 root root    7 Jan  2 12:35 lib -> usr/lib
-lrwxrwxrwx   1 root root    9 Jan  2 12:35 lib64 -> usr/lib64
-drwxr-xr-x   2 root root 4096 Mar 13 14:38 media
-drwxr-xr-x   2 root root 4096 Mar 13 14:38 mnt
-drwxr-xr-x   2 root root 4096 Mar 13 14:38 opt
-dr-xr-xr-x 422 root root    0 Mar 13 14:38 proc
-drwx------   4 root root 4096 Mar 13 14:38 root
-drwxr-xr-x   8 root root 4096 Mar 13 14:38 run
-lrwxrwxrwx   1 root root    8 Jan  2 12:35 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Mar 13 14:38 srv
-dr-xr-xr-x  13 root root    0 Mar 13 14:24 sys
-drwxrwxrwt   2 root root 4096 Mar 13 14:39 tmp
-drwxr-xr-x  12 root root 4096 Mar 13 14:38 usr
-drwxr-xr-x  11 root root 4096 Mar 13 14:38 var
-lrwxrwxrwx   1 root root   32 Mar 13 14:39 vmlinuz -> boot/vmlinuz-6.12.63+deb13-amd64
+lrwxrwxrwx   1 root root    7 Mar  2 21:50 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Mar 14 16:03 boot
+drwxr-xr-x  18 root root 3900 Mar 14 15:33 dev
+drwxr-xr-x  51 root root 4096 Mar 14 16:03 etc
+drwxr-xr-x   2 root root 4096 Mar  2 21:50 home
+lrwxrwxrwx   1 root root   35 Mar 14 16:02 initrd.img -> boot/initrd.img-6.12.73+deb13-amd64
+lrwxrwxrwx   1 root root    7 Mar  2 21:50 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Mar  2 21:50 lib64 -> usr/lib64
+drwxr-xr-x   2 root root 4096 Mar 14 16:01 media
+drwxr-xr-x   2 root root 4096 Mar 14 16:01 mnt
+drwxr-xr-x   2 root root 4096 Mar 14 16:01 opt
+dr-xr-xr-x 432 root root    0 Mar 14 16:02 proc
+drwx------   4 root root 4096 Mar 14 16:02 root
+drwxr-xr-x   8 root root 4096 Mar 14 16:02 run
+lrwxrwxrwx   1 root root    8 Mar  2 21:50 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Mar 14 16:01 srv
+dr-xr-xr-x  13 root root    0 Mar 14 15:32 sys
+drwxrwxrwt   2 root root 4096 Mar 14 16:02 tmp
+drwxr-xr-x  12 root root 4096 Mar 14 16:01 usr
+drwxr-xr-x  11 root root 4096 Mar 14 16:01 var
+lrwxrwxrwx   1 root root   32 Mar 14 16:02 vmlinuz -> boot/vmlinuz-6.12.73+deb13-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
-CLDS: * Installed Linux image: linux-image-6.12.63+deb13-amd64.
-CLDS: * Disk size = 992000K. Space Used = 278260K. Runtime = 00:00:00:25.
+CLDS: * Installed Linux image: linux-image-6.12.73+deb13-amd64.
+CLDS: * Disk size = 894120K. Space Used = 278364K. Runtime = 00:00:00:45.

@@ -36,7 +36,7 @@ Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libndp0 
 Get:14 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libnm0 amd64 1.52.1-1 [459 kB]
 Get:15 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libteamdctl0 amd64 1.31-1+b2 [11.8 kB]
 Get:16 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 network-manager amd64 1.52.1-1 [2,247 kB]
-Fetched 5,902 kB in 0s (88.4 MB/s)
+Fetched 5,902 kB in 0s (49.5 MB/s)
 Selecting previously unselected package libatomic1:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 20047 files and directories currently installed.)
 Preparing to unpack .../00-libatomic1_14.2.0-19_amd64.deb ...
@@ -106,8 +106,8 @@ Setting up network-manager (1.52.1-1) ...
 Created symlink '/etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service' → '/usr/lib/systemd/system/NetworkManager-dispatcher.service'.
 Created symlink '/etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service' → '/usr/lib/systemd/system/NetworkManager-wait-online.service'.
 Created symlink '/etc/systemd/system/multi-user.target.wants/NetworkManager.service' → '/usr/lib/systemd/system/NetworkManager.service'.
-Processing triggers for libc-bin (2.41-12+deb13u1) ...
+Processing triggers for libc-bin (2.41-12+deb13u2) ...
 Processing triggers for dbus (1.16.2-2) ...
 './cld/doc/nmcli-help.txt' -> '/usr/local/cld/doc/nmcli-help.txt'
 CLDS: * Install network-manager: nmcli
-CLDS: * Disk size = 1735912K. Space Used = 25240K. Runtime = 00:00:00:01.
+CLDS: * Disk size = 1638028K. Space Used = 25232K. Runtime = 00:00:00:03.

@@ -1,3 +1,2 @@
 * >>>>>>>>> Running inst-xtra-web-dev-npm-pm2.sh ...
-  * Install pm2.
-  * Disk size = 9680216K. Space Used = 59192K. Runtime = 00:00:00:14.
+  * Disk size = 8757944K. Space Used = 8K. Runtime = 00:00:00:01.

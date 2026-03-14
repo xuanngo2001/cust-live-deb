@@ -56,9 +56,9 @@ Get:27 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpwqua
 Get:28 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libsecret-common all 0.21.7-1 [27.9 kB]
 Get:29 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libsecret-1-0 amd64 0.21.7-1 [111 kB]
 Get:30 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 gnome-disk-utility amd64 46.1-2+b1 [1,023 kB]
-Fetched 3,557 kB in 0s (82.3 MB/s)
+Fetched 3,557 kB in 0s (39.7 MB/s)
 Selecting previously unselected package libudisks2-0:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 135815 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 135490 files and directories currently installed.)
 Preparing to unpack .../00-libudisks2-0_2.10.1-12.1+deb13u1_amd64.deb ...
 Unpacking libudisks2-0:amd64 (2.10.1-12.1+deb13u1) ...
 Selecting previously unselected package libblockdev-utils3:amd64.
@@ -181,11 +181,11 @@ Running in chroot, ignoring request.
 Created symlink '/etc/systemd/system/graphical.target.wants/udisks2.service' → '/usr/lib/systemd/system/udisks2.service'.
 Setting up gnome-disk-utility (46.1-2+b1) ...
 Processing triggers for hicolor-icon-theme (0.18-2) ...
-Processing triggers for libc-bin (2.41-12+deb13u1) ...
+Processing triggers for libc-bin (2.41-12+deb13u2) ...
 Processing triggers for libglib2.0-0t64:amd64 (2.84.4-3~deb13u2) ...
 Processing triggers for dbus (1.16.2-2) ...
 Processing triggers for desktop-file-utils (0.28-1) ...
 CLDS: * Install Partition Manager: gnome-disk-utility.
 CLDS: * Run: gnome-disks.
 CLDS: * Insert gnome-disk-utility menu in Administration.
-CLDS: * Disk size = 7918968K. Space Used = 11404K. Runtime = 00:00:00:03.
+CLDS: * Disk size = 7683484K. Space Used = 11428K. Runtime = 00:00:00:05.
