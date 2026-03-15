@@ -1,5 +1,5 @@
 CLDS:>>>>>>>>> Running inst-xtra-web-dev-nodejs.sh ...
-[38;5;79m2026-03-14 16:29:42 - Installing pre-requisites[0m
+[38;5;79m2026-03-15 16:13:12 - Installing pre-requisites[0m
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
@@ -31,7 +31,7 @@ Warning: Target Packages (main/binary-amd64/Packages) is configured multiple tim
 Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-[1;31m2026-03-14 16:29:43 - Error: Failed to run 'apt update' (Exit Code: 0)[0m
+[1;31m2026-03-15 16:13:23 - Error: Failed to run 'apt update' (Exit Code: 0)[0m
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -60,7 +60,7 @@ Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 node-brac
 Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 node-minimatch all 9.0.3-6 [76.8 kB]
 Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 node-undici all 7.3.0+dfsg1+~cs24.12.11-1 [333 kB]
 Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libnode115 amd64 20.19.2+dfsg-1 [12.1 MB]
-Fetched 13.8 MB in 0s (70.2 MB/s)
+Fetched 13.8 MB in 5s (2,665 kB/s)
 Selecting previously unselected package libcares2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 162071 files and directories currently installed.)
 Preparing to unpack .../00-libcares2_1.34.5-1+deb13u1_amd64.deb ...
@@ -109,4 +109,4 @@ Setting up nodejs (20.19.2+dfsg-1) ...
 update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
 Processing triggers for libc-bin (2.41-12+deb13u2) ...
 CLDS: * Install nodejs.
-CLDS: * Disk size = 8757936K. Space Used = 78880K. Runtime = 00:00:00:05.
+CLDS: * Disk size = 8767132K. Space Used = 78884K. Runtime = 00:00:00:25.
