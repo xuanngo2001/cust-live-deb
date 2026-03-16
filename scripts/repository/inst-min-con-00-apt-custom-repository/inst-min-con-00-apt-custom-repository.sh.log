@@ -1,10 +1,11 @@
 CLDS:>>>>>>>>> Running inst-min-con-00-apt-custom-repository.sh ...
 'trusted.gpg' -> '/etc/apt/trusted.gpg'
 'trusted.gpg' -> '/etc/apt/keyrings/trusted.gpg'
-'./keys/etc/keyrings/docker.asc' -> '/etc/apt/keyrings/docker.asc'
-'./keys/etc/keyrings/trusted.gpg' -> '/etc/apt/keyrings/trusted.gpg'
-'./keys/etc/keyrings/google_linux_signing_key.pub' -> '/etc/apt/keyrings/google_linux_signing_key.pub'
 './keys/etc/keyrings/aptly.asc' -> '/etc/apt/keyrings/aptly.asc'
+'./keys/etc/keyrings/docker.asc' -> '/etc/apt/keyrings/docker.asc'
+'./keys/etc/keyrings/google_linux_signing_key.pub' -> '/etc/apt/keyrings/google_linux_signing_key.pub'
+'./keys/etc/keyrings/trusted.gpg' -> '/etc/apt/keyrings/trusted.gpg'
+'./keys/usr/keyrings/nodesource.gpg' -> '/usr/share/keyrings/nodesource.gpg'
 removed '/usr/share/keyrings/debian-archive-bookworm-automatic.gpg'
 './keys/usr/keyrings/debian-archive-bookworm-automatic.gpg' -> '/usr/share/keyrings/debian-archive-bookworm-automatic.gpg'
 removed '/usr/share/keyrings/debian-archive-bookworm-security-automatic.gpg'
@@ -27,7 +28,6 @@ removed '/usr/share/keyrings/debian-archive-trixie-security-automatic.gpg'
 './keys/usr/keyrings/debian-archive-trixie-security-automatic.gpg' -> '/usr/share/keyrings/debian-archive-trixie-security-automatic.gpg'
 removed '/usr/share/keyrings/debian-archive-trixie-stable.gpg'
 './keys/usr/keyrings/debian-archive-trixie-stable.gpg' -> '/usr/share/keyrings/debian-archive-trixie-stable.gpg'
-'./keys/usr/keyrings/oracle-virtualbox-2016.gpg' -> '/usr/share/keyrings/oracle-virtualbox-2016.gpg'
 './keys/usr/keyrings/cloud.google.gpg' -> '/usr/share/keyrings/cloud.google.gpg'
 './keys/usr/keyrings/deb-multimedia-keyring.pgp' -> '/usr/share/keyrings/deb-multimedia-keyring.pgp'
 './keys/usr/keyrings/debian-archive-bookworm-automatic.pgp' -> '/usr/share/keyrings/debian-archive-bookworm-automatic.pgp'
@@ -41,7 +41,7 @@ removed '/usr/share/keyrings/debian-archive-trixie-stable.gpg'
 './keys/usr/keyrings/debian-archive-trixie-automatic.pgp' -> '/usr/share/keyrings/debian-archive-trixie-automatic.pgp'
 './keys/usr/keyrings/debian-archive-trixie-security-automatic.pgp' -> '/usr/share/keyrings/debian-archive-trixie-security-automatic.pgp'
 './keys/usr/keyrings/debian-archive-trixie-stable.pgp' -> '/usr/share/keyrings/debian-archive-trixie-stable.pgp'
-'./keys/usr/keyrings/nodesource.gpg' -> '/usr/share/keyrings/nodesource.gpg'
+'./keys/usr/keyrings/oracle-virtualbox-2016.gpg' -> '/usr/share/keyrings/oracle-virtualbox-2016.gpg'
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie InRelease [4340 B]
 Get:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease [4342 B]
 Get:3 http://localhost/aptly-repo/master_deb-multimedia-main trixie InRelease [4356 B]
@@ -54,18 +54,18 @@ Get:9 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease [4421 B
 Get:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease [4691 B]
 Get:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease [4448 B]
 Get:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease [4429 B]
-Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 Packages [414 kB]
+Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 Packages [413 kB]
 Get:14 http://localhost/aptly-repo/master_aptly-main squeeze/main amd64 Packages [3891 B]
 Get:15 http://localhost/aptly-repo/master_deb-multimedia-main trixie/main amd64 Packages [11.8 kB]
 Get:16 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 Packages [17.1 kB]
 Get:17 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk/main amd64 Packages [20.3 kB]
 Get:18 http://localhost/aptly-repo/master_google-main stable/main amd64 Packages [926 B]
-Get:19 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 Packages [30.4 kB]
+Get:19 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 Packages [32.3 kB]
 Get:20 http://localhost/aptly-repo/master_trixie-contrib trixie/contrib amd64 Packages [3553 B]
 Get:21 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie/non-free-firmware amd64 Packages [5298 B]
 Get:22 http://localhost/aptly-repo/master_trixie-non-free trixie/non-free amd64 Packages [1455 B]
 Get:23 http://localhost/aptly-repo/master_virtualbox-contrib trixie/contrib amd64 Packages [1151 B]
-Fetched 562 kB in 5s (107 kB/s)
+Fetched 562 kB in 0s (2114 kB/s)
 Reading package lists...
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -73,4 +73,4 @@ W: Target Translations (main/i18n/Translation-en) is configured multiple times i
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-CLDS: * Disk size = 615744K. Space Used = 6524K. Runtime = 00:00:00:05.
+CLDS: * Disk size = 713772K. Space Used = 6532K. Runtime = 00:00:00:01.

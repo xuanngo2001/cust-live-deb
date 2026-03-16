@@ -2,7 +2,7 @@
   * After this operation, 8,606 kB of additional disk space will be used.
   * Install bat.
   * batcat file.sh.
-  * Disk size = 2277672K. Space Used = 12156K. Runtime = 00:00:00:07.
+  * Disk size = 2508748K. Space Used = 12156K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 bat libgit2-1.9 libhttp-parser2.9 libmbedcrypto16 libmbedtls21

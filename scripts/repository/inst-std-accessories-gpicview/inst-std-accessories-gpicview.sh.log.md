@@ -3,7 +3,7 @@
   * Install Image Viewer: gpicview.
   * Insert gpicview in Accessories menu.
   * Add alias viewpic='gpicview'.
-  * Disk size = 5762832K. Space Used = 384K. Runtime = 00:00:00:07.
+  * Disk size = 5993844K. Space Used = 380K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 gpicview
