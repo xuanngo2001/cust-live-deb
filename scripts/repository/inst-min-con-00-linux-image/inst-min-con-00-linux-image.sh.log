@@ -214,7 +214,7 @@ perl: warning: Falling back to the standard locale ("C").
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Fetched 939 kB in 0s (33.9 MB/s)
+Fetched 939 kB in 0s (29.2 MB/s)
 Selecting previously unselected package libdbus-1-3:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7797 files and directories currently installed.)
 Preparing to unpack .../0-libdbus-1-3_1.16.2-2_amd64.deb ...
@@ -262,23 +262,21 @@ Reading state information...
 The following additional packages will be installed:
   busybox dracut-install initramfs-tools initramfs-tools-bin
   initramfs-tools-core klibc-utils libklibc linux-base
-  linux-base-6.18.15+deb13-amd64 linux-base-amd64
-  linux-image-6.18.15+deb13-amd64 live-boot-initramfs-tools rsync
+  linux-image-6.12.73+deb13-amd64 live-boot-initramfs-tools rsync
 Suggested packages:
-  bash-completion debian-kernel-handbook firmware-linux-free grub-pc
-  | grub-efi-amd64 | extlinux linux-doc-6.18 cryptsetup curlftpfs httpfs2 wget
+  bash-completion firmware-linux-free linux-doc-6.12 debian-kernel-handbook
+  grub-pc | grub-efi-amd64 | extlinux cryptsetup curlftpfs httpfs2 wget
   openssh-client openssh-server python3 python3-braceexpand
 Recommended packages:
   zstd apparmor live-boot-doc live-tools uuid-runtime
 The following NEW packages will be installed:
   busybox dracut-install initramfs-tools initramfs-tools-bin
   initramfs-tools-core klibc-utils libklibc linux-base
-  linux-base-6.18.15+deb13-amd64 linux-base-amd64
-  linux-image-6.18.15+deb13-amd64 linux-image-amd64 live-boot
+  linux-image-6.12.73+deb13-amd64 linux-image-amd64 live-boot
   live-boot-initramfs-tools rsync
-0 upgraded, 15 newly installed, 0 to remove and 2 not upgraded.
-Need to get 170 MB of archives.
-After this operation, 174 MB of additional disk space will be used.
+0 upgraded, 13 newly installed, 0 to remove and 2 not upgraded.
+Need to get 109 MB of archives.
+After this operation, 114 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-base all 4.12.1 [25.5 kB]
 Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 dracut-install amd64 106-6 [37.8 kB]
 Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 initramfs-tools-bin amd64 0.148.3 [17.3 kB]
@@ -286,14 +284,12 @@ Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libklibc 
 Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 klibc-utils amd64 2.0.14-1 [95.1 kB]
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 initramfs-tools-core all 0.148.3 [50.5 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 initramfs-tools all 0.148.3 [17.3 kB]
-Get:8 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-base-6.18.15+deb13-amd64 amd64 6.18.15-1~bpo13+1 [964 kB]
-Get:9 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-image-6.18.15+deb13-amd64 amd64 6.18.15-1~bpo13+1 [167 MB]
-Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 rsync amd64 3.4.1+ds1-5+deb13u1 [429 kB]
-Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 busybox amd64 1:1.37.0-6+b7 [485 kB]
-Get:12 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-base-amd64 amd64 6.18.15-1~bpo13+1 [1192 B]
-Get:13 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-image-amd64 amd64 6.18.15-1~bpo13+1 [1496 B]
-Get:14 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 live-boot-initramfs-tools all 1:20250815~deb13u1 [6400 B]
-Get:15 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 live-boot all 1:20250815~deb13u1 [31.2 kB]
+Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-image-6.12.73+deb13-amd64 amd64 6.12.73-1 [108 MB]
+Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 rsync amd64 3.4.1+ds1-5+deb13u1 [429 kB]
+Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 busybox amd64 1:1.37.0-6+b7 [485 kB]
+Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-image-amd64 amd64 6.12.73-1 [1472 B]
+Get:12 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 live-boot-initramfs-tools all 1:20250815~deb13u1 [6400 B]
+Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 live-boot all 1:20250815~deb13u1 [31.2 kB]
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
@@ -317,7 +313,7 @@ locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 Preconfiguring packages ...
-Fetched 170 MB in 1s (139 MB/s)
+Fetched 109 MB in 1s (187 MB/s)
 Selecting previously unselected package linux-base.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8043 files and directories currently installed.)
 Preparing to unpack .../0-linux-base_4.12.1_all.deb ...
@@ -340,40 +336,32 @@ Unpacking initramfs-tools-core (0.148.3) ...
 Selecting previously unselected package initramfs-tools.
 Preparing to unpack .../6-initramfs-tools_0.148.3_all.deb ...
 Unpacking initramfs-tools (0.148.3) ...
-Selecting previously unselected package linux-base-6.18.15+deb13-amd64.
-Preparing to unpack .../7-linux-base-6.18.15+deb13-amd64_6.18.15-1~bpo13+1_amd64.deb ...
-Unpacking linux-base-6.18.15+deb13-amd64 (6.18.15-1~bpo13+1) ...
 Setting up linux-base (4.12.1) ...
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_MESSAGES to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
-Selecting previously unselected package linux-image-6.18.15+deb13-amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8205 files and directories currently installed.)
-Preparing to unpack .../0-linux-image-6.18.15+deb13-amd64_6.18.15-1~bpo13+1_amd64.deb ...
-Unpacking linux-image-6.18.15+deb13-amd64 (6.18.15-1~bpo13+1) ...
+Selecting previously unselected package linux-image-6.12.73+deb13-amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8185 files and directories currently installed.)
+Preparing to unpack .../0-linux-image-6.12.73+deb13-amd64_6.12.73-1_amd64.deb ...
+Unpacking linux-image-6.12.73+deb13-amd64 (6.12.73-1) ...
 Selecting previously unselected package rsync.
 Preparing to unpack .../1-rsync_3.4.1+ds1-5+deb13u1_amd64.deb ...
 Unpacking rsync (3.4.1+ds1-5+deb13u1) ...
 Selecting previously unselected package busybox.
 Preparing to unpack .../2-busybox_1%3a1.37.0-6+b7_amd64.deb ...
 Unpacking busybox (1:1.37.0-6+b7) ...
-Selecting previously unselected package linux-base-amd64.
-Preparing to unpack .../3-linux-base-amd64_6.18.15-1~bpo13+1_amd64.deb ...
-Unpacking linux-base-amd64 (6.18.15-1~bpo13+1) ...
 Selecting previously unselected package linux-image-amd64.
-Preparing to unpack .../4-linux-image-amd64_6.18.15-1~bpo13+1_amd64.deb ...
-Unpacking linux-image-amd64 (6.18.15-1~bpo13+1) ...
+Preparing to unpack .../3-linux-image-amd64_6.12.73-1_amd64.deb ...
+Unpacking linux-image-amd64 (6.12.73-1) ...
 Selecting previously unselected package live-boot-initramfs-tools.
-Preparing to unpack .../5-live-boot-initramfs-tools_1%3a20250815~deb13u1_all.deb ...
+Preparing to unpack .../4-live-boot-initramfs-tools_1%3a20250815~deb13u1_all.deb ...
 Unpacking live-boot-initramfs-tools (1:20250815~deb13u1) ...
 Selecting previously unselected package live-boot.
-Preparing to unpack .../6-live-boot_1%3a20250815~deb13u1_all.deb ...
+Preparing to unpack .../5-live-boot_1%3a20250815~deb13u1_all.deb ...
 Unpacking live-boot (1:20250815~deb13u1) ...
-Setting up linux-base-6.18.15+deb13-amd64 (6.18.15-1~bpo13+1) ...
 Setting up busybox (1:1.37.0-6+b7) ...
 Setting up libklibc:amd64 (2.0.14-1) ...
 Setting up dracut-install (106-6) ...
-Setting up linux-base-amd64 (6.18.15-1~bpo13+1) ...
 Setting up klibc-utils (2.0.14-1) ...
 No diversion 'diversion of /usr/share/initramfs-tools/hooks/klibc to /usr/share/initramfs-tools/hooks/klibc^i-t by klibc-utils', none removed.
 Setting up rsync (3.4.1+ds1-5+deb13u1) ...
@@ -382,21 +370,21 @@ Setting up initramfs-tools-bin (0.148.3) ...
 Setting up initramfs-tools-core (0.148.3) ...
 Setting up initramfs-tools (0.148.3) ...
 update-initramfs: deferring update (trigger activated)
-Setting up linux-image-6.18.15+deb13-amd64 (6.18.15-1~bpo13+1) ...
-I: /vmlinuz.old is now a symlink to boot/vmlinuz-6.18.15+deb13-amd64
-I: /initrd.img.old is now a symlink to boot/initrd.img-6.18.15+deb13-amd64
-I: /vmlinuz is now a symlink to boot/vmlinuz-6.18.15+deb13-amd64
-I: /initrd.img is now a symlink to boot/initrd.img-6.18.15+deb13-amd64
+Setting up linux-image-6.12.73+deb13-amd64 (6.12.73-1) ...
+I: /vmlinuz.old is now a symlink to boot/vmlinuz-6.12.73+deb13-amd64
+I: /initrd.img.old is now a symlink to boot/initrd.img-6.12.73+deb13-amd64
+I: /vmlinuz is now a symlink to boot/vmlinuz-6.12.73+deb13-amd64
+I: /initrd.img is now a symlink to boot/initrd.img-6.12.73+deb13-amd64
 /etc/kernel/postinst.d/initramfs-tools:
-update-initramfs: Generating /boot/initrd.img-6.18.15+deb13-amd64
+update-initramfs: Generating /boot/initrd.img-6.12.73+deb13-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 Setting up live-boot-initramfs-tools (1:20250815~deb13u1) ...
 update-initramfs: deferring update (trigger activated)
-Setting up linux-image-amd64 (6.18.15-1~bpo13+1) ...
+Setting up linux-image-amd64 (6.12.73-1) ...
 Setting up live-boot (1:20250815~deb13u1) ...
 Processing triggers for initramfs-tools (0.148.3) ...
-update-initramfs: Generating /boot/initrd.img-6.18.15+deb13-amd64
+update-initramfs: Generating /boot/initrd.img-6.12.73+deb13-amd64
 W: No zstd in /usr/bin:/sbin:/bin, using gzip
 live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 './cld' -> '/usr/local/cld'
@@ -473,43 +461,43 @@ live-boot: core filesystems dm-verity devices utils udev blockdev dns.
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                     Version           Architecture Description
-+++-========================================-=================-============-=====================================
-ii  linux-image-6.18.15+deb13-amd64          6.18.15-1~bpo13+1 amd64        Linux 6.18.15 for 64-bit PCs (signed)
-un  linux-image-6.18.15+deb13-amd64-unsigned <none>            <none>       (no description available)
-ii  linux-image-amd64                        6.18.15-1~bpo13+1 amd64        Linux for 64-bit PCs (meta-package)
-un  linux-image-generic                      <none>            <none>       (no description available)
-total 68880
--rw-r--r-- 1 root root       93 Mar 12 16:48 System.map-6.18.15+deb13-amd64
--rw-r--r-- 1 root root   293726 Mar 12 16:48 config-6.18.15+deb13-amd64
--rw-r--r-- 1 root root 56107709 Mar 16 14:42 initrd.img-6.18.15+deb13-amd64
--rw-r--r-- 1 root root 14120576 Mar 12 16:48 vmlinuz-6.18.15+deb13-amd64
-939f4c55360ec160a7c7dceda9e863f9  /boot/System.map-6.18.15+deb13-amd64
-fe072ede4722c16d2dd06be1c92d65ff  /boot/config-6.18.15+deb13-amd64
-7a41113e69d0467539dd65329e35c5af  /boot/initrd.img-6.18.15+deb13-amd64
-3dfacae9a0f1f40192d1ca3e48f544a1  /boot/vmlinuz-6.18.15+deb13-amd64
+||/ Name                                     Version      Architecture Description
++++-========================================-============-============-===================================
+ii  linux-image-6.12.73+deb13-amd64          6.12.73-1    amd64        Linux 6.12 for 64-bit PCs (signed)
+un  linux-image-6.12.73+deb13-amd64-unsigned <none>       <none>       (no description available)
+ii  linux-image-amd64                        6.12.73-1    amd64        Linux for 64-bit PCs (meta-package)
+un  linux-image-generic                      <none>       <none>       (no description available)
+total 52820
+-rw-r--r-- 1 root root       83 Feb 17 05:47 System.map-6.12.73+deb13-amd64
+-rw-r--r-- 1 root root   283277 Feb 17 05:47 config-6.12.73+deb13-amd64
+-rw-r--r-- 1 root root 41681414 Mar 16 17:42 initrd.img-6.12.73+deb13-amd64
+-rw-r--r-- 1 root root 12109760 Feb 17 05:47 vmlinuz-6.12.73+deb13-amd64
+e0a6c09212a19ed48183a052eab847e7  /boot/System.map-6.12.73+deb13-amd64
+2fb7d1dff568230d0e99617d09ec79a5  /boot/config-6.12.73+deb13-amd64
+656c6b81e0d166a762a98fb4a7000a08  /boot/initrd.img-6.12.73+deb13-amd64
+422d12c9cae29654502dbbd411c7cc5c  /boot/vmlinuz-6.12.73+deb13-amd64
 total 48
 lrwxrwxrwx   1 root root    7 Mar  2 21:50 bin -> usr/bin
-drwxr-xr-x   2 root root 4096 Mar 16 14:42 boot
-drwxr-xr-x  17 root root 3920 Mar 16 12:52 dev
-drwxr-xr-x  51 root root 4096 Mar 16 14:42 etc
+drwxr-xr-x   2 root root 4096 Mar 16 17:42 boot
+drwxr-xr-x  17 root root 3900 Mar 16 17:35 dev
+drwxr-xr-x  51 root root 4096 Mar 16 17:42 etc
 drwxr-xr-x   2 root root 4096 Mar  2 21:50 home
-lrwxrwxrwx   1 root root   35 Mar 16 14:42 initrd.img -> boot/initrd.img-6.18.15+deb13-amd64
+lrwxrwxrwx   1 root root   35 Mar 16 17:42 initrd.img -> boot/initrd.img-6.12.73+deb13-amd64
 lrwxrwxrwx   1 root root    7 Mar  2 21:50 lib -> usr/lib
 lrwxrwxrwx   1 root root    9 Mar  2 21:50 lib64 -> usr/lib64
-drwxr-xr-x   2 root root 4096 Mar 16 14:41 media
-drwxr-xr-x   2 root root 4096 Mar 16 14:41 mnt
-drwxr-xr-x   2 root root 4096 Mar 16 14:41 opt
-dr-xr-xr-x 439 root root    0 Mar 16 14:42 proc
-drwx------   4 root root 4096 Mar 16 14:42 root
-drwxr-xr-x   8 root root 4096 Mar 16 14:42 run
+drwxr-xr-x   2 root root 4096 Mar 16 17:41 media
+drwxr-xr-x   2 root root 4096 Mar 16 17:41 mnt
+drwxr-xr-x   2 root root 4096 Mar 16 17:41 opt
+dr-xr-xr-x 446 root root    0 Mar 16 17:41 proc
+drwx------   4 root root 4096 Mar 16 17:41 root
+drwxr-xr-x   8 root root 4096 Mar 16 17:41 run
 lrwxrwxrwx   1 root root    8 Mar  2 21:50 sbin -> usr/sbin
-drwxr-xr-x   2 root root 4096 Mar 16 14:41 srv
-dr-xr-xr-x  13 root root    0 Mar 16 12:51 sys
-drwxrwxrwt   2 root root 4096 Mar 16 14:42 tmp
-drwxr-xr-x  12 root root 4096 Mar 16 14:41 usr
-drwxr-xr-x  11 root root 4096 Mar 16 14:41 var
-lrwxrwxrwx   1 root root   32 Mar 16 14:42 vmlinuz -> boot/vmlinuz-6.18.15+deb13-amd64
+drwxr-xr-x   2 root root 4096 Mar 16 17:41 srv
+dr-xr-xr-x  13 root root    0 Mar 16 17:34 sys
+drwxrwxrwt   2 root root 4096 Mar 16 17:41 tmp
+drwxr-xr-x  12 root root 4096 Mar 16 17:41 usr
+drwxr-xr-x  11 root root 4096 Mar 16 17:41 var
+lrwxrwxrwx   1 root root   32 Mar 16 17:42 vmlinuz -> boot/vmlinuz-6.12.73+deb13-amd64
 CLDS: * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
-CLDS: * Installed Linux image: linux-image-6.18.15+deb13-amd64.
-CLDS: * Disk size = 1125152K. Space Used = 411380K. Runtime = 00:00:00:44.
+CLDS: * Installed Linux image: linux-image-6.12.73+deb13-amd64.
+CLDS: * Disk size = 992124K. Space Used = 278360K. Runtime = 00:00:00:32.
