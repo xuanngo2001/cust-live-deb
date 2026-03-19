@@ -1,0 +1,90 @@
+# Get ZFS version.
+    modinfo zfs | grep ^version
+
+# Upgrade ZFS version.
+    zpool upgrade -a
+  
+# Import all existing know zfs partitions.
+    zpool import -a
+
+# Pool status.
+    zpool status -v
+
+# Destroy pool.
+    zpool destroy <pool_name>
+
+# Create pool with disks.
+    zpool create <pool_name> /dev/sda /dev/sdb /dev/sdc ...
+    
+# Raid 1: Create mirror pool.
+    zpool create <pool_name> mirror /dev/sda /dev/sdb
+
+# Raid 5: Create single-parity RAID-Z.
+    zpool create <pool_name> raidz /dev/sda /dev/sdb /dev/sdc ...    
+
+# RAIDz2: Create two-parity disks raid.
+    zpool create <pool_name> raidz2 /dev/sda /dev/sdb /dev/sdc /dev/sdd
+
+# RAIDz3: Create three-parity disks raid.
+    zpool create <pool_name> raidz3 /dev/sdb /dev/sdc /dev/sdd /dev/sde
+    
+# Add disk to existing pool.
+    zpool add <pool_name> /dev/sdd
+    zpool add <pool_name> mirror /dev/sdi /dev/sdj
+
+# Detach disk from pool
+    zpool detach <pool_name> /dev/sdi
+
+# Take a device offline.
+    zpool offline <pool_name> /dev/sdi
+
+# Bring a device online.
+    zpool online <pool_name> /dev/sdi
+    
+# Clear storage pool device errors.
+    zpool clear <pool_name>
+
+# Replace devices in a storage pool.
+    zpool replace <pool_name>  /dev/sdi_old /dev/sdj_new
+
+# Check integrity of hard drives
+    zpool status -v | grep 'pool:'
+    zpool scrub <pool_name>
+  
+	# Symptom:
+	  ~>zpool import -a
+	  cannot import 'poolname': I/O error
+	    Destroy and re-create the pool from
+	    a backup source.
+	  ------------------------------------  
+	  ~>zpool import -F
+	      pool: poolname
+	       id: 13185988754217356698
+	    state: DEGRADED
+	   status: One or more devices contains corrupted data.
+	   action: The pool can be imported despite missing or damaged devices.  The
+	    fault tolerance of the pool may be compromised if imported.
+	     see: http://zfsonlinux.org/msg/ZFS-8000-4J
+	   config:
+	
+	    poolname                             DEGRADED
+	      mirror-0                            DEGRADED
+	        4123668411235123049               FAULTED  corrupted data
+	        ata-ST8000AS0002-2NA17G_K2239JTL  ONLINE
+	
+		# Solution:
+			  ~>zpool import -FfmX poolname
+			  ~>zpool clear poolname
+			  ~>zpool offline poolname faultyDriveName
+			  ~># Physically remove the disk.
+			  ~># Add new disk.
+			  ~>zpool attach poolname faultyDriveName /dev/sdX
+
+#####
+After performing some tests, I realize now that creating the pools by specifying disks like /dev/sda and /dev/sdb is somewhat dangerous. Your pool could become degraded or disappear if you plug in another drive and all the letters change. To remedy this, use paths with /dev/disk/by-id/... instead or immediately convert your pool after creation by running:
+
+sudo zpool export [my pool name]
+sudo zpool import -d [my pool name]
+
+https://blog.programster.org/zfs-create-disk-pools
+https://docs.oracle.com/cd/E19253-01/819-5461/gayrd/index.html
