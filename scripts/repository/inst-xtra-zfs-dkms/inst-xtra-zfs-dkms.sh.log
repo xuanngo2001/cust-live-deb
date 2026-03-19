@@ -35,7 +35,7 @@ After this operation, 13.3 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-amd64 amd64 6.12.73-1 [1,412 B]
 Fetched 1,412 B in 0s (0 B/s)
 Selecting previously unselected package linux-headers-amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 168229 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 168354 files and directories currently installed.)
 Preparing to unpack .../linux-headers-amd64_6.12.73-1_amd64.deb ...
 Unpacking linux-headers-amd64 (6.12.73-1) ...
 Setting up linux-headers-amd64 (6.12.73-1) ...
@@ -60,20 +60,20 @@ The following NEW packages will be installed:
 Need to get 87.0 kB of archives.
 After this operation, 400 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 module-assistant all 0.11.14 [87.0 kB]
-Fetched 87.0 kB in 0s (8,603 kB/s)
+Fetched 87.0 kB in 0s (8,208 kB/s)
 Selecting previously unselected package module-assistant.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 168231 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 168356 files and directories currently installed.)
 Preparing to unpack .../module-assistant_0.11.14_all.deb ...
 Unpacking module-assistant (0.11.14) ...
 Setting up module-assistant (0.11.14) ...
-Getting source for kernel version: 6.18.15+deb13-amd64
-apt-get -y install linux-headers-6.18.15+deb13-amd64 
+Getting source for kernel version: 6.12.63+deb13-amd64
+apt-get -y install linux-headers-6.12.63+deb13-amd64 
 Reading package lists...
 Building dependency tree...
 Reading state information...
-E: Unable to locate package linux-headers-6.18.15+deb13-amd64
-E: Couldn't find any package by glob 'linux-headers-6.18.15+deb13-amd64'
-E: Couldn't find any package by regex 'linux-headers-6.18.15+deb13-amd64'
+E: Unable to locate package linux-headers-6.12.63+deb13-amd64
+E: Couldn't find any package by glob 'linux-headers-6.12.63+deb13-amd64'
+E: Couldn't find any package by regex 'linux-headers-6.12.63+deb13-amd64'
 Creating symlink...
 apt-get -y install build-essential 
 Reading package lists...
@@ -83,4 +83,4 @@ build-essential is already the newest version (12.12).
 0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
 
 Done!
-CLDS: * Disk size = 8272260K. Space Used = 10956K. Runtime = 00:00:00:02.
+CLDS: * Disk size = 8261520K. Space Used = 11000K. Runtime = 00:00:00:03.

@@ -31,14 +31,14 @@ Hit:9 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
 Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
 Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
 Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
-Get:13 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
-Get:14 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
+Get:13 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
+Get:14 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
 Get:15 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [28.7 kB]
-Get:16 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,213 B]
+Get:16 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,209 B]
 Get:17 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,621 B]
-Get:18 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [1,958 kB]
-Get:19 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [4,563 kB]
-Fetched 6,559 kB in 2s (3,737 kB/s)
+Get:18 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [1,964 kB]
+Get:19 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [4,582 kB]
+Fetched 6,584 kB in 2s (3,892 kB/s)
 Reading package lists...
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -53,7 +53,7 @@ Building dependency tree...
 Reading state information...
 ca-certificates is already the newest version (20250419).
 ca-certificates set to manually installed.
-curl is already the newest version (8.18.0-1~bpo13+1).
+curl is already the newest version (8.19.0-1~bpo13+1).
 0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
 Hit:1 http://localhost/aptly-repo/master_trixie-main trixie InRelease
 Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
@@ -69,10 +69,10 @@ Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
 Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
 Get:13 https://download.docker.com/linux/debian trixie InRelease [32.5 kB]
 Get:14 https://download.docker.com/linux/debian trixie/stable amd64 Packages [29.1 kB]
-Hit:15 https://dl.google.com/linux/chrome/deb stable InRelease
-Hit:16 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:15 https://packages.microsoft.com/repos/edge stable InRelease
+Hit:16 https://dl.google.com/linux/chrome/deb stable InRelease
 Hit:17 https://packages.cloud.google.com/apt cloud-sdk InRelease
-Fetched 61.6 kB in 1s (117 kB/s)
+Fetched 61.6 kB in 1s (120 kB/s)
 Reading package lists...
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -108,9 +108,9 @@ Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 iptables 
 Get:8 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 docker-ce amd64 5:29.3.0-1~debian.13~trixie [22.6 MB]
 Get:9 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 docker-buildx-plugin amd64 0.31.1-1~debian.13~trixie [20.3 MB]
 Get:10 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 docker-compose-plugin amd64 5.1.0-1~debian.13~trixie [7,847 kB]
-Fetched 91.1 MB in 1s (148 MB/s)
+Fetched 91.1 MB in 1s (179 MB/s)
 Selecting previously unselected package containerd.io.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 141097 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 141222 files and directories currently installed.)
 Preparing to unpack .../0-containerd.io_2.2.2-1~debian.13~trixie_amd64.deb ...
 Unpacking containerd.io (2.2.2-1~debian.13~trixie) ...
 Selecting previously unselected package docker-ce-cli.
@@ -163,4 +163,4 @@ Created symlink '/etc/systemd/system/multi-user.target.wants/docker.service' →
 Created symlink '/etc/systemd/system/sockets.target.wants/docker.socket' → '/usr/lib/systemd/system/docker.socket'.
 Processing triggers for libc-bin (2.41-12+deb13u2) ...
 CLDS: * Install docker-ce: https://docs.docker.com/engine/install/debian
-CLDS: * Disk size = 9024292K. Space Used = 472788K. Runtime = 00:00:00:09.
+CLDS: * Disk size = 9027572K. Space Used = 472852K. Runtime = 00:00:00:08.

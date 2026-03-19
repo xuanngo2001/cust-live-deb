@@ -1,6 +1,6 @@
 CLDS:>>>>>>>>> Running inst-min-con-xtra-yt-dlp-curl-cffi.sh ...
 Collecting yt-dlp[curl-cffi,default]
-  Downloading yt_dlp-2026.3.13-py3-none-any.whl.metadata (182 kB)
+  Downloading yt_dlp-2026.3.17-py3-none-any.whl.metadata (182 kB)
 Requirement already satisfied: curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.15,>=0.5.10 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (0.13.0)
 Collecting brotli (from yt-dlp[curl-cffi,default])
   Downloading brotli-1.2.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.1 kB)
@@ -12,23 +12,23 @@ Collecting pycryptodomex (from yt-dlp[curl-cffi,default])
 Requirement already satisfied: requests<3,>=2.32.2 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (2.32.5)
 Requirement already satisfied: urllib3<3,>=2.0.2 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (2.6.3)
 Requirement already satisfied: websockets>=13.0 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (16.0)
-Collecting yt-dlp-ejs==0.7.0 (from yt-dlp[curl-cffi,default])
-  Downloading yt_dlp_ejs-0.7.0-py3-none-any.whl.metadata (3.5 kB)
+Collecting yt-dlp-ejs==0.8.0 (from yt-dlp[curl-cffi,default])
+  Downloading yt_dlp_ejs-0.8.0-py3-none-any.whl.metadata (3.5 kB)
 Requirement already satisfied: cffi>=1.12.0 in /usr/local/lib/python3.13/dist-packages (from curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.15,>=0.5.10->yt-dlp[curl-cffi,default]) (2.0.0)
 Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/dist-packages (from requests<3,>=2.32.2->yt-dlp[curl-cffi,default]) (3.4.6)
 Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/dist-packages (from requests<3,>=2.32.2->yt-dlp[curl-cffi,default]) (3.11)
 Requirement already satisfied: pycparser in /usr/local/lib/python3.13/dist-packages (from cffi>=1.12.0->curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.15,>=0.5.10->yt-dlp[curl-cffi,default]) (3.0)
-Downloading yt_dlp-2026.3.13-py3-none-any.whl (3.3 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 68.5 MB/s eta 0:00:00
-Downloading yt_dlp_ejs-0.7.0-py3-none-any.whl (53 kB)
+Downloading yt_dlp-2026.3.17-py3-none-any.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 63.6 MB/s eta 0:00:00
+Downloading yt_dlp_ejs-0.8.0-py3-none-any.whl (53 kB)
 Downloading brotli-1.2.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 55.4 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 54.0 MB/s eta 0:00:00
 Downloading mutagen-1.47.0-py3-none-any.whl (194 kB)
 Downloading pycryptodomex-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.3 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 46.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 54.4 MB/s eta 0:00:00
 Installing collected packages: brotli, yt-dlp-ejs, yt-dlp, pycryptodomex, mutagen
 
-Successfully installed brotli-1.2.0 mutagen-1.47.0 pycryptodomex-3.23.0 yt-dlp-2026.3.13 yt-dlp-ejs-0.7.0
+Successfully installed brotli-1.2.0 mutagen-1.47.0 pycryptodomex-3.23.0 yt-dlp-2026.3.17 yt-dlp-ejs-0.8.0
 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
 [info] Available impersonate targets
 Client        OS           Source
@@ -64,6 +64,6 @@ Chrome-120    Macos-14     curl_cffi
 Chrome-123    Macos-14     curl_cffi
 Chrome-124    Macos-14     curl_cffi
 Chrome-131    Macos-14     curl_cffi
-2026.03.13
+2026.03.17
 CLDS: * Install curl-cffi for yt-dlp to impersonate: yt-dlp --impersonate Chrome-124
-CLDS: * Disk size = 5322432K. Space Used = 51968K. Runtime = 00:00:00:05.
+CLDS: * Disk size = 5325296K. Space Used = 51976K. Runtime = 00:00:00:04.

@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-con-xtra-yt-dlp-curl-cffi.sh ...
   * Install curl-cffi for yt-dlp to impersonate: yt-dlp --impersonate Chrome-124
-  * Disk size = 5322432K. Space Used = 51968K. Runtime = 00:00:00:05.
+  * Disk size = 5325296K. Space Used = 51976K. Runtime = 00:00:00:04.
