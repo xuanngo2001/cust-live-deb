@@ -2,7 +2,7 @@
   * After this operation, 19.5 MB of additional disk space will be used.
   * After this operation, 39.1 MB of additional disk space will be used.
   * Install OpenTTD 14.1.
-  * Disk size = 8408816K. Space Used = 83424K. Runtime = 00:00:00:14.
+  * Disk size = 9067704K. Space Used = 83428K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 libfluidsynth3 libinstpatch-1.0-2 openttd openttd-data openttd-opengfx

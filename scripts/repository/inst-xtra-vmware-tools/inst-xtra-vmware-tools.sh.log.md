@@ -2,7 +2,7 @@
   * After this operation, 15.2 MB of additional disk space will be used.
   * Enable shared folder and bidirectional clipboard.
   * Run only if played from VMWare: /usr/bin/vmware-user.
-  * Disk size = 8688248K. Space Used = 18416K. Runtime = 00:00:00:09.
+  * Disk size = 9337984K. Space Used = 18404K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 libatkmm-1.6-1v5 libcairomm-1.0-1v5 libglibmm-2.4-1t64 libgtkmm-3.0-1t64 libmspack0t64

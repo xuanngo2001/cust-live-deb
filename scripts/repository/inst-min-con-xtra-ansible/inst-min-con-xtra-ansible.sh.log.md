@@ -2,7 +2,7 @@
   * After this operation, 275 MB of additional disk space will be used.
   * Install ansible.
   * sshpass: to allow passing username and password on the fly.
-  * Disk size = 2248808K. Space Used = 582128K. Runtime = 00:00:00:54.
+  * Disk size = 2294400K. Space Used = 582140K. Runtime = 00:00:01:14.
   * The following NEW packages will be installed:
   ```bash
 ansible ansible-core ca-certificates ieee-data libcbor0.10
