@@ -27,7 +27,7 @@ if [ -f ${VBOXGUEST_ADD_ISO} ]; then
   mkdir ${VBOXGUEST_ADD_MNT_DIR}
   mount -o loop,ro ${VBOXGUEST_ADD_ISO} ${VBOXGUEST_ADD_MNT_DIR}
 
-  ( cd ${VBOXGUEST_ADD_MNT_DIR} && ./VBoxLinuxAdditions.run )
+  ( cd ${VBOXGUEST_ADD_MNT_DIR} && chmod +x ./VBoxLinuxAdditions.run && ./VBoxLinuxAdditions.run )
   umount ${VBOXGUEST_ADD_MNT_DIR} && rm -f ${VBOXGUEST_ADD_ISO}
   
 else

@@ -16,9 +16,13 @@ Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libnfsidm
 Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 rpcbind amd64 1.2.7-1 [48.9 kB]
 Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 keyutils amd64 1.6.3-6 [55.7 kB]
 Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 nfs-common amd64 1:2.8.3-1 [269 kB]
+<<<<<<< HEAD
 Fetched 564 kB in 0s (8,601 kB/s)
+=======
+Fetched 564 kB in 0s (34.0 MB/s)
+>>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
 Selecting previously unselected package libevent-core-2.1-7t64:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 111172 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 111297 files and directories currently installed.)
 Preparing to unpack .../libevent-core-2.1-7t64_2.1.12-stable-10+b1_amd64.deb ...
 Unpacking libevent-core-2.1-7t64:amd64 (2.1.12-stable-10+b1) ...
 Selecting previously unselected package libnfsidmap1:amd64.
@@ -53,4 +57,8 @@ Created symlink '/etc/systemd/system/multi-user.target.wants/nfs-client.target' 
 Created symlink '/etc/systemd/system/remote-fs.target.wants/nfs-client.target' → '/usr/lib/systemd/system/nfs-client.target'.
 Processing triggers for libc-bin (2.41-12+deb13u2) ...
 CLDS: * Install nfs-common.
+<<<<<<< HEAD
 CLDS: * Disk size = 4540608K. Space Used = 2980K. Runtime = 00:00:00:06.
+=======
+CLDS: * Disk size = 4528000K. Space Used = 2984K. Runtime = 00:00:00:03.
+>>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
