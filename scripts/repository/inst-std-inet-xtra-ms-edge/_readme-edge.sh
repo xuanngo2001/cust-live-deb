@@ -17,3 +17,6 @@
 		./opt/microsoft/msedge/product_logo_32.xpm
 		./opt/microsoft/msedge/product_logo_256.png
 		./opt/microsoft/msedge/product_logo_48.png
+
+# Delete *.deb except the latest one.
+    \ls -1 microsoft-edge-stable_*.deb | sort -r| tail -n +2 | xargs rm -f
