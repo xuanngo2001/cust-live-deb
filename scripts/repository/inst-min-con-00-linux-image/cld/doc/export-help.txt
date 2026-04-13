@@ -1,3 +1,17 @@
 # Understanding environment variable: https://stackoverflow.com/questions/10938483/why-cant-i-specify-an-environment-variable-and-echo-it-in-the-same-command-line
 (export SOMEVAR=BBB; python -c "import os; print(os.environ['SOMEVAR'])")
 (SOMEVAR=BBB python -c "import os; print(os.environ['SOMEVAR'])")
+
+# Source file.env doesn´t work: https://stackoverflow.com/a/10803711
+    FOO=bar; bash -c 'echo $FOO'    # Output NOTHING bc FOO is now a shell variable, not environment variable.
+    FOO=bar  bash -c 'echo $FOO'    # Output bar
+    export FOO=bar; bash -c 'echo $FOO' # Output bar bc export will pass to the sub-shell, i.e. bash -c ...
+    
+    # Need to be on the same line.
+    source setup.sh && node app.js
+    export $(cat .env | xargs) && node app.js
+
+    # Recommended. Turn all variables into environment variables.
+        set -a            # Enable automatic exporting
+        source .env       # Load the file (or use . .env)
+        set +a            # Disable automatic exporting    

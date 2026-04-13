@@ -1,6 +1,9 @@
 # List and sort directories by size.
     du -c --max-depth=1 | sort -k1,1n | numfmt --field=1 --from-unit=1024 --to=iec-i  --format='%10f' --suffix B
 
+# List size of directories (largest first)
+    du -sh -- * | sort -rh
+
 # Busybox: List total size of each directory.
     du -ch -d 1     # Human size
     du -chm -d 1    # Megabytes size
