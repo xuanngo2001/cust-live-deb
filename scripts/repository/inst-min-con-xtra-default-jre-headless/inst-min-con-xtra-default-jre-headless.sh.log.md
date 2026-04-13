@@ -3,11 +3,7 @@
   * Install openjdk version "21.0.10" 2026-01-20.
   * To install JAVA binary: https://wiki.debian.org/JavaPackage.
   * JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64/bin/java".
-<<<<<<< HEAD
-  * Disk size = 2614936K. Space Used = 247912K. Runtime = 00:00:00:05.
-=======
-  * Disk size = 2599896K. Space Used = 247912K. Runtime = 00:00:00:04.
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
+  * Disk size = 2601324K. Space Used = 247912K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 ca-certificates-java default-jre-headless java-common libjpeg62-turbo liblcms2-2

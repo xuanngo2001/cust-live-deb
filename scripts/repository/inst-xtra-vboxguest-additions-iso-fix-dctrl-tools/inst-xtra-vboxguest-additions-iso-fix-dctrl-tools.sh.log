@@ -2,16 +2,15 @@ CLDS:>>>>>>>>> Running inst-xtra-vboxguest-additions-iso-fix-dctrl-tools.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-Suggested packages:
-  debtags
-The following NEW packages will be installed:
-  dctrl-tools
-0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
-Inst dctrl-tools (2.24-3+b1 master_trixie-main trixie:trixie [amd64])
-Conf dctrl-tools (2.24-3+b1 master_trixie-main trixie:trixie [amd64])
-CLDS: * 2021-05-01: From dkms (2.8.4-3~bpo10+1), it needs dctrl-tools.
-<<<<<<< HEAD
-CLDS: * Disk size = 9159688K. Space Used = 8K. Runtime = 00:00:00:01.
-=======
-CLDS: * Disk size = 9135468K. Space Used = 8K. Runtime = 00:00:00:01.
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.11.90)
+                         Depends: libatspi2.0-0 (>= 2.9.90)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6603740K. Space Used = 8K. Runtime = 00:00:00:01.

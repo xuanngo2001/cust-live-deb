@@ -3,56 +3,43 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  cmake-data libarchive13t64 libjsoncpp26 librhash1 libuv1t64
+  libarchive13t64 libjsoncpp26 librhash1 libuv1t64
 Suggested packages:
   cmake-doc cmake-format elpa-cmake-mode ninja-build lrzip
 Recommended packages:
   gcc make
 The following NEW packages will be installed:
-  cmake cmake-data libarchive13t64 libjsoncpp26 librhash1 libuv1t64
-0 upgraded, 6 newly installed, 0 to remove and 2 not upgraded.
-Need to get 16.0 MB of archives.
-After this operation, 60.0 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 cmake-data all 4.2.3-2~bpo13+1 [2,518 kB]
-Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libarchive13t64 amd64 3.7.4-4 [349 kB]
-Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libjsoncpp26 amd64 1.9.6-3 [81.7 kB]
-Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 librhash1 amd64 1.4.5-1 [132 kB]
-Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libuv1t64 amd64 1.50.0-2 [154 kB]
-Get:6 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 cmake amd64 4.2.3-2~bpo13+1 [12.8 MB]
-<<<<<<< HEAD
-Fetched 16.0 MB in 0s (63.0 MB/s)
-=======
-Fetched 16.0 MB in 0s (170 MB/s)
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
-Selecting previously unselected package cmake-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48813 files and directories currently installed.)
-Preparing to unpack .../0-cmake-data_4.2.3-2~bpo13+1_all.deb ...
-Unpacking cmake-data (4.2.3-2~bpo13+1) ...
+  cmake libarchive13t64 libjsoncpp26 librhash1 libuv1t64
+0 upgraded, 5 newly installed, 0 to remove and 2 not upgraded.
+Need to get 16.6 MB of archives.
+After this operation, 62.2 MB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libarchive13t64 amd64 3.7.4-4 [349 kB]
+Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libjsoncpp26 amd64 1.9.6-3 [81.7 kB]
+Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 librhash1 amd64 1.4.5-1 [132 kB]
+Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libuv1t64 amd64 1.50.0-2 [154 kB]
+Get:5 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 cmake amd64 4.3.1-1~bpo13+1 [15.9 MB]
+Fetched 16.6 MB in 0s (178 MB/s)
 Selecting previously unselected package libarchive13t64:amd64.
-Preparing to unpack .../1-libarchive13t64_3.7.4-4_amd64.deb ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 48814 files and directories currently installed.)
+Preparing to unpack .../libarchive13t64_3.7.4-4_amd64.deb ...
 Unpacking libarchive13t64:amd64 (3.7.4-4) ...
 Selecting previously unselected package libjsoncpp26:amd64.
-Preparing to unpack .../2-libjsoncpp26_1.9.6-3_amd64.deb ...
+Preparing to unpack .../libjsoncpp26_1.9.6-3_amd64.deb ...
 Unpacking libjsoncpp26:amd64 (1.9.6-3) ...
 Selecting previously unselected package librhash1:amd64.
-Preparing to unpack .../3-librhash1_1.4.5-1_amd64.deb ...
+Preparing to unpack .../librhash1_1.4.5-1_amd64.deb ...
 Unpacking librhash1:amd64 (1.4.5-1) ...
 Selecting previously unselected package libuv1t64:amd64.
-Preparing to unpack .../4-libuv1t64_1.50.0-2_amd64.deb ...
+Preparing to unpack .../libuv1t64_1.50.0-2_amd64.deb ...
 Unpacking libuv1t64:amd64 (1.50.0-2) ...
 Selecting previously unselected package cmake.
-Preparing to unpack .../5-cmake_4.2.3-2~bpo13+1_amd64.deb ...
-Unpacking cmake (4.2.3-2~bpo13+1) ...
+Preparing to unpack .../cmake_4.3.1-1~bpo13+1_amd64.deb ...
+Unpacking cmake (4.3.1-1~bpo13+1) ...
 Setting up libuv1t64:amd64 (1.50.0-2) ...
 Setting up libjsoncpp26:amd64 (1.9.6-3) ...
-Setting up cmake-data (4.2.3-2~bpo13+1) ...
 Setting up librhash1:amd64 (1.4.5-1) ...
 Setting up libarchive13t64:amd64 (3.7.4-4) ...
-Setting up cmake (4.2.3-2~bpo13+1) ...
+Setting up cmake (4.3.1-1~bpo13+1) ...
 Processing triggers for libc-bin (2.41-12+deb13u2) ...
 CLDS: * Install cmake.
-<<<<<<< HEAD
-CLDS: * Disk size = 2700644K. Space Used = 85708K. Runtime = 00:00:00:07.
-=======
-CLDS: * Disk size = 2685600K. Space Used = 85704K. Runtime = 00:00:00:02.
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
+CLDS: * Disk size = 2689816K. Space Used = 88492K. Runtime = 00:00:00:02.

@@ -2,11 +2,13 @@ CLDS:>>>>>>>>> Running inst-zclean-01-apt-get-00-clean-up.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-CLDS: * Remove unused packages: apt-get -y autoremove.
-CLDS: * Clean cached DEB: apt-get clean.
-<<<<<<< HEAD
-CLDS: * Disk size = 8221552K. Space Used = -10848K. Runtime = 00:00:00:01.
-=======
-CLDS: * Disk size = 8195408K. Space Used = -195028K. Runtime = 00:00:00:01.
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.11.90)
+                         Depends: libatspi2.0-0 (>= 2.9.90)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6561996K. Space Used = 4K. Runtime = 00:00:00:02.

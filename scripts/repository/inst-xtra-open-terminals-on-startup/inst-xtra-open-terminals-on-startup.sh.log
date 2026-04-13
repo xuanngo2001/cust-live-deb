@@ -2,28 +2,15 @@ CLDS:>>>>>>>>> Running inst-xtra-open-terminals-on-startup.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-x11-xserver-utils is already the newest version (7.7+11).
-0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-wmctrl is already the newest version (1.07+git20240228.1105759-1).
-0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
-Reading package lists...
-Building dependency tree...
-Reading state information...
-x11-utils is already the newest version (7.7+7).
-0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
-'./cld/app/jwm/bootstrap/jwmrc-startup-open-terminals.sh' -> '/usr/local/cld/app/jwm/bootstrap/jwmrc-startup-open-terminals.sh'
-'./cld/app/open-terminals' -> '/usr/local/cld/app/open-terminals'
-'./cld/app/open-terminals/bin' -> '/usr/local/cld/app/open-terminals/bin'
-'./cld/app/open-terminals/bin/open-terminals.sh' -> '/usr/local/cld/app/open-terminals/bin/open-terminals.sh'
-CLDS: * Install x11-xserver-utils for xrandr.
-CLDS: * Install wmctrl.
-CLDS: * Install x11-utils for xprop.
-CLDS: * Make open-terminals.sh run when JWM start.
-<<<<<<< HEAD
-CLDS: * Disk size = 9148652K. Space Used = 24K. Runtime = 00:00:00:01.
-=======
-CLDS: * Disk size = 9124428K. Space Used = 20K. Runtime = 00:00:00:01.
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.11.90)
+                         Depends: libatspi2.0-0 (>= 2.9.90)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6603716K. Space Used = 4K. Runtime = 00:00:00:02.

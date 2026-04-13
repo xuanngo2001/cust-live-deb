@@ -2,53 +2,15 @@ CLDS:>>>>>>>>> Running inst-std-system-monitor-switcher-lxrandr.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-Suggested packages:
-  nickle cairo-5c xorg-docs-core
-The following NEW packages will be installed:
-  x11-xserver-utils
-0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
-Need to get 163 kB of archives.
-After this operation, 572 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 x11-xserver-utils amd64 7.7+11 [163 kB]
-<<<<<<< HEAD
-Fetched 163 kB in 0s (3,433 kB/s)
-Selecting previously unselected package x11-xserver-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 136467 files and directories currently installed.)
-=======
-Fetched 163 kB in 0s (14.1 MB/s)
-Selecting previously unselected package x11-xserver-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 136592 files and directories currently installed.)
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
-Preparing to unpack .../x11-xserver-utils_7.7+11_amd64.deb ...
-Unpacking x11-xserver-utils (7.7+11) ...
-Setting up x11-xserver-utils (7.7+11) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
-  lxrandr
-0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
-Need to get 53.5 kB of archives.
-After this operation, 419 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 lxrandr amd64 0.3.3-1 [53.5 kB]
-<<<<<<< HEAD
-Fetched 53.5 kB in 0s (1,389 kB/s)
-Selecting previously unselected package lxrandr.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 136504 files and directories currently installed.)
-=======
-Fetched 53.5 kB in 0s (4,913 kB/s)
-Selecting previously unselected package lxrandr.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 136629 files and directories currently installed.)
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
-Preparing to unpack .../lxrandr_0.3.3-1_amd64.deb ...
-Unpacking lxrandr (0.3.3-1) ...
-Setting up lxrandr (0.3.3-1) ...
-Processing triggers for desktop-file-utils (0.28-1) ...
-'./cld/doc/monitor-help.txt' -> '/usr/local/cld/doc/monitor-help.txt'
-CLDS: * Install Monitor Switcher: lxrandr.
-CLDS: * Add lxrandr key binding.
-<<<<<<< HEAD
-CLDS: * Disk size = 7880772K. Space Used = 948K. Runtime = 00:00:00:02.
-=======
-CLDS: * Disk size = 7856496K. Space Used = 948K. Runtime = 00:00:00:02.
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
+                         Depends: libatk1.0-0 (>= 2.11.90)
+                         Depends: libatspi2.0-0 (>= 2.9.90)
+                         Depends: libgtk-3-0 (>= 3.9.10) or
+                                  libgtk-4-1 but it is not going to be installed
+                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+E: The following information from --solver 3.0 may provide additional context:
+   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+CLDS: * Disk size = 6603620K. Space Used = 4K. Runtime = 00:00:00:01.

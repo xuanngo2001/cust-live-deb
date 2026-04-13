@@ -1,16 +1,2 @@
 * >>>>>>>>> Running inst-std-inet-firefox-esr.sh ...
-  * After this operation, 277 MB of additional disk space will be used.
-  * Install the latest Firefox from Debian Mozilla team: Mozilla Firefox 140.8.0esr.
-  * Insert Iceweasel in Internet menu.
-  * To update Adobe Flash Player: update-flashplugin-nonfree --install.
-  * To test Adobe Flash Player: http://www.adobe.com/software/flash/about/.
-  * Supported browsers by flashplugin-nonfree: https://wiki.debian.org/FlashPlayer.
-<<<<<<< HEAD
-  * Disk size = 6258872K. Space Used = 342196K. Runtime = 00:00:00:04.
-=======
-  * Disk size = 6246516K. Space Used = 342192K. Runtime = 00:00:00:04.
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
-  * The following NEW packages will be installed:
-  ```bash
-firefox-esr libevent-2.1-7t64 libvpx9
-  ```
+  * Disk size = 5842828K. Space Used = 4K. Runtime = 00:00:00:01.

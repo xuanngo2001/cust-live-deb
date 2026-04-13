@@ -1,22 +1,23 @@
 CLDS:>>>>>>>>> Running inst-std-inet-xtra-ms-edge.sh ...
 Selecting previously unselected package microsoft-edge-stable.
-<<<<<<< HEAD
-(Reading database ... 133773 files and directories currently installed.)
-Preparing to unpack microsoft-edge-stable_146.0.3856.62-1_amd64.deb ...
-Unpacking microsoft-edge-stable (146.0.3856.62-1) ...
-Setting up microsoft-edge-stable (146.0.3856.62-1) ...
-=======
-(Reading database ... 133898 files and directories currently installed.)
-Preparing to unpack microsoft-edge-stable_145.0.3800.82-1_amd64.deb ...
-Unpacking microsoft-edge-stable (145.0.3800.82-1) ...
-Setting up microsoft-edge-stable (145.0.3800.82-1) ...
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
-update-alternatives: using /usr/bin/microsoft-edge-stable to provide /usr/bin/microsoft-edge (microsoft-edge) in auto mode
-Processing triggers for desktop-file-utils (0.28-1) ...
-CLDS: * Install MS Edge using *.deb.
-CLDS: * Change config to run MS Edge as root.
-<<<<<<< HEAD
-CLDS: * Disk size = 7550048K. Space Used = 643272K. Runtime = 00:00:00:11.
-=======
-CLDS: * Disk size = 7525784K. Space Used = 631000K. Runtime = 00:00:00:08.
->>>>>>> 71497768a0307724d577b3f7fbc28a92c300f033
+(Reading database ... 124847 files and directories currently installed.)
+Preparing to unpack microsoft-edge-stable_147.0.3912.60-1_amd64.deb ...
+Unpacking microsoft-edge-stable (147.0.3912.60-1) ...
+dpkg: dependency problems prevent configuration of microsoft-edge-stable:
+ microsoft-edge-stable depends on libatk-bridge2.0-0 (>= 2.5.3); however:
+  Package libatk-bridge2.0-0 is not installed.
+ microsoft-edge-stable depends on libatk1.0-0 (>= 2.11.90); however:
+  Package libatk1.0-0 is not installed.
+ microsoft-edge-stable depends on libatspi2.0-0 (>= 2.9.90); however:
+  Package libatspi2.0-0 is not installed.
+ microsoft-edge-stable depends on libgtk-3-0 (>= 3.9.10) | libgtk-4-1; however:
+  Package libgtk-3-0 is not installed.
+  Package libgtk-4-1 is not installed.
+ microsoft-edge-stable depends on xdg-utils (>= 1.0.2); however:
+  Package xdg-utils is not installed.
+
+dpkg: error processing package microsoft-edge-stable (--install):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ microsoft-edge-stable
+CLDS: * Disk size = 6603512K. Space Used = 642340K. Runtime = 00:00:00:09.
