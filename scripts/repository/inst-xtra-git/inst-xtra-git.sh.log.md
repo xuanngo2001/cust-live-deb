@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-git.sh ...
-  * Disk size = 6603704K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6640040K. Space Used = 4K. Runtime = 00:00:00:00.

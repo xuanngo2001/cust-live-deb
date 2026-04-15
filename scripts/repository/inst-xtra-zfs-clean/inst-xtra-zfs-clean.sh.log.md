@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-xtra-zfs-clean.sh ...
   * ***************************************  BEFORE cleaning  *****************************************
-  * Disk size = 6561976K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 6598624K. Space Used = 8K. Runtime = 00:00:00:01.

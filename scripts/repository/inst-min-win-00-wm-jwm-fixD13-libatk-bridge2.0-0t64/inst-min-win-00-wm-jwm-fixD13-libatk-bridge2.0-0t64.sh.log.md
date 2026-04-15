@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-win-00-wm-jwm-fixD13-libatk-bridge2.0-0t64.sh ...
-  * Disk size = 5296864K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 5332304K. Space Used = 4K. Runtime = 00:00:00:00.

@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-system-xtra-hardinfo.sh ...
-  * Disk size = 6603636K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6639972K. Space Used = 4K. Runtime = 00:00:00:01.

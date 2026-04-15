@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-00-jwm-menu.sh ...
-  * Disk size = 5684456K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 5719880K. Space Used = 4K. Runtime = 00:00:00:01.

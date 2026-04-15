@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-vboxguest-additions-iso-fixD13-gcc-14-for-host.sh ...
-  * Disk size = 6603744K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6640084K. Space Used = 4K. Runtime = 00:00:00:01.
