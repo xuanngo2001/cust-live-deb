@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-system-monitor-switcher-lxrandr.sh ...
-  * Disk size = 6639956K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6777452K. Space Used = 4K. Runtime = 00:00:00:01.

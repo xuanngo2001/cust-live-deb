@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-win-01-wm-jwm.sh ...
-  * Disk size = 5642860K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 5780352K. Space Used = 4K. Runtime = 00:00:00:01.

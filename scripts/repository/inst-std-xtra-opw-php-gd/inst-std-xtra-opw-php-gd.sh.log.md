@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-xtra-opw-php-gd.sh ...
-  * Disk size = 6639992K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6777484K. Space Used = 4K. Runtime = 00:00:00:01.

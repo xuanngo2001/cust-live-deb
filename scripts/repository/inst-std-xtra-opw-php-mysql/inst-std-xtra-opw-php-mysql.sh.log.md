@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-xtra-opw-php-mysql.sh ...
-  * Disk size = 6640000K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6777496K. Space Used = 4K. Runtime = 00:00:00:01.

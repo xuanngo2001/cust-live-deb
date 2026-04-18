@@ -4,7 +4,7 @@
   * Assumed packages installed: bzip2 & Xserver installed.
   * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
   * Delete VBoxGuestAdditions.iso[51900K]. Space used could be negative due to this deletion.
-  * Disk size = 6588200K. Space Used = -51884K. Runtime = 00:00:00:01.
+  * Disk size = 6725696K. Space Used = -51880K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libc6-dev*

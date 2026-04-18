@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-docker-ce.sh ...
-  * Disk size = 6640028K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 6777520K. Space Used = 4K. Runtime = 00:00:00:01.

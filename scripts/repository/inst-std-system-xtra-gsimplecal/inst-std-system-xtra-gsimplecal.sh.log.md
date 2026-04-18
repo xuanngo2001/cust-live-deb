@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-system-xtra-gsimplecal.sh ...
-  * Disk size = 6639968K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 6777460K. Space Used = 4K. Runtime = 00:00:00:01.

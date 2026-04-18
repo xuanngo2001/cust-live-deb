@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-remmina.sh ...
-  * Disk size = 6640064K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 6777552K. Space Used = 4K. Runtime = 00:00:00:01.

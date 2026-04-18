@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-games-openttd.sh ...
-  * Disk size = 6640032K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6777524K. Space Used = 4K. Runtime = 00:00:00:01.

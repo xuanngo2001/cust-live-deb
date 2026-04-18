@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-multimedia-xtra-sr-gromit-mpx.sh ...
-  * Disk size = 6639916K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6777412K. Space Used = 4K. Runtime = 00:00:00:01.
