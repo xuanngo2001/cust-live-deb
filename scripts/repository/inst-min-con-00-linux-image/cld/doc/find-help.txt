@@ -74,6 +74,8 @@
 # List files by size in descending order.
     find . -size +2k  -printf "%s %p\n" | sort -k1nr | cut -d ' ' --complement -f1 > big-list.txt
 
+# List total number of files for the first 2 levels of directories, sorted by file count.
+    find . -maxdepth 2 -type d -exec sh -c "echo -n '{}: ' ; find '{}' -type f | wc -l" \; | sort -n -k 2
 
 # Busybox commands
     # List all files recursively and sort by size (largest first)
