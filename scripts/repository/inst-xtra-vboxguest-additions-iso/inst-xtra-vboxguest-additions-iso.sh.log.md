@@ -7,7 +7,11 @@
   * Assumed packages installed: bzip2 & Xserver installed.
   * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
   * Delete VBoxGuestAdditions.iso[52140K]. Space used could be negative due to this deletion.
+<<<<<<< HEAD
   * Disk size = 9392464K. Space Used = 144848K. Runtime = 00:00:00:17.
+=======
+  * Disk size = 9325240K. Space Used = 144836K. Runtime = 00:00:00:06.
+>>>>>>> e86c73ecab752097c6b71fd38c354e9f1db8d339
   * The following NEW packages will be installed:
   ```bash
 build-essential dkms dpkg-dev g++ g++-14
