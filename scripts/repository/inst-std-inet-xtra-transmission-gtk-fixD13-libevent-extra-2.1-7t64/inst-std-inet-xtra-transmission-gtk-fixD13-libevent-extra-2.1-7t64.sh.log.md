@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-inet-xtra-transmission-gtk-fixD13-libevent-extra-2.1-7t64.sh ...
-  * Disk size = 6639856K. Space Used = 8K. Runtime = 00:00:00:01.
+  * Disk size = 6625024K. Space Used = 8K. Runtime = 00:00:00:01.

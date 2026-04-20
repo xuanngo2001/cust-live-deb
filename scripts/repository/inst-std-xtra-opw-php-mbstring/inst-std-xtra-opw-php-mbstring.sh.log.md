@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-xtra-opw-php-mbstring.sh ...
-  * Disk size = 6639996K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6625172K. Space Used = 4K. Runtime = 00:00:00:01.

@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-win-01-wm-terminal-xfce.sh ...
-  * Disk size = 5642864K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 5628944K. Space Used = 4K. Runtime = 00:00:00:01.

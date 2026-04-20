@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-inet-xtra-google-chrome.sh ...
-  * Disk size = 5996624K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 5982676K. Space Used = 4K. Runtime = 00:00:00:01.

@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-std-inet-xtra-transmission-gtk.sh ...
-  * Disk size = 6639860K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Disk size = 6625028K. Space Used = 4K. Runtime = 00:00:00:01.

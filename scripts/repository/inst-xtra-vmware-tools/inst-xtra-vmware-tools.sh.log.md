@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-xtra-vmware-tools.sh ...
-  * Disk size = 6588212K. Space Used = 12K. Runtime = 00:00:00:01.
+  * Disk size = 6573144K. Space Used = 12K. Runtime = 00:00:00:01.
