@@ -1,2 +1,9 @@
 * >>>>>>>>> Running inst-std-xtra-opw-php-zip.sh ...
-  * Disk size = 6777504K. Space Used = 4K. Runtime = 00:00:00:01.
+  * After this operation, 313 kB of additional disk space will be used.
+  * Install php-zip.
+  * This is required by: PHPExcel.
+  * Disk size = 8628672K. Space Used = 484K. Runtime = 00:00:00:03.
+  * The following NEW packages will be installed:
+  ```bash
+libzip5 php8.4-zip php-zip
+  ```

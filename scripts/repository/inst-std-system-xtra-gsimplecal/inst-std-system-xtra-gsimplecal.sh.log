@@ -2,16 +2,26 @@ CLDS:>>>>>>>>> Running inst-std-system-xtra-gsimplecal.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-You might want to run 'apt --fix-broken install' to correct these.
-The following packages have unmet dependencies:
- gsimplecal : Depends: libgtk-3-0t64 (>= 3.0.0) but it is not going to be installed
- microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
-                         Depends: libatk1.0-0 (>= 2.11.90)
-                         Depends: libatspi2.0-0 (>= 2.9.90)
-                         Depends: libgtk-3-0 (>= 3.9.10) or
-                                  libgtk-4-1 but it is not going to be installed
-                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
-E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
-E: The following information from --solver 3.0 may provide additional context:
-   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
-CLDS: * Disk size = 6777460K. Space Used = 4K. Runtime = 00:00:00:01.
+Suggested packages:
+  tint2 openbox
+The following NEW packages will be installed:
+  gsimplecal
+0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
+Need to get 26.2 kB of archives.
+After this operation, 85.0 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 gsimplecal amd64 2.5.1-1+b1 [26.2 kB]
+Fetched 26.2 kB in 0s (590 kB/s)
+Selecting previously unselected package gsimplecal.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 138948 files and directories currently installed.)
+Preparing to unpack .../gsimplecal_2.5.1-1+b1_amd64.deb ...
+Unpacking gsimplecal (2.5.1-1+b1) ...
+Setting up gsimplecal (2.5.1-1+b1) ...
+'./cld/home/.config/gtk-3.0' -> '/usr/local/cld/home/.config/gtk-3.0'
+'./cld/home/.config/gtk-3.0/gtk.css' -> '/usr/local/cld/home/.config/gtk-3.0/gtk.css'
+'./cld/home/.config/gsimplecal' -> '/usr/local/cld/home/.config/gsimplecal'
+'./cld/home/.config/gsimplecal/config' -> '/usr/local/cld/home/.config/gsimplecal/config'
+CLDS: * Install gsimplecal.
+CLDS: * Insert gsimplecal in JWM system tray.
+CLDS: * Overwrite gtk calendar style: home/.config/gtk-3.0/gtk.css.
+CLDS: * Overwrite gsimplecal configuration: home/.config/gsimplecal/config.
+CLDS: * Disk size = 7998472K. Space Used = 156K. Runtime = 00:00:00:01.

@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-vm-xrdp.sh ...
   * After this operation, 8,409 kB of additional disk space will be used.
   * Install xrdp.
-  * Disk size = 5414144K. Space Used = 12096K. Runtime = 00:00:00:04.
+  * Disk size = 5334752K. Space Used = 12088K. Runtime = 00:00:00:09.
   * The following NEW packages will be installed:
   ```bash
 libopus0 libxfixes3 libxrandr2 ssl-cert xrdp

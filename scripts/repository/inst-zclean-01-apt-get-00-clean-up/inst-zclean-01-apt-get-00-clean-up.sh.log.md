@@ -1,2 +1,4 @@
 * >>>>>>>>> Running inst-zclean-01-apt-get-00-clean-up.sh ...
-  * Disk size = 6736132K. Space Used = 4K. Runtime = 00:00:00:01.
+  * Remove unused packages: apt-get -y autoremove.
+  * Clean cached DEB: apt-get clean.
+  * Disk size = 8333544K. Space Used = -193860K. Runtime = 00:00:00:01.
