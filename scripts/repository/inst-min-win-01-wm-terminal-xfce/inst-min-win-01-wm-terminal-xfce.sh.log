@@ -2,29 +2,20 @@ CLDS:>>>>>>>>> Running inst-min-win-01-wm-terminal-xfce.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-Solving dependencies...
-Some packages could not be installed. This may mean that you have
-requested an impossible situation or if you are using the unstable
-distribution that some required packages have not yet been created
-or been moved out of Incoming.
-The following information may help to resolve the situation:
-
-The following packages have unmet dependencies:
- libatspi2.0-0t64 : Depends: libxres1 (>= 2:1.2.1) but it is not installable
-E: Unable to correct problems, you have held broken packages.
-E: The following information from --solver 3.0 may provide additional context:
-   Unable to satisfy dependencies. Reached two conflicting decisions:
-   1. libatspi2.0-0t64:amd64=2.60.0-1~bpo13+1 is selected for install because:
-      1. libxfce4ui-2-0:amd64=4.20.1-1 is selected for install
-      2. libxfce4ui-2-0:amd64 Depends libgtk-3-0t64 (>= 3.21.4)
-      3. libgtk-3-0t64:amd64 Depends libatk-bridge2.0-0t64 (>= 2.15.1)
-      4. libatk-bridge2.0-0t64:amd64 is available in versions 2.60.0-1~bpo13+1, 2.56.2-1+deb13u1
-         [selected libatk-bridge2.0-0t64:amd64=2.60.0-1~bpo13+1 for install]
-      5. libatk-bridge2.0-0t64:amd64=2.60.0-1~bpo13+1 Depends libatspi2.0-0t64 (= 2.60.0-1~bpo13+1)
-      For context, additional choices that could not be installed:
-      * In libatk-bridge2.0-0t64:amd64 is available in versions 2.60.0-1~bpo13+1, 2.56.2-1+deb13u1:
-        - libatk-bridge2.0-0t64:amd64=2.56.2-1+deb13u1 is not selected for install
-   2. libatspi2.0-0t64:amd64=2.60.0-1~bpo13+1 Depends libxres1 (>= 2:1.2.1)
-      but none of the choices are installable:
-      [no choices]
-CLDS: * Disk size = 5628944K. Space Used = 4K. Runtime = 00:00:00:01.
+libxfce4ui-2-0 is already the newest version (4.20.1-1).
+libxfce4ui-2-0 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+exo-utils is already the newest version (4.20.0-1).
+exo-utils set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+xfce4-terminal is already the newest version (1.1.4-1).
+xfce4-terminal set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+CLDS: * Install terminal: xfce4-terminal.
+CLDS: * Disk size = 5696476K. Space Used = 4K. Runtime = 00:00:00:01.

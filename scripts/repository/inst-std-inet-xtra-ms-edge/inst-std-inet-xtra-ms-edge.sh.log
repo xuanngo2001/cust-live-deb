@@ -1,23 +1,11 @@
 CLDS:>>>>>>>>> Running inst-std-inet-xtra-ms-edge.sh ...
 Selecting previously unselected package microsoft-edge-stable.
-(Reading database ... 125938 files and directories currently installed.)
+(Reading database ... 136144 files and directories currently installed.)
 Preparing to unpack microsoft-edge-stable_147.0.3912.60-1_amd64.deb ...
 Unpacking microsoft-edge-stable (147.0.3912.60-1) ...
-dpkg: dependency problems prevent configuration of microsoft-edge-stable:
- microsoft-edge-stable depends on libatk-bridge2.0-0 (>= 2.5.3); however:
-  Package libatk-bridge2.0-0 is not installed.
- microsoft-edge-stable depends on libatk1.0-0 (>= 2.11.90); however:
-  Package libatk1.0-0 is not installed.
- microsoft-edge-stable depends on libatspi2.0-0 (>= 2.9.90); however:
-  Package libatspi2.0-0 is not installed.
- microsoft-edge-stable depends on libgtk-3-0 (>= 3.9.10) | libgtk-4-1; however:
-  Package libgtk-3-0 is not installed.
-  Package libgtk-4-1 is not installed.
- microsoft-edge-stable depends on xdg-utils (>= 1.0.2); however:
-  Package xdg-utils is not installed.
-
-dpkg: error processing package microsoft-edge-stable (--install):
- dependency problems - leaving unconfigured
-Errors were encountered while processing:
- microsoft-edge-stable
-CLDS: * Disk size = 6625016K. Space Used = 642340K. Runtime = 00:00:00:08.
+Setting up microsoft-edge-stable (147.0.3912.60-1) ...
+update-alternatives: using /usr/bin/microsoft-edge-stable to provide /usr/bin/microsoft-edge (microsoft-edge) in auto mode
+Processing triggers for desktop-file-utils (0.28-1) ...
+CLDS: * Install MS Edge using *.deb.
+CLDS: * Change config to run MS Edge as root.
+CLDS: * Disk size = 7600388K. Space Used = 642404K. Runtime = 00:00:00:09.

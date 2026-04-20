@@ -2,16 +2,35 @@ CLDS:>>>>>>>>> Running inst-xtra-web-dev-php-sqlite3.sh ...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-You might want to run 'apt --fix-broken install' to correct these.
-The following packages have unmet dependencies:
- microsoft-edge-stable : Depends: libatk-bridge2.0-0 (>= 2.5.3)
-                         Depends: libatk1.0-0 (>= 2.11.90)
-                         Depends: libatspi2.0-0 (>= 2.9.90)
-                         Depends: libgtk-3-0 (>= 3.9.10) or
-                                  libgtk-4-1 but it is not going to be installed
-                         Depends: xdg-utils (>= 1.0.2) but it is not going to be installed
- php-sqlite3 : Depends: php8.4-sqlite3 but it is not going to be installed
-E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
-E: The following information from --solver 3.0 may provide additional context:
-   Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
-CLDS: * Disk size = 6583548K. Space Used = 4K. Runtime = 00:00:00:01.
+The following additional packages will be installed:
+  php8.4-sqlite3
+The following NEW packages will be installed:
+  php-sqlite3 php8.4-sqlite3
+0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
+Need to get 38.9 kB of archives.
+After this operation, 174 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 php8.4-sqlite3 amd64 8.4.11-1 [34.9 kB]
+Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 php-sqlite3 all 2:8.4+96 [3,976 B]
+Fetched 38.9 kB in 0s (3,110 kB/s)
+Selecting previously unselected package php8.4-sqlite3.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 170586 files and directories currently installed.)
+Preparing to unpack .../php8.4-sqlite3_8.4.11-1_amd64.deb ...
+Unpacking php8.4-sqlite3 (8.4.11-1) ...
+Selecting previously unselected package php-sqlite3.
+Preparing to unpack .../php-sqlite3_2%3a8.4+96_all.deb ...
+Unpacking php-sqlite3 (2:8.4+96) ...
+Setting up php8.4-sqlite3 (8.4.11-1) ...
+Creating config file /etc/php/8.4/mods-available/sqlite3.ini with new version
+Creating config file /etc/php/8.4/mods-available/pdo_sqlite.ini with new version
+Setting up php-sqlite3 (2:8.4+96) ...
+Processing triggers for php8.4-fpm (8.4.11-1) ...
+Running in chroot, ignoring request.
+invoke-rc.d: policy-rc.d denied execution of restart.
+NOTICE: Not enabling PHP 8.4 FPM by default.
+NOTICE: To enable PHP 8.4 FPM in Apache2 do:
+NOTICE: a2enmod proxy_fcgi setenvif
+NOTICE: a2enconf php8.4-fpm
+NOTICE: You are seeing this message because you have apache2 package installed.
+Processing triggers for php8.4-cli (8.4.11-1) ...
+CLDS: * Install php-sqlite3.
+CLDS: * Disk size = 9701572K. Space Used = 280K. Runtime = 00:00:00:03.

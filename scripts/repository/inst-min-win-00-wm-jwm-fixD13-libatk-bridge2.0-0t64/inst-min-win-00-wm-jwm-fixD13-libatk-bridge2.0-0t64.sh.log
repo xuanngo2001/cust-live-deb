@@ -2,22 +2,34 @@ CLDS:>>>>>>>>> Running inst-min-win-00-wm-jwm-fixD13-libatk-bridge2.0-0t64.sh ..
 Reading package lists...
 Building dependency tree...
 Reading state information...
-Solving dependencies...
-Some packages could not be installed. This may mean that you have
-requested an impossible situation or if you are using the unstable
-distribution that some required packages have not yet been created
-or been moved out of Incoming.
-The following information may help to resolve the situation:
-
-The following packages have unmet dependencies:
- libatspi2.0-0t64 : Depends: libxres1 (>= 2:1.2.1) but it is not installable
-E: Unable to correct problems, you have held broken packages.
-E: The following information from --solver 3.0 may provide additional context:
-   Unable to satisfy dependencies. Reached two conflicting decisions:
-   1. libatspi2.0-0t64:amd64=2.60.0-1~bpo13+1 is selected for install because:
-      1. libatk-bridge2.0-0t64:amd64=2.60.0-1~bpo13+1 is selected for install
-      2. libatk-bridge2.0-0t64:amd64=2.60.0-1~bpo13+1 Depends libatspi2.0-0t64 (= 2.60.0-1~bpo13+1)
-   2. libatspi2.0-0t64:amd64=2.60.0-1~bpo13+1 Depends libxres1 (>= 2:1.2.1)
-      but none of the choices are installable:
-      [no choices]
-CLDS: * Disk size = 5318372K. Space Used = 4K. Runtime = 00:00:00:01.
+The following additional packages will be installed:
+  at-spi2-common libatk1.0-0t64 libatspi2.0-0t64 libxi6 libxres1
+Recommended packages:
+  at-spi2-core
+The following NEW packages will be installed:
+  at-spi2-common libatk-bridge2.0-0t64 libatk1.0-0t64 libatspi2.0-0t64 libxi6
+  libxres1
+0 upgraded, 6 newly installed, 0 to remove and 2 not upgraded.
+Inst at-spi2-common (2.60.0-1~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [all])
+Inst libatk1.0-0t64 (2.60.0-1~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [amd64])
+Inst libxi6 (2:1.8.2-1 master_trixie-main trixie:trixie [amd64])
+Inst libxres1 (2:1.2.1-1+b2 master_trixie-main trixie:trixie [amd64])
+Inst libatspi2.0-0t64 (2.60.0-1~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [amd64])
+Inst libatk-bridge2.0-0t64 (2.60.0-1~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [amd64])
+Conf at-spi2-common (2.60.0-1~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [all])
+Conf libatk1.0-0t64 (2.60.0-1~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [amd64])
+Conf libxi6 (2:1.8.2-1 master_trixie-main trixie:trixie [amd64])
+Conf libxres1 (2:1.2.1-1+b2 master_trixie-main trixie:trixie [amd64])
+Conf libatspi2.0-0t64 (2.60.0-1~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [amd64])
+Conf libatk-bridge2.0-0t64 (2.60.0-1~bpo13+1 master_trixie-backports-main trixie-backports:trixie-backports [amd64])
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  libxres1
+0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
+Inst libxres1 (2:1.2.1-1+b2 master_trixie-main trixie:trixie [amd64])
+Conf libxres1 (2:1.2.1-1+b2 master_trixie-main trixie:trixie [amd64])
+CLDS: * Install libatk-bridge2.0-0t64.
+CLDS: * Trixie: 2026-01-06: Force to install backport version instead of stable version.
+CLDS: * Disk size = 5324080K. Space Used = 8K. Runtime = 00:00:00:01.
