@@ -2,7 +2,8 @@
 set -e # Exit immediately if a command exits with a non-zero status
 # Description: BASH TEMPLATE
 this_script=$(basename "${0}")
-echo -e "\033[0;33m======> $(date +"%Y-%m-%d %0k.%M.%S"): ${this_script} \033[0m"
+DATE_TIME_STR=$(date +'%Y-%m-%d_%0k.%M.%S')
+echo -e "\033[0;33m======> ${DATE_TIME_STR}: ${this_script} \033[0m"
 
         # Common function
             source $HOME/.bashrc
