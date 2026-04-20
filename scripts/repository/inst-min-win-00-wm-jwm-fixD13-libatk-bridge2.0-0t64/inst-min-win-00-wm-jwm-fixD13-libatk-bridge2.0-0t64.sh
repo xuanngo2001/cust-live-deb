@@ -7,7 +7,8 @@ SCRIPT_NAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
 echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 
 # Explicitly list dependent packages
-    apt-get install -s -y libatk-bridge2.0-0t64 
+    apt-get install -s -y libatk-bridge2.0-0t64
+    apt-get install -s -y libxres1
 
 # Install libatk-bridge2.0-0t64.
     # apt-get -y install libatk-bridge2.0-0t64=2.58.2-1~bpo13+1
