@@ -85,8 +85,8 @@ ii  dkms                                 3.2.2-1~deb13u1                       a
 ii  dmidecode                            3.6-2                                 amd64        SMBIOS/DMI table decoder
 ii  dmsetup                              2:1.02.205-2                          amd64        Linux Kernel Device Mapper userspace library
 ii  docker-buildx-plugin                 0.33.0-1~debian.13~trixie             amd64        Docker Buildx plugin extends build capabilities with BuildKit.
-ii  docker-ce                            5:29.4.0-1~debian.13~trixie           amd64        Docker: the open-source application container engine
-ii  docker-ce-cli                        5:29.4.0-1~debian.13~trixie           amd64        Docker CLI: the open-source application container engine
+ii  docker-ce                            5:29.4.1-1~debian.13~trixie           amd64        Docker: the open-source application container engine
+ii  docker-ce-cli                        5:29.4.1-1~debian.13~trixie           amd64        Docker CLI: the open-source application container engine
 ii  docker-compose-plugin                5.1.3-1~debian.13~trixie              amd64        Docker Compose (V2) plugin for the Docker CLI.
 ii  dosfstools                           4.2-1.2                               amd64        utilities for making and checking MS-DOS FAT filesystems
 ii  dpkg                                 1.22.22                               amd64        Debian package management system
@@ -98,6 +98,7 @@ ii  exo-utils                            4.20.0-1                              a
 ii  fdisk                                2.41-5                                amd64        collection of partitioning utilities
 ii  feh                                  3.10.3-1                              amd64        imlib2 based image viewer
 ii  ffmpeg                               10:7.1.3-dmo1+deb13u1                 amd64        audio/video encoder, streaming server & audio/video file converter
+ii  file                                 1:5.46-5                              amd64        Recognize the type of data in a file using "magic" numbers
 ii  findimagedupes                       2.20.1-3+b3                           amd64        Finds visually similar or duplicate images
 ii  findutils                            4.10.0-3                              amd64        utilities for finding files--find, xargs
 ii  firefox-esr                          140.8.0esr-1~deb13u1                  amd64        Mozilla Firefox web browser - Extended Support Release (ESR)
@@ -594,6 +595,7 @@ ii  libnss3:amd64                        2:3.110-1+deb13u1                     a
 ii  libntfs-3g89t64:amd64                1:2022.10.3-5                         amd64        read/write NTFS driver for FUSE (runtime library)
 ii  libnuma1:amd64                       2.0.19-1                              amd64        Libraries for controlling NUMA policy
 ii  libnvme1t64                          1.13-2                                amd64        NVMe management library (library)
+ii  libnvpair3linux:amd64                2.3.2-2                               amd64        Solaris name-value library for Linux
 ii  libodbc2:amd64                       2.3.12-2                              amd64        ODBC Driver Manager library for Unix
 ii  libodbcinst2:amd64                   2.3.12-2                              amd64        Support library for accessing ODBC configuration files
 ii  libogdi4.1:amd64                     4.1.1+ds-5                            amd64        Open Geographic Datastore Interface Library -- library
@@ -797,6 +799,7 @@ ii  liburiparser1:amd64                  0.9.8+dfsg-2                          a
 ii  libusb-1.0-0:amd64                   2:1.0.28-1                            amd64        userspace USB programming library
 ii  libutempter0:amd64                   1.2.1-4                               amd64        privileged helper for utmp/wtmp updates (runtime)
 ii  libuuid1:amd64                       2.41-5                                amd64        Universally Unique ID library
+ii  libuutil3linux:amd64                 2.3.2-2                               amd64        Solaris userland utility library for Linux
 ii  libuv1t64:amd64                      1.50.0-2                              amd64        asynchronous event notification library - runtime library
 ii  libv4l-0t64:amd64                    1.30.1-1                              amd64        Collection of video4linux support libraries
 ii  libv4lconvert0t64:amd64              1.30.1-1                              amd64        Video4linux frame format conversion library
@@ -909,10 +912,12 @@ ii  libyaml-cpp0.8:amd64                 0.8.0+dfsg-7                          a
 ii  libyaml-pp-perl                      0.39.0-1                              all          pure-perl YAML framework
 ii  libyuv0:amd64                        0.0.1904.20250204-1                   amd64        Library for YUV scaling (shared library)
 ii  libz3-4:amd64                        4.13.3-1                              amd64        theorem prover from Microsoft Research - runtime libraries
+ii  libzfs6linux:amd64                   2.3.2-2                               amd64        OpenZFS filesystem library for Linux - general support
 ii  libzimg2:amd64                       1:3.0.5-dmo1+b1                       amd64        scaling, colorspace conversion and dithering library
 ii  libzip5:amd64                        1.11.3-2                              amd64        library for reading, creating, and modifying zip archives (runtime)
 ii  libzix-0-0:amd64                     0.6.2-1                               amd64        library of portability wrappers and data structures (shared library)
 ii  libzmq5:amd64                        4.3.5-1+b3                            amd64        lightweight messaging kernel (shared library)
+ii  libzpool6linux:amd64                 2.3.2-2                               amd64        OpenZFS pool library for Linux
 ii  libzstd1:amd64                       1.5.7+dfsg-1                          amd64        fast lossless compression algorithm
 ii  libzvbi-common                       0.2.44-1                              all          Vertical Blanking Interval decoder (VBI) - common files
 ii  libzvbi0t64:amd64                    0.2.44-1                              amd64        Vertical Blanking Interval decoder (VBI) - runtime files
@@ -947,7 +952,7 @@ ii  mawk                                 1.3.4.20250131-1                      a
 ii  media-types                          13.0.0                                all          List of standard media types and their usual file extension
 ii  menu                                 2.1.51                                amd64        generates programs menu for all menu-aware applications
 ii  mesa-libgallium:amd64                25.2.6-1~bpo13+1                      amd64        shared infrastructure for Mesa drivers
-ii  microsoft-edge-stable                147.0.3912.72-1                       amd64        The web browser from Microsoft
+ii  microsoft-edge-stable                147.0.3912.60-1                       amd64        The web browser from Microsoft
 ii  module-assistant                     0.11.14                               all          tool to make module package creation easier
 ii  mount                                2.41-5                                amd64        tools for mounting and manipulating filesystems
 ii  mpv                                  1:0.40.0-dmo2+deb13u1                 amd64        Free and open-source general-purpose video player
@@ -1153,6 +1158,9 @@ ii  xserver-xorg-video-vmware            1:13.4.0-1                            a
 ii  xsltproc                             1.1.35-1.2+deb13u2                    amd64        XSLT 1.0 command line processor
 ii  xz-utils                             5.8.1-1                               amd64        XZ-format compression utilities
 ii  yudit-common                         3.1.0-1                               all          Unicode text editor (arch-independent files)
+ii  zfs-dkms                             2.3.2-2                               all          OpenZFS filesystem kernel modules for Linux
+ii  zfs-initramfs                        2.3.2-2                               all          OpenZFS root filesystem capabilities for Linux - initramfs
+ii  zfsutils-linux                       2.3.2-2                               amd64        command-line tools to manage OpenZFS filesystems
 ii  zip                                  3.0-15                                amd64        Archiver for .zip files
 ii  zlib1g:amd64                         1:1.3.dfsg+really1.3.1-1+b1           amd64        compression library - runtime
 ii  zlib1g-dev:amd64                     1:1.3.dfsg+really1.3.1-1+b1           amd64        compression library - development
