@@ -1,15 +1,7 @@
 CLDS:>>>>>>>>> Running inst-min-con-xtra-gcp-google-cloud-cli.sh ...
   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
                                  Dload  Upload  Total   Spent   Left   Speed
-<<<<<<< HEAD
-  0      0   0      0   0      0      0      0                              0100   1022 100   1022   0      0  13877      0                              0100   1022 100   1022   0      0  13856      0                              0100   1022 100   1022   0      0  13848      0                              0
-=======
-<<<<<<< HEAD
-  0      0   0      0   0      0      0      0                              0100   1022 100   1022   0      0   8137      0                              0100   1022 100   1022   0      0   8130      0                              0100   1022 100   1022   0      0   8128      0                              0
-=======
-  0      0   0      0   0      0      0      0                              0100   1022 100   1022   0      0  10483      0                              0100   1022 100   1022   0      0  10474      0                              0100   1022 100   1022   0      0  10470      0                              0
->>>>>>> e86c73ecab752097c6b71fd38c354e9f1db8d339
->>>>>>> 6b3875cd8db8f403c0c4deaf983fdb2f4efd948e
+  0      0   0      0   0      0      0      0                              0100   1022 100   1022   0      0  18201      0                              0100   1022 100   1022   0      0  18169      0                              0100   1022 100   1022   0      0  18148      0                              0
 deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main
 Reading package lists...
 Building dependency tree...
@@ -26,21 +18,17 @@ The following NEW packages will be installed:
 Need to get 148 MB of archives.
 After this operation, 613 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk/main amd64 google-cloud-cli amd64 565.0.0-0 [148 MB]
-<<<<<<< HEAD
-Fetched 148 MB in 1s (178 MB/s)
-=======
-<<<<<<< HEAD
-Fetched 148 MB in 2s (90.0 MB/s)
-=======
-Fetched 148 MB in 1s (181 MB/s)
->>>>>>> e86c73ecab752097c6b71fd38c354e9f1db8d339
->>>>>>> 6b3875cd8db8f403c0c4deaf983fdb2f4efd948e
+Fetched 148 MB in 2s (97.8 MB/s)
 Selecting previously unselected package google-cloud-cli.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54456 files and directories currently installed.)
 Preparing to unpack .../google-cloud-cli_565.0.0-0_amd64.deb ...
 Unpacking google-cloud-cli (565.0.0-0) ...
 Setting up google-cloud-cli (565.0.0-0) ...
 Processing triggers for libc-bin (2.41-12+deb13u2) ...
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 CLDS: * Install google-cloud-cli.
 CLDS: * Google Cloud SDK 565.0.0
 CLDS: * alpha 2026.04.10
@@ -51,12 +39,4 @@ CLDS: * core 2026.04.10
 CLDS: * gcloud-crc32c 1.0.0
 CLDS: * gsutil 5.36
 CLDS: * preview 2026.04.10
-<<<<<<< HEAD
-CLDS: * Disk size = 4151648K. Space Used = 1194180K. Runtime = 00:00:00:49.
-=======
-<<<<<<< HEAD
-CLDS: * Disk size = 4217792K. Space Used = 1194228K. Runtime = 00:00:01:10.
-=======
-CLDS: * Disk size = 4151468K. Space Used = 1194180K. Runtime = 00:00:00:52.
->>>>>>> e86c73ecab752097c6b71fd38c354e9f1db8d339
->>>>>>> 6b3875cd8db8f403c0c4deaf983fdb2f4efd948e
+CLDS: * Disk size = 4151800K. Space Used = 1194180K. Runtime = 00:00:00:51.

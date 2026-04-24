@@ -1,15 +1,7 @@
 * >>>>>>>>> Running inst-std-xtra-opw-php-curl.sh ...
   * After this operation, 174 kB of additional disk space will be used.
   * Install php-curl: Required for DrupalConsole
-<<<<<<< HEAD
-  * Disk size = 8552968K. Space Used = 272K. Runtime = 00:00:00:02.
-=======
-<<<<<<< HEAD
-  * Disk size = 8620032K. Space Used = 272K. Runtime = 00:00:00:02.
-=======
-  * Disk size = 8552800K. Space Used = 272K. Runtime = 00:00:00:02.
->>>>>>> e86c73ecab752097c6b71fd38c354e9f1db8d339
->>>>>>> 6b3875cd8db8f403c0c4deaf983fdb2f4efd948e
+  * Disk size = 8556776K. Space Used = 268K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 php8.4-curl php-curl

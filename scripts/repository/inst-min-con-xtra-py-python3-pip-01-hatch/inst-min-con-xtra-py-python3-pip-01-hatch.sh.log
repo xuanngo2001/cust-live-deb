@@ -4,7 +4,7 @@ Collecting hatch
 Collecting backports-zstd>=1.0.0 (from hatch)
   Downloading backports_zstd-1.3.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (6.9 kB)
 Collecting click>=8.0.6 (from hatch)
-  Downloading click-8.3.2-py3-none-any.whl.metadata (2.6 kB)
+  Downloading click-8.3.3-py3-none-any.whl.metadata (2.6 kB)
 Collecting hatchling>=1.27.0 (from hatch)
   Downloading hatchling-1.29.0-py3-none-any.whl.metadata (3.8 kB)
 Collecting httpx>=0.22.0 (from hatch)
@@ -39,7 +39,7 @@ Collecting virtualenv>=21 (from hatch)
 Collecting ptyprocess>=0.5 (from pexpect~=4.8->hatch)
   Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
 Collecting pathspec>=0.10.1 (from hatchling>=1.27.0->hatch)
-  Downloading pathspec-1.0.4-py3-none-any.whl.metadata (13 kB)
+  Downloading pathspec-1.1.0-py3-none-any.whl.metadata (14 kB)
 Collecting pluggy>=1.0.0 (from hatchling>=1.27.0->hatch)
   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
 Collecting trove-classifiers (from hatchling>=1.27.0->hatch)
@@ -47,11 +47,11 @@ Collecting trove-classifiers (from hatchling>=1.27.0->hatch)
 Collecting anyio (from httpx>=0.22.0->hatch)
   Downloading anyio-4.13.0-py3-none-any.whl.metadata (4.5 kB)
 Collecting certifi (from httpx>=0.22.0->hatch)
-  Downloading certifi-2026.2.25-py3-none-any.whl.metadata (2.5 kB)
+  Downloading certifi-2026.4.22-py3-none-any.whl.metadata (2.5 kB)
 Collecting httpcore==1.* (from httpx>=0.22.0->hatch)
   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
 Collecting idna (from httpx>=0.22.0->hatch)
-  Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+  Downloading idna-3.13-py3-none-any.whl.metadata (8.0 kB)
 Collecting h11>=0.16 (from httpcore==1.*->httpx>=0.22.0->hatch)
   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
 Collecting SecretStorage>=3.2 (from keyring>=23.5.0->hatch)
@@ -81,16 +81,16 @@ Downloading hatch-1.16.5-py3-none-any.whl (141 kB)
 Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
 Downloading userpath-1.9.2-py3-none-any.whl (9.1 kB)
 Downloading backports_zstd-1.3.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (490 kB)
-Downloading click-8.3.2-py3-none-any.whl (108 kB)
+Downloading click-8.3.3-py3-none-any.whl (110 kB)
 Downloading hatchling-1.29.0-py3-none-any.whl (76 kB)
 Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
 Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
 Downloading hyperlink-21.0.0-py2.py3-none-any.whl (74 kB)
-Downloading idna-3.11-py3-none-any.whl (71 kB)
+Downloading idna-3.13-py3-none-any.whl (68 kB)
 Downloading keyring-25.7.0-py3-none-any.whl (39 kB)
 Downloading jeepney-0.9.0-py3-none-any.whl (49 kB)
-Downloading pathspec-1.0.4-py3-none-any.whl (55 kB)
+Downloading pathspec-1.1.0-py3-none-any.whl (56 kB)
 Downloading platformdirs-4.9.6-py3-none-any.whl (21 kB)
 Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
 Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
@@ -98,15 +98,7 @@ Downloading python_discovery-1.2.2-py3-none-any.whl (31 kB)
 Downloading filelock-3.29.0-py3-none-any.whl (39 kB)
 Downloading rich-15.0.0-py3-none-any.whl (310 kB)
 Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
-<<<<<<< HEAD
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 52.4 MB/s eta 0:00:00
-=======
-<<<<<<< HEAD
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 1.8 MB/s eta 0:00:00
-=======
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 44.2 MB/s eta 0:00:00
->>>>>>> e86c73ecab752097c6b71fd38c354e9f1db8d339
->>>>>>> 6b3875cd8db8f403c0c4deaf983fdb2f4efd948e
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 60.5 MB/s eta 0:00:00
 Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
 Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
 Downloading secretstorage-3.5.0-py3-none-any.whl (15 kB)
@@ -114,24 +106,12 @@ Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
 Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
 Downloading tomlkit-0.14.0-py3-none-any.whl (39 kB)
 Downloading uv-0.11.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (24.9 MB)
-<<<<<<< HEAD
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.9/24.9 MB 62.2 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.9/24.9 MB 59.1 MB/s eta 0:00:00
 Downloading virtualenv-21.2.4-py3-none-any.whl (5.8 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8/5.8 MB 59.0 MB/s eta 0:00:00
-=======
-<<<<<<< HEAD
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.9/24.9 MB 1.7 MB/s eta 0:00:00
-Downloading virtualenv-21.2.4-py3-none-any.whl (5.8 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8/5.8 MB 1.4 MB/s eta 0:00:00
-=======
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.9/24.9 MB 64.0 MB/s eta 0:00:00
-Downloading virtualenv-21.2.4-py3-none-any.whl (5.8 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8/5.8 MB 60.9 MB/s eta 0:00:00
->>>>>>> e86c73ecab752097c6b71fd38c354e9f1db8d339
->>>>>>> 6b3875cd8db8f403c0c4deaf983fdb2f4efd948e
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8/5.8 MB 60.7 MB/s eta 0:00:00
 Downloading distlib-0.4.0-py2.py3-none-any.whl (469 kB)
 Downloading anyio-4.13.0-py3-none-any.whl (114 kB)
-Downloading certifi-2026.2.25-py3-none-any.whl (153 kB)
+Downloading certifi-2026.4.22-py3-none-any.whl (135 kB)
 Downloading jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
 Downloading jaraco_context-6.1.2-py3-none-any.whl (7.9 kB)
 Downloading jaraco_functools-4.4.0-py3-none-any.whl (10 kB)
@@ -140,16 +120,8 @@ Downloading pyproject_hooks-1.2.0-py3-none-any.whl (10 kB)
 Downloading trove_classifiers-2026.1.14.14-py3-none-any.whl (14 kB)
 Installing collected packages: trove-classifiers, ptyprocess, distlib, uv, tomlkit, tomli-w, shellingham, pyproject-hooks, pygments, pluggy, platformdirs, pexpect, pathspec, more-itertools, mdurl, jeepney, jaraco.context, idna, h11, filelock, click, certifi, backports-zstd, userpath, SecretStorage, python-discovery, markdown-it-py, jaraco.functools, jaraco.classes, hyperlink, httpcore, hatchling, anyio, virtualenv, rich, keyring, httpx, hatch
 
-Successfully installed SecretStorage-3.5.0 anyio-4.13.0 backports-zstd-1.3.0 certifi-2026.2.25 click-8.3.2 distlib-0.4.0 filelock-3.29.0 h11-0.16.0 hatch-1.16.5 hatchling-1.29.0 httpcore-1.0.9 httpx-0.28.1 hyperlink-21.0.0 idna-3.11 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.4.0 jeepney-0.9.0 keyring-25.7.0 markdown-it-py-4.0.0 mdurl-0.1.2 more-itertools-11.0.2 pathspec-1.0.4 pexpect-4.9.0 platformdirs-4.9.6 pluggy-1.6.0 ptyprocess-0.7.0 pygments-2.20.0 pyproject-hooks-1.2.0 python-discovery-1.2.2 rich-15.0.0 shellingham-1.5.4 tomli-w-1.2.0 tomlkit-0.14.0 trove-classifiers-2026.1.14.14 userpath-1.9.2 uv-0.11.7 virtualenv-21.2.4
+Successfully installed SecretStorage-3.5.0 anyio-4.13.0 backports-zstd-1.3.0 certifi-2026.4.22 click-8.3.3 distlib-0.4.0 filelock-3.29.0 h11-0.16.0 hatch-1.16.5 hatchling-1.29.0 httpcore-1.0.9 httpx-0.28.1 hyperlink-21.0.0 idna-3.13 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.4.0 jeepney-0.9.0 keyring-25.7.0 markdown-it-py-4.0.0 mdurl-0.1.2 more-itertools-11.0.2 pathspec-1.1.0 pexpect-4.9.0 platformdirs-4.9.6 pluggy-1.6.0 ptyprocess-0.7.0 pygments-2.20.0 pyproject-hooks-1.2.0 python-discovery-1.2.2 rich-15.0.0 shellingham-1.5.4 tomli-w-1.2.0 tomlkit-0.14.0 trove-classifiers-2026.1.14.14 userpath-1.9.2 uv-0.11.7 virtualenv-21.2.4
 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
 CLDS: * Install hatch.
 CLDS: * Need for yt-dlp.
-<<<<<<< HEAD
-CLDS: * Disk size = 4893268K. Space Used = 135992K. Runtime = 00:00:00:05.
-=======
-<<<<<<< HEAD
-CLDS: * Disk size = 4959396K. Space Used = 135992K. Runtime = 00:00:00:36.
-=======
-CLDS: * Disk size = 4893084K. Space Used = 135992K. Runtime = 00:00:00:05.
->>>>>>> e86c73ecab752097c6b71fd38c354e9f1db8d339
->>>>>>> 6b3875cd8db8f403c0c4deaf983fdb2f4efd948e
+CLDS: * Disk size = 4893328K. Space Used = 135900K. Runtime = 00:00:00:05.
