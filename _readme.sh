@@ -10,6 +10,17 @@
     )
     ./build-cld.sh no_proxy
 
+# Debug
+    Check chroot path in cld.sh
+    	CHROOT_DIR=/media/sql/chroot/
+        ./cld-chroot.sh "${SYSTEM}" "${CHROOT_DIR}"
+    
+    ./chroot.sh in /media/sql/chroot/
+        cd ~/scripts/repository
+    
+    # After you finished, umount everything
+    ./chroot.sh out /media/sql/chroot/
+
 # Find big files.
 	find-big-files.sh . 5 | tee to-dl-big-files.txt
 
