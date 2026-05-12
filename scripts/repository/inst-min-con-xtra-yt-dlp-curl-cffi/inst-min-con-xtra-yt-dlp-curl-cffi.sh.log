@@ -10,25 +10,25 @@ Collecting mutagen (from yt-dlp[curl-cffi,default])
   Downloading mutagen-1.47.0-py3-none-any.whl.metadata (1.7 kB)
 Collecting pycryptodomex (from yt-dlp[curl-cffi,default])
   Downloading pycryptodomex-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
-Requirement already satisfied: requests<3,>=2.32.2 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (2.33.1)
-Requirement already satisfied: urllib3<3,>=2.0.2 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (2.6.3)
+Requirement already satisfied: requests<3,>=2.32.2 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (2.34.0)
+Requirement already satisfied: urllib3<3,>=2.0.2 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (2.7.0)
 Requirement already satisfied: websockets>=13.0 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (16.0)
 Collecting yt-dlp-ejs==0.8.0 (from yt-dlp[curl-cffi,default])
   Downloading yt_dlp_ejs-0.8.0-py3-none-any.whl.metadata (3.5 kB)
 Requirement already satisfied: cffi>=1.12.0 in /usr/local/lib/python3.13/dist-packages (from curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.15,>=0.5.10->yt-dlp[curl-cffi,default]) (2.0.0)
 Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/dist-packages (from requests<3,>=2.32.2->yt-dlp[curl-cffi,default]) (3.4.7)
-Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/dist-packages (from requests<3,>=2.32.2->yt-dlp[curl-cffi,default]) (3.13)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/dist-packages (from requests<3,>=2.32.2->yt-dlp[curl-cffi,default]) (3.14)
 Requirement already satisfied: pycparser in /usr/local/lib/python3.13/dist-packages (from cffi>=1.12.0->curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.15,>=0.5.10->yt-dlp[curl-cffi,default]) (3.0)
 Downloading yt_dlp-2026.3.17-py3-none-any.whl (3.3 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 71.3 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 28.9 MB/s eta 0:00:00
 Downloading yt_dlp_ejs-0.8.0-py3-none-any.whl (53 kB)
 Downloading curl_cffi-0.14.0-cp39-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (8.7 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 65.8 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 59.0 MB/s eta 0:00:00
 Downloading brotli-1.2.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 49.4 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 49.0 MB/s eta 0:00:00
 Downloading mutagen-1.47.0-py3-none-any.whl (194 kB)
 Downloading pycryptodomex-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.3 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 59.6 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 37.5 MB/s eta 0:00:00
 Installing collected packages: brotli, yt-dlp-ejs, yt-dlp, pycryptodomex, mutagen, curl-cffi
   Attempting uninstall: curl-cffi
     Found existing installation: curl_cffi 0.15.0
@@ -75,4 +75,4 @@ Chrome-124    Macos-14     curl_cffi
 Chrome-131    Macos-14     curl_cffi
 2026.03.17
 CLDS: * Install curl-cffi for yt-dlp to impersonate: yt-dlp --impersonate Chrome-124
-CLDS: * Disk size = 5131272K. Space Used = 53268K. Runtime = 00:00:00:05.
+CLDS: * Disk size = 5137372K. Space Used = 53280K. Runtime = 00:00:00:05.
