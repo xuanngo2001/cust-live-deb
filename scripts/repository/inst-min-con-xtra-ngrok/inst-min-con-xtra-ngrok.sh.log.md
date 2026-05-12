@@ -1,2 +1,2 @@
 * >>>>>>>>> Running inst-min-con-xtra-ngrok.sh ...
-  * Disk size = 4382788K. Space Used = 4K. Runtime = 00:00:00:02.
+  * Disk size = 4382796K. Space Used = 4K. Runtime = 00:00:00:02.

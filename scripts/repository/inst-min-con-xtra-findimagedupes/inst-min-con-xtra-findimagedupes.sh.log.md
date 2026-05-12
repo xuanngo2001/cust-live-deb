@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-findimagedupes.sh ...
   * After this operation, 220 MB of additional disk space will be used.
   * Install findimagedupes.
-  * Disk size = 3003808K. Space Used = 261464K. Runtime = 00:00:00:06.
+  * Disk size = 3003812K. Space Used = 261464K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
 binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-14
