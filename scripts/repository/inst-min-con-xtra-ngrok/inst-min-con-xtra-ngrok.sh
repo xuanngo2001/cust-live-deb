@@ -10,7 +10,8 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #   apt-get install -s -y <your-package> 
 
 # Install ngrok.
-    apt-get -y install ngrok
+    # apt-get -y install ngrok
+    ./ngrok-install.sh
 
 
 # Log
