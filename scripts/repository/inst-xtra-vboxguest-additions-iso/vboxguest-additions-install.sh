@@ -11,11 +11,14 @@ mkdir -p "$temp_dir"
 sudo mount -o loop "$vboxguest_additions_iso" "$temp_dir"
 
 # Install the Guest Additions
-cd "$temp_dir"
-sudo sh VBoxLinuxAdditions.run
+(
+    cd "$temp_dir"
+    sudo sh VBoxLinuxAdditions.run
+)
 
 # Unmount the ISO and clean up
-# cd ..
-# sudo umount "$temp_dir"
-# rm -rf "$temp_dir"
+sudo umount "$temp_dir"
+rm -rf "$temp_dir"
+
+# Done.
 echo "VirtualBox Guest Additions installation completed."
