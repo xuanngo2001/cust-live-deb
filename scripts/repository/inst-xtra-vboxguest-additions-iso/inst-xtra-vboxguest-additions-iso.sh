@@ -19,7 +19,7 @@ apt-get -y install linux-headers-${KERNEL_HEADER}
 
 
 # Install VBoxGuestAdditions
-./vboxguest-additions-iso.sh
+./vboxguest-additions-install.sh
 # VBOXGUEST_ADD_ISO="VBoxGuestAdditions.iso"
 # VBOXGUEST_ADD_ISO_SIZE=$(GF_SIZE_OF ${VBOXGUEST_ADD_ISO})
 # VBOXGUEST_ADD_MNT_DIR=/tmp/VBoxGuestAdditions

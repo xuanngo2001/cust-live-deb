@@ -10,6 +10,9 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
     pip install "yt-dlp[default,curl-cffi]" --break-system-packages
     #pip install curl_cffi --upgrade --break-system-packages
 
+    # Don't know why it uninstall 0.15.0 in previous command, so install it again.
+    pip install curl_cffi==0.15.0 --force-reinstall --break-system-packages
+
     yt-dlp --list-impersonate-targets
 
     yt-dlp --version
