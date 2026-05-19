@@ -16,10 +16,11 @@ Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRele
 Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
 Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
 Hit:13 https://download.docker.com/linux/debian trixie InRelease
-Hit:14 https://deb.nodesource.com/node_20.x nodistro InRelease
-Hit:15 https://dl.google.com/linux/chrome-stable/deb stable InRelease
+Hit:14 https://dl.google.com/linux/chrome-stable/deb stable InRelease
+Hit:15 https://deb.nodesource.com/node_20.x nodistro InRelease
 Hit:16 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:17 https://packages.cloud.google.com/apt cloud-sdk InRelease
+Hit:17 https://ngrok-agent.s3.amazonaws.com bookworm InRelease
+Hit:18 https://packages.cloud.google.com/apt cloud-sdk InRelease
 Reading package lists...
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -40,8 +41,8 @@ Need to get 182 MB of archives.
 After this operation, 13.8 MB disk space will be freed.
 Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 dhcpcd-base amd64 1:10.3.2-3~bpo13+1 [207 kB]
 Get:2 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 148.0.3967.54-1 [182 MB]
-Fetched 182 MB in 2s (79.2 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 151970 files and directories currently installed.)
+Fetched 182 MB in 3s (69.8 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 151973 files and directories currently installed.)
 Preparing to unpack .../microsoft-edge-stable_148.0.3967.54-1_amd64.deb ...
 Unpacking microsoft-edge-stable (148.0.3967.54-1) over (147.0.3912.60-1) ...
 Preparing to unpack .../dhcpcd-base_1%3a10.3.2-3~bpo13+1_amd64.deb ...
@@ -49,8 +50,8 @@ Unpacking dhcpcd-base (1:10.3.2-3~bpo13+1) over (1:10.1.0-11+deb13u2) ...
 Setting up microsoft-edge-stable (148.0.3967.54-1) ...
 Setting up dhcpcd-base (1:10.3.2-3~bpo13+1) ...
 Installing new version of config file /etc/dhcpcd.conf ...
-Creating group '_dhcpcd' with GID 987.
-Creating user '_dhcpcd' (DHCP Client Daemon) with UID 987 and GID 987.
+Creating group '_dhcpcd' with GID 985.
+Creating user '_dhcpcd' (DHCP Client Daemon) with UID 985 and GID 985.
 Processing triggers for desktop-file-utils (0.28-1) ...
 CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 8373596K. Space Used = 164264K. Runtime = 00:00:00:10.
+CLDS: * Disk size = 8436244K. Space Used = 164264K. Runtime = 00:00:00:13.

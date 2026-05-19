@@ -10,7 +10,7 @@
   * gcloud-crc32c 1.0.0
   * gsutil 5.37
   * preview 2026.05.08
-  * Disk size = 3959480K. Space Used = 949664K. Runtime = 00:00:00:45.
+  * Disk size = 3958612K. Space Used = 949664K. Runtime = 00:00:00:30.
   * The following NEW packages will be installed:
   ```bash
 google-cloud-cli
