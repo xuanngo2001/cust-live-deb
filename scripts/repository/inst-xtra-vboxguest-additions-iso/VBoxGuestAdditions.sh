@@ -17,6 +17,7 @@ URL=http://download.virtualbox.org/virtualbox/7.1.10/VBoxGuestAdditions_7.1.10.i
 URL=http://download.virtualbox.org/virtualbox/7.2.0/VBoxGuestAdditions_7.2.0.iso
 URL=http://download.virtualbox.org/virtualbox/7.2.4/VBoxGuestAdditions_7.2.4.iso    # OK
 URL=http://download.virtualbox.org/virtualbox/7.2.6/VBoxGuestAdditions_7.2.6.iso
+URL=http://download.virtualbox.org/virtualbox/7.2.8/VBoxGuestAdditions_7.2.8.iso
 
 # Download ISO if not already exists.
     vbox_iso="VBoxGuestAdditions.iso"
