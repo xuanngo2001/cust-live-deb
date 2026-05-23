@@ -6,8 +6,8 @@
   * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
   * Assumed packages installed: bzip2 & Xserver installed.
   * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
-  * Delete VBoxGuestAdditions.iso[52140K]. Space used could be negative due to this deletion.
-  * Disk size = 9392880K. Space Used = 144844K. Runtime = 00:00:00:22.
+  * Delete VBoxGuestAdditions.iso[52196K]. Space used could be negative due to this deletion.
+  * Disk size = 9333384K. Space Used = 144788K. Runtime = 00:00:00:20.
   * The following NEW packages will be installed:
   ```bash
 build-essential dkms dpkg-dev g++ g++-14

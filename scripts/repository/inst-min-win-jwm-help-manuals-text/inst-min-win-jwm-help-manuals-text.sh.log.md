@@ -1,3 +1,3 @@
 * >>>>>>>>> Running inst-min-win-jwm-help-manuals-text.sh ...
   * Add user & developer manuals(text) in Help menu.
-  * Disk size = 5764448K. Space Used = 48K. Runtime = 00:00:00:01.
+  * Disk size = 5703444K. Space Used = 48K. Runtime = 00:00:00:02.
