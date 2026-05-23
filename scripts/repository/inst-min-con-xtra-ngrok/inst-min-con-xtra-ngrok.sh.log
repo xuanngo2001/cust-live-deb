@@ -1,0 +1,59 @@
+CLDS:>>>>>>>>> Running inst-min-con-xtra-ngrok.sh ...
+deb https://ngrok-agent.s3.amazonaws.com bookworm main
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://localhost/aptly-repo/master_trixie-main trixie InRelease
+Hit:2 http://localhost/aptly-repo/master_aptly-main squeeze InRelease
+Hit:3 http://localhost/aptly-repo/master_deb-multimedia-main trixie InRelease
+Hit:4 http://localhost/aptly-repo/master_deb-multimedia-non-free trixie InRelease
+Hit:5 http://localhost/aptly-repo/master_docker-stable trixie InRelease
+Hit:6 http://localhost/aptly-repo/master_google-cloud-main cloud-sdk InRelease
+Hit:7 http://localhost/aptly-repo/master_google-main stable InRelease
+Hit:8 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports InRelease
+Hit:9 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
+Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
+Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
+Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
+Get:13 https://ngrok-agent.s3.amazonaws.com bookworm InRelease [20.3 kB]
+Get:14 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,621 B]
+Get:15 https://ngrok-agent.s3.amazonaws.com bookworm/main amd64 Packages [11.9 kB]
+Get:16 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [2,006 kB]
+Get:17 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [4,716 kB]
+Fetched 6,756 kB in 2s (4,058 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Installing:
+  ngrok
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 2
+  Download size: 8,378 kB
+  Space needed: 0 B / 11.4 GB available
+
+Get:1 https://ngrok-agent.s3.amazonaws.com bookworm/main amd64 ngrok amd64 3.39.2 [8,378 kB]
+Fetched 8,378 kB in 3s (2,864 kB/s)
+Selecting previously unselected package ngrok.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93609 files and directories currently installed.)
+Preparing to unpack .../ngrok_3.39.2_amd64.deb ...
+Unpacking ngrok (3.39.2) ...
+Setting up ngrok (3.39.2) ...
+CLDS: * Install ngrok.
+CLDS: * Because I can´t use http://localhost:xxxx as callback URI for TikTok.
+CLDS: * Disk size = 4423508K. Space Used = 41588K. Runtime = 00:00:00:07.

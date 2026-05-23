@@ -22,3 +22,7 @@ set -e
   do
     git add "${file_2_commit}" && git commit -m "${file_2_commit}" "${file_2_commit}" || true
   done
+  
+# Commit all
+    git add -A && git commit -m 'update all files' || true
+    git push || true

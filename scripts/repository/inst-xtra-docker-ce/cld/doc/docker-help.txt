@@ -83,3 +83,24 @@ Image: filesystem:
 
 # Access docker.
     docker exec -it <mycontainer> bash
+
+# Redirect docker directory to ..../projects-data/docker-root
+    # Where is docker data stored by default?
+    docker info | grep "Docker Root Dir"
+
+    DOCKER_ROOT_DATA_DIR=/mnt/disks/projects-data/docker-root-data
+    mkdir -p ${DOCKER_ROOT_DATA_DIR}
+    systemctl stop docker.socket
+    systemctl stop docker
+    echo "{ \"data-root\": \"${DOCKER_ROOT_DATA_DIR}\", \"storage-driver\": \"overlay2\" }" > /etc/docker/daemon.json
+    systemctl start docker
+
+
+    docker info | grep "Docker Root Dir"
+
+    # Debug:
+        # Should see overlay2 instead of overlayfs
+        docker info | grep "Storage Driver"
+
+# Test docker installation:
+    docker run hello-world
