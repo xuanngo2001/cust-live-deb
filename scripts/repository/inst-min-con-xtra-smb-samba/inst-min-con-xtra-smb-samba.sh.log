@@ -25,6 +25,7 @@ Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libavahi-
 Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libcups2t64 amd64 2.4.10-3+deb13u2 [252 kB]
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libicu76 amd64 76.1-4 [9,722 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 liblmdb0 amd64 0.9.31-1+b2 [45.2 kB]
+<<<<<<< HEAD
 Get:8 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libtdb1 amd64 2:1.4.15+samba4.24.3+dfsg-1~bpo13+1 [83.7 kB]
 Get:9 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libtevent0t64 amd64 2:0.17.1+samba4.24.3+dfsg-1~bpo13+1 [79.1 kB]
 Get:10 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libldb2 amd64 2:2.11.0+samba4.24.3+dfsg-1~bpo13+1 [180 kB]
@@ -32,6 +33,19 @@ Get:11 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports
 Get:12 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 samba-common-bin amd64 2:4.24.3+dfsg-1~bpo13+1 [1,376 kB]
 Get:13 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 samba amd64 2:4.24.3+dfsg-1~bpo13+1 [1,218 kB]
 Fetched 19.3 MB in 0s (184 MB/s)
+=======
+Get:8 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libtdb1 amd64 2:1.4.14+samba4.23.6+dfsg-2~bpo13+1 [82.7 kB]
+Get:9 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libtevent0t64 amd64 2:0.17.1+samba4.23.6+dfsg-2~bpo13+1 [78.4 kB]
+Get:10 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libldb2 amd64 2:2.11.0+samba4.23.6+dfsg-2~bpo13+1 [179 kB]
+Get:11 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 samba-libs amd64 2:4.23.6+dfsg-2~bpo13+1 [6,076 kB]
+Get:12 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 samba-common-bin amd64 2:4.23.6+dfsg-2~bpo13+1 [1,344 kB]
+Get:13 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 samba amd64 2:4.23.6+dfsg-2~bpo13+1 [1,198 kB]
+<<<<<<< HEAD
+Fetched 19.2 MB in 0s (95.0 MB/s)
+=======
+Fetched 19.2 MB in 0s (176 MB/s)
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
+>>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
 Selecting previously unselected package samba-common.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 99479 files and directories currently installed.)
 Preparing to unpack .../00-samba-common_2%3a4.24.3+dfsg-1~bpo13+1_all.deb ...
@@ -92,4 +106,12 @@ Created symlink '/etc/systemd/system/smb.service' → '/usr/lib/systemd/system/s
 Created symlink '/etc/systemd/system/multi-user.target.wants/smbd.service' → '/usr/lib/systemd/system/smbd.service'.
 Processing triggers for libc-bin (2.41-12+deb13u3) ...
 CLDS: * Install samba.
+<<<<<<< HEAD
 CLDS: * Disk size = 4856484K. Space Used = 95516K. Runtime = 00:00:00:03.
+=======
+<<<<<<< HEAD
+CLDS: * Disk size = 5246944K. Space Used = 95388K. Runtime = 00:00:00:04.
+=======
+CLDS: * Disk size = 5095680K. Space Used = 95384K. Runtime = 00:00:00:03.
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
+>>>>>>> 08aa6273684395c51129565690b6eacbf2c55967

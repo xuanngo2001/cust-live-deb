@@ -84,10 +84,23 @@ ii  distro-info-data                     0.66+deb13u2                          a
 ii  dkms                                 3.2.2-1~deb13u1                       all          Dynamic Kernel Module System (DKMS)
 ii  dmidecode                            3.6-2                                 amd64        SMBIOS/DMI table decoder
 ii  dmsetup                              2:1.02.205-2                          amd64        Linux Kernel Device Mapper userspace library
+<<<<<<< HEAD
 ii  docker-buildx-plugin                 0.34.1-1~debian.13~trixie             amd64        Docker Buildx plugin extends build capabilities with BuildKit.
 ii  docker-ce                            5:29.5.2-1~debian.13~trixie           amd64        Docker: the open-source application container engine
 ii  docker-ce-cli                        5:29.5.2-1~debian.13~trixie           amd64        Docker CLI: the open-source application container engine
 ii  docker-compose-plugin                5.1.4-1~debian.13~trixie              amd64        Docker Compose (V2) plugin for the Docker CLI.
+=======
+<<<<<<< HEAD
+ii  docker-buildx-plugin                 0.33.0-1~debian.13~trixie             amd64        Docker Buildx plugin extends build capabilities with BuildKit.
+ii  docker-ce                            5:29.4.1-1~debian.13~trixie           amd64        Docker: the open-source application container engine
+ii  docker-ce-cli                        5:29.4.1-1~debian.13~trixie           amd64        Docker CLI: the open-source application container engine
+=======
+ii  docker-buildx-plugin                 0.34.0-1~debian.13~trixie             amd64        Docker Buildx plugin extends build capabilities with BuildKit.
+ii  docker-ce                            5:29.5.0-1~debian.13~trixie           amd64        Docker: the open-source application container engine
+ii  docker-ce-cli                        5:29.5.0-1~debian.13~trixie           amd64        Docker CLI: the open-source application container engine
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
+ii  docker-compose-plugin                5.1.3-1~debian.13~trixie              amd64        Docker Compose (V2) plugin for the Docker CLI.
+>>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
 ii  dosfstools                           4.2-1.2                               amd64        utilities for making and checking MS-DOS FAT filesystems
 ii  dpkg                                 1.22.22                               amd64        Debian package management system
 ii  dpkg-dev                             1.22.22                               all          Debian package development tools
@@ -97,7 +110,11 @@ ii  exfat-fuse                           1.4.0-3+b1                            a
 ii  exo-utils                            4.20.0-1                              amd64        Utility files for libexo
 ii  fdisk                                2.41-5                                amd64        collection of partitioning utilities
 ii  feh                                  3.10.3-1                              amd64        imlib2 based image viewer
+<<<<<<< HEAD
+ii  ffmpeg                               10:7.1.3-dmo1+deb13u1                 amd64        audio/video encoder, streaming server & audio/video file converter
+=======
 ii  ffmpeg                               10:7.1.4-dmo1+deb13u1                 amd64        audio/video encoder, streaming server & audio/video file converter
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
 ii  file                                 1:5.46-5                              amd64        Recognize the type of data in a file using "magic" numbers
 ii  findimagedupes                       2.20.1-3+b3                           amd64        Finds visually similar or duplicate images
 ii  findutils                            4.10.0-3                              amd64        utilities for finding files--find, xargs
@@ -159,6 +176,7 @@ ii  gnupg                                2.4.7-21+deb13u1                      a
 ii  gnupg-l10n                           2.4.7-21+deb13u1                      all          GNU privacy guard - localization files
 ii  gnuplot-data                         6.0.2+dfsg1-1                         all          Command-line driven interactive plotting program. Data-files
 ii  gnuplot-nox                          6.0.2+dfsg1-1                         amd64        Command-line driven interactive plotting program. No-X package
+<<<<<<< HEAD
 ii  google-chrome-stable                 148.0.7778.215-1                      amd64        The web browser from Google
 ii  google-cloud-cli                     570.0.0-0                             amd64        Utilities for the Google Cloud Platform
 ii  gpg                                  2.4.7-21+deb13u1+b3                   amd64        GNU Privacy Guard -- minimalist public key operations
@@ -166,6 +184,20 @@ ii  gpg-agent                            2.4.7-21+deb13u1+b3                   a
 ii  gpgconf                              2.4.7-21+deb13u1+b3                   amd64        GNU privacy guard - core configuration utilities
 ii  gpgsm                                2.4.7-21+deb13u1+b3                   amd64        GNU privacy guard - S/MIME version
 ii  gpgv                                 2.4.7-21+deb13u1+b3                   amd64        GNU privacy guard - signature verification tool
+=======
+<<<<<<< HEAD
+ii  google-chrome-stable                 147.0.7727.116-1                      amd64        The web browser from Google
+ii  google-cloud-cli                     565.0.0-0                             amd64        Utilities for the Google Cloud Platform
+=======
+ii  google-chrome-stable                 148.0.7778.167-1                      amd64        The web browser from Google
+ii  google-cloud-cli                     568.0.0-0                             amd64        Utilities for the Google Cloud Platform
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
+ii  gpg                                  2.4.7-21+deb13u1+b2                   amd64        GNU Privacy Guard -- minimalist public key operations
+ii  gpg-agent                            2.4.7-21+deb13u1+b2                   amd64        GNU privacy guard - cryptographic agent
+ii  gpgconf                              2.4.7-21+deb13u1+b2                   amd64        GNU privacy guard - core configuration utilities
+ii  gpgsm                                2.4.7-21+deb13u1+b2                   amd64        GNU privacy guard - S/MIME version
+ii  gpgv                                 2.4.7-21+deb13u1+b2                   amd64        GNU privacy guard - signature verification tool
+>>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
 ii  gpicview                             0.3.1-1                               amd64        lightweight image viewer
 ii  graphviz                             2.42.4-3                              amd64        rich set of graph drawing tools
 ii  grep                                 3.11-4                                amd64        GNU grep, egrep and fgrep
@@ -579,7 +611,11 @@ ii  libnfsidmap1:amd64                   1:2.8.3-1                             a
 ii  libnftables1:amd64                   1.1.3-1                               amd64        Netfilter nftables high level userspace API library
 ii  libnftnl11:amd64                     1.2.9-1                               amd64        Netfilter nftables userspace API library
 ii  libnghttp2-14:amd64                  1.64.0-1.1                            amd64        library implementing HTTP/2 protocol (shared library)
+<<<<<<< HEAD
+ii  libnghttp3-9:amd64                   1.12.0-1~bpo13+1                      amd64        HTTP/3 mapping over QUIC and QPACK (library)
+=======
 ii  libnghttp3-9:amd64                   1.15.0-1~bpo13+1                      amd64        HTTP/3 mapping over QUIC and QPACK (library)
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
 ii  libngtcp2-16:amd64                   1.22.1-1~bpo13+1                      amd64        QUIC protocol library
 ii  libngtcp2-crypto-gnutls8:amd64       1.22.1-1~bpo13+1                      amd64        crypto helper library for with GnuTLS backend
 ii  libngtcp2-crypto-ossl0:amd64         1.22.1-1~bpo13+1                      amd64        crypto helper library for with OpenSSL backend
@@ -952,7 +988,15 @@ ii  mawk                                 1.3.4.20250131-1                      a
 ii  media-types                          13.0.0                                all          List of standard media types and their usual file extension
 ii  menu                                 2.1.51                                amd64        generates programs menu for all menu-aware applications
 ii  mesa-libgallium:amd64                25.2.6-1~bpo13+1                      amd64        shared infrastructure for Mesa drivers
+<<<<<<< HEAD
 ii  microsoft-edge-stable                148.0.3967.83-1                       amd64        The web browser from Microsoft
+=======
+<<<<<<< HEAD
+ii  microsoft-edge-stable                147.0.3912.86-1                       amd64        The web browser from Microsoft
+=======
+ii  microsoft-edge-stable                148.0.3967.54-1                       amd64        The web browser from Microsoft
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
+>>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
 ii  module-assistant                     0.11.14                               all          tool to make module package creation easier
 ii  mount                                2.41-5                                amd64        tools for mounting and manipulating filesystems
 ii  mpv                                  1:0.40.0-dmo2+deb13u1                 amd64        Free and open-source general-purpose video player

@@ -76,7 +76,15 @@ Get:40 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxft2 
 Get:41 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpangoxft-1.0-0 amd64 1.56.3-1 [27.6 kB]
 Get:42 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 librsvg2-2 amd64 2.60.0+dfsg-1 [1,789 kB]
 Get:43 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 jwm amd64 2.4.6-2 [157 kB]
+<<<<<<< HEAD
 Fetched 13.8 MB in 0s (147 MB/s)
+=======
+<<<<<<< HEAD
+Fetched 13.8 MB in 0s (57.9 MB/s)
+=======
+Fetched 13.8 MB in 0s (151 MB/s)
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
+>>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
 Selecting previously unselected package libpam-systemd:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 102584 files and directories currently installed.)
 Preparing to unpack .../00-libpam-systemd_257.13-1~deb13u1_amd64.deb ...
@@ -261,6 +269,18 @@ update-alternatives: using /usr/bin/jwm to provide /usr/bin/x-window-manager (x-
 Processing triggers for libc-bin (2.41-12+deb13u3) ...
 Processing triggers for menu (2.1.51) ...
 './cld/app/jwm' -> '/usr/local/cld/app/jwm'
+<<<<<<< HEAD
+'./cld/app/jwm/jwmrc' -> '/usr/local/cld/app/jwm/jwmrc'
+'./cld/app/jwm/jwmrc/jwmrc-menu-shutdown.xml' -> '/usr/local/cld/app/jwm/jwmrc/jwmrc-menu-shutdown.xml'
+'./cld/app/jwm/jwmrc/jwmrc-menus.xml' -> '/usr/local/cld/app/jwm/jwmrc/jwmrc-menus.xml'
+'./cld/app/jwm/jwmrc/jwmrc-tray.xml' -> '/usr/local/cld/app/jwm/jwmrc/jwmrc-tray.xml'
+'./cld/app/jwm/jwmrc/jwmrc-key.xml' -> '/usr/local/cld/app/jwm/jwmrc/jwmrc-key.xml'
+'./cld/app/jwm/jwmrc/icons' -> '/usr/local/cld/app/jwm/jwmrc/icons'
+'./cld/app/jwm/jwmrc/icons/bomb-1F4A3.svg' -> '/usr/local/cld/app/jwm/jwmrc/icons/bomb-1F4A3.svg'
+'./cld/app/jwm/jwmrc/icons/counterclockwise-1F504.svg' -> '/usr/local/cld/app/jwm/jwmrc/icons/counterclockwise-1F504.svg'
+'./cld/app/jwm/jwmrc/icons/gear-2699.svg' -> '/usr/local/cld/app/jwm/jwmrc/icons/gear-2699.svg'
+'./cld/app/jwm/jwm-bootstrap.sh' -> '/usr/local/cld/app/jwm/jwm-bootstrap.sh'
+=======
 './cld/app/jwm/jwm-bootstrap.sh' -> '/usr/local/cld/app/jwm/jwm-bootstrap.sh'
 './cld/app/jwm/jwmrc' -> '/usr/local/cld/app/jwm/jwmrc'
 './cld/app/jwm/jwmrc/jwmrc-key.xml' -> '/usr/local/cld/app/jwm/jwmrc/jwmrc-key.xml'
@@ -271,9 +291,18 @@ Processing triggers for menu (2.1.51) ...
 './cld/app/jwm/jwmrc/icons/bomb-1F4A3.svg' -> '/usr/local/cld/app/jwm/jwmrc/icons/bomb-1F4A3.svg'
 './cld/app/jwm/jwmrc/icons/gear-2699.svg' -> '/usr/local/cld/app/jwm/jwmrc/icons/gear-2699.svg'
 './cld/app/jwm/jwmrc/icons/counterclockwise-1F504.svg' -> '/usr/local/cld/app/jwm/jwmrc/icons/counterclockwise-1F504.svg'
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
 './cld/home' -> '/usr/local/cld/home'
 './cld/home/.jwmrc' -> '/usr/local/cld/home/.jwmrc'
 CLDS: * Install Window Manager jwm: JWM v2.4.6 by Joe Wingbermuehle.
 CLDS: * Set .
 CLDS: * Change X window manager: update-alternatives --config x-window-manager
+<<<<<<< HEAD
 CLDS: * Disk size = 5369312K. Space Used = 61840K. Runtime = 00:00:00:04.
+=======
+<<<<<<< HEAD
+CLDS: * Disk size = 5701868K. Space Used = 61820K. Runtime = 00:00:00:10.
+=======
+CLDS: * Disk size = 5557780K. Space Used = 61832K. Runtime = 00:00:00:04.
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
+>>>>>>> 08aa6273684395c51129565690b6eacbf2c55967

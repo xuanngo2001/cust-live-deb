@@ -5,7 +5,15 @@
   * Set devmon to auto start on startup.
   * Need ntfs-3g driver to be able to read and write ntfs partition.
   * Need exfat-fuse to be able to read and write exfat partition.
+<<<<<<< HEAD
   * Disk size = 1751792K. Space Used = 356K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+  * Disk size = 1705068K. Space Used = 356K. Runtime = 00:00:00:00.
+=======
+  * Disk size = 1750912K. Space Used = 356K. Runtime = 00:00:00:01.
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
+>>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
   * The following NEW packages will be installed:
   ```bash
 udevil

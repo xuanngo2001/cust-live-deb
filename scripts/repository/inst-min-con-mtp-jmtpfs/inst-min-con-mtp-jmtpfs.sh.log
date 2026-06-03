@@ -21,7 +21,15 @@ Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libmtp-co
 Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libusb-1.0-0 amd64 2:1.0.28-1 [59.6 kB]
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libmtp9t64 amd64 1.1.22-1 [205 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 jmtpfs amd64 0.5-4+b1 [44.8 kB]
+<<<<<<< HEAD
 Fetched 924 kB in 0s (45.7 MB/s)
+=======
+<<<<<<< HEAD
+Fetched 924 kB in 0s (14.8 MB/s)
+=======
+Fetched 924 kB in 0s (46.7 MB/s)
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
+>>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
 Selecting previously unselected package libfuse2t64:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19919 files and directories currently installed.)
 Preparing to unpack .../0-libfuse2t64_2.9.9-9_amd64.deb ...
@@ -59,14 +67,28 @@ Removing 'diversion of /lib/x86_64-linux-gnu/libulockmgr.so.1 to /lib/x86_64-lin
 Removing 'diversion of /lib/x86_64-linux-gnu/libulockmgr.so.1.0.1 to /lib/x86_64-linux-gnu/libulockmgr.so.1.0.1.usr-is-merged by libfuse2t64'
 Setting up libmtp9t64:amd64 (1.1.22-1) ...
 Setting up jmtpfs (0.5-4+b1) ...
+<<<<<<< HEAD
 Processing triggers for udev (257.13-1~deb13u1) ...
 Processing triggers for libc-bin (2.41-12+deb13u3) ...
 './cld/doc/phone-help.txt' -> '/usr/local/cld/doc/phone-help.txt'
+=======
+Processing triggers for udev (257.9-1~deb13u1) ...
+Processing triggers for libc-bin (2.41-12+deb13u2) ...
+>>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
 './cld/doc/smartphone-help.txt' -> '/usr/local/cld/doc/smartphone-help.txt'
+'./cld/doc/phone-help.txt' -> '/usr/local/cld/doc/phone-help.txt'
 CLDS: * Install jmtpfs to mount smartphones that use Media Transfer Protocol(MTP).
 CLDS: *   # Connect your smartphone.
 CLDS: *   mkdir /path/to/your/mount/directory/
 CLDS: *   jmtpfs -o allow_other /path/to/your/mount/directory/
 CLDS: *   # Enter your PIN to unlock your smartphone.
 CLDS: *   cd /path/to/your/mount/directory/
+<<<<<<< HEAD
 CLDS: * Disk size = 1697044K. Space Used = 13120K. Runtime = 00:00:00:01.
+=======
+<<<<<<< HEAD
+CLDS: * Disk size = 1650316K. Space Used = 13120K. Runtime = 00:00:00:01.
+=======
+CLDS: * Disk size = 1696164K. Space Used = 13120K. Runtime = 00:00:00:01.
+>>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
+>>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
