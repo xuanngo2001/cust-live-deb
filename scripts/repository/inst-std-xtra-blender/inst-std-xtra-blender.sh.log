@@ -78,7 +78,7 @@ Get:23 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libgphot
 Get:24 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libgstreamer1.0-0 amd64 1.26.2-2 [1,421 kB]
 Get:25 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 liborc-0.4-0t64 amd64 1:0.4.41-1 [190 kB]
 Get:26 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 iso-codes all 4.18.0-1 [3,125 kB]
-Get:27 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libgstreamer-plugins-base1.0-0 amd64 1.26.2-1 [997 kB]
+Get:27 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libgstreamer-plugins-base1.0-0 amd64 1.26.2-1+deb13u1 [997 kB]
 Get:28 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 gdal-data all 3.10.3+dfsg-1 [403 kB]
 Get:29 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 gdal-plugins amd64 3.10.3+dfsg-1 [181 kB]
 Get:30 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libaec0 amd64 1.1.3-1+b1 [23.8 kB]
@@ -130,9 +130,9 @@ Get:75 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpotra
 Get:76 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpugixml1v5 amd64 1.14-2 [88.6 kB]
 Get:77 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libspnav0 amd64 1.2-1 [14.1 kB]
 Get:78 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 blender amd64 4.3.2+dfsg-2 [25.9 MB]
-Fetched 131 MB in 1s (166 MB/s)
+Fetched 131 MB in 1s (193 MB/s)
 Selecting previously unselected package blender-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 119389 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 119267 files and directories currently installed.)
 Preparing to unpack .../00-blender-data_4.3.2+dfsg-2_all.deb ...
 Unpacking blender-data (4.3.2+dfsg-2) ...
 Selecting previously unselected package fonts-dejavu-extra.
@@ -211,8 +211,8 @@ Selecting previously unselected package iso-codes.
 Preparing to unpack .../25-iso-codes_4.18.0-1_all.deb ...
 Unpacking iso-codes (4.18.0-1) ...
 Selecting previously unselected package libgstreamer-plugins-base1.0-0:amd64.
-Preparing to unpack .../26-libgstreamer-plugins-base1.0-0_1.26.2-1_amd64.deb ...
-Unpacking libgstreamer-plugins-base1.0-0:amd64 (1.26.2-1) ...
+Preparing to unpack .../26-libgstreamer-plugins-base1.0-0_1.26.2-1+deb13u1_amd64.deb ...
+Unpacking libgstreamer-plugins-base1.0-0:amd64 (1.26.2-1+deb13u1) ...
 Selecting previously unselected package gdal-data.
 Preparing to unpack .../27-gdal-data_3.10.3+dfsg-1_all.deb ...
 Unpacking gdal-data (3.10.3+dfsg-1) ...
@@ -421,7 +421,7 @@ Setting up liblapack3:amd64 (3.12.1-6) ...
 update-alternatives: using /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3 to provide /usr/lib/x86_64-linux-gnu/liblapack.so.3 (liblapack.so.3-x86_64-linux-gnu) in auto mode
 Setting up libarpack2t64:amd64 (3.9.1-6) ...
 Setting up libboost-locale1.83.0:amd64 (1.83.0-4.2) ...
-Setting up libgstreamer-plugins-base1.0-0:amd64 (1.26.2-1) ...
+Setting up libgstreamer-plugins-base1.0-0:amd64 (1.26.2-1+deb13u1) ...
 Setting up libdcmtk19:amd64 (3.6.9-5) ...
 Setting up libtbbbind-2-5:amd64 (2022.1.0-1+deb13u1) ...
 Setting up libkmldom1t64:amd64 (1.3.0-12+b2) ...
@@ -448,11 +448,11 @@ Setting up libopenimageio2.5:amd64 (2.5.18.0+dfsg-1+b1) ...
 Setting up blender (4.3.2+dfsg-2) ...
 Processing triggers for desktop-file-utils (0.28-1) ...
 Processing triggers for hicolor-icon-theme (0.18-2) ...
-Processing triggers for libc-bin (2.41-12+deb13u2) ...
-Processing triggers for udev (257.9-1~deb13u1) ...
+Processing triggers for libc-bin (2.41-12+deb13u3) ...
+Processing triggers for udev (257.13-1~deb13u1) ...
 Processing triggers for fontconfig (2.15.0-2.3) ...
 CLDS: * Install required packages for blender.
 CLDS: * Install blender3d.
 CLDS: * Insert Blender 3D menu in Graphics.
 CLDS: * http://download.blender.org/release/
-CLDS: * Disk size = 8429268K. Space Used = 605200K. Runtime = 00:00:00:15.
+CLDS: * Disk size = 8241208K. Space Used = 605192K. Runtime = 00:00:00:10.

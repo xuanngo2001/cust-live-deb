@@ -7,19 +7,19 @@ The following additional packages will be installed:
 The following NEW packages will be installed:
   php-xml php8.4-xml
 0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
-Need to get 682 kB of archives.
-After this operation, 3,871 kB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 php8.4-xml amd64 8.4.11-1 [678 kB]
+Need to get 548 kB of archives.
+After this operation, 2,447 kB of additional disk space will be used.
+Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 php8.4-xml amd64 8.4.16-1~deb13u1 [544 kB]
 Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 php-xml all 2:8.4+96 [3,984 B]
-Fetched 682 kB in 0s (32.5 MB/s)
+Fetched 548 kB in 0s (36.6 MB/s)
 Selecting previously unselected package php8.4-xml.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123393 files and directories currently installed.)
-Preparing to unpack .../php8.4-xml_8.4.11-1_amd64.deb ...
-Unpacking php8.4-xml (8.4.11-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 123271 files and directories currently installed.)
+Preparing to unpack .../php8.4-xml_8.4.16-1~deb13u1_amd64.deb ...
+Unpacking php8.4-xml (8.4.16-1~deb13u1) ...
 Selecting previously unselected package php-xml.
 Preparing to unpack .../php-xml_2%3a8.4+96_all.deb ...
 Unpacking php-xml (2:8.4+96) ...
-Setting up php8.4-xml (8.4.11-1) ...
+Setting up php8.4-xml (8.4.16-1~deb13u1) ...
 Creating config file /etc/php/8.4/mods-available/dom.ini with new version
 Creating config file /etc/php/8.4/mods-available/simplexml.ini with new version
 Creating config file /etc/php/8.4/mods-available/xml.ini with new version
@@ -27,7 +27,7 @@ Creating config file /etc/php/8.4/mods-available/xmlreader.ini with new version
 Creating config file /etc/php/8.4/mods-available/xmlwriter.ini with new version
 Creating config file /etc/php/8.4/mods-available/xsl.ini with new version
 Setting up php-xml (2:8.4+96) ...
-Processing triggers for php8.4-fpm (8.4.11-1) ...
+Processing triggers for php8.4-fpm (8.4.16-1~deb13u1) ...
 Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of restart.
 NOTICE: Not enabling PHP 8.4 FPM by default.
@@ -35,6 +35,6 @@ NOTICE: To enable PHP 8.4 FPM in Apache2 do:
 NOTICE: a2enmod proxy_fcgi setenvif
 NOTICE: a2enconf php8.4-fpm
 NOTICE: You are seeing this message because you have apache2 package installed.
-Processing triggers for php8.4-cli (8.4.11-1) ...
+Processing triggers for php8.4-cli (8.4.16-1~deb13u1) ...
 CLDS: * Install php-xml.
-CLDS: * Disk size = 8437712K. Space Used = 4576K. Runtime = 00:00:00:05.
+CLDS: * Disk size = 8248136K. Space Used = 3052K. Runtime = 00:00:00:04.

@@ -21,7 +21,7 @@ The following NEW packages will be installed:
 Need to get 19.2 MB of archives.
 After this operation, 71.1 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 poppler-data all 0.4.12-1 [1,601 kB]
-Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libexif12 amd64 0.6.25-1 [422 kB]
+Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libexif12 amd64 0.6.25-1+deb13u1 [423 kB]
 Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libid3tag0 amd64 0.16.3-1 [35.0 kB]
 Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xfonts-encodings all 1:1.0.4-2.2 [577 kB]
 Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xfonts-utils amd64 1:7.7+7 [93.3 kB]
@@ -39,14 +39,14 @@ Get:16 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libimlib
 Get:17 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 yudit-common all 3.1.0-1 [1,752 kB]
 Get:18 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 feh amd64 3.10.3-1 [158 kB]
 Preconfiguring packages ...
-Fetched 19.2 MB in 0s (122 MB/s)
+Fetched 19.2 MB in 0s (183 MB/s)
 Selecting previously unselected package poppler-data.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105865 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105744 files and directories currently installed.)
 Preparing to unpack .../00-poppler-data_0.4.12-1_all.deb ...
 Unpacking poppler-data (0.4.12-1) ...
 Selecting previously unselected package libexif12:amd64.
-Preparing to unpack .../01-libexif12_0.6.25-1_amd64.deb ...
-Unpacking libexif12:amd64 (0.6.25-1) ...
+Preparing to unpack .../01-libexif12_0.6.25-1+deb13u1_amd64.deb ...
+Unpacking libexif12:amd64 (0.6.25-1+deb13u1) ...
 Selecting previously unselected package libid3tag0:amd64.
 Preparing to unpack .../02-libid3tag0_0.16.3-1_amd64.deb ...
 Unpacking libid3tag0:amd64 (0.16.3-1) ...
@@ -102,7 +102,7 @@ Setting up poppler-data (0.4.12-1) ...
 Setting up libid3tag0:amd64 (0.16.3-1) ...
 Setting up libjbig2dec0:amd64 (0.20-1+b3) ...
 Setting up xfonts-encodings (1:1.0.4-2.2) ...
-Setting up libexif12:amd64 (0.6.25-1) ...
+Setting up libexif12:amd64 (0.6.25-1+deb13u1) ...
 Setting up libidn12:amd64 (1.43-1) ...
 Setting up yudit-common (3.1.0-1) ...
 Setting up libpaper2:amd64 (2.2.5-0.3+b2) ...
@@ -114,8 +114,8 @@ Setting up libspectre1:amd64 (0.2.12-1+b2) ...
 Setting up libimlib2t64:amd64 (1.12.4-2) ...
 Setting up feh (3.10.3-1) ...
 Processing triggers for hicolor-icon-theme (0.18-2) ...
-Processing triggers for libc-bin (2.41-12+deb13u2) ...
+Processing triggers for libc-bin (2.41-12+deb13u3) ...
 Processing triggers for fontconfig (2.15.0-2.3) ...
 './cld/doc/feh-help.txt' -> '/usr/local/cld/doc/feh-help.txt'
 CLDS: * Install command line image viewer: feh.
-CLDS: * Disk size = 5723476K. Space Used = 88032K. Runtime = 00:00:00:04.
+CLDS: * Disk size = 5535004K. Space Used = 88032K. Runtime = 00:00:00:03.

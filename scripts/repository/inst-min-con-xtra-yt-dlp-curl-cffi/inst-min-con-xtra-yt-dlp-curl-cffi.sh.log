@@ -5,46 +5,52 @@ Collecting curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.15,>=0.5.10 (from yt-dlp[
   Downloading curl_cffi-0.14.0-cp39-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (15 kB)
 Collecting brotli (from yt-dlp[curl-cffi,default])
   Downloading brotli-1.2.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.1 kB)
-Requirement already satisfied: certifi in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (2026.4.22)
+Requirement already satisfied: certifi in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (2026.5.20)
 Collecting mutagen (from yt-dlp[curl-cffi,default])
   Downloading mutagen-1.47.0-py3-none-any.whl.metadata (1.7 kB)
 Collecting pycryptodomex (from yt-dlp[curl-cffi,default])
   Downloading pycryptodomex-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
-Requirement already satisfied: requests<3,>=2.32.2 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (2.34.2)
-Requirement already satisfied: urllib3<3,>=2.0.2 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (2.7.0)
-Requirement already satisfied: websockets>=13.0 in /usr/local/lib/python3.13/dist-packages (from yt-dlp[curl-cffi,default]) (16.0)
+Collecting requests<3,>=2.32.2 (from yt-dlp[curl-cffi,default])
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting urllib3<3,>=2.0.2 (from yt-dlp[curl-cffi,default])
+  Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting websockets>=13.0 (from yt-dlp[curl-cffi,default])
+  Downloading websockets-16.0-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.8 kB)
 Collecting yt-dlp-ejs==0.8.0 (from yt-dlp[curl-cffi,default])
   Downloading yt_dlp_ejs-0.8.0-py3-none-any.whl.metadata (3.5 kB)
-Requirement already satisfied: cffi>=1.12.0 in /usr/local/lib/python3.13/dist-packages (from curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.15,>=0.5.10->yt-dlp[curl-cffi,default]) (2.0.0)
-Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/dist-packages (from requests<3,>=2.32.2->yt-dlp[curl-cffi,default]) (3.4.7)
-Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/dist-packages (from requests<3,>=2.32.2->yt-dlp[curl-cffi,default]) (3.15)
-Requirement already satisfied: pycparser in /usr/local/lib/python3.13/dist-packages (from cffi>=1.12.0->curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.15,>=0.5.10->yt-dlp[curl-cffi,default]) (3.0)
+Collecting cffi>=1.12.0 (from curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.15,>=0.5.10->yt-dlp[curl-cffi,default])
+  Downloading cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3,>=2.32.2->yt-dlp[curl-cffi,default])
+  Downloading charset_normalizer-3.4.7-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/dist-packages (from requests<3,>=2.32.2->yt-dlp[curl-cffi,default]) (3.16)
+Collecting pycparser (from cffi>=1.12.0->curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.15,>=0.5.10->yt-dlp[curl-cffi,default])
+  Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
 Downloading yt_dlp-2026.3.17-py3-none-any.whl (3.3 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 57.7 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 60.1 MB/s eta 0:00:00
 Downloading yt_dlp_ejs-0.8.0-py3-none-any.whl (53 kB)
 Downloading curl_cffi-0.14.0-cp39-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (8.7 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 61.3 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 53.5 MB/s eta 0:00:00
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading charset_normalizer-3.4.7-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (215 kB)
+Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+Downloading cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (219 kB)
+Downloading websockets-16.0-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (184 kB)
 Downloading brotli-1.2.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 85.1 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 53.5 MB/s eta 0:00:00
 Downloading mutagen-1.47.0-py3-none-any.whl (194 kB)
+Downloading pycparser-3.0-py3-none-any.whl (48 kB)
 Downloading pycryptodomex-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.3 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 49.3 MB/s eta 0:00:00
-Installing collected packages: brotli, yt-dlp-ejs, yt-dlp, pycryptodomex, mutagen, curl-cffi
-  Attempting uninstall: curl-cffi
-    Found existing installation: curl_cffi 0.15.0
-    Uninstalling curl_cffi-0.15.0:
-      Successfully uninstalled curl_cffi-0.15.0
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 61.8 MB/s eta 0:00:00
+Installing collected packages: brotli, yt-dlp-ejs, yt-dlp, websockets, urllib3, pycryptodomex, pycparser, mutagen, charset_normalizer, requests, cffi, curl-cffi
 
-ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-yfinance 1.3.0 requires curl_cffi>=0.15, but you have curl-cffi 0.14.0 which is incompatible.
-Successfully installed brotli-1.2.0 curl-cffi-0.14.0 mutagen-1.47.0 pycryptodomex-3.23.0 yt-dlp-2026.3.17 yt-dlp-ejs-0.8.0
+Successfully installed brotli-1.2.0 cffi-2.0.0 charset_normalizer-3.4.7 curl-cffi-0.14.0 mutagen-1.47.0 pycparser-3.0 pycryptodomex-3.23.0 requests-2.34.2 urllib3-2.7.0 websockets-16.0 yt-dlp-2026.3.17 yt-dlp-ejs-0.8.0
 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
 Collecting curl_cffi==0.15.0
-  Using cached curl_cffi-0.15.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (18 kB)
+  Downloading curl_cffi-0.15.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (18 kB)
 Collecting cffi>=2.0.0 (from curl_cffi==0.15.0)
   Using cached cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
 Collecting certifi>=2024.2.2 (from curl_cffi==0.15.0)
-  Using cached certifi-2026.4.22-py3-none-any.whl.metadata (2.5 kB)
+  Using cached certifi-2026.5.20-py3-none-any.whl.metadata (2.5 kB)
 Collecting rich (from curl_cffi==0.15.0)
   Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
 Collecting pycparser (from cffi>=2.0.0->curl_cffi==0.15.0)
@@ -55,8 +61,9 @@ Collecting pygments<3.0.0,>=2.13.0 (from rich->curl_cffi==0.15.0)
   Using cached pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
 Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->curl_cffi==0.15.0)
   Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
-Using cached curl_cffi-0.15.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (11.1 MB)
-Using cached certifi-2026.4.22-py3-none-any.whl (135 kB)
+Downloading curl_cffi-0.15.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (11.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 62.2 MB/s eta 0:00:00
+Using cached certifi-2026.5.20-py3-none-any.whl (134 kB)
 Using cached cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (219 kB)
 Using cached pycparser-3.0-py3-none-any.whl (48 kB)
 Using cached rich-15.0.0-py3-none-any.whl (310 kB)
@@ -77,9 +84,9 @@ Installing collected packages: pygments, pycparser, mdurl, certifi, markdown-it-
     Uninstalling mdurl-0.1.2:
       Successfully uninstalled mdurl-0.1.2
   Attempting uninstall: certifi
-    Found existing installation: certifi 2026.4.22
-    Uninstalling certifi-2026.4.22:
-      Successfully uninstalled certifi-2026.4.22
+    Found existing installation: certifi 2026.5.20
+    Uninstalling certifi-2026.5.20:
+      Successfully uninstalled certifi-2026.5.20
   Attempting uninstall: markdown-it-py
     Found existing installation: markdown-it-py 4.2.0
     Uninstalling markdown-it-py-4.2.0:
@@ -97,7 +104,7 @@ Installing collected packages: pygments, pycparser, mdurl, certifi, markdown-it-
     Uninstalling curl_cffi-0.14.0:
       Successfully uninstalled curl_cffi-0.14.0
 
-Successfully installed certifi-2026.4.22 cffi-2.0.0 curl_cffi-0.15.0 markdown-it-py-4.2.0 mdurl-0.1.2 pycparser-3.0 pygments-2.20.0 rich-15.0.0
+Successfully installed certifi-2026.5.20 cffi-2.0.0 curl_cffi-0.15.0 markdown-it-py-4.2.0 mdurl-0.1.2 pycparser-3.0 pygments-2.20.0 rich-15.0.0
 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
 [info] Available impersonate targets
 Client    OS   Source
@@ -109,4 +116,4 @@ Safari    -    curl_cffi (unavailable)
 Chrome    -    curl_cffi (unavailable)
 2026.03.17
 CLDS: * Install curl-cffi for yt-dlp to impersonate: yt-dlp --impersonate Chrome-124
-CLDS: * Disk size = 5185372K. Space Used = 60484K. Runtime = 00:00:00:07.
+CLDS: * Disk size = 4996908K. Space Used = 110440K. Runtime = 00:00:00:06.
