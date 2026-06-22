@@ -13,11 +13,17 @@ echo "${GV_LOG}>>>>>>>>> Running ${SCRIPT_NAME} ..."
 #	apt-get -y install nodejs
 
 # Manually update nodejs to version 18x.
-#	https://github.com/nodesource/distributions/blob/master/README.md
+# Install NodeJS and NPM: https://github.com/nodesource/distributions/blob/master/DEV_README.md#debian-versions
+#   Release dates history: https://nodejs.org/en/about/previous-releases
 	setup_url="https://deb.nodesource.com/setup_18.x"
 	setup_url="https://deb.nodesource.com/setup_20.x"
+    setup_url="https://deb.nodesource.com/setup_22.x"
 	curl -fsSL "${setup_url}" | bash - &&\
 	apt-get install -y nodejs
 
 # Log
 	echo "${GV_LOG} * Install nodejs."
+
+# Instructions:
+    # curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+    # apt install -y nodejs
