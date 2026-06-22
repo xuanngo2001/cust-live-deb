@@ -1,0 +1,16 @@
+# Load it outside the script
+    (set -a; source .env; set +a; ./your_script.sh)
+    export $(grep -v '^#' .env | xargs) && ./your_script.sh
+
+# Load it inside the script
+    # Look for .env file in the current directory and load it
+    if [ -f .env ]; then
+        set -a
+        source .env
+        set +a
+    else
+        echo "Warning: .env file not found"
+    fi
+
+    # Your script logic goes here
+    echo "Database host is: $DB_HOST"
