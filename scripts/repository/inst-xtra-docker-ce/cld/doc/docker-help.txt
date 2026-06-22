@@ -104,3 +104,8 @@ Image: filesystem:
 
 # Test docker installation:
     docker run hello-world
+
+# List files from container
+    docker exec <container_name_or_id> ls
+    docker exec nextjs-template-ts.org-6119  ls -ahl /app
+    docker exec nextjs-template-ts.org-6119  cat /app/.env

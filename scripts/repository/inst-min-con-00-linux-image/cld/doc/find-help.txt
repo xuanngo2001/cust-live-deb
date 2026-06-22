@@ -77,6 +77,11 @@
 # List total number of files for the first 2 levels of directories, sorted by file count.
     find . -maxdepth 2 -type d -exec sh -c "echo -n '{}: ' ; find '{}' -type f | wc -l" \; | sort -n -k 2
 
+# Find and ask for confirmation before deleting it.
+    sudo du -h -x --max-depth=1 /var/lib/docker/containers | sort -rh
+    sudo find /var/lib/docker/containers/ -type f -name "*-json.log" -exec ls -lh {} +
+    sudo find /var/lib/docker/containers/ -type f -name "*-json.log" -ok rm {} \;
+
 # Busybox commands
     # List all files recursively and sort by size (largest first)
         find . -type f -exec ls -l {} \; | sort -k5 -nr

@@ -3,27 +3,14 @@ set -e # Exit immediately if a command exits with a non-zero status
 # Description: BASH TEMPLATE
 this_script=$(basename "${0}")
 DATE_TIME_STR=$(date +'%Y-%m-%d_%0k.%M.%S')
-echo -e "\033[0;33m======> ${this_script}: ${DATE_TIME_STR} \033[0m"
+echo "⭐ ============ ${this_script}: ${DATE_TIME_STR} ============"
 
-        # Common function
-            source $HOME/.bashrc
-            function func_dir_get_executing_path()
-            { 
-                local EXECUTING_PATH=$(dirname "$0")              # relative
-                EXECUTING_PATH=$( cd "${EXECUTING_PATH}" && pwd ) # absolutized and normalized
-                if [ -z "${EXECUTING_PATH}" ]; then
-                    # error; for some reason, the path is not accessible
-                    # to the script (e.g. permissions re-evaled after suid)
-                    return 1  # fail
-                fi
+# Get the directory of this script
+    CURR_EXEC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    echo "${CURR_EXEC_DIR}"
 
-                echo "${EXECUTING_PATH}"  
-            }
-            export -f func_dir_get_executing_path
-
-            # Get current executing directory
-                CURR_EXEC_DIR=$(func_dir_get_executing_path)
-                echo "${CURR_EXEC_DIR}"
+  # (set -a; source .env; set +a; ./your_script.sh)
+  # export $(grep -v '^#' .env | xargs) && ./your_script.sh
 
 ########################### Real script starts here ############################
 
@@ -46,7 +33,7 @@ done
 
     # Error response from daemon: No such container: my-mysql
 
-# Use continue to skip an iteration in loop.
+# Use continue to skip an iteration in loop. Caveat: ssh reboot will termate the while loop.
     while IFS='' read -r url_link || [[ -n "${url_link}" ]]; do
     
         # Skip url if url length < 3. Prevent processing \r\n.
@@ -56,4 +43,4 @@ done
         
     done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )
 
-echo "@@@@@@@@@@ ${this_script} @@@@@@@@@@"
+echo "@@@@EEEEE ${this_script} EEEEE@@@"

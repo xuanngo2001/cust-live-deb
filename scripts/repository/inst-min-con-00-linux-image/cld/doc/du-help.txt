@@ -4,6 +4,13 @@
 # List size of directories (largest first)
     du -sh -- * | sort -rh
 
+# List directories size, excluding system directories, virtual file systems, and mounted external drives from your disk space check, use the -x (one-file-system) flag
+#   /proc, /sys, /dev, /run
+    sudo du -h -x --max-depth=1 /var/lib/docker/containers | sort -rh
+    sudo find /var/lib/docker/containers/ -type f -name "*-json.log" -exec ls -lh {} +
+    sudo find /var/lib/docker/containers/ -type f -name "*-json.log" -ok rm {} \;
+
 # Busybox: List total size of each directory.
     du -ch -d 1     # Human size
     du -chm -d 1    # Megabytes size
+

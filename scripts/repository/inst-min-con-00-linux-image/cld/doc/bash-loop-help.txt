@@ -70,7 +70,7 @@
         magick import -window root screenshot-$(date +%Y-%m-%d_%k.%M.%S).png
     done
 
-# Use continue to skip an iteration in loop.
+# Use continue to skip an iteration in loop. Caveat: ssh reboot will termate the loop.
     while IFS='' read -r url_link || [[ -n "${url_link}" ]]; do
     
         # Skip url if url length < 3. Prevent processing \r\n.
@@ -79,6 +79,35 @@
         fi
         
     done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )
+
+    # Caveat explained:
+        The while ... done < <( ... ) construct runs in a subshell.
+        When the SSH connection is lost due to sudo reboot, the subshell running the loop is killed, so the loop stops after the first line.
+        This is a known limitation of using process substitution with a while loop and commands that kill the subshell.
+
+
+    # Fix: ssh reboot will NOT termate the loop.
+    exec 3< <(cat "${input_file}" | grep -v '^#' | mawk NF)
+    while IFS='' read -r line <&3 || [[ -n "$line" ]]; do
+        # Extract hostname, IP, and password from the line. They are separated by comma. The first part is hostname, the second part is IP, and the third part is password.
+        #   trim start and end spaces.
+        hostname=$(echo "$line" | awk -F, '{print $1}' | tr -d ' ')
+        ip_address=$(echo "$line" | awk -F, '{print $2}' | tr -d ' ')
+        password=$(echo "$line" | awk -F, '{print $3}' | tr -d ' ')
+
+        # Skip if ip_address or password is empty.
+        if [ -z "$ip_address" ] || [ -z "$password" ]; then
+            echo "⚠️ Warning: Skipping line with empty IP address or password: $line"
+            continue
+        fi
+
+        echo "Upgrading [$hostname] [$ip_address] [$password]: "
+        echo "  debug: sshpass -p '$password' ssh -o StrictHostKeyChecking=accept-new -t $username@$ip_address"
+        echo "  debug: sshpass -p \"$password\" ssh -o StrictHostKeyChecking=no \"$username@$ip_address\" \"sudo apt update && sudo apt upgrade -y && sudo reboot\""
+        sshpass -p "$password" ssh -o StrictHostKeyChecking=no "$username@$ip_address" "sudo apt update && sudo apt upgrade -y && sudo reboot" || true
+        echo "  Upgraded [$hostname] [$ip_address] [$password]"
+    done
+    exec 3<&-
 
 # Break statement terminates the current loop.
 
