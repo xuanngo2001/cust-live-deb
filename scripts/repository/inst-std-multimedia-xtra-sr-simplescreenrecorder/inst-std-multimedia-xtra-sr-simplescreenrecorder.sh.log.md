@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-std-multimedia-xtra-sr-simplescreenrecorder.sh ...
   * After this operation, 36.1 MB of additional disk space will be used.
   * Install simplescreenrecorder.
-  * Disk size = 7596840K. Space Used = 46132K. Runtime = 00:00:00:02.
+  * Disk size = 7835064K. Space Used = 46136K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
 libglu1-mesa libqt5core5t64 libqt5dbus5t64 libqt5gui5t64 libqt5network5t64

@@ -3,25 +3,24 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libdw1t64 libelf1t64 linux-headers-6.12.86+deb13-amd64
-  linux-headers-6.12.86+deb13-common linux-kbuild-6.12.86+deb13 pahole
+  libdw1t64 libelf1t64 linux-headers-7.0.13+deb13-amd64
+  linux-headers-7.0.13+deb13-common linux-kbuild-7.0.13+deb13 pahole
 The following NEW packages will be installed:
-  libdw1t64 linux-headers-6.12.86+deb13-amd64
-  linux-headers-6.12.86+deb13-common linux-headers-amd64
-  linux-kbuild-6.12.86+deb13 pahole
+  libdw1t64 linux-headers-7.0.13+deb13-amd64 linux-headers-7.0.13+deb13-common
+  linux-headers-amd64 linux-kbuild-7.0.13+deb13 pahole
 The following packages will be upgraded:
   libelf1t64
 1 upgraded, 6 newly installed, 0 to remove and 2 not upgraded.
-Need to get 16.4 MB of archives.
-After this operation, 77.4 MB of additional disk space will be used.
+Need to get 14.8 MB of archives.
+After this operation, 77.0 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libelf1t64 amd64 0.195-1~bpo13+1 [61.0 kB]
 Get:2 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 libdw1t64 amd64 0.195-1~bpo13+1 [263 kB]
-Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-6.12.86+deb13-common all 6.12.86-1 [11.1 MB]
+Get:3 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-headers-7.0.13+deb13-common all 7.0.13-1~bpo13+1 [11.0 MB]
 Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 pahole amd64 1.30-1 [259 kB]
-Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-kbuild-6.12.86+deb13 amd64 6.12.86-1 [1,685 kB]
-Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-6.12.86+deb13-amd64 amd64 6.12.86-1 [3,012 kB]
-Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 linux-headers-amd64 amd64 6.12.86-1 [1,416 B]
-Fetched 16.4 MB in 0s (173 MB/s)
+Get:5 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-kbuild-7.0.13+deb13 amd64 7.0.13-1~bpo13+1 [1,454 kB]
+Get:6 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-headers-7.0.13+deb13-amd64 amd64 7.0.13-1~bpo13+1 [1,752 kB]
+Get:7 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-headers-amd64 amd64 7.0.13-1~bpo13+1 [1,184 B]
+Fetched 14.8 MB in 0s (171 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -53,9 +52,9 @@ Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 patch amd
 Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 dpkg-dev all 1.22.22 [1,337 kB]
 Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 build-essential amd64 12.12 [4,624 B]
 Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 dkms all 3.2.2-1~deb13u1 [60.1 kB]
-Fetched 17.2 MB in 0s (173 MB/s)
+Fetched 17.2 MB in 0s (168 MB/s)
 Selecting previously unselected package libstdc++-14-dev:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 126153 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 127483 files and directories currently installed.)
 Preparing to unpack .../00-libstdc++-14-dev_14.2.0-19_amd64.deb ...
 Unpacking libstdc++-14-dev:amd64 (14.2.0-19) ...
 Selecting previously unselected package g++-14-x86-64-linux-gnu.
@@ -104,40 +103,40 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libdw1t64 libelf1t64 linux-headers-6.12.86+deb13-common
-  linux-kbuild-6.12.86+deb13 pahole
+  libdw1t64 libelf1t64 linux-headers-7.0.13+deb13-common
+  linux-kbuild-7.0.13+deb13 pahole
 The following NEW packages will be installed:
-  libdw1t64 linux-headers-6.12.86+deb13-amd64
-  linux-headers-6.12.86+deb13-common linux-kbuild-6.12.86+deb13 pahole
+  libdw1t64 linux-headers-7.0.13+deb13-amd64 linux-headers-7.0.13+deb13-common
+  linux-kbuild-7.0.13+deb13 pahole
 The following packages will be upgraded:
   libelf1t64
 1 upgraded, 5 newly installed, 0 to remove and 2 not upgraded.
-Need to get 0 B/16.4 MB of archives.
-After this operation, 77.4 MB of additional disk space will be used.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 127679 files and directories currently installed.)
+Need to get 0 B/14.8 MB of archives.
+After this operation, 77.0 MB of additional disk space will be used.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 129009 files and directories currently installed.)
 Preparing to unpack .../0-libelf1t64_0.195-1~bpo13+1_amd64.deb ...
 Unpacking libelf1t64:amd64 (0.195-1~bpo13+1) over (0.192-4) ...
 Selecting previously unselected package libdw1t64:amd64.
 Preparing to unpack .../1-libdw1t64_0.195-1~bpo13+1_amd64.deb ...
 Unpacking libdw1t64:amd64 (0.195-1~bpo13+1) ...
-Selecting previously unselected package linux-headers-6.12.86+deb13-common.
-Preparing to unpack .../2-linux-headers-6.12.86+deb13-common_6.12.86-1_all.deb ...
-Unpacking linux-headers-6.12.86+deb13-common (6.12.86-1) ...
+Selecting previously unselected package linux-headers-7.0.13+deb13-common.
+Preparing to unpack .../2-linux-headers-7.0.13+deb13-common_7.0.13-1~bpo13+1_all.deb ...
+Unpacking linux-headers-7.0.13+deb13-common (7.0.13-1~bpo13+1) ...
 Selecting previously unselected package pahole.
 Preparing to unpack .../3-pahole_1.30-1_amd64.deb ...
 Unpacking pahole (1.30-1) ...
-Selecting previously unselected package linux-kbuild-6.12.86+deb13.
-Preparing to unpack .../4-linux-kbuild-6.12.86+deb13_6.12.86-1_amd64.deb ...
-Unpacking linux-kbuild-6.12.86+deb13 (6.12.86-1) ...
-Selecting previously unselected package linux-headers-6.12.86+deb13-amd64.
-Preparing to unpack .../5-linux-headers-6.12.86+deb13-amd64_6.12.86-1_amd64.deb ...
-Unpacking linux-headers-6.12.86+deb13-amd64 (6.12.86-1) ...
+Selecting previously unselected package linux-kbuild-7.0.13+deb13.
+Preparing to unpack .../4-linux-kbuild-7.0.13+deb13_7.0.13-1~bpo13+1_amd64.deb ...
+Unpacking linux-kbuild-7.0.13+deb13 (7.0.13-1~bpo13+1) ...
+Selecting previously unselected package linux-headers-7.0.13+deb13-amd64.
+Preparing to unpack .../5-linux-headers-7.0.13+deb13-amd64_7.0.13-1~bpo13+1_amd64.deb ...
+Unpacking linux-headers-7.0.13+deb13-amd64 (7.0.13-1~bpo13+1) ...
 Setting up libelf1t64:amd64 (0.195-1~bpo13+1) ...
-Setting up linux-headers-6.12.86+deb13-common (6.12.86-1) ...
 Setting up libdw1t64:amd64 (0.195-1~bpo13+1) ...
 Setting up pahole (1.30-1) ...
-Setting up linux-kbuild-6.12.86+deb13 (6.12.86-1) ...
-Setting up linux-headers-6.12.86+deb13-amd64 (6.12.86-1) ...
+Setting up linux-kbuild-7.0.13+deb13 (7.0.13-1~bpo13+1) ...
+Setting up linux-headers-7.0.13+deb13-common (7.0.13-1~bpo13+1) ...
+Setting up linux-headers-7.0.13+deb13-amd64 (7.0.13-1~bpo13+1) ...
 Processing triggers for libc-bin (2.41-12+deb13u3) ...
 sudo: unable to resolve host work: Temporary failure in name resolution
 mount: /tmp/vboxguest_additions: WARNING: source write-protected, mounted read-only.
@@ -145,14 +144,15 @@ sudo: unable to resolve host work: Temporary failure in name resolution
 chmod: changing permissions of 'VBoxLinuxAdditions.run': Read-only file system
 Please add execution rights on VBoxLinuxAdditions.run
 
-(xfce4-terminal:141904): xfce4-terminal-WARNING **: 14:34:51.172: Failed to initialize Xfconf: Failed to execute child process “dbus-launch” (No such file or directory)
+(xfce4-terminal:143973): xfce4-terminal-WARNING **: 13:35:33.896: Failed to initialize Xfconf: Failed to execute child process “dbus-launch” (No such file or directory)
 
-(xfce4-terminal:141904): xfce4-terminal-WARNING **: 14:34:51.199: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+(xfce4-terminal:143973): xfce4-terminal-WARNING **: 13:35:33.929: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
 sudo: unable to resolve host work: Temporary failure in name resolution
 VirtualBox Guest Additions installation completed.
+modinfo: ERROR: Module vboxguest not found.
 CLDS: * WARNING: Use this script only if backport repository doesn't work.
 CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
-CLDS: * VirtualBox guest additions installed: version: 7.2.8 r173730.
+CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
 CLDS: * Delete [K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 9076876K. Space Used = 221712K. Runtime = 00:00:32:10.
+CLDS: * Disk size = 9289912K. Space Used = 210012K. Runtime = 00:00:00:44.

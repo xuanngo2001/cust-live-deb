@@ -52,24 +52,24 @@ The following NEW packages will be installed:
   libwacom-common libwacom9 libxmuu1 xauth xinit xserver-xorg
   xserver-xorg-input-all xserver-xorg-input-libinput
 0 upgraded, 13 newly installed, 0 to remove and 2 not upgraded.
-Need to get 600 kB of archives.
+Need to get 601 kB of archives.
 After this operation, 3,320 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libevdev2 amd64 1.13.4+dfsg-1 [32.4 kB]
 Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libgudev-1.0-0 amd64 238-6 [14.5 kB]
 Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libwacom-common all 2.14.0-1 [103 kB]
 Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libwacom9 amd64 2.14.0-1 [25.3 kB]
-Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libinput-bin amd64 1.28.1-1 [26.3 kB]
+Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libinput-bin amd64 1.28.1-1+deb13u1 [26.8 kB]
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libmtdev1t64 amd64 1.1.7-1 [22.6 kB]
-Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libinput10 amd64 1.28.1-1 [143 kB]
+Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libinput10 amd64 1.28.1-1+deb13u1 [144 kB]
 Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxmuu1 amd64 2:1.1.3-3+b4 [21.9 kB]
 Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xauth amd64 1:1.1.2-1.1 [35.9 kB]
 Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xinit amd64 1.4.2-1 [44.0 kB]
 Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xserver-xorg-input-libinput amd64 1.5.0-1 [68.3 kB]
 Get:12 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xserver-xorg-input-all amd64 1:7.7+24+deb13u1 [4,232 B]
 Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xserver-xorg amd64 1:7.7+24+deb13u1 [58.4 kB]
-Fetched 600 kB in 0s (29.9 MB/s)
+Fetched 601 kB in 0s (25.3 MB/s)
 Selecting previously unselected package libevdev2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 101714 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 103055 files and directories currently installed.)
 Preparing to unpack .../00-libevdev2_1.13.4+dfsg-1_amd64.deb ...
 Unpacking libevdev2:amd64 (1.13.4+dfsg-1) ...
 Selecting previously unselected package libgudev-1.0-0:amd64.
@@ -82,14 +82,14 @@ Selecting previously unselected package libwacom9:amd64.
 Preparing to unpack .../03-libwacom9_2.14.0-1_amd64.deb ...
 Unpacking libwacom9:amd64 (2.14.0-1) ...
 Selecting previously unselected package libinput-bin.
-Preparing to unpack .../04-libinput-bin_1.28.1-1_amd64.deb ...
-Unpacking libinput-bin (1.28.1-1) ...
+Preparing to unpack .../04-libinput-bin_1.28.1-1+deb13u1_amd64.deb ...
+Unpacking libinput-bin (1.28.1-1+deb13u1) ...
 Selecting previously unselected package libmtdev1t64:amd64.
 Preparing to unpack .../05-libmtdev1t64_1.1.7-1_amd64.deb ...
 Unpacking libmtdev1t64:amd64 (1.1.7-1) ...
 Selecting previously unselected package libinput10:amd64.
-Preparing to unpack .../06-libinput10_1.28.1-1_amd64.deb ...
-Unpacking libinput10:amd64 (1.28.1-1) ...
+Preparing to unpack .../06-libinput10_1.28.1-1+deb13u1_amd64.deb ...
+Unpacking libinput10:amd64 (1.28.1-1+deb13u1) ...
 Selecting previously unselected package libxmuu1:amd64.
 Preparing to unpack .../07-libxmuu1_2%3a1.1.3-3+b4_amd64.deb ...
 Unpacking libxmuu1:amd64 (2:1.1.3-3+b4) ...
@@ -114,9 +114,9 @@ Setting up libxmuu1:amd64 (2:1.1.3-3+b4) ...
 Setting up libgudev-1.0-0:amd64 (238-6) ...
 Setting up libwacom-common (2.14.0-1) ...
 Setting up libwacom9:amd64 (2.14.0-1) ...
-Setting up libinput-bin (1.28.1-1) ...
+Setting up libinput-bin (1.28.1-1+deb13u1) ...
 Setting up xauth (1:1.1.2-1.1) ...
-Setting up libinput10:amd64 (1.28.1-1) ...
+Setting up libinput10:amd64 (1.28.1-1+deb13u1) ...
 Setting up xinit (1.4.2-1) ...
 Setting up xserver-xorg-input-libinput (1.5.0-1) ...
 Setting up xserver-xorg-input-all (1:7.7+24+deb13u1) ...
@@ -127,4 +127,4 @@ CLDS: * Set keyboard to use US international.
 CLDS: * Install minimum Xorg X server.
 CLDS: * Install xinit so you can run startx.
 CLDS: * Add auto start window manager(i.e startx).
-CLDS: * Disk size = 5299900K. Space Used = 6344K. Runtime = 00:00:00:02.
+CLDS: * Disk size = 5522804K. Space Used = 6340K. Runtime = 00:00:00:02.

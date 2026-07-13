@@ -70,7 +70,7 @@ Get:22 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libheif-
 Get:23 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libheif1 amd64 1.19.8-1 [520 kB]
 Get:24 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libjbig0 amd64 2.1-6.1+b2 [32.1 kB]
 Get:25 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libhwy1t64 amd64 1.2.0-2+b2 [676 kB]
-Get:26 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libjxl0.11 amd64 0.11.2-0.1~deb13u1 [1,133 kB]
+Get:26 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libjxl0.11 amd64 0.11.2-0.1~deb13u2 [1,133 kB]
 Get:27 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libdeflate0 amd64 1.23-2 [47.3 kB]
 Get:28 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 liblerc4 amd64 4.0.0+ds-5 [183 kB]
 Get:29 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libwebp7 amd64 1.5.0-0.1 [318 kB]
@@ -106,9 +106,9 @@ Get:58 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxxx-p
 Get:59 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpegex-perl all 0.75-2 [77.8 kB]
 Get:60 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libinline-c-perl all 0.82-2 [74.1 kB]
 Get:61 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 findimagedupes amd64 2.20.1-3+b3 [26.9 kB]
-Fetched 59.6 MB in 0s (179 MB/s)
+Fetched 59.6 MB in 0s (151 MB/s)
 Selecting previously unselected package libsframe1:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 52971 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53022 files and directories currently installed.)
 Preparing to unpack .../00-libsframe1_2.44-3_amd64.deb ...
 Unpacking libsframe1:amd64 (2.44-3) ...
 Selecting previously unselected package binutils-common:amd64.
@@ -184,8 +184,8 @@ Selecting previously unselected package libhwy1t64:amd64.
 Preparing to unpack .../24-libhwy1t64_1.2.0-2+b2_amd64.deb ...
 Unpacking libhwy1t64:amd64 (1.2.0-2+b2) ...
 Selecting previously unselected package libjxl0.11:amd64.
-Preparing to unpack .../25-libjxl0.11_0.11.2-0.1~deb13u1_amd64.deb ...
-Unpacking libjxl0.11:amd64 (0.11.2-0.1~deb13u1) ...
+Preparing to unpack .../25-libjxl0.11_0.11.2-0.1~deb13u2_amd64.deb ...
+Unpacking libjxl0.11:amd64 (0.11.2-0.1~deb13u2) ...
 Selecting previously unselected package libdeflate0:amd64.
 Preparing to unpack .../26-libdeflate0_1.23-2_amd64.deb ...
 Unpacking libdeflate0:amd64 (1.23-2) ...
@@ -322,7 +322,7 @@ Setting up libbinutils:amd64 (2.44-3) ...
 Setting up libisl23:amd64 (0.27-1) ...
 Setting up libde265-0:amd64 (1.0.15-1+b3) ...
 Setting up libwebpmux3:amd64 (1.5.0-0.1) ...
-Setting up libjxl0.11:amd64 (0.11.2-0.1~deb13u1) ...
+Setting up libjxl0.11:amd64 (0.11.2-0.1~deb13u2) ...
 Setting up libcc1-0:amd64 (14.2.0-19) ...
 Setting up liburi-perl (5.30-1) ...
 Setting up liblsan0:amd64 (14.2.0-19) ...
@@ -354,4 +354,4 @@ Setting up libgraphics-magick-perl (1.4+really1.3.45+hg17696-1) ...
 Setting up findimagedupes (2.20.1-3+b3) ...
 Processing triggers for libc-bin (2.41-12+deb13u3) ...
 CLDS: * Install findimagedupes.
-CLDS: * Disk size = 3004308K. Space Used = 261452K. Runtime = 00:00:00:07.
+CLDS: * Disk size = 3149852K. Space Used = 261480K. Runtime = 00:00:00:08.

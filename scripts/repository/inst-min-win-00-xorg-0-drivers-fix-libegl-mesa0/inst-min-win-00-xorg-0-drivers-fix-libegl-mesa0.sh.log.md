@@ -1,8 +1,8 @@
 * >>>>>>>>> Running inst-min-win-00-xorg-0-drivers-fix-libegl-mesa0.sh ...
-  * After this operation, 204 MB of additional disk space will be used.
-  * After this operation, 1,521 kB of additional disk space will be used.
+  * After this operation, 207 MB of additional disk space will be used.
+  * After this operation, 1,618 kB of additional disk space will be used.
   * Install libegl-mesa0.
-  * Disk size = 5237480K. Space Used = 246832K. Runtime = 00:00:00:05.
+  * Disk size = 5460388K. Space Used = 249604K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
 libdrm2 libdrm-amdgpu1 libdrm-common libdrm-intel1 libegl-mesa0
