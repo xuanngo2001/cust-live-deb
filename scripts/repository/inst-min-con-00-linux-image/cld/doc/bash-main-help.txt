@@ -3,6 +3,8 @@ set -e # Exit immediately if a command exits with a non-zero status
 # Description: BASH TEMPLATE
 this_script=$(basename "${0}")
 DATE_TIME_STR=$(date +'%Y-%m-%d_%0k.%M.%S')
+mkdir -p ./logs; exec > >(tee ./logs/${this_script}_${DATE_TIME_STR}.log) 2>&1
+echo "💲 ./${this_script} $*"
 echo "⭐ ============ ${this_script}: ${DATE_TIME_STR} ============"
 
 # Get the directory of this script
@@ -13,6 +15,9 @@ echo "⭐ ============ ${this_script}: ${DATE_TIME_STR} ============"
   # export $(grep -v '^#' .env | xargs) && ./your_script.sh
 
 ########################### Real script starts here ############################
+
+nats_server_ip=${1:-"10.128.0.35"}
+nats_server_port=${2:-"4222"}
 
 # DEBUG arguments
 for i in $(seq 1 $#); do
@@ -25,11 +30,16 @@ done
             "  e.g. ${this_script} <name>" \
             "  e.g. ${this_script} cld-help.sh" \
     )
-    if [ "$#" -ne 1 ]; then
-        echo "Error: Incomplete arguments($#). Aborted!"
-        echo "${cmd_eg}"
-        exit 1
-    fi
+    # Use array of arguments for error checking
+    args=("$zone" "$machine_type" "$vm_name")
+    arg_names=("zone" "machine_type" "vm_name")
+    for i in "${!args[@]}"; do
+        if [ -z "${args[$i]}" ]; then
+            echo "❌ Error: Missing required argument: ${arg_names[$i]}"
+            echo "${cmd_eg}"
+            exit 1
+        fi
+    done
 
     # Error response from daemon: No such container: my-mysql
 
@@ -43,4 +53,4 @@ done
         
     done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )
 
-echo "@@@@EEEEE ${this_script} EEEEE@@@"
+echo "@@@@@@@@@@EEEE ${this_script} 👍 EEEE@@@@@@@@@@"

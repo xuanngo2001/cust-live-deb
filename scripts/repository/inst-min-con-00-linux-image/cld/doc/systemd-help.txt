@@ -67,3 +67,16 @@ systemd-analyze dump
     # Enable service: systemctl enable CLD.service
     # Start service: systemctl start CLD.service
     # Check status service: systemctl status CLD.service
+
+# Debug service
+    # Is your service file in /etc/systemd/system/?
+        ls /etc/systemd/system/*.service
+
+    # Check status
+        sudo systemctl status frp-server-live.service
+    
+    # Error log
+        journalctl -u frp-server-live.service -f
+
+    # Restart
+        sudo systemctl restart frp-server-live.service
