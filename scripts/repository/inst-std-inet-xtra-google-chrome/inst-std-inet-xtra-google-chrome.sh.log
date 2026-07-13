@@ -9,76 +9,31 @@ Recommended packages:
 The following NEW packages will be installed:
   google-chrome-stable xdg-utils
 0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
-<<<<<<< HEAD
-Need to get 125 MB of archives.
-After this operation, 415 MB of additional disk space will be used.
-Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xdg-utils all 1.2.1-2 [75.8 kB]
-Get:2 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 147.0.7727.116-1 [125 MB]
-Fetched 125 MB in 2s (79.6 MB/s)
-=======
 Need to get 130 MB of archives.
-After this operation, 424 MB of additional disk space will be used.
+After this operation, 422 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xdg-utils all 1.2.1-2 [75.8 kB]
-<<<<<<< HEAD
-Get:2 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 148.0.7778.215-1 [130 MB]
-Fetched 130 MB in 1s (175 MB/s)
-=======
-Get:2 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 148.0.7778.167-1 [130 MB]
-Fetched 130 MB in 1s (191 MB/s)
->>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
->>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
+Get:2 http://localhost/aptly-repo/master_google-main stable/main amd64 google-chrome-stable amd64 149.0.7827.155-1 [130 MB]
+Fetched 130 MB in 1s (187 MB/s)
 Selecting previously unselected package xdg-utils.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 115701 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 115930 files and directories currently installed.)
 Preparing to unpack .../xdg-utils_1.2.1-2_all.deb ...
 Unpacking xdg-utils (1.2.1-2) ...
 Selecting previously unselected package google-chrome-stable.
-<<<<<<< HEAD
-Preparing to unpack .../google-chrome-stable_148.0.7778.215-1_amd64.deb ...
-Unpacking google-chrome-stable (148.0.7778.215-1) ...
+Preparing to unpack .../google-chrome-stable_149.0.7827.155-1_amd64.deb ...
+Unpacking google-chrome-stable (149.0.7827.155-1) ...
 Setting up xdg-utils (1.2.1-2) ...
 update-alternatives: using /usr/bin/xdg-open to provide /usr/bin/open (open) in auto mode
-Setting up google-chrome-stable (148.0.7778.215-1) ...
-=======
-<<<<<<< HEAD
-Preparing to unpack .../google-chrome-stable_147.0.7727.116-1_amd64.deb ...
-Unpacking google-chrome-stable (147.0.7727.116-1) ...
-Setting up xdg-utils (1.2.1-2) ...
-update-alternatives: using /usr/bin/xdg-open to provide /usr/bin/open (open) in auto mode
-Setting up google-chrome-stable (147.0.7727.116-1) ...
-=======
-Preparing to unpack .../google-chrome-stable_148.0.7778.167-1_amd64.deb ...
-Unpacking google-chrome-stable (148.0.7778.167-1) ...
-Setting up xdg-utils (1.2.1-2) ...
-update-alternatives: using /usr/bin/xdg-open to provide /usr/bin/open (open) in auto mode
-Setting up google-chrome-stable (148.0.7778.167-1) ...
->>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
->>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
+Setting up google-chrome-stable (149.0.7827.155-1) ...
 update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
 update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
 update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/google-chrome (google-chrome) in auto mode
 Processing triggers for desktop-file-utils (0.28-1) ...
 './cld/bashrc.d/bashrc-alias-google-chrome.sh' -> '/usr/local/cld/bashrc.d/bashrc-alias-google-chrome.sh'
 './cld/bin/google-chrome-sandbox.sh' -> '/usr/local/cld/bin/google-chrome-sandbox.sh'
-<<<<<<< HEAD
-CLDS: * Install Google Chrome 148.0.7778.215 .
-=======
-<<<<<<< HEAD
-CLDS: * Install Google Chrome 147.0.7727.116 .
-=======
-CLDS: * Install Google Chrome 148.0.7778.167 .
->>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
->>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
+CLDS: * Install Google Chrome 149.0.7827.155 .
 CLDS: * Modify configuration to run google-chrome as root.
 CLDS: * Insert Google Chrome in Internet menu.
 CLDS: * Add google chrome alias, chrome.
 CLDS: * Set default browser: update-alternatives --config x-www-browser.
 CLDS: * Enable Flash: Run chrome://plugins and then disable and enable Flash. Test at https://www.google.com/finance?q=NASDAQ%3AAAPL
-<<<<<<< HEAD
-CLDS: * Disk size = 6646592K. Space Used = 542100K. Runtime = 00:00:00:08.
-=======
-<<<<<<< HEAD
-CLDS: * Disk size = 6964956K. Space Used = 528340K. Runtime = 00:00:00:12.
-=======
-CLDS: * Disk size = 6834620K. Space Used = 542120K. Runtime = 00:00:00:08.
->>>>>>> b2d39e37abcd21b71949d917a66fcde6fcb00aca
->>>>>>> 08aa6273684395c51129565690b6eacbf2c55967
+CLDS: * Disk size = 6638688K. Space Used = 540480K. Runtime = 00:00:00:07.
