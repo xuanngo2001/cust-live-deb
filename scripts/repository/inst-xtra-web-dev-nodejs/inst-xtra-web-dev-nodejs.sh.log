@@ -1,5 +1,5 @@
 CLDS:>>>>>>>>> Running inst-xtra-web-dev-nodejs.sh ...
-[38;5;79m2026-07-13 13:35:57 - Installing pre-requisites[0m
+[38;5;79m2026-07-13 15:22:55 - Installing pre-requisites[0m
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
@@ -13,9 +13,9 @@ Hit:7 http://localhost/aptly-repo/master_google-main stable InRelease
 Hit:8 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports InRelease
 Hit:9 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
 Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
-Hit:11 https://download.docker.com/linux/debian trixie InRelease
-Hit:12 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
-Hit:13 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
+Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
+Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
+Hit:13 https://download.docker.com/linux/debian trixie InRelease
 Hit:14 https://dl.google.com/linux/chrome-stable/deb stable InRelease
 Hit:15 https://packages.microsoft.com/repos/edge stable InRelease
 Hit:16 https://ngrok-agent.s3.amazonaws.com bookworm InRelease
@@ -66,7 +66,7 @@ Get:16 https://deb.nodesource.com/node_22.x nodistro InRelease [12.1 kB]
 Get:17 https://deb.nodesource.com/node_22.x nodistro/main amd64 Packages [11.2 kB]
 Hit:18 https://ngrok-agent.s3.amazonaws.com bookworm InRelease
 Hit:19 https://packages.cloud.google.com/apt cloud-sdk InRelease
-Fetched 23.3 kB in 1s (39.0 kB/s)
+Fetched 23.3 kB in 1s (43.3 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -79,10 +79,10 @@ Warning: Target Packages (main/binary-amd64/Packages) is configured multiple tim
 Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 Warning: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
-[1;34m2026-07-13 13:35:59 - Repository configured successfully.[0m
-[38;5;79m2026-07-13 13:35:59 - To install Node.js, run: apt install nodejs -y[0m
-[38;5;79m2026-07-13 13:35:59 - You can use N|solid Runtime as a node.js alternative[0m
-[1;32m2026-07-13 13:35:59 - To install N|solid Runtime, run: apt install nsolid -y 
+[1;34m2026-07-13 15:22:56 - Repository configured successfully.[0m
+[38;5;79m2026-07-13 15:22:56 - To install Node.js, run: apt install nodejs -y[0m
+[38;5;79m2026-07-13 15:22:56 - You can use N|solid Runtime as a node.js alternative[0m
+[1;32m2026-07-13 15:22:56 - To install N|solid Runtime, run: apt install nsolid -y 
 [0m
 Reading package lists...
 Building dependency tree...
@@ -93,11 +93,11 @@ The following NEW packages will be installed:
 Need to get 37.8 MB of archives.
 After this operation, 236 MB of additional disk space will be used.
 Get:1 https://deb.nodesource.com/node_22.x nodistro/main amd64 nodejs amd64 22.23.1-1nodesource1 [37.8 MB]
-Fetched 37.8 MB in 1s (40.8 MB/s)
+Fetched 37.8 MB in 1s (52.0 MB/s)
 Selecting previously unselected package nodejs.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 146577 files and directories currently installed.)
 Preparing to unpack .../nodejs_22.23.1-1nodesource1_amd64.deb ...
 Unpacking nodejs (22.23.1-1nodesource1) ...
 Setting up nodejs (22.23.1-1nodesource1) ...
 CLDS: * Install nodejs.
-CLDS: * Disk size = 9588920K. Space Used = 280620K. Runtime = 00:00:00:08.
+CLDS: * Disk size = 9588916K. Space Used = 280620K. Runtime = 00:00:00:09.

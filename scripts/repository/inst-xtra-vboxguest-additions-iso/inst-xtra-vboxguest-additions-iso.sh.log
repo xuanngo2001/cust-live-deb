@@ -20,7 +20,7 @@ Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 pahole am
 Get:5 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-kbuild-7.0.13+deb13 amd64 7.0.13-1~bpo13+1 [1,454 kB]
 Get:6 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-headers-7.0.13+deb13-amd64 amd64 7.0.13-1~bpo13+1 [1,752 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 linux-headers-amd64 amd64 7.0.13-1~bpo13+1 [1,184 B]
-Fetched 14.8 MB in 0s (171 MB/s)
+Fetched 14.8 MB in 0s (161 MB/s)
 Download complete and in download only mode
 Reading package lists...
 Building dependency tree...
@@ -52,7 +52,7 @@ Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 patch amd
 Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 dpkg-dev all 1.22.22 [1,337 kB]
 Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 build-essential amd64 12.12 [4,624 B]
 Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 dkms all 3.2.2-1~deb13u1 [60.1 kB]
-Fetched 17.2 MB in 0s (168 MB/s)
+Fetched 17.2 MB in 0s (174 MB/s)
 Selecting previously unselected package libstdc++-14-dev:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 127483 files and directories currently installed.)
 Preparing to unpack .../00-libstdc++-14-dev_14.2.0-19_amd64.deb ...
@@ -144,9 +144,9 @@ sudo: unable to resolve host work: Temporary failure in name resolution
 chmod: changing permissions of 'VBoxLinuxAdditions.run': Read-only file system
 Please add execution rights on VBoxLinuxAdditions.run
 
-(xfce4-terminal:143973): xfce4-terminal-WARNING **: 13:35:33.896: Failed to initialize Xfconf: Failed to execute child process “dbus-launch” (No such file or directory)
+(xfce4-terminal:130459): xfce4-terminal-WARNING **: 15:22:27.961: Failed to initialize Xfconf: Failed to execute child process “dbus-launch” (No such file or directory)
 
-(xfce4-terminal:143973): xfce4-terminal-WARNING **: 13:35:33.929: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+(xfce4-terminal:130459): xfce4-terminal-WARNING **: 15:22:27.988: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
 sudo: unable to resolve host work: Temporary failure in name resolution
 VirtualBox Guest Additions installation completed.
 modinfo: ERROR: Module vboxguest not found.
@@ -155,4 +155,4 @@ CLDS: * Install VirtualBox guest additions to Shared folder/clipboard, auto wind
 CLDS: * Assumed packages installed: bzip2 & Xserver installed.
 CLDS: * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
 CLDS: * Delete [K]. Space used could be negative due to this deletion.
-CLDS: * Disk size = 9289912K. Space Used = 210012K. Runtime = 00:00:00:44.
+CLDS: * Disk size = 9289908K. Space Used = 210012K. Runtime = 00:00:00:49.
