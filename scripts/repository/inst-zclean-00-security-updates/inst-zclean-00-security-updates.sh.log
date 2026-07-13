@@ -17,8 +17,8 @@ Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
 Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
 Hit:13 https://download.docker.com/linux/debian trixie InRelease
 Hit:14 https://dl.google.com/linux/chrome-stable/deb stable InRelease
-Hit:15 https://packages.microsoft.com/repos/edge stable InRelease
-Hit:16 https://deb.nodesource.com/node_22.x nodistro InRelease
+Hit:15 https://deb.nodesource.com/node_22.x nodistro InRelease
+Hit:16 https://packages.microsoft.com/repos/edge stable InRelease
 Hit:17 https://ngrok-agent.s3.amazonaws.com bookworm InRelease
 Hit:18 https://packages.cloud.google.com/apt cloud-sdk InRelease
 Reading package lists...
@@ -37,21 +37,45 @@ Calculating upgrade...
 The following packages will be upgraded:
   dhcpcd-base microsoft-edge-stable
 2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+1 not fully installed or removed.
 Need to get 187 MB of archives.
 After this operation, 5,647 kB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 dhcpcd-base amd64 1:10.3.2-4~bpo13+1 [207 kB]
 Get:2 https://packages.microsoft.com/repos/edge stable/main amd64 microsoft-edge-stable amd64 150.0.4078.65-1 [187 MB]
-Fetched 187 MB in 5s (34.2 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 152505 files and directories currently installed.)
+Fetched 187 MB in 3s (70.8 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 153477 files and directories currently installed.)
 Preparing to unpack .../microsoft-edge-stable_150.0.4078.65-1_amd64.deb ...
 Unpacking microsoft-edge-stable (150.0.4078.65-1) over (147.0.3912.60-1) ...
 Preparing to unpack .../dhcpcd-base_1%3a10.3.2-4~bpo13+1_amd64.deb ...
 Unpacking dhcpcd-base (1:10.3.2-4~bpo13+1) over (1:10.1.0-11+deb13u3) ...
 Setting up microsoft-edge-stable (150.0.4078.65-1) ...
+Setting up zfs-dkms (2.3.2-2) ...
+Removing old zfs/2.3.2 DKMS files...
+Deleting module zfs/2.3.2 completely from the DKMS tree.
+Loading new zfs/2.3.2 DKMS files...
+Building for 7.0.13+deb13-amd64
+
+Building initial module zfs/2.3.2 for 7.0.13+deb13-amd64
+Sign command: /lib/modules/7.0.13+deb13-amd64/build/scripts/sign-file
+Signing key: /var/lib/dkms/mok.key
+Public certificate (MOK): /var/lib/dkms/mok.pub
+
+Running the pre_build script...(bad exit status: 1)
+Failed command:
+cd /var/lib/dkms/zfs/2.3.2/build/ && /var/lib/dkms/zfs/2.3.2/build/configure --disable-dependency-tracking --prefix=/usr --with-config=kernel --with-linux=/lib/modules/7.0.13+deb13-amd64/source --with-linux-obj=/lib/modules/7.0.13+deb13-amd64/build --with-qat= --host= 
+Consult /var/lib/dkms/zfs/2.3.2/build/make.log for more information.
+dpkg: error processing package zfs-dkms (--configure):
+ installed zfs-dkms package post-installation script subprocess returned error exit status 1
 Setting up dhcpcd-base (1:10.3.2-4~bpo13+1) ...
 Installing new version of config file /etc/dhcpcd.conf ...
 Creating group '_dhcpcd' with GID 985.
 Creating user '_dhcpcd' (DHCP Client Daemon) with UID 985 and GID 985.
 Processing triggers for desktop-file-utils (0.28-1) ...
-CLDS: * Install security updates at the ends.
-CLDS: * Disk size = 8410452K. Space Used = 187012K. Runtime = 00:00:00:20.
+Processing triggers for initramfs-tools (0.148.4) ...
+update-initramfs: Generating /boot/initrd.img-7.0.13+deb13-amd64
+W: No zstd in /usr/bin:/sbin:/bin, using gzip
+live-boot: core filesystems dm-verity devices utils udev blockdev dns.
+Errors were encountered while processing:
+ zfs-dkms
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+CLDS: * Disk size = 8460392K. Space Used = 187028K. Runtime = 00:00:00:28.
