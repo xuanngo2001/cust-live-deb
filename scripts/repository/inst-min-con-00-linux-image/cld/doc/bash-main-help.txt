@@ -5,6 +5,7 @@ this_script=$(basename "${0}")
 DATE_TIME_STR=$(date +'%Y-%m-%d_%0k.%M.%S')
 mkdir -p ./logs; exec > >(tee ./logs/${this_script}_${DATE_TIME_STR}.log) 2>&1
 echo "💲 ./${this_script} $*"
+CURR_EXEC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "⭐ ============ ${this_script}: ${DATE_TIME_STR} ============"
 
 # Get the directory of this script
