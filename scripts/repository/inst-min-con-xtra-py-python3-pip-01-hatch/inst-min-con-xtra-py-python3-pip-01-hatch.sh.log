@@ -10,7 +10,7 @@ Collecting distro>=1.0.0 (from hatch)
 Collecting hatchling>=1.27.0 (from hatch)
   Downloading hatchling-1.31.0-py3-none-any.whl.metadata (3.8 kB)
 Collecting httpx2>=0.22.0 (from hatch)
-  Downloading httpx2-2.5.0-py3-none-any.whl.metadata (8.3 kB)
+  Downloading httpx2-2.6.0-py3-none-any.whl.metadata (8.4 kB)
 Collecting hyperlink>=21.0.0 (from hatch)
   Downloading hyperlink-21.0.0-py2.py3-none-any.whl.metadata (1.5 kB)
 Collecting keyring>=23.5.0 (from hatch)
@@ -48,13 +48,13 @@ Collecting trove-classifiers (from hatchling>=1.27.0->hatch)
   Downloading trove_classifiers-2026.6.1.19-py3-none-any.whl.metadata (2.3 kB)
 Collecting anyio (from httpx2>=0.22.0->hatch)
   Downloading anyio-4.14.2-py3-none-any.whl.metadata (4.6 kB)
-Collecting httpcore2==2.5.0 (from httpx2>=0.22.0->hatch)
-  Downloading httpcore2-2.5.0-py3-none-any.whl.metadata (24 kB)
+Collecting httpcore2==2.6.0 (from httpx2>=0.22.0->hatch)
+  Downloading httpcore2-2.6.0-py3-none-any.whl.metadata (24 kB)
 Collecting idna>=3.18 (from httpx2>=0.22.0->hatch)
   Downloading idna-3.18-py3-none-any.whl.metadata (6.1 kB)
 Collecting truststore>=0.10 (from httpx2>=0.22.0->hatch)
   Downloading truststore-0.10.4-py3-none-any.whl.metadata (4.4 kB)
-Collecting h11>=0.16 (from httpcore2==2.5.0->httpx2>=0.22.0->hatch)
+Collecting h11>=0.16 (from httpcore2==2.6.0->httpx2>=0.22.0->hatch)
   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
 Collecting SecretStorage>=3.2 (from keyring>=23.5.0->hatch)
   Downloading secretstorage-3.5.0-py3-none-any.whl.metadata (4.0 kB)
@@ -63,7 +63,7 @@ Collecting jeepney>=0.4.2 (from keyring>=23.5.0->hatch)
 Collecting jaraco.classes (from keyring>=23.5.0->hatch)
   Downloading jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
 Collecting jaraco.functools (from keyring>=23.5.0->hatch)
-  Downloading jaraco_functools-4.5.0-py3-none-any.whl.metadata (2.9 kB)
+  Downloading jaraco_functools-4.6.0-py3-none-any.whl.metadata (2.9 kB)
 Collecting jaraco.context (from keyring>=23.5.0->hatch)
   Downloading jaraco_context-6.1.2-py3-none-any.whl.metadata (4.2 kB)
 Collecting filelock>=3.15.4 (from python-discovery>=1.1->hatch)
@@ -86,8 +86,8 @@ Downloading backports_zstd-1.6.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17
 Downloading click-8.4.2-py3-none-any.whl (119 kB)
 Downloading distro-1.9.0-py3-none-any.whl (20 kB)
 Downloading hatchling-1.31.0-py3-none-any.whl (77 kB)
-Downloading httpx2-2.5.0-py3-none-any.whl (76 kB)
-Downloading httpcore2-2.5.0-py3-none-any.whl (80 kB)
+Downloading httpx2-2.6.0-py3-none-any.whl (88 kB)
+Downloading httpcore2-2.6.0-py3-none-any.whl (81 kB)
 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
 Downloading hyperlink-21.0.0-py2.py3-none-any.whl (74 kB)
 Downloading idna-3.18-py3-none-any.whl (65 kB)
@@ -101,7 +101,7 @@ Downloading python_discovery-1.4.4-py3-none-any.whl (34 kB)
 Downloading filelock-3.29.7-py3-none-any.whl (46 kB)
 Downloading rich-15.0.0-py3-none-any.whl (310 kB)
 Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 42.6 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 46.4 MB/s eta 0:00:00
 Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
 Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
 Downloading secretstorage-3.5.0-py3-none-any.whl (15 kB)
@@ -110,21 +110,21 @@ Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
 Downloading tomlkit-0.15.0-py3-none-any.whl (41 kB)
 Downloading truststore-0.10.4-py3-none-any.whl (18 kB)
 Downloading uv-0.11.28-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (27.1 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 27.1/27.1 MB 58.9 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 27.1/27.1 MB 63.9 MB/s eta 0:00:00
 Downloading virtualenv-21.6.1-py3-none-any.whl (5.5 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 69.3 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 62.1 MB/s eta 0:00:00
 Downloading distlib-0.4.3-py2.py3-none-any.whl (470 kB)
 Downloading anyio-4.14.2-py3-none-any.whl (125 kB)
 Downloading jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
 Downloading jaraco_context-6.1.2-py3-none-any.whl (7.9 kB)
-Downloading jaraco_functools-4.5.0-py3-none-any.whl (10 kB)
+Downloading jaraco_functools-4.6.0-py3-none-any.whl (11 kB)
 Downloading more_itertools-11.1.0-py3-none-any.whl (72 kB)
 Downloading pyproject_hooks-1.2.0-py3-none-any.whl (10 kB)
 Downloading trove_classifiers-2026.6.1.19-py3-none-any.whl (14 kB)
 Installing collected packages: trove-classifiers, ptyprocess, distlib, uv, truststore, tomlkit, tomli-w, shellingham, pyproject-hooks, pygments, pluggy, platformdirs, pexpect, pathspec, more-itertools, mdurl, jeepney, jaraco.context, idna, h11, filelock, distro, click, backports-zstd, userpath, SecretStorage, python-discovery, markdown-it-py, jaraco.functools, jaraco.classes, hyperlink, httpcore2, hatchling, anyio, virtualenv, rich, keyring, httpx2, hatch
 
-Successfully installed SecretStorage-3.5.0 anyio-4.14.2 backports-zstd-1.6.0 click-8.4.2 distlib-0.4.3 distro-1.9.0 filelock-3.29.7 h11-0.16.0 hatch-1.17.1 hatchling-1.31.0 httpcore2-2.5.0 httpx2-2.5.0 hyperlink-21.0.0 idna-3.18 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.5.0 jeepney-0.9.0 keyring-25.7.0 markdown-it-py-4.2.0 mdurl-0.1.2 more-itertools-11.1.0 pathspec-1.1.1 pexpect-4.9.0 platformdirs-4.10.0 pluggy-1.6.0 ptyprocess-0.7.0 pygments-2.20.0 pyproject-hooks-1.2.0 python-discovery-1.4.4 rich-15.0.0 shellingham-1.5.4 tomli-w-1.2.0 tomlkit-0.15.0 trove-classifiers-2026.6.1.19 truststore-0.10.4 userpath-1.9.2 uv-0.11.28 virtualenv-21.6.1
+Successfully installed SecretStorage-3.5.0 anyio-4.14.2 backports-zstd-1.6.0 click-8.4.2 distlib-0.4.3 distro-1.9.0 filelock-3.29.7 h11-0.16.0 hatch-1.17.1 hatchling-1.31.0 httpcore2-2.6.0 httpx2-2.6.0 hyperlink-21.0.0 idna-3.18 jaraco.classes-3.4.0 jaraco.context-6.1.2 jaraco.functools-4.6.0 jeepney-0.9.0 keyring-25.7.0 markdown-it-py-4.2.0 mdurl-0.1.2 more-itertools-11.1.0 pathspec-1.1.1 pexpect-4.9.0 platformdirs-4.10.0 pluggy-1.6.0 ptyprocess-0.7.0 pygments-2.20.0 pyproject-hooks-1.2.0 python-discovery-1.4.4 rich-15.0.0 shellingham-1.5.4 tomli-w-1.2.0 tomlkit-0.15.0 trove-classifiers-2026.6.1.19 truststore-0.10.4 userpath-1.9.2 uv-0.11.28 virtualenv-21.6.1
 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
 CLDS: * Install hatch.
 CLDS: * Need for yt-dlp.
-CLDS: * Disk size = 4910068K. Space Used = 143808K. Runtime = 00:00:00:06.
+CLDS: * Disk size = 4910292K. Space Used = 144008K. Runtime = 00:00:00:06.
