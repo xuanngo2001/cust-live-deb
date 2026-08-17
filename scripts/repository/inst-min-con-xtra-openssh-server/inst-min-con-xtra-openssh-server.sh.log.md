@@ -1,7 +1,7 @@
 * >>>>>>>>> Running inst-min-con-xtra-openssh-server.sh ...
   * After this operation, 3,669 kB of additional disk space will be used.
   * To transfer data between Windows and Linux on Hyper-V.
-  * Disk size = 4627300K. Space Used = 4528K. Runtime = 00:00:00:02.
+  * Disk size = 4627292K. Space Used = 4528K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
 libwtmpdb0 openssh-server openssh-sftp-server runit-helper

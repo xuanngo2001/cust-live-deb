@@ -1,4 +1,4 @@
 * >>>>>>>>> Running inst-min-con-xtra-py-python3-pip-01-hatch.sh ...
   * Install hatch.
   * Need for yt-dlp.
-  * Disk size = 4913032K. Space Used = 144008K. Runtime = 00:00:00:06.
+  * Disk size = 4913048K. Space Used = 144032K. Runtime = 00:00:00:06.
