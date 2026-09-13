@@ -23,3 +23,4 @@ function avgtime() {
 }
 
 export -f avgtime
+

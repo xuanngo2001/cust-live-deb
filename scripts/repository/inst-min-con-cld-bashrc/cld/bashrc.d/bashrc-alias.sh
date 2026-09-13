@@ -32,3 +32,4 @@ alias grep='grep --color'
 
 # grep case insensitive
 alias igrep='grep -i'
+
