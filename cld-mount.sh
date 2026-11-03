@@ -1,6 +1,13 @@
 #!/bin/bash
 set -e
 # Description: Setup mount points
+this_script=$(basename "${0}")
+DATE_TIME_STR=$(date +'%Y-%m-%d_%H.%M.%S')
+CURR_EXEC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+#mkdir -p ${CURR_EXEC_DIR}/logs; exec > >(tee ${CURR_EXEC_DIR}/logs/${this_script}_${DATE_TIME_STR}.log) 2>&1
+echo "⭐ ============ ${this_script}: ${DATE_TIME_STR} ============"
+echo "💲 ./${this_script} $*"
+
 
 CHROOT_DIR=$1
 
@@ -28,3 +35,5 @@ mount -t proc none "${CHROOT_DIR}/proc"
 mount -t sysfs none "${CHROOT_DIR}/sys"
 mount -o bind /dev "${CHROOT_DIR}/dev"
 mount -t devpts none "${CHROOT_DIR}/dev/pts"
+
+echo "@@@@@@@@@@EEEE ${this_script} 👍 EEEE@@@@@@@@@@"

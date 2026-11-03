@@ -2,6 +2,14 @@
 set -e
 # Description: Get packages installed from *.sh.log
 #   Note: Already installed package will end with *.
+this_script=$(basename "${0}")
+DATE_TIME_STR=$(date +'%Y-%m-%d_%H.%M.%S')
+CURR_EXEC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+#mkdir -p ${CURR_EXEC_DIR}/logs; exec > >(tee ${CURR_EXEC_DIR}/logs/${this_script}_${DATE_TIME_STR}.log) 2>&1
+echo "⭐ ============ ${this_script}: ${DATE_TIME_STR} ============"
+echo "💲 ./${this_script} $*"
+
+
 script_name=$(basename "$0")
 
 log_file=$1
@@ -44,3 +52,5 @@ echo "${package_needed}"
 
 # 
 # log-pkg-installed.sh inst-std-multimedia-00-debmultimedia-keyring.sh.log > zdeb.log2
+
+echo "@@@@@@@@@@EEEE ${this_script} 👍 EEEE@@@@@@@@@@"

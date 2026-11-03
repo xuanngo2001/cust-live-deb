@@ -2,6 +2,13 @@
 set -e
 # Description: debootstrap
 #   - Ensure /root/.gnupg/trustedkeys.gpg has key for CLD aptly repository.
+this_script=$(basename "${0}")
+DATE_TIME_STR=$(date +'%Y-%m-%d_%H.%M.%S')
+CURR_EXEC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+#mkdir -p ${CURR_EXEC_DIR}/logs; exec > >(tee ${CURR_EXEC_DIR}/logs/${this_script}_${DATE_TIME_STR}.log) 2>&1
+echo "⭐ ============ ${this_script}: ${DATE_TIME_STR} ============"
+echo "💲 ./${this_script} $*"
+
 
 CHROOT_DIR=$1
 DEB_REPO_URL=$2
@@ -55,6 +62,7 @@ Then, run
   ./main.sh
 EOF
 
+echo "@@@@@@@@@@EEEE ${this_script} 👍 EEEE@@@@@@@@@@"
 
 # Reference:
 # https://l3net.wordpress.com/2013/09/21/how-to-build-a-debian-livecd/

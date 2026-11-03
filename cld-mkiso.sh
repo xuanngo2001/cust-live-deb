@@ -1,8 +1,13 @@
 #!/bin/bash
 set -e
-
 # Description: Create an iso-hybrid using chroot/.
-# Requirements:
+this_script=$(basename "${0}")
+DATE_TIME_STR=$(date +'%Y-%m-%d_%H.%M.%S')
+CURR_EXEC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+#mkdir -p ${CURR_EXEC_DIR}/logs; exec > >(tee ${CURR_EXEC_DIR}/logs/${this_script}_${DATE_TIME_STR}.log) 2>&1
+echo "⭐ ============ ${this_script}: ${DATE_TIME_STR} ============"
+echo "💲 ./${this_script} $*"
+
 
 SYSTEM=$1
 CHROOT_DIR=$2
@@ -155,3 +160,6 @@ echo "" >> ${SIZE_LOG}
 # Auto architecture.
 # Add distribution name.
 # Create Hybrid ISO. https://wiki.archlinux.org/index.php/Remastering_the_Install_ISO
+
+
+echo "@@@@@@@@@@EEEE ${this_script} 👍 EEEE@@@@@@@@@@"
