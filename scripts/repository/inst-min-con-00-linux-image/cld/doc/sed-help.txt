@@ -23,7 +23,7 @@
     sed '2,$s/SEARCH/REPLACE/' filename
 
 # Find line with MATCH_PATTERN. Then, SEARCH and REPLACE.
-    sed -i "/MATCH_PATTERN/b; s/SEARCH/REPLACE/" tmp.txt
+    sed -i '/LINE_PATTERN/s/SEARCH/REPLACE/g' tmp.txt
 
 # Delete line with pattern.
     sed -i.bck "/pattern/d"

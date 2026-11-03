@@ -5,6 +5,9 @@
  
 # All files found are given as parameters to sed at once.
     find . -type f -name '*.txt' -exec sed -i 's/SEARCH/REPLACE/g' {} +
+    find . -type f -name "*.txt" -exec sed -i 's/OLD_STRING/NEW_STRING/g; s/OLD_STRING2/NEW_STRING2/g' {} +
+    find . -type d \( -name "node_modules" -o -name ".next" -o -name "standalone" \) -prune -o -type f -name "*.txt" -exec sed -i -e 's/OLD_STRING/NEW_STRING/g' -e 's/OLD_STRING2/NEW_STRING2/g' {} +
+
  
 # Find and execute multiple commands.
     find . -type f -name '*.sh' -exec echo "Executing {}" \; -exec chmod +x {} \; 
@@ -81,6 +84,14 @@
     sudo du -h -x --max-depth=1 /var/lib/docker/containers | sort -rh
     sudo find /var/lib/docker/containers/ -type f -name "*-json.log" -exec ls -lh {} +
     sudo find /var/lib/docker/containers/ -type f -name "*-json.log" -ok rm {} \;
+
+# Find and excute shell commands: Find and rename .jsx files to .tsx
+    find "$TARGET_DIR" -type f -name "*.jsx" -exec bash -c '
+    for file do
+        mv "$file" "${file%.jsx}.tsx"
+        echo "Renamed: $file -> ${file%.jsx}.tsx"
+    done
+    ' _ {} +
 
 # Busybox commands
     # List all files recursively and sort by size (largest first)

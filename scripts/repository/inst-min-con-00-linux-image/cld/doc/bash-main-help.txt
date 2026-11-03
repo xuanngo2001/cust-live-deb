@@ -1,16 +1,13 @@
 #!/bin/bash
-set -e # Exit immediately if a command exits with a non-zero status
+set -eo pipefail # Exit immediately if a command exits with a non-zero status and fail on pipe errors
 # Description: BASH TEMPLATE
 this_script=$(basename "${0}")
-DATE_TIME_STR=$(date +'%Y-%m-%d_%0k.%M.%S')
-mkdir -p ./logs; exec > >(tee ./logs/${this_script}_${DATE_TIME_STR}.log) 2>&1
-echo "💲 ./${this_script} $*"
+DATE_TIME_STR=$(date +'%Y-%m-%d_%H.%M.%S')
 CURR_EXEC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+#mkdir -p ${CURR_EXEC_DIR}/logs; exec > >(tee ${CURR_EXEC_DIR}/logs/${this_script}_${DATE_TIME_STR}.log) 2>&1
 echo "⭐ ============ ${this_script}: ${DATE_TIME_STR} ============"
+echo "💲 ./${this_script} $*"
 
-# Get the directory of this script
-    CURR_EXEC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-    echo "${CURR_EXEC_DIR}"
 
   # (set -a; source .env; set +a; ./your_script.sh)
   # export $(grep -v '^#' .env | xargs) && ./your_script.sh
@@ -31,12 +28,23 @@ done
             "  e.g. ${this_script} <name>" \
             "  e.g. ${this_script} cld-help.sh" \
     )
-    # Use array of arguments for error checking
-    args=("$zone" "$machine_type" "$vm_name")
-    arg_names=("zone" "machine_type" "vm_name")
+    # Check all string arguments for non-empty values
+    args=("$video_file")
+    arg_names=("video_file")
     for i in "${!args[@]}"; do
         if [ -z "${args[$i]}" ]; then
             echo "❌ Error: Missing required argument: ${arg_names[$i]}"
+            echo "${cmd_eg}"
+            exit 1
+        fi
+    done
+
+    # Check all integer arguments for valid integer values
+    int_args=("$total_caps" "$start_offset_sec" "$end_offset_sec")
+    int_arg_names=("total_caps" "start_offset_sec" "end_offset_sec")
+    for i in "${!int_args[@]}"; do
+        if ! [[ "${int_args[$i]}" =~ ^[0-9]+$ ]]; then
+            echo "❌ Error: Argument must be an integer: ${int_arg_names[$i]} = ${int_args[$i]}"
             echo "${cmd_eg}"
             exit 1
         fi
@@ -53,5 +61,20 @@ done
         fi
         
     done < <( cat "${to_dl_file}" | grep -v '^#' | mawk NF )
+
+# Find and while loop to handle weird filename
+    video_ext_list=("webm" "mp4" "mkv" "avi" "mov" "mpg" "mpeg" "flv" "wmv" "divx" "m4v" "3gp")
+    # Build the find matching arguments dynamically from video_ext_list array
+        find_args=()
+        for ext in "${video_ext_list[@]}"; do
+            if [ ${#find_args[@]} -gt 0 ]; then
+                find_args+=("-o")
+            fi
+            find_args+=("-iname" "*.$ext")
+        done
+    find "${target_dir}" -maxdepth 1 -type f -size +"${min_size_mb}M" \( "${find_args[@]}" \) -print0 | while read -r -d $'\0' video_file; do
+        # Direct explicit clean execution call matching your syntax requirement
+        "$CURR_EXEC_DIR/ffmpeg-screenshots-file.sh" "${video_file}" "${total_screenshots}" "${start_offset_sec}" "${end_offset_sec}" || true
+    done
 
 echo "@@@@@@@@@@EEEE ${this_script} 👍 EEEE@@@@@@@@@@"
