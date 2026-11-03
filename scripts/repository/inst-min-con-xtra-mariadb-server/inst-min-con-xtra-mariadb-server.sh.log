@@ -20,7 +20,7 @@ The following NEW packages will be installed:
   libmariadb3 libncurses6 libnuma1 libpcre2-posix3 libsigsegv2 liburing2
   libwrap0 lsof mariadb-client mariadb-client-core mariadb-common
   mariadb-server mariadb-server-core mysql-common psmisc socat
-0 upgraded, 22 newly installed, 0 to remove and 2 not upgraded.
+0 upgraded, 22 newly installed, 0 to remove and 3 not upgraded.
 Need to get 20.1 MB of archives.
 After this operation, 201 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 galera-4 amd64 26.4.23-0+deb13u1 [916 kB]
@@ -28,14 +28,14 @@ Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libsigseg
 Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 gawk amd64 1:5.2.1-2+b1 [674 kB]
 Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 mysql-common all 5.8+1.1.1 [6,784 B]
 Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 mariadb-common all 1:11.8.6-0+deb13u1 [29.5 kB]
-Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libdbi-perl amd64 1.647-1+deb13u1 [861 kB]
+Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libdbi-perl amd64 1.652-2~deb13u1 [867 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 liblsof0 amd64 4.99.4+dfsg-2 [134 kB]
 Get:8 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 lsof amd64 4.99.4+dfsg-2 [316 kB]
 Get:9 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libconfig-inifiles-perl all 3.000003-3+deb13u1 [45.0 kB]
 Get:10 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libmariadb3 amd64 1:11.8.6-0+deb13u1 [187 kB]
 Get:11 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libncurses6 amd64 6.5+20250216-2 [105 kB]
 Get:12 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 mariadb-client-core amd64 1:11.8.6-0+deb13u1 [919 kB]
-Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpcre2-posix3 amd64 10.46-1~deb13u1 [63.9 kB]
+Get:13 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libpcre2-posix3 amd64 10.46-1~deb13u2 [64.0 kB]
 Get:14 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 mariadb-client amd64 1:11.8.6-0+deb13u1 [3,164 kB]
 Get:15 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libaio1t64 amd64 0.3.113-8+b1 [14.9 kB]
 Get:16 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libnuma1 amd64 2.0.19-1 [22.2 kB]
@@ -43,12 +43,12 @@ Get:17 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 liburing
 Get:18 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 mariadb-server-core amd64 1:11.8.6-0+deb13u1 [7,933 kB]
 Get:19 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 psmisc amd64 23.7-2 [267 kB]
 Get:20 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libwrap0 amd64 7.6.q-36 [55.3 kB]
-Get:21 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 socat amd64 1.8.0.3-1 [423 kB]
+Get:21 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 socat amd64 1.8.0.3-1+deb13u1 [424 kB]
 Get:22 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 mariadb-server amd64 1:11.8.6-0+deb13u1 [3,907 kB]
 Preconfiguring packages ...
-Fetched 20.1 MB in 0s (185 MB/s)
+Fetched 20.1 MB in 0s (165 MB/s)
 Selecting previously unselected package galera-4.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93437 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 96747 files and directories currently installed.)
 Preparing to unpack .../galera-4_26.4.23-0+deb13u1_amd64.deb ...
 Unpacking galera-4 (26.4.23-0+deb13u1) ...
 Selecting previously unselected package libsigsegv2:amd64.
@@ -56,7 +56,7 @@ Preparing to unpack .../libsigsegv2_2.14-1+b2_amd64.deb ...
 Unpacking libsigsegv2:amd64 (2.14-1+b2) ...
 Setting up libsigsegv2:amd64 (2.14-1+b2) ...
 Selecting previously unselected package gawk.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93456 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 96766 files and directories currently installed.)
 Preparing to unpack .../00-gawk_1%3a5.2.1-2+b1_amd64.deb ...
 Unpacking gawk (1:5.2.1-2+b1) ...
 Selecting previously unselected package mysql-common.
@@ -66,8 +66,8 @@ Selecting previously unselected package mariadb-common.
 Preparing to unpack .../02-mariadb-common_1%3a11.8.6-0+deb13u1_all.deb ...
 Unpacking mariadb-common (1:11.8.6-0+deb13u1) ...
 Selecting previously unselected package libdbi-perl:amd64.
-Preparing to unpack .../03-libdbi-perl_1.647-1+deb13u1_amd64.deb ...
-Unpacking libdbi-perl:amd64 (1.647-1+deb13u1) ...
+Preparing to unpack .../03-libdbi-perl_1.652-2~deb13u1_amd64.deb ...
+Unpacking libdbi-perl:amd64 (1.652-2~deb13u1) ...
 Selecting previously unselected package liblsof0.
 Preparing to unpack .../04-liblsof0_4.99.4+dfsg-2_amd64.deb ...
 Unpacking liblsof0 (4.99.4+dfsg-2) ...
@@ -87,8 +87,8 @@ Selecting previously unselected package mariadb-client-core.
 Preparing to unpack .../09-mariadb-client-core_1%3a11.8.6-0+deb13u1_amd64.deb ...
 Unpacking mariadb-client-core (1:11.8.6-0+deb13u1) ...
 Selecting previously unselected package libpcre2-posix3:amd64.
-Preparing to unpack .../10-libpcre2-posix3_10.46-1~deb13u1_amd64.deb ...
-Unpacking libpcre2-posix3:amd64 (10.46-1~deb13u1) ...
+Preparing to unpack .../10-libpcre2-posix3_10.46-1~deb13u2_amd64.deb ...
+Unpacking libpcre2-posix3:amd64 (10.46-1~deb13u2) ...
 Selecting previously unselected package mariadb-client.
 Preparing to unpack .../11-mariadb-client_1%3a11.8.6-0+deb13u1_amd64.deb ...
 Unpacking mariadb-client (1:11.8.6-0+deb13u1) ...
@@ -111,14 +111,14 @@ Selecting previously unselected package libwrap0:amd64.
 Preparing to unpack .../17-libwrap0_7.6.q-36_amd64.deb ...
 Unpacking libwrap0:amd64 (7.6.q-36) ...
 Selecting previously unselected package socat.
-Preparing to unpack .../18-socat_1.8.0.3-1_amd64.deb ...
-Unpacking socat (1.8.0.3-1) ...
+Preparing to unpack .../18-socat_1.8.0.3-1+deb13u1_amd64.deb ...
+Unpacking socat (1.8.0.3-1+deb13u1) ...
 Setting up mysql-common (5.8+1.1.1) ...
 update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
 Setting up mariadb-common (1:11.8.6-0+deb13u1) ...
 update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
 Selecting previously unselected package mariadb-server.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94274 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 97586 files and directories currently installed.)
 Preparing to unpack .../mariadb-server_1%3a11.8.6-0+deb13u1_amd64.deb ...
 Unpacking mariadb-server (1:11.8.6-0+deb13u1) ...
 Setting up libconfig-inifiles-perl (3.000003-3+deb13u1) ...
@@ -127,15 +127,15 @@ Setting up gawk (1:5.2.1-2+b1) ...
 Setting up psmisc (23.7-2) ...
 Setting up liblsof0 (4.99.4+dfsg-2) ...
 Setting up libwrap0:amd64 (7.6.q-36) ...
-Setting up socat (1.8.0.3-1) ...
+Setting up socat (1.8.0.3-1+deb13u1) ...
 Setting up libncurses6:amd64 (6.5+20250216-2) ...
 Setting up libmariadb3:amd64 (1:11.8.6-0+deb13u1) ...
 Setting up lsof (4.99.4+dfsg-2) ...
 Setting up libnuma1:amd64 (2.0.19-1) ...
-Setting up libpcre2-posix3:amd64 (10.46-1~deb13u1) ...
+Setting up libpcre2-posix3:amd64 (10.46-1~deb13u2) ...
 Setting up libaio1t64:amd64 (0.3.113-8+b1) ...
 Setting up liburing2:amd64 (2.9-1) ...
-Setting up libdbi-perl:amd64 (1.647-1+deb13u1) ...
+Setting up libdbi-perl:amd64 (1.652-2~deb13u1) ...
 Setting up mariadb-client-core (1:11.8.6-0+deb13u1) ...
 Setting up mariadb-server-core (1:11.8.6-0+deb13u1) ...
 Setting up mariadb-client (1:11.8.6-0+deb13u1) ...
@@ -145,7 +145,7 @@ invoke-rc.d: policy-rc.d denied execution of stop.
 Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
 Created symlink '/etc/systemd/system/multi-user.target.wants/mariadb.service' → '/usr/lib/systemd/system/mariadb.service'.
-Processing triggers for libc-bin (2.41-12+deb13u3) ...
+Processing triggers for libc-bin (2.41-12+deb13u4) ...
 './cld/doc/mysql-admin-help.txt' -> '/usr/local/cld/doc/mysql-admin-help.txt'
 './cld/doc/mysql-aggregate-help.txt' -> '/usr/local/cld/doc/mysql-aggregate-help.txt'
 './cld/doc/mysql-alter-help.txt' -> '/usr/local/cld/doc/mysql-alter-help.txt'
@@ -162,4 +162,4 @@ Processing triggers for libc-bin (2.41-12+deb13u3) ...
 './cld/doc/mysql-view-help.txt' -> '/usr/local/cld/doc/mysql-view-help.txt'
 CLDS: * Install mariadb-server.
 CLDS: * Set root password to [password].
-CLDS: * Disk size = 4537704K. Space Used = 361268K. Runtime = 00:00:00:05.
+CLDS: * Disk size = 4404388K. Space Used = 361296K. Runtime = 00:00:00:05.

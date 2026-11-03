@@ -2,8 +2,10 @@
   * After this operation, 1,530 kB of additional disk space will be used.
   * Install menu, an easy way to get installed programs in the menu automatically.
   * For how to use Debian menu, see https://www.debian.org/doc/packaging-manuals/menu.html/ch3.html.
-  * Disk size = 5527144K. Space Used = 1308K. Runtime = 00:00:00:01.
+  * Disk size = 5353416K. Space Used = 1312K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
-menu
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-03_14.31.42 ============
+💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-win-01-wm-jwm-debian-menu.sh.log menu @@@@@@@@@@EEEE
+cld--shlog-pkg-installed-extract.sh 👍 EEEE@@@@@@@@@@
   ```

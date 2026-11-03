@@ -3,39 +3,54 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 The following additional packages will be installed:
-  libopus0 libxfixes3 libxrandr2 ssl-cert
+  libmp3lame0 libopenh264-8 libopus0 libx264-164 libxfixes3 libxrandr2
+  ssl-cert
 Suggested packages:
   opus-tools guacamole
 Recommended packages:
-  xorgxrdp
+  pipewire-module-xrdp xorgxrdp
 The following NEW packages will be installed:
-  libopus0 libxfixes3 libxrandr2 ssl-cert xrdp
-0 upgraded, 5 newly installed, 0 to remove and 2 not upgraded.
-Need to get 3,545 kB of archives.
-After this operation, 8,409 kB of additional disk space will be used.
+  libmp3lame0 libopenh264-8 libopus0 libx264-164 libxfixes3 libxrandr2
+  ssl-cert xrdp
+0 upgraded, 8 newly installed, 0 to remove and 3 not upgraded.
+Need to get 4,878 kB of archives.
+After this operation, 12.2 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 ssl-cert all 1.1.3 [16.8 kB]
-Get:2 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libopus0 amd64 1.5.2-2 [2,852 kB]
-Get:3 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxfixes3 amd64 1:6.0.0-2+b4 [20.2 kB]
-Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxrandr2 amd64 2:1.5.4-1+b3 [36.3 kB]
-Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 xrdp amd64 0.10.1-3.1+deb13u1 [619 kB]
+Get:2 http://localhost/aptly-repo/master_deb-multimedia-main trixie/main amd64 libmp3lame0 amd64 1:3.100-dmo3 [361 kB]
+Get:3 http://localhost/aptly-repo/master_deb-multimedia-main trixie/main amd64 libopenh264-8 amd64 1:2.6.0-dmo1 [391 kB]
+Get:4 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libopus0 amd64 1.5.2-2 [2,852 kB]
+Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libx264-164 amd64 2:0.164.3108+git31e19f9-2+b1 [558 kB]
+Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxfixes3 amd64 1:6.0.0-2+b4 [20.2 kB]
+Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libxrandr2 amd64 2:1.5.4-1+b3 [36.3 kB]
+Get:8 http://localhost/aptly-repo/master_trixie-backports-main trixie-backports/main amd64 xrdp amd64 0.10.6.1-2~bpo13+1 [643 kB]
 Preconfiguring packages ...
-Fetched 3,545 kB in 0s (127 MB/s)
+Fetched 4,878 kB in 0s (118 MB/s)
 Selecting previously unselected package ssl-cert.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 102265 files and directories currently installed.)
-Preparing to unpack .../ssl-cert_1.1.3_all.deb ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 105580 files and directories currently installed.)
+Preparing to unpack .../0-ssl-cert_1.1.3_all.deb ...
 Unpacking ssl-cert (1.1.3) ...
+Selecting previously unselected package libmp3lame0:amd64.
+Preparing to unpack .../1-libmp3lame0_1%3a3.100-dmo3_amd64.deb ...
+Unpacking libmp3lame0:amd64 (1:3.100-dmo3) ...
+Selecting previously unselected package libopenh264-8:amd64.
+Preparing to unpack .../2-libopenh264-8_1%3a2.6.0-dmo1_amd64.deb ...
+Unpacking libopenh264-8:amd64 (1:2.6.0-dmo1) ...
 Selecting previously unselected package libopus0:amd64.
-Preparing to unpack .../libopus0_1.5.2-2_amd64.deb ...
+Preparing to unpack .../3-libopus0_1.5.2-2_amd64.deb ...
 Unpacking libopus0:amd64 (1.5.2-2) ...
+Selecting previously unselected package libx264-164:amd64.
+Preparing to unpack .../4-libx264-164_2%3a0.164.3108+git31e19f9-2+b1_amd64.deb ...
+Unpacking libx264-164:amd64 (2:0.164.3108+git31e19f9-2+b1) ...
 Selecting previously unselected package libxfixes3:amd64.
-Preparing to unpack .../libxfixes3_1%3a6.0.0-2+b4_amd64.deb ...
+Preparing to unpack .../5-libxfixes3_1%3a6.0.0-2+b4_amd64.deb ...
 Unpacking libxfixes3:amd64 (1:6.0.0-2+b4) ...
 Selecting previously unselected package libxrandr2:amd64.
-Preparing to unpack .../libxrandr2_2%3a1.5.4-1+b3_amd64.deb ...
+Preparing to unpack .../6-libxrandr2_2%3a1.5.4-1+b3_amd64.deb ...
 Unpacking libxrandr2:amd64 (2:1.5.4-1+b3) ...
 Selecting previously unselected package xrdp.
-Preparing to unpack .../xrdp_0.10.1-3.1+deb13u1_amd64.deb ...
-Unpacking xrdp (0.10.1-3.1+deb13u1) ...
+Preparing to unpack .../7-xrdp_0.10.6.1-2~bpo13+1_amd64.deb ...
+Unpacking xrdp (0.10.6.1-2~bpo13+1) ...
+Setting up libx264-164:amd64 (2:0.164.3108+git31e19f9-2+b1) ...
 Setting up ssl-cert (1.1.3) ...
 hostname: Temporary failure in name resolution
 make-ssl-cert: Could not get FQDN, using 'work'.
@@ -45,7 +60,9 @@ make-ssl-cert: again.
 Setting up libxfixes3:amd64 (1:6.0.0-2+b4) ...
 Setting up libopus0:amd64 (1.5.2-2) ...
 Setting up libxrandr2:amd64 (2:1.5.4-1+b3) ...
-Setting up xrdp (0.10.1-3.1+deb13u1) ...
+Setting up libopenh264-8:amd64 (1:2.6.0-dmo1) ...
+Setting up libmp3lame0:amd64 (1:3.100-dmo3) ...
+Setting up xrdp (0.10.6.1-2~bpo13+1) ...
 
 Generating 2048 bit rsa key...
 
@@ -57,6 +74,6 @@ Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
 Created symlink '/etc/systemd/system/multi-user.target.wants/xrdp-sesman.service' → '/usr/lib/systemd/system/xrdp-sesman.service'.
 Created symlink '/etc/systemd/system/multi-user.target.wants/xrdp.service' → '/usr/lib/systemd/system/xrdp.service'.
-Processing triggers for libc-bin (2.41-12+deb13u3) ...
+Processing triggers for libc-bin (2.41-12+deb13u4) ...
 CLDS: * Install xrdp.
-CLDS: * Disk size = 5109336K. Space Used = 12088K. Runtime = 00:00:00:03.
+CLDS: * Disk size = 4913280K. Space Used = 17192K. Runtime = 00:00:00:04.

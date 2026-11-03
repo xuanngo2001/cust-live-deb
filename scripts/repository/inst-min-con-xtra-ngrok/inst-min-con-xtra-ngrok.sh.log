@@ -15,16 +15,16 @@ Hit:9 http://localhost/aptly-repo/master_trixie-contrib trixie InRelease
 Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRelease
 Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
 Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
-Get:13 https://ngrok-agent.s3.amazonaws.com bookworm InRelease [20.3 kB]
-Get:14 https://ngrok-agent.s3.amazonaws.com bookworm/main amd64 Packages [12.9 kB]
-Get:15 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,621 B]
-Get:16 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [2,062 kB]
-Get:17 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [4,896 kB]
-Fetched 6,993 kB in 2s (3,867 kB/s)
+Get:13 https://packages.cloud.google.com/apt cloud-sdk InRelease [1,442 B]
+Get:14 https://ngrok-agent.s3.amazonaws.com bookworm InRelease [20.3 kB]
+Get:15 https://ngrok-agent.s3.amazonaws.com bookworm/main amd64 Packages [13.5 kB]
+Get:16 https://packages.cloud.google.com/apt cloud-sdk/main all Packages [308 kB]
+Get:17 https://packages.cloud.google.com/apt cloud-sdk/main amd64 Packages [993 kB]
+Fetched 1,336 kB in 2s (877 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
-2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
 Warning: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 Warning: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 Warning: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -43,17 +43,17 @@ Installing:
   ngrok
 
 Summary:
-  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 2
-  Download size: 8,374 kB
-  Space needed: 0 B / 11.2 GB available
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 3
+  Download size: 8,832 kB
+  Space needed: 0 B / 11.3 GB available
 
-Get:1 https://ngrok-agent.s3.amazonaws.com bookworm/main amd64 ngrok amd64 3.39.9 [8,374 kB]
-Fetched 8,374 kB in 3s (2,575 kB/s)
+Get:1 https://ngrok-agent.s3.amazonaws.com bookworm/main amd64 ngrok amd64 3.39.13 [8,832 kB]
+Fetched 8,832 kB in 3s (3,328 kB/s)
 Selecting previously unselected package ngrok.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94613 files and directories currently installed.)
-Preparing to unpack .../ngrok_3.39.9_amd64.deb ...
-Unpacking ngrok (3.39.9) ...
-Setting up ngrok (3.39.9) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 97925 files and directories currently installed.)
+Preparing to unpack .../ngrok_3.39.13_amd64.deb ...
+Unpacking ngrok (3.39.13) ...
+Setting up ngrok (3.39.13) ...
 CLDS: * Install ngrok.
 CLDS: * Because I can´t use http://localhost:xxxx as callback URI for TikTok.
-CLDS: * Disk size = 4586520K. Space Used = 41976K. Runtime = 00:00:00:07.
+CLDS: * Disk size = 4445436K. Space Used = 34204K. Runtime = 00:00:00:06.

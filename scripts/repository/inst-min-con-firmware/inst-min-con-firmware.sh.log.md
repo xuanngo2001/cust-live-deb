@@ -14,12 +14,14 @@
   * After this operation, 19.6 MB of additional disk space will be used.
   * After this operation, 66.6 kB of additional disk space will be used.
   * Install firmwares.
-  * Disk size = 1824764K. Space Used = 468712K. Runtime = 00:00:01:03.
+  * Disk size = 1680220K. Space Used = 468716K. Runtime = 00:00:00:52.
   * The following NEW packages will be installed:
   ```bash
-atmel-firmware bluez-firmware firmware-amd-graphics firmware-atheros firmware-bnx2
-firmware-bnx2x firmware-brcm80211 firmware-ipw2x00 firmware-ivtv firmware-iwlwifi
-firmware-libertas firmware-linux firmware-linux-free firmware-linux-free* firmware-linux-nonfree
-firmware-linux-nonfree* firmware-misc-nonfree firmware-misc-nonfree* firmware-qlogic firmware-realtek
-firmware-zd1211
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-03_14.31.39 ============
+💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-firmware.sh.log atmel-firmware bluez-firmware
+firmware-amd-graphics firmware-atheros firmware-bnx2 firmware-bnx2x firmware-brcm80211
+firmware-ipw2x00 firmware-ivtv firmware-iwlwifi firmware-libertas firmware-linux
+firmware-linux-free firmware-linux-free* firmware-linux-nonfree firmware-linux-nonfree* firmware-misc-nonfree
+firmware-misc-nonfree* firmware-qlogic firmware-realtek firmware-zd1211 @@@@@@@@@@EEEE
+cld--shlog-pkg-installed-extract.sh 👍 EEEE@@@@@@@@@@
   ```

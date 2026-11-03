@@ -1,10 +1,12 @@
 * >>>>>>>>> Running inst-min-win-xtra-default-jre.sh ...
-  * After this operation, 774 kB of additional disk space will be used.
+  * After this operation, 778 kB of additional disk space will be used.
   * Install default-jre.
   * Needed for Sweet Home 3D: java.awt.AWTError: Assistive Technology not found.
   * JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64/bin/java".
-  * Disk size = 5592172K. Space Used = 1072K. Runtime = 00:00:00:02.
+  * Disk size = 5418452K. Space Used = 1064K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
-default-jre libgif7 openjdk-21-jre
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-03_14.31.43 ============
+💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-win-xtra-default-jre.sh.log default-jre libgif7
+openjdk-21-jre @@@@@@@@@@EEEE cld--shlog-pkg-installed-extract.sh 👍 EEEE@@@@@@@@@@
   ```
