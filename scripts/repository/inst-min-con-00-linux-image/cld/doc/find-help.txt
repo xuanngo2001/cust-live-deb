@@ -15,6 +15,9 @@
 
     find . -type f -exec sh -c "echo -n {}; echo -n ' x '; echo {}" \;
 
+    # Find filename, check content for "$1" and display found filepath
+    find -L . -type f -name "sqlite-integrity-check.sh" -exec grep -HnE '\$1' {} \; | grep -v 'print'
+
 # Find and execute multiple commands with success condition.
     find "${base_dir}" -type f -name '*.url' -exec grep "${search_term}" {} \; -exec echo {} \;
 
