@@ -5,10 +5,10 @@
   * Set devmon to auto start on startup.
   * Need ntfs-3g driver to be able to read and write ntfs partition.
   * Need exfat-fuse to be able to read and write exfat partition.
-  * Disk size = 1752984K. Space Used = 352K. Runtime = 00:00:00:01.
+  * Disk size = 1756552K. Space Used = 356K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.16 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.26.57 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-udevil.sh.log udevil @@@@@@@@@@EEEE
 cld--shlog-pkg-installed-extract.sh 👍 EEEE@@@@@@@@@@
   ```

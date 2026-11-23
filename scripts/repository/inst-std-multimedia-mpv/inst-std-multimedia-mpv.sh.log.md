@@ -3,10 +3,10 @@
   * Install Media Player: mpv v0.40.0 Copyright © 2000-2025 mpv/MPlayer/mplayer2 projects.
   * Add multiple aliases for MPV.
   * Add useful mpv keybindings settings.
-  * Disk size = 7663184K. Space Used = 213028K. Runtime = 00:00:00:10.
+  * Disk size = 7722656K. Space Used = 213040K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.20 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.27.02 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-std-multimedia-mpv.sh.log libaribb24-0t64 libass9
 libavc1394-0 libavcodec61 libavdevice61 libavfilter10 libavformat61
 libavutil59 libbluray2 libbs2b0 libcaca0 libcdio19t64

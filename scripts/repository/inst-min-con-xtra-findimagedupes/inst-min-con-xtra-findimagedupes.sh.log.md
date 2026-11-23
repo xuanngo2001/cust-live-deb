@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-con-xtra-findimagedupes.sh ...
-  * After this operation, 220 MB of additional disk space will be used.
+  * After this operation, 221 MB of additional disk space will be used.
   * Install findimagedupes.
-  * Disk size = 3005892K. Space Used = 261480K. Runtime = 00:00:00:07.
+  * Disk size = 3011356K. Space Used = 262884K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.16 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.26.58 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-xtra-findimagedupes.sh.log binutils binutils-common
 binutils-x86-64-linux-gnu cpp cpp-14 cpp-14-x86-64-linux-gnu cpp-x86-64-linux-gnu
 findimagedupes gcc gcc-14 gcc-14-x86-64-linux-gnu gcc-x86-64-linux-gnu

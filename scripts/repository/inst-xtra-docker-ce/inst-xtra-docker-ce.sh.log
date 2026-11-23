@@ -32,12 +32,12 @@ Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRele
 Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
 Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
 Get:13 https://packages.microsoft.com/repos/edge stable InRelease [3,590 B]
-Get:14 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [64.1 kB]
+Get:14 https://packages.microsoft.com/repos/edge stable/main amd64 Packages [65.2 kB]
 Get:15 https://dl.google.com/linux/chrome-stable/deb stable InRelease [2,548 B]
-Get:16 https://dl.google.com/linux/chrome-stable/deb stable/main amd64 Packages [1,410 B]
+Get:16 https://dl.google.com/linux/chrome-stable/deb stable/main amd64 Packages [1,404 B]
 Hit:17 https://ngrok-agent.s3.amazonaws.com bookworm InRelease
 Hit:18 https://packages.cloud.google.com/apt cloud-sdk InRelease
-Fetched 71.7 kB in 1s (116 kB/s)
+Fetched 72.7 kB in 1s (125 kB/s)
 Reading package lists...
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -50,7 +50,7 @@ W: Target Translations (main/i18n/Translation-en) is configured multiple times i
 Reading package lists...
 Building dependency tree...
 Reading state information...
-ca-certificates is already the newest version (20250419).
+ca-certificates is already the newest version (20250419+deb13u1).
 ca-certificates set to manually installed.
 curl is already the newest version (8.21.0-2~bpo13+1).
 0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
@@ -67,12 +67,12 @@ Hit:10 http://localhost/aptly-repo/master_trixie-non-free-firmware trixie InRele
 Hit:11 http://localhost/aptly-repo/master_trixie-non-free trixie InRelease
 Hit:12 http://localhost/aptly-repo/master_virtualbox-contrib trixie InRelease
 Get:13 https://download.docker.com/linux/debian trixie InRelease [32.5 kB]
-Hit:14 https://packages.microsoft.com/repos/edge stable InRelease
-Get:15 https://download.docker.com/linux/debian trixie/stable amd64 Packages [53.7 kB]
+Get:14 https://download.docker.com/linux/debian trixie/stable amd64 Packages [54.2 kB]
+Hit:15 https://packages.microsoft.com/repos/edge stable InRelease
 Hit:16 https://dl.google.com/linux/chrome-stable/deb stable InRelease
 Hit:17 https://ngrok-agent.s3.amazonaws.com bookworm InRelease
 Hit:18 https://packages.cloud.google.com/apt cloud-sdk InRelease
-Fetched 86.2 kB in 1s (142 kB/s)
+Fetched 86.7 kB in 1s (144 kB/s)
 Reading package lists...
 W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
 W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list:10
@@ -96,7 +96,7 @@ The following NEW packages will be installed:
   docker-compose-plugin iptables libip4tc2 libip6tc2 libnetfilter-conntrack3
   libnfnetlink0
 0 upgraded, 10 newly installed, 0 to remove and 4 not upgraded.
-Need to get 83.8 MB of archives.
+Need to get 83.9 MB of archives.
 After this operation, 355 MB of additional disk space will be used.
 Get:1 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 containerd.io amd64 2.4.2-4~debian.13~trixie [23.3 MB]
 Get:2 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 docker-ce-cli amd64 5:29.10.0-1~debian.13~trixie [8,616 kB]
@@ -106,11 +106,11 @@ Get:5 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libnfnetl
 Get:6 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 libnetfilter-conntrack3 amd64 1.1.0-1 [42.1 kB]
 Get:7 http://localhost/aptly-repo/master_trixie-main trixie/main amd64 iptables amd64 1.8.11-2 [361 kB]
 Get:8 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 docker-ce amd64 5:29.10.0-1~debian.13~trixie [25.0 MB]
-Get:9 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 docker-buildx-plugin amd64 0.39.0-1~debian.13~trixie [18.0 MB]
-Get:10 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 docker-compose-plugin amd64 5.7.1-1~debian.13~trixie [8,483 kB]
-Fetched 83.8 MB in 1s (163 MB/s)
+Get:9 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 docker-buildx-plugin amd64 0.39.1-1~debian.13~trixie [18.0 MB]
+Get:10 http://localhost/aptly-repo/master_docker-stable trixie/stable amd64 docker-compose-plugin amd64 5.8.0-1~debian.13~trixie [8,572 kB]
+Fetched 83.9 MB in 1s (162 MB/s)
 Selecting previously unselected package containerd.io.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128883 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128967 files and directories currently installed.)
 Preparing to unpack .../0-containerd.io_2.4.2-4~debian.13~trixie_amd64.deb ...
 Unpacking containerd.io (2.4.2-4~debian.13~trixie) ...
 Selecting previously unselected package docker-ce-cli.
@@ -135,17 +135,17 @@ Selecting previously unselected package docker-ce.
 Preparing to unpack .../7-docker-ce_5%3a29.10.0-1~debian.13~trixie_amd64.deb ...
 Unpacking docker-ce (5:29.10.0-1~debian.13~trixie) ...
 Selecting previously unselected package docker-buildx-plugin.
-Preparing to unpack .../8-docker-buildx-plugin_0.39.0-1~debian.13~trixie_amd64.deb ...
-Unpacking docker-buildx-plugin (0.39.0-1~debian.13~trixie) ...
+Preparing to unpack .../8-docker-buildx-plugin_0.39.1-1~debian.13~trixie_amd64.deb ...
+Unpacking docker-buildx-plugin (0.39.1-1~debian.13~trixie) ...
 Selecting previously unselected package docker-compose-plugin.
-Preparing to unpack .../9-docker-compose-plugin_5.7.1-1~debian.13~trixie_amd64.deb ...
-Unpacking docker-compose-plugin (5.7.1-1~debian.13~trixie) ...
+Preparing to unpack .../9-docker-compose-plugin_5.8.0-1~debian.13~trixie_amd64.deb ...
+Unpacking docker-compose-plugin (5.8.0-1~debian.13~trixie) ...
 Setting up libip4tc2:amd64 (1.8.11-2) ...
 Setting up libip6tc2:amd64 (1.8.11-2) ...
-Setting up docker-buildx-plugin (0.39.0-1~debian.13~trixie) ...
+Setting up docker-buildx-plugin (0.39.1-1~debian.13~trixie) ...
 Setting up containerd.io (2.4.2-4~debian.13~trixie) ...
 Created symlink '/etc/systemd/system/multi-user.target.wants/containerd.service' → '/usr/lib/systemd/system/containerd.service'.
-Setting up docker-compose-plugin (5.7.1-1~debian.13~trixie) ...
+Setting up docker-compose-plugin (5.8.0-1~debian.13~trixie) ...
 Setting up docker-ce-cli (5:29.10.0-1~debian.13~trixie) ...
 Setting up libnfnetlink0:amd64 (1.0.2-3) ...
 Setting up libnetfilter-conntrack3:amd64 (1.1.0-1) ...
@@ -161,6 +161,6 @@ Running in chroot, ignoring request.
 invoke-rc.d: policy-rc.d denied execution of start.
 Created symlink '/etc/systemd/system/multi-user.target.wants/docker.service' → '/usr/lib/systemd/system/docker.service'.
 Created symlink '/etc/systemd/system/sockets.target.wants/docker.socket' → '/usr/lib/systemd/system/docker.socket'.
-Processing triggers for libc-bin (2.41-12+deb13u4) ...
+Processing triggers for libc-bin (2.41-12+deb13u5) ...
 CLDS: * Install docker-ce: https://docs.docker.com/engine/install/debian
-CLDS: * Disk size = 8780628K. Space Used = 432388K. Runtime = 00:00:00:08.
+CLDS: * Disk size = 8840720K. Space Used = 432980K. Runtime = 00:00:00:08.

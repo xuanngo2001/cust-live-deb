@@ -4,10 +4,10 @@
   * Install minimum Xorg X server.
   * Install xinit so you can run startx.
   * Add auto start window manager(i.e startx).
-  * Disk size = 5355492K. Space Used = 6336K. Runtime = 00:00:00:02.
+  * Disk size = 5359880K. Space Used = 6340K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.19 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.27.00 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-win-00-xorg.sh.log libevdev2 libgudev-1.0-0
 libinput10 libinput-bin libmtdev1t64 libwacom9 libwacom-common
 libxmuu1 xauth xinit xserver-xorg xserver-xorg-input-all

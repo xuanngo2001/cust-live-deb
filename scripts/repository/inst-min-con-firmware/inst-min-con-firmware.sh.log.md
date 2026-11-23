@@ -14,10 +14,10 @@
   * After this operation, 19.6 MB of additional disk space will be used.
   * After this operation, 66.6 kB of additional disk space will be used.
   * Install firmwares.
-  * Disk size = 1680324K. Space Used = 468720K. Runtime = 00:00:00:56.
+  * Disk size = 1683896K. Space Used = 468712K. Runtime = 00:00:00:56.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.15 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.26.56 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-firmware.sh.log atmel-firmware bluez-firmware
 firmware-amd-graphics firmware-atheros firmware-bnx2 firmware-bnx2x firmware-brcm80211
 firmware-ipw2x00 firmware-ivtv firmware-iwlwifi firmware-libertas firmware-linux
