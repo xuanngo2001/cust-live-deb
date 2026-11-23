@@ -3,10 +3,10 @@
   * Install Window Manager jwm: JWM v2.4.6 by Joe Wingbermuehle.
   * Set .
   * Change X window manager: update-alternatives --config x-window-manager
-  * Disk size = 5415256K. Space Used = 61840K. Runtime = 00:00:00:04.
+  * Disk size = 5418644K. Space Used = 61836K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-03_14.31.42 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.19 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-win-01-wm-jwm.sh.log adwaita-icon-theme at-spi2-common
 dbus-user-session dconf-gsettings-backend dconf-service exo-utils gtk-update-icon-cache
 hicolor-icon-theme jwm libatk1.0-0t64 libatk-bridge2.0-0t64 libatspi2.0-0t64

@@ -7,10 +7,10 @@
   * Assumed packages installed: bzip2 & Xserver installed.
   * VirtualBox guest additions installed: version: 7.2.8 r173730.
   * Delete [K]. Space used could be negative due to this deletion.
-  * Disk size = 9183096K. Space Used = 219548K. Runtime = 00:00:00:54.
+  * Disk size = 9175700K. Space Used = 219548K. Runtime = 00:00:10:09.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-03_14.31.46 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.22 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-xtra-vboxguest-additions-iso.sh.log build-essential dkms
 dpkg-dev g++ g++-14 g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu
 libc6-dev* libdpkg-perl libdw1t64 libstdc++-14-dev linux-headers-6.12.107+deb13-amd64

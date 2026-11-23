@@ -1,11 +1,11 @@
 * >>>>>>>>> Running inst-std-inet-xtra-transmission-gtk.sh ...
-  * After this operation, 48.1 MB of additional disk space will be used.
+  * After this operation, 48.2 MB of additional disk space will be used.
   * Install transmission-gtk.
   * Insert transmission-gtk in Internet menu.
-  * Disk size = 7438708K. Space Used = 47300K. Runtime = 00:00:00:03.
+  * Disk size = 7450156K. Space Used = 47472K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-03_14.31.44 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.20 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-std-inet-xtra-transmission-gtk.sh.log libb64-0d libcairomm-1.16-1
 libcairo-script-interpreter2 libevent-extra-2.1-7t64 libgles2 libglibmm-2.68-1t64 libgraphene-1.0-0
 libgtk-4-1 libgtk-4-common libgtkmm-4.0-0 libharfbuzz-subset0 libminiupnpc18

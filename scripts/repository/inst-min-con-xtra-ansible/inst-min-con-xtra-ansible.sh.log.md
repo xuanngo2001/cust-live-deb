@@ -2,10 +2,10 @@
   * After this operation, 275 MB of additional disk space will be used.
   * Install ansible.
   * sshpass: to allow passing username and password on the fly.
-  * Disk size = 2334580K. Space Used = 581432K. Runtime = 00:00:00:25.
+  * Disk size = 2334684K. Space Used = 581432K. Runtime = 00:00:00:24.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-03_14.31.39 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.16 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-xtra-ansible.sh.log ansible ansible-core
 ca-certificates ieee-data libcbor0.10 libfido2-1 libpython3.13-minimal
 libpython3.13-stdlib libpython3-stdlib libyaml-0-2 media-types openssh-client

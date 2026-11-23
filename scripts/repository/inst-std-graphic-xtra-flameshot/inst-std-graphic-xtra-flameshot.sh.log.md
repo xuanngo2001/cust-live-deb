@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-flameshot.sh ...
   * After this operation, 40.9 MB of additional disk space will be used.
   * Install flameshot.
-  * Disk size = 5689428K. Space Used = 51936K. Runtime = 00:00:00:03.
+  * Disk size = 5692824K. Space Used = 51940K. Runtime = 00:00:00:04.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-03_14.31.43 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.20 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-std-graphic-xtra-flameshot.sh.log flameshot libb2-1
 libdouble-conversion3 libduktape207 libkdsingleapplication-qt6-1.0 libkf6guiaddons6 libkf6guiaddons-data
 libmd4c0 libopengl0 libpcre2-16-0 libproxy1v5 libqt6core6t64

@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-con-xtra-gnuplot-nox.sh ...
   * After this operation, 37.7 MB of additional disk space will be used.
   * Install gnuplot-nox.
-  * Disk size = 4038132K. Space Used = 50240K. Runtime = 00:00:00:05.
+  * Disk size = 4040700K. Space Used = 50244K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-03_14.31.40 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.17 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-xtra-gnuplot-nox.sh.log aglfn fontconfig
 fontconfig-config fonts-dejavu-core fonts-dejavu-mono gnuplot-data gnuplot-nox
 libabsl20240722 libaom3 libavif16 libcairo2 libdatrie1

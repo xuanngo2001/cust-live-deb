@@ -2,10 +2,10 @@
   * After this operation, 209 MB of additional disk space will be used.
   * After this operation, 1,622 kB of additional disk space will be used.
   * Install libegl-mesa0.
-  * Disk size = 5289700K. Space Used = 252556K. Runtime = 00:00:00:05.
+  * Disk size = 5293092K. Space Used = 252560K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-03_14.31.42 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.19 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-win-00-xorg-0-drivers-fix-libegl-mesa0.sh.log libdrm2 libdrm-amdgpu1
 libdrm-common libdrm-intel1 libegl-mesa0 libgbm1 libgl1-mesa-dri
 libglx-mesa0 libllvm19 libpciaccess0 libsensors5 libsensors-config

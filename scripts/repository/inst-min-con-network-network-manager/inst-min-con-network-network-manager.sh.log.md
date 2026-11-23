@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-con-network-network-manager.sh ...
   * After this operation, 19.3 MB of additional disk space will be used.
   * Install network-manager: nmcli
-  * Disk size = 1724272K. Space Used = 25248K. Runtime = 00:00:00:02.
+  * Disk size = 1724376K. Space Used = 25248K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-03_14.31.39 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-16_12.55.15 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-network-network-manager.sh.log libatomic1 libbluetooth3
 libbrotli1 libcurl3t64-gnutls libglib2.0-0t64 libmm-glib0 libndp0
 libnghttp2-14 libnghttp3-9 libngtcp2-16 libngtcp2-crypto-gnutls8 libnm0
