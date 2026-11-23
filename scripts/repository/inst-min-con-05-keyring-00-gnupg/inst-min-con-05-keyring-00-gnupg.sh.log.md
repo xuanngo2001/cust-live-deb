@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-con-05-keyring-00-gnupg.sh ...
   * After this operation, 23.7 MB of additional disk space will be used.
   * Install gnupg to manage and create keys.
-  * Disk size = 1097892K. Space Used = 22892K. Runtime = 00:00:00:01.
+  * Disk size = 1097888K. Space Used = 22892K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.26.55 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.03.59 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-05-keyring-00-gnupg.sh.log dirmngr gnupg
 gnupg-l10n gpg gpg-agent gpgconf gpgsm
 libassuan9 libffi8 libgcrypt20 libgnutls30t64 libgpg-error0

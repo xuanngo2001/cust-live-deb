@@ -28,10 +28,10 @@ Collecting idna<4,>=2.5 (from requests<3,>=2.32.2->yt-dlp[curl-cffi,default])
 Collecting pycparser (from cffi>=2.1.1->curl-cffi!=0.6.*,!=0.7.*,!=0.8.*,!=0.9.*,<0.18,>=0.5.10->yt-dlp[curl-cffi,default])
   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
 Downloading yt_dlp-2026.10.26-py3-none-any.whl (3.2 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 42.9 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 62.4 MB/s eta 0:00:00
 Downloading yt_dlp_ejs-0.8.0-py3-none-any.whl (53 kB)
 Downloading curl_cffi-0.17.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (14.1 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 36.0 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 63.1 MB/s eta 0:00:00
 Downloading requests-2.34.2-py3-none-any.whl (73 kB)
 Downloading charset_normalizer-3.5.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (256 kB)
 Using cached idna-3.20-py3-none-any.whl (69 kB)
@@ -40,11 +40,11 @@ Downloading certifi-2026.11.20-py3-none-any.whl (127 kB)
 Downloading cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
 Downloading websockets-17.4-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (226 kB)
 Downloading brotli-1.2.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 43.5 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 49.4 MB/s eta 0:00:00
 Downloading mutagen-1.48.1-py3-none-any.whl (195 kB)
 Downloading pycparser-3.12-py3-none-any.whl (62 kB)
 Downloading pycryptodomex-3.24.2-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 54.9 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 44.4 MB/s eta 0:00:00
 Installing collected packages: brotli, yt-dlp-ejs, yt-dlp, websockets, urllib3, pycryptodomex, pycparser, mutagen, idna, charset_normalizer, certifi, requests, cffi, curl-cffi
 
 Successfully installed brotli-1.2.1 certifi-2026.11.20 cffi-2.1.1 charset_normalizer-3.5.3 curl-cffi-0.17.0 idna-3.20 mutagen-1.48.1 pycparser-3.12 pycryptodomex-3.24.2 requests-2.34.2 urllib3-2.8.0 websockets-17.4 yt-dlp-2026.10.26 yt-dlp-ejs-0.8.0
@@ -66,7 +66,7 @@ Collecting pygments<3.0.0,>=2.13.0 (from rich->curl_cffi==0.15.0)
 Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich->curl_cffi==0.15.0)
   Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
 Downloading curl_cffi-0.15.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (11.1 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 65.1 MB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.1/11.1 MB 62.1 MB/s eta 0:00:00
 Using cached certifi-2026.11.20-py3-none-any.whl (127 kB)
 Using cached cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
 Using cached pycparser-3.12-py3-none-any.whl (62 kB)
@@ -140,4 +140,4 @@ Chrome-145      Macos-26     curl_cffi
 Chrome-146      Macos-26     curl_cffi
 2026.10.26
 CLDS: * Install curl-cffi for yt-dlp to impersonate: yt-dlp --impersonate Chrome-124
-CLDS: * Disk size = 5044900K. Space Used = 120724K. Runtime = 00:00:00:08.
+CLDS: * Disk size = 5044860K. Space Used = 120720K. Runtime = 00:00:00:07.

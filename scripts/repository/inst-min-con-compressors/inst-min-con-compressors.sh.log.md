@@ -14,10 +14,10 @@
   * Install de/compressor: p7zip.
   * Install de/compressor: zpaq.
   * Add universal extractor: extract.sh.
-  * Disk size = 1114524K. Space Used = 13600K. Runtime = 00:00:00:03.
+  * Disk size = 1114520K. Space Used = 13600K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.26.56 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.03.59 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-compressors.sh.log 7zip bzip2
 p7zip-full rar unrar unzip zip
 zpaq @@@@@@@@@@EEEE cld--shlog-pkg-installed-extract.sh 👍 EEEE@@@@@@@@@@

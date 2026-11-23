@@ -3,10 +3,10 @@
   * Install php-fpm.
   * Need for Drupal with nginx.
   * Used to speed up the performance of a website. It is much faster than traditional CGI based methods and has the ability to handle tremendous loads simultaneously.
-  * Disk size = 4531756K. Space Used = 29928K. Runtime = 00:00:00:07.
+  * Disk size = 4531748K. Space Used = 29928K. Runtime = 00:00:00:07.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.26.59 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.04.02 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-xtra-php-fpm.sh.log libargon2-1 libsodium23
 php8.4-cli php8.4-common php8.4-fpm php8.4-opcache php8.4-readline
 php-common php-fpm @@@@@@@@@@EEEE cld--shlog-pkg-installed-extract.sh 👍

@@ -5,12 +5,12 @@
   * WARNING: Use this script only if backport repository doesn't work.
   * Install VirtualBox guest additions to Shared folder/clipboard, auto window scaling, etc.
   * Assumed packages installed: bzip2 & Xserver installed.
-  * VirtualBox guest additions installed: ERROR: VirtualBox guest additions installation failed!.
+  * VirtualBox guest additions installed: version: 7.2.8 r173730.
   * Delete [K]. Space used could be negative due to this deletion.
-  * Disk size = 9230548K. Space Used = 214312K. Runtime = 00:00:01:21.
+  * Disk size = 9236836K. Space Used = 220628K. Runtime = 00:00:02:12.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.27.04 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.04.06 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-xtra-vboxguest-additions-iso.sh.log build-essential dkms
 dpkg-dev g++ g++-14 g++-14-x86-64-linux-gnu g++-x86-64-linux-gnu
 libc6-dev* libdpkg-perl libdw1t64 libstdc++-14-dev linux-headers-6.12.117+deb13-amd64

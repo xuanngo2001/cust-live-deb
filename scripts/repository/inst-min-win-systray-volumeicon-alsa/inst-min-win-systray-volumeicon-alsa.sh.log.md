@@ -3,10 +3,10 @@
   * Install volume controller in system tray.
   * Set left-click to display volume slider: lmb_slider=true.
   * Set volumeicon to run on JWN startup.
-  * Disk size = 5425148K. Space Used = 544K. Runtime = 00:00:00:02.
+  * Disk size = 5425116K. Space Used = 544K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.27.01 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.04.03 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-win-systray-volumeicon-alsa.sh.log libnotify4 volumeicon-alsa
 @@@@@@@@@@EEEE cld--shlog-pkg-installed-extract.sh 👍 EEEE@@@@@@@@@@
   ```

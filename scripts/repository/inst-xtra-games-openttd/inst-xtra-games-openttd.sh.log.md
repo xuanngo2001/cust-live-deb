@@ -2,10 +2,10 @@
   * After this operation, 19.5 MB of additional disk space will be used.
   * After this operation, 39.1 MB of additional disk space will be used.
   * Install OpenTTD 14.1.
-  * Disk size = 8924164K. Space Used = 83444K. Runtime = 00:00:00:04.
+  * Disk size = 8924136K. Space Used = 83444K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.27.04 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.04.05 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-xtra-games-openttd.sh.log libfluidsynth3 libinstpatch-1.0-2
 openttd openttd-data openttd-opengfx openttd-openmsx openttd-opensfx
 timgm6mb-soundfont @@@@@@@@@@EEEE cld--shlog-pkg-installed-extract.sh 👍 EEEE@@@@@@@@@@

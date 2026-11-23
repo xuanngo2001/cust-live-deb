@@ -3,10 +3,10 @@
   * After this operation, 115 MB of additional disk space will be used.
   * Generate dbus-uuidgen to /var/lib/dbus/machine-id.
   * Installed Linux image: linux-image-6.12.117+deb13-amd64.
-  * Disk size = 982100K. Space Used = 280860K. Runtime = 00:00:00:25.
+  * Disk size = 982096K. Space Used = 280856K. Runtime = 00:00:00:24.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.26.55 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.03.58 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-00-linux-image.sh.log busybox dbus
 dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common dialog
 dracut-install initramfs-tools initramfs-tools-bin initramfs-tools-core klibc-utils

@@ -3,10 +3,10 @@
   * Install Partition Manager: gnome-disk-utility.
   * Run: gnome-disks.
   * Insert gnome-disk-utility menu in Administration.
-  * Disk size = 7790716K. Space Used = 11416K. Runtime = 00:00:00:03.
+  * Disk size = 7790688K. Space Used = 11416K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.27.03 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.04.04 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-std-system-gnome-disk-utility.sh.log gnome-disk-utility libatasmart4
 libblockdev3 libblockdev-crypto3 libblockdev-fs3 libblockdev-loop3 libblockdev-mdraid3
 libblockdev-nvme3 libblockdev-part3 libblockdev-swap3 libblockdev-utils3 libbytesize1

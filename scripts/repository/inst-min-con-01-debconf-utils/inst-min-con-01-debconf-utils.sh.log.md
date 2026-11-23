@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-con-01-debconf-utils.sh ...
   * After this operation, 111 kB of additional disk space will be used.
   * Install debconf-utils to use debconf-set-selections.
-  * Disk size = 982492K. Space Used = 224K. Runtime = 00:00:00:01.
+  * Disk size = 982488K. Space Used = 224K. Runtime = 00:00:00:00.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.26.55 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.03.58 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-01-debconf-utils.sh.log debconf-utils @@@@@@@@@@EEEE
 cld--shlog-pkg-installed-extract.sh 👍 EEEE@@@@@@@@@@
   ```

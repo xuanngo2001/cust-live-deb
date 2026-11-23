@@ -1,10 +1,10 @@
 * >>>>>>>>> Running inst-min-con-xtra-apache2.sh ...
   * After this operation, 11.7 MB of additional disk space will be used.
   * Install apache2.
-  * Disk size = 2355044K. Space Used = 16788K. Runtime = 00:00:00:03.
+  * Disk size = 2355040K. Space Used = 16792K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.26.57 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.04.00 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-xtra-apache2.sh.log apache2 apache2-bin
 apache2-data apache2-utils libapr1t64 libaprutil1-dbd-sqlite3 libaprutil1-ldap
 libaprutil1t64 libcurl4t64 liblua5.4-0 libngtcp2-crypto-ossl0 libxml2

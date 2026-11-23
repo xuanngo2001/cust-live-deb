@@ -5,10 +5,10 @@
   * After this operation, 16.0 MB of additional disk space will be used.
   * Install Thunar file manager.
   * Insert Thunar in Accessories menu.
-  * Disk size = 5639412K. Space Used = 31096K. Runtime = 00:00:00:04.
+  * Disk size = 5639380K. Space Used = 31096K. Runtime = 00:00:00:03.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.27.01 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.04.04 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-std-accessories-thunar.sh.log desktop-file-utils gnome-icon-theme
 librsvg2-common libthunarx-3-0 thunar thunar-archive-plugin thunar-data
 thunar-volman @@@@@@@@@@EEEE cld--shlog-pkg-installed-extract.sh 👍 EEEE@@@@@@@@@@

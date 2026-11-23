@@ -1,9 +1,9 @@
 * >>>>>>>>> Running inst-std-graphic-xtra-flameshot-fixD13-qt6-svg-plugins.sh ...
   * Install qt6-svg-plugins.
-  * Disk size = 5645260K. Space Used = 36K. Runtime = 00:00:00:01.
+  * Disk size = 5645228K. Space Used = 36K. Runtime = 00:00:00:01.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.27.02 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.04.04 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-std-graphic-xtra-flameshot-fixD13-qt6-svg-plugins.sh.log libb2-1 libdouble-conversion3
 libduktape207 libkdsingleapplication-qt6-1.0 libkf6guiaddons6 libkf6guiaddons-data libmd4c0
 libopengl0 libpcre2-16-0 libproxy1v5 libqt6core6t64 libqt6dbus6

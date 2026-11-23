@@ -3,10 +3,10 @@
   * Install Image Viewer: gpicview.
   * Insert gpicview in Accessories menu.
   * Add alias viewpic='gpicview'.
-  * Disk size = 5589104K. Space Used = 384K. Runtime = 00:00:00:02.
+  * Disk size = 5589072K. Space Used = 384K. Runtime = 00:00:00:02.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.27.01 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.04.03 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-std-accessories-gpicview.sh.log gpicview @@@@@@@@@@EEEE
 cld--shlog-pkg-installed-extract.sh 👍 EEEE@@@@@@@@@@
   ```

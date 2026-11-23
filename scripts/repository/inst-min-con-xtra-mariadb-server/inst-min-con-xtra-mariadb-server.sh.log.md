@@ -2,10 +2,10 @@
   * After this operation, 197 MB of additional disk space will be used.
   * Install mariadb-server.
   * Set root password to [password].
-  * Disk size = 4409444K. Space Used = 356904K. Runtime = 00:00:00:04.
+  * Disk size = 4409440K. Space Used = 356904K. Runtime = 00:00:00:05.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.26.59 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.04.01 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-min-con-xtra-mariadb-server.sh.log galera-4 gawk
 libaio1t64 libconfig-inifiles-perl libdbi-perl liblsof0 libmariadb3
 libncurses6 libnuma1 libpcre2-posix3 libsigsegv2 liburing2

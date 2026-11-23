@@ -4,10 +4,10 @@
   * Install blender3d.
   * Insert Blender 3D menu in Graphics.
   * http://download.blender.org/release/
-  * Disk size = 8399732K. Space Used = 591396K. Runtime = 00:00:00:09.
+  * Disk size = 8399704K. Space Used = 591396K. Runtime = 00:00:00:09.
   * The following NEW packages will be installed:
   ```bash
-⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_12.27.03 ============
+⭐ ============ cld--shlog-pkg-installed-extract.sh: 2026-11-23_14.04.05 ============
 💲 ./cld--shlog-pkg-installed-extract.sh /media/master/github/cust-live-deb/logs/inst-std-xtra-blender.sh.log blender blender-data
 dcmtk-data fonts-dejavu fonts-dejavu-extra gdal-data gdal-plugins
 iso-codes libaec0 libarmadillo14 libarpack2t64 libblosc1
